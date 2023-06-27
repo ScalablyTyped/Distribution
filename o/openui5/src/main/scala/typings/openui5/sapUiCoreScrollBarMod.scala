@@ -1,10 +1,10 @@
 package typings.openui5
 
-import typings.openui5.anon.Forward
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
+import typings.openui5.sapUiCoreLibraryMod.ScrollBarAction
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -137,13 +137,13 @@ object sapUiCoreScrollBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit]
     ): this.type = js.native
     def attachScroll(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ScrollBar` itself
       */
@@ -168,7 +168,7 @@ object sapUiCoreScrollBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit]
     ): this.type = js.native
     def attachScroll(
       /**
@@ -179,7 +179,7 @@ object sapUiCoreScrollBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ScrollBar` itself
       */
@@ -205,13 +205,13 @@ object sapUiCoreScrollBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit]
     ): this.type = js.native
     def detachScroll(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ScrollBarScrollEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -219,7 +219,7 @@ object sapUiCoreScrollBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:scroll scroll} to attached listeners.
       *
@@ -229,7 +229,7 @@ object sapUiCoreScrollBarMod {
     def fireScroll(/**
       * Parameters to pass along with the event
       */
-    mParameters: Forward): this.type = js.native
+    mParameters: ScrollBar$ScrollEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getContentSize contentSize}.
@@ -374,6 +374,64 @@ object sapUiCoreScrollBarMod {
     oOwnerDomRef: String): Unit = js.native
   }
   
+  trait ScrollBar$ScrollEventParameters extends StObject {
+    
+    /**
+      * Actions are: Click on track, button, drag of thumb, or mouse wheel click.
+      */
+    var action: js.UndefOr[
+        ScrollBarAction | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ScrollBarAction * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * Direction of scrolling: back (up) or forward (down).
+      */
+    var forward: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Current Scroll position either in pixels or in steps.
+      */
+    var newScrollPos: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Old Scroll position - can be in pixels or in steps.
+      */
+    var oldScrollPos: js.UndefOr[int] = js.undefined
+  }
+  object ScrollBar$ScrollEventParameters {
+    
+    inline def apply(): ScrollBar$ScrollEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ScrollBar$ScrollEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBar$ScrollEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(
+        value: ScrollBarAction | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ScrollBarAction * / any */ String)
+      ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+      
+      inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+      
+      inline def setNewScrollPos(value: int): Self = StObject.set(x, "newScrollPos", value.asInstanceOf[js.Any])
+      
+      inline def setNewScrollPosUndefined: Self = StObject.set(x, "newScrollPos", js.undefined)
+      
+      inline def setOldScrollPos(value: int): Self = StObject.set(x, "oldScrollPos", value.asInstanceOf[js.Any])
+      
+      inline def setOldScrollPosUndefined: Self = StObject.set(x, "oldScrollPos", js.undefined)
+    }
+  }
+  
+  type ScrollBarScrollEvent = typings.openui5.sapUiBaseEventMod.default[ScrollBar$ScrollEventParameters]
+  
+  type ScrollBarScrollEventParameters = ScrollBar$ScrollEventParameters
+  
   trait ScrollBarSettings
     extends StObject
        with ControlSettings {
@@ -388,7 +446,12 @@ object sapUiCoreScrollBarMod {
     /**
       * Scroll event.
       */
-    var scroll: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var scroll: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ScrollBar$ScrollEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Scroll position in steps or pixels.
@@ -428,7 +491,9 @@ object sapUiCoreScrollBarMod {
       
       inline def setContentSizeUndefined: Self = StObject.set(x, "contentSize", js.undefined)
       
-      inline def setScroll(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+      inline def setScroll(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ScrollBar$ScrollEventParameters] => Unit
+      ): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
       
       inline def setScrollPosition(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
       

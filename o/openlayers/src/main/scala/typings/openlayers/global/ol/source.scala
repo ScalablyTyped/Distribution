@@ -64,7 +64,6 @@ object source {
     /**
       * The attribution containing a link to the Microsoft® Bing™ Maps Platform APIs’
       * Terms Of Use.
-      * @const
       * @api
       */
     /* static member */
@@ -355,7 +354,6 @@ object source {
     /**
       * The attribution containing a link to the OpenStreetMap Copyright and License
       * page.
-      * @const
       * @api
       */
     /* static member */

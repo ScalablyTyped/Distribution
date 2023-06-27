@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PCContinuousRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal color scheme for the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal color scheme for the output renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * The color scheme used by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * The color scheme used by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var colorScheme: ColorScheme
   
   /**
-    * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the background of the view and the spread of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * The renderer object configured to best match the background of the view and the spread of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var renderer: PointCloudStretchRenderer
   
   /**
-    * Basic statistics returned from a query to the service for data from the given field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
-    */
+  		 * Basic statistics returned from a query to the service for data from the given field name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#PCContinuousRendererResult)
+  		 */
   var statistics: SummaryStatisticsResult
 }
 object PCContinuousRendererResult {

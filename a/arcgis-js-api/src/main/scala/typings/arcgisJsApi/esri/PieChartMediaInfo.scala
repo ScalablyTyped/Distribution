@@ -13,11 +13,11 @@ trait PieChartMediaInfo
      with ChartMediaInfo {
   
   /**
-    * Indicates the type of chart.
-    *
-    * @default pie-chart
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-PieChartMediaInfo.html#type)
-    */
+  		 * Indicates the type of chart.
+  		 *
+  		 * @default pie-chart
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-PieChartMediaInfo.html#type)
+  		 */
   val `type`: String = js.native
 }

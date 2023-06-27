@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typescript" : "5.0.4"
+      "typescript" : "5.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "typescript" : "5.0.4"
+      "typescript" : "5.1.3"
     }
   ],
   "compile-devDependencies" : [

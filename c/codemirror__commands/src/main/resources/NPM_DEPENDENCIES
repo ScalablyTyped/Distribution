@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@codemirror/commands" : "6.1.0"
+      "@codemirror/commands" : "6.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@codemirror/commands" : "6.1.0"
+      "@codemirror/commands" : "6.2.4"
     }
   ],
   "compile-devDependencies" : [

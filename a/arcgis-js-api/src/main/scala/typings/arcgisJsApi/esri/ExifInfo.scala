@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExifInfo extends StObject {
   
   /**
-    * The file name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
-    */
+  		 * The file name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Array of tag objects containing the following properties:
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
-    */
+  		 * Array of tag objects containing the following properties:
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo)
+  		 */
   var tags: js.UndefOr[js.Array[ExifInfoTags]] = js.undefined
 }
 object ExifInfo {

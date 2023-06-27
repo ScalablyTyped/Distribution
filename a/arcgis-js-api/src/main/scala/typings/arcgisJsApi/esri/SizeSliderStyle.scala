@@ -9,21 +9,21 @@ trait SizeSliderStyle
      with AnonymousAccessor {
   
   /**
-    * The background color of the slider's track.
-    *
-    * @default new Color([224, 224, 224])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
-    */
+  		 * The background color of the slider's track.
+  		 *
+  		 * @default new Color([224, 224, 224])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
+  		 */
   var trackBackgroundColor: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The color of the slider's track.
-    *
-    * @default new Color([149, 149, 149])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
-    */
+  		 * The color of the slider's track.
+  		 *
+  		 * @default new Color([149, 149, 149])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
+  		 */
   var trackFillColor: js.UndefOr[Color_] = js.undefined
 }
 object SizeSliderStyle {

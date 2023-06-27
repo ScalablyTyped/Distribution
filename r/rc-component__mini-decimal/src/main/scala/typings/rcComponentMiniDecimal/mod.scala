@@ -1,8 +1,8 @@
 package typings.rcComponentMiniDecimal
 
 import typings.rcComponentMiniDecimal.anon.DecimalStr
-import typings.rcComponentMiniDecimal.esMiniDecimalMod.DecimalClass
-import typings.rcComponentMiniDecimal.esMiniDecimalMod.ValueType
+import typings.rcComponentMiniDecimal.esInterfaceMod.DecimalClass
+import typings.rcComponentMiniDecimal.esInterfaceMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

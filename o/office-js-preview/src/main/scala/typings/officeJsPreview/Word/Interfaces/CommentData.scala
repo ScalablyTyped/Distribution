@@ -24,7 +24,7 @@ trait CommentData extends StObject {
   var authorName: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the comment's content as plain text.
+    * Specifies the comment's content as plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -32,7 +32,7 @@ trait CommentData extends StObject {
   var content: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the comment's content range.
+    * Specifies the comment's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -64,7 +64,7 @@ trait CommentData extends StObject {
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
   
   /**
-    * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
+    * Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
     * [Api set: WordApi 1.4]

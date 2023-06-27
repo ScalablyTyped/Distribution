@@ -3,7 +3,7 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.PartialSwitchProps
 import typings.fundamentalReact.anon.WeakValidationMapSwitchPr
 import typings.fundamentalReact.libSwitchSwitchMod.SwitchProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Switch/Switch.SwitchProps> & {  displayName :'Switch'} */
 object Switch {
   
-  inline def apply(props: SwitchProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: SwitchProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: SwitchProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def apply(props: SwitchProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   @JSImport("fundamental-react", "Switch")
   @js.native

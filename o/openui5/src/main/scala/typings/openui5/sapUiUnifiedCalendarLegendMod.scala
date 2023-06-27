@@ -161,7 +161,7 @@ object sapUiUnifiedCalendarLegendMod {
     def getItems(): js.Array[typings.openui5.sapUiUnifiedCalendarLegendItemMod.default] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getStandardItems standardItems}.
       *
@@ -253,7 +253,7 @@ object sapUiUnifiedCalendarLegendMod {
     sColumnWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getStandardItems standardItems}.
       *
@@ -293,7 +293,7 @@ object sapUiUnifiedCalendarLegendMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines the standard items related to the calendar days, such as, today, selected, working and non-working.
       * Values must be one of `sap.ui.unified.StandardCalendarLegendItem`. Note: for versions 1.50 and 1.52,

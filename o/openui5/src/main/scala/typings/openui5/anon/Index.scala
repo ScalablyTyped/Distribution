@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Index extends StObject {
   
-  /**
-    * The index of the activated step as a parameter. One-based.
-    */
-  var index: js.UndefOr[int] = js.undefined
+  var index: int
+  
+  var `type`: String
 }
 object Index {
   
-  inline def apply(): Index = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(index: int, `type`: String): Index = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
@@ -24,6 +24,6 @@ object Index {
     
     inline def setIndex(value: int): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

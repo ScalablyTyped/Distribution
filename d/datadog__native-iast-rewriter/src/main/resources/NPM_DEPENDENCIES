@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@datadog/native-iast-rewriter" : "2.0.1"
+      "@datadog/native-iast-rewriter" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@datadog/native-iast-rewriter" : "2.0.1"
+      "@datadog/native-iast-rewriter" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

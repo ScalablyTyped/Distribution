@@ -40,150 +40,150 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.FeatureLayer")
 @js.native
 /**
-  * A FeatureLayer is a single layer that can be created from a [Map Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm) or [Feature Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm); ArcGIS Online or ArcGIS Enterprise portal items; or from an array of client-side features.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html)
-  */
+		 * A FeatureLayer is a single layer that can be created from a [Map Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm) or [Feature Service](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm); ArcGIS Online or ArcGIS Enterprise portal items; or from an array of client-side features.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html)
+		 */
 open class FeatureLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.FeatureLayer {
   def this(properties: FeatureLayerProperties) = this()
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
+  		 */
   /* CompleteClass */
   var apiKey: String = js.native
   
   /**
-    * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
-    *
-    * @default normal
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
-    */
+  		 * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+  		 *
+  		 * @default normal
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
+  		 */
   /* CompleteClass */
   var blendMode: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
   
   /**
-    * A list of custom parameters appended to the URL of all resources fetched by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
-    */
+  		 * A list of custom parameters appended to the URL of all resources fetched by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+  		 */
   /* CompleteClass */
   var customParameters: Any = js.native
   
   /**
-    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
-    */
+  		 * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+  		 */
   /* CompleteClass */
   var effect: Effect = js.native
   
   /**
-    * The featureEffect can be used to draw attention features of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
-    */
+  		 * The featureEffect can be used to draw attention features of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+  		 */
   /* CompleteClass */
   var featureEffect: typings.arcgisJsApi.esri.FeatureEffect = js.native
   
   /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
-    */
+  		 * Configures the method for reducing the number of point features in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+  		 */
   /* CompleteClass */
   var featureReduction: typings.arcgisJsApi.esri.FeatureReductionBinning | typings.arcgisJsApi.esri.FeatureReductionCluster | typings.arcgisJsApi.esri.FeatureReductionSelection = js.native
   
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
-    */
+  		 * The maximum scale (most zoomed in) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
+  		 */
   /* CompleteClass */
   var maxScale: Double = js.native
   
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
-    */
+  		 * The minimum scale (most zoomed out) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+  		 */
   /* CompleteClass */
   var minScale: Double = js.native
   
   /**
-    * Determines the order in which features are drawn in the view.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
-    */
+  		 * Determines the order in which features are drawn in the view.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
+  		 */
   /* CompleteClass */
   var orderBy: js.Array[OrderedLayerOrderBy] = js.native
   
   /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
+  		 * The portal item from which the layer is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+  		 */
   /* CompleteClass */
   var portalItem: typings.arcgisJsApi.esri.PortalItem = js.native
   
   /**
-    * Checks layer's publishing status while the layer is being published to the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
-    */
+  		 * Checks layer's publishing status while the layer is being published to the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
+  		 */
   /* CompleteClass */
   override val publishingInfo: typings.arcgisJsApi.esri.PublishingInfo = js.native
   
   /**
-    * The layer's time extent.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
-    */
+  		 * The layer's time extent.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
+  		 */
   /* CompleteClass */
   var timeExtent: typings.arcgisJsApi.esri.TimeExtent = js.native
   
   /**
-    * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
-    */
+  		 * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
+  		 */
   /* CompleteClass */
   var timeInfo: typings.arcgisJsApi.esri.TimeInfo = js.native
   
   /**
-    * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
-    */
+  		 * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
+  		 */
   /* CompleteClass */
   var timeOffset: typings.arcgisJsApi.esri.TimeInterval = js.native
   
   /**
-    * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
-    */
+  		 * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
+  		 */
   /* CompleteClass */
   var useViewTime: Boolean = js.native
 }

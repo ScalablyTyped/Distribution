@@ -507,6 +507,10 @@ object emotionReactStrings {
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
+  sealed trait high extends StObject
+  inline def high: high = "high".asInstanceOf[high]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -621,6 +625,10 @@ object emotionReactStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait low extends StObject
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait main extends StObject

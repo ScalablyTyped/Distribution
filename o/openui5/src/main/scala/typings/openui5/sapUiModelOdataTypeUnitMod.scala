@@ -211,7 +211,7 @@ object sapUiModelOdataTypeUnitMod {
     extends typings.openui5.sapUiModelTypeUnitMod.default {
     
     /**
-      * @SINCE 1.63.0
+      * @since 1.63.0
       *
       * Parses the given string value to an array containing measure and unit.
       * See:
@@ -226,8 +226,8 @@ object sapUiModelOdataTypeUnitMod {
       */
     vValue: String,
       /**
-      * The source type (the expected type of `vValue`); must be "string", or a type with "string" as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * The source type (the expected type of `vValue`); must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sSourceType: String
     ): js.Array[Any] = js.native
@@ -237,8 +237,8 @@ object sapUiModelOdataTypeUnitMod {
       */
     vValue: String,
       /**
-      * The source type (the expected type of `vValue`); must be "string", or a type with "string" as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * The source type (the expected type of `vValue`); must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sSourceType: String,
       /**

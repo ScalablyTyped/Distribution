@@ -50,14 +50,14 @@ object sapUiCoreCommandExecutionMod {
     *
     * A CommandExecution can have three states:
     * 	 - the CommandExecution is visible and enabled. If the configured shortcut is executed, the configured
-    * 			event handler of this CommandExecution is called
+    *     event handler of this CommandExecution is called
     * 	 - the CommandExecution is visible but not enabled. If the configured shortcut is executed, neither
-    * 			the configured event handler of this CommandExecution nor any event handler configured on CommandExecutions
-    * 			in the ancestor chain is called
+    *     the configured event handler of this CommandExecution nor any event handler configured on CommandExecutions
+    *     in the ancestor chain is called
     * 	 - the CommandExecution is not visible. If the configured shortcut is executed, the configured event
-    * 			handler of this CommandExecution is not called, but the event is propagated to its parent, which can
-    * 			then handle the event by a configured CommandExecution or propagate the event to its parent, until no
-    * 			parent exits anymore and the browser can handle the executed shortcut
+    *     handler of this CommandExecution is not called, but the event is propagated to its parent, which can
+    *     then handle the event by a configured CommandExecution or propagate the event to its parent, until no
+    *     parent exits anymore and the browser can handle the executed shortcut
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
@@ -150,13 +150,13 @@ object sapUiCoreCommandExecutionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachExecute(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.CommandExecution` itself
       */
@@ -181,7 +181,7 @@ object sapUiCoreCommandExecutionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachExecute(
       /**
@@ -192,7 +192,7 @@ object sapUiCoreCommandExecutionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.CommandExecution` itself
       */
@@ -210,13 +210,13 @@ object sapUiCoreCommandExecutionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachExecute(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -224,7 +224,7 @@ object sapUiCoreCommandExecutionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:execute execute} to attached listeners.
       *
@@ -303,6 +303,12 @@ object sapUiCoreCommandExecutionMod {
     def trigger(): Unit = js.native
   }
   
+  trait CommandExecution$ExecuteEventParameters extends StObject
+  
+  type CommandExecutionExecuteEvent = typings.openui5.sapUiBaseEventMod.default[CommandExecution$ExecuteEventParameters]
+  
+  type CommandExecutionExecuteEventParameters = CommandExecution$ExecuteEventParameters
+  
   trait CommandExecutionSettings
     extends StObject
        with ElementSettings {
@@ -324,7 +330,9 @@ object sapUiCoreCommandExecutionMod {
     /**
       * Execute will be fired when the CommandExecution will be triggered.
       */
-    var execute: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var execute: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Whether the CommandExecution is visible, or not. By default, it is visible. If not visible, the CommandExecution
@@ -355,7 +363,7 @@ object sapUiCoreCommandExecutionMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setExecute(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       

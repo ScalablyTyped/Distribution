@@ -17,30 +17,30 @@ object esriViews3dAnalysisSliceAnalysisView3DMod {
     def this(properties: Any) = this()
     
     /**
-      * Only one [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html) at a time can be active in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-      *
-      * @default true
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#active)
-      */
+    		 * Only one [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html) at a time can be active in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    		 *
+    		 * @default true
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#active)
+    		 */
     /* CompleteClass */
     var active: Boolean = js.native
     
     /**
-      * The direct line measurement analysis object associated with the analysis view.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#analysis)
-      */
+    		 * The direct line measurement analysis object associated with the analysis view.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#analysis)
+    		 */
     /* CompleteClass */
     override val analysis: SliceAnalysis = js.native
     
     /**
-      * Set to `true` to enable interactivity for the associated [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html).
-      *
-      * @default false
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#interactive)
-      */
+    		 * Set to `true` to enable interactivity for the associated [SliceAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html).
+    		 *
+    		 * @default false
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#interactive)
+    		 */
     /* CompleteClass */
     var interactive: Boolean = js.native
     
@@ -48,10 +48,10 @@ object esriViews3dAnalysisSliceAnalysisView3DMod {
     override val `type`: `slice-view-3d` = js.native
     
     /**
-      * When `true`, the analysis is visualized in the view.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#visible)
-      */
+    		 * When `true`, the analysis is visualized in the view.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-SliceAnalysisView3D.html#visible)
+    		 */
     /* CompleteClass */
     var visible: Boolean = js.native
   }

@@ -9,7 +9,7 @@ trait IFormContent extends StObject {
   var __implements__sap_ui_core_IFormContent: Boolean
   
   /**
-    * @SINCE 1.48.0
+    * @since 1.48.0
     *
     * Whether a control wants to keep its original width even when used in a `Form`.
     *

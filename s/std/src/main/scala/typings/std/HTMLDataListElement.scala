@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond the HTMLElement object interface it also has available to it by inheritance) to manipulate <datalist> elements and their content. */
+/**
+  * Provides special properties (beyond the HTMLElement object interface it also has available to it by inheritance) to manipulate <datalist> elements and their content.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDataListElement)
+  */
 @js.native
 trait HTMLDataListElement
   extends StObject
@@ -21,7 +25,11 @@ trait HTMLDataListElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Returns an HTMLCollection of the option elements of the datalist element. */
+  /**
+    * Returns an HTMLCollection of the option elements of the datalist element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDataListElement/options)
+    */
   /* standard dom */
   val options: HTMLCollectionOf[HTMLOptionElement] = js.native
   

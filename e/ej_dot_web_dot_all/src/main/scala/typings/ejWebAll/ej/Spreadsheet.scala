@@ -1624,12 +1624,12 @@ object Spreadsheet {
   trait AutoFillSettings extends StObject {
     
     /** This property is used to set fillType unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
-      * @Default {ej.Spreadsheet.AutoFillOptions.FillSeries}
+      * @default {ej.Spreadsheet.AutoFillOptions.FillSeries}
       */
     var fillType: js.UndefOr[AutoFillOptions | String] = js.undefined
     
     /** Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showFillOptions: js.UndefOr[Boolean] = js.undefined
   }
@@ -2796,12 +2796,12 @@ object Spreadsheet {
   trait ChartSettings extends StObject {
     
     /** Gets or sets a value that defines the chart height in Spreadsheet.
-      * @Default {220}
+      * @default {220}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that defines the chart width in the Spreadsheet.
-      * @Default {440}
+      * @default {440}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3422,33 +3422,33 @@ object Spreadsheet {
   trait ExportSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowExporting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define csvUrl for export to CSV format.
-      * @Default {null}
+      * @default {null}
       */
     var csvUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable formula calculation in Spreadsheet. By enabling this feature, formula calculated while export the Spreadsheet in
       * protected mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableFormulaCalculation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define excelUrl for export to excel format.
-      * @Default {null}
+      * @default {null}
       */
     var excelUrl: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define password while export to excel format.
-      * @Default {null}
+      * @default {null}
       */
     var password: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define pdfUrl for export to PDF format.
-      * @Default {null}
+      * @default {null}
       */
     var pdfUrl: js.UndefOr[String] = js.undefined
   }
@@ -3653,17 +3653,17 @@ object Spreadsheet {
   trait FormatSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowCellBorder: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowDecimalPlaces: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowFontFamily: js.UndefOr[Boolean] = js.undefined
   }
@@ -3698,7 +3698,7 @@ object Spreadsheet {
     var importMapper: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable import while initial loading.
-      * @Default {false}
+      * @default {false}
       */
     var importOnLoad: js.UndefOr[Boolean] = js.undefined
     
@@ -4205,186 +4205,186 @@ object Spreadsheet {
     var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an active sheet index in the Spreadsheet. By defining this value, you can specify which sheet should be active in workbook.
-      * @Default {1}
+      * @default {1}
       */
     var activeSheetIndex: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto rendering of cell type in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var allowAutoCellType: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto fill feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowAutoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable auto sum feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowAutoSum: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable cell format feature in the Spreadsheet. By enabling this, you can customize styles and number formats.
-      * @Default {true}
+      * @default {true}
       */
     var allowCellFormatting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable cell type feature in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var allowCellType: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable chart feature in the Spreadsheet. By enabling this feature, you can create and customize charts in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowCharts: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable clear feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowClear: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet. By enabling this feature, you can perform cut/copy and paste operations in
       * Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowClipboard: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable comment feature in the Spreadsheet. By enabling this, you can add/delete/modify comments in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowComments: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of
       * cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
-      * @Default {true}
+      * @default {true}
       */
     var allowConditionalFormats: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable data validation feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowDataValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the delete action in the Spreadsheet. By enabling this feature, you can delete existing rows, columns, cells and
       * sheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowDelete: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable drag and drop feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the edit action in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable filtering feature in the Spreadsheet. Filtering can be used to limit the data displayed using required criteria.
-      * @Default {true}
+      * @default {true}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
-      * @Default {true}
+      * @default {true}
       */
     var allowFormatAsTable: js.UndefOr[Boolean] = js.undefined
     
     /** Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected
       * range and apply it to another range.
-      * @Default {true}
+      * @default {true}
       */
     var allowFormatPainter: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowFormulaBar: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. By enabling this feature, you can use freeze top row, freeze first column and
       * freeze panes options.
-      * @Default {true}
+      * @default {true}
       */
     var allowFreezing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily
       * navigate to the cell reference from one sheet to another or a web page.
-      * @Default {true}
+      * @default {true}
       */
     var allowHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents.
-      * @Default {true}
+      * @default {true}
       */
     var allowImport: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the insert action in the Spreadsheet. By enabling this feature, you can insert new rows, columns, cells and sheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowInsert: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable keyboard navigation feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable lock cell feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowLockCell: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable merge feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowMerging: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable overflow feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowOverflow: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable resizing feature in the Spreadsheet. By enabling this feature, you can change the column width and row height by
       * dragging its header boundaries.
-      * @Default {true}
+      * @default {true}
       */
     var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable find and replace feature in the Spreadsheet. By enabling this, you can easily find and replace a specific value in
       * the sheet or workbook. By using goto behavior, you can select and highlight all cells that contains specific data or data types.
-      * @Default {true}
+      * @default {true}
       */
     var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable selection in the Spreadsheet. By enabling this feature, selected items will be highlighted.
-      * @Default {true}
+      * @default {true}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the sorting feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the sparkline feature in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var allowSparkline: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable undo and redo feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowUndoRedo: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable wrap text feature in the Spreadsheet. By enabling this, cell content can wrap to the next line, if the cell
       * content exceeds the boundary of the cell.
-      * @Default {true}
+      * @default {true}
       */
     var allowWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define the width of the activation panel in Spreadsheet.
-      * @Default {300}
+      * @default {300}
       */
     var apWidth: js.UndefOr[Double] = js.undefined
     
@@ -4457,12 +4457,12 @@ object Spreadsheet {
     var chartSettings: js.UndefOr[ChartSettings] = js.undefined
     
     /** Gets or sets a value that defines the number of columns displayed in the sheet.
-      * @Default {21}
+      * @default {21}
       */
     var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define the common width for each column in the Spreadsheet.
-      * @Default {64}
+      * @default {64}
       */
     var columnWidth: js.UndefOr[Double] = js.undefined
     
@@ -4475,7 +4475,7 @@ object Spreadsheet {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates custom formulas in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var customFormulas: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -4504,17 +4504,17 @@ object Spreadsheet {
     var editRangeComplete: js.UndefOr[js.Function1[/* e */ EditRangeCompleteEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable context menu in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable pivot table in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var enablePivotTable: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable touch support in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var enableTouch: js.UndefOr[Boolean] = js.undefined
     
@@ -4531,12 +4531,12 @@ object Spreadsheet {
     var importSettings: js.UndefOr[ImportSettings] = js.undefined
     
     /** Gets a value that indicates whether importing or not while loading the sheets in Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var isImport: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable readonly support in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var isReadOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -4558,7 +4558,7 @@ object Spreadsheet {
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data (i.e.) in a language and culture specific
       * to a particular country or region.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -4607,12 +4607,12 @@ object Spreadsheet {
     var ribbonSettings: js.UndefOr[RibbonSettings] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of rows to be displayed in the sheet.
-      * @Default {20}
+      * @default {20}
       */
     var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define the common height for each row in the sheet.
-      * @Default {20}
+      * @default {20}
       */
     var rowHeight: js.UndefOr[Double] = js.undefined
     
@@ -4629,7 +4629,7 @@ object Spreadsheet {
     var selectionSettings: js.UndefOr[SelectionSettings] = js.undefined
     
     /** Gets or sets a value that indicates to define the number of sheets to be created at the initial load.
-      * @Default {1}
+      * @default {1}
       */
     var sheetCount: js.UndefOr[Double] = js.undefined
     
@@ -4638,12 +4638,12 @@ object Spreadsheet {
     var sheets: js.UndefOr[js.Array[Sheet]] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide pager in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showPager: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide ribbon in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showRibbon: js.UndefOr[Boolean] = js.undefined
     
@@ -4656,12 +4656,12 @@ object Spreadsheet {
     var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.undefined
     
     /** This is used to set the number of undo-redo steps in the Spreadsheet.
-      * @Default {20}
+      * @default {20}
       */
     var undoRedoStep: js.UndefOr[Double] = js.undefined
     
     /** Define the username for the Spreadsheet which is displayed in comment.
-      * @Default {User Name}
+      * @default {User Name}
       */
     var userName: js.UndefOr[String] = js.undefined
   }
@@ -5332,17 +5332,17 @@ object Spreadsheet {
   trait PictureSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowPictures: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define height to picture in the Spreadsheet.
-      * @Default {220}
+      * @default {220}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define width to picture in the Spreadsheet.
-      * @Default {440}
+      * @default {440}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5419,17 +5419,17 @@ object Spreadsheet {
   trait PrintSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowPageSetup: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var allowPageSize: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable print feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowPrinting: js.UndefOr[Boolean] = js.undefined
   }
@@ -5758,7 +5758,7 @@ object Spreadsheet {
     var menuSettings: js.UndefOr[RibbonSettingsApplicationTabMenuSettings] = js.undefined
     
     /** Gets or sets a value that indicates to set application tab type in Spreadsheet. It has two types, Menu and Backstage.
-      * @Default {ej.Ribbon.ApplicationTabType.Backstage}
+      * @default {ej.Ribbon.ApplicationTabType.Backstage}
       */
     var `type`: js.UndefOr[ApplicationTabType | String] = js.undefined
   }
@@ -5785,12 +5785,12 @@ object Spreadsheet {
   trait RibbonSettingsApplicationTabMenuSettings extends StObject {
     
     /** Specifies the data source to append in application tab.
-      * @Default {[]}
+      * @default {[]}
       */
     var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable isAppend property in ribbon settings.
-      * @Default {false}
+      * @default {false}
       */
     var isAppend: js.UndefOr[Boolean] = js.undefined
   }
@@ -5819,38 +5819,38 @@ object Spreadsheet {
   trait ScrollSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable or disable scrolling in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable sheet on demand. By enabling this, it render only the active sheet element while paging remaining sheets are
       * created one by one.
-      * @Default {false}
+      * @default {false}
       */
     var allowSheetOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the value that indicates to define the height of spreadsheet.
-      * @Default {100%}
+      * @default {100%}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
-      * @Default {ej.Spreadsheet.scrollMode.Infinite}
+      * @default {ej.Spreadsheet.scrollMode.Infinite}
       */
     var scrollMode: js.UndefOr[typings.ejWebAll.ej.Spreadsheet.scrollMode | String] = js.undefined
     
     /** Gets or sets the value that indicates to define the height of the spreadsheet.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[Double | String] = js.undefined
   }
@@ -5963,22 +5963,22 @@ object Spreadsheet {
     var activeCell: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
-      * @Default {0.001}
+      * @default {0.001}
       */
     var animationTime: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to enable or disable animation while selection.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
-      * @Default {ej.Spreadsheet.SelectionType.Default}
+      * @default {ej.Spreadsheet.SelectionType.Default}
       */
     var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
-      * @Default {ej.Spreadsheet.SelectionUnit.MultiRange}
+      * @default {ej.Spreadsheet.SelectionUnit.MultiRange}
       */
     var selectionUnit: js.UndefOr[SelectionUnit | String] = js.undefined
   }
@@ -6017,67 +6017,67 @@ object Spreadsheet {
   trait Sheet extends StObject {
     
     /** Specifies the border for the cell in the Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var border: js.UndefOr[js.Array[SheetsBorder]] = js.undefined
     
     /** Specifies the conditional formatting for the range of cell in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var cFormatRule: js.UndefOr[js.Array[SheetsCFormatRule]] = js.undefined
     
     /** Specifies the cell types for a cell or range in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var cellTypes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates to define column count in the Spreadsheet.
-      * @Default {21}
+      * @default {21}
       */
     var colCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates to define column width in the Spreadsheet.
-      * @Default {64}
+      * @default {64}
       */
     var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets the data to render the Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var fieldAsColumnHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value to freeze columns in the Spreadsheet.
-      * @Default {0}
+      * @default {0}
       */
     var frozenColumns: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value to freeze rows in the Spreadsheet.
-      * @Default {0}
+      * @default {0}
       */
     var frozenRows: js.UndefOr[Double] = js.undefined
     
     /** Specifies the header styles for the headers in datasource range.
-      * @Default {null}
+      * @default {null}
       */
     var headerStyles: js.UndefOr[Any] = js.undefined
     
     /** To hide the specified columns in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var hideColumns: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To hide the specified rows in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var hideRows: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To merge specified ranges in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var mergeCells: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -6086,47 +6086,47 @@ object Spreadsheet {
     var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Specifies the query for the dataSource in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies single range or multiple range settings for a sheet in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var rangeSettings: js.UndefOr[js.Array[SheetsRangeSetting]] = js.undefined
     
     /** Gets or sets a value that indicates to define row count in the Spreadsheet.
-      * @Default {20}
+      * @default {20}
       */
     var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rows for a sheet in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var rows: js.UndefOr[js.Array[SheetsRow]] = js.undefined
     
     /** Specifies the name for sheet in the Spreadsheet.
-      * @Default {string}
+      * @default {string}
       */
     var sheetName: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide grid lines in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showGridlines: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show or hide headings in the Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showHeadings: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the start cell for the datasource range in Spreadsheet.
-      * @Default {A1}
+      * @default {A1}
       */
     var startCell: js.UndefOr[String] = js.undefined
   }
@@ -6299,7 +6299,7 @@ object Spreadsheet {
     var color: js.UndefOr[CFormatHighlightColor | String] = js.undefined
     
     /** Specifies the inputs for conditional formatting in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var inputs: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -6340,12 +6340,12 @@ object Spreadsheet {
   trait SheetsRangeSetting extends StObject {
     
     /** Gets or sets the data to render the Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the header styles for the headers in datasource range.
-      * @Default {null}
+      * @default {null}
       */
     var headerStyles: js.UndefOr[Any] = js.undefined
     
@@ -6354,17 +6354,17 @@ object Spreadsheet {
     var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Specifies the query for the datasource in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
-      * @Default {true}
+      * @default {true}
       */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the start cell for the datasource range in Spreadsheet.
-      * @Default {A1}
+      * @default {A1}
       */
     var startCell: js.UndefOr[String] = js.undefined
   }
@@ -6407,17 +6407,17 @@ object Spreadsheet {
   trait SheetsRow extends StObject {
     
     /** Specifies the cells of a row in Spreadsheet.
-      * @Default {[]}
+      * @default {[]}
       */
     var cells: js.UndefOr[js.Array[SheetsRowsCell]] = js.undefined
     
     /** Gets or sets the height of a row in Spreadsheet.
-      * @Default {20}
+      * @default {20}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets the index of a row in Spreadsheet.
-      * @Default {0}
+      * @default {0}
       */
     var index: js.UndefOr[Double] = js.undefined
   }
@@ -6450,32 +6450,32 @@ object Spreadsheet {
   trait SheetsRowsCell extends StObject {
     
     /** Specifies the comment for a cell in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var comment: js.UndefOr[SheetsRowsCellsComment] = js.undefined
     
     /** Specifies the format of a cell in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var format: js.UndefOr[SheetsRowsCellsFormat] = js.undefined
     
     /** Specifies the hyperlink for a cell in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var hyperlink: js.UndefOr[SheetsRowsCellsHyperlink] = js.undefined
     
     /** Specifies the index of a cell in Spreadsheet.
-      * @Default {0}
+      * @default {0}
       */
     var index: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether to lock or unlock a particular cell.
-      * @Default {false}
+      * @default {false}
       */
     var isLocked: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the styles of a cell in Spreadsheet.
-      * @Default {null}
+      * @default {null}
       */
     var style: js.UndefOr[SheetsRowsCellsStyle] = js.undefined
     
@@ -6526,7 +6526,7 @@ object Spreadsheet {
   trait SheetsRowsCellsComment extends StObject {
     
     /** Get or sets the value that indicates whether to show or hide comments in Spreadsheet.
-      * @Default {false}
+      * @default {false}
       */
     var isVisible: js.UndefOr[Boolean] = js.undefined
     
@@ -6557,7 +6557,7 @@ object Spreadsheet {
   trait SheetsRowsCellsFormat extends StObject {
     
     /** Specifies the number of decimal places for the given input.
-      * @Default {2}
+      * @default {2}
       */
     var decimalPlaces: js.UndefOr[Double] = js.undefined
     
@@ -6566,7 +6566,7 @@ object Spreadsheet {
     var formatStr: js.UndefOr[String] = js.undefined
     
     /** Specifies the thousand separator for the given input.
-      * @Default {false}
+      * @default {false}
       */
     var thousandSeparator: js.UndefOr[Boolean] = js.undefined
     
@@ -6609,7 +6609,7 @@ object Spreadsheet {
     var cellAddr: js.UndefOr[String] = js.undefined
     
     /** Specifies the sheet index to which the cell is referred.
-      * @Default {1}
+      * @default {1}
       */
     var sheetIndex: js.UndefOr[Double] = js.undefined
     

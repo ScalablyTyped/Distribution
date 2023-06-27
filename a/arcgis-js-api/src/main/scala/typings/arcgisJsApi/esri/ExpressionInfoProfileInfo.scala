@@ -24,31 +24,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpressionInfoProfileInfo extends StObject {
   
   /**
-    * Describes the context (i.e.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * Describes the context (i.e.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var context: ProfileContext
   
   /**
-    * Indicates which [profile](https://developers.arcgis.com/arcade/profiles/) is used to execute the expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * Indicates which [profile](https://developers.arcgis.com/arcade/profiles/) is used to execute the expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var name: `form-constraint` | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
   
   /**
-    * The return type of the expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * The return type of the expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var returnType: js.UndefOr[boolean | date | number | string_ | dictionary] = js.undefined
   
   /**
-    * Indicates the data source used to hydrate the expression's profile variables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * Indicates the data source used to hydrate the expression's profile variables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var source: layer | `feature-reduction`
 }
 object ExpressionInfoProfileInfo {

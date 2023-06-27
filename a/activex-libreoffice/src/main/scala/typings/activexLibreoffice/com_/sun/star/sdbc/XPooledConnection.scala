@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is called, the PooledConnection returns the connection which is pooled.
   *
   * </p>
-  * @@see com::sun::star::sdbc::XConnection
+  * @see com::sun::star::sdbc::XConnection
   */
 trait XPooledConnection
   extends StObject

@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainProperties extends StObject {
   
   /**
-    * The domain name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
-    */
+  		 * The domain name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The domain type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
-    */
+  		 * The domain type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
+  		 */
   var `type`: js.UndefOr[range | `coded-value` | inherited] = js.undefined
 }
 object DomainProperties {

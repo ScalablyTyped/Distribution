@@ -55,7 +55,7 @@ object sapMP13nPanelMod {
     var __implements__sap_m_p13n_IContent: Boolean = js.native
     
     /**
-      * @EXPERIMENTAL
+      * @experimental
       *
       * Returns the title, which should be displayed in the P13nPopup to describe related content.
       *
@@ -150,7 +150,7 @@ object sapMP13nPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeNavigationTo beforeNavigationTo} event
       * of this `sap.m.P13nPanel`.
@@ -166,20 +166,20 @@ object sapMP13nPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeNavigationTo(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nPanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeNavigationTo beforeNavigationTo} event
       * of this `sap.m.P13nPanel`.
@@ -200,7 +200,7 @@ object sapMP13nPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeNavigationTo(
       /**
@@ -211,7 +211,7 @@ object sapMP13nPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nPanel` itself
       */
@@ -219,7 +219,7 @@ object sapMP13nPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This method defines the point in time before the panel becomes active.
       */
@@ -246,7 +246,7 @@ object sapMP13nPanelMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:beforeNavigationTo beforeNavigationTo} event
       * of this `sap.m.P13nPanel`.
@@ -259,13 +259,13 @@ object sapMP13nPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeNavigationTo(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -273,8 +273,8 @@ object sapMP13nPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.28.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeNavigationTo beforeNavigationTo} to attached listeners.
       *
@@ -303,9 +303,9 @@ object sapMP13nPanelMod {
     def getItems(): js.Array[typings.openui5.sapMP13nItemMod.default] = js.native
     
     /**
-      * @SINCE 1.26.7
-      * @deprecated (since 1.50) - replaced by the event of the respective inherited control, for example {@link
-      * sap.m.P13nColumnsPanel#event:changeColumnsItems} of `P13nColumnsPanel` control.
+      * @since 1.26.7
+      * @deprecated (since 1.50) - replaced by the event of the respective inherited control, for example {@link sap.m.P13nColumnsPanel#event:changeColumnsItems }
+      * of `P13nColumnsPanel` control.
       *
       * This method can be overwritten by subclass in order to return a payload for Ok action
       *
@@ -314,14 +314,14 @@ object sapMP13nPanelMod {
     def getOkPayload(): js.Object = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This method can be overwritten by subclass in order to return a payload for Reset action
       */
     def getResetPayload(): Unit = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getTitleLarge titleLarge}.
       *
@@ -400,7 +400,7 @@ object sapMP13nPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This method can be overwritten by subclass in order to cleanup after navigation, e.g. to remove invalid
       * content on the panel.
@@ -408,7 +408,7 @@ object sapMP13nPanelMod {
     def onAfterNavigationFrom(): Unit = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This method can be overwritten by subclass in order to prevent navigation to another panel. This could
       * be the case if some content on the panel is considered 'invalid'.
@@ -475,7 +475,7 @@ object sapMP13nPanelMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getTitleLarge titleLarge}.
       *
@@ -562,16 +562,24 @@ object sapMP13nPanelMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait P13nPanel$BeforeNavigationToEventParameters extends StObject
+  
+  type P13nPanelBeforeNavigationToEvent = typings.openui5.sapUiBaseEventMod.default[P13nPanel$BeforeNavigationToEventParameters]
+  
+  type P13nPanelBeforeNavigationToEventParameters = P13nPanel$BeforeNavigationToEventParameters
+  
   trait P13nPanelSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Due to performance the data of the panel can be requested in lazy mode e.g. when the panel is displayed
       */
-    var beforeNavigationTo: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeNavigationTo: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Callback which notifies a change on this panel.
@@ -593,7 +601,7 @@ object sapMP13nPanelMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Large title text appears e.g. in dialog header in case that only one panel is shown.
       */
@@ -636,7 +644,7 @@ object sapMP13nPanelMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nPanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setBeforeNavigationTo(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeNavigationTo", js.Any.fromFunction1(value))
+      inline def setBeforeNavigationTo(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeNavigationTo", js.Any.fromFunction1(value))
       
       inline def setBeforeNavigationToUndefined: Self = StObject.set(x, "beforeNavigationTo", js.undefined)
       

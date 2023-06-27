@@ -4,7 +4,6 @@ import typings.fundamentalReact.anon.Checked
 import typings.fundamentalReact.anon.PartialSwitchProps
 import typings.fundamentalReact.anon.WeakValidationMapSwitchPr
 import typings.fundamentalReact.fundamentalReactStrings.Switch
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -16,8 +15,8 @@ object libSwitchSwitchMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Switch/Switch.SwitchProps> & {  displayName :'Switch'} */
   object default {
     
-    inline def apply(props: SwitchProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: SwitchProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SwitchProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: SwitchProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Switch/Switch", JSImport.Default)
     @js.native

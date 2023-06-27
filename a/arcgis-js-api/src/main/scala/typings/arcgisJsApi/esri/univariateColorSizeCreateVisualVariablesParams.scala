@@ -12,129 +12,131 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateVisualVariablesParams extends StObject {
   
   /**
-    * Options for configuring the color portion of the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Options for configuring the color portion of the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var colorOptions: js.UndefOr[univariateColorSizeCreateVisualVariablesParamsColorOptions] = js.undefined
   
   /**
-    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the generated renderer is for a binning visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Indicates whether the generated renderer is for a binning visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer for which the visual variable is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer for which the visual variable is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * A custom maximum value set by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * A custom maximum value set by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * A custom minimum value set by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * A custom minimum value set by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of the field to normalize the values of the given `field`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * The name of the field to normalize the values of the given `field`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Options for configuring the size portion of the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Options for configuring the size portion of the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var sizeOptions: js.UndefOr[univariateColorSizeCreateVisualVariablesParamsSizeOptions] = js.undefined
   
   /**
-    * A SQL expression evaluating to a number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * A SQL expression evaluating to a number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var sqlExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * A SQL where clause used to filter features for the statistics query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * A SQL where clause used to filter features for the statistics query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var sqlWhere: js.UndefOr[String] = js.undefined
   
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
-    * Sets the size stops and colors based on meaningful data values.
-    *
-    * @default high-to-low
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Sets the size stops and colors based on meaningful data values.
+  		 *
+  		 * @default high-to-low
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below`] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Text describing the value returned from the `valueExpression`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Text describing the value returned from the `valueExpression`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
-    * The view where the input layer is rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view where the input layer is rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[View] = js.undefined
   
   /**
-    * Indicates if the size units of the symbols will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Indicates if the size units of the symbols will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object univariateColorSizeCreateVisualVariablesParams {
   
-  inline def apply(layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): univariateColorSizeCreateVisualVariablesParams = {
+  inline def apply(
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+  ): univariateColorSizeCreateVisualVariablesParams = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParams]
   }
@@ -154,7 +156,9 @@ object univariateColorSizeCreateVisualVariablesParams {
     
     inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

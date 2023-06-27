@@ -17,22 +17,27 @@ open class PublicKeyCredential ()
   /* CompleteClass */
   override val authenticatorAttachment: java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/getClientExtensionResults) */
   /* standard dom */
   /* CompleteClass */
   override def getClientExtensionResults(): AuthenticationExtensionsClientOutputs = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Credential/id) */
   /* standard dom */
   /* CompleteClass */
   override val id: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/rawId) */
   /* standard dom */
   /* CompleteClass */
   override val rawId: js.typedarray.ArrayBuffer = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/response) */
   /* standard dom */
   /* CompleteClass */
   override val response: typings.std.AuthenticatorResponse = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Credential/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: java.lang.String = js.native
@@ -46,6 +51,7 @@ object PublicKeyCredential {
   /* standard dom */
   inline def isConditionalMediationAvailable(): js.Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalMediationAvailable")().asInstanceOf[js.Promise[scala.Boolean]]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/isUserVerifyingPlatformAuthenticatorAvailable) */
   /* standard dom */
   inline def isUserVerifyingPlatformAuthenticatorAvailable(): js.Promise[scala.Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserVerifyingPlatformAuthenticatorAvailable")().asInstanceOf[js.Promise[scala.Boolean]]
 }

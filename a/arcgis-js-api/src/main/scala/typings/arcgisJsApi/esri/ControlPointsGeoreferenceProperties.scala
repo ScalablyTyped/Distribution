@@ -8,32 +8,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ControlPointsGeoreferenceProperties extends StObject {
   
   /**
-    * An array of two, three, or four [controlPoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#controlPoints) positions the media element.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#controlPoints)
-    */
+  		 * An array of two, three, or four [controlPoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#controlPoints) positions the media element.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#controlPoints)
+  		 */
   var controlPoints: js.UndefOr[js.Array[ControlPoint]] = js.undefined
   
   /**
-    * Defines the size of the element displayed, typically the element's height in pixels.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#height)
-    */
+  		 * Defines the size of the element displayed, typically the element's height in pixels.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#height)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[`control-points`] = js.undefined
   
   /**
-    * Defines the size of the element displayed, typically the element's width in pixels.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#width)
-    */
+  		 * Defines the size of the element displayed, typically the element's width in pixels.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#width)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ControlPointsGeoreferenceProperties {

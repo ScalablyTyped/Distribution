@@ -1,6 +1,7 @@
 package typings.esbuild.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.esbuild.anon.CompilerOptions
 import typings.esbuild.esbuildBooleans.`false`
 import typings.esbuild.esbuildStrings.`inline`
 import typings.esbuild.esbuildStrings.automatic
@@ -118,6 +119,9 @@ trait CommonOptions extends StObject {
   
   /** Documentation: https://esbuild.github.io/api/#tree-shaking */
   var treeShaking: js.UndefOr[Boolean] = js.undefined
+  
+  /** Documentation: https://esbuild.github.io/api/#tsconfig-raw */
+  var tsconfigRaw: js.UndefOr[String | CompilerOptions] = js.undefined
 }
 object CommonOptions {
   
@@ -270,5 +274,9 @@ object CommonOptions {
     inline def setTreeShaking(value: Boolean): Self = StObject.set(x, "treeShaking", value.asInstanceOf[js.Any])
     
     inline def setTreeShakingUndefined: Self = StObject.set(x, "treeShaking", js.undefined)
+    
+    inline def setTsconfigRaw(value: String | CompilerOptions): Self = StObject.set(x, "tsconfigRaw", value.asInstanceOf[js.Any])
+    
+    inline def setTsconfigRawUndefined: Self = StObject.set(x, "tsconfigRaw", js.undefined)
   }
 }

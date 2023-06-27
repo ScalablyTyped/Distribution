@@ -8,13 +8,13 @@ trait ParametersPathPatid extends StObject {
   
   var parameters: PathPatid
   
-  var requestBody: ContentApplicationjson50
+  var requestBody: ContentApplicationjson58
   
   var responses: `204`
 }
 object ParametersPathPatid {
   
-  inline def apply(parameters: PathPatid, requestBody: ContentApplicationjson50, responses: `204`): ParametersPathPatid = {
+  inline def apply(parameters: PathPatid, requestBody: ContentApplicationjson58, responses: `204`): ParametersPathPatid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathPatid]
   }
@@ -24,7 +24,7 @@ object ParametersPathPatid {
     
     inline def setParameters(value: PathPatid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson50): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson58): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `204`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

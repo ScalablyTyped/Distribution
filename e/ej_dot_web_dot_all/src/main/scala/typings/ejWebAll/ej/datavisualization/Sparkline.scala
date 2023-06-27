@@ -174,22 +174,22 @@ object Sparkline {
   trait AxisLineSettings extends StObject {
     
     /** Color of the axis line.
-      * @Default {'#111111'}
+      * @default {'#111111'}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Dash array of the axis line.
-      * @Default {1}
+      * @default {1}
       */
     var dashArray: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of the axis.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the axis line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -224,12 +224,12 @@ object Sparkline {
   trait Border extends StObject {
     
     /** Border color of the sparkline.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sparkline border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -412,22 +412,22 @@ object Sparkline {
     var border: js.UndefOr[MarkerSettingsBorder] = js.undefined
     
     /** Color of the marker shape.
-      * @Default {white}
+      * @default {white}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Controls the opacity of the marker.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of the marker shape.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** width of the marker shape.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -466,17 +466,17 @@ object Sparkline {
   trait MarkerSettingsBorder extends StObject {
     
     /** Border color of the marker shape.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Controls the opacity of the marker border.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Border width of the marker shape.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -515,7 +515,7 @@ object Sparkline {
     var axisLineSettings: js.UndefOr[AxisLineSettings] = js.undefined
     
     /** Background color of the plot area.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -524,7 +524,7 @@ object Sparkline {
     var border: js.UndefOr[Border] = js.undefined
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -533,32 +533,32 @@ object Sparkline {
     var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Controls whether Sparkline has to be rendered as Canvas or SVG.Canvas rendering supports all functionalities in SVG rendering.
-      * @Default {false}
+      * @default {false}
       */
     var enableCanvasRendering: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the date object to string, using locale settings.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Color for series end point.
-      * @Default {null}
+      * @default {null}
       */
     var endPointColor: js.UndefOr[String] = js.undefined
     
     /** Fill color for the sparkline series.
-      * @Default {#33ccff}
+      * @default {#33ccff}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Color for series high point.
-      * @Default {null}
+      * @default {null}
       */
     var highPointColor: js.UndefOr[String] = js.undefined
     
     /** Controls whether sparkline has to be responsive or not.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -571,12 +571,12 @@ object Sparkline {
     var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which sparkline should be localized.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Color for series low point.
-      * @Default {null}
+      * @default {null}
       */
     var lowPointColor: js.UndefOr[String] = js.undefined
     
@@ -585,17 +585,17 @@ object Sparkline {
     var markerSettings: js.UndefOr[MarkerSettings] = js.undefined
     
     /** Color for series negative point.
-      * @Default {null}
+      * @default {null}
       */
     var negativePointColor: js.UndefOr[String] = js.undefined
     
     /** Opacity of the series.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Gap or padding for sparkline.
-      * @Default {8}
+      * @default {8}
       */
     var padding: js.UndefOr[Double] = js.undefined
     
@@ -636,17 +636,17 @@ object Sparkline {
     var sparklineMouseMove: js.UndefOr[js.Function1[/* e */ SparklineMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Color for series start point.
-      * @Default {null}
+      * @default {null}
       */
     var startPointColor: js.UndefOr[String] = js.undefined
     
     /** Border color of the series.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the theme for Sparkline.
-      * @Default {Flatlight. See Theme}
+      * @default {Flatlight. See Theme}
       */
     var theme: js.UndefOr[typings.ejWebAll.ej.Sparkline.Theme | String] = js.undefined
     
@@ -659,22 +659,22 @@ object Sparkline {
     var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.undefined
     
     /** Specifies the type of the series to render in sparkline.
-      * @Default {line. See Type}
+      * @default {line. See Type}
       */
     var `type`: js.UndefOr[typings.ejWebAll.ej.Sparkline.Type | String] = js.undefined
     
     /** Border width of the series.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var yName: js.UndefOr[String] = js.undefined
   }
@@ -985,22 +985,22 @@ object Sparkline {
   trait RangeBandSettings extends StObject {
     
     /** Range band color of the series.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** End value of the range band.
-      * @Default {null}
+      * @default {null}
       */
     var endRange: js.UndefOr[Double] = js.undefined
     
     /** Range band opacity of the series.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Start value of the range band.
-      * @Default {null}
+      * @default {null}
       */
     var startRange: js.UndefOr[Double] = js.undefined
   }
@@ -1143,12 +1143,12 @@ object Sparkline {
   trait Size extends StObject {
     
     /** Height of the Sparkline. Height can be specified in either pixel or percentage.
-      * @Default {''}
+      * @default {''}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Sparkline. Width can be specified in either pixel or percentage.
-      * @Default {''}
+      * @default {''}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -1255,7 +1255,7 @@ object Sparkline {
     var border: js.UndefOr[TooltipBorder] = js.undefined
     
     /** Fill color for the sparkline tooltip.
-      * @Default {white}
+      * @default {white}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -1268,7 +1268,7 @@ object Sparkline {
     var template: js.UndefOr[String] = js.undefined
     
     /** Show/hides the tooltip visibility.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -1307,12 +1307,12 @@ object Sparkline {
   trait TooltipBorder extends StObject {
     
     /** Border color of the tooltip.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -1339,32 +1339,32 @@ object Sparkline {
   trait TooltipFont extends StObject {
     
     /** Font color of the text in the tooltip.
-      * @Default {#111111}
+      * @default {#111111}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for the tooltip.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for the tooltip.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontStyle | String] = js.undefined
     
     /** Specifies the font weight for the tooltip.
-      * @Default {Regular}
+      * @default {Regular}
       */
     var fontWeight: js.UndefOr[typings.ejWebAll.ej.Sparkline.FontWeight | String] = js.undefined
     
     /** Opacity for text in the tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in the tooltip.
-      * @Default {8px}
+      * @default {8px}
       */
     var size: js.UndefOr[String] = js.undefined
   }

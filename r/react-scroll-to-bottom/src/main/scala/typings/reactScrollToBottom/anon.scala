@@ -1,6 +1,7 @@
 package typings.reactScrollToBottom
 
 import typings.react.mod.ReactNode
+import typings.reactScrollToBottom.mod.ScrollOption
 import typings.reactScrollToBottom.reactScrollToBottomStrings.`100Percentsign`
 import typings.reactScrollToBottom.reactScrollToBottomStrings.auto
 import typings.reactScrollToBottom.reactScrollToBottomStrings.bottom
@@ -263,21 +264,25 @@ object anon {
       * Scroll panel to bottom
       */
     def scrollToBottom(): Unit = js.native
+    def scrollToBottom(option: ScrollOption): Unit = js.native
     
     /**
       * Scroll panel to end (depends on mode)
       */
     def scrollToEnd(): Unit = js.native
+    def scrollToEnd(option: ScrollOption): Unit = js.native
     
     /**
       * Scroll panel to start (depends on mode)
       */
     def scrollToStart(): Unit = js.native
+    def scrollToStart(option: ScrollOption): Unit = js.native
     
     /**
       * Scroll panel to top
       */
     def scrollToTop(): Unit = js.native
+    def scrollToTop(option: ScrollOption): Unit = js.native
     
     @JSName("scrollTo")
     def scrollTo_100(scrollTop: `100Percentsign`): Unit = js.native

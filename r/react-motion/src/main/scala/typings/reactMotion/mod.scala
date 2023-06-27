@@ -170,19 +170,19 @@ object mod {
     
     /**
       * Specifies damping
-      * @defaults 26
+      * @default 26
       */
     var damping: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies both the rounding of the interpolated value and the speed (internal).
-      * @defaults 0.01
+      * @default 0.01
       */
     var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Specified stiffness
-      * @defaults 170
+      * @default 170
       */
     var stiffness: js.UndefOr[Double] = js.undefined
   }

@@ -19,7 +19,7 @@ trait InputPaymentElementCardSnake
   var options: js.UndefOr[Any] = js.undefined
   
   // https://stripe.com/docs/js/elements_object/create_element?type=card
-  var seperate_elements: js.UndefOr[Boolean] = js.undefined
+  var separate_elements: js.UndefOr[Boolean] = js.undefined
 }
 object InputPaymentElementCardSnake {
   
@@ -47,8 +47,8 @@ object InputPaymentElementCardSnake {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setSeperate_elements(value: Boolean): Self = StObject.set(x, "seperate_elements", value.asInstanceOf[js.Any])
+    inline def setSeparate_elements(value: Boolean): Self = StObject.set(x, "separate_elements", value.asInstanceOf[js.Any])
     
-    inline def setSeperate_elementsUndefined: Self = StObject.set(x, "seperate_elements", js.undefined)
+    inline def setSeparate_elementsUndefined: Self = StObject.set(x, "separate_elements", js.undefined)
   }
 }

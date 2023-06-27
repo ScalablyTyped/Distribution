@@ -10,11 +10,11 @@ trait SketchTooltipOptions
      with Accessor {
   
   /**
-    * Whether tooltips are shown while sketching and editing.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html#enabled)
-    */
+  		 * Whether tooltips are shown while sketching and editing.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html#enabled)
+  		 */
   var enabled: Boolean = js.native
 }

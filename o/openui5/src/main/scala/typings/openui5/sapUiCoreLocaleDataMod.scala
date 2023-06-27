@@ -93,7 +93,7 @@ object sapUiCoreLocaleDataMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @SINCE 1.92.0
+      * @since 1.92.0
       *
       * Whether 1 January is the first day of the first calendar week. This is the definition of the calendar
       * week in the US.
@@ -103,7 +103,7 @@ object sapUiCoreLocaleDataMod {
     def firstDayStartsFirstWeek(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Returns the defined pattern for representing the calendar week number.
       *
@@ -167,7 +167,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Get combined interval pattern using a given pattern and the fallback interval pattern.
       *
@@ -204,7 +204,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns the currency code which is corresponded with the given currency symbol.
       *
@@ -219,7 +219,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Returns the number of digits of the specified currency.
       *
@@ -231,7 +231,7 @@ object sapUiCoreLocaleDataMod {
     sCurrency: String): int = js.native
     
     /**
-      * @SINCE 1.51.0
+      * @since 1.51.0
       *
       * Returns the short currency formats (like 1K USD, 1M USD....).
       *
@@ -267,7 +267,7 @@ object sapUiCoreLocaleDataMod {
     sContext: String): String = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Returns the currency symbol for the specified currency, if no symbol is found the ISO 4217 currency code
       * is returned.
@@ -280,7 +280,7 @@ object sapUiCoreLocaleDataMod {
     sCurrency: String): String = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Returns the currency symbols available for this locale. Currency symbols get accumulated by custom currency
       * symbols.
@@ -291,7 +291,7 @@ object sapUiCoreLocaleDataMod {
     def getCurrencySymbols(): Record[String, String] = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Get custom datetime pattern for a given skeleton format.
       *
@@ -381,7 +381,7 @@ object sapUiCoreLocaleDataMod {
     sCalendarType: CalendarType
     ): String | js.Array[String] = js.native
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Get interval pattern for a given skeleton format.
       *
@@ -638,7 +638,7 @@ object sapUiCoreLocaleDataMod {
     ): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns the short decimal formats (like 1K, 1M....).
       *
@@ -667,7 +667,7 @@ object sapUiCoreLocaleDataMod {
     def getDecimalPattern(): String = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Returns the display name for a time unit (second, minute, hour, day, week, month, year).
       */
@@ -688,7 +688,7 @@ object sapUiCoreLocaleDataMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Returns the map of era IDs to era dates.
       *
@@ -707,7 +707,7 @@ object sapUiCoreLocaleDataMod {
     sCalendarType: CalendarType): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Returns array of eras.
       *
@@ -752,7 +752,7 @@ object sapUiCoreLocaleDataMod {
     def getFirstDayOfWeek(): int = js.native
     
     /**
-      * @SINCE 1.17.0
+      * @since 1.17.0
       *
       * Returns the interval format with the given Id (see CLDR documentation for valid Ids) or the fallback
       * format if no interval format with that Id is known.
@@ -921,7 +921,7 @@ object sapUiCoreLocaleDataMod {
     def getPercentPattern(): String = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Returns an array of all plural categories available in this language.
       *
@@ -930,7 +930,7 @@ object sapUiCoreLocaleDataMod {
     def getPluralCategories(): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Returns the plural category (zero, one, two, few, many or other) for the given number value. The number
       * must be passed as an unformatted number string with dot as decimal separator (for example "12345.67").
@@ -957,7 +957,7 @@ object sapUiCoreLocaleDataMod {
     vNumber: Double): String = js.native
     
     /**
-      * @SINCE 1.28.6
+      * @since 1.28.6
       *
       * Returns the preferred calendar type for the current locale which exists in {@link sap.ui.core.CalendarType}
       *
@@ -966,7 +966,7 @@ object sapUiCoreLocaleDataMod {
     def getPreferredCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Returns the preferred hour pattern symbol (h for 12, H for 24 hours) for the current locale.
       *
@@ -1039,7 +1039,7 @@ object sapUiCoreLocaleDataMod {
     ): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns the relative day resource pattern (like "Today", "Yesterday", "{0} days ago") based on the given
       * difference of days (0 means today, 1 means tomorrow, -1 means yesterday, ...).
@@ -1062,7 +1062,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Returns the relative resource pattern with unit 'hour' (like "in {0} hour(s)", "{0} hour(s) ago" under
       * locale 'en') based on the given difference value (positive value means in the future and negative value
@@ -1090,7 +1090,7 @@ object sapUiCoreLocaleDataMod {
     ): String | Null = js.native
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Returns the relative resource pattern with unit 'minute' (like "in {0} minute(s)", "{0} minute(s) ago"
       * under locale 'en') based on the given difference value (positive value means in the future and negative
@@ -1117,7 +1117,7 @@ object sapUiCoreLocaleDataMod {
     ): String | Null = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns the relative month resource pattern (like "This month", "Last month", "{0} months ago") based
       * on the given difference of months (0 means this month, 1 means next month, -1 means last month, ...).
@@ -1140,7 +1140,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Returns the relative format pattern with given scale (year, month, week, ...) and difference value.
       *
@@ -1208,7 +1208,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Returns relative time patterns for the given scales as an array of objects containing scale, value and
       * pattern.
@@ -1247,7 +1247,7 @@ object sapUiCoreLocaleDataMod {
     ): js.Array[js.Object] = js.native
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Returns the relative resource pattern with unit 'second' (like now, "in {0} seconds", "{0} seconds ago"
       * under locale 'en') based on the given difference value (0 means now, positive value means in the future
@@ -1271,7 +1271,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Returns the relative week resource pattern (like "This week", "Last week", "{0} weeks ago") based on
       * the given difference of weeks (0 means this week, 1 means next week, -1 means last week, ...).
@@ -1294,7 +1294,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns the relative year resource pattern (like "This year", "Last year", "{0} year ago") based on the
       * given difference of years (0 means this year, 1 means next year, -1 means last year, ...).
@@ -1317,7 +1317,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Retrieves the unit format pattern for a specific unit name considering the unit mappings.
       * See:
@@ -1377,7 +1377,7 @@ object sapUiCoreLocaleDataMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Retrieves the localized display name of a unit by sUnit, e.g. "duration-hour".
       *
@@ -1390,7 +1390,7 @@ object sapUiCoreLocaleDataMod {
     sUnit: String): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Retrieves the unit format pattern for a specific unit name.
       *
@@ -1404,7 +1404,7 @@ object sapUiCoreLocaleDataMod {
     sUnit: String): js.Object = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Retrieves all unit format patterns merged.
       *
@@ -1415,7 +1415,7 @@ object sapUiCoreLocaleDataMod {
     def getUnitFormats(): js.Object = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Looks up the unit from defined unit mapping. E.g. for defined unit mapping ` { "my": "my-custom-unit",
       * "cm": "length-centimeter" } `

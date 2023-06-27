@@ -7,46 +7,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Token extends StObject {
   
   /**
-    * A boolean used internally to figure out if a link opening is balanced: it’s
-    * not a link opening but has a balanced closing.
+    * Field to help parse links.
+    *
+    * This boolean is used internally to figure out if a link opening is
+    * balanced: it’s not a link opening but has a balanced closing.
     */
   var _balanced: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A marker used to parse attention, depending on the characters after
-    * sequences (`**`), the sequence can open, close, both, or none
+    * Field to help parse attention.
+    *
+    * Depending on the character before sequences (`**`), the sequence can open,
+    * close, both, or none.
     */
   var _close: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A boolean used internally to figure out if a token is a container token.
+    * Field to help parse containers.
+    *
+    * This boolean is used internally to figure out if a token is a container
+    * token.
     */
   var _container: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A boolean used internally to figure out if a link opening can’t be used
-    * (because links in links are incorrect).
+    * Field to help parse links.
+    *
+    * This boolean is used internally to figure out if a link opening
+    * can’t be used (because links in links are incorrect).
     */
   var _inactive: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A boolean used internally to figure out if a token is in the first content
-    * of a list item construct.
+    * Field to help parse GFM task lists.
+    *
+    * This boolean is used internally to figure out if a token is in the first
+    * content of a list item construct.
     */
   var _isInFirstContentOfListItem: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A boolean used internally to figure out if a list is loose or not.
+    * Field to help parse lists.
+    *
+    * This boolean is used internally to figure out if a list is loose or not.
     */
   var _loose: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A marker used to parse attention, depending on the characters before
-    * sequences (`**`), the sequence can open, close, both, or none
+    * Field to help parse attention.
+    *
+    * Depending on the character before sequences (`**`), the sequence can open,
+    * close, both, or none.
     */
   var _open: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Connected tokenizer.
+    *
     * Used when dealing with linked tokens.
     * A child tokenizer is needed to tokenize them, which is stored on those
     * tokens.
@@ -58,10 +75,13 @@ trait Token extends StObject {
     */
   var contentType: js.UndefOr[ContentType] = js.undefined
   
+  /**
+    * Point where the token ends.
+    */
   var end: Point
   
   /**
-    * The next token in a list of linked tokens
+    * The next token in a list of linked tokens.
     */
   var next: js.UndefOr[Token] = js.undefined
   
@@ -70,13 +90,19 @@ trait Token extends StObject {
     */
   var previous: js.UndefOr[Token] = js.undefined
   
+  /**
+    * Point where the token starts.
+    */
   var start: Point
   
-  var `type`: String
+  /**
+    * Token type.
+    */
+  var `type`: TokenType
 }
 object Token {
   
-  inline def apply(end: Point, start: Point, `type`: String): Token = {
+  inline def apply(end: Point, start: Point, `type`: TokenType): Token = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
@@ -101,7 +127,7 @@ object Token {
     
     inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def set_balanced(value: Boolean): Self = StObject.set(x, "_balanced", value.asInstanceOf[js.Any])
     

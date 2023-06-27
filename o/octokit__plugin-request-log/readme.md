@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__plugin-request-log
 
-Typings are for version 1.0.4
+Typings are for version 3.0.0
 
 ## Library description:
 Log all requests and request errors

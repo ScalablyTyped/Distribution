@@ -13,27 +13,23 @@ object sapUiUtilStorageMod {
        with Storage {
     def this(/**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String) = this()
     def this(/**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: Storage) = this()
     def this(/**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: Type) = this()
     def this(
       /**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String,
       /**
@@ -44,8 +40,7 @@ object sapUiUtilStorageMod {
     def this(
       /**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: Unit,
       /**
@@ -56,8 +51,7 @@ object sapUiUtilStorageMod {
     def this(
       /**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: Storage,
       /**
@@ -68,8 +62,7 @@ object sapUiUtilStorageMod {
     def this(
       /**
       * The type of native storage implementation that this `Storage` instance should use internally. Alternatively,
-      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage
-      * Storage Web API).
+      * this can be a custom implementation of the {@link https://developer.mozilla.org/en-US/docs/Web/API/Storage Storage Web API).
       */
     vStorage: Type,
       /**
@@ -84,6 +77,14 @@ object sapUiUtilStorageMod {
     @JSImport("sap/ui/util/Storage", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Enumeration of the storage types supported by {@link module:sap/ui/util/Storage}.
+      */
+    @JSImport("sap/ui/util/Storage", "default.Type")
+    @js.native
+    def Type: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type */ Any = js.native
+    inline def Type_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Type")(x.asInstanceOf[js.Any])
     
     /**
       * Clears the whole storage (Independent of the current Storage instance!).
@@ -171,12 +172,12 @@ object sapUiUtilStorageMod {
   
   @js.native
   sealed trait Type extends StObject
+  /**
+    * Enumeration of the storage types supported by {@link module:sap/ui/util/Storage}.
+    */
   @JSImport("sap/ui/util/Storage", "Type")
   @js.native
   object Type extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Type & String] = js.native
     
     /**
       * Indicates usage of the browser's localStorage feature
@@ -185,7 +186,6 @@ object sapUiUtilStorageMod {
     sealed trait local
       extends StObject
          with Type
-    /* "local" */ val local: typings.openui5.sapUiUtilStorageMod.Type.local & String = js.native
     
     /**
       * Indicates usage of the browser's sessionStorage feature
@@ -194,7 +194,6 @@ object sapUiUtilStorageMod {
     sealed trait session
       extends StObject
          with Type
-    /* "session" */ val session: typings.openui5.sapUiUtilStorageMod.Type.session & String = js.native
   }
   
   @js.native

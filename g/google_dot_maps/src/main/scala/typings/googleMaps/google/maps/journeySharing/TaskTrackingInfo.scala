@@ -1,11 +1,17 @@
 package typings.googleMaps.google.maps.journeySharing
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.googleMaps.google.maps.LatLng
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TaskTrackingInfo extends StObject {
+  
+  /**
+    * Attributes assigned to the task.
+    */
+  var attributes: StringDictionary[Any]
   
   /**
     * The estimated arrival time to the stop location.
@@ -86,13 +92,15 @@ trait TaskTrackingInfo extends StObject {
 }
 object TaskTrackingInfo {
   
-  inline def apply(name: String, trackingId: String): TaskTrackingInfo = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], trackingId = trackingId.asInstanceOf[js.Any], estimatedArrivalTime = null, estimatedTaskCompletionTime = null, latestVehicleLocationUpdate = null, plannedLocation = null, remainingDrivingDistanceMeters = null, remainingStopCount = null, routePolylinePoints = null, state = null, targetTimeWindow = null, taskOutcome = null, taskOutcomeTime = null)
+  inline def apply(attributes: StringDictionary[Any], name: String, trackingId: String): TaskTrackingInfo = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], trackingId = trackingId.asInstanceOf[js.Any], estimatedArrivalTime = null, estimatedTaskCompletionTime = null, latestVehicleLocationUpdate = null, plannedLocation = null, remainingDrivingDistanceMeters = null, remainingStopCount = null, routePolylinePoints = null, state = null, targetTimeWindow = null, taskOutcome = null, taskOutcomeTime = null)
     __obj.asInstanceOf[TaskTrackingInfo]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TaskTrackingInfo] (val x: Self) extends AnyVal {
+    
+    inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setEstimatedArrivalTime(value: js.Date): Self = StObject.set(x, "estimatedArrivalTime", value.asInstanceOf[js.Any])
     

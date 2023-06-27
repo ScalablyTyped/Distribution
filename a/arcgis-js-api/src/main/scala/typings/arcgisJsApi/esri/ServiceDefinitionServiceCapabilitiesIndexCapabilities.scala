@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionServiceCapabilitiesIndexCapabilities extends StObject {
   
   /**
-    * Specifies if the service supports indexes in descending order.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if the service supports indexes in descending order.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportsDescendingIndex: Boolean
   
   /**
-    * Specifies if the service supports indexes on relationships.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if the service supports indexes on relationships.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportsRelationshipIndex: Boolean
   
   /**
-    * Specifies if the system supports creating unique constraints for relationship types
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if the system supports creating unique constraints for relationship types
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportsUniqueRelationshipConstraint: Boolean
 }
 object ServiceDefinitionServiceCapabilitiesIndexCapabilities {

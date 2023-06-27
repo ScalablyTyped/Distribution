@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurement3DViewModelMeasurement extends StObject {
   
   /**
-    * The direct distance between the two points, only available in `euclidean` mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
-    */
+  		 * The direct distance between the two points, only available in `euclidean` mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
+  		 */
   var directDistance: DirectLineMeasurement3DViewModelMeasurementValue
   
   /**
-    * The horizontal distance between the two points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
-    */
+  		 * The horizontal distance between the two points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
+  		 */
   var horizontalDistance: DirectLineMeasurement3DViewModelMeasurementValue
   
   /**
-    * Describes the mode in which the measurement was taken.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
-    */
+  		 * Describes the mode in which the measurement was taken.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
+  		 */
   var measurementMode: euclidean | geodesic
   
   /**
-    * The vertical distance between the two points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
-    */
+  		 * The vertical distance between the two points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#measurement)
+  		 */
   var verticalDistance: DirectLineMeasurement3DViewModelMeasurementValue
 }
 object DirectLineMeasurement3DViewModelMeasurement {

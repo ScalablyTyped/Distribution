@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `6` extends StObject {
   
   /**
-    * 2D array of strings with data from the clipboard. The first dimension represents the rows, and the second
-    * dimension represents the cells of the tabular data.
+    * Array with strings or Promises resolving with strings
     */
-  var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
+  var keys: js.UndefOr[js.Array[String | js.Promise[String]]] = js.undefined
 }
 object `6` {
   
@@ -22,10 +21,10 @@ object `6` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
     
-    inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String | js.Promise[String]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value*))
+    inline def setKeysVarargs(value: (String | js.Promise[String])*): Self = StObject.set(x, "keys", js.Array(value*))
   }
 }

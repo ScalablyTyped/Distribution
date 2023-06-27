@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ComboBoxInput")
 @js.native
 /**
-  * The `ComboBoxInput` class defines the desired user interface for a combo box  group.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html)
-  */
+		 * The `ComboBoxInput` class defines the desired user interface for a combo box	 group.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html)
+		 */
 open class ComboBoxInput ()
   extends StObject
      with typings.arcgisJsApi.esri.ComboBoxInput {
   def this(properties: ComboBoxInputProperties) = this()
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

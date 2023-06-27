@@ -771,14 +771,14 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
       * Create a representation of the analytical semantics of OData service metadata
       */
     def this(/**
-      * An instance of {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel} or {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceWithWorkaround}
+      * An instance of {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel} or {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceWithWorkaround }
       * for locating the OData service. {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByURI} is
       * deprecated.
       */
     oModelReference: js.Object) = this()
     def this(
       /**
-      * An instance of {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel} or {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceWithWorkaround}
+      * An instance of {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel} or {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceWithWorkaround }
       * for locating the OData service. {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByURI} is
       * deprecated.
       */
@@ -786,10 +786,10 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
       /**
       * Additional parameters for controlling the model construction. Currently supported are:
       * 	 -  sAnnotationJSONDoc - A JSON document providing extra annotations to the elements of the structure
-      * 			of the given service
+      *     of the given service
       * 	 -  modelVersion (deprecated) - Parameter to define which ODataModel version should be used if you use
-      * 			{@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByURI}; supported values are: 1 (default),
-      * 			2
+      *     {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByURI}; supported values are: 1 (default),
+      *     2
       */
     mParameter: js.Object
     ) = this()
@@ -845,7 +845,7 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
     }
     
     /**
-      * @deprecated (since 1.94) - use {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel}
+      * @deprecated (since 1.94) - use {@link sap.ui.model.analytics.odata4analytics.Model.ReferenceByModel }
       * instead
       *
       * Handle to an OData model by the URI pointing to it.
@@ -877,11 +877,11 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
         *
         *
         * 	 - "CreateLabelsFromTechnicalNames" - If a property has no label text, it gets generated from the property
-        * 			name.
+        *     name.
         *
         *
         * 	 - "IdentifyTextPropertiesByName" -If a dimension property has no text and another property with the
-        * 			same name and an appended "Name", "Text" etc. exists, they are linked via annotation.
+        *     same name and an appended "Name", "Text" etc. exists, they are linked via annotation.
         */
       def this(
         /**
@@ -1883,12 +1883,12 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
   
   @js.native
   sealed trait SortOrder extends StObject
+  /**
+    * Sort order of a property.
+    */
   @JSImport("sap/ui/model/analytics/odata4analytics", "SortOrder")
   @js.native
   object SortOrder extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SortOrder & String] = js.native
     
     /**
       * Sort Order: ascending.
@@ -1897,7 +1897,6 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
     sealed trait Ascending
       extends StObject
          with SortOrder
-    /* "asc" */ val Ascending: typings.openui5.sapUiModelAnalyticsOdata4analyticsMod.SortOrder.Ascending & String = js.native
     
     /**
       * Sort Order: descending.
@@ -1906,7 +1905,6 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
     sealed trait Descending
       extends StObject
          with SortOrder
-    /* "desc" */ val Descending: typings.openui5.sapUiModelAnalyticsOdata4analyticsMod.SortOrder.Descending & String = js.native
   }
   
   type _To = odata4analytics
@@ -1915,8 +1913,8 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
   override def _to: odata4analytics = default
   
   /**
-    * @EXPERIMENTAL - This module is only for experimental use!
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * @experimental - This module is only for experimental use!
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The OData4Analytics API is purely experimental, not yet functionally complete and not meant for productive
     * usage. At present, its only purpose is to demonstrate how easy analytical extensions of OData4SAP can
@@ -1927,6 +1925,11 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
     * Lazy initialization of attributes will cause unexpected values when you access object attributes directly.
     */
   trait odata4analytics extends StObject {
+    
+    /**
+      * Sort order of a property.
+      */
+    var SortOrder: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder */ Any
     
     /**
       * Specify which components of the dimension shall be included in the value set.
@@ -1944,8 +1947,11 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
   }
   object odata4analytics {
     
-    inline def apply(includeDimensionTextAttributes: (Boolean, Boolean) => Unit): odata4analytics = {
-      val __obj = js.Dynamic.literal(includeDimensionTextAttributes = js.Any.fromFunction2(includeDimensionTextAttributes))
+    inline def apply(
+      SortOrder: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder */ Any,
+      includeDimensionTextAttributes: (Boolean, Boolean) => Unit
+    ): odata4analytics = {
+      val __obj = js.Dynamic.literal(SortOrder = SortOrder.asInstanceOf[js.Any], includeDimensionTextAttributes = js.Any.fromFunction2(includeDimensionTextAttributes))
       __obj.asInstanceOf[odata4analytics]
     }
     
@@ -1953,6 +1959,8 @@ object sapUiModelAnalyticsOdata4analyticsMod extends Shortcut {
     implicit open class MutableBuilder[Self <: odata4analytics] (val x: Self) extends AnyVal {
       
       inline def setIncludeDimensionTextAttributes(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "includeDimensionTextAttributes", js.Any.fromFunction2(value))
+      
+      inline def setSortOrder(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder */ Any): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     }
   }
 }

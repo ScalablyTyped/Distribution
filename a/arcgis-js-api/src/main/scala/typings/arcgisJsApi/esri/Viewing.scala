@@ -10,9 +10,9 @@ trait Viewing
      with Accessor {
   
   /**
-    * An object specifying the search parameters set within the web scene or web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html#search)
-    */
+  		 * An object specifying the search parameters set within the web scene or web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html#search)
+  		 */
   var search: Search = js.native
 }

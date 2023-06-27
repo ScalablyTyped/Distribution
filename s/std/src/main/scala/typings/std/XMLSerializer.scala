@@ -4,9 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides the serializeToString() method to construct an XML string representing a DOM tree. */
+/**
+  * Provides the serializeToString() method to construct an XML string representing a DOM tree.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLSerializer)
+  */
 trait XMLSerializer extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLSerializer/serializeToString) */
   /* standard dom */
   def serializeToString(root: Node): java.lang.String
 }

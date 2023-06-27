@@ -11,7 +11,7 @@ trait ElementDefinition extends StObject {
   /**
     * a space separated list of class names that the element has
     */
-  var classes: js.UndefOr[String] = js.undefined
+  var classes: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * you should only use `style`/`css` for very special cases; use classes instead
@@ -72,9 +72,11 @@ object ElementDefinition {
   @scala.inline
   implicit open class MutableBuilder[Self <: ElementDefinition] (val x: Self) extends AnyVal {
     
-    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Array[String] | String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setCss(value: Node | Edge): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

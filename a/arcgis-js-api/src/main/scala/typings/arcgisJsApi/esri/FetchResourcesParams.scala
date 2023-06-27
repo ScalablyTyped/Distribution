@@ -10,33 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FetchResourcesParams extends StObject {
   
   /**
-    * The maximum number of results to be included in the result set response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
-    */
+  		 * The maximum number of results to be included in the result set response.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * A field to sort the results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
-    */
+  		 * A field to sort the results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
+  		 */
   var sortField: js.UndefOr[
     created | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.`type`
   ] = js.undefined
   
   /**
-    * The order in which to sort the results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
-    */
+  		 * The order in which to sort the results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
+  		 */
   var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   
   /**
-    * The index of the first entry in the result set response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
-    */
+  		 * The index of the first entry in the result set response.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResourcesParams)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
 }
 object FetchResourcesParams {

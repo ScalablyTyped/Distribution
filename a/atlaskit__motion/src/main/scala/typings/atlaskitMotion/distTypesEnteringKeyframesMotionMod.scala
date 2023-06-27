@@ -1,26 +1,27 @@
 package typings.atlaskitMotion
 
-import org.scalablytyped.runtime.Shortcut
 import typings.atlaskitMotion.anon.ClassName
 import typings.atlaskitMotion.distTypesEnteringTypesMod.MotionProps
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.emotionSerialize.mod.CSSObject
-import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distTypesEnteringKeyframesMotionMod extends Shortcut {
+object distTypesEnteringKeyframesMotionMod {
+  
+  @JSImport("@atlaskit/motion/dist/types/entering/keyframes-motion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is the base INTERNAL component used for all other entering motions.
     * This does not need Javascript to execute on the client so it will run immediately
     * for any SSR rendered React apps before the JS has executed.
     */
-  @JSImport("@atlaskit/motion/dist/types/entering/keyframes-motion", JSImport.Default)
-  @js.native
-  val default: FC[InternalKeyframesMotionProps] = js.native
+  inline def default(param0: InternalKeyframesMotionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait InternalKeyframesMotionProps
     extends StObject
@@ -101,9 +102,4 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
       inline def setIsPausedUndefined: Self = StObject.set(x, "isPaused", js.undefined)
     }
   }
-  
-  type _To = FC[InternalKeyframesMotionProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `distTypesEnteringKeyframesMotionMod.foo` */
-  override def _to: FC[InternalKeyframesMotionProps] = default
 }

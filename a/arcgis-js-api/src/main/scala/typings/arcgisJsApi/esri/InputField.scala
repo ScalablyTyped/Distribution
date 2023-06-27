@@ -2,160 +2,130 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
 import typings.arcgisJsApi.arcgisJsApiStrings.`text-box`
-import typings.arcgisJsApi.arcgisJsApiStrings.date
-import typings.arcgisJsApi.arcgisJsApiStrings.number
-import typings.arcgisJsApi.arcgisJsApiStrings.text
-import typings.arcgisJsApi.arcgisJsApiStrings.unsupported
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputField
-  extends StObject
-     with Accessor {
+/**
+	 * Starting at version 4.27, this class is deprecated and should no longer be used.
+	 *
+	 * @deprecated since 4.27. Use {@link module:esri/widgets/FeatureForm/FieldInput} instead.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html)
+	 */
+trait InputField extends StObject {
   
-  /**
-    * The field's description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#description)
-    */
-  val description: String = js.native
+  val description: String
   
-  /**
-    * The input value's domain.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#domain)
-    */
-  val domain: CodedValueDomain | RangeDomain = js.native
+  val domain: CodedValueDomain | RangeDomain
   
-  /**
-    * When true, the field can be edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#editable)
-    */
-  val editable: Boolean = js.native
+  val editable: Boolean
   
-  /**
-    * The type of editor used when working with `string` fields.
-    *
-    * @default text-box
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#editorType)
-    */
-  val editorType: `text-box` | `text-area` = js.native
+  val editorType: `text-box` | `text-area`
   
-  /**
-    * If the input field's value is invalid, this property returns validation error code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#error)
-    */
-  val error: String = js.native
+  val error: String
   
-  /**
-    * A user-friendly formatted error message based on the [validation error code](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#error).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#errorMessage)
-    */
-  val errorMessage: String = js.native
+  val errorMessage: String
   
-  /**
-    * The group this input field belongs to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#group)
-    */
-  val group: InputFieldGroup = js.native
+  val group: InputFieldGroup
   
-  /**
-    * A hint for the field's value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#hint)
-    */
-  val hint: String = js.native
+  val hint: String
   
-  /**
-    * For date inputs, this enables the time input part.
-    *
-    * @default {true}
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#includeTime)
-    */
-  val includeTime: String = js.native
+  val includeTime: Boolean
   
-  /**
-    * The field's label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#label)
-    */
-  val label: String = js.native
+  val label: String
   
-  /**
-    * Restricts the input length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#maxLength)
-    */
-  val maxLength: Double = js.native
+  val maxLength: Double
   
-  /**
-    * Restricts the input length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#minLength)
-    */
-  val minLength: Double = js.native
+  val minLength: Double
   
-  /**
-    * The associated field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#name)
-    */
-  val name: String = js.native
+  val name: String
   
-  /**
-    * Indicates whether the field is required.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#required)
-    */
-  val required: Boolean = js.native
+  val required: Boolean
   
-  /**
-    * When true, this value can be submitted without _introducing_ data validation issues.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#submittable)
-    */
-  val submittable: Boolean = js.native
+  val submittable: Boolean
   
-  /**
-    * The type of input field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#type)
-    */
-  val `type`: number | text | date | unsupported = js.native
+  val `type`: Boolean
   
-  /**
-    * If this `InputField` has a value defined for `valueExpression` or `editableExpression`, this property will be true whenever one or both of these expressions is currently being executed; otherwise, it will be false.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#updating)
-    */
-  val updating: Boolean = js.native
+  val updating: Boolean
   
-  /**
-    * When `true`, the input value is valid.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#valid)
-    */
-  val valid: Boolean = js.native
+  val valid: Boolean
   
-  /**
-    * The input's value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#value)
-    */
-  val value: Double | String | Null = js.native
+  val value: Double | String | Null
   
-  /**
-    * When `true`, the field is displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#visible)
-    */
-  val visible: Boolean = js.native
+  val visible: Boolean
+}
+object InputField {
+  
+  inline def apply(
+    description: String,
+    domain: CodedValueDomain | RangeDomain,
+    editable: Boolean,
+    editorType: `text-box` | `text-area`,
+    error: String,
+    errorMessage: String,
+    group: InputFieldGroup,
+    hint: String,
+    includeTime: Boolean,
+    label: String,
+    maxLength: Double,
+    minLength: Double,
+    name: String,
+    required: Boolean,
+    submittable: Boolean,
+    `type`: Boolean,
+    updating: Boolean,
+    valid: Boolean,
+    visible: Boolean
+  ): InputField = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], editorType = editorType.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], includeTime = includeTime.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], maxLength = maxLength.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], submittable = submittable.asInstanceOf[js.Any], updating = updating.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], value = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputField]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputField] (val x: Self) extends AnyVal {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDomain(value: CodedValueDomain | RangeDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditorType(value: `text-box` | `text-area`): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setGroup(value: InputFieldGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTime(value: Boolean): Self = StObject.set(x, "includeTime", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setSubmittable(value: Boolean): Self = StObject.set(x, "submittable", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUpdating(value: Boolean): Self = StObject.set(x, "updating", value.asInstanceOf[js.Any])
+    
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
 }

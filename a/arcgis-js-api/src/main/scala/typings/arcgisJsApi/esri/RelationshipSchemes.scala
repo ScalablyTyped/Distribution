@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipSchemes extends StObject {
   
   /**
-    * The ID of the basemap associated with the given schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
-    */
+  		 * The ID of the basemap associated with the given schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average basemap color is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
-    */
+  		 * Indicates whether the average basemap color is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
+  		 */
   var basemapTheme: String
   
   /**
-    * The relationship scheme best suited for the given basemap and geometry type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
-    */
+  		 * The relationship scheme best suited for the given basemap and geometry type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
+  		 */
   var primaryScheme: RelationshipScheme
   
   /**
-    * Additional relationship schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
-    */
+  		 * Additional relationship schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemes)
+  		 */
   var secondarySchemes: js.Array[RelationshipScheme]
 }
 object RelationshipSchemes {

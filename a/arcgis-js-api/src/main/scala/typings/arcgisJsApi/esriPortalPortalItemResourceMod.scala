@@ -11,10 +11,10 @@ object esriPortalPortalItemResourceMod {
   @JSImport("esri/portal/PortalItemResource", JSImport.Namespace)
   @js.native
   /**
-    * A reference to a portal item resource.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html)
-    */
+  		 * A reference to a portal item resource.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html)
+  		 */
   open class ^ ()
     extends StObject
        with PortalItemResource {

@@ -4,19 +4,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule) */
 trait CSSFontPaletteValuesRule
   extends StObject
      with CSSRule {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/basePalette) */
   /* standard dom */
   val basePalette: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/fontFamily) */
   /* standard dom */
   val fontFamily: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/name) */
   /* standard dom */
   val name: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontPaletteValuesRule/overrideColors) */
   /* standard dom */
   val overrideColors: java.lang.String
 }

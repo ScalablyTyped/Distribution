@@ -131,7 +131,7 @@ object sapMListItemBaseMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -156,13 +156,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -187,7 +187,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailPress(
       /**
@@ -198,7 +198,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -221,13 +221,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -254,7 +254,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailTap(
       /**
@@ -265,7 +265,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -289,13 +289,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -323,7 +323,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -334,7 +334,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -357,13 +357,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -390,7 +390,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
@@ -401,7 +401,7 @@ object sapMListItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListItemBase` itself
       */
@@ -419,13 +419,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDetailPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -445,13 +445,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDetailTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -469,13 +469,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -495,13 +495,13 @@ object sapMListItemBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -509,7 +509,7 @@ object sapMListItemBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:detailPress detailPress} to attached listeners.
       *
@@ -523,7 +523,7 @@ object sapMListItemBaseMod {
     
     /**
       * @deprecated (since 1.20.0) - Instead, use `detailPress` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:detailTap detailTap} to attached listeners.
       *
@@ -536,7 +536,7 @@ object sapMListItemBaseMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -550,7 +550,7 @@ object sapMListItemBaseMod {
     
     /**
       * @deprecated (since 1.20.0) - Instead, use `press` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tap tap} to attached listeners.
       *
@@ -563,15 +563,14 @@ object sapMListItemBaseMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the accessibility announcement for the content.
       *
@@ -589,16 +588,16 @@ object sapMListItemBaseMod {
     def getCounter(): int = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Gets current value of property {@link #getHighlight highlight}.
       *
       * Defines the highlight state of the list items.
       *
-      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType}
+      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
       * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText}
+      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText }
       * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
       * property does not need to be set because a default text is used. However, the default text can be overridden
       * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
@@ -610,7 +609,7 @@ object sapMListItemBaseMod {
     def getHighlight(): String = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Gets current value of property {@link #getHighlightText highlightText}.
       *
@@ -624,7 +623,7 @@ object sapMListItemBaseMod {
     def getHighlightText(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getNavigated navigated}.
       *
@@ -652,8 +651,8 @@ object sapMListItemBaseMod {
     def getSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the tabbable DOM elements as a jQuery collection
       *
@@ -693,7 +692,7 @@ object sapMListItemBaseMod {
     def isSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -702,7 +701,7 @@ object sapMListItemBaseMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -739,16 +738,16 @@ object sapMListItemBaseMod {
     iCounter: int): this.type = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Sets a new value for property {@link #getHighlight highlight}.
       *
       * Defines the highlight state of the list items.
       *
-      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType}
+      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
       * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText}
+      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText }
       * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
       * property does not need to be set because a default text is used. However, the default text can be overridden
       * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
@@ -766,7 +765,7 @@ object sapMListItemBaseMod {
     sHighlight: String): this.type = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Sets a new value for property {@link #getHighlightText highlightText}.
       *
@@ -786,7 +785,7 @@ object sapMListItemBaseMod {
     sHighlightText: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getNavigated navigated}.
       *
@@ -867,12 +866,32 @@ object sapMListItemBaseMod {
     bUnread: Boolean): this.type = js.native
   }
   
+  trait ListItemBase$DetailPressEventParameters extends StObject
+  
+  trait ListItemBase$DetailTapEventParameters extends StObject
+  
+  trait ListItemBase$PressEventParameters extends StObject
+  
+  trait ListItemBase$TapEventParameters extends StObject
+  
+  type ListItemBaseDetailPressEvent = typings.openui5.sapUiBaseEventMod.default[ListItemBase$DetailPressEventParameters]
+  
+  type ListItemBaseDetailPressEventParameters = ListItemBase$DetailPressEventParameters
+  
+  type ListItemBaseDetailTapEvent = typings.openui5.sapUiBaseEventMod.default[ListItemBase$DetailTapEventParameters]
+  
+  type ListItemBaseDetailTapEventParameters = ListItemBase$DetailTapEventParameters
+  
+  type ListItemBasePressEvent = typings.openui5.sapUiBaseEventMod.default[ListItemBase$PressEventParameters]
+  
+  type ListItemBasePressEventParameters = ListItemBase$PressEventParameters
+  
   trait ListItemBaseSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Association to controls / ids which label this control (see WAI-ARIA attribute aria-labelledby).
       */
@@ -886,24 +905,28 @@ object sapMListItemBaseMod {
     /**
       * Fires when the user clicks on the detail button of the control.
       */
-    var detailPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var detailPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.20.0) - Instead, use `detailPress` event.
       *
       * Fires when the user taps on the detail button of the control.
       */
-    var detailTap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var detailTap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Defines the highlight state of the list items.
       *
-      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType}
+      * Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
       * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText}
+      * Accessibility support is provided through the associated {@link sap.m.ListItemBase#setHighlightText highlightText }
       * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
       * property does not need to be set because a default text is used. However, the default text can be overridden
       * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
@@ -911,7 +934,7 @@ object sapMListItemBaseMod {
     var highlight: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Defines the semantics of the {@link sap.m.ListItemBase#setHighlight highlight} property for accessibility
       * purposes.
@@ -919,7 +942,7 @@ object sapMListItemBaseMod {
     var highlightText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * The navigated state of the list item.
       *
@@ -936,7 +959,9 @@ object sapMListItemBaseMod {
       * element that handles its own `press` event then the list item's `press` event is not fired. Also see
       * {@link sap.m.ListBase#attachItemPress}.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the selected state of the list items. **Note:** Binding the `selected` property in single selection
@@ -951,7 +976,9 @@ object sapMListItemBaseMod {
       *
       * Fires when the user taps on the control.
       */
-    var tap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the visual indication and behavior of the list items, e.g. `Active`, `Navigation`, `Detail`.
@@ -988,11 +1015,11 @@ object sapMListItemBaseMod {
       
       inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
       
-      inline def setDetailPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "detailPress", js.Any.fromFunction1(value))
+      inline def setDetailPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "detailPress", js.Any.fromFunction1(value))
       
       inline def setDetailPressUndefined: Self = StObject.set(x, "detailPress", js.undefined)
       
-      inline def setDetailTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "detailTap", js.Any.fromFunction1(value))
+      inline def setDetailTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "detailTap", js.Any.fromFunction1(value))
       
       inline def setDetailTapUndefined: Self = StObject.set(x, "detailTap", js.undefined)
       
@@ -1008,7 +1035,7 @@ object sapMListItemBaseMod {
       
       inline def setNavigatedUndefined: Self = StObject.set(x, "navigated", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
@@ -1016,7 +1043,7 @@ object sapMListItemBaseMod {
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
       
       inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
       
@@ -1031,4 +1058,8 @@ object sapMListItemBaseMod {
       inline def setUnreadUndefined: Self = StObject.set(x, "unread", js.undefined)
     }
   }
+  
+  type ListItemBaseTapEvent = typings.openui5.sapUiBaseEventMod.default[ListItemBase$TapEventParameters]
+  
+  type ListItemBaseTapEventParameters = ListItemBase$TapEventParameters
 }

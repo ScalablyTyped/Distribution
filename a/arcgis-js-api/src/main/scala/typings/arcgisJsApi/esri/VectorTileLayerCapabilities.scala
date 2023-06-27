@@ -9,17 +9,17 @@ trait VectorTileLayerCapabilities extends StObject {
   var exportMap: VectorTileLayerCapabilitiesExportMap
   
   /**
-    * Indicates options supported by the exportTiles operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
-    */
+  		 * Indicates options supported by the exportTiles operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
+  		 */
   var exportTiles: Any
   
   /**
-    * Indicates operations that can be performed on the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
-    */
+  		 * Indicates operations that can be performed on the service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
+  		 */
   var operations: VectorTileLayerCapabilitiesOperations
 }
 object VectorTileLayerCapabilities {

@@ -10,7 +10,7 @@ sealed trait NoteItemType extends StObject
   * Note item type
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.NoteItemType")
 @js.native
@@ -18,7 +18,7 @@ object NoteItemType extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait endnote
@@ -27,7 +27,7 @@ object NoteItemType extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait footnote

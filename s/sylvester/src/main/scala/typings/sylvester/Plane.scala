@@ -25,7 +25,7 @@ trait Plane extends StObject {
   /**
     * Returns the plane's distance from the given object (point, line or plane).
     *
-    * @parm {Vector|Line|Plane} obj The object.
+    * @param {Vector|Line|Plane} obj The object.
     */
   def distanceFrom(obj: Vector): Double = js.native
   

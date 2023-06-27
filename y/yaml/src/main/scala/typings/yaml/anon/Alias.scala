@@ -6,6 +6,7 @@ import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesYamlmapMod.YAMLMap
 import typings.yaml.distNodesYamlseqMod.YAMLSeq
 import typings.yaml.distVisitMod.visitorFn
+import typings.yaml.yamlBooleans.`true`
 import typings.yaml.yamlStrings.key
 import typings.yaml.yamlStrings.value
 import org.scalablytyped.runtime.StObject
@@ -46,7 +47,7 @@ object Alias {
     
     inline def setAlias(
       value: (/* key */ Double | key | value | Null, typings.yaml.distNodesAliasMod.Alias, /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Alias", js.Any.fromFunction3(value))
     
@@ -54,7 +55,7 @@ object Alias {
     
     inline def setCollection(
       value: (/* key */ Double | key | value | Null, (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Collection", js.Any.fromFunction3(value))
     
@@ -62,7 +63,7 @@ object Alias {
     
     inline def setMap(
       value: (/* key */ Double | key | value | Null, YAMLMap[Any, Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Map", js.Any.fromFunction3(value))
     
@@ -70,7 +71,7 @@ object Alias {
     
     inline def setNode(
       value: (/* key */ Double | key | value | Null, typings.yaml.distNodesAliasMod.Alias | Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Node", js.Any.fromFunction3(value))
     
@@ -78,7 +79,7 @@ object Alias {
     
     inline def setPair(
       value: (/* key */ Double | key | value | Null, Pair[Any, Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Pair", js.Any.fromFunction3(value))
     
@@ -86,7 +87,7 @@ object Alias {
     
     inline def setScalar(
       value: (/* key */ Double | key | value | Null, Scalar[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Scalar", js.Any.fromFunction3(value))
     
@@ -94,7 +95,7 @@ object Alias {
     
     inline def setSeq(
       value: (/* key */ Double | key | value | Null, YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Seq", js.Any.fromFunction3(value))
     
@@ -102,7 +103,7 @@ object Alias {
     
     inline def setValue(
       value: (/* key */ Double | key | value | Null, Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
     ): Self = StObject.set(x, "Value", js.Any.fromFunction3(value))
     

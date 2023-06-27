@@ -11,45 +11,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait pieChartGetSchemesByTagParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * When provided, only schemes missing all the provided tags will be returned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
-    */
+  		 * When provided, only schemes missing all the provided tags will be returned.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
+  		 */
   var excludedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | polygon
   
   /**
-    * When provided, only schemes containing all the matching tags will be returned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
-    */
+  		 * When provided, only schemes containing all the matching tags will be returned.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
+  		 */
   var includedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The number of categories to include in the pie chart visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
-    */
+  		 * The number of categories to include in the pie chart visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemesByTag)
+  		 */
   var numColors: Double
 }
 object pieChartGetSchemesByTagParams {

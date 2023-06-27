@@ -9,40 +9,40 @@ trait GraphSearchStreamingProperties
      with GraphSearchProperties {
   
   /**
-    * Specifies list of IDs to search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#idsFilter)
-    */
+  		 * Specifies list of IDs to search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#idsFilter)
+  		 */
   var idsFilter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Specifies list of names of [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html#name) or [relationship types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#name) to search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#namedTypesFilter)
-    */
+  		 * Specifies list of names of [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html#name) or [relationship types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#name) to search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#namedTypesFilter)
+  		 */
   var namedTypesFilter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The maximum number of results returned from the search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#num)
-    */
+  		 * The maximum number of results returned from the search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#num)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * If `true`, returns the IDs of objects that match the search, the names of the properties that matched the search term, scores and highlights of the result set.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#returnSearchContext)
-    */
+  		 * If `true`, returns the IDs of objects that match the search, the names of the properties that matched the search term, scores and highlights of the result set.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#returnSearchContext)
+  		 */
   var returnSearchContext: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The index of the first result to return.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#start)
-    */
+  		 * The index of the first result to return.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#start)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
 }
 object GraphSearchStreamingProperties {

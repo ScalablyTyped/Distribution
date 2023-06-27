@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-double-position-gradients" : "4.0.2"
+      "postcss-double-position-gradients" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-double-position-gradients" : "4.0.2"
+      "postcss-double-position-gradients" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

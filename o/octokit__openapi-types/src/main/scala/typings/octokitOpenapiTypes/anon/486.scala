@@ -6,22 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `486` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[History]
+  var path: `444`
+  
+  var query: js.UndefOr[Subjectid] = js.undefined
 }
 object `486` {
   
-  inline def apply(applicationSlashjson: js.Array[History]): `486` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(path: `444`): `486` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`486`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `486`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[History]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPath(value: `444`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: History*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setQuery(value: Subjectid): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

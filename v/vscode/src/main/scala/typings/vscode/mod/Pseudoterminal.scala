@@ -70,7 +70,7 @@ trait Pseudoterminal extends StObject {
   		 * **Example:** Exit the terminal when "y" is pressed, otherwise show a notification.
   		 * ```typescript
   		 * const writeEmitter = new vscode.EventEmitter<string>();
-  		 * const closeEmitter = new vscode.EventEmitter<vscode.TerminalDimensions>();
+  		 * const closeEmitter = new vscode.EventEmitter<void>();
   		 * const pty: vscode.Pseudoterminal = {
   		 *   onDidWrite: writeEmitter.event,
   		 *   onDidClose: closeEmitter.event,
@@ -83,7 +83,8 @@ trait Pseudoterminal extends StObject {
   		 *     closeEmitter.fire();
   		 *   }
   		 * };
-  		 * vscode.window.createTerminal({ name: 'Exit example', pty });
+  		 * const terminal = vscode.window.createTerminal({ name: 'Exit example', pty });
+  		 * terminal.show(true);
   		 * ```
   		 */
   var onDidClose: js.UndefOr[Event[Unit | Double]] = js.native

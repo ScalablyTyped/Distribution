@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelTransferFunctionStyleProperties extends StObject {
   
   /**
-    * A collection of colors and normalized positions which describe how to colorize the data values that are within the [stretchRange](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#colorStops)
-    */
+  		 * A collection of colors and normalized positions which describe how to colorize the data values that are within the [stretchRange](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#colorStops)
+  		 */
   var colorStops: js.UndefOr[CollectionProperties[VoxelColorStop]] = js.undefined
   
   /**
-    * A collection of transparency values and normalized positions which describe how to apply transparency to the data values that are within the [stretchRange](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#opacityStops)
-    */
+  		 * A collection of transparency values and normalized positions which describe how to apply transparency to the data values that are within the [stretchRange](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#opacityStops)
+  		 */
   var opacityStops: js.UndefOr[CollectionProperties[VoxelOpacityStop]] = js.undefined
   
   /**
-    * Defines the data range which will be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#rangeFilter)
-    */
+  		 * Defines the data range which will be rendered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#rangeFilter)
+  		 */
   var rangeFilter: js.UndefOr[VoxelRangeFilter] = js.undefined
   
   /**
-    * The data range to apply the color and alpha stops to, specified as [minimum, maximum] in the units of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange)
-    */
+  		 * The data range to apply the color and alpha stops to, specified as [minimum, maximum] in the units of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#stretchRange)
+  		 */
   var stretchRange: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object VoxelTransferFunctionStyleProperties {

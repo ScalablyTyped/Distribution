@@ -9,17 +9,17 @@ trait DimensionLayerProperties
      with LayerProperties {
   
   /**
-    * The analysis object that stores the dimension shapes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#source)
-    */
+  		 * The analysis object that stores the dimension shapes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#source)
+  		 */
   var source: js.UndefOr[DimensionAnalysisProperties] = js.undefined
   
   /**
-    * The style defines how the dimension objects of this layer are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#style)
-    */
+  		 * The style defines how the dimension objects of this layer are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#style)
+  		 */
   var style: js.UndefOr[DimensionSimpleStyleProperties] = js.undefined
 }
 object DimensionLayerProperties {

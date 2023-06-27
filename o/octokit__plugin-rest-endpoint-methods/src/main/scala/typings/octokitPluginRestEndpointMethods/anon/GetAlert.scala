@@ -37,7 +37,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("getAlert")
-  var getAlert_Original: `759`
+  var getAlert_Original: `761`
   
   /**
     * Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.
@@ -59,7 +59,7 @@ trait GetAlert extends StObject {
     * To use this endpoint, you must be a member of the enterprise, and you must use an access token with the `repo` scope or `security_events` scope. Alerts are only returned for organizations in the enterprise for which you are an organization owner or a [security manager](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization).
     */
   @JSName("listAlertsForEnterprise")
-  var listAlertsForEnterprise_Original: `760`
+  var listAlertsForEnterprise_Original: `762`
   
   /**
     * Lists secret scanning alerts for eligible repositories in an organization, from newest to oldest.
@@ -87,7 +87,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listAlertsForOrg")
-  var listAlertsForOrg_Original: `761`
+  var listAlertsForOrg_Original: `763`
   
   /**
     * Lists secret scanning alerts for an eligible repository, from newest to oldest.
@@ -115,7 +115,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listAlertsForRepo")
-  var listAlertsForRepo_Original: `762`
+  var listAlertsForRepo_Original: `764`
   
   /**
     * Lists all locations for a given secret scanning alert for an eligible repository.
@@ -143,7 +143,7 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` read permission to use this endpoint.
     */
   @JSName("listLocationsForAlert")
-  var listLocationsForAlert_Original: `763`
+  var listLocationsForAlert_Original: `765`
   
   /**
     * Updates the status of a secret scanning alert in an eligible repository.
@@ -171,17 +171,17 @@ trait GetAlert extends StObject {
     * GitHub Apps must have the `secret_scanning_alerts` write permission to use this endpoint.
     */
   @JSName("updateAlert")
-  var updateAlert_Original: `764`
+  var updateAlert_Original: `766`
 }
 object GetAlert {
   
   inline def apply(
-    getAlert: `759`,
-    listAlertsForEnterprise: `760`,
-    listAlertsForOrg: `761`,
-    listAlertsForRepo: `762`,
-    listLocationsForAlert: `763`,
-    updateAlert: `764`
+    getAlert: `761`,
+    listAlertsForEnterprise: `762`,
+    listAlertsForOrg: `763`,
+    listAlertsForRepo: `764`,
+    listLocationsForAlert: `765`,
+    updateAlert: `766`
   ): GetAlert = {
     val __obj = js.Dynamic.literal(getAlert = getAlert.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listLocationsForAlert = listLocationsForAlert.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAlert]
@@ -190,16 +190,16 @@ object GetAlert {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAlert] (val x: Self) extends AnyVal {
     
-    inline def setGetAlert(value: `759`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `761`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForEnterprise(value: `760`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
+    inline def setListAlertsForEnterprise(value: `762`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForOrg(value: `761`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
+    inline def setListAlertsForOrg(value: `763`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForRepo(value: `762`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `764`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListLocationsForAlert(value: `763`): Self = StObject.set(x, "listLocationsForAlert", value.asInstanceOf[js.Any])
+    inline def setListLocationsForAlert(value: `765`): Self = StObject.set(x, "listLocationsForAlert", value.asInstanceOf[js.Any])
     
-    inline def setUpdateAlert(value: `764`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setUpdateAlert(value: `766`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
   }
 }

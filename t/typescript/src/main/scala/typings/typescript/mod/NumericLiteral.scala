@@ -9,7 +9,6 @@ trait NumericLiteral
   extends StObject
      with LiteralExpression
      with Declaration
-     with DeclarationName
      with JsonObjectExpression
      with LiteralToken
      with PropertyName

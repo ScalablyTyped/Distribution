@@ -10,15 +10,15 @@ trait CIMGeometricEffectOffsetTangent
      with CIMGeometricEffectType {
   
   /**
-    * The origin of the tangent offset for the line. The beginning and end of the lines are defined by how the line was digitized.
-    */
+  			 * The origin of the tangent offset for the line. The beginning and end of the lines are defined by how the line was digitized.
+  			 */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetTangentMethod * / any */ String
   ] = js.undefined
   
   /**
-    * The distance the geometry is moved tangent.
-    */
+  			 * The distance the geometry is moved tangent.
+  			 */
   var offset: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

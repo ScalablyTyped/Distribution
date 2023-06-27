@@ -8,6 +8,10 @@ trait AllowedValue
   extends StObject
      with Entity {
   
+  /**
+    * Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be
+    * assigned to any additional supported directory objects.
+    */
   var isActive: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object AllowedValue {

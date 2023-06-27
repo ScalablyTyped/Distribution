@@ -1,8 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.ActionItems
-import typings.openui5.anon.Content
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.SelectionDetailsActionLevel
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
@@ -15,7 +14,7 @@ object sapMSelectionDetailsMod {
   @JSImport("sap/m/SelectionDetails", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Constructor for a new SelectionDetails.
     *
@@ -61,7 +60,7 @@ object sapMSelectionDetailsMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.m.SelectionDetails with name `sClassName` and enriches it with the
       * information contained in `oClassInfo`.
@@ -116,7 +115,7 @@ object sapMSelectionDetailsMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.m.SelectionDetails.
       *
@@ -130,7 +129,7 @@ object sapMSelectionDetailsMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds some action to the aggregation {@link #getActions actions}.
       *
@@ -144,7 +143,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds some actionGroup to the aggregation {@link #getActionGroups actionGroups}.
       *
@@ -158,7 +157,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds some item to the aggregation {@link #getItems items}.
       *
@@ -172,7 +171,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
@@ -187,20 +186,20 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit]
     ): this.type = js.native
     def attachActionPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
@@ -220,7 +219,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit]
     ): this.type = js.native
     def attachActionPress(
       /**
@@ -231,7 +230,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
@@ -239,7 +238,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
@@ -254,20 +253,20 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
@@ -287,7 +286,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -298,7 +297,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
@@ -306,7 +305,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
@@ -321,20 +320,20 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
@@ -354,7 +353,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -365,7 +364,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
@@ -373,7 +372,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
@@ -388,20 +387,20 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
@@ -421,7 +420,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -432,7 +431,7 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectionDetails` itself
       */
@@ -440,7 +439,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches an event handler to the given listener to react to user selection interaction.
       *
@@ -458,7 +457,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Binds aggregation {@link #getItems items} to model data.
       *
@@ -473,7 +472,7 @@ object sapMSelectionDetailsMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Destroys all the actionGroups in the aggregation {@link #getActionGroups actionGroups}.
       *
@@ -482,7 +481,7 @@ object sapMSelectionDetailsMod {
     def destroyActionGroups(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Destroys all the actions in the aggregation {@link #getActions actions}.
       *
@@ -491,7 +490,7 @@ object sapMSelectionDetailsMod {
     def destroyActions(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Destroys all the items in the aggregation {@link #getItems items}.
       *
@@ -500,7 +499,7 @@ object sapMSelectionDetailsMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
@@ -512,13 +511,13 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit]
     ): this.type = js.native
     def detachActionPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsActionPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -526,7 +525,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
@@ -538,13 +537,13 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -552,7 +551,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
@@ -564,13 +563,13 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -578,7 +577,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
@@ -590,13 +589,13 @@ object sapMSelectionDetailsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectionDetailsNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -604,7 +603,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches the event which was attached by `attachSelectionHandler`.
       *
@@ -613,20 +612,22 @@ object sapMSelectionDetailsMod {
     def detachSelectionHandler(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:actionPress actionPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireActionPress(): this.type = js.native
-    def fireActionPress(/**
+    def fireActionPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ActionItems): this.type = js.native
+    mParameters: SelectionDetails$ActionPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
@@ -639,7 +640,7 @@ object sapMSelectionDetailsMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -652,20 +653,22 @@ object sapMSelectionDetailsMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavigate(): this.type = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Content): this.type = js.native
+    mParameters: SelectionDetails$NavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets content of aggregation {@link #getActionGroups actionGroups}.
       *
@@ -676,7 +679,7 @@ object sapMSelectionDetailsMod {
     def getActionGroups(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets content of aggregation {@link #getActions actions}.
       *
@@ -685,7 +688,7 @@ object sapMSelectionDetailsMod {
     def getActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the public facade of the SelectionDetails control for non inner framework usages.
       *
@@ -694,7 +697,7 @@ object sapMSelectionDetailsMod {
     def getFacade(): typings.openui5.sapUiBaseInterfaceMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets content of aggregation {@link #getItems items}.
       *
@@ -703,7 +706,7 @@ object sapMSelectionDetailsMod {
     def getItems(): js.Array[typings.openui5.sapMSelectionDetailsItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getActions actions}. and returns
       * its index if found or -1 otherwise.
@@ -718,7 +721,7 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getActionGroups actionGroups}.
       * and returns its index if found or -1 otherwise.
@@ -733,7 +736,7 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks for the provided `sap.m.SelectionDetailsItem` in the aggregation {@link #getItems items}. and
       * returns its index if found or -1 otherwise.
@@ -748,7 +751,7 @@ object sapMSelectionDetailsMod {
     ): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Inserts a action into the aggregation {@link #getActions actions}.
       *
@@ -768,7 +771,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Inserts a actionGroup into the aggregation {@link #getActionGroups actionGroups}.
       *
@@ -788,7 +791,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Inserts a item into the aggregation {@link #getItems items}.
       *
@@ -808,7 +811,7 @@ object sapMSelectionDetailsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Method to register the factory function that creates the SelectionDetailsItems. The factory function
       * is called for every selected entry separately with three parameters. First parameter is the display data
@@ -834,7 +837,7 @@ object sapMSelectionDetailsMod {
       */
     vAction: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes a action from the aggregation {@link #getActions actions}.
       *
@@ -856,7 +859,7 @@ object sapMSelectionDetailsMod {
       */
     vActionGroup: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes a actionGroup from the aggregation {@link #getActionGroups actionGroups}.
       *
@@ -874,7 +877,7 @@ object sapMSelectionDetailsMod {
     ): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes all the controls from the aggregation {@link #getActionGroups actionGroups}.
       *
@@ -885,7 +888,7 @@ object sapMSelectionDetailsMod {
     def removeAllActionGroups(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes all the controls from the aggregation {@link #getActions actions}.
       *
@@ -896,7 +899,7 @@ object sapMSelectionDetailsMod {
     def removeAllActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes all the controls from the aggregation {@link #getItems items}.
       *
@@ -911,7 +914,7 @@ object sapMSelectionDetailsMod {
       */
     vItem: String): typings.openui5.sapMSelectionDetailsItemMod.default | Null = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes a item from the aggregation {@link #getItems items}.
       *
@@ -929,7 +932,7 @@ object sapMSelectionDetailsMod {
     ): typings.openui5.sapMSelectionDetailsItemMod.default | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the popover to modal or non-modal based on the given parameter. This only takes effect on desktop
       * or tablet. Please see the documentation {@link sap.m.ResponsivePopover#modal}.
@@ -942,7 +945,7 @@ object sapMSelectionDetailsMod {
     modal: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Unbinds aggregation {@link #getItems items} from model data.
       *
@@ -950,6 +953,117 @@ object sapMSelectionDetailsMod {
       */
     def unbindItems(): this.type = js.native
   }
+  
+  trait SelectionDetails$ActionPressEventParameters extends StObject {
+    
+    /**
+      * The action that has to be processed once the action has been pressed
+      */
+    var action: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+    
+    /**
+      * If the action is pressed on one of the {@link sap.m.SelectionDetailsItem items}, the parameter contains
+      * a reference to the pressed {@link sap.m.SelectionDetailsItem item}. If a custom action or action group
+      * of the SelectionDetails popover is pressed, this parameter refers to all {@link sap.m.SelectionDetailsItem items}
+      */
+    var items: js.UndefOr[typings.openui5.sapMSelectionDetailsItemMod.default] = js.undefined
+    
+    /**
+      * The action level of action buttons. The available levels are Item, List and Group
+      */
+    var level: js.UndefOr[
+        SelectionDetailsActionLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionDetailsActionLevel * / any */ String)
+      ] = js.undefined
+  }
+  object SelectionDetails$ActionPressEventParameters {
+    
+    inline def apply(): SelectionDetails$ActionPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectionDetails$ActionPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionDetails$ActionPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setItems(value: typings.openui5.sapMSelectionDetailsItemMod.default): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setLevel(
+        value: SelectionDetailsActionLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionDetailsActionLevel * / any */ String)
+      ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    }
+  }
+  
+  trait SelectionDetails$BeforeCloseEventParameters extends StObject
+  
+  trait SelectionDetails$BeforeOpenEventParameters extends StObject
+  
+  trait SelectionDetails$NavigateEventParameters extends StObject {
+    
+    /**
+      * The content of the currently viewed page that was previously added via {@link sap.m.SelectionDetailsFacade#navTo}.
+      * This contains the content of the page before the navigation was triggered. Can be null in case of first
+      * event triggering.
+      */
+    var content: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Direction of the triggered navigation, possible values are "to" and "back".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The item on which the action has been pressed. Can be null in case a navigation was done without item
+      * context, e.g. action press.
+      */
+    var item: js.UndefOr[typings.openui5.sapMSelectionDetailsItemMod.default] = js.undefined
+  }
+  object SelectionDetails$NavigateEventParameters {
+    
+    inline def apply(): SelectionDetails$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectionDetails$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionDetails$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapMSelectionDetailsItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type SelectionDetailsActionPressEvent = typings.openui5.sapUiBaseEventMod.default[SelectionDetails$ActionPressEventParameters]
+  
+  type SelectionDetailsActionPressEventParameters = SelectionDetails$ActionPressEventParameters
+  
+  type SelectionDetailsBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[SelectionDetails$BeforeCloseEventParameters]
+  
+  type SelectionDetailsBeforeCloseEventParameters = SelectionDetails$BeforeCloseEventParameters
+  
+  type SelectionDetailsBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[SelectionDetails$BeforeOpenEventParameters]
+  
+  type SelectionDetailsBeforeOpenEventParameters = SelectionDetails$BeforeOpenEventParameters
+  
+  type SelectionDetailsNavigateEvent = typings.openui5.sapUiBaseEventMod.default[SelectionDetails$NavigateEventParameters]
+  
+  type SelectionDetailsNavigateEventParameters = SelectionDetails$NavigateEventParameters
   
   trait SelectionDetailsSettings
     extends StObject
@@ -967,7 +1081,12 @@ object sapMSelectionDetailsMod {
     /**
       * Event is triggered when a custom action is pressed.
       */
-    var actionPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var actionPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectionDetails$ActionPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Contains custom actions shown in the responsive toolbar below items on the first page.
@@ -979,12 +1098,16 @@ object sapMSelectionDetailsMod {
     /**
       * Event is triggered before the popover is closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Event is triggered before the popover is open.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Contains {@link sap.m.SelectionDetailsItem items} that are displayed on the first page.
@@ -996,7 +1119,12 @@ object sapMSelectionDetailsMod {
     /**
       * Event is triggered after a list item of {@link sap.m.SelectionDetailsItem} is pressed.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectionDetails$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object SelectionDetailsSettings {
     
@@ -1016,7 +1144,9 @@ object sapMSelectionDetailsMod {
       
       inline def setActionGroupsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "actionGroups", js.Array(value*))
       
-      inline def setActionPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "actionPress", js.Any.fromFunction1(value))
+      inline def setActionPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectionDetails$ActionPressEventParameters] => Unit
+      ): Self = StObject.set(x, "actionPress", js.Any.fromFunction1(value))
       
       inline def setActionPressUndefined: Self = StObject.set(x, "actionPress", js.undefined)
       
@@ -1028,11 +1158,11 @@ object sapMSelectionDetailsMod {
       
       inline def setActionsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
@@ -1044,7 +1174,9 @@ object sapMSelectionDetailsMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapMSelectionDetailsItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectionDetails$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     }

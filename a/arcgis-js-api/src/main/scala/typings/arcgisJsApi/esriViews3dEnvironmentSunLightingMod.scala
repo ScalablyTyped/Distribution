@@ -11,10 +11,10 @@ object esriViews3dEnvironmentSunLightingMod {
   @JSImport("esri/views/3d/environment/SunLighting", JSImport.Namespace)
   @js.native
   /**
-    * The SunLighting class allows you to change the lighting in the scene to sunlight.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html)
-    */
+  		 * The SunLighting class allows you to change the lighting in the scene to sunlight.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html)
+  		 */
   open class ^ ()
     extends StObject
        with SunLighting {

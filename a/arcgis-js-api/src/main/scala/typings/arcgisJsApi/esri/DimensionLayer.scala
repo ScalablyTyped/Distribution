@@ -11,24 +11,24 @@ trait DimensionLayer
      with Layer {
   
   /**
-    * The analysis object that stores the dimension shapes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#source)
-    */
+  		 * The analysis object that stores the dimension shapes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#source)
+  		 */
   var source: DimensionAnalysis = js.native
   
   /**
-    * The spatial reference of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#spatialReference)
+  		 */
   val spatialReference: SpatialReference = js.native
   
   /**
-    * The style defines how the dimension objects of this layer are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#style)
-    */
+  		 * The style defines how the dimension objects of this layer are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-DimensionLayer.html#style)
+  		 */
   var style: DimensionSimpleStyle = js.native
   
   @JSName("type")

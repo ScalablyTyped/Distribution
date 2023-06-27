@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerBaseQueryAttachmentsOptions extends StObject {
   
   /**
-    * Signal object that can be used to abort the asynchronous task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#queryAttachments)
-    */
+  		 * Signal object that can be used to abort the asynchronous task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#queryAttachments)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object FeatureLayerBaseQueryAttachmentsOptions {

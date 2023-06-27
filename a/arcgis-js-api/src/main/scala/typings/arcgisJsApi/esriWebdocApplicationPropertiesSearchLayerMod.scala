@@ -11,10 +11,10 @@ object esriWebdocApplicationPropertiesSearchLayerMod {
   @JSImport("esri/webdoc/applicationProperties/SearchLayer", JSImport.Namespace)
   @js.native
   /**
-    * Represents a layer to be included in search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html)
-    */
+  		 * Represents a layer to be included in search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with SearchLayer {

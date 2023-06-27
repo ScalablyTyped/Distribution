@@ -1,7 +1,7 @@
 
 # Scala.js typings for pdfjs-dist
 
-Typings are for version 3.6.172
+Typings are for version 3.7.107
 
 ## Library description:
 Generic build of Mozilla's PDF.js library.

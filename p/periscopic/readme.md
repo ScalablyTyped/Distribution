@@ -1,7 +1,7 @@
 
 # Scala.js typings for periscopic
 
-Typings are for version 3.0.4
+Typings are for version 3.1.0
 
 ## Library description:
 periscopic

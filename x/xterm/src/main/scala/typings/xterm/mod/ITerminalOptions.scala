@@ -239,8 +239,29 @@ trait ITerminalOptions extends StObject {
     * When using conpty on Windows 11 version >= 21376, it is recommended to
     * disable this because native text wrapping sequences are output correctly
     * thanks to https://github.com/microsoft/terminal/issues/405
+    *
+    * @deprecated Use {@link windowsPty}. This value will be ignored if
+    * windowsPty is set.
     */
   var windowsMode: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Compatibility information when the pty is known to be hosted on Windows.
+    * Setting this will turn on certain heuristics/workarounds depending on the
+    * values:
+    *
+    * - `if (backend !== undefined || buildNumber !== undefined)`
+    *   - When increasing the rows in the terminal, the amount increased into
+    *     the scrollback. This is done because ConPTY does not behave like
+    *     expect scrollback to come back into the viewport, instead it makes
+    *     empty rows at of the viewport. Not having this behavior can result in
+    *     missing data as the rows get replaced.
+    * - `if !(backend === 'conpty' && buildNumber >= 21376)`
+    *   - Reflow is disabled
+    *   - Lines are assumed to be wrapped if the last character of the line is
+    *     not whitespace.
+    */
+  var windowsPty: js.UndefOr[IWindowsPty] = js.undefined
   
   /**
     * A string containing all characters that are considered word separated by the
@@ -395,6 +416,10 @@ object ITerminalOptions {
     inline def setWindowsMode(value: Boolean): Self = StObject.set(x, "windowsMode", value.asInstanceOf[js.Any])
     
     inline def setWindowsModeUndefined: Self = StObject.set(x, "windowsMode", js.undefined)
+    
+    inline def setWindowsPty(value: IWindowsPty): Self = StObject.set(x, "windowsPty", value.asInstanceOf[js.Any])
+    
+    inline def setWindowsPtyUndefined: Self = StObject.set(x, "windowsPty", js.undefined)
     
     inline def setWordSeparator(value: String): Self = StObject.set(x, "wordSeparator", value.asInstanceOf[js.Any])
     

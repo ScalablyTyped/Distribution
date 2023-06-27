@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dexie" : "3.2.3"
+      "dexie" : "3.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "dexie" : "3.2.3"
+      "dexie" : "3.2.4"
     }
   ],
   "compile-devDependencies" : [

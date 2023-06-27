@@ -8,18 +8,12 @@ trait `200Content347` extends StObject {
   
   /** @description Response */
   var `200`: Content347
-  
-  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
 }
 object `200Content347` {
   
-  inline def apply(
-    `200`: Content347,
-    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-  ): `200Content347` = {
+  inline def apply(`200`: Content347): `200Content347` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content347`]
   }
   
@@ -27,9 +21,5 @@ object `200Content347` {
   implicit open class MutableBuilder[Self <: `200Content347`] (val x: Self) extends AnyVal {
     
     inline def set200(value: Content347): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set422(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
-    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

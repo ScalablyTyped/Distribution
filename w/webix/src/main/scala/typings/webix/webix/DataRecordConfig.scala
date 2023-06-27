@@ -8,7 +8,7 @@ trait DataRecordConfig extends StObject {
   
   var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
-  var dataFeed: js.UndefOr[String | obj | WebixCallback] = js.undefined
+  var dataFeed: js.UndefOr[String | WebixProxy | WebixCallback] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -16,7 +16,7 @@ trait DataRecordConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | WebixProxy] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
 }
@@ -32,7 +32,7 @@ object DataRecordConfig {
     
     inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFeed(value: String | obj | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    inline def setDataFeed(value: String | WebixProxy | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
     inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
     
@@ -52,7 +52,7 @@ object DataRecordConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | WebixProxy): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

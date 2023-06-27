@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintParametersProperties extends StObject {
   
   /**
-    * Additional parameters for the print service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#extraParameters)
-    */
+  		 * Additional parameters for the print service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#extraParameters)
+  		 */
   var extraParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * Specify the output spatial reference for the printout.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#outSpatialReference)
-    */
+  		 * Specify the output spatial reference for the printout.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * Defines the layout template used for the printed map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#template)
-    */
+  		 * Defines the layout template used for the printed map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#template)
+  		 */
   var template: js.UndefOr[PrintTemplateProperties] = js.undefined
   
   /**
-    * The view to print.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#view)
-    */
+  		 * The view to print.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintParameters.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object PrintParametersProperties {

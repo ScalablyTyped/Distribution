@@ -4,19 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Returned by the HTMLVideoElement.getVideoPlaybackQuality() method and contains metrics that can be used to determine the playback quality of a video. */
+/**
+  * Returned by the HTMLVideoElement.getVideoPlaybackQuality() method and contains metrics that can be used to determine the playback quality of a video.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality)
+  */
 trait VideoPlaybackQuality extends StObject {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/corruptedVideoFrames)
+    */
   /* standard dom */
   val corruptedVideoFrames: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/creationTime) */
   /* standard dom */
   val creationTime: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames) */
   /* standard dom */
   val droppedVideoFrames: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames) */
   /* standard dom */
   val totalVideoFrames: Double
 }

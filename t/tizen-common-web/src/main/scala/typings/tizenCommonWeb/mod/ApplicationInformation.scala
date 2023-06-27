@@ -56,7 +56,7 @@ trait ApplicationInformation extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/application.info
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val size: Double
   

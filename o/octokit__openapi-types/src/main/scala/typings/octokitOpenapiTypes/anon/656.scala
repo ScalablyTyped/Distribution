@@ -6,18 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `656` extends StObject {
   
-  var responses: `200Content515`
+  var path: OwnerString
+  
+  var query: js.UndefOr[`655`] = js.undefined
 }
 object `656` {
   
-  inline def apply(responses: `200Content515`): `656` = {
-    val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
+  inline def apply(path: OwnerString): `656` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`656`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `656`] (val x: Self) extends AnyVal {
     
-    inline def setResponses(value: `200Content515`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setQuery(value: `655`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

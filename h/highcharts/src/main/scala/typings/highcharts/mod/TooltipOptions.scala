@@ -41,7 +41,7 @@ trait TooltipOptions extends StObject {
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var borderWidth: js.UndefOr[String] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) How many decimals to show for the `point.change` or the
@@ -120,6 +120,17 @@ trait TooltipOptions extends StObject {
     * tooltip format.
     */
   var footerFormat: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) A format string for the whole
+    * tooltip. When format strings are a requirement, it is usually more
+    * convenient to use `headerFormat`, `pointFormat` and `footerFormat`, but
+    * the `format` option allows combining them into one setting.
+    *
+    * The context of the format string is the same as that of the `formatter`
+    * callback.
+    */
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to format the
@@ -398,7 +409,7 @@ object TooltipOptions {
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderWidth(value: String): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
@@ -437,6 +448,10 @@ object TooltipOptions {
     inline def setFooterFormat(value: String): Self = StObject.set(x, "footerFormat", value.asInstanceOf[js.Any])
     
     inline def setFooterFormatUndefined: Self = StObject.set(x, "footerFormat", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setFormatter(value: TooltipFormatterCallbackFunction): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     

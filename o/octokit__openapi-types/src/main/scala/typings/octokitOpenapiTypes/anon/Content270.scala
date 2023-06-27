@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Content270 extends StObject {
   
   var content: `270`
-  
-  var headers: Location
 }
 object Content270 {
   
-  inline def apply(content: `270`, headers: Location): Content270 = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
+  inline def apply(content: `270`): Content270 = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content270]
   }
   
@@ -21,7 +19,5 @@ object Content270 {
   implicit open class MutableBuilder[Self <: Content270] (val x: Self) extends AnyVal {
     
     inline def setContent(value: `270`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setHeaders(value: Location): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

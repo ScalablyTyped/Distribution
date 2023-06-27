@@ -10,8 +10,8 @@ trait CIMGeometricEffectBuffer
      with CIMGeometricEffectType {
   
   /**
-    * The distance from the feature. This distance is either from the edge of the marker, the edge of the stroke or the edge of the polygon outline.
-    */
+  			 * The distance from the feature. This distance is either from the edge of the marker, the edge of the stroke or the edge of the polygon outline.
+  			 */
   var size: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

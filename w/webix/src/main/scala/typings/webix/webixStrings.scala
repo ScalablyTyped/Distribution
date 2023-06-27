@@ -4047,6 +4047,13 @@ object webixStrings {
   inline def onListBeforeSelect: onListBeforeSelect = "onListBeforeSelect".asInstanceOf[onListBeforeSelect]
   
   @js.native
+  sealed trait onListDragOut
+    extends StObject
+       with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
+  inline def onListDragOut: onListDragOut = "onListDragOut".asInstanceOf[onListDragOut]
+  
+  @js.native
   sealed trait onListIconClick
     extends StObject
        with kanbanEventName

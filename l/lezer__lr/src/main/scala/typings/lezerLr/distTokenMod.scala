@@ -1,5 +1,7 @@
 package typings.lezerLr
 
+import typings.lezerLr.anon.ReadonlyUint16ArrayAt
+import typings.lezerLr.anon.ReadonlyUint16ArrayBYTESPERELEMENT
 import typings.lezerLr.distStackMod.Stack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,6 +64,31 @@ object distTokenMod {
     /* private */ var readNext: Any = js.native
     
     /* private */ var setDone: Any = js.native
+  }
+  
+  @JSImport("@lezer/lr/dist/token", "LocalTokenGroup")
+  @js.native
+  open class LocalTokenGroup protected ()
+    extends StObject
+       with Tokenizer {
+    def this(data: String, precTable: Double) = this()
+    def this(data: ReadonlyUint16ArrayBYTESPERELEMENT, precTable: Double) = this()
+    def this(data: String, precTable: Double, elseToken: Double) = this()
+    def this(data: ReadonlyUint16ArrayBYTESPERELEMENT, precTable: Double, elseToken: Double) = this()
+    
+    var contextual: Boolean = js.native
+    
+    val data: ReadonlyUint16ArrayAt = js.native
+    
+    val elseToken: js.UndefOr[Double] = js.native
+    
+    var extend: Boolean = js.native
+    
+    var fallback: Boolean = js.native
+    
+    val precTable: Double = js.native
+    
+    def token(input: InputStream, stack: Stack): Unit = js.native
   }
   
   trait ExternalOptions extends StObject {

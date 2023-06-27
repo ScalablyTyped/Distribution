@@ -3578,6 +3578,10 @@ object paypalPaypalJsStrings {
   inline def YES: YES = "YES".asInstanceOf[YES]
   
   @js.native
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
+  
+  @js.native
   sealed trait alternative extends StObject
   inline def alternative: alternative = "alternative".asInstanceOf[alternative]
   
@@ -3662,6 +3666,10 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait checkout extends StObject
   inline def checkout: checkout = "checkout".asInstanceOf[checkout]
+  
+  @js.native
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
   sealed trait credit
@@ -3910,6 +3918,14 @@ object paypalPaypalJsStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
@@ -3932,6 +3948,10 @@ object paypalPaypalJsStrings {
   @js.native
   sealed trait subscribe extends StObject
   inline def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  
+  @js.native
+  sealed trait test extends StObject
+  inline def test: test = "test".asInstanceOf[test]
   
   @js.native
   sealed trait text extends StObject

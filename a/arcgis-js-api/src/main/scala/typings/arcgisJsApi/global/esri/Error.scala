@@ -15,26 +15,26 @@ open class Error protected ()
   def this(name: String, message: Unit, details: Any) = this()
   
   /**
-    * The details object provides additional details specific to the error, giving more information about why the error was raised.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
-    */
+  		 * The details object provides additional details specific to the error, giving more information about why the error was raised.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
+  		 */
   /* CompleteClass */
   var details: Any = js.native
   
   /**
-    * A message describing the details of the error.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#message)
-    */
+  		 * A message describing the details of the error.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#message)
+  		 */
   /* CompleteClass */
   var message: String = js.native
   
   /**
-    * A unique error name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#name)
-    */
+  		 * A unique error name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#name)
+  		 */
   /* CompleteClass */
   var name: String = js.native
 }

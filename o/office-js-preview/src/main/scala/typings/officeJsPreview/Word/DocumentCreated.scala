@@ -34,8 +34,7 @@ trait DocumentCreated
     * Adds a style into the document by name and type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApiHiddenDocument 1.5]
     *
     * @param name Required. A string representing the style name.
     * @param type Required. The style type, including character, list, paragraph, or table.
@@ -48,8 +47,7 @@ trait DocumentCreated
     * Adds a style into the document by name and type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApiHiddenDocument 1.5]
     *
     * @param name Required. A string representing the style name.
     * @param type Required. The style type, including character, list, paragraph, or table.
@@ -120,8 +118,7 @@ trait DocumentCreated
     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApiHiddenDocument 1.5]
     *
     * @param options Optional. Options that define which content controls are returned.
     */
@@ -132,8 +129,7 @@ trait DocumentCreated
     * Gets a StyleCollection object that represents the whole style set of the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApiHiddenDocument 1.5]
     */
   def getStyles(): StyleCollection = js.native
   
@@ -146,8 +142,7 @@ trait DocumentCreated
     Headers, footers, watermarks, and other section properties are copied by default.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApiHiddenDocument 1.5]
     *
     * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
@@ -190,6 +185,8 @@ trait DocumentCreated
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
+    *
+    * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
     *
     * @param saveBehavior Optional. DocumentCreated only supports 'Save'.
     * @param fileName Optional. The file name (exclude file extension). Only takes effect for a new document.

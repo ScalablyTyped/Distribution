@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMUploadUploaderHttpRequestMethodMod {
   
   /**
-    * @SINCE 1.90
+    * @since 1.90
     *
     * Types of HTTP request methods.
     */
@@ -26,7 +26,7 @@ object sapMUploadUploaderHttpRequestMethodMod {
   @js.native
   sealed trait UploaderHttpRequestMethod extends StObject
   /**
-    * @SINCE 1.90
+    * @since 1.90
     *
     * Types of HTTP request methods.
     */

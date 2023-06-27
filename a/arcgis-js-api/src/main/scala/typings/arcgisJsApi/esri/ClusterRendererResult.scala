@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClusterRendererResult extends StObject {
   
   /**
-    * The aggregate fields used by the `renderer`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#ClusterRendererResult)
-    */
+  		 * The aggregate fields used by the `renderer`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#ClusterRendererResult)
+  		 */
   var fields: js.Array[AggregateField]
   
   /**
-    * The generated pie chart renderer to use for clustering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#ClusterRendererResult)
-    */
+  		 * The generated pie chart renderer to use for clustering.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#ClusterRendererResult)
+  		 */
   var renderer: PieChartRenderer
 }
 object ClusterRendererResult {

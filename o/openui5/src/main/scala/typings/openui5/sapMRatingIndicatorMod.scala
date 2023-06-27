@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`1`
-import typings.openui5.anon.`2`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.RatingIndicatorVisualMode
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -180,13 +178,13 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RatingIndicator` itself
       */
@@ -211,7 +209,7 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -222,7 +220,7 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RatingIndicator` itself
       */
@@ -243,13 +241,13 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RatingIndicator` itself
       */
@@ -274,7 +272,7 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -285,7 +283,7 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RatingIndicator` itself
       */
@@ -316,13 +314,13 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -340,13 +338,13 @@ object sapMRatingIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -354,45 +352,47 @@ object sapMRatingIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: RatingIndicator$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: RatingIndicator$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Gets current value of property {@link #getDisplayOnly displayOnly}.
       *
@@ -406,7 +406,7 @@ object sapMRatingIndicatorMod {
     def getDisplayOnly(): Boolean = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -561,7 +561,7 @@ object sapMRatingIndicatorMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Sets a new value for property {@link #getDisplayOnly displayOnly}.
       *
@@ -581,7 +581,7 @@ object sapMRatingIndicatorMod {
     bDisplayOnly: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -748,6 +748,60 @@ object sapMRatingIndicatorMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait RatingIndicator$ChangeEventParameters extends StObject {
+    
+    /**
+      * The rated value
+      */
+    var value: js.UndefOr[int] = js.undefined
+  }
+  object RatingIndicator$ChangeEventParameters {
+    
+    inline def apply(): RatingIndicator$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RatingIndicator$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingIndicator$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: int): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait RatingIndicator$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The current value of the rating after a live change event.
+      */
+    var value: js.UndefOr[float] = js.undefined
+  }
+  object RatingIndicator$LiveChangeEventParameters {
+    
+    inline def apply(): RatingIndicator$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RatingIndicator$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingIndicator$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type RatingIndicatorChangeEvent = typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters]
+  
+  type RatingIndicatorChangeEventParameters = RatingIndicator$ChangeEventParameters
+  
+  type RatingIndicatorLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[RatingIndicator$LiveChangeEventParameters]
+  
+  type RatingIndicatorLiveChangeEventParameters = RatingIndicator$LiveChangeEventParameters
+  
   trait RatingIndicatorSettings
     extends StObject
        with ControlSettings {
@@ -765,10 +819,15 @@ object sapMRatingIndicatorMod {
     /**
       * The event is fired when the user has done a rating.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * The RatingIndicator in displayOnly mode is not interactive, not editable, not focusable, and not in the
       * tab chain. This setting is used for forms in review mode.
@@ -778,7 +837,7 @@ object sapMRatingIndicatorMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Defines whether the user is allowed to edit the RatingIndicator. If editable is false the control is
       * focusable, and in the tab chain but not interactive.
@@ -826,7 +885,12 @@ object sapMRatingIndicatorMod {
     /**
       * This event is triggered during the dragging period, each time the rating value changes.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The number of displayed rating symbols
@@ -869,7 +933,9 @@ object sapMRatingIndicatorMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -901,7 +967,9 @@ object sapMRatingIndicatorMod {
       
       inline def setIconUnselectedUndefined: Self = StObject.set(x, "iconUnselected", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

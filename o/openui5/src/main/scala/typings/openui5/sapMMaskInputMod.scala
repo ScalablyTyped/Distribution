@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PreviousValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMInputBaseMod.InputBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -138,7 +137,7 @@ object sapMMaskInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.MaskInput`.
       *
@@ -156,20 +155,20 @@ object sapMMaskInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MaskInput` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.MaskInput`.
       *
@@ -192,7 +191,7 @@ object sapMMaskInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -203,7 +202,7 @@ object sapMMaskInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MaskInput` itself
       */
@@ -218,7 +217,7 @@ object sapMMaskInputMod {
     def destroyRules(): this.type = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.m.MaskInput`.
       *
@@ -230,13 +229,13 @@ object sapMMaskInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MaskInputLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -244,18 +243,20 @@ object sapMMaskInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.104.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.104.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PreviousValue): this.type = js.native
+    mParameters: MaskInput$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getMask mask}.
@@ -292,7 +293,7 @@ object sapMMaskInputMod {
     def getRules(): js.Array[typings.openui5.sapMMaskInputRuleMod.default] = js.native
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Gets current value of property {@link #getShowClearIcon showClearIcon}.
       *
@@ -405,7 +406,7 @@ object sapMMaskInputMod {
     sPlaceholderSymbol: String): this.type = js.native
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Sets a new value for property {@link #getShowClearIcon showClearIcon}.
       *
@@ -425,19 +426,60 @@ object sapMMaskInputMod {
     bShowClearIcon: Boolean): this.type = js.native
   }
   
+  trait MaskInput$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The previous value of the input, before the last user interaction.
+      */
+    var previousValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The current value of the input, after a live change event.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object MaskInput$LiveChangeEventParameters {
+    
+    inline def apply(): MaskInput$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MaskInput$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskInput$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviousValue(value: String): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type MaskInputLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[MaskInput$LiveChangeEventParameters]
+  
+  type MaskInputLiveChangeEventParameters = MaskInput$LiveChangeEventParameters
+  
   trait MaskInputSettings
     extends StObject
        with InputBaseSettings {
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Fired when the value of the `MaskInput` is changed by user interaction - each keystroke, delete, paste,
       * etc.
       *
       * **Note:** Browsing autocomplete suggestions doesn't fire the event.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MaskInput$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Mask defined by its characters type (respectively, by its length). You should consider the following
@@ -464,7 +506,7 @@ object sapMMaskInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Specifies whether a clear icon is shown. Pressing the icon will clear input's value and fire the change
       * event.
@@ -483,7 +525,9 @@ object sapMMaskInputMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MaskInputSettings] (val x: Self) extends AnyVal {
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MaskInput$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Parent
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreLibraryMod.Dock
 import typings.openui5.sapUiCoreTooltipBaseMod.TooltipBaseSettings
@@ -143,13 +142,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -175,7 +174,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -186,7 +185,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -207,13 +206,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -238,7 +237,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -249,7 +248,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -270,13 +269,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit]
     ): this.type = js.native
     def attachOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -301,7 +300,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit]
     ): this.type = js.native
     def attachOpen(
       /**
@@ -312,7 +311,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -320,7 +319,7 @@ object sapUiCommonsCalloutBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:opened opened} event of this `sap.ui.commons.CalloutBase`.
       *
@@ -335,20 +334,20 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:opened opened} event of this `sap.ui.commons.CalloutBase`.
       *
@@ -368,7 +367,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
@@ -379,7 +378,7 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CalloutBase` itself
       */
@@ -402,13 +401,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseBeforeOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -426,13 +425,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -450,13 +449,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit]
     ): this.type = js.native
     def detachOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalloutBaseOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -464,7 +463,7 @@ object sapUiCommonsCalloutBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:opened opened} event of this `sap.ui.commons.CalloutBase`.
       *
@@ -476,13 +475,13 @@ object sapUiCommonsCalloutBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOpened(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -490,7 +489,7 @@ object sapUiCommonsCalloutBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -500,13 +499,15 @@ object sapUiCommonsCalloutBaseMod {
       * @returns Whether or not to prevent the default action
       */
     def fireBeforeOpen(): Boolean = js.native
-    def fireBeforeOpen(/**
+    def fireBeforeOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Parent): Boolean = js.native
+    mParameters: CalloutBase$BeforeOpenEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -519,7 +520,7 @@ object sapUiCommonsCalloutBaseMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:open open} to attached listeners.
       *
@@ -529,11 +530,11 @@ object sapUiCommonsCalloutBaseMod {
     def fireOpen(/**
       * Parameters to pass along with the event
       */
-    mParameters: Parent): this.type = js.native
+    mParameters: CalloutBase$OpenEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.11.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:opened opened} to attached listeners.
       *
@@ -563,6 +564,72 @@ object sapUiCommonsCalloutBaseMod {
     ): this.type = js.native
   }
   
+  trait CalloutBase$BeforeOpenEventParameters extends StObject {
+    
+    /**
+      * Parent control that has this Callout as a tooltip
+      */
+    var parent: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object CalloutBase$BeforeOpenEventParameters {
+    
+    inline def apply(): CalloutBase$BeforeOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalloutBase$BeforeOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalloutBase$BeforeOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setParent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    }
+  }
+  
+  trait CalloutBase$CloseEventParameters extends StObject
+  
+  trait CalloutBase$OpenEventParameters extends StObject {
+    
+    /**
+      * Parent control that has this Callout as a tooltip
+      */
+    var parent: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object CalloutBase$OpenEventParameters {
+    
+    inline def apply(): CalloutBase$OpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalloutBase$OpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalloutBase$OpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setParent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    }
+  }
+  
+  trait CalloutBase$OpenedEventParameters extends StObject
+  
+  type CalloutBaseBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[CalloutBase$BeforeOpenEventParameters]
+  
+  type CalloutBaseBeforeOpenEventParameters = CalloutBase$BeforeOpenEventParameters
+  
+  type CalloutBaseCloseEvent = typings.openui5.sapUiBaseEventMod.default[CalloutBase$CloseEventParameters]
+  
+  type CalloutBaseCloseEventParameters = CalloutBase$CloseEventParameters
+  
+  type CalloutBaseOpenEvent = typings.openui5.sapUiBaseEventMod.default[CalloutBase$OpenEventParameters]
+  
+  type CalloutBaseOpenEventParameters = CalloutBase$OpenEventParameters
+  
+  type CalloutBaseOpenedEvent = typings.openui5.sapUiBaseEventMod.default[CalloutBase$OpenedEventParameters]
+  
+  type CalloutBaseOpenedEventParameters = CalloutBase$OpenedEventParameters
+  
   trait CalloutBaseSettings
     extends StObject
        with TooltipBaseSettings {
@@ -571,24 +638,38 @@ object sapUiCommonsCalloutBaseMod {
       * Event is fired before a Callout is displayed. Call the preventDefault method of the event object to postpone
       * opening. Application may use this event to start asynchronous Ajax call to load the Callout content
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalloutBase$BeforeOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when the Callout window is closed.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The event is fired when the popup is opened.
       */
-    var open: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var open: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalloutBase$OpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Is fired when the Callout has been opened
       */
-    var opened: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var opened: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object CalloutBaseSettings {
     
@@ -600,19 +681,23 @@ object sapUiCommonsCalloutBaseMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CalloutBaseSettings] (val x: Self) extends AnyVal {
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalloutBase$BeforeOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalloutBase$OpenEventParameters] => Unit
+      ): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
+      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
       
       inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     }

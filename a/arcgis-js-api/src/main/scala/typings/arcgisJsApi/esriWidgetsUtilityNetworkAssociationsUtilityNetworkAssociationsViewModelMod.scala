@@ -11,10 +11,10 @@ object esriWidgetsUtilityNetworkAssociationsUtilityNetworkAssociationsViewModelM
   @JSImport("esri/widgets/UtilityNetworkAssociations/UtilityNetworkAssociationsViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [UtilityNetworkAssociations](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations-UtilityNetworkAssociationsViewModel.html)
-    */
+  		 * Provides the logic for the [UtilityNetworkAssociations](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations-UtilityNetworkAssociationsViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with UtilityNetworkAssociationsViewModel {

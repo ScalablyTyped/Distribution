@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200307 extends StObject {
   
-  var parameters: `141`
+  var parameters: `165`
   
   var requestBody: js.UndefOr[ContentApplicationjsonAllowforking] = js.undefined
   
@@ -14,7 +14,7 @@ trait Responses200307 extends StObject {
 }
 object Responses200307 {
   
-  inline def apply(parameters: `141`, responses: `200307`): Responses200307 = {
+  inline def apply(parameters: `165`, responses: `200307`): Responses200307 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200307]
   }
@@ -22,7 +22,7 @@ object Responses200307 {
   @scala.inline
   implicit open class MutableBuilder[Self <: Responses200307] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `141`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `165`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAllowforking): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

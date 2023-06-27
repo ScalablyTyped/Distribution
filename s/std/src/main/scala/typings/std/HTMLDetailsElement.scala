@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement) */
 @js.native
 trait HTMLDetailsElement
   extends StObject
@@ -20,6 +21,7 @@ trait HTMLDetailsElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/open) */
   /* standard dom */
   var open: scala.Boolean = js.native
   

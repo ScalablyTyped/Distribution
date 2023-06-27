@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TickElementGroup extends StObject {
   
   /**
-    * The HTMLElement representing the label associated with the tick element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickElementGroup)
-    */
+  		 * The HTMLElement representing the label associated with the tick element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickElementGroup)
+  		 */
   var labelElement: js.UndefOr[HTMLElement] = js.undefined
   
   /**
-    * The HTMLElement representing a tick.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickElementGroup)
-    */
+  		 * The HTMLElement representing a tick.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickElementGroup)
+  		 */
   var tickElement: js.UndefOr[HTMLElement] = js.undefined
 }
 object TickElementGroup {

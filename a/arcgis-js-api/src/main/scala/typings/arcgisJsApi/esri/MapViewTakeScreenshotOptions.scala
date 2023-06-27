@@ -9,63 +9,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapViewTakeScreenshotOptions extends StObject {
   
   /**
-    * Specifies whether to take a screenshot of a specific area of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * Specifies whether to take a screenshot of a specific area of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var area: js.UndefOr[MapViewTakeScreenshotOptionsArea] = js.undefined
   
   /**
-    * The format of the resulting encoded data url.
-    *
-    * @default png
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The format of the resulting encoded data url.
+  		 *
+  		 * @default png
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var format: js.UndefOr[jpg | png] = js.undefined
   
   /**
-    * The height of the screenshot (defaults to the area height).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The height of the screenshot (defaults to the area height).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether to ignore the background color set in the [initial view properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties) of the web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * Indicates whether to ignore the background color set in the [initial view properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties) of the web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var ignoreBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether view padding should be ignored.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * Indicates whether view padding should be ignored.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var ignorePadding: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When used, only the visible layers in this list will be included in the output.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * When used, only the visible layers in this list will be included in the output.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   
   /**
-    * The quality (0 to 100) of the encoded image when encoding as `jpg`.
-    *
-    * @default 98
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The quality (0 to 100) of the encoded image when encoding as `jpg`.
+  		 *
+  		 * @default 98
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var quality: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the screenshot (defaults to the area width).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The width of the screenshot (defaults to the area width).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MapViewTakeScreenshotOptions {

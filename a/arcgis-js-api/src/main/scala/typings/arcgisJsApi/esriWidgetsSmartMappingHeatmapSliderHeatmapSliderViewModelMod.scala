@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingHeatmapSliderHeatmapSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/HeatmapSlider/HeatmapSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [HeatmapSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider-HeatmapSliderViewModel.html)
-    */
+  		 * Provides the logic for the [HeatmapSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider-HeatmapSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with HeatmapSliderViewModel {

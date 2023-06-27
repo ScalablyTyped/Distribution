@@ -57,6 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.PropertyDeclaration
   - typings.typescript.mod.PropertySignature
   - typings.typescript.mod.ReturnStatement
+  - typings.typescript.mod.SemicolonClassElement
   - typings.typescript.mod.ShorthandPropertyAssignment
   - typings.typescript.mod.SpreadAssignment
   - typings.typescript.mod.SwitchStatement

@@ -11,7 +11,7 @@ object cssgrid {
   @js.native
   sealed trait CSSGridAutoFlow extends StObject
   /**
-    * @SINCE 1.60.0
+    * @since 1.60.0
     *
     * A string type that is used for CSS grid to control how the auto-placement algorithm works, specifying
     * exactly how auto-placed items get flowed into the grid.
@@ -63,7 +63,7 @@ object cssgrid {
   }
   
   /**
-    * @SINCE 1.60.0
+    * @since 1.60.0
     *
     * A string type that represents a short hand CSS grid gap.
     * See:
@@ -72,7 +72,7 @@ object cssgrid {
   type CSSGridGapShortHand = String
   
   /**
-    * @SINCE 1.60.0
+    * @since 1.60.0
     *
     * A string type that represents one or two grid lines. Used to define the position and size of a single
     * grid item.
@@ -93,7 +93,7 @@ object cssgrid {
   type CSSGridLine = String
   
   /**
-    * @SINCE 1.60.0
+    * @since 1.60.0
     *
     * A string type that represents a grid track (the space between two grid lines)
     * See:
@@ -102,7 +102,7 @@ object cssgrid {
   type CSSGridTrack = String
   
   /**
-    * @SINCE 1.60.0
+    * @since 1.60.0
     *
     * Defines the functions that need to be implemented by a Control which wants to have display:grid behavior
     * via sap.ui.layout.cssgrid.GridLayoutDelegate
@@ -112,7 +112,7 @@ object cssgrid {
     var __implements__sap_ui_layout_cssgrid_IGridConfigurable: Boolean
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to determine on which HTML Elements the display:grid styles
       * should be applied
@@ -122,7 +122,7 @@ object cssgrid {
     def getGridDomRefs(): js.Array[HTMLElement | default]
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to get the grid layout (display:grid styles) to apply
       *
@@ -153,7 +153,7 @@ object cssgrid {
   }
   
   /**
-    * @SINCE 1.88.0
+    * @since 1.88.0
     *
     * LayoutData for grid items
     */

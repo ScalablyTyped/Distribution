@@ -30,7 +30,6 @@ Instantiable0[Any] {
     * @return {nlobjButton}
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2008.2
     * @param name
@@ -50,7 +49,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2008.2
     * @param name
@@ -65,7 +63,6 @@ Instantiable0[Any] {
     * add "Mark All" and "Unmark All" buttons to this sublist of type "list".
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2008.2
     */
@@ -76,7 +73,6 @@ Instantiable0[Any] {
     * @return {nlobjButton}
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2009.2
     * @return
@@ -89,7 +85,6 @@ Instantiable0[Any] {
     * @param {string} group sublist name
     *
     * @method
-    * @memberOf nlobjSubList
     * @since 2010.1
     * @param group
     */
@@ -134,7 +129,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2009.2
     * @param field
@@ -153,7 +147,6 @@ Instantiable0[Any] {
     * @param {string}    value sublist value
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2008.2
     * @param field
@@ -178,7 +171,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjSubList
     *
     * @since 2009.2
     * @param fldnam

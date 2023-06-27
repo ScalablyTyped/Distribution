@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/icu-messageformat-parser" : "2.4.0"
+      "@formatjs/icu-messageformat-parser" : "2.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/icu-messageformat-parser" : "2.4.0"
+      "@formatjs/icu-messageformat-parser" : "2.6.0"
     }
   ],
   "compile-devDependencies" : [

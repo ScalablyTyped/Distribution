@@ -9,28 +9,28 @@ trait ShadowCastViewModelDiscreteOptions
      with AnonymousAccessor {
   
   /**
-    * Color of the shadow visualization.
-    *
-    * @default [50, 50, 50, 0.7]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
-    */
+  		 * Color of the shadow visualization.
+  		 *
+  		 * @default [50, 50, 50, 0.7]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * Individual shadows are displayed at this time interval, starting with the [startTimeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#startTimeOfDay).
-    *
-    * @default 15 * 60 * 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
-    */
+  		 * Individual shadows are displayed at this time interval, starting with the [startTimeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#startTimeOfDay).
+  		 *
+  		 * @default 15 * 60 * 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
+  		 */
   var interval: js.UndefOr[Double] = js.undefined
   
   /**
-    * Values (in milliseconds) selectable in the UI for the interval used to display shadows.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
-    */
+  		 * Values (in milliseconds) selectable in the UI for the interval used to display shadows.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
+  		 */
   var intervalOptions: js.UndefOr[Collection[Double]] = js.undefined
 }
 object ShadowCastViewModelDiscreteOptions {

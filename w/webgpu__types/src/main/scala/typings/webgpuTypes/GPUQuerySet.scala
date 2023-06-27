@@ -18,7 +18,7 @@ trait GPUQuerySet
   /**
     * The number of queries managed by this {@link GPUQuerySet}.
     */
-  val count: GPUSize32
+  val count: GPUSize32Out
   
   /**
     * Destroys the {@link GPUQuerySet}.
@@ -32,7 +32,7 @@ trait GPUQuerySet
 }
 object GPUQuerySet {
   
-  inline def apply(count: GPUSize32, destroy: () => Unit, label: String, `type`: GPUQueryType): GPUQuerySet = {
+  inline def apply(count: GPUSize32Out, destroy: () => Unit, label: String, `type`: GPUQueryType): GPUQuerySet = {
     val __obj = js.Dynamic.literal(__brand = "GPUQuerySet", count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUQuerySet]
@@ -41,7 +41,7 @@ object GPUQuerySet {
   @scala.inline
   implicit open class MutableBuilder[Self <: GPUQuerySet] (val x: Self) extends AnyVal {
     
-    inline def setCount(value: GPUSize32): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: GPUSize32Out): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

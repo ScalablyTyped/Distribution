@@ -6,15 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextDecoderCommon extends StObject {
   
-  /** Returns encoding's name, lowercased. */
+  /**
+    * Returns encoding's name, lowercased.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/encoding)
+    */
   /* standard dom */
   val encoding: java.lang.String
   
-  /** Returns true if error mode is "fatal", otherwise false. */
+  /**
+    * Returns true if error mode is "fatal", otherwise false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/fatal)
+    */
   /* standard dom */
   val fatal: scala.Boolean
   
-  /** Returns the value of ignore BOM. */
+  /**
+    * Returns the value of ignore BOM.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/ignoreBOM)
+    */
   /* standard dom */
   val ignoreBOM: scala.Boolean
 }

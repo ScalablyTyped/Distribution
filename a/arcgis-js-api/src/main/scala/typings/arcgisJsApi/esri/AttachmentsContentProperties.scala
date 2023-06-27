@@ -12,26 +12,26 @@ trait AttachmentsContentProperties
      with ContentProperties {
   
   /**
-    * Describes the attachment's content in detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#description)
-    */
+  		 * Describes the attachment's content in detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * A string value indicating how to display an attachment.
-    *
-    * @default "auto"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
-    */
+  		 * A string value indicating how to display an attachment.
+  		 *
+  		 * @default "auto"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#displayType)
+  		 */
   var displayType: js.UndefOr[auto | preview | list] = js.undefined
   
   /**
-    * A heading indicating what the attachment's content represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#title)
-    */
+  		 * A heading indicating what the attachment's content represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object AttachmentsContentProperties {

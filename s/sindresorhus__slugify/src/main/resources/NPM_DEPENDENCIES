@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sindresorhus/slugify" : "2.2.0"
+      "@sindresorhus/slugify" : "2.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@sindresorhus/slugify" : "2.2.0"
+      "@sindresorhus/slugify" : "2.2.1"
     }
   ],
   "compile-devDependencies" : [

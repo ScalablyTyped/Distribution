@@ -13,10 +13,10 @@ trait PolygonConstructor
      with Instantiable1[/* properties */ PolygonProperties, Polygon] {
   
   /**
-    * Converts the given Extent to a Polygon instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#fromExtent)
-    */
+  		 * Converts the given Extent to a Polygon instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html#fromExtent)
+  		 */
   def fromExtent(extent: Extent): Polygon = js.native
   
   def fromJSON(json: Any): Polygon = js.native

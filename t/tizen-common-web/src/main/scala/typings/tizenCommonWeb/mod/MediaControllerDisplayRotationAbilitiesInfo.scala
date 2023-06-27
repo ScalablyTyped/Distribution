@@ -9,28 +9,28 @@ trait MediaControllerDisplayRotationAbilitiesInfo extends StObject {
   /**
     * Represents the server's ability to set 180° display orientation.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val rotation180: MediaControllerAbilitySupport
   
   /**
     * Represents the server's ability to set 270° display orientation.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val rotation270: MediaControllerAbilitySupport
   
   /**
     * Represents the server's ability to set 90° display orientation.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val rotation90: MediaControllerAbilitySupport
   
   /**
     * Represents the server's ability to set 0° display orientation.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val rotationNone: MediaControllerAbilitySupport
 }

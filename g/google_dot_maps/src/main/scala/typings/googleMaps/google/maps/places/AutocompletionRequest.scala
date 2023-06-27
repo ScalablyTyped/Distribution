@@ -17,6 +17,10 @@ trait AutocompletionRequest extends StObject {
     * not restricted to, the given <code>bounds</code>. Both
     * <code>location</code> and <code>radius</code> will be ignored if
     * <code>bounds</code> is set.
+    * @deprecated <code>bounds</code> is deprecated as of May 2023. Use {@link
+    *     google.maps.places.AutocompletionRequest.locationBias} and {@link
+    *     google.maps.places.AutocompletionRequest.locationRestriction}
+    *     instead.
     */
   var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   
@@ -45,6 +49,11 @@ trait AutocompletionRequest extends StObject {
     * Location for prediction biasing. Predictions will be biased towards the
     * given <code>location</code> and <code>radius</code>. Alternatively,
     * <code>bounds</code> can be used.
+    * @deprecated <code>location</code> is deprecated as of May 2023.
+    *     Use {@link google.maps.places.AutocompletionRequest.locationBias}
+    *     and {@link
+    *     google.maps.places.AutocompletionRequest.locationRestriction}
+    *     instead.
     */
   var location: js.UndefOr[LatLng] = js.undefined
   
@@ -78,6 +87,10 @@ trait AutocompletionRequest extends StObject {
     * <code>radius</code> is specified in meters, and must always be
     * accompanied by a <code>location</code> property. Alternatively,
     * <code>bounds</code> can be used.
+    * @deprecated <code>radius</code> is deprecated as of May 2023. Use {@link
+    *     google.maps.places.AutocompletionRequest.locationBias} and {@link
+    *     google.maps.places.AutocompletionRequest.locationRestriction}
+    *     instead.
     */
   var radius: js.UndefOr[Double] = js.undefined
   

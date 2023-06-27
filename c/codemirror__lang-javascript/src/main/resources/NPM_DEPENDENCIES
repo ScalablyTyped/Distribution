@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@codemirror/lang-javascript" : "6.1.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@codemirror/lang-javascript" : "6.1.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

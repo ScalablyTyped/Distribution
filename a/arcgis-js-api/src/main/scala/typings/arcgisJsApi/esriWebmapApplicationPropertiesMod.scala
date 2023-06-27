@@ -11,10 +11,10 @@ object esriWebmapApplicationPropertiesMod {
   @JSImport("esri/webmap/ApplicationProperties", JSImport.Namespace)
   @js.native
   /**
-    * Represents configuration of application and UI elements of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html)
-    */
+  		 * Represents configuration of application and UI elements of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html)
+  		 */
   open class ^ ()
     extends StObject
        with ApplicationProperties {

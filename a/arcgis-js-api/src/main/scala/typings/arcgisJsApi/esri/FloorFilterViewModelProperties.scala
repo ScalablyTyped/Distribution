@@ -11,46 +11,46 @@ trait FloorFilterViewModelProperties
      with GoToProperties {
   
   /**
-    * The currently selected facility.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#facility)
-    */
+  		 * The currently selected facility.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#facility)
+  		 */
   var facility: js.UndefOr[String] = js.undefined
   
   /**
-    * The currently selected level.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#level)
-    */
+  		 * The currently selected level.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#level)
+  		 */
   var level: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines if the widget is expanded or collapsed.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#longNames)
-    */
+  		 * Determines if the widget is expanded or collapsed.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#longNames)
+  		 */
   var longNames: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The currently selected site.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#site)
-    */
+  		 * The currently selected site.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#site)
+  		 */
   var site: js.UndefOr[String] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FloorFilter-FloorFilterViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object FloorFilterViewModelProperties {

@@ -6,6 +6,7 @@ import typings.std.Event
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
+import typings.std.Node
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +46,7 @@ object marker {
     /**
       * See {@link google.maps.marker.AdvancedMarkerElementOptions.content}.
       */
-    var content: js.UndefOr[Element | Null] = js.native
+    var content: js.UndefOr[Node | Null] = js.native
     
     /**
       * This field is read-only. The DOM Element backing the view.
@@ -103,7 +104,7 @@ object marker {
       * cause the previous <code>AdvancedMarkerElement</code> to look empty.
       * @defaultValue {@link google.maps.marker.PinElement.element}
       */
-    var content: js.UndefOr[Null | Element] = js.undefined
+    var content: js.UndefOr[Null | Node] = js.undefined
     
     /**
       * If <code>true</code>, the <code>AdvancedMarkerElement</code> can be
@@ -172,7 +173,7 @@ object marker {
       
       inline def setCollisionBehaviorUndefined: Self = StObject.set(x, "collisionBehavior", js.undefined)
       
-      inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentNull: Self = StObject.set(x, "content", null)
       
@@ -210,34 +211,30 @@ object marker {
     }
   }
   
+  @js.native
   trait PinElement
     extends StObject
+       with HTMLElement
        with PinElementOptions {
     
-    /**
-      * Adds the given listener function to the given event name.
-      */
-    def addListener(eventName: String, handler: js.Function): MapsEventListener
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /**
       * This field is read-only. The DOM Element backing the view.
       */
-    var element: HTMLElement
-  }
-  object PinElement {
+    var element: HTMLElement = js.native
     
-    inline def apply(addListener: (String, js.Function) => MapsEventListener, element: HTMLElement): PinElement = {
-      val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), element = element.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PinElement]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PinElement] (val x: Self) extends AnyVal {
-      
-      inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
-      
-      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-    }
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
   trait PinElementOptions extends StObject {

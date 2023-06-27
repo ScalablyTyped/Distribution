@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LinearUnitProperties extends StObject {
   
   /**
-    * Specifies the value of the linear distance.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#distance)
-    */
+  		 * Specifies the value of the linear distance.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#distance)
+  		 */
   var distance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the unit type of the linear distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#units)
-    */
+  		 * Specifies the unit type of the linear distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#units)
+  		 */
   var units: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
 object LinearUnitProperties {

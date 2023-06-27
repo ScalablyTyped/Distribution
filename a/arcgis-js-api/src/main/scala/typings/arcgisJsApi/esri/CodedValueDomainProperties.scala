@@ -9,10 +9,10 @@ trait CodedValueDomainProperties
      with DomainProperties {
   
   /**
-    * An array of the coded values in the domain.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
-    */
+  		 * An array of the coded values in the domain.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
+  		 */
   var codedValues: js.UndefOr[js.Array[CodedValue]] = js.undefined
 }
 object CodedValueDomainProperties {

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.CreatedEntitiesKey
-import typings.openui5.anon.GroupId
+import typings.openui5.anon.Expand
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelFilterTypeMod.FilterType
 import typings.std.Record
@@ -916,7 +916,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
     extends typings.openui5.sapUiModelListBindingMod.default {
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Attach event handler `fnFunction` to the 'createActivate' event of this binding.
       */
@@ -936,12 +936,12 @@ object sapUiModelOdataV2OdatalistbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
-      * Creates a new entity for this binding's collection via {@link sap.ui.model.odata.v2.ODataModel#createEntry}
+      * Creates a new entity for this binding's collection via {@link sap.ui.model.odata.v2.ODataModel#createEntry }
       * using the parameters given in `mParameters` and inserts it at the list position specified by the `bAtEnd`
-      * parameter. See {@link topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating
-      * Entities documentation} for comprehensive information on the topic.
+      * parameter. See {@link https://ui5.sap.com/#/topic/6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation }
+      * for comprehensive information on the topic.
       *
       * Note: This method requires that the model metadata has been loaded; see {@link sap.ui.model.odata.v2.ODataModel#metadataLoaded}.
       *
@@ -988,7 +988,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
       * must be set.
       */
-    mParameters: GroupId
+    mParameters: Expand
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
     def create(
       /**
@@ -1007,7 +1007,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
       * must be set.
       */
-    mParameters: GroupId
+    mParameters: Expand
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
     def create(
       /**
@@ -1039,7 +1039,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
       * must be set.
       */
-    mParameters: GroupId
+    mParameters: Expand
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
     def create(
       /**
@@ -1058,11 +1058,11 @@ object sapUiModelOdataV2OdatalistbindingMod {
       * the subset given below is supported. In case of deep create, **none** of the parameters in `mParameters`
       * must be set.
       */
-    mParameters: GroupId
+    mParameters: Expand
     ): typings.openui5.sapUiModelOdataV2ContextMod.default = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Detach event handler `fnFunction` from the 'createActivate' event of this binding.
       */
@@ -1244,7 +1244,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Get a download URL with the specified format considering the sort/filter/custom parameters.
       *
@@ -1256,7 +1256,7 @@ object sapUiModelOdataV2OdatalistbindingMod {
     sFormat: String): String = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Returns whether the overall position of created entries is at the end of the list; this is determined
       * by the first call to {@link sap.ui.model.odata.v2.ODataListBinding#create}.
@@ -1312,4 +1312,10 @@ object sapUiModelOdataV2OdatalistbindingMod {
     bReturnSuccess: Boolean
     ): this.type = js.native
   }
+  
+  trait ODataListBinding$CreateActivateEventParameters extends StObject
+  
+  type ODataListBindingCreateActivateEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$CreateActivateEventParameters]
+  
+  type ODataListBindingCreateActivateEventParameters = ODataListBinding$CreateActivateEventParameters
 }

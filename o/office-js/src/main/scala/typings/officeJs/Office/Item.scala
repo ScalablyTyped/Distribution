@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can determine the type of the item by using the `itemType` property.
   *
   * To see the full member list, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
   *

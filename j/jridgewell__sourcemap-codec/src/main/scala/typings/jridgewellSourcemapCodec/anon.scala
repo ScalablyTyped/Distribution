@@ -16,7 +16,7 @@ object anon {
     
     def concat(items: js.Array[SourceMapLine]*): js.Array[SourceMapLine]
     
-    def copyWithin(target: Double, start: Double): this.type
+    def copyWithin(target: Double): this.type
     
     def entries(): IterableIterator[js.Tuple2[Double, SourceMapLine]]
     
@@ -160,7 +160,7 @@ object anon {
     inline def apply(
       at: Double => js.UndefOr[SourceMapLine],
       concat: /* repeated */ js.Array[SourceMapLine] => js.Array[SourceMapLine],
-      copyWithin: (Double, Double) => ReadonlySourceMapMappings,
+      copyWithin: Double => ReadonlySourceMapMappings,
       entries: () => IterableIterator[js.Tuple2[Double, SourceMapLine]],
       every: js.Function3[
           /* value */ SourceMapLine, 
@@ -250,7 +250,7 @@ object anon {
       unshift: /* repeated */ SourceMapLine => Double,
       values: () => IterableIterator[SourceMapLine]
     ): ReadonlySourceMapMappings = {
-      val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), findLast = js.Any.fromFunction1(findLast), findLastIndex = js.Any.fromFunction1(findLastIndex), flat = js.Any.fromFunction0(flat), flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
+      val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction1(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), findLast = js.Any.fromFunction1(findLast), findLastIndex = js.Any.fromFunction1(findLastIndex), flat = js.Any.fromFunction0(flat), flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
       __obj.asInstanceOf[ReadonlySourceMapMappings]
     }
     
@@ -261,7 +261,7 @@ object anon {
       
       inline def setConcat(value: /* repeated */ js.Array[SourceMapLine] => js.Array[SourceMapLine]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
-      inline def setCopyWithin(value: (Double, Double) => ReadonlySourceMapMappings): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
+      inline def setCopyWithin(value: Double => ReadonlySourceMapMappings): Self = StObject.set(x, "copyWithin", js.Any.fromFunction1(value))
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Double, SourceMapLine]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       

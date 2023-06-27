@@ -37,6 +37,7 @@ import typings.highcharts.mod.OptionsLandmarkVerbosityValue
 import typings.highcharts.mod.OptionsLayoutAlgorithmValue
 import typings.highcharts.mod.OptionsLayoutStartingDirectionValue
 import typings.highcharts.mod.OptionsLayoutValue
+import typings.highcharts.mod.OptionsLegendSymbolValue
 import typings.highcharts.mod.OptionsLinecapValue
 import typings.highcharts.mod.OptionsMapFunctionValue
 import typings.highcharts.mod.OptionsMarkerEndValue
@@ -738,6 +739,12 @@ object highchartsStrings {
   inline def colorByPoint: colorByPoint = "colorByPoint".asInstanceOf[colorByPoint]
   
   @js.native
+  sealed trait colors
+    extends StObject
+       with SeriesOptionsType
+  inline def colors: colors = "colors".asInstanceOf[colors]
+  
+  @js.native
   sealed trait column extends StObject
   inline def column: column = "column".asInstanceOf[column]
   
@@ -1275,6 +1282,12 @@ object highchartsStrings {
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
+  sealed trait lineMarker
+    extends StObject
+       with OptionsLegendSymbolValue
+  inline def lineMarker: lineMarker = "lineMarker".asInstanceOf[lineMarker]
+  
+  @js.native
   sealed trait linear
     extends StObject
        with AxisTypeValue
@@ -1554,6 +1567,18 @@ object highchartsStrings {
   inline def `ns-resize`: `ns-resize` = "ns-resize".asInstanceOf[`ns-resize`]
   
   @js.native
+  sealed trait nullColor
+    extends StObject
+       with SeriesOptionsType
+  inline def nullColor: nullColor = "nullColor".asInstanceOf[nullColor]
+  
+  @js.native
+  sealed trait nullInteraction
+    extends StObject
+       with SeriesOptionsType
+  inline def nullInteraction: nullInteraction = "nullInteraction".asInstanceOf[nullInteraction]
+  
+  @js.native
   sealed trait `nw-resize`
     extends StObject
        with CursorValue
@@ -1826,6 +1851,12 @@ object highchartsStrings {
     extends StObject
        with AxisExtremesTriggerValue
   inline def rangeSelectorInput: rangeSelectorInput = "rangeSelectorInput".asInstanceOf[rangeSelectorInput]
+  
+  @js.native
+  sealed trait rectangle
+    extends StObject
+       with OptionsLegendSymbolValue
+  inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
   sealed trait rectangular
@@ -2199,6 +2230,10 @@ object highchartsStrings {
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
+  sealed trait tiledwebmap extends StObject
+  inline def tiledwebmap: tiledwebmap = "tiledwebmap".asInstanceOf[tiledwebmap]
+  
+  @js.native
   sealed trait tilemap extends StObject
   inline def tilemap: tilemap = "tilemap".asInstanceOf[tilemap]
   
@@ -2427,6 +2462,7 @@ object highchartsStrings {
        with OptionsChartZoomingTypeValue
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
+       with OptionsTypeValue
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
@@ -2452,6 +2488,7 @@ object highchartsStrings {
        with OptionsChartZoomingTypeValue
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
+       with OptionsTypeValue
   inline def xy: xy = "xy".asInstanceOf[xy]
   
   @js.native
@@ -2462,6 +2499,7 @@ object highchartsStrings {
        with OptionsChartZoomingTypeValue
        with OptionsOnKeyValue
        with OptionsPinchTypeValue
+       with OptionsTypeValue
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native

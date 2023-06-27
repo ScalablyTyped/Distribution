@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonVulnerabilities extends StObject {
   
-  var parameters: `540`
+  var parameters: `639`
   
   var requestBody: ContentApplicationjsonVulnerabilities
   
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonVulnerabilities extends StObject {
 object RequestBodyContentApplicationjsonVulnerabilities {
   
   inline def apply(
-    parameters: `540`,
+    parameters: `639`,
     requestBody: ContentApplicationjsonVulnerabilities,
     responses: `201ContentApplicationjsonCreditsdetailed`
   ): RequestBodyContentApplicationjsonVulnerabilities = {
@@ -26,7 +26,7 @@ object RequestBodyContentApplicationjsonVulnerabilities {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonVulnerabilities] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `540`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `639`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonVulnerabilities): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

@@ -9,6 +9,7 @@ import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunct
 import typings.csstoolsCssParserAlgorithms.distUtilComponentValueTypeMod.ComponentValueType
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
 import typings.csstoolsCssTokenizer.mod.ParseError
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,25 +82,31 @@ object anon {
     }
   }
   
-  trait Node extends StObject {
+  trait Node[T /* <: Record[String, Any] */] extends StObject {
     
     var node: ComponentValue
     
     var parent: ContainerNode
+    
+    var state: js.UndefOr[T] = js.undefined
   }
   object Node {
     
-    inline def apply(node: ComponentValue, parent: ContainerNode): Node = {
+    inline def apply[T /* <: Record[String, Any] */](node: ComponentValue, parent: ContainerNode): Node[T] = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Node]
+      __obj.asInstanceOf[Node[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Node[?], T /* <: Record[String, Any] */] (val x: Self & Node[T]) extends AnyVal {
       
       inline def setNode(value: ComponentValue): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setParent(value: ContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: T): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   

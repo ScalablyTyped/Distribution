@@ -14,14 +14,17 @@ open class WebGLActiveInfo ()
   extends StObject
      with typings.std.WebGLActiveInfo {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/size) */
   /* standard dom */
   /* CompleteClass */
   override val size: GLint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: GLenum = js.native

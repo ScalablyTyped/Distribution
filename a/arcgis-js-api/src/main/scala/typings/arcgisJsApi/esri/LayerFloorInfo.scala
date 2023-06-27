@@ -11,9 +11,9 @@ trait LayerFloorInfo
      with JSONSupport {
   
   /**
-    * The field name derived from a floor-aware layer and used to filter features by floor level.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LayerFloorInfo.html#floorField)
-    */
+  		 * The field name derived from a floor-aware layer and used to filter features by floor level.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LayerFloorInfo.html#floorField)
+  		 */
   var floorField: String = js.native
 }

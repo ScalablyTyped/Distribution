@@ -10,14 +10,14 @@ trait ParametersPathOwnerPullnumber extends StObject {
   
   var requestBody: ContentApplicationjsonBody
   
-  var responses: `201Content315HeadersLocation404`
+  var responses: `201Content369HeadersLocation404`
 }
 object ParametersPathOwnerPullnumber {
   
   inline def apply(
     parameters: PathOwnerPullnumber,
     requestBody: ContentApplicationjsonBody,
-    responses: `201Content315HeadersLocation404`
+    responses: `201Content369HeadersLocation404`
   ): ParametersPathOwnerPullnumber = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOwnerPullnumber]
@@ -30,6 +30,6 @@ object ParametersPathOwnerPullnumber {
     
     inline def setRequestBody(value: ContentApplicationjsonBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content315HeadersLocation404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content369HeadersLocation404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

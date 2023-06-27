@@ -13,10 +13,10 @@ trait RasterColormapRendererConstructor
      with Instantiable1[/* properties */ RasterColormapRendererProperties, RasterColormapRenderer] {
   
   /**
-    * Creates a new instance [RasterColormapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html) from an array of color maps where pixel values with its corresponding RGB color values specified.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#createFromColormap)
-    */
+  		 * Creates a new instance [RasterColormapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html) from an array of color maps where pixel values with its corresponding RGB color values specified.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#createFromColormap)
+  		 */
   def createFromColormap(colormap: js.Array[js.Array[Double]]): RasterColormapRenderer = js.native
   
   def fromJSON(json: Any): RasterColormapRenderer = js.native

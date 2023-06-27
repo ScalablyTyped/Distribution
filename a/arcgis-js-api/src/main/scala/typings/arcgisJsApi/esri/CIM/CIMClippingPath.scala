@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMClippingPath extends StObject {
   
   /**
-    * The clipping type.
-    */
+  			 * The clipping type.
+  			 */
   var clippingType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClippingType * / any */ String
   ] = js.undefined
   
   /**
-    * The clipping path.
-    */
+  			 * The clipping path.
+  			 */
   var path: js.UndefOr[ExternalReferencePolygon] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath

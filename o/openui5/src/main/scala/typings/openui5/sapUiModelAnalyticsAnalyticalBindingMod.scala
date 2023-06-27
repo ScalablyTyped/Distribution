@@ -3,7 +3,7 @@ package typings.openui5
 import typings.openui5.anon.AutoExpandMode
 import typings.openui5.anon.Length
 import typings.openui5.anon.NumberOfExpandedLevels
-import typings.openui5.anon.`40`
+import typings.openui5.anon.`8`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelAnalyticsOdata4analyticsMod.QueryResult
 import typings.std.Record
@@ -17,7 +17,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
   @js.native
   open class default protected () extends AnalyticalBinding {
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       */
     def this(
       /**
@@ -384,7 +384,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.model.analytics.AnalyticalBinding with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
@@ -439,7 +439,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.model.analytics.AnalyticalBinding.
       *
@@ -504,7 +504,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     def getDimensionDetails(): js.Object = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Get a download URL with the specified format considering the sort/filter/custom parameters.
       *
@@ -1709,7 +1709,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
       * The only supported parameter is `level` as the level number of oContext (because the context might occur
       * at multiple levels)
       */
-    mParameters: `40`
+    mParameters: `8`
     ): Boolean = js.native
     
     /**
@@ -1765,7 +1765,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates the binding's structure with new analytical information.
       *
@@ -1774,7 +1774,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
       * 	 - A column bound to a dimension property has further boolean properties:
       * 	grouped: dimension is used for building groups
       * 	 - inResult: if the column is not visible, but declared to be part of the result, values for the related
-      * 			property are also fetched from the OData service
+      *     property are also fetched from the OData service
       * 	 - visible: if the column is visible, values for the related property are fetched from the OData service
       *
       * 	 - A column bound to a measure property has further boolean properties:
@@ -1786,7 +1786,7 @@ object sapUiModelAnalyticsAnalyticalBindingMod {
       * 	 - A column bound to a hierarchy property has further properties:
       * 	grouped: boolean value; indicates whether the hierarchy is used for building groups
       * 	 - level: integer value; the hierarchy level is mandatory for at least one of those columns that represent
-      * 			the same hierarchy
+      *     the same hierarchy
       *
       * Invoking this function resets the state of the binding and subsequent data requests such as calls to
       * getNodeContexts() trigger OData requests in order to fetch the data that are in line with this analytical

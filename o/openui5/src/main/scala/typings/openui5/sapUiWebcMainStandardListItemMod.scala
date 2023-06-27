@@ -142,13 +142,13 @@ object sapUiWebcMainStandardListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.StandardListItem` itself
       */
@@ -173,7 +173,7 @@ object sapUiWebcMainStandardListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDetailClick(
       /**
@@ -184,7 +184,7 @@ object sapUiWebcMainStandardListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.StandardListItem` itself
       */
@@ -202,13 +202,13 @@ object sapUiWebcMainStandardListItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDetailClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -216,7 +216,7 @@ object sapUiWebcMainStandardListItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:detailClick detailClick} to attached listeners.
       *
@@ -527,6 +527,12 @@ object sapUiWebcMainStandardListItemMod {
     sType: ListItemType): this.type = js.native
   }
   
+  trait StandardListItem$DetailClickEventParameters extends StObject
+  
+  type StandardListItemDetailClickEvent = typings.openui5.sapUiBaseEventMod.default[StandardListItem$DetailClickEventParameters]
+  
+  type StandardListItemDetailClickEventParameters = StandardListItem$DetailClickEventParameters
+  
   trait StandardListItemSettings
     extends StObject
        with ControlSettings {
@@ -558,7 +564,9 @@ object sapUiWebcMainStandardListItemMod {
     /**
       * Fired when the user clicks on the detail button when type is `Detail`.
       */
-    var detailClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var detailClick: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the `icon` source URI.
@@ -635,7 +643,7 @@ object sapUiWebcMainStandardListItemMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setDetailClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "detailClick", js.Any.fromFunction1(value))
+      inline def setDetailClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "detailClick", js.Any.fromFunction1(value))
       
       inline def setDetailClickUndefined: Self = StObject.set(x, "detailClick", js.undefined)
       

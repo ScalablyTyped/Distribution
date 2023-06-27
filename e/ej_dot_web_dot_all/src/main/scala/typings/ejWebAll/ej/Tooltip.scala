@@ -198,12 +198,12 @@ object Tooltip {
   trait Animation extends StObject {
     
     /** Determines the type of effect.
-      * @Default {ej.Tooltip.Effect.None}
+      * @default {ej.Tooltip.Effect.None}
       */
     var effect: js.UndefOr[typings.ejWebAll.ej.Tooltip.effect | String] = js.undefined
     
     /** Sets the animation speed in milliseconds.
-      * @Default {4000}
+      * @default {4000}
       */
     var speed: js.UndefOr[Double] = js.undefined
   }
@@ -536,7 +536,7 @@ object Tooltip {
   trait Model extends StObject {
     
     /** Tooltip control can be accessed through the keyboard shortcut keys.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
@@ -545,12 +545,12 @@ object Tooltip {
     var animation: js.UndefOr[typings.ejWebAll.ej.Tooltip.Animation] = js.undefined
     
     /** Sets the position related to target element, window, mouse or (x,y) co-ordinates.
-      * @Default {ej.Tooltip.Associate.Target}
+      * @default {ej.Tooltip.Associate.Target}
       */
     var associate: js.UndefOr[Associate | String] = js.undefined
     
     /** Specified the delay to hide Tooltip when closeMode is auto.
-      * @Default {4000}
+      * @default {4000}
       */
     var autoCloseTimeout: js.UndefOr[Double] = js.undefined
     
@@ -571,22 +571,22 @@ object Tooltip {
     var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the closing behavior of Tooltip popup.
-      * @Default {ej.Tooltip.CloseMode.None}
+      * @default {ej.Tooltip.CloseMode.None}
       */
     var closeMode: js.UndefOr[CloseMode | String] = js.undefined
     
     /** Sets the Tooltip in alternate position when collision occurs.
-      * @Default {ej.Tooltip.Collision.FlipFit}
+      * @default {ej.Tooltip.Collision.FlipFit}
       */
     var collision: js.UndefOr[Collision | String] = js.undefined
     
     /** Specified the selector for the container element.
-      * @Default {body}
+      * @default {body}
       */
     var containment: js.UndefOr[String] = js.undefined
     
     /** Specifies the text for Tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var content: js.UndefOr[String] = js.undefined
     
@@ -595,7 +595,7 @@ object Tooltip {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for Tooltip for the customization.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
@@ -604,17 +604,17 @@ object Tooltip {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Sets the Tooltip direction from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Tooltip.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the Tooltip popup.
-      * @Default {auto}
+      * @default {auto}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
@@ -623,7 +623,7 @@ object Tooltip {
     var hover: js.UndefOr[js.Function1[/* e */ HoverEventArgs, Unit]] = js.undefined
     
     /** Enables the arrow in Tooltip.
-      * @Default {true}
+      * @default {true}
       */
     var isBalloon: js.UndefOr[Boolean] = js.undefined
     
@@ -636,17 +636,17 @@ object Tooltip {
     var position: js.UndefOr[Position] = js.undefined
     
     /** Enables or disables rounded corner.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables shadow effect.
-      * @Default {false}
+      * @default {false}
       */
     var showShadow: js.UndefOr[Boolean] = js.undefined
     
     /** Specified a selector for elements, within the container.
-      * @Default {null}
+      * @default {null}
       */
     var target: js.UndefOr[String] = js.undefined
     
@@ -655,7 +655,7 @@ object Tooltip {
     var tip: js.UndefOr[Tip] = js.undefined
     
     /** The title text to be displayed in the Tooltip header.
-      * @Default {null}
+      * @default {null}
       */
     var title: js.UndefOr[String] = js.undefined
     
@@ -664,12 +664,12 @@ object Tooltip {
     var tracking: js.UndefOr[js.Function1[/* e */ TrackingEventArgs, Unit]] = js.undefined
     
     /** Specified the event action to show case the Tooltip.
-      * @Default {ej.Tooltip.Trigger.Hover}
+      * @default {ej.Tooltip.Trigger.Hover}
       */
     var trigger: js.UndefOr[Trigger | String] = js.undefined
     
     /** Defines the width of the Tooltip popup.
-      * @Default {auto}
+      * @default {auto}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -884,12 +884,12 @@ object Tooltip {
   trait PositionStem extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
-      * @Default {center}
+      * @default {center}
       */
     var horizontal: js.UndefOr[String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
-      * @Default {bottom}
+      * @default {bottom}
       */
     var vertical: js.UndefOr[String] = js.undefined
   }
@@ -916,12 +916,12 @@ object Tooltip {
   trait PositionTarget extends StObject {
     
     /** Sets the Tooltip position against target based on horizontal(x) value.
-      * @Default {center}
+      * @default {center}
       */
     var horizontal: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the Tooltip position against target based on vertical(y) value.
-      * @Default {top}
+      * @default {top}
       */
     var vertical: js.UndefOr[String | Double] = js.undefined
   }
@@ -978,12 +978,12 @@ object Tooltip {
   trait TipAdjust extends StObject {
     
     /** Sets horizontal gap between Tooltip and target element.
-      * @Default {0}
+      * @default {0}
       */
     var xValue: js.UndefOr[Double] = js.undefined
     
     /** Sets vertical gap between Tooltip and target element.
-      * @Default {0}
+      * @default {0}
       */
     var yValue: js.UndefOr[Double] = js.undefined
   }
@@ -1010,12 +1010,12 @@ object Tooltip {
   trait TipSize extends StObject {
     
     /** Sets the Tooltip height.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the Tooltip width.
-      * @Default {20}
+      * @default {20}
       */
     var width: js.UndefOr[Double] = js.undefined
   }

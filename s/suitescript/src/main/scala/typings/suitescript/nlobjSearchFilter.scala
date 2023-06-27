@@ -44,7 +44,6 @@ Instantiable5[
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchFilter
     *
     * @since 2008.1
     * @return
@@ -56,7 +55,6 @@ Instantiable5[
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchFilter
     *
     * @since 2007.0
     * @return
@@ -68,7 +66,6 @@ Instantiable5[
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchFilter
     *
     * @since 2008.2
     * @return

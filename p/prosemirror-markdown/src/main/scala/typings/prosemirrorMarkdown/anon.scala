@@ -14,6 +14,12 @@ object anon {
       preceded by a backslash.
       */
     var escapeExtraCharacters: js.UndefOr[js.RegExp] = js.undefined
+    
+    /**
+      Specify the node name of hard breaks.
+      Defaults to "hard_break"
+      */
+    var hardBreakNodeName: js.UndefOr[String] = js.undefined
   }
   object EscapeExtraCharacters {
     
@@ -28,28 +34,38 @@ object anon {
       inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
       inline def setEscapeExtraCharactersUndefined: Self = StObject.set(x, "escapeExtraCharacters", js.undefined)
+      
+      inline def setHardBreakNodeName(value: String): Self = StObject.set(x, "hardBreakNodeName", value.asInstanceOf[js.Any])
+      
+      inline def setHardBreakNodeNameUndefined: Self = StObject.set(x, "hardBreakNodeName", js.undefined)
     }
   }
   
-  trait EscapeExtraCharactersTightLists extends StObject {
+  trait HardBreakNodeName extends StObject {
     
     var escapeExtraCharacters: js.UndefOr[js.RegExp] = js.undefined
     
+    var hardBreakNodeName: js.UndefOr[String] = js.undefined
+    
     var tightLists: js.UndefOr[Boolean] = js.undefined
   }
-  object EscapeExtraCharactersTightLists {
+  object HardBreakNodeName {
     
-    inline def apply(): EscapeExtraCharactersTightLists = {
+    inline def apply(): HardBreakNodeName = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EscapeExtraCharactersTightLists]
+      __obj.asInstanceOf[HardBreakNodeName]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: EscapeExtraCharactersTightLists] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: HardBreakNodeName] (val x: Self) extends AnyVal {
       
       inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
       
       inline def setEscapeExtraCharactersUndefined: Self = StObject.set(x, "escapeExtraCharacters", js.undefined)
+      
+      inline def setHardBreakNodeName(value: String): Self = StObject.set(x, "hardBreakNodeName", value.asInstanceOf[js.Any])
+      
+      inline def setHardBreakNodeNameUndefined: Self = StObject.set(x, "hardBreakNodeName", js.undefined)
       
       inline def setTightLists(value: Boolean): Self = StObject.set(x, "tightLists", value.asInstanceOf[js.Any])
       

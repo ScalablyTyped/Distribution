@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParagraphUpdateData extends StObject {
   
   /**
-    * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+    * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -23,7 +23,7 @@ trait ParagraphUpdateData extends StObject {
   var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -39,7 +39,7 @@ trait ParagraphUpdateData extends StObject {
   var font: js.UndefOr[FontUpdateData] = js.undefined
   
   /**
-    * Gets or sets the left indent value, in points, for the paragraph.
+    * Specifies the left indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -47,7 +47,7 @@ trait ParagraphUpdateData extends StObject {
   var leftIndent: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+    * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -55,7 +55,7 @@ trait ParagraphUpdateData extends StObject {
   var lineSpacing: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+    * Specifies the amount of spacing, in grid lines, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -63,7 +63,7 @@ trait ParagraphUpdateData extends StObject {
   var lineUnitAfter: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+    * Specifies the amount of spacing, in grid lines, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -87,7 +87,7 @@ trait ParagraphUpdateData extends StObject {
   var listItemOrNullObject: js.UndefOr[ListItemUpdateData] = js.undefined
   
   /**
-    * Gets or sets the outline level for the paragraph.
+    * Specifies the outline level for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -95,7 +95,7 @@ trait ParagraphUpdateData extends StObject {
   var outlineLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the right indent value, in points, for the paragraph.
+    * Specifies the right indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -103,7 +103,7 @@ trait ParagraphUpdateData extends StObject {
   var rightIndent: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the spacing, in points, after the paragraph.
+    * Specifies the spacing, in points, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -111,7 +111,7 @@ trait ParagraphUpdateData extends StObject {
   var spaceAfter: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the spacing, in points, before the paragraph.
+    * Specifies the spacing, in points, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -119,7 +119,7 @@ trait ParagraphUpdateData extends StObject {
   var spaceBefore: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -127,13 +127,13 @@ trait ParagraphUpdateData extends StObject {
   var style: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
   ] = js.undefined
 }
 object ParagraphUpdateData {
@@ -201,7 +201,7 @@ object ParagraphUpdateData {
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltIn(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
     ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)

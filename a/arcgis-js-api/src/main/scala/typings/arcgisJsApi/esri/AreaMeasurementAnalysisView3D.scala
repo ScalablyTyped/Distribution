@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurementAnalysisView3D extends StObject {
   
   /**
-    * The area measurement analysis object associated with the analysis view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#analysis)
-    */
+  		 * The area measurement analysis object associated with the analysis view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#analysis)
+  		 */
   val analysis: AreaMeasurementAnalysis
   
   /**
-    * Result of the area measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#result)
-    */
+  		 * Result of the area measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#result)
+  		 */
   var result: AreaMeasurementAnalysisResult
   
   /**
-    * The analysis view type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#type)
-    */
+  		 * The analysis view type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#type)
+  		 */
   val `type`: `area-measurement-view-3d`
   
   /**
-    * When `true`, the analysis is visualized in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#visible)
-    */
+  		 * When `true`, the analysis is visualized in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#visible)
+  		 */
   var visible: Boolean
 }
 object AreaMeasurementAnalysisView3D {

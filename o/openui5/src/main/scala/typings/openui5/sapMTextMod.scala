@@ -31,7 +31,7 @@ object sapMTextMod {
     * of the syntax of the settings object.
     * See:
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/text/ Text}
-    * 	{@link topic:f94deb45de184a3a87850b75d610d9c0 Text}
+    * 	{@link https://ui5.sap.com/#/topic/f94deb45de184a3a87850b75d610d9c0 Text}
     */
   open class default () extends Text {
     def this(/**
@@ -161,8 +161,8 @@ object sapMTextMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
-      * @SINCE 1.13.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.13.2
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Defines whether browser supports native line clamp or not
       */
@@ -172,8 +172,8 @@ object sapMTextMod {
     inline def hasNativeLineClamp_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasNativeLineClamp")(x.asInstanceOf[js.Any])
     
     /**
-      * @SINCE 1.30.3
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.30.3
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * To prevent from the layout thrashing of the `textContent` call, this method first tries to set the `nodeValue`
       * of the first child if it exists.
@@ -218,8 +218,8 @@ object sapMTextMod {
     oBindingInfo: PropertyBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Determines per instance whether line height should be cached or not.
       *
@@ -228,8 +228,8 @@ object sapMTextMod {
     var cacheLineHeight: Boolean = js.native
     
     /**
-      * @SINCE 1.20
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.20
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Decides whether the control can use native line clamp feature or not.
       *
@@ -238,8 +238,8 @@ object sapMTextMod {
     def canUseNativeLineClamp(): Boolean = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the max height to support `maxLines` property.
       *
@@ -252,8 +252,8 @@ object sapMTextMod {
     oDomRef: HTMLElement): int = js.native
     
     /**
-      * @SINCE 1.20
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.20
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Clamps the wrapping text according to max lines and returns the found ellipsis position. Parameters can
       * be used for better performance.
@@ -343,8 +343,8 @@ object sapMTextMod {
     ): js.UndefOr[int] = js.native
     
     /**
-      * @SINCE 1.13.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.13.2
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Ellipsis(...) text to indicate more text when clampText function is used.
       *
@@ -353,8 +353,8 @@ object sapMTextMod {
     var ellipsis: String = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the max height according to max lines and line height calculation. This is not calculated max
       * height!
@@ -368,7 +368,7 @@ object sapMTextMod {
     oDomRef: HTMLElement): int = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -381,8 +381,8 @@ object sapMTextMod {
     def getEmptyIndicatorMode(): EmptyIndicatorMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmptyIndicatorMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Caches and returns the computed line height of the text.
       * See:
@@ -397,7 +397,7 @@ object sapMTextMod {
     oDomRef: HTMLElement): int = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Gets current value of property {@link #getMaxLines maxLines}.
       *
@@ -411,7 +411,7 @@ object sapMTextMod {
     def getMaxLines(): int = js.native
     
     /**
-      * @SINCE 1.51
+      * @since 1.51
       *
       * Gets current value of property {@link #getRenderWhitespace renderWhitespace}.
       *
@@ -459,8 +459,8 @@ object sapMTextMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the text node container's DOM reference. This can be different from `getDomRef` when inner wrapper
       * is needed.
@@ -491,7 +491,7 @@ object sapMTextMod {
     def getWrapping(): Boolean = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getWrappingType wrappingType}.
       *
@@ -506,8 +506,8 @@ object sapMTextMod {
     def getWrappingType(): WrappingType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappingType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether max lines should be rendered or not.
       *
@@ -516,8 +516,8 @@ object sapMTextMod {
     def hasMaxLines(): HTMLElement | Null = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Default line height value as a number when line height is normal.
       *
@@ -534,7 +534,7 @@ object sapMTextMod {
     def onAfterRendering(): Unit = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -559,7 +559,7 @@ object sapMTextMod {
     sEmptyIndicatorMode: EmptyIndicatorMode): this.type = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Sets a new value for property {@link #getMaxLines maxLines}.
       *
@@ -579,7 +579,7 @@ object sapMTextMod {
     iMaxLines: int): this.type = js.native
     
     /**
-      * @SINCE 1.51
+      * @since 1.51
       *
       * Sets a new value for property {@link #getRenderWhitespace renderWhitespace}.
       *
@@ -697,7 +697,7 @@ object sapMTextMod {
     bWrapping: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getWrappingType wrappingType}.
       *
@@ -736,7 +736,7 @@ object sapMTextMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */
@@ -745,7 +745,7 @@ object sapMTextMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Limits the number of lines for wrapping texts.
       *
@@ -755,7 +755,7 @@ object sapMTextMod {
     var maxLines: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.51
+      * @since 1.51
       *
       * Specifies how whitespace and tabs inside the control are handled. If true, whitespace will be preserved
       * by the browser. Depending on wrapping property text will either only wrap on line breaks or wrap when
@@ -801,7 +801,7 @@ object sapMTextMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Defines the type of text wrapping to be used (hyphenated or normal).
       *

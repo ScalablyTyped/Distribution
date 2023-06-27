@@ -17,18 +17,18 @@ trait LinearUnit
      with JSONSupport {
   
   /**
-    * Specifies the value of the linear distance.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#distance)
-    */
+  		 * Specifies the value of the linear distance.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#distance)
+  		 */
   var distance: Double = js.native
   
   /**
-    * Specifies the unit type of the linear distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#units)
-    */
+  		 * Specifies the unit type of the linear distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LinearUnit.html#units)
+  		 */
   var units: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = js.native
 }

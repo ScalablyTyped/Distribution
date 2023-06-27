@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DaylightVisibleElements extends StObject {
   
   /**
-    * When set to `false`, neither the date nor the season picker are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, neither the date nor the season picker are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var datePicker: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the header is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, the header is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var header: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, neither of the play buttons are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, neither of the play buttons are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var playButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the shadows checkbox is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, the shadows checkbox is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var shadowsToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the sun lighting checkbox is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, the sun lighting checkbox is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var sunLightingToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the timezone selector is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
-    */
+  		 * When set to `false`, the timezone selector is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
+  		 */
   var timezone: js.UndefOr[Boolean] = js.undefined
 }
 object DaylightVisibleElements {

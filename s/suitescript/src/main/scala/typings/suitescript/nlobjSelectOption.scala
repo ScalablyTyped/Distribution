@@ -26,7 +26,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSelectOption
     *
     * @since 2009.2
     * @return
@@ -38,7 +37,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSelectOption
     *
     * @since 2009.2
     * @return

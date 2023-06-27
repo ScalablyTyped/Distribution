@@ -563,6 +563,10 @@ object petitDomStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
+  
+  @js.native
   sealed trait rp extends StObject
   inline def rp: rp = "rp".asInstanceOf[rp]
   
@@ -585,6 +589,10 @@ object petitDomStrings {
   @js.native
   sealed trait script extends StObject
   inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait section extends StObject
@@ -629,6 +637,10 @@ object petitDomStrings {
   @js.native
   sealed trait sub extends StObject
   inline def sub: sub = "sub".asInstanceOf[sub]
+  
+  @js.native
+  sealed trait submit extends StObject
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait summary extends StObject

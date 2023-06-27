@@ -31,6 +31,17 @@ trait PlotAreasplineAccessibilityPointOptions extends StObject {
   var describeNull: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock) A format string to use instead of the default for
+    * point descriptions.
+    *
+    * The context of the format string is the point instance.
+    *
+    * As opposed to accessibility.point.valueDescriptionFormat, this option
+    * replaces the whole description.
+    */
+  var descriptionFormat: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Formatter function to use instead of the default
     * for point descriptions. Same as
     * `accessibility.point.descriptionFormatter`, but applies to a series
@@ -95,6 +106,10 @@ object PlotAreasplineAccessibilityPointOptions {
     inline def setDescribeNull(value: Boolean): Self = StObject.set(x, "describeNull", value.asInstanceOf[js.Any])
     
     inline def setDescribeNullUndefined: Self = StObject.set(x, "describeNull", js.undefined)
+    
+    inline def setDescriptionFormat(value: String): Self = StObject.set(x, "descriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionFormatUndefined: Self = StObject.set(x, "descriptionFormat", js.undefined)
     
     inline def setDescriptionFormatter(value: Point => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     

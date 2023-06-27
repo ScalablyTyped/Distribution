@@ -5,11 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typescript.mod.ModuleResolutionHost because var conflicts: directoryExists, getCurrentDirectory. Inlined fileExists, readFile, trace, realpath, getDirectories, useCaseSensitiveFileNames
-- typings.typescript.mod.MinimalResolutionCacheHost because var conflicts: directoryExists, getCurrentDirectory. Inlined getCompilationSettings, getCompilerHost */ @js.native
+- typings.typescript.mod.ModuleResolutionHost because var conflicts: getCurrentDirectory. Inlined fileExists, readFile, trace, directoryExists, realpath, getDirectories, useCaseSensitiveFileNames
+- typings.typescript.mod.MinimalResolutionCacheHost because var conflicts: getCurrentDirectory. Inlined getCompilationSettings, getCompilerHost */ @js.native
 trait LanguageServiceHost
   extends StObject
      with GetEffectiveTypeRootsHost {
+  
+  var directoryExists: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, Boolean]] = js.native
   
   var error: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.native
   

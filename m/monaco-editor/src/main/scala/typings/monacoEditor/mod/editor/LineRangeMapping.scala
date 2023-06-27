@@ -30,3 +30,12 @@ open class LineRangeMapping protected () extends StObject {
     */
   val originalRange: LineRange = js.native
 }
+/* static members */
+object LineRangeMapping {
+  
+  @JSImport("monaco-editor", "editor.LineRangeMapping")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def inverse(mapping: js.Array[LineRangeMapping], originalLineCount: Double, modifiedLineCount: Double): js.Array[LineRangeMapping] = (^.asInstanceOf[js.Dynamic].applyDynamic("inverse")(mapping.asInstanceOf[js.Any], originalLineCount.asInstanceOf[js.Any], modifiedLineCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[LineRangeMapping]]
+}

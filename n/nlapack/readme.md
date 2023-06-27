@@ -1,7 +1,7 @@
 
 # Scala.js typings for nlapack
 
-Typings are for version 2.0.8
+Typings are for version 2.0.9
 
 ## Library description:
 C++ bindings for all single- and double-precision CLAPACK (Linear Algebra Package) routines.

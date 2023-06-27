@@ -1,6 +1,6 @@
 package typings.rollup.mod
 
-import typings.rollup.anon.Column
+import typings.rollup.anon.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,15 +23,17 @@ trait RollupLog extends StObject {
   
   var ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var loc: js.UndefOr[Column] = js.undefined
+  var loc: js.UndefOr[File] = js.undefined
   
   var message: String
+  
+  var meta: js.UndefOr[Any] = js.undefined
   
   var names: js.UndefOr[js.Array[String]] = js.undefined
   
   var plugin: js.UndefOr[String] = js.undefined
   
-  var pluginCode: js.UndefOr[String] = js.undefined
+  var pluginCode: js.UndefOr[Any] = js.undefined
   
   var pos: js.UndefOr[Double] = js.undefined
   
@@ -85,11 +87,15 @@ object RollupLog {
     
     inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
-    inline def setLoc(value: Column): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: File): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
@@ -99,7 +105,7 @@ object RollupLog {
     
     inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    inline def setPluginCode(value: String): Self = StObject.set(x, "pluginCode", value.asInstanceOf[js.Any])
+    inline def setPluginCode(value: Any): Self = StObject.set(x, "pluginCode", value.asInstanceOf[js.Any])
     
     inline def setPluginCodeUndefined: Self = StObject.set(x, "pluginCode", js.undefined)
     

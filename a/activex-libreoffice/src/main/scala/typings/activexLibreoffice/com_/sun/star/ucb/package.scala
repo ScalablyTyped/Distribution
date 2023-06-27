@@ -228,8 +228,8 @@ type ServiceNotFoundException = Exception
 
 /**
   * Offers a simple access to resources, like files and folders located in a local file system or on an WebDAV server.
-  * @@author Andreas Bregas
-  * @@version 1.0 07/25/2000
+  * @author Andreas Bregas
+  * @version 1.0 07/25/2000
   */
 type SimpleFileAccess = XSimpleFileAccess3
 

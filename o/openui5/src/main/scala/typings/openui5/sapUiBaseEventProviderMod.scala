@@ -287,7 +287,7 @@ object sapUiBaseEventProviderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires an {@link sap.ui.base.Event event} with the given settings and notifies all attached event handlers.
       *
@@ -418,7 +418,7 @@ object sapUiBaseEventProviderMod {
     ): this.type | Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the parent in the eventing hierarchy of this object.
       *
@@ -431,7 +431,7 @@ object sapUiBaseEventProviderMod {
     def getEventingParent(): EventProvider | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns whether there are any registered event handlers for the event with the given identifier.
       *

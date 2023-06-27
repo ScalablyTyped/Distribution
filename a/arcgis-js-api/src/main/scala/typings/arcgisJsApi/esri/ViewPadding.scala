@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewPadding extends StObject {
   
   /**
-    * The bottom padding (in pixels).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
-    */
+  		 * The bottom padding (in pixels).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
+  		 */
   var bottom: js.UndefOr[Double] = js.undefined
   
   /**
-    * The left padding (in pixels).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
-    */
+  		 * The left padding (in pixels).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
+  		 */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    * The right padding (in pixels).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
-    */
+  		 * The right padding (in pixels).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
+  		 */
   var right: js.UndefOr[Double] = js.undefined
   
   /**
-    * The top padding (in pixels).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
-    */
+  		 * The top padding (in pixels).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
+  		 */
   var top: js.UndefOr[Double] = js.undefined
 }
 object ViewPadding {

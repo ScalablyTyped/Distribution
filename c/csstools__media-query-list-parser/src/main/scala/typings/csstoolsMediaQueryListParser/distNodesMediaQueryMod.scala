@@ -12,6 +12,7 @@ import typings.csstoolsMediaQueryListParser.anon.String
 import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserBooleans.`false`
 import typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaCondition
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,12 +38,20 @@ object distNodesMediaQueryMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
+    def walk[T /* <: Record[java.lang.String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaQueryInvalidWalkerEntry, 
+          /* entry */ NodeMediaQueryInvalidWalkerEntry[T], 
           /* index */ Double | java.lang.String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[java.lang.String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaQueryInvalidWalkerEntry[T], 
+          /* index */ Double | java.lang.String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -98,12 +107,20 @@ object distNodesMediaQueryMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
+    def walk[T /* <: Record[java.lang.String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaQueryWithTypeWalkerEntry, 
+          /* entry */ NodeMediaQueryWithTypeWalkerEntry[T], 
           /* index */ Double | java.lang.String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[java.lang.String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaQueryWithTypeWalkerEntry[T], 
+          /* index */ Double | java.lang.String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -141,12 +158,20 @@ object distNodesMediaQueryMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
+    def walk[T /* <: Record[java.lang.String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaQueryWithoutTypeWalkerEntry, 
+          /* entry */ NodeMediaQueryWithoutTypeWalkerEntry[T], 
           /* index */ Double | java.lang.String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[java.lang.String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaQueryWithoutTypeWalkerEntry[T], 
+          /* index */ Double | java.lang.String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -174,7 +199,7 @@ object distNodesMediaQueryMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaConditionWalkerEntry
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaCondition
   */
-  type MediaQueryWithTypeWalkerEntry = _MediaQueryWithTypeWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaQueryWithTypeWalkerEntry = _MediaQueryWithTypeWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaConditionWalkerParent
@@ -186,7 +211,7 @@ object distNodesMediaQueryMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaConditionWalkerEntry
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaCondition
   */
-  type MediaQueryWithoutTypeWalkerEntry = _MediaQueryWithoutTypeWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaQueryWithoutTypeWalkerEntry = _MediaQueryWithoutTypeWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod.MediaConditionWalkerParent

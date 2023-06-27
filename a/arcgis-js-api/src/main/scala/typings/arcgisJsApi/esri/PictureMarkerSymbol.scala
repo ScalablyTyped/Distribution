@@ -15,35 +15,35 @@ trait PictureMarkerSymbol
      with symbolsMarkerSymbol {
   
   /**
-    * The height of the image in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#height)
-    */
+  		 * The height of the image in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#height)
+  		 */
   var height: Double = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#type)
+  		 */
   @JSName("type")
   val type_PictureMarkerSymbol: `picture-marker` = js.native
   
   /**
-    * The URL to an image or SVG document.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url)
-    */
+  		 * The URL to an image or SVG document.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url)
+  		 */
   var url: String = js.native
   
   /**
-    * The width of the image in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#width)
-    */
+  		 * The width of the image in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#width)
+  		 */
   var width: Double = js.native
 }

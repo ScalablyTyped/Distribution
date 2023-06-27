@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationInfo extends StObject {
   
   /**
-    * The identifer for the orientation info.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
-    */
+  		 * The identifer for the orientation info.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
+  		 */
   var id: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the image displays mirrored.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
-    */
+  		 * Indicates whether the image displays mirrored.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
+  		 */
   var mirrored: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The rotation value for the attached image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
-    */
+  		 * The rotation value for the attached image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
 }
 object OrientationInfo {

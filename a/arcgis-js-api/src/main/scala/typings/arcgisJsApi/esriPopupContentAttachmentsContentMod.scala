@@ -12,20 +12,20 @@ object esriPopupContentAttachmentsContentMod {
   @JSImport("esri/popup/content/AttachmentsContent", JSImport.Namespace)
   @js.native
   /**
-    * An `AttachmentsContent` popup element represents an attachment element associated with a feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html)
-    */
+  		 * An `AttachmentsContent` popup element represents an attachment element associated with a feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html)
+  		 */
   open class ^ ()
     extends StObject
        with AttachmentsContent {
     def this(properties: AttachmentsContentProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

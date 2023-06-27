@@ -11,10 +11,10 @@ trait UpdateWorkflow
      with Workflow {
   
   /**
-    * The type of workflow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html#type)
-    */
+  		 * The type of workflow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflow.html#type)
+  		 */
   @JSName("type")
   val type_UpdateWorkflow: update = js.native
 }

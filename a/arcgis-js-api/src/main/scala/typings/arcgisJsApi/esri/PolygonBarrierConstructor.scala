@@ -13,10 +13,10 @@ trait PolygonBarrierConstructor
      with Instantiable1[/* properties */ PolygonBarrierProperties, PolygonBarrier] {
   
   /**
-    * Creates a [PolygonBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#fromGraphic)
-    */
+  		 * Creates a [PolygonBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#fromGraphic)
+  		 */
   def fromGraphic(): PolygonBarrier = js.native
   def fromGraphic(graphic: Graphic): PolygonBarrier = js.native
   

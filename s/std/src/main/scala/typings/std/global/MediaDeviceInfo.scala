@@ -13,22 +13,27 @@ open class MediaDeviceInfo ()
   extends StObject
      with typings.std.MediaDeviceInfo {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/deviceId) */
   /* standard dom */
   /* CompleteClass */
   override val deviceId: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/groupId) */
   /* standard dom */
   /* CompleteClass */
   override val groupId: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/kind) */
   /* standard dom */
   /* CompleteClass */
   override val kind: MediaDeviceKind = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/label) */
   /* standard dom */
   /* CompleteClass */
   override val label: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/toJSON) */
   /* standard dom */
   /* CompleteClass */
   override def toJSON(): Any = js.native

@@ -155,7 +155,7 @@ object sapMFormattedTextMod {
     def getControls(): js.Array[typings.openui5.sapMLinkMod.default] = js.native
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Gets current value of property {@link #getConvertLinksToAnchorTags convertLinksToAnchorTags}.
       *
@@ -169,7 +169,7 @@ object sapMFormattedTextMod {
     def getConvertLinksToAnchorTags(): LinkConversion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkConversion * / any */ String) = js.native
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Gets current value of property {@link #getConvertedLinksDefaultTarget convertedLinksDefaultTarget}.
       *
@@ -222,9 +222,10 @@ object sapMFormattedTextMod {
       * 	 - `dd`
       * 	 - `ul`
       * 	 - `ol`
-      * 	 - `li`  `class, style, dir,` and `target` attributes are allowed. If `target` is not set, links
-      * 			open in a new window by default. Only safe `href` attributes can be used. See {@link module:sap/base/security/URLListValidator
-      * 			URLListValidator}.
+      * 	 - `li`  `style, dir` and `target` attributes are allowed. The `class` attribute is allowed,
+      *     but its value is sanitized to contain only supported CSS classes, see {@link https://ui5.sap.com/#/topic/91a4946b0dcf4356aaaedc4e502864f4 List of Supported CSS Classes}.
+      *     If `target` is not set, links open in a new window by default. Only safe `href` attributes can
+      *     be used. See {@link module:sap/base/security/URLListValidator URLListValidator}.
       *
       * **Note:** Keep in mind that not supported HTML tags and the content nested inside them are both not rendered
       * by the control.
@@ -236,7 +237,7 @@ object sapMFormattedTextMod {
     def getHtmlText(): String = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -252,7 +253,7 @@ object sapMFormattedTextMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -336,7 +337,7 @@ object sapMFormattedTextMod {
     ): typings.openui5.sapMLinkMod.default | Null = js.native
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Sets a new value for property {@link #getConvertLinksToAnchorTags convertLinksToAnchorTags}.
       *
@@ -364,7 +365,7 @@ object sapMFormattedTextMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Sets a new value for property {@link #getConvertedLinksDefaultTarget convertedLinksDefaultTarget}.
       *
@@ -414,7 +415,7 @@ object sapMFormattedTextMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -442,7 +443,7 @@ object sapMFormattedTextMod {
     sTextAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -500,7 +501,7 @@ object sapMFormattedTextMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Determines whether strings that appear to be links will be converted to HTML anchor tags, and what are
       * the criteria for recognizing them.
@@ -510,7 +511,7 @@ object sapMFormattedTextMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.45.5
+      * @since 1.45.5
       *
       * Determines the `target` attribute of the generated HTML anchor tags.
       *
@@ -553,9 +554,10 @@ object sapMFormattedTextMod {
       * 	 - `dd`
       * 	 - `ul`
       * 	 - `ol`
-      * 	 - `li`  `class, style, dir,` and `target` attributes are allowed. If `target` is not set, links
-      * 			open in a new window by default. Only safe `href` attributes can be used. See {@link module:sap/base/security/URLListValidator
-      * 			URLListValidator}.
+      * 	 - `li`  `style, dir` and `target` attributes are allowed. The `class` attribute is allowed,
+      *     but its value is sanitized to contain only supported CSS classes, see {@link https://ui5.sap.com/#/topic/91a4946b0dcf4356aaaedc4e502864f4 List of Supported CSS Classes}.
+      *     If `target` is not set, links open in a new window by default. Only safe `href` attributes can
+      *     be used. See {@link module:sap/base/security/URLListValidator URLListValidator}.
       *
       * **Note:** Keep in mind that not supported HTML tags and the content nested inside them are both not rendered
       * by the control.
@@ -563,7 +565,7 @@ object sapMFormattedTextMod {
     var htmlText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Determines the text alignment in the text elements in the `FormattedText`.
       *
@@ -575,7 +577,7 @@ object sapMFormattedTextMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Defines the directionality of the text in the `FormattedText`, e.g. right-to-left(`RTL`) or left-to-right
       * (`LTR`).

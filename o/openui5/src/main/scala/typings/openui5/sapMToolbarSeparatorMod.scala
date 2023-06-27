@@ -20,8 +20,8 @@ object sapMToolbarSeparatorMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Control#constructor
-    * sap.ui.core.Control} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Control#constructor sap.ui.core.Control }
+    * can be used.
     */
   open class default () extends ToolbarSeparator {
     def this(/**
@@ -130,7 +130,7 @@ object sapMToolbarSeparatorMod {
        with IOverflowToolbarContent {
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Sets the behavior of the `ToolbarSeparator` inside an `OverflowToolbar` configuration. Required by the
       * {@link sap.m.IOverflowToolbarContent} interface.

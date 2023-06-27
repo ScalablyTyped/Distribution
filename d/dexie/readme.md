@@ -1,7 +1,7 @@
 
 # Scala.js typings for dexie
 
-Typings are for version 3.2.3
+Typings are for version 3.2.4
 
 ## Library description:
 A Minimalistic Wrapper for IndexedDB

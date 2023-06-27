@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** HTML <script> elements expose the HTMLScriptElement interface, which provides special properties and methods for manipulating the behavior and execution of <script> elements (beyond the inherited HTMLElement interface). */
+/**
+  * HTML <script> elements expose the HTMLScriptElement interface, which provides special properties and methods for manipulating the behavior and execution of <script> elements (beyond the inherited HTMLElement interface).
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLScriptElement)
+  */
 @js.native
 trait HTMLScriptElement
   extends StObject
@@ -59,6 +63,7 @@ trait HTMLScriptElement
   /* standard dom */
   var noModule: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/referrerPolicy) */
   /* standard dom */
   var referrerPolicy: java.lang.String = js.native
   

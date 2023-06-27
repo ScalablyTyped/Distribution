@@ -11,7 +11,7 @@ object table {
     @js.native
     sealed trait Category extends StObject
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Categories of column menu entries.
       */

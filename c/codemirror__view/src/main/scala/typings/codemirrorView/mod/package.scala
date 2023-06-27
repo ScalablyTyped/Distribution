@@ -131,6 +131,20 @@ Configuration options.
 config: SpecialCharConfig): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightSpecialChars")(config.asInstanceOf[js.Any]).asInstanceOf[Extension]
 
 /**
+Returns an extension that adds a `cm-trailingSpace` class to all
+trailing whitespace.
+*/
+inline def highlightTrailingWhitespace(): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightTrailingWhitespace")().asInstanceOf[Extension]
+
+/**
+Returns an extension that highlights whitespace, adding a
+`cm-highlightSpace` class to stretches of spaces, and a
+`cm-highlightTab` class to individual tab characters. By default,
+the former are shown as faint dots, and the latter as arrows.
+*/
+inline def highlightWhitespace(): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightWhitespace")().asInstanceOf[Extension]
+
+/**
 Set up a hover tooltip, which shows up when the pointer hovers
 over ranges of text. The callback is called when the mouse hovers
 over the document text. It should, if there is a tooltip
@@ -168,6 +182,11 @@ priority get checked first). When a handler has returned `true`
 for a given key, no further handlers are called.
 */
 inline def keymap: Facet[js.Array[KeyBinding], js.Array[js.Array[KeyBinding]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("keymap").asInstanceOf[Facet[js.Array[KeyBinding], js.Array[js.Array[KeyBinding]]]]
+
+/**
+Define a layer.
+*/
+inline def layer(config: LayerConfig): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("layer")(config.asInstanceOf[js.Any]).asInstanceOf[Extension]
 
 /**
 Facet used to provide markers to the line number gutter.

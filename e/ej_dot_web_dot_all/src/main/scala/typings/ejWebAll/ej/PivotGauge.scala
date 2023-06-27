@@ -198,47 +198,47 @@ object PivotGauge {
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to bind in columns section.
-      * @Default {[]}
+      * @default {[]}
       */
     var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from OLAP database as string type.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the PivotGauge.
-      * @Default {null}
+      * @default {null}
       */
     var data: js.UndefOr[Any] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI in PivotGauge.
-      * @Default {[]}
+      * @default {[]}
       */
     var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Set the provider name for PivotGauge to identify whether the provider is SSAS or Mondrian.
-      * @Default {ssas}
+      * @default {ssas}
       */
     var providerName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to bind in rows section.
-      * @Default {[]}
+      * @default {[]}
       */
     var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the data source name to fetch data from that.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items supports calculation in PivotGauge.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
@@ -305,7 +305,7 @@ object PivotGauge {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
   }
@@ -332,12 +332,12 @@ object PivotGauge {
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -370,7 +370,7 @@ object PivotGauge {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
@@ -397,12 +397,12 @@ object PivotGauge {
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -435,7 +435,7 @@ object PivotGauge {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
   }
@@ -462,12 +462,12 @@ object PivotGauge {
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -496,7 +496,7 @@ object PivotGauge {
   trait DataSourceValue extends StObject {
     
     /** Allows to set the axis name to place the measures items.
-      * @Default {rows}
+      * @default {rows}
       */
     var axis: js.UndefOr[String] = js.undefined
     
@@ -513,12 +513,12 @@ object PivotGauge {
     var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field or not with Relational datasource.
-      * @Default {false}
+      * @default {false}
       */
     var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
-      * @Default {[]}
+      * @default {[]}
       */
     var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
   }
@@ -585,17 +585,17 @@ object PivotGauge {
   trait Frame extends StObject {
     
     /** Specifies the frame type of PivotGauge.
-      * @Default {fullcircle}
+      * @default {fullcircle}
       */
     var frameType: js.UndefOr[String] = js.undefined
     
     /** Specifies the end angle for the half circular frame.
-      * @Default {360}
+      * @default {360}
       */
     var halfCircleFrameEndAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start angle for the half circular frame.
-      * @Default {180}
+      * @default {180}
       */
     var halfCircleFrameStartAngle: js.UndefOr[Double] = js.undefined
   }
@@ -626,12 +626,12 @@ object PivotGauge {
   trait LabelFormatSettings extends StObject {
     
     /** Allows you to set the number of digits displayed after decimal point.
-      * @Default {5}
+      * @default {5}
       */
     var decimalPlaces: js.UndefOr[Double] = js.undefined
     
     /** Allows the user to change the number format of the label values in PivotGauge.
-      * @Default {ej.PivotGauge.NumberFormat.Default}
+      * @default {ej.PivotGauge.NumberFormat.Default}
       */
     var numberFormat: js.UndefOr[NumberFormat | String] = js.undefined
     
@@ -724,7 +724,7 @@ object PivotGauge {
     var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the PivotGauge widget for binding either OLAP or Relational data source.
-      * @Default {ej.Pivot.AnalysisMode.Pivot}
+      * @default {ej.Pivot.AnalysisMode.Pivot}
       */
     var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
@@ -737,57 +737,57 @@ object PivotGauge {
     var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the number of columns to arrange the Pivot Gauges.
-      * @Default {0}
+      * @default {0}
       */
     var columnsCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the CSS class to PivotGauge to achieve custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object utilized to pass additional information between client-end and service-end on operating in server mode.
-      * @Default {{}}
+      * @default {{}}
       */
     var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the data source for the PivotGauge widget, when it functions completely on client-side.
-      * @Default {{}}
+      * @default {{}}
       */
     var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Enables/disables the animation of pointer in PivotGauge.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view PivotGauge from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables tooltip visibility in PivotGauge.
-      * @Default {false}
+      * @default {false}
       */
     var enableTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
-      * @Default {false}
+      * @default {false}
       */
     var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the frame details of PivotGauge here.
-      * @Default {Object}
+      * @default {Object}
       */
     var frame: js.UndefOr[Frame] = js.undefined
     
     /** Allows the user to enable PivotGaugeâ€™s responsiveness in the browser layout.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to change the format of the label values in PivotGauge.
-      * @Default {null}
+      * @default {null}
       */
     var labelFormatSettings: js.UndefOr[LabelFormatSettings] = js.undefined
     
@@ -796,12 +796,12 @@ object PivotGauge {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the mode for the PivotGauge widget for binding data source either in server-side or client-side.
-      * @Default {ej.Pivot.OperationalMode.ClientMode}
+      * @default {ej.Pivot.OperationalMode.ClientMode}
       */
     var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
@@ -818,27 +818,27 @@ object PivotGauge {
     var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Sets the number of rows to arrange the Pivot Gauges.
-      * @Default {0}
+      * @default {0}
       */
     var rowsCount: js.UndefOr[Double] = js.undefined
     
     /** Sets the scale values such as pointers, indicators, etc... for PivotGauge.
-      * @Default {{}}
+      * @default {{}}
       */
     var scales: js.UndefOr[Any] = js.undefined
     
     /** Allows the user to set the custom name for the methods at service-end, communicated during AJAX post.
-      * @Default {{}}
+      * @default {{}}
       */
     var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Enables/disables the header labels in PivotGauge.
-      * @Default {true}
+      * @default {true}
       */
     var showHeaderLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Connects the service using the specified URL for any server updates on server mode operation.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var url: js.UndefOr[String] = js.undefined
   }
@@ -1059,7 +1059,7 @@ object PivotGauge {
   trait ServiceMethodSettings extends StObject {
     
     /** Allows the user to set the custom name for the service method responsible for initializing PivotGauge.
-      * @Default {InitializeGauge}
+      * @default {InitializeGauge}
       */
     var initialize: js.UndefOr[String] = js.undefined
   }

@@ -14,156 +14,158 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait typeCreateRendererParams extends StObject {
   
   /**
-    * **This option only applies to generating renderers for mesh SceneLayers**.
-    *
-    * @default replace
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * **This option only applies to generating renderers for mesh SceneLayers**.
+  		 *
+  		 * @default replace
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var colorMixMode: js.UndefOr[String] = js.undefined
   
   /**
-    * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the field from which to extract unique values that will be used for the basis of the data-driven visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * The name of the field from which to extract unique values that will be used for the basis of the data-driven visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the name of a second attribute field used to categorize features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Specifies the name of a second attribute field used to categorize features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var field2: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the name of a third attribute field used to categorize features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Specifies the name of a third attribute field used to categorize features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var field3: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the generated renderer is for a binning visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Indicates whether the generated renderer is for a binning visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * Provides options for setting a title to a field that will override the field alias defined in the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Provides options for setting a title to a field that will override the field alias defined in the service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var legendOptions: js.UndefOr[typeCreateRendererParamsLegendOptions] = js.undefined
   
   /**
-    * The number of types (or categories) displayed by the renderer.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * The number of types (or categories) displayed by the renderer.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var numTypes: js.UndefOr[Double] = js.undefined
   
   /**
-    * For polygon layers only.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * For polygon layers only.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates that all domain codes should be returned if the given field has domain values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Indicates that all domain codes should be returned if the given field has domain values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var returnAllCodedValues: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * For point and polyline layers only.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * For point and polyline layers only.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * @default count
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Indicates how values should be sorted in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * @default count
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var sortBy: js.UndefOr[count | value] = js.undefined
   
   /**
-    * A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html) function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * A statistics object generated from the [uniqueValues](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html) function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var statistics: js.UndefOr[UniqueValuesResult] = js.undefined
   
   /**
-    * The type of symbol to generate.
-    *
-    * @default 2d
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * The type of symbol to generate.
+  		 *
+  		 * @default 2d
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
-    * In authoring apps, the user may select a pre-defined type scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * In authoring apps, the user may select a pre-defined type scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var typeScheme: js.UndefOr[TypeScheme] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Text describing the value returned from the `valueExpression`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
-    */
+  		 * Text describing the value returned from the `valueExpression`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#createRenderer)
+  		 */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
-    * The view where the input layer is rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view where the input layer is rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[View] = js.undefined
 }
 object typeCreateRendererParams {
   
-  inline def apply(layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): typeCreateRendererParams = {
+  inline def apply(
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+  ): typeCreateRendererParams = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[typeCreateRendererParams]
   }
@@ -195,7 +197,9 @@ object typeCreateRendererParams {
     
     inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: typeCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

@@ -118,11 +118,11 @@ object mod {
        with /* spread */ StringDictionary[Any] {
     
     var CodeTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ] = js.undefined
     
     var PreTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ] = js.undefined
     
     var children: String | js.Array[String]
@@ -170,7 +170,7 @@ object mod {
       inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setCodeTag(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ): Self = StObject.set(x, "CodeTag", value.asInstanceOf[js.Any])
       
       inline def setCodeTagProps(value: HTMLProps[HTMLElement]): Self = StObject.set(x, "codeTagProps", value.asInstanceOf[js.Any])
@@ -204,7 +204,7 @@ object mod {
       inline def setLinePropsUndefined: Self = StObject.set(x, "lineProps", js.undefined)
       
       inline def setPreTag(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ): Self = StObject.set(x, "PreTag", value.asInstanceOf[js.Any])
       
       inline def setPreTagUndefined: Self = StObject.set(x, "PreTag", js.undefined)

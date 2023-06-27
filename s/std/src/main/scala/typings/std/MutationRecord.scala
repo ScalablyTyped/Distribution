@@ -4,42 +4,82 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A MutationRecord represents an individual DOM mutation. It is the object that is passed to MutationObserver's callback. */
+/**
+  * A MutationRecord represents an individual DOM mutation. It is the object that is passed to MutationObserver's callback.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord)
+  */
 trait MutationRecord extends StObject {
   
-  /** Return the nodes added and removed respectively. */
+  /**
+    * Return the nodes added and removed respectively.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/addedNodes)
+    */
   /* standard dom */
   val addedNodes: NodeList
   
-  /** Returns the local name of the changed attribute, and null otherwise. */
+  /**
+    * Returns the local name of the changed attribute, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeName)
+    */
   /* standard dom */
   val attributeName: java.lang.String | Null
   
-  /** Returns the namespace of the changed attribute, and null otherwise. */
+  /**
+    * Returns the namespace of the changed attribute, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/attributeNamespace)
+    */
   /* standard dom */
   val attributeNamespace: java.lang.String | Null
   
-  /** Return the previous and next sibling respectively of the added or removed nodes, and null otherwise. */
+  /**
+    * Return the previous and next sibling respectively of the added or removed nodes, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/nextSibling)
+    */
   /* standard dom */
   val nextSibling: Node | Null
   
-  /** The return value depends on type. For "attributes", it is the value of the changed attribute before the change. For "characterData", it is the data of the changed node before the change. For "childList", it is null. */
+  /**
+    * The return value depends on type. For "attributes", it is the value of the changed attribute before the change. For "characterData", it is the data of the changed node before the change. For "childList", it is null.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/oldValue)
+    */
   /* standard dom */
   val oldValue: java.lang.String | Null
   
-  /** Return the previous and next sibling respectively of the added or removed nodes, and null otherwise. */
+  /**
+    * Return the previous and next sibling respectively of the added or removed nodes, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/previousSibling)
+    */
   /* standard dom */
   val previousSibling: Node | Null
   
-  /** Return the nodes added and removed respectively. */
+  /**
+    * Return the nodes added and removed respectively.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/removedNodes)
+    */
   /* standard dom */
   val removedNodes: NodeList
   
-  /** Returns the node the mutation affected, depending on the type. For "attributes", it is the element whose attribute changed. For "characterData", it is the CharacterData node. For "childList", it is the node whose children changed. */
+  /**
+    * Returns the node the mutation affected, depending on the type. For "attributes", it is the element whose attribute changed. For "characterData", it is the CharacterData node. For "childList", it is the node whose children changed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/target)
+    */
   /* standard dom */
   val target: Node
   
-  /** Returns "attributes" if it was an attribute mutation. "characterData" if it was a mutation to a CharacterData node. And "childList" if it was a mutation to the tree of nodes. */
+  /**
+    * Returns "attributes" if it was an attribute mutation. "characterData" if it was a mutation to a CharacterData node. And "childList" if it was a mutation to the tree of nodes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MutationRecord/type)
+    */
   /* standard dom */
   val `type`: MutationRecordType
 }

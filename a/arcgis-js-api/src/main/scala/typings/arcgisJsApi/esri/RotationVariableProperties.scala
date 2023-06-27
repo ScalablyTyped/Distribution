@@ -14,21 +14,21 @@ trait RotationVariableProperties
      with VisualVariableProperties {
   
   /**
-    * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default heading
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#axis)
-    */
+  		 * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default heading
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#axis)
+  		 */
   var axis: js.UndefOr[heading | tilt | roll] = js.undefined
   
   /**
-    * Defines the origin and direction of rotation depending on how the angle of rotation was measured.
-    *
-    * @default geographic
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#rotationType)
-    */
+  		 * Defines the origin and direction of rotation depending on how the angle of rotation was measured.
+  		 *
+  		 * @default geographic
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-RotationVariable.html#rotationType)
+  		 */
   var rotationType: js.UndefOr[geographic | arithmetic] = js.undefined
 }
 object RotationVariableProperties {

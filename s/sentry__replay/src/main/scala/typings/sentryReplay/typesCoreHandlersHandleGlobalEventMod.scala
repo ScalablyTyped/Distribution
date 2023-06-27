@@ -1,6 +1,6 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.ReplayContainer
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import org.scalablytyped.runtime.StObject

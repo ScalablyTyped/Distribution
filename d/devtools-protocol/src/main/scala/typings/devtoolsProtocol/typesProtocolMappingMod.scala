@@ -23,6 +23,7 @@ import typings.devtoolsProtocol.anon.ReturnTypeCanEmulateNetworkConditionsRespon
 import typings.devtoolsProtocol.anon.ReturnTypeCanEmulateResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCaptureScreenshotResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCaptureSnapshotResponse
+import typings.devtoolsProtocol.anon.ReturnTypeCheckFormsIssuesResponse
 import typings.devtoolsProtocol.anon.ReturnTypeClearTrustTokensResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCloseTargetResponse
 import typings.devtoolsProtocol.anon.ReturnTypeCollectClassNamesFromSubtreeResponse
@@ -377,6 +378,9 @@ import typings.devtoolsProtocol.anon.`257`
 import typings.devtoolsProtocol.anon.`258`
 import typings.devtoolsProtocol.anon.`259`
 import typings.devtoolsProtocol.anon.`25`
+import typings.devtoolsProtocol.anon.`260`
+import typings.devtoolsProtocol.anon.`261`
+import typings.devtoolsProtocol.anon.`262`
 import typings.devtoolsProtocol.anon.`26`
 import typings.devtoolsProtocol.anon.`27`
 import typings.devtoolsProtocol.anon.`28`
@@ -763,6 +767,13 @@ object typesProtocolMappingMod {
       var AuditsDotcheckContrast: `29`
       
       /**
+        * Runs the form issues check for the target page. Found issues are reported
+        * using Audits.issueAdded event.
+        */
+      @JSName("Audits.checkFormsIssues")
+      var AuditsDotcheckFormsIssues: ReturnTypeCheckFormsIssuesResponse
+      
+      /**
         * Disables issues domain, prevents further issues from being reported to the client.
         */
       @JSName("Audits.disable")
@@ -783,6 +794,12 @@ object typesProtocolMappingMod {
       var AuditsDotgetEncodedResponse: ReturnTypeGetEncodedResponseResponse
       
       /**
+        * Set addresses so that developers can verify their forms implementation.
+        */
+      @JSName("Autofill.setAddresses")
+      var AutofillDotsetAddresses: `31`
+      
+      /**
         * Trigger autofill on a form identified by the fieldId.
         * If the field and related form cannot be autofilled, returns an error.
         */
@@ -793,31 +810,38 @@ object typesProtocolMappingMod {
         * Clears all stored data for the service.
         */
       @JSName("BackgroundService.clearEvents")
-      var BackgroundServiceDotclearEvents: `34`
+      var BackgroundServiceDotclearEvents: `35`
       
       /**
         * Set the recording state for the service.
         */
       @JSName("BackgroundService.setRecording")
-      var BackgroundServiceDotsetRecording: `33`
+      var BackgroundServiceDotsetRecording: `34`
       
       /**
         * Enables event updates for the service.
         */
       @JSName("BackgroundService.startObserving")
-      var BackgroundServiceDotstartObserving: `31`
+      var BackgroundServiceDotstartObserving: `32`
       
       /**
         * Disables event updates for the service.
         */
       @JSName("BackgroundService.stopObserving")
-      var BackgroundServiceDotstopObserving: `32`
+      var BackgroundServiceDotstopObserving: `33`
+      
+      /**
+        * Allows a site to use privacy sandbox features that require enrollment
+        * without the site actually being enrolled. Only supported on page targets.
+        */
+      @JSName("Browser.addPrivacySandboxEnrollmentOverride")
+      var BrowserDotaddPrivacySandboxEnrollmentOverride: `44`
       
       /**
         * Cancel a download if in progress
         */
       @JSName("Browser.cancelDownload")
-      var BrowserDotcancelDownload: `39`
+      var BrowserDotcancelDownload: `40`
       
       /**
         * Close browser gracefully.
@@ -841,7 +865,7 @@ object typesProtocolMappingMod {
         * Invoke custom browser commands used by telemetry.
         */
       @JSName("Browser.executeBrowserCommand")
-      var BrowserDotexecuteBrowserCommand: `42`
+      var BrowserDotexecuteBrowserCommand: `43`
       
       /**
         * Returns the command line switches for the browser process if, and only if
@@ -884,37 +908,37 @@ object typesProtocolMappingMod {
         * Grant specific permissions to the given origin and reject all others.
         */
       @JSName("Browser.grantPermissions")
-      var BrowserDotgrantPermissions: `36`
+      var BrowserDotgrantPermissions: `37`
       
       /**
         * Reset all permission management for all origins.
         */
       @JSName("Browser.resetPermissions")
-      var BrowserDotresetPermissions: `37`
+      var BrowserDotresetPermissions: `38`
       
       /**
         * Set dock tile details, platform-specific.
         */
       @JSName("Browser.setDockTile")
-      var BrowserDotsetDockTile: `41`
+      var BrowserDotsetDockTile: `42`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Browser.setDownloadBehavior")
-      var BrowserDotsetDownloadBehavior: `38`
+      var BrowserDotsetDownloadBehavior: `39`
       
       /**
         * Set permission settings for given origin.
         */
       @JSName("Browser.setPermission")
-      var BrowserDotsetPermission: `35`
+      var BrowserDotsetPermission: `36`
       
       /**
         * Set position and/or size of the browser window.
         */
       @JSName("Browser.setWindowBounds")
-      var BrowserDotsetWindowBounds: `40`
+      var BrowserDotsetWindowBounds: `41`
       
       /**
         * Inserts a new rule with the given `ruleText` in a stylesheet with given `styleSheetId`, at the
@@ -953,7 +977,7 @@ object typesProtocolMappingMod {
         * the browser.
         */
       @JSName("CSS.forcePseudoState")
-      var CSSDotforcePseudoState: `43`
+      var CSSDotforcePseudoState: `45`
       
       @JSName("CSS.getBackgroundColors")
       var CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse
@@ -1016,7 +1040,7 @@ object typesProtocolMappingMod {
         * property
         */
       @JSName("CSS.setEffectivePropertyValueForNode")
-      var CSSDotsetEffectivePropertyValueForNode: `45`
+      var CSSDotsetEffectivePropertyValueForNode: `47`
       
       /**
         * Modifies the keyframe rule key text.
@@ -1028,7 +1052,7 @@ object typesProtocolMappingMod {
         * Enables/disables rendering of local CSS fonts (enabled by default).
         */
       @JSName("CSS.setLocalFontsEnabled")
-      var CSSDotsetLocalFontsEnabled: `46`
+      var CSSDotsetLocalFontsEnabled: `48`
       
       /**
         * Modifies the rule selector.
@@ -1101,19 +1125,19 @@ object typesProtocolMappingMod {
         * to the front-end, no updates will be issued for the node.
         */
       @JSName("CSS.trackComputedStyleUpdates")
-      var CSSDottrackComputedStyleUpdates: `44`
+      var CSSDottrackComputedStyleUpdates: `46`
       
       /**
         * Deletes a cache.
         */
       @JSName("CacheStorage.deleteCache")
-      var CacheStorageDotdeleteCache: `47`
+      var CacheStorageDotdeleteCache: `49`
       
       /**
         * Deletes a cache entry.
         */
       @JSName("CacheStorage.deleteEntry")
-      var CacheStorageDotdeleteEntry: `48`
+      var CacheStorageDotdeleteEntry: `50`
       
       /**
         * Requests cache names.
@@ -1147,32 +1171,32 @@ object typesProtocolMappingMod {
         * an |issueUpdated| event is fired.
         */
       @JSName("Cast.enable")
-      var CastDotenable: `49`
+      var CastDotenable: `51`
       
       /**
         * Sets a sink to be used when the web page requests the browser to choose a
         * sink via Presentation API, Remote Playback API, or Cast SDK.
         */
       @JSName("Cast.setSinkToUse")
-      var CastDotsetSinkToUse: `50`
+      var CastDotsetSinkToUse: `52`
       
       /**
         * Starts mirroring the desktop to the sink.
         */
       @JSName("Cast.startDesktopMirroring")
-      var CastDotstartDesktopMirroring: `51`
+      var CastDotstartDesktopMirroring: `53`
       
       /**
         * Starts mirroring the tab to the sink.
         */
       @JSName("Cast.startTabMirroring")
-      var CastDotstartTabMirroring: `52`
+      var CastDotstartTabMirroring: `54`
       
       /**
         * Stops the active Cast session on the sink.
         */
       @JSName("Cast.stopCasting")
-      var CastDotstopCasting: `53`
+      var CastDotstopCasting: `55`
       
       /**
         * Does nothing.
@@ -1203,55 +1227,55 @@ object typesProtocolMappingMod {
         * Removes DOM breakpoint that was set using `setDOMBreakpoint`.
         */
       @JSName("DOMDebugger.removeDOMBreakpoint")
-      var DOMDebuggerDotremoveDOMBreakpoint: `68`
+      var DOMDebuggerDotremoveDOMBreakpoint: `70`
       
       /**
         * Removes breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.removeEventListenerBreakpoint")
-      var DOMDebuggerDotremoveEventListenerBreakpoint: `69`
+      var DOMDebuggerDotremoveEventListenerBreakpoint: `71`
       
       /**
         * Removes breakpoint on particular native event.
         */
       @JSName("DOMDebugger.removeInstrumentationBreakpoint")
-      var DOMDebuggerDotremoveInstrumentationBreakpoint: `70`
+      var DOMDebuggerDotremoveInstrumentationBreakpoint: `72`
       
       /**
         * Removes breakpoint from XMLHttpRequest.
         */
       @JSName("DOMDebugger.removeXHRBreakpoint")
-      var DOMDebuggerDotremoveXHRBreakpoint: `71`
+      var DOMDebuggerDotremoveXHRBreakpoint: `73`
       
       /**
         * Sets breakpoint on particular CSP violations.
         */
       @JSName("DOMDebugger.setBreakOnCSPViolation")
-      var DOMDebuggerDotsetBreakOnCSPViolation: `72`
+      var DOMDebuggerDotsetBreakOnCSPViolation: `74`
       
       /**
         * Sets breakpoint on particular operation with DOM.
         */
       @JSName("DOMDebugger.setDOMBreakpoint")
-      var DOMDebuggerDotsetDOMBreakpoint: `73`
+      var DOMDebuggerDotsetDOMBreakpoint: `75`
       
       /**
         * Sets breakpoint on particular DOM event.
         */
       @JSName("DOMDebugger.setEventListenerBreakpoint")
-      var DOMDebuggerDotsetEventListenerBreakpoint: `74`
+      var DOMDebuggerDotsetEventListenerBreakpoint: `76`
       
       /**
         * Sets breakpoint on particular native event.
         */
       @JSName("DOMDebugger.setInstrumentationBreakpoint")
-      var DOMDebuggerDotsetInstrumentationBreakpoint: `75`
+      var DOMDebuggerDotsetInstrumentationBreakpoint: `77`
       
       /**
         * Sets breakpoint on XMLHttpRequest.
         */
       @JSName("DOMDebugger.setXHRBreakpoint")
-      var DOMDebuggerDotsetXHRBreakpoint: `76`
+      var DOMDebuggerDotsetXHRBreakpoint: `78`
       
       /**
         * Collects class names for the node with given id and all of it's child nodes.
@@ -1284,19 +1308,19 @@ object typesProtocolMappingMod {
         * be called for that search.
         */
       @JSName("DOM.discardSearchResults")
-      var DOMDotdiscardSearchResults: `55`
+      var DOMDotdiscardSearchResults: `57`
       
       /**
         * Enables DOM agent for the given page.
         */
       @JSName("DOM.enable")
-      var DOMDotenable: `56`
+      var DOMDotenable: `58`
       
       /**
         * Focuses the given element.
         */
       @JSName("DOM.focus")
-      var DOMDotfocus: `57`
+      var DOMDotfocus: `59`
       
       /**
         * Returns attributes for the specified node.
@@ -1478,13 +1502,13 @@ object typesProtocolMappingMod {
         * Removes attribute with given name from an element with given id.
         */
       @JSName("DOM.removeAttribute")
-      var DOMDotremoveAttribute: `58`
+      var DOMDotremoveAttribute: `60`
       
       /**
         * Removes node with given id.
         */
       @JSName("DOM.removeNode")
-      var DOMDotremoveNode: `59`
+      var DOMDotremoveNode: `61`
       
       /**
         * Requests that children of the node with given id are returned to the caller in form of
@@ -1492,7 +1516,7 @@ object typesProtocolMappingMod {
         * the specified depth.
         */
       @JSName("DOM.requestChildNodes")
-      var DOMDotrequestChildNodes: `60`
+      var DOMDotrequestChildNodes: `62`
       
       /**
         * Requests that the node is sent to the caller given the JavaScript node object reference. All
@@ -1514,33 +1538,33 @@ object typesProtocolMappingMod {
         * to identify the node.
         */
       @JSName("DOM.scrollIntoViewIfNeeded")
-      var DOMDotscrollIntoViewIfNeeded: `54`
+      var DOMDotscrollIntoViewIfNeeded: `56`
       
       /**
         * Sets attribute for an element with given id.
         */
       @JSName("DOM.setAttributeValue")
-      var DOMDotsetAttributeValue: `61`
+      var DOMDotsetAttributeValue: `63`
       
       /**
         * Sets attributes on element with given id. This method is useful when user edits some existing
         * attribute value and types in several attribute name/value pairs.
         */
       @JSName("DOM.setAttributesAsText")
-      var DOMDotsetAttributesAsText: `62`
+      var DOMDotsetAttributesAsText: `64`
       
       /**
         * Sets files for the given file input element.
         */
       @JSName("DOM.setFileInputFiles")
-      var DOMDotsetFileInputFiles: `63`
+      var DOMDotsetFileInputFiles: `65`
       
       /**
         * Enables console to refer to the node with given id via $x (see Command Line API for more details
         * $x functions).
         */
       @JSName("DOM.setInspectedNode")
-      var DOMDotsetInspectedNode: `65`
+      var DOMDotsetInspectedNode: `67`
       
       /**
         * Sets node name for a node with given id.
@@ -1552,19 +1576,19 @@ object typesProtocolMappingMod {
         * Sets if stack traces should be captured for Nodes. See `Node.getNodeStackTraces`. Default is disabled.
         */
       @JSName("DOM.setNodeStackTracesEnabled")
-      var DOMDotsetNodeStackTracesEnabled: `64`
+      var DOMDotsetNodeStackTracesEnabled: `66`
       
       /**
         * Sets node value for a node with given id.
         */
       @JSName("DOM.setNodeValue")
-      var DOMDotsetNodeValue: `66`
+      var DOMDotsetNodeValue: `68`
       
       /**
         * Sets node HTML markup, returns new node id.
         */
       @JSName("DOM.setOuterHTML")
-      var DOMDotsetOuterHTML: `67`
+      var DOMDotsetOuterHTML: `69`
       
       /**
         * Undoes the last performed action.
@@ -1603,7 +1627,7 @@ object typesProtocolMappingMod {
       var DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse
       
       @JSName("DOMStorage.clear")
-      var DOMStorageDotclear: `79`
+      var DOMStorageDotclear: `81`
       
       /**
         * Disables storage tracking, prevents storage events from being sent to the client.
@@ -1621,10 +1645,10 @@ object typesProtocolMappingMod {
       var DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse
       
       @JSName("DOMStorage.removeDOMStorageItem")
-      var DOMStorageDotremoveDOMStorageItem: `80`
+      var DOMStorageDotremoveDOMStorageItem: `82`
       
       @JSName("DOMStorage.setDOMStorageItem")
-      var DOMStorageDotsetDOMStorageItem: `81`
+      var DOMStorageDotsetDOMStorageItem: `83`
       
       /**
         * Disables database tracking, prevents database events from being sent to the client.
@@ -1869,7 +1893,7 @@ object typesProtocolMappingMod {
         * Cancel a prompt in response to a DeviceAccess.deviceRequestPrompted event.
         */
       @JSName("DeviceAccess.cancelPrompt")
-      var DeviceAccessDotcancelPrompt: `256`
+      var DeviceAccessDotcancelPrompt: `259`
       
       /**
         * Disable events in this domain.
@@ -1887,7 +1911,7 @@ object typesProtocolMappingMod {
         * Select a device in response to a DeviceAccess.deviceRequestPrompted event.
         */
       @JSName("DeviceAccess.selectPrompt")
-      var DeviceAccessDotselectPrompt: `255`
+      var DeviceAccessDotselectPrompt: `258`
       
       /**
         * Clears the overridden Device Orientation.
@@ -1899,7 +1923,7 @@ object typesProtocolMappingMod {
         * Overrides the Device Orientation.
         */
       @JSName("DeviceOrientation.setDeviceOrientationOverride")
-      var DeviceOrientationDotsetDeviceOrientationOverride: `82`
+      var DeviceOrientationDotsetDeviceOrientationOverride: `84`
       
       /**
         * Tells whether emulation is supported.
@@ -1935,26 +1959,26 @@ object typesProtocolMappingMod {
         * Automatically render all web contents using a dark theme.
         */
       @JSName("Emulation.setAutoDarkModeOverride")
-      var EmulationDotsetAutoDarkModeOverride: `84`
+      var EmulationDotsetAutoDarkModeOverride: `86`
       
       /**
         * Allows overriding the automation flag.
         */
       @JSName("Emulation.setAutomationOverride")
-      var EmulationDotsetAutomationOverride: `105`
+      var EmulationDotsetAutomationOverride: `107`
       
       /**
         * Enables CPU throttling to emulate slow CPUs.
         */
       @JSName("Emulation.setCPUThrottlingRate")
-      var EmulationDotsetCPUThrottlingRate: `85`
+      var EmulationDotsetCPUThrottlingRate: `87`
       
       /**
         * Sets or clears an override of the default background color of the frame. This override is used
         * if the content does not specify one.
         */
       @JSName("Emulation.setDefaultBackgroundColorOverride")
-      var EmulationDotsetDefaultBackgroundColorOverride: `86`
+      var EmulationDotsetDefaultBackgroundColorOverride: `88`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -1962,95 +1986,95 @@ object typesProtocolMappingMod {
         * query results).
         */
       @JSName("Emulation.setDeviceMetricsOverride")
-      var EmulationDotsetDeviceMetricsOverride: `87`
+      var EmulationDotsetDeviceMetricsOverride: `89`
       
       @JSName("Emulation.setDisabledImageTypes")
-      var EmulationDotsetDisabledImageTypes: `102`
+      var EmulationDotsetDisabledImageTypes: `104`
       
       @JSName("Emulation.setDocumentCookieDisabled")
-      var EmulationDotsetDocumentCookieDisabled: `89`
+      var EmulationDotsetDocumentCookieDisabled: `91`
       
       @JSName("Emulation.setEmitTouchEventsForMouse")
-      var EmulationDotsetEmitTouchEventsForMouse: `90`
+      var EmulationDotsetEmitTouchEventsForMouse: `92`
       
       /**
         * Emulates the given media type or media feature for CSS media queries.
         */
       @JSName("Emulation.setEmulatedMedia")
-      var EmulationDotsetEmulatedMedia: `91`
+      var EmulationDotsetEmulatedMedia: `93`
       
       /**
         * Emulates the given vision deficiency.
         */
       @JSName("Emulation.setEmulatedVisionDeficiency")
-      var EmulationDotsetEmulatedVisionDeficiency: `92`
+      var EmulationDotsetEmulatedVisionDeficiency: `94`
       
       /**
         * Enables or disables simulating a focused and active page.
         */
       @JSName("Emulation.setFocusEmulationEnabled")
-      var EmulationDotsetFocusEmulationEnabled: `83`
+      var EmulationDotsetFocusEmulationEnabled: `85`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Emulation.setGeolocationOverride")
-      var EmulationDotsetGeolocationOverride: `93`
+      var EmulationDotsetGeolocationOverride: `95`
       
       @JSName("Emulation.setHardwareConcurrencyOverride")
-      var EmulationDotsetHardwareConcurrencyOverride: `103`
+      var EmulationDotsetHardwareConcurrencyOverride: `105`
       
       /**
         * Overrides the Idle state.
         */
       @JSName("Emulation.setIdleOverride")
-      var EmulationDotsetIdleOverride: `94`
+      var EmulationDotsetIdleOverride: `96`
       
       /**
         * Overrides default host system locale with the specified one.
         */
       @JSName("Emulation.setLocaleOverride")
-      var EmulationDotsetLocaleOverride: `99`
+      var EmulationDotsetLocaleOverride: `101`
       
       /**
         * Overrides value returned by the javascript navigator object.
         */
       @JSName("Emulation.setNavigatorOverrides")
-      var EmulationDotsetNavigatorOverrides: `95`
+      var EmulationDotsetNavigatorOverrides: `97`
       
       /**
         * Sets a specified page scale factor.
         */
       @JSName("Emulation.setPageScaleFactor")
-      var EmulationDotsetPageScaleFactor: `96`
+      var EmulationDotsetPageScaleFactor: `98`
       
       /**
         * Switches script execution in the page.
         */
       @JSName("Emulation.setScriptExecutionDisabled")
-      var EmulationDotsetScriptExecutionDisabled: `97`
+      var EmulationDotsetScriptExecutionDisabled: `99`
       
       @JSName("Emulation.setScrollbarsHidden")
-      var EmulationDotsetScrollbarsHidden: `88`
+      var EmulationDotsetScrollbarsHidden: `90`
       
       /**
         * Overrides default host system timezone with the specified one.
         */
       @JSName("Emulation.setTimezoneOverride")
-      var EmulationDotsetTimezoneOverride: `100`
+      var EmulationDotsetTimezoneOverride: `102`
       
       /**
         * Enables touch on platforms which do not support them.
         */
       @JSName("Emulation.setTouchEmulationEnabled")
-      var EmulationDotsetTouchEmulationEnabled: `98`
+      var EmulationDotsetTouchEmulationEnabled: `100`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Emulation.setUserAgentOverride")
-      var EmulationDotsetUserAgentOverride: `104`
+      var EmulationDotsetUserAgentOverride: `106`
       
       /**
         * Turns on virtual time for all frames (replacing real-time with a synthetic time source) and sets
@@ -2065,28 +2089,28 @@ object typesProtocolMappingMod {
         * on Android.
         */
       @JSName("Emulation.setVisibleSize")
-      var EmulationDotsetVisibleSize: `101`
+      var EmulationDotsetVisibleSize: `103`
       
       /**
         * Removes breakpoint on particular native event.
         */
       @JSName("EventBreakpoints.removeInstrumentationBreakpoint")
-      var EventBreakpointsDotremoveInstrumentationBreakpoint: `78`
+      var EventBreakpointsDotremoveInstrumentationBreakpoint: `80`
       
       /**
         * Sets breakpoint on particular native event.
         */
       @JSName("EventBreakpoints.setInstrumentationBreakpoint")
-      var EventBreakpointsDotsetInstrumentationBreakpoint: `77`
+      var EventBreakpointsDotsetInstrumentationBreakpoint: `79`
       
       @JSName("FedCm.disable")
       var FedCmDotdisable: ParamsType
       
       @JSName("FedCm.dismissDialog")
-      var FedCmDotdismissDialog: `259`
+      var FedCmDotdismissDialog: `262`
       
       @JSName("FedCm.enable")
-      var FedCmDotenable: `257`
+      var FedCmDotenable: `260`
       
       /**
         * Resets the cooldown time, if any, to allow the next FedCM call to show
@@ -2096,13 +2120,13 @@ object typesProtocolMappingMod {
       var FedCmDotresetCooldown: ParamsType
       
       @JSName("FedCm.selectAccount")
-      var FedCmDotselectAccount: `258`
+      var FedCmDotselectAccount: `261`
       
       /**
         * Continues the request, optionally modifying some of its parameters.
         */
       @JSName("Fetch.continueRequest")
-      var FetchDotcontinueRequest: `244`
+      var FetchDotcontinueRequest: `247`
       
       /**
         * Continues loading of the paused response, optionally modifying the
@@ -2110,13 +2134,13 @@ object typesProtocolMappingMod {
         * must be present.
         */
       @JSName("Fetch.continueResponse")
-      var FetchDotcontinueResponse: `246`
+      var FetchDotcontinueResponse: `249`
       
       /**
         * Continues a request supplying authChallengeResponse following authRequired event.
         */
       @JSName("Fetch.continueWithAuth")
-      var FetchDotcontinueWithAuth: `245`
+      var FetchDotcontinueWithAuth: `248`
       
       /**
         * Disables the fetch domain.
@@ -2129,19 +2153,19 @@ object typesProtocolMappingMod {
         * calls one of failRequest, fulfillRequest or continueRequest/continueWithAuth.
         */
       @JSName("Fetch.enable")
-      var FetchDotenable: `241`
+      var FetchDotenable: `244`
       
       /**
         * Causes the request to fail with specified reason.
         */
       @JSName("Fetch.failRequest")
-      var FetchDotfailRequest: `242`
+      var FetchDotfailRequest: `245`
       
       /**
         * Provides response to the request.
         */
       @JSName("Fetch.fulfillRequest")
-      var FetchDotfulfillRequest: `243`
+      var FetchDotfulfillRequest: `246`
       
       /**
         * Causes the body of the response to be received from the server and
@@ -2234,7 +2258,7 @@ object typesProtocolMappingMod {
         * Close the stream, discard any temporary backing storage.
         */
       @JSName("IO.close")
-      var IODotclose: `106`
+      var IODotclose: `108`
       
       /**
         * Read a chunk of the stream
@@ -2252,19 +2276,19 @@ object typesProtocolMappingMod {
         * Clears all entries from an object store.
         */
       @JSName("IndexedDB.clearObjectStore")
-      var IndexedDBDotclearObjectStore: `107`
+      var IndexedDBDotclearObjectStore: `109`
       
       /**
         * Deletes a database.
         */
       @JSName("IndexedDB.deleteDatabase")
-      var IndexedDBDotdeleteDatabase: `108`
+      var IndexedDBDotdeleteDatabase: `110`
       
       /**
         * Delete a range of entries from an object store
         */
       @JSName("IndexedDB.deleteObjectStoreEntries")
-      var IndexedDBDotdeleteObjectStoreEntries: `109`
+      var IndexedDBDotdeleteObjectStoreEntries: `111`
       
       /**
         * Disables events from backend.
@@ -2306,31 +2330,31 @@ object typesProtocolMappingMod {
         * Dispatches a drag event into the page.
         */
       @JSName("Input.dispatchDragEvent")
-      var InputDotdispatchDragEvent: `110`
+      var InputDotdispatchDragEvent: `112`
       
       /**
         * Dispatches a key event to the page.
         */
       @JSName("Input.dispatchKeyEvent")
-      var InputDotdispatchKeyEvent: `111`
+      var InputDotdispatchKeyEvent: `113`
       
       /**
         * Dispatches a mouse event to the page.
         */
       @JSName("Input.dispatchMouseEvent")
-      var InputDotdispatchMouseEvent: `114`
+      var InputDotdispatchMouseEvent: `116`
       
       /**
         * Dispatches a touch event to the page.
         */
       @JSName("Input.dispatchTouchEvent")
-      var InputDotdispatchTouchEvent: `115`
+      var InputDotdispatchTouchEvent: `117`
       
       /**
         * Emulates touch event from the mouse event parameters.
         */
       @JSName("Input.emulateTouchFromMouseEvent")
-      var InputDotemulateTouchFromMouseEvent: `116`
+      var InputDotemulateTouchFromMouseEvent: `118`
       
       /**
         * This method sets the current candidate text for ime.
@@ -2338,45 +2362,45 @@ object typesProtocolMappingMod {
         * Use imeSetComposition with empty string as text to cancel composition.
         */
       @JSName("Input.imeSetComposition")
-      var InputDotimeSetComposition: `113`
+      var InputDotimeSetComposition: `115`
       
       /**
         * This method emulates inserting text that doesn't come from a key press,
         * for example an emoji keyboard or an IME.
         */
       @JSName("Input.insertText")
-      var InputDotinsertText: `112`
+      var InputDotinsertText: `114`
       
       /**
         * Ignores input events (useful while auditing page).
         */
       @JSName("Input.setIgnoreInputEvents")
-      var InputDotsetIgnoreInputEvents: `117`
+      var InputDotsetIgnoreInputEvents: `119`
       
       /**
         * Prevents default drag and drop behavior and instead emits `Input.dragIntercepted` events.
         * Drag and drop behavior can be directly controlled via `Input.dispatchDragEvent`.
         */
       @JSName("Input.setInterceptDrags")
-      var InputDotsetInterceptDrags: `118`
+      var InputDotsetInterceptDrags: `120`
       
       /**
         * Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizePinchGesture")
-      var InputDotsynthesizePinchGesture: `119`
+      var InputDotsynthesizePinchGesture: `121`
       
       /**
         * Synthesizes a scroll gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeScrollGesture")
-      var InputDotsynthesizeScrollGesture: `120`
+      var InputDotsynthesizeScrollGesture: `122`
       
       /**
         * Synthesizes a tap gesture over a time period by issuing appropriate touch events.
         */
       @JSName("Input.synthesizeTapGesture")
-      var InputDotsynthesizeTapGesture: `121`
+      var InputDotsynthesizeTapGesture: `123`
       
       /**
         * Disables inspector domain notifications.
@@ -2427,7 +2451,7 @@ object typesProtocolMappingMod {
         * Releases layer snapshot captured by the back-end.
         */
       @JSName("LayerTree.releaseSnapshot")
-      var LayerTreeDotreleaseSnapshot: `122`
+      var LayerTreeDotreleaseSnapshot: `124`
       
       /**
         * Replays the layer snapshot and returns the resulting bitmap.
@@ -2464,7 +2488,7 @@ object typesProtocolMappingMod {
         * start violation reporting.
         */
       @JSName("Log.startViolationsReport")
-      var LogDotstartViolationsReport: `123`
+      var LogDotstartViolationsReport: `125`
       
       /**
         * Stop violation reporting.
@@ -2521,19 +2545,19 @@ object typesProtocolMappingMod {
         * Enable/disable suppressing memory pressure notifications in all processes.
         */
       @JSName("Memory.setPressureNotificationsSuppressed")
-      var MemoryDotsetPressureNotificationsSuppressed: `124`
+      var MemoryDotsetPressureNotificationsSuppressed: `126`
       
       /**
         * Simulate a memory pressure notification in all processes.
         */
       @JSName("Memory.simulatePressureNotification")
-      var MemoryDotsimulatePressureNotification: `125`
+      var MemoryDotsimulatePressureNotification: `127`
       
       /**
         * Start collecting native memory profile.
         */
       @JSName("Memory.startSampling")
-      var MemoryDotstartSampling: `126`
+      var MemoryDotstartSampling: `128`
       
       /**
         * Stop collecting native memory profile.
@@ -2585,13 +2609,13 @@ object typesProtocolMappingMod {
         * Deprecated, use Fetch.continueRequest, Fetch.fulfillRequest and Fetch.failRequest instead.
         */
       @JSName("Network.continueInterceptedRequest")
-      var NetworkDotcontinueInterceptedRequest: `128`
+      var NetworkDotcontinueInterceptedRequest: `130`
       
       /**
         * Deletes browser cookies with matching name and url or domain/path pair.
         */
       @JSName("Network.deleteCookies")
-      var NetworkDotdeleteCookies: `129`
+      var NetworkDotdeleteCookies: `131`
       
       /**
         * Disables network tracking, prevents network events from being sent to the client.
@@ -2603,20 +2627,20 @@ object typesProtocolMappingMod {
         * Activates emulation of network conditions.
         */
       @JSName("Network.emulateNetworkConditions")
-      var NetworkDotemulateNetworkConditions: `130`
+      var NetworkDotemulateNetworkConditions: `132`
       
       /**
         * Enables network tracking, network events will now be delivered to the client.
         */
       @JSName("Network.enable")
-      var NetworkDotenable: `131`
+      var NetworkDotenable: `133`
       
       /**
         * Enables tracking for the Reporting API, events generated by the Reporting API will now be delivered to the client.
         * Enabling triggers 'reportingApiReportAdded' for all existing reports.
         */
       @JSName("Network.enableReportingApi")
-      var NetworkDotenableReportingApi: `141`
+      var NetworkDotenableReportingApi: `143`
       
       /**
         * Returns all browser cookies. Depending on the backend support, will return detailed cookie
@@ -2675,7 +2699,7 @@ object typesProtocolMappingMod {
         * attribute, user, password.
         */
       @JSName("Network.replayXHR")
-      var NetworkDotreplayXHR: `132`
+      var NetworkDotreplayXHR: `134`
       
       /**
         * Searches for given string in response content.
@@ -2687,31 +2711,31 @@ object typesProtocolMappingMod {
         * Sets a list of content encodings that will be accepted. Empty list means no encoding is accepted.
         */
       @JSName("Network.setAcceptedEncodings")
-      var NetworkDotsetAcceptedEncodings: `127`
+      var NetworkDotsetAcceptedEncodings: `129`
       
       /**
         * Specifies whether to attach a page script stack id in requests
         */
       @JSName("Network.setAttachDebugStack")
-      var NetworkDotsetAttachDebugStack: `138`
+      var NetworkDotsetAttachDebugStack: `140`
       
       /**
         * Blocks URLs from loading.
         */
       @JSName("Network.setBlockedURLs")
-      var NetworkDotsetBlockedURLs: `133`
+      var NetworkDotsetBlockedURLs: `135`
       
       /**
         * Toggles ignoring of service worker for each request.
         */
       @JSName("Network.setBypassServiceWorker")
-      var NetworkDotsetBypassServiceWorker: `134`
+      var NetworkDotsetBypassServiceWorker: `136`
       
       /**
         * Toggles ignoring cache for each request. If `true`, cache will not be used.
         */
       @JSName("Network.setCacheDisabled")
-      var NetworkDotsetCacheDisabled: `135`
+      var NetworkDotsetCacheDisabled: `137`
       
       /**
         * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
@@ -2723,26 +2747,26 @@ object typesProtocolMappingMod {
         * Sets given cookies.
         */
       @JSName("Network.setCookies")
-      var NetworkDotsetCookies: `136`
+      var NetworkDotsetCookies: `138`
       
       /**
         * Specifies whether to always send extra HTTP headers with the requests from this page.
         */
       @JSName("Network.setExtraHTTPHeaders")
-      var NetworkDotsetExtraHTTPHeaders: `137`
+      var NetworkDotsetExtraHTTPHeaders: `139`
       
       /**
         * Sets the requests to intercept that match the provided patterns and optionally resource types.
         * Deprecated, please use Fetch.enable instead.
         */
       @JSName("Network.setRequestInterception")
-      var NetworkDotsetRequestInterception: `139`
+      var NetworkDotsetRequestInterception: `141`
       
       /**
         * Allows overriding user agent with the given string.
         */
       @JSName("Network.setUserAgentOverride")
-      var NetworkDotsetUserAgentOverride: `140`
+      var NetworkDotsetUserAgentOverride: `142`
       
       /**
         * Returns a handle to the stream representing the response body. Note that after this command,
@@ -2796,131 +2820,131 @@ object typesProtocolMappingMod {
         * the owner node in the client and use highlightNode.
         */
       @JSName("Overlay.highlightFrame")
-      var OverlayDothighlightFrame: `142`
+      var OverlayDothighlightFrame: `144`
       
       /**
         * Highlights DOM node with given id or with the given JavaScript object wrapper. Either nodeId or
         * objectId must be specified.
         */
       @JSName("Overlay.highlightNode")
-      var OverlayDothighlightNode: `143`
+      var OverlayDothighlightNode: `145`
       
       /**
         * Highlights given quad. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightQuad")
-      var OverlayDothighlightQuad: `144`
+      var OverlayDothighlightQuad: `146`
       
       /**
         * Highlights given rectangle. Coordinates are absolute with respect to the main frame viewport.
         */
       @JSName("Overlay.highlightRect")
-      var OverlayDothighlightRect: `145`
+      var OverlayDothighlightRect: `147`
       
       /**
         * Highlights the source order of the children of the DOM node with given id or with the given
         * JavaScript object wrapper. Either nodeId or objectId must be specified.
         */
       @JSName("Overlay.highlightSourceOrder")
-      var OverlayDothighlightSourceOrder: `146`
+      var OverlayDothighlightSourceOrder: `148`
       
       /**
         * Enters the 'inspect' mode. In this mode, elements that user is hovering over are highlighted.
         * Backend then generates 'inspectNodeRequested' event upon element selection.
         */
       @JSName("Overlay.setInspectMode")
-      var OverlayDotsetInspectMode: `147`
+      var OverlayDotsetInspectMode: `149`
       
       @JSName("Overlay.setPausedInDebuggerMessage")
-      var OverlayDotsetPausedInDebuggerMessage: `149`
+      var OverlayDotsetPausedInDebuggerMessage: `151`
       
       /**
         * Highlights owner element of all frames detected to be ads.
         */
       @JSName("Overlay.setShowAdHighlights")
-      var OverlayDotsetShowAdHighlights: `148`
+      var OverlayDotsetShowAdHighlights: `150`
       
       @JSName("Overlay.setShowContainerQueryOverlays")
-      var OverlayDotsetShowContainerQueryOverlays: `155`
+      var OverlayDotsetShowContainerQueryOverlays: `157`
       
       /**
         * Requests that backend shows debug borders on layers
         */
       @JSName("Overlay.setShowDebugBorders")
-      var OverlayDotsetShowDebugBorders: `150`
+      var OverlayDotsetShowDebugBorders: `152`
       
       /**
         * Requests that backend shows the FPS counter
         */
       @JSName("Overlay.setShowFPSCounter")
-      var OverlayDotsetShowFPSCounter: `151`
+      var OverlayDotsetShowFPSCounter: `153`
       
       @JSName("Overlay.setShowFlexOverlays")
-      var OverlayDotsetShowFlexOverlays: `153`
+      var OverlayDotsetShowFlexOverlays: `155`
       
       /**
         * Highlight multiple elements with the CSS Grid overlay.
         */
       @JSName("Overlay.setShowGridOverlays")
-      var OverlayDotsetShowGridOverlays: `152`
+      var OverlayDotsetShowGridOverlays: `154`
       
       /**
         * Add a dual screen device hinge
         */
       @JSName("Overlay.setShowHinge")
-      var OverlayDotsetShowHinge: `162`
+      var OverlayDotsetShowHinge: `164`
       
       /**
         * Deprecated, no longer has any effect.
         */
       @JSName("Overlay.setShowHitTestBorders")
-      var OverlayDotsetShowHitTestBorders: `159`
+      var OverlayDotsetShowHitTestBorders: `161`
       
       /**
         * Show elements in isolation mode with overlays.
         */
       @JSName("Overlay.setShowIsolatedElements")
-      var OverlayDotsetShowIsolatedElements: `163`
+      var OverlayDotsetShowIsolatedElements: `165`
       
       /**
         * Requests that backend shows layout shift regions
         */
       @JSName("Overlay.setShowLayoutShiftRegions")
-      var OverlayDotsetShowLayoutShiftRegions: `157`
+      var OverlayDotsetShowLayoutShiftRegions: `159`
       
       /**
         * Requests that backend shows paint rectangles
         */
       @JSName("Overlay.setShowPaintRects")
-      var OverlayDotsetShowPaintRects: `156`
+      var OverlayDotsetShowPaintRects: `158`
       
       /**
         * Requests that backend shows scroll bottleneck rects
         */
       @JSName("Overlay.setShowScrollBottleneckRects")
-      var OverlayDotsetShowScrollBottleneckRects: `158`
+      var OverlayDotsetShowScrollBottleneckRects: `160`
       
       @JSName("Overlay.setShowScrollSnapOverlays")
-      var OverlayDotsetShowScrollSnapOverlays: `154`
+      var OverlayDotsetShowScrollSnapOverlays: `156`
       
       /**
         * Paints viewport size upon main frame resize.
         */
       @JSName("Overlay.setShowViewportSizeOnResize")
-      var OverlayDotsetShowViewportSizeOnResize: `161`
+      var OverlayDotsetShowViewportSizeOnResize: `163`
       
       /**
         * Request that backend shows an overlay with web vital metrics.
         */
       @JSName("Overlay.setShowWebVitals")
-      var OverlayDotsetShowWebVitals: `160`
+      var OverlayDotsetShowWebVitals: `162`
       
       /**
         * Seeds compilation cache for given url. Compilation cache does not survive
         * cross-process navigation.
         */
       @JSName("Page.addCompilationCache")
-      var PageDotaddCompilationCache: `185`
+      var PageDotaddCompilationCache: `187`
       
       /**
         * Deprecated, please use addScriptToEvaluateOnNewDocument instead.
@@ -2999,7 +3023,7 @@ object typesProtocolMappingMod {
         * Deletes browser cookie with given name, domain and path.
         */
       @JSName("Page.deleteCookie")
-      var PageDotdeleteCookie: `164`
+      var PageDotdeleteCookie: `166`
       
       /**
         * Disables page domain notifications.
@@ -3017,7 +3041,7 @@ object typesProtocolMappingMod {
         * Generates a report for testing.
         */
       @JSName("Page.generateTestReport")
-      var PageDotgenerateTestReport: `188`
+      var PageDotgenerateTestReport: `190`
       
       @JSName("Page.getAdScriptId")
       var PageDotgetAdScriptId: ReturnTypeGetAdScriptIdResponse
@@ -3095,7 +3119,7 @@ object typesProtocolMappingMod {
         * Accepts or dismisses a JavaScript initiated dialog (alert, confirm, prompt, or onbeforeunload).
         */
       @JSName("Page.handleJavaScriptDialog")
-      var PageDothandleJavaScriptDialog: `165`
+      var PageDothandleJavaScriptDialog: `167`
       
       /**
         * Navigates current page to the given URL.
@@ -3107,7 +3131,7 @@ object typesProtocolMappingMod {
         * Navigates current page to the given history entry.
         */
       @JSName("Page.navigateToHistoryEntry")
-      var PageDotnavigateToHistoryEntry: `166`
+      var PageDotnavigateToHistoryEntry: `168`
       
       /**
         * Print page as PDF.
@@ -3124,25 +3148,25 @@ object typesProtocolMappingMod {
         * See also: `Page.compilationCacheProduced`.
         */
       @JSName("Page.produceCompilationCache")
-      var PageDotproduceCompilationCache: `184`
+      var PageDotproduceCompilationCache: `186`
       
       /**
         * Reloads given page optionally ignoring the cache.
         */
       @JSName("Page.reload")
-      var PageDotreload: `167`
+      var PageDotreload: `169`
       
       /**
         * Deprecated, please use removeScriptToEvaluateOnNewDocument instead.
         */
       @JSName("Page.removeScriptToEvaluateOnLoad")
-      var PageDotremoveScriptToEvaluateOnLoad: `168`
+      var PageDotremoveScriptToEvaluateOnLoad: `170`
       
       /**
         * Removes given script from the list.
         */
       @JSName("Page.removeScriptToEvaluateOnNewDocument")
-      var PageDotremoveScriptToEvaluateOnNewDocument: `169`
+      var PageDotremoveScriptToEvaluateOnNewDocument: `171`
       
       /**
         * Resets navigation history for the current page.
@@ -3154,7 +3178,7 @@ object typesProtocolMappingMod {
         * Acknowledges that a screencast frame has been received by the frontend.
         */
       @JSName("Page.screencastFrameAck")
-      var PageDotscreencastFrameAck: `170`
+      var PageDotscreencastFrameAck: `172`
       
       /**
         * Searches for given string in resource content.
@@ -3166,13 +3190,13 @@ object typesProtocolMappingMod {
         * Enable Chrome's experimental ad filter on all sites.
         */
       @JSName("Page.setAdBlockingEnabled")
-      var PageDotsetAdBlockingEnabled: `171`
+      var PageDotsetAdBlockingEnabled: `173`
       
       /**
         * Enable page Content Security Policy by-passing.
         */
       @JSName("Page.setBypassCSP")
-      var PageDotsetBypassCSP: `172`
+      var PageDotsetBypassCSP: `174`
       
       /**
         * Overrides the values of device screen dimensions (window.screen.width, window.screen.height,
@@ -3180,44 +3204,44 @@ object typesProtocolMappingMod {
         * query results).
         */
       @JSName("Page.setDeviceMetricsOverride")
-      var PageDotsetDeviceMetricsOverride: `173`
+      var PageDotsetDeviceMetricsOverride: `175`
       
       /**
         * Overrides the Device Orientation.
         */
       @JSName("Page.setDeviceOrientationOverride")
-      var PageDotsetDeviceOrientationOverride: `174`
+      var PageDotsetDeviceOrientationOverride: `176`
       
       /**
         * Sets given markup as the document's HTML.
         */
       @JSName("Page.setDocumentContent")
-      var PageDotsetDocumentContent: `177`
+      var PageDotsetDocumentContent: `179`
       
       /**
         * Set the behavior when downloading a file.
         */
       @JSName("Page.setDownloadBehavior")
-      var PageDotsetDownloadBehavior: `178`
+      var PageDotsetDownloadBehavior: `180`
       
       /**
         * Set generic font families.
         */
       @JSName("Page.setFontFamilies")
-      var PageDotsetFontFamilies: `175`
+      var PageDotsetFontFamilies: `177`
       
       /**
         * Set default font sizes.
         */
       @JSName("Page.setFontSizes")
-      var PageDotsetFontSizes: `176`
+      var PageDotsetFontSizes: `178`
       
       /**
         * Overrides the Geolocation Position or Error. Omitting any of the parameters emulates position
         * unavailable.
         */
       @JSName("Page.setGeolocationOverride")
-      var PageDotsetGeolocationOverride: `179`
+      var PageDotsetGeolocationOverride: `181`
       
       /**
         * Intercept file chooser requests and transfer control to protocol clients.
@@ -3225,33 +3249,45 @@ object typesProtocolMappingMod {
         * Instead, a protocol event `Page.fileChooserOpened` is emitted.
         */
       @JSName("Page.setInterceptFileChooserDialog")
-      var PageDotsetInterceptFileChooserDialog: `189`
+      var PageDotsetInterceptFileChooserDialog: `191`
       
       /**
         * Controls whether page will emit lifecycle events.
         */
       @JSName("Page.setLifecycleEventsEnabled")
-      var PageDotsetLifecycleEventsEnabled: `180`
+      var PageDotsetLifecycleEventsEnabled: `182`
+      
+      /**
+        * Enable/disable prerendering manually.
+        * 
+        * This command is a short-term solution for https://crbug.com/1440085.
+        * See https://docs.google.com/document/d/12HVmFxYj5Jc-eJr5OmWsa2bqTJsbgGLKI6ZIyx0_wpA
+        * for more details.
+        * 
+        * TODO(https://crbug.com/1440085): Remove this once Puppeteer supports tab targets.
+        */
+      @JSName("Page.setPrerenderingAllowed")
+      var PageDotsetPrerenderingAllowed: `192`
       
       /**
         * Extensions for Custom Handlers API:
         * https://html.spec.whatwg.org/multipage/system-state.html#rph-automation
         */
       @JSName("Page.setRPHRegistrationMode")
-      var PageDotsetRPHRegistrationMode: `187`
+      var PageDotsetRPHRegistrationMode: `189`
       
       /**
         * Sets the Secure Payment Confirmation transaction mode.
         * https://w3c.github.io/secure-payment-confirmation/#sctn-automation-set-spc-transaction-mode
         */
       @JSName("Page.setSPCTransactionMode")
-      var PageDotsetSPCTransactionMode: `186`
+      var PageDotsetSPCTransactionMode: `188`
       
       /**
         * Toggles mouse event-based touch event emulation.
         */
       @JSName("Page.setTouchEmulationEnabled")
-      var PageDotsetTouchEmulationEnabled: `181`
+      var PageDotsetTouchEmulationEnabled: `183`
       
       /**
         * Tries to update the web lifecycle state of the page.
@@ -3259,13 +3295,13 @@ object typesProtocolMappingMod {
         * https://github.com/WICG/web-lifecycle/
         */
       @JSName("Page.setWebLifecycleState")
-      var PageDotsetWebLifecycleState: `183`
+      var PageDotsetWebLifecycleState: `185`
       
       /**
         * Starts sending each frame using the `screencastFrame` event.
         */
       @JSName("Page.startScreencast")
-      var PageDotstartScreencast: `182`
+      var PageDotstartScreencast: `184`
       
       /**
         * Force the page stop all navigations and pending resource fetches.
@@ -3295,7 +3331,7 @@ object typesProtocolMappingMod {
         * Enable collecting and reporting metrics.
         */
       @JSName("Performance.enable")
-      var PerformanceDotenable: `190`
+      var PerformanceDotenable: `193`
       
       /**
         * Retrieve current values of run-time metrics.
@@ -3309,14 +3345,14 @@ object typesProtocolMappingMod {
         * this method while metrics collection is enabled returns an error.
         */
       @JSName("Performance.setTimeDomain")
-      var PerformanceDotsetTimeDomain: `191`
+      var PerformanceDotsetTimeDomain: `194`
       
       /**
         * Previously buffered events would be reported before method returns.
         * See also: timelineEventAdded
         */
       @JSName("PerformanceTimeline.enable")
-      var PerformanceTimelineDotenable: `192`
+      var PerformanceTimelineDotenable: `195`
       
       @JSName("Preload.disable")
       var PreloadDotdisable: ParamsType
@@ -3538,83 +3574,83 @@ object typesProtocolMappingMod {
         * Handles a certificate error that fired a certificateError event.
         */
       @JSName("Security.handleCertificateError")
-      var SecurityDothandleCertificateError: `194`
+      var SecurityDothandleCertificateError: `197`
       
       /**
         * Enable/disable whether all certificate errors should be ignored.
         */
       @JSName("Security.setIgnoreCertificateErrors")
-      var SecurityDotsetIgnoreCertificateErrors: `193`
+      var SecurityDotsetIgnoreCertificateErrors: `196`
       
       /**
         * Enable/disable overriding certificate errors. If enabled, all certificate error events need to
         * be handled by the DevTools client and should be answered with `handleCertificateError` commands.
         */
       @JSName("Security.setOverrideCertificateErrors")
-      var SecurityDotsetOverrideCertificateErrors: `195`
+      var SecurityDotsetOverrideCertificateErrors: `198`
       
       @JSName("ServiceWorker.deliverPushMessage")
-      var ServiceWorkerDotdeliverPushMessage: `196`
+      var ServiceWorkerDotdeliverPushMessage: `199`
       
       @JSName("ServiceWorker.disable")
       var ServiceWorkerDotdisable: ParamsType
       
       @JSName("ServiceWorker.dispatchPeriodicSyncEvent")
-      var ServiceWorkerDotdispatchPeriodicSyncEvent: `198`
+      var ServiceWorkerDotdispatchPeriodicSyncEvent: `201`
       
       @JSName("ServiceWorker.dispatchSyncEvent")
-      var ServiceWorkerDotdispatchSyncEvent: `197`
+      var ServiceWorkerDotdispatchSyncEvent: `200`
       
       @JSName("ServiceWorker.enable")
       var ServiceWorkerDotenable: ParamsType
       
       @JSName("ServiceWorker.inspectWorker")
-      var ServiceWorkerDotinspectWorker: `199`
+      var ServiceWorkerDotinspectWorker: `202`
       
       @JSName("ServiceWorker.setForceUpdateOnPageLoad")
-      var ServiceWorkerDotsetForceUpdateOnPageLoad: `200`
+      var ServiceWorkerDotsetForceUpdateOnPageLoad: `203`
       
       @JSName("ServiceWorker.skipWaiting")
-      var ServiceWorkerDotskipWaiting: `201`
+      var ServiceWorkerDotskipWaiting: `204`
       
       @JSName("ServiceWorker.startWorker")
-      var ServiceWorkerDotstartWorker: `202`
+      var ServiceWorkerDotstartWorker: `205`
       
       @JSName("ServiceWorker.stopAllWorkers")
       var ServiceWorkerDotstopAllWorkers: ParamsType
       
       @JSName("ServiceWorker.stopWorker")
-      var ServiceWorkerDotstopWorker: `203`
+      var ServiceWorkerDotstopWorker: `206`
       
       @JSName("ServiceWorker.unregister")
-      var ServiceWorkerDotunregister: `204`
+      var ServiceWorkerDotunregister: `207`
       
       @JSName("ServiceWorker.updateRegistration")
-      var ServiceWorkerDotupdateRegistration: `205`
+      var ServiceWorkerDotupdateRegistration: `208`
       
       /**
         * Clears cookies.
         */
       @JSName("Storage.clearCookies")
-      var StorageDotclearCookies: `210`
+      var StorageDotclearCookies: `213`
       
       /**
         * Clears storage for origin.
         */
       @JSName("Storage.clearDataForOrigin")
-      var StorageDotclearDataForOrigin: `206`
+      var StorageDotclearDataForOrigin: `209`
       
       /**
         * Clears storage for storage key.
         */
       @JSName("Storage.clearDataForStorageKey")
-      var StorageDotclearDataForStorageKey: `207`
+      var StorageDotclearDataForStorageKey: `210`
       
       /**
         * Clears all entries for a given origin's shared storage.
         */
       @JSName("Storage.clearSharedStorageEntries")
-      var StorageDotclearSharedStorageEntries: `223`
+      var StorageDotclearSharedStorageEntries: `226`
       
       /**
         * Removes all Trust Tokens issued by the provided issuerOrigin.
@@ -3627,19 +3663,19 @@ object typesProtocolMappingMod {
         * Deletes entry for `key` (if it exists) for a given origin's shared storage.
         */
       @JSName("Storage.deleteSharedStorageEntry")
-      var StorageDotdeleteSharedStorageEntry: `222`
+      var StorageDotdeleteSharedStorageEntry: `225`
       
       /**
         * Deletes the Storage Bucket with the given storage key and bucket name.
         */
       @JSName("Storage.deleteStorageBucket")
-      var StorageDotdeleteStorageBucket: `227`
+      var StorageDotdeleteStorageBucket: `230`
       
       /**
         * Returns all browser cookies.
         */
       @JSName("Storage.getCookies")
-      var StorageDotgetCookies: `208`
+      var StorageDotgetCookies: `211`
       
       /**
         * Gets details for a named interest group.
@@ -3682,13 +3718,13 @@ object typesProtocolMappingMod {
         * Override quota for the specified origin
         */
       @JSName("Storage.overrideQuotaForOrigin")
-      var StorageDotoverrideQuotaForOrigin: `211`
+      var StorageDotoverrideQuotaForOrigin: `214`
       
       /**
         * Resets the budget for `ownerOrigin` by clearing all budget withdrawals.
         */
       @JSName("Storage.resetSharedStorageBudget")
-      var StorageDotresetSharedStorageBudget: `224`
+      var StorageDotresetSharedStorageBudget: `227`
       
       /**
         * Deletes state for sites identified as potential bounce trackers, immediately.
@@ -3700,79 +3736,79 @@ object typesProtocolMappingMod {
         * Sets given cookies.
         */
       @JSName("Storage.setCookies")
-      var StorageDotsetCookies: `209`
+      var StorageDotsetCookies: `212`
       
       /**
         * Enables/Disables issuing of interestGroupAccessed events.
         */
       @JSName("Storage.setInterestGroupTracking")
-      var StorageDotsetInterestGroupTracking: `220`
+      var StorageDotsetInterestGroupTracking: `223`
       
       /**
         * Sets entry with `key` and `value` for a given origin's shared storage.
         */
       @JSName("Storage.setSharedStorageEntry")
-      var StorageDotsetSharedStorageEntry: `221`
+      var StorageDotsetSharedStorageEntry: `224`
       
       /**
         * Enables/disables issuing of sharedStorageAccessed events.
         */
       @JSName("Storage.setSharedStorageTracking")
-      var StorageDotsetSharedStorageTracking: `225`
+      var StorageDotsetSharedStorageTracking: `228`
       
       /**
         * Set tracking for a storage key's buckets.
         */
       @JSName("Storage.setStorageBucketTracking")
-      var StorageDotsetStorageBucketTracking: `226`
+      var StorageDotsetStorageBucketTracking: `229`
       
       /**
         * Registers origin to be notified when an update occurs to its cache storage list.
         */
       @JSName("Storage.trackCacheStorageForOrigin")
-      var StorageDottrackCacheStorageForOrigin: `212`
+      var StorageDottrackCacheStorageForOrigin: `215`
       
       /**
         * Registers storage key to be notified when an update occurs to its cache storage list.
         */
       @JSName("Storage.trackCacheStorageForStorageKey")
-      var StorageDottrackCacheStorageForStorageKey: `213`
+      var StorageDottrackCacheStorageForStorageKey: `216`
       
       /**
         * Registers origin to be notified when an update occurs to its IndexedDB.
         */
       @JSName("Storage.trackIndexedDBForOrigin")
-      var StorageDottrackIndexedDBForOrigin: `214`
+      var StorageDottrackIndexedDBForOrigin: `217`
       
       /**
         * Registers storage key to be notified when an update occurs to its IndexedDB.
         */
       @JSName("Storage.trackIndexedDBForStorageKey")
-      var StorageDottrackIndexedDBForStorageKey: `215`
+      var StorageDottrackIndexedDBForStorageKey: `218`
       
       /**
         * Unregisters origin from receiving notifications for cache storage.
         */
       @JSName("Storage.untrackCacheStorageForOrigin")
-      var StorageDotuntrackCacheStorageForOrigin: `216`
+      var StorageDotuntrackCacheStorageForOrigin: `219`
       
       /**
         * Unregisters storage key from receiving notifications for cache storage.
         */
       @JSName("Storage.untrackCacheStorageForStorageKey")
-      var StorageDotuntrackCacheStorageForStorageKey: `217`
+      var StorageDotuntrackCacheStorageForStorageKey: `220`
       
       /**
         * Unregisters origin from receiving notifications for IndexedDB.
         */
       @JSName("Storage.untrackIndexedDBForOrigin")
-      var StorageDotuntrackIndexedDBForOrigin: `218`
+      var StorageDotuntrackIndexedDBForOrigin: `221`
       
       /**
         * Unregisters storage key from receiving notifications for IndexedDB.
         */
       @JSName("Storage.untrackIndexedDBForStorageKey")
-      var StorageDotuntrackIndexedDBForStorageKey: `219`
+      var StorageDotuntrackIndexedDBForStorageKey: `222`
       
       /**
         * Returns information about the feature state.
@@ -3796,7 +3832,7 @@ object typesProtocolMappingMod {
         * Activates (focuses) the target.
         */
       @JSName("Target.activateTarget")
-      var TargetDotactivateTarget: `228`
+      var TargetDotactivateTarget: `231`
       
       /**
         * Attaches to the browser target, only uses flat sessionId mode.
@@ -3818,7 +3854,7 @@ object typesProtocolMappingMod {
         * `setAutoAttach`. Only available at the Browser target.
         */
       @JSName("Target.autoAttachRelated")
-      var TargetDotautoAttachRelated: `234`
+      var TargetDotautoAttachRelated: `237`
       
       /**
         * Closes the target. If the target is a page that gets closed too.
@@ -3843,14 +3879,14 @@ object typesProtocolMappingMod {
         * Detaches session with given id.
         */
       @JSName("Target.detachFromTarget")
-      var TargetDotdetachFromTarget: `230`
+      var TargetDotdetachFromTarget: `233`
       
       /**
         * Deletes a BrowserContext. All the belonging pages will be closed without calling their
         * beforeunload hooks.
         */
       @JSName("Target.disposeBrowserContext")
-      var TargetDotdisposeBrowserContext: `231`
+      var TargetDotdisposeBrowserContext: `234`
       
       /**
         * Inject object to the target's main frame that provides a communication
@@ -3863,7 +3899,7 @@ object typesProtocolMappingMod {
         * - `binding.onmessage = json => handleMessage(json)` - a callback that will be called for the protocol notifications and command responses.
         */
       @JSName("Target.exposeDevToolsProtocol")
-      var TargetDotexposeDevToolsProtocol: `229`
+      var TargetDotexposeDevToolsProtocol: `232`
       
       /**
         * Returns all browser contexts created with `Target.createBrowserContext` method.
@@ -3889,7 +3925,7 @@ object typesProtocolMappingMod {
         * and crbug.com/991325.
         */
       @JSName("Target.sendMessageToTarget")
-      var TargetDotsendMessageToTarget: `232`
+      var TargetDotsendMessageToTarget: `235`
       
       /**
         * Controls whether to automatically attach to new targets which are considered to be related to
@@ -3899,33 +3935,33 @@ object typesProtocolMappingMod {
         * for creation of related targets.
         */
       @JSName("Target.setAutoAttach")
-      var TargetDotsetAutoAttach: `233`
+      var TargetDotsetAutoAttach: `236`
       
       /**
         * Controls whether to discover available targets and notify via
         * `targetCreated/targetInfoChanged/targetDestroyed` events.
         */
       @JSName("Target.setDiscoverTargets")
-      var TargetDotsetDiscoverTargets: `235`
+      var TargetDotsetDiscoverTargets: `238`
       
       /**
         * Enables target discovery for the specified locations, when `setDiscoverTargets` was set to
         * `true`.
         */
       @JSName("Target.setRemoteLocations")
-      var TargetDotsetRemoteLocations: `236`
+      var TargetDotsetRemoteLocations: `239`
       
       /**
         * Request browser port binding.
         */
       @JSName("Tethering.bind")
-      var TetheringDotbind: `237`
+      var TetheringDotbind: `240`
       
       /**
         * Request browser port unbinding.
         */
       @JSName("Tethering.unbind")
-      var TetheringDotunbind: `238`
+      var TetheringDotunbind: `241`
       
       /**
         * Stop trace events collection.
@@ -3943,7 +3979,7 @@ object typesProtocolMappingMod {
         * Record a clock sync marker in the trace.
         */
       @JSName("Tracing.recordClockSyncMarker")
-      var TracingDotrecordClockSyncMarker: `239`
+      var TracingDotrecordClockSyncMarker: `242`
       
       /**
         * Request a global memory dump.
@@ -3955,7 +3991,7 @@ object typesProtocolMappingMod {
         * Start trace events collection.
         */
       @JSName("Tracing.start")
-      var TracingDotstart: `240`
+      var TracingDotstart: `243`
       
       /**
         * Disables the WebAudio domain.
@@ -3979,7 +4015,7 @@ object typesProtocolMappingMod {
         * Adds the credential to the specified authenticator.
         */
       @JSName("WebAuthn.addCredential")
-      var WebAuthnDotaddCredential: `250`
+      var WebAuthnDotaddCredential: `253`
       
       /**
         * Creates and adds a virtual authenticator.
@@ -3991,7 +4027,7 @@ object typesProtocolMappingMod {
         * Clears all the credentials from the specified device.
         */
       @JSName("WebAuthn.clearCredentials")
-      var WebAuthnDotclearCredentials: `252`
+      var WebAuthnDotclearCredentials: `255`
       
       /**
         * Disable the WebAuthn domain.
@@ -4004,7 +4040,7 @@ object typesProtocolMappingMod {
         * retrieval with a virtual authenticator.
         */
       @JSName("WebAuthn.enable")
-      var WebAuthnDotenable: `247`
+      var WebAuthnDotenable: `250`
       
       /**
         * Returns a single credential stored in the given virtual authenticator that
@@ -4023,33 +4059,33 @@ object typesProtocolMappingMod {
         * Removes a credential from the authenticator.
         */
       @JSName("WebAuthn.removeCredential")
-      var WebAuthnDotremoveCredential: `251`
+      var WebAuthnDotremoveCredential: `254`
       
       /**
         * Removes the given authenticator.
         */
       @JSName("WebAuthn.removeVirtualAuthenticator")
-      var WebAuthnDotremoveVirtualAuthenticator: `249`
+      var WebAuthnDotremoveVirtualAuthenticator: `252`
       
       /**
         * Sets whether tests of user presence will succeed immediately (if true) or fail to resolve (if false) for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setAutomaticPresenceSimulation")
-      var WebAuthnDotsetAutomaticPresenceSimulation: `254`
+      var WebAuthnDotsetAutomaticPresenceSimulation: `257`
       
       /**
         * Resets parameters isBogusSignature, isBadUV, isBadUP to false if they are not present.
         */
       @JSName("WebAuthn.setResponseOverrideBits")
-      var WebAuthnDotsetResponseOverrideBits: `248`
+      var WebAuthnDotsetResponseOverrideBits: `251`
       
       /**
         * Sets whether User Verification succeeds or fails for an authenticator.
         * The default is true.
         */
       @JSName("WebAuthn.setUserVerified")
-      var WebAuthnDotsetUserVerified: `253`
+      var WebAuthnDotsetUserVerified: `256`
     }
     object Commands {
       
@@ -4073,37 +4109,40 @@ object typesProtocolMappingMod {
         AnimationDotsetPlaybackRate: `27`,
         AnimationDotsetTiming: `28`,
         AuditsDotcheckContrast: `29`,
+        AuditsDotcheckFormsIssues: ReturnTypeCheckFormsIssuesResponse,
         AuditsDotdisable: ParamsType,
         AuditsDotenable: ParamsType,
         AuditsDotgetEncodedResponse: ReturnTypeGetEncodedResponseResponse,
+        AutofillDotsetAddresses: `31`,
         AutofillDottrigger: `30`,
-        BackgroundServiceDotclearEvents: `34`,
-        BackgroundServiceDotsetRecording: `33`,
-        BackgroundServiceDotstartObserving: `31`,
-        BackgroundServiceDotstopObserving: `32`,
-        BrowserDotcancelDownload: `39`,
+        BackgroundServiceDotclearEvents: `35`,
+        BackgroundServiceDotsetRecording: `34`,
+        BackgroundServiceDotstartObserving: `32`,
+        BackgroundServiceDotstopObserving: `33`,
+        BrowserDotaddPrivacySandboxEnrollmentOverride: `44`,
+        BrowserDotcancelDownload: `40`,
         BrowserDotclose: ParamsType,
         BrowserDotcrash: ParamsType,
         BrowserDotcrashGpuProcess: ParamsType,
-        BrowserDotexecuteBrowserCommand: `42`,
+        BrowserDotexecuteBrowserCommand: `43`,
         BrowserDotgetBrowserCommandLine: ReturnTypeGetBrowserCommandLineResponse,
         BrowserDotgetHistogram: ReturnTypeGetHistogramResponse,
         BrowserDotgetHistograms: ReturnTypeGetHistogramsResponse,
         BrowserDotgetVersion: ReturnTypeGetVersionResponse,
         BrowserDotgetWindowBounds: ReturnTypeGetWindowBoundsResponse,
         BrowserDotgetWindowForTarget: ReturnTypeGetWindowForTargetResponse,
-        BrowserDotgrantPermissions: `36`,
-        BrowserDotresetPermissions: `37`,
-        BrowserDotsetDockTile: `41`,
-        BrowserDotsetDownloadBehavior: `38`,
-        BrowserDotsetPermission: `35`,
-        BrowserDotsetWindowBounds: `40`,
+        BrowserDotgrantPermissions: `37`,
+        BrowserDotresetPermissions: `38`,
+        BrowserDotsetDockTile: `42`,
+        BrowserDotsetDownloadBehavior: `39`,
+        BrowserDotsetPermission: `36`,
+        BrowserDotsetWindowBounds: `41`,
         CSSDotaddRule: ReturnTypeAddRuleResponse,
         CSSDotcollectClassNames: ReturnTypeCollectClassNamesResponse,
         CSSDotcreateStyleSheet: ReturnTypeCreateStyleSheetResponse,
         CSSDotdisable: ParamsType,
         CSSDotenable: ParamsType,
-        CSSDotforcePseudoState: `43`,
+        CSSDotforcePseudoState: `45`,
         CSSDotgetBackgroundColors: ReturnTypeGetBackgroundColorsResponse,
         CSSDotgetComputedStyleForNode: ReturnTypeGetComputedStyleForNodeResponse,
         CSSDotgetInlineStylesForNode: ReturnTypeGetInlineStylesForNodeResponse,
@@ -4113,9 +4152,9 @@ object typesProtocolMappingMod {
         CSSDotgetPlatformFontsForNode: ReturnTypeGetPlatformFontsForNodeResponse,
         CSSDotgetStyleSheetText: ReturnTypeGetStyleSheetTextResponse,
         CSSDotsetContainerQueryText: ReturnTypeSetContainerQueryTextResponse,
-        CSSDotsetEffectivePropertyValueForNode: `45`,
+        CSSDotsetEffectivePropertyValueForNode: `47`,
         CSSDotsetKeyframeKey: ReturnTypeSetKeyframeKeyResponse,
-        CSSDotsetLocalFontsEnabled: `46`,
+        CSSDotsetLocalFontsEnabled: `48`,
         CSSDotsetMediaText: ReturnTypeSetMediaTextResponse,
         CSSDotsetRuleSelector: ReturnTypeSetRuleSelectorResponse,
         CSSDotsetScopeText: ReturnTypeSetScopeTextResponse,
@@ -4126,38 +4165,38 @@ object typesProtocolMappingMod {
         CSSDotstopRuleUsageTracking: ReturnTypeStopRuleUsageTrackingResponse,
         CSSDottakeComputedStyleUpdates: ReturnTypeTakeComputedStyleUpdatesResponse,
         CSSDottakeCoverageDelta: ReturnTypeTakeCoverageDeltaResponse,
-        CSSDottrackComputedStyleUpdates: `44`,
-        CacheStorageDotdeleteCache: `47`,
-        CacheStorageDotdeleteEntry: `48`,
+        CSSDottrackComputedStyleUpdates: `46`,
+        CacheStorageDotdeleteCache: `49`,
+        CacheStorageDotdeleteEntry: `50`,
         CacheStorageDotrequestCacheNames: ReturnTypeRequestCacheNamesResponse,
         CacheStorageDotrequestCachedResponse: ReturnTypeRequestCachedResponseResponse,
         CacheStorageDotrequestEntries: ReturnTypeRequestEntriesResponse,
         CastDotdisable: ParamsType,
-        CastDotenable: `49`,
-        CastDotsetSinkToUse: `50`,
-        CastDotstartDesktopMirroring: `51`,
-        CastDotstartTabMirroring: `52`,
-        CastDotstopCasting: `53`,
+        CastDotenable: `51`,
+        CastDotsetSinkToUse: `52`,
+        CastDotstartDesktopMirroring: `53`,
+        CastDotstartTabMirroring: `54`,
+        CastDotstopCasting: `55`,
         ConsoleDotclearMessages: ParamsType,
         ConsoleDotdisable: ParamsType,
         ConsoleDotenable: ParamsType,
         DOMDebuggerDotgetEventListeners: ReturnTypeGetEventListenersResponse,
-        DOMDebuggerDotremoveDOMBreakpoint: `68`,
-        DOMDebuggerDotremoveEventListenerBreakpoint: `69`,
-        DOMDebuggerDotremoveInstrumentationBreakpoint: `70`,
-        DOMDebuggerDotremoveXHRBreakpoint: `71`,
-        DOMDebuggerDotsetBreakOnCSPViolation: `72`,
-        DOMDebuggerDotsetDOMBreakpoint: `73`,
-        DOMDebuggerDotsetEventListenerBreakpoint: `74`,
-        DOMDebuggerDotsetInstrumentationBreakpoint: `75`,
-        DOMDebuggerDotsetXHRBreakpoint: `76`,
+        DOMDebuggerDotremoveDOMBreakpoint: `70`,
+        DOMDebuggerDotremoveEventListenerBreakpoint: `71`,
+        DOMDebuggerDotremoveInstrumentationBreakpoint: `72`,
+        DOMDebuggerDotremoveXHRBreakpoint: `73`,
+        DOMDebuggerDotsetBreakOnCSPViolation: `74`,
+        DOMDebuggerDotsetDOMBreakpoint: `75`,
+        DOMDebuggerDotsetEventListenerBreakpoint: `76`,
+        DOMDebuggerDotsetInstrumentationBreakpoint: `77`,
+        DOMDebuggerDotsetXHRBreakpoint: `78`,
         DOMDotcollectClassNamesFromSubtree: ReturnTypeCollectClassNamesFromSubtreeResponse,
         DOMDotcopyTo: ReturnTypeCopyToResponse,
         DOMDotdescribeNode: ReturnTypeDescribeNodeResponse,
         DOMDotdisable: ParamsType,
-        DOMDotdiscardSearchResults: `55`,
-        DOMDotenable: `56`,
-        DOMDotfocus: `57`,
+        DOMDotdiscardSearchResults: `57`,
+        DOMDotenable: `58`,
+        DOMDotfocus: `59`,
         DOMDotgetAttributes: ReturnTypeGetAttributesResponse,
         DOMDotgetBoxModel: ReturnTypeGetBoxModelResponse,
         DOMDotgetContainerForNode: ReturnTypeGetContainerForNodeResponse,
@@ -4185,31 +4224,31 @@ object typesProtocolMappingMod {
         DOMDotquerySelector: ReturnTypeQuerySelectorResponse,
         DOMDotquerySelectorAll: ReturnTypeQuerySelectorAllResponse,
         DOMDotredo: ParamsType,
-        DOMDotremoveAttribute: `58`,
-        DOMDotremoveNode: `59`,
-        DOMDotrequestChildNodes: `60`,
+        DOMDotremoveAttribute: `60`,
+        DOMDotremoveNode: `61`,
+        DOMDotrequestChildNodes: `62`,
         DOMDotrequestNode: ReturnTypeRequestNodeResponse,
         DOMDotresolveNode: ReturnTypeResolveNodeResponse,
-        DOMDotscrollIntoViewIfNeeded: `54`,
-        DOMDotsetAttributeValue: `61`,
-        DOMDotsetAttributesAsText: `62`,
-        DOMDotsetFileInputFiles: `63`,
-        DOMDotsetInspectedNode: `65`,
+        DOMDotscrollIntoViewIfNeeded: `56`,
+        DOMDotsetAttributeValue: `63`,
+        DOMDotsetAttributesAsText: `64`,
+        DOMDotsetFileInputFiles: `65`,
+        DOMDotsetInspectedNode: `67`,
         DOMDotsetNodeName: ReturnTypeSetNodeNameResponse,
-        DOMDotsetNodeStackTracesEnabled: `64`,
-        DOMDotsetNodeValue: `66`,
-        DOMDotsetOuterHTML: `67`,
+        DOMDotsetNodeStackTracesEnabled: `66`,
+        DOMDotsetNodeValue: `68`,
+        DOMDotsetOuterHTML: `69`,
         DOMDotundo: ParamsType,
         DOMSnapshotDotcaptureSnapshot: ReturnTypeCaptureSnapshotResponse,
         DOMSnapshotDotdisable: ParamsType,
         DOMSnapshotDotenable: ParamsType,
         DOMSnapshotDotgetSnapshot: ReturnTypeGetSnapshotResponse,
-        DOMStorageDotclear: `79`,
+        DOMStorageDotclear: `81`,
         DOMStorageDotdisable: ParamsType,
         DOMStorageDotenable: ParamsType,
         DOMStorageDotgetDOMStorageItems: ReturnTypeGetDOMStorageItemsResponse,
-        DOMStorageDotremoveDOMStorageItem: `80`,
-        DOMStorageDotsetDOMStorageItem: `81`,
+        DOMStorageDotremoveDOMStorageItem: `82`,
+        DOMStorageDotsetDOMStorageItem: `83`,
         DatabaseDotdisable: ParamsType,
         DatabaseDotenable: ParamsType,
         DatabaseDotexecuteSQL: ReturnTypeExecuteSQLResponse,
@@ -4246,55 +4285,55 @@ object typesProtocolMappingMod {
         DebuggerDotstepInto: `9`,
         DebuggerDotstepOut: ParamsType,
         DebuggerDotstepOver: `10`,
-        DeviceAccessDotcancelPrompt: `256`,
+        DeviceAccessDotcancelPrompt: `259`,
         DeviceAccessDotdisable: ParamsType,
         DeviceAccessDotenable: ParamsType,
-        DeviceAccessDotselectPrompt: `255`,
+        DeviceAccessDotselectPrompt: `258`,
         DeviceOrientationDotclearDeviceOrientationOverride: ParamsType,
-        DeviceOrientationDotsetDeviceOrientationOverride: `82`,
+        DeviceOrientationDotsetDeviceOrientationOverride: `84`,
         EmulationDotcanEmulate: ReturnTypeCanEmulateResponse,
         EmulationDotclearDeviceMetricsOverride: ParamsType,
         EmulationDotclearGeolocationOverride: ParamsType,
         EmulationDotclearIdleOverride: ParamsType,
         EmulationDotresetPageScaleFactor: ParamsType,
-        EmulationDotsetAutoDarkModeOverride: `84`,
-        EmulationDotsetAutomationOverride: `105`,
-        EmulationDotsetCPUThrottlingRate: `85`,
-        EmulationDotsetDefaultBackgroundColorOverride: `86`,
-        EmulationDotsetDeviceMetricsOverride: `87`,
-        EmulationDotsetDisabledImageTypes: `102`,
-        EmulationDotsetDocumentCookieDisabled: `89`,
-        EmulationDotsetEmitTouchEventsForMouse: `90`,
-        EmulationDotsetEmulatedMedia: `91`,
-        EmulationDotsetEmulatedVisionDeficiency: `92`,
-        EmulationDotsetFocusEmulationEnabled: `83`,
-        EmulationDotsetGeolocationOverride: `93`,
-        EmulationDotsetHardwareConcurrencyOverride: `103`,
-        EmulationDotsetIdleOverride: `94`,
-        EmulationDotsetLocaleOverride: `99`,
-        EmulationDotsetNavigatorOverrides: `95`,
-        EmulationDotsetPageScaleFactor: `96`,
-        EmulationDotsetScriptExecutionDisabled: `97`,
-        EmulationDotsetScrollbarsHidden: `88`,
-        EmulationDotsetTimezoneOverride: `100`,
-        EmulationDotsetTouchEmulationEnabled: `98`,
-        EmulationDotsetUserAgentOverride: `104`,
+        EmulationDotsetAutoDarkModeOverride: `86`,
+        EmulationDotsetAutomationOverride: `107`,
+        EmulationDotsetCPUThrottlingRate: `87`,
+        EmulationDotsetDefaultBackgroundColorOverride: `88`,
+        EmulationDotsetDeviceMetricsOverride: `89`,
+        EmulationDotsetDisabledImageTypes: `104`,
+        EmulationDotsetDocumentCookieDisabled: `91`,
+        EmulationDotsetEmitTouchEventsForMouse: `92`,
+        EmulationDotsetEmulatedMedia: `93`,
+        EmulationDotsetEmulatedVisionDeficiency: `94`,
+        EmulationDotsetFocusEmulationEnabled: `85`,
+        EmulationDotsetGeolocationOverride: `95`,
+        EmulationDotsetHardwareConcurrencyOverride: `105`,
+        EmulationDotsetIdleOverride: `96`,
+        EmulationDotsetLocaleOverride: `101`,
+        EmulationDotsetNavigatorOverrides: `97`,
+        EmulationDotsetPageScaleFactor: `98`,
+        EmulationDotsetScriptExecutionDisabled: `99`,
+        EmulationDotsetScrollbarsHidden: `90`,
+        EmulationDotsetTimezoneOverride: `102`,
+        EmulationDotsetTouchEmulationEnabled: `100`,
+        EmulationDotsetUserAgentOverride: `106`,
         EmulationDotsetVirtualTimePolicy: ReturnTypeSetVirtualTimePolicyResponse,
-        EmulationDotsetVisibleSize: `101`,
-        EventBreakpointsDotremoveInstrumentationBreakpoint: `78`,
-        EventBreakpointsDotsetInstrumentationBreakpoint: `77`,
+        EmulationDotsetVisibleSize: `103`,
+        EventBreakpointsDotremoveInstrumentationBreakpoint: `80`,
+        EventBreakpointsDotsetInstrumentationBreakpoint: `79`,
         FedCmDotdisable: ParamsType,
-        FedCmDotdismissDialog: `259`,
-        FedCmDotenable: `257`,
+        FedCmDotdismissDialog: `262`,
+        FedCmDotenable: `260`,
         FedCmDotresetCooldown: ParamsType,
-        FedCmDotselectAccount: `258`,
-        FetchDotcontinueRequest: `244`,
-        FetchDotcontinueResponse: `246`,
-        FetchDotcontinueWithAuth: `245`,
+        FedCmDotselectAccount: `261`,
+        FetchDotcontinueRequest: `247`,
+        FetchDotcontinueResponse: `249`,
+        FetchDotcontinueWithAuth: `248`,
         FetchDotdisable: ParamsType,
-        FetchDotenable: `241`,
-        FetchDotfailRequest: `242`,
-        FetchDotfulfillRequest: `243`,
+        FetchDotenable: `244`,
+        FetchDotfailRequest: `245`,
+        FetchDotfulfillRequest: `246`,
         FetchDotgetResponseBody: ParamsTypeReturnTypeGetResponseBodyResponse,
         FetchDottakeResponseBodyAsStream: ReturnTypeTakeResponseBodyAsStreamResponse,
         HeadlessExperimentalDotbeginFrame: ReturnTypeBeginFrameResponse,
@@ -4304,10 +4343,7 @@ object typesProtocolMappingMod {
         HeapProfilerDotcollectGarbage: ParamsType,
         HeapProfilerDotdisable: ParamsType,
         HeapProfilerDotenable: ParamsType,
-        HeapProfilerDotgetHeapObjectId: ReturnTypeGetHeapObjectIdResponse,
-        HeapProfilerDotgetObjectByHeapObjectId: ReturnTypeGetObjectByHeapObjectIdResponse,
-        HeapProfilerDotgetSamplingProfile: ReturnTypeGetSamplingProfileResponse,
-        HeapProfilerDotstartSampling: `12`
+        HeapProfilerDotgetHeapObjectId: ReturnTypeGetHeapObjectIdResponse
       ): Commands = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("Accessibility.disable")(AccessibilityDotdisable.asInstanceOf[js.Any])
@@ -4329,14 +4365,17 @@ object typesProtocolMappingMod {
         __obj.updateDynamic("Animation.setPlaybackRate")(AnimationDotsetPlaybackRate.asInstanceOf[js.Any])
         __obj.updateDynamic("Animation.setTiming")(AnimationDotsetTiming.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.checkContrast")(AuditsDotcheckContrast.asInstanceOf[js.Any])
+        __obj.updateDynamic("Audits.checkFormsIssues")(AuditsDotcheckFormsIssues.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.disable")(AuditsDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.enable")(AuditsDotenable.asInstanceOf[js.Any])
         __obj.updateDynamic("Audits.getEncodedResponse")(AuditsDotgetEncodedResponse.asInstanceOf[js.Any])
+        __obj.updateDynamic("Autofill.setAddresses")(AutofillDotsetAddresses.asInstanceOf[js.Any])
         __obj.updateDynamic("Autofill.trigger")(AutofillDottrigger.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.clearEvents")(BackgroundServiceDotclearEvents.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.setRecording")(BackgroundServiceDotsetRecording.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.startObserving")(BackgroundServiceDotstartObserving.asInstanceOf[js.Any])
         __obj.updateDynamic("BackgroundService.stopObserving")(BackgroundServiceDotstopObserving.asInstanceOf[js.Any])
+        __obj.updateDynamic("Browser.addPrivacySandboxEnrollmentOverride")(BrowserDotaddPrivacySandboxEnrollmentOverride.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.cancelDownload")(BrowserDotcancelDownload.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.close")(BrowserDotclose.asInstanceOf[js.Any])
         __obj.updateDynamic("Browser.crash")(BrowserDotcrash.asInstanceOf[js.Any])
@@ -4561,9 +4600,6 @@ object typesProtocolMappingMod {
         __obj.updateDynamic("HeapProfiler.disable")(HeapProfilerDotdisable.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.enable")(HeapProfilerDotenable.asInstanceOf[js.Any])
         __obj.updateDynamic("HeapProfiler.getHeapObjectId")(HeapProfilerDotgetHeapObjectId.asInstanceOf[js.Any])
-        __obj.updateDynamic("HeapProfiler.getObjectByHeapObjectId")(HeapProfilerDotgetObjectByHeapObjectId.asInstanceOf[js.Any])
-        __obj.updateDynamic("HeapProfiler.getSamplingProfile")(HeapProfilerDotgetSamplingProfile.asInstanceOf[js.Any])
-        __obj.updateDynamic("HeapProfiler.startSampling")(HeapProfilerDotstartSampling.asInstanceOf[js.Any])
         __obj.asInstanceOf[Commands]
       }
       
@@ -4608,23 +4644,29 @@ object typesProtocolMappingMod {
         
         inline def setAuditsDotcheckContrast(value: `29`): Self = StObject.set(x, "Audits.checkContrast", value.asInstanceOf[js.Any])
         
+        inline def setAuditsDotcheckFormsIssues(value: ReturnTypeCheckFormsIssuesResponse): Self = StObject.set(x, "Audits.checkFormsIssues", value.asInstanceOf[js.Any])
+        
         inline def setAuditsDotdisable(value: ParamsType): Self = StObject.set(x, "Audits.disable", value.asInstanceOf[js.Any])
         
         inline def setAuditsDotenable(value: ParamsType): Self = StObject.set(x, "Audits.enable", value.asInstanceOf[js.Any])
         
         inline def setAuditsDotgetEncodedResponse(value: ReturnTypeGetEncodedResponseResponse): Self = StObject.set(x, "Audits.getEncodedResponse", value.asInstanceOf[js.Any])
         
+        inline def setAutofillDotsetAddresses(value: `31`): Self = StObject.set(x, "Autofill.setAddresses", value.asInstanceOf[js.Any])
+        
         inline def setAutofillDottrigger(value: `30`): Self = StObject.set(x, "Autofill.trigger", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotclearEvents(value: `34`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotclearEvents(value: `35`): Self = StObject.set(x, "BackgroundService.clearEvents", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotsetRecording(value: `33`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotsetRecording(value: `34`): Self = StObject.set(x, "BackgroundService.setRecording", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotstartObserving(value: `31`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstartObserving(value: `32`): Self = StObject.set(x, "BackgroundService.startObserving", value.asInstanceOf[js.Any])
         
-        inline def setBackgroundServiceDotstopObserving(value: `32`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
+        inline def setBackgroundServiceDotstopObserving(value: `33`): Self = StObject.set(x, "BackgroundService.stopObserving", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotcancelDownload(value: `39`): Self = StObject.set(x, "Browser.cancelDownload", value.asInstanceOf[js.Any])
+        inline def setBrowserDotaddPrivacySandboxEnrollmentOverride(value: `44`): Self = StObject.set(x, "Browser.addPrivacySandboxEnrollmentOverride", value.asInstanceOf[js.Any])
+        
+        inline def setBrowserDotcancelDownload(value: `40`): Self = StObject.set(x, "Browser.cancelDownload", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotclose(value: ParamsType): Self = StObject.set(x, "Browser.close", value.asInstanceOf[js.Any])
         
@@ -4632,7 +4674,7 @@ object typesProtocolMappingMod {
         
         inline def setBrowserDotcrashGpuProcess(value: ParamsType): Self = StObject.set(x, "Browser.crashGpuProcess", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotexecuteBrowserCommand(value: `42`): Self = StObject.set(x, "Browser.executeBrowserCommand", value.asInstanceOf[js.Any])
+        inline def setBrowserDotexecuteBrowserCommand(value: `43`): Self = StObject.set(x, "Browser.executeBrowserCommand", value.asInstanceOf[js.Any])
         
         inline def setBrowserDotgetBrowserCommandLine(value: ReturnTypeGetBrowserCommandLineResponse): Self = StObject.set(x, "Browser.getBrowserCommandLine", value.asInstanceOf[js.Any])
         
@@ -4646,17 +4688,17 @@ object typesProtocolMappingMod {
         
         inline def setBrowserDotgetWindowForTarget(value: ReturnTypeGetWindowForTargetResponse): Self = StObject.set(x, "Browser.getWindowForTarget", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotgrantPermissions(value: `36`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotgrantPermissions(value: `37`): Self = StObject.set(x, "Browser.grantPermissions", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotresetPermissions(value: `37`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
+        inline def setBrowserDotresetPermissions(value: `38`): Self = StObject.set(x, "Browser.resetPermissions", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetDockTile(value: `41`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDockTile(value: `42`): Self = StObject.set(x, "Browser.setDockTile", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetDownloadBehavior(value: `38`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetDownloadBehavior(value: `39`): Self = StObject.set(x, "Browser.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetPermission(value: `35`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetPermission(value: `36`): Self = StObject.set(x, "Browser.setPermission", value.asInstanceOf[js.Any])
         
-        inline def setBrowserDotsetWindowBounds(value: `40`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
+        inline def setBrowserDotsetWindowBounds(value: `41`): Self = StObject.set(x, "Browser.setWindowBounds", value.asInstanceOf[js.Any])
         
         inline def setCSSDotaddRule(value: ReturnTypeAddRuleResponse): Self = StObject.set(x, "CSS.addRule", value.asInstanceOf[js.Any])
         
@@ -4668,7 +4710,7 @@ object typesProtocolMappingMod {
         
         inline def setCSSDotenable(value: ParamsType): Self = StObject.set(x, "CSS.enable", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotforcePseudoState(value: `43`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
+        inline def setCSSDotforcePseudoState(value: `45`): Self = StObject.set(x, "CSS.forcePseudoState", value.asInstanceOf[js.Any])
         
         inline def setCSSDotgetBackgroundColors(value: ReturnTypeGetBackgroundColorsResponse): Self = StObject.set(x, "CSS.getBackgroundColors", value.asInstanceOf[js.Any])
         
@@ -4688,11 +4730,11 @@ object typesProtocolMappingMod {
         
         inline def setCSSDotsetContainerQueryText(value: ReturnTypeSetContainerQueryTextResponse): Self = StObject.set(x, "CSS.setContainerQueryText", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotsetEffectivePropertyValueForNode(value: `45`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetEffectivePropertyValueForNode(value: `47`): Self = StObject.set(x, "CSS.setEffectivePropertyValueForNode", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetKeyframeKey(value: ReturnTypeSetKeyframeKeyResponse): Self = StObject.set(x, "CSS.setKeyframeKey", value.asInstanceOf[js.Any])
         
-        inline def setCSSDotsetLocalFontsEnabled(value: `46`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
+        inline def setCSSDotsetLocalFontsEnabled(value: `48`): Self = StObject.set(x, "CSS.setLocalFontsEnabled", value.asInstanceOf[js.Any])
         
         inline def setCSSDotsetMediaText(value: ReturnTypeSetMediaTextResponse): Self = StObject.set(x, "CSS.setMediaText", value.asInstanceOf[js.Any])
         
@@ -4714,11 +4756,11 @@ object typesProtocolMappingMod {
         
         inline def setCSSDottakeCoverageDelta(value: ReturnTypeTakeCoverageDeltaResponse): Self = StObject.set(x, "CSS.takeCoverageDelta", value.asInstanceOf[js.Any])
         
-        inline def setCSSDottrackComputedStyleUpdates(value: `44`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
+        inline def setCSSDottrackComputedStyleUpdates(value: `46`): Self = StObject.set(x, "CSS.trackComputedStyleUpdates", value.asInstanceOf[js.Any])
         
-        inline def setCacheStorageDotdeleteCache(value: `47`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteCache(value: `49`): Self = StObject.set(x, "CacheStorage.deleteCache", value.asInstanceOf[js.Any])
         
-        inline def setCacheStorageDotdeleteEntry(value: `48`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
+        inline def setCacheStorageDotdeleteEntry(value: `50`): Self = StObject.set(x, "CacheStorage.deleteEntry", value.asInstanceOf[js.Any])
         
         inline def setCacheStorageDotrequestCacheNames(value: ReturnTypeRequestCacheNamesResponse): Self = StObject.set(x, "CacheStorage.requestCacheNames", value.asInstanceOf[js.Any])
         
@@ -4728,15 +4770,15 @@ object typesProtocolMappingMod {
         
         inline def setCastDotdisable(value: ParamsType): Self = StObject.set(x, "Cast.disable", value.asInstanceOf[js.Any])
         
-        inline def setCastDotenable(value: `49`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
+        inline def setCastDotenable(value: `51`): Self = StObject.set(x, "Cast.enable", value.asInstanceOf[js.Any])
         
-        inline def setCastDotsetSinkToUse(value: `50`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
+        inline def setCastDotsetSinkToUse(value: `52`): Self = StObject.set(x, "Cast.setSinkToUse", value.asInstanceOf[js.Any])
         
-        inline def setCastDotstartDesktopMirroring(value: `51`): Self = StObject.set(x, "Cast.startDesktopMirroring", value.asInstanceOf[js.Any])
+        inline def setCastDotstartDesktopMirroring(value: `53`): Self = StObject.set(x, "Cast.startDesktopMirroring", value.asInstanceOf[js.Any])
         
-        inline def setCastDotstartTabMirroring(value: `52`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
+        inline def setCastDotstartTabMirroring(value: `54`): Self = StObject.set(x, "Cast.startTabMirroring", value.asInstanceOf[js.Any])
         
-        inline def setCastDotstopCasting(value: `53`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
+        inline def setCastDotstopCasting(value: `55`): Self = StObject.set(x, "Cast.stopCasting", value.asInstanceOf[js.Any])
         
         inline def setConsoleDotclearMessages(value: ParamsType): Self = StObject.set(x, "Console.clearMessages", value.asInstanceOf[js.Any])
         
@@ -4746,23 +4788,23 @@ object typesProtocolMappingMod {
         
         inline def setDOMDebuggerDotgetEventListeners(value: ReturnTypeGetEventListenersResponse): Self = StObject.set(x, "DOMDebugger.getEventListeners", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveDOMBreakpoint(value: `68`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveDOMBreakpoint(value: `70`): Self = StObject.set(x, "DOMDebugger.removeDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `69`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveEventListenerBreakpoint(value: `71`): Self = StObject.set(x, "DOMDebugger.removeEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `70`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveInstrumentationBreakpoint(value: `72`): Self = StObject.set(x, "DOMDebugger.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotremoveXHRBreakpoint(value: `71`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotremoveXHRBreakpoint(value: `73`): Self = StObject.set(x, "DOMDebugger.removeXHRBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetBreakOnCSPViolation(value: `72`): Self = StObject.set(x, "DOMDebugger.setBreakOnCSPViolation", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetBreakOnCSPViolation(value: `74`): Self = StObject.set(x, "DOMDebugger.setBreakOnCSPViolation", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetDOMBreakpoint(value: `73`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetDOMBreakpoint(value: `75`): Self = StObject.set(x, "DOMDebugger.setDOMBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetEventListenerBreakpoint(value: `74`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetEventListenerBreakpoint(value: `76`): Self = StObject.set(x, "DOMDebugger.setEventListenerBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `75`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetInstrumentationBreakpoint(value: `77`): Self = StObject.set(x, "DOMDebugger.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setDOMDebuggerDotsetXHRBreakpoint(value: `76`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
+        inline def setDOMDebuggerDotsetXHRBreakpoint(value: `78`): Self = StObject.set(x, "DOMDebugger.setXHRBreakpoint", value.asInstanceOf[js.Any])
         
         inline def setDOMDotcollectClassNamesFromSubtree(value: ReturnTypeCollectClassNamesFromSubtreeResponse): Self = StObject.set(x, "DOM.collectClassNamesFromSubtree", value.asInstanceOf[js.Any])
         
@@ -4772,11 +4814,11 @@ object typesProtocolMappingMod {
         
         inline def setDOMDotdisable(value: ParamsType): Self = StObject.set(x, "DOM.disable", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotdiscardSearchResults(value: `55`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
+        inline def setDOMDotdiscardSearchResults(value: `57`): Self = StObject.set(x, "DOM.discardSearchResults", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotenable(value: `56`): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
+        inline def setDOMDotenable(value: `58`): Self = StObject.set(x, "DOM.enable", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotfocus(value: `57`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
+        inline def setDOMDotfocus(value: `59`): Self = StObject.set(x, "DOM.focus", value.asInstanceOf[js.Any])
         
         inline def setDOMDotgetAttributes(value: ReturnTypeGetAttributesResponse): Self = StObject.set(x, "DOM.getAttributes", value.asInstanceOf[js.Any])
         
@@ -4832,33 +4874,33 @@ object typesProtocolMappingMod {
         
         inline def setDOMDotredo(value: ParamsType): Self = StObject.set(x, "DOM.redo", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotremoveAttribute(value: `58`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveAttribute(value: `60`): Self = StObject.set(x, "DOM.removeAttribute", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotremoveNode(value: `59`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotremoveNode(value: `61`): Self = StObject.set(x, "DOM.removeNode", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotrequestChildNodes(value: `60`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
+        inline def setDOMDotrequestChildNodes(value: `62`): Self = StObject.set(x, "DOM.requestChildNodes", value.asInstanceOf[js.Any])
         
         inline def setDOMDotrequestNode(value: ReturnTypeRequestNodeResponse): Self = StObject.set(x, "DOM.requestNode", value.asInstanceOf[js.Any])
         
         inline def setDOMDotresolveNode(value: ReturnTypeResolveNodeResponse): Self = StObject.set(x, "DOM.resolveNode", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotscrollIntoViewIfNeeded(value: `54`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
+        inline def setDOMDotscrollIntoViewIfNeeded(value: `56`): Self = StObject.set(x, "DOM.scrollIntoViewIfNeeded", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetAttributeValue(value: `61`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributeValue(value: `63`): Self = StObject.set(x, "DOM.setAttributeValue", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetAttributesAsText(value: `62`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetAttributesAsText(value: `64`): Self = StObject.set(x, "DOM.setAttributesAsText", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetFileInputFiles(value: `63`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetFileInputFiles(value: `65`): Self = StObject.set(x, "DOM.setFileInputFiles", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetInspectedNode(value: `65`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetInspectedNode(value: `67`): Self = StObject.set(x, "DOM.setInspectedNode", value.asInstanceOf[js.Any])
         
         inline def setDOMDotsetNodeName(value: ReturnTypeSetNodeNameResponse): Self = StObject.set(x, "DOM.setNodeName", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetNodeStackTracesEnabled(value: `64`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeStackTracesEnabled(value: `66`): Self = StObject.set(x, "DOM.setNodeStackTracesEnabled", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetNodeValue(value: `66`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetNodeValue(value: `68`): Self = StObject.set(x, "DOM.setNodeValue", value.asInstanceOf[js.Any])
         
-        inline def setDOMDotsetOuterHTML(value: `67`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
+        inline def setDOMDotsetOuterHTML(value: `69`): Self = StObject.set(x, "DOM.setOuterHTML", value.asInstanceOf[js.Any])
         
         inline def setDOMDotundo(value: ParamsType): Self = StObject.set(x, "DOM.undo", value.asInstanceOf[js.Any])
         
@@ -4870,7 +4912,7 @@ object typesProtocolMappingMod {
         
         inline def setDOMSnapshotDotgetSnapshot(value: ReturnTypeGetSnapshotResponse): Self = StObject.set(x, "DOMSnapshot.getSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotclear(value: `79`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotclear(value: `81`): Self = StObject.set(x, "DOMStorage.clear", value.asInstanceOf[js.Any])
         
         inline def setDOMStorageDotdisable(value: ParamsType): Self = StObject.set(x, "DOMStorage.disable", value.asInstanceOf[js.Any])
         
@@ -4878,9 +4920,9 @@ object typesProtocolMappingMod {
         
         inline def setDOMStorageDotgetDOMStorageItems(value: ReturnTypeGetDOMStorageItemsResponse): Self = StObject.set(x, "DOMStorage.getDOMStorageItems", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotremoveDOMStorageItem(value: `80`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotremoveDOMStorageItem(value: `82`): Self = StObject.set(x, "DOMStorage.removeDOMStorageItem", value.asInstanceOf[js.Any])
         
-        inline def setDOMStorageDotsetDOMStorageItem(value: `81`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
+        inline def setDOMStorageDotsetDOMStorageItem(value: `83`): Self = StObject.set(x, "DOMStorage.setDOMStorageItem", value.asInstanceOf[js.Any])
         
         inline def setDatabaseDotdisable(value: ParamsType): Self = StObject.set(x, "Database.disable", value.asInstanceOf[js.Any])
         
@@ -4954,17 +4996,17 @@ object typesProtocolMappingMod {
         
         inline def setDebuggerDotstepOver(value: `10`): Self = StObject.set(x, "Debugger.stepOver", value.asInstanceOf[js.Any])
         
-        inline def setDeviceAccessDotcancelPrompt(value: `256`): Self = StObject.set(x, "DeviceAccess.cancelPrompt", value.asInstanceOf[js.Any])
+        inline def setDeviceAccessDotcancelPrompt(value: `259`): Self = StObject.set(x, "DeviceAccess.cancelPrompt", value.asInstanceOf[js.Any])
         
         inline def setDeviceAccessDotdisable(value: ParamsType): Self = StObject.set(x, "DeviceAccess.disable", value.asInstanceOf[js.Any])
         
         inline def setDeviceAccessDotenable(value: ParamsType): Self = StObject.set(x, "DeviceAccess.enable", value.asInstanceOf[js.Any])
         
-        inline def setDeviceAccessDotselectPrompt(value: `255`): Self = StObject.set(x, "DeviceAccess.selectPrompt", value.asInstanceOf[js.Any])
+        inline def setDeviceAccessDotselectPrompt(value: `258`): Self = StObject.set(x, "DeviceAccess.selectPrompt", value.asInstanceOf[js.Any])
         
         inline def setDeviceOrientationDotclearDeviceOrientationOverride(value: ParamsType): Self = StObject.set(x, "DeviceOrientation.clearDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        inline def setDeviceOrientationDotsetDeviceOrientationOverride(value: `82`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setDeviceOrientationDotsetDeviceOrientationOverride(value: `84`): Self = StObject.set(x, "DeviceOrientation.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
         inline def setEmulationDotcanEmulate(value: ReturnTypeCanEmulateResponse): Self = StObject.set(x, "Emulation.canEmulate", value.asInstanceOf[js.Any])
         
@@ -4976,81 +5018,81 @@ object typesProtocolMappingMod {
         
         inline def setEmulationDotresetPageScaleFactor(value: ParamsType): Self = StObject.set(x, "Emulation.resetPageScaleFactor", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetAutoDarkModeOverride(value: `84`): Self = StObject.set(x, "Emulation.setAutoDarkModeOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetAutoDarkModeOverride(value: `86`): Self = StObject.set(x, "Emulation.setAutoDarkModeOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetAutomationOverride(value: `105`): Self = StObject.set(x, "Emulation.setAutomationOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetAutomationOverride(value: `107`): Self = StObject.set(x, "Emulation.setAutomationOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetCPUThrottlingRate(value: `85`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetCPUThrottlingRate(value: `87`): Self = StObject.set(x, "Emulation.setCPUThrottlingRate", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDefaultBackgroundColorOverride(value: `86`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDefaultBackgroundColorOverride(value: `88`): Self = StObject.set(x, "Emulation.setDefaultBackgroundColorOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDeviceMetricsOverride(value: `87`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDeviceMetricsOverride(value: `89`): Self = StObject.set(x, "Emulation.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDisabledImageTypes(value: `102`): Self = StObject.set(x, "Emulation.setDisabledImageTypes", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDisabledImageTypes(value: `104`): Self = StObject.set(x, "Emulation.setDisabledImageTypes", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetDocumentCookieDisabled(value: `89`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetDocumentCookieDisabled(value: `91`): Self = StObject.set(x, "Emulation.setDocumentCookieDisabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmitTouchEventsForMouse(value: `90`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmitTouchEventsForMouse(value: `92`): Self = StObject.set(x, "Emulation.setEmitTouchEventsForMouse", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmulatedMedia(value: `91`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedMedia(value: `93`): Self = StObject.set(x, "Emulation.setEmulatedMedia", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetEmulatedVisionDeficiency(value: `92`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetEmulatedVisionDeficiency(value: `94`): Self = StObject.set(x, "Emulation.setEmulatedVisionDeficiency", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetFocusEmulationEnabled(value: `83`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetFocusEmulationEnabled(value: `85`): Self = StObject.set(x, "Emulation.setFocusEmulationEnabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetGeolocationOverride(value: `93`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetGeolocationOverride(value: `95`): Self = StObject.set(x, "Emulation.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetHardwareConcurrencyOverride(value: `103`): Self = StObject.set(x, "Emulation.setHardwareConcurrencyOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetHardwareConcurrencyOverride(value: `105`): Self = StObject.set(x, "Emulation.setHardwareConcurrencyOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetIdleOverride(value: `94`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetIdleOverride(value: `96`): Self = StObject.set(x, "Emulation.setIdleOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetLocaleOverride(value: `99`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetLocaleOverride(value: `101`): Self = StObject.set(x, "Emulation.setLocaleOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetNavigatorOverrides(value: `95`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetNavigatorOverrides(value: `97`): Self = StObject.set(x, "Emulation.setNavigatorOverrides", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetPageScaleFactor(value: `96`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetPageScaleFactor(value: `98`): Self = StObject.set(x, "Emulation.setPageScaleFactor", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetScriptExecutionDisabled(value: `97`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetScriptExecutionDisabled(value: `99`): Self = StObject.set(x, "Emulation.setScriptExecutionDisabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetScrollbarsHidden(value: `88`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetScrollbarsHidden(value: `90`): Self = StObject.set(x, "Emulation.setScrollbarsHidden", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetTimezoneOverride(value: `100`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetTimezoneOverride(value: `102`): Self = StObject.set(x, "Emulation.setTimezoneOverride", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetTouchEmulationEnabled(value: `98`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetTouchEmulationEnabled(value: `100`): Self = StObject.set(x, "Emulation.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetUserAgentOverride(value: `104`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetUserAgentOverride(value: `106`): Self = StObject.set(x, "Emulation.setUserAgentOverride", value.asInstanceOf[js.Any])
         
         inline def setEmulationDotsetVirtualTimePolicy(value: ReturnTypeSetVirtualTimePolicyResponse): Self = StObject.set(x, "Emulation.setVirtualTimePolicy", value.asInstanceOf[js.Any])
         
-        inline def setEmulationDotsetVisibleSize(value: `101`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
+        inline def setEmulationDotsetVisibleSize(value: `103`): Self = StObject.set(x, "Emulation.setVisibleSize", value.asInstanceOf[js.Any])
         
-        inline def setEventBreakpointsDotremoveInstrumentationBreakpoint(value: `78`): Self = StObject.set(x, "EventBreakpoints.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setEventBreakpointsDotremoveInstrumentationBreakpoint(value: `80`): Self = StObject.set(x, "EventBreakpoints.removeInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
-        inline def setEventBreakpointsDotsetInstrumentationBreakpoint(value: `77`): Self = StObject.set(x, "EventBreakpoints.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
+        inline def setEventBreakpointsDotsetInstrumentationBreakpoint(value: `79`): Self = StObject.set(x, "EventBreakpoints.setInstrumentationBreakpoint", value.asInstanceOf[js.Any])
         
         inline def setFedCmDotdisable(value: ParamsType): Self = StObject.set(x, "FedCm.disable", value.asInstanceOf[js.Any])
         
-        inline def setFedCmDotdismissDialog(value: `259`): Self = StObject.set(x, "FedCm.dismissDialog", value.asInstanceOf[js.Any])
+        inline def setFedCmDotdismissDialog(value: `262`): Self = StObject.set(x, "FedCm.dismissDialog", value.asInstanceOf[js.Any])
         
-        inline def setFedCmDotenable(value: `257`): Self = StObject.set(x, "FedCm.enable", value.asInstanceOf[js.Any])
+        inline def setFedCmDotenable(value: `260`): Self = StObject.set(x, "FedCm.enable", value.asInstanceOf[js.Any])
         
         inline def setFedCmDotresetCooldown(value: ParamsType): Self = StObject.set(x, "FedCm.resetCooldown", value.asInstanceOf[js.Any])
         
-        inline def setFedCmDotselectAccount(value: `258`): Self = StObject.set(x, "FedCm.selectAccount", value.asInstanceOf[js.Any])
+        inline def setFedCmDotselectAccount(value: `261`): Self = StObject.set(x, "FedCm.selectAccount", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueRequest(value: `244`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueRequest(value: `247`): Self = StObject.set(x, "Fetch.continueRequest", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueResponse(value: `246`): Self = StObject.set(x, "Fetch.continueResponse", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueResponse(value: `249`): Self = StObject.set(x, "Fetch.continueResponse", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotcontinueWithAuth(value: `245`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
+        inline def setFetchDotcontinueWithAuth(value: `248`): Self = StObject.set(x, "Fetch.continueWithAuth", value.asInstanceOf[js.Any])
         
         inline def setFetchDotdisable(value: ParamsType): Self = StObject.set(x, "Fetch.disable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotenable(value: `241`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
+        inline def setFetchDotenable(value: `244`): Self = StObject.set(x, "Fetch.enable", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfailRequest(value: `242`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfailRequest(value: `245`): Self = StObject.set(x, "Fetch.failRequest", value.asInstanceOf[js.Any])
         
-        inline def setFetchDotfulfillRequest(value: `243`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
+        inline def setFetchDotfulfillRequest(value: `246`): Self = StObject.set(x, "Fetch.fulfillRequest", value.asInstanceOf[js.Any])
         
         inline def setFetchDotgetResponseBody(value: ParamsTypeReturnTypeGetResponseBodyResponse): Self = StObject.set(x, "Fetch.getResponseBody", value.asInstanceOf[js.Any])
         
@@ -5086,17 +5128,17 @@ object typesProtocolMappingMod {
         
         inline def setHeapProfilerDottakeHeapSnapshot(value: `15`): Self = StObject.set(x, "HeapProfiler.takeHeapSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setIODotclose(value: `106`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
+        inline def setIODotclose(value: `108`): Self = StObject.set(x, "IO.close", value.asInstanceOf[js.Any])
         
         inline def setIODotread(value: ReturnTypeReadResponse): Self = StObject.set(x, "IO.read", value.asInstanceOf[js.Any])
         
         inline def setIODotresolveBlob(value: ReturnTypeResolveBlobResponse): Self = StObject.set(x, "IO.resolveBlob", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotclearObjectStore(value: `107`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotclearObjectStore(value: `109`): Self = StObject.set(x, "IndexedDB.clearObjectStore", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotdeleteDatabase(value: `108`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteDatabase(value: `110`): Self = StObject.set(x, "IndexedDB.deleteDatabase", value.asInstanceOf[js.Any])
         
-        inline def setIndexedDBDotdeleteObjectStoreEntries(value: `109`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
+        inline def setIndexedDBDotdeleteObjectStoreEntries(value: `111`): Self = StObject.set(x, "IndexedDB.deleteObjectStoreEntries", value.asInstanceOf[js.Any])
         
         inline def setIndexedDBDotdisable(value: ParamsType): Self = StObject.set(x, "IndexedDB.disable", value.asInstanceOf[js.Any])
         
@@ -5110,29 +5152,29 @@ object typesProtocolMappingMod {
         
         inline def setIndexedDBDotrequestDatabaseNames(value: ReturnTypeRequestDatabaseNamesResponse): Self = StObject.set(x, "IndexedDB.requestDatabaseNames", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchDragEvent(value: `110`): Self = StObject.set(x, "Input.dispatchDragEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchDragEvent(value: `112`): Self = StObject.set(x, "Input.dispatchDragEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchKeyEvent(value: `111`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchKeyEvent(value: `113`): Self = StObject.set(x, "Input.dispatchKeyEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchMouseEvent(value: `114`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchMouseEvent(value: `116`): Self = StObject.set(x, "Input.dispatchMouseEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotdispatchTouchEvent(value: `115`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotdispatchTouchEvent(value: `117`): Self = StObject.set(x, "Input.dispatchTouchEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotemulateTouchFromMouseEvent(value: `116`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
+        inline def setInputDotemulateTouchFromMouseEvent(value: `118`): Self = StObject.set(x, "Input.emulateTouchFromMouseEvent", value.asInstanceOf[js.Any])
         
-        inline def setInputDotimeSetComposition(value: `113`): Self = StObject.set(x, "Input.imeSetComposition", value.asInstanceOf[js.Any])
+        inline def setInputDotimeSetComposition(value: `115`): Self = StObject.set(x, "Input.imeSetComposition", value.asInstanceOf[js.Any])
         
-        inline def setInputDotinsertText(value: `112`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
+        inline def setInputDotinsertText(value: `114`): Self = StObject.set(x, "Input.insertText", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsetIgnoreInputEvents(value: `117`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
+        inline def setInputDotsetIgnoreInputEvents(value: `119`): Self = StObject.set(x, "Input.setIgnoreInputEvents", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsetInterceptDrags(value: `118`): Self = StObject.set(x, "Input.setInterceptDrags", value.asInstanceOf[js.Any])
+        inline def setInputDotsetInterceptDrags(value: `120`): Self = StObject.set(x, "Input.setInterceptDrags", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizePinchGesture(value: `119`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizePinchGesture(value: `121`): Self = StObject.set(x, "Input.synthesizePinchGesture", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizeScrollGesture(value: `120`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizeScrollGesture(value: `122`): Self = StObject.set(x, "Input.synthesizeScrollGesture", value.asInstanceOf[js.Any])
         
-        inline def setInputDotsynthesizeTapGesture(value: `121`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
+        inline def setInputDotsynthesizeTapGesture(value: `123`): Self = StObject.set(x, "Input.synthesizeTapGesture", value.asInstanceOf[js.Any])
         
         inline def setInspectorDotdisable(value: ParamsType): Self = StObject.set(x, "Inspector.disable", value.asInstanceOf[js.Any])
         
@@ -5150,7 +5192,7 @@ object typesProtocolMappingMod {
         
         inline def setLayerTreeDotprofileSnapshot(value: ReturnTypeProfileSnapshotResponse): Self = StObject.set(x, "LayerTree.profileSnapshot", value.asInstanceOf[js.Any])
         
-        inline def setLayerTreeDotreleaseSnapshot(value: `122`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
+        inline def setLayerTreeDotreleaseSnapshot(value: `124`): Self = StObject.set(x, "LayerTree.releaseSnapshot", value.asInstanceOf[js.Any])
         
         inline def setLayerTreeDotreplaySnapshot(value: ReturnTypeReplaySnapshotResponse): Self = StObject.set(x, "LayerTree.replaySnapshot", value.asInstanceOf[js.Any])
         
@@ -5162,7 +5204,7 @@ object typesProtocolMappingMod {
         
         inline def setLogDotenable(value: ParamsType): Self = StObject.set(x, "Log.enable", value.asInstanceOf[js.Any])
         
-        inline def setLogDotstartViolationsReport(value: `123`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
+        inline def setLogDotstartViolationsReport(value: `125`): Self = StObject.set(x, "Log.startViolationsReport", value.asInstanceOf[js.Any])
         
         inline def setLogDotstopViolationsReport(value: ParamsType): Self = StObject.set(x, "Log.stopViolationsReport", value.asInstanceOf[js.Any])
         
@@ -5182,11 +5224,11 @@ object typesProtocolMappingMod {
         
         inline def setMemoryDotprepareForLeakDetection(value: ParamsType): Self = StObject.set(x, "Memory.prepareForLeakDetection", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotsetPressureNotificationsSuppressed(value: `124`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsetPressureNotificationsSuppressed(value: `126`): Self = StObject.set(x, "Memory.setPressureNotificationsSuppressed", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotsimulatePressureNotification(value: `125`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
+        inline def setMemoryDotsimulatePressureNotification(value: `127`): Self = StObject.set(x, "Memory.simulatePressureNotification", value.asInstanceOf[js.Any])
         
-        inline def setMemoryDotstartSampling(value: `126`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
+        inline def setMemoryDotstartSampling(value: `128`): Self = StObject.set(x, "Memory.startSampling", value.asInstanceOf[js.Any])
         
         inline def setMemoryDotstopSampling(value: ParamsType): Self = StObject.set(x, "Memory.stopSampling", value.asInstanceOf[js.Any])
         
@@ -5202,17 +5244,17 @@ object typesProtocolMappingMod {
         
         inline def setNetworkDotclearBrowserCookies(value: ParamsType): Self = StObject.set(x, "Network.clearBrowserCookies", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotcontinueInterceptedRequest(value: `128`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
+        inline def setNetworkDotcontinueInterceptedRequest(value: `130`): Self = StObject.set(x, "Network.continueInterceptedRequest", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotdeleteCookies(value: `129`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotdeleteCookies(value: `131`): Self = StObject.set(x, "Network.deleteCookies", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotdisable(value: ParamsType): Self = StObject.set(x, "Network.disable", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotemulateNetworkConditions(value: `130`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
+        inline def setNetworkDotemulateNetworkConditions(value: `132`): Self = StObject.set(x, "Network.emulateNetworkConditions", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotenable(value: `131`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
+        inline def setNetworkDotenable(value: `133`): Self = StObject.set(x, "Network.enable", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotenableReportingApi(value: `141`): Self = StObject.set(x, "Network.enableReportingApi", value.asInstanceOf[js.Any])
+        inline def setNetworkDotenableReportingApi(value: `143`): Self = StObject.set(x, "Network.enableReportingApi", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotgetAllCookies(value: ReturnTypeGetAllCookiesResponse): Self = StObject.set(x, "Network.getAllCookies", value.asInstanceOf[js.Any])
         
@@ -5230,29 +5272,29 @@ object typesProtocolMappingMod {
         
         inline def setNetworkDotloadNetworkResource(value: ReturnTypeLoadNetworkResourceResponse): Self = StObject.set(x, "Network.loadNetworkResource", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotreplayXHR(value: `132`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
+        inline def setNetworkDotreplayXHR(value: `134`): Self = StObject.set(x, "Network.replayXHR", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotsearchInResponseBody(value: ReturnTypeSearchInResponseBodyResponse): Self = StObject.set(x, "Network.searchInResponseBody", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetAcceptedEncodings(value: `127`): Self = StObject.set(x, "Network.setAcceptedEncodings", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetAcceptedEncodings(value: `129`): Self = StObject.set(x, "Network.setAcceptedEncodings", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetAttachDebugStack(value: `138`): Self = StObject.set(x, "Network.setAttachDebugStack", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetAttachDebugStack(value: `140`): Self = StObject.set(x, "Network.setAttachDebugStack", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetBlockedURLs(value: `133`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBlockedURLs(value: `135`): Self = StObject.set(x, "Network.setBlockedURLs", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetBypassServiceWorker(value: `134`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetBypassServiceWorker(value: `136`): Self = StObject.set(x, "Network.setBypassServiceWorker", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetCacheDisabled(value: `135`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCacheDisabled(value: `137`): Self = StObject.set(x, "Network.setCacheDisabled", value.asInstanceOf[js.Any])
         
         inline def setNetworkDotsetCookie(value: ReturnTypeSetCookieResponse): Self = StObject.set(x, "Network.setCookie", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetCookies(value: `136`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetCookies(value: `138`): Self = StObject.set(x, "Network.setCookies", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetExtraHTTPHeaders(value: `137`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetExtraHTTPHeaders(value: `139`): Self = StObject.set(x, "Network.setExtraHTTPHeaders", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetRequestInterception(value: `139`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetRequestInterception(value: `141`): Self = StObject.set(x, "Network.setRequestInterception", value.asInstanceOf[js.Any])
         
-        inline def setNetworkDotsetUserAgentOverride(value: `140`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
+        inline def setNetworkDotsetUserAgentOverride(value: `142`): Self = StObject.set(x, "Network.setUserAgentOverride", value.asInstanceOf[js.Any])
         
         inline def setNetworkDottakeResponseBodyForInterceptionAsStream(value: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "Network.takeResponseBodyForInterceptionAsStream", value.asInstanceOf[js.Any])
         
@@ -5268,51 +5310,51 @@ object typesProtocolMappingMod {
         
         inline def setOverlayDothideHighlight(value: ParamsType): Self = StObject.set(x, "Overlay.hideHighlight", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightFrame(value: `142`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightFrame(value: `144`): Self = StObject.set(x, "Overlay.highlightFrame", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightNode(value: `143`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightNode(value: `145`): Self = StObject.set(x, "Overlay.highlightNode", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightQuad(value: `144`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightQuad(value: `146`): Self = StObject.set(x, "Overlay.highlightQuad", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightRect(value: `145`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightRect(value: `147`): Self = StObject.set(x, "Overlay.highlightRect", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDothighlightSourceOrder(value: `146`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
+        inline def setOverlayDothighlightSourceOrder(value: `148`): Self = StObject.set(x, "Overlay.highlightSourceOrder", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetInspectMode(value: `147`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetInspectMode(value: `149`): Self = StObject.set(x, "Overlay.setInspectMode", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetPausedInDebuggerMessage(value: `149`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetPausedInDebuggerMessage(value: `151`): Self = StObject.set(x, "Overlay.setPausedInDebuggerMessage", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowAdHighlights(value: `148`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowAdHighlights(value: `150`): Self = StObject.set(x, "Overlay.setShowAdHighlights", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowContainerQueryOverlays(value: `155`): Self = StObject.set(x, "Overlay.setShowContainerQueryOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowContainerQueryOverlays(value: `157`): Self = StObject.set(x, "Overlay.setShowContainerQueryOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowDebugBorders(value: `150`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowDebugBorders(value: `152`): Self = StObject.set(x, "Overlay.setShowDebugBorders", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowFPSCounter(value: `151`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowFPSCounter(value: `153`): Self = StObject.set(x, "Overlay.setShowFPSCounter", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowFlexOverlays(value: `153`): Self = StObject.set(x, "Overlay.setShowFlexOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowFlexOverlays(value: `155`): Self = StObject.set(x, "Overlay.setShowFlexOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowGridOverlays(value: `152`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowGridOverlays(value: `154`): Self = StObject.set(x, "Overlay.setShowGridOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowHinge(value: `162`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHinge(value: `164`): Self = StObject.set(x, "Overlay.setShowHinge", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowHitTestBorders(value: `159`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowHitTestBorders(value: `161`): Self = StObject.set(x, "Overlay.setShowHitTestBorders", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowIsolatedElements(value: `163`): Self = StObject.set(x, "Overlay.setShowIsolatedElements", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowIsolatedElements(value: `165`): Self = StObject.set(x, "Overlay.setShowIsolatedElements", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowLayoutShiftRegions(value: `157`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowLayoutShiftRegions(value: `159`): Self = StObject.set(x, "Overlay.setShowLayoutShiftRegions", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowPaintRects(value: `156`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowPaintRects(value: `158`): Self = StObject.set(x, "Overlay.setShowPaintRects", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowScrollBottleneckRects(value: `158`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowScrollBottleneckRects(value: `160`): Self = StObject.set(x, "Overlay.setShowScrollBottleneckRects", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowScrollSnapOverlays(value: `154`): Self = StObject.set(x, "Overlay.setShowScrollSnapOverlays", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowScrollSnapOverlays(value: `156`): Self = StObject.set(x, "Overlay.setShowScrollSnapOverlays", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowViewportSizeOnResize(value: `161`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowViewportSizeOnResize(value: `163`): Self = StObject.set(x, "Overlay.setShowViewportSizeOnResize", value.asInstanceOf[js.Any])
         
-        inline def setOverlayDotsetShowWebVitals(value: `160`): Self = StObject.set(x, "Overlay.setShowWebVitals", value.asInstanceOf[js.Any])
+        inline def setOverlayDotsetShowWebVitals(value: `162`): Self = StObject.set(x, "Overlay.setShowWebVitals", value.asInstanceOf[js.Any])
         
-        inline def setPageDotaddCompilationCache(value: `185`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotaddCompilationCache(value: `187`): Self = StObject.set(x, "Page.addCompilationCache", value.asInstanceOf[js.Any])
         
         inline def setPageDotaddScriptToEvaluateOnLoad(value: ReturnTypeAddScriptToEvaluateOnLoadResponse): Self = StObject.set(x, "Page.addScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
         
@@ -5338,13 +5380,13 @@ object typesProtocolMappingMod {
         
         inline def setPageDotcreateIsolatedWorld(value: ReturnTypeCreateIsolatedWorldResponse): Self = StObject.set(x, "Page.createIsolatedWorld", value.asInstanceOf[js.Any])
         
-        inline def setPageDotdeleteCookie(value: `164`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
+        inline def setPageDotdeleteCookie(value: `166`): Self = StObject.set(x, "Page.deleteCookie", value.asInstanceOf[js.Any])
         
         inline def setPageDotdisable(value: ParamsType): Self = StObject.set(x, "Page.disable", value.asInstanceOf[js.Any])
         
         inline def setPageDotenable(value: ParamsType): Self = StObject.set(x, "Page.enable", value.asInstanceOf[js.Any])
         
-        inline def setPageDotgenerateTestReport(value: `188`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
+        inline def setPageDotgenerateTestReport(value: `190`): Self = StObject.set(x, "Page.generateTestReport", value.asInstanceOf[js.Any])
         
         inline def setPageDotgetAdScriptId(value: ReturnTypeGetAdScriptIdResponse): Self = StObject.set(x, "Page.getAdScriptId", value.asInstanceOf[js.Any])
         
@@ -5372,59 +5414,61 @@ object typesProtocolMappingMod {
         
         inline def setPageDotgetResourceTree(value: ReturnTypeGetResourceTreeResponse): Self = StObject.set(x, "Page.getResourceTree", value.asInstanceOf[js.Any])
         
-        inline def setPageDothandleJavaScriptDialog(value: `165`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
+        inline def setPageDothandleJavaScriptDialog(value: `167`): Self = StObject.set(x, "Page.handleJavaScriptDialog", value.asInstanceOf[js.Any])
         
         inline def setPageDotnavigate(value: ReturnTypeNavigateResponse): Self = StObject.set(x, "Page.navigate", value.asInstanceOf[js.Any])
         
-        inline def setPageDotnavigateToHistoryEntry(value: `166`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
+        inline def setPageDotnavigateToHistoryEntry(value: `168`): Self = StObject.set(x, "Page.navigateToHistoryEntry", value.asInstanceOf[js.Any])
         
         inline def setPageDotprintToPDF(value: ReturnTypePrintToPDFResponse): Self = StObject.set(x, "Page.printToPDF", value.asInstanceOf[js.Any])
         
-        inline def setPageDotproduceCompilationCache(value: `184`): Self = StObject.set(x, "Page.produceCompilationCache", value.asInstanceOf[js.Any])
+        inline def setPageDotproduceCompilationCache(value: `186`): Self = StObject.set(x, "Page.produceCompilationCache", value.asInstanceOf[js.Any])
         
-        inline def setPageDotreload(value: `167`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
+        inline def setPageDotreload(value: `169`): Self = StObject.set(x, "Page.reload", value.asInstanceOf[js.Any])
         
-        inline def setPageDotremoveScriptToEvaluateOnLoad(value: `168`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+        inline def setPageDotremoveScriptToEvaluateOnLoad(value: `170`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
         
-        inline def setPageDotremoveScriptToEvaluateOnNewDocument(value: `169`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
+        inline def setPageDotremoveScriptToEvaluateOnNewDocument(value: `171`): Self = StObject.set(x, "Page.removeScriptToEvaluateOnNewDocument", value.asInstanceOf[js.Any])
         
         inline def setPageDotresetNavigationHistory(value: ParamsType): Self = StObject.set(x, "Page.resetNavigationHistory", value.asInstanceOf[js.Any])
         
-        inline def setPageDotscreencastFrameAck(value: `170`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
+        inline def setPageDotscreencastFrameAck(value: `172`): Self = StObject.set(x, "Page.screencastFrameAck", value.asInstanceOf[js.Any])
         
         inline def setPageDotsearchInResource(value: ReturnTypeSearchInResourceResponse): Self = StObject.set(x, "Page.searchInResource", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetAdBlockingEnabled(value: `171`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetAdBlockingEnabled(value: `173`): Self = StObject.set(x, "Page.setAdBlockingEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetBypassCSP(value: `172`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
+        inline def setPageDotsetBypassCSP(value: `174`): Self = StObject.set(x, "Page.setBypassCSP", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDeviceMetricsOverride(value: `173`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceMetricsOverride(value: `175`): Self = StObject.set(x, "Page.setDeviceMetricsOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDeviceOrientationOverride(value: `174`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDeviceOrientationOverride(value: `176`): Self = StObject.set(x, "Page.setDeviceOrientationOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDocumentContent(value: `177`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDocumentContent(value: `179`): Self = StObject.set(x, "Page.setDocumentContent", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetDownloadBehavior(value: `178`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
+        inline def setPageDotsetDownloadBehavior(value: `180`): Self = StObject.set(x, "Page.setDownloadBehavior", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetFontFamilies(value: `175`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontFamilies(value: `177`): Self = StObject.set(x, "Page.setFontFamilies", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetFontSizes(value: `176`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
+        inline def setPageDotsetFontSizes(value: `178`): Self = StObject.set(x, "Page.setFontSizes", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetGeolocationOverride(value: `179`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
+        inline def setPageDotsetGeolocationOverride(value: `181`): Self = StObject.set(x, "Page.setGeolocationOverride", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetInterceptFileChooserDialog(value: `189`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
+        inline def setPageDotsetInterceptFileChooserDialog(value: `191`): Self = StObject.set(x, "Page.setInterceptFileChooserDialog", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetLifecycleEventsEnabled(value: `180`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetLifecycleEventsEnabled(value: `182`): Self = StObject.set(x, "Page.setLifecycleEventsEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetRPHRegistrationMode(value: `187`): Self = StObject.set(x, "Page.setRPHRegistrationMode", value.asInstanceOf[js.Any])
+        inline def setPageDotsetPrerenderingAllowed(value: `192`): Self = StObject.set(x, "Page.setPrerenderingAllowed", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetSPCTransactionMode(value: `186`): Self = StObject.set(x, "Page.setSPCTransactionMode", value.asInstanceOf[js.Any])
+        inline def setPageDotsetRPHRegistrationMode(value: `189`): Self = StObject.set(x, "Page.setRPHRegistrationMode", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetTouchEmulationEnabled(value: `181`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
+        inline def setPageDotsetSPCTransactionMode(value: `188`): Self = StObject.set(x, "Page.setSPCTransactionMode", value.asInstanceOf[js.Any])
         
-        inline def setPageDotsetWebLifecycleState(value: `183`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
+        inline def setPageDotsetTouchEmulationEnabled(value: `183`): Self = StObject.set(x, "Page.setTouchEmulationEnabled", value.asInstanceOf[js.Any])
         
-        inline def setPageDotstartScreencast(value: `182`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
+        inline def setPageDotsetWebLifecycleState(value: `185`): Self = StObject.set(x, "Page.setWebLifecycleState", value.asInstanceOf[js.Any])
+        
+        inline def setPageDotstartScreencast(value: `184`): Self = StObject.set(x, "Page.startScreencast", value.asInstanceOf[js.Any])
         
         inline def setPageDotstopLoading(value: ParamsType): Self = StObject.set(x, "Page.stopLoading", value.asInstanceOf[js.Any])
         
@@ -5434,13 +5478,13 @@ object typesProtocolMappingMod {
         
         inline def setPerformanceDotdisable(value: ParamsType): Self = StObject.set(x, "Performance.disable", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceDotenable(value: `190`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotenable(value: `193`): Self = StObject.set(x, "Performance.enable", value.asInstanceOf[js.Any])
         
         inline def setPerformanceDotgetMetrics(value: ReturnTypeGetMetricsResponse): Self = StObject.set(x, "Performance.getMetrics", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceDotsetTimeDomain(value: `191`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
+        inline def setPerformanceDotsetTimeDomain(value: `194`): Self = StObject.set(x, "Performance.setTimeDomain", value.asInstanceOf[js.Any])
         
-        inline def setPerformanceTimelineDotenable(value: `192`): Self = StObject.set(x, "PerformanceTimeline.enable", value.asInstanceOf[js.Any])
+        inline def setPerformanceTimelineDotenable(value: `195`): Self = StObject.set(x, "PerformanceTimeline.enable", value.asInstanceOf[js.Any])
         
         inline def setPreloadDotdisable(value: ParamsType): Self = StObject.set(x, "Preload.disable", value.asInstanceOf[js.Any])
         
@@ -5516,53 +5560,53 @@ object typesProtocolMappingMod {
         
         inline def setSecurityDotenable(value: ParamsType): Self = StObject.set(x, "Security.enable", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDothandleCertificateError(value: `194`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
+        inline def setSecurityDothandleCertificateError(value: `197`): Self = StObject.set(x, "Security.handleCertificateError", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotsetIgnoreCertificateErrors(value: `193`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetIgnoreCertificateErrors(value: `196`): Self = StObject.set(x, "Security.setIgnoreCertificateErrors", value.asInstanceOf[js.Any])
         
-        inline def setSecurityDotsetOverrideCertificateErrors(value: `195`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
+        inline def setSecurityDotsetOverrideCertificateErrors(value: `198`): Self = StObject.set(x, "Security.setOverrideCertificateErrors", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdeliverPushMessage(value: `196`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdeliverPushMessage(value: `199`): Self = StObject.set(x, "ServiceWorker.deliverPushMessage", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotdisable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.disable", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `198`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchPeriodicSyncEvent(value: `201`): Self = StObject.set(x, "ServiceWorker.dispatchPeriodicSyncEvent", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotdispatchSyncEvent(value: `197`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotdispatchSyncEvent(value: `200`): Self = StObject.set(x, "ServiceWorker.dispatchSyncEvent", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotenable(value: ParamsType): Self = StObject.set(x, "ServiceWorker.enable", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotinspectWorker(value: `199`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotinspectWorker(value: `202`): Self = StObject.set(x, "ServiceWorker.inspectWorker", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `200`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotsetForceUpdateOnPageLoad(value: `203`): Self = StObject.set(x, "ServiceWorker.setForceUpdateOnPageLoad", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotskipWaiting(value: `201`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotskipWaiting(value: `204`): Self = StObject.set(x, "ServiceWorker.skipWaiting", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotstartWorker(value: `202`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstartWorker(value: `205`): Self = StObject.set(x, "ServiceWorker.startWorker", value.asInstanceOf[js.Any])
         
         inline def setServiceWorkerDotstopAllWorkers(value: ParamsType): Self = StObject.set(x, "ServiceWorker.stopAllWorkers", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotstopWorker(value: `203`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotstopWorker(value: `206`): Self = StObject.set(x, "ServiceWorker.stopWorker", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotunregister(value: `204`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotunregister(value: `207`): Self = StObject.set(x, "ServiceWorker.unregister", value.asInstanceOf[js.Any])
         
-        inline def setServiceWorkerDotupdateRegistration(value: `205`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
+        inline def setServiceWorkerDotupdateRegistration(value: `208`): Self = StObject.set(x, "ServiceWorker.updateRegistration", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearCookies(value: `210`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearCookies(value: `213`): Self = StObject.set(x, "Storage.clearCookies", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearDataForOrigin(value: `206`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearDataForOrigin(value: `209`): Self = StObject.set(x, "Storage.clearDataForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearDataForStorageKey(value: `207`): Self = StObject.set(x, "Storage.clearDataForStorageKey", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearDataForStorageKey(value: `210`): Self = StObject.set(x, "Storage.clearDataForStorageKey", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotclearSharedStorageEntries(value: `223`): Self = StObject.set(x, "Storage.clearSharedStorageEntries", value.asInstanceOf[js.Any])
+        inline def setStorageDotclearSharedStorageEntries(value: `226`): Self = StObject.set(x, "Storage.clearSharedStorageEntries", value.asInstanceOf[js.Any])
         
         inline def setStorageDotclearTrustTokens(value: ReturnTypeClearTrustTokensResponse): Self = StObject.set(x, "Storage.clearTrustTokens", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotdeleteSharedStorageEntry(value: `222`): Self = StObject.set(x, "Storage.deleteSharedStorageEntry", value.asInstanceOf[js.Any])
+        inline def setStorageDotdeleteSharedStorageEntry(value: `225`): Self = StObject.set(x, "Storage.deleteSharedStorageEntry", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotdeleteStorageBucket(value: `227`): Self = StObject.set(x, "Storage.deleteStorageBucket", value.asInstanceOf[js.Any])
+        inline def setStorageDotdeleteStorageBucket(value: `230`): Self = StObject.set(x, "Storage.deleteStorageBucket", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotgetCookies(value: `208`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotgetCookies(value: `211`): Self = StObject.set(x, "Storage.getCookies", value.asInstanceOf[js.Any])
         
         inline def setStorageDotgetInterestGroupDetails(value: ReturnTypeGetInterestGroupDetailsResponse): Self = StObject.set(x, "Storage.getInterestGroupDetails", value.asInstanceOf[js.Any])
         
@@ -5576,37 +5620,37 @@ object typesProtocolMappingMod {
         
         inline def setStorageDotgetUsageAndQuota(value: ReturnTypeGetUsageAndQuotaResponse): Self = StObject.set(x, "Storage.getUsageAndQuota", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotoverrideQuotaForOrigin(value: `211`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotoverrideQuotaForOrigin(value: `214`): Self = StObject.set(x, "Storage.overrideQuotaForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotresetSharedStorageBudget(value: `224`): Self = StObject.set(x, "Storage.resetSharedStorageBudget", value.asInstanceOf[js.Any])
+        inline def setStorageDotresetSharedStorageBudget(value: `227`): Self = StObject.set(x, "Storage.resetSharedStorageBudget", value.asInstanceOf[js.Any])
         
         inline def setStorageDotrunBounceTrackingMitigations(value: ReturnTypeRunBounceTrackingMitigationsResponse): Self = StObject.set(x, "Storage.runBounceTrackingMitigations", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetCookies(value: `209`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetCookies(value: `212`): Self = StObject.set(x, "Storage.setCookies", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetInterestGroupTracking(value: `220`): Self = StObject.set(x, "Storage.setInterestGroupTracking", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetInterestGroupTracking(value: `223`): Self = StObject.set(x, "Storage.setInterestGroupTracking", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetSharedStorageEntry(value: `221`): Self = StObject.set(x, "Storage.setSharedStorageEntry", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetSharedStorageEntry(value: `224`): Self = StObject.set(x, "Storage.setSharedStorageEntry", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetSharedStorageTracking(value: `225`): Self = StObject.set(x, "Storage.setSharedStorageTracking", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetSharedStorageTracking(value: `228`): Self = StObject.set(x, "Storage.setSharedStorageTracking", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotsetStorageBucketTracking(value: `226`): Self = StObject.set(x, "Storage.setStorageBucketTracking", value.asInstanceOf[js.Any])
+        inline def setStorageDotsetStorageBucketTracking(value: `229`): Self = StObject.set(x, "Storage.setStorageBucketTracking", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackCacheStorageForOrigin(value: `212`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackCacheStorageForOrigin(value: `215`): Self = StObject.set(x, "Storage.trackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackCacheStorageForStorageKey(value: `213`): Self = StObject.set(x, "Storage.trackCacheStorageForStorageKey", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackCacheStorageForStorageKey(value: `216`): Self = StObject.set(x, "Storage.trackCacheStorageForStorageKey", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackIndexedDBForOrigin(value: `214`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackIndexedDBForOrigin(value: `217`): Self = StObject.set(x, "Storage.trackIndexedDBForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDottrackIndexedDBForStorageKey(value: `215`): Self = StObject.set(x, "Storage.trackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
+        inline def setStorageDottrackIndexedDBForStorageKey(value: `218`): Self = StObject.set(x, "Storage.trackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackCacheStorageForOrigin(value: `216`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackCacheStorageForOrigin(value: `219`): Self = StObject.set(x, "Storage.untrackCacheStorageForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackCacheStorageForStorageKey(value: `217`): Self = StObject.set(x, "Storage.untrackCacheStorageForStorageKey", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackCacheStorageForStorageKey(value: `220`): Self = StObject.set(x, "Storage.untrackCacheStorageForStorageKey", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackIndexedDBForOrigin(value: `218`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackIndexedDBForOrigin(value: `221`): Self = StObject.set(x, "Storage.untrackIndexedDBForOrigin", value.asInstanceOf[js.Any])
         
-        inline def setStorageDotuntrackIndexedDBForStorageKey(value: `219`): Self = StObject.set(x, "Storage.untrackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
+        inline def setStorageDotuntrackIndexedDBForStorageKey(value: `222`): Self = StObject.set(x, "Storage.untrackIndexedDBForStorageKey", value.asInstanceOf[js.Any])
         
         inline def setSystemInfoDotgetFeatureState(value: ReturnTypeGetFeatureStateResponse): Self = StObject.set(x, "SystemInfo.getFeatureState", value.asInstanceOf[js.Any])
         
@@ -5614,13 +5658,13 @@ object typesProtocolMappingMod {
         
         inline def setSystemInfoDotgetProcessInfo(value: ReturnTypeGetProcessInfoResponse): Self = StObject.set(x, "SystemInfo.getProcessInfo", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotactivateTarget(value: `228`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotactivateTarget(value: `231`): Self = StObject.set(x, "Target.activateTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToBrowserTarget(value: ReturnTypeAttachToBrowserTargetResponse): Self = StObject.set(x, "Target.attachToBrowserTarget", value.asInstanceOf[js.Any])
         
         inline def setTargetDotattachToTarget(value: ReturnTypeAttachToTargetResponse): Self = StObject.set(x, "Target.attachToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotautoAttachRelated(value: `234`): Self = StObject.set(x, "Target.autoAttachRelated", value.asInstanceOf[js.Any])
+        inline def setTargetDotautoAttachRelated(value: `237`): Self = StObject.set(x, "Target.autoAttachRelated", value.asInstanceOf[js.Any])
         
         inline def setTargetDotcloseTarget(value: ReturnTypeCloseTargetResponse): Self = StObject.set(x, "Target.closeTarget", value.asInstanceOf[js.Any])
         
@@ -5628,11 +5672,11 @@ object typesProtocolMappingMod {
         
         inline def setTargetDotcreateTarget(value: ReturnTypeCreateTargetResponse): Self = StObject.set(x, "Target.createTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdetachFromTarget(value: `230`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotdetachFromTarget(value: `233`): Self = StObject.set(x, "Target.detachFromTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotdisposeBrowserContext(value: `231`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
+        inline def setTargetDotdisposeBrowserContext(value: `234`): Self = StObject.set(x, "Target.disposeBrowserContext", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotexposeDevToolsProtocol(value: `229`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
+        inline def setTargetDotexposeDevToolsProtocol(value: `232`): Self = StObject.set(x, "Target.exposeDevToolsProtocol", value.asInstanceOf[js.Any])
         
         inline def setTargetDotgetBrowserContexts(value: ReturnTypeGetBrowserContextsResponse): Self = StObject.set(x, "Target.getBrowserContexts", value.asInstanceOf[js.Any])
         
@@ -5640,27 +5684,27 @@ object typesProtocolMappingMod {
         
         inline def setTargetDotgetTargets(value: ReturnTypeGetTargetsResponse): Self = StObject.set(x, "Target.getTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsendMessageToTarget(value: `232`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
+        inline def setTargetDotsendMessageToTarget(value: `235`): Self = StObject.set(x, "Target.sendMessageToTarget", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetAutoAttach(value: `233`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetAutoAttach(value: `236`): Self = StObject.set(x, "Target.setAutoAttach", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetDiscoverTargets(value: `235`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetDiscoverTargets(value: `238`): Self = StObject.set(x, "Target.setDiscoverTargets", value.asInstanceOf[js.Any])
         
-        inline def setTargetDotsetRemoteLocations(value: `236`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
+        inline def setTargetDotsetRemoteLocations(value: `239`): Self = StObject.set(x, "Target.setRemoteLocations", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotbind(value: `237`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotbind(value: `240`): Self = StObject.set(x, "Tethering.bind", value.asInstanceOf[js.Any])
         
-        inline def setTetheringDotunbind(value: `238`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
+        inline def setTetheringDotunbind(value: `241`): Self = StObject.set(x, "Tethering.unbind", value.asInstanceOf[js.Any])
         
         inline def setTracingDotend(value: ParamsType): Self = StObject.set(x, "Tracing.end", value.asInstanceOf[js.Any])
         
         inline def setTracingDotgetCategories(value: ReturnTypeGetCategoriesResponse): Self = StObject.set(x, "Tracing.getCategories", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotrecordClockSyncMarker(value: `239`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
+        inline def setTracingDotrecordClockSyncMarker(value: `242`): Self = StObject.set(x, "Tracing.recordClockSyncMarker", value.asInstanceOf[js.Any])
         
         inline def setTracingDotrequestMemoryDump(value: ReturnTypeRequestMemoryDumpResponse): Self = StObject.set(x, "Tracing.requestMemoryDump", value.asInstanceOf[js.Any])
         
-        inline def setTracingDotstart(value: `240`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
+        inline def setTracingDotstart(value: `243`): Self = StObject.set(x, "Tracing.start", value.asInstanceOf[js.Any])
         
         inline def setWebAudioDotdisable(value: ParamsType): Self = StObject.set(x, "WebAudio.disable", value.asInstanceOf[js.Any])
         
@@ -5668,29 +5712,29 @@ object typesProtocolMappingMod {
         
         inline def setWebAudioDotgetRealtimeData(value: ReturnTypeGetRealtimeDataResponse): Self = StObject.set(x, "WebAudio.getRealtimeData", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotaddCredential(value: `250`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotaddCredential(value: `253`): Self = StObject.set(x, "WebAuthn.addCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotaddVirtualAuthenticator(value: ReturnTypeAddVirtualAuthenticatorResponse): Self = StObject.set(x, "WebAuthn.addVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotclearCredentials(value: `252`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotclearCredentials(value: `255`): Self = StObject.set(x, "WebAuthn.clearCredentials", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotdisable(value: ParamsType): Self = StObject.set(x, "WebAuthn.disable", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotenable(value: `247`): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotenable(value: `250`): Self = StObject.set(x, "WebAuthn.enable", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredential(value: ReturnTypeGetCredentialResponse): Self = StObject.set(x, "WebAuthn.getCredential", value.asInstanceOf[js.Any])
         
         inline def setWebAuthnDotgetCredentials(value: ReturnTypeGetCredentialsResponse): Self = StObject.set(x, "WebAuthn.getCredentials", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveCredential(value: `251`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveCredential(value: `254`): Self = StObject.set(x, "WebAuthn.removeCredential", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `249`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotremoveVirtualAuthenticator(value: `252`): Self = StObject.set(x, "WebAuthn.removeVirtualAuthenticator", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `254`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetAutomaticPresenceSimulation(value: `257`): Self = StObject.set(x, "WebAuthn.setAutomaticPresenceSimulation", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetResponseOverrideBits(value: `248`): Self = StObject.set(x, "WebAuthn.setResponseOverrideBits", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetResponseOverrideBits(value: `251`): Self = StObject.set(x, "WebAuthn.setResponseOverrideBits", value.asInstanceOf[js.Any])
         
-        inline def setWebAuthnDotsetUserVerified(value: `253`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
+        inline def setWebAuthnDotsetUserVerified(value: `256`): Self = StObject.set(x, "WebAuthn.setUserVerified", value.asInstanceOf[js.Any])
       }
     }
     

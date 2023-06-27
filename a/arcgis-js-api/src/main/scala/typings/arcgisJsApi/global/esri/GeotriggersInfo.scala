@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.GeotriggersInfo")
 @js.native
 /**
-  * Information relating to a list of Geotriggers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html)
-  */
+		 * Information relating to a list of Geotriggers.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html)
+		 */
 open class GeotriggersInfo ()
   extends StObject
      with typings.arcgisJsApi.esri.GeotriggersInfo {
   def this(properties: GeotriggersInfoProperties) = this()
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

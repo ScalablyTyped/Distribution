@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait sizeCreateAgeRendererParamsLegendOptions extends StObject {
   
   /**
-    * Indicates whether to include the age renderer in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Indicates whether to include the age renderer in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var showLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The title used to represent the age size ramp in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * The title used to represent the age size ramp in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object sizeCreateAgeRendererParamsLegendOptions {

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PredominantExpressions extends StObject {
   
   /**
-    * The Arcade and SQL expressions used to query the server or client-side layer for statistics of the percentage among all competing fields comprised by the predominant category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
-    */
+  		 * The Arcade and SQL expressions used to query the server or client-side layer for statistics of the percentage among all competing fields comprised by the predominant category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
+  		 */
   var opacity: OpacityExpressionInfo
   
   /**
-    * The Arcade expression used to get the predominant category among a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
-    */
+  		 * The Arcade expression used to get the predominant category among a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
+  		 */
   var predominantCategory: PredominantExpressionsPredominantCategory
   
   /**
-    * The Arcade and SQL expressions used to query the server or client-side layer for statistics of the sum of all competing fields considered for the predominance visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
-    */
+  		 * The Arcade and SQL expressions used to query the server or client-side layer for statistics of the sum of all competing fields considered for the predominance visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#PredominantExpressions)
+  		 */
   var size: SizeExpressionInfo
 }
 object PredominantExpressions {

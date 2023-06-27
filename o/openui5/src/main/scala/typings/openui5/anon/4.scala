@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiCoreElementMod.MetadataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `4` extends StObject {
   
   /**
-    * Data received; on error cases it will be undefined
+    * The metadata object describing the class
     */
-  var data: js.UndefOr[js.Object] = js.undefined
+  var metadata: js.UndefOr[MetadataOptions] = js.undefined
 }
 object `4` {
   
@@ -21,8 +22,8 @@ object `4` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
     
-    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

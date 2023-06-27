@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Manifest for Chrome OS Kiosk apps
-  * @requires(CrOS Kiosk App) **Only for Chrome OS Kiosk Apps.**
+  * @requires CrOS Kiosk App -**Only for Chrome OS Kiosk Apps.**
   */
 trait ValidKioskManifest
   extends StObject
@@ -32,7 +32,7 @@ trait ValidKioskManifest
   
   /**
     * Not useful since it will prevent app from running.
-    * @see[Source]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L155}
+    * @see https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L155
     */
   var kiosk_secondary_apps: js.UndefOr[Any] = js.undefined
 }

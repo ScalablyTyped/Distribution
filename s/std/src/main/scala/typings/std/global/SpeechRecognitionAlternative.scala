@@ -12,10 +12,12 @@ open class SpeechRecognitionAlternative ()
   extends StObject
      with typings.std.SpeechRecognitionAlternative {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionAlternative/confidence) */
   /* standard dom */
   /* CompleteClass */
   override val confidence: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechRecognitionAlternative/transcript) */
   /* standard dom */
   /* CompleteClass */
   override val transcript: java.lang.String = js.native

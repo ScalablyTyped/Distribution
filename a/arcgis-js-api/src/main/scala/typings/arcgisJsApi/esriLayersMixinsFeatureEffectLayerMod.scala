@@ -15,10 +15,10 @@ object esriLayersMixinsFeatureEffectLayerMod {
        with FeatureEffectLayer {
     
     /**
-      * The featureEffect can be used to draw attention features of interest.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
-      */
+    		 * The featureEffect can be used to draw attention features of interest.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+    		 */
     /* CompleteClass */
     var featureEffect: FeatureEffect = js.native
   }

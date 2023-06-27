@@ -12,10 +12,12 @@ open class FileSystem ()
   extends StObject
      with typings.std.FileSystem {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystem/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystem/root) */
   /* standard dom */
   /* CompleteClass */
   override val root: typings.std.FileSystemDirectoryEntry = js.native

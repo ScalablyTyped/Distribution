@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociationGeometriesResultProperties extends StObject {
   
   /**
-    * List of returned [associations](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html) filtered based on the input parameters in [SynthesizeAssociationGeometriesParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-SynthesizeAssociationGeometriesParameters.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AssociationGeometriesResult.html#associations)
-    */
+  		 * List of returned [associations](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html) filtered based on the input parameters in [SynthesizeAssociationGeometriesParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-SynthesizeAssociationGeometriesParameters.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AssociationGeometriesResult.html#associations)
+  		 */
   var associations: js.UndefOr[js.Array[AssociationProperties]] = js.undefined
   
   /**
-    * Indicates whether the [maxGeometryCount](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-SynthesizeAssociationGeometriesParameters.html#maxGeometryCount) has exceeded.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AssociationGeometriesResult.html#maxGeometryCountExceeded)
-    */
+  		 * Indicates whether the [maxGeometryCount](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-SynthesizeAssociationGeometriesParameters.html#maxGeometryCount) has exceeded.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AssociationGeometriesResult.html#maxGeometryCountExceeded)
+  		 */
   var maxGeometryCountExceeded: js.UndefOr[Boolean] = js.undefined
 }
 object AssociationGeometriesResultProperties {

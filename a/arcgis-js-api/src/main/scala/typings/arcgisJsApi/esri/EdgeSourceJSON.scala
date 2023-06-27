@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EdgeSourceJSON extends StObject {
   
   /**
-    * The asset group attribute values for the line layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
-    */
+  		 * The asset group attribute values for the line layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
+  		 */
   var assetGroups: js.Array[AssetGroupJSON]
   
   /**
-    * The layer id of the line layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
-    */
+  		 * The layer id of the line layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
+  		 */
   var layerId: Double
   
   /**
-    * The network source id of the line layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
-    */
+  		 * The network source id of the line layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#EdgeSourceJSON)
+  		 */
   var sourceId: Double
 }
 object EdgeSourceJSON {

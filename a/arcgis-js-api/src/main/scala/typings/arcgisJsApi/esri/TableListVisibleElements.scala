@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableListVisibleElements extends StObject {
   
   /**
-    * Indicates whether layer load errors will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#VisibleElements)
-    */
+  		 * Indicates whether layer load errors will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#VisibleElements)
+  		 */
   var errors: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the status indicators will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#VisibleElements)
-    */
+  		 * Indicates whether the status indicators will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#VisibleElements)
+  		 */
   var statusIndicators: js.UndefOr[Boolean] = js.undefined
 }
 object TableListVisibleElements {

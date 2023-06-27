@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthToken extends StObject {
   
   /**
-    * The expiration time of this token, in seconds from token issuance.
+    * The expiration time in seconds. A token expires in this amount of time
+    * after fetching.
     */
   var expiresInSeconds: Double
   

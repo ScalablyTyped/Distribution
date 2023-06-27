@@ -15,24 +15,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This module allows you to evaluate [Arcade expressions](https://developers.arcgis.com/javascript/latest/arcade/) outside traditional ArcGIS Arcade [profiles](https://developers.arcgis.com/javascript/latest/arcade/#where-can-i-use-arcade).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html)
-  */
+	 * This module allows you to evaluate [Arcade expressions](https://developers.arcgis.com/javascript/latest/arcade/) outside traditional ArcGIS Arcade [profiles](https://developers.arcgis.com/javascript/latest/arcade/#where-can-i-use-arcade).
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html)
+	 */
 trait arcade extends StObject {
   
   /**
-    * Compiles an Arcade expression and its profile into an executor.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeExecutor)
-    */
+  		 * Compiles an Arcade expression and its profile into an executor.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeExecutor)
+  		 */
   def createArcadeExecutor(script: String, profile: Profile): js.Promise[ArcadeExecutor]
   
   /**
-    * Creates a [Profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#Profile) definition for an Arcade profile implemented in the ArcGIS Maps SDK for JavaScript.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeProfile)
-    */
+  		 * Creates a [Profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#Profile) definition for an Arcade profile implemented in the ArcGIS Maps SDK for JavaScript.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#createArcadeProfile)
+  		 */
   def createArcadeProfile(
     profileName: `form-constraint` | `feature-z` | `field-calculation` | `form-calculation` | labeling | popup | `popup-element` | `feature-reduction-popup` | `feature-reduction-popup-element` | visualization
   ): Profile

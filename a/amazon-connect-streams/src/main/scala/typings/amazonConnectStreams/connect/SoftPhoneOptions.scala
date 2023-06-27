@@ -14,6 +14,9 @@ trait SoftPhoneOptions extends StObject {
     */
   val allowFramedSoftphone: js.UndefOr[Boolean] = js.undefined
   
+  /** Disable Echo Cancellation */
+  val disableEchoCancellation: js.UndefOr[Boolean] = js.undefined
+  
   /** This option allows you to completely disable the built-in ringtone audio that is played when a call is incoming. */
   val disableRingtone: js.UndefOr[Boolean] = js.undefined
   
@@ -33,6 +36,10 @@ object SoftPhoneOptions {
     inline def setAllowFramedSoftphone(value: Boolean): Self = StObject.set(x, "allowFramedSoftphone", value.asInstanceOf[js.Any])
     
     inline def setAllowFramedSoftphoneUndefined: Self = StObject.set(x, "allowFramedSoftphone", js.undefined)
+    
+    inline def setDisableEchoCancellation(value: Boolean): Self = StObject.set(x, "disableEchoCancellation", value.asInstanceOf[js.Any])
+    
+    inline def setDisableEchoCancellationUndefined: Self = StObject.set(x, "disableEchoCancellation", js.undefined)
     
     inline def setDisableRingtone(value: Boolean): Self = StObject.set(x, "disableRingtone", value.asInstanceOf[js.Any])
     

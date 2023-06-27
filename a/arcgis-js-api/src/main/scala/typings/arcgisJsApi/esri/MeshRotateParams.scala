@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshRotateParams extends StObject {
   
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
-    */
+  		 * Whether to georeference relative to the globe or the projected coordinate system (PCS).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The origin around which to rotate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
-    */
+  		 * The origin around which to rotate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#rotate)
+  		 */
   var origin: js.UndefOr[Point] = js.undefined
 }
 object MeshRotateParams {

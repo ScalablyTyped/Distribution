@@ -1,38 +1,37 @@
 package typings.yaml.anon
 
+import typings.yaml.distParseCstMod.SourceToken
+import typings.yaml.distParseCstMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Value extends StObject {
   
-  var comment: String
+  var key: js.UndefOr[scala.Nothing] = js.undefined
   
-  var range: typings.yaml.distNodesNodeMod.Range
+  var sep: js.UndefOr[scala.Nothing] = js.undefined
   
-  var `type`: typings.yaml.distNodesScalarMod.Scalar.Type | Null
+  var start: js.Array[SourceToken]
   
-  var value: String
+  var value: js.UndefOr[Token] = js.undefined
 }
 object Value {
   
-  inline def apply(comment: String, range: typings.yaml.distNodesNodeMod.Range, value: String): Value = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(null)
+  inline def apply(start: js.Array[SourceToken]): Value = {
+    val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
-    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Array[SourceToken]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: typings.yaml.distNodesNodeMod.Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setStartVarargs(value: SourceToken*): Self = StObject.set(x, "start", js.Array(value*))
     
-    inline def setType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setValue(value: Token): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setTypeNull: Self = StObject.set(x, "type", null)
-    
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

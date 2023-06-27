@@ -3,6 +3,8 @@ package typings.officeJs.Word
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.Word.ContentControlType.plainText
+import typings.officeJs.Word.ContentControlType.richText
 import typings.officeJs.Word.InsertLocation.replace
 import typings.officeJs.Word.Interfaces.BodyData
 import typings.officeJs.Word.Interfaces.BodyLoadOptions
@@ -27,7 +29,9 @@ import typings.officeJs.officeJsStrings.MainDoc
 import typings.officeJs.officeJsStrings.Next
 import typings.officeJs.officeJsStrings.Original
 import typings.officeJs.officeJsStrings.Page
+import typings.officeJs.officeJsStrings.PlainText
 import typings.officeJs.officeJsStrings.Replace
+import typings.officeJs.officeJsStrings.RichText
 import typings.officeJs.officeJsStrings.SectionContinuous
 import typings.officeJs.officeJsStrings.SectionEven
 import typings.officeJs.officeJsStrings.SectionNext
@@ -75,7 +79,7 @@ trait Body
     * Gets the collection of endnotes in the body.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -99,7 +103,7 @@ trait Body
     * Gets the collection of footnotes in the body.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -110,6 +114,19 @@ trait Body
     * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
+  
+  /**
+    * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
   
   /**
     * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
@@ -189,12 +206,19 @@ trait Body
   def insertBreak(breakType: BreakType, insertLocation: typings.officeJs.Word.InsertLocation.start): Unit = js.native
   
   /**
-    * Wraps the Body object with a Rich Text content control.
+    * Wraps the Body object with a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+    *
+    * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
   def insertContentControl(): ContentControl = js.native
+  def insertContentControl(contentControlType: RichText | PlainText): ContentControl = js.native
+  def insertContentControl(contentControlType: plainText): ContentControl = js.native
+  def insertContentControl(contentControlType: richText): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
@@ -422,7 +446,7 @@ trait Body
   def set(properties: BodyUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -430,12 +454,12 @@ trait Body
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
     * Gets the collection of table objects in the body.

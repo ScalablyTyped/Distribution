@@ -193,14 +193,12 @@ object sapUiCommonsTextViewMod {
     def getAccessibleRole(): AccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AccessibleRole * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     

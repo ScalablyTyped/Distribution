@@ -8,7 +8,7 @@ trait DataCollectionConfig extends StObject {
   
   var data: js.UndefOr[String | js.Array[Any] | obj] = js.undefined
   
-  var dataFeed: js.UndefOr[String | obj | WebixCallback] = js.undefined
+  var dataFeed: js.UndefOr[String | WebixProxy | WebixCallback] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -30,11 +30,11 @@ trait DataCollectionConfig extends StObject {
   
   var rules: js.UndefOr[obj] = js.undefined
   
-  var save: js.UndefOr[String | obj] = js.undefined
+  var save: js.UndefOr[String | obj | WebixCallback] = js.undefined
   
   var scheme: js.UndefOr[obj] = js.undefined
   
-  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | WebixProxy] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
 }
@@ -50,7 +50,7 @@ object DataCollectionConfig {
     
     inline def setData(value: String | js.Array[Any] | obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataFeed(value: String | obj | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    inline def setDataFeed(value: String | WebixProxy | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
     inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
     
@@ -98,7 +98,7 @@ object DataCollectionConfig {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj | WebixCallback): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
@@ -106,7 +106,7 @@ object DataCollectionConfig {
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | WebixProxy): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

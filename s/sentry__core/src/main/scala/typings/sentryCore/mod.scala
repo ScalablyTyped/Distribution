@@ -24,9 +24,13 @@ import typings.sentryCore.typesTracingSpanMod.SpanStatusType
 import typings.sentryCore.typesTransportsMultiplexedMod.Matcher
 import typings.sentryCore.typesTransportsOfflineMod.OfflineTransportOptions
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesCheckinMod.CheckIn
+import typings.sentryTypes.typesCheckinMod.MonitorConfig
+import typings.sentryTypes.typesCheckinMod.SerializedCheckIn
 import typings.sentryTypes.typesClientMod.Client
 import typings.sentryTypes.typesDsnMod.DsnComponents
 import typings.sentryTypes.typesDsnMod.DsnLike
+import typings.sentryTypes.typesEnvelopeMod.CheckInEvelope
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
@@ -36,6 +40,7 @@ import typings.sentryTypes.typesMiscMod.Primitive
 import typings.sentryTypes.typesOptionsMod.ClientOptions
 import typings.sentryTypes.typesOptionsMod.Options
 import typings.sentryTypes.typesScopeMod.CaptureContext
+import typings.sentryTypes.typesSdkmetadataMod.SdkMetadata
 import typings.sentryTypes.typesSessionMod.Session
 import typings.sentryTypes.typesSessionMod.SessionContext
 import typings.sentryTypes.typesSessionMod.SessionStatus
@@ -413,7 +418,7 @@ object mod {
   
   @JSImport("@sentry/core", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.51.2" */ String = js.native
+  val SDK_VERSION: /* "7.56.0" */ String = js.native
   
   @JSImport("@sentry/core", "Scope")
   @js.native
@@ -535,6 +540,9 @@ object mod {
   
   inline def addTracingExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTracingExtensions")().asInstanceOf[Unit]
   
+  inline def captureCheckIn(checkIn: CheckIn): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureCheckIn")(checkIn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureCheckIn(checkIn: CheckIn, upsertMonitorConfig: MonitorConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureCheckIn")(checkIn.asInstanceOf[js.Any], upsertMonitorConfig.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
   inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
   
@@ -551,6 +559,15 @@ object mod {
   inline def closeSession_ok(session: Session, status: Exclude[SessionStatus, ok]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeSession")(session.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def configureScope(callback: js.Function1[/* scope */ typings.sentryCore.typesScopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
+  
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn): CheckInEvelope = ^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any]).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: Unit, tunnel: String): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: Unit, tunnel: String, dsn: DsnComponents): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: Unit, tunnel: Unit, dsn: DsnComponents): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: SdkMetadata): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: SdkMetadata, tunnel: String): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: SdkMetadata, tunnel: String, dsn: DsnComponents): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
+  inline def createCheckInEnvelope(checkIn: SerializedCheckIn, metadata: SdkMetadata, tunnel: Unit, dsn: DsnComponents): CheckInEvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createCheckInEnvelope")(checkIn.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], tunnel.asInstanceOf[js.Any], dsn.asInstanceOf[js.Any])).asInstanceOf[CheckInEvelope]
   
   inline def createTransport(options: InternalBaseTransportOptions, makeRequest: TransportRequestExecutor): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any])).asInstanceOf[Transport]
   inline def createTransport(

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`30`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IBar
 import typings.openui5.sapMLibraryMod.ToolbarDesign
@@ -139,7 +138,7 @@ object sapMToolbarMod {
        with IBar {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes according to the context of the page. Possible contexts are header, footer and subheader.
       *
@@ -148,7 +147,7 @@ object sapMToolbarMod {
     def _applyContextClassFor(): IBar = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets HTML tag according to the context of the page. Possible contexts are header, footer and subheader.
       *
@@ -185,7 +184,7 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer,
       * subheader
@@ -208,13 +207,13 @@ object sapMToolbarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Toolbar` itself
       */
@@ -239,7 +238,7 @@ object sapMToolbarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -250,7 +249,7 @@ object sapMToolbarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Toolbar` itself
       */
@@ -275,13 +274,13 @@ object sapMToolbarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolbarPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -289,7 +288,7 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -299,7 +298,7 @@ object sapMToolbarMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `30`): this.type = js.native
+    mParameters: Toolbar$PressEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getActive active}.
@@ -315,7 +314,7 @@ object sapMToolbarMod {
     def getActive(): Boolean = js.native
     
     /**
-      * @SINCE 1.79.0
+      * @since 1.79.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -324,17 +323,16 @@ object sapMToolbarMod {
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend that you use the {@link sap.ui.core.aria.HasPopup} enumeration.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       *
       * @returns Value of property `ariaHasPopup`
       */
     def getAriaHasPopup(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -346,7 +344,7 @@ object sapMToolbarMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.16.8
+      * @since 1.16.8
       *
       * Gets current value of property {@link #getDesign design}.
       *
@@ -373,7 +371,7 @@ object sapMToolbarMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the HTML tag of the root domref
       *
@@ -396,7 +394,7 @@ object sapMToolbarMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getStyle style}.
       *
@@ -411,8 +409,8 @@ object sapMToolbarMod {
     def getStyle(): ToolbarStyle | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ToolbarStyle * / any */ String) = js.native
     
     /**
-      * @SINCE 1.44
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.44
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the first sap.m.Title control instance inside the toolbar for the accessibility
       *
@@ -421,8 +419,8 @@ object sapMToolbarMod {
     def getTitleControl(): js.UndefOr[typings.openui5.sapMTitleMod.default] = js.native
     
     /**
-      * @SINCE 1.28
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.28
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the first sap.m.Title control id inside the toolbar for the accessibility
       *
@@ -472,7 +470,7 @@ object sapMToolbarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns if the bar is sensitive to the container context. Implementation of the IBar interface
       *
@@ -556,7 +554,7 @@ object sapMToolbarMod {
     bActive: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.79.0
+      * @since 1.79.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -565,9 +563,9 @@ object sapMToolbarMod {
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend that you use the {@link sap.ui.core.aria.HasPopup} enumeration.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -580,7 +578,7 @@ object sapMToolbarMod {
     sAriaHasPopup: String): this.type = js.native
     
     /**
-      * @SINCE 1.16.8
+      * @since 1.16.8
       *
       * Sets a new value for property {@link #getDesign design}.
       *
@@ -625,7 +623,7 @@ object sapMToolbarMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the HTML tag of the root domref
       *
@@ -654,7 +652,7 @@ object sapMToolbarMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getStyle style}.
       *
@@ -697,6 +695,33 @@ object sapMToolbarMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Toolbar$PressEventParameters extends StObject {
+    
+    /**
+      * The toolbar item that was pressed
+      */
+    var srcControl: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Toolbar$PressEventParameters {
+    
+    inline def apply(): Toolbar$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Toolbar$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSrcControl(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "srcControl", value.asInstanceOf[js.Any])
+      
+      inline def setSrcControlUndefined: Self = StObject.set(x, "srcControl", js.undefined)
+    }
+  }
+  
+  type ToolbarPressEvent = typings.openui5.sapUiBaseEventMod.default[Toolbar$PressEventParameters]
+  
+  type ToolbarPressEventParameters = Toolbar$PressEventParameters
+  
   trait ToolbarSettings
     extends StObject
        with ControlSettings {
@@ -711,16 +736,16 @@ object sapMToolbarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.79.0
+      * @since 1.79.0
       *
       * Defines the aria-haspopup attribute of the `Toolbar`. if the active `design` is true.
       *
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend that you use the {@link sap.ui.core.aria.HasPopup} enumeration.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       */
     var ariaHasPopup: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
@@ -737,7 +762,7 @@ object sapMToolbarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.8
+      * @since 1.16.8
       *
       * Defines the toolbar design.
       *
@@ -768,10 +793,15 @@ object sapMToolbarMod {
     /**
       * Fired when the user clicks on the toolbar, if the Active property is set to "true".
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Toolbar$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines the visual style of the `Toolbar`.
       *
@@ -835,7 +865,9 @@ object sapMToolbarMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Toolbar$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -256,7 +256,7 @@ object EventType extends StObject {
     * 
     * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
     * 
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     */
   @js.native
   sealed trait SelectedItemsChanged
@@ -269,11 +269,9 @@ object EventType extends StObject {
     * 
     * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
     * The event handler receives an argument of type
-    * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview | Office.SensitivityLabelChangedEventArgs}.
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs | Office.SensitivityLabelChangedEventArgs}.
     * 
-    * [Api set: Mailbox preview]
-    * 
-    * @beta
+    * [Api set: Mailbox 1.13]
     */
   @js.native
   sealed trait SensitivityLabelChanged

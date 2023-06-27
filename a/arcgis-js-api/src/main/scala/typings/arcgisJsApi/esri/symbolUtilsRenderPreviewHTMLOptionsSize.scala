@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderPreviewHTMLOptionsSize extends StObject {
   
   /**
-    * The height of the symbol preview in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The height of the symbol preview in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the symbol preview in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The width of the symbol preview in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object symbolUtilsRenderPreviewHTMLOptionsSize {

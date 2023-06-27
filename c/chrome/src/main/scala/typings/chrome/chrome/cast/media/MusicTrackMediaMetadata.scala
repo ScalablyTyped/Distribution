@@ -13,7 +13,7 @@ trait MusicTrackMediaMetadata extends StObject {
   
   var artist: String
   
-  /** @deprecated. Use artist instead. */
+  /** @deprecated Use artist instead. */
   var artistName: String
   
   var composer: String
@@ -26,7 +26,7 @@ trait MusicTrackMediaMetadata extends StObject {
   
   var releaseDate: String
   
-  /** @deprecated. Use releaseDate instead. */
+  /** @deprecated Use releaseDate instead. */
   var releaseYear: Double
   
   var songName: String
@@ -35,7 +35,7 @@ trait MusicTrackMediaMetadata extends StObject {
   
   var trackNumber: Double
   
-  /** @deprecated. Use metadataType instead. */
+  /** @deprecated Use metadataType instead. */
   var `type`: MetadataType
 }
 object MusicTrackMediaMetadata {

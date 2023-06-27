@@ -123,7 +123,7 @@ object sapMOverflowToolbarLayoutDataMod {
     extends typings.openui5.sapMToolbarLayoutDataMod.default {
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getCloseOverflowOnInteraction closeOverflowOnInteraction}.
       *
@@ -136,7 +136,7 @@ object sapMOverflowToolbarLayoutDataMod {
     def getCloseOverflowOnInteraction(): Boolean = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getGroup group}.
       *
@@ -165,7 +165,7 @@ object sapMOverflowToolbarLayoutDataMod {
     def getMoveToOverflow(): Boolean = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getPriority priority}.
       *
@@ -192,7 +192,7 @@ object sapMOverflowToolbarLayoutDataMod {
     def getStayInOverflow(): Boolean = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets a new value for property {@link #getCloseOverflowOnInteraction closeOverflowOnInteraction}.
       *
@@ -213,7 +213,7 @@ object sapMOverflowToolbarLayoutDataMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets a new value for property {@link #getGroup group}.
       *
@@ -278,7 +278,7 @@ object sapMOverflowToolbarLayoutDataMod {
        with ToolbarLayoutDataSettings {
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Defines whether the overflow area is automatically closed when interacting with a control in it
       */
@@ -287,7 +287,7 @@ object sapMOverflowToolbarLayoutDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Defines OverflowToolbar items group number. Default value is 0, which means that the control does not
       * belong to any group. Elements that belong to a group overflow together. The overall priority of the group
@@ -306,7 +306,7 @@ object sapMOverflowToolbarLayoutDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Defines OverflowToolbar items priority. Available priorities are NeverOverflow, High, Low, Disappear
       * and AlwaysOverflow.

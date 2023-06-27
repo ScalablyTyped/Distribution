@@ -34,6 +34,9 @@ object mod {
     
     /** Array of strings of the variables to ignore, e.g. `['$my-var', '$my-second-var']` */
     var ignore: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /** Array of strings of files to ignore, e.g. `['./file-with-unused-vars.scss', '**\/_variables.scss']`. */
+    var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -52,6 +55,12 @@ object mod {
       inline def setFileExtensionsVarargs(value: String*): Self = StObject.set(x, "fileExtensions", js.Array(value*))
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFiles(value: js.Array[String]): Self = StObject.set(x, "ignoreFiles", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFilesUndefined: Self = StObject.set(x, "ignoreFiles", js.undefined)
+      
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       

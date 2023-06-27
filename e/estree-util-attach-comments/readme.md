@@ -1,7 +1,7 @@
 
 # Scala.js typings for estree-util-attach-comments
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 Attach comments to estree nodes

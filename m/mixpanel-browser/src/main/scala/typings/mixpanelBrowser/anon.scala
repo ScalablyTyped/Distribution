@@ -159,6 +159,8 @@ object anon {
     
     var track_links_timeout: js.UndefOr[Double] = js.undefined
     
+    var track_pageview: js.UndefOr[Boolean] = js.undefined
+    
     var upgrade: js.UndefOr[Boolean] = js.undefined
     
     var verbose: js.UndefOr[Boolean] = js.undefined
@@ -325,6 +327,10 @@ object anon {
       
       inline def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
       
+      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
+      
+      inline def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
+      
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
       inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
@@ -415,6 +421,8 @@ object anon {
     var test: js.UndefOr[Boolean] = js.undefined
     
     var track_links_timeout: js.UndefOr[Double] = js.undefined
+    
+    var track_pageview: js.UndefOr[Boolean] = js.undefined
     
     var upgrade: js.UndefOr[Boolean] = js.undefined
     
@@ -582,6 +590,10 @@ object anon {
       
       inline def setTrack_links_timeoutUndefined: Self = StObject.set(x, "track_links_timeout", js.undefined)
       
+      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
+      
+      inline def setTrack_pageviewUndefined: Self = StObject.set(x, "track_pageview", js.undefined)
+      
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
       inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
@@ -734,6 +746,27 @@ object anon {
       inline def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
       
       inline def setSecure_cookieUndefined: Self = StObject.set(x, "secure_cookie", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.RegisterOptions> */
+  trait PartialRegisterOptions extends StObject {
+    
+    var persistent: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialRegisterOptions {
+    
+    inline def apply(): PartialRegisterOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialRegisterOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRegisterOptions] (val x: Self) extends AnyVal {
+      
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
   

@@ -43,7 +43,7 @@ trait SystemInfoCellularNetwork
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/telephony
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     *
     * @warning 2.3.1 _http://tizen.org/privilege/systemmanager_ _(partner level)_ has been deprecated since 2.3.1. Instead, use _http://tizen.org/privilege/telephony_.
     */

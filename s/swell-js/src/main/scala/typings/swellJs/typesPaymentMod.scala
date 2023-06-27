@@ -32,7 +32,7 @@ object typesPaymentMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.swellJs.typesPaymentCamelMod.InputPaymentElementCardCamel because var conflicts: card_cvc, card_expiry, card_number, element_id, on_blur, on_change, on_click, on_error, on_escape, on_focus, on_ready, on_success, options, seperate_elements. Inlined  */ trait InputPaymentElementCard
+  - typings.swellJs.typesPaymentCamelMod.InputPaymentElementCardCamel because var conflicts: card_cvc, card_expiry, card_number, element_id, on_blur, on_change, on_click, on_error, on_escape, on_focus, on_ready, on_success, options, separate_elements. Inlined  */ trait InputPaymentElementCard
     extends StObject
        with InputPaymentElementCardSnake
   object InputPaymentElementCard {

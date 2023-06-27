@@ -136,7 +136,11 @@ object libMockXMLHttpRequestMod {
     
     /* private */ var _timeoutTimer: Any = js.native
     
-    /** Cancels any network activity. */
+    /**
+      * Cancels any network activity.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/abort)
+      */
     /* standard dom */
     def abort(): Unit = js.native
     
@@ -158,9 +162,11 @@ object libMockXMLHttpRequestMod {
     
     /* private */ def applyNetworkError(): Any = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getAllResponseHeaders) */
     /* standard dom */
     def getAllResponseHeaders(): String = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getResponseHeader) */
     /* standard dom */
     def getResponseHeader(name: String): Null | String = js.native
     
@@ -180,6 +186,7 @@ object libMockXMLHttpRequestMod {
     
     def msCachingEnabled(): Boolean = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/readystatechange_event) */
     /* standard dom */
     var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
     def onreadystatechange(ev: Event): Any = js.native
@@ -192,6 +199,8 @@ object libMockXMLHttpRequestMod {
       * Throws a "SecurityError" DOMException if method is a case-insensitive match for `CONNECT`, `TRACE`, or `TRACK`.
       *
       * Throws an "InvalidAccessError" DOMException if async is false, current global object is a Window object, and the timeout attribute is not zero or the responseType attribute is not the empty string.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/open)
       */
     /* standard dom */
     def open(method: String, url: String): Unit = js.native
@@ -216,6 +225,8 @@ object libMockXMLHttpRequestMod {
       * Acts as if the `Content-Type` header value for a response is mime. (It does not change the header.)
       *
       * Throws an "InvalidStateError" DOMException if state is loading or done.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/overrideMimeType)
       */
     /* standard dom */
     def overrideMimeType(mime: String): Unit = js.native
@@ -260,6 +271,8 @@ object libMockXMLHttpRequestMod {
       * Initiates the request. The body argument provides the request body, if any, and is ignored if the request method is GET or HEAD.
       *
       * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/send)
       */
     /* standard dom */
     def send(): Unit = js.native
@@ -278,6 +291,8 @@ object libMockXMLHttpRequestMod {
       * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
       *
       * Throws a "SyntaxError" DOMException if name is not a header name or if value is not a header value.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setRequestHeader)
       */
     /* standard dom */
     def setRequestHeader(name: String, value: String): Unit = js.native

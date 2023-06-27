@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@adraffy/ens-normalize" : "1.9.0"
+      "@adraffy/ens-normalize" : "1.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@adraffy/ens-normalize" : "1.9.0"
+      "@adraffy/ens-normalize" : "1.9.2"
     }
   ],
   "compile-devDependencies" : [

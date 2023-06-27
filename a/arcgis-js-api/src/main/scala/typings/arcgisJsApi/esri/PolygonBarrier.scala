@@ -14,31 +14,31 @@ trait PolygonBarrier
      with JSONSupport {
   
   /**
-    * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#barrierType)
-    */
+  		 * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#barrierType)
+  		 */
   var barrierType: restriction | `added-cost` = js.native
   
   /**
-    * The point location of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#geometry)
-    */
+  		 * The point location of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#geometry)
+  		 */
   var geometry: Polygon = js.native
   
   /**
-    * The name of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#name)
-    */
+  		 * The name of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [PolygonBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html) instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#toGraphic)
-    */
+  		 * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [PolygonBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html) instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#toGraphic)
+  		 */
   def toGraphic(): Graphic = js.native
   
   val `type`: `barrier-area` = js.native

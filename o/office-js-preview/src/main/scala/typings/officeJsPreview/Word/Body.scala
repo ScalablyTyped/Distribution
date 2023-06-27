@@ -80,7 +80,7 @@ trait Body
     * Gets the collection of endnotes in the body.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -104,7 +104,7 @@ trait Body
     * Gets the collection of footnotes in the body.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -122,8 +122,7 @@ trait Body
     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param options Optional. Options that define which content controls are returned.
     */
@@ -212,6 +211,8 @@ trait Body
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
     *
     * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
@@ -509,7 +510,7 @@ trait Body
   def set(properties: BodyUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -517,7 +518,7 @@ trait Body
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]

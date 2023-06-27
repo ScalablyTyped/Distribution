@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  {[ RouteName in keyof ParamList ]:? std.NonNullable<ParamList[RouteName]> extends @react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigatorScreenParams<infer T, any>? string | @react-navigation/core.@react-navigation/core/lib/typescript/src/types.PathConfig<T> : string | / * Inlined std.Omit<@react-navigation/core.@react-navigation/core/lib/typescript/src/types.PathConfig<{}>, 'screens' | 'initialRouteName'> * /
+  {[ RouteName in keyof ParamList ]:? std.NonNullable<ParamList[RouteName]> extends @react-navigation/core.@react-navigation/core/lib/typescript/src/types.NavigatorScreenParams<infer T, @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase>>? string | @react-navigation/core.@react-navigation/core/lib/typescript/src/types.PathConfig<T> : string | / * Inlined std.Omit<@react-navigation/core.@react-navigation/core/lib/typescript/src/types.PathConfig<{}>, 'screens' | 'initialRouteName'> * /
 {  parse :std.Record<string, (value : string): any> | undefined | undefined,   path :string | undefined | undefined,   stringify :std.Record<string, (value : any): string> | undefined | undefined,   exact :boolean | undefined | undefined}}
   }}}
   */

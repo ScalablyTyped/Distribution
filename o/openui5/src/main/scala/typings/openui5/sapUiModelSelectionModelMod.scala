@@ -224,7 +224,7 @@ object sapUiModelSelectionModelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *

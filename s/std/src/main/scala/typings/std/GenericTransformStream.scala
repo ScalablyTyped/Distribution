@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GenericTransformStream extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/readable) */
   /* standard dom */
   val readable: ReadableStream[Any]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/writable) */
   /* standard dom */
   val writable: WritableStream[Any]
 }

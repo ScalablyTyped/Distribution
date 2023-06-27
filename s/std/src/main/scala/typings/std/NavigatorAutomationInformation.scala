@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorAutomationInformation extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/webdriver) */
   /* standard dom */
   val webdriver: scala.Boolean
 }

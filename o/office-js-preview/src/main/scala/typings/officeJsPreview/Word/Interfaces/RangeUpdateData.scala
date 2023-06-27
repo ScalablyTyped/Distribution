@@ -24,7 +24,7 @@ trait RangeUpdateData extends StObject {
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -32,7 +32,7 @@ trait RangeUpdateData extends StObject {
   var style: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]

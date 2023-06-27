@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UniqueValuesResultUniqueValueInfos extends StObject {
   
   /**
-    * The number of features assigned the given `value` (or belonging to the given category).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#UniqueValuesResult)
-    */
+  		 * The number of features assigned the given `value` (or belonging to the given category).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#UniqueValuesResult)
+  		 */
   var count: Double
   
   /**
-    * A unique value representing a type or category of features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#UniqueValuesResult)
-    */
+  		 * A unique value representing a type or category of features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#UniqueValuesResult)
+  		 */
   var value: String | Double
 }
 object UniqueValuesResultUniqueValueInfos {

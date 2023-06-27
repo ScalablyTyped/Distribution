@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.PortalItemResource")
 @js.native
 /**
-  * A reference to a portal item resource.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html)
-  */
+		 * A reference to a portal item resource.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html)
+		 */
 open class PortalItemResource ()
   extends StObject
      with typings.arcgisJsApi.esri.PortalItemResource {

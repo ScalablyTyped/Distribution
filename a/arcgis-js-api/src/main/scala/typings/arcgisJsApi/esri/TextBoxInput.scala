@@ -14,9 +14,9 @@ trait TextBoxInput
      with inputsInput {
   
   /**
-    * The type of form element input.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextBoxInput.html#type)
-    */
+  		 * The type of form element input.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextBoxInput.html#type)
+  		 */
   val `type`: `text-box` = js.native
 }

@@ -370,7 +370,7 @@ object srcStyleMod {
     /** Sets the CSS [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) for the element. Only use as a **last resort**. Use style props instead. */
     var UNSAFE_className: js.UndefOr[String] = js.undefined
     
-    /** Sets inline [style](https://developer.mozilla.org/en-US/docs/Web/API/Element/style) for the element. Only use as a **last resort**. Use style props instead. */
+    /** Sets inline [style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) for the element. Only use as a **last resort**. Use style props instead. */
     var UNSAFE_style: js.UndefOr[CSSProperties] = js.undefined
     
     // ...

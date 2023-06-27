@@ -191,7 +191,7 @@ object sapUiCoreMessageMod {
     def getLevel(): MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Gets current value of property {@link #getReadOnly readOnly}.
       *
@@ -262,7 +262,7 @@ object sapUiCoreMessageMod {
     sLevel: MessageType): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Sets a new value for property {@link #getReadOnly readOnly}.
       *
@@ -330,7 +330,7 @@ object sapUiCoreMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Determines whether the message should be read only. This helps the application to handle a message a
       * different way if the application differentiates between read-only and common messages.

@@ -14,25 +14,27 @@ object mod {
     effects: Effects,
     ok: State,
     nok: State,
-    `type`: String,
-    literalType: String,
-    literalMarkerType: String,
-    rawType: String,
-    stringType: String
+    `type`: TokenType,
+    literalType: TokenType,
+    literalMarkerType: TokenType,
+    rawType: TokenType,
+    stringType: TokenType
   ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("factoryDestination")(effects.asInstanceOf[js.Any], ok.asInstanceOf[js.Any], nok.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], literalType.asInstanceOf[js.Any], literalMarkerType.asInstanceOf[js.Any], rawType.asInstanceOf[js.Any], stringType.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def factoryDestination(
     effects: Effects,
     ok: State,
     nok: State,
-    `type`: String,
-    literalType: String,
-    literalMarkerType: String,
-    rawType: String,
-    stringType: String,
+    `type`: TokenType,
+    literalType: TokenType,
+    literalMarkerType: TokenType,
+    rawType: TokenType,
+    stringType: TokenType,
     max: Double
   ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("factoryDestination")(effects.asInstanceOf[js.Any], ok.asInstanceOf[js.Any], nok.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], literalType.asInstanceOf[js.Any], literalMarkerType.asInstanceOf[js.Any], rawType.asInstanceOf[js.Any], stringType.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[State]
   
   type Effects = typings.micromarkUtilTypes.mod.Effects
   
   type State = typings.micromarkUtilTypes.mod.State
+  
+  type TokenType = typings.micromarkUtilTypes.mod.TokenType
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapSaveOptions extends StObject {
   
   /**
-    * When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#save)
-    */
+  		 * When `true`, the webmap will save even if it contains unsupported content (layers, renderers, symbols).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#save)
+  		 */
   var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapSaveOptions {

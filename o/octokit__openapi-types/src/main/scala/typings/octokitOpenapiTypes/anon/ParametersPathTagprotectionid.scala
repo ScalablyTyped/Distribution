@@ -8,11 +8,11 @@ trait ParametersPathTagprotectionid extends StObject {
   
   var parameters: PathTagprotectionid
   
-  var responses: `92`
+  var responses: `106`
 }
 object ParametersPathTagprotectionid {
   
-  inline def apply(parameters: PathTagprotectionid, responses: `92`): ParametersPathTagprotectionid = {
+  inline def apply(parameters: PathTagprotectionid, responses: `106`): ParametersPathTagprotectionid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathTagprotectionid]
   }
@@ -22,6 +22,6 @@ object ParametersPathTagprotectionid {
     
     inline def setParameters(value: PathTagprotectionid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `92`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `106`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

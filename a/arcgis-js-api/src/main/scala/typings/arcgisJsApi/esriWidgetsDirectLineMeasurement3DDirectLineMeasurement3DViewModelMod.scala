@@ -11,10 +11,10 @@ object esriWidgetsDirectLineMeasurement3DDirectLineMeasurement3DViewModelMod {
   @JSImport("esri/widgets/DirectLineMeasurement3D/DirectLineMeasurement3DViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [DirectLineMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html)
-    */
+  		 * Provides the logic for the [DirectLineMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with DirectLineMeasurement3DViewModel {

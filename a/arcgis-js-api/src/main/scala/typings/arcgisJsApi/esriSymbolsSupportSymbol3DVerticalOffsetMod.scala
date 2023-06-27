@@ -11,10 +11,10 @@ object esriSymbolsSupportSymbol3DVerticalOffsetMod {
   @JSImport("esri/symbols/support/Symbol3DVerticalOffset", JSImport.Namespace)
   @js.native
   /**
-    * Shifts a symbol along the vertical world axis by a given height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html)
-    */
+  		 * Shifts a symbol along the vertical world axis by a given height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html)
+  		 */
   open class ^ ()
     extends StObject
        with Symbol3DVerticalOffset {

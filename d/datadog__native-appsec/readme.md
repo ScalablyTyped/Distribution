@@ -1,7 +1,7 @@
 
 # Scala.js typings for datadog__native-appsec
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Node.js bindings for libddwaf

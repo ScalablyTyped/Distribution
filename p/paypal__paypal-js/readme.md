@@ -1,7 +1,7 @@
 
 # Scala.js typings for paypal__paypal-js
 
-Typings are for version 5.1.6
+Typings are for version 6.0.0
 
 ## Library description:
 Loading wrapper and TypeScript types for the PayPal JS SDK

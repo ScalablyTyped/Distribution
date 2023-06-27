@@ -17,41 +17,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WaterSymbol3DLayerPropert extends StObject {
   
   /**
-    * The dominant color used to shade the water.
-    *
-    * @default #0077BE
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#color)
-    */
+  		 * The dominant color used to shade the water.
+  		 *
+  		 * @default #0077BE
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   var `type`: water
   
   /**
-    * Indicates the size of the waterbody which is represented by the symbol layer.
-    *
-    * @default medium
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waterbodySize)
-    */
+  		 * Indicates the size of the waterbody which is represented by the symbol layer.
+  		 *
+  		 * @default medium
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waterbodySize)
+  		 */
   var waterbodySize: js.UndefOr[small | medium | large] = js.undefined
   
   /**
-    * Indicates the direction in which the waves travel.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveDirection)
-    */
+  		 * Indicates the direction in which the waves travel.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveDirection)
+  		 */
   var waveDirection: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates the shape and intensity of the waves.
-    *
-    * @default moderate
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveStrength)
-    */
+  		 * Indicates the shape and intensity of the waves.
+  		 *
+  		 * @default moderate
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html#waveStrength)
+  		 */
   var waveStrength: js.UndefOr[calm | rippled | slight | moderate] = js.undefined
 }
 object WaterSymbol3DLayerPropert {

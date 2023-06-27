@@ -1,7 +1,7 @@
 
 # Scala.js typings for estree-util-build-jsx
 
-Typings are for version 2.2.0
+Typings are for version 2.2.2
 
 ## Library description:
 Transform JSX in estrees to function calls (for react, preact, and most hyperscript interfaces)

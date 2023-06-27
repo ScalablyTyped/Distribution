@@ -10,11 +10,11 @@ trait ParametersQueryLabelName extends StObject {
   
   var requestBody: js.UndefOr[ContentApplicationoctetstream] = js.undefined
   
-  var responses: `201Content331`
+  var responses: `201Content386`
 }
 object ParametersQueryLabelName {
   
-  inline def apply(parameters: QueryLabelName, responses: `201Content331`): ParametersQueryLabelName = {
+  inline def apply(parameters: QueryLabelName, responses: `201Content386`): ParametersQueryLabelName = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryLabelName]
   }
@@ -28,6 +28,6 @@ object ParametersQueryLabelName {
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    inline def setResponses(value: `201Content331`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content386`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

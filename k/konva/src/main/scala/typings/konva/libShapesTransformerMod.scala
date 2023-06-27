@@ -101,6 +101,13 @@ object libShapesTransformerMod {
     @JSName("anchorStroke")
     var anchorStroke_Original: GetSet[String, this.type] = js.native
     
+    def anchorStyleFunc(): this.type = js.native
+    def anchorStyleFunc(v: js.Function1[/* Node */ Rect, Unit]): this.type = js.native
+    @JSName("anchorStyleFunc")
+    var anchorStyleFunc_Original: GetSet[Null | (js.Function1[/* Node */ Rect, Unit]), this.type] = js.native
+    @JSName("anchorStyleFunc")
+    def anchorStyleFunc_Union(): Null | (js.Function1[/* Node */ Rect, Unit]) = js.native
+    
     def attachTo(node: Node[NodeConfig]): this.type = js.native
     
     def borderDash(): js.Array[Double] = js.native

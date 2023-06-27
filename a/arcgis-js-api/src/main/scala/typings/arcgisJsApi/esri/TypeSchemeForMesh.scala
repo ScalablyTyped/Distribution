@@ -9,38 +9,38 @@ trait TypeSchemeForMesh
      with TypeScheme {
   
   /**
-    * The fill colors of the symbols comprising the theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
-    */
+  		 * The fill colors of the symbols comprising the theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
+  		 */
   var name: String
   
   /**
-    * The color of the fill symbol used to indicate features with no data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
-    */
+  		 * The color of the fill symbol used to indicate features with no data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the symbol (0 - 1).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
-    */
+  		 * The opacity of the symbol (0 - 1).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
+  		 */
   var opacity: Double
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForMesh)
+  		 */
   var tags: js.Array[String]
 }
 object TypeSchemeForMesh {

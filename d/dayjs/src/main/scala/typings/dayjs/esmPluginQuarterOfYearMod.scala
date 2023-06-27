@@ -31,12 +31,18 @@ object esmPluginQuarterOfYearMod extends Shortcut {
       def endOf(unit: OpUnitType): Dayjs = js.native
       def endOf(unit: QUnitType): Dayjs = js.native
       
+      def isAfter(): Boolean = js.native
+      def isAfter(date: Unit, unit: QUnitType): Boolean = js.native
       def isAfter(date: ConfigType): Boolean = js.native
       def isAfter(date: ConfigType, unit: QUnitType): Boolean = js.native
       
+      def isBefore(): Boolean = js.native
+      def isBefore(date: Unit, unit: QUnitType): Boolean = js.native
       def isBefore(date: ConfigType): Boolean = js.native
       def isBefore(date: ConfigType, unit: QUnitType): Boolean = js.native
       
+      def isSame(): Boolean = js.native
+      def isSame(date: Unit, unit: QUnitType): Boolean = js.native
       def isSame(date: ConfigType): Boolean = js.native
       def isSame(date: ConfigType, unit: QUnitType): Boolean = js.native
       

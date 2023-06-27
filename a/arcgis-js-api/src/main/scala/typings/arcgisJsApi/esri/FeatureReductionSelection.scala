@@ -12,9 +12,9 @@ trait FeatureReductionSelection
      with JSONSupport {
   
   /**
-    * The feature reduction type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html#type)
-    */
+  		 * The feature reduction type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html#type)
+  		 */
   var `type`: selection = js.native
 }

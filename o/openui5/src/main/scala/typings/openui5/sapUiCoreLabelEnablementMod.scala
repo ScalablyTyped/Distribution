@@ -13,8 +13,8 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
   val default: LabelEnablement = js.native
   
   /**
-    * @SINCE 1.28.0
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * @since 1.28.0
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Helper functionality for enhancement of a `Label` with common label functionality.
     * See:
@@ -23,7 +23,7 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
   trait LabelEnablement extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This function should be called on a label control to enrich its functionality.
       *
@@ -65,7 +65,7 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
     ): js.Array[String]
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Returns `true` when the given control is required (property 'required') or one of its referencing labels,
       * `false` otherwise.
@@ -81,7 +81,7 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
     ): Boolean
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Helper function for the `Label` control to render the HTML 'for' attribute.
       *

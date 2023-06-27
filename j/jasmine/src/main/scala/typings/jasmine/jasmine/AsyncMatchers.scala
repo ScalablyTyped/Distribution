@@ -78,7 +78,7 @@ trait AsyncMatchers[T, U] extends StObject {
   /**
     * Add some context for an expect.
     * @param message Additional context to show when the matcher fails.
-    * @checkReturnValue see https://tsetse.info/check-return-value
+    * @see see https://tsetse.info/check-return-value
     */
   def withContext(message: String): AsyncMatchers[T, U] = js.native
 }

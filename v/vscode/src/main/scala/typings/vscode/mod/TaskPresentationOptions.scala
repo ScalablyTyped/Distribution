@@ -12,6 +12,11 @@ trait TaskPresentationOptions extends StObject {
   var clear: js.UndefOr[Boolean] = js.undefined
   
   /**
+  		 * Controls whether the terminal is closed after executing the task.
+  		 */
+  var close: js.UndefOr[Boolean] = js.undefined
+  
+  /**
   		 * Controls whether the command associated with the task is echoed
   		 * in the user interface.
   		 */
@@ -53,6 +58,10 @@ object TaskPresentationOptions {
     inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    
+    inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     inline def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     

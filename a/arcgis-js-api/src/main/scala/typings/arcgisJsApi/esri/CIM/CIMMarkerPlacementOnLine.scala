@@ -10,15 +10,15 @@ trait CIMMarkerPlacementOnLine
      with CIMMarkerPlacementType {
   
   /**
-    * The location on a line where a marker will be placed. The direction of the line is determined by the direction in which the line was digitized.
-    */
+  			 * The location on a line where a marker will be placed. The direction of the line is determined by the direction in which the line was digitized.
+  			 */
   var relativeTo: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementOnLineRelativeTo * / any */ String
   ] = js.undefined
   
   /**
-    * The distances from a specified location on a line that a marker will be placed.
-    */
+  			 * The distances from a specified location on a line that a marker will be placed.
+  			 */
   var startPointOffset: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

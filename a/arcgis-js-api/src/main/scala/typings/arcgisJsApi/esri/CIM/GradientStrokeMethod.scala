@@ -11,16 +11,16 @@ sealed trait GradientStrokeMethod extends StObject
 object GradientStrokeMethod extends StObject {
   
   /**
-    * A gradient across the line.
-    */
+  			 * A gradient across the line.
+  			 */
   @js.native
   sealed trait AcrossLine
     extends StObject
        with GradientStrokeMethod
   
   /**
-    * A gradient along the line.
-    */
+  			 * A gradient along the line.
+  			 */
   @js.native
   sealed trait AlongLine
     extends StObject

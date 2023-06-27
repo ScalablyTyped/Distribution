@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandleOwnerProperties extends StObject {
   
   /**
-    * Handle registry to help manage `handles`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
-    */
+  		 * Handle registry to help manage `handles`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
+  		 */
   var handles: js.UndefOr[Handles] = js.undefined
 }
 object HandleOwnerProperties {

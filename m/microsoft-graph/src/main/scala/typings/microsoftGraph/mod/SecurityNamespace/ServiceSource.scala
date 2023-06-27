@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.microsoftAppGovernance
   - typings.microsoftGraph.microsoftGraphStrings.dataLossPrevention
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.microsoftDefenderForCloud
 */
 trait ServiceSource extends StObject
 object ServiceSource {
@@ -28,6 +29,8 @@ object ServiceSource {
   inline def microsoft365Defender: typings.microsoftGraph.microsoftGraphStrings.microsoft365Defender = "microsoft365Defender".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoft365Defender]
   
   inline def microsoftAppGovernance: typings.microsoftGraph.microsoftGraphStrings.microsoftAppGovernance = "microsoftAppGovernance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftAppGovernance]
+  
+  inline def microsoftDefenderForCloud: typings.microsoftGraph.microsoftGraphStrings.microsoftDefenderForCloud = "microsoftDefenderForCloud".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftDefenderForCloud]
   
   inline def microsoftDefenderForCloudApps: typings.microsoftGraph.microsoftGraphStrings.microsoftDefenderForCloudApps = "microsoftDefenderForCloudApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftDefenderForCloudApps]
   

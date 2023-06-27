@@ -1,7 +1,7 @@
 
 # Scala.js typings for remix-run__router
 
-Typings are for version 1.6.1
+Typings are for version 1.7.0
 
 ## Library description:
 Nested/Data-driven/Framework-agnostic Routing

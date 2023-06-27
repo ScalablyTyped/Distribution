@@ -9,13 +9,13 @@ trait `201ContentApplicationjsonInreplytoidHeadersLocation` extends StObject {
   /** @description Response */
   var `201`: ContentApplicationjsonInreplytoidHeadersLocation
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `201ContentApplicationjsonInreplytoidHeadersLocation` {
   
-  inline def apply(`201`: ContentApplicationjsonInreplytoidHeadersLocation, `403`: Content36, `422`: Content346): `201ContentApplicationjsonInreplytoidHeadersLocation` = {
+  inline def apply(`201`: ContentApplicationjsonInreplytoidHeadersLocation, `403`: Content41, `422`: Content414): `201ContentApplicationjsonInreplytoidHeadersLocation` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
@@ -28,8 +28,8 @@ object `201ContentApplicationjsonInreplytoidHeadersLocation` {
     
     inline def set201(value: ContentApplicationjsonInreplytoidHeadersLocation): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

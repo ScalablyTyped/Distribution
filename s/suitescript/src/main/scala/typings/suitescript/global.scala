@@ -14,7 +14,6 @@ object global {
     * create a subrecord on body field on the current record on a page.
     * @restriction supported in client and user event scripts only.
     * @param {string}    fldnam body field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param fldnam
@@ -25,7 +24,6 @@ object global {
     * edit a subrecord on body field on the current record on a page.
     * @restriction supported in client and user event scripts only.
     * @param {string}    fldnam body field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param fldnam
@@ -146,7 +144,6 @@ object global {
     * @restriction supported in client and user event scripts only.
     * @param {string}    type sublist name
     * @param {string}    fldnam sublist field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param type
@@ -362,7 +359,6 @@ object global {
     * @restriction supported in client and user event scripts only.
     * @param {string}    type sublist name
     * @param {string}    fldnam sublist field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param type
@@ -946,7 +942,6 @@ object global {
     *
     * @param {string} type sublist name
     * @param {int} [line] line number at which to insert a new line.
-    * @return{void}
     *
     * @since 2005.0
     * @param type
@@ -1177,7 +1172,6 @@ object global {
     * @restriction Client SuiteScript only.
     *
     * @param {string} type sublist name
-    * @return{void}
     *
     * @since 2005.0
     * @param type
@@ -1189,7 +1183,6 @@ object global {
     * @restriction supported in client and user event scripts only.
     * @param {string}    type sublist name
     * @param {string}    fldnam sublist field name
-    * @retun {void}
     *
     * @since 2011.2
     * @param type
@@ -1776,7 +1769,6 @@ object global {
     * @param {int}    linenum line number (1-based)
     * @param {string} datetime value
     * @param {string} timezone value
-    * @retun {void}
     *
     * @since 2013.2
     * @param type
@@ -1830,7 +1822,6 @@ object global {
     * @param {string}    fldnam sublist field name
     * @param {int}    linenum line number (1-based)
     * @param {string} value
-    * @retun {void}
     *
     * @since 2005.0
     * @param type
@@ -2083,7 +2074,6 @@ object global {
     * @restriction supported in client and user event scripts only.
     * @param {string}    type sublist name
     * @param {string}    fldnam sublist field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param type
@@ -2096,7 +2086,6 @@ object global {
     * @restriction supported in client and user event scripts only.
     * @param {string}    type sublist name
     * @param {string}    fldnam sublist field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param type
@@ -2176,7 +2165,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       * @return
@@ -2189,7 +2177,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       * @return
@@ -2202,7 +2189,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       * @return
@@ -2215,7 +2201,6 @@ object global {
       * @return {int}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       * @return
@@ -2228,7 +2213,6 @@ object global {
       * @return {string[]}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       */
@@ -2240,7 +2224,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjError
       *
       * @since 2008.2
       * @return
@@ -2290,7 +2273,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjSearchColumn
       *
       * @since 2009.2
       * @return
@@ -2303,7 +2285,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjSearchColumn
       * @since 2008.1
       * @return
       */
@@ -2315,7 +2296,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjSearchColumn
       *
       * @since 2009.1
       * @return
@@ -2328,7 +2308,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjSearchColumn
       * @since 2008.1
       * @return
       */
@@ -2340,7 +2319,6 @@ object global {
       * @return {string}
       *
       * @method
-      * @memberOf nlobjSearchColumn
       * @since 2008.1
       * @return
       */
@@ -2356,7 +2334,6 @@ object global {
       * @param {boolean} sort if not set, defaults to false, which returns column data in ascending order.
       *
       * @method
-      * @memberOf nlobjSearchColumn
       *
       * @since 2010.1
       * @param order
@@ -2370,7 +2347,6 @@ object global {
     * remove a subrecord on body field on the current record on a page.
     * @restriction supported in client and user event scripts only.
     * @param {string}    fldnam body field name
-    * @retun {void}
     *
     * @since 2011.2
     * @param fldnam
@@ -2381,7 +2357,6 @@ object global {
     * view a subrecord on body field on the current record on a page.
     * @restriction supported in client and user event scripts only.
     * @param {string}    fldnam body field name
-    * @retun {nlobjSubrecord}
     *
     * @since 2011.2
     * @param fldnam

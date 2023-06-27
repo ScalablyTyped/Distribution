@@ -151,7 +151,7 @@ object system {
     inline def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("completeCustomTouchCalibration")(pairs.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+      * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
       * Enables/disables the unified desktop feature.
       * Note that this simply enables the feature, but will not change the actual desktop mode.
@@ -162,7 +162,7 @@ object system {
     inline def enableUnifiedDesktop(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUnifiedDesktop")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+      * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
       * @description Requests the layout info for all displays.
       * @since Chrome 53
       * @export
@@ -225,7 +225,7 @@ object system {
     inline def overscanCalibrationStart(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationStart")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+      * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
       * Set the layout for all displays.
       * Any display not included will use the default layout.
@@ -239,7 +239,7 @@ object system {
     inline def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+      * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
       * @description
       * Updates the properties for the display specified by **id**,
       * according to the information provided in **info**.
@@ -253,7 +253,7 @@ object system {
     
     inline def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
+      * @requires CrOS Kiosk app -Chrome OS Kiosk apps only
       * @since Chrome 65.
       * @description
       * Sets the display mode to the specified mirror mode.
@@ -323,7 +323,7 @@ object system {
   // System Power Source //
   /////////////////////////
   /**
-    * @requires(CrOS Kiosk) Chrome OS kiosk app.
+    * @requires CrOS Kiosk -Chrome OS kiosk app.
     * @requires Permissions: 'system.powerSource'
     * @description The chrome.system.powerSource API allows Chrome Kiosk Apps to query the state of connected power sources.
     * @since Latest

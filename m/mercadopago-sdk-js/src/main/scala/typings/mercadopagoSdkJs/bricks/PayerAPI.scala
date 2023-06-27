@@ -10,6 +10,8 @@ trait PayerAPI extends StObject {
   
   var email: js.UndefOr[String] = js.undefined
   
+  var entity_type: js.UndefOr[EntityType] = js.undefined
+  
   var first_name: js.UndefOr[String] = js.undefined
   
   var identification: js.UndefOr[PayerIdentification] = js.undefined
@@ -33,6 +35,10 @@ object PayerAPI {
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setEntity_type(value: EntityType): Self = StObject.set(x, "entity_type", value.asInstanceOf[js.Any])
+    
+    inline def setEntity_typeUndefined: Self = StObject.set(x, "entity_type", js.undefined)
     
     inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     

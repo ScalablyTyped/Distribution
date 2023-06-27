@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapViewTakeScreenshotOptionsArea extends StObject {
   
   /**
-    * The height of the area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The height of the area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The width of the area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
   
   /**
-    * The x coordinate of the area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The x coordinate of the area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * The y coordinate of the area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
-    */
+  		 * The y coordinate of the area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#takeScreenshot)
+  		 */
   var y: js.UndefOr[Double] = js.undefined
 }
 object MapViewTakeScreenshotOptionsArea {

@@ -12,25 +12,25 @@ trait ImageMediaInfo
      with MediaInfo {
   
   /**
-    * Refresh interval of the layer in minutes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#refreshInterval)
-    */
+  		 * Refresh interval of the layer in minutes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#refreshInterval)
+  		 */
   var refreshInterval: Double = js.native
   
   /**
-    * The type of popup element.
-    *
-    * @default image
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#type)
-    */
+  		 * The type of popup element.
+  		 *
+  		 * @default image
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#type)
+  		 */
   val `type`: String = js.native
   
   /**
-    * Defines the value format of the image media element and how the images should be retrieved.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#value)
-    */
+  		 * Defines the value format of the image media element and how the images should be retrieved.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ImageMediaInfo.html#value)
+  		 */
   var value: ImageMediaInfoValue = js.native
 }

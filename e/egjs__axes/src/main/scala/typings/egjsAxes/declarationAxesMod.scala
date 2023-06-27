@@ -137,7 +137,8 @@ object declarationAxesMod {
   - js.Any because Inheritance from two classes. Inlined 
   - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - typings.egjsAxes.declarationTypesMod.AxesReactiveState because Inheritance from two classes. Inlined  */ @js.native
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.egjsAxes.declarationTypesMod.AxesReactiveState because Inheritance from two classes. Inlined holding */ @js.native
   trait Axes
     extends typings.egjsComponent.mod.default[AxesEvents]
        with ReactiveSubscribe[AxesReactiveState] {
@@ -162,6 +163,10 @@ object declarationAxesMod {
     
     def get(): Axis = js.native
     def get(axes: js.Array[String]): Axis = js.native
+    
+    def holding: Boolean = js.native
+    @JSName("holding")
+    var holding_FAxes: Boolean = js.native
     
     var inputObserver: InputObserver = js.native
     

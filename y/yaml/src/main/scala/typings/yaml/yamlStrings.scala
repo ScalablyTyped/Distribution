@@ -32,6 +32,12 @@ object yamlStrings {
   inline def BAD_ALIAS: BAD_ALIAS = "BAD_ALIAS".asInstanceOf[BAD_ALIAS]
   
   @js.native
+  sealed trait BAD_COLLECTION_TYPE
+    extends StObject
+       with ErrorCode
+  inline def BAD_COLLECTION_TYPE: BAD_COLLECTION_TYPE = "BAD_COLLECTION_TYPE".asInstanceOf[BAD_COLLECTION_TYPE]
+  
+  @js.native
   sealed trait BAD_DIRECTIVE
     extends StObject
        with ErrorCode

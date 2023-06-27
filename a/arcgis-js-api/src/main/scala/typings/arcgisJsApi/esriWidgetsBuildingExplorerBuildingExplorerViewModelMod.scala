@@ -11,10 +11,10 @@ object esriWidgetsBuildingExplorerBuildingExplorerViewModelMod {
   @JSImport("esri/widgets/BuildingExplorer/BuildingExplorerViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [BuildingExplorer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html)
-    */
+  		 * Provides the logic for the [BuildingExplorer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingExplorerViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingExplorerViewModel {

@@ -15,7 +15,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Correspond to the <length> basic data type. */
+/**
+  * Correspond to the <length> basic data type.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGLength)
+  */
 trait SVGLength extends StObject {
   
   /* standard dom */

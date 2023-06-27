@@ -14,6 +14,9 @@ inline def APIKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic(
 inline def APIToken: String = ^.asInstanceOf[js.Dynamic].selectDynamic("APIToken").asInstanceOf[String]
 inline def APIToken_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIToken")(x.asInstanceOf[js.Any])
 
+inline def TIDToken: js.Object = ^.asInstanceOf[js.Dynamic].selectDynamic("TIDToken").asInstanceOf[js.Object]
+inline def TIDToken_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIDToken")(x.asInstanceOf[js.Any])
+
 inline def baseApiUrl: String = ^.asInstanceOf[js.Dynamic].selectDynamic("baseApiUrl").asInstanceOf[String]
 inline def baseApiUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseApiUrl")(x.asInstanceOf[js.Any])
 
@@ -39,6 +42,8 @@ inline def setAPIToken(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDy
 
 inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def setRTLTextPlugin(pluginURL: String, callback: js.Function1[/* error */ js.Error, Unit], deferred: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRTLTextPlugin")(pluginURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], deferred.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setTIDToken(tidToken: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTIDToken")(tidToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def supported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supported")().asInstanceOf[Boolean]
 inline def supported(options: FailIfMajorPerformanceCaveat): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supported")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]

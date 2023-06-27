@@ -9,17 +9,17 @@ trait CIMGeometricEffectRotate
      with CIMGeometricEffect {
   
   /**
-    * The amount of rotation for the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectRotate)
-    */
+  		 * The amount of rotation for the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectRotate)
+  		 */
   var angle: Double
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectRotate)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectRotate)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate

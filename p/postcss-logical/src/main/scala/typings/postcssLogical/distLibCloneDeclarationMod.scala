@@ -11,5 +11,5 @@ object distLibCloneDeclarationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cloneDeclaration(declaration: Declaration, value: String, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneDeclaration")(declaration.asInstanceOf[js.Any], value.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cloneDeclaration(declaration: Declaration, value: String, prop: String): js.Array[Declaration] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneDeclaration")(declaration.asInstanceOf[js.Any], value.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Declaration]]
 }

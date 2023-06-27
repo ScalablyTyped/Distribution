@@ -11,10 +11,10 @@ object esriPortalPortalUserMod {
   @JSImport("esri/portal/PortalUser", JSImport.Namespace)
   @js.native
   /**
-    * Represents a registered user of the [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html)
-    */
+  		 * Represents a registered user of the [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html)
+  		 */
   open class ^ ()
     extends StObject
        with PortalUser {

@@ -7,85 +7,85 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerInfo extends StObject {
   
   /**
-    * Indicates whether to enable the ability to create new features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable the ability to create new features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var addEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the attachments widget in the Editor's UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to display the attachments widget in the Editor's UI.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var allowAttachments: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * _(Since 4.26)_ Indicates whether to enable or disable attachments while creating features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * _(Since 4.26)_ Indicates whether to enable or disable attachments while creating features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var attachmentsOnCreateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * _(Since 4.26)_ Indicates whether to enable or disable attachments while updating existing features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * _(Since 4.26)_ Indicates whether to enable or disable attachments while updating existing features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var attachmentsOnUpdateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to enable or disable attribute updates from the feature's form.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable or disable attribute updates from the feature's form.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var attributeUpdatesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to enable the ability to delete features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable the ability to delete features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var deleteEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to enable editing on the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable editing on the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A template that defines the feature's form content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * A template that defines the feature's form content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var formTemplate: js.UndefOr[FormTemplate] = js.undefined
   
   /**
-    * Indicates whether to enable or disable geometry updates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable or disable geometry updates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var geometryUpdatesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The associated feature layer containing the editable fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
-  var layer: FeatureLayer
+  		 * The associated layer containing the fields to edit.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
+  var layer: FeatureLayer | SceneLayer | SubtypeSublayer | SubtypeGroupLayer
   
   /**
-    * Indicates whether to enable the ability to update existing features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
-    */
+  		 * Indicates whether to enable the ability to update existing features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#LayerInfo)
+  		 */
   var updateEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object LayerInfo {
   
-  inline def apply(layer: FeatureLayer): LayerInfo = {
+  inline def apply(layer: FeatureLayer | SceneLayer | SubtypeSublayer | SubtypeGroupLayer): LayerInfo = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerInfo]
   }
@@ -129,7 +129,7 @@ object LayerInfo {
     
     inline def setGeometryUpdatesEnabledUndefined: Self = StObject.set(x, "geometryUpdatesEnabled", js.undefined)
     
-    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | SubtypeSublayer | SubtypeGroupLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
     

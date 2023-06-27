@@ -12,7 +12,7 @@ object sapUiFlWriteApiFeaturesAPIMod extends Shortcut {
   val default: FeaturesAPI = js.native
   
   /**
-    * @SINCE 1.70
+    * @since 1.70
     *
     * Provides an API to determine which features are available for flexibility.
     */

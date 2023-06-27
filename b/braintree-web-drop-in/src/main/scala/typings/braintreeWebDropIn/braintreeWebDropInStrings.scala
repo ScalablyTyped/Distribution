@@ -1,6 +1,7 @@
 package typings.braintreeWebDropIn
 
 import typings.braintreeWebDropIn.mod.ActiveView
+import typings.braintreeWebDropIn.mod.HostedFieldsStateEvents
 import typings.braintreeWebDropIn.mod.UpdatableConfigurationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,6 +57,54 @@ object braintreeWebDropInStrings {
     extends StObject
        with ActiveView
   inline def card: card = "card".asInstanceOf[card]
+  
+  @js.native
+  sealed trait cardColonbinAvailable
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonbinAvailable: cardColonbinAvailable = "card:binAvailable".asInstanceOf[cardColonbinAvailable]
+  
+  @js.native
+  sealed trait cardColonblur
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonblur: cardColonblur = "card:blur".asInstanceOf[cardColonblur]
+  
+  @js.native
+  sealed trait cardColoncardTypeChange
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColoncardTypeChange: cardColoncardTypeChange = "card:cardTypeChange".asInstanceOf[cardColoncardTypeChange]
+  
+  @js.native
+  sealed trait cardColonempty
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonempty: cardColonempty = "card:empty".asInstanceOf[cardColonempty]
+  
+  @js.native
+  sealed trait cardColonfocus
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonfocus: cardColonfocus = "card:focus".asInstanceOf[cardColonfocus]
+  
+  @js.native
+  sealed trait cardColoninputSubmitRequest
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColoninputSubmitRequest: cardColoninputSubmitRequest = "card:inputSubmitRequest".asInstanceOf[cardColoninputSubmitRequest]
+  
+  @js.native
+  sealed trait cardColonnotEmpty
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonnotEmpty: cardColonnotEmpty = "card:notEmpty".asInstanceOf[cardColonnotEmpty]
+  
+  @js.native
+  sealed trait cardColonvalidityChange
+    extends StObject
+       with HostedFieldsStateEvents
+  inline def cardColonvalidityChange: cardColonvalidityChange = "card:validityChange".asInstanceOf[cardColonvalidityChange]
   
   @js.native
   sealed trait changeActiveView extends StObject

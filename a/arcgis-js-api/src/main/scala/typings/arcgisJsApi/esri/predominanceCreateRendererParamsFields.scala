@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait predominanceCreateRendererParamsFields extends StObject {
   
   /**
-    * The label describing the field name (or category) in the legend.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label describing the field name (or category) in the legend.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of a numeric field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
-    */
+  		 * The name of a numeric field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
+  		 */
   var name: String
 }
 object predominanceCreateRendererParamsFields {

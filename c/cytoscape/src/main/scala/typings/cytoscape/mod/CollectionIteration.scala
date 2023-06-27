@@ -62,6 +62,9 @@ trait CollectionIteration[TOut, TIn]
     thisArg: Any
   ): this.type = js.native
   
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[js.Iterator[TOut]] = js.native
+  
   /**
     * Get the last element in the collection.
     */

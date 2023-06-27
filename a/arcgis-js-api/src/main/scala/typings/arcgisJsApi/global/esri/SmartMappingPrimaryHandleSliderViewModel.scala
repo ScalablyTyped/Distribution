@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SmartMappingPrimaryHandleSliderViewModel")
 @js.native
 /**
-  * Shared properties for sliders that have a [primaryHandle](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled) option.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html)
-  */
+		 * Shared properties for sliders that have a [primaryHandle](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled) option.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html)
+		 */
 open class SmartMappingPrimaryHandleSliderViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.SmartMappingPrimaryHandleSliderViewModel {

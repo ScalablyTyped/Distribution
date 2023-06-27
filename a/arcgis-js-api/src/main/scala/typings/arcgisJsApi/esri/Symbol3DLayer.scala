@@ -19,9 +19,9 @@ trait Symbol3DLayer
      with JSONSupport {
   
   /**
-    * The 3D symbol layer type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html#type)
-    */
+  		 * The 3D symbol layer type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html#type)
+  		 */
   val `type`: icon | `object` | line | path | fill | water | extrude | text = js.native
 }

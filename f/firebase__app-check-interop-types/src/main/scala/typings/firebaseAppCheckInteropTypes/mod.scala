@@ -45,6 +45,10 @@ object mod {
     // FirebaseAppAttestation changes.
     def addTokenListener(listener: AppCheckTokenListener): Unit = js.native
     
+    // Always returns a fresh limited-use token suitable for Replay Protection.
+    // The returned token must be used and consumed as soon as possible.
+    def getLimitedUseToken(): js.Promise[AppCheckTokenResult] = js.native
+    
     // Get the current AttestationToken. Attaches to the most recent in-flight request if one
     // is present. Returns null if no token is present and no token requests are in-flight.
     def getToken(): js.Promise[AppCheckTokenResult] = js.native

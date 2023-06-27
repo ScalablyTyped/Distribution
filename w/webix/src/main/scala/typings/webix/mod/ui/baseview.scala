@@ -12,6 +12,12 @@ trait baseview extends StObject {
   
   @JSName("$getSize")
   def $getSize(): js.Array[Any] = js.native
+  @JSName("$getSize")
+  def $getSize(dx: Double): js.Array[Any] = js.native
+  @JSName("$getSize")
+  def $getSize(dx: Double, dy: Double): js.Array[Any] = js.native
+  @JSName("$getSize")
+  def $getSize(dx: Unit, dy: Double): js.Array[Any] = js.native
   
   @JSName("$height")
   var $height: Double = js.native
@@ -42,7 +48,10 @@ trait baseview extends StObject {
   
   var config: baseviewConfig = js.native
   
+  def define(property: String): Unit = js.native
   def define(property: String, value: Any): Unit = js.native
+  def define(property: obj): Unit = js.native
+  def define(property: obj, value: Any): Unit = js.native
   
   def destructor(): Unit = js.native
   
@@ -56,7 +65,7 @@ trait baseview extends StObject {
   
   def getNode(): obj = js.native
   
-  def getParentView(): obj = js.native
+  def getParentView(): typings.webix.webix.ui.baseview = js.native
   
   def getTopParentView(): typings.webix.webix.ui.baseview = js.native
   
@@ -68,12 +77,12 @@ trait baseview extends StObject {
   
   var name: String = js.native
   
-  def queryView(config: String): obj | js.Array[Any] = js.native
-  def queryView(config: String, mode: String): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
-  def queryView(config: obj): obj | js.Array[Any] = js.native
-  def queryView(config: obj, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: String): Any = js.native
+  def queryView(config: String, mode: String): Any = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
+  def queryView(config: obj): Any = js.native
+  def queryView(config: obj, mode: String): Any = js.native
   
   def resize(): Unit = js.native
   

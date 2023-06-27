@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.RelationshipContent")
 @js.native
 /**
-  * A `RelationshipContent` popup element represents a relationship element associated with a feature.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html)
-  */
+		 * A `RelationshipContent` popup element represents a relationship element associated with a feature.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html)
+		 */
 open class RelationshipContent ()
   extends StObject
      with typings.arcgisJsApi.esri.RelationshipContent {
   def this(properties: RelationshipContentProperties) = this()
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

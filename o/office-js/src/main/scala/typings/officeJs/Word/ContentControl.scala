@@ -2,6 +2,7 @@ package typings.officeJs.Word
 
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
+import typings.officeJs.OfficeExtension.EventHandlers
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.Word.InsertLocation.after
 import typings.officeJs.Word.InsertLocation.before
@@ -55,7 +56,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+  * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
   *
   * @remarks
   * [Api set: WordApi 1.1]
@@ -66,7 +67,7 @@ trait ContentControl
      with ClientObject {
   
   /**
-    * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+    * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -74,7 +75,7 @@ trait ContentControl
   var appearance: ContentControlAppearance | BoundingBox | Tags | Hidden = js.native
   
   /**
-    * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+    * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -82,7 +83,7 @@ trait ContentControl
   var cannotDelete: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+    * Specifies a value that indicates whether the user can edit the contents of the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -98,7 +99,7 @@ trait ContentControl
   def clear(): Unit = js.native
   
   /**
-    * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+    * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -131,7 +132,7 @@ trait ContentControl
     * Gets the collection of endnotes in the content control.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -155,7 +156,7 @@ trait ContentControl
     * Gets the collection of footnotes in the content control.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -166,6 +167,19 @@ trait ContentControl
     * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
+  
+  /**
+    * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
   
   /**
     * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
@@ -402,6 +416,56 @@ trait ContentControl
   def load(propertyNames: js.Array[String]): ContentControl = js.native
   
   /**
+    * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onDataChanged: EventHandlers[ContentControlDataChangedEventArgs] = js.native
+  
+  /**
+    * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onDeleted: EventHandlers[ContentControlDeletedEventArgs] = js.native
+  
+  /**
+    * Occurs when the content control is entered.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onEntered: EventHandlers[ContentControlEnteredEventArgs] = js.native
+  
+  /**
+    * Occurs when the content control is exited, for example, when the cursor leaves the content control.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onExited: EventHandlers[ContentControlExitedEventArgs] = js.native
+  
+  /**
+    * Occurs when selection within the content control is changed.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onSelectionChanged: EventHandlers[ContentControlSelectionChangedEventArgs] = js.native
+  
+  /**
     * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
     *
     * @remarks
@@ -466,7 +530,7 @@ trait ContentControl
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+    * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -474,7 +538,7 @@ trait ContentControl
   var placeholderText: String = js.native
   
   /**
-    * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+    * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -542,7 +606,7 @@ trait ContentControl
   def split(delimiters: js.Array[String], multiParagraphs: Unit, trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
   
   /**
-    * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -550,15 +614,15 @@ trait ContentControl
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
-    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -574,7 +638,7 @@ trait ContentControl
   val tables: TableCollection = js.native
   
   /**
-    * Gets or sets a tag to identify a content control.
+    * Specifies a tag to identify a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -590,7 +654,7 @@ trait ContentControl
   val text: String = js.native
   
   /**
-    * Gets or sets the title for a content control.
+    * Specifies the title for a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -609,7 +673,7 @@ trait ContentControl
   def track(): ContentControl = js.native
   
   /**
-    * Gets the content control type. Only rich text content controls are supported currently.
+    * Gets the content control type. Only rich text and plain text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]

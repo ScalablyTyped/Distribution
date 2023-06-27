@@ -635,6 +635,8 @@ object mod extends Shortcut {
         js.Object
       ]
     
+    var search: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
+    
     var section: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
     
     var select: CreateStyledComponent[
@@ -1401,6 +1403,10 @@ object mod extends Shortcut {
               js.Object
             ]
       ): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      
+      inline def setSearch(
+        value: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
+      ): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       inline def setSection(
         value: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]

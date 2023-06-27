@@ -14,7 +14,7 @@ object typesUtilsLoadOptionsFromAttributesMod {
   
   inline def camelCaseToKebabCase(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseToKebabCase")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def loadOptionsFromAttributes(element: HTMLElement, transform: Record[String, Transformation]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOptionsFromAttributes")(element.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def loadOptionsFromAttributes(element: HTMLElement, transform: Record[String, Transformation]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOptionsFromAttributes")(element.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def transformAttributeValue(value: String, transformation: Transformation): js.UndefOr[
     String | Double | Boolean | js.Function | (Record[String, String]) | js.Array[String]

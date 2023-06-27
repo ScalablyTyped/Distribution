@@ -47,8 +47,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: js.Function
     ) = this()
@@ -71,8 +70,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Boolean
     ) = this()
@@ -95,8 +93,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: js.Function
     ) = this()
@@ -119,8 +116,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Boolean
     ) = this()
@@ -143,8 +139,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: js.Function,
       /**
@@ -175,8 +170,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Boolean,
       /**
@@ -207,8 +201,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Unit,
       /**
@@ -239,8 +232,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: js.Function,
       /**
@@ -271,8 +263,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Boolean,
       /**
@@ -303,8 +294,7 @@ object sapUiModelSorterMod {
       * function that has been specified to create the group header for the control aggregation; see {@link sap.ui.base.ManagedObject#bindAggregation}.
       * **Note:** Grouping via `vGroup=true` is only possible (and only makes sense) for the primary sort property.
       * A more complicated grouping is possible by providing a grouping function. The sort order needs to fit
-      * to the grouping also in this case. See also {@link topic:ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping,
-      * and Filtering for List Binding}.
+      * to the grouping also in this case. See also {@link https://ui5.sap.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc Sorting, Grouping, and Filtering for List Binding}.
       */
     vGroup: Unit,
       /**

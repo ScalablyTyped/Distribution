@@ -10,31 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrimitiveOverrideValueExpressionInfo extends StObject {
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var expression: String
   
   /**
-    * The name of the expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * The name of the expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The return type of the expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * The return type of the expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var returnType: js.UndefOr[Default | typings.arcgisJsApi.arcgisJsApiStrings.String | Numeric] = js.undefined
   
   /**
-    * The human readable text that describes the expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * The human readable text that describes the expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   var `type`: CIMExpressionInfo

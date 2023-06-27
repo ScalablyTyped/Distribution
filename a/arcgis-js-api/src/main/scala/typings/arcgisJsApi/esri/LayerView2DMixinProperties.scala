@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerView2DMixinProperties extends StObject {
   
   /**
-    * The featureEffect can be used to draw attention features of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#featureEffect)
-    */
+  		 * The featureEffect can be used to draw attention features of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#featureEffect)
+  		 */
   var featureEffect: js.UndefOr[FeatureEffectProperties] = js.undefined
   
   /**
-    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#timeExtent) filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#filter)
-    */
+  		 * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html#timeExtent) filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#filter)
+  		 */
   var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
-    * The maximum number of features that can be displayed at a time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#maximumNumberOfFeatures)
-    */
+  		 * The maximum number of features that can be displayed at a time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#maximumNumberOfFeatures)
+  		 */
   var maximumNumberOfFeatures: js.UndefOr[Double] = js.undefined
   
   /**
-    * Signifies whether the maximum number of features has been exceeded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#maximumNumberOfFeaturesExceeded)
-    */
+  		 * Signifies whether the maximum number of features has been exceeded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView2DMixin.html#maximumNumberOfFeaturesExceeded)
+  		 */
   var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.undefined
 }
 object LayerView2DMixinProperties {

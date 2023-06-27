@@ -106,8 +106,8 @@ open class counter ()
   def prev(): Unit = js.native
   def prev(step: Double): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def refresh(): Unit = js.native
   

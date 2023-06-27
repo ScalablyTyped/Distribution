@@ -140,6 +140,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -506,6 +507,8 @@ object libComponentsUishellMod {
   inline def Content_samp(props: ContentIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Content_script(props: ContentIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_search(props: ContentIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Content_section(props: ContentIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

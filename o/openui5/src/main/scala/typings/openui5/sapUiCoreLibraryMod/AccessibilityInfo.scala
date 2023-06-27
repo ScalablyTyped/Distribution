@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessibilityInfo extends StObject {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * A list of elements or controls that are aggregated by the given control (e.g. when the control is a layout).
     * Primitive values in the list will be ignored. **Note:** Children should only be provided when it is helpful
@@ -18,7 +18,7 @@ trait AccessibilityInfo extends StObject {
   var children: js.UndefOr[js.Array[default]] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Describes the most relevant control state (e.g. the input's value) - it should be a translated text.
     * **Note:** The type and the enabled/editable state shouldn`t be handled here.
@@ -26,42 +26,42 @@ trait AccessibilityInfo extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is editable. If not relevant, it shouldn`t be set or `null` can be provided.
     */
   var editable: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is enabled. If not relevant, it shouldn`t be set or `null` can be provided.
     */
   var enabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control can get the focus.
     */
   var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is readonly. If not relevant, it shouldn`t be set or `null` can be provided.
     */
   var readonly: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The WAI-ARIA role which is implemented by the control.
     */
   var role: js.UndefOr[String] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * A translated text that represents the control type. Might correlate with the role.
     */

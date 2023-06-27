@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.std.FileList
+import typings.openui5.sapUiCoreDateUi5dateMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `14` extends StObject {
   
   /**
-    * The current files.
+    * Largest value allowed for this type; values for constraints must use the same type as configured via
+    * `oFormatOptions.source`. Use {@link module:sap/ui/core/date/UI5Date.getInstance} to create new date instances
     */
-  var files: js.UndefOr[FileList] = js.undefined
+  var maximum: js.UndefOr[js.Date | default | String] = js.undefined
+  
+  /**
+    * Smallest value allowed for this type; values for constraints must use the same type as configured via
+    * `oFormatOptions.source`. Use {@link module:sap/ui/core/date/UI5Date.getInstance} to create new date instances
+    */
+  var minimum: js.UndefOr[js.Date | default | String] = js.undefined
 }
 object `14` {
   
@@ -22,8 +29,12 @@ object `14` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `14`] (val x: Self) extends AnyVal {
     
-    inline def setFiles(value: FileList): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: js.Date | default | String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    
+    inline def setMinimum(value: js.Date | default | String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
   }
 }

@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditsResult extends StObject {
   
   /**
-    * Result of adding attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of adding attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var addAttachmentResults: js.Array[FeatureEditResult]
   
   /**
-    * Result of adding features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of adding features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var addFeatureResults: js.Array[FeatureEditResult]
   
   /**
-    * Result of deleting attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of deleting attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var deleteAttachmentResults: js.Array[FeatureEditResult]
   
   /**
-    * Result of deleting features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of deleting features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var deleteFeatureResults: js.Array[FeatureEditResult]
   
   /**
-    * The time edits were applied to the feature service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * The time edits were applied to the feature service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var editMoment: js.UndefOr[Double] = js.undefined
   
   /**
-    * Edited features as result of editing a feature that participates in composite relationships in a database.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Edited features as result of editing a feature that participates in composite relationships in a database.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var editedFeatureResults: js.UndefOr[js.Array[EditedFeatureResult]] = js.undefined
   
   /**
-    * Result of updating attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of updating attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var updateAttachmentResults: js.Array[FeatureEditResult]
   
   /**
-    * Result of updating features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
-    */
+  		 * Result of updating features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditsResult)
+  		 */
   var updateFeatureResults: js.Array[FeatureEditResult]
 }
 object EditsResult {

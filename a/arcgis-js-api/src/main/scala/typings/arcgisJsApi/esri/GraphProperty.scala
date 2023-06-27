@@ -30,104 +30,105 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GraphProperty
   extends StObject
-     with Accessor {
+     with Accessor
+     with JSONSupport {
   
   /**
-    * The display name for the property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#alias)
-    */
+  		 * The display name for the property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#alias)
+  		 */
   var alias: String = js.native
   
   /**
-    * Specifies a default value for the object type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#defaultValue)
-    */
+  		 * Specifies a default value for the object type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#defaultValue)
+  		 */
   var defaultValue: Any = js.native
   
   /**
-    * Specifies whether the property is visible by default.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#defaultVisibility)
-    */
+  		 * Specifies whether the property is visible by default.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#defaultVisibility)
+  		 */
   var defaultVisibility: Boolean = js.native
   
   /**
-    * Specifies whether the property is editable.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#editable)
-    */
+  		 * Specifies whether the property is editable.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#editable)
+  		 */
   var editable: Boolean = js.native
   
   /**
-    * Specifies the field type for the property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#fieldType)
-    */
+  		 * Specifies the field type for the property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#fieldType)
+  		 */
   var fieldType: esriFieldTypeSmallInteger | esriFieldTypeInteger | esriFieldTypeSingle | esriFieldTypeDouble | esriFieldTypeString | esriFieldTypeDate | esriFieldTypeOID | esriFieldTypeGeometry | esriFieldTypeBlob | esriFieldTypeRaster | esriFieldTypeGUID | esriFieldTypeGlobalID | esriFieldTypeXML | esriFieldTypeBigInteger = js.native
   
   /**
-    * Specifies the geometry type for the property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#geometryType)
-    */
+  		 * Specifies the geometry type for the property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#geometryType)
+  		 */
   var geometryType: String = js.native
   
   /**
-    * Specifies whether the property has an m-value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#hasM)
-    */
+  		 * Specifies whether the property has an m-value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#hasM)
+  		 */
   var hasM: Boolean = js.native
   
   /**
-    * Specifies whether property has a z-value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#hasZ)
-    */
+  		 * Specifies whether property has a z-value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#hasZ)
+  		 */
   var hasZ: Boolean = js.native
   
   /**
-    * The name of the property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#name)
-    */
+  		 * The name of the property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * Specifies whether the property can be `null`.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#nullable)
-    */
+  		 * Specifies whether the property can be `null`.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#nullable)
+  		 */
   var nullable: Boolean = js.native
   
   /**
-    * Specifies whether the property is required.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#required)
-    */
+  		 * Specifies whether the property is required.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#required)
+  		 */
   var required: Boolean = js.native
   
   /**
-    * Specifies the role of the property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#role)
-    */
+  		 * Specifies the role of the property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#role)
+  		 */
   var role: esriGraphPropertyRegular | esriGraphPropertyDocumentName | esriGraphPropertyDocumentTitle | esriGraphPropertyDocumentUrl | esriGraphPropertyDocumentText | esriGraphPropertyDocumentKeywords | esriGraphPropertyDocumentContentType | esriGraphPropertyDocumentMetadata | esriGraphPropertyDocumentFileExtension = js.native
   
   /**
-    * Specifies if the property is system maintained.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#systemMaintained)
-    */
+  		 * Specifies if the property is system maintained.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#systemMaintained)
+  		 */
   var systemMaintained: Boolean = js.native
 }

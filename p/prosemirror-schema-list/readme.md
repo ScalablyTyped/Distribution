@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-schema-list
 
-Typings are for version 1.2.2
+Typings are for version 1.3.0
 
 ## Library description:
 List-related schema elements and commands for ProseMirror

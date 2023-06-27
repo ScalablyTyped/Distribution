@@ -12,16 +12,16 @@ trait RasterColormapRenderer
      with JSONSupport {
   
   /**
-    * A colormap info array containing mappings for pixel and RGB color values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#colormapInfos)
-    */
+  		 * A colormap info array containing mappings for pixel and RGB color values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#colormapInfos)
+  		 */
   var colormapInfos: js.Array[ColormapInfo] = js.native
   
   /**
-    * The type of Renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#type)
-    */
+  		 * The type of Renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#type)
+  		 */
   val `type`: `raster-colormap` = js.native
 }

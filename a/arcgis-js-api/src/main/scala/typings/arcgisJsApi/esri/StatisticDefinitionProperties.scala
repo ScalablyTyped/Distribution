@@ -19,33 +19,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StatisticDefinitionProperties extends StObject {
   
   /**
-    * Defines the field for which statistics will be calculated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#onStatisticField)
-    */
+  		 * Defines the field for which statistics will be calculated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#onStatisticField)
+  		 */
   var onStatisticField: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the output field name for the requested statistic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#outStatisticFieldName)
-    */
+  		 * Specifies the output field name for the requested statistic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#outStatisticFieldName)
+  		 */
   var outStatisticFieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
-    */
+  		 * The parameters for [percentile statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
+  		 */
   var statisticParameters: js.UndefOr[StatisticDefinitionStatisticParameters] = js.undefined
   
   /**
-    * Defines the type of statistic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType)
-    */
+  		 * Defines the type of statistic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType)
+  		 */
   var statisticType: js.UndefOr[
     count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete` | `envelope-aggregate` | `centroid-aggregate` | `convex-hull-aggregate`
   ] = js.undefined

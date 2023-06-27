@@ -2,8 +2,8 @@ package typings.themeUiColorModes
 
 import typings.react.mod.DetailedReactHTMLElement
 import typings.react.mod.Dispatch
+import typings.react.mod.JSX.Element
 import typings.react.mod.SetStateAction
-import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.themeUiColorModes.anon.Children
 import typings.themeUiColorModes.anon.DangerouslySetInnerHTML

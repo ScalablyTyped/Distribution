@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocalMediaElementSourceProperties extends StObject {
   
   /**
-    * [Image](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html) and [video](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html) elements referenced in the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LocalMediaElementSource.html#elements)
-    */
+  		 * [Image](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html) and [video](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html) elements referenced in the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LocalMediaElementSource.html#elements)
+  		 */
   var elements: js.UndefOr[CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]] = js.undefined
 }
 object LocalMediaElementSourceProperties {

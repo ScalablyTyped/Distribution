@@ -17,21 +17,34 @@ open class TextDecoderStream ()
   def this(label: java.lang.String, options: TextDecoderOptions) = this()
   def this(label: Unit, options: TextDecoderOptions) = this()
   
-  /** Returns encoding's name, lowercased. */
+  /**
+    * Returns encoding's name, lowercased.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/encoding)
+    */
   /* standard dom */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native
   
-  /** Returns true if error mode is "fatal", otherwise false. */
+  /**
+    * Returns true if error mode is "fatal", otherwise false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/fatal)
+    */
   /* standard dom */
   /* CompleteClass */
   override val fatal: scala.Boolean = js.native
   
-  /** Returns the value of ignore BOM. */
+  /**
+    * Returns the value of ignore BOM.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/ignoreBOM)
+    */
   /* standard dom */
   /* CompleteClass */
   override val ignoreBOM: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/readable) */
   /* standard dom */
   /* CompleteClass */
   override val readable: typings.std.ReadableStream[Any] = js.native
@@ -40,6 +53,7 @@ open class TextDecoderStream ()
   @JSName("readable")
   override val readable_TextDecoderStream: typings.std.ReadableStream[java.lang.String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/writable) */
   /* standard dom */
   /* CompleteClass */
   override val writable: typings.std.WritableStream[Any] = js.native

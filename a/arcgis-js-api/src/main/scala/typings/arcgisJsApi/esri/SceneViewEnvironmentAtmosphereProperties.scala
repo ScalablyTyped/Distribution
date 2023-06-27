@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewEnvironmentAtmosphereProperties extends StObject {
   
   /**
-    * Indicates the quality of the atmosphere visualization.
-    *
-    * @default low
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Indicates the quality of the atmosphere visualization.
+  		 *
+  		 * @default low
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var quality: js.UndefOr[low | high] = js.undefined
 }
 object SceneViewEnvironmentAtmosphereProperties {

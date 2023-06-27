@@ -10,13 +10,13 @@ trait CIMGeometricEffectMove
      with CIMGeometricEffectType {
   
   /**
-    * The distance to move the symbol along the X-axis of the feature geometry.
-    */
+  			 * The distance to move the symbol along the X-axis of the feature geometry.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance to move the symbol along the Y-axis of the feature geometry.
-    */
+  			 * The distance to move the symbol along the Y-axis of the feature geometry.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

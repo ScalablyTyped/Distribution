@@ -10,24 +10,24 @@ trait DictionaryVariable
      with ProfileVariable {
   
   /**
-    * The name of the profile variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
-    */
+  		 * The name of the profile variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
+  		 */
   var name: String
   
   /**
-    * The type definitions of the dictionary's properties.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
-    */
+  		 * The type definitions of the dictionary's properties.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
+  		 */
   var properties: js.UndefOr[js.Array[ProfileVariable]] = js.undefined
   
   /**
-    * The Arcade data type of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
-    */
+  		 * The Arcade data type of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#DictionaryVariable)
+  		 */
   var `type`: dictionary
 }
 object DictionaryVariable {

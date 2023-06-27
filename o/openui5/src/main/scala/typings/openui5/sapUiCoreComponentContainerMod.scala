@@ -1,9 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.Component
-import typings.openui5.anon.`34`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreComponentMod.ComponentSettings
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ComponentLifecycle
@@ -133,7 +132,7 @@ object sapUiCoreComponentContainerMod {
        with IPlaceholderSupport {
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Attaches event handler `fnFunction` to the {@link #event:componentCreated componentCreated} event of
       * this `sap.ui.core.ComponentContainer`.
@@ -149,20 +148,20 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit]
     ): this.type = js.native
     def attachComponentCreated(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ComponentContainer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Attaches event handler `fnFunction` to the {@link #event:componentCreated componentCreated} event of
       * this `sap.ui.core.ComponentContainer`.
@@ -183,7 +182,7 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit]
     ): this.type = js.native
     def attachComponentCreated(
       /**
@@ -194,7 +193,7 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ComponentContainer` itself
       */
@@ -202,7 +201,7 @@ object sapUiCoreComponentContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:componentFailed componentFailed} event of this
       * `sap.ui.core.ComponentContainer`.
@@ -221,20 +220,20 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit]
     ): this.type = js.native
     def attachComponentFailed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ComponentContainer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:componentFailed componentFailed} event of this
       * `sap.ui.core.ComponentContainer`.
@@ -258,7 +257,7 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit]
     ): this.type = js.native
     def attachComponentFailed(
       /**
@@ -269,7 +268,7 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.ComponentContainer` itself
       */
@@ -277,7 +276,7 @@ object sapUiCoreComponentContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Detaches event handler `fnFunction` from the {@link #event:componentCreated componentCreated} event of
       * this `sap.ui.core.ComponentContainer`.
@@ -290,13 +289,13 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit]
     ): this.type = js.native
     def detachComponentCreated(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentCreatedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -304,7 +303,7 @@ object sapUiCoreComponentContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Detaches event handler `fnFunction` from the {@link #event:componentFailed componentFailed} event of
       * this `sap.ui.core.ComponentContainer`.
@@ -317,13 +316,13 @@ object sapUiCoreComponentContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit]
     ): this.type = js.native
     def detachComponentFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComponentContainerComponentFailedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -331,22 +330,24 @@ object sapUiCoreComponentContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:componentCreated componentCreated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireComponentCreated(): this.type = js.native
-    def fireComponentCreated(/**
+    def fireComponentCreated(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Component): this.type = js.native
+    mParameters: ComponentContainer$ComponentCreatedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.60
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.60
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:componentFailed componentFailed} to attached listeners.
       *
@@ -356,10 +357,12 @@ object sapUiCoreComponentContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireComponentFailed(): Boolean = js.native
-    def fireComponentFailed(/**
+    def fireComponentFailed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `34`): Boolean = js.native
+    mParameters: ComponentContainer$ComponentFailedEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getAsync async}.
@@ -470,7 +473,7 @@ object sapUiCoreComponentContainerMod {
       *
       * @returns Value of property `settings`
       */
-    def getSettings(): js.Object = js.native
+    def getSettings(): ComponentSettings = js.native
     
     /**
       * Gets current value of property {@link #getUrl url}.
@@ -490,8 +493,8 @@ object sapUiCoreComponentContainerMod {
       * If there's no owning component or if its app descriptor does not contain a usage with the given name,
       * an error will be logged.
       *
-      * See {@link topic:346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components} for more information
-      * about component usages.
+      * See {@link https://ui5.sap.com/#/topic/346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components }
+      * for more information about component usages.
       *
       * This property can only be applied initially.
       *
@@ -696,7 +699,7 @@ object sapUiCoreComponentContainerMod {
     def setSettings(/**
       * New value for property `settings`
       */
-    oSettings: js.Object): this.type = js.native
+    oSettings: ComponentSettings): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getUrl url}.
@@ -722,8 +725,8 @@ object sapUiCoreComponentContainerMod {
       * If there's no owning component or if its app descriptor does not contain a usage with the given name,
       * an error will be logged.
       *
-      * See {@link topic:346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components} for more information
-      * about component usages.
+      * See {@link https://ui5.sap.com/#/topic/346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components }
+      * for more information about component usages.
       *
       * This property can only be applied initially.
       *
@@ -753,6 +756,60 @@ object sapUiCoreComponentContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait ComponentContainer$ComponentCreatedEventParameters extends StObject {
+    
+    /**
+      * Reference to the created component instance
+      */
+    var component: js.UndefOr[typings.openui5.sapUiCoreUicomponentMod.default] = js.undefined
+  }
+  object ComponentContainer$ComponentCreatedEventParameters {
+    
+    inline def apply(): ComponentContainer$ComponentCreatedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComponentContainer$ComponentCreatedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentContainer$ComponentCreatedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setComponent(value: typings.openui5.sapUiCoreUicomponentMod.default): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    }
+  }
+  
+  trait ComponentContainer$ComponentFailedEventParameters extends StObject {
+    
+    /**
+      * The reason object as returned by the component promise
+      */
+    var reason: js.UndefOr[js.Object] = js.undefined
+  }
+  object ComponentContainer$ComponentFailedEventParameters {
+    
+    inline def apply(): ComponentContainer$ComponentFailedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComponentContainer$ComponentFailedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentContainer$ComponentFailedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setReason(value: js.Object): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    }
+  }
+  
+  type ComponentContainerComponentCreatedEvent = typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentCreatedEventParameters]
+  
+  type ComponentContainerComponentCreatedEventParameters = ComponentContainer$ComponentCreatedEventParameters
+  
+  type ComponentContainerComponentFailedEvent = typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentFailedEventParameters]
+  
+  type ComponentContainerComponentFailedEventParameters = ComponentContainer$ComponentFailedEventParameters
+  
   trait ComponentContainerSettings
     extends StObject
        with ControlSettings {
@@ -781,21 +838,31 @@ object sapUiCoreComponentContainerMod {
     var component: js.UndefOr[typings.openui5.sapUiCoreUicomponentMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Fired when the component instance has been created by the ComponentContainer.
       */
-    var componentCreated: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var componentCreated: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentCreatedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Fired when the creation of the component instance has failed.
       *
       * By default, the `ComponentContainer` also logs the error that occurred. Since 1.83, this default behavior
       * can be prevented by calling `preventDefault()` on the event object.
       */
-    var componentFailed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var componentFailed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentFailedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Enable/disable validation handling by MessageManager for this component. The resulting Messages will
@@ -849,7 +916,7 @@ object sapUiCoreComponentContainerMod {
       * The settings object passed to the component when created. This property can only be applied initially.
       */
     var settings: js.UndefOr[
-        js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+        ComponentSettings | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
@@ -864,8 +931,8 @@ object sapUiCoreComponentContainerMod {
       * If there's no owning component or if its app descriptor does not contain a usage with the given name,
       * an error will be logged.
       *
-      * See {@link topic:346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components} for more information
-      * about component usages.
+      * See {@link https://ui5.sap.com/#/topic/346599f0890d4dfaaa11c6b4ffa96312 Using and Nesting Components }
+      * for more information about component usages.
       *
       * This property can only be applied initially.
       */
@@ -898,11 +965,15 @@ object sapUiCoreComponentContainerMod {
       
       inline def setComponent(value: typings.openui5.sapUiCoreUicomponentMod.default | String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      inline def setComponentCreated(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "componentCreated", js.Any.fromFunction1(value))
+      inline def setComponentCreated(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentCreatedEventParameters] => Unit
+      ): Self = StObject.set(x, "componentCreated", js.Any.fromFunction1(value))
       
       inline def setComponentCreatedUndefined: Self = StObject.set(x, "componentCreated", js.undefined)
       
-      inline def setComponentFailed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "componentFailed", js.Any.fromFunction1(value))
+      inline def setComponentFailed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComponentContainer$ComponentFailedEventParameters] => Unit
+      ): Self = StObject.set(x, "componentFailed", js.Any.fromFunction1(value))
       
       inline def setComponentFailedUndefined: Self = StObject.set(x, "componentFailed", js.undefined)
       
@@ -934,7 +1005,9 @@ object sapUiCoreComponentContainerMod {
       
       inline def setPropagateModelUndefined: Self = StObject.set(x, "propagateModel", js.undefined)
       
-      inline def setSettings(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(
+        value: ComponentSettings | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
       inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       

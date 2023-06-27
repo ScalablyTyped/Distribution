@@ -1,5 +1,9 @@
 package typings.openui5
 
+import typings.openui5.anon.`4`
+import typings.openui5.openui5Ints.`1`
+import typings.openui5.openui5Ints.`2`
+import typings.openui5.sapUiCoreElementMod.MetadataOptions.DnD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +24,7 @@ object sapUiCoreElementMetadataMod {
       /**
       * static info to construct the metadata from
       */
-    oClassInfo: js.Object
+    oClassInfo: `4`
     ) = this()
   }
   /* static members */
@@ -38,22 +42,60 @@ object sapUiCoreElementMetadataMod {
     inline def uid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[String]
   }
   
+  trait ControlRenderer extends StObject {
+    
+    /**
+      * The API version of the RenderManager that are used in this renderer. See {@link sap.ui.core.RenderManager RenderManager }
+      * API documentation for detailed information
+      */
+    var apiVersion: js.UndefOr[`1` | `2` | typings.openui5.openui5Ints.`4`] = js.undefined
+    
+    /**
+      * The function that renders the control
+      */
+    def render(
+      p1: typings.openui5.sapUiCoreRenderManagerMod.default,
+      p2: typings.openui5.sapUiCoreElementMod.default
+    ): Unit
+  }
+  object ControlRenderer {
+    
+    inline def apply(
+      render: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapUiCoreElementMod.default) => Unit
+    ): ControlRenderer = {
+      val __obj = js.Dynamic.literal(render = js.Any.fromFunction2(render))
+      __obj.asInstanceOf[ControlRenderer]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlRenderer] (val x: Self) extends AnyVal {
+      
+      inline def setApiVersion(value: `1` | `2` | typings.openui5.openui5Ints.`4`): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      
+      inline def setRender(
+        value: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapUiCoreElementMod.default) => Unit
+      ): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    }
+  }
+  
   @js.native
   trait ElementMetadata
     extends typings.openui5.sapUiBaseManagedObjectMetadataMod.default {
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Returns an info object describing the drag-and-drop behavior.
       *
       * @returns An info object about the drag-and-drop behavior.
       */
-    def getDragDropInfo(): js.Object = js.native
+    def getDragDropInfo(): DnD = js.native
     def getDragDropInfo(/**
       * name of the aggregation or empty.
       */
-    sAggregationName: String): js.Object = js.native
+    sAggregationName: String): DnD = js.native
     
     /**
       * By default, the element name is equal to the class name

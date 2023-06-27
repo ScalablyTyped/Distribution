@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Submittedat extends StObject {
   
-  var _links: HtmlPullrequest
+  var _links: Pullrequest
   
   var author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
   
@@ -60,7 +60,7 @@ trait Submittedat extends StObject {
 object Submittedat {
   
   inline def apply(
-    _links: HtmlPullrequest,
+    _links: Pullrequest,
     author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any,
     commit_id: String,
     event: String,
@@ -116,6 +116,6 @@ object Submittedat {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
     ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Pullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

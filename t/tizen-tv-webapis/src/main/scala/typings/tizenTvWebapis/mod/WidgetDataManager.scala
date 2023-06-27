@@ -16,7 +16,7 @@ trait WidgetDataManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/widgetdata
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -41,7 +41,7 @@ trait WidgetDataManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/widgetdata
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 4.0
     *
@@ -69,7 +69,7 @@ trait WidgetDataManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/widgetdata
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 4.0
     *
@@ -101,7 +101,7 @@ trait WidgetDataManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/widgetdata
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 4.0
     *

@@ -29,11 +29,11 @@ trait Get extends StObject {
     * Lists all the emojis available to use on GitHub.
     */
   @JSName("get")
-  var get_Original: `292`
+  var get_Original: `294`
 }
 object Get {
   
-  inline def apply(get: `292`): Get = {
+  inline def apply(get: `294`): Get = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get]
   }
@@ -41,6 +41,6 @@ object Get {
   @scala.inline
   implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
     
-    inline def setGet(value: `292`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `294`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

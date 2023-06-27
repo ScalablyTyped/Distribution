@@ -28,7 +28,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -46,7 +45,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -66,7 +64,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -82,7 +79,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     */
@@ -95,7 +91,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param group
@@ -111,7 +106,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2013.2
     * @param group
@@ -130,7 +124,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -148,7 +141,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -165,7 +157,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -195,7 +186,6 @@ Instantiable0[Any] {
     * @return    {nlobjField}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.1
     * @param fldnam
@@ -211,7 +201,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param name
@@ -227,7 +216,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param name
@@ -241,7 +229,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param name
@@ -256,7 +243,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param name
@@ -269,7 +255,6 @@ Instantiable0[Any] {
     * @return {int} Return the integer value of the record ID.
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @return
@@ -282,7 +267,6 @@ Instantiable0[Any] {
     * @param {string} group sublist name
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -298,7 +282,6 @@ Instantiable0[Any] {
     * @param {string}    timezone value
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2013.2
     * @param group
@@ -317,7 +300,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type
@@ -338,7 +320,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type
@@ -358,7 +339,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param group
@@ -376,7 +356,6 @@ Instantiable0[Any] {
     * @param {int}    line line number (1-based)
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param group
@@ -393,7 +372,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -411,7 +389,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type
@@ -430,7 +407,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type
@@ -446,7 +422,6 @@ Instantiable0[Any] {
     * @return {string} The string value of the record name internal ID
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @return
@@ -460,7 +435,6 @@ Instantiable0[Any] {
     * @return {nlobjSubList}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type
@@ -475,7 +449,6 @@ Instantiable0[Any] {
     * @param {int}    [line] line index at which to insert line
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -491,7 +464,6 @@ Instantiable0[Any] {
     * @param {int}    [line] line number to remove
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -508,7 +480,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -524,7 +495,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -541,7 +511,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2013.2
     * @param group
@@ -562,7 +531,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -590,7 +558,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param group
@@ -615,7 +582,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 20013.2
     * @param name
@@ -634,7 +600,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param name
@@ -652,7 +617,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.2
     * @param name
@@ -669,7 +633,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param name
@@ -686,7 +649,6 @@ Instantiable0[Any] {
     * @param {string[]} values string array containing field values
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param name
@@ -704,7 +666,6 @@ Instantiable0[Any] {
     * @param {string}    timezone value
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2013.2
     * @param group
@@ -724,7 +685,6 @@ Instantiable0[Any] {
     * @param {string}    value sublist field value
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2008.1
     * @param group
@@ -744,7 +704,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjRecord
     *
     * @since 2009.2
     * @param type

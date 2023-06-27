@@ -10,8 +10,17 @@ object anon {
   
   trait All extends StObject {
     
+    /**
+      Add a style to _all_ tokens. Probably only useful in combination
+      with `scope`.
+      */
     var all: js.UndefOr[String] = js.undefined
     
+    /**
+      By default, highlighters apply to the entire document. You can
+      scope them to a single language by providing the tree's
+      [top](#common.NodeType.isTop) node type here.
+      */
     var scope: js.UndefOr[js.Function1[/* node */ NodeType, Boolean]] = js.undefined
   }
   object All {

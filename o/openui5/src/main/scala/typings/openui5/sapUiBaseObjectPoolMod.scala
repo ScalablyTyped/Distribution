@@ -19,7 +19,7 @@ object sapUiBaseObjectPoolMod {
     def this(/**
       * Constructor for the class of objects that this pool should manage
       */
-    oObjectClass: js.Function) = this()
+    oObjectClass: js.Function1[/* p1 */ js.Object, Unit]) = this()
   }
   /* static members */
   object default {
@@ -119,7 +119,7 @@ object sapUiBaseObjectPoolMod {
     var __implements__sap_ui_base_Poolable: Boolean
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called by the `ObjectPool` when this instance will be activated for a caller.
       *
@@ -136,7 +136,7 @@ object sapUiBaseObjectPoolMod {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called by the object pool when an instance is returned to the pool.
       *

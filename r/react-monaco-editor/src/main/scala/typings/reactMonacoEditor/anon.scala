@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.monacoEditor.anon.Fragment
 import typings.monacoEditor.anon.Model
 import typings.monacoEditor.anon.Owner
 import typings.monacoEditor.anon.ReadonlyRequiredIBracketP
@@ -22,6 +21,7 @@ import typings.monacoEditor.anon.ReadonlyRequiredIEditorSt
 import typings.monacoEditor.anon.ReadonlyRequiredIGotoLoca
 import typings.monacoEditor.anon.ReadonlyRequiredIGuidesOp
 import typings.monacoEditor.anon.ReadonlyRequiredIInlineSu
+import typings.monacoEditor.anon.ReadonlyRequiredIPasteAsO
 import typings.monacoEditor.anon.ReadonlyRequiredISmartSel
 import typings.monacoEditor.anon.ReadonlyRequiredISuggestO
 import typings.monacoEditor.mod.CancellationTokenSource
@@ -128,6 +128,7 @@ import typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder
 import typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes
 import typings.monacoEditor.mod.editor.EditorOption.padding
 import typings.monacoEditor.mod.editor.EditorOption.parameterHints
+import typings.monacoEditor.mod.editor.EditorOption.pasteAs
 import typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus
 import typings.monacoEditor.mod.editor.EditorOption.pixelRatio
 import typings.monacoEditor.mod.editor.EditorOption.quickSuggestions
@@ -212,6 +213,7 @@ import typings.monacoEditor.mod.editor.InternalEditorRenderLineNumbersOptions
 import typings.monacoEditor.mod.editor.InternalEditorScrollbarOptions
 import typings.monacoEditor.mod.editor.InternalQuickSuggestionsOptions
 import typings.monacoEditor.mod.editor.LineRange
+import typings.monacoEditor.mod.editor.LineRangeMapping
 import typings.monacoEditor.mod.editor.MonacoWebWorker
 import typings.monacoEditor.mod.editor.TextEditorCursorBlinkingStyle
 import typings.monacoEditor.mod.editor.TextEditorCursorStyle
@@ -562,6 +564,8 @@ object anon {
         ReadonlyRequiredIEditorPaCycle
       ]
     
+    var pasteAs: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.pasteAs, ReadonlyRequiredIPasteAsO]
+    
     var peekWidgetDefaultFocus: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus, tree | editor]
     
     var pixelRatio: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.pixelRatio, Double]
@@ -808,6 +812,7 @@ object anon {
       overviewRulerLanes: IEditorOption[overviewRulerLanes, Double],
       padding: IEditorOption[padding, ReadonlyRequiredIEditorPa],
       parameterHints: IEditorOption[parameterHints, ReadonlyRequiredIEditorPaCycle],
+      pasteAs: IEditorOption[pasteAs, ReadonlyRequiredIPasteAsO],
       peekWidgetDefaultFocus: IEditorOption[peekWidgetDefaultFocus, tree | editor],
       pixelRatio: IEditorOption[pixelRatio, Double],
       quickSuggestions: IEditorOption[quickSuggestions, InternalQuickSuggestionsOptions],
@@ -865,7 +870,7 @@ object anon {
       wrappingInfo: IEditorOption[wrappingInfo, EditorWrappingInfo],
       wrappingStrategy: IEditorOption[wrappingStrategy, simple | advanced]
     ): TypeofEditorOptions = {
-      val __obj = js.Dynamic.literal(acceptSuggestionOnCommitCharacter = acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any], acceptSuggestionOnEnter = acceptSuggestionOnEnter.asInstanceOf[js.Any], accessibilityPageSize = accessibilityPageSize.asInstanceOf[js.Any], accessibilitySupport = accessibilitySupport.asInstanceOf[js.Any], ariaLabel = ariaLabel.asInstanceOf[js.Any], autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], autoClosingDelete = autoClosingDelete.asInstanceOf[js.Any], autoClosingOvertype = autoClosingOvertype.asInstanceOf[js.Any], autoClosingQuotes = autoClosingQuotes.asInstanceOf[js.Any], autoIndent = autoIndent.asInstanceOf[js.Any], autoSurround = autoSurround.asInstanceOf[js.Any], automaticLayout = automaticLayout.asInstanceOf[js.Any], bracketPairColorization = bracketPairColorization.asInstanceOf[js.Any], bracketPairGuides = bracketPairGuides.asInstanceOf[js.Any], codeLens = codeLens.asInstanceOf[js.Any], codeLensFontFamily = codeLensFontFamily.asInstanceOf[js.Any], codeLensFontSize = codeLensFontSize.asInstanceOf[js.Any], colorDecorators = colorDecorators.asInstanceOf[js.Any], colorDecoratorsLimit = colorDecoratorsLimit.asInstanceOf[js.Any], columnSelection = columnSelection.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copyWithSyntaxHighlighting = copyWithSyntaxHighlighting.asInstanceOf[js.Any], cursorBlinking = cursorBlinking.asInstanceOf[js.Any], cursorSmoothCaretAnimation = cursorSmoothCaretAnimation.asInstanceOf[js.Any], cursorStyle = cursorStyle.asInstanceOf[js.Any], cursorSurroundingLines = cursorSurroundingLines.asInstanceOf[js.Any], cursorSurroundingLinesStyle = cursorSurroundingLinesStyle.asInstanceOf[js.Any], cursorWidth = cursorWidth.asInstanceOf[js.Any], defaultColorDecorators = defaultColorDecorators.asInstanceOf[js.Any], definitionLinkOpensInPeek = definitionLinkOpensInPeek.asInstanceOf[js.Any], disableLayerHinting = disableLayerHinting.asInstanceOf[js.Any], disableMonospaceOptimizations = disableMonospaceOptimizations.asInstanceOf[js.Any], domReadOnly = domReadOnly.asInstanceOf[js.Any], dragAndDrop = dragAndDrop.asInstanceOf[js.Any], dropIntoEditor = dropIntoEditor.asInstanceOf[js.Any], editorClassName = editorClassName.asInstanceOf[js.Any], emptySelectionClipboard = emptySelectionClipboard.asInstanceOf[js.Any], experimentalWhitespaceRendering = experimentalWhitespaceRendering.asInstanceOf[js.Any], extraEditorClassName = extraEditorClassName.asInstanceOf[js.Any], fastScrollSensitivity = fastScrollSensitivity.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], fixedOverflowWidgets = fixedOverflowWidgets.asInstanceOf[js.Any], folding = folding.asInstanceOf[js.Any], foldingHighlight = foldingHighlight.asInstanceOf[js.Any], foldingImportsByDefault = foldingImportsByDefault.asInstanceOf[js.Any], foldingMaximumRegions = foldingMaximumRegions.asInstanceOf[js.Any], foldingStrategy = foldingStrategy.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontInfo = fontInfo.asInstanceOf[js.Any], fontLigatures2 = fontLigatures2.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontVariations = fontVariations.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], formatOnPaste = formatOnPaste.asInstanceOf[js.Any], formatOnType = formatOnType.asInstanceOf[js.Any], glyphMargin = glyphMargin.asInstanceOf[js.Any], gotoLocation = gotoLocation.asInstanceOf[js.Any], hideCursorInOverviewRuler = hideCursorInOverviewRuler.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDiffEditor = inDiffEditor.asInstanceOf[js.Any], inlayHints = inlayHints.asInstanceOf[js.Any], inlineSuggest = inlineSuggest.asInstanceOf[js.Any], layoutInfo = layoutInfo.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightbulb = lightbulb.asInstanceOf[js.Any], lineDecorationsWidth = lineDecorationsWidth.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineNumbersMinChars = lineNumbersMinChars.asInstanceOf[js.Any], linkedEditing = linkedEditing.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], mouseStyle = mouseStyle.asInstanceOf[js.Any], mouseWheelScrollSensitivity = mouseWheelScrollSensitivity.asInstanceOf[js.Any], mouseWheelZoom = mouseWheelZoom.asInstanceOf[js.Any], multiCursorLimit = multiCursorLimit.asInstanceOf[js.Any], multiCursorMergeOverlapping = multiCursorMergeOverlapping.asInstanceOf[js.Any], multiCursorModifier = multiCursorModifier.asInstanceOf[js.Any], multiCursorPaste = multiCursorPaste.asInstanceOf[js.Any], occurrencesHighlight = occurrencesHighlight.asInstanceOf[js.Any], overviewRulerBorder = overviewRulerBorder.asInstanceOf[js.Any], overviewRulerLanes = overviewRulerLanes.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], parameterHints = parameterHints.asInstanceOf[js.Any], peekWidgetDefaultFocus = peekWidgetDefaultFocus.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], quickSuggestions = quickSuggestions.asInstanceOf[js.Any], quickSuggestionsDelay = quickSuggestionsDelay.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renameOnType = renameOnType.asInstanceOf[js.Any], renderControlCharacters = renderControlCharacters.asInstanceOf[js.Any], renderFinalNewline = renderFinalNewline.asInstanceOf[js.Any], renderLineHighlight = renderLineHighlight.asInstanceOf[js.Any], renderLineHighlightOnlyWhenFocus = renderLineHighlightOnlyWhenFocus.asInstanceOf[js.Any], renderValidationDecorations = renderValidationDecorations.asInstanceOf[js.Any], renderWhitespace = renderWhitespace.asInstanceOf[js.Any], revealHorizontalRightPadding = revealHorizontalRightPadding.asInstanceOf[js.Any], roundedSelection = roundedSelection.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], screenReaderAnnounceInlineSuggestion = screenReaderAnnounceInlineSuggestion.asInstanceOf[js.Any], scrollBeyondLastColumn = scrollBeyondLastColumn.asInstanceOf[js.Any], scrollBeyondLastLine = scrollBeyondLastLine.asInstanceOf[js.Any], scrollPredominantAxis = scrollPredominantAxis.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], selectOnLineNumbers = selectOnLineNumbers.asInstanceOf[js.Any], selectionClipboard = selectionClipboard.asInstanceOf[js.Any], selectionHighlight = selectionHighlight.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showFoldingControls = showFoldingControls.asInstanceOf[js.Any], showUnused = showUnused.asInstanceOf[js.Any], smartSelect = smartSelect.asInstanceOf[js.Any], smoothScrolling = smoothScrolling.asInstanceOf[js.Any], snippetSuggestions = snippetSuggestions.asInstanceOf[js.Any], stickyScroll = stickyScroll.asInstanceOf[js.Any], stickyTabStops = stickyTabStops.asInstanceOf[js.Any], stopRenderingLineAfter = stopRenderingLineAfter.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any], suggestFontSize = suggestFontSize.asInstanceOf[js.Any], suggestLineHeight = suggestLineHeight.asInstanceOf[js.Any], suggestOnTriggerCharacters = suggestOnTriggerCharacters.asInstanceOf[js.Any], suggestSelection = suggestSelection.asInstanceOf[js.Any], tabCompletion = tabCompletion.asInstanceOf[js.Any], tabFocusMode = tabFocusMode.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], unfoldOnClickAfterEndOfLine = unfoldOnClickAfterEndOfLine.asInstanceOf[js.Any], unicodeHighlight = unicodeHighlight.asInstanceOf[js.Any], unusualLineTerminators = unusualLineTerminators.asInstanceOf[js.Any], useShadowDOM = useShadowDOM.asInstanceOf[js.Any], useTabStops = useTabStops.asInstanceOf[js.Any], wordBreak = wordBreak.asInstanceOf[js.Any], wordSeparators = wordSeparators.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], wordWrapOverride1 = wordWrapOverride1.asInstanceOf[js.Any], wordWrapOverride2 = wordWrapOverride2.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any], wrappingInfo = wrappingInfo.asInstanceOf[js.Any], wrappingStrategy = wrappingStrategy.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(acceptSuggestionOnCommitCharacter = acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any], acceptSuggestionOnEnter = acceptSuggestionOnEnter.asInstanceOf[js.Any], accessibilityPageSize = accessibilityPageSize.asInstanceOf[js.Any], accessibilitySupport = accessibilitySupport.asInstanceOf[js.Any], ariaLabel = ariaLabel.asInstanceOf[js.Any], autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], autoClosingDelete = autoClosingDelete.asInstanceOf[js.Any], autoClosingOvertype = autoClosingOvertype.asInstanceOf[js.Any], autoClosingQuotes = autoClosingQuotes.asInstanceOf[js.Any], autoIndent = autoIndent.asInstanceOf[js.Any], autoSurround = autoSurround.asInstanceOf[js.Any], automaticLayout = automaticLayout.asInstanceOf[js.Any], bracketPairColorization = bracketPairColorization.asInstanceOf[js.Any], bracketPairGuides = bracketPairGuides.asInstanceOf[js.Any], codeLens = codeLens.asInstanceOf[js.Any], codeLensFontFamily = codeLensFontFamily.asInstanceOf[js.Any], codeLensFontSize = codeLensFontSize.asInstanceOf[js.Any], colorDecorators = colorDecorators.asInstanceOf[js.Any], colorDecoratorsLimit = colorDecoratorsLimit.asInstanceOf[js.Any], columnSelection = columnSelection.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copyWithSyntaxHighlighting = copyWithSyntaxHighlighting.asInstanceOf[js.Any], cursorBlinking = cursorBlinking.asInstanceOf[js.Any], cursorSmoothCaretAnimation = cursorSmoothCaretAnimation.asInstanceOf[js.Any], cursorStyle = cursorStyle.asInstanceOf[js.Any], cursorSurroundingLines = cursorSurroundingLines.asInstanceOf[js.Any], cursorSurroundingLinesStyle = cursorSurroundingLinesStyle.asInstanceOf[js.Any], cursorWidth = cursorWidth.asInstanceOf[js.Any], defaultColorDecorators = defaultColorDecorators.asInstanceOf[js.Any], definitionLinkOpensInPeek = definitionLinkOpensInPeek.asInstanceOf[js.Any], disableLayerHinting = disableLayerHinting.asInstanceOf[js.Any], disableMonospaceOptimizations = disableMonospaceOptimizations.asInstanceOf[js.Any], domReadOnly = domReadOnly.asInstanceOf[js.Any], dragAndDrop = dragAndDrop.asInstanceOf[js.Any], dropIntoEditor = dropIntoEditor.asInstanceOf[js.Any], editorClassName = editorClassName.asInstanceOf[js.Any], emptySelectionClipboard = emptySelectionClipboard.asInstanceOf[js.Any], experimentalWhitespaceRendering = experimentalWhitespaceRendering.asInstanceOf[js.Any], extraEditorClassName = extraEditorClassName.asInstanceOf[js.Any], fastScrollSensitivity = fastScrollSensitivity.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], fixedOverflowWidgets = fixedOverflowWidgets.asInstanceOf[js.Any], folding = folding.asInstanceOf[js.Any], foldingHighlight = foldingHighlight.asInstanceOf[js.Any], foldingImportsByDefault = foldingImportsByDefault.asInstanceOf[js.Any], foldingMaximumRegions = foldingMaximumRegions.asInstanceOf[js.Any], foldingStrategy = foldingStrategy.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontInfo = fontInfo.asInstanceOf[js.Any], fontLigatures2 = fontLigatures2.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontVariations = fontVariations.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], formatOnPaste = formatOnPaste.asInstanceOf[js.Any], formatOnType = formatOnType.asInstanceOf[js.Any], glyphMargin = glyphMargin.asInstanceOf[js.Any], gotoLocation = gotoLocation.asInstanceOf[js.Any], hideCursorInOverviewRuler = hideCursorInOverviewRuler.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDiffEditor = inDiffEditor.asInstanceOf[js.Any], inlayHints = inlayHints.asInstanceOf[js.Any], inlineSuggest = inlineSuggest.asInstanceOf[js.Any], layoutInfo = layoutInfo.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightbulb = lightbulb.asInstanceOf[js.Any], lineDecorationsWidth = lineDecorationsWidth.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineNumbersMinChars = lineNumbersMinChars.asInstanceOf[js.Any], linkedEditing = linkedEditing.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], mouseStyle = mouseStyle.asInstanceOf[js.Any], mouseWheelScrollSensitivity = mouseWheelScrollSensitivity.asInstanceOf[js.Any], mouseWheelZoom = mouseWheelZoom.asInstanceOf[js.Any], multiCursorLimit = multiCursorLimit.asInstanceOf[js.Any], multiCursorMergeOverlapping = multiCursorMergeOverlapping.asInstanceOf[js.Any], multiCursorModifier = multiCursorModifier.asInstanceOf[js.Any], multiCursorPaste = multiCursorPaste.asInstanceOf[js.Any], occurrencesHighlight = occurrencesHighlight.asInstanceOf[js.Any], overviewRulerBorder = overviewRulerBorder.asInstanceOf[js.Any], overviewRulerLanes = overviewRulerLanes.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], parameterHints = parameterHints.asInstanceOf[js.Any], pasteAs = pasteAs.asInstanceOf[js.Any], peekWidgetDefaultFocus = peekWidgetDefaultFocus.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], quickSuggestions = quickSuggestions.asInstanceOf[js.Any], quickSuggestionsDelay = quickSuggestionsDelay.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renameOnType = renameOnType.asInstanceOf[js.Any], renderControlCharacters = renderControlCharacters.asInstanceOf[js.Any], renderFinalNewline = renderFinalNewline.asInstanceOf[js.Any], renderLineHighlight = renderLineHighlight.asInstanceOf[js.Any], renderLineHighlightOnlyWhenFocus = renderLineHighlightOnlyWhenFocus.asInstanceOf[js.Any], renderValidationDecorations = renderValidationDecorations.asInstanceOf[js.Any], renderWhitespace = renderWhitespace.asInstanceOf[js.Any], revealHorizontalRightPadding = revealHorizontalRightPadding.asInstanceOf[js.Any], roundedSelection = roundedSelection.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], screenReaderAnnounceInlineSuggestion = screenReaderAnnounceInlineSuggestion.asInstanceOf[js.Any], scrollBeyondLastColumn = scrollBeyondLastColumn.asInstanceOf[js.Any], scrollBeyondLastLine = scrollBeyondLastLine.asInstanceOf[js.Any], scrollPredominantAxis = scrollPredominantAxis.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], selectOnLineNumbers = selectOnLineNumbers.asInstanceOf[js.Any], selectionClipboard = selectionClipboard.asInstanceOf[js.Any], selectionHighlight = selectionHighlight.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showFoldingControls = showFoldingControls.asInstanceOf[js.Any], showUnused = showUnused.asInstanceOf[js.Any], smartSelect = smartSelect.asInstanceOf[js.Any], smoothScrolling = smoothScrolling.asInstanceOf[js.Any], snippetSuggestions = snippetSuggestions.asInstanceOf[js.Any], stickyScroll = stickyScroll.asInstanceOf[js.Any], stickyTabStops = stickyTabStops.asInstanceOf[js.Any], stopRenderingLineAfter = stopRenderingLineAfter.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any], suggestFontSize = suggestFontSize.asInstanceOf[js.Any], suggestLineHeight = suggestLineHeight.asInstanceOf[js.Any], suggestOnTriggerCharacters = suggestOnTriggerCharacters.asInstanceOf[js.Any], suggestSelection = suggestSelection.asInstanceOf[js.Any], tabCompletion = tabCompletion.asInstanceOf[js.Any], tabFocusMode = tabFocusMode.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], unfoldOnClickAfterEndOfLine = unfoldOnClickAfterEndOfLine.asInstanceOf[js.Any], unicodeHighlight = unicodeHighlight.asInstanceOf[js.Any], unusualLineTerminators = unusualLineTerminators.asInstanceOf[js.Any], useShadowDOM = useShadowDOM.asInstanceOf[js.Any], useTabStops = useTabStops.asInstanceOf[js.Any], wordBreak = wordBreak.asInstanceOf[js.Any], wordSeparators = wordSeparators.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], wordWrapOverride1 = wordWrapOverride1.asInstanceOf[js.Any], wordWrapOverride2 = wordWrapOverride2.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any], wrappingInfo = wrappingInfo.asInstanceOf[js.Any], wrappingStrategy = wrappingStrategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofEditorOptions]
     }
     
@@ -1043,6 +1048,8 @@ object anon {
       inline def setPadding(value: IEditorOption[padding, ReadonlyRequiredIEditorPa]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setParameterHints(value: IEditorOption[parameterHints, ReadonlyRequiredIEditorPaCycle]): Self = StObject.set(x, "parameterHints", value.asInstanceOf[js.Any])
+      
+      inline def setPasteAs(value: IEditorOption[pasteAs, ReadonlyRequiredIPasteAsO]): Self = StObject.set(x, "pasteAs", value.asInstanceOf[js.Any])
       
       inline def setPeekWidgetDefaultFocus(value: IEditorOption[peekWidgetDefaultFocus, tree | editor]): Self = StObject.set(x, "peekWidgetDefaultFocus", value.asInstanceOf[js.Any])
       
@@ -1230,6 +1237,8 @@ object anon {
     extends StObject
        with Instantiable2[/* startLineNumber */ Double, /* endLineNumberExclusive */ Double, LineRange] {
     
+    def fromRange(range: Range): LineRange = js.native
+    
     /**
       * @param lineRanges1 Must be sorted.
       * @param lineRanges2 Must be sorted.
@@ -1240,6 +1249,16 @@ object anon {
       * @param lineRanges An array of sorted line ranges.
       */
     def joinMany(lineRanges: js.Array[js.Array[LineRange]]): js.Array[LineRange] = js.native
+    
+    def ofLength(startLineNumber: Double, length: Double): LineRange = js.native
+  }
+  
+  @js.native
+  trait TypeofLineRangeMapping
+    extends StObject
+       with Instantiable2[/* originalRange */ LineRange, /* modifiedRange */ LineRange, LineRangeMapping] {
+    
+    def inverse(mapping: js.Array[LineRangeMapping], originalLineCount: Double, modifiedLineCount: Double): js.Array[LineRangeMapping] = js.native
   }
   
   @js.native
@@ -1486,7 +1505,15 @@ object anon {
       */
     def file(path: String): Uri = js.native
     
-    def from(components: Fragment): Uri = js.native
+    /**
+      * Creates new Uri from uri components.
+      *
+      * Unless `strict` is `true` the scheme is defaults to be `file`. This function performs
+      * validation and should be used for untrusted uri components retrieved from storage,
+      * user input, command arguments etc
+      */
+    def from(components: UriComponents): Uri = js.native
+    def from(components: UriComponents, strict: Boolean): Uri = js.native
     
     def isUri(thing: Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = js.native
     
@@ -1513,6 +1540,16 @@ object anon {
     def revive(data: UriComponents): js.UndefOr[Uri] = js.native
     @JSName("revive")
     def revive_Uri(data: Uri): Uri = js.native
+    /**
+      * A helper function to revive URIs.
+      *
+      * **Note** that this function should only be used when receiving Uri#toJSON generated data
+      * and that it doesn't do any validation. Use {@link Uri.from} when received "untrusted"
+      * uri components such as command arguments or data from storage.
+      *
+      * @param data The Uri components or Uri to revive.
+      * @returns The revived Uri or undefined or null.
+      */
     @JSName("revive")
     def revive_Uri(data: UriComponents): Uri = js.native
   }
@@ -1572,11 +1609,7 @@ object anon {
     
     var LineRange: TypeofLineRange = js.native
     
-    var LineRangeMapping: Instantiable2[
-        /* originalRange */ LineRange, 
-        /* modifiedRange */ LineRange, 
-        typings.monacoEditor.mod.editor.LineRangeMapping
-      ] = js.native
+    var LineRangeMapping: TypeofLineRangeMapping = js.native
     
     var RangeMapping: Instantiable2[
         /* originalRange */ Range, 

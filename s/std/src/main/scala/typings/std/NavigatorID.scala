@@ -6,38 +6,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorID extends StObject {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/appCodeName)
+    */
   /* standard dom */
   val appCodeName: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/appName)
+    */
   /* standard dom */
   val appName: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/appVersion)
+    */
   /* standard dom */
   val appVersion: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/platform)
+    */
   /* standard dom */
   val platform: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/product)
+    */
   /* standard dom */
   val product: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/productSub)
+    */
   /* standard dom */
   val productSub: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/userAgent) */
   /* standard dom */
   val userAgent: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/vendor)
+    */
   /* standard dom */
   val vendor: java.lang.String
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/vendorSub)
+    */
   /* standard dom */
   val vendorSub: java.lang.String
 }

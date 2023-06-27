@@ -99,7 +99,11 @@ type BaseTileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BaseTi
 
 type BaseTileLayerRefreshEventHandler = js.Function1[/* event */ BaseTileLayerRefreshEvent, scala.Unit]
 
-type BasemapFilter = js.Function3[/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap], Boolean]
+type BasemapFilter = js.Function3[
+/* item */ Basemap, 
+/* index */ Double, 
+/* array */ js.Array[Basemap], 
+Boolean | js.Promise[Boolean]]
 
 type BasemapGalleryConstructor = Instantiable1[/* properties */ js.UndefOr[BasemapGalleryProperties], BasemapGallery]
 
@@ -233,6 +237,8 @@ ControlPointsGeoreference]
 
 type ConversionConstructor = Instantiable1[/* properties */ js.UndefOr[ConversionProperties], Conversion]
 
+type ConvertFunction = js.Function1[/* point */ Point, FormatPosition]
+
 type CoordinateConversionConstructor = Instantiable1[/* properties */ js.UndefOr[CoordinateConversionProperties], CoordinateConversion]
 
 type CoordinateConversionViewModelConstructor = Instantiable1[
@@ -248,6 +254,8 @@ CreateFeaturesWorkflow]
 type CreateFeaturesWorkflowDataConstructor = Instantiable1[
 /* properties */ js.UndefOr[CreateFeaturesWorkflowDataProperties], 
 CreateFeaturesWorkflowData]
+
+type CreateFeaturesWorkflowProperties = WorkflowProperties
 
 type CreateWorkflowConstructor = Instantiable1[/* properties */ js.UndefOr[CreateWorkflowProperties], CreateWorkflow]
 
@@ -268,8 +276,6 @@ type DataLineCreatedFunction = js.Function3[
 /* labelElement */ js.UndefOr[Any], 
 /* index */ js.UndefOr[Double], 
 scala.Unit]
-
-type DataModelConstructor = Instantiable1[/* properties */ js.UndefOr[DataModelProperties], DataModel]
 
 type DateLabelFormatter = js.Function4[
 /* value */ js.Date | js.Array[js.Date], 
@@ -384,13 +390,9 @@ type ElevationSamplerConstructor = Instantiable0[ElevationSampler]
 
 type Entity = GraphNamedObject
 
-type EntityConstructor = Instantiable1[/* properties */ js.UndefOr[EntityProperties], Entity]
-
 type EntityProperties = GraphNamedObjectProperties
 
 type EntityType = GraphObjectType
-
-type EntityTypeConstructor = Instantiable1[/* properties */ js.UndefOr[EntityTypeProperties], EntityType]
 
 type EntityTypeProperties = GraphObjectTypeProperties
 
@@ -473,11 +475,21 @@ type FeatureTemplatesViewModelSelectEventHandler = js.Function1[/* event */ Feat
 
 type FeatureViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FeatureViewModelProperties], FeatureViewModel]
 
-type FenceGeotriggerConstructor = Instantiable1[/* properties */ js.UndefOr[FenceGeotriggerProperties], FenceGeotrigger]
+type FeaturesConstructor = Instantiable1[/* properties */ js.UndefOr[FeaturesProperties], Features]
+
+type FeaturesTriggerActionEventHandler = js.Function1[/* event */ FeaturesTriggerActionEvent, scala.Unit]
+
+type FeaturesViewModel = PopupViewModel
+
+type FeaturesViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[FeaturesViewModelProperties], FeaturesViewModel]
+
+type FeaturesViewModelProperties = PopupViewModelProperties
 
 type FetchFeatureInfoFunction = js.Function1[/* query */ Any, js.Promise[js.Array[Graphic]]]
 
 type FetchMessageBundle = js.Function2[/* bundleId */ String, /* locale */ String, js.Promise[Any]]
+
+type FetchPlaceParametersConstructor = Instantiable1[/* properties */ js.UndefOr[FetchPlaceParametersProperties], FetchPlaceParameters]
 
 type FieldColumnConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldColumnConfigProperties], FieldColumnConfig]
 
@@ -487,7 +499,7 @@ type FieldConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldCon
 
 type FieldGroupConfigConstructor = Instantiable1[/* properties */ js.UndefOr[FieldGroupConfigProperties], FieldGroupConfig]
 
-type FieldIndexConstructor = Instantiable1[/* properties */ js.UndefOr[FieldIndexProperties], FieldIndex]
+type FieldInputConstructor = Instantiable1[/* properties */ js.UndefOr[FieldInputProperties], FieldInput]
 
 type FieldsIndexConstructor = Instantiable1[/* properties */ js.UndefOr[Any], FieldsIndex]
 
@@ -582,14 +594,6 @@ type GraphApplyEditsResultConstructor = Instantiable1[
 /* properties */ js.UndefOr[GraphApplyEditsResultProperties], 
 GraphApplyEditsResult]
 
-type GraphNamedObjectConstructor = Instantiable1[/* properties */ js.UndefOr[GraphNamedObjectProperties], GraphNamedObject]
-
-type GraphObjectConstructor = Instantiable1[/* properties */ js.UndefOr[GraphObjectProperties], GraphObject]
-
-type GraphObjectTypeConstructor = Instantiable1[/* properties */ js.UndefOr[GraphObjectTypeProperties], GraphObjectType]
-
-type GraphPropertyConstructor = Instantiable1[/* properties */ js.UndefOr[GraphPropertyProperties], GraphProperty]
-
 type GraphQueryConstructor = Instantiable1[/* properties */ js.UndefOr[GraphQueryProperties], GraphQuery]
 
 type GraphQueryResultConstructor = Instantiable1[/* properties */ js.UndefOr[GraphQueryResultProperties], GraphQueryResult]
@@ -615,6 +619,8 @@ type GroupByFunction = js.Function1[/* grouping */ Any, String | Any]
 type GroupColumnConstructor = Instantiable1[/* properties */ js.UndefOr[GroupColumnProperties], GroupColumn]
 
 type GroupColumnProperties = ColumnProperties
+
+type GroupInputConstructor = Instantiable1[/* properties */ js.UndefOr[GroupInputProperties], GroupInput]
 
 type HandleOwnerConstructor = Instantiable1[/* properties */ js.UndefOr[HandleOwnerProperties], HandleOwner]
 
@@ -706,10 +712,6 @@ type InputCreatedFunction = js.Function3[
 /* thumbIndex */ js.UndefOr[Double], 
 scala.Unit]
 
-type InputFieldConstructor = Instantiable1[/* properties */ js.UndefOr[InputFieldProperties], InputField]
-
-type InputFieldGroupConstructor = Instantiable1[/* properties */ js.UndefOr[InputFieldGroupProperties], InputFieldGroup]
-
 type InputParser = js.Function3[
 /* value */ String, 
 /* type */ js.UndefOr[average | min | max | tick | value], 
@@ -734,7 +736,9 @@ type KMLLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[KMLLaye
 
 type KMLLayerViewProperties = LayerViewProperties
 
-type KnowledgeGraphConstructor = Instantiable1[/* properties */ js.UndefOr[KnowledgeGraphProperties], KnowledgeGraph]
+type KnowledgeGraphSublayerConstructor = Instantiable1[
+/* properties */ js.UndefOr[KnowledgeGraphSublayerProperties], 
+KnowledgeGraphSublayer]
 
 type LabelFormatter = js.Function3[
 /* value */ Double, 
@@ -863,6 +867,8 @@ MeshMaterialMetallicRoughness]
 
 type MeshTextureConstructor = Instantiable1[/* properties */ js.UndefOr[MeshTextureProperties], MeshTexture]
 
+type MeshTextureTransformConstructor = Instantiable1[/* properties */ js.UndefOr[MeshTextureTransformProperties], MeshTextureTransform]
+
 type MultipointDrawActionConstructor = Instantiable1[/* properties */ js.UndefOr[MultipointDrawActionProperties], MultipointDrawAction]
 
 type MultipointDrawActionCursorUpdateEventHandler = js.Function1[/* event */ MultipointDrawActionCursorUpdateEvent, scala.Unit]
@@ -878,6 +884,8 @@ type MultipointDrawActionUndoEventHandler = js.Function1[/* event */ MultipointD
 type MultipointDrawActionVertexAddEventHandler = js.Function1[/* event */ MultipointDrawActionVertexAddEvent, scala.Unit]
 
 type MultipointDrawActionVertexRemoveEventHandler = js.Function1[/* event */ MultipointDrawActionVertexRemoveEvent, scala.Unit]
+
+type MutateFunction = js.Function1[/* value */ Any, scala.Unit]
 
 type NamedTraceConfigurationConstructor = Instantiable1[/* properties */ js.UndefOr[Any], NamedTraceConfiguration]
 
@@ -911,13 +919,21 @@ type OutputQuantizationParametersConstructor = Instantiable1[
 /* properties */ js.UndefOr[OutputQuantizationParametersProperties], 
 OutputQuantizationParameters]
 
-type PathConstructor = Instantiable1[/* properties */ js.UndefOr[PathProperties], Path]
-
 type PhaseCallback = js.Function1[/* event */ js.UndefOr[PhaseEvent], scala.Unit]
 
 type PixelBlockConstructor = Instantiable1[/* properties */ js.UndefOr[PixelBlockProperties], PixelBlock]
 
 type PixelFilterFunction = js.Function1[/* pixelData */ PixelData, scala.Unit]
+
+type PlaceResultConstructor = Instantiable1[/* properties */ js.UndefOr[PlaceResultProperties], PlaceResult]
+
+type PlacesParametersConstructor = Instantiable1[/* properties */ js.UndefOr[PlacesParametersProperties], PlacesParameters]
+
+type PlacesQueryParametersConstructor = Instantiable1[
+/* properties */ js.UndefOr[PlacesQueryParametersProperties], 
+PlacesQueryParameters]
+
+type PlacesQueryResultConstructor = Instantiable1[/* properties */ js.UndefOr[PlacesQueryResultProperties], PlacesQueryResult]
 
 type PointCloudLayerViewConstructor = Instantiable1[/* properties */ js.UndefOr[PointCloudLayerViewProperties], PointCloudLayerView]
 
@@ -1031,7 +1047,7 @@ type RainyWeatherConstructor = Instantiable1[/* properties */ js.UndefOr[RainyWe
 
 type RejectCallback = js.Function1[/* error */ js.UndefOr[Any], scala.Unit]
 
-type RelationshipTypeConstructor = Instantiable1[/* properties */ js.UndefOr[RelationshipTypeProperties], RelationshipType]
+type RelationshipInputConstructor = Instantiable1[/* properties */ js.UndefOr[RelationshipInputProperties], RelationshipInput]
 
 type RenderContextCallback = js.Function1[/* context */ js.UndefOr[RenderContext], scala.Unit]
 
@@ -1056,6 +1072,8 @@ to avoid circular code involving:
   - js.Array[scala.Any]
 */
 type ResultType = _ResultType | js.Array[Any] | Double | String | js.Date | Boolean | Any
+
+type ReverseConvertFunction = js.Function1[/* coordinate */ String, Point]
 
 type ScaleBarConstructor = Instantiable1[/* properties */ js.UndefOr[ScaleBarProperties], ScaleBar]
 
@@ -1271,7 +1289,7 @@ type SubtypeGroupLayerLayerviewDestroyEventHandler = js.Function1[/* event */ Su
 
 type SubtypeGroupLayerRefreshEventHandler = js.Function1[/* event */ SubtypeGroupLayerRefreshEvent, scala.Unit]
 
-type SubtypeSublayerConstructor = Instantiable1[/* properties */ js.UndefOr[Any], SubtypeSublayer]
+type SubtypeSublayerConstructor = Instantiable1[/* properties */ js.UndefOr[SubtypeSublayerProperties], SubtypeSublayer]
 
 type SunLightingConstructor = Instantiable1[/* properties */ js.UndefOr[SunLightingProperties], SunLighting]
 
@@ -1389,6 +1407,32 @@ type UtilityNetworkTraceConstructor = Instantiable1[/* properties */ js.UndefOr[
 type UtilityNetworkTraceViewModelConstructor = Instantiable1[
 /* properties */ js.UndefOr[UtilityNetworkTraceViewModelProperties], 
 UtilityNetworkTraceViewModel]
+
+type UtilityNetworkValidateTopologyConstructor = Instantiable1[
+/* properties */ js.UndefOr[UtilityNetworkValidateTopologyProperties], 
+UtilityNetworkValidateTopology]
+
+type UtilityNetworkValidateTopologyViewModelConstructor = Instantiable1[/* properties */ js.UndefOr[Any], UtilityNetworkValidateTopologyViewModel]
+
+type ValuePickerAnimateEventHandler = js.Function1[/* event */ ValuePickerAnimateEvent, scala.Unit]
+
+type ValuePickerCollectionConstructor = Instantiable1[/* properties */ js.UndefOr[Any], ValuePickerCollection]
+
+type ValuePickerComboboxConstructor = Instantiable1[/* properties */ js.UndefOr[Any], ValuePickerCombobox]
+
+type ValuePickerConstructor = Instantiable1[/* properties */ js.UndefOr[ValuePickerProperties], ValuePicker]
+
+type ValuePickerLabelConstructor = Instantiable1[/* properties */ js.UndefOr[Any], ValuePickerLabel]
+
+type ValuePickerNextEventHandler = js.Function1[/* event */ ValuePickerNextEvent, scala.Unit]
+
+type ValuePickerPauseEventHandler = js.Function1[/* event */ ValuePickerPauseEvent, scala.Unit]
+
+type ValuePickerPlayEventHandler = js.Function1[/* event */ ValuePickerPlayEvent, scala.Unit]
+
+type ValuePickerPreviousEventHandler = js.Function1[/* event */ ValuePickerPreviousEvent, scala.Unit]
+
+type ValuePickerSliderConstructor = Instantiable1[/* properties */ js.UndefOr[Any], ValuePickerSlider]
 
 type VideoElementConstructor = Instantiable1[/* properties */ js.UndefOr[VideoElementProperties], VideoElement]
 
@@ -1513,13 +1557,11 @@ type inputsBarcodeScannerInput = BarcodeScannerInput
 
 type inputsDateTimePickerInput = DateTimePickerInput
 
+type inputsSwitchInput = SwitchInput
+
 type inputsTextAreaInput = TextAreaInput
 
 type inputsTextBoxInput = TextBoxInput
-
-type knowledgeGraphRelationshipConstructor = Instantiable1[
-/* properties */ js.UndefOr[knowledgeGraphRelationshipProperties], 
-knowledgeGraphRelationship]
 
 type pointCloudRenderersPointCloudClassBreaksRenderer = PointCloudClassBreaksRenderer
 
@@ -1556,10 +1598,6 @@ type renderersPieChartRenderer = PieChartRenderer
 type renderersSimpleRenderer = SimpleRenderer
 
 type renderersUniqueValueRenderer = UniqueValueRenderer
-
-type supportImageParametersConstructor = Instantiable1[
-/* properties */ js.UndefOr[supportImageParametersProperties], 
-supportImageParameters]
 
 type symbolsCIMSymbol = CIMSymbol
 

@@ -17,7 +17,7 @@ trait AdjustDeepPath extends StObject {
     * The callback function returns a `string` with the deep path for the entity returned by the function import
     * and gets the parameter map `mParameters` containing the following properties:
     * 	 - `{string} mParameters.deepPath`: The deep path of the resulting entity, as far as the framework is
-    * 			able to determine from the metadata and the OData response
+    *     able to determine from the metadata and the OData response
     * 	 - `{object} mParameters.response`: A copy of the OData response object
     */
   var adjustDeepPath: js.UndefOr[js.Function] = js.undefined
@@ -54,16 +54,16 @@ trait AdjustDeepPath extends StObject {
     * 	 - the function import returns a single entity,
     * 	 - the back-end service must support the "Content-ID" header,
     * 	 - the back end must allow GET requests relative to this content ID outside the changeset within the
-    * 			`$batch` request.  The success and error callback functions are called only once, even if there
-    * 			are two requests in the `$batch` related to a single call of {@link #callFunction}.
+    *     `$batch` request.  The success and error callback functions are called only once, even if there
+    *     are two requests in the `$batch` related to a single call of {@link #callFunction}.
     * 	 - If both requests succeed, the success callback is called with the merged data of the POST and the
-    * 			GET request and with the response of the POST request.
+    *     GET request and with the response of the POST request.
     * 	 - If the POST request fails, the GET request also fails. In that case the error callback is called
-    * 			with the error response of the POST request.
+    *     with the error response of the POST request.
     * 	 - If the POST request succeeds but the GET request for the navigation properties fails, the success
-    * 			callback is called with the data and the response of the POST request. The response object of the success
-    * 			callback call and the response parameter of the corresponding `requestFailed` and `requestCompleted`
-    * 			events have an additional property `expandAfterFunctionCallFailed` set to `true`.
+    *     callback is called with the data and the response of the POST request. The response object of the success
+    *     callback call and the response parameter of the corresponding `requestFailed` and `requestCompleted`
+    *     events have an additional property `expandAfterFunctionCallFailed` set to `true`.
     */
   var expand: js.UndefOr[String] = js.undefined
   
@@ -84,9 +84,8 @@ trait AdjustDeepPath extends StObject {
   var method: js.UndefOr[String] = js.undefined
   
   /**
-    * Defines whether to update all bindings after submitting this change operation; since 1.46. See {@link
-    * #setRefreshAfterChange}. If given, this overrules the model-wide `refreshAfterChange` flag for this operation
-    * only.
+    * Defines whether to update all bindings after submitting this change operation; since 1.46. See {@link #setRefreshAfterChange}.
+    * If given, this overrules the model-wide `refreshAfterChange` flag for this operation only.
     */
   var refreshAfterChange: js.UndefOr[Boolean] = js.undefined
   

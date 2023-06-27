@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalItemAddResourceOptions extends StObject {
   
   /**
-    * Indicates the level of access to the resource.
-    *
-    * @default "inherit"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
-    */
+  		 * Indicates the level of access to the resource.
+  		 *
+  		 * @default "inherit"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
+  		 */
   var access: js.UndefOr[inherit | `private`] = js.undefined
   
   /**
-    * Signal object that can be used to abort the asynchronous task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
-    */
+  		 * Signal object that can be used to abort the asynchronous task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object PortalItemAddResourceOptions {

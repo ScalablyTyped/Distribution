@@ -38,13 +38,13 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("acceptInvitationForAuthenticatedUser")
-  var acceptInvitationForAuthenticatedUser_Original: `565`
+  var acceptInvitationForAuthenticatedUser_Original: `567`
   
   /**
     * @deprecated octokit.rest.repos.acceptInvitation() has been renamed to octokit.rest.repos.acceptInvitationForAuthenticatedUser() (2021-10-05)
     */
   @JSName("acceptInvitation")
-  var acceptInvitation_Original: `565`
+  var acceptInvitation_Original: `567`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -68,7 +68,7 @@ trait AcceptInvitation extends StObject {
     * Grants the specified apps push access for this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("addAppAccessRestrictions")
-  var addAppAccessRestrictions_Original: `566`
+  var addAppAccessRestrictions_Original: `568`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
@@ -128,7 +128,7 @@ trait AcceptInvitation extends StObject {
     * You are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: `567`
+  var addCollaborator_Original: `569`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -148,7 +148,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("addStatusCheckContexts")
-  var addStatusCheckContexts_Original: `568`
+  var addStatusCheckContexts_Original: `570`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -172,7 +172,7 @@ trait AcceptInvitation extends StObject {
     * Grants the specified teams push access for this branch. You can also give push access to child teams.
     */
   @JSName("addTeamAccessRestrictions")
-  var addTeamAccessRestrictions_Original: `569`
+  var addTeamAccessRestrictions_Original: `571`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -204,7 +204,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addUserAccessRestrictions")
-  var addUserAccessRestrictions_Original: `570`
+  var addUserAccessRestrictions_Original: `572`
   
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
@@ -236,7 +236,7 @@ trait AcceptInvitation extends StObject {
     * endpoint.
     */
   @JSName("checkCollaborator")
-  var checkCollaborator_Original: `571`
+  var checkCollaborator_Original: `573`
   
   /**
     * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin read access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/articles/about-security-alerts-for-vulnerable-dependencies)".
@@ -256,7 +256,7 @@ trait AcceptInvitation extends StObject {
     * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin read access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("checkVulnerabilityAlerts")
-  var checkVulnerabilityAlerts_Original: `572`
+  var checkVulnerabilityAlerts_Original: `574`
   
   /**
     * List any syntax errors that are detected in the CODEOWNERS
@@ -284,7 +284,7 @@ trait AcceptInvitation extends StObject {
     * see "[About code owners](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)."
     */
   @JSName("codeownersErrors")
-  var codeownersErrors_Original: `573`
+  var codeownersErrors_Original: `575`
   
   /**
     * **Deprecated**: Use `repos.compareCommitsWithBasehead()` (`GET /repos/{owner}/{repo}/compare/{basehead}`) instead. Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
@@ -446,7 +446,7 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("compareCommitsWithBasehead")
-  var compareCommitsWithBasehead_Original: `575`
+  var compareCommitsWithBasehead_Original: `577`
   
   /**
     * **Deprecated**: Use `repos.compareCommitsWithBasehead()` (`GET /repos/{owner}/{repo}/compare/{basehead}`) instead. Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
@@ -491,7 +491,7 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("compareCommits")
-  var compareCommits_Original: `574`
+  var compareCommits_Original: `576`
   
   /**
     * Users with admin access to the repository can create an autolink.
@@ -511,7 +511,7 @@ trait AcceptInvitation extends StObject {
     * Users with admin access to the repository can create an autolink.
     */
   @JSName("createAutolink")
-  var createAutolink_Original: `576`
+  var createAutolink_Original: `578`
   
   /**
     * Create a comment for a commit using its `:commit_sha`.
@@ -535,7 +535,7 @@ trait AcceptInvitation extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createCommitComment")
-  var createCommitComment_Original: `577`
+  var createCommitComment_Original: `579`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -559,7 +559,7 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("createCommitSignatureProtection")
-  var createCommitSignatureProtection_Original: `578`
+  var createCommitSignatureProtection_Original: `580`
   
   /**
     * Users with push access in a repository can create commit statuses for a given SHA.
@@ -583,7 +583,7 @@ trait AcceptInvitation extends StObject {
     * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   @JSName("createCommitStatus")
-  var createCommitStatus_Original: `579`
+  var createCommitStatus_Original: `581`
   
   /**
     * You can create a read-only deploy key.
@@ -603,7 +603,7 @@ trait AcceptInvitation extends StObject {
     * You can create a read-only deploy key.
     */
   @JSName("createDeployKey")
-  var createDeployKey_Original: `580`
+  var createDeployKey_Original: `582`
   
   /**
     * Deployments offer a few configurable parameters with certain defaults.
@@ -686,7 +686,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
   @JSName("createDeploymentBranchPolicy")
-  var createDeploymentBranchPolicy_Original: `582`
+  var createDeploymentBranchPolicy_Original: `584`
   
   /**
     * Enable a custom deployment protection rule for an environment.
@@ -714,7 +714,7 @@ trait AcceptInvitation extends StObject {
     * For more information about the app that is providing this custom deployment rule, see the [documentation for the `GET /apps/{app_slug}` endpoint](https://docs.github.com/rest/apps/apps#get-an-app).
     */
   @JSName("createDeploymentProtectionRule")
-  var createDeploymentProtectionRule_Original: `583`
+  var createDeploymentProtectionRule_Original: `585`
   
   /**
     * Users with `push` access can create deployment statuses for a given deployment.
@@ -738,7 +738,7 @@ trait AcceptInvitation extends StObject {
     * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   @JSName("createDeploymentStatus")
-  var createDeploymentStatus_Original: `584`
+  var createDeploymentStatus_Original: `586`
   
   /**
     * Deployments offer a few configurable parameters with certain defaults.
@@ -788,7 +788,7 @@ trait AcceptInvitation extends StObject {
     * status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   @JSName("createDeployment")
-  var createDeployment_Original: `581`
+  var createDeployment_Original: `583`
   
   /**
     * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://docs.github.com/webhooks/event-payloads/#repository_dispatch)."
@@ -826,7 +826,7 @@ trait AcceptInvitation extends StObject {
     * This input example shows how you can use the `client_payload` as a test to debug your workflow.
     */
   @JSName("createDispatchEvent")
-  var createDispatchEvent_Original: `585`
+  var createDispatchEvent_Original: `587`
   
   /**
     * Creates a new repository for the authenticated user.
@@ -860,7 +860,7 @@ trait AcceptInvitation extends StObject {
     * *   `repo` scope to create a private repository.
     */
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: `586`
+  var createForAuthenticatedUser_Original: `588`
   
   /**
     * Create a fork for the authenticated user.
@@ -888,7 +888,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: Although this endpoint works with GitHub Apps, the GitHub App must be installed on the destination account with access to all repositories and on the source account with access to the source repository.
     */
   @JSName("createFork")
-  var createFork_Original: `587`
+  var createFork_Original: `589`
   
   /**
     * Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
@@ -922,7 +922,7 @@ trait AcceptInvitation extends StObject {
     * *   `repo` scope to create a private repository
     */
   @JSName("createInOrg")
-  var createInOrg_Original: `588`
+  var createInOrg_Original: `590`
   
   /**
     * Create or update an environment with protection rules, such as required reviewers. For more information about environment protection rules, see "[Environments](/actions/reference/environments#environment-protection-rules)."
@@ -954,7 +954,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
   @JSName("createOrUpdateEnvironment")
-  var createOrUpdateEnvironment_Original: `589`
+  var createOrUpdateEnvironment_Original: `591`
   
   /**
     * Creates a new file or replaces an existing file in a repository. You must authenticate using an access token with the `workflow` scope to use this endpoint.
@@ -978,7 +978,7 @@ trait AcceptInvitation extends StObject {
     * **Note:** If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/reference/repos/#delete-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
   @JSName("createOrUpdateFileContents")
-  var createOrUpdateFileContents_Original: `590`
+  var createOrUpdateFileContents_Original: `592`
   
   /**
     * Create a repository ruleset for an organization.
@@ -998,7 +998,7 @@ trait AcceptInvitation extends StObject {
     * Create a repository ruleset for an organization.
     */
   @JSName("createOrgRuleset")
-  var createOrgRuleset_Original: `591`
+  var createOrgRuleset_Original: `593`
   
   /**
     * Create a GitHub Pages deployment for a repository.
@@ -1022,7 +1022,7 @@ trait AcceptInvitation extends StObject {
     * Users must have write permissions. GitHub Apps must have the `pages:write` permission to use this endpoint.
     */
   @JSName("createPagesDeployment")
-  var createPagesDeployment_Original: `592`
+  var createPagesDeployment_Original: `594`
   
   /**
     * Configures a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages)."
@@ -1046,7 +1046,7 @@ trait AcceptInvitation extends StObject {
     * To use this endpoint, you must be a repository administrator, maintainer, or have the 'manage GitHub Pages settings' permission. A token with the `repo` scope or Pages write permission is required. GitHub Apps must have the `administration:write` and `pages:write` permissions.
     */
   @JSName("createPagesSite")
-  var createPagesSite_Original: `593`
+  var createPagesSite_Original: `595`
   
   /**
     * Users with push access to the repository can create a release.
@@ -1070,7 +1070,7 @@ trait AcceptInvitation extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createRelease")
-  var createRelease_Original: `594`
+  var createRelease_Original: `596`
   
   /**
     * Create a ruleset for a repository.
@@ -1090,7 +1090,7 @@ trait AcceptInvitation extends StObject {
     * Create a ruleset for a repository.
     */
   @JSName("createRepoRuleset")
-  var createRepoRuleset_Original: `595`
+  var createRepoRuleset_Original: `597`
   
   /**
     * This creates a tag protection state for a repository.
@@ -1112,7 +1112,7 @@ trait AcceptInvitation extends StObject {
     * This endpoint is only available to repository administrators.
     */
   @JSName("createTagProtection")
-  var createTagProtection_Original: `596`
+  var createTagProtection_Original: `598`
   
   /**
     * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. If the repository is not public, the authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://docs.github.com/rest/reference/repos#get-a-repository) endpoint and check that the `is_template` key is `true`.
@@ -1146,7 +1146,7 @@ trait AcceptInvitation extends StObject {
     * *   `repo` scope to create a private repository
     */
   @JSName("createUsingTemplate")
-  var createUsingTemplate_Original: `597`
+  var createUsingTemplate_Original: `599`
   
   /**
     * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can
@@ -1168,7 +1168,7 @@ trait AcceptInvitation extends StObject {
     * share the same `config` as long as those webhooks do not have any `events` that overlap.
     */
   @JSName("createWebhook")
-  var createWebhook_Original: `598`
+  var createWebhook_Original: `600`
   
   /**
     * @deprecated octokit.rest.repos.declineInvitation() has been renamed to octokit.rest.repos.declineInvitationForAuthenticatedUser() (2021-10-05)
@@ -1197,13 +1197,13 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("declineInvitationForAuthenticatedUser")
-  var declineInvitationForAuthenticatedUser_Original: `599`
+  var declineInvitationForAuthenticatedUser_Original: `601`
   
   /**
     * @deprecated octokit.rest.repos.declineInvitation() has been renamed to octokit.rest.repos.declineInvitationForAuthenticatedUser() (2021-10-05)
     */
   @JSName("declineInvitation")
-  var declineInvitation_Original: `599`
+  var declineInvitation_Original: `601`
   
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
@@ -1245,7 +1245,7 @@ trait AcceptInvitation extends StObject {
     * Disables the ability to restrict who can push to this branch.
     */
   @JSName("deleteAccessRestrictions")
-  var deleteAccessRestrictions_Original: `601`
+  var deleteAccessRestrictions_Original: `603`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1269,7 +1269,7 @@ trait AcceptInvitation extends StObject {
     * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("deleteAdminBranchProtection")
-  var deleteAdminBranchProtection_Original: `602`
+  var deleteAdminBranchProtection_Original: `604`
   
   /**
     * You must authenticate using an access token with the repo scope to use this endpoint.
@@ -1289,7 +1289,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the repo scope to use this endpoint.
     */
   @JSName("deleteAnEnvironment")
-  var deleteAnEnvironment_Original: `603`
+  var deleteAnEnvironment_Original: `605`
   
   /**
     * This deletes a single autolink reference by ID that was configured for the given repository.
@@ -1313,7 +1313,7 @@ trait AcceptInvitation extends StObject {
     * Information about autolinks are only available to repository administrators.
     */
   @JSName("deleteAutolink")
-  var deleteAutolink_Original: `604`
+  var deleteAutolink_Original: `606`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1333,7 +1333,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("deleteBranchProtection")
-  var deleteBranchProtection_Original: `605`
+  var deleteBranchProtection_Original: `607`
   
   def deleteCommitComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
@@ -1347,7 +1347,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("deleteCommitComment")
-  var deleteCommitComment_Original: `606`
+  var deleteCommitComment_Original: `608`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1371,7 +1371,7 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("deleteCommitSignatureProtection")
-  var deleteCommitSignatureProtection_Original: `607`
+  var deleteCommitSignatureProtection_Original: `609`
   
   /**
     * Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead.
@@ -1391,7 +1391,7 @@ trait AcceptInvitation extends StObject {
     * Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead.
     */
   @JSName("deleteDeployKey")
-  var deleteDeployKey_Original: `608`
+  var deleteDeployKey_Original: `610`
   
   /**
     * If the repository only has one deployment, you can delete the deployment regardless of its status. If the repository has more than one deployment, you can only delete inactive deployments. This ensures that repositories with multiple deployments will always have an active deployment. Anyone with `repo` or `repo_deployment` scopes can delete a deployment.
@@ -1437,7 +1437,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
   @JSName("deleteDeploymentBranchPolicy")
-  var deleteDeploymentBranchPolicy_Original: `610`
+  var deleteDeploymentBranchPolicy_Original: `612`
   
   /**
     * If the repository only has one deployment, you can delete the deployment regardless of its status. If the repository has more than one deployment, you can only delete inactive deployments. This ensures that repositories with multiple deployments will always have an active deployment. Anyone with `repo` or `repo_deployment` scopes can delete a deployment.
@@ -1450,7 +1450,7 @@ trait AcceptInvitation extends StObject {
     * For more information, see "[Create a deployment](https://docs.github.com/rest/deployments/deployments/#create-a-deployment)" and "[Create a deployment status](https://docs.github.com/rest/deployments/deployment-statuses#create-a-deployment-status)."
     */
   @JSName("deleteDeployment")
-  var deleteDeployment_Original: `609`
+  var deleteDeployment_Original: `611`
   
   /**
     * Deletes a file in a repository.
@@ -1486,7 +1486,7 @@ trait AcceptInvitation extends StObject {
     * **Note:** If you use this endpoint and the "[Create or update file contents](https://docs.github.com/rest/reference/repos/#create-or-update-file-contents)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
   @JSName("deleteFile")
-  var deleteFile_Original: `611`
+  var deleteFile_Original: `613`
   
   def deleteInvitation(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
@@ -1500,7 +1500,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("deleteInvitation")
-  var deleteInvitation_Original: `612`
+  var deleteInvitation_Original: `614`
   
   /**
     * Delete a ruleset for an organization.
@@ -1520,7 +1520,7 @@ trait AcceptInvitation extends StObject {
     * Delete a ruleset for an organization.
     */
   @JSName("deleteOrgRuleset")
-  var deleteOrgRuleset_Original: `613`
+  var deleteOrgRuleset_Original: `615`
   
   /**
     * Deletes a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages).
@@ -1544,7 +1544,7 @@ trait AcceptInvitation extends StObject {
     * To use this endpoint, you must be a repository administrator, maintainer, or have the 'manage GitHub Pages settings' permission. A token with the `repo` scope or Pages write permission is required. GitHub Apps must have the `administration:write` and `pages:write` permissions.
     */
   @JSName("deletePagesSite")
-  var deletePagesSite_Original: `614`
+  var deletePagesSite_Original: `616`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1564,7 +1564,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("deletePullRequestReviewProtection")
-  var deletePullRequestReviewProtection_Original: `615`
+  var deletePullRequestReviewProtection_Original: `617`
   
   /**
     * Users with push access to the repository can delete a release.
@@ -1593,13 +1593,13 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   @JSName("deleteReleaseAsset")
-  var deleteReleaseAsset_Original: `617`
+  var deleteReleaseAsset_Original: `619`
   
   /**
     * Users with push access to the repository can delete a release.
     */
   @JSName("deleteRelease")
-  var deleteRelease_Original: `616`
+  var deleteRelease_Original: `618`
   
   /**
     * Delete a ruleset for a repository.
@@ -1619,7 +1619,7 @@ trait AcceptInvitation extends StObject {
     * Delete a ruleset for a repository.
     */
   @JSName("deleteRepoRuleset")
-  var deleteRepoRuleset_Original: `618`
+  var deleteRepoRuleset_Original: `620`
   
   /**
     * This deletes a tag protection state for a repository.
@@ -1641,7 +1641,7 @@ trait AcceptInvitation extends StObject {
     * This endpoint is only available to repository administrators.
     */
   @JSName("deleteTagProtection")
-  var deleteTagProtection_Original: `619`
+  var deleteTagProtection_Original: `621`
   
   def deleteWebhook(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
@@ -1655,7 +1655,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
   @JSName("deleteWebhook")
-  var deleteWebhook_Original: `620`
+  var deleteWebhook_Original: `622`
   
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
@@ -1664,7 +1664,7 @@ trait AcceptInvitation extends StObject {
     * repositories, you will get a `403 Forbidden` response.
     */
   @JSName("delete")
-  var delete_Original: `600`
+  var delete_Original: `602`
   
   /**
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/articles/configuring-automated-security-fixes)".
@@ -1684,7 +1684,7 @@ trait AcceptInvitation extends StObject {
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/articles/configuring-automated-security-fixes)".
     */
   @JSName("disableAutomatedSecurityFixes")
-  var disableAutomatedSecurityFixes_Original: `621`
+  var disableAutomatedSecurityFixes_Original: `623`
   
   /**
     * Disables a custom deployment protection rule for an environment.
@@ -1708,7 +1708,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. Removing a custom protection rule requires admin or owner permissions to the repository. GitHub Apps must have the `actions:write` permission to use this endpoint. For more information, see "[Get an app](https://docs.github.com/rest/apps/apps#get-an-app)".
     */
   @JSName("disableDeploymentProtectionRule")
-  var disableDeploymentProtectionRule_Original: `622`
+  var disableDeploymentProtectionRule_Original: `624`
   
   /**
     * Disables Git LFS for a repository. Access tokens must have the `admin:enterprise` scope.
@@ -1728,7 +1728,7 @@ trait AcceptInvitation extends StObject {
     * Disables Git LFS for a repository. Access tokens must have the `admin:enterprise` scope.
     */
   @JSName("disableLfsForRepo")
-  var disableLfsForRepo_Original: `623`
+  var disableLfsForRepo_Original: `625`
   
   /**
     * Disables dependency alerts and the dependency graph for a repository.
@@ -1752,7 +1752,7 @@ trait AcceptInvitation extends StObject {
     * see "[About security alerts for vulnerable dependencies](https://docs.github.com/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("disableVulnerabilityAlerts")
-  var disableVulnerabilityAlerts_Original: `624`
+  var disableVulnerabilityAlerts_Original: `626`
   
   /**
     * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
@@ -1782,7 +1782,7 @@ trait AcceptInvitation extends StObject {
     * @deprecated octokit.rest.repos.downloadArchive() has been renamed to octokit.rest.repos.downloadZipballArchive() (2020-09-17)
     */
   @JSName("downloadArchive")
-  var downloadArchive_Original: `625`
+  var downloadArchive_Original: `627`
   
   /**
     * Gets a redirect URL to download a tar archive for a repository. If you omit `:ref`, the repository’s default branch (usually
@@ -1808,7 +1808,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: For private repositories, these links are temporary and expire after five minutes.
     */
   @JSName("downloadTarballArchive")
-  var downloadTarballArchive_Original: `626`
+  var downloadTarballArchive_Original: `628`
   
   /**
     * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
@@ -1836,7 +1836,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: For private repositories, these links are temporary and expire after five minutes. If the repository is empty, you will receive a 404 when you follow the redirect.
     */
   @JSName("downloadZipballArchive")
-  var downloadZipballArchive_Original: `625`
+  var downloadZipballArchive_Original: `627`
   
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/articles/configuring-automated-security-fixes)".
@@ -1856,7 +1856,7 @@ trait AcceptInvitation extends StObject {
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/articles/configuring-automated-security-fixes)".
     */
   @JSName("enableAutomatedSecurityFixes")
-  var enableAutomatedSecurityFixes_Original: `627`
+  var enableAutomatedSecurityFixes_Original: `629`
   
   /**
     * Enables Git LFS for a repository. Access tokens must have the `admin:enterprise` scope.
@@ -1876,7 +1876,7 @@ trait AcceptInvitation extends StObject {
     * Enables Git LFS for a repository. Access tokens must have the `admin:enterprise` scope.
     */
   @JSName("enableLfsForRepo")
-  var enableLfsForRepo_Original: `628`
+  var enableLfsForRepo_Original: `630`
   
   /**
     * Enables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/articles/about-security-alerts-for-vulnerable-dependencies)".
@@ -1896,7 +1896,7 @@ trait AcceptInvitation extends StObject {
     * Enables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("enableVulnerabilityAlerts")
-  var enableVulnerabilityAlerts_Original: `629`
+  var enableVulnerabilityAlerts_Original: `631`
   
   /**
     * Generate a name and body describing a [release](https://docs.github.com/rest/reference/repos#releases). The body content will be markdown formatted and contain information like the changes since last release and users who contributed. The generated release notes are not saved anywhere. They are intended to be generated and used when creating a new release.
@@ -1916,7 +1916,7 @@ trait AcceptInvitation extends StObject {
     * Generate a name and body describing a [release](https://docs.github.com/rest/reference/repos#releases). The body content will be markdown formatted and contain information like the changes since last release and users who contributed. The generated release notes are not saved anywhere. They are intended to be generated and used when creating a new release.
     */
   @JSName("generateReleaseNotes")
-  var generateReleaseNotes_Original: `630`
+  var generateReleaseNotes_Original: `632`
   
   /**
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
@@ -1961,7 +1961,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
   @JSName("getAccessRestrictions")
-  var getAccessRestrictions_Original: `632`
+  var getAccessRestrictions_Original: `634`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1981,7 +1981,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getAdminBranchProtection")
-  var getAdminBranchProtection_Original: `633`
+  var getAdminBranchProtection_Original: `635`
   
   /**
     * Gets all custom deployment protection rules that are enabled for an environment. Anyone with read access to the repository can use this endpoint. If the repository is private and you want to use a personal access token (classic), you must use an access token with the `repo` scope. GitHub Apps and fine-grained personal access tokens must have the `actions:read` permission to use this endpoint. For more information about environments, see "[Using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)."
@@ -2005,7 +2005,7 @@ trait AcceptInvitation extends StObject {
     * For more information about the app that is providing this custom deployment rule, see the [documentation for the `GET /apps/{app_slug}` endpoint](https://docs.github.com/rest/apps/apps#get-an-app).
     */
   @JSName("getAllDeploymentProtectionRules")
-  var getAllDeploymentProtectionRules_Original: `634`
+  var getAllDeploymentProtectionRules_Original: `636`
   
   /**
     * Lists the environments for a repository.
@@ -2029,7 +2029,7 @@ trait AcceptInvitation extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getAllEnvironments")
-  var getAllEnvironments_Original: `635`
+  var getAllEnvironments_Original: `637`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2049,7 +2049,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getAllStatusCheckContexts")
-  var getAllStatusCheckContexts_Original: `636`
+  var getAllStatusCheckContexts_Original: `638`
   
   def getAllTopics(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/topics']['response'] */ js.Any
@@ -2063,7 +2063,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/topics']['response'] */ js.Any
   ]
   @JSName("getAllTopics")
-  var getAllTopics_Original: `637`
+  var getAllTopics_Original: `639`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2087,7 +2087,7 @@ trait AcceptInvitation extends StObject {
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("getAppsWithAccessToProtectedBranch")
-  var getAppsWithAccessToProtectedBranch_Original: `638`
+  var getAppsWithAccessToProtectedBranch_Original: `640`
   
   /**
     * This returns a single autolink reference by ID that was configured for the given repository.
@@ -2111,7 +2111,7 @@ trait AcceptInvitation extends StObject {
     * Information about autolinks are only available to repository administrators.
     */
   @JSName("getAutolink")
-  var getAutolink_Original: `639`
+  var getAutolink_Original: `641`
   
   def getBranch(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}']['response'] */ js.Any
@@ -2143,7 +2143,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getBranchProtection")
-  var getBranchProtection_Original: `641`
+  var getBranchProtection_Original: `643`
   
   /**
     * Returns all rules that apply to the specified branch.
@@ -2163,10 +2163,10 @@ trait AcceptInvitation extends StObject {
     * Returns all rules that apply to the specified branch.
     */
   @JSName("getBranchRules")
-  var getBranchRules_Original: `642`
+  var getBranchRules_Original: `644`
   
   @JSName("getBranch")
-  var getBranch_Original: `640`
+  var getBranch_Original: `642`
   
   /**
     * Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
@@ -2186,7 +2186,7 @@ trait AcceptInvitation extends StObject {
     * Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getClones")
-  var getClones_Original: `643`
+  var getClones_Original: `645`
   
   /**
     * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
@@ -2206,7 +2206,7 @@ trait AcceptInvitation extends StObject {
     * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   @JSName("getCodeFrequencyStats")
-  var getCodeFrequencyStats_Original: `644`
+  var getCodeFrequencyStats_Original: `646`
   
   /**
     * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
@@ -2226,7 +2226,7 @@ trait AcceptInvitation extends StObject {
     * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
     */
   @JSName("getCollaboratorPermissionLevel")
-  var getCollaboratorPermissionLevel_Original: `645`
+  var getCollaboratorPermissionLevel_Original: `647`
   
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
@@ -2260,7 +2260,7 @@ trait AcceptInvitation extends StObject {
     * *   **success** if the latest status for all contexts is `success`
     */
   @JSName("getCombinedStatusForRef")
-  var getCombinedStatusForRef_Original: `646`
+  var getCombinedStatusForRef_Original: `648`
   
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
@@ -2330,7 +2330,7 @@ trait AcceptInvitation extends StObject {
     * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   @JSName("getCommitActivityStats")
-  var getCommitActivityStats_Original: `648`
+  var getCommitActivityStats_Original: `650`
   
   def getCommitComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
@@ -2344,7 +2344,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("getCommitComment")
-  var getCommitComment_Original: `649`
+  var getCommitComment_Original: `651`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2372,7 +2372,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: You must enable branch protection to require signed commits.
     */
   @JSName("getCommitSignatureProtection")
-  var getCommitSignatureProtection_Original: `650`
+  var getCommitSignatureProtection_Original: `652`
   
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
@@ -2413,7 +2413,7 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getCommit")
-  var getCommit_Original: `647`
+  var getCommit_Original: `649`
   
   /**
     * Returns all community profile metrics for a repository. The repository cannot be a fork.
@@ -2457,7 +2457,7 @@ trait AcceptInvitation extends StObject {
     * `content_reports_enabled` is only returned for organization-owned repositories.
     */
   @JSName("getCommunityProfileMetrics")
-  var getCommunityProfileMetrics_Original: `651`
+  var getCommunityProfileMetrics_Original: `653`
   
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit
@@ -2549,7 +2549,7 @@ trait AcceptInvitation extends StObject {
     * github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   @JSName("getContent")
-  var getContent_Original: `652`
+  var getContent_Original: `654`
   
   /**
     * Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:
@@ -2579,7 +2579,7 @@ trait AcceptInvitation extends StObject {
     * *   `c` - Number of commits
     */
   @JSName("getContributorsStats")
-  var getContributorsStats_Original: `653`
+  var getContributorsStats_Original: `655`
   
   /**
     * Gets an enabled custom deployment protection rule for an environment. Anyone with read access to the repository can use this endpoint. If the repository is private and you want to use a personal access token (classic), you must use an access token with the `repo` scope. GitHub Apps and fine-grained personal access tokens must have the `actions:read` permission to use this endpoint. For more information about environments, see "[Using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)."
@@ -2603,7 +2603,7 @@ trait AcceptInvitation extends StObject {
     * For more information about the app that is providing this custom deployment rule, see [`GET /apps/{app_slug}`](https://docs.github.com/rest/apps/apps#get-an-app).
     */
   @JSName("getCustomDeploymentProtectionRule")
-  var getCustomDeploymentProtectionRule_Original: `654`
+  var getCustomDeploymentProtectionRule_Original: `656`
   
   def getDeployKey(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
@@ -2617,7 +2617,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
   ]
   @JSName("getDeployKey")
-  var getDeployKey_Original: `655`
+  var getDeployKey_Original: `657`
   
   def getDeployment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}']['response'] */ js.Any
@@ -2653,7 +2653,7 @@ trait AcceptInvitation extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getDeploymentBranchPolicy")
-  var getDeploymentBranchPolicy_Original: `657`
+  var getDeploymentBranchPolicy_Original: `659`
   
   /**
     * Users with pull access can view a deployment status for a deployment:
@@ -2673,10 +2673,10 @@ trait AcceptInvitation extends StObject {
     * Users with pull access can view a deployment status for a deployment:
     */
   @JSName("getDeploymentStatus")
-  var getDeploymentStatus_Original: `658`
+  var getDeploymentStatus_Original: `660`
   
   @JSName("getDeployment")
-  var getDeployment_Original: `656`
+  var getDeployment_Original: `658`
   
   /**
     * **Note:** To get information about name patterns that branches must match in order to deploy to this environment, see "[Get a deployment branch policy](/rest/deployments/branch-policies#get-a-deployment-branch-policy)."
@@ -2704,8 +2704,13 @@ trait AcceptInvitation extends StObject {
     * Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getEnvironment")
-  var getEnvironment_Original: `659`
+  var getEnvironment_Original: `661`
   
+  /**
+    * Gets information about the single most recent build of a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   def getLatestPagesBuild(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/latest']['response'] */ js.Any
   ]
@@ -2717,8 +2722,13 @@ trait AcceptInvitation extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/latest']['response'] */ js.Any
   ]
+  /**
+    * Gets information about the single most recent build of a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   @JSName("getLatestPagesBuild")
-  var getLatestPagesBuild_Original: `660`
+  var getLatestPagesBuild_Original: `662`
   
   /**
     * View the latest published full release for the repository.
@@ -2742,7 +2752,7 @@ trait AcceptInvitation extends StObject {
     * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   @JSName("getLatestRelease")
-  var getLatestRelease_Original: `661`
+  var getLatestRelease_Original: `663`
   
   /**
     * Get a repository ruleset for an organization.
@@ -2762,7 +2772,7 @@ trait AcceptInvitation extends StObject {
     * Get a repository ruleset for an organization.
     */
   @JSName("getOrgRuleset")
-  var getOrgRuleset_Original: `662`
+  var getOrgRuleset_Original: `664`
   
   /**
     * Get all the repository rulesets for an organization.
@@ -2782,8 +2792,13 @@ trait AcceptInvitation extends StObject {
     * Get all the repository rulesets for an organization.
     */
   @JSName("getOrgRulesets")
-  var getOrgRulesets_Original: `663`
+  var getOrgRulesets_Original: `665`
   
+  /**
+    * Gets information about a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   def getPages(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
@@ -2796,6 +2811,11 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   
+  /**
+    * Gets information about a GitHub Pages build.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   def getPagesBuild(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/{build_id}']['response'] */ js.Any
   ]
@@ -2807,8 +2827,13 @@ trait AcceptInvitation extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/{build_id}']['response'] */ js.Any
   ]
+  /**
+    * Gets information about a GitHub Pages build.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   @JSName("getPagesBuild")
-  var getPagesBuild_Original: `665`
+  var getPagesBuild_Original: `667`
   
   /**
     * Gets a health check of the DNS settings for the `CNAME` record configured for a repository's GitHub Pages.
@@ -2836,15 +2861,22 @@ trait AcceptInvitation extends StObject {
     * To use this endpoint, you must be a repository administrator, maintainer, or have the 'manage GitHub Pages settings' permission. A token with the `repo` scope or Pages write permission is required. GitHub Apps must have the `administrative:write` and `pages:write` permissions.
     */
   @JSName("getPagesHealthCheck")
-  var getPagesHealthCheck_Original: `666`
+  var getPagesHealthCheck_Original: `668`
   
+  /**
+    * Gets information about a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   @JSName("getPages")
-  var getPages_Original: `664`
+  var getPages_Original: `666`
   
   /**
     * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
     *
     * The array order is oldest week (index 0) to most recent week.
+    *
+    * The most recent week is seven days ago at UTC midnight to today at UTC midnight.
     */
   def getParticipationStats(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/participation']['response'] */ js.Any
@@ -2861,9 +2893,11 @@ trait AcceptInvitation extends StObject {
     * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
     *
     * The array order is oldest week (index 0) to most recent week.
+    *
+    * The most recent week is seven days ago at UTC midnight to today at UTC midnight.
     */
   @JSName("getParticipationStats")
-  var getParticipationStats_Original: `667`
+  var getParticipationStats_Original: `669`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2883,7 +2917,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getPullRequestReviewProtection")
-  var getPullRequestReviewProtection_Original: `668`
+  var getPullRequestReviewProtection_Original: `670`
   
   /**
     * Each array contains the day number, hour number, and number of commits:
@@ -2915,7 +2949,7 @@ trait AcceptInvitation extends StObject {
     * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   @JSName("getPunchCardStats")
-  var getPunchCardStats_Original: `669`
+  var getPunchCardStats_Original: `671`
   
   /**
     * Gets the preferred README for a repository.
@@ -2956,7 +2990,7 @@ trait AcceptInvitation extends StObject {
     * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadmeInDirectory")
-  var getReadmeInDirectory_Original: `671`
+  var getReadmeInDirectory_Original: `673`
   
   /**
     * Gets the preferred README for a repository.
@@ -2964,7 +2998,7 @@ trait AcceptInvitation extends StObject {
     * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadme")
-  var getReadme_Original: `670`
+  var getReadme_Original: `672`
   
   /**
     * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia).
@@ -2999,7 +3033,7 @@ trait AcceptInvitation extends StObject {
     * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://docs.github.com/rest/overview/media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
     */
   @JSName("getReleaseAsset")
-  var getReleaseAsset_Original: `673`
+  var getReleaseAsset_Original: `675`
   
   /**
     * Get a published release with the specified tag.
@@ -3019,13 +3053,13 @@ trait AcceptInvitation extends StObject {
     * Get a published release with the specified tag.
     */
   @JSName("getReleaseByTag")
-  var getReleaseByTag_Original: `674`
+  var getReleaseByTag_Original: `676`
   
   /**
     * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia).
     */
   @JSName("getRelease")
-  var getRelease_Original: `672`
+  var getRelease_Original: `674`
   
   /**
     * Get a ruleset for a repository.
@@ -3045,7 +3079,7 @@ trait AcceptInvitation extends StObject {
     * Get a ruleset for a repository.
     */
   @JSName("getRepoRuleset")
-  var getRepoRuleset_Original: `675`
+  var getRepoRuleset_Original: `677`
   
   /**
     * Get all the rulesets for a repository.
@@ -3065,7 +3099,7 @@ trait AcceptInvitation extends StObject {
     * Get all the rulesets for a repository.
     */
   @JSName("getRepoRulesets")
-  var getRepoRulesets_Original: `676`
+  var getRepoRulesets_Original: `678`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3085,7 +3119,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getStatusChecksProtection")
-  var getStatusChecksProtection_Original: `677`
+  var getStatusChecksProtection_Original: `679`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3109,7 +3143,7 @@ trait AcceptInvitation extends StObject {
     * Lists the teams who have push access to this branch. The list includes child teams.
     */
   @JSName("getTeamsWithAccessToProtectedBranch")
-  var getTeamsWithAccessToProtectedBranch_Original: `678`
+  var getTeamsWithAccessToProtectedBranch_Original: `680`
   
   /**
     * Get the top 10 popular contents over the last 14 days.
@@ -3129,7 +3163,7 @@ trait AcceptInvitation extends StObject {
     * Get the top 10 popular contents over the last 14 days.
     */
   @JSName("getTopPaths")
-  var getTopPaths_Original: `679`
+  var getTopPaths_Original: `681`
   
   /**
     * Get the top 10 referrers over the last 14 days.
@@ -3149,7 +3183,7 @@ trait AcceptInvitation extends StObject {
     * Get the top 10 referrers over the last 14 days.
     */
   @JSName("getTopReferrers")
-  var getTopReferrers_Original: `680`
+  var getTopReferrers_Original: `682`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3173,7 +3207,7 @@ trait AcceptInvitation extends StObject {
     * Lists the people who have push access to this branch.
     */
   @JSName("getUsersWithAccessToProtectedBranch")
-  var getUsersWithAccessToProtectedBranch_Original: `681`
+  var getUsersWithAccessToProtectedBranch_Original: `683`
   
   /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
@@ -3193,7 +3227,7 @@ trait AcceptInvitation extends StObject {
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getViews")
-  var getViews_Original: `682`
+  var getViews_Original: `684`
   
   /**
     * Returns a webhook configured in a repository. To get only the webhook `config` properties, see "[Get a webhook configuration for a repository](/rest/reference/repos#get-a-webhook-configuration-for-a-repository)."
@@ -3232,7 +3266,7 @@ trait AcceptInvitation extends StObject {
     * Access tokens must have the `read:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:read` permission.
     */
   @JSName("getWebhookConfigForRepo")
-  var getWebhookConfigForRepo_Original: `684`
+  var getWebhookConfigForRepo_Original: `686`
   
   /**
     * Returns a delivery for a webhook configured in a repository.
@@ -3252,13 +3286,13 @@ trait AcceptInvitation extends StObject {
     * Returns a delivery for a webhook configured in a repository.
     */
   @JSName("getWebhookDelivery")
-  var getWebhookDelivery_Original: `685`
+  var getWebhookDelivery_Original: `687`
   
   /**
     * Returns a webhook configured in a repository. To get only the webhook `config` properties, see "[Get a webhook configuration for a repository](/rest/reference/repos#get-a-webhook-configuration-for-a-repository)."
     */
   @JSName("getWebhook")
-  var getWebhook_Original: `683`
+  var getWebhook_Original: `685`
   
   /**
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
@@ -3266,7 +3300,7 @@ trait AcceptInvitation extends StObject {
     * **Note:** In order to see the `security_and_analysis` block for a repository you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
     */
   @JSName("get")
-  var get_Original: `631`
+  var get_Original: `633`
   
   /**
     * This returns a list of autolinks configured for the given repository.
@@ -3290,7 +3324,7 @@ trait AcceptInvitation extends StObject {
     * Information about autolinks are only available to repository administrators.
     */
   @JSName("listAutolinks")
-  var listAutolinks_Original: `686`
+  var listAutolinks_Original: `688`
   
   def listBranches(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches']['response'] */ js.Any
@@ -3326,10 +3360,10 @@ trait AcceptInvitation extends StObject {
     * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
     */
   @JSName("listBranchesForHeadCommit")
-  var listBranchesForHeadCommit_Original: `688`
+  var listBranchesForHeadCommit_Original: `690`
   
   @JSName("listBranches")
-  var listBranches_Original: `687`
+  var listBranches_Original: `689`
   
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
@@ -3363,7 +3397,7 @@ trait AcceptInvitation extends StObject {
     * endpoint.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: `689`
+  var listCollaborators_Original: `691`
   
   /**
     * Use the `:commit_sha` to specify the commit that will have its comments listed.
@@ -3383,7 +3417,7 @@ trait AcceptInvitation extends StObject {
     * Use the `:commit_sha` to specify the commit that will have its comments listed.
     */
   @JSName("listCommentsForCommit")
-  var listCommentsForCommit_Original: `690`
+  var listCommentsForCommit_Original: `692`
   
   /**
     * Commit Comments use [these custom media types](https://docs.github.com/rest/reference/repos#custom-media-types). You can read more about the use of media types in the API [here](https://docs.github.com/rest/overview/media-types/).
@@ -3407,7 +3441,7 @@ trait AcceptInvitation extends StObject {
     * Comments are ordered by ascending ID.
     */
   @JSName("listCommitCommentsForRepo")
-  var listCommitCommentsForRepo_Original: `691`
+  var listCommitCommentsForRepo_Original: `693`
   
   /**
     * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
@@ -3431,7 +3465,7 @@ trait AcceptInvitation extends StObject {
     * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   @JSName("listCommitStatusesForRef")
-  var listCommitStatusesForRef_Original: `692`
+  var listCommitStatusesForRef_Original: `694`
   
   /**
     * **Signature verification object**
@@ -3505,7 +3539,7 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("listCommits")
-  var listCommits_Original: `693`
+  var listCommits_Original: `695`
   
   /**
     * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API caches contributor data to improve performance.
@@ -3529,7 +3563,7 @@ trait AcceptInvitation extends StObject {
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   @JSName("listContributors")
-  var listContributors_Original: `694`
+  var listContributors_Original: `696`
   
   /**
     * Gets all custom deployment protection rule integrations that are available for an environment. Anyone with read access to the repository can use this endpoint. If the repository is private and you want to use a personal access token (classic), you must use an access token with the `repo` scope. GitHub Apps and fine-grained personal access tokens must have the `actions:read` permission to use this endpoint.
@@ -3557,7 +3591,7 @@ trait AcceptInvitation extends StObject {
     * For more information about the app that is providing this custom deployment rule, see "[GET an app](https://docs.github.com/rest/apps/apps#get-an-app)".
     */
   @JSName("listCustomDeploymentRuleIntegrations")
-  var listCustomDeploymentRuleIntegrations_Original: `695`
+  var listCustomDeploymentRuleIntegrations_Original: `697`
   
   def listDeployKeys(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys']['response'] */ js.Any
@@ -3571,7 +3605,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys']['response'] */ js.Any
   ]
   @JSName("listDeployKeys")
-  var listDeployKeys_Original: `696`
+  var listDeployKeys_Original: `698`
   
   /**
     * Lists the deployment branch policies for an environment.
@@ -3595,7 +3629,7 @@ trait AcceptInvitation extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("listDeploymentBranchPolicies")
-  var listDeploymentBranchPolicies_Original: `697`
+  var listDeploymentBranchPolicies_Original: `699`
   
   /**
     * Users with pull access can view deployment statuses for a deployment:
@@ -3615,7 +3649,7 @@ trait AcceptInvitation extends StObject {
     * Users with pull access can view deployment statuses for a deployment:
     */
   @JSName("listDeploymentStatuses")
-  var listDeploymentStatuses_Original: `698`
+  var listDeploymentStatuses_Original: `700`
   
   /**
     * Simple filtering of deployments is available via query parameters:
@@ -3635,7 +3669,7 @@ trait AcceptInvitation extends StObject {
     * Simple filtering of deployments is available via query parameters:
     */
   @JSName("listDeployments")
-  var listDeployments_Original: `699`
+  var listDeployments_Original: `701`
   
   /**
     * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
@@ -3659,7 +3693,7 @@ trait AcceptInvitation extends StObject {
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `700`
+  var listForAuthenticatedUser_Original: `702`
   
   /**
     * Lists repositories for the specified organization.
@@ -3683,7 +3717,7 @@ trait AcceptInvitation extends StObject {
     * **Note:** In order to see the `security_and_analysis` block for a repository you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `701`
+  var listForOrg_Original: `703`
   
   /**
     * Lists public repositories for the specified user. Note: For GitHub AE, this endpoint will list internal repositories for the specified user.
@@ -3703,7 +3737,7 @@ trait AcceptInvitation extends StObject {
     * Lists public repositories for the specified user. Note: For GitHub AE, this endpoint will list internal repositories for the specified user.
     */
   @JSName("listForUser")
-  var listForUser_Original: `702`
+  var listForUser_Original: `704`
   
   def listForks(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/forks']['response'] */ js.Any
@@ -3717,7 +3751,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/forks']['response'] */ js.Any
   ]
   @JSName("listForks")
-  var listForks_Original: `703`
+  var listForks_Original: `705`
   
   /**
     * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
@@ -3752,13 +3786,13 @@ trait AcceptInvitation extends StObject {
     * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.
     */
   @JSName("listInvitationsForAuthenticatedUser")
-  var listInvitationsForAuthenticatedUser_Original: `705`
+  var listInvitationsForAuthenticatedUser_Original: `707`
   
   /**
     * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   @JSName("listInvitations")
-  var listInvitations_Original: `704`
+  var listInvitations_Original: `706`
   
   /**
     * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.
@@ -3778,8 +3812,13 @@ trait AcceptInvitation extends StObject {
     * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.
     */
   @JSName("listLanguages")
-  var listLanguages_Original: `706`
+  var listLanguages_Original: `708`
   
+  /**
+    * Lists builts of a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   def listPagesBuilds(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
@@ -3791,8 +3830,13 @@ trait AcceptInvitation extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
+  /**
+    * Lists builts of a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   @JSName("listPagesBuilds")
-  var listPagesBuilds_Original: `707`
+  var listPagesBuilds_Original: `709`
   
   /**
     * Lists all public repositories in the order that they were created.
@@ -3820,7 +3864,7 @@ trait AcceptInvitation extends StObject {
     * - Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of repositories.
     */
   @JSName("listPublic")
-  var listPublic_Original: `708`
+  var listPublic_Original: `710`
   
   /**
     * Lists the merged pull request that introduced the commit to the repository. If the commit is not present in the default branch, will only return open pull requests associated with the commit.
@@ -3840,7 +3884,7 @@ trait AcceptInvitation extends StObject {
     * Lists the merged pull request that introduced the commit to the repository. If the commit is not present in the default branch, will only return open pull requests associated with the commit.
     */
   @JSName("listPullRequestsAssociatedWithCommit")
-  var listPullRequestsAssociatedWithCommit_Original: `709`
+  var listPullRequestsAssociatedWithCommit_Original: `711`
   
   def listReleaseAssets(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}/assets']['response'] */ js.Any
@@ -3854,7 +3898,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}/assets']['response'] */ js.Any
   ]
   @JSName("listReleaseAssets")
-  var listReleaseAssets_Original: `710`
+  var listReleaseAssets_Original: `712`
   
   /**
     * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://docs.github.com/rest/reference/repos#list-repository-tags).
@@ -3878,7 +3922,7 @@ trait AcceptInvitation extends StObject {
     * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   @JSName("listReleases")
-  var listReleases_Original: `711`
+  var listReleases_Original: `713`
   
   /**
     * This returns the tag protection states of a repository.
@@ -3902,7 +3946,7 @@ trait AcceptInvitation extends StObject {
     * This information is only available to repository administrators.
     */
   @JSName("listTagProtection")
-  var listTagProtection_Original: `712`
+  var listTagProtection_Original: `714`
   
   def listTags(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags']['response'] */ js.Any
@@ -3916,8 +3960,19 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags']['response'] */ js.Any
   ]
   @JSName("listTags")
-  var listTags_Original: `713`
+  var listTags_Original: `715`
   
+  /**
+    * Lists the teams that have access to the specified repository and that are also visible to the authenticated user.
+    *
+    * For a public repository, a team is listed only if that team added the public repository explicitly.
+    *
+    * Personal access tokens require the following scopes:
+    * * `public_repo` to call this endpoint on a public repository
+    * * `repo` to call this endpoint on a private repository (this scope also includes public repositories)
+    *
+    * This endpoint is not compatible with fine-grained personal access tokens.
+    */
   def listTeams(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/teams']['response'] */ js.Any
   ]
@@ -3929,8 +3984,19 @@ trait AcceptInvitation extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/teams']['response'] */ js.Any
   ]
+  /**
+    * Lists the teams that have access to the specified repository and that are also visible to the authenticated user.
+    *
+    * For a public repository, a team is listed only if that team added the public repository explicitly.
+    *
+    * Personal access tokens require the following scopes:
+    * * `public_repo` to call this endpoint on a public repository
+    * * `repo` to call this endpoint on a private repository (this scope also includes public repositories)
+    *
+    * This endpoint is not compatible with fine-grained personal access tokens.
+    */
   @JSName("listTeams")
-  var listTeams_Original: `714`
+  var listTeams_Original: `716`
   
   /**
     * Returns a list of webhook deliveries for a webhook configured in a repository.
@@ -3950,7 +4016,7 @@ trait AcceptInvitation extends StObject {
     * Returns a list of webhook deliveries for a webhook configured in a repository.
     */
   @JSName("listWebhookDeliveries")
-  var listWebhookDeliveries_Original: `715`
+  var listWebhookDeliveries_Original: `717`
   
   /**
     * Lists webhooks for a repository. `last response` may return null if there have not been any deliveries within 30 days.
@@ -3970,7 +4036,7 @@ trait AcceptInvitation extends StObject {
     * Lists webhooks for a repository. `last response` may return null if there have not been any deliveries within 30 days.
     */
   @JSName("listWebhooks")
-  var listWebhooks_Original: `716`
+  var listWebhooks_Original: `718`
   
   def merge(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merges']['response'] */ js.Any
@@ -4002,10 +4068,10 @@ trait AcceptInvitation extends StObject {
     * Sync a branch of a forked repository to keep it up-to-date with the upstream repository.
     */
   @JSName("mergeUpstream")
-  var mergeUpstream_Original: `718`
+  var mergeUpstream_Original: `720`
   
   @JSName("merge")
-  var merge_Original: `717`
+  var merge_Original: `719`
   
   /**
     * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
@@ -4025,7 +4091,7 @@ trait AcceptInvitation extends StObject {
     * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingWebhook")
-  var pingWebhook_Original: `719`
+  var pingWebhook_Original: `721`
   
   /**
     * Redeliver a webhook delivery for a webhook configured in a repository.
@@ -4045,7 +4111,7 @@ trait AcceptInvitation extends StObject {
     * Redeliver a webhook delivery for a webhook configured in a repository.
     */
   @JSName("redeliverWebhookDelivery")
-  var redeliverWebhookDelivery_Original: `720`
+  var redeliverWebhookDelivery_Original: `722`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4069,8 +4135,31 @@ trait AcceptInvitation extends StObject {
     * Removes the ability of an app to push to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("removeAppAccessRestrictions")
-  var removeAppAccessRestrictions_Original: `721`
+  var removeAppAccessRestrictions_Original: `723`
   
+  /**
+    * Removes a collaborator from a repository.
+    *
+    * To use this endpoint, the authenticated user must either be an administrator of the repository or target themselves for removal.
+    *
+    * This endpoint also:
+    * - Cancels any outstanding invitations
+    * - Unasigns the user from any issues
+    * - Removes access to organization projects if the user is not an organization member and is not a collaborator on any other organization repositories.
+    * - Unstars the repository
+    * - Updates access permissions to packages
+    *
+    * Removing a user as a collaborator has the following effects on forks:
+    *  - If the user had access to a fork through their membership to this repository, the user will also be removed from the fork.
+    *  - If the user had their own fork of the repository, the fork will be deleted.
+    *  - If the user still has read access to the repository, open pull requests by this user from a fork will be denied.
+    *
+    * **Note**: A user can still have access to the repository through organization permissions like base repository permissions.
+    *
+    * Although the API responds immediately, the additional permission updates might take some extra time to complete in the background.
+    *
+    * For more information on fork permissions, see "[About permissions and visibility of forks](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)".
+    */
   def removeCollaborator(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
@@ -4082,8 +4171,31 @@ trait AcceptInvitation extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
+  /**
+    * Removes a collaborator from a repository.
+    *
+    * To use this endpoint, the authenticated user must either be an administrator of the repository or target themselves for removal.
+    *
+    * This endpoint also:
+    * - Cancels any outstanding invitations
+    * - Unasigns the user from any issues
+    * - Removes access to organization projects if the user is not an organization member and is not a collaborator on any other organization repositories.
+    * - Unstars the repository
+    * - Updates access permissions to packages
+    *
+    * Removing a user as a collaborator has the following effects on forks:
+    *  - If the user had access to a fork through their membership to this repository, the user will also be removed from the fork.
+    *  - If the user had their own fork of the repository, the fork will be deleted.
+    *  - If the user still has read access to the repository, open pull requests by this user from a fork will be denied.
+    *
+    * **Note**: A user can still have access to the repository through organization permissions like base repository permissions.
+    *
+    * Although the API responds immediately, the additional permission updates might take some extra time to complete in the background.
+    *
+    * For more information on fork permissions, see "[About permissions and visibility of forks](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/about-permissions-and-visibility-of-forks)".
+    */
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: `722`
+  var removeCollaborator_Original: `724`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4103,7 +4215,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeStatusCheckContexts")
-  var removeStatusCheckContexts_Original: `723`
+  var removeStatusCheckContexts_Original: `725`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4123,7 +4235,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeStatusCheckProtection")
-  var removeStatusCheckProtection_Original: `724`
+  var removeStatusCheckProtection_Original: `726`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4147,7 +4259,7 @@ trait AcceptInvitation extends StObject {
     * Removes the ability of a team to push to this branch. You can also remove push access for child teams.
     */
   @JSName("removeTeamAccessRestrictions")
-  var removeTeamAccessRestrictions_Original: `725`
+  var removeTeamAccessRestrictions_Original: `727`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4179,7 +4291,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeUserAccessRestrictions")
-  var removeUserAccessRestrictions_Original: `726`
+  var removeUserAccessRestrictions_Original: `728`
   
   /**
     * Renames a branch in a repository.
@@ -4227,7 +4339,7 @@ trait AcceptInvitation extends StObject {
     * * GitHub Apps must have the `administration:write` repository permission.
     */
   @JSName("renameBranch")
-  var renameBranch_Original: `727`
+  var renameBranch_Original: `729`
   
   def replaceAllTopics(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/topics']['response'] */ js.Any
@@ -4241,7 +4353,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/topics']['response'] */ js.Any
   ]
   @JSName("replaceAllTopics")
-  var replaceAllTopics_Original: `728`
+  var replaceAllTopics_Original: `730`
   
   /**
     * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
@@ -4265,7 +4377,7 @@ trait AcceptInvitation extends StObject {
     * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   @JSName("requestPagesBuild")
-  var requestPagesBuild_Original: `729`
+  var requestPagesBuild_Original: `731`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4289,7 +4401,7 @@ trait AcceptInvitation extends StObject {
     * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("setAdminBranchProtection")
-  var setAdminBranchProtection_Original: `730`
+  var setAdminBranchProtection_Original: `732`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4313,7 +4425,7 @@ trait AcceptInvitation extends StObject {
     * Replaces the list of apps that have push access to this branch. This removes all apps that previously had push access and grants push access to the new list of apps. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("setAppAccessRestrictions")
-  var setAppAccessRestrictions_Original: `731`
+  var setAppAccessRestrictions_Original: `733`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4333,7 +4445,7 @@ trait AcceptInvitation extends StObject {
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("setStatusCheckContexts")
-  var setStatusCheckContexts_Original: `732`
+  var setStatusCheckContexts_Original: `734`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4357,7 +4469,7 @@ trait AcceptInvitation extends StObject {
     * Replaces the list of teams that have push access to this branch. This removes all teams that previously had push access and grants push access to the new list of teams. Team restrictions include child teams.
     */
   @JSName("setTeamAccessRestrictions")
-  var setTeamAccessRestrictions_Original: `733`
+  var setTeamAccessRestrictions_Original: `735`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4389,7 +4501,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("setUserAccessRestrictions")
-  var setUserAccessRestrictions_Original: `734`
+  var setUserAccessRestrictions_Original: `736`
   
   /**
     * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
@@ -4413,7 +4525,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   @JSName("testPushWebhook")
-  var testPushWebhook_Original: `735`
+  var testPushWebhook_Original: `737`
   
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://docs.github.com/articles/about-repository-transfers/).
@@ -4433,7 +4545,7 @@ trait AcceptInvitation extends StObject {
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://docs.github.com/articles/about-repository-transfers/).
     */
   @JSName("transfer")
-  var transfer_Original: `736`
+  var transfer_Original: `738`
   
   /**
     * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://docs.github.com/rest/reference/repos#replace-all-repository-topics) endpoint.
@@ -4480,7 +4592,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   @JSName("updateBranchProtection")
-  var updateBranchProtection_Original: `738`
+  var updateBranchProtection_Original: `740`
   
   def updateCommitComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
@@ -4494,7 +4606,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("updateCommitComment")
-  var updateCommitComment_Original: `739`
+  var updateCommitComment_Original: `741`
   
   /**
     * Updates a deployment branch policy for an environment.
@@ -4518,7 +4630,7 @@ trait AcceptInvitation extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
   @JSName("updateDeploymentBranchPolicy")
-  var updateDeploymentBranchPolicy_Original: `740`
+  var updateDeploymentBranchPolicy_Original: `742`
   
   /**
     * Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages).
@@ -4542,7 +4654,7 @@ trait AcceptInvitation extends StObject {
     * To use this endpoint, you must be a repository administrator, maintainer, or have the 'manage GitHub Pages settings' permission. A token with the `repo` scope or Pages write permission is required. GitHub Apps must have the `administration:write` and `pages:write` permissions.
     */
   @JSName("updateInformationAboutPagesSite")
-  var updateInformationAboutPagesSite_Original: `741`
+  var updateInformationAboutPagesSite_Original: `743`
   
   def updateInvitation(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
@@ -4556,7 +4668,7 @@ trait AcceptInvitation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("updateInvitation")
-  var updateInvitation_Original: `742`
+  var updateInvitation_Original: `744`
   
   /**
     * Update a ruleset for an organization.
@@ -4576,7 +4688,7 @@ trait AcceptInvitation extends StObject {
     * Update a ruleset for an organization.
     */
   @JSName("updateOrgRuleset")
-  var updateOrgRuleset_Original: `743`
+  var updateOrgRuleset_Original: `745`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4604,7 +4716,7 @@ trait AcceptInvitation extends StObject {
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   @JSName("updatePullRequestReviewProtection")
-  var updatePullRequestReviewProtection_Original: `744`
+  var updatePullRequestReviewProtection_Original: `746`
   
   /**
     * Users with push access to the repository can edit a release.
@@ -4639,13 +4751,13 @@ trait AcceptInvitation extends StObject {
     * Users with push access to the repository can edit a release asset.
     */
   @JSName("updateReleaseAsset")
-  var updateReleaseAsset_Original: `746`
+  var updateReleaseAsset_Original: `748`
   
   /**
     * Users with push access to the repository can edit a release.
     */
   @JSName("updateRelease")
-  var updateRelease_Original: `745`
+  var updateRelease_Original: `747`
   
   /**
     * Update a ruleset for a repository.
@@ -4665,7 +4777,7 @@ trait AcceptInvitation extends StObject {
     * Update a ruleset for a repository.
     */
   @JSName("updateRepoRuleset")
-  var updateRepoRuleset_Original: `747`
+  var updateRepoRuleset_Original: `749`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4691,7 +4803,7 @@ trait AcceptInvitation extends StObject {
     * @deprecated octokit.rest.repos.updateStatusCheckPotection() has been renamed to octokit.rest.repos.updateStatusCheckProtection() (2020-09-17)
     */
   @JSName("updateStatusCheckPotection")
-  var updateStatusCheckPotection_Original: `748`
+  var updateStatusCheckPotection_Original: `750`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -4715,7 +4827,7 @@ trait AcceptInvitation extends StObject {
     * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("updateStatusCheckProtection")
-  var updateStatusCheckProtection_Original: `748`
+  var updateStatusCheckProtection_Original: `750`
   
   /**
     * Updates a webhook configured in a repository. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for a repository](/rest/reference/repos#update-a-webhook-configuration-for-a-repository)."
@@ -4754,19 +4866,19 @@ trait AcceptInvitation extends StObject {
     * Access tokens must have the `write:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:write` permission.
     */
   @JSName("updateWebhookConfigForRepo")
-  var updateWebhookConfigForRepo_Original: `750`
+  var updateWebhookConfigForRepo_Original: `752`
   
   /**
     * Updates a webhook configured in a repository. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for a repository](/rest/reference/repos#update-a-webhook-configuration-for-a-repository)."
     */
   @JSName("updateWebhook")
-  var updateWebhook_Original: `749`
+  var updateWebhook_Original: `751`
   
   /**
     * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://docs.github.com/rest/reference/repos#replace-all-repository-topics) endpoint.
     */
   @JSName("update")
-  var update_Original: `737`
+  var update_Original: `739`
   
   /**
     * This endpoint makes use of [a Hypermedia relation](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in
@@ -4822,202 +4934,202 @@ trait AcceptInvitation extends StObject {
     * *   If you upload an asset with the same filename as another uploaded asset, you'll receive an error and must delete the old file before you can re-upload the new asset.
     */
   @JSName("uploadReleaseAsset")
-  var uploadReleaseAsset_Original: `751`
+  var uploadReleaseAsset_Original: `753`
 }
 object AcceptInvitation {
   
   inline def apply(
-    acceptInvitation: `565`,
-    acceptInvitationForAuthenticatedUser: `565`,
-    addAppAccessRestrictions: `566`,
-    addCollaborator: `567`,
-    addStatusCheckContexts: `568`,
-    addTeamAccessRestrictions: `569`,
-    addUserAccessRestrictions: `570`,
-    checkCollaborator: `571`,
-    checkVulnerabilityAlerts: `572`,
-    codeownersErrors: `573`,
-    compareCommits: `574`,
-    compareCommitsWithBasehead: `575`,
-    createAutolink: `576`,
-    createCommitComment: `577`,
-    createCommitSignatureProtection: `578`,
-    createCommitStatus: `579`,
-    createDeployKey: `580`,
-    createDeployment: `581`,
-    createDeploymentBranchPolicy: `582`,
-    createDeploymentProtectionRule: `583`,
-    createDeploymentStatus: `584`,
-    createDispatchEvent: `585`,
-    createForAuthenticatedUser: `586`,
-    createFork: `587`,
-    createInOrg: `588`,
-    createOrUpdateEnvironment: `589`,
-    createOrUpdateFileContents: `590`,
-    createOrgRuleset: `591`,
-    createPagesDeployment: `592`,
-    createPagesSite: `593`,
-    createRelease: `594`,
-    createRepoRuleset: `595`,
-    createTagProtection: `596`,
-    createUsingTemplate: `597`,
-    createWebhook: `598`,
-    declineInvitation: `599`,
-    declineInvitationForAuthenticatedUser: `599`,
-    delete: `600`,
-    deleteAccessRestrictions: `601`,
-    deleteAdminBranchProtection: `602`,
-    deleteAnEnvironment: `603`,
-    deleteAutolink: `604`,
-    deleteBranchProtection: `605`,
-    deleteCommitComment: `606`,
-    deleteCommitSignatureProtection: `607`,
-    deleteDeployKey: `608`,
-    deleteDeployment: `609`,
-    deleteDeploymentBranchPolicy: `610`,
-    deleteFile: `611`,
-    deleteInvitation: `612`,
-    deleteOrgRuleset: `613`,
-    deletePagesSite: `614`,
-    deletePullRequestReviewProtection: `615`,
-    deleteRelease: `616`,
-    deleteReleaseAsset: `617`,
-    deleteRepoRuleset: `618`,
-    deleteTagProtection: `619`,
-    deleteWebhook: `620`,
-    disableAutomatedSecurityFixes: `621`,
-    disableDeploymentProtectionRule: `622`,
-    disableLfsForRepo: `623`,
-    disableVulnerabilityAlerts: `624`,
-    downloadArchive: `625`,
-    downloadTarballArchive: `626`,
-    downloadZipballArchive: `625`,
-    enableAutomatedSecurityFixes: `627`,
-    enableLfsForRepo: `628`,
-    enableVulnerabilityAlerts: `629`,
-    generateReleaseNotes: `630`,
-    get: `631`,
-    getAccessRestrictions: `632`,
-    getAdminBranchProtection: `633`,
-    getAllDeploymentProtectionRules: `634`,
-    getAllEnvironments: `635`,
-    getAllStatusCheckContexts: `636`,
-    getAllTopics: `637`,
-    getAppsWithAccessToProtectedBranch: `638`,
-    getAutolink: `639`,
-    getBranch: `640`,
-    getBranchProtection: `641`,
-    getBranchRules: `642`,
-    getClones: `643`,
-    getCodeFrequencyStats: `644`,
-    getCollaboratorPermissionLevel: `645`,
-    getCombinedStatusForRef: `646`,
-    getCommit: `647`,
-    getCommitActivityStats: `648`,
-    getCommitComment: `649`,
-    getCommitSignatureProtection: `650`,
-    getCommunityProfileMetrics: `651`,
-    getContent: `652`,
-    getContributorsStats: `653`,
-    getCustomDeploymentProtectionRule: `654`,
-    getDeployKey: `655`,
-    getDeployment: `656`,
-    getDeploymentBranchPolicy: `657`,
-    getDeploymentStatus: `658`,
-    getEnvironment: `659`,
-    getLatestPagesBuild: `660`,
-    getLatestRelease: `661`,
-    getOrgRuleset: `662`,
-    getOrgRulesets: `663`,
-    getPages: `664`,
-    getPagesBuild: `665`,
-    getPagesHealthCheck: `666`,
-    getParticipationStats: `667`,
-    getPullRequestReviewProtection: `668`,
-    getPunchCardStats: `669`,
-    getReadme: `670`,
-    getReadmeInDirectory: `671`,
-    getRelease: `672`,
-    getReleaseAsset: `673`,
-    getReleaseByTag: `674`,
-    getRepoRuleset: `675`,
-    getRepoRulesets: `676`,
-    getStatusChecksProtection: `677`,
-    getTeamsWithAccessToProtectedBranch: `678`,
-    getTopPaths: `679`,
-    getTopReferrers: `680`,
-    getUsersWithAccessToProtectedBranch: `681`,
-    getViews: `682`,
-    getWebhook: `683`,
-    getWebhookConfigForRepo: `684`,
-    getWebhookDelivery: `685`,
-    listAutolinks: `686`,
-    listBranches: `687`,
-    listBranchesForHeadCommit: `688`,
-    listCollaborators: `689`,
-    listCommentsForCommit: `690`,
-    listCommitCommentsForRepo: `691`,
-    listCommitStatusesForRef: `692`,
-    listCommits: `693`,
-    listContributors: `694`,
-    listCustomDeploymentRuleIntegrations: `695`,
-    listDeployKeys: `696`,
-    listDeploymentBranchPolicies: `697`,
-    listDeploymentStatuses: `698`,
-    listDeployments: `699`,
-    listForAuthenticatedUser: `700`,
-    listForOrg: `701`,
-    listForUser: `702`,
-    listForks: `703`,
-    listInvitations: `704`,
-    listInvitationsForAuthenticatedUser: `705`,
-    listLanguages: `706`,
-    listPagesBuilds: `707`,
-    listPublic: `708`,
-    listPullRequestsAssociatedWithCommit: `709`,
-    listReleaseAssets: `710`,
-    listReleases: `711`,
-    listTagProtection: `712`,
-    listTags: `713`,
-    listTeams: `714`,
-    listWebhookDeliveries: `715`,
-    listWebhooks: `716`,
-    merge: `717`,
-    mergeUpstream: `718`,
-    pingWebhook: `719`,
-    redeliverWebhookDelivery: `720`,
-    removeAppAccessRestrictions: `721`,
-    removeCollaborator: `722`,
-    removeStatusCheckContexts: `723`,
-    removeStatusCheckProtection: `724`,
-    removeTeamAccessRestrictions: `725`,
-    removeUserAccessRestrictions: `726`,
-    renameBranch: `727`,
-    replaceAllTopics: `728`,
-    requestPagesBuild: `729`,
-    setAdminBranchProtection: `730`,
-    setAppAccessRestrictions: `731`,
-    setStatusCheckContexts: `732`,
-    setTeamAccessRestrictions: `733`,
-    setUserAccessRestrictions: `734`,
-    testPushWebhook: `735`,
-    transfer: `736`,
-    update: `737`,
-    updateBranchProtection: `738`,
-    updateCommitComment: `739`,
-    updateDeploymentBranchPolicy: `740`,
-    updateInformationAboutPagesSite: `741`,
-    updateInvitation: `742`,
-    updateOrgRuleset: `743`,
-    updatePullRequestReviewProtection: `744`,
-    updateRelease: `745`,
-    updateReleaseAsset: `746`,
-    updateRepoRuleset: `747`,
-    updateStatusCheckPotection: `748`,
-    updateStatusCheckProtection: `748`,
-    updateWebhook: `749`,
-    updateWebhookConfigForRepo: `750`,
-    uploadReleaseAsset: `751`
+    acceptInvitation: `567`,
+    acceptInvitationForAuthenticatedUser: `567`,
+    addAppAccessRestrictions: `568`,
+    addCollaborator: `569`,
+    addStatusCheckContexts: `570`,
+    addTeamAccessRestrictions: `571`,
+    addUserAccessRestrictions: `572`,
+    checkCollaborator: `573`,
+    checkVulnerabilityAlerts: `574`,
+    codeownersErrors: `575`,
+    compareCommits: `576`,
+    compareCommitsWithBasehead: `577`,
+    createAutolink: `578`,
+    createCommitComment: `579`,
+    createCommitSignatureProtection: `580`,
+    createCommitStatus: `581`,
+    createDeployKey: `582`,
+    createDeployment: `583`,
+    createDeploymentBranchPolicy: `584`,
+    createDeploymentProtectionRule: `585`,
+    createDeploymentStatus: `586`,
+    createDispatchEvent: `587`,
+    createForAuthenticatedUser: `588`,
+    createFork: `589`,
+    createInOrg: `590`,
+    createOrUpdateEnvironment: `591`,
+    createOrUpdateFileContents: `592`,
+    createOrgRuleset: `593`,
+    createPagesDeployment: `594`,
+    createPagesSite: `595`,
+    createRelease: `596`,
+    createRepoRuleset: `597`,
+    createTagProtection: `598`,
+    createUsingTemplate: `599`,
+    createWebhook: `600`,
+    declineInvitation: `601`,
+    declineInvitationForAuthenticatedUser: `601`,
+    delete: `602`,
+    deleteAccessRestrictions: `603`,
+    deleteAdminBranchProtection: `604`,
+    deleteAnEnvironment: `605`,
+    deleteAutolink: `606`,
+    deleteBranchProtection: `607`,
+    deleteCommitComment: `608`,
+    deleteCommitSignatureProtection: `609`,
+    deleteDeployKey: `610`,
+    deleteDeployment: `611`,
+    deleteDeploymentBranchPolicy: `612`,
+    deleteFile: `613`,
+    deleteInvitation: `614`,
+    deleteOrgRuleset: `615`,
+    deletePagesSite: `616`,
+    deletePullRequestReviewProtection: `617`,
+    deleteRelease: `618`,
+    deleteReleaseAsset: `619`,
+    deleteRepoRuleset: `620`,
+    deleteTagProtection: `621`,
+    deleteWebhook: `622`,
+    disableAutomatedSecurityFixes: `623`,
+    disableDeploymentProtectionRule: `624`,
+    disableLfsForRepo: `625`,
+    disableVulnerabilityAlerts: `626`,
+    downloadArchive: `627`,
+    downloadTarballArchive: `628`,
+    downloadZipballArchive: `627`,
+    enableAutomatedSecurityFixes: `629`,
+    enableLfsForRepo: `630`,
+    enableVulnerabilityAlerts: `631`,
+    generateReleaseNotes: `632`,
+    get: `633`,
+    getAccessRestrictions: `634`,
+    getAdminBranchProtection: `635`,
+    getAllDeploymentProtectionRules: `636`,
+    getAllEnvironments: `637`,
+    getAllStatusCheckContexts: `638`,
+    getAllTopics: `639`,
+    getAppsWithAccessToProtectedBranch: `640`,
+    getAutolink: `641`,
+    getBranch: `642`,
+    getBranchProtection: `643`,
+    getBranchRules: `644`,
+    getClones: `645`,
+    getCodeFrequencyStats: `646`,
+    getCollaboratorPermissionLevel: `647`,
+    getCombinedStatusForRef: `648`,
+    getCommit: `649`,
+    getCommitActivityStats: `650`,
+    getCommitComment: `651`,
+    getCommitSignatureProtection: `652`,
+    getCommunityProfileMetrics: `653`,
+    getContent: `654`,
+    getContributorsStats: `655`,
+    getCustomDeploymentProtectionRule: `656`,
+    getDeployKey: `657`,
+    getDeployment: `658`,
+    getDeploymentBranchPolicy: `659`,
+    getDeploymentStatus: `660`,
+    getEnvironment: `661`,
+    getLatestPagesBuild: `662`,
+    getLatestRelease: `663`,
+    getOrgRuleset: `664`,
+    getOrgRulesets: `665`,
+    getPages: `666`,
+    getPagesBuild: `667`,
+    getPagesHealthCheck: `668`,
+    getParticipationStats: `669`,
+    getPullRequestReviewProtection: `670`,
+    getPunchCardStats: `671`,
+    getReadme: `672`,
+    getReadmeInDirectory: `673`,
+    getRelease: `674`,
+    getReleaseAsset: `675`,
+    getReleaseByTag: `676`,
+    getRepoRuleset: `677`,
+    getRepoRulesets: `678`,
+    getStatusChecksProtection: `679`,
+    getTeamsWithAccessToProtectedBranch: `680`,
+    getTopPaths: `681`,
+    getTopReferrers: `682`,
+    getUsersWithAccessToProtectedBranch: `683`,
+    getViews: `684`,
+    getWebhook: `685`,
+    getWebhookConfigForRepo: `686`,
+    getWebhookDelivery: `687`,
+    listAutolinks: `688`,
+    listBranches: `689`,
+    listBranchesForHeadCommit: `690`,
+    listCollaborators: `691`,
+    listCommentsForCommit: `692`,
+    listCommitCommentsForRepo: `693`,
+    listCommitStatusesForRef: `694`,
+    listCommits: `695`,
+    listContributors: `696`,
+    listCustomDeploymentRuleIntegrations: `697`,
+    listDeployKeys: `698`,
+    listDeploymentBranchPolicies: `699`,
+    listDeploymentStatuses: `700`,
+    listDeployments: `701`,
+    listForAuthenticatedUser: `702`,
+    listForOrg: `703`,
+    listForUser: `704`,
+    listForks: `705`,
+    listInvitations: `706`,
+    listInvitationsForAuthenticatedUser: `707`,
+    listLanguages: `708`,
+    listPagesBuilds: `709`,
+    listPublic: `710`,
+    listPullRequestsAssociatedWithCommit: `711`,
+    listReleaseAssets: `712`,
+    listReleases: `713`,
+    listTagProtection: `714`,
+    listTags: `715`,
+    listTeams: `716`,
+    listWebhookDeliveries: `717`,
+    listWebhooks: `718`,
+    merge: `719`,
+    mergeUpstream: `720`,
+    pingWebhook: `721`,
+    redeliverWebhookDelivery: `722`,
+    removeAppAccessRestrictions: `723`,
+    removeCollaborator: `724`,
+    removeStatusCheckContexts: `725`,
+    removeStatusCheckProtection: `726`,
+    removeTeamAccessRestrictions: `727`,
+    removeUserAccessRestrictions: `728`,
+    renameBranch: `729`,
+    replaceAllTopics: `730`,
+    requestPagesBuild: `731`,
+    setAdminBranchProtection: `732`,
+    setAppAccessRestrictions: `733`,
+    setStatusCheckContexts: `734`,
+    setTeamAccessRestrictions: `735`,
+    setUserAccessRestrictions: `736`,
+    testPushWebhook: `737`,
+    transfer: `738`,
+    update: `739`,
+    updateBranchProtection: `740`,
+    updateCommitComment: `741`,
+    updateDeploymentBranchPolicy: `742`,
+    updateInformationAboutPagesSite: `743`,
+    updateInvitation: `744`,
+    updateOrgRuleset: `745`,
+    updatePullRequestReviewProtection: `746`,
+    updateRelease: `747`,
+    updateReleaseAsset: `748`,
+    updateRepoRuleset: `749`,
+    updateStatusCheckPotection: `750`,
+    updateStatusCheckProtection: `750`,
+    updateWebhook: `751`,
+    updateWebhookConfigForRepo: `752`,
+    uploadReleaseAsset: `753`
   ): AcceptInvitation = {
     val __obj = js.Dynamic.literal(acceptInvitation = acceptInvitation.asInstanceOf[js.Any], acceptInvitationForAuthenticatedUser = acceptInvitationForAuthenticatedUser.asInstanceOf[js.Any], addAppAccessRestrictions = addAppAccessRestrictions.asInstanceOf[js.Any], addCollaborator = addCollaborator.asInstanceOf[js.Any], addStatusCheckContexts = addStatusCheckContexts.asInstanceOf[js.Any], addTeamAccessRestrictions = addTeamAccessRestrictions.asInstanceOf[js.Any], addUserAccessRestrictions = addUserAccessRestrictions.asInstanceOf[js.Any], checkCollaborator = checkCollaborator.asInstanceOf[js.Any], checkVulnerabilityAlerts = checkVulnerabilityAlerts.asInstanceOf[js.Any], codeownersErrors = codeownersErrors.asInstanceOf[js.Any], compareCommits = compareCommits.asInstanceOf[js.Any], compareCommitsWithBasehead = compareCommitsWithBasehead.asInstanceOf[js.Any], createAutolink = createAutolink.asInstanceOf[js.Any], createCommitComment = createCommitComment.asInstanceOf[js.Any], createCommitSignatureProtection = createCommitSignatureProtection.asInstanceOf[js.Any], createCommitStatus = createCommitStatus.asInstanceOf[js.Any], createDeployKey = createDeployKey.asInstanceOf[js.Any], createDeployment = createDeployment.asInstanceOf[js.Any], createDeploymentBranchPolicy = createDeploymentBranchPolicy.asInstanceOf[js.Any], createDeploymentProtectionRule = createDeploymentProtectionRule.asInstanceOf[js.Any], createDeploymentStatus = createDeploymentStatus.asInstanceOf[js.Any], createDispatchEvent = createDispatchEvent.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createFork = createFork.asInstanceOf[js.Any], createInOrg = createInOrg.asInstanceOf[js.Any], createOrUpdateEnvironment = createOrUpdateEnvironment.asInstanceOf[js.Any], createOrUpdateFileContents = createOrUpdateFileContents.asInstanceOf[js.Any], createOrgRuleset = createOrgRuleset.asInstanceOf[js.Any], createPagesDeployment = createPagesDeployment.asInstanceOf[js.Any], createPagesSite = createPagesSite.asInstanceOf[js.Any], createRelease = createRelease.asInstanceOf[js.Any], createRepoRuleset = createRepoRuleset.asInstanceOf[js.Any], createTagProtection = createTagProtection.asInstanceOf[js.Any], createUsingTemplate = createUsingTemplate.asInstanceOf[js.Any], createWebhook = createWebhook.asInstanceOf[js.Any], declineInvitation = declineInvitation.asInstanceOf[js.Any], declineInvitationForAuthenticatedUser = declineInvitationForAuthenticatedUser.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteAccessRestrictions = deleteAccessRestrictions.asInstanceOf[js.Any], deleteAdminBranchProtection = deleteAdminBranchProtection.asInstanceOf[js.Any], deleteAnEnvironment = deleteAnEnvironment.asInstanceOf[js.Any], deleteAutolink = deleteAutolink.asInstanceOf[js.Any], deleteBranchProtection = deleteBranchProtection.asInstanceOf[js.Any], deleteCommitComment = deleteCommitComment.asInstanceOf[js.Any], deleteCommitSignatureProtection = deleteCommitSignatureProtection.asInstanceOf[js.Any], deleteDeployKey = deleteDeployKey.asInstanceOf[js.Any], deleteDeployment = deleteDeployment.asInstanceOf[js.Any], deleteDeploymentBranchPolicy = deleteDeploymentBranchPolicy.asInstanceOf[js.Any], deleteFile = deleteFile.asInstanceOf[js.Any], deleteInvitation = deleteInvitation.asInstanceOf[js.Any], deleteOrgRuleset = deleteOrgRuleset.asInstanceOf[js.Any], deletePagesSite = deletePagesSite.asInstanceOf[js.Any], deletePullRequestReviewProtection = deletePullRequestReviewProtection.asInstanceOf[js.Any], deleteRelease = deleteRelease.asInstanceOf[js.Any], deleteReleaseAsset = deleteReleaseAsset.asInstanceOf[js.Any], deleteRepoRuleset = deleteRepoRuleset.asInstanceOf[js.Any], deleteTagProtection = deleteTagProtection.asInstanceOf[js.Any], deleteWebhook = deleteWebhook.asInstanceOf[js.Any], disableAutomatedSecurityFixes = disableAutomatedSecurityFixes.asInstanceOf[js.Any], disableDeploymentProtectionRule = disableDeploymentProtectionRule.asInstanceOf[js.Any], disableLfsForRepo = disableLfsForRepo.asInstanceOf[js.Any], disableVulnerabilityAlerts = disableVulnerabilityAlerts.asInstanceOf[js.Any], downloadArchive = downloadArchive.asInstanceOf[js.Any], downloadTarballArchive = downloadTarballArchive.asInstanceOf[js.Any], downloadZipballArchive = downloadZipballArchive.asInstanceOf[js.Any], enableAutomatedSecurityFixes = enableAutomatedSecurityFixes.asInstanceOf[js.Any], enableLfsForRepo = enableLfsForRepo.asInstanceOf[js.Any], enableVulnerabilityAlerts = enableVulnerabilityAlerts.asInstanceOf[js.Any], generateReleaseNotes = generateReleaseNotes.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getAccessRestrictions = getAccessRestrictions.asInstanceOf[js.Any], getAdminBranchProtection = getAdminBranchProtection.asInstanceOf[js.Any], getAllDeploymentProtectionRules = getAllDeploymentProtectionRules.asInstanceOf[js.Any], getAllEnvironments = getAllEnvironments.asInstanceOf[js.Any], getAllStatusCheckContexts = getAllStatusCheckContexts.asInstanceOf[js.Any], getAllTopics = getAllTopics.asInstanceOf[js.Any], getAppsWithAccessToProtectedBranch = getAppsWithAccessToProtectedBranch.asInstanceOf[js.Any], getAutolink = getAutolink.asInstanceOf[js.Any], getBranch = getBranch.asInstanceOf[js.Any], getBranchProtection = getBranchProtection.asInstanceOf[js.Any], getBranchRules = getBranchRules.asInstanceOf[js.Any], getClones = getClones.asInstanceOf[js.Any], getCodeFrequencyStats = getCodeFrequencyStats.asInstanceOf[js.Any], getCollaboratorPermissionLevel = getCollaboratorPermissionLevel.asInstanceOf[js.Any], getCombinedStatusForRef = getCombinedStatusForRef.asInstanceOf[js.Any], getCommit = getCommit.asInstanceOf[js.Any], getCommitActivityStats = getCommitActivityStats.asInstanceOf[js.Any], getCommitComment = getCommitComment.asInstanceOf[js.Any], getCommitSignatureProtection = getCommitSignatureProtection.asInstanceOf[js.Any], getCommunityProfileMetrics = getCommunityProfileMetrics.asInstanceOf[js.Any], getContent = getContent.asInstanceOf[js.Any], getContributorsStats = getContributorsStats.asInstanceOf[js.Any], getCustomDeploymentProtectionRule = getCustomDeploymentProtectionRule.asInstanceOf[js.Any], getDeployKey = getDeployKey.asInstanceOf[js.Any], getDeployment = getDeployment.asInstanceOf[js.Any], getDeploymentBranchPolicy = getDeploymentBranchPolicy.asInstanceOf[js.Any], getDeploymentStatus = getDeploymentStatus.asInstanceOf[js.Any], getEnvironment = getEnvironment.asInstanceOf[js.Any], getLatestPagesBuild = getLatestPagesBuild.asInstanceOf[js.Any], getLatestRelease = getLatestRelease.asInstanceOf[js.Any], getOrgRuleset = getOrgRuleset.asInstanceOf[js.Any], getOrgRulesets = getOrgRulesets.asInstanceOf[js.Any], getPages = getPages.asInstanceOf[js.Any], getPagesBuild = getPagesBuild.asInstanceOf[js.Any], getPagesHealthCheck = getPagesHealthCheck.asInstanceOf[js.Any], getParticipationStats = getParticipationStats.asInstanceOf[js.Any], getPullRequestReviewProtection = getPullRequestReviewProtection.asInstanceOf[js.Any], getPunchCardStats = getPunchCardStats.asInstanceOf[js.Any], getReadme = getReadme.asInstanceOf[js.Any], getReadmeInDirectory = getReadmeInDirectory.asInstanceOf[js.Any], getRelease = getRelease.asInstanceOf[js.Any], getReleaseAsset = getReleaseAsset.asInstanceOf[js.Any], getReleaseByTag = getReleaseByTag.asInstanceOf[js.Any], getRepoRuleset = getRepoRuleset.asInstanceOf[js.Any], getRepoRulesets = getRepoRulesets.asInstanceOf[js.Any], getStatusChecksProtection = getStatusChecksProtection.asInstanceOf[js.Any], getTeamsWithAccessToProtectedBranch = getTeamsWithAccessToProtectedBranch.asInstanceOf[js.Any], getTopPaths = getTopPaths.asInstanceOf[js.Any], getTopReferrers = getTopReferrers.asInstanceOf[js.Any], getUsersWithAccessToProtectedBranch = getUsersWithAccessToProtectedBranch.asInstanceOf[js.Any], getViews = getViews.asInstanceOf[js.Any], getWebhook = getWebhook.asInstanceOf[js.Any], getWebhookConfigForRepo = getWebhookConfigForRepo.asInstanceOf[js.Any], getWebhookDelivery = getWebhookDelivery.asInstanceOf[js.Any], listAutolinks = listAutolinks.asInstanceOf[js.Any], listBranches = listBranches.asInstanceOf[js.Any], listBranchesForHeadCommit = listBranchesForHeadCommit.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listCommentsForCommit = listCommentsForCommit.asInstanceOf[js.Any], listCommitCommentsForRepo = listCommitCommentsForRepo.asInstanceOf[js.Any], listCommitStatusesForRef = listCommitStatusesForRef.asInstanceOf[js.Any], listCommits = listCommits.asInstanceOf[js.Any], listContributors = listContributors.asInstanceOf[js.Any], listCustomDeploymentRuleIntegrations = listCustomDeploymentRuleIntegrations.asInstanceOf[js.Any], listDeployKeys = listDeployKeys.asInstanceOf[js.Any], listDeploymentBranchPolicies = listDeploymentBranchPolicies.asInstanceOf[js.Any], listDeploymentStatuses = listDeploymentStatuses.asInstanceOf[js.Any], listDeployments = listDeployments.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], listForks = listForks.asInstanceOf[js.Any], listInvitations = listInvitations.asInstanceOf[js.Any], listInvitationsForAuthenticatedUser = listInvitationsForAuthenticatedUser.asInstanceOf[js.Any], listLanguages = listLanguages.asInstanceOf[js.Any], listPagesBuilds = listPagesBuilds.asInstanceOf[js.Any], listPublic = listPublic.asInstanceOf[js.Any], listPullRequestsAssociatedWithCommit = listPullRequestsAssociatedWithCommit.asInstanceOf[js.Any], listReleaseAssets = listReleaseAssets.asInstanceOf[js.Any], listReleases = listReleases.asInstanceOf[js.Any], listTagProtection = listTagProtection.asInstanceOf[js.Any], listTags = listTags.asInstanceOf[js.Any], listTeams = listTeams.asInstanceOf[js.Any], listWebhookDeliveries = listWebhookDeliveries.asInstanceOf[js.Any], listWebhooks = listWebhooks.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], mergeUpstream = mergeUpstream.asInstanceOf[js.Any], pingWebhook = pingWebhook.asInstanceOf[js.Any], redeliverWebhookDelivery = redeliverWebhookDelivery.asInstanceOf[js.Any], removeAppAccessRestrictions = removeAppAccessRestrictions.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], removeStatusCheckContexts = removeStatusCheckContexts.asInstanceOf[js.Any], removeStatusCheckProtection = removeStatusCheckProtection.asInstanceOf[js.Any], removeTeamAccessRestrictions = removeTeamAccessRestrictions.asInstanceOf[js.Any], removeUserAccessRestrictions = removeUserAccessRestrictions.asInstanceOf[js.Any], renameBranch = renameBranch.asInstanceOf[js.Any], replaceAllTopics = replaceAllTopics.asInstanceOf[js.Any], requestPagesBuild = requestPagesBuild.asInstanceOf[js.Any], setAdminBranchProtection = setAdminBranchProtection.asInstanceOf[js.Any], setAppAccessRestrictions = setAppAccessRestrictions.asInstanceOf[js.Any], setStatusCheckContexts = setStatusCheckContexts.asInstanceOf[js.Any], setTeamAccessRestrictions = setTeamAccessRestrictions.asInstanceOf[js.Any], setUserAccessRestrictions = setUserAccessRestrictions.asInstanceOf[js.Any], testPushWebhook = testPushWebhook.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateBranchProtection = updateBranchProtection.asInstanceOf[js.Any], updateCommitComment = updateCommitComment.asInstanceOf[js.Any], updateDeploymentBranchPolicy = updateDeploymentBranchPolicy.asInstanceOf[js.Any], updateInformationAboutPagesSite = updateInformationAboutPagesSite.asInstanceOf[js.Any], updateInvitation = updateInvitation.asInstanceOf[js.Any], updateOrgRuleset = updateOrgRuleset.asInstanceOf[js.Any], updatePullRequestReviewProtection = updatePullRequestReviewProtection.asInstanceOf[js.Any], updateRelease = updateRelease.asInstanceOf[js.Any], updateReleaseAsset = updateReleaseAsset.asInstanceOf[js.Any], updateRepoRuleset = updateRepoRuleset.asInstanceOf[js.Any], updateStatusCheckPotection = updateStatusCheckPotection.asInstanceOf[js.Any], updateStatusCheckProtection = updateStatusCheckProtection.asInstanceOf[js.Any], updateWebhook = updateWebhook.asInstanceOf[js.Any], updateWebhookConfigForRepo = updateWebhookConfigForRepo.asInstanceOf[js.Any], uploadReleaseAsset = uploadReleaseAsset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInvitation]
@@ -5026,386 +5138,386 @@ object AcceptInvitation {
   @scala.inline
   implicit open class MutableBuilder[Self <: AcceptInvitation] (val x: Self) extends AnyVal {
     
-    inline def setAcceptInvitation(value: `565`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
+    inline def setAcceptInvitation(value: `567`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
     
-    inline def setAcceptInvitationForAuthenticatedUser(value: `565`): Self = StObject.set(x, "acceptInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setAcceptInvitationForAuthenticatedUser(value: `567`): Self = StObject.set(x, "acceptInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setAddAppAccessRestrictions(value: `566`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddAppAccessRestrictions(value: `568`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setAddCollaborator(value: `567`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddCollaborator(value: `569`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setAddStatusCheckContexts(value: `568`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setAddStatusCheckContexts(value: `570`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setAddTeamAccessRestrictions(value: `569`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddTeamAccessRestrictions(value: `571`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setAddUserAccessRestrictions(value: `570`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddUserAccessRestrictions(value: `572`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setCheckCollaborator(value: `571`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
+    inline def setCheckCollaborator(value: `573`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setCheckVulnerabilityAlerts(value: `572`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setCheckVulnerabilityAlerts(value: `574`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setCodeownersErrors(value: `573`): Self = StObject.set(x, "codeownersErrors", value.asInstanceOf[js.Any])
+    inline def setCodeownersErrors(value: `575`): Self = StObject.set(x, "codeownersErrors", value.asInstanceOf[js.Any])
     
-    inline def setCompareCommits(value: `574`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
+    inline def setCompareCommits(value: `576`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
     
-    inline def setCompareCommitsWithBasehead(value: `575`): Self = StObject.set(x, "compareCommitsWithBasehead", value.asInstanceOf[js.Any])
+    inline def setCompareCommitsWithBasehead(value: `577`): Self = StObject.set(x, "compareCommitsWithBasehead", value.asInstanceOf[js.Any])
     
-    inline def setCreateAutolink(value: `576`): Self = StObject.set(x, "createAutolink", value.asInstanceOf[js.Any])
+    inline def setCreateAutolink(value: `578`): Self = StObject.set(x, "createAutolink", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitComment(value: `577`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
+    inline def setCreateCommitComment(value: `579`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitSignatureProtection(value: `578`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setCreateCommitSignatureProtection(value: `580`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitStatus(value: `579`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
+    inline def setCreateCommitStatus(value: `581`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeployKey(value: `580`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
+    inline def setCreateDeployKey(value: `582`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeployment(value: `581`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
+    inline def setCreateDeployment(value: `583`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeploymentBranchPolicy(value: `582`): Self = StObject.set(x, "createDeploymentBranchPolicy", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentBranchPolicy(value: `584`): Self = StObject.set(x, "createDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeploymentProtectionRule(value: `583`): Self = StObject.set(x, "createDeploymentProtectionRule", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentProtectionRule(value: `585`): Self = StObject.set(x, "createDeploymentProtectionRule", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeploymentStatus(value: `584`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentStatus(value: `586`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreateDispatchEvent(value: `585`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
+    inline def setCreateDispatchEvent(value: `587`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
     
-    inline def setCreateForAuthenticatedUser(value: `586`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `588`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateFork(value: `587`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
+    inline def setCreateFork(value: `589`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
     
-    inline def setCreateInOrg(value: `588`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateInOrg(value: `590`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateEnvironment(value: `589`): Self = StObject.set(x, "createOrUpdateEnvironment", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateEnvironment(value: `591`): Self = StObject.set(x, "createOrUpdateEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateFileContents(value: `590`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateFileContents(value: `592`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrgRuleset(value: `591`): Self = StObject.set(x, "createOrgRuleset", value.asInstanceOf[js.Any])
+    inline def setCreateOrgRuleset(value: `593`): Self = StObject.set(x, "createOrgRuleset", value.asInstanceOf[js.Any])
     
-    inline def setCreatePagesDeployment(value: `592`): Self = StObject.set(x, "createPagesDeployment", value.asInstanceOf[js.Any])
+    inline def setCreatePagesDeployment(value: `594`): Self = StObject.set(x, "createPagesDeployment", value.asInstanceOf[js.Any])
     
-    inline def setCreatePagesSite(value: `593`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
+    inline def setCreatePagesSite(value: `595`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
     
-    inline def setCreateRelease(value: `594`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
+    inline def setCreateRelease(value: `596`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
     
-    inline def setCreateRepoRuleset(value: `595`): Self = StObject.set(x, "createRepoRuleset", value.asInstanceOf[js.Any])
+    inline def setCreateRepoRuleset(value: `597`): Self = StObject.set(x, "createRepoRuleset", value.asInstanceOf[js.Any])
     
-    inline def setCreateTagProtection(value: `596`): Self = StObject.set(x, "createTagProtection", value.asInstanceOf[js.Any])
+    inline def setCreateTagProtection(value: `598`): Self = StObject.set(x, "createTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setCreateUsingTemplate(value: `597`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
+    inline def setCreateUsingTemplate(value: `599`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
     
-    inline def setCreateWebhook(value: `598`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
+    inline def setCreateWebhook(value: `600`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
     
-    inline def setDeclineInvitation(value: `599`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
+    inline def setDeclineInvitation(value: `601`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
     
-    inline def setDeclineInvitationForAuthenticatedUser(value: `599`): Self = StObject.set(x, "declineInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeclineInvitationForAuthenticatedUser(value: `601`): Self = StObject.set(x, "declineInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: `600`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `602`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAccessRestrictions(value: `601`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setDeleteAccessRestrictions(value: `603`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAdminBranchProtection(value: `602`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteAdminBranchProtection(value: `604`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAnEnvironment(value: `603`): Self = StObject.set(x, "deleteAnEnvironment", value.asInstanceOf[js.Any])
+    inline def setDeleteAnEnvironment(value: `605`): Self = StObject.set(x, "deleteAnEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAutolink(value: `604`): Self = StObject.set(x, "deleteAutolink", value.asInstanceOf[js.Any])
+    inline def setDeleteAutolink(value: `606`): Self = StObject.set(x, "deleteAutolink", value.asInstanceOf[js.Any])
     
-    inline def setDeleteBranchProtection(value: `605`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteBranchProtection(value: `607`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteCommitComment(value: `606`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitComment(value: `608`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteCommitSignatureProtection(value: `607`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitSignatureProtection(value: `609`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDeployKey(value: `608`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployKey(value: `610`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDeployment(value: `609`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployment(value: `611`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDeploymentBranchPolicy(value: `610`): Self = StObject.set(x, "deleteDeploymentBranchPolicy", value.asInstanceOf[js.Any])
+    inline def setDeleteDeploymentBranchPolicy(value: `612`): Self = StObject.set(x, "deleteDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setDeleteFile(value: `611`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
+    inline def setDeleteFile(value: `613`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
-    inline def setDeleteInvitation(value: `612`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
+    inline def setDeleteInvitation(value: `614`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
     
-    inline def setDeleteOrgRuleset(value: `613`): Self = StObject.set(x, "deleteOrgRuleset", value.asInstanceOf[js.Any])
+    inline def setDeleteOrgRuleset(value: `615`): Self = StObject.set(x, "deleteOrgRuleset", value.asInstanceOf[js.Any])
     
-    inline def setDeletePagesSite(value: `614`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
+    inline def setDeletePagesSite(value: `616`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
     
-    inline def setDeletePullRequestReviewProtection(value: `615`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setDeletePullRequestReviewProtection(value: `617`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRelease(value: `616`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
+    inline def setDeleteRelease(value: `618`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
     
-    inline def setDeleteReleaseAsset(value: `617`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setDeleteReleaseAsset(value: `619`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRepoRuleset(value: `618`): Self = StObject.set(x, "deleteRepoRuleset", value.asInstanceOf[js.Any])
+    inline def setDeleteRepoRuleset(value: `620`): Self = StObject.set(x, "deleteRepoRuleset", value.asInstanceOf[js.Any])
     
-    inline def setDeleteTagProtection(value: `619`): Self = StObject.set(x, "deleteTagProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteTagProtection(value: `621`): Self = StObject.set(x, "deleteTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteWebhook(value: `620`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
+    inline def setDeleteWebhook(value: `622`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
     
-    inline def setDisableAutomatedSecurityFixes(value: `621`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setDisableAutomatedSecurityFixes(value: `623`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    inline def setDisableDeploymentProtectionRule(value: `622`): Self = StObject.set(x, "disableDeploymentProtectionRule", value.asInstanceOf[js.Any])
+    inline def setDisableDeploymentProtectionRule(value: `624`): Self = StObject.set(x, "disableDeploymentProtectionRule", value.asInstanceOf[js.Any])
     
-    inline def setDisableLfsForRepo(value: `623`): Self = StObject.set(x, "disableLfsForRepo", value.asInstanceOf[js.Any])
+    inline def setDisableLfsForRepo(value: `625`): Self = StObject.set(x, "disableLfsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setDisableVulnerabilityAlerts(value: `624`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setDisableVulnerabilityAlerts(value: `626`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setDownloadArchive(value: `625`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
+    inline def setDownloadArchive(value: `627`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
     
-    inline def setDownloadTarballArchive(value: `626`): Self = StObject.set(x, "downloadTarballArchive", value.asInstanceOf[js.Any])
+    inline def setDownloadTarballArchive(value: `628`): Self = StObject.set(x, "downloadTarballArchive", value.asInstanceOf[js.Any])
     
-    inline def setDownloadZipballArchive(value: `625`): Self = StObject.set(x, "downloadZipballArchive", value.asInstanceOf[js.Any])
+    inline def setDownloadZipballArchive(value: `627`): Self = StObject.set(x, "downloadZipballArchive", value.asInstanceOf[js.Any])
     
-    inline def setEnableAutomatedSecurityFixes(value: `627`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setEnableAutomatedSecurityFixes(value: `629`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    inline def setEnableLfsForRepo(value: `628`): Self = StObject.set(x, "enableLfsForRepo", value.asInstanceOf[js.Any])
+    inline def setEnableLfsForRepo(value: `630`): Self = StObject.set(x, "enableLfsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setEnableVulnerabilityAlerts(value: `629`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setEnableVulnerabilityAlerts(value: `631`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setGenerateReleaseNotes(value: `630`): Self = StObject.set(x, "generateReleaseNotes", value.asInstanceOf[js.Any])
+    inline def setGenerateReleaseNotes(value: `632`): Self = StObject.set(x, "generateReleaseNotes", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `631`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `633`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetAccessRestrictions(value: `632`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setGetAccessRestrictions(value: `634`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setGetAdminBranchProtection(value: `633`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setGetAdminBranchProtection(value: `635`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetAllDeploymentProtectionRules(value: `634`): Self = StObject.set(x, "getAllDeploymentProtectionRules", value.asInstanceOf[js.Any])
+    inline def setGetAllDeploymentProtectionRules(value: `636`): Self = StObject.set(x, "getAllDeploymentProtectionRules", value.asInstanceOf[js.Any])
     
-    inline def setGetAllEnvironments(value: `635`): Self = StObject.set(x, "getAllEnvironments", value.asInstanceOf[js.Any])
+    inline def setGetAllEnvironments(value: `637`): Self = StObject.set(x, "getAllEnvironments", value.asInstanceOf[js.Any])
     
-    inline def setGetAllStatusCheckContexts(value: `636`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setGetAllStatusCheckContexts(value: `638`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setGetAllTopics(value: `637`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
+    inline def setGetAllTopics(value: `639`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
     
-    inline def setGetAppsWithAccessToProtectedBranch(value: `638`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetAppsWithAccessToProtectedBranch(value: `640`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetAutolink(value: `639`): Self = StObject.set(x, "getAutolink", value.asInstanceOf[js.Any])
+    inline def setGetAutolink(value: `641`): Self = StObject.set(x, "getAutolink", value.asInstanceOf[js.Any])
     
-    inline def setGetBranch(value: `640`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
+    inline def setGetBranch(value: `642`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetBranchProtection(value: `641`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
+    inline def setGetBranchProtection(value: `643`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetBranchRules(value: `642`): Self = StObject.set(x, "getBranchRules", value.asInstanceOf[js.Any])
+    inline def setGetBranchRules(value: `644`): Self = StObject.set(x, "getBranchRules", value.asInstanceOf[js.Any])
     
-    inline def setGetClones(value: `643`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
+    inline def setGetClones(value: `645`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
     
-    inline def setGetCodeFrequencyStats(value: `644`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
+    inline def setGetCodeFrequencyStats(value: `646`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
     
-    inline def setGetCollaboratorPermissionLevel(value: `645`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
+    inline def setGetCollaboratorPermissionLevel(value: `647`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
     
-    inline def setGetCombinedStatusForRef(value: `646`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
+    inline def setGetCombinedStatusForRef(value: `648`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
     
-    inline def setGetCommit(value: `647`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    inline def setGetCommit(value: `649`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitActivityStats(value: `648`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
+    inline def setGetCommitActivityStats(value: `650`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitComment(value: `649`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
+    inline def setGetCommitComment(value: `651`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitSignatureProtection(value: `650`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setGetCommitSignatureProtection(value: `652`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetCommunityProfileMetrics(value: `651`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
+    inline def setGetCommunityProfileMetrics(value: `653`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
     
-    inline def setGetContent(value: `652`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
+    inline def setGetContent(value: `654`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
     
-    inline def setGetContributorsStats(value: `653`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
+    inline def setGetContributorsStats(value: `655`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
     
-    inline def setGetCustomDeploymentProtectionRule(value: `654`): Self = StObject.set(x, "getCustomDeploymentProtectionRule", value.asInstanceOf[js.Any])
+    inline def setGetCustomDeploymentProtectionRule(value: `656`): Self = StObject.set(x, "getCustomDeploymentProtectionRule", value.asInstanceOf[js.Any])
     
-    inline def setGetDeployKey(value: `655`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
+    inline def setGetDeployKey(value: `657`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setGetDeployment(value: `656`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
+    inline def setGetDeployment(value: `658`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
     
-    inline def setGetDeploymentBranchPolicy(value: `657`): Self = StObject.set(x, "getDeploymentBranchPolicy", value.asInstanceOf[js.Any])
+    inline def setGetDeploymentBranchPolicy(value: `659`): Self = StObject.set(x, "getDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setGetDeploymentStatus(value: `658`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setGetDeploymentStatus(value: `660`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
     
-    inline def setGetEnvironment(value: `659`): Self = StObject.set(x, "getEnvironment", value.asInstanceOf[js.Any])
+    inline def setGetEnvironment(value: `661`): Self = StObject.set(x, "getEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setGetLatestPagesBuild(value: `660`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetLatestPagesBuild(value: `662`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
     
-    inline def setGetLatestRelease(value: `661`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
+    inline def setGetLatestRelease(value: `663`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgRuleset(value: `662`): Self = StObject.set(x, "getOrgRuleset", value.asInstanceOf[js.Any])
+    inline def setGetOrgRuleset(value: `664`): Self = StObject.set(x, "getOrgRuleset", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgRulesets(value: `663`): Self = StObject.set(x, "getOrgRulesets", value.asInstanceOf[js.Any])
+    inline def setGetOrgRulesets(value: `665`): Self = StObject.set(x, "getOrgRulesets", value.asInstanceOf[js.Any])
     
-    inline def setGetPages(value: `664`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
+    inline def setGetPages(value: `666`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
     
-    inline def setGetPagesBuild(value: `665`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetPagesBuild(value: `667`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
     
-    inline def setGetPagesHealthCheck(value: `666`): Self = StObject.set(x, "getPagesHealthCheck", value.asInstanceOf[js.Any])
+    inline def setGetPagesHealthCheck(value: `668`): Self = StObject.set(x, "getPagesHealthCheck", value.asInstanceOf[js.Any])
     
-    inline def setGetParticipationStats(value: `667`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
+    inline def setGetParticipationStats(value: `669`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
     
-    inline def setGetPullRequestReviewProtection(value: `668`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setGetPullRequestReviewProtection(value: `670`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetPunchCardStats(value: `669`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
+    inline def setGetPunchCardStats(value: `671`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
     
-    inline def setGetReadme(value: `670`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
+    inline def setGetReadme(value: `672`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
     
-    inline def setGetReadmeInDirectory(value: `671`): Self = StObject.set(x, "getReadmeInDirectory", value.asInstanceOf[js.Any])
+    inline def setGetReadmeInDirectory(value: `673`): Self = StObject.set(x, "getReadmeInDirectory", value.asInstanceOf[js.Any])
     
-    inline def setGetRelease(value: `672`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
+    inline def setGetRelease(value: `674`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
     
-    inline def setGetReleaseAsset(value: `673`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setGetReleaseAsset(value: `675`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
     
-    inline def setGetReleaseByTag(value: `674`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
+    inline def setGetReleaseByTag(value: `676`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoRuleset(value: `675`): Self = StObject.set(x, "getRepoRuleset", value.asInstanceOf[js.Any])
+    inline def setGetRepoRuleset(value: `677`): Self = StObject.set(x, "getRepoRuleset", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoRulesets(value: `676`): Self = StObject.set(x, "getRepoRulesets", value.asInstanceOf[js.Any])
+    inline def setGetRepoRulesets(value: `678`): Self = StObject.set(x, "getRepoRulesets", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusChecksProtection(value: `677`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
+    inline def setGetStatusChecksProtection(value: `679`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetTeamsWithAccessToProtectedBranch(value: `678`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetTeamsWithAccessToProtectedBranch(value: `680`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetTopPaths(value: `679`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
+    inline def setGetTopPaths(value: `681`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
     
-    inline def setGetTopReferrers(value: `680`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
+    inline def setGetTopReferrers(value: `682`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
     
-    inline def setGetUsersWithAccessToProtectedBranch(value: `681`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetUsersWithAccessToProtectedBranch(value: `683`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetViews(value: `682`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
+    inline def setGetViews(value: `684`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhook(value: `683`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
+    inline def setGetWebhook(value: `685`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookConfigForRepo(value: `684`): Self = StObject.set(x, "getWebhookConfigForRepo", value.asInstanceOf[js.Any])
+    inline def setGetWebhookConfigForRepo(value: `686`): Self = StObject.set(x, "getWebhookConfigForRepo", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookDelivery(value: `685`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setGetWebhookDelivery(value: `687`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setListAutolinks(value: `686`): Self = StObject.set(x, "listAutolinks", value.asInstanceOf[js.Any])
+    inline def setListAutolinks(value: `688`): Self = StObject.set(x, "listAutolinks", value.asInstanceOf[js.Any])
     
-    inline def setListBranches(value: `687`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
+    inline def setListBranches(value: `689`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
     
-    inline def setListBranchesForHeadCommit(value: `688`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
+    inline def setListBranchesForHeadCommit(value: `690`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
     
-    inline def setListCollaborators(value: `689`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
+    inline def setListCollaborators(value: `691`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
     
-    inline def setListCommentsForCommit(value: `690`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
+    inline def setListCommentsForCommit(value: `692`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
     
-    inline def setListCommitCommentsForRepo(value: `691`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setListCommitCommentsForRepo(value: `693`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListCommitStatusesForRef(value: `692`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
+    inline def setListCommitStatusesForRef(value: `694`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
     
-    inline def setListCommits(value: `693`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `695`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    inline def setListContributors(value: `694`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
+    inline def setListContributors(value: `696`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
     
-    inline def setListCustomDeploymentRuleIntegrations(value: `695`): Self = StObject.set(x, "listCustomDeploymentRuleIntegrations", value.asInstanceOf[js.Any])
+    inline def setListCustomDeploymentRuleIntegrations(value: `697`): Self = StObject.set(x, "listCustomDeploymentRuleIntegrations", value.asInstanceOf[js.Any])
     
-    inline def setListDeployKeys(value: `696`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
+    inline def setListDeployKeys(value: `698`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
     
-    inline def setListDeploymentBranchPolicies(value: `697`): Self = StObject.set(x, "listDeploymentBranchPolicies", value.asInstanceOf[js.Any])
+    inline def setListDeploymentBranchPolicies(value: `699`): Self = StObject.set(x, "listDeploymentBranchPolicies", value.asInstanceOf[js.Any])
     
-    inline def setListDeploymentStatuses(value: `698`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
+    inline def setListDeploymentStatuses(value: `700`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
     
-    inline def setListDeployments(value: `699`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
+    inline def setListDeployments(value: `701`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `700`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `702`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `701`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `703`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForUser(value: `702`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `704`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    inline def setListForks(value: `703`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
+    inline def setListForks(value: `705`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
     
-    inline def setListInvitations(value: `704`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
+    inline def setListInvitations(value: `706`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
     
-    inline def setListInvitationsForAuthenticatedUser(value: `705`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInvitationsForAuthenticatedUser(value: `707`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListLanguages(value: `706`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
+    inline def setListLanguages(value: `708`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
     
-    inline def setListPagesBuilds(value: `707`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
+    inline def setListPagesBuilds(value: `709`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
     
-    inline def setListPublic(value: `708`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
+    inline def setListPublic(value: `710`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
     
-    inline def setListPullRequestsAssociatedWithCommit(value: `709`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
+    inline def setListPullRequestsAssociatedWithCommit(value: `711`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
     
-    inline def setListReleaseAssets(value: `710`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
+    inline def setListReleaseAssets(value: `712`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
     
-    inline def setListReleases(value: `711`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
+    inline def setListReleases(value: `713`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
     
-    inline def setListTagProtection(value: `712`): Self = StObject.set(x, "listTagProtection", value.asInstanceOf[js.Any])
+    inline def setListTagProtection(value: `714`): Self = StObject.set(x, "listTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setListTags(value: `713`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
+    inline def setListTags(value: `715`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
     
-    inline def setListTeams(value: `714`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
+    inline def setListTeams(value: `716`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
     
-    inline def setListWebhookDeliveries(value: `715`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
+    inline def setListWebhookDeliveries(value: `717`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
     
-    inline def setListWebhooks(value: `716`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    inline def setListWebhooks(value: `718`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
     
-    inline def setMerge(value: `717`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: `719`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    inline def setMergeUpstream(value: `718`): Self = StObject.set(x, "mergeUpstream", value.asInstanceOf[js.Any])
+    inline def setMergeUpstream(value: `720`): Self = StObject.set(x, "mergeUpstream", value.asInstanceOf[js.Any])
     
-    inline def setPingWebhook(value: `719`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    inline def setPingWebhook(value: `721`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
     
-    inline def setRedeliverWebhookDelivery(value: `720`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setRedeliverWebhookDelivery(value: `722`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAppAccessRestrictions(value: `721`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveAppAccessRestrictions(value: `723`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setRemoveCollaborator(value: `722`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveCollaborator(value: `724`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setRemoveStatusCheckContexts(value: `723`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setRemoveStatusCheckContexts(value: `725`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setRemoveStatusCheckProtection(value: `724`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
+    inline def setRemoveStatusCheckProtection(value: `726`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
     
-    inline def setRemoveTeamAccessRestrictions(value: `725`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveTeamAccessRestrictions(value: `727`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setRemoveUserAccessRestrictions(value: `726`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setRemoveUserAccessRestrictions(value: `728`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setRenameBranch(value: `727`): Self = StObject.set(x, "renameBranch", value.asInstanceOf[js.Any])
+    inline def setRenameBranch(value: `729`): Self = StObject.set(x, "renameBranch", value.asInstanceOf[js.Any])
     
-    inline def setReplaceAllTopics(value: `728`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
+    inline def setReplaceAllTopics(value: `730`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
     
-    inline def setRequestPagesBuild(value: `729`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setRequestPagesBuild(value: `731`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
     
-    inline def setSetAdminBranchProtection(value: `730`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setSetAdminBranchProtection(value: `732`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setSetAppAccessRestrictions(value: `731`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetAppAccessRestrictions(value: `733`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setSetStatusCheckContexts(value: `732`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setSetStatusCheckContexts(value: `734`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setSetTeamAccessRestrictions(value: `733`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetTeamAccessRestrictions(value: `735`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setSetUserAccessRestrictions(value: `734`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setSetUserAccessRestrictions(value: `736`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setTestPushWebhook(value: `735`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
+    inline def setTestPushWebhook(value: `737`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
     
-    inline def setTransfer(value: `736`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    inline def setTransfer(value: `738`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `737`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `739`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateBranchProtection(value: `738`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
+    inline def setUpdateBranchProtection(value: `740`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setUpdateCommitComment(value: `739`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
+    inline def setUpdateCommitComment(value: `741`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDeploymentBranchPolicy(value: `740`): Self = StObject.set(x, "updateDeploymentBranchPolicy", value.asInstanceOf[js.Any])
+    inline def setUpdateDeploymentBranchPolicy(value: `742`): Self = StObject.set(x, "updateDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInformationAboutPagesSite(value: `741`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
+    inline def setUpdateInformationAboutPagesSite(value: `743`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInvitation(value: `742`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
+    inline def setUpdateInvitation(value: `744`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
     
-    inline def setUpdateOrgRuleset(value: `743`): Self = StObject.set(x, "updateOrgRuleset", value.asInstanceOf[js.Any])
+    inline def setUpdateOrgRuleset(value: `745`): Self = StObject.set(x, "updateOrgRuleset", value.asInstanceOf[js.Any])
     
-    inline def setUpdatePullRequestReviewProtection(value: `744`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setUpdatePullRequestReviewProtection(value: `746`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRelease(value: `745`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
+    inline def setUpdateRelease(value: `747`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
     
-    inline def setUpdateReleaseAsset(value: `746`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setUpdateReleaseAsset(value: `748`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRepoRuleset(value: `747`): Self = StObject.set(x, "updateRepoRuleset", value.asInstanceOf[js.Any])
+    inline def setUpdateRepoRuleset(value: `749`): Self = StObject.set(x, "updateRepoRuleset", value.asInstanceOf[js.Any])
     
-    inline def setUpdateStatusCheckPotection(value: `748`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
+    inline def setUpdateStatusCheckPotection(value: `750`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
     
-    inline def setUpdateStatusCheckProtection(value: `748`): Self = StObject.set(x, "updateStatusCheckProtection", value.asInstanceOf[js.Any])
+    inline def setUpdateStatusCheckProtection(value: `750`): Self = StObject.set(x, "updateStatusCheckProtection", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhook(value: `749`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhook(value: `751`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhookConfigForRepo(value: `750`): Self = StObject.set(x, "updateWebhookConfigForRepo", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhookConfigForRepo(value: `752`): Self = StObject.set(x, "updateWebhookConfigForRepo", value.asInstanceOf[js.Any])
     
-    inline def setUploadReleaseAsset(value: `751`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setUploadReleaseAsset(value: `753`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
   }
 }

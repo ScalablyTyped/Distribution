@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeometryFilter extends StObject {
   
   /**
-    * The geometry used to filter out the table's data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#GeometryFilter)
-    */
+  		 * The geometry used to filter out the table's data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#GeometryFilter)
+  		 */
   var geometry: Geometry_
   
   /**
-    * The type of the filter used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#GeometryFilter)
-    */
+  		 * The type of the filter used.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#GeometryFilter)
+  		 */
   var `type`: String
 }
 object GeometryFilter {

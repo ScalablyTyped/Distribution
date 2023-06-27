@@ -32,6 +32,7 @@ open class Window_ ()
   /* CompleteClass */
   override def cancelAnimationFrame(handle: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage) */
   /* standard dom */
   /* CompleteClass */
   override val localStorage: typings.std.Storage = js.native
@@ -51,6 +52,7 @@ open class Window_ ()
   /* CompleteClass */
   override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) */
   /* standard dom */
   /* CompleteClass */
   override val sessionStorage: typings.std.Storage = js.native

@@ -30,6 +30,8 @@ object mod {
     
     var animation: js.UndefOr[StyleValue] = js.undefined
     
+    var animationComposition: js.UndefOr[StyleValue] = js.undefined
+    
     var animationDelay: js.UndefOr[StyleValue] = js.undefined
     
     var animationDirection: js.UndefOr[StyleValue] = js.undefined
@@ -276,8 +278,6 @@ object mod {
     
     var content: js.UndefOr[StyleValue] = js.undefined
     
-    var contentVisibility: js.UndefOr[StyleValue] = js.undefined
-    
     var counterIncrement: js.UndefOr[StyleValue] = js.undefined
     
     var counterReset: js.UndefOr[StyleValue] = js.undefined
@@ -347,6 +347,12 @@ object mod {
     var fontStyle: js.UndefOr[StyleValue] = js.undefined
     
     var fontSynthesis: js.UndefOr[StyleValue] = js.undefined
+    
+    var fontSynthesisSmallCaps: js.UndefOr[StyleValue] = js.undefined
+    
+    var fontSynthesisStyle: js.UndefOr[StyleValue] = js.undefined
+    
+    var fontSynthesisWeight: js.UndefOr[StyleValue] = js.undefined
     
     var fontVariant: js.UndefOr[StyleValue] = js.undefined
     
@@ -605,6 +611,8 @@ object mod {
     var paddingRight: js.UndefOr[StyleValue] = js.undefined
     
     var paddingTop: js.UndefOr[StyleValue] = js.undefined
+    
+    var page: js.UndefOr[StyleValue] = js.undefined
     
     var pageBreakAfter: js.UndefOr[StyleValue] = js.undefined
     
@@ -1017,6 +1025,12 @@ object mod {
       inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
       inline def setAnimation(value: StyleValue): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationComposition(value: StyleValue): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationCompositionNull: Self = StObject.set(x, "animationComposition", null)
+      
+      inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
       
       inline def setAnimationDelay(value: StyleValue): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -1760,12 +1774,6 @@ object mod {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVisibility(value: StyleValue): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
-      
-      inline def setContentVisibilityNull: Self = StObject.set(x, "contentVisibility", null)
-      
-      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
-      
       inline def setCounterIncrement(value: StyleValue): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
       inline def setCounterIncrementNull: Self = StObject.set(x, "counterIncrement", null)
@@ -1972,7 +1980,25 @@ object mod {
       
       inline def setFontSynthesisNull: Self = StObject.set(x, "fontSynthesis", null)
       
+      inline def setFontSynthesisSmallCaps(value: StyleValue): Self = StObject.set(x, "fontSynthesisSmallCaps", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisSmallCapsNull: Self = StObject.set(x, "fontSynthesisSmallCaps", null)
+      
+      inline def setFontSynthesisSmallCapsUndefined: Self = StObject.set(x, "fontSynthesisSmallCaps", js.undefined)
+      
+      inline def setFontSynthesisStyle(value: StyleValue): Self = StObject.set(x, "fontSynthesisStyle", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisStyleNull: Self = StObject.set(x, "fontSynthesisStyle", null)
+      
+      inline def setFontSynthesisStyleUndefined: Self = StObject.set(x, "fontSynthesisStyle", js.undefined)
+      
       inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
+      
+      inline def setFontSynthesisWeight(value: StyleValue): Self = StObject.set(x, "fontSynthesisWeight", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisWeightNull: Self = StObject.set(x, "fontSynthesisWeight", null)
+      
+      inline def setFontSynthesisWeightUndefined: Self = StObject.set(x, "fontSynthesisWeight", js.undefined)
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
@@ -2750,6 +2776,8 @@ object mod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
+      inline def setPage(value: StyleValue): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(value: StyleValue): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfterNull: Self = StObject.set(x, "pageBreakAfter", null)
@@ -2767,6 +2795,10 @@ object mod {
       inline def setPageBreakInsideNull: Self = StObject.set(x, "pageBreakInside", null)
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      
+      inline def setPageNull: Self = StObject.set(x, "page", null)
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       inline def setPaintOrder(value: StyleValue): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
       

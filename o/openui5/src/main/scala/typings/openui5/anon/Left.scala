@@ -1,38 +1,27 @@
 package typings.openui5.anon
 
-import typings.openui5.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Left extends StObject {
   
-  /**
-    * Horizontal scroll position
-    */
-  var left: js.UndefOr[int] = js.undefined
+  var left: String
   
-  /**
-    * Vertical scroll position
-    */
-  var top: js.UndefOr[int] = js.undefined
+  var right: String
 }
 object Left {
   
-  inline def apply(): Left = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(left: String, right: String): Left = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[Left]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
     
-    inline def setLeft(value: int): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-    
-    inline def setTop(value: int): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    
-    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PublishableLayer extends StObject {
   
   /**
-    * Checks layer's publishing status while the layer is being published to the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
-    */
+  		 * Checks layer's publishing status while the layer is being published to the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
+  		 */
   val publishingInfo: PublishingInfo
 }
 object PublishableLayer {

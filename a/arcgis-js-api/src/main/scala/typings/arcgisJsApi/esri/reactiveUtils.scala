@@ -1,7 +1,6 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.IHandle
-import typings.arcgisJsApi.anon.Signal
 import typings.std.AbortSignal
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -24,7 +23,7 @@ trait reactiveUtils extends StObject {
   ): IHandle = js.native
   
   def once[T](getValue: js.Function0[T]): js.Promise[T] = js.native
-  def once[T](getValue: js.Function0[T], signal: Signal): js.Promise[T] = js.native
+  def once[T](getValue: js.Function0[T], signal: typings.arcgisJsApi.anon.Signal): js.Promise[T] = js.native
   def once[T](getValue: js.Function0[T], signal: AbortSignal): js.Promise[T] = js.native
   
   def watch[T](getValue: js.Function0[T], callback: js.Function2[/* newValue */ T, /* oldValue */ T, scala.Unit]): IHandle = js.native
@@ -45,6 +44,6 @@ trait reactiveUtils extends StObject {
   ): IHandle = js.native
   
   def whenOnce[T](getValue: js.Function0[js.UndefOr[T | Null]]): js.Promise[T] = js.native
-  def whenOnce[T](getValue: js.Function0[js.UndefOr[T | Null]], signal: Signal): js.Promise[T] = js.native
+  def whenOnce[T](getValue: js.Function0[js.UndefOr[T | Null]], signal: typings.arcgisJsApi.anon.Signal): js.Promise[T] = js.native
   def whenOnce[T](getValue: js.Function0[js.UndefOr[T | Null]], signal: AbortSignal): js.Promise[T] = js.native
 }

@@ -11,18 +11,18 @@ trait FoggyWeather
      with Accessor {
   
   /**
-    * Specifies the amount of fog used in the scene.
-    *
-    * @default 0.5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#fogStrength)
-    */
+  		 * Specifies the amount of fog used in the scene.
+  		 *
+  		 * @default 0.5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#fogStrength)
+  		 */
   var fogStrength: Double = js.native
   
   /**
-    * The type of Weather
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#type)
-    */
+  		 * The type of Weather
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#type)
+  		 */
   val `type`: foggy = js.native
 }

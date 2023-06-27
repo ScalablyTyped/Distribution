@@ -1,5 +1,6 @@
 package typings.floatingUiCore
 
+import typings.floatingUiCore.srcTypesMod.Derivable
 import typings.floatingUiCore.srcTypesMod.Middleware
 import typings.floatingUiCore.srcTypesMod.Padding
 import org.scalablytyped.runtime.StObject
@@ -12,9 +13,10 @@ object srcMiddlewareArrowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def arrow(options: Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("arrow")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def arrow(options: ArrowOptions): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("arrow")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def arrow(options: Derivable[ArrowOptions]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("arrow")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  trait Options extends StObject {
+  trait ArrowOptions extends StObject {
     
     /**
       * The arrow element to be positioned.
@@ -29,15 +31,15 @@ object srcMiddlewareArrowMod {
       */
     var padding: js.UndefOr[Padding] = js.undefined
   }
-  object Options {
+  object ArrowOptions {
     
-    inline def apply(element: Any): Options = {
+    inline def apply(element: Any): ArrowOptions = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[ArrowOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ArrowOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurementAnalysisView3D extends StObject {
   
   /**
-    * The direct line measurement analysis object associated with the analysis view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#analysis)
-    */
+  		 * The direct line measurement analysis object associated with the analysis view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#analysis)
+  		 */
   val analysis: DirectLineMeasurementAnalysis
   
   /**
-    * Result of the direct line measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#result)
-    */
+  		 * Result of the direct line measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#result)
+  		 */
   var result: DirectLineMeasurementAnalysisResult
   
   /**
-    * The analysis view type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#type)
-    */
+  		 * The analysis view type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#type)
+  		 */
   val `type`: `direct-line-measurement-view-3d`
   
   /**
-    * When `true`, the analysis is visualized in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#visible)
-    */
+  		 * When `true`, the analysis is visualized in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#visible)
+  		 */
   var visible: Boolean
 }
 object DirectLineMeasurementAnalysisView3D {

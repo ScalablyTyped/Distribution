@@ -9,10 +9,10 @@ trait ActionButtonProperties
      with ActionBaseProperties {
   
   /**
-    * The URL to an image that will be used to represent the action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
-    */
+  		 * The URL to an image that will be used to represent the action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
+  		 */
   var image: js.UndefOr[String] = js.undefined
 }
 object ActionButtonProperties {

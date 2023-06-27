@@ -25,17 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsString extends StObject {
   
   /**
-    * The direction text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString)
-    */
+  		 * The direction text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString)
+  		 */
   var text: String
   
   /**
-    * The type of event.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString)
-    */
+  		 * The type of event.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString)
+  		 */
   var `type`: `alt-name` | arrive | branch | `cross-street` | `cumulative-length` | depart | `estimated-arrival-time` | exit | general | length | `service-time` | `street-name` | summary | time | `time-window` | toward | `violation-time` | `wait-time`
 }
 object DirectionsString {

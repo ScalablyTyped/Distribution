@@ -23,7 +23,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/starred/{owner}/{repo}']['response'] */ js.Any
   ]
   @JSName("checkRepoIsStarredByAuthenticatedUser")
-  var checkRepoIsStarredByAuthenticatedUser_Original: `121`
+  var checkRepoIsStarredByAuthenticatedUser_Original: `123`
   
   /**
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://docs.github.com/rest/reference/activity#set-a-repository-subscription).
@@ -43,7 +43,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://docs.github.com/rest/reference/activity#set-a-repository-subscription).
     */
   @JSName("deleteRepoSubscription")
-  var deleteRepoSubscription_Original: `122`
+  var deleteRepoSubscription_Original: `124`
   
   /**
     * Mutes all future notifications for a conversation until you comment on the thread or get an **@mention**. If you are watching the repository of the thread, you will still receive notifications. To ignore future notifications for a repository you are watching, use the [Set a thread subscription](https://docs.github.com/rest/reference/activity#set-a-thread-subscription) endpoint and set `ignore` to `true`.
@@ -63,7 +63,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Mutes all future notifications for a conversation until you comment on the thread or get an **@mention**. If you are watching the repository of the thread, you will still receive notifications. To ignore future notifications for a repository you are watching, use the [Set a thread subscription](https://docs.github.com/rest/reference/activity#set-a-thread-subscription) endpoint and set `ignore` to `true`.
     */
   @JSName("deleteThreadSubscription")
-  var deleteThreadSubscription_Original: `123`
+  var deleteThreadSubscription_Original: `125`
   
   /**
     * GitHub provides several timeline resources in [Atom](http://en.wikipedia.org/wiki/Atom_(standard)) format. The Feeds API lists all the feeds available to the authenticated user:
@@ -103,7 +103,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * **Note**: Private feeds are only returned when [authenticating via Basic Auth](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) since current feed URIs use the older, non revocable auth tokens.
     */
   @JSName("getFeeds")
-  var getFeeds_Original: `124`
+  var getFeeds_Original: `126`
   
   def getRepoSubscription(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/subscription']['response'] */ js.Any
@@ -117,7 +117,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/subscription']['response'] */ js.Any
   ]
   @JSName("getRepoSubscription")
-  var getRepoSubscription_Original: `125`
+  var getRepoSubscription_Original: `127`
   
   /**
     * Gets information about a notification thread.
@@ -156,13 +156,13 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Note that subscriptions are only generated if a user is participating in a conversation--for example, they've replied to the thread, were **@mentioned**, or manually subscribe to a thread.
     */
   @JSName("getThreadSubscriptionForAuthenticatedUser")
-  var getThreadSubscriptionForAuthenticatedUser_Original: `127`
+  var getThreadSubscriptionForAuthenticatedUser_Original: `129`
   
   /**
     * Gets information about a notification thread.
     */
   @JSName("getThread")
-  var getThread_Original: `126`
+  var getThread_Original: `128`
   
   /**
     * If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events.
@@ -182,7 +182,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * If you are authenticated as the given user, you will see your private events. Otherwise, you'll only see public events.
     */
   @JSName("listEventsForAuthenticatedUser")
-  var listEventsForAuthenticatedUser_Original: `128`
+  var listEventsForAuthenticatedUser_Original: `130`
   
   /**
     * List all notifications for the current user, sorted by most recently updated.
@@ -202,7 +202,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * List all notifications for the current user, sorted by most recently updated.
     */
   @JSName("listNotificationsForAuthenticatedUser")
-  var listNotificationsForAuthenticatedUser_Original: `129`
+  var listNotificationsForAuthenticatedUser_Original: `131`
   
   /**
     * This is the user's organization dashboard. You must be authenticated as the user to view this.
@@ -222,7 +222,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * This is the user's organization dashboard. You must be authenticated as the user to view this.
     */
   @JSName("listOrgEventsForAuthenticatedUser")
-  var listOrgEventsForAuthenticatedUser_Original: `130`
+  var listOrgEventsForAuthenticatedUser_Original: `132`
   
   /**
     * We delay the public events feed by five minutes, which means the most recent event returned by the public events API actually occurred at least five minutes ago.
@@ -251,7 +251,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /networks/{owner}/{repo}/events']['response'] */ js.Any
   ]
   @JSName("listPublicEventsForRepoNetwork")
-  var listPublicEventsForRepoNetwork_Original: `132`
+  var listPublicEventsForRepoNetwork_Original: `134`
   
   def listPublicEventsForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/events/public']['response'] */ js.Any
@@ -265,13 +265,13 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/events/public']['response'] */ js.Any
   ]
   @JSName("listPublicEventsForUser")
-  var listPublicEventsForUser_Original: `133`
+  var listPublicEventsForUser_Original: `135`
   
   /**
     * We delay the public events feed by five minutes, which means the most recent event returned by the public events API actually occurred at least five minutes ago.
     */
   @JSName("listPublicEvents")
-  var listPublicEvents_Original: `131`
+  var listPublicEvents_Original: `133`
   
   def listPublicOrgEvents(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/events']['response'] */ js.Any
@@ -285,7 +285,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/events']['response'] */ js.Any
   ]
   @JSName("listPublicOrgEvents")
-  var listPublicOrgEvents_Original: `134`
+  var listPublicOrgEvents_Original: `136`
   
   /**
     * These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
@@ -305,7 +305,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * These are events that you've received by watching repos and following users. If you are authenticated as the given user, you will see private events. Otherwise, you'll only see public events.
     */
   @JSName("listReceivedEventsForUser")
-  var listReceivedEventsForUser_Original: `135`
+  var listReceivedEventsForUser_Original: `137`
   
   def listReceivedPublicEventsForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/received_events/public']['response'] */ js.Any
@@ -319,7 +319,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/received_events/public']['response'] */ js.Any
   ]
   @JSName("listReceivedPublicEventsForUser")
-  var listReceivedPublicEventsForUser_Original: `136`
+  var listReceivedPublicEventsForUser_Original: `138`
   
   /**
     * **Note**: This API is not built to serve real-time use cases. Depending on the time of day, event latency can be anywhere from 30s to 6h.
@@ -339,7 +339,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * **Note**: This API is not built to serve real-time use cases. Depending on the time of day, event latency can be anywhere from 30s to 6h.
     */
   @JSName("listRepoEvents")
-  var listRepoEvents_Original: `137`
+  var listRepoEvents_Original: `139`
   
   /**
     * Lists all notifications for the current user in the specified repository.
@@ -359,7 +359,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Lists all notifications for the current user in the specified repository.
     */
   @JSName("listRepoNotificationsForAuthenticatedUser")
-  var listRepoNotificationsForAuthenticatedUser_Original: `138`
+  var listRepoNotificationsForAuthenticatedUser_Original: `140`
   
   /**
     * Lists repositories the authenticated user has starred.
@@ -383,7 +383,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listReposStarredByAuthenticatedUser")
-  var listReposStarredByAuthenticatedUser_Original: `139`
+  var listReposStarredByAuthenticatedUser_Original: `141`
   
   /**
     * Lists repositories a user has starred.
@@ -407,7 +407,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listReposStarredByUser")
-  var listReposStarredByUser_Original: `140`
+  var listReposStarredByUser_Original: `142`
   
   /**
     * Lists repositories a user is watching.
@@ -427,7 +427,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Lists repositories a user is watching.
     */
   @JSName("listReposWatchedByUser")
-  var listReposWatchedByUser_Original: `141`
+  var listReposWatchedByUser_Original: `143`
   
   /**
     * Lists the people that have starred the repository.
@@ -451,7 +451,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listStargazersForRepo")
-  var listStargazersForRepo_Original: `142`
+  var listStargazersForRepo_Original: `144`
   
   /**
     * Lists repositories the authenticated user is watching.
@@ -471,7 +471,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Lists repositories the authenticated user is watching.
     */
   @JSName("listWatchedReposForAuthenticatedUser")
-  var listWatchedReposForAuthenticatedUser_Original: `143`
+  var listWatchedReposForAuthenticatedUser_Original: `145`
   
   /**
     * Lists the people watching the specified repository.
@@ -491,7 +491,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Lists the people watching the specified repository.
     */
   @JSName("listWatchersForRepo")
-  var listWatchersForRepo_Original: `144`
+  var listWatchersForRepo_Original: `146`
   
   /**
     * Marks all notifications as "read" for the current user. If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List notifications for the authenticated user](https://docs.github.com/rest/reference/activity#list-notifications-for-the-authenticated-user) endpoint and pass the query parameter `all=false`.
@@ -511,7 +511,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Marks all notifications as "read" for the current user. If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List notifications for the authenticated user](https://docs.github.com/rest/reference/activity#list-notifications-for-the-authenticated-user) endpoint and pass the query parameter `all=false`.
     */
   @JSName("markNotificationsAsRead")
-  var markNotificationsAsRead_Original: `145`
+  var markNotificationsAsRead_Original: `147`
   
   /**
     * Marks all notifications in a repository as "read" for the current user. If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List repository notifications for the authenticated user](https://docs.github.com/rest/reference/activity#list-repository-notifications-for-the-authenticated-user) endpoint and pass the query parameter `all=false`.
@@ -531,7 +531,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Marks all notifications in a repository as "read" for the current user. If the number of notifications is too large to complete in one request, you will receive a `202 Accepted` status and GitHub will run an asynchronous process to mark notifications as "read." To check whether any "unread" notifications remain, you can use the [List repository notifications for the authenticated user](https://docs.github.com/rest/reference/activity#list-repository-notifications-for-the-authenticated-user) endpoint and pass the query parameter `all=false`.
     */
   @JSName("markRepoNotificationsAsRead")
-  var markRepoNotificationsAsRead_Original: `146`
+  var markRepoNotificationsAsRead_Original: `148`
   
   /**
     * Marks a thread as "read." Marking a thread as "read" is equivalent to clicking a notification in your notification inbox on GitHub: https://github.com/notifications.
@@ -551,7 +551,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Marks a thread as "read." Marking a thread as "read" is equivalent to clicking a notification in your notification inbox on GitHub: https://github.com/notifications.
     */
   @JSName("markThreadAsRead")
-  var markThreadAsRead_Original: `147`
+  var markThreadAsRead_Original: `149`
   
   /**
     * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://docs.github.com/rest/reference/activity#delete-a-repository-subscription) completely.
@@ -571,7 +571,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * If you would like to watch a repository, set `subscribed` to `true`. If you would like to ignore notifications made within a repository, set `ignored` to `true`. If you would like to stop watching a repository, [delete the repository's subscription](https://docs.github.com/rest/reference/activity#delete-a-repository-subscription) completely.
     */
   @JSName("setRepoSubscription")
-  var setRepoSubscription_Original: `148`
+  var setRepoSubscription_Original: `150`
   
   /**
     * If you are watching a repository, you receive notifications for all threads by default. Use this endpoint to ignore future notifications for threads until you comment on the thread or get an **@mention**.
@@ -599,7 +599,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Unsubscribing from a conversation in a repository that you are not watching is functionally equivalent to the [Delete a thread subscription](https://docs.github.com/rest/reference/activity#delete-a-thread-subscription) endpoint.
     */
   @JSName("setThreadSubscription")
-  var setThreadSubscription_Original: `149`
+  var setThreadSubscription_Original: `151`
   
   /**
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
@@ -619,7 +619,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
   @JSName("starRepoForAuthenticatedUser")
-  var starRepoForAuthenticatedUser_Original: `150`
+  var starRepoForAuthenticatedUser_Original: `152`
   
   def unstarRepoForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/starred/{owner}/{repo}']['response'] */ js.Any
@@ -633,42 +633,42 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/starred/{owner}/{repo}']['response'] */ js.Any
   ]
   @JSName("unstarRepoForAuthenticatedUser")
-  var unstarRepoForAuthenticatedUser_Original: `151`
+  var unstarRepoForAuthenticatedUser_Original: `153`
 }
 object CheckRepoIsStarredByAuthenticatedUser {
   
   inline def apply(
-    checkRepoIsStarredByAuthenticatedUser: `121`,
-    deleteRepoSubscription: `122`,
-    deleteThreadSubscription: `123`,
-    getFeeds: `124`,
-    getRepoSubscription: `125`,
-    getThread: `126`,
-    getThreadSubscriptionForAuthenticatedUser: `127`,
-    listEventsForAuthenticatedUser: `128`,
-    listNotificationsForAuthenticatedUser: `129`,
-    listOrgEventsForAuthenticatedUser: `130`,
-    listPublicEvents: `131`,
-    listPublicEventsForRepoNetwork: `132`,
-    listPublicEventsForUser: `133`,
-    listPublicOrgEvents: `134`,
-    listReceivedEventsForUser: `135`,
-    listReceivedPublicEventsForUser: `136`,
-    listRepoEvents: `137`,
-    listRepoNotificationsForAuthenticatedUser: `138`,
-    listReposStarredByAuthenticatedUser: `139`,
-    listReposStarredByUser: `140`,
-    listReposWatchedByUser: `141`,
-    listStargazersForRepo: `142`,
-    listWatchedReposForAuthenticatedUser: `143`,
-    listWatchersForRepo: `144`,
-    markNotificationsAsRead: `145`,
-    markRepoNotificationsAsRead: `146`,
-    markThreadAsRead: `147`,
-    setRepoSubscription: `148`,
-    setThreadSubscription: `149`,
-    starRepoForAuthenticatedUser: `150`,
-    unstarRepoForAuthenticatedUser: `151`
+    checkRepoIsStarredByAuthenticatedUser: `123`,
+    deleteRepoSubscription: `124`,
+    deleteThreadSubscription: `125`,
+    getFeeds: `126`,
+    getRepoSubscription: `127`,
+    getThread: `128`,
+    getThreadSubscriptionForAuthenticatedUser: `129`,
+    listEventsForAuthenticatedUser: `130`,
+    listNotificationsForAuthenticatedUser: `131`,
+    listOrgEventsForAuthenticatedUser: `132`,
+    listPublicEvents: `133`,
+    listPublicEventsForRepoNetwork: `134`,
+    listPublicEventsForUser: `135`,
+    listPublicOrgEvents: `136`,
+    listReceivedEventsForUser: `137`,
+    listReceivedPublicEventsForUser: `138`,
+    listRepoEvents: `139`,
+    listRepoNotificationsForAuthenticatedUser: `140`,
+    listReposStarredByAuthenticatedUser: `141`,
+    listReposStarredByUser: `142`,
+    listReposWatchedByUser: `143`,
+    listStargazersForRepo: `144`,
+    listWatchedReposForAuthenticatedUser: `145`,
+    listWatchersForRepo: `146`,
+    markNotificationsAsRead: `147`,
+    markRepoNotificationsAsRead: `148`,
+    markThreadAsRead: `149`,
+    setRepoSubscription: `150`,
+    setThreadSubscription: `151`,
+    starRepoForAuthenticatedUser: `152`,
+    unstarRepoForAuthenticatedUser: `153`
   ): CheckRepoIsStarredByAuthenticatedUser = {
     val __obj = js.Dynamic.literal(checkRepoIsStarredByAuthenticatedUser = checkRepoIsStarredByAuthenticatedUser.asInstanceOf[js.Any], deleteRepoSubscription = deleteRepoSubscription.asInstanceOf[js.Any], deleteThreadSubscription = deleteThreadSubscription.asInstanceOf[js.Any], getFeeds = getFeeds.asInstanceOf[js.Any], getRepoSubscription = getRepoSubscription.asInstanceOf[js.Any], getThread = getThread.asInstanceOf[js.Any], getThreadSubscriptionForAuthenticatedUser = getThreadSubscriptionForAuthenticatedUser.asInstanceOf[js.Any], listEventsForAuthenticatedUser = listEventsForAuthenticatedUser.asInstanceOf[js.Any], listNotificationsForAuthenticatedUser = listNotificationsForAuthenticatedUser.asInstanceOf[js.Any], listOrgEventsForAuthenticatedUser = listOrgEventsForAuthenticatedUser.asInstanceOf[js.Any], listPublicEvents = listPublicEvents.asInstanceOf[js.Any], listPublicEventsForRepoNetwork = listPublicEventsForRepoNetwork.asInstanceOf[js.Any], listPublicEventsForUser = listPublicEventsForUser.asInstanceOf[js.Any], listPublicOrgEvents = listPublicOrgEvents.asInstanceOf[js.Any], listReceivedEventsForUser = listReceivedEventsForUser.asInstanceOf[js.Any], listReceivedPublicEventsForUser = listReceivedPublicEventsForUser.asInstanceOf[js.Any], listRepoEvents = listRepoEvents.asInstanceOf[js.Any], listRepoNotificationsForAuthenticatedUser = listRepoNotificationsForAuthenticatedUser.asInstanceOf[js.Any], listReposStarredByAuthenticatedUser = listReposStarredByAuthenticatedUser.asInstanceOf[js.Any], listReposStarredByUser = listReposStarredByUser.asInstanceOf[js.Any], listReposWatchedByUser = listReposWatchedByUser.asInstanceOf[js.Any], listStargazersForRepo = listStargazersForRepo.asInstanceOf[js.Any], listWatchedReposForAuthenticatedUser = listWatchedReposForAuthenticatedUser.asInstanceOf[js.Any], listWatchersForRepo = listWatchersForRepo.asInstanceOf[js.Any], markNotificationsAsRead = markNotificationsAsRead.asInstanceOf[js.Any], markRepoNotificationsAsRead = markRepoNotificationsAsRead.asInstanceOf[js.Any], markThreadAsRead = markThreadAsRead.asInstanceOf[js.Any], setRepoSubscription = setRepoSubscription.asInstanceOf[js.Any], setThreadSubscription = setThreadSubscription.asInstanceOf[js.Any], starRepoForAuthenticatedUser = starRepoForAuthenticatedUser.asInstanceOf[js.Any], unstarRepoForAuthenticatedUser = unstarRepoForAuthenticatedUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckRepoIsStarredByAuthenticatedUser]
@@ -677,66 +677,66 @@ object CheckRepoIsStarredByAuthenticatedUser {
   @scala.inline
   implicit open class MutableBuilder[Self <: CheckRepoIsStarredByAuthenticatedUser] (val x: Self) extends AnyVal {
     
-    inline def setCheckRepoIsStarredByAuthenticatedUser(value: `121`): Self = StObject.set(x, "checkRepoIsStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCheckRepoIsStarredByAuthenticatedUser(value: `123`): Self = StObject.set(x, "checkRepoIsStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRepoSubscription(value: `122`): Self = StObject.set(x, "deleteRepoSubscription", value.asInstanceOf[js.Any])
+    inline def setDeleteRepoSubscription(value: `124`): Self = StObject.set(x, "deleteRepoSubscription", value.asInstanceOf[js.Any])
     
-    inline def setDeleteThreadSubscription(value: `123`): Self = StObject.set(x, "deleteThreadSubscription", value.asInstanceOf[js.Any])
+    inline def setDeleteThreadSubscription(value: `125`): Self = StObject.set(x, "deleteThreadSubscription", value.asInstanceOf[js.Any])
     
-    inline def setGetFeeds(value: `124`): Self = StObject.set(x, "getFeeds", value.asInstanceOf[js.Any])
+    inline def setGetFeeds(value: `126`): Self = StObject.set(x, "getFeeds", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoSubscription(value: `125`): Self = StObject.set(x, "getRepoSubscription", value.asInstanceOf[js.Any])
+    inline def setGetRepoSubscription(value: `127`): Self = StObject.set(x, "getRepoSubscription", value.asInstanceOf[js.Any])
     
-    inline def setGetThread(value: `126`): Self = StObject.set(x, "getThread", value.asInstanceOf[js.Any])
+    inline def setGetThread(value: `128`): Self = StObject.set(x, "getThread", value.asInstanceOf[js.Any])
     
-    inline def setGetThreadSubscriptionForAuthenticatedUser(value: `127`): Self = StObject.set(x, "getThreadSubscriptionForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetThreadSubscriptionForAuthenticatedUser(value: `129`): Self = StObject.set(x, "getThreadSubscriptionForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListEventsForAuthenticatedUser(value: `128`): Self = StObject.set(x, "listEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListEventsForAuthenticatedUser(value: `130`): Self = StObject.set(x, "listEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListNotificationsForAuthenticatedUser(value: `129`): Self = StObject.set(x, "listNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListNotificationsForAuthenticatedUser(value: `131`): Self = StObject.set(x, "listNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListOrgEventsForAuthenticatedUser(value: `130`): Self = StObject.set(x, "listOrgEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListOrgEventsForAuthenticatedUser(value: `132`): Self = StObject.set(x, "listOrgEventsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListPublicEvents(value: `131`): Self = StObject.set(x, "listPublicEvents", value.asInstanceOf[js.Any])
+    inline def setListPublicEvents(value: `133`): Self = StObject.set(x, "listPublicEvents", value.asInstanceOf[js.Any])
     
-    inline def setListPublicEventsForRepoNetwork(value: `132`): Self = StObject.set(x, "listPublicEventsForRepoNetwork", value.asInstanceOf[js.Any])
+    inline def setListPublicEventsForRepoNetwork(value: `134`): Self = StObject.set(x, "listPublicEventsForRepoNetwork", value.asInstanceOf[js.Any])
     
-    inline def setListPublicEventsForUser(value: `133`): Self = StObject.set(x, "listPublicEventsForUser", value.asInstanceOf[js.Any])
+    inline def setListPublicEventsForUser(value: `135`): Self = StObject.set(x, "listPublicEventsForUser", value.asInstanceOf[js.Any])
     
-    inline def setListPublicOrgEvents(value: `134`): Self = StObject.set(x, "listPublicOrgEvents", value.asInstanceOf[js.Any])
+    inline def setListPublicOrgEvents(value: `136`): Self = StObject.set(x, "listPublicOrgEvents", value.asInstanceOf[js.Any])
     
-    inline def setListReceivedEventsForUser(value: `135`): Self = StObject.set(x, "listReceivedEventsForUser", value.asInstanceOf[js.Any])
+    inline def setListReceivedEventsForUser(value: `137`): Self = StObject.set(x, "listReceivedEventsForUser", value.asInstanceOf[js.Any])
     
-    inline def setListReceivedPublicEventsForUser(value: `136`): Self = StObject.set(x, "listReceivedPublicEventsForUser", value.asInstanceOf[js.Any])
+    inline def setListReceivedPublicEventsForUser(value: `138`): Self = StObject.set(x, "listReceivedPublicEventsForUser", value.asInstanceOf[js.Any])
     
-    inline def setListRepoEvents(value: `137`): Self = StObject.set(x, "listRepoEvents", value.asInstanceOf[js.Any])
+    inline def setListRepoEvents(value: `139`): Self = StObject.set(x, "listRepoEvents", value.asInstanceOf[js.Any])
     
-    inline def setListRepoNotificationsForAuthenticatedUser(value: `138`): Self = StObject.set(x, "listRepoNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListRepoNotificationsForAuthenticatedUser(value: `140`): Self = StObject.set(x, "listRepoNotificationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListReposStarredByAuthenticatedUser(value: `139`): Self = StObject.set(x, "listReposStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListReposStarredByAuthenticatedUser(value: `141`): Self = StObject.set(x, "listReposStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListReposStarredByUser(value: `140`): Self = StObject.set(x, "listReposStarredByUser", value.asInstanceOf[js.Any])
+    inline def setListReposStarredByUser(value: `142`): Self = StObject.set(x, "listReposStarredByUser", value.asInstanceOf[js.Any])
     
-    inline def setListReposWatchedByUser(value: `141`): Self = StObject.set(x, "listReposWatchedByUser", value.asInstanceOf[js.Any])
+    inline def setListReposWatchedByUser(value: `143`): Self = StObject.set(x, "listReposWatchedByUser", value.asInstanceOf[js.Any])
     
-    inline def setListStargazersForRepo(value: `142`): Self = StObject.set(x, "listStargazersForRepo", value.asInstanceOf[js.Any])
+    inline def setListStargazersForRepo(value: `144`): Self = StObject.set(x, "listStargazersForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListWatchedReposForAuthenticatedUser(value: `143`): Self = StObject.set(x, "listWatchedReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListWatchedReposForAuthenticatedUser(value: `145`): Self = StObject.set(x, "listWatchedReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListWatchersForRepo(value: `144`): Self = StObject.set(x, "listWatchersForRepo", value.asInstanceOf[js.Any])
+    inline def setListWatchersForRepo(value: `146`): Self = StObject.set(x, "listWatchersForRepo", value.asInstanceOf[js.Any])
     
-    inline def setMarkNotificationsAsRead(value: `145`): Self = StObject.set(x, "markNotificationsAsRead", value.asInstanceOf[js.Any])
+    inline def setMarkNotificationsAsRead(value: `147`): Self = StObject.set(x, "markNotificationsAsRead", value.asInstanceOf[js.Any])
     
-    inline def setMarkRepoNotificationsAsRead(value: `146`): Self = StObject.set(x, "markRepoNotificationsAsRead", value.asInstanceOf[js.Any])
+    inline def setMarkRepoNotificationsAsRead(value: `148`): Self = StObject.set(x, "markRepoNotificationsAsRead", value.asInstanceOf[js.Any])
     
-    inline def setMarkThreadAsRead(value: `147`): Self = StObject.set(x, "markThreadAsRead", value.asInstanceOf[js.Any])
+    inline def setMarkThreadAsRead(value: `149`): Self = StObject.set(x, "markThreadAsRead", value.asInstanceOf[js.Any])
     
-    inline def setSetRepoSubscription(value: `148`): Self = StObject.set(x, "setRepoSubscription", value.asInstanceOf[js.Any])
+    inline def setSetRepoSubscription(value: `150`): Self = StObject.set(x, "setRepoSubscription", value.asInstanceOf[js.Any])
     
-    inline def setSetThreadSubscription(value: `149`): Self = StObject.set(x, "setThreadSubscription", value.asInstanceOf[js.Any])
+    inline def setSetThreadSubscription(value: `151`): Self = StObject.set(x, "setThreadSubscription", value.asInstanceOf[js.Any])
     
-    inline def setStarRepoForAuthenticatedUser(value: `150`): Self = StObject.set(x, "starRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setStarRepoForAuthenticatedUser(value: `152`): Self = StObject.set(x, "starRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUnstarRepoForAuthenticatedUser(value: `151`): Self = StObject.set(x, "unstarRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setUnstarRepoForAuthenticatedUser(value: `153`): Self = StObject.set(x, "unstarRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
   }
 }

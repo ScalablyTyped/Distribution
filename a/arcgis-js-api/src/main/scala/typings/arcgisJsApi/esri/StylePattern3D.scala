@@ -20,18 +20,18 @@ trait StylePattern3D
      with JSONSupport {
   
   /**
-    * The fill style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#style)
-    */
+  		 * The fill style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#style)
+  		 */
   var style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical = js.native
   
   /**
-    * The pattern type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#type)
-    */
+  		 * The pattern type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#type)
+  		 */
   val `type`: style = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for swell-js
 
-Typings are for version 3.21.6
+Typings are for version 3.22.1
 
 ## Library description:
 Swell JS library for client-side stores

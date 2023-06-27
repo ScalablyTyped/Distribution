@@ -35,7 +35,7 @@ trait PartialManifest extends StObject {
   // OPTIONAL //
   //////////////
   /**
-    * @requires(CrOS) **Will only work on Chrome OS.**
+    * @requires **Will only work on Chrome OS.**
     * @description
     * The action_handlers manifest property declares which user actions or intents the
     * application supports; these can serve as alternate launch points for your application.
@@ -66,13 +66,13 @@ trait PartialManifest extends StObject {
   
   /**
     * App author information
-    * @see[Not implemented anywhere in code]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46}
+    * @see https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46
     */
   var author: js.UndefOr[Email | Any] = js.undefined
   
   /**
     * Allows inspection of page contents, not enabled on stable anyways except for whitelist.
-    * @see[Docs]{@link https://github.com/chromium/chromium/blob/master/extensions/common/manifest_handlers/automation.cc}
+    * @see https://github.com/chromium/chromium/blob/master/extensions/common/manifest_handlers/automation.cc
     */
   var automation: js.UndefOr[AutomationOptions | Boolean] = js.undefined
   
@@ -102,7 +102,7 @@ trait PartialManifest extends StObject {
     * Specifies the subdirectory of _locales that contains the default strings for this app.
     * This field is required in apps that have a _locales directory; it must be absent in
     * apps that have no _locales directory. For details, see Internationalization:
-    * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
+    * @see https://developer.chrome.com/extensions/i18n
     */
   var default_locale: js.UndefOr[String] = js.undefined
   
@@ -111,7 +111,7 @@ trait PartialManifest extends StObject {
     * that describes the extension. The description should be suitable for both the
     * browser's extension management UI and the Chrome Web Store. You can specify
     * locale-specific strings for this field; see Internationalization for details.
-    * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
+    * @see https://developer.chrome.com/extensions/i18n
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -126,7 +126,7 @@ trait PartialManifest extends StObject {
     * intercept, block, or modify web requests in-flight using **declarativeWebRequest**
     * or take actions depending on the content of a page, without requiring permission
     * to read the page's content using **declarativeContent**.
-    * @see[event_rules docs]{@link https://developer.chrome.com/extensions/manifest/event_rules}
+    * @see https://developer.chrome.com/extensions/manifest/event_rules
     */
   var event_rules: js.UndefOr[js.Array[Actions]] = js.undefined
   
@@ -178,7 +178,7 @@ trait PartialManifest extends StObject {
   
   /**
     * Import resources from another extension / app.
-    * @see[Shared modules]{@link https://developer.chrome.com/apps/shared_modules}
+    * @see https://developer.chrome.com/apps/shared_modules
     */
   var `import`: js.UndefOr[js.Array[Id]] = js.undefined
   
@@ -188,7 +188,7 @@ trait PartialManifest extends StObject {
   /**
     * One integer specifying the version of the manifest file format your package requires.
     * As of Chrome 18, developers should specify 2 (without quotes).
-    * @see[Manifest Version Info]{@link https://developer.chrome.com/apps/manifest/manifest_version}
+    * @see https://developer.chrome.com/apps/manifest/manifest_version
     * @required
     */
   var manifest_version: `2`
@@ -212,7 +212,7 @@ trait PartialManifest extends StObject {
     *  - Chrome Web Store
     *
     * You can specify locale-specific strings, see Internationalization docs:
-    * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
+    * @see https://developer.chrome.com/extensions/i18n
     * @required
     * @requires string - Maximum 45 characters!
     */
@@ -247,8 +247,8 @@ trait PartialManifest extends StObject {
   
   /**
     * Native Client
-    * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
-    * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
+    * @see https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst
+    * @see https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py
     */
   var platforms: js.UndefOr[js.Array[Naclarch]] = js.undefined
   
@@ -280,7 +280,7 @@ trait PartialManifest extends StObject {
     * - New Tab page
     *
     * You can specify locale-specific strings, see Internationalization docs:
-    * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
+    * @see https://developer.chrome.com/extensions/i18n
     */
   var short_name: js.UndefOr[String] = js.undefined
   
@@ -315,9 +315,9 @@ trait PartialManifest extends StObject {
     * **⚠ Warning**
     * As of M33, Windows stable / beta channel users can only
     * download apps hosted in the Chrome Web Store
-    * @requires(not Windows)
+    * @requires not-Windows
     * (@see[Protecting Windows users from malicious extensions]{@link http://blog.chromium.org/2013/11/protecting-windows-users-from-malicious.html}).
-    * @see[Documentation]{@link https://developer.chrome.com/apps/autoupdate}
+    * @see https://developer.chrome.com/apps/autoupdate
     */
   var update_url: js.UndefOr[String] = js.undefined
   
@@ -333,7 +333,7 @@ trait PartialManifest extends StObject {
     *   ],
     *   'title': 'View FooBar presentation'
     * }
-    * @see[Documentation]{@link https://developer.chrome.com/apps/manifest/url_handlers}
+    * @see https://developer.chrome.com/apps/manifest/url_handlers
     *
     */
   var url_handlers: js.UndefOr[StringDictionary[Matches]] = js.undefined
@@ -346,7 +346,7 @@ trait PartialManifest extends StObject {
     * A couple of rules apply to the integers: they must be between 0 and 65535, inclusive,
     * and non-zero integers can't start with 0. For example, 99999 and 032 are both invalid.
     * A missing integer is equal to zero. For example, 1.1.9.9999 is newer than 1.1.
-    * @see[Manifest- Version Docs]{@link https://developer.chrome.com/apps/manifest/version}
+    * @see https://developer.chrome.com/apps/manifest/version
     * @required
     */
   var version: String
@@ -367,7 +367,7 @@ trait PartialManifest extends StObject {
     * section in the app manifest. Partitions may be granted access to a set of files by
     * matching partition name patterns with file name patterns. Both sorts of patterns may
     * contain the * wildcard.
-    * @see[Accessing packaged resources]{@link https://developer.chrome.com/apps/tags/webview#local_resources}
+    * @see https://developer.chrome.com/apps/tags/webview#local_resources
     */
   var webview: js.UndefOr[Partitions] = js.undefined
 }

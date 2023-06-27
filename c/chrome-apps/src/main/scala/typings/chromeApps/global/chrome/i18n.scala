@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.i18n infrastructure to implement internationalization across your whole app.
   * Content scripts: Fully supported.
-  * @see[Docs]{@link https://developer.chrome.com/apps/i18n}
+  * @see https://developer.chrome.com/apps/i18n
   * @since Chrome 25.
   */
 object i18n {

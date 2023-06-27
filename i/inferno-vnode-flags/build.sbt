@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inferno-vnode-flags"
-version := "8.1.1-6cc02e"
+version := "8.2.1-e82f4d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

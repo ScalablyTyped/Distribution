@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Path
   extends StObject
-     with Accessor {
+     with Accessor
+     with JSONSupport {
   
   /**
-    * Array of [entities](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Entity.html) and [relationships](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html) where the first element is the starting entity of the path, the final element is the ending entity of the path, and intermediary elements are entities and relationships connecting the two.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Path.html#path)
-    */
+  		 * Array of [entities](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Entity.html) and [relationships](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html) where the first element is the starting entity of the path, the final element is the ending entity of the path, and intermediary elements are entities and relationships connecting the two.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Path.html#path)
+  		 */
   var path: js.Array[GraphObject] = js.native
 }

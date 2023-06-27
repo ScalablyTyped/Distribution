@@ -16,17 +16,17 @@ trait SimpleVariable
      with ProfileVariable {
   
   /**
-    * The name of the profile variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#SimpleVariable)
-    */
+  		 * The name of the profile variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#SimpleVariable)
+  		 */
   var name: String
   
   /**
-    * The Arcade data type of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#SimpleVariable)
-    */
+  		 * The Arcade data type of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#SimpleVariable)
+  		 */
   var `type`: feature | featureSet | featureSetCollection | typings.arcgisJsApi.arcgisJsApiStrings.geometry | number | text | date | boolean
 }
 object SimpleVariable {

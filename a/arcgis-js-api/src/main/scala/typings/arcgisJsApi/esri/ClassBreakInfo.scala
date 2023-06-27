@@ -11,30 +11,30 @@ trait ClassBreakInfo
      with JSONSupport {
   
   /**
-    * Describes the data represented by the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#label)
-    */
+  		 * Describes the data represented by the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#label)
+  		 */
   var label: String = js.native
   
   /**
-    * Sets the maximum value for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#maxValue)
-    */
+  		 * Sets the maximum value for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#maxValue)
+  		 */
   var maxValue: Double = js.native
   
   /**
-    * Sets the minimum value for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#minValue)
-    */
+  		 * Sets the minimum value for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#minValue)
+  		 */
   var minValue: Double = js.native
   
   /**
-    * Defines the symbol used to render features with data values that are within the bounds defined for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#symbol)
-    */
+  		 * Defines the symbol used to render features with data values that are within the bounds defined for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#symbol)
+  		 */
   var symbol: Symbol = js.native
 }

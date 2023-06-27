@@ -136,7 +136,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def destroyTemplate(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * View finalization: Called when leaving the view
       */
@@ -155,7 +155,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getFloating(): Boolean = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getHeight height}.
       *
@@ -194,7 +194,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getIconSelected(): URI = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getInitialItemCount initialItemCount}.
       *
@@ -209,7 +209,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getInitialItemCount(): int = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Gets current value of property {@link #getItemMinWidth itemMinWidth}.
       *
@@ -234,7 +234,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getReloadItemCount reloadItemCount}.
       *
@@ -247,7 +247,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getReloadItemCount(): int = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Gets current value of property {@link #getResponsive responsive}.
       *
@@ -261,7 +261,7 @@ object sapUiUx3DataSetSimpleViewMod {
     def getResponsive(): Boolean = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getScrollArea scrollArea}.
       *
@@ -279,17 +279,17 @@ object sapUiUx3DataSetSimpleViewMod {
     def getTemplate(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Eventhandler for the selection of an Item
       */
     def handleSelection(/**
       * SelectionChanged event
       */
-    oEvent: typings.openui5.sapUiBaseEventMod.default): Unit = js.native
+    oEvent: typings.openui5.sapUiBaseEventMod.default[js.Object]): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * View Initialization: Called when selecting the view
       */
@@ -299,7 +299,7 @@ object sapUiUx3DataSetSimpleViewMod {
     aItems: js.Array[Any]): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Check if Item `oItem` is selected
       */
@@ -327,7 +327,7 @@ object sapUiUx3DataSetSimpleViewMod {
     bFloating: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Sets a new value for property {@link #getHeight height}.
       *
@@ -390,7 +390,7 @@ object sapUiUx3DataSetSimpleViewMod {
     sIconSelected: URI): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Sets a new value for property {@link #getInitialItemCount initialItemCount}.
       *
@@ -411,7 +411,7 @@ object sapUiUx3DataSetSimpleViewMod {
     iInitialItemCount: int): this.type = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Sets a new value for property {@link #getItemMinWidth itemMinWidth}.
       *
@@ -448,7 +448,7 @@ object sapUiUx3DataSetSimpleViewMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Sets a new value for property {@link #getReloadItemCount reloadItemCount}.
       *
@@ -467,7 +467,7 @@ object sapUiUx3DataSetSimpleViewMod {
     iReloadItemCount: int): this.type = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Sets a new value for property {@link #getResponsive responsive}.
       *
@@ -499,7 +499,7 @@ object sapUiUx3DataSetSimpleViewMod {
     oTemplate: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * View update: Called when pagination adds items
       */
@@ -524,7 +524,7 @@ object sapUiUx3DataSetSimpleViewMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * If the pagination feature is used without specifying a scroll area, a height for the dataset must be
       * defined.
@@ -549,7 +549,7 @@ object sapUiUx3DataSetSimpleViewMod {
     var iconSelected: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * If this value is greater zero only this amount of items is loaded in the first place. New items are loaded
       * automatically when the user scrolls down. The number of items which are reloaded can be defined with
@@ -558,7 +558,7 @@ object sapUiUx3DataSetSimpleViewMod {
     var initialItemCount: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * When itemMinWidth>0 and the property floating is true the given minimum width in pixels is set to DatSet
       * items. A minimum width must be given when the property responsive is set.
@@ -571,14 +571,14 @@ object sapUiUx3DataSetSimpleViewMod {
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * This number defines the item count which is reloaded on scroll if initialItemCount is enabled.
       */
     var reloadItemCount: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * When true and the property floating is true the DatSet items are floating containers filling the whole
       * space of a row.
@@ -588,7 +588,7 @@ object sapUiUx3DataSetSimpleViewMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * ID of the DOM Element or jQuery reference to the dom which holds the scrollbar for the dataset
       */

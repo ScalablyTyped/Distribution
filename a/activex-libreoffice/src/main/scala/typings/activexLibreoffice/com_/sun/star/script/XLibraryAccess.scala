@@ -46,13 +46,13 @@ trait XLibraryAccess
   
   /**
     * returns `TRUE` , if the function is accessible through this library; otherwise it returns `FALSE` .
-    * @@param aFunctionName    the fully qualified name of a function.      (e.g., "UtilLibrary.ModuleDate.FunctionCurrentDate")
+    * @param aFunctionName    the fully qualified name of a function.      (e.g., "UtilLibrary.ModuleDate.FunctionCurrentDate")
     */
   def isFunction(aFunctionName: String): Boolean
   
   /**
     * returns `TRUE` if a fully qualified function name begins with this name.
-    * @@param aPathName    a part of a function name (e.g., "UtilLibrary").
+    * @param aPathName    a part of a function name (e.g., "UtilLibrary").
     */
   def isValidPath(aPathName: String): Boolean
 }

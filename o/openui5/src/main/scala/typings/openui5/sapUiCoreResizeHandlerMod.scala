@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.OldSize
 import typings.openui5.sap.ClassInfo
 import typings.std.Element
 import typings.std.Record
@@ -25,7 +26,7 @@ object sapUiCoreResizeHandlerMod {
       */
     inline def deregister(
       /**
-      * The registration ID of the handler to deregister. The ID was provided by function {@link sap.ui.core.ResizeHandler.register}
+      * The registration ID of the handler to deregister. The ID was provided by function {@link sap.ui.core.ResizeHandler.register }
       * when the handler was registered.
       */
     sId: String
@@ -104,13 +105,13 @@ object sapUiCoreResizeHandlerMod {
       * object is passed as first argument to the event handler. See the description of this function for more
       * details about the available parameters of this event.
       */
-    fnHandler: js.Function
+    fnHandler: js.Function1[/* p1 */ OldSize, Unit]
     ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fnHandler.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     /**
       * Registers the given event handler for resize events on the given DOM element or control.
       *
-      * **Note:** This function must not be used before the UI5 framework is initialized. Please use the {@link
-      * sap.ui.core.Core#attachInit init event} of UI5 if you are not sure whether this is the case.
+      * **Note:** This function must not be used before the UI5 framework is initialized. Please use the {@link sap.ui.core.Core#attachInit init event }
+      * of UI5 if you are not sure whether this is the case.
       *
       * The resize handler periodically checks the dimensions of the registered reference. Whenever it detects
       * changes, an event is fired. Be careful when changing dimensions within the event handler which might
@@ -138,7 +139,7 @@ object sapUiCoreResizeHandlerMod {
       * object is passed as first argument to the event handler. See the description of this function for more
       * details about the available parameters of this event.
       */
-    fnHandler: js.Function
+    fnHandler: js.Function1[/* p1 */ OldSize, Unit]
     ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fnHandler.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   }
   

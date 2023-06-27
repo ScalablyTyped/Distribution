@@ -22,7 +22,7 @@ open class Texture protected ()
     * @param {string} [options.name] - The name of the texture. Defaults to null.
     * @param {number} [options.width] - The width of the texture in pixels. Defaults to 4.
     * @param {number} [options.height] - The height of the texture in pixels. Defaults to 4.
-    * @param {number} [options.depth] - The number of depth slices in a 3D texture (WebGL2 only).
+    * @param {number} [options.depth] - The number of depth slices in a 3D texture (not supported by WebGl1).
     * Defaults to 1 (single 2D image).
     * @param {number} [options.format] - The pixel format of the texture. Can be:
     *
@@ -79,7 +79,7 @@ open class Texture protected ()
     * @param {boolean} [options.cubemap] - Specifies whether the texture is to be a cubemap.
     * Defaults to false.
     * @param {boolean} [options.volume] - Specifies whether the texture is to be a 3D volume
-    * (WebGL2 only). Defaults to false.
+    * (not supported by WebGL1). Defaults to false.
     * @param {string} [options.type] - Specifies the texture type.  Can be:
     *
     * - {@link TEXTURETYPE_DEFAULT}
@@ -100,9 +100,9 @@ open class Texture protected ()
     * @param {boolean} [options.compareOnRead] - When enabled, and if texture format is
     * {@link PIXELFORMAT_DEPTH} or {@link PIXELFORMAT_DEPTHSTENCIL}, hardware PCF is enabled for
     * this texture, and you can get filtered results of comparison using texture() in your shader
-    * (WebGL2 only). Defaults to false.
+    * (not supported by WebGL1). Defaults to false.
     * @param {number} [options.compareFunc] - Comparison function when compareOnRead is enabled
-    * (WebGL2 only). Can be:
+    * (not supported by WebGL1). Can be:
     *
     * - {@link FUNC_LESS}
     * - {@link FUNC_LESSEQUAL}
@@ -135,25 +135,4 @@ open class Texture protected ()
     */
   def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice) = this()
   def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice, options: AddressU) = this()
-}
-object Texture {
-  
-  @JSGlobal("pc.Texture")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Calculate the GPU memory required for a texture.
-    *
-    * @param {number} width - Texture's width.
-    * @param {number} height - Texture's height.
-    * @param {number} depth - Texture's depth.
-    * @param {number} format - Texture's pixel format PIXELFORMAT_***.
-    * @param {boolean} mipmaps - True if the texture includes mipmaps, false otherwise.
-    * @param {boolean} cubemap - True is the texture is a cubemap, false otherwise.
-    * @returns {number} The number of bytes of GPU memory required for the texture.
-    * @ignore
-    */
-  /* static member */
-  inline def calcGpuSize(width: Double, height: Double, depth: Double, format: Double, mipmaps: Boolean, cubemap: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcGpuSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], format.asInstanceOf[js.Any], mipmaps.asInstanceOf[js.Any], cubemap.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -1,8 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.SrcPage
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCommonsLibraryMod.PaginatorEvent
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -136,13 +136,13 @@ object sapUiCommonsPaginatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit]
     ): this.type = js.native
     def attachPage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Paginator` itself
       */
@@ -167,7 +167,7 @@ object sapUiCommonsPaginatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit]
     ): this.type = js.native
     def attachPage(
       /**
@@ -178,7 +178,7 @@ object sapUiCommonsPaginatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Paginator` itself
       */
@@ -196,13 +196,13 @@ object sapUiCommonsPaginatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit]
     ): this.type = js.native
     def detachPage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaginatorPageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -210,7 +210,7 @@ object sapUiCommonsPaginatorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:page page} to attached listeners.
       *
@@ -220,7 +220,7 @@ object sapUiCommonsPaginatorMod {
     def firePage(/**
       * Parameters to pass along with the event
       */
-    mParameters: SrcPage): this.type = js.native
+    mParameters: Paginator$PageEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCurrentPage currentPage}.
@@ -275,6 +275,59 @@ object sapUiCommonsPaginatorMod {
     iNumberOfPages: int): this.type = js.native
   }
   
+  trait Paginator$PageEventParameters extends StObject {
+    
+    /**
+      * The page which is the current one before the page event is fired (and another page is displayed)
+      */
+    var srcPage: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The page that shall be displayed next after the page event is fired.
+      *
+      * The page number is 1-based: the first page has index 1, not 0, to match the number visible in the UI.
+      */
+    var targetPage: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Provides the values 'First', 'Last', 'Next', 'Previous', 'Goto'. The event parameter informs the application
+      * how the user navigated to the new page: Whether the 'Next' button was used, or another button, or whether
+      * the page was directly selected
+      */
+    var `type`: js.UndefOr[
+        PaginatorEvent | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PaginatorEvent * / any */ String)
+      ] = js.undefined
+  }
+  object Paginator$PageEventParameters {
+    
+    inline def apply(): Paginator$PageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Paginator$PageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paginator$PageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSrcPage(value: int): Self = StObject.set(x, "srcPage", value.asInstanceOf[js.Any])
+      
+      inline def setSrcPageUndefined: Self = StObject.set(x, "srcPage", js.undefined)
+      
+      inline def setTargetPage(value: int): Self = StObject.set(x, "targetPage", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPageUndefined: Self = StObject.set(x, "targetPage", js.undefined)
+      
+      inline def setType(
+        value: PaginatorEvent | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PaginatorEvent * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  type PaginatorPageEvent = typings.openui5.sapUiBaseEventMod.default[Paginator$PageEventParameters]
+  
+  type PaginatorPageEventParameters = Paginator$PageEventParameters
+  
   trait PaginatorSettings
     extends StObject
        with ControlSettings {
@@ -292,7 +345,12 @@ object sapUiCommonsPaginatorMod {
     /**
       * Event is fired when the user navigates to another page by selecting it directly, or by jumping forward/backward.
       */
-    var page: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var page: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Paginator$PageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object PaginatorSettings {
     
@@ -312,7 +370,9 @@ object sapUiCommonsPaginatorMod {
       
       inline def setNumberOfPagesUndefined: Self = StObject.set(x, "numberOfPages", js.undefined)
       
-      inline def setPage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+      inline def setPage(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Paginator$PageEventParameters] => Unit
+      ): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
       
       inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     }

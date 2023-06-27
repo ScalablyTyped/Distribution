@@ -24,8 +24,8 @@ trait ExifManager extends StObject {
     * @param successCallback Callback method to be invoked when Exif information has been retrieved successfully.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def getExifInfo(uri: String, successCallback: ExifInformationSuccessCallback): Unit = js.native
   def getExifInfo(uri: String, successCallback: ExifInformationSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -49,8 +49,8 @@ trait ExifManager extends StObject {
     * @param successCallback Callback method to be invoked when thumbnail data has been retrieved successfully.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def getThumbnail(uri: String, successCallback: ExifThumbnailSuccessCallback): Unit = js.native
   def getThumbnail(uri: String, successCallback: ExifThumbnailSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -69,8 +69,8 @@ trait ExifManager extends StObject {
     * @param successCallback Callback method to be invoked when Exif data has been saved successfully.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def saveExifInfo(exifInfo: ExifInformation): Unit = js.native
   def saveExifInfo(exifInfo: ExifInformation, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native

@@ -77,6 +77,13 @@ trait Plugin extends StObject {
   
   var name: String
   
+  var onLog: js.UndefOr[
+    ObjectHook[
+      /* import warning: importer.ImportType#apply Failed type conversion: 'onLog' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, level : rollup.rollup.LogLevel, log : rollup.rollup.RollupLog): boolean | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, level : rollup.rollup.LogLevel, log : rollup.rollup.RollupLog): boolean | rollup.rollup.NullValue */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: 'onLog' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+    ]
+  ] = js.undefined
+  
   var options: js.UndefOr[
     ObjectHook[
       /* import warning: importer.ImportType#apply Failed type conversion: 'options' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, options : rollup.rollup.InputOptions): rollup.rollup.InputOptions | rollup.rollup.NullValue */ js.Any, 
@@ -282,6 +289,15 @@ object Plugin {
     inline def setModuleParsedUndefined: Self = StObject.set(x, "moduleParsed", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOnLog(
+      value: ObjectHook[
+          /* import warning: importer.ImportType#apply Failed type conversion: 'onLog' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.MinimalPluginContext, level : rollup.rollup.LogLevel, log : rollup.rollup.RollupLog): boolean | rollup.rollup.NullValue> : (this : rollup.rollup.MinimalPluginContext, level : rollup.rollup.LogLevel, log : rollup.rollup.RollupLog): boolean | rollup.rollup.NullValue */ js.Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: 'onLog' extends rollup.rollup.ParallelPluginHooks ? {  sequential :boolean | undefined} : {} */ js.Any
+        ]
+    ): Self = StObject.set(x, "onLog", value.asInstanceOf[js.Any])
+    
+    inline def setOnLogUndefined: Self = StObject.set(x, "onLog", js.undefined)
     
     inline def setOptions(
       value: ObjectHook[

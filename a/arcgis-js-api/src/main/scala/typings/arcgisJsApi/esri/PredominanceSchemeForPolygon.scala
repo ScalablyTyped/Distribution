@@ -9,52 +9,52 @@ trait PredominanceSchemeForPolygon
      with PredominanceScheme {
   
   /**
-    * The fill colors of the polygon symbols used for each category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The fill colors of the polygon symbols used for each category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var name: String
   
   /**
-    * The color of the fill symbol used to indicate features with no data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The color of the fill symbol used to indicate features with no data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the symbol (0 - 1).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The opacity of the symbol (0 - 1).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var opacity: Double
   
   /**
-    * Properties for defining the outline of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * Properties for defining the outline of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var outline: PredominanceSchemeForPolygonOutline
   
   /**
-    * The scheme defining the size visual variable if included in a predominance visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The scheme defining the size visual variable if included in a predominance visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var sizeScheme: SizeSchemeForPolygon
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var tags: js.Array[String]
 }
 object PredominanceSchemeForPolygon {

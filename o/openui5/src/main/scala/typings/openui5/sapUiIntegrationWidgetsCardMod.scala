@@ -1,21 +1,24 @@
 package typings.openui5
 
-import typings.openui5.anon.ActionSource
-import typings.openui5.anon.Changes
-import typings.openui5.anon.Headers
+import typings.openui5.anon.DataType
 import typings.openui5.anon.Parameters
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFCardBaseMod.CardBaseSettings
+import typings.openui5.sapMIllustratedMessageSizeMod.IllustratedMessageSize
+import typings.openui5.sapMIllustratedMessageTypeMod.IllustratedMessageType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.MessageType
 import typings.openui5.sapUiCoreLibraryMod.URI
+import typings.openui5.sapUiIntegrationLibraryMod.CardActionType
 import typings.openui5.sapUiIntegrationLibraryMod.CardArea
+import typings.openui5.sapUiIntegrationLibraryMod.CardBlockingMessageType
 import typings.openui5.sapUiIntegrationLibraryMod.CardDataMode
 import typings.openui5.sapUiIntegrationLibraryMod.CardDesign
 import typings.openui5.sapUiIntegrationLibraryMod.CardPreviewMode
 import typings.std.Record
+import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +34,7 @@ object sapUiIntegrationWidgetsCardMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:5b46b03f024542ba802d99d67bc1a3f4 Cards}
+    * 	{@link https://ui5.sap.com/#/topic/5b46b03f024542ba802d99d67bc1a3f4 Cards}
     */
   open class default () extends Card {
     def this(/**
@@ -131,13 +134,86 @@ object sapUiIntegrationWidgetsCardMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
   }
   
+  trait BlockingMessageSettings extends StObject {
+    
+    /**
+      * Description
+      */
+    var description: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Response object in case of a network error
+      */
+    var httpResponse: js.UndefOr[Response] = js.undefined
+    
+    /**
+      * Illustration size
+      */
+    var illustrationSize: js.UndefOr[
+        IllustratedMessageSize | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IllustratedMessageSize * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * Illustration type
+      */
+    var illustrationType: IllustratedMessageType
+    
+    /**
+      * Title
+      */
+    var title: String
+    
+    /**
+      * Blocking message type
+      */
+    var `type`: CardBlockingMessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardBlockingMessageType * / any */ String)
+  }
+  object BlockingMessageSettings {
+    
+    inline def apply(
+      illustrationType: IllustratedMessageType,
+      title: String,
+      `type`: CardBlockingMessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardBlockingMessageType * / any */ String)
+    ): BlockingMessageSettings = {
+      val __obj = js.Dynamic.literal(illustrationType = illustrationType.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BlockingMessageSettings]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockingMessageSettings] (val x: Self) extends AnyVal {
+      
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      
+      inline def setHttpResponse(value: Response): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
+      
+      inline def setHttpResponseUndefined: Self = StObject.set(x, "httpResponse", js.undefined)
+      
+      inline def setIllustrationSize(
+        value: IllustratedMessageSize | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IllustratedMessageSize * / any */ String)
+      ): Self = StObject.set(x, "illustrationSize", value.asInstanceOf[js.Any])
+      
+      inline def setIllustrationSizeUndefined: Self = StObject.set(x, "illustrationSize", js.undefined)
+      
+      inline def setIllustrationType(value: IllustratedMessageType): Self = StObject.set(x, "illustrationType", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setType(
+        value: CardBlockingMessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardBlockingMessageType * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait Card
     extends typings.openui5.sapFCardBaseMod.default {
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Adds some actionDefinition to the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -152,7 +228,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
@@ -172,20 +248,20 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
@@ -210,7 +286,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
@@ -221,7 +297,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -229,7 +305,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Attaches event handler `fnFunction` to the {@link #event:configurationChange configurationChange} event
       * of this `sap.ui.integration.widgets.Card`.
@@ -246,20 +322,20 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def attachConfigurationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Attaches event handler `fnFunction` to the {@link #event:configurationChange configurationChange} event
       * of this `sap.ui.integration.widgets.Card`.
@@ -281,7 +357,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def attachConfigurationChange(
       /**
@@ -292,7 +368,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -317,13 +393,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachManifestApplied(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -352,7 +428,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachManifestApplied(
       /**
@@ -363,7 +439,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -371,7 +447,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.72)
+      * @experimental (since 1.72)
       *
       * Attaches event handler `fnFunction` to the {@link #event:manifestReady manifestReady} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -386,20 +462,20 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachManifestReady(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.72)
+      * @experimental (since 1.72)
       *
       * Attaches event handler `fnFunction` to the {@link #event:manifestReady manifestReady} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -419,7 +495,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachManifestReady(
       /**
@@ -430,7 +506,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -438,7 +514,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Attaches event handler `fnFunction` to the {@link #event:stateChanged stateChanged} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -454,20 +530,20 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStateChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Attaches event handler `fnFunction` to the {@link #event:stateChanged stateChanged} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -488,7 +564,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStateChanged(
       /**
@@ -499,7 +575,7 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.widgets.Card` itself
       */
@@ -507,8 +583,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Destroys all the actionDefinitions in the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -518,7 +594,7 @@ object sapUiIntegrationWidgetsCardMod {
     def destroyActionDefinitions(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.widgets.Card`.
@@ -531,13 +607,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit]
     ): this.type = js.native
     def detachAction(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardActionEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -545,7 +621,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Detaches event handler `fnFunction` from the {@link #event:configurationChange configurationChange} event
       * of this `sap.ui.integration.widgets.Card`.
@@ -558,13 +634,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def detachConfigurationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CardConfigurationChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -583,13 +659,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachManifestApplied(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -597,7 +673,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.72)
+      * @experimental (since 1.72)
       *
       * Detaches event handler `fnFunction` from the {@link #event:manifestReady manifestReady} event of this
       * `sap.ui.integration.widgets.Card`.
@@ -610,13 +686,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachManifestReady(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -624,7 +700,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Detaches event handler `fnFunction` from the {@link #event:stateChanged stateChanged} event of this `sap.ui.integration.widgets.Card`.
       *
@@ -636,13 +712,13 @@ object sapUiIntegrationWidgetsCardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachStateChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -650,9 +726,9 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -665,24 +741,26 @@ object sapUiIntegrationWidgetsCardMod {
     def fireAction(/**
       * Parameters to pass along with the event
       */
-    mParameters: ActionSource): Boolean = js.native
+    mParameters: Card$ActionEventParameters): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.96)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:configurationChange configurationChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireConfigurationChange(): this.type = js.native
-    def fireConfigurationChange(/**
+    def fireConfigurationChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Changes): this.type = js.native
+    mParameters: Card$ConfigurationChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:manifestApplied manifestApplied} to attached listeners.
       *
@@ -695,8 +773,8 @@ object sapUiIntegrationWidgetsCardMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.72)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.72)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:manifestReady manifestReady} to attached listeners.
       *
@@ -709,8 +787,8 @@ object sapUiIntegrationWidgetsCardMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.107)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stateChanged stateChanged} to attached listeners.
       *
@@ -723,8 +801,8 @@ object sapUiIntegrationWidgetsCardMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets content of aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -735,8 +813,8 @@ object sapUiIntegrationWidgetsCardMod {
     def getActionDefinitions(): js.Array[typings.openui5.sapUiIntegrationActionDefinitionMod.default] = js.native
     
     /**
-      * @SINCE 1.70
-      * @EXPERIMENTAL (since 1.70)
+      * @since 1.70
+      * @experimental (since 1.70)
       *
       * Gets current value of property {@link #getBaseUrl baseUrl}.
       *
@@ -748,7 +826,16 @@ object sapUiIntegrationWidgetsCardMod {
     def getBaseUrl(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.77)
+      * @experimental (since 1.114)
+      *
+      * Get information about the blocking message in the card.
+      *
+      * @returns Information about the message or `null`, if such isn't shown.
+      */
+    def getBlockingMessage(): BlockingMessageSettings | Null = js.native
+    
+    /**
+      * @experimental (since 1.77)
       *
       * Gets values of manifest parameters combined with the parameters from `parameters` property.
       *
@@ -763,8 +850,8 @@ object sapUiIntegrationWidgetsCardMod {
     def getCombinedParameters(): Record[String, Any] = js.native
     
     /**
-      * @SINCE 1.65
-      * @EXPERIMENTAL (since 1.65)
+      * @since 1.65
+      * @experimental (since 1.65)
       *
       * Gets current value of property {@link #getDataMode dataMode}.
       *
@@ -777,8 +864,8 @@ object sapUiIntegrationWidgetsCardMod {
     def getDataMode(): CardDataMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDataMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.109
-      * @EXPERIMENTAL (since 1.109)
+      * @since 1.109
+      * @experimental (since 1.109)
       *
       * Gets current value of property {@link #getDesign design}.
       *
@@ -796,7 +883,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getHost(): ID = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.77)
+      * @experimental (since 1.77)
       *
       * Gets the instance of the `host` association.
       *
@@ -812,8 +899,8 @@ object sapUiIntegrationWidgetsCardMod {
     def getManifest(): String | js.Object = js.native
     
     /**
-      * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * @since 1.76
+      * @experimental (since 1.76) - This API might be removed when a permanent solution for flexibility changes
       * is implemented.
       *
       * Gets current value of property {@link #getManifestChanges manifestChanges}.
@@ -860,7 +947,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getManifestChanges(): js.Array[js.Object] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.77)
+      * @experimental (since 1.77)
       *
       * Returns a value from the Manifest based on the specified path.
       *
@@ -874,15 +961,15 @@ object sapUiIntegrationWidgetsCardMod {
     sPath: String): Any = js.native
     
     /**
-      * @SINCE 1.112
-      * @EXPERIMENTAL (since 1.112)
+      * @since 1.112
+      * @experimental (since 1.112)
       *
       * Gets current value of property {@link #getPreviewMode previewMode}.
       *
       * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
       *
       * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
-      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      *     in the manifest. If such configuration is missing, then the Abstract mode will be used instead.
       * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
       * 	 - When set to "Off", the card displays real data.
       *
@@ -905,7 +992,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getReferenceId(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - The API might change.
+      * @experimental (since 1.83) - The API might change.
       *
       * Gets translated text from the i18n properties files configured for this card.
       *
@@ -969,6 +1056,13 @@ object sapUiIntegrationWidgetsCardMod {
     ): String = js.native
     
     /**
+      * @experimental (since 1.114)
+      *
+      * Hide the blocking message that is shown in the card by `showBlockingMessage` call.
+      */
+    def hideBlockingMessage(): Unit = js.native
+    
+    /**
       * Hides the loading placeholders on the whole card, or a particular section of the card.
       */
     def hideLoadingPlaceholders(): Unit = js.native
@@ -988,12 +1082,12 @@ object sapUiIntegrationWidgetsCardMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
-      * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions
-      * actionDefinitions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions actionDefinitions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1005,8 +1099,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Inserts a actionDefinition into the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1027,7 +1121,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - The API might change.
+      * @experimental (since 1.65) - The API might change.
       *
       *
       * @returns If the card is ready or not.
@@ -1035,7 +1129,7 @@ object sapUiIntegrationWidgetsCardMod {
     def isReady(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.73)
+      * @experimental (since 1.73)
       *
       * Loads the module designtime/Card.designtime or the module given in "sap.card": { "designtime": "designtime/Own.designtime"
       * } This file should contain the designtime configuration for the card.
@@ -1049,14 +1143,14 @@ object sapUiIntegrationWidgetsCardMod {
     def loadDesigntime(): js.Promise[js.Object] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - The API might change.
+      * @experimental (since 1.65) - The API might change.
       *
       * Refreshes the card by re-applying the manifest settings and triggering all data requests.
       */
     def refresh(): Unit = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Refreshes the card data by triggering all data requests.
       */
@@ -1067,8 +1161,8 @@ object sapUiIntegrationWidgetsCardMod {
       */
     vActionDefinition: String): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Removes a actionDefinition from the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1087,8 +1181,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Removes all the controls from the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1100,7 +1194,7 @@ object sapUiIntegrationWidgetsCardMod {
     def removeAllActionDefinitions(): js.Array[typings.openui5.sapUiIntegrationActionDefinitionMod.default] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.79)
+      * @experimental (since 1.79)
       *
       * Performs an HTTP request using the given configuration.
       *
@@ -1109,7 +1203,7 @@ object sapUiIntegrationWidgetsCardMod {
     def request(/**
       * The configuration of the request.
       */
-    oConfiguration: Headers): js.Promise[Any] = js.native
+    oConfiguration: DataType): js.Promise[Any] = js.native
     
     /**
       * Resolves the destination and returns its URL.
@@ -1122,8 +1216,8 @@ object sapUiIntegrationWidgetsCardMod {
     sKey: String): js.Promise[String] = js.native
     
     /**
-      * @SINCE 1.70
-      * @EXPERIMENTAL (since 1.70)
+      * @since 1.70
+      * @experimental (since 1.70)
       *
       * Sets a new value for property {@link #getBaseUrl baseUrl}.
       *
@@ -1147,8 +1241,8 @@ object sapUiIntegrationWidgetsCardMod {
     sMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardDataMode * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.65
-      * @EXPERIMENTAL (since 1.65) - API might change.
+      * @since 1.65
+      * @experimental (since 1.65) - API might change.
       *
       * Sets a new value for the `dataMode` property.
       *
@@ -1160,8 +1254,8 @@ object sapUiIntegrationWidgetsCardMod {
     sMode: CardDataMode): this.type = js.native
     
     /**
-      * @SINCE 1.109
-      * @EXPERIMENTAL (since 1.109)
+      * @since 1.109
+      * @experimental (since 1.109)
       *
       * Sets a new value for property {@link #getDesign design}.
       *
@@ -1223,8 +1317,8 @@ object sapUiIntegrationWidgetsCardMod {
     oManifest: Any): this.type = js.native
     
     /**
-      * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * @since 1.76
+      * @experimental (since 1.76) - This API might be removed when a permanent solution for flexibility changes
       * is implemented.
       *
       * Sets a new value for property {@link #getManifestChanges manifestChanges}.
@@ -1276,15 +1370,15 @@ object sapUiIntegrationWidgetsCardMod {
     sManifestChanges: js.Array[js.Object]): this.type = js.native
     
     /**
-      * @SINCE 1.112
-      * @EXPERIMENTAL (since 1.112)
+      * @since 1.112
+      * @experimental (since 1.112)
       *
       * Sets a new value for property {@link #getPreviewMode previewMode}.
       *
       * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
       *
       * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
-      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      *     in the manifest. If such configuration is missing, then the Abstract mode will be used instead.
       * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
       * 	 - When set to "Off", the card displays real data.
       *
@@ -1325,6 +1419,17 @@ object sapUiIntegrationWidgetsCardMod {
     sReferenceId: String): this.type = js.native
     
     /**
+      * @experimental (since 1.114)
+      *
+      * Show blocking message in the card's content area. Should be used after the `manifestApplied` event or
+      * after the `cardReady` lifecycle hook in Component cards and Extensions.
+      */
+    def showBlockingMessage(/**
+      * Blocking message settings
+      */
+    oSettings: BlockingMessageSettings): Unit = js.native
+    
+    /**
       * Displays the loading placeholders on the whole card, or a particular area of the card. **Note:** Only
       * areas that contain binding will receive a loading placeholder.
       */
@@ -1355,7 +1460,7 @@ object sapUiIntegrationWidgetsCardMod {
     sType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @experimental (since 1.81)
       *
       * Displays a message strip above the content with the given text. There can be only 1 message displayed.
       * If there is a previous message, it is removed. Can be used only after the `manifestApplied` event is
@@ -1370,7 +1475,7 @@ object sapUiIntegrationWidgetsCardMod {
     sType: MessageType): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.84)
+      * @experimental (since 1.84)
       *
       * Triggers an action inside the card.
       *
@@ -1397,7 +1502,7 @@ object sapUiIntegrationWidgetsCardMod {
     oAction: Parameters): Unit = js.native
     
     /**
-      * @EXPERIMENTAL
+      * @experimental
       *
       * Causes all of the controls within the Card that support validation to validate their data.
       *
@@ -1406,14 +1511,114 @@ object sapUiIntegrationWidgetsCardMod {
     def validateControls(): Boolean = js.native
   }
   
+  trait Card$ActionEventParameters extends StObject {
+    
+    /**
+      * The action source.
+      */
+    var actionSource: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The manifest parameters related to the triggered action.
+      */
+    var manifestParameters: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The parameters related to the triggered action.
+      */
+    var parameters: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The type of the action.
+      */
+    var `type`: js.UndefOr[
+        CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ] = js.undefined
+  }
+  object Card$ActionEventParameters {
+    
+    inline def apply(): Card$ActionEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Card$ActionEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card$ActionEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActionSource(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "actionSource", value.asInstanceOf[js.Any])
+      
+      inline def setActionSourceUndefined: Self = StObject.set(x, "actionSource", js.undefined)
+      
+      inline def setManifestParameters(value: js.Object): Self = StObject.set(x, "manifestParameters", value.asInstanceOf[js.Any])
+      
+      inline def setManifestParametersUndefined: Self = StObject.set(x, "manifestParameters", js.undefined)
+      
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setType(
+        value: CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait Card$ConfigurationChangeEventParameters extends StObject {
+    
+    /**
+      * Changed configuration settings.
+      *
+      * Example:
+      * ```javascript
+      *
+      *  {
+      *     "/sap.card/configuration/filters/shipper/value": "key3",
+      *     "/sap.card/configuration/filters/item/value": "key2",
+      *  }
+      * ```
+      */
+    var changes: js.UndefOr[js.Object] = js.undefined
+  }
+  object Card$ConfigurationChangeEventParameters {
+    
+    inline def apply(): Card$ConfigurationChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Card$ConfigurationChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card$ConfigurationChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChanges(value: js.Object): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      
+      inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    }
+  }
+  
+  trait Card$ManifestAppliedEventParameters extends StObject
+  
+  trait Card$ManifestReadyEventParameters extends StObject
+  
+  trait Card$StateChangedEventParameters extends StObject
+  
+  type CardActionEvent = typings.openui5.sapUiBaseEventMod.default[Card$ActionEventParameters]
+  
+  type CardActionEventParameters = Card$ActionEventParameters
+  
+  type CardConfigurationChangeEvent = typings.openui5.sapUiBaseEventMod.default[Card$ConfigurationChangeEventParameters]
+  
+  type CardConfigurationChangeEventParameters = Card$ConfigurationChangeEventParameters
+  
   @js.native
   trait CardFacade extends StObject {
     
     var __implements__sap_ui_integration_widgets_CardFacade: Boolean = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Adds some actionDefinition to the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1428,8 +1633,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.70
-      * @EXPERIMENTAL (since 1.70)
+      * @since 1.70
+      * @experimental (since 1.70)
       *
       * Gets current value of property {@link #getBaseUrl baseUrl}.
       *
@@ -1441,7 +1646,16 @@ object sapUiIntegrationWidgetsCardMod {
     def getBaseUrl(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.77)
+      * @experimental (since 1.114)
+      *
+      * Get information about the blocking message in the card.
+      *
+      * @returns Information about the message or `null`, if such isn't shown.
+      */
+    def getBlockingMessage(): BlockingMessageSettings | Null = js.native
+    
+    /**
+      * @experimental (since 1.77)
       *
       * Gets values of manifest parameters combined with the parameters from `parameters` property.
       *
@@ -1456,7 +1670,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getCombinedParameters(): Record[String, Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.77)
+      * @experimental (since 1.77)
       *
       * Returns a value from the Manifest based on the specified path.
       *
@@ -1470,7 +1684,7 @@ object sapUiIntegrationWidgetsCardMod {
     sPath: String): Any = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - This property might be changed in future.
+      * @experimental (since 1.65) - This property might be changed in future.
       *
       * Gets current value of property {@link #getParameters parameters}.
       *
@@ -1482,7 +1696,7 @@ object sapUiIntegrationWidgetsCardMod {
     def getParameters(): js.Object = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - The API might change.
+      * @experimental (since 1.83) - The API might change.
       *
       * Gets translated text from the i18n properties files configured for this card.
       *
@@ -1546,6 +1760,13 @@ object sapUiIntegrationWidgetsCardMod {
     ): String = js.native
     
     /**
+      * @experimental (since 1.114)
+      *
+      * Hide the blocking message that is shown in the card by `showBlockingMessage` call.
+      */
+    def hideBlockingMessage(): Unit = js.native
+    
+    /**
       * Hides the loading placeholders on the whole card, or a particular section of the card.
       */
     def hideLoadingPlaceholders(): Unit = js.native
@@ -1565,12 +1786,12 @@ object sapUiIntegrationWidgetsCardMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
-      * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions
-      * actionDefinitions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.integration.ActionDefinition` in the aggregation {@link #getActionDefinitions actionDefinitions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1582,8 +1803,8 @@ object sapUiIntegrationWidgetsCardMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Inserts a actionDefinition into the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1604,14 +1825,14 @@ object sapUiIntegrationWidgetsCardMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - The API might change.
+      * @experimental (since 1.65) - The API might change.
       *
       * Refreshes the card by re-applying the manifest settings and triggering all data requests.
       */
     def refresh(): Unit = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Refreshes the card data by triggering all data requests.
       */
@@ -1622,8 +1843,8 @@ object sapUiIntegrationWidgetsCardMod {
       */
     vActionDefinition: String): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Removes a actionDefinition from the aggregation {@link #getActionDefinitions actionDefinitions}.
@@ -1642,7 +1863,7 @@ object sapUiIntegrationWidgetsCardMod {
     ): typings.openui5.sapUiIntegrationActionDefinitionMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.79)
+      * @experimental (since 1.79)
       *
       * Performs an HTTP request using the given configuration.
       *
@@ -1651,7 +1872,7 @@ object sapUiIntegrationWidgetsCardMod {
     def request(/**
       * The configuration of the request.
       */
-    oConfiguration: Headers): js.Promise[Any] = js.native
+    oConfiguration: DataType): js.Promise[Any] = js.native
     
     /**
       * Resolves the destination and returns its URL.
@@ -1662,6 +1883,17 @@ object sapUiIntegrationWidgetsCardMod {
       * The destination's key used in the configuration.
       */
     sKey: String): js.Promise[String] = js.native
+    
+    /**
+      * @experimental (since 1.114)
+      *
+      * Show blocking message in the card's content area. Should be used after the `manifestApplied` event or
+      * after the `cardReady` lifecycle hook in Component cards and Extensions.
+      */
+    def showBlockingMessage(/**
+      * Blocking message settings
+      */
+    oSettings: BlockingMessageSettings): Unit = js.native
     
     /**
       * Displays the loading placeholders on the whole card, or a particular area of the card. **Note:** Only
@@ -1694,7 +1926,7 @@ object sapUiIntegrationWidgetsCardMod {
     sType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.81)
+      * @experimental (since 1.81)
       *
       * Displays a message strip above the content with the given text. There can be only 1 message displayed.
       * If there is a previous message, it is removed. Can be used only after the `manifestApplied` event is
@@ -1709,7 +1941,7 @@ object sapUiIntegrationWidgetsCardMod {
     sType: MessageType): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.84)
+      * @experimental (since 1.84)
       *
       * Triggers an action inside the card.
       *
@@ -1736,7 +1968,7 @@ object sapUiIntegrationWidgetsCardMod {
     oAction: Parameters): Unit = js.native
     
     /**
-      * @EXPERIMENTAL
+      * @experimental
       *
       * Causes all of the controls within the Card that support validation to validate their data.
       *
@@ -1745,12 +1977,20 @@ object sapUiIntegrationWidgetsCardMod {
     def validateControls(): Boolean = js.native
   }
   
+  type CardManifestAppliedEvent = typings.openui5.sapUiBaseEventMod.default[Card$ManifestAppliedEventParameters]
+  
+  type CardManifestAppliedEventParameters = Card$ManifestAppliedEventParameters
+  
+  type CardManifestReadyEvent = typings.openui5.sapUiBaseEventMod.default[Card$ManifestReadyEventParameters]
+  
+  type CardManifestReadyEventParameters = Card$ManifestReadyEventParameters
+  
   trait CardSettings
     extends StObject
        with CardBaseSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.64) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered on the card.
@@ -1759,11 +1999,16 @@ object sapUiIntegrationWidgetsCardMod {
       * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
       * one to handle the action by calling `oEvent.preventDefault()`.
       */
-    var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var action: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Card$ActionEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.85
-      * @EXPERIMENTAL (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
+      * @since 1.85
+      * @experimental (since 1.85) - Disclaimer: this aggregation is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Actions definitions from which actions in the header menu of the card are created. **Note**: This aggregation
@@ -1774,8 +2019,8 @@ object sapUiIntegrationWidgetsCardMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.70
-      * @EXPERIMENTAL (since 1.70)
+      * @since 1.70
+      * @experimental (since 1.70)
       *
       * Defines the base URL of the Card Manifest. It should be used when manifest property is an object instead
       * of a URL.
@@ -1783,16 +2028,21 @@ object sapUiIntegrationWidgetsCardMod {
     var baseUrl: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Fired when some configuration settings are changed as a result of user interaction. For example - filter
       * value is changed.
       */
-    var configurationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var configurationChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Card$ConfigurationChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.65
-      * @EXPERIMENTAL (since 1.65)
+      * @since 1.65
+      * @experimental (since 1.65)
       *
       * Defines the state of the `Card`. When set to `Inactive`, the `Card` doesn't make requests.
       */
@@ -1801,8 +2051,8 @@ object sapUiIntegrationWidgetsCardMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109
-      * @EXPERIMENTAL (since 1.109)
+      * @since 1.109
+      * @experimental (since 1.109)
       *
       * Defines the design of the `Card`.
       */
@@ -1826,11 +2076,13 @@ object sapUiIntegrationWidgetsCardMod {
       *
       * Note: The card's content may not be available yet because it may depend on other resources to load.
       */
-    var manifestApplied: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var manifestApplied: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.76
-      * @EXPERIMENTAL (since 1.76) - This API might be removed when a permanent solution for flexibility changes
+      * @since 1.76
+      * @experimental (since 1.76) - This API might be removed when a permanent solution for flexibility changes
       * is implemented.
       *
       * Defines a list of configuration settings, which will be merged into the original manifest.
@@ -1874,14 +2126,16 @@ object sapUiIntegrationWidgetsCardMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.72)
+      * @experimental (since 1.72)
       *
       * Fired when the manifest is loaded.
       */
-    var manifestReady: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var manifestReady: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.65) - This property might be changed in future.
+      * @experimental (since 1.65) - This property might be changed in future.
       *
       * Overrides the default values of the parameters, which are defined in the manifest. The value is an object
       * containing parameters in format `{parameterKey: parameterValue}`.
@@ -1891,13 +2145,13 @@ object sapUiIntegrationWidgetsCardMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.112
-      * @EXPERIMENTAL (since 1.112)
+      * @since 1.112
+      * @experimental (since 1.112)
       *
       * Preview mode of the `Card`. Helpful in scenarios when the end user is choosing or configuring a card.
       *
       * 	 - When set to "MockData", the card data is loaded, using a data request, as configured in the "data/mockData"
-      * 			in the manifest. If such configuration is missing, then the real data is loaded.
+      *     in the manifest. If such configuration is missing, then the Abstract mode will be used instead.
       * 	 - When set to "Abstract", the card shows abstract placeholder without loading data.
       * 	 - When set to "Off", the card displays real data.
       */
@@ -1912,12 +2166,14 @@ object sapUiIntegrationWidgetsCardMod {
     var referenceId: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Fired when the state of the card is changed. For example - the card is ready, new page is selected, a
       * filter is changed or data is refreshed.
       */
-    var stateChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stateChanged: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object CardSettings {
     
@@ -1929,7 +2185,7 @@ object sapUiIntegrationWidgetsCardMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CardSettings] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Card$ActionEventParameters] => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionDefinitions(
         value: js.Array[typings.openui5.sapUiIntegrationActionDefinitionMod.default] | typings.openui5.sapUiIntegrationActionDefinitionMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1945,7 +2201,9 @@ object sapUiIntegrationWidgetsCardMod {
       
       inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      inline def setConfigurationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "configurationChange", js.Any.fromFunction1(value))
+      inline def setConfigurationChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Card$ConfigurationChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "configurationChange", js.Any.fromFunction1(value))
       
       inline def setConfigurationChangeUndefined: Self = StObject.set(x, "configurationChange", js.undefined)
       
@@ -1967,7 +2225,7 @@ object sapUiIntegrationWidgetsCardMod {
       
       inline def setManifest(value: Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      inline def setManifestApplied(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "manifestApplied", js.Any.fromFunction1(value))
+      inline def setManifestApplied(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "manifestApplied", js.Any.fromFunction1(value))
       
       inline def setManifestAppliedUndefined: Self = StObject.set(x, "manifestApplied", js.undefined)
       
@@ -1979,7 +2237,7 @@ object sapUiIntegrationWidgetsCardMod {
       
       inline def setManifestChangesVarargs(value: js.Object*): Self = StObject.set(x, "manifestChanges", js.Array(value*))
       
-      inline def setManifestReady(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "manifestReady", js.Any.fromFunction1(value))
+      inline def setManifestReady(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "manifestReady", js.Any.fromFunction1(value))
       
       inline def setManifestReadyUndefined: Self = StObject.set(x, "manifestReady", js.undefined)
       
@@ -1999,9 +2257,13 @@ object sapUiIntegrationWidgetsCardMod {
       
       inline def setReferenceIdUndefined: Self = StObject.set(x, "referenceId", js.undefined)
       
-      inline def setStateChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
+      inline def setStateChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
       
       inline def setStateChangedUndefined: Self = StObject.set(x, "stateChanged", js.undefined)
     }
   }
+  
+  type CardStateChangedEvent = typings.openui5.sapUiBaseEventMod.default[Card$StateChangedEventParameters]
+  
+  type CardStateChangedEventParameters = Card$StateChangedEventParameters
 }

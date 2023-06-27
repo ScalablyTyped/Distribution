@@ -3,7 +3,7 @@ package typings.fundamentalReact.mod
 import typings.fundamentalReact.anon.PartialActionBarProps
 import typings.fundamentalReact.anon.WeakValidationMapActionBa
 import typings.fundamentalReact.libActionBarActionBarMod.ActionBarProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/ActionBar/ActionBar.ActionBarProps> & {  displayName :'ActionBar'} */
 object ActionBar {
   
-  inline def apply(props: ActionBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: ActionBarProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: ActionBarProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def apply(props: ActionBarProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   @JSImport("fundamental-react", "ActionBar")
   @js.native

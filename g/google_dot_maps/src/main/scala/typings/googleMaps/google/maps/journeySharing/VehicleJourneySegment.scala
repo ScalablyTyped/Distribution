@@ -18,16 +18,15 @@ trait VehicleJourneySegment extends StObject {
   var drivingDurationMillis: Double | Null
   
   /**
-    * The path from the previous waypoint (or the vehicle&#39;s current
-    * location, if this waypoint is the first in the list of waypoints) to this
-    * waypoint.
+    * The path from the previous stop (or the vehicle&#39;s current location,
+    * if this stop is the first in the list of stops) to this stop.
     */
   var path: js.Array[LatLngLiteral] | Null
   
   /**
-    * The stops to be served by this vehicle.
+    * Information about the stop.
     */
-  var stop: js.Array[DeliveryVehicleStop] | Null
+  var stop: DeliveryVehicleStop | Null
 }
 object VehicleJourneySegment {
   
@@ -53,10 +52,8 @@ object VehicleJourneySegment {
     
     inline def setPathVarargs(value: LatLngLiteral*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setStop(value: js.Array[DeliveryVehicleStop]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: DeliveryVehicleStop): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     inline def setStopNull: Self = StObject.set(x, "stop", null)
-    
-    inline def setStopVarargs(value: DeliveryVehicleStop*): Self = StObject.set(x, "stop", js.Array(value*))
   }
 }

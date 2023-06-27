@@ -26,7 +26,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     */
@@ -37,7 +36,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @return
@@ -49,7 +47,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @return
@@ -61,7 +58,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @return
@@ -73,7 +69,6 @@ Instantiable0[Any] {
     * @return {nlobjError}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @return
@@ -86,7 +81,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @param name
@@ -100,7 +94,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjServerResponse
     *
     * @since 2008.1
     * @param name

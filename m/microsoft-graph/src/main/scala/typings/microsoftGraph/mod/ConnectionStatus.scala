@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.failed_
+import typings.microsoftGraph.microsoftGraphStrings.succeeded_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
   - typings.microsoftGraph.microsoftGraphStrings.attempted
-  - typings.microsoftGraph.microsoftGraphStrings.succeeded
+  - typings.microsoftGraph.microsoftGraphStrings.succeeded_
   - typings.microsoftGraph.microsoftGraphStrings.blocked
   - typings.microsoftGraph.microsoftGraphStrings.failed_
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
@@ -24,7 +25,7 @@ object ConnectionStatus {
   
   inline def failed: failed_ = "failed".asInstanceOf[failed_]
   
-  inline def succeeded: typings.microsoftGraph.microsoftGraphStrings.succeeded = "succeeded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.succeeded]
+  inline def succeeded: succeeded_ = "succeeded".asInstanceOf[succeeded_]
   
   inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   

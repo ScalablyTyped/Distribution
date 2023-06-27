@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `201202` extends StObject {
   
   /** @description Response when the codespace was successfully created */
-  var `201`: Content89
+  var `201`: Content103
   
   /** @description Response when the codespace creation partially failed but is being retried in the background */
-  var `202`: Content89
+  var `202`: Content103
   
   var `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any
   
@@ -25,8 +25,8 @@ trait `201202` extends StObject {
 object `201202` {
   
   inline def apply(
-    `201`: Content89,
-    `202`: Content89,
+    `201`: Content103,
+    `202`: Content103,
     `400`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any,
     `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
@@ -47,9 +47,9 @@ object `201202` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `201202`] (val x: Self) extends AnyVal {
     
-    inline def set201(value: Content89): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: Content103): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set202(value: Content89): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    inline def set202(value: Content103): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
     inline def set400(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['bad_request'] */ js.Any

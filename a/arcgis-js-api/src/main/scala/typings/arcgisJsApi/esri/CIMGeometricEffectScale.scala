@@ -9,24 +9,24 @@ trait CIMGeometricEffectScale
      with CIMGeometricEffect {
   
   /**
-    * The amount of change in size of a symbol in the x-axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
-    */
+  		 * The amount of change in size of a symbol in the x-axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
+  		 */
   var XScaleFactor: Double
   
   /**
-    * The amount of change in size of a symbol in the x-axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
-    */
+  		 * The amount of change in size of a symbol in the x-axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
+  		 */
   var YScaleFactor: Double
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectScale)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale

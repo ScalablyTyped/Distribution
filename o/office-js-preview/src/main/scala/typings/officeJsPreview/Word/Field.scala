@@ -29,10 +29,12 @@ trait Field
      with ClientObject {
   
   /**
-    * Gets or sets the field's code instruction.
+    * Specifies the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
+    *
+    * Note: The ability to set the code was introduced in WordApi 1.5.
     */
   var code: String = js.native
   
@@ -41,11 +43,10 @@ trait Field
   var context_Field: RequestContext = js.native
   
   /**
-    * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var data: String = js.native
   
@@ -53,8 +54,7 @@ trait Field
     * Deletes the field.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   def delete(): Unit = js.native
   
@@ -78,8 +78,7 @@ trait Field
     * Gets the field's kind.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val kind: FieldKind | None | Hot | Warm | Cold = js.native
   
@@ -95,11 +94,10 @@ trait Field
   def load(propertyNames: js.Array[String]): Field = js.native
   
   /**
-    * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+    * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var locked: Boolean = js.native
   
@@ -171,8 +169,7 @@ trait Field
     * Selects the field.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param selectionMode Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
     */
@@ -191,7 +188,7 @@ trait Field
   def set(properties: FieldUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -214,8 +211,7 @@ trait Field
     * Gets the field's type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.Word.FieldType, typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock */ Any = js.native
   
@@ -228,8 +224,7 @@ trait Field
     * Updates the field.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   def updateResult(): Unit = js.native
 }

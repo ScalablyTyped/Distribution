@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200204` extends StObject {
   
   /** @description For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits. */
-  var `200`: Content348
+  var `200`: Content416
   
   var `204`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['no_content'] */ js.Any
 }
 object `200204` {
   
   inline def apply(
-    `200`: Content348,
+    `200`: Content416,
     `204`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['no_content'] */ js.Any
   ): `200204` = {
     val __obj = js.Dynamic.literal()
@@ -26,7 +26,7 @@ object `200204` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `200204`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content348): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content416): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set204(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['no_content'] */ js.Any

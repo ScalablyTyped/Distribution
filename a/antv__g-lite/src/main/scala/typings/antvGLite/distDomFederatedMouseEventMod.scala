@@ -42,11 +42,13 @@ object distDomFederatedMouseEventMod {
     var client: Point = js.native
     
     def clientX: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/clientX) */
     /* standard dom */
     @JSName("clientX")
     val clientX_FFederatedMouseEvent: Double = js.native
     
     def clientY: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/clientY) */
     /* standard dom */
     @JSName("clientY")
     val clientY_FFederatedMouseEvent: Double = js.native
@@ -54,6 +56,7 @@ object distDomFederatedMouseEventMod {
     /** Whether the "control" key was pressed when this mouse event occurred. */
     var ctrlKey: Boolean = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/getModifierState) */
     /* standard dom */
     def getModifierState(key: String): Boolean = js.native
     
@@ -67,7 +70,11 @@ object distDomFederatedMouseEventMod {
     def globalY: Double = js.native
     
     def initMouseEvent(): Unit = js.native
-    /** @deprecated */
+    /**
+      * @deprecated
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/initMouseEvent)
+      */
     /* standard dom */
     def initMouseEvent(
       typeArg: String,
@@ -112,11 +119,13 @@ object distDomFederatedMouseEventMod {
     var movement: Point = js.native
     
     def movementX: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/movementX) */
     /* standard dom */
     @JSName("movementX")
     val movementX_FFederatedMouseEvent: Double = js.native
     
     def movementY: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/movementY) */
     /* standard dom */
     @JSName("movementY")
     val movementY_FFederatedMouseEvent: Double = js.native
@@ -128,11 +137,13 @@ object distDomFederatedMouseEventMod {
     var offset: Point = js.native
     
     def offsetX: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/offsetX) */
     /* standard dom */
     @JSName("offsetX")
     val offsetX_FFederatedMouseEvent: Double = js.native
     
     def offsetY: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/offsetY) */
     /* standard dom */
     @JSName("offsetY")
     val offsetY_FFederatedMouseEvent: Double = js.native
@@ -146,11 +157,13 @@ object distDomFederatedMouseEventMod {
     var screen: Point = js.native
     
     def screenX: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/screenX) */
     /* standard dom */
     @JSName("screenX")
     val screenX_FFederatedMouseEvent: Double = js.native
     
     def screenY: Double = js.native
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MouseEvent/screenY) */
     /* standard dom */
     @JSName("screenY")
     val screenY_FFederatedMouseEvent: Double = js.native

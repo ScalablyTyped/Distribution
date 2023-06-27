@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnappingControlsViewModelProperties extends StObject {
   
   /**
-    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html#snappingOptions)
-    */
+  		 * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html#snappingOptions)
+  		 */
   var snappingOptions: js.UndefOr[SnappingOptionsProperties] = js.undefined
   
   /**
-    * The view associated with the SnappingControls widget instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html#view)
-    */
+  		 * The view associated with the SnappingControls widget instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object SnappingControlsViewModelProperties {

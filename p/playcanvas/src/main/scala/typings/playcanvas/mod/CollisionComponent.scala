@@ -79,7 +79,7 @@ open class CollisionComponent protected () extends Component {
   var _hasOffset: Boolean = js.native
   
   /**
-    * @param {GraphNode} parent - The parent node.
+    * @param {import('../../../scene/graph-node.js').GraphNode} parent - The parent node.
     * @private
     */
   /* private */ var _onInsert: Any = js.native

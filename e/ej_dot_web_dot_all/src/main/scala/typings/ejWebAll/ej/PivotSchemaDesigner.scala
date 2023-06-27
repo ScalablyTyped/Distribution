@@ -206,12 +206,12 @@ object PivotSchemaDesigner {
     var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Specifies the CSS class to PivotSchemaDesigner to achieve custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object utilized to pass additional information between client-end and service-end.
-      * @Default {{}}
+      * @default {{}}
       */
     var customObject: js.UndefOr[Any] = js.undefined
     
@@ -220,28 +220,28 @@ object PivotSchemaDesigner {
     var dragMove: js.UndefOr[js.Function1[/* e */ DragMoveEventArgs, Unit]] = js.undefined
     
     /** Allows the user to enable/disable drag and drop operations within the PivotTable Field List.
-      * @Default {true}
+      * @default {true}
       */
     var enableDragDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view PivotTable Field List from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** For ASP.NET and MVC Wrapper, PivotSchemaDesigner will be initialized and rendered empty initially. Once the connected pivot control widget is rendered completely,
       * PivotSchemaDesigner will just be populated with data source by setting this property to â€œtrueâ€.
-      * @Default {false}
+      * @default {false}
       */
     var enableWrapper: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height for PivotSchemaDesigner.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Sets the layout for PivotSchemaDesigner.
-      * @Default {ej.PivotSchemaDesigner.Layouts.Excel}
+      * @default {ej.PivotSchemaDesigner.Layouts.Excel}
       */
     var layout: js.UndefOr[Layouts | String] = js.undefined
     
@@ -250,32 +250,32 @@ object PivotSchemaDesigner {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the visibility of OLAP elements in PivotTable Field List. This is only applicable for OLAP datasource.
-      * @Default {null}
+      * @default {null}
       */
     var olap: js.UndefOr[Olap] = js.undefined
     
     /** Sets the Pivot control bound with this PivotSchemaDesigner.
-      * @Default {null}
+      * @default {null}
       */
     var pivotControl: js.UndefOr[Any] = js.undefined
     
     /** Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
-      * @Default {{}}
+      * @default {{}}
       */
     var serviceMethods: js.UndefOr[Any] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var url: js.UndefOr[String] = js.undefined
     
     /** Sets the width for PivotSchemaDesigner.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -362,12 +362,12 @@ object PivotSchemaDesigner {
   trait Olap extends StObject {
     
     /** Allows the user to view the KPI elements in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
-      * @Default {false}
+      * @default {false}
       */
     var showKPI: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view the named sets in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
-      * @Default {false}
+      * @default {false}
       */
     var showNamedSets: js.UndefOr[Boolean] = js.undefined
   }

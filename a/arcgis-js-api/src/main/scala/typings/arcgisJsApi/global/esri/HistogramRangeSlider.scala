@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.HistogramRangeSlider")
 @js.native
 /**
-  * A slider widget that can be used for filtering data or gathering numeric input from a user for a range of data.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html)
-  */
+		 * A slider widget that can be used for filtering data or gathering numeric input from a user for a range of data.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html)
+		 */
 open class HistogramRangeSlider ()
   extends StObject
      with typings.arcgisJsApi.esri.HistogramRangeSlider {

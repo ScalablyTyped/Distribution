@@ -49,7 +49,7 @@ trait NumberingLevel extends StObject {
     * Only of relevance, if PositionAndSpaceMode equals LABEL_ALIGNMENT.
     *
     * </p>
-    * @@since OOo 3.0
+    * @since OOo 3.0
     */
   var FirstLineIndent: Double
   
@@ -83,7 +83,7 @@ trait NumberingLevel extends StObject {
     * Only of relevance, if PositionAndSpaceMode equals LABEL_ALIGNMENT.
     *
     * </p>
-    * @@since OOo 3.0
+    * @since OOo 3.0
     */
   var IndentAt: Double
   
@@ -97,7 +97,7 @@ trait NumberingLevel extends StObject {
     * Only of relevance, if PositionAndSpaceMode equals LABEL_ALIGNMENT.
     *
     * </p>
-    * @@since OOo 3.0
+    * @since OOo 3.0
     */
   var LabelFollowedBy: Double
   
@@ -116,7 +116,7 @@ trait NumberingLevel extends StObject {
     * and LabelFollowedBy equal LABELFOLLOW_LISTTAB
     *
     * </p>
-    * @@since OOo 3.0
+    * @since OOo 3.0
     */
   var ListtabStopPosition: Double
   
@@ -148,7 +148,7 @@ trait NumberingLevel extends StObject {
     * ListtabStopPosition, FirstLineIndent, IndentAt are used.
     *
     * </p>
-    * @@since OOo 3.0
+    * @since OOo 3.0
     */
   var PositionAndSpaceMode: Double
   

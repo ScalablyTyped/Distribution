@@ -11,9 +11,9 @@ trait AudioControlManager extends StObject {
     *
     * @returns AudioOutputMode The current audio output mode
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -26,9 +26,9 @@ trait AudioControlManager extends StObject {
     *
     * @returns unsigned short The current volume (the volume range is 0 ~ 100)
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -41,9 +41,9 @@ trait AudioControlManager extends StObject {
     *
     * @returns boolean The current mute state
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -56,10 +56,10 @@ trait AudioControlManager extends StObject {
     *
     * @param type The beep type to play
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -76,9 +76,9 @@ trait AudioControlManager extends StObject {
     * are used, then mute is disabled.
     *
     * @param mute The mute state (true = turn on the silent mode, false = turn off the silent mode)
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @warning 5.0 http://tizen.org/privilege/tv.audio (public level) has been deprecated since 5.0.
     * @privilegeLevel 5.0 public
@@ -93,10 +93,10 @@ trait AudioControlManager extends StObject {
     *
     * @param volume The volume (the available volume range is 0 ~100)
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -110,10 +110,10 @@ trait AudioControlManager extends StObject {
     * Note that this method overwrites the previously registered listener.
     * @param callback The method to invoke when the volume has been changed. It will not be triggered when the silent mode is changed.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -128,9 +128,9 @@ trait AudioControlManager extends StObject {
     * ignored because the minimum volume level is 0. If mute is enabled,
     * then execution of this functions will disable it.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -144,9 +144,9 @@ trait AudioControlManager extends StObject {
     * because the maximum volume level is 100. If mute is enabled,
     * then execution of this functions will disable it.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio
@@ -159,9 +159,9 @@ trait AudioControlManager extends StObject {
     *
     * Calling this function has no effect if listener is not set.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.audio

@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onListBeforeDragIn
   - typings.webix.webixStrings.onListBeforeDrop
   - typings.webix.webixStrings.onListBeforeSelect
+  - typings.webix.webixStrings.onListDragOut
   - typings.webix.webixStrings.onListIconClick
   - typings.webix.webixStrings.onListItemClick
   - typings.webix.webixStrings.onListItemDblClick
@@ -103,6 +104,8 @@ object kanbanEventName {
   inline def onListBeforeDrop: typings.webix.webixStrings.onListBeforeDrop = "onListBeforeDrop".asInstanceOf[typings.webix.webixStrings.onListBeforeDrop]
   
   inline def onListBeforeSelect: typings.webix.webixStrings.onListBeforeSelect = "onListBeforeSelect".asInstanceOf[typings.webix.webixStrings.onListBeforeSelect]
+  
+  inline def onListDragOut: typings.webix.webixStrings.onListDragOut = "onListDragOut".asInstanceOf[typings.webix.webixStrings.onListDragOut]
   
   inline def onListIconClick: typings.webix.webixStrings.onListIconClick = "onListIconClick".asInstanceOf[typings.webix.webixStrings.onListIconClick]
   

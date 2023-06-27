@@ -12,7 +12,7 @@ object sapUiCoreComponentSupportMod extends Shortcut {
   val default: ComponentSupport = js.native
   
   /**
-    * @SINCE 1.58.0
+    * @since 1.58.0
     *
     * The module `sap/ui/core/ComponentSupport` provides functionality which is used to find declared Components
     * in the HTML page and to create the Component instances which will be put into a {@link sap.ui.core.ComponentContainer}.
@@ -80,7 +80,7 @@ object sapUiCoreComponentSupportMod extends Shortcut {
     * 	 - `lifecycle` {sap.ui.core.ComponentLifecycle} (defaults to `Container`)
     * 	 - `autoPrefixId` {boolean} (defaults to `true`)
     *
-    * See {@link topic:82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
+    * See {@link https://ui5.sap.com/#/topic/82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
     */
   trait ComponentSupport extends StObject {
     

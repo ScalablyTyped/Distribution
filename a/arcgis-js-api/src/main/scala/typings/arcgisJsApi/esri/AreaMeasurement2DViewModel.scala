@@ -11,70 +11,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurement2DViewModel extends StObject {
   
   /**
-    * Clears the current measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#clear)
-    */
+  		 * Clears the current measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#clear)
+  		 */
   def clear(): scala.Unit
   
   /**
-    * When the coordinate system is projected (other than web mercator) then perimeters less than this threshold will be computed planimetrically.
-    *
-    * @default 100000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#geodesicDistanceThreshold)
-    */
+  		 * When the coordinate system is projected (other than web mercator) then perimeters less than this threshold will be computed planimetrically.
+  		 *
+  		 * @default 100000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#geodesicDistanceThreshold)
+  		 */
   var geodesicDistanceThreshold: Double
   
   /**
-    * The area and perimeter of the measurement polygon in square meters and meters respectively.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
-    */
+  		 * The area and perimeter of the measurement polygon in square meters and meters respectively.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
+  		 */
   val measurement: AreaMeasurement2DViewModelMeasurement
   
   /**
-    * This property returns the locale specific representation of the area and perimeter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurementLabel)
-    */
+  		 * This property returns the locale specific representation of the area and perimeter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurementLabel)
+  		 */
   val measurementLabel: AreaMeasurement2DViewModelMeasurementLabel
   
   /**
-    * Starts a new measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#start)
-    */
+  		 * Starts a new measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#start)
+  		 */
   def start(): scala.Unit
   
   /**
-    * The ViewModel's state.
-    *
-    * @default disabled
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)
-    */
+  		 * The ViewModel's state.
+  		 *
+  		 * @default disabled
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)
+  		 */
   val state: disabled | ready | measuring | measured
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the area values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the area values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unit)
+  		 */
   var unit: SystemOrAreaUnit
   
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the area values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unitOptions)
-    */
+  		 * List of available units and unit systems (imperial, metric) for displaying the area values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unitOptions)
+  		 */
   var unitOptions: js.Array[SystemOrAreaUnit]
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#view)
+  		 */
   var view: MapView
 }
 object AreaMeasurement2DViewModel {

@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingOpacitySliderOpacitySliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/OpacitySlider/OpacitySliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [OpacitySlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html)
-    */
+  		 * Provides the logic for the [OpacitySlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with OpacitySliderViewModel {

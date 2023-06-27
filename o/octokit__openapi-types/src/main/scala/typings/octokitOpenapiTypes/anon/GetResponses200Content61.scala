@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content61 extends StObject {
   
   /**
-    * List runner applications for an organization
-    * @description Lists binaries for the runner application that you can download and run.
-    *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * Get GitHub Actions cache usage for an organization
+    * @description Gets the total GitHub Actions cache usage for an organization.
+    * The data fetched using this API is refreshed approximately every 5 minutes, so values returned from this endpoint may take at least 5 minutes to get updated.
+    * You must authenticate using an access token with the `read:org` scope to use this endpoint. GitHub Apps must have the `organization_admistration:read` permission to use this endpoint.
     */
   var get: Responses200Content61
 }

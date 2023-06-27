@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Query
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsLibraryMod.ToolbarItem
@@ -178,13 +176,13 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SearchField` itself
       */
@@ -209,7 +207,7 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -220,7 +218,7 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SearchField` itself
       */
@@ -241,13 +239,13 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SearchField` itself
       */
@@ -272,7 +270,7 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
@@ -283,7 +281,7 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SearchField` itself
       */
@@ -313,13 +311,13 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -337,13 +335,13 @@ object sapUiCommonsSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def detachSuggest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -351,40 +349,42 @@ object sapUiCommonsSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearch(): this.type = js.native
-    def fireSearch(/**
+    def fireSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Query): this.type = js.native
+    mParameters: SearchField$SearchEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggest(): this.type = js.native
-    def fireSuggest(/**
+    def fireSuggest(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: SearchField$SuggestEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -400,7 +400,7 @@ object sapUiCommonsSearchFieldMod {
     def getEditable(): Boolean = js.native
     
     /**
-      * @SINCE 1.10.3
+      * @since 1.10.3
       *
       * Gets current value of property {@link #getEnableCache enableCache}.
       *
@@ -493,7 +493,7 @@ object sapUiCommonsSearchFieldMod {
     def getMaxSuggestionItems(): int = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getPlaceholder placeholder}.
       *
@@ -569,7 +569,7 @@ object sapUiCommonsSearchFieldMod {
     def getValue(): String = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getValueState valueState}.
       *
@@ -674,7 +674,7 @@ object sapUiCommonsSearchFieldMod {
     bEditable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.10.3
+      * @since 1.10.3
       *
       * Sets a new value for property {@link #getEnableCache enableCache}.
       *
@@ -815,7 +815,7 @@ object sapUiCommonsSearchFieldMod {
     iMaxSuggestionItems: int): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets a new value for property {@link #getPlaceholder placeholder}.
       *
@@ -938,7 +938,7 @@ object sapUiCommonsSearchFieldMod {
     sValue: String): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets a new value for property {@link #getValueState valueState}.
       *
@@ -1011,6 +1011,56 @@ object sapUiCommonsSearchFieldMod {
     ): Unit = js.native
   }
   
+  trait SearchField$SearchEventParameters extends StObject {
+    
+    /**
+      * The search query
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object SearchField$SearchEventParameters {
+    
+    inline def apply(): SearchField$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  trait SearchField$SuggestEventParameters extends StObject {
+    
+    /**
+      * The value for which suggestions are required.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object SearchField$SuggestEventParameters {
+    
+    inline def apply(): SearchField$SuggestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$SuggestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$SuggestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type SearchFieldSearchEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters]
+  
+  type SearchFieldSearchEventParameters = SearchField$SearchEventParameters
+  
   trait SearchFieldSettings
     extends StObject
        with ControlSettings {
@@ -1033,7 +1083,7 @@ object sapUiCommonsSearchFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.10.3
+      * @since 1.10.3
       *
       * When list suggestion is enabled all suggestions are cached and no suggest event is fired.
       */
@@ -1088,7 +1138,7 @@ object sapUiCommonsSearchFieldMod {
     var maxSuggestionItems: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Placeholder for the input field.
       */
@@ -1097,7 +1147,12 @@ object sapUiCommonsSearchFieldMod {
     /**
       * Event which is fired when the user triggers a search
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Search provider instance which handles the suggestions for this SearchField (e.g. Open Search Protocol).
@@ -1127,7 +1182,12 @@ object sapUiCommonsSearchFieldMod {
     /**
       * Event which is fired when new suggest values are required.
       */
-    var suggest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sets the horizontal alignment of the text
@@ -1142,7 +1202,7 @@ object sapUiCommonsSearchFieldMod {
     var value: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Visualizes warnings or errors related to the input field. Possible values: Warning, Error, Success, None.
       */
@@ -1225,7 +1285,9 @@ object sapUiCommonsSearchFieldMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchProvider(value: typings.openui5.sapUiCoreSearchSearchProviderMod.default): Self = StObject.set(x, "searchProvider", value.asInstanceOf[js.Any])
       
@@ -1245,7 +1307,9 @@ object sapUiCommonsSearchFieldMod {
       
       inline def setStartSuggestionUndefined: Self = StObject.set(x, "startSuggestion", js.undefined)
       
-      inline def setSuggest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
+      inline def setSuggest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters] => Unit
+      ): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
       
       inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
@@ -1274,4 +1338,8 @@ object sapUiCommonsSearchFieldMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type SearchFieldSuggestEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters]
+  
+  type SearchFieldSuggestEventParameters = SearchField$SuggestEventParameters
 }

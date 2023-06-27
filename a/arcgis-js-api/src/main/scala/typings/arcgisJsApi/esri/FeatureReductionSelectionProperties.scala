@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureReductionSelectionProperties extends StObject {
   
   /**
-    * The feature reduction type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html#type)
-    */
+  		 * The feature reduction type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html#type)
+  		 */
   var `type`: js.UndefOr[selection] = js.undefined
 }
 object FeatureReductionSelectionProperties {

@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.all_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.all
+  - typings.microsoftGraph.microsoftGraphStrings.all_
   - typings.microsoftGraph.microsoftGraphStrings.browser
   - typings.microsoftGraph.microsoftGraphStrings.mobileAppsAndDesktopClients
   - typings.microsoftGraph.microsoftGraphStrings.exchangeActiveSync
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessClientApp extends StObject
 object ConditionalAccessClientApp {
   
-  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: all_ = "all".asInstanceOf[all_]
   
   inline def browser: typings.microsoftGraph.microsoftGraphStrings.browser = "browser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.browser]
   

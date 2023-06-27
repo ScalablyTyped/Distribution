@@ -6,24 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `465` extends StObject {
   
-  var from: js.UndefOr[js.Array[String] | Null] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['user-marketplace-purchase'] */ js.Any
+  ]
 }
 object `465` {
   
-  inline def apply(): `465` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['user-marketplace-purchase'] */ js.Any
+    ]
+  ): `465` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`465`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `465`] (val x: Self) extends AnyVal {
     
-    inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['user-marketplace-purchase'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setFromNull: Self = StObject.set(x, "from", null)
-    
-    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
-    
-    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['user-marketplace-purchase'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

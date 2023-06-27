@@ -1,7 +1,7 @@
 
 # Scala.js typings for esbuild-wasm
 
-Typings are for version 0.17.18
+Typings are for version 0.18.2
 
 ## Library description:
 The cross-platform WebAssembly binary for esbuild, a JavaScript bundler.

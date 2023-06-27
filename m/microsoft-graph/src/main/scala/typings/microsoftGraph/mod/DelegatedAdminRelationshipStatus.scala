@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.active_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.activating
-  - typings.microsoftGraph.microsoftGraphStrings.active
+  - typings.microsoftGraph.microsoftGraphStrings.active_
   - typings.microsoftGraph.microsoftGraphStrings.approvalPending
   - typings.microsoftGraph.microsoftGraphStrings.approved
   - typings.microsoftGraph.microsoftGraphStrings.created
@@ -23,7 +24,7 @@ object DelegatedAdminRelationshipStatus {
   
   inline def activating: typings.microsoftGraph.microsoftGraphStrings.activating = "activating".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.activating]
   
-  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: active_ = "active".asInstanceOf[active_]
   
   inline def approvalPending: typings.microsoftGraph.microsoftGraphStrings.approvalPending = "approvalPending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approvalPending]
   

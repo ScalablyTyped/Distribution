@@ -115,7 +115,7 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
     extends typings.openui5.sapUiModelOdataTypeDateTimeBaseMod.default {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Formats the given value to the given target type.
       *
@@ -124,7 +124,7 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
     def formatValue(
       /**
       * The target type, may be "any", "object" (since 1.69.0), "string", or a type with one of these types as
-      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sTargetType: String
@@ -138,14 +138,14 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
     vValue: String,
       /**
       * The target type, may be "any", "object" (since 1.69.0), "string", or a type with one of these types as
-      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sTargetType: String
     ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Gets the model value according to this type's constraints and format options for the given date object
       * which represents a timestamp in the configured time zone. Validates the resulting value against the constraints

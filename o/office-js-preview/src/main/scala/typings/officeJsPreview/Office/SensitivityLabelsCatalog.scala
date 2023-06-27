@@ -11,7 +11,7 @@ trait SensitivityLabelsCatalog extends StObject {
     * Gets all the sensitivity labels that are enabled in Outlook.
     * 
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     * 
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
@@ -22,20 +22,18 @@ trait SensitivityLabelsCatalog extends StObject {
     * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.
     *
     * To learn more about how to manage sensitivity labels in your add-in, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
     * 
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
     *                 which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the
     *                 `asyncResult.value` property.
-    *  
-    * @beta
     */
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[SensitivityLabelDetails]], Unit]): Unit = js.native
   /**
     * Gets all the sensitivity labels that are enabled in Outlook.
     * 
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     * 
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
@@ -46,15 +44,13 @@ trait SensitivityLabelsCatalog extends StObject {
     * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.
     *
     * To learn more about how to manage sensitivity labels in your add-in, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
     *
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
     *                 which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the
     *                 `asyncResult.value` property.
-    *  
-    * @beta
     */
   def getAsync(
     options: AsyncContextOptions,
@@ -65,7 +61,7 @@ trait SensitivityLabelsCatalog extends StObject {
     * Checks whether the catalog of sensitivity labels is enabled in Outlook.
     * 
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     * 
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
@@ -77,19 +73,17 @@ trait SensitivityLabelsCatalog extends StObject {
     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
     *
     * To learn more about how to manage sensitivity labels in your add-in, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
     *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
     *                 which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.
-    * 
-    * @beta
     */
   def getIsEnabledAsync(callback: js.Function1[/* asyncResult */ AsyncResult[Boolean], Unit]): Unit = js.native
   /**
     * Checks whether the catalog of sensitivity labels is enabled in Outlook.
     * 
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     * 
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
@@ -101,14 +95,12 @@ trait SensitivityLabelsCatalog extends StObject {
     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
     *
     * To learn more about how to manage sensitivity labels in your add-in, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
     *
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
     *                 which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.
-    * 
-    * @beta
     */
   def getIsEnabledAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Boolean], Unit]): Unit = js.native
 }

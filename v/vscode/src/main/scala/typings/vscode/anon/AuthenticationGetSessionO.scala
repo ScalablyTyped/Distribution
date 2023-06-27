@@ -1,5 +1,6 @@
 package typings.vscode.anon
 
+import typings.vscode.mod.AuthenticationForceNewSessionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +53,7 @@ trait AuthenticationGetSessionO extends StObject {
   		 *
   		 * This defaults to false.
   		 */
-  var forceNewSession: js.UndefOr[Boolean | Detail] = js.undefined
+  var forceNewSession: js.UndefOr[Boolean | AuthenticationForceNewSessionOptions] = js.undefined
   
   /**
   		 * Whether we should show the indication to sign in in the Accounts menu.
@@ -84,7 +85,7 @@ object AuthenticationGetSessionO {
     
     inline def setCreateIfNoneUndefined: Self = StObject.set(x, "createIfNone", js.undefined)
     
-    inline def setForceNewSession(value: Boolean | Detail): Self = StObject.set(x, "forceNewSession", value.asInstanceOf[js.Any])
+    inline def setForceNewSession(value: Boolean | AuthenticationForceNewSessionOptions): Self = StObject.set(x, "forceNewSession", value.asInstanceOf[js.Any])
     
     inline def setForceNewSessionUndefined: Self = StObject.set(x, "forceNewSession", js.undefined)
     

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait typeUniqueValueInfo extends StObject {
   
   /**
-    * The number of features with the given `value` (or belonging to the given category).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
-    */
+  		 * The number of features with the given `value` (or belonging to the given category).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
+  		 */
   var count: Double
   
   /**
-    * The label describing the value or category in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label describing the value or category in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String
   
   /**
-    * The symbol used to represent features belonging to the given category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
-    */
+  		 * The symbol used to represent features belonging to the given category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
+  		 */
   var symbol: Symbol
   
   /**
-    * A unique value representing a type or category of features in a layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
-    */
+  		 * A unique value representing a type or category of features in a layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
+  		 */
   var value: String | Double
 }
 object typeUniqueValueInfo {

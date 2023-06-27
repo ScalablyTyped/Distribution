@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot) */
 @js.native
 trait ShadowRoot
   extends StObject
@@ -29,12 +30,15 @@ trait ShadowRoot
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/delegatesFocus) */
   /* standard dom */
   val delegatesFocus: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/host) */
   /* standard dom */
   val host: Element = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/mode) */
   /* standard dom */
   val mode: ShadowRootMode = js.native
   
@@ -57,6 +61,7 @@ trait ShadowRoot
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/slotAssignment) */
   /* standard dom */
   val slotAssignment: SlotAssignmentMode = js.native
 }

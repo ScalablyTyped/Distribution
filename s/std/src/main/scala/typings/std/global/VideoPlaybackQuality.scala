@@ -13,19 +13,26 @@ open class VideoPlaybackQuality ()
   extends StObject
      with typings.std.VideoPlaybackQuality {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/corruptedVideoFrames)
+    */
   /* standard dom */
   /* CompleteClass */
   override val corruptedVideoFrames: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/creationTime) */
   /* standard dom */
   /* CompleteClass */
   override val creationTime: DOMHighResTimeStamp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames) */
   /* standard dom */
   /* CompleteClass */
   override val droppedVideoFrames: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoPlaybackQuality/totalVideoFrames) */
   /* standard dom */
   /* CompleteClass */
   override val totalVideoFrames: Double = js.native

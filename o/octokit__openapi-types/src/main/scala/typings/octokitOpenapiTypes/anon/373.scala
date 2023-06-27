@@ -6,37 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `373` extends StObject {
   
-  var secrets: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-  ]
+  var path: Pullnumber
   
-  var total_count: Double
+  var query: js.UndefOr[Page] = js.undefined
 }
 object `373` {
   
-  inline def apply(
-    secrets: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-    ],
-    total_count: Double
-  ): `373` = {
-    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(path: Pullnumber): `373` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`373`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `373`] (val x: Self) extends AnyVal {
     
-    inline def setSecrets(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setPath(value: Pullnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setSecretsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-secret'] */ js.Any)*
-    ): Self = StObject.set(x, "secrets", js.Array(value*))
+    inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

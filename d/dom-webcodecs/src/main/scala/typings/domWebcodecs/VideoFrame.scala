@@ -1,6 +1,7 @@
 package typings.domWebcodecs
 
 import typings.std.DOMRectReadOnly
+import typings.std.VideoPixelFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +22,13 @@ trait VideoFrame extends StObject {
   
   val colorSpace: VideoColorSpace = js.native
   
-  def copyTo(destination: AllowSharedBufferSource): js.Promise[js.Array[PlaneLayout]] = js.native
-  def copyTo(destination: AllowSharedBufferSource, options: VideoFrameCopyToOptions): js.Promise[js.Array[PlaneLayout]] = js.native
+  def copyTo(
+    destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+  ): js.Promise[js.Array[PlaneLayout]] = js.native
+  def copyTo(
+    destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
+    options: VideoFrameCopyToOptions
+  ): js.Promise[js.Array[PlaneLayout]] = js.native
   
   val displayHeight: Double = js.native
   
@@ -30,7 +36,7 @@ trait VideoFrame extends StObject {
   
   val duration: Double | Null = js.native
   
-  val format: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoPixelFormat */ Any) | Null = js.native
+  val format: VideoPixelFormat | Null = js.native
   
   val timestamp: Double = js.native
   

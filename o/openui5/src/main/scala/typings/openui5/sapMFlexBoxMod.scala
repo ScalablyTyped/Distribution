@@ -30,7 +30,7 @@ object sapMFlexBoxMod {
     * See:
     * 	https://www.w3.org/TR/css-flexbox-1/
     * 	https://www.w3schools.com/css/css3_flexbox.asp
-    * 	{@link topic:674890e6d8534eaba2eaf63242e077eb Flex Box}
+    * 	{@link https://ui5.sap.com/#/topic/674890e6d8534eaba2eaf63242e077eb Flex Box}
     */
   open class default () extends FlexBox {
     def this(/**
@@ -154,7 +154,7 @@ object sapMFlexBoxMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getAlignContent alignContent}.
       *
@@ -178,7 +178,7 @@ object sapMFlexBoxMod {
     def getAlignItems(): FlexAlignItems | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FlexAlignItems * / any */ String) = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -226,7 +226,7 @@ object sapMFlexBoxMod {
     def getFitContainer(): Boolean = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Gets current value of property {@link #getHeight height}.
       *
@@ -271,7 +271,7 @@ object sapMFlexBoxMod {
     def getRenderType(): FlexRendertype | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FlexRendertype * / any */ String) = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -285,7 +285,7 @@ object sapMFlexBoxMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getWrap wrap}.
       *
@@ -357,7 +357,7 @@ object sapMFlexBoxMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets a new value for property {@link #getAlignContent alignContent}.
       *
@@ -405,7 +405,7 @@ object sapMFlexBoxMod {
     sAlignItems: FlexAlignItems): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -489,7 +489,7 @@ object sapMFlexBoxMod {
     bFitContainer: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Sets a new value for property {@link #getHeight height}.
       *
@@ -542,7 +542,7 @@ object sapMFlexBoxMod {
     sValue: String): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -562,7 +562,7 @@ object sapMFlexBoxMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets a new value for property {@link #getWrap wrap}.
       *
@@ -593,7 +593,7 @@ object sapMFlexBoxMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Determines the layout behavior of container lines when there's extra space along the cross-axis.
       */
@@ -609,7 +609,7 @@ object sapMFlexBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Defines the background style of the `sap.m.FlexBox`.
       */
@@ -641,7 +641,7 @@ object sapMFlexBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * The height of the `sap.m.FlexBox`. Note that when a percentage is given, for the height to work as expected,
       * the height of the surrounding container must be defined.
@@ -674,7 +674,7 @@ object sapMFlexBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * The width of the `sap.m.FlexBox`. Note that when a percentage is given, for the width to work as expected,
       * the width of the surrounding container must be defined.
@@ -684,7 +684,7 @@ object sapMFlexBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Determines the wrapping behavior of the flex container. This property has no effect in older browsers,
       * e.g. Android Native 4.3 and below.

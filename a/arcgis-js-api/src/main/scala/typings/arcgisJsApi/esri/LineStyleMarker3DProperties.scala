@@ -17,37 +17,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineStyleMarker3DProperties extends StObject {
   
   /**
-    * The color of the marker.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#color)
-    */
+  		 * The color of the marker.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Indicates where the marker is placed.
-    *
-    * @default "begin-end"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#placement)
-    */
+  		 * Indicates where the marker is placed.
+  		 *
+  		 * @default "begin-end"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#placement)
+  		 */
   var placement: js.UndefOr[begin | end | `begin-end`] = js.undefined
   
   /**
-    * Style of the marker.
-    *
-    * @default "arrow"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#style)
-    */
+  		 * Style of the marker.
+  		 *
+  		 * @default "arrow"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#style)
+  		 */
   var style: js.UndefOr[arrow | circle | square_ | diamond | cross | x] = js.undefined
   
   /**
-    * The type of marker applied to a line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#type)
-    */
+  		 * The type of marker applied to a line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html#type)
+  		 */
   var `type`: js.UndefOr[style] = js.undefined
 }
 object LineStyleMarker3DProperties {

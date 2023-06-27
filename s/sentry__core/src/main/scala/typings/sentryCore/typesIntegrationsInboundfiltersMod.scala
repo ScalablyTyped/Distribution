@@ -69,6 +69,10 @@ object typesIntegrationsInboundfiltersMod {
     
     var denyUrls: js.Array[String | js.RegExp]
     
+    var disableErrorDefaults: Boolean
+    
+    var disableTransactionDefaults: Boolean
+    
     var ignoreErrors: js.Array[String | js.RegExp]
     
     var ignoreInternal: Boolean
@@ -80,11 +84,13 @@ object typesIntegrationsInboundfiltersMod {
     inline def apply(
       allowUrls: js.Array[String | js.RegExp],
       denyUrls: js.Array[String | js.RegExp],
+      disableErrorDefaults: Boolean,
+      disableTransactionDefaults: Boolean,
       ignoreErrors: js.Array[String | js.RegExp],
       ignoreInternal: Boolean,
       ignoreTransactions: js.Array[String | js.RegExp]
     ): InboundFiltersOptions = {
-      val __obj = js.Dynamic.literal(allowUrls = allowUrls.asInstanceOf[js.Any], denyUrls = denyUrls.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any], ignoreInternal = ignoreInternal.asInstanceOf[js.Any], ignoreTransactions = ignoreTransactions.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowUrls = allowUrls.asInstanceOf[js.Any], denyUrls = denyUrls.asInstanceOf[js.Any], disableErrorDefaults = disableErrorDefaults.asInstanceOf[js.Any], disableTransactionDefaults = disableTransactionDefaults.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any], ignoreInternal = ignoreInternal.asInstanceOf[js.Any], ignoreTransactions = ignoreTransactions.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundFiltersOptions]
     }
     
@@ -98,6 +104,10 @@ object typesIntegrationsInboundfiltersMod {
       inline def setDenyUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
       
       inline def setDenyUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value*))
+      
+      inline def setDisableErrorDefaults(value: Boolean): Self = StObject.set(x, "disableErrorDefaults", value.asInstanceOf[js.Any])
+      
+      inline def setDisableTransactionDefaults(value: Boolean): Self = StObject.set(x, "disableTransactionDefaults", value.asInstanceOf[js.Any])
       
       inline def setIgnoreErrors(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       

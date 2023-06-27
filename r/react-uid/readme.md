@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-uid
 
-Typings are for version 2.3.2
+Typings are for version 2.3.3
 
 ## Library description:
 Render-less container for ID generation

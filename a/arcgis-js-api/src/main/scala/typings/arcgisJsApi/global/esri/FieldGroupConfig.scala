@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.FieldGroupConfig")
 @js.native
 /**
-  * Configuration options for configuring grouped fields.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
-  */
+		 * Configuration options for configuring grouped fields.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
+		 */
 open class FieldGroupConfig ()
   extends StObject
      with typings.arcgisJsApi.esri.FieldGroupConfig {

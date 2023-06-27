@@ -3682,6 +3682,7 @@ object domHelpersStrings {
   sealed trait animationComposition
     extends StObject
        with CamelProperty
+       with Styles
   inline def animationComposition: animationComposition = "animationComposition".asInstanceOf[animationComposition]
   
   @js.native
@@ -5423,7 +5424,6 @@ object domHelpersStrings {
   sealed trait contentVisibility
     extends StObject
        with CamelProperty
-       with Styles
   inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
   
   @js.native
@@ -5986,6 +5986,24 @@ object domHelpersStrings {
        with CamelProperty
        with Styles
   inline def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
+  
+  @js.native
+  sealed trait fontSynthesisSmallCaps
+    extends StObject
+       with Styles
+  inline def fontSynthesisSmallCaps: fontSynthesisSmallCaps = "fontSynthesisSmallCaps".asInstanceOf[fontSynthesisSmallCaps]
+  
+  @js.native
+  sealed trait fontSynthesisStyle
+    extends StObject
+       with Styles
+  inline def fontSynthesisStyle: fontSynthesisStyle = "fontSynthesisStyle".asInstanceOf[fontSynthesisStyle]
+  
+  @js.native
+  sealed trait fontSynthesisWeight
+    extends StObject
+       with Styles
+  inline def fontSynthesisWeight: fontSynthesisWeight = "fontSynthesisWeight".asInstanceOf[fontSynthesisWeight]
   
   @js.native
   sealed trait fontVariant
@@ -8457,6 +8475,7 @@ object domHelpersStrings {
     extends StObject
        with CamelProperty
        with HyphenProperty
+       with Styles
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native

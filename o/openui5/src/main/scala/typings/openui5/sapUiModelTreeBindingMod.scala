@@ -947,7 +947,7 @@ object sapUiModelTreeBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "filter")`
       * when a filter event is fired.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:_filter _filter} event of this `sap.ui.model.TreeBinding`.
       *
@@ -971,7 +971,7 @@ object sapUiModelTreeBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:_filter _filter} event of this `sap.ui.model.TreeBinding`.
       *
@@ -1047,7 +1047,7 @@ object sapUiModelTreeBindingMod {
     oContext: js.Object): int = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Returns the count of entries in the tree, or `undefined` if it is unknown. If the tree is filtered, the
       * count of all entries matching the filter conditions is returned. The entries required only for the tree

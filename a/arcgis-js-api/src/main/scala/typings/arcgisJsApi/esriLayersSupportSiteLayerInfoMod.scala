@@ -12,20 +12,20 @@ object esriLayersSupportSiteLayerInfoMod {
   @JSImport("esri/layers/support/SiteLayerInfo", JSImport.Namespace)
   @js.native
   /**
-    * The SiteLayerInfo class describes the boundaries of managed sites and is used for visualizing groups of facilities.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SiteLayerInfo.html)
-    */
+  		 * The SiteLayerInfo class describes the boundaries of managed sites and is used for visualizing groups of facilities.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SiteLayerInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with SiteLayerInfo {
     def this(properties: SiteLayerInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

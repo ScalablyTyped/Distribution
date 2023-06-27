@@ -10,18 +10,18 @@ trait CIMMarkerPlacementAtMeasuredUnits
      with CIMMarkerPlacementType {
   
   /**
-    * The interval of measured units used to place markers.
-    */
+  			 * The interval of measured units used to place markers.
+  			 */
   var interval: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether markers should be placed at extremities.
-    */
+  			 * A value indicating whether markers should be placed at extremities.
+  			 */
   var placeAtExtremities: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The rate of markers to skip.
-    */
+  			 * The rate of markers to skip.
+  			 */
   var skipMarkerRate: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

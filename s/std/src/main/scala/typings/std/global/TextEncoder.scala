@@ -12,7 +12,11 @@ open class TextEncoder ()
   extends StObject
      with typings.std.TextEncoder {
   
-  /** Returns "utf-8". */
+  /**
+    * Returns "utf-8".
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextEncoder/encoding)
+    */
   /* standard dom */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native

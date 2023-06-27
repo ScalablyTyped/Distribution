@@ -2,7 +2,7 @@ package typings.reactShare
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ForwardRefExoticComponent
-import typings.reactShare.anon.OmitPropstitlestringundefAriabusy
+import typings.reactShare.anon.OmitPropstitlestringundefAriabraillelabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ object libWeiboShareButtonMod extends Shortcut {
   
   @JSImport("react-share/lib/WeiboShareButton", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[OmitPropstitlestringundefAriabusy] = js.native
+  val default: ForwardRefExoticComponent[OmitPropstitlestringundefAriabraillelabel] = js.native
   
-  type _To = ForwardRefExoticComponent[OmitPropstitlestringundefAriabusy]
+  type _To = ForwardRefExoticComponent[OmitPropstitlestringundefAriabraillelabel]
   
   /* This means you don't have to write `default`, but can instead just say `libWeiboShareButtonMod.foo` */
-  override def _to: ForwardRefExoticComponent[OmitPropstitlestringundefAriabusy] = default
+  override def _to: ForwardRefExoticComponent[OmitPropstitlestringundefAriabraillelabel] = default
 }

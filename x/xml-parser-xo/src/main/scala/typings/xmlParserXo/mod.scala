@@ -329,6 +329,11 @@ object mod {
       * Returns false to exclude a node. Default is true.
       */
     var filter: js.UndefOr[js.Function1[/* node */ XmlParserNode, Boolean | Any]] = js.undefined
+    
+    /**
+      * True to throw an error when parsing XML document with invalid content like mismatched closing tags.
+      */
+    var strictMode: js.UndefOr[Boolean] = js.undefined
   }
   object XmlParserOptions {
     
@@ -343,6 +348,10 @@ object mod {
       inline def setFilter(value: /* node */ XmlParserNode => Boolean | Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
     }
   }
   

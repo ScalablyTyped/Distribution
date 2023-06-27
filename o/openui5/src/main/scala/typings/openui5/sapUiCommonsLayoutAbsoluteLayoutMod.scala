@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Right
+import typings.openui5.anon.Left
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -144,7 +144,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: Right
+    oPos: Left
     ): this.type = js.native
     
     /**
@@ -240,8 +240,8 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.commons.layout.PositionContainer` in the aggregation {@link #getPositions
-      * positions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.commons.layout.PositionContainer` in the aggregation {@link #getPositions positions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -283,7 +283,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: Right
+    oPos: Left
     ): this.type = js.native
     
     /**
@@ -393,7 +393,7 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       * JSON-like object which defines the position of the child control in the layout. The object is expected
       * to have one or more from the attribute set top, bottom, left, right; each with a value of type sap.ui.core.CSSSize.
       */
-    oPos: Right
+    oPos: Left
     ): Boolean = js.native
     
     def setVerticalScrolling(

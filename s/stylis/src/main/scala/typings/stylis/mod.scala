@@ -46,6 +46,10 @@ object mod {
   @js.native
   val KEYFRAMES: /* "@keyframes" */ String = js.native
   
+  @JSImport("stylis", "LAYER")
+  @js.native
+  val LAYER: /* "@layer" */ String = js.native
+  
   @JSImport("stylis", "MEDIA")
   @js.native
   val MEDIA: /* "@media" */ String = js.native

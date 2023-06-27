@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The PageTransitionEvent is fired when a document is being loaded or unloaded. */
+/**
+  * The PageTransitionEvent is fired when a document is being loaded or unloaded.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PageTransitionEvent)
+  */
 @js.native
 trait PageTransitionEvent
   extends StObject
@@ -21,6 +25,8 @@ trait PageTransitionEvent
     * Having iframes that are not salvageable
     * Active WebSocket objects
     * Aborting a Document
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PageTransitionEvent/persisted)
     */
   /* standard dom */
   val persisted: scala.Boolean = js.native

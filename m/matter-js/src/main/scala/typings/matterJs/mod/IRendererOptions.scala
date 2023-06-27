@@ -8,7 +8,7 @@ trait IRendererOptions extends StObject {
   
   /**
     * Sets scene background
-    * @type {string}
+    *
     * default undefined
     */
   var background: js.UndefOr[String] = js.undefined
@@ -16,8 +16,6 @@ trait IRendererOptions extends StObject {
   /**
     * A flag that specifies if `render.bounds` should be used when rendering.
     *
-    * @property options.hasBounds
-    * @type {boolean}
     * @default false
     */
   var hasBounds: js.UndefOr[Boolean] = js.undefined
@@ -25,36 +23,30 @@ trait IRendererOptions extends StObject {
   /**
     * The target height in pixels of the `render.canvas` to be created.
     *
-    * @property options.height
-    * @type {number}
     * @default 600
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The pixel ratio to use when rendering.
-    * @type {number}
     * @default 1
     */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag to enable or disable the body angle debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showAngleIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body axes debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showAxes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body bounds debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showBounds: js.UndefOr[Boolean] = js.undefined
@@ -62,21 +54,18 @@ trait IRendererOptions extends StObject {
   /**
     * A flag to enable or disable the collision broadphase debug overlay.
     * @deprecated no longer implemented
-    * @type {boolean}
     * @default false
     */
   var showBroadphase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body collisions debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showCollisions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body convex hulls debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showConvexHulls: js.UndefOr[Boolean] = js.undefined
@@ -86,28 +75,24 @@ trait IRendererOptions extends StObject {
     * This includes and has priority over the values of:
     * - render.options.showStats
     * - render.options.showPerformance
-    * @type {boolean}
     * @default false
     */
   var showDebug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body and part ids debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showIds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body internal edges debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showInternalEdges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the mouse position debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showMousePosition: js.UndefOr[Boolean] = js.undefined
@@ -122,28 +107,25 @@ trait IRendererOptions extends StObject {
     * - average effective play speed (e.g. '1.00x' is 'real-time')
     * Each value is recorded over a fixed sample of past frames (60 frames).
     * A chart shown below each value indicates the variance from the average over the sample. The more stable or fixed the value is the flatter the chart will appear.
-    * @type {boolean}
     * @default false
     */
   var showPerformance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body positions debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showPositions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the collision resolver separations debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showSeparations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets opacity of sleeping body if `render.options.showSleeping` is enabled
-    * @type {boolean}
+    *
     * default true
     */
   var showSleeping: js.UndefOr[Boolean] = js.undefined
@@ -156,21 +138,18 @@ trait IRendererOptions extends StObject {
     * - constraints total
     * - composites total
     * - collision pairs total
-    * @type {boolean}
     * @default false
     */
   var showStats: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body velocity debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showVelocity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A flag to enable or disable the body vertex numbers debug overlay.
-    * @type {boolean}
     * @default false
     */
   var showVertexNumbers: js.UndefOr[Boolean] = js.undefined
@@ -178,22 +157,19 @@ trait IRendererOptions extends StObject {
   /**
     * The target width in pixels of the `render.canvas` to be created.
     *
-    * @property options.width
-    * @type {number}
     * @default 800
     */
   var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets wireframe background if `render.options.wireframes` is enabled
-    * @type {string}
+    *
     * default undefined
     */
   var wireframeBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Render wireframes only
-    * @type {boolean}
     * @default true
     */
   var wireframes: js.UndefOr[Boolean] = js.undefined

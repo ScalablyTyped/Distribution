@@ -32,6 +32,7 @@ import typings.babelTypes.babelTypesStrings.VerticallineGreaterthansign
 import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
+import typings.babelTypes.babelTypesStrings.`await using`
 import typings.babelTypes.babelTypesStrings.`throw`
 import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
@@ -1926,7 +1927,7 @@ object Node {
     __obj.asInstanceOf[typings.babelTypes.libMod.V8IntrinsicIdentifier_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.libMod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using` | (`await using`)): typings.babelTypes.libMod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.VariableDeclaration_]

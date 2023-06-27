@@ -126,7 +126,7 @@ object sapMActionListItemMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines item specific mode.
       *

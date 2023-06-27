@@ -9,7 +9,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <feDisplacementMap> element. */
+/**
+  * Corresponds to the <feDisplacementMap> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEDisplacementMapElement)
+  */
 @js.native
 trait SVGFEDisplacementMapElement
   extends StObject

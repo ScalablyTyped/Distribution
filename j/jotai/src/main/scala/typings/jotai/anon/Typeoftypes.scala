@@ -315,6 +315,7 @@ import typings.jotai.jotaiStrings.VerticallineVerticalline
 import typings.jotai.jotaiStrings.^
 import typings.jotai.jotaiStrings.`--`
 import typings.jotai.jotaiStrings.`-_`
+import typings.jotai.jotaiStrings.`await using`
 import typings.jotai.jotaiStrings.`object`
 import typings.jotai.jotaiStrings.`throw`
 import typings.jotai.jotaiStrings.`using`
@@ -5918,7 +5919,7 @@ trait Typeoftypes extends StObject {
   @JSName("valueToNode")
   def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = js.native
   
-  def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
+  def variableDeclaration(kind: `var` | let | const | `using` | (`await using`), declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
   
   def variableDeclarator(id: LVal): VariableDeclarator_ = js.native
   def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = js.native

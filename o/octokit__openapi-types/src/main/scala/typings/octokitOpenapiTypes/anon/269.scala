@@ -1,34 +1,42 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintain
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.read
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.triage
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `269` extends StObject {
   
-  /**
-    * @description The permissions that the associated user will have on the repository. Valid values are `read`, `write`, `maintain`, `triage`, and `admin`.
-    * @enum {string}
-    */
-  var permissions: js.UndefOr[read | write | maintain | triage | admin] = js.undefined
+  var secrets: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+  ]
+  
+  var total_count: Double
 }
 object `269` {
   
-  inline def apply(): `269` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    secrets: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+    ],
+    total_count: Double
+  ): `269` = {
+    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`269`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `269`] (val x: Self) extends AnyVal {
     
-    inline def setPermissions(value: read | write | maintain | triage | admin): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setSecrets(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setSecretsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-secret'] */ js.Any)*
+    ): Self = StObject.set(x, "secrets", js.Array(value*))
+    
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

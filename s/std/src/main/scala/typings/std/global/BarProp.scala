@@ -12,6 +12,7 @@ open class BarProp ()
   extends StObject
      with typings.std.BarProp {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/BarProp/visible) */
   /* standard dom */
   /* CompleteClass */
   override val visible: scala.Boolean = js.native

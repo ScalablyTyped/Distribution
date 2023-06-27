@@ -11,33 +11,33 @@ trait FieldColumnTemplateProperties
      with ColumnTemplateBaseProperties {
   
   /**
-    * The [coded value domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or a [range domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) of the associated field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#domain)
-    */
+  		 * The [coded value domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html) or a [range domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) of the associated field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#domain)
+  		 */
   var domain: js.UndefOr[CodedValueDomainPropertie | RangeDomainPropertiestype] = js.undefined
   
   /**
-    * Indicates whether the field is editable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#editable)
-    */
+  		 * Indicates whether the field is editable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#editable)
+  		 */
   var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The field name as defined by the feature layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#fieldName)
-    */
+  		 * The field name as defined by the feature layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#fieldName)
+  		 */
   var fieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether a field requires a value.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#required)
-    */
+  		 * Indicates whether a field requires a value.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-FieldColumnTemplate.html#required)
+  		 */
   var required: js.UndefOr[Boolean] = js.undefined
 }
 object FieldColumnTemplateProperties {

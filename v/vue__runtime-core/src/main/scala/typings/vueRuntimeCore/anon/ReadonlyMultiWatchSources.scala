@@ -15,7 +15,7 @@ trait ReadonlyMultiWatchSources extends StObject {
   
   def concat(items: (js.Array[WatchSource[Any] | js.Object])*): js.Array[WatchSource[Any] | js.Object] = js.native
   
-  def copyWithin(target: Double, start: Double): this.type = js.native
+  def copyWithin(target: Double): this.type = js.native
   
   def entries(): IterableIterator[js.Tuple2[Double, WatchSource[Any] | js.Object]] = js.native
   

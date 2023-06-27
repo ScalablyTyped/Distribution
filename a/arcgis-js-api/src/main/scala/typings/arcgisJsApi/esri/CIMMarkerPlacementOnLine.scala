@@ -13,45 +13,45 @@ trait CIMMarkerPlacementOnLine
      with MarkerPlacement {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * A value indicating whether to angle the marker to the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * The offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The location on a line where a marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * The location on a line where a marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var relativeTo: LineMiddle | LineBeginning | LineEnd | SegmentMidpoint
   
   /**
-    * The distances from a specified location on a line that a marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
-    */
+  		 * The distances from a specified location on a line that a marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnLine)
+  		 */
   var startPointOffset: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnLine

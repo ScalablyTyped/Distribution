@@ -12,7 +12,7 @@ trait Put extends StObject {
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  var delete: Responses7
+  var delete: Responses9
   
   /**
     * Suspend an app installation
@@ -20,11 +20,11 @@ trait Put extends StObject {
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  var put: Responses7
+  var put: Responses9
 }
 object Put {
   
-  inline def apply(delete: Responses7, put: Responses7): Put = {
+  inline def apply(delete: Responses9, put: Responses9): Put = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[Put]
   }
@@ -32,8 +32,8 @@ object Put {
   @scala.inline
   implicit open class MutableBuilder[Self <: Put] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses7): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses9): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses7): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses9): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

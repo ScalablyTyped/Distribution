@@ -17,10 +17,10 @@ object esriLayersMixinsFeatureReductionLayerMod {
        with FeatureReductionLayer {
     
     /**
-      * Configures the method for reducing the number of point features in the view.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
-      */
+    		 * Configures the method for reducing the number of point features in the view.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+    		 */
     /* CompleteClass */
     var featureReduction: FeatureReductionBinning | FeatureReductionCluster | FeatureReductionSelection = js.native
   }

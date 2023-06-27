@@ -10,8 +10,7 @@ sealed trait FieldType extends StObject
   * Represents the type of Field.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.FieldType")
 @js.native
@@ -20,8 +19,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Add-in.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait addin
@@ -31,8 +29,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is AddressBlock.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait addressBlock
@@ -42,8 +39,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Advance.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait advance
@@ -53,8 +49,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Ask.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait ask
@@ -64,8 +59,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Author.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait author
@@ -75,8 +69,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is AutoText.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait autoText
@@ -86,8 +79,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is AutoTextList.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait autoTextList
@@ -97,8 +89,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Barcode.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait barCode
@@ -108,8 +99,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Bibliography.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait bibliography
@@ -119,8 +109,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is BidiOutline.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait bidiOutline
@@ -130,8 +119,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Citation.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait citation
@@ -141,8 +129,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Comments.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait comments
@@ -152,8 +139,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Compare.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait compare
@@ -163,8 +149,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is CreateDate.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait createDate
@@ -174,8 +159,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Data.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait data
@@ -185,8 +169,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Database.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait database
@@ -196,8 +179,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Date.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait date
@@ -207,8 +189,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is DisplayBarcode.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait displayBarcode
@@ -218,8 +199,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is DocumentProperty
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait docProperty
@@ -229,8 +209,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is DocumentVariable.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait docVariable
@@ -240,8 +219,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is EditTime.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait editTime
@@ -251,8 +229,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Embedded.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait embedded
@@ -262,8 +239,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Empty.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait empty
@@ -273,8 +249,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Equation.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait eq
@@ -284,8 +259,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Expression.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait expression
@@ -295,8 +269,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FileName.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait fileName
@@ -306,8 +279,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FileSize.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait fileSize
@@ -317,8 +289,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FillIn.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait fillIn
@@ -328,8 +299,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FormCheckbox.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait formCheckbox
@@ -339,8 +309,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FormDropdown.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait formDropdown
@@ -350,8 +319,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is FormText.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait formText
@@ -361,8 +329,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is GotoButton.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait gotoButton
@@ -372,8 +339,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is GreetingLine.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait greetingLine
@@ -383,8 +349,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Hyperlink.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait hyperlink
@@ -394,8 +359,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is If.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait `if`
@@ -405,8 +369,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Import.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait `import`
@@ -416,8 +379,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Include.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait include
@@ -427,8 +389,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is IncludePicture.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait includePicture
@@ -438,8 +399,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is IncludeText.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait includeText
@@ -449,8 +409,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Index.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait index
@@ -460,8 +419,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Information.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait info
@@ -471,8 +429,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Keywords.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait keywords
@@ -482,8 +439,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is LastSavedBy.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait lastSavedBy
@@ -493,8 +449,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Link.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait link
@@ -504,8 +459,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is ListNumber.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait listNum
@@ -515,8 +469,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is MacroButton.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait macroButton
@@ -526,8 +479,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is MergeBarcode.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait mergeBarcode
@@ -537,8 +489,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is MergeField.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait mergeField
@@ -548,8 +499,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is MergeRecord.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait mergeRec
@@ -559,8 +509,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is MergeSequence.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait mergeSeq
@@ -570,8 +519,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Next.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait next
@@ -581,8 +529,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is NextIf.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait nextIf
@@ -592,8 +539,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is NoteReference.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait noteRef
@@ -603,8 +549,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is NumberOfCharacters.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait numChars
@@ -614,8 +559,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is NumberOfPages.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait numPages
@@ -625,8 +569,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is NumberOfWords.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait numWords
@@ -636,8 +579,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is ActiveXControl.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait ocx
@@ -647,8 +589,7 @@ object FieldType extends StObject {
   /**
     * Represents the field types not supported by the Office JavaScript API.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait others
@@ -658,8 +599,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Page.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait page
@@ -669,8 +609,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is PageReference.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait pageRef
@@ -680,8 +619,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Print.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait print
@@ -691,8 +629,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is PrintDate.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait printDate
@@ -702,8 +639,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Private.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait `private`
@@ -713,8 +649,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Quote.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait quote
@@ -724,8 +659,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is ReferencedDocument.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait rd
@@ -735,8 +669,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Reference.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait ref
@@ -746,8 +679,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is RevisionNumber.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait revNum
@@ -757,8 +689,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is SaveDate.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait saveDate
@@ -768,8 +699,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Section.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait section
@@ -779,8 +709,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is SectionPages.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait sectionPages
@@ -790,8 +719,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Sequence.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait seq
@@ -801,8 +729,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Set.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait set
@@ -812,8 +739,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Shape.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait shape
@@ -823,8 +749,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is SkipIf.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait skipIf
@@ -834,8 +759,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is StyleReference.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait styleRef
@@ -845,8 +769,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Subject.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait subject
@@ -856,8 +779,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Subscriber.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait subscriber
@@ -867,8 +789,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Symbol.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait symbol
@@ -878,8 +799,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is TableOfAuthoritiesEntry.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait ta
@@ -889,8 +809,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is TableOfContentsEntry.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait tc
@@ -900,8 +819,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Template.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait template
@@ -911,8 +829,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Time.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait time
@@ -922,8 +839,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Title.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait title
@@ -933,8 +849,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is TableOfAuthorities.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait toa
@@ -944,8 +859,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is TableOfContents.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait toc
@@ -955,8 +869,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is Undefined.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait undefined
@@ -966,8 +879,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is UserAddress.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait userAddress
@@ -977,8 +889,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is UserInitials.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait userInitials
@@ -988,8 +899,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is UserName.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait userName
@@ -999,8 +909,7 @@ object FieldType extends StObject {
   /**
     * Represents that the field type is IndexEntry.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait xe

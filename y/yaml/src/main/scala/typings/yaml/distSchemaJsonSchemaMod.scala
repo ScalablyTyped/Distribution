@@ -10,5 +10,5 @@ object distSchemaJsonSchemaMod {
   
   @JSImport("yaml/dist/schema/json/schema", "schema")
   @js.native
-  val schema: js.Array[ScalarTag | CollectionTag] = js.native
+  val schema: js.Array[CollectionTag | ScalarTag] = js.native
 }

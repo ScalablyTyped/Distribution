@@ -142,6 +142,10 @@ object experimentalMod {
     type PromiseLikeOfReactNode = std.PromiseLike<react.react.ReactNode>
     }}}
     to avoid circular code involving: 
+    - react.react.<global>.JSX.ElementType
+    - react.react.GlobalJSXElementType
+    - react.react.JSX.ElementType
+    - react.react.JSXElementConstructor
     - react.react.PromiseLikeOfReactNode
     - react.react.ReactFragment
     - react.react.ReactNode

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tiny-secp256k1" : "2.2.1"
+      "tiny-secp256k1" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "tiny-secp256k1" : "2.2.1"
+      "tiny-secp256k1" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

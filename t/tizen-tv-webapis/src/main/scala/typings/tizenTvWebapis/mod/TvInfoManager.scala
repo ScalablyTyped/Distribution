@@ -55,9 +55,9 @@ trait TvInfoManager extends StObject {
     *
     * @returns Listener ID
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -75,9 +75,9 @@ trait TvInfoManager extends StObject {
     *
     * @returns Key value
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -93,7 +93,7 @@ trait TvInfoManager extends StObject {
     *
     * @returns Plugin version
     *
-    * @throw None N/A
+    * @throws None N/A
     *
     * @since 2.3
     *
@@ -109,7 +109,7 @@ trait TvInfoManager extends StObject {
     * - true: Yes
     * - false: No
     *
-    * @throw WebAPIException with error type NotSupportedError, if the device is a BD device.
+    * @throws WebAPIException with error type NotSupportedError, if the device is a BD device.
     *
     * @since 2.3
     *
@@ -130,7 +130,7 @@ trait TvInfoManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 2.3
     *
@@ -146,9 +146,9 @@ trait TvInfoManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -167,7 +167,7 @@ trait TvInfoManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 2.3
     *

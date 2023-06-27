@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.IndexType
+import typings.openui5.anon.Index
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelFilterTypeMod.FilterType
 import typings.std.Record
@@ -526,7 +526,7 @@ object sapUiModelListBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "filter")`
       * when a filter event is fired.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:filter filter} event of this `sap.ui.model.ListBinding`.
       *
@@ -551,7 +551,7 @@ object sapUiModelListBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "sort")` when
       * a sorter event is fired.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:sort sort} event of this `sap.ui.model.ListBinding`.
       *
@@ -575,7 +575,7 @@ object sapUiModelListBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:filter filter} event of this `sap.ui.model.ListBinding`.
       */
@@ -596,7 +596,7 @@ object sapUiModelListBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:sort sort} event of this `sap.ui.model.ListBinding`.
       */
@@ -616,7 +616,7 @@ object sapUiModelListBindingMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Calculates delta of specified old data array and new data array.
       *
@@ -630,7 +630,7 @@ object sapUiModelListBindingMod {
     aOld: js.Array[Any], /**
       * New data array
       */
-    aNew: js.Array[Any]): js.Array[IndexType] = js.native
+    aNew: js.Array[Any]): js.Array[Index] = js.native
     
     def enableExtendedChangeDetection(
       /**
@@ -648,11 +648,11 @@ object sapUiModelListBindingMod {
     oExtendedChangeDetectionConfig: js.Object
     ): Unit = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enable extended change detection. When extended change detection is enabled, the list binding provides
       * detailed information about changes, for example which entries have been removed or inserted. This can
-      * be utilized by a control for fine-grained update of its elements. Please see {@link sap.ui.model.ListBinding.prototype.getContexts}
+      * be utilized by a control for fine-grained update of its elements. Please see {@link sap.ui.model.ListBinding.prototype.getContexts }
       * for more information.
       *
       * For models that do not have a unique key on each entry by default, a key property or function can be
@@ -750,7 +750,7 @@ object sapUiModelListBindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Returns all current contexts of this list binding in no special order. Just like {@link #getCurrentContexts},
       * this method does not request any data from a back end and does not change the binding's state. In contrast
@@ -762,15 +762,15 @@ object sapUiModelListBindingMod {
     def getAllCurrentContexts(): js.Array[typings.openui5.sapUiModelContextMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns an array of binding contexts for the bound target list.
       *
-      * In case of extended change detection, the context array may have an additional `diff` property, see {@link
-      * topic:7cdff73f308b4b10bdf7d83b7aba72e7 documentation on extended change detection} for details.
+      * In case of extended change detection, the context array may have an additional `diff` property, see {@link https://ui5.sap.com/#/topic/7cdff73f308b4b10bdf7d83b7aba72e7 documentation on extended change detection }
+      * for details.
       *
       * **Note:**The public usage of this method is deprecated, as calls from outside of controls will lead to
-      * unexpected side effects. To avoid this, use {@link sap.ui.model.ListBinding.prototype.getCurrentContexts}
+      * unexpected side effects. To avoid this, use {@link sap.ui.model.ListBinding.prototype.getCurrentContexts }
       * instead.
       *
       * @returns The array of contexts for each row of the bound list
@@ -1048,7 +1048,7 @@ object sapUiModelListBindingMod {
     ): js.Array[typings.openui5.sapUiModelContextMod.default] = js.native
     
     /**
-      * @SINCE 1.93.0
+      * @since 1.93.0
       *
       * Returns the count of entries in the list, or `undefined` if it is unknown. The count is by default identical
       * to the list length if it is final. Concrete subclasses may, however, override the method, for example:
@@ -1064,7 +1064,7 @@ object sapUiModelListBindingMod {
     def getCount(): js.UndefOr[Double] = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Returns the contexts of this list binding as last requested by the control and in the same order the
       * control has received them.
@@ -1093,7 +1093,7 @@ object sapUiModelListBindingMod {
     sFilterType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FilterType * / any */ String
     ): js.Array[typings.openui5.sapUiModelFilterMod.default] = js.native
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the filters set via the constructor or via {@link #filter} for the given {@link sap.ui.model.FilterType}.
       *
@@ -1119,7 +1119,7 @@ object sapUiModelListBindingMod {
     oContext: typings.openui5.sapUiModelContextMod.default): js.Object = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Returns the number of entries in the list.
       *
@@ -1139,7 +1139,7 @@ object sapUiModelListBindingMod {
     def isGrouped(): Boolean = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Returns whether the length which can be retrieved using getLength() is a known, final length, or a preliminary
       * or estimated length which may change if further data is requested.
@@ -1149,8 +1149,8 @@ object sapUiModelListBindingMod {
     def isLengthFinal(): Boolean = js.native
     
     /**
-      * @SINCE 1.77.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.77.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Requests a {@link sap.ui.model.Filter} object which can be used to filter the list binding by entries
       * with model messages. With the filter callback, you can define if a message is considered when creating
@@ -1170,7 +1170,7 @@ object sapUiModelListBindingMod {
     def requestFilterForMessages(): js.Promise[typings.openui5.sapUiModelFilterMod.default | Null] = js.native
     def requestFilterForMessages(
       /**
-      * A callback function to filter only relevant messages. The callback returns whether the given {@link sap.ui.core.message.Message}
+      * A callback function to filter only relevant messages. The callback returns whether the given {@link sap.ui.core.message.Message }
       * is considered. If no callback function is given, all messages are considered.
       */
     fnFilter: js.Function1[/* p1 */ typings.openui5.sapUiCoreMessageMessageMod.default, Boolean]
@@ -1203,4 +1203,16 @@ object sapUiModelListBindingMod {
     aSorters: typings.openui5.sapUiModelSorterMod.default
     ): this.type = js.native
   }
+  
+  trait ListBinding$FilterEventParameters extends StObject
+  
+  trait ListBinding$SortEventParameters extends StObject
+  
+  type ListBindingFilterEvent = typings.openui5.sapUiBaseEventMod.default[ListBinding$FilterEventParameters]
+  
+  type ListBindingFilterEventParameters = ListBinding$FilterEventParameters
+  
+  type ListBindingSortEvent = typings.openui5.sapUiBaseEventMod.default[ListBinding$SortEventParameters]
+  
+  type ListBindingSortEventParameters = ListBinding$SortEventParameters
 }

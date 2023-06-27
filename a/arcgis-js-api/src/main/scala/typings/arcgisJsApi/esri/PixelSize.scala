@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PixelSize extends StObject {
   
   /**
-    * Spatial reference to be used for the request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
-    */
+  		 * Spatial reference to be used for the request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
+  		 */
   var spatialReference: js.UndefOr[PixelSizeSpatialReference] = js.undefined
   
   /**
-    * Represents the size of one pixel in map units along the x axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
-    */
+  		 * Represents the size of one pixel in map units along the x axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
+  		 */
   var x: Double
   
   /**
-    * Represents the size of one pixel in map units along the y axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
-    */
+  		 * Represents the size of one pixel in map units along the y axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
+  		 */
   var y: Double
 }
 object PixelSize {

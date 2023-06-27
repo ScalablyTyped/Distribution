@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonAuthorBranch extends StObject {
   
-  var parameters: `222`
+  var parameters: `262`
   
   var requestBody: ContentApplicationjsonAuthorBranch
   
@@ -14,7 +14,7 @@ trait RequestBodyContentApplicationjsonAuthorBranch extends StObject {
 }
 object RequestBodyContentApplicationjsonAuthorBranch {
   
-  inline def apply(parameters: `222`, requestBody: ContentApplicationjsonAuthorBranch, responses: `200404409`): RequestBodyContentApplicationjsonAuthorBranch = {
+  inline def apply(parameters: `262`, requestBody: ContentApplicationjsonAuthorBranch, responses: `200404409`): RequestBodyContentApplicationjsonAuthorBranch = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAuthorBranch]
   }
@@ -22,7 +22,7 @@ object RequestBodyContentApplicationjsonAuthorBranch {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAuthorBranch] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `222`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `262`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAuthorBranch): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

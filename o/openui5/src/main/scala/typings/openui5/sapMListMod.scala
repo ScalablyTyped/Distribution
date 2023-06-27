@@ -126,7 +126,7 @@ object sapMListMod {
     extends typings.openui5.sapMListBaseMod.default {
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -140,7 +140,7 @@ object sapMListMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -171,7 +171,7 @@ object sapMListMod {
        with ListBaseSettings {
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       *
       * Sets the background style of the list. Depending on the theme, you can change the state of the background
       * from `Solid` to `Translucent` or to `Transparent`.

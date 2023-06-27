@@ -12,20 +12,20 @@ object esriRestNetworksSupportQueryAssociationsParametersMod {
   @JSImport("esri/rest/networks/support/QueryAssociationsParameters", JSImport.Namespace)
   @js.native
   /**
-    * QueryAssociationsParameters describes the parameters required to execute the [queryAssociations()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-queryAssociations.html) function, which returns a list of [associations](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html) filtered by the parameters set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html)
-    */
+  		 * QueryAssociationsParameters describes the parameters required to execute the [queryAssociations()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-queryAssociations.html) function, which returns a list of [associations](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-Association.html) filtered by the parameters set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html)
+  		 */
   open class ^ ()
     extends StObject
        with QueryAssociationsParameters {
     def this(properties: QueryAssociationsParametersProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

@@ -11,12 +11,12 @@ trait ColumnChartMediaInfo
      with ChartMediaInfo {
   
   /**
-    * Indicates the type of chart.
-    *
-    * @default column-chart
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html#type)
-    */
+  		 * Indicates the type of chart.
+  		 *
+  		 * @default column-chart
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html#type)
+  		 */
   val `type`: String
 }
 object ColumnChartMediaInfo {

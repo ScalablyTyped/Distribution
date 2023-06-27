@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-test-builder
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 Helpers for programatically building ProseMirror test documents

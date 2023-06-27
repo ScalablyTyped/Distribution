@@ -35,11 +35,15 @@ trait DeleteParametersPathRepoTeamidResponses extends StObject {
     *
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: Responses367
+  var put: ParametersPathRepoTeamidRequestBody
 }
 object DeleteParametersPathRepoTeamidResponses {
   
-  inline def apply(delete: ParametersPathRepoTeamidResponses, get: ParametersPathRepoTeamid, put: Responses367): DeleteParametersPathRepoTeamidResponses = {
+  inline def apply(
+    delete: ParametersPathRepoTeamidResponses,
+    get: ParametersPathRepoTeamid,
+    put: ParametersPathRepoTeamidRequestBody
+  ): DeleteParametersPathRepoTeamidResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathRepoTeamidResponses]
   }
@@ -51,6 +55,6 @@ object DeleteParametersPathRepoTeamidResponses {
     
     inline def setGet(value: ParametersPathRepoTeamid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses367): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: ParametersPathRepoTeamidRequestBody): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

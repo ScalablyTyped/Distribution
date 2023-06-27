@@ -1,11 +1,17 @@
 package typings.googleMaps.google.maps.journeySharing
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.googleMaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Task extends StObject {
+  
+  /**
+    * Attributes assigned to the task.
+    */
+  var attributes: StringDictionary[Any]
   
   /**
     * The timestamp of the estimated completion time of the task.
@@ -85,18 +91,21 @@ trait Task extends StObject {
 object Task {
   
   inline def apply(
+    attributes: StringDictionary[Any],
     name: String,
     remainingVehicleJourneySegments: js.Array[VehicleJourneySegment],
     status: String,
     `type`: String
   ): Task = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], remainingVehicleJourneySegments = remainingVehicleJourneySegments.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], estimatedCompletionTime = null, latestVehicleLocationUpdate = null, outcome = null, outcomeLocation = null, outcomeLocationSource = null, outcomeTime = null, plannedLocation = null, targetTimeWindow = null, trackingId = null, vehicleId = null)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], remainingVehicleJourneySegments = remainingVehicleJourneySegments.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], estimatedCompletionTime = null, latestVehicleLocationUpdate = null, outcome = null, outcomeLocation = null, outcomeLocationSource = null, outcomeTime = null, plannedLocation = null, targetTimeWindow = null, trackingId = null, vehicleId = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    
+    inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setEstimatedCompletionTime(value: js.Date): Self = StObject.set(x, "estimatedCompletionTime", value.asInstanceOf[js.Any])
     

@@ -43,12 +43,14 @@ object anon {
       * @param target If target is negative, it is treated as length+target where length is the
       * length of the array.
       * @param start If start is negative, it is treated as length+start. If end is negative, it
-      * is treated as length+end.
+      * is treated as length+end. If start is omitted, `0` is used.
       * @param end If not specified, length of the this object is used as its default value.
       */
     /* standard es2015.core */
+    def copyWithin(target: Double): this.type = js.native
     def copyWithin(target: Double, start: Double): this.type = js.native
     def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
+    def copyWithin(target: Double, start: Unit, end: Double): this.type = js.native
     
     /**
       * Returns an iterable of key, value pairs for every entry in the array

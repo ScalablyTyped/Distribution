@@ -222,7 +222,6 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
   def raycastAll(start: Vec3, end: Vec3): js.Array[RaycastResult] = js.native
   def raycastAll(start: Vec3, end: Vec3, options: FilterCollisionGroup): js.Array[RaycastResult] = js.native
   
-  def raycastFirst(start: Vec3, end: Vec3, options: Unit, args: Any*): RaycastResult | Null = js.native
   /**
     * Raycast the world and return the first entity the ray hits. Fire a ray into the world from
     * start to end, if the ray hits an entity with a collision component, it returns a
@@ -240,7 +239,8 @@ open class RigidBodyComponentSystem protected () extends ComponentSystem {
     *
     * @returns {RaycastResult|null} The result of the raycasting or null if there was no hit.
     */
-  def raycastFirst(start: Vec3, end: Vec3, options: FilterCallback, args: Any*): RaycastResult | Null = js.native
+  def raycastFirst(start: Vec3, end: Vec3): RaycastResult | Null = js.native
+  def raycastFirst(start: Vec3, end: Vec3, options: FilterCallback): RaycastResult | Null = js.native
   
   def removeBody(body: Any): Unit = js.native
   

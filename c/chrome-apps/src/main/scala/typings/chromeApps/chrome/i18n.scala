@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.i18n infrastructure to implement internationalization across your whole app.
   * Content scripts: Fully supported.
-  * @see[Docs]{@link https://developer.chrome.com/apps/i18n}
+  * @see https://developer.chrome.com/apps/i18n
   * @since Chrome 25.
   */
 object i18n {
@@ -600,7 +600,7 @@ object i18n {
   type StringSubstitutions = js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String]) | (js.Tuple4[String, String, String, String]) | (js.Tuple5[String, String, String, String, String]) | (js.Tuple6[String, String, String, String, String, String]) | (js.Tuple7[String, String, String, String, String, String, String]) | (js.Tuple8[String, String, String, String, String, String, String, String]) | (js.Tuple9[String, String, String, String, String, String, String, String, String])
   
   /**
-    * @see[Source]{@link https://github.com/chromium/chromium/blob/master/ui/base/l10n/l10n_util.cc}
+    * @see https://github.com/chromium/chromium/blob/master/ui/base/l10n/l10n_util.cc
     */
   /* Rewritten from type alias, can be one of: 
     - typings.chromeApps.chromeAppsStrings.af

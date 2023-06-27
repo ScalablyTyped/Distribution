@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InlinePictureUpdateData extends StObject {
   
   /**
-    * Gets or sets a string that represents the alternative text associated with the inline image.
+    * Specifies a string that represents the alternative text associated with the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -16,7 +16,7 @@ trait InlinePictureUpdateData extends StObject {
   var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets a string that contains the title for the inline image.
+    * Specifies a string that contains the title for the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -24,7 +24,7 @@ trait InlinePictureUpdateData extends StObject {
   var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets a number that describes the height of the inline image.
+    * Specifies a number that describes the height of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -32,7 +32,7 @@ trait InlinePictureUpdateData extends StObject {
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+    * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -40,7 +40,7 @@ trait InlinePictureUpdateData extends StObject {
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -48,7 +48,7 @@ trait InlinePictureUpdateData extends StObject {
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets a number that describes the width of the inline image.
+    * Specifies a number that describes the width of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]

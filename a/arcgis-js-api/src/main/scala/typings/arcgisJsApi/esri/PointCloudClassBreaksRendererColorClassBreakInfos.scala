@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudClassBreaksRendererColorClassBreakInfos extends StObject {
   
   /**
-    * The color used to colorize the points where values are between the `minValue` and `maxValue` of the break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
-    */
+  		 * The color used to colorize the points where values are between the `minValue` and `maxValue` of the break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
+  		 */
   var color: Color_
   
   /**
-    * The label used to describe point in the break.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label used to describe point in the break.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum value of the break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
-    */
+  		 * The maximum value of the break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
+  		 */
   var maxValue: Double
   
   /**
-    * The minimum value of the break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
-    */
+  		 * The minimum value of the break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
+  		 */
   var minValue: Double
 }
 object PointCloudClassBreaksRendererColorClassBreakInfos {

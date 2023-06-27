@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait APIKeyMixinProperties extends StObject {
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
 }
 object APIKeyMixinProperties {

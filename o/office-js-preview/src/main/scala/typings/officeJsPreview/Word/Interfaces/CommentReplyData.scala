@@ -24,7 +24,7 @@ trait CommentReplyData extends StObject {
   var authorName: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the comment reply's content. The string is plain text.
+    * Specifies the comment reply's content. The string is plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -32,7 +32,7 @@ trait CommentReplyData extends StObject {
   var content: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the commentReply's content range.
+    * Specifies the commentReply's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]

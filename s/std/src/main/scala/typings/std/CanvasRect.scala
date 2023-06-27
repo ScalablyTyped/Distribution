@@ -6,12 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasRect extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/clearRect) */
   /* standard dom */
   def clearRect(x: Double, y: Double, w: Double, h: Double): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fillRect) */
   /* standard dom */
   def fillRect(x: Double, y: Double, w: Double, h: Double): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/strokeRect) */
   /* standard dom */
   def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit
 }

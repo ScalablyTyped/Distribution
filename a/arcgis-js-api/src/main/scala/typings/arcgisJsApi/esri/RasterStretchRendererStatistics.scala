@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterStretchRendererStatistics extends StObject {
   
   /**
-    * The average pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
-    */
+  		 * The average pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
+  		 */
   var avg: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
-    */
+  		 * The maximum pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
+  		 */
   var max: Double
   
   /**
-    * The minimum pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
-    */
+  		 * The minimum pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
+  		 */
   var min: Double
   
   /**
-    * The standard deviation of the pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
-    */
+  		 * The standard deviation of the pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
+  		 */
   var stddev: js.UndefOr[Double] = js.undefined
 }
 object RasterStretchRendererStatistics {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for xml-parser-xo
 
-Typings are for version 4.0.5
+Typings are for version 4.1.0
 
 ## Library description:
 Parse a XML string into a proprietary syntax tree

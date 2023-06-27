@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PieChartScheme extends StObject {
   
   /**
-    * The color of the "others" category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The color of the "others" category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var colorForOthersCategory: Color_
   
   /**
-    * The colors used to visualize pie slices in the chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The colors used to visualize pie slices in the chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The unique name of the color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The unique name of the color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var name: String
   
   /**
-    * Properties for defining the outline of the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * Properties for defining the outline of the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var outline: PieChartSchemeOutline
   
   /**
-    * The default size of the pie charts in points or pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The default size of the pie charts in points or pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var size: Double | String
   
   /**
-    * The scheme defining the size visual variable used to vary chart size per feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The scheme defining the size visual variable used to vary chart size per feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var sizeScheme: SizeScheme
   
   /**
-    * Tags associated with the color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * Tags associated with the color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var tags: js.Array[String]
 }
 object PieChartScheme {

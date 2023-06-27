@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Alpha
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -126,7 +125,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -141,20 +140,20 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ColorPickerPopover` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -174,7 +173,7 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -185,7 +184,7 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ColorPickerPopover` itself
       */
@@ -193,7 +192,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -208,20 +207,20 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ColorPickerPopover` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -241,7 +240,7 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -252,7 +251,7 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ColorPickerPopover` itself
       */
@@ -265,7 +264,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     def close(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:change change} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -277,13 +276,13 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -291,7 +290,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.ui.unified.ColorPickerPopover`.
       *
@@ -303,13 +302,13 @@ object sapUiUnifiedColorPickerPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPickerPopoverLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -317,35 +316,39 @@ object sapUiUnifiedColorPickerPopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.60.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Alpha): this.type = js.native
+    mParameters: ColorPickerPopover$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.85
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.85
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Alpha): this.type = js.native
+    mParameters: ColorPickerPopover$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Gets current value of property {@link #getColorString colorString}.
       *
@@ -361,7 +364,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     def getColorString(): String = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Gets current value of property {@link #getDisplayMode displayMode}.
       *
@@ -374,7 +377,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     def getDisplayMode(): ColorPickerDisplayMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColorPickerDisplayMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Gets current value of property {@link #getMode mode}.
       *
@@ -409,7 +412,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     ): Any = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Sets a new value for property {@link #getColorString colorString}.
       *
@@ -431,7 +434,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     sColorString: String): this.type = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Sets a new value for property {@link #getDisplayMode displayMode}.
       *
@@ -456,7 +459,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     sDisplayMode: ColorPickerDisplayMode): this.type = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Sets a new value for property {@link #getMode mode}.
       *
@@ -481,19 +484,222 @@ object sapUiUnifiedColorPickerPopoverMod {
     sMode: ColorPickerMode): this.type = js.native
   }
   
+  trait ColorPickerPopover$ChangeEventParameters extends StObject {
+    
+    /**
+      * Parameter containing the alpha value (transparency).
+      */
+    var alpha: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the BLUE value (0-255).
+      */
+    var b: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the GREEN value (0-255).
+      */
+    var g: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the HUE value (0-360).
+      */
+    var h: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the Hexadecimal string (#FFFFFF).
+      */
+    var hex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the LIGHTNESS value (0-100).
+      */
+    var l: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the RED value (0-255).
+      */
+    var r: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the SATURATION value (0-100).
+      */
+    var s: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the VALUE value (0-100).
+      */
+    var v: js.UndefOr[int] = js.undefined
+  }
+  object ColorPickerPopover$ChangeEventParameters {
+    
+    inline def apply(): ColorPickerPopover$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColorPickerPopover$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerPopover$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      
+      inline def setB(value: int): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      
+      inline def setG(value: int): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      
+      inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+      
+      inline def setH(value: int): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      
+      inline def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
+      
+      inline def setL(value: int): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      
+      inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+      
+      inline def setR(value: int): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      
+      inline def setS(value: int): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setV(value: int): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    }
+  }
+  
+  trait ColorPickerPopover$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Parameter containing the alpha value (transparency).
+      */
+    var alpha: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the BLUE value (0-255).
+      */
+    var b: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the GREEN value (0-255).
+      */
+    var g: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the HUE value (0-360).
+      */
+    var h: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the Hexadecimal string (#FFFFFF).
+      */
+    var hex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the LIGHTNESS value (0-100).
+      */
+    var l: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the RED value (0-255).
+      */
+    var r: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the SATURATION value (0-100).
+      */
+    var s: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the VALUE value (0-100).
+      */
+    var v: js.UndefOr[int] = js.undefined
+  }
+  object ColorPickerPopover$LiveChangeEventParameters {
+    
+    inline def apply(): ColorPickerPopover$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColorPickerPopover$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerPopover$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      
+      inline def setB(value: int): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      
+      inline def setG(value: int): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      
+      inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+      
+      inline def setH(value: int): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      
+      inline def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
+      
+      inline def setL(value: int): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      
+      inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+      
+      inline def setR(value: int): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      
+      inline def setS(value: int): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setV(value: int): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    }
+  }
+  
+  type ColorPickerPopoverChangeEvent = typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$ChangeEventParameters]
+  
+  type ColorPickerPopoverChangeEventParameters = ColorPickerPopover$ChangeEventParameters
+  
+  type ColorPickerPopoverLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$LiveChangeEventParameters]
+  
+  type ColorPickerPopoverLiveChangeEventParameters = ColorPickerPopover$LiveChangeEventParameters
+  
   trait ColorPickerPopoverSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Fired when the submit button of the popover is clicked.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Determines the input parameter that can be a string of type HEX, RGB, HSV, or a CSS color name:
       *
@@ -505,7 +711,7 @@ object sapUiUnifiedColorPickerPopoverMod {
     var colorString: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Determines the display mode of the `ColorPicker` among three types - Default, Large and Simplified
       */
@@ -514,14 +720,19 @@ object sapUiUnifiedColorPickerPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Fired when the value is changed by user interaction in the internal ColorPicker
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Determines the color mode of the `ColorPicker`.
       */
@@ -539,7 +750,9 @@ object sapUiUnifiedColorPickerPopoverMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ColorPickerPopoverSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -553,7 +766,9 @@ object sapUiUnifiedColorPickerPopoverMod {
       
       inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPickerPopover$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

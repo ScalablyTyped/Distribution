@@ -5,54 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Describes a single variable in the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
-  *
-  * @deprecated This module was moved in 4.25. Use {@link module:esri/layers/voxel/VoxelVariable esri/layers/voxel/VoxelVariable} instead.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html)
-  */
+	 * Describes a single variable in the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
+	 *
+	 * @deprecated This module was moved in 4.25. Use {@link module:esri/layers/voxel/VoxelVariable esri/layers/voxel/VoxelVariable} instead.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html)
+	 */
 trait VoxelVariable extends StObject {
   
   /**
-    * The original data source description of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#description)
-    */
+  		 * The original data source description of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#description)
+  		 */
   val description: String
   
   /**
-    * The unique identifier for the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#id)
-    */
+  		 * The unique identifier for the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#id)
+  		 */
   val id: Double
   
   /**
-    * The original data source name of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#name)
-    */
+  		 * The original data source name of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#name)
+  		 */
   val name: String
   
   /**
-    * A description of various properties of the variable as it is represented on the GPU.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
-    */
+  		 * A description of various properties of the variable as it is represented on the GPU.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
+  		 */
   val renderingFormat: VoxelVariableRenderingFormat
   
   /**
-    * The variable units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#unit)
-    */
+  		 * The variable units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#unit)
+  		 */
   val unit: String
   
   /**
-    * The volumeId of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#volumeId)
-    */
+  		 * The volumeId of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#volumeId)
+  		 */
   val volumeId: Double
 }
 object VoxelVariable {

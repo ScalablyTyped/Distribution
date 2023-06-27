@@ -24,17 +24,17 @@ trait ParameterValue
      with JSONSupport {
   
   /**
-    * Specifies the parameter's data type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
-    */
+  		 * Specifies the parameter's data type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
+  		 */
   var dataType: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value` = js.native
   
   /**
-    * The value of the parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
-    */
+  		 * The value of the parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
+  		 */
   var value: Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String | (js.Array[
     Boolean | DataFile | js.Date | Double | FeatureSet | Field | LinearUnit | RasterData | String
   ]) = js.native

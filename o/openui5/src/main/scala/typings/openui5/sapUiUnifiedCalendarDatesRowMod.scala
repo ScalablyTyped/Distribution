@@ -133,7 +133,7 @@ object sapUiUnifiedCalendarDatesRowMod {
     def getDays(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -175,7 +175,7 @@ object sapUiUnifiedCalendarDatesRowMod {
     iDays: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -200,9 +200,13 @@ object sapUiUnifiedCalendarDatesRowMod {
       * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * A JavaScript date
+      * A date instance
       */
     oStartDate: js.Date): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oStartDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
   }
   
   trait DatesRowSettings
@@ -215,7 +219,7 @@ object sapUiUnifiedCalendarDatesRowMod {
     var days: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set the day names are shown in a separate line. If not set the day names are shown inside the single
       * days.

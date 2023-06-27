@@ -1,6 +1,5 @@
 package typings.std.global
 
-import typings.std.GamepadHapticActuatorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* standard dom */
 open class GamepadHapticActuator ()
   extends StObject
-     with typings.std.GamepadHapticActuator {
-  
-  /* standard dom */
-  /* CompleteClass */
-  override val `type`: GamepadHapticActuatorType = js.native
-}
+     with typings.std.GamepadHapticActuator

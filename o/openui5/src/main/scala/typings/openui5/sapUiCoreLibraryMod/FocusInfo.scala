@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FocusInfo extends StObject {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The position of the cursor.
     */
   var cursorPos: js.UndefOr[int] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The ID of the focused control.
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Prevents scrolling.
     */
   var preventScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The end position of selection.
     */
   var selectionEnd: js.UndefOr[int] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The start position of selection.
     */

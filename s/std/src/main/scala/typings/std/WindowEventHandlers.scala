@@ -314,57 +314,75 @@ trait WindowEventHandlers extends StObject {
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/afterprint_event) */
   /* standard dom */
   var onafterprint: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event) */
   /* standard dom */
   var onbeforeprint: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event) */
   /* standard dom */
   var onbeforeunload: (js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event) */
   /* standard dom */
   var ongamepadconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event) */
   /* standard dom */
   var ongamepaddisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/hashchange_event) */
   /* standard dom */
   var onhashchange: (js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/languagechange_event) */
   /* standard dom */
   var onlanguagechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/message_event) */
   /* standard dom */
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/messageerror_event) */
   /* standard dom */
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/offline_event) */
   /* standard dom */
   var onoffline: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/online_event) */
   /* standard dom */
   var ononline: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagehide_event) */
   /* standard dom */
   var onpagehide: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageshow_event) */
   /* standard dom */
   var onpageshow: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/popstate_event) */
   /* standard dom */
   var onpopstate: (js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event) */
   /* standard dom */
   var onrejectionhandled: (js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/storage_event) */
   /* standard dom */
   var onstorage: (js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event) */
   /* standard dom */
   var onunhandledrejection: (js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unload_event) */
   /* standard dom */
   var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   

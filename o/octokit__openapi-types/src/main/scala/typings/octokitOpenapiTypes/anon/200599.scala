@@ -9,20 +9,14 @@ trait `200599` extends StObject {
   /** @description Response */
   var `200`: `599`
   
-  var `301`: Content36
-  
-  var `404`: Content36
-  
-  var `410`: Content36
+  var `404`: Content41
 }
 object `200599` {
   
-  inline def apply(`200`: `599`, `301`: Content36, `404`: Content36, `410`: Content36): `200599` = {
+  inline def apply(`200`: `599`, `404`: Content41): `200599` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("301")(`301`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
-    __obj.updateDynamic("410")(`410`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200599`]
   }
   
@@ -31,10 +25,6 @@ object `200599` {
     
     inline def set200(value: `599`): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set301(value: Content36): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
-    
-    inline def set410(value: Content36): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

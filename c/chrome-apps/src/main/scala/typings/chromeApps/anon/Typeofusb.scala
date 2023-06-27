@@ -89,7 +89,7 @@ trait Typeofusb extends StObject {
     *                  - vendorId: The device vendor ID.
     *                  - productId: The product ID.
     *                  - The interface ID to request access to. Only available on Chrome OS. It has no effect on other platforms.
-    * @requires(CrOS) Chrome OS if you specify *interfaceId*
+    * @requires Chrome OS if you specify *interfaceId*
     * @param callback
     */
   def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = js.native
@@ -211,7 +211,7 @@ trait Typeofusb extends StObject {
   
   /**
     * @deprecated Since Chrome 40.
-    * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
+    * @requires Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
   def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   

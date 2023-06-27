@@ -12,20 +12,20 @@ object esriRestSupportNamessageMod {
   @JSImport("esri/rest/support/NAMessage", JSImport.Namespace)
   @js.native
   /**
-    * Represents a message generated during the execution of a network analyst task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html)
-    */
+  		 * Represents a message generated during the execution of a network analyst task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html)
+  		 */
   open class ^ ()
     extends StObject
        with NAMessage {
     def this(properties: NAMessageProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

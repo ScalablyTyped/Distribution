@@ -1,1360 +1,177 @@
 package typings.officeJs.Word
 
+import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.Word.Interfaces.StyleData
+import typings.officeJs.Word.Interfaces.StyleLoadOptions
+import typings.officeJs.Word.Interfaces.StyleUpdateData
+import typings.officeJs.anon.Expand
+import typings.officeJs.officeJsStrings.Character
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Style extends StObject
 /**
+  * Represents a style in a Word document.
+  *
   * @remarks
   * [Api set: WordApi 1.3]
   */
-@JSGlobal("Word.Style")
 @js.native
-object Style extends StObject {
+trait Style
+  extends StObject
+     with ClientObject {
   
   /**
+    * Gets the name of an existing style to use as the base formatting of another style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait bibliography
-    extends StObject
-       with Style
+  val baseStyle: String = js.native
   
   /**
+    * Gets whether the specified style is a built-in style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait bookTitle
-    extends StObject
-       with Style
+  val builtIn: Boolean = js.native
   
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait caption
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait emphasis
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait endnoteReference
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait endnoteText
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait footer
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait footnoteReference
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait footnoteText
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable1Light_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable2_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable3_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable4_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable5Dark_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable6Colorful_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait gridTable7Colorful_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait header
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading7
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading8
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait heading9
-    extends StObject
-       with Style
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Style: RequestContext = js.native
   
   /**
+    * Deletes the style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait hyperlink
-    extends StObject
-       with Style
+  def delete(): Unit = js.native
   
   /**
+    * Gets a font object that represents the character formatting of the specified style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait intenseEmphasis
-    extends StObject
-       with Style
+  val font: Font = js.native
   
   /**
+    * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait intenseQuote
-    extends StObject
-       with Style
+  val inUse: Boolean = js.native
   
   /**
+    * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait intenseReference
-    extends StObject
-       with Style
+  val linked: Boolean = js.native
   
   /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listParagraph
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable1Light_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable2_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable3_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable4_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable5Dark_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable6Colorful_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait listTable7Colorful_Accent6
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait noSpacing
-    extends StObject
-       with Style
-  
-  /**
-    * Reset character and paragraph style to default.
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait normal
-    extends StObject
-       with Style
-  
-  /**
-    * Mixed styles or other style not in this list.
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait other
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait plainTable1
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait plainTable2
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait plainTable3
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait plainTable4
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait plainTable5
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait quote
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait strong
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait subtitle
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait subtleEmphasis
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
-    */
-  @js.native
-  sealed trait subtleReference
-    extends StObject
-       with Style
-  
-  /**
-    * @remarks
-    * [Api set: WordApi 1.3]
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    *
+    * @param options Provides options for which properties of the object to load.
     */
-  @js.native
-  sealed trait tableGrid
-    extends StObject
-       with Style
+  def load(): Style = js.native
+  def load(options: StyleLoadOptions): Style = js.native
+  def load(propertyNamesAndPaths: Expand): Style = js.native
+  def load(propertyNames: String): Style = js.native
+  def load(propertyNames: js.Array[String]): Style = js.native
   
   /**
+    * Gets the name of a style in the language of the user.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait tableGridLight
-    extends StObject
-       with Style
+  val nameLocal: String = js.native
   
   /**
+    * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait title
-    extends StObject
-       with Style
+  val nextParagraphStyle: String = js.native
   
   /**
-    * Table-of-content level 1.
+    * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait toc1
-    extends StObject
-       with Style
+  val paragraphFormat: ParagraphFormat = js.native
   
   /**
-    * Table-of-content level 2.
+    * Specifies the priority.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait toc2
-    extends StObject
-       with Style
+  var priority: Double = js.native
   
   /**
-    * Table-of-content level 3.
+    * Specifies whether the style corresponds to an available quick style.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait toc3
-    extends StObject
-       with Style
+  var quickStyle: Boolean = js.native
   
   /**
-    * Table-of-content level 4.
-    * @remarks
-    * [Api set: WordApi 1.3]
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+    * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
-  @js.native
-  sealed trait toc4
-    extends StObject
-       with Style
+  def set(properties: StyleUpdateData): Unit = js.native
+  def set(properties: StyleUpdateData, options: UpdateOptions): Unit = js.native
+  /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+  def set(properties: Style): Unit = js.native
   
   /**
-    * Table-of-content level 5.
-    * @remarks
-    * [Api set: WordApi 1.3]
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
     */
-  @js.native
-  sealed trait toc5
-    extends StObject
-       with Style
+  def toJSON(): StyleData = js.native
   
   /**
-    * Table-of-content level 6.
-    * @remarks
-    * [Api set: WordApi 1.3]
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
-  @js.native
-  sealed trait toc6
-    extends StObject
-       with Style
+  def track(): Style = js.native
   
   /**
-    * Table-of-content level 7.
+    * Gets the style type.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait toc7
-    extends StObject
-       with Style
+  val `type`: StyleType | Character | typings.officeJs.officeJsStrings.List | typings.officeJs.officeJsStrings.Paragraph | typings.officeJs.officeJsStrings.Table = js.native
   
   /**
-    * Table-of-content level 8.
+    * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait toc8
-    extends StObject
-       with Style
+  var unhideWhenUsed: Boolean = js.native
   
   /**
-    * Table-of-content level 9.
-    * @remarks
-    * [Api set: WordApi 1.3]
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
-  @js.native
-  sealed trait toc9
-    extends StObject
-       with Style
+  def untrack(): Style = js.native
   
   /**
-    * Table-of-content heading.
+    * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+    *
     * @remarks
-    * [Api set: WordApi 1.3]
+    * [Api set: WordApi 1.5]
     */
-  @js.native
-  sealed trait tocHeading
-    extends StObject
-       with Style
+  var visibility: Boolean = js.native
 }

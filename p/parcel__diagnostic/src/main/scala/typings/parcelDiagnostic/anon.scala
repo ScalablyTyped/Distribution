@@ -90,6 +90,30 @@ object anon {
     }
   }
   
+  trait EndStart extends StObject {
+    
+    /** 1-based, exclusive */
+    val end: Line
+    
+    /** 1-based, inclusive */
+    val start: Line
+  }
+  object EndStart {
+    
+    inline def apply(end: Line, start: Line): EndStart = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EndStart]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndStart] (val x: Self) extends AnyVal {
+      
+      inline def setEnd(value: Line): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: Line): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait FilePath extends StObject {
     
     var filePath: js.UndefOr[String | Null] = js.undefined
@@ -149,6 +173,50 @@ object anon {
       inline def setTypeNull: Self = StObject.set(x, "type", null)
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait Line extends StObject {
+    
+    val column: Double
+    
+    val line: Double
+  }
+  object Line {
+    
+    inline def apply(column: Double, line: Double): Line = {
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Line]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Start extends StObject {
+    
+    var end: Line
+    
+    var start: Line
+  }
+  object Start {
+    
+    inline def apply(end: Line, start: Line): Start = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Start]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
+      
+      inline def setEnd(value: Line): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: Line): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

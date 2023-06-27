@@ -9,35 +9,35 @@ trait ColorSliderProperties
      with SmartMappingSliderBaseProperties {
   
   /**
-    * Only applicable when three thumbs (i.e.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary)
-    */
+  		 * Only applicable when three thumbs (i.e.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary)
+  		 */
   var handlesSyncedToPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the slider will render a third handle between the two handles already provided by default.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled)
-    */
+  		 * When `true`, the slider will render a third handle between the two handles already provided by default.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled)
+  		 */
   var primaryHandleEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The color stops from the [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#stops)
-    */
+  		 * The color stops from the [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
   
   /**
-    * The view model for the ColorSlider widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#viewModel)
-    */
+  		 * The view model for the ColorSlider widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[ColorSliderViewModelProperties] = js.undefined
 }
 object ColorSliderProperties {

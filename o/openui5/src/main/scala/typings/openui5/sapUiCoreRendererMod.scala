@@ -33,8 +33,7 @@ object sapUiCoreRendererMod extends Shortcut {
       * (its global name, in dot-notation), and an optional object literal that contains methods or fields to
       * be added to the new renderer class.
       *
-      * This signature has been designed to resemble the class extension mechanism as provided by {@link sap.ui.base.Object.extend
-      * Object.extend}.
+      * This signature has been designed to resemble the class extension mechanism as provided by {@link sap.ui.base.Object.extend Object.extend}.
       *
       *
       * ```javascript
@@ -97,10 +96,10 @@ object sapUiCoreRendererMod extends Shortcut {
       * ```
       *
       *
-      * **Note:** The modern signature no longer requires the `bExport` flag to be set for the enclosing {@link
-      * sap.ui.define} call. The Renderer base class takes care of the necessary global export of the renderer.
-      * This allows non-SAP developers to write a renderer that complies with the documented restriction for
-      * `sap.ui.define` (no use of bExport = true outside sap.ui.core projects).
+      * **Note:** The modern signature no longer requires the `bExport` flag to be set for the enclosing {@link sap.ui.define }
+      * call. The Renderer base class takes care of the necessary global export of the renderer. This allows
+      * non-SAP developers to write a renderer that complies with the documented restriction for `sap.ui.define`
+      * (no use of bExport = true outside sap.ui.core projects).
       *
       * Deprecated Signature:
       *
@@ -215,7 +214,7 @@ object sapUiCoreRendererMod extends Shortcut {
     oTextDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String
     ): String = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the TextAlignment for the provided configuration.
       *

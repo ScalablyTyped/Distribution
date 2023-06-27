@@ -20,45 +20,45 @@ trait PointBarrier
      with JSONSupport {
   
   /**
-    * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#barrierType)
-    */
+  		 * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#barrierType)
+  		 */
   var barrierType: restriction | `added-cost` = js.native
   
   /**
-    * The side of the vehicle the curb is on when arriving at the stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#curbApproach)
-    */
+  		 * The side of the vehicle the curb is on when arriving at the stop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#curbApproach)
+  		 */
   var curbApproach: `either-side-of-vehicle` | `right-side-of-vehicle` | `left-side-of-vehicle` | `no-u-turn` = js.native
   
   /**
-    * Point barriers are applied to the edge elements during the analysis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fullEdge)
-    */
+  		 * Point barriers are applied to the edge elements during the analysis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fullEdge)
+  		 */
   var fullEdge: permit | restrict = js.native
   
   /**
-    * The point location of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#geometry)
-    */
+  		 * The point location of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#geometry)
+  		 */
   var geometry: Point = js.native
   
   /**
-    * The name of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#name)
-    */
+  		 * The name of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [PointBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html) instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#toGraphic)
-    */
+  		 * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [PointBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html) instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#toGraphic)
+  		 */
   def toGraphic(): Graphic = js.native
   
   val `type`: `barrier-point` = js.native

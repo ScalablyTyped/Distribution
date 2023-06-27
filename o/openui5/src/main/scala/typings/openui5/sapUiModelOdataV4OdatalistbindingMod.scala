@@ -3,6 +3,9 @@ package typings.openui5
 import typings.openui5.anon.Aggregate
 import typings.openui5.anon.As
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiModelBindingMod.Binding$ChangeEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataReceivedEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataRequestedEventParameters
 import typings.openui5.sapUiModelFilterTypeMod.FilterType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -87,7 +90,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     extends typings.openui5.sapUiModelListBindingMod.default {
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Attach event handler `fnFunction` to the 'createActivate' event of this binding.
       *
@@ -109,7 +112,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Attach event handler `fnFunction` to the 'createCompleted' event of this binding.
       *
@@ -131,7 +134,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Attach event handler `fnFunction` to the 'createSent' event of this binding.
       *
@@ -153,7 +156,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * See {@link sap.ui.base.EventProvider#attachEvent}
       * See:
@@ -206,7 +209,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Attach event handler `fnFunction` to the 'patchCompleted' event of this binding.
       *
@@ -228,7 +231,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Attach event handler `fnFunction` to the 'patchSent' event of this binding.
       *
@@ -250,13 +253,13 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Changes this binding's parameters and refreshes the binding. Since 1.111.0, a list binding's header context
       * is deselected.
       *
-      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges}
-      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges }
+      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * to submit the changes or {@link sap.ui.model.odata.v4.ODataModel#resetChanges} to reset the changes before
       * calling {@link #changeParameters}.
       *
@@ -271,16 +274,16 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Creates a new entity and inserts it at the start or the end of the list.
       *
       * For creating the new entity, the binding's update group ID is used, see {@link #getUpdateGroupId}.
       *
       * You can call {@link sap.ui.model.odata.v4.Context#delete} to delete the created context again. As long
-      * as the context is {@link sap.ui.model.odata.v4.Context#isTransient transient} and {@link sap.ui.model.odata.v4.Context#isInactive
-      * active}, {@link #resetChanges} and a call to {@link sap.ui.model.odata.v4.ODataModel#resetChanges} with
-      * the update group ID as parameter also delete the created context together with other changes.
+      * as the context is {@link sap.ui.model.odata.v4.Context#isTransient transient} and {@link sap.ui.model.odata.v4.Context#isInactive active},
+      * {@link #resetChanges} and a call to {@link sap.ui.model.odata.v4.ODataModel#resetChanges} with the update
+      * group ID as parameter also delete the created context together with other changes.
       *
       * If the creation of the entity on the server failed, the creation is repeated automatically. If the binding's
       * update group ID has {@link sap.ui.model.odata.v4.SubmitMode.API}, it is repeated with the next call of
@@ -289,9 +292,9 @@ object sapUiModelOdataV4OdatalistbindingMod {
       * IDs with {@link sap.ui.model.odata.v4.SubmitMode.Auto} in order to repeat the creation even if there
       * is no update for the entity.
       *
-      * Each time the data for the created entity is sent to the server, a {@link #event:createSent 'createSent'}
-      * event is fired and each time the client receives a response for the creation, a {@link #event:createCompleted
-      * 'createCompleted'} event is fired, independent of whether the creation was successful or not.
+      * Each time the data for the created entity is sent to the server, a {@link #event:createSent 'createSent' }
+      * event is fired and each time the client receives a response for the creation, a {@link #event:createCompleted 'createCompleted' }
+      * event is fired, independent of whether the creation was successful or not.
       *
       * The initial data for the created entity can be supplied via the parameter `oInitialData` and modified
       * via property bindings. Properties that are not part of the initial data show the default value from the
@@ -305,31 +308,33 @@ object sapUiModelOdataV4OdatalistbindingMod {
       * Note: After creation, the created entity is refreshed to ensure that the data specified in this list
       * binding's $expand is available. This refresh is done via the group ID of the binding, unless the group
       * ID has {@link sap.ui.model.odata.v4.SubmitMode.API}, in which case '$auto' is used. To skip this refresh,
-      * set `bSkipRefresh` to `true`. To avoid errors you must skip this refresh when using {@link sap.ui.model.odata.v4.Context#requestSideEffects}
+      * set `bSkipRefresh` to `true`. To avoid errors you must skip this refresh when using {@link sap.ui.model.odata.v4.Context#requestSideEffects }
       * in the same $batch to refresh the complete collection containing the newly created entity.
       *
-      * Since 1.112.0 it is possible to create nested entities in a collection-valued navigation property together
+      * Since 1.115.0 it is possible to create nested entities in a collection-valued navigation property together
       * with the entity (so-called "deep create"), for example a list of items for an order. For this purpose,
       * bind the list relative to a transient context. Calling this method then adds a transient entity to the
       * parent's navigation property, which is sent with the payload of the parent entity. Such a nested context
-      * also has a {@link sap.ui.model.odata.v4.Context#created created} promise, which resolves when the deep
-      * create resolves. **Beware:** After a succesful creation of the main entity the context returned for a
-      * nested entity is no longer valid. New contexts are created for the nested collection because it is not
-      * possible to reliably assign the response entities to those of the request, especially if the count differs.
+      * cannot be inactive.
       *
-      * Deep create requires the autoExpandSelect parameter at the {@link sap.ui.model.odata.v4.ODataModel#constructor
-      * model}. The refresh after a deep create is optimized. Only the (navigation) properties missing from the
-      * POST response are actually requested. If the POST response contains all required properties, no request
-      * is sent at all.
+      * **Beware:** After a succesful creation of the main entity the context returned for a nested entity is
+      * no longer valid. Do not use the {@link sap.ui.model.odata.v4.Context#created created} promise of such
+      * a context! New contexts are created for the nested collection because it is not possible to reliably
+      * assign the response entities to those of the request, especially if the count differs. For this reason,
+      * the `created` promises of all nested contexts are always rejected with an instance of `Error`, even if
+      * the deep create succeeds. This error always has the property `canceled` with the value `true`.
       *
-      * Deep create is an **experimental** API.
+      * Deep create requires the `autoExpandSelect` parameter at the {@link sap.ui.model.odata.v4.ODataModel#constructor model}.
+      * The refresh after a deep create is optimized. Only the (navigation) properties missing from the POST
+      * response are actually requested. If the POST response contains all required properties, no request is
+      * sent at all.
       *
       * Note: Creating at the end is only allowed if the final length of the binding is known (see {@link #isLengthFinal}),
       * so that there is a clear position to place this entity at. This is the case if the complete collection
       * has been read or if the system query option `$count` is `true` and the binding has processed at least
       * one request.
       *
-      * @returns The context object for the created entity; its method {@link sap.ui.model.odata.v4.Context#created}
+      * @returns The context object for the created entity; its method {@link sap.ui.model.odata.v4.Context#created }
       * returns a promise that is resolved when the creation is finished
       */
     def create(): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -384,10 +389,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -410,10 +415,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -453,10 +458,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -479,10 +484,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -533,10 +538,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -559,10 +564,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -602,10 +607,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
@@ -628,16 +633,16 @@ object sapUiModelOdataV4OdatalistbindingMod {
       /**
       * Create an inactive context. Such a context will only be sent to the server after the first property update.
       * From then on it behaves like any other created context. Supported since 1.97.0
-      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive
-      * inactive} and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'}
-      * event is fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and
-      * does not contribute to the {@link #getCount count}.
+      *  Since 1.98.0, when the first property updates happens, the context is no longer {@link sap.ui.model.odata.v4.Context#isInactive inactive }
+      * and the {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate 'createActivate'} event is
+      * fired. While inactive, it does not count as a {@link #hasPendingChanges pending change} and does not
+      * contribute to the {@link #getCount count}.
       */
     bInactive: Boolean
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Detach event handler `fnFunction` from the 'createActivate' event of this binding.
       *
@@ -659,7 +664,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Detach event handler `fnFunction` from the 'createCompleted' event of this binding.
       *
@@ -681,7 +686,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Detach event handler `fnFunction` from the 'createSent' event of this binding.
       *
@@ -703,7 +708,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Detach event handler `fnFunction` from the 'patchCompleted' event of this binding.
       *
@@ -725,7 +730,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Detach event handler `fnFunction` from the 'patchSent' event of this binding.
       *
@@ -747,13 +752,13 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Filters the list with the given filters. Since 1.97.0, if filters are unchanged, no request is sent,
       * regardless of pending changes. Since 1.111.0, the header context is deselected.
       *
-      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges}
-      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges }
+      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * to submit the changes or {@link sap.ui.model.odata.v4.ODataModel#resetChanges} to reset the changes before
       * calling {@link #filter}.
       *
@@ -784,8 +789,8 @@ object sapUiModelOdataV4OdatalistbindingMod {
       * The dynamic filters to be used; replaces the dynamic filters given in {@link sap.ui.model.odata.v4.ODataModel#bindList}.
       * The filter executed on the list is created from the following parts, which are combined with a logical
       * 'and':
-      * 	 Dynamic filters of type {@link sap.ui.model.FilterType.Application}  Dynamic filters of type {@link
-      * sap.ui.model.FilterType.Control}  The static filters, as defined in the '$filter' binding parameter
+      * 	 Dynamic filters of type {@link sap.ui.model.FilterType.Application}  Dynamic filters of type {@link sap.ui.model.FilterType.Control }
+      *  The static filters, as defined in the '$filter' binding parameter
       */
     vFilters: Unit,
       /**
@@ -798,8 +803,8 @@ object sapUiModelOdataV4OdatalistbindingMod {
       * The dynamic filters to be used; replaces the dynamic filters given in {@link sap.ui.model.odata.v4.ODataModel#bindList}.
       * The filter executed on the list is created from the following parts, which are combined with a logical
       * 'and':
-      * 	 Dynamic filters of type {@link sap.ui.model.FilterType.Application}  Dynamic filters of type {@link
-      * sap.ui.model.FilterType.Control}  The static filters, as defined in the '$filter' binding parameter
+      * 	 Dynamic filters of type {@link sap.ui.model.FilterType.Application}  Dynamic filters of type {@link sap.ui.model.FilterType.Control }
+      *  The static filters, as defined in the '$filter' binding parameter
       */
     vFilters: Unit,
       /**
@@ -809,7 +814,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Returns the current object holding the information needed for data aggregation, see {@link #setAggregation}.
       *
@@ -832,7 +837,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): js.UndefOr[js.Object] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       * See:
@@ -841,7 +846,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def getDistinctValues(): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.74.0
+      * @since 1.74.0
       *
       * Returns a URL by which the complete content of the list can be downloaded in JSON format. The request
       * delivers all entities considering the binding's query options (such as filters or sorters).
@@ -860,20 +865,20 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def getDownloadUrl(): String = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for read requests. The group ID of the binding is alternatively
       * defined by
       * 	 the `groupId` parameter of the OData model; see {@link sap.ui.model.odata.v4.ODataModel#constructor},
-      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link
-      * sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *
       *
       * @returns The group ID
       */
     def getGroupId(): String = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Returns the header context which allows binding to `$count`.
       * See:
@@ -884,7 +889,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def getHeaderContext(): typings.openui5.sapUiModelOdataV4ContextMod.default | Null = js.native
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Calls {@link sap.ui.model.odata.v4.Context#setKeepAlive} at the context for the given path and returns
       * it. Since 1.100.0 the function always returns such a context. If none exists yet, it is created without
@@ -940,7 +945,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Returns the query options of the binding.
       *
@@ -958,10 +963,9 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): js.Object = js.native
     
     /**
-      * @SINCE 1.53.0
+      * @since 1.53.0
       *
-      * Returns the root binding of this binding's hierarchy, see {@link topic:fccfb2eb41414f0792c165e69a878717
-      * Initialization and Read Requests}.
+      * Returns the root binding of this binding's hierarchy, see {@link https://ui5.sap.com/#/topic/fccfb2eb41414f0792c165e69a878717 Initialization and Read Requests}.
       *
       * @returns The root binding or `undefined` if this binding is unresolved (see {@link sap.ui.model.Binding#isResolved}).
       */
@@ -970,7 +974,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
       ] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for update requests. The update group ID of the binding
       * is alternatively defined by
@@ -983,13 +987,13 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def getUpdateGroupId(): String = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
       * entity deletions which have not been sent successfully to the server. This function does not take the
       * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
       * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, unless
-      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation }
       * has been prevented and {@link sap.ui.model.odata.v4.Context#isInactive} therefore returns `1`.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
@@ -1001,20 +1005,20 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def hasPendingChanges(): Boolean = js.native
     def hasPendingChanges(
       /**
-      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters
-      * changeParameters}, {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh
-      * refresh} (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend
-      * suspend} because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since
-      * 1.97.0) or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding.
-      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding
-      * root binding} are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using
-      * the `$$ownRequest` parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
+      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters changeParameters},
+      * {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh refresh }
+      * (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend suspend }
+      * because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since 1.97.0)
+      * or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding. Since
+      * 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding root binding }
+      * are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using the `$$ownRequest`
+      * parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
       */
     bIgnoreKeptAlive: Boolean
     ): Boolean = js.native
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Returns whether the overall position of created entries is at the end of the list; this is determined
       * by the first call to {@link #create}.
@@ -1038,7 +1042,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.70.0
+      * @since 1.70.0
       *
       * Requests the entities for the given index range of the binding's collection and resolves with the corresponding
       * contexts.
@@ -1151,7 +1155,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): js.Promise[js.Array[typings.openui5.sapUiModelOdataV4ContextMod.default]] = js.native
     
     /**
-      * @SINCE 1.74.0
+      * @since 1.74.0
       *
       * Returns a URL by which the complete content of the list can be downloaded in JSON format. The request
       * delivers all entities considering the binding's query options (such as filters or sorters).
@@ -1170,10 +1174,10 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def requestDownloadUrl(): js.Promise[String] = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
-      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link
-      * #refresh} if you do not need the promise.
+      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link #refresh }
+      * if you do not need the promise.
       *
       * @returns A promise which resolves without a defined result when the refresh is finished and rejects with
       * an instance of `Error` if the refresh failed
@@ -1185,7 +1189,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     sGroupId: String): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Resets all pending changes of this binding, see {@link #hasPendingChanges}. Resets also invalid user
       * input.
@@ -1196,7 +1200,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def resetChanges(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.55.0
+      * @since 1.55.0
       *
       * Sets a new data aggregation object and derives the system query option `$apply` implicitly from it.
       * See:
@@ -1220,7 +1224,7 @@ object sapUiModelOdataV4OdatalistbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Sort the entries represented by this list binding according to the given sorters. The sorters are stored
       * at this list binding and they are used for each following data request. Since 1.97.0, if sorters are
@@ -1231,8 +1235,8 @@ object sapUiModelOdataV4OdatalistbindingMod {
       * was given before, and not a newly created one, for example because `Function.prototype.bind` is called
       * repeatedly.
       *
-      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges}
-      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges }
+      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * to submit the changes or {@link sap.ui.model.odata.v4.ODataModel#resetChanges} to reset the changes before
       * calling {@link #sort}.
       * See:
@@ -1243,8 +1247,8 @@ object sapUiModelOdataV4OdatalistbindingMod {
     def sort(): this.type = js.native
     
     /**
-      * @SINCE 1.53.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.53.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates the binding's system query option `$apply` based on the given data aggregation information. Its
       * value is "groupby((<dimension_1,...,dimension_N,unit_or_text_1,...,unit_or_text_K>), aggregate(<measure>
@@ -1272,4 +1276,58 @@ object sapUiModelOdataV4OdatalistbindingMod {
     aAggregation: js.Array[As]
     ): js.UndefOr[js.Object] = js.native
   }
+  
+  type ODataListBinding$ChangeEventParameters = Binding$ChangeEventParameters
+  
+  trait ODataListBinding$CreateActivateEventParameters extends StObject
+  
+  trait ODataListBinding$CreateCompletedEventParameters extends StObject
+  
+  trait ODataListBinding$CreateSentEventParameters extends StObject
+  
+  type ODataListBinding$DataReceivedEventParameters = Binding$DataReceivedEventParameters
+  
+  type ODataListBinding$DataRequestedEventParameters = Binding$DataRequestedEventParameters
+  
+  trait ODataListBinding$PatchCompletedEventParameters extends StObject
+  
+  trait ODataListBinding$PatchSentEventParameters extends StObject
+  
+  trait ODataListBinding$RefreshEventParameters extends StObject
+  
+  type ODataListBindingChangeEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$ChangeEventParameters]
+  
+  type ODataListBindingChangeEventParameters = ODataListBinding$ChangeEventParameters
+  
+  type ODataListBindingCreateActivateEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$CreateActivateEventParameters]
+  
+  type ODataListBindingCreateActivateEventParameters = ODataListBinding$CreateActivateEventParameters
+  
+  type ODataListBindingCreateCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$CreateCompletedEventParameters]
+  
+  type ODataListBindingCreateCompletedEventParameters = ODataListBinding$CreateCompletedEventParameters
+  
+  type ODataListBindingCreateSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$CreateSentEventParameters]
+  
+  type ODataListBindingCreateSentEventParameters = ODataListBinding$CreateSentEventParameters
+  
+  type ODataListBindingDataReceivedEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$DataReceivedEventParameters]
+  
+  type ODataListBindingDataReceivedEventParameters = ODataListBinding$DataReceivedEventParameters
+  
+  type ODataListBindingDataRequestedEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$DataRequestedEventParameters]
+  
+  type ODataListBindingDataRequestedEventParameters = ODataListBinding$DataRequestedEventParameters
+  
+  type ODataListBindingPatchCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$PatchCompletedEventParameters]
+  
+  type ODataListBindingPatchCompletedEventParameters = ODataListBinding$PatchCompletedEventParameters
+  
+  type ODataListBindingPatchSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$PatchSentEventParameters]
+  
+  type ODataListBindingPatchSentEventParameters = ODataListBinding$PatchSentEventParameters
+  
+  type ODataListBindingRefreshEvent = typings.openui5.sapUiBaseEventMod.default[ODataListBinding$RefreshEventParameters]
+  
+  type ODataListBindingRefreshEventParameters = ODataListBinding$RefreshEventParameters
 }

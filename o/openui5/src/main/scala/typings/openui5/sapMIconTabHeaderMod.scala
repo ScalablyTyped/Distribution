@@ -1,7 +1,6 @@
 package typings.openui5
 
 import typings.openui5.anon.HeaderDescription
-import typings.openui5.anon.KeyPreviousKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.IconTab
@@ -153,13 +152,13 @@ object sapMIconTabHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabHeader` itself
       */
@@ -184,7 +183,7 @@ object sapMIconTabHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -195,7 +194,7 @@ object sapMIconTabHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabHeader` itself
       */
@@ -220,13 +219,13 @@ object sapMIconTabHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabHeaderSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -234,17 +233,19 @@ object sapMIconTabHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: KeyPreviousKey): this.type = js.native
+    mParameters: IconTabHeader$SelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAriaTexts ariaTexts}.
@@ -259,7 +260,7 @@ object sapMIconTabHeaderMod {
     def getAriaTexts(): HeaderDescription | Null = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -275,14 +276,14 @@ object sapMIconTabHeaderMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getEnableTabReordering enableTabReordering}.
       *
-      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control`
-      * + arrow keys (Mac OS)
+      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control` + arrow keys (Mac
+      * OS)
       *
       * Default value is `false`.
       *
@@ -298,14 +299,13 @@ object sapMIconTabHeaderMod {
     def getItems(): js.Array[IconTab] = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Gets current value of property {@link #getMaxNestingLevel maxNestingLevel}.
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       *
       * Default value is `0`.
       *
@@ -314,7 +314,7 @@ object sapMIconTabHeaderMod {
     def getMaxNestingLevel(): int = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getMode mode}.
       *
@@ -327,7 +327,7 @@ object sapMIconTabHeaderMod {
     def getMode(): IconTabHeaderMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IconTabHeaderMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getSelectedKey selectedKey}.
       *
@@ -370,7 +370,7 @@ object sapMIconTabHeaderMod {
     def getShowSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getTabDensityMode tabDensityMode}.
       *
@@ -387,7 +387,7 @@ object sapMIconTabHeaderMod {
     def getTabDensityMode(): IconTabDensityMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IconTabDensityMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Gets current value of property {@link #getTabsOverflowMode tabsOverflowMode}.
       *
@@ -478,7 +478,7 @@ object sapMIconTabHeaderMod {
     oAriaTexts: HeaderDescription): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -506,14 +506,14 @@ object sapMIconTabHeaderMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets a new value for property {@link #getEnableTabReordering enableTabReordering}.
       *
-      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control`
-      * + arrow keys (Mac OS)
+      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control` + arrow keys (Mac
+      * OS)
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -528,14 +528,13 @@ object sapMIconTabHeaderMod {
     bEnableTabReordering: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Sets a new value for property {@link #getMaxNestingLevel maxNestingLevel}.
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -550,7 +549,7 @@ object sapMIconTabHeaderMod {
     iMaxNestingLevel: int): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets a new value for property {@link #getMode mode}.
       *
@@ -626,7 +625,7 @@ object sapMIconTabHeaderMod {
     bShowSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getTabDensityMode tabDensityMode}.
       *
@@ -655,7 +654,7 @@ object sapMIconTabHeaderMod {
     sTabDensityMode: IconTabDensityMode): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Sets a new value for property {@link #getTabsOverflowMode tabsOverflowMode}.
       *
@@ -684,12 +683,57 @@ object sapMIconTabHeaderMod {
     sTabsOverflowMode: TabsOverflowMode): this.type = js.native
   }
   
+  trait IconTabHeader$SelectEventParameters extends StObject {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapMIconTabFilterMod.default] = js.undefined
+    
+    /**
+      * The key of the selected item
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The key of the previous selected item
+      */
+    var previousKey: js.UndefOr[String] = js.undefined
+  }
+  object IconTabHeader$SelectEventParameters {
+    
+    inline def apply(): IconTabHeader$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IconTabHeader$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabHeader$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMIconTabFilterMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setPreviousKey(value: String): Self = StObject.set(x, "previousKey", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousKeyUndefined: Self = StObject.set(x, "previousKey", js.undefined)
+    }
+  }
+  
+  type IconTabHeaderSelectEvent = typings.openui5.sapUiBaseEventMod.default[IconTabHeader$SelectEventParameters]
+  
+  type IconTabHeaderSelectEventParameters = IconTabHeader$SelectEventParameters
+  
   trait IconTabHeaderSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.80
+      * @since 1.80
       *
       * Specifies optional texts for the screen reader.
       *
@@ -701,7 +745,7 @@ object sapMIconTabHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Specifies the background color of the header.
       *
@@ -713,12 +757,12 @@ object sapMIconTabHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
-      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control`
-      * + arrow keys (Mac OS)
+      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control` + arrow keys (Mac
+      * OS)
       */
     var enableTabReordering: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -732,17 +776,16 @@ object sapMIconTabHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       */
     var maxNestingLevel: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Specifies the header mode.
       */
@@ -753,10 +796,15 @@ object sapMIconTabHeaderMod {
     /**
       * Fires when an item is selected.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabHeader$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Key of the selected item.
       *
@@ -787,7 +835,7 @@ object sapMIconTabHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Specifies the visual density mode of the tabs.
       *
@@ -800,7 +848,7 @@ object sapMIconTabHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Specifies the overflow mode of the header.
       *
@@ -854,7 +902,9 @@ object sapMIconTabHeaderMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabHeader$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

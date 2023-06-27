@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISImageServiceCapabilitiesQuery extends StObject {
   
   /**
-    * The maximum number of records that will be returned for a given query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * The maximum number of records that will be returned for a given query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var maxRecordCount: Boolean
   
   /**
-    * Indicates if the layer supports queries for distinct values based on fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports queries for distinct values based on fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsDistinct: Boolean
   
   /**
-    * Indicates if the layer returned in the query response can be ordered by one or more fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer returned in the query response can be ordered by one or more fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsOrderBy: Boolean
   
   /**
-    * Indicates if the layer supports paged queries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports paged queries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsPagination: Boolean
   
   /**
-    * Indicates if the layer supports use of standardized queries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports use of standardized queries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsStandardizedQueriesOnly: Boolean
   
   /**
-    * Indicates if the layer supports field-based statistical functions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports field-based statistical functions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsStatistics: Boolean
 }
 object ArcGISImageServiceCapabilitiesQuery {

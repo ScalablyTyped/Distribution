@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeSchemes extends StObject {
   
   /**
-    * The ID of the basemap associated with the given schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
-    */
+  		 * The ID of the basemap associated with the given schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average basemap color is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
-    */
+  		 * Indicates whether the average basemap color is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
+  		 */
   var basemapTheme: String
   
   /**
-    * The type scheme best suited for the given basemap and geometry type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
-    */
+  		 * The type scheme best suited for the given basemap and geometry type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
+  		 */
   var primaryScheme: TypeScheme
   
   /**
-    * Additional type schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
-    */
+  		 * Additional type schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemes)
+  		 */
   var secondarySchemes: js.Array[TypeScheme]
 }
 object TypeSchemes {

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `variables` request. */
 trait VariablesArguments extends StObject {
   
-  /** The number of variables to return. If count is missing or 0, all variables are returned. */
+  /** The number of variables to return. If count is missing or 0, all variables are returned.
+  			The attribute is only honored by a debug adapter if the corresponding capability `supportsVariablePaging` is true.
+  		*/
   var count: js.UndefOr[Double] = js.undefined
   
   /** Filter to limit the child variables to either named or indexed. If omitted, both types are fetched. */
@@ -20,7 +22,9 @@ trait VariablesArguments extends StObject {
   		*/
   var format: js.UndefOr[ValueFormat] = js.undefined
   
-  /** The index of the first variable to return; if omitted children start at 0. */
+  /** The index of the first variable to return; if omitted children start at 0.
+  			The attribute is only honored by a debug adapter if the corresponding capability `supportsVariablePaging` is true.
+  		*/
   var start: js.UndefOr[Double] = js.undefined
   
   /** The variable for which to retrieve its children. The `variablesReference` must have been obtained in the current suspended state. See 'Lifetime of Object References' in the Overview section for details. */

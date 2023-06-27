@@ -272,23 +272,39 @@ object anon {
   @js.native
   trait TypeofIDBKeyRange extends StObject {
     
-    /** Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range. */
+    /**
+      * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound)
+      */
     /* standard dom */
     def bound(lower: Any, upper: Any): IDBKeyRange = js.native
     def bound(lower: Any, upper: Any, lowerOpen: Boolean): IDBKeyRange = js.native
     def bound(lower: Any, upper: Any, lowerOpen: Boolean, upperOpen: Boolean): IDBKeyRange = js.native
     def bound(lower: Any, upper: Any, lowerOpen: Unit, upperOpen: Boolean): IDBKeyRange = js.native
     
-    /** Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range. */
+    /**
+      * Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound)
+      */
     /* standard dom */
     def lowerBound(lower: Any): IDBKeyRange = js.native
     def lowerBound(lower: Any, open: Boolean): IDBKeyRange = js.native
     
-    /** Returns a new IDBKeyRange spanning only key. */
+    /**
+      * Returns a new IDBKeyRange spanning only key.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only)
+      */
     /* standard dom */
     def only(value: Any): IDBKeyRange = js.native
     
-    /** Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range. */
+    /**
+      * Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound)
+      */
     /* standard dom */
     def upperBound(upper: Any): IDBKeyRange = js.native
     def upperBound(upper: Any, open: Boolean): IDBKeyRange = js.native

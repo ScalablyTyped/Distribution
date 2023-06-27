@@ -14,33 +14,33 @@ trait PointCloudStretchRendererProperties
      with PointCloudRendererProperties {
   
   /**
-    * The name of the number field whose values are used to drive the continuous color visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#field)
-    */
+  		 * The name of the number field whose values are used to drive the continuous color visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * A transform that is applied to the field value before evaluating the renderer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
-    */
+  		 * A transform that is applied to the field value before evaluating the renderer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
+  		 */
   var fieldTransformType: js.UndefOr[none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
   
   /**
-    * An object providing options for displaying the renderer in the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#legendOptions)
-    */
+  		 * An object providing options for displaying the renderer in the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[PointCloudStretchRendererLegendOptions] = js.undefined
   
   /**
-    * An array of color value pairs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
-    */
+  		 * An array of color value pairs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 object PointCloudStretchRendererProperties {

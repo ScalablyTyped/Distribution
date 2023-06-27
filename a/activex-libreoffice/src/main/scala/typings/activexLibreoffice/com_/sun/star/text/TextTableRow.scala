@@ -47,7 +47,7 @@ trait TextTableRow
   
   /**
     * If `TRUE` , the row is allowed to be split at page or column breaks.
-    * @@since OOo 2.0
+    * @since OOo 2.0
     */
   var IsSplitAllowed: Boolean
   

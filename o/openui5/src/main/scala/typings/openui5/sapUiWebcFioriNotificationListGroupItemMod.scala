@@ -164,13 +164,13 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.NotificationListGroupItem`
       * itself
@@ -196,7 +196,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -207,7 +207,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.NotificationListGroupItem`
       * itself
@@ -229,13 +229,13 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachToggle(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.NotificationListGroupItem`
       * itself
@@ -261,7 +261,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachToggle(
       /**
@@ -272,7 +272,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.NotificationListGroupItem`
       * itself
@@ -305,13 +305,13 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -329,13 +329,13 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachToggle(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -343,7 +343,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -356,7 +356,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggle toggle} to attached listeners.
       *
@@ -469,8 +469,8 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     def getTitleText(): String = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.fiori.INotificationAction` in the aggregation {@link #getActions
-      * actions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.fiori.INotificationAction` in the aggregation {@link #getActions actions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -480,8 +480,8 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     oAction: INotificationAction): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.fiori.INotificationListItem` in the aggregation {@link #getItems
-      * items}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.fiori.INotificationListItem` in the aggregation {@link #getItems items}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -725,6 +725,14 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     sTitleText: String): this.type = js.native
   }
   
+  trait NotificationListGroupItem$CloseEventParameters extends StObject
+  
+  trait NotificationListGroupItem$ToggleEventParameters extends StObject
+  
+  type NotificationListGroupItemCloseEvent = typings.openui5.sapUiBaseEventMod.default[NotificationListGroupItem$CloseEventParameters]
+  
+  type NotificationListGroupItemCloseEventParameters = NotificationListGroupItem$CloseEventParameters
+  
   trait NotificationListGroupItemSettings
     extends StObject
        with ControlSettings {
@@ -746,7 +754,9 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     /**
       * Fired when the `Close` button is pressed.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines if the group is collapsed or expanded.
@@ -805,7 +815,9 @@ object sapUiWebcFioriNotificationListGroupItemMod {
     /**
       * Fired when the `sap.ui.webc.fiori.NotificationListGroupItem` is expanded/collapsed by user interaction.
       */
-    var toggle: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggle: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object NotificationListGroupItemSettings {
     
@@ -829,7 +841,7 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       
       inline def setBusyDelayUndefined: Self = StObject.set(x, "busyDelay", js.undefined)
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
@@ -867,9 +879,13 @@ object sapUiWebcFioriNotificationListGroupItemMod {
       
       inline def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
       
-      inline def setToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
+  
+  type NotificationListGroupItemToggleEvent = typings.openui5.sapUiBaseEventMod.default[NotificationListGroupItem$ToggleEventParameters]
+  
+  type NotificationListGroupItemToggleEventParameters = NotificationListGroupItem$ToggleEventParameters
 }

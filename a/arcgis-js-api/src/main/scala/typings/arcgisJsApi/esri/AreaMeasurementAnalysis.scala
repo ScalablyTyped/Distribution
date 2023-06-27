@@ -10,16 +10,16 @@ trait AreaMeasurementAnalysis
      with Accessor {
   
   /**
-    * Polygon whose area is to be computed and displayed in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#geometry)
-    */
+  		 * Polygon whose area is to be computed and displayed in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#geometry)
+  		 */
   var geometry: Polygon = js.native
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the computed area in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the computed area in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#unit)
+  		 */
   var unit: SystemOrAreaUnit = js.native
 }

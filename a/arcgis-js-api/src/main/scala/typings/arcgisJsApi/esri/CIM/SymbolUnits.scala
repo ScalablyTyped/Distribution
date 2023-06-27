@@ -11,16 +11,16 @@ sealed trait SymbolUnits extends StObject
 object SymbolUnits extends StObject {
   
   /**
-    * Absolute units.
-    */
+  			 * Absolute units.
+  			 */
   @js.native
   sealed trait Absolute
     extends StObject
        with SymbolUnits
   
   /**
-    * Relative units.
-    */
+  			 * Relative units.
+  			 */
   @js.native
   sealed trait Relative
     extends StObject

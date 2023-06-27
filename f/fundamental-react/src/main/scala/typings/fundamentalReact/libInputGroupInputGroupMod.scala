@@ -6,7 +6,6 @@ import typings.fundamentalReact.anon.State
 import typings.fundamentalReact.anon.WeakValidationMapInputGro
 import typings.fundamentalReact.fundamentalReactStrings.InputGroupDotAddon
 import typings.react.mod.Component
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -29,8 +28,8 @@ object libInputGroupInputGroupMod {
     /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/InputGroup/InputGroup.InputGroupAddonProps> & {  displayName :'InputGroup.Addon'} */
     object Addon {
       
-      inline def apply(props: InputGroupAddonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-      inline def apply(props: InputGroupAddonProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+      inline def apply(props: InputGroupAddonProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+      inline def apply(props: InputGroupAddonProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
       
       @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon")
       @js.native

@@ -11,10 +11,10 @@ object esriWebsceneInitialViewPropertiesMod {
   @JSImport("esri/webscene/InitialViewProperties", JSImport.Namespace)
   @js.native
   /**
-    * Represents the initial viewing state of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html) when displayed in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html)
-    */
+  		 * Represents the initial viewing state of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html) when displayed in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html)
+  		 */
   open class ^ ()
     extends StObject
        with websceneInitialViewProperties {

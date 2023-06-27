@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "nginstack__web-framework"
-version := "71.0-dt-20230418Z-6baab7"
+version := "71.0-dt-20230418Z-ec1d9a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "nginstack__datasource" % "71.0-dt-20230418Z-c46c1a",
-  "org.scalablytyped" %%% "nginstack__engine" % "71.0-dt-20230418Z-2da6e1",
-  "org.scalablytyped" %%% "nginstack__iquery" % "71.0-dt-20230418Z-9097bc",
-  "org.scalablytyped" %%% "std" % "5.0-e63739")
+  "org.scalablytyped" %%% "nginstack__datasource" % "71.0-dt-20230418Z-22dbc6",
+  "org.scalablytyped" %%% "nginstack__engine" % "71.0-dt-20230418Z-00f5c1",
+  "org.scalablytyped" %%% "nginstack__iquery" % "71.0-dt-20230418Z-409be3",
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

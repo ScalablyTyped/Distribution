@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a footnote or endnote.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.5]
   */
 @js.native
 trait NoteItem
@@ -27,7 +27,7 @@ trait NoteItem
     * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val body: Body = js.native
   
@@ -39,7 +39,7 @@ trait NoteItem
     * Deletes the note item.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def delete(): Unit = js.native
   
@@ -47,7 +47,7 @@ trait NoteItem
     * Gets the next note item of the same type. Throws an `ItemNotFound` error if this note item is the last one.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getNext(): NoteItem = js.native
   
@@ -55,7 +55,7 @@ trait NoteItem
     * Gets the next note item of the same type. If this note item is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getNextOrNullObject(): NoteItem = js.native
   
@@ -74,7 +74,7 @@ trait NoteItem
     * Represents a footnote or endnote reference in the main document.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val reference: Range = js.native
   
@@ -103,7 +103,7 @@ trait NoteItem
     * Represents the note item type: footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val `type`: NoteItemType | Footnote | Endnote = js.native
   

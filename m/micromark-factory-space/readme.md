@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-factory-space
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 micromark factory to parse markdown space (found in lots of places)

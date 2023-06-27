@@ -14,20 +14,20 @@ object esriLayersMixinsRefreshableLayerMod {
        with RefreshableLayer {
     
     /**
-      * Fetches all the data for the layer.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
-      */
+    		 * Fetches all the data for the layer.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
+    		 */
     /* CompleteClass */
     override def refresh(): Unit = js.native
     
     /**
-      * Refresh interval of the layer in minutes.
-      *
-      * @default 0
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
-      */
+    		 * Refresh interval of the layer in minutes.
+    		 *
+    		 * @default 0
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+    		 */
     /* CompleteClass */
     var refreshInterval: Double = js.native
   }

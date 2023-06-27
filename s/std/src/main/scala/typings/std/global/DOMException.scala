@@ -140,7 +140,11 @@ open class DOMException ()
   /* CompleteClass */
   override val WRONG_DOCUMENT_ERR: `4` = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException/code)
+    */
   /* standard dom */
   /* CompleteClass */
   override val code: Double = js.native

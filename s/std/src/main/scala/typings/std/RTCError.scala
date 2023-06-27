@@ -4,22 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError) */
 trait RTCError
   extends StObject
      with DOMException {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/errorDetail) */
   /* standard dom */
   val errorDetail: RTCErrorDetailType
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/receivedAlert) */
   /* standard dom */
   val receivedAlert: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sctpCauseCode) */
   /* standard dom */
   val sctpCauseCode: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sdpLineNumber) */
   /* standard dom */
   val sdpLineNumber: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sentAlert) */
   /* standard dom */
   val sentAlert: Double | Null
 }

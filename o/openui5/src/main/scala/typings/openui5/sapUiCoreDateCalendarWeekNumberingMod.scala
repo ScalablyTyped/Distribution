@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiCoreDateCalendarWeekNumberingMod {
   
   /**
-    * @SINCE 1.108.0
+    * @since 1.108.0
     *
     * The `CalendarWeekNumbering` enum defines how to calculate calendar weeks. Each value defines:
     * 	 - The first day of the week,
@@ -32,7 +32,7 @@ object sapUiCoreDateCalendarWeekNumberingMod {
   @js.native
   sealed trait CalendarWeekNumbering extends StObject
   /**
-    * @SINCE 1.108.0
+    * @since 1.108.0
     *
     * The `CalendarWeekNumbering` enum defines how to calculate calendar weeks. Each value defines:
     * 	 - The first day of the week,

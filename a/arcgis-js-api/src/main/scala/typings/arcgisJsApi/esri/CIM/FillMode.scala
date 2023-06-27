@@ -11,16 +11,16 @@ sealed trait FillMode extends StObject
 object FillMode extends StObject {
   
   /**
-    * Centered fill.
-    */
+  			 * Centered fill.
+  			 */
   @js.native
   sealed trait Centered
     extends StObject
        with FillMode
   
   /**
-    * Mosaic fill.
-    */
+  			 * Mosaic fill.
+  			 */
   @js.native
   sealed trait Mosaic
     extends StObject

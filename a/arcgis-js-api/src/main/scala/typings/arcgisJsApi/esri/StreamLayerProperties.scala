@@ -18,181 +18,181 @@ trait StreamLayerProperties
      with FeatureReductionLayerProperties {
   
   /**
-    * Copyright information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#copyright)
-    */
+  		 * Copyright information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of custom parameters appended to the URL of all resources fetched by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#customParameters)
-    */
+  		 * A list of custom parameters appended to the URL of all resources fetched by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#customParameters)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * The SQL where clause used to filter features based on their attributes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression)
-    */
+  		 * The SQL where clause used to filter features based on their attributes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression)
+  		 */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the layer's primary display field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#displayField)
-    */
+  		 * The name of the layer's primary display field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#displayField)
+  		 */
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how features are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
-    */
+  		 * Specifies how features are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[StreamLayerElevationInfo] = js.undefined
   
   /**
-    * An array of fields in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields)
-    */
+  		 * An array of fields in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields)
+  		 */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
-    * An [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object used to filter features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
-    */
+  		 * An [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object used to filter features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
+  		 */
   var geometryDefinition: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The geometry type of features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryType)
-    */
+  		 * The geometry type of features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryType)
+  		 */
   var geometryType: js.UndefOr[point | polygon | polyline | multipoint] = js.undefined
   
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelingInfo)
-    */
+  		 * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelingInfo)
+  		 */
   var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
   
   /**
-    * Indicates whether to display labels for this layer.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelsVisible)
-    */
+  		 * Indicates whether to display labels for this layer.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelsVisible)
+  		 */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#legendEnabled)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of attempts to reconnect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionAttempts)
-    */
+  		 * The maximum number of attempts to reconnect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionAttempts)
+  		 */
   var maxReconnectionAttempts: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum time to wait in seconds between attempts to reconnect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionInterval)
-    */
+  		 * The maximum time to wait in seconds between attempts to reconnect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionInterval)
+  		 */
   var maxReconnectionInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields) containing a unique value or identifier for each feature in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#objectIdField)
-    */
+  		 * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields) containing a unique value or identifier for each feature in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#objectIdField)
+  		 */
   var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether to display popups when features in the layer are clicked.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupEnabled)
-    */
+  		 * Indicates whether to display popups when features in the layer are clicked.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupEnabled)
+  		 */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The popup template for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupTemplate)
-    */
+  		 * The popup template for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupTemplate)
+  		 */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
-    * Options for purging stale features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
-    */
+  		 * Options for purging stale features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
+  		 */
   var purgeOptions: js.UndefOr[StreamLayerPurgeOptions] = js.undefined
   
   /**
-    * The renderer assigned to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#renderer)
-    */
+  		 * The renderer assigned to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#renderer)
+  		 */
   var renderer: js.UndefOr[RendererProperties] = js.undefined
   
   /**
-    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#screenSizePerspectiveEnabled)
-    */
+  		 * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#screenSizePerspectiveEnabled)
+  		 */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The [stream service's metadata JSON](https://developers.arcgis.com/rest/services-reference/stream-service.htm) exposed by the ArcGIS REST API.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)
-    */
+  		 * The [stream service's metadata JSON](https://developers.arcgis.com/rest/services-reference/stream-service.htm) exposed by the ArcGIS REST API.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)
+  		 */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * The spatial reference of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The minimum rate (ms) at which to poll for updates over the websocket connection.
-    *
-    * @default 300
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateInterval)
-    */
+  		 * The minimum rate (ms) at which to poll for updates over the websocket connection.
+  		 *
+  		 * @default 300
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateInterval)
+  		 */
   var updateInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The URL of the stream service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#url)
-    */
+  		 * The URL of the stream service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL of a websocket connection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#webSocketUrl)
-    */
+  		 * The URL of a websocket connection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#webSocketUrl)
+  		 */
   var webSocketUrl: js.UndefOr[String] = js.undefined
 }
 object StreamLayerProperties {

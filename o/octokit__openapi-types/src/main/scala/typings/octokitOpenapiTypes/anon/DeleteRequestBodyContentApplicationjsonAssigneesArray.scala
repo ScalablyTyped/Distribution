@@ -16,11 +16,11 @@ trait DeleteRequestBodyContentApplicationjsonAssigneesArray extends StObject {
     * Add assignees to an issue
     * @description Adds up to 10 assignees to an issue. Users already assigned to an issue are not replaced.
     */
-  var post: Responses201275
+  var post: Responses201326
 }
 object DeleteRequestBodyContentApplicationjsonAssigneesArray {
   
-  inline def apply(delete: RequestBodyContentApplicationjsonAssigneesArray, post: Responses201275): DeleteRequestBodyContentApplicationjsonAssigneesArray = {
+  inline def apply(delete: RequestBodyContentApplicationjsonAssigneesArray, post: Responses201326): DeleteRequestBodyContentApplicationjsonAssigneesArray = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRequestBodyContentApplicationjsonAssigneesArray]
   }
@@ -30,6 +30,6 @@ object DeleteRequestBodyContentApplicationjsonAssigneesArray {
     
     inline def setDelete(value: RequestBodyContentApplicationjsonAssigneesArray): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: Responses201275): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Responses201326): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

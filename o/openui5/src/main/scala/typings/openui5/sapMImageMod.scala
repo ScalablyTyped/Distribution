@@ -26,7 +26,7 @@ object sapMImageMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:f86dbe9d7f7d48dea5286003b1322165 Image}
+    * 	{@link https://ui5.sap.com/#/topic/f86dbe9d7f7d48dea5286003b1322165 Image}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/image/ Image}
     */
   open class default () extends Image {
@@ -136,7 +136,7 @@ object sapMImageMod {
        with IFormContent {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the given value is valid for the `background-position` CSS property
       *
@@ -148,7 +148,7 @@ object sapMImageMod {
     sValue: String): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the given value is valid for the `background-size` CSS property
       *
@@ -182,7 +182,7 @@ object sapMImageMod {
     vAriaDetails: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Adds some ariaDetails into the association {@link #getAriaDetails ariaDetails}.
       *
@@ -210,7 +210,7 @@ object sapMImageMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:error error} event of this `sap.m.Image`.
       *
@@ -226,20 +226,20 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachError(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:error error} event of this `sap.m.Image`.
       *
@@ -260,7 +260,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachError(
       /**
@@ -271,7 +271,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -279,7 +279,7 @@ object sapMImageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:load load} event of this `sap.m.Image`.
       *
@@ -294,20 +294,20 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoad(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:load load} event of this `sap.m.Image`.
       *
@@ -327,7 +327,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoad(
       /**
@@ -338,7 +338,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -359,13 +359,13 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -390,7 +390,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -401,7 +401,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -424,13 +424,13 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -457,7 +457,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
@@ -468,7 +468,7 @@ object sapMImageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Image` itself
       */
@@ -496,7 +496,7 @@ object sapMImageMod {
     def destroyDetailBox(): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Detaches event handler `fnFunction` from the {@link #event:error error} event of this `sap.m.Image`.
       *
@@ -508,13 +508,13 @@ object sapMImageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachError(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -522,7 +522,7 @@ object sapMImageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Detaches event handler `fnFunction` from the {@link #event:load load} event of this `sap.m.Image`.
       *
@@ -534,13 +534,13 @@ object sapMImageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLoad(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -558,13 +558,13 @@ object sapMImageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -584,13 +584,13 @@ object sapMImageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -598,8 +598,8 @@ object sapMImageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.36.2
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:error error} to attached listeners.
       *
@@ -612,8 +612,8 @@ object sapMImageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.36.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.36.2
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:load load} to attached listeners.
       *
@@ -626,7 +626,7 @@ object sapMImageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -640,7 +640,7 @@ object sapMImageMod {
     
     /**
       * @deprecated (since 1.107.0)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tap tap} to attached listeners.
       *
@@ -675,21 +675,19 @@ object sapMImageMod {
     def getAlt(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDetails
-      * ariaDetails}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDetails ariaDetails}.
       */
     def getAriaDetails(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -698,9 +696,9 @@ object sapMImageMod {
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend you to use the property only when press handler is set.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       *
       * Default value is `None`.
       *
@@ -709,13 +707,12 @@ object sapMImageMod {
     def getAriaHasPopup(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getBackgroundPosition backgroundPosition}.
       *
@@ -731,7 +728,7 @@ object sapMImageMod {
     def getBackgroundPosition(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -747,7 +744,7 @@ object sapMImageMod {
     def getBackgroundRepeat(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getBackgroundSize backgroundSize}.
       *
@@ -821,7 +818,7 @@ object sapMImageMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Gets current value of property {@link #getLazyLoading lazyLoading}.
       *
@@ -838,7 +835,7 @@ object sapMImageMod {
     def getLazyLoading(): Boolean = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getMode mode}.
       *
@@ -897,7 +894,7 @@ object sapMImageMod {
     def removeAllAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Removes all the controls in the association named {@link #getAriaDetails ariaDetails}.
       *
@@ -933,7 +930,7 @@ object sapMImageMod {
     vAriaDescribedBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Removes an ariaDetails from the association named {@link #getAriaDetails ariaDetails}.
       *
@@ -1009,7 +1006,7 @@ object sapMImageMod {
     sAlt: String): this.type = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -1018,9 +1015,9 @@ object sapMImageMod {
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend you to use the property only when press handler is set.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1041,7 +1038,7 @@ object sapMImageMod {
     sAriaHasPopup: HasPopup): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getBackgroundPosition backgroundPosition}.
       *
@@ -1063,7 +1060,7 @@ object sapMImageMod {
     sBackgroundPosition: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -1085,7 +1082,7 @@ object sapMImageMod {
     sBackgroundRepeat: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getBackgroundSize backgroundSize}.
       *
@@ -1186,7 +1183,7 @@ object sapMImageMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Sets a new value for property {@link #getLazyLoading lazyLoading}.
       *
@@ -1209,7 +1206,7 @@ object sapMImageMod {
     bLazyLoading: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getMode mode}.
       *
@@ -1298,6 +1295,26 @@ object sapMImageMod {
     def unbindDetailBox(): this.type = js.native
   }
   
+  trait Image$ErrorEventParameters extends StObject
+  
+  trait Image$LoadEventParameters extends StObject
+  
+  trait Image$PressEventParameters extends StObject
+  
+  trait Image$TapEventParameters extends StObject
+  
+  type ImageErrorEvent = typings.openui5.sapUiBaseEventMod.default[Image$ErrorEventParameters]
+  
+  type ImageErrorEventParameters = Image$ErrorEventParameters
+  
+  type ImageLoadEvent = typings.openui5.sapUiBaseEventMod.default[Image$LoadEventParameters]
+  
+  type ImageLoadEventParameters = Image$LoadEventParameters
+  
+  type ImagePressEvent = typings.openui5.sapUiBaseEventMod.default[Image$PressEventParameters]
+  
+  type ImagePressEventParameters = Image$PressEventParameters
+  
   trait ImageSettings
     extends StObject
        with ControlSettings {
@@ -1320,23 +1337,23 @@ object sapMImageMod {
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Association to controls / IDs which are details to this control (see WAI-ARIA attribute aria-details).
       */
     var ariaDetails: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
       * Defines the aria-haspopup attribute of the `Image`.
       *
       * **Guidance for choosing appropriate value:**
       * 	 -  We recommend you to use the property only when press handler is set.
       * 	 -  If you use controls based on `sap.m.Popover` or `sap.m.Dialog`, then you must use `AriaHasPopup.Dialog`
-      * 			(both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
+      *     (both `sap.m.Popover` and `sap.m.Dialog` have role "dialog" assigned internally).
       * 	 -  If you use other controls, or directly `sap.ui.core.Popup`, you need to check the container role/type
-      * 			and map the value of `ariaHasPopup` accordingly.
+      *     and map the value of `ariaHasPopup` accordingly.
       */
     var ariaHasPopup: js.UndefOr[
         HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) | PropertyBindingInfo
@@ -1348,7 +1365,7 @@ object sapMImageMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Defines the position of the image in `sap.m.ImageMode.Background` mode.
       *
@@ -1358,7 +1375,7 @@ object sapMImageMod {
     var backgroundPosition: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Defines whether the source image is repeated when the output DOM element is bigger than the source.
       *
@@ -1368,7 +1385,7 @@ object sapMImageMod {
     var backgroundRepeat: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Defines the size of the image in `sap.m.ImageMode.Background` mode.
       *
@@ -1413,12 +1430,14 @@ object sapMImageMod {
     var detailBox: js.UndefOr[typings.openui5.sapMLightBoxMod.default] = js.undefined
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Event is fired when the image resource can't be loaded. If densityAware is set to true, the event is
       * fired when none of the fallback resources can be loaded.
       */
-    var error: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var error: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * When the empty value is kept, the original size is not changed.
@@ -1432,7 +1451,7 @@ object sapMImageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Enables lazy loading for images that are offscreen. If set to `true`, the property ensures that offscreen
       * images are loaded early enough so that they have finished loading once the user scrolls near them.
@@ -1445,14 +1464,16 @@ object sapMImageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.2
+      * @since 1.36.2
       *
       * Event is fired when the image resource is loaded.
       */
-    var load: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var load: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Defines how the `src` and the `activeSrc` is output to the DOM Element.
       *
@@ -1468,7 +1489,9 @@ object sapMImageMod {
     /**
       * Event is fired when the user clicks on the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Relative or absolute path to URL where the image file is stored.
@@ -1483,7 +1506,9 @@ object sapMImageMod {
       *
       * Event is fired when the user clicks on the control. (This event is deprecated, use the press event instead)
       */
-    var tap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The name of the image map that defines the clickable areas.
@@ -1567,7 +1592,7 @@ object sapMImageMod {
       
       inline def setDetailBoxUndefined: Self = StObject.set(x, "detailBox", js.undefined)
       
-      inline def setError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -1579,7 +1604,7 @@ object sapMImageMod {
       
       inline def setLazyLoadingUndefined: Self = StObject.set(x, "lazyLoading", js.undefined)
       
-      inline def setLoad(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
       inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
@@ -1589,7 +1614,7 @@ object sapMImageMod {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
@@ -1597,7 +1622,7 @@ object sapMImageMod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
       
       inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
       
@@ -1610,4 +1635,8 @@ object sapMImageMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type ImageTapEvent = typings.openui5.sapUiBaseEventMod.default[Image$TapEventParameters]
+  
+  type ImageTapEventParameters = Image$TapEventParameters
 }

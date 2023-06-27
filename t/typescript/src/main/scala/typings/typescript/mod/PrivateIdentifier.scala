@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrivateIdentifier
   extends StObject
      with PrimaryExpression
-     with DeclarationName
      with MemberName
      with PropertyName {
   

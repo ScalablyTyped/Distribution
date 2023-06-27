@@ -200,7 +200,7 @@ object modulesWordcloudMod {
         *        The Chart instance to apply the axis on.
         *
         * @param userOptions
-        *        Axis options.
+        *        Axis options
         */
       def this(chart: Chart_, userOptions: AxisOptions) = this()
     }

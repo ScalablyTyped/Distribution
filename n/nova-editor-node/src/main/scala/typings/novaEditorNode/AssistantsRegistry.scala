@@ -1,7 +1,7 @@
 package typings.novaEditorNode
 
 import typings.novaEditorNode.anon.Event
-import typings.novaEditorNode.anon.Identifer
+import typings.novaEditorNode.anon.Identifier
 import typings.novaEditorNode.anon.TriggerChars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,5 +19,5 @@ trait AssistantsRegistry extends StObject {
   def registerIssueAssistant(selector: AssistantsRegistrySelector, `object`: IssueAssistant, options: Event): Disposable = js.native
   
   def registerTaskAssistant(`object`: TaskAssistant): Disposable = js.native
-  def registerTaskAssistant(`object`: TaskAssistant, options: Identifer): Disposable = js.native
+  def registerTaskAssistant(`object`: TaskAssistant, options: Identifier): Disposable = js.native
 }

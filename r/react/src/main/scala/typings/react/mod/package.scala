@@ -99,17 +99,17 @@ inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], pro
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: Null,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
   props: Unit,
   children: ReactNode*
 ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -168,20 +168,20 @@ inline def createFactory_PTC_CFactory[P, T /* <: Component[P, ComponentState, An
 // ----------------------------------------------------------------------
 // DOM Elements
 inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
 ): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
 
 inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
 
-inline def createServerContext(globalName: String, defaultValue: String): typings.react.nextMod.reactAugmentingMod.ServerContext[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[String]]
+inline def createServerContext(globalName: String, defaultValue: String): typings.react.canaryMod.reactAugmentingMod.ServerContext[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[String]]
 inline def createServerContext(
   globalName: String,
-  defaultValue: js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]
-): typings.react.nextMod.reactAugmentingMod.ServerContext[js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]]]
-inline def createServerContext(globalName: String, defaultValue: Boolean): typings.react.nextMod.reactAugmentingMod.ServerContext[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Boolean]]
-inline def createServerContext(globalName: String, defaultValue: Double): typings.react.nextMod.reactAugmentingMod.ServerContext[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Double]]
-inline def createServerContext(globalName: String, defaultValue: Null): typings.react.nextMod.reactAugmentingMod.ServerContext[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[Null]]
-inline def createServerContext[T /* <: StringDictionary[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue] */](globalName: String, defaultValue: T): typings.react.nextMod.reactAugmentingMod.ServerContext[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.nextMod.reactAugmentingMod.ServerContext[T]]
+  defaultValue: js.Array[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue]
+): typings.react.canaryMod.reactAugmentingMod.ServerContext[js.Array[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[js.Array[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue]]]
+inline def createServerContext(globalName: String, defaultValue: Boolean): typings.react.canaryMod.reactAugmentingMod.ServerContext[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[Boolean]]
+inline def createServerContext(globalName: String, defaultValue: Double): typings.react.canaryMod.reactAugmentingMod.ServerContext[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[Double]]
+inline def createServerContext(globalName: String, defaultValue: Null): typings.react.canaryMod.reactAugmentingMod.ServerContext[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[Null]]
+inline def createServerContext[T /* <: StringDictionary[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue] */](globalName: String, defaultValue: T): typings.react.canaryMod.reactAugmentingMod.ServerContext[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[typings.react.canaryMod.reactAugmentingMod.ServerContext[T]]
 
 inline def experimentalUseEffectEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEffectEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
 
@@ -207,7 +207,7 @@ inline def startTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.
 
 inline def unstableUseCacheRefresh(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useCacheRefresh")().asInstanceOf[js.Function0[Unit]]
 
-inline def use[T](usable: typings.react.nextMod.reactAugmentingMod.Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def use[T](usable: typings.react.canaryMod.reactAugmentingMod.Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
 
 // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
 // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
@@ -625,9 +625,6 @@ type GetDerivedStateFromProps[P, S] = /**
   */
 js.Function2[/* nextProps */ P, /* prevState */ S, Partial[S] | Null]
 
-// React.JSX needs to point to global.JSX to keep global module augmentations intact.
-// But we can't access global.JSX so we need to create these aliases instead.
-// Once the global JSX namespace will be removed we replace React.JSX with the contents of global.JSX
 type GlobalJSXElement = typings.react.mod.global.JSX.Element
 
 type GlobalJSXElementAttributesProperty = ElementAttributesProperty
@@ -635,6 +632,11 @@ type GlobalJSXElementAttributesProperty = ElementAttributesProperty
 type GlobalJSXElementChildrenAttribute = ElementChildrenAttribute
 
 type GlobalJSXElementClass = ElementClass
+
+// React.JSX needs to point to global.JSX to keep global module augmentations intact.
+// But we can't access global.JSX so we need to create these aliases instead.
+// Once the global JSX namespace will be removed we replace React.JSX with the contents of global.JSX
+type GlobalJSXElementType = typings.react.mod.global.JSX.ElementType
 
 type GlobalJSXIntrinsicAttributes = IntrinsicAttributes
 
@@ -693,7 +695,7 @@ type HTMLInputTypeAttribute = _HTMLInputTypeAttribute | String
   */
 type IsExactlyAny[T] = `true`
 
-type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | Null]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
+type JSXElementConstructor[P] = (js.Function2[/* props */ P, /* deprecatedLegacyContext */ js.UndefOr[Any], ReactNode]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
 
 type Key = String | Double
 
@@ -793,10 +795,13 @@ type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   */
 type ReactChild = ReactElement | String | Double
 
-type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any */, P] = ReactElement
+type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any */, P] = ReactElement
 
 type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
 
+/**
+  * @deprecated - This type is not relevant when using React. Inline the type instead to make the intent clear.
+  */
 type ReactFragment = js.Iterable[ReactNode]
 
 // ReactHTML for ReactHTMLElement
@@ -819,9 +824,13 @@ type ReactManagedAttributes[C, P] = P
 /** 
 NOTE: Rewritten from type alias:
 {{{
-type ReactNode = react.react.ReactElement | string | number | react.react.ReactFragment | react.react.ReactPortal | boolean | undefined | react.react/experimental.react.PromiseLikeOfReactNode
+type ReactNode = react.react.ReactElement | string | number | std.Iterable<react.react.ReactNode> | react.react.ReactPortal | boolean | undefined | react.react/experimental.react.PromiseLikeOfReactNode
 }}}
 to avoid circular code involving: 
+- react.react.<global>.JSX.ElementType
+- react.react.GlobalJSXElementType
+- react.react.JSX.ElementType
+- react.react.JSXElementConstructor
 - react.react.PromiseLikeOfReactNode
 - react.react.ReactFragment
 - react.react.ReactNode
@@ -830,13 +839,13 @@ to avoid circular code involving:
   - typings.react.mod.ReactElement
   - java.lang.String
   - scala.Double
-  - scala.Any
+  - js.Iterable[scala.Any]
   - typings.react.mod.ReactPortal
   - scala.Boolean
   - scala.Unit
   - typings.react.experimentalMod.reactAugmentingMod.PromiseLikeOfReactNode
 */
-type ReactNode = js.UndefOr[_ReactNode | String | Double | Any | Boolean]
+type ReactNode = js.UndefOr[_ReactNode | js.Iterable[Any] | String | Double | Boolean]
 
 /**
   * @deprecated - This type is not relevant when using React. Inline the type instead to make the intent clear.
@@ -865,9 +874,9 @@ type SVGLineElementAttributes[T] = SVGProps[T]
 
 type SVGTextElementAttributes[T] = SVGProps[T]
 
-type ServerContextJSONArray = js.Array[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]
+type ServerContextJSONArray = js.Array[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue]
 
-type ServerContextJSONValue = String | Boolean | Double | Null | typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray | StringDictionary[typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue]
+type ServerContextJSONValue = String | Boolean | Double | Null | typings.react.canaryMod.reactAugmentingMod.ServerContextJSONArray | StringDictionary[typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue]
 
 //
 // React Hooks

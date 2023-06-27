@@ -12,9 +12,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -30,9 +30,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -46,9 +46,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -63,9 +63,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -82,9 +82,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -99,9 +99,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -118,9 +118,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -134,9 +134,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -157,9 +157,9 @@ trait AVPlayPlaybackCallback extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *

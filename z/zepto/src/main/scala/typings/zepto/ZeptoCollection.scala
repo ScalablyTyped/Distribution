@@ -267,7 +267,7 @@ trait ZeptoCollection extends StObject {
   
   /**
     * Attach an event handler that is only triggered when the event originated from a node that matches a selector.
-    * @depcreated use ZeptoCollection.on instead.
+    * @deprecated use ZeptoCollection.on instead.
     * @param selector
     * @param type
     * @param fn
@@ -536,7 +536,7 @@ trait ZeptoCollection extends StObject {
   
   /**
     * Like delegate where the selector is taken from the current collection.
-    * @deprepcated use ZeptoCollection.on instead.
+    * @deprecated use ZeptoCollection.on instead.
     * @param type
     * @param fn
     * @return

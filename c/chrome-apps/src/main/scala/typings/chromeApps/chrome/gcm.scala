@@ -22,8 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Migrate GCM apps to Firebase Cloud Messaging (FCM),
   * which inherits the reliable and scalable GCM infrastructure,
   * plus many new features. See the migration guide to learn more.
-  * @see[Migration guide]{@link https://developers.google.com/cloud-messaging/android/android-migrate-fcm}
-  * @see[GCM Imlementation guide]{@link https://developers.google.com/cloud-messaging/chrome/client}
+  * @see https://developers.google.com/cloud-messaging/android/android-migrate-fcm
+  * @see https://developers.google.com/cloud-messaging/chrome/client
   * @since Chrome 35.
   * @requires Permissions: 'gcm'
   */

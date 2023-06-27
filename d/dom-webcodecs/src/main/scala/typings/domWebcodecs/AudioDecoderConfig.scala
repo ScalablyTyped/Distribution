@@ -8,7 +8,9 @@ trait AudioDecoderConfig extends StObject {
   
   var codec: String
   
-  var description: js.UndefOr[AllowSharedBufferSource] = js.undefined
+  var description: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+  ] = js.undefined
   
   var numberOfChannels: Double
   
@@ -26,7 +28,9 @@ object AudioDecoderConfig {
     
     inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    inline def setDescription(value: AllowSharedBufferSource): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     

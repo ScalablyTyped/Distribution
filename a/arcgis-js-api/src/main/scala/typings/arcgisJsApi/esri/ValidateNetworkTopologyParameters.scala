@@ -14,37 +14,37 @@ trait ValidateNetworkTopologyParameters
      with JSONSupport {
   
   /**
-    * Specifies the geodatabase version name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#gdbVersion)
-    */
+  		 * Specifies the geodatabase version name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#gdbVersion)
+  		 */
   var gdbVersion: String = js.native
   
   /**
-    * Specifies the GUID used to lock the version.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#sessionID)
-    */
+  		 * Specifies the GUID used to lock the version.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#sessionID)
+  		 */
   var sessionID: String = js.native
   
   /**
-    * Specifies the envelope of the area to validate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validateArea)
-    */
+  		 * Specifies the envelope of the area to validate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validateArea)
+  		 */
   var validateArea: Extent = js.native
   
   /**
-    * Specifies the set of features and objects to validate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationSet)
-    */
+  		 * Specifies the set of features and objects to validate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationSet)
+  		 */
   var validationSet: js.Array[ValidationSetItemJSON] = js.native
   
   /**
-    * Specifies the validation to perform.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationType)
-    */
+  		 * Specifies the validation to perform.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationType)
+  		 */
   var validationType: normal | rebuild | `force-rebuild` = js.native
 }

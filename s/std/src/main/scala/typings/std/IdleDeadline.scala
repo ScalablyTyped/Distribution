@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IdleDeadline) */
 trait IdleDeadline extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IdleDeadline/didTimeout) */
   /* standard dom */
   val didTimeout: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IdleDeadline/timeRemaining) */
   /* standard dom */
   def timeRemaining(): DOMHighResTimeStamp
 }

@@ -65,6 +65,10 @@ object OfficeExtension {
     var value: T = js.native
   }
   
+  /**
+    * Represents a session of a Visio diagram embedded in a SharePoint page. 
+  	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+    */
   @JSGlobal("OfficeExtension.EmbeddedSession")
   @js.native
   open class EmbeddedSession protected ()
@@ -73,6 +77,9 @@ object OfficeExtension {
     def this(url: String) = this()
     def this(url: String, options: EmbeddedOptions) = this()
     
+    /**
+    		* Initializes the session.
+    		*/
     /* CompleteClass */
     override def init(): js.Promise[Any] = js.native
   }
@@ -207,6 +214,12 @@ object OfficeExtension {
     inline def valueNotLoaded_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueNotLoaded")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+  	*
+  	* **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+    * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+    */
   @JSGlobal("OfficeExtension.EventHandlerResult")
   @js.native
   open class EventHandlerResult[T] protected ()
@@ -222,6 +235,9 @@ object OfficeExtension {
     /* CompleteClass */
     var context: typings.officeJs.OfficeExtension.ClientRequestContext = js.native
     
+    /*
+    		* Removes the handler from the event.
+    		*/
     /* CompleteClass */
     override def remove(): Unit = js.native
   }

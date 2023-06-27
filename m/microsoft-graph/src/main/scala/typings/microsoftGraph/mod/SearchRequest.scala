@@ -10,6 +10,8 @@ trait SearchRequest extends StObject {
   
   var aggregations: js.UndefOr[NullableOption[js.Array[AggregationOption]]] = js.undefined
   
+  var collapseProperties: js.UndefOr[NullableOption[js.Array[CollapseProperty]]] = js.undefined
+  
   var contentSources: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   var enableTopResults: js.UndefOr[NullableOption[Boolean]] = js.undefined
@@ -59,6 +61,14 @@ object SearchRequest {
     inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
     inline def setAggregationsVarargs(value: AggregationOption*): Self = StObject.set(x, "aggregations", js.Array(value*))
+    
+    inline def setCollapseProperties(value: NullableOption[js.Array[CollapseProperty]]): Self = StObject.set(x, "collapseProperties", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsePropertiesNull: Self = StObject.set(x, "collapseProperties", null)
+    
+    inline def setCollapsePropertiesUndefined: Self = StObject.set(x, "collapseProperties", js.undefined)
+    
+    inline def setCollapsePropertiesVarargs(value: CollapseProperty*): Self = StObject.set(x, "collapseProperties", js.Array(value*))
     
     inline def setContentSources(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "contentSources", value.asInstanceOf[js.Any])
     

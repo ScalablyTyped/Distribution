@@ -44,6 +44,11 @@ import typings.microsoftGraph.mod.ApprovalFilterByCurrentUserOptions
 import typings.microsoftGraph.mod.AttachmentType
 import typings.microsoftGraph.mod.AttendeeType
 import typings.microsoftGraph.mod.AttestationLevel
+import typings.microsoftGraph.mod.AttributeDefinitionMetadata
+import typings.microsoftGraph.mod.AttributeFlowBehavior
+import typings.microsoftGraph.mod.AttributeFlowType
+import typings.microsoftGraph.mod.AttributeMappingSourceType
+import typings.microsoftGraph.mod.AttributeType
 import typings.microsoftGraph.mod.AuthenticationMethodKeyStrength
 import typings.microsoftGraph.mod.AuthenticationMethodModes
 import typings.microsoftGraph.mod.AuthenticationMethodSignInState
@@ -161,6 +166,7 @@ import typings.microsoftGraph.mod.DeviceManagementSubscriptionState
 import typings.microsoftGraph.mod.DeviceRegistrationState
 import typings.microsoftGraph.mod.DeviceThreatProtectionLevel
 import typings.microsoftGraph.mod.DiagnosticDataSubmissionMode
+import typings.microsoftGraph.mod.DirectoryDefinitionDiscoverabilities
 import typings.microsoftGraph.mod.DiskType
 import typings.microsoftGraph.mod.EdgeCookiePolicy
 import typings.microsoftGraph.mod.EdgeSearchEngineType
@@ -178,6 +184,8 @@ import typings.microsoftGraph.mod.Enablement
 import typings.microsoftGraph.mod.EndpointType
 import typings.microsoftGraph.mod.EnrollmentState
 import typings.microsoftGraph.mod.EntityType
+import typings.microsoftGraph.mod.EntryExportStatus
+import typings.microsoftGraph.mod.EntrySyncOperation
 import typings.microsoftGraph.mod.EventType
 import typings.microsoftGraph.mod.ExchangeIdFormat
 import typings.microsoftGraph.mod.ExpirationPatternType
@@ -186,6 +194,7 @@ import typings.microsoftGraph.mod.ExternalConnectors.AccessType
 import typings.microsoftGraph.mod.ExternalConnectors.AclType
 import typings.microsoftGraph.mod.ExternalConnectors.ConnectionOperationStatus
 import typings.microsoftGraph.mod.ExternalConnectors.ConnectionState
+import typings.microsoftGraph.mod.ExternalConnectors.ExternalActivityType
 import typings.microsoftGraph.mod.ExternalConnectors.ExternalItemContentType
 import typings.microsoftGraph.mod.ExternalConnectors.IdentityType
 import typings.microsoftGraph.mod.ExternalConnectors.Label
@@ -218,6 +227,7 @@ import typings.microsoftGraph.mod.InstallState
 import typings.microsoftGraph.mod.InternetSiteSecurityLevel
 import typings.microsoftGraph.mod.IosNotificationAlertType
 import typings.microsoftGraph.mod.IosUpdatesInstallStatus
+import typings.microsoftGraph.mod.LayoutTemplateType
 import typings.microsoftGraph.mod.LifecycleEventType
 import typings.microsoftGraph.mod.LobbyBypassScope
 import typings.microsoftGraph.mod.LocationType
@@ -253,15 +263,21 @@ import typings.microsoftGraph.mod.MobileAppContentFileUploadState
 import typings.microsoftGraph.mod.MobileAppPublishingState
 import typings.microsoftGraph.mod.MobileThreatPartnerTenantState
 import typings.microsoftGraph.mod.Modality
+import typings.microsoftGraph.mod.Mutability
 import typings.microsoftGraph.mod.NotificationTemplateBrandingOptions
+import typings.microsoftGraph.mod.ObjectDefinitionMetadata
+import typings.microsoftGraph.mod.ObjectFlowTypes
+import typings.microsoftGraph.mod.ObjectMappingMetadata
 import typings.microsoftGraph.mod.OnPremisesDirectorySynchronizationDeletionPreventionType
 import typings.microsoftGraph.mod.OnenotePatchActionType
 import typings.microsoftGraph.mod.OnenotePatchInsertPosition
 import typings.microsoftGraph.mod.OnenoteSourceService
 import typings.microsoftGraph.mod.OnenoteUserRole
+import typings.microsoftGraph.mod.OnlineMeetingContentSharingDisabledReason
 import typings.microsoftGraph.mod.OnlineMeetingPresenters
 import typings.microsoftGraph.mod.OnlineMeetingProviderType
 import typings.microsoftGraph.mod.OnlineMeetingRole
+import typings.microsoftGraph.mod.OnlineMeetingVideoDisabledReason
 import typings.microsoftGraph.mod.OperationResult
 import typings.microsoftGraph.mod.OperationStatus
 import typings.microsoftGraph.mod.PartnerTenantType
@@ -297,6 +313,7 @@ import typings.microsoftGraph.mod.ProvisioningAction
 import typings.microsoftGraph.mod.ProvisioningResult
 import typings.microsoftGraph.mod.ProvisioningStatusErrorCategory
 import typings.microsoftGraph.mod.ProvisioningStepType
+import typings.microsoftGraph.mod.QuarantineReason
 import typings.microsoftGraph.mod.RatingAppsType
 import typings.microsoftGraph.mod.RatingAustraliaMoviesType
 import typings.microsoftGraph.mod.RatingAustraliaTelevisionType
@@ -345,6 +362,8 @@ import typings.microsoftGraph.mod.SafeSearchFilterType
 import typings.microsoftGraph.mod.ScheduleChangeRequestActor
 import typings.microsoftGraph.mod.ScheduleChangeState
 import typings.microsoftGraph.mod.ScheduleEntityTheme
+import typings.microsoftGraph.mod.ScopeOperatorMultiValuedComparisonType
+import typings.microsoftGraph.mod.ScopeOperatorType
 import typings.microsoftGraph.mod.ScreenSharingRole
 import typings.microsoftGraph.mod.SearchAlterationType
 import typings.microsoftGraph.mod.SearchContent
@@ -368,6 +387,7 @@ import typings.microsoftGraph.mod.SecurityNamespace.EventStatusType
 import typings.microsoftGraph.mod.SecurityNamespace.EvidenceRemediationStatus
 import typings.microsoftGraph.mod.SecurityNamespace.EvidenceRole
 import typings.microsoftGraph.mod.SecurityNamespace.EvidenceVerdict
+import typings.microsoftGraph.mod.SecurityNamespace.GoogleCloudLocationType
 import typings.microsoftGraph.mod.SecurityNamespace.IncidentStatus
 import typings.microsoftGraph.mod.SecurityNamespace.OnboardingStatus
 import typings.microsoftGraph.mod.SecurityNamespace.PurgeAreas
@@ -407,6 +427,13 @@ import typings.microsoftGraph.mod.SubjectRightsRequestStage
 import typings.microsoftGraph.mod.SubjectRightsRequestStageStatus
 import typings.microsoftGraph.mod.SubjectRightsRequestStatus
 import typings.microsoftGraph.mod.SubjectRightsRequestType
+import typings.microsoftGraph.mod.SynchronizationDisposition
+import typings.microsoftGraph.mod.SynchronizationJobRestartScope
+import typings.microsoftGraph.mod.SynchronizationMetadata
+import typings.microsoftGraph.mod.SynchronizationScheduleState
+import typings.microsoftGraph.mod.SynchronizationSecret
+import typings.microsoftGraph.mod.SynchronizationStatusCode
+import typings.microsoftGraph.mod.SynchronizationTaskExecutionResult
 import typings.microsoftGraph.mod.TargetedManagedAppGroupType
 import typings.microsoftGraph.mod.TaskStatus
 import typings.microsoftGraph.mod.TeamSpecialization
@@ -489,18 +516,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object microsoftGraphStrings {
   
   @js.native
-  sealed trait default
-    extends StObject
-       with AdvancedConfigState
-       with BrowserSiteCompatibilityMode
-       with BrowserSiteMergeType
-       with EdgeSearchEngineType
-       with EndpointType
-       with ExternalEmailOtpState
-       with LocationType
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
   sealed trait ADFederationServices
     extends StObject
        with TokenIssuerType
@@ -513,16 +528,96 @@ object microsoftGraphStrings {
   inline def ADFederationServicesMFAAdapter: ADFederationServicesMFAAdapter = "ADFederationServicesMFAAdapter".asInstanceOf[ADFederationServicesMFAAdapter]
   
   @js.native
+  sealed trait Active
+    extends StObject
+       with SynchronizationScheduleState
+       with SynchronizationStatusCode
+  inline def Active: Active = "Active".asInstanceOf[Active]
+  
+  @js.native
+  sealed trait Add
+    extends StObject
+       with EntrySyncOperation
+       with ObjectFlowTypes
+  inline def Add: Add = "Add".asInstanceOf[Add]
+  
+  @js.native
   sealed trait After
     extends StObject
        with OnenotePatchInsertPosition
   inline def After: After = "After".asInstanceOf[After]
   
   @js.native
+  sealed trait All
+    extends StObject
+       with ScopeOperatorMultiValuedComparisonType
+  inline def All: All = "All".asInstanceOf[All]
+  
+  @js.native
+  sealed trait Always
+    extends StObject
+       with AttributeFlowType
+  inline def Always: Always = "Always".asInstanceOf[Always]
+  
+  @js.native
+  sealed trait Any
+    extends StObject
+       with ScopeOperatorMultiValuedComparisonType
+  inline def Any: Any = "Any".asInstanceOf[Any]
+  
+  @js.native
+  sealed trait AppKey
+    extends StObject
+       with SynchronizationSecret
+  inline def AppKey: AppKey = "AppKey".asInstanceOf[AppKey]
+  
+  @js.native
   sealed trait Append
     extends StObject
        with OnenotePatchActionType
   inline def Append: Append = "Append".asInstanceOf[Append]
+  
+  @js.native
+  sealed trait ApplicationTemplateIdentifier
+    extends StObject
+       with SynchronizationSecret
+  inline def ApplicationTemplateIdentifier: ApplicationTemplateIdentifier = "ApplicationTemplateIdentifier".asInstanceOf[ApplicationTemplateIdentifier]
+  
+  @js.native
+  sealed trait Attribute
+    extends StObject
+       with AttributeMappingSourceType
+  inline def Attribute: Attribute = "Attribute".asInstanceOf[Attribute]
+  
+  @js.native
+  sealed trait AttributeAddOnly
+    extends StObject
+       with AttributeFlowType
+  inline def AttributeAddOnly: AttributeAddOnly = "AttributeAddOnly".asInstanceOf[AttributeAddOnly]
+  
+  @js.native
+  sealed trait AttributeDataTypes
+    extends StObject
+       with DirectoryDefinitionDiscoverabilities
+  inline def AttributeDataTypes: AttributeDataTypes = "AttributeDataTypes".asInstanceOf[AttributeDataTypes]
+  
+  @js.native
+  sealed trait AttributeNames
+    extends StObject
+       with DirectoryDefinitionDiscoverabilities
+  inline def AttributeNames: AttributeNames = "AttributeNames".asInstanceOf[AttributeNames]
+  
+  @js.native
+  sealed trait AttributeReadOnly
+    extends StObject
+       with DirectoryDefinitionDiscoverabilities
+  inline def AttributeReadOnly: AttributeReadOnly = "AttributeReadOnly".asInstanceOf[AttributeReadOnly]
+  
+  @js.native
+  sealed trait AuthenticationType
+    extends StObject
+       with SynchronizationSecret
+  inline def AuthenticationType: AuthenticationType = "AuthenticationType".asInstanceOf[AuthenticationType]
   
   @js.native
   sealed trait AzureAD
@@ -537,10 +632,59 @@ object microsoftGraphStrings {
   inline def AzureADBackupAuth: AzureADBackupAuth = "AzureADBackupAuth".asInstanceOf[AzureADBackupAuth]
   
   @js.native
+  sealed trait BaseAddress
+    extends StObject
+       with SynchronizationSecret
+  inline def BaseAddress: BaseAddress = "BaseAddress".asInstanceOf[BaseAddress]
+  
+  @js.native
+  sealed trait BaseAttributeName
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def BaseAttributeName: BaseAttributeName = "BaseAttributeName".asInstanceOf[BaseAttributeName]
+  
+  @js.native
+  sealed trait BaseObjectName
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def BaseObjectName: BaseObjectName = "BaseObjectName".asInstanceOf[BaseObjectName]
+  
+  @js.native
   sealed trait Before
     extends StObject
        with OnenotePatchInsertPosition
   inline def Before: Before = "Before".asInstanceOf[Before]
+  
+  @js.native
+  sealed trait Binary
+    extends StObject
+       with AttributeType
+       with ScopeOperatorType
+  inline def Binary: Binary = "Binary".asInstanceOf[Binary]
+  
+  @js.native
+  sealed trait Boolean
+    extends StObject
+       with AttributeType
+  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  
+  @js.native
+  sealed trait ClientIdentifier
+    extends StObject
+       with SynchronizationSecret
+  inline def ClientIdentifier: ClientIdentifier = "ClientIdentifier".asInstanceOf[ClientIdentifier]
+  
+  @js.native
+  sealed trait ClientSecret
+    extends StObject
+       with SynchronizationSecret
+  inline def ClientSecret: ClientSecret = "ClientSecret".asInstanceOf[ClientSecret]
+  
+  @js.native
+  sealed trait CompanyId
+    extends StObject
+       with SynchronizationSecret
+  inline def CompanyId: CompanyId = "CompanyId".asInstanceOf[CompanyId]
   
   @js.native
   sealed trait Completed
@@ -549,22 +693,253 @@ object microsoftGraphStrings {
   inline def Completed: Completed = "Completed".asInstanceOf[Completed]
   
   @js.native
+  sealed trait ComplexObjectDefinition
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def ComplexObjectDefinition: ComplexObjectDefinition = "ComplexObjectDefinition".asInstanceOf[ComplexObjectDefinition]
+  
+  @js.native
+  sealed trait ConfigurationFields
+    extends StObject
+       with SynchronizationMetadata
+  inline def ConfigurationFields: ConfigurationFields = "ConfigurationFields".asInstanceOf[ConfigurationFields]
+  
+  @js.native
+  sealed trait ConnectionString
+    extends StObject
+       with SynchronizationSecret
+  inline def ConnectionString: ConnectionString = "ConnectionString".asInstanceOf[ConnectionString]
+  
+  @js.native
+  sealed trait ConnectorDataStorageRequired
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def ConnectorDataStorageRequired: ConnectorDataStorageRequired = "ConnectorDataStorageRequired".asInstanceOf[ConnectorDataStorageRequired]
+  
+  @js.native
+  sealed trait ConnectorDataStore
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def ConnectorDataStore: ConnectorDataStore = "ConnectorDataStore".asInstanceOf[ConnectorDataStore]
+  
+  @js.native
+  sealed trait Constant
+    extends StObject
+       with AttributeMappingSourceType
+  inline def Constant: Constant = "Constant".asInstanceOf[Constant]
+  
+  @js.native
+  sealed trait ConsumerKey
+    extends StObject
+       with SynchronizationSecret
+  inline def ConsumerKey: ConsumerKey = "ConsumerKey".asInstanceOf[ConsumerKey]
+  
+  @js.native
+  sealed trait ConsumerSecret
+    extends StObject
+       with SynchronizationSecret
+  inline def ConsumerSecret: ConsumerSecret = "ConsumerSecret".asInstanceOf[ConsumerSecret]
+  
+  @js.native
   sealed trait Contributor
     extends StObject
        with OnenoteUserRole
   inline def Contributor: Contributor = "Contributor".asInstanceOf[Contributor]
   
   @js.native
+  sealed trait DateTime
+    extends StObject
+       with AttributeType
+  inline def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
+  
+  @js.native
+  sealed trait Default
+    extends StObject
+       with typings.microsoftGraph.mod.EscrowBehavior
+  inline def Default: Default = "Default".asInstanceOf[Default]
+  
+  @js.native
   sealed trait Delete
     extends StObject
+       with EntrySyncOperation
+       with ObjectFlowTypes
        with OnenotePatchActionType
   inline def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @js.native
+  sealed trait DisableMonitoringForChanges
+    extends StObject
+       with ObjectMappingMetadata
+  inline def DisableMonitoringForChanges: DisableMonitoringForChanges = "DisableMonitoringForChanges".asInstanceOf[DisableMonitoringForChanges]
+  
+  @js.native
+  sealed trait Disabled
+    extends StObject
+       with SynchronizationScheduleState
+  inline def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
+  
+  @js.native
+  sealed trait Discard
+    extends StObject
+       with SynchronizationDisposition
+  inline def Discard: Discard = "Discard".asInstanceOf[Discard]
+  
+  @js.native
+  sealed trait Disposition
+    extends StObject
+       with ObjectMappingMetadata
+  inline def Disposition: Disposition = "Disposition".asInstanceOf[Disposition]
+  
+  @js.native
+  sealed trait Domain
+    extends StObject
+       with SynchronizationSecret
+  inline def Domain: Domain = "Domain".asInstanceOf[Domain]
+  
+  @js.native
+  sealed trait EncounteredBaseEscrowThreshold
+    extends StObject
+       with QuarantineReason
+  inline def EncounteredBaseEscrowThreshold: EncounteredBaseEscrowThreshold = "EncounteredBaseEscrowThreshold".asInstanceOf[EncounteredBaseEscrowThreshold]
+  
+  @js.native
+  sealed trait EncounteredEscrowProportionThreshold
+    extends StObject
+       with QuarantineReason
+  inline def EncounteredEscrowProportionThreshold: EncounteredEscrowProportionThreshold = "EncounteredEscrowProportionThreshold".asInstanceOf[EncounteredEscrowProportionThreshold]
+  
+  @js.native
+  sealed trait EncounteredQuarantineException
+    extends StObject
+       with QuarantineReason
+  inline def EncounteredQuarantineException: EncounteredQuarantineException = "EncounteredQuarantineException".asInstanceOf[EncounteredQuarantineException]
+  
+  @js.native
+  sealed trait EncounteredTotalEscrowThreshold
+    extends StObject
+       with QuarantineReason
+  inline def EncounteredTotalEscrowThreshold: EncounteredTotalEscrowThreshold = "EncounteredTotalEscrowThreshold".asInstanceOf[EncounteredTotalEscrowThreshold]
+  
+  @js.native
+  sealed trait EnforceDomain
+    extends StObject
+       with SynchronizationSecret
+  inline def EnforceDomain: EnforceDomain = "EnforceDomain".asInstanceOf[EnforceDomain]
+  
+  @js.native
+  sealed trait EntryLevelErrors
+    extends StObject
+       with SynchronizationTaskExecutionResult
+  inline def EntryLevelErrors: EntryLevelErrors = "EntryLevelErrors".asInstanceOf[EntryLevelErrors]
+  
+  @js.native
+  sealed trait Error
+    extends StObject
+       with EntryExportStatus
+  inline def Error: Error = "Error".asInstanceOf[Error]
+  
+  @js.native
+  sealed trait Escrow
+    extends StObject
+       with SynchronizationDisposition
+  inline def Escrow: Escrow = "Escrow".asInstanceOf[Escrow]
+  
+  @js.native
+  sealed trait EscrowBehavior
+    extends StObject
+       with ObjectMappingMetadata
+  inline def EscrowBehavior: EscrowBehavior = "EscrowBehavior".asInstanceOf[EscrowBehavior]
+  
+  @js.native
+  sealed trait Escrows
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def Escrows: Escrows = "Escrows".asInstanceOf[Escrows]
+  
+  @js.native
+  sealed trait ExcludeFromReporting
+    extends StObject
+       with ObjectMappingMetadata
+  inline def ExcludeFromReporting: ExcludeFromReporting = "ExcludeFromReporting".asInstanceOf[ExcludeFromReporting]
+  
+  @js.native
+  sealed trait Extensions
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def Extensions: Extensions = "Extensions".asInstanceOf[Extensions]
   
   @js.native
   sealed trait Failed
     extends StObject
        with OperationStatus
+       with SynchronizationTaskExecutionResult
   inline def Failed: Failed = "Failed".asInstanceOf[Failed]
+  
+  @js.native
+  sealed trait FlowAlways
+    extends StObject
+       with AttributeFlowBehavior
+  inline def FlowAlways: FlowAlways = "FlowAlways".asInstanceOf[FlowAlways]
+  
+  @js.native
+  sealed trait FlowWhenChanged
+    extends StObject
+       with AttributeFlowBehavior
+  inline def FlowWhenChanged: FlowWhenChanged = "FlowWhenChanged".asInstanceOf[FlowWhenChanged]
+  
+  @js.native
+  sealed trait ForceDeletes
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def ForceDeletes: ForceDeletes = "ForceDeletes".asInstanceOf[ForceDeletes]
+  
+  @js.native
+  sealed trait Full
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def Full: Full = "Full".asInstanceOf[Full]
+  
+  @js.native
+  sealed trait Function
+    extends StObject
+       with AttributeMappingSourceType
+  inline def Function: Function = "Function".asInstanceOf[Function]
+  
+  @js.native
+  sealed trait GalleryApplicationIdentifier
+    extends StObject
+       with SynchronizationMetadata
+  inline def GalleryApplicationIdentifier: GalleryApplicationIdentifier = "GalleryApplicationIdentifier".asInstanceOf[GalleryApplicationIdentifier]
+  
+  @js.native
+  sealed trait GalleryApplicationKey
+    extends StObject
+       with SynchronizationMetadata
+  inline def GalleryApplicationKey: GalleryApplicationKey = "GalleryApplicationKey".asInstanceOf[GalleryApplicationKey]
+  
+  @js.native
+  sealed trait HardDeletesEnabled
+    extends StObject
+       with SynchronizationSecret
+  inline def HardDeletesEnabled: HardDeletesEnabled = "HardDeletesEnabled".asInstanceOf[HardDeletesEnabled]
+  
+  @js.native
+  sealed trait IgnoreLookupReferenceResolutionFailure
+    extends StObject
+       with typings.microsoftGraph.mod.EscrowBehavior
+  inline def IgnoreLookupReferenceResolutionFailure: IgnoreLookupReferenceResolutionFailure = "IgnoreLookupReferenceResolutionFailure".asInstanceOf[IgnoreLookupReferenceResolutionFailure]
+  
+  @js.native
+  sealed trait Immutable
+    extends StObject
+       with Mutability
+  inline def Immutable: Immutable = "Immutable".asInstanceOf[Immutable]
+  
+  @js.native
+  sealed trait IngestionInterrupted
+    extends StObject
+       with QuarantineReason
+  inline def IngestionInterrupted: IngestionInterrupted = "IngestionInterrupted".asInstanceOf[IngestionInterrupted]
   
   @js.native
   sealed trait Insert
@@ -573,10 +948,101 @@ object microsoftGraphStrings {
   inline def Insert: Insert = "Insert".asInstanceOf[Insert]
   
   @js.native
+  sealed trait InstanceName
+    extends StObject
+       with SynchronizationSecret
+  inline def InstanceName: InstanceName = "InstanceName".asInstanceOf[InstanceName]
+  
+  @js.native
+  sealed trait Integer
+    extends StObject
+       with AttributeType
+  inline def Integer: Integer = "Integer".asInstanceOf[Integer]
+  
+  @js.native
+  sealed trait IsContainer
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def IsContainer: IsContainer = "IsContainer".asInstanceOf[IsContainer]
+  
+  @js.native
+  sealed trait IsCustomerDefined
+    extends StObject
+       with AttributeDefinitionMetadata
+       with ObjectMappingMetadata
+  inline def IsCustomerDefined: IsCustomerDefined = "IsCustomerDefined".asInstanceOf[IsCustomerDefined]
+  
+  @js.native
+  sealed trait IsDomainQualified
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def IsDomainQualified: IsDomainQualified = "IsDomainQualified".asInstanceOf[IsDomainQualified]
+  
+  @js.native
+  sealed trait IsOAuthEnabled
+    extends StObject
+       with SynchronizationMetadata
+  inline def IsOAuthEnabled: IsOAuthEnabled = "IsOAuthEnabled".asInstanceOf[IsOAuthEnabled]
+  
+  @js.native
+  sealed trait IsSoftDeletionSupported
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def IsSoftDeletionSupported: IsSoftDeletionSupported = "IsSoftDeletionSupported".asInstanceOf[IsSoftDeletionSupported]
+  
+  @js.native
+  sealed trait IsSynchronizationAgentAssignmentRequired
+    extends StObject
+       with SynchronizationMetadata
+  inline def IsSynchronizationAgentAssignmentRequired: IsSynchronizationAgentAssignmentRequired = "IsSynchronizationAgentAssignmentRequired".asInstanceOf[IsSynchronizationAgentAssignmentRequired]
+  
+  @js.native
+  sealed trait IsSynchronizationAgentRequired
+    extends StObject
+       with SynchronizationMetadata
+  inline def IsSynchronizationAgentRequired: IsSynchronizationAgentRequired = "IsSynchronizationAgentRequired".asInstanceOf[IsSynchronizationAgentRequired]
+  
+  @js.native
+  sealed trait IsSynchronizationInPreview
+    extends StObject
+       with SynchronizationMetadata
+  inline def IsSynchronizationInPreview: IsSynchronizationInPreview = "IsSynchronizationInPreview".asInstanceOf[IsSynchronizationInPreview]
+  
+  @js.native
+  sealed trait IsSynchronizeAllSupported
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def IsSynchronizeAllSupported: IsSynchronizeAllSupported = "IsSynchronizeAllSupported".asInstanceOf[IsSynchronizeAllSupported]
+  
+  @js.native
+  sealed trait LinkPropertyNames
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def LinkPropertyNames: LinkPropertyNames = "LinkPropertyNames".asInstanceOf[LinkPropertyNames]
+  
+  @js.native
+  sealed trait LinkTypeName
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def LinkTypeName: LinkTypeName = "LinkTypeName".asInstanceOf[LinkTypeName]
+  
+  @js.native
   sealed trait Many
     extends StObject
        with ChildSelectability
   inline def Many: Many = "Many".asInstanceOf[Many]
+  
+  @js.native
+  sealed trait MaximumLength
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def MaximumLength: MaximumLength = "MaximumLength".asInstanceOf[MaximumLength]
+  
+  @js.native
+  sealed trait MultiValueAddOnly
+    extends StObject
+       with AttributeFlowType
+  inline def MultiValueAddOnly: MultiValueAddOnly = "MultiValueAddOnly".asInstanceOf[MultiValueAddOnly]
   
   @js.native
   sealed trait NPSExtension
@@ -587,14 +1053,109 @@ object microsoftGraphStrings {
   @js.native
   sealed trait None
     extends StObject
+       with DirectoryDefinitionDiscoverabilities
+       with EntrySyncOperation
+       with ObjectFlowTypes
        with OnenoteUserRole
+       with SynchronizationJobRestartScope
+       with SynchronizationSecret
   inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
+  sealed trait Noop
+    extends StObject
+       with EntryExportStatus
+  inline def Noop: Noop = "Noop".asInstanceOf[Noop]
+  
+  @js.native
+  sealed trait Normal
+    extends StObject
+       with SynchronizationDisposition
+  inline def Normal: Normal = "Normal".asInstanceOf[Normal]
+  
+  @js.native
+  sealed trait NotConfigured
+    extends StObject
+       with SynchronizationStatusCode
+  inline def NotConfigured: NotConfigured = "NotConfigured".asInstanceOf[NotConfigured]
+  
+  @js.native
+  sealed trait NotRun
+    extends StObject
+       with SynchronizationStatusCode
+  inline def NotRun: NotRun = "NotRun".asInstanceOf[NotRun]
   
   @js.native
   sealed trait NotStarted
     extends StObject
        with OperationStatus
   inline def NotStarted: NotStarted = "NotStarted".asInstanceOf[NotStarted]
+  
+  @js.native
+  sealed trait OAuthSettings
+    extends StObject
+       with SynchronizationMetadata
+  inline def OAuthSettings: OAuthSettings = "OAuthSettings".asInstanceOf[OAuthSettings]
+  
+  @js.native
+  sealed trait Oauth2AccessToken
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2AccessToken: Oauth2AccessToken = "Oauth2AccessToken".asInstanceOf[Oauth2AccessToken]
+  
+  @js.native
+  sealed trait Oauth2AccessTokenCreationTime
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2AccessTokenCreationTime: Oauth2AccessTokenCreationTime = "Oauth2AccessTokenCreationTime".asInstanceOf[Oauth2AccessTokenCreationTime]
+  
+  @js.native
+  sealed trait Oauth2AuthorizationCode
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2AuthorizationCode: Oauth2AuthorizationCode = "Oauth2AuthorizationCode".asInstanceOf[Oauth2AuthorizationCode]
+  
+  @js.native
+  sealed trait Oauth2AuthorizationUri
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2AuthorizationUri: Oauth2AuthorizationUri = "Oauth2AuthorizationUri".asInstanceOf[Oauth2AuthorizationUri]
+  
+  @js.native
+  sealed trait Oauth2ClientId
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2ClientId: Oauth2ClientId = "Oauth2ClientId".asInstanceOf[Oauth2ClientId]
+  
+  @js.native
+  sealed trait Oauth2ClientSecret
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2ClientSecret: Oauth2ClientSecret = "Oauth2ClientSecret".asInstanceOf[Oauth2ClientSecret]
+  
+  @js.native
+  sealed trait Oauth2RedirectUri
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2RedirectUri: Oauth2RedirectUri = "Oauth2RedirectUri".asInstanceOf[Oauth2RedirectUri]
+  
+  @js.native
+  sealed trait Oauth2RefreshToken
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2RefreshToken: Oauth2RefreshToken = "Oauth2RefreshToken".asInstanceOf[Oauth2RefreshToken]
+  
+  @js.native
+  sealed trait Oauth2TokenExchangeUri
+    extends StObject
+       with SynchronizationSecret
+  inline def Oauth2TokenExchangeUri: Oauth2TokenExchangeUri = "Oauth2TokenExchangeUri".asInstanceOf[Oauth2TokenExchangeUri]
+  
+  @js.native
+  sealed trait ObjectAddOnly
+    extends StObject
+       with AttributeFlowType
+  inline def ObjectAddOnly: ObjectAddOnly = "ObjectAddOnly".asInstanceOf[ObjectAddOnly]
   
   @js.native
   sealed trait OnPremOneDriveForBusiness
@@ -621,10 +1182,41 @@ object microsoftGraphStrings {
   inline def OneDriveForBusiness: OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[OneDriveForBusiness]
   
   @js.native
+  sealed trait OriginalJoiningProperty
+    extends StObject
+       with ObjectMappingMetadata
+  inline def OriginalJoiningProperty: OriginalJoiningProperty = "OriginalJoiningProperty".asInstanceOf[OriginalJoiningProperty]
+  
+  @js.native
   sealed trait Owner
     extends StObject
        with OnenoteUserRole
   inline def Owner: Owner = "Owner".asInstanceOf[Owner]
+  
+  @js.native
+  sealed trait Password
+    extends StObject
+       with SynchronizationSecret
+  inline def Password: Password = "Password".asInstanceOf[Password]
+  
+  @js.native
+  sealed trait Paused
+    extends StObject
+       with SynchronizationScheduleState
+       with SynchronizationStatusCode
+  inline def Paused: Paused = "Paused".asInstanceOf[Paused]
+  
+  @js.native
+  sealed trait PerformInboundEntitlementGrants
+    extends StObject
+       with SynchronizationSecret
+  inline def PerformInboundEntitlementGrants: PerformInboundEntitlementGrants = "PerformInboundEntitlementGrants".asInstanceOf[PerformInboundEntitlementGrants]
+  
+  @js.native
+  sealed trait PermanentError
+    extends StObject
+       with EntryExportStatus
+  inline def PermanentError: PermanentError = "PermanentError".asInstanceOf[PermanentError]
   
   @js.native
   sealed trait Prepend
@@ -633,10 +1225,70 @@ object microsoftGraphStrings {
   inline def Prepend: Prepend = "Prepend".asInstanceOf[Prepend]
   
   @js.native
+  sealed trait PropertyNameAccountEnabled
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def PropertyNameAccountEnabled: PropertyNameAccountEnabled = "PropertyNameAccountEnabled".asInstanceOf[PropertyNameAccountEnabled]
+  
+  @js.native
+  sealed trait PropertyNameSoftDeleted
+    extends StObject
+       with ObjectDefinitionMetadata
+  inline def PropertyNameSoftDeleted: PropertyNameSoftDeleted = "PropertyNameSoftDeleted".asInstanceOf[PropertyNameSoftDeleted]
+  
+  @js.native
+  sealed trait Quarantine
+    extends StObject
+       with SynchronizationStatusCode
+  inline def Quarantine: Quarantine = "Quarantine".asInstanceOf[Quarantine]
+  
+  @js.native
+  sealed trait QuarantineState
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def QuarantineState: QuarantineState = "QuarantineState".asInstanceOf[QuarantineState]
+  
+  @js.native
+  sealed trait QuarantinedOnDemand
+    extends StObject
+       with QuarantineReason
+  inline def QuarantinedOnDemand: QuarantinedOnDemand = "QuarantinedOnDemand".asInstanceOf[QuarantinedOnDemand]
+  
+  @js.native
+  sealed trait ReadOnly
+    extends StObject
+       with Mutability
+  inline def ReadOnly: ReadOnly = "ReadOnly".asInstanceOf[ReadOnly]
+  
+  @js.native
+  sealed trait ReadWrite
+    extends StObject
+       with Mutability
+  inline def ReadWrite: ReadWrite = "ReadWrite".asInstanceOf[ReadWrite]
+  
+  @js.native
   sealed trait Reader
     extends StObject
        with OnenoteUserRole
   inline def Reader: Reader = "Reader".asInstanceOf[Reader]
+  
+  @js.native
+  sealed trait Reference
+    extends StObject
+       with AttributeType
+  inline def Reference: Reference = "Reference".asInstanceOf[Reference]
+  
+  @js.native
+  sealed trait ReferenceAttributes
+    extends StObject
+       with DirectoryDefinitionDiscoverabilities
+  inline def ReferenceAttributes: ReferenceAttributes = "ReferenceAttributes".asInstanceOf[ReferenceAttributes]
+  
+  @js.native
+  sealed trait ReferencedProperty
+    extends StObject
+       with AttributeDefinitionMetadata
+  inline def ReferencedProperty: ReferencedProperty = "ReferencedProperty".asInstanceOf[ReferencedProperty]
   
   @js.native
   sealed trait Replace
@@ -645,22 +1297,211 @@ object microsoftGraphStrings {
   inline def Replace: Replace = "Replace".asInstanceOf[Replace]
   
   @js.native
+  sealed trait RetryableError
+    extends StObject
+       with EntryExportStatus
+  inline def RetryableError: RetryableError = "RetryableError".asInstanceOf[RetryableError]
+  
+  @js.native
   sealed trait Running
     extends StObject
        with OperationStatus
   inline def Running: Running = "Running".asInstanceOf[Running]
   
   @js.native
+  sealed trait Sandbox
+    extends StObject
+       with SynchronizationSecret
+  inline def Sandbox: Sandbox = "Sandbox".asInstanceOf[Sandbox]
+  
+  @js.native
+  sealed trait SandboxName
+    extends StObject
+       with SynchronizationSecret
+  inline def SandboxName: SandboxName = "SandboxName".asInstanceOf[SandboxName]
+  
+  @js.native
+  sealed trait SecretToken
+    extends StObject
+       with SynchronizationSecret
+  inline def SecretToken: SecretToken = "SecretToken".asInstanceOf[SecretToken]
+  
+  @js.native
+  sealed trait Server
+    extends StObject
+       with SynchronizationSecret
+  inline def Server: Server = "Server".asInstanceOf[Server]
+  
+  @js.native
+  sealed trait SingleSignOnType
+    extends StObject
+       with SynchronizationSecret
+  inline def SingleSignOnType: SingleSignOnType = "SingleSignOnType".asInstanceOf[SingleSignOnType]
+  
+  @js.native
+  sealed trait SkipOutOfScopeDeletions
+    extends StObject
+       with SynchronizationSecret
+  inline def SkipOutOfScopeDeletions: SkipOutOfScopeDeletions = "SkipOutOfScopeDeletions".asInstanceOf[SkipOutOfScopeDeletions]
+  
+  @js.native
+  sealed trait String
+    extends StObject
+       with AttributeType
+  inline def String: String = "String".asInstanceOf[String]
+  
+  @js.native
+  sealed trait Succeeded
+    extends StObject
+       with SynchronizationTaskExecutionResult
+  inline def Succeeded: Succeeded = "Succeeded".asInstanceOf[Succeeded]
+  
+  @js.native
+  sealed trait Success
+    extends StObject
+       with EntryExportStatus
+  inline def Success: Success = "Success".asInstanceOf[Success]
+  
+  @js.native
+  sealed trait SyncAgentADContainer
+    extends StObject
+       with SynchronizationSecret
+  inline def SyncAgentADContainer: SyncAgentADContainer = "SyncAgentADContainer".asInstanceOf[SyncAgentADContainer]
+  
+  @js.native
+  sealed trait SyncAgentCompatibilityKey
+    extends StObject
+       with SynchronizationSecret
+  inline def SyncAgentCompatibilityKey: SyncAgentCompatibilityKey = "SyncAgentCompatibilityKey".asInstanceOf[SyncAgentCompatibilityKey]
+  
+  @js.native
+  sealed trait SyncAll
+    extends StObject
+       with SynchronizationSecret
+  inline def SyncAll: SyncAll = "SyncAll".asInstanceOf[SyncAll]
+  
+  @js.native
+  sealed trait SyncNotificationSettings
+    extends StObject
+       with SynchronizationSecret
+  inline def SyncNotificationSettings: SyncNotificationSettings = "SyncNotificationSettings".asInstanceOf[SyncNotificationSettings]
+  
+  @js.native
+  sealed trait SynchronizationLearnMoreIbizaFwLink
+    extends StObject
+       with SynchronizationMetadata
+  inline def SynchronizationLearnMoreIbizaFwLink: SynchronizationLearnMoreIbizaFwLink = "SynchronizationLearnMoreIbizaFwLink".asInstanceOf[SynchronizationLearnMoreIbizaFwLink]
+  
+  @js.native
+  sealed trait SynchronizationSchedule
+    extends StObject
+       with SynchronizationSecret
+  inline def SynchronizationSchedule: SynchronizationSchedule = "SynchronizationSchedule".asInstanceOf[SynchronizationSchedule]
+  
+  @js.native
+  sealed trait SystemOfRecord
+    extends StObject
+       with SynchronizationSecret
+  inline def SystemOfRecord: SystemOfRecord = "SystemOfRecord".asInstanceOf[SystemOfRecord]
+  
+  @js.native
+  sealed trait TestReferences
+    extends StObject
+       with SynchronizationSecret
+  inline def TestReferences: TestReferences = "TestReferences".asInstanceOf[TestReferences]
+  
+  @js.native
+  sealed trait TokenExpiration
+    extends StObject
+       with SynchronizationSecret
+  inline def TokenExpiration: TokenExpiration = "TokenExpiration".asInstanceOf[TokenExpiration]
+  
+  @js.native
+  sealed trait TokenKey
+    extends StObject
+       with SynchronizationSecret
+  inline def TokenKey: TokenKey = "TokenKey".asInstanceOf[TokenKey]
+  
+  @js.native
+  sealed trait TooManyDeletes
+    extends StObject
+       with QuarantineReason
+  inline def TooManyDeletes: TooManyDeletes = "TooManyDeletes".asInstanceOf[TooManyDeletes]
+  
+  @js.native
+  sealed trait Unary
+    extends StObject
+       with ScopeOperatorType
+  inline def Unary: Unary = "Unary".asInstanceOf[Unary]
+  
+  @js.native
   sealed trait Unknown
     extends StObject
        with OnenoteSourceService
+       with QuarantineReason
   inline def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   
   @js.native
   sealed trait UnknownFutureValue
     extends StObject
+       with DirectoryDefinitionDiscoverabilities
        with TokenIssuerType
   inline def UnknownFutureValue: UnknownFutureValue = "UnknownFutureValue".asInstanceOf[UnknownFutureValue]
+  
+  @js.native
+  sealed trait Unsynchronized
+    extends StObject
+       with ObjectMappingMetadata
+  inline def Unsynchronized: Unsynchronized = "Unsynchronized".asInstanceOf[Unsynchronized]
+  
+  @js.native
+  sealed trait Update
+    extends StObject
+       with EntrySyncOperation
+       with ObjectFlowTypes
+  inline def Update: Update = "Update".asInstanceOf[Update]
+  
+  @js.native
+  sealed trait UpdateKeyOnSoftDelete
+    extends StObject
+       with SynchronizationSecret
+  inline def UpdateKeyOnSoftDelete: UpdateKeyOnSoftDelete = "UpdateKeyOnSoftDelete".asInstanceOf[UpdateKeyOnSoftDelete]
+  
+  @js.native
+  sealed trait Url
+    extends StObject
+       with SynchronizationSecret
+  inline def Url: Url = "Url".asInstanceOf[Url]
+  
+  @js.native
+  sealed trait UserName
+    extends StObject
+       with SynchronizationSecret
+  inline def UserName: UserName = "UserName".asInstanceOf[UserName]
+  
+  @js.native
+  sealed trait ValidateDomain
+    extends StObject
+       with SynchronizationSecret
+  inline def ValidateDomain: ValidateDomain = "ValidateDomain".asInstanceOf[ValidateDomain]
+  
+  @js.native
+  sealed trait ValueAddOnly
+    extends StObject
+       with AttributeFlowType
+  inline def ValueAddOnly: ValueAddOnly = "ValueAddOnly".asInstanceOf[ValueAddOnly]
+  
+  @js.native
+  sealed trait Watermark
+    extends StObject
+       with SynchronizationJobRestartScope
+  inline def Watermark: Watermark = "Watermark".asInstanceOf[Watermark]
+  
+  @js.native
+  sealed trait WriteOnly
+    extends StObject
+       with Mutability
+  inline def WriteOnly: WriteOnly = "WriteOnly".asInstanceOf[WriteOnly]
   
   @js.native
   sealed trait a
@@ -743,6 +1584,12 @@ object microsoftGraphStrings {
   inline def accountValidation: accountValidation = "accountValidation".asInstanceOf[accountValidation]
   
   @js.native
+  sealed trait acronym
+    extends StObject
+       with EntityType
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
+  
+  @js.native
   sealed trait actionUndefined
     extends StObject
        with ChatMessageActions
@@ -767,7 +1614,7 @@ object microsoftGraphStrings {
   inline def activating: activating = "activating".asInstanceOf[activating]
   
   @js.native
-  sealed trait active
+  sealed trait active_
     extends StObject
        with ActionState
        with CallTranscriptionState
@@ -781,7 +1628,7 @@ object microsoftGraphStrings {
        with MediaState
        with Status
        with SubjectRightsRequestStatus
-  inline def active: active = "active".asInstanceOf[active]
+  inline def active_ : active_ = "active".asInstanceOf[active_]
   
   @js.native
   sealed trait addThisCalendar
@@ -1095,18 +1942,6 @@ object microsoftGraphStrings {
   inline def alertRemovalOfBinaryChangeEntry: alertRemovalOfBinaryChangeEntry = "alertRemovalOfBinaryChangeEntry".asInstanceOf[alertRemovalOfBinaryChangeEntry]
   
   @js.native
-  sealed trait all
-    extends StObject
-       with ConditionalAccessClientApp
-       with ConditionalAccessDevicePlatform
-       with ConditionalAccessExternalTenantsMembershipKind
-       with ExternalAudienceScope
-       with PolicyPlatformType
-       with UnifiedRoleManagementPolicyRuleTargetOperations
-       with WindowsUpdateType
-  inline def all: all = "all".asInstanceOf[all]
-  
-  @js.native
   sealed trait allAllowed
     extends StObject
        with RatingAppsType
@@ -1241,6 +2076,18 @@ object microsoftGraphStrings {
   inline def allVersions: allVersions = "allVersions".asInstanceOf[allVersions]
   
   @js.native
+  sealed trait all_
+    extends StObject
+       with ConditionalAccessClientApp
+       with ConditionalAccessDevicePlatform
+       with ConditionalAccessExternalTenantsMembershipKind
+       with ExternalAudienceScope
+       with PolicyPlatformType
+       with UnifiedRoleManagementPolicyRuleTargetOperations
+       with WindowsUpdateType
+  inline def all_ : all_ = "all".asInstanceOf[all_]
+  
+  @js.native
   sealed trait allow
     extends StObject
        with DefenderThreatAction
@@ -1346,12 +2193,6 @@ object microsoftGraphStrings {
   inline def alternateMobile: alternateMobile = "alternateMobile".asInstanceOf[alternateMobile]
   
   @js.native
-  sealed trait always
-    extends StObject
-       with PersistentBrowserSessionMode
-  inline def always: always = "always".asInstanceOf[always]
-  
-  @js.native
   sealed trait alwaysEnabled
     extends StObject
        with AutomaticRepliesStatus
@@ -1368,6 +2209,12 @@ object microsoftGraphStrings {
     extends StObject
        with DefenderPromptForSampleSubmission
   inline def alwaysPrompt: alwaysPrompt = "alwaysPrompt".asInstanceOf[alwaysPrompt]
+  
+  @js.native
+  sealed trait always_
+    extends StObject
+       with PersistentBrowserSessionMode
+  inline def always_ : always_ = "always".asInstanceOf[always_]
   
   @js.native
   sealed trait amrWide
@@ -1438,12 +2285,12 @@ object microsoftGraphStrings {
   inline def antivirus: antivirus = "antivirus".asInstanceOf[antivirus]
   
   @js.native
-  sealed trait any
+  sealed trait any_
     extends StObject
        with AndroidRequiredPasswordType
        with MessageActionFlag
        with MicrosoftAuthenticatorAuthenticationMode
-  inline def any: any = "any".asInstanceOf[any]
+  inline def any_ : any_ = "any".asInstanceOf[any_]
   
   @js.native
   sealed trait appGovernanceDetection
@@ -1847,6 +2694,12 @@ object microsoftGraphStrings {
   inline def availableWithoutEnrollment: availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[availableWithoutEnrollment]
   
   @js.native
+  sealed trait awaitingAction
+    extends StObject
+       with IncidentStatus
+  inline def awaitingAction: awaitingAction = "awaitingAction".asInstanceOf[awaitingAction]
+  
+  @js.native
   sealed trait azure
     extends StObject
        with VmCloudProvider
@@ -2215,10 +3068,10 @@ object microsoftGraphStrings {
   inline def beta: beta = "beta".asInstanceOf[beta]
   
   @js.native
-  sealed trait binary
+  sealed trait binary_
     extends StObject
        with RegistryValueType
-  inline def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary_ : binary_ = "binary".asInstanceOf[binary_]
   
   @js.native
   sealed trait bind
@@ -2594,19 +3447,25 @@ object microsoftGraphStrings {
   inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait boolean
+  sealed trait bookmark
     extends StObject
-       with ColumnTypes
-       with IdentityUserFlowAttributeDataType
-       with PropertyType
-       with Win32LobAppPowerShellScriptRuleOperationType
-  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
+       with EntityType
+  inline def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
   
   @js.native
   sealed trait booleanType
     extends StObject
        with MdmAppConfigKeyType
   inline def booleanType: booleanType = "booleanType".asInstanceOf[booleanType]
+  
+  @js.native
+  sealed trait boolean_
+    extends StObject
+       with ColumnTypes
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
+       with Win32LobAppPowerShellScriptRuleOperationType
+  inline def boolean_ : boolean_ = "boolean".asInstanceOf[boolean_]
   
   @js.native
   sealed trait bot
@@ -3064,6 +3923,12 @@ object microsoftGraphStrings {
   inline def commandAndControl: commandAndControl = "commandAndControl".asInstanceOf[commandAndControl]
   
   @js.native
+  sealed trait commented
+    extends StObject
+       with ExternalActivityType
+  inline def commented: commented = "commented".asInstanceOf[commented]
+  
+  @js.native
   sealed trait commitFileFailed
     extends StObject
        with MobileAppContentFileUploadState
@@ -3417,6 +4282,7 @@ object microsoftGraphStrings {
        with DelegatedAdminRelationshipRequestStatus
        with DelegatedAdminRelationshipStatus
        with EvidenceRole
+       with ExternalActivityType
   inline def created: created = "created".asInstanceOf[created]
   
   @js.native
@@ -3628,15 +4494,6 @@ object microsoftGraphStrings {
   inline def dateOfEvent: dateOfEvent = "dateOfEvent".asInstanceOf[dateOfEvent]
   
   @js.native
-  sealed trait dateTime
-    extends StObject
-       with ColumnTypes
-       with IdentityUserFlowAttributeDataType
-       with PropertyType
-       with Win32LobAppPowerShellScriptRuleOperationType
-  inline def dateTime: dateTime = "dateTime".asInstanceOf[dateTime]
-  
-  @js.native
   sealed trait dateTimeCollection
     extends StObject
        with PropertyType
@@ -3647,6 +4504,15 @@ object microsoftGraphStrings {
     extends StObject
        with IdentityUserFlowAttributeInputType
   inline def dateTimeDropdown: dateTimeDropdown = "dateTimeDropdown".asInstanceOf[dateTimeDropdown]
+  
+  @js.native
+  sealed trait dateTime_
+    extends StObject
+       with ColumnTypes
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
+       with Win32LobAppPowerShellScriptRuleOperationType
+  inline def dateTime_ : dateTime_ = "dateTime".asInstanceOf[dateTime_]
   
   @js.native
   sealed trait days
@@ -3692,6 +4558,19 @@ object microsoftGraphStrings {
     extends StObject
        with WindowsUpdateNotificationDisplayOption
   inline def defaultNotifications: defaultNotifications = "defaultNotifications".asInstanceOf[defaultNotifications]
+  
+  @js.native
+  sealed trait default_
+    extends StObject
+       with AdvancedConfigState
+       with BrowserSiteCompatibilityMode
+       with BrowserSiteMergeType
+       with EdgeSearchEngineType
+       with EndpointType
+       with ExternalEmailOtpState
+       with LayoutTemplateType
+       with LocationType
+  inline def default_ : default_ = "default".asInstanceOf[default_]
   
   @js.native
   sealed trait deferred
@@ -4148,7 +5027,7 @@ object microsoftGraphStrings {
   inline def disableSettingsApp: disableSettingsApp = "disableSettingsApp".asInstanceOf[disableSettingsApp]
   
   @js.native
-  sealed trait disabled
+  sealed trait disabled_
     extends StObject
        with AdvancedConfigState
        with AuthenticationMethodState
@@ -4166,7 +5045,7 @@ object microsoftGraphStrings {
        with PromptLoginBehavior
        with SharingCapabilities
        with WindowsSpotlightEnablementSettings
-  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled_ : disabled_ = "disabled".asInstanceOf[disabled_]
   
   @js.native
   sealed trait disallowed
@@ -4225,12 +5104,6 @@ object microsoftGraphStrings {
   inline def dog: dog = "dog".asInstanceOf[dog]
   
   @js.native
-  sealed trait domain
-    extends StObject
-       with SharedPCAllowedAccountType
-  inline def domain: domain = "domain".asInstanceOf[domain]
-  
-  @js.native
   sealed trait domainAllowList
     extends StObject
        with MailDestinationRoutingReason
@@ -4247,6 +5120,12 @@ object microsoftGraphStrings {
     extends StObject
        with ConditionalAccessGrantControl
   inline def domainJoinedDevice: domainJoinedDevice = "domainJoinedDevice".asInstanceOf[domainJoinedDevice]
+  
+  @js.native
+  sealed trait domain_
+    extends StObject
+       with SharedPCAllowedAccountType
+  inline def domain_ : domain_ = "domain".asInstanceOf[domain_]
   
   @js.native
   sealed trait done
@@ -4613,7 +5492,7 @@ object microsoftGraphStrings {
   inline def equipment: equipment = "equipment".asInstanceOf[equipment]
   
   @js.native
-  sealed trait error
+  sealed trait error_
     extends StObject
        with AccessReviewHistoryStatus
        with ComplianceState
@@ -4623,7 +5502,7 @@ object microsoftGraphStrings {
        with ImportedWindowsAutopilotDeviceIdentityImportStatus
        with ImportedWindowsAutopilotDeviceIdentityUploadStatus
        with MobileAppContentFileUploadState
-  inline def error: error = "error".asInstanceOf[error]
+  inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait established
@@ -5499,13 +6378,6 @@ object microsoftGraphStrings {
   inline def friday: friday = "friday".asInstanceOf[friday]
   
   @js.native
-  sealed trait full
-    extends StObject
-       with DefenderScanType
-       with DiagnosticDataSubmissionMode
-  inline def full: full = "full".asInstanceOf[full]
-  
-  @js.native
   sealed trait fullScreen
     extends StObject
        with WindowsStartMenuModeType
@@ -5522,6 +6394,13 @@ object microsoftGraphStrings {
     extends StObject
        with MeetingRequestType
   inline def fullUpdate: fullUpdate = "fullUpdate".asInstanceOf[fullUpdate]
+  
+  @js.native
+  sealed trait full_
+    extends StObject
+       with DefenderScanType
+       with DiagnosticDataSubmissionMode
+  inline def full_ : full_ = "full".asInstanceOf[full_]
   
   @js.native
   sealed trait fuserOverTemp
@@ -5623,6 +6502,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait global
     extends StObject
+       with GoogleCloudLocationType
        with ManagedAppAvailability
        with TermGroupScope
   inline def global: global = "global".asInstanceOf[global]
@@ -6753,17 +7633,17 @@ object microsoftGraphStrings {
   inline def int64Collection: int64Collection = "int64Collection".asInstanceOf[int64Collection]
   
   @js.native
-  sealed trait integer
-    extends StObject
-       with Win32LobAppPowerShellScriptRuleOperationType
-       with Win32LobAppRegistryRuleOperationType
-  inline def integer: integer = "integer".asInstanceOf[integer]
-  
-  @js.native
   sealed trait integerType
     extends StObject
        with MdmAppConfigKeyType
   inline def integerType: integerType = "integerType".asInstanceOf[integerType]
+  
+  @js.native
+  sealed trait integer_
+    extends StObject
+       with Win32LobAppPowerShellScriptRuleOperationType
+       with Win32LobAppRegistryRuleOperationType
+  inline def integer_ : integer_ = "integer".asInstanceOf[integer_]
   
   @js.native
   sealed trait interactive
@@ -8326,6 +9206,13 @@ object microsoftGraphStrings {
   inline def microsoftDataLossPrevention: microsoftDataLossPrevention = "microsoftDataLossPrevention".asInstanceOf[microsoftDataLossPrevention]
   
   @js.native
+  sealed trait microsoftDefenderForCloud
+    extends StObject
+       with DetectionSource
+       with ServiceSource
+  inline def microsoftDefenderForCloud: microsoftDefenderForCloud = "microsoftDefenderForCloud".asInstanceOf[microsoftDefenderForCloud]
+  
+  @js.native
   sealed trait microsoftDefenderForCloudApps
     extends StObject
        with ServiceSource
@@ -8453,6 +9340,12 @@ object microsoftGraphStrings {
     extends StObject
        with SearchAlterationType
   inline def modification: modification = "modification".asInstanceOf[modification]
+  
+  @js.native
+  sealed trait modified
+    extends StObject
+       with ExternalActivityType
+  inline def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
   sealed trait modifiedDate
@@ -8801,14 +9694,14 @@ object microsoftGraphStrings {
   inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
-  sealed trait normal
+  sealed trait normal_
     extends StObject
        with AuthenticationMethodKeyStrength
        with ChatMessageImportance
        with Importance
        with Sensitivity
        with ServiceUpdateSeverity
-  inline def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal_ : normal_ = "normal".asInstanceOf[normal_]
   
   @js.native
   sealed trait notAllow
@@ -8868,7 +9761,7 @@ object microsoftGraphStrings {
   inline def notCompliant: notCompliant = "notCompliant".asInstanceOf[notCompliant]
   
   @js.native
-  sealed trait notConfigured
+  sealed trait notConfigured_
     extends StObject
        with AppLockerApplicationControlType
        with ApplicationGuardBlockClipboardSharingType
@@ -8887,7 +9780,7 @@ object microsoftGraphStrings {
        with Win32LobAppRuleOperator
        with WindowsSpotlightEnablementSettings
        with WindowsUpdateNotificationDisplayOption
-  inline def notConfigured: notConfigured = "notConfigured".asInstanceOf[notConfigured]
+  inline def notConfigured_ : notConfigured_ = "notConfigured".asInstanceOf[notConfigured_]
   
   @js.native
   sealed trait notContacted
@@ -9590,13 +10483,6 @@ object microsoftGraphStrings {
   inline def passthroughAuthentication: passthroughAuthentication = "passthroughAuthentication".asInstanceOf[passthroughAuthentication]
   
   @js.native
-  sealed trait password
-    extends StObject
-       with AuthenticationMethodModes
-       with BaseAuthenticationMethod
-  inline def password: password = "password".asInstanceOf[password]
-  
-  @js.native
   sealed trait passwordAddition
     extends StObject
        with AppCredentialRestrictionType
@@ -9627,11 +10513,18 @@ object microsoftGraphStrings {
   inline def passwordReset: passwordReset = "passwordReset".asInstanceOf[passwordReset]
   
   @js.native
-  sealed trait paused
+  sealed trait password_
+    extends StObject
+       with AuthenticationMethodModes
+       with BaseAuthenticationMethod
+  inline def password_ : password_ = "password".asInstanceOf[password_]
+  
+  @js.native
+  sealed trait paused_
     extends StObject
        with PrintJobProcessingState
        with PrinterProcessingStateDetail
-  inline def paused: paused = "paused".asInstanceOf[paused]
+  inline def paused_ : paused_ = "paused".asInstanceOf[paused_]
   
   @js.native
   sealed trait pcma
@@ -10711,10 +11604,10 @@ object microsoftGraphStrings {
   inline def pushNotification: pushNotification = "pushNotification".asInstanceOf[pushNotification]
   
   @js.native
-  sealed trait quarantine
+  sealed trait quarantine_
     extends StObject
        with DefenderThreatAction
-  inline def quarantine: quarantine = "quarantine".asInstanceOf[quarantine]
+  inline def quarantine_ : quarantine_ = "quarantine".asInstanceOf[quarantine_]
   
   @js.native
   sealed trait quarantined
@@ -10883,17 +11776,23 @@ object microsoftGraphStrings {
   inline def redirecting: redirecting = "redirecting".asInstanceOf[redirecting]
   
   @js.native
-  sealed trait reference
-    extends StObject
-       with AttachmentType
-       with PlannerPreviewType
-  inline def reference: reference = "reference".asInstanceOf[reference]
-  
-  @js.native
   sealed trait referenceResolution
     extends StObject
        with ProvisioningStepType
   inline def referenceResolution: referenceResolution = "referenceResolution".asInstanceOf[referenceResolution]
+  
+  @js.native
+  sealed trait reference_
+    extends StObject
+       with AttachmentType
+       with PlannerPreviewType
+  inline def reference_ : reference_ = "reference".asInstanceOf[reference_]
+  
+  @js.native
+  sealed trait regional
+    extends StObject
+       with GoogleCloudLocationType
+  inline def regional: regional = "regional".asInstanceOf[regional]
   
   @js.native
   sealed trait registered
@@ -13648,15 +14547,6 @@ object microsoftGraphStrings {
   inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait string
-    extends StObject
-       with IdentityUserFlowAttributeDataType
-       with PropertyType
-       with Win32LobAppPowerShellScriptRuleOperationType
-       with Win32LobAppRegistryRuleOperationType
-  inline def string: string = "string".asInstanceOf[string]
-  
-  @js.native
   sealed trait stringCollection
     extends StObject
        with IdentityUserFlowAttributeDataType
@@ -13668,6 +14558,15 @@ object microsoftGraphStrings {
     extends StObject
        with MdmAppConfigKeyType
   inline def stringType: stringType = "stringType".asInstanceOf[stringType]
+  
+  @js.native
+  sealed trait string_
+    extends StObject
+       with IdentityUserFlowAttributeDataType
+       with PropertyType
+       with Win32LobAppPowerShellScriptRuleOperationType
+       with Win32LobAppRegistryRuleOperationType
+  inline def string_ : string_ = "string".asInstanceOf[string_]
   
   @js.native
   sealed trait student
@@ -13901,7 +14800,7 @@ object microsoftGraphStrings {
   inline def subunitWarmingUp: subunitWarmingUp = "subunitWarmingUp".asInstanceOf[subunitWarmingUp]
   
   @js.native
-  sealed trait succeeded
+  sealed trait succeeded_
     extends StObject
        with CaseOperationStatus
        with ConnectionStatus
@@ -13912,10 +14811,10 @@ object microsoftGraphStrings {
        with SimulationStatus
        with TeamsAsyncOperationStatus
        with WorkbookOperationStatus
-  inline def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  inline def succeeded_ : succeeded_ = "succeeded".asInstanceOf[succeeded_]
   
   @js.native
-  sealed trait success
+  sealed trait success_
     extends StObject
        with AppliedConditionalAccessPolicyResult
        with CallRecordingStatus
@@ -13928,7 +14827,7 @@ object microsoftGraphStrings {
        with ProvisioningResult
        with ProvisioningStatusErrorCategory
        with Win32LobAppReturnCodeType
-  inline def success: success = "success".asInstanceOf[success]
+  inline def success_ : success_ = "success".asInstanceOf[success_]
   
   @js.native
   sealed trait suggestion
@@ -14858,6 +15757,7 @@ object microsoftGraphStrings {
        with EvidenceRemediationStatus
        with EvidenceRole
        with EvidenceVerdict
+       with ExternalActivityType
        with ExternalEmailOtpState
        with ExternalItemContentType
        with FailureStage
@@ -14866,6 +15766,7 @@ object microsoftGraphStrings {
        with Fido2RestrictionEnforcementType
        with FileHashType
        with GiphyRatingType
+       with GoogleCloudLocationType
        with GroupType
        with IdentityType
        with IdentityUserFlowAttributeDataType
@@ -14874,6 +15775,7 @@ object microsoftGraphStrings {
        with IncidentStatus
        with InitiatorType
        with Label
+       with LayoutTemplateType
        with LobbyBypassScope
        with LogonType
        with LongRunningOperationStatus
@@ -14888,8 +15790,10 @@ object microsoftGraphStrings {
        with NotificationTemplateBrandingOptions
        with OnPremisesDirectorySynchronizationDeletionPreventionType
        with OnboardingStatus
+       with OnlineMeetingContentSharingDisabledReason
        with OnlineMeetingPresenters
        with OnlineMeetingRole
+       with OnlineMeetingVideoDisabledReason
        with OperationResult
        with PartnerTenantType
        with PayloadDeliveryPlatform
@@ -15060,6 +15964,7 @@ object microsoftGraphStrings {
        with FailureStage
        with FileHashType
        with FreeBusyStatus
+       with GoogleCloudLocationType
        with ImportedWindowsAutopilotDeviceIdentityImportStatus
        with InstallState
        with IosUpdatesInstallStatus
@@ -15154,11 +16059,11 @@ object microsoftGraphStrings {
   inline def unwantedSoftware: unwantedSoftware = "unwantedSoftware".asInstanceOf[unwantedSoftware]
   
   @js.native
-  sealed trait update
+  sealed trait update_
     extends StObject
        with ProvisioningAction
        with UnifiedRoleManagementPolicyRuleTargetOperations
-  inline def update: update = "update".asInstanceOf[update]
+  inline def update_ : update_ = "update".asInstanceOf[update_]
   
   @js.native
   sealed trait updated
@@ -15181,12 +16086,12 @@ object microsoftGraphStrings {
   inline def urgent: urgent = "urgent".asInstanceOf[urgent]
   
   @js.native
-  sealed trait url
+  sealed trait url_
     extends StObject
        with ColumnTypes
        with Label
        with ThreatAssessmentContentType
-  inline def url: url = "url".asInstanceOf[url]
+  inline def url_ : url_ = "url".asInstanceOf[url_]
   
   @js.native
   sealed trait useDeviceSettings
@@ -15341,6 +16246,12 @@ object microsoftGraphStrings {
   inline def version: version = "version".asInstanceOf[version]
   
   @js.native
+  sealed trait verticalSplit
+    extends StObject
+       with LayoutTemplateType
+  inline def verticalSplit: verticalSplit = "verticalSplit".asInstanceOf[verticalSplit]
+  
+  @js.native
   sealed trait video
     extends StObject
        with Modality
@@ -15359,6 +16270,12 @@ object microsoftGraphStrings {
     extends StObject
        with CalendarSharingAction
   inline def viewCalendar: viewCalendar = "viewCalendar".asInstanceOf[viewCalendar]
+  
+  @js.native
+  sealed trait viewed
+    extends StObject
+       with ExternalActivityType
+  inline def viewed: viewed = "viewed".asInstanceOf[viewed]
   
   @js.native
   sealed trait viewer
@@ -15393,6 +16310,13 @@ object microsoftGraphStrings {
        with DeviceManagementSubscriptionState
        with ProvisioningResult
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait watermarkProtection
+    extends StObject
+       with OnlineMeetingContentSharingDisabledReason
+       with OnlineMeetingVideoDisabledReason
+  inline def watermarkProtection: watermarkProtection = "watermarkProtection".asInstanceOf[watermarkProtection]
   
   @js.native
   sealed trait weak
@@ -16001,4 +16925,10 @@ object microsoftGraphStrings {
     extends StObject
        with TemplateScenarios
   inline def zeroTrust: zeroTrust = "zeroTrust".asInstanceOf[zeroTrust]
+  
+  @js.native
+  sealed trait zonal
+    extends StObject
+       with GoogleCloudLocationType
+  inline def zonal: zonal = "zonal".asInstanceOf[zonal]
 }

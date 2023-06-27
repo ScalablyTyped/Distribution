@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV201BoundedBy extends StObject {
   
   /**
-    * The coverage's axis name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * The coverage's axis name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var axisLabels: js.Array[String]
   
   /**
-    * Start date for the temporal extent of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Start date for the temporal extent of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var beginPosition: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * End date for the temporal extent of the coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * End date for the temporal extent of the coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var endPosition: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The spatial extent dimensions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * The spatial extent dimensions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var envelopeAllDims: CoverageDescriptionV201BoundedByEnvelopeAllDims
   
   /**
-    * The spatial extent of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * The spatial extent of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var extent: Extent
   
   /**
-    * Is east first.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Is east first.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var isEastFirst: Boolean
   
   /**
-    * List of unit of measure (uom) labels for all the axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * List of unit of measure (uom) labels for all the axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var uomLabels: js.Array[String]
 }
 object CoverageDescriptionV201BoundedBy {

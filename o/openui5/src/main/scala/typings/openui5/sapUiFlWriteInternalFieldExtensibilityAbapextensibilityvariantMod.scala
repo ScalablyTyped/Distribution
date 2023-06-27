@@ -12,7 +12,7 @@ object sapUiFlWriteInternalFieldExtensibilityAbapextensibilityvariantMod extends
   val default: ABAPExtensibilityVariant = js.native
   
   /**
-    * @SINCE 1.87
+    * @since 1.87
     *
     * Abstraction providing an API to handle an ABAP extension variant. Serves also as base class and dummy
     * implementation.

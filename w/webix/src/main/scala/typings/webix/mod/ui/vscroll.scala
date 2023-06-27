@@ -26,7 +26,10 @@ trait vscroll extends StObject {
   
   var config: vscrollConfig = js.native
   
+  def define(property: String): Unit = js.native
   def define(property: String, value: Any): Unit = js.native
+  def define(property: obj): Unit = js.native
+  def define(property: obj, value: Any): Unit = js.native
   
   def detachEvent(id: String): Unit = js.native
   

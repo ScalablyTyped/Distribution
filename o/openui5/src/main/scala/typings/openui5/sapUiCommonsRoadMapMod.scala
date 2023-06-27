@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.StepId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +149,13 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit]
     ): this.type = js.native
     def attachStepExpanded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RoadMap` itself
       */
@@ -181,7 +180,7 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit]
     ): this.type = js.native
     def attachStepExpanded(
       /**
@@ -192,7 +191,7 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RoadMap` itself
       */
@@ -213,13 +212,13 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit]
     ): this.type = js.native
     def attachStepSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RoadMap` itself
       */
@@ -244,7 +243,7 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit]
     ): this.type = js.native
     def attachStepSelected(
       /**
@@ -255,7 +254,7 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RoadMap` itself
       */
@@ -280,13 +279,13 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit]
     ): this.type = js.native
     def detachStepExpanded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepExpandedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -304,13 +303,13 @@ object sapUiCommonsRoadMapMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit]
     ): this.type = js.native
     def detachStepSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RoadMapStepSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -318,30 +317,34 @@ object sapUiCommonsRoadMapMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stepExpanded stepExpanded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStepExpanded(): this.type = js.native
-    def fireStepExpanded(/**
+    def fireStepExpanded(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: StepId): this.type = js.native
+    mParameters: RoadMap$StepExpandedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stepSelected stepSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStepSelected(): this.type = js.native
-    def fireStepSelected(/**
+    def fireStepSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: StepId): this.type = js.native
+    mParameters: RoadMap$StepSelectedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getFirstVisibleStep firstVisibleStep}.
@@ -511,6 +514,52 @@ object sapUiCommonsRoadMapMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait RoadMap$StepExpandedEventParameters extends StObject {
+    
+    /**
+      * ID of the expanded/collapsed step
+      */
+    var stepId: js.UndefOr[String] = js.undefined
+  }
+  object RoadMap$StepExpandedEventParameters {
+    
+    inline def apply(): RoadMap$StepExpandedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RoadMap$StepExpandedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoadMap$StepExpandedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+      
+      inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
+    }
+  }
+  
+  trait RoadMap$StepSelectedEventParameters extends StObject {
+    
+    /**
+      * ID of the selected step
+      */
+    var stepId: js.UndefOr[String] = js.undefined
+  }
+  object RoadMap$StepSelectedEventParameters {
+    
+    inline def apply(): RoadMap$StepSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RoadMap$StepSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoadMap$StepSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+      
+      inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
+    }
+  }
+  
   trait RoadMapSettings
     extends StObject
        with ControlSettings {
@@ -533,12 +582,22 @@ object sapUiCommonsRoadMapMod {
     /**
       * Event is fired when a given step is expanded or collapsed by user.
       */
-    var stepExpanded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stepExpanded: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RoadMap$StepExpandedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when the user selects a step.
       */
-    var stepSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stepSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RoadMap$StepSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Steps that are composing the RoadMap
@@ -576,11 +635,15 @@ object sapUiCommonsRoadMapMod {
       
       inline def setSelectedStepUndefined: Self = StObject.set(x, "selectedStep", js.undefined)
       
-      inline def setStepExpanded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stepExpanded", js.Any.fromFunction1(value))
+      inline def setStepExpanded(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RoadMap$StepExpandedEventParameters] => Unit
+      ): Self = StObject.set(x, "stepExpanded", js.Any.fromFunction1(value))
       
       inline def setStepExpandedUndefined: Self = StObject.set(x, "stepExpanded", js.undefined)
       
-      inline def setStepSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stepSelected", js.Any.fromFunction1(value))
+      inline def setStepSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RoadMap$StepSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "stepSelected", js.Any.fromFunction1(value))
       
       inline def setStepSelectedUndefined: Self = StObject.set(x, "stepSelected", js.undefined)
       
@@ -597,4 +660,12 @@ object sapUiCommonsRoadMapMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type RoadMapStepExpandedEvent = typings.openui5.sapUiBaseEventMod.default[RoadMap$StepExpandedEventParameters]
+  
+  type RoadMapStepExpandedEventParameters = RoadMap$StepExpandedEventParameters
+  
+  type RoadMapStepSelectedEvent = typings.openui5.sapUiBaseEventMod.default[RoadMap$StepSelectedEventParameters]
+  
+  type RoadMapStepSelectedEventParameters = RoadMap$StepSelectedEventParameters
 }

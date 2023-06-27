@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpriteInfo extends StObject {
   
   /**
-    * The height of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * The height of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var height: Double
   
   /**
-    * The pixel ratio of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * The pixel ratio of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether the sprite is SDF or not.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * Whether the sprite is SDF or not.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var sdf: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * The width of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var width: Double
   
   /**
-    * The x position of the upper-left corner of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * The x position of the upper-left corner of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var x: Double
   
   /**
-    * The y position of the upper-left corner of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
-    */
+  		 * The y position of the upper-left corner of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteInfo)
+  		 */
   var y: Double
 }
 object SpriteInfo {

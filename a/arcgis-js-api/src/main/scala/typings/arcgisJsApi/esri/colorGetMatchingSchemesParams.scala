@@ -11,38 +11,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait colorGetMatchingSchemesParams extends StObject {
   
   /**
-    * An array of colors used to match with schemes for the given theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
-    */
+  		 * An array of colors used to match with schemes for the given theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The geometry type of the layer for which the color scheme will be applied.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the layer for which the color scheme will be applied.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: String
   
   /**
-    * The name of the theme from which to get color schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
-    */
+  		 * The name of the theme from which to get color schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
+  		 */
   var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   
   /**
-    * The [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) instance used to calculate the suggested sizes of the symbols.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) instance used to calculate the suggested sizes of the symbols.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates whether 3D volumetric symbols will be used in the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
-    */
+  		 * Indicates whether 3D volumetric symbols will be used in the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getMatchingSchemes)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object colorGetMatchingSchemesParams {

@@ -10,13 +10,13 @@ trait CIMGeometricEffectRadial
      with CIMGeometricEffectType {
   
   /**
-    * The orientation of the line from the marker. The angle is calculated in a counterclockwise manner with 0 degrees equal to due east.
-    */
+  			 * The orientation of the line from the marker. The angle is calculated in a counterclockwise manner with 0 degrees equal to due east.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance of the line from end to end.
-    */
+  			 * The distance of the line from end to end.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

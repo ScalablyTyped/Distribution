@@ -10,15 +10,15 @@ trait CIMGeometricEffectDonut
      with CIMGeometricEffectType {
   
   /**
-    * The method which specifies the way the strokes are displayed at convex corners of the polygon.
-    */
+  			 * The method which specifies the way the strokes are displayed at convex corners of the polygon.
+  			 */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectDonutMethod * / any */ String
   ] = js.undefined
   
   /**
-    * The option for the way the symbol handles complex geometries.
-    */
+  			 * The option for the way the symbol handles complex geometries.
+  			 */
   var option: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetOption * / any */ String
   ] = js.undefined
@@ -27,8 +27,8 @@ trait CIMGeometricEffectDonut
   var type_CIMGeometricEffectDonut: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut
   
   /**
-    * The distance from the edge of the polygon that the fill symbol is to be displayed.
-    */
+  			 * The distance from the edge of the polygon that the fill symbol is to be displayed.
+  			 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectDonut {

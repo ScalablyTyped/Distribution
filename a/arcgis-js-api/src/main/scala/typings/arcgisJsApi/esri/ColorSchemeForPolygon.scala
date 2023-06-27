@@ -9,66 +9,66 @@ trait ColorSchemeForPolygon
      with ColorScheme {
   
   /**
-    * The continuous color ramp that will be applied to the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * The continuous color ramp that will be applied to the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * Predefined classed color schemes to use for the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * Predefined classed color schemes to use for the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var colorsForClassBreaks: js.Array[ColorSchemeForPolygonColorsForClassBreaks]
   
   /**
-    * The unique id of the color scheme to use in the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * The unique id of the color scheme to use in the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var id: String
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var name: String
   
   /**
-    * The color of the symbol used to indicate features with no data and features that are out of range.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * The color of the symbol used to indicate features with no data and features that are out of range.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * The opacity of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var opacity: Double
   
   /**
-    * Properties for defining the outline of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * Properties for defining the outline of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var outline: ColorSchemeForPolygonOutline
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * Indicates which values will be emphasized in the continuous ramp and the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
-    */
+  		 * Indicates which values will be emphasized in the continuous ramp and the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
+  		 */
   var theme: String
 }
 object ColorSchemeForPolygon {

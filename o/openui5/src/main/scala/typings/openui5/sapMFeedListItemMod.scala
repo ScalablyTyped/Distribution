@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.GetDomRef
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMAvatarShapeMod.AvatarShape
 import typings.openui5.sapMAvatarSizeMod.AvatarSize
@@ -128,7 +127,7 @@ object sapMFeedListItemMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Adds some action to the aggregation {@link #getActions actions}.
       *
@@ -155,13 +154,13 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit]
     ): this.type = js.native
     def attachIconPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedListItem` itself
       */
@@ -186,7 +185,7 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit]
     ): this.type = js.native
     def attachIconPress(
       /**
@@ -197,7 +196,7 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedListItem` itself
       */
@@ -218,13 +217,13 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit]
     ): this.type = js.native
     def attachSenderPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedListItem` itself
       */
@@ -249,7 +248,7 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit]
     ): this.type = js.native
     def attachSenderPress(
       /**
@@ -260,7 +259,7 @@ object sapMFeedListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedListItem` itself
       */
@@ -268,7 +267,7 @@ object sapMFeedListItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Destroys all the actions in the aggregation {@link #getActions actions}.
       *
@@ -287,13 +286,13 @@ object sapMFeedListItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit]
     ): this.type = js.native
     def detachIconPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemIconPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -311,13 +310,13 @@ object sapMFeedListItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit]
     ): this.type = js.native
     def detachSenderPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedListItemSenderPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -325,33 +324,37 @@ object sapMFeedListItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:iconPress iconPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireIconPress(): this.type = js.native
-    def fireIconPress(/**
+    def fireIconPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: GetDomRef): this.type = js.native
+    mParameters: FeedListItem$IconPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:senderPress senderPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSenderPress(): this.type = js.native
-    def fireSenderPress(/**
+    def fireSenderPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: GetDomRef): this.type = js.native
+    mParameters: FeedListItem$SenderPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Gets content of aggregation {@link #getActions actions}.
       *
@@ -369,7 +372,7 @@ object sapMFeedListItemMod {
     def getActiveIcon(): URI = js.native
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Gets current value of property {@link #getConvertLinksToAnchorTags convertLinksToAnchorTags}.
       *
@@ -383,7 +386,7 @@ object sapMFeedListItemMod {
     def getConvertLinksToAnchorTags(): LinkConversion | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkConversion * / any */ String) = js.native
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Gets current value of property {@link #getConvertedLinksDefaultTarget convertedLinksDefaultTarget}.
       *
@@ -436,7 +439,7 @@ object sapMFeedListItemMod {
     def getIconDensityAware(): Boolean = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconDisplayShape iconDisplayShape}.
       *
@@ -449,7 +452,7 @@ object sapMFeedListItemMod {
     def getIconDisplayShape(): AvatarShape | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AvatarShape * / any */ String) = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconInitials iconInitials}.
       *
@@ -462,7 +465,7 @@ object sapMFeedListItemMod {
     def getIconInitials(): String = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconSize iconSize}.
       *
@@ -484,7 +487,7 @@ object sapMFeedListItemMod {
     def getInfo(): String = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getLessLabel lessLabel}.
       *
@@ -510,7 +513,7 @@ object sapMFeedListItemMod {
     def getMaxCharacters(): int = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getMoreLabel moreLabel}.
       *
@@ -573,7 +576,7 @@ object sapMFeedListItemMod {
     def getTimestamp(): String = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Checks for the provided `sap.m.FeedListItemAction` in the aggregation {@link #getActions actions}. and
       * returns its index if found or -1 otherwise.
@@ -588,7 +591,7 @@ object sapMFeedListItemMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Inserts a action into the aggregation {@link #getActions actions}.
       *
@@ -612,7 +615,7 @@ object sapMFeedListItemMod {
       */
     vAction: String): typings.openui5.sapMFeedListItemActionMod.default | Null = js.native
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Removes a action from the aggregation {@link #getActions actions}.
       *
@@ -630,7 +633,7 @@ object sapMFeedListItemMod {
     ): typings.openui5.sapMFeedListItemActionMod.default | Null = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Removes all the controls from the aggregation {@link #getActions actions}.
       *
@@ -656,7 +659,7 @@ object sapMFeedListItemMod {
     sActiveIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Sets a new value for property {@link #getConvertLinksToAnchorTags convertLinksToAnchorTags}.
       *
@@ -684,7 +687,7 @@ object sapMFeedListItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Sets a new value for property {@link #getConvertedLinksDefaultTarget convertedLinksDefaultTarget}.
       *
@@ -763,7 +766,7 @@ object sapMFeedListItemMod {
     bIconDensityAware: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconDisplayShape iconDisplayShape}.
       *
@@ -788,7 +791,7 @@ object sapMFeedListItemMod {
     sIconDisplayShape: AvatarShape): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconInitials iconInitials}.
       *
@@ -807,7 +810,7 @@ object sapMFeedListItemMod {
     sIconInitials: String): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconSize iconSize}.
       *
@@ -847,7 +850,7 @@ object sapMFeedListItemMod {
     sInfo: String): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getLessLabel lessLabel}.
       *
@@ -885,7 +888,7 @@ object sapMFeedListItemMod {
     iMaxCharacters: int): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getMoreLabel moreLabel}.
       *
@@ -984,12 +987,86 @@ object sapMFeedListItemMod {
     sTimestamp: String): this.type = js.native
   }
   
+  trait FeedListItem$IconPressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the feed item's icon to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Function to retrieve the DOM reference for the `iconPress` event. The function returns the DOM element
+      * of the icon or null
+      */
+    var getDomRef: js.UndefOr[js.Function] = js.undefined
+  }
+  object FeedListItem$IconPressEventParameters {
+    
+    inline def apply(): FeedListItem$IconPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedListItem$IconPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedListItem$IconPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+      
+      inline def setGetDomRef(value: js.Function): Self = StObject.set(x, "getDomRef", value.asInstanceOf[js.Any])
+      
+      inline def setGetDomRefUndefined: Self = StObject.set(x, "getDomRef", js.undefined)
+    }
+  }
+  
+  trait FeedListItem$SenderPressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the feed item's sender string to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Function to retrieve the DOM reference for the `senderPress` event. The function returns the DOM element
+      * of the sender link or null
+      */
+    var getDomRef: js.UndefOr[js.Function] = js.undefined
+  }
+  object FeedListItem$SenderPressEventParameters {
+    
+    inline def apply(): FeedListItem$SenderPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedListItem$SenderPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedListItem$SenderPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+      
+      inline def setGetDomRef(value: js.Function): Self = StObject.set(x, "getDomRef", value.asInstanceOf[js.Any])
+      
+      inline def setGetDomRefUndefined: Self = StObject.set(x, "getDomRef", js.undefined)
+    }
+  }
+  
+  type FeedListItemIconPressEvent = typings.openui5.sapUiBaseEventMod.default[FeedListItem$IconPressEventParameters]
+  
+  type FeedListItemIconPressEventParameters = FeedListItem$IconPressEventParameters
+  
+  type FeedListItemSenderPressEvent = typings.openui5.sapUiBaseEventMod.default[FeedListItem$SenderPressEventParameters]
+  
+  type FeedListItemSenderPressEventParameters = FeedListItem$SenderPressEventParameters
+  
   trait FeedListItemSettings
     extends StObject
        with ListItemBaseSettings {
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * Contains {@link sap.m.FeedListItemAction elements} that are displayed in the action sheet.
       */
@@ -1003,7 +1080,7 @@ object sapMFeedListItemMod {
     var activeIcon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Determines whether strings that appear to be links will be converted to HTML anchor tags, and what are
       * the criteria for recognizing them.
@@ -1013,7 +1090,7 @@ object sapMFeedListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.1
+      * @since 1.46.1
       *
       * Determines the target attribute of the generated HTML anchor tags. Note: Applicable only if ConvertLinksToAnchorTags
       * property is used with a value other than sap.m.LinkConversion.None. Options are the standard values for
@@ -1048,7 +1125,7 @@ object sapMFeedListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the shape of the icon.
       */
@@ -1057,7 +1134,7 @@ object sapMFeedListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the initials of the icon.
       */
@@ -1066,10 +1143,15 @@ object sapMFeedListItemMod {
     /**
       * Event is fired when the icon is pressed.
       */
-    var iconPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var iconPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedListItem$IconPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the size of the icon.
       */
@@ -1083,7 +1165,7 @@ object sapMFeedListItemMod {
     var info: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Customizable text for the "LESS" link at the end of the feed list item.
       *  Clicking the "LESS" link collapses the item, hiding the text that exceeds the allowed maximum number
@@ -1101,7 +1183,7 @@ object sapMFeedListItemMod {
     var maxCharacters: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Customizable text for the "MORE" link at the end of the feed list item.
       *  When the maximum number of characters defined by the `maxCharacters` property is exceeded and the text
@@ -1125,7 +1207,12 @@ object sapMFeedListItemMod {
     /**
       * Event is fired when name of the sender is pressed.
       */
-    var senderPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var senderPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedListItem$SenderPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to "true" (default), icons will be displayed, if set to false icons are hidden
@@ -1196,7 +1283,9 @@ object sapMFeedListItemMod {
       
       inline def setIconInitialsUndefined: Self = StObject.set(x, "iconInitials", js.undefined)
       
-      inline def setIconPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "iconPress", js.Any.fromFunction1(value))
+      inline def setIconPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedListItem$IconPressEventParameters] => Unit
+      ): Self = StObject.set(x, "iconPress", js.Any.fromFunction1(value))
       
       inline def setIconPressUndefined: Self = StObject.set(x, "iconPress", js.undefined)
       
@@ -1230,7 +1319,9 @@ object sapMFeedListItemMod {
       
       inline def setSenderActiveUndefined: Self = StObject.set(x, "senderActive", js.undefined)
       
-      inline def setSenderPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "senderPress", js.Any.fromFunction1(value))
+      inline def setSenderPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedListItem$SenderPressEventParameters] => Unit
+      ): Self = StObject.set(x, "senderPress", js.Any.fromFunction1(value))
       
       inline def setSenderPressUndefined: Self = StObject.set(x, "senderPress", js.undefined)
       

@@ -11,5 +11,5 @@ object typesInitializersBuildOptionsFromAttributesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildOptionsFromAttributes(element: HTMLElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildOptionsFromAttributes")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def buildOptionsFromAttributes(element: HTMLElement): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("buildOptionsFromAttributes")(element.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.ActualExpected
 import typings.openui5.anon.ExecutionScope
 import typings.openui5.anon.Expected
-import typings.openui5.anon.HistoryFormat
+import typings.openui5.anon.FileName
+import typings.openui5.anon.Message
 import typings.openui5.anon.Result
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
@@ -106,11 +106,11 @@ object sapUiCoreSupportRuleEngineOpaExtensionMod {
       *
       * @returns Promise.
       */
-    def getReportAsFileInFormat(): js.Promise[Result] = js.native
+    def getReportAsFileInFormat(): js.Promise[Message] = js.native
     def getReportAsFileInFormat(/**
       * The options used to configure reporting.
       */
-    options: HistoryFormat): js.Promise[Result] = js.native
+    options: FileName): js.Promise[Message] = js.native
     
     /**
       * Run the Support Assistant and analyze against a specific state of the application. Depending on the options
@@ -120,11 +120,11 @@ object sapUiCoreSupportRuleEngineOpaExtensionMod {
       *
       * @returns Promise.
       */
-    def noRuleFailures(): js.Promise[ActualExpected] = js.native
+    def noRuleFailures(): js.Promise[Result] = js.native
     def noRuleFailures(/**
       * The options used to configure an analysis.
       */
-    options: ExecutionScope): js.Promise[ActualExpected] = js.native
+    options: ExecutionScope): js.Promise[Result] = js.native
   }
   
   @js.native

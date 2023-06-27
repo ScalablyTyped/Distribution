@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait websceneVirtualLightingPr extends StObject {
   
   /**
-    * Indicates whether to show shadows cast by the light source.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the light source.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   var `type`: virtual

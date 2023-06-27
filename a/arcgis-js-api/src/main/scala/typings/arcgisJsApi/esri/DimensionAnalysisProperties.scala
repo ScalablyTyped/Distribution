@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionAnalysisProperties extends StObject {
   
   /**
-    * A list of dimensions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#dimensions)
-    */
+  		 * A list of dimensions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#dimensions)
+  		 */
   var dimensions: js.UndefOr[CollectionProperties[LengthDimensionProperties]] = js.undefined
   
   /**
-    * The style defines how the dimension objects of this analysis are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#style)
-    */
+  		 * The style defines how the dimension objects of this analysis are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#style)
+  		 */
   var style: js.UndefOr[DimensionSimpleStyleProperties] = js.undefined
 }
 object DimensionAnalysisProperties {

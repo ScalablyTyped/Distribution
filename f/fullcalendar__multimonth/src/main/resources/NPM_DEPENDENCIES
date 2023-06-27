@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fullcalendar/multimonth" : "6.1.7"
+      "@fullcalendar/multimonth" : "6.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@fullcalendar/multimonth" : "6.1.7"
+      "@fullcalendar/multimonth" : "6.1.8"
     }
   ],
   "compile-devDependencies" : [

@@ -4,21 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Web Speech API interface represents a voice that the system supports. Every SpeechSynthesisVoice has its own relative speech service including information about language, name and URI. */
+/**
+  * This Web Speech API interface represents a voice that the system supports. Every SpeechSynthesisVoice has its own relative speech service including information about language, name and URI.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice)
+  */
 trait SpeechSynthesisVoice extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/default) */
   /* standard dom */
   val default: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/lang) */
   /* standard dom */
   val lang: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/localService) */
   /* standard dom */
   val localService: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/name) */
   /* standard dom */
   val name: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/voiceURI) */
   /* standard dom */
   val voiceURI: java.lang.String
 }

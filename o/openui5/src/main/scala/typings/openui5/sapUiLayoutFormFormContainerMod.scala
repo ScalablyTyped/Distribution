@@ -125,8 +125,8 @@ object sapUiLayoutFormFormContainerMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.74.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.74.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the editable state of the `FormContainer`.
       *
@@ -146,7 +146,7 @@ object sapUiLayoutFormFormContainerMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -184,7 +184,7 @@ object sapUiLayoutFormFormContainerMod {
     def destroyTitle(): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Destroys the toolbar in the aggregation {@link #getToolbar toolbar}.
       *
@@ -193,10 +193,9 @@ object sapUiLayoutFormFormContainerMod {
     def destroyToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -243,13 +242,13 @@ object sapUiLayoutFormFormContainerMod {
       *
       * **Note:** If the title is provided as a string, the title is rendered with a theme-dependent default
       * level. As the `Form` control cannot know the structure of the page, this might not fit the page structure.
-      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel
-      * level} to the needed value.
+      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel level }
+      * to the needed value.
       */
     def getTitle(): typings.openui5.sapUiCoreTitleMod.default | String = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets content of aggregation {@link #getToolbar toolbar}.
       *
@@ -314,7 +313,7 @@ object sapUiLayoutFormFormContainerMod {
     def isVisible(): Boolean = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -332,7 +331,7 @@ object sapUiLayoutFormFormContainerMod {
     def removeAllFormElements(): js.Array[typings.openui5.sapUiLayoutFormFormElementMod.default] = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -426,7 +425,7 @@ object sapUiLayoutFormFormContainerMod {
     vTitle: typings.openui5.sapUiCoreTitleMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets the aggregated {@link #getToolbar toolbar}.
       *
@@ -460,7 +459,7 @@ object sapUiLayoutFormFormContainerMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute `aria-labelledby`).
       *
@@ -502,13 +501,13 @@ object sapUiLayoutFormFormContainerMod {
       *
       * **Note:** If the title is provided as a string, the title is rendered with a theme-dependent default
       * level. As the `Form` control cannot know the structure of the page, this might not fit the page structure.
-      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel
-      * level} to the needed value.
+      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel level }
+      * to the needed value.
       */
     var title: js.UndefOr[String | typings.openui5.sapUiCoreTitleMod.default | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Toolbar of the `FormContainer`.
       *

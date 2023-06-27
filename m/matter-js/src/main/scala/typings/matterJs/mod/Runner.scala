@@ -13,8 +13,6 @@ open class Runner () extends StObject {
     * If `engine.timing.isFixed` is set to `true`, then `delta` is fixed.
     * If it is `false`, then `delta` can dynamically change to maintain the correct apparent simulation speed.
     *
-    * @property delta
-    * @type {number}
     * @default 1000 / 60
     */
   var delta: Double = js.native
@@ -22,8 +20,6 @@ open class Runner () extends StObject {
   /**
     * A flag that specifies whether the runner is running or not.
     *
-    * @property enabled
-    * @type {boolean}
     * @default true
     */
   var enabled: Boolean = js.native
@@ -33,8 +29,6 @@ open class Runner () extends StObject {
     * If timing is fixed, then the apparent simulation speed will change depending on the frame rate (but behaviour will be deterministic).
     * If the timing is variable, then the apparent simulation speed will be constant (approximately, but at the cost of determininism).
     *
-    * @property isFixed
-    * @type {boolean}
     * @default false
     */
   var isFixed: Boolean = js.native

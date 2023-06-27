@@ -1,6 +1,7 @@
 package typings.domWebcodecs
 
 import typings.std.DOMRectInit
+import typings.std.VideoPixelFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait VideoFrameBufferInit extends StObject {
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var format: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoPixelFormat */ Any
+  var format: VideoPixelFormat
   
   var layout: js.UndefOr[js.Array[PlaneLayout]] = js.undefined
   
@@ -29,12 +30,7 @@ trait VideoFrameBufferInit extends StObject {
 }
 object VideoFrameBufferInit {
   
-  inline def apply(
-    codedHeight: Double,
-    codedWidth: Double,
-    format: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoPixelFormat */ Any,
-    timestamp: Double
-  ): VideoFrameBufferInit = {
+  inline def apply(codedHeight: Double, codedWidth: Double, format: VideoPixelFormat, timestamp: Double): VideoFrameBufferInit = {
     val __obj = js.Dynamic.literal(codedHeight = codedHeight.asInstanceOf[js.Any], codedWidth = codedWidth.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFrameBufferInit]
   }
@@ -62,9 +58,7 @@ object VideoFrameBufferInit {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setFormat(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoPixelFormat */ Any
-    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: VideoPixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setLayout(value: js.Array[PlaneLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

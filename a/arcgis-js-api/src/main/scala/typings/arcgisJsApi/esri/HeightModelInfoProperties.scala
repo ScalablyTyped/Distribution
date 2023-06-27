@@ -25,30 +25,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeightModelInfoProperties extends StObject {
   
   /**
-    * The surface type or height model of the vertical coordinate system (VCS).
-    *
-    * @default "gravity-related-height"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightModel)
-    */
+  		 * The surface type or height model of the vertical coordinate system (VCS).
+  		 *
+  		 * @default "gravity-related-height"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightModel)
+  		 */
   var heightModel: js.UndefOr[`gravity-related-height` | ellipsoidal] = js.undefined
   
   /**
-    * The unit of the vertical coordinate system.
-    *
-    * @default "meters"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightUnit)
-    */
+  		 * The unit of the vertical coordinate system.
+  		 *
+  		 * @default "meters"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#heightUnit)
+  		 */
   var heightUnit: js.UndefOr[
     meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
   ] = js.undefined
   
   /**
-    * The datum realization of the vertical coordinate system.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#vertCRS)
-    */
+  		 * The datum realization of the vertical coordinate system.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-HeightModelInfo.html#vertCRS)
+  		 */
   var vertCRS: js.UndefOr[String] = js.undefined
 }
 object HeightModelInfoProperties {

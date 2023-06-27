@@ -37,8 +37,8 @@ open class Response protected () extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/internet
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def send(): Unit = js.native
 }

@@ -28,14 +28,14 @@ trait DeleteParametersPathCommentnumberResponses extends StObject {
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/{org_id}/team/{team_id}/discussions/{discussion_number}/comments/{comment_number}`.
     */
-  var patch: Responses200Content117
+  var patch: Responses200Content137
 }
 object DeleteParametersPathCommentnumberResponses {
   
   inline def apply(
     delete: ParametersPathCommentnumberResponses,
     get: ParametersPathCommentnumber,
-    patch: Responses200Content117
+    patch: Responses200Content137
   ): DeleteParametersPathCommentnumberResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathCommentnumberResponses]
@@ -48,6 +48,6 @@ object DeleteParametersPathCommentnumberResponses {
     
     inline def setGet(value: ParametersPathCommentnumber): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200Content117): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200Content137): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

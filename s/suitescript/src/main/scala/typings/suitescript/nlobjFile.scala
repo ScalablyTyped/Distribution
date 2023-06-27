@@ -26,7 +26,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -38,7 +37,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -50,7 +48,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -62,7 +59,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -74,7 +70,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -86,7 +81,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -98,7 +92,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -110,7 +103,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -122,7 +114,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -134,7 +125,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @return
@@ -147,7 +137,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @param descr
@@ -161,7 +150,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2010.2
     * @param encoding
@@ -175,7 +163,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @param folder
@@ -189,7 +176,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @param inactive
@@ -203,7 +189,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @param online
@@ -217,7 +202,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjFile
     *
     * @since 2009.1
     * @param name

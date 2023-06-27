@@ -7,45 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content177 extends StObject {
   
   /**
-    * Delete pull request review protection
-    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
-    */
-  var delete: ParametersPathBranchResponses7
-  
-  /**
-    * Get pull request review protection
-    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Get GitHub Actions permissions for a repository
+    * @description Gets the GitHub Actions permissions policy for a repository, including whether GitHub Actions is enabled and the actions and reusable workflows allowed to run in the repository.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   var get: Responses200Content177
   
   /**
-    * Update pull request review protection
-    * @description Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Set GitHub Actions permissions for a repository
+    * @description Sets the GitHub Actions permissions policy for enabling GitHub Actions and allowed actions and reusable workflows in the repository.
     *
-    * Updating pull request review enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
-    *
-    * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
-  var patch: Responses200Content177422
+  var put: RequestBodyContentApplicationjsonEnabled
 }
 object GetResponses200Content177 {
   
-  inline def apply(
-    delete: ParametersPathBranchResponses7,
-    get: Responses200Content177,
-    patch: Responses200Content177422
-  ): GetResponses200Content177 = {
-    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content177, put: RequestBodyContentApplicationjsonEnabled): GetResponses200Content177 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content177]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetResponses200Content177] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: ParametersPathBranchResponses7): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
-    
     inline def setGet(value: Responses200Content177): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200Content177422): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjsonEnabled): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`georeferenced-image`
 import typings.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typings.arcgisJsApi.arcgisJsApiStrings.`imagery-tile`
 import typings.arcgisJsApi.arcgisJsApiStrings.`integrated-mesh`
+import typings.arcgisJsApi.arcgisJsApiStrings.`knowledge-graph-sublayer`
 import typings.arcgisJsApi.arcgisJsApiStrings.`knowledge-graph`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-create-error`
 import typings.arcgisJsApi.arcgisJsApiStrings.`layerview-create`
@@ -61,50 +62,50 @@ trait Layer
      with _HitTestItem {
   
   /**
-    * Called by the views, such as [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html), when the layer is added to the [Map.layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) collection and a layer view must be created for it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
-    */
+  		 * Called by the views, such as [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html), when the layer is added to the [Map.layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) collection and a layer view must be created for it.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
+  		 */
   def createLayerView(view: Any): js.Promise[LayerView] = js.native
   def createLayerView(view: Any, options: LayerCreateLayerViewOptions): js.Promise[LayerView] = js.native
   
   /**
-    * Fetches custom attribution data for the layer when it becomes available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fetchAttributionData)
-    */
+  		 * Fetches custom attribution data for the layer when it becomes available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fetchAttributionData)
+  		 */
   def fetchAttributionData(): js.Promise[Any] = js.native
   
   /**
-    * The full extent of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
-    */
+  		 * The full extent of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
+  		 */
   var fullExtent: Extent = js.native
   
   /**
-    * The unique ID assigned to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
-    */
+  		 * The unique ID assigned to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
+  		 */
   var id: String = js.native
   
   /**
-    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * @default "show"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
-    */
+  		 * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * @default "show"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
+  		 */
   var listMode: show | hide | `hide-children` = js.native
   
   /**
-    * Indicates whether the layer's resources have loaded.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#loaded)
-    */
+  		 * Indicates whether the layer's resources have loaded.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#loaded)
+  		 */
   val loaded: Boolean = js.native
   
   @JSName("on")
@@ -115,34 +116,41 @@ trait Layer
   def on_layerviewdestroy(name: `layerview-destroy`, eventHandler: LayerLayerviewDestroyEventHandler): IHandle = js.native
   
   /**
-    * The opacity of the layer.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
-    */
+  		 * The opacity of the layer.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
+  		 */
   var opacity: Double = js.native
   
   /**
-    * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
-    */
+  		 * The parent to which the layer belongs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#parent)
+  		 */
+  var parent: Map | Basemap | Ground | GroupLayer = js.native
+  
+  /**
+  		 * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
+  		 */
   var title: String = js.native
   
   /**
-    * The layer type provides a convenient way to check the type of the layer without the need to import specific layer modules.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#type)
-    */
-  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | dimension | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` | `knowledge-graph` = js.native
+  		 * The layer type provides a convenient way to check the type of the layer without the need to import specific layer modules.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#type)
+  		 */
+  val `type`: `base-dynamic` | `base-elevation` | `base-tile` | `bing-maps` | `building-scene` | csv | dimension | elevation | feature | geojson | `geo-rss` | graphics | group | imagery | `imagery-tile` | `integrated-mesh` | kml | `line-of-sight` | `map-image` | `map-notes` | media | `ogc-feature` | `open-street-map` | `point-cloud` | typings.arcgisJsApi.arcgisJsApiStrings.route | scene | `georeferenced-image` | stream | tile | unknown | unsupported | `vector-tile` | wcs | `web-tile` | wfs | wms | wmts | voxel | `subtype-group` | `knowledge-graph` | `knowledge-graph-sublayer` = js.native
   
   /**
-    * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
-    */
+  		 * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
+  		 */
   var visible: Boolean = js.native
 }

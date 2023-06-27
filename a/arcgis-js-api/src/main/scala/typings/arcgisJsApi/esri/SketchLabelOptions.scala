@@ -10,11 +10,11 @@ trait SketchLabelOptions
      with Accessor {
   
   /**
-    * Whether labels are shown next to each segment of the graphic being sketched.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchLabelOptions.html#enabled)
-    */
+  		 * Whether labels are shown next to each segment of the graphic being sketched.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchLabelOptions.html#enabled)
+  		 */
   var enabled: Boolean = js.native
 }

@@ -7,91 +7,91 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachmentQueryProperties extends StObject {
   
   /**
-    * The file format that is supported by query attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentTypes)
-    */
+  		 * The file format that is supported by query attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentTypes)
+  		 */
   var attachmentTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The where clause to be applied to attachment queries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentsWhere)
-    */
+  		 * The where clause to be applied to attachment queries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#attachmentsWhere)
+  		 */
   var attachmentsWhere: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the service should cache the attachment query results.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#cacheHint)
-    */
+  		 * Indicates if the service should cache the attachment query results.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#cacheHint)
+  		 */
   var cacheHint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of globalIds for the features in the layer being queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#globalIds)
-    */
+  		 * An array of globalIds for the features in the layer being queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#globalIds)
+  		 */
   var globalIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Used to query for attachments that match the provided `keywords`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#keywords)
-    */
+  		 * Used to query for attachments that match the provided `keywords`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#keywords)
+  		 */
   var keywords: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Used to query for attachments that match this `name`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#name)
-    */
+  		 * Used to query for attachments that match this `name`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of features to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#num)
-    */
+  		 * The number of features to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#num)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of objectIds of the features to be queried for attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#objectIds)
-    */
+  		 * An array of objectIds of the features to be queried for attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#objectIds)
+  		 */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * If `true`, the [Exchangeable image file format](https://en.wikipedia.org/wiki/Exif) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#returnMetadata)
-    */
+  		 * If `true`, the [Exchangeable image file format](https://en.wikipedia.org/wiki/Exif) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#returnMetadata)
+  		 */
   var returnMetadata: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The file size of the attachment is specified in bytes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#size)
-    */
+  		 * The file size of the attachment is specified in bytes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#size)
+  		 */
   var size: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * This option fetches query results by skipping a specified number of records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#start)
-    */
+  		 * This option fetches query results by skipping a specified number of records.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#start)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
   
   /**
-    * The `where` clause to be applied to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#where)
-    */
+  		 * The `where` clause to be applied to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html#where)
+  		 */
   var where: js.UndefOr[String] = js.undefined
 }
 object AttachmentQueryProperties {

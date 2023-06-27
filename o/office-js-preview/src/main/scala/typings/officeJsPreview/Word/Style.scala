@@ -26,8 +26,7 @@ trait Style
     * Gets the name of an existing style to use as the base formatting of another style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val baseStyle: String = js.native
   
@@ -35,8 +34,7 @@ trait Style
     * Gets whether the specified style is a built-in style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val builtIn: Boolean = js.native
   
@@ -48,8 +46,7 @@ trait Style
     * Deletes the style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   def delete(): Unit = js.native
   
@@ -66,8 +63,7 @@ trait Style
     * Gets a font object that represents the character formatting of the specified style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val font: Font = js.native
   
@@ -75,8 +71,7 @@ trait Style
     * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val inUse: Boolean = js.native
   
@@ -84,8 +79,7 @@ trait Style
     * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val linked: Boolean = js.native
   
@@ -113,8 +107,7 @@ trait Style
     * Gets the name of a style in the language of the user.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val nameLocal: String = js.native
   
@@ -122,8 +115,7 @@ trait Style
     * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val nextParagraphStyle: String = js.native
   
@@ -131,26 +123,23 @@ trait Style
     * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val paragraphFormat: ParagraphFormat = js.native
   
   /**
-    * Gets or sets the priority.
+    * Specifies the priority.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var priority: Double = js.native
   
   /**
-    * Gets or sets whether the style corresponds to an available quick style.
+    * Specifies whether the style corresponds to an available quick style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var quickStyle: Boolean = js.native
   
@@ -179,17 +168,15 @@ trait Style
     * Gets the style type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   val `type`: StyleType | Character | typings.officeJsPreview.officeJsPreviewStrings.List | typings.officeJsPreview.officeJsPreviewStrings.Paragraph | typings.officeJsPreview.officeJsPreviewStrings.Table = js.native
   
   /**
-    * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+    * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var unhideWhenUsed: Boolean = js.native
   
@@ -199,11 +186,10 @@ trait Style
   def untrack(): Style = js.native
   
   /**
-    * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+    * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var visibility: Boolean = js.native
 }

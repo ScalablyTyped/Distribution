@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsEventProperties extends StObject {
   
   /**
-    * The date and time value indicating the arrival time at the Directions Event.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#arriveTime)
-    */
+  		 * The date and time value indicating the arrival time at the Directions Event.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#arriveTime)
+  		 */
   var arriveTime: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The local time offset (in minutes) for the arrival time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#arriveTimeOffset)
-    */
+  		 * The local time offset (in minutes) for the arrival time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#arriveTimeOffset)
+  		 */
   var arriveTimeOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The point location of the stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#geometry)
-    */
+  		 * The point location of the stop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#geometry)
+  		 */
   var geometry: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * An array of [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#strings)
-    */
+  		 * An array of [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsEvent.html#strings)
+  		 */
   var strings: js.UndefOr[js.Array[DirectionsString]] = js.undefined
 }
 object DirectionsEventProperties {

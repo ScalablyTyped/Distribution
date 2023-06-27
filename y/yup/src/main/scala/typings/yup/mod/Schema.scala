@@ -15,7 +15,7 @@ open class Schema[TType, TContext, TDefault, TFlags /* <: Flags */] protected ()
      with ISchema[TType, TContext, TFlags, TDefault] {
   def this(options: SchemaOptions[TType, Any]) = this()
   
-  def default(`def`: Thunk[Any]): Any = js.native
+  def default(`def`: DefaultThunk[Any, Any]): Any = js.native
   
   val __isYupSchema__ : Boolean = js.native
   
@@ -27,7 +27,7 @@ open class Schema[TType, TContext, TDefault, TFlags /* <: Flags */] protected ()
   /* protected */ def _cast(rawValue: Any, options: CastOptions1[TContext]): Any = js.native
   
   /* protected */ def _getDefault(): Any = js.native
-  /* protected */ def _getDefault(_options: ResolveOptions[TContext]): Any = js.native
+  /* protected */ def _getDefault(options: ResolveOptions[TContext]): Any = js.native
   
   /* private */ var _mutate: Any = js.native
   

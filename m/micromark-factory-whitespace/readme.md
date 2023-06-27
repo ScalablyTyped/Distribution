@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-factory-whitespace
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 micromark factory to parse markdown whitespace (found in lots of places)

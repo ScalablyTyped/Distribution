@@ -30,7 +30,7 @@ object resourcesWorkersMod {
     * teams - One or more team IDs of which the worker is a member.
     * vehicle - Optional. The worker’s vehicle; providing no vehicle details is equivalent to the worker being on foot.
     * capacity - Optional. The maximum number of units this worker can carry, for route optimization purposes.
-    * @prop displayName - Optional. This value is used in place of the worker's actual name within sms notifications,
+    * displayName - Optional. This value is used in place of the worker's actual name within sms notifications,
     * delivery tracking pages, and across organization boundaries (connections).
     */
   trait CreateWorkerProps extends StObject {

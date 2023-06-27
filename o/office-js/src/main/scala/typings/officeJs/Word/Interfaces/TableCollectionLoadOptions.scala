@@ -19,7 +19,7 @@ trait TableCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+    * For EACH ITEM in the collection: Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,7 @@ trait TableCollectionLoadOptions extends StObject {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the number of header rows.
+    * For EACH ITEM in the collection: Specifies the number of header rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait TableCollectionLoadOptions extends StObject {
   var headerRowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * For EACH ITEM in the collection: Specifies the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -131,7 +131,7 @@ trait TableCollectionLoadOptions extends StObject {
   var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+    * For EACH ITEM in the collection: Specifies the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -139,7 +139,7 @@ trait TableCollectionLoadOptions extends StObject {
   var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * For EACH ITEM in the collection: Specifies the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -147,7 +147,7 @@ trait TableCollectionLoadOptions extends StObject {
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets whether the table has banded columns.
+    * For EACH ITEM in the collection: Specifies whether the table has banded columns.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -155,7 +155,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets whether the table has banded rows.
+    * For EACH ITEM in the collection: Specifies whether the table has banded rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -163,7 +163,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * For EACH ITEM in the collection: Specifies the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -171,7 +171,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style.
+    * For EACH ITEM in the collection: Specifies whether the table has a first column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -179,7 +179,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style.
+    * For EACH ITEM in the collection: Specifies whether the table has a last column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -187,7 +187,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style.
+    * For EACH ITEM in the collection: Specifies whether the table has a total (last) row with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -195,7 +195,7 @@ trait TableCollectionLoadOptions extends StObject {
   var styleTotalRow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array.
+    * For EACH ITEM in the collection: Specifies the text values in the table, as a 2D JavaScript array.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -203,7 +203,7 @@ trait TableCollectionLoadOptions extends StObject {
   var values: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+    * For EACH ITEM in the collection: Specifies the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -211,7 +211,7 @@ trait TableCollectionLoadOptions extends StObject {
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the width of the table in points.
+    * For EACH ITEM in the collection: Specifies the width of the table in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]

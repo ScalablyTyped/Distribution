@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`14`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -8,6 +7,7 @@ import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.FileList
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -158,13 +158,13 @@ object sapUiWebcMainFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.FileUploader` itself
       */
@@ -191,7 +191,7 @@ object sapUiWebcMainFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -202,7 +202,7 @@ object sapUiWebcMainFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.FileUploader` itself
       */
@@ -227,13 +227,13 @@ object sapUiWebcMainFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -241,17 +241,19 @@ object sapUiWebcMainFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `14`): this.type = js.native
+    mParameters: FileUploader$ChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccept accept}.
@@ -650,6 +652,33 @@ object sapUiWebcMainFileUploaderMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait FileUploader$ChangeEventParameters extends StObject {
+    
+    /**
+      * The current files.
+      */
+    var files: js.UndefOr[FileList] = js.undefined
+  }
+  object FileUploader$ChangeEventParameters {
+    
+    inline def apply(): FileUploader$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFiles(value: FileList): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    }
+  }
+  
+  type FileUploaderChangeEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters]
+  
+  type FileUploaderChangeEventParameters = FileUploader$ChangeEventParameters
+  
   trait FileUploaderSettings
     extends StObject
        with ControlSettings {
@@ -667,7 +696,12 @@ object sapUiWebcMainFileUploaderMod {
       * of the HTML input element of type file, the event is also fired in Chrome browser when the Cancel button
       * of the uploads window is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * By default the component contains a single input field. With this slot you can pass any content that
@@ -764,7 +798,9 @@ object sapUiWebcMainFileUploaderMod {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.MaximumMinimum
-import typings.openui5.anon.`45`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,14 +17,12 @@ object sapUiModelTypeDateMod {
     */
   open class default () extends Date1 {
     def this(/**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance DateFormat}.
       */
-    oFormatOptions: `45`) = this()
+    oFormatOptions: `13`) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance DateFormat}.
       */
     oFormatOptions: Unit,
       /**
@@ -34,10 +32,9 @@ object sapUiModelTypeDateMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance DateFormat}.
       */
-    oFormatOptions: `45`,
+    oFormatOptions: `13`,
       /**
       * Value constraints
       */
@@ -117,7 +114,7 @@ object sapUiModelTypeDateMod {
     extends typings.openui5.sapUiModelSimpleTypeMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the output pattern.
       * See:
@@ -126,5 +123,15 @@ object sapUiModelTypeDateMod {
       * @returns The output pattern
       */
     def getOutputPattern(): String = js.native
+    
+    /**
+      * @experimental (since 1.114.0)
+      *
+      * Returns a language-dependent placeholder text such as "e.g. " where  is formatted
+      * using this type.
+      *
+      * @returns The language-dependent placeholder text or `undefined` if the type does not offer a placeholder
+      */
+    def getPlaceholderText(): js.UndefOr[String] = js.native
   }
 }

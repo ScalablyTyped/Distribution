@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV100DomainSetSpatialDomainOffset extends StObject {
   
   /**
-    * Spatial domain x offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Spatial domain x offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var x: Double
   
   /**
-    * Spatial domain y offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Spatial domain y offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var y: Any
 }
 object CoverageDescriptionV100DomainSetSpatialDomainOffset {

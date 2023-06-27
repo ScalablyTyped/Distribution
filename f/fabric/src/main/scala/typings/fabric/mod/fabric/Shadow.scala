@@ -23,7 +23,6 @@ object Shadow {
     * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
     * @static
     * @field
-    * @memberOf fabric.Shadow
     */
   @JSImport("fabric", "fabric.Shadow.reOffsetsAndBlur")
   @js.native

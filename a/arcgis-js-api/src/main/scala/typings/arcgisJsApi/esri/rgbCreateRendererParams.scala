@@ -14,68 +14,75 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rgbCreateRendererParams extends StObject {
   
   /**
-    * When `true`, calculates the renderer's statistics based on the current display extent and recalculates them as you zoom and pan around the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * When `true`, calculates the renderer's statistics based on the current display extent and recalculates them as you zoom and pan around the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var dynamicRangeAdjustment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Useful in scenarios where an image service does not have statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * Useful in scenarios where an image service does not have statistics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var estimateStatistics: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The gamma values to be used if `useGamma` is `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * The gamma values to be used if `useGamma` is `true`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var gamma: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The input layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * The input layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var layer: ImageryLayer | ImageryTileLayer | WCSLayer
   
   /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * Specifies the function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunction] = js.undefined
+  
+  /**
+  		 * Deprecated since 4.27.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var renderingRule: js.UndefOr[RasterFunction] = js.undefined
   
   /**
-    * The RGB band indexes following the order of red, green, and blue channels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * The RGB band indexes following the order of red, green, and blue channels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var rgbBandIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * A preferred stretch type can be provided.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * A preferred stretch type can be provided.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var stretchType: js.UndefOr[
     none_ | `min-max` | `standard-deviation` | `histogram-equalization` | `percent-clip` | sigmoid
   ] = js.undefined
   
   /**
-    * Indicates whether the `gamma` values should be used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
-    */
+  		 * Indicates whether the `gamma` values should be used.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html#createRenderer)
+  		 */
   var useGamma: js.UndefOr[Boolean] = js.undefined
 }
 object rgbCreateRendererParams {
@@ -103,6 +110,10 @@ object rgbCreateRendererParams {
     inline def setGammaVarargs(value: Double*): Self = StObject.set(x, "gamma", js.Array(value*))
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer | WCSLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunction(value: RasterFunction): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunction): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

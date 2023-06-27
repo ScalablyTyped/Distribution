@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Symbol3DVerticalOffset")
 @js.native
 /**
-  * Shifts a symbol along the vertical world axis by a given height.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html)
-  */
+		 * Shifts a symbol along the vertical world axis by a given height.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html)
+		 */
 open class Symbol3DVerticalOffset ()
   extends StObject
      with typings.arcgisJsApi.esri.Symbol3DVerticalOffset {

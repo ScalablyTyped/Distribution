@@ -62,63 +62,81 @@ open class CSSCounterStyleRule ()
   /* CompleteClass */
   override val SUPPORTS_RULE: `12` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/additiveSymbols) */
   /* standard dom */
   /* CompleteClass */
   var additiveSymbols: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/cssText) */
   /* standard dom */
   /* CompleteClass */
   var cssText: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/fallback) */
   /* standard dom */
   /* CompleteClass */
   var fallback: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/name) */
   /* standard dom */
   /* CompleteClass */
   var name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/negative) */
   /* standard dom */
   /* CompleteClass */
   var negative: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/pad) */
   /* standard dom */
   /* CompleteClass */
   var pad: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule) */
   /* standard dom */
   /* CompleteClass */
   override val parentRule: typings.std.CSSRule | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet) */
   /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/prefix) */
   /* standard dom */
   /* CompleteClass */
   var prefix: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/range) */
   /* standard dom */
   /* CompleteClass */
   var range: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/speakAs) */
   /* standard dom */
   /* CompleteClass */
   var speakAs: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/suffix) */
   /* standard dom */
   /* CompleteClass */
   var suffix: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/symbols) */
   /* standard dom */
   /* CompleteClass */
   var symbols: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/system) */
   /* standard dom */
   /* CompleteClass */
   var system: java.lang.String = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/type)
+    */
   /* standard dom */
   /* CompleteClass */
   override val `type`: Double = js.native

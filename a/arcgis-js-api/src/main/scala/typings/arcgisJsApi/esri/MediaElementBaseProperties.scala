@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaElementBaseProperties extends StObject {
   
   /**
-    * The geographic location of the image or video element to be placed on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
-    */
+  		 * The geographic location of the image or video element to be placed on the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
+  		 */
   var georeference: js.UndefOr[
     ExtentAndRotationGeorefer | CornersGeoreferenceProper | typings.arcgisJsApi.anon.ControlPointsGeoreference
   ] = js.undefined
   
   /**
-    * The opacity of the element.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#opacity)
-    */
+  		 * The opacity of the element.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#opacity)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object MediaElementBaseProperties {

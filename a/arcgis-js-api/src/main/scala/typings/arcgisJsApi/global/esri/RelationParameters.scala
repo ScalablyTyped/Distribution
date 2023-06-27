@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.RelationParameters")
 @js.native
 /**
-  * Sets the relation and other parameters for the [geometryService.relation()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#relation) operation.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html)
-  */
+		 * Sets the relation and other parameters for the [geometryService.relation()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#relation) operation.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html)
+		 */
 open class RelationParameters ()
   extends StObject
      with typings.arcgisJsApi.esri.RelationParameters {
   def this(properties: RelationParametersProperties) = this()
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

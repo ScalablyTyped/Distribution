@@ -18,7 +18,7 @@ object sapUiTestGherkinQUnitTestHarnessMod extends Shortcut {
   override def _to: qUnitTestHarness = default
   
   /**
-    * @SINCE 1.40
+    * @since 1.40
     *
     * Dynamically generates and executes QUnit tests based on a Gherkin feature file and step definitions
     *

@@ -75,14 +75,14 @@ open class styledGeometry protected () extends StObject {
     */
   def getOutlineThicknessPix(): Double = js.native
   
-  /** 
+  /**
     * Renders this to a canvas context.
     * @param {CanvasRenderingContext2D} ctx Canvas context to which to render.
     */
   def renderPathToCanvasContext(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * You can use the loopback parameter on complete to call itself and 
+    * You can use the loopback parameter on complete to call itself and
     * create repeating animation.
     * @param {function} Function with the signature animation(pathElement, loopback).
     */

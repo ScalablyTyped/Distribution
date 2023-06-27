@@ -1,8 +1,8 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.AddEventResult
-import typings.sentryReplay.typesTypesMod.RecordingEvent
-import typings.sentryReplay.typesTypesMod.ReplayContainer
+import typings.sentryReplay.typesTypesReplayMod.AddEventResult
+import typings.sentryReplay.typesTypesReplayMod.RecordingEvent
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

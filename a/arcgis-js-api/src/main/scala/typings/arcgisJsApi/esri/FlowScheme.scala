@@ -9,115 +9,115 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowScheme extends StObject {
   
   /**
-    * The suggested color of the flow lines if a color visual variable is not desired.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested color of the flow lines if a color visual variable is not desired.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var color: Color_
   
   /**
-    * The suggested colors to use if a [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) is set on the flow renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested colors to use if a [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) is set on the flow renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The suggested [density](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#density) of the stream lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [density](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#density) of the stream lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var density: Double
   
   /**
-    * The suggested [flowSpeed](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowSpeed) of the stream lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [flowSpeed](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowSpeed) of the stream lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var flowSpeed: Double
   
   /**
-    * The unique id of the color scheme to use in the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The unique id of the color scheme to use in the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var id: String
   
   /**
-    * The suggested [effect](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#effect) to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [effect](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#effect) to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var layerEffect: String
   
   /**
-    * The suggested opacity to apply to large magnitude values if an [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) is set on the flow renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested opacity to apply to large magnitude values if an [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) is set on the flow renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var maxOpacity: Double
   
   /**
-    * The suggested size to apply to large magnitude values if a [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) is set on the flow renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested size to apply to large magnitude values if a [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) is set on the flow renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var maxWidth: Double
   
   /**
-    * The suggested opacity to apply to small magnitude values if an [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) is set on the flow renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested opacity to apply to small magnitude values if an [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) is set on the flow renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var minOpacity: Double
   
   /**
-    * The suggested size to apply to small magnitude values if a [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) is set on the flow renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested size to apply to small magnitude values if a [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) is set on the flow renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var minWidth: Double
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var name: String
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * Determines how flow lines will render.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * Determines how flow lines will render.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var theme: `flow-line` | `wave-front`
   
   /**
-    * The suggested [cap style](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailCap) of the stream lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [cap style](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailCap) of the stream lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var trailCap: Double
   
   /**
-    * The suggested [length](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailLength) of the stream lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [length](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailLength) of the stream lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var trailLength: Double
   
   /**
-    * The suggested [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailWidth) of the stream lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
-    */
+  		 * The suggested [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailWidth) of the stream lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowScheme)
+  		 */
   var trailWidth: Double
 }
 object FlowScheme {

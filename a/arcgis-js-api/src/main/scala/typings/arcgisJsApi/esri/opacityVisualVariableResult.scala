@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait opacityVisualVariableResult extends StObject {
   
   /**
-    * Authoring information related to the creation of the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
-    */
+  		 * Authoring information related to the creation of the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
+  		 */
   var authoringInfo: AuthoringInfo
   
   /**
-    * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
-    */
+  		 * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * Basic statistics returned from a query to the service for the given field or expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
-    */
+  		 * Basic statistics returned from a query to the service for the given field or expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
+  		 */
   var statistics: SummaryStatisticsResult
   
   /**
-    * An opacity visual variable configured based on the statistics of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
-    */
+  		 * An opacity visual variable configured based on the statistics of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-opacity.html#VisualVariableResult)
+  		 */
   var visualVariable: OpacityVariable
 }
 object opacityVisualVariableResult {

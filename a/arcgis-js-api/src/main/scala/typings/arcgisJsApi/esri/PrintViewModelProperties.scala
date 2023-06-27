@@ -7,74 +7,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintViewModelProperties extends StObject {
   
   /**
-    * Specify the print output file format(s) that the user can select based on the options available from the print service.
-    *
-    * @default "all"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedFormats)
-    */
+  		 * Specify the print output file format(s) that the user can select based on the options available from the print service.
+  		 *
+  		 * @default "all"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedFormats)
+  		 */
   var allowedFormats: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * Specify the print output layout(s) that the user can select based on the options available from the print service.
-    *
-    * @default "all"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedLayouts)
-    */
+  		 * Specify the print output layout(s) that the user can select based on the options available from the print service.
+  		 *
+  		 * @default "all"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#allowedLayouts)
+  		 */
   var allowedLayouts: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * This option allows passing extra parameters to the print (export webmap) requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#extraParameters)
-    */
+  		 * This option allows passing extra parameters to the print (export webmap) requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#extraParameters)
+  		 */
   var extraParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * Indicates whether or not to include [defaultTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#defaultTemplates).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#includeDefaultTemplates)
-    */
+  		 * Indicates whether or not to include [defaultTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#defaultTemplates).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#includeDefaultTemplates)
+  		 */
   var includeDefaultTemplates: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * It is possible to search a specified portal instance's [locator services](https://enterprise.arcgis.com/en/portal/latest/administer/windows/configure-portal-to-geocode-addresses.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#portal)
-    */
+  		 * It is possible to search a specified portal instance's [locator services](https://enterprise.arcgis.com/en/portal/latest/administer/windows/configure-portal-to-geocode-addresses.htm).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#portal)
+  		 */
   var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
-    * The URL of the REST endpoint of the Export Web Map Task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#printServiceUrl)
-    */
+  		 * The URL of the REST endpoint of the Export Web Map Task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#printServiceUrl)
+  		 */
   var printServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * An object containing an array of `customTextElements` name-value pair objects for each print template in a custom print service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#templateCustomTextElements)
-    */
+  		 * An object containing an array of `customTextElements` name-value pair objects for each print template in a custom print service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#templateCustomTextElements)
+  		 */
   var templateCustomTextElements: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
-    *
-    * @default 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#updateDelay)
-    */
+  		 * The time interval in milliseconds between each job status request sent to an asynchronous GP task.
+  		 *
+  		 * @default 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#updateDelay)
+  		 */
   var updateDelay: js.UndefOr[Double] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object PrintViewModelProperties {

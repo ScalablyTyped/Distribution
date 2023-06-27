@@ -13,10 +13,10 @@ trait ClassedSizeSliderConstructor
      with Instantiable1[/* properties */ ClassedSizeSliderProperties, ClassedSizeSlider] {
   
   /**
-    * A convenience function used to create a ClassedSizeSlider widget from the result of the [createClassBreaksRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer) method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#fromRendererResult)
-    */
+  		 * A convenience function used to create a ClassedSizeSlider widget from the result of the [createClassBreaksRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createClassBreaksRenderer) method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#fromRendererResult)
+  		 */
   def fromRendererResult(rendererResult: sizeClassBreaksRendererResult): ClassedSizeSlider = js.native
   def fromRendererResult(rendererResult: sizeClassBreaksRendererResult, histogramResult: HistogramResult): ClassedSizeSlider = js.native
 }

@@ -291,4 +291,34 @@ object sapUiCoreDelegateItemNavigationMod {
     bTableList: Boolean
     ): this.type = js.native
   }
+  
+  trait ItemNavigation$AfterFocusEventParameters extends StObject
+  
+  trait ItemNavigation$BeforeFocusEventParameters extends StObject
+  
+  trait ItemNavigation$BorderReachedEventParameters extends StObject
+  
+  trait ItemNavigation$FocusAgainEventParameters extends StObject
+  
+  trait ItemNavigation$FocusLeaveEventParameters extends StObject
+  
+  type ItemNavigationAfterFocusEvent = typings.openui5.sapUiBaseEventMod.default[ItemNavigation$AfterFocusEventParameters]
+  
+  type ItemNavigationAfterFocusEventParameters = ItemNavigation$AfterFocusEventParameters
+  
+  type ItemNavigationBeforeFocusEvent = typings.openui5.sapUiBaseEventMod.default[ItemNavigation$BeforeFocusEventParameters]
+  
+  type ItemNavigationBeforeFocusEventParameters = ItemNavigation$BeforeFocusEventParameters
+  
+  type ItemNavigationBorderReachedEvent = typings.openui5.sapUiBaseEventMod.default[ItemNavigation$BorderReachedEventParameters]
+  
+  type ItemNavigationBorderReachedEventParameters = ItemNavigation$BorderReachedEventParameters
+  
+  type ItemNavigationFocusAgainEvent = typings.openui5.sapUiBaseEventMod.default[ItemNavigation$FocusAgainEventParameters]
+  
+  type ItemNavigationFocusAgainEventParameters = ItemNavigation$FocusAgainEventParameters
+  
+  type ItemNavigationFocusLeaveEvent = typings.openui5.sapUiBaseEventMod.default[ItemNavigation$FocusLeaveEventParameters]
+  
+  type ItemNavigationFocusLeaveEventParameters = ItemNavigation$FocusLeaveEventParameters
 }

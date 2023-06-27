@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GPMessageProperties extends StObject {
   
   /**
-    * The geoprocessing message.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#description)
-    */
+  		 * The geoprocessing message.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The geoprocessing message type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#type)
-    */
+  		 * The geoprocessing message type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#type)
+  		 */
   var `type`: js.UndefOr[
     informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
   ] = js.undefined

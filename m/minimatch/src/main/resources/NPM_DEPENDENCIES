@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "minimatch" : "9.0.0"
+      "minimatch" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "minimatch" : "9.0.0"
+      "minimatch" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -11,14 +11,14 @@ trait `200ContentApplicationjsonIncludeclaimkeys` extends StObject {
   
   var `400`: ContentApplicationjsonApplicationscimjson
   
-  var `404`: Content36
+  var `404`: Content41
 }
 object `200ContentApplicationjsonIncludeclaimkeys` {
   
   inline def apply(
     `200`: ContentApplicationjsonIncludeclaimkeys,
     `400`: ContentApplicationjsonApplicationscimjson,
-    `404`: Content36
+    `404`: Content41
   ): `200ContentApplicationjsonIncludeclaimkeys` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -34,6 +34,6 @@ object `200ContentApplicationjsonIncludeclaimkeys` {
     
     inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

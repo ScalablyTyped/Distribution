@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpacitySliderViewModelStopInfo extends StObject {
   
   /**
-    * The color of the stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#StopInfo)
-    */
+  		 * The color of the stop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#StopInfo)
+  		 */
   var color: Color_
   
   /**
-    * The offset of the stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#StopInfo)
-    */
+  		 * The offset of the stop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#StopInfo)
+  		 */
   var offset: Double
 }
 object OpacitySliderViewModelStopInfo {

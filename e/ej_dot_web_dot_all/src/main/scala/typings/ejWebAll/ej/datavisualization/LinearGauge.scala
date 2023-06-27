@@ -1772,17 +1772,17 @@ object LinearGauge {
     var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
-      * @Default {LinearGauge}
+      * @default {LinearGauge}
       */
     var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
-      * @Default {client}
+      * @default {client}
       */
     var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
-      * @Default {png}
+      * @default {png}
       */
     var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
@@ -1817,17 +1817,17 @@ object LinearGauge {
   trait Frame extends StObject {
     
     /** Specifies the frame background image URL of linear gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the frame InnerWidth
-      * @Default {8}
+      * @default {8}
       */
     var innerWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the frame OuterWidth
-      * @Default {12}
+      * @default {12}
       */
     var outerWidth: js.UndefOr[Double] = js.undefined
   }
@@ -1982,17 +1982,17 @@ object LinearGauge {
   trait Model extends StObject {
     
     /** Specifies the animationSpeed
-      * @Default {500}
+      * @default {500}
       */
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Specifies the backgroundColor for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
@@ -2029,22 +2029,22 @@ object LinearGauge {
     var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.undefined
     
     /** Specifies the animate state
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Used to Convert the date object to  string while using the  locale settings
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the animate state for marker pointer
-      * @Default {true}
+      * @default {true}
       */
     var enableMarkerPointerAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Responsiveness of the linear gauge is controlled
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
@@ -2053,12 +2053,12 @@ object LinearGauge {
     var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specify frame of linear gauge
-      * @Default {null}
+      * @default {null}
       */
     var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specifies the height of Linear gauge.
-      * @Default {400}
+      * @default {400}
       */
     var height: js.UndefOr[Double] = js.undefined
     
@@ -2067,12 +2067,12 @@ object LinearGauge {
     var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.undefined
     
     /** Specifies the can resize state.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the labelColor for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var labelColor: js.UndefOr[String] = js.undefined
     
@@ -2081,17 +2081,17 @@ object LinearGauge {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Set the  localization culture  for the Linear gauge
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum value of Linear gauge.
-      * @Default {100}
+      * @default {100}
       */
     var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum value of Linear gauge.
-      * @Default {0}
+      * @default {0}
       */
     var minimum: js.UndefOr[Double] = js.undefined
     
@@ -2108,27 +2108,27 @@ object LinearGauge {
     var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.undefined
     
     /** Specifies the orientation for Linear gauge.
-      * @Default {Vertical}
+      * @default {Vertical}
       */
     var orientation: js.UndefOr[String] = js.undefined
     
     /** Specify labelPosition value of Linear gauge See
-      * @Default {bottom}
+      * @default {bottom}
       */
     var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.undefined
     
     /** Specifies the pointerGradient1 for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var pointerGradient1: js.UndefOr[Any] = js.undefined
     
     /** Specifies the pointerGradient2 for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var pointerGradient2: js.UndefOr[Any] = js.undefined
     
     /** Specifies the read only state.
-      * @Default {true}
+      * @default {true}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -2141,32 +2141,32 @@ object LinearGauge {
     var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the scales
-      * @Default {null}
+      * @default {null}
       */
     var scales: js.UndefOr[js.Array[Scale]] = js.undefined
     
     /** Specifies the theme for Linear gauge. See LinearGauge.Themes
-      * @Default {flatlight}
+      * @default {flatlight}
       */
     var theme: js.UndefOr[Themes | String] = js.undefined
     
     /** Specifies the tick Color for Linear gauge.
-      * @Default {null}
+      * @default {null}
       */
     var tickColor: js.UndefOr[String] = js.undefined
     
     /** Specify tooltip options of linear gauge
-      * @Default {false}
+      * @default {false}
       */
     var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the value of the Gauge.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of Linear gauge.
-      * @Default {150}
+      * @default {150}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2790,137 +2790,137 @@ object LinearGauge {
   trait Scale extends StObject {
     
     /** Specifies the backgroundColor of the Scale.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the scaleBar Gradient of bar pointer
-      * @Default {Array}
+      * @default {Array}
       */
     var barPointers: js.UndefOr[js.Array[ScalesBarPointer]] = js.undefined
     
     /** Specifies the border of the Scale.
-      * @Default {null}
+      * @default {null}
       */
     var border: js.UndefOr[ScalesBorder] = js.undefined
     
     /** Specifies the customLabel
-      * @Default {Array}
+      * @default {Array}
       */
     var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.undefined
     
     /** Specifies the scale Direction of the Scale. See
-      * @Default {CounterClockwise}
+      * @default {CounterClockwise}
       */
     var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.undefined
     
     /** Specifies the indicator
-      * @Default {Array}
+      * @default {Array}
       */
     var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.undefined
     
     /** Specifies the labels.
-      * @Default {Array}
+      * @default {Array}
       */
     var labels: js.UndefOr[js.Array[ScalesLabel]] = js.undefined
     
     /** Specifies the scaleBar Length.
-      * @Default {290}
+      * @default {290}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Specifies the majorIntervalValue of the Scale.
-      * @Default {10}
+      * @default {10}
       */
     var majorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the markerPointers
-      * @Default {Array}
+      * @default {Array}
       */
     var markerPointers: js.UndefOr[js.Array[ScalesMarkerPointer]] = js.undefined
     
     /** Specifies the maximum of the Scale.
-      * @Default {null}
+      * @default {null}
       */
     var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum of the Scale.
-      * @Default {null}
+      * @default {null}
       */
     var minimum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minorIntervalValue of the Scale.
-      * @Default {2}
+      * @default {2}
       */
     var minorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity of the Scale.
-      * @Default {NaN}
+      * @default {NaN}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position
-      * @Default {null}
+      * @default {null}
       */
     var position: js.UndefOr[ScalesPosition] = js.undefined
     
     /** Specifies the ranges in the tick.
-      * @Default {Array}
+      * @default {Array}
       */
     var ranges: js.UndefOr[js.Array[ScalesRange]] = js.undefined
     
     /** Specifies the shadowOffset.
-      * @Default {0}
+      * @default {0}
       */
     var shadowOffset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the showBarPointers state.
-      * @Default {true}
+      * @default {true}
       */
     var showBarPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showCustomLabels state.
-      * @Default {false}
+      * @default {false}
       */
     var showCustomLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showIndicators state.
-      * @Default {false}
+      * @default {false}
       */
     var showIndicators: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showLabels state.
-      * @Default {true}
+      * @default {true}
       */
     var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showMarkerPointers state.
-      * @Default {true}
+      * @default {true}
       */
     var showMarkerPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showRanges state.
-      * @Default {false}
+      * @default {false}
       */
     var showRanges: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showTicks state.
-      * @Default {true}
+      * @default {true}
       */
     var showTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the ticks in the scale.
-      * @Default {Array}
+      * @default {Array}
       */
     var ticks: js.UndefOr[js.Array[ScalesTick]] = js.undefined
     
     /** Specifies the scaleBar type .See
-      * @Default {Rectangle}
+      * @default {Rectangle}
       */
     var `type`: js.UndefOr[ScaleType | String] = js.undefined
     
     /** Specifies the scaleBar width.
-      * @Default {30}
+      * @default {30}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3061,37 +3061,37 @@ object LinearGauge {
   trait ScalesBarPointer extends StObject {
     
     /** Specifies the backgroundColor of bar pointer
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of bar pointer
-      * @Default {null}
+      * @default {null}
       */
     var border: js.UndefOr[ScalesBarPointersBorder] = js.undefined
     
     /** Specifies the distanceFromScale of bar pointer
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the scaleBar Gradient of bar pointer
-      * @Default {null}
+      * @default {null}
       */
     var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specifies the opacity of bar pointer
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the value of bar pointer
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Width of bar pointer
-      * @Default {width=30}
+      * @default {width=30}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3138,12 +3138,12 @@ object LinearGauge {
   trait ScalesBarPointersBorder extends StObject {
     
     /** Specifies the border Color of bar pointer
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border Width of bar pointer
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3170,12 +3170,12 @@ object LinearGauge {
   trait ScalesBorder extends StObject {
     
     /** Specifies the border color of the Scale.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of the Scale.
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3202,32 +3202,32 @@ object LinearGauge {
   trait ScalesCustomLabel extends StObject {
     
     /** Specifies the label Color in customLabels
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[Double] = js.undefined
     
     /** Specifies the font in customLabels
-      * @Default {null}
+      * @default {null}
       */
     var font: js.UndefOr[ScalesCustomLabelsFont] = js.undefined
     
     /** Specifies the opacity in customLabels
-      * @Default {0}
+      * @default {0}
       */
     var opacity: js.UndefOr[String] = js.undefined
     
     /** Specifies the position in customLabels
-      * @Default {null}
+      * @default {null}
       */
     var position: js.UndefOr[ScalesCustomLabelsPosition] = js.undefined
     
     /** Specifies the positionType in customLabels.See CustomLabelPositionType
-      * @Default {null}
+      * @default {null}
       */
     var positionType: js.UndefOr[Any] = js.undefined
     
     /** Specifies the textAngle in customLabels
-      * @Default {0}
+      * @default {0}
       */
     var textAngle: js.UndefOr[Double] = js.undefined
     
@@ -3278,17 +3278,17 @@ object LinearGauge {
   trait ScalesCustomLabelsFont extends StObject {
     
     /** Specifies the fontFamily in customLabels
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle in customLabels. See
-      * @Default {Bold}
+      * @default {Bold}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font size in customLabels
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3319,12 +3319,12 @@ object LinearGauge {
   trait ScalesCustomLabelsPosition extends StObject {
     
     /** Specifies the position x in customLabels
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the y in customLabels
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -3351,52 +3351,52 @@ object LinearGauge {
   trait ScalesIndicator extends StObject {
     
     /** Specifies the backgroundColor in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var border: js.UndefOr[ScalesIndicatorsBorder] = js.undefined
     
     /** Specifies the font of bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var font: js.UndefOr[ScalesIndicatorsFont] = js.undefined
     
     /** Specifies the indicator Height of bar indicators
-      * @Default {30}
+      * @default {30}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var position: js.UndefOr[ScalesIndicatorsPosition] = js.undefined
     
     /** Specifies the state ranges in bar indicators
-      * @Default {Array}
+      * @default {Array}
       */
     var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.undefined
     
     /** Specifies the textLocation in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var textLocation: js.UndefOr[ScalesIndicatorsTextLocation] = js.undefined
     
     /** Specifies the indicator Style of font in bar indicators
-      * @Default {ej.datavisualization.LinearGauge.IndicatorType.Rectangle}
+      * @default {ej.datavisualization.LinearGauge.IndicatorType.Rectangle}
       */
     var `type`: js.UndefOr[IndicatorTypes | String] = js.undefined
     
     /** Specifies the indicator Width in bar indicators
-      * @Default {30}
+      * @default {30}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3457,12 +3457,12 @@ object LinearGauge {
   trait ScalesIndicatorsBorder extends StObject {
     
     /** Specifies the border Color in bar indicators
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border Width in bar indicators
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3489,17 +3489,17 @@ object LinearGauge {
   trait ScalesIndicatorsFont extends StObject {
     
     /** Specifies the fontFamily of font in bar indicators
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of font in bar indicators. See FontStyle
-      * @Default {ej.datavisualization.LinearGauge.FontStyle.Bold}
+      * @default {ej.datavisualization.LinearGauge.FontStyle.Bold}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the size of font in bar indicators
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3530,12 +3530,12 @@ object LinearGauge {
   trait ScalesIndicatorsPosition extends StObject {
     
     /** Specifies the x position in bar indicators
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the y position in bar indicators
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -3562,22 +3562,22 @@ object LinearGauge {
   trait ScalesIndicatorsStateRange extends StObject {
     
     /** Specifies the backgroundColor in bar indicators state ranges
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor in bar indicators state ranges
-      * @Default {null}
+      * @default {null}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the endValue in bar indicators state ranges
-      * @Default {60}
+      * @default {60}
       */
     var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the startValue in bar indicators state ranges
-      * @Default {50}
+      * @default {50}
       */
     var startValue: js.UndefOr[Double] = js.undefined
     
@@ -3586,7 +3586,7 @@ object LinearGauge {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the textColor in bar indicators state ranges
-      * @Default {null}
+      * @default {null}
       */
     var textColor: js.UndefOr[String] = js.undefined
   }
@@ -3629,12 +3629,12 @@ object LinearGauge {
   trait ScalesIndicatorsTextLocation extends StObject {
     
     /** Specifies the textLocation position in bar indicators
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the Y position in bar indicators
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -3661,42 +3661,42 @@ object LinearGauge {
   trait ScalesLabel extends StObject {
     
     /** Specifies the angle of labels.
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the DistanceFromScale of labels.
-      * @Default {null}
+      * @default {null}
       */
     var distanceFromScale: js.UndefOr[ScalesLabelsDistanceFromScale] = js.undefined
     
     /** Specifies the font of labels.
-      * @Default {null}
+      * @default {null}
       */
     var font: js.UndefOr[ScalesLabelsFont] = js.undefined
     
     /** need to includeFirstValue.
-      * @Default {true}
+      * @default {true}
       */
     var includeFirstValue: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the opacity of label.
-      * @Default {0}
+      * @default {0}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label Placement of label. See
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the textColor of font.
-      * @Default {null}
+      * @default {null}
       */
     var textColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the label Style of label. See
-      * @Default {ej.datavisualization.LinearGauge.LabelType.Major}
+      * @default {ej.datavisualization.LinearGauge.LabelType.Major}
       */
     var `type`: js.UndefOr[ScaleType | String] = js.undefined
     
@@ -3705,7 +3705,7 @@ object LinearGauge {
     var unitText: js.UndefOr[String] = js.undefined
     
     /** Specifies the unitText Position of label.See
-      * @Default {Back}
+      * @default {Back}
       */
     var unitTextPlacement: js.UndefOr[UnitTextPlacement | String] = js.undefined
   }
@@ -3764,12 +3764,12 @@ object LinearGauge {
   trait ScalesLabelsDistanceFromScale extends StObject {
     
     /** Specifies the xDistanceFromScale of labels.
-      * @Default {-10}
+      * @default {-10}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the yDistanceFromScale of labels.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -3796,17 +3796,17 @@ object LinearGauge {
   trait ScalesLabelsFont extends StObject {
     
     /** Specifies the fontFamily of font.
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of font.See FontStyle
-      * @Default {ej.datavisualization.LinearGauge.FontStyle.Bold}
+      * @default {ej.datavisualization.LinearGauge.FontStyle.Bold}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the size of font.
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3837,52 +3837,52 @@ object LinearGauge {
   trait ScalesMarkerPointer extends StObject {
     
     /** Specifies the backgroundColor of marker pointer
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of marker pointer
-      * @Default {null}
+      * @default {null}
       */
     var border: js.UndefOr[ScalesMarkerPointersBorder] = js.undefined
     
     /** Specifies the distanceFromScale of marker pointer
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Gradient of marker pointer
-      * @Default {null}
+      * @default {null}
       */
     var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specifies the pointer Length of marker pointer
-      * @Default {30}
+      * @default {30}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity of marker pointer
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Placement of marker pointer See PointerPlacement
-      * @Default {Far}
+      * @default {Far}
       */
     var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the marker Style of marker pointerSee
-      * @Default {Triangle}
+      * @default {Triangle}
       */
     var `type`: js.UndefOr[MarkerType | String] = js.undefined
     
     /** Specifies the value of marker pointer
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Width of marker pointer
-      * @Default {30}
+      * @default {30}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3941,12 +3941,12 @@ object LinearGauge {
   trait ScalesMarkerPointersBorder extends StObject {
     
     /** Specifies the border color of marker pointer
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of marker pointer
-      * @Default {number}
+      * @default {number}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3973,12 +3973,12 @@ object LinearGauge {
   trait ScalesPosition extends StObject {
     
     /** Specifies the Horizontal position
-      * @Default {50}
+      * @default {50}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the vertical position
-      * @Default {50}
+      * @default {50}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -4005,52 +4005,52 @@ object LinearGauge {
   trait ScalesRange extends StObject {
     
     /** Specifies the backgroundColor in the ranges.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border in the ranges.
-      * @Default {null}
+      * @default {null}
       */
     var border: js.UndefOr[ScalesRangesBorder] = js.undefined
     
     /** Specifies the distanceFromScale in the ranges.
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the endValue in the ranges.
-      * @Default {60}
+      * @default {60}
       */
     var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the endWidth in the ranges.
-      * @Default {10}
+      * @default {10}
       */
     var endWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the range Gradient in the ranges.
-      * @Default {null}
+      * @default {null}
       */
     var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specifies the opacity in the ranges.
-      * @Default {null}
+      * @default {null}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the range Position in the ranges. See RangePlacement
-      * @Default {Center}
+      * @default {Center}
       */
     var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the startValue in the ranges.
-      * @Default {20}
+      * @default {20}
       */
     var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the startWidth in the ranges.
-      * @Default {10}
+      * @default {10}
       */
     var startWidth: js.UndefOr[Double] = js.undefined
   }
@@ -4109,12 +4109,12 @@ object LinearGauge {
   trait ScalesRangesBorder extends StObject {
     
     /** Specifies the border color in the ranges.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width in the ranges.
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4141,42 +4141,42 @@ object LinearGauge {
   trait ScalesTick extends StObject {
     
     /** Specifies the angle in the tick.
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the tick Color in the tick.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the DistanceFromScale in the tick.
-      * @Default {null}
+      * @default {null}
       */
     var distanceFromScale: js.UndefOr[ScalesTicksDistanceFromScale] = js.undefined
     
     /** Specifies the tick Height in the tick.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity in the tick.
-      * @Default {0}
+      * @default {0}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the tick Placement in the tick. See TickPlacement
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the tick Style in the tick. See
-      * @Default {MajorInterval}
+      * @default {MajorInterval}
       */
     var `type`: js.UndefOr[TicksType | String] = js.undefined
     
     /** Specifies the tick Width in the tick.
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4227,12 +4227,12 @@ object LinearGauge {
   trait ScalesTicksDistanceFromScale extends StObject {
     
     /** Specifies the xDistanceFromScale in the tick.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the yDistanceFromScale in the tick.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -4259,17 +4259,17 @@ object LinearGauge {
   trait Tooltip extends StObject {
     
     /** Specify showCustomLabelTooltip value of linear gauge
-      * @Default {false}
+      * @default {false}
       */
     var showCustomLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showLabelTooltip value of linear gauge
-      * @Default {false}
+      * @default {false}
       */
     var showLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify templateID value of linear gauge
-      * @Default {false}
+      * @default {false}
       */
     var templateID: js.UndefOr[String] = js.undefined
   }

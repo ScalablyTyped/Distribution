@@ -8,11 +8,11 @@ trait ParametersPathHookidOwner extends StObject {
   
   var parameters: PathHookidOwner
   
-  var responses: `200258`
+  var responses: `200305`
 }
 object ParametersPathHookidOwner {
   
-  inline def apply(parameters: PathHookidOwner, responses: `200258`): ParametersPathHookidOwner = {
+  inline def apply(parameters: PathHookidOwner, responses: `200305`): ParametersPathHookidOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathHookidOwner]
   }
@@ -22,6 +22,6 @@ object ParametersPathHookidOwner {
     
     inline def setParameters(value: PathHookidOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200258`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200305`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

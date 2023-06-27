@@ -16,16 +16,16 @@ trait MediaControllerDisplayRotation extends StObject {
     *
     * @returns The identifier used to remove the listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addChangeRequestListener(listener: MediaControllerDisplayRotationChangeRequestCallback): Double
   
   /**
     * State of display rotation on the server. Default value for a newly created server is "ROTATION\_NONE".
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var displayRotation: MediaControllerDisplayRotationType
   
@@ -36,7 +36,7 @@ trait MediaControllerDisplayRotation extends StObject {
     *
     * @param watchId Watcher identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeChangeRequestListener(watchId: Double): Unit
 }

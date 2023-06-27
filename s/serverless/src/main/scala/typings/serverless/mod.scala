@@ -28,6 +28,9 @@ object mod {
     var configSchemaHandler: DefineCustomProperties = js.native
     
     /* CompleteClass */
+    var configurationFilename: String = js.native
+    
+    /* CompleteClass */
     override def getProvider(name: String): typings.serverless.pluginsAwsProviderAwsProviderMod.^ = js.native
     
     /* CompleteClass */
@@ -52,6 +55,9 @@ object mod {
     var service: typings.serverless.classesServiceMod.^ = js.native
     
     /* CompleteClass */
+    var serviceDir: String = js.native
+    
+    /* CompleteClass */
     override def setProvider(name: String, provider: typings.serverless.pluginsAwsProviderAwsProviderMod.^): Null = js.native
     
     /* CompleteClass */
@@ -69,17 +75,21 @@ object mod {
   
   trait Config extends StObject {
     
+    var serviceDir: String
+    
     var servicePath: String
   }
   object Config {
     
-    inline def apply(servicePath: String): Config = {
-      val __obj = js.Dynamic.literal(servicePath = servicePath.asInstanceOf[js.Any])
+    inline def apply(serviceDir: String, servicePath: String): Config = {
+      val __obj = js.Dynamic.literal(serviceDir = serviceDir.asInstanceOf[js.Any], servicePath = servicePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      
+      inline def setServiceDir(value: String): Self = StObject.set(x, "serviceDir", value.asInstanceOf[js.Any])
       
       inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
     }
@@ -350,6 +360,8 @@ object mod {
     
     var configSchemaHandler: DefineCustomProperties
     
+    var configurationFilename: String
+    
     def getProvider(name: String): typings.serverless.pluginsAwsProviderAwsProviderMod.^
     
     def getVersion(): String
@@ -365,6 +377,8 @@ object mod {
     var serverlessDirPath: String
     
     var service: typings.serverless.classesServiceMod.^
+    
+    var serviceDir: String
     
     def setProvider(name: String, provider: typings.serverless.pluginsAwsProviderAwsProviderMod.^): Null
     
@@ -382,6 +396,7 @@ object mod {
       cli: Log,
       config: Config,
       configSchemaHandler: DefineCustomProperties,
+      configurationFilename: String,
       getProvider: String => typings.serverless.pluginsAwsProviderAwsProviderMod.^,
       getVersion: () => String,
       init: () => js.Promise[Any],
@@ -390,13 +405,14 @@ object mod {
       run: () => js.Promise[Any],
       serverlessDirPath: String,
       service: typings.serverless.classesServiceMod.^,
+      serviceDir: String,
       setProvider: (String, typings.serverless.pluginsAwsProviderAwsProviderMod.^) => Null,
       utils: typings.serverless.classesUtilsMod.^,
       variables: PopulateService,
       version: String,
       yamlParser: typings.serverless.classesYamlParserMod.^
     ): Serverless = {
-      val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configSchemaHandler = configSchemaHandler.asInstanceOf[js.Any], getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], setProvider = js.Any.fromFunction2(setProvider), utils = utils.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], yamlParser = yamlParser.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cli = cli.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configSchemaHandler = configSchemaHandler.asInstanceOf[js.Any], configurationFilename = configurationFilename.asInstanceOf[js.Any], getProvider = js.Any.fromFunction1(getProvider), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction0(init), pluginManager = pluginManager.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), serverlessDirPath = serverlessDirPath.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], serviceDir = serviceDir.asInstanceOf[js.Any], setProvider = js.Any.fromFunction2(setProvider), utils = utils.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], yamlParser = yamlParser.asInstanceOf[js.Any])
       __obj.asInstanceOf[Serverless]
     }
     
@@ -408,6 +424,8 @@ object mod {
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigSchemaHandler(value: DefineCustomProperties): Self = StObject.set(x, "configSchemaHandler", value.asInstanceOf[js.Any])
+      
+      inline def setConfigurationFilename(value: String): Self = StObject.set(x, "configurationFilename", value.asInstanceOf[js.Any])
       
       inline def setGetProvider(value: String => typings.serverless.pluginsAwsProviderAwsProviderMod.^): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
       
@@ -424,6 +442,8 @@ object mod {
       inline def setServerlessDirPath(value: String): Self = StObject.set(x, "serverlessDirPath", value.asInstanceOf[js.Any])
       
       inline def setService(value: typings.serverless.classesServiceMod.^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      
+      inline def setServiceDir(value: String): Self = StObject.set(x, "serviceDir", value.asInstanceOf[js.Any])
       
       inline def setSetProvider(value: (String, typings.serverless.pluginsAwsProviderAwsProviderMod.^) => Null): Self = StObject.set(x, "setProvider", js.Any.fromFunction2(value))
       

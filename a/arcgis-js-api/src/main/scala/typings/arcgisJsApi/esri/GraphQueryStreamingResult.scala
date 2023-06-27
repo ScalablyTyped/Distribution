@@ -10,9 +10,9 @@ trait GraphQueryStreamingResult
      with Accessor {
   
   /**
-    * Readable stream of objects matching [executeSearchStreaming()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeSearchStreaming) or [executeQueryStreaming()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeQueryStreaming) criteria.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQueryStreamingResult.html#resultRowsStream)
-    */
+  		 * Readable stream of objects matching [executeSearchStreaming()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeSearchStreaming) or [executeQueryStreaming()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeQueryStreaming) criteria.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQueryStreamingResult.html#resultRowsStream)
+  		 */
   var resultRowsStream: Any = js.native
 }

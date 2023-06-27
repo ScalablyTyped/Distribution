@@ -176,13 +176,13 @@ object sapUiCommonsRadioButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RadioButton` itself
       */
@@ -207,7 +207,7 @@ object sapUiCommonsRadioButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -218,7 +218,7 @@ object sapUiCommonsRadioButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RadioButton` itself
       */
@@ -236,13 +236,13 @@ object sapUiCommonsRadioButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -250,7 +250,7 @@ object sapUiCommonsRadioButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -263,14 +263,12 @@ object sapUiCommonsRadioButtonMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -589,6 +587,12 @@ object sapUiCommonsRadioButtonMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait RadioButton$SelectEventParameters extends StObject
+  
+  type RadioButtonSelectEvent = typings.openui5.sapUiBaseEventMod.default[RadioButton$SelectEventParameters]
+  
+  type RadioButtonSelectEventParameters = RadioButton$SelectEventParameters
+  
   trait RadioButtonSettings
     extends StObject
        with ControlSettings {
@@ -632,7 +636,9 @@ object sapUiCommonsRadioButtonMod {
     /**
       * Triggers when the user makes a change on the RadioButton.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Specifies the select state of the RadioButton.
@@ -707,7 +713,7 @@ object sapUiCommonsRadioButtonMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

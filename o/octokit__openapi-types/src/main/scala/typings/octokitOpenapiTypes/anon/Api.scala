@@ -27,6 +27,8 @@ trait Api extends StObject {
     */
   var dependabot: js.UndefOr[js.Array[String]] = js.undefined
   
+  var domains: js.UndefOr[Copilot] = js.undefined
+  
   /**
     * @example [
     *   "192.0.2.1"
@@ -108,6 +110,10 @@ object Api {
     inline def setDependabotUndefined: Self = StObject.set(x, "dependabot", js.undefined)
     
     inline def setDependabotVarargs(value: String*): Self = StObject.set(x, "dependabot", js.Array(value*))
+    
+    inline def setDomains(value: Copilot): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
     inline def setGit(value: js.Array[String]): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     

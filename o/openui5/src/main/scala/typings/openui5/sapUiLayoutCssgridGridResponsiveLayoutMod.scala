@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Layout
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -136,13 +135,13 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.cssgrid.GridResponsiveLayout`
       * itself
@@ -168,7 +167,7 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
@@ -179,7 +178,7 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.cssgrid.GridResponsiveLayout`
       * itself
@@ -233,13 +232,13 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def detachLayoutChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridResponsiveLayoutLayoutChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -247,17 +246,19 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLayoutChange(): this.type = js.native
-    def fireLayoutChange(/**
+    def fireLayoutChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Layout): this.type = js.native
+    mParameters: GridResponsiveLayout$LayoutChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getContainerQuery containerQuery}.
@@ -383,6 +384,33 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
     ): this.type = js.native
   }
   
+  trait GridResponsiveLayout$LayoutChangeEventParameters extends StObject {
+    
+    /**
+      * The name of the newly active layout aggregation
+      */
+    var layout: js.UndefOr[String] = js.undefined
+  }
+  object GridResponsiveLayout$LayoutChangeEventParameters {
+    
+    inline def apply(): GridResponsiveLayout$LayoutChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridResponsiveLayout$LayoutChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridResponsiveLayout$LayoutChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    }
+  }
+  
+  type GridResponsiveLayoutLayoutChangeEvent = typings.openui5.sapUiBaseEventMod.default[GridResponsiveLayout$LayoutChangeEventParameters]
+  
+  type GridResponsiveLayoutLayoutChangeEventParameters = GridResponsiveLayout$LayoutChangeEventParameters
+  
   trait GridResponsiveLayoutSettings
     extends StObject
        with ManagedObjectSettings {
@@ -403,7 +431,12 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
     /**
       * Fired when the currently active GridSettings changes
       */
-    var layoutChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var layoutChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridResponsiveLayout$LayoutChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The sap.ui.layout.cssgrid.GridSettings applied for size "L"
@@ -441,7 +474,9 @@ object sapUiLayoutCssgridGridResponsiveLayoutMod {
       
       inline def setLayout(value: typings.openui5.sapUiLayoutCssgridGridSettingsMod.default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
+      inline def setLayoutChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridResponsiveLayout$LayoutChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       
       inline def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
       

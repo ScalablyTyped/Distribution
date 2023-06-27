@@ -186,12 +186,12 @@ object Slider_ {
   trait Model extends StObject {
     
     /** Specifies the allowMouseWheel of the slider.
-      * @Default {false}
+      * @default {false}
       */
     var allowMouseWheel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the animationSpeed of the slider.
-      * @Default {500}
+      * @default {500}
       */
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
@@ -212,62 +212,62 @@ object Slider_ {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the animation behavior of the slider.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the enablePersistence to slider to save current model value to browser cookies for state maintains
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the Right to Left Direction of the slider.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the state of the slider.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the slider.
-      * @Default {14}
+      * @default {14}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML Attributes of the ejSlider.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the incremental step value of the slider.
-      * @Default {1}
+      * @default {1}
       */
     var incrementStep: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance between two major (large) ticks from the scale of the slider.
-      * @Default {10}
+      * @default {10}
       */
     var largeStep: js.UndefOr[Double] = js.undefined
     
     /** Specifies the ending value of the slider.
-      * @Default {100}
+      * @default {100}
       */
     var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the starting value of the slider.
-      * @Default {0}
+      * @default {0}
       */
     var minValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the orientation of the slider.
-      * @Default {ej.orientation.Horizontal}
+      * @default {ej.orientation.Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Specifies the readOnly of the slider.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -276,27 +276,27 @@ object Slider_ {
     var renderingTicks: js.UndefOr[js.Function1[/* e */ RenderingTicksEventArgs, Unit]] = js.undefined
     
     /** Shows/Hides the increment and decrement buttons of the slider.
-      * @Default {false}
+      * @default {false}
       */
     var showButtons: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the rounded corner behavior for slider.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/Hide the major (large) and minor (small) ticks in the scale of the slider.
-      * @Default {false}
+      * @default {false}
       */
     var showScale: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the small ticks from the scale of the slider.
-      * @Default {true}
+      * @default {true}
       */
     var showSmallTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showTooltip to shows the current Slider value, while moving the Slider handle or clicking on the slider handle of the slider.
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
@@ -305,12 +305,12 @@ object Slider_ {
     var slide: js.UndefOr[js.Function1[/* e */ SlideEventArgs, Unit]] = js.undefined
     
     /** Specifies the sliderType of the slider.
-      * @Default {ej.SliderType.Default}
+      * @default {ej.SliderType.Default}
       */
     var sliderType: js.UndefOr[typings.ejWebAll.ej.slider.sliderType | String] = js.undefined
     
     /** Specifies the distance between two minor (small) ticks from the scale of the slider.
-      * @Default {1}
+      * @default {1}
       */
     var smallStep: js.UndefOr[Double] = js.undefined
     
@@ -327,17 +327,17 @@ object Slider_ {
     var tooltipChange: js.UndefOr[js.Function1[/* e */ TooltipChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the value of the slider. But it's not applicable for range slider. To range slider we can use values property.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the values of the range slider. But it's not applicable for default and minRange sliders. we can use value property for default and minRange sliders.
-      * @Default {[minValue,maxValue]}
+      * @default {[minValue,maxValue]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the width of the slider.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[String] = js.undefined
   }

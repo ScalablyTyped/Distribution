@@ -7,30 +7,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureFenceParametersProperties extends StObject {
   
   /**
-    * An optional buffer distance to apply to fence features in meters.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#bufferDistance)
-    */
+  		 * An optional buffer distance to apply to fence features in meters.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#bufferDistance)
+  		 */
   var bufferDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * An object defining the source for a feature layer to be used as fences.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#fenceSource)
-    */
+  		 * An object defining the source for a feature layer to be used as fences.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#fenceSource)
+  		 */
   var fenceSource: js.UndefOr[FeatureLayerSourceProperties] = js.undefined
   
   /**
-    * An optional filter to reduce the features used for the parameters.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#filter)
-    */
+  		 * An optional filter to reduce the features used for the parameters.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFenceParameters.html#filter)
+  		 */
   var filter: js.UndefOr[geotriggersInfoFeatureFilterProperties] = js.undefined
 }
 object FeatureFenceParametersProperties {

@@ -11,32 +11,32 @@ sealed trait GeometricEffectWaveform extends StObject
 object GeometricEffectWaveform extends StObject {
   
   /**
-    * Random - displays a sine curve with random variations in the period and amplitude
-    */
+  			 * Random - displays a sine curve with random variations in the period and amplitude
+  			 */
   @js.native
   sealed trait Random
     extends StObject
        with GeometricEffectWaveform
   
   /**
-    * Sinus - displays a sinusoidal curve.
-    */
+  			 * Sinus - displays a sinusoidal curve.
+  			 */
   @js.native
   sealed trait Sinus
     extends StObject
        with GeometricEffectWaveform
   
   /**
-    * Square - displays a three-sided rectangular shape.
-    */
+  			 * Square - displays a three-sided rectangular shape.
+  			 */
   @js.native
   sealed trait Square
     extends StObject
        with GeometricEffectWaveform
   
   /**
-    * Triangle - displays a two-sided triangular shape.
-    */
+  			 * Triangle - displays a two-sided triangular shape.
+  			 */
   @js.native
   sealed trait Triangle
     extends StObject

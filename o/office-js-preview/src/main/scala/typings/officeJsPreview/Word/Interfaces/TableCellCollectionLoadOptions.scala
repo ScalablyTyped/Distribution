@@ -35,7 +35,7 @@ trait TableCellCollectionLoadOptions extends StObject {
   var cellIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+    * For EACH ITEM in the collection: Specifies the width of the cell's column in points. This is applicable to uniform tables.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait TableCellCollectionLoadOptions extends StObject {
   var columnWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * For EACH ITEM in the collection: Specifies the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -75,7 +75,7 @@ trait TableCellCollectionLoadOptions extends StObject {
   var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+    * For EACH ITEM in the collection: Specifies the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait TableCellCollectionLoadOptions extends StObject {
   var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the text of the cell.
+    * For EACH ITEM in the collection: Specifies the text of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait TableCellCollectionLoadOptions extends StObject {
   var value: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+    * For EACH ITEM in the collection: Specifies the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

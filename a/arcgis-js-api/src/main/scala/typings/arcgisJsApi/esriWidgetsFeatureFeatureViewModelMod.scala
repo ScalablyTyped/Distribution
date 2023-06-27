@@ -11,10 +11,10 @@ object esriWidgetsFeatureFeatureViewModelMod {
   @JSImport("esri/widgets/Feature/FeatureViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html)
-    */
+  		 * Provides the logic for the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureViewModel {

@@ -10,11 +10,11 @@ trait backgroundColorBackground
      with Background {
   
   /**
-    * The color of the background.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
-    */
+  		 * The color of the background.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
+  		 */
   var color: Color_ = js.native
 }

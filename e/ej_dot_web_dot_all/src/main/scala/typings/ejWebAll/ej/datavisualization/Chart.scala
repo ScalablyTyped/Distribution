@@ -1782,7 +1782,7 @@ object Chart {
   trait Annotation extends StObject {
     
     /** Angle to rotate the annotation in degrees.
-      * @Default {'0'}
+      * @default {'0'}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
@@ -1791,12 +1791,12 @@ object Chart {
     var content: js.UndefOr[String] = js.undefined
     
     /** Specifies how annotations have to be placed in Chart.
-      * @Default {none. See CoordinateUnit}
+      * @default {none. See CoordinateUnit}
       */
     var coordinateUnit: js.UndefOr[CoordinateUnit | String] = js.undefined
     
     /** Specifies the horizontal alignment of the annotation.
-      * @Default {middle. See HorizontalAlignment}
+      * @default {middle. See HorizontalAlignment}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
@@ -1805,28 +1805,28 @@ object Chart {
     var margin: js.UndefOr[AnnotationsMargin] = js.undefined
     
     /** Controls the opacity of the annotation.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether annotation has to be placed with respect to chart or series.
-      * @Default {chart. See Region}
+      * @default {chart. See Region}
       */
     var region: js.UndefOr[Region | String] = js.undefined
     
     /** Specifies the vertical alignment of the annotation.
-      * @Default {middle. See VerticalAlignment}
+      * @default {middle. See VerticalAlignment}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Controls the visibility of the annotation.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Represents the horizontal offset when coordinateUnit is pixels.when coordinateUnit is points, it represents the x-coordinate of axis bounded with xAxisName property or primary X
       * axis when xAxisName is not provided.This property is not applicable when coordinateUnit is none.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
@@ -1836,7 +1836,7 @@ object Chart {
     
     /** Represents the vertical offset when coordinateUnit is pixels.When coordinateUnit is points, it represents the y-coordinate of axis bounded with yAxisName property or primary Y
       * axis when yAxisName is not provided.This property is not applicable when coordinateUnit is none.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
     
@@ -1958,22 +1958,22 @@ object Chart {
   trait AnnotationsMargin extends StObject {
     
     /** Annotation is placed at the specified value above its original position.
-      * @Default {0}
+      * @default {0}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value from left side of its original position.
-      * @Default {0}
+      * @default {0}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value from the right side of its original position.
-      * @Default {0}
+      * @default {0}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Annotation is placed at the specified value under its original position.
-      * @Default {0}
+      * @default {0}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -2038,12 +2038,12 @@ object Chart {
   trait AxesAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -2070,12 +2070,12 @@ object Chart {
   trait AxesAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -2106,22 +2106,22 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
-      * @Default {null}
+      * @default {null}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2160,7 +2160,7 @@ object Chart {
   trait AxesCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -2183,27 +2183,27 @@ object Chart {
   trait AxesFont extends StObject {
     
     /** Font family of labels.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
-      * @Default {13px}
+      * @default {13px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2242,12 +2242,12 @@ object Chart {
   trait AxesLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2366,27 +2366,27 @@ object Chart {
   trait AxesMajorGridLines extends StObject {
     
     /** Color of the major grid line.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2425,17 +2425,17 @@ object Chart {
   trait AxesMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2466,17 +2466,17 @@ object Chart {
   trait AxesMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2507,17 +2507,17 @@ object Chart {
   trait AxesMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2552,7 +2552,7 @@ object Chart {
     var border: js.UndefOr[AxesMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Any] = js.undefined
     
@@ -2561,17 +2561,17 @@ object Chart {
     var font: js.UndefOr[AxesMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
-      * @Default {0}
+      * @default {0}
       */
     var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Any] = js.undefined
     
@@ -2580,17 +2580,17 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
-      * @Default {center. See TextAlignment}
+      * @default {center. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
-      * @Default {center. See TextOverflow}
+      * @default {center. See TextOverflow}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -2649,17 +2649,17 @@ object Chart {
   trait AxesMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
-      * @Default {rectangle. See Type}
+      * @default {rectangle. See Type}
       */
     var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2690,32 +2690,32 @@ object Chart {
   trait AxesMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2758,17 +2758,17 @@ object Chart {
   trait AxesRange extends StObject {
     
     /** Interval of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -2846,12 +2846,12 @@ object Chart {
   trait AxesScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
-      * @Default {false}
+      * @default {false}
       */
     var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
-      * @Default {null}
+      * @default {null}
       */
     var pointsLength: js.UndefOr[Double] = js.undefined
     
@@ -2860,7 +2860,7 @@ object Chart {
     var range: js.UndefOr[AxesScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enable or disable the scrollbar.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -2895,12 +2895,12 @@ object Chart {
   trait AxesScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -2927,17 +2927,17 @@ object Chart {
   trait AxesStripLine extends StObject {
     
     /** Border color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Double] = js.undefined
     
@@ -2946,38 +2946,38 @@ object Chart {
     var font: js.UndefOr[AxesStripLineFont] = js.undefined
     
     /** Start value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
-      * @Default {false}
+      * @default {false}
       */
     var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
-      * @Default {stripLine}
+      * @default {stripLine}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
-      * @Default {middlecenter. See TextAlignment}
+      * @default {middlecenter. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order where the strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered under the series and when it is â€œoverâ€, it is
       * rendered above the series.
-      * @Default {over. See ZIndex}
+      * @default {over. See ZIndex}
       */
     var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
@@ -3040,32 +3040,32 @@ object Chart {
   trait AxesStripLineFont extends StObject {
     
     /** Font color of the strip line text.
-      * @Default {black}
+      * @default {black}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3108,12 +3108,12 @@ object Chart {
   trait AxesTitle extends StObject {
     
     /** Specifies the position of the axis title.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -3122,17 +3122,17 @@ object Chart {
     var font: js.UndefOr[AxesTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
-      * @Default {34}
+      * @default {34}
       */
     var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
-      * @Default {0}
+      * @default {0}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
-      * @Default {outside. See Position}
+      * @default {outside. See Position}
       */
     var position: js.UndefOr[LabelPosition | String] = js.undefined
     
@@ -3141,7 +3141,7 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -3192,27 +3192,27 @@ object Chart {
   trait AxesTitleFont extends StObject {
     
     /** Font family of the title text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
-      * @Default {16px}
+      * @default {16px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3298,7 +3298,7 @@ object Chart {
   trait Axis extends StObject {
     
     /** Specifies the position of the axis labels.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
@@ -3311,18 +3311,18 @@ object Chart {
     var axisLine: js.UndefOr[AxesAxisLine] = js.undefined
     
     /** Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
-      * @Default {null}
+      * @default {null}
       */
     var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of columns or plot areas an axis has to span horizontally.
-      * @Default {null}
+      * @default {null}
       */
     var columnSpan: js.UndefOr[Double] = js.undefined
     
     /** Specifies where axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of
       * crossing axis, then axis will be placed at the opposite side.
-      * @Default {null}
+      * @default {null}
       */
     var crossesAt: js.UndefOr[Double] = js.undefined
     
@@ -3331,22 +3331,22 @@ object Chart {
     var crosshairLabel: js.UndefOr[AxesCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
-      * @Default {null}
+      * @default {null}
       */
     var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
-      * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
+      * @default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
     var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
-      * @Default {true}
+      * @default {true}
       */
     var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -3355,17 +3355,17 @@ object Chart {
     var font: js.UndefOr[AxesFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
-      * @Default {null. See IntervalType}
+      * @default {null. See IntervalType}
       */
     var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting â€˜isIndexedâ€™ property to true.
-      * @Default {false}
+      * @default {false}
       */
     var isIndexed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to inverse the axis.
-      * @Default {false}
+      * @default {false}
       */
     var isInversed: js.UndefOr[Boolean] = js.undefined
     
@@ -3374,32 +3374,32 @@ object Chart {
     var labelBorder: js.UndefOr[AxesLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
-      * @Default {null}
+      * @default {null}
       */
     var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
-      * @Default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
+      * @default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
       */
     var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
-      * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
+      * @default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
     var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
-      * @Default {outside. See LabelPosition}
+      * @default {outside. See LabelPosition}
       */
     var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Angle in degrees to rotate the axis labels.
-      * @Default {null}
+      * @default {null}
       */
     var labelRotation: js.UndefOr[Double] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
-      * @Default {10}
+      * @default {10}
       */
     var logBase: js.UndefOr[Double] = js.undefined
     
@@ -3412,12 +3412,12 @@ object Chart {
     var majorTickLines: js.UndefOr[AxesMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
-      * @Default {34}
+      * @default {34}
       */
     var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
-      * @Default {3}
+      * @default {3}
       */
     var maximumLabels: js.UndefOr[Double] = js.undefined
     
@@ -3430,32 +3430,32 @@ object Chart {
     var minorTickLines: js.UndefOr[AxesMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
-      * @Default {null}
+      * @default {null}
       */
     var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var multiLevelLabels: js.UndefOr[js.Array[AxesMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
-      * @Default {false}
+      * @default {false}
       */
     var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line in the chart.
-      * @Default {'horizontal'}
+      * @default {'horizontal'}
       */
     var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
-      * @Default {10}
+      * @default {10}
       */
     var plotOffset: js.UndefOr[Double] = js.undefined
     
@@ -3464,12 +3464,12 @@ object Chart {
     var range: js.UndefOr[AxesRange] = js.undefined
     
     /** Specifies the padding for the axis range.
-      * @Default {None. See RangePadding}
+      * @default {None. See RangePadding}
       */
     var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
-      * @Default {null}
+      * @default {null}
       */
     var roundingPlaces: js.UndefOr[Double] = js.undefined
     
@@ -3478,17 +3478,17 @@ object Chart {
     var scrollbarSettings: js.UndefOr[AxesScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
-      * @Default {true}
+      * @default {true}
       */
     var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var stripLine: js.UndefOr[js.Array[AxesStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
-      * @Default {outside. See TickLinesPosition}
+      * @default {outside. See TickLinesPosition}
       */
     var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
@@ -3497,22 +3497,22 @@ object Chart {
     var title: js.UndefOr[AxesTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
-      * @Default {null. See ValueType}
+      * @default {null. See ValueType}
       */
     var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
-      * @Default {1}
+      * @default {1}
       */
     var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1.
-      * @Default {0}
+      * @default {0}
       */
     var zoomPosition: js.UndefOr[Double] = js.undefined
   }
@@ -3859,17 +3859,17 @@ object Chart {
   trait Border extends StObject {
     
     /** Border color of the chart.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Opacity of the chart border.
-      * @Default {0.3}
+      * @default {0.3}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the Chart border.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3900,7 +3900,7 @@ object Chart {
   trait ChartArea extends StObject {
     
     /** Background color of the plot area.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -3931,17 +3931,17 @@ object Chart {
   trait ChartAreaBorder extends StObject {
     
     /** Border color of the plot area.
-      * @Default {Gray}
+      * @default {Gray}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Opacity of the plot area border.
-      * @Default {0.3}
+      * @default {0.3}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Border width of the plot area.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4207,22 +4207,22 @@ object Chart {
   trait ColumnDefinition extends StObject {
     
     /** Width of the column in plotting area. Width is measured in either pixel or percentage based on the value of unit property.
-      * @Default {50}
+      * @default {50}
       */
     var columnWidth: js.UndefOr[Double] = js.undefined
     
     /** Color of the line that indicates the starting point of the column in plotting area.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
     /** Width of the line that indicates the starting point of the column in plot area.
-      * @Default {1}
+      * @default {1}
       */
     var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the unit to measure the width of the column in plotting area.
-      * @Default {'pixel'. See Unit}
+      * @default {'pixel'. See Unit}
       */
     var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.undefined
   }
@@ -4257,7 +4257,7 @@ object Chart {
   trait CommonSeriesOptions extends StObject {
     
     /** Specifies animation duration for series rendering
-      * @Default {null}
+      * @default {null}
       */
     var animationDuration: js.UndefOr[String] = js.undefined
     
@@ -4266,7 +4266,7 @@ object Chart {
     var border: js.UndefOr[CommonSeriesOptionsBorder] = js.undefined
     
     /** Quartile calculation has been performed in three different formulas to render the box and whisker series.
-      * @Default {exclusive}
+      * @default {exclusive}
       */
     var boxPlotMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.boxPlotMode | String] = js.undefined
     
@@ -4275,27 +4275,27 @@ object Chart {
     var bubbleOptions: js.UndefOr[CommonSeriesOptionsBubbleOptions] = js.undefined
     
     /** Specifies spline tension value for cardinal spline type. Value ranges from 0 to 1.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var cardinalSplineTension: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains close value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var close: js.UndefOr[String] = js.undefined
     
     /** To render the column and bar type series in rectangle/cylinder shape. See
-      * @Default {rectangle}
+      * @default {rectangle}
       */
     var columnFacet: js.UndefOr[ColumnFacet | String] = js.undefined
     
     /** Spacing between columns of different series. Value ranges from 0 to 1
-      * @Default {0}
+      * @default {0}
       */
     var columnSpacing: js.UndefOr[Double] = js.undefined
     
     /** Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon columnSpacing property.
-      * @Default {0.7}
+      * @default {0.7}
       */
     var columnWidth: js.UndefOr[Double] = js.undefined
     
@@ -4312,17 +4312,17 @@ object Chart {
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Set the dataSource for all series. It can be an array of JSON objects or an instance of ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Controls the size of the hole in doughnut series. Value ranges from 0 to 1
-      * @Default {0.4}
+      * @default {0.4}
       */
     var doughnutCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the doughnut series. Value ranges from 0 to 1.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var doughnutSize: js.UndefOr[Double] = js.undefined
     
@@ -4331,7 +4331,7 @@ object Chart {
     var dragSettings: js.UndefOr[CommonSeriesOptionsDragSettings] = js.undefined
     
     /** Specifies the type of series to be drawn in radar or polar series.
-      * @Default {line. See DrawType}
+      * @default {line. See DrawType}
       */
     var drawType: js.UndefOr[DrawType | String] = js.undefined
     
@@ -4340,17 +4340,17 @@ object Chart {
     var emptyPointSettings: js.UndefOr[CommonSeriesOptionsEmptyPointSettings] = js.undefined
     
     /** Enable/disable the animation for all the series.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** To avoid overlapping of data labels smartly.
-      * @Default {true}
+      * @default {true}
       */
     var enableSmartLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Start angle of pie/doughnut series.
-      * @Default {null}
+      * @default {null}
       */
     var endAngle: js.UndefOr[Double] = js.undefined
     
@@ -4359,27 +4359,27 @@ object Chart {
     var errorBar: js.UndefOr[CommonSeriesOptionsErrorBar] = js.undefined
     
     /** Explodes the pie/doughnut slices on mouse move.
-      * @Default {false}
+      * @default {false}
       */
     var explode: js.UndefOr[Boolean] = js.undefined
     
     /** Explodes all the slice of pie/doughnut on render.
-      * @Default {false}
+      * @default {false}
       */
     var explodeAll: js.UndefOr[Boolean] = js.undefined
     
     /** Index of the point to be exploded from pie/doughnut/pyramid/funnel.
-      * @Default {null}
+      * @default {null}
       */
     var explodeIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance of the slice from the center, when it is exploded.
-      * @Default {0.4}
+      * @default {0.4}
       */
     var explodeOffset: js.UndefOr[Double] = js.undefined
     
     /** Fill color for all the series.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -4388,27 +4388,27 @@ object Chart {
     var font: js.UndefOr[CommonSeriesOptionsFont] = js.undefined
     
     /** Sets the height of the funnel in funnel series. Values can be either pixel or percentage.
-      * @Default {32.7%}
+      * @default {32.7%}
       */
     var funnelHeight: js.UndefOr[String] = js.undefined
     
     /** Sets the width of the funnel in funnel series. Values can be either pixel or percentage.
-      * @Default {11.6%}
+      * @default {11.6%}
       */
     var funnelWidth: js.UndefOr[String] = js.undefined
     
     /** Gap between the slices in pyramid and funnel series.
-      * @Default {0}
+      * @default {0}
       */
     var gapRatio: js.UndefOr[Double] = js.undefined
     
     /** Distance between the two pie's in pieOfPie series.
-      * @Default {50}
+      * @default {50}
       */
     var gapWidth: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains high value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var high: js.UndefOr[String] = js.undefined
     
@@ -4417,37 +4417,37 @@ object Chart {
     var highlightSettings: js.UndefOr[CommonSeriesOptionsHighlightSettings] = js.undefined
     
     /** Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
-      * @Default {true}
+      * @default {true}
       */
     var isClosed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to stack the column series in polar/radar charts.
-      * @Default {false}
+      * @default {false}
       */
     var isStacking: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the chart vertically. This is applicable only for Cartesian type series.
-      * @Default {false}
+      * @default {false}
       */
     var isTransposed: js.UndefOr[Boolean] = js.undefined
     
     /** Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
-      * @Default {inside. See LabelPosition}
+      * @default {inside. See LabelPosition}
       */
     var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Specifies the line cap of the series.
-      * @Default {butt. See LineCap}
+      * @default {butt. See LineCap}
       */
     var lineCap: js.UndefOr[LineCap | String] = js.undefined
     
     /** Specifies the type of shape to be used where two lines meet.
-      * @Default {round. See LineJoin}
+      * @default {round. See LineJoin}
       */
     var lineJoin: js.UndefOr[LineJoin | String] = js.undefined
     
     /** Name of the property in the datasource that contains low value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var low: js.UndefOr[String] = js.undefined
     
@@ -4456,12 +4456,12 @@ object Chart {
     var marker: js.UndefOr[CommonSeriesOptionsMarker] = js.undefined
     
     /** Opacity of the series.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains open value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var open: js.UndefOr[String] = js.undefined
     
@@ -4474,27 +4474,27 @@ object Chart {
     var palette: js.UndefOr[String] = js.undefined
     
     /** Controls the size of pie series. Value ranges from 0 to 1.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var pieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var pieOfPieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains fill color for the series.
-      * @Default {null}
+      * @default {null}
       */
     var pointColorMappingName: js.UndefOr[String] = js.undefined
     
     /** Fill color for the positive column of the waterfall.
-      * @Default {null}
+      * @default {null}
       */
     var positiveFill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the pyramid series.
-      * @Default {linear. See PyramidMode}
+      * @default {linear. See PyramidMode}
       */
     var pyramidMode: js.UndefOr[PyramidMode | String] = js.undefined
     
@@ -4503,27 +4503,27 @@ object Chart {
     var selectionSettings: js.UndefOr[CommonSeriesOptionsSelectionSettings] = js.undefined
     
     /** Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
-      * @Default {true}
+      * @default {true}
       */
     var showMedian: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains the size value for the bubble series.
-      * @Default {null}
+      * @default {null}
       */
     var size: js.UndefOr[String] = js.undefined
     
     /** To render the spline series curve in different forms.
-      * @Default {natural. See SplineType}
+      * @default {natural. See SplineType}
       */
     var splineType: js.UndefOr[SplineType | String] = js.undefined
     
     /** Specifies the mode for splitting the data points in pieOfPie series.
-      * @Default {value. See SplitMode}
+      * @default {value. See SplitMode}
       */
     var splitMode: js.UndefOr[SplitMode | String] = js.undefined
     
     /** Split Value of pieOfPie series.
-      * @Default {null}
+      * @default {null}
       */
     var splitValue: js.UndefOr[String] = js.undefined
     
@@ -4532,7 +4532,7 @@ object Chart {
     var stackingGroup: js.UndefOr[String] = js.undefined
     
     /** Start angle from where the pie/doughnut series renders. By default it starts from 0.
-      * @Default {null}
+      * @default {null}
       */
     var startAngle: js.UndefOr[Double] = js.undefined
     
@@ -4545,37 +4545,37 @@ object Chart {
     var trendlines: js.UndefOr[js.Array[CommonSeriesOptionsTrendline]] = js.undefined
     
     /** Specifies the type of the series to render in chart.
-      * @Default {column. See Type}
+      * @default {column. See Type}
       */
     var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
-      * @Default {null}
+      * @default {null}
       */
     var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var xName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
-      * @Default {null}
+      * @default {null}
       */
     var yAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var yName: js.UndefOr[String] = js.undefined
     
     /** Z-order of the series.
-      * @Default {0}
+      * @default {0}
       */
     var zOrder: js.UndefOr[Double] = js.undefined
   }
@@ -4868,17 +4868,17 @@ object Chart {
   trait CommonSeriesOptionsBorder extends StObject {
     
     /** Border color of all series.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** DashArray for border of the series.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Border width of all series.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4909,17 +4909,17 @@ object Chart {
   trait CommonSeriesOptionsBubbleOptions extends StObject {
     
     /** Used for setting the maximum radius of the bubble
-      * @Default {3}
+      * @default {3}
       */
     var maxRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the setting the minimum radius of the bubble
-      * @Default {1}
+      * @default {1}
       */
     var minRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the calculation of the bubble radius based on the mode selected
-      * @Default {minMax}
+      * @default {minMax}
       */
     var radiusMode: js.UndefOr[RadiusMode | String] = js.undefined
   }
@@ -4950,22 +4950,22 @@ object Chart {
   trait CommonSeriesOptionsConnectorLine extends StObject {
     
     /** Color of the connector line.
-      * @Default {#565656}
+      * @default {#565656}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the connector line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5000,22 +5000,22 @@ object Chart {
   trait CommonSeriesOptionsCornerRadius extends StObject {
     
     /** Specifies the radius for the bottom left corner.
-      * @Default {0}
+      * @default {0}
       */
     var bottomLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the bottom right corner.
-      * @Default {0}
+      * @default {0}
       */
     var bottomRight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top left corner.
-      * @Default {0}
+      * @default {0}
       */
     var topLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top right corner.
-      * @Default {0}
+      * @default {0}
       */
     var topRight: js.UndefOr[Double] = js.undefined
   }
@@ -5050,12 +5050,12 @@ object Chart {
   trait CommonSeriesOptionsDragSettings extends StObject {
     
     /** drag/drop the series
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of drag settings.
-      * @Default {xy}
+      * @default {xy}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -5082,7 +5082,7 @@ object Chart {
   trait CommonSeriesOptionsEmptyPointSettings extends StObject {
     
     /** Specifies the mode of empty point.
-      * @Default {gap}
+      * @default {gap}
       */
     var displayMode: js.UndefOr[EmptyPointMode | String] = js.undefined
     
@@ -5091,7 +5091,7 @@ object Chart {
     var style: js.UndefOr[CommonSeriesOptionsEmptyPointSettingsStyle] = js.undefined
     
     /** Controls the visibility of the empty point.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -5156,7 +5156,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the empty point.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5187,62 +5187,62 @@ object Chart {
     var cap: js.UndefOr[CommonSeriesOptionsErrorBarCap] = js.undefined
     
     /** Specifies the direction of error bar.
-      * @Default {both}
+      * @default {both}
       */
     var direction: js.UndefOr[ErrorBarDirection | String] = js.undefined
     
     /** Fill color of the error bar.
-      * @Default {#000000}
+      * @default {#000000}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Value of horizontal  error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative horizontal error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive horizontal error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of error bar.
-      * @Default {vertical}
+      * @default {vertical}
       */
     var mode: js.UndefOr[ErrorBarMode | String] = js.undefined
     
     /** Specifies the type of error bar.
-      * @Default {FixedValue}
+      * @default {FixedValue}
       */
     var `type`: js.UndefOr[ErrorBarType | String] = js.undefined
     
     /** Value of vertical error bar.
-      * @Default {3}
+      * @default {3}
       */
     var verticalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative vertical error bar.
-      * @Default {5}
+      * @default {5}
       */
     var verticalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive vertical error bar.
-      * @Default {5}
+      * @default {5}
       */
     var verticalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the error bar
-      * @Default {visible}
+      * @default {visible}
       */
     var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5313,22 +5313,22 @@ object Chart {
   trait CommonSeriesOptionsErrorBarCap extends StObject {
     
     /** Color of the error bar cap.
-      * @Default {â€œ#000000â€}
+      * @default {â€œ#000000â€}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Length of the error bar cap.
-      * @Default {1}
+      * @default {1}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Show/Hides the error bar cap.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar cap.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5363,32 +5363,32 @@ object Chart {
   trait CommonSeriesOptionsFont extends StObject {
     
     /** Font color of the text in all series.
-      * @Default {#707070}
+      * @default {#707070}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for all the series.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for all the series.
-      * @Default {normal}
+      * @default {normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font weight for all the series.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity for text in all the series.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in all the series.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -5443,22 +5443,22 @@ object Chart {
     var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight the series or data point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the series or data point has to be highlighted.
-      * @Default {series. See Mode}
+      * @default {series. See Mode}
       */
     var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on highlight.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on highlight.
-      * @Default {none. See Pattern}
+      * @default {none. See Pattern}
       */
     var pattern: js.UndefOr[String] = js.undefined
   }
@@ -5509,7 +5509,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on highlight.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -5544,7 +5544,7 @@ object Chart {
     var dataLabel: js.UndefOr[CommonSeriesOptionsMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -5553,12 +5553,12 @@ object Chart {
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
-      * @Default {circle. See Shape}
+      * @default {circle. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -5567,7 +5567,7 @@ object Chart {
     var size: js.UndefOr[CommonSeriesOptionsMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -5618,12 +5618,12 @@ object Chart {
   trait CommonSeriesOptionsMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
-      * @Default {white}
+      * @default {white}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5650,7 +5650,7 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
-      * @Default {null}
+      * @default {null}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
@@ -5663,17 +5663,17 @@ object Chart {
     var connectorLine: js.UndefOr[CommonSeriesOptionsMarkerDataLabelConnectorLine] = js.undefined
     
     /** Enables saturation to the data label.
-      * @Default {false}
+      * @default {false}
       */
     var enableContrastColor: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the wrap option to the data label.
-      * @Default {false}
+      * @default {false}
       */
     var enableWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -5682,7 +5682,7 @@ object Chart {
     var font: js.UndefOr[CommonSeriesOptionsMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
-      * @Default {center}
+      * @default {center}
       */
     var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
@@ -5691,7 +5691,7 @@ object Chart {
     var margin: js.UndefOr[CommonSeriesOptionsMarkerDataLabelMargin] = js.undefined
     
     /** Maximum label width of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
@@ -5700,17 +5700,17 @@ object Chart {
     var offset: js.UndefOr[CommonSeriesOptionsMarkerDataLabelOffset] = js.undefined
     
     /** Opacity of the data label.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
-      * @Default {none. See Shape}
+      * @default {none. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Displays the partially visible labels inside the chart Area
-      * @Default {false}
+      * @default {false}
       */
     var showEdgeLabels: js.UndefOr[Boolean] = js.undefined
     
@@ -5724,17 +5724,17 @@ object Chart {
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
-      * @Default {top. See TextPosition}
+      * @default {top. See TextPosition}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
-      * @Default {center}
+      * @default {center}
       */
     var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -5829,12 +5829,12 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
-      * @Default {0.1}
+      * @default {0.1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5861,22 +5861,22 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabelConnectorLine extends StObject {
     
     /** Color of the connector line.
-      * @Default {#565656}
+      * @default {#565656}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Height of the connector line.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
-      * @Default {line. See ConnectorLineType}
+      * @default {line. See ConnectorLineType}
       */
     var `type`: js.UndefOr[ConnectorLineType | String] = js.undefined
     
     /** Width of the connector.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5911,32 +5911,32 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabelFont extends StObject {
     
     /** Font color of the data label text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
-      * @Default {regular. See FontWeight}
+      * @default {regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -5979,22 +5979,22 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -6029,12 +6029,12 @@ object Chart {
   trait CommonSeriesOptionsMarkerDataLabelOffset extends StObject {
     
     /** X value or horizontal offset to position the labels in chart.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the labels.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -6061,12 +6061,12 @@ object Chart {
   trait CommonSeriesOptionsMarkerSize extends StObject {
     
     /** Height of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6093,7 +6093,7 @@ object Chart {
   trait CommonSeriesOptionsOutlierSettings extends StObject {
     
     /** Specifies the shape of the outlier.
-      * @Default {circle. See Shape}
+      * @default {circle. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -6124,12 +6124,12 @@ object Chart {
   trait CommonSeriesOptionsOutlierSettingsSize extends StObject {
     
     /** Height of the outlier shape.
-      * @Default {6}
+      * @default {6}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the outlier shape.
-      * @Default {6}
+      * @default {6}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6168,32 +6168,32 @@ object Chart {
     var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select a series/data point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the series or data point has to be selected.
-      * @Default {series. See Mode}
+      * @default {series. See Mode}
       */
     var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on selection.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on selection.
-      * @Default {none. See Pattern}
+      * @default {none. See Pattern}
       */
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Specifies the drawn rectangle type.
-      * @Default {xy}
+      * @default {xy}
       */
     var rangeType: js.UndefOr[RangeType | String] = js.undefined
     
     /** Specifies the type of selection.
-      * @Default {single}
+      * @default {single}
       */
     var `type`: js.UndefOr[SelectionType | String] = js.undefined
   }
@@ -6252,7 +6252,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on selection.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -6283,47 +6283,47 @@ object Chart {
     var border: js.UndefOr[CommonSeriesOptionsTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
-      * @Default {500ms}
+      * @default {500ms}
       */
     var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the tooltip when moving from one point to other.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content.
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the tooltip.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var ry: js.UndefOr[Double] = js.undefined
     
     /** Custom template to format the tooltip content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of the tooltip.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -6382,12 +6382,12 @@ object Chart {
   trait CommonSeriesOptionsTooltipBorder extends StObject {
     
     /** Border color of the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6414,7 +6414,7 @@ object Chart {
   trait CommonSeriesOptionsTrendline extends StObject {
     
     /** Past trends of the current series.
-      * @Default {0}
+      * @default {0}
       */
     var backwardForecast: js.UndefOr[Double] = js.undefined
     
@@ -6423,37 +6423,37 @@ object Chart {
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Fill color of the trendlines.
-      * @Default {#0000FF}
+      * @default {#0000FF}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Future trends of the current series.
-      * @Default {0}
+      * @default {0}
       */
     var forwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Specifies the intercept value of the trendlines.
-      * @Default {null}
+      * @default {null}
       */
     var intercept: js.UndefOr[Double] = js.undefined
     
     /** Name for the trendlines that is to be displayed in the legend text.
-      * @Default {trendline}
+      * @default {trendline}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the moving average starting period value.
-      * @Default {2}
+      * @default {2}
       */
     var period: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order of the polynomial trendlines.
-      * @Default {0}
+      * @default {0}
       */
     var polynomialOrder: js.UndefOr[Double] = js.undefined
     
@@ -6462,7 +6462,7 @@ object Chart {
     var tooltip: js.UndefOr[CommonSeriesOptionsTrendlinesTooltip] = js.undefined
     
     /** Specifies the type of the trendline for the series.
-      * @Default {linear. See TrendlinesType}
+      * @default {linear. See TrendlinesType}
       */
     var `type`: js.UndefOr[TrendlinesType | String] = js.undefined
     
@@ -6471,12 +6471,12 @@ object Chart {
     var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Show/hides the trendline legend.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Width of the trendlines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6555,37 +6555,37 @@ object Chart {
     var border: js.UndefOr[CommonSeriesOptionsTrendlinesTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
-      * @Default {500ms}
+      * @default {500ms}
       */
     var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the trendline tooltip when moving from one point to other.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the trendline tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content displayed in the trendlines.
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline tooltip.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var ry: js.UndefOr[Double] = js.undefined
   }
@@ -6636,12 +6636,12 @@ object Chart {
   trait CommonSeriesOptionsTrendlinesTooltipBorder extends StObject {
     
     /** Border color of the trendline tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trendline tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6718,12 +6718,12 @@ object Chart {
     var trackballTooltipSettings: js.UndefOr[CrosshairTrackballTooltipSettings] = js.undefined
     
     /** Specifies the type of the crosshair. It can be trackball or crosshair
-      * @Default {crosshair. See CrosshairType}
+      * @default {crosshair. See CrosshairType}
       */
     var `type`: js.UndefOr[CrosshairType | String] = js.undefined
     
     /** Show/hides the crosshair/trackball visibility.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -6762,12 +6762,12 @@ object Chart {
   trait CrosshairLine extends StObject {
     
     /** Color of the crosshair line.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Width of the crosshair line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6798,7 +6798,7 @@ object Chart {
     var border: js.UndefOr[CrosshairMarkerBorder] = js.undefined
     
     /** Opacity of the marker.
-      * @Default {true}
+      * @default {true}
       */
     var opacity: js.UndefOr[Boolean] = js.undefined
     
@@ -6807,7 +6807,7 @@ object Chart {
     var size: js.UndefOr[CrosshairMarkerSize] = js.undefined
     
     /** Show/hides the marker.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -6842,7 +6842,7 @@ object Chart {
   trait CrosshairMarkerBorder extends StObject {
     
     /** Border width of the marker.
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6865,12 +6865,12 @@ object Chart {
   trait CrosshairMarkerSize extends StObject {
     
     /** Height of the marker.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
-      * @Default {10}
+      * @default {10}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -6901,27 +6901,27 @@ object Chart {
     var border: js.UndefOr[CrosshairTrackballTooltipSettingsBorder] = js.undefined
     
     /** Background color of the trackball tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the trackball tooltip.
-      * @Default {float. See CrosshairMode}
+      * @default {float. See CrosshairMode}
       */
     var mode: js.UndefOr[CrosshairMode | String] = js.undefined
     
     /** Opacity value of the trackball tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Rounded corner x value of the trackball tooltip.
-      * @Default {3}
+      * @default {3}
       */
     var rx: js.UndefOr[Double] = js.undefined
     
     /** Rounded corner y value of the trackball tooltip.
-      * @Default {3}
+      * @default {3}
       */
     var ry: js.UndefOr[Double] = js.undefined
   }
@@ -6964,12 +6964,12 @@ object Chart {
   trait CrosshairTrackballTooltipSettingsBorder extends StObject {
     
     /** Border color of the trackball tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trackball tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7272,32 +7272,32 @@ object Chart {
     var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the angle for rotation
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the downloading filename
-      * @Default {chart}
+      * @default {chart}
       */
     var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
-      * @Default {client}
+      * @default {client}
       */
     var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Enable/ disable the multiple excel exporting
-      * @Default {false}
+      * @default {false}
       */
     var multipleExport: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the document
-      * @Default {portrait}
+      * @default {portrait}
       */
     var orientation: js.UndefOr[ExportingOrientation | String] = js.undefined
     
     /** Specifies the format of the file to export
-      * @Default {png}
+      * @default {png}
       */
     var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
@@ -7344,22 +7344,22 @@ object Chart {
   trait Indicator extends StObject {
     
     /** Specifies animation duration for indicator rendering.
-      * @Default {null}
+      * @default {null}
       */
     var animationDuration: js.UndefOr[Boolean] = js.undefined
     
     /** The dPeriod value for stochastic indicator.
-      * @Default {3}
+      * @default {3}
       */
     var dPeriod: js.UndefOr[Double] = js.undefined
     
     /** Enables/disables the animation.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Color of the technical indicator.
-      * @Default {#00008B}
+      * @default {#00008B}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -7368,12 +7368,12 @@ object Chart {
     var histogram: js.UndefOr[IndicatorsHistogram] = js.undefined
     
     /** Specifies the k period in stochastic indicator.
-      * @Default {3}
+      * @default {3}
       */
     var kPeriod: js.UndefOr[Double] = js.undefined
     
     /** Specifies the long period in MACD indicator.
-      * @Default {26}
+      * @default {26}
       */
     var longPeriod: js.UndefOr[Double] = js.undefined
     
@@ -7386,12 +7386,12 @@ object Chart {
     var macdLine: js.UndefOr[IndicatorsMacdLine] = js.undefined
     
     /** Specifies the type of the MACD indicator.
-      * @Default {line. See MACDType}
+      * @default {line. See MACDType}
       */
     var macdType: js.UndefOr[String] = js.undefined
     
     /** Specifies period value in indicator.
-      * @Default {14}
+      * @default {14}
       */
     var period: js.UndefOr[Double] = js.undefined
     
@@ -7404,12 +7404,12 @@ object Chart {
     var seriesName: js.UndefOr[String] = js.undefined
     
     /** Specifies the short period in MACD indicator.
-      * @Default {13}
+      * @default {13}
       */
     var shortPeriod: js.UndefOr[Double] = js.undefined
     
     /** Specifies the standard deviation value for Bollinger band indicator.
-      * @Default {2}
+      * @default {2}
       */
     var standardDeviations: js.UndefOr[Double] = js.undefined
     
@@ -7418,12 +7418,12 @@ object Chart {
     var tooltip: js.UndefOr[IndicatorsTooltip] = js.undefined
     
     /** Trigger value of MACD indicator.
-      * @Default {9}
+      * @default {9}
       */
     var trigger: js.UndefOr[Double] = js.undefined
     
     /** Specifies the type of indicator that has to be rendered.
-      * @Default {sma. See IndicatorsType}
+      * @default {sma. See IndicatorsType}
       */
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -7432,12 +7432,12 @@ object Chart {
     var upperLine: js.UndefOr[IndicatorsUpperLine] = js.undefined
     
     /** Specifies the visibility of indicator.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibility: js.UndefOr[String] = js.undefined
     
     /** Width of the indicator line.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
     
@@ -7560,12 +7560,12 @@ object Chart {
     var border: js.UndefOr[IndicatorsHistogramBorder] = js.undefined
     
     /** Color of histogram columns in MACD indicator.
-      * @Default {#ccccff}
+      * @default {#ccccff}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of histogram columns in MACD indicator.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -7596,12 +7596,12 @@ object Chart {
   trait IndicatorsHistogramBorder extends StObject {
     
     /** Color of the histogram border in MACD indicator.
-      * @Default {#9999ff}
+      * @default {#9999ff}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Controls the width of histogram border line in MACD indicator.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7628,12 +7628,12 @@ object Chart {
   trait IndicatorsLowerLine extends StObject {
     
     /** Color of lower line.
-      * @Default {#008000}
+      * @default {#008000}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the lower line.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7660,12 +7660,12 @@ object Chart {
   trait IndicatorsMacdLine extends StObject {
     
     /** Color of MACD line.
-      * @Default {#ff9933}
+      * @default {#ff9933}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the MACD line.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7692,12 +7692,12 @@ object Chart {
   trait IndicatorsPeriodLine extends StObject {
     
     /** Color of period line in indicator.
-      * @Default {blue}
+      * @default {blue}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the period line in indicators.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7728,32 +7728,32 @@ object Chart {
     var border: js.UndefOr[IndicatorsTooltipBorder] = js.undefined
     
     /** Specifies the animation duration of indicator tooltip.
-      * @Default {500ms}
+      * @default {500ms}
       */
     var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the tooltip animation.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of indicator tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Format of indicator tooltip. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of indicator tooltip.
-      * @Default {0.95}
+      * @default {0.95}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Controls the visibility of indicator tooltip.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -7800,12 +7800,12 @@ object Chart {
   trait IndicatorsTooltipBorder extends StObject {
     
     /** Border color of indicator tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of indicator tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7832,12 +7832,12 @@ object Chart {
   trait IndicatorsUpperLine extends StObject {
     
     /** Fill color of the upper line in indicators
-      * @Default {#ff9933}
+      * @default {#ff9933}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Width of the upper line in indicators.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -7864,7 +7864,7 @@ object Chart {
   trait Legend extends StObject {
     
     /** Horizontal alignment of the legend.
-      * @Default {Center. See Alignment}
+      * @default {Center. See Alignment}
       */
     var alignment: js.UndefOr[Alignment | String] = js.undefined
     
@@ -7877,17 +7877,17 @@ object Chart {
     var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Number of columns to arrange the legend items.
-      * @Default {null}
+      * @default {null}
       */
     var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Controls whether legend has to use scrollbar or not. When enabled, scroll bar appears depending upon size and position properties of legend.
-      * @Default {true}
+      * @default {true}
       */
     var enableScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /** Fill color for the legend items. By using this property, it displays all legend item shapes in same color.Legend items representing invisible series is displayed in gray color.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -7896,7 +7896,7 @@ object Chart {
     var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
-      * @Default {10}
+      * @default {10}
       */
     var itemPadding: js.UndefOr[Double] = js.undefined
     
@@ -7909,23 +7909,23 @@ object Chart {
     var location: js.UndefOr[LegendLocation] = js.undefined
     
     /** Opacity of the legend.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set
       * **custom** as value to this property.
-      * @Default {Bottom. See Position}
+      * @default {Bottom. See Position}
       */
     var position: js.UndefOr[Position | String] = js.undefined
     
     /** Number of rows to arrange the legend items.
-      * @Default {null}
+      * @default {null}
       */
     var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Shape of the legend items. Default shape for pie and doughnut series is circle and all other series uses rectangle.
-      * @Default {None. See Shape}
+      * @default {None. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -7934,12 +7934,12 @@ object Chart {
     var size: js.UndefOr[LegendSize] = js.undefined
     
     /** Specifies the action taken when the legend width is more than the textWidth.
-      * @Default {none. See textOverflow}
+      * @default {none. See textOverflow}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Text width for legend item.
-      * @Default {34}
+      * @default {34}
       */
     var textWidth: js.UndefOr[Double] = js.undefined
     
@@ -7948,12 +7948,12 @@ object Chart {
     var title: js.UndefOr[LegendTitle] = js.undefined
     
     /** Controls the selection through the legend.
-      * @Default {true}
+      * @default {true}
       */
     var toggleSeriesVisibility: js.UndefOr[Boolean] = js.undefined
     
     /** Controls the visibility of the legend.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -8052,12 +8052,12 @@ object Chart {
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -8130,22 +8130,22 @@ object Chart {
   trait LegendFont extends StObject {
     
     /** Font family for legend item text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend item text.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend item text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -8330,12 +8330,12 @@ object Chart {
     var border: js.UndefOr[LegendItemStyleBorder] = js.undefined
     
     /** Height of the shape in legend items.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the shape in legend items.
-      * @Default {10}
+      * @default {10}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -8366,12 +8366,12 @@ object Chart {
   trait LegendItemStyleBorder extends StObject {
     
     /** Border color of the legend items.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend items.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -8398,12 +8398,12 @@ object Chart {
   trait LegendLocation extends StObject {
     
     /** X value or horizontal offset to position the legend in chart.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the legend.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -8430,12 +8430,12 @@ object Chart {
   trait LegendSize extends StObject {
     
     /** Height of the legend. Height can be specified in either pixel or percentage.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the legend. Width can be specified in either pixel or percentage.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -8470,7 +8470,7 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the legend title.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var textAlignment: js.UndefOr[Alignment | String] = js.undefined
   }
@@ -8501,22 +8501,22 @@ object Chart {
   trait LegendTitleFont extends StObject {
     
     /** Font family for the text in legend title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend title.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend title.
-      * @Default {normal. See FontWeight}
+      * @default {normal. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend title.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -8589,22 +8589,22 @@ object Chart {
   trait Margin extends StObject {
     
     /** Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
-      * @Default {10}
+      * @default {10}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
-      * @Default {10}
+      * @default {10}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
-      * @Default {10}
+      * @default {10}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
-      * @Default {10}
+      * @default {10}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -8684,12 +8684,12 @@ object Chart {
     var axisLabelMouseMove: js.UndefOr[js.Function1[/* e */ AxisLabelMouseMoveEventArgs, scala.Unit]] = js.undefined
     
     /** URL of the image to be used as chart background.
-      * @Default {null}
+      * @default {null}
       */
     var backGroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Sets the background color of the  chart.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -8742,7 +8742,7 @@ object Chart {
     var crosshair: js.UndefOr[Crosshair] = js.undefined
     
     /** Depth of the 3D Chart from front view of series to background wall. This property is applicable only for 3D view.
-      * @Default {100}
+      * @default {100}
       */
     var depth: js.UndefOr[Double] = js.undefined
     
@@ -8767,17 +8767,17 @@ object Chart {
     var dragging: js.UndefOr[js.Function1[/* e */ DraggingEventArgs, scala.Unit]] = js.undefined
     
     /** Controls whether 3D view has to be enabled or not. 3D view is supported only for column, bar. Stacking column, stacking bar, pie and doughnut series types.
-      * @Default {false}
+      * @default {false}
       */
     var enable3D: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering supports all functionalities in SVG rendering except 3D Charts.
-      * @Default {false}
+      * @default {false}
       */
     var enableCanvasRendering: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether 3D view has to be rotated on dragging. This property is applicable only for 3D view.
-      * @Default {false}
+      * @default {false}
       */
     var enableRotation: js.UndefOr[Boolean] = js.undefined
     
@@ -8795,12 +8795,12 @@ object Chart {
     
     /** Controls whether the series has to be rendered at initial loading of chart, this will be useful in scenarios where chart is placed at the bottom of the web page and we need to
       * render the series only when the chart is visible while scrolling to the top.
-      * @Default {true}
+      * @default {true}
       */
     var initSeriesRender: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Chart has to be responsive while resizing.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -8830,7 +8830,7 @@ object Chart {
     
     /** Name of the culture based on which chart should be localized. Number and date time values are localized with respect to the culture name.String type properties like title text are
       * not localized automatically. Provide localized text as value to string type properties.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -8847,13 +8847,13 @@ object Chart {
     var multiLevelLabelRendering: js.UndefOr[js.Function1[/* e */ MultiLevelLabelRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Palette is used to store the series fill color in array and apply the color to series collection in the order of series index.
-      * @Default {null}
+      * @default {null}
       */
     var palette: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Perspective angle of the 3D view. Chart appears closer when perspective angle is decreased, and distant when perspective angle is increased.This property is applicable only when
       * 3D view is enabled
-      * @Default {90}
+      * @default {90}
       */
     var perspectiveAngle: js.UndefOr[Double] = js.undefined
     
@@ -8884,7 +8884,7 @@ object Chart {
     var rangeSelected: js.UndefOr[js.Function1[/* e */ RangeSelectedEventArgs, scala.Unit]] = js.undefined
     
     /** Rotation angle of the 3D view. This property is applicable only when 3D view is enabled.
-      * @Default {0}
+      * @default {0}
       */
     var rotation: js.UndefOr[Double] = js.undefined
     
@@ -8905,7 +8905,7 @@ object Chart {
     var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, scala.Unit]] = js.undefined
     
     /** Options for displaying the chart along with selected points while loading
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var selectedDataPointIndexes: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -8922,7 +8922,7 @@ object Chart {
     var seriesRendering: js.UndefOr[js.Function1[/* e */ SeriesRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Controls whether data points has to be displayed side by side or along the depth of the axis.
-      * @Default {false}
+      * @default {false}
       */
     var sideBySideSeriesPlacement: js.UndefOr[Boolean] = js.undefined
     
@@ -8939,12 +8939,12 @@ object Chart {
     var symbolRendering: js.UndefOr[js.Function1[/* e */ SymbolRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Specifies the theme for Chart.
-      * @Default {Flatlight. See Theme}
+      * @default {Flatlight. See Theme}
       */
     var theme: js.UndefOr[Theme | String] = js.undefined
     
     /** Slope angle of 3D Chart. This property is applicable only when 3D view is enabled.
-      * @Default {0}
+      * @default {0}
       */
     var tilt: js.UndefOr[Double] = js.undefined
     
@@ -8975,7 +8975,7 @@ object Chart {
     var trendlineRendering: js.UndefOr[js.Function1[/* e */ TrendlineRenderingEventArgs, scala.Unit]] = js.undefined
     
     /** Width of the wall used in 3D Chart. Wall is present only in Cartesian type 3D series and not in 3D pie or Doughnut series. This property is applicable only when 3D view is enabled.
-      * @Default {2}
+      * @default {2}
       */
     var wallSize: js.UndefOr[Double] = js.undefined
     
@@ -9566,7 +9566,7 @@ object Chart {
   trait PrimaryXAxis extends StObject {
     
     /** Specifies the position of the axis labels.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
@@ -9579,24 +9579,24 @@ object Chart {
     var axisLine: js.UndefOr[PrimaryXAxisAxisLine] = js.undefined
     
     /** Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
-      * @Default {null}
+      * @default {null}
       */
     var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of columns or plot areas an axis has to span horizontally.
-      * @Default {null}
+      * @default {null}
       */
     var columnSpan: js.UndefOr[Double] = js.undefined
     
     /** Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum
       * value of crossing axis, then axis will be placed at the opposite side.
-      * @Default {null}
+      * @default {null}
       */
     var crossesAt: js.UndefOr[Double] = js.undefined
     
     /** Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X
       * axis or primary Y axis will be used for crossing
-      * @Default {null}
+      * @default {null}
       */
     var crossesInAxis: js.UndefOr[String] = js.undefined
     
@@ -9605,22 +9605,22 @@ object Chart {
     var crosshairLabel: js.UndefOr[PrimaryXAxisCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
-      * @Default {null}
+      * @default {null}
       */
     var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
-      * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
+      * @default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
     var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
-      * @Default {true}
+      * @default {true}
       */
     var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -9629,17 +9629,17 @@ object Chart {
     var font: js.UndefOr[PrimaryXAxisFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
-      * @Default {null. See IntervalType}
+      * @default {null. See IntervalType}
       */
     var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting â€˜isIndexedâ€™ property to true.
-      * @Default {false}
+      * @default {false}
       */
     var isIndexed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to inverse the axis.
-      * @Default {false}
+      * @default {false}
       */
     var isInversed: js.UndefOr[Boolean] = js.undefined
     
@@ -9648,32 +9648,32 @@ object Chart {
     var labelBorder: js.UndefOr[PrimaryXAxisLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
-      * @Default {null}
+      * @default {null}
       */
     var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
-      * @Default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
+      * @default {ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction}
       */
     var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
-      * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
+      * @default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
     var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
-      * @Default {outside. See LabelPosition}
+      * @default {outside. See LabelPosition}
       */
     var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Angle in degrees to rotate the axis labels.
-      * @Default {null}
+      * @default {null}
       */
     var labelRotation: js.UndefOr[Double] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
-      * @Default {10}
+      * @default {10}
       */
     var logBase: js.UndefOr[Double] = js.undefined
     
@@ -9686,12 +9686,12 @@ object Chart {
     var majorTickLines: js.UndefOr[PrimaryXAxisMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
-      * @Default {34}
+      * @default {34}
       */
     var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
-      * @Default {3}
+      * @default {3}
       */
     var maximumLabels: js.UndefOr[Double] = js.undefined
     
@@ -9704,32 +9704,32 @@ object Chart {
     var minorTickLines: js.UndefOr[PrimaryXAxisMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
-      * @Default {null}
+      * @default {null}
       */
     var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var multiLevelLabels: js.UndefOr[js.Array[PrimaryXAxisMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
-      * @Default {false}
+      * @default {false}
       */
     var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line
-      * @Default {Horizontal}
+      * @default {Horizontal}
       */
     var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
-      * @Default {10}
+      * @default {10}
       */
     var plotOffset: js.UndefOr[Double] = js.undefined
     
@@ -9738,12 +9738,12 @@ object Chart {
     var range: js.UndefOr[PrimaryXAxisRange] = js.undefined
     
     /** Specifies the padding for the axis range.
-      * @Default {None. See RangePadding}
+      * @default {None. See RangePadding}
       */
     var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
-      * @Default {null}
+      * @default {null}
       */
     var roundingPlaces: js.UndefOr[Double] = js.undefined
     
@@ -9752,17 +9752,17 @@ object Chart {
     var scrollbarSettings: js.UndefOr[PrimaryXAxisScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
-      * @Default {true}
+      * @default {true}
       */
     var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var stripLine: js.UndefOr[js.Array[PrimaryXAxisStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
-      * @Default {outside. See TickLinesPosition}
+      * @default {outside. See TickLinesPosition}
       */
     var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
@@ -9771,22 +9771,22 @@ object Chart {
     var title: js.UndefOr[PrimaryXAxisTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
-      * @Default {null. See ValueType}
+      * @default {null. See ValueType}
       */
     var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
-      * @Default {1}
+      * @default {1}
       */
     var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1.
-      * @Default {0}
+      * @default {0}
       */
     var zoomPosition: js.UndefOr[Double] = js.undefined
   }
@@ -10027,12 +10027,12 @@ object Chart {
   trait PrimaryXAxisAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -10059,12 +10059,12 @@ object Chart {
   trait PrimaryXAxisAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -10095,22 +10095,22 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
-      * @Default {null}
+      * @default {null}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10149,7 +10149,7 @@ object Chart {
   trait PrimaryXAxisCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -10172,27 +10172,27 @@ object Chart {
   trait PrimaryXAxisFont extends StObject {
     
     /** Font family of labels.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
-      * @Default {13px}
+      * @default {13px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -10231,12 +10231,12 @@ object Chart {
   trait PrimaryXAxisLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10263,27 +10263,27 @@ object Chart {
   trait PrimaryXAxisMajorGridLines extends StObject {
     
     /** Color of the major grid line.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10322,17 +10322,17 @@ object Chart {
   trait PrimaryXAxisMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10363,17 +10363,17 @@ object Chart {
   trait PrimaryXAxisMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10404,17 +10404,17 @@ object Chart {
   trait PrimaryXAxisMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10449,7 +10449,7 @@ object Chart {
     var border: js.UndefOr[PrimaryXAxisMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Any] = js.undefined
     
@@ -10458,17 +10458,17 @@ object Chart {
     var font: js.UndefOr[PrimaryXAxisMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
-      * @Default {0}
+      * @default {0}
       */
     var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Any] = js.undefined
     
@@ -10477,17 +10477,17 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
-      * @Default {center. See TextAlignment}
+      * @default {center. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
-      * @Default {center. See TextOverflow}
+      * @default {center. See TextOverflow}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -10546,17 +10546,17 @@ object Chart {
   trait PrimaryXAxisMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
-      * @Default {rectangle. See Type}
+      * @default {rectangle. See Type}
       */
     var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10587,32 +10587,32 @@ object Chart {
   trait PrimaryXAxisMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -10655,17 +10655,17 @@ object Chart {
   trait PrimaryXAxisRange extends StObject {
     
     /** Interval of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -10696,12 +10696,12 @@ object Chart {
   trait PrimaryXAxisScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
-      * @Default {false}
+      * @default {false}
       */
     var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
-      * @Default {null}
+      * @default {null}
       */
     var pointsLength: js.UndefOr[Double] = js.undefined
     
@@ -10710,7 +10710,7 @@ object Chart {
     var range: js.UndefOr[PrimaryXAxisScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enables or disables the scroll bar.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -10745,12 +10745,12 @@ object Chart {
   trait PrimaryXAxisScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -10777,17 +10777,17 @@ object Chart {
   trait PrimaryXAxisStripLine extends StObject {
     
     /** Border color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Double] = js.undefined
     
@@ -10796,38 +10796,38 @@ object Chart {
     var font: js.UndefOr[PrimaryXAxisStripLineFont] = js.undefined
     
     /** Start value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
-      * @Default {false}
+      * @default {false}
       */
     var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
-      * @Default {stripLine}
+      * @default {stripLine}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
-      * @Default {middlecenter. See TextAlignment}
+      * @default {middlecenter. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order where the strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered under the series and when it is â€œoverâ€, it is
       * rendered above the series.
-      * @Default {over. See ZIndex}
+      * @default {over. See ZIndex}
       */
     var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
@@ -10890,32 +10890,32 @@ object Chart {
   trait PrimaryXAxisStripLineFont extends StObject {
     
     /** Font color of the strip line text.
-      * @Default {black}
+      * @default {black}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -10958,12 +10958,12 @@ object Chart {
   trait PrimaryXAxisTitle extends StObject {
     
     /** Specifies the position of the axis title.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -10972,17 +10972,17 @@ object Chart {
     var font: js.UndefOr[PrimaryXAxisTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
-      * @Default {34}
+      * @default {34}
       */
     var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
-      * @Default {0}
+      * @default {0}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
-      * @Default {outside. See Position}
+      * @default {outside. See Position}
       */
     var position: js.UndefOr[LabelPosition | String] = js.undefined
     
@@ -10991,7 +10991,7 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -11042,27 +11042,27 @@ object Chart {
   trait PrimaryXAxisTitleFont extends StObject {
     
     /** Font family of the title text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
-      * @Default {16px}
+      * @default {16px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -11101,7 +11101,7 @@ object Chart {
   trait PrimaryYAxis extends StObject {
     
     /** Specifies the position of the axis labels.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[LabelAlignment | String] = js.undefined
     
@@ -11115,13 +11115,13 @@ object Chart {
     
     /** Specifies where horizontal axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum
       * value of crossing axis, then axis will be placed at the opposite side.
-      * @Default {null}
+      * @default {null}
       */
     var crossesAt: js.UndefOr[Double] = js.undefined
     
     /** Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X
       * axis or primary Y axis will be used for crossing
-      * @Default {null}
+      * @default {null}
       */
     var crossesInAxis: js.UndefOr[String] = js.undefined
     
@@ -11130,22 +11130,22 @@ object Chart {
     var crosshairLabel: js.UndefOr[PrimaryYAxisCrosshairLabel] = js.undefined
     
     /** With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
-      * @Default {null}
+      * @default {null}
       */
     var desiredIntervals: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of labels at the edge of the axis.
-      * @Default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
+      * @default {ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement}
       */
     var edgeLabelPlacement: js.UndefOr[EdgeLabelPlacement | String] = js.undefined
     
     /** Specifies the interval of the axis according to the zoomed data of the chart.
-      * @Default {true}
+      * @default {true}
       */
     var enableAutoIntervalOnZooming: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -11154,12 +11154,12 @@ object Chart {
     var font: js.UndefOr[PrimaryYAxisFont] = js.undefined
     
     /** Specifies the type of interval in date time axis.
-      * @Default {null. See IntervalType}
+      * @default {null. See IntervalType}
       */
     var intervalType: js.UndefOr[IntervalType | String] = js.undefined
     
     /** Specifies whether to inverse the axis.
-      * @Default {false}
+      * @default {false}
       */
     var isInversed: js.UndefOr[Boolean] = js.undefined
     
@@ -11168,27 +11168,27 @@ object Chart {
     var labelBorder: js.UndefOr[PrimaryYAxisLabelBorder] = js.undefined
     
     /** Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
-      * @Default {null}
+      * @default {null}
       */
     var labelFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the action to take when the axis labels are overlapping with each other.
-      * @Default {ej.datavisualization.Chart.LabelIntersectAction.None}
+      * @default {ej.datavisualization.Chart.LabelIntersectAction.None}
       */
     var labelIntersectAction: js.UndefOr[LabelIntersectAction | String] = js.undefined
     
     /** Specifies the placement of labels.
-      * @Default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
+      * @default {ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement}
       */
     var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the position of the axis labels.
-      * @Default {outside. See LabelPosition}
+      * @default {outside. See LabelPosition}
       */
     var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Logarithmic base value. This is applicable only for logarithmic axis.
-      * @Default {10}
+      * @default {10}
       */
     var logBase: js.UndefOr[Double] = js.undefined
     
@@ -11201,12 +11201,12 @@ object Chart {
     var majorTickLines: js.UndefOr[PrimaryYAxisMajorTickLines] = js.undefined
     
     /** Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
-      * @Default {ej.datavisualization.Chart.maximumLabelWidth type {int}}
+      * @default {ej.datavisualization.Chart.maximumLabelWidth type {int}}
       */
     var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
     /** Maximum number of labels to be displayed in every 100 pixels.
-      * @Default {3}
+      * @default {3}
       */
     var maximumLabels: js.UndefOr[Double] = js.undefined
     
@@ -11219,32 +11219,32 @@ object Chart {
     var minorTickLines: js.UndefOr[PrimaryYAxisMinorTickLines] = js.undefined
     
     /** Specifies the number of minor ticks per interval.
-      * @Default {null}
+      * @default {null}
       */
     var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the multi level labels.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var multiLevelLabels: js.UndefOr[js.Array[PrimaryYAxisMultiLevelLabel]] = js.undefined
     
     /** Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to render the axis at the opposite side of its default position.
-      * @Default {false}
+      * @default {false}
       */
     var opposedPosition: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of the axis line in the chart.
-      * @Default {Vertical}
+      * @default {Vertical}
       */
     var orientation: js.UndefOr[AxisOrientation | String] = js.undefined
     
     /** Specifies the padding for the plot area.
-      * @Default {10}
+      * @default {10}
       */
     var plotOffset: js.UndefOr[Double] = js.undefined
     
@@ -11253,22 +11253,22 @@ object Chart {
     var range: js.UndefOr[PrimaryYAxisRange] = js.undefined
     
     /** Specifies the padding for the axis range.
-      * @Default {ej.datavisualization.Chart.RangePadding.None. See RangePadding}
+      * @default {ej.datavisualization.Chart.RangePadding.None. See RangePadding}
       */
     var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
     
     /** Rounds the number to the given number of decimals.
-      * @Default {null}
+      * @default {null}
       */
     var roundingPlaces: js.UndefOr[Double] = js.undefined
     
     /** Specifies the index of the row to which the axis is associated, when the chart area is divided into multiple plot areas by using rowDefinitions.
-      * @Default {null}
+      * @default {null}
       */
     var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the number of row or plot areas an axis has to span vertically.
-      * @Default {null}
+      * @default {null}
       */
     var rowSpan: js.UndefOr[Double] = js.undefined
     
@@ -11277,17 +11277,17 @@ object Chart {
     var scrollbarSettings: js.UndefOr[PrimaryYAxisScrollbarSettings] = js.undefined
     
     /** Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
-      * @Default {true}
+      * @default {true}
       */
     var showNextToAxisLine: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the strip lines.
-      * @Default {[ ]}
+      * @default {[ ]}
       */
     var stripLine: js.UndefOr[js.Array[PrimaryYAxisStripLine]] = js.undefined
     
     /** Specifies the position of the axis tick lines.
-      * @Default {outside. See TickLinesPosition}
+      * @default {outside. See TickLinesPosition}
       */
     var tickLinesPosition: js.UndefOr[TickLinesPosition | String] = js.undefined
     
@@ -11296,22 +11296,22 @@ object Chart {
     var title: js.UndefOr[PrimaryYAxisTitle] = js.undefined
     
     /** Specifies the type of data the axis is handling.
-      * @Default {null. See ValueType}
+      * @default {null. See ValueType}
       */
     var valueType: js.UndefOr[ValueType | String] = js.undefined
     
     /** Show/hides the axis.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
-      * @Default {1}
+      * @default {1}
       */
     var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /** Position of the zoomed axis. Value ranges from 0 to 1
-      * @Default {0}
+      * @default {0}
       */
     var zoomPosition: js.UndefOr[Double] = js.undefined
   }
@@ -11544,12 +11544,12 @@ object Chart {
   trait PrimaryYAxisAlternateGridBandEven extends StObject {
     
     /** Fill color for the even grid bands.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of the even grid band.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -11576,12 +11576,12 @@ object Chart {
   trait PrimaryYAxisAlternateGridBandOdd extends StObject {
     
     /** Fill color of the odd grid bands.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Opacity of odd grid band.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -11612,22 +11612,22 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps to be applied to the axis line.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
-      * @Default {null}
+      * @default {null}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the axis line.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of axis line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11666,7 +11666,7 @@ object Chart {
   trait PrimaryYAxisCrosshairLabel extends StObject {
     
     /** Show/hides the crosshair label associated with this axis.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -11689,27 +11689,27 @@ object Chart {
   trait PrimaryYAxisFont extends StObject {
     
     /** Font family of labels.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of labels.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the label.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis labels.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis labels.
-      * @Default {13px}
+      * @default {13px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -11748,12 +11748,12 @@ object Chart {
   trait PrimaryYAxisLabelBorder extends StObject {
     
     /** Specifies the color of the label border.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the label border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11780,27 +11780,27 @@ object Chart {
   trait PrimaryYAxisMajorGridLines extends StObject {
     
     /** Color of the major grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Pattern of dashes and gaps used to stroke the major grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major grid lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11839,17 +11839,17 @@ object Chart {
   trait PrimaryYAxisMajorTickLines extends StObject {
     
     /** Length of the major tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the major tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the major tick lines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11880,17 +11880,17 @@ object Chart {
   trait PrimaryYAxisMinorGridLines extends StObject {
     
     /** Patterns of dashes and gaps used to stroke the minor grid lines.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Show/hides the minor grid lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minorGridLines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11921,17 +11921,17 @@ object Chart {
   trait PrimaryYAxisMinorTickLines extends StObject {
     
     /** Length of the minor tick lines.
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the minor tick lines.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the minor tick line
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -11966,7 +11966,7 @@ object Chart {
     var border: js.UndefOr[PrimaryYAxisMultiLevelLabelsBorder] = js.undefined
     
     /** Ending value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Double] = js.undefined
     
@@ -11975,17 +11975,17 @@ object Chart {
     var font: js.UndefOr[PrimaryYAxisMultiLevelLabelsFont] = js.undefined
     
     /** Specifies the level of multi level labels.
-      * @Default {0}
+      * @default {0}
       */
     var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum width of the text in multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var maximumTextWidth: js.UndefOr[Double] = js.undefined
     
     /** Starting value of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Double] = js.undefined
     
@@ -11994,17 +11994,17 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text in multi level labels.
-      * @Default {center. See TextAlignment}
+      * @default {center. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies the handling of text over flow in multi level labels.
-      * @Default {center. See TextOverflow}
+      * @default {center. See TextOverflow}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Visibility of the multi level labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -12063,17 +12063,17 @@ object Chart {
   trait PrimaryYAxisMultiLevelLabelsBorder extends StObject {
     
     /** Border color of the multi level labels.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border type of the multi level labels.
-      * @Default {rectangle. See Type}
+      * @default {rectangle. See Type}
       */
     var `type`: js.UndefOr[MultiLevelLabelsBorderType | String] = js.undefined
     
     /** Border width of the multi level labels.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -12104,32 +12104,32 @@ object Chart {
   trait PrimaryYAxisMultiLevelLabelsFont extends StObject {
     
     /** Font color of the multi level labels text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the multi level labels text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the multi level labels text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the multi level label text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the multi level label text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the multi level label text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -12172,17 +12172,17 @@ object Chart {
   trait PrimaryYAxisRange extends StObject {
     
     /** Interval for the range.
-      * @Default {null}
+      * @default {null}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Maximum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the axis range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -12213,12 +12213,12 @@ object Chart {
   trait PrimaryYAxisScrollbarSettings extends StObject {
     
     /** Controls whether scrollbar has to be responsive in the chart.
-      * @Default {false}
+      * @default {false}
       */
     var canResize: js.UndefOr[Boolean] = js.undefined
     
     /** The maximum number of points to be displayed in the scrollbar.
-      * @Default {null}
+      * @default {null}
       */
     var pointsLength: js.UndefOr[Double] = js.undefined
     
@@ -12227,7 +12227,7 @@ object Chart {
     var range: js.UndefOr[PrimaryYAxisScrollbarSettingsRange] = js.undefined
     
     /** Specifies to enable or disable the scrollbar.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -12262,12 +12262,12 @@ object Chart {
   trait PrimaryYAxisScrollbarSettingsRange extends StObject {
     
     /** Maximum value for the scrollbar range .
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** Minimum value of the scrollbar range.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
   }
@@ -12294,17 +12294,17 @@ object Chart {
   trait PrimaryYAxisStripLine extends StObject {
     
     /** Border color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Background color of the strip line.
-      * @Default {gray}
+      * @default {gray}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** End value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Double] = js.undefined
     
@@ -12313,38 +12313,38 @@ object Chart {
     var font: js.UndefOr[PrimaryYAxisStripLineFont] = js.undefined
     
     /** Start value of the strip line.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Double] = js.undefined
     
     /** Indicates whether to render the strip line from the minimum/start value of the axis. This property wonâ€™t work when start property is set.
-      * @Default {false}
+      * @default {false}
       */
     var startFromAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies text to be displayed inside the strip line.
-      * @Default {stripLine}
+      * @default {stripLine}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the text inside the strip line.
-      * @Default {middlecenter. See TextAlignment}
+      * @default {middlecenter. See TextAlignment}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Show/hides the strip line.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the strip line.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order in which strip line and the series have to be rendered. When Z-order is â€œbehindâ€, strip line is rendered below the series and when it is â€œoverâ€, it is
       * rendered above the series.
-      * @Default {over. See ZIndex}
+      * @default {over. See ZIndex}
       */
     var zIndex: js.UndefOr[ZIndex | String] = js.undefined
   }
@@ -12407,32 +12407,32 @@ object Chart {
   trait PrimaryYAxisStripLineFont extends StObject {
     
     /** Font color of the strip line text.
-      * @Default {black}
+      * @default {black}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the strip line text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the strip line text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the strip line text.
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Opacity of the strip line text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the strip line text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -12475,12 +12475,12 @@ object Chart {
   trait PrimaryYAxisTitle extends StObject {
     
     /** Specifies the position of the axis title.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var alignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
-      * @Default {ej.datavisualization.Chart.enableTrim}
+      * @default {ej.datavisualization.Chart.enableTrim}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -12489,17 +12489,17 @@ object Chart {
     var font: js.UndefOr[PrimaryYAxisTitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
-      * @Default {ej.datavisualization.Chart.maximumTitleWidth.null}
+      * @default {ej.datavisualization.Chart.maximumTitleWidth.null}
       */
     var maximumTitleWidth: js.UndefOr[Double] = js.undefined
     
     /** offset value for axis title.
-      * @Default {0}
+      * @default {0}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the axis title.
-      * @Default {outside. See Position}
+      * @default {outside. See Position}
       */
     var position: js.UndefOr[LabelPosition | String] = js.undefined
     
@@ -12508,7 +12508,7 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of axis title.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -12559,27 +12559,27 @@ object Chart {
   trait PrimaryYAxisTitleFont extends StObject {
     
     /** Font family of the title text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the title text.
-      * @Default {ej.datavisualization.Chart.FontStyle.Normal}
+      * @default {ej.datavisualization.Chart.FontStyle.Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the title text.
-      * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+      * @default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the axis title text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the axis title.
-      * @Default {16px}
+      * @default {16px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -12664,22 +12664,22 @@ object Chart {
   trait RowDefinition extends StObject {
     
     /** Color of the line that indicates the starting point of the row in plotting area.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
     /** Width of the line that indicates the starting point of the row in plot area.
-      * @Default {1}
+      * @default {1}
       */
     var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Height of the row in plotting area. Height is measured in either pixel or percentage based on the value of unit property.
-      * @Default {50}
+      * @default {50}
       */
     var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the unit to measure the height of the row in plotting area.
-      * @Default {'pixel'. See Unit}
+      * @default {'pixel'. See Unit}
       */
     var unit: js.UndefOr[typings.ejWebAll.ej.datavisualization.Chart.Unit | String] = js.undefined
   }
@@ -12854,12 +12854,12 @@ object Chart {
   trait Series extends StObject {
     
     /** Specifies animation duration for series rendering.
-      * @Default {null}
+      * @default {null}
       */
     var animationDuration: js.UndefOr[String] = js.undefined
     
     /** Color of the point, where the close is up in financial chart.
-      * @Default {null}
+      * @default {null}
       */
     var bearFillColor: js.UndefOr[String] = js.undefined
     
@@ -12868,7 +12868,7 @@ object Chart {
     var border: js.UndefOr[SeriesBorder] = js.undefined
     
     /** Quartile calculation has been performed in three different formulas to render the boxplot series .
-      * @Default {exclusive.See BoxPlotMode}
+      * @default {exclusive.See BoxPlotMode}
       */
     var boxPlotMode: js.UndefOr[LabelPosition | String] = js.undefined
     
@@ -12877,32 +12877,32 @@ object Chart {
     var bubbleOptions: js.UndefOr[SeriesBubbleOptions] = js.undefined
     
     /** Color of the point, where the close is down in financial chart.
-      * @Default {null}
+      * @default {null}
       */
     var bullFillColor: js.UndefOr[String] = js.undefined
     
     /** Specifies spline tension values for cardinal spline type.Value ranges from 0 to 1.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var cardinalSplineTension: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains close value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var close: js.UndefOr[String] = js.undefined
     
     /** To render the column and bar type series in rectangle/cylinder shape. See ColumnFacet
-      * @Default {rectangle}
+      * @default {rectangle}
       */
     var columnFacet: js.UndefOr[ColumnFacet | String] = js.undefined
     
     /** Spacing between columns of different series. Value ranges from 0 to 1
-      * @Default {0}
+      * @default {0}
       */
     var columnSpacing: js.UndefOr[Double] = js.undefined
     
     /** Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon columnSpacing property.
-      * @Default {0.7}
+      * @default {0.7}
       */
     var columnWidth: js.UndefOr[Double] = js.undefined
     
@@ -12919,17 +12919,17 @@ object Chart {
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
-      * @Default {0.4}
+      * @default {0.4}
       */
     var doughnutCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the doughnut series. Value ranges from 0 to 1.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var doughnutSize: js.UndefOr[Double] = js.undefined
     
@@ -12938,7 +12938,7 @@ object Chart {
     var dragSettings: js.UndefOr[SeriesDragSettings] = js.undefined
     
     /** Type of series to be drawn in radar or polar series.
-      * @Default {line. See DrawType}
+      * @default {line. See DrawType}
       */
     var drawType: js.UndefOr[DrawType | String] = js.undefined
     
@@ -12947,17 +12947,17 @@ object Chart {
     var emptyPointSettings: js.UndefOr[SeriesEmptyPointSettings] = js.undefined
     
     /** Enable/disable the animation of series.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** To avoid overlapping of data labels smartly.
-      * @Default {null}
+      * @default {null}
       */
     var enableSmartLabels: js.UndefOr[Double] = js.undefined
     
     /** End angle of pie/doughnut series. For a complete circle, it has to be 360, by default.
-      * @Default {null}
+      * @default {null}
       */
     var endAngle: js.UndefOr[Double] = js.undefined
     
@@ -12966,27 +12966,27 @@ object Chart {
     var errorBar: js.UndefOr[SeriesErrorBar] = js.undefined
     
     /** Explodes the pie/doughnut slices on mouse move.
-      * @Default {false}
+      * @default {false}
       */
     var explode: js.UndefOr[Boolean] = js.undefined
     
     /** Explodes all the slice of pie/doughnut on render.
-      * @Default {null}
+      * @default {null}
       */
     var explodeAll: js.UndefOr[Boolean] = js.undefined
     
     /** Index of the point to be exploded from pie/doughnut/pyramid/funnel.
-      * @Default {null}
+      * @default {null}
       */
     var explodeIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance of the slice from the center, when it is exploded.
-      * @Default {25}
+      * @default {25}
       */
     var explodeOffset: js.UndefOr[Double] = js.undefined
     
     /** Fill color of the series.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -12995,27 +12995,27 @@ object Chart {
     var font: js.UndefOr[SeriesFont] = js.undefined
     
     /** Specifies the height of the funnel in funnel series. Values can be in both pixel and percentage.
-      * @Default {32.7%}
+      * @default {32.7%}
       */
     var funnelHeight: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the funnel in funnel series. Values can be in both pixel and percentage.
-      * @Default {11.6%}
+      * @default {11.6%}
       */
     var funnelWidth: js.UndefOr[String] = js.undefined
     
     /** Gap between the slices of pyramid/funnel series.
-      * @Default {0}
+      * @default {0}
       */
     var gapRatio: js.UndefOr[Double] = js.undefined
     
     /** Distance between the two pie's in pieOfPie series.
-      * @Default {50}
+      * @default {50}
       */
     var gapWidth: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains high value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var high: js.UndefOr[String] = js.undefined
     
@@ -13024,37 +13024,37 @@ object Chart {
     var highlightSettings: js.UndefOr[SeriesHighlightSettings] = js.undefined
     
     /** Specifies whether to join start and end point of a line/area series used in polar/radar chart to form a closed path.
-      * @Default {true}
+      * @default {true}
       */
     var isClosed: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to stack the column series in polar/radar charts.
-      * @Default {true}
+      * @default {true}
       */
     var isStacking: js.UndefOr[Boolean] = js.undefined
     
     /** Renders the chart vertically. This is applicable only for Cartesian type series.
-      * @Default {false}
+      * @default {false}
       */
     var isTransposed: js.UndefOr[Boolean] = js.undefined
     
     /** Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
-      * @Default {inside. See LabelPosition}
+      * @default {inside. See LabelPosition}
       */
     var labelPosition: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Specifies the line cap of the series.
-      * @Default {Butt. See LineCap}
+      * @default {Butt. See LineCap}
       */
     var lineCap: js.UndefOr[LineCap | String] = js.undefined
     
     /** Specifies the type of shape to be used where two lines meet.
-      * @Default {Round. See LineJoin}
+      * @default {Round. See LineJoin}
       */
     var lineJoin: js.UndefOr[LineJoin | String] = js.undefined
     
     /** Name of the property in the datasource that contains low value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var low: js.UndefOr[String] = js.undefined
     
@@ -13063,17 +13063,17 @@ object Chart {
     var marker: js.UndefOr[SeriesMarker] = js.undefined
     
     /** Name of the series, that is to be displayed in the legend.
-      * @Default {Add a comment to this line}
+      * @default {Add a comment to this line}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the series.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains open value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var open: js.UndefOr[String] = js.undefined
     
@@ -13086,17 +13086,17 @@ object Chart {
     var palette: js.UndefOr[String] = js.undefined
     
     /** Controls the size of pie series. Value ranges from 0 to 1.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var pieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var pieOfPieCoefficient: js.UndefOr[Double] = js.undefined
     
     /** Name of the property in the datasource that contains fill color for the series.
-      * @Default {null}
+      * @default {null}
       */
     var pointColorMappingName: js.UndefOr[String] = js.undefined
     
@@ -13105,17 +13105,17 @@ object Chart {
     var points: js.UndefOr[js.Array[SeriesPoint]] = js.undefined
     
     /** Fill color for the positive column of the waterfall.
-      * @Default {null}
+      * @default {null}
       */
     var positiveFill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of the pyramid series.
-      * @Default {linear}
+      * @default {linear}
       */
     var pyramidMode: js.UndefOr[PyramidMode | String] = js.undefined
     
     /** Specifies ej.Query to select data from dataSource. This property is applicable only when the dataSource is ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -13124,27 +13124,27 @@ object Chart {
     var selectionSettings: js.UndefOr[SeriesSelectionSettings] = js.undefined
     
     /** Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
-      * @Default {true}
+      * @default {true}
       */
     var showMedian: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains the size value for the bubble series.
-      * @Default {null}
+      * @default {null}
       */
     var size: js.UndefOr[String] = js.undefined
     
     /** Specifies the different types of spline curve.
-      * @Default {Natural. See SplineType}
+      * @default {Natural. See SplineType}
       */
     var splineType: js.UndefOr[SplineType | String] = js.undefined
     
     /** Specifies the mode for splitting the data points in pieOfPie series.
-      * @Default {value. See SplitMode}
+      * @default {value. See SplitMode}
       */
     var splitMode: js.UndefOr[SplitMode | String] = js.undefined
     
     /** Split Value of pieOfPie series.
-      * @Default {null}
+      * @default {null}
       */
     var splitValue: js.UndefOr[String] = js.undefined
     
@@ -13153,7 +13153,7 @@ object Chart {
     var stackingGroup: js.UndefOr[String] = js.undefined
     
     /** Start angle from where the pie/doughnut series renders. It starts from 0, by default.
-      * @Default {null}
+      * @default {null}
       */
     var startAngle: js.UndefOr[Double] = js.undefined
     
@@ -13166,42 +13166,42 @@ object Chart {
     var trendlines: js.UndefOr[js.Array[SeriesTrendline]] = js.undefined
     
     /** Specifies the type of the series to render in chart.
-      * @Default {column. see Type}
+      * @default {column. see Type}
       */
     var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Controls the visibility of the series.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibility: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
-      * @Default {null}
+      * @default {null}
       */
     var xAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains x value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var xName: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
-      * @Default {null}
+      * @default {null}
       */
     var yAxisName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y value for the series.
-      * @Default {null}
+      * @default {null}
       */
     var yName: js.UndefOr[String] = js.undefined
     
     /** Z-order of the series.
-      * @Default {0}
+      * @default {0}
       */
     var zOrder: js.UndefOr[Double] = js.undefined
   }
@@ -13520,17 +13520,17 @@ object Chart {
   trait SeriesBorder extends StObject {
     
     /** Border color of the series.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** DashArray for border of the series.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Border width of the series.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -13561,17 +13561,17 @@ object Chart {
   trait SeriesBubbleOptions extends StObject {
     
     /** Used for setting the maximum radius of the bubble
-      * @Default {3}
+      * @default {3}
       */
     var maxRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the setting the minimum radius of the bubble
-      * @Default {1}
+      * @default {1}
       */
     var minRadius: js.UndefOr[Double] = js.undefined
     
     /** Used for the calculation of the bubble radius based on the mode selected
-      * @Default {minMax .See RadiusMode}
+      * @default {minMax .See RadiusMode}
       */
     var radiusMode: js.UndefOr[RadiusMode | String] = js.undefined
   }
@@ -13602,22 +13602,22 @@ object Chart {
   trait SeriesConnectorLine extends StObject {
     
     /** Color of the connector line.
-      * @Default {#565656}
+      * @default {#565656}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** DashArray of the connector line.
-      * @Default {null}
+      * @default {null}
       */
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Opacity of the connector line.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the connector line.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -13652,22 +13652,22 @@ object Chart {
   trait SeriesCornerRadius extends StObject {
     
     /** Specifies the radius for the bottom left corner.
-      * @Default {0}
+      * @default {0}
       */
     var bottomLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the bottom right corner.
-      * @Default {0}
+      * @default {0}
       */
     var bottomRight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top left corner.
-      * @Default {0}
+      * @default {0}
       */
     var topLeft: js.UndefOr[Double] = js.undefined
     
     /** Specifies the radius for the top right corner.
-      * @Default {0}
+      * @default {0}
       */
     var topRight: js.UndefOr[Double] = js.undefined
   }
@@ -13702,12 +13702,12 @@ object Chart {
   trait SeriesDragSettings extends StObject {
     
     /** drag/drop the series
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of drag settings.
-      * @Default {xy}
+      * @default {xy}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -13734,7 +13734,7 @@ object Chart {
   trait SeriesEmptyPointSettings extends StObject {
     
     /** Specifies the mode of empty point.
-      * @Default {gap}
+      * @default {gap}
       */
     var displayMode: js.UndefOr[EmptyPointMode | String] = js.undefined
     
@@ -13743,7 +13743,7 @@ object Chart {
     var style: js.UndefOr[SeriesEmptyPointSettingsStyle] = js.undefined
     
     /** Controls the visibility of the empty point.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -13808,7 +13808,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the empty point.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -13839,62 +13839,62 @@ object Chart {
     var cap: js.UndefOr[SeriesErrorBarCap] = js.undefined
     
     /** Specifies the direction of error bar.
-      * @Default {both}
+      * @default {both}
       */
     var direction: js.UndefOr[ErrorBarDirection | String] = js.undefined
     
     /** Fill color of the error bar.
-      * @Default {#000000}
+      * @default {#000000}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Value of horizontal  error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative horizontal error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive horizontal error bar.
-      * @Default {1}
+      * @default {1}
       */
     var horizontalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of error bar.
-      * @Default {vertical}
+      * @default {vertical}
       */
     var mode: js.UndefOr[ErrorBarMode | String] = js.undefined
     
     /** Specifies the type of error bar.
-      * @Default {FixedValue}
+      * @default {FixedValue}
       */
     var `type`: js.UndefOr[ErrorBarType | String] = js.undefined
     
     /** Value of vertical error bar.
-      * @Default {3}
+      * @default {3}
       */
     var verticalErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of negative vertical error bar.
-      * @Default {5}
+      * @default {5}
       */
     var verticalNegativeErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Value of positive vertical error bar.
-      * @Default {5}
+      * @default {5}
       */
     var verticalPositiveErrorValue: js.UndefOr[Double] = js.undefined
     
     /** Show/hides the error bar
-      * @Default {visible}
+      * @default {visible}
       */
     var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -13965,22 +13965,22 @@ object Chart {
   trait SeriesErrorBarCap extends StObject {
     
     /** Color of the error bar cap.
-      * @Default {#000000}
+      * @default {#000000}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Length of the error bar cap.
-      * @Default {1}
+      * @default {1}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Show/Hides the error bar cap.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Width of the error bar cap.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14015,32 +14015,32 @@ object Chart {
   trait SeriesFont extends StObject {
     
     /** Font color of the series text.
-      * @Default {#707070}
+      * @default {#707070}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font Family of the series.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font Style of the series.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the series.
-      * @Default {Regular}
+      * @default {Regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of series text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Size of the series text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -14095,22 +14095,22 @@ object Chart {
     var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight series or data point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether series or data point has to be highlighted.
-      * @Default {series. See Mode}
+      * @default {series. See Mode}
       */
     var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on highlight.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on highlight.
-      * @Default {none. See Pattern}
+      * @default {none. See Pattern}
       */
     var pattern: js.UndefOr[String] = js.undefined
   }
@@ -14161,7 +14161,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on highlight.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -14196,7 +14196,7 @@ object Chart {
     var dataLabel: js.UndefOr[SeriesMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -14205,12 +14205,12 @@ object Chart {
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
-      * @Default {circle. See Shape}
+      * @default {circle. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -14219,7 +14219,7 @@ object Chart {
     var size: js.UndefOr[SeriesMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -14270,12 +14270,12 @@ object Chart {
   trait SeriesMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
-      * @Default {white}
+      * @default {white}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14302,7 +14302,7 @@ object Chart {
   trait SeriesMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
-      * @Default {null}
+      * @default {null}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
@@ -14315,17 +14315,17 @@ object Chart {
     var connectorLine: js.UndefOr[SeriesMarkerDataLabelConnectorLine] = js.undefined
     
     /** Enables saturation to the data label.
-      * @Default {false}
+      * @default {false}
       */
     var enableContrastColor: js.UndefOr[Boolean] = js.undefined
     
     /** Enable the wrap option to the data label.
-      * @Default {false}
+      * @default {false}
       */
     var enableWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -14334,7 +14334,7 @@ object Chart {
     var font: js.UndefOr[SeriesMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
-      * @Default {center}
+      * @default {center}
       */
     var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
@@ -14343,7 +14343,7 @@ object Chart {
     var margin: js.UndefOr[SeriesMarkerDataLabelMargin] = js.undefined
     
     /** Maximum label width of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var maximumLabelWidth: js.UndefOr[Double] = js.undefined
     
@@ -14352,17 +14352,17 @@ object Chart {
     var offset: js.UndefOr[SeriesMarkerDataLabelOffset] = js.undefined
     
     /** Opacity of the data label.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
-      * @Default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
+      * @default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
     /** Displays the partially visible data labels inside the chart Area.
-      * @Default {false}
+      * @default {false}
       */
     var showEdgeLabels: js.UndefOr[Boolean] = js.undefined
     
@@ -14376,17 +14376,17 @@ object Chart {
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
-      * @Default {top. See TextPosition}
+      * @default {top. See TextPosition}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
-      * @Default {'center'}
+      * @default {'center'}
       */
     var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -14481,12 +14481,12 @@ object Chart {
   trait SeriesMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
-      * @Default {0.1}
+      * @default {0.1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14513,22 +14513,22 @@ object Chart {
   trait SeriesMarkerDataLabelConnectorLine extends StObject {
     
     /** Color of the connector.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Height of the connector.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
-      * @Default {line. See ConnectorLineType}
+      * @default {line. See ConnectorLineType}
       */
     var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
     
     /** Width of the connector.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14563,32 +14563,32 @@ object Chart {
   trait SeriesMarkerDataLabelFont extends StObject {
     
     /** Font color of the data label text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
-      * @Default {regular. See FontWeight}
+      * @default {regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -14631,22 +14631,22 @@ object Chart {
   trait SeriesMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -14681,12 +14681,12 @@ object Chart {
   trait SeriesMarkerDataLabelOffset extends StObject {
     
     /** X value or horizontal offset to position the labels in chart.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the labels.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -14713,12 +14713,12 @@ object Chart {
   trait SeriesMarkerSize extends StObject {
     
     /** Height of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14745,7 +14745,7 @@ object Chart {
   trait SeriesOutlierSettings extends StObject {
     
     /** Specifies the shape of the outlier.
-      * @Default {circle. See Shape}
+      * @default {circle. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -14776,12 +14776,12 @@ object Chart {
   trait SeriesOutlierSettingsSize extends StObject {
     
     /** Height of the outlier shape.
-      * @Default {6}
+      * @default {6}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the outlier shape.
-      * @Default {6}
+      * @default {6}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14812,22 +14812,22 @@ object Chart {
     var border: js.UndefOr[SeriesPointsBorder] = js.undefined
     
     /** Close value of the point. Close value is applicable only for financial type series.
-      * @Default {null}
+      * @default {null}
       */
     var close: js.UndefOr[Double] = js.undefined
     
     /** Background color of the point. This is applicable only for column type series and accumulation type series.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** High value of the point. High value is applicable only for financial type series, range area series and range column series.
-      * @Default {null}
+      * @default {null}
       */
     var high: js.UndefOr[Double] = js.undefined
     
     /** Low value of the point. Low value is applicable only for financial type series, range area series and range column series.
-      * @Default {null}
+      * @default {null}
       */
     var low: js.UndefOr[Double] = js.undefined
     
@@ -14836,42 +14836,42 @@ object Chart {
     var marker: js.UndefOr[SeriesPointsMarker] = js.undefined
     
     /** Open value of the point. This is applicable only for financial type series.
-      * @Default {null}
+      * @default {null}
       */
     var open: js.UndefOr[Double] = js.undefined
     
     /** To show/hide the intermediate summary from the last intermediate point.
-      * @Default {false}
+      * @default {false}
       */
     var showIntermediateSum: js.UndefOr[Boolean] = js.undefined
     
     /** To show/hide the total summary of the waterfall series.
-      * @Default {false}
+      * @default {false}
       */
     var showTotalSum: js.UndefOr[Boolean] = js.undefined
     
     /** Size of a bubble in the bubble series. This is applicable only for the bubble series.
-      * @Default {null}
+      * @default {null}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Datalabel text for the point.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of legend item.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** X value of the point.
-      * @Default {null}
+      * @default {null}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Y value of the point.
-      * @Default {null}
+      * @default {null}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -14946,12 +14946,12 @@ object Chart {
   trait SeriesPointsBorder extends StObject {
     
     /** Border color of the point.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the point.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -14986,7 +14986,7 @@ object Chart {
     var dataLabel: js.UndefOr[SeriesPointsMarkerDataLabel] = js.undefined
     
     /** Color of the marker shape.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -14995,12 +14995,12 @@ object Chart {
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Opacity of the marker.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape of the marker.
-      * @Default {circle. See Shape}
+      * @default {circle. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -15009,7 +15009,7 @@ object Chart {
     var size: js.UndefOr[SeriesPointsMarkerSize] = js.undefined
     
     /** Controls the visibility of the marker shape.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -15060,12 +15060,12 @@ object Chart {
   trait SeriesPointsMarkerBorder extends StObject {
     
     /** Border color of the marker shape.
-      * @Default {white}
+      * @default {white}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the marker shape.
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15092,7 +15092,7 @@ object Chart {
   trait SeriesPointsMarkerDataLabel extends StObject {
     
     /** Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate.
-      * @Default {null}
+      * @default {null}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
@@ -15105,7 +15105,7 @@ object Chart {
     var connectorLine: js.UndefOr[SeriesPointsMarkerDataLabelConnectorLine] = js.undefined
     
     /** Background color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -15114,7 +15114,7 @@ object Chart {
     var font: js.UndefOr[SeriesPointsMarkerDataLabelFont] = js.undefined
     
     /** Horizontal alignment of the data label.
-      * @Default {center}
+      * @default {center}
       */
     var horizontalTextAlignment: js.UndefOr[HorizontalTextAlignment | String] = js.undefined
     
@@ -15123,17 +15123,17 @@ object Chart {
     var margin: js.UndefOr[SeriesPointsMarkerDataLabelMargin] = js.undefined
     
     /** Moves the label vertically by specified offset.
-      * @Default {0}
+      * @default {0}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Opacity of the data label.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Background shape of the data label.
-      * @Default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
+      * @default {No shape is rendered by default, so its value is â€˜noneâ€™. See Shape}
       */
     var shape: js.UndefOr[Shape | String] = js.undefined
     
@@ -15143,17 +15143,17 @@ object Chart {
     
     /** Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar,
       * candle and OHLC.
-      * @Default {top. See TextPosition}
+      * @default {top. See TextPosition}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Vertical alignment of the data label.
-      * @Default {'center'}
+      * @default {'center'}
       */
     var verticalTextAlignment: js.UndefOr[VerticalTextAlignment | String] = js.undefined
     
     /** Controls the visibility of the data labels.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -15228,12 +15228,12 @@ object Chart {
   trait SeriesPointsMarkerDataLabelBorder extends StObject {
     
     /** Border color of the data label.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the data label.
-      * @Default {0.1}
+      * @default {0.1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15260,12 +15260,12 @@ object Chart {
   trait SeriesPointsMarkerDataLabelConnectorLine extends StObject {
     
     /** Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
-      * @Default {line. See ConnectorLineType}
+      * @default {line. See ConnectorLineType}
       */
     var `type`: js.UndefOr[ConnectorLineType | String] = js.undefined
     
     /** Width of the connector.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15292,27 +15292,27 @@ object Chart {
   trait SeriesPointsMarkerDataLabelFont extends StObject {
     
     /** Font family of the data label.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
-      * @Default {regular. See FontWeight}
+      * @default {regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -15351,22 +15351,22 @@ object Chart {
   trait SeriesPointsMarkerDataLabelMargin extends StObject {
     
     /** Bottom margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Left margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Right margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Top margin of the text.
-      * @Default {5}
+      * @default {5}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -15401,12 +15401,12 @@ object Chart {
   trait SeriesPointsMarkerSize extends StObject {
     
     /** Height of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the marker.
-      * @Default {6}
+      * @default {6}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15537,32 +15537,32 @@ object Chart {
     var customPattern: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select a series/data point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether series or data point has to be selected.
-      * @Default {series. See Mode}
+      * @default {series. See Mode}
       */
     var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Opacity of the series/point on selection.
-      * @Default {0.6}
+      * @default {0.6}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pattern for the series/point on selection.
-      * @Default {none. See Pattern}
+      * @default {none. See Pattern}
       */
     var pattern: js.UndefOr[String] = js.undefined
     
     /** Specifies the drawn rectangle type.
-      * @Default {xy}
+      * @default {xy}
       */
     var rangeType: js.UndefOr[RangeType | String] = js.undefined
     
     /** Specifies the type of selection.
-      * @Default {single}
+      * @default {single}
       */
     var `type`: js.UndefOr[SelectionType | String] = js.undefined
   }
@@ -15621,7 +15621,7 @@ object Chart {
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the series/point on selection.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -15652,47 +15652,47 @@ object Chart {
     var border: js.UndefOr[SeriesTooltipBorder] = js.undefined
     
     /** Specifies the duration, the tooltip has to be displayed.
-      * @Default {500ms}
+      * @default {500ms}
       */
     var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the tooltip when moving from one point to another.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the tooltip content.
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the tooltip.
-      * @Default {0.95}
+      * @default {0.95}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var ry: js.UndefOr[Double] = js.undefined
     
     /** Custom template to format the tooltip content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of the tooltip.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -15751,12 +15751,12 @@ object Chart {
   trait SeriesTooltipBorder extends StObject {
     
     /** Border Color of the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border Width of the tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15783,7 +15783,7 @@ object Chart {
   trait SeriesTrendline extends StObject {
     
     /** Past trends of the current series.
-      * @Default {0}
+      * @default {0}
       */
     var backwardForecast: js.UndefOr[Double] = js.undefined
     
@@ -15792,37 +15792,37 @@ object Chart {
     var dashArray: js.UndefOr[String] = js.undefined
     
     /** Fill color of the trendlines.
-      * @Default {#0000FF}
+      * @default {#0000FF}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Future trends of the current series.
-      * @Default {0}
+      * @default {0}
       */
     var forwardForecast: js.UndefOr[Double] = js.undefined
     
     /** Specifies the trendline intercept value
-      * @Default {null}
+      * @default {null}
       */
     var intercept: js.UndefOr[Double] = js.undefined
     
     /** Name for the trendlines that is to be displayed in legend text.
-      * @Default {Trendline}
+      * @default {Trendline}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the moving average starting period  value.
-      * @Default {2}
+      * @default {2}
       */
     var period: js.UndefOr[Double] = js.undefined
     
     /** Specifies the order of polynomial trendlines.
-      * @Default {0}
+      * @default {0}
       */
     var polynomialOrder: js.UndefOr[Double] = js.undefined
     
@@ -15831,7 +15831,7 @@ object Chart {
     var tooltip: js.UndefOr[SeriesTrendlinesTooltip] = js.undefined
     
     /** Specifies the type of trendline for the series.
-      * @Default {linear. See TrendlinesType}
+      * @default {linear. See TrendlinesType}
       */
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -15840,12 +15840,12 @@ object Chart {
     var visibility: js.UndefOr[Boolean] = js.undefined
     
     /** Show/hides the trendline legend.
-      * @Default {visible}
+      * @default {visible}
       */
     var visibleOnLegend: js.UndefOr[String] = js.undefined
     
     /** Width of the trendlines.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -15924,37 +15924,37 @@ object Chart {
     var border: js.UndefOr[SeriesTrendlinesTooltipBorder] = js.undefined
     
     /** Specifies the duration of the trendline tooltip to be displayed.
-      * @Default {500ms}
+      * @default {500ms}
       */
     var duration: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the animation of the trendline tooltip when moving from one point to other.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Background color of the trendline tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Format of the trendline tooltip content.
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Opacity of the trendline tooltip.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var rx: js.UndefOr[Double] = js.undefined
     
     /** Customize the corner radius of the trendline tooltip rectangle.
-      * @Default {0}
+      * @default {0}
       */
     var ry: js.UndefOr[Double] = js.undefined
   }
@@ -16005,12 +16005,12 @@ object Chart {
   trait SeriesTrendlinesTooltipBorder extends StObject {
     
     /** Specify the Border color of the  trendline tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the trendline tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -16037,12 +16037,12 @@ object Chart {
   trait Size extends StObject {
     
     /** Height of the Chart. Height can be specified in either pixel or percentage.
-      * @Default {'450'}
+      * @default {'450'}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Chart. Width can be specified in either pixel or percentage.
-      * @Default {'450'}
+      * @default {'450'}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -16161,7 +16161,7 @@ object Chart {
   trait Title extends StObject {
     
     /** Background color for the chart title.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -16170,7 +16170,7 @@ object Chart {
     var border: js.UndefOr[TitleBorder] = js.undefined
     
     /** Specifies whether to trim the Chart Title when the width of the title exceeds the maximumWidth.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -16179,7 +16179,7 @@ object Chart {
     var font: js.UndefOr[TitleFont] = js.undefined
     
     /** Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
-      * @Default {auto}
+      * @default {auto}
       */
     var maximumWidth: js.UndefOr[String] = js.undefined
     
@@ -16192,17 +16192,17 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the title text.
-      * @Default {Center. See TextAlignment}
+      * @default {Center. See TextAlignment}
       */
     var textAlignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Specifies the action taken when the Chart width is more than the titleWidth.
-      * @Default {trim.}
+      * @default {trim.}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Controls the visibility of the Chart title
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -16261,22 +16261,22 @@ object Chart {
   trait TitleBorder extends StObject {
     
     /** color of the title border.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** opacity of the title border.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** opacity of the title border.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the title border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -16311,27 +16311,27 @@ object Chart {
   trait TitleFont extends StObject {
     
     /** Font family for Chart title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for Chart title.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for Chart title.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the Chart title.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for Chart title.
-      * @Default {20px}
+      * @default {20px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -16416,7 +16416,7 @@ object Chart {
   trait TitleSubTitle extends StObject {
     
     /** Background color for the chart subtitle.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -16425,7 +16425,7 @@ object Chart {
     var border: js.UndefOr[TitleSubTitleBorder] = js.undefined
     
     /** Specifies whether to trim the Chart SubTitle when the width of the Subtitle exceeds the maximumWidth.
-      * @Default {false}
+      * @default {false}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -16434,7 +16434,7 @@ object Chart {
     var font: js.UndefOr[TitleSubTitleFont] = js.undefined
     
     /** Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
-      * @Default {auto}
+      * @default {auto}
       */
     var maximumWidth: js.UndefOr[String] = js.undefined
     
@@ -16443,17 +16443,17 @@ object Chart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of sub title text.
-      * @Default {far. See TextAlignment}
+      * @default {far. See TextAlignment}
       */
     var textAlignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Specifies the action taken when the Chart width is more than the SubTitleWidth.
-      * @Default {trim.}
+      * @default {trim.}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
     
     /** Controls the visibility of the Chart SubTitle
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -16508,22 +16508,22 @@ object Chart {
   trait TitleSubTitleBorder extends StObject {
     
     /** color of the subtitle border.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** opacity of the subtitle border.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /** opacity of the subtitle border.
-      * @Default {0.8}
+      * @default {0.8}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Width of the subtitle border.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -16558,27 +16558,27 @@ object Chart {
   trait TitleSubTitleFont extends StObject {
     
     /** Font family of sub title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for sub title.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for sub title.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the sub title.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for sub title.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -16852,37 +16852,37 @@ object Chart {
   trait Zooming extends StObject {
     
     /** Enables or disables zooming.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disables the differed zooming. When it is enabled, chart is updated only on mouse up action while zooming and panning.
-      * @Default {false}
+      * @default {false}
       */
     var enableDeferredZoom: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the ability to zoom the chart on moving the mouse wheel.
-      * @Default {false}
+      * @default {false}
       */
     var enableMouseWheel: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables pinch zooming.
-      * @Default {true}
+      * @default {true}
       */
     var enablePinching: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the scrollbar, which will be displayed while zooming.
-      * @Default {false}
+      * @default {false}
       */
     var enableScrollbar: js.UndefOr[Boolean] = js.undefined
     
     /** To display user specified buttons in zooming toolbar.
-      * @Default {[zoomIn, zoomOut, zoom, pan, reset]}
+      * @default {[zoomIn, zoomOut, zoom, pan, reset]}
       */
     var toolbarItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies whether to allow zooming the chart vertically or horizontally or in both ways.
-      * @Default {'x,y'}
+      * @default {'x,y'}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }

@@ -41,7 +41,7 @@ trait Font
      with ClientObject {
   
   /**
-    * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+    * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -49,7 +49,7 @@ trait Font
   var bold: Boolean = js.native
   
   /**
-    * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+    * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -61,7 +61,7 @@ trait Font
   var context_Font: RequestContext = js.native
   
   /**
-    * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+    * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -69,7 +69,7 @@ trait Font
   var doubleStrikeThrough: Boolean = js.native
   
   /**
-    * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+    * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -77,7 +77,7 @@ trait Font
   var highlightColor: String = js.native
   
   /**
-    * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+    * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -96,7 +96,7 @@ trait Font
   def load(propertyNames: js.Array[String]): Font = js.native
   
   /**
-    * Gets or sets a value that represents the name of the font.
+    * Specifies a value that represents the name of the font.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -114,7 +114,7 @@ trait Font
   def set(properties: FontUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Gets or sets a value that represents the font size in points.
+    * Specifies a value that represents the font size in points.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -122,7 +122,7 @@ trait Font
   var size: Double = js.native
   
   /**
-    * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+    * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -130,7 +130,7 @@ trait Font
   var strikeThrough: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+    * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -138,7 +138,7 @@ trait Font
   var subscript: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+    * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -157,7 +157,7 @@ trait Font
   def track(): Font = js.native
   
   /**
-    * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+    * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
     *
     * @remarks
     * [Api set: WordApi 1.1]

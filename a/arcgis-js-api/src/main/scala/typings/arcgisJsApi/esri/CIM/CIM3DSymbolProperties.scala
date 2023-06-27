@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIM3DSymbolProperties extends StObject {
   
   /**
-    * The dominant size axis.
-    */
+  			 * The dominant size axis.
+  			 */
   var dominantSizeAxis3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DominantSizeAxis * / any */ String
   ] = js.undefined
   
   /**
-    * The rotation order 3D.
-    */
+  			 * The rotation order 3D.
+  			 */
   var rotationOrder3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RotationOrder * / any */ String
   ] = js.undefined
   
   /**
-    * The scale Y.
-    */
+  			 * The scale Y.
+  			 */
   var scaleY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The scale Z.
-    */
+  			 * The scale Z.
+  			 */
   var scaleZ: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIM3DSymbolProperties

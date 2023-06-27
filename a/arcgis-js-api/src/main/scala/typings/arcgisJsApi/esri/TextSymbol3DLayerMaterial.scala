@@ -9,12 +9,12 @@ trait TextSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The color of the text.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
-    */
+  		 * The color of the text.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object TextSymbol3DLayerMaterial {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rope-sequence
 
-Typings are for version 1.3.3
+Typings are for version 1.3.4
 
 ## Library description:
 Rope-based persistent sequence type

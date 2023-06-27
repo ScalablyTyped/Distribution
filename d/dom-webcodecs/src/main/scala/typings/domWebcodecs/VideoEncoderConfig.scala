@@ -1,22 +1,21 @@
 package typings.domWebcodecs
 
+import typings.std.AlphaOption
+import typings.std.LatencyMode
+import typings.std.VideoEncoderBitrateMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VideoEncoderConfig extends StObject {
   
-  var alpha: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlphaOption */ Any
-  ] = js.undefined
+  var alpha: js.UndefOr[AlphaOption] = js.undefined
   
   var avc: js.UndefOr[AvcEncoderConfig] = js.undefined
   
   var bitrate: js.UndefOr[Double] = js.undefined
   
-  var bitrateMode: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoEncoderBitrateMode */ Any
-  ] = js.undefined
+  var bitrateMode: js.UndefOr[VideoEncoderBitrateMode] = js.undefined
   
   var codec: String
   
@@ -30,9 +29,7 @@ trait VideoEncoderConfig extends StObject {
   
   var height: Double
   
-  var latencyMode: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LatencyMode */ Any
-  ] = js.undefined
+  var latencyMode: js.UndefOr[LatencyMode] = js.undefined
   
   var scalabilityMode: js.UndefOr[String] = js.undefined
   
@@ -48,9 +45,7 @@ object VideoEncoderConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: VideoEncoderConfig] (val x: Self) extends AnyVal {
     
-    inline def setAlpha(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlphaOption */ Any
-    ): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: AlphaOption): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
@@ -60,9 +55,7 @@ object VideoEncoderConfig {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    inline def setBitrateMode(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoEncoderBitrateMode */ Any
-    ): Self = StObject.set(x, "bitrateMode", value.asInstanceOf[js.Any])
+    inline def setBitrateMode(value: VideoEncoderBitrateMode): Self = StObject.set(x, "bitrateMode", value.asInstanceOf[js.Any])
     
     inline def setBitrateModeUndefined: Self = StObject.set(x, "bitrateMode", js.undefined)
     
@@ -88,9 +81,7 @@ object VideoEncoderConfig {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setLatencyMode(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LatencyMode */ Any
-    ): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
+    inline def setLatencyMode(value: LatencyMode): Self = StObject.set(x, "latencyMode", value.asInstanceOf[js.Any])
     
     inline def setLatencyModeUndefined: Self = StObject.set(x, "latencyMode", js.undefined)
     

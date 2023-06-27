@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait relationshipRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal fill colors of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal fill colors of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * Describes each class break for both fields considered in the relationship visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * Describes each class break for both fields considered in the relationship visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var classBreaks: RendererResultClassBreaks
   
   /**
-    * The relationship scheme used by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * The relationship scheme used by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var relationshipScheme: RelationshipScheme
   
   /**
-    * The renderer object representing the relationship visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * The renderer object representing the relationship visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var renderer: UniqueValueRenderer
   
   /**
-    * Describes each container or bin used in the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * Describes each container or bin used in the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 object relationshipRendererResult {

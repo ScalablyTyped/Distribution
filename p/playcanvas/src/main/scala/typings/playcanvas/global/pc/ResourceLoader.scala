@@ -26,3 +26,12 @@ open class ResourceLoader protected ()
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }
+object ResourceLoader {
+  
+  @JSGlobal("pc.ResourceLoader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def makeKey(url: Any, `type`: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeKey")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+}

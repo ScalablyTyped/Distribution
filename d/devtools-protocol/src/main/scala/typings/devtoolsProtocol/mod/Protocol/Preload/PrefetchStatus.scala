@@ -1,0 +1,101 @@
+package typings.devtoolsProtocol.mod.Protocol.Preload
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchAllowed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedIneligibleRedirect
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedInvalidRedirect
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedMIMENotSupported
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNetError
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNon2XX
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedPerPageLimitExceeded
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchEvicted
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchHeldback
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIneligibleRetryAfter
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsPrivacyDecoy
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsStale
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBrowserContextOffTheRecord
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleDataSaverEnabled
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleExistingProxy
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleHostIsNonUnique
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleNonDefaultStoragePartition
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSchemeIsNotHttps
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasCookies
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasServiceWorker
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBatterySaverEnabled
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligiblePreloadingDisabled
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotFinishedInTime
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotStarted
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedCookiesChanged
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchProxyNotAvailable
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchResponseUsed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchSuccessfulButNotUsed
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedProbeFailed
+*/
+trait PrefetchStatus extends StObject
+object PrefetchStatus {
+  
+  inline def PrefetchAllowed: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchAllowed = "PrefetchAllowed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchAllowed]
+  
+  inline def PrefetchEvicted: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchEvicted = "PrefetchEvicted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchEvicted]
+  
+  inline def PrefetchFailedIneligibleRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedIneligibleRedirect = "PrefetchFailedIneligibleRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedIneligibleRedirect]
+  
+  inline def PrefetchFailedInvalidRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedInvalidRedirect = "PrefetchFailedInvalidRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedInvalidRedirect]
+  
+  inline def PrefetchFailedMIMENotSupported: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedMIMENotSupported = "PrefetchFailedMIMENotSupported".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedMIMENotSupported]
+  
+  inline def PrefetchFailedNetError: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNetError = "PrefetchFailedNetError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNetError]
+  
+  inline def PrefetchFailedNon2XX: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNon2XX = "PrefetchFailedNon2XX".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedNon2XX]
+  
+  inline def PrefetchFailedPerPageLimitExceeded: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedPerPageLimitExceeded = "PrefetchFailedPerPageLimitExceeded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchFailedPerPageLimitExceeded]
+  
+  inline def PrefetchHeldback: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchHeldback = "PrefetchHeldback".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchHeldback]
+  
+  inline def PrefetchIneligibleRetryAfter: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIneligibleRetryAfter = "PrefetchIneligibleRetryAfter".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIneligibleRetryAfter]
+  
+  inline def PrefetchIsPrivacyDecoy: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsPrivacyDecoy = "PrefetchIsPrivacyDecoy".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsPrivacyDecoy]
+  
+  inline def PrefetchIsStale: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsStale = "PrefetchIsStale".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchIsStale]
+  
+  inline def PrefetchNotEligibleBatterySaverEnabled: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBatterySaverEnabled = "PrefetchNotEligibleBatterySaverEnabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBatterySaverEnabled]
+  
+  inline def PrefetchNotEligibleBrowserContextOffTheRecord: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBrowserContextOffTheRecord = "PrefetchNotEligibleBrowserContextOffTheRecord".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleBrowserContextOffTheRecord]
+  
+  inline def PrefetchNotEligibleDataSaverEnabled: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleDataSaverEnabled = "PrefetchNotEligibleDataSaverEnabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleDataSaverEnabled]
+  
+  inline def PrefetchNotEligibleExistingProxy: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleExistingProxy = "PrefetchNotEligibleExistingProxy".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleExistingProxy]
+  
+  inline def PrefetchNotEligibleHostIsNonUnique: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleHostIsNonUnique = "PrefetchNotEligibleHostIsNonUnique".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleHostIsNonUnique]
+  
+  inline def PrefetchNotEligibleNonDefaultStoragePartition: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleNonDefaultStoragePartition = "PrefetchNotEligibleNonDefaultStoragePartition".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleNonDefaultStoragePartition]
+  
+  inline def PrefetchNotEligiblePreloadingDisabled: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligiblePreloadingDisabled = "PrefetchNotEligiblePreloadingDisabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligiblePreloadingDisabled]
+  
+  inline def PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy = "PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy]
+  
+  inline def PrefetchNotEligibleSchemeIsNotHttps: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSchemeIsNotHttps = "PrefetchNotEligibleSchemeIsNotHttps".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleSchemeIsNotHttps]
+  
+  inline def PrefetchNotEligibleUserHasCookies: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasCookies = "PrefetchNotEligibleUserHasCookies".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasCookies]
+  
+  inline def PrefetchNotEligibleUserHasServiceWorker: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasServiceWorker = "PrefetchNotEligibleUserHasServiceWorker".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotEligibleUserHasServiceWorker]
+  
+  inline def PrefetchNotFinishedInTime: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotFinishedInTime = "PrefetchNotFinishedInTime".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotFinishedInTime]
+  
+  inline def PrefetchNotStarted: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotStarted = "PrefetchNotStarted".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotStarted]
+  
+  inline def PrefetchNotUsedCookiesChanged: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedCookiesChanged = "PrefetchNotUsedCookiesChanged".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedCookiesChanged]
+  
+  inline def PrefetchNotUsedProbeFailed: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedProbeFailed = "PrefetchNotUsedProbeFailed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchNotUsedProbeFailed]
+  
+  inline def PrefetchProxyNotAvailable: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchProxyNotAvailable = "PrefetchProxyNotAvailable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchProxyNotAvailable]
+  
+  inline def PrefetchResponseUsed: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchResponseUsed = "PrefetchResponseUsed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchResponseUsed]
+  
+  inline def PrefetchSuccessfulButNotUsed: typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchSuccessfulButNotUsed = "PrefetchSuccessfulButNotUsed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrefetchSuccessfulButNotUsed]
+}

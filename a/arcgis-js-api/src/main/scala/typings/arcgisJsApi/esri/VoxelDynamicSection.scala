@@ -9,38 +9,38 @@ trait VoxelDynamicSection
      with JSONSupport {
   
   /**
-    * Whether or not the dynamic section is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#enabled)
-    */
+  		 * Whether or not the dynamic section is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#enabled)
+  		 */
   var enabled: Boolean
   
   /**
-    * The label for the dynamic section.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#label)
-    */
+  		 * The label for the dynamic section.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#label)
+  		 */
   var label: String
   
   /**
-    * The orientation angle (in the degrees) of the dynamic section plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#orientation)
-    */
+  		 * The orientation angle (in the degrees) of the dynamic section plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#orientation)
+  		 */
   var orientation: Double
   
   /**
-    * A point on the dynamic section plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#point)
-    */
+  		 * A point on the dynamic section plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#point)
+  		 */
   var point: js.Array[Double]
   
   /**
-    * The tilt angle (in degrees) of the dynamic section plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#tilt)
-    */
+  		 * The tilt angle (in degrees) of the dynamic section plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelDynamicSection.html#tilt)
+  		 */
   var tilt: Double
 }
 object VoxelDynamicSection {

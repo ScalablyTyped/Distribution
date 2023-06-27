@@ -6,18 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorPlugins extends StObject {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/javaEnabled)
+    */
   /* standard dom */
   def javaEnabled(): scala.Boolean
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigatorPlugins/mimeTypes)
+    */
   /* standard dom */
   val mimeTypes: MimeTypeArray
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/pdfViewerEnabled) */
   /* standard dom */
   val pdfViewerEnabled: scala.Boolean
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/plugins)
+    */
   /* standard dom */
   val plugins: PluginArray
 }

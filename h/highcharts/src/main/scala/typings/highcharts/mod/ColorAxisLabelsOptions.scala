@@ -45,10 +45,6 @@ trait ColorAxisLabelsOptions extends StObject {
     * (Highcharts, Gantt) The label's pixel distance from the perimeter of the
     * plot area. On cartesian charts, this is overridden if the `labels.y`
     * setting is set.
-    *
-    * * On polar charts, if it's a percentage string, it is interpreted the
-    * same as series.radius, so the label can be aligned under the gauge's
-    * shape.
     */
   var distance: js.UndefOr[Double] = js.undefined
   

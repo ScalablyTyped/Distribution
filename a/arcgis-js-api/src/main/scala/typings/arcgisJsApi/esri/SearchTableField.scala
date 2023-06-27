@@ -23,23 +23,23 @@ trait SearchTableField
      with Accessor {
   
   /**
-    * Whether or not the field is an exact match.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#exactMatch)
-    */
+  		 * Whether or not the field is an exact match.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#exactMatch)
+  		 */
   var exactMatch: Boolean = js.native
   
   /**
-    * The name of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#name)
-    */
+  		 * The name of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * The data type of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#type)
-    */
+  		 * The data type of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html#type)
+  		 */
   var `type`: `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
 }

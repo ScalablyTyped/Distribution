@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.all_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.windowsPhone81
   - typings.microsoftGraph.microsoftGraphStrings.windows81AndLater
   - typings.microsoftGraph.microsoftGraphStrings.windows10AndLater
-  - typings.microsoftGraph.microsoftGraphStrings.all
+  - typings.microsoftGraph.microsoftGraphStrings.all_
 */
 trait PolicyPlatformType extends StObject
 object PolicyPlatformType {
   
-  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: all_ = "all".asInstanceOf[all_]
   
   inline def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
   

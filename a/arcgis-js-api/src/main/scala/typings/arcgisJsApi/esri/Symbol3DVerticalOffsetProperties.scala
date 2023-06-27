@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Symbol3DVerticalOffsetProperties extends StObject {
   
   /**
-    * The maximum vertical symbol offset in world units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#maxWorldLength)
-    */
+  		 * The maximum vertical symbol offset in world units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#maxWorldLength)
+  		 */
   var maxWorldLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum vertical symbol offset in world units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#minWorldLength)
-    */
+  		 * The minimum vertical symbol offset in world units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#minWorldLength)
+  		 */
   var minWorldLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * Vertical symbol offset in screen size.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#screenLength)
-    */
+  		 * Vertical symbol offset in screen size.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#screenLength)
+  		 */
   var screenLength: js.UndefOr[Double | String] = js.undefined
 }
 object Symbol3DVerticalOffsetProperties {

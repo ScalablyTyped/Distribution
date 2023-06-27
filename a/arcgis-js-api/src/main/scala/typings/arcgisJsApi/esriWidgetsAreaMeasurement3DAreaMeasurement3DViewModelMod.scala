@@ -11,10 +11,10 @@ object esriWidgetsAreaMeasurement3DAreaMeasurement3DViewModelMod {
   @JSImport("esri/widgets/AreaMeasurement3D/AreaMeasurement3DViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [AreaMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html)
-    */
+  		 * Provides the logic for the [AreaMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with AreaMeasurement3DViewModel {

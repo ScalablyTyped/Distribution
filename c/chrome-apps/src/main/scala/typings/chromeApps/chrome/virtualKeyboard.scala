@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Virtual Keyboard //
 //////////////////////
 /**
-  * @requires(CrOS Kiosk) Important: This API works only in Chrome OS apps.
+  * @requires CrOS Kiosk -Important: This API works only in Chrome OS apps.
   * @requires Permissions: 'virtualKeyboard'
   * @since Chrome 58
   * @description

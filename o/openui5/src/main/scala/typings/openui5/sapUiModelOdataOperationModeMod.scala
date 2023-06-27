@@ -59,11 +59,11 @@ object sapUiModelOdataOperationModeMod {
       * the binding will behave exactly like when using the operation mode `Client`. Initially configured filters/sorters
       * will be applied afterwards on the client.
       * 	 - If the `$inlinecount` is higher than the threshold, the binding will behave like in operation mode
-      * 			`Server`. In this case a new data request containing the initially set filters/sorters will be issued.
-      * 			 It is up to the application to chose an appropriate threshold value. Ideally, it should be high
-      * 			enough to fetch all data in the most common scenarios (to avoid a fallback to operation mode `Server`,
-      * 			requiring an additional request), but it also should be low enough to ensure a fast response in case
-      * 			there is much more data than expected.
+      *     `Server`. In this case a new data request containing the initially set filters/sorters will be issued.
+      *      It is up to the application to chose an appropriate threshold value. Ideally, it should be high
+      *     enough to fetch all data in the most common scenarios (to avoid a fallback to operation mode `Server`,
+      *     requiring an additional request), but it also should be low enough to ensure a fast response in case
+      *     there is much more data than expected.
       * 	 - Count mode `None` is not supported together with operation mode `Auto`
       */
     @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for adraffy__ens-normalize
 
-Typings are for version 1.9.0
+Typings are for version 1.9.2
 
 ## Library description:
 Compact ES6 Ethereum Name Service (ENS) Name Normalizer

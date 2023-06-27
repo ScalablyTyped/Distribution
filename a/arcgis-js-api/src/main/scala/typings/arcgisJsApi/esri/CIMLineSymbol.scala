@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMLineSymbol extends StObject {
   
   /**
-    * The geometric effects applied to the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
-    */
+  		 * The geometric effects applied to the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * The symbol layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
-    */
+  		 * The symbol layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
+  		 */
   var symbolLayers: js.Array[CIMSymbolLayer]
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMLineSymbol
   
   /**
-    * A value indicating whether the symbol size properties are rendered using real world units or page units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
-    */
+  		 * A value indicating whether the symbol size properties are rendered using real world units or page units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMLineSymbol)
+  		 */
   var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
 }
 object CIMLineSymbol {

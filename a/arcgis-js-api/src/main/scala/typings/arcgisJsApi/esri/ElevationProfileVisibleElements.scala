@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationProfileVisibleElements extends StObject {
   
   /**
-    * When set to `false`, the chart is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the chart is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var chart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false` the button used to clear the current elevation profile is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false` the button used to clear the current elevation profile is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var clearButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the legend (which includes statistics) is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the legend (which includes statistics) is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var legend: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the button used to select a path is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the button used to select a path is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var selectButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the button used to open the settings popup is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the button used to open the settings popup is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var settingsButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the button used to start drawing/sketchinng is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the button used to start drawing/sketchinng is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var sketchButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the element used to toggle uniform chart scaling on or off is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the element used to toggle uniform chart scaling on or off is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var uniformChartScalingToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the dropdown used to select the units is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
-    */
+  		 * When set to `false`, the dropdown used to select the units is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#VisibleElements)
+  		 */
   var unitSelector: js.UndefOr[Boolean] = js.undefined
 }
 object ElevationProfileVisibleElements {

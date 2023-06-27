@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectParametersTransformation extends StObject {
   
   /**
-    * The well-known ID of the datum transformation to apply to the projection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
-    */
+  		 * The well-known ID of the datum transformation to apply to the projection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
+  		 */
   var wkid: js.UndefOr[Double] = js.undefined
   
   /**
-    * The well-known text that defines a spatial reference.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
-    */
+  		 * The well-known text that defines a spatial reference.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
+  		 */
   var wkt: js.UndefOr[String] = js.undefined
 }
 object ProjectParametersTransformation {

@@ -212,7 +212,7 @@ object events {
       * Matches if the URL without query segment and fragment identifier matches a specified regular expression.
       * Port numbers are stripped from the URL if they match the default port number.
       * The regular expressions use the RE2 syntax.
-      * @see[RE2 syntax docs]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
+      * @see https://github.com/google/re2/blob/master/doc/syntax.txt
       * @since Chrome 28.
       */
     var originAndPathMatches: js.UndefOr[String] = js.undefined
@@ -259,7 +259,7 @@ object events {
     /** Matches if the URL (without fragment identifier) matches a specified regular expression.
       * Port numbers are stripped from the URL if they match the default port number.
       * The regular expressions use the RE2 syntax.
-      * @see[RE2 syntax docs]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
+      * @see https://github.com/google/re2/blob/master/doc/syntax.txt
       */
     var urlMatches: js.UndefOr[String] = js.undefined
     

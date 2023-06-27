@@ -10,18 +10,18 @@ trait CIMGeometricEffectTaperedPolygon
      with CIMGeometricEffectType {
   
   /**
-    * The width at the start of the line to be used to generate a polygon.
-    */
+  			 * The width at the start of the line to be used to generate a polygon.
+  			 */
   var fromWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance along the line to be used to generate the polygon.
-    */
+  			 * The distance along the line to be used to generate the polygon.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width at the end of the line to be used to generate the polygon.
-    */
+  			 * The width at the end of the line to be used to generate the polygon.
+  			 */
   var toWidth: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

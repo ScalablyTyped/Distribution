@@ -8,7 +8,7 @@ trait PackagePatchedversions extends StObject {
   
   /** @description The name of the package affected by the vulnerability. */
   @JSName("package")
-  var _package: `629`
+  var _package: `761`
   
   /** @description The package version(s) that resolve the vulnerability. */
   var patched_versions: js.UndefOr[String | Null] = js.undefined
@@ -21,7 +21,7 @@ trait PackagePatchedversions extends StObject {
 }
 object PackagePatchedversions {
   
-  inline def apply(_package: `629`): PackagePatchedversions = {
+  inline def apply(_package: `761`): PackagePatchedversions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackagePatchedversions]
@@ -50,6 +50,6 @@ object PackagePatchedversions {
     
     inline def setVulnerable_version_rangeUndefined: Self = StObject.set(x, "vulnerable_version_range", js.undefined)
     
-    inline def set_package(value: `629`): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: `761`): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

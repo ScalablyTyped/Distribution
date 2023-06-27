@@ -32,7 +32,7 @@ trait XInvocation
     * returns `TRUE` if the method with the specified name exists, else `FALSE` .
     *
     * This optimizes the calling sequence ( {@link XInvocation.hasMethod()} , {@link XInvocation.invoke()} )!
-    * @@param aName        specifies the name of the method.
+    * @param aName        specifies the name of the method.
     */
   def hasMethod(aName: String): Boolean
   
@@ -48,7 +48,7 @@ trait XInvocation
     *     ( XInvocation::hasProperty(),
     *
     *     XInvocation::setValue() )!
-    * @@param aName    specifies the name of the property.
+    * @param aName    specifies the name of the property.
     */
   def hasProperty(aName: String): Boolean
   

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -139,13 +138,13 @@ object sapUiCommonsDropdownBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit]
     ): this.type = js.native
     def attachSearchHelp(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.DropdownBox` itself
       */
@@ -171,7 +170,7 @@ object sapUiCommonsDropdownBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit]
     ): this.type = js.native
     def attachSearchHelp(
       /**
@@ -182,7 +181,7 @@ object sapUiCommonsDropdownBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.DropdownBox` itself
       */
@@ -206,13 +205,13 @@ object sapUiCommonsDropdownBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit]
     ): this.type = js.native
     def detachSearchHelp(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropdownBoxSearchHelpEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -220,17 +219,19 @@ object sapUiCommonsDropdownBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:searchHelp searchHelp} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearchHelp(): this.type = js.native
-    def fireSearchHelp(/**
+    def fireSearchHelp(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: DropdownBox$SearchHelpEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getMaxHistoryItems maxHistoryItems}.
@@ -285,7 +286,7 @@ object sapUiCommonsDropdownBoxMod {
     def getSearchHelpText(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle the click event happening in the DropdownBox
       */
@@ -295,7 +296,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle keydown event
       */
@@ -305,7 +306,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle keypress event
       */
@@ -315,7 +316,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle paste event
       */
@@ -325,7 +326,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle pseudo event onsapdelete. If triggered with open dropdown and current item provided by history
       * feature, removes the selected item from this instance's history.
@@ -336,7 +337,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle pseudo event onsaphome
       */
@@ -346,7 +347,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Move the cursor one step to the left (and adapt selection)
       */
@@ -356,7 +357,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Move the cursor one step to the right (and adapt selection)
       */
@@ -366,7 +367,7 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle the select event happening in the DropdownBox
       */
@@ -459,6 +460,33 @@ object sapUiCommonsDropdownBoxMod {
     sSearchHelpText: String): this.type = js.native
   }
   
+  trait DropdownBox$SearchHelpEventParameters extends StObject {
+    
+    /**
+      * The current value of the DropdownBox.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DropdownBox$SearchHelpEventParameters {
+    
+    inline def apply(): DropdownBox$SearchHelpEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropdownBox$SearchHelpEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownBox$SearchHelpEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DropdownBoxSearchHelpEvent = typings.openui5.sapUiBaseEventMod.default[DropdownBox$SearchHelpEventParameters]
+  
+  type DropdownBoxSearchHelpEventParameters = DropdownBox$SearchHelpEventParameters
+  
   trait DropdownBoxSettings
     extends StObject
        with ComboBoxSettings {
@@ -475,7 +503,12 @@ object sapUiCommonsDropdownBoxMod {
       * Event fired whenever the configured searchHelpItem is clicked or the searchHelpItem is configured and
       * F4 key is pressed.
       */
-    var searchHelp: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var searchHelp: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropdownBox$SearchHelpEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * (optional) The additional Text to use for the search help entry.
@@ -513,7 +546,9 @@ object sapUiCommonsDropdownBoxMod {
       
       inline def setMaxHistoryItemsUndefined: Self = StObject.set(x, "maxHistoryItems", js.undefined)
       
-      inline def setSearchHelp(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "searchHelp", js.Any.fromFunction1(value))
+      inline def setSearchHelp(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropdownBox$SearchHelpEventParameters] => Unit
+      ): Self = StObject.set(x, "searchHelp", js.Any.fromFunction1(value))
       
       inline def setSearchHelpAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "searchHelpAdditionalText", value.asInstanceOf[js.Any])
       

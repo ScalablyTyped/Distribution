@@ -4,38 +4,52 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides methods and properties to store and retrieve metrics regarding the browser's document navigation events. For example, this interface can be used to determine how much time it takes to load or unload a document. */
+/**
+  * Provides methods and properties to store and retrieve metrics regarding the browser's document navigation events. For example, this interface can be used to determine how much time it takes to load or unload a document.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming)
+  */
 trait PerformanceNavigationTiming
   extends StObject
      with PerformanceResourceTiming {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domComplete) */
   /* standard dom */
   val domComplete: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventEnd) */
   /* standard dom */
   val domContentLoadedEventEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventStart) */
   /* standard dom */
   val domContentLoadedEventStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/domInteractive) */
   /* standard dom */
   val domInteractive: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventEnd) */
   /* standard dom */
   val loadEventEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/loadEventStart) */
   /* standard dom */
   val loadEventStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/redirectCount) */
   /* standard dom */
   val redirectCount: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/type) */
   /* standard dom */
   val `type`: NavigationTimingType
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd) */
   /* standard dom */
   val unloadEventEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigationTiming/unloadEventStart) */
   /* standard dom */
   val unloadEventStart: DOMHighResTimeStamp
 }

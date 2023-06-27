@@ -26,14 +26,14 @@ trait DeleteParametersPathNameRepositoryid extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     * GitHub Apps must have the `environment:write` repository permission to use this endpoint.
     */
-  var patch: ParametersPathNameRepositoryidRequestBodyContentApplicationjson165
+  var patch: ParametersPathNameRepositoryidRequestBodyContentApplicationjson193
 }
 object DeleteParametersPathNameRepositoryid {
   
   inline def apply(
     delete: ParametersPathNameRepositoryid,
     get: ParametersPathEnvironmentnameName,
-    patch: ParametersPathNameRepositoryidRequestBodyContentApplicationjson165
+    patch: ParametersPathNameRepositoryidRequestBodyContentApplicationjson193
   ): DeleteParametersPathNameRepositoryid = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathNameRepositoryid]
@@ -46,6 +46,6 @@ object DeleteParametersPathNameRepositoryid {
     
     inline def setGet(value: ParametersPathEnvironmentnameName): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: ParametersPathNameRepositoryidRequestBodyContentApplicationjson165): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: ParametersPathNameRepositoryidRequestBodyContentApplicationjson193): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

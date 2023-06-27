@@ -136,7 +136,7 @@ object sapMFlexItemDataMod {
     def getAlignSelf(): FlexAlignSelf | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FlexAlignSelf * / any */ String) = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -149,7 +149,7 @@ object sapMFlexItemDataMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getBaseSize baseSize}.
       *
@@ -174,7 +174,7 @@ object sapMFlexItemDataMod {
     def getGrowFactor(): float = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getMaxHeight maxHeight}.
       *
@@ -187,7 +187,7 @@ object sapMFlexItemDataMod {
     def getMaxHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getMaxWidth maxWidth}.
       *
@@ -200,7 +200,7 @@ object sapMFlexItemDataMod {
     def getMaxWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getMinHeight minHeight}.
       *
@@ -213,7 +213,7 @@ object sapMFlexItemDataMod {
     def getMinHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getMinWidth minWidth}.
       *
@@ -237,7 +237,7 @@ object sapMFlexItemDataMod {
     def getOrder(): int = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Gets current value of property {@link #getShrinkFactor shrinkFactor}.
       *
@@ -386,7 +386,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Defines the background style of the flex item.
       */
@@ -395,7 +395,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * The base size is the initial main size of the item for the flex algorithm. If set to "auto", this will
       * be the computed size of the item.
@@ -412,7 +412,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * The maximum height of the flex item.
       */
@@ -421,7 +421,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * The maximum width of the flex item.
       */
@@ -430,7 +430,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * The minimum height of the flex item.
       */
@@ -439,7 +439,7 @@ object sapMFlexItemDataMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * The minimum width of the flex item.
       */
@@ -453,7 +453,7 @@ object sapMFlexItemDataMod {
     var order: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * The shrink factor determines how much the flex item will shrink relative to the rest of the flex items
       * in the flex container when negative free space is distributed.

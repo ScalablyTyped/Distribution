@@ -44,6 +44,8 @@ trait DOMAttributes[Target /* <: EventTarget */]
   
   var onCanPlayThroughCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
+  var onCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
+  
   // Form Events
   var onChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
@@ -53,6 +55,9 @@ trait DOMAttributes[Target /* <: EventTarget */]
   var onClick: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
   
   var onClickCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.MouseEventHandler[Target]] = js.undefined
+  
+  // Dialog Events
+  var onClose: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
   // Composition Events
   var onCompositionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]] = js.undefined
@@ -132,6 +137,11 @@ trait DOMAttributes[Target /* <: EventTarget */]
   
   var onEndedCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
+  // PictureInPicture Events
+  var onEnterPictureInPicture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
+  
+  var onEnterPictureInPictureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
+  
   var onError: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
   var onErrorCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
@@ -169,6 +179,10 @@ trait DOMAttributes[Target /* <: EventTarget */]
   var onKeyUp: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
   
   var onKeyUpCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.KeyboardEventHandler[Target]] = js.undefined
+  
+  var onLeavePictureInPicture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
+  
+  var onLeavePictureInPictureCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
   
   // Image Events
   var onLoad: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
@@ -280,6 +294,10 @@ trait DOMAttributes[Target /* <: EventTarget */]
   
   var onResetCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
+  var onResize: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
+  
+  var onResizeCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]] = js.undefined
+  
   // UI Events
   var onScroll: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.UIEventHandler[Target]] = js.undefined
   
@@ -339,9 +357,21 @@ trait DOMAttributes[Target /* <: EventTarget */]
   var onTouchStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TouchEventHandler[Target]] = js.undefined
   
   // Transition Events
+  var onTransitionCancel: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
+  var onTransitionCancelCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
   var onTransitionEnd: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
   
   var onTransitionEndCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
+  var onTransitionRun: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
+  var onTransitionRunCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
+  var onTransitionStart: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
+  
+  var onTransitionStartCapture: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]] = js.undefined
   
   var onVolumeChange: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]] = js.undefined
   
@@ -438,6 +468,10 @@ object DOMAttributes {
     
     inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
+    inline def setOnCancel(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
+    
+    inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+    
     inline def setOnChange(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     inline def setOnChangeCapture(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
@@ -453,6 +487,10 @@ object DOMAttributes {
     inline def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setOnClose(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     inline def setOnCompositionEnd(value: typings.preact.srcJsxMod.JSXInternal.CompositionEventHandler[Target]): Self = StObject.set(x, "onCompositionEnd", value.asInstanceOf[js.Any])
     
@@ -606,6 +644,14 @@ object DOMAttributes {
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
+    inline def setOnEnterPictureInPicture(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onEnterPictureInPicture", value.asInstanceOf[js.Any])
+    
+    inline def setOnEnterPictureInPictureCapture(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onEnterPictureInPictureCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnEnterPictureInPictureCaptureUndefined: Self = StObject.set(x, "onEnterPictureInPictureCapture", js.undefined)
+    
+    inline def setOnEnterPictureInPictureUndefined: Self = StObject.set(x, "onEnterPictureInPicture", js.undefined)
+    
     inline def setOnError(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     inline def setOnErrorCapture(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
@@ -677,6 +723,14 @@ object DOMAttributes {
     inline def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+    
+    inline def setOnLeavePictureInPicture(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onLeavePictureInPicture", value.asInstanceOf[js.Any])
+    
+    inline def setOnLeavePictureInPictureCapture(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onLeavePictureInPictureCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnLeavePictureInPictureCaptureUndefined: Self = StObject.set(x, "onLeavePictureInPictureCapture", js.undefined)
+    
+    inline def setOnLeavePictureInPictureUndefined: Self = StObject.set(x, "onLeavePictureInPicture", js.undefined)
     
     inline def setOnLoad(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
@@ -894,6 +948,14 @@ object DOMAttributes {
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
+    inline def setOnResize(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+    
+    inline def setOnResizeCapture(value: typings.preact.srcJsxMod.JSXInternal.PictureInPictureEventHandler[Target]): Self = StObject.set(x, "onResizeCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnResizeCaptureUndefined: Self = StObject.set(x, "onResizeCapture", js.undefined)
+    
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    
     inline def setOnScroll(value: typings.preact.srcJsxMod.JSXInternal.UIEventHandler[Target]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     inline def setOnScrollCapture(value: typings.preact.srcJsxMod.JSXInternal.UIEventHandler[Target]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
@@ -1002,6 +1064,14 @@ object DOMAttributes {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
+    inline def setOnTransitionCancel(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionCancel", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionCancelCapture(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionCancelCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionCancelCaptureUndefined: Self = StObject.set(x, "onTransitionCancelCapture", js.undefined)
+    
+    inline def setOnTransitionCancelUndefined: Self = StObject.set(x, "onTransitionCancel", js.undefined)
+    
     inline def setOnTransitionEnd(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionEnd", value.asInstanceOf[js.Any])
     
     inline def setOnTransitionEndCapture(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
@@ -1009,6 +1079,22 @@ object DOMAttributes {
     inline def setOnTransitionEndCaptureUndefined: Self = StObject.set(x, "onTransitionEndCapture", js.undefined)
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+    
+    inline def setOnTransitionRun(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionRun", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionRunCapture(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionRunCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionRunCaptureUndefined: Self = StObject.set(x, "onTransitionRunCapture", js.undefined)
+    
+    inline def setOnTransitionRunUndefined: Self = StObject.set(x, "onTransitionRun", js.undefined)
+    
+    inline def setOnTransitionStart(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionStart", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionStartCapture(value: typings.preact.srcJsxMod.JSXInternal.TransitionEventHandler[Target]): Self = StObject.set(x, "onTransitionStartCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnTransitionStartCaptureUndefined: Self = StObject.set(x, "onTransitionStartCapture", js.undefined)
+    
+    inline def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
     
     inline def setOnVolumeChange(value: typings.preact.srcJsxMod.JSXInternal.GenericEventHandler[Target]): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
     

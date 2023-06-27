@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageSampleResultProperties extends StObject {
   
   /**
-    * An array of image sample results returned in response to [ImageryLayer.getSamples()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#getSamples) method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleResult.html#samples)
-    */
+  		 * An array of image sample results returned in response to [ImageryLayer.getSamples()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#getSamples) method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleResult.html#samples)
+  		 */
   var samples: js.UndefOr[js.Array[ImageSampleProperties]] = js.undefined
 }
 object ImageSampleResultProperties {

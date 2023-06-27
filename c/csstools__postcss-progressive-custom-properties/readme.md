@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-progressive-custom-properties
 
-Typings are for version 2.1.1
+Typings are for version 2.3.0
 
 ## Library description:
 Correctly declare progressive enhancements for CSS Custom Properties.

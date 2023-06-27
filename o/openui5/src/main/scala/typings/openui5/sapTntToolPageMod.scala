@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.PageBackgroundDesign
 import typings.openui5.sapTntLibraryMod.IToolHeader
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -157,13 +158,26 @@ object sapTntToolPageMod {
     def destroySideContent(): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Destroys the subHeader in the aggregation {@link #getSubHeader subHeader}.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def destroySubHeader(): this.type = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Gets current value of property {@link #getContentBackgroundDesign contentBackgroundDesign}.
+      *
+      * Specifies the content background design.
+      *
+      * Default value is `Standard`.
+      *
+      * @returns Value of property `contentBackgroundDesign`
+      */
+    def getContentBackgroundDesign(): PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) = js.native
     
     /**
       * Gets content of aggregation {@link #getHeader header}.
@@ -198,7 +212,7 @@ object sapTntToolPageMod {
     def getSideExpanded(): Boolean = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Gets content of aggregation {@link #getSubHeader subHeader}.
       *
@@ -267,6 +281,33 @@ object sapTntToolPageMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
+      * @since 1.115
+      *
+      * Sets a new value for property {@link #getContentBackgroundDesign contentBackgroundDesign}.
+      *
+      * Specifies the content background design.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Standard`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setContentBackgroundDesign(): this.type = js.native
+    def setContentBackgroundDesign(
+      /**
+      * New value for property `contentBackgroundDesign`
+      */
+    sContentBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String
+    ): this.type = js.native
+    def setContentBackgroundDesign(
+      /**
+      * New value for property `contentBackgroundDesign`
+      */
+    sContentBackgroundDesign: PageBackgroundDesign
+    ): this.type = js.native
+    
+    /**
       * Sets the aggregated {@link #getHeader header}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -297,7 +338,7 @@ object sapTntToolPageMod {
     bSideExpanded: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Sets the aggregated {@link #getSubHeader subHeader}.
       *
@@ -319,6 +360,15 @@ object sapTntToolPageMod {
   trait ToolPageSettings
     extends StObject
        with ControlSettings {
+    
+    /**
+      * @since 1.115
+      *
+      * Specifies the content background design.
+      */
+    var contentBackgroundDesign: js.UndefOr[
+        PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * The control to appear in the header area.
@@ -345,7 +395,7 @@ object sapTntToolPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * The control to appear in the subheader area.
       */
@@ -360,6 +410,12 @@ object sapTntToolPageMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ToolPageSettings] (val x: Self) extends AnyVal {
+      
+      inline def setContentBackgroundDesign(
+        value: PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "contentBackgroundDesign", value.asInstanceOf[js.Any])
+      
+      inline def setContentBackgroundDesignUndefined: Self = StObject.set(x, "contentBackgroundDesign", js.undefined)
       
       inline def setHeader(value: IToolHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup
 
-Typings are for version 3.21.7
+Typings are for version 3.25.3
 
 ## Library description:
 Next-generation ES module bundler

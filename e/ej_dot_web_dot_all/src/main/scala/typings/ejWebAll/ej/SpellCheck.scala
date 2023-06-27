@@ -382,13 +382,13 @@ object SpellCheck {
   trait ContextMenuSettings extends StObject {
     
     /** When set to true, enables the context menu options available for the SpellCheck.
-      * @Default {true}
+      * @default {true}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Contains all the default context menu options that are applicable for SpellCheck. It also supports adding custom menu items. All the SpellCheck related context menu items are
       * grouped under this menu collection.
-      * @Default {{% highlight javascript %}[{ id: IgnoreAll, text: Ignore All },{ id: AddToDictionary, text: Add To Dictionary }]{% endhighlight %}}
+      * @default {{% highlight javascript %}[{ id: IgnoreAll, text: Ignore All },{ id: AddToDictionary, text: Add To Dictionary }]{% endhighlight %}}
       */
     var menuItems: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -663,32 +663,32 @@ object SpellCheck {
   trait IgnoreSettings extends StObject {
     
     /** When set to true, ignoring the alphanumeric words from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreAlphaNumericWords: js.UndefOr[String] = js.undefined
     
     /** When set to true, ignoring the Email address from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreEmailAddress: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the file address path from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreFileNames: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the MixedCase words from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreMixedCaseWords: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the UpperCase words from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreUpperCase: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, ignoring the Url from the error word consideration.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreUrl: js.UndefOr[Boolean] = js.undefined
   }
@@ -744,12 +744,12 @@ object SpellCheck {
     
     /** Sets the data type for the ajax call used within the SpellCheck control, denoting the type of data that are expected to be retrieved from the server. The applicable values are
       * json and jsonp.
-      * @Default {jsonp}
+      * @default {jsonp}
       */
     var ajaxDataType: js.UndefOr[String] = js.undefined
     
     /** To set either â€˜Postâ€™ or â€˜Getâ€™ for ajax request type which invokes when validate, get suggestion and dictionary action.Possible values are â€˜POSTâ€™ or â€˜GETâ€™
-      * @Default {GET}
+      * @default {GET}
       */
     var ajaxRequestType: js.UndefOr[String] = js.undefined
     
@@ -770,7 +770,7 @@ object SpellCheck {
     var contextOpen: js.UndefOr[js.Function1[/* e */ ContextOpenEventArgs, Unit]] = js.undefined
     
     /** It allows to spell check the multiple target HTML element's texts and correct its error words.
-      * @Default {null}
+      * @default {null}
       */
     var controlsToValidate: js.UndefOr[String] = js.undefined
     
@@ -791,12 +791,12 @@ object SpellCheck {
     var dictionarySettings: js.UndefOr[DictionarySettings] = js.undefined
     
     /** When set to true, allows sending Asynchronous ajax request for checking the spelling errors.
-      * @Default {true}
+      * @default {true}
       */
     var enableAsync: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the spellcheck operation on Enter/Space key-press.
-      * @Default {false}
+      * @default {false}
       */
     var enableValidateOnType: js.UndefOr[Boolean] = js.undefined
     
@@ -805,27 +805,27 @@ object SpellCheck {
     var ignoreSettings: js.UndefOr[IgnoreSettings] = js.undefined
     
     /** To ignore the words from the error word consideration.
-      * @Default {[]}
+      * @default {[]}
       */
     var ignoreWords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** When set to true, allows the spellcheck to render based upon screen size.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the specific culture to the SpellCheck.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** To set the maximum suggestion display count.
-      * @Default {6}
+      * @default {6}
       */
     var maxSuggestionCount: js.UndefOr[Double] = js.undefined
     
     /** To display the error word in a customized style.
-      * @Default {e-errorword}
+      * @default {e-errorword}
       */
     var misspellWordCss: js.UndefOr[String] = js.undefined
     

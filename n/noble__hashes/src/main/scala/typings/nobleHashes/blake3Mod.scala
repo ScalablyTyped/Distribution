@@ -1,7 +1,7 @@
 package typings.nobleHashes
 
 import typings.nobleHashes.blake2Mod.BLAKE2
-import typings.nobleHashes.utilsMod.Hash
+import typings.nobleHashes.utilsMod.HashXOF
 import typings.nobleHashes.utilsMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object blake3Mod {
     def blockLen: Double = js.native
     inline def blockLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockLen")(x.asInstanceOf[js.Any])
     
-    inline def create(opts: Blake3Opts): Hash[BLAKE3_] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Hash[BLAKE3_]]
+    inline def create(opts: Blake3Opts): HashXOF[BLAKE3_] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[HashXOF[BLAKE3_]]
     
     @JSImport("@noble/hashes/blake3", "blake3.outputLen")
     @js.native

@@ -4,15 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** One end of a connection—or potential connection—and how it's configured. Each RTCSessionDescription consists of a description type indicating which part of the offer/answer negotiation process it describes and of the SDP descriptor of the session. */
+/**
+  * One end of a connection—or potential connection—and how it's configured. Each RTCSessionDescription consists of a description type indicating which part of the offer/answer negotiation process it describes and of the SDP descriptor of the session.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription)
+  */
 trait RTCSessionDescription extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/sdp) */
   /* standard dom */
   val sdp: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/toJSON) */
   /* standard dom */
   def toJSON(): Any
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/type) */
   /* standard dom */
   val `type`: RTCSdpType
 }

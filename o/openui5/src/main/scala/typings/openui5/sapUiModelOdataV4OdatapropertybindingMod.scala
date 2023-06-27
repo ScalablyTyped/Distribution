@@ -1,6 +1,9 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiModelBindingMod.Binding$ChangeEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataReceivedEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataRequestedEventParameters
 import typings.openui5.sapUiModelOdataV4ValueListTypeMod.ValueListType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -85,7 +88,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     extends typings.openui5.sapUiModelPropertyBindingMod.default {
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * See {@link sap.ui.base.EventProvider#attachEvent}
       * See:
@@ -138,23 +141,22 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for read requests. The group ID of the binding is alternatively
       * defined by
       * 	 the `groupId` parameter of the OData model; see {@link sap.ui.model.odata.v4.ODataModel#constructor},
-      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link
-      * sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *
       *
       * @returns The group ID
       */
     def getGroupId(): String = js.native
     
     /**
-      * @SINCE 1.53.0
+      * @since 1.53.0
       *
-      * Returns the root binding of this binding's hierarchy, see {@link topic:fccfb2eb41414f0792c165e69a878717
-      * Initialization and Read Requests}.
+      * Returns the root binding of this binding's hierarchy, see {@link https://ui5.sap.com/#/topic/fccfb2eb41414f0792c165e69a878717 Initialization and Read Requests}.
       *
       * @returns The root binding or `undefined` if this binding is unresolved (see {@link sap.ui.model.Binding#isResolved}).
       */
@@ -163,7 +165,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
       ] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for update requests. The update group ID of the binding
       * is alternatively defined by
@@ -176,7 +178,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     def getUpdateGroupId(): String = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Determines which type of value list exists for this property.
       *
@@ -185,13 +187,13 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     def getValueListType(): ValueListType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueListType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
       * entity deletions which have not been sent successfully to the server. This function does not take the
       * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
       * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, unless
-      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation }
       * has been prevented and {@link sap.ui.model.odata.v4.Context#isInactive} therefore returns `1`.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
@@ -203,14 +205,14 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     def hasPendingChanges(): Boolean = js.native
     def hasPendingChanges(
       /**
-      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters
-      * changeParameters}, {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh
-      * refresh} (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend
-      * suspend} because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since
-      * 1.97.0) or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding.
-      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding
-      * root binding} are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using
-      * the `$$ownRequest` parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
+      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters changeParameters},
+      * {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh refresh }
+      * (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend suspend }
+      * because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since 1.97.0)
+      * or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding. Since
+      * 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding root binding }
+      * are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using the `$$ownRequest`
+      * parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
       */
     bIgnoreKeptAlive: Boolean
     ): Boolean = js.native
@@ -229,10 +231,10 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
-      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link
-      * #refresh} if you do not need the promise.
+      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link #refresh }
+      * if you do not need the promise.
       *
       * @returns A promise which resolves without a defined result when the refresh is finished and rejects with
       * an instance of `Error` if the refresh failed
@@ -244,7 +246,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     sGroupId: String): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Requests the value of the property binding.
       *
@@ -254,7 +256,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     def requestValue(): js.Promise[js.UndefOr[Any]] = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Requests information to retrieve a value list for this property.
       *
@@ -270,7 +272,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.47.0
+      * @since 1.47.0
       *
       * Determines which type of value list exists for this property.
       *
@@ -280,7 +282,7 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     def requestValueListType(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Resets all pending changes of this binding, see {@link #hasPendingChanges}. Resets also invalid user
       * input.
@@ -303,4 +305,22 @@ object sapUiModelOdataV4OdatapropertybindingMod {
     sGroupId: String
     ): Unit = js.native
   }
+  
+  type ODataPropertyBinding$ChangeEventParameters = Binding$ChangeEventParameters
+  
+  type ODataPropertyBinding$DataReceivedEventParameters = Binding$DataReceivedEventParameters
+  
+  type ODataPropertyBinding$DataRequestedEventParameters = Binding$DataRequestedEventParameters
+  
+  type ODataPropertyBindingChangeEvent = typings.openui5.sapUiBaseEventMod.default[ODataPropertyBinding$ChangeEventParameters]
+  
+  type ODataPropertyBindingChangeEventParameters = ODataPropertyBinding$ChangeEventParameters
+  
+  type ODataPropertyBindingDataReceivedEvent = typings.openui5.sapUiBaseEventMod.default[ODataPropertyBinding$DataReceivedEventParameters]
+  
+  type ODataPropertyBindingDataReceivedEventParameters = ODataPropertyBinding$DataReceivedEventParameters
+  
+  type ODataPropertyBindingDataRequestedEvent = typings.openui5.sapUiBaseEventMod.default[ODataPropertyBinding$DataRequestedEventParameters]
+  
+  type ODataPropertyBindingDataRequestedEventParameters = ODataPropertyBinding$DataRequestedEventParameters
 }

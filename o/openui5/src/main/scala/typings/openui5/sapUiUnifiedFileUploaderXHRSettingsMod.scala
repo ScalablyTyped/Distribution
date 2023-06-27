@@ -122,7 +122,7 @@ object sapUiUnifiedFileUploaderXHRSettingsMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getWithCredentials withCredentials}.
       *
@@ -135,7 +135,7 @@ object sapUiUnifiedFileUploaderXHRSettingsMod {
     def getWithCredentials(): Boolean = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getWithCredentials withCredentials}.
       *
@@ -159,7 +159,7 @@ object sapUiUnifiedFileUploaderXHRSettingsMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Determines the value of the `XMLHttpRequest.withCredentials` property
       */

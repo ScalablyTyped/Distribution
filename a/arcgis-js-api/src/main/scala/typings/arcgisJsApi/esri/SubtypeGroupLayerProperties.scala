@@ -22,169 +22,169 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with CustomParametersMixinProperties {
   
   /**
-    * Copyright information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
-    */
+  		 * Copyright information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * The SQL where clause used to filter features on the client.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
-    */
+  		 * The SQL where clause used to filter features on the client.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
+  		 */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the layer's primary display field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
-    */
+  		 * The name of the layer's primary display field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
+  		 */
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines if the layer is editable.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#editingEnabled)
-    */
+  		 * Determines if the layer is editable.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#editingEnabled)
+  		 */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies how features are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
-    */
+  		 * Specifies how features are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[FeatureLayerBaseElevationInfo] = js.undefined
   
   /**
-    * An array of fields in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#fields)
-    */
+  		 * An array of fields in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#fields)
+  		 */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
-    * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
-    */
+  		 * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
+  		 */
   var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
   
   /**
-    * The version of the geodatabase of the feature service data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
-    */
+  		 * The version of the geodatabase of the feature service data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The geometry type of features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
-    */
+  		 * The geometry type of features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
+  		 */
   var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   
   /**
-    * Indicates whether the client-side features in the layer have `M` (measurement) values.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
-    */
+  		 * Indicates whether the client-side features in the layer have `M` (measurement) values.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
+  		 */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the client-side features in the layer have `Z` (elevation) values.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
-    */
+  		 * Indicates whether the client-side features in the layer have `Z` (elevation) values.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
+  		 */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The historic moment to query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
-    */
+  		 * The historic moment to query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
+  		 */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The layer ID, or layer index, of a Feature Service layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
-    */
+  		 * The layer ID, or layer index, of a Feature Service layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
+  		 */
   var layerId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
-    */
+  		 * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
+  		 */
   var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of field names from the service to include with each feature.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#outFields)
-    */
+  		 * An array of field names from the service to include with each feature.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * When `true`, indicates that M values will be returned.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
-    */
+  		 * When `true`, indicates that M values will be returned.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
+  		 */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, indicates that z-values will always be returned.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
-    */
+  		 * When `true`, indicates that z-values will always be returned.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
+  		 */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
-    */
+  		 * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
+  		 */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * The spatial reference of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [SubtypeSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html) objects that allow you to alter the properties of one or more sublayers of the SubtypeGroupLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#sublayers)
-    */
-  var sublayers: js.UndefOr[CollectionProperties[SubtypeSublayer]] = js.undefined
+  		 * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [SubtypeSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html) objects that allow you to alter the properties of one or more sublayers of the SubtypeGroupLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#sublayers)
+  		 */
+  var sublayers: js.UndefOr[CollectionProperties[SubtypeSublayerProperties]] = js.undefined
   
   /**
-    * The name of the SubtypeGroupLayer's subtype field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#subtypeField)
-    */
+  		 * The name of the SubtypeGroupLayer's subtype field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html#subtypeField)
+  		 */
   var subtypeField: js.UndefOr[String] = js.undefined
   
   /**
-    * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
-    */
+  		 * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object SubtypeGroupLayerProperties {
@@ -277,11 +277,11 @@ object SubtypeGroupLayerProperties {
     
     inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    inline def setSublayers(value: CollectionProperties[SubtypeSublayer]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    inline def setSublayers(value: CollectionProperties[SubtypeSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    inline def setSublayersVarargs(value: SubtypeSublayer*): Self = StObject.set(x, "sublayers", js.Array(value*))
+    inline def setSublayersVarargs(value: SubtypeSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
     
     inline def setSubtypeField(value: String): Self = StObject.set(x, "subtypeField", value.asInstanceOf[js.Any])
     

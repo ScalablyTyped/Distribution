@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-util-symbol" : "1.0.1"
+      "micromark-util-symbol" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-util-symbol" : "1.0.1"
+      "micromark-util-symbol" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

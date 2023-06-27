@@ -18,7 +18,7 @@ object sapBaseUtilEachMod {
     /**
     * function to call for each property name
     */
-  fnCallback: js.Function
+  fnCallback: js.Function2[/* p1 */ Key, /* p2 */ Any, Boolean]
   ): js.Object | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oObject.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[Any]]
   inline def default(
     /**
@@ -28,6 +28,8 @@ object sapBaseUtilEachMod {
     /**
     * function to call for each property name
     */
-  fnCallback: js.Function
+  fnCallback: js.Function2[/* p1 */ Key, /* p2 */ Any, Boolean]
   ): js.Object | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oObject.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[Any]]
+  
+  type Key = int | String
 }

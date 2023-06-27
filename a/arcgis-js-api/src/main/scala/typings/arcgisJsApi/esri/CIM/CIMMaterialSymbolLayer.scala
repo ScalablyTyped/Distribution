@@ -10,13 +10,13 @@ trait CIMMaterialSymbolLayer
      with CIMSymbolLayerType {
   
   /**
-    * The material color.
-    */
+  			 * The material color.
+  			 */
   var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The mode in which the material is applied.
-    */
+  			 * The mode in which the material is applied.
+  			 */
   var materialMode: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MaterialMode * / any */ String
   ] = js.undefined

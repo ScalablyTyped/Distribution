@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMMarkerGraphic extends StObject {
   
   /**
-    * The geometry of the marker.
-    */
+  			 * The geometry of the marker.
+  			 */
   var geometry: js.UndefOr[ExternalReferenceGeometry] = js.undefined
   
   /**
-    * The primitive name.
-    */
+  			 * The primitive name.
+  			 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The symbol used to draw the marker graphic, can be a point, line, polygon, or text symbol.
-    */
+  			 * The symbol used to draw the marker graphic, can be a point, line, polygon, or text symbol.
+  			 */
   var symbol: js.UndefOr[CIMSymbolType] = js.undefined
   
   /**
-    * The text that is defined within the marker if drawn with a text symbol.
-    */
+  			 * The text that is defined within the marker if drawn with a text symbol.
+  			 */
   var textString: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic

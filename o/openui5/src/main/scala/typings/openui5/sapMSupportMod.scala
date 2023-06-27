@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMSupportMod extends Shortcut {
   
   /**
-    * @SINCE 1.11.0
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * @since 1.11.0
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     *
     * ```javascript

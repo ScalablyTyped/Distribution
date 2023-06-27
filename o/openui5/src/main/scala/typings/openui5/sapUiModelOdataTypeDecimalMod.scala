@@ -131,8 +131,8 @@ object sapUiModelOdataTypeDecimalMod {
       */
     sValue: String,
       /**
-      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sTargetType: String
     ): Double | String = js.native
@@ -140,32 +140,47 @@ object sapUiModelOdataTypeDecimalMod {
     /**
       * Parses the given value, which is expected to be of the given type, to a decimal in `string` representation.
       *
-      * @returns the parsed value
+      * @returns The parsed value. The empty string and `null` are parsed to:
+      * 	 - `"0"` if the `parseEmptyValueToZero` format option is set to `true` and the `nullable` constraint
+      *     is set to `false`,
+      * 	 - `null` otherwise.
       */
     def parseValue(
       /**
-      * the value to be parsed; the empty string and `null` are parsed to `null`
+      * The value to be parsed
       */
     vValue: String,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): String = js.native
+    ): String | Null = js.native
     def parseValue(
       /**
-      * the value to be parsed; the empty string and `null` are parsed to `null`
+      * The value to be parsed
       */
     vValue: Double,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): String = js.native
+    ): String | Null = js.native
+    def parseValue(
+      /**
+      * The value to be parsed
+      */
+    vValue: Null,
+      /**
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
+      */
+    sSourceType: String
+    ): String | Null = js.native
     
     /**
       * Validates whether the given value in model representation is valid and meets the defined constraints.

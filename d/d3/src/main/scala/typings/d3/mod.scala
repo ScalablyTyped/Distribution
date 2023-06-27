@@ -136,6 +136,7 @@ import typings.d3.d3Strings.ruby
 import typings.d3.d3Strings.s
 import typings.d3.d3Strings.samp
 import typings.d3.d3Strings.script
+import typings.d3.d3Strings.search
 import typings.d3.d3Strings.section
 import typings.d3.d3Strings.select
 import typings.d3.d3Strings.set
@@ -1060,6 +1061,8 @@ object mod {
   
   inline def create_script(name: script): Selection_[HTMLScriptElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLScriptElement, Unit, Null, Unit]]
   
+  inline def create_search(name: search): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
+  
   inline def create_section(name: section): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
   
   inline def create_select(name: select): Selection_[HTMLSelectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSelectElement, Unit, Null, Unit]]
@@ -1401,6 +1404,8 @@ object mod {
   inline def creator_samp(name: samp): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
   
   inline def creator_script(name: script): js.ThisFunction0[/* this */ BaseType, HTMLScriptElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLScriptElement]]
+  
+  inline def creator_search(name: search): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
   
   inline def creator_section(name: section): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
   

@@ -4,31 +4,46 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order. */
+/**
+  * An iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator)
+  */
 trait NodeIterator extends StObject {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/detach)
+    */
   /* standard dom */
   def detach(): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/filter) */
   /* standard dom */
   val filter: NodeFilter | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/nextNode) */
   /* standard dom */
   def nextNode(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/pointerBeforeReferenceNode) */
   /* standard dom */
   val pointerBeforeReferenceNode: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/previousNode) */
   /* standard dom */
   def previousNode(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/referenceNode) */
   /* standard dom */
   val referenceNode: Node
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/root) */
   /* standard dom */
   val root: Node
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/whatToShow) */
   /* standard dom */
   val whatToShow: Double
 }

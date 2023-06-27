@@ -8,12 +8,12 @@ trait PathRunid extends StObject {
   
   var path: Runid
   
-  var query: Excludepullrequests
+  var query: js.UndefOr[Excludepullrequests] = js.undefined
 }
 object PathRunid {
   
-  inline def apply(path: Runid, query: Excludepullrequests): PathRunid = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Runid): PathRunid = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathRunid]
   }
   
@@ -23,5 +23,7 @@ object PathRunid {
     inline def setPath(value: Runid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Excludepullrequests): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

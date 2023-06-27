@@ -11,10 +11,10 @@ object esriRestKnowledgeGraphOutputQuantizationParametersMod {
   @JSImport("esri/rest/knowledgeGraph/OutputQuantizationParameters", JSImport.Namespace)
   @js.native
   /**
-    * Used to project the geometry onto a virtual grid, likely representing pixels on the screen.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html)
-    */
+  		 * Used to project the geometry onto a virtual grid, likely representing pixels on the screen.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html)
+  		 */
   open class ^ ()
     extends StObject
        with OutputQuantizationParameters {

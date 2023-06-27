@@ -12,5 +12,7 @@ open class WebAuth () extends StObject {
   def authorize(parameters: AuthorizeParams, options: AuthorizeOptions): js.Promise[Credentials] = js.native
   
   def clearSession(): js.Promise[Any] = js.native
+  def clearSession(parameters: Unit, options: ClearSessionOptions): js.Promise[Any] = js.native
   def clearSession(parameters: ClearSessionParams): js.Promise[Any] = js.native
+  def clearSession(parameters: ClearSessionParams, options: ClearSessionOptions): js.Promise[Any] = js.native
 }

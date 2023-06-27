@@ -27,7 +27,7 @@ trait SettingLoadOptions extends StObject {
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the value of the setting.
+    * Specifies the value of the setting.
     *
     * @remarks
     * [Api set: WordApi 1.4]

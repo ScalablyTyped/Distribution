@@ -10,24 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchCreateCreateOptions extends StObject {
   
   /**
-    * The default z-value of the newly created geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
-    */
+  		 * The default z-value of the newly created geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
+  		 */
   var defaultZ: js.UndefOr[Double] = js.undefined
   
   /**
-    * Controls whether the created geometry has z-values or not.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
-    */
+  		 * Controls whether the created geometry has z-values or not.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
+  		 */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies how the graphic can be created.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
-    */
+  		 * Specifies how the graphic can be created.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create)
+  		 */
   var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 object SketchCreateCreateOptions {

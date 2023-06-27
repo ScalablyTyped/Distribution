@@ -19,12 +19,12 @@ object sapUxapObjectPageDynamicHeaderTitleMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.f.DynamicPageTitle#constructor
-    * sap.f.DynamicPageTitle} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.f.DynamicPageTitle#constructor sap.f.DynamicPageTitle }
+    * can be used.
     * See:
-    * 	{@link topic:6e340c119ddd4c778b315f65a0432420 Object Page Dynamic Header}
-    * 	{@link topic:d2ef0099542d44dc868719d908e576d0 Object Page Headers}
-    * 	{@link topic:9c9d94fd28284539a9a5a57e9caf82a8 Object Page Headers Comparison}
+    * 	{@link https://ui5.sap.com/#/topic/6e340c119ddd4c778b315f65a0432420 Object Page Dynamic Header}
+    * 	{@link https://ui5.sap.com/#/topic/d2ef0099542d44dc868719d908e576d0 Object Page Headers}
+    * 	{@link https://ui5.sap.com/#/topic/9c9d94fd28284539a9a5a57e9caf82a8 Object Page Headers Comparison}
     */
   open class default () extends ObjectPageDynamicHeaderTitle {
     def this(/**

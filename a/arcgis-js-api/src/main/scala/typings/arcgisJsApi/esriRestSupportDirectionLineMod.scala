@@ -13,20 +13,20 @@ object esriRestSupportDirectionLineMod {
   @JSImport("esri/rest/support/DirectionLine", JSImport.Namespace)
   @js.native
   /**
-    * The DirectionLine represents polylines associated with individual direction items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html)
-    */
+  		 * The DirectionLine represents polylines associated with individual direction items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html)
+  		 */
   open class ^ ()
     extends StObject
        with DirectionLine {
     def this(properties: DirectionLineProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
@@ -35,10 +35,10 @@ object esriRestSupportDirectionLineMod {
   val ^ : js.Any = js.native
   
   /**
-    * Creates a [DirectionLine](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#fromGraphic)
-    */
+  		 * Creates a [DirectionLine](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#fromGraphic)
+  		 */
   inline def fromGraphic(): DirectionLine = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")().asInstanceOf[DirectionLine]
   inline def fromGraphic(graphic: Graphic): DirectionLine = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")(graphic.asInstanceOf[js.Any]).asInstanceOf[DirectionLine]
   

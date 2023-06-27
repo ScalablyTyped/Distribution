@@ -57,7 +57,7 @@ trait GPUBuffer
   
   val mapState: GPUBufferMapState = js.native
   
-  val size: GPUSize64 = js.native
+  val size: GPUSize64Out = js.native
   
   /**
     * Unmaps the mapped range of the {@link GPUBuffer} and makes it's contents available for use by the
@@ -65,5 +65,5 @@ trait GPUBuffer
     */
   def unmap(): Unit = js.native
   
-  val usage: GPUBufferUsageFlags = js.native
+  val usage: GPUFlagsConstant = js.native
 }

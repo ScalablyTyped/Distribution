@@ -1,8 +1,8 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.Sampled
-import typings.sentryReplay.typesTypesMod.Session
-import typings.sentryReplay.typesTypesMod.SessionOptions
+import typings.sentryReplay.typesTypesReplayMod.Sampled
+import typings.sentryReplay.typesTypesReplayMod.Session
+import typings.sentryReplay.typesTypesReplayMod.SessionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

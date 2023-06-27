@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.acorn.anon.Arrow
 import typings.acorn.anon.Bexpr
+import typings.acorn.anon.Break
 import typings.acorn.anon.GetToken
 import typings.acorn.anon.TypeofParser
 import typings.acorn.mod.Options
@@ -203,6 +204,10 @@ object global {
         
         inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
         
+        @JSGlobal("acorn.Parser.acorn.keywordTypes")
+        @js.native
+        val keywordTypes: Break = js.native
+        
         @JSGlobal("acorn.Parser.acorn.lineBreak")
         @js.native
         val lineBreak: js.RegExp = js.native
@@ -210,6 +215,10 @@ object global {
         @JSGlobal("acorn.Parser.acorn.lineBreakG")
         @js.native
         val lineBreakG: js.RegExp = js.native
+        
+        @JSGlobal("acorn.Parser.acorn.nonASCIIwhitespace")
+        @js.native
+        val nonASCIIwhitespace: js.RegExp = js.native
         
         inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
         
@@ -318,6 +327,177 @@ object global {
     
     inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
+    object keywordTypes {
+      
+      @JSGlobal("acorn.keywordTypes")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("acorn.keywordTypes._default")
+      @js.native
+      def default: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._break")
+      @js.native
+      def break: typings.acorn.mod.TokenType = js.native
+      
+      inline def break_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_break")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._case")
+      @js.native
+      val `case`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._catch")
+      @js.native
+      val `catch`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._class")
+      @js.native
+      val `class`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._const")
+      @js.native
+      def const: typings.acorn.mod.TokenType = js.native
+      
+      inline def const_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_const")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._continue")
+      @js.native
+      def continue: typings.acorn.mod.TokenType = js.native
+      
+      inline def continue_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_continue")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._debugger")
+      @js.native
+      def debugger: typings.acorn.mod.TokenType = js.native
+      
+      inline def debugger_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debugger")(x.asInstanceOf[js.Any])
+      
+      inline def default_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._delete")
+      @js.native
+      def delete: typings.acorn.mod.TokenType = js.native
+      
+      inline def delete_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._do")
+      @js.native
+      val `do`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._else")
+      @js.native
+      val `else`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._export")
+      @js.native
+      val `export`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._extends")
+      @js.native
+      val `extends`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._false")
+      @js.native
+      val `false`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._finally")
+      @js.native
+      val `finally`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._for")
+      @js.native
+      val `for`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._function")
+      @js.native
+      def function: typings.acorn.mod.TokenType = js.native
+      
+      inline def function_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_function")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._if")
+      @js.native
+      val `if`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._import")
+      @js.native
+      val `import`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._in")
+      @js.native
+      def in: typings.acorn.mod.TokenType = js.native
+      
+      inline def in_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_in")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._instanceof")
+      @js.native
+      def instanceof: typings.acorn.mod.TokenType = js.native
+      
+      inline def instanceof_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceof")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._new")
+      @js.native
+      val `new`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._null")
+      @js.native
+      val `null`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._return")
+      @js.native
+      val `return`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._super")
+      @js.native
+      val `super`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._switch")
+      @js.native
+      def switch: typings.acorn.mod.TokenType = js.native
+      
+      inline def switch_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_switch")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._this")
+      @js.native
+      val `this`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._throw")
+      @js.native
+      val `throw`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._true")
+      @js.native
+      val `true`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._try")
+      @js.native
+      val `try`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._typeof")
+      @js.native
+      def typeof: typings.acorn.mod.TokenType = js.native
+      
+      inline def typeof_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._var")
+      @js.native
+      val `var`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._void")
+      @js.native
+      def void: typings.acorn.mod.TokenType = js.native
+      
+      inline def void_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("acorn.keywordTypes._while")
+      @js.native
+      val `while`: typings.acorn.mod.TokenType = js.native
+      
+      @JSGlobal("acorn.keywordTypes._with")
+      @js.native
+      val `with`: typings.acorn.mod.TokenType = js.native
+    }
+    
     @JSGlobal("acorn.lineBreak")
     @js.native
     val lineBreak: js.RegExp = js.native
@@ -325,6 +505,10 @@ object global {
     @JSGlobal("acorn.lineBreakG")
     @js.native
     val lineBreakG: js.RegExp = js.native
+    
+    @JSGlobal("acorn.nonASCIIwhitespace")
+    @js.native
+    val nonASCIIwhitespace: js.RegExp = js.native
     
     inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     

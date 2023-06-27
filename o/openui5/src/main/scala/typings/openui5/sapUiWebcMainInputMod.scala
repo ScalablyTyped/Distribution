@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemTargetRef
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -14,6 +12,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.IIcon
 import typings.openui5.sapUiWebcMainLibraryMod.IInput
 import typings.openui5.sapUiWebcMainLibraryMod.IInputSuggestionItem
 import typings.openui5.sapUiWebcMainLibraryMod.InputType
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -192,13 +191,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -223,7 +222,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -234,7 +233,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -256,13 +255,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -288,7 +287,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
@@ -299,7 +298,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -307,7 +306,7 @@ object sapUiWebcMainInputMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.Input`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -322,20 +321,20 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemPreview(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.Input`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -355,7 +354,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemPreview(
       /**
@@ -366,7 +365,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -388,13 +387,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -420,7 +419,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelect(
       /**
@@ -431,7 +430,7 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Input` itself
       */
@@ -463,13 +462,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -487,13 +486,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachInput(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -501,7 +500,7 @@ object sapUiWebcMainInputMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.Input`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -512,13 +511,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def detachSuggestionItemPreview(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -526,7 +525,7 @@ object sapUiWebcMainInputMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelect suggestionItemSelect}
+      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelect suggestionItemSelect }
       * event of this `sap.ui.webc.main.Input`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -537,13 +536,13 @@ object sapUiWebcMainInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def detachSuggestionItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -551,7 +550,7 @@ object sapUiWebcMainInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -564,7 +563,7 @@ object sapUiWebcMainInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:input input} to attached listeners.
       *
@@ -577,30 +576,34 @@ object sapUiWebcMainInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemPreview suggestionItemPreview} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggestionItemPreview(): this.type = js.native
-    def fireSuggestionItemPreview(/**
+    def fireSuggestionItemPreview(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemTargetRef): this.type = js.native
+    mParameters: Input$SuggestionItemPreviewEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemSelect suggestionItemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggestionItemSelect(): this.type = js.native
-    def fireSuggestionItemSelect(/**
+    def fireSuggestionItemSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: Input$SuggestionItemSelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -612,8 +615,7 @@ object sapUiWebcMainInputMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -753,9 +755,9 @@ object sapUiWebcMainInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       *
       * Default value is `Text`.
       *
@@ -830,8 +832,8 @@ object sapUiWebcMainInputMod {
     oIcon: IIcon): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.main.IInputSuggestionItem` in the aggregation {@link #getSuggestionItems
-      * suggestionItems}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.main.IInputSuggestionItem` in the aggregation {@link #getSuggestionItems suggestionItems}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1149,9 +1151,9 @@ object sapUiWebcMainInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1256,6 +1258,73 @@ object sapUiWebcMainInputMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Input$ChangeEventParameters extends StObject
+  
+  trait Input$InputEventParameters extends StObject
+  
+  trait Input$SuggestionItemPreviewEventParameters extends StObject {
+    
+    /**
+      * The previewed suggestion item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The DOM ref of the suggestion item.
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Input$SuggestionItemPreviewEventParameters {
+    
+    inline def apply(): Input$SuggestionItemPreviewEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$SuggestionItemPreviewEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$SuggestionItemPreviewEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait Input$SuggestionItemSelectEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Input$SuggestionItemSelectEventParameters {
+    
+    inline def apply(): Input$SuggestionItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$SuggestionItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$SuggestionItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type InputChangeEvent = typings.openui5.sapUiBaseEventMod.default[Input$ChangeEventParameters]
+  
+  type InputChangeEventParameters = Input$ChangeEventParameters
+  
+  type InputInputEvent = typings.openui5.sapUiBaseEventMod.default[Input$InputEventParameters]
+  
+  type InputInputEventParameters = Input$InputEventParameters
+  
   trait InputSettings
     extends StObject
        with ControlSettings {
@@ -1273,7 +1342,9 @@ object sapUiWebcMainInputMod {
     /**
       * Fired when the input operation has finished by pressing Enter or on focusout.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the control is enabled. A disabled control can't be interacted with, and it is not in
@@ -1294,7 +1365,9 @@ object sapUiWebcMainInputMod {
       * Fired when the value of the component changes at each keystroke, and when a suggestion item has been
       * selected.
       */
-    var input: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var input: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Sets the maximum number of characters available in the input field.
@@ -1363,12 +1436,22 @@ object sapUiWebcMainInputMod {
       * Fired when the user navigates to a suggestion item via the ARROW keys, as a preview, before the final
       * selection.
       */
-    var suggestionItemPreview: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggestionItemPreview: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemPreviewEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when a suggestion item, that is displayed in the suggestion popup, is selected.
       */
-    var suggestionItemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggestionItemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     var suggestionItems: js.UndefOr[
         js.Array[IInputSuggestionItem] | IInputSuggestionItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1380,9 +1463,9 @@ object sapUiWebcMainInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       */
     var `type`: js.UndefOr[
         InputType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputType * / any */ String) | PropertyBindingInfo
@@ -1445,7 +1528,7 @@ object sapUiWebcMainInputMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1461,7 +1544,7 @@ object sapUiWebcMainInputMod {
       
       inline def setIconVarargs(value: IIcon*): Self = StObject.set(x, "icon", js.Array(value*))
       
-      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
+      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
@@ -1497,11 +1580,15 @@ object sapUiWebcMainInputMod {
       
       inline def setShowSuggestionsUndefined: Self = StObject.set(x, "showSuggestions", js.undefined)
       
-      inline def setSuggestionItemPreview(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggestionItemPreview", js.Any.fromFunction1(value))
+      inline def setSuggestionItemPreview(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemPreviewEventParameters] => Unit
+      ): Self = StObject.set(x, "suggestionItemPreview", js.Any.fromFunction1(value))
       
       inline def setSuggestionItemPreviewUndefined: Self = StObject.set(x, "suggestionItemPreview", js.undefined)
       
-      inline def setSuggestionItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggestionItemSelect", js.Any.fromFunction1(value))
+      inline def setSuggestionItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "suggestionItemSelect", js.Any.fromFunction1(value))
       
       inline def setSuggestionItemSelectUndefined: Self = StObject.set(x, "suggestionItemSelect", js.undefined)
       
@@ -1538,4 +1625,12 @@ object sapUiWebcMainInputMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type InputSuggestionItemPreviewEvent = typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemPreviewEventParameters]
+  
+  type InputSuggestionItemPreviewEventParameters = Input$SuggestionItemPreviewEventParameters
+  
+  type InputSuggestionItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectEventParameters]
+  
+  type InputSuggestionItemSelectEventParameters = Input$SuggestionItemSelectEventParameters
 }

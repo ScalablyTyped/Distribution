@@ -1,7 +1,7 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.ReplayContainer
-import typings.sentryReplay.typesTypesMod.ReplayNetworkOptions
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
+import typings.sentryReplay.typesTypesReplayMod.ReplayNetworkOptions
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesBreadcrumbMod.BreadcrumbHint
 import typings.sentryTypes.typesTextencoderMod.TextEncoderInternal

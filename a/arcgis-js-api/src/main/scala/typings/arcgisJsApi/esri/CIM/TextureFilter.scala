@@ -11,24 +11,24 @@ sealed trait TextureFilter extends StObject
 object TextureFilter extends StObject {
   
   /**
-    * Low draft quality.
-    */
+  			 * Low draft quality.
+  			 */
   @js.native
   sealed trait Draft
     extends StObject
        with TextureFilter
   
   /**
-    * Higher quality, recommended for pictures.
-    */
+  			 * Higher quality, recommended for pictures.
+  			 */
   @js.native
   sealed trait Picture
     extends StObject
        with TextureFilter
   
   /**
-    * Higher quality, recommended when it is important to preserve edges for zoomed in images.
-    */
+  			 * Higher quality, recommended when it is important to preserve edges for zoomed in images.
+  			 */
   @js.native
   sealed trait Text
     extends StObject

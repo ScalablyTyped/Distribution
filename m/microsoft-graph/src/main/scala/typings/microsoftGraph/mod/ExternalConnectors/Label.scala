@@ -1,13 +1,14 @@
 package typings.microsoftGraph.mod.ExternalConnectors
 
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import typings.microsoftGraph.microsoftGraphStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.title
-  - typings.microsoftGraph.microsoftGraphStrings.url
+  - typings.microsoftGraph.microsoftGraphStrings.url_
   - typings.microsoftGraph.microsoftGraphStrings.createdBy
   - typings.microsoftGraph.microsoftGraphStrings.lastModifiedBy
   - typings.microsoftGraph.microsoftGraphStrings.authors
@@ -38,5 +39,5 @@ object Label {
   
   inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
-  inline def url: typings.microsoftGraph.microsoftGraphStrings.url = "url".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.url]
+  inline def url: url_ = "url".asInstanceOf[url_]
 }

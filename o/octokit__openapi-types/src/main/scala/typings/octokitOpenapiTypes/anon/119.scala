@@ -1,35 +1,29 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Plussign1
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`-1`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.confused
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.eyes
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.heart
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.hooray
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.laugh
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `119` extends StObject {
   
-  /**
-    * @description The [reaction type](https://docs.github.com/rest/reference/reactions#reaction-types) to add to the team discussion.
-    * @enum {string}
-    */
-  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
+  var path: Org
+  
+  var query: js.UndefOr[PerpageState] = js.undefined
 }
 object `119` {
   
-  inline def apply(content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): `119` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(path: Org): `119` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`119`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `119`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setQuery(value: PerpageState): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

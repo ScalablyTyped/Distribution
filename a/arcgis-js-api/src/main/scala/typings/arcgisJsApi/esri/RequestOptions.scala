@@ -19,6 +19,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import typings.std.AbortSignal
 import typings.std.FormData
 import typings.std.HTMLFormElement
+import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,80 +27,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestOptions extends StObject {
   
   /**
-    * Indicates if and how requests to ArcGIS Services are authenticated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Indicates if and how requests to ArcGIS Services are authenticated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var authMode: js.UndefOr[auto | anonymous | immediate | `no-prompt`] = js.undefined
   
   /**
-    * If uploading a file, specify the form data or element used to submit the file here.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * If uploading a file, specify the form data or element used to submit the file here.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var body: js.UndefOr[FormData | HTMLFormElement | String] = js.undefined
   
   /**
-    * If `true`, the browser will send a request to the server instead of using the browser's local cache.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * If `true`, the browser will send a request to the server instead of using the browser's local cache.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var cacheBust: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Headers to use for the request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Headers to use for the request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var headers: js.UndefOr[Any] = js.undefined
   
   /**
-    * Indicates if the request should be made using the HTTP DELETE, HEAD, POST, or PUT method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Indicates if the request should be made using the HTTP DELETE, HEAD, POST, or PUT method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var method: js.UndefOr[auto | delete | head | post | put] = js.undefined
   
   /**
-    * Query parameters for the request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
-  var query: js.UndefOr[Any] = js.undefined
+  		 * Query parameters for the request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
+  var query: js.UndefOr[Any | URLSearchParams] = js.undefined
   
   /**
-    * Response format.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Response format.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var responseType: js.UndefOr[json | text | `array-buffer` | blob | image | native | document | xml] = js.undefined
   
   /**
-    * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Indicates the amount of time in milliseconds to wait for a response from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Indicates the amount of time in milliseconds to wait for a response from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var timeout: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates the request should use the proxy.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Indicates the request should use the proxy.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var useProxy: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if cross-site `Access-Control` requests should use credentials.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
-    */
+  		 * Indicates if cross-site `Access-Control` requests should use credentials.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+  		 */
   var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object RequestOptions {
@@ -132,7 +133,7 @@ object RequestOptions {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any | URLSearchParams): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

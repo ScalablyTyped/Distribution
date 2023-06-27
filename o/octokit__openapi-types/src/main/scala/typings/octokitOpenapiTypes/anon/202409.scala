@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `202409` extends StObject {
   
   /** @description Response */
-  var `202`: Content55
+  var `202`: Content63
   
   var `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
 }
 object `202409` {
   
   inline def apply(
-    `202`: Content55,
+    `202`: Content63,
     `409`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any
   ): `202409` = {
     val __obj = js.Dynamic.literal()
@@ -26,7 +26,7 @@ object `202409` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `202409`] (val x: Self) extends AnyVal {
     
-    inline def set202(value: Content55): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+    inline def set202(value: Content63): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
     inline def set409(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['conflict'] */ js.Any

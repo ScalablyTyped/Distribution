@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StatisticDefinitionStatisticParameters extends StObject {
   
   /**
-    * Specify `ASC` (ascending) or `DESC` (descending) to control the order of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
-    */
+  		 * Specify `ASC` (ascending) or `DESC` (descending) to control the order of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
+  		 */
   var orderBy: js.UndefOr[ASC | DESC] = js.undefined
   
   /**
-    * Percentile value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
-    */
+  		 * Percentile value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
+  		 */
   var value: Double
 }
 object StatisticDefinitionStatisticParameters {

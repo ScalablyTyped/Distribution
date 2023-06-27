@@ -7,7 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes. */
+/**
+  * A commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGUnitTypes)
+  */
 trait SVGUnitTypes extends StObject {
   
   /* standard dom */

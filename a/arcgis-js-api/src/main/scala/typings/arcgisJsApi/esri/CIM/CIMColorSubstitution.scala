@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMColorSubstitution extends StObject {
   
   /**
-    * The new color that will replace the old color.
-    */
+  			 * The new color that will replace the old color.
+  			 */
   var newColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The old color (the color that will be substituted).
-    */
+  			 * The old color (the color that will be substituted).
+  			 */
   var oldColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution

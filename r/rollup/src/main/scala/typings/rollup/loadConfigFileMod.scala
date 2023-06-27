@@ -13,4 +13,5 @@ object loadConfigFileMod {
   val ^ : js.Any = js.native
   
   inline def loadConfigFile(fileName: String, commandOptions: Any): js.Promise[Options] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigFile")(fileName.asInstanceOf[js.Any], commandOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Options]]
+  inline def loadConfigFile(fileName: String, commandOptions: Any, watchMode: Boolean): js.Promise[Options] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadConfigFile")(fileName.asInstanceOf[js.Any], commandOptions.asInstanceOf[js.Any], watchMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Options]]
 }

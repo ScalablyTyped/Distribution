@@ -30,7 +30,7 @@ trait CaptionOptions extends StObject {
     * In styled mode, the caption style is given in the `.highcharts-caption`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CaptionStyleOptions | CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The caption text of the chart.
@@ -86,7 +86,7 @@ object CaptionOptions {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CaptionStyleOptions | CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

@@ -23,7 +23,7 @@ import typings.octokitPluginRestEndpointMethods.anon.CreateRepositorySnapshot
 import typings.octokitPluginRestEndpointMethods.anon.DeleteAnalysis
 import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForAuthenticatedUser
 import typings.octokitPluginRestEndpointMethods.anon.Get
-import typings.octokitPluginRestEndpointMethods.anon.Get543
+import typings.octokitPluginRestEndpointMethods.anon.Get545
 import typings.octokitPluginRestEndpointMethods.anon.GetAlert
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCodesOfConduct
 import typings.octokitPluginRestEndpointMethods.anon.GetAllCommonlyUsed
@@ -88,7 +88,7 @@ object distTypesGeneratedMethodTypesMod {
     
     var pulls: CheckIfMerged
     
-    var rateLimit: Get543
+    var rateLimit: Get545
     
     var reactions: CreateForCommitComment
     
@@ -131,7 +131,7 @@ object distTypesGeneratedMethodTypesMod {
       packages: DeletePackageForAuthenticatedUser,
       projects: AddCollaborator,
       pulls: CheckIfMerged,
-      rateLimit: Get543,
+      rateLimit: Get545,
       reactions: CreateForCommitComment,
       repos: AcceptInvitation,
       search: Code,
@@ -195,7 +195,7 @@ object distTypesGeneratedMethodTypesMod {
       
       inline def setPulls(value: CheckIfMerged): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get543): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get545): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForCommitComment): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       

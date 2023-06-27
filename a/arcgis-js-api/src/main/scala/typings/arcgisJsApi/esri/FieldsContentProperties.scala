@@ -9,24 +9,24 @@ trait FieldsContentProperties
      with ContentProperties {
   
   /**
-    * Describes the field's content in detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#description)
-    */
+  		 * Describes the field's content in detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
-    */
+  		 * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
+  		 */
   var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.undefined
   
   /**
-    * Heading indicating what the field's content represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#title)
-    */
+  		 * Heading indicating what the field's content represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object FieldsContentProperties {

@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PreviousSelectedItem
-import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IShellBar
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
@@ -188,7 +186,7 @@ object sapMSelectMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -229,13 +227,13 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Select` itself
       */
@@ -264,7 +262,7 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -275,7 +273,7 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Select` itself
       */
@@ -283,7 +281,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.Select`.
       *
@@ -303,20 +301,20 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Select` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.Select`.
       *
@@ -341,7 +339,7 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -352,7 +350,7 @@ object sapMSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Select` itself
       */
@@ -373,7 +371,7 @@ object sapMSelectMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Closes the control's picker popup.
       *
@@ -382,7 +380,7 @@ object sapMSelectMod {
     def close(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a picker popup container where the selection should take place.
       *
@@ -411,13 +409,13 @@ object sapMSelectMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -425,7 +423,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.m.Select`.
       *
@@ -437,13 +435,13 @@ object sapMSelectMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -451,7 +449,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -461,11 +459,11 @@ object sapMSelectMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: PreviousSelectedItem): this.type = js.native
+    mParameters: Select$ChangeEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.100
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.100
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -475,18 +473,17 @@ object sapMSelectMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: Select$LiveChangeEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getAutoAdjustWidth autoAdjustWidth}.
       *
@@ -499,7 +496,7 @@ object sapMSelectMod {
     def getAutoAdjustWidth(): Boolean = js.native
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * Gets current value of property {@link #getColumnRatio columnRatio}.
       *
@@ -514,7 +511,7 @@ object sapMSelectMod {
     def getColumnRatio(): SelectColumnRatio = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -546,7 +543,7 @@ object sapMSelectMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Gets the enabled items from the aggregation named `items`.
       *
@@ -559,7 +556,7 @@ object sapMSelectMod {
     aItems: js.Array[typings.openui5.sapUiCoreItemMod.default]): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets the first item from the aggregation named `items`.
       *
@@ -568,7 +565,7 @@ object sapMSelectMod {
     def getFirstItem(): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Gets current value of property {@link #getForceSelection forceSelection}.
       *
@@ -583,7 +580,7 @@ object sapMSelectMod {
     def getForceSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getIcon icon}.
       *
@@ -596,7 +593,7 @@ object sapMSelectMod {
     def getIcon(): URI = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets the item from the aggregation named `items` at the given 0-based index.
       *
@@ -608,7 +605,7 @@ object sapMSelectMod {
     iIndex: int): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets the item with the given key from the aggregation named `items`.
       *
@@ -631,7 +628,7 @@ object sapMSelectMod {
     def getItems(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets the last item from the aggregation named `items`.
       *
@@ -664,7 +661,7 @@ object sapMSelectMod {
     def getName(): String = js.native
     
     /**
-      * Enables the `sap.m.Select` to move inside the sap.m.OverflowToolbar. Required by the {@link sap.m.IOverflowToolbarContent}
+      * Enables the `sap.m.Select` to move inside the sap.m.OverflowToolbar. Required by the {@link sap.m.IOverflowToolbarContent }
       * interface.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
@@ -672,7 +669,7 @@ object sapMSelectMod {
     def getOverflowToolbarConfig(): OverflowToolbarConfig = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets current value of property {@link #getRequired required}.
       *
@@ -687,7 +684,7 @@ object sapMSelectMod {
     def getRequired(): Boolean = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getResetOnMissingKey resetOnMissingKey}.
       *
@@ -708,7 +705,7 @@ object sapMSelectMod {
     def getSelectedItem(): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       *
       * Gets current value of property {@link #getSelectedItemId selectedItemId}.
       *
@@ -721,7 +718,7 @@ object sapMSelectMod {
     def getSelectedItemId(): String = js.native
     
     /**
-      * @SINCE 1.11
+      * @since 1.11
       *
       * Gets current value of property {@link #getSelectedKey selectedKey}.
       *
@@ -731,9 +728,9 @@ object sapMSelectMod {
       * 	 -  If duplicate keys exist, the first item matching the key is used.
       * 	 -  If invalid or none `selectedKey` is used, the first item is being selected.
       * 	 -  Invalid or missing `selectedKey` leads to severe functional issues in `sap.ui.table.Table`, when
-      * 			the `sap.m.Select` is used inside a `sap.ui.table.Table` column.
+      *     the `sap.m.Select` is used inside a `sap.ui.table.Table` column.
       * 	 -  If an item with the default key exists and we try to select it, it happens only if the `forceSelection`
-      * 			property is set to `true`.
+      *     property is set to `true`.
       *
       * Default value is `empty string`.
       *
@@ -742,11 +739,11 @@ object sapMSelectMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * Default value is `false`.
@@ -756,7 +753,7 @@ object sapMSelectMod {
     def getShowSecondaryValues(): Boolean = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -769,7 +766,7 @@ object sapMSelectMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -783,7 +780,7 @@ object sapMSelectMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getType type}.
       *
@@ -796,7 +793,7 @@ object sapMSelectMod {
     def getType(): SelectType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.40.2
+      * @since 1.40.2
       *
       * Gets current value of property {@link #getValueState valueState}.
       *
@@ -809,7 +806,7 @@ object sapMSelectMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.40.5
+      * @since 1.40.5
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -841,7 +838,7 @@ object sapMSelectMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Gets current value of property {@link #getWrapItemsText wrapItemsText}.
       *
@@ -885,7 +882,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Indicates whether the control's picker popup is opened.
       *
@@ -894,8 +891,8 @@ object sapMSelectMod {
     def isOpen(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Open the control's picker popup.
       *
@@ -904,7 +901,7 @@ object sapMSelectMod {
     def open(): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -921,7 +918,7 @@ object sapMSelectMod {
     def removeAllItems(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -963,7 +960,7 @@ object sapMSelectMod {
     ): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getAutoAdjustWidth autoAdjustWidth}.
       *
@@ -982,7 +979,7 @@ object sapMSelectMod {
     bAutoAdjustWidth: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * Sets a new value for property {@link #getColumnRatio columnRatio}.
       *
@@ -1003,7 +1000,7 @@ object sapMSelectMod {
     sColumnRatio: SelectColumnRatio): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -1047,7 +1044,7 @@ object sapMSelectMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Sets a new value for property {@link #getForceSelection forceSelection}.
       *
@@ -1068,7 +1065,7 @@ object sapMSelectMod {
     bForceSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getIcon icon}.
       *
@@ -1123,7 +1120,7 @@ object sapMSelectMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Sets a new value for property {@link #getRequired required}.
       *
@@ -1144,7 +1141,7 @@ object sapMSelectMod {
     bRequired: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getResetOnMissingKey resetOnMissingKey}.
       *
@@ -1191,7 +1188,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       *
       * Sets the `selectedItemId` property.
       *
@@ -1209,7 +1206,7 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11
+      * @since 1.11
       *
       * Sets property `selectedKey`.
       *
@@ -1230,11 +1227,11 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets a new value for property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1250,7 +1247,7 @@ object sapMSelectMod {
     bShowSecondaryValues: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -1275,7 +1272,7 @@ object sapMSelectMod {
     sTextAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -1301,7 +1298,7 @@ object sapMSelectMod {
     sTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getType type}.
       *
@@ -1326,7 +1323,7 @@ object sapMSelectMod {
     sType: SelectType): this.type = js.native
     
     /**
-      * @SINCE 1.40.2
+      * @since 1.40.2
       *
       * Sets a new value for property {@link #getValueState valueState}.
       *
@@ -1351,7 +1348,7 @@ object sapMSelectMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.40.5
+      * @since 1.40.5
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -1395,7 +1392,7 @@ object sapMSelectMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Sets the `wrapItemsText` property.
       *
@@ -1411,19 +1408,82 @@ object sapMSelectMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait Select$ChangeEventParameters extends StObject {
+    
+    /**
+      * The previous selected item.
+      */
+    var previousSelectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+    
+    /**
+      * The selected item.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object Select$ChangeEventParameters {
+    
+    inline def apply(): Select$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Select$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Select$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviousSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "previousSelectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousSelectedItemUndefined: Self = StObject.set(x, "previousSelectedItem", js.undefined)
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  trait Select$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object Select$LiveChangeEventParameters {
+    
+    inline def apply(): Select$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Select$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Select$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type SelectChangeEvent = typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters]
+  
+  type SelectChangeEventParameters = Select$ChangeEventParameters
+  
+  type SelectLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[Select$LiveChangeEventParameters]
+  
+  type SelectLiveChangeEventParameters = Select$LiveChangeEventParameters
+  
   trait SelectSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Indicates whether the width of the input field is determined by the selected item's content.
       */
@@ -1438,10 +1498,15 @@ object sapMSelectMod {
       * 	 - The Enter key is pressed
       * 	 - The item is pressed
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * Determines the ratio between the first and the second column when secondary values are displayed.
       *
@@ -1452,7 +1517,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Determines whether the user can modify the selected item. When the property is set to `false`, the control
       * appears as disabled but CAN still be focused.
@@ -1476,7 +1541,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Indicates whether the selection is restricted to one of the items in the list. **Note:** We strongly
       * recommend that you always set this property to `false` and bind the `selectedKey` property to the desired
@@ -1487,7 +1552,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The URI to the icon that will be displayed only when using the `IconOnly` type.
       */
@@ -1511,7 +1576,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Fires when the user navigates through the `Select` items. It's also fired on revert of the currently
       * selected item.
@@ -1520,7 +1585,12 @@ object sapMSelectMod {
       * 	 - The user clicks outside of the `Select`
       * 	 - The Escape key is pressed
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sets the maximum width of the control.
@@ -1537,7 +1607,7 @@ object sapMSelectMod {
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Indicates that user input is required. This property is only needed for accessibility purposes when a
       * single relationship between the field and a label (see aggregation `labelFor` of `sap.m.Label`) cannot
@@ -1548,7 +1618,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Modifies the behavior of the `setSelectedKey` method so that the selected item is cleared when a provided
       * selected key is missing.
@@ -1563,14 +1633,14 @@ object sapMSelectMod {
     var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       *
       * ID of the selected item.
       */
     var selectedItemId: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.11
+      * @since 1.11
       *
       * Key of the selected item.
       *
@@ -1578,16 +1648,16 @@ object sapMSelectMod {
       * 	 -  If duplicate keys exist, the first item matching the key is used.
       * 	 -  If invalid or none `selectedKey` is used, the first item is being selected.
       * 	 -  Invalid or missing `selectedKey` leads to severe functional issues in `sap.ui.table.Table`, when
-      * 			the `sap.m.Select` is used inside a `sap.ui.table.Table` column.
+      *     the `sap.m.Select` is used inside a `sap.ui.table.Table` column.
       * 	 -  If an item with the default key exists and we try to select it, it happens only if the `forceSelection`
-      * 			property is set to `true`.
+      *     property is set to `true`.
       */
     var selectedKey: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       */
     var showSecondaryValues: js.UndefOr[
@@ -1595,7 +1665,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets the horizontal alignment of the text within the input field.
       */
@@ -1604,7 +1674,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Specifies the direction of the text within the input field with enumerated options. By default, the control
       * inherits text direction from the DOM.
@@ -1614,7 +1684,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Type of a select. Possible values `Default`, `IconOnly`.
       */
@@ -1623,7 +1693,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.2
+      * @since 1.40.2
       *
       * Visualizes the validation state of the control, e.g. `Error`, `Warning`, `Success`, `Information`.
       */
@@ -1632,7 +1702,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.5
+      * @since 1.40.5
       *
       * Defines the text of the value state message popup. If this is not specified, a default text is shown
       * from the resource bundle.
@@ -1654,7 +1724,7 @@ object sapMSelectMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Determines whether the text in the items wraps on multiple lines when the available width is not enough.
       * When the text is truncated (`wrapItemsText` property is set to `false`), the max width of the `SelectList`
@@ -1684,7 +1754,9 @@ object sapMSelectMod {
       
       inline def setAutoAdjustWidthUndefined: Self = StObject.set(x, "autoAdjustWidth", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1718,7 +1790,9 @@ object sapMSelectMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

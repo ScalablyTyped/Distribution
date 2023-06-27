@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <time> elements. */
+/**
+  * Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <time> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTimeElement)
+  */
 @js.native
 trait HTMLTimeElement
   extends StObject
@@ -21,6 +25,7 @@ trait HTMLTimeElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTimeElement/dateTime) */
   /* standard dom */
   var dateTime: java.lang.String = js.native
   

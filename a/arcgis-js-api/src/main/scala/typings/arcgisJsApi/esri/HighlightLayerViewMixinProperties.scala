@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HighlightLayerViewMixinProperties extends StObject {
   
   /**
-    * Options for configuring the highlight.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-HighlightLayerViewMixin.html#highlightOptions)
-    */
+  		 * Options for configuring the highlight.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-HighlightLayerViewMixin.html#highlightOptions)
+  		 */
   var highlightOptions: js.UndefOr[HighlightOptions] = js.undefined
 }
 object HighlightLayerViewMixinProperties {

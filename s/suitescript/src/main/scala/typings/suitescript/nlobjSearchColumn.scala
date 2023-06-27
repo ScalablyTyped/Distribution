@@ -22,7 +22,6 @@ trait nlobjSearchColumn extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchColumn
     *
     * @since 2009.2
     * @return
@@ -34,7 +33,6 @@ trait nlobjSearchColumn extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchColumn
     * @since 2008.1
     * @return
     */
@@ -45,7 +43,6 @@ trait nlobjSearchColumn extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchColumn
     *
     * @since 2009.1
     * @return
@@ -57,7 +54,6 @@ trait nlobjSearchColumn extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchColumn
     * @since 2008.1
     * @return
     */
@@ -68,7 +64,6 @@ trait nlobjSearchColumn extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchColumn
     * @since 2008.1
     * @return
     */
@@ -82,7 +77,6 @@ trait nlobjSearchColumn extends StObject {
     * @param {boolean} sort if not set, defaults to false, which returns column data in ascending order.
     *
     * @method
-    * @memberOf nlobjSearchColumn
     *
     * @since 2010.1
     * @param order

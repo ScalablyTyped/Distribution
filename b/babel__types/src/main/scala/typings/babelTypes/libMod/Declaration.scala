@@ -1,5 +1,6 @@
 package typings.babelTypes.libMod
 
+import typings.babelTypes.babelTypesStrings.`await using`
 import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
@@ -200,7 +201,7 @@ object Declaration {
     __obj.asInstanceOf[typings.babelTypes.libMod.TypeAlias_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.libMod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using` | (`await using`)): typings.babelTypes.libMod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.VariableDeclaration_]

@@ -1,7 +1,6 @@
 package typings.octokitPluginPaginateRest.anon
 
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ParametersResponse extends StObject {
   
-  var parameters: (ToOctokitParameters[
+  var parameters: ToOctokitParameters[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
-  ]) & RequiredPreview[Any]
+  ]
   
   var response: ExtractOctokitResponse[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
@@ -20,9 +19,9 @@ trait ParametersResponse extends StObject {
 object ParametersResponse {
   
   inline def apply(
-    parameters: (ToOctokitParameters[
+    parameters: ToOctokitParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
-    ]) & RequiredPreview[Any],
+    ],
     response: ExtractOctokitResponse[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
     ]
@@ -35,9 +34,9 @@ object ParametersResponse {
   implicit open class MutableBuilder[Self <: ParametersResponse] (val x: Self) extends AnyVal {
     
     inline def setParameters(
-      value: (ToOctokitParameters[
+      value: ToOctokitParameters[
           /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/app/installations']['get'] */ js.Any
-        ]) & RequiredPreview[Any]
+        ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(

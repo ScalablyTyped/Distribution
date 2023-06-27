@@ -12,7 +12,11 @@ open class DocumentFragment ()
   extends StObject
      with typings.std.DocumentFragment {
   
-  /** Returns the first element within node's descendants whose ID is elementId. */
+  /**
+    * Returns the first element within node's descendants whose ID is elementId.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementById)
+    */
   /* standard dom */
   /* CompleteClass */
   override def getElementById(elementId: java.lang.String): typings.std.Element | Null = js.native

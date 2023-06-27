@@ -1,6 +1,9 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSMathOperator
 import typings.std.CSSNumberish
+import typings.std.CSSPerspectiveValue
+import typings.std.CSSUnparsedSegment
 import typings.std.DOMMatrix
 import typings.std.DOMMatrixReadOnly
 import org.scalablytyped.runtime.StObject
@@ -89,7 +92,7 @@ object global {
   @js.native
   open class CSSImageValue ()
     extends StObject
-       with typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
+       with typings.std.CSSStyleValue
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSKeywordValue")
@@ -133,7 +136,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -181,7 +184,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -226,7 +229,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -271,7 +274,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -316,7 +319,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -361,7 +364,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -406,7 +409,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -450,7 +453,7 @@ object global {
     override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    override val operator: CSSMathOperator = js.native
     
     /* CompleteClass */
     override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
@@ -543,13 +546,13 @@ object global {
   open class CSSPerspective protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSPerspective {
-    def this(length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSPerspectiveValue */ Any) = this()
+    def this(length: CSSPerspectiveValue) = this()
     
     /* CompleteClass */
     var is2D: Boolean = js.native
     
     /* CompleteClass */
-    var length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSPerspectiveValue */ Any = js.native
+    var length: CSSPerspectiveValue = js.native
     
     /* CompleteClass */
     override def toMatrix(): DOMMatrix = js.native
@@ -796,9 +799,7 @@ object global {
   open class CSSUnparsedValue protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue {
-    def this(members: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSUnparsedSegment */ Any
-          ]) = this()
+    def this(members: js.Array[CSSUnparsedSegment]) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

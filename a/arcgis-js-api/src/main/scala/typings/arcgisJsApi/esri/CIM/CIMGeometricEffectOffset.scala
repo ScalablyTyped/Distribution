@@ -10,20 +10,20 @@ trait CIMGeometricEffectOffset
      with CIMGeometricEffectType {
   
   /**
-    * The way the strokes or fills are displayed at corners.
-    */
+  			 * The way the strokes or fills are displayed at corners.
+  			 */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetMethod * / any */ String
   ] = js.undefined
   
   /**
-    * The distance of the symbol perpendicular to the feature geometry.
-    */
+  			 * The distance of the symbol perpendicular to the feature geometry.
+  			 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The way the symbol handles complex geometries.
-    */
+  			 * The way the symbol handles complex geometries.
+  			 */
   var option: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetOption * / any */ String
   ] = js.undefined

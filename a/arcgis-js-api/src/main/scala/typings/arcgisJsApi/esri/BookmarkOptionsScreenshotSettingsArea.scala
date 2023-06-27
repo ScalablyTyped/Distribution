@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarkOptionsScreenshotSettingsArea extends StObject {
   
   /**
-    * The height of the screenshot area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The height of the screenshot area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the screenshot area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The width of the screenshot area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
   
   /**
-    * The x value of the screenshot area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The x value of the screenshot area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * The y value of the screenshot area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The y value of the screenshot area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var y: js.UndefOr[Double] = js.undefined
 }
 object BookmarkOptionsScreenshotSettingsArea {

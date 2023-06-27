@@ -159,6 +159,9 @@ trait PlotTilemapOptions extends StObject {
     * value`. Works only for points in a visible range. Adds the
     * `cumulativeSum` field to each point object that can be accessed e.g. in
     * the tooltip.pointFormat.
+    *
+    * With `dataGrouping` enabled, default grouping approximation is set to
+    * `sum`.
     */
   var cumulative: js.UndefOr[Boolean] = js.undefined
   
@@ -269,6 +272,12 @@ trait PlotTilemapOptions extends StObject {
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highmaps) Make the heatmap render its data points as an
+    * interpolated image.
+    */
+  var interpolation: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) An array specifying which option maps to which key
     * in the data point array. This makes it convenient to work with
     * unstructured data arrays from different sources.
@@ -296,7 +305,11 @@ trait PlotTilemapOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
-  var legendSymbol: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highmaps) What type of legend symbol to render for this
+    * series. Can be one of `lineMarker` or `rectangle`.
+    */
+  var legendSymbol: js.UndefOr[OptionsLegendSymbolValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -352,6 +365,12 @@ trait PlotTilemapOptions extends StObject {
     * (Highcharts, Highmaps) Properties for each single point.
     */
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Same as accessibility.point.descriptionFormat, but
+    * for an individual series. Overrides the chart wide configuration.
+    */
+  var pointDescriptionFormat: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Same as accessibility.series.descriptionFormatter,
@@ -618,6 +637,10 @@ object PlotTilemapOptions {
     
     inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
     
+    inline def setInterpolation(value: Boolean): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
@@ -636,7 +659,7 @@ object PlotTilemapOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
-    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    inline def setLegendSymbol(value: OptionsLegendSymbolValue): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
     
     inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
@@ -669,6 +692,10 @@ object PlotTilemapOptions {
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setPoint(value: PlotSeriesPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormat(value: js.Function): Self = StObject.set(x, "pointDescriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatUndefined: Self = StObject.set(x, "pointDescriptionFormat", js.undefined)
     
     inline def setPointDescriptionFormatter(value: js.Function): Self = StObject.set(x, "pointDescriptionFormatter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * TPreloadedQueries -  queries, defined in the root components
   *
-  * TPreloadedEntryPoints - nested entry points, defined in the root components
+  * TNestedEntryPoints - nested entry points, defined in the root components
   *
   * TRuntimeProps - the type of additional props that you may pass to the
   * component (like `onClick` handler, etc) during runtime. Values for them
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TExtraProps - a bag of extra props that you may define in `entrypoint` file
   * and they will be passed to the EntryPointComponent as `extraProps`
   */
-/* Inlined parent std.Readonly<{  root :react-relay.react-relay/relay-hooks/EntryPointTypes.JSResourceReference<react-relay.react-relay/relay-hooks/EntryPointTypes.EntryPointComponent<TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps>>, getPreloadProps (entryPointParams : TEntryPointParams): react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadProps<TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps>}> */
+/* Inlined parent std.Readonly<{  root :react-relay.react-relay/relay-hooks/EntryPointTypes.JSResourceReference<react-relay.react-relay/relay-hooks/EntryPointTypes.EntryPointComponent<TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps>>, getPreloadProps (entryPointParams : TEntryPointParams): react-relay.react-relay/relay-hooks/EntryPointTypes.PreloadProps<TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TExtraProps>}> */
 trait InternalEntryPointRepresentation[/**
   * object that contains all necessary information to execute the preloaders (routeParams, query variables)
   */
@@ -38,7 +38,7 @@ TEntryPointParams /* <: js.Object */, /**
 TPreloadedQueries /* <: Record[String, OperationType] */, /**
   * nested entry points, defined in the root components
   */
-TPreloadedEntryPoints /* <: js.Object */, /**
+TNestedEntryPoints /* <: js.Object */, /**
   * the type of additional props that you may pass to the component (like `onClick` handler, etc) during runtime.
   * Values for them defined during component runtime
   */
@@ -50,11 +50,11 @@ TExtraProps /* <: js.Object | Null */] extends StObject {
   
   val getPreloadProps: js.Function1[
     /* entryPointParams */ TEntryPointParams, 
-    PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
+    PreloadProps[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TExtraProps]
   ]
   
   val root: JSResourceReference[
-    EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
+    EntryPointComponent[TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps]
   ]
 }
 object InternalEntryPointRepresentation {
@@ -68,7 +68,7 @@ object InternalEntryPointRepresentation {
   TPreloadedQueries /* <: Record[String, OperationType] */, /**
     * nested entry points, defined in the root components
     */
-  TPreloadedEntryPoints /* <: js.Object */, /**
+  TNestedEntryPoints /* <: js.Object */, /**
     * the type of additional props that you may pass to the component (like `onClick` handler, etc) during runtime.
     * Values for them defined during component runtime
     */
@@ -77,13 +77,13 @@ object InternalEntryPointRepresentation {
     * as `extraProps`
     */
   TExtraProps /* <: js.Object | Null */](
-    getPreloadProps: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps],
+    getPreloadProps: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TExtraProps],
     root: JSResourceReference[
-      EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
+      EntryPointComponent[TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps]
     ]
-  ): InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = {
+  ): InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps] = {
     val __obj = js.Dynamic.literal(getPreloadProps = js.Any.fromFunction1(getPreloadProps), root = root.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
+    __obj.asInstanceOf[InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps]]
   }
   
   @scala.inline
@@ -96,7 +96,7 @@ object InternalEntryPointRepresentation {
   TPreloadedQueries /* <: Record[String, OperationType] */, /**
     * nested entry points, defined in the root components
     */
-  TPreloadedEntryPoints /* <: js.Object */, /**
+  TNestedEntryPoints /* <: js.Object */, /**
     * the type of additional props that you may pass to the component (like `onClick` handler, etc) during runtime.
     * Values for them defined during component runtime
     */
@@ -104,15 +104,15 @@ object InternalEntryPointRepresentation {
     * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
     * as `extraProps`
     */
-  TExtraProps /* <: js.Object | Null */] (val x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
+  TExtraProps /* <: js.Object | Null */] (val x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
     
     inline def setGetPreloadProps(
-      value: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
+      value: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TNestedEntryPoints, TExtraProps]
     ): Self = StObject.set(x, "getPreloadProps", js.Any.fromFunction1(value))
     
     inline def setRoot(
       value: JSResourceReference[
-          EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
+          EntryPointComponent[TPreloadedQueries, TNestedEntryPoints, TRuntimeProps, TExtraProps]
         ]
     ): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

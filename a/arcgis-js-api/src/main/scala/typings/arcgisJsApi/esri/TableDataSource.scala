@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableDataSource extends StObject {
   
   /**
-    * The name of the table in the registered workspace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
-    */
+  		 * The name of the table in the registered workspace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
+  		 */
   var dataSourceName: String
   
   /**
-    * References the geodatabase version if multiple versions exist in the geodatabase.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
-    */
+  		 * References the geodatabase version if multiple versions exist in the geodatabase.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
+  		 */
   var gdbVersion: String
   
   /**
-    * This value is always `table`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
-    */
+  		 * This value is always `table`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
+  		 */
   var `type`: String
   
   /**
-    * The workspace where the table resides as defined in the ArcGIS Server Manager.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
-    */
+  		 * The workspace where the table resides as defined in the ArcGIS Server Manager.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
+  		 */
   var workspaceId: String
 }
 object TableDataSource {

@@ -58,7 +58,7 @@ object sapUiTestActionsEnterTextMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * A map of ID suffixes for controls that require a special DOM reference for `EnterText` interaction.
       *
@@ -139,7 +139,7 @@ object sapUiTestActionsEnterTextMod {
     extends typings.openui5.sapUiTestActionsActionMod.default {
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getClearTextFirst clearTextFirst}.
       *
@@ -183,7 +183,7 @@ object sapUiTestActionsEnterTextMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getClearTextFirst clearTextFirst}.
       *
@@ -255,7 +255,7 @@ object sapUiTestActionsEnterTextMod {
        with ActionSettings {
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * If it is set to `false`, the current text of the control will be preserved. By default, the current text
       * of the control will be cleared. When the text is going to be cleared, a delete character event will be

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry-internal__tracing
 
-Typings are for version 7.51.2
+Typings are for version 7.56.0
 
 
 

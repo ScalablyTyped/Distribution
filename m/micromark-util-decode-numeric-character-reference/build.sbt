@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micromark-util-decode-numeric-character-reference"
-version := "1.0.0-634fad"
+version := "1.1.0-b88007"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

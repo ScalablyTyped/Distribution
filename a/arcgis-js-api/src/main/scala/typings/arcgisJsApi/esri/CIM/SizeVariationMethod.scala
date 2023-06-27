@@ -11,32 +11,32 @@ sealed trait SizeVariationMethod extends StObject
 object SizeVariationMethod extends StObject {
   
   /**
-    * Markers are drawn in a pattern where the markers decrease in size.
-    */
+  			 * Markers are drawn in a pattern where the markers decrease in size.
+  			 */
   @js.native
   sealed trait Decreasing
     extends StObject
        with SizeVariationMethod
   
   /**
-    * Markers are drawn with a pattern where the markers increase in size.
-    */
+  			 * Markers are drawn with a pattern where the markers increase in size.
+  			 */
   @js.native
   sealed trait Increasing
     extends StObject
        with SizeVariationMethod
   
   /**
-    * Markers are drawn in a pattern where the size increase and then decrease.
-    */
+  			 * Markers are drawn in a pattern where the size increase and then decrease.
+  			 */
   @js.native
   sealed trait IncreasingThenDecreasing
     extends StObject
        with SizeVariationMethod
   
   /**
-    * Change in size is applied randomly.
-    */
+  			 * Change in size is applied randomly.
+  			 */
   @js.native
   sealed trait Random
     extends StObject

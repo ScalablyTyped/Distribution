@@ -1,7 +1,7 @@
 
 # Scala.js typings for xterm
 
-Typings are for version 5.1.0
+Typings are for version 5.2.1
 
 ## Library description:
 Full xterm terminal, in your browser

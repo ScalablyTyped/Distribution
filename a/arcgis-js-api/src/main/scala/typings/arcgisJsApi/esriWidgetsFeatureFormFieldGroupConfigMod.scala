@@ -11,10 +11,10 @@ object esriWidgetsFeatureFormFieldGroupConfigMod {
   @JSImport("esri/widgets/FeatureForm/FieldGroupConfig", JSImport.Namespace)
   @js.native
   /**
-    * Configuration options for configuring grouped fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
-    */
+  		 * Configuration options for configuring grouped fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html)
+  		 */
   open class ^ ()
     extends StObject
        with FieldGroupConfig {

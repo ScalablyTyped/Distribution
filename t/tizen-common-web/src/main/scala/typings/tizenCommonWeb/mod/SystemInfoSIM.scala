@@ -14,7 +14,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val iccid: String
   
@@ -24,7 +24,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val mcc: Double
   
@@ -34,7 +34,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val mnc: Double
   
@@ -44,7 +44,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/telephony
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     * @warning 2.4 The partner level privilege, _http://tizen.org/privilege/systemmanager_, has been deprecated. From Tizen 2.4, the public level privilege, _http://tizen.org/privilege/telephony_, is required.
     */
   val msin: String
@@ -55,7 +55,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/telephony
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     *
     * @warning 2.4 The partner level privilege, _http://tizen.org/privilege/systemmanager_, has been deprecated. From Tizen 2.4, the public level privilege, _http://tizen.org/privilege/telephony_, is required.
     */
@@ -67,7 +67,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val operatorName: String
   
@@ -77,7 +77,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val spn: String
   
@@ -89,7 +89,7 @@ trait SystemInfoSIM
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val state: SystemInfoSimState
 }

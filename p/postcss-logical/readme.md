@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-logical
 
-Typings are for version 6.1.0
+Typings are for version 6.2.0
 
 ## Library description:
 Use logical properties and values in CSS

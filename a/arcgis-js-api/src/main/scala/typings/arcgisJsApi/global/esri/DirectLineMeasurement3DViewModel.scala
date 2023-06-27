@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.DirectLineMeasurement3DViewModel")
 @js.native
 /**
-  * Provides the logic for the [DirectLineMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html)
-  */
+		 * Provides the logic for the [DirectLineMeasurement3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html) widget.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html)
+		 */
 open class DirectLineMeasurement3DViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.DirectLineMeasurement3DViewModel {

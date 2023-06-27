@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SmartMappingSliderBaseZoomOptions extends StObject {
   
   /**
-    * The upper bound of the zoom.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#zoomOptions)
-    */
+  		 * The upper bound of the zoom.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#zoomOptions)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * The lower bound of the zoom.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#zoomOptions)
-    */
+  		 * The lower bound of the zoom.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#zoomOptions)
+  		 */
   var min: js.UndefOr[Double] = js.undefined
 }
 object SmartMappingSliderBaseZoomOptions {

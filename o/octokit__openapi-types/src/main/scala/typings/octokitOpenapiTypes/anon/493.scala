@@ -6,26 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `493` extends StObject {
   
-  var per_page: js.UndefOr[Double] = js.undefined
-  
-  var since: js.UndefOr[Double] = js.undefined
+  /** @description Response */
+  var `200`: Content478
 }
 object `493` {
   
-  inline def apply(): `493` = {
+  inline def apply(`200`: Content478): `493` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`493`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `493`] (val x: Self) extends AnyVal {
     
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
-    
-    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
-    
-    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def set200(value: Content478): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

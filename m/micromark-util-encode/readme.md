@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-encode
 
-Typings are for version 1.0.1
+Typings are for version 1.1.0
 
 ## Library description:
 micromark utility to encode dangerous html characters

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageObject extends StObject {
   
   /**
-    * The image data for the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
-    */
+  		 * The image data for the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
+  		 */
   var data: js.typedarray.ArrayBuffer
   
   /**
-    * The height of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
-    */
+  		 * The height of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
+  		 */
   var height: Double
   
   /**
-    * The width of the sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
-    */
+  		 * The width of the sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#ImageObject)
+  		 */
   var width: Double
 }
 object ImageObject {

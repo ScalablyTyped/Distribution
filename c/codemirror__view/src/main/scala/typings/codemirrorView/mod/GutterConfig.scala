@@ -37,8 +37,8 @@ trait GutterConfig extends StObject {
   ] = js.undefined
   
   /**
-    If line markers depend on additional state, and should be
-    updated when that changes, pass a predicate here that checks
+    If line or widget markers depend on additional state, and should
+    be updated when that changes, pass a predicate here that checks
     whether a given view update might change the line markers.
     */
   var lineMarkerChange: js.UndefOr[Null | (js.Function1[/* update */ ViewUpdate, Boolean])] = js.undefined
@@ -61,6 +61,18 @@ trait GutterConfig extends StObject {
     */
   var updateSpacer: js.UndefOr[
     Null | (js.Function2[/* spacer */ GutterMarker, /* update */ ViewUpdate, GutterMarker])
+  ] = js.undefined
+  
+  /**
+    Associate markers with block widgets in the document.
+    */
+  var widgetMarker: js.UndefOr[
+    js.Function3[
+      /* view */ EditorView, 
+      /* widget */ WidgetType, 
+      /* block */ BlockInfo, 
+      GutterMarker | Null
+    ]
   ] = js.undefined
 }
 object GutterConfig {
@@ -112,5 +124,11 @@ object GutterConfig {
     inline def setUpdateSpacerNull: Self = StObject.set(x, "updateSpacer", null)
     
     inline def setUpdateSpacerUndefined: Self = StObject.set(x, "updateSpacer", js.undefined)
+    
+    inline def setWidgetMarker(
+      value: (/* view */ EditorView, /* widget */ WidgetType, /* block */ BlockInfo) => GutterMarker | Null
+    ): Self = StObject.set(x, "widgetMarker", js.Any.fromFunction3(value))
+    
+    inline def setWidgetMarkerUndefined: Self = StObject.set(x, "widgetMarker", js.undefined)
   }
 }

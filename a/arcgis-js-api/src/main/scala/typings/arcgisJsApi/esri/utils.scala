@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains utility methods for obtaining information about supported renderers of raster layers (i.e.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html)
-  */
+	 * This object contains utility methods for obtaining information about supported renderers of raster layers (i.e.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html)
+	 */
 trait utils extends StObject {
   
   /**
-    * Returns default band ids used by a multispectral imagery layer when using a raster [rgb](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html) or [stretch](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html) renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getDefaultBandCombination)
-    */
+  		 * Returns default band ids used by a multispectral imagery layer when using a raster [rgb](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html) or [stretch](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html) renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getDefaultBandCombination)
+  		 */
   def getDefaultBandCombination(params: utilsGetDefaultBandCombinationParams): js.Promise[js.Array[Double]]
   
   /**
-    * Returns supported raster renderer information of an imagery layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getSupportedRendererInfo)
-    */
+  		 * Returns supported raster renderer information of an imagery layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getSupportedRendererInfo)
+  		 */
   def getSupportedRendererInfo(params: utilsGetSupportedRendererInfoParams): js.Promise[SupportedRendererInfo]
 }
 object utils {

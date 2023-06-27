@@ -11,6 +11,7 @@ import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesToJSMod.ToJSContext
 import typings.yaml.distNodesYamlmapMod.YAMLMap
 import typings.yaml.distNodesYamlseqMod.YAMLSeq
+import typings.yaml.yamlBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +31,8 @@ object distNodesAliasMod {
       * Resolve the value of this alias within `doc`, finding the last
       * instance of the `source` anchor before this node.
       */
-    def resolve(doc: Document[Node[Any]]): js.UndefOr[Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any]] = js.native
+    @JSName("resolve")
+    def resolve_true(doc: Document[Node[Any], `true`]): js.UndefOr[Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any]] = js.native
     
     var source: String = js.native
     

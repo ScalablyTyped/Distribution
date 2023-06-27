@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMSemanticSemanticControlMod.SemanticControlSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -150,13 +149,13 @@ object sapMSemanticSemanticSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticSelect` itself
       */
@@ -181,7 +180,7 @@ object sapMSemanticSemanticSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -192,7 +191,7 @@ object sapMSemanticSemanticSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticSelect` itself
       */
@@ -230,13 +229,13 @@ object sapMSemanticSemanticSelectMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SemanticSelectChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -244,17 +243,19 @@ object sapMSemanticSemanticSelectMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: SemanticSelect$ChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnabled enabled}.
@@ -409,6 +410,33 @@ object sapMSemanticSemanticSelectMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait SemanticSelect$ChangeEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object SemanticSelect$ChangeEventParameters {
+    
+    inline def apply(): SemanticSelect$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SemanticSelect$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticSelect$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type SemanticSelectChangeEvent = typings.openui5.sapUiBaseEventMod.default[SemanticSelect$ChangeEventParameters]
+  
+  type SemanticSelectChangeEventParameters = SemanticSelect$ChangeEventParameters
+  
   trait SemanticSelectSettings
     extends StObject
        with SemanticControlSettings {
@@ -416,7 +444,12 @@ object sapMSemanticSemanticSelectMod {
     /**
       * See {@link sap.m.Select#event:change}
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SemanticSelect$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * See {@link sap.m.Select#getEnabled}
@@ -452,7 +485,9 @@ object sapMSemanticSemanticSelectMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SemanticSelectSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SemanticSelect$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

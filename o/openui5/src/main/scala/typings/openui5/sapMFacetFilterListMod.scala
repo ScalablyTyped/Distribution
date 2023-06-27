@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AllSelected
-import typings.openui5.anon.Term
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.FacetFilterListDataType
 import typings.openui5.sapMListMod.ListSettings
@@ -22,7 +20,7 @@ object sapMFacetFilterListMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:395392f30f2a4c4d80d110d5f923da77 Facet Filter List}
+    * 	{@link https://ui5.sap.com/#/topic/395392f30f2a4c4d80d110d5f923da77 Facet Filter List}
     */
   open class default () extends FacetFilterList {
     def this(/**
@@ -140,13 +138,13 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit]
     ): this.type = js.native
     def attachListClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
@@ -171,7 +169,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit]
     ): this.type = js.native
     def attachListClose(
       /**
@@ -182,7 +180,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
@@ -207,13 +205,13 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachListOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
@@ -242,7 +240,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachListOpen(
       /**
@@ -253,7 +251,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
@@ -261,7 +259,7 @@ object sapMFacetFilterListMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Attaches event handler `fnFunction` to the {@link #event:search search} event of this `sap.m.FacetFilterList`.
       *
@@ -282,20 +280,20 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Attaches event handler `fnFunction` to the {@link #event:search search} event of this `sap.m.FacetFilterList`.
       *
@@ -321,7 +319,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -332,7 +330,7 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilterList` itself
       */
@@ -350,13 +348,13 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit]
     ): this.type = js.native
     def detachListClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListListCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -374,13 +372,13 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachListOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -388,7 +386,7 @@ object sapMFacetFilterListMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Detaches event handler `fnFunction` from the {@link #event:search search} event of this `sap.m.FacetFilterList`.
       *
@@ -400,13 +398,13 @@ object sapMFacetFilterListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -414,20 +412,22 @@ object sapMFacetFilterListMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:listClose listClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireListClose(): this.type = js.native
-    def fireListClose(/**
+    def fireListClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AllSelected): this.type = js.native
+    mParameters: FacetFilterList$ListCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:listOpen listOpen} to attached listeners.
       *
@@ -443,8 +443,8 @@ object sapMFacetFilterListMod {
     mParameters: js.Object): Boolean = js.native
     
     /**
-      * @SINCE 1.76
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.76
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
@@ -454,10 +454,12 @@ object sapMFacetFilterListMod {
       * @returns Whether or not to prevent the default action
       */
     def fireSearch(): Boolean = js.native
-    def fireSearch(/**
+    def fireSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Term): Boolean = js.native
+    mParameters: FacetFilterList$SearchEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getActive active}.
@@ -531,7 +533,7 @@ object sapMFacetFilterListMod {
     def getMultiSelect(): Boolean = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Gets current value of property {@link #getRetainListSequence retainListSequence}.
       *
@@ -544,7 +546,7 @@ object sapMFacetFilterListMod {
     def getRetainListSequence(): Boolean = js.native
     
     /**
-      * @SINCE 1.20.3
+      * @since 1.20.3
       *
       * Returns the keys of the selected elements as an associative array. An empty object is returned if no
       * items are selected.
@@ -566,7 +568,7 @@ object sapMFacetFilterListMod {
     def getSequence(): int = js.native
     
     /**
-      * @SINCE 1.20.4
+      * @since 1.20.4
       *
       * Gets current value of property {@link #getShowRemoveFacetIcon showRemoveFacetIcon}.
       *
@@ -600,7 +602,7 @@ object sapMFacetFilterListMod {
     def getWordWrap(): Boolean = js.native
     
     /**
-      * @SINCE 1.20.4
+      * @since 1.20.4
       *
       * Removes the specified key from the selected keys cache and deselects the item.
       */
@@ -618,7 +620,7 @@ object sapMFacetFilterListMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.20.4
+      * @since 1.20.4
       *
       * Removes all selected keys from the selected keys cache and deselects all items.
       */
@@ -740,7 +742,7 @@ object sapMFacetFilterListMod {
     bMultiSelect: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Sets a new value for property {@link #getRetainListSequence retainListSequence}.
       *
@@ -759,7 +761,7 @@ object sapMFacetFilterListMod {
     bRetainListSequence: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.20.3
+      * @since 1.20.3
       *
       * Used to pre-select FacetFilterItems, such as when restoring FacetFilterList selections from a variant.
       * Keys are cached separately from the actual FacetFilterItems so that they remain even when the physical
@@ -797,7 +799,7 @@ object sapMFacetFilterListMod {
     iSequence: int): this.type = js.native
     
     /**
-      * @SINCE 1.20.4
+      * @since 1.20.4
       *
       * Sets a new value for property {@link #getShowRemoveFacetIcon showRemoveFacetIcon}.
       *
@@ -849,6 +851,91 @@ object sapMFacetFilterListMod {
     bWordWrap: Boolean): this.type = js.native
   }
   
+  trait FacetFilterList$ListCloseEventParameters extends StObject {
+    
+    /**
+      * `True` if the select All checkbox is selected. This will be `false` if all items are actually selected
+      * (every FacetFilterItem.selected == true). In that case selectedItems will contain all selected items.
+      */
+    var allSelected: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Array of selected items. Items returned are only copies and therefore can only be used to read properties,
+      * not set them.
+      */
+    var selectedItems: js.UndefOr[js.Array[typings.openui5.sapMFacetFilterItemMod.default]] = js.undefined
+    
+    /**
+      * Associative array containing the keys of selected FacetFilterItems. Unlike the selectedItems parameter,
+      * this contains only the keys for all selected items, not the items themselves. Being an associative array,
+      * each object property is the FacetFilterItem key value and the value of the property is the FacetFilterItem
+      * text.
+      */
+    var selectedKeys: js.UndefOr[js.Object] = js.undefined
+  }
+  object FacetFilterList$ListCloseEventParameters {
+    
+    inline def apply(): FacetFilterList$ListCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FacetFilterList$ListCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterList$ListCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAllSelected(value: Boolean): Self = StObject.set(x, "allSelected", value.asInstanceOf[js.Any])
+      
+      inline def setAllSelectedUndefined: Self = StObject.set(x, "allSelected", js.undefined)
+      
+      inline def setSelectedItems(value: js.Array[typings.openui5.sapMFacetFilterItemMod.default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: typings.openui5.sapMFacetFilterItemMod.default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+      
+      inline def setSelectedKeys(value: js.Object): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
+    }
+  }
+  
+  trait FacetFilterList$ListOpenEventParameters extends StObject
+  
+  trait FacetFilterList$SearchEventParameters extends StObject {
+    
+    /**
+      * Value received as user input in the `sap.m.SearchField`, and taken as a JavaScript string object.
+      */
+    var term: js.UndefOr[String] = js.undefined
+  }
+  object FacetFilterList$SearchEventParameters {
+    
+    inline def apply(): FacetFilterList$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FacetFilterList$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterList$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      
+      inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    }
+  }
+  
+  type FacetFilterListListCloseEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilterList$ListCloseEventParameters]
+  
+  type FacetFilterListListCloseEventParameters = FacetFilterList$ListCloseEventParameters
+  
+  type FacetFilterListListOpenEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilterList$ListOpenEventParameters]
+  
+  type FacetFilterListListOpenEventParameters = FacetFilterList$ListOpenEventParameters
+  
+  type FacetFilterListSearchEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SearchEventParameters]
+  
+  type FacetFilterListSearchEventParameters = FacetFilterList$SearchEventParameters
+  
   trait FacetFilterListSettings
     extends StObject
        with ListSettings {
@@ -892,7 +979,12 @@ object sapMFacetFilterListMod {
     /**
       * Triggered after the list of items is closed.
       */
-    var listClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var listClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$ListCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired before the filter list is opened.
@@ -901,7 +993,9 @@ object sapMFacetFilterListMod {
       * function in the `listOpen` event handler function. If the default filtering behavior is prevented then
       * filtering behavior has to be defined at application level inside the `listOpen` event handler function.
       */
-    var listOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var listOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.20.0) - replaced by `setMode` method. `FacetFilterList` overrides the `setMode`
@@ -915,7 +1009,7 @@ object sapMFacetFilterListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Retains the list sequence if it is inactive and made active again.
       */
@@ -924,7 +1018,7 @@ object sapMFacetFilterListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Triggered after the Search button is pressed or by pressing Enter in search input field.
       *
@@ -934,7 +1028,12 @@ object sapMFacetFilterListMod {
       * are loaded initially. If the default filtering behavior is prevented then filtering behavior has to be
       * defined at application level inside the `search` event handler function.
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sequence that determines the order in which FacetFilterList is shown on the FacetFilter. Lists are rendered
@@ -943,7 +1042,7 @@ object sapMFacetFilterListMod {
     var sequence: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.20.4
+      * @since 1.20.4
       *
       * Specifies whether remove icon for facet is visible or hidden.
       */
@@ -996,11 +1095,13 @@ object sapMFacetFilterListMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setListClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "listClose", js.Any.fromFunction1(value))
+      inline def setListClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$ListCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "listClose", js.Any.fromFunction1(value))
       
       inline def setListCloseUndefined: Self = StObject.set(x, "listClose", js.undefined)
       
-      inline def setListOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "listOpen", js.Any.fromFunction1(value))
+      inline def setListOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "listOpen", js.Any.fromFunction1(value))
       
       inline def setListOpenUndefined: Self = StObject.set(x, "listOpen", js.undefined)
       
@@ -1012,7 +1113,9 @@ object sapMFacetFilterListMod {
       
       inline def setRetainListSequenceUndefined: Self = StObject.set(x, "retainListSequence", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       

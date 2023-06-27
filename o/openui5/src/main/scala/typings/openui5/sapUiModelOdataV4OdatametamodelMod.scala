@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.ScopeValueAsPromise
+import typings.openui5.anon.Scope
 import typings.openui5.anon.StandardCode
-import typings.openui5.anon.`43`
-import typings.openui5.anon.`44`
+import typings.openui5.anon.`11`
+import typings.openui5.anon.`12`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelOdataV4ValueListTypeMod.ValueListType
 import typings.std.Record
@@ -89,7 +89,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     extends typings.openui5.sapUiModelMetaModelMod.default {
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * See {@link sap.ui.base.EventProvider#attachEvent}
       * See:
@@ -154,7 +154,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       * Optional binding parameters that are passed to {@link #getObject} to compute the binding's value; if
       * they are given, `oContext` cannot be omitted
       */
-    mParameters: ScopeValueAsPromise
+    mParameters: Scope
     ): typings.openui5.sapUiModelPropertyBindingMod.default = js.native
     def bindProperty(
       /**
@@ -169,11 +169,11 @@ object sapUiModelOdataV4OdatametamodelMod {
       * Optional binding parameters that are passed to {@link #getObject} to compute the binding's value; if
       * they are given, `oContext` cannot be omitted
       */
-    mParameters: ScopeValueAsPromise
+    mParameters: Scope
     ): typings.openui5.sapUiModelPropertyBindingMod.default = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Returns a snapshot of each $metadata or annotation file loaded so far, combined into a single "JSON"
       * object according to the streamlined OData V4 Metadata JSON Format.
@@ -185,7 +185,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     def getData(): js.UndefOr[js.Object] = js.native
     
     /**
-      * @SINCE 1.51.0
+      * @since 1.51.0
       *
       * Returns a map of entity tags for each $metadata or annotation file loaded so far.
       *
@@ -199,7 +199,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     def getETags(): Record[String, String | Null] = js.native
     
     /**
-      * @SINCE 1.47.0
+      * @since 1.47.0
       * @deprecated (since 1.51.0) - use {@link #getETags} instead because modifications to old files may be
       * shadowed by a new file in certain scenarios.
       *
@@ -214,7 +214,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     def getLastModified(): js.Date = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Returns the OData metadata model context corresponding to the given OData data model path.
       *
@@ -229,7 +229,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): typings.openui5.sapUiModelContextMod.default = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the OData metadata model path corresponding to the given OData data model path.
       *
@@ -254,7 +254,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `43`
+    mParameters: `11`
     ): js.UndefOr[Any] = js.native
     def getObject(
       /**
@@ -268,18 +268,18 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `43`
+    mParameters: `11`
     ): js.UndefOr[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */
     def getOriginalProperty(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Use {@link #getObject}.
       * See:
@@ -288,7 +288,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     def getProperty(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Returns the UI5 type for the given property path that formats and parses corresponding to the property's
       * EDM type and constraints. The property's type must be a primitive type. Use {@link #requestUI5Type} for
@@ -318,7 +318,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): typings.openui5.sapUiModelOdataTypeOdatatypeMod.default = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Determines which type of value list exists for the given property.
       * See:
@@ -334,10 +334,10 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): ValueListType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueListType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.63.0
+      * @since 1.63.0
       *
       * Request currency customizing based on the code list reference given in the entity container's `com.sap.vocabularies.CodeList.v1.CurrencyCodes`
-      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v4.ODataModel#getHttpHeaders}
+      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v4.ODataModel#getHttpHeaders }
       * from this meta model's data model.
       * See:
       * 	#requestUnitsOfMeasure
@@ -366,7 +366,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `44`
+    oDetails: `12`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     def requestCurrencyCodes(
       /**
@@ -376,17 +376,16 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `44`
+    oDetails: `12`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Requests a snapshot of each $metadata or annotation file loaded so far, combined into a single "JSON"
       * object according to the streamlined OData V4 Metadata JSON Format. It is a map from all currently known
       * qualified names to their values, with the special key "$EntityContainer" mapped to the root entity container's
-      * qualified name as a starting point. See {@link topic:87aac894a40640f89920d7b2a414499b OData V4 Metadata
-      * JSON Format}.
+      * qualified name as a starting point. See {@link https://ui5.sap.com/#/topic/87aac894a40640f89920d7b2a414499b OData V4 Metadata JSON Format}.
       *
       * Note that this snapshot may change due to load-on-demand of "cross-service references" (see parameter
       * `supportReferences` of {@link sap.ui.model.odata.v4.ODataModel#constructor}).
@@ -398,11 +397,11 @@ object sapUiModelOdataV4OdatametamodelMod {
     def requestData(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Requests the metadata value for the given path relative to the given context. Returns a `Promise` which
       * is resolved with the requested metadata value or rejected with an error (only in case metadata cannot
-      * be loaded). An invalid path leads to an `undefined` result and a warning is logged. Use {@link #getObject}
+      * be loaded). An invalid path leads to an `undefined` result and a warning is logged. Use {@link #getObject }
       * for synchronous access.
       *
       * A relative path is appended to the context's path separated by a forward slash("/"). A relative path
@@ -490,10 +489,10 @@ object sapUiModelOdataV4OdatametamodelMod {
       * must refer to a function in `mParameters.scope` in case of a relative name starting with a dot, which
       * is stripped before lookup; see the `<template:alias>` instruction for XML Templating. In case of an
       * absolute name, it is searched in `mParameters.scope` first and then in the global namespace. The names
-      * "requestCurrencyCodes" and "requestUnitsOfMeasure" default to {@link #requestCurrencyCodes} and {@link
-      * #requestUnitsOfMeasure} resp. if not present in `mParameters.scope`. This function is called with the
-      * current object (or primitive value) and additional details and returns the result of this {@link #requestObject}
-      * call. The additional details are given as an object with the following properties:
+      * "requestCurrencyCodes" and "requestUnitsOfMeasure" default to {@link #requestCurrencyCodes} and {@link #requestUnitsOfMeasure }
+      * resp. if not present in `mParameters.scope`. This function is called with the current object (or primitive
+      * value) and additional details and returns the result of this {@link #requestObject} call. The additional
+      * details are given as an object with the following properties:
       * 	 `{boolean} $$valueAsPromise` Whether the computed annotation may return a `Promise` resolving with
       * its value (since 1.57.0)  `{@link sap.ui.model.Context} context` Points to the current object
       * `{object} overload` In case of annotations of an operation or a parameter, if filtering by binding parameter
@@ -596,7 +595,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `43`
+    mParameters: `11`
     ): js.Promise[Any] = js.native
     def requestObject(
       /**
@@ -620,11 +619,11 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `43`
+    mParameters: `11`
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Requests the UI5 type for the given property path that formats and parses corresponding to the property's
       * EDM type and constraints. The property's type must be a primitive type. Use {@link #getUI5Type} for synchronous
@@ -654,10 +653,10 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.63.0
+      * @since 1.63.0
       *
       * Request unit customizing based on the code list reference given in the entity container's `com.sap.vocabularies.CodeList.v1.UnitOfMeasure`
-      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v4.ODataModel#getHttpHeaders}
+      * annotation. The corresponding HTTP request uses the HTTP headers obtained via {@link sap.ui.model.odata.v4.ODataModel#getHttpHeaders }
       * from this meta model's data model.
       * See:
       * 	#requestCurrencyCodes
@@ -685,7 +684,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `44`
+    oDetails: `12`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     def requestUnitsOfMeasure(
       /**
@@ -695,17 +694,17 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `44`
+    oDetails: `12`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Requests information to retrieve a value list for the property given by `sPropertyPath`.
       *
       * @returns A promise which is resolved with a map of qualifier to value list mapping objects structured
       * as defined by `com.sap.vocabularies.Common.v1.ValueListType`; the map entry with key "" represents the
-      * mapping without qualifier. Each entry has an additional property "$model" which is the {@link sap.ui.model.odata.v4.ODataModel}
+      * mapping without qualifier. Each entry has an additional property "$model" which is the {@link sap.ui.model.odata.v4.ODataModel }
       * instance to read value list data via this mapping; that model is constructed with the HTTP headers obtained
       * via {@link sap.ui.model.odata.v4.ODataModel#getHttpHeaders} from this meta model's data model. Since
       * 1.80.0, that model's parameter "sharedRequests" is set automatically (see {@link sap.ui.model.odata.v4.ODataModel#constructor}).
@@ -789,15 +788,14 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.47.0
+      * @since 1.47.0
       *
       * Determines which type of value list exists for the given property.
       * See:
       * 	#getValueListType
       *
-      * @returns A promise that is resolved with the type of the value list, a constant of the enumeration {@link
-      * sap.ui.model.odata.v4.ValueListType}. The promise is rejected if the property cannot be found in the
-      * metadata.
+      * @returns A promise that is resolved with the type of the value list, a constant of the enumeration {@link sap.ui.model.odata.v4.ValueListType}.
+      * The promise is rejected if the property cannot be found in the metadata.
       */
     def requestValueListType(
       /**
@@ -807,7 +805,7 @@ object sapUiModelOdataV4OdatametamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */

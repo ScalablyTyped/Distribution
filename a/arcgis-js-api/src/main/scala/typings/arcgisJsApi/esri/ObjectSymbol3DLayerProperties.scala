@@ -14,92 +14,92 @@ trait ObjectSymbol3DLayerProperties
      with Symbol3DLayerProperties {
   
   /**
-    * The positioning of the symbol relative to the geometry.
-    *
-    * @default origin
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor)
-    */
+  		 * The positioning of the symbol relative to the geometry.
+  		 *
+  		 * @default origin
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor)
+  		 */
   var anchor: js.UndefOr[center_ | top_ | bottom_ | origin | relative_] = js.undefined
   
   /**
-    * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) relative to the center of the [symbol layer resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) relative to the center of the [symbol layer resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+  		 */
   var anchorPosition: js.UndefOr[ObjectSymbol3DLayerAnchorPosition] = js.undefined
   
   /**
-    * Indicates whether the symbol layer geometry casts shadows in the scene.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#castShadows)
-    */
+  		 * Indicates whether the symbol layer geometry casts shadows in the scene.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#castShadows)
+  		 */
   var castShadows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The depth, or diameter from north to south, of the object in meters.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#depth)
-    */
+  		 * The depth, or diameter from north to south, of the object in meters.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#depth)
+  		 */
   var depth: js.UndefOr[Double] = js.undefined
   
   /**
-    * The clockwise rotation of the symbol in the horizontal plane (i.e., around the z axis).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#heading)
-    */
+  		 * The clockwise rotation of the symbol in the horizontal plane (i.e., around the z axis).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#heading)
+  		 */
   var heading: js.UndefOr[Double] = js.undefined
   
   /**
-    * The height of the object in meters.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#height)
-    */
+  		 * The height of the object in meters.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#height)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The material used to shade the object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
-    */
+  		 * The material used to shade the object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
+  		 */
   var material: js.UndefOr[ObjectSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
-    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points.
-    *
-    * @default { primitive: "sphere" }
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
-    */
+  		 * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points.
+  		 *
+  		 * @default { primitive: "sphere" }
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
+  		 */
   var resource: js.UndefOr[ObjectSymbol3DLayerResource] = js.undefined
   
   /**
-    * The rotation of the symbol in the lateral vertical plane (i.e., around the y axis).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#roll)
-    */
+  		 * The rotation of the symbol in the lateral vertical plane (i.e., around the y axis).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#roll)
+  		 */
   var roll: js.UndefOr[Double] = js.undefined
   
   /**
-    * The rotation of the symbol in the longitudinal vertical plane (i.e., around the x axis).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#tilt)
-    */
+  		 * The rotation of the symbol in the longitudinal vertical plane (i.e., around the x axis).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#tilt)
+  		 */
   var tilt: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width, or diameter from east to west, of the object in meters.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#width)
-    */
+  		 * The width, or diameter from east to west, of the object in meters.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#width)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ObjectSymbol3DLayerProperties {

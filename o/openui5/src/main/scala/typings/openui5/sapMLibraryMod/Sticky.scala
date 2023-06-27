@@ -23,7 +23,7 @@ object Sticky extends StObject {
   /* "ColumnHeaders" */ val ColumnHeaders: typings.openui5.sapMLibraryMod.Sticky.ColumnHeaders & String = js.native
   
   /**
-    * @SINCE 1.56
+    * @since 1.56
     *
     * The header toolbar remains in a fixed position.
     */
@@ -34,7 +34,7 @@ object Sticky extends StObject {
   /* "HeaderToolbar" */ val HeaderToolbar: typings.openui5.sapMLibraryMod.Sticky.HeaderToolbar & String = js.native
   
   /**
-    * @SINCE 1.56
+    * @since 1.56
     *
     * The info toolbar remains in a fixed position.
     */

@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.content
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.document
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.flow
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.content
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.text
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.string
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.text
 */
 trait ContentType extends StObject
 object ContentType {

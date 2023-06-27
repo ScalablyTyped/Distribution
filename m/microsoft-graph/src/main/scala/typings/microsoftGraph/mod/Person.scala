@@ -26,7 +26,7 @@ trait Person
   // The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.
   var imAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // true if the user has flagged this person as a favorite.
+  // True if the user has flagged this person as a favorite.
   var isFavorite: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The person's job title.

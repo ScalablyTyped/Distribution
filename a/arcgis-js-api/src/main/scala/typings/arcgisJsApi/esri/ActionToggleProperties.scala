@@ -9,12 +9,12 @@ trait ActionToggleProperties
      with ActionBaseProperties {
   
   /**
-    * Indicates the value of whether the action is toggled on/off.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
-    */
+  		 * Indicates the value of whether the action is toggled on/off.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
+  		 */
   var value: js.UndefOr[Boolean] = js.undefined
 }
 object ActionToggleProperties {

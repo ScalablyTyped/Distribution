@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CapabilitiesData extends StObject {
   
   /**
-    * Indicates if the feature service is versioned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
-    */
+  		 * Indicates if the feature service is versioned.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
+  		 */
   var isVersioned: Boolean
   
   /**
-    * Indicates if the attachment is enabled on the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
-    */
+  		 * Indicates if the attachment is enabled on the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
+  		 */
   var supportsAttachment: Boolean
   
   /**
-    * Indicates if the features in the layer support m-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
-    */
+  		 * Indicates if the features in the layer support m-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
+  		 */
   var supportsM: Boolean
   
   /**
-    * Indicates if the features in the layer support z-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
-    */
+  		 * Indicates if the features in the layer support z-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
+  		 */
   var supportsZ: Boolean
 }
 object CapabilitiesData {

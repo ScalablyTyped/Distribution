@@ -22,8 +22,7 @@ object sapUxapObjectPageHeaderContentMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/snapping-header/#header-content Object Page
-    * Header Content}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/snapping-header/#header-content Object Page Header Content}
     */
   open class default () extends ObjectPageHeaderContent {
     def this(/**

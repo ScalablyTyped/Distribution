@@ -26,15 +26,15 @@ trait SsoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/sso.partner
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 2.3
     *
@@ -56,17 +56,17 @@ trait SsoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/sso.partner
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if the user is not signed in.
+    * @throws WebAPIException with error type InvalidStateError, if the user is not signed in.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 2.3
     *
@@ -84,15 +84,15 @@ trait SsoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/sso.partner
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 2.3
     *
@@ -117,13 +117,13 @@ trait SsoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/sso.partner
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 2.3
     *
@@ -147,13 +147,13 @@ trait SsoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/sso.partner
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 2.3
     *

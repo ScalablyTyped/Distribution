@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseLayerViewGL2DScreenPoint extends StObject {
   
   /**
-    * The x coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#ScreenPoint)
-    */
+  		 * The x coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#ScreenPoint)
+  		 */
   var x: Double
   
   /**
-    * The y coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#ScreenPoint)
-    */
+  		 * The y coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#ScreenPoint)
+  		 */
   var y: Double
 }
 object BaseLayerViewGL2DScreenPoint {

@@ -31,6 +31,8 @@ trait FormOptions extends StObject {
   
   var orientation: js.UndefOr[String | horizontal | vertical] = js.undefined
   
+  var size: js.UndefOr[String] = js.undefined
+  
   var submit: js.UndefOr[js.Function1[/* e */ FormSubmitEvent, Unit]] = js.undefined
   
   var validatable: js.UndefOr[FormValidatable] = js.undefined
@@ -94,6 +96,10 @@ object FormOptions {
     inline def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSubmit(value: /* e */ FormSubmitEvent => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     

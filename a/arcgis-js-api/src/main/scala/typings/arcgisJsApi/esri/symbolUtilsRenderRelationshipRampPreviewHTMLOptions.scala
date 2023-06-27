@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderRelationshipRampPreviewHTMLOptions extends StObject {
   
   /**
-    * The container node in which to place the generated relationship element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderRelationshipRampPreviewHTML)
-    */
+  		 * The container node in which to place the generated relationship element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderRelationshipRampPreviewHTML)
+  		 */
   var node: js.UndefOr[HTMLElement] = js.undefined
   
   /**
-    * The opacity of the legend element.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderRelationshipRampPreviewHTML)
-    */
+  		 * The opacity of the legend element.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderRelationshipRampPreviewHTML)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object symbolUtilsRenderRelationshipRampPreviewHTMLOptions {

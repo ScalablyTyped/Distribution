@@ -1,7 +1,7 @@
 
 # Scala.js typings for country-code-lookup
 
-Typings are for version 0.0.23
+Typings are for version 0.1.0
 
 ## Library description:
 Finds countries by various country codes

@@ -304,7 +304,15 @@ object mod {
       relative to the start of the fragment. The callback may return
       `false` to prevent traversal of a given node's children.
       */
-    def descendants(f: js.Function3[/* node */ Node, /* pos */ Double, /* parent */ Node | Null, Boolean | Unit]): Unit = js.native
+    def descendants(
+      f: js.Function4[
+          /* node */ Node, 
+          /* pos */ Double, 
+          /* parent */ Node | Null, 
+          /* index */ Double, 
+          Boolean | Unit
+        ]
+    ): Unit = js.native
     
     /**
       Compare this fragment to another one.
@@ -875,10 +883,11 @@ object mod {
       Invoke a callback for all descendant nodes recursively between
       the given two positions that are relative to start of this
       node's content. The callback is invoked with the node, its
-      parent-relative position, its parent node, and its child index.
-      When the callback returns false for a given node, that node's
-      children will not be recursed over. The last parameter can be
-      used to specify a starting position to count from.
+      position relative to the original node (method receiver),
+      its parent node, and its child index. When the callback returns
+      false for a given node, that node's children will not be
+      recursed over. The last parameter can be used to specify a
+      starting position to count from.
       */
     def nodesBetween(
       from: Double,

@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for importing [Geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry.html)
-  */
+	 * A convenience module for importing [Geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry.html)
+	 */
 object geometry {
   
   type Extent = typings.arcgisJsApi.esri.Extent

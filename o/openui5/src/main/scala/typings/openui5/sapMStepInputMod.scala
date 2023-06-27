@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.StepInputStepModeType
 import typings.openui5.sapMLibraryMod.StepInputValidationMode
@@ -185,13 +184,13 @@ object sapMStepInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.StepInput` itself
       */
@@ -220,7 +219,7 @@ object sapMStepInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -231,7 +230,7 @@ object sapMStepInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.StepInput` itself
       */
@@ -249,13 +248,13 @@ object sapMStepInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ StepInputChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -263,7 +262,7 @@ object sapMStepInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -273,22 +272,20 @@ object sapMStepInputMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: StepInput$ChangeEventParameters): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getDescription description}.
       *
@@ -299,7 +296,7 @@ object sapMStepInputMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getDisplayValuePrecision displayValuePrecision}.
       *
@@ -339,7 +336,7 @@ object sapMStepInputMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getFieldWidth fieldWidth}.
       *
@@ -385,7 +382,7 @@ object sapMStepInputMod {
     def getMin(): float = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Gets current value of property {@link #getName name}.
       *
@@ -396,7 +393,7 @@ object sapMStepInputMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Gets current value of property {@link #getPlaceholder placeholder}.
       *
@@ -407,7 +404,7 @@ object sapMStepInputMod {
     def getPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Gets current value of property {@link #getRequired required}.
       *
@@ -426,13 +423,13 @@ object sapMStepInputMod {
       *
       * Increases/decreases the value of the input. **Note:**
       * 	 - The value of the `step` property should not contain more digits after the decimal point than what
-      * 			is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
-      * 			for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
-      * 			digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
-      * 			set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
-      * 			value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
+      *     is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
+      *     for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
+      *     digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
+      *     set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
+      *     value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
       * 	 - Depending on what is set for the `value` and the `displayValuePrecision` properties, it is possible
-      * 			the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
+      *     the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
       *
       * Default value is `1`.
       *
@@ -441,7 +438,7 @@ object sapMStepInputMod {
     def getStep(): float = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getStepMode stepMode}.
       *
@@ -458,7 +455,7 @@ object sapMStepInputMod {
     def getStepMode(): StepInputStepModeType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StepInputStepModeType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -471,7 +468,7 @@ object sapMStepInputMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getValidationMode validationMode}.
       *
@@ -507,7 +504,7 @@ object sapMStepInputMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -581,7 +578,7 @@ object sapMStepInputMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getDescription description}.
       *
@@ -598,7 +595,7 @@ object sapMStepInputMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets a new value for property {@link #getDisplayValuePrecision displayValuePrecision}.
       *
@@ -656,7 +653,7 @@ object sapMStepInputMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getFieldWidth fieldWidth}.
       *
@@ -696,7 +693,7 @@ object sapMStepInputMod {
     fLargerStep: float): this.type = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Sets a new value for property {@link #getName name}.
       *
@@ -713,7 +710,7 @@ object sapMStepInputMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Sets a new value for property {@link #getPlaceholder placeholder}.
       *
@@ -730,7 +727,7 @@ object sapMStepInputMod {
     sPlaceholder: String): this.type = js.native
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Sets a new value for property {@link #getRequired required}.
       *
@@ -755,13 +752,13 @@ object sapMStepInputMod {
       *
       * Increases/decreases the value of the input. **Note:**
       * 	 - The value of the `step` property should not contain more digits after the decimal point than what
-      * 			is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
-      * 			for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
-      * 			digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
-      * 			set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
-      * 			value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
+      *     is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
+      *     for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
+      *     digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
+      *     set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
+      *     value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
       * 	 - Depending on what is set for the `value` and the `displayValuePrecision` properties, it is possible
-      * 			the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
+      *     the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -776,7 +773,7 @@ object sapMStepInputMod {
     fStep: float): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getStepMode stepMode}.
       *
@@ -805,7 +802,7 @@ object sapMStepInputMod {
     sStepMode: StepInputStepModeType): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -871,7 +868,7 @@ object sapMStepInputMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -902,6 +899,33 @@ object sapMStepInputMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait StepInput$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new `value` of the `control`.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object StepInput$ChangeEventParameters {
+    
+    inline def apply(): StepInput$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StepInput$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepInput$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type StepInputChangeEvent = typings.openui5.sapUiBaseEventMod.default[StepInput$ChangeEventParameters]
+  
+  type StepInputChangeEventParameters = StepInput$ChangeEventParameters
+  
   trait StepInputSettings
     extends StObject
        with ControlSettings {
@@ -923,17 +947,22 @@ object sapMStepInputMod {
       *
       * 	 - One of the decrement or increment buttons is pressed
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[StepInput$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines the description text after the input field, for example units of measurement, currencies.
       */
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Determines the number of digits after the decimal point.
       *
@@ -959,7 +988,7 @@ object sapMStepInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines the distribution of space between the input field and the description text . Default value
       * is 50% (leaving the other 50% for the description).
@@ -993,21 +1022,21 @@ object sapMStepInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Defines the name of the control for the purposes of form submission.
       */
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Defines a short hint intended to aid the user with data entry when the control has no value.
       */
     var placeholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.44.15
+      * @since 1.44.15
       *
       * Indicates that user input is required. This property is only needed for accessibility purposes when a
       * single relationship between the field and a label (see aggregation `labelFor` of `sap.m.Label`) cannot
@@ -1020,20 +1049,20 @@ object sapMStepInputMod {
     /**
       * Increases/decreases the value of the input. **Note:**
       * 	 - The value of the `step` property should not contain more digits after the decimal point than what
-      * 			is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
-      * 			for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
-      * 			digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
-      * 			set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
-      * 			value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
+      *     is set to the `displayValuePrecision` property, as it may lead to an increase/decrease that is not visible
+      *     for the user. For example, if the `value` is set to 1.22 and the `displayValuePrecision` is set to one
+      *     digit after the decimal, the user will see 1.2. In this case, if the `value` of the `step` property is
+      *     set to 1.005 and the user selects `increase`, the resulting value will increase to 1.2261 but the displayed
+      *     value will remain as 1.2 as it will be rounded to the first digit after the decimal point.
       * 	 - Depending on what is set for the `value` and the `displayValuePrecision` properties, it is possible
-      * 			the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
+      *     the displayed value to be rounded to a higher number, for example to 3.0 when the actual value is 2.99.
       */
     var step: js.UndefOr[
         float | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines the calculation mode for the provided `step` and `largerStep`.
       *
@@ -1046,7 +1075,7 @@ object sapMStepInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines the horizontal alignment of the text that is displayed inside the input field.
       */
@@ -1055,7 +1084,7 @@ object sapMStepInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines when the validation of the typed value will happen. By default this happens on focus out.
       */
@@ -1079,7 +1108,7 @@ object sapMStepInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Defines the text that appears in the value state message pop-up.
       */
@@ -1114,7 +1143,9 @@ object sapMStepInputMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[StepInput$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

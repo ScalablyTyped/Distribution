@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SQLExpressionInfo extends StObject {
   
   /**
-    * The SQL expression used for querying the predominant category given a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SQLExpressionInfo)
-    */
+  		 * The SQL expression used for querying the predominant category given a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SQLExpressionInfo)
+  		 */
   var sqlExpression: String
   
   /**
-    * The SQL where clause used to query the predominant value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SQLExpressionInfo)
-    */
+  		 * The SQL where clause used to query the predominant value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SQLExpressionInfo)
+  		 */
   var sqlWhere: String
 }
 object SQLExpressionInfo {

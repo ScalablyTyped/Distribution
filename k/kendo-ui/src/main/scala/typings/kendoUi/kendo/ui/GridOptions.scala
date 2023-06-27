@@ -120,7 +120,7 @@ trait GridOptions extends StObject {
   
   var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.undefined
+  var resizable: js.UndefOr[Boolean | GridResizable] = js.undefined
   
   var rowTemplate: js.UndefOr[String | js.Function] = js.undefined
   
@@ -134,11 +134,15 @@ trait GridOptions extends StObject {
   
   var selectable: js.UndefOr[Boolean | String] = js.undefined
   
+  var size: js.UndefOr[String] = js.undefined
+  
   var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, Unit]] = js.undefined
   
   var sortable: js.UndefOr[Boolean | GridSortable] = js.undefined
   
-  var toolbar: js.UndefOr[String | js.Function | (js.Array[String | GridToolbarItem])] = js.undefined
+  var toolbar: js.UndefOr[String | js.Function | (js.Array[GridToolbarItem | String | ToolBarItem])] = js.undefined
+  
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object GridOptions {
   
@@ -372,7 +376,7 @@ object GridOptions {
     
     inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
     
-    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean | GridResizable): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
@@ -400,6 +404,10 @@ object GridOptions {
     
     inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
     inline def setSort(value: /* e */ GridSortEvent => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
@@ -408,10 +416,14 @@ object GridOptions {
     
     inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    inline def setToolbar(value: String | js.Function | (js.Array[String | GridToolbarItem])): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: String | js.Function | (js.Array[GridToolbarItem | String | ToolBarItem])): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: (String | GridToolbarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
+    inline def setToolbarVarargs(value: (GridToolbarItem | String | ToolBarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

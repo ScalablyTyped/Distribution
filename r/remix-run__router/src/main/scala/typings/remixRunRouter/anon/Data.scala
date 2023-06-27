@@ -20,12 +20,16 @@ trait Data[TData] extends StObject {
   
   var formMethod: Unit
   
+  var json: Unit
+  
   var state: idle
+  
+  var text: Unit
 }
 object Data {
   
-  inline def apply[TData](formAction: Unit, formData: Unit, formEncType: Unit, formMethod: Unit): Data[TData] = {
-    val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], state = "idle")
+  inline def apply[TData](formAction: Unit, formData: Unit, formEncType: Unit, formMethod: Unit, json: Unit, text: Unit): Data[TData] = {
+    val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], state = "idle", text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[TData]]
   }
   
@@ -44,10 +48,14 @@ object Data {
     
     inline def setFormMethod(value: Unit): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
     
+    inline def setJson(value: Unit): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    
     inline def `setSpace_hasFetcherDoneAnything `(value: Boolean): Self = StObject.set(x, " _hasFetcherDoneAnything ", value.asInstanceOf[js.Any])
     
     inline def `setSpace_hasFetcherDoneAnything Undefined`: Self = StObject.set(x, " _hasFetcherDoneAnything ", js.undefined)
     
     inline def setState(value: idle): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: Unit): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

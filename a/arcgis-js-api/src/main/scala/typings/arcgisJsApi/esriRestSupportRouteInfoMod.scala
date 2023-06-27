@@ -13,20 +13,20 @@ object esriRestSupportRouteInfoMod {
   @JSImport("esri/rest/support/RouteInfo", JSImport.Namespace)
   @js.native
   /**
-    * A RouteInfo contains information about a solved route including the routes geometry and overall distance and time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html)
-    */
+  		 * A RouteInfo contains information about a solved route including the routes geometry and overall distance and time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with RouteInfo {
     def this(properties: RouteInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }
@@ -35,10 +35,10 @@ object esriRestSupportRouteInfoMod {
   val ^ : js.Any = js.native
   
   /**
-    * Creates a [RouteInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#fromGraphic)
-    */
+  		 * Creates a [RouteInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#fromGraphic)
+  		 */
   inline def fromGraphic(): RouteInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")().asInstanceOf[RouteInfo]
   inline def fromGraphic(graphic: Graphic): RouteInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGraphic")(graphic.asInstanceOf[js.Any]).asInstanceOf[RouteInfo]
   

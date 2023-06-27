@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TraceResultExtend extends StObject {
   
   /**
-    * TraceItem extends the named trace configuration and adds a property to manage the selection on the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * TraceItem extends the named trace configuration and adds a property to manage the selection on the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var TraceItem: typings.arcgisJsApi.esri.TraceItem
   
   /**
-    * The collection of results returned from the trace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * The collection of results returned from the trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var TraceResult: typings.arcgisJsApi.esri.TraceResult
   
   /**
-    * The color for the graphic of the trace results in the graphics layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * The color for the graphic of the trace results in the graphics layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var graphicColor: GraphicColor
   
   /**
-    * Returns true if graphic is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * Returns true if graphic is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var graphicEnabled: Boolean
   
   /**
-    * Returns true if selection is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * Returns true if selection is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var selectionEnabled: Boolean
   
   /**
-    * The current status of the trace to return errors from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
-    */
+  		 * The current status of the trace to return errors from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceResultExtend)
+  		 */
   var status: String
 }
 object TraceResultExtend {

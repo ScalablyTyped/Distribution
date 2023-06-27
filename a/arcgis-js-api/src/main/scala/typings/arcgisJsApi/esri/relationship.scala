@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains a helper method for creating a renderer for exploring the relationship between two numeric attributes.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html)
-  */
+	 * This object contains a helper method for creating a renderer for exploring the relationship between two numeric attributes.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html)
+	 */
 trait relationship extends StObject {
   
   /**
-    * Generates a relationship renderer (bivariate choropleth) based on a set of competing numeric fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
+  		 * Generates a relationship renderer (bivariate choropleth) based on a set of competing numeric fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+  		 */
   def createRenderer(params: relationshipCreateRendererParams): js.Promise[relationshipRendererResult]
   
   /**
-    * Updates a relationship renderer (bivariate choropleth) generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer) based on the given input parameters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
-    */
+  		 * Updates a relationship renderer (bivariate choropleth) generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer) based on the given input parameters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
+  		 */
   def updateRenderer(params: relationshipUpdateRendererParams): js.Promise[UniqueValueRenderer]
 }
 object relationship {

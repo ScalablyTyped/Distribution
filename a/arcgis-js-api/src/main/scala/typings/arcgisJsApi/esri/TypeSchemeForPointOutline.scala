@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeSchemeForPointOutline extends StObject {
   
   /**
-    * The outline color of the marker symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPoint)
-    */
+  		 * The outline color of the marker symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPoint)
+  		 */
   var color: Color_
   
   /**
-    * The width of the marker symbol in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPoint)
-    */
+  		 * The width of the marker symbol in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPoint)
+  		 */
   var width: Double
 }
 object TypeSchemeForPointOutline {

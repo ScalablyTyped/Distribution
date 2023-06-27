@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // NETWORKING CONFIG //
 ///////////////////////
 /**
-  * @requires(CrOS) Chrome OS only.
+  * @requires Chrome OS only.
   * @requires Permissions: 'networking.config'
   * @description
   * Use the *networking.config* API to authenticate to captive portals.

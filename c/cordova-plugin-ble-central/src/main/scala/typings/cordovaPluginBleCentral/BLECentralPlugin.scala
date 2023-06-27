@@ -846,6 +846,9 @@ object BLECentralPlugin {
     /* Android only */
     var callbackType: js.UndefOr[all | first | lost] = js.undefined
     
+    /** Scanning duration in seconds */
+    var duration: js.UndefOr[Double] = js.undefined
+    
     /* Android only */
     var legacy: js.UndefOr[Boolean] = js.undefined
     
@@ -879,6 +882,10 @@ object BLECentralPlugin {
       inline def setCallbackType(value: all | first | lost): Self = StObject.set(x, "callbackType", value.asInstanceOf[js.Any])
       
       inline def setCallbackTypeUndefined: Self = StObject.set(x, "callbackType", js.undefined)
+      
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
       inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
       

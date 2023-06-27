@@ -1,7 +1,7 @@
 
 # Scala.js typings for datadog__native-iast-taint-tracking
 
-Typings are for version 1.4.1
+Typings are for version 2.0.0-pre
 
 
 

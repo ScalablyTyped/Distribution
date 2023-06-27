@@ -9,10 +9,10 @@ trait TextSymbol3DLayerBackground
      with AnonymousAccessor {
   
   /**
-    * The color of the background.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
-    */
+  		 * The color of the background.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object TextSymbol3DLayerBackground {

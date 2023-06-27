@@ -1,7 +1,7 @@
 
 # Scala.js typings for default-gateway
 
-Typings are for version 3.0
+Typings are for version 7.2
 
 ## Library description:
 Get the default network gateway, cross-platform.

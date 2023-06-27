@@ -150,8 +150,7 @@ trait BindableResponseHeaders extends StObject {
   
   /**
     * Whether a preliminary context will be created/used by a binding. When set to `true`, the model can bundle
-    * the OData calls for dependent bindings into fewer $batch requests. For more information, see {@link topic:6c47b2b39db9404582994070ec3d57a2#loio62149734b5c24507868e722fe87a75db
-    * Optimizing Dependent Bindings}
+    * the OData calls for dependent bindings into fewer $batch requests. For more information, see {@link https://ui5.sap.com/#/topic/6c47b2b39db9404582994070ec3d57a2#loio62149734b5c24507868e722fe87a75db Optimizing Dependent Bindings}
     */
   var preliminaryContext: js.UndefOr[Boolean] = js.undefined
   

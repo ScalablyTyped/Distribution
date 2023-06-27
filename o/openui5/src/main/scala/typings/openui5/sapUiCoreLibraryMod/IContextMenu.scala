@@ -1,5 +1,6 @@
 package typings.openui5.sapUiCoreLibraryMod
 
+import typings.openui5.anon.OffsetX
 import typings.openui5.jQuery.Event
 import typings.openui5.sapUiCoreElementMod.default
 import typings.std.HTMLElement
@@ -16,7 +17,7 @@ trait IContextMenu extends StObject {
     /**
     * An `oncontextmenu` event object or an object with properties left, top, offsetX, offsetY
     */
-  oEvent: js.Object,
+  oEvent: OffsetX,
     /**
     * The element which will get the focus back again after the menu was closed
     */
@@ -26,7 +27,7 @@ trait IContextMenu extends StObject {
     /**
     * An `oncontextmenu` event object or an object with properties left, top, offsetX, offsetY
     */
-  oEvent: js.Object,
+  oEvent: OffsetX,
     /**
     * The element which will get the focus back again after the menu was closed
     */

@@ -11,87 +11,89 @@ trait BasemapLayerListProperties
      with WidgetProperties {
   
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a base layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#baseListItemCreatedFunction)
-    */
+  		 * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a base layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#baseListItemCreatedFunction)
+  		 */
   var baseListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   
   /**
-    * The current basemap's title.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#basemapTitle)
-    */
+  		 * The current basemap's title.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#basemapTitle)
+  		 */
   var basemapTitle: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the basemap’s title, layer order and layer grouping can be edited by the user.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#editingEnabled)
-    */
+  		 * Indicates whether the basemap’s title, layer order and layer grouping can be edited by the user.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#editingEnabled)
+  		 */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the heading level to use for the widget title (i.e.
-    *
-    * @default 2
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#headingLevel)
-    */
+  		 * Indicates the heading level to use for the widget title (i.e.
+  		 *
+  		 * @default 2
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#headingLevel)
+  		 */
   var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/BasemapLayerList#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether more than one list item may be selected by the user at a single time.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#multipleSelectionEnabled)
-    */
+  		 * Indicates whether more than one list item may be selected by the user at a single time.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#multipleSelectionEnabled)
+  		 */
   var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a reference layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceListItemCreatedFunction)
-    */
+  		 * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a reference layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceListItemCreatedFunction)
+  		 */
   var referenceListItemCreatedFunction: js.UndefOr[ListItemCreatedHandler] = js.undefined
   
   /**
-    * A collection of selected [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing basemap layers selected by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#selectedItems)
-    */
+  		 * A collection of selected [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing basemap layers selected by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#selectedItems)
+  		 */
   var selectedItems: js.UndefOr[CollectionProperties[ListItemProperties]] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[BasemapLayerListViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#visibleElements)
-    */
-  var visibleElements: js.UndefOr[VisibleElements] = js.undefined
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#visibleElements)
+  		 */
+  var visibleElements: js.UndefOr[BasemapLayerListVisibleElements] = js.undefined
 }
 object BasemapLayerListProperties {
   
@@ -145,7 +147,7 @@ object BasemapLayerListProperties {
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    inline def setVisibleElements(value: VisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    inline def setVisibleElements(value: BasemapLayerListVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }

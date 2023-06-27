@@ -9,10 +9,10 @@ trait MultipointProperties
      with GeometryProperties {
   
   /**
-    * An array of points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html#points)
-    */
+  		 * An array of points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html#points)
+  		 */
   var points: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
 }
 object MultipointProperties {

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VertexRemoveEventInfoVertices extends StObject {
   
   /**
-    * The ring/path index of the removed vertex.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * The ring/path index of the removed vertex.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var componentIndex: Double
   
   /**
-    * An array of x,y coordinates representing the vertices removed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * An array of x,y coordinates representing the vertices removed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var coordinates: js.Array[Double]
   
   /**
-    * The index of the vertex position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * The index of the vertex position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var vertexIndex: Double
 }
 object VertexRemoveEventInfoVertices {

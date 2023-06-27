@@ -135,13 +135,13 @@ object sapMSemanticSemanticButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticButton` itself
       */
@@ -166,7 +166,7 @@ object sapMSemanticSemanticButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -177,7 +177,7 @@ object sapMSemanticSemanticButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticButton` itself
       */
@@ -195,13 +195,13 @@ object sapMSemanticSemanticButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -209,7 +209,7 @@ object sapMSemanticSemanticButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -250,6 +250,12 @@ object sapMSemanticSemanticButtonMod {
     bEnabled: Boolean): this.type = js.native
   }
   
+  trait SemanticButton$PressEventParameters extends StObject
+  
+  type SemanticButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[SemanticButton$PressEventParameters]
+  
+  type SemanticButtonPressEventParameters = SemanticButton$PressEventParameters
+  
   trait SemanticButtonSettings
     extends StObject
        with SemanticControlSettings {
@@ -264,7 +270,9 @@ object sapMSemanticSemanticButtonMod {
     /**
       * See {@link sap.m.Button#event:press}
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object SemanticButtonSettings {
     
@@ -280,7 +288,7 @@ object sapMSemanticSemanticButtonMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
     }

@@ -13,9 +13,9 @@ trait KnowledgeGraphLayerConstructor
      with Instantiable1[/* properties */ KnowledgeGraphLayerProperties, KnowledgeGraphLayer] {
   
   /**
-    * Assumes that data for all of the members defined in the inclusionModeDefinition is already loaded into local storage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#loadLayerAssumingLocalCache)
-    */
+  		 * Assumes that data for all of the members defined in the inclusionModeDefinition is already loaded into local storage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#loadLayerAssumingLocalCache)
+  		 */
   def loadLayerAssumingLocalCache(): scala.Unit = js.native
 }

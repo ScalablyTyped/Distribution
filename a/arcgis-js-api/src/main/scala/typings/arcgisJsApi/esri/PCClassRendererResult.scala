@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PCClassRendererResult extends StObject {
   
   /**
-    * The renderer object configured to represent the class codes in the point cloud.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#PCClassRendererResult)
-    */
+  		 * The renderer object configured to represent the class codes in the point cloud.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#PCClassRendererResult)
+  		 */
   var renderer: PointCloudUniqueValueRenderer
 }
 object PCClassRendererResult {

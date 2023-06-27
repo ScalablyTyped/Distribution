@@ -20,5 +20,7 @@ object devLibCodeTextMod {
   
   type Token = typings.micromarkUtilTypes.mod.Token
   
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
+  
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

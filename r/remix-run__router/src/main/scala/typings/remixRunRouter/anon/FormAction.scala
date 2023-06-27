@@ -1,5 +1,6 @@
 package typings.remixRunRouter.anon
 
+import typings.remixRunRouter.distUtilsMod.JsonValue
 import typings.remixRunRouter.distUtilsMod.V7FormMethod
 import typings.remixRunRouter.remixRunRouterStrings.loading
 import org.scalablytyped.runtime.StObject
@@ -21,7 +22,11 @@ trait FormAction[TData] extends StObject {
   
   var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod | V7FormMethod] = js.undefined
   
+  var json: js.UndefOr[JsonValue] = js.undefined
+  
   var state: loading
+  
+  var text: js.UndefOr[String] = js.undefined
 }
 object FormAction {
   
@@ -53,10 +58,20 @@ object FormAction {
     
     inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
     
+    inline def setJson(value: JsonValue): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    
+    inline def setJsonNull: Self = StObject.set(x, "json", null)
+    
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    
     inline def `setSpace_hasFetcherDoneAnything `(value: Boolean): Self = StObject.set(x, " _hasFetcherDoneAnything ", value.asInstanceOf[js.Any])
     
     inline def `setSpace_hasFetcherDoneAnything Undefined`: Self = StObject.set(x, " _hasFetcherDoneAnything ", js.undefined)
     
     inline def setState(value: loading): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

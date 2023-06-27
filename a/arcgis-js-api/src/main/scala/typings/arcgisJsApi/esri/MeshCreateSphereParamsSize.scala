@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreateSphereParamsSize extends StObject {
   
   /**
-    * The depth of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * The depth of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var depth: js.UndefOr[Double] = js.undefined
   
   /**
-    * The height of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * The height of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * The width of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MeshCreateSphereParamsSize {

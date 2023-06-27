@@ -30,8 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a style of paragraph in a document.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @js.native
 trait ParagraphFormat
@@ -39,11 +38,10 @@ trait ParagraphFormat
      with ClientObject {
   
   /**
-    * Gets or sets the alignment for the specified paragraphs.
+    * Specifies the alignment for the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
   
@@ -52,65 +50,58 @@ trait ParagraphFormat
   var context_ParagraphFormat: RequestContext = js.native
   
   /**
-    * Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    * Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var firstLineIndent: Double = js.native
   
   /**
-    * Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
+    * Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var keepTogether: Boolean = js.native
   
   /**
-    * Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
+    * Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var keepWithNext: Boolean = js.native
   
   /**
-    * Gets or sets the left indent.
+    * Specifies the left indent.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var leftIndent: Double = js.native
   
   /**
-    * Gets or sets the line spacing (in points) for the specified paragraphs.
+    * Specifies the line spacing (in points) for the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var lineSpacing: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+    * Specifies the amount of spacing (in gridlines) after the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var lineUnitAfter: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+    * Specifies the amount of spacing (in gridlines) before the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var lineUnitBefore: Double = js.native
   
@@ -126,29 +117,26 @@ trait ParagraphFormat
   def load(propertyNames: js.Array[String]): ParagraphFormat = js.native
   
   /**
-    * Gets or sets whether left and right indents are the same width.
+    * Specifies whether left and right indents are the same width.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var mirrorIndents: Boolean = js.native
   
   /**
-    * Gets or sets the outline level for the specified paragraphs.
+    * Specifies the outline level for the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var outlineLevel: OutlineLevel | OutlineLevel1 | OutlineLevel2 | OutlineLevel3 | OutlineLevel4 | OutlineLevel5 | OutlineLevel6 | OutlineLevel7 | OutlineLevel8 | OutlineLevel9 | OutlineLevelBodyText = js.native
   
   /**
-    * Gets or sets the right indent (in points) for the specified paragraphs.
+    * Specifies the right indent (in points) for the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var rightIndent: Double = js.native
   
@@ -163,20 +151,18 @@ trait ParagraphFormat
   def set(properties: ParagraphFormat): Unit = js.native
   
   /**
-    * Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+    * Specifies the amount of spacing (in points) after the specified paragraph or text column.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var spaceAfter: Double = js.native
   
   /**
-    * Gets or sets the spacing (in points) before the specified paragraphs.
+    * Specifies the spacing (in points) before the specified paragraphs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var spaceBefore: Double = js.native
   
@@ -197,11 +183,10 @@ trait ParagraphFormat
   def untrack(): ParagraphFormat = js.native
   
   /**
-    * Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
+    * Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var widowControl: Boolean = js.native
 }

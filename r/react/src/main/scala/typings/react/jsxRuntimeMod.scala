@@ -16,6 +16,22 @@ object jsxRuntimeMod {
     
     type ElementClass = typings.react.mod.JSX.ElementClass
     
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type ElementType = react.react.JSX.ElementType
+    }}}
+    to avoid circular code involving: 
+    - react.react.<global>.JSX.ElementType
+    - react.react.GlobalJSXElementType
+    - react.react.JSX.ElementType
+    - react.react.JSXElementConstructor
+    - react.react.ReactNode
+    - react.react/experimental.react.PromiseLikeOfReactNode
+    - react.react/jsx-runtime.JSX.ElementType
+    */
+    type ElementType = Any
+    
     type IntrinsicAttributes = typings.react.mod.JSX.IntrinsicAttributes
     
     type IntrinsicClassAttributes[T] = typings.react.mod.JSX.IntrinsicClassAttributes[T]

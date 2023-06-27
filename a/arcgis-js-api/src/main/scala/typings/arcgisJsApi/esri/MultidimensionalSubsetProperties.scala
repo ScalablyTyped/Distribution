@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultidimensionalSubsetProperties extends StObject {
   
   /**
-    * The spatial area of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#areaOfInterest)
-    */
+  		 * The spatial area of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#areaOfInterest)
+  		 */
   var areaOfInterest: js.UndefOr[ExtentPropertiestypeexten | PolygonPropertiestypepoly] = js.undefined
   
   /**
-    * The variable and dimension subset definitions to set the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#subsetDefinitions)
-    */
+  		 * The variable and dimension subset definitions to set the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#subsetDefinitions)
+  		 */
   var subsetDefinitions: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.undefined
 }
 object MultidimensionalSubsetProperties {

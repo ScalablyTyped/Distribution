@@ -7,6 +7,7 @@ import typings.playcanvas.anon.App
 import typings.playcanvas.anon.Authority
 import typings.playcanvas.anon.BaseRadius
 import typings.playcanvas.anon.BlendIndices
+import typings.playcanvas.anon.BlockSize
 import typings.playcanvas.anon.CalculateTangents
 import typings.playcanvas.anon.Call
 import typings.playcanvas.anon.CapSegments
@@ -16,6 +17,7 @@ import typings.playcanvas.anon.HalfExtents
 import typings.playcanvas.anon.Height
 import typings.playcanvas.anon.JsUrl
 import typings.playcanvas.anon.LatitudeBands
+import typings.playcanvas.anon.Name
 import typings.playcanvas.anon.RingRadius
 import typings.playcanvas.anon.TypeofScriptType
 import typings.playcanvas.mod.^
@@ -91,6 +93,7 @@ import typings.std.HTMLStyleElement
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
+import typings.std.Map
 import typings.std.Set
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
@@ -3228,8 +3231,6 @@ inline def SHADOWUPDATE_REALTIME: Double = ^.asInstanceOf[js.Dynamic].selectDyna
   */
 inline def SHADOWUPDATE_THISFRAME: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADOWUPDATE_THISFRAME").asInstanceOf[Double]
 
-inline def SHADOW_COUNT: `6` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADOW_COUNT").asInstanceOf[`6`]
-
 inline def SHADOW_DEPTH: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADOW_DEPTH").asInstanceOf[`0`]
 
 /**
@@ -3253,6 +3254,13 @@ inline def SHADOW_PCF3: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADO
   * @type {number}
   */
 inline def SHADOW_PCF5: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADOW_PCF5").asInstanceOf[Double]
+
+/**
+  * Render depth as color for PCSS software filtering.
+  *
+  * @type {number}
+  */
+inline def SHADOW_PCSS: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADOW_PCSS").asInstanceOf[Double]
 
 /**
   * Render 16-bit exponential variance shadow map. Requires OES_texture_half_float extension. Falls
@@ -3672,6 +3680,13 @@ inline def TRACEID_SHADER_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynam
   * @type {string}
   */
 inline def TRACEID_SHADER_COMPILE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_SHADER_COMPILE").asInstanceOf[String]
+
+/**
+  * Logs the vram use by all textures in memory.
+  *
+  * @type {string}
+  */
+inline def TRACEID_TEXTURES: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_TEXTURES").asInstanceOf[String]
 
 /**
   * Logs the allocation of textures.
@@ -4292,10 +4307,20 @@ inline def createCylinder(device: GraphicsDevice, opts: CapSegments): Mesh = (^.
   * requested to have a depth buffer of at least 16 bits.
   * @param {boolean} [options.stencil=true] - Boolean that indicates that the drawing buffer is
   * requested to have a stencil buffer of at least 8 bits.
-  * @param {string} [options.glslangUrl] - An url to glslang script, required if
+  * @param {string} [options.glslangUrl] - The URL to the glslang script. Required if the
   * {@link DEVICETYPE_WEBGPU} type is added to deviceTypes array. Not used for
-  * {@link DEVICETYPE_WEBGL} device type creation.
+  * {@link DEVICETYPE_WEBGL1} or {@link DEVICETYPE_WEBGL2} device type creation.
   * @param {string} [options.twgslUrl] - An url to twgsl script, required if glslangUrl was specified.
+  * @param {boolean} [options.xrCompatible] - Boolean that hints to the user agent to use a
+  * compatible graphics adapter for an immersive XR device.
+  * @param {'default'|'high-performance'|'low-power'} [options.powerPreference='default'] - A
+  * hint indicating what configuration of GPU would be selected. Possible values are:
+  *
+  * - 'default': Let the user agent decide which GPU configuration is most suitable. This is the
+  * default value.
+  * - 'high-performance': Prioritizes rendering performance over power consumption.
+  * - 'low-power': Prioritizes power saving over rendering performance.
+  *
   * @returns {Promise} - Promise object representing the created graphics device.
   */
 inline def createGraphicsDevice(canvas: HTMLCanvasElement): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGraphicsDevice")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
@@ -4772,6 +4797,8 @@ inline def drawTexture(
   */
 inline def extend(target: js.Object, ex: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
+inline def getPixelFormatArrayType(format: Any): Uint8ArrayConstructor | Uint16ArrayConstructor | Float32ArrayConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getPixelFormatArrayType")(format.asInstanceOf[js.Any]).asInstanceOf[Uint8ArrayConstructor | Uint16ArrayConstructor | Float32ArrayConstructor]
+
 inline def getReservedScriptNames(): Set[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReservedScriptNames")().asInstanceOf[Set[String]]
 
 /**
@@ -4803,7 +4830,7 @@ inline def makeArray(arr: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("m
   */
 inline def now: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("now").asInstanceOf[Any]
 
-inline def pixelFormatByteSizes: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("pixelFormatByteSizes").asInstanceOf[js.Array[Any]]
+inline def pixelFormatInfo: Map[Double, BlockSize | Name] = ^.asInstanceOf[js.Dynamic].selectDynamic("pixelFormatInfo").asInstanceOf[Map[Double, BlockSize | Name]]
 
 inline def prefilterCubemap(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prefilterCubemap")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 

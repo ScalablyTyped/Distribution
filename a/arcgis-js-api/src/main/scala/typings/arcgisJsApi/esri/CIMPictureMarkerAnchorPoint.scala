@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMPictureMarkerAnchorPoint extends StObject {
   
   /**
-    * The x coordinate of the anchor point, measured along the east/west axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureMarker)
-    */
+  		 * The x coordinate of the anchor point, measured along the east/west axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureMarker)
+  		 */
   var x: js.UndefOr[Any] = js.undefined
   
   /**
-    * The y coordinate of the anchor point, measured along the north/south axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureMarker)
-    */
+  		 * The y coordinate of the anchor point, measured along the north/south axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureMarker)
+  		 */
   var y: js.UndefOr[Any] = js.undefined
 }
 object CIMPictureMarkerAnchorPoint {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry-internal/tracing" : "7.51.2"
+      "@sentry-internal/tracing" : "7.56.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry-internal/tracing" : "7.51.2"
+      "@sentry-internal/tracing" : "7.56.0"
     }
   ],
   "compile-devDependencies" : [

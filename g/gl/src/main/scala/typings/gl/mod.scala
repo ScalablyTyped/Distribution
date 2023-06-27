@@ -320,6 +320,7 @@ import typings.gl.glStrings.WEBGL_color_buffer_float
 import typings.gl.glStrings.WEBGL_compressed_texture_astc
 import typings.gl.glStrings.WEBGL_compressed_texture_etc
 import typings.gl.glStrings.WEBGL_compressed_texture_etc1
+import typings.gl.glStrings.WEBGL_compressed_texture_pvrtc
 import typings.gl.glStrings.WEBGL_compressed_texture_s3tc
 import typings.gl.glStrings.WEBGL_compressed_texture_s3tc_srgb
 import typings.gl.glStrings.WEBGL_debug_renderer_info
@@ -364,11 +365,13 @@ import typings.std.OESTextureHalfFloatLinear
 import typings.std.OESVertexArrayObject
 import typings.std.OVRMultiview2
 import typings.std.OffscreenCanvas
+import typings.std.PredefinedColorSpace
 import typings.std.TexImageSource
 import typings.std.WEBGLColorBufferFloat
 import typings.std.WEBGLCompressedTextureAstc
 import typings.std.WEBGLCompressedTextureEtc
 import typings.std.WEBGLCompressedTextureEtc1
+import typings.std.WEBGLCompressedTexturePvrtc
 import typings.std.WEBGLCompressedTextureS3tc
 import typings.std.WEBGLCompressedTextureS3tcSrgb
 import typings.std.WEBGLDebugRendererInfo
@@ -1888,81 +1891,104 @@ object mod {
     @js.native
     val ZERO: `0` = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/activeTexture) */
     /* standard dom */
     inline def activeTexture(texture: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activeTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/attachShader) */
     /* standard dom */
     inline def attachShader(program: WebGLProgram, shader: WebGLShader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachShader")(program.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindAttribLocation) */
     /* standard dom */
     inline def bindAttribLocation(program: WebGLProgram, index: GLuint, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindAttribLocation")(program.asInstanceOf[js.Any], index.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindBuffer) */
     /* standard dom */
     inline def bindBuffer(target: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindBuffer")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def bindBuffer(target: GLenum, buffer: WebGLBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindBuffer")(target.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindFramebuffer) */
     /* standard dom */
     inline def bindFramebuffer(target: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindFramebuffer")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def bindFramebuffer(target: GLenum, framebuffer: WebGLFramebuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindFramebuffer")(target.asInstanceOf[js.Any], framebuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindRenderbuffer) */
     /* standard dom */
     inline def bindRenderbuffer(target: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindRenderbuffer")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def bindRenderbuffer(target: GLenum, renderbuffer: WebGLRenderbuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindRenderbuffer")(target.asInstanceOf[js.Any], renderbuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindTexture) */
     /* standard dom */
     inline def bindTexture(target: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTexture")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def bindTexture(target: GLenum, texture: WebGLTexture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindTexture")(target.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendColor) */
     /* standard dom */
     inline def blendColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blendColor")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquation) */
     /* standard dom */
     inline def blendEquation(mode: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("blendEquation")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquationSeparate) */
     /* standard dom */
     inline def blendEquationSeparate(modeRGB: GLenum, modeAlpha: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blendEquationSeparate")(modeRGB.asInstanceOf[js.Any], modeAlpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFunc) */
     /* standard dom */
     inline def blendFunc(sfactor: GLenum, dfactor: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blendFunc")(sfactor.asInstanceOf[js.Any], dfactor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFuncSeparate) */
     /* standard dom */
     inline def blendFuncSeparate(srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blendFuncSeparate")(srcRGB.asInstanceOf[js.Any], dstRGB.asInstanceOf[js.Any], srcAlpha.asInstanceOf[js.Any], dstAlpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def bufferData(target: GLenum, data: Null, usage: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferData")(target.asInstanceOf[js.Any], data.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /* standard dom */
     inline def bufferData(target: GLenum, data: BufferSource, usage: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferData")(target.asInstanceOf[js.Any], data.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferData) */
     /* standard dom */
     inline def bufferData(target: GLenum, size: GLsizeiptr, usage: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferData")(target.asInstanceOf[js.Any], size.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferSubData) */
     /* standard dom */
     inline def bufferSubData(target: GLenum, offset: GLintptr, data: BufferSource): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferSubData")(target.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/canvas) */
     /* standard dom */
     @JSImport("gl", "WebGLRenderingContext.canvas")
     @js.native
     val canvas: HTMLCanvasElement | OffscreenCanvas = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus) */
     /* standard dom */
     inline def checkFramebufferStatus(target: GLenum): GLenum = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFramebufferStatus")(target.asInstanceOf[js.Any]).asInstanceOf[GLenum]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clear) */
     /* standard dom */
     inline def clear(mask: GLbitfield): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(mask.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearColor) */
     /* standard dom */
     inline def clearColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearColor")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearDepth) */
     /* standard dom */
     inline def clearDepth(depth: GLclampf): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearDepth")(depth.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearStencil) */
     /* standard dom */
     inline def clearStencil(s: GLint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStencil")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/colorMask) */
     /* standard dom */
     inline def colorMask(red: GLboolean, green: GLboolean, blue: GLboolean, alpha: GLboolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("colorMask")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compileShader) */
     /* standard dom */
     inline def compileShader(shader: WebGLShader): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compileShader")(shader.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexImage2D) */
     /* standard dom */
     inline def compressedTexImage2D(
       target: GLenum,
@@ -1974,6 +2000,7 @@ object mod {
       data: js.typedarray.ArrayBufferView
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compressedTexImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], internalformat.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], border.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D) */
     /* standard dom */
     inline def compressedTexSubImage2D(
       target: GLenum,
@@ -1986,6 +2013,7 @@ object mod {
       data: js.typedarray.ArrayBufferView
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compressedTexSubImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], xoffset.asInstanceOf[js.Any], yoffset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], format.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexImage2D) */
     /* standard dom */
     inline def copyTexImage2D(
       target: GLenum,
@@ -1998,6 +2026,7 @@ object mod {
       border: GLint
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTexImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], internalformat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], border.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D) */
     /* standard dom */
     inline def copyTexSubImage2D(
       target: GLenum,
@@ -2010,135 +2039,180 @@ object mod {
       height: GLsizei
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTexSubImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], xoffset.asInstanceOf[js.Any], yoffset.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createBuffer) */
     /* standard dom */
     inline def createBuffer(): WebGLBuffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createBuffer")().asInstanceOf[WebGLBuffer | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createFramebuffer) */
     /* standard dom */
     inline def createFramebuffer(): WebGLFramebuffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createFramebuffer")().asInstanceOf[WebGLFramebuffer | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createProgram) */
     /* standard dom */
     inline def createProgram(): WebGLProgram | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")().asInstanceOf[WebGLProgram | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createRenderbuffer) */
     /* standard dom */
     inline def createRenderbuffer(): WebGLRenderbuffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderbuffer")().asInstanceOf[WebGLRenderbuffer | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createShader) */
     /* standard dom */
     inline def createShader(`type`: GLenum): WebGLShader | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(`type`.asInstanceOf[js.Any]).asInstanceOf[WebGLShader | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createTexture) */
     /* standard dom */
     inline def createTexture(): WebGLTexture | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createTexture")().asInstanceOf[WebGLTexture | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/cullFace) */
     /* standard dom */
     inline def cullFace(mode: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cullFace")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteBuffer) */
     /* standard dom */
     inline def deleteBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteBuffer")().asInstanceOf[Unit]
     inline def deleteBuffer(buffer: WebGLBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteFramebuffer) */
     /* standard dom */
     inline def deleteFramebuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFramebuffer")().asInstanceOf[Unit]
     inline def deleteFramebuffer(framebuffer: WebGLFramebuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFramebuffer")(framebuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteProgram) */
     /* standard dom */
     inline def deleteProgram(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteProgram")().asInstanceOf[Unit]
     inline def deleteProgram(program: WebGLProgram): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteProgram")(program.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer) */
     /* standard dom */
     inline def deleteRenderbuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRenderbuffer")().asInstanceOf[Unit]
     inline def deleteRenderbuffer(renderbuffer: WebGLRenderbuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteRenderbuffer")(renderbuffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteShader) */
     /* standard dom */
     inline def deleteShader(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteShader")().asInstanceOf[Unit]
     inline def deleteShader(shader: WebGLShader): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteShader")(shader.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteTexture) */
     /* standard dom */
     inline def deleteTexture(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTexture")().asInstanceOf[Unit]
     inline def deleteTexture(texture: WebGLTexture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthFunc) */
     /* standard dom */
     inline def depthFunc(func: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depthFunc")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthMask) */
     /* standard dom */
     inline def depthMask(flag: GLboolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depthMask")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthRange) */
     /* standard dom */
     inline def depthRange(zNear: GLclampf, zFar: GLclampf): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("depthRange")(zNear.asInstanceOf[js.Any], zFar.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/detachShader) */
     /* standard dom */
     inline def detachShader(program: WebGLProgram, shader: WebGLShader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachShader")(program.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disable) */
     /* standard dom */
     inline def disable(cap: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(cap.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray) */
     /* standard dom */
     inline def disableVertexAttribArray(index: GLuint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableVertexAttribArray")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawArrays) */
     /* standard dom */
     inline def drawArrays(mode: GLenum, first: GLint, count: GLsizei): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawArrays")(mode.asInstanceOf[js.Any], first.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawElements) */
     /* standard dom */
     inline def drawElements(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawElements")(mode.asInstanceOf[js.Any], count.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /* standard dom */
+    @JSImport("gl", "WebGLRenderingContext.drawingBufferColorSpace")
+    @js.native
+    def drawingBufferColorSpace: PredefinedColorSpace = js.native
+    inline def drawingBufferColorSpace_=(x: PredefinedColorSpace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawingBufferColorSpace")(x.asInstanceOf[js.Any])
+    
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferHeight) */
     /* standard dom */
     @JSImport("gl", "WebGLRenderingContext.drawingBufferHeight")
     @js.native
     val drawingBufferHeight: GLsizei = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferWidth) */
     /* standard dom */
     @JSImport("gl", "WebGLRenderingContext.drawingBufferWidth")
     @js.native
     val drawingBufferWidth: GLsizei = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enable) */
     /* standard dom */
     inline def enable(cap: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(cap.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray) */
     /* standard dom */
     inline def enableVertexAttribArray(index: GLuint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableVertexAttribArray")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/finish) */
     /* standard dom */
     inline def finish(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("finish")().asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/flush) */
     /* standard dom */
     inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer) */
     /* standard dom */
     inline def framebufferRenderbuffer(target: GLenum, attachment: GLenum, renderbuffertarget: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("framebufferRenderbuffer")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], renderbuffertarget.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def framebufferRenderbuffer(target: GLenum, attachment: GLenum, renderbuffertarget: GLenum, renderbuffer: WebGLRenderbuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("framebufferRenderbuffer")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], renderbuffertarget.asInstanceOf[js.Any], renderbuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def framebufferTexture2D(target: GLenum, attachment: GLenum, textarget: GLenum, texture: Null, level: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("framebufferTexture2D")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], textarget.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferTexture2D) */
     /* standard dom */
     inline def framebufferTexture2D(target: GLenum, attachment: GLenum, textarget: GLenum, texture: WebGLTexture, level: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("framebufferTexture2D")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], textarget.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/frontFace) */
     /* standard dom */
     inline def frontFace(mode: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("frontFace")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/generateMipmap) */
     /* standard dom */
     inline def generateMipmap(target: GLenum): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMipmap")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveAttrib) */
     /* standard dom */
     inline def getActiveAttrib(program: WebGLProgram, index: GLuint): WebGLActiveInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveAttrib")(program.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[WebGLActiveInfo | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveUniform) */
     /* standard dom */
     inline def getActiveUniform(program: WebGLProgram, index: GLuint): WebGLActiveInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveUniform")(program.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[WebGLActiveInfo | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttachedShaders) */
     /* standard dom */
     inline def getAttachedShaders(program: WebGLProgram): js.Array[WebGLShader] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttachedShaders")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[WebGLShader] | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttribLocation) */
     /* standard dom */
     inline def getAttribLocation(program: WebGLProgram, name: String): GLint = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttribLocation")(program.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[GLint]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter) */
     /* standard dom */
     inline def getBufferParameter(target: GLenum, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBufferParameter")(target.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getContextAttributes) */
     /* standard dom */
     inline def getContextAttributes(): WebGLContextAttributes | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getContextAttributes")().asInstanceOf[WebGLContextAttributes | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getError) */
     /* standard dom */
     inline def getError(): GLenum = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[GLenum]
     
     /* standard dom */
     inline def getExtension(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getExtension) */
     /* standard dom */
     inline def getExtension_ANGLEinstancedarrays(extensionName: ANGLE_instanced_arrays): ANGLEInstancedArrays | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[ANGLEInstancedArrays | Null]
     
@@ -2219,6 +2293,9 @@ object mod {
     inline def getExtension_WEBGLcompressedtextureetc1(extensionName: WEBGL_compressed_texture_etc1): WEBGLCompressedTextureEtc1 | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLCompressedTextureEtc1 | Null]
     
     /* standard dom */
+    inline def getExtension_WEBGLcompressedtexturepvrtc(extensionName: WEBGL_compressed_texture_pvrtc): WEBGLCompressedTexturePvrtc | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLCompressedTexturePvrtc | Null]
+    
+    /* standard dom */
     inline def getExtension_WEBGLcompressedtextures3tc(extensionName: WEBGL_compressed_texture_s3tc): WEBGLCompressedTextureS3tc | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLCompressedTextureS3tc | Null]
     
     /* standard dom */
@@ -2242,80 +2319,104 @@ object mod {
     /* standard dom */
     inline def getExtension_WEBGLmultidraw(extensionName: WEBGL_multi_draw): WEBGLMultiDraw | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(extensionName.asInstanceOf[js.Any]).asInstanceOf[WEBGLMultiDraw | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter) */
     /* standard dom */
     inline def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getFramebufferAttachmentParameter")(target.asInstanceOf[js.Any], attachment.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter) */
     /* standard dom */
     inline def getParameter(pname: GLenum): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameter")(pname.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramInfoLog) */
     /* standard dom */
     inline def getProgramInfoLog(program: WebGLProgram): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProgramInfoLog")(program.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter) */
     /* standard dom */
     inline def getProgramParameter(program: WebGLProgram, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgramParameter")(program.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter) */
     /* standard dom */
     inline def getRenderbufferParameter(target: GLenum, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderbufferParameter")(target.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderInfoLog) */
     /* standard dom */
     inline def getShaderInfoLog(shader: WebGLShader): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getShaderInfoLog")(shader.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter) */
     /* standard dom */
     inline def getShaderParameter(shader: WebGLShader, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getShaderParameter")(shader.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat) */
     /* standard dom */
     inline def getShaderPrecisionFormat(shadertype: GLenum, precisiontype: GLenum): WebGLShaderPrecisionFormat | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShaderPrecisionFormat")(shadertype.asInstanceOf[js.Any], precisiontype.asInstanceOf[js.Any])).asInstanceOf[WebGLShaderPrecisionFormat | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderSource) */
     /* standard dom */
     inline def getShaderSource(shader: WebGLShader): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getShaderSource")(shader.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getSupportedExtensions) */
     /* standard dom */
     inline def getSupportedExtensions(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String] | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter) */
     /* standard dom */
     inline def getTexParameter(target: GLenum, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTexParameter")(target.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform) */
     /* standard dom */
     inline def getUniform(program: WebGLProgram, location: WebGLUniformLocation): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUniform")(program.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniformLocation) */
     /* standard dom */
     inline def getUniformLocation(program: WebGLProgram, name: String): WebGLUniformLocation | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getUniformLocation")(program.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[WebGLUniformLocation | Null]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib) */
     /* standard dom */
     inline def getVertexAttrib(index: GLuint, pname: GLenum): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertexAttrib")(index.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[Any]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset) */
     /* standard dom */
     inline def getVertexAttribOffset(index: GLuint, pname: GLenum): GLintptr = (^.asInstanceOf[js.Dynamic].applyDynamic("getVertexAttribOffset")(index.asInstanceOf[js.Any], pname.asInstanceOf[js.Any])).asInstanceOf[GLintptr]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/hint) */
     /* standard dom */
     inline def hint(target: GLenum, mode: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hint")(target.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isBuffer) */
     /* standard dom */
     inline def isBuffer(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")().asInstanceOf[GLboolean]
     inline def isBuffer(buffer: WebGLBuffer): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isContextLost) */
     /* standard dom */
     inline def isContextLost(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContextLost")().asInstanceOf[Boolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isEnabled) */
     /* standard dom */
     inline def isEnabled(cap: GLenum): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(cap.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isFramebuffer) */
     /* standard dom */
     inline def isFramebuffer(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFramebuffer")().asInstanceOf[GLboolean]
     inline def isFramebuffer(framebuffer: WebGLFramebuffer): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFramebuffer")(framebuffer.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isProgram) */
     /* standard dom */
     inline def isProgram(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProgram")().asInstanceOf[GLboolean]
     inline def isProgram(program: WebGLProgram): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProgram")(program.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isRenderbuffer) */
     /* standard dom */
     inline def isRenderbuffer(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRenderbuffer")().asInstanceOf[GLboolean]
     inline def isRenderbuffer(renderbuffer: WebGLRenderbuffer): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRenderbuffer")(renderbuffer.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isShader) */
     /* standard dom */
     inline def isShader(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShader")().asInstanceOf[GLboolean]
     inline def isShader(shader: WebGLShader): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShader")(shader.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isTexture) */
     /* standard dom */
     inline def isTexture(): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTexture")().asInstanceOf[GLboolean]
     inline def isTexture(texture: WebGLTexture): GLboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTexture")(texture.asInstanceOf[js.Any]).asInstanceOf[GLboolean]
@@ -2323,16 +2424,20 @@ object mod {
     /* standard dom */
     inline def lineWidth(width: GLfloat): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lineWidth")(width.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/linkProgram) */
     /* standard dom */
     inline def linkProgram(program: WebGLProgram): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("linkProgram")(program.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def pixelStorei(pname: GLenum, param: GLboolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelStorei")(pname.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/pixelStorei) */
     /* standard dom */
     inline def pixelStorei(pname: GLenum, param: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pixelStorei")(pname.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/polygonOffset) */
     /* standard dom */
     inline def polygonOffset(factor: GLfloat, units: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonOffset")(factor.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels) */
     /* standard dom */
     inline def readPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, format: GLenum, `type`: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readPixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def readPixels(
@@ -2345,33 +2450,43 @@ object mod {
       pixels: js.typedarray.ArrayBufferView
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readPixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/renderbufferStorage) */
     /* standard dom */
     inline def renderbufferStorage(target: GLenum, internalformat: GLenum, width: GLsizei, height: GLsizei): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderbufferStorage")(target.asInstanceOf[js.Any], internalformat.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/sampleCoverage) */
     /* standard dom */
     inline def sampleCoverage(value: GLclampf, invert: GLboolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleCoverage")(value.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/scissor) */
     /* standard dom */
     inline def scissor(x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scissor")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/shaderSource) */
     /* standard dom */
     inline def shaderSource(shader: WebGLShader, source: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shaderSource")(shader.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFunc) */
     /* standard dom */
     inline def stencilFunc(func: GLenum, ref: GLint, mask: GLuint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stencilFunc")(func.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate) */
     /* standard dom */
     inline def stencilFuncSeparate(face: GLenum, func: GLenum, ref: GLint, mask: GLuint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stencilFuncSeparate")(face.asInstanceOf[js.Any], func.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMask) */
     /* standard dom */
     inline def stencilMask(mask: GLuint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stencilMask")(mask.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate) */
     /* standard dom */
     inline def stencilMaskSeparate(face: GLenum, mask: GLuint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stencilMaskSeparate")(face.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOp) */
     /* standard dom */
     inline def stencilOp(fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stencilOp")(fail.asInstanceOf[js.Any], zfail.asInstanceOf[js.Any], zpass.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOpSeparate) */
     /* standard dom */
     inline def stencilOpSeparate(face: GLenum, fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stencilOpSeparate")(face.asInstanceOf[js.Any], fail.asInstanceOf[js.Any], zfail.asInstanceOf[js.Any], zpass.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -2384,6 +2499,7 @@ object mod {
       `type`: GLenum,
       source: TexImageSource
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], internalformat.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D) */
     /* standard dom */
     inline def texImage2D(
       target: GLenum,
@@ -2407,9 +2523,11 @@ object mod {
       pixels: js.typedarray.ArrayBufferView
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], internalformat.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], border.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter) */
     /* standard dom */
     inline def texParameterf(target: GLenum, pname: GLenum, param: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texParameterf")(target.asInstanceOf[js.Any], pname.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter) */
     /* standard dom */
     inline def texParameteri(target: GLenum, pname: GLenum, param: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texParameteri")(target.asInstanceOf[js.Any], pname.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -2423,6 +2541,7 @@ object mod {
       `type`: GLenum,
       source: TexImageSource
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texSubImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], xoffset.asInstanceOf[js.Any], yoffset.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D) */
     /* standard dom */
     inline def texSubImage2D(
       target: GLenum,
@@ -2447,127 +2566,157 @@ object mod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("texSubImage2D")(target.asInstanceOf[js.Any], level.asInstanceOf[js.Any], xoffset.asInstanceOf[js.Any], yoffset.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform1f(location: Null, x: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform1f(location: WebGLUniformLocation, x: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform1fv(location: Null, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform1fv(location: WebGLUniformLocation, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform1i(location: Null, x: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform1i(location: WebGLUniformLocation, x: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform1iv(location: Null, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform1iv(location: WebGLUniformLocation, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform1iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform2f(location: Null, x: GLfloat, y: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform2f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform2fv(location: Null, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform2fv(location: WebGLUniformLocation, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform2i(location: Null, x: GLint, y: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform2i(location: WebGLUniformLocation, x: GLint, y: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform2iv(location: Null, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform2iv(location: WebGLUniformLocation, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform2iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform3f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform3f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform3fv(location: Null, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform3fv(location: WebGLUniformLocation, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform3i(location: Null, x: GLint, y: GLint, z: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform3i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform3iv(location: Null, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform3iv(location: WebGLUniformLocation, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform3iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform4f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform4f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4f")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform4fv(location: Null, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform4fv(location: WebGLUniformLocation, v: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4fv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform4i(location: Null, x: GLint, y: GLint, z: GLint, w: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     inline def uniform4i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint, w: GLint): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4i")(location.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniform4iv(location: Null, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniform4iv(location: WebGLUniformLocation, v: Int32List | js.Iterable[GLint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniform4iv")(location.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniformMatrix2fv(location: Null, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix2fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniformMatrix2fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix2fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniformMatrix3fv(location: Null, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix3fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniformMatrix3fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix3fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def uniformMatrix4fv(location: Null, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix4fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
     /* standard dom */
     /* standard dom.iterable */
     inline def uniformMatrix4fv(location: WebGLUniformLocation, transpose: GLboolean, value: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uniformMatrix4fv")(location.asInstanceOf[js.Any], transpose.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/useProgram) */
     /* standard dom */
     inline def useProgram(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useProgram")().asInstanceOf[Unit]
     inline def useProgram(program: WebGLProgram): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useProgram")(program.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/validateProgram) */
     /* standard dom */
     inline def validateProgram(program: WebGLProgram): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateProgram")(program.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     inline def vertexAttrib1f(index: GLuint, x: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib1f")(index.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     /* standard dom.iterable */
     inline def vertexAttrib1fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib1fv")(index.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     inline def vertexAttrib2f(index: GLuint, x: GLfloat, y: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib2f")(index.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     /* standard dom.iterable */
     inline def vertexAttrib2fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib2fv")(index.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     inline def vertexAttrib3f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib3f")(index.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     /* standard dom.iterable */
     inline def vertexAttrib3fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib3fv")(index.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     inline def vertexAttrib4f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib4f")(index.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
     /* standard dom */
     /* standard dom.iterable */
     inline def vertexAttrib4fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttrib4fv")(index.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttribPointer) */
     /* standard dom */
     inline def vertexAttribPointer(
       index: GLuint,
@@ -2578,6 +2727,7 @@ object mod {
       offset: GLintptr
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("vertexAttribPointer")(index.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], normalized.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/viewport) */
     /* standard dom */
     inline def viewport(x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("viewport")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

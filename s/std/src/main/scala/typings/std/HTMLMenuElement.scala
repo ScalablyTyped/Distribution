@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMenuElement) */
 @js.native
 trait HTMLMenuElement
   extends StObject
@@ -20,7 +21,11 @@ trait HTMLMenuElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMenuElement/compact)
+    */
   /* standard dom */
   var compact: scala.Boolean = js.native
   

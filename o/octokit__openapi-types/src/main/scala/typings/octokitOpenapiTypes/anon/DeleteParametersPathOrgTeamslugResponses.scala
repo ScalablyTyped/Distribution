@@ -47,14 +47,14 @@ trait DeleteParametersPathOrgTeamslugResponses extends StObject {
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/{org_id}/team/{team_id}/memberships/{username}`.
     */
-  var put: Responses200Content122
+  var put: Responses200Content145
 }
 object DeleteParametersPathOrgTeamslugResponses {
   
   inline def apply(
     delete: ParametersPathOrgTeamslugResponses,
     get: ParametersPathOrgTeamslug,
-    put: Responses200Content122
+    put: Responses200Content145
   ): DeleteParametersPathOrgTeamslugResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathOrgTeamslugResponses]
@@ -67,6 +67,6 @@ object DeleteParametersPathOrgTeamslugResponses {
     
     inline def setGet(value: ParametersPathOrgTeamslug): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses200Content122): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses200Content145): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

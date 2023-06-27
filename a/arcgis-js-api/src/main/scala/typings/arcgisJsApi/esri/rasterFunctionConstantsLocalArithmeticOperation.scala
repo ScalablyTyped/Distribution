@@ -7,143 +7,143 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsLocalArithmeticOperation extends StObject {
   
   /**
-    * Calculates the absolute value of the cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the absolute value of the cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var abs: Double
   
   /**
-    * Divides the values of two rasters on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Divides the values of two rasters on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var divide: Double
   
   /**
-    * Calculates the base e exponential of the cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the base e exponential of the cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var exp: Double
   
   /**
-    * Calculates the base 10 exponential of the cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the base 10 exponential of the cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var exp10: Double
   
   /**
-    * Calculates the base 2 exponential of the cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the base 2 exponential of the cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var exp2: Double
   
   /**
-    * Converts each cell value of a raster into a floating-point representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Converts each cell value of a raster into a floating-point representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var float: Double
   
   /**
-    * Converts each cell value of a raster to an integer by truncation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Converts each cell value of a raster to an integer by truncation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var int: Double
   
   /**
-    * Calculates the natural logarithm (base e) of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the natural logarithm (base e) of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var ln: Double
   
   /**
-    * Calculates the base 10 logarithm of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the base 10 logarithm of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var log10: Double
   
   /**
-    * Calculates the base 2 logarithm of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the base 2 logarithm of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var log2: Double
   
   /**
-    * Subtracts the value of the second input raster from the value of the first input raster on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Subtracts the value of the second input raster from the value of the first input raster on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var minus: Double
   
   /**
-    * Finds the remainder (modulo) of the first raster when divided by the second raster on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Finds the remainder (modulo) of the first raster when divided by the second raster on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var mod: Double
   
   /**
-    * Changes the sign (multiplies by -1) of the cell values of the input raster on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Changes the sign (multiplies by -1) of the cell values of the input raster on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var negate: Double
   
   /**
-    * Adds (sums) the values of two rasters on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Adds (sums) the values of two rasters on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var plus: Double
   
   /**
-    * Raises the cell values in a raster to the power of the values found in another raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Raises the cell values in a raster to the power of the values found in another raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var power: Double
   
   /**
-    * Returns the next lower integer value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Returns the next lower integer value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var roundDown: Double
   
   /**
-    * Returns the next higher integer value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Returns the next higher integer value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var roundUp: Double
   
   /**
-    * Calculates the square root of the cell values in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the square root of the cell values in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var sqrt: Double
   
   /**
-    * Calculates the square of the cell values in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Calculates the square of the cell values in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var square: Double
   
   /**
-    * Multiplies the values of two rasters on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * Multiplies the values of two rasters on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var times: Double
 }
 object rasterFunctionConstantsLocalArithmeticOperation {

@@ -12,7 +12,7 @@ object sapBaseUtilObjectPathMod extends Shortcut {
   val default: ObjectPath = js.native
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     *
     * Manages an object path.
     *

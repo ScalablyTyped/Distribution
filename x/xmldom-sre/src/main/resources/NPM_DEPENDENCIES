@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xmldom-sre" : "0.9.0-beta.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xmldom-sre" : "0.9.0-beta.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,10 +1,10 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.NetworkBody
-import typings.sentryReplay.typesTypesMod.NetworkRequestData
-import typings.sentryReplay.typesTypesMod.ReplayNetworkRequestData
-import typings.sentryReplay.typesTypesMod.ReplayNetworkRequestOrResponse
-import typings.sentryReplay.typesTypesMod.ReplayPerformanceEntry
+import typings.sentryReplay.typesTypesPerformanceMod.NetworkRequestData
+import typings.sentryReplay.typesTypesPerformanceMod.ReplayPerformanceEntry
+import typings.sentryReplay.typesTypesReplayMod.ReplayNetworkRequestData
+import typings.sentryReplay.typesTypesRequestMod.NetworkBody
+import typings.sentryReplay.typesTypesRequestMod.ReplayNetworkRequestOrResponse
 import typings.sentryTypes.typesTextencoderMod.TextEncoderInternal
 import typings.std.BodyInit
 import typings.std.Record
@@ -37,6 +37,9 @@ object typesCoreHandlersUtilNetworkUtilsMod {
   inline def getBodySize(body: BodyInit, textEncoder: TextEncoder): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBodySize")(body.asInstanceOf[js.Any], textEncoder.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
   inline def getBodyString(body: Any): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBodyString")(body.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def getFullUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFullUrl(url: String, baseURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFullUrl")(url.asInstanceOf[js.Any], baseURI.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getNetworkBody(): js.UndefOr[NetworkBody] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkBody")().asInstanceOf[js.UndefOr[NetworkBody]]
   inline def getNetworkBody(bodyText: String): js.UndefOr[NetworkBody] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkBody")(bodyText.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NetworkBody]]

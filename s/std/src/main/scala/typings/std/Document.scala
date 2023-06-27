@@ -199,6 +199,7 @@ import typings.std.stdStrings.ruby
 import typings.std.stdStrings.s
 import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
+import typings.std.stdStrings.search
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
 import typings.std.stdStrings.semantics
@@ -246,7 +247,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
+/**
+  * Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document)
+  */
 @js.native
 trait Document
   extends StObject
@@ -257,7 +262,11 @@ trait Document
      with ParentNode
      with XPathEvaluatorBase {
   
-  /** Sets or gets the URL for the current document. */
+  /**
+    * Sets or gets the URL for the current document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/URL)
+    */
   /* standard dom */
   val URL: java.lang.String = js.native
   
@@ -375,6 +384,8 @@ trait Document
     * Moves node from another document and returns it.
     *
     * If node is a document, throws a "NotSupportedError" DOMException or, if node is a shadow root, throws a "HierarchyRequestError" DOMException.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/adoptNode)
     */
   /* standard dom */
   def adoptNode[T /* <: Node */](node: T): T = js.native
@@ -382,6 +393,8 @@ trait Document
   /**
     * Sets or gets the color of all active links in the document.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/alinkColor)
     */
   /* standard dom */
   var alinkColor: java.lang.String = js.native
@@ -389,6 +402,8 @@ trait Document
   /**
     * Returns a reference to the collection of elements contained by the object.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/all)
     */
   /* standard dom */
   val all: HTMLAllCollection = js.native
@@ -396,6 +411,8 @@ trait Document
   /**
     * Retrieves a collection of all a objects that have a name and/or id property. Objects in this collection are in HTML source order.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/anchors)
     */
   /* standard dom */
   val anchors: HTMLCollectionOf[HTMLAnchorElement] = js.native
@@ -403,6 +420,8 @@ trait Document
   /**
     * Retrieves a collection of all applet objects in the document.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/applets)
     */
   /* standard dom */
   val applets: HTMLCollection = js.native
@@ -410,15 +429,25 @@ trait Document
   /**
     * Deprecated. Sets or retrieves a value that indicates the background color behind the object.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/bgColor)
     */
   /* standard dom */
   var bgColor: java.lang.String = js.native
   
-  /** Specifies the beginning and end of the document body. */
+  /**
+    * Specifies the beginning and end of the document body.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/body)
+    */
   /* standard dom */
   var body: HTMLElement = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/captureEvents)
+    */
   /* standard dom */
   def captureEvents(): Unit = js.native
   
@@ -426,30 +455,52 @@ trait Document
   /* standard dom */
   def caretRangeFromPoint(x: Double, y: Double): Range | Null = js.native
   
-  /** Returns document's encoding. */
+  /**
+    * Returns document's encoding.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/characterSet)
+    */
   /* standard dom */
   val characterSet: java.lang.String = js.native
   
   /**
     * Gets or sets the character set used to encode the object.
     * @deprecated This is a legacy alias of `characterSet`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/characterSet)
     */
   /* standard dom */
   val charset: java.lang.String = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/clear)
+    */
   /* standard dom */
   def clear(): Unit = js.native
   
-  /** Closes an output stream and forces the sent data to display. */
+  /**
+    * Closes an output stream and forces the sent data to display.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/close)
+    */
   /* standard dom */
   def close(): Unit = js.native
   
-  /** Gets a value that indicates whether standards-compliant mode is switched on for the object. */
+  /**
+    * Gets a value that indicates whether standards-compliant mode is switched on for the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/compatMode)
+    */
   /* standard dom */
   val compatMode: java.lang.String = js.native
   
-  /** Returns document's content type. */
+  /**
+    * Returns document's content type.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/contentType)
+    */
   /* standard dom */
   val contentType: java.lang.String = js.native
   
@@ -459,6 +510,8 @@ trait Document
     * Can be set, to add a new cookie to the element's set of HTTP cookies.
     *
     * If the contents are sandboxed into a unique origin (e.g. in an iframe with the sandbox attribute), a "SecurityError" DOMException will be thrown on getting and setting.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/cookie)
     */
   /* standard dom */
   var cookie: java.lang.String = js.native
@@ -466,26 +519,39 @@ trait Document
   /**
     * Creates an attribute object with a specified name.
     * @param name String that sets the attribute object's name.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createAttribute)
     */
   /* standard dom */
   def createAttribute(localName: java.lang.String): Attr = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createAttributeNS) */
   /* standard dom */
   def createAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String): Attr = js.native
   def createAttributeNS(namespace: Null, qualifiedName: java.lang.String): Attr = js.native
   
-  /** Returns a CDATASection node whose data is data. */
+  /**
+    * Returns a CDATASection node whose data is data.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createCDATASection)
+    */
   /* standard dom */
   def createCDATASection(data: java.lang.String): CDATASection = js.native
   
   /**
     * Creates a comment object with the specified data.
     * @param data Sets the comment object's data.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createComment)
     */
   /* standard dom */
   def createComment(data: java.lang.String): Comment = js.native
   
-  /** Creates a new document. */
+  /**
+    * Creates a new document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createDocumentFragment)
+    */
   /* standard dom */
   def createDocumentFragment(): DocumentFragment = js.native
   
@@ -666,6 +732,8 @@ trait Document
     * namespace is the XMLNS namespace and neither qualifiedName nor namespace prefix is "xmlns".
     *
     * When supplied, options's is can be used to create a customized built-in element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createElementNS)
     */
   /* standard dom */
   @JSName("createElementNS")
@@ -680,6 +748,8 @@ trait Document
   /**
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createElement)
     */
   /* standard dom */
   @JSName("createElement")
@@ -1117,6 +1187,10 @@ trait Document
   @JSName("createElement")
   def createElement_script(tagName: script, options: ElementCreationOptions): HTMLScriptElement = js.native
   @JSName("createElement")
+  def createElement_search(tagName: search): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_search(tagName: search, options: ElementCreationOptions): HTMLElement = js.native
+  @JSName("createElement")
   def createElement_section(tagName: section): HTMLElement = js.native
   @JSName("createElement")
   def createElement_section(tagName: section, options: ElementCreationOptions): HTMLElement = js.native
@@ -1247,6 +1321,7 @@ trait Document
   
   /* standard dom */
   def createEvent(eventInterface: java.lang.String): Event = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createEvent) */
   /* standard dom */
   @JSName("createEvent")
   def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
@@ -1436,6 +1511,8 @@ trait Document
     * @param root The root element or node to start traversing on.
     * @param whatToShow The type of nodes or elements to appear in the node list
     * @param filter A custom NodeFilter function to use. For more information, see filter. Use null for no filter.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createNodeIterator)
     */
   /* standard dom */
   def createNodeIterator(root: Node): NodeIterator = js.native
@@ -1443,17 +1520,27 @@ trait Document
   def createNodeIterator(root: Node, whatToShow: Double, filter: NodeFilter): NodeIterator = js.native
   def createNodeIterator(root: Node, whatToShow: Unit, filter: NodeFilter): NodeIterator = js.native
   
-  /** Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown. */
+  /**
+    * Returns a ProcessingInstruction node whose target is target and data is data. If target does not match the Name production an "InvalidCharacterError" DOMException will be thrown. If data contains "?>" an "InvalidCharacterError" DOMException will be thrown.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createProcessingInstruction)
+    */
   /* standard dom */
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): ProcessingInstruction = js.native
   
-  /**  Returns an empty range object that has both of its boundary points positioned at the beginning of the document. */
+  /**
+    *  Returns an empty range object that has both of its boundary points positioned at the beginning of the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createRange)
+    */
   /* standard dom */
   def createRange(): Range = js.native
   
   /**
     * Creates a text string from the specified value.
     * @param data String that specifies the nodeValue property of the text node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createTextNode)
     */
   /* standard dom */
   def createTextNode(data: java.lang.String): Text = js.native
@@ -1463,6 +1550,8 @@ trait Document
     * @param root The root element or node to start traversing on.
     * @param whatToShow The type of nodes or elements to appear in the node list. For more information, see whatToShow.
     * @param filter A custom NodeFilter function to use.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/createTreeWalker)
     */
   /* standard dom */
   def createTreeWalker(root: Node): TreeWalker = js.native
@@ -1474,42 +1563,74 @@ trait Document
     * Returns the script element, or the SVG script element, that is currently executing, as long as the element represents a classic script. In the case of reentrant script execution, returns the one that most recently started executing amongst those that have not yet finished executing.
     *
     * Returns null if the Document is not currently executing a script or SVG script element (e.g., because the running script is an event handler, or a timeout), or if the currently executing script or SVG script element represents a module script.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/currentScript)
     */
   /* standard dom */
   val currentScript: HTMLOrSVGScriptElement | Null = js.native
   
-  /** Returns the Window object of the active document. */
+  /**
+    * Returns the Window object of the active document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/defaultView)
+    */
   /* standard dom */
   val defaultView: (WindowProxy & (/* globalThis */ Any)) | Null = js.native
   
-  /** Sets or gets a value that indicates whether the document can be edited. */
+  /**
+    * Sets or gets a value that indicates whether the document can be edited.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/designMode)
+    */
   /* standard dom */
   var designMode: java.lang.String = js.native
   
-  /** Sets or retrieves a value that indicates the reading order of the object. */
+  /**
+    * Sets or retrieves a value that indicates the reading order of the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/dir)
+    */
   /* standard dom */
   var dir: java.lang.String = js.native
   
-  /** Gets an object representing the document type declaration associated with the current document. */
+  /**
+    * Gets an object representing the document type declaration associated with the current document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/doctype)
+    */
   /* standard dom */
   val doctype: DocumentType | Null = js.native
   
-  /** Gets a reference to the root node of the document. */
+  /**
+    * Gets a reference to the root node of the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/documentElement)
+    */
   /* standard dom */
   val documentElement: HTMLElement = js.native
   
-  /** Returns document's URL. */
+  /**
+    * Returns document's URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/documentURI)
+    */
   /* standard dom */
   val documentURI: java.lang.String = js.native
   
   /**
     * Sets or gets the security domain of the document.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/domain)
     */
   /* standard dom */
   var domain: java.lang.String = js.native
   
-  /** Retrieves a collection of all embed objects in the document. */
+  /**
+    * Retrieves a collection of all embed objects in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/embeds)
+    */
   /* standard dom */
   val embeds: HTMLCollectionOf[HTMLEmbedElement] = js.native
   
@@ -1519,6 +1640,8 @@ trait Document
     * @param showUI Display the user interface, defaults to false.
     * @param value Value to assign.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/execCommand)
     */
   /* standard dom */
   def execCommand(commandId: java.lang.String): scala.Boolean = js.native
@@ -1526,42 +1649,68 @@ trait Document
   def execCommand(commandId: java.lang.String, showUI: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
   def execCommand(commandId: java.lang.String, showUI: Unit, value: java.lang.String): scala.Boolean = js.native
   
-  /** Stops document's fullscreen element from being displayed fullscreen and resolves promise when done. */
+  /**
+    * Stops document's fullscreen element from being displayed fullscreen and resolves promise when done.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/exitFullscreen)
+    */
   /* standard dom */
   def exitFullscreen(): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/exitPictureInPicture) */
   /* standard dom */
   def exitPictureInPicture(): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/exitPointerLock) */
   /* standard dom */
   def exitPointerLock(): Unit = js.native
   
   /**
     * Sets or gets the foreground (text) color of the document.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fgColor)
     */
   /* standard dom */
   var fgColor: java.lang.String = js.native
   
-  /** Retrieves a collection, in source order, of all form objects in the document. */
+  /**
+    * Retrieves a collection, in source order, of all form objects in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/forms)
+    */
   /* standard dom */
   val forms: HTMLCollectionOf[HTMLFormElement] = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreen)
+    */
   /* standard dom */
   val fullscreen: scala.Boolean = js.native
   
-  /** Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise. */
+  /**
+    * Returns true if document has the ability to display elements fullscreen and fullscreen is supported, or false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreenEnabled)
+    */
   /* standard dom */
   val fullscreenEnabled: scala.Boolean = js.native
   
-  /** Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes. */
+  /**
+    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementsByClassName)
+    */
   /* standard dom */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   
   /**
     * Gets a collection of objects based on the value of the NAME or ID attribute.
     * @param elementName Gets a collection of objects based on the value of the NAME or ID attribute.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementsByName)
     */
   /* standard dom */
   def getElementsByName(elementName: java.lang.String): NodeListOf[HTMLElement] = js.native
@@ -1586,6 +1735,8 @@ trait Document
     * If only localName is "*" returns a HTMLCollection of all descendant elements whose namespace is namespace.
     *
     * Otherwise, returns a HTMLCollection of all descendant elements whose namespace is namespace and local name is localName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagNameNS)
     */
   /* standard dom */
   @JSName("getElementsByTagNameNS")
@@ -1597,6 +1748,8 @@ trait Document
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementsByTagName)
     */
   /* standard dom */
   @JSName("getElementsByTagName")
@@ -1975,6 +2128,8 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_script(qualifiedName: script): HTMLCollectionOf[HTMLScriptElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_search(qualifiedName: search): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_section(qualifiedName: section): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
@@ -2061,29 +2216,51 @@ trait Document
   @JSName("getElementsByTagName")
   def getElementsByTagName_xmp(qualifiedName: xmp): HTMLCollectionOf[HTMLPreElement] = js.native
   
-  /** Returns an object representing the current selection of the document that is loaded into the object displaying a webpage. */
+  /**
+    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getSelection)
+    */
   /* standard dom */
   def getSelection(): Selection | Null = js.native
   
-  /** Gets a value indicating whether the object currently has focus. */
+  /**
+    * Gets a value indicating whether the object currently has focus.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/hasFocus)
+    */
   /* standard dom */
   def hasFocus(): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/hasStorageAccess) */
   /* standard dom */
   def hasStorageAccess(): js.Promise[scala.Boolean] = js.native
   
-  /** Returns the head element. */
+  /**
+    * Returns the head element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/head)
+    */
   /* standard dom */
   val head: HTMLHeadElement = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/hidden) */
   /* standard dom */
   val hidden: scala.Boolean = js.native
   
-  /** Retrieves a collection, in source order, of img objects in the document. */
+  /**
+    * Retrieves a collection, in source order, of img objects in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/images)
+    */
   /* standard dom */
   val images: HTMLCollectionOf[HTMLImageElement] = js.native
   
-  /** Gets the implementation object of the current document. */
+  /**
+    * Gets the implementation object of the current document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/implementation)
+    */
   /* standard dom */
   val implementation: DOMImplementation = js.native
   
@@ -2091,6 +2268,8 @@ trait Document
     * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
     *
     * If node is a document or a shadow root, throws a "NotSupportedError" DOMException.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/importNode)
     */
   /* standard dom */
   def importNode[T /* <: Node */](node: T): T = js.native
@@ -2099,50 +2278,73 @@ trait Document
   /**
     * Returns the character encoding used to create the webpage that is loaded into the document object.
     * @deprecated This is a legacy alias of `characterSet`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/characterSet)
     */
   /* standard dom */
   val inputEncoding: java.lang.String = js.native
   
-  /** Gets the date that the page was last modified, if the page supplies one. */
+  /**
+    * Gets the date that the page was last modified, if the page supplies one.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lastModified)
+    */
   /* standard dom */
   val lastModified: java.lang.String = js.native
   
   /**
     * Sets or gets the color of the document links.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/linkColor)
     */
   /* standard dom */
   var linkColor: java.lang.String = js.native
   
-  /** Retrieves a collection of all a objects that specify the href property and all area objects in the document. */
+  /**
+    * Retrieves a collection of all a objects that specify the href property and all area objects in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/links)
+    */
   /* standard dom */
   val links: HTMLCollectionOf[HTMLAnchorElement | HTMLAreaElement] = js.native
   
-  /** Contains information about the current URL. */
+  /**
+    * Contains information about the current URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/location)
+    */
   /* standard dom */
   def location: Location = js.native
   /* standard dom */
   def location_=(href: java.lang.String | Location): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreenchange_event) */
   /* standard dom */
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreenerror_event) */
   /* standard dom */
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pointerlockchange_event) */
   /* standard dom */
   var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pointerlockerror_event) */
   /* standard dom */
   var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the state of the object has changed.
     * @param ev The event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/readystatechange_event)
     */
   /* standard dom */
   var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/visibilitychange_event) */
   /* standard dom */
   var onvisibilitychange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
@@ -2152,6 +2354,8 @@ trait Document
     * @param name Specifies the name of the window. This name is used as the value for the TARGET attribute on a form or an anchor element.
     * @param features Contains a list of items separated by commas. Each item consists of an option and a value, separated by an equals sign (for example, "fullscreen=yes, toolbar=yes"). The following values are supported.
     * @param replace Specifies whether the existing entry for the document is replaced in the history list.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/open)
     */
   /* standard dom */
   def open(): Document = js.native
@@ -2166,10 +2370,15 @@ trait Document
   @JSName("ownerDocument")
   val ownerDocument_Document: Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureEnabled) */
   /* standard dom */
   val pictureInPictureEnabled: scala.Boolean = js.native
   
-  /** Return an HTMLCollection of the embed elements in the Document. */
+  /**
+    * Return an HTMLCollection of the embed elements in the Document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/plugins)
+    */
   /* standard dom */
   val plugins: HTMLCollectionOf[HTMLEmbedElement] = js.native
   
@@ -2177,6 +2386,8 @@ trait Document
     * Returns a Boolean value that indicates whether a specified command can be successfully executed using execCommand, given the current state of the document.
     * @param commandId Specifies a command identifier.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/queryCommandEnabled)
     */
   /* standard dom */
   def queryCommandEnabled(commandId: java.lang.String): scala.Boolean = js.native
@@ -2185,6 +2396,8 @@ trait Document
     * Returns a Boolean value that indicates whether the specified command is in the indeterminate state.
     * @param commandId String that specifies a command identifier.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/queryCommandIndeterm)
     */
   /* standard dom */
   def queryCommandIndeterm(commandId: java.lang.String): scala.Boolean = js.native
@@ -2193,6 +2406,8 @@ trait Document
     * Returns a Boolean value that indicates the current state of the command.
     * @param commandId String that specifies a command identifier.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/queryCommandState)
     */
   /* standard dom */
   def queryCommandState(commandId: java.lang.String): scala.Boolean = js.native
@@ -2201,6 +2416,8 @@ trait Document
     * Returns a Boolean value that indicates whether the current command is supported on the current range.
     * @param commandId Specifies a command identifier.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/queryCommandSupported)
     */
   /* standard dom */
   def queryCommandSupported(commandId: java.lang.String): scala.Boolean = js.native
@@ -2209,19 +2426,33 @@ trait Document
     * Returns the current value of the document, range, or current selection for the given command.
     * @param commandId String that specifies a command identifier.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/queryCommandValue)
     */
   /* standard dom */
   def queryCommandValue(commandId: java.lang.String): java.lang.String = js.native
   
-  /** Retrieves a value that indicates the current state of the object. */
+  /**
+    * Retrieves a value that indicates the current state of the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/readyState)
+    */
   /* standard dom */
   val readyState: DocumentReadyState = js.native
   
-  /** Gets the URL of the location that referred the user to the current page. */
+  /**
+    * Gets the URL of the location that referred the user to the current page.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/referrer)
+    */
   /* standard dom */
   val referrer: java.lang.String = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/releaseEvents)
+    */
   /* standard dom */
   def releaseEvents(): Unit = js.native
   
@@ -2335,33 +2566,51 @@ trait Document
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccess) */
   /* standard dom */
   def requestStorageAccess(): js.Promise[Unit] = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/rootElement)
+    */
   /* standard dom */
   val rootElement: SVGSVGElement | Null = js.native
   
-  /** Retrieves a collection of all script objects in the document. */
+  /**
+    * Retrieves a collection of all script objects in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scripts)
+    */
   /* standard dom */
   val scripts: HTMLCollectionOf[HTMLScriptElement] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scrollingElement) */
   /* standard dom */
   val scrollingElement: Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/timeline) */
   /* standard dom */
   val timeline: DocumentTimeline = js.native
   
-  /** Contains the title of the document. */
+  /**
+    * Contains the title of the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/title)
+    */
   /* standard dom */
   var title: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/visibilityState) */
   /* standard dom */
   val visibilityState: DocumentVisibilityState = js.native
   
   /**
     * Sets or gets the color of the links that the user has visited.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/vlinkColor)
     */
   /* standard dom */
   var vlinkColor: java.lang.String = js.native
@@ -2369,6 +2618,8 @@ trait Document
   /**
     * Writes one or more HTML expressions to a document in the specified window.
     * @param content Specifies the text and HTML tags to write.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/write)
     */
   /* standard dom */
   def write(text: java.lang.String*): Unit = js.native
@@ -2376,6 +2627,8 @@ trait Document
   /**
     * Writes one or more HTML expressions, followed by a carriage return, to a document in the specified window.
     * @param content The text and HTML tags to write.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/writeln)
     */
   /* standard dom */
   def writeln(text: java.lang.String*): Unit = js.native

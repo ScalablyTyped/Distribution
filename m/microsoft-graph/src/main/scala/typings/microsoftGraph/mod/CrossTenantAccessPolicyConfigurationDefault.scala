@@ -8,6 +8,10 @@ trait CrossTenantAccessPolicyConfigurationDefault
   extends StObject
      with Entity {
   
+  /**
+    * Determines the default configuration for automatic user consent settings. The inboundAllowed and outboundAllowed
+    * properties are always false and cannot be updated in the default configuration. Read-only.
+    */
   var automaticUserConsentSettings: js.UndefOr[NullableOption[InboundOutboundPolicyConfiguration]] = js.undefined
   
   /**

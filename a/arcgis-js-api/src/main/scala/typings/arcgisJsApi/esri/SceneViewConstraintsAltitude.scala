@@ -9,21 +9,21 @@ trait SceneViewConstraintsAltitude
      with AnonymousAccessor {
   
   /**
-    * The maximum allowed camera altitude (in meters).
-    *
-    * @default EARTH_RADIUS * 4
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * The maximum allowed camera altitude (in meters).
+  		 *
+  		 * @default EARTH_RADIUS * 4
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum allowed camera altitude (in meters).
-    *
-    * @default -∞
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * The minimum allowed camera altitude (in meters).
+  		 *
+  		 * @default -∞
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var min: js.UndefOr[Double] = js.undefined
 }
 object SceneViewConstraintsAltitude {

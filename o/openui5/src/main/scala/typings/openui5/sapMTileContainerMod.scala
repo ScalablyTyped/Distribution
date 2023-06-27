@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewIndex
-import typings.openui5.anon.Tile
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +147,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTileAdd(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -180,7 +178,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTileAdd(
       /**
@@ -191,7 +189,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -212,13 +210,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit]
     ): this.type = js.native
     def attachTileDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -243,7 +241,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit]
     ): this.type = js.native
     def attachTileDelete(
       /**
@@ -254,7 +252,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -275,13 +273,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit]
     ): this.type = js.native
     def attachTileMove(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -306,7 +304,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit]
     ): this.type = js.native
     def attachTileMove(
       /**
@@ -317,7 +315,7 @@ object sapMTileContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TileContainer` itself
       */
@@ -352,13 +350,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachTileAdd(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -376,13 +374,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit]
     ): this.type = js.native
     def detachTileDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -400,13 +398,13 @@ object sapMTileContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit]
     ): this.type = js.native
     def detachTileMove(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TileContainerTileMoveEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -414,7 +412,7 @@ object sapMTileContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tileAdd tileAdd} to attached listeners.
       *
@@ -427,30 +425,34 @@ object sapMTileContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tileDelete tileDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTileDelete(): this.type = js.native
-    def fireTileDelete(/**
+    def fireTileDelete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Tile): this.type = js.native
+    mParameters: TileContainer$TileDeleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tileMove tileMove} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTileMove(): this.type = js.native
-    def fireTileMove(/**
+    def fireTileMove(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewIndex): this.type = js.native
+    mParameters: TileContainer$TileMoveEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAllowAdd allowAdd}.
@@ -700,6 +702,63 @@ object sapMTileContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait TileContainer$TileAddEventParameters extends StObject
+  
+  trait TileContainer$TileDeleteEventParameters extends StObject {
+    
+    /**
+      * The deleted Tile.
+      */
+    var tile: js.UndefOr[typings.openui5.sapMTileMod.default] = js.undefined
+  }
+  object TileContainer$TileDeleteEventParameters {
+    
+    inline def apply(): TileContainer$TileDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TileContainer$TileDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileContainer$TileDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTile(value: typings.openui5.sapMTileMod.default): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+      
+      inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    }
+  }
+  
+  trait TileContainer$TileMoveEventParameters extends StObject {
+    
+    /**
+      * The new index of the Tile in the tiles aggregation.
+      */
+    var newIndex: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The Tile that has been moved.
+      */
+    var tile: js.UndefOr[typings.openui5.sapMTileMod.default] = js.undefined
+  }
+  object TileContainer$TileMoveEventParameters {
+    
+    inline def apply(): TileContainer$TileMoveEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TileContainer$TileMoveEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileContainer$TileMoveEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewIndex(value: int): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      
+      inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+      
+      inline def setTile(value: typings.openui5.sapMTileMod.default): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+      
+      inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    }
+  }
+  
   trait TileContainerSettings
     extends StObject
        with ControlSettings {
@@ -728,17 +787,29 @@ object sapMTileContainerMod {
     /**
       * Fires when a Tile is added.
       */
-    var tileAdd: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tileAdd: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fires if a Tile is deleted in Edit mode.
       */
-    var tileDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tileDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TileContainer$TileDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires if a Tile is moved.
       */
-    var tileMove: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tileMove: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TileContainer$TileMoveEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The Tiles to be displayed by the TileContainer.
@@ -776,15 +847,19 @@ object sapMTileContainerMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setTileAdd(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tileAdd", js.Any.fromFunction1(value))
+      inline def setTileAdd(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "tileAdd", js.Any.fromFunction1(value))
       
       inline def setTileAddUndefined: Self = StObject.set(x, "tileAdd", js.undefined)
       
-      inline def setTileDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tileDelete", js.Any.fromFunction1(value))
+      inline def setTileDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TileContainer$TileDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "tileDelete", js.Any.fromFunction1(value))
       
       inline def setTileDeleteUndefined: Self = StObject.set(x, "tileDelete", js.undefined)
       
-      inline def setTileMove(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tileMove", js.Any.fromFunction1(value))
+      inline def setTileMove(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TileContainer$TileMoveEventParameters] => Unit
+      ): Self = StObject.set(x, "tileMove", js.Any.fromFunction1(value))
       
       inline def setTileMoveUndefined: Self = StObject.set(x, "tileMove", js.undefined)
       
@@ -801,4 +876,16 @@ object sapMTileContainerMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type TileContainerTileAddEvent = typings.openui5.sapUiBaseEventMod.default[TileContainer$TileAddEventParameters]
+  
+  type TileContainerTileAddEventParameters = TileContainer$TileAddEventParameters
+  
+  type TileContainerTileDeleteEvent = typings.openui5.sapUiBaseEventMod.default[TileContainer$TileDeleteEventParameters]
+  
+  type TileContainerTileDeleteEventParameters = TileContainer$TileDeleteEventParameters
+  
+  type TileContainerTileMoveEvent = typings.openui5.sapUiBaseEventMod.default[TileContainer$TileMoveEventParameters]
+  
+  type TileContainerTileMoveEventParameters = TileContainer$TileMoveEventParameters
 }

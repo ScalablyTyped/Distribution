@@ -153,13 +153,13 @@ object sapUiUnifiedShellHeadUserItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ShellHeadUserItem` itself
       */
@@ -184,7 +184,7 @@ object sapUiUnifiedShellHeadUserItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -195,7 +195,7 @@ object sapUiUnifiedShellHeadUserItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ShellHeadUserItem` itself
       */
@@ -213,13 +213,13 @@ object sapUiUnifiedShellHeadUserItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -227,7 +227,7 @@ object sapUiUnifiedShellHeadUserItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -240,8 +240,7 @@ object sapUiUnifiedShellHeadUserItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -255,7 +254,7 @@ object sapUiUnifiedShellHeadUserItemMod {
     def getImage(): URI = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Gets current value of property {@link #getShowPopupIndicator showPopupIndicator}.
       *
@@ -322,7 +321,7 @@ object sapUiUnifiedShellHeadUserItemMod {
     sImage: URI): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Sets a new value for property {@link #getShowPopupIndicator showPopupIndicator}.
       *
@@ -359,6 +358,12 @@ object sapUiUnifiedShellHeadUserItemMod {
     sUsername: String): this.type = js.native
   }
   
+  trait ShellHeadUserItem$PressEventParameters extends StObject
+  
+  type ShellHeadUserItemPressEvent = typings.openui5.sapUiBaseEventMod.default[ShellHeadUserItem$PressEventParameters]
+  
+  type ShellHeadUserItemPressEventParameters = ShellHeadUserItem$PressEventParameters
+  
   trait ShellHeadUserItemSettings
     extends StObject
        with ElementSettings {
@@ -376,10 +381,12 @@ object sapUiUnifiedShellHeadUserItemMod {
     /**
       * Event is fired when the user presses the button.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * The user item is intended to be used for user settings. Normally these settings are done via a Menu or
       * Dialog. If this property is set to true an indicator for such a popup mechanismn is shown in the item.
@@ -413,7 +420,7 @@ object sapUiUnifiedShellHeadUserItemMod {
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -12,10 +12,10 @@ object esriLayersBuildingSublayersBuildingGroupSublayerMod {
   @JSImport("esri/layers/buildingSublayers/BuildingGroupSublayer", JSImport.Namespace)
   @js.native
   /**
-    * Hierarchical group of [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html)
-    */
+  		 * Hierarchical group of [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingGroupSublayer {

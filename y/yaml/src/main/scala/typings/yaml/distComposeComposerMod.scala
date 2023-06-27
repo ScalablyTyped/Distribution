@@ -1,7 +1,7 @@
 package typings.yaml
 
 import typings.std.Generator
-import typings.yaml.anon.Comment
+import typings.yaml.anon.Directives
 import typings.yaml.anon.Offset
 import typings.yaml.distDocDocumentMod.Document.Parsed
 import typings.yaml.distErrorsMod.ErrorCode
@@ -19,7 +19,7 @@ object distComposeComposerMod {
   
   @JSImport("yaml/dist/compose/composer", "Composer")
   @js.native
-  open class Composer () extends StObject {
+  open class Composer[Contents /* <: ParsedNode */, Strict /* <: Boolean */] () extends StObject {
     def this(options: ParseOptions & DocumentOptions & SchemaOptions) = this()
     
     /* private */ var atDirectives: Any = js.native
@@ -30,10 +30,10 @@ object distComposeComposerMod {
       * @param forceDoc - If the stream contains no document, still emit a final document including any comments and directives that would be applied to a subsequent document.
       * @param endOffset - Should be set if `forceDoc` is also set, to set the document range end and to indicate errors correctly.
       */
-    def compose(tokens: js.Iterable[Token]): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def compose(tokens: js.Iterable[Token], forceDoc: Boolean): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def compose(tokens: js.Iterable[Token], forceDoc: Boolean, endOffset: Double): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def compose(tokens: js.Iterable[Token], forceDoc: Unit, endOffset: Double): Generator[Parsed[ParsedNode], Unit, Any] = js.native
+    def compose(tokens: js.Iterable[Token]): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def compose(tokens: js.Iterable[Token], forceDoc: Boolean): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def compose(tokens: js.Iterable[Token], forceDoc: Boolean, endOffset: Double): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def compose(tokens: js.Iterable[Token], forceDoc: Unit, endOffset: Double): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
     
     /* private */ var decorate: Any = js.native
     
@@ -47,15 +47,15 @@ object distComposeComposerMod {
       * @param forceDoc - If the stream contains no document, still emit a final document including any comments and directives that would be applied to a subsequent document.
       * @param endOffset - Should be set if `forceDoc` is also set, to set the document range end and to indicate errors correctly.
       */
-    def end(): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def end(forceDoc: Boolean): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def end(forceDoc: Boolean, endOffset: Double): Generator[Parsed[ParsedNode], Unit, Any] = js.native
-    def end(forceDoc: Unit, endOffset: Double): Generator[Parsed[ParsedNode], Unit, Any] = js.native
+    def end(): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def end(forceDoc: Boolean): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def end(forceDoc: Boolean, endOffset: Double): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
+    def end(forceDoc: Unit, endOffset: Double): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
     
     /* private */ var errors: Any = js.native
     
     /** Advance the composer by one CST token. */
-    def next(token: Token): Generator[Parsed[ParsedNode], Unit, Any] = js.native
+    def next(token: Token): Generator[Parsed[Contents, Strict], Unit, Any] = js.native
     
     /* private */ var onError: Any = js.native
     
@@ -68,7 +68,7 @@ object distComposeComposerMod {
       *
       * Mostly useful at the end of input for an empty stream.
       */
-    def streamInfo(): Comment = js.native
+    def streamInfo(): Directives = js.native
     
     /* private */ var warnings: Any = js.native
   }

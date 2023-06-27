@@ -67,7 +67,7 @@ trait Inputs extends StObject {
   /**
     * Determines where the pagination links are inserted
     *
-    * @enum('before', 'after')
+    * ('before', 'after')
     * @default 'after'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
@@ -112,7 +112,7 @@ trait Inputs extends StObject {
   /**
     * Determines where the perPage menu is inserted
     *
-    * @enum('before', 'after')
+    * ('before', 'after')
     * @default 'before'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
@@ -185,7 +185,7 @@ trait Inputs extends StObject {
   /**
     * Determines where the recordCount is inserted
     *
-    * @enum('before', 'after')
+    * ('before', 'after')
     * @default 'after'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */
@@ -232,7 +232,7 @@ trait Inputs extends StObject {
   /**
     * Determines where the search field is inserted
     *
-    * @enum('before', 'after')
+    * ('before', 'after')
     * @default 'before'
     * @see http://api.jquery.com/category/manipulation/dom-insertion-outside/
     */

@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JsonRpcClientFactory
   extends StObject
      with /**
-  * @fn new
-  * @memberof JsonRpcClient
-  *
   * @param {object} options An object stating the backends:
   *                ajaxUrl    A url (relative or absolute) to a http(s) backend.
   *                headers    An object that will be passed along to $.ajax in options.headers

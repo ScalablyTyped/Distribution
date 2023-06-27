@@ -68,14 +68,33 @@ open class AnimClip protected () extends StObject {
   def blendWeight: Double = js.native
   def blendWeight_=(arg: Double): Unit = js.native
   
+  def clipFrameTime(frameEndTime: Any): Unit = js.native
+  
   def eventCursor: Any = js.native
+  
+  def eventCursorEnd: Double = js.native
+  
   def eventCursor_=(arg: Any): Unit = js.native
+  
+  def fireNextEvent(): Unit = js.native
+  
+  def fireNextEventInFrame(frameStartTime: Any, frameEndTime: Any): Boolean = js.native
+  
+  def isReverse: Boolean = js.native
   
   def loop: Boolean = js.native
   def loop_=(arg: Boolean): Unit = js.native
   
+  def moveEventCursor(): Unit = js.native
+  
   def name: String = js.native
   def name_=(arg: String): Unit = js.native
+  
+  def nextEvent: Any = js.native
+  
+  def nextEventAheadOfTime(time: Any): Boolean = js.native
+  
+  def nextEventBehindTime(time: Any): Boolean = js.native
   
   def pause(): Unit = js.native
   
@@ -84,6 +103,8 @@ open class AnimClip protected () extends StObject {
   def progressForTime(time: Any): Double = js.native
   
   def reset(): Unit = js.native
+  
+  def resetEventCursor(): Unit = js.native
   
   def resume(): Unit = js.native
   
@@ -99,4 +120,29 @@ open class AnimClip protected () extends StObject {
   
   def track: AnimTrack = js.native
   def track_=(arg: AnimTrack): Unit = js.native
+}
+object AnimClip {
+  
+  /* static member */
+  object eventFrame {
+    
+    @JSImport("playcanvas", "AnimClip.eventFrame")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("playcanvas", "AnimClip.eventFrame.end")
+    @js.native
+    def end: Double = js.native
+    inline def end_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("end")(x.asInstanceOf[js.Any])
+    
+    @JSImport("playcanvas", "AnimClip.eventFrame.residual")
+    @js.native
+    def residual: Double = js.native
+    inline def residual_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("residual")(x.asInstanceOf[js.Any])
+    
+    @JSImport("playcanvas", "AnimClip.eventFrame.start")
+    @js.native
+    def start: Double = js.native
+    inline def start_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
+  }
 }

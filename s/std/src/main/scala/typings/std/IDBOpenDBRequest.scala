@@ -6,7 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Also inherits methods from its parents IDBRequest and EventTarget. */
+/**
+  * Also inherits methods from its parents IDBRequest and EventTarget.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest)
+  */
 @js.native
 trait IDBOpenDBRequest
   extends StObject
@@ -48,9 +52,11 @@ trait IDBOpenDBRequest
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest/blocked_event) */
   /* standard dom */
   var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest/upgradeneeded_event) */
   /* standard dom */
   var onupgradeneeded: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, Any]) | Null = js.native
   

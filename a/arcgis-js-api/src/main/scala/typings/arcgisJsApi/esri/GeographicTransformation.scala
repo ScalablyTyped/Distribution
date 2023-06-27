@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeographicTransformation extends StObject {
   
   /**
-    * Returns the inverse of the geographic transformation calling this method or `null` if the transformation is not invertible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html#getInverse)
-    */
+  		 * Returns the inverse of the geographic transformation calling this method or `null` if the transformation is not invertible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html#getInverse)
+  		 */
   def getInverse(): GeographicTransformation
   
   /**
-    * Geographic transformation steps.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html#steps)
-    */
+  		 * Geographic transformation steps.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformation.html#steps)
+  		 */
   var steps: js.Array[GeographicTransformationStep]
 }
 object GeographicTransformation {

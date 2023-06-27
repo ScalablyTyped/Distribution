@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Scope
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.GenericTileScope
 import typings.openui5.sapMLibraryMod.TileSizeBehavior
@@ -139,7 +138,7 @@ object sapMSlideTileMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.SlideTile`.
       *
@@ -154,20 +153,20 @@ object sapMSlideTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SlideTile` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.SlideTile`.
       *
@@ -187,7 +186,7 @@ object sapMSlideTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -198,7 +197,7 @@ object sapMSlideTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SlideTile` itself
       */
@@ -226,7 +225,7 @@ object sapMSlideTileMod {
     def destroyTiles(): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:press press} event of this `sap.m.SlideTile`.
       *
@@ -238,13 +237,13 @@ object sapMSlideTileMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SlideTilePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -252,8 +251,8 @@ object sapMSlideTileMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -263,7 +262,7 @@ object sapMSlideTileMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: Scope): this.type = js.native
+    mParameters: SlideTile$PressEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDisplayTime displayTime}.
@@ -277,8 +276,8 @@ object sapMSlideTileMod {
     def getDisplayTime(): int = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL
+      * @since 1.96
+      * @experimental
       *
       * Gets current value of property {@link #getHeight height}.
       *
@@ -289,7 +288,7 @@ object sapMSlideTileMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getScope scope}.
       *
@@ -334,7 +333,7 @@ object sapMSlideTileMod {
     def getTransitionTime(): int = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -420,8 +419,8 @@ object sapMSlideTileMod {
     iDisplayTime: int): this.type = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL
+      * @since 1.96
+      * @experimental
       *
       * Sets a new value for property {@link #getHeight height}.
       *
@@ -437,7 +436,7 @@ object sapMSlideTileMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getScope scope}.
       *
@@ -505,7 +504,7 @@ object sapMSlideTileMod {
     iTransitionTime: int): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -528,6 +527,56 @@ object sapMSlideTileMod {
     def unbindTiles(): this.type = js.native
   }
   
+  trait SlideTile$PressEventParameters extends StObject {
+    
+    /**
+      * The action that was pressed on the tile. In the Actions scope, the available actions are Press and Remove.
+      */
+    var action: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The Element's DOM Element. In Actions scope the domRef points to the DOM Element of the remove button
+      * (if pressed) or the more icon.
+      */
+    var domRef: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * The current scope the SlideTile was in when the event occurred.
+      */
+    var scope: js.UndefOr[
+        GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
+      ] = js.undefined
+  }
+  object SlideTile$PressEventParameters {
+    
+    inline def apply(): SlideTile$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SlideTile$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideTile$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setDomRef(value: Any): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+      
+      inline def setScope(
+        value: GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
+      ): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    }
+  }
+  
+  type SlideTilePressEvent = typings.openui5.sapUiBaseEventMod.default[SlideTile$PressEventParameters]
+  
+  type SlideTilePressEventParameters = SlideTile$PressEventParameters
+  
   trait SlideTileSettings
     extends StObject
        with ControlSettings {
@@ -538,8 +587,8 @@ object sapMSlideTileMod {
     var displayTime: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL
+      * @since 1.96
+      * @experimental
       *
       * Height of the control.
       */
@@ -548,14 +597,19 @@ object sapMSlideTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * The event is fired when the user chooses the tile. The event is available only in Actions scope.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SlideTile$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Changes the visualization in order to enable additional actions with the SlideTile control.
       */
@@ -586,7 +640,7 @@ object sapMSlideTileMod {
     var transitionTime: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Width of the control.
       */
@@ -612,7 +666,9 @@ object sapMSlideTileMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SlideTile$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -15,8 +15,8 @@ trait ContentManager extends StObject {
     * @param changeCallback Callback to be invoked when a content change is detected.
     * @returns Identifier of the newly added listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def addChangeListener(changeCallback: ContentChangeCallback): Double = js.native
   
@@ -32,10 +32,10 @@ trait ContentManager extends StObject {
     *
     * @param contentDirURI URI of a content directory with a scan process running which is canceled.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters
     * contain an invalid value (e.g. given _contentDirURI_ is an empty string).
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def cancelScanDirectory(contentDirURI: String): Unit = js.native
   
@@ -58,8 +58,8 @@ trait ContentManager extends StObject {
     * @param errorCallback Callback method to be invoked when an error occurs.
     * @param sourcePlaylist Optional existing playlist to clone.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def createPlaylist(name: String, successCallback: PlaylistSuccessCallback): Unit = js.native
   def createPlaylist(
@@ -100,8 +100,8 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when the thumbnail is created.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def createThumbnail(content: Content_, successCallback: ThumbnailSuccessCallback): Unit = js.native
   def createThumbnail(content: Content_, successCallback: ThumbnailSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -134,9 +134,9 @@ trait ContentManager extends StObject {
     * @param count Maximum amount of content to return. If _count_ is negative, InvalidValuesError is reported through the errorCallback.
     * @param offset Offset of the result set. If _offset_ is a negative number, InvalidValuesError is reported through the errorCallback.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def find(
     successCallback: ContentArraySuccessCallback,
@@ -162,7 +162,7 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when content directories have been retrieved successfully.
     * @param errorCallback Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
     */
   def getDirectories(successCallback: ContentDirectoryArraySuccessCallback): Unit = js.native
@@ -184,8 +184,8 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when retrieving a list of all playlists completes.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def getPlaylists(successCallback: PlaylistArraySuccessCallback): Unit = js.native
   def getPlaylists(successCallback: PlaylistArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -200,7 +200,7 @@ trait ContentManager extends StObject {
     * @param listenerId Identifier of the listener to be removed. It is returned by.
     * [addChangeListener()](./content.html#ContentManager::addChangeListener) when a listener is successfully added.
     *
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def removeChangeListener(listenerId: Double): Unit = js.native
   
@@ -221,8 +221,8 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when removing a playlist completes.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def removePlaylist(id: PlaylistId): Unit = js.native
   def removePlaylist(id: PlaylistId, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -253,12 +253,12 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when scanning has been completed.
     * @param errorCallback Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters
     * contain an invalid value (e.g. given _contentDirURI_ is an empty string).
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def scanDirectory(contentDirURI: String, recursive: Boolean): Unit = js.native
   def scanDirectory(contentDirURI: String, recursive: Boolean, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -292,11 +292,11 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when scanning has been completed.
     * @param errorCallback Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters
     * contain an invalid value (e.g. given _contentURI_ is an empty string).
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def scanFile(contentURI: String): Unit = js.native
   def scanFile(contentURI: String, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -317,10 +317,10 @@ trait ContentManager extends StObject {
     *
     * @param changeCallback A callback to be invoked for receiving a content change notification.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def setChangeListener(changeCallback: ContentChangeCallback): Unit = js.native
   
@@ -336,8 +336,8 @@ trait ContentManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/content.read
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def unsetChangeListener(): Unit = js.native
   
@@ -356,12 +356,12 @@ trait ContentManager extends StObject {
     *
     * @param content The content to update.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters
     * contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, in any other error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, in any other error case.
     */
   def update(content: Content_): Unit = js.native
   
@@ -388,9 +388,9 @@ trait ContentManager extends StObject {
     * @param successCallback Callback method to be invoked when attributes have been changed.
     * @param errorCallback Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def updateBatch(contents: js.Array[Content_]): Unit = js.native
   def updateBatch(contents: js.Array[Content_], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native

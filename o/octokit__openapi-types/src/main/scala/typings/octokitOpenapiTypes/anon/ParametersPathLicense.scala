@@ -8,11 +8,11 @@ trait ParametersPathLicense extends StObject {
   
   var parameters: PathLicense
   
-  var responses: `200Content34`
+  var responses: `200Content39`
 }
 object ParametersPathLicense {
   
-  inline def apply(parameters: PathLicense, responses: `200Content34`): ParametersPathLicense = {
+  inline def apply(parameters: PathLicense, responses: `200Content39`): ParametersPathLicense = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathLicense]
   }
@@ -22,6 +22,6 @@ object ParametersPathLicense {
     
     inline def setParameters(value: PathLicense): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content34`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content39`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

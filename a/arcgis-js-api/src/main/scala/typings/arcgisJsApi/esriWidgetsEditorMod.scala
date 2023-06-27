@@ -11,10 +11,10 @@ object esriWidgetsEditorMod {
   @JSImport("esri/widgets/Editor", JSImport.Namespace)
   @js.native
   /**
-    * This widget provides an out-of-the-box editing experience to help streamline the editing experience within a web application.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html)
-    */
+  		 * This widget provides an out-of-the-box editing experience to help streamline editing within a web application.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html)
+  		 */
   open class ^ ()
     extends StObject
        with Editor {

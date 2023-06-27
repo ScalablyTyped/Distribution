@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkflowPreviousOptions extends StObject {
   
   /**
-    * Cancels the current workflow when calling this method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#previous)
-    */
+  		 * Cancels the current workflow when calling this method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#previous)
+  		 */
   var cancelCurrentStep: Boolean
 }
 object WorkflowPreviousOptions {

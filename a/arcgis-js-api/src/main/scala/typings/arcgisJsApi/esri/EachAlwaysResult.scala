@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EachAlwaysResult extends StObject {
   
   /**
-    * The error with which the promise rejected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
-    */
+  		 * The error with which the promise rejected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
+  		 */
   var error: js.UndefOr[Any] = js.undefined
   
   /**
-    * The promise that has been fulfilled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
-    */
+  		 * The promise that has been fulfilled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
+  		 */
   var promise: js.Promise[Any]
   
   /**
-    * The value with which the promise resolved.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
-    */
+  		 * The value with which the promise resolved.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-promiseUtils.html#EachAlwaysResult)
+  		 */
   var value: js.UndefOr[Any] = js.undefined
 }
 object EachAlwaysResult {

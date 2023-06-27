@@ -10,8 +10,8 @@ trait CIMGeometricEffectReverse
      with CIMGeometricEffectType {
   
   /**
-    * A value indicating whether the dynamic output of a previous geometric effect is to be flipped or not.
-    */
+  			 * A value indicating whether the dynamic output of a previous geometric effect is to be flipped or not.
+  			 */
   var reverse: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")

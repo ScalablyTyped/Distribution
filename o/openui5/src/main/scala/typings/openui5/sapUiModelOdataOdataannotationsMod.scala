@@ -270,7 +270,7 @@ object sapUiModelOdataOdataannotationsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:failed failed} to attached listeners.
       *
@@ -283,7 +283,7 @@ object sapUiModelOdataOdataannotationsMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loaded loaded} to attached listeners.
       *
@@ -360,4 +360,16 @@ object sapUiModelOdataOdataannotationsMod {
     mOptions: Error
     ): Boolean = js.native
   }
+  
+  trait ODataAnnotations$FailedEventParameters extends StObject
+  
+  trait ODataAnnotations$LoadedEventParameters extends StObject
+  
+  type ODataAnnotationsFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataAnnotations$FailedEventParameters]
+  
+  type ODataAnnotationsFailedEventParameters = ODataAnnotations$FailedEventParameters
+  
+  type ODataAnnotationsLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataAnnotations$LoadedEventParameters]
+  
+  type ODataAnnotationsLoadedEventParameters = ODataAnnotations$LoadedEventParameters
 }

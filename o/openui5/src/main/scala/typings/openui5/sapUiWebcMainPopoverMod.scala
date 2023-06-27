@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.EscPressed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -200,13 +199,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -231,7 +230,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -242,7 +241,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -263,13 +262,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -294,7 +293,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -305,7 +304,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -327,13 +326,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -359,7 +358,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -370,7 +369,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -392,13 +391,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -424,7 +423,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -435,7 +434,7 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Popover` itself
       */
@@ -479,13 +478,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -503,13 +502,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -527,13 +526,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -551,13 +550,13 @@ object sapUiWebcMainPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -565,7 +564,7 @@ object sapUiWebcMainPopoverMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
@@ -578,7 +577,7 @@ object sapUiWebcMainPopoverMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
@@ -591,7 +590,7 @@ object sapUiWebcMainPopoverMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
@@ -601,13 +600,15 @@ object sapUiWebcMainPopoverMod {
       * @returns Whether or not to prevent the default action
       */
     def fireBeforeClose(): Boolean = js.native
-    def fireBeforeClose(/**
+    def fireBeforeClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: EscPressed): Boolean = js.native
+    mParameters: Popover$BeforeCloseEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -645,8 +646,7 @@ object sapUiWebcMainPopoverMod {
     def getAllowTargetOverlap(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -1341,6 +1341,51 @@ object sapUiWebcMainPopoverMod {
     ): Unit = js.native
   }
   
+  trait Popover$AfterCloseEventParameters extends StObject
+  
+  trait Popover$AfterOpenEventParameters extends StObject
+  
+  trait Popover$BeforeCloseEventParameters extends StObject {
+    
+    /**
+      * Indicates that `ESC` key has triggered the event.
+      */
+    var escPressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object Popover$BeforeCloseEventParameters {
+    
+    inline def apply(): Popover$BeforeCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover$BeforeCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover$BeforeCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEscPressed(value: Boolean): Self = StObject.set(x, "escPressed", value.asInstanceOf[js.Any])
+      
+      inline def setEscPressedUndefined: Self = StObject.set(x, "escPressed", js.undefined)
+    }
+  }
+  
+  trait Popover$BeforeOpenEventParameters extends StObject
+  
+  type PopoverAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[Popover$AfterCloseEventParameters]
+  
+  type PopoverAfterCloseEventParameters = Popover$AfterCloseEventParameters
+  
+  type PopoverAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[Popover$AfterOpenEventParameters]
+  
+  type PopoverAfterOpenEventParameters = Popover$AfterOpenEventParameters
+  
+  type PopoverBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters]
+  
+  type PopoverBeforeCloseEventParameters = Popover$BeforeCloseEventParameters
+  
+  type PopoverBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[Popover$BeforeOpenEventParameters]
+  
+  type PopoverBeforeOpenEventParameters = Popover$BeforeOpenEventParameters
+  
   trait PopoverSettings
     extends StObject
        with ControlSettings {
@@ -1353,12 +1398,16 @@ object sapUiWebcMainPopoverMod {
     /**
       * Fired after the component is closed. **This event does not bubble.**
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired after the component is opened. **This event does not bubble.**
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines if there is no enough space, the component can be placed over the target.
@@ -1376,13 +1425,20 @@ object sapUiWebcMainPopoverMod {
       * Fired before the component is closed. This event can be cancelled, which will prevent the popup from
       * closing. **This event does not bubble.**
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired before the component is opened. This event can be cancelled, which will prevent the popup from
       * opening. **This event does not bubble.**
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the content of the Popup.
@@ -1525,11 +1581,11 @@ object sapUiWebcMainPopoverMod {
       
       inline def setAccessibleNameUndefined: Self = StObject.set(x, "accessibleName", js.undefined)
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
@@ -1543,11 +1599,13 @@ object sapUiWebcMainPopoverMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       

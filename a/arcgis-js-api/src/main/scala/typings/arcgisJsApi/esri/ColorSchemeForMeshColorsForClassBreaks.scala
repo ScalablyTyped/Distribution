@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorSchemeForMeshColorsForClassBreaks extends StObject {
   
   /**
-    * An array of hex color strings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * An array of hex color strings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The number of classes used in the classed color visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The number of classes used in the classed color visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var numClasses: Double
 }
 object ColorSchemeForMeshColorsForClassBreaks {

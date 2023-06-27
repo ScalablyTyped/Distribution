@@ -14,68 +14,68 @@ trait CIMSolidStroke
      with CIMSymbolLayer {
   
   /**
-    * Determines how the stroke should draw at the ends of the geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * Determines how the stroke should draw at the ends of the geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var capStyle: js.UndefOr[Butt | Round | Square] = js.undefined
   
   /**
-    * The color that is applied to the fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * The color that is applied to the fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var color: js.Array[Double]
   
   /**
-    * A value indicating whether the color can be changed for this symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * A value indicating whether the color can be changed for this symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * The geometric effects applied to the symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * A value indicating whether the symbol layer is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * A value indicating whether the symbol layer is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var enable: Boolean
   
   /**
-    * Determines how the symbol is drawn at the stroke segment connections.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * Determines how the symbol is drawn at the stroke segment connections.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var joinStyle: js.UndefOr[Bevel | Round | Miter] = js.undefined
   
   /**
-    * The maximum 'sharpness' that is allowed for miter joins.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * The maximum 'sharpness' that is allowed for miter joins.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var miterLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidStroke
   
   /**
-    * The width of the stroke.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
-    */
+  		 * The width of the stroke.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidStroke)
+  		 */
   var width: Double
 }
 object CIMSolidStroke {

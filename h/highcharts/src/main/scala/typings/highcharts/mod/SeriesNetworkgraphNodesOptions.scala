@@ -32,6 +32,11 @@ trait SeriesNetworkgraphNodesOptions extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) Options for the node markers.
+    */
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
+  
+  /**
     * (Highcharts) Mass of the node. By default, each node has mass equal to
     * it's marker radius . Mass is used to determine how two connected nodes
     * should affect each other:
@@ -78,6 +83,10 @@ object SeriesNetworkgraphNodesOptions {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     

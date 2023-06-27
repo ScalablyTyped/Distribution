@@ -162,7 +162,7 @@ object sapUiCommonsLabelMod {
     def getLabelFor(): ID = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Gets current value of property {@link #getRequired required}.
       *
@@ -178,7 +178,7 @@ object sapUiCommonsLabelMod {
     def getRequired(): Boolean = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Gets current value of property {@link #getRequiredAtBegin requiredAtBegin}.
       *
@@ -304,7 +304,7 @@ object sapUiCommonsLabelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Sets a new value for property {@link #getRequired required}.
       *
@@ -326,7 +326,7 @@ object sapUiCommonsLabelMod {
     bRequired: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Sets a new value for property {@link #getRequiredAtBegin requiredAtBegin}.
       *
@@ -466,7 +466,7 @@ object sapUiCommonsLabelMod {
     var labelFor: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Allows to enforce the required indicator even when the associated control doesn't have a getRequired
       * method (a required property) or when the flag is not set. If the associated control has a required property,
@@ -478,7 +478,7 @@ object sapUiCommonsLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Determines whether the required indicator is at the beginning of the label (if set) or at the end (if
       * not set).

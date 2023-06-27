@@ -13,38 +13,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ageUtilsGetAgeExpressionsParams extends StObject {
   
   /**
-    * The end time for the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
-    */
+  		 * The end time for the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
+  		 */
   var endTime: js.Date | String | Double
   
   /**
-    * The layer from which to generate age statistics for the given `startTime` and `endTime`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer from which to generate age statistics for the given `startTime` and `endTime`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * The start time for the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
-    */
+  		 * The start time for the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
+  		 */
   var startTime: js.Date | String | Double
   
   /**
-    * The desired units of the age result.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The desired units of the age result.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
 }
 object ageUtilsGetAgeExpressionsParams {
   
   inline def apply(
     endTime: js.Date | String | Double,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer,
     startTime: js.Date | String | Double
   ): ageUtilsGetAgeExpressionsParams = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
@@ -56,7 +56,9 @@ object ageUtilsGetAgeExpressionsParams {
     
     inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

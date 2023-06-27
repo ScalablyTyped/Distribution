@@ -40,44 +40,53 @@ trait MeasurementProperties
      with WidgetProperties {
   
   /**
-    * Specifies the current measurement tool to display.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#activeTool)
-    */
+  		 * Specifies the current measurement tool to display.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#activeTool)
+  		 */
   var activeTool: js.UndefOr[area | distance | `direct-line`] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the area values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#areaUnit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the area values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#areaUnit)
+  		 */
   var areaUnit: js.UndefOr[
     imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
   ] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#linearUnit)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Measurement#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#iconClass)
+  		 */
+  var iconClass: js.UndefOr[String] = js.undefined
+  
+  /**
+  		 * Unit system (imperial, metric) or specific unit used for displaying the distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#linearUnit)
+  		 */
   var linearUnit: js.UndefOr[
     imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[MeasurementViewModelProperties] = js.undefined
 }
 object MeasurementProperties {
@@ -99,6 +108,10 @@ object MeasurementProperties {
     ): Self = StObject.set(x, "areaUnit", value.asInstanceOf[js.Any])
     
     inline def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     inline def setLinearUnit(
       value: imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`

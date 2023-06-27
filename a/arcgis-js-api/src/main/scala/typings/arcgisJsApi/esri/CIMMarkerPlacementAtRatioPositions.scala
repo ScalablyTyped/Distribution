@@ -9,59 +9,59 @@ trait CIMMarkerPlacementAtRatioPositions
      with MarkerPlacement {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * A value indicating whether to angle the marker to the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The distance from the beginning of a line that the marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * The distance from the beginning of a line that the marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var beginPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the end of a line that the marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * The distance from the end of a line that the marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var endPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether only the first marker will be rotated 180 degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * A value indicating whether only the first marker will be rotated 180 degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var flipFirst: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * The offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The array of positions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * The array of positions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var positionArray: js.Array[Double]
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtRatioPositions)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions

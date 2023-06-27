@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/client-logger" : "7.0.11"
+      "@storybook/client-logger" : "7.0.23"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/client-logger" : "7.0.11"
+      "@storybook/client-logger" : "7.0.23"
     }
   ],
   "compile-devDependencies" : [

@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A <picture> HTML element. It doesn't implement specific properties or methods. */
+/**
+  * A <picture> HTML element. It doesn't implement specific properties or methods.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLPictureElement)
+  */
 @js.native
 trait HTMLPictureElement
   extends StObject

@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides access to the properties of <mask> elements, as well as methods to manipulate them. */
+/**
+  * Provides access to the properties of <mask> elements, as well as methods to manipulate them.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement)
+  */
 @js.native
 trait SVGMaskElement
   extends StObject
@@ -21,12 +25,15 @@ trait SVGMaskElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/height) */
   /* standard dom */
   val height: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/maskContentUnits) */
   /* standard dom */
   val maskContentUnits: SVGAnimatedEnumeration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/maskUnits) */
   /* standard dom */
   val maskUnits: SVGAnimatedEnumeration = js.native
   
@@ -41,12 +48,15 @@ trait SVGMaskElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/width) */
   /* standard dom */
   val width: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/x) */
   /* standard dom */
   val x: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMaskElement/y) */
   /* standard dom */
   val y: SVGAnimatedLength = js.native
 }

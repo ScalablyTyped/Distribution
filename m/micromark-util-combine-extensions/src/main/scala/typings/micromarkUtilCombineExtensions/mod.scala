@@ -14,9 +14,9 @@ object mod {
   
   inline def combineHtmlExtensions(htmlExtensions: js.Array[HtmlExtension]): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("combineHtmlExtensions")(htmlExtensions.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
   
-  type Construct = typings.micromarkUtilTypes.mod.Construct
-  
   type Extension = typings.micromarkUtilTypes.mod.Extension
+  
+  type Handles = typings.micromarkUtilTypes.mod.Handles
   
   type HtmlExtension = typings.micromarkUtilTypes.mod.HtmlExtension
   

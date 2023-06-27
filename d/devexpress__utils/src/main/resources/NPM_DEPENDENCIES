@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@devexpress/utils" : "1.4.0"
+      "@devexpress/utils" : "1.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@devexpress/utils" : "1.4.0"
+      "@devexpress/utils" : "1.4.1"
     }
   ],
   "compile-devDependencies" : [

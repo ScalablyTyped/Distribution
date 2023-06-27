@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TopFilterProperties extends StObject {
   
   /**
-    * When one or more field names are provided in this property, the output result will be grouped based on unique values from those fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#groupByFields)
-    */
+  		 * When one or more field names are provided in this property, the output result will be grouped based on unique values from those fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#groupByFields)
+  		 */
   var groupByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * One or more field names used to order the query results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#orderByFields)
-    */
+  		 * One or more field names used to order the query results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#orderByFields)
+  		 */
   var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Defines the number of features to be returned from the top features query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#topCount)
-    */
+  		 * Defines the number of features to be returned from the top features query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TopFilter.html#topCount)
+  		 */
   var topCount: js.UndefOr[Double] = js.undefined
 }
 object TopFilterProperties {

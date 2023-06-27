@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpriteSourceUrlInfo extends StObject {
   
   /**
-    * The device pixel ratio used to fetch the appropriate sprite source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
-    */
+  		 * The device pixel ratio used to fetch the appropriate sprite source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
+  		 */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The sprite image format.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
-    */
+  		 * The sprite image format.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
+  		 */
   var spriteFormat: js.UndefOr[png | webp] = js.undefined
   
   /**
-    * The sprite source url.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
-    */
+  		 * The sprite source url.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
+  		 */
   var spriteUrl: String
   
   /**
-    * For SpriteSourceUrlInfo the type is always "url".
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
-    */
+  		 * For SpriteSourceUrlInfo the type is always "url".
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceUrlInfo)
+  		 */
   var `type`: String
 }
 object SpriteSourceUrlInfo {

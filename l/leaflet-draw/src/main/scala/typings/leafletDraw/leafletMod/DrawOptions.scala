@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DrawOptions {
   
-  trait CircleMarkerOptions extends StObject {
+  trait CircleMarkerOptions
+    extends StObject
+       with MarkerOptions {
     
     /**
       * Whether you can click the circle marker.
@@ -68,13 +70,6 @@ object DrawOptions {
       * @default 4
       */
     var weight: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * This should be a high number to ensure that you can draw over all other layers on the map.
-      *
-      * @default 2000
-      */
-    var zIndexOffset: js.UndefOr[Double] = js.undefined
   }
   object CircleMarkerOptions {
     
@@ -117,10 +112,6 @@ object DrawOptions {
       inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
       inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
-      
-      inline def setZIndexOffset(value: Double): Self = StObject.set(x, "zIndexOffset", value.asInstanceOf[js.Any])
-      
-      inline def setZIndexOffsetUndefined: Self = StObject.set(x, "zIndexOffset", js.undefined)
     }
   }
   

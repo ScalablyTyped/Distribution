@@ -50,7 +50,7 @@ object ValueColor extends StObject {
   /* "Neutral" */ val Neutral: typings.openui5.sapMLibraryMod.ValueColor.Neutral & String = js.native
   
   /**
-    * @SINCE 1.84
+    * @since 1.84
     *
     * None value color.
     *

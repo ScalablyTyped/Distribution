@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__destroyable"
-version := "4.0-dt-20221025Z-dcce0c"
+version := "4.0-dt-20230613Z-dcce0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

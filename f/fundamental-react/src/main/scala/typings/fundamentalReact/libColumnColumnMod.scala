@@ -6,7 +6,6 @@ import typings.fundamentalReact.anon.WeakValidationMapColumnPr
 import typings.fundamentalReact.fundamentalReactStrings.Column
 import typings.fundamentalReact.fundamentalReactStrings.after
 import typings.fundamentalReact.fundamentalReactStrings.before
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -18,8 +17,8 @@ object libColumnColumnMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Column/Column.ColumnProps> & {  displayName :'Column'} */
   object default {
     
-    inline def apply(props: ColumnProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: ColumnProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ColumnProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: ColumnProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Column/Column", JSImport.Default)
     @js.native

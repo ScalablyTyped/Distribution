@@ -4,18 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Used to represent a set of time ranges, primarily for the purpose of tracking which portions of media have been buffered when loading it for use by the <audio> and <video> elements. */
+/**
+  * Used to represent a set of time ranges, primarily for the purpose of tracking which portions of media have been buffered when loading it for use by the <audio> and <video> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TimeRanges)
+  */
 trait TimeRanges extends StObject {
   
   /**
     * Returns the time for the end of the range with the given index.
     *
     * Throws an "IndexSizeError" DOMException if the index is out of range.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TimeRanges/end)
     */
   /* standard dom */
   def end(index: Double): Double
   
-  /** Returns the number of ranges in the object. */
+  /**
+    * Returns the number of ranges in the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TimeRanges/length)
+    */
   /* standard dom */
   val length: Double
   
@@ -23,6 +33,8 @@ trait TimeRanges extends StObject {
     * Returns the time for the start of the range with the given index.
     *
     * Throws an "IndexSizeError" DOMException if the index is out of range.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TimeRanges/start)
     */
   /* standard dom */
   def start(index: Double): Double

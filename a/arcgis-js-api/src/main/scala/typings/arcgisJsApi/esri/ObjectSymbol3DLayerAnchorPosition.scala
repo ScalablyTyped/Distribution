@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectSymbol3DLayerAnchorPosition extends StObject {
   
   /**
-    * Value defining the position relative to the x axis of the bounding box.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Value defining the position relative to the x axis of the bounding box.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+  		 */
   var x: Double
   
   /**
-    * Value defining the position relative to the y axis of the bounding box.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Value defining the position relative to the y axis of the bounding box.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+  		 */
   var y: Double
   
   /**
-    * Value defining the position relative to the z axis of the bounding box.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Value defining the position relative to the z axis of the bounding box.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+  		 */
   var z: Double
 }
 object ObjectSymbol3DLayerAnchorPosition {

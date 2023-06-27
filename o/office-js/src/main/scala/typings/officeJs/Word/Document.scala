@@ -1,13 +1,24 @@
 package typings.officeJs.Word
 
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.OfficeExtension.EventHandlers
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.Word.InsertLocation.end
+import typings.officeJs.Word.InsertLocation.replace
+import typings.officeJs.Word.InsertLocation.start
 import typings.officeJs.Word.Interfaces.DocumentData
 import typings.officeJs.Word.Interfaces.DocumentLoadOptions
 import typings.officeJs.Word.Interfaces.DocumentUpdateData
 import typings.officeJs.anon.Expand
 import typings.officeJs.anon.IgnorePunct
+import typings.officeJs.officeJsStrings.Character
+import typings.officeJs.officeJsStrings.End
 import typings.officeJs.officeJsStrings.Off
+import typings.officeJs.officeJsStrings.Prompt
+import typings.officeJs.officeJsStrings.Replace
+import typings.officeJs.officeJsStrings.Save
+import typings.officeJs.officeJsStrings.SkipSave
+import typings.officeJs.officeJsStrings.Start
 import typings.officeJs.officeJsStrings.TrackAll
 import typings.officeJs.officeJsStrings.TrackMineOnly
 import org.scalablytyped.runtime.StObject
@@ -26,6 +37,30 @@ trait Document
      with ClientObject {
   
   /**
+    * Adds a style into the document by name and type.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param name Required. A string representing the style name.
+    * @param type Required. The style type, including character, list, paragraph, or table.
+    */
+  def addStyle(
+    name: String,
+    `type`: Character | typings.officeJs.officeJsStrings.List | typings.officeJs.officeJsStrings.Paragraph | typings.officeJs.officeJsStrings.Table
+  ): Style = js.native
+  /**
+    * Adds a style into the document by name and type.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param name Required. A string representing the style name.
+    * @param type Required. The style type, including character, list, paragraph, or table.
+    */
+  def addStyle(name: String, `type`: StyleType): Style = js.native
+  
+  /**
     * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     *
     * @remarks
@@ -34,12 +69,24 @@ trait Document
   val body: Body = js.native
   
   /**
-    * Gets or sets the ChangeTracking mode.
+    * Specifies the ChangeTracking mode.
     *
     * @remarks
     * [Api set: WordApi 1.4]
     */
   var changeTrackingMode: ChangeTrackingMode | Off | TrackAll | TrackMineOnly = js.native
+  
+  /**
+    * Close current document.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param closeBehavior Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+    */
+  def close(): Unit = js.native
+  def close(closeBehavior: Save | SkipSave): Unit = js.native
+  def close(closeBehavior: CloseBehavior): Unit = js.native
   
   /**
     * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
@@ -92,11 +139,24 @@ trait Document
   def getBookmarkRangeOrNullObject(name: String): Range = js.native
   
   /**
+    * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
+  
+  /**
     * Gets the document's endnotes in a single body.
     Not implemented in Word on the web.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getEndnoteBody(): Body = js.native
   
@@ -105,7 +165,7 @@ trait Document
     Not implemented in Word on the web.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getFootnoteBody(): Body = js.native
   
@@ -116,6 +176,34 @@ trait Document
     * [Api set: WordApi 1.1]
     */
   def getSelection(): Range = js.native
+  
+  /**
+    * Gets a StyleCollection object that represents the whole style set of the document.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  def getStyles(): StyleCollection = js.native
+  
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: end): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: end, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  /**
+    * Inserts a document into the target document at a specific location with additional properties.
+    Headers, footers, watermarks, and other section properties are copied by default.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param base64File Required. The Base64-encoded content of a .docx file.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param insertFileOptions Optional. The additional properties that should be imported to the destination document.
+    */
+  def insertFileFromBase64(base64File: String, insertLocation: replace): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: start): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: start, insertFileOptions: InsertFileOptions): SectionCollection = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -129,6 +217,16 @@ trait Document
   def load(propertyNames: js.Array[String]): Document = js.native
   
   /**
+    * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onContentControlAdded: EventHandlers[ContentControlAddedEventArgs] = js.native
+  
+  /**
     * Gets the properties of the document.
     *
     * @remarks
@@ -137,12 +235,22 @@ trait Document
   val properties: DocumentProperties = js.native
   
   /**
-    * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+    * Saves the document.
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+    *
+    * @param saveBehavior Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+    * @param fileName Optional. The file name (exclude file extension). Only takes effect for a new document.
     */
   def save(): Unit = js.native
+  def save(saveBehavior: Save | Prompt): Unit = js.native
+  def save(saveBehavior: Save | Prompt, fileName: String): Unit = js.native
+  def save(saveBehavior: Unit, fileName: String): Unit = js.native
+  def save(saveBehavior: SaveBehavior): Unit = js.native
+  def save(saveBehavior: SaveBehavior, fileName: String): Unit = js.native
   
   /**
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.

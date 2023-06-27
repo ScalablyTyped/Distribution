@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains helper methods for generating class breaks visualizations for raster layers (i.e.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html)
-  */
+	 * This object contains helper methods for generating class breaks visualizations for raster layers (i.e.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html)
+	 */
 trait classBreaks extends StObject {
   
   /**
-    * Generates a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) used to render imagery data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * Generates a [ClassBreaksRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html) used to render imagery data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   def createRenderer(params: classBreaksCreateRendererParams): js.Promise[RasterClassBreaksResult]
 }
 object classBreaks {

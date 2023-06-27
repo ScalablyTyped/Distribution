@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudUniqueValueRendererLegendOptions extends StObject {
   
   /**
-    * Describes the variable driving the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#legendOptions)
-    */
+  		 * Describes the variable driving the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#legendOptions)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object PointCloudUniqueValueRendererLegendOptions {

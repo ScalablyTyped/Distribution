@@ -155,7 +155,7 @@ object sapMCustomListItemMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Gets current value of property {@link #getAccDescription accDescription}.
       *
@@ -236,7 +236,7 @@ object sapMCustomListItemMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Sets a new value for property {@link #getAccDescription accDescription}.
       *
@@ -267,7 +267,7 @@ object sapMCustomListItemMod {
        with ListItemBaseSettings {
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Defines the custom accessibility announcement.
       *

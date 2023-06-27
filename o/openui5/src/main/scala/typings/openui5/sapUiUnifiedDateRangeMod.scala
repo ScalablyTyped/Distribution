@@ -125,7 +125,7 @@ object sapUiUnifiedDateRangeMod {
       * Gets current value of property {@link #getEndDate endDate}.
       *
       * End date for a date range. If empty only a single date is presented by this DateRange element. This must
-      * be a JavaScript date object.
+      * be a UI5Date or JavaScript Date object.
       *
       * @returns Value of property `endDate`
       */
@@ -134,7 +134,7 @@ object sapUiUnifiedDateRangeMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Start date for a date range. This must be a JavaScript date object.
+      * Start date for a date range. This must be a UI5Date or JavaScript Date object.
       *
       * @returns Value of property `startDate`
       */
@@ -147,12 +147,12 @@ object sapUiUnifiedDateRangeMod {
       */
     def setEndDate(): this.type = js.native
     def setEndDate(/**
-      * A JavaScript date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
     def setEndDate(
       /**
-      * A JavaScript date
+      * A date instance
       */
     oDate: js.Date,
       /**
@@ -162,9 +162,23 @@ object sapUiUnifiedDateRangeMod {
     ): this.type = js.native
     def setEndDate(
       /**
-      * A JavaScript date
+      * A date instance
       */
     oDate: Unit,
+      /**
+      * If true, `endDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
+    def setEndDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
+    def setEndDate(
+      /**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default,
       /**
       * If true, `endDate` is not marked as changed
       */
@@ -178,12 +192,12 @@ object sapUiUnifiedDateRangeMod {
       */
     def setStartDate(): this.type = js.native
     def setStartDate(/**
-      * A JavaScript date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
     def setStartDate(
       /**
-      * A JavaScript date
+      * A date instance
       */
     oDate: js.Date,
       /**
@@ -193,9 +207,23 @@ object sapUiUnifiedDateRangeMod {
     ): this.type = js.native
     def setStartDate(
       /**
-      * A JavaScript date
+      * A date instance
       */
     oDate: Unit,
+      /**
+      * If true, `startDate` is not marked as changed
+      */
+    bInvalidate: Boolean
+    ): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
+    def setStartDate(
+      /**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default,
       /**
       * If true, `startDate` is not marked as changed
       */
@@ -209,14 +237,14 @@ object sapUiUnifiedDateRangeMod {
     
     /**
       * End date for a date range. If empty only a single date is presented by this DateRange element. This must
-      * be a JavaScript date object.
+      * be a UI5Date or JavaScript Date object.
       */
     var endDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Start date for a date range. This must be a JavaScript date object.
+      * Start date for a date range. This must be a UI5Date or JavaScript Date object.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

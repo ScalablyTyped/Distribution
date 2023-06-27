@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewLeadSelectedIndex
-import typings.openui5.anon.Query
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -128,14 +126,14 @@ object sapUiUx3DataSetMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Rerendering of the FilterArea
       */
     def _rerenderFilter(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Rerendering of the Toolbar
       */
@@ -197,13 +195,13 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSet` itself
       */
@@ -228,7 +226,7 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -239,7 +237,7 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSet` itself
       */
@@ -261,13 +259,13 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit]
     ): this.type = js.native
     def attachSelectionChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSet` itself
       */
@@ -293,7 +291,7 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit]
     ): this.type = js.native
     def attachSelectionChanged(
       /**
@@ -304,7 +302,7 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSet` itself
       */
@@ -330,7 +328,7 @@ object sapUiUx3DataSetMod {
     def clearSelection(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a view switch button
       *
@@ -376,13 +374,13 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -401,13 +399,13 @@ object sapUiUx3DataSetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit]
     ): this.type = js.native
     def detachSelectionChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetSelectionChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -415,7 +413,7 @@ object sapUiUx3DataSetMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
@@ -425,20 +423,22 @@ object sapUiUx3DataSetMod {
     def fireSearch(/**
       * Parameters to pass along with the event
       */
-    mParameters: Query): this.type = js.native
+    mParameters: DataSet$SearchEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChanged(): this.type = js.native
-    def fireSelectionChanged(/**
+    def fireSelectionChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewLeadSelectedIndex): this.type = js.native
+    mParameters: DataSet$SelectionChangedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getFilter filter}.
@@ -455,7 +455,7 @@ object sapUiUx3DataSetMod {
     def getItems(): js.Array[typings.openui5.sapUiUx3DataSetItemMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the LeadSelection index
       *
@@ -485,7 +485,7 @@ object sapUiUx3DataSetMod {
     def getSelectedIndices(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns id of selected Item from given index
       *
@@ -634,7 +634,7 @@ object sapUiUx3DataSetMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns true if iIndex is selected
       *
@@ -736,7 +736,7 @@ object sapUiUx3DataSetMod {
     vView: DataSetView): DataSetView | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Set the LeadSelection index
       */
@@ -832,6 +832,69 @@ object sapUiUx3DataSetMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait DataSet$SearchEventParameters extends StObject {
+    
+    /**
+      * The search query
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object DataSet$SearchEventParameters {
+    
+    inline def apply(): DataSet$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataSet$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSet$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  trait DataSet$SelectionChangedEventParameters extends StObject {
+    
+    /**
+      * New lead selected index
+      */
+    var newLeadSelectedIndex: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Old lead selected index
+      */
+    var oldLeadSelectedIndex: js.UndefOr[int] = js.undefined
+  }
+  object DataSet$SelectionChangedEventParameters {
+    
+    inline def apply(): DataSet$SelectionChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataSet$SelectionChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSet$SelectionChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewLeadSelectedIndex(value: int): Self = StObject.set(x, "newLeadSelectedIndex", value.asInstanceOf[js.Any])
+      
+      inline def setNewLeadSelectedIndexUndefined: Self = StObject.set(x, "newLeadSelectedIndex", js.undefined)
+      
+      inline def setOldLeadSelectedIndex(value: int): Self = StObject.set(x, "oldLeadSelectedIndex", value.asInstanceOf[js.Any])
+      
+      inline def setOldLeadSelectedIndexUndefined: Self = StObject.set(x, "oldLeadSelectedIndex", js.undefined)
+    }
+  }
+  
+  type DataSetSearchEvent = typings.openui5.sapUiBaseEventMod.default[DataSet$SearchEventParameters]
+  
+  type DataSetSearchEventParameters = DataSet$SearchEventParameters
+  
+  type DataSetSelectionChangedEvent = typings.openui5.sapUiBaseEventMod.default[DataSet$SelectionChangedEventParameters]
+  
+  type DataSetSelectionChangedEventParameters = DataSet$SelectionChangedEventParameters
+  
   trait DataSetSettings
     extends StObject
        with ControlSettings {
@@ -860,7 +923,12 @@ object sapUiUx3DataSetMod {
     /**
       * Event which is fired when the user triggers a search
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSet$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Selected view of the Dataset
@@ -870,7 +938,12 @@ object sapUiUx3DataSetMod {
     /**
       * selection Changed
       */
-    var selectionChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSet$SelectionChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * show filter
@@ -930,7 +1003,9 @@ object sapUiUx3DataSetMod {
       
       inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSet$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
@@ -938,7 +1013,9 @@ object sapUiUx3DataSetMod {
       
       inline def setSelectedViewUndefined: Self = StObject.set(x, "selectedView", js.undefined)
       
-      inline def setSelectionChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
+      inline def setSelectionChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSet$SelectionChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
       
       inline def setSelectionChangedUndefined: Self = StObject.set(x, "selectionChanged", js.undefined)
       

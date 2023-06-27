@@ -1,6 +1,7 @@
 package typings.themeUiThemeProvider
 
 import typings.react.mod.FC
+import typings.react.mod.JSX.Element
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDeclarationsSrcMod {
   
+  @JSImport("@theme-ui/theme-provider/dist/declarations/src", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@theme-ui/theme-provider/dist/declarations/src", "ThemeProvider")
   @js.native
   val ThemeProvider: FC[ThemeProviderProps] = js.native
+  
+  inline def ThemeUIProvider(param0: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeUIProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Inlined parent std.Pick<@theme-ui/core.@theme-ui/core.ThemeProviderProps, 'theme'> */
   trait ThemeProviderProps extends StObject {

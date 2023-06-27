@@ -147,7 +147,7 @@ object sapMP13nDimMeasurePanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:changeChartType changeChartType} event of this
       * `sap.m.P13nDimMeasurePanel`.
@@ -163,20 +163,20 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChangeChartType(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDimMeasurePanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:changeChartType changeChartType} event of this
       * `sap.m.P13nDimMeasurePanel`.
@@ -197,7 +197,7 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChangeChartType(
       /**
@@ -208,7 +208,7 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDimMeasurePanel` itself
       */
@@ -216,9 +216,9 @@ object sapMP13nDimMeasurePanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
-      * Attaches event handler `fnFunction` to the {@link #event:changeDimMeasureItems changeDimMeasureItems}
+      * Attaches event handler `fnFunction` to the {@link #event:changeDimMeasureItems changeDimMeasureItems }
       * event of this `sap.m.P13nDimMeasurePanel`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -233,22 +233,22 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChangeDimMeasureItems(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDimMeasurePanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
-      * Attaches event handler `fnFunction` to the {@link #event:changeDimMeasureItems changeDimMeasureItems}
+      * Attaches event handler `fnFunction` to the {@link #event:changeDimMeasureItems changeDimMeasureItems }
       * event of this `sap.m.P13nDimMeasurePanel`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -268,7 +268,7 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChangeDimMeasureItems(
       /**
@@ -279,7 +279,7 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDimMeasurePanel` itself
       */
@@ -314,7 +314,7 @@ object sapMP13nDimMeasurePanelMod {
     def destroyDimMeasureItems(): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:changeChartType changeChartType} event of
       * this `sap.m.P13nDimMeasurePanel`.
@@ -327,13 +327,13 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachChangeChartType(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -341,9 +341,9 @@ object sapMP13nDimMeasurePanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
-      * Detaches event handler `fnFunction` from the {@link #event:changeDimMeasureItems changeDimMeasureItems}
+      * Detaches event handler `fnFunction` from the {@link #event:changeDimMeasureItems changeDimMeasureItems }
       * event of this `sap.m.P13nDimMeasurePanel`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -354,13 +354,13 @@ object sapMP13nDimMeasurePanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachChangeDimMeasureItems(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -368,8 +368,8 @@ object sapMP13nDimMeasurePanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:changeChartType changeChartType} to attached listeners.
       *
@@ -382,8 +382,8 @@ object sapMP13nDimMeasurePanelMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:changeDimMeasureItems changeDimMeasureItems} to attached listeners.
       *
@@ -565,6 +565,18 @@ object sapMP13nDimMeasurePanelMod {
     def unbindDimMeasureItems(): this.type = js.native
   }
   
+  trait P13nDimMeasurePanel$ChangeChartTypeEventParameters extends StObject
+  
+  trait P13nDimMeasurePanel$ChangeDimMeasureItemsEventParameters extends StObject
+  
+  type P13nDimMeasurePanelChangeChartTypeEvent = typings.openui5.sapUiBaseEventMod.default[P13nDimMeasurePanel$ChangeChartTypeEventParameters]
+  
+  type P13nDimMeasurePanelChangeChartTypeEventParameters = P13nDimMeasurePanel$ChangeChartTypeEventParameters
+  
+  type P13nDimMeasurePanelChangeDimMeasureItemsEvent = typings.openui5.sapUiBaseEventMod.default[P13nDimMeasurePanel$ChangeDimMeasureItemsEventParameters]
+  
+  type P13nDimMeasurePanelChangeDimMeasureItemsEventParameters = P13nDimMeasurePanel$ChangeDimMeasureItemsEventParameters
+  
   trait P13nDimMeasurePanelSettings
     extends StObject
        with P13nPanelSettings {
@@ -577,19 +589,23 @@ object sapMP13nDimMeasurePanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Event raised when a `ChartType` has been updated.
       */
-    var changeChartType: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var changeChartType: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Event raised when one or more `DimMeasureItems` has been updated. Aggregation `DimMeasureItems` should
       * be updated outside...
       */
-    var changeDimMeasureItems: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var changeDimMeasureItems: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Specifies a chart type key.
@@ -621,11 +637,11 @@ object sapMP13nDimMeasurePanelMod {
       
       inline def setAvailableChartTypesVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "availableChartTypes", js.Array(value*))
       
-      inline def setChangeChartType(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "changeChartType", js.Any.fromFunction1(value))
+      inline def setChangeChartType(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "changeChartType", js.Any.fromFunction1(value))
       
       inline def setChangeChartTypeUndefined: Self = StObject.set(x, "changeChartType", js.undefined)
       
-      inline def setChangeDimMeasureItems(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "changeDimMeasureItems", js.Any.fromFunction1(value))
+      inline def setChangeDimMeasureItems(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "changeDimMeasureItems", js.Any.fromFunction1(value))
       
       inline def setChangeDimMeasureItemsUndefined: Self = StObject.set(x, "changeDimMeasureItems", js.undefined)
       

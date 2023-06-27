@@ -7,54 +7,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphicProperties extends StObject {
   
   /**
-    * The aggregateGeometries contains spatial aggregation geometries when [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType) query is executed with `envelope-aggregate`, `centroid-aggregate` and/or `convex-hull-aggregate` statistics type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#aggregateGeometries)
-    */
+  		 * The aggregateGeometries contains spatial aggregation geometries when [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType) query is executed with `envelope-aggregate`, `centroid-aggregate` and/or `convex-hull-aggregate` statistics type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#aggregateGeometries)
+  		 */
   var aggregateGeometries: js.UndefOr[Any] = js.undefined
   
   /**
-    * Name-value pairs of fields and field values associated with the graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes)
-    */
+  		 * Name-value pairs of fields and field values associated with the graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes)
+  		 */
   var attributes: js.UndefOr[Any] = js.undefined
   
   /**
-    * The geometry that defines the graphic's location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry)
-    */
+  		 * The geometry that defines the graphic's location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry)
+  		 */
   var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
-    * If applicable, references the layer in which the graphic is stored.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer)
-    */
+  		 * If applicable, references the layer in which the graphic is stored.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer)
+  		 */
   var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
-    * The template for displaying content in a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when the graphic is selected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#popupTemplate)
-    */
+  		 * The template for displaying content in a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when the graphic is selected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#popupTemplate)
+  		 */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
-    * The [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#symbol)
-    */
+  		 * The [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#symbol)
+  		 */
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
   
   /**
-    * Indicates the visibility of the graphic.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
-    */
+  		 * Indicates the visibility of the graphic.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GraphicProperties {

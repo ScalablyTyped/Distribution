@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.RawBytes
-import typings.openui5.anon.`12`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
@@ -136,13 +134,13 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit]
     ): this.type = js.native
     def attachScanError(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.BarcodeScannerDialog`
       * itself
@@ -168,7 +166,7 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit]
     ): this.type = js.native
     def attachScanError(
       /**
@@ -179,7 +177,7 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.BarcodeScannerDialog`
       * itself
@@ -201,13 +199,13 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit]
     ): this.type = js.native
     def attachScanSuccess(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.BarcodeScannerDialog`
       * itself
@@ -233,7 +231,7 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit]
     ): this.type = js.native
     def attachScanSuccess(
       /**
@@ -244,7 +242,7 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.BarcodeScannerDialog`
       * itself
@@ -268,13 +266,13 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit]
     ): this.type = js.native
     def detachScanError(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanErrorEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -292,13 +290,13 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit]
     ): this.type = js.native
     def detachScanSuccess(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BarcodeScannerDialogScanSuccessEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -306,36 +304,103 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:scanError scanError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireScanError(): this.type = js.native
-    def fireScanError(/**
+    def fireScanError(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `12`): this.type = js.native
+    mParameters: BarcodeScannerDialog$ScanErrorEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:scanSuccess scanSuccess} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireScanSuccess(): this.type = js.native
-    def fireScanSuccess(/**
+    def fireScanSuccess(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RawBytes): this.type = js.native
+    mParameters: BarcodeScannerDialog$ScanSuccessEventParameters
+    ): this.type = js.native
     
     /**
       * Shows a dialog with the camera videostream. Starts a scan session.
       */
     def show(): Unit = js.native
   }
+  
+  trait BarcodeScannerDialog$ScanErrorEventParameters extends StObject {
+    
+    /**
+      * the error message
+      */
+    var message: js.UndefOr[String] = js.undefined
+  }
+  object BarcodeScannerDialog$ScanErrorEventParameters {
+    
+    inline def apply(): BarcodeScannerDialog$ScanErrorEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BarcodeScannerDialog$ScanErrorEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeScannerDialog$ScanErrorEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    }
+  }
+  
+  trait BarcodeScannerDialog$ScanSuccessEventParameters extends StObject {
+    
+    /**
+      * the scan result as a Uint8Array
+      */
+    var rawBytes: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * the scan result as string
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object BarcodeScannerDialog$ScanSuccessEventParameters {
+    
+    inline def apply(): BarcodeScannerDialog$ScanSuccessEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BarcodeScannerDialog$ScanSuccessEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeScannerDialog$ScanSuccessEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setRawBytes(value: js.Object): Self = StObject.set(x, "rawBytes", value.asInstanceOf[js.Any])
+      
+      inline def setRawBytesUndefined: Self = StObject.set(x, "rawBytes", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  type BarcodeScannerDialogScanErrorEvent = typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanErrorEventParameters]
+  
+  type BarcodeScannerDialogScanErrorEventParameters = BarcodeScannerDialog$ScanErrorEventParameters
+  
+  type BarcodeScannerDialogScanSuccessEvent = typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanSuccessEventParameters]
+  
+  type BarcodeScannerDialogScanSuccessEventParameters = BarcodeScannerDialog$ScanSuccessEventParameters
   
   trait BarcodeScannerDialogSettings
     extends StObject
@@ -344,12 +409,22 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
     /**
       * Fires when the scan fails with error.
       */
-    var scanError: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var scanError: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanErrorEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when the scan is completed successfuuly.
       */
-    var scanSuccess: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var scanSuccess: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanSuccessEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object BarcodeScannerDialogSettings {
     
@@ -361,11 +436,15 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BarcodeScannerDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setScanError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scanError", js.Any.fromFunction1(value))
+      inline def setScanError(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanErrorEventParameters] => Unit
+      ): Self = StObject.set(x, "scanError", js.Any.fromFunction1(value))
       
       inline def setScanErrorUndefined: Self = StObject.set(x, "scanError", js.undefined)
       
-      inline def setScanSuccess(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scanSuccess", js.Any.fromFunction1(value))
+      inline def setScanSuccess(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BarcodeScannerDialog$ScanSuccessEventParameters] => Unit
+      ): Self = StObject.set(x, "scanSuccess", js.Any.fromFunction1(value))
       
       inline def setScanSuccessUndefined: Self = StObject.set(x, "scanSuccess", js.undefined)
     }

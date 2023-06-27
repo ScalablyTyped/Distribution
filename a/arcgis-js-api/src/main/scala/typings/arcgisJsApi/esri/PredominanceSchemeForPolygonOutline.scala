@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PredominanceSchemeForPolygonOutline extends StObject {
   
   /**
-    * The outline color of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The outline color of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var color: Color_
   
   /**
-    * The width of the fill symbol's outline in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
-    */
+  		 * The width of the fill symbol's outline in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolygon)
+  		 */
   var width: Double
 }
 object PredominanceSchemeForPolygonOutline {

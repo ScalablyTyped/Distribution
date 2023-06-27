@@ -26,8 +26,8 @@ open class bullet ()
   
   def getValue(bullet_value: Double): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def refresh(): Unit = js.native
   

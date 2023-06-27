@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Input")
 @js.native
 /**
-  * Input device related configuration settings on the View.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html)
-  */
+		 * Input device related configuration settings on the View.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html)
+		 */
 open class Input ()
   extends StObject
      with typings.arcgisJsApi.esri.Input {

@@ -13,14 +13,14 @@ trait GetPatch extends StObject {
   var get: ParametersPathCommentid
   
   /** Update a gist comment */
-  var patch: Responses20024404
+  var patch: Responses20027404
 }
 object GetPatch {
   
   inline def apply(
     delete: ParametersPathCommentidResponses304403404,
     get: ParametersPathCommentid,
-    patch: Responses20024404
+    patch: Responses20027404
   ): GetPatch = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatch]
@@ -33,6 +33,6 @@ object GetPatch {
     
     inline def setGet(value: ParametersPathCommentid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses20024404): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses20027404): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

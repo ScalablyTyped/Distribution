@@ -2,7 +2,7 @@ package typings.reactFadeIn
 
 import typings.react.mod.JSXElementConstructor
 import typings.react.mod.PropsWithChildren
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +50,7 @@ object libFadeInMod {
       
       inline def setChildTag(value: JSXElementConstructor[Any]): Self = StObject.set(x, "childTag", value.asInstanceOf[js.Any])
       
-      inline def setChildTagFunction1(value: Any => ReactElement | Null): Self = StObject.set(x, "childTag", js.Any.fromFunction1(value))
+      inline def setChildTagFunction2(value: (Any, /* deprecatedLegacyContext */ js.UndefOr[Any]) => ReactNode): Self = StObject.set(x, "childTag", js.Any.fromFunction2(value))
       
       inline def setChildTagUndefined: Self = StObject.set(x, "childTag", js.undefined)
       
@@ -76,7 +76,7 @@ object libFadeInMod {
       
       inline def setWrapperTag(value: JSXElementConstructor[Any]): Self = StObject.set(x, "wrapperTag", value.asInstanceOf[js.Any])
       
-      inline def setWrapperTagFunction1(value: Any => ReactElement | Null): Self = StObject.set(x, "wrapperTag", js.Any.fromFunction1(value))
+      inline def setWrapperTagFunction2(value: (Any, /* deprecatedLegacyContext */ js.UndefOr[Any]) => ReactNode): Self = StObject.set(x, "wrapperTag", js.Any.fromFunction2(value))
       
       inline def setWrapperTagUndefined: Self = StObject.set(x, "wrapperTag", js.undefined)
     }

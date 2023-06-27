@@ -13,10 +13,10 @@ trait DirectionPointConstructor
      with Instantiable1[/* properties */ DirectionPointProperties, DirectionPoint] {
   
   /**
-    * Creates a [DirectionPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#fromGraphic)
-    */
+  		 * Creates a [DirectionPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#fromGraphic)
+  		 */
   def fromGraphic(): DirectionPoint = js.native
   def fromGraphic(graphic: Graphic): DirectionPoint = js.native
   

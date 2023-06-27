@@ -27,41 +27,41 @@ trait CustomTemplate
      with Accessor {
   
   /**
-    * The template's description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#description)
-    */
+  		 * The template's description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#description)
+  		 */
   val description: String = js.native
   
   /**
-    * The output format for the printed map.
-    *
-    * @default pdf
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#format)
-    */
+  		 * The output format for the printed map.
+  		 *
+  		 * @default pdf
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#format)
+  		 */
   var format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = js.native
   
   /**
-    * The text that appears inside the [Print Widget's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) `Select template` button.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#label)
-    */
+  		 * The text that appears inside the [Print Widget's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) `Select template` button.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#label)
+  		 */
   val label: String = js.native
   
   /**
-    * The layout used for the print output.
-    *
-    * @default letter-ansi-a-landscape
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layout)
-    */
+  		 * The layout used for the print output.
+  		 *
+  		 * @default letter-ansi-a-landscape
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layout)
+  		 */
   val layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
   
   /**
-    * Defines the layout elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layoutOptions)
-    */
+  		 * Defines the layout elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layoutOptions)
+  		 */
   val layoutOptions: CustomTemplateLayoutOptions = js.native
 }

@@ -11,10 +11,10 @@ object esriViews3dEnvironmentSunnyWeatherMod {
   @JSImport("esri/views/3d/environment/SunnyWeather", JSImport.Namespace)
   @js.native
   /**
-    * The SunnyWeather class allows you to change the weather conditions in the scene to sunny weather.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunnyWeather.html)
-    */
+  		 * The SunnyWeather class allows you to change the weather conditions in the scene to sunny weather.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunnyWeather.html)
+  		 */
   open class ^ ()
     extends StObject
        with SunnyWeather {

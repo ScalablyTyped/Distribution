@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Item
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -140,13 +139,13 @@ object sapTntSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.tnt.SideNavigation` itself
       */
@@ -171,7 +170,7 @@ object sapTntSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
@@ -182,7 +181,7 @@ object sapTntSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.tnt.SideNavigation` itself
       */
@@ -234,13 +233,13 @@ object sapTntSideNavigationMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit]
     ): this.type = js.native
     def detachItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -248,20 +247,22 @@ object sapTntSideNavigationMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemSelect(): this.type = js.native
-    def fireItemSelect(/**
+    def fireItemSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Item): this.type = js.native
+    mParameters: SideNavigation$ItemSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getAriaLabel ariaLabel}.
       *
@@ -304,7 +305,7 @@ object sapTntSideNavigationMod {
     def getItem(): typings.openui5.sapTntNavigationListMod.default = js.native
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * ID of the element which is the current target of the association {@link #getSelectedItem selectedItem},
       * or `null`.
@@ -312,7 +313,7 @@ object sapTntSideNavigationMod {
     def getSelectedItem(): ID = js.native
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Gets current value of property {@link #getSelectedKey selectedKey}.
       *
@@ -323,7 +324,7 @@ object sapTntSideNavigationMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getAriaLabel ariaLabel}.
       *
@@ -413,12 +414,39 @@ object sapTntSideNavigationMod {
     def unbindItem(): this.type = js.native
   }
   
+  trait SideNavigation$ItemSelectEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var item: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object SideNavigation$ItemSelectEventParameters {
+    
+    inline def apply(): SideNavigation$ItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SideNavigation$ItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigation$ItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type SideNavigationItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[SideNavigation$ItemSelectEventParameters]
+  
+  type SideNavigationItemSelectEventParameters = SideNavigation$ItemSelectEventParameters
+  
   trait SideNavigationSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Specifies an optional aria-label that can be used by the screen readers.
       */
@@ -449,17 +477,22 @@ object sapTntSideNavigationMod {
     /**
       * Fired when an item is selected.
       */
-    var itemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SideNavigation$ItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.52.0
+      * @since 1.52.0
       *
       * The selected `NavigationListItem`.
       */
     var selectedItem: js.UndefOr[typings.openui5.sapTntNavigationListItemMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Specifies the currently selected key.
       */
@@ -493,7 +526,9 @@ object sapTntSideNavigationMod {
       
       inline def setItem(value: typings.openui5.sapTntNavigationListMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      inline def setItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
+      inline def setItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SideNavigation$ItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
       
       inline def setItemSelectUndefined: Self = StObject.set(x, "itemSelect", js.undefined)
       

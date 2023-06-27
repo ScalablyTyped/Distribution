@@ -8,65 +8,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait colorCreatePCContinuousRendererParams extends StObject {
   
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
-    *
-    * @default gray
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
+  		 *
+  		 * @default gray
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * In authoring apps, the user may select a pre-defined color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * In authoring apps, the user may select a pre-defined color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
-    * The number of points per inch in the view.
-    *
-    * @default 25
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * The number of points per inch in the view.
+  		 *
+  		 * @default 25
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var density: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var field: String
   
   /**
-    * The layer for which the visualization is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * The layer for which the visualization is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var layer: PointCloudLayer
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * The size of each point expressed as a percentage.
-    *
-    * @default 100%
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * The size of each point expressed as a percentage.
+  		 *
+  		 * @default 100%
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var size: js.UndefOr[String] = js.undefined
   
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
-    */
+  		 * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+  		 */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
 }
 object colorCreatePCContinuousRendererParams {

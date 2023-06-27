@@ -1,8 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.EditorEvent
 import typings.openui5.anon.GetCompletions
-import typings.openui5.anon.OldValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -126,7 +124,7 @@ object sapUiCodeeditorCodeEditorMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Defines custom completer - object implementing a getCompletions method. The method has two parameters
       * - fnCallback method and context object. Context object provides details about oPos and sPrefix as provided
@@ -151,13 +149,13 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.codeeditor.CodeEditor` itself
       */
@@ -182,7 +180,7 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -193,7 +191,7 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.codeeditor.CodeEditor` itself
       */
@@ -214,13 +212,13 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.codeeditor.CodeEditor` itself
       */
@@ -245,7 +243,7 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -256,7 +254,7 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.codeeditor.CodeEditor` itself
       */
@@ -274,13 +272,13 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -298,13 +296,13 @@ object sapUiCodeeditorCodeEditorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CodeEditorLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -312,7 +310,7 @@ object sapUiCodeeditorCodeEditorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -322,20 +320,22 @@ object sapUiCodeeditorCodeEditorMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: OldValue): this.type = js.native
+    mParameters: CodeEditor$ChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: EditorEvent): this.type = js.native
+    mParameters: CodeEditor$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getColorTheme colorTheme}.
@@ -394,7 +394,7 @@ object sapUiCodeeditorCodeEditorMod {
     def getLineNumbers(): Boolean = js.native
     
     /**
-      * @SINCE 1.48.1
+      * @since 1.48.1
       *
       * Gets current value of property {@link #getMaxLines maxLines}.
       *
@@ -478,7 +478,7 @@ object sapUiCodeeditorCodeEditorMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.54.1
+      * @since 1.54.1
       *
       * Pretty-prints the content of the editor
       */
@@ -547,7 +547,7 @@ object sapUiCodeeditorCodeEditorMod {
     bLineNumbers: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.48.1
+      * @since 1.48.1
       *
       * Sets a new value for property {@link #getMaxLines maxLines}.
       *
@@ -667,6 +667,78 @@ object sapUiCodeeditorCodeEditorMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait CodeEditor$ChangeEventParameters extends StObject {
+    
+    /**
+      * The old value of the code editor.
+      */
+    var oldValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The current value of the code editor.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object CodeEditor$ChangeEventParameters {
+    
+    inline def apply(): CodeEditor$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CodeEditor$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeEditor$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      
+      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait CodeEditor$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The underlying change event of the third-party code editor.
+      */
+    var editorEvent: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The current value of the code editor.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object CodeEditor$LiveChangeEventParameters {
+    
+    inline def apply(): CodeEditor$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CodeEditor$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeEditor$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEditorEvent(value: js.Object): Self = StObject.set(x, "editorEvent", value.asInstanceOf[js.Any])
+      
+      inline def setEditorEventUndefined: Self = StObject.set(x, "editorEvent", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type CodeEditorChangeEvent = typings.openui5.sapUiBaseEventMod.default[CodeEditor$ChangeEventParameters]
+  
+  type CodeEditorChangeEventParameters = CodeEditor$ChangeEventParameters
+  
+  type CodeEditorLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[CodeEditor$LiveChangeEventParameters]
+  
+  type CodeEditorLiveChangeEventParameters = CodeEditor$LiveChangeEventParameters
+  
   trait CodeEditorSettings
     extends StObject
        with ControlSettings {
@@ -674,7 +746,12 @@ object sapUiCodeeditorCodeEditorMod {
     /**
       * Fired when the value has changed and the focus leaves the code editor.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CodeEditor$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sets the editor color theme. Possible values are: default, hcb, hcb_bright, hcb_blue, theme-ambiance,
@@ -710,10 +787,15 @@ object sapUiCodeeditorCodeEditorMod {
     /**
       * Fired when the value is changed by user interaction - each keystroke, delete, paste, etc.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CodeEditor$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.48.1
+      * @since 1.48.1
       *
       * Sets whether the editor height should auto expand to a maximum number of lines. After reaching the maximum
       * number of lines specified, the content of the `CodeEditor` will become scrollable.
@@ -776,7 +858,9 @@ object sapUiCodeeditorCodeEditorMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CodeEditorSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CodeEditor$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -796,7 +880,9 @@ object sapUiCodeeditorCodeEditorMod {
       
       inline def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CodeEditor$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

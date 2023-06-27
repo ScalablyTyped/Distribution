@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpriteSource extends StObject {
   
   /**
-    * The base URL of the sprites source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * The base URL of the sprites source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var baseUrl: String
   
   /**
-    * The device pixel ratio of the sprite source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * The device pixel ratio of the sprite source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var devicePixelRatio: Double
   
   /**
-    * Returns the sprite info for the given sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * Returns the sprite info for the given sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   def getSpriteInfo(name: String): SpriteInfo
   /**
-    * Returns the sprite info for the given sprite.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * Returns the sprite info for the given sprite.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   @JSName("getSpriteInfo")
   var getSpriteInfo_Original: GetSpriteInfo
   
   /**
-    * The height in pixels of the sprite source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * The height in pixels of the sprite source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var height: Double
   
   /**
-    * The sprite image data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * The sprite image data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var image: js.typedarray.Uint8Array
   
   /**
-    * Indicates whether the sprite source is loaded successfully.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * Indicates whether the sprite source is loaded successfully.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var loadStatus: Any
   
   /**
-    * The width in pixels of the sprite source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
-    */
+  		 * The width in pixels of the sprite source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSource)
+  		 */
   var width: Double
 }
 object SpriteSource {

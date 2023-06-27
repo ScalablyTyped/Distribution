@@ -12,14 +12,17 @@ open class ResizeObserverEntry ()
   extends StObject
      with typings.std.ResizeObserverEntry {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/borderBoxSize) */
   /* standard dom */
   /* CompleteClass */
   override val borderBoxSize: js.Array[typings.std.ResizeObserverSize] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentBoxSize) */
   /* standard dom */
   /* CompleteClass */
   override val contentBoxSize: js.Array[typings.std.ResizeObserverSize] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentRect) */
   /* standard dom */
   /* CompleteClass */
   override val contentRect: typings.std.DOMRectReadOnly = js.native
@@ -28,6 +31,7 @@ open class ResizeObserverEntry ()
   /* CompleteClass */
   override val devicePixelContentBoxSize: js.Array[typings.std.ResizeObserverSize] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/target) */
   /* standard dom */
   /* CompleteClass */
   override val target: typings.std.Element = js.native

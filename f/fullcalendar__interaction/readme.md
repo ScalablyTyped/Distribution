@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar__interaction
 
-Typings are for version 6.1.7
+Typings are for version 6.1.8
 
 ## Library description:
 Calendar functionality for event drag-n-drop, event resizing, date clicking, and date selecting

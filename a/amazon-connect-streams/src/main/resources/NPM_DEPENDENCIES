@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "amazon-connect-streams" : "2.4.7"
+      "amazon-connect-streams" : "2.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "amazon-connect-streams" : "2.4.7"
+      "amazon-connect-streams" : "2.5.0"
     }
   ],
   "compile-devDependencies" : [

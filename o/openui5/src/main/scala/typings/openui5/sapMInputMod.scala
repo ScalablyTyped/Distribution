@@ -1,10 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.EscPressedPreviousValue
-import typings.openui5.anon.FromSuggestions
-import typings.openui5.anon.SelectedRow
-import typings.openui5.anon.SuggestionColumns
-import typings.openui5.anon.Value
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMInputBaseMod.InputBaseSettings
@@ -168,7 +163,7 @@ object sapMInputMod {
     var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Adds some suggestionColumn to the aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -192,7 +187,7 @@ object sapMInputMod {
     oItem: typings.openui5.sapUiCoreItemMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Adds some suggestionRow to the aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -227,13 +222,13 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -260,7 +255,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -271,7 +266,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -279,7 +274,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:submit submit} event of this `sap.m.Input`.
       *
@@ -290,7 +285,7 @@ object sapMInputMod {
       *
       * **Notes:**
       * 	 - The event is fired independent of whether there was a change before or not. If a change was performed,
-      * 			the event is fired after the change event.
+      *     the event is fired after the change event.
       * 	 - The event is also fired when an item of the select list is selected via Enter.
       * 	 - The event is only fired on an input which allows text input (`editable`, `enabled` and not `valueHelpOnly`).
       *
@@ -301,20 +296,20 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit]
     ): this.type = js.native
     def attachSubmit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:submit submit} event of this `sap.m.Input`.
       *
@@ -325,7 +320,7 @@ object sapMInputMod {
       *
       * **Notes:**
       * 	 - The event is fired independent of whether there was a change before or not. If a change was performed,
-      * 			the event is fired after the change event.
+      *     the event is fired after the change event.
       * 	 - The event is also fired when an item of the select list is selected via Enter.
       * 	 - The event is only fired on an input which allows text input (`editable`, `enabled` and not `valueHelpOnly`).
       *
@@ -341,7 +336,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit]
     ): this.type = js.native
     def attachSubmit(
       /**
@@ -352,7 +347,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -360,7 +355,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:suggest suggest} event of this `sap.m.Input`.
       *
@@ -376,20 +371,20 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:suggest suggest} event of this `sap.m.Input`.
       *
@@ -410,7 +405,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
@@ -421,7 +416,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -429,9 +424,9 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemSelected suggestionItemSelected}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemSelected suggestionItemSelected }
       * event of this `sap.m.Input`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -446,22 +441,22 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemSelected suggestionItemSelected}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemSelected suggestionItemSelected }
       * event of this `sap.m.Input`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -481,7 +476,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelected(
       /**
@@ -492,7 +487,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -500,7 +495,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Attaches event handler `fnFunction` to the {@link #event:valueHelpRequest valueHelpRequest} event of
       * this `sap.m.Input`.
@@ -516,20 +511,20 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit]
     ): this.type = js.native
     def attachValueHelpRequest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Attaches event handler `fnFunction` to the {@link #event:valueHelpRequest valueHelpRequest} event of
       * this `sap.m.Input`.
@@ -550,7 +545,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit]
     ): this.type = js.native
     def attachValueHelpRequest(
       /**
@@ -561,7 +556,7 @@ object sapMInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Input` itself
       */
@@ -569,7 +564,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Binds aggregation {@link #getSuggestionColumns suggestionColumns} to model data.
       *
@@ -584,7 +579,7 @@ object sapMInputMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Binds aggregation {@link #getSuggestionRows suggestionRows} to model data.
       *
@@ -604,14 +599,14 @@ object sapMInputMod {
     def cancelPendingSuggest(): Unit = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Closes the suggestion list.
       */
     def closeSuggestions(): Unit = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Destroys all the suggestionColumns in the aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -627,7 +622,7 @@ object sapMInputMod {
     def destroySuggestionItems(): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Destroys all the suggestionRows in the aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -646,13 +641,13 @@ object sapMInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -660,7 +655,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:submit submit} event of this `sap.m.Input`.
       *
@@ -672,13 +667,13 @@ object sapMInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit]
     ): this.type = js.native
     def detachSubmit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSubmitEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -686,7 +681,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Detaches event handler `fnFunction` from the {@link #event:suggest suggest} event of this `sap.m.Input`.
       *
@@ -698,13 +693,13 @@ object sapMInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit]
     ): this.type = js.native
     def detachSuggest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -712,9 +707,9 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
-      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelected suggestionItemSelected}
+      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelected suggestionItemSelected }
       * event of this `sap.m.Input`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -725,13 +720,13 @@ object sapMInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachSuggestionItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputSuggestionItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -739,7 +734,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Detaches event handler `fnFunction` from the {@link #event:valueHelpRequest valueHelpRequest} event of
       * this `sap.m.Input`.
@@ -752,13 +747,13 @@ object sapMInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit]
     ): this.type = js.native
     def detachValueHelpRequest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputValueHelpRequestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -766,7 +761,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -776,11 +771,11 @@ object sapMInputMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: EscPressedPreviousValue): this.type = js.native
+    mParameters: Input$LiveChangeEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.33.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:submit submit} to attached listeners.
       *
@@ -790,11 +785,11 @@ object sapMInputMod {
     def fireSubmit(/**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: Input$SubmitEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
@@ -804,38 +799,42 @@ object sapMInputMod {
     def fireSuggest(/**
       * Parameters to pass along with the event
       */
-    mParameters: SuggestionColumns): this.type = js.native
+    mParameters: Input$SuggestEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.3
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemSelected suggestionItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggestionItemSelected(): this.type = js.native
-    def fireSuggestionItemSelected(/**
+    def fireSuggestionItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedRow): this.type = js.native
+    mParameters: Input$SuggestionItemSelectedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:valueHelpRequest valueHelpRequest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireValueHelpRequest(): this.type = js.native
-    def fireValueHelpRequest(/**
+    def fireValueHelpRequest(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FromSuggestions): this.type = js.native
+    mParameters: Input$ValueHelpRequestEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets current value of property {@link #getAutocomplete autocomplete}.
       *
@@ -849,7 +848,7 @@ object sapMInputMod {
     def getAutocomplete(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the inner input DOM value.
       *
@@ -882,7 +881,7 @@ object sapMInputMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getEnableSuggestionsHighlighting enableSuggestionsHighlighting}.
       *
@@ -895,7 +894,7 @@ object sapMInputMod {
     def getEnableSuggestionsHighlighting(): Boolean = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEnableTableAutoPopinMode enableTableAutoPopinMode}.
       *
@@ -949,7 +948,7 @@ object sapMInputMod {
     def getMaxLength(): int = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets current value of property {@link #getMaxSuggestionWidth maxSuggestionWidth}.
       *
@@ -963,7 +962,7 @@ object sapMInputMod {
     def getMaxSuggestionWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * ID of the element which is the current target of the association {@link #getSelectedItem selectedItem},
       * or `null`.
@@ -971,7 +970,7 @@ object sapMInputMod {
     def getSelectedItem(): ID = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getSelectedKey selectedKey}.
       *
@@ -986,7 +985,7 @@ object sapMInputMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * ID of the element which is the current target of the association {@link #getSelectedRow selectedRow},
       * or `null`.
@@ -994,7 +993,7 @@ object sapMInputMod {
     def getSelectedRow(): ID = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Gets current value of property {@link #getShowClearIcon showClearIcon}.
       *
@@ -1008,7 +1007,7 @@ object sapMInputMod {
     def getShowClearIcon(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Gets current value of property {@link #getShowSuggestion showSuggestion}.
       *
@@ -1024,7 +1023,7 @@ object sapMInputMod {
     def getShowSuggestion(): Boolean = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Gets current value of property {@link #getShowTableSuggestionValueHelp showTableSuggestionValueHelp}.
       *
@@ -1041,7 +1040,7 @@ object sapMInputMod {
     def getShowTableSuggestionValueHelp(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getShowValueHelp showValueHelp}.
       *
@@ -1055,7 +1054,7 @@ object sapMInputMod {
     def getShowValueHelp(): Boolean = js.native
     
     /**
-      * @SINCE 1.21.2
+      * @since 1.21.2
       *
       * Gets current value of property {@link #getStartSuggestion startSuggestion}.
       *
@@ -1072,7 +1071,7 @@ object sapMInputMod {
     def getStartSuggestion(): int = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets content of aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -1082,7 +1081,7 @@ object sapMInputMod {
     def getSuggestionColumns(): js.Array[typings.openui5.sapMColumnMod.default] = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets the item with the given key from the aggregation `suggestionItems`. **Note:** If duplicate keys
       * exist, the first item matching the key is returned.
@@ -1095,7 +1094,7 @@ object sapMInputMod {
     sKey: String): typings.openui5.sapUiCoreItemMod.default = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Gets content of aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -1117,7 +1116,7 @@ object sapMInputMod {
     def getSuggestionItems(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getSuggestionRowValidator suggestionRowValidator}.
       *
@@ -1128,7 +1127,7 @@ object sapMInputMod {
     def getSuggestionRowValidator(): js.Function = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets content of aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -1142,7 +1141,7 @@ object sapMInputMod {
       ] = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getTextFormatMode textFormatMode}.
       *
@@ -1155,7 +1154,7 @@ object sapMInputMod {
     def getTextFormatMode(): InputTextFormatMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputTextFormatMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getTextFormatter textFormatter}.
       *
@@ -1184,7 +1183,7 @@ object sapMInputMod {
     def getType(): InputType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Gets current value of property {@link #getValueHelpIconSrc valueHelpIconSrc}.
       *
@@ -1197,7 +1196,7 @@ object sapMInputMod {
     def getValueHelpIconSrc(): URI = js.native
     
     /**
-      * @SINCE 1.21.0
+      * @since 1.21.0
       *
       * Gets current value of property {@link #getValueHelpOnly valueHelpOnly}.
       *
@@ -1212,7 +1211,7 @@ object sapMInputMod {
     def getValueHelpOnly(): Boolean = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Gets current value of property {@link #getValueLiveUpdate valueLiveUpdate}.
       *
@@ -1231,7 +1230,7 @@ object sapMInputMod {
     def getValueLiveUpdate(): Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Checks for the provided `sap.m.Column` in the aggregation {@link #getSuggestionColumns suggestionColumns}.
       * and returns its index if found or -1 otherwise.
@@ -1246,7 +1245,7 @@ object sapMInputMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getSuggestionItems suggestionItems}.
       * and returns its index if found or -1 otherwise.
@@ -1261,7 +1260,7 @@ object sapMInputMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Checks for the provided `sap.m.ColumnListItem` in the aggregation {@link #getSuggestionRows suggestionRows}.
       * and returns its index if found or -1 otherwise.
@@ -1282,7 +1281,7 @@ object sapMInputMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Inserts a suggestionColumn into the aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -1318,7 +1317,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Inserts a suggestionRow into the aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -1350,7 +1349,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Indicates whether the control should use `sap.m.Dialog` or not.
       *
@@ -1359,7 +1358,7 @@ object sapMInputMod {
     def isMobileDevice(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the supported openers for the valueHelpOnly. In the context of the Input, all targets are valid.
       *
@@ -1377,7 +1376,7 @@ object sapMInputMod {
     def onBeforeRendering(): Unit = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Event handler for browsers' `change` event.
       */
@@ -1435,7 +1434,7 @@ object sapMInputMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Finalizes autocomplete and fires liveChange event eventually.
       */
@@ -1450,7 +1449,7 @@ object sapMInputMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes all the controls from the aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -1468,7 +1467,7 @@ object sapMInputMod {
     def removeAllSuggestionItems(): Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes all the controls from the aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -1485,7 +1484,7 @@ object sapMInputMod {
       */
     vSuggestionColumn: String): typings.openui5.sapMColumnMod.default | Null = js.native
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes a suggestionColumn from the aggregation {@link #getSuggestionColumns suggestionColumns}.
       *
@@ -1517,7 +1516,7 @@ object sapMInputMod {
       */
     vSuggestionRow: String): typings.openui5.sapMColumnListItemMod.default | typings.openui5.sapMGroupHeaderListItemMod.default | Null = js.native
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes a suggestionRow from the aggregation {@link #getSuggestionRows suggestionRows}.
       *
@@ -1541,7 +1540,7 @@ object sapMInputMod {
     ): typings.openui5.sapMColumnListItemMod.default | typings.openui5.sapMGroupHeaderListItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets a new value for property {@link #getAutocomplete autocomplete}.
       *
@@ -1561,7 +1560,7 @@ object sapMInputMod {
     bAutocomplete: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the inner input DOM value.
       */
@@ -1607,7 +1606,7 @@ object sapMInputMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets a new value for property {@link #getEnableSuggestionsHighlighting enableSuggestionsHighlighting}.
       *
@@ -1628,7 +1627,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEnableTableAutoPopinMode enableTableAutoPopinMode}.
       *
@@ -1669,7 +1668,7 @@ object sapMInputMod {
     sFieldWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Sets a custom filter function for suggestions. The default is to check whether the first item text begins
       * with the typed value. For one and two-value suggestions this callback function will operate on sap.ui.core.Item
@@ -1729,7 +1728,7 @@ object sapMInputMod {
     iMaxLength: int): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Sets a new value for property {@link #getMaxSuggestionWidth maxSuggestionWidth}.
       *
@@ -1749,7 +1748,7 @@ object sapMInputMod {
     sMaxSuggestionWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Sets a custom result filter function for tabular suggestions to select the text that is passed to the
       * input field. Default is to check whether the first cell with a "text" property begins with the typed
@@ -1771,7 +1770,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets the `selectedItem` association.
       *
@@ -1788,7 +1787,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets the `selectedKey` property.
       *
@@ -1805,7 +1804,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets the `selectedRow` association. Default value is `null`.
       *
@@ -1821,7 +1820,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Sets a new value for property {@link #getShowClearIcon showClearIcon}.
       *
@@ -1841,7 +1840,7 @@ object sapMInputMod {
     bShowClearIcon: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Sets a new value for property {@link #getShowSuggestion showSuggestion}.
       *
@@ -1863,7 +1862,7 @@ object sapMInputMod {
     bShowSuggestion: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Sets a new value for property {@link #getShowTableSuggestionValueHelp showTableSuggestionValueHelp}.
       *
@@ -1888,7 +1887,7 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getShowValueHelp showValueHelp}.
       *
@@ -1908,7 +1907,7 @@ object sapMInputMod {
     bShowValueHelp: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.21.2
+      * @since 1.21.2
       *
       * Sets a new value for property {@link #getStartSuggestion startSuggestion}.
       *
@@ -1931,7 +1930,7 @@ object sapMInputMod {
     iStartSuggestion: int): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getSuggestionRowValidator suggestionRowValidator}.
       *
@@ -1948,7 +1947,7 @@ object sapMInputMod {
     fnSuggestionRowValidator: js.Function): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getTextFormatMode textFormatMode}.
       *
@@ -1973,7 +1972,7 @@ object sapMInputMod {
     sTextFormatMode: InputTextFormatMode): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getTextFormatter textFormatter}.
       *
@@ -2020,7 +2019,7 @@ object sapMInputMod {
     sType: InputType): this.type = js.native
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Sets a new value for property {@link #getValueHelpIconSrc valueHelpIconSrc}.
       *
@@ -2039,7 +2038,7 @@ object sapMInputMod {
     sValueHelpIconSrc: URI): this.type = js.native
     
     /**
-      * @SINCE 1.21.0
+      * @since 1.21.0
       *
       * Sets a new value for property {@link #getValueHelpOnly valueHelpOnly}.
       *
@@ -2060,7 +2059,7 @@ object sapMInputMod {
     bValueHelpOnly: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Sets a new value for property {@link #getValueLiveUpdate valueLiveUpdate}.
       *
@@ -2085,7 +2084,7 @@ object sapMInputMod {
     bValueLiveUpdate: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * A helper function calculating if the SuggestionsPopover should be opened on mobile.
       *
@@ -2097,7 +2096,7 @@ object sapMInputMod {
     oEvent: Event): Boolean = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Opens the `SuggestionsPopover` with the available items. **Note:** When `valueHelpOnly` property is set
       * to true, the `SuggestionsPopover` will not open.
@@ -2109,7 +2108,7 @@ object sapMInputMod {
     fnFilter: js.Function): Unit = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Unbinds aggregation {@link #getSuggestionColumns suggestionColumns} from model data.
       *
@@ -2118,7 +2117,7 @@ object sapMInputMod {
     def unbindSuggestionColumns(): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Unbinds aggregation {@link #getSuggestionRows suggestionRows} from model data.
       *
@@ -2127,7 +2126,7 @@ object sapMInputMod {
     def unbindSuggestionRows(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates the inner input field.
       */
@@ -2141,12 +2140,178 @@ object sapMInputMod {
     def updateSuggestionItems(): this.type = js.native
   }
   
+  trait Input$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Indicates that ESC key triggered the event. **Note:** This parameter will not be sent unless the ESC
+      * key is pressed.
+      */
+    var escPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The value of the input before pressing ESC key. **Note:** This parameter will not be sent unless the
+      * ESC key is pressed.
+      */
+    var previousValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The current value of the input, after a live change event.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object Input$LiveChangeEventParameters {
+    
+    inline def apply(): Input$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEscPressed(value: Boolean): Self = StObject.set(x, "escPressed", value.asInstanceOf[js.Any])
+      
+      inline def setEscPressedUndefined: Self = StObject.set(x, "escPressed", js.undefined)
+      
+      inline def setPreviousValue(value: String): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Input$SubmitEventParameters extends StObject {
+    
+    /**
+      * The new value of the input.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object Input$SubmitEventParameters {
+    
+    inline def apply(): Input$SubmitEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$SubmitEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$SubmitEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Input$SuggestEventParameters extends StObject {
+    
+    /**
+      * The current value which has been typed in the input.
+      */
+    var suggestValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The suggestion list is passed to this event for convenience. If you use list-based or tabular suggestions,
+      * fill the suggestionList with the items you want to suggest. Otherwise, directly add the suggestions to
+      * the "suggestionItems" aggregation of the input control.
+      */
+    var suggestionColumns: js.UndefOr[typings.openui5.sapMListBaseMod.default] = js.undefined
+  }
+  object Input$SuggestEventParameters {
+    
+    inline def apply(): Input$SuggestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$SuggestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$SuggestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSuggestValue(value: String): Self = StObject.set(x, "suggestValue", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestValueUndefined: Self = StObject.set(x, "suggestValue", js.undefined)
+      
+      inline def setSuggestionColumns(value: typings.openui5.sapMListBaseMod.default): Self = StObject.set(x, "suggestionColumns", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestionColumnsUndefined: Self = StObject.set(x, "suggestionColumns", js.undefined)
+    }
+  }
+  
+  trait Input$SuggestionItemSelectedEventParameters extends StObject {
+    
+    /**
+      * This is the item selected in the suggestion popup for one and two-value suggestions. For tabular suggestions,
+      * this value will not be set.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+    
+    /**
+      * This is the row selected in the tabular suggestion popup represented as a ColumnListItem. For one and
+      * two-value suggestions, this value will not be set.
+      *
+      * **Note:** The row result function to select a result value for the string is already executed at this
+      * time. To pick different value for the input field or to do follow up steps after the item has been selected.
+      */
+    var selectedRow: js.UndefOr[typings.openui5.sapMColumnListItemMod.default] = js.undefined
+  }
+  object Input$SuggestionItemSelectedEventParameters {
+    
+    inline def apply(): Input$SuggestionItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$SuggestionItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$SuggestionItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+      
+      inline def setSelectedRow(value: typings.openui5.sapMColumnListItemMod.default): Self = StObject.set(x, "selectedRow", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedRowUndefined: Self = StObject.set(x, "selectedRow", js.undefined)
+    }
+  }
+  
+  trait Input$ValueHelpRequestEventParameters extends StObject {
+    
+    /**
+      * The event parameter is set to true, when the button at the end of the suggestion table is clicked, otherwise
+      * false. It can be used to determine whether the "value help" trigger or the "show all items" trigger has
+      * been pressed.
+      */
+    var fromSuggestions: js.UndefOr[Boolean] = js.undefined
+  }
+  object Input$ValueHelpRequestEventParameters {
+    
+    inline def apply(): Input$ValueHelpRequestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Input$ValueHelpRequestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input$ValueHelpRequestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFromSuggestions(value: Boolean): Self = StObject.set(x, "fromSuggestions", value.asInstanceOf[js.Any])
+      
+      inline def setFromSuggestionsUndefined: Self = StObject.set(x, "fromSuggestions", js.undefined)
+    }
+  }
+  
+  type InputLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[Input$LiveChangeEventParameters]
+  
+  type InputLiveChangeEventParameters = Input$LiveChangeEventParameters
+  
   trait InputSettings
     extends StObject
        with InputBaseSettings {
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Specifies whether autocomplete is enabled. Works only if "showSuggestion" property is set to true. **Note:**
       * The autocomplete feature is disabled on Android devices due to a OS specific issue.
@@ -2170,7 +2335,7 @@ object sapMInputMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Specifies whether the suggestions highlighting is enabled.
       */
@@ -2179,7 +2344,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Enables the `autoPopinMode` of `sap.m.Table`, when the input has tabular suggestions. **Note:** The `autoPopinMode`
       * overwrites the `demandPopin` and the `minScreenWidth` properties of the `sap.m.Column`. When setting,
@@ -2211,7 +2376,12 @@ object sapMInputMod {
       *
       * **Note:** Browsing autocomplete suggestions does not fire the event.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Maximum number of characters. Value '0' means the feature is switched off. This parameter is not compatible
@@ -2222,7 +2392,7 @@ object sapMInputMod {
     var maxLength: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * If set, the value of this parameter will control the horizontal size of the suggestion list to display
       * more data. This allows suggestion lists to be wider than the input field if there is enough space available.
@@ -2234,14 +2404,14 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets or retrieves the selected item from the suggestionItems.
       */
     var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Defines the key of the selected item.
       *
@@ -2250,14 +2420,14 @@ object sapMInputMod {
     var selectedKey: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets or retrieves the selected row from the suggestionRows.
       */
     var selectedRow: js.UndefOr[typings.openui5.sapMColumnListItemMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the liveChange
       * event.
@@ -2267,7 +2437,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * If this is set to true, suggest event is fired when user types in the input. Changing the suggestItems
       * aggregation in suggest event listener will show suggestions within a popup. When runs on phone, input
@@ -2279,7 +2449,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * For tabular suggestions, this flag will show/hide the button at the end of the suggestion table that
       * triggers the event "valueHelpRequest" when pressed. The default value is true.
@@ -2292,7 +2462,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * If set to true, a value help indicator will be displayed inside the control. When clicked the event "valueHelpRequest"
       * will be fired.
@@ -2302,7 +2472,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.21.2
+      * @since 1.21.2
       *
       * Minimum length of the entered text in input before suggest event is fired. The default value is 1 which
       * means the suggest event is fired after user types in input.
@@ -2313,28 +2483,38 @@ object sapMInputMod {
     var startSuggestion: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * This event is fired when user presses the Enter key on the input.
       *
       * **Notes:**
       * 	 - The event is fired independent of whether there was a change before or not. If a change was performed,
-      * 			the event is fired after the change event.
+      *     the event is fired after the change event.
       * 	 - The event is also fired when an item of the select list is selected via Enter.
       * 	 - The event is only fired on an input which allows text input (`editable`, `enabled` and not `valueHelpOnly`).
       */
-    var submit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var submit: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SubmitEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * This event is fired when user types in the input and showSuggestion is set to true. Changing the suggestItems
       * aggregation will show the suggestions within a popup.
       */
-    var suggest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * The suggestionColumns and suggestionRows are for tabular input suggestions. This aggregation allows for
       * binding the table columns; for more details see the aggregation "suggestionRows".
@@ -2344,15 +2524,20 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * This event is fired when suggestionItem shown in suggestion popup are selected. This event is only fired
       * when showSuggestion is set to true and there are suggestionItems shown in the suggestion popup.
       */
-    var suggestionItemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggestionItemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Defines the items displayed in the suggestion popup. Changing this aggregation (by calling `addSuggestionItem`,
       * `insertSuggestionItem`, `removeSuggestionItem`, `removeAllSuggestionItems`, or `destroySuggestionItems`)
@@ -2374,7 +2559,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Defines the validation callback function called when a suggestion row gets selected.
       */
@@ -2383,7 +2568,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * The suggestionColumns and suggestionRows are for tabular input suggestions. This aggregation allows for
       * binding the table cells. The items of this aggregation are to be bound directly or to set in the suggest
@@ -2397,7 +2582,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Defines the display text format mode.
       */
@@ -2406,7 +2591,7 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Defines the display text formatter function.
       */
@@ -2429,14 +2614,14 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Set custom value help icon.
       */
     var valueHelpIconSrc: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.21.0
+      * @since 1.21.0
       *
       * If set to true, direct text input is disabled and the control will trigger the event "valueHelpRequest"
       * for all user interactions. The properties "showValueHelp", "editable", and "enabled" must be set to true,
@@ -2447,14 +2632,19 @@ object sapMInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * When the value help indicator is clicked, this event will be fired.
       */
-    var valueHelpRequest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var valueHelpRequest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$ValueHelpRequestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Indicates when the value gets updated with the user changes: At each keystroke (true) or first when the
       * user presses enter or tabs out (false).
@@ -2506,7 +2696,9 @@ object sapMInputMod {
       
       inline def setFilterSuggestsUndefined: Self = StObject.set(x, "filterSuggests", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       
@@ -2550,11 +2742,13 @@ object sapMInputMod {
       
       inline def setStartSuggestionUndefined: Self = StObject.set(x, "startSuggestion", js.undefined)
       
-      inline def setSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+      inline def setSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SubmitEventParameters] => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
       
       inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
-      inline def setSuggest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
+      inline def setSuggest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestEventParameters] => Unit
+      ): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
       
       inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
@@ -2566,7 +2760,9 @@ object sapMInputMod {
       
       inline def setSuggestionColumnsVarargs(value: typings.openui5.sapMColumnMod.default*): Self = StObject.set(x, "suggestionColumns", js.Array(value*))
       
-      inline def setSuggestionItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggestionItemSelected", js.Any.fromFunction1(value))
+      inline def setSuggestionItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "suggestionItemSelected", js.Any.fromFunction1(value))
       
       inline def setSuggestionItemSelectedUndefined: Self = StObject.set(x, "suggestionItemSelected", js.undefined)
       
@@ -2618,7 +2814,9 @@ object sapMInputMod {
       
       inline def setValueHelpOnlyUndefined: Self = StObject.set(x, "valueHelpOnly", js.undefined)
       
-      inline def setValueHelpRequest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "valueHelpRequest", js.Any.fromFunction1(value))
+      inline def setValueHelpRequest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Input$ValueHelpRequestEventParameters] => Unit
+      ): Self = StObject.set(x, "valueHelpRequest", js.Any.fromFunction1(value))
       
       inline def setValueHelpRequestUndefined: Self = StObject.set(x, "valueHelpRequest", js.undefined)
       
@@ -2627,4 +2825,20 @@ object sapMInputMod {
       inline def setValueLiveUpdateUndefined: Self = StObject.set(x, "valueLiveUpdate", js.undefined)
     }
   }
+  
+  type InputSubmitEvent = typings.openui5.sapUiBaseEventMod.default[Input$SubmitEventParameters]
+  
+  type InputSubmitEventParameters = Input$SubmitEventParameters
+  
+  type InputSuggestEvent = typings.openui5.sapUiBaseEventMod.default[Input$SuggestEventParameters]
+  
+  type InputSuggestEventParameters = Input$SuggestEventParameters
+  
+  type InputSuggestionItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Input$SuggestionItemSelectedEventParameters]
+  
+  type InputSuggestionItemSelectedEventParameters = Input$SuggestionItemSelectedEventParameters
+  
+  type InputValueHelpRequestEvent = typings.openui5.sapUiBaseEventMod.default[Input$ValueHelpRequestEventParameters]
+  
+  type InputValueHelpRequestEventParameters = Input$ValueHelpRequestEventParameters
 }

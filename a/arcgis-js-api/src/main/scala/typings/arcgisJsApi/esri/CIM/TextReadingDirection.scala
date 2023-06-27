@@ -11,16 +11,16 @@ sealed trait TextReadingDirection extends StObject
 object TextReadingDirection extends StObject {
   
   /**
-    * Text is drawn from left-to-right.
-    */
+  			 * Text is drawn from left-to-right.
+  			 */
   @js.native
   sealed trait LTR
     extends StObject
        with TextReadingDirection
   
   /**
-    * Text is drawn from right-to-left.
-    */
+  			 * Text is drawn from right-to-left.
+  			 */
   @js.native
   sealed trait RTL
     extends StObject

@@ -25,7 +25,7 @@ object mod {
   @JSImport("vectorious", "NDIter")
   @js.native
   open class NDIter protected ()
-    extends typings.vectorious.distIteratorMod.NDIter {
+    extends typings.vectorious.distIteratorsMod.NDIter {
     def this(x: ArrayLike[Any]) = this()
     def this(x: NDArray) = this()
   }
@@ -33,13 +33,9 @@ object mod {
   @JSImport("vectorious", "NDMultiIter")
   @js.native
   open class NDMultiIter protected ()
-    extends typings.vectorious.distIteratorMod.NDMultiIter {
+    extends typings.vectorious.distIteratorsMod.NDMultiIter {
     def this(args: (NDArray | ArrayLike[Any])*) = this()
   }
-  
-  @JSImport("vectorious", "V_MAXDIMS")
-  @js.native
-  val V_MAXDIMS: /* 32 */ Double = js.native
   
   inline def abs(x: ArrayLike[Any]): typings.vectorious.distCoreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.distCoreMod.NDArray]
   inline def abs(x: typings.vectorious.distCoreMod.NDArray): typings.vectorious.distCoreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.distCoreMod.NDArray]

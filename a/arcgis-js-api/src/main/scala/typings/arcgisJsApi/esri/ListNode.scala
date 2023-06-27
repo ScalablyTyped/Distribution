@@ -10,10 +10,10 @@ trait ListNode
      with SQLNode {
   
   /**
-    * SQL expression for the list.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#ListNode)
-    */
+  		 * SQL expression for the list.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#ListNode)
+  		 */
   var expr: SQLNode
   
   var `type`: `expression-list`

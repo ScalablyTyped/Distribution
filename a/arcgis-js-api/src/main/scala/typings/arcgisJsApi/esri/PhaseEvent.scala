@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhaseEvent extends StObject {
   
   /**
-    * The elapsed time since the last animation frame.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
-    */
+  		 * The elapsed time since the last animation frame.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
+  		 */
   var deltaTime: Double
   
   /**
-    * The amount of time spent within the current animation frame.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
-    */
+  		 * The amount of time spent within the current animation frame.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
+  		 */
   var elapsedFrameTime: Double
   
   /**
-    * The absolute time at the start of the current animation frame.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
-    */
+  		 * The absolute time at the start of the current animation frame.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
+  		 */
   var time: Double
 }
 object PhaseEvent {

@@ -23,82 +23,82 @@ open class NamedTraceConfiguration ()
   def this(properties: Any) = this()
   
   /**
-    * The date/time when the trace configuration has been added to the utility network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creationDate)
-    */
+  		 * The date/time when the trace configuration has been added to the utility network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creationDate)
+  		 */
   /* CompleteClass */
   var creationDate: js.Date = js.native
   
   /**
-    * The portal user who created the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creator)
-    */
+  		 * The portal user who created the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creator)
+  		 */
   /* CompleteClass */
   var creator: String = js.native
   
   /**
-    * Short description of what kind of trace this trace configuration performs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#description)
-    */
+  		 * Short description of what kind of trace this trace configuration performs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#description)
+  		 */
   /* CompleteClass */
   var description: String = js.native
   
   /**
-    * The `globalId` (UUID) uniquely identifies a trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#globalId)
-    */
+  		 * The `globalId` (UUID) uniquely identifies a trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#globalId)
+  		 */
   /* CompleteClass */
   var globalId: String = js.native
   
   /**
-    * The minimum number of starting points required to perform a trace with this particular trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#minStartingPoints)
-    */
+  		 * The minimum number of starting points required to perform a trace with this particular trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#minStartingPoints)
+  		 */
   /* CompleteClass */
   var minStartingPoints: none_ | one | many = js.native
   
   /**
-    * The result types of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#resultTypes)
-    */
+  		 * The result types of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#resultTypes)
+  		 */
   /* CompleteClass */
   var resultTypes: js.Array[Any] = js.native
   
   /**
-    * Labels that help identify and search for a particular trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#tags)
-    */
+  		 * Labels that help identify and search for a particular trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#tags)
+  		 */
   /* CompleteClass */
   var tags: js.Array[String] = js.native
   
   /**
-    * The title or the name of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#title)
-    */
+  		 * The title or the name of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#title)
+  		 */
   /* CompleteClass */
   var title: String = js.native
   
   /**
-    * The full definition of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
-    */
+  		 * The full definition of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
+  		 */
   /* CompleteClass */
   var traceConfiguration: typings.arcgisJsApi.esri.TraceConfiguration | typings.arcgisJsApi.esri.UNTraceConfiguration = js.native
   
   /**
-    * The trace type defined in this trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceType)
-    */
+  		 * The trace type defined in this trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceType)
+  		 */
   /* CompleteClass */
   var traceType: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation = js.native
 }

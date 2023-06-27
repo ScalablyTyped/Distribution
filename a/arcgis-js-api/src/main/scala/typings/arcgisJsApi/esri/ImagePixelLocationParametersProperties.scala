@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImagePixelLocationParametersProperties extends StObject {
   
   /**
-    * An array of [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) that defines pixel locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePixelLocationParameters.html#point)
-    */
+  		 * An array of [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) that defines pixel locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePixelLocationParameters.html#point)
+  		 */
   var point: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
-    * The rasterId of a raster catalog in the image service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePixelLocationParameters.html#rasterId)
-    */
+  		 * The rasterId of a raster catalog in the image service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePixelLocationParameters.html#rasterId)
+  		 */
   var rasterId: js.UndefOr[Double] = js.undefined
 }
 object ImagePixelLocationParametersProperties {

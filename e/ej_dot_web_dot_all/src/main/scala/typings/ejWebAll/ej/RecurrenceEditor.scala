@@ -96,50 +96,50 @@ object RecurrenceEditor {
     var dateFormat: js.UndefOr[String] = js.undefined
     
     /** When set to true, renders the Recurrence Editor options from Right-to-Left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, enables the spin button of numeric textboxes within the Recurrence Editor.
-      * @Default {true}
+      * @default {true}
       */
     var enableSpinners: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the starting day of the week.
-      * @Default {null}
+      * @default {null}
       */
     var firstDayOfWeek: js.UndefOr[String] = js.undefined
     
     /** Defines the collection of recurrence frequencies within Recurrence Editor such as Never, Daily, Weekly, Monthly, Yearly and Every Weekday.
-      * @Default {[never, daily, weekly, monthly, yearly, everyweekday]}
+      * @default {[never, daily, weekly, monthly, yearly, everyweekday]}
       */
     var frequencies: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the specific culture to the Recurrence Editor.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum date limit to display on the datepickers used within the Recurrence Editor. Setting maxDate with specific date value disallows the datepickers within the
       * Recurrence Editor to navigate beyond that date.
-      * @Default {new Date(2099, 12, 31)}
+      * @default {new Date(2099, 12, 31)}
       */
     var maxDate: js.UndefOr[Any] = js.undefined
     
     /** Sets the minimum date limit to display on the datepickers defined within the Recurrence Editor. Setting minDate with specific date value disallows the datepickers within
       * Recurrence Editor to navigate beyond that date.
-      * @Default {new Date(1900, 01, 01)}
+      * @default {new Date(1900, 01, 01)}
       */
     var minDate: js.UndefOr[Any] = js.undefined
     
     /** Sets the active/current repeat type(frequency) on Recurrence Editor based on the index value provided. For example, setting the value 1 will initially set the repeat type as Daily
       * and display its related options.
-      * @Default {0}
+      * @default {0}
       */
     var selectedRecurrenceType: js.UndefOr[Double] = js.undefined
     
     /** Sets the start date of the recurrence. The Recurrence Editor initially displays the current date as its start date.
-      * @Default {new Date()}
+      * @default {new Date()}
       */
     var startDate: js.UndefOr[Any] = js.undefined
   }

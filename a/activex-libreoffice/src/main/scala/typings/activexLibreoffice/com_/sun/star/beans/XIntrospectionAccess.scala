@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * com.sun.star.container.XNameAccess} interface or {@link XPropertySet} .
   *
   * The {@link XMaterialHolder} interface has to be supported to give access to the inspected object.
-  * @@see XPropertySet
-  * @@see com::sun::star::beans::XExactName
+  * @see XPropertySet
+  * @see com::sun::star::beans::XExactName
   */
 trait XIntrospectionAccess
   extends StObject

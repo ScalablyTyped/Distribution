@@ -7,23 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An object that handles html sanitization.
   */
+@js.native
 trait ISanitizer extends StObject {
   
   /**
-    * Sanitize an HTML string.
+    * @returns Whether to replace URLs by HTML anchors.
     */
-  def sanitize(dirty: String): String
-}
-object ISanitizer {
+  var getAutolink: js.UndefOr[js.Function0[Boolean]] = js.native
   
-  inline def apply(sanitize: String => String): ISanitizer = {
-    val __obj = js.Dynamic.literal(sanitize = js.Any.fromFunction1(sanitize))
-    __obj.asInstanceOf[ISanitizer]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: ISanitizer] (val x: Self) extends AnyVal {
-    
-    inline def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
-  }
+  /**
+    * Sanitize an HTML string.
+    *
+    * @param dirty - The dirty text.
+    * @param options - The optional sanitization options.
+    *
+    * @returns The sanitized string.
+    */
+  def sanitize(dirty: String): String = js.native
+  def sanitize(dirty: String, options: ISanitizerOptions): String = js.native
 }

@@ -13,6 +13,13 @@ trait TypeChecker extends StObject {
   
   def getAmbientModules(): js.Array[Symbol] = js.native
   
+  /**
+    * Gets the intrinsic `any` type. There are multiple types that act as `any` used internally in the compiler,
+    * so the type returned by this function should not be used in equality checks to determine if another type
+    * is `any`. Instead, use `type.flags & TypeFlags.Any`.
+    */
+  def getAnyType(): Type = js.native
+  
   def getApparentType(`type`: Type): Type = js.native
   
   def getAugmentedPropertiesOfType(`type`: Type): js.Array[Symbol] = js.native
@@ -23,6 +30,10 @@ trait TypeChecker extends StObject {
   
   def getBaseTypes(`type`: InterfaceType): js.Array[BaseType] = js.native
   
+  def getBigIntType(): Type = js.native
+  
+  def getBooleanType(): Type = js.native
+  
   def getConstantValue(node: ElementAccessExpression): js.UndefOr[java.lang.String | Double] = js.native
   def getConstantValue(node: EnumMember): js.UndefOr[java.lang.String | Double] = js.native
   def getConstantValue(node: PropertyAccessExpression): js.UndefOr[java.lang.String | Double] = js.native
@@ -32,6 +43,8 @@ trait TypeChecker extends StObject {
   def getDeclaredTypeOfSymbol(symbol: Symbol): Type = js.native
   
   def getDefaultFromTypeParameter(`type`: Type): js.UndefOr[Type] = js.native
+  
+  def getESSymbolType(): Type = js.native
   
   def getExportSpecifierLocalTargetSymbol(location: ExportSpecifier): js.UndefOr[Symbol] = js.native
   def getExportSpecifierLocalTargetSymbol(location: Identifier): js.UndefOr[Symbol] = js.native
@@ -48,6 +61,8 @@ trait TypeChecker extends StObject {
   
   def getExportsOfModule(moduleSymbol: Symbol): js.Array[Symbol] = js.native
   
+  def getFalseType(): Type = js.native
+  
   def getFullyQualifiedName(symbol: Symbol): java.lang.String = js.native
   
   /** Follow a *single* alias to get the immediately aliased symbol. */
@@ -63,9 +78,27 @@ trait TypeChecker extends StObject {
   
   def getJsxIntrinsicTagNamesAt(location: Node): js.Array[Symbol] = js.native
   
+  /**
+    * Gets the intrinsic `never` type. There are multiple types that act as `never` used internally in the compiler,
+    * so the type returned by this function should not be used in equality checks to determine if another type
+    * is `never`. Instead, use `type.flags & TypeFlags.Never`.
+    */
+  def getNeverType(): Type = js.native
+  
   def getNonNullableType(`type`: Type): Type = js.native
   
+  /**
+    * Gets the intrinsic `null` type. There are multiple types that act as `null` used internally in the compiler,
+    * so the type returned by this function should not be used in equality checks to determine if another type
+    * is `null`. Instead, use `type.flags & TypeFlags.Null`.
+    */
+  def getNullType(): Type = js.native
+  
   def getNullableType(`type`: Type, flags: TypeFlags): Type = js.native
+  
+  def getNumberLiteralType(value: Double): NumberLiteralType = js.native
+  
+  def getNumberType(): Type = js.native
   
   def getPrivateIdentifierPropertyOfType(leftType: Type, name: java.lang.String, location: Node): js.UndefOr[Symbol] = js.native
   
@@ -100,6 +133,10 @@ trait TypeChecker extends StObject {
   
   def getSignaturesOfType(`type`: Type, kind: SignatureKind): js.Array[Signature] = js.native
   
+  def getStringLiteralType(value: java.lang.String): StringLiteralType = js.native
+  
+  def getStringType(): Type = js.native
+  
   def getSymbolAtLocation(node: Node): js.UndefOr[Symbol] = js.native
   
   def getSymbolOfExpando(node: Node, allowDeclaration: Boolean): js.UndefOr[Symbol] = js.native
@@ -107,6 +144,8 @@ trait TypeChecker extends StObject {
   def getSymbolsInScope(location: Node, meaning: SymbolFlags): js.Array[Symbol] = js.native
   
   def getSymbolsOfParameterPropertyDeclaration(parameter: ParameterDeclaration, parameterName: java.lang.String): js.Array[Symbol] = js.native
+  
+  def getTrueType(): Type = js.native
   
   def getTypeArguments(`type`: TypeReference): js.Array[Type] = js.native
   
@@ -121,6 +160,15 @@ trait TypeChecker extends StObject {
   def getTypeOfSymbolAtLocation(symbol: Symbol, node: Node): Type = js.native
   
   def getTypePredicateOfSignature(signature: Signature): js.UndefOr[TypePredicate] = js.native
+  
+  /**
+    * Gets the intrinsic `undefined` type. There are multiple types that act as `undefined` used internally in the compiler
+    * depending on compiler options, so the type returned by this function should not be used in equality checks to determine
+    * if another type is `undefined`. Instead, use `type.flags & TypeFlags.Undefined`.
+    */
+  def getUndefinedType(): Type = js.native
+  
+  def getVoidType(): Type = js.native
   
   def getWidenedType(`type`: Type): Type = js.native
   

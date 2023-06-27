@@ -9,7 +9,6 @@ import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.URI
-import typings.openui5.sapUiCorePopupMod.Dock
 import typings.std.Object
 import typings.std.PropertyKey
 import typings.std.Record
@@ -189,7 +188,7 @@ object sapMMenuButtonMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.94.0
+      * @since 1.94.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeMenuOpen beforeMenuOpen} event of this
       * `sap.m.MenuButton`.
@@ -205,20 +204,20 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMenuOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuButton` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.94.0
+      * @since 1.94.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeMenuOpen beforeMenuOpen} event of this
       * `sap.m.MenuButton`.
@@ -239,7 +238,7 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMenuOpen(
       /**
@@ -250,7 +249,7 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuButton` itself
       */
@@ -272,13 +271,13 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDefaultAction(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuButton` itself
       */
@@ -304,7 +303,7 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDefaultAction(
       /**
@@ -315,7 +314,7 @@ object sapMMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuButton` itself
       */
@@ -330,7 +329,7 @@ object sapMMenuButtonMod {
     def destroyMenu(): this.type = js.native
     
     /**
-      * @SINCE 1.94.0
+      * @since 1.94.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:beforeMenuOpen beforeMenuOpen} event of this
       * `sap.m.MenuButton`.
@@ -343,13 +342,13 @@ object sapMMenuButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeMenuOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -368,13 +367,13 @@ object sapMMenuButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDefaultAction(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -382,8 +381,8 @@ object sapMMenuButtonMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.94.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.94.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeMenuOpen beforeMenuOpen} to attached listeners.
       *
@@ -396,7 +395,7 @@ object sapMMenuButtonMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:defaultAction defaultAction} to attached listeners.
       *
@@ -420,14 +419,12 @@ object sapMMenuButtonMod {
     def getActiveIcon(): URI = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -490,7 +487,7 @@ object sapMMenuButtonMod {
     def getMenu(): typings.openui5.sapMMenuMod.default = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Gets current value of property {@link #getMenuPosition menuPosition}.
       *
@@ -504,7 +501,7 @@ object sapMMenuButtonMod {
       *
       * @returns Value of property `menuPosition`
       */
-    def getMenuPosition(): Dock = js.native
+    def getMenuPosition(): Any = js.native
     
     /**
       * Gets current value of property {@link #getText text}.
@@ -720,7 +717,7 @@ object sapMMenuButtonMod {
     oMenu: typings.openui5.sapMMenuMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Sets a new value for property {@link #getMenuPosition menuPosition}.
       *
@@ -737,10 +734,12 @@ object sapMMenuButtonMod {
       * @returns Reference to `this` in order to allow method chaining
       */
     def setMenuPosition(): this.type = js.native
-    def setMenuPosition(/**
+    def setMenuPosition(
+      /**
       * New value for property `menuPosition`
       */
-    sMenuPosition: Dock): this.type = js.native
+    sMenuPosition: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
+    ): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getText text}.
@@ -843,6 +842,18 @@ object sapMMenuButtonMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait MenuButton$BeforeMenuOpenEventParameters extends StObject
+  
+  trait MenuButton$DefaultActionEventParameters extends StObject
+  
+  type MenuButtonBeforeMenuOpenEvent = typings.openui5.sapUiBaseEventMod.default[MenuButton$BeforeMenuOpenEventParameters]
+  
+  type MenuButtonBeforeMenuOpenEventParameters = MenuButton$BeforeMenuOpenEventParameters
+  
+  type MenuButtonDefaultActionEvent = typings.openui5.sapUiBaseEventMod.default[MenuButton$DefaultActionEventParameters]
+  
+  type MenuButtonDefaultActionEventParameters = MenuButton$DefaultActionEventParameters
+  
   trait MenuButtonSettings
     extends StObject
        with ControlSettings {
@@ -865,11 +876,13 @@ object sapMMenuButtonMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.94.0
+      * @since 1.94.0
       *
       * Fired before menu opening when the `buttonMode` is set to `Split` and the user presses the arrow button.
       */
-    var beforeMenuOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeMenuOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the `MenuButton` is set to `Regular` or `Split` mode.
@@ -882,7 +895,9 @@ object sapMMenuButtonMod {
       * Fired when the `buttonMode` is set to `Split` and the user presses the main button unless `useDefaultActionOnly`
       * is set to `false` and another action from the menu has been selected previously.
       */
-    var defaultAction: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var defaultAction: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Boolean property to enable the control (default is `true`).
@@ -918,7 +933,7 @@ object sapMMenuButtonMod {
     var menu: js.UndefOr[typings.openui5.sapMMenuMod.default] = js.undefined
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Specifies the position of the popup menu with enumerated options. By default, the control opens the menu
       * at its bottom left side.
@@ -926,7 +941,9 @@ object sapMMenuButtonMod {
       * **Note:** In the case that the menu has no space to show itself in the view port of the current window
       * it tries to open itself to the inverted direction.
       */
-    var menuPosition: js.UndefOr[Dock | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
+    var menuPosition: js.UndefOr[
+        (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any) | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
     
     /**
       * Defines the text of the `MenuButton`.
@@ -994,7 +1011,7 @@ object sapMMenuButtonMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeMenuOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeMenuOpen", js.Any.fromFunction1(value))
+      inline def setBeforeMenuOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeMenuOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeMenuOpenUndefined: Self = StObject.set(x, "beforeMenuOpen", js.undefined)
       
@@ -1004,7 +1021,7 @@ object sapMMenuButtonMod {
       
       inline def setButtonModeUndefined: Self = StObject.set(x, "buttonMode", js.undefined)
       
-      inline def setDefaultAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "defaultAction", js.Any.fromFunction1(value))
+      inline def setDefaultAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "defaultAction", js.Any.fromFunction1(value))
       
       inline def setDefaultActionUndefined: Self = StObject.set(x, "defaultAction", js.undefined)
       
@@ -1022,7 +1039,9 @@ object sapMMenuButtonMod {
       
       inline def setMenu(value: typings.openui5.sapMMenuMod.default): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      inline def setMenuPosition(value: Dock | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(
+        value: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any) | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
       inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       

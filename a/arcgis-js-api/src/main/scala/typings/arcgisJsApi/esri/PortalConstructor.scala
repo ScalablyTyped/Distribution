@@ -13,9 +13,9 @@ trait PortalConstructor
      with Instantiable1[/* properties */ PortalProperties, Portal] {
   
   /**
-    * A new `Portal` instance is created the first time this method is called.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#getDefault)
-    */
+  		 * A new `Portal` instance is created the first time this method is called.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#getDefault)
+  		 */
   def getDefault(): Portal = js.native
 }

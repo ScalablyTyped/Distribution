@@ -36,7 +36,7 @@ object sapUiBaseObjectMod {
       * The static info can at least contain the following entries:
       * 	 - baseType: {string} fully qualified name of a base class or empty
       * 	 - publicMethods: {string} an array of method names that will be visible in the interface proxy returned
-      * 			by {@link #getInterface}
+      *     by {@link #getInterface}
       *
       * @returns the created metadata object
       */
@@ -66,21 +66,21 @@ object sapUiBaseObjectMod {
     ): typings.openui5.sapUiBaseMetadataMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("defineClass")(sClassName.asInstanceOf[js.Any], oStaticInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @SINCE 1.3.1
+      * @since 1.3.1
       *
       * Creates a subclass of class sap.ui.base.Object with name `sClassName` and enriches it with the information
       * contained in `oClassInfo`.
       *
       * `oClassInfo` might contain three kinds of information:
       * 	 - `metadata:` an (optional) object literal with metadata about the class like implemented interfaces,
-      * 			see {@link sap.ui.base.Object.MetadataOptions MetadataOptions} for details. The information in the object
-      * 			literal will be wrapped by an instance of {@link sap.ui.base.Metadata Metadata}. Subclasses of sap.ui.base.Object
-      * 			can enrich the set of supported metadata (e.g. see {@link sap.ui.core.Element.extend}).
+      *     see {@link sap.ui.base.Object.MetadataOptions MetadataOptions} for details. The information in the object
+      *     literal will be wrapped by an instance of {@link sap.ui.base.Metadata Metadata}. Subclasses of sap.ui.base.Object
+      *     can enrich the set of supported metadata (e.g. see {@link sap.ui.core.Element.extend}).
       *
       *
       * 	 - `constructor:` a function that serves as a constructor function for the new class. If no constructor
-      * 			function is given, the framework creates a default implementation that delegates all its arguments to
-      * 			the constructor function of the base class.
+      *     function is given, the framework creates a default implementation that delegates all its arguments to
+      *     the constructor function of the base class.
       *
       * any-other-name: any other property in the `oClassInfo` is copied into the prototype object
       * of the newly created class. Callers can thereby add methods or properties to all instances of the class.
@@ -153,7 +153,7 @@ object sapUiBaseObjectMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks whether the given object is an instance of the named type. This function is a short-hand convenience
       * for {@link sap.ui.base.Object#isA}.
@@ -166,7 +166,7 @@ object sapUiBaseObjectMod {
       /**
       * Object which will be checked whether it is an instance of the given type
       */
-    oObject: js.Object,
+    oObject: Any,
       /**
       * Type or types to check for
       */
@@ -176,7 +176,7 @@ object sapUiBaseObjectMod {
       /**
       * Object which will be checked whether it is an instance of the given type
       */
-    oObject: js.Object,
+    oObject: Any,
       /**
       * Type or types to check for
       */
@@ -209,7 +209,7 @@ object sapUiBaseObjectMod {
     /**
       * Returns the metadata for the class that this object belongs to.
       *
-      * This method is only defined when metadata has been declared by using {@link sap.ui.base.Object.defineClass}
+      * This method is only defined when metadata has been declared by using {@link sap.ui.base.Object.defineClass }
       * or {@link sap.ui.base.Object.extend}.
       *
       * @returns metadata for the class of the object
@@ -217,7 +217,7 @@ object sapUiBaseObjectMod {
     def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks whether this object is an instance of the named type.
       *

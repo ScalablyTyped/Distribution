@@ -11,24 +11,24 @@ sealed trait BalloonCalloutStyle extends StObject
 object BalloonCalloutStyle extends StObject {
   
   /**
-    * Oval style.
-    */
+  			 * Oval style.
+  			 */
   @js.native
   sealed trait Oval
     extends StObject
        with BalloonCalloutStyle
   
   /**
-    * Rectangle style.
-    */
+  			 * Rectangle style.
+  			 */
   @js.native
   sealed trait Rectangle
     extends StObject
        with BalloonCalloutStyle
   
   /**
-    * Rounded rectangle style.
-    */
+  			 * Rounded rectangle style.
+  			 */
   @js.native
   sealed trait RoundedRectangle
     extends StObject

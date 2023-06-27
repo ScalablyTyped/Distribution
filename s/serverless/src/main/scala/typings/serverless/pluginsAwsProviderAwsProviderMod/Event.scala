@@ -30,6 +30,8 @@ trait Event extends StObject {
   
   var iot: js.UndefOr[Iot] = js.undefined
   
+  var kafka: js.UndefOr[Kafka] = js.undefined
+  
   var msk: js.UndefOr[Msk] = js.undefined
   
   var rabbitmq: js.UndefOr[RabbitMq] = js.undefined
@@ -103,6 +105,10 @@ object Event {
     inline def setIot(value: Iot): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
     
     inline def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
+    
+    inline def setKafka(value: Kafka): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
+    
+    inline def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
     
     inline def setMsk(value: Msk): Self = StObject.set(x, "msk", value.asInstanceOf[js.Any])
     

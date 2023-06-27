@@ -9,19 +9,19 @@ trait BaseElevationLayerProperties
      with LayerProperties {
   
   /**
-    * The spatial reference of the layer.
-    *
-    * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The tiling scheme information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#tileInfo)
-    */
+  		 * The tiling scheme information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#tileInfo)
+  		 */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 object BaseElevationLayerProperties {

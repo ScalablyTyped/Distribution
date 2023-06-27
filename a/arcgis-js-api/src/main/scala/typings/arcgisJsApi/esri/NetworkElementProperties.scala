@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkElementProperties extends StObject {
   
   /**
-    * The asset group code that this network element represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#assetGroupCode)
-    */
+  		 * The asset group code that this network element represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#assetGroupCode)
+  		 */
   var assetGroupCode: js.UndefOr[Double] = js.undefined
   
   /**
-    * The asset type code discriminator this network element represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#assetTypeCode)
-    */
+  		 * The asset type code discriminator this network element represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#assetTypeCode)
+  		 */
   var assetTypeCode: js.UndefOr[Double] = js.undefined
   
   /**
-    * The globalId of the feature the network element belongs to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#globalId)
-    */
+  		 * The globalId of the feature the network element belongs to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#globalId)
+  		 */
   var globalId: js.UndefOr[String] = js.undefined
   
   /**
-    * The network source Id of the feature the network element belongs to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#networkSourceId)
-    */
+  		 * The network source Id of the feature the network element belongs to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#networkSourceId)
+  		 */
   var networkSourceId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The objectId of the feature the network element belongs to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#objectId)
-    */
+  		 * The objectId of the feature the network element belongs to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#objectId)
+  		 */
   var objectId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Applicable to edge elements, represents a double value (0 to 1) where this edge element starts.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#positionFrom)
-    */
+  		 * Applicable to edge elements, represents a double value (0 to 1) where this edge element starts.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#positionFrom)
+  		 */
   var positionFrom: js.UndefOr[Double] = js.undefined
   
   /**
-    * Applicable to edge elements, represents a double value (0 to 1) where this edge element ends.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#positionTo)
-    */
+  		 * Applicable to edge elements, represents a double value (0 to 1) where this edge element ends.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#positionTo)
+  		 */
   var positionTo: js.UndefOr[Double] = js.undefined
   
   /**
-    * The terminal id defined at the network element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#terminalId)
-    */
+  		 * The terminal id defined at the network element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-NetworkElement.html#terminalId)
+  		 */
   var terminalId: js.UndefOr[Double] = js.undefined
 }
 object NetworkElementProperties {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-inspector" : "6.0.1"
+      "react-inspector" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-inspector" : "6.0.1"
+      "react-inspector" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

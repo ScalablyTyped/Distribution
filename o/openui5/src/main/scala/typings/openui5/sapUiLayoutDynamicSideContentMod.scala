@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CurrentBreakpoint
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -153,7 +152,7 @@ object sapUiLayoutDynamicSideContentMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Attaches event handler `fnFunction` to the {@link #event:breakpointChanged breakpointChanged} event of
       * this `sap.ui.layout.DynamicSideContent`.
@@ -169,20 +168,20 @@ object sapUiLayoutDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit]
     ): this.type = js.native
     def attachBreakpointChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.DynamicSideContent` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Attaches event handler `fnFunction` to the {@link #event:breakpointChanged breakpointChanged} event of
       * this `sap.ui.layout.DynamicSideContent`.
@@ -203,7 +202,7 @@ object sapUiLayoutDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit]
     ): this.type = js.native
     def attachBreakpointChanged(
       /**
@@ -214,7 +213,7 @@ object sapUiLayoutDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.DynamicSideContent` itself
       */
@@ -236,7 +235,7 @@ object sapUiLayoutDynamicSideContentMod {
     def destroySideContent(): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Detaches event handler `fnFunction` from the {@link #event:breakpointChanged breakpointChanged} event
       * of this `sap.ui.layout.DynamicSideContent`.
@@ -249,13 +248,13 @@ object sapUiLayoutDynamicSideContentMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit]
     ): this.type = js.native
     def detachBreakpointChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentBreakpointChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -263,18 +262,20 @@ object sapUiLayoutDynamicSideContentMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.32
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:breakpointChanged breakpointChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBreakpointChanged(): this.type = js.native
-    def fireBreakpointChanged(/**
+    def fireBreakpointChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CurrentBreakpoint): this.type = js.native
+    mParameters: DynamicSideContent$BreakpointChangedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getContainerQuery containerQuery}.
@@ -319,7 +320,7 @@ object sapUiLayoutDynamicSideContentMod {
     def getMainContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Returns a scroll helper object used to handle scrolling.
       *
@@ -376,7 +377,7 @@ object sapUiLayoutDynamicSideContentMod {
     def getSideContentFallDown(): SideContentFallDown | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SideContentFallDown * / any */ String) = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getSideContentPosition sideContentPosition}.
       *
@@ -620,7 +621,7 @@ object sapUiLayoutDynamicSideContentMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getSideContentPosition sideContentPosition}.
       *
@@ -682,16 +683,45 @@ object sapUiLayoutDynamicSideContentMod {
     def toggle(): this.type = js.native
   }
   
+  trait DynamicSideContent$BreakpointChangedEventParameters extends StObject {
+    
+    var currentBreakpoint: js.UndefOr[String] = js.undefined
+  }
+  object DynamicSideContent$BreakpointChangedEventParameters {
+    
+    inline def apply(): DynamicSideContent$BreakpointChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DynamicSideContent$BreakpointChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicSideContent$BreakpointChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentBreakpoint(value: String): Self = StObject.set(x, "currentBreakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentBreakpointUndefined: Self = StObject.set(x, "currentBreakpoint", js.undefined)
+    }
+  }
+  
+  type DynamicSideContentBreakpointChangedEvent = typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$BreakpointChangedEventParameters]
+  
+  type DynamicSideContentBreakpointChangedEventParameters = DynamicSideContent$BreakpointChangedEventParameters
+  
   trait DynamicSideContentSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Fires when the current breakpoint has been changed.
       */
-    var breakpointChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var breakpointChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$BreakpointChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to TRUE, then not the media Query (device screen size) but the size of the container, surrounding
@@ -749,7 +779,7 @@ object sapUiLayoutDynamicSideContentMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Determines whether the side content is on the left or on the right side of the main content.
       */
@@ -774,7 +804,9 @@ object sapUiLayoutDynamicSideContentMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DynamicSideContentSettings] (val x: Self) extends AnyVal {
       
-      inline def setBreakpointChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "breakpointChanged", js.Any.fromFunction1(value))
+      inline def setBreakpointChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$BreakpointChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "breakpointChanged", js.Any.fromFunction1(value))
       
       inline def setBreakpointChangedUndefined: Self = StObject.set(x, "breakpointChanged", js.undefined)
       

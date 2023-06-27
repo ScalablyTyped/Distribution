@@ -16,8 +16,8 @@ object sapUiFlApplyApiControlVariantApplyAPIMod extends Shortcut {
   val default: ControlVariantApplyAPI = js.native
   
   /**
-    * @SINCE 1.67
-    * @EXPERIMENTAL (since 1.67)
+    * @since 1.67
+    * @experimental (since 1.67)
     *
     * Provides an API for applications to work with control variants. See also {@link sap.ui.fl.variants.VariantManagement}.
     */

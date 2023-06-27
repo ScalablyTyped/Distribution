@@ -12,10 +12,13 @@ trait DocumentOrShadowRoot extends StObject {
     * For the purposes of this API, when a child browsing context is focused, its container is focused in the parent browsing context. For example, if the user moves the focus to a text control in an iframe, the iframe is the element returned by the activeElement API in the iframe's node document.
     *
     * Similarly, when the focused element is in a different node tree than documentOrShadowRoot, the element returned will be the host that's located in the same node tree as documentOrShadowRoot if documentOrShadowRoot is a shadow-including inclusive ancestor of the focused element, and null if not.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/activeElement)
     */
   /* standard dom */
   val activeElement: Element | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/adoptedStyleSheets) */
   /* standard dom */
   var adoptedStyleSheets: js.Array[CSSStyleSheet]
   
@@ -30,20 +33,31 @@ trait DocumentOrShadowRoot extends StObject {
   /* standard dom */
   def elementsFromPoint(x: Double, y: Double): js.Array[Element]
   
-  /** Returns document's fullscreen element. */
+  /**
+    * Returns document's fullscreen element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreenElement)
+    */
   /* standard dom */
   val fullscreenElement: Element | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getAnimations) */
   /* standard dom */
   def getAnimations(): js.Array[Animation]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureElement) */
   /* standard dom */
   val pictureInPictureElement: Element | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pointerLockElement) */
   /* standard dom */
   val pointerLockElement: Element | Null
   
-  /** Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document. */
+  /**
+    * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/styleSheets)
+    */
   /* standard dom */
   val styleSheets: StyleSheetList
 }

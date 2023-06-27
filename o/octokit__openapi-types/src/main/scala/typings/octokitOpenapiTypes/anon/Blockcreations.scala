@@ -11,16 +11,16 @@ trait Blockcreations extends StObject {
   var allow_force_pushes: js.UndefOr[EnabledBoolean] = js.undefined
   
   /** @description Whether users can pull changes from upstream when the branch is locked. Set to `true` to allow fork syncing. Set to `false` to prevent fork syncing. */
-  var allow_fork_syncing: js.UndefOr[`438`] = js.undefined
+  var allow_fork_syncing: js.UndefOr[`516`] = js.undefined
   
   var block_creations: js.UndefOr[EnabledBoolean] = js.undefined
   
   var enforce_admins: js.UndefOr[EnabledUrl] = js.undefined
   
   /** @description Whether to set the branch as read-only. If this is true, users will not be able to push to the branch. */
-  var lock_branch: js.UndefOr[`438`] = js.undefined
+  var lock_branch: js.UndefOr[`516`] = js.undefined
   
-  var required_conversation_resolution: js.UndefOr[`438`] = js.undefined
+  var required_conversation_resolution: js.UndefOr[`516`] = js.undefined
   
   var required_linear_history: js.UndefOr[EnabledBoolean] = js.undefined
   
@@ -53,7 +53,7 @@ object Blockcreations {
     
     inline def setAllow_force_pushesUndefined: Self = StObject.set(x, "allow_force_pushes", js.undefined)
     
-    inline def setAllow_fork_syncing(value: `438`): Self = StObject.set(x, "allow_fork_syncing", value.asInstanceOf[js.Any])
+    inline def setAllow_fork_syncing(value: `516`): Self = StObject.set(x, "allow_fork_syncing", value.asInstanceOf[js.Any])
     
     inline def setAllow_fork_syncingUndefined: Self = StObject.set(x, "allow_fork_syncing", js.undefined)
     
@@ -65,11 +65,11 @@ object Blockcreations {
     
     inline def setEnforce_adminsUndefined: Self = StObject.set(x, "enforce_admins", js.undefined)
     
-    inline def setLock_branch(value: `438`): Self = StObject.set(x, "lock_branch", value.asInstanceOf[js.Any])
+    inline def setLock_branch(value: `516`): Self = StObject.set(x, "lock_branch", value.asInstanceOf[js.Any])
     
     inline def setLock_branchUndefined: Self = StObject.set(x, "lock_branch", js.undefined)
     
-    inline def setRequired_conversation_resolution(value: `438`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
+    inline def setRequired_conversation_resolution(value: `516`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
     
     inline def setRequired_conversation_resolutionUndefined: Self = StObject.set(x, "required_conversation_resolution", js.undefined)
     

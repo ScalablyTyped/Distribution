@@ -158,7 +158,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def subscribe(
       /**
@@ -178,7 +178,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wants to be notified when the event occurs (`this` context within the handler function).
       * If it is not specified, the handler function is called in the context of the event bus.
@@ -202,7 +202,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def subscribe(
       /**
@@ -216,7 +216,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wants to be notified when the event occurs (`this` context within the handler function).
       * If it is not specified, the handler function is called in the context of the event bus.
@@ -225,7 +225,7 @@ object sapUiCoreEventBusMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Attaches an event handler, called one time only, to the event with the given identifier on the given
       * event channel.
@@ -253,7 +253,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def subscribeOnce(
       /**
@@ -273,7 +273,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wants to be notified when the event occurs (`this` context within the handler function).
       * If it is not specified, the handler function is called in the context of the event bus.
@@ -281,7 +281,7 @@ object sapUiCoreEventBusMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Attaches an event handler, called one time only, to the event with the given identifier on the given
       * event channel.
@@ -303,7 +303,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def subscribeOnce(
       /**
@@ -317,7 +317,7 @@ object sapUiCoreEventBusMod {
       * by the event is provided as the third argument (if present). Handlers must not change the content of
       * this map.
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wants to be notified when the event occurs (`this` context within the handler function).
       * If it is not specified, the handler function is called in the context of the event bus.
@@ -345,7 +345,7 @@ object sapUiCoreEventBusMod {
       /**
       * The handler function to unsubscribe from the event
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def unsubscribe(
       /**
@@ -359,7 +359,7 @@ object sapUiCoreEventBusMod {
       /**
       * The handler function to unsubscribe from the event
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wanted to be notified when the event occurred
       */
@@ -381,7 +381,7 @@ object sapUiCoreEventBusMod {
       /**
       * The handler function to unsubscribe from the event
       */
-    fnFunction: js.Function
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit]
     ): this.type = js.native
     def unsubscribe(
       /**
@@ -391,7 +391,7 @@ object sapUiCoreEventBusMod {
       /**
       * The handler function to unsubscribe from the event
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function3[/* p1 */ String, /* p2 */ String, /* p3 */ js.Object, Unit],
       /**
       * The object that wanted to be notified when the event occurred
       */

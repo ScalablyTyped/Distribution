@@ -15,61 +15,61 @@ trait WMTSLayerProperties
      with BlendLayerProperties {
   
   /**
-    * Currently active sublayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#activeLayer)
-    */
+  		 * Currently active sublayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#activeLayer)
+  		 */
   var activeLayer: js.UndefOr[WMTSSublayerProperties] = js.undefined
   
   /**
-    * Copyright information for the WMTS service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#copyright)
-    */
+  		 * Copyright information for the WMTS service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Use this to append different custom parameters to the WMTS tile requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customLayerParameters)
-    */
+  		 * Use this to append different custom parameters to the WMTS tile requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customLayerParameters)
+  		 */
   var customLayerParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * Use this to append custom parameters to all WMTS requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customParameters)
-    */
+  		 * Use this to append custom parameters to all WMTS requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#customParameters)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * The service mode for the WMTS layer.
-    *
-    * @default RESTful
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#serviceMode)
-    */
+  		 * The service mode for the WMTS layer.
+  		 *
+  		 * @default RESTful
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#serviceMode)
+  		 */
   var serviceMode: js.UndefOr[RESTful | KVP] = js.undefined
   
   /**
-    * A collection of [WMTSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#sublayers)
-    */
+  		 * A collection of [WMTSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#sublayers)
+  		 */
   var sublayers: js.UndefOr[CollectionProperties[WMTSSublayerProperties]] = js.undefined
   
   /**
-    * The URL of the WMTS service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#url)
-    */
+  		 * The URL of the WMTS service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Version of the [WMTS specification](http://www.opengeospatial.org/standards/wmts) to use.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#version)
-    */
+  		 * Version of the [WMTS specification](http://www.opengeospatial.org/standards/wmts) to use.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html#version)
+  		 */
   var version: js.UndefOr[String] = js.undefined
 }
 object WMTSLayerProperties {

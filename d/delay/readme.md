@@ -1,7 +1,7 @@
 
 # Scala.js typings for delay
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Delay a promise a specified amount of time

@@ -1,13 +1,9 @@
 package typings.yaml.anon
 
-import typings.yaml.distDocDirectivesMod.Directives
 import typings.yaml.distErrorsMod.YAMLError
 import typings.yaml.distErrorsMod.YAMLWarning
 import typings.yaml.distNodesNodeMod.NodeType
 import typings.yaml.distNodesPairMod.Pair
-import typings.yaml.distNodesScalarMod.Scalar
-import typings.yaml.distNodesYamlmapMod.YAMLMap
-import typings.yaml.distNodesYamlseqMod.YAMLSeq
 import typings.yaml.distOptionsMod.CreateNodeOptions
 import typings.yaml.distOptionsMod.DocumentOptions
 import typings.yaml.distOptionsMod.ParseOptions
@@ -21,7 +17,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<yaml.yaml/dist/doc/Document.Document<yaml.yaml/dist/nodes/Node.Node<unknown>>> */
+/* Inlined std.Readonly<yaml.yaml/dist/doc/Document.Document<yaml.yaml/dist/nodes/Node.Node<unknown>, boolean>> */
 @js.native
 trait ReadonlyDocumentNodeunkno extends StObject {
   
@@ -33,14 +29,17 @@ trait ReadonlyDocumentNodeunkno extends StObject {
   
   val commentBefore: js.UndefOr[String | Null] = js.native
   
-  val contents: js.UndefOr[typings.yaml.distNodesNodeMod.Node[Any] | Null] = js.native
+  val contents: /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? yaml.yaml/dist/nodes/Node.Node<unknown> | null : yaml.yaml/dist/nodes/Node.Node<unknown> */ js.Any = js.native
   
-  def createAlias(node: Scalar[Any]): typings.yaml.distNodesAliasMod.Alias = js.native
-  def createAlias(node: Scalar[Any], name: String): typings.yaml.distNodesAliasMod.Alias = js.native
-  def createAlias(node: YAMLMap[Any, Any]): typings.yaml.distNodesAliasMod.Alias = js.native
-  def createAlias(node: YAMLMap[Any, Any], name: String): typings.yaml.distNodesAliasMod.Alias = js.native
-  def createAlias(node: YAMLSeq[Any]): typings.yaml.distNodesAliasMod.Alias = js.native
-  def createAlias(node: YAMLSeq[Any], name: String): typings.yaml.distNodesAliasMod.Alias = js.native
+  @JSName("createAlias")
+  def createAlias_true(
+    node: /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? yaml.yaml/dist/nodes/Scalar.Scalar<unknown> | yaml.yaml/dist/nodes/YAMLMap.YAMLMap<unknown, unknown> | yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<unknown> : yaml.yaml/dist/nodes/Node.Node<unknown> */ js.Any
+  ): typings.yaml.distNodesAliasMod.Alias = js.native
+  @JSName("createAlias")
+  def createAlias_true(
+    node: /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? yaml.yaml/dist/nodes/Scalar.Scalar<unknown> | yaml.yaml/dist/nodes/YAMLMap.YAMLMap<unknown, unknown> | yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<unknown> : yaml.yaml/dist/nodes/Node.Node<unknown> */ js.Any,
+    name: String
+  ): typings.yaml.distNodesAliasMod.Alias = js.native
   
   def createNode[T](value: T): NodeType[T] = js.native
   def createNode[T](value: T, options: CreateNodeOptions): NodeType[T] = js.native
@@ -53,17 +52,17 @@ trait ReadonlyDocumentNodeunkno extends StObject {
   def deleteIn(): Boolean = js.native
   def deleteIn(path: js.Iterable[Any]): Boolean = js.native
   
-  val directives: js.UndefOr[Directives] = js.native
+  val directives: /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? yaml.yaml/dist/doc/directives.Directives | undefined : yaml.yaml/dist/doc/directives.Directives */ js.Any = js.native
   
   val errors: js.Array[YAMLError] = js.native
   
-  def get(key: Any): Any = js.native
-  def get(key: Any, keepScalar: Boolean): Any = js.native
+  def get(key: Any): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
+  def get(key: Any, keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
   
-  def getIn(): Any = js.native
-  def getIn(path: js.Iterable[Any]): Any = js.native
-  def getIn(path: js.Iterable[Any], keepScalar: Boolean): Any = js.native
-  def getIn(path: Null, keepScalar: Boolean): Any = js.native
+  def getIn(): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
+  def getIn(path: js.Iterable[Any]): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
+  def getIn(path: js.Iterable[Any], keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
+  def getIn(path: Null, keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: boolean extends true ? unknown : any */ js.Any = js.native
   
   def has(key: Any): Boolean = js.native
   

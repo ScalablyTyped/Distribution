@@ -11,26 +11,26 @@ trait CIMGeometricEffectDonut
      with CIMGeometricEffect {
   
   /**
-    * The option for the way the symbol handles complex geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
-    */
+  		 * The option for the way the symbol handles complex geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
+  		 */
   var option: Fast | Accurate
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectDonut
   
   /**
-    * The distance from the edge of the polygon that the fill symbol is to be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
-    */
+  		 * The distance from the edge of the polygon that the fill symbol is to be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectDonut)
+  		 */
   var width: Double
 }
 object CIMGeometricEffectDonut {

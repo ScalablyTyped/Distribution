@@ -6,21 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `437` extends StObject {
   
-  /** @description The URL of the ruleset */
-  var href: js.UndefOr[String] = js.undefined
+  var path: EnvironmentnameRepositoryid
 }
 object `437` {
   
-  inline def apply(): `437` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: EnvironmentnameRepositoryid): `437` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`437`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `437`] (val x: Self) extends AnyVal {
     
-    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-    
-    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setPath(value: EnvironmentnameRepositoryid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

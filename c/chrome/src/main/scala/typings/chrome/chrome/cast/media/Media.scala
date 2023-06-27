@@ -17,7 +17,7 @@ trait Media extends StObject {
   
   var currentItemId: Double
   
-  /** @deprecated. Use getEstimatedTime instead */
+  /** @deprecated Use getEstimatedTime instead */
   var currentTime: Double
   
   var customData: js.Object

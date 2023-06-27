@@ -36,6 +36,7 @@ import typings.babelImportUtil.babelImportUtilStrings.VerticallineVerticalline
 import typings.babelImportUtil.babelImportUtilStrings.^
 import typings.babelImportUtil.babelImportUtilStrings.`--`
 import typings.babelImportUtil.babelImportUtilStrings.`-_`
+import typings.babelImportUtil.babelImportUtilStrings.`await using`
 import typings.babelImportUtil.babelImportUtilStrings.`object`
 import typings.babelImportUtil.babelImportUtilStrings.`throw`
 import typings.babelImportUtil.babelImportUtilStrings.`using`
@@ -5948,7 +5949,7 @@ object srcMod {
     @JSName("valueToNode")
     def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = js.native
     
-    def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
+    def variableDeclaration(kind: `var` | let | const | `using` | (`await using`), declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
     
     def variableDeclarator(id: LVal): VariableDeclarator_ = js.native
     def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = js.native

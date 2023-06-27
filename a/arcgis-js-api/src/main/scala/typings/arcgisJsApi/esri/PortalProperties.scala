@@ -18,450 +18,464 @@ trait PortalProperties
      with LoadableProperties {
   
   /**
-    * The access level of the organization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#access)
-    */
+  		 * The access level of the organization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#access)
+  		 */
   var access: js.UndefOr[public | `private`] = js.undefined
   
   /**
-    * When `true`, access to the organization's Portal resources must occur over SSL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#allSSL)
-    */
+  		 * When `true`, access to the organization's Portal resources must occur over SSL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#allSSL)
+  		 */
   var allSSL: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The authentication mode for handling authentication when the user attempts to access a secure resource.
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authMode)
-    */
+  		 * The authentication mode for handling authentication when the user attempts to access a secure resource.
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authMode)
+  		 */
   var authMode: js.UndefOr[anonymous | auto | immediate] = js.undefined
   
   /**
-    * Array of trusted servers to send credentials to when making Cross-Origin Resource Sharing (CORS) requests to access services secured with web-tier authentication.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authorizedCrossOriginDomains)
-    */
+  		 * Array of trusted servers to send credentials to when making Cross-Origin Resource Sharing (CORS) requests to access services secured with web-tier authentication.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#authorizedCrossOriginDomains)
+  		 */
   var authorizedCrossOriginDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is not true.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery)
-    */
+  		 * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is not true.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery)
+  		 */
   var basemapGalleryGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * The Bing key to use for web maps using Bing Maps.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#bingKey)
-    */
+  		 * The query that defines the 3D basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery3D)
+  		 */
+  var basemapGalleryGroupQuery3D: js.UndefOr[String] = js.undefined
+  
+  /**
+  		 * The Bing key to use for web maps using Bing Maps.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#bingKey)
+  		 */
   var bingKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether an organization can list applications in the marketplace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListApps)
-    */
+  		 * Indicates whether an organization can list applications in the marketplace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListApps)
+  		 */
   var canListApps: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether an organization can list data services in the marketplace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListData)
-    */
+  		 * Indicates whether an organization can list data services in the marketplace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListData)
+  		 */
   var canListData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether an organization can list pre-provisioned items in the marketplace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListPreProvisionedItems)
-    */
+  		 * Indicates whether an organization can list pre-provisioned items in the marketplace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListPreProvisionedItems)
+  		 */
   var canListPreProvisionedItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether an organization can provision direct purchases in the marketplace without customer request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canProvisionDirectPurchase)
-    */
+  		 * Indicates whether an organization can provision direct purchases in the marketplace without customer request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canProvisionDirectPurchase)
+  		 */
   var canProvisionDirectPurchase: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the organization's public items, groups and users are included in search queries.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSearchPublic)
-    */
+  		 * When `true`, the organization's public items, groups and users are included in search queries.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSearchPublic)
+  		 */
   var canSearchPublic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Bing key can be shared to the public and is returned as part of a portal's description call (`/sharing/rest/portals/<orgid>`).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canShareBingPublic)
-    */
+  		 * The Bing key can be shared to the public and is returned as part of a portal's description call (`/sharing/rest/portals/<orgid>`).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canShareBingPublic)
+  		 */
   var canShareBingPublic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, members of the organization can share resources outside the organization.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSharePublic)
-    */
+  		 * When `true`, members of the organization can share resources outside the organization.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSharePublic)
+  		 */
   var canSharePublic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the ArcGIS sign in.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInArcGIS)
-    */
+  		 * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the ArcGIS sign in.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInArcGIS)
+  		 */
   var canSignInArcGIS: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the enterprise sign in.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInIDP)
-    */
+  		 * Indicates whether to allow an organization with an enterprise IDP configured to be able to turn on or off the enterprise sign in.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canSignInIDP)
+  		 */
   var canSignInIDP: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The query that identifies the group containing the color sets used for rendering in the map viewer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#colorSetsGroupQuery)
-    */
+  		 * The query that identifies the group containing the color sets used for rendering in the map viewer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#colorSetsGroupQuery)
+  		 */
   var colorSetsGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether to allow the organization to disable commenting.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#commentsEnabled)
-    */
+  		 * Indicates whether to allow the organization to disable commenting.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#commentsEnabled)
+  		 */
   var commentsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Date the organization was created.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#created)
-    */
+  		 * Date the organization was created.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#created)
+  		 */
   var created: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The default locale (language and country) information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#culture)
-    */
+  		 * The default locale (language and country) information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#culture)
+  		 */
   var culture: js.UndefOr[String] = js.undefined
   
   /**
-    * The custom base URL for the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#customBaseUrl)
-    */
+  		 * The custom base URL for the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#customBaseUrl)
+  		 */
   var customBaseUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * The default basemap to use for the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultBasemap)
-    */
+  		 * The default basemap to use for the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultBasemap)
+  		 */
   var defaultBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
-    * The default developer basemap to use for the portal when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultDevBasemap)
-    */
+  		 * The default developer basemap to use for the portal when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultDevBasemap)
+  		 */
   var defaultDevBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
-    * The default extent to use for the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultExtent)
-    */
+  		 * The default extent to use for the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultExtent)
+  		 */
   var defaultExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The default vector basemap to use for the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultVectorBasemap)
-    */
+  		 * The default vector basemap to use for the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultVectorBasemap)
+  		 */
   var defaultVectorBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
-    * A description of the organization/portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#description)
-    */
+  		 * A description of the organization/portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#devBasemapGalleryGroupQuery)
-    */
+  		 * The query that defines the basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when an [apiKey](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#apiKey) is defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#devBasemapGalleryGroupQuery)
+  		 */
   var devBasemapGalleryGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * Boolean value indicating whether to opt-in to the [Esri User Experience Improvement (EUEI) program](https://doc.arcgis.com/en/arcgis-online/reference/faq.htm#ESRI_QUESTIONANSWER_AED97F28DCD84F7682623C2FA9E5CE49).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
-    */
+  		 * Boolean value indicating whether to opt-in to the [Esri User Experience Improvement (EUEI) program](https://doc.arcgis.com/en/arcgis-online/reference/faq.htm#ESRI_QUESTIONANSWER_AED97F28DCD84F7682623C2FA9E5CE49).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#eueiEnabled)
+  		 */
   var eueiEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The featured groups for the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredGroups)
-    */
+  		 * The featured groups for the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredGroups)
+  		 */
   var featuredGroups: js.UndefOr[js.Array[PortalFeaturedGroups]] = js.undefined
   
   /**
-    * The query that defines the featured group.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredItemsGroupQuery)
-    */
+  		 * The query that defines the featured group.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredItemsGroupQuery)
+  		 */
   var featuredItemsGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * The query that identifies the group containing features items for the gallery.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#galleryTemplatesGroupQuery)
-    */
+  		 * The query that identifies the group containing features items for the gallery.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#galleryTemplatesGroupQuery)
+  		 */
   var galleryTemplatesGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the organization has content categories.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#hasCategorySchema)
-    */
+  		 * Indicates whether the organization has content categories.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#hasCategorySchema)
+  		 */
   var hasCategorySchema: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Helper services provided by the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#helperServices)
-    */
+  		 * Helper services provided by the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#helperServices)
+  		 */
   var helperServices: js.UndefOr[Any] = js.undefined
   
   /**
-    * The group that contains featured content to be displayed on the home page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#homePageFeaturedContent)
-    */
+  		 * The group that contains featured content to be displayed on the home page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#homePageFeaturedContent)
+  		 */
   var homePageFeaturedContent: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of featured items that can be displayed on the home page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#homePageFeaturedContentCount)
-    */
+  		 * The number of featured items that can be displayed on the home page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#homePageFeaturedContentCount)
+  		 */
   var homePageFeaturedContentCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * The port used by the portal for HTTP communication.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#httpPort)
-    */
+  		 * The port used by the portal for HTTP communication.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#httpPort)
+  		 */
   var httpPort: js.UndefOr[Double] = js.undefined
   
   /**
-    * The port used by the portal for HTTPS communication.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#httpsPort)
-    */
+  		 * The port used by the portal for HTTPS communication.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#httpsPort)
+  		 */
   var httpsPort: js.UndefOr[Double] = js.undefined
   
   /**
-    * The id of the organization that owns this portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#id)
-    */
+  		 * The id of the organization that owns this portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The country code of the calling IP (ArcGIS Online only).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#ipCntryCode)
-    */
+  		 * The country code of the calling IP (ArcGIS Online only).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#ipCntryCode)
+  		 */
   var ipCntryCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the portal is on-premises.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#isPortal)
-    */
+  		 * Indicates if the portal is on-premises.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#isPortal)
+  		 */
   var isPortal: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the portal is in read-only mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#isReadOnly)
-    */
+  		 * Indicates if the portal is in read-only mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#isReadOnly)
+  		 */
   var isReadOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The query that identifies the group containing editing templates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#layerTemplatesGroupQuery)
-    */
+  		 * The query that identifies the group containing editing templates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#layerTemplatesGroupQuery)
+  		 */
   var layerTemplatesGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum validity in minutes of tokens issued for users of the organization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#maxTokenExpirationMinutes)
-    */
+  		 * The maximum validity in minutes of tokens issued for users of the organization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#maxTokenExpirationMinutes)
+  		 */
   var maxTokenExpirationMinutes: js.UndefOr[Double] = js.undefined
   
   /**
-    * Date the organization was last modified.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#modified)
-    */
+  		 * Date the organization was last modified.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#modified)
+  		 */
   var modified: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * Name of the organization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#name)
-    */
+  		 * Name of the organization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * URL of the portal host.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalHostname)
-    */
+  		 * URL of the portal host.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalHostname)
+  		 */
   var portalHostname: js.UndefOr[String] = js.undefined
   
   /**
-    * The portal mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalMode)
-    */
+  		 * The portal mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalMode)
+  		 */
   var portalMode: js.UndefOr[multitenant | singletenant] = js.undefined
   
   /**
-    * Properties specific to the organization, for example the "contact us" link.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalProperties)
-    */
+  		 * Properties specific to the organization, for example the "contact us" link.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#portalProperties)
+  		 */
   var portalProperties: js.UndefOr[Any] = js.undefined
   
   /**
-    * The region for the organization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region)
-    */
+  		 * The region for the organization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#region)
+  		 */
   var region: js.UndefOr[String] = js.undefined
   
   /**
-    * Custom HTML for the home page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#rotatorPanels)
-    */
+  		 * Custom HTML for the home page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#rotatorPanels)
+  		 */
   var rotatorPanels: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Indicates whether the description of your organization displays on the home page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#showHomePageDescription)
-    */
+  		 * Indicates whether the description of your organization displays on the home page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#showHomePageDescription)
+  		 */
   var showHomePageDescription: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The JSON used to create the property values when the `Portal` is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
-    */
+  		 * The JSON used to create the property values when the `Portal` is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#sourceJSON)
+  		 */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * Indicates whether hosted services are supported.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
-    */
+  		 * Indicates whether hosted services are supported.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#supportsHostedServices)
+  		 */
   var supportsHostedServices: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The query that defines the symbols sets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#symbolSetsGroupQuery)
-    */
+  		 * The query that defines the symbols sets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#symbolSetsGroupQuery)
+  		 */
   var symbolSetsGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * The query that defines the collection of templates that will appear in the template gallery.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#templatesGroupQuery)
-    */
+  		 * The query that defines the collection of templates that will appear in the template gallery.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#templatesGroupQuery)
+  		 */
   var templatesGroupQuery: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the units of measure for the organization's users.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#units)
-    */
+  		 * Sets the units of measure for the organization's users.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#units)
+  		 */
   var units: js.UndefOr[english | metric] = js.undefined
   
   /**
-    * The URL to the portal instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#url)
-    */
+  		 * The URL to the portal instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * The prefix selected by the organization's administrator to be used with the customBaseURL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#urlKey)
-    */
+  		 * The prefix selected by the organization's administrator to be used with the customBaseURL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#urlKey)
+  		 */
   var urlKey: js.UndefOr[String] = js.undefined
   
   /**
-    * When `true`, only simple where clauses that are compliant with SQL92 can be used when querying layers and tables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useStandardizedQuery)
-    */
+  		 * When `false`, 3D basemaps are hidden from the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html), regardless of the type of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#use3dBasemaps)
+  		 */
+  var use3dBasemaps: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * When `true`, only simple where clauses that are compliant with SQL92 can be used when querying layers and tables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useStandardizedQuery)
+  		 */
   var useStandardizedQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the organization has opted in to use the vector tile basemaps, and (a) [vectorBasemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery) should be used instead of [basemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery), while (b) [defaultVectorBasemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultVectorBasemap) should be used instead of [defaultBasemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultBasemap).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps)
-    */
+  		 * When `true`, the organization has opted in to use the vector tile basemaps, and (a) [vectorBasemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery) should be used instead of [basemapGalleryGroupQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#basemapGalleryGroupQuery), while (b) [defaultVectorBasemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultVectorBasemap) should be used instead of [defaultBasemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#defaultBasemap).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps)
+  		 */
   var useVectorBasemaps: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Information representing a registered user of the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#user)
-    */
+  		 * Information representing a registered user of the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#user)
+  		 */
   var user: js.UndefOr[PortalUserProperties] = js.undefined
   
   /**
-    * The query that defines the vector tiles basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is true.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery)
-    */
+  		 * The query that defines the vector tiles basemaps that should be displayed in the [BasemapGallery](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html) when [useVectorBasemaps](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#useVectorBasemaps) is true.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#vectorBasemapGalleryGroupQuery)
+  		 */
   var vectorBasemapGalleryGroupQuery: js.UndefOr[String] = js.undefined
 }
 object PortalProperties {
@@ -493,6 +507,10 @@ object PortalProperties {
     inline def setAuthorizedCrossOriginDomainsVarargs(value: String*): Self = StObject.set(x, "authorizedCrossOriginDomains", js.Array(value*))
     
     inline def setBasemapGalleryGroupQuery(value: String): Self = StObject.set(x, "basemapGalleryGroupQuery", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapGalleryGroupQuery3D(value: String): Self = StObject.set(x, "basemapGalleryGroupQuery3D", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapGalleryGroupQuery3DUndefined: Self = StObject.set(x, "basemapGalleryGroupQuery3D", js.undefined)
     
     inline def setBasemapGalleryGroupQueryUndefined: Self = StObject.set(x, "basemapGalleryGroupQuery", js.undefined)
     
@@ -707,6 +725,10 @@ object PortalProperties {
     inline def setUrlKeyUndefined: Self = StObject.set(x, "urlKey", js.undefined)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUse3dBasemaps(value: Boolean): Self = StObject.set(x, "use3dBasemaps", value.asInstanceOf[js.Any])
+    
+    inline def setUse3dBasemapsUndefined: Self = StObject.set(x, "use3dBasemaps", js.undefined)
     
     inline def setUseStandardizedQuery(value: Boolean): Self = StObject.set(x, "useStandardizedQuery", value.asInstanceOf[js.Any])
     

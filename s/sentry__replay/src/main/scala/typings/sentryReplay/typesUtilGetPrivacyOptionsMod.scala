@@ -18,27 +18,27 @@ object typesUtilGetPrivacyOptionsMod {
     var block: js.Array[String]
     
     var blockClass: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['blockClass'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['blockClass'] */ js.Any
       ] = js.undefined
     
     var blockSelector: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['blockSelector'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['blockSelector'] */ js.Any
       ] = js.undefined
     
     var ignore: js.Array[String]
     
     var ignoreClass: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['ignoreClass'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['ignoreClass'] */ js.Any
       ] = js.undefined
     
     var mask: js.Array[String]
     
     var maskTextClass: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['maskTextClass'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['maskTextClass'] */ js.Any
       ] = js.undefined
     
     var maskTextSelector: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['maskTextSelector'] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['maskTextSelector'] */ js.Any
       ] = js.undefined
     
     var unblock: js.Array[String]
@@ -64,13 +64,13 @@ object typesUtilGetPrivacyOptionsMod {
       inline def setBlock(value: js.Array[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setBlockClass(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['blockClass'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['blockClass'] */ js.Any
       ): Self = StObject.set(x, "blockClass", value.asInstanceOf[js.Any])
       
       inline def setBlockClassUndefined: Self = StObject.set(x, "blockClass", js.undefined)
       
       inline def setBlockSelector(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['blockSelector'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['blockSelector'] */ js.Any
       ): Self = StObject.set(x, "blockSelector", value.asInstanceOf[js.Any])
       
       inline def setBlockSelectorUndefined: Self = StObject.set(x, "blockSelector", js.undefined)
@@ -80,7 +80,7 @@ object typesUtilGetPrivacyOptionsMod {
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreClass(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['ignoreClass'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['ignoreClass'] */ js.Any
       ): Self = StObject.set(x, "ignoreClass", value.asInstanceOf[js.Any])
       
       inline def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
@@ -90,13 +90,13 @@ object typesUtilGetPrivacyOptionsMod {
       inline def setMask(value: js.Array[String]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskTextClass(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['maskTextClass'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['maskTextClass'] */ js.Any
       ): Self = StObject.set(x, "maskTextClass", value.asInstanceOf[js.Any])
       
       inline def setMaskTextClassUndefined: Self = StObject.set(x, "maskTextClass", js.undefined)
       
       inline def setMaskTextSelector(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types.RecordingOptions['maskTextSelector'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @sentry/replay.@sentry/replay/types/types/replay.RecordingOptions['maskTextSelector'] */ js.Any
       ): Self = StObject.set(x, "maskTextSelector", value.asInstanceOf[js.Any])
       
       inline def setMaskTextSelectorUndefined: Self = StObject.set(x, "maskTextSelector", js.undefined)

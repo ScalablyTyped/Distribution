@@ -195,6 +195,14 @@ open class GraphicsDevice protected () extends EventHandler {
   val maxAnisotropy: Double = js.native
   
   /**
+    * The maximum supported number of color buffers attached to a render target.
+    *
+    * @type {number}
+    * @readonly
+    */
+  val maxColorAttachments: Double = js.native
+  
+  /**
     * The maximum supported dimension of a cube map.
     *
     * @type {number}
@@ -267,6 +275,15 @@ open class GraphicsDevice protected () extends EventHandler {
     * @ignore
     */
   var renderTarget: RenderTarget = js.native
+  
+  /**
+    * A version number that is incremented every frame. This is used to detect if some object were
+    * invalidated.
+    *
+    * @type {number}
+    * @ignore
+    */
+  var renderVersion: Double = js.native
   
   /**
     * Sets the width and height of the canvas, then fires the `resizecanvas` event. Note that the
@@ -372,9 +389,9 @@ open class GraphicsDevice protected () extends EventHandler {
     * operation is disabled.
     *
     * @param {StencilParameters} [stencilFront] - The front stencil parameters. Defaults to
-    * {@link StencilParameters#DEFAULT} if not specified.
+    * {@link StencilParameters.DEFAULT} if not specified.
     * @param {StencilParameters} [stencilBack] - The back stencil parameters. Defaults to
-    * {@link StencilParameters#DEFAULT} if not specified.
+    * {@link StencilParameters.DEFAULT} if not specified.
     */
   def setStencilState(): Unit = js.native
   def setStencilState(stencilFront: Unit, stencilBack: StencilParameters): Unit = js.native
@@ -428,6 +445,15 @@ open class GraphicsDevice protected () extends EventHandler {
   val supportsInstancing: Boolean = js.native
   
   /**
+    * True if Multiple Render Targets feature is supported. This refers to the ability to render to
+    * multiple color textures with a single draw call.
+    *
+    * @readonly
+    * @type {boolean}
+    */
+  val supportsMrt: Boolean = js.native
+  
+  /**
     * True if the main framebuffer contains stencil attachment.
     *
     * @ignore
@@ -442,6 +468,14 @@ open class GraphicsDevice protected () extends EventHandler {
     * @ignore
     */
   var supportsUniformBuffers: Boolean = js.native
+  
+  /**
+    * True if the device supports volume textures.
+    *
+    * @readonly
+    * @type {boolean}
+    */
+  val supportsVolumeTextures: Boolean = js.native
   
   var sw: Double = js.native
   

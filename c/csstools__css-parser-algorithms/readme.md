@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__css-parser-algorithms
 
-Typings are for version 2.1.1
+Typings are for version 2.2.0
 
 
 

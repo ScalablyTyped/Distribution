@@ -9,18 +9,18 @@ trait CIMLineCallout
      with CIMCalloutBase {
   
   /**
-    * The gap (in points) between the point symbol and the beginning of the leader line.
-    */
+  			 * The gap (in points) between the point symbol and the beginning of the leader line.
+  			 */
   var gap: js.UndefOr[Double] = js.undefined
   
   /**
-    * The line symbol to draw leaders with.
-    */
+  			 * The line symbol to draw leaders with.
+  			 */
   var leaderLineSymbol: js.UndefOr[CIMLineSymbol] = js.undefined
   
   /**
-    * The style of line to generate when a Point leader is drawn defined by an enumeration value. Line leaders will always be drawn with their own geometry.
-    */
+  			 * The style of line to generate when a Point leader is drawn defined by an enumeration value. Line leaders will always be drawn with their own geometry.
+  			 */
   var lineStyle: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LeaderLineStyle * / any */ String
   ] = js.undefined

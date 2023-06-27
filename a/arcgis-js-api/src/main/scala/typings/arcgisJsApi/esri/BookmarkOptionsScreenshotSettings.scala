@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarkOptionsScreenshotSettings extends StObject {
   
   /**
-    * Used to take a screenshot of a subregion of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * Used to take a screenshot of a subregion of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var area: js.UndefOr[BookmarkOptionsScreenshotSettingsArea] = js.undefined
   
   /**
-    * The height (in pixels) of the screenshot.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The height (in pixels) of the screenshot.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * An optional list of layers to be included in the screenshot.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * An optional list of layers to be included in the screenshot.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   
   /**
-    * The width (in pixels) of the screenshot.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
-    */
+  		 * The width (in pixels) of the screenshot.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkOptions)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object BookmarkOptionsScreenshotSettings {

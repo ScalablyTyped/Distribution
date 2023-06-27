@@ -163,13 +163,13 @@ object sapUiWebcMainPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachToggle(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Panel` itself
       */
@@ -194,7 +194,7 @@ object sapUiWebcMainPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachToggle(
       /**
@@ -205,7 +205,7 @@ object sapUiWebcMainPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Panel` itself
       */
@@ -237,13 +237,13 @@ object sapUiWebcMainPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachToggle(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -251,7 +251,7 @@ object sapUiWebcMainPanelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggle toggle} to attached listeners.
       *
@@ -668,6 +668,8 @@ object sapUiWebcMainPanelMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Panel$ToggleEventParameters extends StObject
+  
   trait PanelSettings
     extends StObject
        with ControlSettings {
@@ -750,7 +752,9 @@ object sapUiWebcMainPanelMod {
     /**
       * Fired when the component is expanded/collapsed by user interaction.
       */
-    var toggle: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggle: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the width of the control
@@ -821,7 +825,7 @@ object sapUiWebcMainPanelMod {
       
       inline def setNoAnimationUndefined: Self = StObject.set(x, "noAnimation", js.undefined)
       
-      inline def setToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
@@ -830,4 +834,8 @@ object sapUiWebcMainPanelMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type PanelToggleEvent = typings.openui5.sapUiBaseEventMod.default[Panel$ToggleEventParameters]
+  
+  type PanelToggleEventParameters = Panel$ToggleEventParameters
 }

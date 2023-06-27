@@ -11,10 +11,10 @@ object esriRestKnowledgeGraphSearchIndexMod {
   @JSImport("esri/rest/knowledgeGraph/SearchIndex", JSImport.Namespace)
   @js.native
   /**
-    * Defines a search index for a [KnowledgeGraph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html)
-    */
+  		 * Defines a search index for a [KnowledgeGraph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html)
+  		 */
   open class ^ ()
     extends StObject
        with SearchIndex {

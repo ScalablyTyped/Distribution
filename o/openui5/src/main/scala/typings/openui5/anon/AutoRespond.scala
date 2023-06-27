@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoRespond extends StObject {
   
   /**
-    * If set true, all mock servers will respond automatically. If set false you have to call {@link sap.ui.core.util.MockServer.respond}
+    * If set true, all mock servers will respond automatically. If set false you have to call {@link sap.ui.core.util.MockServer.respond }
     * method for response.
     */
   var autoRespond: js.UndefOr[Boolean] = js.undefined

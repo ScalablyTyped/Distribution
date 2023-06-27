@@ -1,7 +1,7 @@
 
 # Scala.js typings for style-mod
 
-Typings are for version 4.0.0
+Typings are for version 4.0.3
 
 ## Library description:
 A minimal CSS module shim

@@ -35,7 +35,10 @@ import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import typings.arcgisJsApi.arcgisJsApiStrings.tile
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.BasemapProperties
 import typings.arcgisJsApi.esri.ExtentProperties
+import typings.arcgisJsApi.esri.GroundProperties
+import typings.arcgisJsApi.esri.MapProperties
 import typings.arcgisJsApi.esri.PortalItemProperties
 import typings.arcgisJsApi.esri.TileInfoProperties
 import org.scalablytyped.runtime.StObject
@@ -46,184 +49,191 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TileLayerPropertiestypeti extends StObject {
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
-    *
-    * @default normal
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
-    */
+  		 * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+  		 *
+  		 * @default normal
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
+  		 */
   var blendMode: js.UndefOr[
     average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
   ] = js.undefined
   
   /**
-    * The copyright text as defined by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
-    */
+  		 * The copyright text as defined by the service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
+  		 */
   /**
-    * The copyright text as defined by the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
-    */
+  		 * The copyright text as defined by the service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of custom parameters appended to the URL of all resources fetched by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
-    */
+  		 * A list of custom parameters appended to the URL of all resources fetched by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
-    */
+  		 * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+  		 */
   var effect: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
-    * The full extent of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
-    */
+  		 * The full extent of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
+  		 */
   /**
-    * The full extent of the layer as defined by the map service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#fullExtent)
-    */
+  		 * The full extent of the layer as defined by the map service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#fullExtent)
+  		 */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The unique ID assigned to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
-    */
+  		 * The unique ID assigned to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * @default "show"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
-    */
+  		 * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * @default "show"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
+  		 */
   var listMode: js.UndefOr[show | hide | `hide-children`] = js.undefined
   
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
-    */
+  		 * The maximum scale (most zoomed in) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
+  		 */
   var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
-    */
+  		 * The minimum scale (most zoomed out) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+  		 */
   var minScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The opacity of the layer.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
-    */
+  		 * The opacity of the layer.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
+  		 * The parent to which the layer belongs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#parent)
+  		 */
+  var parent: js.UndefOr[MapProperties | BasemapProperties | GroundProperties | GroupLayerPropertiestypeg] = js.undefined
+  
+  /**
+  		 * The portal item from which the layer is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+  		 */
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
-    * Refresh interval of the layer in minutes.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
-    */
+  		 * Refresh interval of the layer in minutes.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+  		 */
   var refreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
-    */
+  		 * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
+  		 */
   var resampling: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
-    */
+  		 * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
+  		 */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * Contains information about the tiling scheme for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
-    */
+  		 * Contains information about the tiling scheme for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
+  		 */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
   
   /**
-    * An array of tile servers used for changing map tiles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#tileServers)
-    */
+  		 * An array of tile servers used for changing map tiles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#tileServers)
+  		 */
   var tileServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
-    */
+  		 * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   var `type`: tile
   
   /**
-    * The URL of the REST endpoint of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#url)
-    */
+  		 * The URL of the REST endpoint of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
-    */
+  		 * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object TileLayerPropertiestypeti {
@@ -288,6 +298,10 @@ object TileLayerPropertiestypeti {
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setParent(value: MapProperties | BasemapProperties | GroundProperties | GroupLayerPropertiestypeg): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     

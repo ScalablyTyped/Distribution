@@ -1,49 +1,49 @@
 package typings.chromeRemoteInterface.mod
 
-import typings.chromeRemoteInterface.anon.OptIfParamNullableAccessi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableAnimati
-import typings.chromeRemoteInterface.anon.OptIfParamNullableAuditsA
-import typings.chromeRemoteInterface.anon.OptIfParamNullableBackgro
-import typings.chromeRemoteInterface.anon.OptIfParamNullableBrowser
-import typings.chromeRemoteInterface.anon.OptIfParamNullableCSSApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableCacheSt
-import typings.chromeRemoteInterface.anon.OptIfParamNullableCastApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableConsole
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDOMApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDOMDebu
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDOMSnap
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDOMStor
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDatabas
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDebugge
-import typings.chromeRemoteInterface.anon.OptIfParamNullableDeviceO
-import typings.chromeRemoteInterface.anon.OptIfParamNullableEmulati
-import typings.chromeRemoteInterface.anon.OptIfParamNullableFetchAp
-import typings.chromeRemoteInterface.anon.OptIfParamNullableHeadles
-import typings.chromeRemoteInterface.anon.OptIfParamNullableHeapPro
-import typings.chromeRemoteInterface.anon.OptIfParamNullableIOApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableIndexed
-import typings.chromeRemoteInterface.anon.OptIfParamNullableInputAp
-import typings.chromeRemoteInterface.anon.OptIfParamNullableInspect
-import typings.chromeRemoteInterface.anon.OptIfParamNullableLayerTr
-import typings.chromeRemoteInterface.anon.OptIfParamNullableLogApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableMediaAp
-import typings.chromeRemoteInterface.anon.OptIfParamNullableMemoryA
-import typings.chromeRemoteInterface.anon.OptIfParamNullableNetwork
-import typings.chromeRemoteInterface.anon.OptIfParamNullableOverlay
-import typings.chromeRemoteInterface.anon.OptIfParamNullablePageApi
-import typings.chromeRemoteInterface.anon.OptIfParamNullablePerform
-import typings.chromeRemoteInterface.anon.OptIfParamNullableProfile
-import typings.chromeRemoteInterface.anon.OptIfParamNullableRuntime
-import typings.chromeRemoteInterface.anon.OptIfParamNullableSchemaA
-import typings.chromeRemoteInterface.anon.OptIfParamNullableSecurit
-import typings.chromeRemoteInterface.anon.OptIfParamNullableService
-import typings.chromeRemoteInterface.anon.OptIfParamNullableStorage
-import typings.chromeRemoteInterface.anon.OptIfParamNullableSystemI
-import typings.chromeRemoteInterface.anon.OptIfParamNullableTargetA
-import typings.chromeRemoteInterface.anon.OptIfParamNullableTetheri
-import typings.chromeRemoteInterface.anon.OptIfParamNullableTracing
-import typings.chromeRemoteInterface.anon.OptIfParamNullableWebAudi
-import typings.chromeRemoteInterface.anon.OptIfParamNullableWebAuth
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNul
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulActivateTarget
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddBinding
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddCompilationCache
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddCredential
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddInspectedHeapObject
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddPrivacySandboxEnrollmentOverride
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulAddRule
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulBeginFrame
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulBind
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCanClearBrowserCache
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCanEmulate
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCaptureSnapshot
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCheckContrast
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClear
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClearCookies
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClearDeviceOrientationOverride
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClearEvents
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClearMessages
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClearObjectStore
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulClose
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCollectClassNamesFromSubtree
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulCompositingReasons
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulContinueRequest
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulContinueToLocation
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulDeleteCache
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulDeliverPushMessage
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulDisable
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulDisableEnable
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulDispatchDragEvent
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulEnable
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulEnableOn
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulEnd
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulExecuteSQL
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulForciblyPurgeJavaScriptMemory
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetBestEffortCoverage
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetCurrentTime
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetDomains
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetEventListeners
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetFeatureState
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetGridHighlightObjectsForTest
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetMetrics
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulGetRealtimeData
+import typings.chromeRemoteInterface.anon.AddOptParamsOptIfParamNulOn
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.AccessibilityDotloadComplete
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.AccessibilityDotnodesUpdated
 import typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.AnimationDotanimationCanceled
@@ -240,7 +240,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Client extends StObject {
   
-  var Accessibility: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Accessibility] & OptIfParamNullableAccessi = js.native
+  var Accessibility: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Accessibility] & AddOptParamsOptIfParamNulDisable = js.native
   
   @JSName("Accessibility.loadComplete")
   def AccessibilityDotloadComplete(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Accessibility.LoadCompleteEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -272,7 +272,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Accessibility.NodesUpdatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Animation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Animation] & OptIfParamNullableAnimati = js.native
+  var Animation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Animation] & AddOptParamsOptIfParamNulGetCurrentTime = js.native
   
   @JSName("Animation.animationCanceled")
   def AnimationDotanimationCanceled(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationCanceledEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -319,11 +319,13 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Animation.AnimationStartedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var ApplicationCache: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ApplicationCache] & (OptIfParamNullable[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProtocolProxyApi.ApplicationCacheApi */ Any
+  var ApplicationCache: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ApplicationCache] & (AddOptParams[
+    OptIfParamNullable[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProtocolProxyApi.ApplicationCacheApi */ Any
+    ]
   ]) = js.native
   
-  var Audits: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Audits] & OptIfParamNullableAuditsA = js.native
+  var Audits: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Audits] & AddOptParamsOptIfParamNulCheckContrast = js.native
   
   @JSName("Audits.issueAdded")
   def AuditsDotissueAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -340,7 +342,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Audits.IssueAddedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var BackgroundService: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.BackgroundService] & OptIfParamNullableBackgro = js.native
+  var BackgroundService: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.BackgroundService] & AddOptParamsOptIfParamNulClearEvents = js.native
   
   @JSName("BackgroundService.backgroundServiceEventReceived")
   def BackgroundServiceDotbackgroundServiceEventReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.BackgroundService.BackgroundServiceEventReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -372,7 +374,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.BackgroundService.RecordingStateChangedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Browser: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Browser] & OptIfParamNullableBrowser = js.native
+  var Browser: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Browser] & AddOptParamsOptIfParamNulAddPrivacySandboxEnrollmentOverride = js.native
   
   @JSName("Browser.downloadProgress")
   def BrowserDotdownloadProgress(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Browser.DownloadProgressEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -404,7 +406,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Browser.DownloadWillBeginEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var CSS: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.CSS] & OptIfParamNullableCSSApi = js.native
+  var CSS: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.CSS] & AddOptParamsOptIfParamNulAddRule = js.native
   
   @JSName("CSS.fontsUpdated")
   def CSSDotfontsUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.FontsUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -481,9 +483,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.CSS.StyleSheetRemovedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var CacheStorage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.CacheStorage] & OptIfParamNullableCacheSt = js.native
+  var CacheStorage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.CacheStorage] & AddOptParamsOptIfParamNulDeleteCache = js.native
   
-  var Cast: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Cast] & OptIfParamNullableCastApi = js.native
+  var Cast: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Cast] & AddOptParamsOptIfParamNulOn = js.native
   
   @JSName("Cast.issueUpdated")
   def CastDotissueUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Cast.IssueUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -515,7 +517,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Cast.SinksUpdatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Console: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Console] & OptIfParamNullableConsole = js.native
+  var Console: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Console] & AddOptParamsOptIfParamNulClearMessages = js.native
   
   @JSName("Console.messageAdded")
   def ConsoleDotmessageAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -532,9 +534,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Console.MessageAddedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var DOM: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOM] & OptIfParamNullableDOMApi = js.native
+  var DOM: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOM] & AddOptParamsOptIfParamNulCollectClassNamesFromSubtree = js.native
   
-  var DOMDebugger: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMDebugger] & OptIfParamNullableDOMDebu = js.native
+  var DOMDebugger: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMDebugger] & AddOptParamsOptIfParamNulGetEventListeners = js.native
   
   @JSName("DOM.attributeModified")
   def DOMDotattributeModified(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOM.AttributeModifiedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -761,9 +763,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var DOMSnapshot: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMSnapshot] & OptIfParamNullableDOMSnap = js.native
+  var DOMSnapshot: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMSnapshot] & AddOptParamsOptIfParamNulCaptureSnapshot = js.native
   
-  var DOMStorage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMStorage] & OptIfParamNullableDOMStor = js.native
+  var DOMStorage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DOMStorage] & AddOptParamsOptIfParamNulClear = js.native
   
   @JSName("DOMStorage.domStorageItemAdded")
   def DOMStorageDotdomStorageItemAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -825,7 +827,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DOMStorage.DomStorageItemsClearedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Database: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Database] & OptIfParamNullableDatabas = js.native
+  var Database: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Database] & AddOptParamsOptIfParamNulExecuteSQL = js.native
   
   @JSName("Database.addDatabase")
   def DatabaseDotaddDatabase(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -842,7 +844,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Database.AddDatabaseEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Debugger: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Debugger] & OptIfParamNullableDebugge = js.native
+  var Debugger: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Debugger] & AddOptParamsOptIfParamNulContinueToLocation = js.native
   
   @JSName("Debugger.breakpointResolved")
   def DebuggerDotbreakpointResolved(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Debugger.BreakpointResolvedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -934,9 +936,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.DeviceAccess.DeviceRequestPromptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.DeviceAccess.DeviceRequestPromptedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var DeviceOrientation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DeviceOrientation] & OptIfParamNullableDeviceO = js.native
+  var DeviceOrientation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DeviceOrientation] & AddOptParamsOptIfParamNulClearDeviceOrientationOverride = js.native
   
-  var Emulation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Emulation] & OptIfParamNullableEmulati = js.native
+  var Emulation: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Emulation] & AddOptParamsOptIfParamNulCanEmulate = js.native
   
   @JSName("Emulation.virtualTimeBudgetExpired")
   def EmulationDotvirtualTimeBudgetExpired(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -968,7 +970,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.FedCm.DialogShownEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.FedCm.DialogShownEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Fetch: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Fetch] & OptIfParamNullableFetchAp = js.native
+  var Fetch: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Fetch] & AddOptParamsOptIfParamNulContinueRequest = js.native
   
   @JSName("Fetch.authRequired")
   def FetchDotauthRequired(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Fetch.AuthRequiredEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1000,9 +1002,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Fetch.RequestPausedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var HeadlessExperimental: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeadlessExperimental] & OptIfParamNullableHeadles = js.native
+  var HeadlessExperimental: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeadlessExperimental] & AddOptParamsOptIfParamNulBeginFrame = js.native
   
-  var HeapProfiler: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeapProfiler] & OptIfParamNullableHeapPro = js.native
+  var HeapProfiler: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.HeapProfiler] & AddOptParamsOptIfParamNulAddInspectedHeapObject = js.native
   
   @JSName("HeapProfiler.addHeapSnapshotChunk")
   def HeapProfilerDotaddHeapSnapshotChunk(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.HeapProfiler.AddHeapSnapshotChunkEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1079,11 +1081,11 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var IO: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.IO] & OptIfParamNullableIOApi = js.native
+  var IO: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.IO] & AddOptParamsOptIfParamNulClose = js.native
   
-  var IndexedDB: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.IndexedDB] & OptIfParamNullableIndexed = js.native
+  var IndexedDB: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.IndexedDB] & AddOptParamsOptIfParamNulClearObjectStore = js.native
   
-  var Input: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Input] & OptIfParamNullableInputAp = js.native
+  var Input: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Input] & AddOptParamsOptIfParamNulDispatchDragEvent = js.native
   
   @JSName("Input.dragIntercepted")
   def InputDotdragIntercepted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1100,7 +1102,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Input.DragInterceptedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Inspector: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Inspector] & OptIfParamNullableInspect = js.native
+  var Inspector: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Inspector] & AddOptParamsOptIfParamNulEnableOn = js.native
   
   @JSName("Inspector.detached")
   def InspectorDotdetached(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Inspector.DetachedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1147,7 +1149,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var LayerTree: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.LayerTree] & OptIfParamNullableLayerTr = js.native
+  var LayerTree: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.LayerTree] & AddOptParamsOptIfParamNulCompositingReasons = js.native
   
   @JSName("LayerTree.layerPainted")
   def LayerTreeDotlayerPainted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerPaintedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1179,7 +1181,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.LayerTree.LayerTreeDidChangeEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Log: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Log] & OptIfParamNullableLogApi = js.native
+  var Log: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Log] & AddOptParamsOptIfParamNul = js.native
   
   @JSName("Log.entryAdded")
   def LogDotentryAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1196,7 +1198,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Log.EntryAddedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Media: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Media] & OptIfParamNullableMediaAp = js.native
+  var Media: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Media] & AddOptParamsOptIfParamNulDisableEnable = js.native
   
   @JSName("Media.playerErrorsRaised")
   def MediaDotplayerErrorsRaised(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayerErrorsRaisedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1273,9 +1275,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Media.PlayersCreatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Memory: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Memory] & OptIfParamNullableMemoryA = js.native
+  var Memory: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Memory] & AddOptParamsOptIfParamNulForciblyPurgeJavaScriptMemory = js.native
   
-  var Network: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Network] & OptIfParamNullableNetwork = js.native
+  var Network: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Network] & AddOptParamsOptIfParamNulCanClearBrowserCache = js.native
   
   @JSName("Network.dataReceived")
   def NetworkDotdataReceived(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.DataReceivedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -1729,7 +1731,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Network.WebTransportCreatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Overlay: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Overlay] & OptIfParamNullableOverlay = js.native
+  var Overlay: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Overlay] & AddOptParamsOptIfParamNulGetGridHighlightObjectsForTest = js.native
   
   @JSName("Overlay.inspectModeCanceled")
   def OverlayDotinspectModeCanceled(): /* import warning: importer.ImportType#apply Failed type conversion: [] extends [any] ? std.Promise<[][0]> : std.Promise<void> */ js.Any = js.native
@@ -1791,7 +1793,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Overlay.ScreenshotRequestedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Page: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Page] & OptIfParamNullablePageApi = js.native
+  var Page: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Page] & AddOptParamsOptIfParamNulAddCompilationCache = js.native
   
   @JSName("Page.backForwardCacheNotUsed")
   def PageDotbackForwardCacheNotUsed(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.BackForwardCacheNotUsedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2183,7 +2185,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Page.WindowOpenEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Performance: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Performance] & OptIfParamNullablePerform = js.native
+  var Performance: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Performance] & AddOptParamsOptIfParamNulGetMetrics = js.native
   
   @JSName("Performance.metrics")
   def PerformanceDotmetrics(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Performance.MetricsEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2320,7 +2322,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Preload.RuleSetUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Preload.RuleSetUpdatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Profiler: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Profiler] & OptIfParamNullableProfile = js.native
+  var Profiler: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Profiler] & AddOptParamsOptIfParamNulGetBestEffortCoverage = js.native
   
   @JSName("Profiler.consoleProfileFinished")
   def ProfilerDotconsoleProfileFinished(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.ConsoleProfileFinishedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2367,7 +2369,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Profiler.PreciseCoverageDeltaUpdateEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Runtime: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Runtime] & OptIfParamNullableRuntime = js.native
+  var Runtime: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Runtime] & AddOptParamsOptIfParamNulAddBinding = js.native
   
   @JSName("Runtime.bindingCalled")
   def RuntimeDotbindingCalled(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.BindingCalledEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2489,9 +2491,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Runtime.InspectRequestedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Schema: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Schema] & OptIfParamNullableSchemaA = js.native
+  var Schema: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Schema] & AddOptParamsOptIfParamNulGetDomains = js.native
   
-  var Security: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Security] & OptIfParamNullableSecurit = js.native
+  var Security: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Security] & AddOptParamsOptIfParamNulEnable = js.native
   
   @JSName("Security.certificateError")
   def SecurityDotcertificateError(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.CertificateErrorEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2538,7 +2540,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Security.VisibleSecurityStateChangedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var ServiceWorker: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ServiceWorker] & OptIfParamNullableService = js.native
+  var ServiceWorker: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ServiceWorker] & AddOptParamsOptIfParamNulDeliverPushMessage = js.native
   
   @JSName("ServiceWorker.workerErrorReported")
   def ServiceWorkerDotworkerErrorReported(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerErrorReportedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2585,7 +2587,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.ServiceWorker.WorkerVersionUpdatedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Storage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Storage] & OptIfParamNullableStorage = js.native
+  var Storage: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Storage] & AddOptParamsOptIfParamNulClearCookies = js.native
   
   @JSName("Storage.cacheStorageContentUpdated")
   def StorageDotcacheStorageContentUpdated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.CacheStorageContentUpdatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2707,9 +2709,9 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Storage.StorageBucketDeletedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Storage.StorageBucketDeletedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var SystemInfo: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.SystemInfo] & OptIfParamNullableSystemI = js.native
+  var SystemInfo: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.SystemInfo] & AddOptParamsOptIfParamNulGetFeatureState = js.native
   
-  var Target: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Target] & OptIfParamNullableTargetA = js.native
+  var Target: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Target] & AddOptParamsOptIfParamNulActivateTarget = js.native
   
   @JSName("Target.attachedToTarget")
   def TargetDotattachedToTarget(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.AttachedToTargetEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2816,7 +2818,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Target.TargetInfoChangedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Tethering: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Tethering] & OptIfParamNullableTetheri = js.native
+  var Tethering: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Tethering] & AddOptParamsOptIfParamNulBind = js.native
   
   @JSName("Tethering.accepted")
   def TetheringDotaccepted(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2833,7 +2835,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tethering.AcceptedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var Tracing: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Tracing] & OptIfParamNullableTracing = js.native
+  var Tracing: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.Tracing] & AddOptParamsOptIfParamNulEnd = js.native
   
   @JSName("Tracing.bufferUsage")
   def TracingDotbufferUsage(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.BufferUsageEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -2880,7 +2882,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.Tracing.TracingCompleteEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var WebAudio: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.WebAudio] & OptIfParamNullableWebAudi = js.native
+  var WebAudio: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.WebAudio] & AddOptParamsOptIfParamNulGetRealtimeData = js.native
   
   @JSName("WebAudio.audioListenerCreated")
   def WebAudioDotaudioListenerCreated(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.AudioListenerCreatedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -3077,7 +3079,7 @@ trait Client extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAudio.NodesDisconnectedEvent][0]> : std.Promise<void> */ js.Any
   ] = js.native
   
-  var WebAuthn: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.WebAuthn] & OptIfParamNullableWebAuth = js.native
+  var WebAuthn: DoEventObj[typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.WebAuthn] & AddOptParamsOptIfParamNulAddCredential = js.native
   
   @JSName("WebAuthn.credentialAdded")
   def WebAuthnDotcredentialAdded(): /* import warning: importer.ImportType#apply Failed type conversion: [devtools-protocol.devtools-protocol.Protocol.WebAuthn.CredentialAddedEvent] extends [any] ? std.Promise<[devtools-protocol.devtools-protocol.Protocol.WebAuthn.CredentialAddedEvent][0]> : std.Promise<void> */ js.Any = js.native
@@ -4601,36 +4603,36 @@ trait Client extends StObject {
   @JSName("on")
   def on_event(event: event, callback: js.Function1[/* message */ EventMessage, Unit]): Unit = js.native
   
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T): js.Promise[
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
   // client.send(method, [params], [sessionId], [callback])
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, callback: SendCallback[T]): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, callback: SendCallback[T]): Unit = js.native
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     callback: SendCallback[T]
   ): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     sessionId: String
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](
     event: T,
     params: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'][0] */ js.Any,
     sessionId: String,
     callback: SendCallback[T]
   ): Unit = js.native
-  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 561, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, params: Unit, sessionId: String): js.Promise[
+  def send[T /* <: /* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 565, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotclearMessages, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotdisable, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotenable */ Any */](event: T, params: Unit, sessionId: String): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
   ] = js.native
 }

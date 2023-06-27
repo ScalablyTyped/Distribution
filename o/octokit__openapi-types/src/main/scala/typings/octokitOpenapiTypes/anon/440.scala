@@ -6,30 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `440` extends StObject {
   
-  var issue: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-  ] = js.undefined
+  var path: Teamid
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var query: js.UndefOr[PerpageRole] = js.undefined
 }
 object `440` {
   
-  inline def apply(): `440` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: Teamid): `440` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`440`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `440`] (val x: Self) extends AnyVal {
     
-    inline def setIssue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-    ): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setPath(value: Teamid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
+    inline def setQuery(value: PerpageRole): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

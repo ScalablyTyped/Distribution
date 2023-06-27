@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.DensifyParameters")
 @js.native
 /**
-  * Input parameters for the densify() method on the GeometryService.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
-  */
+		 * Input parameters for the densify() method on the GeometryService.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
+		 */
 open class DensifyParameters ()
   extends StObject
      with typings.arcgisJsApi.esri.DensifyParameters {

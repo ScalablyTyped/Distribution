@@ -207,7 +207,7 @@ object sapUiUnifiedShellMod {
     def destroySearch(): this.type = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Destroys the user in the aggregation {@link #getUser user}.
       *
@@ -263,7 +263,7 @@ object sapUiUnifiedShellMod {
     def getSearch(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Gets current value of property {@link #getSearchVisible searchVisible}.
       *
@@ -299,7 +299,7 @@ object sapUiUnifiedShellMod {
     def getShowCurtainPane(): Boolean = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Gets content of aggregation {@link #getUser user}.
       *
@@ -574,7 +574,7 @@ object sapUiUnifiedShellMod {
     oSearch: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Sets a new value for property {@link #getSearchVisible searchVisible}.
       *
@@ -628,7 +628,7 @@ object sapUiUnifiedShellMod {
     bShowCurtainPane: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Sets the aggregated {@link #getUser user}.
       *
@@ -686,7 +686,7 @@ object sapUiUnifiedShellMod {
     var search: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * If set to false, the search area (aggregation 'search') is hidden. If a custom header is set this property
       * has no effect.
@@ -714,7 +714,7 @@ object sapUiUnifiedShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * The user item which is rendered in the shell header beside the items. If a custom header is set this
       * aggregation has no effect.

@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.ButtonAccessibleRole
 import typings.openui5.sapMLibraryMod.ButtonType
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -212,13 +213,13 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Button` itself
       */
@@ -243,7 +244,7 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -254,7 +255,7 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Button` itself
       */
@@ -277,13 +278,13 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Button` itself
       */
@@ -310,7 +311,7 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTap(
       /**
@@ -321,7 +322,7 @@ object sapMButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Button` itself
       */
@@ -339,13 +340,13 @@ object sapMButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -365,13 +366,13 @@ object sapMButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -379,7 +380,7 @@ object sapMButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -393,7 +394,7 @@ object sapMButtonMod {
     
     /**
       * @deprecated (since 1.20) - replaced by `press` event
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tap tap} to attached listeners.
       *
@@ -404,6 +405,25 @@ object sapMButtonMod {
       * Parameters to pass along with the event
       */
     mParameters: js.Object): this.type = js.native
+    
+    /**
+      * @since 1.114.0
+      *
+      * Gets current value of property {@link #getAccessibleRole accessibleRole}.
+      *
+      * Describes the accessibility role of the button:
+      * 	`ButtonAccessibleRole.Default` - The accessibility semantics is derived from the button tag and no role
+      * attribute is rendered. `ButtonAccessibleRole.Link` - The accessibility semantics is derived from
+      * a custom role attribute with "link" value.
+      *
+      * NOTE: Use link role only with a press handler, which performs a navigation. In all other scenarios the
+      * default button semantics is recommended.
+      *
+      * Default value is `Default`.
+      *
+      * @returns Value of property `accessibleRole`
+      */
+    def getAccessibleRole(): ButtonAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonAccessibleRole * / any */ String) = js.native
     
     /**
       * Gets current value of property {@link #getActiveIcon activeIcon}.
@@ -417,13 +437,12 @@ object sapMButtonMod {
     def getActiveIcon(): URI = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -445,8 +464,7 @@ object sapMButtonMod {
     def getAriaHasPopup(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -501,7 +519,7 @@ object sapMButtonMod {
     def getIconFirst(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Defines to which DOM reference the Popup should be docked
       *
@@ -521,7 +539,7 @@ object sapMButtonMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -609,6 +627,37 @@ object sapMButtonMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
+      * @since 1.114.0
+      *
+      * Sets a new value for property {@link #getAccessibleRole accessibleRole}.
+      *
+      * Describes the accessibility role of the button:
+      * 	`ButtonAccessibleRole.Default` - The accessibility semantics is derived from the button tag and no role
+      * attribute is rendered. `ButtonAccessibleRole.Link` - The accessibility semantics is derived from
+      * a custom role attribute with "link" value.
+      *
+      * NOTE: Use link role only with a press handler, which performs a navigation. In all other scenarios the
+      * default button semantics is recommended.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Default`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setAccessibleRole(): this.type = js.native
+    def setAccessibleRole(
+      /**
+      * New value for property `accessibleRole`
+      */
+    sAccessibleRole: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonAccessibleRole * / any */ String
+    ): this.type = js.native
+    def setAccessibleRole(/**
+      * New value for property `accessibleRole`
+      */
+    sAccessibleRole: ButtonAccessibleRole): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getActiveIcon activeIcon}.
       *
       * The source property of an alternative icon for the active (depressed) state of the button. Both active
@@ -626,7 +675,7 @@ object sapMButtonMod {
     sActiveIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -776,7 +825,7 @@ object sapMButtonMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -840,9 +889,32 @@ object sapMButtonMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Button$PressEventParameters extends StObject
+  
+  trait Button$TapEventParameters extends StObject
+  
+  type ButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[Button$PressEventParameters]
+  
+  type ButtonPressEventParameters = Button$PressEventParameters
+  
   trait ButtonSettings
     extends StObject
        with ControlSettings {
+    
+    /**
+      * @since 1.114.0
+      *
+      * Describes the accessibility role of the button:
+      * 	`ButtonAccessibleRole.Default` - The accessibility semantics is derived from the button tag and no role
+      * attribute is rendered. `ButtonAccessibleRole.Link` - The accessibility semantics is derived from
+      * a custom role attribute with "link" value.
+      *
+      * NOTE: Use link role only with a press handler, which performs a navigation. In all other scenarios the
+      * default button semantics is recommended.
+      */
+    var accessibleRole: js.UndefOr[
+        ButtonAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonAccessibleRole * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * The source property of an alternative icon for the active (depressed) state of the button. Both active
@@ -857,7 +929,7 @@ object sapMButtonMod {
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.84.0
+      * @since 1.84.0
       *
       * Specifies the value of the `aria-haspopup` attribute
       *
@@ -914,14 +986,18 @@ object sapMButtonMod {
     /**
       * Fired when the user clicks or taps on the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.20) - replaced by `press` event
       *
       * Fired when the user taps the control.
       */
-    var tap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines the text of the `Button`.
@@ -929,7 +1005,7 @@ object sapMButtonMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the element's text directionality with enumerated options. By default, the control inherits
       * text direction from the DOM.
@@ -961,6 +1037,12 @@ object sapMButtonMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ButtonSettings] (val x: Self) extends AnyVal {
+      
+      inline def setAccessibleRole(
+        value: ButtonAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonAccessibleRole * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "accessibleRole", value.asInstanceOf[js.Any])
+      
+      inline def setAccessibleRoleUndefined: Self = StObject.set(x, "accessibleRole", js.undefined)
       
       inline def setActiveIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
       
@@ -1000,11 +1082,11 @@ object sapMButtonMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
-      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+      inline def setTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
       
       inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
       
@@ -1029,4 +1111,8 @@ object sapMButtonMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type ButtonTapEvent = typings.openui5.sapUiBaseEventMod.default[Button$TapEventParameters]
+  
+  type ButtonTapEventParameters = Button$TapEventParameters
 }

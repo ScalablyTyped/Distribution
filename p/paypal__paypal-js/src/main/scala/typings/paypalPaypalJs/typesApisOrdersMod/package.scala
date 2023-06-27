@@ -11,3 +11,5 @@ type Authorization = Record[String, Any]
 type Captures = Record[String, Any]
 
 type Refunds = Record[String, Any]
+
+type UpdateOrderRequestBody = js.Array[UpdateOrderOperation]

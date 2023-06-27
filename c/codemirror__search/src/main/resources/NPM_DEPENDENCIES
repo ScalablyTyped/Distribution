@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@codemirror/search" : "6.2.0"
+      "@codemirror/search" : "6.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@codemirror/search" : "6.2.0"
+      "@codemirror/search" : "6.5.0"
     }
   ],
   "compile-devDependencies" : [

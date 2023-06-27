@@ -15,12 +15,6 @@ trait IDiffEditorConstructionOptions
   var dimension: js.UndefOr[IDimension] = js.undefined
   
   /**
-    * Is the diff editor inside another editor
-    * Defaults to false
-    */
-  var isInEmbeddedEditor: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Aria label for modified editor.
     */
   var modifiedAriaLabel: js.UndefOr[String] = js.undefined
@@ -49,10 +43,6 @@ object IDiffEditorConstructionOptions {
     inline def setDimension(value: IDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
-    
-    inline def setIsInEmbeddedEditor(value: Boolean): Self = StObject.set(x, "isInEmbeddedEditor", value.asInstanceOf[js.Any])
-    
-    inline def setIsInEmbeddedEditorUndefined: Self = StObject.set(x, "isInEmbeddedEditor", js.undefined)
     
     inline def setModifiedAriaLabel(value: String): Self = StObject.set(x, "modifiedAriaLabel", value.asInstanceOf[js.Any])
     

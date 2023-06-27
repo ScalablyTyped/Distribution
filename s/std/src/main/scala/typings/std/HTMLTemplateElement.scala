@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Enables access to the contents of an HTML <template> element. */
+/**
+  * Enables access to the contents of an HTML <template> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement)
+  */
 @js.native
 trait HTMLTemplateElement
   extends StObject
@@ -21,7 +25,11 @@ trait HTMLTemplateElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Returns the template contents (a DocumentFragment). */
+  /**
+    * Returns the template contents (a DocumentFragment).
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/content)
+    */
   /* standard dom */
   val content: DocumentFragment = js.native
   

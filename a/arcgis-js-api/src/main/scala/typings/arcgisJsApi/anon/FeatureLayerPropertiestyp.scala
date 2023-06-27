@@ -41,6 +41,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.BasemapProperties
 import typings.arcgisJsApi.esri.CollectionProperties
 import typings.arcgisJsApi.esri.DateProperties
 import typings.arcgisJsApi.esri.ExtentProperties
@@ -51,8 +52,10 @@ import typings.arcgisJsApi.esri.FeatureTypeProperties
 import typings.arcgisJsApi.esri.FieldProperties
 import typings.arcgisJsApi.esri.FormTemplateProperties
 import typings.arcgisJsApi.esri.GraphicProperties
+import typings.arcgisJsApi.esri.GroundProperties
 import typings.arcgisJsApi.esri.LabelClassProperties
 import typings.arcgisJsApi.esri.LayerFloorInfoProperties
+import typings.arcgisJsApi.esri.MapProperties
 import typings.arcgisJsApi.esri.OrderedLayerOrderBy
 import typings.arcgisJsApi.esri.PopupTemplateProperties
 import typings.arcgisJsApi.esri.PortalItemProperties
@@ -69,443 +72,450 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerPropertiestyp extends StObject {
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
-    *
-    * @default normal
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
-    */
+  		 * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+  		 *
+  		 * @default normal
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
+  		 */
   var blendMode: js.UndefOr[
     average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
   ] = js.undefined
   
   /**
-    * Copyright information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
-    */
+  		 * Copyright information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of custom parameters appended to the URL of all resources fetched by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
-    */
+  		 * A list of custom parameters appended to the URL of all resources fetched by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * The SQL where clause used to filter features on the client.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
-    */
+  		 * The SQL where clause used to filter features on the client.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#definitionExpression)
+  		 */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the layer's primary display field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
-    */
+  		 * The name of the layer's primary display field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#displayField)
+  		 */
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * An object that allows you to create a dynamic layer with data either from map service sublayers or data from a registered workspace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#dynamicDataSource)
-    */
+  		 * An object that allows you to create a dynamic layer with data either from map service sublayers or data from a registered workspace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#dynamicDataSource)
+  		 */
   var dynamicDataSource: js.UndefOr[DynamicMapLayertypemaplay | DynamicDataLayertypedatal] = js.undefined
   
   /**
-    * Determines if the layer is editable.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editingEnabled)
-    */
+  		 * Determines if the layer is editable.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#editingEnabled)
+  		 */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
-    */
+  		 * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+  		 */
   var effect: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
-    * Specifies how features are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
-    */
+  		 * Specifies how features are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[FeatureLayerBaseElevationInfo] = js.undefined
   
   /**
-    * The featureEffect can be used to draw attention features of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
-    */
+  		 * The featureEffect can be used to draw attention features of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+  		 */
   var featureEffect: js.UndefOr[FeatureEffectProperties] = js.undefined
   
   /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
-    */
+  		 * Configures the method for reducing the number of point features in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+  		 */
   var featureReduction: js.UndefOr[
     FeatureReductionBinningPr | FeatureReductionClusterPr | FeatureReductionSelection
   ] = js.undefined
   
   /**
-    * An array of fields in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields)
-    */
+  		 * An array of fields in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields)
+  		 */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
-    * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
-    */
+  		 * When a feature layer is configured as floor-aware, it has a floorInfo property defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#floorInfo)
+  		 */
   var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
   
   /**
-    * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#formTemplate)
-    */
+  		 * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#formTemplate)
+  		 */
   var formTemplate: js.UndefOr[FormTemplateProperties] = js.undefined
   
   /**
-    * The full extent of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
-    */
+  		 * The full extent of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fullExtent)
+  		 */
   /**
-    * The full extent of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fullExtent)
-    */
+  		 * The full extent of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fullExtent)
+  		 */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The version of the geodatabase of the feature service data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
-    */
+  		 * The version of the geodatabase of the feature service data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The geometry type of features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
-    */
+  		 * The geometry type of features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#geometryType)
+  		 */
   var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   
   /**
-    * Indicates whether the client-side features in the layer have `M` (measurement) values.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
-    */
+  		 * Indicates whether the client-side features in the layer have `M` (measurement) values.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasM)
+  		 */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the client-side features in the layer have `Z` (elevation) values.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
-    */
+  		 * Indicates whether the client-side features in the layer have `Z` (elevation) values.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#hasZ)
+  		 */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The historic moment to query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
-    */
+  		 * The historic moment to query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#historicMoment)
+  		 */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The unique ID assigned to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
-    */
+  		 * The unique ID assigned to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo)
-    */
+  		 * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo)
+  		 */
   var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
   
   /**
-    * Indicates whether to display labels for this layer.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible)
-    */
+  		 * Indicates whether to display labels for this layer.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible)
+  		 */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer ID, or layer index, of a Feature Service layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
-    */
+  		 * The layer ID, or layer index, of a Feature Service layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#layerId)
+  		 */
   var layerId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * @default "show"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
-    */
+  		 * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * @default "show"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
+  		 */
   var listMode: js.UndefOr[show | hide | `hide-children`] = js.undefined
   
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
-    */
+  		 * The maximum scale (most zoomed in) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
+  		 */
   var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
-    */
+  		 * The minimum scale (most zoomed out) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+  		 */
   var minScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
-    */
+  		 * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#fields) containing a unique value or identifier for each feature in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#objectIdField)
+  		 */
   var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
-    * The opacity of the layer.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
-    */
+  		 * The opacity of the layer.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#opacity)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Determines the order in which features are drawn in the view.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
-    */
+  		 * Determines the order in which features are drawn in the view.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
+  		 */
   var orderBy: js.UndefOr[js.Array[OrderedLayerOrderBy]] = js.undefined
   
   /**
-    * An array of field names from the service to include with each feature.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields)
-    */
+  		 * An array of field names from the service to include with each feature.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Indicates whether to display popups when features in the layer are clicked.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled)
-    */
+  		 * The parent to which the layer belongs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#parent)
+  		 */
+  var parent: js.UndefOr[MapProperties | BasemapProperties | GroundProperties | GroupLayerPropertiestypeg] = js.undefined
+  
+  /**
+  		 * Indicates whether to display popups when features in the layer are clicked.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled)
+  		 */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The popup template for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate)
-    */
+  		 * The popup template for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate)
+  		 */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
+  		 * The portal item from which the layer is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+  		 */
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
-    * Refresh interval of the layer in minutes.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#refreshInterval)
-    */
+  		 * Refresh interval of the layer in minutes.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#refreshInterval)
+  		 */
   var refreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The renderer assigned to the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer)
-    */
+  		 * The renderer assigned to the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer)
+  		 */
   var renderer: js.UndefOr[RendererProperties] = js.undefined
   
   /**
-    * When `true`, indicates that M values will be returned.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
-    */
+  		 * When `true`, indicates that M values will be returned.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnM)
+  		 */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, indicates that z-values will always be returned.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
-    */
+  		 * When `true`, indicates that z-values will always be returned.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#returnZ)
+  		 */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#screenSizePerspectiveEnabled)
-    */
+  		 * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#screenSizePerspectiveEnabled)
+  		 */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A collection of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) objects used to create a FeatureLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source)
-    */
+  		 * A collection of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) objects used to create a FeatureLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source)
+  		 */
   var source: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   
   /**
-    * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
-    */
+  		 * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#sourceJSON)
+  		 */
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * The spatial reference of the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * An array of feature templates defined in the feature layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#templates)
-    */
+  		 * An array of feature templates defined in the feature layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#templates)
+  		 */
   var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
   
   /**
-    * The layer's time extent.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
-    */
+  		 * The layer's time extent.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeExtent)
+  		 */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
-    * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
-    */
+  		 * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
+  		 */
   var timeInfo: js.UndefOr[TimeInfoProperties] = js.undefined
   
   /**
-    * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
-    */
+  		 * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeOffset)
+  		 */
   var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
   
   /**
-    * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
-    */
+  		 * The title of the layer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#title)
+  		 */
   /**
-    * The title of the layer used to identify it in places such as the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) and [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widgets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#title)
-    */
+  		 * The title of the layer used to identify it in places such as the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) and [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widgets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   var `type`: feature
   
   /**
-    * The name of the field holding the type ID or subtypes for the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField)
-    */
+  		 * The name of the field holding the type ID or subtypes for the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField)
+  		 */
   var typeIdField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of subtypes defined in the feature service exposed by ArcGIS REST API.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#types)
-    */
+  		 * An array of subtypes defined in the feature service exposed by ArcGIS REST API.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#types)
+  		 */
   var types: js.UndefOr[js.Array[FeatureTypeProperties]] = js.undefined
   
   /**
-    * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
-    */
+  		 * The absolute URL of the REST endpoint of the layer, non-spatial table or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
-    */
+  		 * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#useViewTime)
+  		 */
   var useViewTime: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
-    */
+  		 * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureLayerPropertiestyp {
@@ -662,6 +672,10 @@ object FeatureLayerPropertiestyp {
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
+    
+    inline def setParent(value: MapProperties | BasemapProperties | GroundProperties | GroupLayerPropertiestypeg): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

@@ -224,6 +224,10 @@ object esbuildStrings {
   inline def `react-jsxdev`: `react-jsxdev` = "react-jsxdev".asInstanceOf[`react-jsxdev`]
   
   @js.native
+  sealed trait `react-native` extends StObject
+  inline def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
+  
+  @js.native
   sealed trait remove extends StObject
   inline def remove: remove = "remove".asInstanceOf[remove]
   

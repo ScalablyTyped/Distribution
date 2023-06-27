@@ -6,20 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `449` extends StObject {
   
-  var body: js.UndefOr[FromString] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-user-public-key'] */ js.Any
 }
 object `449` {
   
-  inline def apply(): `449` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-user-public-key'] */ js.Any
+  ): `449` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`449`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `449`] (val x: Self) extends AnyVal {
     
-    inline def setBody(value: FromString): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespaces-user-public-key'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

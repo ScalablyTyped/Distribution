@@ -10,57 +10,57 @@ trait CIMMarkerPlacementInsidePolygon
      with CIMMarkerPlacementType {
   
   /**
-    * The clipping option which specifies how markers should be clipped at the polygon boundary.
-    */
+  			 * The clipping option which specifies how markers should be clipped at the polygon boundary.
+  			 */
   var clipping: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementClip * / any */ String
   ] = js.undefined
   
   /**
-    * The orientation angle that the markers are placed on within the polygon.
-    */
+  			 * The orientation angle that the markers are placed on within the polygon.
+  			 */
   var gridAngle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The grid type which defines how markers are placed.
-    */
+  			 * The grid type which defines how markers are placed.
+  			 */
   var gridType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementGridType * / any */ String
   ] = js.undefined
   
   /**
-    * The marker row offset horizontally.
-    */
+  			 * The marker row offset horizontally.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The marker row offset vertically.
-    */
+  			 * The marker row offset vertically.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The randomness of the pattern when markers are placed randomly in a polygon.
-    */
+  			 * The randomness of the pattern when markers are placed randomly in a polygon.
+  			 */
   var randomness: js.UndefOr[Double] = js.undefined
   
   /**
-    * The starting value for generating a random pattern.
-    */
+  			 * The starting value for generating a random pattern.
+  			 */
   var seed: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether every other row of markers should be shifted to create an offset grid.
-    */
+  			 * A value indicating whether every other row of markers should be shifted to create an offset grid.
+  			 */
   var shiftOddRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The distance between each marker on the X-axis of the grid.
-    */
+  			 * The distance between each marker on the X-axis of the grid.
+  			 */
   var stepX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance between each marker on the Y-axis of the grid.
-    */
+  			 * The distance between each marker on the Y-axis of the grid.
+  			 */
   var stepY: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

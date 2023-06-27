@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait dotDensityCreateRendererParamsAttributes extends StObject {
   
   /**
-    * The name of a numeric field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
-    */
+  		 * The name of a numeric field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * The label describing the field name (or category) in the legend.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label describing the field name (or category) in the legend.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
+  		 */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Text describing the value returned from the `valueExpression`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
-    */
+  		 * Text describing the value returned from the `valueExpression`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
+  		 */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
 }
 object dotDensityCreateRendererParamsAttributes {

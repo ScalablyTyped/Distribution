@@ -23,81 +23,81 @@ trait ImageParameters
      with Accessor {
   
   /**
-    * Dots per inch setting for an [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#dpi)
-    */
+  		 * Dots per inch setting for [JobInfo.fetchResultMapImageLayer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#fetchResultMapImageLayer).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#dpi)
+  		 */
   var dpi: Double = js.native
   
   /**
-    * Extent of map to be exported.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#extent)
-    */
+  		 * Extent of map to be exported.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#extent)
+  		 */
   var extent: Extent = js.native
   
   /**
-    * Map image format.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#format)
-    */
+  		 * Map image format.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#format)
+  		 */
   var format: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg = js.native
   
   /**
-    * Requested image height in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#height)
-    */
+  		 * Requested image height in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#height)
+  		 */
   var height: Double = js.native
   
   /**
-    * Spatial reference of exported map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#imageSpatialReference)
-    */
+  		 * Spatial reference of exported image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#imageSpatialReference)
+  		 */
   var imageSpatialReference: SpatialReference = js.native
   
   /**
-    * Array of layer definition expressions that allows you to filter the features of individual layers in the exported map image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#layerDefinitions)
-    */
+  		 * Array of layer definition expressions that allows you to filter the features of individual layers in the exported map image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#layerDefinitions)
+  		 */
   var layerDefinitions: js.Array[String] = js.native
   
   /**
-    * A list of layer IDs, that represent which layers to include in the exported map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#layerIds)
-    */
+  		 * A list of layer IDs, that represent which layers to include in the exported map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#layerIds)
+  		 */
   var layerIds: js.Array[Double] = js.native
   
   /**
-    * The option for displaying or hiding the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#layerOption)
-    */
+  		 * This property determines how the layers specified by [layerIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#layerIds) are treated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#layerOption)
+  		 */
   var layerOption: show | hide | include | exclude = js.native
   
   /**
-    * Converts an instance of this class to its ArcGIS portal JSON representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#toJSON)
-    */
+  		 * Converts an instance of this class to its ArcGIS portal JSON representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#toJSON)
+  		 */
   def toJSON(): Any = js.native
   
   /**
-    * Indicates whether or not the background of the dynamic image is transparent.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#transparent)
-    */
+  		 * Indicates whether or not the background of the dynamic image is transparent.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#transparent)
+  		 */
   var transparent: Boolean = js.native
   
   /**
-    * Requested image width in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageParameters.html#width)
-    */
+  		 * Requested image width in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageParameters.html#width)
+  		 */
   var width: Double = js.native
 }

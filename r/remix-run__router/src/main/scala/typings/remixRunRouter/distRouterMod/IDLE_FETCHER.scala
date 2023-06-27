@@ -42,8 +42,18 @@ object IDLE_FETCHER {
   
   inline def hasFetcherDoneAnything_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic(" _hasFetcherDoneAnything ")(x.asInstanceOf[js.Any])
   
+  @JSImport("@remix-run/router/dist/router", "IDLE_FETCHER.json")
+  @js.native
+  def json: /* undefined */ Any = js.native
+  inline def json_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+  
   @JSImport("@remix-run/router/dist/router", "IDLE_FETCHER.state")
   @js.native
   def state: idle = js.native
   inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@remix-run/router/dist/router", "IDLE_FETCHER.text")
+  @js.native
+  def text: /* undefined */ Any = js.native
+  inline def text_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
 }

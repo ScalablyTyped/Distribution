@@ -141,7 +141,7 @@ object sapMIconTabFilterMod {
        with IBadge {
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Adds some content to the aggregation {@link #getContent content}.
       *
@@ -155,7 +155,7 @@ object sapMIconTabFilterMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Adds some item to the aggregation {@link #getItems items}.
       *
@@ -167,7 +167,7 @@ object sapMIconTabFilterMod {
     oItem: IconTab): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Destroys all the content in the aggregation {@link #getContent content}.
       *
@@ -176,7 +176,7 @@ object sapMIconTabFilterMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Destroys all the items in the aggregation {@link #getItems items}.
       *
@@ -185,7 +185,7 @@ object sapMIconTabFilterMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets content of aggregation {@link #getContent content}.
       *
@@ -259,7 +259,7 @@ object sapMIconTabFilterMod {
     def getIconDensityAware(): Boolean = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets content of aggregation {@link #getItems items}.
       *
@@ -273,8 +273,7 @@ object sapMIconTabFilterMod {
       * Enables special visualization for disabled filter (show all items). **Note:** You can use this property
       * when you use `IconTabBar` as a filter. In order for it to be displayed correctly, the other tabs in the
       * filter should consist of an icon, text and an optional count. It can be set to true for the first tab
-      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters
-      * UX Guidelines}.
+      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters UX Guidelines}.
       *
       * Default value is `false`.
       *
@@ -294,7 +293,7 @@ object sapMIconTabFilterMod {
     def getVisible(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getContent content}. and returns
       * its index if found or -1 otherwise.
@@ -309,7 +308,7 @@ object sapMIconTabFilterMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Checks for the provided `sap.m.IconTab` in the aggregation {@link #getItems items}. and returns its index
       * if found or -1 otherwise.
@@ -322,7 +321,7 @@ object sapMIconTabFilterMod {
     oItem: IconTab): int = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Inserts a content into the aggregation {@link #getContent content}.
       *
@@ -342,7 +341,7 @@ object sapMIconTabFilterMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Inserts a item into the aggregation {@link #getItems items}.
       *
@@ -362,7 +361,7 @@ object sapMIconTabFilterMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Removes all the controls from the aggregation {@link #getContent content}.
       *
@@ -373,7 +372,7 @@ object sapMIconTabFilterMod {
     def removeAllContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Removes all the controls from the aggregation {@link #getItems items}.
       *
@@ -388,7 +387,7 @@ object sapMIconTabFilterMod {
       */
     vContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Removes a content from the aggregation {@link #getContent content}.
       *
@@ -410,7 +409,7 @@ object sapMIconTabFilterMod {
       */
     vItem: String): IconTab | Null = js.native
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Removes a item from the aggregation {@link #getItems items}.
       *
@@ -426,7 +425,7 @@ object sapMIconTabFilterMod {
     vItem: IconTab): IconTab | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders this item in the IconTabHeader.
       */
@@ -446,7 +445,7 @@ object sapMIconTabFilterMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders this item in the IconTabSelectList.
       */
@@ -584,8 +583,7 @@ object sapMIconTabFilterMod {
       * Enables special visualization for disabled filter (show all items). **Note:** You can use this property
       * when you use `IconTabBar` as a filter. In order for it to be displayed correctly, the other tabs in the
       * filter should consist of an icon, text and an optional count. It can be set to true for the first tab
-      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters
-      * UX Guidelines}.
+      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters UX Guidelines}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -622,7 +620,7 @@ object sapMIconTabFilterMod {
        with ItemSettings {
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * The content displayed for this item (optional).
       *
@@ -672,7 +670,7 @@ object sapMIconTabFilterMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * The sub items of this filter (optional).
       */
@@ -684,8 +682,7 @@ object sapMIconTabFilterMod {
       * Enables special visualization for disabled filter (show all items). **Note:** You can use this property
       * when you use `IconTabBar` as a filter. In order for it to be displayed correctly, the other tabs in the
       * filter should consist of an icon, text and an optional count. It can be set to true for the first tab
-      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters
-      * UX Guidelines}.
+      * filter. You can find more detailed information in the {@link https://experience.sap.com/fiori-design-web/icontabbar/#tabs-as-filters UX Guidelines}.
       */
     var showAll: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

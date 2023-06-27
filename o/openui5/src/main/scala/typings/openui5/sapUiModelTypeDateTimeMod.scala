@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`45`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,14 +17,12 @@ object sapUiModelTypeDateTimeMod {
   open class default ()
     extends typings.openui5.sapUiModelTypeDateMod.default {
     def this(/**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance DateFormat}.
       */
-    oFormatOptions: `45`) = this()
+    oFormatOptions: `13`) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance DateFormat}.
       */
     oFormatOptions: Unit,
       /**
@@ -35,10 +33,9 @@ object sapUiModelTypeDateTimeMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance
-      * DateFormat}.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeInstance DateFormat}.
       */
-    oFormatOptions: `45`,
+    oFormatOptions: `13`,
       /**
       * Value constraints. Supports the same kind of constraints as its base type Date, but note the different
       * format options (Date vs. DateTime).

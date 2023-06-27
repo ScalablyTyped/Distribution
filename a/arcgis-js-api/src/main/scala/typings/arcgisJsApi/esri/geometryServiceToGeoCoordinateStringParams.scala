@@ -15,54 +15,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait geometryServiceToGeoCoordinateStringParams extends StObject {
   
   /**
-    * If `true`, then spaces are added between components of the string.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * If `true`, then spaces are added between components of the string.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var addSpaces: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Conversion options for mgrs and utm conversion types.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * Conversion options for mgrs and utm conversion types.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var conversionMode: js.UndefOr[String] = js.undefined
   
   /**
-    * The conversion type of the input strings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * The conversion type of the input strings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var conversionType: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd
   
   /**
-    * An array of XY-coordinates (in JSON format) to be converted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * An array of XY-coordinates (in JSON format) to be converted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var coordinates: js.Array[js.Array[Double]]
   
   /**
-    * The number of digits to output for each of the numerical portions in the string.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * The number of digits to output for each of the numerical portions in the string.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var numOfDigits: js.UndefOr[Double] = js.undefined
   
   /**
-    * If `true`, then numeric portions of the string are rounded to the nearest whole magnitude as specified by `numOfDigits`.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * If `true`, then numeric portions of the string are rounded to the nearest whole magnitude as specified by `numOfDigits`.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var rounding: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The spatial reference (or WKID of the spatial reference) of the XY-coordinates to be converted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
-    */
+  		 * The spatial reference (or WKID of the spatial reference) of the XY-coordinates to be converted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#toGeoCoordinateString)
+  		 */
   var sr: SpatialReference | String | Double
 }
 object geometryServiceToGeoCoordinateStringParams {

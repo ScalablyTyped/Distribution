@@ -1,23 +1,39 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.mod.OneOf
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `541` extends StObject {
   
-  var content: ApplicationjsonActionscaches
+  var id: js.UndefOr[String | (Record[String, scala.Nothing]) | Double] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
+  
+  var value: js.UndefOr[OneOf[js.Tuple4[Boolean, String, Double, BranchCommit]]] = js.undefined
 }
 object `541` {
   
-  inline def apply(content: ApplicationjsonActionscaches): `541` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(): `541` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`541`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `541`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: ApplicationjsonActionscaches): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setId(value: String | (Record[String, scala.Nothing]) | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setValue(value: OneOf[js.Tuple4[Boolean, String, Double, BranchCommit]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

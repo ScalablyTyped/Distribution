@@ -16,15 +16,15 @@ trait MediaControllerMode360 extends StObject {
     *
     * @returns The identifier used to remove the listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addChangeRequestListener(listener: MediaControllerEnabledChangeRequestCallback): Double
   
   /**
     * State of spherical (360°) mode on the server. Default value for a newly created server is false.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   var enabled: Boolean
   
@@ -35,7 +35,7 @@ trait MediaControllerMode360 extends StObject {
     *
     * @param watchId Watcher identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeChangeRequestListener(watchId: Double): Unit
 }

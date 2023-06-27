@@ -18,7 +18,7 @@ trait Typeofruntime extends StObject {
   /**
     * Fired when an embedding app requests to embed this app.
     * @since Chrome 43.
-    * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
+    * @see https://developer.chrome.com/apps/tags/appview
     */
   val onEmbedRequested: Event[js.Function1[/* request */ EmbedRequest, Unit]]
   

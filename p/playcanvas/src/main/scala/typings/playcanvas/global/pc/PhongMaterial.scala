@@ -420,18 +420,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} lightVertexColorChannel Vertex color channels to use for baked lighting. Can
   * be "r", "g", "b", "a", "rgb" or any swizzled combination.
   * @property {boolean} ambientTint Enables scene ambient multiplication by material ambient color.
-  * @property {import('../../platform/graphics/texture.js').Texture|null} aoMap Baked ambient
+  * @property {import('../../platform/graphics/texture.js').Texture|null} aoMap The main (primary) baked ambient
   * occlusion (AO) map (default is null). Modulates ambient color.
-  * @property {number} aoMapUv AO map UV channel
-  * @property {string} aoMapChannel Color channel of the AO map to use. Can be "r", "g", "b" or "a".
-  * @property {Vec2} aoMapTiling Controls the 2D tiling of the AO map.
-  * @property {Vec2} aoMapOffset Controls the 2D offset of the AO map. Each component is between 0
+  * @property {number} aoMapUv Main (primary) AO map UV channel
+  * @property {string} aoMapChannel Color channel of the main (primary) AO map to use. Can be "r", "g", "b" or "a".
+  * @property {Vec2} aoMapTiling Controls the 2D tiling of the main (primary) AO map.
+  * @property {Vec2} aoMapOffset Controls the 2D offset of the main (primary) AO map. Each component is between 0
   * and 1.
-  * @property {number} aoMapRotation Controls the 2D rotation (in degrees) of the AO map.
+  * @property {number} aoMapRotation Controls the 2D rotation (in degrees) of the main (primary) AO map.
   * @property {boolean} aoVertexColor Use mesh vertex colors for AO. If aoMap is set, it'll be
   * multiplied by vertex colors.
   * @property {string} aoVertexColorChannel Vertex color channels to use for AO. Can be "r", "g",
   * "b" or "a".
+  * @property {import('../../platform/graphics/texture.js').Texture|null} aoDetailMap The
+  * detail (secondary) baked ambient occlusion (AO) map of the material (default is null). Will only be used if main
+  * (primary) ao map is non-null.
+  * @property {number} aoDetailMapUv Detail (secondary) AO map UV channel.
+  * @property {Vec2} aoDetailMapTiling Controls the 2D tiling of the detail (secondary) AO
+  * map.
+  * @property {Vec2} aoDetailMapOffset Controls the 2D offset of the detail (secondary) AO
+  * map. Each component is between 0 and 1.
+  * @property {number} aoDetailMapRotation Controls the 2D rotation (in degrees) of the detail
+  * (secondary) AO map.
+  * @property {string} aoDetailMapChannel Color channels of the detail (secondary) AO map
+  * to use. Can be "r", "g", "b" or "a" (default is "g").
+  * @property {string} aoDetailMode Determines how the main (primary) and detail (secondary)
+  * AO maps are blended together. Can be:
+  *
+  * - {@link DETAILMODE_MUL}: Multiply together the primary and secondary colors.
+  * - {@link DETAILMODE_ADD}: Add together the primary and secondary colors.
+  * - {@link DETAILMODE_SCREEN}: Softer version of {@link DETAILMODE_ADD}.
+  * - {@link DETAILMODE_OVERLAY}: Multiplies or screens the colors, depending on the primary color.
+  * - {@link DETAILMODE_MIN}: Select whichever of the primary and secondary colors is darker,
+  * component-wise.
+  * - {@link DETAILMODE_MAX}: Select whichever of the primary and secondary colors is lighter,
+  * component-wise.
+  *
+  * Defaults to {@link DETAILMODE_MUL}.
   * @property {number} occludeSpecular Uses ambient occlusion to darken specular/reflection. It's a
   * hack, because real specular occlusion is view-dependent. However, it can be better than nothing.
   *

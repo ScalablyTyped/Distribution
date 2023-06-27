@@ -3,7 +3,6 @@ package typings.fundamentalReact
 import typings.fundamentalReact.anon.PartialContainerProps
 import typings.fundamentalReact.anon.WeakValidationMapContaine
 import typings.fundamentalReact.fundamentalReactStrings.Container
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -15,8 +14,8 @@ object libContainerContainerMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Container/Container.ContainerProps> & {  displayName :'Container'} */
   object default {
     
-    inline def apply(props: ContainerProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: ContainerProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ContainerProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: ContainerProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Container/Container", JSImport.Default)
     @js.native

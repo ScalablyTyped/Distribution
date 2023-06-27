@@ -9,28 +9,28 @@ trait IRatingConfig extends StObject {
   /**
     * Changes the number of icons.
     *
-    * @default: 5
+    * @default 5
     */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
     * A variable used in the template to specify the state for unselected icons.
     *
-    * @default: null
+    * @default null
     */
   var stateOff: js.UndefOr[String] = js.undefined
   
   /**
     * A variable used in the template to specify the state for selected icons.
     *
-    * @default: null
+    * @default null
     */
   var stateOn: js.UndefOr[String] = js.undefined
   
   /**
     * An array of strings defining titles for all icons.
     *
-    * @default: ["one", "two", "three", "four", "five"]
+    * @default ["one", "two", "three", "four", "five"]
     */
   var titles: js.UndefOr[js.Array[String]] = js.undefined
 }

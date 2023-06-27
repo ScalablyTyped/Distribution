@@ -13,6 +13,9 @@ trait ExternalItem
   // An array of access control entries. Each entry specifies the access granted to a user or group. Required.
   var acl: js.UndefOr[NullableOption[js.Array[Acl]]] = js.undefined
   
+  // Returns a list of activities performed on the item. Write-only.
+  var activities: js.UndefOr[NullableOption[js.Array[ExternalActivity]]] = js.undefined
+  
   // A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional.
   var content: js.UndefOr[NullableOption[ExternalItemContent]] = js.undefined
   
@@ -39,6 +42,14 @@ object ExternalItem {
     inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     inline def setAclVarargs(value: Acl*): Self = StObject.set(x, "acl", js.Array(value*))
+    
+    inline def setActivities(value: NullableOption[js.Array[ExternalActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    
+    inline def setActivitiesNull: Self = StObject.set(x, "activities", null)
+    
+    inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+    
+    inline def setActivitiesVarargs(value: ExternalActivity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setContent(value: NullableOption[ExternalItemContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

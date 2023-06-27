@@ -1,6 +1,5 @@
 package typings.floatingUiDom
 
-import typings.floatingUiDom.anon.PartialOptions
 import typings.floatingUiDom.srcTypesMod.FloatingElement
 import typings.floatingUiDom.srcTypesMod.ReferenceElement
 import org.scalablytyped.runtime.StObject
@@ -18,42 +17,26 @@ object srcAutoUpdateMod {
     reference: ReferenceElement,
     floating: FloatingElement,
     update: js.Function0[Unit],
-    options: PartialOptions
+    options: Options
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("autoUpdate")(reference.asInstanceOf[js.Any], floating.asInstanceOf[js.Any], update.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  /* Inlined std.Partial<{  ancestorScroll :boolean,   ancestorResize :boolean,   elementResize :boolean,   layoutShift :boolean,   animationFrame :boolean}> */
   trait Options extends StObject {
     
-    /**
-      * Whether to update the position when an overflow ancestor is resized. This
-      * uses the native `resize` event.
-      * @default true
-      */
-    var ancestorResize: Boolean
+    var ancestorResize: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Whether to update the position when an overflow ancestor is scrolled.
-      * @default true
-      */
-    var ancestorScroll: Boolean
+    var ancestorScroll: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Whether to update on every animation frame if necessary. Optimized for
-      * performance so updates are only called when necessary, but use sparingly.
-      * @default false
-      */
-    var animationFrame: Boolean
+    var animationFrame: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Whether to update the position when either the reference or floating
-      * elements resized. This uses a `ResizeObserver`.
-      * @default true
-      */
-    var elementResize: Boolean
+    var elementResize: js.UndefOr[Boolean] = js.undefined
+    
+    var layoutShift: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
-    inline def apply(ancestorResize: Boolean, ancestorScroll: Boolean, animationFrame: Boolean, elementResize: Boolean): Options = {
-      val __obj = js.Dynamic.literal(ancestorResize = ancestorResize.asInstanceOf[js.Any], ancestorScroll = ancestorScroll.asInstanceOf[js.Any], animationFrame = animationFrame.asInstanceOf[js.Any], elementResize = elementResize.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -62,11 +45,23 @@ object srcAutoUpdateMod {
       
       inline def setAncestorResize(value: Boolean): Self = StObject.set(x, "ancestorResize", value.asInstanceOf[js.Any])
       
+      inline def setAncestorResizeUndefined: Self = StObject.set(x, "ancestorResize", js.undefined)
+      
       inline def setAncestorScroll(value: Boolean): Self = StObject.set(x, "ancestorScroll", value.asInstanceOf[js.Any])
+      
+      inline def setAncestorScrollUndefined: Self = StObject.set(x, "ancestorScroll", js.undefined)
       
       inline def setAnimationFrame(value: Boolean): Self = StObject.set(x, "animationFrame", value.asInstanceOf[js.Any])
       
+      inline def setAnimationFrameUndefined: Self = StObject.set(x, "animationFrame", js.undefined)
+      
       inline def setElementResize(value: Boolean): Self = StObject.set(x, "elementResize", value.asInstanceOf[js.Any])
+      
+      inline def setElementResizeUndefined: Self = StObject.set(x, "elementResize", js.undefined)
+      
+      inline def setLayoutShift(value: Boolean): Self = StObject.set(x, "layoutShift", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutShiftUndefined: Self = StObject.set(x, "layoutShift", js.undefined)
     }
   }
 }

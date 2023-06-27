@@ -56,19 +56,19 @@ trait MapNavigationOptions extends StObject {
   /**
     * (Highmaps) Whether to enable map navigation. The default is not to enable
     * navigation, as many choropleth maps are simple and don't need it.
-    * Additionally, when touch zoom and mousewheel zoom is enabled, it breaks
+    * Additionally, when touch zoom and mouse wheel zoom is enabled, it breaks
     * the default behaviour of these interactions in the website, and the
     * implementer should be aware of this.
     *
     * Individual interactions can be enabled separately, namely buttons,
     * multitouch zoom, double click zoom, double click zoom to element and
-    * mousewheel zoom.
+    * mouse wheel zoom.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Sensitivity of mouse wheel or trackpad scrolling. 1 is no
-    * sensitivity, while with 2, one mousewheel delta will zoom in 50%.
+    * sensitivity, while with 2, one mouse wheel delta will zoom in 50%.
     */
   var mouseWheelSensitivity: js.UndefOr[Double] = js.undefined
 }

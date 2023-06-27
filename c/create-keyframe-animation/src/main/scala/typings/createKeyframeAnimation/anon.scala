@@ -187,6 +187,7 @@ import typings.createKeyframeAnimation.createKeyframeAnimationStrings.ruby
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.s
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.samp
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.script
+import typings.createKeyframeAnimation.createKeyframeAnimationStrings.search
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.section
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.select
 import typings.createKeyframeAnimation.createKeyframeAnimationStrings.semantics
@@ -559,6 +560,7 @@ object anon {
     def apply(selectors: s): NodeListOf[HTMLElement] = js.native
     def apply(selectors: samp): NodeListOf[HTMLElement] = js.native
     def apply(selectors: script): NodeListOf[HTMLScriptElement] = js.native
+    def apply(selectors: search): NodeListOf[HTMLElement] = js.native
     def apply(selectors: section): NodeListOf[HTMLElement] = js.native
     def apply(selectors: select): NodeListOf[HTMLSelectElement] = js.native
     def apply(selectors: semantics): NodeListOf[MathMLElement] = js.native

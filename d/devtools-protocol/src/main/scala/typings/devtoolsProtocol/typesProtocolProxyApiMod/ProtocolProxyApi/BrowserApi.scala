@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.typesProtocolProxyApiMod.ProtocolProxyApi
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.downloadProgress
 import typings.devtoolsProtocol.devtoolsProtocolStrings.downloadWillBegin
+import typings.devtoolsProtocol.mod.Protocol.Browser.AddPrivacySandboxEnrollmentOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.CancelDownloadRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.DownloadProgressEvent
 import typings.devtoolsProtocol.mod.Protocol.Browser.DownloadWillBeginEvent
@@ -28,6 +29,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait BrowserApi extends StObject {
+  
+  /**
+    * Allows a site to use privacy sandbox features that require enrollment
+    * without the site actually being enrolled. Only supported on page targets.
+    */
+  def addPrivacySandboxEnrollmentOverride(params: AddPrivacySandboxEnrollmentOverrideRequest): js.Promise[Unit] = js.native
   
   /**
     * Cancel a download if in progress

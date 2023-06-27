@@ -10,7 +10,7 @@ trait GetPost extends StObject {
     * List gists for the authenticated user
     * @description Lists the authenticated user's gists or if called anonymously, this endpoint returns all public gists:
     */
-  var get: ParametersQueryPerpage
+  var get: Parameters20
   
   /**
     * Create a gist
@@ -22,7 +22,7 @@ trait GetPost extends StObject {
 }
 object GetPost {
   
-  inline def apply(get: ParametersQueryPerpage, post: RequestBodyContentApplicationjsonDescription): GetPost = {
+  inline def apply(get: Parameters20, post: RequestBodyContentApplicationjsonDescription): GetPost = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPost]
   }
@@ -30,7 +30,7 @@ object GetPost {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetPost] (val x: Self) extends AnyVal {
     
-    inline def setGet(value: ParametersQueryPerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Parameters20): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     inline def setPost(value: RequestBodyContentApplicationjsonDescription): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

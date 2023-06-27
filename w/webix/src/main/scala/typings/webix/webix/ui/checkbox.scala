@@ -110,7 +110,9 @@ trait checkbox
   
   def setBottomText(text: String): Unit = js.native
   
+  def setValue(value: Boolean): Unit = js.native
   def setValue(value: Boolean, config: Any): Unit = js.native
+  def setValue(value: Double): Unit = js.native
   def setValue(value: Double, config: Any): Unit = js.native
   
   def setValueHere(value: String): Unit = js.native

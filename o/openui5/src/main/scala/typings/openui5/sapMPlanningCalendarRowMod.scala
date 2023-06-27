@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AppointmentCalendarRow
-import typings.openui5.anon.AppointmentEndDate
-import typings.openui5.anon.CalendarRow
-import typings.openui5.anon.Copy
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -140,8 +136,8 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Adds some headerContent to the aggregation {@link #getHeaderContent headerContent}.
@@ -168,7 +164,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Adds some specialDate to the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -182,7 +178,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentCreate appointmentCreate} event of
       * this `sap.m.PlanningCalendarRow`.
@@ -198,20 +194,20 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def attachAppointmentCreate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentCreate appointmentCreate} event of
       * this `sap.m.PlanningCalendarRow`.
@@ -232,7 +228,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def attachAppointmentCreate(
       /**
@@ -243,7 +239,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
@@ -251,7 +247,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDragEnter appointmentDragEnter} event
       * of this `sap.m.PlanningCalendarRow`.
@@ -274,20 +270,20 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDragEnter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDragEnter appointmentDragEnter} event
       * of this `sap.m.PlanningCalendarRow`.
@@ -315,7 +311,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDragEnter(
       /**
@@ -326,7 +322,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
@@ -334,7 +330,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDrop appointmentDrop} event of this
       * `sap.m.PlanningCalendarRow`.
@@ -350,20 +346,20 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDrop(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDrop appointmentDrop} event of this
       * `sap.m.PlanningCalendarRow`.
@@ -384,7 +380,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDrop(
       /**
@@ -395,7 +391,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
@@ -403,7 +399,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentResize appointmentResize} event of
       * this `sap.m.PlanningCalendarRow`.
@@ -419,20 +415,20 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def attachAppointmentResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentResize appointmentResize} event of
       * this `sap.m.PlanningCalendarRow`.
@@ -453,7 +449,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def attachAppointmentResize(
       /**
@@ -464,7 +460,7 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendarRow` itself
       */
@@ -479,8 +475,8 @@ object sapMPlanningCalendarRowMod {
     def destroyAppointments(): this.type = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Destroys all the headerContent in the aggregation {@link #getHeaderContent headerContent}.
@@ -497,7 +493,7 @@ object sapMPlanningCalendarRowMod {
     def destroyIntervalHeaders(): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Destroys all the specialDates in the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -506,7 +502,7 @@ object sapMPlanningCalendarRowMod {
     def destroySpecialDates(): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentCreate appointmentCreate} event
       * of this `sap.m.PlanningCalendarRow`.
@@ -519,13 +515,13 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def detachAppointmentCreate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentCreateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -533,9 +529,9 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
-      * Detaches event handler `fnFunction` from the {@link #event:appointmentDragEnter appointmentDragEnter}
+      * Detaches event handler `fnFunction` from the {@link #event:appointmentDragEnter appointmentDragEnter }
       * event of this `sap.m.PlanningCalendarRow`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -546,13 +542,13 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit]
     ): this.type = js.native
     def detachAppointmentDragEnter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDragEnterEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -560,7 +556,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentDrop appointmentDrop} event of
       * this `sap.m.PlanningCalendarRow`.
@@ -573,13 +569,13 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit]
     ): this.type = js.native
     def detachAppointmentDrop(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentDropEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -587,7 +583,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentResize appointmentResize} event
       * of this `sap.m.PlanningCalendarRow`.
@@ -600,13 +596,13 @@ object sapMPlanningCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def detachAppointmentResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowAppointmentResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -614,22 +610,24 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.56
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentCreate appointmentCreate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentCreate(): this.type = js.native
-    def fireAppointmentCreate(/**
+    def fireAppointmentCreate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CalendarRow): this.type = js.native
+    mParameters: PlanningCalendarRow$AppointmentCreateEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.56
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.56
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentDragEnter appointmentDragEnter} to attached listeners.
       *
@@ -639,38 +637,44 @@ object sapMPlanningCalendarRowMod {
       * @returns Whether or not to prevent the default action
       */
     def fireAppointmentDragEnter(): Boolean = js.native
-    def fireAppointmentDragEnter(/**
+    def fireAppointmentDragEnter(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AppointmentCalendarRow): Boolean = js.native
+    mParameters: PlanningCalendarRow$AppointmentDragEnterEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.54
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.54
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentDrop appointmentDrop} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentDrop(): this.type = js.native
-    def fireAppointmentDrop(/**
+    def fireAppointmentDrop(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Copy): this.type = js.native
+    mParameters: PlanningCalendarRow$AppointmentDropEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.56
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.56
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentResize appointmentResize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentResize(): this.type = js.native
-    def fireAppointmentResize(/**
+    def fireAppointmentResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AppointmentEndDate): this.type = js.native
+    mParameters: PlanningCalendarRow$AppointmentResizeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getAppointments appointments}.
@@ -683,7 +687,7 @@ object sapMPlanningCalendarRowMod {
     def getAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getEnableAppointmentsCreate enableAppointmentsCreate}.
       *
@@ -702,7 +706,7 @@ object sapMPlanningCalendarRowMod {
     def getEnableAppointmentsCreate(): Boolean = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getEnableAppointmentsDragAndDrop enableAppointmentsDragAndDrop}.
       *
@@ -720,7 +724,7 @@ object sapMPlanningCalendarRowMod {
       * Hours:
       *  For views where the displayed intervals are hours, the placeholder snaps on every interval of 30 minutes.
       * After the appointment is dropped, the {@link #event:appointmentDrop appointmentDrop} event is fired,
-      * containing the new start and end JavaScript date objects.
+      * containing the new start and end UI5Date or JavaScript Date objects.
       *  For example, an appointment with start date "Nov 13 2017 12:17:00" and end date "Nov 13 2017 12:45:30"
       * lasts for 27 minutes and 30 seconds. After dragging and dropping to a new time, the possible new start
       * date has time that is either "hh:00:00" or "hh:30:00" because of the placeholder that can snap on every
@@ -730,12 +734,14 @@ object sapMPlanningCalendarRowMod {
       * Days:
       *  For views where intervals are days, the placeholder highlights the whole day and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed date but the original time (hh:mm:ss) is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed date but the original time (hh:mm:ss)
+      * is preserved.
       *
       * Months:
       *  For views where intervals are months, the placeholder highlights the whole month and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed month but the original date and time is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed month but the original date and time
+      * is preserved.
       *
       * **Note:** In "One month" view, the appointments are not draggable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not draggable.
@@ -747,7 +753,7 @@ object sapMPlanningCalendarRowMod {
     def getEnableAppointmentsDragAndDrop(): Boolean = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getEnableAppointmentsResize enableAppointmentsResize}.
       *
@@ -759,15 +765,15 @@ object sapMPlanningCalendarRowMod {
       *
       * Hours: For views where the displayed intervals are hours, the appointment snaps on every interval of
       * 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize} event
-      * is fired, containing the new start and end JavaScript date objects.
+      * is fired, containing the new start and end UI5Date or JavaScript Date objects.
       *
       * Days: For views where intervals are days, the appointment snaps to the end of the day. After the resize
       * is finished, the {@link #event:appointmentResize appointmentResize} event is fired, containing the new
-      * start and end JavaScript date objects. The `endDate` time is changed to 00:00:00
+      * start and end UI5Date or JavaScript Date objects. The `endDate` time is changed to 00:00:00
       *
-      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link
-      * #event:appointmentResize appointmentResize} event is fired, containing the new start and end JavaScript
-      * date objects. The `endDate` is set to the 00:00:00 and first day of the following month.
+      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects. The `endDate` is
+      * set to the 00:00:00 and first day of the following month.
       *
       * **Notes:** In "One month" view, the appointments are not resizable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not resizable
@@ -779,8 +785,8 @@ object sapMPlanningCalendarRowMod {
     def getEnableAppointmentsResize(): Boolean = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Gets content of aggregation {@link #getHeaderContent headerContent}.
@@ -826,7 +832,7 @@ object sapMPlanningCalendarRowMod {
     /**
       * Gets current value of property {@link #getNoAppointmentsText noAppointmentsText}.
       *
-      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments}
+      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments }
       * are assigned.
       *
       * @returns Value of property `noAppointmentsText`
@@ -840,7 +846,7 @@ object sapMPlanningCalendarRowMod {
       * are from 0 to 6 (other values are ignored). If not set, the weekend defined in the locale settings is
       * displayed as non-working days.
       *
-      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Day`.
       *
       * @returns Value of property `nonWorkingDays`
@@ -853,7 +859,7 @@ object sapMPlanningCalendarRowMod {
       * Determines whether the provided hours are displayed as non-working hours. Valid values inside the array
       * are from 0 to 23 (other values are ignored).
       *
-      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Hour`.
       *
       * @returns Value of property `nonWorkingHours`
@@ -875,7 +881,7 @@ object sapMPlanningCalendarRowMod {
     def getSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets content of aggregation {@link #getSpecialDates specialDates}.
       *
@@ -906,8 +912,8 @@ object sapMPlanningCalendarRowMod {
     def getTitle(): String = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments
-      * appointments}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments appointments}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -919,8 +925,8 @@ object sapMPlanningCalendarRowMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getHeaderContent headerContent}.
@@ -936,8 +942,8 @@ object sapMPlanningCalendarRowMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getIntervalHeaders
-      * intervalHeaders}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getIntervalHeaders intervalHeaders}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -949,7 +955,7 @@ object sapMPlanningCalendarRowMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks for the provided `sap.ui.unified.DateTypeRange` in the aggregation {@link #getSpecialDates specialDates}.
       * and returns its index if found or -1 otherwise.
@@ -982,8 +988,8 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Inserts a headerContent into the aggregation {@link #getHeaderContent headerContent}.
@@ -1022,7 +1028,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Inserts a specialDate into the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1051,8 +1057,8 @@ object sapMPlanningCalendarRowMod {
     def removeAllAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Removes all the controls from the aggregation {@link #getHeaderContent headerContent}.
@@ -1073,7 +1079,7 @@ object sapMPlanningCalendarRowMod {
     def removeAllIntervalHeaders(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes all the controls from the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1108,8 +1114,8 @@ object sapMPlanningCalendarRowMod {
       */
     vHeaderContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Removes a headerContent from the aggregation {@link #getHeaderContent headerContent}.
@@ -1152,7 +1158,7 @@ object sapMPlanningCalendarRowMod {
       */
     vSpecialDate: String): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes a specialDate from the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1170,7 +1176,7 @@ object sapMPlanningCalendarRowMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getEnableAppointmentsCreate enableAppointmentsCreate}.
       *
@@ -1195,7 +1201,7 @@ object sapMPlanningCalendarRowMod {
     bEnableAppointmentsCreate: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getEnableAppointmentsDragAndDrop enableAppointmentsDragAndDrop}.
       *
@@ -1213,7 +1219,7 @@ object sapMPlanningCalendarRowMod {
       * Hours:
       *  For views where the displayed intervals are hours, the placeholder snaps on every interval of 30 minutes.
       * After the appointment is dropped, the {@link #event:appointmentDrop appointmentDrop} event is fired,
-      * containing the new start and end JavaScript date objects.
+      * containing the new start and end UI5Date or JavaScript Date objects.
       *  For example, an appointment with start date "Nov 13 2017 12:17:00" and end date "Nov 13 2017 12:45:30"
       * lasts for 27 minutes and 30 seconds. After dragging and dropping to a new time, the possible new start
       * date has time that is either "hh:00:00" or "hh:30:00" because of the placeholder that can snap on every
@@ -1223,12 +1229,14 @@ object sapMPlanningCalendarRowMod {
       * Days:
       *  For views where intervals are days, the placeholder highlights the whole day and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed date but the original time (hh:mm:ss) is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed date but the original time (hh:mm:ss)
+      * is preserved.
       *
       * Months:
       *  For views where intervals are months, the placeholder highlights the whole month and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed month but the original date and time is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed month but the original date and time
+      * is preserved.
       *
       * **Note:** In "One month" view, the appointments are not draggable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not draggable.
@@ -1248,7 +1256,7 @@ object sapMPlanningCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getEnableAppointmentsResize enableAppointmentsResize}.
       *
@@ -1260,15 +1268,15 @@ object sapMPlanningCalendarRowMod {
       *
       * Hours: For views where the displayed intervals are hours, the appointment snaps on every interval of
       * 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize} event
-      * is fired, containing the new start and end JavaScript date objects.
+      * is fired, containing the new start and end UI5Date or JavaScript Date objects.
       *
       * Days: For views where intervals are days, the appointment snaps to the end of the day. After the resize
       * is finished, the {@link #event:appointmentResize appointmentResize} event is fired, containing the new
-      * start and end JavaScript date objects. The `endDate` time is changed to 00:00:00
+      * start and end UI5Date or JavaScript Date objects. The `endDate` time is changed to 00:00:00
       *
-      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link
-      * #event:appointmentResize appointmentResize} event is fired, containing the new start and end JavaScript
-      * date objects. The `endDate` is set to the 00:00:00 and first day of the following month.
+      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects. The `endDate` is
+      * set to the 00:00:00 and first day of the following month.
       *
       * **Notes:** In "One month" view, the appointments are not resizable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not resizable
@@ -1318,7 +1326,7 @@ object sapMPlanningCalendarRowMod {
     /**
       * Sets a new value for property {@link #getNoAppointmentsText noAppointmentsText}.
       *
-      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments}
+      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments }
       * are assigned.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1338,7 +1346,7 @@ object sapMPlanningCalendarRowMod {
       * are from 0 to 6 (other values are ignored). If not set, the weekend defined in the locale settings is
       * displayed as non-working days.
       *
-      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Day`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1357,7 +1365,7 @@ object sapMPlanningCalendarRowMod {
       * Determines whether the provided hours are displayed as non-working hours. Valid values inside the array
       * are from 0 to 23 (other values are ignored).
       *
-      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Hour`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1419,19 +1427,231 @@ object sapMPlanningCalendarRowMod {
     sTitle: String): this.type = js.native
   }
   
+  trait PlanningCalendarRow$AppointmentCreateEventParameters extends StObject {
+    
+    /**
+      * The row of the appointment.
+      */
+    var calendarRow: js.UndefOr[PlanningCalendarRow] = js.undefined
+    
+    /**
+      * End date of the created appointment, as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the created appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object PlanningCalendarRow$AppointmentCreateEventParameters {
+    
+    inline def apply(): PlanningCalendarRow$AppointmentCreateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendarRow$AppointmentCreateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarRow$AppointmentCreateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCalendarRow(value: PlanningCalendarRow): Self = StObject.set(x, "calendarRow", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarRowUndefined: Self = StObject.set(x, "calendarRow", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendarRow$AppointmentDragEnterEventParameters extends StObject {
+    
+    /**
+      * The dropped appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * The row of the appointment.
+      */
+    var calendarRow: js.UndefOr[PlanningCalendarRow] = js.undefined
+    
+    /**
+      * Dropped appointment end date as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the dropped appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object PlanningCalendarRow$AppointmentDragEnterEventParameters {
+    
+    inline def apply(): PlanningCalendarRow$AppointmentDragEnterEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendarRow$AppointmentDragEnterEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarRow$AppointmentDragEnterEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setCalendarRow(value: PlanningCalendarRow): Self = StObject.set(x, "calendarRow", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarRowUndefined: Self = StObject.set(x, "calendarRow", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendarRow$AppointmentDropEventParameters extends StObject {
+    
+    /**
+      * The dropped appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * The row of the appointment.
+      */
+    var calendarRow: js.UndefOr[PlanningCalendarRow] = js.undefined
+    
+    /**
+      * The drop type. If true - it's "Copy", if false - it's "Move".
+      */
+    var copy: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Dropped appointment end date as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the dropped appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object PlanningCalendarRow$AppointmentDropEventParameters {
+    
+    inline def apply(): PlanningCalendarRow$AppointmentDropEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendarRow$AppointmentDropEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarRow$AppointmentDropEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setCalendarRow(value: PlanningCalendarRow): Self = StObject.set(x, "calendarRow", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarRowUndefined: Self = StObject.set(x, "calendarRow", js.undefined)
+      
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendarRow$AppointmentResizeEventParameters extends StObject {
+    
+    /**
+      * The resized appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * End date of the resized appointment, as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the resized appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object PlanningCalendarRow$AppointmentResizeEventParameters {
+    
+    inline def apply(): PlanningCalendarRow$AppointmentResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendarRow$AppointmentResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendarRow$AppointmentResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  type PlanningCalendarRowAppointmentCreateEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentCreateEventParameters]
+  
+  type PlanningCalendarRowAppointmentCreateEventParameters = PlanningCalendarRow$AppointmentCreateEventParameters
+  
+  type PlanningCalendarRowAppointmentDragEnterEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDragEnterEventParameters]
+  
+  type PlanningCalendarRowAppointmentDragEnterEventParameters = PlanningCalendarRow$AppointmentDragEnterEventParameters
+  
+  type PlanningCalendarRowAppointmentDropEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDropEventParameters]
+  
+  type PlanningCalendarRowAppointmentDropEventParameters = PlanningCalendarRow$AppointmentDropEventParameters
+  
+  type PlanningCalendarRowAppointmentResizeEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentResizeEventParameters]
+  
+  type PlanningCalendarRowAppointmentResizeEventParameters = PlanningCalendarRow$AppointmentResizeEventParameters
+  
   trait PlanningCalendarRowSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Fired if an appointment is created.
       */
-    var appointmentCreate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentCreate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentCreateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Fired if an appointment is dropped.
       *
@@ -1442,21 +1662,36 @@ object sapMPlanningCalendarRowMod {
       * the event to prevent this default behavior. In this case, the placeholder will no longer be available
       * and it will not be possible to drop the appointment in the row.
       */
-    var appointmentDragEnter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentDragEnter: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDragEnterEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Fired if an appointment is dropped.
       */
-    var appointmentDrop: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentDrop: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDropEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Fired if an appointment is resized.
       */
-    var appointmentResize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentResize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The appointments to be displayed in the row. Appointments that outside the visible time frame are not
@@ -1469,7 +1704,7 @@ object sapMPlanningCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Determines whether the appointments can be created by dragging on empty cells.
       *
@@ -1484,7 +1719,7 @@ object sapMPlanningCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines whether the appointments in the row are draggable.
       *
@@ -1500,7 +1735,7 @@ object sapMPlanningCalendarRowMod {
       * Hours:
       *  For views where the displayed intervals are hours, the placeholder snaps on every interval of 30 minutes.
       * After the appointment is dropped, the {@link #event:appointmentDrop appointmentDrop} event is fired,
-      * containing the new start and end JavaScript date objects.
+      * containing the new start and end UI5Date or JavaScript Date objects.
       *  For example, an appointment with start date "Nov 13 2017 12:17:00" and end date "Nov 13 2017 12:45:30"
       * lasts for 27 minutes and 30 seconds. After dragging and dropping to a new time, the possible new start
       * date has time that is either "hh:00:00" or "hh:30:00" because of the placeholder that can snap on every
@@ -1510,12 +1745,14 @@ object sapMPlanningCalendarRowMod {
       * Days:
       *  For views where intervals are days, the placeholder highlights the whole day and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed date but the original time (hh:mm:ss) is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed date but the original time (hh:mm:ss)
+      * is preserved.
       *
       * Months:
       *  For views where intervals are months, the placeholder highlights the whole month and after the appointment
       * is dropped the {@link #event:appointmentDrop appointmentDrop} event is fired. The event contains the
-      * new start and end JavaScript date objects with changed month but the original date and time is preserved.
+      * new start and end UI5Date or JavaScript Date objects with changed month but the original date and time
+      * is preserved.
       *
       * **Note:** In "One month" view, the appointments are not draggable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not draggable.
@@ -1525,7 +1762,7 @@ object sapMPlanningCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Determines whether the appointments in the row are resizable.
       *
@@ -1535,15 +1772,15 @@ object sapMPlanningCalendarRowMod {
       *
       * Hours: For views where the displayed intervals are hours, the appointment snaps on every interval of
       * 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize} event
-      * is fired, containing the new start and end JavaScript date objects.
+      * is fired, containing the new start and end UI5Date or JavaScript Date objects.
       *
       * Days: For views where intervals are days, the appointment snaps to the end of the day. After the resize
       * is finished, the {@link #event:appointmentResize appointmentResize} event is fired, containing the new
-      * start and end JavaScript date objects. The `endDate` time is changed to 00:00:00
+      * start and end UI5Date or JavaScript Date objects. The `endDate` time is changed to 00:00:00
       *
-      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link
-      * #event:appointmentResize appointmentResize} event is fired, containing the new start and end JavaScript
-      * date objects. The `endDate` is set to the 00:00:00 and first day of the following month.
+      * Months: For views where intervals are months, the appointment snaps to the end of the month. The {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects. The `endDate` is
+      * set to the 00:00:00 and first day of the following month.
       *
       * **Notes:** In "One month" view, the appointments are not resizable on small screen (as there they are
       * displayed as a list below the dates). Group appointments are also not resizable
@@ -1553,8 +1790,8 @@ object sapMPlanningCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.67
-      * @EXPERIMENTAL (since 1.67) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.67
+      * @experimental (since 1.67) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Holds the header content of the row.
@@ -1590,7 +1827,7 @@ object sapMPlanningCalendarRowMod {
     var key: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments}
+      * Defines the text that is displayed when no {@link sap.ui.unified.CalendarAppointment CalendarAppointments }
       * are assigned.
       */
     var noAppointmentsText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
@@ -1600,7 +1837,7 @@ object sapMPlanningCalendarRowMod {
       * are from 0 to 6 (other values are ignored). If not set, the weekend defined in the locale settings is
       * displayed as non-working days.
       *
-      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working days are visualized if the `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Day`.
       */
     var nonWorkingDays: js.UndefOr[
@@ -1611,7 +1848,7 @@ object sapMPlanningCalendarRowMod {
       * Determines whether the provided hours are displayed as non-working hours. Valid values inside the array
       * are from 0 to 23 (other values are ignored).
       *
-      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView}
+      * **Note:** The non-working hours are visualized if `intervalType` property of the {@link sap.m.PlanningCalendarView }
       * is set to `Hour`.
       */
     var nonWorkingHours: js.UndefOr[
@@ -1629,7 +1866,7 @@ object sapMPlanningCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Holds the special dates in the context of a row. A single date or a date range can be set.
       *
@@ -1661,19 +1898,27 @@ object sapMPlanningCalendarRowMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PlanningCalendarRowSettings] (val x: Self) extends AnyVal {
       
-      inline def setAppointmentCreate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentCreate", js.Any.fromFunction1(value))
+      inline def setAppointmentCreate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentCreateEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentCreate", js.Any.fromFunction1(value))
       
       inline def setAppointmentCreateUndefined: Self = StObject.set(x, "appointmentCreate", js.undefined)
       
-      inline def setAppointmentDragEnter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentDragEnter", js.Any.fromFunction1(value))
+      inline def setAppointmentDragEnter(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDragEnterEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentDragEnter", js.Any.fromFunction1(value))
       
       inline def setAppointmentDragEnterUndefined: Self = StObject.set(x, "appointmentDragEnter", js.undefined)
       
-      inline def setAppointmentDrop(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentDrop", js.Any.fromFunction1(value))
+      inline def setAppointmentDrop(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentDropEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentDrop", js.Any.fromFunction1(value))
       
       inline def setAppointmentDropUndefined: Self = StObject.set(x, "appointmentDrop", js.undefined)
       
-      inline def setAppointmentResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentResize", js.Any.fromFunction1(value))
+      inline def setAppointmentResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendarRow$AppointmentResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentResize", js.Any.fromFunction1(value))
       
       inline def setAppointmentResizeUndefined: Self = StObject.set(x, "appointmentResize", js.undefined)
       

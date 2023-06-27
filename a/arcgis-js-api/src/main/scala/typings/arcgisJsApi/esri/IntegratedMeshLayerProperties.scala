@@ -13,17 +13,17 @@ trait IntegratedMeshLayerProperties
      with APIKeyMixinProperties {
   
   /**
-    * Specifies how the mesh is placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#elevationInfo)
-    */
+  		 * Specifies how the mesh is placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[IntegratedMeshLayerElevationInfo] = js.undefined
   
   /**
-    * A collection of [SceneModification](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html) with polygons and types to apply client-side modifications.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#modifications)
-    */
+  		 * A collection of [SceneModification](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html) with polygons and types to apply client-side modifications.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html#modifications)
+  		 */
   var modifications: js.UndefOr[SceneModificationsProperties] = js.undefined
 }
 object IntegratedMeshLayerProperties {

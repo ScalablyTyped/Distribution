@@ -361,32 +361,32 @@ object Tab {
   trait AjaxSettings extends StObject {
     
     /** It specifies, whether to enable or disable asynchronous request.
-      * @Default {true}
+      * @default {true}
       */
     var async: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the page will be cached in the web browser.
-      * @Default {false}
+      * @default {false}
       */
     var cache: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the type of data is send in the query string.
-      * @Default {html}
+      * @default {html}
       */
     var contentType: js.UndefOr[String] = js.undefined
     
     /** It specifies the data as an object, will be passed in the query string.
-      * @Default {{}}
+      * @default {{}}
       */
     var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
-      * @Default {html}
+      * @default {html}
       */
     var dataType: js.UndefOr[String] = js.undefined
     
     /** It specifies the HTTP request type.
-      * @Default {get}
+      * @default {get}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -889,7 +889,7 @@ object Tab {
     var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Tab items interaction with keyboard keys, like headers active navigation.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
@@ -902,7 +902,7 @@ object Tab {
     var beforeItemRemove: js.UndefOr[js.Function1[/* e */ BeforeItemRemoveEventArgs, Unit]] = js.undefined
     
     /** Allow to collapsing the active item, while click on the active header.
-      * @Default {false}
+      * @default {false}
       */
     var collapsible: js.UndefOr[Boolean] = js.undefined
     
@@ -919,77 +919,77 @@ object Tab {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Disables the given tab headers and content panels.
-      * @Default {[]}
+      * @default {[]}
       */
     var disabledItemIndex: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Specifies the animation behavior of the tab.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Save current model value to browser cookies for state maintains. While refresh the Tab control page the model value apply from browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Display Right to Left direction for headers and panels text of tab.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to enable scrolling for Tab header.
-      * @Default {false}
+      * @default {false}
       */
     var enableTabScroll: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the tab control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the given tab headers and content panels.
-      * @Default {[]}
+      * @default {[]}
       */
     var enabledItemIndex: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** The event API to bind the action for active the tab items.
-      * @Default {click}
+      * @default {click}
       */
     var events: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of Tab header as top, bottom, left or right. See below to get available Position
-      * @Default {top}
+      * @default {top}
       */
     var headerPosition: js.UndefOr[String | Position] = js.undefined
     
     /** Set the height of the tab header element. Default this property value is null, so height take content height.
-      * @Default {null}
+      * @default {null}
       */
     var headerSize: js.UndefOr[String | Double] = js.undefined
     
     /** Height set the outer panel element. Default this property value is null, so height take content height.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Adjust the content panel height for given option (content, auto and fill), by default panels height adjust based on the content.See below to get available HeightAdjustMode
-      * @Default {content}
+      * @default {content}
       */
     var heightAdjustMode: js.UndefOr[String | HeightAdjustMode] = js.undefined
     
     /** Specifies to hide a pane of Tab control.
-      * @Default {[]}
+      * @default {[]}
       */
     var hiddenItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the HTML Attributes of the Tab.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** The idPrefix property appends the given string on the added tab item idâ€™s in runtime.
-      * @Default {ej-tab-}
+      * @default {ej-tab-}
       */
     var idPrefix: js.UndefOr[String] = js.undefined
     
@@ -1006,27 +1006,27 @@ object Tab {
     var itemRemove: js.UndefOr[js.Function1[/* e */ ItemRemoveEventArgs, Unit]] = js.undefined
     
     /** Specifies the Tab header in active for given index value.
-      * @Default {0}
+      * @default {0}
       */
     var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Display the close button for each tab items. While clicking on the close icon, particular tab item will be removed.
-      * @Default {false}
+      * @default {false}
       */
     var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /** Display the Reload button for each tab items.
-      * @Default {false}
+      * @default {false}
       */
     var showReloadIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Tab panels and headers to be displayed in rounded corner style.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Set the width for outer panel element, if not itâ€™s take parent width.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

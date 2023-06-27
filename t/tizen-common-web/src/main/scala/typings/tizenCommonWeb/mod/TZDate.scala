@@ -34,9 +34,9 @@ open class TZDate () extends StObject {
     *
     * @returns The new TZDate by adding a duration.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def addDuration(duration: TimeDuration): TZDate = js.native
   
@@ -60,9 +60,9 @@ open class TZDate () extends StObject {
     * @returns The duration in milliseconds between the two date/time objects
     * (or in days for comparison between dates with no time component).
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def difference(other: TZDate): TimeDuration = js.native
   
@@ -75,9 +75,9 @@ open class TZDate () extends StObject {
     *
     * @returns true, if the Date/Time is earlier than the one passed in argument.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def earlierThan(other: TZDate): Boolean = js.native
   
@@ -91,9 +91,9 @@ open class TZDate () extends StObject {
     *
     * @returns true if the 2 date/times are the same.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def equalsTo(other: TZDate): Boolean = js.native
   
@@ -155,7 +155,7 @@ open class TZDate () extends StObject {
     *
     * @returns The date of the next daylight saving transition (after the instant identified by the TZDate).
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getNextDSTTransition(): TZDate | Null = js.native
   
@@ -164,7 +164,7 @@ open class TZDate () extends StObject {
     *
     * @returns The date of the previous daylight saving transition (before the instant identified by the TZDate).
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getPreviousDSTTransition(): TZDate | Null = js.native
   
@@ -199,7 +199,7 @@ open class TZDate () extends StObject {
     * @returns DOMString The abbreviation of the time zone (such as "EST")
     * If TZDate is invalid, it will return 'Invalid Date'.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getTimezoneAbbreviation(): String = js.native
   
@@ -271,7 +271,7 @@ open class TZDate () extends StObject {
     *
     * @returns The flag indicating whether the daylight saving are in effect.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def isDST(): Boolean = js.native
   
@@ -284,9 +284,9 @@ open class TZDate () extends StObject {
     *
     * @returns true, if the Date/Time is later than the one passed in argument.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def laterThan(other: TZDate): Boolean = js.native
   
@@ -298,7 +298,7 @@ open class TZDate () extends StObject {
     *
     * @returns The offset from UTC in seconds.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def secondsFromUTC(): Double = js.native
   
@@ -448,7 +448,7 @@ open class TZDate () extends StObject {
     *
     * @returns The new TZDate in local Timezone.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def toLocalTimezone(): TZDate = js.native
   
@@ -480,11 +480,11 @@ open class TZDate () extends StObject {
     *
     * @returns The new TZDate in given Timezone.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if the provided TZID
+    * @throws WebAPIException with error type InvalidValuesError, if the provided TZID
     * is not recognized as a valid timezone identifier.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def toTimezone(tzid: String): TZDate = js.native
   
@@ -493,7 +493,7 @@ open class TZDate () extends StObject {
     *
     * @returns The Date/Time in UTC.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def toUTC(): TZDate = js.native
 }

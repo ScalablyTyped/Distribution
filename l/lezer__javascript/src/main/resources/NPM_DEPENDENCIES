@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lezer/javascript" : "1.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lezer/javascript" : "1.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

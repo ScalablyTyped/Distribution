@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Contains descriptive metadata about a document. It inherits all of the properties and methods described in the HTMLElement interface. */
+/**
+  * Contains descriptive metadata about a document. It inherits all of the properties and methods described in the HTMLElement interface.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMetaElement)
+  */
 @js.native
 trait HTMLMetaElement
   extends StObject

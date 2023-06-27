@@ -11,10 +11,10 @@ object esriWidgetsExpandMod {
   @JSImport("esri/widgets/Expand", JSImport.Namespace)
   @js.native
   /**
-    * The Expand widget acts as a clickable button for opening a widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html)
-    */
+  		 * The Expand widget acts as a clickable button for opening a widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html)
+  		 */
   open class ^ ()
     extends StObject
        with Expand {

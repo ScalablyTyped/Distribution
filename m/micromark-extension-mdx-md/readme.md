@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-extension-mdx-md
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 micromark extension to turn some markdown features off for MDX

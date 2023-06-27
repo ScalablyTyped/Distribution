@@ -1,7 +1,7 @@
 
 # Scala.js typings for lru-cache
 
-Typings are for version 9.1.1
+Typings are for version 10.0.0
 
 ## Library description:
 A cache object that deletes the least-recently-used items.

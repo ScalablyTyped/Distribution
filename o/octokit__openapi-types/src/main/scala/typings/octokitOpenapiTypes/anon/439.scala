@@ -6,26 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `439` extends StObject {
   
-  var sha: js.UndefOr[String] = js.undefined
+  var path: Teamid
   
-  var url: js.UndefOr[String] = js.undefined
+  var query: js.UndefOr[Page] = js.undefined
 }
 object `439` {
   
-  inline def apply(): `439` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: Teamid): `439` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`439`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `439`] (val x: Self) extends AnyVal {
     
-    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setPath(value: Teamid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

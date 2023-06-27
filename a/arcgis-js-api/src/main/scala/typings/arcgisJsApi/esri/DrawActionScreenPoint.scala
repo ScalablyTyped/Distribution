@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DrawActionScreenPoint extends StObject {
   
   /**
-    * The x coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#ScreenPoint)
-    */
+  		 * The x coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#ScreenPoint)
+  		 */
   var x: Double
   
   /**
-    * The y coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#ScreenPoint)
-    */
+  		 * The y coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#ScreenPoint)
+  		 */
   var y: Double
 }
 object DrawActionScreenPoint {

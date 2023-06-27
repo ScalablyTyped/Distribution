@@ -10,19 +10,19 @@ trait LineSymbolProperties
      with SymbolProperties {
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
+  		 */
   var `type`: js.UndefOr[`simple-line`] = js.undefined
   
   /**
-    * The width of the symbol in points.
-    *
-    * @default 0.75
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
-    */
+  		 * The width of the symbol in points.
+  		 *
+  		 * @default 0.75
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
+  		 */
   var width: js.UndefOr[Double | String] = js.undefined
 }
 object LineSymbolProperties {

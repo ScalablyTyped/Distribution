@@ -921,7 +921,7 @@ trait Actionsbillingusage extends StObject {
     * Hovercard
     * @description Hovercard
     */
-  var hovercard: `445`
+  var hovercard: `523`
   
   /**
     * Import
@@ -1130,6 +1130,12 @@ trait Actionsbillingusage extends StObject {
     * @description Marketplace Purchase
     */
   var `marketplace-purchase`: Login
+  
+  /**
+    * Merge Group
+    * @description A group of pull requests that the merge queue has grouped together to be merged.
+    */
+  var `merge-group`: Baseref
   
   /**
     * Merged upstream
@@ -1626,18 +1632,6 @@ trait Actionsbillingusage extends StObject {
   /** @description A credit given to a user for a repository security advisory. */
   var `repository-advisory-credit`: StateType
   
-  /**
-    * @description The type of credit the user is receiving.
-    * @enum {string}
-    */
-  var `repository-advisory-credit-types`: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
-  
-  /**
-    * @description The package's language or package management ecosystem.
-    * @enum {string}
-    */
-  var `repository-advisory-ecosystems`: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
-  
   var `repository-advisory-update`: Summary
   
   /** @description A product affected by the vulnerability detailed in a repository security advisory. */
@@ -1659,43 +1653,43 @@ trait Actionsbillingusage extends StObject {
     * Repository Rule
     * @description A repository rule.
     */
-  var `repository-rule`: `423` | ParametersType | `424` | `425` | `426` | `427` | `428` | `436` | `430` | `431` | `432` | `433` | `434` | `435`
+  var `repository-rule`: `499` | ParametersType | `501` | `502` | `504` | `505` | `506` | `514` | `508` | `509` | `510` | `511` | `512` | `513`
   
   /**
     * branch_name_pattern
     * @description Parameters to be used for the branch_name_pattern rule
     */
-  var `repository-rule-branch-name-pattern`: `434`
+  var `repository-rule-branch-name-pattern`: `512`
   
   /**
     * commit_author_email_pattern
     * @description Parameters to be used for the commit_author_email_pattern rule
     */
-  var `repository-rule-commit-author-email-pattern`: `432`
+  var `repository-rule-commit-author-email-pattern`: `510`
   
   /**
     * commit_message_pattern
     * @description Parameters to be used for the commit_message_pattern rule
     */
-  var `repository-rule-commit-message-pattern`: `431`
+  var `repository-rule-commit-message-pattern`: `509`
   
   /**
     * committer_email_pattern
     * @description Parameters to be used for the committer_email_pattern rule
     */
-  var `repository-rule-committer-email-pattern`: `433`
+  var `repository-rule-committer-email-pattern`: `511`
   
   /**
     * creation
-    * @description Parameters to be used for the creation rule
+    * @description Only allow users with bypass permission to create matching refs.
     */
-  var `repository-rule-creation`: `423`
+  var `repository-rule-creation`: `499`
   
   /**
     * deletion
-    * @description Parameters to be used for the deletion rule
+    * @description Only allow users with bypass permissions to delete matching refs.
     */
-  var `repository-rule-deletion`: `424`
+  var `repository-rule-deletion`: `501`
   
   /**
     * @description The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page (`evaluate` is only available with GitHub Enterprise).
@@ -1705,9 +1699,9 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * non_fast_forward
-    * @description Parameters to be used for the non_fast_forward rule
+    * @description Prevent users with push access from force pushing to branches.
     */
-  var `repository-rule-non-fast-forward`: `430`
+  var `repository-rule-non-fast-forward`: `508`
   
   /**
     * StatusCheckConfiguration
@@ -1717,43 +1711,43 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * pull_request
-    * @description Parameters to be used for the pull_request rule
+    * @description Require all commits be made to a non-target branch and submitted via a pull request before they can be merged.
     */
-  var `repository-rule-pull-request`: `428`
+  var `repository-rule-pull-request`: `506`
   
   /**
     * required_deployments
-    * @description Parameters to be used for the required_deployments rule
+    * @description Choose which environments must be successfully deployed to before branches can be merged into a branch that matches this rule.
     */
-  var `repository-rule-required-deployments`: `426`
+  var `repository-rule-required-deployments`: `504`
   
   /**
     * required_linear_history
-    * @description Parameters to be used for the required_linear_history rule
+    * @description Prevent merge commits from being pushed to matching branches.
     */
-  var `repository-rule-required-linear-history`: `425`
+  var `repository-rule-required-linear-history`: `502`
   
   /**
     * required_signatures
-    * @description Parameters to be used for the required_signatures rule
+    * @description Commits pushed to matching branches must have verified signatures.
     */
-  var `repository-rule-required-signatures`: `427`
+  var `repository-rule-required-signatures`: `505`
   
   /**
     * required_status_checks
-    * @description Parameters to be used for the required_status_checks rule
+    * @description Choose which status checks must pass before branches can be merged into a branch that matches this rule. When enabled, commits must first be pushed to another branch, then merged or pushed directly to a branch that matches this rule after status checks have passed.
     */
-  var `repository-rule-required-status-checks`: `429`
+  var `repository-rule-required-status-checks`: `507`
   
   /**
     * tag_name_pattern
     * @description Parameters to be used for the tag_name_pattern rule
     */
-  var `repository-rule-tag-name-pattern`: `435`
+  var `repository-rule-tag-name-pattern`: `513`
   
   /**
     * update
-    * @description Parameters to be used for the update rule
+    * @description Only allow users with bypass permission to update matching refs.
     */
   var `repository-rule-update`: ParametersType
   
@@ -1876,6 +1870,18 @@ trait Actionsbillingusage extends StObject {
   
   /** @description Represents an 'issue_title' secret scanning location type. This location type shows that a secret was detected in the title of an issue. */
   var `secret-scanning-location-issue-title`: Issuetitleurl
+  
+  /**
+    * @description The type of credit the user is receiving.
+    * @enum {string}
+    */
+  var `security-advisory-credit-types`: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
+  
+  /**
+    * @description The package's language or package management ecosystem.
+    * @enum {string}
+    */
+  var `security-advisory-ecosystems`: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
   
   var `security-and-analysis`: Secretscanning | Null
   
@@ -2503,6 +2509,8 @@ trait Actionsbillingusage extends StObject {
   
   var `webhook-merge-group-checks-requested`: Mergegroup
   
+  var `webhook-merge-group-destroyed`: ActionInstallation
+  
   /** meta deleted event */
   var `webhook-meta-deleted`: Hook
   
@@ -2555,13 +2563,13 @@ trait Actionsbillingusage extends StObject {
   var `webhook-personal-access-token-request-approved`: Personalaccesstokenrequest
   
   /** personal_access_token_request cancelled event */
-  var `webhook-personal-access-token-request-cancelled`: ActionInstallation
+  var `webhook-personal-access-token-request-cancelled`: OrganizationPersonalaccesstokenrequest
   
   /** personal_access_token_request created event */
-  var `webhook-personal-access-token-request-created`: OrganizationPersonalaccesstokenrequest
+  var `webhook-personal-access-token-request-created`: PersonalaccesstokenrequestSender
   
   /** personal_access_token_request denied event */
-  var `webhook-personal-access-token-request-denied`: PersonalaccesstokenrequestSender
+  var `webhook-personal-access-token-request-denied`: ActionInstallationOrganization
   
   var `webhook-ping`: Zen
   
@@ -3100,7 +3108,7 @@ object Actionsbillingusage {
     `hook-delivery`: Duration,
     `hook-delivery-item`: Deliveredat,
     `hook-response`: MessageStatus,
-    hovercard: `445`,
+    hovercard: `523`,
     `import`: Authorscount,
     installation: Accesstokensurl,
     `installation-token`: Expiresat,
@@ -3137,6 +3145,7 @@ object Actionsbillingusage {
     `marketplace-account`: Organizationbillingemail,
     `marketplace-listing-plan`: Accountsurl,
     `marketplace-purchase`: Login,
+    `merge-group`: Baseref,
     `merged-upstream`: Basebranch,
     metadata: StringDictionary[js.UndefOr[String | Double | Boolean | Null]],
     migration: Excludemetadata,
@@ -3199,8 +3208,7 @@ object Actionsbillingusage {
     `reaction-rollup`: Confused,
     `referenced-workflow`: PathRef,
     `referrer-traffic`: Referrer,
-    release: Assets,
-    `release-asset`: Browserdownloadurl
+    release: Assets
   ): Actionsbillingusage = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], artifact = artifact.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any], autolink = autolink.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], codespace = codespace.asInstanceOf[js.Any], collaborator = collaborator.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], contributor = contributor.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], discussion = discussion.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], feed = feed.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], hovercard = hovercard.asInstanceOf[js.Any], installation = installation.asInstanceOf[js.Any], integration = integration.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], migration = migration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reaction = reaction.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
@@ -3364,6 +3372,7 @@ object Actionsbillingusage {
     __obj.updateDynamic("marketplace-account")(`marketplace-account`.asInstanceOf[js.Any])
     __obj.updateDynamic("marketplace-listing-plan")(`marketplace-listing-plan`.asInstanceOf[js.Any])
     __obj.updateDynamic("marketplace-purchase")(`marketplace-purchase`.asInstanceOf[js.Any])
+    __obj.updateDynamic("merge-group")(`merge-group`.asInstanceOf[js.Any])
     __obj.updateDynamic("merged-upstream")(`merged-upstream`.asInstanceOf[js.Any])
     __obj.updateDynamic("milestoned-issue-event")(`milestoned-issue-event`.asInstanceOf[js.Any])
     __obj.updateDynamic("minimal-repository")(`minimal-repository`.asInstanceOf[js.Any])
@@ -3420,7 +3429,6 @@ object Actionsbillingusage {
     __obj.updateDynamic("reaction-rollup")(`reaction-rollup`.asInstanceOf[js.Any])
     __obj.updateDynamic("referenced-workflow")(`referenced-workflow`.asInstanceOf[js.Any])
     __obj.updateDynamic("referrer-traffic")(`referrer-traffic`.asInstanceOf[js.Any])
-    __obj.updateDynamic("release-asset")(`release-asset`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Actionsbillingusage]
   }
   
@@ -3781,7 +3789,7 @@ object Actionsbillingusage {
     
     inline def `setHook-response`(value: MessageStatus): Self = StObject.set(x, "hook-response", value.asInstanceOf[js.Any])
     
-    inline def setHovercard(value: `445`): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
+    inline def setHovercard(value: `523`): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
     
     inline def setImport(value: Authorscount): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
@@ -3856,6 +3864,8 @@ object Actionsbillingusage {
     inline def `setMarketplace-listing-plan`(value: Accountsurl): Self = StObject.set(x, "marketplace-listing-plan", value.asInstanceOf[js.Any])
     
     inline def `setMarketplace-purchase`(value: Login): Self = StObject.set(x, "marketplace-purchase", value.asInstanceOf[js.Any])
+    
+    inline def `setMerge-group`(value: Baseref): Self = StObject.set(x, "merge-group", value.asInstanceOf[js.Any])
     
     inline def `setMerged-upstream`(value: Basebranch): Self = StObject.set(x, "merged-upstream", value.asInstanceOf[js.Any])
     
@@ -4069,14 +4079,6 @@ object Actionsbillingusage {
     
     inline def `setRepository-advisory-credit`(value: StateType): Self = StObject.set(x, "repository-advisory-credit", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-advisory-credit-types`(
-      value: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
-    ): Self = StObject.set(x, "repository-advisory-credit-types", value.asInstanceOf[js.Any])
-    
-    inline def `setRepository-advisory-ecosystems`(
-      value: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
-    ): Self = StObject.set(x, "repository-advisory-ecosystems", value.asInstanceOf[js.Any])
-    
     inline def `setRepository-advisory-update`(value: Summary): Self = StObject.set(x, "repository-advisory-update", value.asInstanceOf[js.Any])
     
     inline def `setRepository-advisory-vulnerability`(value: Patchedversions): Self = StObject.set(x, "repository-advisory-vulnerability", value.asInstanceOf[js.Any])
@@ -4086,38 +4088,38 @@ object Actionsbillingusage {
     inline def `setRepository-invitation`(value: Expired): Self = StObject.set(x, "repository-invitation", value.asInstanceOf[js.Any])
     
     inline def `setRepository-rule`(
-      value: `423` | ParametersType | `424` | `425` | `426` | `427` | `428` | `436` | `430` | `431` | `432` | `433` | `434` | `435`
+      value: `499` | ParametersType | `501` | `502` | `504` | `505` | `506` | `514` | `508` | `509` | `510` | `511` | `512` | `513`
     ): Self = StObject.set(x, "repository-rule", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-branch-name-pattern`(value: `434`): Self = StObject.set(x, "repository-rule-branch-name-pattern", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-branch-name-pattern`(value: `512`): Self = StObject.set(x, "repository-rule-branch-name-pattern", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-commit-author-email-pattern`(value: `432`): Self = StObject.set(x, "repository-rule-commit-author-email-pattern", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-commit-author-email-pattern`(value: `510`): Self = StObject.set(x, "repository-rule-commit-author-email-pattern", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-commit-message-pattern`(value: `431`): Self = StObject.set(x, "repository-rule-commit-message-pattern", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-commit-message-pattern`(value: `509`): Self = StObject.set(x, "repository-rule-commit-message-pattern", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-committer-email-pattern`(value: `433`): Self = StObject.set(x, "repository-rule-committer-email-pattern", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-committer-email-pattern`(value: `511`): Self = StObject.set(x, "repository-rule-committer-email-pattern", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-creation`(value: `423`): Self = StObject.set(x, "repository-rule-creation", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-creation`(value: `499`): Self = StObject.set(x, "repository-rule-creation", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-deletion`(value: `424`): Self = StObject.set(x, "repository-rule-deletion", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-deletion`(value: `501`): Self = StObject.set(x, "repository-rule-deletion", value.asInstanceOf[js.Any])
     
     inline def `setRepository-rule-enforcement`(value: disabled | active | evaluate): Self = StObject.set(x, "repository-rule-enforcement", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-non-fast-forward`(value: `430`): Self = StObject.set(x, "repository-rule-non-fast-forward", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-non-fast-forward`(value: `508`): Self = StObject.set(x, "repository-rule-non-fast-forward", value.asInstanceOf[js.Any])
     
     inline def `setRepository-rule-params-status-check-configuration`(value: ContextIntegrationid): Self = StObject.set(x, "repository-rule-params-status-check-configuration", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-pull-request`(value: `428`): Self = StObject.set(x, "repository-rule-pull-request", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-pull-request`(value: `506`): Self = StObject.set(x, "repository-rule-pull-request", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-required-deployments`(value: `426`): Self = StObject.set(x, "repository-rule-required-deployments", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-required-deployments`(value: `504`): Self = StObject.set(x, "repository-rule-required-deployments", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-required-linear-history`(value: `425`): Self = StObject.set(x, "repository-rule-required-linear-history", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-required-linear-history`(value: `502`): Self = StObject.set(x, "repository-rule-required-linear-history", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-required-signatures`(value: `427`): Self = StObject.set(x, "repository-rule-required-signatures", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-required-signatures`(value: `505`): Self = StObject.set(x, "repository-rule-required-signatures", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-required-status-checks`(value: `429`): Self = StObject.set(x, "repository-rule-required-status-checks", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-required-status-checks`(value: `507`): Self = StObject.set(x, "repository-rule-required-status-checks", value.asInstanceOf[js.Any])
     
-    inline def `setRepository-rule-tag-name-pattern`(value: `435`): Self = StObject.set(x, "repository-rule-tag-name-pattern", value.asInstanceOf[js.Any])
+    inline def `setRepository-rule-tag-name-pattern`(value: `513`): Self = StObject.set(x, "repository-rule-tag-name-pattern", value.asInstanceOf[js.Any])
     
     inline def `setRepository-rule-update`(value: ParametersType): Self = StObject.set(x, "repository-rule-update", value.asInstanceOf[js.Any])
     
@@ -4180,6 +4182,14 @@ object Actionsbillingusage {
     inline def `setSecret-scanning-location-issue-comment`(value: Issuecommenturl): Self = StObject.set(x, "secret-scanning-location-issue-comment", value.asInstanceOf[js.Any])
     
     inline def `setSecret-scanning-location-issue-title`(value: Issuetitleurl): Self = StObject.set(x, "secret-scanning-location-issue-title", value.asInstanceOf[js.Any])
+    
+    inline def `setSecurity-advisory-credit-types`(
+      value: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
+    ): Self = StObject.set(x, "security-advisory-credit-types", value.asInstanceOf[js.Any])
+    
+    inline def `setSecurity-advisory-ecosystems`(
+      value: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+    ): Self = StObject.set(x, "security-advisory-ecosystems", value.asInstanceOf[js.Any])
     
     inline def `setSecurity-and-analysis`(value: Secretscanning): Self = StObject.set(x, "security-and-analysis", value.asInstanceOf[js.Any])
     
@@ -4495,6 +4505,8 @@ object Actionsbillingusage {
     
     inline def `setWebhook-merge-group-checks-requested`(value: Mergegroup): Self = StObject.set(x, "webhook-merge-group-checks-requested", value.asInstanceOf[js.Any])
     
+    inline def `setWebhook-merge-group-destroyed`(value: ActionInstallation): Self = StObject.set(x, "webhook-merge-group-destroyed", value.asInstanceOf[js.Any])
+    
     inline def `setWebhook-meta-deleted`(value: Hook): Self = StObject.set(x, "webhook-meta-deleted", value.asInstanceOf[js.Any])
     
     inline def `setWebhook-milestone-closed`(value: InstallationMilestone): Self = StObject.set(x, "webhook-milestone-closed", value.asInstanceOf[js.Any])
@@ -4529,11 +4541,11 @@ object Actionsbillingusage {
     
     inline def `setWebhook-personal-access-token-request-approved`(value: Personalaccesstokenrequest): Self = StObject.set(x, "webhook-personal-access-token-request-approved", value.asInstanceOf[js.Any])
     
-    inline def `setWebhook-personal-access-token-request-cancelled`(value: ActionInstallation): Self = StObject.set(x, "webhook-personal-access-token-request-cancelled", value.asInstanceOf[js.Any])
+    inline def `setWebhook-personal-access-token-request-cancelled`(value: OrganizationPersonalaccesstokenrequest): Self = StObject.set(x, "webhook-personal-access-token-request-cancelled", value.asInstanceOf[js.Any])
     
-    inline def `setWebhook-personal-access-token-request-created`(value: OrganizationPersonalaccesstokenrequest): Self = StObject.set(x, "webhook-personal-access-token-request-created", value.asInstanceOf[js.Any])
+    inline def `setWebhook-personal-access-token-request-created`(value: PersonalaccesstokenrequestSender): Self = StObject.set(x, "webhook-personal-access-token-request-created", value.asInstanceOf[js.Any])
     
-    inline def `setWebhook-personal-access-token-request-denied`(value: PersonalaccesstokenrequestSender): Self = StObject.set(x, "webhook-personal-access-token-request-denied", value.asInstanceOf[js.Any])
+    inline def `setWebhook-personal-access-token-request-denied`(value: ActionInstallationOrganization): Self = StObject.set(x, "webhook-personal-access-token-request-denied", value.asInstanceOf[js.Any])
     
     inline def `setWebhook-ping`(value: Zen): Self = StObject.set(x, "webhook-ping", value.asInstanceOf[js.Any])
     

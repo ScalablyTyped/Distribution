@@ -7,80 +7,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait locatorAddressToLocationsParams extends StObject {
   
   /**
-    * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var address: Any
   
   /**
-    * Limit result to one or more categories.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Limit result to one or more categories.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Limit result to a specific country.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Limit result to a specific country.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var countryCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows the results of single geocode transactions to be persisted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Allows the results of single geocode transactions to be persisted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var forStorage: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Used to weight returned results for a specified area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Used to weight returned results for a specified area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var location: js.UndefOr[Point] = js.undefined
   
   /**
-    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var locationType: js.UndefOr[String] = js.undefined
   
   /**
-    * A `suggestLocations` result ID (magicKey).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * A `suggestLocations` result ID (magicKey).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var magicKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum results to return from the query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Maximum results to return from the query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var maxLocations: js.UndefOr[Double] = js.undefined
   
   /**
-    * The list of fields included in the returned result set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * The list of fields included in the returned result set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The spatial reference of the output geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * The spatial reference of the output geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReference] = js.undefined
   
   /**
-    * Defines the extent within which the geocode server will search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
-    */
+  		 * Defines the extent within which the geocode server will search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+  		 */
   var searchExtent: js.UndefOr[Extent] = js.undefined
 }
 object locatorAddressToLocationsParams {

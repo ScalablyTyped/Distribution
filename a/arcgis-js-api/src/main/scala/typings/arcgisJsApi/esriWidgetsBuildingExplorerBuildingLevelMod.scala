@@ -11,10 +11,10 @@ object esriWidgetsBuildingExplorerBuildingLevelMod {
   @JSImport("esri/widgets/BuildingExplorer/BuildingLevel", JSImport.Namespace)
   @js.native
   /**
-    * Provides information for the building level filter, such as the value selected by the user or the minimum and maximum allowed values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html)
-    */
+  		 * Provides information for the building level filter, such as the value selected by the user or the minimum and maximum allowed values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingLevel.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingLevel {

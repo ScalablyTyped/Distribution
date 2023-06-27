@@ -184,7 +184,7 @@ trait Options extends StObject {
   
   /**
     * (Highmaps) The `mapNavigation` option handles buttons for navigation in
-    * addition to mousewheel and doubleclick handlers for map zooming.
+    * addition to `mousewheel` and `doubleclick` handlers for map zooming.
     */
   var mapNavigation: js.UndefOr[MapNavigationOptions] = js.undefined
   

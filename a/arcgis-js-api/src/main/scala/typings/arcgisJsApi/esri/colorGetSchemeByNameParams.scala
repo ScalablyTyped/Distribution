@@ -19,52 +19,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait colorGetSchemeByNameParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
-    * The name of the scheme to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
-    */
+  		 * The name of the scheme to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
+  		 */
   var name: String
   
   /**
-    * The theme determines which values will be emphasized in the continuous ramp and the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
-    */
+  		 * The theme determines which values will be emphasized in the continuous ramp and the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
+  		 */
   var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   
   /**
-    * The SceneView instance in which the scheme will be used.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The SceneView instance in which the scheme will be used.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates if the size units of the scheme will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
-    */
+  		 * Indicates if the size units of the scheme will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object colorGetSchemeByNameParams {

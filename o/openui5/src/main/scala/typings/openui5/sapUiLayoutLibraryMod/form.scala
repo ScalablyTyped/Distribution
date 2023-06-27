@@ -10,7 +10,7 @@ object form {
   @js.native
   sealed trait SimpleFormLayout extends StObject
   /**
-    * @SINCE 1.16.0
+    * @since 1.16.0
     *
     * Available `FormLayouts` used to render a `SimpleForm`.
     */
@@ -22,7 +22,7 @@ object form {
     def apply(value: String): js.UndefOr[SimpleFormLayout & String] = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Uses the `ColumnLayout` layout to render the `SimpleForm` control
       */
@@ -45,7 +45,7 @@ object form {
     /* "GridLayout" */ val GridLayout: typings.openui5.sapUiLayoutLibraryMod.form.SimpleFormLayout.GridLayout & String = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Uses the `ResponsiveGridLayout` layout to render the `SimpleForm` control
       */
@@ -68,7 +68,7 @@ object form {
   }
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * An `int` type that defines how many cells a control inside of a column of a `Form` control using the
     * `ColumnLayout` control as layout can use.
@@ -78,7 +78,7 @@ object form {
   type ColumnCells = int
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * An `int` type that defines how many columns a `Form` control using the `ColumnLayout` as layout can have
     * if it has large size
@@ -88,7 +88,7 @@ object form {
   type ColumnsL = int
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * An `int` type that defines how many columns a `Form` control using the `ColumnLayout` as layout can have
     * if it has medium size
@@ -98,7 +98,7 @@ object form {
   type ColumnsM = int
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * An `int` type that defines how many columns a `Form` control using the `ColumnLayout` as layout can have
     * if it has extra-large size
@@ -108,7 +108,7 @@ object form {
   type ColumnsXL = int
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * An `int` type that defines how many cells beside the controls inside of a column of a `Form` control
     * using the `ColumnLayout` control as layout are empty.

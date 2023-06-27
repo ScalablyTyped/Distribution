@@ -1,5 +1,6 @@
 package typings.newrelic
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,60 @@ object anon {
       inline def setWaitForIdle(value: Boolean): Self = StObject.set(x, "waitForIdle", value.asInstanceOf[js.Any])
       
       inline def setWaitForIdleUndefined: Self = StObject.set(x, "waitForIdle", js.undefined)
+    }
+  }
+  
+  trait CustomAttributes extends StObject {
+    
+    var customAttributes: StringDictionary[String | Double | Boolean]
+    
+    var error: js.UndefOr[js.Error] = js.undefined
+    
+    @JSName("error.expected")
+    var errorDotexpected: Boolean
+    
+    @JSName("http.method")
+    var httpDotmethod: String
+    
+    @JSName("http.statusCode")
+    var httpDotstatusCode: String
+    
+    @JSName("request.uri")
+    var requestDoturi: String
+  }
+  object CustomAttributes {
+    
+    inline def apply(
+      customAttributes: StringDictionary[String | Double | Boolean],
+      errorDotexpected: Boolean,
+      httpDotmethod: String,
+      httpDotstatusCode: String,
+      requestDoturi: String
+    ): CustomAttributes = {
+      val __obj = js.Dynamic.literal(customAttributes = customAttributes.asInstanceOf[js.Any])
+      __obj.updateDynamic("error.expected")(errorDotexpected.asInstanceOf[js.Any])
+      __obj.updateDynamic("http.method")(httpDotmethod.asInstanceOf[js.Any])
+      __obj.updateDynamic("http.statusCode")(httpDotstatusCode.asInstanceOf[js.Any])
+      __obj.updateDynamic("request.uri")(requestDoturi.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setCustomAttributes(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorDotexpected(value: Boolean): Self = StObject.set(x, "error.expected", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setHttpDotmethod(value: String): Self = StObject.set(x, "http.method", value.asInstanceOf[js.Any])
+      
+      inline def setHttpDotstatusCode(value: String): Self = StObject.set(x, "http.statusCode", value.asInstanceOf[js.Any])
+      
+      inline def setRequestDoturi(value: String): Self = StObject.set(x, "request.uri", value.asInstanceOf[js.Any])
     }
   }
   

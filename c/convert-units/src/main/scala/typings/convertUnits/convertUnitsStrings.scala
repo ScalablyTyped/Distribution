@@ -1047,6 +1047,13 @@ object convertUnitsStrings {
   inline def minSlashkm: minSlashkm = "min/km".asInstanceOf[minSlashkm]
   
   @js.native
+  sealed trait minSlashmi
+    extends StObject
+       with Pace
+       with Unit
+  inline def minSlashmi: minSlashmi = "min/mi".asInstanceOf[minSlashmi]
+  
+  @js.native
   sealed trait ml
     extends StObject
        with Unit
@@ -1355,6 +1362,13 @@ object convertUnitsStrings {
        with Time
        with Unit
   inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait yd
+    extends StObject
+       with Distance
+       with Unit
+  inline def yd: yd = "yd".asInstanceOf[yd]
   
   @js.native
   sealed trait yd3

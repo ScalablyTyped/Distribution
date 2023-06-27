@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Search")
 @js.native
 /**
-  * Represents the search parameters set within the web scene or the web map.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html)
-  */
+		 * Represents the search parameters set within the web scene or the web map.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html)
+		 */
 open class Search ()
   extends StObject
      with typings.arcgisJsApi.esri.Search {

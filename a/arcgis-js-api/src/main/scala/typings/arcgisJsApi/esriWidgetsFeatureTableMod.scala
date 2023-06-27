@@ -11,10 +11,10 @@ object esriWidgetsFeatureTableMod {
   @JSImport("esri/widgets/FeatureTable", JSImport.Namespace)
   @js.native
   /**
-    * This widget provides an interactive tabular view of each feature's attributes in a feature layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html)
-    */
+  		 * This widget provides an interactive tabular view of each feature's attributes in a feature layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureTable {

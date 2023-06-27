@@ -12,26 +12,26 @@ trait CIMGeometricEffectArrow
      with CIMGeometricEffect {
   
   /**
-    * The type of arrow to be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
-    */
+  		 * The type of arrow to be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
+  		 */
   var geometricEffectArrowType: OpenEnded | Block | Crossed
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow
   
   /**
-    * The distance between the lines that construct the body of the arrow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
-    */
+  		 * The distance between the lines that construct the body of the arrow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectArrow)
+  		 */
   var width: Double
 }
 object CIMGeometricEffectArrow {

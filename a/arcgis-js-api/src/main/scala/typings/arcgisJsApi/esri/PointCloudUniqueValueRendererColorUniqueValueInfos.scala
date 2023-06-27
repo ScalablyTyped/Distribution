@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudUniqueValueRendererColorUniqueValueInfos extends StObject {
   
   /**
-    * The color used to represent points whose value matches `values`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
-    */
+  		 * The color used to represent points whose value matches `values`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
+  		 */
   var color: Color_
   
   /**
-    * Label used to describe points matched to the unique value.
-    *
-    * [Read more...](global.html)
-    */
+  		 * Label used to describe points matched to the unique value.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * A unique combination of values that will be represented with the given `color`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
-    */
+  		 * A unique combination of values that will be represented with the given `color`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
+  		 */
   var values: js.Array[String]
 }
 object PointCloudUniqueValueRendererColorUniqueValueInfos {

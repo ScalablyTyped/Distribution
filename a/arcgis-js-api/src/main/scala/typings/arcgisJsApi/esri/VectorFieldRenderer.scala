@@ -26,50 +26,50 @@ trait VectorFieldRenderer
      with JSONSupport {
   
   /**
-    * Attribute field presenting the magnitude.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#attributeField)
-    */
+  		 * Attribute field presenting the magnitude.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#attributeField)
+  		 */
   var attributeField: Magnitude = js.native
   
   /**
-    * Defines the flow direction of the data.
-    *
-    * @default "flow-from"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
-    */
+  		 * Defines the flow direction of the data.
+  		 *
+  		 * @default "flow-from"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
+  		 */
   var flowRepresentation: `flow-from` | `flow-to` = js.native
   
   /**
-    * Predefined symbol styles used to represent the vector flow.
-    *
-    * @default "single-arrow"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
-    */
+  		 * Predefined symbol styles used to represent the vector flow.
+  		 *
+  		 * @default "single-arrow"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
+  		 */
   var style: `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb` = js.native
   
   /**
-    * Determines the density of the symbols.
-    *
-    * @default 50
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
-    */
+  		 * Determines the density of the symbols.
+  		 *
+  		 * @default 50
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
+  		 */
   var symbolTileSize: Double = js.native
   
   /**
-    * The type of Renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#type)
-    */
+  		 * The type of Renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#type)
+  		 */
   val `type`: `vector-field` = js.native
   
   /**
-    * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#visualVariables)
-    */
+  		 * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#visualVariables)
+  		 */
   var visualVariables: js.Array[VisualVariable] = js.native
 }

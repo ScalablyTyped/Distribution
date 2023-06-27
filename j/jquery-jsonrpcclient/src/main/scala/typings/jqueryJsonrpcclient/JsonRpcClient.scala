@@ -16,9 +16,6 @@ trait JsonRpcClient extends StObject {
     * "call" and "notify" just as if it was a normal JsonRpcClient object, and all calls will be
     * sent as a batch call then the callback is done.
     *
-    * @fn batch
-    * @memberof JsonRpcClient
-    *
     * @param {function} callback   This function will get a batch handler to run call and notify on.
     * @param {function} allDoneCb  A callback function to call after all results have been handled.
     * @param {function} errorCb    A callback function to call if there is an error from the server.
@@ -38,9 +35,6 @@ trait JsonRpcClient extends StObject {
     errorCb: js.Function1[/* result */ Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
   /**
-    * @fn call
-    * @memberof JsonRpcClient
-    *
     * @param {string}       method     The method to run on JSON-RPC server.
     * @param {object|array} params     The params; an array or object.
     * @param {function}     successCb  A callback for successful request.
@@ -61,9 +55,6 @@ trait JsonRpcClient extends StObject {
     * an empty response - that will be dropped, but in ws there should be no response at all.
     *
     * This is very similar to call, but has no id and no handling of callbacks.
-    *
-    * @fn notify
-    * @memberof JsonRpcClient
     *
     * @param {string} method       The method to run on JSON-RPC server.
     * @param {object|array} params The params; an array or object.

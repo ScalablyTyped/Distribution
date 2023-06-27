@@ -30,6 +30,36 @@ object esTypesMod {
   
   type GeolibAltitudeInputValue = Double
   
+  trait GeolibBounds extends StObject {
+    
+    var maxLat: Double
+    
+    var maxLng: Double
+    
+    var minLat: Double
+    
+    var minLng: Double
+  }
+  object GeolibBounds {
+    
+    inline def apply(maxLat: Double, maxLng: Double, minLat: Double, minLng: Double): GeolibBounds = {
+      val __obj = js.Dynamic.literal(maxLat = maxLat.asInstanceOf[js.Any], maxLng = maxLng.asInstanceOf[js.Any], minLat = minLat.asInstanceOf[js.Any], minLng = minLng.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GeolibBounds]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeolibBounds] (val x: Self) extends AnyVal {
+      
+      inline def setMaxLat(value: Double): Self = StObject.set(x, "maxLat", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLng(value: Double): Self = StObject.set(x, "maxLng", value.asInstanceOf[js.Any])
+      
+      inline def setMinLat(value: Double): Self = StObject.set(x, "minLat", value.asInstanceOf[js.Any])
+      
+      inline def setMinLng(value: Double): Self = StObject.set(x, "minLng", value.asInstanceOf[js.Any])
+    }
+  }
+  
   type GeolibDistanceFn = js.Function2[/* point */ GeolibInputCoordinates, /* dest */ GeolibInputCoordinates, Double]
   
   type GeolibGeoJSONPoint = js.Tuple3[

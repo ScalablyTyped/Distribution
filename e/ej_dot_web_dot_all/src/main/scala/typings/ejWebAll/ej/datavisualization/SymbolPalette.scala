@@ -35,12 +35,12 @@ object SymbolPalette {
   trait DefaultSettings extends StObject {
     
     /** Defines the default properties of the connectors
-      * @Default {null}
+      * @default {null}
       */
     var connector: js.UndefOr[Any] = js.undefined
     
     /** Defines the default properties of the nodes
-      * @Default {null}
+      * @default {null}
       */
     var node: js.UndefOr[Any] = js.undefined
   }
@@ -67,12 +67,12 @@ object SymbolPalette {
   trait Model extends StObject {
     
     /** Defines whether the symbols can be dragged from palette or not
-      * @Default {true}
+      * @default {true}
       */
     var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** Customizes the style of the symbol palette
-      * @Default {e-symbolpalette}
+      * @default {e-symbolpalette}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
@@ -81,47 +81,47 @@ object SymbolPalette {
     var defaultSettings: js.UndefOr[DefaultSettings] = js.undefined
     
     /** Sets the Id of the diagram, over which the symbols will be dropped
-      * @Default {null}
+      * @default {null}
       */
     var diagramId: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the palette headers
-      * @Default {30}
+      * @default {30}
       */
     var headerHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the symbol palette
-      * @Default {400}
+      * @default {400}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the palette items
-      * @Default {50}
+      * @default {50}
       */
     var paletteItemHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the palette items
-      * @Default {50}
+      * @default {50}
       */
     var paletteItemWidth: js.UndefOr[Double] = js.undefined
     
     /** An array of JSON objects, where each object represents a node/connector
-      * @Default {[]}
+      * @default {[]}
       */
     var palettes: js.UndefOr[js.Array[Palette]] = js.undefined
     
     /** Defines the preview height of the symbols
-      * @Default {100}
+      * @default {100}
       */
     var previewHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the offset value to be left between the mouse cursor and symbol previews
-      * @Default {(110, 110)}
+      * @default {(110, 110)}
       */
     var previewOffset: js.UndefOr[Any] = js.undefined
     
     /** Defines the width of the symbol previews
-      * @Default {100}
+      * @default {100}
       */
     var previewWidth: js.UndefOr[Double] = js.undefined
     
@@ -130,12 +130,12 @@ object SymbolPalette {
     var selectionChange: js.UndefOr[js.Function1[/* e */ SelectionChangeEventArgs, Unit]] = js.undefined
     
     /** Enable or disable the palette item text
-      * @Default {true}
+      * @default {true}
       */
     var showPaletteItemText: js.UndefOr[Boolean] = js.undefined
     
     /** The width of the palette
-      * @Default {250}
+      * @default {250}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -216,17 +216,17 @@ object SymbolPalette {
   trait Palette extends StObject {
     
     /** Defines whether the palette must be in expanded state or in collapsed state
-      * @Default {true}
+      * @default {true}
       */
     var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the palette items
-      * @Default {[]}
+      * @default {[]}
       */
     var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the name of the palette
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
   }

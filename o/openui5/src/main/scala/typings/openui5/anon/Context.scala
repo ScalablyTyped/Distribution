@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiModelChangeReasonMod.ChangeReason
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,24 +8,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Context extends StObject {
   
   /**
-    * The context of the property
+    * Whether or not to send the request asynchronously. Default: false In case sMethod is "GET", the request
+    * is always asynchronous. Please be advised that this feature is officially unsupported as using asynchronous
+    * requests can lead to data inconsistencies if the application does not make sure that the request was
+    * completed before continuing to work with the data.
+    */
+  var async: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If specified the sPath has to be relative to the path given with the context.
     */
   var context: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * The path of the property
+    * a callback function which is called when the request failed. The handler can have the parameter: `oError`
+    * which contains additional error information.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var error: js.UndefOr[js.Function] = js.undefined
   
   /**
-    * The reason of the property change
+    * A string containing the type of method to call this function with
     */
-  var reason: js.UndefOr[ChangeReason] = js.undefined
+  var method: js.UndefOr[String] = js.undefined
   
   /**
-    * The value of the property
+    * a callback function which is called when the data has been successfully retrieved. The handler can have
+    * the following parameters: `oData` and `response`.
     */
-  var value: js.UndefOr[js.Object] = js.undefined
+  var success: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * A map containing the parameters that will be passed as query strings
+    */
+  var urlParameters: js.UndefOr[Record[String, String]] = js.undefined
 }
 object Context {
   
@@ -37,20 +52,28 @@ object Context {
   @scala.inline
   implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setReason(value: ChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrlParameters(value: Record[String, String]): Self = StObject.set(x, "urlParameters", value.asInstanceOf[js.Any])
+    
+    inline def setUrlParametersUndefined: Self = StObject.set(x, "urlParameters", js.undefined)
   }
 }

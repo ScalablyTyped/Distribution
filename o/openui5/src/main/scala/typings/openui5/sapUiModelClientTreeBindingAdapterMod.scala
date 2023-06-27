@@ -9,7 +9,7 @@ object sapUiModelClientTreeBindingAdapterMod {
   @JSImport("sap/ui/model/ClientTreeBindingAdapter", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
     * controls.

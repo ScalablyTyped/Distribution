@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMCGAAttribute extends StObject {
   
   /**
-    * The CGA attribute type.
-    */
+  			 * The CGA attribute type.
+  			 */
   var CGAAttributeType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CGAAttributeType * / any */ String
   ] = js.undefined
   
   /**
-    * The name.
-    */
+  			 * The name.
+  			 */
   var name: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMCGAAttribute
   
   /**
-    * The value.
-    */
+  			 * The value.
+  			 */
   var value: js.UndefOr[Any] = js.undefined
 }
 object CIMCGAAttribute {

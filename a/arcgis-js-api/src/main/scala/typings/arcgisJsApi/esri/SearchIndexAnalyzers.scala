@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchIndexAnalyzers extends StObject {
   
   /**
-    * The name of the analyzer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html#analyzers)
-    */
+  		 * The name of the analyzer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html#analyzers)
+  		 */
   var name: String
 }
 object SearchIndexAnalyzers {

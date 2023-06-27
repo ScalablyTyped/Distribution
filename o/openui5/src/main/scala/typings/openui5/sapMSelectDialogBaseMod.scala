@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ListItems
-import typings.openui5.anon.Reason
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
@@ -123,7 +121,7 @@ object sapMSelectDialogBaseMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.SelectDialogBase`.
@@ -139,20 +137,20 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.SelectDialogBase`.
@@ -173,7 +171,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -184,7 +182,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
@@ -192,7 +190,7 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.SelectDialogBase`.
@@ -208,20 +206,20 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def attachUpdateFinished(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.SelectDialogBase`.
@@ -242,7 +240,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def attachUpdateFinished(
       /**
@@ -253,7 +251,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
@@ -261,7 +259,7 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateStarted updateStarted} event of this `sap.m.SelectDialogBase`.
       *
@@ -278,20 +276,20 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def attachUpdateStarted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateStarted updateStarted} event of this `sap.m.SelectDialogBase`.
       *
@@ -313,7 +311,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def attachUpdateStarted(
       /**
@@ -324,7 +322,7 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectDialogBase` itself
       */
@@ -332,7 +330,7 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Detaches event handler `fnFunction` from the {@link #event:selectionChange selectionChange} event of
       * this `sap.m.SelectDialogBase`.
@@ -345,13 +343,13 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -359,7 +357,7 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Detaches event handler `fnFunction` from the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.SelectDialogBase`.
@@ -372,13 +370,13 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def detachUpdateFinished(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateFinishedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -386,7 +384,7 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Detaches event handler `fnFunction` from the {@link #event:updateStarted updateStarted} event of this
       * `sap.m.SelectDialogBase`.
@@ -399,13 +397,13 @@ object sapMSelectDialogBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def detachUpdateStarted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectDialogBaseUpdateStartedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -413,74 +411,234 @@ object sapMSelectDialogBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.93
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ListItems): this.type = js.native
+    mParameters: SelectDialogBase$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.93
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateFinished updateFinished} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUpdateFinished(): this.type = js.native
-    def fireUpdateFinished(/**
+    def fireUpdateFinished(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Reason): this.type = js.native
+    mParameters: SelectDialogBase$UpdateFinishedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.93
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateStarted updateStarted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUpdateStarted(): this.type = js.native
-    def fireUpdateStarted(/**
+    def fireUpdateStarted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Reason): this.type = js.native
+    mParameters: SelectDialogBase$UpdateStartedEventParameters
+    ): this.type = js.native
   }
+  
+  trait SelectDialogBase$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * The item whose selection has changed. In `MultiSelect` mode, only the up-most selected item is returned.
+      * This parameter can be used for single-selection modes.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+    
+    /**
+      * Array of items whose selection has changed. This parameter can be used for `MultiSelect` mode.
+      */
+    var listItems: js.UndefOr[js.Array[typings.openui5.sapMListItemBaseMod.default]] = js.undefined
+    
+    /**
+      * Indicates whether the select all action is triggered or not.
+      */
+    var selectAll: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates whether the `listItem` parameter is selected or not.
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+  }
+  object SelectDialogBase$SelectionChangeEventParameters {
+    
+    inline def apply(): SelectDialogBase$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectDialogBase$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectDialogBase$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      
+      inline def setListItems(value: js.Array[typings.openui5.sapMListItemBaseMod.default]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+      
+      inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
+      
+      inline def setListItemsVarargs(value: typings.openui5.sapMListItemBaseMod.default*): Self = StObject.set(x, "listItems", js.Array(value*))
+      
+      inline def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+      
+      inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    }
+  }
+  
+  trait SelectDialogBase$UpdateFinishedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The reason of the update, e.g. Binding, Filter, Sort, Growing, Change, Refresh, Context.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The total count of bound items. This can be used if the `growing` property is set to `true`.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object SelectDialogBase$UpdateFinishedEventParameters {
+    
+    inline def apply(): SelectDialogBase$UpdateFinishedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectDialogBase$UpdateFinishedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectDialogBase$UpdateFinishedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait SelectDialogBase$UpdateStartedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The reason of the update, e.g. Binding, Filter, Sort, Growing, Change, Refresh, Context.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The total count of bound items. This can be used if the `growing` property is set to `true`.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object SelectDialogBase$UpdateStartedEventParameters {
+    
+    inline def apply(): SelectDialogBase$UpdateStartedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectDialogBase$UpdateStartedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectDialogBase$UpdateStartedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  type SelectDialogBaseSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$SelectionChangeEventParameters]
+  
+  type SelectDialogBaseSelectionChangeEventParameters = SelectDialogBase$SelectionChangeEventParameters
   
   trait SelectDialogBaseSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Fires when selection is changed via user interaction inside the control.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Fires after `items` binding is updated and processed by the control.
       */
-    var updateFinished: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateFinished: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateFinishedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Fires before `items` binding is updated (e.g. sorting, filtering)
       *
       * **Note:** Event handler should not invalidate the control. *
       */
-    var updateStarted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateStarted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateStartedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object SelectDialogBaseSettings {
     
@@ -492,17 +650,31 @@ object sapMSelectDialogBaseMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SelectDialogBaseSettings] (val x: Self) extends AnyVal {
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
-      inline def setUpdateFinished(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateFinished", js.Any.fromFunction1(value))
+      inline def setUpdateFinished(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateFinishedEventParameters] => Unit
+      ): Self = StObject.set(x, "updateFinished", js.Any.fromFunction1(value))
       
       inline def setUpdateFinishedUndefined: Self = StObject.set(x, "updateFinished", js.undefined)
       
-      inline def setUpdateStarted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateStarted", js.Any.fromFunction1(value))
+      inline def setUpdateStarted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateStartedEventParameters] => Unit
+      ): Self = StObject.set(x, "updateStarted", js.Any.fromFunction1(value))
       
       inline def setUpdateStartedUndefined: Self = StObject.set(x, "updateStarted", js.undefined)
     }
   }
+  
+  type SelectDialogBaseUpdateFinishedEvent = typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateFinishedEventParameters]
+  
+  type SelectDialogBaseUpdateFinishedEventParameters = SelectDialogBase$UpdateFinishedEventParameters
+  
+  type SelectDialogBaseUpdateStartedEvent = typings.openui5.sapUiBaseEventMod.default[SelectDialogBase$UpdateStartedEventParameters]
+  
+  type SelectDialogBaseUpdateStartedEventParameters = SelectDialogBase$UpdateStartedEventParameters
 }

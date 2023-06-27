@@ -24,6 +24,8 @@ trait ToolBarOptions extends StObject {
   
   var resizable: js.UndefOr[Boolean] = js.undefined
   
+  var size: js.UndefOr[String] = js.undefined
+  
   var toggle: js.UndefOr[js.Function1[/* e */ ToolBarToggleEvent, Unit]] = js.undefined
 }
 object ToolBarOptions {
@@ -73,6 +75,10 @@ object ToolBarOptions {
     inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setToggle(value: /* e */ ToolBarToggleEvent => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     

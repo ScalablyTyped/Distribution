@@ -1,8 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCommonsButtonMod.Button$PressEventParameters
 import typings.openui5.sapUiCommonsButtonMod.ButtonSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -136,13 +136,13 @@ object sapUiCommonsMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.MenuButton` itself
       */
@@ -167,7 +167,7 @@ object sapUiCommonsMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachItemSelected(
       /**
@@ -178,72 +178,7 @@ object sapUiCommonsMenuButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
-      /**
-      * Context object to call the event handler with. Defaults to this `sap.ui.commons.MenuButton` itself
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    
-    /**
-      * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.ui.commons.MenuButton`.
-      *
-      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
-      * otherwise it will be bound to this `sap.ui.commons.MenuButton` itself.
-      *
-      * Event is fired when an item from the menu was selected.
-      * See:
-      * 	sap.ui.commons.MenuButton#attachItemSelected
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def attachPress(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
-    def attachPress(
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function,
-      /**
-      * Context object to call the event handler with. Defaults to this `sap.ui.commons.MenuButton` itself
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    /**
-      * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.ui.commons.MenuButton`.
-      *
-      * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
-      * otherwise it will be bound to this `sap.ui.commons.MenuButton` itself.
-      *
-      * Event is fired when an item from the menu was selected.
-      * See:
-      * 	sap.ui.commons.MenuButton#attachItemSelected
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def attachPress(
-      /**
-      * An application-specific payload object that will be passed to the event handler along with the event
-      * object when firing the event
-      */
-    oData: js.Object,
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function
-    ): this.type = js.native
-    def attachPress(
-      /**
-      * An application-specific payload object that will be passed to the event handler along with the event
-      * object when firing the event
-      */
-    oData: js.Object,
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.MenuButton` itself
       */
@@ -268,13 +203,13 @@ object sapUiCommonsMenuButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuButtonItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -282,41 +217,24 @@ object sapUiCommonsMenuButtonMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:press press} event of this `sap.ui.commons.MenuButton`.
-      *
-      * The passed function and listener object must match the ones used for event registration.
-      * See:
-      * 	sap.ui.commons.MenuButton#detachItemSelected
-      *
-      * @returns Reference to `this` to allow method chaining
-      */
-    def detachPress(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
-    def detachPress(
-      /**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function,
-      /**
-      * Context object on which the given function had to be called
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    
-    /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelected itemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemSelected(): this.type = js.native
-    def fireItemSelected(/**
+    def fireItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemId): this.type = js.native
+    mParameters: MenuButton$ItemSelectedEventParameters
+    ): this.type = js.native
+    
+    def firePress(/**
+      * Parameters to pass along with the event
+      */
+    oParameters: MenuButton$PressEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDockButton dockButton}.
@@ -390,6 +308,80 @@ object sapUiCommonsMenuButtonMod {
     ): this.type = js.native
   }
   
+  trait MenuButton$ItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUnifiedMenuItemBaseMod.default] = js.undefined
+    
+    /**
+      * The ID of the selected item
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object MenuButton$ItemSelectedEventParameters {
+    
+    inline def apply(): MenuButton$ItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuButton$ItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButton$ItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiUnifiedMenuItemBaseMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait MenuButton$PressEventParameters
+    extends StObject
+       with Button$PressEventParameters {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapUiCommonsMenuItemBaseMod.default] = js.undefined
+    
+    /**
+      * The id of the selected item
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object MenuButton$PressEventParameters {
+    
+    inline def apply(): MenuButton$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuButton$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButton$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiCommonsMenuItemBaseMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type MenuButtonItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[MenuButton$ItemSelectedEventParameters]
+  
+  type MenuButtonItemSelectedEventParameters = MenuButton$ItemSelectedEventParameters
+  
+  type MenuButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[MenuButton$PressEventParameters]
+  
+  type MenuButtonPressEventParameters = MenuButton$PressEventParameters
+  
   trait MenuButtonSettings
     extends StObject
        with ButtonSettings {
@@ -409,7 +401,12 @@ object sapUiCommonsMenuButtonMod {
     /**
       * Event that is fired when a menu item is selected by the user
       */
-    var itemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuButton$ItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Menu that shall be opened when the button is clicked
@@ -434,7 +431,9 @@ object sapUiCommonsMenuButtonMod {
       
       inline def setDockMenuUndefined: Self = StObject.set(x, "dockMenu", js.undefined)
       
-      inline def setItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
+      inline def setItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuButton$ItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
       
       inline def setItemSelectedUndefined: Self = StObject.set(x, "itemSelected", js.undefined)
       

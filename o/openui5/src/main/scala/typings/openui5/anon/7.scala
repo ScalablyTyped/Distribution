@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiUnifiedMenuItemBaseMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `7` extends StObject {
   
   /**
-    * The action (item) which was selected by the user.
+    * The name of a target which loads a component. This target is used in the Route which is specified by
+    * `sName`.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var anyName: js.UndefOr[ComponentTargetInfo] = js.undefined
 }
 object `7` {
   
@@ -22,8 +22,8 @@ object `7` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `7`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setAnyName(value: ComponentTargetInfo): Self = StObject.set(x, "anyName", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setAnyNameUndefined: Self = StObject.set(x, "anyName", js.undefined)
   }
 }

@@ -6,13 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
+  * Represents the properties of an appointment or message in a shared folder or shared mailbox.
   *
-  * For more information on how this object is used, see the
-  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
+  * For more information on how this object is used, see
+  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
   *
   * @remarks
-  * [Api set: Mailbox 1.8]
+  * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
   *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
   *

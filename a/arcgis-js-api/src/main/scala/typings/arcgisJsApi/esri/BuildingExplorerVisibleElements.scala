@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingExplorerVisibleElements extends StObject {
   
   /**
-    * When set to `false`, the disciplines and categories sublayer list is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
-    */
+  		 * When set to `false`, the disciplines and categories sublayer list is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
+  		 */
   var disciplines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the building levels filter is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
-    */
+  		 * When set to `false`, the building levels filter is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
+  		 */
   var levels: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the construction phases filter is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
-    */
+  		 * When set to `false`, the construction phases filter is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#VisibleElements)
+  		 */
   var phases: js.UndefOr[Boolean] = js.undefined
 }
 object BuildingExplorerVisibleElements {

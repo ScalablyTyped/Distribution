@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreatePlaneParamsSize extends StObject {
   
   /**
-    * The height of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
-    */
+  		 * The height of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
-    */
+  		 * The width of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MeshCreatePlaneParamsSize {

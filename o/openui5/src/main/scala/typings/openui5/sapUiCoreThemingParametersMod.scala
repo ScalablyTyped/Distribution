@@ -2,6 +2,7 @@ package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
 import typings.openui5.anon.Callback
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,16 +29,16 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       *
       *  The following API variants are available (see also the below examples):
       * 	 -  **(deprecated since 1.92)** If no parameter is given a key-value map containing all parameters is
-      * 			returned
+      *     returned
       * 	 -  **(deprecated since 1.94)** If a `string` is given as first parameter the value is returned as a
-      * 			`string`
+      *     `string`
       * 	 -  **(deprecated since 1.94)** If an `array` is given as first parameter a key-value map containing
-      * 			all parameters from the `array` is returned
+      *     all parameters from the `array` is returned
       * 	 - If an `object` is given as first parameter the result is returned immediately in case all parameters
-      * 			are loaded and available or within the callback in case not all CSS files are already loaded. This is
-      * 			the **only asynchronous** API variant. This variant is the preferred way to retrieve theming parameters.
-      * 			The structure of the return value is the same as listed above depending on the type of the name property
-      * 			within the `object`.
+      *     are loaded and available or within the callback in case not all CSS files are already loaded. This is
+      *     the **only asynchronous** API variant. This variant is the preferred way to retrieve theming parameters.
+      *     The structure of the return value is the same as listed above depending on the type of the name property
+      *     within the `object`.
       *
       * The returned key-value maps are a copy so changing values in the map does not have any effect
       *
@@ -52,7 +53,7 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       * the scopeElement and a callback for async retrieval of parameters.
       */
     vName: String
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     def get(
       /**
       * the (array with) CSS parameter name(s) or an object containing the (array with) CSS parameter name(s),
@@ -64,14 +65,14 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       * when a parameter value is overridden in a theme scope set via a CSS class.
       */
     oElement: typings.openui5.sapUiCoreElementMod.default
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     def get(
       /**
       * the (array with) CSS parameter name(s) or an object containing the (array with) CSS parameter name(s),
       * the scopeElement and a callback for async retrieval of parameters.
       */
     vName: js.Array[String]
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     def get(
       /**
       * the (array with) CSS parameter name(s) or an object containing the (array with) CSS parameter name(s),
@@ -83,14 +84,14 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       * when a parameter value is overridden in a theme scope set via a CSS class.
       */
     oElement: typings.openui5.sapUiCoreElementMod.default
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     def get(
       /**
       * the (array with) CSS parameter name(s) or an object containing the (array with) CSS parameter name(s),
       * the scopeElement and a callback for async retrieval of parameters.
       */
     vName: Callback
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     def get(
       /**
       * the (array with) CSS parameter name(s) or an object containing the (array with) CSS parameter name(s),
@@ -102,7 +103,7 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       * when a parameter value is overridden in a theme scope set via a CSS class.
       */
     oElement: typings.openui5.sapUiCoreElementMod.default
-    ): js.UndefOr[String | js.Object] = js.native
+    ): Value = js.native
     
     /**
       * @deprecated (since 1.92)
@@ -112,6 +113,8 @@ object sapUiCoreThemingParametersMod extends Shortcut {
       */
     def reset(): Unit = js.native
   }
+  
+  type Value = js.UndefOr[String | (Record[String, String])]
   
   type _To = Parameters
   

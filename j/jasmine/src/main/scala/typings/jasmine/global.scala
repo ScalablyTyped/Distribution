@@ -82,14 +82,14 @@ object global {
   inline def expect(): NothingMatcher = js.Dynamic.global.applyDynamic("expect")().asInstanceOf[NothingMatcher]
   /**
     * Create an expectation for a spec.
-    * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual
+    * @see see https://tsetse.info/check-return-value
     */
   inline def expect[T](actual: ArrayLike[T]): ArrayLikeMatchers[T] = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[ArrayLikeMatchers[T]]
   /**
     * Create an expectation for a spec.
-    * @checkReturnValue see https://tsetse.info/check-return-value
     * @param spy
+    * @see see https://tsetse.info/check-return-value
     */
   inline def expect[T /* <: Func */](spy: T): FunctionMatchers[T] = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[FunctionMatchers[T]]
   inline def expect[T /* <: Func */](spy: Spy[T]): FunctionMatchers[T] = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[FunctionMatchers[T]]
@@ -99,16 +99,16 @@ object global {
     * that are provided by an asynchronous expectation all return promises
     * which must be either returned from the spec or waited for using `await`
     * in order for Jasmine to associate them with the correct spec.
-    * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual Actual computed value to test expectations against.
+    * @see see https://tsetse.info/check-return-value
     */
   inline def expectAsync[T, U](actual: T): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
   inline def expectAsync[T, U](actual: PromiseLike[T]): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
   
   /**
     * Create an expectation for a spec.
-    * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual Actual computed value to test expectations against.
+    * @see see https://tsetse.info/check-return-value
     */
   inline def expect_T_Matchers[T](actual: T): Matchers[T] = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[Matchers[T]]
   

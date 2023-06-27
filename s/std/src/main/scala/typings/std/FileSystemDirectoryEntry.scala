@@ -4,14 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry) */
 @js.native
 trait FileSystemDirectoryEntry
   extends StObject
      with FileSystemEntry {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/createReader) */
   /* standard dom */
   def createReader(): FileSystemDirectoryReader = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getDirectory) */
   /* standard dom */
   def getDirectory(): Unit = js.native
   def getDirectory(path: java.lang.String): Unit = js.native
@@ -62,6 +65,7 @@ trait FileSystemDirectoryEntry
     errorCallback: ErrorCallback
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryEntry/getFile) */
   /* standard dom */
   def getFile(): Unit = js.native
   def getFile(path: java.lang.String): Unit = js.native

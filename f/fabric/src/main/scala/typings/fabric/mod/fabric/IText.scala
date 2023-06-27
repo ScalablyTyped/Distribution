@@ -27,7 +27,6 @@ object IText {
   /**
     * Returns fabric.IText instance from an object representation
     * @static
-    * @memberOf fabric.IText
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */

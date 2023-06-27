@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unist-util-position-from-estree" : "1.1.1"
+      "unist-util-position-from-estree" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "unist-util-position-from-estree" : "1.1.1"
+      "unist-util-position-from-estree" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

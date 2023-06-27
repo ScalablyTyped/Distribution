@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LegendStyle extends StObject {
   
   /**
-    * When a `card` type is specified, you can specify one of the following layout options.
-    *
-    * @default stack
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
-    */
+  		 * When a `card` type is specified, you can specify one of the following layout options.
+  		 *
+  		 * @default stack
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
+  		 */
   var layout: js.UndefOr[auto | `side-by-side` | stack] = js.undefined
   
   /**
-    * Specifies the style of the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
-    */
+  		 * Specifies the style of the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
+  		 */
   var `type`: classic | card
 }
 object LegendStyle {

@@ -12,10 +12,10 @@ object esriLayersBuildingSublayersBuildingComponentSublayerMod {
   @JSImport("esri/layers/buildingSublayers/BuildingComponentSublayer", JSImport.Namespace)
   @js.native
   /**
-    * BuildingComponentSublayers contain 3D Object features representing building components like doors, pipes or AC units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html)
-    */
+  		 * BuildingComponentSublayers contain 3D Object features representing building components like doors, pipes or AC units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingComponentSublayer {

@@ -1,34 +1,39 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `91` extends StObject {
   
-  /**
-    * @description The role to give the user in the organization. Can be one of:
-    *  * `admin` - The user will become an owner of the organization.
-    *  * `member` - The user will become a non-owner member of the organization.
-    * @default member
-    * @enum {string}
-    */
-  var role: js.UndefOr[admin | member_] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
+  ]
 }
 object `91` {
   
-  inline def apply(): `91` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
+    ]
+  ): `91` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`91`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `91`] (val x: Self) extends AnyVal {
     
-    inline def setRole(value: admin | member_): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['org-hook'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

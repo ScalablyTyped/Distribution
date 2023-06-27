@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.identity API to get OAuth2 access tokens.
   * @requires Permissions: 'identity'
-  * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
+  * @see https://developer.chrome.com/apps/app_identity
   * @since Chrome 29.
   */
 object identity {
@@ -27,7 +27,7 @@ object identity {
   val ^ : js.Any = js.native
   
   /**
-    * @requires(dev) **Dev channel only.**
+    * @requires **Dev channel only.**
     * @description
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * getAccounts is only supported on dev channel.

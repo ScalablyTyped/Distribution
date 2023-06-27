@@ -18,6 +18,8 @@ trait Cwd extends StObject {
   
   var matchers: js.UndefOr[js.Array[String]] = js.undefined
   
+  var shell: js.UndefOr[Boolean | String] = js.undefined
+  
   var stdio: js.UndefOr[
     (js.Tuple3[pipe | ignore, pipe | ignore, pipe | ignore]) | pipe | ignore | jsonrpc | Double
   ] = js.undefined
@@ -51,6 +53,10 @@ object Cwd {
     inline def setMatchersUndefined: Self = StObject.set(x, "matchers", js.undefined)
     
     inline def setMatchersVarargs(value: String*): Self = StObject.set(x, "matchers", js.Array(value*))
+    
+    inline def setShell(value: Boolean | String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    
+    inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
     inline def setStdio(value: (js.Tuple3[pipe | ignore, pipe | ignore, pipe | ignore]) | pipe | ignore | jsonrpc | Double): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     

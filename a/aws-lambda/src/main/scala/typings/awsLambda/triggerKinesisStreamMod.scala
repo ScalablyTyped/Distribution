@@ -230,5 +230,9 @@ object triggerKinesisStreamMod {
     }
   }
   
-  type KinesisStreamTumblingWindowHandler = Handler[KinesisStreamTumblingWindowEvent, KinesisStreamStateResponse | Unit]
+  type KinesisStreamTumblingWindowHandler = Handler[
+    KinesisStreamTumblingWindowEvent, 
+    (// tslint:disable-next-line:void-return
+  KinesisStreamStateResponse) | Unit
+  ]
 }

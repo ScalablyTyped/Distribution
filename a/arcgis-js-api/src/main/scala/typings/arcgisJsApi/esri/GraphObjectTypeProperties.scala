@@ -7,40 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphObjectTypeProperties extends StObject {
   
   /**
-    * The display name of the graph object type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#alias)
-    */
+  		 * The display name of the graph object type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#alias)
+  		 */
   var alias: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies [index fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html) for a graph object type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#fieldIndexes)
-    */
+  		 * Specifies [index fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html) for a graph object type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#fieldIndexes)
+  		 */
   var fieldIndexes: js.UndefOr[js.Array[FieldIndexProperties]] = js.undefined
   
   /**
-    * The name of the graph object type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#name)
-    */
+  		 * The name of the graph object type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html) of a graph object type such as an [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) or [RelationshipType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#properties)
-    */
+  		 * Specifies the [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html) of a graph object type such as an [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) or [RelationshipType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#properties)
+  		 */
   var properties: js.UndefOr[js.Array[GraphPropertyProperties]] = js.undefined
   
   /**
-    * The object type's role in the knowledge graph.
-    *
-    * @default "Regular"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#role)
-    */
+  		 * The object type's role in the knowledge graph.
+  		 *
+  		 * @default "Regular"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObjectType.html#role)
+  		 */
   var role: js.UndefOr[String] = js.undefined
 }
 object GraphObjectTypeProperties {

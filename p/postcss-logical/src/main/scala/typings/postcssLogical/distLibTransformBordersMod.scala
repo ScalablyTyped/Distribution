@@ -12,12 +12,12 @@ object distLibTransformBordersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformBorder(borderSetting: String, side: String): js.Function1[/* declaration */ Declaration, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformBorder")(borderSetting.asInstanceOf[js.Any], side.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformBorder(borderSetting: String, side: String): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformBorder")(borderSetting.asInstanceOf[js.Any], side.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
   
-  inline def transformBorderProperty(borderSetting: String, side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderProperty")(borderSetting.asInstanceOf[js.Any], side.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformBorderProperty(borderSetting: String, side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderProperty")(borderSetting.asInstanceOf[js.Any], side.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
   
-  inline def transformBorderRadius(config: DirectionConfig): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderRadius")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformBorderRadius(config: DirectionConfig): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderRadius")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
   
-  inline def transformBorderShorthand(side: js.Array[String]): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
-  inline def transformBorderShorthand(side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformBorderShorthand(side: js.Array[String]): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
+  inline def transformBorderShorthand(side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformBorderShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

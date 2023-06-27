@@ -10,46 +10,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationProfileLineGroun extends StObject {
   
   /**
-    * Color of the line on the chart and the hovered points in the view.
-    *
-    * @default #000000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#color)
-    */
+  		 * Color of the line on the chart and the hovered points in the view.
+  		 *
+  		 * @default #000000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Unique identifier for the profile line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#id)
-    */
+  		 * Unique identifier for the profile line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * Title of the line, to be displayed in the chart tooltip and in the chart legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#title)
-    */
+  		 * Title of the line, to be displayed in the chart tooltip and in the chart legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   var `type`: ground
   
   /**
-    * Whether a line visualization representing [elevationSamples](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#samples) should be added to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#viewVisualizationEnabled)
-    */
+  		 * Whether a line visualization representing [elevationSamples](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#samples) should be added to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#viewVisualizationEnabled)
+  		 */
   var viewVisualizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the line should be computed and shown in the chart.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#visible)
-    */
+  		 * Whether the line should be computed and shown in the chart.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ElevationProfileLineGroun {

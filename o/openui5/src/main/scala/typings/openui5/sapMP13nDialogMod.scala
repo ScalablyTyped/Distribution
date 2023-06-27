@@ -20,7 +20,7 @@ object sapMP13nDialogMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:a3c3c5eb54bc4cc38e6cfbd8e90c6a01 Personalization Dialog}
+    * 	{@link https://ui5.sap.com/#/topic/a3c3c5eb54bc4cc38e6cfbd8e90c6a01 Personalization Dialog}
     */
   open class default () extends P13nDialog {
     def this(/**
@@ -150,13 +150,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -181,7 +181,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -192,7 +192,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -213,13 +213,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOk(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -244,7 +244,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOk(
       /**
@@ -255,7 +255,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -276,13 +276,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -307,7 +307,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
@@ -318,7 +318,7 @@ object sapMP13nDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nDialog` itself
       */
@@ -356,13 +356,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -380,13 +380,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOk(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -404,13 +404,13 @@ object sapMP13nDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachReset(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -418,7 +418,7 @@ object sapMP13nDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -431,7 +431,7 @@ object sapMP13nDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:ok ok} to attached listeners.
       *
@@ -444,7 +444,7 @@ object sapMP13nDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:reset reset} to attached listeners.
       *
@@ -489,7 +489,7 @@ object sapMP13nDialogMod {
     def getShowReset(): Boolean = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getShowResetEnabled showResetEnabled}.
       *
@@ -615,7 +615,7 @@ object sapMP13nDialogMod {
     bShowReset: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets a new value for property {@link #getShowResetEnabled showResetEnabled}.
       *
@@ -658,6 +658,24 @@ object sapMP13nDialogMod {
     def unbindPanels(): this.type = js.native
   }
   
+  trait P13nDialog$CancelEventParameters extends StObject
+  
+  trait P13nDialog$OkEventParameters extends StObject
+  
+  trait P13nDialog$ResetEventParameters extends StObject
+  
+  type P13nDialogCancelEvent = typings.openui5.sapUiBaseEventMod.default[P13nDialog$CancelEventParameters]
+  
+  type P13nDialogCancelEventParameters = P13nDialog$CancelEventParameters
+  
+  type P13nDialogOkEvent = typings.openui5.sapUiBaseEventMod.default[P13nDialog$OkEventParameters]
+  
+  type P13nDialogOkEventParameters = P13nDialog$OkEventParameters
+  
+  type P13nDialogResetEvent = typings.openui5.sapUiBaseEventMod.default[P13nDialog$ResetEventParameters]
+  
+  type P13nDialogResetEventParameters = P13nDialog$ResetEventParameters
+  
   trait P13nDialogSettings
     extends StObject
        with DialogSettings {
@@ -665,7 +683,9 @@ object sapMP13nDialogMod {
     /**
       * Event fired if the 'cancel' button in `P13nDialog` is clicked.
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This property determines which panel is initially shown when dialog is opened. If not defined then the
@@ -678,7 +698,9 @@ object sapMP13nDialogMod {
     /**
       * Event fired if the 'ok' button in `P13nDialog` is clicked.
       */
-    var ok: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var ok: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The dialog panels displayed in the dialog.
@@ -690,7 +712,9 @@ object sapMP13nDialogMod {
     /**
       * Event fired if the 'reset' button in `P13nDialog` is clicked.
       */
-    var reset: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var reset: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This property determines whether the 'Restore' button is shown inside the dialog. If this property is
@@ -702,7 +726,7 @@ object sapMP13nDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * This property determines whether the 'Restore' button is enabled and is taken into account only if `showReset`
       * is set to `true`.
@@ -729,7 +753,7 @@ object sapMP13nDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
@@ -737,7 +761,7 @@ object sapMP13nDialogMod {
       
       inline def setInitialVisiblePanelTypeUndefined: Self = StObject.set(x, "initialVisiblePanelType", js.undefined)
       
-      inline def setOk(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
+      inline def setOk(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
       
       inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
       
@@ -749,7 +773,7 @@ object sapMP13nDialogMod {
       
       inline def setPanelsVarargs(value: typings.openui5.sapMP13nPanelMod.default*): Self = StObject.set(x, "panels", js.Array(value*))
       
-      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       

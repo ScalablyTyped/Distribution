@@ -11,10 +11,10 @@ object esriRestKnowledgeGraphGraphSearchStreamingMod {
   @JSImport("esri/rest/knowledgeGraph/GraphSearchStreaming", JSImport.Namespace)
   @js.native
   /**
-    * The search operation is performed on a knowledge graph service's [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html)
-    */
+  		 * The search operation is performed on a knowledge graph service's [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html)
+  		 */
   open class ^ ()
     extends StObject
        with GraphSearchStreaming {

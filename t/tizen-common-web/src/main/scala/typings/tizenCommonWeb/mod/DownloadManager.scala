@@ -18,8 +18,8 @@ trait DownloadManager extends StObject {
     *
     * @param downloadId The ID of the ongoing download operation to abandon.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def abandon(downloadId: Double): Unit = js.native
   
@@ -29,8 +29,8 @@ trait DownloadManager extends StObject {
     *
     * @param downloadId The ID of the ongoing download operation to stop.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def cancel(downloadId: Double): Unit = js.native
   
@@ -41,13 +41,13 @@ trait DownloadManager extends StObject {
     *
     * @returns The download request information of the given ID.
     *
-    * @throw WebAPIException with error type NotFoundError, if the identifier does not match
+    * @throws WebAPIException with error type NotFoundError, if the identifier does not match
     * any download operation in progress.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input
     * parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, in any other error case.
+    * @throws WebAPIException with error type UnknownError, in any other error case.
     */
   def getDownloadRequest(downloadId: Double): DownloadRequest = js.native
   
@@ -61,13 +61,13 @@ trait DownloadManager extends StObject {
     *
     * @returns The MIME type of the downloaded file.
     *
-    * @throw WebAPIException with error type NotFoundError, if the identifier does not match
+    * @throws WebAPIException with error type NotFoundError, if the identifier does not match
     * any download operation in progress.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input
     * parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, in any other error case.
+    * @throws WebAPIException with error type UnknownError, in any other error case.
     */
   def getMIMEType(downloadId: Double): String = js.native
   
@@ -78,10 +78,10 @@ trait DownloadManager extends StObject {
     *
     * @returns The current download state of the specified ID.
     *
-    * @throw WebAPIException with error type NotFoundError, if the identifier does not match any download operation in progress.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type NotFoundError, if the identifier does not match any download operation in progress.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getState(downloadId: Double): DownloadState = js.native
   
@@ -93,8 +93,8 @@ trait DownloadManager extends StObject {
     *
     * @param downloadId The ID of the ongoing download operation to pause.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def pause(downloadId: Double): Unit = js.native
   
@@ -106,8 +106,8 @@ trait DownloadManager extends StObject {
     *
     * @param downloadId The ID of the paused download operation to resume.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value or in case of an attempt to resume abandoned download operation.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value or in case of an attempt to resume abandoned download operation.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def resume(downloadId: Double): Unit = js.native
   
@@ -118,13 +118,13 @@ trait DownloadManager extends StObject {
     * @param downloadId The ID to set the download callback.
     * @param downloadCallback The method to invoke when the download state changes or an error occurs.
     *
-    * @throw WebAPIException with error type NotFoundError, if the identifier does not match
+    * @throws WebAPIException with error type NotFoundError, if the identifier does not match
     * any download operation in progress.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input
     * parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, in any other error case.
+    * @throws WebAPIException with error type UnknownError, in any other error case.
     */
   def setListener(downloadId: Double, downloadCallback: DownloadCallback): Unit = js.native
   
@@ -143,11 +143,11 @@ trait DownloadManager extends StObject {
     * @returns An identifier for each download operation.
     * If the network is not available for downloading, the return value is -1 since Tizen 2.3.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type NotSupportedError, if the _networkType_ of the given DownloadRequest is not supported on a device.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotSupportedError, if the _networkType_ of the given DownloadRequest is not supported on a device.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def start(downloadRequest: DownloadRequest): Double = js.native
   def start(downloadRequest: DownloadRequest, downloadCallback: DownloadCallback): Double = js.native

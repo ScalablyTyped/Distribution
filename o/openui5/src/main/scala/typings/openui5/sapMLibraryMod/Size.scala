@@ -42,7 +42,7 @@ object Size extends StObject {
   /* "M" */ val M: typings.openui5.sapMLibraryMod.Size.M & String = js.native
   
   /**
-    * @SINCE 1.44.0
+    * @since 1.44.0
     *
     * The width and height of the control are determined by the width and height of the container the control
     * is placed in. Please note: it is decided by the control whether or not sap.m.Size.Responsive is supported.

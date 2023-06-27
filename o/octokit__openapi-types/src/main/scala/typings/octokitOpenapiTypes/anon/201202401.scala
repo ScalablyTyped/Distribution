@@ -12,11 +12,11 @@ trait `201202401` extends StObject {
   /** @description Response when the codespace creation partially failed but is being retried in the background */
   var `202`: ContentApplicationjsonIdletimeoutnotice
   
-  var `401`: Content36
+  var `401`: Content41
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -25,9 +25,9 @@ object `201202401` {
   inline def apply(
     `201`: ContentApplicationjsonIdletimeoutnotice,
     `202`: ContentApplicationjsonIdletimeoutnotice,
-    `401`: Content36,
-    `403`: Content36,
-    `404`: Content36,
+    `401`: Content41,
+    `403`: Content41,
+    `404`: Content41,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `201202401` = {
     val __obj = js.Dynamic.literal()
@@ -47,11 +47,11 @@ object `201202401` {
     
     inline def set202(value: ContentApplicationjsonIdletimeoutnotice): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content41): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-logical" : "6.1.0"
+      "postcss-logical" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-logical" : "6.1.0"
+      "postcss-logical" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -6,15 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasShadowStyles extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowBlur) */
   /* standard dom */
   var shadowBlur: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowColor) */
   /* standard dom */
   var shadowColor: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowOffsetX) */
   /* standard dom */
   var shadowOffsetX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/shadowOffsetY) */
   /* standard dom */
   var shadowOffsetY: Double
 }

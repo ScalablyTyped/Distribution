@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.BarcodeScannerInput
   - typings.arcgisJsApi.esri.ComboBoxInput
   - typings.arcgisJsApi.esri.RadioButtonsInput
+  - typings.arcgisJsApi.esri.SwitchInput
 */
 trait inputsInput extends StObject

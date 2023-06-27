@@ -141,13 +141,13 @@ object sapMNumericContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NumericContent` itself
       */
@@ -172,7 +172,7 @@ object sapMNumericContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -183,7 +183,7 @@ object sapMNumericContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NumericContent` itself
       */
@@ -201,13 +201,13 @@ object sapMNumericContentMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -215,7 +215,7 @@ object sapMNumericContentMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -228,8 +228,8 @@ object sapMNumericContentMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @since 1.73
+      * @experimental (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAdaptiveFontSize adaptiveFontSize}.
@@ -396,8 +396,8 @@ object sapMNumericContentMod {
     def getWithMargin(): Boolean = js.native
     
     /**
-      * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @since 1.73
+      * @experimental (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAdaptiveFontSize adaptiveFontSize}.
@@ -677,13 +677,19 @@ object sapMNumericContentMod {
     bWithMargin: Boolean): this.type = js.native
   }
   
+  trait NumericContent$PressEventParameters extends StObject
+  
+  type NumericContentPressEvent = typings.openui5.sapUiBaseEventMod.default[NumericContent$PressEventParameters]
+  
+  type NumericContentPressEventParameters = NumericContent$PressEventParameters
+  
   trait NumericContentSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.73
-      * @EXPERIMENTAL (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @since 1.73
+      * @experimental (since 1.73) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * If set to its default value true this property applies the appropriate font style class based on the
@@ -736,7 +742,9 @@ object sapMNumericContentMod {
     /**
       * The event is fired when the user chooses the numeric content.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The scaling prefix. Financial characters can be used for currencies and counters. The SI prefixes can
@@ -836,7 +844,7 @@ object sapMNumericContentMod {
       
       inline def setNullifyValueUndefined: Self = StObject.set(x, "nullifyValue", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

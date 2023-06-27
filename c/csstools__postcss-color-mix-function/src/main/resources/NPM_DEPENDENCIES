@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-color-mix-function" : "1.0.1"
+      "@csstools/postcss-color-mix-function" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-color-mix-function" : "1.0.1"
+      "@csstools/postcss-color-mix-function" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

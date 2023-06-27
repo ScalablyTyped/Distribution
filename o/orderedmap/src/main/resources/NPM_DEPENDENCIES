@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "orderedmap" : "2.1.0"
+      "orderedmap" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "orderedmap" : "2.1.0"
+      "orderedmap" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

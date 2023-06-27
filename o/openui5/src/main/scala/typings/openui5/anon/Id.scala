@@ -1,7 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.int
-import typings.openui5.sapUiCoreItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,27 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Id extends StObject {
   
   /**
-    * ID of the ListBox which triggered the event.
+    * user specific data which is available during the whole lifecycle of the component
+    */
+  var componentData: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * ID for the component instance
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The currently selected index of the ListBox. In the case of multiple selection, this is exactly one of
-    * the selected indices - the one whose selection has triggered the selection change. To get all currently
-    * selected indices, use selectedIndices.
+    * name of the component to import
     */
-  var selectedIndex: js.UndefOr[int] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Array containing the indices which are selected.
+    * settings object for the component
     */
-  var selectedIndices: js.UndefOr[js.Array[int]] = js.undefined
+  var settings: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * The currently selected item of the ListBox. In the case of multiple selection, this is exactly one of
-    * the selected items - the one whose selection has triggered the selection change.
+    * URL to load the component from
     */
-  var selectedItem: js.UndefOr[default] = js.undefined
+  var url: js.UndefOr[String] = js.undefined
 }
 object Id {
   
@@ -41,22 +41,24 @@ object Id {
   @scala.inline
   implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
+    inline def setComponentData(value: Any): Self = StObject.set(x, "componentData", value.asInstanceOf[js.Any])
+    
+    inline def setComponentDataUndefined: Self = StObject.set(x, "componentData", js.undefined)
+    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setSelectedIndex(value: int): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSelectedIndices(value: js.Array[int]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Object): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSelectedIndicesVarargs(value: int*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItem(value: default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

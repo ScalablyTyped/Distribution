@@ -26,7 +26,7 @@ object sapUiLayoutCssgridCssgridMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/flexible-grid/ Flexible Grid}
     * 	{@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout MDN web docs: CSS Grid Layout}
     */
@@ -64,7 +64,7 @@ object sapUiLayoutCssgridCssgridMod {
     var __implements__sap_ui_layout_cssgrid_IGridConfigurable: Boolean = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to determine on which HTML Elements the display:grid styles
       * should be applied
@@ -75,7 +75,7 @@ object sapUiLayoutCssgridCssgridMod {
     override def getGridDomRefs(): js.Array[HTMLElement | typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to get the grid layout (display:grid styles) to apply
       *
@@ -193,8 +193,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridAutoColumns gridAutoColumns}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns
-      * MDN web docs: grid-auto-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns MDN web docs: grid-auto-columns}
       *
       * Default value is `empty string`.
       *
@@ -205,8 +204,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridAutoFlow gridAutoFlow}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow
-      * MDN web docs: grid-auto-flow}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow MDN web docs: grid-auto-flow}
       *
       * Default value is `"Row"`.
       *
@@ -217,8 +215,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridAutoRows gridAutoRows}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows
-      * MDN web docs: grid-auto-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows MDN web docs: grid-auto-rows}
       *
       * Default value is `empty string`.
       *
@@ -229,8 +226,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridColumnGap gridColumnGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap
-      * MDN web docs: grid-column-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap MDN web docs: grid-column-gap}
       *
       * Default value is `empty string`.
       *
@@ -241,9 +237,9 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridGap gridGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap
-      * MDN web docs: grid-gap} It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the
-      * gridGap value will have less priority and will be overwritten.
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap MDN web docs: grid-gap }
+      * It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the gridGap value will have
+      * less priority and will be overwritten.
       *
       * Default value is `empty string`.
       *
@@ -254,8 +250,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridRowGap gridRowGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap
-      * MDN web docs: grid-row-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap MDN web docs: grid-row-gap}
       *
       * Default value is `empty string`.
       *
@@ -266,8 +261,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridTemplateColumns gridTemplateColumns}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
-      * MDN web docs: grid-template-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns MDN web docs: grid-template-columns}
       *
       * Default value is `empty string`.
       *
@@ -278,8 +272,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Gets current value of property {@link #getGridTemplateRows gridTemplateRows}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
-      * MDN web docs: grid-template-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows MDN web docs: grid-template-rows}
       *
       * Default value is `empty string`.
       *
@@ -378,8 +371,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridAutoColumns gridAutoColumns}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns
-      * MDN web docs: grid-auto-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns MDN web docs: grid-auto-columns}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -396,8 +388,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridAutoFlow gridAutoFlow}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow
-      * MDN web docs: grid-auto-flow}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow MDN web docs: grid-auto-flow}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -420,8 +411,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridAutoRows gridAutoRows}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows
-      * MDN web docs: grid-auto-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows MDN web docs: grid-auto-rows}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -438,8 +428,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridColumnGap gridColumnGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap
-      * MDN web docs: grid-column-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap MDN web docs: grid-column-gap}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -456,9 +445,9 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridGap gridGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap
-      * MDN web docs: grid-gap} It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the
-      * gridGap value will have less priority and will be overwritten.
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap MDN web docs: grid-gap }
+      * It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the gridGap value will have
+      * less priority and will be overwritten.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -475,8 +464,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridRowGap gridRowGap}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap
-      * MDN web docs: grid-row-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap MDN web docs: grid-row-gap}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -493,8 +481,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridTemplateColumns gridTemplateColumns}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
-      * MDN web docs: grid-template-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns MDN web docs: grid-template-columns}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -511,8 +498,7 @@ object sapUiLayoutCssgridCssgridMod {
     /**
       * Sets a new value for property {@link #getGridTemplateRows gridTemplateRows}.
       *
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
-      * MDN web docs: grid-template-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows MDN web docs: grid-template-rows}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -554,65 +540,58 @@ object sapUiLayoutCssgridCssgridMod {
     var customLayout: js.UndefOr[typings.openui5.sapUiLayoutCssgridGridLayoutBaseMod.default] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns
-      * MDN web docs: grid-auto-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns MDN web docs: grid-auto-columns}
       */
     var gridAutoColumns: js.UndefOr[
         CSSGridTrack | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow
-      * MDN web docs: grid-auto-flow}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow MDN web docs: grid-auto-flow}
       */
     var gridAutoFlow: js.UndefOr[
         CSSGridAutoFlow | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cssgrid.CSSGridAutoFlow * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows
-      * MDN web docs: grid-auto-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows MDN web docs: grid-auto-rows}
       */
     var gridAutoRows: js.UndefOr[
         CSSGridTrack | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap
-      * MDN web docs: grid-column-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap MDN web docs: grid-column-gap}
       */
     var gridColumnGap: js.UndefOr[
         CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap
-      * MDN web docs: grid-gap} It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the
-      * gridGap value will have less priority and will be overwritten.
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap MDN web docs: grid-gap }
+      * It is a shorthand for gridRowGap and gridColumnGap. If some of them is set, the gridGap value will have
+      * less priority and will be overwritten.
       */
     var gridGap: js.UndefOr[
         CSSGridGapShortHand | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap
-      * MDN web docs: grid-row-gap}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap MDN web docs: grid-row-gap}
       */
     var gridRowGap: js.UndefOr[
         CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
-      * MDN web docs: grid-template-columns}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns MDN web docs: grid-template-columns}
       */
     var gridTemplateColumns: js.UndefOr[
         CSSGridTrack | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
-      * MDN web docs: grid-template-rows}
+      * Sets the value for the CSS display:grid property {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows MDN web docs: grid-template-rows}
       */
     var gridTemplateRows: js.UndefOr[
         CSSGridTrack | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

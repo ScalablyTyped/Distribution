@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-gesture__core
 
-Typings are for version 10.2.26
+Typings are for version 10.2.27
 
 ## Library description:
 Core engine for receiving gestures

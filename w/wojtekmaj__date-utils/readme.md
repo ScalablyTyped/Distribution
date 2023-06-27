@@ -1,7 +1,7 @@
 
 # Scala.js typings for wojtekmaj__date-utils
 
-Typings are for version 1.1.3
+Typings are for version 1.4.1
 
 ## Library description:
 A collection of date-related utilities.

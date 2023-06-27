@@ -130,9 +130,9 @@ object sapBaseI18nResourceBundleMod {
       * A text can contain placeholders that will be replaced with concrete values when `getText` is called.
       * The replacement is triggered by the `aArgs` parameter.
       *
-      * Whenever this parameter is given, then the text and the arguments are additionally run through the {@link
-      * module:sap/base/strings/formatMessage} API to replace placeholders in the text with the corresponding
-      * values from the arguments array. The resulting string is returned by `getText`.
+      * Whenever this parameter is given, then the text and the arguments are additionally run through the {@link module:sap/base/strings/formatMessage }
+      * API to replace placeholders in the text with the corresponding values from the arguments array. The resulting
+      * string is returned by `getText`.
       *
       * As the `formatMessage` API imposes some requirements on the input text (regarding curly braces and single
       * apostrophes), text authors need to be aware of the specifics of the `formatMessage` API. Callers of `getText`,

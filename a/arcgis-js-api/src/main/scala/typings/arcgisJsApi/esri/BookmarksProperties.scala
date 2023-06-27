@@ -12,79 +12,81 @@ trait BookmarksProperties
      with GoToProperties {
   
   /**
-    * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
-    */
+  		 * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#bookmarks)
+  		 */
   var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   
   /**
-    * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultCreateOptions)
-    */
+  		 * Specifies how new bookmarks will be created if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultCreateOptions)
+  		 */
   var defaultCreateOptions: js.UndefOr[BookmarkOptions] = js.undefined
   
   /**
-    * Specifies how bookmarks will be edited, if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultEditOptions)
-    */
+  		 * Specifies how bookmarks will be edited, if [editingEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled) is set to `true`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#defaultEditOptions)
+  		 */
   var defaultEditOptions: js.UndefOr[BookmarkOptions] = js.undefined
   
   /**
-    * When true, the widget is visually withdrawn and cannot be interacted with.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
-    */
+  		 * When true, the widget is visually withdrawn and cannot be interacted with.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#disabled)
+  		 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the bookmarks are able to be edited.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
-    */
+  		 * Indicates whether the bookmarks are able to be edited.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#editingEnabled)
+  		 */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the heading level to use for the message "No bookmarks" when no bookmarks are available in this widget.
-    *
-    * @default 2
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#headingLevel)
-    */
+  		 * Indicates the heading level to use for the message "No bookmarks" when no bookmarks are available in this widget.
+  		 *
+  		 * @default 2
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#headingLevel)
+  		 */
   var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Bookmarks#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[BookmarksViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[BookmarksVisibleElements] = js.undefined
 }
 object BookmarksProperties {

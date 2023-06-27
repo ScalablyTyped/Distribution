@@ -12,17 +12,17 @@ trait RotateEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * Angle of rotation in degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
-    */
+  		 * Angle of rotation in degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
+  		 */
   var angle: Double
   
   /**
-    * Returns information indicating the stage of the rotate operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
-    */
+  		 * Returns information indicating the stage of the rotate operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#RotateEventInfo)
+  		 */
   var `type`: `rotate-start` | rotate | `rotate-stop`
 }
 object RotateEventInfo {

@@ -18,6 +18,7 @@ object RTCRtpSender {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpSender/getCapabilities) */
   /* standard dom */
   inline def getCapabilities(kind: java.lang.String): RTCRtpCapabilities | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCapabilities")(kind.asInstanceOf[js.Any]).asInstanceOf[RTCRtpCapabilities | Null]
 }

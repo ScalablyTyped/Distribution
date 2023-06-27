@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeadersLink extends StObject {
   
-  var content: `71`
+  var content: `80`
   
   var headers: Link
 }
 object HeadersLink {
   
-  inline def apply(content: `71`, headers: Link): HeadersLink = {
+  inline def apply(content: `80`, headers: Link): HeadersLink = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadersLink]
   }
@@ -20,7 +20,7 @@ object HeadersLink {
   @scala.inline
   implicit open class MutableBuilder[Self <: HeadersLink] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: `71`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: `80`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setHeaders(value: Link): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }

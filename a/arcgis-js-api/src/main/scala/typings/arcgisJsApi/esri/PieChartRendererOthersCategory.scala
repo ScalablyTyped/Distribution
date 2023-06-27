@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PieChartRendererOthersCategory extends StObject {
   
   /**
-    * Defines the color used to represent all categories whose pie slices are smaller than the percentage defined by `threshold`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
-    */
+  		 * Defines the color used to represent all categories whose pie slices are smaller than the percentage defined by `threshold`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * Describes the `color` grouping categories smaller than the `threshold` in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](global.html)
-    */
+  		 * Describes the `color` grouping categories smaller than the `threshold` in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Represents the minimum size of individual slices as a percentage of the entire pie.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
-    */
+  		 * Represents the minimum size of individual slices as a percentage of the entire pie.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
+  		 */
   var threshold: js.UndefOr[Double] = js.undefined
 }
 object PieChartRendererOthersCategory {

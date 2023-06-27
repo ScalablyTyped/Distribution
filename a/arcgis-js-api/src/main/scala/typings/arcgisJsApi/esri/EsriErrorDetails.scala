@@ -7,73 +7,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EsriErrorDetails extends StObject {
   
   /**
-    * A function to retrieve headers sent from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * A function to retrieve headers sent from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   def getHeader(headerName: String): String
   /**
-    * A function to retrieve headers sent from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * A function to retrieve headers sent from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   @JSName("getHeader")
   var getHeader_Original: GetHeader
   
   /**
-    * The status code of the http response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * The status code of the http response.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var httpStatus: Double
   
   /**
-    * The error message code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * The error message code.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var messageCode: String
   
   /**
-    * Additional error message(s).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * Additional error message(s).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var messages: js.Array[String]
   
   /**
-    * The raw error object if the server returned a JSON error, or the response text if the server didn't return a 200 response code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * The raw error object if the server returned a JSON error, or the response text otherwise.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var raw: Any | String
   
   /**
-    * The query parameters sent with the http request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
-  var requestOptions: Any
+  		 * The options used in the http request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
+  var requestOptions: RequestOptions
   
   /**
-    * Indicates if the request required https.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * Indicates if the request required https.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var ssl: Boolean
   
   /**
-    * The error message subcode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * The error message subcode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var subCode: Double
   
   /**
-    * The URL of the request that returned an error message.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
-    */
+  		 * The URL of the request that returned an error message.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
+  		 */
   var url: String
 }
 object EsriErrorDetails {
@@ -84,7 +84,7 @@ object EsriErrorDetails {
     messageCode: String,
     messages: js.Array[String],
     raw: Any | String,
-    requestOptions: Any,
+    requestOptions: RequestOptions,
     ssl: Boolean,
     subCode: Double,
     url: String
@@ -108,7 +108,7 @@ object EsriErrorDetails {
     
     inline def setRaw(value: Any | String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    inline def setRequestOptions(value: Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     

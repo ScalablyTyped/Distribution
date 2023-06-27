@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Landscape
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMSplitContainerMod.SplitContainerSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -20,7 +19,7 @@ object sapMSplitAppMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:eedfe79e4c19462eafe8780aeab16a3c Split App}
+    * 	{@link https://ui5.sap.com/#/topic/eedfe79e4c19462eafe8780aeab16a3c Split App}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/split-screen/ Split App}
     */
   open class default () extends SplitApp {
@@ -142,13 +141,13 @@ object sapMSplitAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def attachOrientationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitApp` itself
       */
@@ -176,7 +175,7 @@ object sapMSplitAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def attachOrientationChange(
       /**
@@ -187,7 +186,7 @@ object sapMSplitAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitApp` itself
       */
@@ -208,13 +207,13 @@ object sapMSplitAppMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def detachOrientationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitAppOrientationChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -223,17 +222,19 @@ object sapMSplitAppMod {
     
     /**
       * @deprecated (since 1.87) - use {@link sap.ui.Device.orientation.attachHandler} instead.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:orientationChange orientationChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireOrientationChange(): this.type = js.native
-    def fireOrientationChange(/**
+    def fireOrientationChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Landscape): this.type = js.native
+    mParameters: SplitApp$OrientationChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getHomeIcon homeIcon}.
@@ -298,6 +299,33 @@ object sapMSplitAppMod {
     oHomeIcon: Any): this.type = js.native
   }
   
+  trait SplitApp$OrientationChangeEventParameters extends StObject {
+    
+    /**
+      * Returns true if the device is in landscape mode.
+      */
+    var landscape: js.UndefOr[Boolean] = js.undefined
+  }
+  object SplitApp$OrientationChangeEventParameters {
+    
+    inline def apply(): SplitApp$OrientationChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitApp$OrientationChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitApp$OrientationChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+      
+      inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    }
+  }
+  
+  type SplitAppOrientationChangeEvent = typings.openui5.sapUiBaseEventMod.default[SplitApp$OrientationChangeEventParameters]
+  
+  type SplitAppOrientationChangeEventParameters = SplitApp$OrientationChangeEventParameters
+  
   trait SplitAppSettings
     extends StObject
        with SplitContainerSettings {
@@ -331,7 +359,12 @@ object sapMSplitAppMod {
       *
       * Fires when orientation (portrait/landscape) is changed.
       */
-    var orientationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var orientationChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitApp$OrientationChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object SplitAppSettings {
     
@@ -347,7 +380,9 @@ object sapMSplitAppMod {
       
       inline def setHomeIconUndefined: Self = StObject.set(x, "homeIcon", js.undefined)
       
-      inline def setOrientationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "orientationChange", js.Any.fromFunction1(value))
+      inline def setOrientationChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitApp$OrientationChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "orientationChange", js.Any.fromFunction1(value))
       
       inline def setOrientationChangeUndefined: Self = StObject.set(x, "orientationChange", js.undefined)
     }

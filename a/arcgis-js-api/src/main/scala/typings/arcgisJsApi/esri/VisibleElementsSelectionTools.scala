@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibleElementsSelectionTools extends StObject {
   
   /**
-    * Indicates whether to display the `"lasso-selection"` tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `"lasso-selection"` tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var `lasso-selection`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the `"rectangle-selection"` tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `"rectangle-selection"` tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var `rectangle-selection`: js.UndefOr[Boolean] = js.undefined
 }
 object VisibleElementsSelectionTools {

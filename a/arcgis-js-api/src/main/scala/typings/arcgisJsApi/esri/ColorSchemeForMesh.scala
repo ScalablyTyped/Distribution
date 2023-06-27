@@ -9,59 +9,59 @@ trait ColorSchemeForMesh
      with ColorScheme {
   
   /**
-    * The continuous color ramp that will be applied to the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The continuous color ramp that will be applied to the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * Predefined classed color schemes to use for the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * Predefined classed color schemes to use for the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var colorsForClassBreaks: js.Array[ColorSchemeForMeshColorsForClassBreaks]
   
   /**
-    * The unique id of the color scheme to use in the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The unique id of the color scheme to use in the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var id: String
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var name: String
   
   /**
-    * The color of the symbol used to indicate features with no data and features that are out of range.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The color of the symbol used to indicate features with no data and features that are out of range.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * The opacity of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var opacity: Double
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * Indicates which values will be emphasized in the continuous ramp and the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
-    */
+  		 * Indicates which values will be emphasized in the continuous ramp and the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
+  		 */
   var theme: String
 }
 object ColorSchemeForMesh {

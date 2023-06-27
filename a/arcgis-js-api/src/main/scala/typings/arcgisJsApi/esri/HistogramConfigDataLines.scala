@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HistogramConfigDataLines extends StObject {
   
   /**
-    * The label associated with the line.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label associated with the line.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * The value on the data axis of the histogram where a line will be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
-    */
+  		 * The value on the data axis of the histogram where a line will be rendered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
+  		 */
   var value: js.UndefOr[Double] = js.undefined
 }
 object HistogramConfigDataLines {

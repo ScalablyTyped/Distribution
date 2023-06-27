@@ -204,11 +204,13 @@ object anon {
   @js.native
   trait RequiredHeaderskeyofHeade extends StObject {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Headers/append) */
     /* standard dom */
     def append(name: String, value: String): Unit = js.native
     @JSName("append")
     var append_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Headers/delete) */
     /* standard dom */
     def delete(name: String): Unit = js.native
     @JSName("delete")
@@ -232,11 +234,13 @@ object anon {
         Unit
       ] = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Headers/get) */
     /* standard dom */
     def get(name: String): String | Null = js.native
     @JSName("get")
     var get_Original: js.Function1[/* name */ String, String | Null] = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Headers/has) */
     /* standard dom */
     def has(name: String): Boolean = js.native
     @JSName("has")
@@ -252,6 +256,7 @@ object anon {
     @JSName("keys")
     var keys_Original: js.Function0[IterableIterator[String]] = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Headers/set) */
     /* standard dom */
     def set(name: String, value: String): Unit = js.native
     @JSName("set")

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Error extends StObject {
   
   /**
-    * The details object provides additional details specific to the error, giving more information about why the error was raised.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
-    */
+  		 * The details object provides additional details specific to the error, giving more information about why the error was raised.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
+  		 */
   var details: Any
   
   /**
-    * A message describing the details of the error.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#message)
-    */
+  		 * A message describing the details of the error.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#message)
+  		 */
   var message: String
   
   /**
-    * A unique error name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#name)
-    */
+  		 * A unique error name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#name)
+  		 */
   var name: String
 }
 object Error {

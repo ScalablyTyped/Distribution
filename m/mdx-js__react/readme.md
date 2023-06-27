@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdx-js__react
 
-Typings are for version 2.1.3
+Typings are for version 2.3.0
 
 ## Library description:
 React context for MDX

@@ -164,7 +164,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     /**
       * Asynchronously generates a hash for the given string.
-      * @para s String to hash
+      * @param s String to hash
       * @param salt Salt length to generate or salt to use
       * @param callback Callback receiving the error, if any, and the resulting hash
       * @param progressCallback Callback successively called with the percentage of rounds completed

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InnerHTML extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/innerHTML) */
   /* standard dom */
   var innerHTML: java.lang.String
 }

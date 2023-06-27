@@ -1,5 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSNumericBaseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,7 @@ trait CSSNumericType extends StObject {
   
   var percent: js.UndefOr[Double] = js.undefined
   
-  var percentHint: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSNumericBaseType */ Any
-  ] = js.undefined
+  var percentHint: js.UndefOr[CSSNumericBaseType] = js.undefined
   
   var resolution: js.UndefOr[Double] = js.undefined
   
@@ -52,9 +51,7 @@ object CSSNumericType {
     
     inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    inline def setPercentHint(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSNumericBaseType */ Any
-    ): Self = StObject.set(x, "percentHint", value.asInstanceOf[js.Any])
+    inline def setPercentHint(value: CSSNumericBaseType): Self = StObject.set(x, "percentHint", value.asInstanceOf[js.Any])
     
     inline def setPercentHintUndefined: Self = StObject.set(x, "percentHint", js.undefined)
     

@@ -16,8 +16,8 @@ object sapUiTestMatchersMatcherMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor
-    * sap.ui.base.ManagedObject} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor sap.ui.base.ManagedObject }
+    * can be used.
     */
   open class default () extends Matcher
   /* static members */
@@ -93,7 +93,7 @@ object sapUiTestMatchersMatcherMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the matcher is matching - will get an instance of sap.ui.core.Control as parameter.
       *

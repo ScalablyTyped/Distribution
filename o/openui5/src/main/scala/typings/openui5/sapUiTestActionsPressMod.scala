@@ -58,7 +58,7 @@ object sapUiTestActionsPressMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * A map of ID suffixes for controls that require a special DOM reference for `Press` interaction.
       *
@@ -149,7 +149,7 @@ object sapUiTestActionsPressMod {
     extends typings.openui5.sapUiTestActionsActionMod.default {
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getAltKey altKey}.
       *
@@ -160,7 +160,7 @@ object sapUiTestActionsPressMod {
     def getAltKey(): Boolean = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getCtrlKey ctrlKey}.
       *
@@ -171,7 +171,7 @@ object sapUiTestActionsPressMod {
     def getCtrlKey(): Boolean = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getShiftKey shiftKey}.
       *
@@ -182,7 +182,7 @@ object sapUiTestActionsPressMod {
     def getShiftKey(): Boolean = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getXPercentage xPercentage}.
       *
@@ -194,7 +194,7 @@ object sapUiTestActionsPressMod {
     def getXPercentage(): float = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getYPercentage yPercentage}.
       *
@@ -206,7 +206,7 @@ object sapUiTestActionsPressMod {
     def getYPercentage(): float = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getAltKey altKey}.
       *
@@ -222,7 +222,7 @@ object sapUiTestActionsPressMod {
     bAltKey: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getCtrlKey ctrlKey}.
       *
@@ -238,7 +238,7 @@ object sapUiTestActionsPressMod {
     bCtrlKey: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getShiftKey shiftKey}.
       *
@@ -254,7 +254,7 @@ object sapUiTestActionsPressMod {
     bShiftKey: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getXPercentage xPercentage}.
       *
@@ -271,7 +271,7 @@ object sapUiTestActionsPressMod {
     fXPercentage: float): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getYPercentage yPercentage}.
       *
@@ -293,7 +293,7 @@ object sapUiTestActionsPressMod {
        with ActionSettings {
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * If it is set to `true`, the Alt Key modifier will be used
       */
@@ -302,7 +302,7 @@ object sapUiTestActionsPressMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * If it is set to `true`, the Control Key modifier will be used
       */
@@ -311,7 +311,7 @@ object sapUiTestActionsPressMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * If it is set to `true`, the Shift Key modifier will be used
       */
@@ -320,7 +320,7 @@ object sapUiTestActionsPressMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Provide percent value for the X coordinate axis to calculate the position of the click event. The value
       * must be in the range [0 - 100]
@@ -330,7 +330,7 @@ object sapUiTestActionsPressMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Provide percent value for the Y coordinate axis to calculate the position of the click event. The value
       * must be in the range [0 - 100]

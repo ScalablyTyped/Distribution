@@ -12,8 +12,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsDateMod extends Shortcut {
   val default: IsDate = js.native
   
   /**
-    * @SINCE 1.81
-    * @EXPERIMENTAL - 1.81
+    * @since 1.81
+    * @experimental - 1.81
     *
     * Validates if the provided value can be parsed to a valid date.
     */

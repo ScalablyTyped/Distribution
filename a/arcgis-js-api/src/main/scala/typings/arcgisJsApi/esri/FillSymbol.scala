@@ -12,17 +12,17 @@ trait FillSymbol
      with Symbol {
   
   /**
-    * The outline of the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#outline)
-    */
+  		 * The outline of the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#outline)
+  		 */
   var outline: SimpleLineSymbol = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
+  		 */
   @JSName("type")
   var type_FillSymbol: `simple-fill` | `picture-fill` = js.native
 }

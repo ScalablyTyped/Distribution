@@ -64,7 +64,8 @@ type SpyObj[T] = T & (/* import warning: importer.ImportType#apply Failed type c
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  T extends undefined ? std.ReadonlyArray<string> | {[methodName: string] : any} : std.ReadonlyArray<keyof T> | {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
+  T extends undefined ? std.ReadonlyArray<string> | {[methodName: string] : any} : std.ReadonlyArray<keyof T> | {[ P in keyof T ]:? // Value should be the return type (unless this is a method on Object.prototype, since all object literals contain those methods)
+T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> | P extends 'constructor'? std.Object[P] : never : any}
   }}}
   */
 type SpyObjMethodNames[T] = js.Array[String] | StringDictionary[scala.Any]

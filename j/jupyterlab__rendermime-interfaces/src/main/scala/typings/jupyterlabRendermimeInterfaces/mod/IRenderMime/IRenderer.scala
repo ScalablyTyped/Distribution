@@ -1,6 +1,5 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
-import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,9 +23,4 @@ trait IRenderer extends Widget {
     * of the widget to update it if and when new data is available.
     */
   def renderModel(model: IMimeModel): js.Promise[Unit] = js.native
-  
-  /**
-    * The application language translator.
-    */
-  var translator: js.UndefOr[ITranslator] = js.native
 }

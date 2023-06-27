@@ -4,45 +4,62 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The URL interface represents an object providing static methods used for creating object URLs. */
+/**
+  * The URL interface represents an object providing static methods used for creating object URLs.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL)
+  */
 trait URL extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/hash) */
   /* standard dom */
   var hash: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/host) */
   /* standard dom */
   var host: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/hostname) */
   /* standard dom */
   var hostname: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/href) */
   /* standard dom */
   var href: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/origin) */
   /* standard dom */
   val origin: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/password) */
   /* standard dom */
   var password: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/pathname) */
   /* standard dom */
   var pathname: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/port) */
   /* standard dom */
   var port: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/protocol) */
   /* standard dom */
   var protocol: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/search) */
   /* standard dom */
   var search: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/searchParams) */
   /* standard dom */
   val searchParams: URLSearchParams
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/toJSON) */
   /* standard dom */
   def toJSON(): java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URL/username) */
   /* standard dom */
   var username: java.lang.String
 }

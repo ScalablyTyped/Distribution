@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.mdns API to discover services over mDNS.
   * This comprises a subset of the features of the NSD spec:
-  * @see[NSD Spec]{@link http://www.w3.org/TR/discovery-api/}
+  * @see http://www.w3.org/TR/discovery-api
   * @requires Permissions: 'mdns'
   * @since Chrome 31
   */
@@ -82,7 +82,7 @@ object mdns {
     * Locked to this because it's the only one that can be used.
     *
     * const char kEventFilterServiceTypeKey[] = "serviceType";
-    * @see[Source: event_matcher.cc, line 19]{@link https://github.com/chromium/chromium/tree/master/extensions/common/event_matcher.cc}
+    * @see https://github.com/chromium/chromium/tree/master/extensions/common/event_matcher.cc
     */
   type ValidServiceTypes = serviceType
 }

@@ -11,11 +11,11 @@ trait GeotriggersInfo
      with JSONSupport {
   
   /**
-    * A list of Geotriggers.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html#geotriggers)
-    */
+  		 * A list of Geotriggers.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html#geotriggers)
+  		 */
   var geotriggers: js.Array[Geotrigger] = js.native
 }

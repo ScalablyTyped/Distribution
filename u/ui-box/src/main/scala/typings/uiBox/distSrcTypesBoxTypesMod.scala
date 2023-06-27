@@ -28,7 +28,7 @@ object distSrcTypesBoxTypesMod {
     /* keyof ui-box.anon.BoxOwnPropsElementTypeany & P */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 163, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ]) & P
   
-  type PropsOf[E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.uiBox.uiBoxStrings.a, typings.uiBox.uiBoxStrings.abbr, typings.uiBox.uiBoxStrings.address */ Any */] = LibraryManagedAttributes[E, ComponentPropsWithRef[E]]
+  type PropsOf[E /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.uiBox.uiBoxStrings.a, typings.uiBox.uiBoxStrings.abbr, typings.uiBox.uiBoxStrings.address */ Any */] = LibraryManagedAttributes[E, ComponentPropsWithRef[E]]
   
   type Without[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
 }

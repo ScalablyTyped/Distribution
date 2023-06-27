@@ -20,37 +20,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimpleFillSymbolPropertie extends StObject {
   
   /**
-    * The color of the symbol.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
-    */
+  		 * The color of the symbol.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The outline of the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#outline)
-    */
+  		 * The outline of the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#outline)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * The fill style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
-    */
+  		 * The fill style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
+  		 */
   var style: js.UndefOr[
     `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical
   ] = js.undefined
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
+  		 */
   var `type`: js.UndefOr[`simple-fill` | `picture-fill`] = js.undefined
 }
 object SimpleFillSymbolPropertie {

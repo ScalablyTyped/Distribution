@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Profile extends StObject {
   
   /**
-    * The Arcade type definitions for profile variables used as input to the compiled expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#Profile)
-    */
+  		 * The Arcade type definitions for profile variables used as input to the compiled expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#Profile)
+  		 */
   var variables: js.Array[ProfileVariable]
 }
 object Profile {

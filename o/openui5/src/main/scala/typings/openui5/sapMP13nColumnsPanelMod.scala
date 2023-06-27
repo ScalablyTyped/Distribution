@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ExistingItems
-import typings.openui5.anon.NewItem
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMP13nPanelMod.P13nPanelSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -125,7 +123,7 @@ object sapMP13nColumnsPanelMod {
     extends typings.openui5.sapMP13nPanelMod.default {
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Adds some columnsItem to the aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -139,7 +137,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
       *
       * Attaches event handler `fnFunction` to the {@link #event:addColumnsItem addColumnsItem} event of this
@@ -156,20 +154,20 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit]
     ): this.type = js.native
     def attachAddColumnsItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
       *
       * Attaches event handler `fnFunction` to the {@link #event:addColumnsItem addColumnsItem} event of this
@@ -191,7 +189,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit]
     ): this.type = js.native
     def attachAddColumnsItem(
       /**
@@ -202,7 +200,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
@@ -210,7 +208,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Attaches event handler `fnFunction` to the {@link #event:changeColumnsItems changeColumnsItems} event
       * of this `sap.m.P13nColumnsPanel`.
@@ -226,20 +224,20 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit]
     ): this.type = js.native
     def attachChangeColumnsItems(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Attaches event handler `fnFunction` to the {@link #event:changeColumnsItems changeColumnsItems} event
       * of this `sap.m.P13nColumnsPanel`.
@@ -260,7 +258,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit]
     ): this.type = js.native
     def attachChangeColumnsItems(
       /**
@@ -271,7 +269,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
@@ -279,7 +277,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
       *
       * Attaches event handler `fnFunction` to the {@link #event:setData setData} event of this `sap.m.P13nColumnsPanel`.
@@ -296,20 +294,20 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSetData(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
       *
       * Attaches event handler `fnFunction` to the {@link #event:setData setData} event of this `sap.m.P13nColumnsPanel`.
@@ -331,7 +329,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSetData(
       /**
@@ -342,7 +340,7 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nColumnsPanel` itself
       */
@@ -350,7 +348,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Binds aggregation {@link #getColumnsItems columnsItems} to model data.
       *
@@ -365,7 +363,7 @@ object sapMP13nColumnsPanelMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Destroys all the columnsItems in the aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -374,7 +372,7 @@ object sapMP13nColumnsPanelMod {
     def destroyColumnsItems(): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
       *
       * Detaches event handler `fnFunction` from the {@link #event:addColumnsItem addColumnsItem} event of this
@@ -388,13 +386,13 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit]
     ): this.type = js.native
     def detachAddColumnsItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelAddColumnsItemEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -402,7 +400,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Detaches event handler `fnFunction` from the {@link #event:changeColumnsItems changeColumnsItems} event
       * of this `sap.m.P13nColumnsPanel`.
@@ -415,13 +413,13 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit]
     ): this.type = js.native
     def detachChangeColumnsItems(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nColumnsPanelChangeColumnsItemsEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -429,7 +427,7 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
       *
       * Detaches event handler `fnFunction` from the {@link #event:setData setData} event of this `sap.m.P13nColumnsPanel`.
@@ -442,13 +440,13 @@ object sapMP13nColumnsPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSetData(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -456,38 +454,42 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:addColumnsItem addColumnsItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAddColumnsItem(): this.type = js.native
-    def fireAddColumnsItem(/**
+    def fireAddColumnsItem(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewItem): this.type = js.native
+    mParameters: P13nColumnsPanel$AddColumnsItemEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26.7
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:changeColumnsItems changeColumnsItems} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChangeColumnsItems(): this.type = js.native
-    def fireChangeColumnsItems(/**
+    def fireChangeColumnsItems(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ExistingItems): this.type = js.native
+    mParameters: P13nColumnsPanel$ChangeColumnsItemsEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:setData setData} to attached listeners.
       *
@@ -500,7 +502,7 @@ object sapMP13nColumnsPanelMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets content of aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -509,7 +511,7 @@ object sapMP13nColumnsPanelMod {
     def getColumnsItems(): js.Array[typings.openui5.sapMP13nColumnsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Gets current value of property {@link #getVisibleItemsThreshold visibleItemsThreshold}.
       *
@@ -536,7 +538,7 @@ object sapMP13nColumnsPanelMod {
     def getVisibleItemsThreshold(): int = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Checks for the provided `sap.m.P13nColumnsItem` in the aggregation {@link #getColumnsItems columnsItems}.
       * and returns its index if found or -1 otherwise.
@@ -551,7 +553,7 @@ object sapMP13nColumnsPanelMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Inserts a columnsItem into the aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -571,14 +573,14 @@ object sapMP13nColumnsPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * This method does a re-initialization of the panel
       */
     def reInitialize(): Unit = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Removes all the controls from the aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -593,7 +595,7 @@ object sapMP13nColumnsPanelMod {
       */
     vColumnsItem: String): typings.openui5.sapMP13nColumnsItemMod.default | Null = js.native
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Removes a columnsItem from the aggregation {@link #getColumnsItems columnsItems}.
       *
@@ -611,7 +613,7 @@ object sapMP13nColumnsPanelMod {
     ): typings.openui5.sapMP13nColumnsItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Sets a new value for property {@link #getVisibleItemsThreshold visibleItemsThreshold}.
       *
@@ -644,7 +646,7 @@ object sapMP13nColumnsPanelMod {
     iVisibleItemsThreshold: int): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Unbinds aggregation {@link #getColumnsItems columnsItems} from model data.
       *
@@ -653,27 +655,124 @@ object sapMP13nColumnsPanelMod {
     def unbindColumnsItems(): this.type = js.native
   }
   
+  trait P13nColumnsPanel$AddColumnsItemEventParameters extends StObject {
+    
+    /**
+      * `columnsItem` that needs to be added in the model.
+      */
+    var newItem: js.UndefOr[typings.openui5.sapMP13nColumnsItemMod.default] = js.undefined
+  }
+  object P13nColumnsPanel$AddColumnsItemEventParameters {
+    
+    inline def apply(): P13nColumnsPanel$AddColumnsItemEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[P13nColumnsPanel$AddColumnsItemEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nColumnsPanel$AddColumnsItemEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewItem(value: typings.openui5.sapMP13nColumnsItemMod.default): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
+      
+      inline def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
+    }
+  }
+  
+  trait P13nColumnsPanel$ChangeColumnsItemsEventParameters extends StObject {
+    
+    /**
+      * Contains `columnsItems` that needs to be changed in the model. Deprecated as of version 1.50, replaced
+      * by new parameter `items`.
+      */
+    var existingItems: js.UndefOr[js.Array[typings.openui5.sapMP13nColumnsItemMod.default]] = js.undefined
+    
+    /**
+      * Array contains an object for each item in `items` aggregation enriched with index and visibility information.
+      * The item order reflects the current order of columns in the panel.
+      */
+    var items: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * Contains `columnsItems` that needs to be created in the model. Deprecated as of version 1.50, replaced
+      * by new parameter `items`.
+      */
+    var newItems: js.UndefOr[js.Array[typings.openui5.sapMP13nColumnsItemMod.default]] = js.undefined
+  }
+  object P13nColumnsPanel$ChangeColumnsItemsEventParameters {
+    
+    inline def apply(): P13nColumnsPanel$ChangeColumnsItemsEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[P13nColumnsPanel$ChangeColumnsItemsEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nColumnsPanel$ChangeColumnsItemsEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setExistingItems(value: js.Array[typings.openui5.sapMP13nColumnsItemMod.default]): Self = StObject.set(x, "existingItems", value.asInstanceOf[js.Any])
+      
+      inline def setExistingItemsUndefined: Self = StObject.set(x, "existingItems", js.undefined)
+      
+      inline def setExistingItemsVarargs(value: typings.openui5.sapMP13nColumnsItemMod.default*): Self = StObject.set(x, "existingItems", js.Array(value*))
+      
+      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value*))
+      
+      inline def setNewItems(value: js.Array[typings.openui5.sapMP13nColumnsItemMod.default]): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
+      
+      inline def setNewItemsUndefined: Self = StObject.set(x, "newItems", js.undefined)
+      
+      inline def setNewItemsVarargs(value: typings.openui5.sapMP13nColumnsItemMod.default*): Self = StObject.set(x, "newItems", js.Array(value*))
+    }
+  }
+  
+  trait P13nColumnsPanel$SetDataEventParameters extends StObject
+  
+  type P13nColumnsPanelAddColumnsItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$AddColumnsItemEventParameters]
+  
+  type P13nColumnsPanelAddColumnsItemEventParameters = P13nColumnsPanel$AddColumnsItemEventParameters
+  
+  type P13nColumnsPanelChangeColumnsItemsEvent = typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$ChangeColumnsItemsEventParameters]
+  
+  type P13nColumnsPanelChangeColumnsItemsEventParameters = P13nColumnsPanel$ChangeColumnsItemsEventParameters
+  
+  type P13nColumnsPanelSetDataEvent = typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$SetDataEventParameters]
+  
+  type P13nColumnsPanelSetDataEventParameters = P13nColumnsPanel$SetDataEventParameters
+  
   trait P13nColumnsPanelSettings
     extends StObject
        with P13nPanelSettings {
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
       *
       * Event raised when a `columnsItem` is added.
       */
-    var addColumnsItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var addColumnsItem: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$AddColumnsItemEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Event raised if `columnsItems` is changed or new one needs to be created in the model.
       */
-    var changeColumnsItems: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var changeColumnsItems: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$ChangeColumnsItemsEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * List of columns that has been changed.
       */
@@ -682,16 +781,18 @@ object sapMP13nColumnsPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
       *
       * Event raised if `setData` is called in model. The event serves the purpose of minimizing such calls since
       * they can take up a lot of performance.
       */
-    var setData: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var setData: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.26.7
+      * @since 1.26.7
       *
       * Specifies a threshold of visible items. If the end user makes a lot of columns visible, this might cause
       * performance to slow down. When this happens, the user can receive a corresponding warning triggered by
@@ -720,11 +821,15 @@ object sapMP13nColumnsPanelMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nColumnsPanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setAddColumnsItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addColumnsItem", js.Any.fromFunction1(value))
+      inline def setAddColumnsItem(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$AddColumnsItemEventParameters] => Unit
+      ): Self = StObject.set(x, "addColumnsItem", js.Any.fromFunction1(value))
       
       inline def setAddColumnsItemUndefined: Self = StObject.set(x, "addColumnsItem", js.undefined)
       
-      inline def setChangeColumnsItems(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "changeColumnsItems", js.Any.fromFunction1(value))
+      inline def setChangeColumnsItems(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nColumnsPanel$ChangeColumnsItemsEventParameters] => Unit
+      ): Self = StObject.set(x, "changeColumnsItems", js.Any.fromFunction1(value))
       
       inline def setChangeColumnsItemsUndefined: Self = StObject.set(x, "changeColumnsItems", js.undefined)
       
@@ -736,7 +841,7 @@ object sapMP13nColumnsPanelMod {
       
       inline def setColumnsItemsVarargs(value: typings.openui5.sapMP13nColumnsItemMod.default*): Self = StObject.set(x, "columnsItems", js.Array(value*))
       
-      inline def setSetData(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
       inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
       

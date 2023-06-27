@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataModelIdentifierInfoIdentifierMappingInfo extends StObject {
   
   /**
-    * Properties of database native identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Properties of database native identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var databaseNativeIdentifier: Any
   
   /**
-    * Indicates the type of the ID.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Indicates the type of the ID.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var identifierInfoType: esriIdentifierInfoTypeUniformProperty | esriIdentifierInfoTypeDatabaseNative
   
   /**
-    * Properties of the user defined unique identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Properties of the user defined unique identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var uniformPropertyIdentifier: DataModelIdentifierInfoIdentifierMappingInfoUniformPropertyIdentifier
 }
 object DataModelIdentifierInfoIdentifierMappingInfo {

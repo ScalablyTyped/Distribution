@@ -139,10 +139,9 @@ object mod extends Shortcut {
   
   trait InitialFormData extends StObject {
     
+    def append(name: String, blobValue: Blob, filename: String): Unit
     def append(name: String, value: String): Unit
-    def append(name: String, value: String, fileName: String): Unit
     def append(name: String, value: Blob): Unit
-    def append(name: String, value: Blob, fileName: String): Unit
     @JSName("append")
     var append_Original: FnCall
   }

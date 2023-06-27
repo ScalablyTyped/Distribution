@@ -12,16 +12,12 @@ open class Detector () extends StObject {
     * The array of `Matter.Body` between which the detector finds collisions.
     *
     * _Note:_ The order of bodies in this array _is not fixed_ and will be continually managed by the detector.
-    * @property bodies
-    * @type {Body[]}
     * @default []
     */
   var bodies: js.Array[Body] = js.native
   
   /**
     * Optional. A `Matter.Pairs` object from which previous collision objects may be reused. Intended for internal `Matter.Engine` usage.
-    * @property pairs
-    * @type {Pairs | null}
     * @default null
     */
   var pairs: Pairs | Null = js.native

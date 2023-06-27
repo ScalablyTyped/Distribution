@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VideoElementPropertiestyp extends StObject {
   
   /**
-    * The geographic location of the image or video element to be placed on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
-    */
+  		 * The geographic location of the image or video element to be placed on the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#georeference)
+  		 */
   var georeference: js.UndefOr[
     ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference
   ] = js.undefined
   
   /**
-    * The opacity of the element.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#opacity)
-    */
+  		 * The opacity of the element.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MediaElementBase.html#opacity)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
   
   var `type`: video
   
   /**
-    * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html#video)
-    */
+  		 * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html#video)
+  		 */
   var video: js.UndefOr[String | Any] = js.undefined
 }
 object VideoElementPropertiestyp {

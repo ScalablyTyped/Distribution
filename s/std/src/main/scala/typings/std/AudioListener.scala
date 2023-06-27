@@ -4,41 +4,62 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The position and orientation of the unique person listening to the audio scene, and is used in audio spatialization. All PannerNodes spatialize in relation to the AudioListener stored in the BaseAudioContext.listener attribute. */
+/**
+  * The position and orientation of the unique person listening to the audio scene, and is used in audio spatialization. All PannerNodes spatialize in relation to the AudioListener stored in the BaseAudioContext.listener attribute.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener)
+  */
 trait AudioListener extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/forwardX) */
   /* standard dom */
   val forwardX: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/forwardY) */
   /* standard dom */
   val forwardY: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/forwardZ) */
   /* standard dom */
   val forwardZ: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/positionX) */
   /* standard dom */
   val positionX: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/positionY) */
   /* standard dom */
   val positionY: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/positionZ) */
   /* standard dom */
   val positionZ: AudioParam
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/setOrientation)
+    */
   /* standard dom */
   def setOrientation(x: Double, y: Double, z: Double, xUp: Double, yUp: Double, zUp: Double): Unit
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/setPosition)
+    */
   /* standard dom */
   def setPosition(x: Double, y: Double, z: Double): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/upX) */
   /* standard dom */
   val upX: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/upY) */
   /* standard dom */
   val upY: AudioParam
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioListener/upZ) */
   /* standard dom */
   val upZ: AudioParam
 }

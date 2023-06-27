@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDropdownConfig extends StObject {
   
   /**
-    * @default: 'uib-dropdown-open'
+    * @default 'uib-dropdown-open'
     */
   var appendToOpenClass: js.UndefOr[String] = js.undefined
   
   /**
-    * @default: 'open'
+    * @default 'open'
     */
   var openClass: js.UndefOr[String] = js.undefined
 }

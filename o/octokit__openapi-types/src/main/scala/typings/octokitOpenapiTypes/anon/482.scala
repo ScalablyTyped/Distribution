@@ -6,18 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `482` extends StObject {
   
-  var content: ApplicationjsonHistory
+  var per_page: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+  ] = js.undefined
+  
+  var since: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-user'] */ js.Any
+  ] = js.undefined
 }
 object `482` {
   
-  inline def apply(content: ApplicationjsonHistory): `482` = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+  inline def apply(): `482` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`482`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `482`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: ApplicationjsonHistory): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setPer_page(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
+    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    
+    inline def setSince(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-user'] */ js.Any
+    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

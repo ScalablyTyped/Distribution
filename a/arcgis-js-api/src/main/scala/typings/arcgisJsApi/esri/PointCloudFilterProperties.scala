@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudFilterProperties extends StObject {
   
   /**
-    * The field used for applying the filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#field)
-    */
+  		 * The field used for applying the filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
 }
 object PointCloudFilterProperties {

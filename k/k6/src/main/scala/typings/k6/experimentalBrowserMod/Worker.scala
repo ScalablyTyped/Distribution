@@ -1,0 +1,10 @@
+package typings.k6.experimentalBrowserMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("k6/experimental/browser", "Worker")
+@js.native
+open class Worker ()
+  extends typings.k6.experimentalBrowserWorkerMod.Worker

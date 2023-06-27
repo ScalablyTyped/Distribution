@@ -133,7 +133,7 @@ object sapMBarMod {
        with IBar {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes according to the context of the page. Possible contexts are header, footer and subheader.
       *
@@ -142,7 +142,7 @@ object sapMBarMod {
     def _applyContextClassFor(): IBar = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets HTML tag according to the context of the page. Possible contexts are header, footer and subheader.
       *
@@ -203,7 +203,7 @@ object sapMBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer
       * and subheader.
@@ -234,8 +234,7 @@ object sapMBarMod {
     def destroyContentRight(): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -264,7 +263,7 @@ object sapMBarMod {
     def getContentRight(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the available Bar contexts.
       *
@@ -273,7 +272,7 @@ object sapMBarMod {
     def getContext(): BarContexts = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getDesign design}.
       *
@@ -302,7 +301,7 @@ object sapMBarMod {
     def getEnableFlexBox(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the HTML tag of the root element.
       *
@@ -311,7 +310,7 @@ object sapMBarMod {
     def getHTMLTag(): IBarHTMLTag | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IBarHTMLTag * / any */ String) = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -327,7 +326,7 @@ object sapMBarMod {
     def getTitleAlignment(): TitleAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleAlignment * / any */ String) = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.18.6) - This property has no effect since release 1.18.6 and should not be used.
       * Translucent bar may overlay an input and make it difficult to edit.
       *
@@ -435,7 +434,7 @@ object sapMBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether the Bar is sensitive to the container context.
       *
@@ -560,7 +559,7 @@ object sapMBarMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getDesign design}.
       *
@@ -613,7 +612,7 @@ object sapMBarMod {
     sTag: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IBarHTMLTag * / any */ String
     ): IBar = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the HTML tag of the root element.
       *
@@ -625,7 +624,7 @@ object sapMBarMod {
     sTag: IBarHTMLTag): IBar = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -653,7 +652,7 @@ object sapMBarMod {
     sTitleAlignment: TitleAlignment): this.type = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.18.6) - This property has no effect since release 1.18.6 and should not be used.
       * Translucent bar may overlay an input and make it difficult to edit.
       *
@@ -708,7 +707,7 @@ object sapMBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Determines the design of the bar. If set to auto, it becomes dependent on the place where the bar is
       * placed.
@@ -729,7 +728,7 @@ object sapMBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.None`, the automatic title
       * alignment depending on the theme settings will be disabled. If set to `TitleAlignment.Auto`, the Title
@@ -741,7 +740,7 @@ object sapMBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.18.6) - This property has no effect since release 1.18.6 and should not be used.
       * Translucent bar may overlay an input and make it difficult to edit.
       *

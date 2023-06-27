@@ -198,13 +198,13 @@ object sapMTablePersoControllerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPersonalizationsDone(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoController` itself
       */
@@ -228,7 +228,7 @@ object sapMTablePersoControllerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPersonalizationsDone(
       /**
@@ -239,7 +239,7 @@ object sapMTablePersoControllerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoController` itself
       */
@@ -254,7 +254,7 @@ object sapMTablePersoControllerMod {
     def destroyPersoService(): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:personalizationsDone personalizationsDone}
+      * Detaches event handler `fnFunction` from the {@link #event:personalizationsDone personalizationsDone }
       * event of this `sap.m.TablePersoController`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -265,13 +265,13 @@ object sapMTablePersoControllerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPersonalizationsDone(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -279,14 +279,14 @@ object sapMTablePersoControllerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Do some clean up: remove event delegates, etc
       */
     def exit(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:personalizationsDone personalizationsDone} to attached listeners.
       *
@@ -393,13 +393,12 @@ object sapMTablePersoControllerMod {
     def getTablePersoDialog(): typings.openui5.sapMTablePersoDialogMod.default = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getTables
-      * tables}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getTables tables}.
       */
     def getTables(): js.Array[ID] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Initializes the TablePersoController instance after creation.
       */
@@ -581,6 +580,12 @@ object sapMTablePersoControllerMod {
     ): this.type = js.native
   }
   
+  trait TablePersoController$PersonalizationsDoneEventParameters extends StObject
+  
+  type TablePersoControllerPersonalizationsDoneEvent = typings.openui5.sapUiBaseEventMod.default[TablePersoController$PersonalizationsDoneEventParameters]
+  
+  type TablePersoControllerPersonalizationsDoneEventParameters = TablePersoController$PersonalizationsDoneEventParameters
+  
   trait TablePersoControllerSettings
     extends StObject
        with ManagedObjectSettings {
@@ -605,7 +610,9 @@ object sapMTablePersoControllerMod {
     
     var persoService: js.UndefOr[js.Object] = js.undefined
     
-    var personalizationsDone: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var personalizationsDone: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Controls the behavior of the Reset button of the `TablePersoDialog`.
@@ -668,7 +675,7 @@ object sapMTablePersoControllerMod {
       
       inline def setPersoServiceUndefined: Self = StObject.set(x, "persoService", js.undefined)
       
-      inline def setPersonalizationsDone(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "personalizationsDone", js.Any.fromFunction1(value))
+      inline def setPersonalizationsDone(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "personalizationsDone", js.Any.fromFunction1(value))
       
       inline def setPersonalizationsDoneUndefined: Self = StObject.set(x, "personalizationsDone", js.undefined)
       

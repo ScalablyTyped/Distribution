@@ -16,7 +16,7 @@ trait TimeUtil extends StObject {
     *
     * @returns Array of time zone identifiers.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getAvailableTimezones(): js.Array[String] = js.native
   
@@ -24,7 +24,7 @@ trait TimeUtil extends StObject {
     * Gets the current date/time.
     *
     * @returns The current TZDate object.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getCurrentDateTime(): TZDate = js.native
   
@@ -48,7 +48,7 @@ trait TimeUtil extends StObject {
     *
     * @returns The date format according to the system's locale settings.
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getDateFormat(): String = js.native
   def getDateFormat(shortformat: Boolean): String = js.native
@@ -57,7 +57,7 @@ trait TimeUtil extends StObject {
     * Gets the identifier of the local system timezone.
     *
     * @returns The local timezone.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getLocalTimezone(): String = js.native
   
@@ -75,7 +75,7 @@ trait TimeUtil extends StObject {
     * Examples of string formats include: "h:m:s ap", "h:m:s".
     *
     * @returns The time format according to the system's locale settings.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def getTimeFormat(): String = js.native
   
@@ -86,11 +86,11 @@ trait TimeUtil extends StObject {
     *
     * @returns true, if the year is a leap year.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input
     * parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def isLeapYear(year: Double): Boolean = js.native
   
@@ -104,8 +104,8 @@ trait TimeUtil extends StObject {
     * @param changeCallback Callback method to be invoked when device time was set
     * It is not invoked when time passes naturally.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def setDateTimeChangeListener(changeCallback: SuccessCallback): Unit = js.native
   
@@ -118,9 +118,9 @@ trait TimeUtil extends StObject {
     *
     * @param changeCallback Callback method that is invoked when the time zone has changed.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def setTimezoneChangeListener(changeCallback: SuccessCallback): Unit = js.native
   
@@ -131,7 +131,7 @@ trait TimeUtil extends StObject {
     *
     * @since 2.3
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def unsetDateTimeChangeListener(): Unit = js.native
   
@@ -142,7 +142,7 @@ trait TimeUtil extends StObject {
     *
     * @since 2.3
     *
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def unsetTimezoneChangeListener(): Unit = js.native
 }

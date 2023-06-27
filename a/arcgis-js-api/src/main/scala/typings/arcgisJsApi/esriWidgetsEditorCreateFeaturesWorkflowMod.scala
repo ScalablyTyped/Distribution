@@ -11,10 +11,10 @@ object esriWidgetsEditorCreateFeaturesWorkflowMod {
   @JSImport("esri/widgets/Editor/CreateFeaturesWorkflow", JSImport.Namespace)
   @js.native
   /**
-    * A read-only class containing the logic used when creating features using the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflow.html)
-    */
+  		 * A read-only class containing the logic used when creating features using the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflow.html)
+  		 */
   open class ^ ()
     extends StObject
        with CreateFeaturesWorkflow {

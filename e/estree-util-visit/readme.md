@@ -1,7 +1,7 @@
 
 # Scala.js typings for estree-util-visit
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 esast (and estree) utility to visit nodes

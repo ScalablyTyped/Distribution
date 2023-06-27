@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemChanged
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapMTabContainerItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachItemPropertyChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainerItem` itself
       */
@@ -183,7 +182,7 @@ object sapMTabContainerItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachItemPropertyChanged(
       /**
@@ -194,7 +193,7 @@ object sapMTabContainerItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainerItem` itself
       */
@@ -220,13 +219,13 @@ object sapMTabContainerItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def detachItemPropertyChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemItemPropertyChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -234,20 +233,22 @@ object sapMTabContainerItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemPropertyChanged itemPropertyChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemPropertyChanged(): this.type = js.native
-    def fireItemPropertyChanged(/**
+    def fireItemPropertyChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemChanged): this.type = js.native
+    mParameters: TabContainerItem$ItemPropertyChangedEventParameters
+    ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAdditionalText additionalText}.
@@ -268,7 +269,7 @@ object sapMTabContainerItemMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getIcon icon}.
@@ -281,7 +282,7 @@ object sapMTabContainerItemMod {
     def getIcon(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getIconTooltip iconTooltip}.
@@ -385,7 +386,7 @@ object sapMTabContainerItemMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAdditionalText additionalText}.
@@ -415,7 +416,7 @@ object sapMTabContainerItemMod {
     sIcon: URI): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getIconTooltip iconTooltip}.
@@ -531,12 +532,57 @@ object sapMTabContainerItemMod {
     ): this.type = js.native
   }
   
+  trait TabContainerItem$ItemPropertyChangedEventParameters extends StObject {
+    
+    /**
+      * The item changed.
+      */
+    var itemChanged: js.UndefOr[TabContainerItem] = js.undefined
+    
+    /**
+      * The key of the property.
+      */
+    var propertyKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The value of the property.
+      */
+    var propertyValue: js.UndefOr[Any] = js.undefined
+  }
+  object TabContainerItem$ItemPropertyChangedEventParameters {
+    
+    inline def apply(): TabContainerItem$ItemPropertyChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabContainerItem$ItemPropertyChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainerItem$ItemPropertyChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItemChanged(value: TabContainerItem): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
+      
+      inline def setItemChangedUndefined: Self = StObject.set(x, "itemChanged", js.undefined)
+      
+      inline def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
+      
+      inline def setPropertyValue(value: Any): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
+    }
+  }
+  
+  type TabContainerItemItemPropertyChangedEvent = typings.openui5.sapUiBaseEventMod.default[TabContainerItem$ItemPropertyChangedEventParameters]
+  
+  type TabContainerItemItemPropertyChangedEventParameters = TabContainerItem$ItemPropertyChangedEventParameters
+  
   trait TabContainerItemSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Determines additional text to be displayed for the item.
@@ -551,7 +597,7 @@ object sapMTabContainerItemMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Defines the icon to be displayed as graphical element within the `TabContainerItem`. It can be an image
@@ -560,7 +606,7 @@ object sapMTabContainerItemMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.63) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Determines the tooltip text of the `TabContainerItem`'s icon.
@@ -570,7 +616,12 @@ object sapMTabContainerItemMod {
     /**
       * Sends information that some of the properties have changed.
       */
-    var itemPropertyChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemPropertyChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainerItem$ItemPropertyChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the name of the item. Can be used as input for subsequent actions.
@@ -620,7 +671,9 @@ object sapMTabContainerItemMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setItemPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemPropertyChanged", js.Any.fromFunction1(value))
+      inline def setItemPropertyChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainerItem$ItemPropertyChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "itemPropertyChanged", js.Any.fromFunction1(value))
       
       inline def setItemPropertyChangedUndefined: Self = StObject.set(x, "itemPropertyChanged", js.undefined)
       

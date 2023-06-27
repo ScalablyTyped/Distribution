@@ -20,7 +20,7 @@ trait ListTemplateLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets whether the specified ListTemplate object is outline numbered.
+    * Specifies whether the specified ListTemplate object is outline numbered.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

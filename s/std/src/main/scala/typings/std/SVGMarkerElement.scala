@@ -7,6 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement) */
 @js.native
 trait SVGMarkerElement
   extends StObject
@@ -42,24 +43,31 @@ trait SVGMarkerElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerHeight) */
   /* standard dom */
   val markerHeight: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerUnits) */
   /* standard dom */
   val markerUnits: SVGAnimatedEnumeration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/markerWidth) */
   /* standard dom */
   val markerWidth: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orientAngle) */
   /* standard dom */
   val orientAngle: SVGAnimatedAngle = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/orientType) */
   /* standard dom */
   val orientType: SVGAnimatedEnumeration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/refX) */
   /* standard dom */
   val refX: SVGAnimatedLength = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/refY) */
   /* standard dom */
   val refY: SVGAnimatedLength = js.native
   
@@ -74,9 +82,11 @@ trait SVGMarkerElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/setOrientToAngle) */
   /* standard dom */
   def setOrientToAngle(angle: SVGAngle): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGMarkerElement/setOrientToAuto) */
   /* standard dom */
   def setOrientToAuto(): Unit = js.native
 }

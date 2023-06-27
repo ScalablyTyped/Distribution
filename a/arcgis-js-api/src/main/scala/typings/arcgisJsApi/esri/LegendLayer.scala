@@ -10,23 +10,23 @@ trait LegendLayer
      with Accessor {
   
   /**
-    * The id of the operational layer to include in the printout's legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#layerId)
-    */
+  		 * The id of the operational layer to include in the printout's legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#layerId)
+  		 */
   var layerId: String = js.native
   
   /**
-    * The ids of the sublayers to include in the printout's legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#subLayerIds)
-    */
+  		 * The ids of the sublayers to include in the printout's legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#subLayerIds)
+  		 */
   var subLayerIds: js.Array[String] = js.native
   
   /**
-    * The title of the feature layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#title)
-    */
+  		 * The title of the feature layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#title)
+  		 */
   var title: String = js.native
 }

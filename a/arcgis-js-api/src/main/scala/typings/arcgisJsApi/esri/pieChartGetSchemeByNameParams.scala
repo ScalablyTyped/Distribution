@@ -11,38 +11,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait pieChartGetSchemeByNameParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | polygon
   
   /**
-    * The name of the scheme to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
-    */
+  		 * The name of the scheme to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
+  		 */
   var name: String
   
   /**
-    * The number of values to include in the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
-    */
+  		 * The number of values to include in the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#getSchemeByName)
+  		 */
   var numColors: Double
 }
 object pieChartGetSchemeByNameParams {

@@ -47,7 +47,7 @@ trait ListTemplate
   def load(propertyNames: js.Array[String]): ListTemplate = js.native
   
   /**
-    * Gets or sets whether the specified ListTemplate object is outline numbered.
+    * Specifies whether the specified ListTemplate object is outline numbered.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

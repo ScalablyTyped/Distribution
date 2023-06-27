@@ -124,7 +124,7 @@ object sapUiCoreTooltipBaseMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:closed closed} event of this `sap.ui.core.TooltipBase`.
       *
@@ -139,20 +139,20 @@ object sapUiCoreTooltipBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.TooltipBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:closed closed} event of this `sap.ui.core.TooltipBase`.
       *
@@ -172,7 +172,7 @@ object sapUiCoreTooltipBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -183,7 +183,7 @@ object sapUiCoreTooltipBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.TooltipBase` itself
       */
@@ -191,7 +191,7 @@ object sapUiCoreTooltipBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:closed closed} event of this `sap.ui.core.TooltipBase`.
       *
@@ -203,13 +203,13 @@ object sapUiCoreTooltipBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -217,8 +217,8 @@ object sapUiCoreTooltipBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.11.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -487,6 +487,12 @@ object sapUiCoreTooltipBaseMod {
     sText: String): this.type = js.native
   }
   
+  trait TooltipBase$ClosedEventParameters extends StObject
+  
+  type TooltipBaseClosedEvent = typings.openui5.sapUiBaseEventMod.default[TooltipBase$ClosedEventParameters]
+  
+  type TooltipBaseClosedEventParameters = TooltipBase$ClosedEventParameters
+  
   trait TooltipBaseSettings
     extends StObject
        with ControlSettings {
@@ -507,11 +513,13 @@ object sapUiCoreTooltipBaseMod {
     var closeDuration: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * This event is fired when the Tooltip has been closed
       */
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Optional. Collision - when the positioned element overflows the window in some direction, move it to
@@ -569,7 +577,7 @@ object sapUiCoreTooltipBaseMod {
       
       inline def setCloseDurationUndefined: Self = StObject.set(x, "closeDuration", js.undefined)
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       

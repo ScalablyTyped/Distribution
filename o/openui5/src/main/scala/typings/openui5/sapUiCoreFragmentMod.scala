@@ -121,7 +121,7 @@ object sapUiCoreFragmentMod {
     inline def getMetadata(): typings.openui5.sapUiBaseManagedObjectMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseManagedObjectMetadataMod.default]
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Loads and instantiates a Fragment. A Promise is returned, which resolves with the Fragments content.
       *

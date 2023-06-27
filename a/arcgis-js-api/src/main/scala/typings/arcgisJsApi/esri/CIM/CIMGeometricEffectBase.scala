@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMGeometricEffectBase extends StObject {
   
   /**
-    * The primitive name.
-    */
+  			 * The primitive name.
+  			 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: String

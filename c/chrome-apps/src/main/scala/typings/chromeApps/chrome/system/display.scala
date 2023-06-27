@@ -85,7 +85,7 @@ object display {
     var dpiY: integer
     
     /**
-      * @requires(CrOS Kiosk app) Only available in Chrome OS Kiosk apps
+      * @requires CrOS Kiosk app -Only available in Chrome OS Kiosk apps
       */
     var edid: js.UndefOr[ManufacturerId] = js.undefined
     
@@ -105,7 +105,7 @@ object display {
     var isPrimary: Boolean
     
     /**
-      * @requires(CrOS) Only available on Chrome OS.
+      * @requires Only available on Chrome OS.
       * Identifiers of the displays to which the source display is being mirrored.
       * Empty if no displays are being mirrored. This will be set to the same value
       * for all displays.
@@ -114,7 +114,7 @@ object display {
     var mirroringDestinationIds: js.Array[String]
     
     /**
-      * @requires(CrOS) Only working properly on Chrome OS.
+      * @requires Only working properly on Chrome OS.
       * Identifier of the display that is being mirrored on the display unit.
       * If mirroring is not in progress, set to an empty string
       * Currently exposed only on ChromeOS.
@@ -123,7 +123,7 @@ object display {
     var mirroringSourceId: String
     
     /**
-      * @requires(CrOS) Only available on Chrome OS.
+      * @requires Only available on Chrome OS.
       * The list of available display modes.
       * The current mode will have isSelected=true.
       * Only available on Chrome OS.
@@ -225,7 +225,7 @@ object display {
     
     /**
       * If set to true, only a single DisplayUnitInfo will be returned by getInfo when in unified desktop mode.
-      * @see[enableUnifiedDesktop]
+      * @see enableUnifiedDesktop
       * @default false
       */
     var singleUnified: js.UndefOr[Boolean] = js.undefined
@@ -403,7 +403,7 @@ object display {
     
     /**
       * If set, updates the display's logical bounds origin along y-axis.
-      * @see[See documentation for boundsOriginX parameter.]
+      * @see Documentation for boundsOriginX parameter.
       */
     var boundsOriginY: js.UndefOr[integer] = js.undefined
     
@@ -430,20 +430,20 @@ object display {
     var isPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @requires(CrOS) Chrome OS only.
+      * @requires Chrome OS only.
       * @description
       * If set to true, changes the display mode to unified desktop.
       * If set to false, unified desktop mode will be disabled.
       * This is only valid for the primary display.
       * If provided, mirroringSourceId must not be provided and other properties may not apply.
       * This is has no effect if not provided.
-      * @see(See `enableUnifiedDesktop` for details).
+      * @see `enableUnifiedDesktop` for details
       * @since Chrome 59
       * */
     var isUnified: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @requires(CrOS) Chrome OS only.
+      * @requires Chrome OS only.
       * @deprecated Deprecated since Chrome 68. Use ´setMirrorMode´
       * @see setMirrorMode
       * @description

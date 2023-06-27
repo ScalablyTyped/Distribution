@@ -17,8 +17,6 @@ trait desktopConfig extends StObject {
   
   var barPosition: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[obj] = js.undefined
-  
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
@@ -88,10 +86,6 @@ object desktopConfig {
     inline def setBarPosition(value: String): Self = StObject.set(x, "barPosition", value.asInstanceOf[js.Any])
     
     inline def setBarPositionUndefined: Self = StObject.set(x, "barPosition", js.undefined)
-    
-    inline def setBody(value: obj): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

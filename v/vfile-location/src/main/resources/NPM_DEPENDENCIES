@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vfile-location" : "4.1.0"
+      "vfile-location" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "vfile-location" : "4.1.0"
+      "vfile-location" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

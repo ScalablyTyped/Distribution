@@ -27,14 +27,17 @@ open class ClipboardItem protected ()
     options: ClipboardItemOptions
   ) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/getType) */
   /* standard dom */
   /* CompleteClass */
   override def getType(`type`: java.lang.String): js.Promise[typings.std.Blob] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/presentationStyle) */
   /* standard dom */
   /* CompleteClass */
   override val presentationStyle: PresentationStyle = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/types) */
   /* standard dom */
   /* CompleteClass */
   override val types: js.Array[java.lang.String] = js.native

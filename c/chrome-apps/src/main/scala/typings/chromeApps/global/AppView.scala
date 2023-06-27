@@ -17,7 +17,7 @@ object AppView {
     * Not all apps can be embedded; apps have to explicitly allow themselves to be embedded.
     * @since Chrome 43.
     * @requires Permissions: 'appview'
-    * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
+    * @see https://developer.chrome.com/apps/tags/appview
     */
   /* was `typeof HTMLAppViewElement` */
   @JSGlobal("AppView")

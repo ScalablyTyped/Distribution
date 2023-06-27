@@ -313,7 +313,7 @@ object addonDotOCRProMod {
     
     /**
       * Return the content of the specified letter.
-      * @index Specify the letter.
+      * @param index Specify the letter.
       */
     def GetLetterContent(index: Double): Letter
     
@@ -324,7 +324,7 @@ object addonDotOCRProMod {
     
     /**
       * Return the base64-encoded content of the specified rectangle.
-      * @index Specify the line.
+      * @param index Specify the line.
       */
     def GetZoneContent(index: Double): String
     

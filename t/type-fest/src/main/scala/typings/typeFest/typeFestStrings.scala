@@ -27,10 +27,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typeFestStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
   sealed trait `-_`
     extends StObject
        with WordSeparators
@@ -890,10 +886,6 @@ object typeFestStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait browser extends StObject
-  inline def browser: browser = "browser".asInstanceOf[browser]
-  
-  @js.native
   sealed trait bundler_
     extends StObject
        with ModuleResolution
@@ -938,10 +930,6 @@ object typeFestStrings {
   inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait deno extends StObject
-  inline def deno: deno = "deno".asInstanceOf[deno]
-  
-  @js.native
   sealed trait domDotiterable
     extends StObject
        with Lib
@@ -966,10 +954,6 @@ object typeFestStrings {
     extends StObject
        with FallbackPolling
   inline def dynamicPriority_ : dynamicPriority_ = "dynamicPriority".asInstanceOf[dynamicPriority_]
-  
-  @js.native
-  sealed trait electron extends StObject
-  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
   sealed trait entries extends StObject
@@ -1390,10 +1374,6 @@ object typeFestStrings {
   inline def ia32: ia32 = "ia32".asInstanceOf[ia32]
   
   @js.native
-  sealed trait `import` extends StObject
-  inline def `import`: `import` = "import".asInstanceOf[`import`]
-  
-  @js.native
   sealed trait individual extends StObject
   inline def individual: individual = "individual".asInstanceOf[individual]
   
@@ -1428,10 +1408,6 @@ object typeFestStrings {
   @js.native
   sealed trait module extends StObject
   inline def module: module = "module".asInstanceOf[module]
-  
-  @js.native
-  sealed trait `node-addons` extends StObject
-  inline def `node-addons`: `node-addons` = "node-addons".asInstanceOf[`node-addons`]
   
   @js.native
   sealed trait node10_
@@ -1556,10 +1532,6 @@ object typeFestStrings {
     extends StObject
        with ArrayMergeMode
   inline def replace: replace = "replace".asInstanceOf[replace]
-  
-  @js.native
-  sealed trait require extends StObject
-  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait restricted extends StObject

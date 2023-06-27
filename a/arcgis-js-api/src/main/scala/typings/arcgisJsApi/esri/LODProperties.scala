@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LODProperties extends StObject {
   
   /**
-    * ID for each level.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#level)
-    */
+  		 * ID for each level.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#level)
+  		 */
   var level: js.UndefOr[Double] = js.undefined
   
   /**
-    * String to be used when constructing a URL to access a tile from this LOD.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#levelValue)
-    */
+  		 * String to be used when constructing a URL to access a tile from this LOD.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#levelValue)
+  		 */
   var levelValue: js.UndefOr[String] = js.undefined
   
   /**
-    * Resolution in map units of each pixel in a tile for each level.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#resolution)
-    */
+  		 * Resolution in map units of each pixel in a tile for each level.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#resolution)
+  		 */
   var resolution: js.UndefOr[Double] = js.undefined
   
   /**
-    * Scale for each level.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#scale)
-    */
+  		 * Scale for each level.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#scale)
+  		 */
   var scale: js.UndefOr[Double] = js.undefined
 }
 object LODProperties {

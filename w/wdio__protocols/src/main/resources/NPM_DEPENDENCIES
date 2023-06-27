@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wdio/protocols" : "8.10.2"
+      "@wdio/protocols" : "8.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wdio/protocols" : "8.10.2"
+      "@wdio/protocols" : "8.11.0"
     }
   ],
   "compile-devDependencies" : [

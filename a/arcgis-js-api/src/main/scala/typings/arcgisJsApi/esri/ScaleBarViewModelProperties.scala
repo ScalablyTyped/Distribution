@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleBarViewModelProperties extends StObject {
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object ScaleBarViewModelProperties {

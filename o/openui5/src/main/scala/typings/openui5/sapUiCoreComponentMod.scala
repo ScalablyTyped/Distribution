@@ -26,8 +26,8 @@ object sapUiCoreComponentMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor
-    * sap.ui.base.ManagedObject} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor sap.ui.base.ManagedObject }
+    * can be used.
     */
   open class default () extends Component {
     def this(/**
@@ -70,7 +70,7 @@ object sapUiCoreComponentMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Asynchronously creates a new component instance from the given configuration.
       *
@@ -149,7 +149,7 @@ object sapUiCoreComponentMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Returns an existing component instance, identified by its ID.
       *
@@ -168,7 +168,7 @@ object sapUiCoreComponentMod {
     inline def getMetadata(): typings.openui5.sapUiCoreComponentMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreComponentMetadataMod.default]
     
     /**
-      * @SINCE 1.25.1
+      * @since 1.25.1
       *
       * Returns the Component instance in whose "context" the given ManagedObject has been created or `undefined`.
       *
@@ -186,7 +186,7 @@ object sapUiCoreComponentMod {
     ): js.UndefOr[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnerComponentFor")(oObject.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Component]]
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Returns the ID of the object in whose "context" the given ManagedObject has been created.
       *
@@ -194,10 +194,10 @@ object sapUiCoreComponentMod {
       * as owner ID.
       *
       * **Note**: Ownership for objects is only checked by the framework at the time when they are created. It
-      * is not checked or updated afterwards. And it can only be detected while the {@link sap.ui.core.Component#runAsOwner
-      * Component.runAsOwner} function is executing. Without further action, this is only the case while the
-      * content of a UIComponent is {@link sap.ui.core.UIComponent#createContent constructed} or when a {@link
-      * sap.ui.core.routing.Router Router} creates a new View and its content.
+      * is not checked or updated afterwards. And it can only be detected while the {@link sap.ui.core.Component#runAsOwner Component.runAsOwner }
+      * function is executing. Without further action, this is only the case while the content of a UIComponent
+      * is {@link sap.ui.core.UIComponent#createContent constructed} or when a {@link sap.ui.core.routing.Router Router }
+      * creates a new View and its content.
       *
       * **Note**: This method does not guarantee that the returned owner ID belongs to a Component. Currently,
       * it always does. But future versions of UI5 might introduce a more fine grained ownership concept, e.g.
@@ -220,7 +220,7 @@ object sapUiCoreComponentMod {
     ): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnerIdFor")(oObject.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Asynchronously loads a component class without instantiating it; returns a promise on the loaded class.
       *
@@ -246,8 +246,23 @@ object sapUiCoreComponentMod {
       * Configuration options
       */
     mOptions: AsyncHints): js.Promise[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Function]]
+    
+    /**
+      * @since 1.67
+      *
+      * Registry of all `Component`s that currently exist.
+      */
+    @JSImport("sap/ui/core/Component", "default.registry")
+    @js.native
+    def registry: typings.openui5.sapUiCoreComponentMod.registry = js.native
+    inline def registry_=(x: typings.openui5.sapUiCoreComponentMod.registry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registry")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * @since 1.67
+    *
+    * Registry of all `Component`s that currently exist.
+    */
   @js.native
   trait registry extends StObject {
     
@@ -374,7 +389,7 @@ object sapUiCoreComponentMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @SINCE 1.47.0
+      * @since 1.47.0
       *
       * Creates a nested component that is declared in the `sap.ui5/componentUsages` section of the descriptor
       * (manifest.json). The following snippet shows the declaration:
@@ -430,16 +445,16 @@ object sapUiCoreComponentMod {
       * ID of the component usage or the configuration object that creates the component
       */
     vUsage: String
-    ): Component | js.Promise[Any] = js.native
+    ): Component | js.Promise[Component] = js.native
     def createComponent(
       /**
       * ID of the component usage or the configuration object that creates the component
       */
     vUsage: ComponentData
-    ): Component | js.Promise[Any] = js.native
+    ): Component | js.Promise[Component] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Cleans up the Component instance before destruction.
       *
@@ -451,9 +466,9 @@ object sapUiCoreComponentMod {
     def exit(): Unit = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
-      * Returns the list of active terminologies. See the {@link sap.ui.core.Component.create Component.create}
+      * Returns the list of active terminologies. See the {@link sap.ui.core.Component.create Component.create }
       * factory API documentation for more detail.
       *
       * @returns List of active terminologies
@@ -461,7 +476,7 @@ object sapUiCoreComponentMod {
     def getActiveTerminologies(): js.UndefOr[js.Array[String]] = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Returns user specific data object
       *
@@ -470,7 +485,7 @@ object sapUiCoreComponentMod {
     def getComponentData(): js.Object = js.native
     
     /**
-      * @SINCE 1.20.0
+      * @since 1.20.0
       *
       * Returns the event bus of this component.
       *
@@ -479,7 +494,7 @@ object sapUiCoreComponentMod {
     def getEventBus(): typings.openui5.sapUiCoreEventBusMod.default = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Returns the manifest defined in the metadata of the component. If not specified, the return value is
       * null.
@@ -489,7 +504,7 @@ object sapUiCoreComponentMod {
     def getManifest(): js.Object = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Returns the configuration of a manifest section or the value for a specific path. If no section or key
       * is specified, the return value is null.
@@ -513,7 +528,7 @@ object sapUiCoreComponentMod {
     sKey: String): Any | Null = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Returns the manifest object.
       *
@@ -522,7 +537,7 @@ object sapUiCoreComponentMod {
     def getManifestObject(): typings.openui5.sapUiCoreManifestMod.default = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Returns a service interface for the {@link sap.ui.core.service.Service Service} declared in the descriptor
       * for components (manifest.json). The declaration needs to be done in the `sap.ui5/services` section as
@@ -564,9 +579,9 @@ object sapUiCoreComponentMod {
       *
       * The service will be created only once per Component and reused in future calls to the `getService` function.
       *  This function will return a `Promise` which provides the service interface when resolved. If the
-      * `factoryName` could not be found in the {@link sap.ui.core.service.ServiceFactoryRegistry Service Factory
-      * Registry} or the service declaration in the descriptor for components (manifest.json) is missing the
-      * Promise will reject.
+      * `factoryName` could not be found in the {@link sap.ui.core.service.ServiceFactoryRegistry Service Factory Registry }
+      * or the service declaration in the descriptor for components (manifest.json) is missing the Promise will
+      * reject.
       *
       * This is an example of how the `getService` function can be used:
       * ```javascript
@@ -584,10 +599,10 @@ object sapUiCoreComponentMod {
     def getService(/**
       * Local service alias as defined in the manifest.json
       */
-    sLocalServiceAlias: String): js.Promise[Any] = js.native
+    sLocalServiceAlias: String): js.Promise[/* was: sap.ui.core.service.Service */ Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Initializes the Component instance after creation.
       *
@@ -599,15 +614,15 @@ object sapUiCoreComponentMod {
     def init(): Unit = js.native
     
     /**
-      * @SINCE 1.88
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.88
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called after the component is activated
       */
     def onActivate(): Unit = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The hook which gets called when the static configuration of the component has been changed by some configuration
       * extension.
@@ -618,15 +633,15 @@ object sapUiCoreComponentMod {
     sConfigKey: String): Unit = js.native
     
     /**
-      * @SINCE 1.88
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.88
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called after the component is deactivated
       */
     def onDeactivate(): Unit = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The window before unload hook. Override this method in your Component class implementation, to handle
       * cleanup before the real unload or to prompt a question to the user, if the component should be exited.
@@ -637,7 +652,7 @@ object sapUiCoreComponentMod {
     def onWindowBeforeUnload(): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The window error hook. Override this method in your Component class implementation to listen to unhandled
       * errors.
@@ -658,7 +673,7 @@ object sapUiCoreComponentMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The window unload hook. Override this method in your Component class implementation, to handle cleanup
       * of the component once the window will be unloaded (e.g. closed).
@@ -666,7 +681,7 @@ object sapUiCoreComponentMod {
     def onWindowUnload(): Unit = js.native
     
     /**
-      * @SINCE 1.25.1
+      * @since 1.25.1
       *
       * Calls the function `fn` once and marks all ManagedObjects created during that call as "owned" by this
       * Component.

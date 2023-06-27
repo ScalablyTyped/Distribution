@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SharedWorker) */
 @js.native
 trait SharedWorker
   extends StObject
@@ -21,7 +22,11 @@ trait SharedWorker
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Returns sharedWorker's MessagePort object which can be used to communicate with the global environment. */
+  /**
+    * Returns sharedWorker's MessagePort object which can be used to communicate with the global environment.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SharedWorker/port)
+    */
   /* standard dom */
   val port: MessagePort = js.native
   

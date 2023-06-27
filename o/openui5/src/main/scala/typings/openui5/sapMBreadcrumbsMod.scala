@@ -174,7 +174,7 @@ object sapMBreadcrumbsMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -186,7 +186,7 @@ object sapMBreadcrumbsMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Adds some link to the aggregation {@link #getLinks links}.
       *
@@ -200,7 +200,7 @@ object sapMBreadcrumbsMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Destroys all the links in the aggregation {@link #getLinks links}.
       *
@@ -209,15 +209,14 @@ object sapMBreadcrumbsMod {
     def destroyLinks(): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Gets current value of property {@link #getCurrentLocationText currentLocationText}.
       *
@@ -228,7 +227,7 @@ object sapMBreadcrumbsMod {
     def getCurrentLocationText(): String = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Gets content of aggregation {@link #getLinks links}.
       *
@@ -239,7 +238,7 @@ object sapMBreadcrumbsMod {
     def getLinks(): js.Array[typings.openui5.sapMLinkMod.default] = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Gets current value of property {@link #getSeparatorStyle separatorStyle}.
       *
@@ -252,7 +251,7 @@ object sapMBreadcrumbsMod {
     def getSeparatorStyle(): BreadcrumbsSeparatorStyle | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BreadcrumbsSeparatorStyle * / any */ String) = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Checks for the provided `sap.m.Link` in the aggregation {@link #getLinks links}. and returns its index
       * if found or -1 otherwise.
@@ -265,7 +264,7 @@ object sapMBreadcrumbsMod {
     oLink: typings.openui5.sapMLinkMod.default): int = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Inserts a link into the aggregation {@link #getLinks links}.
       *
@@ -285,7 +284,7 @@ object sapMBreadcrumbsMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -294,7 +293,7 @@ object sapMBreadcrumbsMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Removes all the controls from the aggregation {@link #getLinks links}.
       *
@@ -305,7 +304,7 @@ object sapMBreadcrumbsMod {
     def removeAllLinks(): js.Array[typings.openui5.sapMLinkMod.default] = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -331,7 +330,7 @@ object sapMBreadcrumbsMod {
       */
     vLink: String): typings.openui5.sapMLinkMod.default | Null = js.native
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Removes a link from the aggregation {@link #getLinks links}.
       *
@@ -347,7 +346,7 @@ object sapMBreadcrumbsMod {
     vLink: typings.openui5.sapMLinkMod.default): typings.openui5.sapMLinkMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Sets a new value for property {@link #getCurrentLocationText currentLocationText}.
       *
@@ -367,7 +366,7 @@ object sapMBreadcrumbsMod {
       sSeparatorStyle: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BreadcrumbsSeparatorStyle * / any */ String
     ): Breadcrumbs = js.native
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Custom setter for the `Breadcrumbs` separator style.
       *
@@ -381,21 +380,21 @@ object sapMBreadcrumbsMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Determines the text of current/last element in the Breadcrumbs path.
       */
     var currentLocationText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * A list of all the active link elements in the Breadcrumbs control. **Note:** Enabling the property `wrapping`
       * of the link will not work since it's incompatible with the concept of the control. The other properties
@@ -406,7 +405,7 @@ object sapMBreadcrumbsMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Determines the visual style of the separator between the `Breadcrumbs` elements.
       */

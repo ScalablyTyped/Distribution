@@ -12,20 +12,20 @@ object esriFormExpressionInfoMod {
   @JSImport("esri/form/ExpressionInfo", JSImport.Namespace)
   @js.native
   /**
-    * The `ExpressionInfo` class defines the makeup of [visibility expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#visibilityExpression), [required expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#requiredExpression), [editable expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editableExpression), and [value expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#valueExpression).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html)
-    */
+  		 * The `ExpressionInfo` class defines the makeup of [visibility expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#visibilityExpression), [required expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#requiredExpression), [editable expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editableExpression), and [value expressions](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#valueExpression).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with ExpressionInfo {
     def this(properties: ExpressionInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

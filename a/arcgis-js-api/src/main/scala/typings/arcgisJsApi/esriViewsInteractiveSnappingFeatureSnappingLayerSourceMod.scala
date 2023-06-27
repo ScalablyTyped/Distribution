@@ -11,10 +11,10 @@ object esriViewsInteractiveSnappingFeatureSnappingLayerSourceMod {
   @JSImport("esri/views/interactive/snapping/FeatureSnappingLayerSource", JSImport.Namespace)
   @js.native
   /**
-    * The FeatureSnappingLayerSource specifies which layers will be utilized for snapping in the [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html)
-    */
+  		 * The FeatureSnappingLayerSource specifies which layers will be utilized for snapping in the [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureSnappingLayerSource {

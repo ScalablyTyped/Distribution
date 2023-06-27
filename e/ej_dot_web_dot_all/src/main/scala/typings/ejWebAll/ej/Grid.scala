@@ -2934,37 +2934,37 @@ object Grid {
   trait Column extends StObject {
     
     /** Gets or sets a value that indicates whether to enable editing behavior for particular column.
-      * @Default {true}
+      * @default {true}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
-      * @Default {true}
+      * @default {true}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
-      * @Default {true}
+      * @default {true}
       */
     var allowGrouping: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
-      * @Default {true}
+      * @default {true}
       */
     var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
-      * @Default {true}
+      * @default {true}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
-      * @Default {ej.Grid.ClipMode.Clip}
+      * @default {ej.Grid.ClipMode.Clip}
       */
     var clipMode: js.UndefOr[ClipMode | String] = js.undefined
     
     /** Gets or sets an object that indicates to define a command column in the grid.
-      * @Default {[]}
+      * @default {[]}
       */
     var commands: js.UndefOr[js.Array[ColumnsCommand]] = js.undefined
     
@@ -2978,7 +2978,7 @@ object Grid {
     
     /** Gets or sets a value that indicates to bind the external datasource to the particular column when column editType as dropdownedit and also it is used to bind the datasource to the
       * foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -2987,12 +2987,12 @@ object Grid {
     var defaultValue: js.UndefOr[String | Double | Boolean | js.Date] = js.undefined
     
     /** Gets or sets a value that indicates to render the grid content and header with an HTML elements
-      * @Default {false}
+      * @default {false}
       */
     var disableHtmlEncode: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to display a column value as checkbox or string
-      * @Default {true}
+      * @default {true}
       */
     var displayAsCheckbox: js.UndefOr[Boolean] = js.undefined
     
@@ -3001,17 +3001,17 @@ object Grid {
     var editParams: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a template that displays a custom editor used to edit column values. See editTemplate
-      * @Default {null}
+      * @default {null}
       */
     var editTemplate: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. See editingType
-      * @Default {ej.Grid.EditingType.String}
+      * @default {ej.Grid.EditingType.String}
       */
     var editType: js.UndefOr[EditingType | String] = js.undefined
     
     /** Gets or sets a value that indicates to groups the column based on its column format.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupByFormat: js.UndefOr[Boolean] = js.undefined
     
@@ -3020,22 +3020,22 @@ object Grid {
     var field: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a template that customize the filter control from default . See filterBarTemplate
-      * @Default {null}
+      * @default {null}
       */
     var filterBarTemplate: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See filterType
-      * @Default {null}
+      * @default {null}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Gets or sets a value that indicates to define foreign key field name of the grid datasource.
-      * @Default {null}
+      * @default {null}
       */
     var foreignKeyField: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to bind the field which is in foreign column datasource based on the foreignKeyField
-      * @Default {null}
+      * @default {null}
       */
     var foreignKeyValue: js.UndefOr[String] = js.undefined
     
@@ -3044,7 +3044,7 @@ object Grid {
     var format: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to add the template within the header element of the particular column.
-      * @Default {null}
+      * @default {null}
       */
     var headerTemplateID: js.UndefOr[String] = js.undefined
     
@@ -3053,47 +3053,47 @@ object Grid {
     var headerText: js.UndefOr[String] = js.undefined
     
     /** This defines the text alignment of a particular column header cell value. See headerTextAlign
-      * @Default {null}
+      * @default {null}
       */
     var headerTextAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** It accepts the string value and shows the tooltip for the Grid column header.
-      * @Default {null}
+      * @default {null}
       */
     var headerTooltip: js.UndefOr[String] = js.undefined
     
     /** You can use this property to freeze selected columns in grid at the time of scrolling.
-      * @Default {false}
+      * @default {false}
       */
     var isFrozen: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates the column has an identity in the database.
-      * @Default {false}
+      * @default {false}
       */
     var isIdentity: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates the column is act as a primary key(read-only) of the grid. The editing is performed based on the primary key column
-      * @Default {false}
+      * @default {false}
       */
     var isPrimaryKey: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns.
-      * @Default {-1}
+      * @default {-1}
       */
     var priority: js.UndefOr[Double] = js.undefined
     
     /** Used to hide the particular column in column chooser by giving value as false.
-      * @Default {true}
+      * @default {true}
       */
     var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enables column template for a particular column.
-      * @Default {false}
+      * @default {false}
       */
     var template: js.UndefOr[Boolean | String] = js.undefined
     
     /** Gets or sets a value that indicates to align the text within the column. See textAlign
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
@@ -3110,7 +3110,7 @@ object Grid {
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether this column is visible in the grid.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
@@ -3868,22 +3868,22 @@ object Grid {
     
     /** Gets or sets a value that indicates whether to add the default context menu actions as a context menu items If enableContextMenu is true it will show all the items related to the
       * target, if you want selected items from contextmenu you have to mention in the contextMenuItems
-      * @Default {[]}
+      * @default {[]}
       */
     var contextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to add custom contextMenu items within the toolbar to perform any action in the grid
-      * @Default {[]}
+      * @default {[]}
       */
     var customContextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to disable the default context menu items in the grid.
-      * @Default {false}
+      * @default {false}
       */
     var disableDefaultItems: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the context menu action in the grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
@@ -3932,17 +3932,17 @@ object Grid {
   trait ContextMenuSettingsSubContextMenu extends StObject {
     
     /** Used to get or set the corresponding custom context menu item to which the submenu to be appended.
-      * @Default {null}
+      * @default {null}
       */
     var contextMenuItem: js.UndefOr[String] = js.undefined
     
     /** Used to get or set the sub menu items to the custom context menu item.
-      * @Default {[]}
+      * @default {[]}
       */
     var subMenu: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Used to get or set the sub menu items to the custom context menu item using JsRender template.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
   }
@@ -4345,72 +4345,72 @@ object Grid {
   trait EditSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable insert action in the editing mode.
-      * @Default {false}
+      * @default {false}
       */
     var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the delete action in the editing mode.
-      * @Default {false}
+      * @default {false}
       */
     var allowDeleting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the editing action while double click on the record
-      * @Default {true}
+      * @default {true}
       */
     var allowEditOnDblClick: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the edit action in the editing mode.
-      * @Default {false}
+      * @default {false}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies the id of the template. This template can be used to display the data that you require to be edited using the Dialog Box
-      * @Default {null}
+      * @default {null}
       */
     var dialogEditorTemplateID: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the mode of editing See editMode
-      * @Default {ej.Grid.EditMode.Normal}
+      * @default {ej.Grid.EditMode.Normal}
       */
     var editMode: js.UndefOr[EditMode | String] = js.undefined
     
     /** This specifies the id of the template. This template can be used to display the data that you require to be edited using the External edit form
-      * @Default {null}
+      * @default {null}
       */
     var externalFormTemplateID: js.UndefOr[String] = js.undefined
     
     /** This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid. See formPosition
-      * @Default {ej.Grid.FormPosition.BottomLeft}
+      * @default {ej.Grid.FormPosition.BottomLeft}
       */
     var formPosition: js.UndefOr[FormPosition | String] = js.undefined
     
     /** This specifies the id of the template. This template can be used to display the data that you require to be edited using the Inline edit form
-      * @Default {null}
+      * @default {null}
       */
     var inlineFormTemplateID: js.UndefOr[String] = js.undefined
     
     /** This specifies to set the position of an adding new row either in the top or bottom of the grid. See rowPosition
-      * @Default {ej.Grid.RowPosition.Top}
+      * @default {ej.Grid.RowPosition.Top}
       */
     var rowPosition: js.UndefOr[RowPosition | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to display the add new form by default in the grid.
-      * @Default {false}
+      * @default {false}
       */
     var showAddNewRow: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the confirm dialog has to be shown while saving or discarding the batch changes
-      * @Default {true}
+      * @default {true}
       */
     var showConfirmDialog: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the confirm dialog has to be shown while deleting record
-      * @Default {false}
+      * @default {false}
       */
     var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
-      * @Default {null}
+      * @default {null}
       */
     var titleColumn: js.UndefOr[String] = js.undefined
   }
@@ -4623,47 +4623,47 @@ object Grid {
   trait FilterSettings extends StObject {
     
     /** Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
-      * @Default {false}
+      * @default {false}
       */
     var enableCaseSensitivity: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to define the interDeterminateState of checkbox in excel filter dialog.
-      * @Default {true}
+      * @default {true}
       */
     var enableInterDeterminateState: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode.
-      * @Default {ej.Grid.FilterBarMode.Immediate}
+      * @default {ej.Grid.FilterBarMode.Immediate}
       */
     var filterBarMode: js.UndefOr[FilterBarMode | String] = js.undefined
     
     /** This specifies the grid to show the filterBar or filterMenu to the grid records. See filterType
-      * @Default {ej.Grid.FilterType.FilterBar}
+      * @default {ej.Grid.FilterType.FilterBar}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
-      * @Default {[]}
+      * @default {[]}
       */
     var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.undefined
     
     /** This specifies the grid to delay the filter action while typing in the filterBar.
-      * @Default {1500}
+      * @default {1500}
       */
     var immediateModeDelay: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
-      * @Default {1000}
+      * @default {1000}
       */
     var maxFilterChoices: js.UndefOr[Double] = js.undefined
     
     /** This specifies the grid to show the filter text within the grid pager itself.
-      * @Default {true}
+      * @default {true}
       */
     var showFilterBarStatus: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the predicate options in the filtering menu
-      * @Default {false}
+      * @default {false}
       */
     var showPredicate: js.UndefOr[Boolean] = js.undefined
   }
@@ -4774,39 +4774,39 @@ object Grid {
   trait GroupSettings extends StObject {
     
     /** Gets or sets a value that customize the group caption format.
-      * @Default {null}
+      * @default {null}
       */
     var captionFormat: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable animation button option in the group drop area of the grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableDropAreaAutoSizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
-      * @Default {[]}
+      * @default {[]}
       */
     var groupedColumns: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using
       * groupSettings.
-      * @Default {true}
+      * @default {true}
       */
     var showDropArea: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to hide the grouped columns from the grid
-      * @Default {false}
+      * @default {false}
       */
     var showGroupedColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be
       * used to group/ungroup the columns by clicking on the toggle button.
-      * @Default {false}
+      * @default {false}
       */
     var showToggleButton: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the close button in the grouped column which is in the group drop area to ungroup the grouped column
-      * @Default {false}
+      * @default {false}
       */
     var showUngroupButton: js.UndefOr[Boolean] = js.undefined
   }
@@ -5045,87 +5045,87 @@ object Grid {
     var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to customizing cell based on our needs.
-      * @Default {false}
+      * @default {false}
       */
     var allowCellMerging: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can
       * be further customized through â€œfilterSettingsâ€ property
-      * @Default {false}
+      * @default {false}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to gridâ€™s GroupDropArea. This can be
       * further customized through â€œgroupSettingsâ€ property.
-      * @Default {false}
+      * @default {false}
       */
     var allowGrouping: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType â€“ Gets or sets a value that indicates whether to enable single
       * row or multiple rows selection behavior in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable multi columns sorting behavior in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
-      * @Default {false}
+      * @default {false}
       */
     var allowMultiSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the multiple exporting behavior on grid data.
-      * @Default {false}
+      * @default {false}
       */
     var allowMultipleExporting: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized
       * through â€œpageSettingsâ€ property.
-      * @Default {false}
+      * @default {false}
       */
     var allowPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the columns reordering behavior in the grid. Reordering can be done through by drag and drop the particular column from one
       * index to another index within the grid.
-      * @Default {false}
+      * @default {false}
       */
     var allowReordering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the column is non resizable. Column width is set automatically based on the content or header text which is large.
-      * @Default {false}
+      * @default {false}
       */
     var allowResizeToFit: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic resizable of columns. Resize the width of the columns by simply click and move the particular column header line
-      * @Default {false}
+      * @default {false}
       */
     var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag &amp; drop rows between multiple Grid.
-      * @Default {false}
+      * @default {false}
       */
     var allowRowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the scrollbar in the grid and view the records by scroll through the grid manually
-      * @Default {false}
+      * @default {false}
       */
     var allowScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through â€œtoolbarSettingsâ€
-      * @Default {false}
+      * @default {false}
       */
     var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether user can select rows on grid. On enabling feature, selected row will be highlighted.
-      * @Default {true}
+      * @default {true}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
-      * @Default {false}
+      * @default {false}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
-      * @Default {false}
+      * @default {false}
       */
     var allowTextWrap: js.UndefOr[Boolean] = js.undefined
     
@@ -5186,7 +5186,7 @@ object Grid {
     var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.undefined
     
     /** This specifies the grid to add the grid control inside the grid row of the parent with expand/collapse options
-      * @Default {null}
+      * @default {null}
       */
     var childGrid: js.UndefOr[Any] = js.undefined
     
@@ -5211,7 +5211,7 @@ object Grid {
     var columnDrop: js.UndefOr[js.Function1[/* e */ ColumnDropEventArgs, Unit]] = js.undefined
     
     /** Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
-      * @Default {ej.Grid.ColumnLayout.Auto}
+      * @default {ej.Grid.ColumnLayout.Auto}
       */
     var columnLayout: js.UndefOr[ColumnLayout | String] = js.undefined
     
@@ -5224,7 +5224,7 @@ object Grid {
     var columnSelecting: js.UndefOr[js.Function1[/* e */ ColumnSelectingEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to render the grid with specified columns
-      * @Default {[]}
+      * @default {[]}
       */
     var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
@@ -5257,7 +5257,7 @@ object Grid {
     var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the data to render the grid with records
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -5278,7 +5278,7 @@ object Grid {
     var detailsExpand: js.UndefOr[js.Function1[/* e */ DetailsExpandEventArgs, Unit]] = js.undefined
     
     /** Default Value:
-      * @Default {null}
+      * @default {null}
       */
     var detailsTemplate: js.UndefOr[String] = js.undefined
     
@@ -5287,47 +5287,47 @@ object Grid {
     var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the alternative rows differentiation in the grid records based on corresponding theme.
-      * @Default {true}
+      * @default {true}
       */
     var enableAltRow: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the save action in the grid through row selection
-      * @Default {true}
+      * @default {true}
       */
     var enableAutoSaveOnSelectionChange: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable mouse over effect on the corresponding column header cell of the grid
-      * @Default {false}
+      * @default {false}
       */
     var enableHeaderHover: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to persist the grid model state in page using applicable medium i.e., HTML5 localStorage or cookies
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Align content in the grid control from right to left by setting the property as true.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode
-      * @Default {false}
+      * @default {false}
       */
     var enableResponsiveRow: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable mouse over effect on corresponding grid row.
-      * @Default {true}
+      * @default {true}
       */
     var enableRowHover: js.UndefOr[Boolean] = js.undefined
     
     /** It sets a value that indicates whether to enable toolbar items, when allowEditing, allowAdding and allowDeleting property set as false in the grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableToolbarItems: js.UndefOr[Boolean] = js.undefined
     
     /** To Disable the mouse swipe property as false.
-      * @Default {true}
+      * @default {true}
       */
     var enableTouch: js.UndefOr[Boolean] = js.undefined
     
@@ -5344,17 +5344,17 @@ object Grid {
     var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.undefined
     
     /** Act as mapper for the excel exporting URL.
-      * @Default {ExportToExcel}
+      * @default {ExportToExcel}
       */
     var exportToExcelAction: js.UndefOr[String] = js.undefined
     
     /** Act as mapper for the PDF exporting URL.
-      * @Default {ExportToPdf}
+      * @default {ExportToPdf}
       */
     var exportToPdfAction: js.UndefOr[String] = js.undefined
     
     /** Act as mapper for the Word exporting URL.
-      * @Default {ExportToWord}
+      * @default {ExportToWord}
       */
     var exportToWordAction: js.UndefOr[String] = js.undefined
     
@@ -5363,7 +5363,7 @@ object Grid {
     var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Gets or sets a value that indicates to enable the visibility of the grid lines.
-      * @Default {ej.Grid.GridLines.Both}
+      * @default {ej.Grid.GridLines.Both}
       */
     var gridLines: js.UndefOr[GridLines | String] = js.undefined
     
@@ -5372,12 +5372,12 @@ object Grid {
     var groupSettings: js.UndefOr[GroupSettings] = js.undefined
     
     /** Gets or sets a value that indicates whether the grid design has be to made responsive.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies to change the key in keyboard interaction to grid control
-      * @Default {null}
+      * @default {null}
       */
     var keySettings: js.UndefOr[Any] = js.undefined
     
@@ -5387,7 +5387,7 @@ object Grid {
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to
       * a particular country or region.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -5400,7 +5400,7 @@ object Grid {
     var mergeHeaderCellInfo: js.UndefOr[js.Function1[/* e */ MergeHeaderCellInfoEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to set the minimum width of the responsive grid while isResponsive property is true and enableResponsiveRow property is set as false.
-      * @Default {0}
+      * @default {0}
       */
     var minWidth: js.UndefOr[Double] = js.undefined
     
@@ -5409,7 +5409,7 @@ object Grid {
     var pageSettings: js.UndefOr[PageSettings] = js.undefined
     
     /** Query the dataSource from the table for Grid.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -5487,7 +5487,7 @@ object Grid {
     
     /** Gets or sets a value that indicates to render the grid with template rows. The template row must be a table row. That table row must have the JavaScript render binding format
       * ({{:columnName}}) then the grid data source binds the data to the corresponding table row of the template.
-      * @Default {null}
+      * @default {null}
       */
     var rowTemplate: js.UndefOr[String] = js.undefined
     
@@ -5500,17 +5500,17 @@ object Grid {
     var searchSettings: js.UndefOr[SearchSettings] = js.undefined
     
     /** Gets a value that display the array of selected records in the Grid.
-      * @Default {null}
+      * @default {null}
       */
     var selectedRecords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates to select the row while initializing the grid
-      * @Default {-1}
+      * @default {-1}
       */
     var selectedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates the selected rows in grid
-      * @Default {[]}
+      * @default {[]}
       */
     var selectedRowIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -5519,22 +5519,22 @@ object Grid {
     var selectionSettings: js.UndefOr[SelectionSettings] = js.undefined
     
     /** The row selection behavior of grid. Accepting types are &quot;single&quot; and &quot;multiple&quot;.
-      * @Default {ej.Grid.SelectionType.Single}
+      * @default {ej.Grid.SelectionType.Single}
       */
     var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Default Value:
-      * @Default {false}
+      * @default {false}
       */
     var showColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates stacked header should be shown on grid layout when the property â€œstackedHeaderRowsâ€ is set.
-      * @Default {false}
+      * @default {false}
       */
     var showStackedHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates summary rows should be shown on grid layout when the property â€œsummaryRowsâ€ is set
-      * @Default {false}
+      * @default {false}
       */
     var showSummary: js.UndefOr[Boolean] = js.undefined
     
@@ -5543,12 +5543,12 @@ object Grid {
     var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of stacked header rows for the grid.
-      * @Default {[]}
+      * @default {[]}
       */
     var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of summary rows for the grid.
-      * @Default {[]}
+      * @default {[]}
       */
     var summaryRows: js.UndefOr[js.Array[SummaryRow]] = js.undefined
     
@@ -6073,57 +6073,57 @@ object Grid {
   trait PageSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to define which page to display currently in the grid
-      * @Default {1}
+      * @default {1}
       */
     var currentPage: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
-      * @Default {false}
+      * @default {false}
       */
     var enableQueryString: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enables pager template for the grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableTemplates: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation
-      * @Default {8}
+      * @default {8}
       */
     var pageCount: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of records displayed per page
-      * @Default {12}
+      * @default {12}
       */
     var pageSize: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
-      * @Default {[]}
+      * @default {[]}
       */
     var pageSizeList: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of pages to print. See printMode.
-      * @Default {ej.Grid.PrintMode.AllPages}
+      * @default {ej.Grid.PrintMode.AllPages}
       */
     var printMode: js.UndefOr[PrintMode | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enables default pager for the grid.
-      * @Default {false}
+      * @default {false}
       */
     var showDefaults: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to add the template as a pager template for grid.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Get the value of total number of pages in the grid. The totalPages value is calculated based on page size and total records of grid
-      * @Default {null}
+      * @default {null}
       */
     var totalPages: js.UndefOr[Double] = js.undefined
     
     /** Get the value of total number of records which is bound to the grid. The totalRecordsCount value is calculated based on dataSource bound to the grid.
-      * @Default {null}
+      * @default {null}
       */
     var totalRecordsCount: js.UndefOr[Double] = js.undefined
   }
@@ -6556,7 +6556,7 @@ object Grid {
   trait ResizeSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to define the mode of resizing.
-      * @Default {ej.Grid.ResizeMode.Normal}
+      * @default {ej.Grid.ResizeMode.Normal}
       */
     var resizeMode: js.UndefOr[ResizeMode | String] = js.undefined
   }
@@ -7265,22 +7265,22 @@ object Grid {
   trait RowDropSettings extends StObject {
     
     /** Gets or sets a value that indicates whether move or copy a record from one grid to another or within the grid
-      * @Default {ej.Grid.DragBehavior.Move}
+      * @default {ej.Grid.DragBehavior.Move}
       */
     var dragBehavior: js.UndefOr[DragBehavior | String] = js.undefined
     
     /** This helps in mapping server-side action when rows are dragged from Grid.
-      * @Default {null}
+      * @default {null}
       */
     var dragMapper: js.UndefOr[String] = js.undefined
     
     /** This helps in mapping server-side action when rows are dropped in Grid.
-      * @Default {null}
+      * @default {null}
       */
     var dropMapper: js.UndefOr[String] = js.undefined
     
     /** This specifies the grid to drop the grid rows only at particular target element.
-      * @Default {null}
+      * @default {null}
       */
     var dropTargetID: js.UndefOr[Any] = js.undefined
   }
@@ -7541,62 +7541,62 @@ object Grid {
   trait ScrollSettings extends StObject {
     
     /** This specify the grid to to view data that you require without buffering the entire load of a huge database
-      * @Default {false}
+      * @default {false}
       */
     var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** It accepts the boolean value and shows or hides the scrollbar while focus in or focus out of the Grid.
-      * @Default {false}
+      * @default {false}
       */
     var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height and width of button in the scrollbar.
-      * @Default {18}
+      * @default {18}
       */
     var buttonSize: js.UndefOr[Double] = js.undefined
     
     /** This specify the grid to enable/disable touch control for scrolling.
-      * @Default {true}
+      * @default {true}
       */
     var enableTouchScroll: js.UndefOr[Boolean] = js.undefined
     
     /** This is used to enable the enhanced virtual scrolling in Grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** This specify the grid to freeze particular columns at the time of scrolling.
-      * @Default {0}
+      * @default {0}
       */
     var frozenColumns: js.UndefOr[Double] = js.undefined
     
     /** This specify the grid to freeze particular rows at the time of scrolling.
-      * @Default {0}
+      * @default {0}
       */
     var frozenRows: js.UndefOr[Double] = js.undefined
     
     /** This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents.
-      * @Default {57}
+      * @default {57}
       */
     var scrollOneStepBy: js.UndefOr[Double] = js.undefined
     
     /** It accepts the integer value and sets the width of scrollbar.
-      * @Default {18}
+      * @default {18}
       */
     var scrollerSize: js.UndefOr[Double] = js.undefined
     
     /** This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
-      * @Default {ej.Grid.VirtualScrollMode.Normal}
+      * @default {ej.Grid.VirtualScrollMode.Normal}
       */
     var virtualScrollMode: js.UndefOr[typings.ejWebAll.ej.VirtualScrollMode | String] = js.undefined
     
     /** This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
-      * @Default {250}
+      * @default {250}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -7663,12 +7663,12 @@ object Grid {
   trait SearchSettings extends StObject {
     
     /** This specify the grid to search for the value in particular columns that is mentioned in the field.
-      * @Default {[]}
+      * @default {[]}
       */
     var fields: js.UndefOr[Any] = js.undefined
     
     /** It enables or disables case-sensitivity while searching the search key in grid.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
@@ -7677,7 +7677,7 @@ object Grid {
     var key: js.UndefOr[String] = js.undefined
     
     /** It specifies the grid to search the records based on operator.
-      * @Default {contains}
+      * @default {contains}
       */
     var operator: js.UndefOr[String] = js.undefined
   }
@@ -7712,22 +7712,22 @@ object Grid {
   trait SelectionSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to select multiple rows or cells by performing dragging in Grid.
-      * @Default {false}
+      * @default {false}
       */
     var allowDragSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
-      * @Default {ej.Grid.CellSelectionMode.Flow}
+      * @default {ej.Grid.CellSelectionMode.Flow}
       */
     var cellSelectionMode: js.UndefOr[CellSelectionMode | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
-      * @Default {false}
+      * @default {false}
       */
     var enableToggle: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
-      * @Default {[row]}
+      * @default {[row]}
       */
     var selectionMode: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -7818,7 +7818,7 @@ object Grid {
   trait StackedHeaderRow extends StObject {
     
     /** Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
-      * @Default {[]}
+      * @default {[]}
       */
     var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.undefined
   }
@@ -7843,27 +7843,27 @@ object Grid {
   trait StackedHeaderRowsStackedHeaderColumn extends StObject {
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var column: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var headerText: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the text alignment of the corresponding headerText.
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var textAlign: js.UndefOr[String] = js.undefined
     
     /** Sets the template for tooltip for the Grid stackedHeaderColumns.
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[String] = js.undefined
   }
@@ -7902,22 +7902,22 @@ object Grid {
   trait SummaryRow extends StObject {
     
     /** Gets or sets a value that indicates whether to show the summary value within the group caption area for the corresponding summary column while grouping the column
-      * @Default {false}
+      * @default {false}
       */
     var showCaptionSummary: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the group summary value for the corresponding summary column while grouping a column
-      * @Default {false}
+      * @default {false}
       */
     var showGroupSummary: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the total summary value the for the corresponding summary column. The summary row is added after the grid content.
-      * @Default {true}
+      * @default {true}
       */
     var showTotalSummary: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to add summary columns into the summary rows.
-      * @Default {[]}
+      * @default {[]}
       */
     var summaryColumns: js.UndefOr[js.Array[SummaryRowsSummaryColumn]] = js.undefined
     
@@ -7926,7 +7926,7 @@ object Grid {
     var title: js.UndefOr[String] = js.undefined
     
     /** This specifies the grid to show the title of summary row in the specified column.
-      * @Default {null}
+      * @default {null}
       */
     var titleColumn: js.UndefOr[String] = js.undefined
   }
@@ -7971,42 +7971,42 @@ object Grid {
   trait SummaryRowsSummaryColumn extends StObject {
     
     /** Gets or sets a value that indicates the text displayed in the summary column as a value
-      * @Default {null}
+      * @default {null}
       */
     var customSummaryValue: js.UndefOr[String] = js.undefined
     
     /** This specifies summary column used to perform the summary calculation
-      * @Default {null}
+      * @default {null}
       */
     var dataMember: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define the target column at which to display the summary.
-      * @Default {null}
+      * @default {null}
       */
     var displayColumn: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the format for the text applied on the column
-      * @Default {null}
+      * @default {null}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the text displayed before the summary column value
-      * @Default {null}
+      * @default {null}
       */
     var prefix: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the text displayed after the summary column value
-      * @Default {null}
+      * @default {null}
       */
     var suffix: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column. See summaryType.
-      * @Default {[]}
+      * @default {[]}
       */
     var summaryType: js.UndefOr[SummaryType | String] = js.undefined
     
     /** Gets or sets a value that indicates to add the template for the summary value of dataMember given.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
   }
@@ -8135,7 +8135,7 @@ object Grid {
   trait TextWrapSettings extends StObject {
     
     /** This specifies the grid to apply the auto wrap for grid content or header or both.
-      * @Default {ej.Grid.WrapMode.Both}
+      * @default {ej.Grid.WrapMode.Both}
       */
     var wrapMode: js.UndefOr[WrapMode | String] = js.undefined
   }
@@ -8260,17 +8260,17 @@ object Grid {
   trait ToolbarSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to add custom toolbar items within the toolbar to perform any action in the grid
-      * @Default {[]}
+      * @default {[]}
       */
     var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable toolbar in the grid.
-      * @Default {false}
+      * @default {false}
       */
     var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to add the default editing actions as a toolbar items. See toolbarItems.
-      * @Default {[]}
+      * @default {[]}
       */
     var toolbarItems: js.UndefOr[js.Array[ToolBarItems | String]] = js.undefined
   }

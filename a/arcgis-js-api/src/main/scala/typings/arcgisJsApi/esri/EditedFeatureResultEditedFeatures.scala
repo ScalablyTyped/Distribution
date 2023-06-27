@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditedFeatureResultEditedFeatures extends StObject {
   
   /**
-    * Newly added features as a result of editing a feature that participates in a composite relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Newly added features as a result of editing a feature that participates in a composite relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var adds: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
-    * Deleted features as a result of editing a feature that participates in a composite relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Deleted features as a result of editing a feature that participates in a composite relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var deletes: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
-    * Edited features are returned in the spatial reference of the feature service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Edited features are returned in the spatial reference of the feature service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var spatialReference: js.UndefOr[SpatialReference] = js.undefined
   
   /**
-    * Object containing original and updated features as a result of editing a feature that participates in a composite relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Object containing original and updated features as a result of editing a feature that participates in a composite relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var updates: js.UndefOr[js.Array[EditedFeatureResultEditedFeaturesUpdates]] = js.undefined
 }
 object EditedFeatureResultEditedFeatures {

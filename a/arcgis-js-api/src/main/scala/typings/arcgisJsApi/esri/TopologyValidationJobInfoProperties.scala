@@ -10,31 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TopologyValidationJobInfoProperties extends StObject {
   
   /**
-    * The last date and time the service was updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#lastUpdatedTime)
-    */
+  		 * The last date and time the service was updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#lastUpdatedTime)
+  		 */
   var lastUpdatedTime: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The job status.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#status)
-    */
+  		 * The job status.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#status)
+  		 */
   var status: js.UndefOr[pending | `in-progress` | completed] = js.undefined
   
   /**
-    * ArcGIS Server Rest API endpoint to the resource that receives the validate network topology request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#statusUrl)
-    */
+  		 * ArcGIS Server Rest API endpoint to the resource that receives the validate network topology request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#statusUrl)
+  		 */
   var statusUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * The date and time in which [submitTopologyValidationJob()](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#submitTopologyValidationJob) is first called.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#submissionTime)
-    */
+  		 * The date and time in which [submitTopologyValidationJob()](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#submitTopologyValidationJob) is first called.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TopologyValidationJobInfo.html#submissionTime)
+  		 */
   var submissionTime: js.UndefOr[DateProperties] = js.undefined
 }
 object TopologyValidationJobInfoProperties {

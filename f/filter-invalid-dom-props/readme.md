@@ -1,7 +1,7 @@
 
 # Scala.js typings for filter-invalid-dom-props
 
-Typings are for version 2.0
+Typings are for version 3.0.1
 
 ## Library description:
 a function to filter props that are not valid dom props when spreading props in an HOC in react
@@ -24,7 +24,7 @@ a function to filter props that are not valid dom props when spreading props in 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

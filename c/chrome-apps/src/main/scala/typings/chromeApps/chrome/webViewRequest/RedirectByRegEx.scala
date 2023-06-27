@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Redirects a request by applying a regular expression on the URL.
   * The regular expressions use the RE2 syntax.
-  * @see[RE2 syntax]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
+  * @see https://github.com/google/re2/blob/master/doc/syntax.txt
   */
 trait RedirectByRegEx
   extends StObject

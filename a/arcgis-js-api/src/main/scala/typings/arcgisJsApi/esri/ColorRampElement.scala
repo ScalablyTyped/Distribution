@@ -9,24 +9,24 @@ trait ColorRampElement
      with LegendElement {
   
   /**
-    * The individual color stops rendered in the legend that correspond to the color visual variable in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
-    */
+  		 * The individual color stops rendered in the legend that correspond to the color visual variable in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
+  		 */
   var infos: js.Array[ColorRampStop]
   
   /**
-    * The title of the color ramp as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
-    */
+  		 * The title of the color ramp as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
+  		 */
   var title: String | RampTitle
   
   /**
-    * The type of this element is always `color-ramp`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
-    */
+  		 * The type of this element is always `color-ramp`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ColorRampElement)
+  		 */
   var `type`: String
 }
 object ColorRampElement {

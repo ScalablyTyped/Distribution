@@ -4,6 +4,7 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
 import typings.std.MessageEvent
+import typings.std.MouseEvent
 import typings.std.Record
 import typings.typeformEmbed.anon.EmbedId
 import typings.typeformEmbed.typesBaseEmbedTypesMod.EmbedType
@@ -53,6 +54,8 @@ object typesUtilsMod {
   
   inline def includeCss(filename: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("includeCss")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def invokeWithoutDefault(func: js.Function0[Unit]): js.Function1[/* event */ js.UndefOr[MouseEvent], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeWithoutDefault")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]]
+  
   inline def isBigScreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigScreen")().asInstanceOf[Boolean]
   
   inline def isDefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")().asInstanceOf[/* is T */ Boolean]
@@ -70,7 +73,7 @@ object typesUtilsMod {
   
   inline def lazyInitialize(target: Element, onIntersection: fn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lazyInitialize")(target.asInstanceOf[js.Any], onIntersection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def loadOptionsFromAttributes(element: HTMLElement, transform: Record[String, Transformation]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOptionsFromAttributes")(element.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def loadOptionsFromAttributes(element: HTMLElement, transform: Record[String, Transformation]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOptionsFromAttributes")(element.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   inline def makeAutoResize(wrapperElm: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   inline def makeAutoResize(wrapperElm: HTMLElement, onAllDevices: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any], onAllDevices.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]

@@ -189,7 +189,7 @@ object sapUiLayoutFixFlexMod {
     def getFlexContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.29
+      * @since 1.29
       *
       * Gets current value of property {@link #getMinFlexSize minFlexSize}.
       *
@@ -324,7 +324,7 @@ object sapUiLayoutFixFlexMod {
     oFlexContent: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.29
+      * @since 1.29
       *
       * Sets a new value for property {@link #getMinFlexSize minFlexSize}.
       *
@@ -398,7 +398,7 @@ object sapUiLayoutFixFlexMod {
     var flexContent: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.29
+      * @since 1.29
       *
       * Enables scrolling inside the flexible part. The given size is calculated in "px". If the child control
       * in the flexible part is larger than the available flexible size on the screen and if the available size

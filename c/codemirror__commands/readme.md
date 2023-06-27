@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__commands
 
-Typings are for version 6.1.0
+Typings are for version 6.2.4
 
 ## Library description:
 Collection of editing commands for the CodeMirror code editor

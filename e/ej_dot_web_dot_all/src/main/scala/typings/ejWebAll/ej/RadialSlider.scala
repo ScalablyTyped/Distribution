@@ -121,7 +121,7 @@ object RadialSlider {
   trait Model extends StObject {
     
     /** To show the RadialSlider in initial render.
-      * @Default {false}
+      * @default {false}
       */
     var autoOpen: js.UndefOr[Boolean] = js.undefined
     
@@ -139,42 +139,42 @@ object RadialSlider {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** To enable Animation for Radial Slider.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enable/Disable the Roundoff property of RadialSlider
-      * @Default {true}
+      * @default {true}
       */
     var enableRoundOff: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the endAngle value for radial slider circle.
-      * @Default {360}
+      * @default {360}
       */
     var endAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the inline for label show or not on given radius.
-      * @Default {false}
+      * @default {false}
       */
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies innerCircleImageClass, using this property we can give images for center radial circle through CSS classes.
-      * @Default {null}
+      * @default {null}
       */
     var innerCircleImageClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the file name of center circle icon
-      * @Default {null}
+      * @default {null}
       */
     var innerCircleImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the Space between the radial slider element and the label.
-      * @Default {30}
+      * @default {30}
       */
     var labelSpace: js.UndefOr[Double] = js.undefined
     
     /** Change the Radial Slider ticks value based on the given culture.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -183,12 +183,12 @@ object RadialSlider {
     var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Specifies the radius of radial slider
-      * @Default {200}
+      * @default {200}
       */
     var radius: js.UndefOr[Double] = js.undefined
     
     /** To show the RadialSlider inner circle.
-      * @Default {true}
+      * @default {true}
       */
     var showInnerCircle: js.UndefOr[Boolean] = js.undefined
     
@@ -201,7 +201,7 @@ object RadialSlider {
     var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Specifies the endAngle value for radial slider circle.
-      * @Default {0}
+      * @default {0}
       */
     var startAngle: js.UndefOr[Double] = js.undefined
     
@@ -210,7 +210,7 @@ object RadialSlider {
     var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.undefined
     
     /** Specifies the  strokeWidth for customize the needle, outer circle and inner circle.
-      * @Default {2}
+      * @default {2}
       */
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
@@ -219,7 +219,7 @@ object RadialSlider {
     var ticks: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the value of radial slider
-      * @Default {10}
+      * @default {10}
       */
     var value: js.UndefOr[Double] = js.undefined
   }

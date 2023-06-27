@@ -187,6 +187,7 @@ import typings.std.stdStrings.ruby
 import typings.std.stdStrings.s
 import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
+import typings.std.stdStrings.search
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
 import typings.std.stdStrings.semantics
@@ -242,22 +243,37 @@ trait ParentNode
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/append)
     */
   /* standard dom */
   def append(nodes: (Node | java.lang.String)*): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/childElementCount) */
   /* standard dom */
   val childElementCount: Double = js.native
   
-  /** Returns the child elements. */
+  /**
+    * Returns the child elements.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/children)
+    */
   /* standard dom */
   val children: HTMLCollection = js.native
   
-  /** Returns the first child that is an element, and null otherwise. */
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/firstElementChild)
+    */
   /* standard dom */
   val firstElementChild: Element | Null = js.native
   
-  /** Returns the last child that is an element, and null otherwise. */
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lastElementChild)
+    */
   /* standard dom */
   val lastElementChild: Element | Null = js.native
   
@@ -265,6 +281,8 @@ trait ParentNode
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/prepend)
     */
   /* standard dom */
   def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
@@ -274,7 +292,11 @@ trait ParentNode
   
   /* standard dom */
   def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
-  /** Returns all element descendants of node that match selectors. */
+  /**
+    * Returns all element descendants of node that match selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
+    */
   /* standard dom */
   @JSName("querySelectorAll")
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
@@ -652,6 +674,8 @@ trait ParentNode
   @JSName("querySelectorAll")
   def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_search(selectors: search): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
@@ -738,7 +762,11 @@ trait ParentNode
   @JSName("querySelectorAll")
   def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
-  /** Returns the first element that is a descendant of node that matches selectors. */
+  /**
+    * Returns the first element that is a descendant of node that matches selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelector)
+    */
   /* standard dom */
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
@@ -1116,6 +1144,8 @@ trait ParentNode
   @JSName("querySelector")
   def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_search(selectors: search): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_section(selectors: section): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
@@ -1206,6 +1236,8 @@ trait ParentNode
     * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/replaceChildren)
     */
   /* standard dom */
   def replaceChildren(nodes: (Node | java.lang.String)*): Unit = js.native

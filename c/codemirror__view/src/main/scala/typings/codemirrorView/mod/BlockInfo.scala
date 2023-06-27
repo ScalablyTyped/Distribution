@@ -47,5 +47,17 @@ open class BlockInfo () extends StObject {
     The type of element this is. When querying lines, this may be
     an array of all the blocks that make up the line.
     */
-  val `type`: BlockType | js.Array[BlockInfo] = js.native
+  def `type`: BlockType | js.Array[BlockInfo] = js.native
+  
+  /**
+    If this is a widget block, this will return the widget
+    associated with it.
+    */
+  def widget: WidgetType | Null = js.native
+  
+  /**
+    If this is a textblock, this holds the number of line breaks
+    that appear in widgets inside the block.
+    */
+  def widgetLineBreaks: Double = js.native
 }

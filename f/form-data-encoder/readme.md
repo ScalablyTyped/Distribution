@@ -1,7 +1,7 @@
 
 # Scala.js typings for form-data-encoder
 
-Typings are for version 2.1.4
+Typings are for version 3.0.0
 
 ## Library description:
 Encode FormData content into the multipart/form-data format

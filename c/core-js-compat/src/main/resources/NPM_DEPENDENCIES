@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "core-js-compat" : "3.31.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "core-js-compat" : "3.31.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

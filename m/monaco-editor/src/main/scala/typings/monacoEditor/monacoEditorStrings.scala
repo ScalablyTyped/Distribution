@@ -45,6 +45,10 @@ object monacoEditorStrings {
   inline def afterDrop: afterDrop = "afterDrop".asInstanceOf[afterDrop]
   
   @js.native
+  sealed trait afterPaste extends StObject
+  inline def afterPaste: afterPaste = "afterPaste".asInstanceOf[afterPaste]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   

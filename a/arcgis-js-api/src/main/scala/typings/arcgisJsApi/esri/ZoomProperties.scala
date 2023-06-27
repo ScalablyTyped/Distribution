@@ -13,33 +13,35 @@ trait ZoomProperties
      with WidgetProperties {
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Zoom#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines the layout/orientation of the Zoom widget.
-    *
-    * @default vertical
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
-    */
+  		 * Determines the layout/orientation of the Zoom widget.
+  		 *
+  		 * @default vertical
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
+  		 */
   var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[ZoomViewModelProperties] = js.undefined
 }
 object ZoomProperties {

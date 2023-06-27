@@ -55,7 +55,7 @@ trait StandardControl
   
   /**
     * Returns a dictionary of the output properties of the control.
-    * @returns: A dictionary for the output parameters from the control.
+    * @returns A dictionary for the output parameters from the control.
     *    For a PCF control this is of the pattern <controlname>.fieldControl.<outputname>, e.g. telephone1.fieldControl.isValid
     */
   def getOutputs(): StringDictionary[FieldControlOutput] = js.native

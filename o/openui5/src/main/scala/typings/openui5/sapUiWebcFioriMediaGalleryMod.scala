@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -9,6 +8,7 @@ import typings.openui5.sapUiWebcFioriLibraryMod.IMediaGalleryItem
 import typings.openui5.sapUiWebcFioriLibraryMod.MediaGalleryLayout
 import typings.openui5.sapUiWebcFioriLibraryMod.MediaGalleryMenuHorizontalAlign
 import typings.openui5.sapUiWebcFioriLibraryMod.MediaGalleryMenuVerticalAlign
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -153,13 +153,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDisplayAreaClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -186,7 +186,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDisplayAreaClick(
       /**
@@ -197,7 +197,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -218,13 +218,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOverflowClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -249,7 +249,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOverflowClick(
       /**
@@ -260,7 +260,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -282,13 +282,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -314,7 +314,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -325,7 +325,7 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.MediaGallery` itself
       */
@@ -351,13 +351,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDisplayAreaClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -376,13 +376,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOverflowClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -401,13 +401,13 @@ object sapUiWebcFioriMediaGalleryMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MediaGallerySelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -415,7 +415,7 @@ object sapUiWebcFioriMediaGalleryMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:displayAreaClick displayAreaClick} to attached listeners.
       *
@@ -428,7 +428,7 @@ object sapUiWebcFioriMediaGalleryMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:overflowClick overflowClick} to attached listeners.
       *
@@ -441,17 +441,19 @@ object sapUiWebcFioriMediaGalleryMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: MediaGallery$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getInteractiveDisplayArea interactiveDisplayArea}.
@@ -717,6 +719,45 @@ object sapUiWebcFioriMediaGalleryMod {
     bShowAllThumbnails: Boolean): this.type = js.native
   }
   
+  trait MediaGallery$DisplayAreaClickEventParameters extends StObject
+  
+  trait MediaGallery$OverflowClickEventParameters extends StObject
+  
+  trait MediaGallery$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * the selected item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object MediaGallery$SelectionChangeEventParameters {
+    
+    inline def apply(): MediaGallery$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MediaGallery$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaGallery$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type MediaGalleryDisplayAreaClickEvent = typings.openui5.sapUiBaseEventMod.default[MediaGallery$DisplayAreaClickEventParameters]
+  
+  type MediaGalleryDisplayAreaClickEventParameters = MediaGallery$DisplayAreaClickEventParameters
+  
+  type MediaGalleryOverflowClickEvent = typings.openui5.sapUiBaseEventMod.default[MediaGallery$OverflowClickEventParameters]
+  
+  type MediaGalleryOverflowClickEventParameters = MediaGallery$OverflowClickEventParameters
+  
+  type MediaGallerySelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[MediaGallery$SelectionChangeEventParameters]
+  
+  type MediaGallerySelectionChangeEventParameters = MediaGallery$SelectionChangeEventParameters
+  
   trait MediaGallerySettings
     extends StObject
        with ControlSettings {
@@ -725,7 +766,9 @@ object sapUiWebcFioriMediaGalleryMod {
       * Fired when the display area is clicked.
       *  The display area is the central area that contains the enlarged content of the currently selected item.
       */
-    var displayAreaClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var displayAreaClick: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If enabled, a `display-area-click` event is fired when the user clicks or taps on the display area.
@@ -787,12 +830,19 @@ object sapUiWebcFioriMediaGalleryMod {
     /**
       * Fired when the thumbnails overflow button is clicked.
       */
-    var overflowClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var overflowClick: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when selection is changed by user interaction.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MediaGallery$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to `true`, all thumbnails are rendered in a scrollable container. If `false`, only up to five
@@ -812,7 +862,7 @@ object sapUiWebcFioriMediaGalleryMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MediaGallerySettings] (val x: Self) extends AnyVal {
       
-      inline def setDisplayAreaClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "displayAreaClick", js.Any.fromFunction1(value))
+      inline def setDisplayAreaClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "displayAreaClick", js.Any.fromFunction1(value))
       
       inline def setDisplayAreaClickUndefined: Self = StObject.set(x, "displayAreaClick", js.undefined)
       
@@ -846,11 +896,13 @@ object sapUiWebcFioriMediaGalleryMod {
       
       inline def setMenuVerticalAlignUndefined: Self = StObject.set(x, "menuVerticalAlign", js.undefined)
       
-      inline def setOverflowClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "overflowClick", js.Any.fromFunction1(value))
+      inline def setOverflowClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "overflowClick", js.Any.fromFunction1(value))
       
       inline def setOverflowClickUndefined: Self = StObject.set(x, "overflowClick", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MediaGallery$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

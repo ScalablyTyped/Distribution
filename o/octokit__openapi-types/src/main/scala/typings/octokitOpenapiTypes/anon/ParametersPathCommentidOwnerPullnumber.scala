@@ -10,14 +10,14 @@ trait ParametersPathCommentidOwnerPullnumber extends StObject {
   
   var requestBody: ContentApplicationjsonBody
   
-  var responses: `201ContentApplicationjsonInreplytoidHeadersLocation404Content36`
+  var responses: `201ContentApplicationjsonInreplytoidHeadersLocation404Content41`
 }
 object ParametersPathCommentidOwnerPullnumber {
   
   inline def apply(
     parameters: PathCommentidOwnerPullnumber,
     requestBody: ContentApplicationjsonBody,
-    responses: `201ContentApplicationjsonInreplytoidHeadersLocation404Content36`
+    responses: `201ContentApplicationjsonInreplytoidHeadersLocation404Content41`
   ): ParametersPathCommentidOwnerPullnumber = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathCommentidOwnerPullnumber]
@@ -30,6 +30,6 @@ object ParametersPathCommentidOwnerPullnumber {
     
     inline def setRequestBody(value: ContentApplicationjsonBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201ContentApplicationjsonInreplytoidHeadersLocation404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201ContentApplicationjsonInreplytoidHeadersLocation404Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

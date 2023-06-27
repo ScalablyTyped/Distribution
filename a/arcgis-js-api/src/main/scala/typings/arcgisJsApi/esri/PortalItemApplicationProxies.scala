@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalItemApplicationProxies extends StObject {
   
   /**
-    * The proxy ID registered in ArcGIS Online or ArcGIS Enterprise Portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
-    */
+  		 * The proxy ID registered in ArcGIS Online or ArcGIS Enterprise Portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
+  		 */
   var proxyId: String
   
   /**
-    * The proxy URL for the source URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
-    */
+  		 * The proxy URL for the source URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
+  		 */
   var proxyUrl: String
   
   /**
-    * The URL of the premium map service layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
-    */
+  		 * The URL of the premium map service layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#applicationProxies)
+  		 */
   var sourceUrl: String
 }
 object PortalItemApplicationProxies {

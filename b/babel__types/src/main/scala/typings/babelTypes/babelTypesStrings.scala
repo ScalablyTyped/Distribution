@@ -2267,6 +2267,10 @@ object babelTypesStrings {
   inline def array: array = "array".asInstanceOf[array]
   
   @js.native
+  sealed trait `await using` extends StObject
+  inline def `await using`: `await using` = ("await using").asInstanceOf[`await using`]
+  
+  @js.native
   sealed trait bigint extends StObject
   inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   

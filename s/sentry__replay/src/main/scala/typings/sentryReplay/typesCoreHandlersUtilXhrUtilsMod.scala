@@ -3,7 +3,7 @@ package typings.sentryReplay
 import typings.sentryReplay.anon.BreadcrumbdataXhrBreadcru
 import typings.sentryReplay.anon.ReplayNetworkOptionsrepla
 import typings.sentryReplay.anon.TextEncoder
-import typings.sentryReplay.typesTypesMod.XhrHint
+import typings.sentryReplay.typesTypesReplayMod.XhrHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,8 +13,8 @@ trait MediaControllerPlaylist extends StObject {
     * @param index Index for new item, should be unique within playlist.
     * @param metadata Metadata to be associated with new item.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addItem(index: String, metadata: MediaControllerMetadataInit): Unit = js.native
   
@@ -31,8 +31,8 @@ trait MediaControllerPlaylist extends StObject {
     * @param successCallback Function to be called when _getItems_ is finished without error.
     * @param errorCallback Function to be called when _getItems_ fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getItems(successCallback: MediaControllerGetItemsSuccessCallback): Unit = js.native
   def getItems(successCallback: MediaControllerGetItemsSuccessCallback, errorCallback: ErrorCallback): Unit = js.native

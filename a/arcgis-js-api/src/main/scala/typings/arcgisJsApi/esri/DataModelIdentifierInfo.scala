@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataModelIdentifierInfo extends StObject {
   
   /**
-    * Information on how the unique identifier is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Information on how the unique identifier is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var identifierGenerationInfo: Any
   
   /**
-    * Information on the type and format of the universally unique identifier
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Information on the type and format of the universally unique identifier
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var identifierMappingInfo: DataModelIdentifierInfoIdentifierMappingInfo
   
   /**
-    * Information on the format of the unique identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * Information on the format of the unique identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var uuidMethodHint: esriUUIDESRI | UUID_RFC_4122
 }
 object DataModelIdentifierInfo {

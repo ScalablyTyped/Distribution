@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** EventTarget is a DOM interface implemented by objects that can receive events and may have listeners for them. */
+/**
+  * EventTarget is a DOM interface implemented by objects that can receive events and may have listeners for them.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget)
+  */
 @js.native
 trait EventTarget extends StObject {
   
@@ -22,6 +26,8 @@ trait EventTarget extends StObject {
     * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
     *
     * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
     */
   /* standard dom */
   def addEventListener(`type`: java.lang.String): Unit = js.native
@@ -35,11 +41,19 @@ trait EventTarget extends StObject {
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+  /**
+    * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+    */
   /* standard dom */
   def dispatchEvent(event: Event): scala.Boolean = js.native
   
-  /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+  /**
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+    */
   /* standard dom */
   def removeEventListener(`type`: java.lang.String): Unit = js.native
   def removeEventListener(`type`: java.lang.String, callback: Null, options: scala.Boolean): Unit = js.native

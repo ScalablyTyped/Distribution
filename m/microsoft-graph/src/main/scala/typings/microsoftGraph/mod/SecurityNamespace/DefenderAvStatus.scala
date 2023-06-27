@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.SecurityNamespace
 
+import typings.microsoftGraph.microsoftGraphStrings.disabled_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.notReporting
-  - typings.microsoftGraph.microsoftGraphStrings.disabled
+  - typings.microsoftGraph.microsoftGraphStrings.disabled_
   - typings.microsoftGraph.microsoftGraphStrings.notUpdated
   - typings.microsoftGraph.microsoftGraphStrings.updated
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefenderAvStatus extends StObject
 object DefenderAvStatus {
   
-  inline def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  inline def disabled: disabled_ = "disabled".asInstanceOf[disabled_]
   
   inline def notReporting: typings.microsoftGraph.microsoftGraphStrings.notReporting = "notReporting".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notReporting]
   

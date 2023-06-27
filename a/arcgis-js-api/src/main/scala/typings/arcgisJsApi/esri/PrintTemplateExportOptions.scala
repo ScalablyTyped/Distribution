@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintTemplateExportOptions extends StObject {
   
   /**
-    * Resolution in dots per inch.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
-    */
+  		 * Resolution in dots per inch.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
+  		 */
   var dpi: js.UndefOr[Double] = js.undefined
   
   /**
-    * Map height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
-    */
+  		 * Map height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * Map width.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
-    */
+  		 * Map width.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object PrintTemplateExportOptions {

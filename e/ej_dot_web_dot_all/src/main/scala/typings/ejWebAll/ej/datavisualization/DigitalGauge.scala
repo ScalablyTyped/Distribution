@@ -269,17 +269,17 @@ object DigitalGauge {
     var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
-      * @Default {DigitalGauge}
+      * @default {DigitalGauge}
       */
     var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
-      * @Default {client}
+      * @default {client}
       */
     var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
-      * @Default {png}
+      * @default {png}
       */
     var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
@@ -314,17 +314,17 @@ object DigitalGauge {
   trait Frame extends StObject {
     
     /** Specifies the URL of an image to be displayed as background of the Digital gauge.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the inner width for the frame, when the background image has been set for the Digital gauge..
-      * @Default {6}
+      * @default {6}
       */
     var innerWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the outer width of the frame, when the background image has been set for the Digital gauge.
-      * @Default {10}
+      * @default {10}
       */
     var outerWidth: js.UndefOr[Double] = js.undefined
   }
@@ -417,62 +417,62 @@ object DigitalGauge {
   trait Item extends StObject {
     
     /** Specifies the Character settings for the DigitalGauge.
-      * @Default {null}
+      * @default {null}
       */
     var characterSettings: js.UndefOr[ItemsCharacterSettings] = js.undefined
     
     /** Enable/Disable the custom font to be applied to the text in the gauge.
-      * @Default {false}
+      * @default {false}
       */
     var enableCustomFont: js.UndefOr[Boolean] = js.undefined
     
     /** Set the specific font for the text, when the enableCustomFont is set to true
-      * @Default {null}
+      * @default {null}
       */
     var font: js.UndefOr[ItemsFont] = js.undefined
     
     /** Set the location for the text, where it needs to be placed within the gauge.
-      * @Default {null}
+      * @default {null}
       */
     var position: js.UndefOr[ItemsPosition] = js.undefined
     
     /** Set the segment settings for the digital gauge.
-      * @Default {null}
+      * @default {null}
       */
     var segmentSettings: js.UndefOr[ItemsSegmentSettings] = js.undefined
     
     /** Set the value for enabling/disabling the blurring effect for the shadows of the text
-      * @Default {0}
+      * @default {0}
       */
     var shadowBlur: js.UndefOr[Double] = js.undefined
     
     /** Specifies the color of the text shadow.
-      * @Default {null}
+      * @default {null}
       */
     var shadowColor: js.UndefOr[String] = js.undefined
     
     /** Set the x offset value for the shadow of the text, indicating the location where it needs to be displayed.
-      * @Default {1}
+      * @default {1}
       */
     var shadowOffsetX: js.UndefOr[Double] = js.undefined
     
     /** Set the y offset value for the shadow of the text, indicating the location where it needs to be displayed.
-      * @Default {1}
+      * @default {1}
       */
     var shadowOffsetY: js.UndefOr[Double] = js.undefined
     
     /** Set the alignment of the text that is displayed within the gauge.See TextAlign
-      * @Default {left}
+      * @default {left}
       */
     var textAlign: js.UndefOr[String] = js.undefined
     
     /** Specifies the color of the text.
-      * @Default {null}
+      * @default {null}
       */
     var textColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the text value.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
   }
@@ -601,22 +601,22 @@ object DigitalGauge {
   trait ItemsCharacterSettings extends StObject {
     
     /** Specifies the CharacterCount value for the DigitalGauge.
-      * @Default {4}
+      * @default {4}
       */
     var count: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity value for the DigitalGauge.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the value for spacing between the characters
-      * @Default {2}
+      * @default {2}
       */
     var spacing: js.UndefOr[Double] = js.undefined
     
     /** Specifies the character type for the text to be displayed.
-      * @Default {ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix}
+      * @default {ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix}
       */
     var `type`: js.UndefOr[CharacterType | String] = js.undefined
   }
@@ -651,17 +651,17 @@ object DigitalGauge {
   trait ItemsFont extends StObject {
     
     /** Set the font family value
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Set the font style for the font
-      * @Default {italic}
+      * @default {italic}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Set the font size value
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -692,12 +692,12 @@ object DigitalGauge {
   trait ItemsPosition extends StObject {
     
     /** Set the horizontal location for the text, where it needs to be placed within the gauge.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Set the vertical location for the text, where it needs to be placed within the gauge.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -724,32 +724,32 @@ object DigitalGauge {
   trait ItemsSegmentSettings extends StObject {
     
     /** Set the color for the text segments.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Set the gradient for the text segments.
-      * @Default {null}
+      * @default {null}
       */
     var gradient: js.UndefOr[Any] = js.undefined
     
     /** Set the length for the text segments.
-      * @Default {2}
+      * @default {2}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Set the opacity for the text segments.
-      * @Default {0}
+      * @default {0}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Set the spacing for the text segments.
-      * @Default {1}
+      * @default {1}
       */
     var spacing: js.UndefOr[Double] = js.undefined
     
     /** Set the width for the text segments.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -862,7 +862,7 @@ object DigitalGauge {
     var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the responsiveness of the Digital gauge
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
@@ -871,12 +871,12 @@ object DigitalGauge {
     var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specifies the frame of the Digital gauge.
-      * @Default {{backgroundImageUrl: null, innerWidth: 6, outerWidth: 10}}
+      * @default {{backgroundImageUrl: null, innerWidth: 6, outerWidth: 10}}
       */
     var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specifies the height of the DigitalGauge.
-      * @Default {150}
+      * @default {150}
       */
     var height: js.UndefOr[Double] = js.undefined
     
@@ -885,7 +885,7 @@ object DigitalGauge {
     var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.undefined
     
     /** Specifies the resize option of the DigitalGauge.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -894,7 +894,7 @@ object DigitalGauge {
     var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the items for the DigitalGauge.
-      * @Default {null}
+      * @default {null}
       */
     var items: js.UndefOr[js.Array[Item]] = js.undefined
     
@@ -919,17 +919,17 @@ object DigitalGauge {
     var segmentData: js.UndefOr[Any] = js.undefined
     
     /** Specifies the themes for the Digital gauge. See Themes
-      * @Default {flatlight}
+      * @default {flatlight}
       */
     var themes: js.UndefOr[String] = js.undefined
     
     /** Specifies the value to the DigitalGauge.
-      * @Default {text}
+      * @default {text}
       */
     var value: js.UndefOr[String] = js.undefined
     
     /** Specifies the width for the Digital gauge.
-      * @Default {400}
+      * @default {400}
       */
     var width: js.UndefOr[Double] = js.undefined
   }

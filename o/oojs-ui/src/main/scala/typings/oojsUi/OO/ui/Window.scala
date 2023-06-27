@@ -347,7 +347,7 @@ object Window {
       * methods of OO.ui.Process.
       *
       * @param data Window opening data
-      * @return} Ready process
+      * @return Ready process
       */
     def getReadyProcess(): Process = js.native
     def getReadyProcess(data: Any): Process = js.native

@@ -22,11 +22,11 @@ trait DeleteParametersQueryKeyRef extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     * GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
-  var get: ParametersQueryRef
+  var get: Parameters170
 }
 object DeleteParametersQueryKeyRef {
   
-  inline def apply(delete: ParametersQueryKeyRef, get: ParametersQueryRef): DeleteParametersQueryKeyRef = {
+  inline def apply(delete: ParametersQueryKeyRef, get: Parameters170): DeleteParametersQueryKeyRef = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersQueryKeyRef]
   }
@@ -36,6 +36,6 @@ object DeleteParametersQueryKeyRef {
     
     inline def setDelete(value: ParametersQueryKeyRef): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersQueryRef): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Parameters170): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

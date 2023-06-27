@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Attribution")
 @js.native
 /**
-  * The Attribution widget displays attribution text for the layers in a map.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
-  */
+		 * The Attribution widget displays attribution text for the layers in a map.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
+		 */
 open class Attribution ()
   extends StObject
      with typings.arcgisJsApi.esri.Attribution {

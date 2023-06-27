@@ -11,24 +11,24 @@ sealed trait ExpressionReturnType extends StObject
 object ExpressionReturnType extends StObject {
   
   /**
-    * The return type of the expression is determined by the consumer using the expression.
-    */
+  			 * The return type of the expression is determined by the consumer using the expression.
+  			 */
   @js.native
   sealed trait Default
     extends StObject
        with ExpressionReturnType
   
   /**
-    * The return type of the expression is treated as a numeric value by all consumers.
-    */
+  			 * The return type of the expression is treated as a numeric value by all consumers.
+  			 */
   @js.native
   sealed trait Numeric
     extends StObject
        with ExpressionReturnType
   
   /**
-    * The return type of the expression is treated as a string by all consumers.
-    */
+  			 * The return type of the expression is treated as a string by all consumers.
+  			 */
   @js.native
   sealed trait String
     extends StObject

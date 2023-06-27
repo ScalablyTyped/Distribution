@@ -25,7 +25,7 @@ object anon {
       */
     var svgstr: String
     
-    var unrender: js.UndefOr[js.Function1[/* container */ HTMLElement, Unit]] = js.undefined
+    var unrender: js.UndefOr[js.Function2[/* container */ HTMLElement, /* options */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IIconPartialIRenderer {
     
@@ -45,7 +45,7 @@ object anon {
       
       inline def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
       
-      inline def setUnrender(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction1(value))
+      inline def setUnrender(value: (/* container */ HTMLElement, /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction2(value))
       
       inline def setUnrenderUndefined: Self = StObject.set(x, "unrender", js.undefined)
     }

@@ -4,15 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods. */
+/**
+  * Part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo)
+  */
 trait WebGLActiveInfo extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/name) */
   /* standard dom */
   val name: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/size) */
   /* standard dom */
   val size: GLint
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLActiveInfo/type) */
   /* standard dom */
   val `type`: GLenum
 }

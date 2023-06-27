@@ -2,6 +2,7 @@ package typings.esbuildWasm.anon
 
 import typings.esbuildWasm.libBrowserMod.BuildOptions
 import typings.esbuildWasm.libBrowserMod.BuildResult
+import typings.esbuildWasm.libBrowserMod.SameShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn0 extends StObject {
   
-  def apply(options: BuildOptions): BuildResult[BuildOptions] = js.native
-  def apply[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): BuildResult[SpecificOptions] = js.native
+  def apply[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): BuildResult[T] = js.native
 }

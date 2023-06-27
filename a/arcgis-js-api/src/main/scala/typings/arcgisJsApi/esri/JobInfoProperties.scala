@@ -18,40 +18,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobInfoProperties extends StObject {
   
   /**
-    * The unique job ID assigned by ArcGIS Server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobId)
-    */
+  		 * The unique job ID assigned by ArcGIS Server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobId)
+  		 */
   var jobId: js.UndefOr[String] = js.undefined
   
   /**
-    * The job status.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobStatus)
-    */
+  		 * The job status.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobStatus)
+  		 */
   var jobStatus: js.UndefOr[
     `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting`
   ] = js.undefined
   
   /**
-    * An array of messages that include the message type and a description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#messages)
-    */
+  		 * An array of messages that include the message type and a description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#messages)
+  		 */
   var messages: js.UndefOr[js.Array[GPMessageProperties]] = js.undefined
   
   /**
-    * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#requestOptions)
-    */
+  		 * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#requestOptions)
+  		 */
   var requestOptions: js.UndefOr[Any] = js.undefined
   
   /**
-    * ArcGIS Server Rest API endpoint to the resource that receives the geoprocessing request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#sourceUrl)
-    */
+  		 * ArcGIS Server Rest API endpoint to the resource that receives the geoprocessing request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#sourceUrl)
+  		 */
   var sourceUrl: js.UndefOr[String] = js.undefined
 }
 object JobInfoProperties {

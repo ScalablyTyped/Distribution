@@ -22,10 +22,10 @@ trait MappedDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addValue(reqId: Double, key: String, value: String): Unit = js.native
   def addValue(
@@ -63,11 +63,11 @@ trait MappedDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type NotFoundError, if the key cannot be found.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type NotFoundError, if the key cannot be found.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getValue(reqId: Double, key: String, successCallback: DataControlGetValueSuccessCallback): Unit = js.native
   def getValue(
@@ -90,11 +90,11 @@ trait MappedDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type NotFoundError, if the key cannot be found.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type NotFoundError, if the key cannot be found.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def removeValue(reqId: Double, key: String, value: String, successCallback: DataControlSuccessCallback): Unit = js.native
   def removeValue(
@@ -119,11 +119,11 @@ trait MappedDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type NotFoundError, if the key cannot be found.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type NotFoundError, if the key cannot be found.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updateValue(
     reqId: Double,

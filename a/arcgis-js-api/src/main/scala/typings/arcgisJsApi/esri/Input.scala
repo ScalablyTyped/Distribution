@@ -10,9 +10,9 @@ trait Input
      with Accessor {
   
   /**
-    * Gamepad input specific configuration settings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html#gamepad)
-    */
+  		 * Gamepad input specific configuration settings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html#gamepad)
+  		 */
   val gamepad: GamepadSettings = js.native
 }

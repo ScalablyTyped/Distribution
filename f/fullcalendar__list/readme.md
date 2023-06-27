@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar__list
 
-Typings are for version 6.1.7
+Typings are for version 6.1.8
 
 ## Library description:
 Display events on a calendar view that looks like a bulleted list

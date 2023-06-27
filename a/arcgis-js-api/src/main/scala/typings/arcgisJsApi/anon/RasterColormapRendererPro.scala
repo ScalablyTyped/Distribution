@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterColormapRendererPro extends StObject {
   
   /**
-    * A colormap info array containing mappings for pixel and RGB color values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#colormapInfos)
-    */
+  		 * A colormap info array containing mappings for pixel and RGB color values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterColormapRenderer.html#colormapInfos)
+  		 */
   var colormapInfos: js.UndefOr[js.Array[ColormapInfoProperties]] = js.undefined
   
   var `type`: `raster-colormap`

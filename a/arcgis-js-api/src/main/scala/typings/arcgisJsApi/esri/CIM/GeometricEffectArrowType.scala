@@ -11,24 +11,24 @@ sealed trait GeometricEffectArrowType extends StObject
 object GeometricEffectArrowType extends StObject {
   
   /**
-    * A block arrow.
-    */
+  			 * A block arrow.
+  			 */
   @js.native
   sealed trait Block
     extends StObject
        with GeometricEffectArrowType
   
   /**
-    * A crossed arrow.
-    */
+  			 * A crossed arrow.
+  			 */
   @js.native
   sealed trait Crossed
     extends StObject
        with GeometricEffectArrowType
   
   /**
-    * An open ended arrow.
-    */
+  			 * An open ended arrow.
+  			 */
   @js.native
   sealed trait OpenEnded
     extends StObject

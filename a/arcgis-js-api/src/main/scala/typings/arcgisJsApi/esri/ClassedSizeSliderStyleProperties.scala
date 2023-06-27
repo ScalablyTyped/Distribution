@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassedSizeSliderStyleProperties extends StObject {
   
   /**
-    * The background color of the slider's track.
-    *
-    * @default new Color([224, 224, 224])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
-    */
+  		 * The background color of the slider's track.
+  		 *
+  		 * @default new Color([224, 224, 224])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
+  		 */
   var trackBackgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The color of the slider's track.
-    *
-    * @default new Color([149, 149, 149])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
-    */
+  		 * The color of the slider's track.
+  		 *
+  		 * @default new Color([149, 149, 149])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
+  		 */
   var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object ClassedSizeSliderStyleProperties {

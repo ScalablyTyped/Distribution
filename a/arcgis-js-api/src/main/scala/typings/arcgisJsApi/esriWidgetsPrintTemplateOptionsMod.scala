@@ -11,10 +11,10 @@ object esriWidgetsPrintTemplateOptionsMod {
   @JSImport("esri/widgets/Print/TemplateOptions", JSImport.Namespace)
   @js.native
   /**
-    * Defines the layout template options used by the [Print](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) widget to generate the print page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html)
-    */
+  		 * Defines the layout template options used by the [Print](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html) widget to generate the print page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html)
+  		 */
   open class ^ ()
     extends StObject
        with TemplateOptions {

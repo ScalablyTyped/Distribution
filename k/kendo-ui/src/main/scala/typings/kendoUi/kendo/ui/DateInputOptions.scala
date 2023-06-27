@@ -8,7 +8,15 @@ trait DateInputOptions
   extends StObject
      with AllEditorOptions {
   
+  var autoCorrectParts: js.UndefOr[Boolean] = js.undefined
+  
+  var autoSwitchKeys: js.UndefOr[Any] = js.undefined
+  
+  var autoSwitchParts: js.UndefOr[Boolean] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ DateInputChangeEvent, Unit]] = js.undefined
+  
+  var enableMouseWheel: js.UndefOr[Boolean] = js.undefined
   
   var fillMode: js.UndefOr[String] = js.undefined
   
@@ -28,6 +36,8 @@ trait DateInputOptions
   
   var size: js.UndefOr[String] = js.undefined
   
+  var steps: js.UndefOr[DateInputSteps] = js.undefined
+  
   var value: js.UndefOr[js.Date] = js.undefined
 }
 object DateInputOptions {
@@ -40,9 +50,25 @@ object DateInputOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: DateInputOptions] (val x: Self) extends AnyVal {
     
+    inline def setAutoCorrectParts(value: Boolean): Self = StObject.set(x, "autoCorrectParts", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCorrectPartsUndefined: Self = StObject.set(x, "autoCorrectParts", js.undefined)
+    
+    inline def setAutoSwitchKeys(value: Any): Self = StObject.set(x, "autoSwitchKeys", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSwitchKeysUndefined: Self = StObject.set(x, "autoSwitchKeys", js.undefined)
+    
+    inline def setAutoSwitchParts(value: Boolean): Self = StObject.set(x, "autoSwitchParts", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSwitchPartsUndefined: Self = StObject.set(x, "autoSwitchParts", js.undefined)
+    
     inline def setChange(value: /* e */ DateInputChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setEnableMouseWheel(value: Boolean): Self = StObject.set(x, "enableMouseWheel", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMouseWheelUndefined: Self = StObject.set(x, "enableMouseWheel", js.undefined)
     
     inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
     
@@ -79,6 +105,10 @@ object DateInputOptions {
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSteps(value: DateInputSteps): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ trait Vulnerablefunctions extends StObject {
   
   /** @description The name of the package affected by the vulnerability. */
   @JSName("package")
-  var _package: `443` | Null
+  var _package: `521` | Null
   
   /** @description The package version(s) that resolve the vulnerability. */
   var patched_versions: String | Null
@@ -44,7 +44,7 @@ object Vulnerablefunctions {
     
     inline def setVulnerable_version_rangeNull: Self = StObject.set(x, "vulnerable_version_range", null)
     
-    inline def set_package(value: `443`): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: `521`): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
     inline def set_packageNull: Self = StObject.set(x, "package", null)
   }

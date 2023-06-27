@@ -55,14 +55,14 @@ object sapBaseUtilVersionMod {
       *
       * The parts of the version number (major, minor, patch, suffix) can be provided in several ways:
       * 	 - Version("1.2.3-SNAPSHOT") - as a dot-separated string. Any non-numerical char or a dot followed by
-      * 			a non-numerical char starts the suffix portion. Any missing major, minor or patch versions will be set
-      * 			to 0.
+      *     a non-numerical char starts the suffix portion. Any missing major, minor or patch versions will be set
+      *     to 0.
       * 	 - Version(1,2,3,"-SNAPSHOT") - as individual parameters. Major, minor and patch must be integer numbers
-      * 			or empty, suffix must be a string not starting with digits.
+      *     or empty, suffix must be a string not starting with digits.
       * 	 - Version([1,2,3,"-SNAPSHOT"]) - as an array with the individual parts. The same type restrictions
-      * 			apply as before.
+      *     apply as before.
       * 	 - Version(otherVersion) - as a Version instance (cast operation). Returns the given instance instead
-      * 			of creating a new one.
+      *     of creating a new one.
       *
       * To keep the code size small, this implementation mainly validates the single string variant. All other
       * variants are only validated to some degree. It is the responsibility of the caller to provide proper

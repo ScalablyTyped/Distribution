@@ -1,8 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Column
-import typings.openui5.anon.Layout
-import typings.openui5.anon.`0`
+import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.NavigationDirection
 import typings.openui5.sapFLibraryMod.dnd.IGridDroppable
@@ -27,9 +25,9 @@ object sapFGridContainerMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:cca5ee5d63ca44c89318f8496a58f9f2 Grid Container}
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
-    * 	{@link topic:5b46b03f024542ba802d99d67bc1a3f4 Cards}
+    * 	{@link https://ui5.sap.com/#/topic/cca5ee5d63ca44c89318f8496a58f9f2 Grid Container}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/5b46b03f024542ba802d99d67bc1a3f4 Cards}
     * 	{@link sap.f.dnd.GridDropInfo}
     */
   open class default () extends GridContainer {
@@ -196,13 +194,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit]
     ): this.type = js.native
     def attachBorderReached(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -227,7 +225,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit]
     ): this.type = js.native
     def attachBorderReached(
       /**
@@ -238,7 +236,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -259,13 +257,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit]
     ): this.type = js.native
     def attachColumnsChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -290,7 +288,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit]
     ): this.type = js.native
     def attachColumnsChange(
       /**
@@ -301,7 +299,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -322,13 +320,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -353,7 +351,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
@@ -364,7 +362,7 @@ object sapFGridContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridContainer` itself
       */
@@ -414,7 +412,7 @@ object sapFGridContainerMod {
     def destroyLayoutXL(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Destroys the layoutXS in the aggregation {@link #getLayoutXS layoutXS}.
@@ -435,13 +433,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit]
     ): this.type = js.native
     def detachBorderReached(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerBorderReachedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -460,13 +458,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit]
     ): this.type = js.native
     def detachColumnsChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerColumnsChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -484,13 +482,13 @@ object sapFGridContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit]
     ): this.type = js.native
     def detachLayoutChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridContainerLayoutChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -498,46 +496,52 @@ object sapFGridContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:borderReached borderReached} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBorderReached(): this.type = js.native
-    def fireBorderReached(/**
+    def fireBorderReached(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Column): this.type = js.native
+    mParameters: GridContainer$BorderReachedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:columnsChange columnsChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireColumnsChange(): this.type = js.native
-    def fireColumnsChange(/**
+    def fireColumnsChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `0`): this.type = js.native
+    mParameters: GridContainer$ColumnsChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLayoutChange(): this.type = js.native
-    def fireLayoutChange(/**
+    def fireLayoutChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Layout): this.type = js.native
+    mParameters: GridContainer$LayoutChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81) - Behavior might change.
+      * @experimental (since 1.81) - Behavior might change.
       *
       * Focuses the item on the given index. Should be called after successful drop operation.
       *
@@ -563,7 +567,7 @@ object sapFGridContainerMod {
     iColumn: int
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.85) - Behavior might change.
+      * @experimental (since 1.85) - Behavior might change.
       *
       * Focuses an item in the given direction - up, down, left or right, from the starting position specified
       * by row and column.
@@ -599,7 +603,7 @@ object sapFGridContainerMod {
     def getActiveLayoutSettings(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getAllowDenseFill allowDenseFill}.
@@ -616,14 +620,12 @@ object sapFGridContainerMod {
     def getAllowDenseFill(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -640,7 +642,7 @@ object sapFGridContainerMod {
     def getContainerQuery(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getInlineBlockLayout inlineBlockLayout}.
@@ -706,7 +708,7 @@ object sapFGridContainerMod {
     def getLayoutXL(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets content of aggregation {@link #getLayoutXS layoutXS}.
@@ -716,7 +718,7 @@ object sapFGridContainerMod {
     def getLayoutXS(): typings.openui5.sapFGridContainerSettingsMod.default = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release.
       *
       * Gets current value of property {@link #getMinHeight minHeight}.
@@ -775,7 +777,7 @@ object sapFGridContainerMod {
       /**
       * The item to be inserted; if empty, nothing is inserted.
       */
-    oItem: typings.openui5.sapUiCoreItemMod.default,
+    oItem: typings.openui5.sapUiCoreControlMod.default,
       /**
       * The `0`-based index the item should be inserted at; for a negative value of `iIndex`, the item is inserted
       * at position 0; for a value greater than the current size of the aggregation, the item is inserted at
@@ -864,11 +866,11 @@ object sapFGridContainerMod {
       /**
       * The item to remove or its index or ID.
       */
-    vItem: typings.openui5.sapUiCoreItemMod.default
+    vItem: typings.openui5.sapUiCoreControlMod.default
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getAllowDenseFill allowDenseFill}.
@@ -909,7 +911,7 @@ object sapFGridContainerMod {
     bContainerQuery: Boolean): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getInlineBlockLayout inlineBlockLayout}.
@@ -983,7 +985,7 @@ object sapFGridContainerMod {
     oLayoutXL: typings.openui5.sapFGridContainerSettingsMod.default): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets the aggregated {@link #getLayoutXS layoutXS}.
@@ -996,7 +998,7 @@ object sapFGridContainerMod {
     oLayoutXS: typings.openui5.sapFGridContainerSettingsMod.default): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release.
       *
       * Sets a new value for property {@link #getMinHeight minHeight}.
@@ -1054,12 +1056,124 @@ object sapFGridContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait GridContainer$BorderReachedEventParameters extends StObject {
+    
+    /**
+      * The column index, from which the border is reached.
+      */
+    var column: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The navigation direction that is used to reach the border.
+      */
+    var direction: js.UndefOr[
+        NavigationDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationDirection * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * Event that leads to the focus change.
+      */
+    var event: js.UndefOr[Event] = js.undefined
+    
+    /**
+      * The row index, from which the border is reached.
+      */
+    var row: js.UndefOr[int] = js.undefined
+  }
+  object GridContainer$BorderReachedEventParameters {
+    
+    inline def apply(): GridContainer$BorderReachedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridContainer$BorderReachedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainer$BorderReachedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: int): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      
+      inline def setDirection(
+        value: NavigationDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationDirection * / any */ String)
+      ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      
+      inline def setRow(value: int): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    }
+  }
+  
+  trait GridContainer$ColumnsChangeEventParameters extends StObject {
+    
+    /**
+      * The count of the gird columns.
+      */
+    var columns: js.UndefOr[int] = js.undefined
+  }
+  object GridContainer$ColumnsChangeEventParameters {
+    
+    inline def apply(): GridContainer$ColumnsChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridContainer$ColumnsChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainer$ColumnsChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColumns(value: int): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    }
+  }
+  
+  trait GridContainer$LayoutChangeEventParameters extends StObject {
+    
+    /**
+      * The name of the newly active layout.
+      */
+    var layout: js.UndefOr[String] = js.undefined
+  }
+  object GridContainer$LayoutChangeEventParameters {
+    
+    inline def apply(): GridContainer$LayoutChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridContainer$LayoutChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainer$LayoutChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    }
+  }
+  
+  type GridContainerBorderReachedEvent = typings.openui5.sapUiBaseEventMod.default[GridContainer$BorderReachedEventParameters]
+  
+  type GridContainerBorderReachedEventParameters = GridContainer$BorderReachedEventParameters
+  
+  type GridContainerColumnsChangeEvent = typings.openui5.sapUiBaseEventMod.default[GridContainer$ColumnsChangeEventParameters]
+  
+  type GridContainerColumnsChangeEventParameters = GridContainer$ColumnsChangeEventParameters
+  
+  type GridContainerLayoutChangeEvent = typings.openui5.sapUiBaseEventMod.default[GridContainer$LayoutChangeEventParameters]
+  
+  type GridContainerLayoutChangeEventParameters = GridContainer$LayoutChangeEventParameters
+  
   trait GridContainerSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Increases the density when arranging the items. Smaller items will take up all of the available space,
@@ -1084,12 +1198,22 @@ object sapFGridContainerMod {
     /**
       * Fires if the border of the visualizations is reached so that an application can react on this.
       */
-    var borderReached: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var borderReached: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$BorderReachedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the grid columns count is changed.
       */
-    var columnsChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var columnsChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$ColumnsChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to `true` the current range (large, medium or small) is defined by the size of the container surrounding
@@ -1100,7 +1224,7 @@ object sapFGridContainerMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.66) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Makes the grid items act like an inline-block elements. They will be arranged in rows with height equal
@@ -1134,7 +1258,12 @@ object sapFGridContainerMod {
     /**
       * Fired when the currently active GridSettings change.
       */
-    var layoutChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var layoutChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$LayoutChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The sap.f.GridContainerSettings applied for size "L". Range: 1023px - 1439px.
@@ -1157,7 +1286,7 @@ object sapFGridContainerMod {
     var layoutXL: js.UndefOr[typings.openui5.sapFGridContainerSettingsMod.default] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.71) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * The sap.f.GridContainerSettings applied for size "XS". Range: up to 374px.
@@ -1165,7 +1294,7 @@ object sapFGridContainerMod {
     var layoutXS: js.UndefOr[typings.openui5.sapFGridContainerSettingsMod.default] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.81) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release.
       *
       * Defines the minimum height of the grid.
@@ -1218,11 +1347,15 @@ object sapFGridContainerMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBorderReached(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "borderReached", js.Any.fromFunction1(value))
+      inline def setBorderReached(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$BorderReachedEventParameters] => Unit
+      ): Self = StObject.set(x, "borderReached", js.Any.fromFunction1(value))
       
       inline def setBorderReachedUndefined: Self = StObject.set(x, "borderReached", js.undefined)
       
-      inline def setColumnsChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "columnsChange", js.Any.fromFunction1(value))
+      inline def setColumnsChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$ColumnsChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "columnsChange", js.Any.fromFunction1(value))
       
       inline def setColumnsChangeUndefined: Self = StObject.set(x, "columnsChange", js.undefined)
       
@@ -1244,7 +1377,9 @@ object sapFGridContainerMod {
       
       inline def setLayout(value: typings.openui5.sapFGridContainerSettingsMod.default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
+      inline def setLayoutChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridContainer$LayoutChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       
       inline def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
       

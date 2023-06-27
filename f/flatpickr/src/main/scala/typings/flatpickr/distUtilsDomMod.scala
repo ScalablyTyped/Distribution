@@ -19,11 +19,11 @@ object distUtilsDomMod {
   inline def clearNode(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def createElement[T /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
     className: String
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def createElement[T /* <: HTMLElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
     className: String,
     content: String
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], className.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[T]

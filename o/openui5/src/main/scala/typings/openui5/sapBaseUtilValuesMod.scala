@@ -10,6 +10,7 @@ object sapBaseUtilValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[Any]]
   inline def default(/**
     * Object to be extracted
     */

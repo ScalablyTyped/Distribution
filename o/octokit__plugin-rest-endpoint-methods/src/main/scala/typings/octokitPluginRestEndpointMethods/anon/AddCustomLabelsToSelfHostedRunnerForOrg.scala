@@ -203,7 +203,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
-    * #### Example encrypting a secret using Node.js
+    * **Example encrypting a secret using Node.js**
     *
     * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
@@ -228,7 +228,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * });
     * ```
     *
-    * #### Example encrypting a secret using Python
+    * **Example encrypting a secret using Python**
     *
     * Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/latest/public/#nacl-public-sealedbox) with Python 3.
     *
@@ -244,7 +244,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     *   return b64encode(encrypted).decode("utf-8")
     * ```
     *
-    * #### Example encrypting a secret using C#
+    * **Example encrypting a secret using C#**
     *
     * Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.
     *
@@ -257,7 +257,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Console.WriteLine(Convert.ToBase64String(sealedPublicKeyBox));
     * ```
     *
-    * #### Example encrypting a secret using Ruby
+    * **Example encrypting a secret using Ruby**
     *
     * Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
     *
@@ -292,7 +292,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
-    * #### Example encrypting a secret using Node.js
+    * **Example encrypting a secret using Node.js**
     *
     * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
@@ -317,7 +317,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * });
     * ```
     *
-    * #### Example encrypting a secret using Python
+    * **Example encrypting a secret using Python**
     *
     * Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/latest/public/#nacl-public-sealedbox) with Python 3.
     *
@@ -333,7 +333,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     *   return b64encode(encrypted).decode("utf-8")
     * ```
     *
-    * #### Example encrypting a secret using C#
+    * **Example encrypting a secret using C#**
     *
     * Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.
     *
@@ -346,7 +346,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Console.WriteLine(Convert.ToBase64String(sealedPublicKeyBox));
     * ```
     *
-    * #### Example encrypting a secret using Ruby
+    * **Example encrypting a secret using Ruby**
     *
     * Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
     *
@@ -541,7 +541,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
-    * #### Example encrypting a secret using Node.js
+    * **Example encrypting a secret using Node.js**
     *
     * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
@@ -566,7 +566,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * });
     * ```
     *
-    * #### Example encrypting a secret using Python
+    * **Example encrypting a secret using Python**
     *
     * Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/latest/public/#nacl-public-sealedbox) with Python 3.
     *
@@ -582,7 +582,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     *   return b64encode(encrypted).decode("utf-8")
     * ```
     *
-    * #### Example encrypting a secret using C#
+    * **Example encrypting a secret using C#**
     *
     * Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.
     *
@@ -595,7 +595,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Console.WriteLine(Convert.ToBase64String(sealedPublicKeyBox));
     * ```
     *
-    * #### Example encrypting a secret using Ruby
+    * **Example encrypting a secret using Ruby**
     *
     * Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
     *
@@ -630,7 +630,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
-    * #### Example encrypting a secret using Node.js
+    * **Example encrypting a secret using Node.js**
     *
     * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
@@ -655,7 +655,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * });
     * ```
     *
-    * #### Example encrypting a secret using Python
+    * **Example encrypting a secret using Python**
     *
     * Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/latest/public/#nacl-public-sealedbox) with Python 3.
     *
@@ -671,7 +671,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     *   return b64encode(encrypted).decode("utf-8")
     * ```
     *
-    * #### Example encrypting a secret using C#
+    * **Example encrypting a secret using C#**
     *
     * Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.
     *
@@ -684,7 +684,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Console.WriteLine(Convert.ToBase64String(sealedPublicKeyBox));
     * ```
     *
-    * #### Example encrypting a secret using Ruby
+    * **Example encrypting a secret using Ruby**
     *
     * Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
     *
@@ -1499,6 +1499,54 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
   var enableWorkflow_Original: `29`
   
   /**
+    * Generates a configuration that can be passed to the runner application at startup.
+    *
+    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  def generateRunnerJitconfigForOrg(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/actions/runners/generate-jitconfig']['response'] */ js.Any
+  ]
+  def generateRunnerJitconfigForOrg(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/actions/runners/generate-jitconfig']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/actions/runners/generate-jitconfig']['response'] */ js.Any
+  ]
+  /**
+    * Generates a configuration that can be passed to the runner application at startup.
+    *
+    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    */
+  @JSName("generateRunnerJitconfigForOrg")
+  var generateRunnerJitconfigForOrg_Original: `30`
+  
+  /**
+    * Generates a configuration that can be passed to the runner application at startup.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint.
+    */
+  def generateRunnerJitconfigForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig']['response'] */ js.Any
+  ]
+  def generateRunnerJitconfigForRepo(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/actions/runners/generate-jitconfig']['response'] */ js.Any
+  ]
+  /**
+    * Generates a configuration that can be passed to the runner application at startup.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint.
+    */
+  @JSName("generateRunnerJitconfigForRepo")
+  var generateRunnerJitconfigForRepo_Original: `31`
+  
+  /**
     * Lists the GitHub Actions caches for a repository.
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     * GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -1520,7 +1568,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getActionsCacheList")
-  var getActionsCacheList_Original: `30`
+  var getActionsCacheList_Original: `32`
   
   /**
     * Gets GitHub Actions cache usage for a repository.
@@ -1561,7 +1609,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `read:org` scope to use this endpoint. GitHub Apps must have the `organization_admistration:read` permission to use this endpoint.
     */
   @JSName("getActionsCacheUsageByRepoForOrg")
-  var getActionsCacheUsageByRepoForOrg_Original: `32`
+  var getActionsCacheUsageByRepoForOrg_Original: `34`
   
   /**
     * Gets the total GitHub Actions cache usage for an organization.
@@ -1585,7 +1633,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `read:org` scope to use this endpoint. GitHub Apps must have the `organization_admistration:read` permission to use this endpoint.
     */
   @JSName("getActionsCacheUsageForOrg")
-  var getActionsCacheUsageForOrg_Original: `33`
+  var getActionsCacheUsageForOrg_Original: `35`
   
   /**
     * Gets GitHub Actions cache usage for a repository.
@@ -1593,7 +1641,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getActionsCacheUsage")
-  var getActionsCacheUsage_Original: `31`
+  var getActionsCacheUsage_Original: `33`
   
   /**
     * Gets the selected actions and reusable workflows that are allowed in an organization. To use this endpoint, the organization permission policy for `allowed_actions` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization).""
@@ -1617,7 +1665,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("getAllowedActionsOrganization")
-  var getAllowedActionsOrganization_Original: `34`
+  var getAllowedActionsOrganization_Original: `36`
   
   /**
     * Gets the settings for selected actions and reusable workflows that are allowed in a repository. To use this endpoint, the repository policy for `allowed_actions` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for a repository](#set-github-actions-permissions-for-a-repository)."
@@ -1641,7 +1689,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   @JSName("getAllowedActionsRepository")
-  var getAllowedActionsRepository_Original: `35`
+  var getAllowedActionsRepository_Original: `37`
   
   /**
     * Gets a specific artifact for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -1661,7 +1709,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a specific artifact for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getArtifact")
-  var getArtifact_Original: `36`
+  var getArtifact_Original: `38`
   
   /**
     * Get the public key for an environment, which you need to encrypt environment secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -1681,7 +1729,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Get the public key for an environment, which you need to encrypt environment secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getEnvironmentPublicKey")
-  var getEnvironmentPublicKey_Original: `37`
+  var getEnvironmentPublicKey_Original: `39`
   
   /**
     * Gets a single environment secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -1701,7 +1749,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a single environment secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getEnvironmentSecret")
-  var getEnvironmentSecret_Original: `38`
+  var getEnvironmentSecret_Original: `40`
   
   /**
     * Gets a specific variable in an environment. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `environments:read` repository permission to use this endpoint.
@@ -1721,7 +1769,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a specific variable in an environment. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `environments:read` repository permission to use this endpoint.
     */
   @JSName("getEnvironmentVariable")
-  var getEnvironmentVariable_Original: `39`
+  var getEnvironmentVariable_Original: `41`
   
   /**
     * Gets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in an organization,
@@ -1749,7 +1797,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("getGithubActionsDefaultWorkflowPermissionsOrganization")
-  var getGithubActionsDefaultWorkflowPermissionsOrganization_Original: `40`
+  var getGithubActionsDefaultWorkflowPermissionsOrganization_Original: `42`
   
   /**
     * Gets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in a repository,
@@ -1777,7 +1825,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the repository `administration` permission to use this API.
     */
   @JSName("getGithubActionsDefaultWorkflowPermissionsRepository")
-  var getGithubActionsDefaultWorkflowPermissionsRepository_Original: `41`
+  var getGithubActionsDefaultWorkflowPermissionsRepository_Original: `43`
   
   /**
     * Gets the GitHub Actions permissions policy for repositories and allowed actions and reusable workflows in an organization.
@@ -1801,7 +1849,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("getGithubActionsPermissionsOrganization")
-  var getGithubActionsPermissionsOrganization_Original: `42`
+  var getGithubActionsPermissionsOrganization_Original: `44`
   
   /**
     * Gets the GitHub Actions permissions policy for a repository, including whether GitHub Actions is enabled and the actions and reusable workflows allowed to run in the repository.
@@ -1825,7 +1873,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   @JSName("getGithubActionsPermissionsRepository")
-  var getGithubActionsPermissionsRepository_Original: `43`
+  var getGithubActionsPermissionsRepository_Original: `45`
   
   /**
     * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -1845,7 +1893,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a specific job in a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getJobForWorkflowRun")
-  var getJobForWorkflowRun_Original: `44`
+  var getJobForWorkflowRun_Original: `46`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -1865,7 +1913,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgPublicKey")
-  var getOrgPublicKey_Original: `45`
+  var getOrgPublicKey_Original: `47`
   
   /**
     * Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -1885,7 +1933,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("getOrgSecret")
-  var getOrgSecret_Original: `46`
+  var getOrgSecret_Original: `48`
   
   /**
     * Gets a specific variable in an organization. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
@@ -1905,7 +1953,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a specific variable in an organization. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
     */
   @JSName("getOrgVariable")
-  var getOrgVariable_Original: `47`
+  var getOrgVariable_Original: `49`
   
   /**
     * Get all deployment environments for a workflow run that are waiting for protection rules to pass.
@@ -1929,7 +1977,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getPendingDeploymentsForRun")
-  var getPendingDeploymentsForRun_Original: `48`
+  var getPendingDeploymentsForRun_Original: `50`
   
   /**
     * Gets the GitHub Actions permissions policy for a repository, including whether GitHub Actions is enabled and the actions and reusable workflows allowed to run in the repository.
@@ -1955,7 +2003,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * @deprecated octokit.rest.actions.getRepoPermissions() has been renamed to octokit.rest.actions.getGithubActionsPermissionsRepository() (2020-11-10)
     */
   @JSName("getRepoPermissions")
-  var getRepoPermissions_Original: `43`
+  var getRepoPermissions_Original: `45`
   
   /**
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -1975,7 +2023,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets your public key, which you need to encrypt secrets. You need to encrypt a secret before you can create or update secrets. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoPublicKey")
-  var getRepoPublicKey_Original: `49`
+  var getRepoPublicKey_Original: `51`
   
   /**
     * Gets a specific required workflow present in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
@@ -2018,13 +2066,13 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getRepoRequiredWorkflowUsage")
-  var getRepoRequiredWorkflowUsage_Original: `51`
+  var getRepoRequiredWorkflowUsage_Original: `53`
   
   /**
     * Gets a specific required workflow present in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("getRepoRequiredWorkflow")
-  var getRepoRequiredWorkflow_Original: `50`
+  var getRepoRequiredWorkflow_Original: `52`
   
   /**
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -2044,7 +2092,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("getRepoSecret")
-  var getRepoSecret_Original: `52`
+  var getRepoSecret_Original: `54`
   
   /**
     * Gets a specific variable in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
@@ -2064,7 +2112,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Gets a specific variable in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
     */
   @JSName("getRepoVariable")
-  var getRepoVariable_Original: `53`
+  var getRepoVariable_Original: `55`
   
   /**
     * Get a required workflow configured in an organization.
@@ -2092,7 +2140,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("getRequiredWorkflow")
-  var getRequiredWorkflow_Original: `54`
+  var getRequiredWorkflow_Original: `56`
   
   /**
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2112,7 +2160,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getReviewsForRun")
-  var getReviewsForRun_Original: `55`
+  var getReviewsForRun_Original: `57`
   
   /**
     * Gets a specific self-hosted runner configured in an organization.
@@ -2136,7 +2184,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("getSelfHostedRunnerForOrg")
-  var getSelfHostedRunnerForOrg_Original: `56`
+  var getSelfHostedRunnerForOrg_Original: `58`
   
   /**
     * Gets a specific self-hosted runner configured in a repository.
@@ -2162,7 +2210,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * endpoint.
     */
   @JSName("getSelfHostedRunnerForRepo")
-  var getSelfHostedRunnerForRepo_Original: `57`
+  var getSelfHostedRunnerForRepo_Original: `59`
   
   /**
     * Gets a specific workflow. You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2207,7 +2255,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * repository `administration` permission to use this endpoint.
     */
   @JSName("getWorkflowAccessToRepository")
-  var getWorkflowAccessToRepository_Original: `59`
+  var getWorkflowAccessToRepository_Original: `61`
   
   /**
     * Gets a specific workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2248,7 +2296,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * use this endpoint.
     */
   @JSName("getWorkflowRunAttempt")
-  var getWorkflowRunAttempt_Original: `61`
+  var getWorkflowRunAttempt_Original: `63`
   
   /**
     * Gets the number of billable minutes and total run time for a specific workflow run. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)".
@@ -2272,13 +2320,13 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getWorkflowRunUsage")
-  var getWorkflowRunUsage_Original: `62`
+  var getWorkflowRunUsage_Original: `64`
   
   /**
     * Gets a specific workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getWorkflowRun")
-  var getWorkflowRun_Original: `60`
+  var getWorkflowRun_Original: `62`
   
   /**
     * Gets the number of billable minutes used by a specific workflow during the current billing cycle. Billable minutes only apply to workflows in private repositories that use GitHub-hosted runners. Usage is listed for each GitHub-hosted runner operating system in milliseconds. Any job re-runs are also included in the usage. The usage does not include the multiplier for macOS and Windows runners and is not rounded up to the nearest whole minute. For more information, see "[Managing billing for GitHub Actions](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions)".
@@ -2302,13 +2350,13 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getWorkflowUsage")
-  var getWorkflowUsage_Original: `63`
+  var getWorkflowUsage_Original: `65`
   
   /**
     * Gets a specific workflow. You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("getWorkflow")
-  var getWorkflow_Original: `58`
+  var getWorkflow_Original: `60`
   
   /**
     * Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2328,7 +2376,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all artifacts for a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("listArtifactsForRepo")
-  var listArtifactsForRepo_Original: `64`
+  var listArtifactsForRepo_Original: `66`
   
   /**
     * Lists all secrets available in an environment without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -2348,7 +2396,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all secrets available in an environment without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("listEnvironmentSecrets")
-  var listEnvironmentSecrets_Original: `65`
+  var listEnvironmentSecrets_Original: `67`
   
   /**
     * Lists all environment variables. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `environments:read` repository permission to use this endpoint.
@@ -2368,7 +2416,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all environment variables. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `environments:read` repository permission to use this endpoint.
     */
   @JSName("listEnvironmentVariables")
-  var listEnvironmentVariables_Original: `66`
+  var listEnvironmentVariables_Original: `68`
   
   /**
     * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
@@ -2403,13 +2451,13 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists jobs for a specific workflow run attempt. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
     */
   @JSName("listJobsForWorkflowRunAttempt")
-  var listJobsForWorkflowRunAttempt_Original: `68`
+  var listJobsForWorkflowRunAttempt_Original: `70`
   
   /**
     * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
     */
   @JSName("listJobsForWorkflowRun")
-  var listJobsForWorkflowRun_Original: `67`
+  var listJobsForWorkflowRun_Original: `69`
   
   /**
     * Lists all labels for a self-hosted runner configured in an organization.
@@ -2433,7 +2481,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listLabelsForSelfHostedRunnerForOrg")
-  var listLabelsForSelfHostedRunnerForOrg_Original: `69`
+  var listLabelsForSelfHostedRunnerForOrg_Original: `71`
   
   /**
     * Lists all labels for a self-hosted runner configured in a repository.
@@ -2459,7 +2507,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * endpoint.
     */
   @JSName("listLabelsForSelfHostedRunnerForRepo")
-  var listLabelsForSelfHostedRunnerForRepo_Original: `70`
+  var listLabelsForSelfHostedRunnerForRepo_Original: `72`
   
   /**
     * Lists all secrets available in an organization without revealing their encrypted values. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -2479,7 +2527,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all secrets available in an organization without revealing their encrypted values. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("listOrgSecrets")
-  var listOrgSecrets_Original: `71`
+  var listOrgSecrets_Original: `73`
   
   /**
     * Lists all organization variables. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
@@ -2499,7 +2547,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all organization variables. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
     */
   @JSName("listOrgVariables")
-  var listOrgVariables_Original: `72`
+  var listOrgVariables_Original: `74`
   
   /**
     * Lists all organization secrets shared with a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -2519,7 +2567,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all organization secrets shared with a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("listRepoOrganizationSecrets")
-  var listRepoOrganizationSecrets_Original: `73`
+  var listRepoOrganizationSecrets_Original: `75`
   
   /**
     * Lists all organiation variables shared with a repository. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
@@ -2539,7 +2587,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all organiation variables shared with a repository. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
     */
   @JSName("listRepoOrganizationVariables")
-  var listRepoOrganizationVariables_Original: `74`
+  var listRepoOrganizationVariables_Original: `76`
   
   /**
     * Lists the required workflows in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
@@ -2559,7 +2607,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists the required workflows in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint. For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("listRepoRequiredWorkflows")
-  var listRepoRequiredWorkflows_Original: `75`
+  var listRepoRequiredWorkflows_Original: `77`
   
   /**
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
@@ -2579,7 +2627,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all secrets available in a repository without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
     */
   @JSName("listRepoSecrets")
-  var listRepoSecrets_Original: `76`
+  var listRepoSecrets_Original: `78`
   
   /**
     * Lists all repository variables. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
@@ -2599,7 +2647,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all repository variables. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
     */
   @JSName("listRepoVariables")
-  var listRepoVariables_Original: `77`
+  var listRepoVariables_Original: `79`
   
   /**
     * Lists the workflows in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2619,7 +2667,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists the workflows in a repository. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("listRepoWorkflows")
-  var listRepoWorkflows_Original: `78`
+  var listRepoWorkflows_Original: `80`
   
   /**
     * List all workflow runs for a required workflow. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
@@ -2643,7 +2691,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("listRequiredWorkflowRuns")
-  var listRequiredWorkflowRuns_Original: `79`
+  var listRequiredWorkflowRuns_Original: `81`
   
   /**
     * List all required workflows in an organization.
@@ -2671,7 +2719,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("listRequiredWorkflows")
-  var listRequiredWorkflows_Original: `80`
+  var listRequiredWorkflows_Original: `82`
   
   /**
     * Lists binaries for the runner application that you can download and run.
@@ -2695,7 +2743,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listRunnerApplicationsForOrg")
-  var listRunnerApplicationsForOrg_Original: `81`
+  var listRunnerApplicationsForOrg_Original: `83`
   
   /**
     * Lists binaries for the runner application that you can download and run.
@@ -2719,7 +2767,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     */
   @JSName("listRunnerApplicationsForRepo")
-  var listRunnerApplicationsForRepo_Original: `82`
+  var listRunnerApplicationsForRepo_Original: `84`
   
   /**
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -2739,7 +2787,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all repositories that have been selected when the `visibility` for repository access to a secret is set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("listSelectedReposForOrgSecret")
-  var listSelectedReposForOrgSecret_Original: `83`
+  var listSelectedReposForOrgSecret_Original: `85`
   
   /**
     * Lists all repositories that can access an organization variable that is available to selected repositories. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
@@ -2759,7 +2807,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all repositories that can access an organization variable that is available to selected repositories. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:read` organization permission to use this endpoint.
     */
   @JSName("listSelectedReposForOrgVariable")
-  var listSelectedReposForOrgVariable_Original: `84`
+  var listSelectedReposForOrgVariable_Original: `86`
   
   /**
     * Lists the selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."
@@ -2783,7 +2831,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("listSelectedRepositoriesEnabledGithubActionsOrganization")
-  var listSelectedRepositoriesEnabledGithubActionsOrganization_Original: `85`
+  var listSelectedRepositoriesEnabledGithubActionsOrganization_Original: `87`
   
   /**
     * Lists the selected repositories that are configured for a required workflow in an organization. To use this endpoint, the required workflow must be configured to run on selected repositories.
@@ -2811,7 +2859,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("listSelectedRepositoriesRequiredWorkflow")
-  var listSelectedRepositoriesRequiredWorkflow_Original: `86`
+  var listSelectedRepositoriesRequiredWorkflow_Original: `88`
   
   /**
     * Lists all self-hosted runners configured in an organization.
@@ -2835,7 +2883,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("listSelfHostedRunnersForOrg")
-  var listSelfHostedRunnersForOrg_Original: `87`
+  var listSelfHostedRunnersForOrg_Original: `89`
   
   /**
     * Lists all self-hosted runners configured in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint.
@@ -2855,7 +2903,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists all self-hosted runners configured in a repository. You must authenticate using an access token with the `repo` scope to use this endpoint.
     */
   @JSName("listSelfHostedRunnersForRepo")
-  var listSelfHostedRunnersForRepo_Original: `88`
+  var listSelfHostedRunnersForRepo_Original: `90`
   
   /**
     * Lists artifacts for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
@@ -2875,7 +2923,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Lists artifacts for a workflow run. Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("listWorkflowRunArtifacts")
-  var listWorkflowRunArtifacts_Original: `89`
+  var listWorkflowRunArtifacts_Original: `91`
   
   /**
     * List all workflow runs for a workflow. You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
@@ -2916,7 +2964,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
     */
   @JSName("listWorkflowRunsForRepo")
-  var listWorkflowRunsForRepo_Original: `91`
+  var listWorkflowRunsForRepo_Original: `93`
   
   /**
     * List all workflow runs for a workflow. You can replace `workflow_id` with the workflow file name. For example, you could use `main.yaml`. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://docs.github.com/rest/overview/resources-in-the-rest-api#parameters).
@@ -2924,7 +2972,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
     */
   @JSName("listWorkflowRuns")
-  var listWorkflowRuns_Original: `90`
+  var listWorkflowRuns_Original: `92`
   
   /**
     * Re-run a job and its dependent jobs in a workflow run. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint.
@@ -2944,7 +2992,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Re-run a job and its dependent jobs in a workflow run. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint.
     */
   @JSName("reRunJobForWorkflowRun")
-  var reRunJobForWorkflowRun_Original: `92`
+  var reRunJobForWorkflowRun_Original: `94`
   
   /**
     * Re-runs your workflow run using its `id`. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint.
@@ -2979,13 +3027,13 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Re-run all of the failed jobs and their dependent jobs in a workflow run using the `id` of the workflow run. You must authenticate using an access token with the `repo` scope to use this endpoint.
     */
   @JSName("reRunWorkflowFailedJobs")
-  var reRunWorkflowFailedJobs_Original: `94`
+  var reRunWorkflowFailedJobs_Original: `96`
   
   /**
     * Re-runs your workflow run using its `id`. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions:write` permission to use this endpoint.
     */
   @JSName("reRunWorkflow")
-  var reRunWorkflow_Original: `93`
+  var reRunWorkflow_Original: `95`
   
   /**
     * Remove all custom labels from a self-hosted runner configured in an
@@ -3011,7 +3059,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("removeAllCustomLabelsFromSelfHostedRunnerForOrg")
-  var removeAllCustomLabelsFromSelfHostedRunnerForOrg_Original: `95`
+  var removeAllCustomLabelsFromSelfHostedRunnerForOrg_Original: `97`
   
   /**
     * Remove all custom labels from a self-hosted runner configured in a
@@ -3039,7 +3087,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * endpoint.
     */
   @JSName("removeAllCustomLabelsFromSelfHostedRunnerForRepo")
-  var removeAllCustomLabelsFromSelfHostedRunnerForRepo_Original: `96`
+  var removeAllCustomLabelsFromSelfHostedRunnerForRepo_Original: `98`
   
   /**
     * Remove a custom label from a self-hosted runner configured
@@ -3071,7 +3119,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("removeCustomLabelFromSelfHostedRunnerForOrg")
-  var removeCustomLabelFromSelfHostedRunnerForOrg_Original: `97`
+  var removeCustomLabelFromSelfHostedRunnerForOrg_Original: `99`
   
   /**
     * Remove a custom label from a self-hosted runner configured
@@ -3105,7 +3153,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * endpoint.
     */
   @JSName("removeCustomLabelFromSelfHostedRunnerForRepo")
-  var removeCustomLabelFromSelfHostedRunnerForRepo_Original: `98`
+  var removeCustomLabelFromSelfHostedRunnerForRepo_Original: `100`
   
   /**
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/actions#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -3125,7 +3173,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Removes a repository from an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/actions#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("removeSelectedRepoFromOrgSecret")
-  var removeSelectedRepoFromOrgSecret_Original: `99`
+  var removeSelectedRepoFromOrgSecret_Original: `101`
   
   /**
     * Removes a repository from an organization variable that is available to selected repositories. Organization variables that are available to selected repositories have their `visibility` field set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:write` organization permission to use this endpoint.
@@ -3145,7 +3193,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Removes a repository from an organization variable that is available to selected repositories. Organization variables that are available to selected repositories have their `visibility` field set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:write` organization permission to use this endpoint.
     */
   @JSName("removeSelectedRepoFromOrgVariable")
-  var removeSelectedRepoFromOrgVariable_Original: `100`
+  var removeSelectedRepoFromOrgVariable_Original: `102`
   
   /**
     * Removes a repository from a required workflow. To use this endpoint, the required workflow must be configured to run on selected repositories.
@@ -3173,7 +3221,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("removeSelectedRepoFromRequiredWorkflow")
-  var removeSelectedRepoFromRequiredWorkflow_Original: `101`
+  var removeSelectedRepoFromRequiredWorkflow_Original: `103`
   
   /**
     * Approve or reject custom deployment protection rules provided by a GitHub App for a workflow run. For more information, see "[Using environments for deployment](https://docs.github.com/actions/deployment/targeting-different-environments/using-environments-for-deployment)."
@@ -3203,7 +3251,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * GitHub Apps must have read and write permission for **Deployments** to use this endpoint.
     */
   @JSName("reviewCustomGatesForRun")
-  var reviewCustomGatesForRun_Original: `102`
+  var reviewCustomGatesForRun_Original: `104`
   
   /**
     * Approve or reject pending deployments that are waiting on approval by a required reviewer.
@@ -3227,7 +3275,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Required reviewers with read access to the repository contents and deployments can use this endpoint. Required reviewers must authenticate using an access token with the `repo` scope to use this endpoint.
     */
   @JSName("reviewPendingDeploymentsForRun")
-  var reviewPendingDeploymentsForRun_Original: `103`
+  var reviewPendingDeploymentsForRun_Original: `105`
   
   /**
     * Sets the actions and reusable workflows that are allowed in an organization. To use this endpoint, the organization permission policy for `allowed_actions` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."
@@ -3251,7 +3299,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("setAllowedActionsOrganization")
-  var setAllowedActionsOrganization_Original: `104`
+  var setAllowedActionsOrganization_Original: `106`
   
   /**
     * Sets the actions and reusable workflows that are allowed in a repository. To use this endpoint, the repository permission policy for `allowed_actions` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for a repository](#set-github-actions-permissions-for-a-repository)."
@@ -3275,7 +3323,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   @JSName("setAllowedActionsRepository")
-  var setAllowedActionsRepository_Original: `105`
+  var setAllowedActionsRepository_Original: `107`
   
   /**
     * Remove all previous custom labels and set the new custom labels for a specific
@@ -3301,7 +3349,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   @JSName("setCustomLabelsForSelfHostedRunnerForOrg")
-  var setCustomLabelsForSelfHostedRunnerForOrg_Original: `106`
+  var setCustomLabelsForSelfHostedRunnerForOrg_Original: `108`
   
   /**
     * Remove all previous custom labels and set the new custom labels for a specific
@@ -3329,7 +3377,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * endpoint.
     */
   @JSName("setCustomLabelsForSelfHostedRunnerForRepo")
-  var setCustomLabelsForSelfHostedRunnerForRepo_Original: `107`
+  var setCustomLabelsForSelfHostedRunnerForRepo_Original: `109`
   
   /**
     * Sets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in an organization, and sets if GitHub Actions
@@ -3357,7 +3405,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("setGithubActionsDefaultWorkflowPermissionsOrganization")
-  var setGithubActionsDefaultWorkflowPermissionsOrganization_Original: `108`
+  var setGithubActionsDefaultWorkflowPermissionsOrganization_Original: `110`
   
   /**
     * Sets the default workflow permissions granted to the `GITHUB_TOKEN` when running workflows in a repository, and sets if GitHub Actions
@@ -3385,7 +3433,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the repository `administration` permission to use this API.
     */
   @JSName("setGithubActionsDefaultWorkflowPermissionsRepository")
-  var setGithubActionsDefaultWorkflowPermissionsRepository_Original: `109`
+  var setGithubActionsDefaultWorkflowPermissionsRepository_Original: `111`
   
   /**
     * Sets the GitHub Actions permissions policy for repositories and allowed actions and reusable workflows in an organization.
@@ -3409,7 +3457,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("setGithubActionsPermissionsOrganization")
-  var setGithubActionsPermissionsOrganization_Original: `110`
+  var setGithubActionsPermissionsOrganization_Original: `112`
   
   /**
     * Sets the GitHub Actions permissions policy for enabling GitHub Actions and allowed actions and reusable workflows in the repository.
@@ -3433,7 +3481,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   @JSName("setGithubActionsPermissionsRepository")
-  var setGithubActionsPermissionsRepository_Original: `111`
+  var setGithubActionsPermissionsRepository_Original: `113`
   
   /**
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/actions#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
@@ -3453,7 +3501,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/actions#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
     */
   @JSName("setSelectedReposForOrgSecret")
-  var setSelectedReposForOrgSecret_Original: `112`
+  var setSelectedReposForOrgSecret_Original: `114`
   
   /**
     * Replaces all repositories for an organization variable that is available to selected repositories. Organization variables that are available to selected repositories have their `visibility` field set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:write` organization permission to use this endpoint.
@@ -3473,7 +3521,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * Replaces all repositories for an organization variable that is available to selected repositories. Organization variables that are available to selected repositories have their `visibility` field set to `selected`. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `organization_actions_variables:write` organization permission to use this endpoint.
     */
   @JSName("setSelectedReposForOrgVariable")
-  var setSelectedReposForOrgVariable_Original: `113`
+  var setSelectedReposForOrgVariable_Original: `115`
   
   /**
     * Sets the repositories for a required workflow that is required for selected repositories.
@@ -3501,7 +3549,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("setSelectedReposToRequiredWorkflow")
-  var setSelectedReposToRequiredWorkflow_Original: `114`
+  var setSelectedReposToRequiredWorkflow_Original: `116`
   
   /**
     * Replaces the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."
@@ -3525,7 +3573,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
   @JSName("setSelectedRepositoriesEnabledGithubActionsOrganization")
-  var setSelectedRepositoriesEnabledGithubActionsOrganization_Original: `115`
+  var setSelectedRepositoriesEnabledGithubActionsOrganization_Original: `117`
   
   /**
     * Sets the level of access that workflows outside of the repository have to actions and reusable workflows in the repository.
@@ -3555,7 +3603,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * repository `administration` permission to use this endpoint.
     */
   @JSName("setWorkflowAccessToRepository")
-  var setWorkflowAccessToRepository_Original: `116`
+  var setWorkflowAccessToRepository_Original: `118`
   
   /**
     * Updates an environment variable that you can reference in a GitHub Actions workflow.
@@ -3579,7 +3627,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * GitHub Apps must have the `environment:write` repository permission to use this endpoint.
     */
   @JSName("updateEnvironmentVariable")
-  var updateEnvironmentVariable_Original: `117`
+  var updateEnvironmentVariable_Original: `119`
   
   /**
     * Updates an organization variable that you can reference in a GitHub Actions workflow.
@@ -3603,7 +3651,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * GitHub Apps must have the `organization_actions_variables:write` organization permission to use this endpoint.
     */
   @JSName("updateOrgVariable")
-  var updateOrgVariable_Original: `118`
+  var updateOrgVariable_Original: `120`
   
   /**
     * Updates a repository variable that you can reference in a GitHub Actions workflow.
@@ -3627,7 +3675,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * GitHub Apps must have the `actions_variables:write` repository permission to use this endpoint.
     */
   @JSName("updateRepoVariable")
-  var updateRepoVariable_Original: `119`
+  var updateRepoVariable_Original: `121`
   
   /**
     * Update a required workflow in an organization.
@@ -3655,7 +3703,7 @@ trait AddCustomLabelsToSelfHostedRunnerForOrg extends StObject {
     * For more information, see "[Required Workflows](https://docs.github.com/actions/using-workflows/required-workflows)."
     */
   @JSName("updateRequiredWorkflow")
-  var updateRequiredWorkflow_Original: `120`
+  var updateRequiredWorkflow_Original: `122`
 }
 object AddCustomLabelsToSelfHostedRunnerForOrg {
   
@@ -3701,100 +3749,102 @@ object AddCustomLabelsToSelfHostedRunnerForOrg {
     downloadWorkflowRunLogs: `27`,
     enableSelectedRepositoryGithubActionsOrganization: `28`,
     enableWorkflow: `29`,
-    getActionsCacheList: `30`,
-    getActionsCacheUsage: `31`,
-    getActionsCacheUsageByRepoForOrg: `32`,
-    getActionsCacheUsageForOrg: `33`,
-    getAllowedActionsOrganization: `34`,
-    getAllowedActionsRepository: `35`,
-    getArtifact: `36`,
-    getEnvironmentPublicKey: `37`,
-    getEnvironmentSecret: `38`,
-    getEnvironmentVariable: `39`,
-    getGithubActionsDefaultWorkflowPermissionsOrganization: `40`,
-    getGithubActionsDefaultWorkflowPermissionsRepository: `41`,
-    getGithubActionsPermissionsOrganization: `42`,
-    getGithubActionsPermissionsRepository: `43`,
-    getJobForWorkflowRun: `44`,
-    getOrgPublicKey: `45`,
-    getOrgSecret: `46`,
-    getOrgVariable: `47`,
-    getPendingDeploymentsForRun: `48`,
-    getRepoPermissions: `43`,
-    getRepoPublicKey: `49`,
-    getRepoRequiredWorkflow: `50`,
-    getRepoRequiredWorkflowUsage: `51`,
-    getRepoSecret: `52`,
-    getRepoVariable: `53`,
-    getRequiredWorkflow: `54`,
-    getReviewsForRun: `55`,
-    getSelfHostedRunnerForOrg: `56`,
-    getSelfHostedRunnerForRepo: `57`,
-    getWorkflow: `58`,
-    getWorkflowAccessToRepository: `59`,
-    getWorkflowRun: `60`,
-    getWorkflowRunAttempt: `61`,
-    getWorkflowRunUsage: `62`,
-    getWorkflowUsage: `63`,
-    listArtifactsForRepo: `64`,
-    listEnvironmentSecrets: `65`,
-    listEnvironmentVariables: `66`,
-    listJobsForWorkflowRun: `67`,
-    listJobsForWorkflowRunAttempt: `68`,
-    listLabelsForSelfHostedRunnerForOrg: `69`,
-    listLabelsForSelfHostedRunnerForRepo: `70`,
-    listOrgSecrets: `71`,
-    listOrgVariables: `72`,
-    listRepoOrganizationSecrets: `73`,
-    listRepoOrganizationVariables: `74`,
-    listRepoRequiredWorkflows: `75`,
-    listRepoSecrets: `76`,
-    listRepoVariables: `77`,
-    listRepoWorkflows: `78`,
-    listRequiredWorkflowRuns: `79`,
-    listRequiredWorkflows: `80`,
-    listRunnerApplicationsForOrg: `81`,
-    listRunnerApplicationsForRepo: `82`,
-    listSelectedReposForOrgSecret: `83`,
-    listSelectedReposForOrgVariable: `84`,
-    listSelectedRepositoriesEnabledGithubActionsOrganization: `85`,
-    listSelectedRepositoriesRequiredWorkflow: `86`,
-    listSelfHostedRunnersForOrg: `87`,
-    listSelfHostedRunnersForRepo: `88`,
-    listWorkflowRunArtifacts: `89`,
-    listWorkflowRuns: `90`,
-    listWorkflowRunsForRepo: `91`,
-    reRunJobForWorkflowRun: `92`,
-    reRunWorkflow: `93`,
-    reRunWorkflowFailedJobs: `94`,
-    removeAllCustomLabelsFromSelfHostedRunnerForOrg: `95`,
-    removeAllCustomLabelsFromSelfHostedRunnerForRepo: `96`,
-    removeCustomLabelFromSelfHostedRunnerForOrg: `97`,
-    removeCustomLabelFromSelfHostedRunnerForRepo: `98`,
-    removeSelectedRepoFromOrgSecret: `99`,
-    removeSelectedRepoFromOrgVariable: `100`,
-    removeSelectedRepoFromRequiredWorkflow: `101`,
-    reviewCustomGatesForRun: `102`,
-    reviewPendingDeploymentsForRun: `103`,
-    setAllowedActionsOrganization: `104`,
-    setAllowedActionsRepository: `105`,
-    setCustomLabelsForSelfHostedRunnerForOrg: `106`,
-    setCustomLabelsForSelfHostedRunnerForRepo: `107`,
-    setGithubActionsDefaultWorkflowPermissionsOrganization: `108`,
-    setGithubActionsDefaultWorkflowPermissionsRepository: `109`,
-    setGithubActionsPermissionsOrganization: `110`,
-    setGithubActionsPermissionsRepository: `111`,
-    setSelectedReposForOrgSecret: `112`,
-    setSelectedReposForOrgVariable: `113`,
-    setSelectedReposToRequiredWorkflow: `114`,
-    setSelectedRepositoriesEnabledGithubActionsOrganization: `115`,
-    setWorkflowAccessToRepository: `116`,
-    updateEnvironmentVariable: `117`,
-    updateOrgVariable: `118`,
-    updateRepoVariable: `119`,
-    updateRequiredWorkflow: `120`
+    generateRunnerJitconfigForOrg: `30`,
+    generateRunnerJitconfigForRepo: `31`,
+    getActionsCacheList: `32`,
+    getActionsCacheUsage: `33`,
+    getActionsCacheUsageByRepoForOrg: `34`,
+    getActionsCacheUsageForOrg: `35`,
+    getAllowedActionsOrganization: `36`,
+    getAllowedActionsRepository: `37`,
+    getArtifact: `38`,
+    getEnvironmentPublicKey: `39`,
+    getEnvironmentSecret: `40`,
+    getEnvironmentVariable: `41`,
+    getGithubActionsDefaultWorkflowPermissionsOrganization: `42`,
+    getGithubActionsDefaultWorkflowPermissionsRepository: `43`,
+    getGithubActionsPermissionsOrganization: `44`,
+    getGithubActionsPermissionsRepository: `45`,
+    getJobForWorkflowRun: `46`,
+    getOrgPublicKey: `47`,
+    getOrgSecret: `48`,
+    getOrgVariable: `49`,
+    getPendingDeploymentsForRun: `50`,
+    getRepoPermissions: `45`,
+    getRepoPublicKey: `51`,
+    getRepoRequiredWorkflow: `52`,
+    getRepoRequiredWorkflowUsage: `53`,
+    getRepoSecret: `54`,
+    getRepoVariable: `55`,
+    getRequiredWorkflow: `56`,
+    getReviewsForRun: `57`,
+    getSelfHostedRunnerForOrg: `58`,
+    getSelfHostedRunnerForRepo: `59`,
+    getWorkflow: `60`,
+    getWorkflowAccessToRepository: `61`,
+    getWorkflowRun: `62`,
+    getWorkflowRunAttempt: `63`,
+    getWorkflowRunUsage: `64`,
+    getWorkflowUsage: `65`,
+    listArtifactsForRepo: `66`,
+    listEnvironmentSecrets: `67`,
+    listEnvironmentVariables: `68`,
+    listJobsForWorkflowRun: `69`,
+    listJobsForWorkflowRunAttempt: `70`,
+    listLabelsForSelfHostedRunnerForOrg: `71`,
+    listLabelsForSelfHostedRunnerForRepo: `72`,
+    listOrgSecrets: `73`,
+    listOrgVariables: `74`,
+    listRepoOrganizationSecrets: `75`,
+    listRepoOrganizationVariables: `76`,
+    listRepoRequiredWorkflows: `77`,
+    listRepoSecrets: `78`,
+    listRepoVariables: `79`,
+    listRepoWorkflows: `80`,
+    listRequiredWorkflowRuns: `81`,
+    listRequiredWorkflows: `82`,
+    listRunnerApplicationsForOrg: `83`,
+    listRunnerApplicationsForRepo: `84`,
+    listSelectedReposForOrgSecret: `85`,
+    listSelectedReposForOrgVariable: `86`,
+    listSelectedRepositoriesEnabledGithubActionsOrganization: `87`,
+    listSelectedRepositoriesRequiredWorkflow: `88`,
+    listSelfHostedRunnersForOrg: `89`,
+    listSelfHostedRunnersForRepo: `90`,
+    listWorkflowRunArtifacts: `91`,
+    listWorkflowRuns: `92`,
+    listWorkflowRunsForRepo: `93`,
+    reRunJobForWorkflowRun: `94`,
+    reRunWorkflow: `95`,
+    reRunWorkflowFailedJobs: `96`,
+    removeAllCustomLabelsFromSelfHostedRunnerForOrg: `97`,
+    removeAllCustomLabelsFromSelfHostedRunnerForRepo: `98`,
+    removeCustomLabelFromSelfHostedRunnerForOrg: `99`,
+    removeCustomLabelFromSelfHostedRunnerForRepo: `100`,
+    removeSelectedRepoFromOrgSecret: `101`,
+    removeSelectedRepoFromOrgVariable: `102`,
+    removeSelectedRepoFromRequiredWorkflow: `103`,
+    reviewCustomGatesForRun: `104`,
+    reviewPendingDeploymentsForRun: `105`,
+    setAllowedActionsOrganization: `106`,
+    setAllowedActionsRepository: `107`,
+    setCustomLabelsForSelfHostedRunnerForOrg: `108`,
+    setCustomLabelsForSelfHostedRunnerForRepo: `109`,
+    setGithubActionsDefaultWorkflowPermissionsOrganization: `110`,
+    setGithubActionsDefaultWorkflowPermissionsRepository: `111`,
+    setGithubActionsPermissionsOrganization: `112`,
+    setGithubActionsPermissionsRepository: `113`,
+    setSelectedReposForOrgSecret: `114`,
+    setSelectedReposForOrgVariable: `115`,
+    setSelectedReposToRequiredWorkflow: `116`,
+    setSelectedRepositoriesEnabledGithubActionsOrganization: `117`,
+    setWorkflowAccessToRepository: `118`,
+    updateEnvironmentVariable: `119`,
+    updateOrgVariable: `120`,
+    updateRepoVariable: `121`,
+    updateRequiredWorkflow: `122`
   ): AddCustomLabelsToSelfHostedRunnerForOrg = {
-    val __obj = js.Dynamic.literal(addCustomLabelsToSelfHostedRunnerForOrg = addCustomLabelsToSelfHostedRunnerForOrg.asInstanceOf[js.Any], addCustomLabelsToSelfHostedRunnerForRepo = addCustomLabelsToSelfHostedRunnerForRepo.asInstanceOf[js.Any], addSelectedRepoToOrgSecret = addSelectedRepoToOrgSecret.asInstanceOf[js.Any], addSelectedRepoToOrgVariable = addSelectedRepoToOrgVariable.asInstanceOf[js.Any], addSelectedRepoToRequiredWorkflow = addSelectedRepoToRequiredWorkflow.asInstanceOf[js.Any], approveWorkflowRun = approveWorkflowRun.asInstanceOf[js.Any], cancelWorkflowRun = cancelWorkflowRun.asInstanceOf[js.Any], createEnvironmentVariable = createEnvironmentVariable.asInstanceOf[js.Any], createOrUpdateEnvironmentSecret = createOrUpdateEnvironmentSecret.asInstanceOf[js.Any], createOrUpdateOrgSecret = createOrUpdateOrgSecret.asInstanceOf[js.Any], createOrUpdateRepoSecret = createOrUpdateRepoSecret.asInstanceOf[js.Any], createOrgVariable = createOrgVariable.asInstanceOf[js.Any], createRegistrationTokenForOrg = createRegistrationTokenForOrg.asInstanceOf[js.Any], createRegistrationTokenForRepo = createRegistrationTokenForRepo.asInstanceOf[js.Any], createRemoveTokenForOrg = createRemoveTokenForOrg.asInstanceOf[js.Any], createRemoveTokenForRepo = createRemoveTokenForRepo.asInstanceOf[js.Any], createRepoVariable = createRepoVariable.asInstanceOf[js.Any], createRequiredWorkflow = createRequiredWorkflow.asInstanceOf[js.Any], createWorkflowDispatch = createWorkflowDispatch.asInstanceOf[js.Any], deleteActionsCacheById = deleteActionsCacheById.asInstanceOf[js.Any], deleteActionsCacheByKey = deleteActionsCacheByKey.asInstanceOf[js.Any], deleteArtifact = deleteArtifact.asInstanceOf[js.Any], deleteEnvironmentSecret = deleteEnvironmentSecret.asInstanceOf[js.Any], deleteEnvironmentVariable = deleteEnvironmentVariable.asInstanceOf[js.Any], deleteOrgSecret = deleteOrgSecret.asInstanceOf[js.Any], deleteOrgVariable = deleteOrgVariable.asInstanceOf[js.Any], deleteRepoSecret = deleteRepoSecret.asInstanceOf[js.Any], deleteRepoVariable = deleteRepoVariable.asInstanceOf[js.Any], deleteRequiredWorkflow = deleteRequiredWorkflow.asInstanceOf[js.Any], deleteSelfHostedRunnerFromOrg = deleteSelfHostedRunnerFromOrg.asInstanceOf[js.Any], deleteSelfHostedRunnerFromRepo = deleteSelfHostedRunnerFromRepo.asInstanceOf[js.Any], deleteWorkflowRun = deleteWorkflowRun.asInstanceOf[js.Any], deleteWorkflowRunLogs = deleteWorkflowRunLogs.asInstanceOf[js.Any], disableSelectedRepositoryGithubActionsOrganization = disableSelectedRepositoryGithubActionsOrganization.asInstanceOf[js.Any], disableWorkflow = disableWorkflow.asInstanceOf[js.Any], downloadArtifact = downloadArtifact.asInstanceOf[js.Any], downloadJobLogsForWorkflowRun = downloadJobLogsForWorkflowRun.asInstanceOf[js.Any], downloadWorkflowRunAttemptLogs = downloadWorkflowRunAttemptLogs.asInstanceOf[js.Any], downloadWorkflowRunLogs = downloadWorkflowRunLogs.asInstanceOf[js.Any], enableSelectedRepositoryGithubActionsOrganization = enableSelectedRepositoryGithubActionsOrganization.asInstanceOf[js.Any], enableWorkflow = enableWorkflow.asInstanceOf[js.Any], getActionsCacheList = getActionsCacheList.asInstanceOf[js.Any], getActionsCacheUsage = getActionsCacheUsage.asInstanceOf[js.Any], getActionsCacheUsageByRepoForOrg = getActionsCacheUsageByRepoForOrg.asInstanceOf[js.Any], getActionsCacheUsageForOrg = getActionsCacheUsageForOrg.asInstanceOf[js.Any], getAllowedActionsOrganization = getAllowedActionsOrganization.asInstanceOf[js.Any], getAllowedActionsRepository = getAllowedActionsRepository.asInstanceOf[js.Any], getArtifact = getArtifact.asInstanceOf[js.Any], getEnvironmentPublicKey = getEnvironmentPublicKey.asInstanceOf[js.Any], getEnvironmentSecret = getEnvironmentSecret.asInstanceOf[js.Any], getEnvironmentVariable = getEnvironmentVariable.asInstanceOf[js.Any], getGithubActionsDefaultWorkflowPermissionsOrganization = getGithubActionsDefaultWorkflowPermissionsOrganization.asInstanceOf[js.Any], getGithubActionsDefaultWorkflowPermissionsRepository = getGithubActionsDefaultWorkflowPermissionsRepository.asInstanceOf[js.Any], getGithubActionsPermissionsOrganization = getGithubActionsPermissionsOrganization.asInstanceOf[js.Any], getGithubActionsPermissionsRepository = getGithubActionsPermissionsRepository.asInstanceOf[js.Any], getJobForWorkflowRun = getJobForWorkflowRun.asInstanceOf[js.Any], getOrgPublicKey = getOrgPublicKey.asInstanceOf[js.Any], getOrgSecret = getOrgSecret.asInstanceOf[js.Any], getOrgVariable = getOrgVariable.asInstanceOf[js.Any], getPendingDeploymentsForRun = getPendingDeploymentsForRun.asInstanceOf[js.Any], getRepoPermissions = getRepoPermissions.asInstanceOf[js.Any], getRepoPublicKey = getRepoPublicKey.asInstanceOf[js.Any], getRepoRequiredWorkflow = getRepoRequiredWorkflow.asInstanceOf[js.Any], getRepoRequiredWorkflowUsage = getRepoRequiredWorkflowUsage.asInstanceOf[js.Any], getRepoSecret = getRepoSecret.asInstanceOf[js.Any], getRepoVariable = getRepoVariable.asInstanceOf[js.Any], getRequiredWorkflow = getRequiredWorkflow.asInstanceOf[js.Any], getReviewsForRun = getReviewsForRun.asInstanceOf[js.Any], getSelfHostedRunnerForOrg = getSelfHostedRunnerForOrg.asInstanceOf[js.Any], getSelfHostedRunnerForRepo = getSelfHostedRunnerForRepo.asInstanceOf[js.Any], getWorkflow = getWorkflow.asInstanceOf[js.Any], getWorkflowAccessToRepository = getWorkflowAccessToRepository.asInstanceOf[js.Any], getWorkflowRun = getWorkflowRun.asInstanceOf[js.Any], getWorkflowRunAttempt = getWorkflowRunAttempt.asInstanceOf[js.Any], getWorkflowRunUsage = getWorkflowRunUsage.asInstanceOf[js.Any], getWorkflowUsage = getWorkflowUsage.asInstanceOf[js.Any], listArtifactsForRepo = listArtifactsForRepo.asInstanceOf[js.Any], listEnvironmentSecrets = listEnvironmentSecrets.asInstanceOf[js.Any], listEnvironmentVariables = listEnvironmentVariables.asInstanceOf[js.Any], listJobsForWorkflowRun = listJobsForWorkflowRun.asInstanceOf[js.Any], listJobsForWorkflowRunAttempt = listJobsForWorkflowRunAttempt.asInstanceOf[js.Any], listLabelsForSelfHostedRunnerForOrg = listLabelsForSelfHostedRunnerForOrg.asInstanceOf[js.Any], listLabelsForSelfHostedRunnerForRepo = listLabelsForSelfHostedRunnerForRepo.asInstanceOf[js.Any], listOrgSecrets = listOrgSecrets.asInstanceOf[js.Any], listOrgVariables = listOrgVariables.asInstanceOf[js.Any], listRepoOrganizationSecrets = listRepoOrganizationSecrets.asInstanceOf[js.Any], listRepoOrganizationVariables = listRepoOrganizationVariables.asInstanceOf[js.Any], listRepoRequiredWorkflows = listRepoRequiredWorkflows.asInstanceOf[js.Any], listRepoSecrets = listRepoSecrets.asInstanceOf[js.Any], listRepoVariables = listRepoVariables.asInstanceOf[js.Any], listRepoWorkflows = listRepoWorkflows.asInstanceOf[js.Any], listRequiredWorkflowRuns = listRequiredWorkflowRuns.asInstanceOf[js.Any], listRequiredWorkflows = listRequiredWorkflows.asInstanceOf[js.Any], listRunnerApplicationsForOrg = listRunnerApplicationsForOrg.asInstanceOf[js.Any], listRunnerApplicationsForRepo = listRunnerApplicationsForRepo.asInstanceOf[js.Any], listSelectedReposForOrgSecret = listSelectedReposForOrgSecret.asInstanceOf[js.Any], listSelectedReposForOrgVariable = listSelectedReposForOrgVariable.asInstanceOf[js.Any], listSelectedRepositoriesEnabledGithubActionsOrganization = listSelectedRepositoriesEnabledGithubActionsOrganization.asInstanceOf[js.Any], listSelectedRepositoriesRequiredWorkflow = listSelectedRepositoriesRequiredWorkflow.asInstanceOf[js.Any], listSelfHostedRunnersForOrg = listSelfHostedRunnersForOrg.asInstanceOf[js.Any], listSelfHostedRunnersForRepo = listSelfHostedRunnersForRepo.asInstanceOf[js.Any], listWorkflowRunArtifacts = listWorkflowRunArtifacts.asInstanceOf[js.Any], listWorkflowRuns = listWorkflowRuns.asInstanceOf[js.Any], listWorkflowRunsForRepo = listWorkflowRunsForRepo.asInstanceOf[js.Any], reRunJobForWorkflowRun = reRunJobForWorkflowRun.asInstanceOf[js.Any], reRunWorkflow = reRunWorkflow.asInstanceOf[js.Any], reRunWorkflowFailedJobs = reRunWorkflowFailedJobs.asInstanceOf[js.Any], removeAllCustomLabelsFromSelfHostedRunnerForOrg = removeAllCustomLabelsFromSelfHostedRunnerForOrg.asInstanceOf[js.Any], removeAllCustomLabelsFromSelfHostedRunnerForRepo = removeAllCustomLabelsFromSelfHostedRunnerForRepo.asInstanceOf[js.Any], removeCustomLabelFromSelfHostedRunnerForOrg = removeCustomLabelFromSelfHostedRunnerForOrg.asInstanceOf[js.Any], removeCustomLabelFromSelfHostedRunnerForRepo = removeCustomLabelFromSelfHostedRunnerForRepo.asInstanceOf[js.Any], removeSelectedRepoFromOrgSecret = removeSelectedRepoFromOrgSecret.asInstanceOf[js.Any], removeSelectedRepoFromOrgVariable = removeSelectedRepoFromOrgVariable.asInstanceOf[js.Any], removeSelectedRepoFromRequiredWorkflow = removeSelectedRepoFromRequiredWorkflow.asInstanceOf[js.Any], reviewCustomGatesForRun = reviewCustomGatesForRun.asInstanceOf[js.Any], reviewPendingDeploymentsForRun = reviewPendingDeploymentsForRun.asInstanceOf[js.Any], setAllowedActionsOrganization = setAllowedActionsOrganization.asInstanceOf[js.Any], setAllowedActionsRepository = setAllowedActionsRepository.asInstanceOf[js.Any], setCustomLabelsForSelfHostedRunnerForOrg = setCustomLabelsForSelfHostedRunnerForOrg.asInstanceOf[js.Any], setCustomLabelsForSelfHostedRunnerForRepo = setCustomLabelsForSelfHostedRunnerForRepo.asInstanceOf[js.Any], setGithubActionsDefaultWorkflowPermissionsOrganization = setGithubActionsDefaultWorkflowPermissionsOrganization.asInstanceOf[js.Any], setGithubActionsDefaultWorkflowPermissionsRepository = setGithubActionsDefaultWorkflowPermissionsRepository.asInstanceOf[js.Any], setGithubActionsPermissionsOrganization = setGithubActionsPermissionsOrganization.asInstanceOf[js.Any], setGithubActionsPermissionsRepository = setGithubActionsPermissionsRepository.asInstanceOf[js.Any], setSelectedReposForOrgSecret = setSelectedReposForOrgSecret.asInstanceOf[js.Any], setSelectedReposForOrgVariable = setSelectedReposForOrgVariable.asInstanceOf[js.Any], setSelectedReposToRequiredWorkflow = setSelectedReposToRequiredWorkflow.asInstanceOf[js.Any], setSelectedRepositoriesEnabledGithubActionsOrganization = setSelectedRepositoriesEnabledGithubActionsOrganization.asInstanceOf[js.Any], setWorkflowAccessToRepository = setWorkflowAccessToRepository.asInstanceOf[js.Any], updateEnvironmentVariable = updateEnvironmentVariable.asInstanceOf[js.Any], updateOrgVariable = updateOrgVariable.asInstanceOf[js.Any], updateRepoVariable = updateRepoVariable.asInstanceOf[js.Any], updateRequiredWorkflow = updateRequiredWorkflow.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addCustomLabelsToSelfHostedRunnerForOrg = addCustomLabelsToSelfHostedRunnerForOrg.asInstanceOf[js.Any], addCustomLabelsToSelfHostedRunnerForRepo = addCustomLabelsToSelfHostedRunnerForRepo.asInstanceOf[js.Any], addSelectedRepoToOrgSecret = addSelectedRepoToOrgSecret.asInstanceOf[js.Any], addSelectedRepoToOrgVariable = addSelectedRepoToOrgVariable.asInstanceOf[js.Any], addSelectedRepoToRequiredWorkflow = addSelectedRepoToRequiredWorkflow.asInstanceOf[js.Any], approveWorkflowRun = approveWorkflowRun.asInstanceOf[js.Any], cancelWorkflowRun = cancelWorkflowRun.asInstanceOf[js.Any], createEnvironmentVariable = createEnvironmentVariable.asInstanceOf[js.Any], createOrUpdateEnvironmentSecret = createOrUpdateEnvironmentSecret.asInstanceOf[js.Any], createOrUpdateOrgSecret = createOrUpdateOrgSecret.asInstanceOf[js.Any], createOrUpdateRepoSecret = createOrUpdateRepoSecret.asInstanceOf[js.Any], createOrgVariable = createOrgVariable.asInstanceOf[js.Any], createRegistrationTokenForOrg = createRegistrationTokenForOrg.asInstanceOf[js.Any], createRegistrationTokenForRepo = createRegistrationTokenForRepo.asInstanceOf[js.Any], createRemoveTokenForOrg = createRemoveTokenForOrg.asInstanceOf[js.Any], createRemoveTokenForRepo = createRemoveTokenForRepo.asInstanceOf[js.Any], createRepoVariable = createRepoVariable.asInstanceOf[js.Any], createRequiredWorkflow = createRequiredWorkflow.asInstanceOf[js.Any], createWorkflowDispatch = createWorkflowDispatch.asInstanceOf[js.Any], deleteActionsCacheById = deleteActionsCacheById.asInstanceOf[js.Any], deleteActionsCacheByKey = deleteActionsCacheByKey.asInstanceOf[js.Any], deleteArtifact = deleteArtifact.asInstanceOf[js.Any], deleteEnvironmentSecret = deleteEnvironmentSecret.asInstanceOf[js.Any], deleteEnvironmentVariable = deleteEnvironmentVariable.asInstanceOf[js.Any], deleteOrgSecret = deleteOrgSecret.asInstanceOf[js.Any], deleteOrgVariable = deleteOrgVariable.asInstanceOf[js.Any], deleteRepoSecret = deleteRepoSecret.asInstanceOf[js.Any], deleteRepoVariable = deleteRepoVariable.asInstanceOf[js.Any], deleteRequiredWorkflow = deleteRequiredWorkflow.asInstanceOf[js.Any], deleteSelfHostedRunnerFromOrg = deleteSelfHostedRunnerFromOrg.asInstanceOf[js.Any], deleteSelfHostedRunnerFromRepo = deleteSelfHostedRunnerFromRepo.asInstanceOf[js.Any], deleteWorkflowRun = deleteWorkflowRun.asInstanceOf[js.Any], deleteWorkflowRunLogs = deleteWorkflowRunLogs.asInstanceOf[js.Any], disableSelectedRepositoryGithubActionsOrganization = disableSelectedRepositoryGithubActionsOrganization.asInstanceOf[js.Any], disableWorkflow = disableWorkflow.asInstanceOf[js.Any], downloadArtifact = downloadArtifact.asInstanceOf[js.Any], downloadJobLogsForWorkflowRun = downloadJobLogsForWorkflowRun.asInstanceOf[js.Any], downloadWorkflowRunAttemptLogs = downloadWorkflowRunAttemptLogs.asInstanceOf[js.Any], downloadWorkflowRunLogs = downloadWorkflowRunLogs.asInstanceOf[js.Any], enableSelectedRepositoryGithubActionsOrganization = enableSelectedRepositoryGithubActionsOrganization.asInstanceOf[js.Any], enableWorkflow = enableWorkflow.asInstanceOf[js.Any], generateRunnerJitconfigForOrg = generateRunnerJitconfigForOrg.asInstanceOf[js.Any], generateRunnerJitconfigForRepo = generateRunnerJitconfigForRepo.asInstanceOf[js.Any], getActionsCacheList = getActionsCacheList.asInstanceOf[js.Any], getActionsCacheUsage = getActionsCacheUsage.asInstanceOf[js.Any], getActionsCacheUsageByRepoForOrg = getActionsCacheUsageByRepoForOrg.asInstanceOf[js.Any], getActionsCacheUsageForOrg = getActionsCacheUsageForOrg.asInstanceOf[js.Any], getAllowedActionsOrganization = getAllowedActionsOrganization.asInstanceOf[js.Any], getAllowedActionsRepository = getAllowedActionsRepository.asInstanceOf[js.Any], getArtifact = getArtifact.asInstanceOf[js.Any], getEnvironmentPublicKey = getEnvironmentPublicKey.asInstanceOf[js.Any], getEnvironmentSecret = getEnvironmentSecret.asInstanceOf[js.Any], getEnvironmentVariable = getEnvironmentVariable.asInstanceOf[js.Any], getGithubActionsDefaultWorkflowPermissionsOrganization = getGithubActionsDefaultWorkflowPermissionsOrganization.asInstanceOf[js.Any], getGithubActionsDefaultWorkflowPermissionsRepository = getGithubActionsDefaultWorkflowPermissionsRepository.asInstanceOf[js.Any], getGithubActionsPermissionsOrganization = getGithubActionsPermissionsOrganization.asInstanceOf[js.Any], getGithubActionsPermissionsRepository = getGithubActionsPermissionsRepository.asInstanceOf[js.Any], getJobForWorkflowRun = getJobForWorkflowRun.asInstanceOf[js.Any], getOrgPublicKey = getOrgPublicKey.asInstanceOf[js.Any], getOrgSecret = getOrgSecret.asInstanceOf[js.Any], getOrgVariable = getOrgVariable.asInstanceOf[js.Any], getPendingDeploymentsForRun = getPendingDeploymentsForRun.asInstanceOf[js.Any], getRepoPermissions = getRepoPermissions.asInstanceOf[js.Any], getRepoPublicKey = getRepoPublicKey.asInstanceOf[js.Any], getRepoRequiredWorkflow = getRepoRequiredWorkflow.asInstanceOf[js.Any], getRepoRequiredWorkflowUsage = getRepoRequiredWorkflowUsage.asInstanceOf[js.Any], getRepoSecret = getRepoSecret.asInstanceOf[js.Any], getRepoVariable = getRepoVariable.asInstanceOf[js.Any], getRequiredWorkflow = getRequiredWorkflow.asInstanceOf[js.Any], getReviewsForRun = getReviewsForRun.asInstanceOf[js.Any], getSelfHostedRunnerForOrg = getSelfHostedRunnerForOrg.asInstanceOf[js.Any], getSelfHostedRunnerForRepo = getSelfHostedRunnerForRepo.asInstanceOf[js.Any], getWorkflow = getWorkflow.asInstanceOf[js.Any], getWorkflowAccessToRepository = getWorkflowAccessToRepository.asInstanceOf[js.Any], getWorkflowRun = getWorkflowRun.asInstanceOf[js.Any], getWorkflowRunAttempt = getWorkflowRunAttempt.asInstanceOf[js.Any], getWorkflowRunUsage = getWorkflowRunUsage.asInstanceOf[js.Any], getWorkflowUsage = getWorkflowUsage.asInstanceOf[js.Any], listArtifactsForRepo = listArtifactsForRepo.asInstanceOf[js.Any], listEnvironmentSecrets = listEnvironmentSecrets.asInstanceOf[js.Any], listEnvironmentVariables = listEnvironmentVariables.asInstanceOf[js.Any], listJobsForWorkflowRun = listJobsForWorkflowRun.asInstanceOf[js.Any], listJobsForWorkflowRunAttempt = listJobsForWorkflowRunAttempt.asInstanceOf[js.Any], listLabelsForSelfHostedRunnerForOrg = listLabelsForSelfHostedRunnerForOrg.asInstanceOf[js.Any], listLabelsForSelfHostedRunnerForRepo = listLabelsForSelfHostedRunnerForRepo.asInstanceOf[js.Any], listOrgSecrets = listOrgSecrets.asInstanceOf[js.Any], listOrgVariables = listOrgVariables.asInstanceOf[js.Any], listRepoOrganizationSecrets = listRepoOrganizationSecrets.asInstanceOf[js.Any], listRepoOrganizationVariables = listRepoOrganizationVariables.asInstanceOf[js.Any], listRepoRequiredWorkflows = listRepoRequiredWorkflows.asInstanceOf[js.Any], listRepoSecrets = listRepoSecrets.asInstanceOf[js.Any], listRepoVariables = listRepoVariables.asInstanceOf[js.Any], listRepoWorkflows = listRepoWorkflows.asInstanceOf[js.Any], listRequiredWorkflowRuns = listRequiredWorkflowRuns.asInstanceOf[js.Any], listRequiredWorkflows = listRequiredWorkflows.asInstanceOf[js.Any], listRunnerApplicationsForOrg = listRunnerApplicationsForOrg.asInstanceOf[js.Any], listRunnerApplicationsForRepo = listRunnerApplicationsForRepo.asInstanceOf[js.Any], listSelectedReposForOrgSecret = listSelectedReposForOrgSecret.asInstanceOf[js.Any], listSelectedReposForOrgVariable = listSelectedReposForOrgVariable.asInstanceOf[js.Any], listSelectedRepositoriesEnabledGithubActionsOrganization = listSelectedRepositoriesEnabledGithubActionsOrganization.asInstanceOf[js.Any], listSelectedRepositoriesRequiredWorkflow = listSelectedRepositoriesRequiredWorkflow.asInstanceOf[js.Any], listSelfHostedRunnersForOrg = listSelfHostedRunnersForOrg.asInstanceOf[js.Any], listSelfHostedRunnersForRepo = listSelfHostedRunnersForRepo.asInstanceOf[js.Any], listWorkflowRunArtifacts = listWorkflowRunArtifacts.asInstanceOf[js.Any], listWorkflowRuns = listWorkflowRuns.asInstanceOf[js.Any], listWorkflowRunsForRepo = listWorkflowRunsForRepo.asInstanceOf[js.Any], reRunJobForWorkflowRun = reRunJobForWorkflowRun.asInstanceOf[js.Any], reRunWorkflow = reRunWorkflow.asInstanceOf[js.Any], reRunWorkflowFailedJobs = reRunWorkflowFailedJobs.asInstanceOf[js.Any], removeAllCustomLabelsFromSelfHostedRunnerForOrg = removeAllCustomLabelsFromSelfHostedRunnerForOrg.asInstanceOf[js.Any], removeAllCustomLabelsFromSelfHostedRunnerForRepo = removeAllCustomLabelsFromSelfHostedRunnerForRepo.asInstanceOf[js.Any], removeCustomLabelFromSelfHostedRunnerForOrg = removeCustomLabelFromSelfHostedRunnerForOrg.asInstanceOf[js.Any], removeCustomLabelFromSelfHostedRunnerForRepo = removeCustomLabelFromSelfHostedRunnerForRepo.asInstanceOf[js.Any], removeSelectedRepoFromOrgSecret = removeSelectedRepoFromOrgSecret.asInstanceOf[js.Any], removeSelectedRepoFromOrgVariable = removeSelectedRepoFromOrgVariable.asInstanceOf[js.Any], removeSelectedRepoFromRequiredWorkflow = removeSelectedRepoFromRequiredWorkflow.asInstanceOf[js.Any], reviewCustomGatesForRun = reviewCustomGatesForRun.asInstanceOf[js.Any], reviewPendingDeploymentsForRun = reviewPendingDeploymentsForRun.asInstanceOf[js.Any], setAllowedActionsOrganization = setAllowedActionsOrganization.asInstanceOf[js.Any], setAllowedActionsRepository = setAllowedActionsRepository.asInstanceOf[js.Any], setCustomLabelsForSelfHostedRunnerForOrg = setCustomLabelsForSelfHostedRunnerForOrg.asInstanceOf[js.Any], setCustomLabelsForSelfHostedRunnerForRepo = setCustomLabelsForSelfHostedRunnerForRepo.asInstanceOf[js.Any], setGithubActionsDefaultWorkflowPermissionsOrganization = setGithubActionsDefaultWorkflowPermissionsOrganization.asInstanceOf[js.Any], setGithubActionsDefaultWorkflowPermissionsRepository = setGithubActionsDefaultWorkflowPermissionsRepository.asInstanceOf[js.Any], setGithubActionsPermissionsOrganization = setGithubActionsPermissionsOrganization.asInstanceOf[js.Any], setGithubActionsPermissionsRepository = setGithubActionsPermissionsRepository.asInstanceOf[js.Any], setSelectedReposForOrgSecret = setSelectedReposForOrgSecret.asInstanceOf[js.Any], setSelectedReposForOrgVariable = setSelectedReposForOrgVariable.asInstanceOf[js.Any], setSelectedReposToRequiredWorkflow = setSelectedReposToRequiredWorkflow.asInstanceOf[js.Any], setSelectedRepositoriesEnabledGithubActionsOrganization = setSelectedRepositoriesEnabledGithubActionsOrganization.asInstanceOf[js.Any], setWorkflowAccessToRepository = setWorkflowAccessToRepository.asInstanceOf[js.Any], updateEnvironmentVariable = updateEnvironmentVariable.asInstanceOf[js.Any], updateOrgVariable = updateOrgVariable.asInstanceOf[js.Any], updateRepoVariable = updateRepoVariable.asInstanceOf[js.Any], updateRequiredWorkflow = updateRequiredWorkflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCustomLabelsToSelfHostedRunnerForOrg]
   }
   
@@ -3883,188 +3933,192 @@ object AddCustomLabelsToSelfHostedRunnerForOrg {
     
     inline def setEnableWorkflow(value: `29`): Self = StObject.set(x, "enableWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setGetActionsCacheList(value: `30`): Self = StObject.set(x, "getActionsCacheList", value.asInstanceOf[js.Any])
+    inline def setGenerateRunnerJitconfigForOrg(value: `30`): Self = StObject.set(x, "generateRunnerJitconfigForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetActionsCacheUsage(value: `31`): Self = StObject.set(x, "getActionsCacheUsage", value.asInstanceOf[js.Any])
+    inline def setGenerateRunnerJitconfigForRepo(value: `31`): Self = StObject.set(x, "generateRunnerJitconfigForRepo", value.asInstanceOf[js.Any])
     
-    inline def setGetActionsCacheUsageByRepoForOrg(value: `32`): Self = StObject.set(x, "getActionsCacheUsageByRepoForOrg", value.asInstanceOf[js.Any])
+    inline def setGetActionsCacheList(value: `32`): Self = StObject.set(x, "getActionsCacheList", value.asInstanceOf[js.Any])
     
-    inline def setGetActionsCacheUsageForOrg(value: `33`): Self = StObject.set(x, "getActionsCacheUsageForOrg", value.asInstanceOf[js.Any])
+    inline def setGetActionsCacheUsage(value: `33`): Self = StObject.set(x, "getActionsCacheUsage", value.asInstanceOf[js.Any])
     
-    inline def setGetAllowedActionsOrganization(value: `34`): Self = StObject.set(x, "getAllowedActionsOrganization", value.asInstanceOf[js.Any])
+    inline def setGetActionsCacheUsageByRepoForOrg(value: `34`): Self = StObject.set(x, "getActionsCacheUsageByRepoForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetAllowedActionsRepository(value: `35`): Self = StObject.set(x, "getAllowedActionsRepository", value.asInstanceOf[js.Any])
+    inline def setGetActionsCacheUsageForOrg(value: `35`): Self = StObject.set(x, "getActionsCacheUsageForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetArtifact(value: `36`): Self = StObject.set(x, "getArtifact", value.asInstanceOf[js.Any])
+    inline def setGetAllowedActionsOrganization(value: `36`): Self = StObject.set(x, "getAllowedActionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setGetEnvironmentPublicKey(value: `37`): Self = StObject.set(x, "getEnvironmentPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetAllowedActionsRepository(value: `37`): Self = StObject.set(x, "getAllowedActionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setGetEnvironmentSecret(value: `38`): Self = StObject.set(x, "getEnvironmentSecret", value.asInstanceOf[js.Any])
+    inline def setGetArtifact(value: `38`): Self = StObject.set(x, "getArtifact", value.asInstanceOf[js.Any])
     
-    inline def setGetEnvironmentVariable(value: `39`): Self = StObject.set(x, "getEnvironmentVariable", value.asInstanceOf[js.Any])
+    inline def setGetEnvironmentPublicKey(value: `39`): Self = StObject.set(x, "getEnvironmentPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubActionsDefaultWorkflowPermissionsOrganization(value: `40`): Self = StObject.set(x, "getGithubActionsDefaultWorkflowPermissionsOrganization", value.asInstanceOf[js.Any])
+    inline def setGetEnvironmentSecret(value: `40`): Self = StObject.set(x, "getEnvironmentSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubActionsDefaultWorkflowPermissionsRepository(value: `41`): Self = StObject.set(x, "getGithubActionsDefaultWorkflowPermissionsRepository", value.asInstanceOf[js.Any])
+    inline def setGetEnvironmentVariable(value: `41`): Self = StObject.set(x, "getEnvironmentVariable", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubActionsPermissionsOrganization(value: `42`): Self = StObject.set(x, "getGithubActionsPermissionsOrganization", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsDefaultWorkflowPermissionsOrganization(value: `42`): Self = StObject.set(x, "getGithubActionsDefaultWorkflowPermissionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubActionsPermissionsRepository(value: `43`): Self = StObject.set(x, "getGithubActionsPermissionsRepository", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsDefaultWorkflowPermissionsRepository(value: `43`): Self = StObject.set(x, "getGithubActionsDefaultWorkflowPermissionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setGetJobForWorkflowRun(value: `44`): Self = StObject.set(x, "getJobForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsPermissionsOrganization(value: `44`): Self = StObject.set(x, "getGithubActionsPermissionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgPublicKey(value: `45`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsPermissionsRepository(value: `45`): Self = StObject.set(x, "getGithubActionsPermissionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgSecret(value: `46`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
+    inline def setGetJobForWorkflowRun(value: `46`): Self = StObject.set(x, "getJobForWorkflowRun", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgVariable(value: `47`): Self = StObject.set(x, "getOrgVariable", value.asInstanceOf[js.Any])
+    inline def setGetOrgPublicKey(value: `47`): Self = StObject.set(x, "getOrgPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetPendingDeploymentsForRun(value: `48`): Self = StObject.set(x, "getPendingDeploymentsForRun", value.asInstanceOf[js.Any])
+    inline def setGetOrgSecret(value: `48`): Self = StObject.set(x, "getOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoPermissions(value: `43`): Self = StObject.set(x, "getRepoPermissions", value.asInstanceOf[js.Any])
+    inline def setGetOrgVariable(value: `49`): Self = StObject.set(x, "getOrgVariable", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoPublicKey(value: `49`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
+    inline def setGetPendingDeploymentsForRun(value: `50`): Self = StObject.set(x, "getPendingDeploymentsForRun", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoRequiredWorkflow(value: `50`): Self = StObject.set(x, "getRepoRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setGetRepoPermissions(value: `45`): Self = StObject.set(x, "getRepoPermissions", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoRequiredWorkflowUsage(value: `51`): Self = StObject.set(x, "getRepoRequiredWorkflowUsage", value.asInstanceOf[js.Any])
+    inline def setGetRepoPublicKey(value: `51`): Self = StObject.set(x, "getRepoPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoSecret(value: `52`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
+    inline def setGetRepoRequiredWorkflow(value: `52`): Self = StObject.set(x, "getRepoRequiredWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoVariable(value: `53`): Self = StObject.set(x, "getRepoVariable", value.asInstanceOf[js.Any])
+    inline def setGetRepoRequiredWorkflowUsage(value: `53`): Self = StObject.set(x, "getRepoRequiredWorkflowUsage", value.asInstanceOf[js.Any])
     
-    inline def setGetRequiredWorkflow(value: `54`): Self = StObject.set(x, "getRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setGetRepoSecret(value: `54`): Self = StObject.set(x, "getRepoSecret", value.asInstanceOf[js.Any])
     
-    inline def setGetReviewsForRun(value: `55`): Self = StObject.set(x, "getReviewsForRun", value.asInstanceOf[js.Any])
+    inline def setGetRepoVariable(value: `55`): Self = StObject.set(x, "getRepoVariable", value.asInstanceOf[js.Any])
     
-    inline def setGetSelfHostedRunnerForOrg(value: `56`): Self = StObject.set(x, "getSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setGetRequiredWorkflow(value: `56`): Self = StObject.set(x, "getRequiredWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setGetSelfHostedRunnerForRepo(value: `57`): Self = StObject.set(x, "getSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setGetReviewsForRun(value: `57`): Self = StObject.set(x, "getReviewsForRun", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflow(value: `58`): Self = StObject.set(x, "getWorkflow", value.asInstanceOf[js.Any])
+    inline def setGetSelfHostedRunnerForOrg(value: `58`): Self = StObject.set(x, "getSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflowAccessToRepository(value: `59`): Self = StObject.set(x, "getWorkflowAccessToRepository", value.asInstanceOf[js.Any])
+    inline def setGetSelfHostedRunnerForRepo(value: `59`): Self = StObject.set(x, "getSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflowRun(value: `60`): Self = StObject.set(x, "getWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setGetWorkflow(value: `60`): Self = StObject.set(x, "getWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflowRunAttempt(value: `61`): Self = StObject.set(x, "getWorkflowRunAttempt", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowAccessToRepository(value: `61`): Self = StObject.set(x, "getWorkflowAccessToRepository", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflowRunUsage(value: `62`): Self = StObject.set(x, "getWorkflowRunUsage", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowRun(value: `62`): Self = StObject.set(x, "getWorkflowRun", value.asInstanceOf[js.Any])
     
-    inline def setGetWorkflowUsage(value: `63`): Self = StObject.set(x, "getWorkflowUsage", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowRunAttempt(value: `63`): Self = StObject.set(x, "getWorkflowRunAttempt", value.asInstanceOf[js.Any])
     
-    inline def setListArtifactsForRepo(value: `64`): Self = StObject.set(x, "listArtifactsForRepo", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowRunUsage(value: `64`): Self = StObject.set(x, "getWorkflowRunUsage", value.asInstanceOf[js.Any])
     
-    inline def setListEnvironmentSecrets(value: `65`): Self = StObject.set(x, "listEnvironmentSecrets", value.asInstanceOf[js.Any])
+    inline def setGetWorkflowUsage(value: `65`): Self = StObject.set(x, "getWorkflowUsage", value.asInstanceOf[js.Any])
     
-    inline def setListEnvironmentVariables(value: `66`): Self = StObject.set(x, "listEnvironmentVariables", value.asInstanceOf[js.Any])
+    inline def setListArtifactsForRepo(value: `66`): Self = StObject.set(x, "listArtifactsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListJobsForWorkflowRun(value: `67`): Self = StObject.set(x, "listJobsForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setListEnvironmentSecrets(value: `67`): Self = StObject.set(x, "listEnvironmentSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListJobsForWorkflowRunAttempt(value: `68`): Self = StObject.set(x, "listJobsForWorkflowRunAttempt", value.asInstanceOf[js.Any])
+    inline def setListEnvironmentVariables(value: `68`): Self = StObject.set(x, "listEnvironmentVariables", value.asInstanceOf[js.Any])
     
-    inline def setListLabelsForSelfHostedRunnerForOrg(value: `69`): Self = StObject.set(x, "listLabelsForSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setListJobsForWorkflowRun(value: `69`): Self = StObject.set(x, "listJobsForWorkflowRun", value.asInstanceOf[js.Any])
     
-    inline def setListLabelsForSelfHostedRunnerForRepo(value: `70`): Self = StObject.set(x, "listLabelsForSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setListJobsForWorkflowRunAttempt(value: `70`): Self = StObject.set(x, "listJobsForWorkflowRunAttempt", value.asInstanceOf[js.Any])
     
-    inline def setListOrgSecrets(value: `71`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
+    inline def setListLabelsForSelfHostedRunnerForOrg(value: `71`): Self = StObject.set(x, "listLabelsForSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListOrgVariables(value: `72`): Self = StObject.set(x, "listOrgVariables", value.asInstanceOf[js.Any])
+    inline def setListLabelsForSelfHostedRunnerForRepo(value: `72`): Self = StObject.set(x, "listLabelsForSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListRepoOrganizationSecrets(value: `73`): Self = StObject.set(x, "listRepoOrganizationSecrets", value.asInstanceOf[js.Any])
+    inline def setListOrgSecrets(value: `73`): Self = StObject.set(x, "listOrgSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListRepoOrganizationVariables(value: `74`): Self = StObject.set(x, "listRepoOrganizationVariables", value.asInstanceOf[js.Any])
+    inline def setListOrgVariables(value: `74`): Self = StObject.set(x, "listOrgVariables", value.asInstanceOf[js.Any])
     
-    inline def setListRepoRequiredWorkflows(value: `75`): Self = StObject.set(x, "listRepoRequiredWorkflows", value.asInstanceOf[js.Any])
+    inline def setListRepoOrganizationSecrets(value: `75`): Self = StObject.set(x, "listRepoOrganizationSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListRepoSecrets(value: `76`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
+    inline def setListRepoOrganizationVariables(value: `76`): Self = StObject.set(x, "listRepoOrganizationVariables", value.asInstanceOf[js.Any])
     
-    inline def setListRepoVariables(value: `77`): Self = StObject.set(x, "listRepoVariables", value.asInstanceOf[js.Any])
+    inline def setListRepoRequiredWorkflows(value: `77`): Self = StObject.set(x, "listRepoRequiredWorkflows", value.asInstanceOf[js.Any])
     
-    inline def setListRepoWorkflows(value: `78`): Self = StObject.set(x, "listRepoWorkflows", value.asInstanceOf[js.Any])
+    inline def setListRepoSecrets(value: `78`): Self = StObject.set(x, "listRepoSecrets", value.asInstanceOf[js.Any])
     
-    inline def setListRequiredWorkflowRuns(value: `79`): Self = StObject.set(x, "listRequiredWorkflowRuns", value.asInstanceOf[js.Any])
+    inline def setListRepoVariables(value: `79`): Self = StObject.set(x, "listRepoVariables", value.asInstanceOf[js.Any])
     
-    inline def setListRequiredWorkflows(value: `80`): Self = StObject.set(x, "listRequiredWorkflows", value.asInstanceOf[js.Any])
+    inline def setListRepoWorkflows(value: `80`): Self = StObject.set(x, "listRepoWorkflows", value.asInstanceOf[js.Any])
     
-    inline def setListRunnerApplicationsForOrg(value: `81`): Self = StObject.set(x, "listRunnerApplicationsForOrg", value.asInstanceOf[js.Any])
+    inline def setListRequiredWorkflowRuns(value: `81`): Self = StObject.set(x, "listRequiredWorkflowRuns", value.asInstanceOf[js.Any])
     
-    inline def setListRunnerApplicationsForRepo(value: `82`): Self = StObject.set(x, "listRunnerApplicationsForRepo", value.asInstanceOf[js.Any])
+    inline def setListRequiredWorkflows(value: `82`): Self = StObject.set(x, "listRequiredWorkflows", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedReposForOrgSecret(value: `83`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setListRunnerApplicationsForOrg(value: `83`): Self = StObject.set(x, "listRunnerApplicationsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedReposForOrgVariable(value: `84`): Self = StObject.set(x, "listSelectedReposForOrgVariable", value.asInstanceOf[js.Any])
+    inline def setListRunnerApplicationsForRepo(value: `84`): Self = StObject.set(x, "listRunnerApplicationsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedRepositoriesEnabledGithubActionsOrganization(value: `85`): Self = StObject.set(x, "listSelectedRepositoriesEnabledGithubActionsOrganization", value.asInstanceOf[js.Any])
+    inline def setListSelectedReposForOrgSecret(value: `85`): Self = StObject.set(x, "listSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setListSelectedRepositoriesRequiredWorkflow(value: `86`): Self = StObject.set(x, "listSelectedRepositoriesRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setListSelectedReposForOrgVariable(value: `86`): Self = StObject.set(x, "listSelectedReposForOrgVariable", value.asInstanceOf[js.Any])
     
-    inline def setListSelfHostedRunnersForOrg(value: `87`): Self = StObject.set(x, "listSelfHostedRunnersForOrg", value.asInstanceOf[js.Any])
+    inline def setListSelectedRepositoriesEnabledGithubActionsOrganization(value: `87`): Self = StObject.set(x, "listSelectedRepositoriesEnabledGithubActionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setListSelfHostedRunnersForRepo(value: `88`): Self = StObject.set(x, "listSelfHostedRunnersForRepo", value.asInstanceOf[js.Any])
+    inline def setListSelectedRepositoriesRequiredWorkflow(value: `88`): Self = StObject.set(x, "listSelectedRepositoriesRequiredWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setListWorkflowRunArtifacts(value: `89`): Self = StObject.set(x, "listWorkflowRunArtifacts", value.asInstanceOf[js.Any])
+    inline def setListSelfHostedRunnersForOrg(value: `89`): Self = StObject.set(x, "listSelfHostedRunnersForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListWorkflowRuns(value: `90`): Self = StObject.set(x, "listWorkflowRuns", value.asInstanceOf[js.Any])
+    inline def setListSelfHostedRunnersForRepo(value: `90`): Self = StObject.set(x, "listSelfHostedRunnersForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListWorkflowRunsForRepo(value: `91`): Self = StObject.set(x, "listWorkflowRunsForRepo", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRunArtifacts(value: `91`): Self = StObject.set(x, "listWorkflowRunArtifacts", value.asInstanceOf[js.Any])
     
-    inline def setReRunJobForWorkflowRun(value: `92`): Self = StObject.set(x, "reRunJobForWorkflowRun", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRuns(value: `92`): Self = StObject.set(x, "listWorkflowRuns", value.asInstanceOf[js.Any])
     
-    inline def setReRunWorkflow(value: `93`): Self = StObject.set(x, "reRunWorkflow", value.asInstanceOf[js.Any])
+    inline def setListWorkflowRunsForRepo(value: `93`): Self = StObject.set(x, "listWorkflowRunsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setReRunWorkflowFailedJobs(value: `94`): Self = StObject.set(x, "reRunWorkflowFailedJobs", value.asInstanceOf[js.Any])
+    inline def setReRunJobForWorkflowRun(value: `94`): Self = StObject.set(x, "reRunJobForWorkflowRun", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAllCustomLabelsFromSelfHostedRunnerForOrg(value: `95`): Self = StObject.set(x, "removeAllCustomLabelsFromSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setReRunWorkflow(value: `95`): Self = StObject.set(x, "reRunWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAllCustomLabelsFromSelfHostedRunnerForRepo(value: `96`): Self = StObject.set(x, "removeAllCustomLabelsFromSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setReRunWorkflowFailedJobs(value: `96`): Self = StObject.set(x, "reRunWorkflowFailedJobs", value.asInstanceOf[js.Any])
     
-    inline def setRemoveCustomLabelFromSelfHostedRunnerForOrg(value: `97`): Self = StObject.set(x, "removeCustomLabelFromSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setRemoveAllCustomLabelsFromSelfHostedRunnerForOrg(value: `97`): Self = StObject.set(x, "removeAllCustomLabelsFromSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveCustomLabelFromSelfHostedRunnerForRepo(value: `98`): Self = StObject.set(x, "removeCustomLabelFromSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setRemoveAllCustomLabelsFromSelfHostedRunnerForRepo(value: `98`): Self = StObject.set(x, "removeAllCustomLabelsFromSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSelectedRepoFromOrgSecret(value: `99`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
+    inline def setRemoveCustomLabelFromSelfHostedRunnerForOrg(value: `99`): Self = StObject.set(x, "removeCustomLabelFromSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSelectedRepoFromOrgVariable(value: `100`): Self = StObject.set(x, "removeSelectedRepoFromOrgVariable", value.asInstanceOf[js.Any])
+    inline def setRemoveCustomLabelFromSelfHostedRunnerForRepo(value: `100`): Self = StObject.set(x, "removeCustomLabelFromSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSelectedRepoFromRequiredWorkflow(value: `101`): Self = StObject.set(x, "removeSelectedRepoFromRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromOrgSecret(value: `101`): Self = StObject.set(x, "removeSelectedRepoFromOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setReviewCustomGatesForRun(value: `102`): Self = StObject.set(x, "reviewCustomGatesForRun", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromOrgVariable(value: `102`): Self = StObject.set(x, "removeSelectedRepoFromOrgVariable", value.asInstanceOf[js.Any])
     
-    inline def setReviewPendingDeploymentsForRun(value: `103`): Self = StObject.set(x, "reviewPendingDeploymentsForRun", value.asInstanceOf[js.Any])
+    inline def setRemoveSelectedRepoFromRequiredWorkflow(value: `103`): Self = StObject.set(x, "removeSelectedRepoFromRequiredWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setSetAllowedActionsOrganization(value: `104`): Self = StObject.set(x, "setAllowedActionsOrganization", value.asInstanceOf[js.Any])
+    inline def setReviewCustomGatesForRun(value: `104`): Self = StObject.set(x, "reviewCustomGatesForRun", value.asInstanceOf[js.Any])
     
-    inline def setSetAllowedActionsRepository(value: `105`): Self = StObject.set(x, "setAllowedActionsRepository", value.asInstanceOf[js.Any])
+    inline def setReviewPendingDeploymentsForRun(value: `105`): Self = StObject.set(x, "reviewPendingDeploymentsForRun", value.asInstanceOf[js.Any])
     
-    inline def setSetCustomLabelsForSelfHostedRunnerForOrg(value: `106`): Self = StObject.set(x, "setCustomLabelsForSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
+    inline def setSetAllowedActionsOrganization(value: `106`): Self = StObject.set(x, "setAllowedActionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setSetCustomLabelsForSelfHostedRunnerForRepo(value: `107`): Self = StObject.set(x, "setCustomLabelsForSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
+    inline def setSetAllowedActionsRepository(value: `107`): Self = StObject.set(x, "setAllowedActionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setSetGithubActionsDefaultWorkflowPermissionsOrganization(value: `108`): Self = StObject.set(x, "setGithubActionsDefaultWorkflowPermissionsOrganization", value.asInstanceOf[js.Any])
+    inline def setSetCustomLabelsForSelfHostedRunnerForOrg(value: `108`): Self = StObject.set(x, "setCustomLabelsForSelfHostedRunnerForOrg", value.asInstanceOf[js.Any])
     
-    inline def setSetGithubActionsDefaultWorkflowPermissionsRepository(value: `109`): Self = StObject.set(x, "setGithubActionsDefaultWorkflowPermissionsRepository", value.asInstanceOf[js.Any])
+    inline def setSetCustomLabelsForSelfHostedRunnerForRepo(value: `109`): Self = StObject.set(x, "setCustomLabelsForSelfHostedRunnerForRepo", value.asInstanceOf[js.Any])
     
-    inline def setSetGithubActionsPermissionsOrganization(value: `110`): Self = StObject.set(x, "setGithubActionsPermissionsOrganization", value.asInstanceOf[js.Any])
+    inline def setSetGithubActionsDefaultWorkflowPermissionsOrganization(value: `110`): Self = StObject.set(x, "setGithubActionsDefaultWorkflowPermissionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setSetGithubActionsPermissionsRepository(value: `111`): Self = StObject.set(x, "setGithubActionsPermissionsRepository", value.asInstanceOf[js.Any])
+    inline def setSetGithubActionsDefaultWorkflowPermissionsRepository(value: `111`): Self = StObject.set(x, "setGithubActionsDefaultWorkflowPermissionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedReposForOrgSecret(value: `112`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
+    inline def setSetGithubActionsPermissionsOrganization(value: `112`): Self = StObject.set(x, "setGithubActionsPermissionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedReposForOrgVariable(value: `113`): Self = StObject.set(x, "setSelectedReposForOrgVariable", value.asInstanceOf[js.Any])
+    inline def setSetGithubActionsPermissionsRepository(value: `113`): Self = StObject.set(x, "setGithubActionsPermissionsRepository", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedReposToRequiredWorkflow(value: `114`): Self = StObject.set(x, "setSelectedReposToRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposForOrgSecret(value: `114`): Self = StObject.set(x, "setSelectedReposForOrgSecret", value.asInstanceOf[js.Any])
     
-    inline def setSetSelectedRepositoriesEnabledGithubActionsOrganization(value: `115`): Self = StObject.set(x, "setSelectedRepositoriesEnabledGithubActionsOrganization", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposForOrgVariable(value: `115`): Self = StObject.set(x, "setSelectedReposForOrgVariable", value.asInstanceOf[js.Any])
     
-    inline def setSetWorkflowAccessToRepository(value: `116`): Self = StObject.set(x, "setWorkflowAccessToRepository", value.asInstanceOf[js.Any])
+    inline def setSetSelectedReposToRequiredWorkflow(value: `116`): Self = StObject.set(x, "setSelectedReposToRequiredWorkflow", value.asInstanceOf[js.Any])
     
-    inline def setUpdateEnvironmentVariable(value: `117`): Self = StObject.set(x, "updateEnvironmentVariable", value.asInstanceOf[js.Any])
+    inline def setSetSelectedRepositoriesEnabledGithubActionsOrganization(value: `117`): Self = StObject.set(x, "setSelectedRepositoriesEnabledGithubActionsOrganization", value.asInstanceOf[js.Any])
     
-    inline def setUpdateOrgVariable(value: `118`): Self = StObject.set(x, "updateOrgVariable", value.asInstanceOf[js.Any])
+    inline def setSetWorkflowAccessToRepository(value: `118`): Self = StObject.set(x, "setWorkflowAccessToRepository", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRepoVariable(value: `119`): Self = StObject.set(x, "updateRepoVariable", value.asInstanceOf[js.Any])
+    inline def setUpdateEnvironmentVariable(value: `119`): Self = StObject.set(x, "updateEnvironmentVariable", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRequiredWorkflow(value: `120`): Self = StObject.set(x, "updateRequiredWorkflow", value.asInstanceOf[js.Any])
+    inline def setUpdateOrgVariable(value: `120`): Self = StObject.set(x, "updateOrgVariable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateRepoVariable(value: `121`): Self = StObject.set(x, "updateRepoVariable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateRequiredWorkflow(value: `122`): Self = StObject.set(x, "updateRequiredWorkflow", value.asInstanceOf[js.Any])
   }
 }

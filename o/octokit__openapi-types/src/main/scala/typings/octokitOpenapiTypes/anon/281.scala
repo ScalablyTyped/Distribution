@@ -1,6 +1,5 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.mod.OneOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `281` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: OneOf[js.Tuple2[`279`, `280`]]
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['environment'] */ js.Any
 }
 object `281` {
   
-  inline def apply(applicationSlashjson: OneOf[js.Tuple2[`279`, `280`]]): `281` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['environment'] */ js.Any
+  ): `281` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`281`]
@@ -21,6 +22,8 @@ object `281` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `281`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: OneOf[js.Tuple2[`279`, `280`]]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['environment'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorSchemes extends StObject {
   
   /**
-    * The ID of the basemap associated with the given schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
-    */
+  		 * The ID of the basemap associated with the given schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average basemap color is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
-    */
+  		 * Indicates whether the average basemap color is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
+  		 */
   var basemapTheme: String
   
   /**
-    * The color scheme best suited for the given basemap and geometry type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
-    */
+  		 * The color scheme best suited for the given basemap and geometry type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
+  		 */
   var primaryScheme: ColorScheme
   
   /**
-    * Additional color schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
-    */
+  		 * Additional color schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemes)
+  		 */
   var secondarySchemes: js.Array[ColorScheme]
 }
 object ColorSchemes {

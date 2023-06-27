@@ -7,9 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileName extends StObject {
   
   /**
-    * The filename, which is longer than specified by the value of the property `maximumFilenameLength`.
+    * The name of the file. It should have extension .support-assistant.json". Example: myfile.support-assistant.json
+    * **Note:** Extension ".support-assistant.json" will be appended automatically, if it is not already given.
+    * If only ".json" extension is given, it will be turned to ".support-assistant.json"
     */
   var fileName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The format into which the history object will be converted.
+    */
+  var historyFormat: js.UndefOr[/* was: sap.ui.support.HistoryFormats */ Any] = js.undefined
 }
 object FileName {
   
@@ -24,5 +31,9 @@ object FileName {
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setHistoryFormat(value: /* was: sap.ui.support.HistoryFormats */ Any): Self = StObject.set(x, "historyFormat", value.asInstanceOf[js.Any])
+    
+    inline def setHistoryFormatUndefined: Self = StObject.set(x, "historyFormat", js.undefined)
   }
 }

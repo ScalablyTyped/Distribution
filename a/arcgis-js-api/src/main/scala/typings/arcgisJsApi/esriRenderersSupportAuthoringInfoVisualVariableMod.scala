@@ -12,20 +12,20 @@ object esriRenderersSupportAuthoringInfoVisualVariableMod {
   @JSImport("esri/renderers/support/AuthoringInfoVisualVariable", JSImport.Namespace)
   @js.native
   /**
-    * Contains authoring properties of visual variables generated from one of the Smart Mapping methods or sliders.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html)
-    */
+  		 * Contains authoring properties of visual variables generated from one of the Smart Mapping methods or sliders.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html)
+  		 */
   open class ^ ()
     extends StObject
        with AuthoringInfoVisualVariable {
     def this(properties: AuthoringInfoVisualVariableProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

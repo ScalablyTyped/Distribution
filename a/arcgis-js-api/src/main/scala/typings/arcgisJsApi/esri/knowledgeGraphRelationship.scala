@@ -10,16 +10,16 @@ trait knowledgeGraphRelationship
      with GraphNamedObject {
   
   /**
-    * The ID of the destination entity of the relationship (i.e.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html#destinationId)
-    */
+  		 * The ID of the destination entity of the relationship (i.e.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html#destinationId)
+  		 */
   var destinationId: String = js.native
   
   /**
-    * The ID of the origin entity of the relationship (i.e.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html#originId)
-    */
+  		 * The ID of the origin entity of the relationship (i.e.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-Relationship.html#originId)
+  		 */
   var originId: String = js.native
 }

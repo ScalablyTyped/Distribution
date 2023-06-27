@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreateCylinderParamsSize extends StObject {
   
   /**
-    * The depth of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
-    */
+  		 * The depth of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+  		 */
   var depth: js.UndefOr[Double] = js.undefined
   
   /**
-    * The height of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
-    */
+  		 * The height of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the created mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
-    */
+  		 * The width of the created mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MeshCreateCylinderParamsSize {

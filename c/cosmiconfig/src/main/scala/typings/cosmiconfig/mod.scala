@@ -20,24 +20,64 @@ object mod {
   inline def cosmiconfigSync(moduleName: String): PublicExplorerSync = ^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any]).asInstanceOf[PublicExplorerSync]
   inline def cosmiconfigSync(moduleName: String, options: OptionsSync): PublicExplorerSync = (^.asInstanceOf[js.Dynamic].applyDynamic("cosmiconfigSync")(moduleName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PublicExplorerSync]
   
-  /* Inlined std.Readonly<{ readonly .cjs :cosmiconfig.cosmiconfig.LoaderSync,  readonly .js :cosmiconfig.cosmiconfig.LoaderSync,  readonly .json :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yaml :cosmiconfig.cosmiconfig.LoaderSync,  readonly .yml :cosmiconfig.cosmiconfig.LoaderSync,  readonly noExt :cosmiconfig.cosmiconfig.LoaderSync}> */
+  /* Inlined std.Readonly<{ readonly .mjs :cosmiconfig.cosmiconfig.Loader,  readonly .cjs :cosmiconfig.cosmiconfig.Loader,  readonly .js :cosmiconfig.cosmiconfig.Loader,  readonly .json :cosmiconfig.cosmiconfig.Loader,  readonly .yaml :cosmiconfig.cosmiconfig.Loader,  readonly .yml :cosmiconfig.cosmiconfig.Loader,  readonly noExt :cosmiconfig.cosmiconfig.Loader}> */
   object defaultLoaders {
     
-    @JSImport("cosmiconfig", "defaultLoaders")
+    @JSImport("cosmiconfig", "defaultLoaders..cjs")
     @js.native
-    val ^ : js.Any = js.native
+    val cjs: Loader = js.native
     
-    inline def cjs(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".cjs")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders..js")
+    @js.native
+    val js_ : Loader = js.native
     
-    inline def js_(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".js")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders..json")
+    @js.native
+    val json: Loader = js.native
     
-    inline def json(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".json")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders..mjs")
+    @js.native
+    val mjs: Loader = js.native
     
-    inline def noExt(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic("noExt")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders.noExt")
+    @js.native
+    val noExt: Loader = js.native
     
-    inline def yaml(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".yaml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders..yaml")
+    @js.native
+    val yaml: Loader = js.native
     
-    inline def yml(filepath: String, content: String): LoaderResult = (^.asInstanceOf[js.Dynamic].applyDynamic(".yml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[LoaderResult]
+    @JSImport("cosmiconfig", "defaultLoaders..yml")
+    @js.native
+    val yml: Loader = js.native
+  }
+  
+  /* Inlined std.Readonly<{ readonly .cjs :cosmiconfig.cosmiconfig.Loader,  readonly .js :cosmiconfig.cosmiconfig.Loader,  readonly .json :cosmiconfig.cosmiconfig.Loader,  readonly .yaml :cosmiconfig.cosmiconfig.Loader,  readonly .yml :cosmiconfig.cosmiconfig.Loader,  readonly noExt :cosmiconfig.cosmiconfig.Loader}> */
+  object defaultLoadersSync {
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync..cjs")
+    @js.native
+    val cjs: Loader = js.native
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync..js")
+    @js.native
+    val js_ : Loader = js.native
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync..json")
+    @js.native
+    val json: Loader = js.native
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync.noExt")
+    @js.native
+    val noExt: Loader = js.native
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync..yaml")
+    @js.native
+    val yaml: Loader = js.native
+    
+    @JSImport("cosmiconfig", "defaultLoadersSync..yml")
+    @js.native
+    val yml: Loader = js.native
   }
   
   @JSImport("cosmiconfig", "metaSearchPlaces")

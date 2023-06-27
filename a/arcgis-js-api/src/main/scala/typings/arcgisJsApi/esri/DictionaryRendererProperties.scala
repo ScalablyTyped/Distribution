@@ -12,45 +12,45 @@ trait DictionaryRendererProperties
      with VisualVariablesMixinProperties {
   
   /**
-    * This property allows you to set display options that can be configured on the dictionary symbol style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#config)
-    */
+  		 * This property allows you to set display options that can be configured on the dictionary symbol style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#config)
+  		 */
   var config: js.UndefOr[Any] = js.undefined
   
   /**
-    * Defines a field mapping that maps input fields from the feature to the dictionary symbol style's expected fields for symbols and text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#fieldMap)
-    */
+  		 * Defines a field mapping that maps input fields from the feature to the dictionary symbol style's expected fields for symbols and text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#fieldMap)
+  		 */
   var fieldMap: js.UndefOr[HashMap[String]] = js.undefined
   
   /**
-    * A scaling expression can be set to increase or decrease the size of the dictionary symbols.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression)
-    */
+  		 * A scaling expression can be set to increase or decrease the size of the dictionary symbols.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression)
+  		 */
   var scaleExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpressionTitle)
-    */
+  		 * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpressionTitle)
+  		 */
   var scaleExpressionTitle: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#type)
-    */
+  		 * The type of renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#type)
+  		 */
   var `type`: js.UndefOr[dictionary] = js.undefined
   
   /**
-    * The URL to the dictionary style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
-    */
+  		 * The URL to the dictionary style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object DictionaryRendererProperties {

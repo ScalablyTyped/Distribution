@@ -404,7 +404,7 @@ object app {
        with ContentBounds {
     
     /**
-      * @requires(dev) Chrome dev only
+      * @requires Chrome dev only
       * @requires Permissions: 'app.window.alpha'
       * @description
       * Enable alpha on frame 'none'
@@ -665,7 +665,7 @@ object app {
   trait FrameOptions extends StObject {
     
     /**
-      * @requires(dev) Chrome dev only
+      * @requires Chrome dev only
       * @requires Permissions: 'app.window.alpha'
       * @description
       * Enable alpha on frame 'none'

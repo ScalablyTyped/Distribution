@@ -11,9 +11,9 @@ trait GamepadInputDevice
      with Accessor {
   
   /**
-    * The native Gamepad object exposed by the browser.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadInputDevice.html#native)
-    */
+  		 * The native Gamepad object exposed by the browser.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadInputDevice.html#native)
+  		 */
   val native: Gamepad = js.native
 }

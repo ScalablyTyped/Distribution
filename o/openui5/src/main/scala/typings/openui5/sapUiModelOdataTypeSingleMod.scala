@@ -127,8 +127,8 @@ object sapUiModelOdataTypeSingleMod {
       */
     vValue: String,
       /**
-      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sTargetType: String
     ): Double | String = js.native
@@ -138,48 +138,61 @@ object sapUiModelOdataTypeSingleMod {
       */
     vValue: Double,
       /**
-      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the target type; may be "any", "float", "int", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sTargetType: String
     ): Double | String = js.native
     
-    /**
-      * @SINCE 1.29.0
-      *
-      * Parses the given value, which is expected to be of the given type, to an Edm.Single in `number` representation.
-      *
-      * @returns the parsed value
-      */
     def parseValue(
       /**
-      * the value to be parsed; the empty string and `null` are parsed to `null`; note that there is no way to
-      * enter `Infinity` or `NaN` values
+      * The value to be parsed; note that there is no way to enter `Infinity` or `NaN` values
       */
     vValue: String,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): Double = js.native
+    ): Double | Null = js.native
+    /**
+      * @since 1.29.0
+      *
+      * Parses the given value, which is expected to be of the given type, to an Edm.Single in `number` representation.
+      *
+      * @returns The parsed value. The empty string and `null` are parsed to:
+      * 	 - `0` if the `parseEmptyValueToZero` format option is set to `true` and the `nullable` constraint is
+      *     set to `false`,
+      * 	 - `null` otherwise.
+      */
     def parseValue(
       /**
-      * the value to be parsed; the empty string and `null` are parsed to `null`; note that there is no way to
-      * enter `Infinity` or `NaN` values
+      * The value to be parsed; note that there is no way to enter `Infinity` or `NaN` values
       */
     vValue: Double,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): Double = js.native
+    ): Double | Null = js.native
+    def parseValue(
+      /**
+      * The value to be parsed; note that there is no way to enter `Infinity` or `NaN` values
+      */
+    vValue: Null,
+      /**
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
+      */
+    sSourceType: String
+    ): Double | Null = js.native
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Validates whether the given value in model representation is valid and meets the defined constraints.
       */

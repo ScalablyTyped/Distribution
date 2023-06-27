@@ -11,10 +11,10 @@ open class FeatureEffectLayer ()
      with typings.arcgisJsApi.esri.FeatureEffectLayer {
   
   /**
-    * The featureEffect can be used to draw attention features of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
-    */
+  		 * The featureEffect can be used to draw attention features of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+  		 */
   /* CompleteClass */
   var featureEffect: typings.arcgisJsApi.esri.FeatureEffect = js.native
 }

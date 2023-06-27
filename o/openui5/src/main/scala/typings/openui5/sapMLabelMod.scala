@@ -188,7 +188,7 @@ object sapMLabelMod {
     def getDesign(): LabelDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LabelDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Gets current value of property {@link #getDisplayOnly displayOnly}.
       *
@@ -208,7 +208,7 @@ object sapMLabelMod {
     def getLabelFor(): ID = js.native
     
     /**
-      * Enables the `sap.m.Label` to move inside the sap.m.OverflowToolbar. Required by the {@link sap.m.IOverflowToolbarContent}
+      * Enables the `sap.m.Label` to move inside the sap.m.OverflowToolbar. Required by the {@link sap.m.IOverflowToolbarContent }
       * interface.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
@@ -228,7 +228,7 @@ object sapMLabelMod {
     def getRequired(): Boolean = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getShowColon showColon}.
       *
@@ -277,7 +277,7 @@ object sapMLabelMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getVAlign vAlign}.
       *
@@ -301,7 +301,7 @@ object sapMLabelMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets current value of property {@link #getWrapping wrapping}.
       *
@@ -315,7 +315,7 @@ object sapMLabelMod {
     def getWrapping(): Boolean = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getWrappingType wrappingType}.
       *
@@ -353,7 +353,7 @@ object sapMLabelMod {
     sDesign: LabelDesign): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Sets a new value for property {@link #getDisplayOnly displayOnly}.
       *
@@ -412,7 +412,7 @@ object sapMLabelMod {
     bRequired: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getShowColon showColon}.
       *
@@ -497,7 +497,7 @@ object sapMLabelMod {
     sTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getVAlign vAlign}.
       *
@@ -539,7 +539,7 @@ object sapMLabelMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets a new value for property {@link #getWrapping wrapping}.
       *
@@ -559,7 +559,7 @@ object sapMLabelMod {
     bWrapping: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getWrappingType wrappingType}.
       *
@@ -598,7 +598,7 @@ object sapMLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Determines if the label is in displayOnly mode.
       *
@@ -623,7 +623,7 @@ object sapMLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines whether a colon (:) character is added to the label.
       *
@@ -656,7 +656,7 @@ object sapMLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Specifies the vertical alignment of the `Label` related to the tallest and lowest element on the line.
       */
@@ -672,7 +672,7 @@ object sapMLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Determines the wrapping of the text within the `Label`. If set to true the `Label` will wrap, when set
       * to false the `Label` will be truncated and replaced with ellipsis which is the default behavior.
@@ -682,7 +682,7 @@ object sapMLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Defines the type of text wrapping to be used (hyphenated or normal).
       *

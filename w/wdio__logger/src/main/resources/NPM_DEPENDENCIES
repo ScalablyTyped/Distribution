@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wdio/logger" : "8.6.6"
+      "@wdio/logger" : "8.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wdio/logger" : "8.6.6"
+      "@wdio/logger" : "8.11.0"
     }
   ],
   "compile-devDependencies" : [

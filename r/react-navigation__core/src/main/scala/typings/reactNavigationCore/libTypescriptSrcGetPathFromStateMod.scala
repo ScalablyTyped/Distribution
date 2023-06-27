@@ -17,7 +17,7 @@ object libTypescriptSrcGetPathFromStateMod {
   inline def default[ParamList /* <: js.Object */](state: State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def default[ParamList /* <: js.Object */](state: State, options: Options[ParamList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  trait Options[ParamList] extends StObject {
+  trait Options[ParamList /* <: js.Object */] extends StObject {
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
@@ -25,13 +25,13 @@ object libTypescriptSrcGetPathFromStateMod {
   }
   object Options {
     
-    inline def apply[ParamList](screens: PathConfigMap[ParamList]): Options[ParamList] = {
+    inline def apply[ParamList /* <: js.Object */](screens: PathConfigMap[ParamList]): Options[ParamList] = {
       val __obj = js.Dynamic.literal(screens = screens.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options[ParamList]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options[?], ParamList] (val x: Self & Options[ParamList]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Options[?], ParamList /* <: js.Object */] (val x: Self & Options[ParamList]) extends AnyVal {
       
       inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       

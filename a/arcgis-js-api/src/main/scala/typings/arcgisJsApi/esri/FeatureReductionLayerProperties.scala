@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureReductionLayerProperties extends StObject {
   
   /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
-    */
+  		 * Configures the method for reducing the number of point features in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+  		 */
   var featureReduction: js.UndefOr[
     FeatureReductionBinningPr | FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection
   ] = js.undefined

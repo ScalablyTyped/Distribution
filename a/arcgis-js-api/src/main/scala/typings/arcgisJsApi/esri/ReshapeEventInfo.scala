@@ -12,10 +12,10 @@ trait ReshapeEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * Returns information indicating the stage of the reshape operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ReshapeEventInfo)
-    */
+  		 * Returns information indicating the stage of the reshape operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ReshapeEventInfo)
+  		 */
   var `type`: `reshape-start` | reshape | `reshape-stop`
 }
 object ReshapeEventInfo {

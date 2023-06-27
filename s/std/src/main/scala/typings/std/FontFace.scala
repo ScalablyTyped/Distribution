@@ -4,47 +4,62 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace) */
 trait FontFace extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/ascentOverride) */
   /* standard dom */
   var ascentOverride: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/descentOverride) */
   /* standard dom */
   var descentOverride: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/display) */
   /* standard dom */
   var display: FontDisplay
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/family) */
   /* standard dom */
   var family: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/featureSettings) */
   /* standard dom */
   var featureSettings: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/lineGapOverride) */
   /* standard dom */
   var lineGapOverride: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/load) */
   /* standard dom */
   def load(): js.Promise[FontFace]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/loaded) */
   /* standard dom */
   val loaded: js.Promise[FontFace]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/status) */
   /* standard dom */
   val status: FontFaceLoadStatus
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/stretch) */
   /* standard dom */
   var stretch: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/style) */
   /* standard dom */
   var style: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/unicodeRange) */
   /* standard dom */
   var unicodeRange: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/variant) */
   /* standard dom */
   var variant: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FontFace/weight) */
   /* standard dom */
   var weight: java.lang.String
 }

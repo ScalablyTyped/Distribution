@@ -1,6 +1,9 @@
 package typings.webgpuTypes
 
+import typings.std.HTMLVideoElement
+import typings.std.ImageBitmap
 import typings.std.ReadonlySet
+import typings.std.VideoFrame
 import typings.webgpuTypes.webgpuTypesStrings.`write-only`
 import typings.webgpuTypes.webgpuTypesStrings.auto
 import org.scalablytyped.runtime.StObject
@@ -30,9 +33,20 @@ type GPUExtent3DStrict = js.Iterable[GPUIntegerCoordinate] | GPUExtent3DDictStri
 
 type GPUFlagsConstant = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.std.ImageBitmap
+  - typings.std.HTMLVideoElement
+  - typings.std.VideoFrame
+  - typings.webgpuTypes.HTMLCanvasElement
+  - typings.webgpuTypes.OffscreenCanvas
+*/
+type GPUImageCopyExternalImageSource = _GPUImageCopyExternalImageSource | ImageBitmap | HTMLVideoElement | VideoFrame
+
 type GPUIndex32 = Double
 
 type GPUIntegerCoordinate = Double
+
+type GPUIntegerCoordinateOut = Double
 
 type GPUMapModeFlags = Double
 
@@ -56,7 +70,11 @@ type GPUSignedOffset32 = Double
 
 type GPUSize32 = Double
 
+type GPUSize32Out = Double
+
 type GPUSize64 = Double
+
+type GPUSize64Out = Double
 
 type GPUStencilValue = Double
 

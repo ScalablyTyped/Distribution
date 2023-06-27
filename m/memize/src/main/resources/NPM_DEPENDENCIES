@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "memize" : "2.0.0"
+      "memize" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "memize" : "2.0.0"
+      "memize" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

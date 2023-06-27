@@ -44,12 +44,6 @@ object EmitFlags extends StObject {
   /* 16384 */ val ExportName: typings.typescript.mod.EmitFlags.ExportName & Double = js.native
   
   @js.native
-  sealed trait HasEndOfDeclarationMarker
-    extends StObject
-       with EmitFlags
-  /* 8388608 */ val HasEndOfDeclarationMarker: typings.typescript.mod.EmitFlags.HasEndOfDeclarationMarker & Double = js.native
-  
-  @js.native
   sealed trait HelperName
     extends StObject
        with EmitFlags
@@ -71,7 +65,7 @@ object EmitFlags extends StObject {
   sealed trait Iterator
     extends StObject
        with EmitFlags
-  /* 16777216 */ val Iterator: typings.typescript.mod.EmitFlags.Iterator & Double = js.native
+  /* 8388608 */ val Iterator: typings.typescript.mod.EmitFlags.Iterator & Double = js.native
   
   @js.native
   sealed trait LocalName
@@ -89,7 +83,7 @@ object EmitFlags extends StObject {
   sealed trait NoAsciiEscaping
     extends StObject
        with EmitFlags
-  /* 33554432 */ val NoAsciiEscaping: typings.typescript.mod.EmitFlags.NoAsciiEscaping & Double = js.native
+  /* 16777216 */ val NoAsciiEscaping: typings.typescript.mod.EmitFlags.NoAsciiEscaping & Double = js.native
   
   @js.native
   sealed trait NoComments

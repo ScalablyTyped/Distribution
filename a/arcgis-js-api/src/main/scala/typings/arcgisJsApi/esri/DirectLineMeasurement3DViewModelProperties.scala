@@ -20,26 +20,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurement3DViewModelProperties extends StObject {
   
   /**
-    * The direct line measurement analysis object being created or modified by the view model.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#analysis)
-    */
+  		 * The direct line measurement analysis object being created or modified by the view model.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#analysis)
+  		 */
   var analysis: js.UndefOr[DirectLineMeasurementAnalysisProperties] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * List of unit systems (imperial, metric) and specific units for displaying the distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#unitOptions)
-    */
+  		 * List of unit systems (imperial, metric) and specific units for displaying the distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#unitOptions)
+  		 */
   var unitOptions: js.UndefOr[
     js.Array[
       imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
@@ -47,10 +47,10 @@ trait DirectLineMeasurement3DViewModelProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D-DirectLineMeasurement3DViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object DirectLineMeasurement3DViewModelProperties {

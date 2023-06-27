@@ -492,7 +492,7 @@ object Menu {
   trait Model extends StObject {
     
     /** To enable or disable the Animation while hover or click an menu items.See AnimationType
-      * @Default {ej.AnimationType.Default}
+      * @default {ej.AnimationType.Default}
       */
     var animationType: js.UndefOr[AnimationType | String] = js.undefined
     
@@ -509,12 +509,12 @@ object Menu {
     var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the container element selectors for submenuâ€™s collision. The submenu gets displayed based on spacing available with respect to container element.
-      * @Default {null}
+      * @default {null}
       */
     var container: js.UndefOr[String] = js.undefined
     
     /** Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
-      * @Default {null}
+      * @default {null}
       */
     var contextMenuTarget: js.UndefOr[String] = js.undefined
     
@@ -531,52 +531,52 @@ object Menu {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** To enable or disable the Animation effect while hover or click an menu items.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the root menu items to be aligned center in horizontal menu.
-      * @Default {false}
+      * @default {false}
       */
     var enableCenterAlign: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the menu items to be displayed in right to left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When this property sets to false, the menu items is displayed without any separators.
-      * @Default {true}
+      * @default {true}
       */
     var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Enable / Disable the Menu control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the target which needs to be excluded. i.e., The context menu will not be displayed in those specified targets.
-      * @Default {null}
+      * @default {null}
       */
     var excludeTarget: js.UndefOr[String] = js.undefined
     
     /** Fields used to bind the data source and it includes following field members to make data bind easier.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
     /** Specifies the height of the root menu.
-      * @Default {auto}
+      * @default {auto}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to menu control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables/disables responsive support for the Menu control during the window resizing time.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -585,7 +585,7 @@ object Menu {
     var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.undefined
     
     /** Specifies the type of the menu. Essential JavaScript Menu consists of two type of menu, they are Normal Menu and Context Menu mode.See MenuType
-      * @Default {ej.MenuType.NormalMenu}
+      * @default {ej.MenuType.NormalMenu}
       */
     var menuType: js.UndefOr[String | MenuType] = js.undefined
     
@@ -602,12 +602,12 @@ object Menu {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the sub menu items to be show or open only on click.
-      * @Default {false}
+      * @default {false}
       */
     var openOnClick: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the orientation of normal menu. Normal menu can rendered in horizontal or vertical direction by using this API. See Orientation
-      * @Default {ej.Orientation.Horizontal}
+      * @default {ej.Orientation.Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
@@ -616,7 +616,7 @@ object Menu {
     var overflowClose: js.UndefOr[js.Function1[/* e */ OverflowCloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup menu height.
-      * @Default {auto}
+      * @default {auto}
       */
     var overflowHeight: js.UndefOr[String | Double] = js.undefined
     
@@ -625,32 +625,32 @@ object Menu {
     var overflowOpen: js.UndefOr[js.Function1[/* e */ OverflowOpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup menu width.
-      * @Default {auto}
+      * @default {auto}
       */
     var overflowWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the main menu items arrows only to be shown if it contains child items.
-      * @Default {true}
+      * @default {true}
       */
     var showRootLevelArrows: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the sub menu items arrows only to be shown if it contains child items.
-      * @Default {true}
+      * @default {true}
       */
     var showSubLevelArrows: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies position of pull down submenu that will appear on mouse over.See Direction
-      * @Default {ej.Direction.Right}
+      * @default {ej.Direction.Right}
       */
     var subMenuDirection: js.UndefOr[String | Direction] = js.undefined
     
     /** Specifies the title to responsive menu.
-      * @Default {Menu}
+      * @default {Menu}
       */
     var titleText: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the main menu.
-      * @Default {auto}
+      * @default {auto}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

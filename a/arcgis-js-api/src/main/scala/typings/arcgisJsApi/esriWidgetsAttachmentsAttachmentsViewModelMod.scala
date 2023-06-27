@@ -11,10 +11,10 @@ object esriWidgetsAttachmentsAttachmentsViewModelMod {
   @JSImport("esri/widgets/Attachments/AttachmentsViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Attachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html)
-    */
+  		 * Provides the logic for the [Attachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with AttachmentsViewModel {

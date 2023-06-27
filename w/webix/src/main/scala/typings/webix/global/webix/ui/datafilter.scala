@@ -1,319 +1,82 @@
 package typings.webix.global.webix.ui
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.HTMLElement
-import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datafilter {
   
+  @JSGlobal("webix.ui.datafilter")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSGlobal("webix.ui.datafilter.columnGroup")
   @js.native
-  open class columnGroup ()
-    extends typings.webix.mod.ui.datafilter.columnGroup
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def columnGroup: typings.webix.mod.ui.columnGroup = js.native
+  inline def columnGroup_=(x: typings.webix.mod.ui.columnGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("columnGroup")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.dateFilter")
   @js.native
-  open class dateFilter ()
-    extends typings.webix.mod.ui.datafilter.dateFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def dateFilter: typings.webix.mod.ui.dateFilter = js.native
+  inline def dateFilter_=(x: typings.webix.mod.ui.dateFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.dateRangeFilter")
   @js.native
-  open class dateRangeFilter ()
-    extends typings.webix.mod.ui.datafilter.dateRangeFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def dateRangeFilter: typings.webix.mod.ui.dateRangeFilter = js.native
+  inline def dateRangeFilter_=(x: typings.webix.mod.ui.dateRangeFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateRangeFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.datepickerFilter")
   @js.native
-  open class datepickerFilter ()
-    extends typings.webix.mod.ui.datafilter.datepickerFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def datepickerFilter: typings.webix.mod.ui.datepickerFilter = js.native
+  inline def datepickerFilter_=(x: typings.webix.mod.ui.datepickerFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datepickerFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.masterCheckbox")
   @js.native
-  open class masterCheckbox ()
-    extends typings.webix.mod.ui.datafilter.masterCheckbox
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def masterCheckbox: typings.webix.mod.ui.masterCheckbox = js.native
+  inline def masterCheckbox_=(x: typings.webix.mod.ui.masterCheckbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masterCheckbox")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.multiComboFilter")
   @js.native
-  open class multiComboFilter ()
-    extends typings.webix.mod.ui.datafilter.multiComboFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def multiComboFilter: typings.webix.mod.ui.multiComboFilter = js.native
+  inline def multiComboFilter_=(x: typings.webix.mod.ui.multiComboFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiComboFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.multiSelectFilter")
   @js.native
-  open class multiSelectFilter ()
-    extends typings.webix.mod.ui.datafilter.multiSelectFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def multiSelectFilter: typings.webix.mod.ui.multiSelectFilter = js.native
+  inline def multiSelectFilter_=(x: typings.webix.mod.ui.multiSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.numberFilter")
   @js.native
-  open class numberFilter ()
-    extends typings.webix.mod.ui.datafilter.numberFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def numberFilter: typings.webix.mod.ui.numberFilter = js.native
+  inline def numberFilter_=(x: typings.webix.mod.ui.numberFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("numberFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.selectFilter")
   @js.native
-  open class selectFilter ()
-    extends typings.webix.mod.ui.datafilter.selectFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def selectFilter: typings.webix.mod.ui.selectFilter = js.native
+  inline def selectFilter_=(x: typings.webix.mod.ui.selectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.serverFilter")
   @js.native
-  open class serverFilter ()
-    extends typings.webix.mod.ui.datafilter.serverFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def serverFilter: typings.webix.mod.ui.serverFilter = js.native
+  inline def serverFilter_=(x: typings.webix.mod.ui.serverFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.serverMultiSelectFilter")
   @js.native
-  open class serverMultiSelectFilter ()
-    extends typings.webix.mod.ui.datafilter.serverMultiSelectFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def serverMultiSelectFilter: typings.webix.mod.ui.serverMultiSelectFilter = js.native
+  inline def serverMultiSelectFilter_=(x: typings.webix.mod.ui.serverMultiSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverMultiSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.serverSelectFilter")
   @js.native
-  open class serverSelectFilter ()
-    extends typings.webix.mod.ui.datafilter.serverSelectFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def serverSelectFilter: typings.webix.mod.ui.serverSelectFilter = js.native
+  inline def serverSelectFilter_=(x: typings.webix.mod.ui.serverSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.summColumn")
   @js.native
-  open class summColumn ()
-    extends typings.webix.mod.ui.datafilter.summColumn
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def summColumn: typings.webix.mod.ui.summColumn = js.native
+  inline def summColumn_=(x: typings.webix.mod.ui.summColumn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summColumn")(x.asInstanceOf[js.Any])
   
   @JSGlobal("webix.ui.datafilter.textFilter")
   @js.native
-  open class textFilter ()
-    extends typings.webix.mod.ui.datafilter.textFilter
-       with typings.webix.webix.ui.datafilter.textFilter {
-    
-    /* InferMemberOverrides */
-    override def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* InferMemberOverrides */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* InferMemberOverrides */
-    override def refresh(master: baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def render(master: baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* InferMemberOverrides */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def textFilter: typings.webix.mod.ui.textFilter = js.native
+  inline def textFilter_=(x: typings.webix.mod.ui.textFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textFilter")(x.asInstanceOf[js.Any])
 }

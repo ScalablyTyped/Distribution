@@ -4,62 +4,84 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Enables retrieval and analysis of detailed network timing data regarding the loading of an application's resources. An application can use the timing metrics to determine, for example, the length of time it takes to fetch a specific resource, such as an XMLHttpRequest, <SVG>, image, or script. */
+/**
+  * Enables retrieval and analysis of detailed network timing data regarding the loading of an application's resources. An application can use the timing metrics to determine, for example, the length of time it takes to fetch a specific resource, such as an XMLHttpRequest, <SVG>, image, or script.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming)
+  */
 trait PerformanceResourceTiming
   extends StObject
      with PerformanceEntry {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/connectEnd) */
   /* standard dom */
   val connectEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/connectStart) */
   /* standard dom */
   val connectStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/decodedBodySize) */
   /* standard dom */
   val decodedBodySize: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/domainLookupEnd) */
   /* standard dom */
   val domainLookupEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/domainLookupStart) */
   /* standard dom */
   val domainLookupStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/encodedBodySize) */
   /* standard dom */
   val encodedBodySize: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/fetchStart) */
   /* standard dom */
   val fetchStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/initiatorType) */
   /* standard dom */
   val initiatorType: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/nextHopProtocol) */
   /* standard dom */
   val nextHopProtocol: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/redirectEnd) */
   /* standard dom */
   val redirectEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/redirectStart) */
   /* standard dom */
   val redirectStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/requestStart) */
   /* standard dom */
   val requestStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/responseEnd) */
   /* standard dom */
   val responseEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/responseStart) */
   /* standard dom */
   val responseStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart) */
   /* standard dom */
   val secureConnectionStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/serverTiming) */
   /* standard dom */
   val serverTiming: js.Array[PerformanceServerTiming]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/transferSize) */
   /* standard dom */
   val transferSize: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/workerStart) */
   /* standard dom */
   val workerStart: DOMHighResTimeStamp
 }

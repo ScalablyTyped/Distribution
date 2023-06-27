@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiTableColumnMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `5` extends StObject {
   
   /**
-    * grouped column.
+    * @since 1.60 if it's set to true, the focused element won't be shifted into the viewport if it's not completely
+    * visible before the focus is set
     */
-  var column: js.UndefOr[default] = js.undefined
+  var preventScroll: js.UndefOr[Boolean] = js.undefined
 }
 object `5` {
   
@@ -22,8 +22,8 @@ object `5` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
     
-    inline def setColumn(value: default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     
-    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setPreventScrollUndefined: Self = StObject.set(x, "preventScroll", js.undefined)
   }
 }

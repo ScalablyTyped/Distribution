@@ -10,6 +10,8 @@ trait CalendarMessages extends StObject {
   
   var parentViews: js.UndefOr[CalendarMessagesParentViews] = js.undefined
   
+  var today: js.UndefOr[String] = js.undefined
+  
   var weekColumnHeader: js.UndefOr[String] = js.undefined
 }
 object CalendarMessages {
@@ -29,6 +31,10 @@ object CalendarMessages {
     inline def setParentViews(value: CalendarMessagesParentViews): Self = StObject.set(x, "parentViews", value.asInstanceOf[js.Any])
     
     inline def setParentViewsUndefined: Self = StObject.set(x, "parentViews", js.undefined)
+    
+    inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+    
+    inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
     
     inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     

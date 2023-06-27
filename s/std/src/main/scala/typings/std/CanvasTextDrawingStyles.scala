@@ -6,18 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasTextDrawingStyles extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/direction) */
   /* standard dom */
   var direction: CanvasDirection
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/font) */
   /* standard dom */
   var font: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/fontKerning) */
   /* standard dom */
   var fontKerning: CanvasFontKerning
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textAlign) */
   /* standard dom */
   var textAlign: CanvasTextAlign
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D/textBaseline) */
   /* standard dom */
   var textBaseline: CanvasTextBaseline
 }

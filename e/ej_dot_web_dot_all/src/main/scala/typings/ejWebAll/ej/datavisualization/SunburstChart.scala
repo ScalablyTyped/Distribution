@@ -40,12 +40,12 @@ object SunburstChart {
   trait Border extends StObject {
     
     /** Border color of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst border.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -164,7 +164,7 @@ object SunburstChart {
   trait DataLabelSettings extends StObject {
     
     /** Fill color for the datalabel
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -173,22 +173,22 @@ object SunburstChart {
     var font: js.UndefOr[DataLabelSettingsFont] = js.undefined
     
     /** Datalabel overflow mode
-      * @Default {Trim. See LabelOverflowMode}
+      * @default {Trim. See LabelOverflowMode}
       */
     var labelOverflowMode: js.UndefOr[SunburstLabelOverflowMode | String] = js.undefined
     
     /** Alignment of sunburst datalabel
-      * @Default {Angle. See DatalabelAlignment}
+      * @default {Angle. See DatalabelAlignment}
       */
     var labelRotationMode: js.UndefOr[SunburstLabelRotationMode | String] = js.undefined
     
     /** Custom template for datalabel
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Datalabel visibility of the Sunburst.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -231,32 +231,32 @@ object SunburstChart {
   trait DataLabelSettingsFont extends StObject {
     
     /** Font color of the data label text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
-      * @Default {regular. See FontWeight}
+      * @default {regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -483,27 +483,27 @@ object SunburstChart {
   trait HighlightSettings extends StObject {
     
     /** Color of the levels/point on highlight.
-      * @Default {red}
+      * @default {red}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight the levels or point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the levels or point has to be highlighted.
-      * @Default {point. See Mode}
+      * @default {point. See Mode}
       */
     var mode: js.UndefOr[SunburstHighlightMode | String] = js.undefined
     
     /** Opacity of the levels/point on highlight.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether the levels or data point has to be highlighted.
-      * @Default {opacity. See Mode}
+      * @default {opacity. See Mode}
       */
     var `type`: js.UndefOr[SunburstHighlightType | String] = js.undefined
   }
@@ -542,7 +542,7 @@ object SunburstChart {
   trait Legend extends StObject {
     
     /** Horizontal alignment of the legend.
-      * @Default {Center. See Alignment}
+      * @default {Center. See Alignment}
       */
     var alignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
@@ -551,12 +551,12 @@ object SunburstChart {
     var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Interactive action of legend items.
-      * @Default {toggleSegmentVisibility. See Alignment}
+      * @default {toggleSegmentVisibility. See Alignment}
       */
     var clickAction: js.UndefOr[SunburstClickAction | String] = js.undefined
     
     /** Number of columns to arrange the legend items.
-      * @Default {null}
+      * @default {null}
       */
     var columnCount: js.UndefOr[Double] = js.undefined
     
@@ -565,7 +565,7 @@ object SunburstChart {
     var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
-      * @Default {10}
+      * @default {10}
       */
     var itemPadding: js.UndefOr[Double] = js.undefined
     
@@ -579,17 +579,17 @@ object SunburstChart {
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set
       * **custom** as value to this property.
-      * @Default {Bottom. See Position}
+      * @default {Bottom. See Position}
       */
     var position: js.UndefOr[SunburstLegendPosition | String] = js.undefined
     
     /** Number of rows to arrange the legend items.
-      * @Default {null}
+      * @default {null}
       */
     var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Shape of the legend items.
-      * @Default {None. See Shape}
+      * @default {None. See Shape}
       */
     var shape: js.UndefOr[SunburstLegendShape | String] = js.undefined
     
@@ -602,7 +602,7 @@ object SunburstChart {
     var title: js.UndefOr[LegendTitle] = js.undefined
     
     /** Visibility of the legend.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -677,12 +677,12 @@ object SunburstChart {
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -709,22 +709,22 @@ object SunburstChart {
   trait LegendFont extends StObject {
     
     /** Font family for legend item text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend item text.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend item text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -759,12 +759,12 @@ object SunburstChart {
   trait LegendItemStyle extends StObject {
     
     /** Height of the shape in legend items.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the shape in legend items.
-      * @Default {10}
+      * @default {10}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -791,12 +791,12 @@ object SunburstChart {
   trait LegendLocation extends StObject {
     
     /** X value or horizontal offset to position the legend in chart.
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the legend.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -823,12 +823,12 @@ object SunburstChart {
   trait LegendSize extends StObject {
     
     /** Height of the legend. Height can be specified in either pixel or percentage.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the legend. Width can be specified in either pixel or percentage.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -863,12 +863,12 @@ object SunburstChart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the legend title.
-      * @Default {center. See Alignment}
+      * @default {center. See Alignment}
       */
     var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Enables or disables the legend title.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[String] = js.undefined
   }
@@ -903,22 +903,22 @@ object SunburstChart {
   trait LegendTitleFont extends StObject {
     
     /** Font family for the text in legend title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend title.
-      * @Default {normal. See FontStyle}
+      * @default {normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend title.
-      * @Default {normal. See FontWeight}
+      * @default {normal. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend title.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -953,7 +953,7 @@ object SunburstChart {
   trait Level extends StObject {
     
     /** Specifies the group member path
-      * @Default {null}
+      * @default {null}
       */
     var groupMemberPath: js.UndefOr[String] = js.undefined
   }
@@ -1068,22 +1068,22 @@ object SunburstChart {
   trait Margin extends StObject {
     
     /** Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
-      * @Default {10}
+      * @default {10}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
-      * @Default {10}
+      * @default {10}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
-      * @Default {10}
+      * @default {10}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
-      * @Default {10}
+      * @default {10}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -1122,12 +1122,12 @@ object SunburstChart {
     var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Animation type of sunburst
-      * @Default {rotation. See Alignment}
+      * @default {rotation. See Alignment}
       */
     var animationType: js.UndefOr[Animation | String] = js.undefined
     
     /** Background color of the plot area.
-      * @Default {null}
+      * @default {null}
       */
     var background: js.UndefOr[String] = js.undefined
     
@@ -1144,7 +1144,7 @@ object SunburstChart {
     var dataLabelSettings: js.UndefOr[DataLabelSettings] = js.undefined
     
     /** Specifies the dataSource to the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -1165,12 +1165,12 @@ object SunburstChart {
     var drillDownReset: js.UndefOr[js.Function1[/* e */ DrillDownResetEventArgs, Unit]] = js.undefined
     
     /** Enable/disable the animation for all the levels.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst rendering will end at the specified value
-      * @Default {null}
+      * @default {null}
       */
     var endAngle: js.UndefOr[Double] = js.undefined
     
@@ -1179,12 +1179,12 @@ object SunburstChart {
     var highlightSettings: js.UndefOr[HighlightSettings] = js.undefined
     
     /** Sunburst inner radius value
-      * @Default {0.4}
+      * @default {0.4}
       */
     var innerRadius: js.UndefOr[Double] = js.undefined
     
     /** Controls whether sunburst has to be responsive or not.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1193,7 +1193,7 @@ object SunburstChart {
     var legend: js.UndefOr[Legend] = js.undefined
     
     /** Specify levels of sunburst for grouped visualization of data
-      * @Default {[]}
+      * @default {[]}
       */
     var levels: js.UndefOr[js.Array[Level]] = js.undefined
     
@@ -1210,17 +1210,17 @@ object SunburstChart {
     var margin: js.UndefOr[Margin] = js.undefined
     
     /** Opacity of the levels.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Palette color for the data points.
-      * @Default {null}
+      * @default {null}
       */
     var palette: js.UndefOr[String] = js.undefined
     
     /** Parent node of the data points.
-      * @Default {null}
+      * @default {null}
       */
     var parentNode: js.UndefOr[String] = js.undefined
     
@@ -1241,7 +1241,7 @@ object SunburstChart {
     var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, Unit]] = js.undefined
     
     /** Sunburst outer radius value
-      * @Default {1}
+      * @default {1}
       */
     var radius: js.UndefOr[Double] = js.undefined
     
@@ -1266,12 +1266,12 @@ object SunburstChart {
     var size: js.UndefOr[Size] = js.undefined
     
     /** Sunburst rendering will start from the specified value
-      * @Default {null}
+      * @default {null}
       */
     var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the theme for Sunburst.
-      * @Default {Flatlight. See Theme}
+      * @default {Flatlight. See Theme}
       */
     var theme: js.UndefOr[SunburstTheme | String] = js.undefined
     
@@ -1292,22 +1292,22 @@ object SunburstChart {
     var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.undefined
     
     /** Bind the data field from the data source.
-      * @Default {null}
+      * @default {null}
       */
     var valueMemberPath: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of sunburst.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains x values.
-      * @Default {null}
+      * @default {null}
       */
     var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y values.
-      * @Default {null}
+      * @default {null}
       */
     var yName: js.UndefOr[String] = js.undefined
     
@@ -1604,22 +1604,22 @@ object SunburstChart {
   trait Points extends StObject {
     
     /** Points fill color of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
     /** Points text of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Points x value of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var x: js.UndefOr[String] = js.undefined
     
     /** Points y value of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -1746,12 +1746,12 @@ object SunburstChart {
   trait SegmentBorder extends StObject {
     
     /** Segment Border color of the sunburst.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst segment border.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -1824,27 +1824,27 @@ object SunburstChart {
   trait SelectionSettings extends StObject {
     
     /** Color of the levels/point on selection.
-      * @Default {green}
+      * @default {green}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select the levels or data point interactively.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the levels or data point has to be selected.
-      * @Default {point. See Mode}
+      * @default {point. See Mode}
       */
     var mode: js.UndefOr[SunburstHighlightMode | String] = js.undefined
     
     /** Opacity of the levels/point on selection.
-      * @Default {0.5}
+      * @default {0.5}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether the levels or data point has to be selected.
-      * @Default {opacity. See Mode}
+      * @default {opacity. See Mode}
       */
     var `type`: js.UndefOr[SunburstHighlightType | String] = js.undefined
   }
@@ -1883,12 +1883,12 @@ object SunburstChart {
   trait Size extends StObject {
     
     /** Height of the Sunburst.
-      * @Default {''}
+      * @default {''}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst.
-      * @Default {''}
+      * @default {''}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -1927,12 +1927,12 @@ object SunburstChart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Title text alignment
-      * @Default {center. See TextAlignment}
+      * @default {center. See TextAlignment}
       */
     var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Title text visibility for sunburst
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[String] = js.undefined
   }
@@ -1971,27 +1971,27 @@ object SunburstChart {
   trait TitleFont extends StObject {
     
     /** Font family for Sunburst title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for Sunburst title.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for Sunburst title.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the Sunburst title.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for Sunburst title.
-      * @Default {20px}
+      * @default {20px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2084,12 +2084,12 @@ object SunburstChart {
     var text: js.UndefOr[String] = js.undefined
     
     /** Sub title text alignment
-      * @Default {far. See TextAlignment}
+      * @default {far. See TextAlignment}
       */
     var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Sub title text visibility for sunburst
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[String] = js.undefined
   }
@@ -2124,27 +2124,27 @@ object SunburstChart {
   trait TitleSubtitleFont extends StObject {
     
     /** Font family of sub title.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for sub title.
-      * @Default {Normal. See FontStyle}
+      * @default {Normal. See FontStyle}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for sub title.
-      * @Default {Regular. See FontWeight}
+      * @default {Regular. See FontWeight}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the sub title.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for sub title.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2187,7 +2187,7 @@ object SunburstChart {
     var border: js.UndefOr[TooltipBorder] = js.undefined
     
     /** Fill color for the sunburst tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -2196,22 +2196,22 @@ object SunburstChart {
     var font: js.UndefOr[TooltipFont] = js.undefined
     
     /** Setting the format for the data displayed in the tooltip
-      * @Default {#point.x# : #point.y#}
+      * @default {#point.x# : #point.y#}
       */
     var format: js.UndefOr[String] = js.undefined
     
     /** Sets the opacity of the displayed tooltip
-      * @Default {0.95}
+      * @default {0.95}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Custom template to the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** tooltip visibility of the Sunburst.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -2258,12 +2258,12 @@ object SunburstChart {
   trait TooltipBorder extends StObject {
     
     /** Border color of the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
-      * @Default {5}
+      * @default {5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2290,32 +2290,32 @@ object SunburstChart {
   trait TooltipFont extends StObject {
     
     /** Font color of the text in the tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for the tooltip.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for the tooltip.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font weight for the tooltip.
-      * @Default {Regular}
+      * @default {Regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity for text in the tooltip.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in the tooltip.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2404,17 +2404,17 @@ object SunburstChart {
   trait ZoomSettings extends StObject {
     
     /** Enables or disables zooming.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Toolbar horizontal alignment
-      * @Default {right. See Alignment}
+      * @default {right. See Alignment}
       */
     var toolbarHorizontalAlignment: js.UndefOr[SunburstHorizontalAlignment | String] = js.undefined
     
     /** Toolbar vertical alignment
-      * @Default {top. See Alignment}
+      * @default {top. See Alignment}
       */
     var toolbarVerticalAlignment: js.UndefOr[SunburstVerticalAlignment | String] = js.undefined
   }

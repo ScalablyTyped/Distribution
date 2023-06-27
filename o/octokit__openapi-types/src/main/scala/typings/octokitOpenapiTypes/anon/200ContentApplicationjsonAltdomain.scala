@@ -12,11 +12,11 @@ trait `200ContentApplicationjsonAltdomain` extends StObject {
   /** @description Empty response */
   var `202`: ContentApplicationjsonRecord
   
-  var `404`: Content36
+  var `404`: Content41
 }
 object `200ContentApplicationjsonAltdomain` {
   
-  inline def apply(`200`: ContentApplicationjsonAltdomain, `202`: ContentApplicationjsonRecord, `404`: Content36): `200ContentApplicationjsonAltdomain` = {
+  inline def apply(`200`: ContentApplicationjsonAltdomain, `202`: ContentApplicationjsonRecord, `404`: Content41): `200ContentApplicationjsonAltdomain` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object `200ContentApplicationjsonAltdomain` {
     
     inline def set202(value: ContentApplicationjsonRecord): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

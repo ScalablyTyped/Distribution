@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AltKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -8,6 +7,7 @@ import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcMainLibraryMod.BreadcrumbsDesign
 import typings.openui5.sapUiWebcMainLibraryMod.BreadcrumbsSeparatorStyle
 import typings.openui5.sapUiWebcMainLibraryMod.IBreadcrumbsItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -151,13 +151,13 @@ object sapUiWebcMainBreadcrumbsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Breadcrumbs` itself
       */
@@ -183,7 +183,7 @@ object sapUiWebcMainBreadcrumbsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
@@ -194,7 +194,7 @@ object sapUiWebcMainBreadcrumbsMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Breadcrumbs` itself
       */
@@ -219,13 +219,13 @@ object sapUiWebcMainBreadcrumbsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit]
     ): this.type = js.native
     def detachItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BreadcrumbsItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -233,7 +233,7 @@ object sapUiWebcMainBreadcrumbsMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClick itemClick} to attached listeners.
       *
@@ -243,10 +243,12 @@ object sapUiWebcMainBreadcrumbsMod {
       * @returns Whether or not to prevent the default action
       */
     def fireItemClick(): Boolean = js.native
-    def fireItemClick(/**
+    def fireItemClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AltKey): Boolean = js.native
+    mParameters: Breadcrumbs$ItemClickEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getDesign design}.
@@ -412,6 +414,69 @@ object sapUiWebcMainBreadcrumbsMod {
     sSeparatorStyle: BreadcrumbsSeparatorStyle): this.type = js.native
   }
   
+  trait Breadcrumbs$ItemClickEventParameters extends StObject {
+    
+    /**
+      * Returns whether the "ALT" key was pressed when the event was triggered.
+      */
+    var altKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns whether the "CTRL" key was pressed when the event was triggered.
+      */
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The clicked item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * Returns whether the "META" key was pressed when the event was triggered.
+      */
+    var metaKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns whether the "SHIFT" key was pressed when the event was triggered.
+      */
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
+  }
+  object Breadcrumbs$ItemClickEventParameters {
+    
+    inline def apply(): Breadcrumbs$ItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Breadcrumbs$ItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breadcrumbs$ItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+    }
+  }
+  
+  type BreadcrumbsItemClickEvent = typings.openui5.sapUiBaseEventMod.default[Breadcrumbs$ItemClickEventParameters]
+  
+  type BreadcrumbsItemClickEventParameters = Breadcrumbs$ItemClickEventParameters
+  
   trait BreadcrumbsSettings
     extends StObject
        with ControlSettings {
@@ -431,7 +496,12 @@ object sapUiWebcMainBreadcrumbsMod {
       * Fires when a `BreadcrumbsItem` is clicked. **Note:** You can prevent browser location change by calling
       * `event.preventDefault()`.
       */
-    var itemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Breadcrumbs$ItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the component items.
@@ -477,7 +547,9 @@ object sapUiWebcMainBreadcrumbsMod {
       
       inline def setDesignUndefined: Self = StObject.set(x, "design", js.undefined)
       
-      inline def setItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
+      inline def setItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Breadcrumbs$ItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
       
       inline def setItemClickUndefined: Self = StObject.set(x, "itemClick", js.undefined)
       

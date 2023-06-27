@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__esri.UtilityNetworkAssociations")
 @js.native
+/**
+		 * The UtilityNetworkAssociations widget class, functioning as a part of the ArcGIS Maps SDK for JavaScript, simplifies the management and manipulation of associations within a utility network.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html)
+		 */
 open class UtilityNetworkAssociations ()
   extends StObject
      with typings.arcgisJsApi.esri.UtilityNetworkAssociations {

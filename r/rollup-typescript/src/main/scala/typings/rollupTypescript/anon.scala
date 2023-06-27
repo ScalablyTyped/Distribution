@@ -60,6 +60,7 @@ import typings.typescript.mod.IScriptSnapshot
 import typings.typescript.mod.Identifier
 import typings.typescript.mod.IncrementalProgramOptions
 import typings.typescript.mod.InputFiles
+import typings.typescript.mod.JSDoc
 import typings.typescript.mod.JSDocAugmentsTag
 import typings.typescript.mod.JSDocClassTag
 import typings.typescript.mod.JSDocComment
@@ -210,6 +211,8 @@ object anon {
   
   @js.native
   trait Typeofts extends StObject {
+    
+    val JsTyping: Any = js.native
     
     var OperationCanceledException: Instantiable0[typings.typescript.mod.OperationCanceledException] = js.native
     
@@ -623,7 +626,19 @@ object anon {
     def createModuleResolutionCache(
       currentDirectory: String,
       getCanonicalFileName: js.Function1[/* s */ String, String],
+      options: Unit,
+      packageJsonInfoCache: PackageJsonInfoCache
+    ): ModuleResolutionCache = js.native
+    def createModuleResolutionCache(
+      currentDirectory: String,
+      getCanonicalFileName: js.Function1[/* s */ String, String],
       options: CompilerOptions
+    ): ModuleResolutionCache = js.native
+    def createModuleResolutionCache(
+      currentDirectory: String,
+      getCanonicalFileName: js.Function1[/* s */ String, String],
+      options: CompilerOptions,
+      packageJsonInfoCache: PackageJsonInfoCache
     ): ModuleResolutionCache = js.native
     
     def createPrinter(): Printer = js.native
@@ -1909,6 +1924,27 @@ object anon {
     /** Gets the JSDoc class tag for the node if present */
     def getJSDocClassTag(node: Node): js.UndefOr[JSDocClassTag] = js.native
     
+    /**
+      * This function checks multiple locations for JSDoc comments that apply to a host node.
+      * At each location, the whole comment may apply to the node, or only a specific tag in
+      * the comment. In the first case, location adds the entire {@link JSDoc} object. In the
+      * second case, it adds the applicable {@link JSDocTag}.
+      *
+      * For example, a JSDoc comment before a parameter adds the entire {@link JSDoc}. But a
+      * `@param` tag on the parent function only adds the {@link JSDocTag} for the `@param`.
+      *
+      * ```ts
+      * / ** JSDoc will be returned for `a` *\/
+      * const a = 0
+      * / **
+      *  * Entire JSDoc will be returned for `b`
+      *  * @param c JSDocTag will be returned for `c`
+      *  *\/
+      * function b(/ ** JSDoc will be returned for `c` *\/ c) {}
+      * ```
+      */
+    def getJSDocCommentsAndTags(hostNode: Node): js.Array[JSDoc | JSDocTag] = js.native
+    
     /** Gets the JSDoc deprecated tag for the node if present */
     def getJSDocDeprecatedTag(node: Node): js.UndefOr[JSDocDeprecatedTag] = js.native
     
@@ -2567,6 +2603,8 @@ object anon {
     def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = js.native
     
     def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
+    
+    def isJsxNamespacedName(node: Node): /* is typescript.typescript.JsxNamespacedName */ Boolean = js.native
     
     def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = js.native
     
@@ -3436,7 +3474,7 @@ object anon {
     /** The version of the TypeScript compiler release */
     val version: String = js.native
     
-    val versionMajorMinor: /* "5.0" */ String = js.native
+    val versionMajorMinor: /* "5.1" */ String = js.native
     
     /**
       * Visits the elements of a {@link CommaListExpression}.

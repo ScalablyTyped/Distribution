@@ -18,6 +18,15 @@ that define them are recreated.
 open class WidgetType () extends StObject {
   
   /**
+    Override the way screen coordinates for positions at/in the
+    widget are found. `pos` will be the offset into the widget, and
+    `side` the side of the position that is being queried—less than
+    zero for before, greater than zero for after, and zero for
+    directly at that position.
+    */
+  def coordsAt(dom: HTMLElement, pos: Double, side: Double): Rect | Null = js.native
+  
+  /**
     This is called when the an instance of the widget is removed
     from the editor view.
     */
@@ -50,6 +59,14 @@ open class WidgetType () extends StObject {
   def ignoreEvent(event: Event): Boolean = js.native
   
   /**
+    For inline widgets that are displayed inline (as opposed to
+    `inline-block`) and introduce line breaks (through `<br>` tags
+    or textual newlines), this must indicate the amount of line
+    breaks they introduce. Defaults to 0.
+    */
+  def lineBreaks: Double = js.native
+  
+  /**
     Build the DOM structure for this widget instance.
     */
   def toDOM(view: EditorView): HTMLElement = js.native
@@ -61,5 +78,5 @@ open class WidgetType () extends StObject {
     couldn't (in which case the widget will be redrawn). The default
     implementation just returns false.
     */
-  def updateDOM(dom: HTMLElement): Boolean = js.native
+  def updateDOM(dom: HTMLElement, view: EditorView): Boolean = js.native
 }

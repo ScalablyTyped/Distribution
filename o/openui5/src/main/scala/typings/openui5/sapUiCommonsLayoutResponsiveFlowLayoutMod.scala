@@ -17,8 +17,8 @@ object sapUiCommonsLayoutResponsiveFlowLayoutMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.layout.ResponsiveFlowLayout#constructor
-    * sap.ui.layout.ResponsiveFlowLayout} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.layout.ResponsiveFlowLayout#constructor sap.ui.layout.ResponsiveFlowLayout }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiLayoutResponsiveFlowLayoutMod.default {

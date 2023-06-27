@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeoJSONLayerCapabilitiesData extends StObject {
   
   /**
-    * Indicates if the attachment is enabled on the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Indicates if the attachment is enabled on the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var supportsAttachment: Boolean
   
   /**
-    * Indicates if the features in the layer support m-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Indicates if the features in the layer support m-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var supportsM: Boolean
   
   /**
-    * Indicates if the features in the layer support z-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Indicates if the features in the layer support z-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var supportsZ: Boolean
 }
 object GeoJSONLayerCapabilitiesData {

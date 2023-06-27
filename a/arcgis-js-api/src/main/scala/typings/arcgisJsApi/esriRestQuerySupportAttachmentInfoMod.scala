@@ -12,20 +12,20 @@ object esriRestQuerySupportAttachmentInfoMod {
   @JSImport("esri/rest/query/support/AttachmentInfo", JSImport.Namespace)
   @js.native
   /**
-    * The `AttachmentInfo` class returns information about attachments associated with a feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html)
-    */
+  		 * The `AttachmentInfo` class returns information about attachments associated with a feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with AttachmentInfo {
     def this(properties: AttachmentInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

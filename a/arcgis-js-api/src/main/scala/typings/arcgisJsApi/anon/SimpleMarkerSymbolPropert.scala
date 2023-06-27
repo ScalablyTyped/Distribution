@@ -19,78 +19,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimpleMarkerSymbolPropert extends StObject {
   
   /**
-    * The angle of the marker relative to the screen in degrees.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
-    */
+  		 * The angle of the marker relative to the screen in degrees.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
+  		 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The color of the symbol.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
-    */
+  		 * The color of the symbol.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The outline of the marker symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
-    */
+  		 * The outline of the marker symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * The SVG path of the icon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
-    */
+  		 * The SVG path of the icon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
+  		 */
   var path: js.UndefOr[String] = js.undefined
   
   /**
-    * The size of the marker in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
-    */
+  		 * The size of the marker in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The marker style.
-    *
-    * @default circle
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
-    */
+  		 * The marker style.
+  		 *
+  		 * @default circle
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
+  		 */
   var style: js.UndefOr[circle | square_ | cross | x | diamond | triangle_ | path] = js.undefined
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
+  		 */
   var `type`: js.UndefOr[`simple-marker` | `picture-marker`] = js.undefined
   
   /**
-    * The offset on the x-axis in points.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
-    */
+  		 * The offset on the x-axis in points.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
+  		 */
   var xoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The offset on the y-axis in points.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
-    */
+  		 * The offset on the y-axis in points.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
+  		 */
   var yoffset: js.UndefOr[Double | String] = js.undefined
 }
 object SimpleMarkerSymbolPropert {

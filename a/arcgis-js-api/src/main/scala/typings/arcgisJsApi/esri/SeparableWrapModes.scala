@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeparableWrapModes extends StObject {
   
   /**
-    * Horizontal wrapping mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
-    */
+  		 * Horizontal wrapping mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
+  		 */
   var horizontal: clamp | repeat | mirror
   
   /**
-    * Vertical wrapping mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
-    */
+  		 * Vertical wrapping mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#SeparableWrapModes)
+  		 */
   var vertical: clamp | repeat | mirror
 }
 object SeparableWrapModes {

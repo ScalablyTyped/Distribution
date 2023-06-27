@@ -90,4 +90,34 @@ object anon {
       ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait Hash extends StObject {
+    
+    var hash: js.UndefOr[String] = js.undefined
+    
+    var navigationData: js.UndefOr[Any] = js.undefined
+    
+    var stateKey: String
+  }
+  object Hash {
+    
+    inline def apply(stateKey: String): Hash = {
+      val __obj = js.Dynamic.literal(stateKey = stateKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hash]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setNavigationData(value: Any): Self = StObject.set(x, "navigationData", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationDataUndefined: Self = StObject.set(x, "navigationData", js.undefined)
+      
+      inline def setStateKey(value: String): Self = StObject.set(x, "stateKey", value.asInstanceOf[js.Any])
+    }
+  }
 }

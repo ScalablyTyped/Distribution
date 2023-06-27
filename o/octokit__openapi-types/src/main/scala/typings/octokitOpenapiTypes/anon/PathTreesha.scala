@@ -8,12 +8,12 @@ trait PathTreesha extends StObject {
   
   var path: Treesha
   
-  var query: Recursive
+  var query: js.UndefOr[Recursive] = js.undefined
 }
 object PathTreesha {
   
-  inline def apply(path: Treesha, query: Recursive): PathTreesha = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Treesha): PathTreesha = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathTreesha]
   }
   
@@ -23,5 +23,7 @@ object PathTreesha {
     inline def setPath(value: Treesha): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Recursive): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

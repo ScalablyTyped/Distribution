@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.WebixProxy
 import typings.webix.mod.WebixTemplate
 import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
@@ -89,8 +90,6 @@ trait rangechartConfig extends StObject {
   
   var mouseEventDelay: js.UndefOr[Double] = js.undefined
   
-  var multilevel: js.UndefOr[Boolean] = js.undefined
-  
   var offset: js.UndefOr[Boolean] = js.undefined
   
   var on: js.UndefOr[EventHash] = js.undefined
@@ -123,7 +122,7 @@ trait rangechartConfig extends StObject {
   
   var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[String | obj] = js.undefined
+  var save: js.UndefOr[String | obj | WebixCallback] = js.undefined
   
   var scale: js.UndefOr[String] = js.undefined
   
@@ -137,7 +136,7 @@ trait rangechartConfig extends StObject {
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | WebixProxy] = js.undefined
   
   var value: js.UndefOr[String | WebixTemplate] = js.undefined
   
@@ -325,10 +324,6 @@ object rangechartConfig {
     
     inline def setMouseEventDelayUndefined: Self = StObject.set(x, "mouseEventDelay", js.undefined)
     
-    inline def setMultilevel(value: Boolean): Self = StObject.set(x, "multilevel", value.asInstanceOf[js.Any])
-    
-    inline def setMultilevelUndefined: Self = StObject.set(x, "multilevel", js.undefined)
-    
     inline def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
@@ -393,7 +388,7 @@ object rangechartConfig {
     
     inline def setRemoveMissedUndefined: Self = StObject.set(x, "removeMissed", js.undefined)
     
-    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj | WebixCallback): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
@@ -421,7 +416,7 @@ object rangechartConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | WebixProxy): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

@@ -13,6 +13,7 @@ import typings.devtoolsProtocol.mod.Protocol.Audits.CookieExclusionReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.CookieOperation
 import typings.devtoolsProtocol.mod.Protocol.Audits.CookieWarningReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.FederatedAuthRequestIssueReason
+import typings.devtoolsProtocol.mod.Protocol.Audits.FederatedAuthUserInfoRequestIssueReason
 import typings.devtoolsProtocol.mod.Protocol.Audits.GenericIssueErrorType
 import typings.devtoolsProtocol.mod.Protocol.Audits.GetEncodedResponseRequestEncoding
 import typings.devtoolsProtocol.mod.Protocol.Audits.HeavyAdReason
@@ -21,6 +22,7 @@ import typings.devtoolsProtocol.mod.Protocol.Audits.InspectorIssueCode
 import typings.devtoolsProtocol.mod.Protocol.Audits.MixedContentResolutionStatus
 import typings.devtoolsProtocol.mod.Protocol.Audits.MixedContentResourceType
 import typings.devtoolsProtocol.mod.Protocol.Audits.SharedArrayBufferIssueType
+import typings.devtoolsProtocol.mod.Protocol.Audits.StyleSheetLoadingIssueReason
 import typings.devtoolsProtocol.mod.Protocol.BackgroundService.ServiceName
 import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserCommandId
 import typings.devtoolsProtocol.mod.Protocol.Browser.PermissionSetting
@@ -82,6 +84,7 @@ import typings.devtoolsProtocol.mod.Protocol.Network.BlockedReason
 import typings.devtoolsProtocol.mod.Protocol.Network.CertificateTransparencyCompliance
 import typings.devtoolsProtocol.mod.Protocol.Network.ConnectionType
 import typings.devtoolsProtocol.mod.Protocol.Network.ContentEncoding
+import typings.devtoolsProtocol.mod.Protocol.Network.ContentSecurityPolicySource
 import typings.devtoolsProtocol.mod.Protocol.Network.CookieBlockedReason
 import typings.devtoolsProtocol.mod.Protocol.Network.CookiePriority
 import typings.devtoolsProtocol.mod.Protocol.Network.CookieSameSite
@@ -136,7 +139,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.StartScreencastRequestFormat
 import typings.devtoolsProtocol.mod.Protocol.Page.TransitionType
 import typings.devtoolsProtocol.mod.Protocol.Performance.EnableRequestTimeDomain
 import typings.devtoolsProtocol.mod.Protocol.Performance.SetTimeDomainRequestTimeDomain
-import typings.devtoolsProtocol.mod.Protocol.Preload.PreloadEnabledState
+import typings.devtoolsProtocol.mod.Protocol.Preload.PrefetchStatus
 import typings.devtoolsProtocol.mod.Protocol.Preload.PreloadingStatus
 import typings.devtoolsProtocol.mod.Protocol.Preload.PrerenderFinalStatus
 import typings.devtoolsProtocol.mod.Protocol.Preload.RuleSetErrorType
@@ -332,12 +335,6 @@ object devtoolsProtocolStrings {
     extends StObject
        with PrerenderFinalStatus
   inline def AudioOutputDeviceRequested: AudioOutputDeviceRequested = "AudioOutputDeviceRequested".asInstanceOf[AudioOutputDeviceRequested]
-  
-  @js.native
-  sealed trait AuthorizationHeader
-    extends StObject
-       with BackForwardCacheNotRestoredReason
-  inline def AuthorizationHeader: AuthorizationHeader = "AuthorizationHeader".asInstanceOf[AuthorizationHeader]
   
   @js.native
   sealed trait AutoReauthn
@@ -751,6 +748,12 @@ object devtoolsProtocolStrings {
   inline def ContentWebUSB: ContentWebUSB = "ContentWebUSB".asInstanceOf[ContentWebUSB]
   
   @js.native
+  sealed trait CookieDisabled
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def CookieDisabled: CookieDisabled = "CookieDisabled".asInstanceOf[CookieDisabled]
+  
+  @js.native
   sealed trait CookieIssue
     extends StObject
        with InspectorIssueCode
@@ -900,24 +903,6 @@ object devtoolsProtocolStrings {
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def DisableForRenderFrameHostCalled: DisableForRenderFrameHostCalled = "DisableForRenderFrameHostCalled".asInstanceOf[DisableForRenderFrameHostCalled]
-  
-  @js.native
-  sealed trait DisabledByBatterySaver
-    extends StObject
-       with PreloadEnabledState
-  inline def DisabledByBatterySaver: DisabledByBatterySaver = "DisabledByBatterySaver".asInstanceOf[DisabledByBatterySaver]
-  
-  @js.native
-  sealed trait DisabledByDataSaver
-    extends StObject
-       with PreloadEnabledState
-  inline def DisabledByDataSaver: DisabledByDataSaver = "DisabledByDataSaver".asInstanceOf[DisabledByDataSaver]
-  
-  @js.native
-  sealed trait DisabledByPreference
-    extends StObject
-       with PreloadEnabledState
-  inline def DisabledByPreference: DisabledByPreference = "DisabledByPreference".asInstanceOf[DisabledByPreference]
   
   @js.native
   sealed trait DisabledInSettings
@@ -1080,7 +1065,6 @@ object devtoolsProtocolStrings {
   sealed trait Enabled
     extends StObject
        with OriginTrialStatus
-       with PreloadEnabledState
   inline def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
   
   @js.native
@@ -1229,6 +1213,12 @@ object devtoolsProtocolStrings {
   inline def FederatedAuthRequestIssue: FederatedAuthRequestIssue = "FederatedAuthRequestIssue".asInstanceOf[FederatedAuthRequestIssue]
   
   @js.native
+  sealed trait FederatedAuthUserInfoRequestIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def FederatedAuthUserInfoRequestIssue: FederatedAuthUserInfoRequestIssue = "FederatedAuthUserInfoRequestIssue".asInstanceOf[FederatedAuthUserInfoRequestIssue]
+  
+  @js.native
   sealed trait FencedFramesEmbedder
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -1336,6 +1326,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with InspectorIssueCode
   inline def GenericIssue: GenericIssue = "GenericIssue".asInstanceOf[GenericIssue]
+  
+  @js.native
+  sealed trait HTTP
+    extends StObject
+       with ContentSecurityPolicySource
+  inline def HTTP: HTTP = "HTTP".asInstanceOf[HTTP]
   
   @js.native
   sealed trait HTTPMethodNotGET
@@ -1568,6 +1564,12 @@ object devtoolsProtocolStrings {
   inline def InternetDisconnected: InternetDisconnected = "InternetDisconnected".asInstanceOf[InternetDisconnected]
   
   @js.native
+  sealed trait InvalidAccountsResponse
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def InvalidAccountsResponse: InvalidAccountsResponse = "InvalidAccountsResponse".asInstanceOf[InvalidAccountsResponse]
+  
+  @js.native
   sealed trait InvalidAllowCredentials
     extends StObject
        with CorsError
@@ -1596,6 +1598,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with TrustTokenOperationDoneEventStatus
   inline def InvalidArgument: InvalidArgument = "InvalidArgument".asInstanceOf[InvalidArgument]
+  
+  @js.native
+  sealed trait InvalidConfigOrWellKnown
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def InvalidConfigOrWellKnown: InvalidConfigOrWellKnown = "InvalidConfigOrWellKnown".asInstanceOf[InvalidConfigOrWellKnown]
   
   @js.native
   sealed trait InvalidDomain
@@ -1700,6 +1708,12 @@ object devtoolsProtocolStrings {
   inline def JavaScriptExecution: JavaScriptExecution = "JavaScriptExecution".asInstanceOf[JavaScriptExecution]
   
   @js.native
+  sealed trait JsNetworkRequestReceivedCacheControlNoStoreResource
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def JsNetworkRequestReceivedCacheControlNoStoreResource: JsNetworkRequestReceivedCacheControlNoStoreResource = "JsNetworkRequestReceivedCacheControlNoStoreResource".asInstanceOf[JsNetworkRequestReceivedCacheControlNoStoreResource]
+  
+  @js.native
   sealed trait KeepaliveRequest
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -1710,6 +1724,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def KeyboardLock: KeyboardLock = "KeyboardLock".asInstanceOf[KeyboardLock]
+  
+  @js.native
+  sealed trait LateImportRule
+    extends StObject
+       with StyleSheetLoadingIssueReason
+  inline def LateImportRule: LateImportRule = "LateImportRule".asInstanceOf[LateImportRule]
   
   @js.native
   sealed trait Lax
@@ -1841,6 +1861,12 @@ object devtoolsProtocolStrings {
   inline def MemoryPressureOnTrigger: MemoryPressureOnTrigger = "MemoryPressureOnTrigger".asInstanceOf[MemoryPressureOnTrigger]
   
   @js.native
+  sealed trait Meta
+    extends StObject
+       with ContentSecurityPolicySource
+  inline def Meta: Meta = "Meta".asInstanceOf[Meta]
+  
+  @js.native
   sealed trait MetaTagAllowListInvalidOrigin
     extends StObject
        with ClientHintIssueReason
@@ -1863,6 +1889,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with CorsError
   inline def MissingAllowOriginHeader: MissingAllowOriginHeader = "MissingAllowOriginHeader".asInstanceOf[MissingAllowOriginHeader]
+  
+  @js.native
+  sealed trait MissingIssuerKeys
+    extends StObject
+       with TrustTokenOperationDoneEventStatus
+  inline def MissingIssuerKeys: MissingIssuerKeys = "MissingIssuerKeys".asInstanceOf[MissingIssuerKeys]
   
   @js.native
   sealed trait MixedContent
@@ -1992,6 +2024,18 @@ object devtoolsProtocolStrings {
   inline def NetworkTotalLimit: NetworkTotalLimit = "NetworkTotalLimit".asInstanceOf[NetworkTotalLimit]
   
   @js.native
+  sealed trait NoAccountSharingPermission
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NoAccountSharingPermission: NoAccountSharingPermission = "NoAccountSharingPermission".asInstanceOf[NoAccountSharingPermission]
+  
+  @js.native
+  sealed trait NoApiPermission
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NoApiPermission: NoApiPermission = "NoApiPermission".asInstanceOf[NoApiPermission]
+  
+  @js.native
   sealed trait NoCorsRedirectModeNotFollow
     extends StObject
        with CorsError
@@ -2008,6 +2052,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def NoResponseHead: NoResponseHead = "NoResponseHead".asInstanceOf[NoResponseHead]
+  
+  @js.native
+  sealed trait NoReturningUserFromFetchedAccounts
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NoReturningUserFromFetchedAccounts: NoReturningUserFromFetchedAccounts = "NoReturningUserFromFetchedAccounts".asInstanceOf[NoReturningUserFromFetchedAccounts]
   
   @js.native
   sealed trait NoWebOrOsSupport
@@ -2029,6 +2079,12 @@ object devtoolsProtocolStrings {
        with DebugSymbolsType
        with OriginTrialUsageRestriction
   inline def None: None = "None".asInstanceOf[None]
+  
+  @js.native
+  sealed trait NotIframe
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NotIframe: NotIframe = "NotIframe".asInstanceOf[NotIframe]
   
   @js.native
   sealed trait NotIsolated
@@ -2055,16 +2111,33 @@ object devtoolsProtocolStrings {
   inline def NotOnPath: NotOnPath = "NotOnPath".asInstanceOf[NotOnPath]
   
   @js.native
+  sealed trait NotPotentiallyTrustworthy
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NotPotentiallyTrustworthy: NotPotentiallyTrustworthy = "NotPotentiallyTrustworthy".asInstanceOf[NotPotentiallyTrustworthy]
+  
+  @js.native
   sealed trait NotPrimaryMainFrame
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def NotPrimaryMainFrame: NotPrimaryMainFrame = "NotPrimaryMainFrame".asInstanceOf[NotPrimaryMainFrame]
   
   @js.native
+  sealed trait NotSameOrigin
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NotSameOrigin: NotSameOrigin = "NotSameOrigin".asInstanceOf[NotSameOrigin]
+  
+  @js.native
+  sealed trait NotSignedInWithIdp
+    extends StObject
+       with FederatedAuthUserInfoRequestIssueReason
+  inline def NotSignedInWithIdp: NotSignedInWithIdp = "NotSignedInWithIdp".asInstanceOf[NotSignedInWithIdp]
+  
+  @js.native
   sealed trait NotSupported
     extends StObject
        with OriginTrialTokenStatus
-       with PreloadEnabledState
        with PreloadingStatus
   inline def NotSupported: NotSupported = "NotSupported".asInstanceOf[NotSupported]
   
@@ -2224,6 +2297,186 @@ object devtoolsProtocolStrings {
   inline def Prefetch: Prefetch = "Prefetch".asInstanceOf[Prefetch]
   
   @js.native
+  sealed trait PrefetchAllowed
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchAllowed: PrefetchAllowed = "PrefetchAllowed".asInstanceOf[PrefetchAllowed]
+  
+  @js.native
+  sealed trait PrefetchEvicted
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchEvicted: PrefetchEvicted = "PrefetchEvicted".asInstanceOf[PrefetchEvicted]
+  
+  @js.native
+  sealed trait PrefetchFailedIneligibleRedirect
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedIneligibleRedirect: PrefetchFailedIneligibleRedirect = "PrefetchFailedIneligibleRedirect".asInstanceOf[PrefetchFailedIneligibleRedirect]
+  
+  @js.native
+  sealed trait PrefetchFailedInvalidRedirect
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedInvalidRedirect: PrefetchFailedInvalidRedirect = "PrefetchFailedInvalidRedirect".asInstanceOf[PrefetchFailedInvalidRedirect]
+  
+  @js.native
+  sealed trait PrefetchFailedMIMENotSupported
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedMIMENotSupported: PrefetchFailedMIMENotSupported = "PrefetchFailedMIMENotSupported".asInstanceOf[PrefetchFailedMIMENotSupported]
+  
+  @js.native
+  sealed trait PrefetchFailedNetError
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedNetError: PrefetchFailedNetError = "PrefetchFailedNetError".asInstanceOf[PrefetchFailedNetError]
+  
+  @js.native
+  sealed trait PrefetchFailedNon2XX
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedNon2XX: PrefetchFailedNon2XX = "PrefetchFailedNon2XX".asInstanceOf[PrefetchFailedNon2XX]
+  
+  @js.native
+  sealed trait PrefetchFailedPerPageLimitExceeded
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchFailedPerPageLimitExceeded: PrefetchFailedPerPageLimitExceeded = "PrefetchFailedPerPageLimitExceeded".asInstanceOf[PrefetchFailedPerPageLimitExceeded]
+  
+  @js.native
+  sealed trait PrefetchHeldback
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchHeldback: PrefetchHeldback = "PrefetchHeldback".asInstanceOf[PrefetchHeldback]
+  
+  @js.native
+  sealed trait PrefetchIneligibleRetryAfter
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchIneligibleRetryAfter: PrefetchIneligibleRetryAfter = "PrefetchIneligibleRetryAfter".asInstanceOf[PrefetchIneligibleRetryAfter]
+  
+  @js.native
+  sealed trait PrefetchIsPrivacyDecoy
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchIsPrivacyDecoy: PrefetchIsPrivacyDecoy = "PrefetchIsPrivacyDecoy".asInstanceOf[PrefetchIsPrivacyDecoy]
+  
+  @js.native
+  sealed trait PrefetchIsStale
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchIsStale: PrefetchIsStale = "PrefetchIsStale".asInstanceOf[PrefetchIsStale]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleBatterySaverEnabled
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleBatterySaverEnabled: PrefetchNotEligibleBatterySaverEnabled = "PrefetchNotEligibleBatterySaverEnabled".asInstanceOf[PrefetchNotEligibleBatterySaverEnabled]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleBrowserContextOffTheRecord
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleBrowserContextOffTheRecord: PrefetchNotEligibleBrowserContextOffTheRecord = "PrefetchNotEligibleBrowserContextOffTheRecord".asInstanceOf[PrefetchNotEligibleBrowserContextOffTheRecord]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleDataSaverEnabled
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleDataSaverEnabled: PrefetchNotEligibleDataSaverEnabled = "PrefetchNotEligibleDataSaverEnabled".asInstanceOf[PrefetchNotEligibleDataSaverEnabled]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleExistingProxy
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleExistingProxy: PrefetchNotEligibleExistingProxy = "PrefetchNotEligibleExistingProxy".asInstanceOf[PrefetchNotEligibleExistingProxy]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleHostIsNonUnique
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleHostIsNonUnique: PrefetchNotEligibleHostIsNonUnique = "PrefetchNotEligibleHostIsNonUnique".asInstanceOf[PrefetchNotEligibleHostIsNonUnique]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleNonDefaultStoragePartition
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleNonDefaultStoragePartition: PrefetchNotEligibleNonDefaultStoragePartition = "PrefetchNotEligibleNonDefaultStoragePartition".asInstanceOf[PrefetchNotEligibleNonDefaultStoragePartition]
+  
+  @js.native
+  sealed trait PrefetchNotEligiblePreloadingDisabled
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligiblePreloadingDisabled: PrefetchNotEligiblePreloadingDisabled = "PrefetchNotEligiblePreloadingDisabled".asInstanceOf[PrefetchNotEligiblePreloadingDisabled]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy: PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy = "PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy".asInstanceOf[PrefetchNotEligibleSameSiteCrossOriginPrefetchRequiredProxy]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleSchemeIsNotHttps
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleSchemeIsNotHttps: PrefetchNotEligibleSchemeIsNotHttps = "PrefetchNotEligibleSchemeIsNotHttps".asInstanceOf[PrefetchNotEligibleSchemeIsNotHttps]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleUserHasCookies
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleUserHasCookies: PrefetchNotEligibleUserHasCookies = "PrefetchNotEligibleUserHasCookies".asInstanceOf[PrefetchNotEligibleUserHasCookies]
+  
+  @js.native
+  sealed trait PrefetchNotEligibleUserHasServiceWorker
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotEligibleUserHasServiceWorker: PrefetchNotEligibleUserHasServiceWorker = "PrefetchNotEligibleUserHasServiceWorker".asInstanceOf[PrefetchNotEligibleUserHasServiceWorker]
+  
+  @js.native
+  sealed trait PrefetchNotFinishedInTime
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotFinishedInTime: PrefetchNotFinishedInTime = "PrefetchNotFinishedInTime".asInstanceOf[PrefetchNotFinishedInTime]
+  
+  @js.native
+  sealed trait PrefetchNotStarted
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotStarted: PrefetchNotStarted = "PrefetchNotStarted".asInstanceOf[PrefetchNotStarted]
+  
+  @js.native
+  sealed trait PrefetchNotUsedCookiesChanged
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotUsedCookiesChanged: PrefetchNotUsedCookiesChanged = "PrefetchNotUsedCookiesChanged".asInstanceOf[PrefetchNotUsedCookiesChanged]
+  
+  @js.native
+  sealed trait PrefetchNotUsedProbeFailed
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchNotUsedProbeFailed: PrefetchNotUsedProbeFailed = "PrefetchNotUsedProbeFailed".asInstanceOf[PrefetchNotUsedProbeFailed]
+  
+  @js.native
+  sealed trait PrefetchProxyNotAvailable
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchProxyNotAvailable: PrefetchProxyNotAvailable = "PrefetchProxyNotAvailable".asInstanceOf[PrefetchProxyNotAvailable]
+  
+  @js.native
+  sealed trait PrefetchResponseUsed
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchResponseUsed: PrefetchResponseUsed = "PrefetchResponseUsed".asInstanceOf[PrefetchResponseUsed]
+  
+  @js.native
+  sealed trait PrefetchSuccessfulButNotUsed
+    extends StObject
+       with PrefetchStatus
+  inline def PrefetchSuccessfulButNotUsed: PrefetchSuccessfulButNotUsed = "PrefetchSuccessfulButNotUsed".asInstanceOf[PrefetchSuccessfulButNotUsed]
+  
+  @js.native
   sealed trait Preflight
     extends StObject
        with ResourceType
@@ -2330,6 +2583,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with SpeculationAction
   inline def Prerender: Prerender = "Prerender".asInstanceOf[Prerender]
+  
+  @js.native
+  sealed trait PrerenderingDisabledByDevTools
+    extends StObject
+       with PrerenderFinalStatus
+  inline def PrerenderingDisabledByDevTools: PrerenderingDisabledByDevTools = "PrerenderingDisabledByDevTools".asInstanceOf[PrerenderingDisabledByDevTools]
   
   @js.native
   sealed trait PrimaryMainFrameRendererProcessCrashed
@@ -2475,6 +2734,12 @@ object devtoolsProtocolStrings {
   inline def Request: Request = "Request".asInstanceOf[Request]
   
   @js.native
+  sealed trait RequestFailed
+    extends StObject
+       with StyleSheetLoadingIssueReason
+  inline def RequestFailed: RequestFailed = "RequestFailed".asInstanceOf[RequestFailed]
+  
+  @js.native
   sealed trait RequestedAudioCapturePermission
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -2527,6 +2792,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with TrustTokenOperationDoneEventStatus
   inline def ResourceExhausted: ResourceExhausted = "ResourceExhausted".asInstanceOf[ResourceExhausted]
+  
+  @js.native
+  sealed trait ResourceLoadBlockedByClient
+    extends StObject
+       with PrerenderFinalStatus
+  inline def ResourceLoadBlockedByClient: ResourceLoadBlockedByClient = "ResourceLoadBlockedByClient".asInstanceOf[ResourceLoadBlockedByClient]
   
   @js.native
   sealed trait Response
@@ -2832,6 +3103,12 @@ object devtoolsProtocolStrings {
   inline def Signing: Signing = "Signing".asInstanceOf[Signing]
   
   @js.native
+  sealed trait SilentMediationFailure
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def SilentMediationFailure: SilentMediationFailure = "SilentMediationFailure".asInstanceOf[SilentMediationFailure]
+  
+  @js.native
   sealed trait SourceAndTriggerHeaders
     extends StObject
        with AttributionReportingIssueType
@@ -2903,6 +3180,12 @@ object devtoolsProtocolStrings {
   inline def Stylesheet: Stylesheet = "Stylesheet".asInstanceOf[Stylesheet]
   
   @js.native
+  sealed trait StylesheetLoadingIssue
+    extends StObject
+       with InspectorIssueCode
+  inline def StylesheetLoadingIssue: StylesheetLoadingIssue = "StylesheetLoadingIssue".asInstanceOf[StylesheetLoadingIssue]
+  
+  @js.native
   sealed trait SubframeIsNavigating
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -2970,6 +3253,12 @@ object devtoolsProtocolStrings {
        with CookieBlockedReason
        with SetCookieBlockedReason
   inline def ThirdPartyBlockedInFirstPartySet: ThirdPartyBlockedInFirstPartySet = "ThirdPartyBlockedInFirstPartySet".asInstanceOf[ThirdPartyBlockedInFirstPartySet]
+  
+  @js.native
+  sealed trait ThirdPartyCookiesBlocked
+    extends StObject
+       with FederatedAuthRequestIssueReason
+  inline def ThirdPartyCookiesBlocked: ThirdPartyCookiesBlocked = "ThirdPartyCookiesBlocked".asInstanceOf[ThirdPartyCookiesBlocked]
   
   @js.native
   sealed trait TimedOut
@@ -3300,6 +3589,12 @@ object devtoolsProtocolStrings {
   inline def WebRTC: WebRTC = "WebRTC".asInstanceOf[WebRTC]
   
   @js.native
+  sealed trait WebRTCSticky
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebRTCSticky: WebRTCSticky = "WebRTCSticky".asInstanceOf[WebRTCSticky]
+  
+  @js.native
   sealed trait WebShare
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -3313,10 +3608,22 @@ object devtoolsProtocolStrings {
   inline def WebSocket: WebSocket = "WebSocket".asInstanceOf[WebSocket]
   
   @js.native
+  sealed trait WebSocketSticky
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebSocketSticky: WebSocketSticky = "WebSocketSticky".asInstanceOf[WebSocketSticky]
+  
+  @js.native
   sealed trait WebTransport
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def WebTransport: WebTransport = "WebTransport".asInstanceOf[WebTransport]
+  
+  @js.native
+  sealed trait WebTransportSticky
+    extends StObject
+       with BackForwardCacheNotRestoredReason
+  inline def WebTransportSticky: WebTransportSticky = "WebTransportSticky".asInstanceOf[WebTransportSticky]
   
   @js.native
   sealed trait WebXR
@@ -4095,12 +4402,6 @@ object devtoolsProtocolStrings {
   inline def `ch-ua-bitness`: `ch-ua-bitness` = "ch-ua-bitness".asInstanceOf[`ch-ua-bitness`]
   
   @js.native
-  sealed trait `ch-ua-full`
-    extends StObject
-       with PermissionsPolicyFeature
-  inline def `ch-ua-full`: `ch-ua-full` = "ch-ua-full".asInstanceOf[`ch-ua-full`]
-  
-  @js.native
   sealed trait `ch-ua-full-version`
     extends StObject
        with PermissionsPolicyFeature
@@ -4135,12 +4436,6 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionsPolicyFeature
   inline def `ch-ua-platform-version`: `ch-ua-platform-version` = "ch-ua-platform-version".asInstanceOf[`ch-ua-platform-version`]
-  
-  @js.native
-  sealed trait `ch-ua-reduced`
-    extends StObject
-       with PermissionsPolicyFeature
-  inline def `ch-ua-reduced`: `ch-ua-reduced` = "ch-ua-reduced".asInstanceOf[`ch-ua-reduced`]
   
   @js.native
   sealed trait `ch-ua-wow64`

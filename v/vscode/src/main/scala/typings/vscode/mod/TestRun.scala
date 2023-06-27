@@ -24,7 +24,7 @@ trait TestRun extends StObject {
   def appendOutput(output: String, location: Location, test: TestItem): Unit = js.native
   
   /**
-  		 * Signals that the end of the test run. Any tests included in the run whose
+  		 * Signals the end of the test run. Any tests included in the run whose
   		 * states have not been updated will have their state reset.
   		 */
   def end(): Unit = js.native

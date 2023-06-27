@@ -295,7 +295,7 @@ object distApplyMod {
     glStyle: Any,
     styleUrl: String,
     mapOrGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LayerGroup */ Any
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -303,25 +303,7 @@ object distApplyMod {
     styleUrl: String,
     mapOrGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LayerGroup */ Any,
     options: Options
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
-  /**
-    * If layerIds is not empty, applies the style specified in glStyle to the layer,
-    * and adds the layer to the map.
-    *
-    * The layer may not yet have a source when the function is called.  If so, the style
-    * is applied to the layer via a once listener on the 'change:source' event.
-    *
-    * @param {Layer} layer An OpenLayers layer instance.
-    * @param {Array<string>} layerIds Array containing layer ids of already-processed layers.
-    * @param {Object} glStyle Style as a JSON object.
-    * @param {string|undefined} styleUrl The original style URL. Only required
-    * when a relative path is used with the `"sprite"` property of the style.
-    * @param {Map|LayerGroup} mapOrGroup OpenLayers Map.
-    * @param {Options} options Options.
-    * @return {Promise} Returns a promise that resolves after the source has
-    * been set on the specified layer, and the style has been applied.
-    * @private
-    */
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -331,7 +313,7 @@ object distApplyMod {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
     ]
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -342,14 +324,14 @@ object distApplyMod {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
     ],
     options: Options
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
     glStyle: Any,
     styleUrl: Unit,
     mapOrGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LayerGroup */ Any
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -357,7 +339,7 @@ object distApplyMod {
     styleUrl: Unit,
     mapOrGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LayerGroup */ Any,
     options: Options
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -367,7 +349,7 @@ object distApplyMod {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for K */ Any, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
     ]
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def finalizeLayer(
     layer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer */ Any,
     layerIds: js.Array[String],
@@ -378,7 +360,13 @@ object distApplyMod {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ Any
     ],
     options: Options
-  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("finalizeLayer")(layer.asInstanceOf[js.Any], layerIds.asInstanceOf[js.Any], glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], mapOrGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  
+  inline def setupLayer(glStyle: Any, styleUrl: Any, glLayer: Any, options: Any): js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer<Source, imported_Layer.default<any>> */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("setupLayer")(glStyle.asInstanceOf[js.Any], styleUrl.asInstanceOf[js.Any], glLayer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Layer<Source, imported_Layer.default<any>> */ Any
+  ]]
   
   inline def setupVectorSource(glSource: Any, styleUrl: String, options: Options): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_VectorTile.default */ Any

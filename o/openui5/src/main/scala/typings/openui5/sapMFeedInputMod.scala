@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMAvatarShapeMod.AvatarShape
 import typings.openui5.sapMAvatarSizeMod.AvatarSize
@@ -140,13 +139,13 @@ object sapMFeedInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit]
     ): this.type = js.native
     def attachPost(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedInput` itself
       */
@@ -172,7 +171,7 @@ object sapMFeedInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit]
     ): this.type = js.native
     def attachPost(
       /**
@@ -183,7 +182,7 @@ object sapMFeedInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FeedInput` itself
       */
@@ -201,13 +200,13 @@ object sapMFeedInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit]
     ): this.type = js.native
     def detachPost(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedInputPostEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -215,7 +214,7 @@ object sapMFeedInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:post post} to attached listeners.
       *
@@ -225,7 +224,7 @@ object sapMFeedInputMod {
     def firePost(/**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: FeedInput$PostEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAriaLabelForPicture ariaLabelForPicture}.
@@ -239,7 +238,7 @@ object sapMFeedInputMod {
     def getAriaLabelForPicture(): String = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getButtonTooltip buttonTooltip}.
       *
@@ -320,7 +319,7 @@ object sapMFeedInputMod {
     def getIconDensityAware(): Boolean = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconDisplayShape iconDisplayShape}.
       *
@@ -333,7 +332,7 @@ object sapMFeedInputMod {
     def getIconDisplayShape(): AvatarShape | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AvatarShape * / any */ String) = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconInitials iconInitials}.
       *
@@ -346,7 +345,7 @@ object sapMFeedInputMod {
     def getIconInitials(): String = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Gets current value of property {@link #getIconSize iconSize}.
       *
@@ -448,7 +447,7 @@ object sapMFeedInputMod {
     sAriaLabelForPicture: String): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getButtonTooltip buttonTooltip}.
       *
@@ -567,7 +566,7 @@ object sapMFeedInputMod {
     bIconDensityAware: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconDisplayShape iconDisplayShape}.
       *
@@ -592,7 +591,7 @@ object sapMFeedInputMod {
     sIconDisplayShape: AvatarShape): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconInitials iconInitials}.
       *
@@ -611,7 +610,7 @@ object sapMFeedInputMod {
     sIconInitials: String): this.type = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Sets a new value for property {@link #getIconSize iconSize}.
       *
@@ -744,6 +743,33 @@ object sapMFeedInputMod {
     sValue: String): this.type = js.native
   }
   
+  trait FeedInput$PostEventParameters extends StObject {
+    
+    /**
+      * The value of the feed input before reseting it.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object FeedInput$PostEventParameters {
+    
+    inline def apply(): FeedInput$PostEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedInput$PostEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedInput$PostEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type FeedInputPostEvent = typings.openui5.sapUiBaseEventMod.default[FeedInput$PostEventParameters]
+  
+  type FeedInputPostEventParameters = FeedInput$PostEventParameters
+  
   trait FeedInputSettings
     extends StObject
        with ControlSettings {
@@ -756,7 +782,7 @@ object sapMFeedInputMod {
     var ariaLabelForPicture: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new tooltip for Submit button. The tooltip can either be a simple string (which in most cases
       * will be rendered as the title attribute of this element) or an instance of sap.ui.core.TooltipBase. If
@@ -811,7 +837,7 @@ object sapMFeedInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the shape of the icon.
       */
@@ -820,14 +846,14 @@ object sapMFeedInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the initials of the icon.
       */
     var iconInitials: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Defines the size of the icon.
       */
@@ -850,7 +876,12 @@ object sapMFeedInputMod {
       * The Post event is triggered when the user has entered a value and pressed the post button. After firing
       * this event, the value is reset.
       */
-    var post: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var post: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedInput$PostEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the number of visible text lines for the control. **Note:** Minimum value is 2, maximum value
@@ -947,7 +978,9 @@ object sapMFeedInputMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPost(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+      inline def setPost(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedInput$PostEventParameters] => Unit
+      ): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       

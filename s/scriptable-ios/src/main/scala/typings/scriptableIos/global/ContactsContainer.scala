@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ContactsContainer")
 @js.native
-open class ContactsContainer ()
+/**
+  * _Collection of contacts._
+  * @see https://docs.scriptable.app/contactscontainer
+  */
+/* private */ open class ContactsContainer ()
   extends StObject
      with typings.scriptableIos.ContactsContainer {
   

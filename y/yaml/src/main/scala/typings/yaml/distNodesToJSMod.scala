@@ -3,7 +3,6 @@ package typings.yaml
 import typings.std.Map
 import typings.yaml.distDocDocumentMod.Document
 import typings.yaml.distNodesNodeMod.Node
-import typings.yaml.distStringifyStringifyMod.StringifyContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ object distNodesToJSMod {
     
     var anchors: Map[Node[Any], AnchorData]
     
-    var doc: Document[Node[Any]]
+    var doc: Document[Node[Any], Boolean]
     
     var keep: Boolean
     
@@ -60,34 +59,18 @@ object distNodesToJSMod {
     var maxAliasCount: Double
     
     var onCreate: js.UndefOr[js.Function1[/* res */ Any, Unit]] = js.undefined
-    
-    /** Requiring this directly in Pair would create circular dependencies */
-    def stringify(item: Any, ctx: StringifyContext): String
-    def stringify(item: Any, ctx: StringifyContext, onComment: js.Function0[Unit]): String
-    def stringify(item: Any, ctx: StringifyContext, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String
-    def stringify(item: Any, ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String
-    /** Requiring this directly in Pair would create circular dependencies */
-    @JSName("stringify")
-    var stringify_Original: js.Function4[
-        /* item */ Any, 
-        /* ctx */ StringifyContext, 
-        /* onComment */ js.UndefOr[js.Function0[Unit]], 
-        /* onChompKeep */ js.UndefOr[js.Function0[Unit]], 
-        String
-      ]
   }
   object ToJSContext {
     
     inline def apply(
       anchors: Map[Node[Any], AnchorData],
-      doc: Document[Node[Any]],
+      doc: Document[Node[Any], Boolean],
       keep: Boolean,
       mapAsMap: Boolean,
       mapKeyWarned: Boolean,
-      maxAliasCount: Double,
-      stringify: (/* item */ Any, /* ctx */ StringifyContext, /* onComment */ js.UndefOr[js.Function0[Unit]], /* onChompKeep */ js.UndefOr[js.Function0[Unit]]) => String
+      maxAliasCount: Double
     ): ToJSContext = {
-      val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], keep = keep.asInstanceOf[js.Any], mapAsMap = mapAsMap.asInstanceOf[js.Any], mapKeyWarned = mapKeyWarned.asInstanceOf[js.Any], maxAliasCount = maxAliasCount.asInstanceOf[js.Any], stringify = js.Any.fromFunction4(stringify))
+      val __obj = js.Dynamic.literal(anchors = anchors.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], keep = keep.asInstanceOf[js.Any], mapAsMap = mapAsMap.asInstanceOf[js.Any], mapKeyWarned = mapKeyWarned.asInstanceOf[js.Any], maxAliasCount = maxAliasCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToJSContext]
     }
     
@@ -96,7 +79,7 @@ object distNodesToJSMod {
       
       inline def setAnchors(value: Map[Node[Any], AnchorData]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
-      inline def setDoc(value: Document[Node[Any]]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: Document[Node[Any], Boolean]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
       inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
@@ -109,10 +92,6 @@ object distNodesToJSMod {
       inline def setOnCreate(value: /* res */ Any => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
       
       inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
-      
-      inline def setStringify(
-        value: (/* item */ Any, /* ctx */ StringifyContext, /* onComment */ js.UndefOr[js.Function0[Unit]], /* onChompKeep */ js.UndefOr[js.Function0[Unit]]) => String
-      ): Self = StObject.set(x, "stringify", js.Any.fromFunction4(value))
     }
   }
 }

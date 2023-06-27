@@ -12,10 +12,12 @@ open class SVGAnimatedString ()
   extends StObject
      with typings.std.SVGAnimatedString {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/animVal) */
   /* standard dom */
   /* CompleteClass */
   override val animVal: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/baseVal) */
   /* standard dom */
   /* CompleteClass */
   var baseVal: java.lang.String = js.native

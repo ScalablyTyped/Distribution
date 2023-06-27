@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipSchemeForPolygonColorsForClassBreaks extends StObject {
   
   /**
-    * The colors of the fill symbols used for each bin in the relationship visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolygon)
-    */
+  		 * The colors of the fill symbols used for each bin in the relationship visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolygon)
+  		 */
   var colors: js.Array[js.Array[Color_]]
   
   /**
-    * The number of breaks (rows/columns) for each variable in the relationship visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolygon)
-    */
+  		 * The number of breaks (rows/columns) for each variable in the relationship visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#RelationshipSchemeForPolygon)
+  		 */
   var numClasses: Double
 }
 object RelationshipSchemeForPolygonColorsForClassBreaks {

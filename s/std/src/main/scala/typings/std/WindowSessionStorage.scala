@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WindowSessionStorage extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) */
   /* standard dom */
   val sessionStorage: Storage
 }

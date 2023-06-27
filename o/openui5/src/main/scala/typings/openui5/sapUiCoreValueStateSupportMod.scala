@@ -36,7 +36,7 @@ object sapUiCoreValueStateSupportMod extends Shortcut {
     ): String = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns a ValueState object based on the given integer value
       *

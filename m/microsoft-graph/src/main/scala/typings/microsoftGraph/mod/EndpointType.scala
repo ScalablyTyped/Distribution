@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.default_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.default
+  - typings.microsoftGraph.microsoftGraphStrings.default_
   - typings.microsoftGraph.microsoftGraphStrings.voicemail
   - typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness
   - typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessVoipPhone
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndpointType extends StObject
 object EndpointType {
   
-  inline def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
+  inline def default: default_ = "default".asInstanceOf[default_]
   
   inline def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
   

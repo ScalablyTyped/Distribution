@@ -12,8 +12,8 @@ object sapUiRtaEnablementTestDelegateMod extends Shortcut {
   val default: TestDelegate = js.native
   
   /**
-    * @SINCE 1.77
-    * @EXPERIMENTAL (since 1.77)
+    * @since 1.77
+    * @experimental (since 1.77)
     *
     * sap.ui.fl Delegate to be used in elementActionTests.
     */

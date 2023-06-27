@@ -1,8 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.AfterPopupOpened
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMDateTimeFieldMod.DateTimeFieldSettings
+import typings.openui5.sapMInputBaseMod.InputBase$ChangeEventParameters
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
@@ -130,7 +130,7 @@ object sapMDatePickerMod {
     extends typings.openui5.sapMDateTimeFieldMod.default {
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Adds some `specialDate` to the aggregation `specialDates`.
       *
@@ -144,7 +144,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.DatePicker`.
@@ -160,20 +160,20 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.DatePicker`.
@@ -194,7 +194,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpClose(
       /**
@@ -205,7 +205,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
@@ -213,7 +213,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.DatePicker`.
@@ -229,20 +229,20 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.DatePicker`.
@@ -263,7 +263,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpOpen(
       /**
@@ -274,7 +274,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
@@ -282,7 +282,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.DatePicker`.
       *
@@ -297,20 +297,20 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.DatePicker`.
       *
@@ -330,7 +330,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -341,7 +341,7 @@ object sapMDatePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DatePicker` itself
       */
@@ -349,7 +349,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Destroys all the specialDates in the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -358,7 +358,7 @@ object sapMDatePickerMod {
     def destroySpecialDates(): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.DatePicker`.
@@ -371,13 +371,13 @@ object sapMDatePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterValueHelpClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -385,7 +385,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.DatePicker`.
@@ -398,13 +398,13 @@ object sapMDatePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterValueHelpOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -412,7 +412,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.m.DatePicker`.
       *
@@ -424,13 +424,13 @@ object sapMDatePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DatePickerNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -438,8 +438,8 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpClose afterValueHelpClose} to attached listeners.
       *
@@ -452,8 +452,8 @@ object sapMDatePickerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpOpen afterValueHelpOpen} to attached listeners.
       *
@@ -471,21 +471,23 @@ object sapMDatePickerMod {
     mArguments: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavigate(): this.type = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AfterPopupOpened): this.type = js.native
+    mParameters: DatePicker$NavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -497,7 +499,7 @@ object sapMDatePickerMod {
     def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.6
+      * @since 1.28.6
       *
       * Gets current value of property {@link #getDisplayFormatType displayFormatType}.
       *
@@ -513,7 +515,7 @@ object sapMDatePickerMod {
     def getDisplayFormatType(): String = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getHideInput hideInput}.
       *
@@ -534,18 +536,19 @@ object sapMDatePickerMod {
     def getHideInput(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMaxDate maxDate}.
       *
-      * Maximum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Maximum date that can be shown and selected in the `DatePicker`. This must be a UI5Date or JavaScript
+      * Date object.
       *
       * **Note:** If the `maxDate` is set to be before the `minDate`, the `maxDate` and the `minDate` are switched
       * before rendering.
@@ -555,11 +558,12 @@ object sapMDatePickerMod {
     def getMaxDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMinDate minDate}.
       *
-      * Minimum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Minimum date that can be shown and selected in the `DatePicker`. This must be a UI5Date or JavaScript
+      * Date object.
       *
       * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` and the `minDate` are switched
       * before rendering.
@@ -569,7 +573,7 @@ object sapMDatePickerMod {
     def getMinDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.34.1
+      * @since 1.34.1
       *
       * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -581,7 +585,7 @@ object sapMDatePickerMod {
     def getSecondaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Gets current value of property {@link #getShowCurrentDateButton showCurrentDateButton}.
       *
@@ -597,7 +601,7 @@ object sapMDatePickerMod {
     def getShowCurrentDateButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Gets current value of property {@link #getShowFooter showFooter}.
       *
@@ -610,7 +614,7 @@ object sapMDatePickerMod {
     def getShowFooter(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Gets content of aggregation {@link #getSpecialDates specialDates}.
       *
@@ -626,7 +630,7 @@ object sapMDatePickerMod {
     def getSpecialDates(): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Checks for the provided `sap.ui.core.Element` in the aggregation {@link #getSpecialDates specialDates}.
       * and returns its index if found or -1 otherwise.
@@ -641,7 +645,7 @@ object sapMDatePickerMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Inserts a `specialDate` to the aggregation `specialDates`.
       *
@@ -661,21 +665,21 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the picker is open
       */
     def isOpen(): Boolean = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Returns if the last entered value is valid.
       */
     def isValidValue(): Boolean = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Opens the picker popover. The popover is positioned relatively to the control given as `oDomRef` parameter
       * on tablet or desktop and is full screen on phone. Therefore the control parameter is only used on tablet
@@ -696,7 +700,7 @@ object sapMDatePickerMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Removes all the controls from the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -707,7 +711,7 @@ object sapMDatePickerMod {
     def removeAllSpecialDates(): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Removes a `specialDate` from the aggregation `specialDates`.
       *
@@ -721,7 +725,7 @@ object sapMDatePickerMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -747,7 +751,7 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.6
+      * @since 1.28.6
       *
       * Sets a new value for property {@link #getDisplayFormatType displayFormatType}.
       *
@@ -769,7 +773,7 @@ object sapMDatePickerMod {
     sDisplayFormatType: String): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getHideInput hideInput}.
       *
@@ -796,7 +800,7 @@ object sapMDatePickerMod {
     bHideInput: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Sets the associated legend.
       *
@@ -818,24 +822,32 @@ object sapMDatePickerMod {
     ): this.type = js.native
     
     /**
-      * Set maximum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Set maximum date that can be shown and selected in the `DatePicker`. This must be a date instance.
       *
       * @returns Reference to `this` for method chaining
       */
     def setMaxDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setMaxDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * Set minimum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Set minimum date that can be shown and selected in the `DatePicker`. This must be a date instance.
       *
       * @returns Reference to `this` for method chaining
       */
     def setMinDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setMinDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     def setSecondaryCalendarType(
       /**
@@ -844,7 +856,7 @@ object sapMDatePickerMod {
     sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.34.1
+      * @since 1.34.1
       *
       * Sets a new value for property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -861,7 +873,7 @@ object sapMDatePickerMod {
     sSecondaryCalendarType: CalendarType): this.type = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Sets a new value for property {@link #getShowCurrentDateButton showCurrentDateButton}.
       *
@@ -883,7 +895,7 @@ object sapMDatePickerMod {
     bShowCurrentDateButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Sets `showFooter` property to the given boolean value
       */
@@ -893,26 +905,107 @@ object sapMDatePickerMod {
     bFlag: Unit): Unit = js.native
   }
   
+  trait DatePicker$AfterValueHelpCloseEventParameters extends StObject
+  
+  trait DatePicker$AfterValueHelpOpenEventParameters extends StObject
+  
+  trait DatePicker$ChangeEventParameters
+    extends StObject
+       with InputBase$ChangeEventParameters {
+    
+    /**
+      * Indicator for a valid date.
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+  }
+  object DatePicker$ChangeEventParameters {
+    
+    inline def apply(): DatePicker$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DatePicker$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePicker$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    }
+  }
+  
+  trait DatePicker$NavigateEventParameters extends StObject {
+    
+    /**
+      * Indicates if the event is fired, due to popup being opened.
+      */
+    var afterPopupOpened: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Date range containing the start and end date displayed in the `Calendar` popup.
+      */
+    var dateRange: js.UndefOr[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.undefined
+  }
+  object DatePicker$NavigateEventParameters {
+    
+    inline def apply(): DatePicker$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DatePicker$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePicker$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAfterPopupOpened(value: Boolean): Self = StObject.set(x, "afterPopupOpened", value.asInstanceOf[js.Any])
+      
+      inline def setAfterPopupOpenedUndefined: Self = StObject.set(x, "afterPopupOpened", js.undefined)
+      
+      inline def setDateRange(value: typings.openui5.sapUiUnifiedDateRangeMod.default): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+      
+      inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    }
+  }
+  
+  type DatePickerAfterValueHelpCloseEvent = typings.openui5.sapUiBaseEventMod.default[DatePicker$AfterValueHelpCloseEventParameters]
+  
+  type DatePickerAfterValueHelpCloseEventParameters = DatePicker$AfterValueHelpCloseEventParameters
+  
+  type DatePickerAfterValueHelpOpenEvent = typings.openui5.sapUiBaseEventMod.default[DatePicker$AfterValueHelpOpenEventParameters]
+  
+  type DatePickerAfterValueHelpOpenEventParameters = DatePicker$AfterValueHelpOpenEventParameters
+  
+  type DatePickerChangeEvent = typings.openui5.sapUiBaseEventMod.default[DatePicker$ChangeEventParameters]
+  
+  type DatePickerChangeEventParameters = DatePicker$ChangeEventParameters
+  
+  type DatePickerNavigateEvent = typings.openui5.sapUiBaseEventMod.default[DatePicker$NavigateEventParameters]
+  
+  type DatePickerNavigateEventParameters = DatePicker$NavigateEventParameters
+  
   trait DatePickerSettings
     extends StObject
        with DateTimeFieldSettings {
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired when `value help` dialog closes.
       */
-    var afterValueHelpClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterValueHelpClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired when `value help` dialog opens.
       */
-    var afterValueHelpOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterValueHelpOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used.
@@ -922,7 +1015,7 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.6
+      * @since 1.28.6
       *
       * Displays date in this given type in input field. Default value is taken from locale settings. Accepted
       * are values of `sap.ui.core.CalendarType` or an empty string. If no type is set, the default type of the
@@ -932,7 +1025,7 @@ object sapMDatePickerMod {
     var displayFormatType: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Determines whether the input field of the picker is hidden or visible. When set to `true`, the input
       * field becomes invisible and there is no way to open the picker popover. In that case it can be opened
@@ -949,7 +1042,7 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Association to the `CalendarLegend` explaining the colors of the `specialDates`.
       *
@@ -958,9 +1051,10 @@ object sapMDatePickerMod {
     var legend: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
-      * Maximum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Maximum date that can be shown and selected in the `DatePicker`. This must be a UI5Date or JavaScript
+      * Date object.
       *
       * **Note:** If the `maxDate` is set to be before the `minDate`, the `maxDate` and the `minDate` are switched
       * before rendering.
@@ -970,9 +1064,10 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
-      * Minimum date that can be shown and selected in the `DatePicker`. This must be a JavaScript date object.
+      * Minimum date that can be shown and selected in the `DatePicker`. This must be a UI5Date or JavaScript
+      * Date object.
       *
       * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` and the `minDate` are switched
       * before rendering.
@@ -982,14 +1077,19 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Fired when navigating in `Calendar` popup.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DatePicker$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.34.1
+      * @since 1.34.1
       *
       * If set, the days in the calendar popup are also displayed in this calendar type If not set, the dates
       * are only displayed in the primary calendar type
@@ -999,7 +1099,7 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Determines whether there is a shortcut navigation to Today. When used in Month, Year or Year-range picker
       * view, the calendar navigates to Day picker view.
@@ -1011,7 +1111,7 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Hides or shows the popover's footer.
       */
@@ -1020,7 +1120,7 @@ object sapMDatePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Date Range with type to visualize special days in the Calendar. If one day is assigned to more than one
       * Type, only the first one will be used.
@@ -1045,11 +1145,11 @@ object sapMDatePickerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DatePickerSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterValueHelpClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterValueHelpClose", js.Any.fromFunction1(value))
+      inline def setAfterValueHelpClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterValueHelpClose", js.Any.fromFunction1(value))
       
       inline def setAfterValueHelpCloseUndefined: Self = StObject.set(x, "afterValueHelpClose", js.undefined)
       
-      inline def setAfterValueHelpOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterValueHelpOpen", js.Any.fromFunction1(value))
+      inline def setAfterValueHelpOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterValueHelpOpen", js.Any.fromFunction1(value))
       
       inline def setAfterValueHelpOpenUndefined: Self = StObject.set(x, "afterValueHelpOpen", js.undefined)
       
@@ -1079,7 +1179,9 @@ object sapMDatePickerMod {
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DatePicker$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       

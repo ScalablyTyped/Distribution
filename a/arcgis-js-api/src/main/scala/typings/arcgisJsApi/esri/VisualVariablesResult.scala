@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisualVariablesResult extends StObject {
   
   /**
-    * Authoring information related to the creation of the visual variables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Authoring information related to the creation of the visual variables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var authoringInfo: AuthoringInfo
   
   /**
-    * The ID of the basemap used to determine the optimal fill color of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * The ID of the basemap used to determine the optimal fill color of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * Object containing visual variable and scheme information for the color portion of the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Object containing visual variable and scheme information for the color portion of the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var color: VisualVariablesResultColor
   
   /**
-    * Indicates whether default values were used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Indicates whether default values were used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * Object containing visual variable and scheme information for the size portion of the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Object containing visual variable and scheme information for the size portion of the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var size: VisualVariablesResultSize
   
   /**
-    * Basic statistics returned from a query to the service for the given field or expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * Basic statistics returned from a query to the service for the given field or expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var statistics: SummaryStatisticsResult
 }
 object VisualVariablesResult {

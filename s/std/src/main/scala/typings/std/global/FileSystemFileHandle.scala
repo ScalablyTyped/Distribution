@@ -1,7 +1,6 @@
 package typings.std.global
 
 import typings.std.FileSystemHandleKind
-import typings.std.stdStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,22 +13,17 @@ open class FileSystemFileHandle ()
   extends StObject
      with typings.std.FileSystemFileHandle {
   
-  /* standard dom */
-  /* CompleteClass */
-  override def getFile(): js.Promise[typings.std.File] = js.native
-  
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/isSameEntry) */
   /* standard dom */
   /* CompleteClass */
   override def isSameEntry(other: typings.std.FileSystemHandle): js.Promise[scala.Boolean] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/kind) */
   /* standard dom */
   /* CompleteClass */
   override val kind: FileSystemHandleKind = js.native
-  /* standard dom */
-  /* CompleteClass */
-  @JSName("kind")
-  override val kind_FileSystemFileHandle: file = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native

@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Allowforcepushes extends StObject {
   
-  var allow_deletions: js.UndefOr[`438`] = js.undefined
+  var allow_deletions: js.UndefOr[`516`] = js.undefined
   
-  var allow_force_pushes: js.UndefOr[`438`] = js.undefined
+  var allow_force_pushes: js.UndefOr[`516`] = js.undefined
   
   /** @description Whether users can pull changes from upstream when the branch is locked. Set to `true` to allow fork syncing. Set to `false` to prevent fork syncing. */
-  var allow_fork_syncing: js.UndefOr[`438`] = js.undefined
+  var allow_fork_syncing: js.UndefOr[`516`] = js.undefined
   
-  var block_creations: js.UndefOr[`438`] = js.undefined
+  var block_creations: js.UndefOr[`516`] = js.undefined
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   var enforce_admins: js.UndefOr[EnabledUrl] = js.undefined
   
   /** @description Whether to set the branch as read-only. If this is true, users will not be able to push to the branch. */
-  var lock_branch: js.UndefOr[`438`] = js.undefined
+  var lock_branch: js.UndefOr[`516`] = js.undefined
   
   /** @example "branch/with/protection" */
   var name: js.UndefOr[String] = js.undefined
@@ -28,9 +28,9 @@ trait Allowforcepushes extends StObject {
   /** @example "https://api.github.com/repos/owner-79e94e2d36b3fd06a32bb213/AAA_Public_Repo/branches/branch/with/protection/protection" */
   var protection_url: js.UndefOr[String] = js.undefined
   
-  var required_conversation_resolution: js.UndefOr[`438`] = js.undefined
+  var required_conversation_resolution: js.UndefOr[`516`] = js.undefined
   
-  var required_linear_history: js.UndefOr[`438`] = js.undefined
+  var required_linear_history: js.UndefOr[`516`] = js.undefined
   
   var required_pull_request_reviews: js.UndefOr[Dismissstalereviews] = js.undefined
   
@@ -52,19 +52,19 @@ object Allowforcepushes {
   @scala.inline
   implicit open class MutableBuilder[Self <: Allowforcepushes] (val x: Self) extends AnyVal {
     
-    inline def setAllow_deletions(value: `438`): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
+    inline def setAllow_deletions(value: `516`): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     
     inline def setAllow_deletionsUndefined: Self = StObject.set(x, "allow_deletions", js.undefined)
     
-    inline def setAllow_force_pushes(value: `438`): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
+    inline def setAllow_force_pushes(value: `516`): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
     
     inline def setAllow_force_pushesUndefined: Self = StObject.set(x, "allow_force_pushes", js.undefined)
     
-    inline def setAllow_fork_syncing(value: `438`): Self = StObject.set(x, "allow_fork_syncing", value.asInstanceOf[js.Any])
+    inline def setAllow_fork_syncing(value: `516`): Self = StObject.set(x, "allow_fork_syncing", value.asInstanceOf[js.Any])
     
     inline def setAllow_fork_syncingUndefined: Self = StObject.set(x, "allow_fork_syncing", js.undefined)
     
-    inline def setBlock_creations(value: `438`): Self = StObject.set(x, "block_creations", value.asInstanceOf[js.Any])
+    inline def setBlock_creations(value: `516`): Self = StObject.set(x, "block_creations", value.asInstanceOf[js.Any])
     
     inline def setBlock_creationsUndefined: Self = StObject.set(x, "block_creations", js.undefined)
     
@@ -76,7 +76,7 @@ object Allowforcepushes {
     
     inline def setEnforce_adminsUndefined: Self = StObject.set(x, "enforce_admins", js.undefined)
     
-    inline def setLock_branch(value: `438`): Self = StObject.set(x, "lock_branch", value.asInstanceOf[js.Any])
+    inline def setLock_branch(value: `516`): Self = StObject.set(x, "lock_branch", value.asInstanceOf[js.Any])
     
     inline def setLock_branchUndefined: Self = StObject.set(x, "lock_branch", js.undefined)
     
@@ -88,11 +88,11 @@ object Allowforcepushes {
     
     inline def setProtection_urlUndefined: Self = StObject.set(x, "protection_url", js.undefined)
     
-    inline def setRequired_conversation_resolution(value: `438`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
+    inline def setRequired_conversation_resolution(value: `516`): Self = StObject.set(x, "required_conversation_resolution", value.asInstanceOf[js.Any])
     
     inline def setRequired_conversation_resolutionUndefined: Self = StObject.set(x, "required_conversation_resolution", js.undefined)
     
-    inline def setRequired_linear_history(value: `438`): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
+    inline def setRequired_linear_history(value: `516`): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
     
     inline def setRequired_linear_historyUndefined: Self = StObject.set(x, "required_linear_history", js.undefined)
     

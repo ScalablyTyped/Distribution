@@ -1,6 +1,7 @@
 package typings.debug
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.debug.anon.Colors
 import typings.debug.anon.FnCall
 import typings.ms.anon.Long
 import org.scalablytyped.runtime.StObject
@@ -52,6 +53,11 @@ object mod {
   inline def humanize(value: Double, options: Long): String = (^.asInstanceOf[js.Dynamic].applyDynamic("humanize")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def humanize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("humanize")(x.asInstanceOf[js.Any])
   
+  @JSImport("debug", "inspectOpts")
+  @js.native
+  def inspectOpts: js.UndefOr[Colors] = js.native
+  inline def inspectOpts_=(x: js.UndefOr[Colors]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inspectOpts")(x.asInstanceOf[js.Any])
+  
   inline def log(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   @JSImport("debug", "names")
@@ -88,6 +94,8 @@ object mod {
     def humanize(value: Double, options: Long): String = js.native
     @JSName("humanize")
     var humanize_Original: FnCall = js.native
+    
+    var inspectOpts: js.UndefOr[Colors] = js.native
     
     def log(args: Any*): Any = js.native
     

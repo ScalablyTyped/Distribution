@@ -21,7 +21,7 @@ trait MultiSelectOptions extends StObject {
   
   /**
     * The class of the multiselect button.
-    * @exampl.
+    * @example
     * $('#example-buttonClass').multiselect({
     *      buttonClass: 'btn btn-link'
     *   });
@@ -30,7 +30,7 @@ trait MultiSelectOptions extends StObject {
   
   /**
     * The container holding both the button as well as the dropdown.
-    * @exampl.
+    * @example
     * $('#example-buttonContainer').multiselect({
     *       buttonContainer: '<div class="btn-group" />'
     *   });
@@ -65,7 +65,7 @@ trait MultiSelectOptions extends StObject {
   /**
     * The width of the multiselect button may be fixed using this option.
     * Actually, buttonWidth describes the width of the .btn-group container and the width of the button is set to 100%.
-    * @example.
+    * @example
     * $('#example-buttonWidth').multiselect({
     *       buttonWidth: '400px'
     *   });

@@ -68,14 +68,14 @@ trait DeleteRequestBodyContentApplicationjsonAuthorBranch extends StObject {
     *
     * **Note:** If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/reference/repos/#delete-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
-  var put: Parameters222
+  var put: Parameters262
 }
 object DeleteRequestBodyContentApplicationjsonAuthorBranch {
   
   inline def apply(
     delete: RequestBodyContentApplicationjsonAuthorBranch,
     get: ParametersPathOwnerPath,
-    put: Parameters222
+    put: Parameters262
   ): DeleteRequestBodyContentApplicationjsonAuthorBranch = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRequestBodyContentApplicationjsonAuthorBranch]
@@ -88,6 +88,6 @@ object DeleteRequestBodyContentApplicationjsonAuthorBranch {
     
     inline def setGet(value: ParametersPathOwnerPath): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Parameters222): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Parameters262): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

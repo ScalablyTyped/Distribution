@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DateTimeElementViewModel extends StObject {
   
   /**
-    * The current state of the widget.
-    *
-    * @default ready
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
-    */
+  		 * The current state of the widget.
+  		 *
+  		 * @default ready
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
+  		 */
   var state: ready
   
   /**
-    * The selected date.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
-    */
+  		 * The selected date.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
+  		 */
   var value: js.Date
 }
 object DateTimeElementViewModel {

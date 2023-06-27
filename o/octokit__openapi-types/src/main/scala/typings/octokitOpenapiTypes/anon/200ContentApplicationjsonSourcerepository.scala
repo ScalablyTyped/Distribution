@@ -9,11 +9,11 @@ trait `200ContentApplicationjsonSourcerepository` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonSourcerepository
   
-  var `404`: Content36
+  var `404`: Content41
 }
 object `200ContentApplicationjsonSourcerepository` {
   
-  inline def apply(`200`: ContentApplicationjsonSourcerepository, `404`: Content36): `200ContentApplicationjsonSourcerepository` = {
+  inline def apply(`200`: ContentApplicationjsonSourcerepository, `404`: Content41): `200ContentApplicationjsonSourcerepository` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
@@ -25,6 +25,6 @@ object `200ContentApplicationjsonSourcerepository` {
     
     inline def set200(value: ContentApplicationjsonSourcerepository): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

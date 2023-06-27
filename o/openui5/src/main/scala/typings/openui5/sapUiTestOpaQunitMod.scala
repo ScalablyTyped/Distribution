@@ -16,9 +16,8 @@ object sapUiTestOpaQunitMod {
     */
   testName: String,
     /**
-    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link
-    * sap.ui.test.Opa.config}.actions, {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled
-    * by OPA
+    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link sap.ui.test.Opa.config}.actions,
+    * {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled by OPA
     */
   callback: js.Function
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(testName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -28,9 +27,8 @@ object sapUiTestOpaQunitMod {
     */
   testName: String,
     /**
-    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link
-    * sap.ui.test.Opa.config}.actions, {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled
-    * by OPA
+    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link sap.ui.test.Opa.config}.actions,
+    * {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled by OPA
     */
   callback: js.Function,
     /**
@@ -48,9 +46,8 @@ object sapUiTestOpaQunitMod {
     */
   expected: int,
     /**
-    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link
-    * sap.ui.test.Opa.config}.actions, {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled
-    * by OPA
+    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link sap.ui.test.Opa.config}.actions,
+    * {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled by OPA
     */
   callback: js.Function
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(testName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -64,9 +61,8 @@ object sapUiTestOpaQunitMod {
     */
   expected: int,
     /**
-    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link
-    * sap.ui.test.Opa.config}.actions, {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled
-    * by OPA
+    * the test function. Expects 3 arguments, in order: {@link sap.ui.test.Opa.config}.arrangements, {@link sap.ui.test.Opa.config}.actions,
+    * {@link sap.ui.test.Opa.config}.assertions. These arguments will be prefilled by OPA
     */
   callback: js.Function,
     /**

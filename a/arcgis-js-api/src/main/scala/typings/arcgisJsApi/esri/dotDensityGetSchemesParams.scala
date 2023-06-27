@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait dotDensityGetSchemesParams extends StObject {
   
   /**
-    * The Esri basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
-    */
+  		 * The Esri basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The number of colors to visualize.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
-    */
+  		 * The number of colors to visualize.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
+  		 */
   var numColors: Double
 }
 object dotDensityGetSchemesParams {

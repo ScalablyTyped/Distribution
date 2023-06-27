@@ -13,7 +13,7 @@ object sapUiModelCompositeBindingMod {
   /**
     * Constructor for CompositeBinding.
     * See:
-    * 	{@link topic:a2fe8e763014477e87990ff50657a0d0}
+    * 	{@link https://ui5.sap.com/#/topic/a2fe8e763014477e87990ff50657a0d0}
     */
   open class default () extends CompositeBinding
   /* static members */
@@ -87,6 +87,66 @@ object sapUiModelCompositeBindingMod {
   @js.native
   trait CompositeBinding
     extends typings.openui5.sapUiModelPropertyBindingMod.default {
+    
+    /**
+      * Protected:  Do not call from applications (only from related classes in the framework)
+      *
+      * Detaches event handler `fnFunction` from the `AggregatedDataStateChange` event of this `sap.ui.model.CompositeBinding`.
+      */
+    def detachAggregatedDataStateChange(/**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function): Unit = js.native
+    def detachAggregatedDataStateChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function,
+      /**
+      * Object on which to call the given function
+      */
+    oListener: js.Object
+    ): Unit = js.native
+    
+    /**
+      * Protected:  Do not call from applications (only from related classes in the framework)
+      *
+      * Detaches event handler `fnFunction` from the `change` event of this `sap.ui.model.CompositeBinding`.
+      */
+    def detachChange(/**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function): Unit = js.native
+    def detachChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function,
+      /**
+      * Object on which to call the given function
+      */
+    oListener: js.Object
+    ): Unit = js.native
+    
+    /**
+      * Protected:  Do not call from applications (only from related classes in the framework)
+      *
+      * Detaches event handler `fnFunction` from the `DataStateChange` event of this `sap.ui.model.CompositeBinding`.
+      */
+    def detachDataStateChange(/**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function): Unit = js.native
+    def detachDataStateChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function,
+      /**
+      * Object on which to call the given function
+      */
+    oListener: js.Object
+    ): Unit = js.native
     
     /**
       * Returns the property bindings contained in this composite binding.

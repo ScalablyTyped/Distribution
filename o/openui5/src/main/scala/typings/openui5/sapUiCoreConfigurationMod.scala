@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.DateFormat
+import org.scalablytyped.runtime.Shortcut
 import typings.openui5.openui5Strings.A
 import typings.openui5.openui5Strings.B
 import typings.openui5.openui5Strings.C
@@ -25,16 +25,13 @@ import typings.openui5.openui5Strings.plusSign
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
 import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
+import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object sapUiCoreConfigurationMod {
-  
-  @JSImport("sap/ui/core/Configuration", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
+object sapUiCoreConfigurationMod extends Shortcut {
   
   @JSImport("sap/ui/core/Configuration", JSImport.Default)
   @js.native
@@ -42,9 +39,50 @@ object sapUiCoreConfigurationMod {
   
   @js.native
   sealed trait AnimationMode extends StObject
-  object AnimationMode {
+  /**
+    * @since 1.50.0
+    *
+    * Enumerable list with available animation modes.
+    *
+    * This enumerable is used to validate the animation mode. Animation modes allow to specify different animation
+    * scenarios or levels. The implementation of the Control (JavaScript or CSS) has to be done differently
+    * for each animation mode.
+    */
+  @JSImport("sap/ui/core/Configuration", "AnimationMode")
+  @js.native
+  object AnimationMode extends StObject {
     
-    inline def apply(value: scala.Nothing): js.UndefOr[AnimationMode & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimationMode")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AnimationMode & scala.Nothing]]
+    /**
+      * `basic` can be used for a reduced, more light-weight set of animations.
+      */
+    @js.native
+    sealed trait basic
+      extends StObject
+         with AnimationMode
+    
+    /**
+      * `full` represents a mode with unrestricted animation capabilities.
+      */
+    @js.native
+    sealed trait full
+      extends StObject
+         with AnimationMode
+    
+    /**
+      * `minimal` includes animations of fundamental functionality.
+      */
+    @js.native
+    sealed trait minimal
+      extends StObject
+         with AnimationMode
+    
+    /**
+      * `none` deactivates the animation completely.
+      */
+    @js.native
+    sealed trait none
+      extends StObject
+         with AnimationMode
   }
   
   @JSImport("sap/ui/core/Configuration", "FormatSettings")
@@ -53,7 +91,7 @@ object sapUiCoreConfigurationMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * Adds custom currencies to the existing entries. E.g. ` { "KWD": {"digits": 3}, "TND" : {"digits": 3}
+      * Adds custom currencies to the existing entries. E.g. ` { "KWD": {"digits": 3}, "TND" : {"digits": 3 }
       * } `
       * See:
       * 	sap.ui.core.Configuration.FormatSettings#setCustomCurrencies
@@ -63,14 +101,14 @@ object sapUiCoreConfigurationMod {
     def addCustomCurrencies(/**
       * adds to the currency map
       */
-    mCurrencies: js.Object): this.type = js.native
+    mCurrencies: Record[String, js.Object]): this.type = js.native
     
     /**
       * Retrieves the custom currencies. E.g. ` { "KWD": {"digits": 3}, "TND" : {"digits": 3} } `
       *
       * @returns the mapping between custom currencies and its digits
       */
-    def getCustomCurrencies(): js.Object = js.native
+    def getCustomCurrencies(): Record[String, js.Object] = js.native
     
     /**
       * Returns the currently set date pattern or undefined if no pattern has been defined.
@@ -80,8 +118,7 @@ object sapUiCoreConfigurationMod {
     /**
       * Returns the locale to be used for formatting.
       *
-      * If no such locale has been defined, this method falls back to the language, see {@link sap.ui.core.Configuration#getLanguage
-      * Configuration.getLanguage()}.
+      * If no such locale has been defined, this method falls back to the language, see {@link sap.ui.core.Configuration#getLanguage Configuration.getLanguage()}.
       *
       * If any user preferences for date, time or number formatting have been set, and if no format locale has
       * been specified, then a special private use subtag is added to the locale, indicating to the framework
@@ -94,10 +131,9 @@ object sapUiCoreConfigurationMod {
     /**
       * Returns the currently set customizing data for Islamic calendar support
       *
-      * @returns Returns an array contains the customizing data. Each element in the array has properties: dateFormat,
-      * islamicMonthStart, gregDate. For details, please see {@link #setLegacyDateCalendarCustomizing}
+      * @returns Returns an array contains the customizing data. For details, please see {@link #setLegacyDateCalendarCustomizing}
       */
-    def getLegacyDateCalendarCustomizing(): js.Array[js.Object] = js.native
+    def getLegacyDateCalendarCustomizing(): js.Array[LegacyDateCalendarCustomizing] = js.native
     
     /**
       * Returns the currently set legacy ABAP date format (its id) or undefined if none has been set.
@@ -141,7 +177,7 @@ object sapUiCoreConfigurationMod {
     def getTimePattern(): Unit = js.native
     
     /**
-      * @SINCE 1.75.0
+      * @since 1.75.0
       *
       * Returns current trailingCurrencyCode configuration for new NumberFormatter instances
       *
@@ -156,7 +192,7 @@ object sapUiCoreConfigurationMod {
       * for all currencies not contained in the list, otherwise currency digits as defined by the CLDR will be
       * used as a fallback.
       *
-      * Example: To use CLDR, but override single currencies ` { "KWD": {"digits": 3}, "TND" : {"digits": 3}
+      * Example: To use CLDR, but override single currencies ` { "KWD": {"digits": 3}, "TND" : {"digits": 3 }
       * } `
       *
       * To replace the CLDR currency digits completely ` { "DEFAULT": {"digits": 2}, "ADP": {"digits": 0}, ...
@@ -171,7 +207,7 @@ object sapUiCoreConfigurationMod {
     def setCustomCurrencies(/**
       * currency map which is set
       */
-    mCurrencies: js.Object): this.type = js.native
+    mCurrencies: Record[String, js.Object]): this.type = js.native
     
     /**
       * Defines the preferred format pattern for the given date format style.
@@ -230,7 +266,7 @@ object sapUiCoreConfigurationMod {
       /**
       * contains the customizing data for the support of Islamic calendar.
       */
-    aMappings: js.Array[DateFormat]
+    aMappings: js.Array[LegacyDateCalendarCustomizing]
     ): this.type = js.native
     
     /**
@@ -346,7 +382,7 @@ object sapUiCoreConfigurationMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.75.0
+      * @since 1.75.0
       *
       * Define whether the NumberFormatter shall always place the currency code after the numeric value, with
       * the only exception of right-to-left locales, where the currency code shall be placed before the numeric
@@ -455,7 +491,7 @@ object sapUiCoreConfigurationMod {
     * The naming convention for parameters is:
     * 	 - in the URL : sap-ui-PARAMETER-NAME="value"
     * 	 - in the DOM : data-sap-ui-PARAMETER-NAME="value"  where PARAMETER-NAME is the name
-    * 			of the parameter in lower case.
+    *     of the parameter in lower case.
     *
     * Values of boolean parameters are case insensitive where "true" and "x" are interpreted as true.
     */
@@ -463,7 +499,18 @@ object sapUiCoreConfigurationMod {
   trait Configuration extends StObject {
     
     /**
-      * @SINCE 1.38.6
+      * @since 1.50.0
+      *
+      * Enumerable list with available animation modes.
+      *
+      * This enumerable is used to validate the animation mode. Animation modes allow to specify different animation
+      * scenarios or levels. The implementation of the Control (JavaScript or CSS) has to be done differently
+      * for each animation mode.
+      */
+    var AnimationMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AnimationMode */ Any = js.native
+    
+    /**
+      * @since 1.38.6
       *
       * Applies multiple changes to the configuration at once.
       *
@@ -473,8 +520,8 @@ object sapUiCoreConfigurationMod {
       * reduce the overhead for multiple changes, esp. when they occur after the UI has been created already.
       *
       * The `mSettings` can contain any property `xyz` for which a setter method `setXYZ` exists
-      * in the API of this class. Similarly, values for the {@link sap.ui.core.Configuration.FormatSettings format
-      * settings} API can be provided in a nested object with name `formatSettings`.
+      * in the API of this class. Similarly, values for the {@link sap.ui.core.Configuration.FormatSettings format settings }
+      * API can be provided in a nested object with name `formatSettings`.
       *
       * @returns Returns `this` to allow method chaining
       */
@@ -544,7 +591,7 @@ object sapUiCoreConfigurationMod {
     def getAccessibility(): Boolean = js.native
     
     /**
-      * @SINCE 1.77.0
+      * @since 1.77.0
       *
       * Returns the list of active terminologies defined via the Configuration.
       *
@@ -569,7 +616,7 @@ object sapUiCoreConfigurationMod {
     def getAnimation(): Boolean = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Returns the current animation mode.
       *
@@ -602,14 +649,14 @@ object sapUiCoreConfigurationMod {
     def getApplication(): String = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns whether the framework automatically adds the ARIA role 'application' to the HTML body or not.
       */
     def getAutoAriaBodyRole(): Boolean = js.native
     
     /**
-      * @SINCE 1.113.0
+      * @since 1.113.0
       *
       * Returns the calendar week numbering algorithm used to determine the first day of the week and the first
       * calendar week of the year, see {@link sap.ui.core.date.CalendarWeekNumbering}.
@@ -636,7 +683,7 @@ object sapUiCoreConfigurationMod {
     def getDebug(): Boolean = js.native
     
     /**
-      * @SINCE 1.102
+      * @since 1.102
       *
       * Name (ID) of a UI5 module that implements file share support.
       *
@@ -657,7 +704,7 @@ object sapUiCoreConfigurationMod {
     def getFiori2Adaptation(): Boolean | String = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * Returns the URL from where the UI5 flexibility services are called; if empty, the flexibility services
       * are not called.
@@ -701,9 +748,9 @@ object sapUiCoreConfigurationMod {
       *
       * The value returned by this method in most cases corresponds to the exact value that has been configured
       * by the user or application or that has been determined from the user agent settings. It has not been
-      * normalized, but has been validated against a relaxed version of {@link http://www.ietf.org/rfc/bcp/bcp47.txt
-      * BCP47}, allowing underscores ('_') instead of the suggested dashes ('-') and not taking the case of letters
-      * into account.
+      * normalized, but has been validated against a relaxed version of {@link http://www.ietf.org/rfc/bcp/bcp47.txt BCP47},
+      * allowing underscores ('_') instead of the suggested dashes ('-') and not taking the case of letters into
+      * account.
       *
       * The exceptions mentioned above affect languages that have been specified via the URL parameter `sap-language`.
       * That parameter by definition represents an SAP logon language code ('ABAP language'). Most but not all
@@ -723,8 +770,8 @@ object sapUiCoreConfigurationMod {
       * ```
       *
       *
-      * For a normalized BCP47 tag, call {@link #getLanguageTag} or call {@link #getLocale} to get a {@link sap.ui.core.Locale
-      * Locale} object matching the language.
+      * For a normalized BCP47 tag, call {@link #getLanguageTag} or call {@link #getLocale} to get a {@link sap.ui.core.Locale Locale }
+      * object matching the language.
       *
       * @returns Language string as configured
       */
@@ -751,7 +798,7 @@ object sapUiCoreConfigurationMod {
     def getLocale(): typings.openui5.sapUiCoreLocaleMod.default = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Flag whether a Component should load the manifest first.
       *
@@ -791,8 +838,7 @@ object sapUiCoreConfigurationMod {
     def getRTL(): Boolean = js.native
     
     /**
-      * @deprecated (since 1.95) - Please use {@link module:sap/ui/core/ComponentSupport} instead. See also {@link
-      * topic:82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
+      * @deprecated (since 1.95) - Please use {@link module:sap/ui/core/ComponentSupport} instead. See also {@link topic:82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
       *
       * The name of the root component to start or empty.
       *
@@ -810,7 +856,7 @@ object sapUiCoreConfigurationMod {
     def getSAPLogonLanguage(): String = js.native
     
     /**
-      * @SINCE 1.95.0
+      * @since 1.95.0
       *
       * Returns the security token handlers of an OData V4 model.
       * See:
@@ -818,10 +864,10 @@ object sapUiCoreConfigurationMod {
       *
       * @returns the security token handlers (an empty array if there are none)
       */
-    def getSecurityTokenHandlers(): js.Array[js.Function] = js.native
+    def getSecurityTokenHandlers(): js.Array[js.Function1[/* p1 */ URI, js.Promise[Any]]] = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Flag if statistics are requested.
       *
@@ -840,11 +886,7 @@ object sapUiCoreConfigurationMod {
     def getTheme(): String = js.native
     
     /**
-      * @SINCE 1.99.0
-      *
-      * **Note: Due to compatibility considerations, the time zone can only be changed for test purposes via
-      * the `sap-timezone` URL parameter. If this parameter is not set, the time zone of the browser/host system
-      * is returned.**
+      * @since 1.99.0
       *
       * Retrieves the configured IANA timezone ID.
       *
@@ -880,7 +922,7 @@ object sapUiCoreConfigurationMod {
     def getWhitelistService(): String = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Sets the current animation mode.
       *
@@ -895,7 +937,7 @@ object sapUiCoreConfigurationMod {
     sAnimationMode: AnimationMode): Unit = js.native
     
     /**
-      * @SINCE 1.28.6
+      * @since 1.28.6
       *
       * Sets the new calendar type to be used from now on in locale dependent functionality (for example, formatting,
       * translation texts, etc.).
@@ -925,7 +967,7 @@ object sapUiCoreConfigurationMod {
     sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.113.0
+      * @since 1.113.0
       *
       * Sets the calendar week numbering algorithm which is used to determine the first day of the week and the
       * first calendar week of the year, see {@link sap.ui.core.date.CalendarWeekNumbering}.
@@ -967,11 +1009,11 @@ object sapUiCoreConfigurationMod {
       * Sets a new language to be used from now on for language/region dependent functionality (e.g. formatting,
       * data types, translated texts, ...).
       *
-      * When the language can't be interpreted as a BCP47 language (using the relaxed syntax described in {@link
-      * #getLanguage}, an error will be thrown.
+      * When the language can't be interpreted as a BCP47 language (using the relaxed syntax described in {@link #getLanguage},
+      * an error will be thrown.
       *
-      * When the language has changed, the Core will fire its {@link sap.ui.core.Core#event:localizationChanged
-      * localizationChanged} event.
+      * When the language has changed, the Core will fire its {@link sap.ui.core.Core#event:localizationChanged localizationChanged }
+      * event.
       *
       * Restrictions:
       *
@@ -986,7 +1028,7 @@ object sapUiCoreConfigurationMod {
       *
       *
       * 	 - date and number data types that are used in property bindings or composite bindings in existing Elements,
-      * 			Controls, UIAreas or Components
+      *     Controls, UIAreas or Components
       * 	 - ResourceModels currently assigned to the Core, a UIArea, Component, Element or Control
       * 	 - Elements or Controls that implement the `onlocalizationChanged` hook (note the lowercase 'l' in onlocalizationChanged)
       *
@@ -1053,28 +1095,32 @@ object sapUiCoreConfigurationMod {
     bRTL: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.95.0
+      * @since 1.95.0
       *
-      * Sets the security token handlers for an OData V4 model. See chapter {@link topic:9613f1f2d88747cab21896f7216afdac/section_STH
-      * Security Token Handling}.
+      * Sets the security token handlers for an OData V4 model. See chapter {@link https://ui5.sap.com/#/topic/9613f1f2d88747cab21896f7216afdac/section_STH Security Token Handling}.
       * See:
       * 	#getSecurityTokenHandlers
       */
-    def setSecurityTokenHandlers(/**
+    def setSecurityTokenHandlers(
+      /**
       * The security token handlers
       */
-    aSecurityTokenHandlers: js.Array[js.Function]): Unit = js.native
+    aSecurityTokenHandlers: js.Array[js.Function1[/* p1 */ URI, js.Promise[Any]]]
+    ): Unit = js.native
     
     /**
-      * @SINCE 1.99.0
-      *
-      * **Note: Due to compatibility considerations, this function has no effect in this release. The timezone
-      * configuration will always reflect the timezone of the browser/host system.**
+      * @since 1.99.0
       *
       * Sets the timezone such that all date and time based calculations use this timezone.
       *
-      * When the timezone has changed, the Core will fire its {@link sap.ui.core.Core#event:localizationChanged
-      * localizationChanged} event.
+      * **Important:** It is strongly recommended to only use this API at the earliest point of time while initializing
+      * a UI5 app. A later adjustment of the time zone should be avoided. It can lead to unexpected data inconsistencies
+      * in a running application, because date objects could still be related to a previously configured time
+      * zone. Instead, the app should be completely restarted with the new time zone. For more information, see
+      * {@link https://ui5.sap.com/#/topic/6c9e61dc157a40c19460660ece8368bc Dates, Times, Timestamps, and Time Zones}.
+      *
+      * When the timezone has changed, the Core will fire its {@link sap.ui.core.Core#event:localizationChanged localizationChanged }
+      * event.
       *
       * @returns `this` to allow method chaining
       */
@@ -1087,4 +1133,44 @@ object sapUiCoreConfigurationMod {
     sTimezone: String
     ): this.type = js.native
   }
+  
+  trait LegacyDateCalendarCustomizing extends StObject {
+    
+    /**
+      * The IO of the date format. It has value "A" or "B".
+      */
+    var dateFormat: A | B
+    
+    /**
+      * The corresponding Gregorian date in format "yyyyMMdd".
+      */
+    var gregDate: String
+    
+    /**
+      * The Islamic date in format "yyyyMMdd".
+      */
+    var islamicMonthStart: String
+  }
+  object LegacyDateCalendarCustomizing {
+    
+    inline def apply(dateFormat: A | B, gregDate: String, islamicMonthStart: String): LegacyDateCalendarCustomizing = {
+      val __obj = js.Dynamic.literal(dateFormat = dateFormat.asInstanceOf[js.Any], gregDate = gregDate.asInstanceOf[js.Any], islamicMonthStart = islamicMonthStart.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LegacyDateCalendarCustomizing]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyDateCalendarCustomizing] (val x: Self) extends AnyVal {
+      
+      inline def setDateFormat(value: A | B): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      
+      inline def setGregDate(value: String): Self = StObject.set(x, "gregDate", value.asInstanceOf[js.Any])
+      
+      inline def setIslamicMonthStart(value: String): Self = StObject.set(x, "islamicMonthStart", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type _To = Configuration
+  
+  /* This means you don't have to write `default`, but can instead just say `sapUiCoreConfigurationMod.foo` */
+  override def _to: Configuration = default
 }

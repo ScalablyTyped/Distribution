@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColumnSortOrder extends StObject {
   
   /**
-    * Controls the sort order of the column given the set `fieldName`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#ColumnSortOrder)
-    */
+  		 * Controls the sort order of the column given the set `fieldName`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#ColumnSortOrder)
+  		 */
   var direction: asc_ | desc_ | Null
   
   /**
-    * The field name as defined by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#ColumnSortOrder)
-    */
+  		 * The field name as defined by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#ColumnSortOrder)
+  		 */
   var fieldName: String
 }
 object ColumnSortOrder {

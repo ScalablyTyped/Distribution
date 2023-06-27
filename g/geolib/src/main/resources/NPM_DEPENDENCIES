@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "geolib" : "3.3.3"
+      "geolib" : "3.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "geolib" : "3.3.3"
+      "geolib" : "3.3.4"
     }
   ],
   "compile-devDependencies" : [

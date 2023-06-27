@@ -219,7 +219,7 @@ open class Scene_ protected () extends EventHandler {
     * List of all active composition mesh instances. Only for backwards compatibility.
     * TODO: BatchManager is using it - perhaps that could be refactored
     *
-    * @type {MeshInstance[]}
+    * @type {import('./mesh-instance.js').MeshInstance[]}
     * @private
     */
   def drawCalls_=(arg: js.Array[Any]): Unit = js.native

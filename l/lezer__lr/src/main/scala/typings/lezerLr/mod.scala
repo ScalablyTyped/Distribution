@@ -1,6 +1,7 @@
 package typings.lezerLr
 
 import typings.lezerLr.anon.Hash
+import typings.lezerLr.anon.ReadonlyUint16Array
 import typings.lezerLr.distTokenMod.ExternalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,6 +52,16 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def deserialize(spec: Any): typings.lezerLr.distParseMod.LRParser = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(spec.asInstanceOf[js.Any]).asInstanceOf[typings.lezerLr.distParseMod.LRParser]
+  }
+  
+  @JSImport("@lezer/lr", "LocalTokenGroup")
+  @js.native
+  open class LocalTokenGroup protected ()
+    extends typings.lezerLr.distTokenMod.LocalTokenGroup {
+    def this(data: String, precTable: Double) = this()
+    def this(data: ReadonlyUint16Array, precTable: Double) = this()
+    def this(data: String, precTable: Double, elseToken: Double) = this()
+    def this(data: ReadonlyUint16Array, precTable: Double, elseToken: Double) = this()
   }
   
   @JSImport("@lezer/lr", "Stack")

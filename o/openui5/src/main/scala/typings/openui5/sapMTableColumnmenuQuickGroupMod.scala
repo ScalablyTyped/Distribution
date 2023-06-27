@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Grouped
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMTableColumnmenuEntryMod.EntrySettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -148,13 +147,13 @@ object sapMTableColumnmenuQuickGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickGroup` itself
       */
@@ -179,7 +178,7 @@ object sapMTableColumnmenuQuickGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -190,7 +189,7 @@ object sapMTableColumnmenuQuickGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickGroup` itself
       */
@@ -215,13 +214,13 @@ object sapMTableColumnmenuQuickGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickGroupChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -229,7 +228,7 @@ object sapMTableColumnmenuQuickGroupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -239,7 +238,7 @@ object sapMTableColumnmenuQuickGroupMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Grouped): this.type = js.native
+    mParameters: QuickGroup$ChangeEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -309,6 +308,42 @@ object sapMTableColumnmenuQuickGroupMod {
     ): typings.openui5.sapMTableColumnmenuQuickGroupItemMod.default | Null = js.native
   }
   
+  trait QuickGroup$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new grouped state.
+      */
+    var grouped: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The key of the property to be grouped.
+      */
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object QuickGroup$ChangeEventParameters {
+    
+    inline def apply(): QuickGroup$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickGroup$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickGroup$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
+      
+      inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  type QuickGroupChangeEvent = typings.openui5.sapUiBaseEventMod.default[QuickGroup$ChangeEventParameters]
+  
+  type QuickGroupChangeEventParameters = QuickGroup$ChangeEventParameters
+  
   trait QuickGroupSettings
     extends StObject
        with EntrySettings {
@@ -316,7 +351,12 @@ object sapMTableColumnmenuQuickGroupMod {
     /**
       * Fires the change event.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickGroup$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The groupable properties and the initial state.
@@ -335,7 +375,9 @@ object sapMTableColumnmenuQuickGroupMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QuickGroupSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickGroup$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

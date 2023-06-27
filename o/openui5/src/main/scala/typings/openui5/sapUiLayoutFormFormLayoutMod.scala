@@ -123,7 +123,7 @@ object sapUiLayoutFormFormLayoutMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -138,7 +138,7 @@ object sapUiLayoutFormFormLayoutMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -170,7 +170,7 @@ object sapUiLayoutFormFormLayoutMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Specifies the background color of the `Form` content.
       *

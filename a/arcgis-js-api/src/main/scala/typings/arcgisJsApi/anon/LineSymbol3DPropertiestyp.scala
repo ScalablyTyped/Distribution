@@ -12,26 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineSymbol3DPropertiestyp extends StObject {
   
   /**
-    * The color of the symbol.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
-    */
+  		 * The color of the symbol.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The origin of the style from which the symbol was originally referenced.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
-    */
+  		 * The origin of the style from which the symbol was originally referenced.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
+  		 */
   var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
-    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html#symbolLayers)
-    */
+  		 * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3D.html#symbolLayers)
+  		 */
   var symbolLayers: js.UndefOr[CollectionProperties[LineSymbol3DLayerProperti | PathSymbol3DLayerProperti]] = js.undefined
   
   var `type`: `line-3d`

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SwitchInputPropertiestype extends StObject {
   
   /**
-    * Coded value used when the switch state is turned off.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-SwitchInput.html#offValue)
-    */
+  		 * Coded value used when the switch state is turned off.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-SwitchInput.html#offValue)
+  		 */
   var offValue: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * Coded value used when the switch state is turned on.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-SwitchInput.html#onValue)
-    */
+  		 * Coded value used when the switch state is turned on.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-SwitchInput.html#onValue)
+  		 */
   var onValue: js.UndefOr[String | Double] = js.undefined
   
   var `type`: switch

@@ -1,7 +1,7 @@
 
 # Scala.js typings for metro-source-map
 
-Typings are for version 0.76.4
+Typings are for version 0.76.7
 
 ## Library description:
 🚇 Source map generator for Metro.

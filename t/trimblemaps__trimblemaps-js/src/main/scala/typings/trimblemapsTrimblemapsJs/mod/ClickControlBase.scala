@@ -8,4 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ClickControlBase ()
   extends StObject
-     with IControl
+     with IControl {
+  def this(options: js.Object) = this()
+}

@@ -1426,32 +1426,32 @@ object TreeGrid {
   trait Column extends StObject {
     
     /** Enables/disables cell selection.
-      * @Default {false}
+      * @default {false}
       */
     var allowCellSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to edit a row or cell.
-      * @Default {false}
+      * @default {false}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the rows based on this column.
-      * @Default {false}
+      * @default {false}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the blanks option in ejDropDownList mapped in TreeGrid column
-      * @Default {true}
+      * @default {true}
       */
     var allowFilteringBlankContent: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to freeze/unfreeze the columns
-      * @Default {false}
+      * @default {false}
       */
     var allowFreezing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on this column/field.
-      * @Default {false}
+      * @default {false}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
@@ -1460,17 +1460,17 @@ object TreeGrid {
     var angularTemplate: js.UndefOr[String] = js.undefined
     
     /** Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
-      * @Default {ej.TreeGrid.ClipMode.Clip}
+      * @default {ej.TreeGrid.ClipMode.Clip}
       */
     var clipMode: js.UndefOr[ClipMode | String] = js.undefined
     
     /** Gets or sets an object to define a command column in TreeGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var commands: js.UndefOr[js.Array[ColumnsCommand]] = js.undefined
     
     /** Gets or sets a value that indicates to display a column value as checkbox or string
-      * @Default {false}
+      * @default {false}
       */
     var displayAsCheckbox: js.UndefOr[Boolean] = js.undefined
     
@@ -1483,12 +1483,12 @@ object TreeGrid {
     var editParams: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a template that displays a custom editor for editing the column values.
-      * @Default {null}
+      * @default {null}
       */
     var editTemplate: js.UndefOr[Any] = js.undefined
     
     /** Specifies the edit type of the column.
-      * @Default {ej.TreeGrid.EditingType.String}
+      * @default {ej.TreeGrid.EditingType.String}
       */
     var editType: js.UndefOr[EditingType | String] = js.undefined
     
@@ -1497,17 +1497,17 @@ object TreeGrid {
     var field: js.UndefOr[String] = js.undefined
     
     /** Specifies the type of the editor control to be used to filter the rows.
-      * @Default {ej.TreeGrid.EditingType.String}
+      * @default {ej.TreeGrid.EditingType.String}
       */
     var filterEditType: js.UndefOr[EditingType | String] = js.undefined
     
     /** Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
-      * @Default {null}
+      * @default {null}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Specifies the display format of a column
-      * @Default {null}
+      * @default {null}
       */
     var format: js.UndefOr[Any] = js.undefined
     
@@ -1516,42 +1516,42 @@ object TreeGrid {
     var headerTemplateID: js.UndefOr[String] = js.undefined
     
     /** Header text of the column.
-      * @Default {null}
+      * @default {null}
       */
     var headerText: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the column header text
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var headerTextAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Sets the tooltip template for the column header
-      * @Default {null}
+      * @default {null}
       */
     var headerTooltip: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the column is frozen
-      * @Default {false}
+      * @default {false}
       */
     var isFrozen: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the column is a template column
-      * @Default {false}
+      * @default {false}
       */
     var isTemplateColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
-      * @Default {-1}
+      * @default {-1}
       */
     var priority: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the checkbox visibility in a column for checkbox selection.
-      * @Default {false}
+      * @default {false}
       */
     var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** We can include or exclude particular column from column visibility list in column menu.
-      * @Default {true}
+      * @default {true}
       */
     var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
     
@@ -1564,12 +1564,12 @@ object TreeGrid {
     var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the text alignment for the column
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Sets the tooltip template for the specific column.
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[String] = js.undefined
     
@@ -1578,7 +1578,7 @@ object TreeGrid {
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Controls the visibility of the column.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
@@ -2027,7 +2027,7 @@ object TreeGrid {
   trait ColumnResizeSettings extends StObject {
     
     /** Specifies the mode for column resizing
-      * @Default {ej.TreeGrid.ColumnResizeMode.Normal}
+      * @default {ej.TreeGrid.ColumnResizeMode.Normal}
       */
     var columnResizeMode: js.UndefOr[ColumnResizeMode | String] = js.undefined
   }
@@ -2276,12 +2276,12 @@ object TreeGrid {
   trait ContextMenuSettings extends StObject {
     
     /** Option for adding items to context menu.
-      * @Default {[]}
+      * @default {[]}
       */
     var contextMenuItems: js.UndefOr[js.Array[ContextMenuItems | String]] = js.undefined
     
     /** Shows/hides the context menu.
-      * @Default {false}
+      * @default {false}
       */
     var showContextMenu: js.UndefOr[Boolean] = js.undefined
   }
@@ -2518,17 +2518,17 @@ object TreeGrid {
   trait DragTooltip extends StObject {
     
     /** Specifies whether to show tooltip while dragging a row.
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Option to add field names whose corresponding values in the dragged row needs to be shown in the preview tooltip.
-      * @Default {[]}
+      * @default {[]}
       */
     var tooltipItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Custom template for that tooltip that is shown while dragging a row.
-      * @Default {null}
+      * @default {null}
       */
     var tooltipTemplate: js.UndefOr[String] = js.undefined
   }
@@ -2561,17 +2561,17 @@ object TreeGrid {
   trait EditSettings extends StObject {
     
     /** Enables or disables the button to add new row in context menu as well as in toolbar.
-      * @Default {true}
+      * @default {true}
       */
     var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the button to delete the selected row in context menu as well as in toolbar.
-      * @Default {true}
+      * @default {true}
       */
     var allowDeleting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to edit a row or cell.
-      * @Default {false}
+      * @default {false}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
@@ -2580,27 +2580,27 @@ object TreeGrid {
     var batchEditSettings: js.UndefOr[EditSettingsBatchEditSettings] = js.undefined
     
     /** Specifies the mouse action whether single click or double click to begin the editing
-      * @Default {ej.TreeGrid.BeginEditAction.DblClick}
+      * @default {ej.TreeGrid.BeginEditAction.DblClick}
       */
     var beginEditAction: js.UndefOr[BeginEditAction | String] = js.undefined
     
     /** Specifies the template ID for the custom dialog.
-      * @Default {null}
+      * @default {null}
       */
     var dialogEditorTemplateID: js.UndefOr[String] = js.undefined
     
     /** specifies the edit mode in TreeGrid , &quot;cellEditing&quot; is for cell type editing and &quot;rowEditing&quot; is for entire row.
-      * @Default {ej.TreeGrid.EditMode.CellEditing}
+      * @default {ej.TreeGrid.EditMode.CellEditing}
       */
     var editMode: js.UndefOr[EditMode | String] = js.undefined
     
     /** Specifies the position where the new row has to be added.
-      * @Default {ej.TreeGrid.RowPosition.Top}
+      * @default {ej.TreeGrid.RowPosition.Top}
       */
     var rowPosition: js.UndefOr[RowPosition | String] = js.undefined
     
     /** Enable or disable the confirmation dialog while deleting the record.
-      * @Default {false}
+      * @default {false}
       */
     var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
@@ -2655,7 +2655,7 @@ object TreeGrid {
   trait EditSettingsBatchEditSettings extends StObject {
     
     /** Specifies the batch edit mode whether it is cell, row or dialog.
-      * @Default {ej.TreeGrid.BatchEditMode.Cell}
+      * @default {ej.TreeGrid.BatchEditMode.Cell}
       */
     var editMode: js.UndefOr[BatchEditMode | String] = js.undefined
   }
@@ -2902,37 +2902,37 @@ object TreeGrid {
   trait FilterSettings extends StObject {
     
     /** Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableCaseSensitivity: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the columns with empty, null and undefined values.
-      * @Default {true}
+      * @default {true}
       */
     var enableComplexBlankFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mode on which column filtering should start
-      * @Default {immediate}
+      * @default {immediate}
       */
     var filterBarMode: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of filtering to filter the record with or without hierarchy.
-      * @Default {ej.TreeGrid.FilterHierarchyMode.Parent}
+      * @default {ej.TreeGrid.FilterHierarchyMode.Parent}
       */
     var filterHierarchyMode: js.UndefOr[FilterHierarchyMode | String] = js.undefined
     
     /** Specifies the type of column filtering.
-      * @Default {ej.TreeGrid.FilterType.FilterBar}
+      * @default {ej.TreeGrid.FilterType.FilterBar}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Specifies the column collection for filtering the TreeGrid content on initial load
-      * @Default {[]}
+      * @default {[]}
       */
     var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.undefined
     
     /** Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
-      * @Default {1000}
+      * @default {1000}
       */
     var maxFilterChoices: js.UndefOr[Double] = js.undefined
   }
@@ -3073,58 +3073,58 @@ object TreeGrid {
     var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the option for column reordering
-      * @Default {false}
+      * @default {false}
       */
     var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to resize the column width interactively.
-      * @Default {false}
+      * @default {false}
       */
     var allowColumnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to drag and drop the row interactively to reorder the rows.
-      * @Default {false}
+      * @default {false}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row with editor controls corresponding to each column. You can
       * restrict filtering on particular column by disabling this property directly on that column instance itself.
-      * @Default {false}
+      * @default {false}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables keyboard navigation.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on multiple columns/fields by clicking on each column header. Rows will be sorted recursively on clicking the column headers.
-      * @Default {false}
+      * @default {false}
       */
     var allowMultiSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables pagination of rows in TreeGrid
-      * @Default {false}
+      * @default {false}
       */
     var allowPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the toolbar searching in TreeGrid.
-      * @Default {false}
+      * @default {false}
       */
     var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to select a row interactively.
-      * @Default {true}
+      * @default {true}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on a single field/column by clicking on that column header. When enabled, rows can be sorted only by single field/column.
-      * @Default {false}
+      * @default {false}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
-      * @Default {false}
+      * @default {false}
       */
     var allowTextWrap: js.UndefOr[Boolean] = js.undefined
     
@@ -3149,7 +3149,7 @@ object TreeGrid {
     var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies the template for cell tooltip
-      * @Default {null}
+      * @default {null}
       */
     var cellTooltipTemplate: js.UndefOr[String] = js.undefined
     
@@ -3162,7 +3162,7 @@ object TreeGrid {
     var collapsed: js.UndefOr[js.Function1[/* e */ CollapsedEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the expandable/collapsible footer summary row. By default expander icon for footer summary will be rendered in first column of first summary row.
-      * @Default {false}
+      * @default {false}
       */
     var collapsibleTotalSummary: js.UndefOr[Boolean] = js.undefined
     
@@ -3171,7 +3171,7 @@ object TreeGrid {
     var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.undefined
     
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
-      * @Default {[]}
+      * @default {[]}
       */
     var columnDialogFields: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -3208,7 +3208,7 @@ object TreeGrid {
     var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
     /** Defines the common width for all the columns in TreeGrid
-      * @Default {150}
+      * @default {150}
       */
     var commonWidth: js.UndefOr[Double] = js.undefined
     
@@ -3229,7 +3229,7 @@ object TreeGrid {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies hierarchical or self-referential data to populate the TreeGrid.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -3242,7 +3242,7 @@ object TreeGrid {
     var detailsHidden: js.UndefOr[js.Function1[/* e */ DetailsHiddenEventArgs, Unit]] = js.undefined
     
     /** Specifies the row height of the details view
-      * @Default {100}
+      * @default {100}
       */
     var detailsRowHeight: js.UndefOr[Double] = js.undefined
     
@@ -3263,27 +3263,27 @@ object TreeGrid {
     var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Specifies whether to render alternate rows in different background colors.
-      * @Default {true}
+      * @default {true}
       */
     var enableAltRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to load all the rows in collapsed state when the TreeGrid is rendered for the first time.
-      * @Default {false}
+      * @default {false}
       */
     var enableCollapseAll: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable load on demand approach, for rendering child records and page records.
-      * @Default {false}
+      * @default {false}
       */
     var enableLoadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to resize TreeGrid whenever window size changes.
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
@@ -3308,7 +3308,7 @@ object TreeGrid {
     var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
-      * @Default {ej.TreeGrid.HeaderTextOverflow.None}
+      * @default {ej.TreeGrid.HeaderTextOverflow.None}
       */
     var headerTextOverflow: js.UndefOr[HeaderTextOverflow | String] = js.undefined
     
@@ -3317,7 +3317,7 @@ object TreeGrid {
     var idMapping: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the responsiveness of TreeGrid
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -3326,7 +3326,7 @@ object TreeGrid {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specifies the localization information to customize the User Interface (UI) to support regional language and culture
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -3340,12 +3340,12 @@ object TreeGrid {
     var parentIdMapping: js.UndefOr[String] = js.undefined
     
     /** Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
-      * @Default {true}
+      * @default {true}
       */
     var parseRowTemplate: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies ej.Query to select data from the dataSource. This property is applicable only when the dataSource is ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -3382,7 +3382,7 @@ object TreeGrid {
     var rowDropActionBegin: js.UndefOr[js.Function1[/* e */ RowDropActionBeginEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of a single row in tree grid. Also, we need to set same height in the CSS style with class name e-rowcell.
-      * @Default {30}
+      * @default {30}
       */
     var rowHeight: js.UndefOr[Double] = js.undefined
     
@@ -3407,7 +3407,7 @@ object TreeGrid {
     var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.undefined
     
     /** Specifies the index of the selected row.
-      * @Default {-1}
+      * @default {-1}
       */
     var selectedRowIndex: js.UndefOr[Double] = js.undefined
     
@@ -3417,47 +3417,47 @@ object TreeGrid {
     
     /** Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose Columns item from this popup,
       * a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the options for inserting , deleting and renaming  columns.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnOptions: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of details view
-      * @Default {false}
+      * @default {false}
       */
     var showDetailsRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of the expander column which is used to expand or collapse the details view
-      * @Default {false}
+      * @default {false}
       */
     var showDetailsRowInfoColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show tooltip when mouse is hovered on the cell.
-      * @Default {true}
+      * @default {true}
       */
     var showGridCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show tooltip for the cells, which has expander button.
-      * @Default {true}
+      * @default {true}
       */
     var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates stacked header should be shown on TreeGrid layout when the property â€œstackedHeaderRowsâ€ is set.
-      * @Default {false}
+      * @default {false}
       */
     var showStackedHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of summary row
-      * @Default {false}
+      * @default {false}
       */
     var showSummaryRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of total summary row for the corresponding summary column
-      * @Default {false}
+      * @default {false}
       */
     var showTotalSummary: js.UndefOr[Boolean] = js.undefined
     
@@ -3470,12 +3470,12 @@ object TreeGrid {
     var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of stacked header rows for the TreeGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.undefined
     
     /** Specifies the summary row collection object to be displayed
-      * @Default {[]}
+      * @default {[]}
       */
     var summaryRows: js.UndefOr[js.Array[SummaryRow]] = js.undefined
     
@@ -3488,12 +3488,12 @@ object TreeGrid {
     var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Specifies the height of footer summary container.
-      * @Default {90}
+      * @default {90}
       */
     var totalSummaryHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
-      * @Default {0}
+      * @default {0}
       */
     var treeColumnIndex: js.UndefOr[Double] = js.undefined
   }
@@ -3912,37 +3912,37 @@ object TreeGrid {
   trait PageSettings extends StObject {
     
     /** Specifies the current page to display at load time.
-      * @Default {1}
+      * @default {1}
       */
     var currentPage: js.UndefOr[Double] = js.undefined
     
     /** Using this property we can specify the number of pages should pager contains, according to this count TreeGrid height will be updated.
-      * @Default {8}
+      * @default {8}
       */
     var pageCount: js.UndefOr[Double] = js.undefined
     
     /** This specifies the number of rows to display in each page.
-      * @Default {12}
+      * @default {12}
       */
     var pageSize: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of record count in a page, whether it should count all the records or the root to count zero level parent records.
-      * @Default {ej.TreeGrid.PageSizeMode.All}
+      * @default {ej.TreeGrid.PageSizeMode.All}
       */
     var pageSizeMode: js.UndefOr[PageSizeMode | String] = js.undefined
     
     /** Specifies the mode of printing the control, whether it should print the all the records or the current page content.
-      * @Default {ej.TreeGrid.PrintMode.AllPages}
+      * @default {ej.TreeGrid.PrintMode.AllPages}
       */
     var printMode: js.UndefOr[PrintMode | String] = js.undefined
     
     /** Specifies the Custom template for Pager control.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
-      * @Default {null}
+      * @default {null}
       */
     var totalRecordsCount: js.UndefOr[Double] = js.undefined
   }
@@ -4667,12 +4667,12 @@ object TreeGrid {
   trait SearchSettings extends StObject {
     
     /** Default Value
-      * @Default {[]}
+      * @default {[]}
       */
     var fields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Default Value
-      * @Default {true}
+      * @default {true}
       */
     var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
@@ -4681,12 +4681,12 @@ object TreeGrid {
     var key: js.UndefOr[String] = js.undefined
     
     /** Specifies the operator for the search key words in toolbar searching.
-      * @Default {contains}
+      * @default {contains}
       */
     var operator: js.UndefOr[String] = js.undefined
     
     /** Specifies the search mode of records in searching.
-      * @Default {ej.TreeGrid.SearchHierarchyMode.Parent}
+      * @default {ej.TreeGrid.SearchHierarchyMode.Parent}
       */
     var searchHierarchyMode: js.UndefOr[SearchHierarchyMode | String] = js.undefined
   }
@@ -4757,22 +4757,22 @@ object TreeGrid {
   trait SelectionSettings extends StObject {
     
     /** Enables or disables the selection by hierarchy in check box selection
-      * @Default {true}
+      * @default {true}
       */
     var enableHierarchySelection: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
-      * @Default {true}
+      * @default {true}
       */
     var enableSelectAll: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of selection whether to select row or cell.
-      * @Default {ej.TreeGrid.SelectionMode.Row}
+      * @default {ej.TreeGrid.SelectionMode.Row}
       */
     var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the type of selection whether single, multiple or checkbox.
-      * @Default {ej.TreeGrid.SelectionType.Single}
+      * @default {ej.TreeGrid.SelectionType.Single}
       */
     var selectionType: js.UndefOr[SelectionType | String] = js.undefined
   }
@@ -4807,12 +4807,12 @@ object TreeGrid {
   trait SizeSettings extends StObject {
     
     /** Height of the TreeGrid.
-      * @Default {450px}
+      * @default {450px}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Width of the TreeGrid.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -4839,7 +4839,7 @@ object TreeGrid {
   trait SortSettings extends StObject {
     
     /** Option to add columns based on which the rows have to be sorted recursively.
-      * @Default {[]}
+      * @default {[]}
       */
     var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.undefined
   }
@@ -4894,7 +4894,7 @@ object TreeGrid {
   trait StackedHeaderRow extends StObject {
     
     /** Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
-      * @Default {[]}
+      * @default {[]}
       */
     var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.undefined
   }
@@ -4919,27 +4919,27 @@ object TreeGrid {
   trait StackedHeaderRowsStackedHeaderColumn extends StObject {
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var column: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var headerText: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the text alignment of the corresponding headerText.
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var textAlign: js.UndefOr[String] = js.undefined
     
     /** Sets the template for tooltip for the Grid stackedHeaderColumns.
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[String] = js.undefined
   }
@@ -5138,12 +5138,12 @@ object TreeGrid {
     var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.undefined
     
     /** Shows/hides the toolbar.
-      * @Default {false}
+      * @default {false}
       */
     var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of toolbar items to be rendered in TreeGrid toolbar
-      * @Default {[]}
+      * @default {[]}
       */
     var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.undefined
   }

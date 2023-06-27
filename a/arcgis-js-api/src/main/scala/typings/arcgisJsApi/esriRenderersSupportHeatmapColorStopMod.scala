@@ -11,10 +11,10 @@ object esriRenderersSupportHeatmapColorStopMod {
   @JSImport("esri/renderers/support/HeatmapColorStop", JSImport.Namespace)
   @js.native
   /**
-    * This class is used to define an array of objects describing the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html)'s color ramp and associated density value ratios.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html)
-    */
+  		 * This class is used to define an array of objects describing the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html)'s color ramp and associated density value ratios.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html)
+  		 */
   open class ^ ()
     extends StObject
        with HeatmapColorStop {

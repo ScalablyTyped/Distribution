@@ -1,5 +1,6 @@
 package typings.domWebcodecs
 
+import typings.std.CodecState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,5 +22,5 @@ trait VideoEncoder extends StObject {
   
   def reset(): Unit = js.native
   
-  val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
+  val state: CodecState = js.native
 }

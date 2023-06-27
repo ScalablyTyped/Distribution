@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedObjectEditResultsError extends StObject {
   
   /**
-    * Error code returned from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#NamedObjectEditResults)
-    */
+  		 * Error code returned from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#NamedObjectEditResults)
+  		 */
   var errorCode: Any
   
   /**
-    * Description of the error.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#NamedObjectEditResults)
-    */
+  		 * Description of the error.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#NamedObjectEditResults)
+  		 */
   var errorMessage: String
 }
 object NamedObjectEditResultsError {

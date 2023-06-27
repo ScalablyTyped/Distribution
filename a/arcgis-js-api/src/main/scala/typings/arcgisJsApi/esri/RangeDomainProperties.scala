@@ -9,17 +9,17 @@ trait RangeDomainProperties
      with DomainProperties {
   
   /**
-    * The maximum valid value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#maxValue)
-    */
+  		 * The maximum valid value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#maxValue)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum valid value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#minValue)
-    */
+  		 * The minimum valid value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html#minValue)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
 }
 object RangeDomainProperties {

@@ -41,104 +41,104 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.WFSLayer")
 @js.native
 /**
-  * The WFSLayer is used to create a layer based on an [OGC Web Feature Service](https://www.ogc.org/standards/wfs) (WFS).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html)
-  */
+		 * The WFSLayer is used to create a layer based on an [OGC Web Feature Service](https://www.ogc.org/standards/wfs) (WFS).
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html)
+		 */
 open class WFSLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.WFSLayer {
   def this(properties: WFSLayerProperties) = this()
   
   /**
-    * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
-    *
-    * @default normal
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
-    */
+  		 * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
+  		 *
+  		 * @default normal
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
+  		 */
   /* CompleteClass */
   var blendMode: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
   
   /**
-    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
-    */
+  		 * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+  		 */
   /* CompleteClass */
   var effect: Effect = js.native
   
   /**
-    * The featureEffect can be used to draw attention features of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
-    */
+  		 * The featureEffect can be used to draw attention features of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureEffectLayer.html#featureEffect)
+  		 */
   /* CompleteClass */
   var featureEffect: typings.arcgisJsApi.esri.FeatureEffect = js.native
   
   /**
-    * Configures the method for reducing the number of point features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
-    */
+  		 * Configures the method for reducing the number of point features in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureReductionLayer.html#featureReduction)
+  		 */
   /* CompleteClass */
   var featureReduction: typings.arcgisJsApi.esri.FeatureReductionBinning | typings.arcgisJsApi.esri.FeatureReductionCluster | typings.arcgisJsApi.esri.FeatureReductionSelection = js.native
   
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
-    */
+  		 * The maximum scale (most zoomed in) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
+  		 */
   /* CompleteClass */
   var maxScale: Double = js.native
   
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
-    */
+  		 * The minimum scale (most zoomed out) at which the layer is visible in the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
+  		 */
   /* CompleteClass */
   var minScale: Double = js.native
   
   /**
-    * Determines the order in which features are drawn in the view.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
-    */
+  		 * Determines the order in which features are drawn in the view.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-OrderedLayer.html#orderBy)
+  		 */
   /* CompleteClass */
   var orderBy: js.Array[OrderedLayerOrderBy] = js.native
   
   /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
+  		 * The portal item from which the layer is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+  		 */
   /* CompleteClass */
   var portalItem: typings.arcgisJsApi.esri.PortalItem = js.native
   
   /**
-    * Fetches all the data for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
-    */
+  		 * Fetches all the data for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
+  		 */
   /* CompleteClass */
   override def refresh(): Unit = js.native
   
   /**
-    * Refresh interval of the layer in minutes.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
-    */
+  		 * Refresh interval of the layer in minutes.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+  		 */
   /* CompleteClass */
   var refreshInterval: Double = js.native
 }
@@ -152,9 +152,9 @@ object WFSLayer {
   inline def fromJSON(json: Any): typings.arcgisJsApi.esri.WFSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.WFSLayer]
   
   /**
-    * Creates a WFSLayer from an object created by [wfsUtils.getWFSLayerInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getWFSLayerInfo).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#fromWFSLayerInfo)
-    */
+  		 * Creates a WFSLayer from an object created by [wfsUtils.getWFSLayerInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getWFSLayerInfo).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#fromWFSLayerInfo)
+  		 */
   inline def fromWFSLayerInfo(layerInfo: WFSLayerInfo): typings.arcgisJsApi.esri.WFSLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWFSLayerInfo")(layerInfo.asInstanceOf[js.Any]).asInstanceOf[typings.arcgisJsApi.esri.WFSLayer]
 }

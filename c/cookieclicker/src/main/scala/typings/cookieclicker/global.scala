@@ -40,6 +40,7 @@ import typings.cookieclicker.Game.UnshackledBuildingObj
 import typings.cookieclicker.Game.UnshackledTierObj
 import typings.cookieclicker.Game.Wrinkler
 import typings.cookieclicker.Game.WrinklerSave
+import typings.cookieclicker.Game.YouCustomizerT
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.Track
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.SendCallback
 import typings.cookieclicker.anon.Bank
@@ -600,7 +601,8 @@ object global {
     def LeftBackground: CanvasRenderingContext2D = js.native
     inline def LeftBackground_=(x: CanvasRenderingContext2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftBackground")(x.asInstanceOf[js.Any])
     
-    inline def Load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Load")().asInstanceOf[Unit]
+    inline def Load(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Load")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Load(callback: PseudoNull): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Load")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def LoadMinigames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMinigames")().asInstanceOf[Unit]
     
@@ -1139,6 +1141,11 @@ object global {
       callback: String
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteSlider")(slider.asInstanceOf[js.Any], leftText.asInstanceOf[js.Any], rightText.asInstanceOf[js.Any], startValueFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    @JSGlobal("Game.YouCustomizer")
+    @js.native
+    def YouCustomizer: YouCustomizerT = js.native
+    inline def YouCustomizer_=(x: YouCustomizerT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YouCustomizer")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.accumulatedDelay")
     @js.native
     def accumulatedDelay: Double = js.native
@@ -1467,10 +1474,20 @@ object global {
     
     inline def cookiesPs_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPs")(x.asInstanceOf[js.Any])
     
+    @JSGlobal("Game.cookiesReceived")
+    @js.native
+    def cookiesReceived: Double = js.native
+    inline def cookiesReceived_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesReceived")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.cookiesReset")
     @js.native
     def cookiesReset: Double = js.native
     inline def cookiesReset_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesReset")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.cookiesSent")
+    @js.native
+    def cookiesSent: Double = js.native
+    inline def cookiesSent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesSent")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesSucked")
     @js.native
@@ -1857,6 +1874,11 @@ object global {
     
     inline def getWrinklersMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWrinklersMax")().asInstanceOf[Double]
     
+    @JSGlobal("Game.giftBoxDesigns")
+    @js.native
+    def giftBoxDesigns: js.Array[js.Tuple2[Double, Double]] = js.native
+    inline def giftBoxDesigns_=(x: js.Array[js.Tuple2[Double, Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("giftBoxDesigns")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.globalCpsMult")
     @js.native
     def globalCpsMult: Double = js.native
@@ -2058,6 +2080,8 @@ object global {
     
     inline def listTinyOwnedUpgrades(arr: js.Array[typings.cookieclicker.Game.Upgrade]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("listTinyOwnedUpgrades")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
     
+    inline def loadAscendCalibrator(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAscendCalibrator")().asInstanceOf[Unit]
+    
     inline def loadLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")().asInstanceOf[Unit]
     inline def loadLumps(time: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -2065,6 +2089,11 @@ object global {
     @js.native
     def loadedFromVersion: Double = js.native
     inline def loadedFromVersion_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadedFromVersion")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.local")
+    @js.native
+    def local: Boolean = js.native
+    inline def local_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.loopT")
     @js.native
@@ -2379,10 +2408,19 @@ object global {
     def promptConfirm: String = js.native
     inline def promptConfirm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptConfirm")(x.asInstanceOf[js.Any])
     
+    inline def promptGiftRedeem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptGiftRedeem")().asInstanceOf[Unit]
+    
+    inline def promptGiftSend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promptGiftSend")().asInstanceOf[Unit]
+    
     @JSGlobal("Game.promptL")
     @js.native
     def promptL: HTMLDivElement = js.native
     inline def promptL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptL")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.promptNoClose")
+    @js.native
+    def promptNoClose: Boolean = js.native
+    inline def promptNoClose_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptNoClose")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptOn")
     @js.native
@@ -2452,6 +2490,11 @@ object global {
     inline def reindeerDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reindeerDrops")(x.asInstanceOf[js.Any])
     
     inline def removeClass(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSGlobal("Game.resPath")
+    @js.native
+    def resPath: String = js.native
+    inline def resPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resPath")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.researchT")
     @js.native
@@ -2627,6 +2670,7 @@ object global {
     inline def showBackupWarning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBackupWarning")().asInstanceOf[Unit]
     
     inline def showLangSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showLangSelection")().asInstanceOf[Unit]
+    inline def showLangSelection(firstLaunch: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showLangSelection")(firstLaunch.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.showedScriptLoadError")
     @js.native
@@ -2847,6 +2891,11 @@ object global {
     def wrinklerHP: Double = js.native
     inline def wrinklerHP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerHP")(x.asInstanceOf[js.Any])
     
+    @JSGlobal("Game.wrinklerLimit")
+    @js.native
+    def wrinklerLimit: Double = js.native
+    inline def wrinklerLimit_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerLimit")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.wrinklerSquishSound")
     @js.native
     def wrinklerSquishSound: Double = js.native
@@ -2975,6 +3024,12 @@ object global {
       */
     /* CompleteClass */
     override def onLoadReplace(): Unit = js.native
+    
+    /*
+      * Waits for all assets to load (checking once every 200ms) and then calls the callback
+      */
+    /* CompleteClass */
+    override def waitForLoad(assets: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
   }
   
   /**

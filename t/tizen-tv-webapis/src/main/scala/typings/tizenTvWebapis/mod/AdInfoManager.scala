@@ -25,9 +25,9 @@ trait AdInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/adinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, If the application call this method when the PSID is a null value.
+    * @throws WebAPIException with error type InvalidStateError, If the application call this method when the PSID is a null value.
     *
     * @version 1.0
     *
@@ -44,7 +44,7 @@ trait AdInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/adinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @version 1.0
     *
@@ -63,7 +63,7 @@ trait AdInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/adinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @version 1.0
     *

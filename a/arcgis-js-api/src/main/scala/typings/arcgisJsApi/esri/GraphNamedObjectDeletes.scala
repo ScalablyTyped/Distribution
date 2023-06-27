@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphNamedObjectDeletes extends StObject {
   
   /**
-    * A list of the ids of the specified type to delete.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#GraphNamedObjectDeletes)
-    */
+  		 * A list of the ids of the specified type to delete.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#GraphNamedObjectDeletes)
+  		 */
   var ids: js.Array[String]
   
   /**
-    * The name of the [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) that the entities belongs to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#GraphNamedObjectDeletes)
-    */
+  		 * The name of the [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) that the entities belongs to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#GraphNamedObjectDeletes)
+  		 */
   var typeName: String
 }
 object GraphNamedObjectDeletes {

@@ -10,8 +10,8 @@ trait CIMGeometricEffectArrow
      with CIMGeometricEffectType {
   
   /**
-    * The type of arrow to be displayed.
-    */
+  			 * The type of arrow to be displayed.
+  			 */
   var geometricEffectArrowType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectArrowType * / any */ String
   ] = js.undefined
@@ -20,8 +20,8 @@ trait CIMGeometricEffectArrow
   var type_CIMGeometricEffectArrow: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectArrow
   
   /**
-    * The distance between the lines that construct the body of the arrow.
-    */
+  			 * The distance between the lines that construct the body of the arrow.
+  			 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectArrow {

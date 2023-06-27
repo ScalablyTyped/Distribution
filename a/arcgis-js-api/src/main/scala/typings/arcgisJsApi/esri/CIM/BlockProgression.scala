@@ -11,24 +11,24 @@ sealed trait BlockProgression extends StObject
 object BlockProgression extends StObject {
   
   /**
-    * Bottom To Top.
-    */
+  			 * Bottom To Top.
+  			 */
   @js.native
   sealed trait BTT
     extends StObject
        with BlockProgression
   
   /**
-    * Right To Left (vertical text).
-    */
+  			 * Right To Left (vertical text).
+  			 */
   @js.native
   sealed trait RTL
     extends StObject
        with BlockProgression
   
   /**
-    * Top To Bottom.
-    */
+  			 * Top To Bottom.
+  			 */
   @js.native
   sealed trait TTB
     extends StObject

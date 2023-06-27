@@ -10,28 +10,28 @@ trait LineCallout3DProperties
      with Callout3DProperties {
   
   /**
-    * The border settings of the callout line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
-    */
+  		 * The border settings of the callout line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
+  		 */
   var border: js.UndefOr[LineCallout3DBorderProperties] = js.undefined
   
   /**
-    * The color of the callout line.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#color)
-    */
+  		 * The color of the callout line.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The width of the callout line in points.
-    *
-    * @default 1px
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#size)
-    */
+  		 * The width of the callout line in points.
+  		 *
+  		 * @default 1px
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
   
   var `type`: js.UndefOr[line] = js.undefined

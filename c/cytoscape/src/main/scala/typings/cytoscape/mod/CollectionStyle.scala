@@ -15,14 +15,18 @@ trait CollectionStyle extends StObject {
     */
   def addClass(classes: ClassNames): this.type = js.native
   
+  def classes(): this.type | js.Array[String] = js.native
   /**
     * Replace the current list of classes on the elements with the specified list.
-    * @param classes A space-separated list of class names that replaces the current class list.
+    * @param classes A space-separated list or array of class names that replaces the current class list.
     * http://js.cytoscape.org/#eles.classes
-    * Note: can be used to clear all classes (no arguments).
+    * Note: can be used to clear all classes (empty string or array).
     */
-  def classes(): this.type = js.native
   def classes(classes: ClassNames): this.type = js.native
+  @JSName("classes")
+  def classes_Array(): js.Array[String] = js.native
+  @JSName("classes")
+  def classes_Union(classes: ClassNames): this.type | js.Array[String] = js.native
   
   /**
     * Get a name-value pair object containing visual style properties and their values for the element.

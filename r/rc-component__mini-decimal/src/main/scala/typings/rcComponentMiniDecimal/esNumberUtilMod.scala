@@ -1,6 +1,7 @@
 package typings.rcComponentMiniDecimal
 
 import typings.rcComponentMiniDecimal.anon.DecimalStr
+import typings.rcComponentMiniDecimal.esInterfaceMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ object esNumberUtilMod {
   
   inline def isE(number: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isE")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isE(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isE")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isEmpty(value: ValueType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def num2str(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("num2str")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   

@@ -139,6 +139,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -475,6 +476,8 @@ object libComponentsGridMod {
   inline def Column_samp(props: ColumnIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_script(props: ColumnIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Column_search(props: ColumnIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_section(props: ColumnIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -831,6 +834,8 @@ object libComponentsGridMod {
   
   inline def Grid_script(props: GridIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def Grid_search(props: GridIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def Grid_section(props: GridIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid_select(props: GridIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -1185,6 +1190,8 @@ object libComponentsGridMod {
   inline def Row_samp(props: RowIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_script(props: RowIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Row_search(props: RowIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_section(props: RowIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

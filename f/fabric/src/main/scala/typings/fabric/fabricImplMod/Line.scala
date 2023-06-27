@@ -74,7 +74,6 @@ object Line {
   /**
     * Returns fabric.Line instance from an SVG element
     * @static
-    * @memberOf fabric.Line
     * @param {SVGElement} element Element to parse
     * @param {Object} [options] Options object
     * @param {Function} [callback] callback function invoked after parsing

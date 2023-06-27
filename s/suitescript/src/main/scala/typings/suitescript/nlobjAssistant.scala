@@ -33,7 +33,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -59,7 +58,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -75,7 +73,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -92,7 +89,6 @@ Instantiable0[Any] {
     * @return {nlobjSubList}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -107,7 +103,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     */
@@ -118,7 +113,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     */
@@ -129,7 +123,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep[]}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     */
@@ -140,7 +133,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     */
@@ -151,7 +143,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -164,7 +155,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -178,7 +168,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -191,7 +180,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -203,7 +191,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -218,7 +205,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -231,7 +217,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -244,7 +229,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -257,7 +241,6 @@ Instantiable0[Any] {
     * @return {nlobjSubList}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param name
@@ -270,7 +253,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -282,7 +264,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @return
@@ -295,7 +276,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param response
@@ -309,7 +289,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param step
@@ -323,7 +302,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param html
@@ -337,7 +315,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param values
@@ -351,7 +328,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param html
@@ -365,7 +341,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param numbered
@@ -380,7 +355,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param ordered
@@ -394,7 +368,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param script
@@ -408,7 +381,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param show
@@ -424,7 +396,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param title
@@ -441,7 +412,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistant
     *
     * @since 2009.2
     * @param title

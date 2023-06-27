@@ -233,7 +233,7 @@ object mod {
     var noAnchorUrl: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @deprecated. Use linkBrackets instead.
+      * @deprecated Use linkBrackets instead.
       * (Only for: `anchor` formatter.) Don't print brackets around links.
       */
     var noLinkBrackets: js.UndefOr[Boolean] = js.undefined
@@ -388,7 +388,7 @@ object mod {
       * The following are deprecated options.  See the documentation.
       */
     /**
-      * @deprecated. Use baseElements.selectors instead.
+      * @deprecated Use baseElements.selectors instead.
       */
     var baseElement: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -434,7 +434,7 @@ object mod {
     var preserveNewlines: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @deprecated. Use baseElements instead.
+      * @deprecated Use baseElements instead.
       */
     var returnDomByDefault: js.UndefOr[Boolean] = js.undefined
     
@@ -446,12 +446,12 @@ object mod {
     var selectors: js.UndefOr[js.Array[SelectorDefinition]] = js.undefined
     
     /**
-      * @deprecated. Use selectors with `format: 'dataTable'` instead.
+      * @deprecated Use selectors with `format: 'dataTable'` instead.
       */
     var tables: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
     /**
-      * @deprecated. Use selectors instead.
+      * @deprecated Use selectors instead.
       */
     var tags: js.UndefOr[TagDefinitions] = js.undefined
     

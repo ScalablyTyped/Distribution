@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthoringInfoStatistics extends StObject {
   
   /**
-    * The maximum data value of the attribute represented by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#statistics)
-    */
+  		 * The maximum data value of the attribute represented by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#statistics)
+  		 */
   var max: Double
   
   /**
-    * The minimum data value of the attribute represented by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#statistics)
-    */
+  		 * The minimum data value of the attribute represented by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#statistics)
+  		 */
   var min: Double
 }
 object AuthoringInfoStatistics {

@@ -8,11 +8,11 @@ trait ParametersPathTreesha extends StObject {
   
   var parameters: PathTreesha
   
-  var responses: `200254`
+  var responses: `200298`
 }
 object ParametersPathTreesha {
   
-  inline def apply(parameters: PathTreesha, responses: `200254`): ParametersPathTreesha = {
+  inline def apply(parameters: PathTreesha, responses: `200298`): ParametersPathTreesha = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathTreesha]
   }
@@ -22,6 +22,6 @@ object ParametersPathTreesha {
     
     inline def setParameters(value: PathTreesha): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200254`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200298`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

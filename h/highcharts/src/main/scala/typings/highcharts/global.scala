@@ -203,7 +203,7 @@ object global {
         *        The Chart instance to apply the axis on.
         *
         * @param userOptions
-        *        Axis options.
+        *        Axis options
         */
       def this(chart: typings.highcharts.mod.Chart_, userOptions: AxisOptions) = this()
     }

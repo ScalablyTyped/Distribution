@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PieChartRendererLegendOptions extends StObject {
   
   /**
-    * Describes the data used by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#legendOptions)
-    */
+  		 * Describes the data used by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#legendOptions)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object PieChartRendererLegendOptions {

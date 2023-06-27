@@ -148,13 +148,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddSortItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -179,7 +179,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddSortItem(
       /**
@@ -190,7 +190,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -212,13 +212,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveSortItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -244,7 +244,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveSortItem(
       /**
@@ -255,7 +255,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -277,13 +277,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateSortItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -309,7 +309,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateSortItem(
       /**
@@ -320,7 +320,7 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nSortPanel` itself
       */
@@ -358,13 +358,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAddSortItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -383,13 +383,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRemoveSortItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -408,13 +408,13 @@ object sapMP13nSortPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachUpdateSortItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -422,7 +422,7 @@ object sapMP13nSortPanelMod_ {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:addSortItem addSortItem} to attached listeners.
       *
@@ -435,7 +435,7 @@ object sapMP13nSortPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:removeSortItem removeSortItem} to attached listeners.
       *
@@ -448,7 +448,7 @@ object sapMP13nSortPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateSortItem updateSortItem} to attached listeners.
       *
@@ -530,7 +530,7 @@ object sapMP13nSortPanelMod_ {
     def removeAllSortItems(): js.Array[typings.openui5.sapMP13nSortItemMod.default] = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * removes all invalid sort conditions.
       */
@@ -557,7 +557,7 @@ object sapMP13nSortPanelMod_ {
     ): typings.openui5.sapMP13nSortItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * removes all errors/warning states from of all sort conditions.
       */
@@ -625,6 +625,20 @@ object sapMP13nSortPanelMod_ {
     def validateConditions(): Boolean = js.native
   }
   
+  trait P13nSortPanel$AddSortItemEventParameters extends StObject
+  
+  trait P13nSortPanel$RemoveSortItemEventParameters extends StObject
+  
+  trait P13nSortPanel$UpdateSortItemEventParameters extends StObject
+  
+  type P13nSortPanelAddSortItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nSortPanel$AddSortItemEventParameters]
+  
+  type P13nSortPanelAddSortItemEventParameters = P13nSortPanel$AddSortItemEventParameters
+  
+  type P13nSortPanelRemoveSortItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nSortPanel$RemoveSortItemEventParameters]
+  
+  type P13nSortPanelRemoveSortItemEventParameters = P13nSortPanel$RemoveSortItemEventParameters
+  
   trait P13nSortPanelSettings
     extends StObject
        with P13nPanelSettings {
@@ -632,7 +646,9 @@ object sapMP13nSortPanelMod_ {
     /**
       * event raised when a SortItem was added
       */
-    var addSortItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var addSortItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * defines if the mediaQuery or a ContainerResize will be used for layout update. When the ConditionPanel
@@ -651,7 +667,9 @@ object sapMP13nSortPanelMod_ {
     /**
       * event raised when a SortItem was removed
       */
-    var removeSortItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var removeSortItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * defined Sort Items
@@ -663,7 +681,9 @@ object sapMP13nSortPanelMod_ {
     /**
       * event raised when a SortItem was updated
       */
-    var updateSortItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateSortItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object P13nSortPanelSettings {
     
@@ -675,7 +695,7 @@ object sapMP13nSortPanelMod_ {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nSortPanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setAddSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addSortItem", js.Any.fromFunction1(value))
+      inline def setAddSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "addSortItem", js.Any.fromFunction1(value))
       
       inline def setAddSortItemUndefined: Self = StObject.set(x, "addSortItem", js.undefined)
       
@@ -687,7 +707,7 @@ object sapMP13nSortPanelMod_ {
       
       inline def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
       
-      inline def setRemoveSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "removeSortItem", js.Any.fromFunction1(value))
+      inline def setRemoveSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "removeSortItem", js.Any.fromFunction1(value))
       
       inline def setRemoveSortItemUndefined: Self = StObject.set(x, "removeSortItem", js.undefined)
       
@@ -699,9 +719,13 @@ object sapMP13nSortPanelMod_ {
       
       inline def setSortItemsVarargs(value: typings.openui5.sapMP13nSortItemMod.default*): Self = StObject.set(x, "sortItems", js.Array(value*))
       
-      inline def setUpdateSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateSortItem", js.Any.fromFunction1(value))
+      inline def setUpdateSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "updateSortItem", js.Any.fromFunction1(value))
       
       inline def setUpdateSortItemUndefined: Self = StObject.set(x, "updateSortItem", js.undefined)
     }
   }
+  
+  type P13nSortPanelUpdateSortItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nSortPanel$UpdateSortItemEventParameters]
+  
+  type P13nSortPanelUpdateSortItemEventParameters = P13nSortPanel$UpdateSortItemEventParameters
 }

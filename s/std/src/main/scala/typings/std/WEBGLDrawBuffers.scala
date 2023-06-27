@@ -38,6 +38,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers) */
 @js.native
 trait WEBGLDrawBuffers extends StObject {
   
@@ -143,8 +144,10 @@ trait WEBGLDrawBuffers extends StObject {
   /* standard dom */
   val MAX_DRAW_BUFFERS_WEBGL: `0x8824` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers/drawBuffersWEBGL) */
   /* standard dom */
   def drawBuffersWEBGL(buffers: js.Array[GLenum]): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_draw_buffers/drawBuffersWEBGL) */
   /* standard dom.iterable */
   def drawBuffersWEBGL(buffers: js.Iterable[GLenum]): Unit = js.native
 }

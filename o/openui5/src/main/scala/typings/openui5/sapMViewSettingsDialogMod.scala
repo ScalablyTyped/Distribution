@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.FilterCompoundKeys
-import typings.openui5.anon.ParentFilterItem
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.StringFilterOperator
 import typings.openui5.sapMLibraryMod.TitleAlignment
@@ -145,7 +143,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Adds some filterItem to the aggregation {@link #getFilterItems filterItems}.
       *
@@ -208,13 +206,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -239,7 +237,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -250,7 +248,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -275,13 +273,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -310,7 +308,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
@@ -321,7 +319,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -329,7 +327,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:filterDetailPageOpened filterDetailPageOpened}
+      * Attaches event handler `fnFunction` to the {@link #event:filterDetailPageOpened filterDetailPageOpened }
       * event of this `sap.m.ViewSettingsDialog`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -343,20 +341,20 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit]
     ): this.type = js.native
     def attachFilterDetailPageOpened(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:filterDetailPageOpened filterDetailPageOpened}
+      * Attaches event handler `fnFunction` to the {@link #event:filterDetailPageOpened filterDetailPageOpened }
       * event of this `sap.m.ViewSettingsDialog`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -375,7 +373,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit]
     ): this.type = js.native
     def attachFilterDetailPageOpened(
       /**
@@ -386,7 +384,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -407,13 +405,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -438,7 +436,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
@@ -449,7 +447,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -470,13 +468,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachResetFilters(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -501,7 +499,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachResetFilters(
       /**
@@ -512,7 +510,7 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsDialog` itself
       */
@@ -520,7 +518,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Binds aggregation {@link #getCustomTabs customTabs} to model data.
       *
@@ -535,7 +533,7 @@ object sapMViewSettingsDialogMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Binds aggregation {@link #getFilterItems filterItems} to model data.
       *
@@ -550,7 +548,7 @@ object sapMViewSettingsDialogMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Binds aggregation {@link #getGroupItems groupItems} to model data.
       *
@@ -565,7 +563,7 @@ object sapMViewSettingsDialogMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Binds aggregation {@link #getPresetFilterItems presetFilterItems} to model data.
       *
@@ -580,7 +578,7 @@ object sapMViewSettingsDialogMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Binds aggregation {@link #getSortItems sortItems} to model data.
       *
@@ -602,7 +600,7 @@ object sapMViewSettingsDialogMod {
     def clearFilters(): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Destroys all the customTabs in the aggregation {@link #getCustomTabs customTabs}.
       *
@@ -611,7 +609,7 @@ object sapMViewSettingsDialogMod {
     def destroyCustomTabs(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys all the filterItems in the aggregation {@link #getFilterItems filterItems}.
       *
@@ -620,7 +618,7 @@ object sapMViewSettingsDialogMod {
     def destroyFilterItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys all the groupItems in the aggregation {@link #getGroupItems groupItems}.
       *
@@ -629,7 +627,7 @@ object sapMViewSettingsDialogMod {
     def destroyGroupItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys all the presetFilterItems in the aggregation {@link #getPresetFilterItems presetFilterItems}.
       *
@@ -638,7 +636,7 @@ object sapMViewSettingsDialogMod {
     def destroyPresetFilterItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys all the sortItems in the aggregation {@link #getSortItems sortItems}.
       *
@@ -657,13 +655,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -681,13 +679,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def detachConfirm(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -695,7 +693,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:filterDetailPageOpened filterDetailPageOpened}
+      * Detaches event handler `fnFunction` from the {@link #event:filterDetailPageOpened filterDetailPageOpened }
       * event of this `sap.m.ViewSettingsDialog`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -706,13 +704,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit]
     ): this.type = js.native
     def detachFilterDetailPageOpened(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogFilterDetailPageOpenedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -730,13 +728,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachReset(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -754,13 +752,13 @@ object sapMViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachResetFilters(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -768,7 +766,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -781,33 +779,37 @@ object sapMViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireConfirm(): this.type = js.native
-    def fireConfirm(/**
+    def fireConfirm(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FilterCompoundKeys): this.type = js.native
+    mParameters: ViewSettingsDialog$ConfirmEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filterDetailPageOpened filterDetailPageOpened} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFilterDetailPageOpened(): this.type = js.native
-    def fireFilterDetailPageOpened(/**
+    def fireFilterDetailPageOpened(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ParentFilterItem): this.type = js.native
+    mParameters: ViewSettingsDialog$FilterDetailPageOpenedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:reset reset} to attached listeners.
       *
@@ -820,7 +822,7 @@ object sapMViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:resetFilters resetFilters} to attached listeners.
       *
@@ -833,7 +835,7 @@ object sapMViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets content of aggregation {@link #getCustomTabs customTabs}.
       *
@@ -842,7 +844,7 @@ object sapMViewSettingsDialogMod {
     def getCustomTabs(): js.Array[typings.openui5.sapMViewSettingsCustomTabMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getFilterItems filterItems}.
       *
@@ -854,7 +856,7 @@ object sapMViewSettingsDialogMod {
     def getFilterItems(): js.Array[typings.openui5.sapMViewSettingsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets current value of property {@link #getFilterSearchOperator filterSearchOperator}.
       *
@@ -880,7 +882,7 @@ object sapMViewSettingsDialogMod {
     def getGroupDescending(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getGroupItems groupItems}.
       *
@@ -889,7 +891,7 @@ object sapMViewSettingsDialogMod {
     def getGroupItems(): js.Array[typings.openui5.sapMViewSettingsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getPresetFilterItems presetFilterItems}.
       *
@@ -899,7 +901,7 @@ object sapMViewSettingsDialogMod {
     def getPresetFilterItems(): js.Array[typings.openui5.sapMViewSettingsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets the selected filter object in format { parent_key: { key: boolean, key2: boolean, ...}, ... }.
       *
@@ -942,8 +944,8 @@ object sapMViewSettingsDialogMod {
     def getSelectedGroupItem(): ID = js.native
     
     /**
-      * ID of the element which is the current target of the association {@link #getSelectedPresetFilterItem
-      * selectedPresetFilterItem}, or `null`.
+      * ID of the element which is the current target of the association {@link #getSelectedPresetFilterItem selectedPresetFilterItem},
+      * or `null`.
       */
     def getSelectedPresetFilterItem(): ID = js.native
     
@@ -965,7 +967,7 @@ object sapMViewSettingsDialogMod {
     def getSortDescending(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getSortItems sortItems}.
       *
@@ -984,7 +986,7 @@ object sapMViewSettingsDialogMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1007,7 +1009,7 @@ object sapMViewSettingsDialogMod {
     def hasStyleClass(): Boolean = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Checks for the provided `sap.m.ViewSettingsCustomTab` in the aggregation {@link #getCustomTabs customTabs}.
       * and returns its index if found or -1 otherwise.
@@ -1022,7 +1024,7 @@ object sapMViewSettingsDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Checks for the provided `sap.m.ViewSettingsItem` in the aggregation {@link #getFilterItems filterItems}.
       * and returns its index if found or -1 otherwise.
@@ -1037,7 +1039,7 @@ object sapMViewSettingsDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Checks for the provided `sap.m.ViewSettingsItem` in the aggregation {@link #getGroupItems groupItems}.
       * and returns its index if found or -1 otherwise.
@@ -1052,7 +1054,7 @@ object sapMViewSettingsDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Checks for the provided `sap.m.ViewSettingsItem` in the aggregation {@link #getPresetFilterItems presetFilterItems}.
       * and returns its index if found or -1 otherwise.
@@ -1067,7 +1069,7 @@ object sapMViewSettingsDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Checks for the provided `sap.m.ViewSettingsItem` in the aggregation {@link #getSortItems sortItems}.
       * and returns its index if found or -1 otherwise.
@@ -1082,7 +1084,7 @@ object sapMViewSettingsDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Inserts a customTab into the aggregation {@link #getCustomTabs customTabs}.
       *
@@ -1102,7 +1104,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Inserts a filterItem into the aggregation {@link #getFilterItems filterItems}.
       *
@@ -1122,7 +1124,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Inserts a groupItem into the aggregation {@link #getGroupItems groupItems}.
       *
@@ -1142,7 +1144,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Inserts a presetFilterItem into the aggregation {@link #getPresetFilterItems presetFilterItems}.
       *
@@ -1162,7 +1164,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Inserts a sortItem into the aggregation {@link #getSortItems sortItems}.
       *
@@ -1196,7 +1198,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Removes all the controls from the aggregation {@link #getCustomTabs customTabs}.
       *
@@ -1215,7 +1217,7 @@ object sapMViewSettingsDialogMod {
     def removeAllFilterItems(): js.Array[typings.openui5.sapMViewSettingsFilterItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes all the controls from the aggregation {@link #getGroupItems groupItems}.
       *
@@ -1226,7 +1228,7 @@ object sapMViewSettingsDialogMod {
     def removeAllGroupItems(): js.Array[typings.openui5.sapMViewSettingsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes all the controls from the aggregation {@link #getPresetFilterItems presetFilterItems}.
       *
@@ -1237,7 +1239,7 @@ object sapMViewSettingsDialogMod {
     def removeAllPresetFilterItems(): js.Array[typings.openui5.sapMViewSettingsItemMod.default] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes all the controls from the aggregation {@link #getSortItems sortItems}.
       *
@@ -1252,7 +1254,7 @@ object sapMViewSettingsDialogMod {
       */
     vCustomTab: String): typings.openui5.sapMViewSettingsCustomTabMod.default | Null = js.native
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Removes a customTab from the aggregation {@link #getCustomTabs customTabs}.
       *
@@ -1295,7 +1297,7 @@ object sapMViewSettingsDialogMod {
       */
     vGroupItem: String): typings.openui5.sapMViewSettingsItemMod.default | Null = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes a groupItem from the aggregation {@link #getGroupItems groupItems}.
       *
@@ -1317,7 +1319,7 @@ object sapMViewSettingsDialogMod {
       */
     vPresetFilterItem: String): typings.openui5.sapMViewSettingsItemMod.default | Null = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes a presetFilterItem from the aggregation {@link #getPresetFilterItems presetFilterItems}.
       *
@@ -1339,7 +1341,7 @@ object sapMViewSettingsDialogMod {
       */
     vSortItem: String): typings.openui5.sapMViewSettingsItemMod.default | Null = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Removes a sortItem from the aggregation {@link #getSortItems sortItems}.
       *
@@ -1357,7 +1359,7 @@ object sapMViewSettingsDialogMod {
     ): typings.openui5.sapMViewSettingsItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets a callback that will check the ViewSettingsItem's text against the search query. If a callback is
       * set, `filterSearchOperator` property will be ignored, as it serves the same purpose.
@@ -1373,7 +1375,7 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets a new value for property {@link #getFilterSearchOperator filterSearchOperator}.
       *
@@ -1419,7 +1421,7 @@ object sapMViewSettingsDialogMod {
     bGroupDescending: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets the selected filter object in format { parent_key: { key: boolean, key2: boolean, ...}, ... }.
       *
@@ -1528,7 +1530,7 @@ object sapMViewSettingsDialogMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1556,7 +1558,7 @@ object sapMViewSettingsDialogMod {
     sTitleAlignment: TitleAlignment): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Unbinds aggregation {@link #getCustomTabs customTabs} from model data.
       *
@@ -1565,7 +1567,7 @@ object sapMViewSettingsDialogMod {
     def unbindCustomTabs(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Unbinds aggregation {@link #getFilterItems filterItems} from model data.
       *
@@ -1574,7 +1576,7 @@ object sapMViewSettingsDialogMod {
     def unbindFilterItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Unbinds aggregation {@link #getGroupItems groupItems} from model data.
       *
@@ -1583,7 +1585,7 @@ object sapMViewSettingsDialogMod {
     def unbindGroupItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Unbinds aggregation {@link #getPresetFilterItems presetFilterItems} from model data.
       *
@@ -1592,7 +1594,7 @@ object sapMViewSettingsDialogMod {
     def unbindPresetFilterItems(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Unbinds aggregation {@link #getSortItems sortItems} from model data.
       *
@@ -1601,6 +1603,157 @@ object sapMViewSettingsDialogMod {
     def unbindSortItems(): this.type = js.native
   }
   
+  trait ViewSettingsDialog$CancelEventParameters extends StObject
+  
+  trait ViewSettingsDialog$ConfirmEventParameters extends StObject {
+    
+    /**
+      * The selected filter items in an object notation format: { parentKey: { key: boolean, key2: boolean, ...
+      * }, ...}. If a custom control filter was displayed (for example, the user clicked on the filter item),
+      * the value for its key is set to true to indicate that there has been an interaction with the control.
+      */
+    var filterCompoundKeys: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The selected filters in an array of ViewSettingsItem.
+      */
+    var filterItems: js.UndefOr[js.Array[typings.openui5.sapMViewSettingsItemMod.default]] = js.undefined
+    
+    /**
+      * The selected filter items in an object notation format: { key: boolean }. If a custom control filter
+      * was displayed (for example, the user clicked on the filter item), the value for its key is set to true
+      * to indicate that there has been an interaction with the control.
+      */
+    var filterKeys: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The selected filter items in a string format to display in the control's header bar in format "Filtered
+      * by: key (subkey1, subkey2, subkey3)".
+      */
+    var filterString: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The selected group order (true = descending, false = ascending).
+      */
+    var groupDescending: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The selected group item.
+      */
+    var groupItem: js.UndefOr[typings.openui5.sapMViewSettingsItemMod.default] = js.undefined
+    
+    /**
+      * The selected preset filter item.
+      */
+    var presetFilterItem: js.UndefOr[typings.openui5.sapMViewSettingsItemMod.default] = js.undefined
+    
+    /**
+      * The selected sort order (true = descending, false = ascending).
+      */
+    var sortDescending: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The selected sort item.
+      */
+    var sortItem: js.UndefOr[typings.openui5.sapMViewSettingsItemMod.default] = js.undefined
+  }
+  object ViewSettingsDialog$ConfirmEventParameters {
+    
+    inline def apply(): ViewSettingsDialog$ConfirmEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSettingsDialog$ConfirmEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsDialog$ConfirmEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFilterCompoundKeys(value: js.Object): Self = StObject.set(x, "filterCompoundKeys", value.asInstanceOf[js.Any])
+      
+      inline def setFilterCompoundKeysUndefined: Self = StObject.set(x, "filterCompoundKeys", js.undefined)
+      
+      inline def setFilterItems(value: js.Array[typings.openui5.sapMViewSettingsItemMod.default]): Self = StObject.set(x, "filterItems", value.asInstanceOf[js.Any])
+      
+      inline def setFilterItemsUndefined: Self = StObject.set(x, "filterItems", js.undefined)
+      
+      inline def setFilterItemsVarargs(value: typings.openui5.sapMViewSettingsItemMod.default*): Self = StObject.set(x, "filterItems", js.Array(value*))
+      
+      inline def setFilterKeys(value: js.Object): Self = StObject.set(x, "filterKeys", value.asInstanceOf[js.Any])
+      
+      inline def setFilterKeysUndefined: Self = StObject.set(x, "filterKeys", js.undefined)
+      
+      inline def setFilterString(value: String): Self = StObject.set(x, "filterString", value.asInstanceOf[js.Any])
+      
+      inline def setFilterStringUndefined: Self = StObject.set(x, "filterString", js.undefined)
+      
+      inline def setGroupDescending(value: Boolean): Self = StObject.set(x, "groupDescending", value.asInstanceOf[js.Any])
+      
+      inline def setGroupDescendingUndefined: Self = StObject.set(x, "groupDescending", js.undefined)
+      
+      inline def setGroupItem(value: typings.openui5.sapMViewSettingsItemMod.default): Self = StObject.set(x, "groupItem", value.asInstanceOf[js.Any])
+      
+      inline def setGroupItemUndefined: Self = StObject.set(x, "groupItem", js.undefined)
+      
+      inline def setPresetFilterItem(value: typings.openui5.sapMViewSettingsItemMod.default): Self = StObject.set(x, "presetFilterItem", value.asInstanceOf[js.Any])
+      
+      inline def setPresetFilterItemUndefined: Self = StObject.set(x, "presetFilterItem", js.undefined)
+      
+      inline def setSortDescending(value: Boolean): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+      
+      inline def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
+      
+      inline def setSortItem(value: typings.openui5.sapMViewSettingsItemMod.default): Self = StObject.set(x, "sortItem", value.asInstanceOf[js.Any])
+      
+      inline def setSortItemUndefined: Self = StObject.set(x, "sortItem", js.undefined)
+    }
+  }
+  
+  trait ViewSettingsDialog$FilterDetailPageOpenedEventParameters extends StObject {
+    
+    /**
+      * The filter item for which the details are opened.
+      */
+    var parentFilterItem: js.UndefOr[typings.openui5.sapMViewSettingsFilterItemMod.default] = js.undefined
+  }
+  object ViewSettingsDialog$FilterDetailPageOpenedEventParameters {
+    
+    inline def apply(): ViewSettingsDialog$FilterDetailPageOpenedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSettingsDialog$FilterDetailPageOpenedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsDialog$FilterDetailPageOpenedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setParentFilterItem(value: typings.openui5.sapMViewSettingsFilterItemMod.default): Self = StObject.set(x, "parentFilterItem", value.asInstanceOf[js.Any])
+      
+      inline def setParentFilterItemUndefined: Self = StObject.set(x, "parentFilterItem", js.undefined)
+    }
+  }
+  
+  trait ViewSettingsDialog$ResetEventParameters extends StObject
+  
+  trait ViewSettingsDialog$ResetFiltersEventParameters extends StObject
+  
+  type ViewSettingsDialogCancelEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$CancelEventParameters]
+  
+  type ViewSettingsDialogCancelEventParameters = ViewSettingsDialog$CancelEventParameters
+  
+  type ViewSettingsDialogConfirmEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters]
+  
+  type ViewSettingsDialogConfirmEventParameters = ViewSettingsDialog$ConfirmEventParameters
+  
+  type ViewSettingsDialogFilterDetailPageOpenedEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$FilterDetailPageOpenedEventParameters]
+  
+  type ViewSettingsDialogFilterDetailPageOpenedEventParameters = ViewSettingsDialog$FilterDetailPageOpenedEventParameters
+  
+  type ViewSettingsDialogResetEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ResetEventParameters]
+  
+  type ViewSettingsDialogResetEventParameters = ViewSettingsDialog$ResetEventParameters
+  
+  type ViewSettingsDialogResetFiltersEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ResetFiltersEventParameters]
+  
+  type ViewSettingsDialogResetFiltersEventParameters = ViewSettingsDialog$ResetFiltersEventParameters
+  
   trait ViewSettingsDialogSettings
     extends StObject
        with ControlSettings {
@@ -1608,7 +1761,9 @@ object sapMViewSettingsDialogMod {
     /**
       * Called when the Cancel button is pressed. It can be used to set the state of custom filter controls.
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Indicates that the user has pressed the OK button and the selected sort, group, and filter settings should
@@ -1617,10 +1772,15 @@ object sapMViewSettingsDialogMod {
       * **Note:** Custom tabs are not converted to event parameters automatically. For custom tabs, you have
       * to read the state of your controls inside the callback of this event.
       */
-    var confirm: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var confirm: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * The list of all the custom tabs.
       */
@@ -1631,10 +1791,15 @@ object sapMViewSettingsDialogMod {
     /**
       * Fired when the filter detail page is opened.
       */
-    var filterDetailPageOpened: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filterDetailPageOpened: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$FilterDetailPageOpenedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The list of items with key and value that can be filtered on (for example, a list of columns for a table).
       * A filterItem is associated with one or more detail filters.
@@ -1646,7 +1811,7 @@ object sapMViewSettingsDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Provides a string filter operator which is used when the user searches items in filter details page.
       * Possible operators are: `AnyWordStartsWith`, `Contains`, `StartsWith`, `Equals`. This property will be
@@ -1664,7 +1829,7 @@ object sapMViewSettingsDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The list of items with key and value that can be grouped on (for example, a list of columns for a table).
       */
@@ -1673,7 +1838,7 @@ object sapMViewSettingsDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The list of preset filter items with key and value that allows the selection of more complex or custom
       * filters. These entries are displayed at the top of the filter tab.
@@ -1685,12 +1850,16 @@ object sapMViewSettingsDialogMod {
     /**
       * Called when the Reset button is pressed. It can be used to set the state of custom tabs.
       */
-    var reset: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var reset: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Called when the filters are being reset.
       */
-    var resetFilters: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var resetFilters: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The group item that is selected. It can be set by either passing a key or the item itself to the function
@@ -1720,7 +1889,7 @@ object sapMViewSettingsDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The list of items with key and value that can be sorted over (for example, a list of columns for a table).
       */
@@ -1735,7 +1904,7 @@ object sapMViewSettingsDialogMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.None`, the automatic title
       * alignment depending on the theme settings will be disabled. If set to `TitleAlignment.Auto`, the Title
@@ -1756,11 +1925,13 @@ object sapMViewSettingsDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ViewSettingsDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+      inline def setConfirm(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters] => Unit
+      ): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
       
       inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
       
@@ -1772,7 +1943,9 @@ object sapMViewSettingsDialogMod {
       
       inline def setCustomTabsVarargs(value: typings.openui5.sapMViewSettingsCustomTabMod.default*): Self = StObject.set(x, "customTabs", js.Array(value*))
       
-      inline def setFilterDetailPageOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filterDetailPageOpened", js.Any.fromFunction1(value))
+      inline def setFilterDetailPageOpened(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$FilterDetailPageOpenedEventParameters] => Unit
+      ): Self = StObject.set(x, "filterDetailPageOpened", js.Any.fromFunction1(value))
       
       inline def setFilterDetailPageOpenedUndefined: Self = StObject.set(x, "filterDetailPageOpened", js.undefined)
       
@@ -1810,9 +1983,9 @@ object sapMViewSettingsDialogMod {
       
       inline def setPresetFilterItemsVarargs(value: typings.openui5.sapMViewSettingsItemMod.default*): Self = StObject.set(x, "presetFilterItems", js.Array(value*))
       
-      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      inline def setResetFilters(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "resetFilters", js.Any.fromFunction1(value))
+      inline def setResetFilters(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "resetFilters", js.Any.fromFunction1(value))
       
       inline def setResetFiltersUndefined: Self = StObject.set(x, "resetFilters", js.undefined)
       

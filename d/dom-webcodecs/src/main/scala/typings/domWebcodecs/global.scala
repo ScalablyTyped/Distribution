@@ -1,6 +1,8 @@
 package typings.domWebcodecs
 
 import typings.std.CanvasImageSource
+import typings.std.CodecState
+import typings.std.EncodedVideoChunkType
 import typings.std.ImageBitmap
 import typings.std.ImageBitmapOptions
 import typings.std.VideoColorPrimaries
@@ -27,7 +29,10 @@ object global {
     override def close(): Unit = js.native
     
     /* CompleteClass */
-    override def copyTo(destination: AllowSharedBufferSource, options: AudioDataCopyToOptions): Unit = js.native
+    override def copyTo(
+      destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
+      options: AudioDataCopyToOptions
+    ): Unit = js.native
     
     /* CompleteClass */
     override val duration: Double = js.native
@@ -75,7 +80,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
+    override val state: CodecState = js.native
   }
   object AudioDecoder {
     
@@ -113,7 +118,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
+    override val state: CodecState = js.native
   }
   object AudioEncoder {
     
@@ -136,7 +141,9 @@ object global {
     override val byteLength: Double = js.native
     
     /* CompleteClass */
-    override def copyTo(destination: AllowSharedBufferSource): Unit = js.native
+    override def copyTo(
+      destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Unit = js.native
     
     /* CompleteClass */
     override val duration: Double | Null = js.native
@@ -160,7 +167,9 @@ object global {
     override val byteLength: Double = js.native
     
     /* CompleteClass */
-    override def copyTo(destination: AllowSharedBufferSource): Unit = js.native
+    override def copyTo(
+      destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Unit = js.native
     
     /* CompleteClass */
     override val duration: Double | Null = js.native
@@ -169,7 +178,7 @@ object global {
     override val timestamp: Double = js.native
     
     /* CompleteClass */
-    override val `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any = js.native
+    override val `type`: EncodedVideoChunkType = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -280,7 +289,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
+    override val state: CodecState = js.native
   }
   object VideoDecoder {
     
@@ -315,7 +324,10 @@ object global {
     extends StObject
        with typings.domWebcodecs.VideoFrame {
     def this(source: CanvasImageSource) = this()
-    def this(data: AllowSharedBufferSource, init: VideoFrameBufferInit) = this()
+    def this(
+      data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
+      init: VideoFrameBufferInit
+    ) = this()
     def this(source: CanvasImageSource, init: VideoFrameInit) = this()
   }
   

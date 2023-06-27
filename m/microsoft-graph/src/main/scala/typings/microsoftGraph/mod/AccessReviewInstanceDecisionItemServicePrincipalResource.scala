@@ -8,6 +8,7 @@ trait AccessReviewInstanceDecisionItemServicePrincipalResource
   extends StObject
      with AccessReviewInstanceDecisionItemResource {
   
+  // The globally unique identifier of the application to which access has been granted.
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AccessReviewInstanceDecisionItemServicePrincipalResource {

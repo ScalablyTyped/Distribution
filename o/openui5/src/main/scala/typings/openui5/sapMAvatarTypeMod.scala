@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMAvatarTypeMod {
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Types of {@link sap.m.Avatar} based on the displayed content.
     */
@@ -28,7 +28,7 @@ object sapMAvatarTypeMod {
   @js.native
   sealed trait AvatarType extends StObject
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Types of {@link sap.m.Avatar} based on the displayed content.
     */

@@ -29,18 +29,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This class performs geodetic computations for Earth and 70+ non-Earth spheroids.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html)
-  */
+	 * This class performs geodetic computations for Earth and 70+ non-Earth spheroids.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html)
+	 */
 @js.native
 trait geodesicUtils extends StObject {
   
   /**
-    * Geodetically computes the area for one or more polygons.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicAreas)
-    */
+  		 * Geodetically computes the area for one or more polygons.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicAreas)
+  		 */
   def geodesicAreas(polygons: js.Array[Polygon]): js.Array[Double] = js.native
   def geodesicAreas(
     polygons: js.Array[Polygon],
@@ -49,17 +49,17 @@ trait geodesicUtils extends StObject {
   
   def geodesicDensify(geometry: Polygon, maxSegmentLength: Double): Polyline | Polygon = js.native
   /**
-    * Computes and returns a densified polyline or polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicDensify)
-    */
+  		 * Computes and returns a densified polyline or polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicDensify)
+  		 */
   def geodesicDensify(geometry: Polyline, maxSegmentLength: Double): Polyline | Polygon = js.native
   
   /**
-    * Geodetically computes the direction and distance between two known locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicDistance)
-    */
+  		 * Geodetically computes the direction and distance between two known locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicDistance)
+  		 */
   def geodesicDistance(from: Point, to: Point): GeodesicDistanceResult = js.native
   def geodesicDistance(
     from: Point,
@@ -68,10 +68,10 @@ trait geodesicUtils extends StObject {
   ): GeodesicDistanceResult = js.native
   
   /**
-    * Geodetically computes polygon perimeter or polyline length for one or more geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicLengths)
-    */
+  		 * Geodetically computes polygon perimeter or polyline length for one or more geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#geodesicLengths)
+  		 */
   def geodesicLengths(geometries: js.Array[Polygon | Polyline]): js.Array[Double] = js.native
   def geodesicLengths(
     geometries: js.Array[Polygon | Polyline],
@@ -79,9 +79,9 @@ trait geodesicUtils extends StObject {
   ): js.Array[Double] = js.native
   
   /**
-    * Geodetically computes the location at a defined distance and direction from a known location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#pointFromDistance)
-    */
+  		 * Geodetically computes the location at a defined distance and direction from a known location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#pointFromDistance)
+  		 */
   def pointFromDistance(point: Point, distance: Double, azimuth: Double): Point = js.native
 }

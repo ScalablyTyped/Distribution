@@ -27,7 +27,7 @@ trait SearchOptions
   var context_SearchOptions: RequestContext = js.native
   
   /**
-    * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -35,7 +35,7 @@ trait SearchOptions
   var ignorePunct: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -54,7 +54,7 @@ trait SearchOptions
   def load(propertyNames: js.Array[String]): SearchOptions = js.native
   
   /**
-    * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -62,7 +62,7 @@ trait SearchOptions
   var matchCase: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -70,7 +70,7 @@ trait SearchOptions
   var matchPrefix: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -78,7 +78,7 @@ trait SearchOptions
   var matchSuffix: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -86,7 +86,7 @@ trait SearchOptions
   var matchWholeWord: Boolean = js.native
   
   /**
-    * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+    * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
     *
     * @remarks
     * [Api set: WordApi 1.1]

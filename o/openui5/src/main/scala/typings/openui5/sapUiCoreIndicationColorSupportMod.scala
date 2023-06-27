@@ -13,7 +13,7 @@ object sapUiCoreIndicationColorSupportMod extends Shortcut {
   val default: IndicationColorSupport = js.native
   
   /**
-    * @SINCE 1.66
+    * @since 1.66
     *
     * Helper functionality for indication color support.
     */

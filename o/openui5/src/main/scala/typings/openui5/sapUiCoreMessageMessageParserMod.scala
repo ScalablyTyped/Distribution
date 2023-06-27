@@ -87,7 +87,7 @@ object sapUiCoreMessageMessageParserMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the registered processor on which the events for message handling can be fired
       *
@@ -110,7 +110,7 @@ object sapUiCoreMessageMessageParserMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is used by the model to register itself as MessageProcessor for this parser
       *

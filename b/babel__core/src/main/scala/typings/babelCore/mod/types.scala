@@ -35,6 +35,7 @@ import typings.babelCore.babelCoreStrings.VerticallineGreaterthansign
 import typings.babelCore.babelCoreStrings.VerticallineVerticalline
 import typings.babelCore.babelCoreStrings.`--`
 import typings.babelCore.babelCoreStrings.`-_`
+import typings.babelCore.babelCoreStrings.`await using`
 import typings.babelCore.babelCoreStrings.`object`
 import typings.babelCore.babelCoreStrings.`throw`
 import typings.babelCore.babelCoreStrings.`using`
@@ -5927,7 +5928,7 @@ object types {
   
   inline def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral_]
   
-  inline def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
+  inline def variableDeclaration(kind: `var` | let | const | `using` | (`await using`), declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
   
   inline def variableDeclarator(id: LVal): VariableDeclarator_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarator_]
   inline def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarator_]

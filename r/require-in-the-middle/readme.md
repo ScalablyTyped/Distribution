@@ -1,7 +1,7 @@
 
 # Scala.js typings for require-in-the-middle
 
-Typings are for version 7.1.0
+Typings are for version 7.1.1
 
 ## Library description:
 Module to hook into the Node.js require function

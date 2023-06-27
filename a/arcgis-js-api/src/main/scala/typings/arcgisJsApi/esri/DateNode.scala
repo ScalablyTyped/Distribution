@@ -12,10 +12,10 @@ trait DateNode
   var `type`: date
   
   /**
-    * The date value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#DateNode)
-    */
+  		 * The date value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#DateNode)
+  		 */
   var value: String
 }
 object DateNode {

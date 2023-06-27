@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Typeofidentity extends StObject {
   
   /**
-    * @requires(dev) **Dev channel only.**
+    * @requires **Dev channel only.**
     * @description
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * getAccounts is only supported on dev channel.

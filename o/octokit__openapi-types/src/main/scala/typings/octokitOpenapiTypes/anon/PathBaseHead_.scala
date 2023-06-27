@@ -8,12 +8,12 @@ trait PathBaseHead_ extends StObject {
   
   var path: BaseHead_
   
-  var query: Page
+  var query: js.UndefOr[Page] = js.undefined
 }
 object PathBaseHead_ {
   
-  inline def apply(path: BaseHead_, query: Page): PathBaseHead_ = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: BaseHead_): PathBaseHead_ = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathBaseHead_]
   }
   
@@ -23,5 +23,7 @@ object PathBaseHead_ {
     inline def setPath(value: BaseHead_): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

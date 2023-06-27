@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParseOptions extends StObject {
   
   /**
-    * Array of syntax extensions
+    * Array of syntax extensions (default: `[]`).
     */
-  var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
+  var extensions: js.UndefOr[js.Array[Extension] | Null] = js.undefined
 }
 object ParseOptions {
   
@@ -22,6 +22,8 @@ object ParseOptions {
   implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     

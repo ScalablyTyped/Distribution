@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popupUtilsCreatePopupTemplateForFeatureReductionParams extends StObject {
   
   /**
-    * The FeatureReduction object for which to create a default popup template.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
-    */
+  		 * The FeatureReduction object for which to create a default popup template.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
+  		 */
   var featureReduction: FeatureReductionBinning | FeatureReductionCluster
   
   /**
-    * The fields of the layer aggregated during the feature reduction process.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
-    */
+  		 * The fields of the layer aggregated during the feature reduction process.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
+  		 */
   var fields: js.UndefOr[js.Array[Field]] = js.undefined
   
   /**
-    * The title to display in the popup template.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
-    */
+  		 * The title to display in the popup template.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#createPopupTemplateForFeatureReduction)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object popupUtilsCreatePopupTemplateForFeatureReductionParams {

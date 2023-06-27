@@ -17,7 +17,7 @@ trait Packagefiles extends StObject {
   
   var description: String
   
-  var docker_metadata: js.UndefOr[js.Array[`454` | Null]] = js.undefined
+  var docker_metadata: js.UndefOr[js.Array[`532` | Null]] = js.undefined
   
   var draft: js.UndefOr[Boolean] = js.undefined
   
@@ -93,11 +93,11 @@ object Packagefiles {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDocker_metadata(value: js.Array[`454` | Null]): Self = StObject.set(x, "docker_metadata", value.asInstanceOf[js.Any])
+    inline def setDocker_metadata(value: js.Array[`532` | Null]): Self = StObject.set(x, "docker_metadata", value.asInstanceOf[js.Any])
     
     inline def setDocker_metadataUndefined: Self = StObject.set(x, "docker_metadata", js.undefined)
     
-    inline def setDocker_metadataVarargs(value: (`454` | Null)*): Self = StObject.set(x, "docker_metadata", js.Array(value*))
+    inline def setDocker_metadataVarargs(value: (`532` | Null)*): Self = StObject.set(x, "docker_metadata", js.Array(value*))
     
     inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     

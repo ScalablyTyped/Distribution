@@ -11,10 +11,10 @@ object esriWidgetsScaleRangeSliderScaleRangeSliderViewModelMod {
   @JSImport("esri/widgets/ScaleRangeSlider/ScaleRangeSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ScaleRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html)
-    */
+  		 * Provides the logic for the [ScaleRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ScaleRangeSliderViewModel {

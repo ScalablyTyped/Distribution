@@ -1,7 +1,6 @@
 package typings.rollup.mod
 
 import typings.rollup.anon.Assertions
-import typings.rollup.anon.Line
 import typings.rollup.anon.idstringresolveDependenci
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
@@ -20,13 +19,6 @@ trait PluginContext
   def emitFile(emittedFile: EmittedFile): String = js.native
   @JSName("emitFile")
   var emitFile_Original: EmitFile = js.native
-  
-  def error(error: String): scala.Nothing = js.native
-  def error(error: String, pos: Double): scala.Nothing = js.native
-  def error(error: String, pos: Line): scala.Nothing = js.native
-  def error(error: RollupError): scala.Nothing = js.native
-  def error(error: RollupError, pos: Double): scala.Nothing = js.native
-  def error(error: RollupError, pos: Line): scala.Nothing = js.native
   
   def getFileName(fileReferenceId: String): String = js.native
   
@@ -53,11 +45,4 @@ trait PluginContext
   
   def setAssetSource(assetReferenceId: String, source: String): Unit = js.native
   def setAssetSource(assetReferenceId: String, source: js.typedarray.Uint8Array): Unit = js.native
-  
-  def warn(warning: String): Unit = js.native
-  def warn(warning: String, pos: Double): Unit = js.native
-  def warn(warning: String, pos: Line): Unit = js.native
-  def warn(warning: RollupWarning): Unit = js.native
-  def warn(warning: RollupWarning, pos: Double): Unit = js.native
-  def warn(warning: RollupWarning, pos: Line): Unit = js.native
 }

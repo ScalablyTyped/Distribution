@@ -11,10 +11,10 @@ object esriWidgetsUtilityNetworkTraceMod {
   @JSImport("esri/widgets/UtilityNetworkTrace", JSImport.Namespace)
   @js.native
   /**
-    * The UtilityNetworkTrace widget provides a way to run traces in a Utility Network based on connectivity or traversability from set input flags.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html)
-    */
+  		 * The UtilityNetworkTrace widget provides a way to run traces in a Utility Network based on connectivity or traversability from set input flags.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html)
+  		 */
   open class ^ ()
     extends StObject
        with UtilityNetworkTrace {

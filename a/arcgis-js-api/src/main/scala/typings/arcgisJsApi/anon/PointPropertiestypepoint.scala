@@ -10,78 +10,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointPropertiestypepoint extends StObject {
   
   /**
-    * Indicates if the geometry has M values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
-    */
+  		 * Indicates if the geometry has M values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
+  		 */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the geometry has z-values (elevation).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
-    */
+  		 * Indicates if the geometry has z-values (elevation).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
+  		 */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The latitude of the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#latitude)
-    */
+  		 * The latitude of the point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#latitude)
+  		 */
   var latitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * The longitude of the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#longitude)
-    */
+  		 * The longitude of the point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#longitude)
+  		 */
   var longitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * The m-coordinate of the point in map units.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
-    */
+  		 * The m-coordinate of the point in map units.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
+  		 */
   var m: js.UndefOr[Double] = js.undefined
   
   /**
-    * The spatial reference of the geometry.
-    *
-    * @default WGS84 (wkid: 4326)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
-    */
+  		 * The spatial reference of the geometry.
+  		 *
+  		 * @default WGS84 (wkid: 4326)
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   var `type`: point
   
   /**
-    * The x-coordinate (easting) of the point in map units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
-    */
+  		 * The x-coordinate (easting) of the point in map units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
+  		 */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * The y-coordinate (northing) of the point in map units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
-    */
+  		 * The y-coordinate (northing) of the point in map units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
+  		 */
   var y: js.UndefOr[Double] = js.undefined
   
   /**
-    * The z-coordinate (or elevation) of the point in map units.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
-    */
+  		 * The z-coordinate (or elevation) of the point in map units.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
+  		 */
   var z: js.UndefOr[Double] = js.undefined
 }
 object PointPropertiestypepoint {

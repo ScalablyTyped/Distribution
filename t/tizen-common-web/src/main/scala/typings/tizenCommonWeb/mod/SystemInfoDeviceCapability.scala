@@ -171,7 +171,7 @@ trait SystemInfoDeviceCapability extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val nativeApiVersion: String
   
@@ -265,7 +265,7 @@ trait SystemInfoDeviceCapability extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val platformVersion: String
   
@@ -444,7 +444,7 @@ trait SystemInfoDeviceCapability extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/system
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val webApiVersion: String
   

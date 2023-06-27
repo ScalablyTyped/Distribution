@@ -11,9 +11,7 @@ trait SensitivityLabelChangedEventArgs extends StObject {
     * The type of event that was raised. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
     * 
     * @remarks
-    * [Api set: Mailbox preview]
-    * 
-    * @beta
+    * [Api set: Mailbox 1.13]
     */
   var `type`: olkSensitivityLabelChanged
 }

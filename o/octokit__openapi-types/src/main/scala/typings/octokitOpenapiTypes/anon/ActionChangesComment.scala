@@ -11,7 +11,7 @@ trait ActionChangesComment extends StObject {
   var action: edited
   
   /** @description The changes to the comment. */
-  var changes: `449`
+  var changes: `527`
   
   /**
     * Pull Request Review Comment
@@ -34,7 +34,7 @@ trait ActionChangesComment extends StObject {
 object ActionChangesComment {
   
   inline def apply(
-    changes: `449`,
+    changes: `527`,
     comment: Originalposition,
     pull_request: Reviewcommenturl,
     repository: Allowupdatebranch,
@@ -49,7 +49,7 @@ object ActionChangesComment {
     
     inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `449`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `527`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setComment(value: Originalposition): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

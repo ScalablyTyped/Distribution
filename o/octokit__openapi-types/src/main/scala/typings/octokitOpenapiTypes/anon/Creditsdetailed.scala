@@ -30,7 +30,7 @@ trait Creditsdetailed extends StObject {
     */
   var created_at: String | Null
   
-  var credits: js.Array[`464`] | Null
+  var credits: js.Array[`542`] | Null
   
   var credits_detailed: (js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-credit'] */ js.Any
@@ -136,11 +136,11 @@ object Creditsdetailed {
     
     inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
     
-    inline def setCredits(value: js.Array[`464`]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    inline def setCredits(value: js.Array[`542`]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
     inline def setCreditsNull: Self = StObject.set(x, "credits", null)
     
-    inline def setCreditsVarargs(value: `464`*): Self = StObject.set(x, "credits", js.Array(value*))
+    inline def setCreditsVarargs(value: `542`*): Self = StObject.set(x, "credits", js.Array(value*))
     
     inline def setCredits_detailed(
       value: js.Array[

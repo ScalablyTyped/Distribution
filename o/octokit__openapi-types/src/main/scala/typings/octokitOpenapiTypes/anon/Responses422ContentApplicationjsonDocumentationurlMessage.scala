@@ -8,7 +8,7 @@ trait Responses422ContentApplicationjsonDocumentationurlMessage extends StObject
   
   var parameters: PathEnvironmentnameOwnerRepo
   
-  var requestBody: js.UndefOr[Content579] = js.undefined
+  var requestBody: js.UndefOr[Content695] = js.undefined
   
   var responses: `422ContentApplicationjsonDocumentationurlMessage`
 }
@@ -27,7 +27,7 @@ object Responses422ContentApplicationjsonDocumentationurlMessage {
     
     inline def setParameters(value: PathEnvironmentnameOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: Content579): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Content695): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

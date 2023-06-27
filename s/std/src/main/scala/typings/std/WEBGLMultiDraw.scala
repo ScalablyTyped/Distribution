@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw) */
 @js.native
 trait WEBGLMultiDraw extends StObject {
   
@@ -147,6 +148,7 @@ trait WEBGLMultiDraw extends StObject {
     instanceCountsOffset: GLuint,
     drawcount: GLsizei
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysInstancedWEBGL) */
   /* standard dom */
   def multiDrawArraysInstancedWEBGL(
     mode: GLenum,
@@ -207,6 +209,7 @@ trait WEBGLMultiDraw extends StObject {
     countsOffset: GLuint,
     drawcount: GLsizei
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawArraysWEBGL) */
   /* standard dom */
   def multiDrawArraysWEBGL(
     mode: GLenum,
@@ -371,6 +374,7 @@ trait WEBGLMultiDraw extends StObject {
     instanceCountsOffset: GLuint,
     drawcount: GLsizei
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsInstancedWEBGL) */
   /* standard dom */
   def multiDrawElementsInstancedWEBGL(
     mode: GLenum,
@@ -438,6 +442,7 @@ trait WEBGLMultiDraw extends StObject {
     offsetsOffset: GLuint,
     drawcount: GLsizei
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_multi_draw/multiDrawElementsWEBGL) */
   /* standard dom */
   def multiDrawElementsWEBGL(
     mode: GLenum,

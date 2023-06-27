@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.OpenBy
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapMLibraryMod.TitleAlignment
@@ -130,7 +129,7 @@ object sapMPopoverMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Calculate outerHeight of the element; used as hook for SVG elements
       *
@@ -152,7 +151,7 @@ object sapMPopoverMod {
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(oElement.asInstanceOf[js.Any], bIncludeMargin.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Calculate outerWidth of the element; used as hook for SVG elements
       *
@@ -180,21 +179,21 @@ object sapMPopoverMod {
        with PopupInterface {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook called after adjusment of the Popover position.
       */
     def _afterAdjustPositionAndArrowHook(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook called before adjusment of the Popover position.
       */
     def _beforeAdjustPositionAndArrowHook(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * If customHeader is set, this will return the customHeaer. Otherwise it creates a header and put the title
       * and buttons if needed inside, and finally return this newly create header.
@@ -261,13 +260,13 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -292,7 +291,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -303,7 +302,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -324,13 +323,13 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -355,7 +354,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -366,7 +365,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -387,13 +386,13 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -418,7 +417,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -429,7 +428,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -450,13 +449,13 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -481,7 +480,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -492,7 +491,7 @@ object sapMPopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Popover` itself
       */
@@ -507,7 +506,7 @@ object sapMPopoverMod {
     def close(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the beginButton in the aggregation {@link #getBeginButton beginButton}.
       *
@@ -530,7 +529,7 @@ object sapMPopoverMod {
     def destroyCustomHeader(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the endButton in the aggregation {@link #getEndButton endButton}.
       *
@@ -546,7 +545,7 @@ object sapMPopoverMod {
     def destroyFooter(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the subHeader in the aggregation {@link #getSubHeader subHeader}.
       *
@@ -565,13 +564,13 @@ object sapMPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -589,13 +588,13 @@ object sapMPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverAfterOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -613,13 +612,13 @@ object sapMPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -637,13 +636,13 @@ object sapMPopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopoverBeforeOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -651,20 +650,22 @@ object sapMPopoverMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterClose(): this.type = js.native
-    def fireAfterClose(/**
+    def fireAfterClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: Popover$AfterCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
@@ -674,48 +675,50 @@ object sapMPopoverMod {
     def fireAfterOpen(/**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: Popover$AfterOpenEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeClose(): this.type = js.native
-    def fireBeforeClose(/**
+    def fireBeforeClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: Popover$BeforeCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeOpen(): this.type = js.native
-    def fireBeforeOpen(/**
+    def fireBeforeOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: Popover$BeforeOpenEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getBeginButton beginButton}.
       *
@@ -732,7 +735,7 @@ object sapMPopoverMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getContentHeight contentHeight}.
       *
@@ -748,7 +751,7 @@ object sapMPopoverMod {
     def getContentHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getContentMinWidth contentMinWidth}.
       *
@@ -761,7 +764,7 @@ object sapMPopoverMod {
     def getContentMinWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getContentWidth contentWidth}.
       *
@@ -799,7 +802,7 @@ object sapMPopoverMod {
     def getEnableScrolling(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getEndButton endButton}.
       *
@@ -816,7 +819,7 @@ object sapMPopoverMod {
     def getFooter(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getHorizontalScrolling horizontalScrolling}.
       *
@@ -834,7 +837,7 @@ object sapMPopoverMod {
     def getHorizontalScrolling(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * ID of the element which is the current target of the association {@link #getInitialFocus initialFocus},
       * or `null`.
@@ -901,8 +904,8 @@ object sapMPopoverMod {
     def getPlacement(): PlacementType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
+      * @since 1.36.4
+      * @experimental (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Gets current value of property {@link #getResizable resizable}.
       *
@@ -924,7 +927,7 @@ object sapMPopoverMod {
     def getRightButton(): ID = js.native
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Gets current value of property {@link #getShowArrow showArrow}.
       *
@@ -949,7 +952,7 @@ object sapMPopoverMod {
     def getShowHeader(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getSubHeader subHeader}.
       *
@@ -963,7 +966,7 @@ object sapMPopoverMod {
       * Gets current value of property {@link #getTitle title}.
       *
       * Title text appears in the header. This property will be ignored when `showHeader` is set to `false`.
-      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader}
+      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader }
       * property to `true`.
       *
       * @returns Value of property `title`
@@ -971,7 +974,7 @@ object sapMPopoverMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -986,7 +989,7 @@ object sapMPopoverMod {
     def getTitleAlignment(): TitleAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleAlignment * / any */ String) = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getVerticalScrolling verticalScrolling}.
       *
@@ -1035,7 +1038,7 @@ object sapMPopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * The method checks if the Popover is open. It returns true when the Popover is currently open (this includes
       * opening and closing animations), otherwise it returns false.
@@ -1171,7 +1174,7 @@ object sapMPopoverMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getBeginButton beginButton}.
       *
@@ -1183,7 +1186,7 @@ object sapMPopoverMod {
     oBeginButton: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Setter for property `bounce`.
       *
@@ -1197,7 +1200,7 @@ object sapMPopoverMod {
     bBounce: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getContentHeight contentHeight}.
       *
@@ -1219,7 +1222,7 @@ object sapMPopoverMod {
     sContentHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getContentMinWidth contentMinWidth}.
       *
@@ -1238,7 +1241,7 @@ object sapMPopoverMod {
     sContentMinWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getContentWidth contentWidth}.
       *
@@ -1290,7 +1293,7 @@ object sapMPopoverMod {
     bEnableScrolling: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getEndButton endButton}.
       *
@@ -1302,8 +1305,8 @@ object sapMPopoverMod {
     oEndButton: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.16.8
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.8
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * The followOf feature closes the Popover when the position of the control that opened the Popover changes
       * by at least 32 pixels (on desktop browsers). This may lead to unwanted closing of the Popover.
@@ -1328,7 +1331,7 @@ object sapMPopoverMod {
     oFooter: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets a new value for property {@link #getHorizontalScrolling horizontalScrolling}.
       *
@@ -1359,7 +1362,7 @@ object sapMPopoverMod {
     oInitialFocus: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets the associated {@link #getInitialFocus initialFocus}.
       *
@@ -1470,8 +1473,8 @@ object sapMPopoverMod {
     sPlacement: PlacementType): this.type = js.native
     
     /**
-      * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
+      * @since 1.36.4
+      * @experimental (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Sets a new value for property {@link #getResizable resizable}.
       *
@@ -1513,7 +1516,7 @@ object sapMPopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Sets a new value for property {@link #getShowArrow showArrow}.
       *
@@ -1550,7 +1553,7 @@ object sapMPopoverMod {
     bShowHeader: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getSubHeader subHeader}.
       *
@@ -1565,7 +1568,7 @@ object sapMPopoverMod {
       * Sets a new value for property {@link #getTitle title}.
       *
       * Title text appears in the header. This property will be ignored when `showHeader` is set to `false`.
-      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader}
+      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader }
       * property to `true`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1579,7 +1582,7 @@ object sapMPopoverMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1606,7 +1609,7 @@ object sapMPopoverMod {
     sTitleAlignment: TitleAlignment): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets a new value for property {@link #getVerticalScrolling verticalScrolling}.
       *
@@ -1630,6 +1633,114 @@ object sapMPopoverMod {
     bVerticalScrolling: Boolean): this.type = js.native
   }
   
+  trait Popover$AfterCloseEventParameters extends StObject {
+    
+    /**
+      * This refers to the control which opens the popover.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Popover$AfterCloseEventParameters {
+    
+    inline def apply(): Popover$AfterCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover$AfterCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover$AfterCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  trait Popover$AfterOpenEventParameters extends StObject {
+    
+    /**
+      * This refers to the control which opens the popover.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Popover$AfterOpenEventParameters {
+    
+    inline def apply(): Popover$AfterOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover$AfterOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover$AfterOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  trait Popover$BeforeCloseEventParameters extends StObject {
+    
+    /**
+      * This refers to the control which opens the popover.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Popover$BeforeCloseEventParameters {
+    
+    inline def apply(): Popover$BeforeCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover$BeforeCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover$BeforeCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  trait Popover$BeforeOpenEventParameters extends StObject {
+    
+    /**
+      * This refers to the control which opens the popover.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Popover$BeforeOpenEventParameters {
+    
+    inline def apply(): Popover$BeforeOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover$BeforeOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover$BeforeOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  type PopoverAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[Popover$AfterCloseEventParameters]
+  
+  type PopoverAfterCloseEventParameters = Popover$AfterCloseEventParameters
+  
+  type PopoverAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[Popover$AfterOpenEventParameters]
+  
+  type PopoverAfterOpenEventParameters = Popover$AfterOpenEventParameters
+  
+  type PopoverBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters]
+  
+  type PopoverBeforeCloseEventParameters = Popover$BeforeCloseEventParameters
+  
+  type PopoverBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[Popover$BeforeOpenEventParameters]
+  
+  type PopoverBeforeOpenEventParameters = Popover$BeforeOpenEventParameters
+  
   trait PopoverSettings
     extends StObject
        with ControlSettings {
@@ -1637,12 +1748,22 @@ object sapMPopoverMod {
     /**
       * This event will be fired after the popover is closed.
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$AfterCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired after the popover is opened.
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$AfterOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Association to controls / ids which describe this control (see WAI-ARIA attribute aria-describedby).
@@ -1657,15 +1778,25 @@ object sapMPopoverMod {
     /**
       * This event will be fired before the popover is closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired before the popover is opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * BeginButton is shown at the left side (right side in RTL mode) inside the header. When showHeader is
       * set to false, the property is ignored.
@@ -1673,7 +1804,7 @@ object sapMPopoverMod {
     var beginButton: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       * @deprecated (since 1.42) - This parameter is obsolete and has no effect.
       *
       * Whether bouncing is enabled.
@@ -1690,7 +1821,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Set the height of the content area inside Popover. When controls which adapt their size to the parent
       * control are added directly into Popover, for example sap.m.Page control, a size needs to be specified
@@ -1704,7 +1835,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets the minimum width of the content area inside popover.
       */
@@ -1713,7 +1844,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Set the width of the content area inside Popover. When controls which adapt their size to the parent
       * control are added directly into Popover, for example sap.m.Page control, a size needs to be specified
@@ -1743,7 +1874,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * EndButton is always shown at the right side (left side in RTL mode) inside the header. When showHeader
       * is set to false, the property is ignored.
@@ -1756,7 +1887,7 @@ object sapMPopoverMod {
     var footer: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * This property indicates if user can scroll horizontally inside popover when the content is bigger than
       * the content area. However, when scrollable control (sap.m.ScrollContainer, sap.m.Page) is in the popover,
@@ -1770,7 +1901,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Focus on the popover is set in the sequence of `beginButton` and `endButton`, when available. But if
       * a control other than these two buttons needs to get the focus, set the `initialFocus` with the control
@@ -1819,8 +1950,8 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.4
-      * @EXPERIMENTAL (since 1.36.4) - Do not use directly on Popover while in experimental mode!
+      * @since 1.36.4
+      * @experimental (since 1.36.4) - Do not use directly on Popover while in experimental mode!
       *
       * Whether resize option is enabled. *Note:* This property is effective only on Desktop
       */
@@ -1839,7 +1970,7 @@ object sapMPopoverMod {
     var rightButton: js.UndefOr[typings.openui5.sapMButtonMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Whether Popover arrow should be visible
       */
@@ -1856,7 +1987,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * When subHeader is assigned to Popover, it's rendered directly after the main header if there is, or at
       * the beginning of Popover when there's no main header. SubHeader is out of the content area and won't
@@ -1866,13 +1997,13 @@ object sapMPopoverMod {
     
     /**
       * Title text appears in the header. This property will be ignored when `showHeader` is set to `false`.
-      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader}
+      * If you want to show a header in the `sap.m.Popover`, don't forget to set the {@link #setShowHeader showHeader }
       * property to `true`.
       */
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.Auto`, the Title will be aligned
       * as it is set in the theme (if not set, the default value is `center`); Other possible values are `TitleAlignment.Start`
@@ -1883,7 +2014,7 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * This property indicates if user can scroll vertically inside popover when the content is bigger than
       * the content area. However, when scrollable control (sap.m.ScrollContainer, sap.m.Page) is in the popover,
@@ -1906,11 +2037,15 @@ object sapMPopoverMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PopoverSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$AfterCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$AfterOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
@@ -1926,11 +2061,15 @@ object sapMPopoverMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popover$BeforeOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       

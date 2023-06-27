@@ -4,19 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrickCallbacks extends StObject {
   
-  var onBinChange: js.UndefOr[js.Function1[/* bin */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ BrickError, Unit]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ BrickError, Unit]] = js.native
+  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
+}
+object BrickCallbacks {
   
-  var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+  inline def apply(): BrickCallbacks = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[BrickCallbacks]
+  }
   
-  def onSubmit(formData: CardFormData): js.Promise[Unit] = js.native
-  def onSubmit(formData: CardFormData, param2: AdditionalCardFormData): js.Promise[Unit] = js.native
-  def onSubmit(formData: CardFormData, param2: AdditionalPaymentFormData): js.Promise[Unit] = js.native
-  def onSubmit(formData: PaymentFormData): js.Promise[Unit] = js.native
-  def onSubmit(formData: PaymentFormData, param2: AdditionalCardFormData): js.Promise[Unit] = js.native
-  def onSubmit(formData: PaymentFormData, param2: AdditionalPaymentFormData): js.Promise[Unit] = js.native
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrickCallbacks] (val x: Self) extends AnyVal {
+    
+    inline def setOnError(value: /* error */ BrickError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+  }
 }

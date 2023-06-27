@@ -11,10 +11,10 @@ object esriViewsInputInputMod {
   @JSImport("esri/views/input/Input", JSImport.Namespace)
   @js.native
   /**
-    * Input device related configuration settings on the View.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html)
-    */
+  		 * Input device related configuration settings on the View.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html)
+  		 */
   open class ^ ()
     extends StObject
        with Input {

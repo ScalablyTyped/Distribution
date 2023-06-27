@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewConstraintsProperties extends StObject {
   
   /**
-    * Specifies a constraint on the minimum and maximum allowed camera altitude.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies a constraint on the minimum and maximum allowed camera altitude.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var altitude: js.UndefOr[SceneViewConstraintsAltitudeProperties] = js.undefined
   
   /**
-    * Specifies the near and far webgl clip distances.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies the near and far webgl clip distances.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.undefined
   
   /**
-    * Specifies a constraint on the amount of allowed tilting of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies a constraint on the amount of allowed tilting of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var tilt: js.UndefOr[SceneViewConstraintsTiltProperties] = js.undefined
 }
 object SceneViewConstraintsProperties {

@@ -11,4 +11,5 @@ object distSupportConditionsFromValuesMod {
   val ^ : js.Any = js.native
   
   inline def supportConditionsFromValue(value: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportConditionsFromValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def supportConditionsFromValue(value: String, mustContainVar: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportConditionsFromValue")(value.asInstanceOf[js.Any], mustContainVar.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

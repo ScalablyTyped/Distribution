@@ -1,7 +1,7 @@
 
 # Scala.js typings for many-keys-map
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 A `Map` subclass with support for multiple keys for one entry.

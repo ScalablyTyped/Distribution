@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@use-gesture/core" : "10.2.26"
+      "@use-gesture/core" : "10.2.27"
     }
   ],
   "test-dependencies" : [
     {
-      "@use-gesture/core" : "10.2.26"
+      "@use-gesture/core" : "10.2.27"
     }
   ],
   "compile-devDependencies" : [

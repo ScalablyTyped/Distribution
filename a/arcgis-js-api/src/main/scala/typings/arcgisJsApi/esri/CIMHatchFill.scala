@@ -9,66 +9,66 @@ trait CIMHatchFill
      with CIMSymbolLayer {
   
   /**
-    * A value indicating whether the color can be changed for this symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * A value indicating whether the color can be changed for this symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * The geometric effects applied to the symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * A value indicating whether the symbol layer is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * A value indicating whether the symbol layer is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var enable: Boolean
   
   /**
-    * The line symbol that is used to draw the hatch lines in the fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * The line symbol that is used to draw the hatch lines in the fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var lineSymbol: CIMLineSymbol
   
   /**
-    * How much to move the stroke to a new X-position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * How much to move the stroke to a new X-position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * How much to move the stroke to a new Y-position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * How much to move the stroke to a new Y-position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The angle of rotation for all the strokes, in degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * The angle of rotation for all the strokes, in degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance between the line symbols in the hatch pattern.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
-    */
+  		 * The distance between the line symbols in the hatch pattern.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMHatchFill)
+  		 */
   var separation: Double
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMHatchFill

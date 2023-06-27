@@ -25,9 +25,9 @@ trait PushManager extends StObject {
     * @param notificationCallback The callback to be called when the notification message arrives.
     * @param errorCallback The callback to be called when the connect request fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def connect(
     stateChangeCallback: PushRegistrationStateChangeCallback,
@@ -47,8 +47,8 @@ trait PushManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/push
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def disconnect(): Unit = js.native
   
@@ -66,8 +66,8 @@ trait PushManager extends StObject {
     * @privilegeName http://tizen.org/privilege/push
     *
     * @returns The last message delivered from the push service or null.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def getPushMessage(): PushMessage | Null = js.native
   
@@ -78,8 +78,8 @@ trait PushManager extends StObject {
     * @privilegeName http://tizen.org/privilege/push
     *
     * @returns ID assigned by push service.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getRegistrationId(): PushRegistrationId = js.native
   
@@ -101,9 +101,9 @@ trait PushManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/push
     *
-    * @throw WebAPIException with error type ServiceNotAvailableError, if the network is unreachable for some reason(e.g disconnected to the Tizen push server)
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type ServiceNotAvailableError, if the network is unreachable for some reason(e.g disconnected to the Tizen push server)
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getUnreadNotifications(): Unit = js.native
   
@@ -128,10 +128,10 @@ trait PushManager extends StObject {
     * @param successCallback The callback to be called when the registration request succeeds.
     * @param errorCallback The callback to be called when the registration request fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidStateError, if the application is not connected to the push service.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidStateError, if the application is not connected to the push service.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def register(successCallback: PushRegisterSuccessCallback): Unit = js.native
   def register(successCallback: PushRegisterSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -153,10 +153,10 @@ trait PushManager extends StObject {
     * @param successCallback The callback to be called when the unregistration request succeeds.
     * @param errorCallback The callback to be called when the unregistration request fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidStateError, if the application is not connected to the push service.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidStateError, if the application is not connected to the push service.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def unregister(): Unit = js.native
   def unregister(successCallback: Null, errorCallback: ErrorCallback): Unit = js.native

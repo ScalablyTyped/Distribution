@@ -31,6 +31,14 @@ trait BindGroup extends StObject {
   var impl: Any
   
   /**
+    * A render version the bind group was last updated on.
+    *
+    * @type {number}
+    * @ignore
+    */
+  var renderVersionUpdated: Double
+  
+  /**
     * Assign a texture to a named slot.
     *
     * @param {string} name - The name of the texture slot.
@@ -66,13 +74,14 @@ object BindGroup {
     format: BindGroupFormat,
     id: Double,
     impl: Any,
+    renderVersionUpdated: Double,
     setTexture: (String, Texture) => Unit,
     setUniformBuffer: (String, UniformBuffer) => Unit,
     textures: js.Array[Any],
     uniformBuffers: js.Array[Any],
     update: () => Unit
   ): BindGroup = {
-    val __obj = js.Dynamic.literal(defaultUniformBuffer = defaultUniformBuffer.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impl = impl.asInstanceOf[js.Any], setTexture = js.Any.fromFunction2(setTexture), setUniformBuffer = js.Any.fromFunction2(setUniformBuffer), textures = textures.asInstanceOf[js.Any], uniformBuffers = uniformBuffers.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
+    val __obj = js.Dynamic.literal(defaultUniformBuffer = defaultUniformBuffer.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impl = impl.asInstanceOf[js.Any], renderVersionUpdated = renderVersionUpdated.asInstanceOf[js.Any], setTexture = js.Any.fromFunction2(setTexture), setUniformBuffer = js.Any.fromFunction2(setUniformBuffer), textures = textures.asInstanceOf[js.Any], uniformBuffers = uniformBuffers.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[BindGroup]
   }
   
@@ -92,6 +101,8 @@ object BindGroup {
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImpl(value: Any): Self = StObject.set(x, "impl", value.asInstanceOf[js.Any])
+    
+    inline def setRenderVersionUpdated(value: Double): Self = StObject.set(x, "renderVersionUpdated", value.asInstanceOf[js.Any])
     
     inline def setSetTexture(value: (String, Texture) => Unit): Self = StObject.set(x, "setTexture", js.Any.fromFunction2(value))
     

@@ -10,30 +10,30 @@ trait KMLLayerView
      with LayerView {
   
   /**
-    * A collection of all the [MapImages](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage) from visible sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisibleMapImages)
-    */
+  		 * A collection of all the [MapImages](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage) from visible sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisibleMapImages)
+  		 */
   val allVisibleMapImages: Collection[KMLLayerViewMapImage] = js.native
   
   /**
-    * A collection of all the points from visible sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePoints)
-    */
+  		 * A collection of all the points from visible sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePoints)
+  		 */
   val allVisiblePoints: Collection[Point] = js.native
   
   /**
-    * A collection of all the polygons from visible sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePolygons)
-    */
+  		 * A collection of all the polygons from visible sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePolygons)
+  		 */
   val allVisiblePolygons: Collection[Polygon] = js.native
   
   /**
-    * A collection of all the polylines from visible sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePolylines)
-    */
+  		 * A collection of all the polylines from visible sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePolylines)
+  		 */
   val allVisiblePolylines: Collection[Polyline] = js.native
 }

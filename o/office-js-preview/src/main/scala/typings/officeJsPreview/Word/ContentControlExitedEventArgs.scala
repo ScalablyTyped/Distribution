@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the content control that raised contentControlExited event.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 trait ContentControlExitedEventArgs extends StObject {
   
@@ -30,8 +29,7 @@ trait ContentControlExitedEventArgs extends StObject {
     * The event type. See Word.EventType for details.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var eventType: EventType | ContentControlDeleted | ContentControlSelectionChanged | ContentControlDataChanged | ContentControlAdded | CommentDeleted | CommentSelected | CommentDeselected | CommentChanged | CommentAdded | ContentControlEntered | ContentControlExited
   
@@ -39,8 +37,7 @@ trait ContentControlExitedEventArgs extends StObject {
     * Gets the content control IDs.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var ids: js.Array[Double]
   
@@ -48,8 +45,7 @@ trait ContentControlExitedEventArgs extends StObject {
     * The source of the event. It can be local or remote (through coauthoring).
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var source: EventSource | Local | Remote
 }

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Unit
   extends StObject
-     with _MathType {
+     with _MathScalarType {
   
   def abs(unit: Unit): Unit = js.native
   
   var dimensions: js.Array[Double] = js.native
   
-  def divide(unit: Unit): Unit = js.native
+  def divide(unit: Unit): Unit | Double = js.native
   
   def equalBase(unit: Unit): Boolean = js.native
   

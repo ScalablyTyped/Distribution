@@ -25,7 +25,11 @@ object distDomFederatedPointerEventMod {
     /**
       * @see https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent/getCoalescedEvents
       */
-    /** Available only in secure contexts. */
+    /**
+      * Available only in secure contexts.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PointerEvent/getCoalescedEvents)
+      */
     /* standard dom */
     def getCoalescedEvents(): js.Array[PointerEvent] = js.native
     

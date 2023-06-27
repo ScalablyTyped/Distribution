@@ -98,11 +98,11 @@ object sapUiModelContextMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Returns messages associated with this context, that is messages belonging to the object referred to by
-      * this context or a child object of that object. The messages are sorted by their {@link sap.ui.core.message.Message#getType
-      * type} according to the type's severity in a way that messages with highest severity come first.
+      * this context or a child object of that object. The messages are sorted by their {@link sap.ui.core.message.Message#getType type }
+      * according to the type's severity in a way that messages with highest severity come first.
       * See:
       * 	sap.ui.model.Model#getMessages
       *

@@ -28,6 +28,10 @@ object typesConstantsMod {
   @js.native
   val MAX_SESSION_LIFE: /* 3600000 */ Double = js.native
   
+  @JSImport("@sentry/replay/types/constants", "MULTI_CLICK_TIMEOUT")
+  @js.native
+  val MULTI_CLICK_TIMEOUT: /* 1000 */ Double = js.native
+  
   @JSImport("@sentry/replay/types/constants", "NETWORK_BODY_MAX_SIZE")
   @js.native
   val NETWORK_BODY_MAX_SIZE: /* 150000 */ Double = js.native
@@ -39,6 +43,10 @@ object typesConstantsMod {
   @JSImport("@sentry/replay/types/constants", "REPLAY_EVENT_NAME")
   @js.native
   val REPLAY_EVENT_NAME: /* "replay_event" */ String = js.native
+  
+  @JSImport("@sentry/replay/types/constants", "REPLAY_MAX_EVENT_BUFFER_SIZE")
+  @js.native
+  val REPLAY_MAX_EVENT_BUFFER_SIZE: /* 20000000 */ Double = js.native
   
   @JSImport("@sentry/replay/types/constants", "REPLAY_SESSION_KEY")
   @js.native
@@ -59,6 +67,14 @@ object typesConstantsMod {
   @JSImport("@sentry/replay/types/constants", "SESSION_IDLE_PAUSE_DURATION")
   @js.native
   val SESSION_IDLE_PAUSE_DURATION: /* 300000 */ Double = js.native
+  
+  @JSImport("@sentry/replay/types/constants", "SLOW_CLICK_SCROLL_TIMEOUT")
+  @js.native
+  val SLOW_CLICK_SCROLL_TIMEOUT: /* 300 */ Double = js.native
+  
+  @JSImport("@sentry/replay/types/constants", "SLOW_CLICK_THRESHOLD")
+  @js.native
+  val SLOW_CLICK_THRESHOLD: /* 3000 */ Double = js.native
   
   @JSImport("@sentry/replay/types/constants", "UNABLE_TO_SEND_REPLAY")
   @js.native

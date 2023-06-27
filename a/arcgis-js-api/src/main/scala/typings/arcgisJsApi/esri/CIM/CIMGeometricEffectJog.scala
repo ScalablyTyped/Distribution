@@ -10,18 +10,18 @@ trait CIMGeometricEffectJog
      with CIMGeometricEffectType {
   
   /**
-    * The angle of the jog in the line which is measured in degrees.
-    */
+  			 * The angle of the jog in the line which is measured in degrees.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The length of the segment that forms the jog in the line.
-    */
+  			 * The length of the segment that forms the jog in the line.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The location of the center of the jog, as a percentage measured from the start of the input geometry.
-    */
+  			 * The location of the center of the jog, as a percentage measured from the start of the input geometry.
+  			 */
   var position: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

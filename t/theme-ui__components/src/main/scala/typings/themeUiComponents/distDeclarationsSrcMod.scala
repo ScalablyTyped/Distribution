@@ -1,8 +1,6 @@
 package typings.themeUiComponents
 
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.JSX.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -85,7 +83,7 @@ object distDeclarationsSrcMod {
   
   @JSImport("@theme-ui/components/dist/declarations/src", "Box")
   @js.native
-  val Box: ForwardRefExoticComponent[BoxProps & RefAttributes[Any]] = js.native
+  val Box: ForwardRef[Any, BoxProps] = js.native
   
   @JSImport("@theme-ui/components/dist/declarations/src", "Button")
   @js.native
@@ -163,7 +161,7 @@ object distDeclarationsSrcMod {
   @js.native
   val MenuButton: ForwardRef[HTMLButtonElement, MenuButtonProps] = js.native
   
-  inline def MenuIcon(param0: Size): typings.emotionReact.mod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.mod.jsx.JSX.Element]
+  inline def MenuIcon(param0: Size): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@theme-ui/components/dist/declarations/src", "Message")
   @js.native

@@ -124,7 +124,7 @@ object sapUiUnifiedDateTypeRangeMod {
     extends typings.openui5.sapUiUnifiedDateRangeMod.default {
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Gets current value of property {@link #getColor color}.
       *
@@ -136,7 +136,7 @@ object sapUiUnifiedDateTypeRangeMod {
     def getColor(): CSSColor = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getSecondaryType secondaryType}.
       *
@@ -162,7 +162,7 @@ object sapUiUnifiedDateTypeRangeMod {
     def getType(): CalendarDayType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarDayType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Sets a new value for property {@link #getColor color}.
       *
@@ -180,7 +180,7 @@ object sapUiUnifiedDateTypeRangeMod {
     sColor: CSSColor): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getSecondaryType secondaryType}.
       *
@@ -235,7 +235,7 @@ object sapUiUnifiedDateTypeRangeMod {
        with DateRangeSettings {
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Background color of the `Calendar` `specialDates` aggregation. If set, this color will override the default
       * background color defined in `Calendar` `specialDates` aggregation
@@ -245,7 +245,7 @@ object sapUiUnifiedDateTypeRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Applies secondary `CalendarDayType` combined with the `CalendarDayType` type chosen. Allows `specialDates`
       * to be also a `NonWorkingDay`. The secondary day type can only be used for `NonWorkingDay` or `None` calendar

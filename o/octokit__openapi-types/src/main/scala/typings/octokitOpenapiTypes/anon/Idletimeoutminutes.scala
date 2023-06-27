@@ -1,5 +1,9 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.EuropeWest
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.SoutheastAsia_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.UsEast
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.UsWest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +19,12 @@ trait Idletimeoutminutes extends StObject {
   /** @description Display name for this codespace */
   var display_name: js.UndefOr[String] = js.undefined
   
+  /**
+    * @description The geographic area for this codespace. If not specified, the value is assigned by IP. This property replaces `location`, which is being deprecated.
+    * @enum {string}
+    */
+  var geo: js.UndefOr[EuropeWest | SoutheastAsia_ | UsEast | UsWest] = js.undefined
+  
   /** @description Time in minutes before codespace stops from inactivity */
   var idle_timeout_minutes: js.UndefOr[Double] = js.undefined
   
@@ -27,6 +37,12 @@ trait Idletimeoutminutes extends StObject {
   /** @description Whether to authorize requested permissions from devcontainer.json */
   var multi_repo_permissions_opt_out: js.UndefOr[Boolean] = js.undefined
   
+  /** @description Git ref (typically a branch name) for this codespace */
+  var ref: js.UndefOr[String] = js.undefined
+  
+  /** @description Repository id for this codespace */
+  var repository_id: Double
+  
   /** @description Duration in minutes after codespace has gone idle in which it will be deleted. Must be integer minutes between 0 and 43200 (30 days). */
   var retention_period_minutes: js.UndefOr[Double] = js.undefined
   
@@ -35,8 +51,8 @@ trait Idletimeoutminutes extends StObject {
 }
 object Idletimeoutminutes {
   
-  inline def apply(): Idletimeoutminutes = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(repository_id: Double): Idletimeoutminutes = {
+    val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Idletimeoutminutes]
   }
   
@@ -55,6 +71,10 @@ object Idletimeoutminutes {
     
     inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
+    inline def setGeo(value: EuropeWest | SoutheastAsia_ | UsEast | UsWest): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+    
     inline def setIdle_timeout_minutes(value: Double): Self = StObject.set(x, "idle_timeout_minutes", value.asInstanceOf[js.Any])
     
     inline def setIdle_timeout_minutesUndefined: Self = StObject.set(x, "idle_timeout_minutes", js.undefined)
@@ -70,6 +90,12 @@ object Idletimeoutminutes {
     inline def setMulti_repo_permissions_opt_out(value: Boolean): Self = StObject.set(x, "multi_repo_permissions_opt_out", value.asInstanceOf[js.Any])
     
     inline def setMulti_repo_permissions_opt_outUndefined: Self = StObject.set(x, "multi_repo_permissions_opt_out", js.undefined)
+    
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
     inline def setRetention_period_minutes(value: Double): Self = StObject.set(x, "retention_period_minutes", value.asInstanceOf[js.Any])
     

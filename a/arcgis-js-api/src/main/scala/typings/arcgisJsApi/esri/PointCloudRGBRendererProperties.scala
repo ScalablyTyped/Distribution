@@ -9,10 +9,10 @@ trait PointCloudRGBRendererProperties
      with PointCloudRendererProperties {
   
   /**
-    * The name of the field containing RGB values used to drive the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#field)
-    */
+  		 * The name of the field containing RGB values used to drive the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
 }
 object PointCloudRGBRendererProperties {

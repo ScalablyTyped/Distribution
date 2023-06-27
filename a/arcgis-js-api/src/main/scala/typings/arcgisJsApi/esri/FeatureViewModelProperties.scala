@@ -9,53 +9,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureViewModelProperties extends StObject {
   
   /**
-    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
-    */
-  var abilities: js.UndefOr[FeatureViewModelAbilities] = js.undefined
+  		 * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html) and [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widgets should use when querying and displaying its content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#abilities)
+  		 */
+  var abilities: js.UndefOr[Abilities] = js.undefined
   
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
-    */
+  		 * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#defaultPopupTemplateEnabled)
+  		 */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
-    */
+  		 * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#graphic)
+  		 */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
-    * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
-    */
+  		 * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#map)
+  		 */
   var map: js.UndefOr[MapProperties] = js.undefined
   
   /**
-    * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
-    */
+  		 * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
 object FeatureViewModelProperties {
@@ -68,7 +68,7 @@ object FeatureViewModelProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: FeatureViewModelProperties] (val x: Self) extends AnyVal {
     
-    inline def setAbilities(value: FeatureViewModelAbilities): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
+    inline def setAbilities(value: Abilities): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     
     inline def setAbilitiesUndefined: Self = StObject.set(x, "abilities", js.undefined)
     

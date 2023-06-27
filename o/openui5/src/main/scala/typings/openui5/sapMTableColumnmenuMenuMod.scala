@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`29`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -150,7 +149,7 @@ object sapMTableColumnmenuMenuMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.112
+      * @since 1.112
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterClose afterClose} event of this `sap.m.table.columnmenu.Menu`.
       *
@@ -165,20 +164,20 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.Menu` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.112
+      * @since 1.112
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterClose afterClose} event of this `sap.m.table.columnmenu.Menu`.
       *
@@ -198,7 +197,7 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -209,7 +208,7 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.Menu` itself
       */
@@ -230,13 +229,13 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.Menu` itself
       */
@@ -261,7 +260,7 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -272,7 +271,7 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.Menu` itself
       */
@@ -299,7 +298,7 @@ object sapMTableColumnmenuMenuMod {
     def destroyQuickActions(): this.type = js.native
     
     /**
-      * @SINCE 1.112
+      * @since 1.112
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterClose afterClose} event of this `sap.m.table.columnmenu.Menu`.
       *
@@ -311,13 +310,13 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -335,13 +334,13 @@ object sapMTableColumnmenuMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuBeforeOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -349,8 +348,8 @@ object sapMTableColumnmenuMenuMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.112
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.112
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
@@ -363,7 +362,7 @@ object sapMTableColumnmenuMenuMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -376,7 +375,7 @@ object sapMTableColumnmenuMenuMod {
     def fireBeforeOpen(/**
       * Parameters to pass along with the event
       */
-    mParameters: `29`): Boolean = js.native
+    mParameters: Menu$BeforeOpenEventParameters): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -406,8 +405,8 @@ object sapMTableColumnmenuMenuMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.m.table.columnmenu.QuickActionBase` in the aggregation {@link #getQuickActions
-      * quickActions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.m.table.columnmenu.QuickActionBase` in the aggregation {@link #getQuickActions quickActions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -534,21 +533,62 @@ object sapMTableColumnmenuMenuMod {
     ): typings.openui5.sapMTableColumnmenuQuickActionBaseMod.default | Null = js.native
   }
   
+  trait Menu$AfterCloseEventParameters extends StObject
+  
+  trait Menu$BeforeOpenEventParameters extends StObject {
+    
+    /**
+      * The element for which the menu is opened. If it is an `HTMLElement`, the closest control is passed for
+      * this event (if it exists).
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+  }
+  object Menu$BeforeOpenEventParameters {
+    
+    inline def apply(): Menu$BeforeOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Menu$BeforeOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu$BeforeOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  type MenuAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[Menu$AfterCloseEventParameters]
+  
+  type MenuAfterCloseEventParameters = Menu$AfterCloseEventParameters
+  
+  type MenuBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[Menu$BeforeOpenEventParameters]
+  
+  type MenuBeforeOpenEventParameters = Menu$BeforeOpenEventParameters
+  
   trait MenuSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.112
+      * @since 1.112
       *
       * Fires after the column menu is closed
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired before the column menu is opened
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$BeforeOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of the column menu.
@@ -574,11 +614,13 @@ object sapMTableColumnmenuMenuMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$BeforeOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       

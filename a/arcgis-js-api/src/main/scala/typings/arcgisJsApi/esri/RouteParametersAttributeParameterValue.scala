@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteParametersAttributeParameterValue extends StObject {
   
   /**
-    * The name of the restriction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
-    */
+  		 * The name of the restriction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
+  		 */
   var attributeName: String
   
   /**
-    * The name of the parameter associated with the restriction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
-    */
+  		 * The name of the parameter associated with the restriction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
+  		 */
   var parameterName: String
   
   /**
-    * The value for `parameterName`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
-    */
+  		 * The value for `parameterName`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#AttributeParameterValue)
+  		 */
   var value: String | Double
 }
 object RouteParametersAttributeParameterValue {

@@ -483,7 +483,7 @@ object uiMod {
       * Opens the built-in settings dialog, which is populated from the Setting API.
       * @param options The options object. See Dialog.addClickHandler() for more information.
       * @param closeFn The function to execute whenever the dialog is closed.
-      * @sine 2.0.0
+      * @since 2.0.0
       *
       */
     def settings(): Unit = js.native

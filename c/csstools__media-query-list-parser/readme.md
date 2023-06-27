@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__media-query-list-parser
 
-Typings are for version 2.0.4
+Typings are for version 2.1.1
 
 
 

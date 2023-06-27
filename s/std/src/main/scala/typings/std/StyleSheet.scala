@@ -4,27 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A single style sheet. CSS style sheets will further implement the more specialized CSSStyleSheet interface. */
+/**
+  * A single style sheet. CSS style sheets will further implement the more specialized CSSStyleSheet interface.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet)
+  */
 trait StyleSheet extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/disabled) */
   /* standard dom */
   var disabled: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/href) */
   /* standard dom */
   val href: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/media) */
   /* standard dom */
   val media: MediaList
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/ownerNode) */
   /* standard dom */
   val ownerNode: Element | ProcessingInstruction | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/parentStyleSheet) */
   /* standard dom */
   val parentStyleSheet: CSSStyleSheet | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/title) */
   /* standard dom */
   val title: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/type) */
   /* standard dom */
   val `type`: java.lang.String
 }

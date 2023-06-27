@@ -183,19 +183,19 @@ object amRectangularChartMod {
     
     /**
       * Size of zoom-out button image
-      * @default: 17
+      * @default 17
       */
     var zoomOutButtonImageSize: Double = js.native
     
     /**
       * Padding around the text and image.
-      * @default: 8
+      * @default 8
       */
     var zoomOutButtonPadding: Double = js.native
     
     /**
       * Opacity of zoom-out button background when mouse is over it.
-      * @default: 1
+      * @default 1
       */
     var zoomOutButtonRollOverAlpha: Double = js.native
     

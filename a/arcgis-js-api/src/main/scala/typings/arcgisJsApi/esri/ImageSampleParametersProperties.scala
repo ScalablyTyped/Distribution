@@ -16,88 +16,88 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageSampleParametersProperties extends StObject {
   
   /**
-    * Input geometry that defines the locations to be sampled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry)
-    */
+  		 * Input geometry that defines the locations to be sampled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry)
+  		 */
   var geometry: js.UndefOr[
     PointPropertiestypepoint | MultipointPropertiestypem | PolylinePropertiestypepol | ExtentPropertiestypeexten | PolygonPropertiestypepoly
   ] = js.undefined
   
   /**
-    * Defines how to interpolate pixel values.
-    *
-    * @default nearest
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#interpolation)
-    */
+  		 * Defines how to interpolate pixel values.
+  		 *
+  		 * @default nearest
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#interpolation)
+  		 */
   var interpolation: js.UndefOr[nearest | bilinear | cubic | majority] = js.undefined
   
   /**
-    * When sampling multiple locations, you can use an array of [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instead of providing a [multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) for the [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#locations)
-    */
+  		 * When sampling multiple locations, you can use an array of [points](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instead of providing a [multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) for the [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#locations)
+  		 */
   var locations: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
-    * Specifies the [mosaic rule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html) defining the image sort order and selection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#mosaicRule)
-    */
+  		 * Specifies the [mosaic rule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html) defining the image sort order and selection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#mosaicRule)
+  		 */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
-    * The list of fields associated with the rasters to be included in the response.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#outFields)
-    */
+  		 * The list of fields associated with the rasters to be included in the response.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Specifies the pixel size (or the resolution) that will be used for the sampling.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#pixelSize)
-    */
+  		 * Specifies the pixel size (or the resolution) that will be used for the sampling.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#pixelSize)
+  		 */
   var pixelSize: js.UndefOr[PixelSize] = js.undefined
   
   /**
-    * When `true`, returns the first valid pixel value that meets specified conditions at each sampling point location.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#returnFirstValueOnly)
-    */
+  		 * When `true`, returns the first valid pixel value that meets specified conditions at each sampling point location.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#returnFirstValueOnly)
+  		 */
   var returnFirstValueOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the approximate number of locations to sample from the provided geometry when the input geometry is [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html), [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sampleCount)
-    */
+  		 * Specifies the approximate number of locations to sample from the provided geometry when the input geometry is [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html), [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sampleCount)
+  		 */
   var sampleCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the distance interval to sample points from the provided [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry) when input geometry is [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sampleDistance)
-    */
+  		 * Specifies the distance interval to sample points from the provided [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#geometry) when input geometry is [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sampleDistance)
+  		 */
   var sampleDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the slice id of a multidimensional raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sliceId)
-    */
+  		 * Specifies the slice id of a multidimensional raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#sliceId)
+  		 */
   var sliceId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html) for which to perform sampling.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#timeExtent)
-    */
+  		 * The [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html) for which to perform sampling.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageSampleParameters.html#timeExtent)
+  		 */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 object ImageSampleParametersProperties {

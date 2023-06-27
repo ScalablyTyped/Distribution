@@ -14,6 +14,8 @@ trait Payer extends StObject {
   
   var email: js.UndefOr[String] = js.undefined
   
+  var entityType: js.UndefOr[EntityType] = js.undefined
+  
   var firstName: js.UndefOr[String] = js.undefined
   
   var identification: js.UndefOr[PayerIdentification] = js.undefined
@@ -47,6 +49,10 @@ object Payer {
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
     inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-timeout" : "6.1.1"
+      "p-timeout" : "6.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "p-timeout" : "6.1.1"
+      "p-timeout" : "6.1.2"
     }
   ],
   "compile-devDependencies" : [

@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionalDefinitionProperties extends StObject {
   
   /**
-    * The dimension associated with the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#dimensionName)
-    */
+  		 * The dimension associated with the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#dimensionName)
+  		 */
   var dimensionName: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the values indicate slices (rather than ranges).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#isSlice)
-    */
+  		 * Indicates whether the values indicate slices (rather than ranges).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#isSlice)
+  		 */
   var isSlice: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#values)
-    */
+  		 * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#values)
+  		 */
   var values: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
   
   /**
-    * The required variable name by which to filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#variableName)
-    */
+  		 * The required variable name by which to filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#variableName)
+  		 */
   var variableName: js.UndefOr[String] = js.undefined
 }
 object DimensionalDefinitionProperties {

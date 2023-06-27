@@ -20,11 +20,11 @@ trait GetParametersPathCheckrunid extends StObject {
     *
     * Updates a check run for a specific commit in a repository. Your GitHub App must have the `checks:write` permission to edit check runs.
     */
-  var patch: RequestBodyContent184
+  var patch: RequestBodyContent218
 }
 object GetParametersPathCheckrunid {
   
-  inline def apply(get: ParametersPathCheckrunid, patch: RequestBodyContent184): GetParametersPathCheckrunid = {
+  inline def apply(get: ParametersPathCheckrunid, patch: RequestBodyContent218): GetParametersPathCheckrunid = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathCheckrunid]
   }
@@ -34,6 +34,6 @@ object GetParametersPathCheckrunid {
     
     inline def setGet(value: ParametersPathCheckrunid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContent184): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: RequestBodyContent218): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

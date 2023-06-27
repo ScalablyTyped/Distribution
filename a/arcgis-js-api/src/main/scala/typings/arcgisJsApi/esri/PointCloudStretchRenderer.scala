@@ -18,40 +18,40 @@ trait PointCloudStretchRenderer
      with pointCloudRenderersPointCloudRenderer {
   
   /**
-    * The name of the number field whose values are used to drive the continuous color visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#field)
-    */
+  		 * The name of the number field whose values are used to drive the continuous color visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#field)
+  		 */
   var field: String = js.native
   
   /**
-    * A transform that is applied to the field value before evaluating the renderer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
-    */
+  		 * A transform that is applied to the field value before evaluating the renderer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#fieldTransformType)
+  		 */
   var fieldTransformType: none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten` = js.native
   
   /**
-    * An object providing options for displaying the renderer in the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#legendOptions)
-    */
+  		 * An object providing options for displaying the renderer in the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#legendOptions)
+  		 */
   var legendOptions: PointCloudStretchRendererLegendOptions = js.native
   
   /**
-    * An array of color value pairs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
-    */
+  		 * An array of color value pairs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#stops)
+  		 */
   var stops: js.Array[ColorStop] = js.native
   
   /**
-    * The type of Renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#type)
-    */
+  		 * The type of Renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html#type)
+  		 */
   @JSName("type")
   val type_PointCloudStretchRenderer: `point-cloud-stretch` = js.native
 }

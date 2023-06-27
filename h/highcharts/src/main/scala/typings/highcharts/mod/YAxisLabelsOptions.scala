@@ -44,15 +44,14 @@ trait YAxisLabelsOptions extends StObject {
   var autoRotationLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Gantt) The label's pixel distance from the perimeter of the
-    * plot area. On cartesian charts, this is overridden if the `labels.y`
-    * setting is set.
+    * (Highcharts) The label's pixel distance from the perimeter of the plot
+    * area. On cartesian charts, this is overridden if the `labels.y` setting
+    * is set.
     *
-    * * On polar charts, if it's a percentage string, it is interpreted the
-    * same as series.radius, so the label can be aligned under the gauge's
-    * shape.
+    * On polar charts, if it's a percentage string, it is interpreted the same
+    * as series.radius, so the label can be aligned under the gauge's shape.
     */
-  var distance: js.UndefOr[Double] = js.undefined
+  var distance: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the axis
@@ -257,7 +256,7 @@ object YAxisLabelsOptions {
     
     inline def setAutoRotationVarargs(value: Double*): Self = StObject.set(x, "autoRotation", js.Array(value*))
     
-    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     

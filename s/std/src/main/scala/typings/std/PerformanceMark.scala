@@ -4,11 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline. */
+/**
+  * PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceMark)
+  */
 trait PerformanceMark
   extends StObject
      with PerformanceEntry {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceMark/detail) */
   /* standard dom */
   val detail: Any
 }

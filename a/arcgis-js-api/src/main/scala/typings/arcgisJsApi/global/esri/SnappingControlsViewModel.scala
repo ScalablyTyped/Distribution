@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SnappingControlsViewModel")
 @js.native
 /**
-  * Provides the logic for the [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html)
-  */
+		 * Provides the logic for the [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) widget.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html)
+		 */
 open class SnappingControlsViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.SnappingControlsViewModel {

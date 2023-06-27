@@ -439,7 +439,7 @@ object SplitButton {
   trait Model extends StObject {
     
     /** Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
-      * @Default {ej.ArrowPosition.Right}
+      * @default {ej.ArrowPosition.Right}
       */
     var arrowPosition: js.UndefOr[String | ArrowPosition] = js.undefined
     
@@ -448,7 +448,7 @@ object SplitButton {
     var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the buttonMode like Split or Dropdown Button.See ButtonMode
-      * @Default {ej.ButtonMode.Split}
+      * @default {ej.ButtonMode.Split}
       */
     var buttonMode: js.UndefOr[String | ButtonMode] = js.undefined
     
@@ -461,7 +461,7 @@ object SplitButton {
     var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentType of the Split Button.See ContentType
-      * @Default {ej.ContentType.TextOnly}
+      * @default {ej.ContentType.TextOnly}
       */
     var contentType: js.UndefOr[String | ContentType] = js.undefined
     
@@ -478,27 +478,27 @@ object SplitButton {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the enableRTL property for Split Button while initialization.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the disabling of Split Button if enabled is set to false.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Split Button.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the Split Button.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the imagePosition of the Split Button.See imagePositions
-      * @Default {ej.ImagePosition.ImageRight}
+      * @default {ej.ImagePosition.ImageRight}
       */
     var imagePosition: js.UndefOr[String | ImagePosition] = js.undefined
     
@@ -523,12 +523,12 @@ object SplitButton {
     var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the showRoundedCorner property for Split Button while initialization.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the Button. See ButtonSize
-      * @Default {ej.ButtonSize.Normal}
+      * @default {ej.ButtonSize.Normal}
       */
     var size: js.UndefOr[String | ButtonSize] = js.undefined
     
@@ -549,7 +549,7 @@ object SplitButton {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the Split Button.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

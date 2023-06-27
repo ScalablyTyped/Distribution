@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DynamicDataLayer extends StObject {
   
   /**
-    * A table, feature class, or raster that resides in a registered workspace (either a folder or geodatabase).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
-    */
+  		 * A table, feature class, or raster that resides in a registered workspace (either a folder or geodatabase).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
+  		 */
   var dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource
   
   /**
-    * Controls field visibility in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
-    */
+  		 * Controls field visibility in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
+  		 */
   var fields: js.Array[DynamicDataLayerFields]
   
   /**
-    * This value is always `data-layer` and is inferred when the `dataSource` property is set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
-    */
+  		 * This value is always `data-layer` and is inferred when the `dataSource` property is set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
+  		 */
   var `type`: `data-layer`
 }
 object DynamicDataLayer {

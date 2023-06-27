@@ -8,12 +8,12 @@ trait PathAttemptnumber extends StObject {
   
   var path: Attemptnumber
   
-  var query: Excludepullrequests
+  var query: js.UndefOr[Excludepullrequests] = js.undefined
 }
 object PathAttemptnumber {
   
-  inline def apply(path: Attemptnumber, query: Excludepullrequests): PathAttemptnumber = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Attemptnumber): PathAttemptnumber = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathAttemptnumber]
   }
   
@@ -23,5 +23,7 @@ object PathAttemptnumber {
     inline def setPath(value: Attemptnumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Excludepullrequests): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

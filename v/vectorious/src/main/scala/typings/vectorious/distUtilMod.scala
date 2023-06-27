@@ -13,6 +13,10 @@ object distUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("vectorious/dist/util", "V_MAXDIMS")
+  @js.native
+  val V_MAXDIMS: /* 32 */ Double = js.native
+  
   inline def flatten(array: js.Array[Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   inline def getDtype(array: TypedArray): DType = ^.asInstanceOf[js.Dynamic].applyDynamic("get_dtype")(array.asInstanceOf[js.Any]).asInstanceOf[DType]

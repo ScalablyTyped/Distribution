@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkUrlProperties extends StObject {
   
   /**
-    * If true, restricted network elements should be considered when finding network locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkUrl.html#doNotLocateOnRestrictedElements)
-    */
+  		 * If true, restricted network elements should be considered when finding network locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkUrl.html#doNotLocateOnRestrictedElements)
+  		 */
   var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A url to any ArcGIS Server feature, map, or geoprocessing service that returns a JSON feature set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkUrl.html#url)
-    */
+  		 * A url to any ArcGIS Server feature, map, or geoprocessing service that returns a JSON feature set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkUrl.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object NetworkUrlProperties {

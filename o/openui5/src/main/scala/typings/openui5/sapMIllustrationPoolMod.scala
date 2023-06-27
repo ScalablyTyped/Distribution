@@ -13,16 +13,16 @@ object sapMIllustrationPoolMod extends Shortcut {
   val default: IllustrationPool = js.native
   
   /**
-    * @SINCE 1.98
+    * @since 1.98
     *
     * `IllustrationPool` loads the illustration assets (SVGs) via XMLHttpRequest requests.
     *
     * The successfully loaded data is kept in the DOM (div with ID `sap-illustration-pool`) in the `sap-ui-static`
     * DOM element.
     *
-    * To load a given asset, register its illustration set through the {@link sap.m.IllustrationPool.registerIllustrationSet
-    * registerIllustrationSet} API of `IllustrationPool`. The exception being the `sapIllus`, which is the
-    * default illustration set that is registered by default.
+    * To load a given asset, register its illustration set through the {@link sap.m.IllustrationPool.registerIllustrationSet registerIllustrationSet }
+    * API of `IllustrationPool`. The exception being the `sapIllus`, which is the default illustration set
+    * that is registered by default.
     *
     * The default behavior of `IllustrationPool` is to load/require an asset only when it's needed by using
     * the {@link sap.m.IllustrationPool.loadAsset} API. When registering the new illustration set, you are

@@ -10,37 +10,37 @@ trait ProjectParameters
      with Accessor {
   
   /**
-    * The input geometries to project.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#geometries)
-    */
+  		 * The input geometries to project.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#geometries)
+  		 */
   var geometries: js.Array[Geometry_] = js.native
   
   /**
-    * The spatial reference to which you are projecting the geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#outSpatialReference)
-    */
+  		 * The spatial reference to which you are projecting the geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: SpatialReference = js.native
   
   /**
-    * Converts an instance of  this class to its ArcGIS portal JSON representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#toJSON)
-    */
+  		 * Converts an instance of	this class to its ArcGIS portal JSON representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#toJSON)
+  		 */
   def toJSON(): Any = js.native
   
   /**
-    * Indicates whether to transform forward or not.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformForward)
-    */
+  		 * Indicates whether to transform forward or not.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformForward)
+  		 */
   var transformForward: Boolean = js.native
   
   /**
-    * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
-    */
+  		 * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
+  		 */
   var transformation: ProjectParametersTransformation = js.native
 }

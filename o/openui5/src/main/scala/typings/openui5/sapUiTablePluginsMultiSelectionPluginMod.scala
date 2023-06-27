@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.CustomPayload
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiTableLibraryMod.SelectionMode
+import typings.openui5.sapUiTablePluginsSelectionPluginMod.SelectionPlugin$SelectionChangeEventParameters
 import typings.openui5.sapUiTablePluginsSelectionPluginMod.SelectionPluginSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -141,13 +141,15 @@ object sapUiTablePluginsMultiSelectionPluginMod {
     oEventPayload: js.Object
     ): Unit = js.native
     
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CustomPayload): this.type = js.native
+    mParameters: MultiSelectionPlugin$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Gets current value of property {@link #getEnableNotification enableNotification}.
       *
@@ -171,8 +173,8 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       * 	 - With server-side models if they are used in client mode
       * 	 - If the entity set is small
       *
-      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
-      * threshold} property of the related `sap.ui.table.Table` control.
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold threshold }
+      * property of the related `sap.ui.table.Table` control.
       *
       * Default value is `200`.
       *
@@ -267,7 +269,7 @@ object sapUiTablePluginsMultiSelectionPluginMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Sets a new value for property {@link #getEnableNotification enableNotification}.
       *
@@ -297,8 +299,8 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       * 	 - With server-side models if they are used in client mode
       * 	 - If the entity set is small
       *
-      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
-      * threshold} property of the related `sap.ui.table.Table` control.
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold threshold }
+      * property of the related `sap.ui.table.Table` control.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -411,12 +413,61 @@ object sapUiTablePluginsMultiSelectionPluginMod {
     bShowHeaderSelector: Boolean): this.type = js.native
   }
   
+  trait MultiSelectionPlugin$SelectionChangeEventParameters
+    extends StObject
+       with SelectionPlugin$SelectionChangeEventParameters {
+    
+    /**
+      * Contains the data passed to the function that triggered the event
+      */
+    var customPayload: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Array of indices whose selection has been changed (either selected or deselected)
+      */
+    var indices: js.UndefOr[js.Array[int]] = js.undefined
+    
+    /**
+      * Indicates whether the selection limit has been reached
+      */
+    var limitReached: js.UndefOr[Boolean] = js.undefined
+  }
+  object MultiSelectionPlugin$SelectionChangeEventParameters {
+    
+    inline def apply(): MultiSelectionPlugin$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiSelectionPlugin$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectionPlugin$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCustomPayload(value: js.Object): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
+      
+      inline def setCustomPayloadUndefined: Self = StObject.set(x, "customPayload", js.undefined)
+      
+      inline def setIndices(value: js.Array[int]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      
+      inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+      
+      inline def setIndicesVarargs(value: int*): Self = StObject.set(x, "indices", js.Array(value*))
+      
+      inline def setLimitReached(value: Boolean): Self = StObject.set(x, "limitReached", value.asInstanceOf[js.Any])
+      
+      inline def setLimitReachedUndefined: Self = StObject.set(x, "limitReached", js.undefined)
+    }
+  }
+  
+  type MultiSelectionPluginSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[MultiSelectionPlugin$SelectionChangeEventParameters]
+  
+  type MultiSelectionPluginSelectionChangeEventParameters = MultiSelectionPlugin$SelectionChangeEventParameters
+  
   trait MultiSelectionPluginSettings
     extends StObject
        with SelectionPluginSettings {
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Enables notifications that are displayed once a selection has been limited.
       */
@@ -434,10 +485,21 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       * 	 - With server-side models if they are used in client mode
       * 	 - If the entity set is small
       *
-      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold
-      * threshold} property of the related `sap.ui.table.Table` control.
+      * In other cases, we recommend to set the limit to at least double the value of the {@link sap.ui.table.Table#getThreshold threshold }
+      * property of the related `sap.ui.table.Table` control.
       */
     var limit: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
+    
+    /**
+      * This event is fired when the selection is changed.
+      */
+    @JSName("selectionChange")
+    var selectionChange_MultiSelectionPluginSettings: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiSelectionPlugin$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Selection mode of the plugin. This property controls whether single or multiple rows can be selected.
@@ -472,6 +534,12 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       inline def setLimit(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiSelectionPlugin$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      
+      inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
       inline def setSelectionMode(
         value: SelectionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SelectionMode * / any */ String) | PropertyBindingInfo

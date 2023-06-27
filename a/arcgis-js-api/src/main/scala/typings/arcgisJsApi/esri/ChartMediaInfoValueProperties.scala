@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartMediaInfoValueProperties extends StObject {
   
   /**
-    * An array of strings, with each string containing the name of a field to display in the chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#fields)
-    */
+  		 * An array of strings, with each string containing the name of a field to display in the chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#fields)
+  		 */
   var fields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A string containing the name of a field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#normalizeField)
-    */
+  		 * A string containing the name of a field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#normalizeField)
+  		 */
   var normalizeField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data that is plotted in a chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#series)
-    */
+  		 * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data that is plotted in a chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#series)
+  		 */
   var series: js.UndefOr[js.Array[ChartMediaInfoValueSeriesProperties]] = js.undefined
   
   /**
-    * String value indicating the tooltip for a chart specified from another field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#tooltipField)
-    */
+  		 * String value indicating the tooltip for a chart specified from another field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#tooltipField)
+  		 */
   var tooltipField: js.UndefOr[String] = js.undefined
 }
 object ChartMediaInfoValueProperties {

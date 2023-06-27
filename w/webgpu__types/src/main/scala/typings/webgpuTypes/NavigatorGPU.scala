@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigatorGPU extends StObject {
   
   /**
-    * Provides access to interfaces related to WebGPU.
+    * A global singleton providing top-level entry points like {@link GPU#requestAdapter}.
     */
   val gpu: GPU
 }

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.rollupStrings.augmentChunkHash
   - typings.rollup.rollupStrings.generateBundle
+  - typings.rollup.rollupStrings.onLog
   - typings.rollup.rollupStrings.options
   - typings.rollup.rollupStrings.outputOptions
   - typings.rollup.rollupStrings.renderChunk
@@ -18,6 +19,8 @@ object SequentialPluginHooks {
   inline def augmentChunkHash: typings.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typings.rollup.rollupStrings.augmentChunkHash]
   
   inline def generateBundle: typings.rollup.rollupStrings.generateBundle = "generateBundle".asInstanceOf[typings.rollup.rollupStrings.generateBundle]
+  
+  inline def onLog: typings.rollup.rollupStrings.onLog = "onLog".asInstanceOf[typings.rollup.rollupStrings.onLog]
   
   inline def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
   

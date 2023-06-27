@@ -20,19 +20,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterValueProperties extends StObject {
   
   /**
-    * Specifies the parameter's data type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
-    */
+  		 * Specifies the parameter's data type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#dataType)
+  		 */
   var dataType: js.UndefOr[
     boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value`
   ] = js.undefined
   
   /**
-    * The value of the parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
-    */
+  		 * The value of the parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ParameterValue.html#value)
+  		 */
   var value: js.UndefOr[
     Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String | (js.Array[
       Boolean | DataFileProperties | DateProperties | Double | FeatureSetProperties | FieldProperties | LinearUnitProperties | RasterDataProperties | String

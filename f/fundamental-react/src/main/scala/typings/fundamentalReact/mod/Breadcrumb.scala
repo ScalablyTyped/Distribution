@@ -4,7 +4,7 @@ import typings.fundamentalReact.anon.FunctionComponentBreadcru
 import typings.fundamentalReact.anon.PartialBreadcrumbProps
 import typings.fundamentalReact.anon.WeakValidationMapBreadcru
 import typings.fundamentalReact.libBreadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Breadcrumb/Breadcrumb.BreadcrumbProps> & {  displayName :'Breadcrumb',   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Breadcrumb/Breadcrumb.BreadcrumbItemProps> & {  displayName :'Breadcrumb.Item'}} */
 object Breadcrumb {
   
-  inline def apply(props: BreadcrumbProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def apply(props: BreadcrumbProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: BreadcrumbProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def apply(props: BreadcrumbProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   @JSImport("fundamental-react", "Breadcrumb")
   @js.native

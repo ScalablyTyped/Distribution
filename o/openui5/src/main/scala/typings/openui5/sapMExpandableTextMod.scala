@@ -146,7 +146,7 @@ object sapMExpandableTextMod {
     oBindingInfo: PropertyBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -226,7 +226,7 @@ object sapMExpandableTextMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the text node container's DOM reference. This can be different from `getDomRef` when inner wrapper
       * is needed.
@@ -247,7 +247,7 @@ object sapMExpandableTextMod {
     def getWrappingType(): WrappingType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappingType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -429,7 +429,7 @@ object sapMExpandableTextMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */

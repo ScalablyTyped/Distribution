@@ -126,7 +126,7 @@ object sapMIllustratedMessageMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Adds some additionalContent to the aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -146,7 +146,7 @@ object sapMIllustratedMessageMod {
     vIllustrationAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Adds some illustrationAriaLabelledBy into the association {@link #getIllustrationAriaLabelledBy illustrationAriaLabelledBy}.
       *
@@ -160,7 +160,7 @@ object sapMIllustratedMessageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Destroys all the additionalContent in the aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -169,8 +169,8 @@ object sapMIllustratedMessageMod {
     def destroyAdditionalContent(): this.type = js.native
     
     /**
-      * @SINCE 1.98.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.98.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns object with ID references of the title and description containers.
       *
@@ -182,7 +182,7 @@ object sapMIllustratedMessageMod {
     def getAccessibilityReferences(): js.Object = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets content of aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -193,7 +193,7 @@ object sapMIllustratedMessageMod {
     def getAdditionalContent(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Gets current value of property {@link #getAriaTitleLevel ariaTitleLevel}.
       *
@@ -208,7 +208,7 @@ object sapMIllustratedMessageMod {
     def getAriaTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getDescription description}.
       *
@@ -225,7 +225,7 @@ object sapMIllustratedMessageMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Gets current value of property {@link #getEnableDefaultTitleAndDescription enableDefaultTitleAndDescription}.
       *
@@ -240,7 +240,7 @@ object sapMIllustratedMessageMod {
     def getEnableDefaultTitleAndDescription(): Boolean = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -255,7 +255,7 @@ object sapMIllustratedMessageMod {
     def getEnableFormattedText(): Boolean = js.native
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Gets current value of property {@link #getEnableVerticalResponsiveness enableVerticalResponsiveness}.
       *
@@ -269,15 +269,14 @@ object sapMIllustratedMessageMod {
     def getEnableVerticalResponsiveness(): Boolean = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getIllustrationAriaLabelledBy
-      * illustrationAriaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getIllustrationAriaLabelledBy illustrationAriaLabelledBy}.
       */
     def getIllustrationAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getIllustrationSize illustrationSize}.
       *
@@ -293,7 +292,7 @@ object sapMIllustratedMessageMod {
     def getIllustrationSize(): IllustratedMessageSize | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IllustratedMessageSize * / any */ String) = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getIllustrationType illustrationType}.
       *
@@ -314,7 +313,7 @@ object sapMIllustratedMessageMod {
     def getIllustrationType(): String = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getTitle title}.
       *
@@ -331,7 +330,7 @@ object sapMIllustratedMessageMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Checks for the provided `sap.m.Button` in the aggregation {@link #getAdditionalContent additionalContent}.
       * and returns its index if found or -1 otherwise.
@@ -346,7 +345,7 @@ object sapMIllustratedMessageMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Inserts a additionalContent into the aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -370,7 +369,7 @@ object sapMIllustratedMessageMod {
       */
     vAdditionalContent: String): typings.openui5.sapMButtonMod.default | Null = js.native
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Removes a additionalContent from the aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -388,7 +387,7 @@ object sapMIllustratedMessageMod {
     ): typings.openui5.sapMButtonMod.default | Null = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Removes all the controls from the aggregation {@link #getAdditionalContent additionalContent}.
       *
@@ -399,7 +398,7 @@ object sapMIllustratedMessageMod {
     def removeAllAdditionalContent(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Removes all the controls in the association named {@link #getIllustrationAriaLabelledBy illustrationAriaLabelledBy}.
       *
@@ -408,10 +407,9 @@ object sapMIllustratedMessageMod {
     def removeAllIllustrationAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
-      * Removes an illustrationAriaLabelledBy from the association named {@link #getIllustrationAriaLabelledBy
-      * illustrationAriaLabelledBy}.
+      * Removes an illustrationAriaLabelledBy from the association named {@link #getIllustrationAriaLabelledBy illustrationAriaLabelledBy}.
       *
       * @returns The removed illustrationAriaLabelledBy or `null`
       */
@@ -435,7 +433,7 @@ object sapMIllustratedMessageMod {
     ): ID | Null = js.native
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Sets a new value for property {@link #getAriaTitleLevel ariaTitleLevel}.
       *
@@ -462,7 +460,7 @@ object sapMIllustratedMessageMod {
     sAriaTitleLevel: TitleLevel): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getDescription description}.
       *
@@ -485,7 +483,7 @@ object sapMIllustratedMessageMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Sets a new value for property {@link #getEnableDefaultTitleAndDescription enableDefaultTitleAndDescription}.
       *
@@ -508,7 +506,7 @@ object sapMIllustratedMessageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -529,7 +527,7 @@ object sapMIllustratedMessageMod {
     bEnableFormattedText: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Sets a new value for property {@link #getEnableVerticalResponsiveness enableVerticalResponsiveness}.
       *
@@ -551,7 +549,7 @@ object sapMIllustratedMessageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getIllustrationSize illustrationSize}.
       *
@@ -579,7 +577,7 @@ object sapMIllustratedMessageMod {
     sIllustrationSize: IllustratedMessageSize): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getTitle title}.
       *
@@ -607,7 +605,7 @@ object sapMIllustratedMessageMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines the controls placed below the description as additional content.
       *
@@ -618,7 +616,7 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Defines the semantic level of the title. When using `Auto`, no explicit level information is written.
       *
@@ -629,7 +627,7 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines the description displayed below the title.
       *
@@ -640,7 +638,7 @@ object sapMIllustratedMessageMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.111
+      * @since 1.111
       *
       * Defines whether the default title and description should be used when the input for their respective
       * part is empty and the default illustration set is being used. Title and description are stored in the
@@ -651,7 +649,7 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines whether the value set in the `description` property is displayed as formatted text in HTML format.
       *
@@ -662,7 +660,7 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Defines whether the `IllustratedMessage` would resize itself according to it's height if `illustrationSize`
       * property is set to `IllustratedMessageSize.Auto`.
@@ -672,14 +670,14 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Association to controls / IDs which label those controls (see WAI-ARIA attribute aria-labelledBy).
       */
     var illustrationAriaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Determines which illustration breakpoint variant is used.
       *
@@ -691,7 +689,7 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Determines which illustration type is displayed.
       *
@@ -706,7 +704,7 @@ object sapMIllustratedMessageMod {
     var illustrationType: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines the title that is displayed below the illustration.
       *

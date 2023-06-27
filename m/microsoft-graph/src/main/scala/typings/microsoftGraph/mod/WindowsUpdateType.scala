@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.all_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.userDefined
-  - typings.microsoftGraph.microsoftGraphStrings.all
+  - typings.microsoftGraph.microsoftGraphStrings.all_
   - typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly
   - typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildFast
   - typings.microsoftGraph.microsoftGraphStrings.windowsInsiderBuildSlow
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsUpdateType extends StObject
 object WindowsUpdateType {
   
-  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: all_ = "all".asInstanceOf[all_]
   
   inline def businessReadyOnly: typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly = "businessReadyOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessReadyOnly]
   

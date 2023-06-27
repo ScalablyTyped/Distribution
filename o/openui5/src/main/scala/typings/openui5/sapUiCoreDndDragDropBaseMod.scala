@@ -19,7 +19,7 @@ object sapUiCoreDndDragDropBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:3ddb6cde6a8d416598ac8ced3f5d82d5 Drag and Drop}
+    * 	{@link https://ui5.sap.com/#/topic/3ddb6cde6a8d416598ac8ced3f5d82d5 Drag and Drop}
     */
   open class default () extends DragDropBase {
     def this(/**
@@ -124,7 +124,7 @@ object sapUiCoreDndDragDropBaseMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getEnabled enabled}.
       *
@@ -147,7 +147,7 @@ object sapUiCoreDndDragDropBaseMod {
     def getGroupName(): String = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getEnabled enabled}.
       *
@@ -187,7 +187,7 @@ object sapUiCoreDndDragDropBaseMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Indicates whether this configuration is active or not.
       */

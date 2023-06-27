@@ -14,33 +14,33 @@ trait PointCloudClassBreaksRendererProperties
      with PointCloudRendererProperties {
   
   /**
-    * Each element in the array is an object that provides information about a class break associated with the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
-    */
+  		 * Each element in the array is an object that provides information about a class break associated with the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#colorClassBreakInfos)
+  		 */
   var colorClassBreakInfos: js.UndefOr[js.Array[PointCloudClassBreaksRendererColorClassBreakInfos]] = js.undefined
   
   /**
-    * The name of the field that is used to drive the color visualization for the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#field)
-    */
+  		 * The name of the field that is used to drive the color visualization for the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * A transform that is applied to the field value before evaluating the renderer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#fieldTransformType)
-    */
+  		 * A transform that is applied to the field value before evaluating the renderer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#fieldTransformType)
+  		 */
   var fieldTransformType: js.UndefOr[none_ | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`] = js.undefined
   
   /**
-    * An object providing options for displaying the renderer in the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#legendOptions)
-    */
+  		 * An object providing options for displaying the renderer in the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[PointCloudClassBreaksRendererLegendOptions] = js.undefined
 }
 object PointCloudClassBreaksRendererProperties {

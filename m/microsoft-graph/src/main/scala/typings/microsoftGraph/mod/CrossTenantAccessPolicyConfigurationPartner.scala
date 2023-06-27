@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CrossTenantAccessPolicyConfigurationPartner extends StObject {
   
+  /**
+    * Determines the partner-specific configuration for automatic user consent settings. Unless specifically configured, the
+    * inboundAllowed and outboundAllowed properties are null and inherit from the default settings, which is always false.
+    */
   var automaticUserConsentSettings: js.UndefOr[NullableOption[InboundOutboundPolicyConfiguration]] = js.undefined
   
   /**
@@ -32,6 +36,11 @@ trait CrossTenantAccessPolicyConfigurationPartner extends StObject {
     */
   var b2bDirectConnectOutbound: js.UndefOr[NullableOption[CrossTenantAccessPolicyB2BSetting]] = js.undefined
   
+  /**
+    * Defines the cross-tenant policy for the synchronization of users from a partner tenant. Use this user synchronization
+    * policy to streamline collaboration between users in a multi-tenant organization by automating the creation, update, and
+    * deletion of users from one tenant to another.
+    */
   var identitySynchronization: js.UndefOr[NullableOption[CrossTenantIdentitySyncPolicyPartner]] = js.undefined
   
   /**

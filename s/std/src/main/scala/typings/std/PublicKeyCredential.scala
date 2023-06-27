@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential)
+  */
 trait PublicKeyCredential
   extends StObject
      with Credential {
@@ -12,12 +16,15 @@ trait PublicKeyCredential
   /* standard dom */
   val authenticatorAttachment: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/getClientExtensionResults) */
   /* standard dom */
   def getClientExtensionResults(): AuthenticationExtensionsClientOutputs
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/rawId) */
   /* standard dom */
   val rawId: js.typedarray.ArrayBuffer
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PublicKeyCredential/response) */
   /* standard dom */
   val response: AuthenticatorResponse
 }

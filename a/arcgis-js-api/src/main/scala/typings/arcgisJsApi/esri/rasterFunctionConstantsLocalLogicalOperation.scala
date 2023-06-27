@@ -7,122 +7,122 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsLocalLogicalOperation extends StObject {
   
   /**
-    * Performs a Bitwise And operation on the binary values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise And operation on the binary values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseAnd: Double
   
   /**
-    * Performs a Bitwise Left Shift operation on the binary values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise Left Shift operation on the binary values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseLeftShift: Double
   
   /**
-    * Performs a Bitwise Not (complement) operation on the binary value of an input raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise Not (complement) operation on the binary value of an input raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseNot: Double
   
   /**
-    * Performs a Bitwise Or operation on the binary values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise Or operation on the binary values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseOr: Double
   
   /**
-    * Performs a Bitwise Right Shift operation on the binary values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise Right Shift operation on the binary values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseRightShift: Double
   
   /**
-    * Performs a Bitwise eXclusive Or operation on the binary values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Bitwise eXclusive Or operation on the binary values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var bitwiseXOr: Double
   
   /**
-    * Performs a Boolean And operation on the cell values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Boolean And operation on the cell values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var booleanAnd: Double
   
   /**
-    * Performs a Boolean Not (complement) operation on the cell values of the input raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Boolean Not (complement) operation on the cell values of the input raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var booleanNot: Double
   
   /**
-    * Performs a Boolean Or operation on the cell values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Boolean Or operation on the cell values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var booleanOr: Double
   
   /**
-    * Performs a Boolean eXclusive Or operation on the cell values of two input rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Boolean eXclusive Or operation on the cell values of two input rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var booleanXOr: Double
   
   /**
-    * Performs a Relational equal-to operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational equal-to operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var equalTo: Double
   
   /**
-    * Performs a Relational greater-than operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational greater-than operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var greaterThan: Double
   
   /**
-    * Performs a Relational greater-than-or-equal-to operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational greater-than-or-equal-to operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var greaterThanEqual: Double
   
   /**
-    * Determines which values from the input raster are NoData on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Determines which values from the input raster are NoData on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var isNull: Double
   
   /**
-    * Performs a Relational less-than operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational less-than operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var lessThan: Double
   
   /**
-    * Performs a Relational less-than-or-equal-to operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational less-than-or-equal-to operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var lessThanEqual: Double
   
   /**
-    * Performs a Relational not-equal-to operation on two inputs on a cell-by-cell basis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * Performs a Relational not-equal-to operation on two inputs on a cell-by-cell basis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   var notEqual: Double
 }
 object rasterFunctionConstantsLocalLogicalOperation {

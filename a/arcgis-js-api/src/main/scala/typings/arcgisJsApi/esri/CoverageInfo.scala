@@ -16,80 +16,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageInfo extends StObject {
   
   /**
-    * Coverage band names.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Coverage band names.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var bandNames: js.Array[String]
   
   /**
-    * Coverage description for different versions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Coverage description for different versions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var coverageDescription: CoverageDescriptionV100 | CoverageDescriptionV110 | CoverageDescriptionV201
   
   /**
-    * Service coverage description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Service coverage description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var description: String
   
   /**
-    * Service coverage id.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Service coverage id.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var id: String
   
   /**
-    * Spatial extent of the coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Spatial extent of the coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var lonLatEnvelope: Extent
   
   /**
-    * Coverage raster info.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Coverage raster info.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var rasterInfo: RasterInfo
   
   /**
-    * Formats supported by a service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Formats supported by a service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var supportedFormats: js.Array[String]
   
   /**
-    * Interpolation supported by a service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Interpolation supported by a service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var supportedInterpolations: nearest | bilinear | cubic | majority
   
   /**
-    * Service coverage title.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Service coverage title.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var title: String
   
   /**
-    * Indicates if the EPSG axis is used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * Indicates if the EPSG axis is used.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var useEPSGAxis: Boolean
   
   /**
-    * The service version.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
-    */
+  		 * The service version.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageInfo)
+  		 */
   var version: `1Dot0Dot0` | `1Dot1Dot0` | `1Dot1Dot1` | `1Dot1Dot2` | `2Dot0Dot1`
 }
 object CoverageInfo {

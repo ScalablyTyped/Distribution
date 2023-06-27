@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassBreaksRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal fill color of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal fill color of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var classBreaksResult: ClassBreaksResult
   
   /**
-    * The color scheme used for the class breaks.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * The color scheme used for the class breaks.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var colorScheme: ColorScheme
   
   /**
-    * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the background of the view and the spread of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
-    */
+  		 * The renderer object configured to best match the background of the view and the spread of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#ClassBreaksRendererResult)
+  		 */
   var renderer: ClassBreaksRenderer
 }
 object ClassBreaksRendererResult {

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationQueryResult extends StObject {
   
   /**
-    * The geometry with sampled z-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
-    */
+  		 * The geometry with sampled z-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
+  		 */
   var geometry: Point | Multipoint | Polyline
   
   /**
-    * The value used when there is no data available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
-    */
+  		 * The value used when there is no data available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
+  		 */
   var noDataValue: Double
   
   /**
-    * Contains additional information about how the geometry was sampled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
-    */
+  		 * Contains additional information about how the geometry was sampled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
+  		 */
   var sampleInfo: js.UndefOr[js.Array[ElevationQueryResultSampleInfo]] = js.undefined
 }
 object ElevationQueryResult {

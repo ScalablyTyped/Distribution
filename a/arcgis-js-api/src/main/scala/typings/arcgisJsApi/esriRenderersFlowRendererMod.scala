@@ -12,20 +12,20 @@ object esriRenderersFlowRendererMod {
   @JSImport("esri/renderers/FlowRenderer", JSImport.Namespace)
   @js.native
   /**
-    * The FlowRenderer allows you to visualize your raster data with animated streamlines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html)
-    */
+  		 * The FlowRenderer allows you to visualize your raster data with animated streamlines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html)
+  		 */
   open class ^ ()
     extends StObject
        with FlowRenderer {
     def this(properties: FlowRendererProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

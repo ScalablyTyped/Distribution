@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureEditResult extends StObject {
   
   /**
-    * If the edit failed, the edit result includes an error.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
-    */
+  		 * If the edit failed, the edit result includes an error.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
+  		 */
   var error: FeatureEditResultError
   
   /**
-    * The globalId of the feature or the attachment that was edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
-    */
+  		 * The globalId of the feature or the attachment that was edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
+  		 */
   var globalId: String
   
   /**
-    * The objectId of the feature or the attachmentId of the attachment that was edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
-    */
+  		 * The objectId of the feature or the attachmentId of the attachment that was edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
+  		 */
   var objectId: Double
 }
 object FeatureEditResult {

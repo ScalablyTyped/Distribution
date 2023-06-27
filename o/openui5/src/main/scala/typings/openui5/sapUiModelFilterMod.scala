@@ -37,9 +37,9 @@ object sapUiModelFilterMod {
       * sensitive or not. Client models filter case insensitive compared to the OData models which filter case
       * sensitive by default. See particular model documentation for details.
       *
-      * The filter operators {@link sap.ui.model.FilterOperator.Any "Any"} and {@link sap.ui.model.FilterOperator.All
-      * "All"} are only supported in V4 OData models. When creating a filter instance with these filter operators,
-      * the argument `variable` only accepts a string identifier and `condition` needs to be another filter instance.
+      * The filter operators {@link sap.ui.model.FilterOperator.Any "Any"} and {@link sap.ui.model.FilterOperator.All "All" }
+      * are only supported in V4 OData models. When creating a filter instance with these filter operators, the
+      * argument `variable` only accepts a string identifier and `condition` needs to be another filter instance.
       */
     def this(/**
       * Filter info object or a path or an array of filters
@@ -339,8 +339,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -359,8 +359,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -379,8 +379,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -399,8 +399,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -419,8 +419,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -439,8 +439,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -459,8 +459,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -479,8 +479,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -499,8 +499,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -519,8 +519,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -539,8 +539,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -559,8 +559,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -579,8 +579,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -599,8 +599,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -619,8 +619,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -639,8 +639,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -659,8 +659,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -679,8 +679,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -699,8 +699,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -719,8 +719,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -739,8 +739,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -759,8 +759,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -779,8 +779,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Any,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -799,8 +799,8 @@ object sapUiModelFilterMod {
       */
     vValue1: Unit,
       /**
-      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-      * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+      * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+      * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
       */
     vValue2: Any
     ) = this()
@@ -897,7 +897,7 @@ object sapUiModelFilterMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the comparator function as provided on construction of this filter, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.comparator`.
@@ -907,7 +907,7 @@ object sapUiModelFilterMod {
     def getComparator(): js.Function1[/* p1 */ Any, js.UndefOr[Boolean]] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the filter instance which is used as the condition for lambda operators, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.condition`.
@@ -917,7 +917,7 @@ object sapUiModelFilterMod {
     def getCondition(): js.UndefOr[Filter] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the array of filters as specified on construction of this filter, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.filters`
@@ -927,7 +927,7 @@ object sapUiModelFilterMod {
     def getFilters(): js.UndefOr[js.Array[Filter]] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the filter operator used for this filter, see {@link sap.ui.model.Filter#constructor}, parameter
       * `vFilterInfo.operator` or `vOperator`.
@@ -939,7 +939,7 @@ object sapUiModelFilterMod {
       ] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the binding path for this filter, see {@link sap.ui.model.Filter#constructor}, parameter `vFilterInfo`
       * or `vFilterInfo.path`.
@@ -949,7 +949,7 @@ object sapUiModelFilterMod {
     def getPath(): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the test function which is used to filter the items, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.test`.
@@ -959,7 +959,7 @@ object sapUiModelFilterMod {
     def getTest(): js.Function2[/* p1 */ Any, /* p2 */ Any, js.UndefOr[Boolean]] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the first value that is used with the given filter operator, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.value1` or `vValue1`.
@@ -969,7 +969,7 @@ object sapUiModelFilterMod {
     def getValue1(): Any = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the second value that is used with the given filter operator, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.value2` or `vValue2`.
@@ -979,7 +979,7 @@ object sapUiModelFilterMod {
     def getValue2(): Any = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Returns the variable name used in lambda operators, see {@link sap.ui.model.Filter#constructor}, parameter
       * `vFilterInfo.variable`.
@@ -989,7 +989,7 @@ object sapUiModelFilterMod {
     def getVariable(): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Indicates whether an "AND" logical conjunction is applied on the filters, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.and`.
@@ -999,7 +999,7 @@ object sapUiModelFilterMod {
     def isAnd(): Boolean = js.native
     
     /**
-      * @SINCE 1.96.0
+      * @since 1.96.0
       *
       * Indicates whether a string value should be compared case sensitive, see {@link sap.ui.model.Filter#constructor},
       * parameter `vFilterInfo.caseSensitive`.

@@ -26,14 +26,14 @@ trait DeleteParametersPathNameOwnerRepoResponses extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this endpoint.
     * GitHub Apps must have the `actions_variables:write` repository permission to use this endpoint.
     */
-  var patch: RequestBodyContentApplicationjson165
+  var patch: RequestBodyContentApplicationjson193
 }
 object DeleteParametersPathNameOwnerRepoResponses {
   
   inline def apply(
     delete: ParametersPathNameOwnerRepoResponses,
     get: ParametersPathNameOwnerRepo,
-    patch: RequestBodyContentApplicationjson165
+    patch: RequestBodyContentApplicationjson193
   ): DeleteParametersPathNameOwnerRepoResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathNameOwnerRepoResponses]
@@ -46,6 +46,6 @@ object DeleteParametersPathNameOwnerRepoResponses {
     
     inline def setGet(value: ParametersPathNameOwnerRepo): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContentApplicationjson165): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: RequestBodyContentApplicationjson193): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

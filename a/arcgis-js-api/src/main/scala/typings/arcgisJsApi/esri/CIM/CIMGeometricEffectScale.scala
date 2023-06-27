@@ -10,13 +10,13 @@ trait CIMGeometricEffectScale
      with CIMGeometricEffectType {
   
   /**
-    * The amount of change in size of a symbol in the x-axis. The value is expressed in terms of a ratio/percentage.
-    */
+  			 * The amount of change in size of a symbol in the x-axis. The value is expressed in terms of a ratio/percentage.
+  			 */
   var XScaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
-    * The amount of change in size of a symbol in the y-axis. The value is expressed in terms of a ratio/percentage.
-    */
+  			 * The amount of change in size of a symbol in the y-axis. The value is expressed in terms of a ratio/percentage.
+  			 */
   var YScaleFactor: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

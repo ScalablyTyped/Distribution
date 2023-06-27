@@ -47,7 +47,10 @@ trait TreeCollection extends StObject {
   
   var data: DataStore = js.native
   
+  def define(property: String): Unit = js.native
   def define(property: String, value: Any): Unit = js.native
+  def define(property: obj): Unit = js.native
+  def define(property: obj, value: Any): Unit = js.native
   
   def destructor(): Unit = js.native
   
@@ -69,8 +72,8 @@ trait TreeCollection extends StObject {
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getBindData(key: String): Unit = js.native
   def getBindData(key: String, update: Boolean): Unit = js.native
@@ -98,7 +101,9 @@ trait TreeCollection extends StObject {
   
   def getLastId(): Double | String = js.native
   
+  def getNextId(id: String): String | Double = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
+  def getNextId(id: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
   def getNextSiblingId(id: String): String | Double = js.native
@@ -107,7 +112,9 @@ trait TreeCollection extends StObject {
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
   
+  def getPrevId(id: String): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
+  def getPrevId(id: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
   def getPrevSiblingId(id: String): String | Double = js.native
@@ -128,6 +135,22 @@ trait TreeCollection extends StObject {
   def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
@@ -154,12 +177,18 @@ trait TreeCollection extends StObject {
   
   var name: String = js.native
   
+  def parse(data: String): Unit = js.native
   def parse(data: String, `type`: String): Unit = js.native
   def parse(data: String, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: String, `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any]): Unit = js.native
   def parse(data: js.Array[Any], `type`: String): Unit = js.native
   def parse(data: js.Array[Any], `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: js.Array[Any], `type`: Unit, clear: Boolean): Unit = js.native
+  def parse(data: obj): Unit = js.native
   def parse(data: obj, `type`: String): Unit = js.native
   def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
+  def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
@@ -189,6 +218,9 @@ trait TreeCollection extends StObject {
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
   def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unbind(): Unit = js.native

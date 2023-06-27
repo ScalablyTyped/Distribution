@@ -134,7 +134,7 @@ object sapMP13nEngineMod {
        with Object {
     
     /**
-      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
+      * @experimental (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Applies a state to a control by passing an object that contains the registered controller key and an
       * object matching the inner subcontroller logic.
@@ -162,7 +162,7 @@ object sapMP13nEngineMod {
       /**
       * The handler function to call when the event occurs
       */
-    fnStateEventHandler: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnStateEventHandler: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     
     /**
@@ -184,7 +184,7 @@ object sapMP13nEngineMod {
       /**
       * The handler function to detach from the event
       */
-    fnStateEventHandler: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnStateEventHandler: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     
     def register(
@@ -215,7 +215,7 @@ object sapMP13nEngineMod {
     ): js.Promise[Null] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.104) - Please note that the API of this control is not yet finalized!
+      * @experimental (since 1.104) - Please note that the API of this control is not yet finalized!
       *
       * Retrieves the state for a given control instance after all necessary changes have been applied (e.g.
       * modification handler appliance). After the returned `Promise` has been resolved, the returned state is

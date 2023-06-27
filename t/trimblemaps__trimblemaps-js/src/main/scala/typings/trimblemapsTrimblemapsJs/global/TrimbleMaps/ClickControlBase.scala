@@ -7,4 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("TrimbleMaps.ClickControlBase")
 @js.native
 open class ClickControlBase ()
-  extends typings.trimblemapsTrimblemapsJs.mod.ClickControlBase
+  extends typings.trimblemapsTrimblemapsJs.mod.ClickControlBase {
+  def this(options: js.Object) = this()
+}

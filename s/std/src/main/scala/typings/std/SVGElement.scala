@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the SVGElement interface. */
+/**
+  * All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the SVGElement interface.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement)
+  */
 @js.native
 trait SVGElement
   extends StObject

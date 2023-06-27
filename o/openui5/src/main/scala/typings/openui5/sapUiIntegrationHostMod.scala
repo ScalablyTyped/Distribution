@@ -1,13 +1,10 @@
 package typings.openui5
 
-import typings.openui5.anon.ActionConfig
-import typings.openui5.anon.Card
 import typings.openui5.anon.Data
-import typings.openui5.anon.`3`
-import typings.openui5.anon.`4`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
+import typings.openui5.sapUiIntegrationLibraryMod.CardActionType
 import typings.openui5.sapUiIntegrationLibraryMod.CardMenuAction
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -128,7 +125,7 @@ object sapUiIntegrationHostMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Host`.
@@ -148,20 +145,20 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Host`.
@@ -186,7 +183,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
@@ -197,7 +194,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
@@ -205,9 +202,9 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
-      * Attaches event handler `fnFunction` to the {@link #event:cardConfigurationChange cardConfigurationChange}
+      * Attaches event handler `fnFunction` to the {@link #event:cardConfigurationChange cardConfigurationChange }
       * event of this `sap.ui.integration.Host`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -222,22 +219,22 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def attachCardConfigurationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
-      * Attaches event handler `fnFunction` to the {@link #event:cardConfigurationChange cardConfigurationChange}
+      * Attaches event handler `fnFunction` to the {@link #event:cardConfigurationChange cardConfigurationChange }
       * event of this `sap.ui.integration.Host`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -257,7 +254,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def attachCardConfigurationChange(
       /**
@@ -268,7 +265,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
@@ -276,7 +273,7 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Attaches event handler `fnFunction` to the {@link #event:cardStateChanged cardStateChanged} event of
       * this `sap.ui.integration.Host`.
@@ -293,20 +290,20 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit]
     ): this.type = js.native
     def attachCardStateChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Attaches event handler `fnFunction` to the {@link #event:cardStateChanged cardStateChanged} event of
       * this `sap.ui.integration.Host`.
@@ -328,7 +325,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit]
     ): this.type = js.native
     def attachCardStateChanged(
       /**
@@ -339,7 +336,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
@@ -347,7 +344,7 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.91)
+      * @experimental (since 1.91)
       *
       * Attaches event handler `fnFunction` to the {@link #event:message message} event of this `sap.ui.integration.Host`.
       *
@@ -362,20 +359,20 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit]
     ): this.type = js.native
     def attachMessage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.91)
+      * @experimental (since 1.91)
       *
       * Attaches event handler `fnFunction` to the {@link #event:message message} event of this `sap.ui.integration.Host`.
       *
@@ -395,7 +392,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit]
     ): this.type = js.native
     def attachMessage(
       /**
@@ -406,7 +403,7 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Host` itself
       */
@@ -414,7 +411,7 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.97)
+      * @experimental (since 1.97)
       *
       * This function is called when a CSRF token has expired.
       */
@@ -424,7 +421,7 @@ object sapUiIntegrationHostMod {
     mCSRFTokenConfig: Data): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.97)
+      * @experimental (since 1.97)
       *
       * This function is called when a CSRF token is fetched.
       */
@@ -440,7 +437,7 @@ object sapUiIntegrationHostMod {
     ): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.Host`.
@@ -453,13 +450,13 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit]
     ): this.type = js.native
     def detachAction(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostActionEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -467,9 +464,9 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
-      * Detaches event handler `fnFunction` from the {@link #event:cardConfigurationChange cardConfigurationChange}
+      * Detaches event handler `fnFunction` from the {@link #event:cardConfigurationChange cardConfigurationChange }
       * event of this `sap.ui.integration.Host`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -480,13 +477,13 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit]
     ): this.type = js.native
     def detachCardConfigurationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardConfigurationChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -494,7 +491,7 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Detaches event handler `fnFunction` from the {@link #event:cardStateChanged cardStateChanged} event of
       * this `sap.ui.integration.Host`.
@@ -507,13 +504,13 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit]
     ): this.type = js.native
     def detachCardStateChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostCardStateChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -521,7 +518,7 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.91)
+      * @experimental (since 1.91)
       *
       * Detaches event handler `fnFunction` from the {@link #event:message message} event of this `sap.ui.integration.Host`.
       *
@@ -533,13 +530,13 @@ object sapUiIntegrationHostMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit]
     ): this.type = js.native
     def detachMessage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HostMessageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -547,9 +544,9 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -562,39 +559,43 @@ object sapUiIntegrationHostMod {
     def fireAction(/**
       * Parameters to pass along with the event
       */
-    mParameters: ActionConfig): Boolean = js.native
+    mParameters: Host$ActionEventParameters): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.96)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cardConfigurationChange cardConfigurationChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCardConfigurationChange(): this.type = js.native
-    def fireCardConfigurationChange(/**
+    def fireCardConfigurationChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Card): this.type = js.native
+    mParameters: Host$CardConfigurationChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.107)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.107)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cardStateChanged cardStateChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCardStateChanged(): this.type = js.native
-    def fireCardStateChanged(/**
+    def fireCardStateChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `3`): this.type = js.native
+    mParameters: Host$CardStateChangedEventParameters
+    ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.91)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.91)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:message message} to attached listeners.
       *
@@ -604,10 +605,10 @@ object sapUiIntegrationHostMod {
     def fireMessage(/**
       * Parameters to pass along with the event
       */
-    mParameters: `4`): this.type = js.native
+    mParameters: Host$MessageEventParameters): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getActions actions}.
@@ -619,7 +620,7 @@ object sapUiIntegrationHostMod {
     def getActions(): js.Array[CardMenuAction] = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Resolves the value for a given path in the context of the host Contexts can be used to configure Cards
       * with information available in the host environment.
@@ -639,7 +640,7 @@ object sapUiIntegrationHostMod {
     sPath: String): js.Promise[Null] = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Returns the context object for the Card Editor design-time environment Contexts can be used to configure
       * Cards with information available in the host environment. Each entry in the list should contain design-time
@@ -657,7 +658,7 @@ object sapUiIntegrationHostMod {
     def getContexts(): js.Promise[js.Object] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.97)
+      * @experimental (since 1.97)
       *
       * Resolves the CSRF token and returns a Promise with its value.
       *
@@ -685,7 +686,7 @@ object sapUiIntegrationHostMod {
     ): js.Promise[String] = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Returns the list of destinations for the Card Editor design-time environment List entries are objects
       * that contain at least the name. { "name": "DestinationName" }
@@ -718,7 +719,7 @@ object sapUiIntegrationHostMod {
       ] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getActions actions}.
@@ -760,12 +761,175 @@ object sapUiIntegrationHostMod {
     ): this.type = js.native
   }
   
+  trait Host$ActionEventParameters extends StObject {
+    
+    /**
+      * The action configuration.
+      */
+    var actionConfig: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The action source.
+      */
+    var actionSource: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The card the action is fired from.
+      */
+    var card: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The parameters related to the triggered action.
+      */
+    var parameters: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The type of the action.
+      */
+    var `type`: js.UndefOr[
+        CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ] = js.undefined
+  }
+  object Host$ActionEventParameters {
+    
+    inline def apply(): Host$ActionEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Host$ActionEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host$ActionEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActionConfig(value: js.Object): Self = StObject.set(x, "actionConfig", value.asInstanceOf[js.Any])
+      
+      inline def setActionConfigUndefined: Self = StObject.set(x, "actionConfig", js.undefined)
+      
+      inline def setActionSource(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "actionSource", value.asInstanceOf[js.Any])
+      
+      inline def setActionSourceUndefined: Self = StObject.set(x, "actionSource", js.undefined)
+      
+      inline def setCard(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setType(
+        value: CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait Host$CardConfigurationChangeEventParameters extends StObject {
+    
+    /**
+      * The card the changes are fired from.
+      */
+    var card: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Changed configuration settings.
+      *
+      * Example:
+      * ```javascript
+      *
+      *  {
+      *     "/sap.card/configuration/filters/shipper/value": "key3",
+      *     "/sap.card/configuration/filters/item/value": "key2"
+      *  }
+      * ```
+      */
+    var changes: js.UndefOr[js.Object] = js.undefined
+  }
+  object Host$CardConfigurationChangeEventParameters {
+    
+    inline def apply(): Host$CardConfigurationChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Host$CardConfigurationChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host$CardConfigurationChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCard(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      
+      inline def setChanges(value: js.Object): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      
+      inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    }
+  }
+  
+  trait Host$CardStateChangedEventParameters extends StObject {
+    
+    /**
+      * The card the changes are fired from.
+      */
+    var card: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object Host$CardStateChangedEventParameters {
+    
+    inline def apply(): Host$CardStateChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Host$CardStateChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host$CardStateChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCard(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    }
+  }
+  
+  trait Host$MessageEventParameters extends StObject {
+    
+    var data: js.UndefOr[js.Object] = js.undefined
+  }
+  object Host$MessageEventParameters {
+    
+    inline def apply(): Host$MessageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Host$MessageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host$MessageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    }
+  }
+  
+  type HostActionEvent = typings.openui5.sapUiBaseEventMod.default[Host$ActionEventParameters]
+  
+  type HostActionEventParameters = Host$ActionEventParameters
+  
+  type HostCardConfigurationChangeEvent = typings.openui5.sapUiBaseEventMod.default[Host$CardConfigurationChangeEventParameters]
+  
+  type HostCardConfigurationChangeEventParameters = Host$CardConfigurationChangeEventParameters
+  
+  type HostCardStateChangedEvent = typings.openui5.sapUiBaseEventMod.default[Host$CardStateChangedEventParameters]
+  
+  type HostCardStateChangedEventParameters = Host$CardStateChangedEventParameters
+  
+  type HostMessageEvent = typings.openui5.sapUiBaseEventMod.default[Host$MessageEventParameters]
+  
+  type HostMessageEventParameters = Host$MessageEventParameters
+  
   trait HostSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered.
@@ -774,10 +938,15 @@ object sapUiIntegrationHostMod {
       * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
       * one to handle the action by calling `oEvent.preventDefault()`.
       */
-    var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var action: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$ActionEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * The actions configuration.
@@ -787,27 +956,42 @@ object sapUiIntegrationHostMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Fired when some card configuration settings are changed as a result of user interaction. For example
       * - filter value is changed.
       */
-    var cardConfigurationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cardConfigurationChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$CardConfigurationChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.107)
+      * @experimental (since 1.107)
       *
       * Fired when the state of a card is changed. For example - the card is ready, new page is selected inside
       * the card, a filter is changed or data is refreshed.
       */
-    var cardStateChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cardStateChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$CardStateChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.91)
+      * @experimental (since 1.91)
       *
       * Fired when a message from channels like navigator.serviceWorker is received.
       */
-    var message: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var message: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$MessageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * A function that resolves the given destination name to a URL.
@@ -834,7 +1018,7 @@ object sapUiIntegrationHostMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: HostSettings] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$ActionEventParameters] => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -846,15 +1030,19 @@ object sapUiIntegrationHostMod {
       
       inline def setActionsVarargs(value: CardMenuAction*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setCardConfigurationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cardConfigurationChange", js.Any.fromFunction1(value))
+      inline def setCardConfigurationChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$CardConfigurationChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "cardConfigurationChange", js.Any.fromFunction1(value))
       
       inline def setCardConfigurationChangeUndefined: Self = StObject.set(x, "cardConfigurationChange", js.undefined)
       
-      inline def setCardStateChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cardStateChanged", js.Any.fromFunction1(value))
+      inline def setCardStateChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$CardStateChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "cardStateChanged", js.Any.fromFunction1(value))
       
       inline def setCardStateChangedUndefined: Self = StObject.set(x, "cardStateChanged", js.undefined)
       
-      inline def setMessage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+      inline def setMessage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Host$MessageEventParameters] => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       

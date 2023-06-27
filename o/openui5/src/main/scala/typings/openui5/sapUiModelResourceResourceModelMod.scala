@@ -113,7 +113,7 @@ object sapUiModelResourceResourceModelMod {
     oData: BundleLocale
     ): js.Promise[Any] | Null = js.native
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Enhances the resource model with a custom resource bundle.
       *

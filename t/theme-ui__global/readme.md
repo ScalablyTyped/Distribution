@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__global
 
-Typings are for version 0.15.7
+Typings are for version 0.16.0
 
 
 

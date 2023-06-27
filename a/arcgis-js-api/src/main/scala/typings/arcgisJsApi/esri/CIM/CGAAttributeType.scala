@@ -11,24 +11,24 @@ sealed trait CGAAttributeType extends StObject
 object CGAAttributeType extends StObject {
   
   /**
-    * Boolean - Attribute is a boolean
-    */
+  			 * Boolean - Attribute is a boolean
+  			 */
   @js.native
   sealed trait Boolean
     extends StObject
        with CGAAttributeType
   
   /**
-    * Float - Attribute is a numeric attribute that is a float value
-    */
+  			 * Float - Attribute is a numeric attribute that is a float value
+  			 */
   @js.native
   sealed trait Float
     extends StObject
        with CGAAttributeType
   
   /**
-    * String - Attribute is a string
-    */
+  			 * String - Attribute is a string
+  			 */
   @js.native
   sealed trait String
     extends StObject

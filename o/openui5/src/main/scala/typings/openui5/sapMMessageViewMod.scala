@@ -1,14 +1,11 @@
 package typings.openui5
 
 import typings.openui5.anon.AsyncDescriptionHandler
-import typings.openui5.anon.MessageTypeFilter
-import typings.openui5.anon.OpenBy
-import typings.openui5.anon.`18`
-import typings.openui5.anon.`19`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreLibraryMod.MessageType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -125,7 +122,7 @@ object sapMMessageViewMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Setter for default description and URL validation callbacks across all instances of MessageView
       */
@@ -152,7 +149,7 @@ object sapMMessageViewMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Attaches event handler `fnFunction` to the {@link #event:activeTitlePress activeTitlePress} event of
       * this `sap.m.MessageView`.
@@ -168,20 +165,20 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit]
     ): this.type = js.native
     def attachActiveTitlePress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Attaches event handler `fnFunction` to the {@link #event:activeTitlePress activeTitlePress} event of
       * this `sap.m.MessageView`.
@@ -202,7 +199,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit]
     ): this.type = js.native
     def attachActiveTitlePress(
       /**
@@ -213,7 +210,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -236,13 +233,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -269,7 +266,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -280,7 +277,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -301,13 +298,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -332,7 +329,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
@@ -343,7 +340,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -364,13 +361,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit]
     ): this.type = js.native
     def attachListSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -395,7 +392,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit]
     ): this.type = js.native
     def attachListSelect(
       /**
@@ -406,7 +403,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -428,13 +425,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLongtextLoaded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -460,7 +457,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLongtextLoaded(
       /**
@@ -471,7 +468,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -492,13 +489,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUrlValidated(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -523,7 +520,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUrlValidated(
       /**
@@ -534,7 +531,7 @@ object sapMMessageViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageView` itself
       */
@@ -556,7 +553,7 @@ object sapMMessageViewMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Detaches event handler `fnFunction` from the {@link #event:activeTitlePress activeTitlePress} event of
       * this `sap.m.MessageView`.
@@ -569,13 +566,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit]
     ): this.type = js.native
     def detachActiveTitlePress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewActiveTitlePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -595,13 +592,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewAfterOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -619,13 +616,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit]
     ): this.type = js.native
     def detachItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -643,13 +640,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit]
     ): this.type = js.native
     def detachListSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MessageViewListSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -668,13 +665,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLongtextLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -692,13 +689,13 @@ object sapMMessageViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachUrlValidated(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -706,61 +703,69 @@ object sapMMessageViewMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.58
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.58
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:activeTitlePress activeTitlePress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireActiveTitlePress(): this.type = js.native
-    def fireActiveTitlePress(/**
+    def fireActiveTitlePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: MessageView$ActiveTitlePressEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.72) - Use the appropriate event from the wrapper control, instead.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterOpen(): this.type = js.native
-    def fireAfterOpen(/**
+    def fireAfterOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: MessageView$AfterOpenEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemSelect(): this.type = js.native
-    def fireItemSelect(/**
+    def fireItemSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: MessageTypeFilter): this.type = js.native
+    mParameters: MessageView$ItemSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:listSelect listSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireListSelect(): this.type = js.native
-    def fireListSelect(/**
+    def fireListSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `19`): this.type = js.native
+    mParameters: MessageView$ListSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:longtextLoaded longtextLoaded} to attached listeners.
       *
@@ -773,7 +778,7 @@ object sapMMessageViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:urlValidated urlValidated} to attached listeners.
       *
@@ -984,23 +989,166 @@ object sapMMessageViewMod {
     bShowDetailsPageHeader: Boolean): this.type = js.native
   }
   
+  trait MessageView$ActiveTitlePressEventParameters extends StObject {
+    
+    /**
+      * Refers to the message item that contains the activeTitle.
+      */
+    var item: js.UndefOr[typings.openui5.sapMMessageItemMod.default] = js.undefined
+  }
+  object MessageView$ActiveTitlePressEventParameters {
+    
+    inline def apply(): MessageView$ActiveTitlePressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageView$ActiveTitlePressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageView$ActiveTitlePressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMMessageItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait MessageView$AfterOpenEventParameters extends StObject {
+    
+    /**
+      * This refers to the control which opens the popover.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object MessageView$AfterOpenEventParameters {
+    
+    inline def apply(): MessageView$AfterOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageView$AfterOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageView$AfterOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  trait MessageView$ItemSelectEventParameters extends StObject {
+    
+    /**
+      * Refers to the message item that is being presented.
+      */
+    var item: js.UndefOr[typings.openui5.sapMMessageItemMod.default] = js.undefined
+    
+    /**
+      * Refers to the type of messages being shown. See sap.ui.core.MessageType values for types.
+      */
+    var messageTypeFilter: js.UndefOr[
+        MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
+      ] = js.undefined
+  }
+  object MessageView$ItemSelectEventParameters {
+    
+    inline def apply(): MessageView$ItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageView$ItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageView$ItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMMessageItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setMessageTypeFilter(
+        value: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
+      ): Self = StObject.set(x, "messageTypeFilter", value.asInstanceOf[js.Any])
+      
+      inline def setMessageTypeFilterUndefined: Self = StObject.set(x, "messageTypeFilter", js.undefined)
+    }
+  }
+  
+  trait MessageView$ListSelectEventParameters extends StObject {
+    
+    /**
+      * This parameter refers to the type of messages being shown.
+      */
+    var messageTypeFilter: js.UndefOr[
+        MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
+      ] = js.undefined
+  }
+  object MessageView$ListSelectEventParameters {
+    
+    inline def apply(): MessageView$ListSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageView$ListSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageView$ListSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMessageTypeFilter(
+        value: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String)
+      ): Self = StObject.set(x, "messageTypeFilter", value.asInstanceOf[js.Any])
+      
+      inline def setMessageTypeFilterUndefined: Self = StObject.set(x, "messageTypeFilter", js.undefined)
+    }
+  }
+  
+  trait MessageView$LongtextLoadedEventParameters extends StObject
+  
+  trait MessageView$UrlValidatedEventParameters extends StObject
+  
+  type MessageViewActiveTitlePressEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$ActiveTitlePressEventParameters]
+  
+  type MessageViewActiveTitlePressEventParameters = MessageView$ActiveTitlePressEventParameters
+  
+  type MessageViewAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$AfterOpenEventParameters]
+  
+  type MessageViewAfterOpenEventParameters = MessageView$AfterOpenEventParameters
+  
+  type MessageViewItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$ItemSelectEventParameters]
+  
+  type MessageViewItemSelectEventParameters = MessageView$ItemSelectEventParameters
+  
+  type MessageViewListSelectEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$ListSelectEventParameters]
+  
+  type MessageViewListSelectEventParameters = MessageView$ListSelectEventParameters
+  
+  type MessageViewLongtextLoadedEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$LongtextLoadedEventParameters]
+  
+  type MessageViewLongtextLoadedEventParameters = MessageView$LongtextLoadedEventParameters
+  
   trait MessageViewSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Event fired when an activeTitle of a MessageItem is pressed.
       */
-    var activeTitlePress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var activeTitlePress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ActiveTitlePressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.72) - Use the appropriate event from the wrapper control, instead.
       *
       * Event fired after the popover is opened.
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$AfterOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Callback function for resolving a promise after description has been asynchronously loaded inside this
@@ -1033,7 +1181,12 @@ object sapMMessageViewMod {
     /**
       * Event fired when description is shown.
       */
-    var itemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * A list with message items. If only one item is provided, the initial page will be the details page for
@@ -1046,12 +1199,19 @@ object sapMMessageViewMod {
     /**
       * Event fired when one of the lists is shown when (not) filtered by type.
       */
-    var listSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var listSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ListSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event fired when the long text description data from a remote URL is loaded.
       */
-    var longtextLoaded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var longtextLoaded: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the header of details page will be shown.
@@ -1063,7 +1223,9 @@ object sapMMessageViewMod {
     /**
       * Event fired when a validation of a URL from long text description is ready.
       */
-    var urlValidated: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var urlValidated: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object MessageViewSettings {
     
@@ -1075,11 +1237,15 @@ object sapMMessageViewMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MessageViewSettings] (val x: Self) extends AnyVal {
       
-      inline def setActiveTitlePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "activeTitlePress", js.Any.fromFunction1(value))
+      inline def setActiveTitlePress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ActiveTitlePressEventParameters] => Unit
+      ): Self = StObject.set(x, "activeTitlePress", js.Any.fromFunction1(value))
       
       inline def setActiveTitlePressUndefined: Self = StObject.set(x, "activeTitlePress", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$AfterOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
@@ -1099,7 +1265,9 @@ object sapMMessageViewMod {
       
       inline def setHeaderButtonUndefined: Self = StObject.set(x, "headerButton", js.undefined)
       
-      inline def setItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
+      inline def setItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
       
       inline def setItemSelectUndefined: Self = StObject.set(x, "itemSelect", js.undefined)
       
@@ -1111,11 +1279,13 @@ object sapMMessageViewMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapMMessageItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setListSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "listSelect", js.Any.fromFunction1(value))
+      inline def setListSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MessageView$ListSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "listSelect", js.Any.fromFunction1(value))
       
       inline def setListSelectUndefined: Self = StObject.set(x, "listSelect", js.undefined)
       
-      inline def setLongtextLoaded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "longtextLoaded", js.Any.fromFunction1(value))
+      inline def setLongtextLoaded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "longtextLoaded", js.Any.fromFunction1(value))
       
       inline def setLongtextLoadedUndefined: Self = StObject.set(x, "longtextLoaded", js.undefined)
       
@@ -1123,9 +1293,13 @@ object sapMMessageViewMod {
       
       inline def setShowDetailsPageHeaderUndefined: Self = StObject.set(x, "showDetailsPageHeader", js.undefined)
       
-      inline def setUrlValidated(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "urlValidated", js.Any.fromFunction1(value))
+      inline def setUrlValidated(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "urlValidated", js.Any.fromFunction1(value))
       
       inline def setUrlValidatedUndefined: Self = StObject.set(x, "urlValidated", js.undefined)
     }
   }
+  
+  type MessageViewUrlValidatedEvent = typings.openui5.sapUiBaseEventMod.default[MessageView$UrlValidatedEventParameters]
+  
+  type MessageViewUrlValidatedEventParameters = MessageView$UrlValidatedEventParameters
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopsByCount extends StObject {
   
   /**
-    * Number of evenly spaced divisions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
-    */
+  		 * Number of evenly spaced divisions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
+  		 */
   var count: Double
   
   /**
-    * The time period to divide.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
-    */
+  		 * The time period to divide.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
+  		 */
   var timeExtent: js.UndefOr[TimeExtent] = js.undefined
 }
 object StopsByCount {

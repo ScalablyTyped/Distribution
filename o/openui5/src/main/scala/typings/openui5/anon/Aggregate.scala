@@ -25,7 +25,7 @@ trait Aggregate extends StObject {
   var aggregate: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * The number (as a positive integer) of different levels initially available without calling {@link sap.ui.model.odata.v4.Context#expand}
+    * The number (as a positive integer) of different levels initially available without calling {@link sap.ui.model.odata.v4.Context#expand }
     * (@experimental as of version 1.105.0), supported only if a `hierarchyQualifier` is given. Root nodes
     * are on the first level. By default, only root nodes are available; they are not yet expanded.
     */

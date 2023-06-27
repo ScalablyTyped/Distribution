@@ -172,6 +172,8 @@ object elements {
     
     var classes: js.UndefOr[Base] = js.undefined
     
+    var disableLink: js.UndefOr[Boolean] = js.undefined
+    
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var hideIcon: js.UndefOr[Boolean] = js.undefined
@@ -207,6 +209,10 @@ object elements {
       inline def setClasses(value: Base): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      
+      inline def setDisableLink(value: Boolean): Self = StObject.set(x, "disableLink", value.asInstanceOf[js.Any])
+      
+      inline def setDisableLinkUndefined: Self = StObject.set(x, "disableLink", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

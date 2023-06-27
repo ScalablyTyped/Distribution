@@ -13,14 +13,17 @@ open class FileSystemHandle ()
   extends StObject
      with typings.std.FileSystemHandle {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/isSameEntry) */
   /* standard dom */
   /* CompleteClass */
   override def isSameEntry(other: typings.std.FileSystemHandle): js.Promise[scala.Boolean] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/kind) */
   /* standard dom */
   /* CompleteClass */
   override val kind: FileSystemHandleKind = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native

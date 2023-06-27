@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiUx3ThingActionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `11` extends StObject {
   
   /**
-    * Selected ThingAction
+    * Optional scope for lookup of aliases for computed annotations (since 1.43.0)
     */
-  var action: js.UndefOr[default] = js.undefined
-  
-  /**
-    * Id of selected ThingAction
-    */
-  var id: js.UndefOr[String] = js.undefined
+  var scope: js.UndefOr[js.Object] = js.undefined
 }
 object `11` {
   
@@ -27,12 +21,8 @@ object `11` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `11`] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: default): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

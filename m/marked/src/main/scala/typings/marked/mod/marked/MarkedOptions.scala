@@ -50,8 +50,6 @@ trait MarkedOptions extends StObject {
   
   var silent: js.UndefOr[Boolean] = js.undefined
   
-  var smartLists: js.UndefOr[Boolean] = js.undefined
-  
   var smartypants: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -134,10 +132,6 @@ object MarkedOptions {
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-    
-    inline def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
-    
-    inline def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
     
     inline def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
     

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PausableWatchHandle extends StObject {
   
   /**
-    * Pauses the handle preventing changes to invoke the associated callback.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
-    */
+  		 * Pauses the handle preventing changes to invoke the associated callback.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
+  		 */
   def pause(): scala.Unit
   
   /**
-    * Removes the watch handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
-    */
+  		 * Removes the watch handle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
+  		 */
   def remove(): scala.Unit
   
   /**
-    * Resumes a paused the handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
-    */
+  		 * Resumes a paused the handle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#PausableWatchHandle)
+  		 */
   def resume(): scala.Unit
 }
 object PausableWatchHandle {

@@ -12,18 +12,18 @@ trait SceneFilter
      with Accessor {
   
   /**
-    * The geometries to apply to the spatial filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#geometries)
-    */
+  		 * The geometries to apply to the spatial filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#geometries)
+  		 */
   var geometries: Collection[Any] = js.native
   
   /**
-    * The type of masking to perform.
-    *
-    * @default "disjoint"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#spatialRelationship)
-    */
+  		 * The type of masking to perform.
+  		 *
+  		 * @default "disjoint"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#spatialRelationship)
+  		 */
   var spatialRelationship: disjoint | contains = js.native
 }

@@ -40,7 +40,6 @@ import typings.prestoClient.prestoClientStrings.tinyint
 import typings.prestoClient.prestoClientStrings.uuid
 import typings.prestoClient.prestoClientStrings.varbinary
 import typings.prestoClient.prestoClientStrings.varchar
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,22 +61,28 @@ object mod {
     /**
       * Stop query immediately.
       */
-    def kill(query_id: String, callback: js.Function1[/* error */ PrestoError | Null, Unit]): Unit = js.native
+    def kill(query_id: String, callback: js.Function1[/* error */ PrestoRequestError | Null, Unit]): Unit = js.native
     
-    def nodes(callback: js.Function2[/* error */ PrestoError | Null, /* data */ js.Array[Any], Unit]): Unit = js.native
+    def nodes(callback: js.Function2[/* error */ PrestoRequestError | Null, /* data */ js.Array[Any], Unit]): Unit = js.native
     /**
       * Get node list of presto cluster and return it.
       */
-    def nodes(opts: Null, callback: js.Function2[/* error */ PrestoError | Null, /* data */ js.Array[Any], Unit]): Unit = js.native
+    def nodes(
+      opts: Null,
+      callback: js.Function2[/* error */ PrestoRequestError | Null, /* data */ js.Array[Any], Unit]
+    ): Unit = js.native
     def nodes(
       opts: Record[String, scala.Nothing],
-      callback: js.Function2[/* error */ PrestoError | Null, /* data */ js.Array[Any], Unit]
+      callback: js.Function2[/* error */ PrestoRequestError | Null, /* data */ js.Array[Any], Unit]
     ): Unit = js.native
     
     /**
       * Get query current status.
       */
-    def query(query_id: String, callback: js.Function2[/* error */ PrestoError | Null, /* data */ Any, Unit]): Unit = js.native
+    def query(
+      query_id: String,
+      callback: js.Function2[/* error */ PrestoRequestError | Null, /* data */ Any, Unit]
+    ): Unit = js.native
   }
   
   trait ClientOptions extends StObject {
@@ -254,32 +259,196 @@ object mod {
     }
   }
   
-  trait PrestoError
-    extends StObject
-       with Error {
+  trait ErrorLocation extends StObject {
     
-    var code: js.UndefOr[Double] = js.undefined
+    var columnNumber: Double
     
-    // This will be set in the case of recasting an error
-    var error: js.UndefOr[js.Error] = js.undefined
+    var lineNumber: Double
   }
-  object PrestoError {
+  object ErrorLocation {
     
-    inline def apply(message: String, name: String): PrestoError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PrestoError]
+    inline def apply(columnNumber: Double, lineNumber: Double): ErrorLocation = {
+      val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ErrorLocation]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PrestoError] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ErrorLocation] (val x: Self) extends AnyVal {
+      
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FailureInfo extends StObject {
+    
+    var cause: js.UndefOr[FailureInfo] = js.undefined
+    
+    var errorLocation: js.UndefOr[ErrorLocation] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
+    
+    var stack: js.Array[String]
+    
+    var suppressed: js.Array[FailureInfo]
+    
+    var `type`: String
+  }
+  object FailureInfo {
+    
+    inline def apply(stack: js.Array[String], suppressed: js.Array[FailureInfo], `type`: String): FailureInfo = {
+      val __obj = js.Dynamic.literal(stack = stack.asInstanceOf[js.Any], suppressed = suppressed.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FailureInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailureInfo] (val x: Self) extends AnyVal {
+      
+      inline def setCause(value: FailureInfo): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      
+      inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+      
+      inline def setErrorLocation(value: ErrorLocation): Self = StObject.set(x, "errorLocation", value.asInstanceOf[js.Any])
+      
+      inline def setErrorLocationUndefined: Self = StObject.set(x, "errorLocation", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value*))
+      
+      inline def setSuppressed(value: js.Array[FailureInfo]): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
+      
+      inline def setSuppressedVarargs(value: FailureInfo*): Self = StObject.set(x, "suppressed", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.prestoClient.mod.PrestoRequestError
+    - typings.prestoClient.mod.PrestoQueryError
+  */
+  trait PrestoError extends StObject
+  object PrestoError {
+    
+    inline def PrestoQueryError(message: String): typings.prestoClient.mod.PrestoQueryError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.prestoClient.mod.PrestoQueryError]
+    }
+    
+    inline def PrestoRequestError(message: String): typings.prestoClient.mod.PrestoRequestError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.prestoClient.mod.PrestoRequestError]
+    }
+  }
+  
+  trait PrestoQueryError
+    extends StObject
+       with PrestoError {
+    
+    // This property is meant to be named `retriable`, but is serialized incorrectly as `boolean`
+    // see https://github.com/prestodb/presto/pull/19741
+    var boolean: js.UndefOr[Boolean] = js.undefined
+    
+    var errorCode: js.UndefOr[Double] = js.undefined
+    
+    var errorLocation: js.UndefOr[ErrorLocation] = js.undefined
+    
+    var errorName: js.UndefOr[String] = js.undefined
+    
+    var errorType: js.UndefOr[String] = js.undefined
+    
+    var failureInfo: js.UndefOr[FailureInfo] = js.undefined
+    
+    var message: String
+    
+    var sqlState: js.UndefOr[String] = js.undefined
+  }
+  object PrestoQueryError {
+    
+    inline def apply(message: String): PrestoQueryError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PrestoQueryError]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrestoQueryError] (val x: Self) extends AnyVal {
+      
+      inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      
+      inline def setErrorLocation(value: ErrorLocation): Self = StObject.set(x, "errorLocation", value.asInstanceOf[js.Any])
+      
+      inline def setErrorLocationUndefined: Self = StObject.set(x, "errorLocation", js.undefined)
+      
+      inline def setErrorName(value: String): Self = StObject.set(x, "errorName", value.asInstanceOf[js.Any])
+      
+      inline def setErrorNameUndefined: Self = StObject.set(x, "errorName", js.undefined)
+      
+      inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+      
+      inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+      
+      inline def setFailureInfo(value: FailureInfo): Self = StObject.set(x, "failureInfo", value.asInstanceOf[js.Any])
+      
+      inline def setFailureInfoUndefined: Self = StObject.set(x, "failureInfo", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setSqlState(value: String): Self = StObject.set(x, "sqlState", value.asInstanceOf[js.Any])
+      
+      inline def setSqlStateUndefined: Self = StObject.set(x, "sqlState", js.undefined)
+    }
+  }
+  
+  trait PrestoRequestError
+    extends StObject
+       with PrestoError {
+    
+    var code: js.UndefOr[Double] = js.undefined
+    
+    // https://github.com/tagomoris/presto-client-node/blob/42a7ca05220a8b6476c68dbecb1a510ed1be5139/lib/presto-client/index.js#L268
+    var data: js.UndefOr[Any] = js.undefined
+    
+    // This will be set in the case of recasting an error
+    var error: js.UndefOr[PrestoQueryError] = js.undefined
+    
+    var message: String
+  }
+  object PrestoRequestError {
+    
+    inline def apply(message: String): PrestoRequestError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PrestoRequestError]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrestoRequestError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setError(value: PrestoQueryError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,14 +470,14 @@ object mod {
     /**
       * Called once when columns and its types are found in results
       */
-    var columns: js.UndefOr[js.Function2[/* error */ PrestoError | Null, /* data */ js.Array[Column], Unit]] = js.undefined
+    var columns: js.UndefOr[js.Function2[/* error */ Null, /* data */ js.Array[Column], Unit]] = js.undefined
     
     /**
       * Called per fetch of query results (may be called 2 or more)
       */
     var data: js.UndefOr[
         js.Function4[
-          /* error */ PrestoError | Null, 
+          /* error */ Null, 
           /* data */ js.Array[js.Array[Any]], 
           /* columns */ js.Array[Column], 
           /* stats */ RuntimeStats, 
@@ -344,15 +513,13 @@ object mod {
       * Called when query stats changed
       */
     var state: js.UndefOr[
-        js.Function3[/* error */ PrestoError | Null, /* query_id */ String, /* stats */ RuntimeStats, Unit]
+        js.Function3[/* error */ Null, /* query_id */ String, /* stats */ RuntimeStats, Unit]
       ] = js.undefined
     
     /**
       * Called once when all results are fetched
       */
-    var success: js.UndefOr[
-        js.Function3[/* error */ PrestoError | Null, /* stats */ RuntimeStats, /* info */ Any, Unit]
-      ] = js.undefined
+    var success: js.UndefOr[js.Function3[/* error */ Null, /* stats */ RuntimeStats, /* info */ Any, Unit]] = js.undefined
     
     var timezone: js.UndefOr[String] = js.undefined
     
@@ -380,12 +547,12 @@ object mod {
       
       inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
       
-      inline def setColumns(value: (/* error */ PrestoError | Null, /* data */ js.Array[Column]) => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction2(value))
+      inline def setColumns(value: (/* error */ Null, /* data */ js.Array[Column]) => Unit): Self = StObject.set(x, "columns", js.Any.fromFunction2(value))
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
       inline def setData(
-        value: (/* error */ PrestoError | Null, /* data */ js.Array[js.Array[Any]], /* columns */ js.Array[Column], /* stats */ RuntimeStats) => Unit
+        value: (/* error */ Null, /* data */ js.Array[js.Array[Any]], /* columns */ js.Array[Column], /* stats */ RuntimeStats) => Unit
       ): Self = StObject.set(x, "data", js.Any.fromFunction4(value))
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -418,11 +585,11 @@ object mod {
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setState(value: (/* error */ PrestoError | Null, /* query_id */ String, /* stats */ RuntimeStats) => Unit): Self = StObject.set(x, "state", js.Any.fromFunction3(value))
+      inline def setState(value: (/* error */ Null, /* query_id */ String, /* stats */ RuntimeStats) => Unit): Self = StObject.set(x, "state", js.Any.fromFunction3(value))
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setSuccess(value: (/* error */ PrestoError | Null, /* stats */ RuntimeStats, /* info */ Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* error */ Null, /* stats */ RuntimeStats, /* info */ Any) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       

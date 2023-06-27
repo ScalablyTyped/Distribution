@@ -13,24 +13,24 @@ trait MediaLayer
      with BlendLayer {
   
   /**
-    * Copyright information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#copyright)
-    */
+  		 * Copyright information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#copyright)
+  		 */
   var copyright: String = js.native
   
   /**
-    * The source for the MediaLayer that will be displayed on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
-    */
+  		 * The source for the MediaLayer that will be displayed on the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
+  		 */
   var source: ImageElement | VideoElement | LocalMediaElementSource = js.native
   
   /**
-    * The spatial reference of the layer and defines the spatial reference of the layer's [fullExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#fullExtent).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer and defines the spatial reference of the layer's [fullExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#fullExtent).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#spatialReference)
+  		 */
   var spatialReference: SpatialReference = js.native
   
   @JSName("type")

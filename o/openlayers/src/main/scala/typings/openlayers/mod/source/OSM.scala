@@ -34,7 +34,6 @@ object OSM {
   /**
     * The attribution containing a link to the OpenStreetMap Copyright and License
     * page.
-    * @const
     * @api
     */
   /* static member */

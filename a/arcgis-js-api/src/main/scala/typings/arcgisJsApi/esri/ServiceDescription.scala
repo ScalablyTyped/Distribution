@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDescription extends StObject {
   
   /**
-    * Server version.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
-    */
+  		 * Server version.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
+  		 */
   var currentVersion: Double
   
   /**
-    * Default travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
-    */
+  		 * Default travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
+  		 */
   var defaultTravelMode: TravelMode
   
   /**
-    * Available travel modes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
-    */
+  		 * Available travel modes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#ServiceDescription)
+  		 */
   var supportedTravelModes: js.Array[TravelMode]
 }
 object ServiceDescription {

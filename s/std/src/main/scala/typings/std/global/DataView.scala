@@ -2,6 +2,7 @@ package typings.std.global
 
 import typings.std.ArrayBufferLike
 import typings.std.DataViewConstructor
+import typings.std.anon.BYTESPERELEMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,10 @@ open class DataView protected ()
   extends StObject
      with typings.std.DataView {
   /* standard es5 */
-  def this(buffer: ArrayBufferLike) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Double, byteLength: Double) = this()
-  def this(buffer: ArrayBufferLike, byteOffset: Unit, byteLength: Double) = this()
+  def this(buffer: ArrayBufferLike & BYTESPERELEMENT) = this()
+  def this(buffer: ArrayBufferLike & BYTESPERELEMENT, byteOffset: Double) = this()
+  def this(buffer: ArrayBufferLike & BYTESPERELEMENT, byteOffset: Double, byteLength: Double) = this()
+  def this(buffer: ArrayBufferLike & BYTESPERELEMENT, byteOffset: Unit, byteLength: Double) = this()
 }
 object DataView {
   

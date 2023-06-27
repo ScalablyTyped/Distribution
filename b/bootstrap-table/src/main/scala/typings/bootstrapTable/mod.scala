@@ -89,6 +89,8 @@ object mod {
     
     var switchable: js.UndefOr[Boolean] = js.undefined
     
+    var switchableLabel: js.UndefOr[String] = js.undefined
+    
     var title: js.UndefOr[Any] = js.undefined
     
     var titleTooltip: js.UndefOr[Any] = js.undefined
@@ -216,6 +218,10 @@ object mod {
       inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
       
       inline def setSwitchable(value: Boolean): Self = StObject.set(x, "switchable", value.asInstanceOf[js.Any])
+      
+      inline def setSwitchableLabel(value: String): Self = StObject.set(x, "switchableLabel", value.asInstanceOf[js.Any])
+      
+      inline def setSwitchableLabelUndefined: Self = StObject.set(x, "switchableLabel", js.undefined)
       
       inline def setSwitchableUndefined: Self = StObject.set(x, "switchable", js.undefined)
       

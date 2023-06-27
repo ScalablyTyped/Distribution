@@ -11,10 +11,10 @@ object esriAnalysisDimensionSimpleStyleMod {
   @JSImport("esri/analysis/DimensionSimpleStyle", JSImport.Namespace)
   @js.native
   /**
-    * Style that specifies how dimensions and their labels are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html)
-    */
+  		 * Style that specifies how dimensions and their labels are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html)
+  		 */
   open class ^ ()
     extends StObject
        with DimensionSimpleStyle {

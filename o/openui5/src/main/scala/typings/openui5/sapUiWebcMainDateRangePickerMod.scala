@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Valid
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
@@ -161,13 +160,13 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.DateRangePicker` itself
       */
@@ -192,7 +191,7 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -203,7 +202,7 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.DateRangePicker` itself
       */
@@ -224,13 +223,13 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit]
     ): this.type = js.native
     def attachInput(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.DateRangePicker` itself
       */
@@ -255,7 +254,7 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit]
     ): this.type = js.native
     def attachInput(
       /**
@@ -266,7 +265,7 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.DateRangePicker` itself
       */
@@ -289,13 +288,13 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -313,13 +312,13 @@ object sapUiWebcMainDateRangePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit]
     ): this.type = js.native
     def detachInput(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateRangePickerInputEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -327,7 +326,7 @@ object sapUiWebcMainDateRangePickerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -337,13 +336,15 @@ object sapUiWebcMainDateRangePickerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireChange(): Boolean = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Valid): Boolean = js.native
+    mParameters: DateRangePicker$ChangeEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:input input} to attached listeners.
       *
@@ -353,10 +354,12 @@ object sapUiWebcMainDateRangePickerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireInput(): Boolean = js.native
-    def fireInput(/**
+    def fireInput(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Valid): Boolean = js.native
+    mParameters: DateRangePicker$InputEventParameters
+    ): Boolean = js.native
     
     /**
       * Formats a Java Script date object into a string representing a locale date according to the `formatPattern`
@@ -377,8 +380,7 @@ object sapUiWebcMainDateRangePickerMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -981,6 +983,78 @@ object sapUiWebcMainDateRangePickerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait DateRangePicker$ChangeEventParameters extends StObject {
+    
+    /**
+      * Indicator if the value is in correct format pattern and in valid range.
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The submitted value.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DateRangePicker$ChangeEventParameters {
+    
+    inline def apply(): DateRangePicker$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DateRangePicker$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePicker$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait DateRangePicker$InputEventParameters extends StObject {
+    
+    /**
+      * Indicator if the value is in correct format pattern and in valid range.
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The submitted value.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DateRangePicker$InputEventParameters {
+    
+    inline def apply(): DateRangePicker$InputEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DateRangePicker$InputEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePicker$InputEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DateRangePickerChangeEvent = typings.openui5.sapUiBaseEventMod.default[DateRangePicker$ChangeEventParameters]
+  
+  type DateRangePickerChangeEventParameters = DateRangePicker$ChangeEventParameters
+  
+  type DateRangePickerInputEvent = typings.openui5.sapUiBaseEventMod.default[DateRangePicker$InputEventParameters]
+  
+  type DateRangePickerInputEventParameters = DateRangePicker$InputEventParameters
+  
   trait DateRangePickerSettings
     extends StObject
        with ControlSettings {
@@ -998,7 +1072,12 @@ object sapUiWebcMainDateRangePickerMod {
     /**
       * Fired when the input operation has finished by pressing Enter or on focusout.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateRangePicker$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the symbol which separates the dates. If not supplied, the default time interval delimiter
@@ -1034,7 +1113,12 @@ object sapUiWebcMainDateRangePickerMod {
     /**
       * Fired when the value of the component is changed at each key stroke.
       */
-    var input: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var input: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateRangePicker$InputEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the maximum date available for selection.
@@ -1150,7 +1234,9 @@ object sapUiWebcMainDateRangePickerMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateRangePicker$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1170,7 +1256,9 @@ object sapUiWebcMainDateRangePickerMod {
       
       inline def setHideWeekNumbersUndefined: Self = StObject.set(x, "hideWeekNumbers", js.undefined)
       
-      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
+      inline def setInput(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateRangePicker$InputEventParameters] => Unit
+      ): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       

@@ -4,17 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives. */
+/**
+  * Basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto)
+  */
 trait Crypto extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/getRandomValues) */
   /* standard dom */
   def getRandomValues[T /* <: js.typedarray.ArrayBufferView | Null */](array: T): T
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/randomUUID)
+    */
   /* standard dom */
   def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/subtle)
+    */
   /* standard dom */
   val subtle: SubtleCrypto
 }

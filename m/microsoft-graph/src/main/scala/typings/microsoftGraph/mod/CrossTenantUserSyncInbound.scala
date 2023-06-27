@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CrossTenantUserSyncInbound extends StObject {
   
+  /**
+    * Defines whether user objects should be synchronized from the partner tenant. false causes any current user
+    * synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who
+    * have already been synchronized.
+    */
   var isSyncAllowed: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object CrossTenantUserSyncInbound {

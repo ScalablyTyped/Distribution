@@ -8,7 +8,9 @@ trait EncodedAudioChunk extends StObject {
   
   val byteLength: Double
   
-  def copyTo(destination: AllowSharedBufferSource): Unit
+  def copyTo(
+    destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+  ): Unit
   
   val duration: Double | Null
   
@@ -20,7 +22,7 @@ object EncodedAudioChunk {
   
   inline def apply(
     byteLength: Double,
-    copyTo: AllowSharedBufferSource => Unit,
+    copyTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any => Unit,
     timestamp: Double,
     `type`: EncodedAudioChunkType
   ): EncodedAudioChunk = {
@@ -34,7 +36,9 @@ object EncodedAudioChunk {
     
     inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
-    inline def setCopyTo(value: AllowSharedBufferSource => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
+    inline def setCopyTo(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any => Unit
+    ): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

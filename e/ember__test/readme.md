@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__test
 
-Typings are for version 3.16
+Typings are for version 4.0
 
 
 

@@ -54,6 +54,8 @@ inline def EditAbility_=(x: EditAbility): Unit = ^.asInstanceOf[js.Dynamic].upda
 
 inline def EventSystem_=(x: EventSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EventSystem")(x.asInstanceOf[js.Any])
 
+inline def FlexLayout_=(x: FlexLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FlexLayout")(x.asInstanceOf[js.Any])
+
 inline def GroupStore_=(x: GroupStore): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupStore")(x.asInstanceOf[js.Any])
 
 inline def Group_=(x: Group): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
@@ -83,6 +85,8 @@ inline def RenderStack_=(x: RenderStack): Unit = ^.asInstanceOf[js.Dynamic].upda
 inline def ResizeArea_=(x: ResizeArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResizeArea")(x.asInstanceOf[js.Any])
 
 inline def SelectionModel_=(x: SelectionModel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectionModel")(x.asInstanceOf[js.Any])
+
+inline def Settings_=(x: Settings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Settings")(x.asInstanceOf[js.Any])
 
 inline def SingleRender_=(x: SingleRender): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleRender")(x.asInstanceOf[js.Any])
 
@@ -126,7 +130,7 @@ inline def _empty(id: HTMLElement): baseview = ^.asInstanceOf[js.Dynamic].applyD
 
 inline def ajax(): Ajax = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")().asInstanceOf[Ajax]
 inline def ajax(url: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-inline def ajax(url: String, params: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def ajax(url: String, params: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
 inline def alert(text: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 inline def alert(text: String, `type`: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
@@ -169,7 +173,8 @@ inline def confirm(text: obj, `type`: Unit, callback: WebixCallback): js.Promise
 inline def confirm(text: obj, `type`: WebixCallback): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def confirm(text: obj, `type`: WebixCallback, callback: WebixCallback): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
-inline def copy(source: obj): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any]).asInstanceOf[obj]
+inline def copy(source: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def copy(source: obj): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def csv_=(x: typings.webix.webix.csv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("csv")(x.asInstanceOf[js.Any])
 
@@ -199,8 +204,8 @@ inline def eventRemove(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynam
 
 inline def exec(code: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(code.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def extend(target: obj, source: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def extend(target: obj, source: obj, overwrite: Boolean): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], overwrite.asInstanceOf[js.Any])).asInstanceOf[obj]
+inline def extend[T, S](target: T, source: S): T & S = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & S]
+inline def extend[T, S](target: T, source: S, overwrite: Boolean): T & S = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], overwrite.asInstanceOf[js.Any])).asInstanceOf[T & S]
 
 inline def fullscreen_=(x: typings.webix.webix.fullscreen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullscreen")(x.asInstanceOf[js.Any])
 
@@ -275,33 +280,33 @@ inline def stringify(obj: obj): String = ^.asInstanceOf[js.Dynamic].applyDynamic
 
 inline def template(template: String): WebixCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(template.asInstanceOf[js.Any]).asInstanceOf[WebixCallback]
 
-inline def toCSV(id: String): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toCSV(id: String, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toCSV(id: obj): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toCSV(id: obj, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
+inline def toCSV(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toCSV(id: String, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toCSV(id: obj): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toCSV(id: obj, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCSV")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
-inline def toExcel(id: String): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toExcel(id: String, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toExcel(id: obj): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toExcel(id: obj, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
+inline def toExcel(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toExcel(id: String, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toExcel(id: obj): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toExcel(id: obj, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toExcel")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
 inline def toFunctor(name: String): WebixCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunctor")(name.asInstanceOf[js.Any]).asInstanceOf[WebixCallback]
 
 inline def toNode(id: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(id.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 
-inline def toPDF(id: String): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toPDF(id: String, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toPDF(id: js.Array[Any]): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toPDF(id: js.Array[Any], options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toPDF(id: obj): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toPDF(id: obj, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
+inline def toPDF(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toPDF(id: String, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toPDF(id: js.Array[Any]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toPDF(id: js.Array[Any], options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toPDF(id: obj): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toPDF(id: obj, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
-inline def toPNG(id: String): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toPNG(id: String, options: String): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toPNG(id: String, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toPNG(id: obj): obj = ^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any]).asInstanceOf[obj]
-inline def toPNG(id: obj, options: String): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
-inline def toPNG(id: obj, options: obj): obj = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[obj]
+inline def toPNG(id: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toPNG(id: String, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toPNG(id: String, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toPNG(id: obj): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def toPNG(id: obj, options: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+inline def toPNG(id: obj, options: obj): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPNG")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
 inline def `type`(obj: obj, data: obj): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

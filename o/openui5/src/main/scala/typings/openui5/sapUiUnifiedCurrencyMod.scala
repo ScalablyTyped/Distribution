@@ -139,7 +139,7 @@ object sapUiUnifiedCurrencyMod {
     def getCurrencySymbol(): String = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -168,7 +168,7 @@ object sapUiUnifiedCurrencyMod {
     def getMaxPrecision(): int = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getStringValue stringValue}.
       *
@@ -207,7 +207,7 @@ object sapUiUnifiedCurrencyMod {
     def getValue(): float = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -228,7 +228,7 @@ object sapUiUnifiedCurrencyMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getStringValue stringValue}.
       *
@@ -264,7 +264,7 @@ object sapUiUnifiedCurrencyMod {
     var currency: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */
@@ -276,7 +276,7 @@ object sapUiUnifiedCurrencyMod {
     var maxPrecision: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines the currency value as a string.
       *

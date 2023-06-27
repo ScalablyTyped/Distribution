@@ -5,6 +5,7 @@ import typings.sentryTypes.typesClientreportMod.ClientReport
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesReplayMod.ReplayEvent
 import typings.sentryTypes.typesReplayMod.ReplayRecordingData
+import typings.sentryTypes.typesSessionMod.SerializedSession
 import typings.sentryTypes.typesSessionMod.Session
 import typings.sentryTypes.typesSessionMod.SessionAggregates
 import typings.sentryTypes.typesUserMod.UserFeedback
@@ -51,6 +52,8 @@ type ReplayRecordingItem = BaseEnvelopeItem[ReplayRecordingItemHeaders, ReplayRe
 
 type SessionEnvelope = BaseEnvelope[SessionEnvelopeHeaders, SessionItem]
 
-type SessionItem = BaseEnvelopeItem[SessionAggregatesItemHeaders | SessionItemHeaders, Session | SessionAggregates]
+type SessionItem = BaseEnvelopeItem[
+SessionAggregatesItemHeaders | SessionItemHeaders, 
+SerializedSession | Session | SessionAggregates]
 
 type UserFeedbackItem = BaseEnvelopeItem[UserFeedbackItemHeaders, UserFeedback]

@@ -11,9 +11,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var clientCustom: MediaControllerAbilitySupport
   
@@ -32,9 +32,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var mode360: MediaControllerAbilitySupport
   
@@ -48,9 +48,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var playbackPosition: MediaControllerAbilitySupport
   
@@ -59,9 +59,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var playlist: MediaControllerAbilitySupport
   
@@ -70,9 +70,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var repeat: MediaControllerAbilitySupport
   
@@ -81,9 +81,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var search: MediaControllerAbilitySupport
   
@@ -92,9 +92,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is UNDECIDED.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var shuffle: MediaControllerAbilitySupport
   
@@ -103,9 +103,9 @@ trait MediaControllerAbilities extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
-    * @throw WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if set value will not be compatible with MediaControllerAbilitySupport enum.
+    * @throws WebAPIException with error type InvalidValuesError, if set value will be "UNDECIDED".
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var subtitles: MediaControllerAbilitySupport
 }

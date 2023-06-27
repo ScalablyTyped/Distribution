@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-inspector
 
-Typings are for version 6.0.1
+Typings are for version 6.0.2
 
 ## Library description:
 Power of Browser DevTools inspectors right inside your React app

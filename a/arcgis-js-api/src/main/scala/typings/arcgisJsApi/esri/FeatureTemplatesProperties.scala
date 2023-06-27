@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.FeatureLayerPropertiestyp
+import typings.arcgisJsApi.anon.GeoJSONLayerPropertiestyp
+import typings.arcgisJsApi.anon.SceneLayerPropertiestypes
+import typings.arcgisJsApi.anon.SubtypeGroupLayerProperti
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,63 +13,67 @@ trait FeatureTemplatesProperties
      with WidgetProperties {
   
   /**
-    * Specifies whether or not the list should be forced to scroll within its containing element
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#enableListScroll)
-    */
+  		 * Specifies whether or not the list should be forced to scroll within its containing element
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#enableListScroll)
+  		 */
   var enableListScroll: js.UndefOr[scala.Unit] = js.undefined
   
   /**
-    * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction)
-    */
+  		 * [Function](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#FilterFunction) can be defined to help filter [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction)
+  		 */
   var filterFunction: js.UndefOr[FilterFunction] = js.undefined
   
   /**
-    * Text used to filter items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterText)
-    */
+  		 * Text used to filter items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterText)
+  		 */
   var filterText: js.UndefOr[String] = js.undefined
   
   /**
-    * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
-    *
-    * @default layer
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#groupBy)
-    */
+  		 * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
+  		 *
+  		 * @default layer
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#groupBy)
+  		 */
   var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
   
   /**
-    * Indicates the heading level to use for the labels of grouped feature templates.
-    *
-    * @default 4
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#headingLevel)
-    */
+  		 * Indicates the heading level to use for the labels of grouped feature templates.
+  		 *
+  		 * @default 4
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#headingLevel)
+  		 */
   var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) to display within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#layers)
-    */
-  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.undefined
+  		 * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) to display within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#layers)
+  		 */
+  var layers: js.UndefOr[
+    js.Array[
+      FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | SceneLayerPropertiestypes | typings.arcgisJsApi.anon.SubtypeSublayerProperties | SubtypeGroupLayerProperti
+    ]
+  ] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[FeatureTemplatesViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[FeatureTemplatesVisibleElements] = js.undefined
 }
 object FeatureTemplatesProperties {
@@ -100,11 +108,17 @@ object FeatureTemplatesProperties {
     
     inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
     
-    inline def setLayers(value: js.Array[FeatureLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(
+      value: js.Array[
+          FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | SceneLayerPropertiestypes | typings.arcgisJsApi.anon.SubtypeSublayerProperties | SubtypeGroupLayerProperti
+        ]
+    ): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: FeatureLayerProperties*): Self = StObject.set(x, "layers", js.Array(value*))
+    inline def setLayersVarargs(
+      value: (FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | SceneLayerPropertiestypes | typings.arcgisJsApi.anon.SubtypeSublayerProperties | SubtypeGroupLayerProperti)*
+    ): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setViewModel(value: FeatureTemplatesViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

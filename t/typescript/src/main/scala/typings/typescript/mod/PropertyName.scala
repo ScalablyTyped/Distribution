@@ -11,4 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.ComputedPropertyName
   - typings.typescript.mod.PrivateIdentifier
 */
-trait PropertyName extends StObject
+trait PropertyName
+  extends StObject
+     with DeclarationName

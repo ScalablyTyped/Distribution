@@ -10,72 +10,72 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShadowCastViewModelProperties extends StObject {
   
   /**
-    * The calendar date used to calculate the shadow cast.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)
-    */
+  		 * The calendar date used to calculate the shadow cast.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)
+  		 */
   var date: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "discrete".
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
-    */
+  		 * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "discrete".
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#discreteOptions)
+  		 */
   var discreteOptions: js.UndefOr[ShadowCastViewModelDiscreteOptionsProperties] = js.undefined
   
   /**
-    * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "duration".
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
-    */
+  		 * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "duration".
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
+  		 */
   var durationOptions: js.UndefOr[ShadowCastViewModelDurationOptionsProperties] = js.undefined
   
   /**
-    * Time (in milliseconds from midnight of the [date](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)) when the shadow cast computation should stop.
-    *
-    * @default 16 * 3600 * 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#endTimeOfDay)
-    */
+  		 * Time (in milliseconds from midnight of the [date](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)) when the shadow cast computation should stop.
+  		 *
+  		 * @default 16 * 3600 * 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#endTimeOfDay)
+  		 */
   var endTimeOfDay: js.UndefOr[Double] = js.undefined
   
   /**
-    * Time (in milliseconds from midnight of the [date](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)) when the shadow cast computation should start.
-    *
-    * @default 10 * 3600 * 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#startTimeOfDay)
-    */
+  		 * Time (in milliseconds from midnight of the [date](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#date)) when the shadow cast computation should start.
+  		 *
+  		 * @default 10 * 3600 * 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#startTimeOfDay)
+  		 */
   var startTimeOfDay: js.UndefOr[Double] = js.undefined
   
   /**
-    * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "threshold".
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
-    */
+  		 * The configuration used when the widget's [visualizationType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType) is set to "threshold".
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
+  		 */
   var thresholdOptions: js.UndefOr[ShadowCastViewModelThresholdOptionsProperties] = js.undefined
   
   /**
-    * The difference in hours between UTC time and the times displayed in the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#utcOffset)
-    */
+  		 * The difference in hours between UTC time and the times displayed in the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#utcOffset)
+  		 */
   var utcOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#view)
-    */
+  		 * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
-    * Type of visualization to use when showing the shadows.
-    *
-    * @default "threshold"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType)
-    */
+  		 * Type of visualization to use when showing the shadows.
+  		 *
+  		 * @default "threshold"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#visualizationType)
+  		 */
   var visualizationType: js.UndefOr[threshold | duration | discrete] = js.undefined
 }
 object ShadowCastViewModelProperties {

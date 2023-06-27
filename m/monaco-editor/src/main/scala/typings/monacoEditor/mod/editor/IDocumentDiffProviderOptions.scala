@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDocumentDiffProviderOptions extends StObject {
   
   /**
-    * When set to true, the diff should ignore whitespace changes.i
+    * When set to true, the diff should ignore whitespace changes.
     */
   var ignoreTrimWhitespace: Boolean
   

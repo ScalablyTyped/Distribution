@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation__routers
 
-Typings are for version 6.1.8
+Typings are for version 6.1.9
 
 ## Library description:
 Routers to help build custom navigators

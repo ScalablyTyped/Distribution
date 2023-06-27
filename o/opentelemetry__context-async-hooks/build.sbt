@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "opentelemetry__context-async-hooks"
-version := "1.13.0-787374"
+version := "1.14.0-fdaf56"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "opentelemetry__api" % "1.4.1-453de8",
-  "org.scalablytyped" %%% "std" % "5.0-e63739")
+  "org.scalablytyped" %%% "opentelemetry__api" % "1.4.1-8ae1f7",
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

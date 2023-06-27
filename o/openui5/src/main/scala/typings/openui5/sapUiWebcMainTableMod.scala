@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PoppedColumns
-import typings.openui5.anon.PreviouslySelectedRows
-import typings.openui5.anon.`15`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -13,6 +10,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.ITableColumn
 import typings.openui5.sapUiWebcMainLibraryMod.ITableRow
 import typings.openui5.sapUiWebcMainLibraryMod.TableGrowingMode
 import typings.openui5.sapUiWebcMainLibraryMod.TableMode
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -185,13 +183,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadMore(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -220,7 +218,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadMore(
       /**
@@ -231,7 +229,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -252,13 +250,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit]
     ): this.type = js.native
     def attachPopinChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -283,7 +281,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit]
     ): this.type = js.native
     def attachPopinChange(
       /**
@@ -294,7 +292,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -315,13 +313,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit]
     ): this.type = js.native
     def attachRowClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -346,7 +344,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit]
     ): this.type = js.native
     def attachRowClick(
       /**
@@ -357,7 +355,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -379,13 +377,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -411,7 +409,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -422,7 +420,7 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Table` itself
       */
@@ -454,13 +452,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLoadMore(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -478,13 +476,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit]
     ): this.type = js.native
     def detachPopinChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -502,13 +500,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit]
     ): this.type = js.native
     def detachRowClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableRowClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -527,13 +525,13 @@ object sapUiWebcMainTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -541,7 +539,7 @@ object sapUiWebcMainTableMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loadMore loadMore} to attached listeners.
       *
@@ -554,7 +552,7 @@ object sapUiWebcMainTableMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:popinChange popinChange} to attached listeners.
       *
@@ -564,10 +562,10 @@ object sapUiWebcMainTableMod {
     def firePopinChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: PoppedColumns): this.type = js.native
+    mParameters: Table$PopinChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:rowClick rowClick} to attached listeners.
       *
@@ -577,20 +575,22 @@ object sapUiWebcMainTableMod {
     def fireRowClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: `15`): this.type = js.native
+    mParameters: Table$RowClickEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PreviouslySelectedRows): this.type = js.native
+    mParameters: Table$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -602,8 +602,7 @@ object sapUiWebcMainTableMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -1159,6 +1158,108 @@ object sapUiWebcMainTableMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Table$LoadMoreEventParameters extends StObject
+  
+  trait Table$PopinChangeEventParameters extends StObject {
+    
+    /**
+      * popped-in columns.
+      */
+    var poppedColumns: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Table$PopinChangeEventParameters {
+    
+    inline def apply(): Table$PopinChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$PopinChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$PopinChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPoppedColumns(value: js.Array[Any]): Self = StObject.set(x, "poppedColumns", value.asInstanceOf[js.Any])
+      
+      inline def setPoppedColumnsUndefined: Self = StObject.set(x, "poppedColumns", js.undefined)
+      
+      inline def setPoppedColumnsVarargs(value: Any*): Self = StObject.set(x, "poppedColumns", js.Array(value*))
+    }
+  }
+  
+  trait Table$RowClickEventParameters extends StObject {
+    
+    /**
+      * the activated row.
+      */
+    var row: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Table$RowClickEventParameters {
+    
+    inline def apply(): Table$RowClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$RowClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$RowClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setRow(value: HTMLElement): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    }
+  }
+  
+  trait Table$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * An array of the previously selected rows.
+      */
+    var previouslySelectedRows: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * An array of the selected rows.
+      */
+    var selectedRows: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Table$SelectionChangeEventParameters {
+    
+    inline def apply(): Table$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviouslySelectedRows(value: js.Array[Any]): Self = StObject.set(x, "previouslySelectedRows", value.asInstanceOf[js.Any])
+      
+      inline def setPreviouslySelectedRowsUndefined: Self = StObject.set(x, "previouslySelectedRows", js.undefined)
+      
+      inline def setPreviouslySelectedRowsVarargs(value: Any*): Self = StObject.set(x, "previouslySelectedRows", js.Array(value*))
+      
+      inline def setSelectedRows(value: js.Array[Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
+      
+      inline def setSelectedRowsVarargs(value: Any*): Self = StObject.set(x, "selectedRows", js.Array(value*))
+    }
+  }
+  
+  type TableLoadMoreEvent = typings.openui5.sapUiBaseEventMod.default[Table$LoadMoreEventParameters]
+  
+  type TableLoadMoreEventParameters = Table$LoadMoreEventParameters
+  
+  type TablePopinChangeEvent = typings.openui5.sapUiBaseEventMod.default[Table$PopinChangeEventParameters]
+  
+  type TablePopinChangeEventParameters = Table$PopinChangeEventParameters
+  
+  type TableRowClickEvent = typings.openui5.sapUiBaseEventMod.default[Table$RowClickEventParameters]
+  
+  type TableRowClickEventParameters = Table$RowClickEventParameters
+  
+  type TableSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[Table$SelectionChangeEventParameters]
+  
+  type TableSelectionChangeEventParameters = Table$SelectionChangeEventParameters
+  
   trait TableSettings
     extends StObject
        with ControlSettings {
@@ -1250,7 +1351,9 @@ object sapUiWebcMainTableMod {
       *
       * **Note:** The event will be fired if `growing` is set to `Button` or `Scroll`.
       */
-    var loadMore: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var loadMore: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the mode of the component.
@@ -1272,12 +1375,22 @@ object sapUiWebcMainTableMod {
     /**
       * Fired when `sap.ui.webc.main.TableColumn` is shown as a pop-in instead of hiding it.
       */
-    var popinChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var popinChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PopinChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when a row in `Active` mode is clicked or `Enter` key is pressed.
       */
-    var rowClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var rowClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$RowClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the component rows.
@@ -1291,7 +1404,12 @@ object sapUiWebcMainTableMod {
     /**
       * Fired when selection is changed by user interaction in `SingleSelect` and `MultiSelect` modes.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines whether the column headers remain fixed at the top of the page during vertical scrolling as
@@ -1372,7 +1490,7 @@ object sapUiWebcMainTableMod {
       
       inline def setHideNoDataUndefined: Self = StObject.set(x, "hideNoData", js.undefined)
       
-      inline def setLoadMore(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
+      inline def setLoadMore(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
       
       inline def setLoadMoreUndefined: Self = StObject.set(x, "loadMore", js.undefined)
       
@@ -1386,11 +1504,15 @@ object sapUiWebcMainTableMod {
       
       inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
-      inline def setPopinChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "popinChange", js.Any.fromFunction1(value))
+      inline def setPopinChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PopinChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "popinChange", js.Any.fromFunction1(value))
       
       inline def setPopinChangeUndefined: Self = StObject.set(x, "popinChange", js.undefined)
       
-      inline def setRowClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rowClick", js.Any.fromFunction1(value))
+      inline def setRowClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$RowClickEventParameters] => Unit
+      ): Self = StObject.set(x, "rowClick", js.Any.fromFunction1(value))
       
       inline def setRowClickUndefined: Self = StObject.set(x, "rowClick", js.undefined)
       
@@ -1402,7 +1524,9 @@ object sapUiWebcMainTableMod {
       
       inline def setRowsVarargs(value: ITableRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

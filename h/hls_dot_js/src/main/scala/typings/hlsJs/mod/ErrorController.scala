@@ -33,6 +33,8 @@ open class ErrorController protected ()
   
   def onErrorOut(event: ERROR, data: ErrorData): Unit = js.native
   
+  /* private */ var onLevelUpdated: Any = js.native
+  
   /* private */ var onManifestLoading: Any = js.native
   
   /* private */ var penalizeRendition: Any = js.native

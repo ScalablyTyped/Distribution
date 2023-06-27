@@ -17,23 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeIntervalProperties extends StObject {
   
   /**
-    * Temporal units.
-    *
-    * @default milliseconds
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#unit)
-    */
+  		 * Temporal units.
+  		 *
+  		 * @default milliseconds
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#unit)
+  		 */
   var unit: js.UndefOr[
     milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries
   ] = js.undefined
   
   /**
-    * The numerical value of the time extent.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
-    */
+  		 * The numerical value of the time extent.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
+  		 */
   var value: js.UndefOr[Double] = js.undefined
 }
 object TimeIntervalProperties {

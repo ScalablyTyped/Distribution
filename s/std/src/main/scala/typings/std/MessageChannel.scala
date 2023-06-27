@@ -4,14 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Channel Messaging API interface allows us to create a new message channel and send data through it via its two MessagePort properties. */
+/**
+  * This Channel Messaging API interface allows us to create a new message channel and send data through it via its two MessagePort properties.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MessageChannel)
+  */
 trait MessageChannel extends StObject {
   
-  /** Returns the first MessagePort object. */
+  /**
+    * Returns the first MessagePort object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MessageChannel/port1)
+    */
   /* standard dom */
   val port1: MessagePort
   
-  /** Returns the second MessagePort object. */
+  /**
+    * Returns the second MessagePort object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MessageChannel/port2)
+    */
   /* standard dom */
   val port2: MessagePort
 }

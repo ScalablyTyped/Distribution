@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AlertEvidence extends StObject {
   
-  // The time the evidence was created and added to the alert.
+  /**
+    * The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time
+    * information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is
+    * 2014-01-01T00:00:00Z.
+    */
   var createdDateTime: js.UndefOr[String] = js.undefined
+  
+  var detailedRoles: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Status of the remediation action taken. The possible values are: none, remediated, prevented, blocked, notFound,
@@ -20,14 +26,14 @@ trait AlertEvidence extends StObject {
   var remediationStatusDetails: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will
-    * have the evidence role 'Attacker'.
+    * One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an
+    * attacker has the evidence role Attacker.
     */
   var roles: js.UndefOr[js.Array[EvidenceRole]] = js.undefined
   
   /**
-    * Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets,
-    * etc.
+    * Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value
+    * assets.
     */
   var tags: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
@@ -50,6 +56,14 @@ object AlertEvidence {
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDetailedRoles(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "detailedRoles", value.asInstanceOf[js.Any])
+    
+    inline def setDetailedRolesNull: Self = StObject.set(x, "detailedRoles", null)
+    
+    inline def setDetailedRolesUndefined: Self = StObject.set(x, "detailedRoles", js.undefined)
+    
+    inline def setDetailedRolesVarargs(value: String*): Self = StObject.set(x, "detailedRoles", js.Array(value*))
     
     inline def setRemediationStatus(value: EvidenceRemediationStatus): Self = StObject.set(x, "remediationStatus", value.asInstanceOf[js.Any])
     

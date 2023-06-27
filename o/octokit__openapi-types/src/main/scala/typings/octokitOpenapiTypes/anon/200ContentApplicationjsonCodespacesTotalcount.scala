@@ -9,22 +9,22 @@ trait `200ContentApplicationjsonCodespacesTotalcount` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonCodespacesTotalcount
   
-  var `401`: Content36
+  var `401`: Content41
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
-  var `500`: Content36
+  var `500`: Content41
 }
 object `200ContentApplicationjsonCodespacesTotalcount` {
   
   inline def apply(
     `200`: ContentApplicationjsonCodespacesTotalcount,
-    `401`: Content36,
-    `403`: Content36,
-    `404`: Content36,
-    `500`: Content36
+    `401`: Content41,
+    `403`: Content41,
+    `404`: Content41,
+    `500`: Content41
   ): `200ContentApplicationjsonCodespacesTotalcount` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -40,12 +40,12 @@ object `200ContentApplicationjsonCodespacesTotalcount` {
     
     inline def set200(value: ContentApplicationjsonCodespacesTotalcount): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content41): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set500(value: Content36): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: Content41): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
   }
 }

@@ -11,79 +11,79 @@ trait AttachmentInfo
      with JSONSupport {
   
   /**
-    * The content type of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#contentType)
-    */
+  		 * The content type of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#contentType)
+  		 */
   var contentType: String = js.native
   
   /**
-    * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo) for the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo)
-    */
+  		 * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#ExifInfo) for the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#exifInfo)
+  		 */
   var exifInfo: js.Array[ExifInfo] = js.native
   
   /**
-    * The global identifier for the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#globalId)
-    */
+  		 * The global identifier for the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#globalId)
+  		 */
   var globalId: String = js.native
   
   /**
-    * The identifier for the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#id)
-    */
+  		 * The identifier for the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#id)
+  		 */
   var id: Double = js.native
   
   /**
-    * Keywords used for the attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#keywords)
-    */
+  		 * Keywords used for the attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#keywords)
+  		 */
   var keywords: String = js.native
   
   /**
-    * String value indicating the name of the file attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#name)
-    */
+  		 * String value indicating the name of the file attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * The [OrientationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo) for the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#orientationInfo)
-    */
+  		 * The [OrientationInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#OrientationInfo) for the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#orientationInfo)
+  		 */
   val orientationInfo: OrientationInfo = js.native
   
   /**
-    * The parent or the feature global id of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentGlobalId)
-    */
+  		 * The parent or the feature global id of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentGlobalId)
+  		 */
   var parentGlobalId: Double = js.native
   
   /**
-    * The parent or the feature object id of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentObjectId)
-    */
+  		 * The parent or the feature object id of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#parentObjectId)
+  		 */
   var parentObjectId: Double = js.native
   
   /**
-    * The file size of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#size)
-    */
+  		 * The file size of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#size)
+  		 */
   var size: Double = js.native
   
   /**
-    * The URL of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#url)
-    */
+  		 * The URL of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html#url)
+  		 */
   var url: String = js.native
 }

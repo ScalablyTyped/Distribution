@@ -1,8 +1,6 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
-import typings.std.Object
-import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +11,7 @@ object sapUiMdcFilterbarVhFilterContainerMod {
   @JSImport("sap/ui/mdc/filterbar/vh/FilterContainer", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Constructor for a new filterBar/vh/FilterContainer.
     *
@@ -22,33 +20,11 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     * of the syntax of the settings object.
     */
   open class default ()
-    extends StObject
-       with Object {
+    extends typings.openui5.sapUiMdcFilterbarIfiltercontainerMod.default {
     def this(/**
       * ID for the new control, generated automatically if no ID is given
       */
     sId: String) = this()
-    
-    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
-    /* standard es5 */
-    /* CompleteClass */
-    var constructor: js.Function = js.native
-    
-    /**
-      * Determines whether an object has a property with the specified name.
-      * @param v A property name.
-      */
-    /* standard es5 */
-    /* CompleteClass */
-    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
-    
-    /**
-      * Determines whether a specified property is enumerable.
-      * @param v A property name.
-      */
-    /* standard es5 */
-    /* CompleteClass */
-    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -58,7 +34,7 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.mdc.filterbar.vh.FilterContainer with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
@@ -113,7 +89,7 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.mdc.filterbar.vh.FilterContainer.
       *
@@ -122,5 +98,5 @@ object sapUiMdcFilterbarVhFilterContainerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
   }
   
-  type FilterContainer = js.Object
+  type FilterContainer = typings.openui5.sapUiMdcFilterbarIfiltercontainerMod.default
 }

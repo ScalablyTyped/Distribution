@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content361 extends StObject {
   
   /**
-    * Get top referral sources
-    * @description Get the top 10 referrers over the last 14 days.
+    * Get latest Pages build
+    * @description Gets information about the single most recent build of a GitHub Pages site.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
     */
   var get: Responses200Content361
 }

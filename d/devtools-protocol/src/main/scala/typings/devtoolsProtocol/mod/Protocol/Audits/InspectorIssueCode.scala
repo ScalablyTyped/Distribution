@@ -21,6 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ClientHintIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthRequestIssue
   - typings.devtoolsProtocol.devtoolsProtocolStrings.BounceTrackingIssue
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.StylesheetLoadingIssue
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthUserInfoRequestIssue
 */
 trait InspectorIssueCode extends StObject
 object InspectorIssueCode {
@@ -43,6 +45,8 @@ object InspectorIssueCode {
   
   inline def FederatedAuthRequestIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthRequestIssue = "FederatedAuthRequestIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthRequestIssue]
   
+  inline def FederatedAuthUserInfoRequestIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthUserInfoRequestIssue = "FederatedAuthUserInfoRequestIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.FederatedAuthUserInfoRequestIssue]
+  
   inline def GenericIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.GenericIssue = "GenericIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.GenericIssue]
   
   inline def HeavyAdIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue = "HeavyAdIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdIssue]
@@ -56,4 +60,6 @@ object InspectorIssueCode {
   inline def QuirksModeIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.QuirksModeIssue = "QuirksModeIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.QuirksModeIssue]
   
   inline def SharedArrayBufferIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.SharedArrayBufferIssue = "SharedArrayBufferIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SharedArrayBufferIssue]
+  
+  inline def StylesheetLoadingIssue: typings.devtoolsProtocol.devtoolsProtocolStrings.StylesheetLoadingIssue = "StylesheetLoadingIssue".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.StylesheetLoadingIssue]
 }

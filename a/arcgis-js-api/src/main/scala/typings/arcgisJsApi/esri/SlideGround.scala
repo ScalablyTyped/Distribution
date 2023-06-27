@@ -9,10 +9,10 @@ trait SlideGround
      with AnonymousAccessor {
   
   /**
-    * Ground opacity
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
-    */
+  		 * Ground opacity
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object SlideGround {

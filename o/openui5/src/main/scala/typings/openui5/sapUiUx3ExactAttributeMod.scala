@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Attribute
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapUiUx3ExactAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit]
     ): this.type = js.native
     def attachSupplyAttributes(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactAttribute` itself
       */
@@ -185,7 +184,7 @@ object sapUiUx3ExactAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit]
     ): this.type = js.native
     def attachSupplyAttributes(
       /**
@@ -196,7 +195,7 @@ object sapUiUx3ExactAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactAttribute` itself
       */
@@ -222,13 +221,13 @@ object sapUiUx3ExactAttributeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit]
     ): this.type = js.native
     def detachSupplyAttributes(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactAttributeSupplyAttributesEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -236,17 +235,19 @@ object sapUiUx3ExactAttributeMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:supplyAttributes supplyAttributes} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSupplyAttributes(): this.type = js.native
-    def fireSupplyAttributes(/**
+    def fireSupplyAttributes(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Attribute): this.type = js.native
+    mParameters: ExactAttribute$SupplyAttributesEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAdditionalData additionalData}.
@@ -277,7 +278,7 @@ object sapUiUx3ExactAttributeMod {
     def getAutoActivateSupply(): Boolean = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Gets current value of property {@link #getListOrder listOrder}.
       *
@@ -343,7 +344,7 @@ object sapUiUx3ExactAttributeMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -454,7 +455,7 @@ object sapUiUx3ExactAttributeMod {
     bAutoActivateSupply: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Sets a new value for property {@link #getListOrder listOrder}.
       *
@@ -479,7 +480,7 @@ object sapUiUx3ExactAttributeMod {
     sListOrder: ExactOrder): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * See:
       * 	sap.ui.base.ManagedObject.prototype.setProperty
@@ -563,7 +564,7 @@ object sapUiUx3ExactAttributeMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -580,6 +581,29 @@ object sapUiUx3ExactAttributeMod {
       * New value for property `width`
       */
     iWidth: int): this.type = js.native
+  }
+  
+  trait ExactAttribute$SupplyAttributesEventParameters extends StObject {
+    
+    /**
+      * The ExactAttribute
+      */
+    var attribute: js.UndefOr[ExactAttribute] = js.undefined
+  }
+  object ExactAttribute$SupplyAttributesEventParameters {
+    
+    inline def apply(): ExactAttribute$SupplyAttributesEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExactAttribute$SupplyAttributesEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactAttribute$SupplyAttributesEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAttribute(value: ExactAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    }
   }
   
   trait ExactAttributeSettings
@@ -609,7 +633,7 @@ object sapUiUx3ExactAttributeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * The order how the sublists of this attribute should be displayed.
       */
@@ -651,7 +675,12 @@ object sapUiUx3ExactAttributeMod {
       * the corresponding ExactAttribute is selected, it was already selected when a handler is attached or function
       * getAttributes() is called.
       */
-    var supplyAttributes: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var supplyAttributes: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactAttribute$SupplyAttributesEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The attribute name
@@ -659,7 +688,7 @@ object sapUiUx3ExactAttributeMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Specifies the width of the corresponding list in pixels. The value must be between 70 and 500.
       */
@@ -709,7 +738,9 @@ object sapUiUx3ExactAttributeMod {
       
       inline def setSupplyActiveUndefined: Self = StObject.set(x, "supplyActive", js.undefined)
       
-      inline def setSupplyAttributes(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "supplyAttributes", js.Any.fromFunction1(value))
+      inline def setSupplyAttributes(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactAttribute$SupplyAttributesEventParameters] => Unit
+      ): Self = StObject.set(x, "supplyAttributes", js.Any.fromFunction1(value))
       
       inline def setSupplyAttributesUndefined: Self = StObject.set(x, "supplyAttributes", js.undefined)
       
@@ -722,4 +753,8 @@ object sapUiUx3ExactAttributeMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type ExactAttributeSupplyAttributesEvent = typings.openui5.sapUiBaseEventMod.default[ExactAttribute$SupplyAttributesEventParameters]
+  
+  type ExactAttributeSupplyAttributesEventParameters = ExactAttribute$SupplyAttributesEventParameters
 }

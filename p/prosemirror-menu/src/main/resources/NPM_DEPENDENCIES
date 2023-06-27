@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-menu" : "1.2.1"
+      "prosemirror-menu" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-menu" : "1.2.1"
+      "prosemirror-menu" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

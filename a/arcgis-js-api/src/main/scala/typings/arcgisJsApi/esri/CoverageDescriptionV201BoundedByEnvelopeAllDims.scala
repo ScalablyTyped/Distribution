@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV201BoundedByEnvelopeAllDims extends StObject {
   
   /**
-    * Spatial extent min x and y.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Spatial extent min x and y.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var maxs: js.Array[Double]
   
   /**
-    * Spatial extent min x and y.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Spatial extent min x and y.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var mins: js.Array[Double]
 }
 object CoverageDescriptionV201BoundedByEnvelopeAllDims {

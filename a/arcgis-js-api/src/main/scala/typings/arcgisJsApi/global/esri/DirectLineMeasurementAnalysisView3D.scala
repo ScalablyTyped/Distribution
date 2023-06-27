@@ -14,34 +14,34 @@ open class DirectLineMeasurementAnalysisView3D ()
   def this(properties: Any) = this()
   
   /**
-    * The direct line measurement analysis object associated with the analysis view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#analysis)
-    */
+  		 * The direct line measurement analysis object associated with the analysis view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#analysis)
+  		 */
   /* CompleteClass */
   override val analysis: typings.arcgisJsApi.esri.DirectLineMeasurementAnalysis = js.native
   
   /**
-    * Result of the direct line measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#result)
-    */
+  		 * Result of the direct line measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#result)
+  		 */
   /* CompleteClass */
   var result: DirectLineMeasurementAnalysisResult = js.native
   
   /**
-    * The analysis view type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#type)
-    */
+  		 * The analysis view type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#type)
+  		 */
   /* CompleteClass */
   override val `type`: `direct-line-measurement-view-3d` = js.native
   
   /**
-    * When `true`, the analysis is visualized in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#visible)
-    */
+  		 * When `true`, the analysis is visualized in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#visible)
+  		 */
   /* CompleteClass */
   var visible: Boolean = js.native
 }

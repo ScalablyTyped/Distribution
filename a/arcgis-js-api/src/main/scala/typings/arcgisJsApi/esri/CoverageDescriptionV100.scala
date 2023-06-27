@@ -8,73 +8,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV100 extends StObject {
   
   /**
-    * Coverage description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Coverage description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var description: String
   
   /**
-    * Describes the spatial and temporal domain of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Describes the spatial and temporal domain of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var domainSet: CoverageDescriptionV100DomainSet
   
   /**
-    * Coverage label.
-    *
-    * [Read more...](global.html)
-    */
+  		 * Coverage label.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String
   
   /**
-    * Spatial extent of the coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Spatial extent of the coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var lonLatEnvelope: Extent
   
   /**
-    * Coverage name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Coverage name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var name: String
   
   /**
-    * Defines the properties (categories, measures, or values) assigned to each location in the domain.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Defines the properties (categories, measures, or values) assigned to each location in the domain.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var rangeSet: CoverageDescriptionV100RangeSet
   
   /**
-    * Coordinate reference systems supported by a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Coordinate reference systems supported by a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var supportedCRSs: CoverageDescriptionV100SupportedCRSs
   
   /**
-    * Formats supported by a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Formats supported by a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var supportedFormats: js.Array[String]
   
   /**
-    * Interpolations supported by a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Interpolations supported by a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var supportedInterpolations: js.Array[String]
   
   /**
-    * Coverage version.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Coverage version.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var version: `1Dot0`
 }
 object CoverageDescriptionV100 {

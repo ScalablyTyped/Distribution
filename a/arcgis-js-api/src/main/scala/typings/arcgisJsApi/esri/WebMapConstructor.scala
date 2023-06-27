@@ -13,9 +13,9 @@ trait WebMapConstructor
      with Instantiable1[/* properties */ WebMapProperties, WebMap] {
   
   /**
-    * Creates a new instance of this class and initializes it with values from a JSON object generated from an ArcGIS product.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#fromJSON)
-    */
+  		 * Creates a new instance of this class and initializes it with values from a JSON object generated from an ArcGIS product.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#fromJSON)
+  		 */
   def fromJSON(json: Any): Any = js.native
 }

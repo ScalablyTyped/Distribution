@@ -39,7 +39,7 @@ trait Mailbox extends StObject {
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Mailbox object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.5]
@@ -64,7 +64,7 @@ trait Mailbox extends StObject {
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Mailbox object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.5]
@@ -793,6 +793,54 @@ trait Mailbox extends StObject {
   ): Unit = js.native
   
   /**
+    * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+    * To learn more about item multi-select, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+    * 
+    * **Important**: This method only applies to messages.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+    *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+    *        messages were selected.
+    */
+  def getSelectedItemsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[SelectedItemDetails]], Unit]): Unit = js.native
+  /**
+    * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+    * To learn more about item multi-select, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+    * 
+    * **Important**: This method only applies to messages.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+    *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+    *        messages were selected.
+    */
+  def getSelectedItemsAsync(
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[SelectedItemDetails]], Unit]
+  ): Unit = js.native
+  
+  /**
     * Gets a token identifying the user and the Office Add-in.
     *
     * The token is returned as a string in the `asyncResult.value` property.
@@ -915,7 +963,7 @@ trait Mailbox extends StObject {
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Mailbox object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.5]
@@ -934,7 +982,7 @@ trait Mailbox extends StObject {
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Mailbox object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.5]

@@ -14,9 +14,9 @@ trait TVInputDeviceManager extends StObject {
     *
     * @returns InputDeviceKey InputDeviceKey object for the given key name, or null if the key is not supported.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidValuesError if the given keyName is invalid (e.g. name is empty string).
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError if the given keyName is invalid (e.g. name is empty string).
+    * @throws WebAPIException with error type UnknownError in any other error case.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.inputdevice
@@ -28,8 +28,8 @@ trait TVInputDeviceManager extends StObject {
     *
     * Mandatory keys will not be retrieved by this method.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError in case of any error.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError in case of any error.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.inputdevice
@@ -45,9 +45,9 @@ trait TVInputDeviceManager extends StObject {
     *
     * @param keyName The name of the key which should generate DOM key events when pressed.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidValuesError, if the given keyName is invalid or not supported (e.g. name is empty string).
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError, if the given keyName is invalid or not supported (e.g. name is empty string).
+    * @throws WebAPIException with error type UnknownError in any other error case.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.inputdevice
@@ -76,10 +76,10 @@ trait TVInputDeviceManager extends StObject {
     * @param successCallback Callback method to be invoked when keys are registered.
     * @param errorCallback Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the given keyNames is invalid or not supported (e.g. name is empty string).
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the given keyNames is invalid or not supported (e.g. name is empty string).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def registerKeyBatch(keyNames: js.Array[InputDeviceKeyName]): Unit = js.native
   def registerKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -96,9 +96,9 @@ trait TVInputDeviceManager extends StObject {
     *
     * @param keyName The name of the key which should not be monitored any longer.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidValuesError, if the given keyName is invalid or not supported (e.g. name is empty string).
-    * @throw WebAPIException with error type UnknownError in any error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError, if the given keyName is invalid or not supported (e.g. name is empty string).
+    * @throws WebAPIException with error type UnknownError in any error case.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.inputdevice
@@ -123,10 +123,10 @@ trait TVInputDeviceManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.inputdevice
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the given keyNames is invalid or not supported (e.g. name is empty string).
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError in any error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the given keyNames is invalid or not supported (e.g. name is empty string).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError in any error case.
     */
   def unregisterKeyBatch(keyNames: js.Array[InputDeviceKeyName]): Unit = js.native
   def unregisterKeyBatch(keyNames: js.Array[InputDeviceKeyName], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native

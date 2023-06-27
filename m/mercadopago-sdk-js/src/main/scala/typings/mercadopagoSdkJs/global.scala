@@ -1,23 +1,8 @@
 package typings.mercadopagoSdkJs
 
-import typings.mercadopagoSdkJs.bricks.Bricks
-import typings.mercadopagoSdkJs.bricks.BricksStyle
-import typings.mercadopagoSdkJs.cardform.CardForm
-import typings.mercadopagoSdkJs.cardform.CardFormOptions
-import typings.mercadopagoSdkJs.fields.Fields
 import typings.mercadopagoSdkJs.mercadopago.MercadoPago
-import typings.mercadopagoSdkJs.mercadopagocore.CardTokenParams
-import typings.mercadopagoSdkJs.mercadopagocore.CardTokenUpdateParams
-import typings.mercadopagoSdkJs.mercadopagocore.IdentificationTypesResponse
-import typings.mercadopagoSdkJs.mercadopagocore.InstallmentsParams
-import typings.mercadopagoSdkJs.mercadopagocore.InstallmentsResponse
-import typings.mercadopagoSdkJs.mercadopagocore.IssuersParams
-import typings.mercadopagoSdkJs.mercadopagocore.IssuersResponse
 import typings.mercadopagoSdkJs.mercadopagocore.MercadoPagoCore
 import typings.mercadopagoSdkJs.mercadopagocore.Options
-import typings.mercadopagoSdkJs.mercadopagocore.PaymentMethodsParams
-import typings.mercadopagoSdkJs.mercadopagocore.PaymentMethodsResponse
-import typings.mercadopagoSdkJs.shared.CardTokenResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,34 +15,8 @@ object global {
   open class MercadoPago_ protected ()
     extends StObject
        with MercadoPagoCore {
+    def this(publicKey: String) = this()
     def this(publicKey: String, options: Options) = this()
-    
-    /* CompleteClass */
-    override def bricks(style: BricksStyle): Bricks = js.native
-    
-    /* CompleteClass */
-    override def cardForm(options: CardFormOptions): CardForm = js.native
-    
-    /* CompleteClass */
-    override def createCardToken(cardTokenParams: CardTokenParams): js.Promise[CardTokenResponse] = js.native
-    
-    /* CompleteClass */
-    var fields: Fields = js.native
-    
-    /* CompleteClass */
-    override def getIdentificationTypes(): js.Promise[js.Array[IdentificationTypesResponse]] = js.native
-    
-    /* CompleteClass */
-    override def getInstallments(installmentsParams: InstallmentsParams): js.Promise[js.Array[InstallmentsResponse]] = js.native
-    
-    /* CompleteClass */
-    override def getIssuers(issuersParams: IssuersParams): js.Promise[js.Array[IssuersResponse]] = js.native
-    
-    /* CompleteClass */
-    override def getPaymentMethods(paymentMethodsParams: PaymentMethodsParams): js.Promise[PaymentMethodsResponse] = js.native
-    
-    /* CompleteClass */
-    override def updateCardToken(CardTokenUpdateParams: CardTokenUpdateParams): js.Promise[CardTokenResponse] = js.native
   }
   
   @JSGlobal("MercadoPago")
@@ -116,18 +75,6 @@ object global {
       /* "wallet_purchase" */ val WALLET_PURCHASE: typings.mercadopagoSdkJs.bricks.PaymentType.WALLET_PURCHASE & String = js.native
     }
     
-    @JSGlobal("bricks.WalletButtonAction")
-    @js.native
-    object WalletButtonAction extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.mercadopagoSdkJs.bricks.WalletButtonAction & String] = js.native
-      
-      /* "buy" */ val BUY: typings.mercadopagoSdkJs.bricks.WalletButtonAction.BUY & String = js.native
-      
-      /* "pay" */ val PAY: typings.mercadopagoSdkJs.bricks.WalletButtonAction.PAY & String = js.native
-    }
-    
     @JSGlobal("bricks.WalletButtonBackground")
     @js.native
     object WalletButtonBackground extends StObject {
@@ -156,22 +103,6 @@ object global {
       /* "modal" */ val MODAL: typings.mercadopagoSdkJs.bricks.WalletButtonRedirectMode.MODAL & String = js.native
       
       /* "self" */ val SELF: typings.mercadopagoSdkJs.bricks.WalletButtonRedirectMode.SELF & String = js.native
-    }
-    
-    @JSGlobal("bricks.WalletButtonValueProp")
-    @js.native
-    object WalletButtonValueProp extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.mercadopagoSdkJs.bricks.WalletButtonValueProp & String] = js.native
-      
-      /* "convenience" */ val CONVENIENCE: typings.mercadopagoSdkJs.bricks.WalletButtonValueProp.CONVENIENCE & String = js.native
-      
-      /* "practicality" */ val PRACTICALITY: typings.mercadopagoSdkJs.bricks.WalletButtonValueProp.PRACTICALITY & String = js.native
-      
-      /* "security_details" */ val SECURITY_DETAILS: typings.mercadopagoSdkJs.bricks.WalletButtonValueProp.SECURITY_DETAILS & String = js.native
-      
-      /* "security_safety" */ val SECURITY_SAFETY: typings.mercadopagoSdkJs.bricks.WalletButtonValueProp.SECURITY_SAFETY & String = js.native
     }
     
     @JSGlobal("bricks.WalletButtonValuePropColor")

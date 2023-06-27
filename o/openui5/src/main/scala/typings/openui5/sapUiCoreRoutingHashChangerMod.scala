@@ -87,7 +87,7 @@ object sapUiCoreRoutingHashChangerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the hashChanger to a new instance, destroys the old one and copies all its event listeners to the
       * new one
@@ -103,7 +103,7 @@ object sapUiCoreRoutingHashChangerMod {
     extends typings.openui5.sapUiCoreRoutingHashChangerBaseMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires the hashchanged event, may be extended to modify the hash before fireing the event
       */
@@ -126,7 +126,7 @@ object sapUiCoreRoutingHashChangerMod {
     def getHash(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Defines the events and its parameters which should be used for tracking the hash changes
       *
@@ -152,24 +152,47 @@ object sapUiCoreRoutingHashChangerMod {
     sHash: String): Unit = js.native
   }
   
+  trait HashChanger$HashSetEventParameters extends StObject {
+    
+    /**
+      * The relevant hash segment
+      */
+    var hash: js.UndefOr[String] = js.undefined
+  }
+  object HashChanger$HashSetEventParameters {
+    
+    inline def apply(): HashChanger$HashSetEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HashChanger$HashSetEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChanger$HashSetEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    }
+  }
+  
   trait HashChangerEventInfo extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The name of the event that is fired by the HashChanger and should be forwarded to the RouterHashChanger
       */
     var name: String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The optional defined parameter name mapping that is used for forwarding the event to the {@link sap.ui.core.routing.RouterHashChanger}.
       */
     var paramMapping: js.UndefOr[HashChangerEventParameterMapping] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Indicates whether the event is ignored by every RouterHashChanger instance and is only relevant for the
       * other routing classes, for example {@link sap.ui.core.routing.History}.
@@ -199,7 +222,7 @@ object sapUiCoreRoutingHashChangerMod {
   trait HashChangerEventParameterMapping extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The name of the parameter whose value is used as the `fullHash` parameter in the event that is forwarded
       * to the {@link sap.ui.core.routing.RouterHashChanger}. If this isn't set, the value is taken from the
@@ -208,7 +231,7 @@ object sapUiCoreRoutingHashChangerMod {
     var fullHash: js.UndefOr[String] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The name of the parameter whose value is used as the `newHash` parameter in the event that is forwarded
       * to the {@link sap.ui.core.routing.RouterHashChanger}. If this isn't set, the value is taken from the
@@ -217,7 +240,7 @@ object sapUiCoreRoutingHashChangerMod {
     var newHash: js.UndefOr[String] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The name of the parameter whose value is used as the `oldHash` parameter in the event that is forwarded
       * to the {@link sap.ui.core.routing.RouterHashChanger}. If this isn't set, the value is taken from the
@@ -248,4 +271,8 @@ object sapUiCoreRoutingHashChangerMod {
       inline def setOldHashUndefined: Self = StObject.set(x, "oldHash", js.undefined)
     }
   }
+  
+  type HashChangerHashSetEvent = typings.openui5.sapUiBaseEventMod.default[HashChanger$HashSetEventParameters]
+  
+  type HashChangerHashSetEventParameters = HashChanger$HashSetEventParameters
 }

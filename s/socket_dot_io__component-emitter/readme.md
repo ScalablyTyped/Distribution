@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io__component-emitter
 
-Typings are for version 4.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Event emitter

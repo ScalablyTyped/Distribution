@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -109,13 +110,13 @@ object sapUiTablePluginsSelectionPluginMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.plugins.SelectionPlugin`
       * itself
@@ -142,7 +143,7 @@ object sapUiTablePluginsSelectionPluginMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -153,7 +154,7 @@ object sapUiTablePluginsSelectionPluginMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.plugins.SelectionPlugin`
       * itself
@@ -173,13 +174,13 @@ object sapUiTablePluginsSelectionPluginMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -187,7 +188,7 @@ object sapUiTablePluginsSelectionPluginMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
@@ -198,16 +199,59 @@ object sapUiTablePluginsSelectionPluginMod {
       * Parameters to pass along with the event
       */
     mParameters: js.Object): this.type = js.native
+    
+    /**
+      * Gets current value of property {@link #getEnabled enabled}.
+      *
+      * Indicates whether this plugin is enabled.
+      *
+      * Default value is `true`.
+      *
+      * @returns Value of property `enabled`
+      */
+    def getEnabled(): Boolean = js.native
+    
+    /**
+      * Sets a new value for property {@link #getEnabled enabled}.
+      *
+      * Indicates whether this plugin is enabled.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setEnabled(): this.type = js.native
+    def setEnabled(/**
+      * New value for property `enabled`
+      */
+    bEnabled: Boolean): this.type = js.native
   }
+  
+  trait SelectionPlugin$SelectionChangeEventParameters extends StObject
+  
+  type SelectionPluginSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[SelectionPlugin$SelectionChangeEventParameters]
+  
+  type SelectionPluginSelectionChangeEventParameters = SelectionPlugin$SelectionChangeEventParameters
   
   trait SelectionPluginSettings
     extends StObject
        with ElementSettings {
     
     /**
+      * Indicates whether this plugin is enabled.
+      */
+    var enabled: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
       * This event is fired when the selection is changed.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object SelectionPluginSettings {
     
@@ -219,7 +263,11 @@ object sapUiTablePluginsSelectionPluginMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SelectionPluginSettings] (val x: Self) extends AnyVal {
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
     }

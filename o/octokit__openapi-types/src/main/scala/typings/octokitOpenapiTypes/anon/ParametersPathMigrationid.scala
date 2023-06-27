@@ -8,11 +8,11 @@ trait ParametersPathMigrationid extends StObject {
   
   var parameters: PathMigrationid
   
-  var responses: `200Content94`
+  var responses: `200Content109`
 }
 object ParametersPathMigrationid {
   
-  inline def apply(parameters: PathMigrationid, responses: `200Content94`): ParametersPathMigrationid = {
+  inline def apply(parameters: PathMigrationid, responses: `200Content109`): ParametersPathMigrationid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathMigrationid]
   }
@@ -22,6 +22,6 @@ object ParametersPathMigrationid {
     
     inline def setParameters(value: PathMigrationid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content94`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content109`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -8,13 +8,13 @@ trait ParametersPathProjectidNumberUsernameString extends StObject {
   
   var parameters: PathProjectidNumberUsernameString
   
-  var requestBody: js.UndefOr[Content126] = js.undefined
+  var requestBody: js.UndefOr[Content149] = js.undefined
   
-  var responses: `304401Content36403Content36`
+  var responses: `304401Content41403Content41`
 }
 object ParametersPathProjectidNumberUsernameString {
   
-  inline def apply(parameters: PathProjectidNumberUsernameString, responses: `304401Content36403Content36`): ParametersPathProjectidNumberUsernameString = {
+  inline def apply(parameters: PathProjectidNumberUsernameString, responses: `304401Content41403Content41`): ParametersPathProjectidNumberUsernameString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathProjectidNumberUsernameString]
   }
@@ -24,10 +24,10 @@ object ParametersPathProjectidNumberUsernameString {
     
     inline def setParameters(value: PathProjectidNumberUsernameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: Content126): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Content149): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    inline def setResponses(value: `304401Content36403Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `304401Content41403Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

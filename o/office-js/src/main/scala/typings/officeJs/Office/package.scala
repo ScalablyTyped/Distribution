@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * Child interfaces:
   *
@@ -25,7 +25,7 @@ type Appointment = Item
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * Child interfaces:
   *
@@ -40,7 +40,7 @@ type ItemCompose = Item
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * Child interfaces:
   *
@@ -55,7 +55,7 @@ type ItemRead = Item
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * Child interfaces:
   *

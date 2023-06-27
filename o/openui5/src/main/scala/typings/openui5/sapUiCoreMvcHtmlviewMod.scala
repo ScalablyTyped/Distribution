@@ -15,17 +15,17 @@ object sapUiCoreMvcHtmlviewMod {
   /**
     * Constructor for a new `HTMLView`.
     *
-    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link
-    * sap.ui.core.mvc.HTMLView.create HTMLView.create} or {@link sap.ui.core.mvc.View.create View.create} with
-    * type {@link sap.ui.core.mvc.ViewType.HTML HTML}. The factory simplifies asynchronous loading of a view
-    * and future features might be added to the factory only.
+    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link sap.ui.core.mvc.HTMLView.create HTMLView.create }
+    * or {@link sap.ui.core.mvc.View.create View.create} with type {@link sap.ui.core.mvc.ViewType.HTML HTML}.
+    * The factory simplifies asynchronous loading of a view and future features might be added to the factory
+    * only.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor
-    * sap.ui.core.mvc.View} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor sap.ui.core.mvc.View }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiCoreMvcViewMod.default {
@@ -66,7 +66,7 @@ object sapUiCoreMvcHtmlviewMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Flag for feature detection of asynchronous loading/rendering
       */
@@ -76,7 +76,7 @@ object sapUiCoreMvcHtmlviewMod {
     inline def asyncSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asyncSupport")(x.asInstanceOf[js.Any])
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Creates an instance of a declarative HTML view.
       *

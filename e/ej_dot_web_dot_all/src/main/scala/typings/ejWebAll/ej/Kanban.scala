@@ -1293,7 +1293,7 @@ object Kanban {
   trait CardSettings extends StObject {
     
     /** To customize the card border color based on assigned task. Colors and corresponding values defined here will be mapped with colorField mapped data source column.
-      * @Default {Object}
+      * @default {Object}
       */
     var colorMapping: js.UndefOr[Any] = js.undefined
     
@@ -1302,7 +1302,7 @@ object Kanban {
     var externalDropTarget: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to add the template for card .
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
   }
@@ -1387,57 +1387,57 @@ object Kanban {
   trait Column extends StObject {
     
     /** To enable/disable allowDrag for specific column wise.
-      * @Default {true}
+      * @default {true}
       */
     var allowDrag: js.UndefOr[Boolean] = js.undefined
     
     /** To enable/disable allowDrop for specific column wise.
-      * @Default {true}
+      * @default {true}
       */
     var allowDrop: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the column level constraints with minimum ,maximum limit validation.
-      * @Default {Object}
+      * @default {Object}
       */
     var constraints: js.UndefOr[ColumnsConstraints] = js.undefined
     
     /** Gets or sets a value that indicates to add the template within the header element.
-      * @Default {null}
+      * @default {null}
       */
     var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns header text.
-      * @Default {null}
+      * @default {null}
       */
     var headerText: js.UndefOr[String] = js.undefined
     
     /** To set column collapse or expand state
-      * @Default {false}
+      * @default {false}
       */
     var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns key.
-      * @Default {null}
+      * @default {null}
       */
     var key: js.UndefOr[String | Double] = js.undefined
     
     /** Gets or sets an object that indicates whether to show add new button.
-      * @Default {false}
+      * @default {false}
       */
     var showAddButton: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the totalCount properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var totalCount: js.UndefOr[ColumnsTotalCount] = js.undefined
     
     /** Gets or sets an object that indicates to set specific column visibility.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns width.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -1500,17 +1500,17 @@ object Kanban {
   trait ColumnsConstraints extends StObject {
     
     /** It is used to specify the maximum amount of card in particular column cell or swimlane cell can hold.
-      * @Default {null}
+      * @default {null}
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /** It is used to specify the minimum amount of card in particular column cell or swimlane cell can hold.
-      * @Default {null}
+      * @default {null}
       */
     var min: js.UndefOr[Double] = js.undefined
     
     /** It is used to specify the type of constraints as column or swimlane.
-      * @Default {null}
+      * @default {null}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -1541,7 +1541,7 @@ object Kanban {
   trait ColumnsTotalCount extends StObject {
     
     /** To customize the totalCount text properties.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -1626,22 +1626,22 @@ object Kanban {
   trait ContextMenuSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to add custom contextMenu items.
-      * @Default {Array}
+      * @default {Array}
       */
     var customMenuItems: js.UndefOr[js.Array[ContextMenuSettingsCustomMenuItem]] = js.undefined
     
     /** Gets or sets a value that indicates the list of items needs to be disable from default context menu items.
-      * @Default {Array}
+      * @default {Array}
       */
     var disableDefaultItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To enable context menu.All default context menu will show.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Its used to add specific default context menu items.
-      * @Default {Array}
+      * @default {Array}
       */
     var menuItems: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -1682,17 +1682,17 @@ object Kanban {
   trait ContextMenuSettingsCustomMenuItem extends StObject {
     
     /** Its sets target element to custom context menu item.
-      * @Default {ej.Kanban.Target.All}
+      * @default {ej.Kanban.Target.All}
       */
     var target: js.UndefOr[Target | String] = js.undefined
     
     /** Gets the template to render custom context menu item.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Gets the display name to custom menu item.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -1823,7 +1823,7 @@ object Kanban {
   trait CustomToolbarItem extends StObject {
     
     /** Gets the template to render customToolbarItems.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
   }
@@ -1922,37 +1922,37 @@ object Kanban {
   trait EditSettings extends StObject {
     
     /** Gets or sets a value that indicates whether to enable the adding action in cards behavior on Kanban.
-      * @Default {false}
+      * @default {false}
       */
     var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the editing action in cards of Kanban.
-      * @Default {false}
+      * @default {false}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** This specifies the id of the template which is require to be edited using the Dialog Box.
-      * @Default {null}
+      * @default {null}
       */
     var dialogTemplate: js.UndefOr[String] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editing fields of Kanban card.
-      * @Default {Array}
+      * @default {Array}
       */
     var editItems: js.UndefOr[js.Array[EditSettingsEditItem]] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editMode of the Kanban.
-      * @Default {ej.Kanban.EditMode.Dialog}
+      * @default {ej.Kanban.EditMode.Dialog}
       */
     var editMode: js.UndefOr[EditMode | String] = js.undefined
     
     /** This specifies the id of the template which is require to be edited using the External edit form.
-      * @Default {null}
+      * @default {null}
       */
     var externalFormTemplate: js.UndefOr[String] = js.undefined
     
     /** This specifies to set the position of an External edit form either in the right or bottom of the Kanban.
-      * @Default {ej.Kanban.FormPosition.Bottom}
+      * @default {ej.Kanban.FormPosition.Bottom}
       */
     var formPosition: js.UndefOr[FormPosition | String] = js.undefined
   }
@@ -2001,27 +2001,27 @@ object Kanban {
   trait EditSettingsEditItem extends StObject {
     
     /** It is used to specify defaultValue for the fields while adding new card.
-      * @Default {null}
+      * @default {null}
       */
     var defaultValue: js.UndefOr[String | Double] = js.undefined
     
     /** It is used to set the particular editparams in the card for editing.
-      * @Default {Object}
+      * @default {Object}
       */
     var editParams: js.UndefOr[Any] = js.undefined
     
     /** It is used to set the particular editType in the card for editing.
-      * @Default {ej.Kanban.EditingType.String}
+      * @default {ej.Kanban.EditingType.String}
       */
     var editType: js.UndefOr[EditingType | String] = js.undefined
     
     /** It is used to map editing field from the data source.
-      * @Default {null}
+      * @default {null}
       */
     var field: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to define constraints for saving data to the database.
-      * @Default {Object}
+      * @default {Object}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
   }
@@ -2184,47 +2184,47 @@ object Kanban {
   trait Fields extends StObject {
     
     /** Get or sets an object that indicates the options to map the cards to the collapsible area.
-      * @Default {Object}
+      * @default {Object}
       */
     var collapsibleCards: js.UndefOr[FieldsCollapsibleCards] = js.undefined
     
     /** To customize the card has been Mapped into card color field.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Content field has been Mapped into card text.
-      * @Default {null}
+      * @default {null}
       */
     var content: js.UndefOr[String] = js.undefined
     
     /** ImageUrl field has been Mapped into card image.
-      * @Default {null}
+      * @default {null}
       */
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** The primarykey field is mapped to data source field. And this will used for Drag and drop and editing mainly.
-      * @Default {null}
+      * @default {null}
       */
     var primaryKey: js.UndefOr[String] = js.undefined
     
     /** Priority field has been mapped data source field to maintain cards priority.
-      * @Default {null}
+      * @default {null}
       */
     var priority: js.UndefOr[String] = js.undefined
     
     /** To enable swimlane grouping based on the given key field from datasource mapping.
-      * @Default {null}
+      * @default {null}
       */
     var swimlaneKey: js.UndefOr[String] = js.undefined
     
     /** Tag field has been Mapped into card tag.
-      * @Default {null}
+      * @default {null}
       */
     var tag: js.UndefOr[String] = js.undefined
     
     /** Title field has been Mapped to field in datasource for title content. If title field specified , card expand/collapse will be enabled with header and content section.
-      * @Default {null}
+      * @default {null}
       */
     var title: js.UndefOr[String] = js.undefined
   }
@@ -2279,12 +2279,12 @@ object Kanban {
   trait FieldsCollapsibleCards extends StObject {
     
     /** It is used to specify the collapsible card's field mapping.
-      * @Default {null}
+      * @default {null}
       */
     var field: js.UndefOr[String] = js.undefined
     
     /** It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in collapsibleCards.field.
-      * @Default {null}
+      * @default {null}
       */
     var key: js.UndefOr[String] = js.undefined
   }
@@ -2311,17 +2311,17 @@ object Kanban {
   trait FilterSetting extends StObject {
     
     /** Gets or sets an object of tooltip to filter buttons.
-      * @Default {null}
+      * @default {null}
       */
     var description: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that Queries to perform filtering
-      * @Default {Object}
+      * @default {Object}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets an object of display name to filter queries.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -2602,57 +2602,57 @@ object Kanban {
     var actionFailure: js.UndefOr[js.Function1[/* e */ ActionFailureEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable allowDragAndDrop behavior on Kanban.
-      * @Default {true}
+      * @default {true}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable drag and drop behavior between Kanban controls.
-      * @Default {false}
+      * @default {false}
       */
     var allowExternalDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** To enable filtering behavior on Kanban.User can specify query in filterSettings collection after enabling allowFiltering.
-      * @Default {false}
+      * @default {false}
       */
     var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to allow card hover actions.
-      * @Default {true}
+      * @default {true}
       */
     var allowHover: js.UndefOr[Boolean] = js.undefined
     
     /** To allow keyboard navigation actions.
-      * @Default {false}
+      * @default {false}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable printing option.
-      * @Default {false}
+      * @default {false}
       */
     var allowPrinting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the scrollbar in the Kanban and view the card by scroll through the Kanban manually.
-      * @Default {false}
+      * @default {false}
       */
     var allowScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** To enable Searching operation in Kanban.
-      * @Default {false}
+      * @default {false}
       */
     var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable allowSelection behavior on Kanban.User can select card and the selected card will be highlighted on Kanban.
-      * @Default {true}
+      * @default {true}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the title of the card.
-      * @Default {false}
+      * @default {false}
       */
     var allowTitle: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the column expand /collapse.
-      * @Default {false}
+      * @default {false}
       */
     var allowToggleColumn: js.UndefOr[Boolean] = js.undefined
     
@@ -2697,7 +2697,7 @@ object Kanban {
     var cardSelecting: js.UndefOr[js.Function1[/* e */ CardSelectingEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to Customize the card settings.
-      * @Default {Object}
+      * @default {Object}
       */
     var cardSettings: js.UndefOr[CardSettings] = js.undefined
     
@@ -2706,7 +2706,7 @@ object Kanban {
     var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified columns.
-      * @Default {Array}
+      * @default {Array}
       */
     var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
@@ -2715,7 +2715,7 @@ object Kanban {
     var contextClick: js.UndefOr[js.Function1[/* e */ ContextClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to customize the context menu behavior of the Kanban.
-      * @Default {Object}
+      * @default {Object}
       */
     var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
@@ -2732,7 +2732,7 @@ object Kanban {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to add customToolbarItems within the toolbar to perform any action in the Kanban.
-      * @Default {[]}
+      * @default {[]}
       */
     var customToolbarItems: js.UndefOr[js.Array[CustomToolbarItem]] = js.undefined
     
@@ -2741,7 +2741,7 @@ object Kanban {
     var dataBound: js.UndefOr[js.Function1[/* e */ DataBoundEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the data to render the Kanban with cards.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -2750,22 +2750,22 @@ object Kanban {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Get or sets an object that indicates whether to customize the editing behavior of the Kanban.
-      * @Default {Object}
+      * @default {Object}
       */
     var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Align content in the Kanban control align from right to left by setting the property as true.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** To show total count of cards in each column.
-      * @Default {false}
+      * @default {false}
       */
     var enableTotalCount: js.UndefOr[Boolean] = js.undefined
     
     /** To perform kanban functionalities with touch interaction.
-      * @Default {true}
+      * @default {true}
       */
     var enableTouch: js.UndefOr[Boolean] = js.undefined
     
@@ -2778,12 +2778,12 @@ object Kanban {
     var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.undefined
     
     /** To customize field mappings for card , editing title and control key parameters
-      * @Default {Object}
+      * @default {Object}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
     /** To customize the filtering behavior based on queries given.
-      * @Default {Array}
+      * @default {Array}
       */
     var filterSettings: js.UndefOr[js.Array[FilterSetting]] = js.undefined
     
@@ -2792,17 +2792,17 @@ object Kanban {
     var headerClick: js.UndefOr[js.Function1[/* e */ HeaderClickEventArgs, Unit]] = js.undefined
     
     /** When set to true, adapts the Kanban layout to fit the screen size of devices on which it renders.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** To map datasource field for column values mapping
-      * @Default {null}
+      * @default {null}
       */
     var keyField: js.UndefOr[String] = js.undefined
     
     /** To change the key in keyboard interaction to Kanban control.
-      * @Default {null}
+      * @default {null}
       */
     var keySettings: js.UndefOr[Any] = js.undefined
     
@@ -2812,17 +2812,17 @@ object Kanban {
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to
       * a particular country or region.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates whether to set the minimum width of the responsive Kanban while isResponsive property is true.
-      * @Default {0}
+      * @default {0}
       */
     var minWidth: js.UndefOr[Double] = js.undefined
     
     /** ej Query to query database of Kanban.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -2831,27 +2831,27 @@ object Kanban {
     var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** Gets or sets an object that indicates whether to customize the scrolling behavior of the Kanban.
-      * @Default {Object}
+      * @default {Object}
       */
     var scrollSettings: js.UndefOr[ScrollSettings] = js.undefined
     
     /** To customize the searching behavior of the Kanban.
-      * @Default {Object}
+      * @default {Object}
       */
     var searchSettings: js.UndefOr[SearchSettings] = js.undefined
     
     /** To allow customize selection type. Accepting types are &quot;single&quot; and &quot;multiple&quot;.
-      * @Default {ej.Kanban.SelectionType.Single}
+      * @default {ej.Kanban.SelectionType.Single}
       */
     var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Gets or sets a value that indicates whether to render kanban columns using without data source.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnWhenEmpty: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of stacked header rows for the Kanban.
-      * @Default {Array}
+      * @default {Array}
       */
     var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.undefined
     
@@ -2860,7 +2860,7 @@ object Kanban {
     var swimlaneClick: js.UndefOr[js.Function1[/* e */ SwimlaneClickEventArgs, Unit]] = js.undefined
     
     /** Customize the settings for swim lane.
-      * @Default {Object}
+      * @default {Object}
       */
     var swimlaneSettings: js.UndefOr[SwimlaneSettings] = js.undefined
     
@@ -2873,7 +2873,7 @@ object Kanban {
     var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows.
-      * @Default {Array}
+      * @default {Array}
       */
     var workflows: js.UndefOr[js.Array[Workflow]] = js.undefined
   }
@@ -3224,17 +3224,17 @@ object Kanban {
   trait ScrollSettings extends StObject {
     
     /** To allow the Kanban to freeze particular swimlane at the time of scrolling , until scroll reaches next swimlane and it continues.
-      * @Default {false}
+      * @default {false}
       */
     var allowFreezeSwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified scroll height.
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified scroll width.
-      * @Default {auto}
+      * @default {auto}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -3265,12 +3265,12 @@ object Kanban {
   trait SearchSettings extends StObject {
     
     /** To customize the fields the searching operation can be perform.
-      * @Default {Array}
+      * @default {Array}
       */
     var fields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To customize the ignore case based on searching.
-      * @Default {true}
+      * @default {true}
       */
     var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
@@ -3279,7 +3279,7 @@ object Kanban {
     var key: js.UndefOr[String] = js.undefined
     
     /** To customize the operator based on searching.
-      * @Default {contains}
+      * @default {contains}
       */
     var operator: js.UndefOr[String] = js.undefined
   }
@@ -3316,7 +3316,7 @@ object Kanban {
   trait StackedHeaderRow extends StObject {
     
     /** Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows.
-      * @Default {Array}
+      * @default {Array}
       */
     var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.undefined
   }
@@ -3341,12 +3341,12 @@ object Kanban {
   trait StackedHeaderRowsStackedHeaderColumn extends StObject {
     
     /** Gets or sets a value that indicates the column for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var column: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the headerText for the particular stacked header column.
-      * @Default {null}
+      * @default {null}
       */
     var headerText: js.UndefOr[String] = js.undefined
   }
@@ -3443,27 +3443,27 @@ object Kanban {
   trait SwimlaneSettings extends StObject {
     
     /** To enable or disable DragAndDrop across swim lane.
-      * @Default {false}
+      * @default {false}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the swimlane rows with specified swimlane headers.
-      * @Default {[]}
+      * @default {[]}
       */
     var headers: js.UndefOr[js.Array[SwimlaneSettingsHeader]] = js.undefined
     
     /** To enable or disable items count in swim lane.
-      * @Default {true}
+      * @default {true}
       */
     var showCount: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable empty swimlane on Kanban board.  It is used to shown empty swimlane when no data's present on headers key mapping value.
-      * @Default {false}
+      * @default {false}
       */
     var showEmptySwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** Customize the settings for unassigned category of swim lane.
-      * @Default {Object}
+      * @default {Object}
       */
     var unassignedGroup: js.UndefOr[SwimlaneSettingsUnassignedGroup] = js.undefined
   }
@@ -3504,12 +3504,12 @@ object Kanban {
   trait SwimlaneSettingsHeader extends StObject {
     
     /** Gets or sets a value that indicates to render the Kanban with specified swimlane header key.
-      * @Default {null}
+      * @default {null}
       */
     var key: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates to render the Kanban with specified swimlane header text.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -3536,12 +3536,12 @@ object Kanban {
   trait SwimlaneSettingsUnassignedGroup extends StObject {
     
     /** To enable or disable unassigned category change with swim lane key values.
-      * @Default {true}
+      * @default {true}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To set the user defined values which are need to categorized as unassigned category swim lane groups.
-      * @Default {[null,undefined,]}
+      * @default {[null,undefined,]}
       */
     var keys: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -3656,12 +3656,12 @@ object Kanban {
   trait TooltipSettings extends StObject {
     
     /** To enable or disable the tooltip display.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** To customize the tooltip display based on your requirements.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
   }
@@ -3688,12 +3688,12 @@ object Kanban {
   trait Workflow extends StObject {
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows allowed Transitions.
-      * @Default {null}
+      * @default {null}
       */
     var allowedTransitions: js.UndefOr[String] = js.undefined
     
     /** Gets or sets an object that indicates to render the Kanban with specified workflows key.
-      * @Default {null}
+      * @default {null}
       */
     var key: js.UndefOr[String | Double] = js.undefined
   }

@@ -21,17 +21,17 @@ object Overview {
   trait Model extends StObject {
     
     /** Defines the height of the overview
-      * @Default {400}
+      * @default {400}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** The sourceId property of overview should be set with the corresponding Diagram ID for you need the overall view.
-      * @Default {null}
+      * @default {null}
       */
     var sourceID: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the overview
-      * @Default {250}
+      * @default {250}
       */
     var width: js.UndefOr[Double] = js.undefined
   }

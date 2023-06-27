@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Tab
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -10,6 +9,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.IButton
 import typings.openui5.sapUiWebcMainLibraryMod.ITab
 import typings.openui5.sapUiWebcMainLibraryMod.TabLayout
 import typings.openui5.sapUiWebcMainLibraryMod.TabsOverflowMode
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -152,13 +152,13 @@ object sapUiWebcMainTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit]
     ): this.type = js.native
     def attachTabSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.TabContainer` itself
       */
@@ -183,7 +183,7 @@ object sapUiWebcMainTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit]
     ): this.type = js.native
     def attachTabSelect(
       /**
@@ -194,7 +194,7 @@ object sapUiWebcMainTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.TabContainer` itself
       */
@@ -233,13 +233,13 @@ object sapUiWebcMainTabContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit]
     ): this.type = js.native
     def detachTabSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerTabSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -247,17 +247,19 @@ object sapUiWebcMainTabContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tabSelect tabSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTabSelect(): this.type = js.native
-    def fireTabSelect(/**
+    def fireTabSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Tab): this.type = js.native
+    mParameters: TabContainer$TabSelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCollapsed collapsed}.
@@ -613,6 +615,38 @@ object sapUiWebcMainTabContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait TabContainer$TabSelectEventParameters extends StObject {
+    
+    /**
+      * The selected `tab`.
+      */
+    var tab: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The selected `tab` index.
+      */
+    var tabIndex: js.UndefOr[int] = js.undefined
+  }
+  object TabContainer$TabSelectEventParameters {
+    
+    inline def apply(): TabContainer$TabSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabContainer$TabSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainer$TabSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTab(value: HTMLElement): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndex(value: int): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    }
+  }
+  
   trait TabContainerSettings
     extends StObject
        with ControlSettings {
@@ -690,7 +724,12 @@ object sapUiWebcMainTabContainerMod {
     /**
       * Fired when a tab is selected.
       */
-    var tabSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tabSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$TabSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the overflow mode of the tab strip. If you have a large number of tabs, only the tabs that can
@@ -767,7 +806,9 @@ object sapUiWebcMainTabContainerMod {
       
       inline def setTabLayoutUndefined: Self = StObject.set(x, "tabLayout", js.undefined)
       
-      inline def setTabSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tabSelect", js.Any.fromFunction1(value))
+      inline def setTabSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$TabSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "tabSelect", js.Any.fromFunction1(value))
       
       inline def setTabSelectUndefined: Self = StObject.set(x, "tabSelect", js.undefined)
       
@@ -782,4 +823,8 @@ object sapUiWebcMainTabContainerMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type TabContainerTabSelectEvent = typings.openui5.sapUiBaseEventMod.default[TabContainer$TabSelectEventParameters]
+  
+  type TabContainerTabSelectEventParameters = TabContainer$TabSelectEventParameters
 }

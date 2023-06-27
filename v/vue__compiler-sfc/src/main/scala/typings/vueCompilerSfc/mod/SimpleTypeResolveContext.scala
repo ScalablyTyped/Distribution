@@ -2,13 +2,15 @@ package typings.vueCompilerSfc.mod
 
 import typings.babelTypes.mod.Node
 import typings.babelTypes.mod.Statement
+import typings.std.NonNullable
 import typings.std.Set
+import typings.vueCompilerSfc.anon.FileExists
 import typings.vueCompilerSfc.anon.PartialSFCScriptCompileOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@vue/compiler-sfc.@vue/compiler-sfc.ScriptCompileContext, 'source' | 'filename' | 'error' | 'options'> & std.Partial<std.Pick<@vue/compiler-sfc.@vue/compiler-sfc.ScriptCompileContext, 'scope' | 'globalScopes' | 'deps'>> & {  ast :std.Array<@babel/types.@babel/types.Statement>} */
+/* Inlined std.Pick<@vue/compiler-sfc.@vue/compiler-sfc.ScriptCompileContext, 'source' | 'filename' | 'error' | 'options'> & std.Partial<std.Pick<@vue/compiler-sfc.@vue/compiler-sfc.ScriptCompileContext, 'scope' | 'globalScopes' | 'deps' | 'fs'>> & {  ast :std.Array<@babel/types.@babel/types.Statement>} */
 trait SimpleTypeResolveContext
   extends StObject
      with TypeResolveContext {
@@ -23,6 +25,8 @@ trait SimpleTypeResolveContext
   var error_Original: js.Function3[/* msg */ String, /* node */ Node, /* scope */ js.UndefOr[TypeScope], scala.Nothing]
   
   var filename: String
+  
+  var fs: js.UndefOr[NonNullable[js.UndefOr[FileExists]]] = js.undefined
   
   var globalScopes: js.UndefOr[js.Array[TypeScope]] = js.undefined
   
@@ -59,6 +63,10 @@ object SimpleTypeResolveContext {
     inline def setError(value: (/* msg */ String, /* node */ Node, /* scope */ js.UndefOr[TypeScope]) => scala.Nothing): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    
+    inline def setFs(value: NonNullable[js.UndefOr[FileExists]]): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
     inline def setGlobalScopes(value: js.Array[TypeScope]): Self = StObject.set(x, "globalScopes", value.asInstanceOf[js.Any])
     

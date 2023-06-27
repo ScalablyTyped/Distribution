@@ -10,9 +10,9 @@ trait RelationshipType
      with GraphObjectType {
   
   /**
-    * Specifies valid origin and destination [entity type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) pairs for this relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#endPoints)
-    */
+  		 * Specifies valid origin and destination [entity type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) pairs for this relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#endPoints)
+  		 */
   var endPoints: js.Array[RelationshipTypeEndPoints] = js.native
 }

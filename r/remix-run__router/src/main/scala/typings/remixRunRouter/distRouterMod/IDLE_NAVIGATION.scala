@@ -31,6 +31,11 @@ object IDLE_NAVIGATION {
   def formMethod: /* undefined */ Any = js.native
   inline def formMethod_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formMethod")(x.asInstanceOf[js.Any])
   
+  @JSImport("@remix-run/router/dist/router", "IDLE_NAVIGATION.json")
+  @js.native
+  def json: /* undefined */ Any = js.native
+  inline def json_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+  
   @JSImport("@remix-run/router/dist/router", "IDLE_NAVIGATION.location")
   @js.native
   def location: /* undefined */ Any = js.native
@@ -40,4 +45,9 @@ object IDLE_NAVIGATION {
   @js.native
   def state: idle = js.native
   inline def state_=(x: idle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("state")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@remix-run/router/dist/router", "IDLE_NAVIGATION.text")
+  @js.native
+  def text: /* undefined */ Any = js.native
+  inline def text_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
 }

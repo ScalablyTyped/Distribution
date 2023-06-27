@@ -23,7 +23,7 @@ import typings.sentryCore.anon.FnCallNameContext
 import typings.sentryCore.anon.FnCallUser
 import typings.sentryCore.anon.PartialInboundFiltersOpti
 import typings.sentryCore.typesHubMod.Carrier
-import typings.sentryReplay.typesTypesMod.ReplayConfiguration
+import typings.sentryReplay.typesTypesReplayMod.ReplayConfiguration
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesClientMod.Client
 import typings.sentryTypes.typesEnvelopeMod.EventEnvelope
@@ -284,7 +284,7 @@ object typesIndexDotbundleDotreplayMod {
   
   @JSImport("@sentry/browser/types/index.bundle.replay", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.51.2" */ String = js.native
+  val SDK_VERSION: /* "7.56.0" */ String = js.native
   
   @JSImport("@sentry/browser/types/index.bundle.replay", "Scope")
   @js.native

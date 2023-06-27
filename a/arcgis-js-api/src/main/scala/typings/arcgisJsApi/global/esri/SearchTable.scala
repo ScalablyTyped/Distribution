@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SearchTable")
 @js.native
 /**
-  * Represents a table to be included in search.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html)
-  */
+		 * Represents a table to be included in search.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html)
+		 */
 open class SearchTable ()
   extends StObject
      with typings.arcgisJsApi.esri.SearchTable {

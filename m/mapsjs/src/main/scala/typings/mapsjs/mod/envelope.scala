@@ -74,7 +74,7 @@ open class envelope protected () extends StObject {
     */
   def getLR(): point = js.native
   
-  /** 
+  /**
     * Gets the maximum x coordinate of the envelope
     * @returns {number} The maximum x coordinate.
     */
@@ -88,7 +88,7 @@ open class envelope protected () extends StObject {
   
   /**
     * Gets the minimum x coordinate of the envelope.
-    * @returns {number} The minimum x coordinate. 
+    * @returns {number} The minimum x coordinate.
     */
   def getMinX(): Double = js.native
   

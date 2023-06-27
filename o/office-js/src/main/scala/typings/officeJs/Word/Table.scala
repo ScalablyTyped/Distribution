@@ -83,7 +83,7 @@ trait Table
   def addRows(insertLocation: start, rowCount: Double, values: js.Array[js.Array[String]]): TableRowCollection = js.native
   
   /**
-    * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+    * Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -154,7 +154,7 @@ trait Table
     * Gets the collection of endnotes in the table.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -178,7 +178,7 @@ trait Table
     * Gets the collection of footnotes in the table.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -308,7 +308,7 @@ trait Table
   def getRange(rangeLocation: whole): Range = js.native
   
   /**
-    * Gets and sets the number of header rows.
+    * Specifies the number of header rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -316,7 +316,7 @@ trait Table
   var headerRowCount: Double = js.native
   
   /**
-    * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * Specifies the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -541,7 +541,7 @@ trait Table
   def setCellPadding(cellPaddingLocation: CellPaddingLocation, cellPadding: Double): Unit = js.native
   
   /**
-    * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+    * Specifies the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -549,7 +549,7 @@ trait Table
   var shadingColor: String = js.native
   
   /**
-    * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -557,7 +557,7 @@ trait Table
   var style: String = js.native
   
   /**
-    * Gets and sets whether the table has banded columns.
+    * Specifies whether the table has banded columns.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -565,7 +565,7 @@ trait Table
   var styleBandedColumns: Boolean = js.native
   
   /**
-    * Gets and sets whether the table has banded rows.
+    * Specifies whether the table has banded rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -573,15 +573,15 @@ trait Table
   var styleBandedRows: Boolean = js.native
   
   /**
-    * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
-    * Gets and sets whether the table has a first column with a special style.
+    * Specifies whether the table has a first column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -589,7 +589,7 @@ trait Table
   var styleFirstColumn: Boolean = js.native
   
   /**
-    * Gets and sets whether the table has a last column with a special style.
+    * Specifies whether the table has a last column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -597,7 +597,7 @@ trait Table
   var styleLastColumn: Boolean = js.native
   
   /**
-    * Gets and sets whether the table has a total (last) row with a special style.
+    * Specifies whether the table has a total (last) row with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -629,7 +629,7 @@ trait Table
   def untrack(): Table = js.native
   
   /**
-    * Gets and sets the text values in the table, as a 2D Javascript array.
+    * Specifies the text values in the table, as a 2D JavaScript array.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -637,7 +637,7 @@ trait Table
   var values: js.Array[js.Array[String]] = js.native
   
   /**
-    * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+    * Specifies the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -645,7 +645,7 @@ trait Table
   var verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = js.native
   
   /**
-    * Gets and sets the width of the table in points.
+    * Specifies the width of the table in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]

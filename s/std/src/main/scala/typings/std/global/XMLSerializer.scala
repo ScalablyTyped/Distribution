@@ -12,6 +12,7 @@ open class XMLSerializer ()
   extends StObject
      with typings.std.XMLSerializer {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLSerializer/serializeToString) */
   /* standard dom */
   /* CompleteClass */
   override def serializeToString(root: typings.std.Node): java.lang.String = js.native

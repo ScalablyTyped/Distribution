@@ -97,6 +97,10 @@ object xtermStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait conpty extends StObject
+  inline def conpty: conpty = "conpty".asInstanceOf[conpty]
+  
+  @js.native
   sealed trait ctrl extends StObject
   inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   
@@ -171,6 +175,10 @@ object xtermStrings {
     extends StObject
        with LogLevel
   inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
+  sealed trait winpty extends StObject
+  inline def winpty: winpty = "winpty".asInstanceOf[winpty]
   
   @js.native
   sealed trait x10 extends StObject

@@ -10,27 +10,27 @@ trait Symbol3DVerticalOffset
      with Accessor {
   
   /**
-    * The maximum vertical symbol offset in world units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#maxWorldLength)
-    */
+  		 * The maximum vertical symbol offset in world units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#maxWorldLength)
+  		 */
   var maxWorldLength: Double = js.native
   
   /**
-    * The minimum vertical symbol offset in world units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#minWorldLength)
-    */
+  		 * The minimum vertical symbol offset in world units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#minWorldLength)
+  		 */
   var minWorldLength: Double = js.native
   
   /**
-    * Vertical symbol offset in screen size.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#screenLength)
-    */
+  		 * Vertical symbol offset in screen size.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-Symbol3DVerticalOffset.html#screenLength)
+  		 */
   var screenLength: Double = js.native
 }

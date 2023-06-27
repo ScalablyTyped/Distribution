@@ -3,9 +3,14 @@ package typings.openui5
 import typings.openui5.anon.Apply
 import typings.openui5.anon.AutoExpandSelect
 import typings.openui5.anon.CanonicalPath
-import typings.openui5.anon.NoPatch
+import typings.openui5.anon.Filter
 import typings.openui5.anon.PatchWithoutSideEffects
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiModelModelMod.Model$ParseErrorEventParameters
+import typings.openui5.sapUiModelModelMod.Model$PropertyChangeEventParameters
+import typings.openui5.sapUiModelModelMod.Model$RequestCompletedEventParameters
+import typings.openui5.sapUiModelModelMod.Model$RequestFailedEventParameters
+import typings.openui5.sapUiModelModelMod.Model$RequestSentEventParameters
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -97,7 +102,7 @@ object sapUiModelOdataV4OdatamodelMod {
     extends typings.openui5.sapUiModelModelMod.default {
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Attach event handler `fnFunction` to the 'dataReceived' event of this binding.
       *
@@ -119,7 +124,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Attach event handler `fnFunction` to the 'dataRequested' event of this binding.
       *
@@ -141,7 +146,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * See {@link sap.ui.base.EventProvider#attachEvent}
       * See:
@@ -194,7 +199,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Attach event handler `fnFunction` to the 'sessionTimeout' event of this model.
       *
@@ -286,7 +291,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -319,7 +324,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -352,7 +357,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -385,7 +390,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -418,7 +423,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -451,7 +456,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -484,7 +489,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -517,7 +522,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -550,7 +555,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -583,7 +588,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -616,7 +621,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -649,7 +654,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: js.Array[typings.openui5.sapUiModelSorterMod.default],
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -682,7 +687,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -715,7 +720,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -748,7 +753,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: Unit,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -781,7 +786,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -814,7 +819,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -847,7 +852,7 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     vSorters: typings.openui5.sapUiModelSorterMod.default,
       /**
-      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+      * The dynamic application filters to be used initially. Call {@link sap.ui.model.odata.v4.ODataListBinding#filter }
       * to replace them. Static filters, as defined in the '$filter' binding parameter, are always combined with
       * the dynamic filters using a logical `AND`. Supported since 1.39.0.
       */
@@ -884,7 +889,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * or if it is relative to a context created via {@link #createBindingContext}. The binding parameters are
       * ignored in case the binding creates no own data service request or in case the binding points to metadata.
       */
-    mParameters: NoPatch
+    mParameters: Filter
     ): typings.openui5.sapUiModelOdataV4OdatapropertybindingMod.default = js.native
     def bindProperty(
       /**
@@ -905,11 +910,11 @@ object sapUiModelOdataV4OdatamodelMod {
       * or if it is relative to a context created via {@link #createBindingContext}. The binding parameters are
       * ignored in case the binding creates no own data service request or in case the binding points to metadata.
       */
-    mParameters: NoPatch
+    mParameters: Filter
     ): typings.openui5.sapUiModelOdataV4OdatapropertybindingMod.default = js.native
     
     /**
-      * @SINCE 1.71.0
+      * @since 1.71.0
       *
       * Changes the HTTP headers used for data and metadata requests sent by this model.
       *
@@ -935,7 +940,7 @@ object sapUiModelOdataV4OdatamodelMod {
     mHeaders: js.Object): Unit = js.native
     
     /**
-      * @SINCE 1.103.0
+      * @since 1.103.0
       *
       * Deletes the entity with the given canonical path on the server and in all bindings. Pending changes in
       * contexts for this entity or in dependents thereof are canceled.
@@ -951,29 +956,38 @@ object sapUiModelOdataV4OdatamodelMod {
       */
     def delete(
       /**
-      * The canonical path of the entity to delete, starting with a '/'
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
       */
-    sCanonicalPath: String
+    vCanonicalPath: String
     ): js.Promise[Any] = js.native
     def delete(
       /**
-      * The canonical path of the entity to delete, starting with a '/'
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
       */
-    sCanonicalPath: String,
+    vCanonicalPath: String,
       /**
-      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId
-      * update group ID} is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
       */
     sGroupId: String
     ): js.Promise[Any] = js.native
     def delete(
       /**
-      * The canonical path of the entity to delete, starting with a '/'
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
       */
-    sCanonicalPath: String,
+    vCanonicalPath: String,
       /**
-      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId
-      * update group ID} is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
       */
     sGroupId: String,
       /**
@@ -984,12 +998,76 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.Promise[Any] = js.native
     def delete(
       /**
-      * The canonical path of the entity to delete, starting with a '/'
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
       */
-    sCanonicalPath: String,
+    vCanonicalPath: String,
       /**
-      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId
-      * update group ID} is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      */
+    sGroupId: Unit,
+      /**
+      * If `true`, deletion fails if the entity does not exist (HTTP status code 404 or 412 due to the `If-Match:
+      * *` header); otherwise we assume that it has already been deleted by someone else and report success
+      */
+    bRejectIfNotFound: Boolean
+    ): js.Promise[Any] = js.native
+    def delete(
+      /**
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
+      */
+    vCanonicalPath: typings.openui5.sapUiModelOdataV4ContextMod.default
+    ): js.Promise[Any] = js.native
+    def delete(
+      /**
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
+      */
+    vCanonicalPath: typings.openui5.sapUiModelOdataV4ContextMod.default,
+      /**
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      */
+    sGroupId: String
+    ): js.Promise[Any] = js.native
+    def delete(
+      /**
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
+      */
+    vCanonicalPath: typings.openui5.sapUiModelOdataV4ContextMod.default,
+      /**
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
+      */
+    sGroupId: String,
+      /**
+      * If `true`, deletion fails if the entity does not exist (HTTP status code 404 or 412 due to the `If-Match:
+      * *` header); otherwise we assume that it has already been deleted by someone else and report success
+      */
+    bRejectIfNotFound: Boolean
+    ): js.Promise[Any] = js.native
+    def delete(
+      /**
+      * The canonical path of the entity to delete, starting with a '/'; since 1.115.0, a context instance can
+      * be given to determine both the path and ETag used for deletion on the server, but no bindings are affected
+      * and {@link sap.ui.model.odata.v4.Context#delete} should be used with a `null` group ID to clean up on
+      * the client side later
+      */
+    vCanonicalPath: typings.openui5.sapUiModelOdataV4ContextMod.default,
+      /**
+      * The group ID that is used for the DELETE request; if not specified, the model's {@link #getUpdateGroupId update group ID }
+      * is used; the resulting group ID must not have {@link sap.ui.model.odata.v4.SubmitMode.API}
       */
     sGroupId: Unit,
       /**
@@ -1000,14 +1078,14 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */
     def destroyBindingContext(): Unit = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Detach event handler `fnFunction` from the 'dataReceived' event of this model.
       *
@@ -1029,7 +1107,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Detach event handler `fnFunction` from the 'dataRequested' event of this model.
       *
@@ -1051,7 +1129,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66.0
+      * @since 1.66.0
       *
       * Detach event handler `fnFunction` from the 'sessionTimeout' event of this model.
       *
@@ -1073,7 +1151,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.73.0
+      * @since 1.73.0
       *
       * Returns the model's bindings.
       *
@@ -1082,7 +1160,7 @@ object sapUiModelOdataV4OdatamodelMod {
     def getAllBindings(): js.Array[typings.openui5.sapUiModelBindingMod.default] = js.native
     
     /**
-      * @SINCE 1.41.0
+      * @since 1.41.0
       *
       * Returns the model's group ID.
       * See:
@@ -1093,7 +1171,7 @@ object sapUiModelOdataV4OdatamodelMod {
     def getGroupId(): String = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Returns a map of HTTP headers used for data and metadata requests. While the "X-CSRF-Token" header is
       * not used for metadata requests, it is still included here if available. The "SAP-ContextId" header is
@@ -1112,7 +1190,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.Object = js.native
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Returns a context with the given path belonging to a matching list binding that has been marked with
       * `$$getKeepAliveContext` (see {@link #bindList}). If such a matching binding can be found, a context is
@@ -1126,8 +1204,8 @@ object sapUiModelOdataV4OdatamodelMod {
       * binding differ from the given `mParameters` (except `$$groupId` which is especially used for the context),
       * that binding later runs into an error when trying to read data.
       *
-      * **Note**: The context received by this function may change its {@link sap.ui.model.odata.v4.Context#getBinding
-      * binding} during its lifetime.
+      * **Note**: The context received by this function may change its {@link sap.ui.model.odata.v4.Context#getBinding binding }
+      * during its lifetime.
       *
       * @returns The kept-alive context
       */
@@ -1156,7 +1234,7 @@ object sapUiModelOdataV4OdatamodelMod {
     bRequestMessages: Boolean,
       /**
       * Parameters for the context or the temporary binding; supported since 1.100.0. All custom query options
-      * and the following binding-specific parameters for a list binding may be given (see {@link #bindList}
+      * and the following binding-specific parameters for a list binding may be given (see {@link #bindList }
       * for details).
       */
     mParameters: PatchWithoutSideEffects
@@ -1172,14 +1250,14 @@ object sapUiModelOdataV4OdatamodelMod {
     bRequestMessages: Unit,
       /**
       * Parameters for the context or the temporary binding; supported since 1.100.0. All custom query options
-      * and the following binding-specific parameters for a list binding may be given (see {@link #bindList}
+      * and the following binding-specific parameters for a list binding may be given (see {@link #bindList }
       * for details).
       */
     mParameters: PatchWithoutSideEffects
     ): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
     
     /**
-      * @SINCE 1.107.0
+      * @since 1.107.0
       *
       * Takes the metadata for the given meta path and calculates the key predicate by taking the key properties
       * from the given entity instance.
@@ -1201,7 +1279,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.49.0
+      * @since 1.49.0
       *
       * Returns the version of the OData service.
       *
@@ -1210,21 +1288,21 @@ object sapUiModelOdataV4OdatamodelMod {
     def getODataVersion(): String = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */
     def getObject(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */
     def getOriginalProperty(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       * See:
@@ -1233,7 +1311,7 @@ object sapUiModelOdataV4OdatamodelMod {
     def getProperty(): Unit = js.native
     
     /**
-      * @SINCE 1.107.0
+      * @since 1.107.0
       *
       * Returns this model's root URL of the service to request data from (as defined by the "serviceUrl" model
       * parameter, see {@link sap.ui.model.odata.v4.ODataModel#constructor}), without query options.
@@ -1243,7 +1321,7 @@ object sapUiModelOdataV4OdatamodelMod {
     def getServiceUrl(): String = js.native
     
     /**
-      * @SINCE 1.41.0
+      * @since 1.41.0
       *
       * Returns the model's update group ID.
       * See:
@@ -1254,7 +1332,7 @@ object sapUiModelOdataV4OdatamodelMod {
     def getUpdateGroupId(): String = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns `true` if there are pending changes, which can be updates, created entities (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
       * or entity deletions (see {@link sap.ui.model.odata.v4.Context#delete}) that have not yet been successfully
@@ -1284,7 +1362,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       * @deprecated (since 1.39.0) - Use {@link sap.ui.model.odata.v4.Context#requestCanonicalPath} instead.
       *
       * Returns a promise for the "canonical path" of the entity for the given context. According to "4.3.1 Canonical URL" of the specification "OData Version 4.0 Part 2: URL Conventions", this is
@@ -1304,7 +1382,7 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.107.0
+      * @since 1.107.0
       *
       * Requests the metadata for the given meta path and calculates the key predicate by taking the key properties
       * from the given entity instance.
@@ -1327,13 +1405,12 @@ object sapUiModelOdataV4OdatamodelMod {
     ): js.Promise[js.UndefOr[String]] = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Resets all property changes, created entities, and entity deletions associated with the given group ID
       * which have not been successfully submitted via {@link #submitBatch}. Resets also invalid user input for
-      * the same group ID and (since 1.111.0) inactive contexts which had their activation prevented (see {@link
-      * sap.ui.model.odata.v4.Context#isInactive}). This function does not reset the execution of OData operations
-      * (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
+      * the same group ID and (since 1.111.0) inactive contexts which had their activation prevented (see {@link sap.ui.model.odata.v4.Context#isInactive}).
+      * This function does not reset the execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
       * See:
       * 	sap.ui.model.odata.v4.ODataModel#constructor
       * 	#hasPendingChanges
@@ -1349,20 +1426,20 @@ object sapUiModelOdataV4OdatamodelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       */
     def setLegacySyntax(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Submits the requests associated with the given group ID in one batch request. Requests from subsequent
       * calls to this method for the same group ID may be combined in one batch request using separate change
-      * sets. For group IDs with {@link sap.ui.model.odata.v4.SubmitMode.Auto}, only a single change set is used;
-      * this method is useful to repeat failed updates or creates (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
-      * together with all other requests for the given group ID in one batch request.
+      * sets. For group IDs with {@link sap.ui.model.odata.v4.SubmitMode.Auto}, this method is useful to repeat
+      * failed updates or creates (see {@link sap.ui.model.odata.v4.ODataListBinding#create}) together with all
+      * other requests for the given group ID in one batch request.
       *
       * {@link #resetChanges} can be used to reset all pending changes instead. After that, or when the promise
       * returned by this method is fulfilled, {@link #hasPendingChanges} will not report pending changes anymore.
@@ -1377,4 +1454,52 @@ object sapUiModelOdataV4OdatamodelMod {
     sGroupId: String
     ): js.Promise[Unit] = js.native
   }
+  
+  trait ODataModel$DataReceivedEventParameters extends StObject
+  
+  trait ODataModel$DataRequestedEventParameters extends StObject
+  
+  type ODataModel$ParseErrorEventParameters = Model$ParseErrorEventParameters
+  
+  type ODataModel$PropertyChangeEventParameters = Model$PropertyChangeEventParameters
+  
+  type ODataModel$RequestCompletedEventParameters = Model$RequestCompletedEventParameters
+  
+  type ODataModel$RequestFailedEventParameters = Model$RequestFailedEventParameters
+  
+  type ODataModel$RequestSentEventParameters = Model$RequestSentEventParameters
+  
+  trait ODataModel$SessionTimeoutEventParameters extends StObject
+  
+  type ODataModelDataReceivedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$DataReceivedEventParameters]
+  
+  type ODataModelDataReceivedEventParameters = ODataModel$DataReceivedEventParameters
+  
+  type ODataModelDataRequestedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$DataRequestedEventParameters]
+  
+  type ODataModelDataRequestedEventParameters = ODataModel$DataRequestedEventParameters
+  
+  type ODataModelParseErrorEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$ParseErrorEventParameters]
+  
+  type ODataModelParseErrorEventParameters = ODataModel$ParseErrorEventParameters
+  
+  type ODataModelPropertyChangeEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$PropertyChangeEventParameters]
+  
+  type ODataModelPropertyChangeEventParameters = ODataModel$PropertyChangeEventParameters
+  
+  type ODataModelRequestCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestCompletedEventParameters]
+  
+  type ODataModelRequestCompletedEventParameters = ODataModel$RequestCompletedEventParameters
+  
+  type ODataModelRequestFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestFailedEventParameters]
+  
+  type ODataModelRequestFailedEventParameters = ODataModel$RequestFailedEventParameters
+  
+  type ODataModelRequestSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestSentEventParameters]
+  
+  type ODataModelRequestSentEventParameters = ODataModel$RequestSentEventParameters
+  
+  type ODataModelSessionTimeoutEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$SessionTimeoutEventParameters]
+  
+  type ODataModelSessionTimeoutEventParameters = ODataModel$SessionTimeoutEventParameters
 }

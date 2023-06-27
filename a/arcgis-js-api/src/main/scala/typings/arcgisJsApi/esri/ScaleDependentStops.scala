@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleDependentStops extends StObject {
   
   /**
-    * An array of objects that define the size of the icon (or alternatively the width of the polygon outline) at the given scale `value`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
-    */
+  		 * An array of objects that define the size of the icon (or alternatively the width of the polygon outline) at the given scale `value`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
+  		 */
   var stops: js.Array[SizeStop]
   
   /**
-    * This value must be `outline` when scaling polygon outline widths based on the view scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
-    */
+  		 * This value must be `outline` when scaling polygon outline widths based on the view scale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
+  		 */
   var target: js.UndefOr[String] = js.undefined
   
   /**
-    * Value must be `size`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
-    */
+  		 * Value must be `size`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
+  		 */
   var `type`: String
   
   /**
-    * This value must be `$view.scale`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
-    */
+  		 * This value must be `$view.scale`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
+  		 */
   var valueExpression: String
 }
 object ScaleDependentStops {

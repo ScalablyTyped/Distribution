@@ -10,89 +10,89 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait pieChartCreateRendererParams extends StObject {
   
   /**
-    * A set of complementary numeric fields/expressions used to create the charts.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * A set of complementary numeric fields/expressions used to create the charts.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var attributes: js.Array[pieChartCreateRendererParamsAttributes]
   
   /**
-    * Indicates whether the generated renderer is for a binning visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Indicates whether the generated renderer is for a binning visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to include data-driven size in the final renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Indicates whether to include data-driven size in the final renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var includeSizeVariable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer for which the visualization is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer for which the visualization is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var legendOptions: js.UndefOr[pieChartCreateRendererParamsLegendOptions] = js.undefined
   
   /**
-    * Only for polygon layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Only for polygon layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * In authoring apps, the user may select a pre-defined color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * In authoring apps, the user may select a pre-defined color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var pieChartScheme: js.UndefOr[PieChartScheme] = js.undefined
   
   /**
-    * Determines whether to create a pie chart or a donut chart.
-    *
-    * @default "pie"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Determines whether to create a pie chart or a donut chart.
+  		 *
+  		 * @default "pie"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var shape: js.UndefOr[pie | donut] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Indicates whether chart sizes should vary based on view scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
-    */
+  		 * Indicates whether chart sizes should vary based on view scale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#createRenderer)
+  		 */
   var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The view instance in which the visualization will be rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view instance in which the visualization will be rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: MapView
 }
 object pieChartCreateRendererParams {
   
   inline def apply(
     attributes: js.Array[pieChartCreateRendererParamsAttributes],
-    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer,
     view: MapView
   ): pieChartCreateRendererParams = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
@@ -114,7 +114,7 @@ object pieChartCreateRendererParams {
     
     inline def setIncludeSizeVariableUndefined: Self = StObject.set(x, "includeSizeVariable", js.undefined)
     
-    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: pieChartCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

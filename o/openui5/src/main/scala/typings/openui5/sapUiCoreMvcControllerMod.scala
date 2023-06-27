@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.AddToDependents
-import typings.openui5.anon.NameString
+import typings.openui5.anon.Name
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,15 +17,9 @@ object sapUiCoreMvcControllerMod {
       * Instantiates a (MVC-style) controller.
       */
     def this(/**
-      * The name of the controller to instantiate. If a controller is defined as real sub-class, the "arguments"
-      * of the sub-class constructor should be given instead.
+      * The name of the controller to instantiate.
       */
     sName: String) = this()
-    def this(/**
-      * The name of the controller to instantiate. If a controller is defined as real sub-class, the "arguments"
-      * of the sub-class constructor should be given instead.
-      */
-    sName: js.Array[js.Object]) = this()
   }
   /* static members */
   object default {
@@ -35,7 +29,7 @@ object sapUiCoreMvcControllerMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Creates an instance of controller class.
       *
@@ -44,7 +38,7 @@ object sapUiCoreMvcControllerMod {
     inline def create(/**
       * A map containing the controller configuration options.
       */
-    mOptions: NameString): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    mOptions: Name): js.Promise[Controller] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Controller]]
     
     /**
       * Creates a new subclass of class sap.ui.core.mvc.Controller with name `sClassName` and enriches it with
@@ -107,15 +101,15 @@ object sapUiCoreMvcControllerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Registers a callback module, which provides code enhancements for the lifecycle and event handler functions
       * of a specific controller. The code enhancements are returned either in sync or async mode.
       *
       * The extension provider module provides the `getControllerExtensions` function which returns either directly
       * an array of objects or a Promise that returns an array of objects when it resolves. These objects are
-      * object literals defining the methods and properties of the controller in a similar way as for {@link
-      * sap.ui.core.mvc.Controller Controller} subclasses.
+      * object literals defining the methods and properties of the controller in a similar way as for {@link sap.ui.core.mvc.Controller Controller }
+      * subclasses.
       *
       * **Example for a callback module definition (sync):**
       * ```javascript
@@ -225,7 +219,7 @@ object sapUiCoreMvcControllerMod {
     sId: String): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.23.0
+      * @since 1.23.0
       *
       * Gets the component of the controller's view
       *
@@ -244,7 +238,7 @@ object sapUiCoreMvcControllerMod {
     def getView(): js.UndefOr[typings.openui5.sapUiCoreMvcViewMod.default] = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Loads a Fragment by {@link sap.ui.core.Fragment.load}.
       *
@@ -263,11 +257,11 @@ object sapUiCoreMvcControllerMod {
       * **Destroy behavior**: Different scenarios concerning the destruction of the fragment's content exist,
       * of which some must be addressed by the caller, while others are handled automatically.
       * 	 - The controller instance is destroyed before the fragment content creation has finished: In this case,
-      * 			the controller instance takes care of asynchronously destroying the fragment content
+      *     the controller instance takes care of asynchronously destroying the fragment content
       * 	 - The fragment content is aggregated within a control (e.g. `dependents` aggregation by default): In
-      * 			this case, the content will be destroyed during the regular destroy lifecycle.
+      *     this case, the content will be destroyed during the regular destroy lifecycle.
       * 	 - The fragment content is not aggregated within a control: In this case, ***it must be destroyed manually***
-      * 			in the exit hook of the controller.
+      *     in the exit hook of the controller.
       *
       * @returns A Promise that resolves with the fragment content
       */
@@ -279,7 +273,7 @@ object sapUiCoreMvcControllerMod {
       ] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called every time the View is rendered, after the HTML is placed in the DOM-Tree. It can
       * be used to apply additional changes to the DOM after the Renderer has finished. (Even though this method
@@ -291,7 +285,7 @@ object sapUiCoreMvcControllerMod {
     def onAfterRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called every time the View is rendered, before the Renderer is called and the HTML is
       * placed in the DOM-Tree. It can be used to perform clean-up-tasks before re-rendering. (Even though this
@@ -303,7 +297,7 @@ object sapUiCoreMvcControllerMod {
     def onBeforeRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called upon desctuction of the View. The controller should perform its internal destruction
       * in this hook. It is only called once per View instance, unlike the onBeforeRendering and onAfterRendering
@@ -313,7 +307,7 @@ object sapUiCoreMvcControllerMod {
     def onExit(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is called upon initialization of the View. The controller can perform its internal setup
       * in this hook. It is only called once per View instance, unlike the onBeforeRendering and onAfterRendering

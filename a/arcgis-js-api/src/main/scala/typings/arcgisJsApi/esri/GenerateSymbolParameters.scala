@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateSymbolParameters extends StObject {
   
   /**
-    * The SVG image to convert.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#GenerateSymbolParameters)
-    */
+  		 * The SVG image to convert.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#GenerateSymbolParameters)
+  		 */
   var svgImage: js.UndefOr[String | FormData | HTMLFormElement] = js.undefined
 }
 object GenerateSymbolParameters {

@@ -1,8 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.ColumnWidth
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
+import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -136,13 +136,13 @@ object sapMPluginsColumnResizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit]
     ): this.type = js.native
     def attachColumnResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.ColumnResizer` itself
       */
@@ -167,7 +167,7 @@ object sapMPluginsColumnResizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit]
     ): this.type = js.native
     def attachColumnResize(
       /**
@@ -178,7 +178,7 @@ object sapMPluginsColumnResizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.ColumnResizer` itself
       */
@@ -196,13 +196,13 @@ object sapMPluginsColumnResizerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit]
     ): this.type = js.native
     def detachColumnResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnResizerColumnResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -210,7 +210,7 @@ object sapMPluginsColumnResizerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:columnResize columnResize} to attached listeners.
       *
@@ -220,13 +220,15 @@ object sapMPluginsColumnResizerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireColumnResize(): Boolean = js.native
-    def fireColumnResize(/**
+    def fireColumnResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ColumnWidth): Boolean = js.native
+    mParameters: ColumnResizer$ColumnResizeEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Displays the resize handle for the provided column `DOM` reference.
       */
@@ -236,6 +238,42 @@ object sapMPluginsColumnResizerMod {
     oDomRef: HTMLElement): Unit = js.native
   }
   
+  trait ColumnResizer$ColumnResizeEventParameters extends StObject {
+    
+    /**
+      * The column being resized.
+      */
+    var column: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+    
+    /**
+      * The new width of the column.
+      */
+    var width: js.UndefOr[CSSSize] = js.undefined
+  }
+  object ColumnResizer$ColumnResizeEventParameters {
+    
+    inline def apply(): ColumnResizer$ColumnResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColumnResizer$ColumnResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnResizer$ColumnResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      
+      inline def setWidth(value: CSSSize): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
+  type ColumnResizerColumnResizeEvent = typings.openui5.sapUiBaseEventMod.default[ColumnResizer$ColumnResizeEventParameters]
+  
+  type ColumnResizerColumnResizeEventParameters = ColumnResizer$ColumnResizeEventParameters
+  
   trait ColumnResizerSettings
     extends StObject
        with ElementSettings {
@@ -243,7 +281,12 @@ object sapMPluginsColumnResizerMod {
     /**
       * This event is fired when the column is resized.
       */
-    var columnResize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var columnResize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColumnResizer$ColumnResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object ColumnResizerSettings {
     
@@ -255,7 +298,9 @@ object sapMPluginsColumnResizerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ColumnResizerSettings] (val x: Self) extends AnyVal {
       
-      inline def setColumnResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "columnResize", js.Any.fromFunction1(value))
+      inline def setColumnResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColumnResizer$ColumnResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "columnResize", js.Any.fromFunction1(value))
       
       inline def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
     }

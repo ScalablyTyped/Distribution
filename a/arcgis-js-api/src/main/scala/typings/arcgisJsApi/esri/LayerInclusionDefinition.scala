@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerInclusionDefinition extends StObject {
   
   /**
-    * A map of the specific members of the named type to be included.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionDefinition)
-    */
+  		 * A map of the specific members of the named type to be included.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionDefinition)
+  		 */
   var members: Any
   
   /**
-    * If `true` all of the instances of the named type will be included regardless of if there is a defined list of members.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionDefinition)
-    */
+  		 * If `true` all of the instances of the named type will be included regardless of if there is a defined list of members.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionDefinition)
+  		 */
   var useAllData: Boolean
 }
 object LayerInclusionDefinition {

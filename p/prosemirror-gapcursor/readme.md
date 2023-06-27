@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-gapcursor
 
-Typings are for version 1.3.1
+Typings are for version 1.3.2
 
 ## Library description:
 ProseMirror plugin for cursors at normally impossible-to-reach positions

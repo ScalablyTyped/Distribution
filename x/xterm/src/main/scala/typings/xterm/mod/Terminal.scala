@@ -435,13 +435,12 @@ open class Terminal ()
   def registerLinkProvider(linkProvider: ILinkProvider): IDisposable = js.native
   
   /**
-    * Adds a marker to the normal buffer and returns it. If the alt buffer is
-    * active, undefined is returned.
+    * Adds a marker to the normal buffer and returns it.
     * @param cursorYOffset The y position offset of the marker from the cursor.
     * @returns The new marker or undefined.
     */
-  def registerMarker(): js.UndefOr[IMarker] = js.native
-  def registerMarker(cursorYOffset: Double): js.UndefOr[IMarker] = js.native
+  def registerMarker(): IMarker = js.native
+  def registerMarker(cursorYOffset: Double): IMarker = js.native
   
   /**
     * Perform a full reset (RIS, aka '\x1bc').

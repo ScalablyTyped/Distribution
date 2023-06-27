@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingSmartMappingSliderBaseMod {
   @JSImport("esri/widgets/smartMapping/SmartMappingSliderBase", JSImport.Namespace)
   @js.native
   /**
-    * The base class for all Smart Mapping slider widgets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html)
-    */
+  		 * The base class for all Smart Mapping slider widgets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html)
+  		 */
   open class ^ ()
     extends StObject
        with SmartMappingSliderBase {

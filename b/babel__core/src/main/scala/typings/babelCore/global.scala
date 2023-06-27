@@ -41,6 +41,7 @@ import typings.babelCore.babelCoreStrings.VerticallineGreaterthansign
 import typings.babelCore.babelCoreStrings.VerticallineVerticalline
 import typings.babelCore.babelCoreStrings.`--`
 import typings.babelCore.babelCoreStrings.`-_`
+import typings.babelCore.babelCoreStrings.`await using`
 import typings.babelCore.babelCoreStrings.`object`
 import typings.babelCore.babelCoreStrings.`throw`
 import typings.babelCore.babelCoreStrings.`using`
@@ -78,8 +79,11 @@ import typings.babelCore.mod.TransformOptions
 import typings.babelTemplate.mod.DefaultTemplateBuilder
 import typings.babelTraverse.anon.Container
 import typings.babelTraverse.anon.FnCall
+import typings.babelTraverse.anon.Hub
+import typings.babelTraverse.anon.Typeofcache
 import typings.babelTraverse.anon.Typeofvisitors
-import typings.babelTraverse.mod.Hub
+import typings.babelTraverse.mod.HubInterface
+import typings.babelTraverse.mod.NodeKeyOfArrays
 import typings.babelTraverse.mod.Scope
 import typings.babelTraverse.mod.TraverseOptions
 import typings.babelTraverse.mod.Visitor
@@ -387,7 +391,7 @@ object global {
     @js.native
     open class NodePath[T] protected ()
       extends typings.babelCore.mod.NodePath[T] {
-      def this(hub: Hub, parent: Node) = this()
+      def this(hub: HubInterface, parent: Node) = this()
     }
     /* static members */
     object NodePath {
@@ -401,6 +405,7 @@ object global {
           ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.babelTraverse.mod.NodePath[
             /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
           ]]
+      inline def get[C /* <: Node */, L /* <: NodeKeyOfArrays[C] */](opts: Hub[C, L]): /* import warning: importer.ImportType#apply Failed type conversion: C[L] extends std.Array<@babel/types.@babel/types.Node | null | undefined> ? @babel/traverse.@babel/traverse.NodePath<C[L][number]> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(opts.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: C[L] extends std.Array<@babel/types.@babel/types.Node | null | undefined> ? @babel/traverse.@babel/traverse.NodePath<C[L][number]> : never */ js.Any]
     }
     
     inline def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions]): ConfigItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any]).asInstanceOf[ConfigItem]
@@ -488,75 +493,68 @@ object global {
     
     object traverse {
       
+      inline def apply(parent: Node): Unit = ^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: Unit, scope: Unit, state: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def apply(
-        parent: js.UndefOr[Node | js.Array[Node] | Null],
-        opts: js.UndefOr[TraverseOptions[Node]],
-        scope: js.UndefOr[Scope],
-        state: js.UndefOr[Any],
-        parentPath: js.UndefOr[typings.babelTraverse.mod.NodePath[Node]]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: js.Array[Node],
-        opts: TraverseOptions[S],
-        scope: Unit,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: js.Array[Node],
-        opts: TraverseOptions[S],
-        scope: Scope,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: Null,
-        opts: TraverseOptions[S],
-        scope: Unit,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: Null,
-        opts: TraverseOptions[S],
-        scope: Scope,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: Unit,
-        opts: TraverseOptions[S],
-        scope: Unit,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
-        parent: Unit,
-        opts: TraverseOptions[S],
-        scope: Scope,
-        state: S,
-        parentPath: typings.babelTraverse.mod.NodePath[Node]
-      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
         parent: Node,
-        opts: TraverseOptions[S],
+        opts: Unit,
         scope: Unit,
-        state: S,
+        state: Any,
         parentPath: typings.babelTraverse.mod.NodePath[Node]
       ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def apply[S](
+      inline def apply(
         parent: Node,
-        opts: TraverseOptions[S],
+        opts: Unit,
+        scope: Unit,
+        state: Unit,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: Unit, scope: Scope): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: Unit, scope: Scope, state: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: Unit,
         scope: Scope,
-        state: S,
+        state: Any,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: Unit,
+        scope: Scope,
+        state: Unit,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: TraverseOptions[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: TraverseOptions[Node], scope: Unit, state: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Any,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Unit,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: TraverseOptions[Node], scope: Scope): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(parent: Node, opts: TraverseOptions[Node], scope: Scope, state: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Any,
+        parentPath: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def apply(
+        parent: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Unit,
         parentPath: typings.babelTraverse.mod.NodePath[Node]
       ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
@@ -564,17 +562,143 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
+      @JSGlobal("babel.traverse.cache")
+      @js.native
+      def cache: Typeofcache = js.native
+      inline def cache_=(x: Typeofcache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cache")(x.asInstanceOf[js.Any])
+      
+      inline def cheap(node: Node, enter: js.Function1[/* node */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cheap")(node.asInstanceOf[js.Any], enter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def clearNode(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def clearNode(
+        node: Node,
+        opts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemovePropertiesOptions */ Any
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearNode")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSGlobal("babel.traverse.explode")
       @js.native
       def explode: FnCall = js.native
-      inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply Failed type conversion: {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSSatisfiesExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSSatisfiesExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any]
+      inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply Failed type conversion: {[ Type in std.Exclude<@babel/types.@babel/types.Node, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.DeprecatedAliases * / any>['type'] ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ Type in std.Exclude<@babel/types.@babel/types.Node, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.DeprecatedAliases * / any>['type'] ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any]
       inline def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
+      
+      inline def hasType(
+        tree: Node,
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelCore.babelCoreStrings.ClassAccessorProperty, typings.babelCore.babelCoreStrings.AnyTypeAnnotation, typings.babelCore.babelCoreStrings.ArgumentPlaceholder */ Any
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasType")(tree.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def hasType(
+        tree: Node,
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelCore.babelCoreStrings.ClassAccessorProperty, typings.babelCore.babelCoreStrings.AnyTypeAnnotation, typings.babelCore.babelCoreStrings.ArgumentPlaceholder */ Any,
+        denylistTypes: js.Array[String]
+      ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasType")(tree.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], denylistTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
+      inline def node(node: Node, opts: TraverseOptions[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(node: Node, opts: TraverseOptions[Node], scope: Unit, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Any,
+        path: Unit,
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Any,
+        path: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Any,
+        path: typings.babelTraverse.mod.NodePath[Node],
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Unit,
+        path: Unit,
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Unit,
+        path: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Unit,
+        state: Unit,
+        path: typings.babelTraverse.mod.NodePath[Node],
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(node: Node, opts: TraverseOptions[Node], scope: Scope): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(node: Node, opts: TraverseOptions[Node], scope: Scope, state: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Any,
+        path: Unit,
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Any,
+        path: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Any,
+        path: typings.babelTraverse.mod.NodePath[Node],
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Unit,
+        path: Unit,
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Unit,
+        path: typings.babelTraverse.mod.NodePath[Node]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def node(
+        node: Node,
+        opts: TraverseOptions[Node],
+        scope: Scope,
+        state: Unit,
+        path: typings.babelTraverse.mod.NodePath[Node],
+        skipKeys: Record[String, Boolean]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], path.asInstanceOf[js.Any], skipKeys.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def removeProperties(tree: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("removeProperties")(tree.asInstanceOf[js.Any]).asInstanceOf[Node]
+      inline def removeProperties(
+        tree: Node,
+        opts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemovePropertiesOptions */ Any
+      ): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProperties")(tree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Node]
       
       @JSGlobal("babel.traverse.verify")
       @js.native
-      def verify: js.Function1[/* visitor */ Visitor[js.Object], Unit] = js.native
-      inline def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def verify_=(x: js.Function1[/* visitor */ Visitor[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verify")(x.asInstanceOf[js.Any])
+      def verify: js.Function1[/* visitor */ Visitor[Any], Unit] = js.native
+      inline def verify(visitor: Visitor[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def verify_=(x: js.Function1[/* visitor */ Visitor[Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verify")(x.asInstanceOf[js.Any])
       
       @JSGlobal("babel.traverse.visitors")
       @js.native
@@ -6151,7 +6275,7 @@ object global {
       
       inline def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("valueToNode")(value.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral_]
       
-      inline def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
+      inline def variableDeclaration(kind: `var` | let | const | `using` | (`await using`), declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclaration")(kind.asInstanceOf[js.Any], declarations.asInstanceOf[js.Any])).asInstanceOf[VariableDeclaration_]
       
       inline def variableDeclarator(id: LVal): VariableDeclarator_ = ^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarator_]
       inline def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("variableDeclarator")(id.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[VariableDeclarator_]

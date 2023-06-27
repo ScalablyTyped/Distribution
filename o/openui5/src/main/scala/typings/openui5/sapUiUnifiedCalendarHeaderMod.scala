@@ -122,7 +122,7 @@ object sapUiUnifiedCalendarHeaderMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:pressButton0 pressButton0} event of this `sap.ui.unified.calendar.Header`.
       *
@@ -137,20 +137,20 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton0(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:pressButton0 pressButton0} event of this `sap.ui.unified.calendar.Header`.
       *
@@ -170,7 +170,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton0(
       /**
@@ -181,7 +181,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -202,13 +202,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton1(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -233,7 +233,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton1(
       /**
@@ -244,7 +244,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -265,13 +265,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton2(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -296,7 +296,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressButton2(
       /**
@@ -307,7 +307,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -329,13 +329,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressCurrentDate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -361,7 +361,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressCurrentDate(
       /**
@@ -372,7 +372,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -393,13 +393,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressNext(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -424,7 +424,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressNext(
       /**
@@ -435,7 +435,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -456,13 +456,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressPrevious(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -487,7 +487,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPressPrevious(
       /**
@@ -498,7 +498,7 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Header` itself
       */
@@ -506,7 +506,7 @@ object sapUiUnifiedCalendarHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:pressButton0 pressButton0} event of this `sap.ui.unified.calendar.Header`.
       *
@@ -518,13 +518,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressButton0(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -542,13 +542,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressButton1(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -566,13 +566,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressButton2(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -591,13 +591,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressCurrentDate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -615,13 +615,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressNext(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -640,13 +640,13 @@ object sapUiUnifiedCalendarHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPressPrevious(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -654,8 +654,8 @@ object sapUiUnifiedCalendarHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.32.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressButton0 pressButton0} to attached listeners.
       *
@@ -668,7 +668,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressButton1 pressButton1} to attached listeners.
       *
@@ -681,7 +681,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressButton2 pressButton2} to attached listeners.
       *
@@ -694,7 +694,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressCurrentDate pressCurrentDate} to attached listeners.
       *
@@ -707,7 +707,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressNext pressNext} to attached listeners.
       *
@@ -720,7 +720,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pressPrevious pressPrevious} to attached listeners.
       *
@@ -733,7 +733,7 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAdditionalTextButton0 additionalTextButton0}.
       *
@@ -744,7 +744,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getAdditionalTextButton0(): String = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAdditionalTextButton1 additionalTextButton1}.
       *
@@ -755,7 +755,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getAdditionalTextButton1(): String = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAdditionalTextButton2 additionalTextButton2}.
       *
@@ -766,7 +766,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getAdditionalTextButton2(): String = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getAriaLabelButton0 ariaLabelButton0}.
       *
@@ -817,7 +817,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getEnabledPrevious(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getTextButton0 textButton0}.
       *
@@ -846,7 +846,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getTextButton2(): String = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getVisibleButton0 visibleButton0}.
       *
@@ -861,7 +861,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getVisibleButton0(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getVisibleButton1 visibleButton1}.
       *
@@ -874,7 +874,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getVisibleButton1(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getVisibleButton2 visibleButton2}.
       *
@@ -887,7 +887,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getVisibleButton2(): Boolean = js.native
     
     /**
-      * @SINCE 1.95.0
+      * @since 1.95.0
       *
       * Gets current value of property {@link #getVisibleCurrentDateButton visibleCurrentDateButton}.
       *
@@ -900,7 +900,7 @@ object sapUiUnifiedCalendarHeaderMod {
     def getVisibleCurrentDateButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAdditionalTextButton0 additionalTextButton0}.
       *
@@ -916,7 +916,7 @@ object sapUiUnifiedCalendarHeaderMod {
     sAdditionalTextButton0: String): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAdditionalTextButton1 additionalTextButton1}.
       *
@@ -932,7 +932,7 @@ object sapUiUnifiedCalendarHeaderMod {
     sAdditionalTextButton1: String): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAdditionalTextButton2 additionalTextButton2}.
       *
@@ -948,7 +948,7 @@ object sapUiUnifiedCalendarHeaderMod {
     sAdditionalTextButton2: String): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getAriaLabelButton0 ariaLabelButton0}.
       *
@@ -1026,7 +1026,7 @@ object sapUiUnifiedCalendarHeaderMod {
     bEnabledPrevious: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getTextButton0 textButton0}.
       *
@@ -1070,7 +1070,7 @@ object sapUiUnifiedCalendarHeaderMod {
     sTextButton2: String): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getVisibleButton0 visibleButton0}.
       *
@@ -1091,7 +1091,7 @@ object sapUiUnifiedCalendarHeaderMod {
     bVisibleButton0: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getVisibleButton1 visibleButton1}.
       *
@@ -1110,7 +1110,7 @@ object sapUiUnifiedCalendarHeaderMod {
     bVisibleButton1: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getVisibleButton2 visibleButton2}.
       *
@@ -1129,7 +1129,7 @@ object sapUiUnifiedCalendarHeaderMod {
     bVisibleButton2: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.95.0
+      * @since 1.95.0
       *
       * Sets a new value for property {@link #getVisibleCurrentDateButton visibleCurrentDateButton}.
       *
@@ -1148,33 +1148,69 @@ object sapUiUnifiedCalendarHeaderMod {
     bVisibleCurrentDateButton: Boolean): this.type = js.native
   }
   
+  trait Header$PressButton0EventParameters extends StObject
+  
+  trait Header$PressButton1EventParameters extends StObject
+  
+  trait Header$PressButton2EventParameters extends StObject
+  
+  trait Header$PressCurrentDateEventParameters extends StObject
+  
+  trait Header$PressNextEventParameters extends StObject
+  
+  trait Header$PressPreviousEventParameters extends StObject
+  
+  type HeaderPressButton0Event = typings.openui5.sapUiBaseEventMod.default[Header$PressButton0EventParameters]
+  
+  type HeaderPressButton0EventParameters = Header$PressButton0EventParameters
+  
+  type HeaderPressButton1Event = typings.openui5.sapUiBaseEventMod.default[Header$PressButton1EventParameters]
+  
+  type HeaderPressButton1EventParameters = Header$PressButton1EventParameters
+  
+  type HeaderPressButton2Event = typings.openui5.sapUiBaseEventMod.default[Header$PressButton2EventParameters]
+  
+  type HeaderPressButton2EventParameters = Header$PressButton2EventParameters
+  
+  type HeaderPressCurrentDateEvent = typings.openui5.sapUiBaseEventMod.default[Header$PressCurrentDateEventParameters]
+  
+  type HeaderPressCurrentDateEventParameters = Header$PressCurrentDateEventParameters
+  
+  type HeaderPressNextEvent = typings.openui5.sapUiBaseEventMod.default[Header$PressNextEventParameters]
+  
+  type HeaderPressNextEventParameters = Header$PressNextEventParameters
+  
+  type HeaderPressPreviousEvent = typings.openui5.sapUiBaseEventMod.default[Header$PressPreviousEventParameters]
+  
+  type HeaderPressPreviousEventParameters = Header$PressPreviousEventParameters
+  
   trait HeaderSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Additional text of the first button (normally day)
       */
     var additionalTextButton0: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Additional text of the second button (normally month)
       */
     var additionalTextButton1: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Additional text of the third button (normally year)
       */
     var additionalTextButton2: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * aria-label of the first button (normally day)
       */
@@ -1205,39 +1241,51 @@ object sapUiUnifiedCalendarHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * First button pressed (normally day)
       */
-    var pressButton0: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressButton0: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Second button pressed (normally month)
       */
-    var pressButton1: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressButton1: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Third button pressed (normally year)
       */
-    var pressButton2: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressButton2: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Current date button pressed
       */
-    var pressCurrentDate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressCurrentDate: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Next button pressed
       */
-    var pressNext: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressNext: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Previous button pressed
       */
-    var pressPrevious: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pressPrevious: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Text of the first button (normally day)
       */
@@ -1254,7 +1302,7 @@ object sapUiUnifiedCalendarHeaderMod {
     var textButton2: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * If set, the first button will be displayed
       *
@@ -1265,7 +1313,7 @@ object sapUiUnifiedCalendarHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * If set, the second button will be displayed
       */
@@ -1274,7 +1322,7 @@ object sapUiUnifiedCalendarHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * If set, the third button will be displayed
       */
@@ -1283,7 +1331,7 @@ object sapUiUnifiedCalendarHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.95.0
+      * @since 1.95.0
       *
       * If set, the Current date button will be displayed.
       */
@@ -1333,27 +1381,27 @@ object sapUiUnifiedCalendarHeaderMod {
       
       inline def setEnabledPreviousUndefined: Self = StObject.set(x, "enabledPrevious", js.undefined)
       
-      inline def setPressButton0(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressButton0", js.Any.fromFunction1(value))
+      inline def setPressButton0(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressButton0", js.Any.fromFunction1(value))
       
       inline def setPressButton0Undefined: Self = StObject.set(x, "pressButton0", js.undefined)
       
-      inline def setPressButton1(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressButton1", js.Any.fromFunction1(value))
+      inline def setPressButton1(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressButton1", js.Any.fromFunction1(value))
       
       inline def setPressButton1Undefined: Self = StObject.set(x, "pressButton1", js.undefined)
       
-      inline def setPressButton2(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressButton2", js.Any.fromFunction1(value))
+      inline def setPressButton2(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressButton2", js.Any.fromFunction1(value))
       
       inline def setPressButton2Undefined: Self = StObject.set(x, "pressButton2", js.undefined)
       
-      inline def setPressCurrentDate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressCurrentDate", js.Any.fromFunction1(value))
+      inline def setPressCurrentDate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressCurrentDate", js.Any.fromFunction1(value))
       
       inline def setPressCurrentDateUndefined: Self = StObject.set(x, "pressCurrentDate", js.undefined)
       
-      inline def setPressNext(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressNext", js.Any.fromFunction1(value))
+      inline def setPressNext(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressNext", js.Any.fromFunction1(value))
       
       inline def setPressNextUndefined: Self = StObject.set(x, "pressNext", js.undefined)
       
-      inline def setPressPrevious(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pressPrevious", js.Any.fromFunction1(value))
+      inline def setPressPrevious(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pressPrevious", js.Any.fromFunction1(value))
       
       inline def setPressPreviousUndefined: Self = StObject.set(x, "pressPrevious", js.undefined)
       

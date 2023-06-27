@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionServiceCapabilitiesSearchCapabilities extends StObject {
   
   /**
-    * Specifies if search strings can contain a leading wildcard operator (`*`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if search strings can contain a leading wildcard operator (`*`).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var allowLeadingWildcardQueries: Boolean
   
   /**
-    * The search category filters supported by this service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * The search category filters supported by this service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var searchTypeFilterCapabilities: esriTypeEntity | esriTypeRelationship | esriTypeBoth
 }
 object ServiceDefinitionServiceCapabilitiesSearchCapabilities {

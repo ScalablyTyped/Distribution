@@ -13,26 +13,26 @@ trait IntervalNode
      with SQLNode {
   
   /**
-    * Interval node sign.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
-    */
+  		 * Interval node sign.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
+  		 */
   var op: Plussign | `-_` | _empty
   
   /**
-    * The interval qualifier can either be a single datetime field or be composed of two datetime fields, in the form: <leading field> TO <trailing field>.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
-    */
+  		 * The interval qualifier can either be a single datetime field or be composed of two datetime fields, in the form: <leading field> TO <trailing field>.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
+  		 */
   var qualifier: IntervalQualifierNode | IntervalPeriodNode
   
   var `type`: interval
   
   /**
-    * Interval node value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
-    */
+  		 * Interval node value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalNode)
+  		 */
   var value: StringNode
 }
 object IntervalNode {

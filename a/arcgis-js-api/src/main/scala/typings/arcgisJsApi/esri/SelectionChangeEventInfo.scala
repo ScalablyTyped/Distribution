@@ -10,24 +10,24 @@ trait SelectionChangeEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) representing the latest graphic selected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
-    */
+  		 * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) representing the latest graphic selected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
+  		 */
   var added: js.Array[Graphic]
   
   /**
-    * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) representing the latest graphic deselected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
-    */
+  		 * An array of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) representing the latest graphic deselected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
+  		 */
   var removed: js.Array[Graphic]
   
   /**
-    * Type is always `selection-change`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
-    */
+  		 * Type is always `selection-change`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#SelectionChangeEventInfo)
+  		 */
   var `type`: `selection-change`
 }
 object SelectionChangeEventInfo {

@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapMMessageBoxMod.Action
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,8 +14,8 @@ trait Actions extends StObject {
     * the translation of custom actions needs to be done by the application.
     */
   var actions: js.UndefOr[
-    typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String) | (js.Array[
-      typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
+    Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String) | (js.Array[
+      Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
     ])
   ] = js.undefined
   
@@ -29,12 +30,12 @@ trait Actions extends StObject {
     * text area containing 'details' information is displayed. The initial visibility is not configurable and
     * the details are hidden by default.
     *  The following details can be used:
-    * 	 - `string` - text in HTML format. For full list of supported HTML tags see {@link sap.m.FormattedText}
+    * 	 - `string` - text in HTML format. For full list of supported HTML tags see {@link sap.m.FormattedText }
     *
     * 	 - `object` - JSON object that will be serialized using `JSON.stringify`
     * 	 - `function` - since version 1.103, a callback function that fetches the details asynchronously. It
-    * 			should return a promise that resolves with a `string` value or an `object`, or rejects - in this case
-    * 			a default error message will be displayed
+    *     should return a promise that resolves with a `string` value or an `object`, or rejects - in this case
+    *     a default error message will be displayed
     */
   var details: js.UndefOr[String | js.Object | (js.Function0[js.Promise[String | js.Object]])] = js.undefined
   
@@ -43,7 +44,7 @@ trait Actions extends StObject {
     * will apply only if the property `actions` is provided.
     */
   var emphasizedAction: js.UndefOr[
-    typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
+    Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
   ] = js.undefined
   
   /**
@@ -62,7 +63,7 @@ trait Actions extends StObject {
     * focusable element after the MessageBox is opened. The usage of sap.ui.core.Control to set initialFocus
     * is deprecated since version 1.30.4.
     */
-  var initialFocus: js.UndefOr[String | typings.openui5.sapMMessageBoxMod.Action] = js.undefined
+  var initialFocus: js.UndefOr[String | Action] = js.undefined
   
   /**
     * Callback when the user closes the dialog
@@ -105,15 +106,15 @@ object Actions {
   implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
     
     inline def setActions(
-      value: typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String) | (js.Array[
-          typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
+      value: Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String) | (js.Array[
+          Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
         ])
     ): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     inline def setActionsVarargs(
-      value: (typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String))*
+      value: (Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String))*
     ): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCloseOnNavigation(value: Boolean): Self = StObject.set(x, "closeOnNavigation", value.asInstanceOf[js.Any])
@@ -127,7 +128,7 @@ object Actions {
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     inline def setEmphasizedAction(
-      value: typings.openui5.sapMMessageBoxMod.Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
+      value: Action | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action * / any */ String)
     ): Self = StObject.set(x, "emphasizedAction", value.asInstanceOf[js.Any])
     
     inline def setEmphasizedActionUndefined: Self = StObject.set(x, "emphasizedAction", js.undefined)
@@ -140,7 +141,7 @@ object Actions {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInitialFocus(value: String | typings.openui5.sapMMessageBoxMod.Action): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
+    inline def setInitialFocus(value: String | Action): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
     
     inline def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
     

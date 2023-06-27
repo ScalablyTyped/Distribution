@@ -9,9 +9,9 @@ trait `200404500503` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonBasecommit
   
-  var `404`: Content36
+  var `404`: Content41
   
-  var `500`: Content36
+  var `500`: Content41
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -19,8 +19,8 @@ object `200404500503` {
   
   inline def apply(
     `200`: ContentApplicationjsonBasecommit,
-    `404`: Content36,
-    `500`: Content36,
+    `404`: Content41,
+    `500`: Content41,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `200404500503` = {
     val __obj = js.Dynamic.literal()
@@ -36,9 +36,9 @@ object `200404500503` {
     
     inline def set200(value: ContentApplicationjsonBasecommit): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set500(value: Content36): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: Content41): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

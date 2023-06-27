@@ -2219,6 +2219,10 @@ object octokitGraphqlStrings {
   inline def `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashLeftcurlybracketrunner_idRightcurlybracketSlashlabels`: `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashLeftcurlybracketrunner_idRightcurlybracketSlashlabels` = ("POST /orgs/{org}/actions/runners/{runner_id}/labels").asInstanceOf[`POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashLeftcurlybracketrunner_idRightcurlybracketSlashlabels`]
   
   @js.native
+  sealed trait `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashgenerate-jitconfig` extends StObject
+  inline def `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashgenerate-jitconfig`: `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashgenerate-jitconfig` = ("POST /orgs/{org}/actions/runners/generate-jitconfig").asInstanceOf[`POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashgenerate-jitconfig`]
+  
+  @js.native
   sealed trait `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashregistration-token` extends StObject
   inline def `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashregistration-token`: `POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashregistration-token` = ("POST /orgs/{org}/actions/runners/registration-token").asInstanceOf[`POST SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunnersSlashregistration-token`]
   

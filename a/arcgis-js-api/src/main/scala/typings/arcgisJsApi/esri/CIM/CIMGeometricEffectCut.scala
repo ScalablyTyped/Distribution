@@ -10,23 +10,23 @@ trait CIMGeometricEffectCut
      with CIMGeometricEffectType {
   
   /**
-    * The distance from the beginning of a line that the display of the stroke starts. The beginning of the line is determined by the direction in which the line was digitized.
-    */
+  			 * The distance from the beginning of a line that the display of the stroke starts. The beginning of the line is determined by the direction in which the line was digitized.
+  			 */
   var beginCut: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the end of a line that the display of the stroke ends. The end of the line is determined by the direction in which the line was digitized.
-    */
+  			 * The distance from the end of a line that the display of the stroke ends. The end of the line is determined by the direction in which the line was digitized.
+  			 */
   var endCut: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the effect should be applied in the opposite manner. This displays the stroke symbol only at the ends of the line and leaves the rest of the line unsymbolized.
-    */
+  			 * A value indicating whether the effect should be applied in the opposite manner. This displays the stroke symbol only at the ends of the line and leaves the rest of the line unsymbolized.
+  			 */
   var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The distance around the middle of a line that the display of the stroke is interrupted.
-    */
+  			 * The distance around the middle of a line that the display of the stroke is interrupted.
+  			 */
   var middleCut: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

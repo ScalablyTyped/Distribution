@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains a helper method for generating a predominance visualization.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html)
-  */
+	 * This object contains a helper method for generating a predominance visualization.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html)
+	 */
 trait predominance extends StObject {
   
   /**
-    * Generates a predominance renderer based on a set of competing numeric fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
-    */
+  		 * Generates a predominance renderer based on a set of competing numeric fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
+  		 */
   def createRenderer(params: predominanceCreateRendererParams): js.Promise[predominanceRendererResult]
 }
 object predominance {

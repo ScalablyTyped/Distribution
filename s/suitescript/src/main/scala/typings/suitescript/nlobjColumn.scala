@@ -28,7 +28,6 @@ Instantiable0[Any] {
     * @param {boolean} [perRow] if true then the 2nd arg is expected to be a column in the datasource
     *
     * @method
-    * @memberOf nlobjColumn
     *
     * @since 2008.2
     * @param param
@@ -44,7 +43,6 @@ Instantiable0[Any] {
     * @param {string} label the label for this column
     *
     * @method
-    * @memberOf nlobjColumn
     *
     * @since 2008.2
     * @param label
@@ -58,7 +56,6 @@ Instantiable0[Any] {
     * @param {boolean} perRow if true then the 1st arg is expected to be a column in the datasource
     *
     * @method
-    * @memberOf nlobjColumn
     *
     * @since 2008.2
     * @param value

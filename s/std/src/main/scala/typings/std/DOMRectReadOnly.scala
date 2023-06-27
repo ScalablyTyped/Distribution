@@ -4,32 +4,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly) */
 trait DOMRectReadOnly extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/bottom) */
   /* standard dom */
   val bottom: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/height) */
   /* standard dom */
   val height: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/left) */
   /* standard dom */
   val left: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/right) */
   /* standard dom */
   val right: Double
   
   /* standard dom */
   def toJSON(): Any
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/top) */
   /* standard dom */
   val top: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/width) */
   /* standard dom */
   val width: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/x) */
   /* standard dom */
   val x: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/y) */
   /* standard dom */
   val y: Double
 }

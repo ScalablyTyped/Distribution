@@ -11,24 +11,24 @@ sealed trait MarkerPlacementType extends StObject
 object MarkerPlacementType extends StObject {
   
   /**
-    * Place inside the polygon.
-    */
+  			 * Place inside the polygon.
+  			 */
   @js.native
   sealed trait InsidePolygon
     extends StObject
        with MarkerPlacementType
   
   /**
-    * Place inside the polygon at the center.
-    */
+  			 * Place inside the polygon at the center.
+  			 */
   @js.native
   sealed trait PolygonCenter
     extends StObject
        with MarkerPlacementType
   
   /**
-    * Place randomly inside the polygon.
-    */
+  			 * Place randomly inside the polygon.
+  			 */
   @js.native
   sealed trait RandomlyInsidePolygon
     extends StObject

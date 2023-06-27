@@ -185,13 +185,13 @@ object sapUiCommonsLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Link` itself
       */
@@ -216,7 +216,7 @@ object sapUiCommonsLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -227,7 +227,7 @@ object sapUiCommonsLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Link` itself
       */
@@ -245,13 +245,13 @@ object sapUiCommonsLinkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -259,7 +259,7 @@ object sapUiCommonsLinkMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -275,14 +275,12 @@ object sapUiCommonsLinkMod {
     mParameters: js.Object): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -339,7 +337,7 @@ object sapUiCommonsLinkMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.8.0
+      * @since 1.8.0
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -487,7 +485,7 @@ object sapUiCommonsLinkMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.8.0
+      * @since 1.8.0
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -504,6 +502,12 @@ object sapUiCommonsLinkMod {
       */
     sWidth: CSSSize): this.type = js.native
   }
+  
+  trait Link$PressEventParameters extends StObject
+  
+  type LinkPressEvent = typings.openui5.sapUiBaseEventMod.default[Link$PressEventParameters]
+  
+  type LinkPressEventParameters = Link$PressEventParameters
   
   trait LinkSettings
     extends StObject
@@ -540,7 +544,9 @@ object sapUiCommonsLinkMod {
     /**
       * Event is fired when the user clicks the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Options are _self, _top, _blank, _parent, _search. Alternatively, a frame name can be entered.
@@ -553,7 +559,7 @@ object sapUiCommonsLinkMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.8.0
+      * @since 1.8.0
       *
       * Width of text link. When it is set (CSS-size such as % or px), this is the exact size. When left blank,
       * the text defines the size.
@@ -596,7 +602,7 @@ object sapUiCommonsLinkMod {
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -15,10 +15,10 @@ object esriPopupContentMixinsChartMediaInfoMod {
        with ChartMediaInfo {
     
     /**
-      * Defines the chart value.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
-      */
+    		 * Defines the chart value.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
+    		 */
     /* CompleteClass */
     var value: ChartMediaInfoValue = js.native
   }

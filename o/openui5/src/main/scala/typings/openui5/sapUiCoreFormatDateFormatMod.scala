@@ -95,7 +95,7 @@ object sapUiCoreFormatDateFormatMod {
     ): DateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DateFormat]
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Get a datetimeWithTimezone instance of the DateFormat, which can be used for formatting.
       *
@@ -195,7 +195,7 @@ object sapUiCoreFormatDateFormatMod {
       * local timezone to convert the given date.
       *
       * When using instances from getDateTimeWithTimezoneInstance, please see the corresponding documentation:
-      * {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance#format}.
+      * {@link sap.ui.core.format.DateFormat.DateTimeWithTimezone#format}.
       *
       * @returns the formatted output value. If an invalid date is given, an empty string is returned.
       */
@@ -218,7 +218,7 @@ object sapUiCoreFormatDateFormatMod {
       * local timezone to convert the given date.
       *
       * When using instances from getDateTimeWithTimezoneInstance, please see the corresponding documentation:
-      * {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance#parse}.
+      * {@link sap.ui.core.format.DateFormat.DateTimeWithTimezone#parse}.
       *
       * @returns the parsed value(s)
       */
@@ -272,7 +272,7 @@ object sapUiCoreFormatDateFormatMod {
     var __implements__sap_ui_core_format_DateFormat_DateTimeWithTimezone: Boolean = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Format a date object to a string according to the given timezone and format options.
       *
@@ -296,7 +296,7 @@ object sapUiCoreFormatDateFormatMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Parse a string which is formatted according to the given format options to an array containing a date
       * object and the timezone.

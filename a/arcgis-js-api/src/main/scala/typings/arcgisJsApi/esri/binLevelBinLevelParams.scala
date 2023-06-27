@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait binLevelBinLevelParams extends StObject {
   
   /**
-    * The [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: MapView
 }
 object binLevelBinLevelParams {

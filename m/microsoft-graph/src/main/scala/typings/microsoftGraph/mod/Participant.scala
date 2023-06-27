@@ -25,6 +25,9 @@ trait Participant
   
   // Information about whether the participant has recording capability.
   var recordingInfo: js.UndefOr[NullableOption[RecordingInfo]] = js.undefined
+  
+  // Indicates the reason or reasons media content from this participant is restricted.
+  var restrictedExperience: js.UndefOr[NullableOption[OnlineMeetingRestricted]] = js.undefined
 }
 object Participant {
   
@@ -67,5 +70,11 @@ object Participant {
     inline def setRecordingInfoNull: Self = StObject.set(x, "recordingInfo", null)
     
     inline def setRecordingInfoUndefined: Self = StObject.set(x, "recordingInfo", js.undefined)
+    
+    inline def setRestrictedExperience(value: NullableOption[OnlineMeetingRestricted]): Self = StObject.set(x, "restrictedExperience", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictedExperienceNull: Self = StObject.set(x, "restrictedExperience", null)
+    
+    inline def setRestrictedExperienceUndefined: Self = StObject.set(x, "restrictedExperience", js.undefined)
   }
 }

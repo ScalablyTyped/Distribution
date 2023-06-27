@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Nullable
+import typings.openui5.anon.ParseEmptyValueToZero
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -19,13 +20,13 @@ object sapUiModelOdataTypeInt16Mod {
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
       * to NumberFormat `groupingEnabled` defaults to `true`.
       */
-    oFormatOptions: js.Object) = this()
+    oFormatOptions: ParseEmptyValueToZero) = this()
     def this(
       /**
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
       * to NumberFormat `groupingEnabled` defaults to `true`.
       */
-    oFormatOptions: js.Object,
+    oFormatOptions: Unit,
       /**
       * constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue} throws an error if any constraint
       * is violated
@@ -37,7 +38,7 @@ object sapUiModelOdataTypeInt16Mod {
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
       * to NumberFormat `groupingEnabled` defaults to `true`.
       */
-    oFormatOptions: Unit,
+    oFormatOptions: ParseEmptyValueToZero,
       /**
       * constraints; {@link sap.ui.model.odata.type.Int#validateValue validateValue} throws an error if any constraint
       * is violated
@@ -118,7 +119,7 @@ object sapUiModelOdataTypeInt16Mod {
     extends typings.openui5.sapUiModelOdataTypeIntMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the type's supported range as object with properties `minimum` and `maximum`.
       *

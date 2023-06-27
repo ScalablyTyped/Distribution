@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.GroundView")
 @js.native
 /**
-  * This class represents the view for the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of a map.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-GroundView.html)
-  */
+		 * This class represents the view for the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of a map.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-GroundView.html)
+		 */
 open class GroundView ()
   extends StObject
      with typings.arcgisJsApi.esri.GroundView {

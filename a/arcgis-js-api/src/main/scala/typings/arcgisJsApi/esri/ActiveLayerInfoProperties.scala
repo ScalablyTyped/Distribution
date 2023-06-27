@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActiveLayerInfoProperties extends StObject {
   
   /**
-    * A collection of child activeLayerInfos.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#children)
-    */
+  		 * A collection of child activeLayerInfos.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#children)
+  		 */
   var children: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
   
   /**
-    * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#hideLayersNotInCurrentView)
-    */
+  		 * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#hideLayersNotInCurrentView)
+  		 */
   var hideLayersNotInCurrentView: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the legend's display of the layer's renderer is driven by the scale of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#isScaleDriven)
-    */
+  		 * Indicates if the legend's display of the layer's renderer is driven by the scale of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#isScaleDriven)
+  		 */
   var isScaleDriven: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer represented by the ActiveLayerInfo object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer)
-    */
+  		 * The layer represented by the ActiveLayerInfo object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer)
+  		 */
   var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
-    * The layerView represented by the ActiveLayerInfo object's layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layerView)
-    */
+  		 * The layerView represented by the ActiveLayerInfo object's layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layerView)
+  		 */
   var layerView: js.UndefOr[LayerViewProperties] = js.undefined
   
   /**
-    * The legendElements is constructed using the layer [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#legendElements)
-    */
+  		 * The legendElements is constructed using the layer [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#legendElements)
+  		 */
   var legendElements: js.UndefOr[
     js.Array[
       SymbolTableElement | ColorRampElement | OpacityRampElement | SizeRampElement | HeatmapRampElement | RelationshipRampElement
@@ -55,61 +55,61 @@ trait ActiveLayerInfoProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The ActiveLayerInfo of the parent module:esri/layers/support/ISublayer or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#parent)
-    */
+  		 * The ActiveLayerInfo of the parent module:esri/layers/support/ISublayer or [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#parent)
+  		 */
   var parent: js.UndefOr[ActiveLayerInfoProperties] = js.undefined
   
   /**
-    * Indicates if the activeLayerInfo is ready.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ready)
-    */
+  		 * Indicates if the activeLayerInfo is ready.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ready)
+  		 */
   var ready: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#respectLayerVisibility)
-    */
+  		 * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#respectLayerVisibility)
+  		 */
   var respectLayerVisibility: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The scale of the view instance in which the Legend is rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#scale)
-    */
+  		 * The scale of the view instance in which the Legend is rendered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#scale)
+  		 */
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * Only applies if the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer) is a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#sublayerIds)
-    */
+  		 * Only applies if the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#layer) is a [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#sublayerIds)
+  		 */
   var sublayerIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The text string that represents the legend's title.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#title)
-    */
+  		 * The text string that represents the legend's title.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * The version of the ActiveLayerInfo.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#version)
-    */
+  		 * The version of the ActiveLayerInfo.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#version)
+  		 */
   var version: js.UndefOr[Double] = js.undefined
   
   /**
-    * The view in which the Legend is rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#view)
-    */
+  		 * The view in which the Legend is rendered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#view)
+  		 */
   var view: js.UndefOr[ViewProperties] = js.undefined
 }
 object ActiveLayerInfoProperties {

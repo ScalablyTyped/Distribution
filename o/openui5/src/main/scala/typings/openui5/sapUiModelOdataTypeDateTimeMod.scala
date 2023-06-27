@@ -115,13 +115,13 @@ object sapUiModelOdataTypeDateTimeMod {
     extends typings.openui5.sapUiModelOdataTypeDateTimeBaseMod.default {
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Gets the model value according to this type's constraints and format options for the given date object
       * which represents a timestamp in the configured time zone. Validates the resulting value against the constraints
       * of this type instance.
       * See:
-      * 	{@link sap.ui.core.Configuration.getTimezone}
+      * 	{@link sap.ui.core.Configuration#getTimezone}
       *
       * @returns The model representation for the given Date
       */

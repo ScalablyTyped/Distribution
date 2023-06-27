@@ -15,6 +15,9 @@ trait SearchHit extends StObject {
     */
   var hitId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Indicates whether the current result is collapsed when the collapseProperties property is used.
+  var isCollapsed: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The rank or the order of the result.
   var rank: js.UndefOr[NullableOption[Double]] = js.undefined
   
@@ -50,6 +53,12 @@ object SearchHit {
     inline def setHitIdNull: Self = StObject.set(x, "hitId", null)
     
     inline def setHitIdUndefined: Self = StObject.set(x, "hitId", js.undefined)
+    
+    inline def setIsCollapsed(value: NullableOption[Boolean]): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def setIsCollapsedNull: Self = StObject.set(x, "isCollapsed", null)
+    
+    inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
     
     inline def setRank(value: NullableOption[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

@@ -4,21 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Encapsulates a single performance metric that is part of the performance timeline. A performance entry can be directly created by making a performance mark or measure (for example by calling the mark() method) at an explicit point in an application. Performance entries are also created in indirect ways such as loading a resource (such as an image). */
+/**
+  * Encapsulates a single performance metric that is part of the performance timeline. A performance entry can be directly created by making a performance mark or measure (for example by calling the mark() method) at an explicit point in an application. Performance entries are also created in indirect ways such as loading a resource (such as an image).
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry)
+  */
 trait PerformanceEntry extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/duration) */
   /* standard dom */
   val duration: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/entryType) */
   /* standard dom */
   val entryType: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/name) */
   /* standard dom */
   val name: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/startTime) */
   /* standard dom */
   val startTime: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEntry/toJSON) */
   /* standard dom */
   def toJSON(): Any
 }

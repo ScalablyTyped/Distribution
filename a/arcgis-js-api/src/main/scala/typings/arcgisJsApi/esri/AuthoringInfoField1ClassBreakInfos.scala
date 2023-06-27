@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthoringInfoField1ClassBreakInfos extends StObject {
   
   /**
-    * The maximum bound of values to visualize in the given field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
-    */
+  		 * The maximum bound of values to visualize in the given field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum bound of values to visualize in the given field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
-    */
+  		 * The minimum bound of values to visualize in the given field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
 }
 object AuthoringInfoField1ClassBreakInfos {

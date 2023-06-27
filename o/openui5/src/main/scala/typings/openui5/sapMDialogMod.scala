@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Origin
 import typings.openui5.anon.Reject
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.DialogType
@@ -139,7 +138,7 @@ object sapMDialogMod {
        with PopupInterface {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the custom header instance when the `customHeader` aggregation is set. Otherwise, it returns
       * the internal managed header instance. This method can be called within composite controls which use `sap.m.Dialog`
@@ -180,7 +179,7 @@ object sapMDialogMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Adds some button to the aggregation {@link #getButtons buttons}.
       *
@@ -219,13 +218,13 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -250,7 +249,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -261,7 +260,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -282,13 +281,13 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -313,7 +312,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -324,7 +323,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -345,13 +344,13 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -376,7 +375,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -387,7 +386,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -408,13 +407,13 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -439,7 +438,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -450,7 +449,7 @@ object sapMDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Dialog` itself
       */
@@ -465,7 +464,7 @@ object sapMDialogMod {
     def close(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the beginButton in the aggregation {@link #getBeginButton beginButton}.
       *
@@ -474,7 +473,7 @@ object sapMDialogMod {
     def destroyBeginButton(): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Destroys all the buttons in the aggregation {@link #getButtons buttons}.
       *
@@ -490,7 +489,7 @@ object sapMDialogMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the customHeader in the aggregation {@link #getCustomHeader customHeader}.
       *
@@ -499,7 +498,7 @@ object sapMDialogMod {
     def destroyCustomHeader(): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Destroys the endButton in the aggregation {@link #getEndButton endButton}.
       *
@@ -508,7 +507,7 @@ object sapMDialogMod {
     def destroyEndButton(): this.type = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Destroys the footer in the aggregation {@link #getFooter footer}.
       *
@@ -517,7 +516,7 @@ object sapMDialogMod {
     def destroyFooter(): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Destroys the subHeader in the aggregation {@link #getSubHeader subHeader}.
       *
@@ -536,13 +535,13 @@ object sapMDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogAfterCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -560,13 +559,13 @@ object sapMDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -584,13 +583,13 @@ object sapMDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogBeforeCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -608,13 +607,13 @@ object sapMDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -622,7 +621,7 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
@@ -632,10 +631,10 @@ object sapMDialogMod {
     def fireAfterClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: Origin): this.type = js.native
+    mParameters: Dialog$AfterCloseEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
@@ -648,20 +647,22 @@ object sapMDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeClose(): this.type = js.native
-    def fireBeforeClose(/**
+    def fireBeforeClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Origin): this.type = js.native
+    mParameters: Dialog$BeforeCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -674,19 +675,17 @@ object sapMDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getBeginButton beginButton}.
       *
@@ -703,7 +702,7 @@ object sapMDialogMod {
     def getBeginButton(): typings.openui5.sapMButtonMod.default = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets content of aggregation {@link #getButtons buttons}.
       *
@@ -715,7 +714,7 @@ object sapMDialogMod {
     def getButtons(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getCloseOnNavigation closeOnNavigation}.
       *
@@ -737,7 +736,7 @@ object sapMDialogMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Gets current value of property {@link #getContentHeight contentHeight}.
       *
@@ -750,7 +749,7 @@ object sapMDialogMod {
     def getContentHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Gets current value of property {@link #getContentWidth contentWidth}.
       *
@@ -765,7 +764,7 @@ object sapMDialogMod {
     def getContentWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getCustomHeader customHeader}.
       *
@@ -776,7 +775,7 @@ object sapMDialogMod {
     def getCustomHeader(): IBar = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets current value of property {@link #getDraggable draggable}.
       *
@@ -791,7 +790,7 @@ object sapMDialogMod {
     def getDraggable(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets content of aggregation {@link #getEndButton endButton}.
       *
@@ -820,7 +819,7 @@ object sapMDialogMod {
     def getEscapeHandler(): (js.Function1[/* p1 */ Reject, Unit]) | Null = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Gets content of aggregation {@link #getFooter footer}.
       *
@@ -830,7 +829,7 @@ object sapMDialogMod {
     def getFooter(): typings.openui5.sapMToolbarMod.default = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets current value of property {@link #getHorizontalScrolling horizontalScrolling}.
       *
@@ -857,7 +856,7 @@ object sapMDialogMod {
     def getIcon(): URI = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * ID of the element which is the current target of the association {@link #getInitialFocus initialFocus},
       * or `null`.
@@ -874,7 +873,7 @@ object sapMDialogMod {
     def getLeftButton(): ID = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets current value of property {@link #getResizable resizable}.
       *
@@ -898,7 +897,7 @@ object sapMDialogMod {
     def getRightButton(): ID = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets current value of property {@link #getShowHeader showHeader}.
       *
@@ -912,7 +911,7 @@ object sapMDialogMod {
     def getShowHeader(): Boolean = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getState state}.
       *
@@ -928,7 +927,7 @@ object sapMDialogMod {
     def getState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Gets current value of property {@link #getStretch stretch}.
       *
@@ -943,7 +942,7 @@ object sapMDialogMod {
     def getStretch(): Boolean = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       * @deprecated (since 1.13.1) - Please use the new stretch property instead. This enables a stretched Dialog
       * even on tablet and desktop. If you want to achieve the same effect as `stretchOnPhone`, please set the
       * stretch with `Device.system.phone`, then the Dialog is only stretched when it runs on a phone.
@@ -959,7 +958,7 @@ object sapMDialogMod {
     def getStretchOnPhone(): Boolean = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Gets content of aggregation {@link #getSubHeader subHeader}.
       *
@@ -981,7 +980,7 @@ object sapMDialogMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1008,7 +1007,7 @@ object sapMDialogMod {
     def getType(): DialogType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DialogType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Gets current value of property {@link #getVerticalScrolling verticalScrolling}.
       *
@@ -1024,7 +1023,7 @@ object sapMDialogMod {
     def getVerticalScrolling(): Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Checks for the provided `sap.m.Button` in the aggregation {@link #getButtons buttons}. and returns its
       * index if found or -1 otherwise.
@@ -1050,7 +1049,7 @@ object sapMDialogMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Inserts a button into the aggregation {@link #getButtons buttons}.
       *
@@ -1088,7 +1087,7 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * The method checks if the Dialog is open.
       *
@@ -1121,7 +1120,7 @@ object sapMDialogMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes all the controls from the aggregation {@link #getButtons buttons}.
       *
@@ -1185,7 +1184,7 @@ object sapMDialogMod {
       */
     vButton: String): typings.openui5.sapMButtonMod.default | Null = js.native
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Removes a button from the aggregation {@link #getButtons buttons}.
       *
@@ -1223,7 +1222,7 @@ object sapMDialogMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getBeginButton beginButton}.
       *
@@ -1235,7 +1234,7 @@ object sapMDialogMod {
     oBeginButton: typings.openui5.sapMButtonMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getCloseOnNavigation closeOnNavigation}.
       *
@@ -1254,7 +1253,7 @@ object sapMDialogMod {
     bCloseOnNavigation: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Sets a new value for property {@link #getContentHeight contentHeight}.
       *
@@ -1273,7 +1272,7 @@ object sapMDialogMod {
     sContentHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Sets a new value for property {@link #getContentWidth contentWidth}.
       *
@@ -1294,7 +1293,7 @@ object sapMDialogMod {
     sContentWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getCustomHeader customHeader}.
       *
@@ -1306,7 +1305,7 @@ object sapMDialogMod {
     oCustomHeader: IBar): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Sets a new value for property {@link #getDraggable draggable}.
       *
@@ -1327,7 +1326,7 @@ object sapMDialogMod {
     bDraggable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets the aggregated {@link #getEndButton endButton}.
       *
@@ -1359,7 +1358,7 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Sets the aggregated {@link #getFooter footer}.
       *
@@ -1371,7 +1370,7 @@ object sapMDialogMod {
     oFooter: typings.openui5.sapMToolbarMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets a new value for property {@link #getHorizontalScrolling horizontalScrolling}.
       *
@@ -1417,7 +1416,7 @@ object sapMDialogMod {
     oInitialFocus: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets the associated {@link #getInitialFocus initialFocus}.
       *
@@ -1455,7 +1454,7 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Sets a new value for property {@link #getResizable resizable}.
       *
@@ -1499,7 +1498,7 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets a new value for property {@link #getShowHeader showHeader}.
       *
@@ -1519,7 +1518,7 @@ object sapMDialogMod {
     bShowHeader: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getState state}.
       *
@@ -1547,7 +1546,7 @@ object sapMDialogMod {
     sState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Sets a new value for property {@link #getStretch stretch}.
       *
@@ -1568,7 +1567,7 @@ object sapMDialogMod {
     bStretch: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       * @deprecated (since 1.13.1) - Please use the new stretch property instead. This enables a stretched Dialog
       * even on tablet and desktop. If you want to achieve the same effect as `stretchOnPhone`, please set the
       * stretch with `Device.system.phone`, then the Dialog is only stretched when it runs on a phone.
@@ -1590,7 +1589,7 @@ object sapMDialogMod {
     bStretchOnPhone: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Sets the aggregated {@link #getSubHeader subHeader}.
       *
@@ -1619,7 +1618,7 @@ object sapMDialogMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1670,7 +1669,7 @@ object sapMDialogMod {
     sType: DialogType): this.type = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Sets a new value for property {@link #getVerticalScrolling verticalScrolling}.
       *
@@ -1692,6 +1691,76 @@ object sapMDialogMod {
     bVerticalScrolling: Boolean): this.type = js.native
   }
   
+  trait Dialog$AfterCloseEventParameters extends StObject {
+    
+    /**
+      * This indicates the trigger of closing the Dialog. If the Dialog is closed by either the `beginButton`
+      * or the `endButton`, the button that closes the Dialog is set to this parameter. Otherwise, the parameter
+      * is set to `null`.
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object Dialog$AfterCloseEventParameters {
+    
+    inline def apply(): Dialog$AfterCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dialog$AfterCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog$AfterCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait Dialog$AfterOpenEventParameters extends StObject
+  
+  trait Dialog$BeforeCloseEventParameters extends StObject {
+    
+    /**
+      * This indicates the trigger of closing the Dialog. If the Dialog is closed by either the `beginButton`
+      * or the `endButton`, the button that closes the Dialog is set to this parameter. Otherwise, the parameter
+      * is set to `null`.
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object Dialog$BeforeCloseEventParameters {
+    
+    inline def apply(): Dialog$BeforeCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dialog$BeforeCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog$BeforeCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait Dialog$BeforeOpenEventParameters extends StObject
+  
+  type DialogAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[Dialog$AfterCloseEventParameters]
+  
+  type DialogAfterCloseEventParameters = Dialog$AfterCloseEventParameters
+  
+  type DialogAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[Dialog$AfterOpenEventParameters]
+  
+  type DialogAfterOpenEventParameters = Dialog$AfterOpenEventParameters
+  
+  type DialogBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[Dialog$BeforeCloseEventParameters]
+  
+  type DialogBeforeCloseEventParameters = Dialog$BeforeCloseEventParameters
+  
+  type DialogBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[Dialog$BeforeOpenEventParameters]
+  
+  type DialogBeforeOpenEventParameters = Dialog$BeforeOpenEventParameters
+  
   trait DialogSettings
     extends StObject
        with ControlSettings {
@@ -1699,12 +1768,19 @@ object sapMDialogMod {
     /**
       * This event will be fired after the Dialog is closed.
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$AfterCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired after the Dialog is opened.
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Association to controls/IDs which describe this control (see WAI-ARIA attribute aria-describedby).
@@ -1719,15 +1795,22 @@ object sapMDialogMod {
     /**
       * This event will be fired before the Dialog is closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$BeforeCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired before the Dialog is opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The button which is rendered to the left side (right side in RTL mode) of the `endButton` in the footer
       * area inside the Dialog. As of version 1.21.1, there's a new aggregation `buttons` created with which
@@ -1742,7 +1825,7 @@ object sapMDialogMod {
     var beginButton: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Buttons can be added to the footer area of the Dialog through this aggregation. When this aggregation
       * is set, any change to the `beginButton` and `endButton` has no effect anymore. Buttons which are inside
@@ -1754,7 +1837,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Indicates whether the Dialog will be closed automatically when a routing navigation occurs.
       */
@@ -1772,7 +1855,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Preferred height of the content in the Dialog. If the preferred height is bigger than the available space
       * on a screen, it will be overwritten by the maximum available height on a screen in order to make sure
@@ -1783,7 +1866,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.1
+      * @since 1.12.1
       *
       * Preferred width of the content in the Dialog. This property affects the width of the Dialog on a phone
       * in landscape mode, a tablet or a desktop, because the Dialog has a fixed width on a phone in portrait
@@ -1796,7 +1879,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * When it is set, the `icon`, `title` and `showHeader` properties are ignored. Only the `customHeader`
       * is shown as the header of the Dialog.
@@ -1805,7 +1888,7 @@ object sapMDialogMod {
     var customHeader: js.UndefOr[IBar] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Indicates whether the Dialog is draggable. If this property is set to `true`, the Dialog will be draggable
       * by its header. This property has a default value `false`. The Dialog can be draggable only in desktop
@@ -1816,7 +1899,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * The button which is rendered to the right side (left side in RTL mode) of the `beginButton` in the footer
       * area inside the Dialog. As of version 1.21.1, there's a new aggregation `buttons` created with which
@@ -1831,7 +1914,7 @@ object sapMDialogMod {
     var endButton: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * This property expects a function with one parameter of type Promise. In the function, you should call
       * either `resolve()` or `reject()` on the Promise object.
@@ -1843,7 +1926,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * The footer of this dialog. It is always located at the bottom of the dialog. The footer aggregation can
       * not be used together with the buttons aggregation.
@@ -1851,7 +1934,7 @@ object sapMDialogMod {
     var footer: js.UndefOr[typings.openui5.sapMToolbarMod.default] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Indicates if the user can scroll horizontally inside the Dialog when the content is bigger than the content
       * area. The Dialog detects if there's `sap.m.NavContainer`, `sap.m.Page`, `sap.m.ScrollContainer` or `sap.m.SplitContainer`
@@ -1870,7 +1953,7 @@ object sapMDialogMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * In the Dialog focus is set first on the `beginButton` and then on `endButton`, when available. If another
       * control needs to get the focus, set the `initialFocus` with the control which should be focused on. Setting
@@ -1892,7 +1975,7 @@ object sapMDialogMod {
     var leftButton: js.UndefOr[typings.openui5.sapMButtonMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Indicates whether the Dialog is resizable. If this property is set to `true`, the Dialog will have a
       * resize handler in its bottom right corner. This property has a default value `false`. The Dialog can
@@ -1913,7 +1996,7 @@ object sapMDialogMod {
     var rightButton: js.UndefOr[typings.openui5.sapMButtonMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Determines whether the header is shown inside the Dialog. If this property is set to `false`, the `text`
       * and `icon` properties are ignored. This property has a default value `true`.
@@ -1923,7 +2006,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Affects the `icon` and the `title` color.
       *
@@ -1935,7 +2018,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Determines if the Dialog will be stretched to full screen on mobile. On desktop, the Dialog will be stretched
       * to approximately 90% of the viewport. This property is only applicable to a Standard Dialog. Message-type
@@ -1946,7 +2029,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       * @deprecated (since 1.13.1) - Please use the new stretch property instead. This enables a stretched Dialog
       * even on tablet and desktop. If you want to achieve the same effect as `stretchOnPhone`, please set the
       * stretch with `Device.system.phone`, then the Dialog is only stretched when it runs on a phone.
@@ -1958,7 +2041,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * When a `subHeader` is assigned to the Dialog, it's rendered directly after the main header in the Dialog.
       * The `subHeader` is out of the content area and won't be scrolled when the content size is bigger than
@@ -1974,7 +2057,7 @@ object sapMDialogMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.Auto`, the Title will be aligned
       * as it is set in the theme (if not set, the default value is `center`); Other possible values are `TitleAlignment.Start`
@@ -1993,7 +2076,7 @@ object sapMDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       *
       * Indicates if the user can scroll vertically inside the Dialog when the content is bigger than the content
       * area. The Dialog detects if there's `sap.m.NavContainer`, `sap.m.Page`, `sap.m.ScrollContainer` or `sap.m.SplitContainer`
@@ -2014,11 +2097,13 @@ object sapMDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$AfterCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
@@ -2034,11 +2119,13 @@ object sapMDialogMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$BeforeCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       

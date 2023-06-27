@@ -10,7 +10,11 @@ trait ActionSheetItem extends StObject {
   
   var description: js.UndefOr[String] = js.undefined
   
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var group: js.UndefOr[String] = js.undefined
+  
+  var icon: js.UndefOr[String] = js.undefined
   
   var iconClass: js.UndefOr[String] = js.undefined
   
@@ -38,9 +42,15 @@ object ActionSheetItem {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
@@ -53,6 +63,8 @@ object ActionSheetItem {
     inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
     inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

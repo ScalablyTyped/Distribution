@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WFSOperationsGetCapabilities extends StObject {
   
   /**
-    * The URL to the GetCapabilities endpoint.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
-    */
+  		 * The URL to the GetCapabilities endpoint.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
+  		 */
   var url: String
 }
 object WFSOperationsGetCapabilities {

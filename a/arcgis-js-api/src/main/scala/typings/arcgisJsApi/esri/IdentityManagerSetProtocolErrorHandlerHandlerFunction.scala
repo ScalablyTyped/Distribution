@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityManagerSetProtocolErrorHandlerHandlerFunction extends StObject {
   
   /**
-    * The secure resource URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
-    */
+  		 * The secure resource URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
+  		 */
   var resourceUrl: String
   
   /**
-    * ServerInfo object describing the server where the secure resource is hosted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
-    */
+  		 * ServerInfo object describing the server where the secure resource is hosted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
+  		 */
   var serverInfo: ServerInfo
 }
 object IdentityManagerSetProtocolErrorHandlerHandlerFunction {

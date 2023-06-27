@@ -11,54 +11,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintTemplateLayoutOptions extends StObject {
   
   /**
-    * The text used for the author if the specified layout contains an author text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * The text used for the author if the specified layout contains an author text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var authorText: js.UndefOr[String] = js.undefined
   
   /**
-    * The text used for the copyright if the specified layout contains a copyright text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * The text used for the copyright if the specified layout contains a copyright text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var copyrightText: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of name-value pair objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * An array of name-value pair objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var customTextElements: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * An object containing optional elements from the print service that can be updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * An object containing optional elements from the print service that can be updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var elementOverrides: js.UndefOr[Any] = js.undefined
   
   /**
-    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html) containing the ids of the layers that will be included in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html) containing the ids of the layers that will be included in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var legendLayers: js.UndefOr[js.Array[LegendLayer]] = js.undefined
   
   /**
-    * The unit used for the scalebar.
-    *
-    * @default Miles
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * The unit used for the scalebar.
+  		 *
+  		 * @default Miles
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var scalebarUnit: js.UndefOr[Miles | Kilometers | Meters | Feet] = js.undefined
   
   /**
-    * The text used for the map title if the specified layout contains a title text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * The text used for the map title if the specified layout contains a title text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var titleText: js.UndefOr[String] = js.undefined
 }
 object PrintTemplateLayoutOptions {

@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.AsyncComponent
+import typings.openui5.anon.Component
 import typings.openui5.anon.ViewNameString
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
@@ -15,12 +15,12 @@ object sapUiCoreRoutingViewsMod {
   /**
     * Instantiates a view repository that creates and caches views. If it is destroyed, all the Views it created
     * are destroyed. Usually you do not have to create instances of this class, it is used by the {@link sap.ui.core.routing.Router}.
-    * If you are using {@link sap.ui.core.routing.Targets} without using a {@link sap.ui.core.UIComponent}
+    * If you are using {@link sap.ui.core.routing.Targets} without using a {@link sap.ui.core.UIComponent }
     * you have to create an instance of this class. They will create an instance on their own, or if they are
     * used with a {@link sap.ui.core.UIComponent} they will share the same instance of Views.
     */
   open class default () extends Views {
-    def this(oOptions: AsyncComponent) = this()
+    def this(oOptions: Component) = this()
   }
   /* static members */
   object default {
@@ -95,7 +95,7 @@ object sapUiCoreRoutingViewsMod {
     extends typings.openui5.sapUiBaseEventProviderMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:created created} to attached listeners.
       *
@@ -105,7 +105,7 @@ object sapUiCoreRoutingViewsMod {
     def fireCreated(/**
       * Parameters to pass along with the event
       */
-    oParameters: js.Object): this.type = js.native
+    oParameters: Views$CreatedEventParameters): this.type = js.native
     
     /**
       * Returns a cached view, for a given name. If it does not exist yet, it will create the view with the provided
@@ -121,7 +121,7 @@ object sapUiCoreRoutingViewsMod {
       * the {@link sap.ui.core.UIComponent#byId} function of the UIComponent.
       */
     oOptions: ViewNameString
-    ): js.Promise[Any] = js.native
+    ): js.Promise[typings.openui5.sapUiCoreMvcViewMod.default] = js.native
     
     /**
       * Adds or overwrites a view in the cache of the Views instance. The viewName serves as a key for caching.
@@ -151,4 +151,40 @@ object sapUiCoreRoutingViewsMod {
     oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): this.type = js.native
   }
+  
+  trait Views$CreatedEventParameters extends StObject {
+    
+    /**
+      * the instance of the created view.
+      */
+    var view: js.UndefOr[typings.openui5.sapUiCoreMvcViewMod.default] = js.undefined
+    
+    /**
+      * The view options passed to {@link sap.ui.view}
+      */
+    var viewOptions: js.UndefOr[js.Object] = js.undefined
+  }
+  object Views$CreatedEventParameters {
+    
+    inline def apply(): Views$CreatedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Views$CreatedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Views$CreatedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setView(value: typings.openui5.sapUiCoreMvcViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      inline def setViewOptions(value: js.Object): Self = StObject.set(x, "viewOptions", value.asInstanceOf[js.Any])
+      
+      inline def setViewOptionsUndefined: Self = StObject.set(x, "viewOptions", js.undefined)
+      
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    }
+  }
+  
+  type ViewsCreatedEvent = typings.openui5.sapUiBaseEventMod.default[Views$CreatedEventParameters]
+  
+  type ViewsCreatedEventParameters = Views$CreatedEventParameters
 }

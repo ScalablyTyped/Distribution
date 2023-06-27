@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhaseCallbacks extends StObject {
   
   /**
-    * A callback called before rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
-    */
+  		 * A callback called before rendering.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
+  		 */
   var prepare: js.UndefOr[PhaseCallback] = js.undefined
   
   /**
-    * A callback to execute rendering logic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
-    */
+  		 * A callback to execute rendering logic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
+  		 */
   var render: js.UndefOr[PhaseCallback] = js.undefined
   
   /**
-    * A callback to execute state update logic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
-    */
+  		 * A callback to execute state update logic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseCallbacks)
+  		 */
   var update: js.UndefOr[PhaseCallback] = js.undefined
 }
 object PhaseCallbacks {

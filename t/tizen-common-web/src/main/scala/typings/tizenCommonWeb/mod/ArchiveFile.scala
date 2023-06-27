@@ -46,10 +46,10 @@ open class ArchiveFile () extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
-    * @throw WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
-    * @throw WebAPIException with error type InvalidAccessError, if the file mode is "r".
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
+    * @throws WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
+    * @throws WebAPIException with error type InvalidAccessError, if the file mode is "r".
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def add(
     sourceFile: FileReference,
@@ -65,7 +65,7 @@ open class ArchiveFile () extends StObject {
     * Call this method when the archive file is not used any more. Once you call this method, the archive file object will not be available and any further operation attempt results in an _InvalidStateError_.
     * Calling _close()_ on an archive file object which is already closed does not raise any exception.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def close(): Unit = js.native
   
@@ -106,10 +106,10 @@ open class ArchiveFile () extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
-    * @throw WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
-    * @throw WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
+    * @throws WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
+    * @throws WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def extractAll(
     destinationDirectory: FileReference,
@@ -135,10 +135,10 @@ open class ArchiveFile () extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
-    * @throw WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
-    * @throw WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
+    * @throws WebAPIException with error type InvalidStateError, if ArchiveFile is not open.
+    * @throws WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def getEntries(onsuccess: ArchiveFileEntryArraySuccessCallback): Double = js.native
   def getEntries(onsuccess: ArchiveFileEntryArraySuccessCallback, onerror: ErrorCallback): Double = js.native
@@ -161,10 +161,10 @@ open class ArchiveFile () extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
-    * @throw WebAPIException with error type InvalidStateError, if ArchiveFile is not opened.
-    * @throw WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
+    * @throws WebAPIException with error type InvalidStateError, if ArchiveFile is not opened.
+    * @throws WebAPIException with error type InvalidAccessError, if the file mode is "w" or "a".
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def getEntryByName(name: String, onsuccess: ArchiveFileEntrySuccessCallback): Double = js.native
   def getEntryByName(name: String, onsuccess: ArchiveFileEntrySuccessCallback, onerror: ErrorCallback): Double = js.native

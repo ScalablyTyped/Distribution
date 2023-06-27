@@ -1,7 +1,7 @@
 
 # Scala.js typings for esquery
 
-Typings are for version 1.0
+Typings are for version 1.5
 
 ## Library description:
 A query library for ECMAScript AST using a CSS selector like query language.

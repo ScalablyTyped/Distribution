@@ -14,52 +14,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends StObject {
   
   /**
-    * The end time for the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
-    */
+  		 * The end time for the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+  		 */
   var endTime: js.Date | String | Double
   
   /**
-    * The layer from which to generate age statistics for the given `startTime` and `endTime`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer from which to generate age statistics for the given `startTime` and `endTime`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * The start time for the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
-    */
+  		 * The start time for the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+  		 */
   var startTime: js.Date | String | Double
   
   /**
-    * The desired units of the age result.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The desired units of the age result.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: years | months | days | hours | minutes | seconds
   
   /**
-    * The view in which features will be rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view in which features will be rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[MapView | SceneView] = js.undefined
 }
 object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
   
   inline def apply(
     endTime: js.Date | String | Double,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer,
     startTime: js.Date | String | Double,
     unit: years | months | days | hours | minutes | seconds
   ): summaryStatisticsForAgeSummaryStatisticsForAgeParams = {
@@ -72,7 +72,9 @@ object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
     
     inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

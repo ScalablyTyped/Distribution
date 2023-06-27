@@ -8,12 +8,12 @@ trait PathOwnerRef extends StObject {
   
   var path: OwnerRef
   
-  var query: PagePerpage
+  var query: js.UndefOr[PagePerpage] = js.undefined
 }
 object PathOwnerRef {
   
-  inline def apply(path: OwnerRef, query: PagePerpage): PathOwnerRef = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: OwnerRef): PathOwnerRef = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOwnerRef]
   }
   
@@ -23,5 +23,7 @@ object PathOwnerRef {
     inline def setPath(value: OwnerRef): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: PagePerpage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

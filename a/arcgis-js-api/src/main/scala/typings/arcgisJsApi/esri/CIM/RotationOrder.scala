@@ -11,24 +11,24 @@ sealed trait RotationOrder extends StObject
 object RotationOrder extends StObject {
   
   /**
-    * Rotate in XYZ order.
-    */
+  			 * Rotate in XYZ order.
+  			 */
   @js.native
   sealed trait XYZ
     extends StObject
        with RotationOrder
   
   /**
-    * Rotate in YXZ order.
-    */
+  			 * Rotate in YXZ order.
+  			 */
   @js.native
   sealed trait YXZ
     extends StObject
        with RotationOrder
   
   /**
-    * Rotate in ZYX order.
-    */
+  			 * Rotate in ZYX order.
+  			 */
   @js.native
   sealed trait ZXY
     extends StObject

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Animatable extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animate) */
   /* standard dom */
   def animate(): Animation = js.native
   def animate(keyframes: js.Array[Keyframe]): Animation = js.native
@@ -18,6 +19,7 @@ trait Animatable extends StObject {
   def animate(keyframes: PropertyIndexedKeyframes, options: Double): Animation = js.native
   def animate(keyframes: PropertyIndexedKeyframes, options: KeyframeAnimationOptions): Animation = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAnimations) */
   /* standard dom */
   def getAnimations(): js.Array[Animation] = js.native
   def getAnimations(options: GetAnimationsOptions): js.Array[Animation] = js.native

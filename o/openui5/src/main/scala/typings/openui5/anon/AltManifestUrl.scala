@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiCoreComponentMod.ComponentSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AltManifestUrl extends StObject {
   
   /**
-    * List of active terminologies. The order of the given active terminologies is significant. The {@link
-    * module:sap/base/i18n/ResourceBundle ResourceBundle} API documentation describes the processing behavior
-    * in more detail. Please have a look at this dev-guide chapter for general usage instructions: {@link topic:eba8d25a31ef416ead876e091e67824e
-    * Text Verticalization}.
+    * List of active terminologies. The order of the given active terminologies is significant. The {@link module:sap/base/i18n/ResourceBundle ResourceBundle }
+    * API documentation describes the processing behavior in more detail. Please have a look at this dev-guide
+    * chapter for general usage instructions: {@link https://ui5.sap.com/#/topic/eba8d25a31ef416ead876e091e67824e Text Verticalization}.
     */
   var activeTerminologies: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -64,7 +64,7 @@ trait AltManifestUrl extends StObject {
   /**
     * Settings of the new Component
     */
-  var settings: js.UndefOr[js.Object] = js.undefined
+  var settings: js.UndefOr[ComponentSettings] = js.undefined
   
   /**
     * Alternative location from where to load the Component. If `mOptions.manifest` is set to a non-empty string,
@@ -115,7 +115,7 @@ object AltManifestUrl {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSettings(value: js.Object): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: ComponentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     

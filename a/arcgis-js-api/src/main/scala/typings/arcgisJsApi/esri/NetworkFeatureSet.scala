@@ -10,9 +10,9 @@ trait NetworkFeatureSet
      with FeatureSet {
   
   /**
-    * If true, restricted network elements should be considered when finding network locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkFeatureSet.html#doNotLocateOnRestrictedElements)
-    */
+  		 * If true, restricted network elements should be considered when finding network locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NetworkFeatureSet.html#doNotLocateOnRestrictedElements)
+  		 */
   var doNotLocateOnRestrictedElements: Boolean = js.native
 }

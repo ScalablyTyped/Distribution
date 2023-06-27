@@ -11,40 +11,40 @@ sealed trait PlacementEndings extends StObject
 object PlacementEndings extends StObject {
   
   /**
-    * Will fit the pattern to the length of the features by adjusting the gaps slightly.
-    */
+  			 * Will fit the pattern to the length of the features by adjusting the gaps slightly.
+  			 */
   @js.native
   sealed trait Custom
     extends StObject
        with PlacementEndings
   
   /**
-    * No constraint on how the markers are placed.
-    */
+  			 * No constraint on how the markers are placed.
+  			 */
   @js.native
   sealed trait NoConstraint
     extends StObject
        with PlacementEndings
   
   /**
-    * A space equal to the placement template will be placed at the control point.
-    */
+  			 * A space equal to the placement template will be placed at the control point.
+  			 */
   @js.native
   sealed trait WithFullGap
     extends StObject
        with PlacementEndings
   
   /**
-    * A space equal to half the placement template will be placed at the control point.
-    */
+  			 * A space equal to half the placement template will be placed at the control point.
+  			 */
   @js.native
   sealed trait WithHalfGap
     extends StObject
        with PlacementEndings
   
   /**
-    * A marker is placed at the control point.
-    */
+  			 * A marker is placed at the control point.
+  			 */
   @js.native
   sealed trait WithMarkers
     extends StObject

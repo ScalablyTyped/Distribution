@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @SINCE 1.58
+  * @since 1.58
   */
 @JSImport("sap/ui/events/KeyCodes", JSImport.Default)
 @js.native

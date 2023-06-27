@@ -1,7 +1,7 @@
 
 # Scala.js typings for parcel__package-manager
 
-Typings are for version 2.8.3
+Typings are for version 2.9.2
 
 ## Library description:
 Blazing fast, zero configuration web application bundler

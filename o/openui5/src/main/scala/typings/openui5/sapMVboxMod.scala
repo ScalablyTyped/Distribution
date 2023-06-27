@@ -17,17 +17,13 @@ object sapMVboxMod {
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
-    *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.FlexBox#constructor
-    * sap.m.FlexBox} can be used.
     * See:
     * 	https://www.w3.org/TR/css-flexbox-1/
     * 	https://www.w3.org/TR/css-flexbox-1/#propdef-justify-content
     * 	https://www.w3.org/TR/css-flexbox-1/#propdef-flex-direction
     * 	https://www.w3schools.com/css/css3_flexbox.asp#flex-direction
     */
-  open class default ()
-    extends typings.openui5.sapMFlexBoxMod.default {
+  open class default () extends VBox {
     def this(/**
       * initial settings for the new control
       */
@@ -125,7 +121,18 @@ object sapMVboxMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
   }
   
-  type VBox = typings.openui5.sapMFlexBoxMod.default
+  @js.native
+  trait VBox
+    extends typings.openui5.sapMFlexBoxMod.default
   
-  type VBoxSettings = FlexBoxSettings
+  trait VBoxSettings
+    extends StObject
+       with FlexBoxSettings
+  object VBoxSettings {
+    
+    inline def apply(): VBoxSettings = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VBoxSettings]
+    }
+  }
 }

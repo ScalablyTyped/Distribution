@@ -247,7 +247,7 @@ object sapMObjectListItemMod {
     def getIntroTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Favorite`. You should use either this property or the `markers` aggregation,
       * using both may lead to unpredicted behavior.
@@ -263,7 +263,7 @@ object sapMObjectListItemMod {
     def getMarkFavorite(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Flagged`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -279,7 +279,7 @@ object sapMObjectListItemMod {
     def getMarkFlagged(): Boolean = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Locked`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -319,7 +319,7 @@ object sapMObjectListItemMod {
     def getNumber(): String = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getNumberState numberState}.
       *
@@ -361,7 +361,7 @@ object sapMObjectListItemMod {
     def getSecondStatus(): typings.openui5.sapMObjectStatusMod.default = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. This property is valid only if you are
       * using the already deprecated properties - `markFlagged`, `markFavorite`, and `markLocked`. If you are
       * using the `markers` aggregation, the visibility of the markers depends on what is set in the aggregation
@@ -663,7 +663,7 @@ object sapMObjectListItemMod {
     sNumber: String): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getNumberState numberState}.
       *
@@ -837,7 +837,7 @@ object sapMObjectListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Favorite`. You should use either this property or the `markers` aggregation,
       * using both may lead to unpredicted behavior.
@@ -849,7 +849,7 @@ object sapMObjectListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Flagged`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -861,7 +861,7 @@ object sapMObjectListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Locked`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -891,7 +891,7 @@ object sapMObjectListItemMod {
     var number: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Defines the ObjectListItem number and numberUnit value state.
       */
@@ -919,7 +919,7 @@ object sapMObjectListItemMod {
     var secondStatus: js.UndefOr[typings.openui5.sapMObjectStatusMod.default] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. This property is valid only if you are
       * using the already deprecated properties - `markFlagged`, `markFavorite`, and `markLocked`. If you are
       * using the `markers` aggregation, the visibility of the markers depends on what is set in the aggregation

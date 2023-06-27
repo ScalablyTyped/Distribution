@@ -86,6 +86,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ruby
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.s
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.samp
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.script
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.search
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.section
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.select
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.slot
@@ -538,6 +539,11 @@ object distTypesUtilsMiscIsElementTypeMod {
   inline def isElementType_script[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: script): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isElementType_script[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: script, props: P): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def isElementType_search[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: js.Array[search]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isElementType_search[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: js.Array[search], props: P): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isElementType_search[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: search): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isElementType_search[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: search, props: P): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def isElementType_section[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: js.Array[section]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isElementType_section[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: js.Array[section], props: P): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isElementType_section[P /* <: js.UndefOr[StringDictionary[Any]] */](element: Element, tag: section): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementType")(element.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -762,6 +768,7 @@ object distTypesUtilsMiscIsElementTypeMod {
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.s
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.samp
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.script
+    - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.search
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.section
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.select
     - typings.testingLibraryUserEvent.testingLibraryUserEventStrings.slot

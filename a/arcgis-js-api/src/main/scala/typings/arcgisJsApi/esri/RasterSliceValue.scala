@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterSliceValue extends StObject {
   
   /**
-    * The magnitude and direction values for services containing vector data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
-    */
+  		 * The magnitude and direction values for services containing vector data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
+  		 */
   var magdirValue: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * A dimensional definition associated with a given slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
-    */
+  		 * A dimensional definition associated with a given slice.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
+  		 */
   var multidimensionalDefinition: js.Array[DimensionalDefinition]
   
   /**
-    * Image service pixel values for a given slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
-    */
+  		 * Image service pixel values for a given slice.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterSliceValue)
+  		 */
   var value: js.Array[Double]
 }
 object RasterSliceValue {

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.gamepadGamepadSettings")
 @js.native
 /**
-  * Gamepad navigation specific configuration settings.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html)
-  */
+		 * Gamepad navigation specific configuration settings.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html)
+		 */
 open class gamepadGamepadSettings ()
   extends StObject
      with typings.arcgisJsApi.esri.gamepadGamepadSettings {

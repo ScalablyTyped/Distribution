@@ -13,8 +13,7 @@ object sapUiModelOdataTypeOdatatypeMod {
   /**
     * Constructor for a new `ODataType`.
     */
-  open class default ()
-    extends typings.openui5.sapUiModelSimpleTypeMod.default {
+  open class default () extends ODataType {
     def this(/**
       * type-specific format options; see subtypes
       */
@@ -108,5 +107,18 @@ object sapUiModelOdataTypeOdatatypeMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
   }
   
-  type ODataType = typings.openui5.sapUiModelSimpleTypeMod.default
+  @js.native
+  trait ODataType
+    extends typings.openui5.sapUiModelSimpleTypeMod.default {
+    
+    /**
+      * @experimental (since 1.114.0)
+      *
+      * Returns a language-dependent placeholder text such as "e.g. " where  is formatted
+      * using this type.
+      *
+      * @returns The language-dependent placeholder text or `undefined` if the type does not offer a placeholder
+      */
+    def getPlaceholderText(): js.UndefOr[String] = js.native
+  }
 }

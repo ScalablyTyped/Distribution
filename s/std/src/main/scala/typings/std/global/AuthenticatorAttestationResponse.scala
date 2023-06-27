@@ -13,10 +13,12 @@ open class AuthenticatorAttestationResponse ()
   extends StObject
      with typings.std.AuthenticatorAttestationResponse {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/attestationObject) */
   /* standard dom */
   /* CompleteClass */
   override val attestationObject: js.typedarray.ArrayBuffer = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse/clientDataJSON) */
   /* standard dom */
   /* CompleteClass */
   override val clientDataJSON: js.typedarray.ArrayBuffer = js.native
@@ -33,6 +35,7 @@ open class AuthenticatorAttestationResponse ()
   /* CompleteClass */
   override def getPublicKeyAlgorithm(): COSEAlgorithmIdentifier = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getTransports) */
   /* standard dom */
   /* CompleteClass */
   override def getTransports(): js.Array[java.lang.String] = js.native

@@ -25,39 +25,39 @@ trait RasterFunction
      with JSONSupport {
   
   /**
-    * The arguments for the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
-    */
+  		 * The arguments for the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
+  		 */
   var functionArguments: Any = js.native
   
   /**
-    * The raster function name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
-    */
+  		 * The raster function name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
+  		 */
   var functionName: String = js.native
   
   /**
-    * Defines the pixel type of the output image.
-    *
-    * @default unknown
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#outputPixelType)
-    */
+  		 * Defines the pixel type of the output image.
+  		 *
+  		 * @default unknown
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#outputPixelType)
+  		 */
   var outputPixelType: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown = js.native
   
   /**
-    * Property where Raster Function template is passed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#rasterFunctionDefinition)
-    */
+  		 * Property where Raster Function template is passed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#rasterFunctionDefinition)
+  		 */
   var rasterFunctionDefinition: Any = js.native
   
   /**
-    * The variable name for the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
-    */
+  		 * The variable name for the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
+  		 */
   var variableName: String = js.native
 }

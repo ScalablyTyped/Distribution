@@ -12,22 +12,27 @@ open class SpeechSynthesisVoice ()
   extends StObject
      with typings.std.SpeechSynthesisVoice {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/default) */
   /* standard dom */
   /* CompleteClass */
   override val default: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/lang) */
   /* standard dom */
   /* CompleteClass */
   override val lang: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/localService) */
   /* standard dom */
   /* CompleteClass */
   override val localService: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SpeechSynthesisVoice/voiceURI) */
   /* standard dom */
   /* CompleteClass */
   override val voiceURI: java.lang.String = js.native

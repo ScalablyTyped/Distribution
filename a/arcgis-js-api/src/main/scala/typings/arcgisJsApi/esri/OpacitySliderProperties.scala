@@ -9,24 +9,24 @@ trait OpacitySliderProperties
      with SmartMappingSliderBaseProperties {
   
   /**
-    * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#stops)
-    */
+  		 * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
   
   /**
-    * Exposes various properties of the widget that can be styled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
-    */
+  		 * Exposes various properties of the widget that can be styled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
+  		 */
   var style: js.UndefOr[OpacitySliderStyleProperties] = js.undefined
   
   /**
-    * The view model for the OpacitySlider widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#viewModel)
-    */
+  		 * The view model for the OpacitySlider widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[OpacitySliderViewModelProperties] = js.undefined
 }
 object OpacitySliderProperties {

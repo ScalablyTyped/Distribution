@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.DistanceParameters")
 @js.native
 /**
-  * Defines the input parameters when calling [geometryService.distance()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#distance).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html)
-  */
+		 * Defines the input parameters when calling [geometryService.distance()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#distance).
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html)
+		 */
 open class DistanceParameters ()
   extends StObject
      with typings.arcgisJsApi.esri.DistanceParameters {

@@ -122,7 +122,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     extends typings.openui5.sapUiUnifiedCalendarMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * If more than this number of days are displayed, start and end month are displayed on the button.
       *
@@ -142,7 +142,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     def getDays(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getPickerPopup pickerPopup}.
       *
@@ -155,7 +155,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     def getPickerPopup(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -186,7 +186,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     iDays: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getPickerPopup pickerPopup}.
       *
@@ -205,7 +205,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     bPickerPopup: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -230,9 +230,13 @@ object sapUiUnifiedCalendarDateIntervalMod {
       * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oStartDate: js.Date): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oStartDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
   }
   
   trait CalendarDateIntervalSettings
@@ -245,7 +249,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
     var days: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the month- and yearPicker opens on a popup
       */
@@ -254,7 +258,7 @@ object sapUiUnifiedCalendarDateIntervalMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set the day names are shown in a separate line. If not set the day names are shown inside the single
       * days.

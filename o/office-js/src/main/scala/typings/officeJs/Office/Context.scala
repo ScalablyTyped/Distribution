@@ -172,6 +172,20 @@ trait Context extends StObject {
   var roamingSettings: RoamingSettings
   
   /**
+    * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
+    * sensitivity labels if the catalog is enabled.
+    *
+    * @remarks
+    *
+    * [Api set: Mailbox 1.13]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    */
+  var sensitivityLabelsCatalog: SensitivityLabelsCatalog
+  
+  /**
     * Specifies whether the platform and device allows touch interaction.
     * True if the add-in is running on a touch device, such as an iPad; false otherwise.
     *
@@ -206,10 +220,11 @@ object Context {
     platform: PlatformType,
     requirements: RequirementSetSupport,
     roamingSettings: RoamingSettings,
+    sensitivityLabelsCatalog: SensitivityLabelsCatalog,
     touchEnabled: Boolean,
     ui: UI
   ): Context = {
-    val __obj = js.Dynamic.literal(commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(commerceAllowed = commerceAllowed.asInstanceOf[js.Any], contentLanguage = contentLanguage.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displayLanguage = displayLanguage.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], mailbox = mailbox.asInstanceOf[js.Any], officeTheme = officeTheme.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], roamingSettings = roamingSettings.asInstanceOf[js.Any], sensitivityLabelsCatalog = sensitivityLabelsCatalog.asInstanceOf[js.Any], touchEnabled = touchEnabled.asInstanceOf[js.Any], ui = ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
   
@@ -239,6 +254,8 @@ object Context {
     inline def setRequirements(value: RequirementSetSupport): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     inline def setRoamingSettings(value: RoamingSettings): Self = StObject.set(x, "roamingSettings", value.asInstanceOf[js.Any])
+    
+    inline def setSensitivityLabelsCatalog(value: SensitivityLabelsCatalog): Self = StObject.set(x, "sensitivityLabelsCatalog", value.asInstanceOf[js.Any])
     
     inline def setTouchEnabled(value: Boolean): Self = StObject.set(x, "touchEnabled", value.asInstanceOf[js.Any])
     

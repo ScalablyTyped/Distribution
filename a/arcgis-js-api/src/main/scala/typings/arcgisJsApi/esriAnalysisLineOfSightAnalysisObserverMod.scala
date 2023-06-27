@@ -11,10 +11,10 @@ object esriAnalysisLineOfSightAnalysisObserverMod {
   @JSImport("esri/analysis/LineOfSightAnalysisObserver", JSImport.Namespace)
   @js.native
   /**
-    * The LineOfSightAnalysisObserver represents an observer of a [LineOfSightAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisObserver.html)
-    */
+  		 * The LineOfSightAnalysisObserver represents an observer of a [LineOfSightAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisObserver.html)
+  		 */
   open class ^ ()
     extends StObject
        with LineOfSightAnalysisObserver {

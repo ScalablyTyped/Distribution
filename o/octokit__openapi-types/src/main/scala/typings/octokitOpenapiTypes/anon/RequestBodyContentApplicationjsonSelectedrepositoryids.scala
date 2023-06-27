@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonSelectedrepositoryids extends StObject {
   
-  var parameters: `47`
+  var parameters: `55`
   
   var requestBody: ContentApplicationjsonSelectedrepositoryids
 }
 object RequestBodyContentApplicationjsonSelectedrepositoryids {
   
-  inline def apply(parameters: `47`, requestBody: ContentApplicationjsonSelectedrepositoryids): RequestBodyContentApplicationjsonSelectedrepositoryids = {
+  inline def apply(parameters: `55`, requestBody: ContentApplicationjsonSelectedrepositoryids): RequestBodyContentApplicationjsonSelectedrepositoryids = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonSelectedrepositoryids]
   }
@@ -20,7 +20,7 @@ object RequestBodyContentApplicationjsonSelectedrepositoryids {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonSelectedrepositoryids] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `47`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `55`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonSelectedrepositoryids): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
   }

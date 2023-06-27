@@ -143,7 +143,7 @@ object sapFDynamicPageHeaderMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -241,7 +241,7 @@ object sapFDynamicPageHeaderMod {
     sBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -282,7 +282,7 @@ object sapFDynamicPageHeaderMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Determines the background color of the `DynamicPageHeader`.
       *

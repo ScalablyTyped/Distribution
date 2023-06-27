@@ -4,29 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion) */
 trait VTTRegion extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/id) */
   /* standard dom */
   var id: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/lines) */
   /* standard dom */
   var lines: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/regionAnchorX) */
   /* standard dom */
   var regionAnchorX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/regionAnchorY) */
   /* standard dom */
   var regionAnchorY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/scroll) */
   /* standard dom */
   var scroll: ScrollSetting
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/viewportAnchorX) */
   /* standard dom */
   var viewportAnchorX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/viewportAnchorY) */
   /* standard dom */
   var viewportAnchorY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VTTRegion/width) */
   /* standard dom */
   var width: Double
 }

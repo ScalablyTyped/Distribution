@@ -8,12 +8,12 @@ trait PathOrgRepo extends StObject {
   
   var path: OrgRepo
   
-  var query: Page
+  var query: js.UndefOr[Page] = js.undefined
 }
 object PathOrgRepo {
   
-  inline def apply(path: OrgRepo, query: Page): PathOrgRepo = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: OrgRepo): PathOrgRepo = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOrgRepo]
   }
   
@@ -23,5 +23,7 @@ object PathOrgRepo {
     inline def setPath(value: OrgRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

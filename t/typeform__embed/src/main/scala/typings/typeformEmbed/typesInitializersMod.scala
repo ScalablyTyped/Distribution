@@ -10,6 +10,8 @@ object typesInitializersMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def initializeLiveEmbeds(forceReload: Boolean): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeLiveEmbeds")(forceReload.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   inline def initializePopovers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePopovers")().asInstanceOf[Unit]
   inline def initializePopovers(forceReload: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePopovers")(forceReload.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

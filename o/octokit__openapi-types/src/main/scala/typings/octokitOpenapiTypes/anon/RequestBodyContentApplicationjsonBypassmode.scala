@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonBypassmode extends StObject {
   
-  var parameters: `141`
+  var parameters: `165`
   
   /** @description Request body */
   var requestBody: ContentApplicationjsonBypassmode
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonBypassmode extends StObject {
 }
 object RequestBodyContentApplicationjsonBypassmode {
   
-  inline def apply(parameters: `141`, requestBody: ContentApplicationjsonBypassmode, responses: `201404500`): RequestBodyContentApplicationjsonBypassmode = {
+  inline def apply(parameters: `165`, requestBody: ContentApplicationjsonBypassmode, responses: `201404500`): RequestBodyContentApplicationjsonBypassmode = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonBypassmode]
   }
@@ -23,7 +23,7 @@ object RequestBodyContentApplicationjsonBypassmode {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonBypassmode] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `141`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `165`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonBypassmode): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

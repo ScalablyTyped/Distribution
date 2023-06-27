@@ -75,8 +75,8 @@ object sapUiCoreFormatFileSizeFormatMod {
     /**
       * Get an instance of the FileSizeFormat, which can be used for formatting.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       * @returns instance of the FileSizeFormat
       */

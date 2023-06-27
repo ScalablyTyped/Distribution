@@ -13,20 +13,20 @@ trait PolygonSymbol3D
      with symbolsSymbol3D {
   
   /**
-    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#symbolLayers)
-    */
+  		 * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#symbolLayers)
+  		 */
   @JSName("symbolLayers")
   var symbolLayers_PolygonSymbol3D: Collection[
     ExtrudeSymbol3DLayer | FillSymbol3DLayer | IconSymbol3DLayer | LineSymbol3DLayer | ObjectSymbol3DLayer | TextSymbol3DLayer | WaterSymbol3DLayer
   ] = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#type)
+  		 */
   @JSName("type")
   val type_PolygonSymbol3D: `polygon-3d` = js.native
 }

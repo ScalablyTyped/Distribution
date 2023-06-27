@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait meshUtilsCreateFromElevationOptions extends StObject {
   
   /**
-    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createFromElevation)
-    */
+  		 * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createFromElevation)
+  		 */
   var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Signal object that can be used to abort the asynchronous task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createFromElevation)
-    */
+  		 * Signal object that can be used to abort the asynchronous task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createFromElevation)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object meshUtilsCreateFromElevationOptions {

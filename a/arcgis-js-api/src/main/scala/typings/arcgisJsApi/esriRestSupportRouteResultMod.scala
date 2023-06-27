@@ -12,20 +12,20 @@ object esriRestSupportRouteResultMod {
   @JSImport("esri/rest/support/RouteResult", JSImport.Namespace)
   @js.native
   /**
-    * The route result from [route.solve()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-route.html#solve) as part of a [RouteSolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteSolveResult.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html)
-    */
+  		 * The route result from [route.solve()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-route.html#solve) as part of a [RouteSolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteSolveResult.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteResult.html)
+  		 */
   open class ^ ()
     extends StObject
        with RouteResult {
     def this(properties: RouteResultProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

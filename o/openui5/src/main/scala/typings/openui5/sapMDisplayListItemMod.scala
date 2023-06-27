@@ -143,7 +143,7 @@ object sapMDisplayListItemMod {
     def getValue(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getValueTextDirection valueTextDirection}.
       *
@@ -187,7 +187,7 @@ object sapMDisplayListItemMod {
     sValue: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getValueTextDirection valueTextDirection}.
       *
@@ -228,7 +228,7 @@ object sapMDisplayListItemMod {
     var value: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the `value` text directionality with enumerated options. By default, the control inherits text
       * direction from the DOM.

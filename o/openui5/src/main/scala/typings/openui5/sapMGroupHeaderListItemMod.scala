@@ -142,7 +142,7 @@ object sapMGroupHeaderListItemMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -156,7 +156,7 @@ object sapMGroupHeaderListItemMod {
     def getTitleTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       * @deprecated (since 1.40.10)
       *
       * Gets current value of property {@link #getUpperCase upperCase}.
@@ -201,7 +201,7 @@ object sapMGroupHeaderListItemMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -227,7 +227,7 @@ object sapMGroupHeaderListItemMod {
     sTitleTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       * @deprecated (since 1.40.10)
       *
       * Sets a new value for property {@link #getUpperCase upperCase}.
@@ -263,7 +263,7 @@ object sapMGroupHeaderListItemMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the title text directionality with enumerated options. By default, the control inherits text
       * direction from the DOM.
@@ -273,7 +273,7 @@ object sapMGroupHeaderListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       * @deprecated (since 1.40.10)
       *
       * Allows to uppercase the group title.

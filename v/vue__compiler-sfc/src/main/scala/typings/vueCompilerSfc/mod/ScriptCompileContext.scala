@@ -4,9 +4,11 @@ import typings.babelTypes.mod.Node
 import typings.babelTypes.mod.ObjectPattern_
 import typings.babelTypes.mod.Program_
 import typings.magicString.mod.default
+import typings.std.NonNullable
 import typings.std.Record
 import typings.std.Set
 import typings.vueCompilerCore.mod.BindingMetadata
+import typings.vueCompilerSfc.anon.FileExists
 import typings.vueCompilerSfc.anon.PartialSFCScriptCompileOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,6 +42,11 @@ open class ScriptCompileContext protected ()
   def error(msg: String, node: Node, scope: TypeScope): scala.Nothing = js.native
   
   var filename: String = js.native
+  
+  /**
+    * cache for resolved fs
+    */
+  var fs: js.UndefOr[NonNullable[js.UndefOr[FileExists]]] = js.native
   
   def getString(node: Node): String = js.native
   def getString(node: Node, scriptSetup: Boolean): String = js.native

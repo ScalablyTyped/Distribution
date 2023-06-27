@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "browser-or-node" : "2.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "browser-or-node" : "2.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

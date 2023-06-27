@@ -12,27 +12,27 @@ trait FeatureLayerSource
      with JSONSupport {
   
   /**
-    * A unique identifying string that must match the `id` property of a feature layer in an associated map.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerId)
-    */
+  		 * A unique identifying string that must match the `id` property of a feature layer in an associated map.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerId)
+  		 */
   var layerId: String = js.native
   
   /**
-    * A URL to a service that will be used for all queries against the layer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerUrl)
-    */
+  		 * A URL to a service that will be used for all queries against the layer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerUrl)
+  		 */
   var layerUrl: String = js.native
   
   /**
-    * String indicating the type of source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#type)
-    */
+  		 * String indicating the type of source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#type)
+  		 */
   val `type`: `feature-layer` = js.native
 }

@@ -137,13 +137,13 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.tmpl.TemplateControl` itself
       */
@@ -169,7 +169,7 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
@@ -180,7 +180,7 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.tmpl.TemplateControl` itself
       */
@@ -202,13 +202,13 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeRendering(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.tmpl.TemplateControl` itself
       */
@@ -234,7 +234,7 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeRendering(
       /**
@@ -245,7 +245,7 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.tmpl.TemplateControl` itself
       */
@@ -253,7 +253,7 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a pseudo binding for an aggregation to get notified once the property changes to invalidate the
       * control and trigger a re-rendering.
@@ -266,7 +266,7 @@ object sapUiCoreTmplTemplateControlMod {
     sPath: String): Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a pseudo binding for a property to get notified once the property changes to invalidate the control
       * and trigger a re-rendering.
@@ -279,7 +279,7 @@ object sapUiCoreTmplTemplateControlMod {
     sPath: String): Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * compiles (creates and registers) a new control
       *
@@ -297,7 +297,7 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * compiles (creates and registers) a new control
       *
@@ -311,7 +311,7 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * compiles (creates and registers) a new control
       *
@@ -333,7 +333,7 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * compiles (creates and registers) a new control
       *
@@ -352,7 +352,7 @@ object sapUiCoreTmplTemplateControlMod {
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * compiles (creates and registers) a new DOM element
       *
@@ -413,13 +413,13 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterRendering(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -438,13 +438,13 @@ object sapUiCoreTmplTemplateControlMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeRendering(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -452,7 +452,7 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterRendering afterRendering} to attached listeners.
       *
@@ -465,7 +465,7 @@ object sapUiCoreTmplTemplateControlMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeRendering beforeRendering} to attached listeners.
       *
@@ -494,7 +494,7 @@ object sapUiCoreTmplTemplateControlMod {
     def getTemplate(): ID = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the instance specific renderer for an anonymous template control.
       *
@@ -503,7 +503,7 @@ object sapUiCoreTmplTemplateControlMod {
     def getTemplateRenderer(): js.Function = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * checks whether the control is inline or not
       *
@@ -549,7 +549,7 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the instance specific renderer for an anonymous template control.
       *
@@ -561,6 +561,18 @@ object sapUiCoreTmplTemplateControlMod {
     fnRenderer: js.Function): this.type = js.native
   }
   
+  trait TemplateControl$AfterRenderingEventParameters extends StObject
+  
+  trait TemplateControl$BeforeRenderingEventParameters extends StObject
+  
+  type TemplateControlAfterRenderingEvent = typings.openui5.sapUiBaseEventMod.default[TemplateControl$AfterRenderingEventParameters]
+  
+  type TemplateControlAfterRenderingEventParameters = TemplateControl$AfterRenderingEventParameters
+  
+  type TemplateControlBeforeRenderingEvent = typings.openui5.sapUiBaseEventMod.default[TemplateControl$BeforeRenderingEventParameters]
+  
+  type TemplateControlBeforeRenderingEventParameters = TemplateControl$BeforeRenderingEventParameters
+  
   trait TemplateControlSettings
     extends StObject
        with ControlSettings {
@@ -568,12 +580,16 @@ object sapUiCoreTmplTemplateControlMod {
     /**
       * Fired when the Template Control has been (re-)rendered and its HTML is present in the DOM.
       */
-    var afterRendering: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterRendering: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired before this Template Control is re-rendered. Use to unbind event handlers from HTML elements etc.
       */
-    var beforeRendering: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeRendering: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The context is a data object. It can be used for default template expressions. A change of the context
@@ -599,11 +615,11 @@ object sapUiCoreTmplTemplateControlMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TemplateControlSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
+      inline def setAfterRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
       
       inline def setAfterRenderingUndefined: Self = StObject.set(x, "afterRendering", js.undefined)
       
-      inline def setBeforeRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeRendering", js.Any.fromFunction1(value))
+      inline def setBeforeRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeRendering", js.Any.fromFunction1(value))
       
       inline def setBeforeRenderingUndefined: Self = StObject.set(x, "beforeRendering", js.undefined)
       

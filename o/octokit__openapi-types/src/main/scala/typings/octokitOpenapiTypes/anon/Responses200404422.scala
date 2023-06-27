@@ -8,13 +8,17 @@ trait Responses200404422 extends StObject {
   
   var parameters: PathRepoRunnerid
   
-  var requestBody: ContentApplicationjsonLabels
+  var requestBody: ContentApplicationjsonLabelsArray
   
   var responses: `200404422`
 }
 object Responses200404422 {
   
-  inline def apply(parameters: PathRepoRunnerid, requestBody: ContentApplicationjsonLabels, responses: `200404422`): Responses200404422 = {
+  inline def apply(
+    parameters: PathRepoRunnerid,
+    requestBody: ContentApplicationjsonLabelsArray,
+    responses: `200404422`
+  ): Responses200404422 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200404422]
   }
@@ -24,7 +28,7 @@ object Responses200404422 {
     
     inline def setParameters(value: PathRepoRunnerid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjsonLabels): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjsonLabelsArray): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

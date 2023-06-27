@@ -41,7 +41,7 @@ object PlacementType extends StObject {
   /* "Horizontal" */ val Horizontal: typings.openui5.sapMLibraryMod.PlacementType.Horizontal & String = js.native
   
   /**
-    * @SINCE 1.29
+    * @since 1.29
     * @deprecated (since 1.36) - Instead, use `sap.m.PlacementType.HorizontalPreferredLeft` type.
     *
     * Deprecated - use `sap.m.PlacementType.HorizontalPreferredLeft` type.
@@ -53,7 +53,7 @@ object PlacementType extends StObject {
   /* "HorizontalPreferedLeft" */ val HorizontalPreferedLeft: typings.openui5.sapMLibraryMod.PlacementType.HorizontalPreferedLeft & String = js.native
   
   /**
-    * @SINCE 1.29
+    * @since 1.29
     * @deprecated (since 1.36) - Instead, use `sap.m.PlacementType.HorizontalPreferredRight` type.
     *
     * Deprecated - use `sap.m.PlacementType.HorizontalPreferredRight` type.
@@ -65,7 +65,7 @@ object PlacementType extends StObject {
   /* "HorizontalPreferedRight" */ val HorizontalPreferedRight: typings.openui5.sapMLibraryMod.PlacementType.HorizontalPreferedRight & String = js.native
   
   /**
-    * @SINCE 1.36
+    * @since 1.36
     *
     * Popover will be placed at the right or left side of the reference control but will try to position on
     * the left side if the space is greater than the Popover's width.
@@ -77,7 +77,7 @@ object PlacementType extends StObject {
   /* "HorizontalPreferredLeft" */ val HorizontalPreferredLeft: typings.openui5.sapMLibraryMod.PlacementType.HorizontalPreferredLeft & String = js.native
   
   /**
-    * @SINCE 1.36
+    * @since 1.36
     *
     * Popover will be placed at the right or left side of the reference control but will try to position on
     * the right side if the space is greater than the Popover's width.
@@ -98,7 +98,7 @@ object PlacementType extends StObject {
   /* "Left" */ val Left: typings.openui5.sapMLibraryMod.PlacementType.Left & String = js.native
   
   /**
-    * @SINCE 1.38
+    * @since 1.38
     *
     * Popover will be placed to the bottom of the reference control. If the available space is less than the
     * Popover's height, it will appear to the top of the same reference control bottom border.
@@ -110,7 +110,7 @@ object PlacementType extends StObject {
   /* "PreferredBottomOrFlip" */ val PreferredBottomOrFlip: typings.openui5.sapMLibraryMod.PlacementType.PreferredBottomOrFlip & String = js.native
   
   /**
-    * @SINCE 1.38
+    * @since 1.38
     *
     * Popover will be placed to the left of the reference control. If the available space is less than the
     * Popover's width, it will appear to the right of the same reference control left border.
@@ -122,7 +122,7 @@ object PlacementType extends StObject {
   /* "PreferredLeftOrFlip" */ val PreferredLeftOrFlip: typings.openui5.sapMLibraryMod.PlacementType.PreferredLeftOrFlip & String = js.native
   
   /**
-    * @SINCE 1.38
+    * @since 1.38
     *
     * Popover will be placed to the right of the reference control. If the available space is less than the
     * Popover's width, it will appear to the left of the same reference control right border.
@@ -134,7 +134,7 @@ object PlacementType extends StObject {
   /* "PreferredRightOrFlip" */ val PreferredRightOrFlip: typings.openui5.sapMLibraryMod.PlacementType.PreferredRightOrFlip & String = js.native
   
   /**
-    * @SINCE 1.38
+    * @since 1.38
     *
     * Popover will be placed to the top of the reference control. If the available space is less than the Popover's
     * height, it will appear to the bottom of the same reference control top border.
@@ -173,7 +173,7 @@ object PlacementType extends StObject {
   /* "Vertical" */ val Vertical: typings.openui5.sapMLibraryMod.PlacementType.Vertical & String = js.native
   
   /**
-    * @SINCE 1.29
+    * @since 1.29
     * @deprecated (since 1.36) - Instead, use `sap.m.PlacementType.VerticalPreferredBottom` type.
     *
     * Deprecated - use `sap.m.PlacementType.VerticalPreferredBottom` type.
@@ -185,7 +185,7 @@ object PlacementType extends StObject {
   /* "VerticalPreferedBottom" */ val VerticalPreferedBottom: typings.openui5.sapMLibraryMod.PlacementType.VerticalPreferedBottom & String = js.native
   
   /**
-    * @SINCE 1.29
+    * @since 1.29
     * @deprecated (since 1.36) - Instead, use `sap.m.PlacementType.VerticalPreferredTop` type.
     *
     * Deprecated - use `sap.m.PlacementType.VerticalPreferredTop` type.
@@ -197,7 +197,7 @@ object PlacementType extends StObject {
   /* "VerticalPreferedTop" */ val VerticalPreferedTop: typings.openui5.sapMLibraryMod.PlacementType.VerticalPreferedTop & String = js.native
   
   /**
-    * @SINCE 1.36
+    * @since 1.36
     *
     * Popover will be placed at the top or bottom of the reference control but will try to position on the
     * bottom side if the space is greater than the Popover's height.
@@ -209,7 +209,7 @@ object PlacementType extends StObject {
   /* "VerticalPreferredBottom" */ val VerticalPreferredBottom: typings.openui5.sapMLibraryMod.PlacementType.VerticalPreferredBottom & String = js.native
   
   /**
-    * @SINCE 1.36
+    * @since 1.36
     *
     * Popover will be placed at the top or bottom of the reference control but will try to position on the
     * top side if the space is greater than the Popover's height.

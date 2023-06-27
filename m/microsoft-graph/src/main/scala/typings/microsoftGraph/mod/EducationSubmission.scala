@@ -37,8 +37,8 @@ trait EducationSubmission
   var returnedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Read-only. Possible values are: working, submitted, released, returned, and reassigned. Note that you must use the
-    * Prefer: include-unknown-enum-members request header to get the following value(s) in this evolvable enum: reassigned.
+    * Read-only. Possible values are: working, submitted, returned, and reassigned. Note that you must use the Prefer:
+    * include-unknown-enum-members request header to get the following value(s) in this evolvable enum: reassigned.
     */
   var status: js.UndefOr[NullableOption[EducationSubmissionStatus]] = js.undefined
   

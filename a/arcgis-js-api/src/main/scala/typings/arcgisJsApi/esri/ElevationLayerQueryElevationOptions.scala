@@ -8,33 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationLayerQueryElevationOptions extends StObject {
   
   /**
-    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
-    */
+  		 * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
+  		 */
   var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The value to use when there is no data available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
-    */
+  		 * The value to use when there is no data available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
+  		 */
   var noDataValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether to return additional sample information for each coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
-    */
+  		 * Indicates whether to return additional sample information for each coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
+  		 */
   var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
-    */
+  		 * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#queryElevation)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object ElevationLayerQueryElevationOptions {

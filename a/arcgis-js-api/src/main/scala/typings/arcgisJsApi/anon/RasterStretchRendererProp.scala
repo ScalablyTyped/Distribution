@@ -17,93 +17,93 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterStretchRendererProp extends StObject {
   
   /**
-    * The stretched values are mapped to this specified color ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#colorRamp)
-    */
+  		 * The stretched values are mapped to this specified color ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#colorRamp)
+  		 */
   var colorRamp: js.UndefOr[ColorRampProperties] = js.undefined
   
   /**
-    * The computeGamma automatically calculates best gamma value to render exported image based on empirical model.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#computeGamma)
-    */
+  		 * The computeGamma automatically calculates best gamma value to render exported image based on empirical model.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#computeGamma)
+  		 */
   var computeGamma: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When Dynamic Range Adjustment is `true`, the statistics based on the current display extent are calculated as you zoom and pan around the image.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#dynamicRangeAdjustment)
-    */
+  		 * When Dynamic Range Adjustment is `true`, the statistics based on the current display extent are calculated as you zoom and pan around the image.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#dynamicRangeAdjustment)
+  		 */
   var dynamicRangeAdjustment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The gamma values to be used if [useGamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma) is set to `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma)
-    */
+  		 * The gamma values to be used if [useGamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma) is set to `true`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma)
+  		 */
   var gamma: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#maxPercent)
-    */
+  		 * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#maxPercent)
+  		 */
   var maxPercent: js.UndefOr[Double] = js.undefined
   
   /**
-    * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#minPercent)
-    */
+  		 * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `percent-clip`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#minPercent)
+  		 */
   var minPercent: js.UndefOr[Double] = js.undefined
   
   /**
-    * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `standard-deviation`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#numberOfStandardDeviations)
-    */
+  		 * Applicable when [stretchType](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType) is `standard-deviation`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#numberOfStandardDeviations)
+  		 */
   var numberOfStandardDeviations: js.UndefOr[Double] = js.undefined
   
   /**
-    * The outputMax denotes the output maximum, which is the highest pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMax)
-    */
+  		 * The outputMax denotes the output maximum, which is the highest pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMax)
+  		 */
   var outputMax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The outputMin denotes the output minimum, which is the lowest pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMin)
-    */
+  		 * The outputMin denotes the output minimum, which is the lowest pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#outputMin)
+  		 */
   var outputMin: js.UndefOr[Double] = js.undefined
   
   /**
-    * The sigmoid strength level determines how much of the sigmoidal function will be used in the stretch.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#sigmoidStrengthLevel)
-    */
+  		 * The sigmoid strength level determines how much of the sigmoidal function will be used in the stretch.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#sigmoidStrengthLevel)
+  		 */
   var sigmoidStrengthLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * The input statistics can be specified through the statistics property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
-    */
+  		 * The input statistics can be specified through the statistics property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#statistics)
+  		 */
   var statistics: js.UndefOr[(js.Array[Any | js.Array[Double]]) | RasterStretchRendererStatistics] = js.undefined
   
   /**
-    * The stretch type defines a histogram stretch that will be applied to the rasters to enhance their appearance.
-    *
-    * @default none
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType)
-    */
+  		 * The stretch type defines a histogram stretch that will be applied to the rasters to enhance their appearance.
+  		 *
+  		 * @default none
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#stretchType)
+  		 */
   var stretchType: js.UndefOr[
     none_ | `standard-deviation` | `histogram-equalization` | `min-max` | `percent-clip` | sigmoid
   ] = js.undefined
@@ -111,12 +111,12 @@ trait RasterStretchRendererProp extends StObject {
   var `type`: `raster-stretch`
   
   /**
-    * Denotes whether the [gamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma) value should be used.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma)
-    */
+  		 * Denotes whether the [gamma](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#gamma) value should be used.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html#useGamma)
+  		 */
   var useGamma: js.UndefOr[Boolean] = js.undefined
 }
 object RasterStretchRendererProp {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lingui__react
 
-Typings are for version 4.0.0
+Typings are for version 4.2.1
 
 ## Library description:
 React components for translations

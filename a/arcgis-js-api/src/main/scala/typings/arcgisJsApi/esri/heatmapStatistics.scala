@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Function for generating statistics from a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) for a [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) visualization.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html)
-  */
+	 * Function for generating statistics from a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) for a [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) visualization.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html)
+	 */
 trait heatmapStatistics extends StObject {
   
   /**
-    * Returns an object containing various statistics describing the intensity values for a heatmap visualization of a given point [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
-    */
+  		 * Returns an object containing various statistics describing the intensity values for a heatmap visualization of a given point [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#heatmapStatistics)
+  		 */
   def heatmapStatistics(params: heatmapStatisticsHeatmapStatisticsParams): js.Promise[HeatmapStatisticsResult]
 }
 object heatmapStatistics {

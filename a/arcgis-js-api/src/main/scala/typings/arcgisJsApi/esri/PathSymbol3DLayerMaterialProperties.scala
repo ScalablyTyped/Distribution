@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PathSymbol3DLayerMaterialProperties extends StObject {
   
   /**
-    * The color of the path.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
-    */
+  		 * The color of the path.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object PathSymbol3DLayerMaterialProperties {

@@ -1,7 +1,8 @@
 package typings.floatingUiCore
 
-import typings.floatingUiCore.anon.AlignmentAxis
+import typings.floatingUiCore.anon.PartialmainAxisnumbercros
 import typings.floatingUiCore.srcTypesMod.Coords
+import typings.floatingUiCore.srcTypesMod.Derivable
 import typings.floatingUiCore.srcTypesMod.Middleware
 import typings.floatingUiCore.srcTypesMod.MiddlewareState
 import org.scalablytyped.runtime.StObject
@@ -14,14 +15,12 @@ object srcMiddlewareOffsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def convertValueToCoords(state: MiddlewareState, value: Options): js.Promise[Coords] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToCoords")(state.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Coords]]
+  inline def convertValueToCoords(state: MiddlewareState, options: OffsetOptions): js.Promise[Coords] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertValueToCoords")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Coords]]
   
   inline def offset(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[Middleware]
-  inline def offset(value: Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def offset(options: OffsetOptions): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  type OffsetFunction = js.Function1[/* state */ MiddlewareState, OffsetValue]
+  type OffsetOptions = OffsetValue | Derivable[OffsetValue]
   
-  type OffsetValue = Double | AlignmentAxis
-  
-  type Options = OffsetValue | OffsetFunction
+  type OffsetValue = Double | PartialmainAxisnumbercros
 }

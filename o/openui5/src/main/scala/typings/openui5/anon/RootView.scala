@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RootView extends StObject {
   
   /**
-    * By default, the root view will be set to the ID of the view returned by the {@link sap.ui.core.UIComponent#getRootView}
+    * By default, the root view will be set to the ID of the view returned by the {@link sap.ui.core.UIComponent#getRootView }
     * function. You should not set this parameter if you create a view with the UIComponent.
     */
   var rootView: js.UndefOr[String] = js.undefined

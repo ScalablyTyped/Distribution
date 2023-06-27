@@ -57,52 +57,52 @@ trait DirectionPoint
      with JSONSupport {
   
   /**
-    * Time when the action happens.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#arrivalTime)
-    */
+  		 * Time when the action happens.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#arrivalTime)
+  		 */
   var arrivalTime: js.Date = js.native
   
   /**
-    * The type of directions event or maneuver described by the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#directionPointType)
-    */
+  		 * The type of directions event or maneuver described by the point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#directionPointType)
+  		 */
   var directionPointType: header | arrive | depart | straight | `on-ferry` | `off-ferry` | `central-fork` | roundabout | `u-turn` | door | stairs | elevator | escalator | `pedestrian-ramp` | `left-fork` | `left-ramp` | `clockwise-roundabout` | `left-handed-u-turn` | `bear-left` | `left-turn` | `sharp-left` | `left-turn-and-immediate-left-turn` | `left-turn-and-immediate-right-turn` | `right-fork` | `right-ramp` | `counter-clockwise-roundabout` | `right-handed-u-turn` | `bear-right` | `right-turn` | `sharp-right` | `right-turn-and-immediate-left-turn` | `right-turn-and-immediate-right-turn` | `up-elevator` | `up-escalator` | `up-stairs` | `down-elevator` | `down-escalator` | `down-stairs` | `general-event` | landmark | `time-zone-change` | `traffic-event` | `scaled-cost-barrier-event` | `boundary-crossing` | `restriction-violation` = js.native
   
   /**
-    * The direction item text to dispay on the screen.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#displayText)
-    */
+  		 * The direction item text to dispay on the screen.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#displayText)
+  		 */
   var displayText: String = js.native
   
   /**
-    * The local time offset (in minutes) for the arrival time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#endTimeOffset)
-    */
+  		 * The local time offset (in minutes) for the arrival time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#endTimeOffset)
+  		 */
   var endTimeOffset: Double = js.native
   
   /**
-    * Point representing the direction's location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#geometry)
-    */
+  		 * Point representing the direction's location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#geometry)
+  		 */
   var geometry: Point = js.native
   
   /**
-    * Sequence of the Direction items, starting with 1.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#sequence)
-    */
+  		 * Sequence of the Direction items, starting with 1.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#sequence)
+  		 */
   var sequence: Double = js.native
   
   /**
-    * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [DirectionPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html) instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#toGraphic)
-    */
+  		 * Creates a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) from the [DirectionPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html) instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionPoint.html#toGraphic)
+  		 */
   def toGraphic(): Graphic = js.native
   
   val `type`: `direction-point` = js.native

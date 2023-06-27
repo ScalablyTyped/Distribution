@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseLayerViewGL2DRenderRenderParameters extends StObject {
   
   /**
-    * The WebGL or WebGL 2 context.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
-    */
+  		 * The WebGL or WebGL 2 context.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
+  		 */
   var context: WebGLRenderingContext | Any
   
   /**
-    * The object that describes view state.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
-    */
+  		 * The object that describes view state.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
+  		 */
   var state: ViewState
   
   /**
-    * The stationary state of the `MapView`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
-    */
+  		 * The stationary state of the `MapView`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
+  		 */
   var stationary: Boolean
 }
 object BaseLayerViewGL2DRenderRenderParameters {

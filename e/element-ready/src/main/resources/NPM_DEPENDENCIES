@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "element-ready" : "6.2.1"
+      "element-ready" : "6.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "element-ready" : "6.2.1"
+      "element-ready" : "6.2.2"
     }
   ],
   "compile-devDependencies" : [

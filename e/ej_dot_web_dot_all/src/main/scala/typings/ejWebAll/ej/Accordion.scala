@@ -745,7 +745,7 @@ object Accordion {
     var ajaxLoad: js.UndefOr[js.Function1[/* e */ AjaxLoadEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the content to the accordion control.
-      * @Default {null}
+      * @default {null}
       */
     var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.Accordion.AjaxSettings] = js.undefined
     
@@ -754,7 +754,7 @@ object Accordion {
     var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Accordion headers can be expanded and collapsed on keyboard action.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
@@ -767,12 +767,12 @@ object Accordion {
     var beforeInactivate: js.UndefOr[js.Function1[/* e */ BeforeInactivateEventArgs, Unit]] = js.undefined
     
     /** To set the Accordion headers Collapse Speed.
-      * @Default {300}
+      * @default {300}
       */
     var collapseSpeed: js.UndefOr[Double] = js.undefined
     
     /** Specifies the collapsible state of accordion control.
-      * @Default {false}
+      * @default {false}
       */
     var collapsible: js.UndefOr[Boolean] = js.undefined
     
@@ -785,7 +785,7 @@ object Accordion {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom header Icon. It accepts two key values â€œheaderâ€, â€selectedHeaderâ€.
-      * @Default {{ header: e-collapse, selectedHeader: e-expand }}
+      * @default {{ header: e-collapse, selectedHeader: e-expand }}
       */
     var customIcon: js.UndefOr[CustomIcon] = js.undefined
     
@@ -794,48 +794,48 @@ object Accordion {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Disables the specified indexed items in accordion.
-      * @Default {[]}
+      * @default {[]}
       */
     var disabledItems: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Specifies the animation behavior in accordion.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Multiple content panels to activate at a time.
-      * @Default {false}
+      * @default {false}
       */
     var enableMultipleOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Save current model value to browser cookies for maintaining states. When refreshing the accordion control page, the model value is applied from browser cookies or HTML 5local
       * storage.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Display headers and panel text from right-to-left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** With this enabled property, you can enable or disable the Accordion.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Used to enable the disabled items in accordion.
-      * @Default {[]}
+      * @default {[]}
       */
     var enabledItems: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** The events API binds the action for activating the accordion header. Users can activate the header by using mouse actions such as mouse-over, mouse-up, mouse-down, and soon.
-      * @Default {click}
+      * @default {click}
       */
     var events: js.UndefOr[String] = js.undefined
     
     /** To set the Accordion headers Expand Speed.
-      * @Default {300}
+      * @default {300}
       */
     var expandSpeed: js.UndefOr[Double] = js.undefined
     
@@ -844,17 +844,17 @@ object Accordion {
     var headerSize: js.UndefOr[Double | String] = js.undefined
     
     /** Specifies height of the accordion.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** Adjusts the content panel height based on the given option (content, auto, or fill). By default, the panel heights are adjusted based on the content.
-      * @Default {content}
+      * @default {content}
       */
     var heightAdjustMode: js.UndefOr[HeightAdjustMode | String] = js.undefined
     
     /** It allows to define the characteristics of the Accordion control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
@@ -863,27 +863,27 @@ object Accordion {
     var inActivate: js.UndefOr[js.Function1[/* e */ InActivateEventArgs, Unit]] = js.undefined
     
     /** The given index header will activate (open). If collapsible is set to true, and a negative value is given, then all headers are collapsed. Otherwise, the first panel isactivated.
-      * @Default {0}
+      * @default {0}
       */
     var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Activate the specified indexed items of the accordion
-      * @Default {[0]}
+      * @default {[0]}
       */
     var selectedItems: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Used to determines the close button visibility an each accordion items. This close button helps to remove the accordion item from the control.
-      * @Default {false}
+      * @default {false}
       */
     var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /** Displays rounded corner borders on the Accordion control's panels and headers.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies width of the accordion.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Double | String] = js.undefined
   }

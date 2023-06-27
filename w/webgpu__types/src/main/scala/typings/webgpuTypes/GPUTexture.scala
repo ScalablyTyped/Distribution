@@ -26,7 +26,7 @@ trait GPUTexture
   /**
     * The depth or layer count of this {@link GPUTexture}.
     */
-  val depthOrArrayLayers: GPUIntegerCoordinate = js.native
+  val depthOrArrayLayers: GPUIntegerCoordinateOut = js.native
   
   /**
     * Destroys the {@link GPUTexture}.
@@ -46,25 +46,25 @@ trait GPUTexture
   /**
     * The height of this {@link GPUTexture}.
     */
-  val height: GPUIntegerCoordinate = js.native
+  val height: GPUIntegerCoordinateOut = js.native
   
   /**
     * The number of mip levels of this {@link GPUTexture}.
     */
-  val mipLevelCount: GPUIntegerCoordinate = js.native
+  val mipLevelCount: GPUIntegerCoordinateOut = js.native
   
   /**
     * The number of sample count of this {@link GPUTexture}.
     */
-  val sampleCount: GPUSize32 = js.native
+  val sampleCount: GPUSize32Out = js.native
   
   /**
     * The allowed usages for this {@link GPUTexture}.
     */
-  val usage: GPUTextureUsageFlags = js.native
+  val usage: GPUFlagsConstant = js.native
   
   /**
     * The width of this {@link GPUTexture}.
     */
-  val width: GPUIntegerCoordinate = js.native
+  val width: GPUIntegerCoordinateOut = js.native
 }

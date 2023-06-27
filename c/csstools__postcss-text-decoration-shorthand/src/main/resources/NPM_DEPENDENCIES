@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-text-decoration-shorthand" : "2.2.3"
+      "@csstools/postcss-text-decoration-shorthand" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-text-decoration-shorthand" : "2.2.3"
+      "@csstools/postcss-text-decoration-shorthand" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

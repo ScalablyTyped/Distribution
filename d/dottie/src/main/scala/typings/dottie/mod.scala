@@ -178,7 +178,7 @@ object mod extends Shortcut {
   type DottiePath = String | js.Array[String]
   
   /**
-    * @example:
+    * @example
     * {
     *  'foo.bar.baz': 'baz',
     *  'foo.baz': 'baz',

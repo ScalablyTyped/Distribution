@@ -75,7 +75,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is chrome.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def chrome(): Boolean = js.native
   def chrome(range: EnvironmentVersionRange): Boolean = js.native
@@ -127,7 +127,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is edge.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def edge(): Boolean = js.native
   def edge(range: EnvironmentVersionRange): Boolean = js.native
@@ -188,7 +188,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is firefox.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def firefox(): Boolean = js.native
   def firefox(range: EnvironmentVersionRange): Boolean = js.native
@@ -222,7 +222,7 @@ trait IsStatic extends StObject {
   //#region Environment checks
   /**
     * Checks if current browser is ie
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def ie(): Boolean = js.native
   def ie(range: EnvironmentVersionRange): Boolean = js.native
@@ -298,21 +298,21 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current device is iPad.
-    * @parm value Optional version range of device
+    * @param value Optional version range of device
     */
   def ipad(): Boolean = js.native
   def ipad(range: EnvironmentVersionRange): Boolean = js.native
   
   /**
     * Checks if current device is iPhone.
-    * @parm value Optional version range of device
+    * @param value Optional version range of device
     */
   def iphone(): Boolean = js.native
   def iphone(range: EnvironmentVersionRange): Boolean = js.native
   
   /**
     * Checks if current device is iPod.
-    * @parm value Optional version range of device
+    * @param value Optional version range of device
     */
   def ipod(): Boolean = js.native
   def ipod(range: EnvironmentVersionRange): Boolean = js.native
@@ -409,7 +409,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is opera.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def opera(): Boolean = js.native
   def opera(range: EnvironmentVersionRange): Boolean = js.native
@@ -426,7 +426,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is phantom.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def phantom(): Boolean = js.native
   def phantom(range: EnvironmentVersionRange): Boolean = js.native
@@ -460,7 +460,7 @@ trait IsStatic extends StObject {
   
   /**
     * Checks if current browser is safari.
-    * @parm value Optional version range of browser
+    * @param value Optional version range of browser
     */
   def safari(): Boolean = js.native
   def safari(range: EnvironmentVersionRange): Boolean = js.native

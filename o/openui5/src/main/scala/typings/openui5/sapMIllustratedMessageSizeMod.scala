@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMIllustratedMessageSizeMod {
   
   /**
-    * @SINCE 1.98
+    * @since 1.98
     *
     * Available `Illustration` sizes for the {@link sap.m.IllustratedMessage} control.
     */
@@ -34,7 +34,7 @@ object sapMIllustratedMessageSizeMod {
   @js.native
   sealed trait IllustratedMessageSize extends StObject
   /**
-    * @SINCE 1.98
+    * @since 1.98
     *
     * Available `Illustration` sizes for the {@link sap.m.IllustratedMessage} control.
     */
@@ -74,7 +74,7 @@ object sapMIllustratedMessageSizeMod {
          with IllustratedMessageSize
     
     /**
-      * @SINCE 1.108
+      * @since 1.108
       *
       * Dot `Illustration` size (XS breakpoint). Suitable for spaces with little vertical space.
       */

@@ -51,6 +51,9 @@ object optionsMod {
       */
     var gracefulStop: js.UndefOr[String] = js.native
     
+    /** Additional options for each scenario */
+    var options: js.UndefOr[ScenarioOptions] = js.native
+    
     /**
       * Time offset since the start of the test, at which point this scenario should begin execution.
       *
@@ -627,6 +630,27 @@ object optionsMod {
     - typings.k6.optionsMod.ExternallyControlledScenario
   */
   trait Scenario extends StObject
+  
+  trait ScenarioOptions extends StObject {
+    
+    /** Browser specific options */
+    var browser: js.UndefOr[Any] = js.undefined
+  }
+  object ScenarioOptions {
+    
+    inline def apply(): ScenarioOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ScenarioOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenarioOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBrowser(value: Any): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+    }
+  }
   
   @js.native
   trait SharedIterationsScenario

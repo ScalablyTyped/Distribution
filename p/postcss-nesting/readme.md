@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-nesting
 
-Typings are for version 11.2.2
+Typings are for version 11.3.0
 
 ## Library description:
 Nest rules inside each other in CSS

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__dom
 
-Typings are for version 3.33.0
+Typings are for version 3.35.0
 
 ## Library description:
 DOM utilities module for WordPress.

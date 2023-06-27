@@ -11,16 +11,16 @@ sealed trait VerticalGlyphOrientation extends StObject
 object VerticalGlyphOrientation extends StObject {
   
   /**
-    * Align right.
-    */
+  			 * Align right.
+  			 */
   @js.native
   sealed trait Right
     extends StObject
        with VerticalGlyphOrientation
   
   /**
-    * Align upright.
-    */
+  			 * Align upright.
+  			 */
   @js.native
   sealed trait Upright
     extends StObject

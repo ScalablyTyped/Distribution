@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ActionId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -136,13 +135,13 @@ object sapUiUx3ThingActionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ThingAction` itself
       */
@@ -167,7 +166,7 @@ object sapUiUx3ThingActionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -178,7 +177,7 @@ object sapUiUx3ThingActionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ThingAction` itself
       */
@@ -196,13 +195,13 @@ object sapUiUx3ThingActionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingActionSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -210,17 +209,19 @@ object sapUiUx3ThingActionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ActionId): this.type = js.native
+    mParameters: ThingAction$SelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnabled enabled}.
@@ -275,6 +276,42 @@ object sapUiUx3ThingActionMod {
     sText: String): this.type = js.native
   }
   
+  trait ThingAction$SelectEventParameters extends StObject {
+    
+    /**
+      * Selected Thing Action
+      */
+    var action: js.UndefOr[ThingAction] = js.undefined
+    
+    /**
+      * Id of selected action
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object ThingAction$SelectEventParameters {
+    
+    inline def apply(): ThingAction$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThingAction$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingAction$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: ThingAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  type ThingActionSelectEvent = typings.openui5.sapUiBaseEventMod.default[ThingAction$SelectEventParameters]
+  
+  type ThingActionSelectEventParameters = ThingAction$SelectEventParameters
+  
   trait ThingActionSettings
     extends StObject
        with ElementSettings {
@@ -289,7 +326,12 @@ object sapUiUx3ThingActionMod {
     /**
       * Event will be fired when the action was triggered.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ThingAction$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * text of action
@@ -310,7 +352,9 @@ object sapUiUx3ThingActionMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ThingAction$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

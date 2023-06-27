@@ -10,25 +10,25 @@ trait CIMMarkerPlacementPolygonCenter
      with CIMMarkerPlacementType {
   
   /**
-    * A value indicating whether the marker should be clipped if it extends pasts the boundary of the polygon.
-    */
+  			 * A value indicating whether the marker should be clipped if it extends pasts the boundary of the polygon.
+  			 */
   var clipAtBoundary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The method used to determine the polygon center.
-    */
+  			 * The method used to determine the polygon center.
+  			 */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementPolygonCenterMethod * / any */ String
   ] = js.undefined
   
   /**
-    * The value which offsets the marker horizontally from the center.
-    */
+  			 * The value which offsets the marker horizontally from the center.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value which offsets the marker vertically from the center.
-    */
+  			 * The value which offsets the marker vertically from the center.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

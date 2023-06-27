@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.OpenBy
-import typings.openui5.anon.OpenByOrigin
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapMQuickViewBaseMod.QuickViewBaseSettings
@@ -141,13 +139,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -172,7 +170,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -183,7 +181,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -204,13 +202,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -235,7 +233,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -246,7 +244,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -267,13 +265,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -298,7 +296,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -309,7 +307,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -330,13 +328,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -361,7 +359,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -372,7 +370,7 @@ object sapMQuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickView` itself
       */
@@ -397,13 +395,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -421,13 +419,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewAfterOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -445,13 +443,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -469,13 +467,13 @@ object sapMQuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBeforeOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -483,56 +481,64 @@ object sapMQuickViewMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterClose(): this.type = js.native
-    def fireAfterClose(/**
+    def fireAfterClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenByOrigin): this.type = js.native
+    mParameters: QuickView$AfterCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterOpen(): this.type = js.native
-    def fireAfterOpen(/**
+    def fireAfterOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: QuickView$AfterOpenEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeClose(): this.type = js.native
-    def fireBeforeClose(/**
+    def fireBeforeClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenByOrigin): this.type = js.native
+    mParameters: QuickView$BeforeCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeOpen(): this.type = js.native
-    def fireBeforeOpen(/**
+    def fireBeforeOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: OpenBy): this.type = js.native
+    mParameters: QuickView$BeforeOpenEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getPlacement placement}.
@@ -598,6 +604,134 @@ object sapMQuickViewMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait QuickView$AfterCloseEventParameters extends StObject {
+    
+    /**
+      * This parameter refers to the control, which opens the QuickView.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * This parameter contains the control, which triggers the close of the QuickView. It is undefined when
+      * running on desktop or tablet.
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object QuickView$AfterCloseEventParameters {
+    
+    inline def apply(): QuickView$AfterCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$AfterCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$AfterCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait QuickView$AfterOpenEventParameters extends StObject {
+    
+    /**
+      * This parameter refers to the control, which opens the QuickView.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object QuickView$AfterOpenEventParameters {
+    
+    inline def apply(): QuickView$AfterOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$AfterOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$AfterOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  trait QuickView$BeforeCloseEventParameters extends StObject {
+    
+    /**
+      * This parameter refers to the control, which opens the QuickView.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * This parameter contains the control, which triggers the close of the QuickView. It is undefined when
+      * running on desktop or tablet.
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object QuickView$BeforeCloseEventParameters {
+    
+    inline def apply(): QuickView$BeforeCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$BeforeCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$BeforeCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait QuickView$BeforeOpenEventParameters extends StObject {
+    
+    /**
+      * This parameter refers to the control, which opens the QuickView.
+      */
+    var openBy: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object QuickView$BeforeOpenEventParameters {
+    
+    inline def apply(): QuickView$BeforeOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$BeforeOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$BeforeOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpenBy(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "openBy", value.asInstanceOf[js.Any])
+      
+      inline def setOpenByUndefined: Self = StObject.set(x, "openBy", js.undefined)
+    }
+  }
+  
+  type QuickViewAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$AfterCloseEventParameters]
+  
+  type QuickViewAfterCloseEventParameters = QuickView$AfterCloseEventParameters
+  
+  type QuickViewAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$AfterOpenEventParameters]
+  
+  type QuickViewAfterOpenEventParameters = QuickView$AfterOpenEventParameters
+  
+  type QuickViewBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeCloseEventParameters]
+  
+  type QuickViewBeforeCloseEventParameters = QuickView$BeforeCloseEventParameters
+  
+  type QuickViewBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeOpenEventParameters]
+  
+  type QuickViewBeforeOpenEventParameters = QuickView$BeforeOpenEventParameters
+  
   trait QuickViewSettings
     extends StObject
        with QuickViewBaseSettings {
@@ -605,22 +739,42 @@ object sapMQuickViewMod {
     /**
       * This event fires after the QuickView is closed.
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$AfterCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event fires after the QuickView is opened.
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$AfterOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event fires before the QuickView is closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event fires before the QuickView is opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This property is reused from sap.m.Popover and only takes effect when running on desktop or tablet. Please
@@ -647,19 +801,27 @@ object sapMQuickViewMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QuickViewSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$AfterCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$AfterOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$BeforeOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       

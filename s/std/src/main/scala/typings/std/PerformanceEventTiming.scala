@@ -4,19 +4,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming) */
 trait PerformanceEventTiming
   extends StObject
      with PerformanceEntry {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/cancelable) */
   /* standard dom */
   val cancelable: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingEnd) */
   /* standard dom */
   val processingEnd: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/processingStart) */
   /* standard dom */
   val processingStart: DOMHighResTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming/target) */
   /* standard dom */
   val target: Node | Null
 }

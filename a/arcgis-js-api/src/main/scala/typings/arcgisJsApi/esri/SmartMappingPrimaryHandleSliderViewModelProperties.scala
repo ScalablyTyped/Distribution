@@ -9,21 +9,21 @@ trait SmartMappingPrimaryHandleSliderViewModelProperties
      with SmartMappingSliderViewModelProperties {
   
   /**
-    * Only applicable when three thumbs (i.e.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#handlesSyncedToPrimary)
-    */
+  		 * Only applicable when three thumbs (i.e.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#handlesSyncedToPrimary)
+  		 */
   var handlesSyncedToPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the slider will render a third handle between the two handles already provided by default.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled)
-    */
+  		 * When `true`, the slider will render a third handle between the two handles already provided by default.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled)
+  		 */
   var primaryHandleEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SmartMappingPrimaryHandleSliderViewModelProperties {

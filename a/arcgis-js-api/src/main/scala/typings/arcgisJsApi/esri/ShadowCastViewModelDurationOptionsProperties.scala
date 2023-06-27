@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShadowCastViewModelDurationOptionsProperties extends StObject {
   
   /**
-    * Color of the shadow cast.
-    *
-    * @default [50, 50, 50, 0.7]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
-    */
+  		 * Color of the shadow cast.
+  		 *
+  		 * @default [50, 50, 50, 0.7]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * Mode in which the cumulative shadow duration should be displayed: as a continuous surface or as an hourly aggregation of values.
-    *
-    * @default "continuous"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
-    */
+  		 * Mode in which the cumulative shadow duration should be displayed: as a continuous surface or as an hourly aggregation of values.
+  		 *
+  		 * @default "continuous"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#durationOptions)
+  		 */
   var mode: js.UndefOr[continuous | hourly] = js.undefined
 }
 object ShadowCastViewModelDurationOptionsProperties {

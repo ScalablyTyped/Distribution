@@ -25,7 +25,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     */
@@ -36,7 +35,6 @@ Instantiable0[Any] {
     * @return {Object}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2010.1
     * @return
@@ -48,7 +46,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -60,7 +57,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.1
     * @return
@@ -72,7 +68,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -84,7 +79,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @return
@@ -96,7 +90,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -114,7 +107,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -127,7 +119,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param name
@@ -140,7 +131,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -158,7 +148,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -170,7 +159,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @return
@@ -183,7 +171,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param name
@@ -197,7 +184,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param name
@@ -210,7 +196,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -222,7 +207,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -234,7 +218,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2008.2
     * @return
@@ -246,7 +229,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2008.2
     * @return
@@ -258,7 +240,6 @@ Instantiable0[Any] {
     * @return {Object}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2014.1
     * @return
@@ -270,7 +251,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @return
@@ -283,7 +263,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param name
@@ -308,7 +287,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -320,7 +298,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2007.0
     * @return
@@ -332,7 +309,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @return
@@ -345,7 +321,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param pct
@@ -360,7 +335,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjContext
     *
     * @since 2009.2
     * @param name

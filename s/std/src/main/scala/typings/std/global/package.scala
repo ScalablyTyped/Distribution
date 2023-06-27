@@ -1983,49 +1983,78 @@ inline def addEventListener_wheel(
   options: AddEventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/alert) */
 inline def alert(): Unit = js.Dynamic.global.applyDynamic("alert")().asInstanceOf[Unit]
 inline def alert(message: Any): Unit = js.Dynamic.global.applyDynamic("alert")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/atob) */
 inline def atob(data: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("atob")(data.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/blur) */
 inline def blur(): Unit = js.Dynamic.global.applyDynamic("blur")().asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/btoa) */
 inline def btoa(data: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("btoa")(data.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/caches)
+  */
 inline def caches: typings.std.CacheStorage = js.Dynamic.global.selectDynamic("caches").asInstanceOf[typings.std.CacheStorage]
 inline def caches_=(x: typings.std.CacheStorage): Unit = js.Dynamic.global.updateDynamic("caches")(x.asInstanceOf[js.Any])
 
 inline def cancelAnimationFrame(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelAnimationFrame")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback) */
 inline def cancelIdleCallback(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelIdleCallback")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/captureEvents)
+  */
 inline def captureEvents(): Unit = js.Dynamic.global.applyDynamic("captureEvents")().asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearInterval) */
 inline def clearInterval(): Unit = js.Dynamic.global.applyDynamic("clearInterval")().asInstanceOf[Unit]
 inline def clearInterval(id: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearTimeout) */
 inline def clearTimeout(): Unit = js.Dynamic.global.applyDynamic("clearTimeout")().asInstanceOf[Unit]
 inline def clearTimeout(id: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-/** @deprecated This is a legacy alias of `navigator`. */
+/**
+  * @deprecated This is a legacy alias of `navigator`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator)
+  */
 inline def clientInformation: Navigator = js.Dynamic.global.selectDynamic("clientInformation").asInstanceOf[Navigator]
 inline def clientInformation_=(x: Navigator): Unit = js.Dynamic.global.updateDynamic("clientInformation")(x.asInstanceOf[js.Any])
 
-/** Closes the window. */
+/**
+  * Closes the window.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/close)
+  */
 inline def close(): Unit = js.Dynamic.global.applyDynamic("close")().asInstanceOf[Unit]
 
-/** Returns true if the window has been closed, false otherwise. */
+/**
+  * Returns true if the window has been closed, false otherwise.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/closed)
+  */
 inline def closed: scala.Boolean = js.Dynamic.global.selectDynamic("closed").asInstanceOf[scala.Boolean]
 inline def closed_=(x: scala.Boolean): Unit = js.Dynamic.global.updateDynamic("closed")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/confirm) */
 inline def confirm(): scala.Boolean = js.Dynamic.global.applyDynamic("confirm")().asInstanceOf[scala.Boolean]
 inline def confirm(message: java.lang.String): scala.Boolean = js.Dynamic.global.applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
 inline def console: Console = js.Dynamic.global.selectDynamic("console").asInstanceOf[Console]
 inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/createImageBitmap) */
 inline def createImageBitmap(image: ImageBitmapSource): js.Promise[typings.std.ImageBitmap] = js.Dynamic.global.applyDynamic("createImageBitmap")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.ImageBitmap]]
 inline def createImageBitmap(image: ImageBitmapSource, options: ImageBitmapOptions): js.Promise[typings.std.ImageBitmap] = (js.Dynamic.global.applyDynamic("createImageBitmap")(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ImageBitmap]]
 inline def createImageBitmap(image: ImageBitmapSource, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[typings.std.ImageBitmap] = (js.Dynamic.global.applyDynamic("createImageBitmap")(image.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ImageBitmap]]
@@ -2038,13 +2067,19 @@ inline def createImageBitmap(
   options: ImageBitmapOptions
 ): js.Promise[typings.std.ImageBitmap] = (js.Dynamic.global.applyDynamic("createImageBitmap")(image.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.ImageBitmap]]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/crossOriginIsolated) */
 inline def crossOriginIsolated: scala.Boolean = js.Dynamic.global.selectDynamic("crossOriginIsolated").asInstanceOf[scala.Boolean]
 inline def crossOriginIsolated_=(x: scala.Boolean): Unit = js.Dynamic.global.updateDynamic("crossOriginIsolated")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/crypto_property) */
 inline def crypto: Crypto = js.Dynamic.global.selectDynamic("crypto").asInstanceOf[Crypto]
 inline def crypto_=(x: Crypto): Unit = js.Dynamic.global.updateDynamic("crypto")(x.asInstanceOf[js.Any])
 
-/** Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element. */
+/**
+  * Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/customElements)
+  */
 inline def customElements: typings.std.CustomElementRegistry = js.Dynamic.global.selectDynamic("customElements").asInstanceOf[typings.std.CustomElementRegistry]
 inline def customElements_=(x: typings.std.CustomElementRegistry): Unit = js.Dynamic.global.updateDynamic("customElements")(x.asInstanceOf[js.Any])
 
@@ -2060,12 +2095,18 @@ inline def decodeURI(encodedURI: java.lang.String): java.lang.String = js.Dynami
   */
 inline def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("decodeURIComponent")(encodedURIComponent.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio) */
 inline def devicePixelRatio: Double = js.Dynamic.global.selectDynamic("devicePixelRatio").asInstanceOf[Double]
 inline def devicePixelRatio_=(x: Double): Unit = js.Dynamic.global.updateDynamic("devicePixelRatio")(x.asInstanceOf[js.Any])
 
-/** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+/**
+  * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+  */
 inline def dispatchEvent(event: Event): scala.Boolean = js.Dynamic.global.applyDynamic("dispatchEvent")(event.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/document) */
 inline def document: Document = js.Dynamic.global.selectDynamic("document").asInstanceOf[Document]
 inline def document_=(x: Document): Unit = js.Dynamic.global.updateDynamic("document")(x.asInstanceOf[js.Any])
 
@@ -2096,33 +2137,51 @@ inline def escape(string: java.lang.String): java.lang.String = js.Dynamic.globa
   */
 inline def eval(x: java.lang.String): Any = js.Dynamic.global.applyDynamic("eval")(x.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/event)
+  */
 inline def event: js.UndefOr[Event] = js.Dynamic.global.selectDynamic("event").asInstanceOf[js.UndefOr[Event]]
 inline def event_=(x: js.UndefOr[Event]): Unit = js.Dynamic.global.updateDynamic("event")(x.asInstanceOf[js.Any])
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/external)
+  */
 inline def external: External = js.Dynamic.global.selectDynamic("external").asInstanceOf[External]
 inline def external_=(x: External): Unit = js.Dynamic.global.updateDynamic("external")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/fetch) */
 inline def fetch(input: RequestInfo): js.Promise[typings.std.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Response]]
 inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.std.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
 inline def fetch(input: typings.std.URL): js.Promise[typings.std.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Response]]
 inline def fetch(input: typings.std.URL, init: RequestInit): js.Promise[typings.std.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Response]]
 
-/** Moves the focus to the window's browsing context, if any. */
+/**
+  * Moves the focus to the window's browsing context, if any.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/focus)
+  */
 inline def focus(): Unit = js.Dynamic.global.applyDynamic("focus")().asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frameElement) */
 inline def frameElement: typings.std.Element | Null = js.Dynamic.global.selectDynamic("frameElement").asInstanceOf[typings.std.Element | Null]
 inline def frameElement_=(x: typings.std.Element | Null): Unit = js.Dynamic.global.updateDynamic("frameElement")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frames) */
 inline def frames: WindowProxy = js.Dynamic.global.selectDynamic("frames").asInstanceOf[WindowProxy]
 inline def frames_=(x: WindowProxy): Unit = js.Dynamic.global.updateDynamic("frames")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle) */
 inline def getComputedStyle(elt: typings.std.Element): typings.std.CSSStyleDeclaration = js.Dynamic.global.applyDynamic("getComputedStyle")(elt.asInstanceOf[js.Any]).asInstanceOf[typings.std.CSSStyleDeclaration]
 inline def getComputedStyle(elt: typings.std.Element, pseudoElt: java.lang.String): typings.std.CSSStyleDeclaration = (js.Dynamic.global.applyDynamic("getComputedStyle")(elt.asInstanceOf[js.Any], pseudoElt.asInstanceOf[js.Any])).asInstanceOf[typings.std.CSSStyleDeclaration]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getSelection) */
 inline def getSelection(): typings.std.Selection | Null = js.Dynamic.global.applyDynamic("getSelection")().asInstanceOf[typings.std.Selection | Null]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/history) */
 inline def history: History = js.Dynamic.global.selectDynamic("history").asInstanceOf[History]
 inline def history_=(x: History): Unit = js.Dynamic.global.updateDynamic("history")(x.asInstanceOf[js.Any])
 
@@ -2132,12 +2191,15 @@ inline def history_=(x: History): Unit = js.Dynamic.global.updateDynamic("histor
 // These are only available in a Web Worker
 inline def importScripts(urls: java.lang.String*): Unit = js.Dynamic.global.applyDynamic("importScripts")(urls.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/indexedDB) */
 inline def indexedDB: typings.std.IDBFactory = js.Dynamic.global.selectDynamic("indexedDB").asInstanceOf[typings.std.IDBFactory]
 inline def indexedDB_=(x: typings.std.IDBFactory): Unit = js.Dynamic.global.updateDynamic("indexedDB")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerHeight) */
 inline def innerHeight: Double = js.Dynamic.global.selectDynamic("innerHeight").asInstanceOf[Double]
 inline def innerHeight_=(x: Double): Unit = js.Dynamic.global.updateDynamic("innerHeight")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerWidth) */
 inline def innerWidth: Double = js.Dynamic.global.selectDynamic("innerWidth").asInstanceOf[Double]
 inline def innerWidth_=(x: Double): Unit = js.Dynamic.global.updateDynamic("innerWidth")(x.asInstanceOf[js.Any])
 
@@ -2153,95 +2215,131 @@ inline def isFinite(number: Double): scala.Boolean = js.Dynamic.global.applyDyna
   */
 inline def isNaN(number: Double): scala.Boolean = js.Dynamic.global.applyDynamic("isNaN")(number.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/isSecureContext) */
 inline def isSecureContext: scala.Boolean = js.Dynamic.global.selectDynamic("isSecureContext").asInstanceOf[scala.Boolean]
 inline def isSecureContext_=(x: scala.Boolean): Unit = js.Dynamic.global.updateDynamic("isSecureContext")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/length) */
 inline def length: Double = js.Dynamic.global.selectDynamic("length").asInstanceOf[Double]
 inline def length_=(x: Double): Unit = js.Dynamic.global.updateDynamic("length")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage) */
 inline def localStorage: typings.std.Storage = js.Dynamic.global.selectDynamic("localStorage").asInstanceOf[typings.std.Storage]
 inline def localStorage_=(x: typings.std.Storage): Unit = js.Dynamic.global.updateDynamic("localStorage")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/location) */
 inline def location: Location = js.Dynamic.global.selectDynamic("location").asInstanceOf[Location]
 inline def location_=(x: Location): Unit = js.Dynamic.global.updateDynamic("location")(x.asInstanceOf[js.Any])
 
-/** Returns true if the location bar is visible; otherwise, returns false. */
+/**
+  * Returns true if the location bar is visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/locationbar)
+  */
 inline def locationbar: typings.std.BarProp = js.Dynamic.global.selectDynamic("locationbar").asInstanceOf[typings.std.BarProp]
 inline def locationbar_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("locationbar")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/matchMedia) */
 inline def matchMedia(query: java.lang.String): typings.std.MediaQueryList = js.Dynamic.global.applyDynamic("matchMedia")(query.asInstanceOf[js.Any]).asInstanceOf[typings.std.MediaQueryList]
 
-/** Returns true if the menu bar is visible; otherwise, returns false. */
+/**
+  * Returns true if the menu bar is visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/menubar)
+  */
 inline def menubar: typings.std.BarProp = js.Dynamic.global.selectDynamic("menubar").asInstanceOf[typings.std.BarProp]
 inline def menubar_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("menubar")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveBy) */
 inline def moveBy(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("moveBy")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveTo) */
 inline def moveTo(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("moveTo")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/name) */
 /** @deprecated */
 inline def name: Unit = js.Dynamic.global.selectDynamic("name").asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator) */
 inline def navigator: Navigator = js.Dynamic.global.selectDynamic("navigator").asInstanceOf[Navigator]
 inline def navigator_=(x: Navigator): Unit = js.Dynamic.global.updateDynamic("navigator")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user aborts the download.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
   */
 inline def onabort: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onabort").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null]
 inline def onabort_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onabort")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/afterprint_event) */
 inline def onafterprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onafterprint").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onafterprint_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onafterprint")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event) */
 inline def onanimationcancel: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onanimationcancel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null]
 inline def onanimationcancel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onanimationcancel")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event) */
 inline def onanimationend: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onanimationend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null]
 inline def onanimationend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onanimationend")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event) */
 inline def onanimationiteration: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onanimationiteration").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null]
 inline def onanimationiteration_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onanimationiteration")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event) */
 inline def onanimationstart: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onanimationstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null]
 inline def onanimationstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.AnimationEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onanimationstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event) */
 inline def onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onauxclick").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onauxclick_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onauxclick")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforeinput_event) */
 inline def onbeforeinput: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onbeforeinput").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null]
 inline def onbeforeinput_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.InputEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onbeforeinput")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event) */
 inline def onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onbeforeprint").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onbeforeprint_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onbeforeprint")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event) */
 inline def onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onbeforeunload").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]) | Null]
 inline def onbeforeunload_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.BeforeUnloadEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onbeforeunload")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the object loses the input focus.
   * @param ev The focus event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
   */
 inline def onblur: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onblur").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null]
 inline def onblur_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onblur")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/cancel_event) */
 inline def oncancel: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncancel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oncancel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncancel")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when playback is possible, but would require further buffering.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
   */
 inline def oncanplay: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncanplay").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oncanplay_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncanplay")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event) */
 inline def oncanplaythrough: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncanplaythrough").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oncanplaythrough_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncanplaythrough")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the contents of the object or selection have changed.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
   */
 inline def onchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onchange")(x.asInstanceOf[js.Any])
@@ -2249,47 +2347,67 @@ inline def onchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, An
 /**
   * Fires when the user clicks the left mouse button on the object
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
   */
 inline def onclick: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onclick").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onclick_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onclick")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event) */
 inline def onclose: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onclose").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onclose_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onclose")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user clicks the right mouse button in the client area, opening the context menu.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
   */
 inline def oncontextmenu: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncontextmenu").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def oncontextmenu_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncontextmenu")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event) */
 inline def oncopy: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncopy").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
 inline def oncopy_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncopy")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event) */
 inline def oncuechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oncuechange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oncuechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncuechange")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event) */
 inline def oncut: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("oncut").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
 inline def oncut_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oncut")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user double-clicks the object.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
   */
 inline def ondblclick: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondblclick").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def ondblclick_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondblclick")(x.asInstanceOf[js.Any])
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicemotion_event)
+  */
 inline def ondevicemotion: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondevicemotion").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]) | Null]
 inline def ondevicemotion_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceMotionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondevicemotion")(x.asInstanceOf[js.Any])
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/deviceorientation_event)
+  */
 inline def ondeviceorientation: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondeviceorientation").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]) | Null]
 inline def ondeviceorientation_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DeviceOrientationEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondeviceorientation")(x.asInstanceOf[js.Any])
 
 /**
   * Fires on the source object continuously during a drag operation.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
   */
 inline def ondrag: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondrag").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondrag_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondrag")(x.asInstanceOf[js.Any])
@@ -2297,6 +2415,8 @@ inline def ondrag_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std
 /**
   * Fires on the source object when the user releases the mouse at the close of a drag operation.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
   */
 inline def ondragend: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondragend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondragend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondragend")(x.asInstanceOf[js.Any])
@@ -2304,6 +2424,8 @@ inline def ondragend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.
 /**
   * Fires on the target element when the user drags the object to a valid drop target.
   * @param ev The drag event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
   */
 inline def ondragenter: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondragenter").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondragenter_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondragenter")(x.asInstanceOf[js.Any])
@@ -2311,6 +2433,8 @@ inline def ondragenter_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typing
 /**
   * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
   * @param ev The drag event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
   */
 inline def ondragleave: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondragleave").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondragleave_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondragleave")(x.asInstanceOf[js.Any])
@@ -2318,6 +2442,8 @@ inline def ondragleave_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typing
 /**
   * Fires on the target element continuously while the user drags the object over a valid drop target.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
   */
 inline def ondragover: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondragover").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondragover_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondragover")(x.asInstanceOf[js.Any])
@@ -2325,16 +2451,21 @@ inline def ondragover_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings
 /**
   * Fires on the source object when the user starts to drag a text selection or selected object.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
   */
 inline def ondragstart: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondragstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondragstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondragstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event) */
 inline def ondrop: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ondrop").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null]
 inline def ondrop_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.DragEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondrop")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when the duration attribute is updated.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
   */
 inline def ondurationchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("ondurationchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def ondurationchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ondurationchange")(x.asInstanceOf[js.Any])
@@ -2342,6 +2473,8 @@ inline def ondurationchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ E
 /**
   * Occurs when the media element is reset to its initial state.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
   */
 inline def onemptied: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onemptied").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onemptied_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onemptied")(x.asInstanceOf[js.Any])
@@ -2349,6 +2482,8 @@ inline def onemptied_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, A
 /**
   * Occurs when the end of playback is reached.
   * @param ev The event
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
   */
 inline def onended: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onended").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onended_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onended")(x.asInstanceOf[js.Any])
@@ -2356,6 +2491,8 @@ inline def onended_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any
 /**
   * Fires when an error occurs during object loading.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/error_event)
   */
 inline def onerror: OnErrorEventHandler = js.Dynamic.global.selectDynamic("onerror").asInstanceOf[OnErrorEventHandler]
 inline def onerror_=(x: OnErrorEventHandler): Unit = js.Dynamic.global.updateDynamic("onerror")(x.asInstanceOf[js.Any])
@@ -2363,34 +2500,45 @@ inline def onerror_=(x: OnErrorEventHandler): Unit = js.Dynamic.global.updateDyn
 /**
   * Fires when the object receives focus.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
   */
 inline def onfocus: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onfocus").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null]
 inline def onfocus_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FocusEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onfocus")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event) */
 inline def onformdata: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onformdata").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]) | Null]
 inline def onformdata_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.FormDataEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onformdata")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event) */
 inline def ongamepadconnected: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ongamepadconnected").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null]
 inline def ongamepadconnected_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ongamepadconnected")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event) */
 inline def ongamepaddisconnected: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ongamepaddisconnected").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null]
 inline def ongamepaddisconnected_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.GamepadEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ongamepaddisconnected")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event) */
 inline def ongotpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ongotpointercapture").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def ongotpointercapture_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ongotpointercapture")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/hashchange_event) */
 inline def onhashchange: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onhashchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]) | Null]
 inline def onhashchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.HashChangeEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onhashchange")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/input_event) */
 inline def oninput: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oninput").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oninput_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oninput")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event) */
 inline def oninvalid: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("oninvalid").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def oninvalid_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("oninvalid")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user presses a key.
   * @param ev The keyboard event
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
   */
 inline def onkeydown: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onkeydown").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null]
 inline def onkeydown_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onkeydown")(x.asInstanceOf[js.Any])
@@ -2399,6 +2547,8 @@ inline def onkeydown_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.
   * Fires when the user presses an alphanumeric key.
   * @param ev The event.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keypress_event)
   */
 inline def onkeypress: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onkeypress").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null]
 inline def onkeypress_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onkeypress")(x.asInstanceOf[js.Any])
@@ -2406,16 +2556,21 @@ inline def onkeypress_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings
 /**
   * Fires when the user releases a key.
   * @param ev The keyboard event
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
   */
 inline def onkeyup: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onkeyup").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null]
 inline def onkeyup_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.KeyboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onkeyup")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/languagechange_event) */
 inline def onlanguagechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onlanguagechange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onlanguagechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onlanguagechange")(x.asInstanceOf[js.Any])
 
 /**
   * Fires immediately after the browser loads the object.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement/load_event)
   */
 inline def onload: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onload").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onload_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onload")(x.asInstanceOf[js.Any])
@@ -2423,6 +2578,8 @@ inline def onload_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
 /**
   * Occurs when media data is loaded at the current playback position.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
   */
 inline def onloadeddata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onloadeddata").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onloadeddata_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onloadeddata")(x.asInstanceOf[js.Any])
@@ -2430,6 +2587,8 @@ inline def onloadeddata_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event
 /**
   * Occurs when the duration and dimensions of the media have been determined.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
   */
 inline def onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onloadedmetadata").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onloadedmetadata_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onloadedmetadata")(x.asInstanceOf[js.Any])
@@ -2437,35 +2596,46 @@ inline def onloadedmetadata_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ E
 /**
   * Occurs when Internet Explorer begins looking for media data.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
   */
 inline def onloadstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onloadstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onloadstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onloadstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lostpointercapture_event) */
 inline def onlostpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onlostpointercapture").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onlostpointercapture_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onlostpointercapture")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/message_event) */
 inline def onmessage: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null = js.Dynamic.global.selectDynamic("onmessage").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null]
 inline def onmessage_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmessage")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/messageerror_event) */
 inline def onmessageerror: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null = js.Dynamic.global.selectDynamic("onmessageerror").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null]
 inline def onmessageerror_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MessageEvent[Any], Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmessageerror")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user clicks the object with either mouse button.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
   */
 inline def onmousedown: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmousedown").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmousedown_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmousedown")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event) */
 inline def onmouseenter: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmouseenter").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmouseenter_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmouseenter")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event) */
 inline def onmouseleave: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmouseleave").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmouseleave_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmouseleave")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user moves the mouse over the object.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
   */
 inline def onmousemove: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmousemove").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmousemove_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmousemove")(x.asInstanceOf[js.Any])
@@ -2473,6 +2643,8 @@ inline def onmousemove_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typing
 /**
   * Fires when the user moves the mouse pointer outside the boundaries of the object.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
   */
 inline def onmouseout: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmouseout").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmouseout_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmouseout")(x.asInstanceOf[js.Any])
@@ -2480,6 +2652,8 @@ inline def onmouseout_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings
 /**
   * Fires when the user moves the mouse pointer into the object.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
   */
 inline def onmouseover: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmouseover").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmouseover_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmouseover")(x.asInstanceOf[js.Any])
@@ -2487,32 +2661,45 @@ inline def onmouseover_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typing
 /**
   * Fires when the user releases a mouse button while the mouse is over the object.
   * @param ev The mouse event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
   */
 inline def onmouseup: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onmouseup").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null]
 inline def onmouseup_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.MouseEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onmouseup")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/offline_event) */
 inline def onoffline: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onoffline").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onoffline_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onoffline")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/online_event) */
 inline def ononline: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("ononline").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def ononline_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ononline")(x.asInstanceOf[js.Any])
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/orientationchange_event)
+  */
 inline def onorientationchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onorientationchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onorientationchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onorientationchange")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagehide_event) */
 inline def onpagehide: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpagehide").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null]
 inline def onpagehide_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpagehide")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageshow_event) */
 inline def onpageshow: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpageshow").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null]
 inline def onpageshow_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PageTransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpageshow")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event) */
 inline def onpaste: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpaste").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null]
 inline def onpaste_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ClipboardEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpaste")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when playback is paused.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
   */
 inline def onpause: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onpause").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onpause_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpause")(x.asInstanceOf[js.Any])
@@ -2520,6 +2707,8 @@ inline def onpause_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any
 /**
   * Occurs when the play method is requested.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
   */
 inline def onplay: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onplay").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onplay_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onplay")(x.asInstanceOf[js.Any])
@@ -2527,40 +2716,53 @@ inline def onplay_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]
 /**
   * Occurs when the audio or video has started playing.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
   */
 inline def onplaying: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onplaying").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onplaying_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onplaying")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event) */
 inline def onpointercancel: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointercancel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointercancel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointercancel")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event) */
 inline def onpointerdown: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerdown").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerdown_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerdown")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event) */
 inline def onpointerenter: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerenter").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerenter_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerenter")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event) */
 inline def onpointerleave: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerleave").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerleave_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerleave")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event) */
 inline def onpointermove: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointermove").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointermove_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointermove")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event) */
 inline def onpointerout: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerout").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerout_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerout")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event) */
 inline def onpointerover: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerover").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerover_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerover")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event) */
 inline def onpointerup: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpointerup").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null]
 inline def onpointerup_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PointerEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpointerup")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/popstate_event) */
 inline def onpopstate: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onpopstate").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]) | Null]
 inline def onpopstate_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PopStateEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onpopstate")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs to indicate progress while downloading media data.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
   */
 inline def onprogress: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]) | Null = js.Dynamic.global.selectDynamic("onprogress").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.ProgressEvent[typings.std.EventTarget], Any]) | Null]
 inline def onprogress_=(
@@ -2570,30 +2772,39 @@ inline def onprogress_=(
 /**
   * Occurs when the playback rate is increased or decreased.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
   */
 inline def onratechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onratechange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onratechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onratechange")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event) */
 inline def onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onrejectionhandled").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null]
 inline def onrejectionhandled_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onrejectionhandled")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user resets a form.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
   */
 inline def onreset: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onreset").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onreset_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onreset")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event) */
 inline def onresize: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onresize").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null]
 inline def onresize_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.UIEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onresize")(x.asInstanceOf[js.Any])
 
 /**
   * Fires when the user repositions the scroll box in the scroll bar on the object.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
   */
 inline def onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onscroll").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onscroll_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onscroll")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event) */
 inline def onsecuritypolicyviolation: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onsecuritypolicyviolation").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]) | Null]
 inline def onsecuritypolicyviolation_=(
   x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SecurityPolicyViolationEvent, Any]) | Null
@@ -2602,6 +2813,8 @@ inline def onsecuritypolicyviolation_=(
 /**
   * Occurs when the seek operation ends.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
   */
 inline def onseeked: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onseeked").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onseeked_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onseeked")(x.asInstanceOf[js.Any])
@@ -2609,6 +2822,8 @@ inline def onseeked_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, An
 /**
   * Occurs when the current playback position is moved.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
   */
 inline def onseeking: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onseeking").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onseeking_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onseeking")(x.asInstanceOf[js.Any])
@@ -2616,35 +2831,46 @@ inline def onseeking_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, A
 /**
   * Fires when the current selection changes.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
   */
 inline def onselect: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onselect").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onselect_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onselect")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event) */
 inline def onselectionchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onselectionchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onselectionchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onselectionchange")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event) */
 inline def onselectstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onselectstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onselectstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onselectstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event) */
 inline def onslotchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onslotchange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onslotchange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onslotchange")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when the download has stopped.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
   */
 inline def onstalled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onstalled").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onstalled_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onstalled")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/storage_event) */
 inline def onstorage: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onstorage").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]) | Null]
 inline def onstorage_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.StorageEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onstorage")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event) */
 inline def onsubmit: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onsubmit").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]) | Null]
 inline def onsubmit_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.SubmitEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onsubmit")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs if the load operation has been intentionally halted.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
   */
 inline def onsuspend: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onsuspend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onsuspend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onsuspend")(x.asInstanceOf[js.Any])
@@ -2652,13 +2878,17 @@ inline def onsuspend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, A
 /**
   * Occurs to indicate the current playback position.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
   */
 inline def ontimeupdate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("ontimeupdate").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def ontimeupdate_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontimeupdate")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event) */
 inline def ontoggle: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("ontoggle").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def ontoggle_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontoggle")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event) */
 inline def ontouchcancel: js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null] = js.Dynamic.global.selectDynamic("ontouchcancel").asInstanceOf[js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null]]
@@ -2668,6 +2898,7 @@ inline def ontouchcancel_=(
 ]
 ): Unit = js.Dynamic.global.updateDynamic("ontouchcancel")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event) */
 inline def ontouchend: js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null] = js.Dynamic.global.selectDynamic("ontouchend").asInstanceOf[js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null]]
@@ -2677,6 +2908,7 @@ inline def ontouchend_=(
 ]
 ): Unit = js.Dynamic.global.updateDynamic("ontouchend")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event) */
 inline def ontouchmove: js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null] = js.Dynamic.global.selectDynamic("ontouchmove").asInstanceOf[js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null]]
@@ -2686,6 +2918,7 @@ inline def ontouchmove_=(
 ]
 ): Unit = js.Dynamic.global.updateDynamic("ontouchmove")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event) */
 inline def ontouchstart: js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null] = js.Dynamic.global.selectDynamic("ontouchstart").asInstanceOf[js.UndefOr[
 (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TouchEvent, Any]) | Null]]
@@ -2695,27 +2928,35 @@ inline def ontouchstart_=(
 ]
 ): Unit = js.Dynamic.global.updateDynamic("ontouchstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event) */
 inline def ontransitioncancel: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ontransitioncancel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null]
 inline def ontransitioncancel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontransitioncancel")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event) */
 inline def ontransitionend: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ontransitionend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null]
 inline def ontransitionend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontransitionend")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event) */
 inline def ontransitionrun: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ontransitionrun").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null]
 inline def ontransitionrun_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontransitionrun")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event) */
 inline def ontransitionstart: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("ontransitionstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null]
 inline def ontransitionstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.TransitionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("ontransitionstart")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event) */
 inline def onunhandledrejection: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onunhandledrejection").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null]
 inline def onunhandledrejection_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.PromiseRejectionEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onunhandledrejection")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unload_event) */
 inline def onunload: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onunload").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onunload_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onunload")(x.asInstanceOf[js.Any])
 
 /**
   * Occurs when the volume is changed, or playback is muted or unmuted.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
   */
 inline def onvolumechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onvolumechange").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onvolumechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onvolumechange")(x.asInstanceOf[js.Any])
@@ -2723,29 +2964,49 @@ inline def onvolumechange_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Eve
 /**
   * Occurs when playback stops because the next frame of a video resource is not available.
   * @param ev The event.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
   */
 inline def onwaiting: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onwaiting").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onwaiting_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwaiting")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `onanimationend`. */
+/**
+  * @deprecated This is a legacy alias of `onanimationend`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
+  */
 inline def onwebkitanimationend: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onwebkitanimationend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onwebkitanimationend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwebkitanimationend")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `onanimationiteration`. */
+/**
+  * @deprecated This is a legacy alias of `onanimationiteration`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
+  */
 inline def onwebkitanimationiteration: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onwebkitanimationiteration").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onwebkitanimationiteration_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwebkitanimationiteration")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `onanimationstart`. */
+/**
+  * @deprecated This is a legacy alias of `onanimationstart`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
+  */
 inline def onwebkitanimationstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onwebkitanimationstart").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onwebkitanimationstart_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwebkitanimationstart")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `ontransitionend`. */
+/**
+  * @deprecated This is a legacy alias of `ontransitionend`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
+  */
 inline def onwebkittransitionend: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null = js.Dynamic.global.selectDynamic("onwebkittransitionend").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null]
 inline def onwebkittransitionend_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ Event, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwebkittransitionend")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event) */
 inline def onwheel: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]) | Null = js.Dynamic.global.selectDynamic("onwheel").asInstanceOf[(js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]) | Null]
 inline def onwheel_=(x: (js.ThisFunction1[/* this */ Window, /* ev */ typings.std.WheelEvent, Any]) | Null): Unit = js.Dynamic.global.updateDynamic("onwheel")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/open) */
 inline def open(): WindowProxy | Null = js.Dynamic.global.applyDynamic("open")().asInstanceOf[WindowProxy | Null]
 inline def open(url: java.lang.String): WindowProxy | Null = js.Dynamic.global.applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[WindowProxy | Null]
 inline def open(url: java.lang.String, target: java.lang.String): WindowProxy | Null = (js.Dynamic.global.applyDynamic("open")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[WindowProxy | Null]
@@ -2759,27 +3020,43 @@ inline def open(url: typings.std.URL, target: java.lang.String): WindowProxy | N
 inline def open(url: typings.std.URL, target: java.lang.String, features: java.lang.String): WindowProxy | Null = (js.Dynamic.global.applyDynamic("open")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any], features.asInstanceOf[js.Any])).asInstanceOf[WindowProxy | Null]
 inline def open(url: typings.std.URL, target: Unit, features: java.lang.String): WindowProxy | Null = (js.Dynamic.global.applyDynamic("open")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any], features.asInstanceOf[js.Any])).asInstanceOf[WindowProxy | Null]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/opener) */
 inline def opener: Any = js.Dynamic.global.selectDynamic("opener").asInstanceOf[Any]
 inline def opener_=(x: Any): Unit = js.Dynamic.global.updateDynamic("opener")(x.asInstanceOf[js.Any])
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/orientation)
+  */
 inline def orientation: Double = js.Dynamic.global.selectDynamic("orientation").asInstanceOf[Double]
 inline def orientation_=(x: Double): Unit = js.Dynamic.global.updateDynamic("orientation")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/origin) */
 inline def origin: java.lang.String = js.Dynamic.global.selectDynamic("origin").asInstanceOf[java.lang.String]
 inline def origin_=(x: java.lang.String): Unit = js.Dynamic.global.updateDynamic("origin")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerHeight) */
 inline def outerHeight: Double = js.Dynamic.global.selectDynamic("outerHeight").asInstanceOf[Double]
 inline def outerHeight_=(x: Double): Unit = js.Dynamic.global.updateDynamic("outerHeight")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerWidth) */
 inline def outerWidth: Double = js.Dynamic.global.selectDynamic("outerWidth").asInstanceOf[Double]
 inline def outerWidth_=(x: Double): Unit = js.Dynamic.global.updateDynamic("outerWidth")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `scrollX`. */
+/**
+  * @deprecated This is a legacy alias of `scrollX`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
+  */
 inline def pageXOffset: Double = js.Dynamic.global.selectDynamic("pageXOffset").asInstanceOf[Double]
 inline def pageXOffset_=(x: Double): Unit = js.Dynamic.global.updateDynamic("pageXOffset")(x.asInstanceOf[js.Any])
 
-/** @deprecated This is a legacy alias of `scrollY`. */
+/**
+  * @deprecated This is a legacy alias of `scrollY`.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
+  */
 inline def pageYOffset: Double = js.Dynamic.global.selectDynamic("pageYOffset").asInstanceOf[Double]
 inline def pageYOffset_=(x: Double): Unit = js.Dynamic.global.updateDynamic("pageYOffset")(x.asInstanceOf[js.Any])
 
@@ -2787,6 +3064,8 @@ inline def pageYOffset_=(x: Double): Unit = js.Dynamic.global.updateDynamic("pag
   * Refers to either the parent WindowProxy, or itself.
   *
   * It can rarely be null e.g. for contentWindow of an iframe that is already removed from the parent.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/parent)
   */
 inline def parent: WindowProxy = js.Dynamic.global.selectDynamic("parent").asInstanceOf[WindowProxy]
 inline def parent_=(x: WindowProxy): Unit = js.Dynamic.global.updateDynamic("parent")(x.asInstanceOf[js.Any])
@@ -2807,10 +3086,15 @@ inline def parseFloat(string: java.lang.String): Double = js.Dynamic.global.appl
 inline def parseInt(string: java.lang.String): Double = js.Dynamic.global.applyDynamic("parseInt")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
 inline def parseInt(string: java.lang.String, radix: Double): Double = (js.Dynamic.global.applyDynamic("parseInt")(string.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/performance_property) */
 inline def performance: Performance = js.Dynamic.global.selectDynamic("performance").asInstanceOf[Performance]
 inline def performance_=(x: Performance): Unit = js.Dynamic.global.updateDynamic("performance")(x.asInstanceOf[js.Any])
 
-/** Returns true if the personal bar is visible; otherwise, returns false. */
+/**
+  * Returns true if the personal bar is visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/personalbar)
+  */
 inline def personalbar: typings.std.BarProp = js.Dynamic.global.selectDynamic("personalbar").asInstanceOf[typings.std.BarProp]
 inline def personalbar_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("personalbar")(x.asInstanceOf[js.Any])
 
@@ -2826,20 +3110,29 @@ inline def postMessage(message: Any, options: WindowPostMessageOptions): Unit = 
   * If the origin of the target window doesn't match the given target origin, the message is discarded, to avoid information leakage. To send the message to the target regardless of origin, set the target origin to "*".
   *
   * Throws a "DataCloneError" DOMException if transfer array contains duplicate objects or if message could not be cloned.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/postMessage)
   */
 inline def postMessage(message: Any, targetOrigin: java.lang.String): Unit = (js.Dynamic.global.applyDynamic("postMessage")(message.asInstanceOf[js.Any], targetOrigin.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def postMessage(message: Any, targetOrigin: java.lang.String, transfer: js.Array[Transferable]): Unit = (js.Dynamic.global.applyDynamic("postMessage")(message.asInstanceOf[js.Any], targetOrigin.asInstanceOf[js.Any], transfer.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/print) */
 inline def print(): Unit = js.Dynamic.global.applyDynamic("print")().asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/prompt) */
 inline def prompt(): java.lang.String | Null = js.Dynamic.global.applyDynamic("prompt")().asInstanceOf[java.lang.String | Null]
 inline def prompt(message: java.lang.String): java.lang.String | Null = js.Dynamic.global.applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | Null]
 inline def prompt(message: java.lang.String, _default: java.lang.String): java.lang.String | Null = (js.Dynamic.global.applyDynamic("prompt")(message.asInstanceOf[js.Any], _default.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | Null]
 inline def prompt(message: Unit, _default: java.lang.String): java.lang.String | Null = (js.Dynamic.global.applyDynamic("prompt")(message.asInstanceOf[js.Any], _default.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | Null]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/queueMicrotask) */
 inline def queueMicrotask(callback: VoidFunction): Unit = js.Dynamic.global.applyDynamic("queueMicrotask")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/releaseEvents)
+  */
 inline def releaseEvents(): Unit = js.Dynamic.global.applyDynamic("releaseEvents")().asInstanceOf[Unit]
 
 inline def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4518,90 +4811,131 @@ inline def removeEventListener_wheel(
   options: EventListenerOptions
 ): Unit = (js.Dynamic.global.applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/reportError) */
 inline def reportError(e: Any): Unit = js.Dynamic.global.applyDynamic("reportError")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def requestAnimationFrame(callback: FrameRequestCallback): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback) */
 inline def requestIdleCallback(callback: IdleRequestCallback): Double = js.Dynamic.global.applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
 inline def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): Double = (js.Dynamic.global.applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeBy) */
 inline def resizeBy(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("resizeBy")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeTo) */
 inline def resizeTo(width: Double, height: Double): Unit = (js.Dynamic.global.applyDynamic("resizeTo")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screen) */
 inline def screen: Screen = js.Dynamic.global.selectDynamic("screen").asInstanceOf[Screen]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenLeft) */
 inline def screenLeft: Double = js.Dynamic.global.selectDynamic("screenLeft").asInstanceOf[Double]
 inline def screenLeft_=(x: Double): Unit = js.Dynamic.global.updateDynamic("screenLeft")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenTop) */
 inline def screenTop: Double = js.Dynamic.global.selectDynamic("screenTop").asInstanceOf[Double]
 inline def screenTop_=(x: Double): Unit = js.Dynamic.global.updateDynamic("screenTop")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenX) */
 inline def screenX: Double = js.Dynamic.global.selectDynamic("screenX").asInstanceOf[Double]
 inline def screenX_=(x: Double): Unit = js.Dynamic.global.updateDynamic("screenX")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenY) */
 inline def screenY: Double = js.Dynamic.global.selectDynamic("screenY").asInstanceOf[Double]
 inline def screenY_=(x: Double): Unit = js.Dynamic.global.updateDynamic("screenY")(x.asInstanceOf[js.Any])
 
 inline def screen_=(x: Screen): Unit = js.Dynamic.global.updateDynamic("screen")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scroll) */
 inline def scroll(): Unit = js.Dynamic.global.applyDynamic("scroll")().asInstanceOf[Unit]
 inline def scroll(options: ScrollToOptions): Unit = js.Dynamic.global.applyDynamic("scroll")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def scroll(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("scroll")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollBy) */
 inline def scrollBy(): Unit = js.Dynamic.global.applyDynamic("scrollBy")().asInstanceOf[Unit]
 inline def scrollBy(options: ScrollToOptions): Unit = js.Dynamic.global.applyDynamic("scrollBy")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def scrollBy(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("scrollBy")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollTo) */
 inline def scrollTo(): Unit = js.Dynamic.global.applyDynamic("scrollTo")().asInstanceOf[Unit]
 inline def scrollTo(options: ScrollToOptions): Unit = js.Dynamic.global.applyDynamic("scrollTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def scrollTo(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("scrollTo")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX) */
 inline def scrollX: Double = js.Dynamic.global.selectDynamic("scrollX").asInstanceOf[Double]
 inline def scrollX_=(x: Double): Unit = js.Dynamic.global.updateDynamic("scrollX")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY) */
 inline def scrollY: Double = js.Dynamic.global.selectDynamic("scrollY").asInstanceOf[Double]
 inline def scrollY_=(x: Double): Unit = js.Dynamic.global.updateDynamic("scrollY")(x.asInstanceOf[js.Any])
 
-/** Returns true if the scrollbars are visible; otherwise, returns false. */
+/**
+  * Returns true if the scrollbars are visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollbars)
+  */
 inline def scrollbars: typings.std.BarProp = js.Dynamic.global.selectDynamic("scrollbars").asInstanceOf[typings.std.BarProp]
 inline def scrollbars_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("scrollbars")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/self) */
 inline def self: Window & (/* globalThis */ Any) = js.Dynamic.global.selectDynamic("self").asInstanceOf[Window & (/* globalThis */ Any)]
 inline def self_=(x: Window & (/* globalThis */ Any)): Unit = js.Dynamic.global.updateDynamic("self")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) */
 inline def sessionStorage: typings.std.Storage = js.Dynamic.global.selectDynamic("sessionStorage").asInstanceOf[typings.std.Storage]
 inline def sessionStorage_=(x: typings.std.Storage): Unit = js.Dynamic.global.updateDynamic("sessionStorage")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/setInterval) */
 inline def setInterval(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 inline def setInterval(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/setTimeout) */
 inline def setTimeout(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 inline def setTimeout(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis) */
 inline def speechSynthesis: SpeechSynthesis = js.Dynamic.global.selectDynamic("speechSynthesis").asInstanceOf[SpeechSynthesis]
 inline def speechSynthesis_=(x: SpeechSynthesis): Unit = js.Dynamic.global.updateDynamic("speechSynthesis")(x.asInstanceOf[js.Any])
 
-/** @deprecated */
+/**
+  * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/status)
+  */
 inline def status: java.lang.String = js.Dynamic.global.selectDynamic("status").asInstanceOf[java.lang.String]
 inline def status_=(x: java.lang.String): Unit = js.Dynamic.global.updateDynamic("status")(x.asInstanceOf[js.Any])
 
-/** Returns true if the status bar is visible; otherwise, returns false. */
+/**
+  * Returns true if the status bar is visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/statusbar)
+  */
 inline def statusbar: typings.std.BarProp = js.Dynamic.global.selectDynamic("statusbar").asInstanceOf[typings.std.BarProp]
 inline def statusbar_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("statusbar")(x.asInstanceOf[js.Any])
 
-/** Cancels the document load. */
+/**
+  * Cancels the document load.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/stop)
+  */
 inline def stop(): Unit = js.Dynamic.global.applyDynamic("stop")().asInstanceOf[Unit]
 
-inline def structuredClone(value: Any): Any = js.Dynamic.global.applyDynamic("structuredClone")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
-inline def structuredClone(value: Any, options: StructuredSerializeOptions): Any = (js.Dynamic.global.applyDynamic("structuredClone")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/structuredClone) */
+inline def structuredClone[T](value: T): T = js.Dynamic.global.applyDynamic("structuredClone")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def structuredClone[T](value: T, options: StructuredSerializeOptions): T = (js.Dynamic.global.applyDynamic("structuredClone")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def toString_(): java.lang.String = js.Dynamic.global.applyDynamic("toString")().asInstanceOf[java.lang.String]
 
-/** Returns true if the toolbar is visible; otherwise, returns false. */
+/**
+  * Returns true if the toolbar is visible; otherwise, returns false.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/toolbar)
+  */
 inline def toolbar: typings.std.BarProp = js.Dynamic.global.selectDynamic("toolbar").asInstanceOf[typings.std.BarProp]
 inline def toolbar_=(x: typings.std.BarProp): Unit = js.Dynamic.global.updateDynamic("toolbar")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/top) */
 inline def top: WindowProxy | Null = js.Dynamic.global.selectDynamic("top").asInstanceOf[WindowProxy | Null]
 inline def top_=(x: WindowProxy | Null): Unit = js.Dynamic.global.updateDynamic("top")(x.asInstanceOf[js.Any])
 
@@ -4612,8 +4946,10 @@ inline def top_=(x: WindowProxy | Null): Unit = js.Dynamic.global.updateDynamic(
   */
 inline def unescape(string: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("unescape")(string.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/visualViewport) */
 inline def visualViewport: VisualViewport | Null = js.Dynamic.global.selectDynamic("visualViewport").asInstanceOf[VisualViewport | Null]
 inline def visualViewport_=(x: VisualViewport | Null): Unit = js.Dynamic.global.updateDynamic("visualViewport")(x.asInstanceOf[js.Any])
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/window) */
 inline def window: Window & (/* globalThis */ Any) = js.Dynamic.global.selectDynamic("window").asInstanceOf[Window & (/* globalThis */ Any)]
 inline def window_=(x: Window & (/* globalThis */ Any)): Unit = js.Dynamic.global.updateDynamic("window")(x.asInstanceOf[js.Any])

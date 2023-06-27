@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WeatherViewModelProperties extends StObject {
   
   /**
-    * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather-WeatherViewModel.html#view)
-    */
+  		 * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather-WeatherViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object WeatherViewModelProperties {

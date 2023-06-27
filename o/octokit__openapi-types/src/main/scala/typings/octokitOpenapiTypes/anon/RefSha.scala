@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RefSha extends StObject {
   
-  /** @example "refs/heads/newbranch" */
-  var key: js.UndefOr[String] = js.undefined
-  
   /** @description The name of the fully qualified reference (ie: `refs/heads/master`). If it doesn't start with 'refs' and have at least two slashes, it will be rejected. */
   var ref: String
   
@@ -24,10 +21,6 @@ object RefSha {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RefSha] (val x: Self) extends AnyVal {
-    
-    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

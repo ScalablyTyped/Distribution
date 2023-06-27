@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV100DomainSet extends StObject {
   
   /**
-    * Spatial domain of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Spatial domain of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var spatialDomain: CoverageDescriptionV100DomainSetSpatialDomain
   
   /**
-    * Temporal domain or extent of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Temporal domain or extent of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var temporalDomain: js.UndefOr[TemporalDomain] = js.undefined
 }
 object CoverageDescriptionV100DomainSet {

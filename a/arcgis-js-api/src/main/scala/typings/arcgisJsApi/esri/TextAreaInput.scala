@@ -12,10 +12,10 @@ trait TextAreaInput
      with inputsInput {
   
   /**
-    * The type of form element input.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextAreaInput.html#type)
-    */
+  		 * The type of form element input.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextAreaInput.html#type)
+  		 */
   val `type`: `text-area`
 }
 object TextAreaInput {

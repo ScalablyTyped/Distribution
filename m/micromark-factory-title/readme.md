@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-factory-title
 
-Typings are for version 1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 micromark factory to parse markdown titles (found in resources, definitions)

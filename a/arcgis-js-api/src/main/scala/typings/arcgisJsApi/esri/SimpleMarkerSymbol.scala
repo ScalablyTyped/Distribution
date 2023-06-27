@@ -22,42 +22,42 @@ trait SimpleMarkerSymbol
      with symbolsMarkerSymbol {
   
   /**
-    * The outline of the marker symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
-    */
+  		 * The outline of the marker symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
+  		 */
   var outline: SimpleLineSymbol = js.native
   
   /**
-    * The SVG path of the icon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
-    */
+  		 * The SVG path of the icon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
+  		 */
   var path: String = js.native
   
   /**
-    * The size of the marker in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
-    */
+  		 * The size of the marker in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
+  		 */
   var size: Double = js.native
   
   /**
-    * The marker style.
-    *
-    * @default circle
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
-    */
+  		 * The marker style.
+  		 *
+  		 * @default circle
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
+  		 */
   var style: circle | square_ | cross | x | diamond | triangle_ | path = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#type)
+  		 */
   @JSName("type")
   val type_SimpleMarkerSymbol: `simple-marker` = js.native
 }

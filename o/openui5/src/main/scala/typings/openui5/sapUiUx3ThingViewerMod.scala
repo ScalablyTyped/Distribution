@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -178,13 +177,13 @@ object sapUiUx3ThingViewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit]
     ): this.type = js.native
     def attachFacetSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ThingViewer` itself
       */
@@ -210,7 +209,7 @@ object sapUiUx3ThingViewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit]
     ): this.type = js.native
     def attachFacetSelected(
       /**
@@ -221,7 +220,7 @@ object sapUiUx3ThingViewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ThingViewer` itself
       */
@@ -268,13 +267,13 @@ object sapUiUx3ThingViewerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit]
     ): this.type = js.native
     def detachFacetSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ThingViewerFacetSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -282,7 +281,7 @@ object sapUiUx3ThingViewerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:facetSelected facetSelected} to attached listeners.
       *
@@ -292,10 +291,12 @@ object sapUiUx3ThingViewerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireFacetSelected(): Boolean = js.native
-    def fireFacetSelected(/**
+    def fireFacetSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemKey): Boolean = js.native
+    mParameters: ThingViewer$FacetSelectedEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getActionBar actionBar}.
@@ -326,7 +327,7 @@ object sapUiUx3ThingViewerMod {
     def getHeaderContent(): js.Array[typings.openui5.sapUiUx3ThingGroupMod.default] = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getHeaderType headerType}.
       *
@@ -593,7 +594,7 @@ object sapUiUx3ThingViewerMod {
     oActionBar: typings.openui5.sapUiUx3ActionBarMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getHeaderType headerType}.
       *
@@ -732,6 +733,51 @@ object sapUiUx3ThingViewerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait ThingViewer$FacetSelectedEventParameters extends StObject {
+    
+    /**
+      * Id of selected NavigationItem
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The selected NavigationItem
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUx3NavigationItemMod.default] = js.undefined
+    
+    /**
+      * Key of selected NavigationItem
+      */
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object ThingViewer$FacetSelectedEventParameters {
+    
+    inline def apply(): ThingViewer$FacetSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThingViewer$FacetSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingViewer$FacetSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapUiUx3NavigationItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  type ThingViewerFacetSelectedEvent = typings.openui5.sapUiBaseEventMod.default[ThingViewer$FacetSelectedEventParameters]
+  
+  type ThingViewerFacetSelectedEventParameters = ThingViewer$FacetSelectedEventParameters
+  
   trait ThingViewerSettings
     extends StObject
        with ControlSettings {
@@ -752,7 +798,12 @@ object sapUiUx3ThingViewerMod {
       * Event for facet selection. The application is responsible for displaying the correct content for the
       * selected one. The ThingInspector will currently always mark the first facet as selected.
       */
-    var facetSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var facetSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ThingViewer$FacetSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Thing Inspector facets
@@ -769,7 +820,7 @@ object sapUiUx3ThingViewerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Defines which header type should be used.
       */
@@ -838,7 +889,9 @@ object sapUiUx3ThingViewerMod {
       
       inline def setFacetContentVarargs(value: typings.openui5.sapUiUx3ThingGroupMod.default*): Self = StObject.set(x, "facetContent", js.Array(value*))
       
-      inline def setFacetSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "facetSelected", js.Any.fromFunction1(value))
+      inline def setFacetSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ThingViewer$FacetSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "facetSelected", js.Any.fromFunction1(value))
       
       inline def setFacetSelectedUndefined: Self = StObject.set(x, "facetSelected", js.undefined)
       

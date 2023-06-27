@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Query extends StObject {
   
-  var query: Cursor
+  var query: js.UndefOr[Cursor] = js.undefined
 }
 object Query {
   
-  inline def apply(query: Cursor): Query = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(): Query = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Query]
   }
   
@@ -19,5 +19,7 @@ object Query {
   implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Cursor): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

@@ -11,10 +11,10 @@ object esriLayersSupportPixelBlockMod {
   @JSImport("esri/layers/support/PixelBlock", JSImport.Namespace)
   @js.native
   /**
-    * An object representing the pixel arrays in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html)
-    */
+  		 * An object representing the pixel arrays in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html)
+  		 */
   open class ^ ()
     extends StObject
        with PixelBlock {

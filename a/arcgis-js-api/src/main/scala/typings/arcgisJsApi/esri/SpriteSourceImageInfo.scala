@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpriteSourceImageInfo extends StObject {
   
   /**
-    * The device pixel ratio of the sprite source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * The device pixel ratio of the sprite source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sprite source for non high-DPI devices.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * Sprite source for non high-DPI devices.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var spriteSource1x: js.UndefOr[SpriteSourceImageInfoSpriteSource1x] = js.undefined
   
   /**
-    * Sprite source for high-DPI devices.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * Sprite source for high-DPI devices.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var spriteSource2x: js.UndefOr[SpriteSourceImageInfoSpriteSource2x] = js.undefined
   
   /**
-    * The sprite source url.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * The sprite source url.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var spriteUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * For SpriteSourceImageInfo the type is always "image".
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * For SpriteSourceImageInfo the type is always "image".
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var `type`: String
 }
 object SpriteSourceImageInfo {

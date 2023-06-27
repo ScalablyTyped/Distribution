@@ -10,59 +10,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMAnimatedSymbolProperties extends StObject {
   
   /**
-    * The time (in seconds) it take to play through the symbol's animation once.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * The time (in seconds) it take to play through the symbol's animation once.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var duration: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the animated symbol should play its animation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * Indicates whether the animated symbol should play its animation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var playAnimation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The starting value for generating a random number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * The starting value for generating a random number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var randomizeStartSeed: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether to generate a randomized start offset in seconds to apply to the symbol animation of each feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * Indicates whether to generate a randomized start offset in seconds to apply to the symbol animation of each feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var randomizeStartTime: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The number of seconds to delay before repeating an animation cycle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * The number of seconds to delay before repeating an animation cycle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var repeatDelay: js.UndefOr[Double] = js.undefined
   
   /**
-    * Determines how to repeat the animation of a symbol when the animation cycle ends.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * Determines how to repeat the animation of a symbol when the animation cycle ends.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var repeatType: js.UndefOr[None | Loop | Oscillate] = js.undefined
   
   /**
-    * Indicates whether the animated symbol should play back in reverse.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * Indicates whether the animated symbol should play back in reverse.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var reverseAnimation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The time offset in seconds to use as the starting point of the symbol animation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
-    */
+  		 * The time offset in seconds to use as the starting point of the symbol animation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMAnimatedSymbolProperties)
+  		 */
   var startTimeOffset: js.UndefOr[Double] = js.undefined
 }
 object CIMAnimatedSymbolProperties {

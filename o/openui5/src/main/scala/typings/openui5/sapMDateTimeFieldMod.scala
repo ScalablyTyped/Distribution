@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PreviousValue
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMInputBaseMod.InputBaseSettings
@@ -124,7 +123,7 @@ object sapMDateTimeFieldMod {
     extends typings.openui5.sapMInputBaseMod.default {
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.DateTimeField`.
       *
@@ -142,20 +141,20 @@ object sapMDateTimeFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DateTimeField` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.DateTimeField`.
       *
@@ -178,7 +177,7 @@ object sapMDateTimeFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -189,7 +188,7 @@ object sapMDateTimeFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DateTimeField` itself
       */
@@ -197,7 +196,7 @@ object sapMDateTimeFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.m.DateTimeField`.
       *
@@ -209,13 +208,13 @@ object sapMDateTimeFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeFieldLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -223,21 +222,23 @@ object sapMDateTimeFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.104.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.104.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PreviousValue): this.type = js.native
+    mParameters: DateTimeField$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the inner input DOM value.
       *
@@ -248,8 +249,8 @@ object sapMDateTimeFieldMod {
     /**
       * Gets current value of property {@link #getDateValue dateValue}.
       *
-      * Holds a reference to a JavaScript Date Object. The `value` (string) property will be set according to
-      * it. Alternatively, if the `value` and `valueFormat` pair properties are supplied instead, the `dateValue`
+      * Holds a reference to a UI5Date or JavaScript Date object. The `value` (string) property will be set according
+      * to it. Alternatively, if the `value` and `valueFormat` pair properties are supplied instead, the `dateValue`
       * will be instantiated according to the parsed `value`. Use `dateValue` as a helper property to easily
       * obtain the day, month, year, hours, minutes and seconds of the chosen date and time. Although possible
       * to bind it, the recommendation is not to do it. When binding is needed, use `value` property instead.
@@ -268,18 +269,18 @@ object sapMDateTimeFieldMod {
     def getDisplayFormat(): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getInitialFocusedDateValue initialFocusedDateValue}.
       *
-      * Holds a reference to a JavaScript Date Object to define the initially focused date/time when the picker
-      * popup is opened.
+      * Holds a reference to a UI5Date or JavaScript Date object to define the initially focused date/time when
+      * the picker popup is opened.
       *
       * **Notes:**
       * 	 - Setting this property does not change the `value` property.
-      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker}
-      * 			or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
-      * 			parts of the JavaScript Date Object.
+      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker }
+      *     or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
+      *     parts of the UI5Date or JavaScript Date object.
       *
       * @returns Value of property `initialFocusedDateValue`
       */
@@ -305,14 +306,18 @@ object sapMDateTimeFieldMod {
     /**
       * Setter for property `dateValue`.
       *
-      * The date and time in DateTimeField as JavaScript Date object.
+      * The date and time in DateTimeField as UI5Date or JavaScript Date object.
       *
       * @returns Reference to `this` for method chaining
       */
     def setDateValue(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setDateValue(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getDisplayFormat displayFormat}.
@@ -330,18 +335,18 @@ object sapMDateTimeFieldMod {
     sDisplayFormat: String): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getInitialFocusedDateValue initialFocusedDateValue}.
       *
-      * Holds a reference to a JavaScript Date Object to define the initially focused date/time when the picker
-      * popup is opened.
+      * Holds a reference to a UI5Date or JavaScript Date object to define the initially focused date/time when
+      * the picker popup is opened.
       *
       * **Notes:**
       * 	 - Setting this property does not change the `value` property.
-      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker}
-      * 			or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
-      * 			parts of the JavaScript Date Object.
+      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker }
+      *     or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
+      *     parts of the UI5Date or JavaScript Date object.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -369,13 +374,49 @@ object sapMDateTimeFieldMod {
     sValueFormat: String): this.type = js.native
   }
   
+  trait DateTimeField$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The previous value of the input, before the last user interaction.
+      */
+    var previousValue: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The current value of the input, after a live change event.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DateTimeField$LiveChangeEventParameters {
+    
+    inline def apply(): DateTimeField$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DateTimeField$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeField$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviousValue(value: String): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DateTimeFieldLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[DateTimeField$LiveChangeEventParameters]
+  
+  type DateTimeFieldLiveChangeEventParameters = DateTimeField$LiveChangeEventParameters
+  
   trait DateTimeFieldSettings
     extends StObject
        with InputBaseSettings {
     
     /**
-      * Holds a reference to a JavaScript Date Object. The `value` (string) property will be set according to
-      * it. Alternatively, if the `value` and `valueFormat` pair properties are supplied instead, the `dateValue`
+      * Holds a reference to a UI5Date or JavaScript Date object. The `value` (string) property will be set according
+      * to it. Alternatively, if the `value` and `valueFormat` pair properties are supplied instead, the `dateValue`
       * will be instantiated according to the parsed `value`. Use `dateValue` as a helper property to easily
       * obtain the day, month, year, hours, minutes and seconds of the chosen date and time. Although possible
       * to bind it, the recommendation is not to do it. When binding is needed, use `value` property instead.
@@ -390,30 +431,35 @@ object sapMDateTimeFieldMod {
     var displayFormat: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
-      * Holds a reference to a JavaScript Date Object to define the initially focused date/time when the picker
-      * popup is opened.
+      * Holds a reference to a UI5Date or JavaScript Date object to define the initially focused date/time when
+      * the picker popup is opened.
       *
       * **Notes:**
       * 	 - Setting this property does not change the `value` property.
-      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker}
-      * 			or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
-      * 			parts of the JavaScript Date Object.
+      * 	 - Depending on the context this property is used in ({@link sap.m.TimePicker}, {@link sap.m.DatePicker }
+      *     or {@link sap.m.DateTimePicker}), it takes into account only the time part, only the date part or both
+      *     parts of the UI5Date or JavaScript Date object.
       */
     var initialFocusedDateValue: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Fired when the value of the `DateTimeField` is changed by user interaction - each keystroke, delete,
       * paste, etc.
       *
       * **Note:** Browsing autocomplete suggestions doesn't fire the event.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateTimeField$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the format of the value property.
@@ -442,7 +488,9 @@ object sapMDateTimeFieldMod {
       
       inline def setInitialFocusedDateValueUndefined: Self = StObject.set(x, "initialFocusedDateValue", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateTimeField$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

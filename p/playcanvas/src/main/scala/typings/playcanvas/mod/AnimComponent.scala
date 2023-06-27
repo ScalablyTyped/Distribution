@@ -27,6 +27,8 @@ open class AnimComponent protected () extends Component {
   
   def _addLayer(param0: BlendType): Any = js.native
   
+  def _assignParameters(stateGraph: Any): Unit = js.native
+  
   var _consumedTriggers: Set[Any] = js.native
   
   var _layers: js.Array[Any] = js.native
@@ -121,6 +123,15 @@ open class AnimComponent protected () extends Component {
     */
   def baseLayer: AnimComponentLayer = js.native
   
+  /**
+    * Sets a trigger parameter as having been used by a transition. This function is anonymous so that it can be passed to the AnimController
+    * while still being called in the scope of the AnimComponent.
+    *
+    * @param {string} name - The name of the trigger to set as consumed.
+    * @private
+    */
+  /* private */ var consumeTrigger: Any = js.native
+  
   def dirtifyTargets(): Unit = js.native
   
   /**
@@ -130,6 +141,16 @@ open class AnimComponent protected () extends Component {
     * @returns {AnimComponentLayer} Layer.
     */
   def findAnimationLayer(name: String): AnimComponentLayer = js.native
+  
+  /**
+    * Returns the parameter object for the specified parameter name. This function is anonymous so that it can be passed to the AnimController
+    * while still being called in the scope of the AnimComponent.
+    *
+    * @param {string} name - The name of the parameter to return the value of.
+    * @returns {object} The parameter object.
+    * @private
+    */
+  /* private */ var findParameter: Any = js.native
   
   /**
     * Returns a boolean parameter value by name.

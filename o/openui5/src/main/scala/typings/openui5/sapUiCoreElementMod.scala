@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.PreventScroll
-import typings.openui5.anon.`35`
+import typings.openui5.anon.`5`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
@@ -33,8 +33,7 @@ object sapUiCoreElementMod {
     * source needs to be unique only within the declarative source. Declarative views will prefix that ID with
     * their own ID (and some separator) before constructing the element. Programmatically created views (JSViews)
     * can do the same with the {@link sap.ui.core.mvc.View#createId} API. Similarly, UIComponents can prefix
-    * the IDs of elements created in their context with their own ID. Also see {@link sap.ui.core.UIComponent#getAutoPrefixId
-    * UIComponent#getAutoPrefixId}.
+    * the IDs of elements created in their context with their own ID. Also see {@link sap.ui.core.UIComponent#getAutoPrefixId UIComponent#getAutoPrefixId}.
     *
     * Settings: If the optional `mSettings` are given, they must be a JSON-like object (object literal) that
     * defines values for properties, aggregations, associations or events keyed by their name.
@@ -59,7 +58,7 @@ object sapUiCoreElementMod {
     * 	 - for 0..1 associations, an instance of the associated type or an id (string) is accepted
     * 	 - 0..n associations are not supported yet
     * 	 - for events either a function (event handler) is accepted or an array of length 2 where the first
-    * 			element is a function and the 2nd element is an object to invoke the method on.
+    *     element is a function and the 2nd element is an object to invoke the method on.
     *
     * Special aggregation `dependents` is connected to the lifecycle management and databinding, but not rendered
     * automatically and can be used for popups or other dependent controls or elements. This allows the definition
@@ -129,7 +128,7 @@ object sapUiCoreElementMod {
     bIncludeRelated: Boolean
     ): UI5Element = (^.asInstanceOf[js.Dynamic].applyDynamic("closestTo")(vParam.asInstanceOf[js.Any], bIncludeRelated.asInstanceOf[js.Any])).asInstanceOf[UI5Element]
     /**
-      * @SINCE 1.106
+      * @since 1.106
       *
       * Returns the nearest [UI5 Element]{@link sap.ui.core.Element} that wraps the given DOM element.
       *
@@ -197,10 +196,9 @@ object sapUiCoreElementMod {
       * in `oClassInfo`.
       *
       * `oClassInfo` can contain the same information that {@link sap.ui.base.ManagedObject.extend} already accepts,
-      * plus the `dnd` property in the metadata object literal to configure drag-and-drop behavior (see {@link
-      * sap.ui.core.Element.MetadataOptions MetadataOptions} for details). Objects describing aggregations can
-      * also have a `dnd` property when used for a class extending `Element` (see {@link sap.ui.base.ManagedObject.MetadataOptions.AggregationDnD
-      * AggregationDnD}).
+      * plus the `dnd` property in the metadata object literal to configure drag-and-drop behavior (see {@link sap.ui.core.Element.MetadataOptions MetadataOptions }
+      * for details). Objects describing aggregations can also have a `dnd` property when used for a class extending
+      * `Element` (see {@link sap.ui.base.ManagedObject.MetadataOptions.AggregationDnD AggregationDnD}).
       *
       * Example:
       * ```javascript
@@ -214,7 +212,7 @@ object sapUiCoreElementMod {
       *     },
       *     dnd : { draggable: true, droppable: false },
       *     aggregations : {
-      *       items : { type: 'sap.ui.core.Control', multiple : true, dnd : {draggable: false, droppable: true, layout: "Horizontal" } },
+      *       items : { type: 'sap.ui.core.Control', multiple : true, dnd : {draggable: false, droppable: true, layout: "Horizontal"  } },
       *       header : {type : "sap.ui.core.Control", multiple : false, dnd : true },
       *     }
       *   }
@@ -273,8 +271,23 @@ object sapUiCoreElementMod {
       * @returns Metadata object describing this class
       */
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
+    
+    /**
+      * @since 1.67
+      *
+      * Registry of all `sap.ui.core.Element`s that currently exist.
+      */
+    @JSImport("sap/ui/core/Element", "default.registry")
+    @js.native
+    def registry: typings.openui5.sapUiCoreElementMod.registry = js.native
+    inline def registry_=(x: typings.openui5.sapUiCoreElementMod.registry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registry")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * @since 1.67
+    *
+    * Registry of all `sap.ui.core.Element`s that currently exist.
+    */
   @js.native
   trait registry extends StObject {
     
@@ -408,7 +421,7 @@ object sapUiCoreElementMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Dependents are not rendered, but their databinding context and lifecycle are bound to the aggregating
       * Element.
@@ -418,7 +431,7 @@ object sapUiCoreElementMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Defines the drag-and-drop configuration. **Note:** This configuration might be ignored due to control
       * {@link sap.ui.core.Element.extend metadata} restrictions.
@@ -510,9 +523,9 @@ object sapUiCoreElementMod {
     
     /**
       * Defines draggable and droppable configuration of the element. The following boolean properties can be
-      * provided in the given object literal to configure drag-and-drop behavior of the element (see {@link sap.ui.core.Element.MetadataOptions.DnD
-      * DnD} for details): draggable, droppable If the `dnd` property is of type Boolean, then the `draggable`
-      * and `droppable` configuration are both set to this Boolean value.
+      * provided in the given object literal to configure drag-and-drop behavior of the element (see {@link sap.ui.core.Element.MetadataOptions.DnD DnD }
+      * for details): draggable, droppable If the `dnd` property is of type Boolean, then the `draggable` and
+      * `droppable` configuration are both set to this Boolean value.
       */
     var dnd: js.UndefOr[Boolean | DnD] = js.undefined
   }
@@ -574,7 +587,7 @@ object sapUiCoreElementMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the best suitable DOM node that represents this Element wrapped as jQuery object. I.e. the element
       * returned by {@link sap.ui.core.Element#getDomRef} is wrapped and returned.
@@ -606,7 +619,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Adds some dependent to the aggregation {@link #getDependents dependents}.
       *
@@ -618,7 +631,7 @@ object sapUiCoreElementMod {
     oDependent: UI5Element): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Adds some dragDropConfig to the aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -632,7 +645,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Adds a delegate that can listen to the browser-, pseudo- and framework events that are handled by this
       * `Element` (as opposed to events which are fired by this `Element`).
@@ -658,8 +671,8 @@ object sapUiCoreElementMod {
       * an Element is still enabled via `getEnabled`. Additionally there might be other things that delegates
       * need to check depending on the event (e.g. not adding a key twice to an output string etc.).
       *
-      * See {@link topic:bdf3e9818cd84d37a18ee5680e97e1c1 Event Handler Methods} for a general explanation of
-      * event handling in controls.
+      * See {@link https://ui5.sap.com/#/topic/bdf3e9818cd84d37a18ee5680e97e1c1 Event Handler Methods} for a
+      * general explanation of event handling in controls.
       *
       * **Note:** Setting the special `canSkipRendering` property to `true` for the event delegate object itself
       * lets the framework know that the `onBeforeRendering` and `onAfterRendering` event handlers of the delegate
@@ -687,7 +700,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Applies the focus info.
       *
@@ -698,7 +711,7 @@ object sapUiCoreElementMod {
     def applyFocusInfo(/**
       * Focus info object as returned by {@link #getFocusInfo}
       */
-    oFocusInfo: `35`): this.type = js.native
+    oFocusInfo: `5`): this.type = js.native
     
     /**
       * Bind the object to the referenced entity in the model, which is used as the binding context to resolve
@@ -805,7 +818,7 @@ object sapUiCoreElementMod {
       * ```
       *  Attaches `myData` (using the key "myKey1" and removes any data that had been attached for key "myKey2".
       * See:
-      * 	See chapter {@link topic:91f0c3ee6f4d1014b6dd926db0e91070 Custom Data - Attaching Data Objects to Controls}
+      * 	See chapter {@link https://ui5.sap.com/#/topic/91f0c3ee6f4d1014b6dd926db0e91070 Custom Data - Attaching Data Objects to Controls}
       *    in the documentation.
       *
       * @returns A map with all custom data, a custom data value for a single specified key or `null` when no
@@ -1081,7 +1094,7 @@ object sapUiCoreElementMod {
     def destroyCustomData(): this.type = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Destroys all the dependents in the aggregation {@link #getDependents dependents}.
       *
@@ -1090,7 +1103,7 @@ object sapUiCoreElementMod {
     def destroyDependents(): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Destroys all the dragDropConfig in the aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -1113,11 +1126,11 @@ object sapUiCoreElementMod {
     def destroyTooltip(): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Allows the parent of a control to enhance the ARIA information during rendering.
       *
-      * This function is called by the RenderManager's {@link sap.ui.core.RenderManager#accessibilityState accessibilityState}
+      * This function is called by the RenderManager's {@link sap.ui.core.RenderManager#accessibilityState accessibilityState }
       * and {@link sap.ui.core.RenderManager#writeAccessibilityState writeAccessibilityState} methods for the
       * parent of the currently rendered control - if the parent implements it.
       *
@@ -1138,7 +1151,7 @@ object sapUiCoreElementMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook method for cleaning up the element instance before destruction.
       *
@@ -1161,8 +1174,8 @@ object sapUiCoreElementMod {
       * ```
       *
       *
-      * For a more detailed description how to to use the exit hook, see Section {@link topic:d4ac0edbc467483585d0c53a282505a5
-      * exit() Method} in the documentation.
+      * For a more detailed description how to to use the exit hook, see Section {@link https://ui5.sap.com/#/topic/d4ac0edbc467483585d0c53a282505a5 exit() Method }
+      * in the documentation.
       */
     def exit(): Unit = js.native
     
@@ -1196,7 +1209,7 @@ object sapUiCoreElementMod {
     def getCustomData(): js.Array[typings.openui5.sapUiCoreCustomDataMod.default] = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Gets content of aggregation {@link #getDependents dependents}.
       *
@@ -1206,7 +1219,7 @@ object sapUiCoreElementMod {
     def getDependents(): js.Array[UI5Element] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the best suitable DOM Element that represents this UI5 Element. By default the DOM Element with
       * the same ID as this Element is returned. Subclasses should override this method if the lookup via id
@@ -1229,7 +1242,7 @@ object sapUiCoreElementMod {
     sSuffix: String): Element | Null = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets content of aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -1246,7 +1259,7 @@ object sapUiCoreElementMod {
       * 	 - `null`
       * 	 - empty string `""`
       * 	 - string literals `"null"` or `"undefined"`  Omitting the model name (or using the value `undefined`)
-      * 			is explicitly allowed and refers to the default model.
+      *     is explicitly allowed and refers to the default model.
       *
       * @returns Context binding for the given model name or `undefined`
       */
@@ -1257,7 +1270,7 @@ object sapUiCoreElementMod {
     sModelName: String): js.UndefOr[typings.openui5.sapUiModelContextBindingMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the DOM Element that should get the focus or `null` if there's no such element currently.
       *
@@ -1268,7 +1281,7 @@ object sapUiCoreElementMod {
     def getFocusDomRef(): Element | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns an object representing the serialized focus information.
       *
@@ -1331,7 +1344,7 @@ object sapUiCoreElementMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Checks for the provided `sap.ui.core.Element` in the aggregation {@link #getDependents dependents}. and
       * returns its index if found or -1 otherwise.
@@ -1344,7 +1357,7 @@ object sapUiCoreElementMod {
     oDependent: UI5Element): int = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks for the provided `sap.ui.core.dnd.DragDropBase` in the aggregation {@link #getDragDropConfig dragDropConfig}.
       * and returns its index if found or -1 otherwise.
@@ -1359,7 +1372,7 @@ object sapUiCoreElementMod {
     ): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Initializes the element instance after creation.
       *
@@ -1389,7 +1402,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Inserts a dependent into the aggregation {@link #getDependents dependents}.
       *
@@ -1409,7 +1422,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Inserts a dragDropConfig into the aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -1429,17 +1442,17 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Checks whether an element is able to get the focus after {@link #focus} is called.
       *
       * An element is treated as 'focusable' when all of the following conditions are met:
       * 	 - The element and all of its parents are not 'busy' or 'blocked',
       * 	 - the element is rendered at the top layer on the UI and not covered by any other DOM elements, such
-      * 			as an opened modal popup or the global `BusyIndicator`,
+      *     as an opened modal popup or the global `BusyIndicator`,
       * 	 - the element matches the browser's prerequisites for being focusable: if it's a natively focusable
-      * 			element, for example `input`, `select`, `textarea`, `button`, and so on, no 'tabindex' attribute is needed.
-      * 			Otherwise, 'tabindex' must be set. In any case, the element must be visible in order to be focusable.
+      *     element, for example `input`, `select`, `textarea`, `button`, and so on, no 'tabindex' attribute is needed.
+      *     Otherwise, 'tabindex' must be set. In any case, the element must be visible in order to be focusable.
       *
       *
       * @returns Whether the element can get the focus after calling {@link #focus}
@@ -1481,7 +1494,7 @@ object sapUiCoreElementMod {
     def removeAllCustomData(): js.Array[typings.openui5.sapUiCoreCustomDataMod.default] = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Removes all the controls from the aggregation {@link #getDependents dependents}.
       *
@@ -1492,7 +1505,7 @@ object sapUiCoreElementMod {
     def removeAllDependents(): js.Array[UI5Element] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes all the controls from the aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -1527,7 +1540,7 @@ object sapUiCoreElementMod {
       */
     vDependent: String): UI5Element | Null = js.native
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Removes a dependent from the aggregation {@link #getDependents dependents}.
       *
@@ -1547,7 +1560,7 @@ object sapUiCoreElementMod {
       */
     vDragDropConfig: String): typings.openui5.sapUiCoreDndDragDropBaseMod.default | Null = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes a dragDropConfig from the aggregation {@link #getDragDropConfig dragDropConfig}.
       *
@@ -1565,7 +1578,7 @@ object sapUiCoreElementMod {
     ): typings.openui5.sapUiCoreDndDragDropBaseMod.default | Null = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Removes the given delegate from this element.
       *
@@ -1581,7 +1594,7 @@ object sapUiCoreElementMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This triggers immediate rerendering of its parent and thus of itself and its children.
       *

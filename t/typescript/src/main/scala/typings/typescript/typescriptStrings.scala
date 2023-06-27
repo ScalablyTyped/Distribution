@@ -90,6 +90,10 @@ object typescriptStrings {
   inline def actionColonColonset: actionColonColonset = "action::set".asInstanceOf[actionColonColonset]
   
   @js.native
+  sealed trait actionColonColonwatchTypingLocations extends StObject
+  inline def actionColonColonwatchTypingLocations: actionColonColonwatchTypingLocations = "action::watchTypingLocations".asInstanceOf[actionColonColonwatchTypingLocations]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   

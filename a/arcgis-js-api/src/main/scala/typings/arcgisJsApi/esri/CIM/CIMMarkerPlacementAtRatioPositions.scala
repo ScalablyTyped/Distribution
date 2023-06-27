@@ -10,23 +10,23 @@ trait CIMMarkerPlacementAtRatioPositions
      with CIMMarkerPlacementType {
   
   /**
-    * The distance from the beginning of a line that the marker will be placed.
-    */
+  			 * The distance from the beginning of a line that the marker will be placed.
+  			 */
   var beginPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the end of a line that the marker will be placed. The ending of a line is determined by the direction in which the line was digitized.
-    */
+  			 * The distance from the end of a line that the marker will be placed. The ending of a line is determined by the direction in which the line was digitized.
+  			 */
   var endPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether only the first marker will be rotated 180 degrees.
-    */
+  			 * A value indicating whether only the first marker will be rotated 180 degrees.
+  			 */
   var flipFirst: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The array of positions.
-    */
+  			 * The array of positions.
+  			 */
   var positionArray: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")

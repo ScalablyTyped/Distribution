@@ -590,7 +590,7 @@ object Toolbar {
   trait Model extends StObject {
     
     /** Specifies the items of  Toolbar
-      * @Default {null}
+      * @default {null}
       */
     var Items: js.UndefOr[typings.ejWebAll.ej.Toolbar.Items] = js.undefined
     
@@ -607,7 +607,7 @@ object Toolbar {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies dataSource value for the Toolbar control during initialization.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -616,32 +616,32 @@ object Toolbar {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Disables an Item or set of Items that are enabled in the Toolbar
-      * @Default {[]}
+      * @default {[]}
       */
     var disabledItemIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies enableRTL property to align the Toolbar control from right to left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to separate the each UL items in the Toolbar control.
-      * @Default {false}
+      * @default {false}
       */
     var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the Toolbar control state.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Enables an Item or set of Items that are disabled in the Toolbar
-      * @Default {[]}
+      * @default {[]}
       */
     var enabledItemIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the mapping fields for the data items of the Toolbar
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[String] = js.undefined
     
@@ -650,22 +650,22 @@ object Toolbar {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of the Toolbar.
-      * @Default {28}
+      * @default {28}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** Specifies whether the Toolbar control is need to be show or hide.
-      * @Default {false}
+      * @default {false}
       */
     var hide: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to toolbar control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables/Disables the responsive support for Toolbar items during the window resizing time.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -678,7 +678,7 @@ object Toolbar {
     var itemLeave: js.UndefOr[js.Function1[/* e */ ItemLeaveEventArgs, Unit]] = js.undefined
     
     /** Specifies the Toolbar orientation. See orientation
-      * @Default {Horizontal}
+      * @default {Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
@@ -691,17 +691,17 @@ object Toolbar {
     var overflowOpen: js.UndefOr[js.Function1[/* e */ OverflowOpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the query to retrieve the data from the online server. The query is used only when the online dataSource is used.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies the Toolbar responsive type.
-      * @Default {Popup}
+      * @default {Popup}
       */
     var responsiveType: js.UndefOr[ResponsiveType | String] = js.undefined
     
     /** Displays the Toolbar with rounded corners.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     

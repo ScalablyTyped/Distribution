@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** HTMLOptionsCollection is an interface representing a collection of HTML option elements (in document order) and offers methods and properties for traversing the list as well as optionally altering its items. This type is returned solely by the "options" property of select. */
+/**
+  * HTMLOptionsCollection is an interface representing a collection of HTML option elements (in document order) and offers methods and properties for traversing the list as well as optionally altering its items. This type is returned solely by the "options" property of select.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection)
+  */
 @js.native
 trait HTMLOptionsCollection
   extends StObject
@@ -21,6 +25,8 @@ trait HTMLOptionsCollection
     * If before is omitted, null, or a number out of range, then element will be added at the end of the list.
     *
     * This method will throw a "HierarchyRequestError" DOMException if element is an ancestor of the element into which it is to be inserted.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/add)
     */
   /* standard dom */
   def add(element: HTMLOptionElement): Unit = js.native
@@ -33,11 +39,17 @@ trait HTMLOptionsCollection
     * When set to a smaller number, truncates the number of option elements in the corresponding container.
     *
     * When set to a greater number, adds new blank option elements to that container.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/length)
     */
   /* standard dom */
   var length: Double = js.native
   
-  /** Removes the item with index index from the collection. */
+  /**
+    * Removes the item with index index from the collection.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/remove)
+    */
   /* standard dom */
   def remove(index: Double): Unit = js.native
   
@@ -45,6 +57,8 @@ trait HTMLOptionsCollection
     * Returns the index of the first selected item, if any, or −1 if there is no selected item.
     *
     * Can be set, to change the selection.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOptionsCollection/selectedIndex)
     */
   /* standard dom */
   var selectedIndex: Double = js.native

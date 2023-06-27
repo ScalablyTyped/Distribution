@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapSourceVersion extends StObject {
   
   /**
-    * The major version of the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#sourceVersion)
-    */
+  		 * The major version of the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#sourceVersion)
+  		 */
   var major: Double
   
   /**
-    * The minor version of the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#sourceVersion)
-    */
+  		 * The minor version of the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#sourceVersion)
+  		 */
   var minor: Double
 }
 object WebMapSourceVersion {

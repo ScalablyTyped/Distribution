@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait sizeAgeRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal fill color of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal fill color of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the view's background and the spread of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * The renderer object configured to best match the view's background and the spread of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var renderer: ClassBreaksRenderer
   
   /**
-    * The size scheme used by the visual variables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * The size scheme used by the visual variables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var sizeScheme: SizeScheme
   
   /**
-    * Basic statistics returned from a query for the generated expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * Basic statistics returned from a query for the generated expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var statistics: SummaryStatisticsResult
   
   /**
-    * The time unit used to represent age in the output `renderer`.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The time unit used to represent age in the output `renderer`.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: String
   
   /**
-    * Size visual variables configured based on the statistics of the data and the size scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
-    */
+  		 * Size visual variables configured based on the statistics of the data and the size scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#AgeRendererResult)
+  		 */
   var visualVariables: js.Array[SizeVariable]
 }
 object sizeAgeRendererResult {

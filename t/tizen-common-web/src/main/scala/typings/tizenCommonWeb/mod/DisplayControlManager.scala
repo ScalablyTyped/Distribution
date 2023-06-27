@@ -12,10 +12,10 @@ trait DisplayControlManager extends StObject {
     *
     * @returns Display3DEffectMode The current mode of 3D effect.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.display
@@ -29,10 +29,10 @@ trait DisplayControlManager extends StObject {
     * @param successCallback The method to invoke when a list of supported 3D modes is retrieved successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.display
@@ -46,10 +46,10 @@ trait DisplayControlManager extends StObject {
     *
     * @returns Display3DModeState The current state to display 3D contents.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     * This type of error is deprecated since Tizen 5.0.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type UnknownError in an unspecified error case.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type UnknownError in an unspecified error case.
     *
     * @privilegeLevel 5.0 public
     * @privilegeName 5.0 http://tizen.org/privilege/tv.display

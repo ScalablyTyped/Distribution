@@ -9,7 +9,7 @@ trait `200ContentApplicationjsonAnalysesurl` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonAnalysesurl
   
-  var `403`: Content36
+  var `403`: Content41
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -17,7 +17,7 @@ object `200ContentApplicationjsonAnalysesurl` {
   
   inline def apply(
     `200`: ContentApplicationjsonAnalysesurl,
-    `403`: Content36,
+    `403`: Content41,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `200ContentApplicationjsonAnalysesurl` = {
     val __obj = js.Dynamic.literal()
@@ -32,7 +32,7 @@ object `200ContentApplicationjsonAnalysesurl` {
     
     inline def set200(value: ContentApplicationjsonAnalysesurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

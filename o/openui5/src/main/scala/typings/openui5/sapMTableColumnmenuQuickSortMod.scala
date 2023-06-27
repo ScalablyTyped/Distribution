@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.SortOrder
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMTableColumnmenuEntryMod.EntrySettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
+import typings.openui5.sapUiCoreLibraryMod.SortOrder
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -148,13 +148,13 @@ object sapMTableColumnmenuQuickSortMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickSort` itself
       */
@@ -179,7 +179,7 @@ object sapMTableColumnmenuQuickSortMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -190,7 +190,7 @@ object sapMTableColumnmenuQuickSortMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickSort` itself
       */
@@ -215,13 +215,13 @@ object sapMTableColumnmenuQuickSortMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickSortChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -229,7 +229,7 @@ object sapMTableColumnmenuQuickSortMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -239,7 +239,7 @@ object sapMTableColumnmenuQuickSortMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: SortOrder): this.type = js.native
+    mParameters: QuickSort$ChangeEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -309,6 +309,46 @@ object sapMTableColumnmenuQuickSortMod {
     ): typings.openui5.sapMTableColumnmenuQuickSortItemMod.default | Null = js.native
   }
   
+  trait QuickSort$ChangeEventParameters extends StObject {
+    
+    /**
+      * The key of the property that is sorted.
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The new sort order.
+      */
+    var sortOrder: js.UndefOr[
+        SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
+      ] = js.undefined
+  }
+  object QuickSort$ChangeEventParameters {
+    
+    inline def apply(): QuickSort$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickSort$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickSort$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setSortOrder(
+        value: SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
+      ): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    }
+  }
+  
+  type QuickSortChangeEvent = typings.openui5.sapUiBaseEventMod.default[QuickSort$ChangeEventParameters]
+  
+  type QuickSortChangeEventParameters = QuickSort$ChangeEventParameters
+  
   trait QuickSortSettings
     extends StObject
        with EntrySettings {
@@ -316,7 +356,12 @@ object sapMTableColumnmenuQuickSortMod {
     /**
       * Fires the change event.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickSort$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The sortable properties and the initial state.
@@ -335,7 +380,9 @@ object sapMTableColumnmenuQuickSortMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QuickSortSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickSort$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

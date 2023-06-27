@@ -52,12 +52,14 @@ trait Float64Array
     * @param target If target is negative, it is treated as length+target where length is the
     * length of the array.
     * @param start If start is negative, it is treated as length+start. If end is negative, it
-    * is treated as length+end.
+    * is treated as length+end. If start is omitted, `0` is used.
     * @param end If not specified, length of the this object is used as its default value.
     */
   /* standard es5 */
+  def copyWithin(target: Double): this.type = js.native
   def copyWithin(target: Double, start: Double): this.type = js.native
   def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
+  def copyWithin(target: Double, start: Unit, end: Double): this.type = js.native
   
   /**
     * Returns an array of key, value pairs for every entry in the array
@@ -441,6 +443,7 @@ trait Float64Array
   def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   
   /**
+    * Gets a new Float64Array view of the ArrayBuffer store for this array, referencing the elements
     * at begin, inclusive, up to end, exclusive.
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.

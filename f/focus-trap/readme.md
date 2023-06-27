@@ -1,7 +1,7 @@
 
 # Scala.js typings for focus-trap
 
-Typings are for version 7.0.0
+Typings are for version 7.4.3
 
 ## Library description:
 Trap focus within a DOM node.

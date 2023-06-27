@@ -9,7 +9,7 @@ trait MediaControllerAbilitiesInfo extends StObject {
   /**
     * Represents server's ability to receive custom commands from media controller client.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val clientCustom: MediaControllerAbilitySupport
   
@@ -26,7 +26,7 @@ trait MediaControllerAbilitiesInfo extends StObject {
   /**
     * Represents server's ability to receive requests for spherical (360°) mode change from media controller client.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val mode360: MediaControllerAbilitySupport
   
@@ -38,35 +38,35 @@ trait MediaControllerAbilitiesInfo extends StObject {
   /**
     * Represents server's ability to change playback position.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val playbackPosition: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to add/change/remove playlists.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val playlist: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to change repeat state.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val repeat: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to receive search requests from media controller client.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val search: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to change shuffle mode.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val shuffle: MediaControllerAbilitySupport
   
@@ -76,22 +76,22 @@ trait MediaControllerAbilitiesInfo extends StObject {
     * @remark Function [addAbilityChangeListener()](#MediaControllerClient::addAbilityChangeListener) must be called before current method.
     * For code example see [unsubscribe()](#MediaControllerAbilitiesInfo::unsubscribe).
     *
-    * @throw WebAPIException with error type InvalidStateError, if [addAbilityChangeListener()](#MediaControllerClient::addAbilityChangeListener) is not set.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidStateError, if [addAbilityChangeListener()](#MediaControllerClient::addAbilityChangeListener) is not set.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def subscribe(): Unit
   
   /**
     * Represents server's ability to receive requests for subtitles mode change from media controller client.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val subtitles: MediaControllerAbilitySupport
   
   /**
     * Removes a subscription for monitoring status of all abilities of server represented by this object.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def unsubscribe(): Unit
 }

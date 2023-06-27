@@ -136,13 +136,13 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.RangeSlider` itself
       */
@@ -167,7 +167,7 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -178,7 +178,7 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.RangeSlider` itself
       */
@@ -199,13 +199,13 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.RangeSlider` itself
       */
@@ -230,7 +230,7 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
@@ -241,7 +241,7 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.RangeSlider` itself
       */
@@ -259,13 +259,13 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -283,13 +283,13 @@ object sapUiWebcMainRangeSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachInput(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -297,7 +297,7 @@ object sapUiWebcMainRangeSliderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -310,7 +310,7 @@ object sapUiWebcMainRangeSliderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:input input} to attached listeners.
       *
@@ -651,6 +651,18 @@ object sapUiWebcMainRangeSliderMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait RangeSlider$ChangeEventParameters extends StObject
+  
+  trait RangeSlider$InputEventParameters extends StObject
+  
+  type RangeSliderChangeEvent = typings.openui5.sapUiBaseEventMod.default[RangeSlider$ChangeEventParameters]
+  
+  type RangeSliderChangeEventParameters = RangeSlider$ChangeEventParameters
+  
+  type RangeSliderInputEvent = typings.openui5.sapUiBaseEventMod.default[RangeSlider$InputEventParameters]
+  
+  type RangeSliderInputEventParameters = RangeSlider$InputEventParameters
+  
   trait RangeSliderSettings
     extends StObject
        with ControlSettings {
@@ -663,7 +675,9 @@ object sapUiWebcMainRangeSliderMod {
     /**
       * Fired when the value changes and the user has finished interacting with the slider.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the control is enabled. A disabled control can't be interacted with, and it is not in
@@ -683,7 +697,9 @@ object sapUiWebcMainRangeSliderMod {
     /**
       * Fired when the value changes due to user interaction that is not yet finished - during mouse/touch dragging.
       */
-    var input: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var input: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Displays a label with a value on every N-th step.
@@ -761,7 +777,7 @@ object sapUiWebcMainRangeSliderMod {
       
       inline def setAccessibleNameUndefined: Self = StObject.set(x, "accessibleName", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -773,7 +789,7 @@ object sapUiWebcMainRangeSliderMod {
       
       inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
       
-      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
+      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       

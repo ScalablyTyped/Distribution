@@ -16,13 +16,13 @@ trait GetResponses200ContentApplicationjsonRepositoriesTotalcount404 extends StO
     * Set selected repositories for an organization secret
     * @description Replaces all repositories for an organization secret when the `visibility` for repository access is set to `selected`. The visibility is set when you [Create or update an organization secret](https://docs.github.com/rest/reference/codespaces#create-or-update-an-organization-secret). You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
-  var put: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses7
+  var put: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses9
 }
 object GetResponses200ContentApplicationjsonRepositoriesTotalcount404 {
   
   inline def apply(
     get: Responses200ContentApplicationjsonRepositoriesTotalcount404,
-    put: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses7
+    put: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses9
   ): GetResponses200ContentApplicationjsonRepositoriesTotalcount404 = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200ContentApplicationjsonRepositoriesTotalcount404]
@@ -33,6 +33,6 @@ object GetResponses200ContentApplicationjsonRepositoriesTotalcount404 {
     
     inline def setGet(value: Responses200ContentApplicationjsonRepositoriesTotalcount404): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses7): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjsonSelectedrepositoryidsResponses9): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

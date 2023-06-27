@@ -120,6 +120,10 @@ object chromeRemoteInterfaceStrings {
   inline def AuditsDotcheckContrast: AuditsDotcheckContrast = "Audits.checkContrast".asInstanceOf[AuditsDotcheckContrast]
   
   @js.native
+  sealed trait AuditsDotcheckFormsIssues extends StObject
+  inline def AuditsDotcheckFormsIssues: AuditsDotcheckFormsIssues = "Audits.checkFormsIssues".asInstanceOf[AuditsDotcheckFormsIssues]
+  
+  @js.native
   sealed trait AuditsDotdisable extends StObject
   inline def AuditsDotdisable: AuditsDotdisable = "Audits.disable".asInstanceOf[AuditsDotdisable]
   
@@ -134,6 +138,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait AuditsDotissueAdded extends StObject
   inline def AuditsDotissueAdded: AuditsDotissueAdded = "Audits.issueAdded".asInstanceOf[AuditsDotissueAdded]
+  
+  @js.native
+  sealed trait AutofillDotsetAddresses extends StObject
+  inline def AutofillDotsetAddresses: AutofillDotsetAddresses = "Autofill.setAddresses".asInstanceOf[AutofillDotsetAddresses]
   
   @js.native
   sealed trait AutofillDottrigger extends StObject
@@ -170,6 +178,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait Browser extends StObject
   inline def Browser: Browser = "Browser".asInstanceOf[Browser]
+  
+  @js.native
+  sealed trait BrowserDotaddPrivacySandboxEnrollmentOverride extends StObject
+  inline def BrowserDotaddPrivacySandboxEnrollmentOverride: BrowserDotaddPrivacySandboxEnrollmentOverride = "Browser.addPrivacySandboxEnrollmentOverride".asInstanceOf[BrowserDotaddPrivacySandboxEnrollmentOverride]
   
   @js.native
   sealed trait BrowserDotcancelDownload extends StObject
@@ -2322,6 +2334,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait PageDotsetLifecycleEventsEnabled extends StObject
   inline def PageDotsetLifecycleEventsEnabled: PageDotsetLifecycleEventsEnabled = "Page.setLifecycleEventsEnabled".asInstanceOf[PageDotsetLifecycleEventsEnabled]
+  
+  @js.native
+  sealed trait PageDotsetPrerenderingAllowed extends StObject
+  inline def PageDotsetPrerenderingAllowed: PageDotsetPrerenderingAllowed = "Page.setPrerenderingAllowed".asInstanceOf[PageDotsetPrerenderingAllowed]
   
   @js.native
   sealed trait PageDotsetRPHRegistrationMode extends StObject

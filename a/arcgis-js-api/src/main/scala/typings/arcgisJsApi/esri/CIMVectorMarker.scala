@@ -11,115 +11,115 @@ trait CIMVectorMarker
      with CIMSymbolLayer {
   
   /**
-    * The specified location where all transformation property operations originate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The specified location where all transformation property operations originate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var anchorPoint: js.UndefOr[CIMVectorMarkerAnchorPoint] = js.undefined
   
   /**
-    * A value which specifies if the anchor point location is considered a percentage of the size or as an absolute distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value which specifies if the anchor point location is considered a percentage of the size or as an absolute distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var anchorPointUnits: js.UndefOr[Relative | Absolute] = js.undefined
   
   /**
-    * A value indicating whether the color can be changed for this symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value indicating whether the color can be changed for this symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The geometric effects applied to the symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * A value indicating whether the symbol layer is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value indicating whether the symbol layer is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var enable: Boolean
   
   /**
-    * The outer boundary of the entire vector marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The outer boundary of the entire vector marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var frame: Envelope
   
   /**
-    * The vector graphics that define the shape of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The vector graphics that define the shape of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var markerGraphics: js.Array[CIMMarkerGraphic]
   
   /**
-    * Determines how markers are placed along a line or within a polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * Determines how markers are placed along a line or within a polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var markerPlacement: js.UndefOr[MarkerPlacement] = js.undefined
   
   /**
-    * The distance that the image is offset in the horizontal direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The distance that the image is offset in the horizontal direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance that the image is offset in the vertical direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The distance that the image is offset in the vertical direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * A value indicating whether the frame of the vector marker should be honored when drawing the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value indicating whether the frame of the vector marker should be honored when drawing the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var respectFrame: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether the rotation is applied clockwise or counterclockwise to the marker layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value indicating whether the rotation is applied clockwise or counterclockwise to the marker layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var rotateClockwise: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The angle of the image within the fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The angle of the image within the fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the strokes and or fills of a marker are scaled proportionally when the symbol size is changed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * A value indicating whether the strokes and or fills of a marker are scaled proportionally when the symbol size is changed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var scaleSymbolsProportionally: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The height of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
-    */
+  		 * The height of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMVectorMarker)
+  		 */
   var size: Double
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMVectorMarker

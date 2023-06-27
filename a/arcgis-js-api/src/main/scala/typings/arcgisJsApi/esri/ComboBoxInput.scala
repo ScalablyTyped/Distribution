@@ -13,25 +13,25 @@ trait ComboBoxInput
      with inputsInput {
   
   /**
-    * The text used to represent a null value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#noValueOptionLabel)
-    */
+  		 * The text used to represent a null value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#noValueOptionLabel)
+  		 */
   var noValueOptionLabel: String = js.native
   
   /**
-    * Determines whether a null value option is displayed.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#showNoValueOption)
-    */
+  		 * Determines whether a null value option is displayed.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#showNoValueOption)
+  		 */
   var showNoValueOption: Boolean = js.native
   
   /**
-    * The type of form element input.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#type)
-    */
+  		 * The type of form element input.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-ComboBoxInput.html#type)
+  		 */
   val `type`: `combo-box` = js.native
 }

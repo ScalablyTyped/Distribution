@@ -17,7 +17,7 @@ import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.atlaskitMotion.distTypesResizingHeightMod.ResizingHeightOpts
 import typings.atlaskitMotion.distTypesUtilsCurvesMod.AnimationCurve
 import typings.emotionSerialize.mod.CSSObject
-import typings.react.mod.FC
+import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +38,7 @@ object mod {
     */
   @JSImport("@atlaskit/motion", "ExitingPersistence")
   @js.native
-  val ExitingPersistence: FC[ExitingPersistenceProps] = js.native
+  val ExitingPersistence: MemoExoticComponent[js.Function1[/* param0 */ ExitingPersistenceProps, Any]] = js.native
   
   /**
     * __FadeIn__
@@ -47,9 +47,7 @@ object mod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion", "FadeIn")
-  @js.native
-  val FadeIn: FC[FadeKeyframesMotionProps] = js.native
+  inline def FadeIn(param0: FadeKeyframesMotionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def ResizingHeight(param0: ResizingHeightOptschildre): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -61,9 +59,7 @@ object mod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion", "ShrinkOut")
-  @js.native
-  val ShrinkOut: FC[ShrinkOutProps] = js.native
+  inline def ShrinkOut(param0: ShrinkOutProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ShrinkOut")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * __SlideIn__
@@ -72,9 +68,7 @@ object mod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion", "SlideIn")
-  @js.native
-  val SlideIn: FC[SlideInProps] = js.native
+  inline def SlideIn(param0: SlideInProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideIn")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * For a list of elements that need to animate in,
@@ -84,9 +78,7 @@ object mod {
     * Will dynamically add delay to each child entering component.
     * Unfortunately all entering components _NEED_ to be a direct descendant.
     */
-  @JSImport("@atlaskit/motion", "StaggeredEntrance")
-  @js.native
-  val StaggeredEntrance: FC[StaggeredEntranceProps] = js.native
+  inline def StaggeredEntrance(param0: StaggeredEntranceProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StaggeredEntrance")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * __ZoomIn__
@@ -95,9 +87,7 @@ object mod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion", "ZoomIn")
-  @js.native
-  val ZoomIn: FC[KeyframesMotionProps] = js.native
+  inline def ZoomIn(param0: KeyframesMotionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ZoomIn")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@atlaskit/motion", "durationStep")
   @js.native

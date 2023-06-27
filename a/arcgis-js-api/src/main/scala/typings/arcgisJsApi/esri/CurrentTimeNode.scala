@@ -12,10 +12,10 @@ trait CurrentTimeNode
      with SQLNode {
   
   /**
-    * The current time node mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#CurrentTimeNode)
-    */
+  		 * The current time node mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#CurrentTimeNode)
+  		 */
   var mode: timestamp | date
   
   var `type`: `current-time`

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideEnvironmentProperties extends StObject {
   
   /**
-    * Settings for defining the lighting of the scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
-    */
+  		 * Settings for defining the lighting of the scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
+  		 */
   var lighting: js.UndefOr[websceneSunLightingProper | websceneVirtualLightingPr] = js.undefined
 }
 object SlideEnvironmentProperties {

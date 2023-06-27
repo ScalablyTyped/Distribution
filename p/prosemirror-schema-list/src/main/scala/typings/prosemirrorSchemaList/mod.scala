@@ -72,6 +72,7 @@ object mod {
   of a list item by also splitting that list item.
   */
   inline def splitListItem(itemType: NodeType): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("splitListItem")(itemType.asInstanceOf[js.Any]).asInstanceOf[Command]
+  inline def splitListItem(itemType: NodeType, itemAttrs: Attrs): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("splitListItem")(itemType.asInstanceOf[js.Any], itemAttrs.asInstanceOf[js.Any])).asInstanceOf[Command]
   
   /**
   Returns a command function that wraps the selection in a list with

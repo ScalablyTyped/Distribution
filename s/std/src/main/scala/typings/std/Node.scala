@@ -22,7 +22,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Node is an interface from which a number of DOM API object types inherit. It allows those types to be treated similarly; for example, inheriting the same set of methods, or being tested in the same way. */
+/**
+  * Node is an interface from which a number of DOM API object types inherit. It allows those types to be treated similarly; for example, inheriting the same set of methods, or being tested in the same way.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node)
+  */
 @js.native
 trait Node
   extends StObject
@@ -95,118 +99,204 @@ trait Node
   /* standard dom */
   val TEXT_NODE: `3` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/appendChild) */
   /* standard dom */
   def appendChild[T /* <: Node */](node: T): T = js.native
   
-  /** Returns node's node document's document base URL. */
+  /**
+    * Returns node's node document's document base URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/baseURI)
+    */
   /* standard dom */
   val baseURI: java.lang.String = js.native
   
-  /** Returns the children. */
+  /**
+    * Returns the children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/childNodes)
+    */
   /* standard dom */
   val childNodes: NodeListOf[ChildNode] = js.native
   
-  /** Returns a copy of node. If deep is true, the copy also includes the node's descendants. */
+  /**
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/cloneNode)
+    */
   /* standard dom */
   def cloneNode(): Node = js.native
   def cloneNode(deep: scala.Boolean): Node = js.native
   
-  /** Returns a bitmask indicating the position of other relative to node. */
+  /**
+    * Returns a bitmask indicating the position of other relative to node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/compareDocumentPosition)
+    */
   /* standard dom */
   def compareDocumentPosition(other: Node): Double = js.native
   
-  /** Returns true if other is an inclusive descendant of node, and false otherwise. */
+  /**
+    * Returns true if other is an inclusive descendant of node, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/contains)
+    */
   /* standard dom */
   def contains(): scala.Boolean = js.native
   def contains(other: Node): scala.Boolean = js.native
   
-  /** Returns the first child. */
+  /**
+    * Returns the first child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/firstChild)
+    */
   /* standard dom */
   val firstChild: ChildNode | Null = js.native
   
-  /** Returns node's root. */
+  /**
+    * Returns node's root.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/getRootNode)
+    */
   /* standard dom */
   def getRootNode(): Node = js.native
   def getRootNode(options: GetRootNodeOptions): Node = js.native
   
-  /** Returns whether node has children. */
+  /**
+    * Returns whether node has children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/hasChildNodes)
+    */
   /* standard dom */
   def hasChildNodes(): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/insertBefore) */
   /* standard dom */
   def insertBefore[T /* <: Node */](node: T): T = js.native
   def insertBefore[T /* <: Node */](node: T, child: Node): T = js.native
   
-  /** Returns true if node is connected and false otherwise. */
+  /**
+    * Returns true if node is connected and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isConnected)
+    */
   /* standard dom */
   val isConnected: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isDefaultNamespace) */
   /* standard dom */
   def isDefaultNamespace(): scala.Boolean = js.native
   def isDefaultNamespace(namespace: java.lang.String): scala.Boolean = js.native
   
-  /** Returns whether node and otherNode have the same properties. */
+  /**
+    * Returns whether node and otherNode have the same properties.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isEqualNode)
+    */
   /* standard dom */
   def isEqualNode(): scala.Boolean = js.native
   def isEqualNode(otherNode: Node): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isSameNode) */
   /* standard dom */
   def isSameNode(): scala.Boolean = js.native
   def isSameNode(otherNode: Node): scala.Boolean = js.native
   
-  /** Returns the last child. */
+  /**
+    * Returns the last child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lastChild)
+    */
   /* standard dom */
   val lastChild: ChildNode | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupNamespaceURI) */
   /* standard dom */
   def lookupNamespaceURI(): java.lang.String | Null = js.native
   def lookupNamespaceURI(prefix: java.lang.String): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupPrefix) */
   /* standard dom */
   def lookupPrefix(): java.lang.String | Null = js.native
   def lookupPrefix(namespace: java.lang.String): java.lang.String | Null = js.native
   
-  /** Returns the next sibling. */
+  /**
+    * Returns the next sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)
+    */
   /* standard dom */
   val nextSibling: ChildNode | Null = js.native
   
-  /** Returns a string appropriate for the type of node. */
+  /**
+    * Returns a string appropriate for the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeName)
+    */
   /* standard dom */
   val nodeName: java.lang.String = js.native
   
-  /** Returns the type of node. */
+  /**
+    * Returns the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeType)
+    */
   /* standard dom */
   val nodeType: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeValue) */
   /* standard dom */
   var nodeValue: java.lang.String | Null = js.native
   
-  /** Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes. */
+  /**
+    * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/normalize)
+    */
   /* standard dom */
   def normalize(): Unit = js.native
   
-  /** Returns the node document. Returns null for documents. */
+  /**
+    * Returns the node document. Returns null for documents.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/ownerDocument)
+    */
   /* standard dom */
   val ownerDocument: Document | Null = js.native
   
-  /** Returns the parent element. */
+  /**
+    * Returns the parent element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentElement)
+    */
   /* standard dom */
   val parentElement: HTMLElement | Null = js.native
   
-  /** Returns the parent. */
+  /**
+    * Returns the parent.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentNode)
+    */
   /* standard dom */
   val parentNode: ParentNode | Null = js.native
   
-  /** Returns the previous sibling. */
+  /**
+    * Returns the previous sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/previousSibling)
+    */
   /* standard dom */
   val previousSibling: ChildNode | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/removeChild) */
   /* standard dom */
   def removeChild[T /* <: Node */](child: T): T = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/replaceChild) */
   /* standard dom */
   def replaceChild[T /* <: Node */](node: Node, child: T): T = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/textContent) */
   /* standard dom */
   var textContent: java.lang.String | Null = js.native
 }

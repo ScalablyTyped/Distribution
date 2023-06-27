@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewSizes
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +149,13 @@ object sapUiLayoutPaneContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.PaneContainer` itself
       */
@@ -181,7 +180,7 @@ object sapUiLayoutPaneContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
@@ -192,7 +191,7 @@ object sapUiLayoutPaneContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.PaneContainer` itself
       */
@@ -217,13 +216,13 @@ object sapUiLayoutPaneContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit]
     ): this.type = js.native
     def detachResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PaneContainerResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -231,17 +230,19 @@ object sapUiLayoutPaneContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireResize(): this.type = js.native
-    def fireResize(/**
+    def fireResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewSizes): this.type = js.native
+    mParameters: PaneContainer$ResizeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getOrientation orientation}.
@@ -308,6 +309,46 @@ object sapUiLayoutPaneContainerMod {
     sOrientation: Orientation): this.type = js.native
   }
   
+  trait PaneContainer$ResizeEventParameters extends StObject {
+    
+    /**
+      * An array of values representing the new (pixel)sizes of the split panes, which are inside the pane container.
+      */
+    var newSizes: js.UndefOr[js.Array[float]] = js.undefined
+    
+    /**
+      * An array of values representing the old (pixel)sizes of the split panes, which are inside the pane container.
+      */
+    var oldSizes: js.UndefOr[js.Array[float]] = js.undefined
+  }
+  object PaneContainer$ResizeEventParameters {
+    
+    inline def apply(): PaneContainer$ResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PaneContainer$ResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneContainer$ResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewSizes(value: js.Array[float]): Self = StObject.set(x, "newSizes", value.asInstanceOf[js.Any])
+      
+      inline def setNewSizesUndefined: Self = StObject.set(x, "newSizes", js.undefined)
+      
+      inline def setNewSizesVarargs(value: float*): Self = StObject.set(x, "newSizes", js.Array(value*))
+      
+      inline def setOldSizes(value: js.Array[float]): Self = StObject.set(x, "oldSizes", value.asInstanceOf[js.Any])
+      
+      inline def setOldSizesUndefined: Self = StObject.set(x, "oldSizes", js.undefined)
+      
+      inline def setOldSizesVarargs(value: float*): Self = StObject.set(x, "oldSizes", js.Array(value*))
+    }
+  }
+  
+  type PaneContainerResizeEvent = typings.openui5.sapUiBaseEventMod.default[PaneContainer$ResizeEventParameters]
+  
+  type PaneContainerResizeEventParameters = PaneContainer$ResizeEventParameters
+  
   trait PaneContainerSettings
     extends StObject
        with ElementSettings {
@@ -329,7 +370,12 @@ object sapUiLayoutPaneContainerMod {
     /**
       * Fired when contents are resized.
       */
-    var resize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var resize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PaneContainer$ResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object PaneContainerSettings {
     
@@ -355,7 +401,9 @@ object sapUiLayoutPaneContainerMod {
       
       inline def setPanesVarargs(value: typings.openui5.sapUiCoreElementMod.default*): Self = StObject.set(x, "panes", js.Array(value*))
       
-      inline def setResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PaneContainer$ResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     }

@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibleElementsCreateTools extends StObject {
   
   /**
-    * Indicates whether to display the circle sketch tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the circle sketch tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var circle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the point sketch tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the point sketch tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var point: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the polygon sketch tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the polygon sketch tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var polygon: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the polyline sketch tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the polyline sketch tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var polyline: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the rectangle sketch tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the rectangle sketch tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var rectangle: js.UndefOr[Boolean] = js.undefined
 }
 object VisibleElementsCreateTools {

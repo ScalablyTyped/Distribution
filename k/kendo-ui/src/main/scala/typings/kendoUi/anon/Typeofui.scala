@@ -47,6 +47,7 @@ import typings.kendoUi.kendo.ui.FilterMenuOptions
 import typings.kendoUi.kendo.ui.FilterOptions
 import typings.kendoUi.kendo.ui.FlatColorPickerOptions
 import typings.kendoUi.kendo.ui.FloatingActionButtonOptions
+import typings.kendoUi.kendo.ui.FontIconOptions
 import typings.kendoUi.kendo.ui.FormOptions
 import typings.kendoUi.kendo.ui.GanttOptions
 import typings.kendoUi.kendo.ui.GridOptions
@@ -91,6 +92,7 @@ import typings.kendoUi.kendo.ui.SplitButtonOptions
 import typings.kendoUi.kendo.ui.SplitterOptions
 import typings.kendoUi.kendo.ui.SpreadsheetOptions
 import typings.kendoUi.kendo.ui.StepperOptions
+import typings.kendoUi.kendo.ui.SvgIconOptions
 import typings.kendoUi.kendo.ui.SwitchOptions
 import typings.kendoUi.kendo.ui.TabStripOptions
 import typings.kendoUi.kendo.ui.TaskBoardOptions
@@ -369,6 +371,12 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.FloatingActionButton
   ] = js.native
   
+  var FontIcon: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[FontIconOptions], 
+    typings.kendoUi.kendo.ui.FontIcon
+  ] = js.native
+  
   var Form: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[FormOptions], 
@@ -633,6 +641,12 @@ trait Typeofui extends StObject {
     typings.kendoUi.kendo.ui.Stepper
   ] = js.native
   
+  var SvgIcon: Instantiable2[
+    /* element */ Element, 
+    /* options */ js.UndefOr[FontIconOptions], 
+    typings.kendoUi.kendo.ui.SvgIcon
+  ] = js.native
+  
   var Switch: Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SwitchOptions], 
@@ -753,6 +767,13 @@ trait Typeofui extends StObject {
   
   val filemanager: Typeoffilemanager = js.native
   
+  def icon(element: JQuery, options: String): String = js.native
+  def icon(element: JQuery, options: FontIconOptions): String = js.native
+  def icon(element: JQuery, options: SvgIconOptions): String = js.native
+  def icon(options: String): String = js.native
+  def icon(options: FontIconOptions): String = js.native
+  def icon(options: SvgIconOptions): String = js.native
+  
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any
   ): Unit = js.native
@@ -783,6 +804,8 @@ trait Typeofui extends StObject {
   def plugin(widget: Any, register: Unit, prefix: String): Unit = js.native
   
   def progress(container: JQuery, toggle: Boolean): Unit = js.native
+  
+  var svgIcons: Any = js.native
   
   val taskboard: Typeoftaskboard = js.native
 }

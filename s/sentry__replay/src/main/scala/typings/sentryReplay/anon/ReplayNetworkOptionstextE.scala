@@ -1,6 +1,6 @@
 package typings.sentryReplay.anon
 
-import typings.sentryReplay.typesTypesMod.ReplayContainer
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
 import typings.sentryTypes.typesTextencoderMod.TextEncoderInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

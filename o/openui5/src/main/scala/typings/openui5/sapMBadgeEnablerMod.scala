@@ -9,7 +9,7 @@ object sapMBadgeEnablerMod {
   @JSImport("sap/m/BadgeEnabler", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     */
   open class default ()
     extends StObject

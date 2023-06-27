@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibleElementsScaleMenus extends StObject {
   
   /**
-    * Indicates whether the maximum scale dropdown menu is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
-    */
+  		 * Indicates whether the maximum scale dropdown menu is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
+  		 */
   var maxScaleMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the minimum scale dropdown menu is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
-    */
+  		 * Indicates whether the minimum scale dropdown menu is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
+  		 */
   var minScaleMenu: js.UndefOr[Boolean] = js.undefined
 }
 object VisibleElementsScaleMenus {

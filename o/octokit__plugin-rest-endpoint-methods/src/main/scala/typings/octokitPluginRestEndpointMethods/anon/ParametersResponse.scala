@@ -4,7 +4,6 @@ import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
@@ -15,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParametersResponse extends StObject {
   
   var parameters: RequestParameters & (Omit[
-    (ToOctokitParameters[
+    ToOctokitParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}']['put'] */ js.Any
-    ]) & RequiredPreview[Any], 
+    ], 
     baseUrl | headers | mediaType
   ])
   
@@ -29,9 +28,9 @@ object ParametersResponse {
   
   inline def apply(
     parameters: RequestParameters & (Omit[
-      (ToOctokitParameters[
+      ToOctokitParameters[
         /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}']['put'] */ js.Any
-      ]) & RequiredPreview[Any], 
+      ], 
       baseUrl | headers | mediaType
     ]),
     response: ExtractOctokitResponse[
@@ -47,9 +46,9 @@ object ParametersResponse {
     
     inline def setParameters(
       value: RequestParameters & (Omit[
-          (ToOctokitParameters[
+          ToOctokitParameters[
             /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}']['put'] */ js.Any
-          ]) & RequiredPreview[Any], 
+          ], 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])

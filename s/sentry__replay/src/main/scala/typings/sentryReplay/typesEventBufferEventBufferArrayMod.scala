@@ -1,9 +1,9 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.AddEventResult
-import typings.sentryReplay.typesTypesMod.EventBuffer
-import typings.sentryReplay.typesTypesMod.EventBufferType
-import typings.sentryReplay.typesTypesMod.RecordingEvent
+import typings.sentryReplay.typesTypesReplayMod.AddEventResult
+import typings.sentryReplay.typesTypesReplayMod.EventBuffer
+import typings.sentryReplay.typesTypesReplayMod.EventBufferType
+import typings.sentryReplay.typesTypesReplayMod.RecordingEvent
 import typings.sentryTypes.typesReplayMod.ReplayRecordingData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,6 +16,8 @@ object typesEventBufferEventBufferArrayMod {
   open class EventBufferArray ()
     extends StObject
        with EventBuffer {
+    
+    /* private */ var _totalSize: Any = js.native
     
     /**
       * Add an event to the event buffer.

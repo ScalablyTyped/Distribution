@@ -37,8 +37,8 @@ trait File extends StObject {
     * @param onsuccess Callback method to be invoked when the file has been copied.
     * @param onerror Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def copyTo(originFilePath: String, destinationFilePath: String, overwrite: Boolean): Unit = js.native
   def copyTo(
@@ -93,11 +93,11 @@ trait File extends StObject {
     * @returns File handle of the new directory.
     * The new _File_ object has "rw" access rights, as it inherits this from the _File_ object on which the createDirectory() method is called.
     *
-    * @throw WebAPIException with error type IOError, if the dirPath already exists, if the file in which the createDirectory() method is invoked is a file (and not a directory).
-    * @throw WebAPIException with error type InvalidValuesError, if the dirPath does not contain a valid path.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type IOError, if the dirPath already exists, if the file in which the createDirectory() method is invoked is a file (and not a directory).
+    * @throws WebAPIException with error type InvalidValuesError, if the dirPath does not contain a valid path.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def createDirectory(dirPath: String): File = js.native
   
@@ -121,11 +121,11 @@ trait File extends StObject {
     * The new _File_ object has "rw" access rights, as it inherits this from the _File_ object on which the createFile() method is
     * called.
     *
-    * @throw WebAPIException with error type IOError, if relativeFilePath already exists, if the _File_ in which the createFile() method is invoked is a file (not a directory).
-    * @throw WebAPIException with error type InvalidValuesError, if relativeFilePath contains an invalid value.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type IOError, if relativeFilePath already exists, if the _File_ in which the createFile() method is invoked is a file (not a directory).
+    * @throws WebAPIException with error type InvalidValuesError, if relativeFilePath contains an invalid value.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def createFile(relativeFilePath: String): File = js.native
   
@@ -174,8 +174,8 @@ trait File extends StObject {
     * @param onsuccess Callback method to be invoked when a directory is successfully deleted.
     * @param onerror Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def deleteDirectory(directoryPath: String, recursive: Boolean): Unit = js.native
   def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -206,8 +206,8 @@ trait File extends StObject {
     * @param onsuccess Callback method to be invoked when the file is successfully deleted.
     * @param onerror Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def deleteFile(filePath: String): Unit = js.native
   def deleteFile(filePath: String, onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -302,8 +302,8 @@ trait File extends StObject {
     * @param onerror Callback method to be invoked when an error has occurred.
     * @param filter Criteria to restrict the listed files.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def listFiles(onsuccess: FileArraySuccessCallback): Unit = js.native
   def listFiles(onsuccess: FileArraySuccessCallback, onerror: Null, filter: FileFilter): Unit = js.native
@@ -355,8 +355,8 @@ trait File extends StObject {
     * @param onsuccess Callback method to be invoked when the file has been moved.
     * @param onerror Callback method to be invoked when an error has occurred.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def moveTo(originFilePath: String, destinationFilePath: String, overwrite: Boolean): Unit = js.native
   def moveTo(
@@ -433,8 +433,8 @@ trait File extends StObject {
     * "[ISO-8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1)" latin1 encoding
     * If no encoding is passed by the developer, then the default platform encoding must be used.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback): Unit = js.native
   def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback, onerror: Null, encoding: String): Unit = js.native
@@ -496,8 +496,8 @@ trait File extends StObject {
     * "[ISO-8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1)" latin1 encoding
     * If no encoding is passed by the developer, then the default platform encoding must be used.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def readAsText(onsuccess: FileStringSuccessCallback): Unit = js.native
   def readAsText(onsuccess: FileStringSuccessCallback, onerror: Null, encoding: String): Unit = js.native
@@ -537,12 +537,12 @@ trait File extends StObject {
     * @returns File handle of the file.
     * The new _File_ object inherits its access rights from the _File_ object on which this resolve() method is called.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if the file path contains an invalid value.
-    * @throw WebAPIException with error type IOError, if the method is executed in a _File_ object that does not represent a directory (that is, _isDirectory_ attribute is false).
-    * @throw WebAPIException with error type NotFoundError, if a file does not exist for the passed file path.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the file path contains an invalid value.
+    * @throws WebAPIException with error type IOError, if the method is executed in a _File_ object that does not represent a directory (that is, _isDirectory_ attribute is false).
+    * @throws WebAPIException with error type NotFoundError, if a file does not exist for the passed file path.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def resolve(filePath: String): File = js.native
   
@@ -565,8 +565,8 @@ trait File extends StObject {
     *
     * @returns URI that identifies the file or null if an error occurs.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurred.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurred.
     */
   def toURI(): String = js.native
 }

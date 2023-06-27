@@ -11,10 +11,10 @@ object esriWebdocApplicationPropertiesSearchLayerFieldMod {
   @JSImport("esri/webdoc/applicationProperties/SearchLayerField", JSImport.Namespace)
   @js.native
   /**
-    * Represents the field of a layer to use for search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html)
-    */
+  		 * Represents the field of a layer to use for search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayerField.html)
+  		 */
   open class ^ ()
     extends StObject
        with SearchLayerField {

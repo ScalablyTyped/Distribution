@@ -72,10 +72,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceAreaParametersProperties extends StObject {
   
   /**
-    * Use this property to specify whether the operation should accumulate values other than the value specified for [impedanceAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#impedanceAttribute).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#accumulateAttributes)
-    */
+  		 * Use this property to specify whether the operation should accumulate values other than the value specified for [impedanceAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#impedanceAttribute).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#accumulateAttributes)
+  		 */
   var accumulateAttributes: js.UndefOr[
     js.Array[
       kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
@@ -83,198 +83,198 @@ trait ServiceAreaParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Use this property to specify additional values required by an attribute or restriction, such as to specify whether the restriction prohibits, avoids, or prefers travel on restricted roads.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#attributeParameterValues)
-    */
+  		 * Use this property to specify additional values required by an attribute or restriction, such as to specify whether the restriction prohibits, avoids, or prefers travel on restricted roads.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#attributeParameterValues)
+  		 */
   var attributeParameterValues: js.UndefOr[js.Array[ServiceAreaParametersAttributeParameterValue]] = js.undefined
   
   /**
-    * Use this parameter to specify the size and number of service areas to generate for each facility.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#defaultBreaks)
-    */
+  		 * Use this parameter to specify the size and number of service areas to generate for each facility.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#defaultBreaks)
+  		 */
   var defaultBreaks: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * An array of network source names to not use when generating polygons.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#excludeSourcesFromPolygons)
-    */
+  		 * An array of network source names to not use when generating polygons.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#excludeSourcesFromPolygons)
+  		 */
   var excludeSourcesFromPolygons: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The input locations around which service areas are generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#facilities)
-    */
+  		 * The input locations around which service areas are generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#facilities)
+  		 */
   var facilities: js.UndefOr[
     DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecision)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecision)
+  		 */
   var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecisionM)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecisionM)
+  		 */
   var geometryPrecisionM: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by a solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecisionZ)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by a solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#geometryPrecisionZ)
+  		 */
   var geometryPrecisionZ: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specify whether invalid input locations should be ignored when finding the best solution.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#ignoreInvalidLocations)
-    */
+  		 * Specify whether invalid input locations should be ignored when finding the best solution.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#ignoreInvalidLocations)
+  		 */
   var ignoreInvalidLocations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the impedance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#impedanceAttribute)
-    */
+  		 * Specifies the impedance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#impedanceAttribute)
+  		 */
   var impedanceAttribute: js.UndefOr[
     kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
   ] = js.undefined
   
   /**
-    * Use this parameter to specify whether the service areas from different facilities that have the same break value should be joined together or split at break values.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#mergeSimilarPolygonRanges)
-    */
+  		 * Use this parameter to specify whether the service areas from different facilities that have the same break value should be joined together or split at break values.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#mergeSimilarPolygonRanges)
+  		 */
   var mergeSimilarPolygonRanges: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Use this property to specify the spatial reference of the geometries, such as line or point features, returned by a solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outSpatialReference)
-    */
+  		 * Use this property to specify the spatial reference of the geometries, such as line or point features, returned by a solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * Use this property to specify by how much you want to simplify the route geometry returned by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecision)
-    */
+  		 * Use this property to specify by how much you want to simplify the route geometry returned by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecision)
+  		 */
   var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the units for the value specified for the [outputGeometryPrecision](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecision) parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecisionUnits)
-    */
+  		 * Use this property to specify the units for the value specified for the [outputGeometryPrecision](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecision) parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputGeometryPrecisionUnits)
+  		 */
   var outputGeometryPrecisionUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   
   /**
-    * Use this property to specify the type of route features that are output by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputLines)
-    */
+  		 * Use this property to specify the type of route features that are output by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputLines)
+  		 */
   var outputLines: js.UndefOr[none_ | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
-    * This parameter sets whether service area polygons should be returned and to what detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputPolygons)
-    */
+  		 * This parameter sets whether service area polygons should be returned and to what detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#outputPolygons)
+  		 */
   var outputPolygons: js.UndefOr[none_ | simplified | detailed] = js.undefined
   
   /**
-    * Specifies whether the service area lines from different facilities can overlap each other.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overlapLines)
-    */
+  		 * Specifies whether the service area lines from different facilities can overlap each other.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overlapLines)
+  		 */
   var overlapLines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the service areas from different facilities can overlap each other.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overlapPolygons)
-    */
+  		 * Specifies whether the service areas from different facilities can overlap each other.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overlapPolygons)
+  		 */
   var overlapPolygons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify additional settings that can influence the behavior of the solver when finding solutions for the network analysis problems.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overrides)
-    */
+  		 * Specify additional settings that can influence the behavior of the solver when finding solutions for the network analysis problems.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#overrides)
+  		 */
   var overrides: js.UndefOr[Any] = js.undefined
   
   /**
-    * Use this property to specify one or more points that will act as temporary restrictions or represent additional time or distance that may be required to travel on the underlying streets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#pointBarriers)
-    */
+  		 * Use this property to specify one or more points that will act as temporary restrictions or represent additional time or distance that may be required to travel on the underlying streets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#pointBarriers)
+  		 */
   var pointBarriers: js.UndefOr[
     CollectionProperties[PointBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify polygons that either completely restrict travel or proportionately scale the time or distance required to travel on the streets intersected by the polygons.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polygonBarriers)
-    */
+  		 * Use this property to specify polygons that either completely restrict travel or proportionately scale the time or distance required to travel on the streets intersected by the polygons.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polygonBarriers)
+  		 */
   var polygonBarriers: js.UndefOr[
     CollectionProperties[PolygonBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify one or more lines that prohibit travel anywhere the lines intersect the streets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polylineBarriers)
-    */
+  		 * Use this property to specify one or more lines that prohibit travel anywhere the lines intersect the streets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polylineBarriers)
+  		 */
   var polylineBarriers: js.UndefOr[
     CollectionProperties[PolylineBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify if the Object IDs specified for input locations such as stops or barriers should be preserved when the input locations are returned as output.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#preserveObjectID)
-    */
+  		 * Use this property to specify if the Object IDs specified for input locations such as stops or barriers should be preserved when the input locations are returned as output.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#preserveObjectID)
+  		 */
   var preserveObjectID: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies how U-Turns should be handled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#restrictUTurns)
-    */
+  		 * Specifies how U-Turns should be handled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#restrictUTurns)
+  		 */
   var restrictUTurns: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
   ] = js.undefined
   
   /**
-    * Use this property to specify which restrictions should be honored by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#restrictionAttributes)
-    */
+  		 * Use this property to specify which restrictions should be honored by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#restrictionAttributes)
+  		 */
   var restrictionAttributes: js.UndefOr[
     js.Array[
       `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
@@ -282,117 +282,117 @@ trait ServiceAreaParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * Determines if facilities will be returned by the service.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnFacilities)
-    */
+  		 * Determines if facilities will be returned by the service.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnFacilities)
+  		 */
   var returnFacilities: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [point barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#pointBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPointBarriers)
-    */
+  		 * Specify whether [point barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#pointBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPointBarriers)
+  		 */
   var returnPointBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [polygon barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polygonBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPolygonBarriers)
-    */
+  		 * Specify whether [polygon barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polygonBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPolygonBarriers)
+  		 */
   var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [polyline barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polylineBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPolylineBarriers)
-    */
+  		 * Specify whether [polyline barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#polylineBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#returnPolylineBarriers)
+  		 */
   var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the service area lines should be split at break values.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#splitLinesAtBreaks)
-    */
+  		 * Specifies whether the service area lines should be split at break values.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#splitLinesAtBreaks)
+  		 */
   var splitLinesAtBreaks: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether multiple service areas around a facility are created as disks or rings.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#splitPolygonsAtBreaks)
-    */
+  		 * Specifies whether multiple service areas around a facility are created as disks or rings.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#splitPolygonsAtBreaks)
+  		 */
   var splitPolygonsAtBreaks: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the time and date to depart from or arrive at incidents or facilities.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDay)
-    */
+  		 * Specify the time and date to depart from or arrive at incidents or facilities.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDay)
+  		 */
   var timeOfDay: js.UndefOr[DateProperties | now] = js.undefined
   
   /**
-    * Specify the time zone or zones of the [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDay) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDayIsUTC)
-    */
+  		 * Specify the time zone or zones of the [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDay) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#timeOfDayIsUTC)
+  		 */
   var timeOfDayIsUTC: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the direction of travel used to generate the service area polygons is toward or away from the facilities.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#travelDirection)
-    */
+  		 * Specifies whether the direction of travel used to generate the service area polygons is toward or away from the facilities.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#travelDirection)
+  		 */
   var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.undefined
   
   /**
-    * A travel mode represents a means of transportation, such as driving or walking.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#travelMode)
-    */
+  		 * A travel mode represents a means of transportation, such as driving or walking.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#travelMode)
+  		 */
   var travelMode: js.UndefOr[TravelModeProperties] = js.undefined
   
   /**
-    * Specifies whether the service areas are trimmed.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimOuterPolygon)
-    */
+  		 * Specifies whether the service areas are trimmed.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimOuterPolygon)
+  		 */
   var trimOuterPolygon: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The property defines the distance that can be reached from the network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistance)
-    */
+  		 * The property defines the distance that can be reached from the network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistance)
+  		 */
   var trimPolygonDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the units of the value specified [trimPolygonDistance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistance).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistanceUnits)
-    */
+  		 * Specifies the units of the value specified [trimPolygonDistance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistance).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#trimPolygonDistanceUnits)
+  		 */
   var trimPolygonDistanceUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   
   /**
-    * Specify whether hierarchy should be used when finding the shortest paths.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#useHierarchy)
-    */
+  		 * Specify whether hierarchy should be used when finding the shortest paths.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html#useHierarchy)
+  		 */
   var useHierarchy: js.UndefOr[Boolean] = js.undefined
 }
 object ServiceAreaParametersProperties {

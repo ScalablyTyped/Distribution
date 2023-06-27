@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mm" : "3.2.2"
+      "mm" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mm" : "3.2.2"
+      "mm" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

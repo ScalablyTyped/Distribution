@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.full_
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.none_
   - typings.microsoftGraph.microsoftGraphStrings.basic
   - typings.microsoftGraph.microsoftGraphStrings.enhanced
-  - typings.microsoftGraph.microsoftGraphStrings.full
+  - typings.microsoftGraph.microsoftGraphStrings.full_
 */
 trait DiagnosticDataSubmissionMode extends StObject
 object DiagnosticDataSubmissionMode {
@@ -19,7 +20,7 @@ object DiagnosticDataSubmissionMode {
   
   inline def enhanced: typings.microsoftGraph.microsoftGraphStrings.enhanced = "enhanced".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enhanced]
   
-  inline def full: typings.microsoftGraph.microsoftGraphStrings.full = "full".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.full]
+  inline def full: full_ = "full".asInstanceOf[full_]
   
   inline def none: none_ = "none".asInstanceOf[none_]
   

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ShadowCast")
 @js.native
 /**
-  * The ShadowCast widget displays the cumulative shadows of 3D features in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html)
-  */
+		 * The ShadowCast widget displays the cumulative shadows of 3D features in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html)
+		 */
 open class ShadowCast ()
   extends StObject
      with typings.arcgisJsApi.esri.ShadowCast {

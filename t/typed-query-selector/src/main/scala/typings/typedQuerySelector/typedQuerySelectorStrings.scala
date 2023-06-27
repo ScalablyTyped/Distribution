@@ -1,11 +1,11 @@
 package typings.typedQuerySelector
 
 import typings.typedQuerySelector.parserMod.Combinators
+import typings.typedQuerySelector.parserMod.Digit
+import typings.typedQuerySelector.parserMod.LowerCaseLetter
 import typings.typedQuerySelector.parserMod.PseudoClassesFirstChar
 import typings.typedQuerySelector.parserMod.Whitespace
-import typings.typedQuerySelector.strictMod.Digit
-import typings.typedQuerySelector.strictMod.LowerCaseLetter
-import typings.typedQuerySelector.strictMod._IdentifierFirstChar
+import typings.typedQuerySelector.parserMod._IdentifierFirstChar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,10 +130,6 @@ object typedQuerySelectorStrings {
     extends StObject
        with Combinators
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
-  
-  @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait _underscore

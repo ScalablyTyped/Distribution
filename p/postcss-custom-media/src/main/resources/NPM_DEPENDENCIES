@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-custom-media" : "9.1.3"
+      "postcss-custom-media" : "9.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-custom-media" : "9.1.3"
+      "postcss-custom-media" : "9.1.5"
     }
   ],
   "compile-devDependencies" : [

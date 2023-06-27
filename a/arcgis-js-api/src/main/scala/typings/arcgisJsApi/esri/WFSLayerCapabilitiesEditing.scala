@@ -7,66 +7,66 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WFSLayerCapabilitiesEditing extends StObject {
   
   /**
-    * Indicates if anonymous users can delete features created by others.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if anonymous users can delete features created by others.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsDeleteByAnonymous: Boolean
   
   /**
-    * Indicates if logged in users can delete features created by others.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if logged in users can delete features created by others.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsDeleteByOthers: Boolean
   
   /**
-    * Indicates if the geometry of the features in the layer can be edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if the geometry of the features in the layer can be edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsGeometryUpdate: Boolean
   
   /**
-    * Indicates if the `globalid` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#applyEdits).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if the `globalid` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#applyEdits).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsGlobalId: Boolean
   
   /**
-    * Indicates if the `rollbackOnFailure` parameter can be set to `true` or `false` when running the synchronizeReplica operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if the `rollbackOnFailure` parameter can be set to `true` or `false` when running the synchronizeReplica operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsRollbackOnFailure: Boolean
   
   /**
-    * Indicates if anonymous users can update features created by others.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if anonymous users can update features created by others.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsUpdateByAnonymous: Boolean
   
   /**
-    * Indicates if logged in users can update features created by others.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if logged in users can update features created by others.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsUpdateByOthers: Boolean
   
   /**
-    * Indicates if `m-values` must be provided when updating features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if `m-values` must be provided when updating features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsUpdateWithoutM: Boolean
   
   /**
-    * Indicates if the layer supports uploading attachments by [UploadId](https://developers.arcgis.com/rest/services-reference/item.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
-    */
+  		 * Indicates if the layer supports uploading attachments by [UploadId](https://developers.arcgis.com/rest/services-reference/item.htm).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#capabilities)
+  		 */
   var supportsUploadWithItemId: Boolean
 }
 object WFSLayerCapabilitiesEditing {

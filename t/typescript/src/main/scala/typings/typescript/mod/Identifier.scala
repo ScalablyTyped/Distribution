@@ -14,11 +14,11 @@ trait Identifier
      with AssertionKey
      with BindingName
      with BindingOrAssignmentElementTarget
-     with DeclarationName
      with EntityName
      with EntityNameExpression
      with HasJSDoc
      with JSDocNamespaceBody
+     with JsxAttributeName
      with JsxTagNameExpression
      with MemberName
      with ModuleName

@@ -8,11 +8,11 @@ trait DescriptionPublic extends StObject {
   
   var description: js.UndefOr[FromTo] = js.undefined
   
-  var public: js.UndefOr[`458`] = js.undefined
+  var public: js.UndefOr[`536`] = js.undefined
   
   var short_description: js.UndefOr[FromTo] = js.undefined
   
-  var title: js.UndefOr[`459`] = js.undefined
+  var title: js.UndefOr[`537`] = js.undefined
 }
 object DescriptionPublic {
   
@@ -28,7 +28,7 @@ object DescriptionPublic {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setPublic(value: `458`): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: `536`): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
@@ -36,7 +36,7 @@ object DescriptionPublic {
     
     inline def setShort_descriptionUndefined: Self = StObject.set(x, "short_description", js.undefined)
     
-    inline def setTitle(value: `459`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: `537`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

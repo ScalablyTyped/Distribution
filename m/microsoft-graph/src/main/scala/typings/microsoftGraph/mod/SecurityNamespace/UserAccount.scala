@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UserAccount extends StObject {
   
-  // The user account's displayed name.
+  // The displayed name of the user account.
   var accountName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The user object identifier in Azure AD.
+  // The user object identifier in Azure Active Directory (Azure AD).
   var azureAdUserId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The user display name in Azure AD.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the Active Directory domain of which the user is a member.

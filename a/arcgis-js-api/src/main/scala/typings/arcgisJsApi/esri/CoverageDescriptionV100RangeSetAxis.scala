@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV100RangeSetAxis extends StObject {
   
   /**
-    * Range axis label.
-    *
-    * [Read more...](global.html)
-    */
+  		 * Range axis label.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String
   
   /**
-    * Range axis name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Range axis name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var name: String
   
   /**
-    * Range axis values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Range axis values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var values: js.Array[String]
 }
 object CoverageDescriptionV100RangeSetAxis {

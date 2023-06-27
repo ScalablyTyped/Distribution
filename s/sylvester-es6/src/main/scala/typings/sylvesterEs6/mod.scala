@@ -663,7 +663,7 @@ object mod {
     /**
       * Returns the plane's distance from the given object (point, line or plane).
       *
-      * @parm {Vector|Line|Plane} obj The object.
+      * @param obj The object.
       */
     def distanceFrom(obj: Vector): Double = js.native
     
@@ -968,7 +968,7 @@ object mod {
     /**
       * Returns the scalar product of the vector with the argument. Both vectors must have equal dimensionality.
       *
-      * @param: {Vector|number[]} vector The other vector.
+      * @param vector The other vector.
       */
     def dot(vector: Vector): Double = js.native
     

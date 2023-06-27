@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Appointment
-import typings.openui5.anon.HeaderId
-import typings.openui5.anon.Rows
-import typings.openui5.anon.StartDate
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -143,7 +139,7 @@ object sapMPlanningCalendarMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -217,13 +213,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def attachAppointmentSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -249,7 +245,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def attachAppointmentSelect(
       /**
@@ -260,7 +256,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -282,13 +278,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit]
     ): this.type = js.native
     def attachIntervalSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -314,7 +310,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit]
     ): this.type = js.native
     def attachIntervalSelect(
       /**
@@ -325,7 +321,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -333,7 +329,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:rowHeaderClick rowHeaderClick} event of this
       * `sap.m.PlanningCalendar`.
@@ -349,20 +345,20 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit]
     ): this.type = js.native
     def attachRowHeaderClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:rowHeaderClick rowHeaderClick} event of this
       * `sap.m.PlanningCalendar`.
@@ -383,7 +379,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit]
     ): this.type = js.native
     def attachRowHeaderClick(
       /**
@@ -394,7 +390,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -416,13 +412,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachRowSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -448,7 +444,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachRowSelectionChange(
       /**
@@ -459,7 +455,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -484,13 +480,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -519,7 +515,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
@@ -530,7 +526,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -551,13 +547,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachViewChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -582,7 +578,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachViewChange(
       /**
@@ -593,7 +589,7 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PlanningCalendar` itself
       */
@@ -640,13 +636,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def detachAppointmentSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -665,13 +661,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit]
     ): this.type = js.native
     def detachIntervalSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarIntervalSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -679,7 +675,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:rowHeaderClick rowHeaderClick} event of this
       * `sap.m.PlanningCalendar`.
@@ -692,13 +688,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit]
     ): this.type = js.native
     def detachRowHeaderClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowHeaderClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -717,13 +713,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachRowSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PlanningCalendarRowSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -742,13 +738,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachStartDateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -766,13 +762,13 @@ object sapMPlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachViewChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -780,60 +776,68 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentSelect appointmentSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentSelect(): this.type = js.native
-    def fireAppointmentSelect(/**
+    def fireAppointmentSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Appointment): this.type = js.native
+    mParameters: PlanningCalendar$AppointmentSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:intervalSelect intervalSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireIntervalSelect(): this.type = js.native
-    def fireIntervalSelect(/**
+    def fireIntervalSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: StartDate): this.type = js.native
+    mParameters: PlanningCalendar$IntervalSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:rowHeaderClick rowHeaderClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireRowHeaderClick(): this.type = js.native
-    def fireRowHeaderClick(/**
+    def fireRowHeaderClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: HeaderId): this.type = js.native
+    mParameters: PlanningCalendar$RowHeaderClickEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:rowSelectionChange rowSelectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireRowSelectionChange(): this.type = js.native
-    def fireRowSelectionChange(/**
+    def fireRowSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Rows): this.type = js.native
+    mParameters: PlanningCalendar$RowSelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -846,7 +850,7 @@ object sapMPlanningCalendarMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:viewChange viewChange} to attached listeners.
       *
@@ -859,7 +863,7 @@ object sapMPlanningCalendarMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -872,8 +876,8 @@ object sapMPlanningCalendarMod {
     def getAppointmentHeight(): CalendarAppointmentHeight | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentHeight * / any */ String) = js.native
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Gets current value of property {@link #getAppointmentRoundWidth appointmentRoundWidth}.
       *
@@ -887,7 +891,7 @@ object sapMPlanningCalendarMod {
     def getAppointmentRoundWidth(): CalendarAppointmentRoundWidth | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentRoundWidth * / any */ String) = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getAppointmentsReducedHeight appointmentsReducedHeight}.
       *
@@ -903,7 +907,7 @@ object sapMPlanningCalendarMod {
     def getAppointmentsReducedHeight(): Boolean = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Gets current value of property {@link #getAppointmentsVisualization appointmentsVisualization}.
       *
@@ -916,15 +920,14 @@ object sapMPlanningCalendarMod {
     def getAppointmentsVisualization(): CalendarAppointmentVisualization | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentVisualization * / any */ String) = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets current value of property {@link #getBuiltInViews builtInViews}.
       *
@@ -943,7 +946,7 @@ object sapMPlanningCalendarMod {
     def getBuiltInViews(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -955,23 +958,23 @@ object sapMPlanningCalendarMod {
     def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Getter for custom appointments sorter (if any).
       */
     def getCustomAppointmentsSorterCallback(): appointmentsSorterCallback = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Getter for the end point in time of the shown interval
       *
-      * @returns JavaScript date object with the end date
+      * @returns date instance with the end date
       */
-    def getEndDate(): js.Date = js.native
+    def getEndDate(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Gets current value of property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -988,7 +991,7 @@ object sapMPlanningCalendarMod {
     def getFirstDayOfWeek(): int = js.native
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Gets current value of property {@link #getGroupAppointmentsMode groupAppointmentsMode}.
       *
@@ -1015,19 +1018,19 @@ object sapMPlanningCalendarMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMaxDate maxDate}.
       *
       * Defines the maximum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
+      * UI5Date or JavaScript Date object.
       *
       * **Note:** If the `maxDate` is set to be before the current `minDate`, the `minDate` is set to the first
       * date of the month in which the `maxDate` belongs.
@@ -1037,12 +1040,12 @@ object sapMPlanningCalendarMod {
     def getMaxDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMinDate minDate}.
       *
       * Defines the minimum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
+      * UI5Date or JavaScript Date object.
       *
       * **Note:** If the `minDate` is set to be after the current `maxDate`, the `maxDate` is set to the last
       * date of the month in which the `minDate` belongs.
@@ -1052,7 +1055,7 @@ object sapMPlanningCalendarMod {
     def getMinDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getMultipleAppointmentsSelection multipleAppointmentsSelection}.
       *
@@ -1077,7 +1080,7 @@ object sapMPlanningCalendarMod {
     def getNoDataText(): String = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -1096,7 +1099,7 @@ object sapMPlanningCalendarMod {
     def getRows(): js.Array[typings.openui5.sapMPlanningCalendarRowMod.default] = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -1109,7 +1112,7 @@ object sapMPlanningCalendarMod {
     def getSecondaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Holds the selected appointments. If no appointments are selected, an empty array is returned.
       *
@@ -1125,7 +1128,7 @@ object sapMPlanningCalendarMod {
     def getSelectedRows(): js.Array[typings.openui5.sapMPlanningCalendarRowMod.default] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets current value of property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -1138,7 +1141,7 @@ object sapMPlanningCalendarMod {
     def getShowDayNamesLine(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getShowEmptyIntervalHeaders showEmptyIntervalHeaders}.
       *
@@ -1173,7 +1176,7 @@ object sapMPlanningCalendarMod {
     /**
       * Gets current value of property {@link #getShowRowHeaders showRowHeaders}.
       *
-      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows}
+      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows }
       * is displayed.
       *
       * Default value is `true`.
@@ -1183,7 +1186,7 @@ object sapMPlanningCalendarMod {
     def getShowRowHeaders(): Boolean = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getShowWeekNumbers showWeekNumbers}.
       *
@@ -1218,14 +1221,15 @@ object sapMPlanningCalendarMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Determines the start date of the row, as a JavaScript date object. The current date is used as default.
+      * Determines the start date of the row, as a UI5Date or JavaScript Date object. The current date is used
+      * as default.
       *
       * @returns Value of property `startDate`
       */
     def getStartDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getStickyHeader stickyHeader}.
       *
@@ -1427,7 +1431,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -1472,7 +1476,7 @@ object sapMPlanningCalendarMod {
     def removeAllViews(): js.Array[typings.openui5.sapMPlanningCalendarViewMod.default] = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -1588,7 +1592,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -1615,8 +1619,8 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Sets a new value for property {@link #getAppointmentRoundWidth appointmentRoundWidth}.
       *
@@ -1644,7 +1648,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getAppointmentsReducedHeight appointmentsReducedHeight}.
       *
@@ -1668,7 +1672,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Sets a new value for property {@link #getAppointmentsVisualization appointmentsVisualization}.
       *
@@ -1695,7 +1699,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets a new value for property {@link #getBuiltInViews builtInViews}.
       *
@@ -1720,7 +1724,7 @@ object sapMPlanningCalendarMod {
     sBuiltInViews: js.Array[String]): this.type = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -1746,7 +1750,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Setter for custom sorting of appointments. If not used, the appointments will be sorted according to
       * their duration vertically. For example, the start time and order to the X axis won't change.
@@ -1756,7 +1760,7 @@ object sapMPlanningCalendarMod {
     def setCustomAppointmentsSorterCallback(fnSorter: appointmentsSorterCallback): this.type = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Sets a new value for property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -1779,7 +1783,7 @@ object sapMPlanningCalendarMod {
     iFirstDayOfWeek: int): this.type = js.native
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Sets a new value for property {@link #getGroupAppointmentsMode groupAppointmentsMode}.
       *
@@ -1826,7 +1830,7 @@ object sapMPlanningCalendarMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -1848,29 +1852,37 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * Set maximum date that can be shown and selected in the `PlanningCalendar`. This must be a JavaScript
-      * date object.
+      * Set maximum date that can be shown and selected in the `PlanningCalendar`. This must be a UI5Date or
+      * JavaScript Date object.
       *
       * @returns Reference to `this` for method chaining
       */
     def setMaxDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setMaxDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * Set minimum date that can be shown and selected in the `PlanningCalendar`. This must be a JavaScript
-      * date object.
+      * Set minimum date that can be shown and selected in the `PlanningCalendar`. This must be a UI5Date or
+      * JavaScript Date object.
       *
       * @returns Reference to `this` for method chaining
       */
     def setMinDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setMinDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getMultipleAppointmentsSelection multipleAppointmentsSelection}.
       *
@@ -1945,7 +1957,7 @@ object sapMPlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets a new value for property {@link #getShowDayNamesLine showDayNamesLine}.
       *
@@ -1964,7 +1976,7 @@ object sapMPlanningCalendarMod {
     bShowDayNamesLine: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getShowEmptyIntervalHeaders showEmptyIntervalHeaders}.
       *
@@ -2011,7 +2023,7 @@ object sapMPlanningCalendarMod {
     /**
       * Sets a new value for property {@link #getShowRowHeaders showRowHeaders}.
       *
-      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows}
+      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows }
       * is displayed.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -2027,7 +2039,7 @@ object sapMPlanningCalendarMod {
     bShowRowHeaders: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getShowWeekNumbers showWeekNumbers}.
       *
@@ -2118,12 +2130,195 @@ object sapMPlanningCalendarMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait PlanningCalendar$AppointmentSelectEventParameters extends StObject {
+    
+    /**
+      * The selected appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * The selected appointments in case a group appointment is selected.
+      */
+    var appointments: js.UndefOr[js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]] = js.undefined
+    
+    /**
+      * Gives the ID of the DOM element of the clicked appointment
+      */
+    var domRefId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If set, the appointment was selected using multiple selection (e.g. Shift + single mouse click), meaning
+      * more than the current appointment could be selected.
+      */
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
+  }
+  object PlanningCalendar$AppointmentSelectEventParameters {
+    
+    inline def apply(): PlanningCalendar$AppointmentSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendar$AppointmentSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendar$AppointmentSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setAppointments(value: js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentsUndefined: Self = StObject.set(x, "appointments", js.undefined)
+      
+      inline def setAppointmentsVarargs(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default*): Self = StObject.set(x, "appointments", js.Array(value*))
+      
+      inline def setDomRefId(value: String): Self = StObject.set(x, "domRefId", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefIdUndefined: Self = StObject.set(x, "domRefId", js.undefined)
+      
+      inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+      
+      inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendar$IntervalSelectEventParameters extends StObject {
+    
+    /**
+      * Interval end date as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Row of the selected interval.
+      */
+    var row: js.UndefOr[typings.openui5.sapMPlanningCalendarRowMod.default] = js.undefined
+    
+    /**
+      * Start date of the selected interval, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * If set, the selected interval is a subinterval.
+      */
+    var subInterval: js.UndefOr[Boolean] = js.undefined
+  }
+  object PlanningCalendar$IntervalSelectEventParameters {
+    
+    inline def apply(): PlanningCalendar$IntervalSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendar$IntervalSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendar$IntervalSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setRow(value: typings.openui5.sapMPlanningCalendarRowMod.default): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      
+      inline def setSubInterval(value: Boolean): Self = StObject.set(x, "subInterval", value.asInstanceOf[js.Any])
+      
+      inline def setSubIntervalUndefined: Self = StObject.set(x, "subInterval", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendar$RowHeaderClickEventParameters extends StObject {
+    
+    /**
+      * The ID of the `PlanningCalendarRowHeader` of the selected appointment.
+      *
+      * **Note:** Intended to be used as an easy way to get an ID of a `PlanningCalendarRowHeader`. Do NOT use
+      * for modification.
+      */
+    var headerId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The row user clicked on.
+      */
+    var row: js.UndefOr[typings.openui5.sapMPlanningCalendarRowMod.default] = js.undefined
+  }
+  object PlanningCalendar$RowHeaderClickEventParameters {
+    
+    inline def apply(): PlanningCalendar$RowHeaderClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendar$RowHeaderClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendar$RowHeaderClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
+      
+      inline def setRow(value: typings.openui5.sapMPlanningCalendarRowMod.default): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    }
+  }
+  
+  trait PlanningCalendar$RowSelectionChangeEventParameters extends StObject {
+    
+    /**
+      * Array of rows whose selection has changed.
+      */
+    var rows: js.UndefOr[js.Array[typings.openui5.sapMPlanningCalendarRowMod.default]] = js.undefined
+  }
+  object PlanningCalendar$RowSelectionChangeEventParameters {
+    
+    inline def apply(): PlanningCalendar$RowSelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PlanningCalendar$RowSelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanningCalendar$RowSelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setRows(value: js.Array[typings.openui5.sapMPlanningCalendarRowMod.default]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      
+      inline def setRowsVarargs(value: typings.openui5.sapMPlanningCalendarRowMod.default*): Self = StObject.set(x, "rows", js.Array(value*))
+    }
+  }
+  
+  trait PlanningCalendar$StartDateChangeEventParameters extends StObject
+  
+  trait PlanningCalendar$ViewChangeEventParameters extends StObject
+  
+  type PlanningCalendarAppointmentSelectEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$AppointmentSelectEventParameters]
+  
+  type PlanningCalendarAppointmentSelectEventParameters = PlanningCalendar$AppointmentSelectEventParameters
+  
+  type PlanningCalendarIntervalSelectEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$IntervalSelectEventParameters]
+  
+  type PlanningCalendarIntervalSelectEventParameters = PlanningCalendar$IntervalSelectEventParameters
+  
+  type PlanningCalendarRowHeaderClickEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowHeaderClickEventParameters]
+  
+  type PlanningCalendarRowHeaderClickEventParameters = PlanningCalendar$RowHeaderClickEventParameters
+  
+  type PlanningCalendarRowSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowSelectionChangeEventParameters]
+  
+  type PlanningCalendarRowSelectionChangeEventParameters = PlanningCalendar$RowSelectionChangeEventParameters
+  
   trait PlanningCalendarSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Determines the different possible sizes for appointments.
       */
@@ -2132,8 +2327,8 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Defines rounding of the width `CalendarAppoinment` **Note:** This property is applied, when the calendar
       * interval type is day and the view shows more than 20 days
@@ -2145,10 +2340,15 @@ object sapMPlanningCalendarMod {
     /**
       * Fired if an appointment is selected.
       */
-    var appointmentSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$AppointmentSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Determines whether the appointments that have only title without text are rendered with smaller height.
       *
@@ -2160,7 +2360,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Determines how the appointments are visualized depending on the used theme.
       */
@@ -2169,14 +2369,14 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute aria-labelledby).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Defines the list of predefined views as an array. The views should be specified by their keys.
       *
@@ -2191,7 +2391,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used.
@@ -2201,7 +2401,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * If set, the first day of the displayed week is this day. Valid values are 0 to 6 starting on Sunday.
       * If there is no valid value set, the default of the used locale is used.
@@ -2212,7 +2412,7 @@ object sapMPlanningCalendarMod {
     var firstDayOfWeek: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Defines the mode in which the overlapping appointments are displayed.
       *
@@ -2235,10 +2435,15 @@ object sapMPlanningCalendarMod {
     /**
       * Fired if an interval was selected in the calendar header or in the row.
       */
-    var intervalSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var intervalSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$IntervalSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Association to the `CalendarLegend` explaining the colors of the `Appointments`.
       *
@@ -2247,10 +2452,10 @@ object sapMPlanningCalendarMod {
     var legend: js.UndefOr[typings.openui5.sapUiUnifiedCalendarLegendMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Defines the maximum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
+      * UI5Date or JavaScript Date object.
       *
       * **Note:** If the `maxDate` is set to be before the current `minDate`, the `minDate` is set to the first
       * date of the month in which the `maxDate` belongs.
@@ -2260,10 +2465,10 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Defines the minimum date that can be displayed and selected in the `PlanningCalendar`. This must be a
-      * JavaScript date object.
+      * UI5Date or JavaScript Date object.
       *
       * **Note:** If the `minDate` is set to be after the current `maxDate`, the `maxDate` is set to the last
       * date of the month in which the `minDate` belongs.
@@ -2273,7 +2478,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Determines whether the selection of multiple appointments is enabled.
       *
@@ -2290,7 +2495,7 @@ object sapMPlanningCalendarMod {
     var noDataText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
       * is used.
@@ -2300,16 +2505,26 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Fires when a row header is clicked.
       */
-    var rowHeaderClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var rowHeaderClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowHeaderClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when row selection is changed.
       */
-    var rowSelectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var rowSelectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowSelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Rows of the `PlanningCalendar`.
@@ -2319,7 +2534,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * If set, the days are also represented in this calendar type. If not set, the dates are only represented
       * in the primary calendar type. Note: The second calendar type won't be represented in the DOM when this
@@ -2330,7 +2545,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Determines whether the day names are displayed in a separate line or inside the single days.
       */
@@ -2339,7 +2554,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Determines whether the space (at the top of the intervals), where the assigned interval headers appear,
       * should remain visible even when no interval headers are present in the visible time frame. If set to
@@ -2364,7 +2579,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows}
+      * Determines whether the column containing the headers of the {@link sap.m.PlanningCalendarRow PlanningCalendarRows }
       * is displayed.
       */
     var showRowHeaders: js.UndefOr[
@@ -2372,7 +2587,7 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Determines if the week numbers are displayed.
       */
@@ -2397,7 +2612,8 @@ object sapMPlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * Determines the start date of the row, as a JavaScript date object. The current date is used as default.
+      * Determines the start date of the row, as a UI5Date or JavaScript Date object. The current date is used
+      * as default.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2409,10 +2625,12 @@ object sapMPlanningCalendarMod {
       * in case when the `viewKey` property is changed, and as a result of which the view requires a change in
       * the `startDate` property.
       */
-    var startDateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var startDateChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines whether the header area will remain visible (fixed on top) when the rest of the content is
       * scrolled out of view.
@@ -2449,7 +2667,9 @@ object sapMPlanningCalendarMod {
     /**
       * Fired when the `viewKey` property was changed by user interaction.
       */
-    var viewChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var viewChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the key of the `PlanningCalendarView` used for the output.
@@ -2497,7 +2717,9 @@ object sapMPlanningCalendarMod {
       
       inline def setAppointmentRoundWidthUndefined: Self = StObject.set(x, "appointmentRoundWidth", js.undefined)
       
-      inline def setAppointmentSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentSelect", js.Any.fromFunction1(value))
+      inline def setAppointmentSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$AppointmentSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentSelect", js.Any.fromFunction1(value))
       
       inline def setAppointmentSelectUndefined: Self = StObject.set(x, "appointmentSelect", js.undefined)
       
@@ -2545,7 +2767,9 @@ object sapMPlanningCalendarMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setIntervalSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "intervalSelect", js.Any.fromFunction1(value))
+      inline def setIntervalSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$IntervalSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "intervalSelect", js.Any.fromFunction1(value))
       
       inline def setIntervalSelectUndefined: Self = StObject.set(x, "intervalSelect", js.undefined)
       
@@ -2575,11 +2799,15 @@ object sapMPlanningCalendarMod {
       
       inline def setPrimaryCalendarTypeUndefined: Self = StObject.set(x, "primaryCalendarType", js.undefined)
       
-      inline def setRowHeaderClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rowHeaderClick", js.Any.fromFunction1(value))
+      inline def setRowHeaderClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowHeaderClickEventParameters] => Unit
+      ): Self = StObject.set(x, "rowHeaderClick", js.Any.fromFunction1(value))
       
       inline def setRowHeaderClickUndefined: Self = StObject.set(x, "rowHeaderClick", js.undefined)
       
-      inline def setRowSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rowSelectionChange", js.Any.fromFunction1(value))
+      inline def setRowSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$RowSelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "rowSelectionChange", js.Any.fromFunction1(value))
       
       inline def setRowSelectionChangeUndefined: Self = StObject.set(x, "rowSelectionChange", js.undefined)
       
@@ -2631,7 +2859,7 @@ object sapMPlanningCalendarMod {
       
       inline def setStartDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
+      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
       
       inline def setStartDateChangeUndefined: Self = StObject.set(x, "startDateChange", js.undefined)
       
@@ -2649,7 +2877,7 @@ object sapMPlanningCalendarMod {
       
       inline def setToolbarContentVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "toolbarContent", js.Array(value*))
       
-      inline def setViewChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "viewChange", js.Any.fromFunction1(value))
+      inline def setViewChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "viewChange", js.Any.fromFunction1(value))
       
       inline def setViewChangeUndefined: Self = StObject.set(x, "viewChange", js.undefined)
       
@@ -2670,6 +2898,14 @@ object sapMPlanningCalendarMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type PlanningCalendarStartDateChangeEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$StartDateChangeEventParameters]
+  
+  type PlanningCalendarStartDateChangeEventParameters = PlanningCalendar$StartDateChangeEventParameters
+  
+  type PlanningCalendarViewChangeEvent = typings.openui5.sapUiBaseEventMod.default[PlanningCalendar$ViewChangeEventParameters]
+  
+  type PlanningCalendarViewChangeEventParameters = PlanningCalendar$ViewChangeEventParameters
   
   type appointmentsSorterCallback = js.Function2[
     /* appointment1 */ typings.openui5.sapUiUnifiedCalendarAppointmentMod.default, 

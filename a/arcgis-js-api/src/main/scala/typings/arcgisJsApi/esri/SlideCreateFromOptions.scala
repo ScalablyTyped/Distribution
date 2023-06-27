@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideCreateFromOptions extends StObject {
   
   /**
-    * Screenshot options to use.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
-    */
+  		 * Screenshot options to use.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
+  		 */
   var screenshot: js.UndefOr[SlideCreateFromOptionsScreenshot] = js.undefined
 }
 object SlideCreateFromOptions {

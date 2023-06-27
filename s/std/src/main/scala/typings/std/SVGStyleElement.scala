@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the SVG <style> element. */
+/**
+  * Corresponds to the SVG <style> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGStyleElement)
+  */
 @js.native
 trait SVGStyleElement
   extends StObject
@@ -25,6 +29,7 @@ trait SVGStyleElement
   /* standard dom */
   var disabled: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGStyleElement/media) */
   /* standard dom */
   var media: java.lang.String = js.native
   
@@ -39,10 +44,15 @@ trait SVGStyleElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGStyleElement/title) */
   /* standard dom */
   var title: java.lang.String = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGStyleElement/type)
+    */
   /* standard dom */
   var `type`: java.lang.String = js.native
 }

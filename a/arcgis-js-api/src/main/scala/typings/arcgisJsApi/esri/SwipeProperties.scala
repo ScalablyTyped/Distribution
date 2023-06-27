@@ -11,79 +11,81 @@ trait SwipeProperties
      with WidgetProperties {
   
   /**
-    * The direction the Swipe widget moves across the view.
-    *
-    * @default "horizontal"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#direction)
-    */
+  		 * The direction the Swipe widget moves across the view.
+  		 *
+  		 * @default "horizontal"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#direction)
+  		 */
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
-    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#disabled)
-    */
+  		 * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#disabled)
+  		 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The text that shows in a tooltip when hovering over the handle of the Swipe widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#dragLabel)
-    */
+  		 * The text that shows in a tooltip when hovering over the handle of the Swipe widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#dragLabel)
+  		 */
   var dragLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Swipe#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the left or top side of the Swipe widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#leadingLayers)
-    */
+  		 * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the left or top side of the Swipe widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#leadingLayers)
+  		 */
   var leadingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.undefined
   
   /**
-    * The position of the Swipe widget.
-    *
-    * @default 25
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#position)
-    */
+  		 * The position of the Swipe widget.
+  		 *
+  		 * @default 25
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#position)
+  		 */
   var position: js.UndefOr[Double] = js.undefined
   
   /**
-    * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the right or bottom side of the Swipe widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#trailingLayers)
-    */
+  		 * A collection of [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)s that will show on the right or bottom side of the Swipe widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#trailingLayers)
+  		 */
   var trailingLayers: js.UndefOr[CollectionProperties[LayerProperties]] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[SwipeViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[widgetsSwipeVisibleElements] = js.undefined
 }
 object SwipeProperties {

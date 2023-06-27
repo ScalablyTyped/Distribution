@@ -3,6 +3,7 @@ package typings.typescript.mod.server
 import typings.typescript.typescriptStrings.actionColonColoninvalidate
 import typings.typescript.typescriptStrings.actionColonColonpackageInstalled
 import typings.typescript.typescriptStrings.actionColonColonset
+import typings.typescript.typescriptStrings.actionColonColonwatchTypingLocations
 import typings.typescript.typescriptStrings.eventColonColonbeginInstallTypes
 import typings.typescript.typescriptStrings.eventColonColonendInstallTypes
 import typings.typescript.typescriptStrings.eventColonColoninitializationFailed
@@ -17,6 +18,8 @@ type ActionInvalidate = actionColonColoninvalidate
 type ActionPackageInstalled = actionColonColonpackageInstalled
 
 type ActionSet = actionColonColonset
+
+type ActionWatchTypingLocations = actionColonColonwatchTypingLocations
 
 type EventBeginInstallTypes = eventColonColonbeginInstallTypes
 

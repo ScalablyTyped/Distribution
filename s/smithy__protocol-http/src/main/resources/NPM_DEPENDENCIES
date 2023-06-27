@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@smithy/protocol-http" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@smithy/protocol-http" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

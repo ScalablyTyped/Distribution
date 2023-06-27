@@ -32,7 +32,7 @@ trait TitleOptions extends StObject {
     * In styled mode, the title style is given in the `.highcharts-title`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject | TitleStyleOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The title of the chart. To
@@ -95,7 +95,7 @@ object TitleOptions {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject | TitleStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

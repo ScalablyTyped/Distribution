@@ -21,6 +21,7 @@ object MediaRecorder {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaRecorder/isTypeSupported) */
   /* standard dom */
   inline def isTypeSupported(`type`: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 }

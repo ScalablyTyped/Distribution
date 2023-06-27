@@ -11,16 +11,16 @@ sealed trait FontEncoding extends StObject
 object FontEncoding extends StObject {
   
   /**
-    * Symbol encoding.
-    */
+  			 * Symbol encoding.
+  			 */
   @js.native
   sealed trait MSSymbol
     extends StObject
        with FontEncoding
   
   /**
-    * Unicode.
-    */
+  			 * Unicode.
+  			 */
   @js.native
   sealed trait Unicode
     extends StObject

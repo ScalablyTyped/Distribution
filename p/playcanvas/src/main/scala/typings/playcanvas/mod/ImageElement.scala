@@ -99,6 +99,8 @@ open class ImageElement protected () extends StObject {
   
   var _rect: Vec4 = js.native
   
+  def _removeMaterialAssetEvents(): Unit = js.native
+  
   var _renderable: ImageRenderable = js.native
   
   def _setStencil(stencilParams: Any): Unit = js.native

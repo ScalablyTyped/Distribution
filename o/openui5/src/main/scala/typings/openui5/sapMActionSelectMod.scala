@@ -138,8 +138,7 @@ object sapMActionSelectMod {
     vButton: ID): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getButtons
-      * buttons}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getButtons buttons}.
       */
     def getButtons(): js.Array[ID] = js.native
     

@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RampTitle extends StObject {
   
   /**
-    * The field name used in a visual variable of a renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
-    */
+  		 * The field name used in a visual variable of a renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
+  		 */
   var field: String
   
   /**
-    * If provided, the normalization field name used in a visual variable of a renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
-    */
+  		 * If provided, the normalization field name used in a visual variable of a renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
+  		 */
   var normField: String
   
   /**
-    * If `true`, the legend formats to display the field and normalization field as a ratio.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
-    */
+  		 * If `true`, the legend formats to display the field and normalization field as a ratio.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
+  		 */
   var ratio: Boolean
   
   /**
-    * If `true`, the legend formats to display the field and normalization field as a percentage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
-    */
+  		 * If `true`, the legend formats to display the field and normalization field as a percentage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
+  		 */
   var ratioPercent: Boolean
   
   /**
-    * If `true`, the legend formats to display the field and normalization field as a percentage of total.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
-    */
+  		 * If `true`, the legend formats to display the field and normalization field as a percentage of total.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RampTitle)
+  		 */
   var ratioPercentTotal: Boolean
 }
 object RampTitle {

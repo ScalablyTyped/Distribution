@@ -8,6 +8,7 @@ import typings.esbuildWasm.libBrowserMod.FormatMessagesOptions
 import typings.esbuildWasm.libBrowserMod.InitializeOptions
 import typings.esbuildWasm.libBrowserMod.Metafile
 import typings.esbuildWasm.libBrowserMod.PartialMessage
+import typings.esbuildWasm.libBrowserMod.SameShape
 import typings.esbuildWasm.libBrowserMod.TransformOptions
 import typings.esbuildWasm.libBrowserMod.TransformResult
 import org.scalablytyped.runtime.StObject
@@ -39,19 +40,16 @@ trait AnalyzeMetafile extends StObject {
     js.Promise[String]
   ]
   
-  def build(options: BuildOptions): js.Promise[BuildResult[BuildOptions]]
-  def build[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): js.Promise[BuildResult[SpecificOptions]]
+  def build[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildResult[T]]
   
-  def buildSync(options: BuildOptions): BuildResult[BuildOptions]
-  def buildSync[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): BuildResult[SpecificOptions]
+  def buildSync[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): BuildResult[T]
   @JSName("buildSync")
   var buildSync_Original: Fn0
   
   @JSName("build")
   var build_Original: FnCallOptions
   
-  def context(options: BuildOptions): js.Promise[BuildContext[BuildOptions]]
-  def context[T /* <: BuildOptions */](options: T): js.Promise[BuildContext[T]]
+  def context[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildContext[T]]
   @JSName("context")
   var context_Original: FnCall
   
@@ -76,29 +74,20 @@ trait AnalyzeMetafile extends StObject {
   @JSName("initialize")
   var initialize_Original: js.Function1[/* options */ InitializeOptions, js.Promise[Unit]]
   
-  def transform(input: String): js.Promise[TransformResult[TransformOptions]]
-  def transform(input: String, options: TransformOptions): js.Promise[TransformResult[TransformOptions]]
-  def transform(input: js.typedarray.Uint8Array): js.Promise[TransformResult[TransformOptions]]
-  def transform(input: js.typedarray.Uint8Array, options: TransformOptions): js.Promise[TransformResult[TransformOptions]]
-  def transform[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]]
-  def transform[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]]
+  def transform[T /* <: TransformOptions */](input: String): js.Promise[TransformResult[T]]
+  def transform[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]]
+  def transform[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[T]]
+  def transform[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]]
   
-  def transformSync(input: String): TransformResult[TransformOptions]
-  def transformSync(input: String, options: TransformOptions): TransformResult[TransformOptions]
-  def transformSync(input: js.typedarray.Uint8Array): TransformResult[TransformOptions]
-  def transformSync(input: js.typedarray.Uint8Array, options: TransformOptions): TransformResult[TransformOptions]
-  def transformSync[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): TransformResult[SpecificOptions]
+  def transformSync[T /* <: TransformOptions */](input: String): TransformResult[T]
+  def transformSync[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): TransformResult[T]
+  def transformSync[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): TransformResult[T]
+  def transformSync[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): TransformResult[T]
   @JSName("transformSync")
   var transformSync_Original: Fn1
-  @JSName("transformSync")
-  def transformSync_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): TransformResult[SpecificOptions]
   
   @JSName("transform")
   var transform_Original: FnCallInputOptions
-  @JSName("transform")
-  def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): js.Promise[TransformResult[SpecificOptions]]
-  @JSName("transform")
-  def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[SpecificOptions]]
   
   var version: String
 }

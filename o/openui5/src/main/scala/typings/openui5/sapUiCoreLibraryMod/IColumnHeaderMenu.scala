@@ -13,8 +13,8 @@ trait IColumnHeaderMenu extends StObject {
   var __implements__sap_ui_core_IColumnHeaderMenu: Boolean = js.native
   
   /**
-    * @SINCE 1.98.0
-    * @EXPERIMENTAL (since 1.98)
+    * @since 1.98.0
+    * @experimental (since 1.98)
     *
     * Returns the sap.ui.core.aria.HasPopup<\code> type of the menu.
     *
@@ -23,8 +23,8 @@ trait IColumnHeaderMenu extends StObject {
   def getAriaHasPopupType(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
   
   /**
-    * @SINCE 1.98
-    * @EXPERIMENTAL (since 1.98)
+    * @since 1.98
+    * @experimental (since 1.98)
     *
     * Opens the menu using the column header.
     */

@@ -12,8 +12,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsIntegerMod extends Shortcu
   val default: IsInteger = js.native
   
   /**
-    * @SINCE 1.81
-    * @EXPERIMENTAL - 1.81
+    * @since 1.81
+    * @experimental - 1.81
     *
     * Validates if the provided value is an integer or binding string.
     */

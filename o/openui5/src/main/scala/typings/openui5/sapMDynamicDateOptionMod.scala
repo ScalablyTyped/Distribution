@@ -124,7 +124,8 @@ object sapMDynamicDateOptionMod {
     
     /**
       * Creates the option's value help UI. Mainly used for custom scenarios where getValueHelpUITypes is not
-      * enough to define the UI.
+      * enough to define the UI. In custom options, you can create different controls that are used by the user
+      * to input data via interaction.
       *
       * @returns An array with the option's value help UI controls
       */
@@ -136,7 +137,7 @@ object sapMDynamicDateOptionMod {
       /**
       * A callback invoked when any of the created controls updates its value
       */
-    fnControlsUpdated: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnControlsUpdated: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
@@ -158,7 +159,8 @@ object sapMDynamicDateOptionMod {
     
     /**
       * Provides the order index of the option's group. Used for grouping within the options list inside a DynamicDateRange's
-      * popup. Standard options are arranged in 6 groups - from 1 to 6.
+      * popup. Standard options are arranged in 6 groups - from 1 to 6. 1 - Single Dates 2 - Date Ranges 3 -
+      * Weeks 4 - Months 5 - Quarters 6 - Years
       *
       * @returns A group index
       */
@@ -206,8 +208,8 @@ object sapMDynamicDateOptionMod {
     /**
       * Defines the UI types of the option. They are used to create predefined UI for the DynamicDateRange's
       * value help dialog corresponding to this option. The types are DynamicDateValueHelpUIType instances. Their
-      * possible values are "date", "daterange", "month", "int". The created UI consists of Calendar or Input
-      * controls.
+      * possible values are "date", "datetime", "daterange", "month", "int". The created UI consists of Calendar
+      * or Input controls.
       *
       * @returns An array with the option's UI types
       */

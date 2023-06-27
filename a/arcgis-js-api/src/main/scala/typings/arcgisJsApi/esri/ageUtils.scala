@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Provides utility functions for generating [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions intended for use in an [age renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html)
-  */
+	 * Provides utility functions for generating [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions intended for use in an [age renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer).
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html)
+	 */
 trait ageUtils extends StObject {
   
   /**
-    * Returns an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression for visualizing the age of a feature based on a given start time and end time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
-    */
+  		 * Returns an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression for visualizing the age of a feature based on a given start time and end time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
+  		 */
   def getAgeExpressions(params: ageUtilsGetAgeExpressionsParams): AgeExpressionsResult
 }
 object ageUtils {

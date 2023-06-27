@@ -20,6 +20,10 @@ open class RenderTarget protected () extends StObject {
     * resolve after rendering to this RT (see {@link RenderTarget#resolve}). Defaults to true.
     * @param {import('./texture.js').Texture} [options.colorBuffer] - The texture that this render
     * target will treat as a rendering surface.
+    * @param {import('./texture.js').Texture[]} [options.colorBuffers] - The textures that this
+    * render target will treat as a rendering surfaces. If this option is set, the colorBuffer
+    * option is ignored. This option can be used only when {@link GraphicsDevice#supportsMrt} is
+    * true.
     * @param {boolean} [options.depth] - If set to true, depth buffer will be created. Defaults to
     * true. Ignored if depthBuffer is defined.
     * @param {import('./texture.js').Texture} [options.depthBuffer] - The texture that this render
@@ -67,20 +71,31 @@ open class RenderTarget protected () extends StObject {
     */
   def this(options: AutoResolve, args: Any*) = this()
   
-  var _colorBuffer: Any = js.native
+  /** @type {import('./texture.js').Texture} */
+  var _colorBuffer: Texture = js.native
   
+  /** @type {import('./texture.js').Texture[]} */
+  var _colorBuffers: js.Array[Texture] = js.native
+  
+  /** @type {boolean} */
   var _depth: Boolean = js.native
   
+  /** @type {import('./texture.js').Texture} */
   var _depthBuffer: Texture = js.native
   
-  var _device: Any = js.native
+  /** @type {import('./graphics-device.js').GraphicsDevice} */
+  var _device: GraphicsDevice = js.native
   
+  /** @type {number} */
   var _face: Double = js.native
   
-  var _samples: Any = js.native
+  /** @type {number} */
+  var _samples: Double = js.native
   
+  /** @type {boolean} */
   var _stencil: Boolean = js.native
   
+  /** @type {boolean} */
   var autoResolve: Boolean = js.native
   
   /**
@@ -153,7 +168,16 @@ open class RenderTarget protected () extends StObject {
     */
   def face: Double = js.native
   
+  /** @type {boolean} */
   var flipY: Boolean = js.native
+  
+  /**
+    * Accessor for multiple render target color buffers.
+    *
+    * @param {*} index - Index of the color buffer to get.
+    * @returns {import('./texture.js').Texture} - Color buffer at the specified index.
+    */
+  def getColorBuffer(index: Any): Texture = js.native
   
   /**
     * Height of the render target in pixels.
@@ -182,7 +206,8 @@ open class RenderTarget protected () extends StObject {
     */
   def loseContext(): Unit = js.native
   
-  var name: Any = js.native
+  /** @type {string} */
+  var name: String = js.native
   
   /**
     * If samples > 1, resolves the anti-aliased render target (WebGL2 only). When you're rendering
@@ -216,6 +241,8 @@ open class RenderTarget protected () extends StObject {
     * @type {boolean}
     */
   def stencil: Boolean = js.native
+  
+  def validateMrt(): Unit = js.native
   
   /**
     * Width of the render target in pixels.

@@ -12,20 +12,20 @@ object esriSymbolsCimsymbolMod {
   @JSImport("esri/symbols/CIMSymbol", JSImport.Namespace)
   @js.native
   /**
-    * CIMSymbols are high quality, scalable, multi-layer vector symbols for features and graphics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html)
-    */
+  		 * CIMSymbols are high quality, scalable, multi-layer vector symbols for features and graphics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html)
+  		 */
   open class ^ ()
     extends StObject
        with CIMSymbol {
     def this(properties: CIMSymbolProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

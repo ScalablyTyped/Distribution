@@ -14,7 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Calendar")
 @js.native
-open class Calendar ()
+/**
+  * _Holds reminders and events._
+  * @see https://docs.scriptable.app/calendar
+  */
+/* private */ open class Calendar ()
   extends StObject
      with typings.scriptableIos.Calendar {
   

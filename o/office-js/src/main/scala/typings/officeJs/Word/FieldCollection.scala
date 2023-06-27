@@ -25,6 +25,16 @@ trait FieldCollection
   var context_FieldCollection: RequestContext = js.native
   
   /**
+    * Gets the Field object collection including the specified types of fields.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param types Required. An array of field types.
+    */
+  def getByTypes(types: js.Array[FieldType]): FieldCollection = js.native
+  
+  /**
     * Gets the first field in this collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks

@@ -10,10 +10,11 @@ trait Construct extends StObject {
   
   /**
     * Whether the construct, when in a `ConstructRecord`, precedes over existing
-    * constructs for the same character code when merged
+    * constructs for the same character code when merged.
+    *
     * The default is that new constructs precede over existing ones.
     */
-  var add: js.UndefOr[before | after] = js.undefined
+  var add: js.UndefOr[after | before] = js.undefined
   
   /**
     * Concrete constructs cannot be interrupted by more containers.
@@ -52,18 +53,20 @@ trait Construct extends StObject {
   
   /**
     * Name of the construct, used to toggle constructs off.
+    *
     * Named constructs must not be `partial`.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this construct represents a partial construct.
+    *
     * Partial constructs must not have a `name`.
     */
   var partial: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Guard whether the previous character can come before the construct
+    * Guard whether the previous character can come before the construct.
     */
   var previous: js.UndefOr[Previous] = js.undefined
   
@@ -99,7 +102,13 @@ trait Construct extends StObject {
     */
   var resolveTo: js.UndefOr[Resolver] = js.undefined
   
+  /**
+    * Set up a state machine to handle character codes streaming in.
+    */
   def tokenize(effects: Effects, ok: State, nok: State): State
+  /**
+    * Set up a state machine to handle character codes streaming in.
+    */
   @JSName("tokenize")
   var tokenize_Original: Tokenizer
 }
@@ -113,7 +122,7 @@ object Construct {
   @scala.inline
   implicit open class MutableBuilder[Self <: Construct] (val x: Self) extends AnyVal {
     
-    inline def setAdd(value: before | after): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: after | before): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     

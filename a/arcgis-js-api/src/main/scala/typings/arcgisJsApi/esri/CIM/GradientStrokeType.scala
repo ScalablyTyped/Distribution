@@ -11,16 +11,16 @@ sealed trait GradientStrokeType extends StObject
 object GradientStrokeType extends StObject {
   
   /**
-    * Continuous gradients vary continuously along the color change with no distinct boundary between the colors.
-    */
+  			 * Continuous gradients vary continuously along the color change with no distinct boundary between the colors.
+  			 */
   @js.native
   sealed trait Continuous
     extends StObject
        with GradientStrokeType
   
   /**
-    * Discrete gradient types have distinct lines of separation between each color.
-    */
+  			 * Discrete gradient types have distinct lines of separation between each color.
+  			 */
   @js.native
   sealed trait Discrete
     extends StObject

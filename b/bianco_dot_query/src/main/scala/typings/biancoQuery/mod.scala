@@ -133,6 +133,7 @@ import typings.biancoQuery.biancoQueryStrings.ruby
 import typings.biancoQuery.biancoQueryStrings.s
 import typings.biancoQuery.biancoQueryStrings.samp
 import typings.biancoQuery.biancoQueryStrings.script
+import typings.biancoQuery.biancoQueryStrings.search
 import typings.biancoQuery.biancoQueryStrings.section
 import typings.biancoQuery.biancoQueryStrings.select
 import typings.biancoQuery.biancoQueryStrings.set
@@ -709,6 +710,9 @@ object mod {
   
   inline def default_script(selectors: script): js.Array[SVGScriptElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGScriptElement]]
   inline def default_script(selectors: script, scope: Scope): js.Array[SVGScriptElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[SVGScriptElement]]
+  
+  inline def default_search(selectors: search): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  inline def default_search(selectors: search, scope: Scope): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
   inline def default_section(selectors: section): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   inline def default_section(selectors: section, scope: Scope): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]

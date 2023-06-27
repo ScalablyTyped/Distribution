@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`9`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -137,13 +136,13 @@ object sapUiUx3DataSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSetItem` itself
       */
@@ -168,7 +167,7 @@ object sapUiUx3DataSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachSelected(
       /**
@@ -179,7 +178,7 @@ object sapUiUx3DataSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.DataSetItem` itself
       */
@@ -197,13 +196,13 @@ object sapUiUx3DataSetItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataSetItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -211,17 +210,19 @@ object sapUiUx3DataSetItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selected selected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelected(): this.type = js.native
-    def fireSelected(/**
+    def fireSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `9`): this.type = js.native
+    mParameters: DataSetItem$SelectedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCheckable checkable}.
@@ -332,6 +333,33 @@ object sapUiUx3DataSetItemMod {
     sTitle: String): this.type = js.native
   }
   
+  trait DataSetItem$SelectedEventParameters extends StObject {
+    
+    /**
+      * Id of the selected Datset item
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object DataSetItem$SelectedEventParameters {
+    
+    inline def apply(): DataSetItem$SelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataSetItem$SelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetItem$SelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    }
+  }
+  
+  type DataSetItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[DataSetItem$SelectedEventParameters]
+  
+  type DataSetItemSelectedEventParameters = DataSetItem$SelectedEventParameters
+  
   trait DataSetItemSettings
     extends StObject
        with ElementSettings {
@@ -351,7 +379,12 @@ object sapUiUx3DataSetItemMod {
     /**
       * Event Fired when Datset item is selected.
       */
-    var selected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSetItem$SelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * subtitle
@@ -381,7 +414,9 @@ object sapUiUx3DataSetItemMod {
       
       inline def setIconSrcUndefined: Self = StObject.set(x, "iconSrc", js.undefined)
       
-      inline def setSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction1(value))
+      inline def setSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataSetItem$SelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "selected", js.Any.fromFunction1(value))
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       

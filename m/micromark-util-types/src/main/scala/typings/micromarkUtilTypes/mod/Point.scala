@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Point extends StObject {
   
   /**
-    *   Position in a string chunk (or `-1` when pointing to a numeric chunk)
+    * Position in a string chunk (or `-1` when pointing to a numeric chunk).
     */
   var _bufferIndex: Double
   
   /**
-    *   Position in a list of chunks
+    * Position in a list of chunks.
     */
   var _index: Double
   
   /**
-    *   1-indexed column number
+    * 1-indexed column number.
     */
   var column: Double
   
   /**
-    *   1-indexed line number
+    * 1-indexed line number.
     */
   var line: Double
   
   /**
-    *   0-indexed position in the document
+    * 0-indexed position in the document.
     */
   var offset: Double
 }

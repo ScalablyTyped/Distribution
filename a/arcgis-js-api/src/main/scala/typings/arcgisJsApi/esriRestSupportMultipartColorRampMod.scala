@@ -12,20 +12,20 @@ object esriRestSupportMultipartColorRampMod {
   @JSImport("esri/rest/support/MultipartColorRamp", JSImport.Namespace)
   @js.native
   /**
-    * Creates a multipart color ramp to combine multiple continuous color ramps for use in raster renderers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html)
-    */
+  		 * Creates a multipart color ramp to combine multiple continuous color ramps for use in raster renderers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html)
+  		 */
   open class ^ ()
     extends StObject
        with MultipartColorRamp {
     def this(properties: MultipartColorRampProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

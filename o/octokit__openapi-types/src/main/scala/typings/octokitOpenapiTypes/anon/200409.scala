@@ -9,14 +9,14 @@ trait `200409` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonBillingemail
   
-  var `409`: Content36
+  var `409`: Content41
   
   /** @description Validation failed */
-  var `422`: Content499
+  var `422`: Content585
 }
 object `200409` {
   
-  inline def apply(`200`: ContentApplicationjsonBillingemail, `409`: Content36, `422`: Content499): `200409` = {
+  inline def apply(`200`: ContentApplicationjsonBillingemail, `409`: Content41, `422`: Content585): `200409` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("409")(`409`.asInstanceOf[js.Any])
@@ -29,8 +29,8 @@ object `200409` {
     
     inline def set200(value: ContentApplicationjsonBillingemail): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set409(value: Content36): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    inline def set409(value: Content41): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content499): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content585): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

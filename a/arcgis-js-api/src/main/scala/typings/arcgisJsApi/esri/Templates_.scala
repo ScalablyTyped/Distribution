@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Templates_ extends StObject {
   
   /**
-    * Includes the primary PopupTemplate suggested for the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
-    */
+  		 * Includes the primary PopupTemplate suggested for the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
+  		 */
   var primaryTemplate: Template
   
   /**
-    * Includes secondary PopupTemplates that may be applied to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
-    */
+  		 * Includes secondary PopupTemplates that may be applied to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#Templates)
+  		 */
   var secondaryTemplates: js.Array[Template]
 }
 object Templates_ {

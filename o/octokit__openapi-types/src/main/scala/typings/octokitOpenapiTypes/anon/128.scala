@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `128` extends StObject {
   
-  /**
-    * @description The permission to grant the collaborator. **Only valid on organization-owned repositories.** We accept the following permissions to be set: `pull`, `triage`, `push`, `maintain`, `admin` and you can also specify a custom repository role name, if the owning organization has defined any.
-    * @default push
-    */
-  var permission: js.UndefOr[String] = js.undefined
+  var path: Org
+  
+  var query: js.UndefOr[Resolution] = js.undefined
 }
 object `128` {
   
-  inline def apply(): `128` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: Org): `128` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`128`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `128`] (val x: Self) extends AnyVal {
     
-    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setQuery(value: Resolution): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

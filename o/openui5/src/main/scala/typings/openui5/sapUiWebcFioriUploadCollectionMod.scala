@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DataTransfer
-import typings.openui5.anon.SelectedItems
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -10,6 +7,8 @@ import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiWebcFioriLibraryMod.IUploadCollectionItem
 import typings.openui5.sapUiWebcMainLibraryMod.ListMode
+import typings.std.DataTransfer
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -167,13 +166,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit]
     ): this.type = js.native
     def attachDrop(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -202,7 +201,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit]
     ): this.type = js.native
     def attachDrop(
       /**
@@ -213,7 +212,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -238,13 +237,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -273,7 +272,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
@@ -284,7 +283,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -307,13 +306,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -340,7 +339,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -351,7 +350,7 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollection`
       * itself
@@ -384,13 +383,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit]
     ): this.type = js.native
     def detachDrop(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionDropEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -408,13 +407,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit]
     ): this.type = js.native
     def detachItemDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionItemDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -433,13 +432,13 @@ object sapUiWebcFioriUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -447,43 +446,49 @@ object sapUiWebcFioriUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:drop drop} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireDrop(): this.type = js.native
-    def fireDrop(/**
+    def fireDrop(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DataTransfer): this.type = js.native
+    mParameters: UploadCollection$DropEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemDelete itemDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemDelete(): this.type = js.native
-    def fireItemDelete(/**
+    def fireItemDelete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: UploadCollection$ItemDeleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedItems): this.type = js.native
+    mParameters: UploadCollection$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -602,8 +607,8 @@ object sapUiWebcFioriUploadCollectionMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.fiori.IUploadCollectionItem` in the aggregation {@link #getItems
-      * items}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.fiori.IUploadCollectionItem` in the aggregation {@link #getItems items}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -836,6 +841,89 @@ object sapUiWebcFioriUploadCollectionMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait UploadCollection$DropEventParameters extends StObject {
+    
+    /**
+      * The `drop` event operation data.
+      */
+    var dataTransfer: js.UndefOr[DataTransfer] = js.undefined
+  }
+  object UploadCollection$DropEventParameters {
+    
+    inline def apply(): UploadCollection$DropEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$DropEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$DropEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDataTransfer(value: DataTransfer): Self = StObject.set(x, "dataTransfer", value.asInstanceOf[js.Any])
+      
+      inline def setDataTransferUndefined: Self = StObject.set(x, "dataTransfer", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$ItemDeleteEventParameters extends StObject {
+    
+    /**
+      * The `sap.ui.webc.fiori.UploadCollectionItem` which was renamed.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object UploadCollection$ItemDeleteEventParameters {
+    
+    inline def apply(): UploadCollection$ItemDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$ItemDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$ItemDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * An array of the selected items.
+      */
+    var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object UploadCollection$SelectionChangeEventParameters {
+    
+    inline def apply(): UploadCollection$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  type UploadCollectionDropEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$DropEventParameters]
+  
+  type UploadCollectionDropEventParameters = UploadCollection$DropEventParameters
+  
+  type UploadCollectionItemDeleteEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$ItemDeleteEventParameters]
+  
+  type UploadCollectionItemDeleteEventParameters = UploadCollection$ItemDeleteEventParameters
+  
+  type UploadCollectionSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters]
+  
+  type UploadCollectionSelectionChangeEventParameters = UploadCollection$SelectionChangeEventParameters
+  
   trait UploadCollectionSettings
     extends StObject
        with ControlSettings {
@@ -851,7 +939,12 @@ object sapUiWebcFioriUploadCollectionMod {
       *  **Note:** The `drop` event is fired only when elements are dropped within the drag and drop overlay
       * and ignored for the other parts of the `sap.ui.webc.fiori.UploadCollection`.
       */
-    var drop: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var drop: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$DropEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the `sap.ui.webc.fiori.UploadCollection` header.
@@ -887,7 +980,12 @@ object sapUiWebcFioriUploadCollectionMod {
       *  **Note:** A Delete button is displayed on each item, when the `sap.ui.webc.fiori.UploadCollection` `mode`
       * property is set to `Delete`.
       */
-    var itemDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$ItemDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of the `sap.ui.webc.fiori.UploadCollection`.
@@ -925,7 +1023,12 @@ object sapUiWebcFioriUploadCollectionMod {
     /**
       * Fired when selection is changed by user interaction in `SingleSelect` and `MultiSelect` modes.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the width of the control
@@ -948,7 +1051,9 @@ object sapUiWebcFioriUploadCollectionMod {
       
       inline def setAccessibleNameUndefined: Self = StObject.set(x, "accessibleName", js.undefined)
       
-      inline def setDrop(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$DropEventParameters] => Unit
+      ): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
       inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
@@ -968,7 +1073,9 @@ object sapUiWebcFioriUploadCollectionMod {
       
       inline def setHideDragOverlayUndefined: Self = StObject.set(x, "hideDragOverlay", js.undefined)
       
-      inline def setItemDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
+      inline def setItemDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$ItemDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
       
       inline def setItemDeleteUndefined: Self = StObject.set(x, "itemDelete", js.undefined)
       
@@ -994,7 +1101,9 @@ object sapUiWebcFioriUploadCollectionMod {
       
       inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

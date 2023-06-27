@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/requester-browser-xhr" : "4.17.0"
+      "@algolia/requester-browser-xhr" : "4.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/requester-browser-xhr" : "4.17.0"
+      "@algolia/requester-browser-xhr" : "4.18.0"
     }
   ],
   "compile-devDependencies" : [

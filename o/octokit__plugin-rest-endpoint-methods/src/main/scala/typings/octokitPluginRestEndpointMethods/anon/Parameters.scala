@@ -4,7 +4,6 @@ import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethods
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
@@ -15,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Parameters extends StObject {
   
   var parameters: RequestParameters & (Omit[
-    (ToOctokitParameters[
+    ToOctokitParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/runners/{runner_id}/labels']['post'] */ js.Any
-    ]) & RequiredPreview[Any], 
+    ], 
     baseUrl | headers | mediaType
   ])
   
@@ -29,9 +28,9 @@ object Parameters {
   
   inline def apply(
     parameters: RequestParameters & (Omit[
-      (ToOctokitParameters[
+      ToOctokitParameters[
         /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/runners/{runner_id}/labels']['post'] */ js.Any
-      ]) & RequiredPreview[Any], 
+      ], 
       baseUrl | headers | mediaType
     ]),
     response: ExtractOctokitResponse[
@@ -47,9 +46,9 @@ object Parameters {
     
     inline def setParameters(
       value: RequestParameters & (Omit[
-          (ToOctokitParameters[
+          ToOctokitParameters[
             /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/runners/{runner_id}/labels']['post'] */ js.Any
-          ]) & RequiredPreview[Any], 
+          ], 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])

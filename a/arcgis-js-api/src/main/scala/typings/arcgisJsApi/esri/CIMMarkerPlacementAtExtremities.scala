@@ -13,45 +13,45 @@ trait CIMMarkerPlacementAtExtremities
      with MarkerPlacement {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * A value indicating whether to angle the marker to the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Which ends of the line a marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * Which ends of the line a marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var extremityPlacement: js.UndefOr[Both | JustBegin | JustEnd | None] = js.undefined
   
   /**
-    * The offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * The offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the ends of a line that the marker will be placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * The distance from the ends of a line that the marker will be placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAtExtremities)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtExtremities

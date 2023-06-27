@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@mapbox/tiny-sdf" : "2.0.5"
+      "@mapbox/tiny-sdf" : "2.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@mapbox/tiny-sdf" : "2.0.5"
+      "@mapbox/tiny-sdf" : "2.0.6"
     }
   ],
   "compile-devDependencies" : [

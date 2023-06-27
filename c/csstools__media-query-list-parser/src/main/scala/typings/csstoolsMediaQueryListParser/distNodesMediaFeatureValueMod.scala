@@ -10,6 +10,7 @@ import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserInts.`-1
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,12 +55,20 @@ object distNodesMediaFeatureValueMod {
     
     var value: ComponentValue | js.Array[ComponentValue] = js.native
     
-    def walk(
+    def walk[T /* <: Record[String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaFeatureValueWalkerEntry, 
+          /* entry */ NodeMediaFeatureValueWalkerEntry[T], 
           /* index */ Double | String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaFeatureValueWalkerEntry[T], 
+          /* index */ Double | String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -78,7 +87,7 @@ object distNodesMediaFeatureValueMod {
   
   inline def parseMediaFeatureValue(componentValues: js.Array[ComponentValue]): MediaFeatureValue | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMediaFeatureValue")(componentValues.asInstanceOf[js.Any]).asInstanceOf[MediaFeatureValue | `false`]
   
-  type MediaFeatureValueWalkerEntry = ComponentValue | js.Array[ComponentValue]
+  type MediaFeatureValueWalkerEntry = ComponentValue
   
   type MediaFeatureValueWalkerParent = ContainerNode | MediaFeatureValue
 }

@@ -14,20 +14,20 @@ trait PublishingInfo
      with Accessor {
   
   /**
-    * Layer's publishing status while the layer is being published to the portal.
-    *
-    * @default "unknown"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PublishingInfo.html#status)
-    */
+  		 * Layer's publishing status while the layer is being published to the portal.
+  		 *
+  		 * @default "unknown"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PublishingInfo.html#status)
+  		 */
   val status: unknown | unavailable | publishing | published = js.native
   
   /**
-    * Indicates if the layer's status is still being updated.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PublishingInfo.html#updating)
-    */
+  		 * Indicates if the layer's status is still being updated.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PublishingInfo.html#updating)
+  		 */
   val updating: Boolean = js.native
 }

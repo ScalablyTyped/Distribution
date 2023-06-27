@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewScreenshot extends StObject {
   
   /**
-    * The raw RGBA image data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#Screenshot)
-    */
+  		 * The raw RGBA image data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#Screenshot)
+  		 */
   var data: ImageData
   
   /**
-    * A data url representing the screenshot.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#Screenshot)
-    */
+  		 * A data url representing the screenshot.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#Screenshot)
+  		 */
   var dataUrl: String
 }
 object SceneViewScreenshot {

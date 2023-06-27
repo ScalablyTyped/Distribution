@@ -11,24 +11,24 @@ sealed trait Simple3DLineStyle extends StObject
 object Simple3DLineStyle extends StObject {
   
   /**
-    * Stroke draws flat upon the surface.
-    */
+  			 * Stroke draws flat upon the surface.
+  			 */
   @js.native
   sealed trait Strip
     extends StObject
        with Simple3DLineStyle
   
   /**
-    * Stroke draws as a tube where the width determines the diameter of the tube.
-    */
+  			 * Stroke draws as a tube where the width determines the diameter of the tube.
+  			 */
   @js.native
   sealed trait Tube
     extends StObject
        with Simple3DLineStyle
   
   /**
-    * Stroke is vertically oriented where Width determines the height of the wall.
-    */
+  			 * Stroke is vertically oriented where Width determines the height of the wall.
+  			 */
   @js.native
   sealed trait Wall
     extends StObject

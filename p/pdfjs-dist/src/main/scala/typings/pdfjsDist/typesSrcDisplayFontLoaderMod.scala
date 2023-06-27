@@ -6,6 +6,7 @@ import typings.pdfjsDist.anon.StyleElement
 import typings.std.Document
 import typings.std.FontFace
 import typings.std.HTMLStyleElement
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,11 +60,17 @@ object typesSrcDisplayFontLoaderMod {
     
     def isSyncFontLoadingSupported: Any = js.native
     
+    def loadSystemFont(info: Any): js.Promise[Unit] = js.native
+    
     var loadTestFontId: js.UndefOr[Double] = js.native
     
     var loadingRequests: js.UndefOr[js.Array[Any]] = js.native
     
-    var nativeFontFaces: js.Array[Any] = js.native
+    var nativeFontFaces: Set[Any] = js.native
+    
+    /* private */ var `private`: Any = js.native
+    
+    def removeNativeFontFace(nativeFontFace: Any): Unit = js.native
     
     var styleElement: HTMLStyleElement | Null = js.native
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "strip-ansi" : "7.0.1"
+      "strip-ansi" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "strip-ansi" : "7.0.1"
+      "strip-ansi" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

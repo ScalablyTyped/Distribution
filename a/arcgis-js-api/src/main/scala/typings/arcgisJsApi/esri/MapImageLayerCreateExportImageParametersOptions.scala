@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapImageLayerCreateExportImageParametersOptions extends StObject {
   
   /**
-    * The pixel ratio to apply to the dpi of the exported image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
-    */
+  		 * The pixel ratio to apply to the dpi of the exported image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
+  		 */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The rotation in degrees of the exported image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
-    */
+  		 * The rotation in degrees of the exported image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The time instant or time extent of content to render.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
-    */
+  		 * The time instant or time extent of content to render.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#createExportImageParameters)
+  		 */
   var timeExtent: js.UndefOr[Any] = js.undefined
 }
 object MapImageLayerCreateExportImageParametersOptions {

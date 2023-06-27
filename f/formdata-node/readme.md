@@ -1,7 +1,7 @@
 
 # Scala.js typings for formdata-node
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Spec-compliant FormData implementation for Node.js

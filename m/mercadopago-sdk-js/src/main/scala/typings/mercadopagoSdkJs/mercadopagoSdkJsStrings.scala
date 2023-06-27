@@ -1,6 +1,7 @@
 package typings.mercadopagoSdkJs
 
 import typings.mercadopagoSdkJs.bricks.BrickTypes
+import typings.mercadopagoSdkJs.bricks.EntityType
 import typings.mercadopagoSdkJs.cardform.AVAILABLE_PROCESSING_MODE
 import typings.mercadopagoSdkJs.fields.FieldEvent
 import typings.mercadopagoSdkJs.fields.FieldName
@@ -23,6 +24,12 @@ object mercadopagoSdkJsStrings {
   inline def aggregator: aggregator = "aggregator".asInstanceOf[aggregator]
   
   @js.native
+  sealed trait association
+    extends StObject
+       with EntityType
+  inline def association: association = "association".asInstanceOf[association]
+  
+  @js.native
   sealed trait binChange
     extends StObject
        with FieldEvent
@@ -37,6 +44,10 @@ object mercadopagoSdkJsStrings {
   @js.native
   sealed trait bootstrap extends StObject
   inline def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
+  
+  @js.native
+  sealed trait buy extends StObject
+  inline def buy: buy = "buy".asInstanceOf[buy]
   
   @js.native
   sealed trait cardNumber
@@ -55,6 +66,18 @@ object mercadopagoSdkJsStrings {
     extends StObject
        with FieldEvent
   inline def change: change = "change".asInstanceOf[change]
+  
+  @js.native
+  sealed trait convenience extends StObject
+  inline def convenience: convenience = "convenience".asInstanceOf[convenience]
+  
+  @js.native
+  sealed trait convenience_all extends StObject
+  inline def convenience_all: convenience_all = "convenience_all".asInstanceOf[convenience_all]
+  
+  @js.native
+  sealed trait convenience_credits extends StObject
+  inline def convenience_credits: convenience_credits = "convenience_credits".asInstanceOf[convenience_credits]
   
   @js.native
   sealed trait critical extends StObject
@@ -114,6 +137,12 @@ object mercadopagoSdkJsStrings {
   inline def gateway: gateway = "gateway".asInstanceOf[gateway]
   
   @js.native
+  sealed trait individual
+    extends StObject
+       with EntityType
+  inline def individual: individual = "individual".asInstanceOf[individual]
+  
+  @js.native
   sealed trait invalid_length extends StObject
   inline def invalid_length: invalid_length = "invalid_length".asInstanceOf[invalid_length]
   
@@ -136,10 +165,18 @@ object mercadopagoSdkJsStrings {
   inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
+  sealed trait pay extends StObject
+  inline def pay: pay = "pay".asInstanceOf[pay]
+  
+  @js.native
   sealed trait payment
     extends StObject
        with BrickTypes
   inline def payment: payment = "payment".asInstanceOf[payment]
+  
+  @js.native
+  sealed trait practicality extends StObject
+  inline def practicality: practicality = "practicality".asInstanceOf[practicality]
   
   @js.native
   sealed trait ready
@@ -154,8 +191,20 @@ object mercadopagoSdkJsStrings {
   inline def securityCode: securityCode = "securityCode".asInstanceOf[securityCode]
   
   @js.native
+  sealed trait security_details extends StObject
+  inline def security_details: security_details = "security_details".asInstanceOf[security_details]
+  
+  @js.native
+  sealed trait security_safety extends StObject
+  inline def security_safety: security_safety = "security_safety".asInstanceOf[security_safety]
+  
+  @js.native
   sealed trait short extends StObject
   inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait smart_option extends StObject
+  inline def smart_option: smart_option = "smart_option".asInstanceOf[smart_option]
   
   @js.native
   sealed trait statusScreen

@@ -11,10 +11,10 @@ object esriViews3dEnvironmentSnowyWeatherMod {
   @JSImport("esri/views/3d/environment/SnowyWeather", JSImport.Namespace)
   @js.native
   /**
-    * The SnowyWeather class allows you to change the weather conditions in the scene to snowy weather.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SnowyWeather.html)
-    */
+  		 * The SnowyWeather class allows you to change the weather conditions in the scene to snowy weather.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SnowyWeather.html)
+  		 */
   open class ^ ()
     extends StObject
        with SnowyWeather {

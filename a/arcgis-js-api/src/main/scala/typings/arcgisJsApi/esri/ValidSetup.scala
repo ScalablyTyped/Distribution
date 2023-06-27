@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidSetup extends StObject {
   
   /**
-    * An array of error messages for the missing requirements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#ValidSetup)
-    */
+  		 * An array of error messages for the missing requirements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#ValidSetup)
+  		 */
   var issues: js.Array[String]
   
   /**
-    * Is `true` if the requirements are met.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#ValidSetup)
-    */
+  		 * Is `true` if the requirements are met.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#ValidSetup)
+  		 */
   var status: Boolean
 }
 object ValidSetup {

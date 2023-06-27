@@ -7,7 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties and methods for manipulating the options, layout, and presentation of <input> elements. */
+/**
+  * Provides special properties and methods for manipulating the options, layout, and presentation of <input> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement)
+  */
 @js.native
 trait HTMLInputElement
   extends StObject
@@ -39,14 +43,22 @@ trait HTMLInputElement
   /* standard dom */
   var alt: java.lang.String = js.native
   
-  /** Specifies whether autocomplete is applied to an editable text field. */
+  /**
+    * Specifies whether autocomplete is applied to an editable text field.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/autocomplete)
+    */
   /* standard dom */
   var autocomplete: java.lang.String = js.native
   
   /* standard dom */
   var capture: java.lang.String = js.native
   
-  /** Returns whether a form will validate when it is submitted, without having to submit it. */
+  /**
+    * Returns whether a form will validate when it is submitted, without having to submit it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/checkValidity)
+    */
   /* standard dom */
   def checkValidity(): scala.Boolean = js.native
   
@@ -68,7 +80,11 @@ trait HTMLInputElement
   /* standard dom */
   var disabled: scala.Boolean = js.native
   
-  /** Returns a FileList object on a file type input object. */
+  /**
+    * Returns a FileList object on a file type input object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/files)
+    */
   /* standard dom */
   var files: FileList | Null = js.native
   
@@ -76,38 +92,71 @@ trait HTMLInputElement
   /* standard dom */
   val form: HTMLFormElement | Null = js.native
   
-  /** Overrides the action attribute (where the data on a form is sent) on the parent form element. */
+  /**
+    * Overrides the action attribute (where the data on a form is sent) on the parent form element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/formAction)
+    */
   /* standard dom */
   var formAction: java.lang.String = js.native
   
-  /** Used to override the encoding (formEnctype attribute) specified on the form element. */
+  /**
+    * Used to override the encoding (formEnctype attribute) specified on the form element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/formEnctype)
+    */
   /* standard dom */
   var formEnctype: java.lang.String = js.native
   
-  /** Overrides the submit method attribute previously specified on a form element. */
+  /**
+    * Overrides the submit method attribute previously specified on a form element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/formMethod)
+    */
   /* standard dom */
   var formMethod: java.lang.String = js.native
   
-  /** Overrides any validation or required attributes on a form or form elements to allow it to be submitted without validation. This can be used to create a "save draft"-type submit option. */
+  /**
+    * Overrides any validation or required attributes on a form or form elements to allow it to be submitted without validation. This can be used to create a "save draft"-type submit option.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/formNoValidate)
+    */
   /* standard dom */
   var formNoValidate: scala.Boolean = js.native
   
-  /** Overrides the target attribute on a form element. */
+  /**
+    * Overrides the target attribute on a form element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/formTarget)
+    */
   /* standard dom */
   var formTarget: java.lang.String = js.native
   
-  /** Sets or retrieves the height of the object. */
+  /**
+    * Sets or retrieves the height of the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/height)
+    */
   /* standard dom */
   var height: Double = js.native
   
-  /** When set, overrides the rendering of checkbox controls so that the current value is not visible. */
+  /**
+    * When set, overrides the rendering of checkbox controls so that the current value is not visible.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/indeterminate)
+    */
   /* standard dom */
   var indeterminate: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/labels) */
   /* standard dom */
   val labels: NodeListOf[HTMLLabelElement] | Null = js.native
   
-  /** Specifies the ID of a pre-defined datalist of options for an input element. */
+  /**
+    * Specifies the ID of a pre-defined datalist of options for an input element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/list)
+    */
   /* standard dom */
   val list: HTMLDataListElement | Null = js.native
   
@@ -126,7 +175,11 @@ trait HTMLInputElement
   /* standard dom */
   var minLength: Double = js.native
   
-  /** Sets or retrieves the Boolean value indicating whether multiple items can be selected from a list. */
+  /**
+    * Sets or retrieves the Boolean value indicating whether multiple items can be selected from a list.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/multiple)
+    */
   /* standard dom */
   var multiple: scala.Boolean = js.native
   
@@ -134,11 +187,19 @@ trait HTMLInputElement
   /* standard dom */
   var name: java.lang.String = js.native
   
-  /** Gets or sets a string containing a regular expression that the user's input must match. */
+  /**
+    * Gets or sets a string containing a regular expression that the user's input must match.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/pattern)
+    */
   /* standard dom */
   var pattern: java.lang.String = js.native
   
-  /** Gets or sets a text string that is displayed in an input field as a hint or prompt to users as the format or type of information they need to enter.The text appears in an input field until the user puts focus on the field. */
+  /**
+    * Gets or sets a text string that is displayed in an input field as a hint or prompt to users as the format or type of information they need to enter.The text appears in an input field until the user puts focus on the field.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/placeholder)
+    */
   /* standard dom */
   var placeholder: java.lang.String = js.native
   
@@ -156,17 +217,27 @@ trait HTMLInputElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/reportValidity) */
   /* standard dom */
   def reportValidity(): scala.Boolean = js.native
   
-  /** When present, marks an element that can't be submitted without a value. */
+  /**
+    * When present, marks an element that can't be submitted without a value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/required)
+    */
   /* standard dom */
   var required: scala.Boolean = js.native
   
-  /** Makes the selection equal to the current object. */
+  /**
+    * Makes the selection equal to the current object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select)
+    */
   /* standard dom */
   def select(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/selectionDirection) */
   /* standard dom */
   var selectionDirection: forward | backward | none | Null = js.native
   
@@ -181,10 +252,13 @@ trait HTMLInputElement
   /**
     * Sets a custom error message that is displayed when a form is submitted.
     * @param error Sets a custom error message that is displayed when a form is submitted.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/setCustomValidity)
     */
   /* standard dom */
   def setCustomValidity(error: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/setRangeText) */
   /* standard dom */
   def setRangeText(replacement: java.lang.String): Unit = js.native
   /* standard dom */
@@ -196,6 +270,8 @@ trait HTMLInputElement
     * @param start The offset into the text field for the start of the selection.
     * @param end The offset into the text field for the end of the selection.
     * @param direction The direction in which the selection is performed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/setSelectionRange)
     */
   /* standard dom */
   def setSelectionRange(): Unit = js.native
@@ -207,6 +283,7 @@ trait HTMLInputElement
   def setSelectionRange(start: Null, end: Double, direction: forward | backward | none): Unit = js.native
   def setSelectionRange(start: Null, end: Null, direction: forward | backward | none): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/showPicker) */
   /* standard dom */
   def showPicker(): Unit = js.native
   
@@ -224,6 +301,8 @@ trait HTMLInputElement
   /**
     * Decrements a range input control's value by the value given by the Step attribute. If the optional parameter is used, it will decrement the input control's step value multiplied by the parameter's value.
     * @param n Value to decrement the value by.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/stepDown)
     */
   /* standard dom */
   def stepDown(): Unit = js.native
@@ -232,6 +311,8 @@ trait HTMLInputElement
   /**
     * Increments a range input control's value by the value given by the Step attribute. If the optional parameter is used, will increment the input control's value by that value.
     * @param n Value to increment the value by.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/stepUp)
     */
   /* standard dom */
   def stepUp(): Unit = js.native
@@ -248,11 +329,19 @@ trait HTMLInputElement
   /* standard dom */
   var useMap: java.lang.String = js.native
   
-  /** Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting. */
+  /**
+    * Returns the error message that would be displayed if the user submits the form, or an empty string if no error message. It also triggers the standard error message, such as "this is a required field". The result is that the user sees validation messages without actually submitting.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/validationMessage)
+    */
   /* standard dom */
   val validationMessage: java.lang.String = js.native
   
-  /** Returns a  ValidityState object that represents the validity states of an element. */
+  /**
+    * Returns a  ValidityState object that represents the validity states of an element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/validity)
+    */
   /* standard dom */
   val validity: ValidityState = js.native
   
@@ -268,17 +357,27 @@ trait HTMLInputElement
   /* standard dom */
   var valueAsNumber: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/webkitEntries) */
   /* standard dom */
   val webkitEntries: js.Array[FileSystemEntry] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/webkitdirectory) */
   /* standard dom */
   var webkitdirectory: scala.Boolean = js.native
   
-  /** Sets or retrieves the width of the object. */
+  /**
+    * Sets or retrieves the width of the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/width)
+    */
   /* standard dom */
   var width: Double = js.native
   
-  /** Returns whether an element will successfully validate based on forms validation rules and constraints. */
+  /**
+    * Returns whether an element will successfully validate based on forms validation rules and constraints.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/willValidate)
+    */
   /* standard dom */
   val willValidate: scala.Boolean = js.native
 }

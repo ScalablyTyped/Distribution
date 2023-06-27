@@ -21,42 +21,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterFunctionProperties extends StObject {
   
   /**
-    * The arguments for the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
-    */
+  		 * The arguments for the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionArguments)
+  		 */
   var functionArguments: js.UndefOr[Any] = js.undefined
   
   /**
-    * The raster function name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
-    */
+  		 * The raster function name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#functionName)
+  		 */
   var functionName: js.UndefOr[String] = js.undefined
   
   /**
-    * Defines the pixel type of the output image.
-    *
-    * @default unknown
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#outputPixelType)
-    */
+  		 * Defines the pixel type of the output image.
+  		 *
+  		 * @default unknown
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#outputPixelType)
+  		 */
   var outputPixelType: js.UndefOr[
     c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown
   ] = js.undefined
   
   /**
-    * Property where Raster Function template is passed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#rasterFunctionDefinition)
-    */
+  		 * Property where Raster Function template is passed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#rasterFunctionDefinition)
+  		 */
   var rasterFunctionDefinition: js.UndefOr[Any] = js.undefined
   
   /**
-    * The variable name for the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
-    */
+  		 * The variable name for the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
+  		 */
   var variableName: js.UndefOr[String] = js.undefined
 }
 object RasterFunctionProperties {

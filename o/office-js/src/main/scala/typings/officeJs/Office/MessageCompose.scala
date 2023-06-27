@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
   * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
+  * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item | Object Model} page.
   *
   * Parent interfaces:
   *
@@ -212,7 +212,7 @@ trait MessageCompose
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Item object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.7]
@@ -237,7 +237,7 @@ trait MessageCompose
     * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Item object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.7]
@@ -434,6 +434,20 @@ trait MessageCompose
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     */
   var conversationId: String = js.native
+  
+  /**
+    * Gets or sets the delayed delivery date and time of a message.
+    *
+    * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    */
+  var delayDeliveryTime: DelayDeliveryTime = js.native
   
   /**
     * Disables the Outlook client signature.
@@ -791,17 +805,23 @@ trait MessageCompose
   ): Unit = js.native
   
   /**
-    * Gets the properties of an appointment or message in a shared folder.
+    * Gets the properties of an appointment or message in a shared folder or shared mailbox.
     *
-    * For more information around using this API, see the
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+    * For more information around using this API, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * @remarks
-    * [Api set: Mailbox 1.8]
-    *
     * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+    *
+    * a. **Delegate access/Shared folders**
     *
     * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
     *
@@ -809,29 +829,39 @@ trait MessageCompose
     *
     * 3. The delegate opens the draft from the shared folder then continues composing.
     *
+    * b. **Shared mailbox (applies to Outlook on Windows only)**
+    *
+    * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+    *
+    * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+    *
+    * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+    *
     * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
     * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    *
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+    *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
     */
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
-    * Gets the properties of an appointment or message in a shared folder.
+    * Gets the properties of an appointment or message in a shared folder or shared mailbox.
     *
-    * For more information around using this API, see the
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-    *
-    * **Note**: This method is not supported in Outlook on iOS or Android.
+    * For more information around using this API, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
     *
     * @remarks
-    * [Api set: Mailbox 1.8]
+    * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    *
+    * **Note**: This method is not supported in Outlook on iOS or Android. 
     *
     * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+    *
+    * a. **Delegate access/Shared folders**
     *
     * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
     *
@@ -839,17 +869,21 @@ trait MessageCompose
     *
     * 3. The delegate opens the draft from the shared folder then continues composing.
     *
+    * b. **Shared mailbox (applies to Outlook on Windows only)**
+    *
+    * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+    *
+    * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+    *
+    * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+    *
     * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
     * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-    *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-    *
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+    *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
     */
   def getSharedPropertiesAsync(
     options: AsyncContextOptions,
@@ -1043,7 +1077,7 @@ trait MessageCompose
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Item object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.7]
@@ -1062,7 +1096,7 @@ trait MessageCompose
     * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
     *
     * For supported events, refer to the Item object model
-    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
+    * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events | events section}.
     *
     * @remarks
     * [Api set: Mailbox 1.7]
@@ -1152,6 +1186,23 @@ trait MessageCompose
     *                 type `Office.AsyncResult`.
     */
   def saveAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
+  
+  /**
+    * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of a message.
+    * 
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+    *
+    * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+    *
+    * To learn more about how to manage sensitivity labels in your add-in, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
+    */
+  var sensitivityLabel: SensitivityLabel = js.native
   
   /**
     * Gets the ID of the series that an instance belongs to.

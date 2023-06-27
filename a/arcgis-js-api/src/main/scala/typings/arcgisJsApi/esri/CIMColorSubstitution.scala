@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMColorSubstitution extends StObject {
   
   /**
-    * The new color that will replace the old color.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMColorSubstitution)
-    */
+  		 * The new color that will replace the old color.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMColorSubstitution)
+  		 */
   var newColor: js.Array[Double]
   
   /**
-    * The old color (the color that will be substituted).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMColorSubstitution)
-    */
+  		 * The old color (the color that will be substituted).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMColorSubstitution)
+  		 */
   var oldColor: js.Array[Double]
 }
 object CIMColorSubstitution {

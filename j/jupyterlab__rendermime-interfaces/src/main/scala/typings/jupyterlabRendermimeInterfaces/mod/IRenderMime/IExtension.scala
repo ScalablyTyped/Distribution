@@ -17,6 +17,15 @@ trait IExtension extends StObject {
   val dataType: js.UndefOr[string | json] = js.undefined
   
   /**
+    * Extension description.
+    *
+    * #### Notes
+    * This can be used to provide user documentation on the feature
+    * brought by the extension.
+    */
+  val description: js.UndefOr[String] = js.undefined
+  
+  /**
     * The options used to open a document with the renderer factory.
     */
   val documentWidgetFactoryOptions: js.UndefOr[IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]] = js.undefined
@@ -65,6 +74,10 @@ object IExtension {
     inline def setDataType(value: string | json): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDocumentWidgetFactoryOptions(value: IDocumentWidgetFactoryOptions | js.Array[IDocumentWidgetFactoryOptions]): Self = StObject.set(x, "documentWidgetFactoryOptions", value.asInstanceOf[js.Any])
     

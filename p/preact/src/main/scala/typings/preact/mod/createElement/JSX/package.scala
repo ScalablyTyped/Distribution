@@ -53,6 +53,8 @@ type LibraryManagedAttributes[Component, Props] = Props
 
 type MouseEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedMouseEvent[Target]]
 
+type PictureInPictureEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedPictureInPictureEvent[Target]]
+
 type PointerEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedPointerEvent[Target]]
 
 type Signalish[T] = T | typings.preact.srcJsxMod.JSXInternal.SignalLike[T]

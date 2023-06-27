@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-position
 
-Typings are for version 4.0.3
+Typings are for version 4.0.4
 
 ## Library description:
 unist utility to get the position of a node

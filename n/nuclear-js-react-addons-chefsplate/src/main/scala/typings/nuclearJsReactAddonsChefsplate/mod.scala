@@ -88,6 +88,7 @@ object mod {
     *   });
     *
     * Also supports the decorator pattern:
+    * ```ts
     *   @provideReactor({
     *     foo: React.PropTypes.string
     *   })
@@ -96,6 +97,7 @@ object mod {
     *       return <div/>;
     *     }
     *   }
+    * ```
     *
     * @param [Component] Component to wrap
     * @param [additionalContextTypes] Additional contextTypes to add

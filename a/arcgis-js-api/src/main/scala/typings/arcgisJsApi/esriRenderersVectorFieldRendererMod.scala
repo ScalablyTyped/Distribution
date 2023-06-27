@@ -12,20 +12,20 @@ object esriRenderersVectorFieldRendererMod {
   @JSImport("esri/renderers/VectorFieldRenderer", JSImport.Namespace)
   @js.native
   /**
-    * The VectorFieldRenderer allows you to display your raster data with vector symbols.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html)
-    */
+  		 * The VectorFieldRenderer allows you to display your raster data with vector symbols.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html)
+  		 */
   open class ^ ()
     extends StObject
        with VectorFieldRenderer {
     def this(properties: VectorFieldRendererProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

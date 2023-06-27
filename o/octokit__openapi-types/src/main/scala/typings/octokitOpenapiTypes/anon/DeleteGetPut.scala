@@ -10,7 +10,7 @@ trait DeleteGetPut extends StObject {
     * Delete a thread subscription
     * @description Mutes all future notifications for a conversation until you comment on the thread or get an **@mention**. If you are watching the repository of the thread, you will still receive notifications. To ignore future notifications for a repository you are watching, use the [Set a thread subscription](https://docs.github.com/rest/reference/activity#set-a-thread-subscription) endpoint and set `ignore` to `true`.
     */
-  var delete: Responses44
+  var delete: Responses50
   
   /**
     * Get a thread subscription for the authenticated user
@@ -32,7 +32,7 @@ trait DeleteGetPut extends StObject {
 }
 object DeleteGetPut {
   
-  inline def apply(delete: Responses44, get: Responses200304401403, put: ParametersPathThreadidRequestBody): DeleteGetPut = {
+  inline def apply(delete: Responses50, get: Responses200304401403, put: ParametersPathThreadidRequestBody): DeleteGetPut = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGetPut]
   }
@@ -40,7 +40,7 @@ object DeleteGetPut {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteGetPut] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses44): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses50): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     inline def setGet(value: Responses200304401403): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
   val default: AnnotationHelper = js.native
   
   /**
-    * @SINCE 1.27.0
+    * @since 1.27.0
     *
     * A collection of methods which help to consume
     * OData V4 annotations in XML template views. Every context argument must belong to a `sap.ui.model.odata.ODataMetaModel`
@@ -33,7 +33,7 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
   trait AnnotationHelper extends StObject {
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Creates a property setting (which is either a constant value or a binding info object) from the given
       * parts and from the optional root formatter function. Each part can have one of the following types:
@@ -56,8 +56,8 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
       * Note: The root formatter function should not rely on its `this` value because it depends on how the function
       * is called.
       *
-      * Note: A single data binding expression can be given directly to {@link sap.ui.base.ManagedObject#applySettings
-      * applySettings}, no need to call this function first.
+      * Note: A single data binding expression can be given directly to {@link sap.ui.base.ManagedObject#applySettings applySettings},
+      * no need to call this function first.
       *
       * Example:
       * ```javascript
@@ -81,8 +81,7 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
       * ```
       *
       *
-      * @returns constant value or binding info object for a property as expected by {@link sap.ui.base.ManagedObject#applySettings
-      * applySettings}
+      * @returns constant value or binding info object for a property as expected by {@link sap.ui.base.ManagedObject#applySettings applySettings}
       */
     def createPropertySetting(/**
       * array of parts
@@ -191,8 +190,8 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
       * 	 - "14.5.11 Expression edm:NavigationPropertyPath"
       * 	 - "14.5.12 Expression edm:Path"
       * 	 - "14.5.13 Expression edm:PropertyPath"  It returns a binding expression for a navigation path
-      * 			in an OData model, starting at an entity. Currently supports navigation properties. Term casts and annotations
-      * 			of navigation properties terminate the navigation path.
+      *     in an OData model, starting at an entity. Currently supports navigation properties. Term casts and annotations
+      *     of navigation properties terminate the navigation path.
       *
       * Examples:
       * ```javascript
@@ -295,14 +294,13 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
       */
     def gotoEntityType(
       /**
-      * a context which must point to the qualified name of an entity type; the context's model must be an {@link
-      * sap.ui.model.odata.ODataMetaModel}
+      * a context which must point to the qualified name of an entity type; the context's model must be an {@link sap.ui.model.odata.ODataMetaModel}
       */
     oContext: typings.openui5.sapUiModelContextMod.default
     ): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.29.1
+      * @since 1.29.1
       *
       * Helper function for a `template:with` instruction that goes to the function import with the name which
       * `oContext` points at.
@@ -336,9 +334,9 @@ object sapUiModelOdataAnnotationHelperMod extends Shortcut {
       * 	 - "14.5.11 Expression edm:NavigationPropertyPath"
       * 	 - "14.5.12 Expression edm:Path"
       * 	 - "14.5.13 Expression edm:PropertyPath"  It returns the information whether the navigation path
-      * 			ends with an association end with multiplicity "*". It throws an error if the navigation path has an
-      * 			association end with multiplicity "*" which is not the last one. Currently supports navigation properties.
-      * 			Term casts and annotations of navigation properties terminate the navigation path.
+      *     ends with an association end with multiplicity "*". It throws an error if the navigation path has an
+      *     association end with multiplicity "*" which is not the last one. Currently supports navigation properties.
+      *     Term casts and annotations of navigation properties terminate the navigation path.
       *
       * Examples:
       * ```javascript

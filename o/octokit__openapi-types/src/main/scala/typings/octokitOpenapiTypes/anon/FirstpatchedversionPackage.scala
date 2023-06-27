@@ -9,7 +9,7 @@ trait FirstpatchedversionPackage extends StObject {
   @JSName("package")
   var _package: EcosystemString
   
-  var first_patched_version: `467` | Null
+  var first_patched_version: `545` | Null
   
   var severity: String
   
@@ -26,7 +26,7 @@ object FirstpatchedversionPackage {
   @scala.inline
   implicit open class MutableBuilder[Self <: FirstpatchedversionPackage] (val x: Self) extends AnyVal {
     
-    inline def setFirst_patched_version(value: `467`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
+    inline def setFirst_patched_version(value: `545`): Self = StObject.set(x, "first_patched_version", value.asInstanceOf[js.Any])
     
     inline def setFirst_patched_versionNull: Self = StObject.set(x, "first_patched_version", null)
     

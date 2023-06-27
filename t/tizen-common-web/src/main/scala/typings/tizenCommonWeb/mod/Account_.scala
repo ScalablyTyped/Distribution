@@ -19,10 +19,10 @@ open class Account_ protected () extends StObject {
     *
     * @param successCallback Callback method that is invoked when an asynchronous call completes successfully.
     * @param errorCallback Callback method that is invoked when an error occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type NotFoundError, if account ID is null.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type NotFoundError, if account ID is null.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getExtendedData(key: String): String = js.native
   def getExtendedData(successCallback: AccountExtendedDataArraySuccessCallback): Unit = js.native
@@ -58,8 +58,8 @@ open class Account_ protected () extends StObject {
     * @param key Key of the extended data.
     * @param value Value of the extended data.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type NotFoundError, if account ID is null.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type NotFoundError, if account ID is null.
     */
   def setExtendedData(key: String, value: String): Unit = js.native
   

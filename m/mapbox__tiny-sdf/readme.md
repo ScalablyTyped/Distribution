@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox__tiny-sdf
 
-Typings are for version 2.0.5
+Typings are for version 2.0.6
 
 ## Library description:
 Browser-side SDF font generator

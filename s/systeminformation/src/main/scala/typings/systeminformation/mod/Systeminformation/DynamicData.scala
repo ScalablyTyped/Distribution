@@ -24,15 +24,15 @@ trait DynamicData extends StObject {
   
   var mem: MemData
   
-  var networkConnections: NetworkConnectionsData
+  var networkConnections: js.Array[NetworkConnectionsData]
   
-  var networkStats: NetworkStatsData
+  var networkStats: js.Array[NetworkStatsData]
   
   var node: String
   
-  var processes: ProcessesData
+  var processes: js.Array[ProcessesData]
   
-  var services: ServicesData
+  var services: js.Array[ServicesData]
   
   var time: TimeData
   
@@ -54,11 +54,11 @@ object DynamicData {
     fsStats: FsStatsData,
     inetLatency: Double,
     mem: MemData,
-    networkConnections: NetworkConnectionsData,
-    networkStats: NetworkStatsData,
+    networkConnections: js.Array[NetworkConnectionsData],
+    networkStats: js.Array[NetworkStatsData],
     node: String,
-    processes: ProcessesData,
-    services: ServicesData,
+    processes: js.Array[ProcessesData],
+    services: js.Array[ServicesData],
     time: TimeData,
     users: js.Array[UserData],
     v8: String,
@@ -89,15 +89,23 @@ object DynamicData {
     
     inline def setMem(value: MemData): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
-    inline def setNetworkConnections(value: NetworkConnectionsData): Self = StObject.set(x, "networkConnections", value.asInstanceOf[js.Any])
+    inline def setNetworkConnections(value: js.Array[NetworkConnectionsData]): Self = StObject.set(x, "networkConnections", value.asInstanceOf[js.Any])
     
-    inline def setNetworkStats(value: NetworkStatsData): Self = StObject.set(x, "networkStats", value.asInstanceOf[js.Any])
+    inline def setNetworkConnectionsVarargs(value: NetworkConnectionsData*): Self = StObject.set(x, "networkConnections", js.Array(value*))
+    
+    inline def setNetworkStats(value: js.Array[NetworkStatsData]): Self = StObject.set(x, "networkStats", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkStatsVarargs(value: NetworkStatsData*): Self = StObject.set(x, "networkStats", js.Array(value*))
     
     inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    inline def setProcesses(value: ProcessesData): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
+    inline def setProcesses(value: js.Array[ProcessesData]): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
     
-    inline def setServices(value: ServicesData): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setProcessesVarargs(value: ProcessesData*): Self = StObject.set(x, "processes", js.Array(value*))
+    
+    inline def setServices(value: js.Array[ServicesData]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    
+    inline def setServicesVarargs(value: ServicesData*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setTime(value: TimeData): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

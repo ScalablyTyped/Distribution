@@ -141,13 +141,13 @@ object sapUiWebcFioriProductSwitchItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ProductSwitchItem`
       * itself
@@ -174,7 +174,7 @@ object sapUiWebcFioriProductSwitchItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -185,7 +185,7 @@ object sapUiWebcFioriProductSwitchItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ProductSwitchItem`
       * itself
@@ -204,13 +204,13 @@ object sapUiWebcFioriProductSwitchItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -218,7 +218,7 @@ object sapUiWebcFioriProductSwitchItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -401,6 +401,12 @@ object sapUiWebcFioriProductSwitchItemMod {
     sTitleText: String): this.type = js.native
   }
   
+  trait ProductSwitchItem$ClickEventParameters extends StObject
+  
+  type ProductSwitchItemClickEvent = typings.openui5.sapUiBaseEventMod.default[ProductSwitchItem$ClickEventParameters]
+  
+  type ProductSwitchItemClickEventParameters = ProductSwitchItem$ClickEventParameters
+  
   trait ProductSwitchItemSettings
     extends StObject
        with ControlSettings {
@@ -409,7 +415,9 @@ object sapUiWebcFioriProductSwitchItemMod {
       * Fired when the `sap.ui.webc.fiori.ProductSwitchItem` is activated either with a click/tap or by using
       * the Enter or Space key.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the icon to be displayed as a graphical element within the component.
@@ -461,7 +469,7 @@ object sapUiWebcFioriProductSwitchItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ProductSwitchItemSettings] (val x: Self) extends AnyVal {
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/cancelable" : "1.0.0-pre.41"
+      "@esfx/cancelable" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/cancelable" : "1.0.0-pre.41"
+      "@esfx/cancelable" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

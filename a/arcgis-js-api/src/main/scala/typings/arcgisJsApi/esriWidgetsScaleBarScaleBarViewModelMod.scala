@@ -11,10 +11,10 @@ object esriWidgetsScaleBarScaleBarViewModelMod {
   @JSImport("esri/widgets/ScaleBar/ScaleBarViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ScaleBar](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html)
-    */
+  		 * Provides the logic for the [ScaleBar](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ScaleBarViewModel {

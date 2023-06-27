@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerInclusionMemberDefinition extends StObject {
   
   /**
-    * The global ID of the specific instance of the named type to be included in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionMemberDefinition)
-    */
+  		 * The global ID of the specific instance of the named type to be included in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#LayerInclusionMemberDefinition)
+  		 */
   var id: String
 }
 object LayerInclusionMemberDefinition {

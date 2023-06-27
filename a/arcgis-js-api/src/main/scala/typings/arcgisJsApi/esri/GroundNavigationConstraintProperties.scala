@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroundNavigationConstraintProperties extends StObject {
   
   /**
-    * The type of the constraint.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
-    */
+  		 * The type of the constraint.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
+  		 */
   var `type`: js.UndefOr[`stay-above` | none_] = js.undefined
 }
 object GroundNavigationConstraintProperties {

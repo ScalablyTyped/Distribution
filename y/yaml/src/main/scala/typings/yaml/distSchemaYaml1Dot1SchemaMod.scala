@@ -10,5 +10,5 @@ object distSchemaYaml1Dot1SchemaMod {
   
   @JSImport("yaml/dist/schema/yaml-1.1/schema", "schema")
   @js.native
-  val schema: js.Array[ScalarTag | CollectionTag] = js.native
+  val schema: js.Array[CollectionTag | ScalarTag] = js.native
 }

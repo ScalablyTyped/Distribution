@@ -15,12 +15,12 @@ trait GPUExtent3DDict extends StObject {
   var depthOrArrayLayers: js.UndefOr[GPUIntegerCoordinate] = js.undefined
   
   /**
-    * The height of the extent
+    * The height of the extent.
     */
   var height: js.UndefOr[GPUIntegerCoordinate] = js.undefined
   
   /**
-    * The width of the extent
+    * The width of the extent.
     */
   var width: GPUIntegerCoordinate
 }

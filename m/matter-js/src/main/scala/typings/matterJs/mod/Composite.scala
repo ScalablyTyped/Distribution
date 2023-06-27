@@ -13,8 +13,6 @@ open class Composite () extends StObject {
     * To add or remove bodies you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
     * If you wish to recursively find all descendants, you should use the `Composite.allBodies` method.
     *
-    * @property bodies
-    * @type {Body[]}
     * @default []
     */
   var bodies: js.Array[Body] = js.native
@@ -24,8 +22,6 @@ open class Composite () extends StObject {
     * To add or remove composites you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
     * If you wish to recursively find all descendants, you should use the `Composite.allComposites` method.
     *
-    * @property composites
-    * @type {Composite[]}
     * @default []
     */
   var composites: js.Array[Composite] = js.native
@@ -35,8 +31,6 @@ open class Composite () extends StObject {
     * To add or remove constraints you should use `Composite.add` and `Composite.remove` methods rather than directly modifying this property.
     * If you wish to recursively find all descendants, you should use the `Composite.allConstraints` method.
     *
-    * @property constraints
-    * @type {Constraint[]}
     * @default []
     */
   var constraints: js.Array[Constraint] = js.native
@@ -44,8 +38,6 @@ open class Composite () extends StObject {
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
     *
-    * @property id
-    * @type {number}
     */
   var id: Double = js.native
   
@@ -53,8 +45,6 @@ open class Composite () extends StObject {
     * A flag that specifies whether the composite has been modified during the current step.
     * This is automatically managed when bodies, constraints or composites are added or removed.
     *
-    * @property isModified
-    * @type {boolean}
     * @default false
     */
   var isModified: Boolean = js.native
@@ -62,8 +52,6 @@ open class Composite () extends StObject {
   /**
     * An arbitrary `String` name to help the user identify and manage composites.
     *
-    * @property label
-    * @type {string}
     * @default "Composite"
     */
   var label: String = js.native
@@ -71,8 +59,6 @@ open class Composite () extends StObject {
   /**
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
     *
-    * @property parent
-    * @type {Composite|null}
     * @default null
     */
   var parent: Composite | Null = js.native
@@ -80,16 +66,12 @@ open class Composite () extends StObject {
   /**
     * An object reserved for storing plugin-specific properties.
     *
-    * @property plugin
-    * @type {Plugin}
     */
   var plugin: Plugin = js.native
   
   /**
     * A `String` denoting the type of object.
     *
-    * @property type
-    * @type {string}
     * @default "composite"
     * @readOnly
     */
@@ -189,13 +171,19 @@ object Composite {
     */
   inline def rebase(composite: Composite): Composite = ^.asInstanceOf[js.Dynamic].applyDynamic("rebase")(composite.asInstanceOf[js.Any]).asInstanceOf[Composite]
   
+  inline def remove(composite: Composite, `object`: js.Array[Body | Composite | Constraint | MouseConstraint]): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def remove(
+    composite: Composite,
+    `object`: js.Array[Body | Composite | Constraint | MouseConstraint],
+    deep: Boolean
+  ): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Composite]
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Optionally searching its children recursively.
     * Triggers `beforeRemove` and `afterRemove` events on the `composite`.
     * @method remove
     * @param {Composite} composite
-    * @param {any} object
+    * @param {Body | Composite | Constraint | MouseConstraint | Array<Body | Composite | Constraint | MouseConstraint>} object
     * @param {boolean} [deep=false]
     * @returns {Composite} The original composite with the objects removed
     */
@@ -205,6 +193,8 @@ object Composite {
   inline def remove(composite: Composite, `object`: Composite, deep: Boolean): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Composite]
   inline def remove(composite: Composite, `object`: Constraint): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
   inline def remove(composite: Composite, `object`: Constraint, deep: Boolean): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def remove(composite: Composite, `object`: MouseConstraint): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Composite]
+  inline def remove(composite: Composite, `object`: MouseConstraint, deep: Boolean): Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Composite]
   
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.

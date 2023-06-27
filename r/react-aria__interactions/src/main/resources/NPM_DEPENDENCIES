@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-aria/interactions" : "3.15.0"
+      "@react-aria/interactions" : "3.15.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-aria/interactions" : "3.15.0"
+      "@react-aria/interactions" : "3.15.1"
     }
   ],
   "compile-devDependencies" : [

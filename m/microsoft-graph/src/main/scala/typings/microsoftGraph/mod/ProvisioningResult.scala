@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.success_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.success
+  - typings.microsoftGraph.microsoftGraphStrings.success_
   - typings.microsoftGraph.microsoftGraphStrings.failure
   - typings.microsoftGraph.microsoftGraphStrings.skipped
   - typings.microsoftGraph.microsoftGraphStrings.warning
@@ -19,7 +20,7 @@ object ProvisioningResult {
   
   inline def skipped: typings.microsoftGraph.microsoftGraphStrings.skipped = "skipped".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skipped]
   
-  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: success_ = "success".asInstanceOf[success_]
   
   inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   

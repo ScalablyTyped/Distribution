@@ -14,138 +14,139 @@ trait PopupViewModelProperties
      with GoToProperties {
   
   /**
-    * [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#actions)
-    */
+  		 * [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#actions)
+  		 */
   var actions: js.UndefOr[CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]] = js.undefined
   
   /**
-    * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoCloseEnabled)
-    */
+  		 * This closes the widget when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoCloseEnabled)
+  		 */
   var autoCloseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoOpenEnabled)
-    */
+  		 * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
+  		 *
+  		 * @default true
+  		 * @deprecated since 4.27. Use {@link module:esri/core/MapView#popupEnabled MapView/SceneView.popupEnabled} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoOpenEnabled)
+  		 */
   var autoOpenEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the "Browse features" experience is active in a [cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) popup.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#browseClusterEnabled)
-    */
+  		 * Indicates if the "Browse features" experience is active in a [cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) popup.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#browseClusterEnabled)
+  		 */
   var browseClusterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The content of the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#content)
-    */
+  		 * The content of the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#content)
+  		 */
   var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.undefined
   
   /**
-    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled)
-    */
+  		 * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled)
+  		 */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) widget should use when querying and displaying its content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featureViewModelAbilities)
-    */
-  var featureViewModelAbilities: js.UndefOr[FeatureViewModelAbilities] = js.undefined
+  		 * Defines the specific [abilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#Abilities) that the widget should use when querying and displaying its content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featureViewModelAbilities)
+  		 */
+  var featureViewModelAbilities: js.UndefOr[Abilities] = js.undefined
   
   /**
-    * An array of features associated with the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#features)
-    */
+  		 * An array of features associated with the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#features)
+  		 */
   var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
-    * The number of features to fetch at one time.
-    *
-    * @default 20
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featuresPerPage)
-    */
+  		 * The number of features to fetch at one time.
+  		 *
+  		 * @default 20
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#featuresPerPage)
+  		 */
   var featuresPerPage: js.UndefOr[Double] = js.undefined
   
   /**
-    * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#highlightEnabled)
-    */
+  		 * Highlight the selected feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#highlightEnabled)
+  		 */
   var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether or not to include [defaultActions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultActions) in the Popup's UI.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#includeDefaultActions)
-    */
+  		 * Indicates whether or not to include [defaultActions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultActions) in the widget's UI.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#includeDefaultActions)
+  		 */
   var includeDefaultActions: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Geometry used to position the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location)
-    */
+  		 * Geometry used to position the popup.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location)
+  		 */
   var location: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * An array of pending Promises that have not yet been fulfilled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
-    */
+  		 * An array of pending Promises that have not yet been fulfilled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
+  		 */
   var promises: js.UndefOr[js.Array[js.Promise[Any]]] = js.undefined
   
   /**
-    * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeatureIndex)
-    */
+  		 * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeatureIndex)
+  		 */
   var selectedFeatureIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * The title of the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#title)
-    */
+  		 * The title of the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * The view associated with the Popup instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#view)
-    */
+  		 * The view associated with the widget instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * Indicates whether the popup is visible.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#visible)
-    */
+  		 * Indicates whether the widget is visible.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PopupViewModelProperties {
@@ -184,7 +185,7 @@ object PopupViewModelProperties {
     
     inline def setDefaultPopupTemplateEnabledUndefined: Self = StObject.set(x, "defaultPopupTemplateEnabled", js.undefined)
     
-    inline def setFeatureViewModelAbilities(value: FeatureViewModelAbilities): Self = StObject.set(x, "featureViewModelAbilities", value.asInstanceOf[js.Any])
+    inline def setFeatureViewModelAbilities(value: Abilities): Self = StObject.set(x, "featureViewModelAbilities", value.asInstanceOf[js.Any])
     
     inline def setFeatureViewModelAbilitiesUndefined: Self = StObject.set(x, "featureViewModelAbilities", js.undefined)
     

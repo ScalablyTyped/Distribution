@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "snakecase-keys" : "5.4.5"
+      "snakecase-keys" : "5.4.6"
     }
   ],
   "test-dependencies" : [
     {
-      "snakecase-keys" : "5.4.5"
+      "snakecase-keys" : "5.4.6"
     }
   ],
   "compile-devDependencies" : [

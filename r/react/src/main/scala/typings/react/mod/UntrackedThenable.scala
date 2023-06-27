@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UntrackedThenable[T]
   extends StObject
-     with typings.react.nextMod.reactAugmentingMod.ThenableImpl[T] {
+     with typings.react.canaryMod.reactAugmentingMod.ThenableImpl[T] {
   
   var status: js.UndefOr[Unit] = js.undefined
 }

@@ -6,7 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement. */
+/**
+  * Provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement)
+  */
 @js.native
 trait HTMLVideoElement
   extends StObject
@@ -63,19 +67,27 @@ trait HTMLVideoElement
   /* standard dom */
   def cancelVideoFrameCallback(handle: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/disablePictureInPicture) */
   /* standard dom */
   var disablePictureInPicture: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/getVideoPlaybackQuality) */
   /* standard dom */
   def getVideoPlaybackQuality(): VideoPlaybackQuality = js.native
   
-  /** Gets or sets the height of the video element. */
+  /**
+    * Gets or sets the height of the video element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/height)
+    */
   /* standard dom */
   var height: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/enterpictureinpicture_event) */
   /* standard dom */
   var onenterpictureinpicture: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/leavepictureinpicture_event) */
   /* standard dom */
   var onleavepictureinpicture: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
@@ -83,7 +95,11 @@ trait HTMLVideoElement
   /* standard dom */
   var playsInline: scala.Boolean = js.native
   
-  /** Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available. */
+  /**
+    * Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/poster)
+    */
   /* standard dom */
   var poster: java.lang.String = js.native
   
@@ -133,21 +149,34 @@ trait HTMLVideoElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/requestPictureInPicture) */
   /* standard dom */
   def requestPictureInPicture(): js.Promise[PictureInPictureWindow] = js.native
   
   /* standard dom */
   def requestVideoFrameCallback(callback: VideoFrameRequestCallback): Double = js.native
   
-  /** Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known. */
+  /**
+    * Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/videoHeight)
+    */
   /* standard dom */
   val videoHeight: Double = js.native
   
-  /** Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known. */
+  /**
+    * Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/videoWidth)
+    */
   /* standard dom */
   val videoWidth: Double = js.native
   
-  /** Gets or sets the width of the video element. */
+  /**
+    * Gets or sets the width of the video element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/width)
+    */
   /* standard dom */
   var width: Double = js.native
 }

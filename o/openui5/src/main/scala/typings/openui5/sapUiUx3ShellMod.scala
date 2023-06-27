@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.IdItem
-import typings.openui5.anon.ItemKey
-import typings.openui5.anon.`10`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -215,13 +212,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFeedSubmit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -246,7 +243,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFeedSubmit(
       /**
@@ -257,7 +254,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -278,13 +275,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogout(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -309,7 +306,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogout(
       /**
@@ -320,7 +317,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -343,13 +340,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachPaneBarItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -376,7 +373,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachPaneBarItemSelected(
       /**
@@ -387,7 +384,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -395,7 +392,7 @@ object sapUiUx3ShellMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:paneClosed paneClosed} event of this `sap.ui.ux3.Shell`.
       *
@@ -411,20 +408,20 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit]
     ): this.type = js.native
     def attachPaneClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:paneClosed paneClosed} event of this `sap.ui.ux3.Shell`.
       *
@@ -445,7 +442,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit]
     ): this.type = js.native
     def attachPaneClosed(
       /**
@@ -456,7 +453,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -477,13 +474,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -508,7 +505,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -519,7 +516,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -544,13 +541,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachWorksetItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -579,7 +576,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachWorksetItemSelected(
       /**
@@ -590,7 +587,7 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Shell` itself
       */
@@ -619,7 +616,7 @@ object sapUiUx3ShellMod {
     def destroyHeaderItems(): this.type = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Destroys the notificationBar in the aggregation {@link #getNotificationBar notificationBar}.
       *
@@ -666,13 +663,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachFeedSubmit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -690,13 +687,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLogout(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -715,13 +712,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachPaneBarItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneBarItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -729,7 +726,7 @@ object sapUiUx3ShellMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:paneClosed paneClosed} event of this `sap.ui.ux3.Shell`.
       *
@@ -741,13 +738,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit]
     ): this.type = js.native
     def detachPaneClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellPaneClosedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -765,13 +762,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -790,13 +787,13 @@ object sapUiUx3ShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachWorksetItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellWorksetItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -804,7 +801,7 @@ object sapUiUx3ShellMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
@@ -817,7 +814,7 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:logout logout} to attached listeners.
       *
@@ -830,21 +827,23 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:paneBarItemSelected paneBarItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePaneBarItemSelected(): this.type = js.native
-    def firePaneBarItemSelected(/**
+    def firePaneBarItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: IdItem): this.type = js.native
+    mParameters: Shell$PaneBarItemSelectedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.12.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.12.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:paneClosed paneClosed} to attached listeners.
       *
@@ -854,10 +853,10 @@ object sapUiUx3ShellMod {
     def firePaneClosed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): this.type = js.native
+    mParameters: Shell$PaneClosedEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
@@ -870,7 +869,7 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:worksetItemSelected worksetItemSelected} to attached listeners.
       *
@@ -880,13 +879,15 @@ object sapUiUx3ShellMod {
       * @returns Whether or not to prevent the default action
       */
     def fireWorksetItemSelected(): Boolean = js.native
-    def fireWorksetItemSelected(/**
+    def fireWorksetItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemKey): Boolean = js.native
+    mParameters: Shell$WorksetItemSelectedEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Gets current value of property {@link #getAllowOverlayHeaderAccess allowOverlayHeaderAccess}.
       *
@@ -931,7 +932,7 @@ object sapUiUx3ShellMod {
     def getAppTitle(): String = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getApplyContentPadding applyContentPadding}.
       *
@@ -952,7 +953,7 @@ object sapUiUx3ShellMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Gets current value of property {@link #getDesignType designType}.
       *
@@ -965,7 +966,7 @@ object sapUiUx3ShellMod {
     def getDesignType(): ShellDesignType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShellDesignType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getFullHeightContent fullHeightContent}.
       *
@@ -1000,7 +1001,7 @@ object sapUiUx3ShellMod {
     def getHeaderType(): ShellHeaderType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShellHeaderType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getLogoutButtonTooltip logoutButtonTooltip}.
       *
@@ -1012,7 +1013,7 @@ object sapUiUx3ShellMod {
     def getLogoutButtonTooltip(): String = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Gets content of aggregation {@link #getNotificationBar notificationBar}.
       *
@@ -1539,7 +1540,7 @@ object sapUiUx3ShellMod {
     ): typings.openui5.sapUiUx3NavigationItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Sets a new value for property {@link #getAllowOverlayHeaderAccess allowOverlayHeaderAccess}.
       *
@@ -1608,7 +1609,7 @@ object sapUiUx3ShellMod {
     sAppTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getApplyContentPadding applyContentPadding}.
       *
@@ -1649,7 +1650,7 @@ object sapUiUx3ShellMod {
     ): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Sets a new value for property {@link #getDesignType designType}.
       *
@@ -1674,7 +1675,7 @@ object sapUiUx3ShellMod {
     sDesignType: ShellDesignType): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getFullHeightContent fullHeightContent}.
       *
@@ -1719,7 +1720,7 @@ object sapUiUx3ShellMod {
     sHeaderType: ShellHeaderType): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getLogoutButtonTooltip logoutButtonTooltip}.
       *
@@ -1737,8 +1738,8 @@ object sapUiUx3ShellMod {
     sLogoutButtonTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.7.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.7.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Moves the complete Shell away from the right window border by the given number of pixels (left border
       * in RTL case).
@@ -1960,12 +1961,144 @@ object sapUiUx3ShellMod {
     bShowTools: Boolean): this.type = js.native
   }
   
+  trait Shell$FeedSubmitEventParameters extends StObject
+  
+  trait Shell$LogoutEventParameters extends StObject
+  
+  trait Shell$PaneBarItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The ID of the selected PaneBarItem.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The selected Item
+      */
+    var item: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+    
+    /**
+      * The key of the selected Item (or null if there is no key)
+      */
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object Shell$PaneBarItemSelectedEventParameters {
+    
+    inline def apply(): Shell$PaneBarItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Shell$PaneBarItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shell$PaneBarItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  trait Shell$PaneClosedEventParameters extends StObject {
+    
+    /**
+      * The id of the PaneBarItem to which the closed pane belonged.
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object Shell$PaneClosedEventParameters {
+    
+    inline def apply(): Shell$PaneClosedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Shell$PaneClosedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shell$PaneClosedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  trait Shell$SearchEventParameters extends StObject
+  
+  trait Shell$WorksetItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The id of the workset item that has been newly selected by the user. If a top-level item has been clicked
+      * which has sub-items, the ID of the currently active sub-item (/leaf) is given.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The selected NavigationItem
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUx3NavigationItemMod.default] = js.undefined
+    
+    /**
+      * The key of the selected NavigationItem (or null if there is no key)
+      */
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object Shell$WorksetItemSelectedEventParameters {
+    
+    inline def apply(): Shell$WorksetItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Shell$WorksetItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shell$WorksetItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapUiUx3NavigationItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  type ShellFeedSubmitEvent = typings.openui5.sapUiBaseEventMod.default[Shell$FeedSubmitEventParameters]
+  
+  type ShellFeedSubmitEventParameters = Shell$FeedSubmitEventParameters
+  
+  type ShellLogoutEvent = typings.openui5.sapUiBaseEventMod.default[Shell$LogoutEventParameters]
+  
+  type ShellLogoutEventParameters = Shell$LogoutEventParameters
+  
+  type ShellPaneBarItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Shell$PaneBarItemSelectedEventParameters]
+  
+  type ShellPaneBarItemSelectedEventParameters = Shell$PaneBarItemSelectedEventParameters
+  
+  type ShellPaneClosedEvent = typings.openui5.sapUiBaseEventMod.default[Shell$PaneClosedEventParameters]
+  
+  type ShellPaneClosedEventParameters = Shell$PaneClosedEventParameters
+  
+  type ShellSearchEvent = typings.openui5.sapUiBaseEventMod.default[Shell$SearchEventParameters]
+  
+  type ShellSearchEventParameters = Shell$SearchEventParameters
+  
   trait ShellSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Whether the Shell header (Title Area + Header Items) can be accessed when an Overlay, OverlayContainer
       * or ThingInspector is open.
@@ -1994,7 +2127,7 @@ object sapUiUx3ShellMod {
     var appTitle: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Whether the Shell content area should have a theme-dependent padding or not.
       */
@@ -2011,7 +2144,7 @@ object sapUiUx3ShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Defines which design type is to be used.
       */
@@ -2022,10 +2155,12 @@ object sapUiUx3ShellMod {
     /**
       * Fired when a new feed entry is submitted.
       */
-    var feedSubmit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var feedSubmit: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * If set to true, the content area has a defined height. This means that any content put inside can use
       * "100%" height in CSS and will then consume all available space. However, if content is larger, scrollbars
@@ -2054,10 +2189,12 @@ object sapUiUx3ShellMod {
     /**
       * Fired when the user clicks the "Log-off" button
       */
-    var logout: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var logout: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * The tooltip to be displayed for the Logout Button of the Shell. If not set, a text meaning "Logout" in
       * the current language will be displayed.
@@ -2065,7 +2202,7 @@ object sapUiUx3ShellMod {
     var logoutButtonTooltip: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * The NotificationBar which should be integrated into the Shell.
       */
@@ -2075,7 +2212,12 @@ object sapUiUx3ShellMod {
       * An item in the right-hand-side pane bar has been selected, the pane is now visible and can be filled
       * with UI elements.
       */
-    var paneBarItemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var paneBarItemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$PaneBarItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The items to appear in the PaneBar.
@@ -2085,12 +2227,17 @@ object sapUiUx3ShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Fired after a side pane of the shell is closed. It is also fired, when an open pane is closed by calling
       * setShowPane(false), if and only if the pane was opened before.
       */
-    var paneClosed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var paneClosed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$PaneClosedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The content to appear in the pane area.
@@ -2108,7 +2255,9 @@ object sapUiUx3ShellMod {
     /**
       * Fired when search has been triggered.
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The ID of the Item that is currently selected. When setting, the NavigationItem itself can be given instead
@@ -2178,7 +2327,12 @@ object sapUiUx3ShellMod {
       * is responsible for displaying the correct content for the selected one of the newly created sub-items.
       * The Shell will currently always mark the first sub-item as selected.
       */
-    var worksetItemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var worksetItemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$WorksetItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The workset items.
@@ -2231,7 +2385,7 @@ object sapUiUx3ShellMod {
       
       inline def setDesignTypeUndefined: Self = StObject.set(x, "designType", js.undefined)
       
-      inline def setFeedSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "feedSubmit", js.Any.fromFunction1(value))
+      inline def setFeedSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "feedSubmit", js.Any.fromFunction1(value))
       
       inline def setFeedSubmitUndefined: Self = StObject.set(x, "feedSubmit", js.undefined)
       
@@ -2253,7 +2407,7 @@ object sapUiUx3ShellMod {
       
       inline def setHeaderTypeUndefined: Self = StObject.set(x, "headerType", js.undefined)
       
-      inline def setLogout(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
+      inline def setLogout(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
       
       inline def setLogoutButtonTooltip(value: String | PropertyBindingInfo): Self = StObject.set(x, "logoutButtonTooltip", value.asInstanceOf[js.Any])
       
@@ -2265,7 +2419,9 @@ object sapUiUx3ShellMod {
       
       inline def setNotificationBarUndefined: Self = StObject.set(x, "notificationBar", js.undefined)
       
-      inline def setPaneBarItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "paneBarItemSelected", js.Any.fromFunction1(value))
+      inline def setPaneBarItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$PaneBarItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "paneBarItemSelected", js.Any.fromFunction1(value))
       
       inline def setPaneBarItemSelectedUndefined: Self = StObject.set(x, "paneBarItemSelected", js.undefined)
       
@@ -2277,7 +2433,9 @@ object sapUiUx3ShellMod {
       
       inline def setPaneBarItemsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "paneBarItems", js.Array(value*))
       
-      inline def setPaneClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "paneClosed", js.Any.fromFunction1(value))
+      inline def setPaneClosed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$PaneClosedEventParameters] => Unit
+      ): Self = StObject.set(x, "paneClosed", js.Any.fromFunction1(value))
       
       inline def setPaneClosedUndefined: Self = StObject.set(x, "paneClosed", js.undefined)
       
@@ -2293,7 +2451,7 @@ object sapUiUx3ShellMod {
       
       inline def setPaneWidthUndefined: Self = StObject.set(x, "paneWidth", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
@@ -2333,7 +2491,9 @@ object sapUiUx3ShellMod {
       
       inline def setToolPopupsVarargs(value: typings.openui5.sapUiUx3ToolPopupMod.default*): Self = StObject.set(x, "toolPopups", js.Array(value*))
       
-      inline def setWorksetItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "worksetItemSelected", js.Any.fromFunction1(value))
+      inline def setWorksetItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Shell$WorksetItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "worksetItemSelected", js.Any.fromFunction1(value))
       
       inline def setWorksetItemSelectedUndefined: Self = StObject.set(x, "worksetItemSelected", js.undefined)
       
@@ -2346,4 +2506,8 @@ object sapUiUx3ShellMod {
       inline def setWorksetItemsVarargs(value: typings.openui5.sapUiUx3NavigationItemMod.default*): Self = StObject.set(x, "worksetItems", js.Array(value*))
     }
   }
+  
+  type ShellWorksetItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Shell$WorksetItemSelectedEventParameters]
+  
+  type ShellWorksetItemSelectedEventParameters = Shell$WorksetItemSelectedEventParameters
 }

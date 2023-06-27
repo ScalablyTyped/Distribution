@@ -141,7 +141,7 @@ object sapMWizardStepMod {
       */
     vSubsequentStep: WizardStep): this.type = js.native
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Adds some subsequentStep into the association {@link #getSubsequentSteps subsequentSteps}.
       *
@@ -166,13 +166,13 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachActivate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WizardStep` itself
       */
@@ -197,7 +197,7 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachActivate(
       /**
@@ -208,7 +208,7 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WizardStep` itself
       */
@@ -230,13 +230,13 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachComplete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WizardStep` itself
       */
@@ -262,7 +262,7 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachComplete(
       /**
@@ -273,7 +273,7 @@ object sapMWizardStepMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WizardStep` itself
       */
@@ -298,13 +298,13 @@ object sapMWizardStepMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachActivate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -322,13 +322,13 @@ object sapMWizardStepMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachComplete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -336,7 +336,7 @@ object sapMWizardStepMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:activate activate} to attached listeners.
       *
@@ -349,7 +349,7 @@ object sapMWizardStepMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:complete complete} to attached listeners.
       *
@@ -382,14 +382,14 @@ object sapMWizardStepMod {
     def getIcon(): URI = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * ID of the element which is the current target of the association {@link #getNextStep nextStep}, or `null`.
       */
     def getNextStep(): ID = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getOptional optional}.
       *
@@ -403,10 +403,9 @@ object sapMWizardStepMod {
     def getOptional(): Boolean = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getSubsequentSteps
-      * subsequentSteps}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getSubsequentSteps subsequentSteps}.
       */
     def getSubsequentSteps(): js.Array[ID] = js.native
     
@@ -422,7 +421,7 @@ object sapMWizardStepMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getValidated validated}.
       *
@@ -476,7 +475,7 @@ object sapMWizardStepMod {
     def removeAllContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Removes all the controls in the association named {@link #getSubsequentSteps subsequentSteps}.
       *
@@ -505,7 +504,7 @@ object sapMWizardStepMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Removes an subsequentStep from the association named {@link #getSubsequentSteps subsequentSteps}.
       *
@@ -551,7 +550,7 @@ object sapMWizardStepMod {
     oNextStep: WizardStep
     ): this.type = js.native
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets the associated {@link #getNextStep nextStep}.
       *
@@ -566,7 +565,7 @@ object sapMWizardStepMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getOptional optional}.
       *
@@ -596,7 +595,7 @@ object sapMWizardStepMod {
     sNewTitle: String): WizardStep = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets a new value for property {@link #getValidated validated}.
       *
@@ -616,6 +615,16 @@ object sapMWizardStepMod {
     bValidated: Boolean): this.type = js.native
   }
   
+  trait WizardStep$CompleteEventParameters extends StObject
+  
+  type WizardStepActivateEvent = typings.openui5.sapUiBaseEventMod.default[WizardStepActivateEventParameters]
+  
+  trait WizardStepActivateEventParameters extends StObject
+  
+  type WizardStepCompleteEvent = typings.openui5.sapUiBaseEventMod.default[WizardStep$CompleteEventParameters]
+  
+  type WizardStepCompleteEventParameters = WizardStep$CompleteEventParameters
+  
   trait WizardStepSettings
     extends StObject
        with ControlSettings {
@@ -623,13 +632,17 @@ object sapMWizardStepMod {
     /**
       * This event is fired on next step activation from the Wizard.
       */
-    var activate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var activate: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This event is fired after the user presses the Next button in the Wizard, or on `nextStep` method call
       * from the app developer.
       */
-    var complete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var complete: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The content of the Wizard Step.
@@ -646,14 +659,14 @@ object sapMWizardStepMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * The next step to be taken. It must be defined in order for the previous step to be completed.
       */
     var nextStep: js.UndefOr[WizardStep | String] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Indicates whether or not the step is optional. When a step is optional an "(Optional)" label is displayed
       * under the step's title.
@@ -663,7 +676,7 @@ object sapMWizardStepMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * This association is used only when the `enableBranching` property of the Wizard is set to true. Use the
       * association to store the next steps that are about to come after the current. If this is going to be
@@ -679,7 +692,7 @@ object sapMWizardStepMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Indicates whether or not the step is validated. When a step is validated a Next button is visualized
       * in the Wizard control.
@@ -698,11 +711,11 @@ object sapMWizardStepMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: WizardStepSettings] (val x: Self) extends AnyVal {
       
-      inline def setActivate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+      inline def setActivate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       
       inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
       
-      inline def setComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       

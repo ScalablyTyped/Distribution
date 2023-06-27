@@ -15,12 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomTemplateProperties extends StObject {
   
   /**
-    * The output format for the printed map.
-    *
-    * @default pdf
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#format)
-    */
+  		 * The output format for the printed map.
+  		 *
+  		 * @default pdf
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#format)
+  		 */
   var format: js.UndefOr[pdf | png32 | png8 | jpg | gif | eps | svg | svgz] = js.undefined
 }
 object CustomTemplateProperties {

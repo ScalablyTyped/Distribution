@@ -12,8 +12,6 @@ object srcUtilsIsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isClientRectVisualViewportBased(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClientRectVisualViewportBased")().asInstanceOf[Boolean]
-  
   inline def isContainingBlock(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContainingBlock")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isElement(value: Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
@@ -23,6 +21,8 @@ object srcUtilsIsMod {
   inline def isLastTraversableNode(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLastTraversableNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isOverflowElement(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOverflowElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
   
   inline def isShadowRoot(node: Node): /* is std.ShadowRoot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShadowRoot")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.ShadowRoot */ Boolean]
   

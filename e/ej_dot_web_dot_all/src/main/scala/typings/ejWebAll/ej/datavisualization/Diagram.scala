@@ -3388,7 +3388,7 @@ object Diagram {
   trait BackgroundImage extends StObject {
     
     /** Defines how to align the background image over the diagram area.
-      * @Default {ej.datavisualization.Diagram.ImageAlignment.XMidYMid}
+      * @default {ej.datavisualization.Diagram.ImageAlignment.XMidYMid}
       */
     var alignment: js.UndefOr[ImageAlignment | String] = js.undefined
   }
@@ -3489,7 +3489,7 @@ object Diagram {
   trait CommandManager extends StObject {
     
     /** An object that maps a set of command names with the corresponding command objects
-      * @Default {{}}
+      * @default {{}}
       */
     var commands: js.UndefOr[CommandManagerCommands] = js.undefined
   }
@@ -3524,7 +3524,7 @@ object Diagram {
     var gesture: js.UndefOr[CommandManagerCommandsGesture] = js.undefined
     
     /** Defines any additional parameters that are required at runtime
-      * @Default {null}
+      * @default {null}
       */
     var parameter: js.UndefOr[Any] = js.undefined
   }
@@ -3559,12 +3559,12 @@ object Diagram {
   trait CommandManagerCommandsGesture extends StObject {
     
     /** Sets the key value, on recognition of which the command will be executed.
-      * @Default {ej.datavisualization.Diagram.Keys.None}
+      * @default {ej.datavisualization.Diagram.Keys.None}
       */
     var key: js.UndefOr[Keys | String] = js.undefined
     
     /** Sets a combination of key modifiers, on recognition of which the command will be executed.
-      * @Default {ej.datavisualization.Diagram.KeyModifiers.None}
+      * @default {ej.datavisualization.Diagram.KeyModifiers.None}
       */
     var keyModifiers: js.UndefOr[KeyModifiers | String] = js.undefined
   }
@@ -3645,22 +3645,22 @@ object Diagram {
   trait Connector extends StObject {
     
     /** To maintain additional information about connectors
-      * @Default {null}
+      * @default {null}
       */
     var addInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines the width of the line bridges
-      * @Default {10}
+      * @default {10}
       */
     var bridgeSpace: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the behaviors of connectors.
-      * @Default {ej.datavisualization.Diagram.ConnectorConstraints.Default}
+      * @default {ej.datavisualization.Diagram.ConnectorConstraints.Default}
       */
     var constraints: js.UndefOr[ConnectorConstraints | String] = js.undefined
     
     /** Defines the radius of the rounded corner
-      * @Default {0}
+      * @default {0}
       */
     var cornerRadius: js.UndefOr[Double] = js.undefined
     
@@ -3669,17 +3669,17 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
       */
     var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** A collection of JSON objects where each object represents a label.
-      * @Default {[]}
+      * @default {[]}
       */
     var labels: js.UndefOr[js.Array[ConnectorsLabel]] = js.undefined
     
     /** Sets the stroke color of the connector
-      * @Default {black}
+      * @default {black}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
@@ -3688,32 +3688,32 @@ object Diagram {
     var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** Defines the padding value to ease the interaction with connectors
-      * @Default {10}
+      * @default {10}
       */
     var lineHitPadding: js.UndefOr[Double] = js.undefined
     
     /** Sets the width of the line
-      * @Default {1}
+      * @default {1}
       */
     var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the bottom of parent bounds and the connector. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the left of parent bounds and the connector. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the right of parent bounds and the connector. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the top of parent bounds and the connector. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginTop: js.UndefOr[Double] = js.undefined
     
@@ -3722,12 +3722,12 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Defines the transparency of the connector
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer Palette Item
-      * @Default {null}
+      * @default {null}
       */
     var paletteItem: js.UndefOr[Any] = js.undefined
     
@@ -3736,17 +3736,17 @@ object Diagram {
     var parent: js.UndefOr[String] = js.undefined
     
     /** An array of JSON objects where each object represents a segment
-      * @Default {[ { type:straight } ]}
+      * @default {[ { type:straight } ]}
       */
     var segments: js.UndefOr[js.Array[ConnectorsSegment]] = js.undefined
     
     /** Defines the role/meaning of the connector
-      * @Default {null}
+      * @default {null}
       */
     var shape: js.UndefOr[ConnectorsShape] = js.undefined
     
     /** Defines the source decorator of the connector
-      * @Default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
+      * @default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
       */
     var sourceDecorator: js.UndefOr[ConnectorsSourceDecorator] = js.undefined
     
@@ -3755,12 +3755,12 @@ object Diagram {
     var sourceNode: js.UndefOr[String] = js.undefined
     
     /** Defines the space to be left between the source node and the source point of a connector
-      * @Default {0}
+      * @default {0}
       */
     var sourcePadding: js.UndefOr[Double] = js.undefined
     
     /** Describes the start point of the connector
-      * @Default {ej.datavisualization.Diagram.Point()}
+      * @default {ej.datavisualization.Diagram.Point()}
       */
     var sourcePoint: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
@@ -3769,7 +3769,7 @@ object Diagram {
     var sourcePort: js.UndefOr[String] = js.undefined
     
     /** Defines the target decorator of the connector
-      * @Default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
+      * @default {{ shape:arrow, width: 8, height:8, borderColor:black, fillColor:black }}
       */
     var targetDecorator: js.UndefOr[ConnectorsTargetDecorator] = js.undefined
     
@@ -3778,12 +3778,12 @@ object Diagram {
     var targetNode: js.UndefOr[String] = js.undefined
     
     /** Defines the space to be left between the target node and the target point of the connector
-      * @Default {0}
+      * @default {0}
       */
     var targetPadding: js.UndefOr[Double] = js.undefined
     
     /** Describes the end point of the connector
-      * @Default {ej.datavisualization.Diagram.Point()}
+      * @default {ej.datavisualization.Diagram.Point()}
       */
     var targetPoint: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
@@ -3792,22 +3792,22 @@ object Diagram {
     var targetPort: js.UndefOr[String] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer Tooltip
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[Any] = js.undefined
     
     /** To set the vertical alignment of connector (Applicable,if the parent is group).
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Top}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Top}
       */
     var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of connector
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the z-index of the connector
-      * @Default {0}
+      * @default {0}
       */
     var zOrder: js.UndefOr[Double] = js.undefined
   }
@@ -4164,87 +4164,87 @@ object Diagram {
   trait ConnectorsLabel extends StObject {
     
     /** Defines how the label should be aligned with respect to the segment
-      * @Default {ej.datavisualization.Diagram.Alignment.Center}
+      * @default {ej.datavisualization.Diagram.Alignment.Center}
       */
     var alignment: js.UndefOr[Alignment | String] = js.undefined
     
     /** Enables/disables the bold style
-      * @Default {false}
+      * @default {false}
       */
     var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the border color of the label
-      * @Default {transparent}
+      * @default {transparent}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the label
-      * @Default {0}
+      * @default {0}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines whether the label should be aligned within the connector boundaries
-      * @Default {true}
+      * @default {true}
       */
     var boundaryConstraints: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the default behaviors of the label.
-      * @Default {ej.datavisualization.Diagram.LabelConstraints.None}
+      * @default {ej.datavisualization.Diagram.LabelConstraints.None}
       */
     var constraints: js.UndefOr[LabelConstraints | String] = js.undefined
     
     /** Sets the value which is used to drag the label within certain bounds.
-      * @Default {null}
+      * @default {null}
       */
     var dragLimit: js.UndefOr[ConnectorsLabelsDragLimit] = js.undefined
     
     /** Sets the fill color of the text area
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font color of the text
-      * @Default {black}
+      * @default {black}
       */
     var fontColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font family of the text
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Defines the font size of the text
-      * @Default {12}
+      * @default {12}
       */
     var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the label(the maximum value of label height and the connector height will be considered as label height)
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the label.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Sets the hyperlink for the labels in the connectors.
-      * @Default {none}
+      * @default {none}
       */
     var hyperlink: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the italic style
-      * @Default {false}
+      * @default {false}
       */
     var italic: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the fraction/ratio(relative to connector) that defines the position of the label
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
     var margin: js.UndefOr[ConnectorsLabelsMargin] = js.undefined
     
     /** Gets whether the label is currently being edited or not.
-      * @Default {ej.datavisualization.Diagram.LabelEditMode.Edit}
+      * @default {ej.datavisualization.Diagram.LabelEditMode.Edit}
       */
     var mode: js.UndefOr[LabelEditMode | String] = js.undefined
     
@@ -4253,37 +4253,37 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to connector) that defines the position of the label
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the transparency of labels
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Sets the padding for connector label.
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
     var padding: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the label is editable or not
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Defines whether the label should be positioned whether relative to segments or connector boundaries
-      * @Default {ej.datavisualization.Diagram.LabelRelativeMode.SegmentPath}
+      * @default {ej.datavisualization.Diagram.LabelRelativeMode.SegmentPath}
       */
     var relativeMode: js.UndefOr[LabelRelativeMode | String] = js.undefined
     
     /** Defines the angle to which the label needs to be rotated
-      * @Default {0}
+      * @default {0}
       */
     var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Sets the position of the label with respect to the total segment length
-      * @Default {0.5}
+      * @default {0.5}
       */
     var segmentOffset: js.UndefOr[String] = js.undefined
     
@@ -4292,32 +4292,32 @@ object Diagram {
     var text: js.UndefOr[String] = js.undefined
     
     /** Defines how to align the text inside the label.
-      * @Default {ej.datavisualization.Diagram.TextAlign.Center}
+      * @default {ej.datavisualization.Diagram.TextAlign.Center}
       */
     var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.undefined
     
     /** Sets how to decorate the label text.
-      * @Default {ej.datavisualization.Diagram.TextDecorations.None}
+      * @default {ej.datavisualization.Diagram.TextDecorations.None}
       */
     var textDecoration: js.UndefOr[TextDecorations | String] = js.undefined
     
     /** Sets the vertical alignment of the label.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of the label
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the width of the label(the maximum value of label width and the connector width will be considered as label width)
-      * @Default {50}
+      * @default {50}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Defines how the label text needs to be wrapped.
-      * @Default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
+      * @default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
       */
     var wrapping: js.UndefOr[TextWrapping | String] = js.undefined
   }
@@ -4464,22 +4464,22 @@ object Diagram {
   trait ConnectorsLabelsDragLimit extends StObject {
     
     /** To set the drag limit of the label in bottom direction
-      * @Default {10}
+      * @default {10}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in left direction
-      * @Default {10}
+      * @default {10}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in right direction
-      * @Default {10}
+      * @default {10}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** To set the drag limit of the label in top direction
-      * @Default {10}
+      * @default {10}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -4514,22 +4514,22 @@ object Diagram {
   trait ConnectorsLabelsMargin extends StObject {
     
     /** To set the margin of the label in bottom direction
-      * @Default {0}
+      * @default {0}
       */
     var bottom: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in left direction
-      * @Default {0}
+      * @default {0}
       */
     var left: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in right direction
-      * @Default {0}
+      * @default {0}
       */
     var right: js.UndefOr[Double] = js.undefined
     
     /** To set the margin of the label in top direction
-      * @Default {0}
+      * @default {0}
       */
     var top: js.UndefOr[Double] = js.undefined
   }
@@ -4568,37 +4568,37 @@ object Diagram {
     var direction: js.UndefOr[String] = js.undefined
     
     /** Describes the length of orthogonal segment
-      * @Default {undefined}
+      * @default {undefined}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Describes the end point of bezier/straight segment
-      * @Default {Diagram.Point()}
+      * @default {Diagram.Point()}
       */
     var point: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Defines the first control point of the bezier segment
-      * @Default {null}
+      * @default {null}
       */
     var point1: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Defines the second control point of bezier segment
-      * @Default {null}
+      * @default {null}
       */
     var point2: js.UndefOr[ConnectorsSourcePoint] = js.undefined
     
     /** Sets the type of the segment.
-      * @Default {ej.datavisualization.Diagram.Segments.Straight}
+      * @default {ej.datavisualization.Diagram.Segments.Straight}
       */
     var `type`: js.UndefOr[Segments | String] = js.undefined
     
     /** Describes the length and angle between the first control point and the start point of bezier segment
-      * @Default {null}
+      * @default {null}
       */
     var vector1: js.UndefOr[Any] = js.undefined
     
     /** Describes the length and angle between the second control point and end point of bezier segment
-      * @Default {null}
+      * @default {null}
       */
     var vector2: js.UndefOr[Any] = js.undefined
   }
@@ -4649,42 +4649,42 @@ object Diagram {
   trait ConnectorsShape extends StObject {
     
     /** Defines the shape of UMLActivity to connector. Applicable, if the connector is of type UMLActivity
-      * @Default {ej.datavisualization.Diagram.UMLActivityFlow.Control}
+      * @default {ej.datavisualization.Diagram.UMLActivityFlow.Control}
       */
     var ActivityFlow: js.UndefOr[UMLActivityFlow | String] = js.undefined
     
     /** Sets the type of the Association in a BPMN Process
-      * @Default {ej.datavisualization.Diagram.AssociationFlows.Default}
+      * @default {ej.datavisualization.Diagram.AssociationFlows.Default}
       */
     var association: js.UndefOr[AssociationFlows | String] = js.undefined
     
     /** Sets the type of the flow in a BPMN Process
-      * @Default {ej.datavisualization.Diagram.BPMNFlows.Sequence}
+      * @default {ej.datavisualization.Diagram.BPMNFlows.Sequence}
       */
     var flow: js.UndefOr[BPMNFlows | String] = js.undefined
     
     /** Sets the type of the message flow. Applicable, if the connector is of type &quot;BPMN&quot;
-      * @Default {ej.datavisualization.Diagram.BPMNMessageFlows.Default}
+      * @default {ej.datavisualization.Diagram.BPMNMessageFlows.Default}
       */
     var message: js.UndefOr[BPMNMessageFlows | String] = js.undefined
     
     /** Defines the multiplicity option of the connector
-      * @Default {null}
+      * @default {null}
       */
     var multiplicity: js.UndefOr[ConnectorsShapeMultiplicity] = js.undefined
     
     /** Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is &quot;classifier&quot;.
-      * @Default {ej.datavisualization.Diagram.ClassifierShapes.Association}
+      * @default {ej.datavisualization.Diagram.ClassifierShapes.Association}
       */
     var relationship: js.UndefOr[ClassifierShapes | String] = js.undefined
     
     /** Sets the type of BPMN sequence flow
-      * @Default {ej.datavisualization.Diagram.BPMNSequenceFlows.Normal}
+      * @default {ej.datavisualization.Diagram.BPMNSequenceFlows.Normal}
       */
     var sequence: js.UndefOr[BPMNSequenceFlows | String] = js.undefined
     
     /** Sets the type of the connector
-      * @Default {ej.datavisualization.Diagram.ConnectorShapes.BPMN}
+      * @default {ej.datavisualization.Diagram.ConnectorShapes.BPMN}
       */
     var `type`: js.UndefOr[ConnectorShapes | String] = js.undefined
   }
@@ -4739,12 +4739,12 @@ object Diagram {
     var source: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.undefined
     
     /** Defines the target label to connector. Applicable, if the connector is of type &quot;UML&quot;
-      * @Default {true}
+      * @default {true}
       */
     var target: js.UndefOr[ConnectorsShapeMultiplicitySource] = js.undefined
     
     /** Sets the type of the multiplicity. Applicable, if the connector is of type &quot;classifier&quot;
-      * @Default {ej.datavisualization.Diagram.Multiplicity.OneToOne}
+      * @default {ej.datavisualization.Diagram.Multiplicity.OneToOne}
       */
     var `type`: js.UndefOr[Multiplicity | String] = js.undefined
   }
@@ -4775,17 +4775,17 @@ object Diagram {
   trait ConnectorsShapeMultiplicitySource extends StObject {
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-      * @Default {null}
+      * @default {null}
       */
     var lowerBounds: js.UndefOr[Double] = js.undefined
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-      * @Default {true}
+      * @default {true}
       */
     var optional: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the source label to connector. Applicable, if the connector is of type &quot;UML&quot;
-      * @Default {null}
+      * @default {null}
       */
     var upperBounds: js.UndefOr[Double] = js.undefined
   }
@@ -4816,12 +4816,12 @@ object Diagram {
   trait ConnectorsSourceDecorator extends StObject {
     
     /** Sets the border color of the source decorator
-      * @Default {black}
+      * @default {black}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the decorator
-      * @Default {1}
+      * @default {1}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
@@ -4830,12 +4830,12 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the source decorator
-      * @Default {black}
+      * @default {black}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the source decorator
-      * @Default {8}
+      * @default {8}
       */
     var height: js.UndefOr[Double] = js.undefined
     
@@ -4844,12 +4844,12 @@ object Diagram {
     var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the source decorator.
-      * @Default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
+      * @default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
       */
     var shape: js.UndefOr[DecoratorShapes | String] = js.undefined
     
     /** Defines the width of the source decorator
-      * @Default {8}
+      * @default {8}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4900,12 +4900,12 @@ object Diagram {
   trait ConnectorsSourcePoint extends StObject {
     
     /** Defines the x-coordinate of a position
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Defines the y-coordinate of a position
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -4932,7 +4932,7 @@ object Diagram {
   trait ConnectorsTargetDecorator extends StObject {
     
     /** Sets the border color of the decorator
-      * @Default {black}
+      * @default {black}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
@@ -4941,12 +4941,12 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the color with which the decorator will be filled
-      * @Default {black}
+      * @default {black}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the target decorator
-      * @Default {8}
+      * @default {8}
       */
     var height: js.UndefOr[Double] = js.undefined
     
@@ -4955,12 +4955,12 @@ object Diagram {
     var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the target decorator.
-      * @Default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
+      * @default {ej.datavisualization.Diagram.DecoratorShapes.Arrow}
       */
     var shape: js.UndefOr[DecoratorShapes | String] = js.undefined
     
     /** Defines the width of the target decorator
-      * @Default {8}
+      * @default {8}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -5007,12 +5007,12 @@ object Diagram {
   trait ContextMenu extends StObject {
     
     /** Defines the collection of context menu items
-      * @Default {[]}
+      * @default {[]}
       */
     var items: js.UndefOr[js.Array[ContextMenuItem]] = js.undefined
     
     /** To set whether to display the default context menu items or not
-      * @Default {false}
+      * @default {false}
       */
     var showCustomMenuItemsOnly: js.UndefOr[Boolean] = js.undefined
   }
@@ -5213,27 +5213,27 @@ object Diagram {
   trait ContextMenuItem extends StObject {
     
     /** Defines the CssClass for the collection of context menu items
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the image url for the collection of context menu items
-      * @Default {null}
+      * @default {null}
       */
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Defines the name for the collection of context menu items
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Defines the collection of sub items for the context menu items
-      * @Default {[]}
+      * @default {[]}
       */
     var subItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the text for the collection of context menu item
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -5312,22 +5312,22 @@ object Diagram {
   trait DataSourceSettings extends StObject {
     
     /** Defines the data source either as a collection of objects or as an instance of ej.DataManager
-      * @Default {null}
+      * @default {null}
       */
     var connectionDataSource: js.UndefOr[DataSourceSettingsConnectionDataSource] = js.undefined
     
     /** Specifies the method name which is used to get the updated data from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var crudAction: js.UndefOr[DataSourceSettingsCrudAction] = js.undefined
     
     /** Specifies the custom fields to get the updated data from client side to the server side
-      * @Default {[]}
+      * @default {[]}
       */
     var customFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the data source either as a collection of objects or as an instance of ej.DataManager
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -5336,12 +5336,12 @@ object Diagram {
     var id: js.UndefOr[String] = js.undefined
     
     /** Defines the parent id of the data source item
-      * @Default {''}
+      * @default {''}
       */
     var parent: js.UndefOr[String] = js.undefined
     
     /** Describes query to retrieve a set of data from the specified datasource
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[String] = js.undefined
     
@@ -5350,7 +5350,7 @@ object Diagram {
     var root: js.UndefOr[String] = js.undefined
     
     /** Describes the name of the table on which the specified query has to be executed
-      * @Default {null}
+      * @default {null}
       */
     var tableName: js.UndefOr[String] = js.undefined
   }
@@ -5407,52 +5407,52 @@ object Diagram {
   trait DataSourceSettingsConnectionDataSource extends StObject {
     
     /** Specifies the method name which is used to get updated connectors from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var crudAction: js.UndefOr[DataSourceSettingsConnectionDataSourceCrudAction] = js.undefined
     
     /** Specifies the custom fields to get the updated data from client side to the server side
-      * @Default {[]}
+      * @default {[]}
       */
     var customFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the datasource for the connection datasource settings items.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[String] = js.undefined
     
     /** Sets the unique id of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Sets the source node of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var sourceNode: js.UndefOr[String] = js.undefined
     
     /** Sets the sourcePointX value of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var sourcePointX: js.UndefOr[String] = js.undefined
     
     /** Sets the sourcePointY value of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var sourcePointY: js.UndefOr[String] = js.undefined
     
     /** Sets the target node of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var targetNode: js.UndefOr[String] = js.undefined
     
     /** Sets the targetPoint-x value of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var targetPointX: js.UndefOr[String] = js.undefined
     
     /** Sets the targetPoint-y value of the connection data source item
-      * @Default {null}
+      * @default {null}
       */
     var targetPointY: js.UndefOr[String] = js.undefined
   }
@@ -5513,22 +5513,22 @@ object Diagram {
   trait DataSourceSettingsConnectionDataSourceCrudAction extends StObject {
     
     /** Specifies the create method which is used to get the connectors to be added from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var create: js.UndefOr[String] = js.undefined
     
     /** Specifies the destroy method which is used to get the deleted items data from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var destroy: js.UndefOr[String] = js.undefined
     
     /** Specifies the read method which is used to get the data from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var read: js.UndefOr[String] = js.undefined
     
     /** Specifies the update method which is used to get the updated connectors from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var update: js.UndefOr[String] = js.undefined
   }
@@ -5563,22 +5563,22 @@ object Diagram {
   trait DataSourceSettingsCrudAction extends StObject {
     
     /** Specifies the create method which is used to get the nodes to be added from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var create: js.UndefOr[String] = js.undefined
     
     /** Specifies the destroy method which is used to get the deleted items data from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var destroy: js.UndefOr[String] = js.undefined
     
     /** Specifies the read method to get the created nodes from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var read: js.UndefOr[String] = js.undefined
     
     /** Specifies the update method which is used to get the updated data from client side to the server side
-      * @Default {null}
+      * @default {null}
       */
     var update: js.UndefOr[String] = js.undefined
   }
@@ -5613,17 +5613,17 @@ object Diagram {
   trait DefaultSettings extends StObject {
     
     /** Initializes the default connector properties
-      * @Default {null}
+      * @default {null}
       */
     var connector: js.UndefOr[Any] = js.undefined
     
     /** Initializes the default properties of groups
-      * @Default {null}
+      * @default {null}
       */
     var group: js.UndefOr[Any] = js.undefined
     
     /** Initializes the default properties for nodes
-      * @Default {null}
+      * @default {null}
       */
     var node: js.UndefOr[Any] = js.undefined
   }
@@ -6238,17 +6238,17 @@ object Diagram {
     var push: js.UndefOr[Any] = js.undefined
     
     /** Defines what should be happened while trying to restore a custom change
-      * @Default {null}
+      * @default {null}
       */
     var redo: js.UndefOr[Any] = js.undefined
     
     /** The redoStack property is used to get the number of redo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
-      * @Default {[]}
+      * @default {[]}
       */
     var redoStack: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The stackLimit property used to restrict the undo and redo actions to a certain limit.
-      * @Default {null}
+      * @default {null}
       */
     var stackLimit: js.UndefOr[Double] = js.undefined
     
@@ -6261,7 +6261,7 @@ object Diagram {
     var undo: js.UndefOr[Any] = js.undefined
     
     /** The undoStack property is used to get the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified.
-      * @Default {[]}
+      * @default {[]}
       */
     var undoStack: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -6378,12 +6378,12 @@ object Diagram {
   trait Layer extends StObject {
     
     /** Enable or disable diagram objects to be added to the specific layer.
-      * @Default {false}
+      * @default {false}
       */
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable the interaction of the specific diagram objects.
-      * @Default {false}
+      * @default {false}
       */
     var lock: js.UndefOr[Boolean] = js.undefined
     
@@ -6392,17 +6392,17 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** To Specify the collection of the object names belongs to the layer.
-      * @Default {[]}
+      * @default {[]}
       */
     var objects: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Enable or disable the specific layer objects to be visible on printing or exporting.
-      * @Default {true}
+      * @default {true}
       */
     var print: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable the specific layer objects to be visible.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -6447,12 +6447,12 @@ object Diagram {
   trait Layout extends StObject {
     
     /** Enable or disable connector's segment overlapping with each other when executing the layout with multiple parents.
-      * @Default {false}
+      * @default {false}
       */
     var avoidSegmentOverlapping: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the custom bounds to arrange/align the layout
-      * @Default {ej.datavisualization.Diagram.Rectangle()}
+      * @default {ej.datavisualization.Diagram.Rectangle()}
       */
     var bounds: js.UndefOr[Any] = js.undefined
     
@@ -6461,67 +6461,67 @@ object Diagram {
     var fixedNode: js.UndefOr[String] = js.undefined
     
     /** Defines a method to customize the segments based on source and target nodes.
-      * @Default {null}
+      * @default {null}
       */
     var getConnectorSegments: js.UndefOr[Any] = js.undefined
     
     /** Customizes the orientation of trees/sub trees. For orientations, see Chart Orientations. For chart types, see Chart Types
-      * @Default {null}
+      * @default {null}
       */
     var getLayoutInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines how to horizontally align the layout within the layout bounds
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Sets the space to be horizontally left between nodes
-      * @Default {30}
+      * @default {30}
       */
     var horizontalSpacing: js.UndefOr[Double] = js.undefined
     
     /** Defines the space to be left between layout bounds and layout.
-      * @Default {ej.datavisualization.Diagram.Margin()}
+      * @default {ej.datavisualization.Diagram.Margin()}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
-      * @Default {1000}
+      * @default {1000}
       */
     var maxIteration: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation/direction to arrange the diagram elements.
-      * @Default {ej.datavisualization.Diagram.LayoutOrientations.TopToBottom}
+      * @default {ej.datavisualization.Diagram.LayoutOrientations.TopToBottom}
       */
     var orientation: js.UndefOr[LayoutOrientations | String] = js.undefined
     
     /** Sets the value is used to define the root node of the layout.
-      * @Default {30}
+      * @default {30}
       */
     var root: js.UndefOr[String] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
-      * @Default {0.442}
+      * @default {0.442}
       */
     var springFactor: js.UndefOr[Double] = js.undefined
     
     /** Defines how long edges should be, ideally. This will be the resting length for the springs.
-      * @Default {100}
+      * @default {100}
       */
     var springLength: js.UndefOr[Double] = js.undefined
     
     /** Sets the type of the layout based on which the elements will be arranged.
-      * @Default {ej.datavisualization.Diagram.LayoutTypes.None}
+      * @default {ej.datavisualization.Diagram.LayoutTypes.None}
       */
     var `type`: js.UndefOr[LayoutTypes | String] = js.undefined
     
     /** Defines how to vertically align the layout within the layout bounds
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Sets the space to be vertically left between nodes
-      * @Default {30}
+      * @default {30}
       */
     var verticalSpacing: js.UndefOr[Double] = js.undefined
   }
@@ -6608,7 +6608,7 @@ object Diagram {
     var autoScrollChange: js.UndefOr[js.Function1[/* e */ AutoScrollChangeEventArgs, Unit]] = js.undefined
     
     /** Defines the background color of diagram elements
-      * @Default {transparent}
+      * @default {transparent}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
@@ -6617,7 +6617,7 @@ object Diagram {
     var backgroundImage: js.UndefOr[String] = js.undefined
     
     /** Sets the direction of line bridges.
-      * @Default {ej.datavisualization.Diagram.BridgeDirection.Top}
+      * @default {ej.datavisualization.Diagram.BridgeDirection.Top}
       */
     var bridgeDirection: js.UndefOr[BridgeDirection | String] = js.undefined
     
@@ -6646,17 +6646,17 @@ object Diagram {
     var connectorTargetChange: js.UndefOr[js.Function1[/* e */ ConnectorTargetChangeEventArgs, Unit]] = js.undefined
     
     /** Binds the custom JSON data with connector properties
-      * @Default {null}
+      * @default {null}
       */
     var connectorTemplate: js.UndefOr[Any] = js.undefined
     
     /** A collection of JSON objects where each object represents a connector
-      * @Default {[]}
+      * @default {[]}
       */
     var connectors: js.UndefOr[js.Array[Connector]] = js.undefined
     
     /** Enables/Disables the default behaviors of the diagram.
-      * @Default {ej.datavisualization.Diagram.DiagramConstraints.All}
+      * @default {ej.datavisualization.Diagram.DiagramConstraints.All}
       */
     var constraints: js.UndefOr[DiagramConstraints | String] = js.undefined
     
@@ -6681,7 +6681,7 @@ object Diagram {
     var dataSourceSettings: js.UndefOr[DataSourceSettings] = js.undefined
     
     /** Initializes the default values for nodes and connectors
-      * @Default {{}}
+      * @default {{}}
       */
     var defaultSettings: js.UndefOr[DefaultSettings] = js.undefined
     
@@ -6706,7 +6706,7 @@ object Diagram {
     var dragOver: js.UndefOr[js.Function1[/* e */ DragOverEventArgs, Unit]] = js.undefined
     
     /** Sets the type of JSON object to be drawn through drawing tool
-      * @Default {{}}
+      * @default {{}}
       */
     var drawType: js.UndefOr[Any] = js.undefined
     
@@ -6719,12 +6719,12 @@ object Diagram {
     var editorFocusChange: js.UndefOr[js.Function1[/* e */ EditorFocusChangeEventArgs, Unit]] = js.undefined
     
     /** Enables or disables auto scroll in diagram
-      * @Default {true}
+      * @default {true}
       */
     var enableAutoScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables diagram context menu
-      * @Default {true}
+      * @default {true}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
@@ -6733,7 +6733,7 @@ object Diagram {
     var groupChange: js.UndefOr[js.Function1[/* e */ GroupChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of the diagram
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
@@ -6750,12 +6750,12 @@ object Diagram {
     var itemClick: js.UndefOr[js.Function1[/* e */ ItemClickEventArgs, Unit]] = js.undefined
     
     /** Defines the type of the rendering mode of label.
-      * @Default {HTML}
+      * @default {HTML}
       */
     var labelRenderingMode: js.UndefOr[LabelRenderingMode | String] = js.undefined
     
     /** A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes.
-      * @Default {[]}
+      * @default {[]}
       */
     var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
@@ -6764,7 +6764,7 @@ object Diagram {
     var layout: js.UndefOr[Layout] = js.undefined
     
     /** Defines the current culture of diagram
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -6785,12 +6785,12 @@ object Diagram {
     var nodeCollectionChange: js.UndefOr[js.Function1[/* e */ NodeCollectionChangeEventArgs, Unit]] = js.undefined
     
     /** Binds the custom JSON data with node properties
-      * @Default {null}
+      * @default {null}
       */
     var nodeTemplate: js.UndefOr[Any] = js.undefined
     
     /** Array of JSON objects where each object represents a node
-      * @Default {[]}
+      * @default {[]}
       */
     var nodes: js.UndefOr[js.Array[Node]] = js.undefined
     
@@ -6839,7 +6839,7 @@ object Diagram {
     var setTool: js.UndefOr[js.Function1[/* e */ SetToolEventArgs, Unit]] = js.undefined
     
     /** Enables or disables tooltip of diagram
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
@@ -6856,22 +6856,22 @@ object Diagram {
     var textChange: js.UndefOr[js.Function1[/* e */ TextChangeEventArgs, Unit]] = js.undefined
     
     /** Enables/Disables the interactive behaviors of diagram.
-      * @Default {ej.datavisualization.Diagram.Tool.All}
+      * @default {ej.datavisualization.Diagram.Tool.All}
       */
     var tool: js.UndefOr[Tool | String] = js.undefined
     
     /** An object that defines the description, appearance and alignments of tooltips
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the width of the diagram
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
     
     /** Sets the factor by which we can zoom in or zoom out
-      * @Default {0.2}
+      * @default {0.2}
       */
     var zoomFactor: js.UndefOr[Double] = js.undefined
   }
@@ -7310,22 +7310,22 @@ object Diagram {
   trait Node extends StObject {
     
     /** Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity.
-      * @Default {ej.datavisualization.Diagram.BPMNActivity.Task}
+      * @default {ej.datavisualization.Diagram.BPMNActivity.Task}
       */
     var activity: js.UndefOr[BPMNActivity | String] = js.undefined
     
     /** To maintain additional information about nodes
-      * @Default {{}}
+      * @default {{}}
       */
     var addInfo: js.UndefOr[Any] = js.undefined
     
     /** Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
-      * @Default {ej.datavisualization.Diagram.BPMNTextAnnotation()}
+      * @default {ej.datavisualization.Diagram.BPMNTextAnnotation()}
       */
     var annotation: js.UndefOr[NodesAnnotation] = js.undefined
     
     /** Sets the border color of node
-      * @Default {black}
+      * @default {black}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
@@ -7334,32 +7334,32 @@ object Diagram {
     var borderDashArray: js.UndefOr[String] = js.undefined
     
     /** defines the node border with a smooth transition from one color to another color.
-      * @Default {null}
+      * @default {null}
       */
     var borderGradient: js.UndefOr[Any] = js.undefined
     
     /** Sets the border width of the node
-      * @Default {1}
+      * @default {1}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines whether the group can be ungrouped or not
-      * @Default {true}
+      * @default {true}
       */
     var canUngroup: js.UndefOr[Boolean] = js.undefined
     
     /** Array of JSON objects where each object represents a child node/connector
-      * @Default {[]}
+      * @default {[]}
       */
     var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
-      * @Default {null}
+      * @default {null}
       */
     var `class`: js.UndefOr[NodesClass] = js.undefined
     
     /** Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram shape.
-      * @Default {ej.datavisualization.Diagram.ClassifierShapes.Class}
+      * @default {ej.datavisualization.Diagram.ClassifierShapes.Class}
       */
     var classifier: js.UndefOr[ClassifierShapes | String] = js.undefined
     
@@ -7368,22 +7368,22 @@ object Diagram {
     var collapseIcon: js.UndefOr[NodesCollapseIcon] = js.undefined
     
     /** Defines the distance to be left between a node and its connections(In coming and out going connections).
-      * @Default {0}
+      * @default {0}
       */
     var connectorPadding: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the default behaviors of the node.
-      * @Default {ej.datavisualization.Diagram.NodeConstraints.Default}
+      * @default {ej.datavisualization.Diagram.NodeConstraints.Default}
       */
     var constraints: js.UndefOr[NodeConstraints | String] = js.undefined
     
     /** Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group.
-      * @Default {null}
+      * @default {null}
       */
     var container: js.UndefOr[NodesContainer] = js.undefined
     
     /** Defines the corner radius of rectangular shapes.
-      * @Default {0}
+      * @default {0}
       */
     var cornerRadius: js.UndefOr[Double] = js.undefined
     
@@ -7396,17 +7396,17 @@ object Diagram {
     var data: js.UndefOr[NodesData] = js.undefined
     
     /** Defines an Enumeration in a UML Class Diagram
-      * @Default {null}
+      * @default {null}
       */
     var enumeration: js.UndefOr[NodesEnumeration] = js.undefined
     
     /** Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
-      * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
+      * @default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
     var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
     /** Defines whether the node can be automatically arranged using layout or not
-      * @Default {false}
+      * @default {false}
       */
     var excludeFromLayout: js.UndefOr[Boolean] = js.undefined
     
@@ -7415,12 +7415,12 @@ object Diagram {
     var expandIcon: js.UndefOr[NodesExpandIcon] = js.undefined
     
     /** Defines the fill color of the node
-      * @Default {white}
+      * @default {white}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
-      * @Default {ej.datavisualization.Diagram.BPMNGateways.None}
+      * @default {ej.datavisualization.Diagram.BPMNGateways.None}
       */
     var gateway: js.UndefOr[BPMNGateways | String] = js.undefined
     
@@ -7429,87 +7429,87 @@ object Diagram {
     var gradient: js.UndefOr[NodesGradient] = js.undefined
     
     /** Defines the header of a swimlane/lane
-      * @Default {{ text: Title, fontSize: 11 }}
+      * @default {{ text: Title, fontSize: 11 }}
       */
     var header: js.UndefOr[Any] = js.undefined
     
     /** Defines the height of the node
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Left}
       */
     var horizontalAlign: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** A read only collection of the incoming connectors/edges of the node
-      * @Default {[]}
+      * @default {[]}
       */
     var inEdges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines an interface in a UML Class Diagram
-      * @Default {null}
+      * @default {null}
       */
     var interface: js.UndefOr[NodesInterface] = js.undefined
     
     /** Defines whether the sub tree of the node is expanded or collapsed
-      * @Default {true}
+      * @default {true}
       */
     var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the node as a swimlane
-      * @Default {false}
+      * @default {false}
       */
     var isSwimlane: js.UndefOr[Boolean] = js.undefined
     
     /** A collection of objects where each object represents a label
-      * @Default {[]}
+      * @default {[]}
       */
     var labels: js.UndefOr[js.Array[NodesLabel]] = js.undefined
     
     /** An array of objects where each object represents a lane. Applicable, if the node is a swimlane.
-      * @Default {[]}
+      * @default {[]}
       */
     var lanes: js.UndefOr[js.Array[NodesLane]] = js.undefined
     
     /** Defines the minimum space to be left between the bottom of parent bounds and the node. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the left of parent bounds and the node. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the right of the parent bounds and the node. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum space to be left between the top of parent bounds and the node. Applicable, if the parent is a container.
-      * @Default {0}
+      * @default {0}
       */
     var marginTop: js.UndefOr[Double] = js.undefined
     
     /** Defines the maximum height limit of the node
-      * @Default {0}
+      * @default {0}
       */
     var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the maximum width limit of the node
-      * @Default {0}
+      * @default {0}
       */
     var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum height limit of the node
-      * @Default {0}
+      * @default {0}
       */
     var minHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum width limit of the node
-      * @Default {0}
+      * @default {0}
       */
     var minWidth: js.UndefOr[Double] = js.undefined
     
@@ -7518,52 +7518,52 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the node on X-Axis
-      * @Default {0}
+      * @default {0}
       */
     var offsetX: js.UndefOr[Double] = js.undefined
     
     /** Defines the position of the node on Y-Axis
-      * @Default {0}
+      * @default {0}
       */
     var offsetY: js.UndefOr[Double] = js.undefined
     
     /** Defines the opaque of the node
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Defines the orientation of nodes. Applicable, if the node is a swimlane.
-      * @Default {vertical}
+      * @default {vertical}
       */
     var orientation: js.UndefOr[String] = js.undefined
     
     /** A read only collection of outgoing connectors/edges of the node
-      * @Default {[]}
+      * @default {[]}
       */
     var outEdges: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container.
-      * @Default {0}
+      * @default {0}
       */
     var paddingBottom: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the left most position of a group and its children. Applicable, if the group is a container.
-      * @Default {0}
+      * @default {0}
       */
     var paddingLeft: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the right most position of a group and its children. Applicable, if the group is a container.
-      * @Default {0}
+      * @default {0}
       */
     var paddingRight: js.UndefOr[Double] = js.undefined
     
     /** Defines the minimum padding value to be left between the top most position of a group and its children. Applicable, if the group is a container.
-      * @Default {0}
+      * @default {0}
       */
     var paddingTop: js.UndefOr[Double] = js.undefined
     
     /** Defines the size and preview size of the node to add that to symbol palette
-      * @Default {null}
+      * @default {null}
       */
     var paletteItem: js.UndefOr[NodesPaletteItem] = js.undefined
     
@@ -7576,42 +7576,42 @@ object Diagram {
     var pathData: js.UndefOr[String] = js.undefined
     
     /** Sets the height of the phase headers
-      * @Default {0}
+      * @default {0}
       */
     var phaseSize: js.UndefOr[Double] = js.undefined
     
     /** An array of objects, where each object represents a smaller region(phase) of a swimlane.
-      * @Default {[]}
+      * @default {[]}
       */
     var phases: js.UndefOr[js.Array[NodesPhase]] = js.undefined
     
     /** Sets the ratio/ fractional value relative to node, based on which the node will be transformed(positioning, scaling and rotation)
-      * @Default {ej.datavisualization.Diagram.Points(0.5,0.5)}
+      * @default {ej.datavisualization.Diagram.Points(0.5,0.5)}
       */
     var pivot: js.UndefOr[Any] = js.undefined
     
     /** Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon.
-      * @Default {[]}
+      * @default {[]}
       */
     var points: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** An array of objects where each object represents a port
-      * @Default {[]}
+      * @default {[]}
       */
     var ports: js.UndefOr[js.Array[NodesPort]] = js.undefined
     
     /** Sets the angle to which the node should be rotated
-      * @Default {0}
+      * @default {0}
       */
     var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Defines the opacity and the position of shadow
-      * @Default {ej.datavisualization.Diagram.Shadow()}
+      * @default {ej.datavisualization.Diagram.Shadow()}
       */
     var shadow: js.UndefOr[NodesShadow] = js.undefined
     
     /** Sets the shape of the node. It depends upon the type of node.
-      * @Default {ej.datavisualization.Diagram.BasicShapes.Rectangle}
+      * @default {ej.datavisualization.Diagram.BasicShapes.Rectangle}
       */
     var shape: js.UndefOr[BasicShapes | FlowShapes | BPMNShapes | UMLActivityShapes | String] = js.undefined
     
@@ -7620,12 +7620,12 @@ object Diagram {
     var source: js.UndefOr[String] = js.undefined
     
     /** Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process.
-      * @Default {ej.datavisualization.Diagram.BPMNSubProcess()}
+      * @default {ej.datavisualization.Diagram.BPMNSubProcess()}
       */
     var subProcess: js.UndefOr[NodesSubProcess] = js.undefined
     
     /** Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
-      * @Default {ej.datavisualization.Diagram.BPMNTask()}
+      * @default {ej.datavisualization.Diagram.BPMNTask()}
       */
     var task: js.UndefOr[NodesTask] = js.undefined
     
@@ -7634,42 +7634,42 @@ object Diagram {
     var templateId: js.UndefOr[String] = js.undefined
     
     /** Defines the textBlock of a text node
-      * @Default {null}
+      * @default {null}
       */
     var textBlock: js.UndefOr[Any] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer Tooltip
-      * @Default {null}
+      * @default {null}
       */
     var tooltip: js.UndefOr[Any] = js.undefined
     
     /** Sets the type of BPMN Event Triggers.
-      * @Default {ej.datavisualization.Diagram.BPMNTriggers.None}
+      * @default {ej.datavisualization.Diagram.BPMNTriggers.None}
       */
     var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
     
     /** Defines the type of the node.
-      * @Default {ej.datavisualization.Diagram.Shapes.Basic}
+      * @default {ej.datavisualization.Diagram.Shapes.Basic}
       */
     var `type`: js.UndefOr[Shapes | String] = js.undefined
     
     /** Sets the vertical alignment of a node. Applicable, if the parent of a node is a container.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Top}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Top}
       */
     var verticalAlign: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Defines the visibility of the node
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the width of the node
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Defines the z-index of the node
-      * @Default {0}
+      * @default {0}
       */
     var zOrder: js.UndefOr[Double] = js.undefined
   }
@@ -8058,22 +8058,22 @@ object Diagram {
   trait NodesAnnotation extends StObject {
     
     /** Sets the angle between the BPMN shape and the annotation
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Sets the direction of the text annotation
-      * @Default {ej.datavisualization.Diagram.BPMNAnnotationDirections.Left}
+      * @default {ej.datavisualization.Diagram.BPMNAnnotationDirections.Left}
       */
     var direction: js.UndefOr[BPMNAnnotationDirection | String] = js.undefined
     
     /** Sets the height of the text annotation
-      * @Default {20}
+      * @default {20}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the distance between the BPMN shape and the annotation
-      * @Default {0}
+      * @default {0}
       */
     var length: js.UndefOr[Double] = js.undefined
     
@@ -8082,7 +8082,7 @@ object Diagram {
     var text: js.UndefOr[String] = js.undefined
     
     /** Sets the  width of the text annotation
-      * @Default {20}
+      * @default {20}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -8125,12 +8125,12 @@ object Diagram {
   trait NodesClass extends StObject {
     
     /** Defines the collection of attributes
-      * @Default {[]}
+      * @default {[]}
       */
     var attributes: js.UndefOr[js.Array[NodesClassAttribute]] = js.undefined
     
     /** Defines the collection of methods of a Class.
-      * @Default {[]}
+      * @default {[]}
       */
     var methods: js.UndefOr[js.Array[NodesClassMethod]] = js.undefined
     
@@ -8173,7 +8173,7 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Defines the visibility of the attribute
-      * @Default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
+      * @default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
       */
     var scope: js.UndefOr[String] = js.undefined
     
@@ -8208,7 +8208,7 @@ object Diagram {
   trait NodesClassMethod extends StObject {
     
     /** Sets the visibility of the method.
-      * @Default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
+      * @default {ej.datavisualization.Diagram.ScopeValueDefaults.Public}
       */
     var scope: js.UndefOr[String] = js.undefined
   }
@@ -8231,47 +8231,47 @@ object Diagram {
   trait NodesCollapseIcon extends StObject {
     
     /** Sets the border color for collapse icon of node
-      * @Default {black}
+      * @default {black}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width for collapse icon of node
-      * @Default {1}
+      * @default {1}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the fill color for collapse icon of node
-      * @Default {white}
+      * @default {white}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height for collapse icon of node
-      * @Default {15}
+      * @default {15}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the icon.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin for the collapse icon of node
-      * @Default {ej.datavisualization.Diagram.Margin()}
+      * @default {ej.datavisualization.Diagram.Margin()}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the shape of the collapsed state of the node.
-      * @Default {ej.datavisualization.Diagram.IconShapes.None}
+      * @default {ej.datavisualization.Diagram.IconShapes.None}
       */
     var shape: js.UndefOr[IconShapes | String] = js.undefined
     
     /** Sets the vertical alignment of the icon.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
   }
@@ -8326,12 +8326,12 @@ object Diagram {
   trait NodesContainer extends StObject {
     
     /** Defines the orientation of the container. Applicable, if the group is a container.
-      * @Default {vertical}
+      * @default {vertical}
       */
     var orientation: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the container. Applicable if the group is a container.
-      * @Default {ej.datavisualization.Diagram.ContainerType.Canvas}
+      * @default {ej.datavisualization.Diagram.ContainerType.Canvas}
       */
     var `type`: js.UndefOr[ContainerType | String] = js.undefined
   }
@@ -8358,12 +8358,12 @@ object Diagram {
   trait NodesData extends StObject {
     
     /** Defines whether the BPMN data object is a collection or not
-      * @Default {false}
+      * @default {false}
       */
     var collection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the type of the BPMN Data object
-      * @Default {ej.datavisualization.Diagram.BPMNDataObjects.None}
+      * @default {ej.datavisualization.Diagram.BPMNDataObjects.None}
       */
     var `type`: js.UndefOr[BPMNDataObjects | String] = js.undefined
   }
@@ -8390,7 +8390,7 @@ object Diagram {
   trait NodesEnumeration extends StObject {
     
     /** Defines the collection of enumeration members
-      * @Default {[]}
+      * @default {[]}
       */
     var members: js.UndefOr[js.Array[NodesEnumerationMember]] = js.undefined
     
@@ -8445,47 +8445,47 @@ object Diagram {
   trait NodesExpandIcon extends StObject {
     
     /** Sets the border color for expand icon of node
-      * @Default {black}
+      * @default {black}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width for expand icon of node
-      * @Default {1}
+      * @default {1}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the fill color for expand icon of node
-      * @Default {white}
+      * @default {white}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the height for expand icon of node
-      * @Default {15}
+      * @default {15}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the icon.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin for the expand icon of node
-      * @Default {ej.datavisualization.Diagram.Margin()}
+      * @default {ej.datavisualization.Diagram.Margin()}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the icon
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 1)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 1)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the shape of the expanded state of the node.
-      * @Default {ej.datavisualization.Diagram.IconShapes.None}
+      * @default {ej.datavisualization.Diagram.IconShapes.None}
       */
     var shape: js.UndefOr[IconShapes | String] = js.undefined
     
     /** Sets the vertical alignment of the icon.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
   }
@@ -8578,32 +8578,32 @@ object Diagram {
   trait NodesGradientLinearGradient extends StObject {
     
     /** Defines the different colors and the region of color transitions
-      * @Default {[]}
+      * @default {[]}
       */
     var stops: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of gradient
-      * @Default {linear}
+      * @default {linear}
       */
     var `type`: js.UndefOr[String] = js.undefined
     
     /** Defines the left most position(relative to node) of the rectangular region that needs to be painted
-      * @Default {0}
+      * @default {0}
       */
     var x1: js.UndefOr[Double] = js.undefined
     
     /** Defines the right most position(relative to node) of the rectangular region that needs to be painted
-      * @Default {0}
+      * @default {0}
       */
     var x2: js.UndefOr[Double] = js.undefined
     
     /** Defines the top most position(relative to node) of the rectangular region that needs to be painted
-      * @Default {0}
+      * @default {0}
       */
     var y1: js.UndefOr[Double] = js.undefined
     
     /** Defines the bottom most position(relative to node) of the rectangular region that needs to be painted
-      * @Default {0}
+      * @default {0}
       */
     var y2: js.UndefOr[Double] = js.undefined
   }
@@ -8648,32 +8648,32 @@ object Diagram {
   trait NodesGradientRadialGradient extends StObject {
     
     /** Defines the position of the outermost circle
-      * @Default {0}
+      * @default {0}
       */
     var cx: js.UndefOr[Double] = js.undefined
     
     /** Defines the outer most circle of the radial gradient
-      * @Default {0}
+      * @default {0}
       */
     var cy: js.UndefOr[Double] = js.undefined
     
     /** Defines the innermost circle of the radial gradient
-      * @Default {0}
+      * @default {0}
       */
     var fx: js.UndefOr[Double] = js.undefined
     
     /** Defines the innermost circle of the radial gradient
-      * @Default {0}
+      * @default {0}
       */
     var fy: js.UndefOr[Double] = js.undefined
     
     /** Defines the different colors and the region of color transitions.
-      * @Default {[]}
+      * @default {[]}
       */
     var stops: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of gradient
-      * @Default {radial}
+      * @default {radial}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -8722,12 +8722,12 @@ object Diagram {
     var color: js.UndefOr[String] = js.undefined
     
     /** Sets the position where the previous color transition ends and a new color transition starts
-      * @Default {0}
+      * @default {0}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Describes the transparency level of the region
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -8758,12 +8758,12 @@ object Diagram {
   trait NodesInterface extends StObject {
     
     /** Defines a collection of attributes of the interface
-      * @Default {[]}
+      * @default {[]}
       */
     var attributes: js.UndefOr[js.Array[NodesInterfaceAttribute]] = js.undefined
     
     /** Defines the collection of public methods of an interface
-      * @Default {[]}
+      * @default {[]}
       */
     var methods: js.UndefOr[js.Array[NodesInterfaceMethod]] = js.undefined
     
@@ -8862,22 +8862,22 @@ object Diagram {
   trait NodesLabel extends StObject {
     
     /** Enables/disables the bold style
-      * @Default {false}
+      * @default {false}
       */
     var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the border color of the label
-      * @Default {transparent}
+      * @default {transparent}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of the label
-      * @Default {0}
+      * @default {0}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the default behaviors of the label.
-      * @Default {ej.datavisualization.Diagram.LabelConstraints.None}
+      * @default {ej.datavisualization.Diagram.LabelConstraints.None}
       */
     var constraints: js.UndefOr[LabelConstraints | String] = js.undefined
     
@@ -8886,47 +8886,47 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the text area
-      * @Default {transparent}
+      * @default {transparent}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font color of the text
-      * @Default {black}
+      * @default {black}
       */
     var fontColor: js.UndefOr[String] = js.undefined
     
     /** Sets the font family of the text
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Defines the font size of the text
-      * @Default {12}
+      * @default {12}
       */
     var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the label(the maximum value of label height and the node height will be considered as label height)
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal alignment of the label.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Enables/disables the italic style
-      * @Default {false}
+      * @default {false}
       */
     var italic: js.UndefOr[Boolean] = js.undefined
     
     /** To set the margin of the label
-      * @Default {ej.datavisualization.Diagram.Margin()}
+      * @default {ej.datavisualization.Diagram.Margin()}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Gets whether the label is currently being edited or not.
-      * @Default {ej.datavisualization.Diagram.LabelEditMode.Edit}
+      * @default {ej.datavisualization.Diagram.LabelEditMode.Edit}
       */
     var mode: js.UndefOr[LabelEditMode | String] = js.undefined
     
@@ -8935,32 +8935,32 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the label
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** Defines the transparency of the labels
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Sets the overflowType of the labels
-      * @Default {ej.datavisualization.Diagram.OverflowType.Ellipsis}
+      * @default {ej.datavisualization.Diagram.OverflowType.Ellipsis}
       */
     var overflowType: js.UndefOr[OverflowType | String] = js.undefined
     
     /** To set the padding of the node label
-      * @Default {ej.datavisualization.Diagram.Padding()}
+      * @default {ej.datavisualization.Diagram.Padding()}
       */
     var padding: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the label is editable or not
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the angle to which the label needs to be rotated
-      * @Default {0}
+      * @default {0}
       */
     var rotateAngle: js.UndefOr[Double] = js.undefined
     
@@ -8973,37 +8973,37 @@ object Diagram {
     var text: js.UndefOr[String] = js.undefined
     
     /** Defines how to align the text inside the label.
-      * @Default {ej.datavisualization.Diagram.TextAlign.Center}
+      * @default {ej.datavisualization.Diagram.TextAlign.Center}
       */
     var textAlign: js.UndefOr[typings.ejWebAll.ej.TextAlign | String] = js.undefined
     
     /** Sets how to decorate the label text.
-      * @Default {ej.datavisualization.Diagram.TextDecorations.None}
+      * @default {ej.datavisualization.Diagram.TextDecorations.None}
       */
     var textDecoration: js.UndefOr[TextDecorations | String] = js.undefined
     
     /** Defines the overflowed content is displayed or not.
-      * @Default {false}
+      * @default {false}
       */
     var textOverflow: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the vertical alignment of the label.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Enables or disables the visibility of the label
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the width of the label(the maximum value of label width and the node width will be considered as label width)
-      * @Default {50}
+      * @default {50}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Defines how the label text needs to be wrapped.
-      * @Default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
+      * @default {ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow}
       */
     var wrapping: js.UndefOr[TextWrapping | String] = js.undefined
   }
@@ -9142,12 +9142,12 @@ object Diagram {
   trait NodesLane extends StObject {
     
     /** Allows to maintain additional information about lane
-      * @Default {{}}
+      * @default {{}}
       */
     var addInfo: js.UndefOr[Any] = js.undefined
     
     /** An array of objects where each object represents a child node of the lane
-      * @Default {[]}
+      * @default {[]}
       */
     var children: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -9156,22 +9156,22 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the fill color of the lane
-      * @Default {white}
+      * @default {white}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
     /** Defines the header of the lane
-      * @Default {{ text: Function, fontSize: 11 }}
+      * @default {{ text: Function, fontSize: 11 }}
       */
     var header: js.UndefOr[Any] = js.undefined
     
     /** Defines the height of lane
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Defines the object as a lane
-      * @Default {false}
+      * @default {false}
       */
     var isLane: js.UndefOr[Boolean] = js.undefined
     
@@ -9180,17 +9180,17 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the orientation of the lane.
-      * @Default {vertical}
+      * @default {vertical}
       */
     var orientation: js.UndefOr[String] = js.undefined
     
     /** Defines the width of lane
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
     
     /** Defines the z-index of the lane
-      * @Default {0}
+      * @default {0}
       */
     var zorder: js.UndefOr[Double] = js.undefined
   }
@@ -9255,37 +9255,37 @@ object Diagram {
   trait NodesPaletteItem extends StObject {
     
     /** Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
-      * @Default {true}
+      * @default {true}
       */
     var enableScale: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the symbol
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** To display a name for nodes in the symbol palette
-      * @Default {null}
+      * @default {null}
       */
     var label: js.UndefOr[String] = js.undefined
     
     /** Defines the margin of the symbol item
-      * @Default {{ left: 4, right: 4, top: 4, bottom: 4 }}
+      * @default {{ left: 4, right: 4, top: 4, bottom: 4 }}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines the preview height of the symbol
-      * @Default {undefined}
+      * @default {undefined}
       */
     var previewHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the preview width of the symbol
-      * @Default {undefined}
+      * @default {undefined}
       */
     var previewWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the symbol
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -9332,22 +9332,22 @@ object Diagram {
   trait NodesPhase extends StObject {
     
     /** Defines the header of the smaller regions
-      * @Default {null}
+      * @default {null}
       */
     var label: js.UndefOr[Any] = js.undefined
     
     /** Defines the line color of the splitter that splits adjacent phases.
-      * @Default {#606060}
+      * @default {#606060}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
     /** Sets the dash array that used to stroke the phase splitter
-      * @Default {3,3}
+      * @default {3,3}
       */
     var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** Sets the lineWidth of the phase
-      * @Default {1}
+      * @default {1}
       */
     var lineWidth: js.UndefOr[Double] = js.undefined
     
@@ -9356,17 +9356,17 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the length of the smaller region(phase) of a swimlane
-      * @Default {100}
+      * @default {100}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation of the phase
-      * @Default {horizontal}
+      * @default {horizontal}
       */
     var orientation: js.UndefOr[String] = js.undefined
     
     /** Sets the type of the object as phase
-      * @Default {phase}
+      * @default {phase}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -9417,22 +9417,22 @@ object Diagram {
   trait NodesPort extends StObject {
     
     /** Sets the border color of the port
-      * @Default {#1a1a1a}
+      * @default {#1a1a1a}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the stroke width of the port
-      * @Default {1}
+      * @default {1}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the space to be left between the port bounds and its incoming and outgoing connections.
-      * @Default {0}
+      * @default {0}
       */
     var connectorPadding: js.UndefOr[Double] = js.undefined
     
     /** Defines whether connections can be created with the port
-      * @Default {ej.datavisualization.Diagram.PortConstraints.Connect}
+      * @default {ej.datavisualization.Diagram.PortConstraints.Connect}
       */
     var constraints: js.UndefOr[PortConstraints | String] = js.undefined
     
@@ -9441,7 +9441,7 @@ object Diagram {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the fill color of the port
-      * @Default {white}
+      * @default {white}
       */
     var fillColor: js.UndefOr[String] = js.undefined
     
@@ -9450,7 +9450,7 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the port as fraction/ ratio relative to node
-      * @Default {ej.datavisualization.Diagram.Point(0, 0)}
+      * @default {ej.datavisualization.Diagram.Point(0, 0)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
@@ -9463,17 +9463,17 @@ object Diagram {
     var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the shape of the port.
-      * @Default {ej.datavisualization.Diagram.PortShapes.Square}
+      * @default {ej.datavisualization.Diagram.PortShapes.Square}
       */
     var shape: js.UndefOr[PortShapes | String] = js.undefined
     
     /** Defines the size of the port
-      * @Default {8}
+      * @default {8}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Defines when the port should be visible.
-      * @Default {ej.datavisualization.Diagram.PortVisibility.Default}
+      * @default {ej.datavisualization.Diagram.PortVisibility.Default}
       */
     var visibility: js.UndefOr[PortVisibility | String] = js.undefined
   }
@@ -9544,17 +9544,17 @@ object Diagram {
   trait NodesShadow extends StObject {
     
     /** Defines the angle of the shadow relative to node
-      * @Default {45}
+      * @default {45}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Sets the distance to move the shadow relative to node
-      * @Default {5}
+      * @default {5}
       */
     var distance: js.UndefOr[Double] = js.undefined
     
     /** Defines the opaque of the shadow
-      * @Default {0.7}
+      * @default {0.7}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -9585,32 +9585,32 @@ object Diagram {
   trait NodesSubProcess extends StObject {
     
     /** Defines the children for BPMN's SubProcess
-      * @Default {[]}
+      * @default {[]}
       */
     var Processes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines whether the BPMN sub process is without any prescribed order or not
-      * @Default {false}
+      * @default {false}
       */
     var adhoc: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the boundary of the BPMN process
-      * @Default {ej.datavisualization.Diagram.BPMNBoundary.Default}
+      * @default {ej.datavisualization.Diagram.BPMNBoundary.Default}
       */
     var boundary: js.UndefOr[BPMNBoundary | String] = js.undefined
     
     /** Sets whether the BPMN subprocess is triggered as a collapsed of a specific activity
-      * @Default {true}
+      * @default {true}
       */
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the BPMN subprocess is triggered as a compensation of a specific activity
-      * @Default {false}
+      * @default {false}
       */
     var compensation: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the type of the event by which the sub-process will be triggered
-      * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
+      * @default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
     var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
@@ -9619,17 +9619,17 @@ object Diagram {
     var events: js.UndefOr[js.Array[NodesSubProcessEvent]] = js.undefined
     
     /** Defines the loop type of a sub process.
-      * @Default {ej.datavisualization.Diagram.BPMNLoops.None}
+      * @default {ej.datavisualization.Diagram.BPMNLoops.None}
       */
     var loop: js.UndefOr[BPMNLoops | String] = js.undefined
     
     /** Defines the type of the event trigger
-      * @Default {ej.datavisualization.Diagram.BPMNTriggers.Message}
+      * @default {ej.datavisualization.Diagram.BPMNTriggers.Message}
       */
     var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
     
     /** Defines the type of a sub process
-      * @Default {ej.datavisualization.Diagram.BPMNSubProcessTypes.None}
+      * @default {ej.datavisualization.Diagram.BPMNSubProcessTypes.None}
       */
     var `type`: js.UndefOr[BPMNSubProcessTypes | String] = js.undefined
   }
@@ -9692,12 +9692,12 @@ object Diagram {
   trait NodesSubProcessEvent extends StObject {
     
     /** Sets the type of the event by which the sub-process will be triggered
-      * @Default {ej.datavisualization.Diagram.BPMNEvents.Start}
+      * @default {ej.datavisualization.Diagram.BPMNEvents.Start}
       */
     var event: js.UndefOr[BPMNEvents | String] = js.undefined
     
     /** A collection of objects where each object represents a label
-      * @Default {[]}
+      * @default {[]}
       */
     var labels: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -9706,17 +9706,17 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to parent) that defines the position of the event shape
-      * @Default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
+      * @default {ej.datavisualization.Diagram.Point(0.5, 0.5)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** An array of objects where each object represents a port
-      * @Default {[]}
+      * @default {[]}
       */
     var ports: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Defines the type of the event trigger
-      * @Default {ej.datavisualization.Diagram.BPMNTriggers.Message}
+      * @default {ej.datavisualization.Diagram.BPMNTriggers.Message}
       */
     var trigger: js.UndefOr[BPMNTriggers | String] = js.undefined
   }
@@ -9763,12 +9763,12 @@ object Diagram {
   trait NodesTask extends StObject {
     
     /** To set whether the task is a global task or not
-      * @Default {false}
+      * @default {false}
       */
     var call: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the task is triggered as a compensation of another specific activity
-      * @Default {false}
+      * @default {false}
       */
     var compensation: js.UndefOr[Boolean] = js.undefined
     
@@ -9777,12 +9777,12 @@ object Diagram {
     var events: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the loop type of a BPMN task.
-      * @Default {ej.datavisualization.Diagram.BPMNLoops.None}
+      * @default {ej.datavisualization.Diagram.BPMNLoops.None}
       */
     var loop: js.UndefOr[BPMNLoops | String] = js.undefined
     
     /** Sets the type of the BPMN task.
-      * @Default {ej.datavisualization.Diagram.BPMNTasks.None}
+      * @default {ej.datavisualization.Diagram.BPMNTasks.None}
       */
     var `type`: js.UndefOr[BPMNTasks | String] = js.undefined
   }
@@ -9925,67 +9925,67 @@ object Diagram {
   trait PageSettings extends StObject {
     
     /** Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
-      * @Default {{ left: 15, top: 15, right: 15, bottom: 15 }}
+      * @default {{ left: 15, top: 15, right: 15, bottom: 15 }}
       */
     var autoScrollBorder: js.UndefOr[Any] = js.undefined
     
     /** Defines the draggable region of diagram elements.
-      * @Default {ej.datavisualization.Diagram.BoundaryConstraints.Infinite}
+      * @default {ej.datavisualization.Diagram.BoundaryConstraints.Infinite}
       */
     var boundaryConstraints: js.UndefOr[BoundaryConstraints | String] = js.undefined
     
     /** Sets whether multiple pages can be created to fit all nodes and connectors
-      * @Default {false}
+      * @default {false}
       */
     var multiplePage: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the background color of diagram pages
-      * @Default {#ffffff}
+      * @default {#ffffff}
       */
     var pageBackgroundColor: js.UndefOr[String] = js.undefined
     
     /** Defines the page border color
-      * @Default {#565656}
+      * @default {#565656}
       */
     var pageBorderColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border width of diagram pages
-      * @Default {0}
+      * @default {0}
       */
     var pageBorderWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of a page
-      * @Default {null}
+      * @default {null}
       */
     var pageHeight: js.UndefOr[Double] = js.undefined
     
     /** Defines the page margin
-      * @Default {24}
+      * @default {24}
       */
     var pageMargin: js.UndefOr[Double] = js.undefined
     
     /** Sets the orientation of the page.
-      * @Default {ej.datavisualization.Diagram.PageOrientations.Portrait}
+      * @default {ej.datavisualization.Diagram.PageOrientations.Portrait}
       */
     var pageOrientation: js.UndefOr[PageOrientations | String] = js.undefined
     
     /** Defines the height of a diagram page
-      * @Default {null}
+      * @default {null}
       */
     var pageWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the scrollable region of diagram.
-      * @Default {ej.datavisualization.Diagram.ScrollLimit.Infinite}
+      * @default {ej.datavisualization.Diagram.ScrollLimit.Infinite}
       */
     var scrollLimit: js.UndefOr[ScrollLimit | String] = js.undefined
     
     /** Defines the scrollable area of diagram. Applicable, if the scroll limit is &quot;limited&quot;.
-      * @Default {null}
+      * @default {null}
       */
     var scrollableArea: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the page breaks
-      * @Default {false}
+      * @default {false}
       */
     var showPageBreak: js.UndefOr[Boolean] = js.undefined
   }
@@ -10324,7 +10324,7 @@ object Diagram {
     var horizontalRuler: js.UndefOr[RulerSettingsHorizontalRuler] = js.undefined
     
     /** Enables or disables both the horizontal and vertical ruler.
-      * @Default {false}
+      * @default {false}
       */
     var showRulers: js.UndefOr[Boolean] = js.undefined
     
@@ -10359,37 +10359,37 @@ object Diagram {
   trait RulerSettingsHorizontalRuler extends StObject {
     
     /** Defines the method which used to position and arrange the tick elements of the horizontal ruler.
-      * @Default {null}
+      * @default {null}
       */
     var arrangeTick: js.UndefOr[Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the horizontal ruler.
-      * @Default {5}
+      * @default {5}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the horizontal ruler.
-      * @Default {null}
+      * @default {null}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Defines the color of the horizontal marker brush.
-      * @Default {red}
+      * @default {red}
       */
     var markerColor: js.UndefOr[String] = js.undefined
     
     /** Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the horizontal ruler.
-      * @Default {100}
+      * @default {100}
       */
     var segmentWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the horizontal ruler.
-      * @Default {25}
+      * @default {25}
       */
     var thickness: js.UndefOr[Double] = js.undefined
     
     /** Defines and sets the tick alignment of the ruler scale.
-      * @Default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
+      * @default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
       */
     var tickAlignment: js.UndefOr[TickAlignment | String] = js.undefined
   }
@@ -10436,37 +10436,37 @@ object Diagram {
   trait RulerSettingsVerticalRuler extends StObject {
     
     /** Defines the method which used to position and arrange the tick elements of the vertical ruler.
-      * @Default {null}
+      * @default {null}
       */
     var arrangeTick: js.UndefOr[Any] = js.undefined
     
     /** Defines the number of intervals to be present on the each segment of the vertical ruler.
-      * @Default {5}
+      * @default {5}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the height of the vertical ruler.
-      * @Default {null}
+      * @default {null}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Defines the color of the vertical marker brush.
-      * @Default {red}
+      * @default {red}
       */
     var markerColor: js.UndefOr[String] = js.undefined
     
     /** Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
-      * @Default {100}
+      * @default {100}
       */
     var segmentWidth: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the vertical ruler.
-      * @Default {25}
+      * @default {25}
       */
     var thickness: js.UndefOr[Double] = js.undefined
     
     /** Defines and sets the tick alignment of the ruler scale.
-      * @Default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
+      * @default {ej.datavisualization.Diagram.TickAlignment.RightOrBottom}
       */
     var tickAlignment: js.UndefOr[TickAlignment | String] = js.undefined
   }
@@ -10567,32 +10567,32 @@ object Diagram {
   trait ScrollSettings extends StObject {
     
     /** Allows to read the zoom value of diagram
-      * @Default {0}
+      * @default {0}
       */
     var currentZoom: js.UndefOr[Double] = js.undefined
     
     /** Sets the horizontal scroll offset
-      * @Default {0}
+      * @default {0}
       */
     var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     /** Allows to extend the scrollable region that is based on the scroll limit
-      * @Default {{left: 0, right: 0, top:0, bottom: 0}}
+      * @default {{left: 0, right: 0, top:0, bottom: 0}}
       */
     var padding: js.UndefOr[Any] = js.undefined
     
     /** Sets the vertical scroll offset
-      * @Default {0}
+      * @default {0}
       */
     var verticalOffset: js.UndefOr[Double] = js.undefined
     
     /** Allows to read the view port height of the diagram
-      * @Default {0}
+      * @default {0}
       */
     var viewPortHeight: js.UndefOr[Double] = js.undefined
     
     /** Allows to read the view port width of the diagram
-      * @Default {0}
+      * @default {0}
       */
     var viewPortWidth: js.UndefOr[Double] = js.undefined
   }
@@ -10689,52 +10689,52 @@ object Diagram {
   trait SelectedItems extends StObject {
     
     /** A read only collection of the selected items
-      * @Default {[]}
+      * @default {[]}
       */
     var children: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Controls the visibility of selector.
-      * @Default {ej.datavisualization.Diagram.SelectorConstraints.All}
+      * @default {ej.datavisualization.Diagram.SelectorConstraints.All}
       */
     var constraints: js.UndefOr[SelectorConstraints | String] = js.undefined
     
     /** Defines a method that dynamically enables/ disables the interaction with multiple selection.
-      * @Default {null}
+      * @default {null}
       */
     var getConstraints: js.UndefOr[Any] = js.undefined
     
     /** Sets the height of the selected items
-      * @Default {0}
+      * @default {0}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the x position of the selector
-      * @Default {0}
+      * @default {0}
       */
     var offsetX: js.UndefOr[Double] = js.undefined
     
     /** Sets the y position of the selector
-      * @Default {0}
+      * @default {0}
       */
     var offsetY: js.UndefOr[Double] = js.undefined
     
     /** Sets the angle to rotate the selected items
-      * @Default {0}
+      * @default {0}
       */
     var rotateAngle: js.UndefOr[Double] = js.undefined
     
     /** Sets the angle to rotate the selected items. For tooltip properties, refer Tooltip
-      * @Default {ej.datavisualization.Diagram.Tooltip()}
+      * @default {ej.datavisualization.Diagram.Tooltip()}
       */
     var tooltip: js.UndefOr[Any] = js.undefined
     
     /** A collection of frequently used commands that will be added around the selector
-      * @Default {[]}
+      * @default {[]}
       */
     var userHandles: js.UndefOr[js.Array[SelectedItemsUserHandle]] = js.undefined
     
     /** Sets the width of the selected items
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -10797,27 +10797,27 @@ object Diagram {
   trait SelectedItemsUserHandle extends StObject {
     
     /** Defines the background color of the user handle
-      * @Default {#2382c3}
+      * @default {#2382c3}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Sets the border color of the user handle
-      * @Default {transparent}
+      * @default {transparent}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Defines whether the user handle should be added, when more than one element is selected
-      * @Default {false}
+      * @default {false}
       */
     var enableMultiSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the horizontal alignment of the user handle
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontalAlignment: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** To set the margin of the user handle
-      * @Default {ej.datavisualization.Diagram.Margin()}
+      * @default {ej.datavisualization.Diagram.Margin()}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
@@ -10826,12 +10826,12 @@ object Diagram {
     var name: js.UndefOr[String] = js.undefined
     
     /** Sets the fraction/ratio(relative to node) that defines the position of the user handle
-      * @Default {ej.datavisualization.Diagram.point(0.5, 1)}
+      * @default {ej.datavisualization.Diagram.point(0.5, 1)}
       */
     var offset: js.UndefOr[Any] = js.undefined
     
     /** Sets the stroke color of the user handle
-      * @Default {transparent}
+      * @default {transparent}
       */
     var pathColor: js.UndefOr[String] = js.undefined
     
@@ -10840,12 +10840,12 @@ object Diagram {
     var pathData: js.UndefOr[String] = js.undefined
     
     /** Defines the position of the user handle
-      * @Default {ej.datavisualization.Diagram.UserHandlePositions.BottomCenter}
+      * @default {ej.datavisualization.Diagram.UserHandlePositions.BottomCenter}
       */
     var position: js.UndefOr[UserHandlePositions | String] = js.undefined
     
     /** Defines the size of the user handle
-      * @Default {8}
+      * @default {8}
       */
     var size: js.UndefOr[Double] = js.undefined
     
@@ -10854,12 +10854,12 @@ object Diagram {
     var tool: js.UndefOr[Any] = js.undefined
     
     /** Sets the vertical alignment of the user handle
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Center}
       */
     var verticalAlignment: js.UndefOr[VerticalAlignment | String] = js.undefined
     
     /** Defines the visibility of the user handle
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -11027,7 +11027,7 @@ object Diagram {
   trait SerializationSettings extends StObject {
     
     /** defines whether the default diagram properties can be serialized or not.
-      * @Default {false}
+      * @default {false}
       */
     var preventDefaultValues: js.UndefOr[Boolean] = js.undefined
   }
@@ -11158,7 +11158,7 @@ object Diagram {
   trait SnapSettings extends StObject {
     
     /** Enables or disables snapping nodes/connectors to objects
-      * @Default {true}
+      * @default {true}
       */
     var enableSnapToObject: js.UndefOr[Boolean] = js.undefined
     
@@ -11167,7 +11167,7 @@ object Diagram {
     var horizontalGridLines: js.UndefOr[SnapSettingsHorizontalGridLines] = js.undefined
     
     /** Defines the angle by which the object needs to be snapped
-      * @Default {5}
+      * @default {5}
       */
     var snapAngle: js.UndefOr[Double] = js.undefined
     
@@ -11176,7 +11176,7 @@ object Diagram {
     var snapConstraints: js.UndefOr[SnapConstraints | String] = js.undefined
     
     /** Defines the minimum distance between the selected object and the nearest object
-      * @Default {5}
+      * @default {5}
       */
     var snapObjectDistance: js.UndefOr[Double] = js.undefined
     
@@ -11223,7 +11223,7 @@ object Diagram {
   trait SnapSettingsHorizontalGridLines extends StObject {
     
     /** Defines the line color of horizontal grid lines
-      * @Default {lightgray}
+      * @default {lightgray}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
@@ -11232,12 +11232,12 @@ object Diagram {
     var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
-      * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
+      * @default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
     var linesInterval: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
-      * @Default {[20]}
+      * @default {[20]}
       */
     var snapInterval: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -11276,7 +11276,7 @@ object Diagram {
   trait SnapSettingsVerticalGridLines extends StObject {
     
     /** Defines the line color of horizontal grid lines
-      * @Default {lightgray}
+      * @default {lightgray}
       */
     var lineColor: js.UndefOr[String] = js.undefined
     
@@ -11285,12 +11285,12 @@ object Diagram {
     var lineDashArray: js.UndefOr[String] = js.undefined
     
     /** A pattern of lines and gaps that defines a set of horizontal gridlines
-      * @Default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
+      * @default {[1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]}
       */
     var linesInterval: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies a set of intervals to snap the objects
-      * @Default {[20]}
+      * @default {[20]}
       */
     var snapInterval: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -11387,12 +11387,12 @@ object Diagram {
     var alignment: js.UndefOr[TooltipAlignment] = js.undefined
     
     /** Sets the margin of the tooltip
-      * @Default {{ left: 5, right: 5, top: 5, bottom: 5 }}
+      * @default {{ left: 5, right: 5, top: 5, bottom: 5 }}
       */
     var margin: js.UndefOr[Any] = js.undefined
     
     /** Defines whether the tooltip should be shown at the mouse position or around node.
-      * @Default {ej.datavisualization.Diagram.RelativeMode.Object}
+      * @default {ej.datavisualization.Diagram.RelativeMode.Object}
       */
     var relativeMode: js.UndefOr[RelativeMode | String] = js.undefined
     
@@ -11431,12 +11431,12 @@ object Diagram {
   trait TooltipAlignment extends StObject {
     
     /** Defines the horizontal alignment of tooltip.
-      * @Default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
+      * @default {ej.datavisualization.Diagram.HorizontalAlignment.Center}
       */
     var horizontal: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /** Defines the vertical alignment of tooltip.
-      * @Default {ej.datavisualization.Diagram.VerticalAlignment.Bottom}
+      * @default {ej.datavisualization.Diagram.VerticalAlignment.Bottom}
       */
     var vertical: js.UndefOr[VerticalAlignment | String] = js.undefined
   }

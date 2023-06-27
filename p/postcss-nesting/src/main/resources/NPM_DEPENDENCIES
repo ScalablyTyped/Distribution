@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-nesting" : "11.2.2"
+      "postcss-nesting" : "11.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-nesting" : "11.2.2"
+      "postcss-nesting" : "11.3.0"
     }
   ],
   "compile-devDependencies" : [

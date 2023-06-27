@@ -8,12 +8,12 @@ trait PathOwnerRepoRequiredworkflowidforrepo extends StObject {
   
   var path: OwnerRepoRequiredworkflowidforrepo
   
-  var query: ActorBranch
+  var query: js.UndefOr[ActorBranch] = js.undefined
 }
 object PathOwnerRepoRequiredworkflowidforrepo {
   
-  inline def apply(path: OwnerRepoRequiredworkflowidforrepo, query: ActorBranch): PathOwnerRepoRequiredworkflowidforrepo = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: OwnerRepoRequiredworkflowidforrepo): PathOwnerRepoRequiredworkflowidforrepo = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOwnerRepoRequiredworkflowidforrepo]
   }
   
@@ -23,5 +23,7 @@ object PathOwnerRepoRequiredworkflowidforrepo {
     inline def setPath(value: OwnerRepoRequiredworkflowidforrepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: ActorBranch): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

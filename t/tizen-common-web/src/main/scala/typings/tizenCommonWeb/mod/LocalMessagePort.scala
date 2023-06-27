@@ -13,9 +13,9 @@ trait LocalMessagePort extends StObject {
     *
     * @returns ID of the listener that is later used to remove the listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addMessagePortListener(listener: MessagePortCallback): Double
   
@@ -34,10 +34,10 @@ trait LocalMessagePort extends StObject {
     *
     * @param watchId ID to identify the listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
-    * @throw WebAPIException with error type NotFoundError, if the watch ID has not been found.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
+    * @throws WebAPIException with error type NotFoundError, if the watch ID has not been found.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def removeMessagePortListener(watchId: Double): Unit
 }

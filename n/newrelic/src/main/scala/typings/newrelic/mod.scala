@@ -2,8 +2,13 @@ package typings.newrelic
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.newrelic.anon.CollectPendingData
+import typings.newrelic.anon.CustomAttributes
 import typings.newrelic.anon.HasToRemoveScriptWrapper
 import typings.newrelic.anon.ModuleName
+import typings.newrelic.newrelicStrings.cassandra
+import typings.newrelic.newrelicStrings.mysql
+import typings.newrelic.newrelicStrings.oracle
+import typings.newrelic.newrelicStrings.postgres
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,6 +75,12 @@ object mod {
   
   inline def noticeError(error: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def noticeError(error: js.Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def noticeError(error: js.Error, customAttributes: StringDictionary[String | Double | Boolean], expected: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def noticeError(error: js.Error, customAttributes: Unit, expected: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def noticeError(error: js.Error, expected: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def obfuscateSql(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateSql")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def obfuscateSql(sql: String, dialect: mysql | postgres | cassandra | oracle): String = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateSql")(sql.asInstanceOf[js.Any], dialect.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordCustomEvent")(eventType.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -82,6 +93,8 @@ object mod {
   
   inline def setDispatcher(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setDispatcher(name: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setErrorGroupCallback(callback: js.Function1[/* metadata */ CustomAttributes, String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setErrorGroupCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setLambdaHandler[T /* <: js.Function1[/* repeated */ Any, Any] */](handler: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setLambdaHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[T]
   

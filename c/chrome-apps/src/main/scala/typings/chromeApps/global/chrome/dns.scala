@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // DNS //
 /////////
 /**
-  * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
+  * @requires Only Chrome OS. Crashes app on Windows.
   * @requires Permissions: 'diagnostics'
   * @description
   * Use the *chrome.dns* API for dns resolution.

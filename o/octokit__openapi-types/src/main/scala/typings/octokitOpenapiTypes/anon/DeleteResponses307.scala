@@ -21,7 +21,7 @@ trait DeleteResponses307 extends StObject {
     *
     * **Note:** In order to see the `security_and_analysis` block for a repository you must have admin permissions for the repository or be an owner or security manager for the organization that owns the repository. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
     */
-  var get: Parameters141
+  var get: Parameters165
   
   /**
     * Update a repository
@@ -31,7 +31,7 @@ trait DeleteResponses307 extends StObject {
 }
 object DeleteResponses307 {
   
-  inline def apply(delete: Responses307, get: Parameters141, patch: Responses200307): DeleteResponses307 = {
+  inline def apply(delete: Responses307, get: Parameters165, patch: Responses200307): DeleteResponses307 = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResponses307]
   }
@@ -41,7 +41,7 @@ object DeleteResponses307 {
     
     inline def setDelete(value: Responses307): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: Parameters141): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Parameters165): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     inline def setPatch(value: Responses200307): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }

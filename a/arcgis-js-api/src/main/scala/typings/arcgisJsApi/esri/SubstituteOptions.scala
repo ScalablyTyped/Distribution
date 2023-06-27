@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubstituteOptions extends StObject {
   
   /**
-    * A hashmap of string keys to formatting options.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#SubstituteOptions)
-    */
+  		 * A hashmap of string keys to formatting options.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#SubstituteOptions)
+  		 */
   var format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]
 }
 object SubstituteOptions {

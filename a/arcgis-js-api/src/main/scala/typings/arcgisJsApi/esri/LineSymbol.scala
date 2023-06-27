@@ -11,19 +11,19 @@ trait LineSymbol
      with Symbol {
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
+  		 */
   @JSName("type")
   var type_LineSymbol: `simple-line` = js.native
   
   /**
-    * The width of the symbol in points.
-    *
-    * @default 0.75
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
-    */
+  		 * The width of the symbol in points.
+  		 *
+  		 * @default 0.75
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
+  		 */
   var width: Double = js.native
 }

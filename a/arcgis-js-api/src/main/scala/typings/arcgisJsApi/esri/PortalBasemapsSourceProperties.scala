@@ -9,31 +9,31 @@ trait PortalBasemapsSourceProperties
      with LocalBasemapsSourceProperties {
   
   /**
-    * Function used to filter basemaps after being fetched from the Portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#filterFunction)
-    */
+  		 * Function used to filter basemaps after being fetched from the Portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#filterFunction)
+  		 */
   var filterFunction: js.UndefOr[BasemapFilter] = js.undefined
   
   /**
-    * The Portal from which to fetch basemaps.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#portal)
-    */
+  		 * The Portal from which to fetch basemaps.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#portal)
+  		 */
   var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
-    * An object with key-value pairs used to create a custom basemap gallery group query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#query)
-    */
+  		 * An object with key-value pairs used to create a custom basemap gallery group query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#query)
+  		 */
   var query: js.UndefOr[Any | String] = js.undefined
   
   /**
-    * Callback for updating basemaps after being fetched and filtered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#updateBasemapsCallback)
-    */
+  		 * Callback for updating basemaps after being fetched and filtered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#updateBasemapsCallback)
+  		 */
   var updateBasemapsCallback: js.UndefOr[UpdateBasemapsCallback] = js.undefined
 }
 object PortalBasemapsSourceProperties {
@@ -46,7 +46,9 @@ object PortalBasemapsSourceProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: PortalBasemapsSourceProperties] (val x: Self) extends AnyVal {
     
-    inline def setFilterFunction(value: (/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap]) => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction3(value))
+    inline def setFilterFunction(
+      value: (/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap]) => Boolean | js.Promise[Boolean]
+    ): Self = StObject.set(x, "filterFunction", js.Any.fromFunction3(value))
     
     inline def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     

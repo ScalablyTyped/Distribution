@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// For Library Version: 1.113.0
+// For Library Version: 1.115.1
 object sapBaseAssertMod {
   
   @JSImport("sap/base/assert", JSImport.Namespace)
@@ -31,6 +31,6 @@ object sapBaseAssertMod {
     * Message that will be logged when the result is `false`. In case this is a function, the return value
     * of the function will be displayed. This can be used to execute complex code only if the assertion fails.
     */
-  vMessage: js.Function
+  vMessage: js.Function0[Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bResult.asInstanceOf[js.Any], vMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

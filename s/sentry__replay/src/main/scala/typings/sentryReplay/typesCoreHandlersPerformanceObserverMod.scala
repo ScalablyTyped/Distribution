@@ -1,6 +1,6 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.ReplayContainer
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
 import typings.std.PerformanceObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

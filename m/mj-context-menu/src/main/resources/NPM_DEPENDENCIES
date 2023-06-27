@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mj-context-menu" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mj-context-menu" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

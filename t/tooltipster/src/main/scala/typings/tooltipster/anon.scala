@@ -42,19 +42,19 @@ object anon {
   trait Click extends StObject {
     
     /**
-      * When a mouse click happens anywhere in the page. However, if the interactive option is set to true, 
+      * When a mouse click happens anywhere in the page. However, if the interactive option is set to true,
       * a click happening inside the tooltip will not close it.
       */
     var click: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When the mouse goes away from the origin. The delay option is taken into account as the delay before 
+      * When the mouse goes away from the origin. The delay option is taken into account as the delay before
       * closing.
       */
     var mouseleave: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When the origin is clicked by a mouse. This mimics a behavior that browsers usually have and is meant 
+      * When the origin is clicked by a mouse. This mimics a behavior that browsers usually have and is meant
       * to be used with the mouseenter open trigger.
       */
     var originClick: js.UndefOr[Boolean] = js.undefined
@@ -70,7 +70,7 @@ object anon {
     var tap: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When the finger is removed from the touch screen or if the interaction was stopped by the device. The 
+      * When the finger is removed from the touch screen or if the interaction was stopped by the device. The
       * delayTouch option is taken into account as the delay before closing.
       */
     var touchleave: js.UndefOr[Boolean] = js.undefined
@@ -201,7 +201,7 @@ object anon {
     var click: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When a mouse comes over the origin. The delay option is taken into account as the delay before 
+      * When a mouse comes over the origin. The delay option is taken into account as the delay before
       * opening.
       */
     var mouseenter: js.UndefOr[Boolean] = js.undefined
@@ -212,7 +212,7 @@ object anon {
     var tap: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When the origin is pressed on a touch screen. The delayTouch option is taken into account as the 
+      * When the origin is pressed on a touch screen. The delayTouch option is taken into account as the
       * delay before opening.
       */
     var touchstart: js.UndefOr[Boolean] = js.undefined

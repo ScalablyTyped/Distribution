@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsViewModelTimeAttribute extends StObject {
   
   /**
-    * The name of the network attribute to use for the drive time when computing directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
-    */
+  		 * The name of the network attribute to use for the drive time when computing directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
+  		 */
   var name: String
   
   /**
-    * The units to use when calculating drive time for directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
-    */
+  		 * The units to use when calculating drive time for directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
+  		 */
   var units: String
 }
 object DirectionsViewModelTimeAttribute {

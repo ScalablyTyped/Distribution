@@ -1,6 +1,6 @@
 package typings.yaml
 
-import org.scalablytyped.runtime.Instantiable0
+import typings.yaml.anon.From
 import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distNodesNodeMod.Node
 import typings.yaml.distNodesNodeMod.ParsedNode
@@ -17,38 +17,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSchemaTypesMod {
   
-  @js.native
   trait CollectionTag
     extends StObject
        with TagBase {
     
     /** The source collection type supported by this tag. */
-    var collection: map | seq = js.native
+    var collection: map | seq
     
     /**
       * The `Node` child class that implements this tag.
       * If set, used to select this tag when stringifying.
+      *
+      * If the class provides a static `from` method, then that
+      * will be used if the tag object doesn't have a `createNode` method.
       */
-    var nodeClass: js.UndefOr[Instantiable0[Node[Any]]] = js.native
+    var nodeClass: js.UndefOr[From] = js.undefined
     
     /**
       * Turns a value into an AST node.
       * If returning a non-`Node` value, the output will be wrapped as a `Scalar`.
+      *
+      * Note: this is required if nodeClass is not provided.
       */
-    def resolve(
-      value: Parsed[ParsedNode, ParsedNode | Null],
-      onError: js.Function1[/* message */ String, Unit],
-      options: ParseOptions
-    ): Any = js.native
-    def resolve(
-      value: typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode],
-      onError: js.Function1[/* message */ String, Unit],
-      options: ParseOptions
-    ): Any = js.native
+    var resolve: js.UndefOr[
+        js.Function3[
+          /* value */ (Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode], 
+          /* onError */ js.Function1[/* message */ String, Unit], 
+          /* options */ ParseOptions, 
+          Any
+        ]
+      ] = js.undefined
     
-    var stringify: js.UndefOr[scala.Nothing] = js.native
+    var stringify: js.UndefOr[scala.Nothing] = js.undefined
     
-    var test: js.UndefOr[scala.Nothing] = js.native
+    var test: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  object CollectionTag {
+    
+    inline def apply(collection: map | seq, tag: String): CollectionTag = {
+      val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CollectionTag]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionTag] (val x: Self) extends AnyVal {
+      
+      inline def setCollection(value: map | seq): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      
+      inline def setNodeClass(value: From): Self = StObject.set(x, "nodeClass", value.asInstanceOf[js.Any])
+      
+      inline def setNodeClassUndefined: Self = StObject.set(x, "nodeClass", js.undefined)
+      
+      inline def setResolve(
+        value: (/* value */ (Parsed[ParsedNode, ParsedNode | Null]) | typings.yaml.distNodesYamlseqMod.YAMLSeq.Parsed[ParsedNode], /* onError */ js.Function1[/* message */ String, Unit], /* options */ ParseOptions) => Any
+      ): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
+      
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    }
   }
   
   trait ScalarTag

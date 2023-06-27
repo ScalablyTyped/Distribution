@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorAndIntensity extends StObject {
   
   /**
-    * RGB color with values between 0 and 1.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#ColorAndIntensity)
-    */
+  		 * RGB color with values between 0 and 1.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#ColorAndIntensity)
+  		 */
   var color: ArrayLike[Double]
   
   /**
-    * Scalar intensity value by which the color should be scaled for compositing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#ColorAndIntensity)
-    */
+  		 * Scalar intensity value by which the color should be scaled for compositing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#ColorAndIntensity)
+  		 */
   var intensity: Double
 }
 object ColorAndIntensity {

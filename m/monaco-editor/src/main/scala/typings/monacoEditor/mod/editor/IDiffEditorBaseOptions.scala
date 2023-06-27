@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import typings.monacoEditor.anon.CollapseUnchangedRegions
 import typings.monacoEditor.monacoEditorStrings.advanced
 import typings.monacoEditor.monacoEditorStrings.inherit
 import typings.monacoEditor.monacoEditorStrings.legacy
@@ -37,6 +38,8 @@ trait IDiffEditorBaseOptions extends StObject {
     * Defaults to true.
     */
   var enableSplitViewResizing: js.UndefOr[Boolean] = js.undefined
+  
+  var experimental: js.UndefOr[CollapseUnchangedRegions] = js.undefined
   
   /**
     * Compute the diff by ignoring leading/trailing whitespace
@@ -122,6 +125,10 @@ object IDiffEditorBaseOptions {
     inline def setEnableSplitViewResizing(value: Boolean): Self = StObject.set(x, "enableSplitViewResizing", value.asInstanceOf[js.Any])
     
     inline def setEnableSplitViewResizingUndefined: Self = StObject.set(x, "enableSplitViewResizing", js.undefined)
+    
+    inline def setExperimental(value: CollapseUnchangedRegions): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     inline def setIgnoreTrimWhitespace(value: Boolean): Self = StObject.set(x, "ignoreTrimWhitespace", value.asInstanceOf[js.Any])
     

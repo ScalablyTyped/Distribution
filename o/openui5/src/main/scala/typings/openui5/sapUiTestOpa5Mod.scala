@@ -17,7 +17,7 @@ object sapUiTestOpa5Mod {
   @js.native
   /**
     * See:
-    * 	{@link topic:2696ab50faad458f9b4027ec2f9b884d Opa5}
+    * 	{@link https://ui5.sap.com/#/topic/2696ab50faad458f9b4027ec2f9b884d Opa5}
     */
   open class default () extends Opa5
   /* static members */
@@ -53,7 +53,7 @@ object sapUiTestOpa5Mod {
     inline def assert_=(x: Assert): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assert")(x.asInstanceOf[js.Any])
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Creates a set of page objects, each consisting of actions and assertions and adds them to the Opa configuration.
       *
@@ -86,7 +86,7 @@ object sapUiTestOpa5Mod {
     inline def emptyQueue(): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyQueue")().asInstanceOf[Promise[Any]]
     
     /**
-      * @SINCE 1.49
+      * @since 1.49
       *
       * Extends and overwrites default values of the {@link sap.ui.test.Opa.Config}. Most frequent usecase:
       * ```javascript
@@ -148,7 +148,7 @@ object sapUiTestOpa5Mod {
     options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Gives access to a singleton object you can save values in. See {@link sap.ui.test.Opa.getContext} for
       * the description
@@ -182,7 +182,7 @@ object sapUiTestOpa5Mod {
     inline def getPlugin(): typings.openui5.sapUiTestOpaPluginMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")().asInstanceOf[typings.openui5.sapUiTestOpaPluginMod.default]
     
     /**
-      * @SINCE 1.49
+      * @since 1.49
       *
       * Return particular test lib config object. This method is intended to be used by test libraries to access
       * their configuration provided by the test in the testLibs section in {@link sap.ui.test.Opa5.extendConfig}
@@ -211,7 +211,7 @@ object sapUiTestOpa5Mod {
     inline def getWindow(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindow")().asInstanceOf[Window]
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Starts an app in an iframe. Only works reliably if running on the same server.
       *
@@ -246,7 +246,7 @@ object sapUiTestOpa5Mod {
     ): Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("iStartMyAppInAFrame")(vSourceOrOptions.asInstanceOf[js.Any], iTimeout.asInstanceOf[js.Any], autoWait.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Promise[Any]]
     
     /**
-      * Removes the iframe from the DOM and removes all the references to its objects. Use {@link sap.ui.test.Opa5#hasAppStartedInAFrame}
+      * Removes the iframe from the DOM and removes all the references to its objects. Use {@link sap.ui.test.Opa5#hasAppStartedInAFrame }
       * to ensure that an iframe has been started and teardown can be safely performed.
       *
       * @returns A promise that gets resolved on success. If no iframe has been created or an error occurs, the
@@ -256,7 +256,7 @@ object sapUiTestOpa5Mod {
     inline def iTeardownMyAppFrame(): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("iTeardownMyAppFrame")().asInstanceOf[Promise[Any]]
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Resets Opa.config to its default values. See {@link sap.ui.test.Opa5#waitFor} for the description Default
       * values for OPA5 are:
@@ -270,7 +270,7 @@ object sapUiTestOpa5Mod {
       * 	 - timeout : 15 seconds, 0 for infinite timeout
       * 	 - pollingInterval: 400 milliseconds
       * 	 - debugTimeout: 0 seconds, infinite timeout by default. This will be used instead of timeout if running
-      * 			in debug mode.
+      *     in debug mode.
       * 	 - autoWait: false - since 1.42
       * 	 - appParams: object with URI parameters for the tested app - since 1.48
       */
@@ -279,7 +279,7 @@ object sapUiTestOpa5Mod {
     /**
       * Clears the queue and stops running tests so that new tests can be run. This means all waitFor statements
       * registered by {@link sap.ui.test.Opa5#waitFor} will not be invoked anymore and the promise returned by
-      * {@link sap.ui.test.Opa5.emptyQueue} will be rejected. When its called inside of a check in {@link sap.ui.test.Opa5#waitFor}
+      * {@link sap.ui.test.Opa5.emptyQueue} will be rejected. When its called inside of a check in {@link sap.ui.test.Opa5#waitFor }
       * the success function of this waitFor will not be called.
       */
     inline def stopQueue(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopQueue")().asInstanceOf[Unit]
@@ -295,7 +295,7 @@ object sapUiTestOpa5Mod {
       * @since 1.42 Only has an effect if set to true. Since 1.53 it can also be a plain object. When autoWait
       * is true, the waitFor statement will not execute success callbacks as long as there is pending asynchronous
       * work such as for example: open XMLHTTPRequests (requests to a server), scheduled delayed work and promises,
-      * unfinished UI navigation. In addition, the control state will be checked with the {@link sap.ui.test.matchers.Interactable}
+      * unfinished UI navigation. In addition, the control state will be checked with the {@link sap.ui.test.matchers.Interactable }
       * matcher, and the control will have to be enabled. So when autoWait is enabled, success behaves like an
       * action in terms of waiting. It is recommended to set this value to true for all your waitFor statements
       * using:
@@ -336,10 +336,10 @@ object sapUiTestOpa5Mod {
       * @since 1.66 If set to false, Opa5 will look for both enabled and disabled controls. Note that this option's
       * default value is related to the autoWait mechanism:
       * 	 -  When autoWait is enabled globally or in the current waitFor, the default value for options.enabled
-      * 			is true.
+      *     is true.
       * 	 -  When autoWait is not used, the default value for options.enabled is false.  This means that
-      * 			if you use autoWait and you want to find a disabled control, you need to explicitly set options.enabled
-      * 			to false.
+      *     if you use autoWait and you want to find a disabled control, you need to explicitly set options.enabled
+      *     to false.
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -383,15 +383,6 @@ object sapUiTestOpa5Mod {
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Chain extends Opa5 {
-    
-    /**
-      * A reference to the same `sap.ui.test.Opa5` instance that can be used for chaining statements
-      */
-    var and: Opa5 = js.native
   }
   
   trait Config
@@ -469,18 +460,18 @@ object sapUiTestOpa5Mod {
       * of them will be executed (first in first out) on each control of, similar to the matchers. Here is one
       * of the most common usages: ` function (sButtonId) { // executes a Press on a button with a specific id
       * new Opa5().waitFor({ id: sButtonId, actions: new Press() }); }; ` But actions will only be executed once
-      * and only after the check function returned true. Before actions are executed the {@link sap.ui.test.matchers.Interactable}
+      * and only after the check function returned true. Before actions are executed the {@link sap.ui.test.matchers.Interactable }
       * matcher and the internal autoWait logic will check if the Control is currently able to perform actions
       * if it is not, Opa5 will try again after the 'pollingInterval'. That means actions will only be executed
       * if:
       * 	 -  Controls and their parents are visible, not busy and not hidden behind a blocking layer
       * 	 -  The controls are not hidden behind static elements such as dialogs
       * 	 -  There is no pending asynchronous work performed by the application   If there are multiple
-      * 			controls in Opa5's result set the action will be executed on all of them. The actions will be invoked
-      * 			directly before success is called. In the documentation of the success parameter there is a list of conditions
-      * 			that have to be fulfilled. They also apply for the actions. There are some predefined actions in the
-      * 			{@link sap.ui.test.actions} namespace. since 1.42 an Action may add other waitFors. The next action or
-      * 			the success handler will not be executed until the waitFor of the action has finished. An example:
+      *     controls in Opa5's result set the action will be executed on all of them. The actions will be invoked
+      *     directly before success is called. In the documentation of the success parameter there is a list of conditions
+      *     that have to be fulfilled. They also apply for the actions. There are some predefined actions in the
+      *     {@link sap.ui.test.actions} namespace. since 1.42 an Action may add other waitFors. The next action or
+      *     the success handler will not be executed until the waitFor of the action has finished. An example:
       * ```javascript
       *
       *     this.waitFor({
@@ -755,12 +746,12 @@ object sapUiTestOpa5Mod {
     /**
       * Will get invoked after the following conditions are met:
       * 	 -  One or multiple controls were found using controlType, Id, viewName. If visible is true (it is by
-      * 			default), the controls also need to be rendered.
+      *     default), the controls also need to be rendered.
       * 	 -  The whole matcher pipeline returned true for at least one control, or there are no matchers
       * 	 -  The check function returned true, or there is no check function   The first parameter passed
-      * 			into the function is an array of controls (viewName, controlType, multiple ID's, regex ID's) that matched
-      * 			all matchers. Matchers can alter the array to something different. Please read the documentation of waitFor's
-      * 			matcher parameter.
+      *     into the function is an array of controls (viewName, controlType, multiple ID's, regex ID's) that matched
+      *     all matchers. Matchers can alter the array to something different. Please read the documentation of waitFor's
+      *     matcher parameter.
       */
     var success: js.UndefOr[
         js.Function1[/* p1 */ js.Array[typings.openui5.sapUiCoreElementMod.default], Unit]
@@ -795,8 +786,12 @@ object sapUiTestOpa5Mod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * Checks if the application has been started using {@link sap.ui.test.Opa5#iStartMyAppInAFrame} or {@link
-      * sap.ui.test.Opa5#iStartMyUIComponent}
+      * "and" property for chaining
+      */
+    var and: this.type = js.native
+    
+    /**
+      * Checks if the application has been started using {@link sap.ui.test.Opa5#iStartMyAppInAFrame} or {@link sap.ui.test.Opa5#iStartMyUIComponent}
       *
       * @returns A boolean indicating whether the application has been started regardless of how it was started
       */
@@ -817,7 +812,7 @@ object sapUiTestOpa5Mod {
     def hasUIComponentStarted(): Boolean = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Starts an app in an iframe. Only works reliably if running on the same server.
       *
@@ -852,7 +847,7 @@ object sapUiTestOpa5Mod {
     ): Promise[Any] = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Starts a UIComponent.
       *
@@ -866,9 +861,9 @@ object sapUiTestOpa5Mod {
     ): Promise[Any] = js.native
     
     /**
-      * Tears down the started application regardless of how it was started. Removes the iframe launched by {@link
-      * sap.ui.test.Opa5#iStartMyAppInAFrame} or destroys the UIComponent launched by {@link sap.ui.test.Opa5#iStartMyUIComponent}.
-      * This function is designed to make the test's teardown independent of the startup. Use {@link sap.ui.test.Opa5#hasAppStarted}
+      * Tears down the started application regardless of how it was started. Removes the iframe launched by {@link sap.ui.test.Opa5#iStartMyAppInAFrame }
+      * or destroys the UIComponent launched by {@link sap.ui.test.Opa5#iStartMyUIComponent}. This function is
+      * designed to make the test's teardown independent of the startup. Use {@link sap.ui.test.Opa5#hasAppStarted }
       * to ensure that the application has been started and teardown can be safely performed.
       *
       * @returns A promise that gets resolved on success. If nothing has been started or an error occurs, the
@@ -878,7 +873,7 @@ object sapUiTestOpa5Mod {
     def iTeardownMyApp(): Promise[Any] = js.native
     
     /**
-      * Removes the iframe from the DOM and removes all the references to its objects Use {@link sap.ui.test.Opa5#hasAppStartedInAFrame}
+      * Removes the iframe from the DOM and removes all the references to its objects Use {@link sap.ui.test.Opa5#hasAppStartedInAFrame }
       * to ensure that an iframe has been started and teardown can be safely performed.
       *
       * @returns A promise that gets resolved on success. If no iframe has been created or an error occurs, the
@@ -888,7 +883,7 @@ object sapUiTestOpa5Mod {
     def iTeardownMyAppFrame(): Promise[Any] = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Destroys the UIComponent and removes the div from the dom like all the references on its objects. Use
       * {@link sap.ui.test.Opa5#hasUIComponentStarted} to ensure that a UIComponent has been started and teardown
@@ -921,7 +916,7 @@ object sapUiTestOpa5Mod {
       * a superset of the parameters of {@link sap.ui.test.Opa#waitFor}
       */
     options: MultiControlSelector
-    ): Chain = js.native
+    ): this.type = js.native
     /**
       *
       * @returns an object extending a jQuery promise. The object is essentially a jQuery promise with an additional
@@ -934,22 +929,22 @@ object sapUiTestOpa5Mod {
       * a superset of the parameters of {@link sap.ui.test.Opa#waitFor}
       */
     options: SingleControlSelector
-    ): Chain = js.native
+    ): this.type = js.native
   }
   
   trait PageObjectDefinition extends StObject {
     
     /**
-      * A map of functions that can be used as arrangement or action in Opa tests. Only the test decides whether
-      * a function is used as arrangement or action. Each function typically contains one or multiple `waitFor`
-      * statements.
+      * A map or a class of functions that can be used as arrangement or action in Opa tests. Only the test decides
+      * whether a function is used as arrangement or action. Each function typically contains one or multiple
+      * `waitFor` statements.
       */
-    var actions: js.UndefOr[Record[String, js.Function]] = js.undefined
+    var actions: js.UndefOr[(Record[String, js.Function0[Unit]]) | js.Function] = js.undefined
     
     /**
-      * A map of functions that can be used as assertions in Opa tests.
+      * A map or a class of functions that can be used as assertions in Opa tests.
       */
-    var assertions: js.UndefOr[Record[String, js.Function]] = js.undefined
+    var assertions: js.UndefOr[(Record[String, js.Function0[Unit]]) | js.Function] = js.undefined
     
     /**
       * Base class for the page object's actions and assertions
@@ -1020,11 +1015,11 @@ object sapUiTestOpa5Mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PageObjectDefinition] (val x: Self) extends AnyVal {
       
-      inline def setActions(value: Record[String, js.Function]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: (Record[String, js.Function0[Unit]]) | js.Function): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setAssertions(value: Record[String, js.Function]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+      inline def setAssertions(value: (Record[String, js.Function0[Unit]]) | js.Function): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
       inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
       
@@ -1065,7 +1060,7 @@ object sapUiTestOpa5Mod {
     /**
       * Will get invoked if the following conditions are met:
       * 	 -  A control was found using viewName and Id that maches any addiotnally specified criteria e.g. controlType,
-      * 			matchers. If visible is true (it is by default), the control also needs to be rendered.
+      *     matchers. If visible is true (it is by default), the control also needs to be rendered.
       * 	 -  The check function returned true, or there is no check function
       */
     var success: js.UndefOr[js.Function1[/* p1 */ typings.openui5.sapUiCoreElementMod.default, Unit]] = js.undefined

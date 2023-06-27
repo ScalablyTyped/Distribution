@@ -2,17 +2,11 @@ package typings.linguiReact
 
 import typings.linguiCore.mod.I18n_
 import typings.linguiReact.anon.Children
-import typings.linguiReact.anon.Component
-import typings.linguiReact.linguiReactStrings.component
-import typings.linguiReact.linguiReactStrings.render
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.Exclude
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,16 +75,25 @@ object mod {
     }
   }
   
-  /** NOTE: Conditional type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-    * TS definition: {{{
-    K extends keyof T ? {[ P in K ]:? T[K]} & std.Partial<std.Record<std.Exclude<keyof T, K>, never>> : never
-    }}}
-    */
-  type MaximumOneOf[T, K /* <: /* keyof T */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in K ]:? T[K]} */ js.Any) & (Partial[Record[Exclude[/* keyof T */ String, K], scala.Nothing]])
+  type TransProps = Children & TransRenderCallbackOrComponent
   
-  type TransProps = Children & (MaximumOneOf[Component, /* keyof @lingui/react.anon.Component */ component | render])
+  /* Rewritten from type alias, can be one of: 
+    - typings.linguiReact.anon.Component
+    - typings.linguiReact.anon.Render
+  */
+  trait TransRenderCallbackOrComponent extends StObject
+  object TransRenderCallbackOrComponent {
+    
+    inline def Component(component: Unit): typings.linguiReact.anon.Component = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.linguiReact.anon.Component]
+    }
+    
+    inline def Render(render: Unit): typings.linguiReact.anon.Render = {
+      val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.linguiReact.anon.Render]
+    }
+  }
   
   trait TransRenderProps extends StObject {
     

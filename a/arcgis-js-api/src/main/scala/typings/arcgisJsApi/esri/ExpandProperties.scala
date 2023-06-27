@@ -15,106 +15,128 @@ trait ExpandProperties
      with WidgetProperties {
   
   /**
-    * Automatically collapses the expand widget instance when the view's viewpoint updates.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
-    */
+  		 * Automatically collapses the expand widget instance when the view's viewpoint updates.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
+  		 */
   var autoCollapse: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When true, the Expand widget will close after the Escape key is pressed when the keyboard focus is within its content.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#closeOnEsc)
-    */
+  		 * When true, the Expand widget will close after the Escape key is pressed when the keyboard focus is within its content.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#closeOnEsc)
+  		 */
   var closeOnEsc: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
-    * Icon font used to style the Expand button.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseIconClass)
-    */
+  		 * Calcite icon used to style the Expand button when the [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content) can be collapsed.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseIcon)
+  		 */
+  var collapseIcon: js.UndefOr[String] = js.undefined
+  
+  /**
+  		 * Icon font used to style the Expand button.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Expand#collapseIcon collapseIcon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseIconClass)
+  		 */
   var collapseIconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Tooltip to display to indicate Expand widget can be collapsed.
-    *
-    * @default "Collapse" (English locale)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
-    */
+  		 * Tooltip to display to indicate Expand widget can be collapsed.
+  		 *
+  		 * @default "Collapse" (English locale)
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
+  		 */
   var collapseTooltip: js.UndefOr[String] = js.undefined
   
   /**
-    * The content to display within the expanded Expand widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content)
-    */
+  		 * The content to display within the expanded Expand widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content)
+  		 */
   var content: js.UndefOr[Node | String | WidgetProperties] = js.undefined
   
   /**
-    * Icon font used to style the Expand button.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandIconClass)
-    */
+  		 * Calcite icon used when the widget is collapsed.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandIcon)
+  		 */
+  var expandIcon: js.UndefOr[String] = js.undefined
+  
+  /**
+  		 * Icon font used to style the Expand button.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Expand#expandIcon expandIcon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandIconClass)
+  		 */
   var expandIconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Tooltip to display to indicate Expand widget can be expanded.
-    *
-    * @default "Expand" (English locale)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
-    */
+  		 * Tooltip to display to indicate Expand widget can be expanded.
+  		 *
+  		 * @default "Expand" (English locale)
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
+  		 */
   var expandTooltip: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the widget is currently expanded or not.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
-    */
+  		 * Indicates whether the widget is currently expanded or not.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
+  		 */
   var expanded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This value associates two or more Expand widget instances with each other, allowing one instance to auto collapse when another instance in the same group is expanded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#group)
-    */
+  		 * This value associates two or more Expand widget instances with each other, allowing one instance to auto collapse when another instance in the same group is expanded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#group)
+  		 */
   var group: js.UndefOr[String] = js.undefined
   
   /**
-    * A number to display at the corner of the widget to indicate the number of, for example, open issues or unread notices.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#iconNumber)
-    */
+  		 * A number to display at the corner of the widget to indicate the number of, for example, open issues or unread notices.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#iconNumber)
+  		 */
   var iconNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    * The mode in which the widget displays.
-    *
-    * @default "auto"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
-    */
+  		 * The mode in which the widget displays.
+  		 *
+  		 * @default "auto"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
+  		 */
   var mode: js.UndefOr[auto | floating | drawer] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[ExpandViewModelProperties] = js.undefined
 }
 object ExpandProperties {
@@ -135,9 +157,13 @@ object ExpandProperties {
     
     inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
     
+    inline def setCollapseIcon(value: String): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
+    
     inline def setCollapseIconClass(value: String): Self = StObject.set(x, "collapseIconClass", value.asInstanceOf[js.Any])
     
     inline def setCollapseIconClassUndefined: Self = StObject.set(x, "collapseIconClass", js.undefined)
+    
+    inline def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
     
     inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     
@@ -147,9 +173,13 @@ object ExpandProperties {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
+    inline def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+    
     inline def setExpandIconClass(value: String): Self = StObject.set(x, "expandIconClass", value.asInstanceOf[js.Any])
     
     inline def setExpandIconClassUndefined: Self = StObject.set(x, "expandIconClass", js.undefined)
+    
+    inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
     inline def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
     

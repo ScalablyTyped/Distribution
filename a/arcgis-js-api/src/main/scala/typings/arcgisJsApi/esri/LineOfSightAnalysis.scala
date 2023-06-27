@@ -10,16 +10,16 @@ trait LineOfSightAnalysis
      with Accessor {
   
   /**
-    * Observer location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html#observer)
-    */
+  		 * Observer location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html#observer)
+  		 */
   var observer: LineOfSightAnalysisObserver = js.native
   
   /**
-    * Target locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html#targets)
-    */
+  		 * Target locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html#targets)
+  		 */
   var targets: Collection[LineOfSightAnalysisTarget] = js.native
 }

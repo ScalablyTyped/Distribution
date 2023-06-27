@@ -10,18 +10,18 @@ trait CIMGeometricEffectRegularPolygon
      with CIMGeometricEffectType {
   
   /**
-    * The amount of rotation for the polygon.
-    */
+  			 * The amount of rotation for the polygon.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of sides for the polygon. Specifying a value less than 3 produces a circle.
-    */
+  			 * The number of sides for the polygon. Specifying a value less than 3 produces a circle.
+  			 */
   var edges: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the center of the polygon.
-    */
+  			 * The distance from the center of the polygon.
+  			 */
   var radius: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

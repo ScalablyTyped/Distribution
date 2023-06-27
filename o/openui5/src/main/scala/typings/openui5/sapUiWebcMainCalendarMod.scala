@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Dates
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -153,13 +152,13 @@ object sapUiWebcMainCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectedDatesChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Calendar` itself
       */
@@ -187,7 +186,7 @@ object sapUiWebcMainCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectedDatesChange(
       /**
@@ -198,7 +197,7 @@ object sapUiWebcMainCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Calendar` itself
       */
@@ -224,13 +223,13 @@ object sapUiWebcMainCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectedDatesChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarSelectedDatesChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -238,7 +237,7 @@ object sapUiWebcMainCalendarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectedDatesChange selectedDatesChange} to attached listeners.
       *
@@ -248,10 +247,12 @@ object sapUiWebcMainCalendarMod {
       * @returns Whether or not to prevent the default action
       */
     def fireSelectedDatesChange(): Boolean = js.native
-    def fireSelectedDatesChange(/**
+    def fireSelectedDatesChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Dates): Boolean = js.native
+    mParameters: Calendar$SelectedDatesChangeEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getDates dates}.
@@ -549,6 +550,46 @@ object sapUiWebcMainCalendarMod {
     sSelectionMode: CalendarSelectionMode): this.type = js.native
   }
   
+  trait Calendar$SelectedDatesChangeEventParameters extends StObject {
+    
+    /**
+      * The selected dates as UTC timestamps
+      */
+    var dates: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The selected dates
+      */
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Calendar$SelectedDatesChangeEventParameters {
+    
+    inline def apply(): Calendar$SelectedDatesChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Calendar$SelectedDatesChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar$SelectedDatesChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDates(value: js.Array[Any]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+      
+      inline def setDatesUndefined: Self = StObject.set(x, "dates", js.undefined)
+      
+      inline def setDatesVarargs(value: Any*): Self = StObject.set(x, "dates", js.Array(value*))
+      
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
+    }
+  }
+  
+  type CalendarSelectedDatesChangeEvent = typings.openui5.sapUiBaseEventMod.default[Calendar$SelectedDatesChangeEventParameters]
+  
+  type CalendarSelectedDatesChangeEventParameters = Calendar$SelectedDatesChangeEventParameters
+  
   trait CalendarSettings
     extends StObject
        with ControlSettings {
@@ -607,7 +648,12 @@ object sapUiWebcMainCalendarMod {
       * will not create instances of `sap.ui.webc.main.CalendarDate` for the newly selected dates. In that case
       * you should do this manually.
       */
-    var selectedDatesChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectedDatesChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Calendar$SelectedDatesChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the type of selection used in the calendar component. Accepted property values are:
@@ -668,7 +714,9 @@ object sapUiWebcMainCalendarMod {
       
       inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
-      inline def setSelectedDatesChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectedDatesChange", js.Any.fromFunction1(value))
+      inline def setSelectedDatesChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Calendar$SelectedDatesChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectedDatesChange", js.Any.fromFunction1(value))
       
       inline def setSelectedDatesChangeUndefined: Self = StObject.set(x, "selectedDatesChange", js.undefined)
       

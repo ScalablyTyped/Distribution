@@ -11,10 +11,10 @@ object esriSymbolsLineSymbolMarkerMod {
   @JSImport("esri/symbols/LineSymbolMarker", JSImport.Namespace)
   @js.native
   /**
-    * LineSymbolMarker is used for rendering a simple marker graphic on a [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html)
-    */
+  		 * LineSymbolMarker is used for rendering a simple marker graphic on a [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html)
+  		 */
   open class ^ ()
     extends StObject
        with LineSymbolMarker {

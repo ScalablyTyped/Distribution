@@ -1,8 +1,10 @@
 package typings.prosemirrorMarkdown
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.markdownIt.libMod.MarkdownIt
+import typings.markdownIt.libTokenMod.^
 import typings.prosemirrorMarkdown.anon.EscapeExtraCharacters
-import typings.prosemirrorMarkdown.anon.EscapeExtraCharactersTightLists
+import typings.prosemirrorMarkdown.anon.HardBreakNodeName
 import typings.prosemirrorMarkdown.anon.Leading
 import typings.prosemirrorMarkdown.anon.TightLists
 import typings.prosemirrorMarkdown.prosemirrorMarkdownStrings.blockquote
@@ -215,7 +217,7 @@ object mod {
     /**
       The options passed to the serializer.
       */
-    val options: EscapeExtraCharactersTightLists = js.native
+    val options: HardBreakNodeName = js.native
     
     /**
       Render the given node as a block.
@@ -413,8 +415,6 @@ object mod {
     }
   }
   
-  type MarkdownIt = Any
-  
   /**
   Object type used to specify how Markdown tokens should be parsed.
   */
@@ -443,7 +443,7 @@ object mod {
       returns an attribute object.
       */
     var getAttrs: js.UndefOr[
-        js.Function3[/* token */ Token, /* tokenStream */ js.Array[Token], /* index */ Double, Attrs | Null]
+        js.Function3[/* token */ ^, /* tokenStream */ js.Array[^], /* index */ Double, Attrs | Null]
       ] = js.undefined
     
     /**
@@ -494,7 +494,7 @@ object mod {
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      inline def setGetAttrs(value: (/* token */ Token, /* tokenStream */ js.Array[Token], /* index */ Double) => Attrs | Null): Self = StObject.set(x, "getAttrs", js.Any.fromFunction3(value))
+      inline def setGetAttrs(value: (/* token */ ^, /* tokenStream */ js.Array[^], /* index */ Double) => Attrs | Null): Self = StObject.set(x, "getAttrs", js.Any.fromFunction3(value))
       
       inline def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
       
@@ -515,6 +515,4 @@ object mod {
       inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
   }
-  
-  type Token = Any
 }

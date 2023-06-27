@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.LineOfSightLayer")
 @js.native
 /**
-  * LineOfSightLayer computes the line of sight from a single observer position towards a set of targets.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html)
-  */
+		 * LineOfSightLayer computes the line of sight from a single observer position towards a set of targets.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html)
+		 */
 open class LineOfSightLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.LineOfSightLayer {

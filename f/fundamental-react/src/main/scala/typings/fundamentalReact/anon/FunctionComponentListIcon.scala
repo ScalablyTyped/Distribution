@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.libListListMod.ListIconProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentListIcon extends StObject {
   
-  def apply(props: ListIconProps): ReactElement | Null = js.native
-  def apply(props: ListIconProps, context: Any): ReactElement | Null = js.native
+  def apply(props: ListIconProps): ReactNode = js.native
+  def apply(props: ListIconProps, context: Any): ReactNode = js.native
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   

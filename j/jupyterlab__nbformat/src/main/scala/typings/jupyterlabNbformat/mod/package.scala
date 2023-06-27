@@ -31,6 +31,14 @@ inline def isStream(output: IOutput): /* is @jupyterlab/nbformat.@jupyterlab/nbf
 inline def validateMimeValue(`type`: String, value: MultilineString): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMimeValue")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def validateMimeValue(`type`: String, value: PartialJSONObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMimeValue")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.jupyterlabNbformat.jupyterlabNbformatStrings.code
+  - typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown
+  - typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw
+  - java.lang.String
+*/
+type CellType = _CellType | String
+
 type ExecutionCount = Double | Null
 
 type IAttachments = StringDictionary[js.UndefOr[IMimeBundle]]

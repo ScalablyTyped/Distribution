@@ -3,11 +3,10 @@ package typings.themeUiComponents
 import typings.emotionSerialize.mod.Interpolation
 import typings.react.mod.ComponentPropsWithRef
 import typings.react.mod.ElementType
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.RefAttributes
 import typings.std.Omit
 import typings.std.Pick
 import typings.themeUiComponents.distDeclarationsSrcTypesMod.Assign
+import typings.themeUiComponents.distDeclarationsSrcTypesMod.ForwardRef
 import typings.themeUiComponents.themeUiComponentsStrings.div
 import typings.themeUiComponents.themeUiComponentsStrings.ref
 import org.scalablytyped.runtime.StObject
@@ -22,7 +21,7 @@ object distDeclarationsSrcBoxMod {
   
   @JSImport("@theme-ui/components/dist/declarations/src/Box", "Box")
   @js.native
-  val Box: ForwardRefExoticComponent[BoxProps & RefAttributes[Any]] = js.native
+  val Box: ForwardRef[Any, BoxProps] = js.native
   
   inline def isBoxStyledSystemProp(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("__isBoxStyledSystemProp")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

@@ -139,6 +139,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -488,6 +489,8 @@ object libComponentsDataTableTableBatchActionMod {
   inline def default_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def default_search[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[search] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

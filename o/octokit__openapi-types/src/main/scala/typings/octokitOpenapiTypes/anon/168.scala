@@ -6,24 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `168` extends StObject {
   
-  var page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-  ] = js.undefined
+  var `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
 }
 object `168` {
   
-  inline def apply(): `168` = {
+  inline def apply(
+    `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+  ): `168` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("410")(`410`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`168`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `168`] (val x: Self) extends AnyVal {
     
-    inline def setPage(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def set410(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+    ): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
   }
 }

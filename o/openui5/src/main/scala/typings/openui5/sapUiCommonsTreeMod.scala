@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Node
-import typings.openui5.anon.NodeContexts
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -152,13 +150,13 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Tree` itself
       */
@@ -183,7 +181,7 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -194,7 +192,7 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Tree` itself
       */
@@ -216,13 +214,13 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Tree` itself
       */
@@ -248,7 +246,7 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -259,7 +257,7 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Tree` itself
       */
@@ -302,13 +300,13 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -327,13 +325,13 @@ object sapUiCommonsTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -346,7 +344,7 @@ object sapUiCommonsTreeMod {
     def expandAll(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -359,20 +357,22 @@ object sapUiCommonsTreeMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: Node): Boolean = js.native
+    mParameters: Tree$SelectEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NodeContexts): this.type = js.native
+    mParameters: Tree$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getHeight height}.
@@ -396,7 +396,7 @@ object sapUiCommonsTreeMod {
     def getMinWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.19
+      * @since 1.19
       *
       * Returns the node with the given context, or null if no such node currently exists.
       *
@@ -687,6 +687,82 @@ object sapUiCommonsTreeMod {
     def unbindNodes(): this.type = js.native
   }
   
+  trait Tree$SelectEventParameters extends StObject {
+    
+    /**
+      * The node which has been selected.
+      */
+    var node: js.UndefOr[typings.openui5.sapUiCommonsTreeNodeMod.default] = js.undefined
+    
+    /**
+      * The binding context of the selected node.
+      */
+    var nodeContext: js.UndefOr[js.Object] = js.undefined
+  }
+  object Tree$SelectEventParameters {
+    
+    inline def apply(): Tree$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNode(value: typings.openui5.sapUiCommonsTreeNodeMod.default): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      
+      inline def setNodeContext(value: js.Object): Self = StObject.set(x, "nodeContext", value.asInstanceOf[js.Any])
+      
+      inline def setNodeContextUndefined: Self = StObject.set(x, "nodeContext", js.undefined)
+      
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    }
+  }
+  
+  trait Tree$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * The binding context of the selected nodes.
+      */
+    var nodeContexts: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * The nodes which has been selected.
+      */
+    var nodes: js.UndefOr[js.Array[typings.openui5.sapUiCommonsTreeNodeMod.default]] = js.undefined
+  }
+  object Tree$SelectionChangeEventParameters {
+    
+    inline def apply(): Tree$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNodeContexts(value: js.Array[js.Object]): Self = StObject.set(x, "nodeContexts", value.asInstanceOf[js.Any])
+      
+      inline def setNodeContextsUndefined: Self = StObject.set(x, "nodeContexts", js.undefined)
+      
+      inline def setNodeContextsVarargs(value: js.Object*): Self = StObject.set(x, "nodeContexts", js.Array(value*))
+      
+      inline def setNodes(value: js.Array[typings.openui5.sapUiCommonsTreeNodeMod.default]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      
+      inline def setNodesVarargs(value: typings.openui5.sapUiCommonsTreeNodeMod.default*): Self = StObject.set(x, "nodes", js.Array(value*))
+    }
+  }
+  
+  type TreeSelectEvent = typings.openui5.sapUiBaseEventMod.default[Tree$SelectEventParameters]
+  
+  type TreeSelectEventParameters = Tree$SelectEventParameters
+  
+  type TreeSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters]
+  
+  type TreeSelectionChangeEventParameters = Tree$SelectionChangeEventParameters
+  
   trait TreeSettings
     extends StObject
        with ControlSettings {
@@ -716,12 +792,22 @@ object sapUiCommonsTreeMod {
     /**
       * Event is fired when a tree node is selected.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * fired when the selection of the tree has been changed
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Selection mode of the Tree.
@@ -789,11 +875,13 @@ object sapUiCommonsTreeMod {
       
       inline def setNodesVarargs(value: typings.openui5.sapUiCommonsTreeNodeMod.default*): Self = StObject.set(x, "nodes", js.Array(value*))
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectEventParameters] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

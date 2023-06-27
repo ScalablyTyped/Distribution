@@ -19,12 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineStylePattern3DProperties extends StObject {
   
   /**
-    * The pattern style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-LineStylePattern3D.html#style)
-    */
+  		 * The pattern style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-LineStylePattern3D.html#style)
+  		 */
   var style: js.UndefOr[
     dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none_ | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
   ] = js.undefined

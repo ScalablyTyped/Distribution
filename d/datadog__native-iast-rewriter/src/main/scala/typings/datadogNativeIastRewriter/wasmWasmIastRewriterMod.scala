@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object wasmWasmIastRewriterMod {
   
+  @JSImport("@datadog/native-iast-rewriter/wasm/wasm_iast_rewriter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@datadog/native-iast-rewriter/wasm/wasm_iast_rewriter", "Rewriter")
   @js.native
   open class Rewriter protected () extends StObject {
@@ -27,5 +31,13 @@ object wasmWasmIastRewriterMod {
     * @returns {any}
     */
     def rewrite(code: String, file: String): Any = js.native
+    
+    /**
+    * @param {any} logger
+    * @param {string} level
+    */
+    def setLogger(logger: Any, level: String): Unit = js.native
   }
+  
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
 }

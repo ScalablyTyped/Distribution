@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV201EOCoverageMetadata extends StObject {
   
   /**
-    * Earth observation identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Earth observation identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var identifier: String
   
   /**
-    * Earth observation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
-    */
+  		 * Earth observation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV201)
+  		 */
   var observation: CoverageDescriptionV201EOCoverageMetadataObservation
 }
 object CoverageDescriptionV201EOCoverageMetadata {

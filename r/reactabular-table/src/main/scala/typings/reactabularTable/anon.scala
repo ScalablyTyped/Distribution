@@ -222,6 +222,8 @@ object anon {
     
     var animation: js.UndefOr[String] = js.undefined
     
+    var animationComposition: js.UndefOr[String] = js.undefined
+    
     var animationDelay: js.UndefOr[String] = js.undefined
     
     var animationDirection: js.UndefOr[String] = js.undefined
@@ -468,8 +470,6 @@ object anon {
     
     var content: js.UndefOr[String] = js.undefined
     
-    var contentVisibility: js.UndefOr[String] = js.undefined
-    
     var counterIncrement: js.UndefOr[String] = js.undefined
     
     var counterReset: js.UndefOr[String] = js.undefined
@@ -539,6 +539,12 @@ object anon {
     var fontStyle: js.UndefOr[String] = js.undefined
     
     var fontSynthesis: js.UndefOr[String] = js.undefined
+    
+    var fontSynthesisSmallCaps: js.UndefOr[String] = js.undefined
+    
+    var fontSynthesisStyle: js.UndefOr[String] = js.undefined
+    
+    var fontSynthesisWeight: js.UndefOr[String] = js.undefined
     
     var fontVariant: js.UndefOr[String] = js.undefined
     
@@ -797,6 +803,8 @@ object anon {
     var paddingRight: js.UndefOr[String] = js.undefined
     
     var paddingTop: js.UndefOr[String] = js.undefined
+    
+    var page: js.UndefOr[String] = js.undefined
     
     var pageBreakAfter: js.UndefOr[String] = js.undefined
     
@@ -1197,6 +1205,10 @@ object anon {
       inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationComposition(value: String): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
       
       inline def setAnimationDelay(value: String): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -1692,10 +1704,6 @@ object anon {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVisibility(value: String): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
-      
-      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
-      
       inline def setCounterIncrement(value: String): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
       inline def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
@@ -1832,7 +1840,19 @@ object anon {
       
       inline def setFontSynthesis(value: String): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
       
+      inline def setFontSynthesisSmallCaps(value: String): Self = StObject.set(x, "fontSynthesisSmallCaps", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisSmallCapsUndefined: Self = StObject.set(x, "fontSynthesisSmallCaps", js.undefined)
+      
+      inline def setFontSynthesisStyle(value: String): Self = StObject.set(x, "fontSynthesisStyle", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisStyleUndefined: Self = StObject.set(x, "fontSynthesisStyle", js.undefined)
+      
       inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
+      
+      inline def setFontSynthesisWeight(value: String): Self = StObject.set(x, "fontSynthesisWeight", value.asInstanceOf[js.Any])
+      
+      inline def setFontSynthesisWeightUndefined: Self = StObject.set(x, "fontSynthesisWeight", js.undefined)
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
@@ -2352,6 +2372,8 @@ object anon {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(value: String): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
       inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
@@ -2363,6 +2385,8 @@ object anon {
       inline def setPageBreakInside(value: String): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       inline def setPaintOrder(value: String): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
       

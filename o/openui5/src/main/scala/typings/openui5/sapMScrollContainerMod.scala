@@ -336,7 +336,7 @@ object sapMScrollContainerMod {
     time: int
     ): this.type = js.native
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Scrolls to an element(DOM or sap.ui.core.Element) within the page if the element is rendered.
       *

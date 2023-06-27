@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiModelTreeAutoExpandModeMod {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Different modes for setting the auto expand mode on tree or analytical bindings.
     */
@@ -26,7 +26,7 @@ object sapUiModelTreeAutoExpandModeMod {
   @js.native
   sealed trait TreeAutoExpandMode extends StObject
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Different modes for setting the auto expand mode on tree or analytical bindings.
     */
@@ -35,7 +35,7 @@ object sapUiModelTreeAutoExpandModeMod {
   object TreeAutoExpandMode extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * If supported by a backend provider with analytical capabilities, the requests needed for an automatic
       * node expansion are bundled.
@@ -46,7 +46,7 @@ object sapUiModelTreeAutoExpandModeMod {
          with TreeAutoExpandMode
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Tree nodes will be expanded in sequence, level by level (Single requests are sent).
       */

@@ -1703,6 +1703,22 @@ object stdInts {
   inline def `0x8B9B`: `0x8B9B` = 0x8B9B.asInstanceOf[`0x8B9B`]
   
   @js.native
+  sealed trait `0x8C00` extends StObject
+  inline def `0x8C00`: `0x8C00` = 0x8C00.asInstanceOf[`0x8C00`]
+  
+  @js.native
+  sealed trait `0x8C01` extends StObject
+  inline def `0x8C01`: `0x8C01` = 0x8C01.asInstanceOf[`0x8C01`]
+  
+  @js.native
+  sealed trait `0x8C02` extends StObject
+  inline def `0x8C02`: `0x8C02` = 0x8C02.asInstanceOf[`0x8C02`]
+  
+  @js.native
+  sealed trait `0x8C03` extends StObject
+  inline def `0x8C03`: `0x8C03` = 0x8C03.asInstanceOf[`0x8C03`]
+  
+  @js.native
   sealed trait `0x8C17` extends StObject
   inline def `0x8C17`: `0x8C17` = 0x8C17.asInstanceOf[`0x8C17`]
   

@@ -227,7 +227,7 @@ object mod {
   
   inline def dropUndefinedKeys[T](inputValue: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("dropUndefinedKeys")(inputValue.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def dsnFromString(str: String): DsnComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("dsnFromString")(str.asInstanceOf[js.Any]).asInstanceOf[DsnComponents]
+  inline def dsnFromString(str: String): js.UndefOr[DsnComponents] = ^.asInstanceOf[js.Dynamic].applyDynamic("dsnFromString")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DsnComponents]]
   
   inline def dsnToString(dsn: DsnComponents): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dsnToString")(dsn.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def dsnToString(dsn: DsnComponents, withPassword: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dsnToString")(dsn.asInstanceOf[js.Any], withPassword.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -357,7 +357,7 @@ object mod {
   def logger: Logger_ = js.native
   inline def logger_=(x: Logger_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
   
-  inline def makeDsn(from: DsnLike): DsnComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDsn")(from.asInstanceOf[js.Any]).asInstanceOf[DsnComponents]
+  inline def makeDsn(from: DsnLike): js.UndefOr[DsnComponents] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDsn")(from.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DsnComponents]]
   
   inline def makePromiseBuffer[T](): PromiseBuffer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePromiseBuffer")().asInstanceOf[PromiseBuffer[T]]
   inline def makePromiseBuffer[T](limit: Double): PromiseBuffer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePromiseBuffer")(limit.asInstanceOf[js.Any]).asInstanceOf[PromiseBuffer[T]]

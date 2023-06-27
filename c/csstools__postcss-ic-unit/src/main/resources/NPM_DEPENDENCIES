@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-ic-unit" : "2.0.2"
+      "@csstools/postcss-ic-unit" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-ic-unit" : "2.0.2"
+      "@csstools/postcss-ic-unit" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

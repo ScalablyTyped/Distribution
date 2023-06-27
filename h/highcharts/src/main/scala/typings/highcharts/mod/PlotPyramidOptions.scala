@@ -49,11 +49,11 @@ trait PlotPyramidOptions extends StObject {
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The corner radius of the border surrounding each slice. A
-    * number signifies pixels. A percentage string, like for example `50%`,
-    * signifies a size relative to the radius and the inner radius.
+    * (Highcharts) The corner radius of the border surrounding all points or
+    * series. A number signifies pixels. A percentage string, like for example
+    * `50%`, signifies a size relative to the series width.
     */
-  var borderRadius: js.UndefOr[Double | String | BorderRadiusOptionsObject] = js.undefined
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) The width of the border surrounding each slice.
@@ -188,6 +188,9 @@ trait PlotPyramidOptions extends StObject {
     * value`. Works only for points in a visible range. Adds the
     * `cumulativeSum` field to each point object that can be accessed e.g. in
     * the tooltip.pointFormat.
+    *
+    * With `dataGrouping` enabled, default grouping approximation is set to
+    * `sum`.
     */
   var cumulative: js.UndefOr[Boolean] = js.undefined
   
@@ -366,7 +369,11 @@ trait PlotPyramidOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
-  var legendSymbol: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts) What type of legend symbol to render for this series. Can be
+    * one of `lineMarker` or `rectangle`.
+    */
+  var legendSymbol: js.UndefOr[OptionsLegendSymbolValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
@@ -420,6 +427,12 @@ trait PlotPyramidOptions extends StObject {
     * (Highcharts) Properties for each single point.
     */
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  
+  /**
+    * (Highcharts) Same as accessibility.point.descriptionFormat, but for an
+    * individual series. Overrides the chart wide configuration.
+    */
+  var pointDescriptionFormat: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
@@ -598,7 +611,7 @@ object PlotPyramidOptions {
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderRadius(value: Double | String | BorderRadiusOptionsObject): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
@@ -748,7 +761,7 @@ object PlotPyramidOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
-    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    inline def setLegendSymbol(value: OptionsLegendSymbolValue): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
     
     inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
@@ -781,6 +794,10 @@ object PlotPyramidOptions {
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setPoint(value: PlotSeriesPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormat(value: js.Function): Self = StObject.set(x, "pointDescriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatUndefined: Self = StObject.set(x, "pointDescriptionFormat", js.undefined)
     
     inline def setPointDescriptionFormatter(value: js.Function): Self = StObject.set(x, "pointDescriptionFormatter", value.asInstanceOf[js.Any])
     

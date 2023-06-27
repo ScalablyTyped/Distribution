@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalQueryResultProperties extends StObject {
   
   /**
-    * The query parameters for the next set of results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#nextQueryParams)
-    */
+  		 * The query parameters for the next set of results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#nextQueryParams)
+  		 */
   var nextQueryParams: js.UndefOr[PortalQueryParamsProperties] = js.undefined
   
   /**
-    * The query parameters for the first set of results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#queryParams)
-    */
+  		 * The query parameters for the first set of results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#queryParams)
+  		 */
   var queryParams: js.UndefOr[PortalQueryParamsProperties] = js.undefined
   
   /**
-    * An array of result item objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
-    */
+  		 * An array of result item objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
+  		 */
   var results: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * The total number of results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#total)
-    */
+  		 * The total number of results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#total)
+  		 */
   var total: js.UndefOr[Double] = js.undefined
 }
 object PortalQueryResultProperties {

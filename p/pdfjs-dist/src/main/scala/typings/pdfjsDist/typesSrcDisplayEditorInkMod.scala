@@ -16,9 +16,17 @@ object typesSrcDisplayEditorInkMod {
   open class InkEditor protected () extends AnnotationEditor {
     def this(params: Any) = this()
     
+    var allRawPaths: js.Array[Any] = js.native
+    
     var bezierPath2D: js.Array[Any] = js.native
     
     var canvas: js.UndefOr[HTMLCanvasElement | Null] = js.native
+    
+    /**
+      * oncontextmenu callback for the canvas we're drawing on.
+      * @param {PointerEvent} event
+      */
+    def canvasContextMenu(event: PointerEvent): Unit = js.native
     
     /**
       * onpointerdown callback for the canvas we're drawing on.
@@ -84,7 +92,7 @@ object typesSrcDisplayEditorInkMod {
     val ^ : js.Any = js.native
     
     /**
-      * Convert the output of fitCurve in some Path2D.
+      * Convert into a Path2D.
       * @param {Arra<Array<number>} bezier
       * @returns {Path2D}
       */

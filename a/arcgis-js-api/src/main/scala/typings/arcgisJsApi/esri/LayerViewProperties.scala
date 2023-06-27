@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerViewProperties extends StObject {
   
   /**
-    * When `true`, the layer is visible in the view.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#visible)
-    */
+  		 * When `true`, the layer is visible in the view.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object LayerViewProperties {

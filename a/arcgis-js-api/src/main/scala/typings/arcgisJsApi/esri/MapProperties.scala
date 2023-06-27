@@ -10,17 +10,17 @@ trait MapProperties
      with TablesMixinProperties {
   
   /**
-    * Specifies a basemap for the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap)
-    */
+  		 * Specifies a basemap for the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap)
+  		 */
   var basemap: js.UndefOr[BasemapProperties | String] = js.undefined
   
   /**
-    * Specifies the surface properties for the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground)
-    */
+  		 * Specifies the surface properties for the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground)
+  		 */
   var ground: js.UndefOr[GroundProperties | String] = js.undefined
 }
 object MapProperties {

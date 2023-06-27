@@ -8,56 +8,56 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Provides the logic for the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html)
-  */
+	 * Provides the logic for the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html) widget.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html)
+	 */
 trait TableListViewModel extends StObject {
   
   /**
-    * Whether to provide an indication if a layer is being published in the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#checkPublishStatusEnabled)
-    */
+  		 * Whether to provide an indication if a layer is being published in the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#checkPublishStatusEnabled)
+  		 */
   var checkPublishStatusEnabled: Boolean
   
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
-    */
+  		 * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
+  		 */
   def listItemCreatedFunction(event: Any): scala.Unit
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
-    */
+  		 * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
+  		 */
   @JSName("listItemCreatedFunction")
   var listItemCreatedFunction_Original: TableListViewModelListItemCreatedHandler
   
   /**
-    * A reference to the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) containing the tables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#map)
-    */
+  		 * A reference to the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) containing the tables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#map)
+  		 */
   var map: Map | WebMap
   
   /**
-    * The view model's state.
-    *
-    * @default disabled
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#state)
-    */
+  		 * The view model's state.
+  		 *
+  		 * @default disabled
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#state)
+  		 */
   val state: loading | ready | disabled
   
   /**
-    * The collection of table [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html)s displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#tableItems)
-    */
+  		 * The collection of table [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html)s displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#tableItems)
+  		 */
   val tableItems: Collection[TableListListItem]
 }
 object TableListViewModel {

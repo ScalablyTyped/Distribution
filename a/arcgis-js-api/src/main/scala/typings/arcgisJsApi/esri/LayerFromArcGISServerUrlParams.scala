@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerFromArcGISServerUrlParams extends StObject {
   
   /**
-    * Set any of the layer's properties here for constructing the layer instance (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
-    */
+  		 * Set any of the layer's properties here for constructing the layer instance (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
+  		 */
   var properties: js.UndefOr[Any] = js.undefined
   
   /**
-    * The ArcGIS Server URL used to create the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
-    */
+  		 * The ArcGIS Server URL used to create the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
+  		 */
   var url: String
 }
 object LayerFromArcGISServerUrlParams {

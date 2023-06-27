@@ -11,10 +11,10 @@ object esriWidgetsSupportSnappingControlsSnappingControlsViewModelMod {
   @JSImport("esri/widgets/support/SnappingControls/SnappingControlsViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html)
-    */
+  		 * Provides the logic for the [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls-SnappingControlsViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SnappingControlsViewModel {

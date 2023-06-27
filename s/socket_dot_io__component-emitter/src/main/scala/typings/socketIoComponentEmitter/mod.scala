@@ -23,20 +23,6 @@ object mod {
   open class Emitter[ListenEvents /* <: EventsMap */, EmitEvents /* <: EventsMap */, ReservedEvents /* <: EventsMap */] () extends StObject {
     
     /**
-      * Emits a reserved event.
-      *
-      * This method is `protected`, so that only a class extending
-      * `StrictEventEmitter` can emit its own reserved events.
-      *
-      * @param ev Reserved event name
-      * @param args Arguments to emit along with the event
-      */
-    /* protected */ def _emitReserved[Ev /* <: EventNames[ReservedEvents] */](
-      ev: Ev,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<ReservedEvents, Ev> is not an array type */ args: EventParams[ReservedEvents, Ev]
-    ): this.type = js.native
-    
-    /**
       * Emits an event.
       *
       * @param ev Name of the event
@@ -45,6 +31,20 @@ object mod {
     def emit[Ev /* <: EventNames[EmitEvents] */](
       ev: Ev,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<EmitEvents, Ev> is not an array type */ args: EventParams[EmitEvents, Ev]
+    ): this.type = js.native
+    
+    /**
+      * Emits a reserved event.
+      *
+      * This method is `protected`, so that only a class extending
+      * `StrictEventEmitter` can emit its own reserved events.
+      *
+      * @param ev Reserved event name
+      * @param args Arguments to emit along with the event
+      */
+    /* protected */ def emitReserved[Ev /* <: EventNames[ReservedEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<ReservedEvents, Ev> is not an array type */ args: EventParams[ReservedEvents, Ev]
     ): this.type = js.native
     
     /**

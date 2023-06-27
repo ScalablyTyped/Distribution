@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureTypeProperties extends StObject {
   
   /**
-    * Domains associated with the feature type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#domains)
-    */
+  		 * Domains associated with the feature type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#domains)
+  		 */
   var domains: js.UndefOr[
     HashMap[
       CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
@@ -21,24 +21,24 @@ trait FeatureTypeProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The feature type identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#id)
-    */
+  		 * The feature type identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#id)
+  		 */
   var id: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The feature type name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#name)
-    */
+  		 * The feature type name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Array of [feature templates](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html) associated with the feature type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#templates)
-    */
+  		 * Array of [feature templates](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html) associated with the feature type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureType.html#templates)
+  		 */
   var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
 }
 object FeatureTypeProperties {

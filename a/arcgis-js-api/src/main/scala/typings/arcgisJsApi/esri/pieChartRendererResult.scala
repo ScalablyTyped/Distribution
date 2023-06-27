@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait pieChartRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal color schemes for the charts.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal color schemes for the charts.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * The color scheme used by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * The color scheme used by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var pieChartScheme: PieChartScheme
   
   /**
-    * The generated pie chart renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * The generated pie chart renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var renderer: PieChartRenderer
   
   /**
-    * A size visual variable representing the sum of all attributes included in the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * A size visual variable representing the sum of all attributes included in the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var size: js.UndefOr[sizeVisualVariableResult] = js.undefined
   
   /**
-    * Contains the total counts of each attribute used in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
-    */
+  		 * Contains the total counts of each attribute used in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-pieChart.html#RendererResult)
+  		 */
   var statistics: UniqueValuesResult
 }
 object pieChartRendererResult {

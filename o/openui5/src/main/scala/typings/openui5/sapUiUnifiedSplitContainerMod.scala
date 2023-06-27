@@ -170,7 +170,7 @@ object sapUiUnifiedSplitContainerMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Gets current value of property {@link #getOrientation orientation}.
       *
@@ -343,7 +343,7 @@ object sapUiUnifiedSplitContainerMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Sets a new value for property {@link #getOrientation orientation}.
       *
@@ -431,7 +431,7 @@ object sapUiUnifiedSplitContainerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.0
+      * @since 1.22.0
       *
       * Whether to show the secondary content on the left ("Horizontal", default) or on the top ("Vertical").
       */

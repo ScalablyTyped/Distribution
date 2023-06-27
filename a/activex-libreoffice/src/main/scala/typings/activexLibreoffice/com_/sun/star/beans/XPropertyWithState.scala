@@ -45,7 +45,7 @@ trait XPropertyWithState
     *
     * The value depends on the implementation of this interface. If this is a bound property, the value changes before the change events are fired. If this
     * is a constrained property, the vetoable event is fired before the property value changes.
-    * @@throws com::sun::star::lang::WrappedTargetException    if the implementation has an internal reason for the exception.      In this case the original ex
+    * @throws com::sun::star::lang::WrappedTargetException    if the implementation has an internal reason for the exception.      In this case the original ex
     */
   def setToDefaultAsProperty(): Unit
 }

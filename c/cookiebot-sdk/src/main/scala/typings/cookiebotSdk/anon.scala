@@ -32,6 +32,86 @@ object anon {
     }
   }
   
+  trait Consent extends StObject {
+    
+    var consent: Marketing
+    
+    var consented: Boolean
+    
+    var declined: Boolean
+    
+    var doNotTrack: Boolean
+    
+    def getScript(url: String, async: Boolean, callback: js.Function0[Unit]): Unit
+    
+    var hasResponse: Boolean
+    
+    def hide(): Unit
+    
+    var regulations: CcpaApplies
+    
+    def renew(): Unit
+    
+    def runScripts(): Unit
+    
+    def show(): Unit
+    
+    def submitCustomConsent(optinPreferences: Boolean, optinStatistics: Boolean, optinMarketing: Boolean): Unit
+    
+    def withdraw(): Unit
+  }
+  object Consent {
+    
+    inline def apply(
+      consent: Marketing,
+      consented: Boolean,
+      declined: Boolean,
+      doNotTrack: Boolean,
+      getScript: (String, Boolean, js.Function0[Unit]) => Unit,
+      hasResponse: Boolean,
+      hide: () => Unit,
+      regulations: CcpaApplies,
+      renew: () => Unit,
+      runScripts: () => Unit,
+      show: () => Unit,
+      submitCustomConsent: (Boolean, Boolean, Boolean) => Unit,
+      withdraw: () => Unit
+    ): Consent = {
+      val __obj = js.Dynamic.literal(consent = consent.asInstanceOf[js.Any], consented = consented.asInstanceOf[js.Any], declined = declined.asInstanceOf[js.Any], doNotTrack = doNotTrack.asInstanceOf[js.Any], getScript = js.Any.fromFunction3(getScript), hasResponse = hasResponse.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), regulations = regulations.asInstanceOf[js.Any], renew = js.Any.fromFunction0(renew), runScripts = js.Any.fromFunction0(runScripts), show = js.Any.fromFunction0(show), submitCustomConsent = js.Any.fromFunction3(submitCustomConsent), withdraw = js.Any.fromFunction0(withdraw))
+      __obj.asInstanceOf[Consent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consent] (val x: Self) extends AnyVal {
+      
+      inline def setConsent(value: Marketing): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
+      
+      inline def setConsented(value: Boolean): Self = StObject.set(x, "consented", value.asInstanceOf[js.Any])
+      
+      inline def setDeclined(value: Boolean): Self = StObject.set(x, "declined", value.asInstanceOf[js.Any])
+      
+      inline def setDoNotTrack(value: Boolean): Self = StObject.set(x, "doNotTrack", value.asInstanceOf[js.Any])
+      
+      inline def setGetScript(value: (String, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "getScript", js.Any.fromFunction3(value))
+      
+      inline def setHasResponse(value: Boolean): Self = StObject.set(x, "hasResponse", value.asInstanceOf[js.Any])
+      
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      
+      inline def setRegulations(value: CcpaApplies): Self = StObject.set(x, "regulations", value.asInstanceOf[js.Any])
+      
+      inline def setRenew(value: () => Unit): Self = StObject.set(x, "renew", js.Any.fromFunction0(value))
+      
+      inline def setRunScripts(value: () => Unit): Self = StObject.set(x, "runScripts", js.Any.fromFunction0(value))
+      
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      
+      inline def setSubmitCustomConsent(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "submitCustomConsent", js.Any.fromFunction3(value))
+      
+      inline def setWithdraw(value: () => Unit): Self = StObject.set(x, "withdraw", js.Any.fromFunction0(value))
+    }
+  }
+  
   trait Marketing extends StObject {
     
     var marketing: Boolean

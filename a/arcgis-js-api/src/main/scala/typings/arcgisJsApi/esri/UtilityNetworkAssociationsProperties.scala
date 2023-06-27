@@ -9,147 +9,129 @@ trait UtilityNetworkAssociationsProperties
      with WidgetProperties {
   
   /**
-    * Indicates whether to show a toggle to automatically show associations every time the map extent changes, or an action button to show associations within the current map extent on demand.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#autoRefreshAssociations)
-    */
+  		 * Indicates whether to show a toggle to automatically show associations every time the map extent changes, or an action button to show associations within the current map extent on demand.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#autoRefreshAssociations)
+  		 */
   var autoRefreshAssociations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) used for representing the polyline geometry that is being drawn for connectivity associations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#connectivityAssociationsLineSymbol)
-    */
+  		 * A [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) used for representing the polyline geometry that is being drawn for connectivity associations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#connectivityAssociationsLineSymbol)
+  		 */
   var connectivityAssociationsLineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * Indicates whether to query and display connectivity associations.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#includeConnectivityAssociations)
-    */
+  		 * Indicates whether to query and display connectivity associations.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#includeConnectivityAssociations)
+  		 */
   var includeConnectivityAssociations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to query and display structural attachment associations.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#includeStructuralAttachmentAssociations)
-    */
+  		 * Indicates whether to query and display structural attachment associations.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#includeStructuralAttachmentAssociations)
+  		 */
   var includeStructuralAttachmentAssociations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of associations that can be returned from the server.
-    *
-    * @default 250
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociations)
-    */
+  		 * The maximum number of associations that can be returned from the server.
+  		 *
+  		 * @default 250
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociations)
+  		 */
   var maxAllowableAssociations: js.UndefOr[Double] = js.undefined
   
   /**
-    * Determines whether the maximum allowable associations returned were exceeded.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsExceeded)
-    */
-  var maxAllowableAssociationsExceeded: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The maximum value or upper bound of the Maximum allowable associations slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderMax)
-    */
+  		 * The maximum value or upper bound of the Maximum allowable associations slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderMax)
+  		 */
   var maxAllowableAssociationsSliderMax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum value or lower bound of the Maximum allowable associations slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderMin)
-    */
+  		 * The minimum value or lower bound of the Maximum allowable associations slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderMin)
+  		 */
   var maxAllowableAssociationsSliderMin: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the interval to move the maximum allowable associations slider with the up, or down keys.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderStep)
-    */
+  		 * Specifies the interval to move the maximum allowable associations slider with the up, or down keys.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociationsSliderStep)
+  		 */
   var maxAllowableAssociationsSliderStep: js.UndefOr[Double] = js.undefined
   
   /**
-    * Determines if no associations were found.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#noAssociationsFound)
-    */
-  var noAssociationsFound: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Indicates whether to show arrows for connectivity associations.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showArrowsConnectivity)
-    */
+  		 * Indicates whether to show arrows for connectivity associations.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showArrowsConnectivity)
+  		 */
   var showArrowsConnectivity: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to show arrows for structural attachment associations.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showArrowsStructuralAttachment)
-    */
+  		 * Indicates whether to show arrows for structural attachment associations.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showArrowsStructuralAttachment)
+  		 */
   var showArrowsStructuralAttachment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `autoRefreshAssociations` is `true`, indicates whether to automatically show associations every time the current map extent changes.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showAssociationsEnabled)
-    */
+  		 * When `autoRefreshAssociations` is `true`, indicates whether to automatically show associations every time the current map extent changes.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#showAssociationsEnabled)
+  		 */
   var showAssociationsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) used for representing the polyline geometry that is being drawn for structural attachment associations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#structuralAttachmentAssociationsLineSymbol)
-    */
+  		 * A [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html) used for representing the polyline geometry that is being drawn for structural attachment associations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#structuralAttachmentAssociationsLineSymbol)
+  		 */
   var structuralAttachmentAssociationsLineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * Determines the utility network to use.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#utilityNetwork)
-    */
+  		 * Determines the utility network to use.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#utilityNetwork)
+  		 */
   var utilityNetwork: js.UndefOr[UtilityNetworkProperties] = js.undefined
   
   /**
-    * The view associated with the UtilityNetworkAssociations widget instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#view)
-    */
+  		 * The view associated with the UtilityNetworkAssociations widget instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[UtilityNetworkAssociationsViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[UtilityNetworkAssociationsVisibleElements] = js.undefined
 }
 object UtilityNetworkAssociationsProperties {
@@ -180,10 +162,6 @@ object UtilityNetworkAssociationsProperties {
     
     inline def setMaxAllowableAssociations(value: Double): Self = StObject.set(x, "maxAllowableAssociations", value.asInstanceOf[js.Any])
     
-    inline def setMaxAllowableAssociationsExceeded(value: Double): Self = StObject.set(x, "maxAllowableAssociationsExceeded", value.asInstanceOf[js.Any])
-    
-    inline def setMaxAllowableAssociationsExceededUndefined: Self = StObject.set(x, "maxAllowableAssociationsExceeded", js.undefined)
-    
     inline def setMaxAllowableAssociationsSliderMax(value: Double): Self = StObject.set(x, "maxAllowableAssociationsSliderMax", value.asInstanceOf[js.Any])
     
     inline def setMaxAllowableAssociationsSliderMaxUndefined: Self = StObject.set(x, "maxAllowableAssociationsSliderMax", js.undefined)
@@ -197,10 +175,6 @@ object UtilityNetworkAssociationsProperties {
     inline def setMaxAllowableAssociationsSliderStepUndefined: Self = StObject.set(x, "maxAllowableAssociationsSliderStep", js.undefined)
     
     inline def setMaxAllowableAssociationsUndefined: Self = StObject.set(x, "maxAllowableAssociations", js.undefined)
-    
-    inline def setNoAssociationsFound(value: Boolean): Self = StObject.set(x, "noAssociationsFound", value.asInstanceOf[js.Any])
-    
-    inline def setNoAssociationsFoundUndefined: Self = StObject.set(x, "noAssociationsFound", js.undefined)
     
     inline def setShowArrowsConnectivity(value: Boolean): Self = StObject.set(x, "showArrowsConnectivity", value.asInstanceOf[js.Any])
     

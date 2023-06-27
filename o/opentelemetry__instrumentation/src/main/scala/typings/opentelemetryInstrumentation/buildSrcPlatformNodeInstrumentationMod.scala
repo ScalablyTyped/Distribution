@@ -20,13 +20,21 @@ object buildSrcPlatformNodeInstrumentationMod {
     
     /* private */ var _hooks: Any = js.native
     
+    /* protected */ var _massUnwrap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof massUnwrap */ Any = js.native
+    
+    /* protected */ var _massWrap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof massWrap */ Any = js.native
+    
     /* private */ var _modules: Any = js.native
     
     /* private */ var _onRequire: Any = js.native
     
     /* private */ var _requireInTheMiddleSingleton: Any = js.native
     
+    /* protected */ var _unwrap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unwrap */ Any = js.native
+    
     /* private */ var _warnOnPreloadedModules: Any = js.native
+    
+    /* protected */ var _wrap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wrap */ Any = js.native
     
     def isEnabled(): Boolean = js.native
   }

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.IsExpanded
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.DynamicPageTitleArea
 import typings.openui5.sapFLibraryMod.DynamicPageTitleShrinkRatio
@@ -147,7 +146,7 @@ object sapFDynamicPageTitleMod {
     vAriaDescribedBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Adds some ariaDescribedBy into the association {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -159,7 +158,7 @@ object sapFDynamicPageTitleMod {
     vAriaDescribedBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Adds some content to the aggregation {@link #getContent content}.
       *
@@ -185,7 +184,7 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Adds some navigationAction to the aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -211,7 +210,7 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:stateChange stateChange} event of this `sap.f.DynamicPageTitle`.
       *
@@ -230,20 +229,20 @@ object sapFDynamicPageTitleMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit]
     ): this.type = js.native
     def attachStateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.DynamicPageTitle` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:stateChange stateChange} event of this `sap.f.DynamicPageTitle`.
       *
@@ -267,7 +266,7 @@ object sapFDynamicPageTitleMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit]
     ): this.type = js.native
     def attachStateChange(
       /**
@@ -278,7 +277,7 @@ object sapFDynamicPageTitleMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.DynamicPageTitle` itself
       */
@@ -293,7 +292,7 @@ object sapFDynamicPageTitleMod {
     def destroyActions(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys the breadcrumbs in the aggregation {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -302,7 +301,7 @@ object sapFDynamicPageTitleMod {
     def destroyBreadcrumbs(): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Destroys all the content in the aggregation {@link #getContent content}.
       *
@@ -318,7 +317,7 @@ object sapFDynamicPageTitleMod {
     def destroyExpandedContent(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys the expandedHeading in the aggregation {@link #getExpandedHeading expandedHeading}.
       *
@@ -334,7 +333,7 @@ object sapFDynamicPageTitleMod {
     def destroyHeading(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys all the navigationActions in the aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -350,7 +349,7 @@ object sapFDynamicPageTitleMod {
     def destroySnappedContent(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys the snappedHeading in the aggregation {@link #getSnappedHeading snappedHeading}.
       *
@@ -359,7 +358,7 @@ object sapFDynamicPageTitleMod {
     def destroySnappedHeading(): this.type = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Destroys the snappedTitleOnMobile in the aggregation {@link #getSnappedTitleOnMobile snappedTitleOnMobile}.
       *
@@ -368,7 +367,7 @@ object sapFDynamicPageTitleMod {
     def destroySnappedTitleOnMobile(): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Detaches event handler `fnFunction` from the {@link #event:stateChange stateChange} event of this `sap.f.DynamicPageTitle`.
       *
@@ -380,13 +379,13 @@ object sapFDynamicPageTitleMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit]
     ): this.type = js.native
     def detachStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPageTitleStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -394,18 +393,20 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.54
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stateChange stateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStateChange(): this.type = js.native
-    def fireStateChange(/**
+    def fireStateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: IsExpanded): this.type = js.native
+    mParameters: DynamicPageTitle$StateChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getActions actions}.
@@ -421,7 +422,7 @@ object sapFDynamicPageTitleMod {
     def getActions(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getAreaShrinkRatio areaShrinkRatio}.
       *
@@ -447,15 +448,14 @@ object sapFDynamicPageTitleMod {
     def getAreaShrinkRatio(): DynamicPageTitleShrinkRatio = js.native
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -469,7 +469,7 @@ object sapFDynamicPageTitleMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -478,7 +478,7 @@ object sapFDynamicPageTitleMod {
     def getBreadcrumbs(): IBreadcrumbs = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets content of aggregation {@link #getContent content}.
       *
@@ -499,7 +499,7 @@ object sapFDynamicPageTitleMod {
     def getExpandedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getExpandedHeading expandedHeading}.
       *
@@ -521,16 +521,16 @@ object sapFDynamicPageTitleMod {
       *
       * **Notes:**
       * 	 - `heading` is mutually exclusive with `snappedHeading` and `expandedHeading`. If `heading` is provided,
-      * 			both `snappedHeading` and `expandedHeading` are ignored. `heading` is useful when the content of `snappedHeading`
-      * 			and `expandedHeading` needs to be the same as it replaces them both.
+      *     both `snappedHeading` and `expandedHeading` are ignored. `heading` is useful when the content of `snappedHeading`
+      *     and `expandedHeading` needs to be the same as it replaces them both.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     def getHeading(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -538,17 +538,17 @@ object sapFDynamicPageTitleMod {
       *
       * **Notes:**
       * 	 - The `navigationActions` position depends on the control size. If the control size is 1280px or bigger,
-      * 			they are rendered right next to the `actions`. Otherwise, they are rendered in the top-right area, above
-      * 			the `actions`. If a large number of elements(buttons) are used, there could be visual degradations as
-      * 			the space for the `navigationActions` is limited.
+      *     they are rendered right next to the `actions`. Otherwise, they are rendered in the top-right area, above
+      *     the `actions`. If a large number of elements(buttons) are used, there could be visual degradations as
+      *     the space for the `navigationActions` is limited.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     def getNavigationActions(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       * @deprecated (since 1.54) - Please use the `areaShrinkRatio` property instead. The value of `areaShrinkRatio`
       * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
       * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
@@ -584,7 +584,7 @@ object sapFDynamicPageTitleMod {
     def getSnappedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getSnappedHeading snappedHeading}.
       *
@@ -594,15 +594,15 @@ object sapFDynamicPageTitleMod {
       *
       * **Notes:**
       * 	 - In order for `snappedHeading` to be taken into account, `heading` has to be empty. Combine `snappedHeading`
-      * 			with `expandedHeading` to switch content when the header switches state.
+      *     with `expandedHeading` to switch content when the header switches state.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     def getSnappedHeading(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Gets content of aggregation {@link #getSnappedTitleOnMobile snappedTitleOnMobile}.
       *
@@ -631,7 +631,7 @@ object sapFDynamicPageTitleMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getContent content}. and returns
       * its index if found or -1 otherwise.
@@ -659,7 +659,7 @@ object sapFDynamicPageTitleMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Checks for the provided `sap.m.Button` in the aggregation {@link #getNavigationActions navigationActions}.
       * and returns its index if found or -1 otherwise.
@@ -705,7 +705,7 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Inserts a content into the aggregation {@link #getContent content}.
       *
@@ -743,7 +743,7 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Inserts a navigationAction into the aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -810,7 +810,7 @@ object sapFDynamicPageTitleMod {
     def removeAllActions(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Removes all the controls in the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -819,7 +819,7 @@ object sapFDynamicPageTitleMod {
     def removeAllAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Removes all the controls from the aggregation {@link #getContent content}.
       *
@@ -839,7 +839,7 @@ object sapFDynamicPageTitleMod {
     def removeAllExpandedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Removes all the controls from the aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -859,7 +859,7 @@ object sapFDynamicPageTitleMod {
     def removeAllSnappedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Removes an ariaDescribedBy from the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -885,7 +885,7 @@ object sapFDynamicPageTitleMod {
       */
     vContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Removes a content from the aggregation {@link #getContent content}.
       *
@@ -927,7 +927,7 @@ object sapFDynamicPageTitleMod {
       */
     vNavigationAction: String): typings.openui5.sapMButtonMod.default | Null = js.native
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Removes a navigationAction from the aggregation {@link #getNavigationActions navigationActions}.
       *
@@ -965,7 +965,7 @@ object sapFDynamicPageTitleMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets the value of the `areaShrinkRatio` property.
       *
@@ -983,7 +983,7 @@ object sapFDynamicPageTitleMod {
     sBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -1002,7 +1002,7 @@ object sapFDynamicPageTitleMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets the aggregated {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -1014,7 +1014,7 @@ object sapFDynamicPageTitleMod {
     oBreadcrumbs: IBreadcrumbs): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets the aggregated {@link #getExpandedHeading expandedHeading}.
       *
@@ -1038,7 +1038,7 @@ object sapFDynamicPageTitleMod {
     oHeading: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       * @deprecated (since 1.54) - Please use the `areaShrinkRatio` property instead. The value of `areaShrinkRatio`
       * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
       * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
@@ -1075,7 +1075,7 @@ object sapFDynamicPageTitleMod {
     sPrimaryArea: DynamicPageTitleArea): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets the aggregated {@link #getSnappedHeading snappedHeading}.
       *
@@ -1089,7 +1089,7 @@ object sapFDynamicPageTitleMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Sets the aggregated {@link #getSnappedTitleOnMobile snappedTitleOnMobile}.
       *
@@ -1101,6 +1101,29 @@ object sapFDynamicPageTitleMod {
       */
     oSnappedTitleOnMobile: typings.openui5.sapMTitleMod.default
     ): this.type = js.native
+  }
+  
+  trait DynamicPageTitle$StateChangeEventParameters extends StObject {
+    
+    /**
+      * Whether the title was expanded (true) or collapsed (false).
+      */
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
+  }
+  object DynamicPageTitle$StateChangeEventParameters {
+    
+    inline def apply(): DynamicPageTitle$StateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DynamicPageTitle$StateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicPageTitle$StateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    }
   }
   
   trait DynamicPageTitleSettings
@@ -1121,7 +1144,7 @@ object sapFDynamicPageTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Assigns shrinking ratio to the `DynamicPageTitle` areas (Heading, Content, Actions). The greater value
       * a section has the faster it shrinks when the screen size is being reduced.
@@ -1143,14 +1166,14 @@ object sapFDynamicPageTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Association to controls / IDs which describe this control (see WAI-ARIA attribute aria-describedby).
       */
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Determines the background color of the `DynamicPageTitle`.
       *
@@ -1162,14 +1185,14 @@ object sapFDynamicPageTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The breadcrumbs displayed in the `DynamicPageTitle` top-left area.
       */
     var breadcrumbs: js.UndefOr[IBreadcrumbs] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * The content is positioned in the `DynamicPageTitle` middle area and displayed in both expanded and collapsed
       * (snapped) states.
@@ -1190,7 +1213,7 @@ object sapFDynamicPageTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The `expandedHeading` is positioned in the `DynamicPageTitle` left area and is displayed when the header
       * is in expanded state only. Use this aggregation to display a title (or any other UI5 control that serves
@@ -1208,34 +1231,34 @@ object sapFDynamicPageTitleMod {
       *
       * **Notes:**
       * 	 - `heading` is mutually exclusive with `snappedHeading` and `expandedHeading`. If `heading` is provided,
-      * 			both `snappedHeading` and `expandedHeading` are ignored. `heading` is useful when the content of `snappedHeading`
-      * 			and `expandedHeading` needs to be the same as it replaces them both.
+      *     both `snappedHeading` and `expandedHeading` are ignored. `heading` is useful when the content of `snappedHeading`
+      *     and `expandedHeading` needs to be the same as it replaces them both.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     var heading: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The `DynamicPageTitle` navigation actions.
       *
       * **Notes:**
       * 	 - The `navigationActions` position depends on the control size. If the control size is 1280px or bigger,
-      * 			they are rendered right next to the `actions`. Otherwise, they are rendered in the top-right area, above
-      * 			the `actions`. If a large number of elements(buttons) are used, there could be visual degradations as
-      * 			the space for the `navigationActions` is limited.
+      *     they are rendered right next to the `actions`. Otherwise, they are rendered in the top-right area, above
+      *     the `actions`. If a large number of elements(buttons) are used, there could be visual degradations as
+      *     the space for the `navigationActions` is limited.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     var navigationActions: js.UndefOr[
         js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       * @deprecated (since 1.54) - Please use the `areaShrinkRatio` property instead. The value of `areaShrinkRatio`
       * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
       * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
@@ -1267,7 +1290,7 @@ object sapFDynamicPageTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The `snappedHeading` is positioned in the `DynamicPageTitle` left area and is displayed when the header
       * is in collapsed (snapped) state only. Use this aggregation to display a title (or any other UI5 control
@@ -1275,15 +1298,15 @@ object sapFDynamicPageTitleMod {
       *
       * **Notes:**
       * 	 - In order for `snappedHeading` to be taken into account, `heading` has to be empty. Combine `snappedHeading`
-      * 			with `expandedHeading` to switch content when the header switches state.
+      *     with `expandedHeading` to switch content when the header switches state.
       * 	 - If the `snappedTitleOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `DynamicPageHeader` is in its collapsed (snapped)
+      *     state.
       */
     var snappedHeading: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * The only content that is displayed in the `DynamicPageTitle` when it is viewed on a phone mobile device
       * and the `DynamicPageHeader` is in collapsed (snapped) state.
@@ -1297,7 +1320,7 @@ object sapFDynamicPageTitleMod {
     var snappedTitleOnMobile: js.UndefOr[typings.openui5.sapMTitleMod.default] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Fired when the title state (expanded/collapsed) is toggled by user interaction. For example, scrolling,
       * title clicking/tapping, using expand/collapse button.
@@ -1305,7 +1328,12 @@ object sapFDynamicPageTitleMod {
       * Also fired when the developer toggles the title state by programmatically changing the scroll position
       * of the scrollbar of `DynamicPage`.
       */
-    var stateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicPageTitle$StateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object DynamicPageTitleSettings {
     
@@ -1401,9 +1429,15 @@ object sapFDynamicPageTitleMod {
       
       inline def setSnappedTitleOnMobileUndefined: Self = StObject.set(x, "snappedTitleOnMobile", js.undefined)
       
-      inline def setStateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
+      inline def setStateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicPageTitle$StateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
       
       inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
     }
   }
+  
+  type DynamicPageTitleStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[DynamicPageTitle$StateChangeEventParameters]
+  
+  type DynamicPageTitleStateChangeEventParameters = DynamicPageTitle$StateChangeEventParameters
 }

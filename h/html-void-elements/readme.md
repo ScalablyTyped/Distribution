@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-void-elements
 
-Typings are for version 2.0.1
+Typings are for version 3.0.0
 
 ## Library description:
 List of HTML void tag names

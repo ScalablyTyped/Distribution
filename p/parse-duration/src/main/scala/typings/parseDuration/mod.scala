@@ -8,10 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  @JSImport("parse-duration", JSImport.Default)
+  @JSImport("parse-duration", JSImport.Namespace)
   @js.native
-  val default: (js.Function2[/* input */ String, /* format */ js.UndefOr[Units], Double]) & StringDictionary[Double] = js.native
+  val ^ : Parse = js.native
   
+  @js.native
+  trait Parse
+    extends StObject
+       with /* key */ StringDictionary[Double] {
+    
+    def apply(input: String): js.UndefOr[Double] = js.native
+    def apply(input: String, format: Units): js.UndefOr[Double] = js.native
+    
+    def default(input: String): js.UndefOr[Double] = js.native
+    def default(input: String, format: Units): js.UndefOr[Double] = js.native
+    @JSName("default")
+    var default_Original: Parse = js.native
+  }
+  
+  /**
+    * convert `str` to ms
+    */
   /* Rewritten from type alias, can be one of: 
     - typings.parseDuration.parseDurationStrings.nanosecond
     - typings.parseDuration.parseDurationStrings.ns
@@ -99,8 +116,8 @@ object mod extends Shortcut {
     inline def μs: typings.parseDuration.parseDurationStrings.μs = "\u03BCs".asInstanceOf[typings.parseDuration.parseDurationStrings.μs]
   }
   
-  type _To = (js.Function2[/* input */ String, /* format */ js.UndefOr[Units], Double]) & StringDictionary[Double]
+  type _To = Parse
   
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: (js.Function2[/* input */ String, /* format */ js.UndefOr[Units], Double]) & StringDictionary[Double] = default
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: Parse = ^
 }

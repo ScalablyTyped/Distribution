@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DateTimePickerInputProper extends StObject {
   
   /**
-    * Indicates if the input should provide an option to select the time.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#includeTime)
-    */
+  		 * Indicates if the input should provide an option to select the time.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#includeTime)
+  		 */
   var includeTime: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum date to allow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#max)
-    */
+  		 * The maximum date to allow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#max)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum date to allow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#min)
-    */
+  		 * The minimum date to allow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-DateTimePickerInput.html#min)
+  		 */
   var min: js.UndefOr[Double] = js.undefined
   
   var `type`: `datetime-picker`

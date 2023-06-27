@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Landscape
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMNavContainerMod.NavContainerSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -21,7 +20,7 @@ object sapMAppMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:a4afb138acf64a61a038aa5b91a4f082 App}
+    * 	{@link https://ui5.sap.com/#/topic/a4afb138acf64a61a038aa5b91a4f082 App}
     */
   open class default () extends App {
     def this(/**
@@ -142,13 +141,13 @@ object sapMAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def attachOrientationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.App` itself
       */
@@ -176,7 +175,7 @@ object sapMAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def attachOrientationChange(
       /**
@@ -187,7 +186,7 @@ object sapMAppMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.App` itself
       */
@@ -208,13 +207,13 @@ object sapMAppMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit]
     ): this.type = js.native
     def detachOrientationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AppOrientationChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -223,20 +222,22 @@ object sapMAppMod {
     
     /**
       * @deprecated (since 1.20.0) - use {@link sap.ui.Device.orientation.attachHandler} instead.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:orientationChange orientationChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireOrientationChange(): this.type = js.native
-    def fireOrientationChange(/**
+    def fireOrientationChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Landscape): this.type = js.native
+    mParameters: App$OrientationChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundColor backgroundColor}.
       *
@@ -251,7 +252,7 @@ object sapMAppMod {
     def getBackgroundColor(): String = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundImage backgroundImage}.
       *
@@ -266,7 +267,7 @@ object sapMAppMod {
     def getBackgroundImage(): URI = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -281,7 +282,7 @@ object sapMAppMod {
     def getBackgroundOpacity(): float = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -327,7 +328,7 @@ object sapMAppMod {
     def getHomeIcon(): Any = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Gets current value of property {@link #getIsTopLevel isTopLevel}.
       *
@@ -343,7 +344,7 @@ object sapMAppMod {
     def getIsTopLevel(): Boolean = js.native
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * Gets current value of property {@link #getMobileWebAppCapable mobileWebAppCapable}.
       *
@@ -365,7 +366,7 @@ object sapMAppMod {
     def getMobileWebAppCapable(): Boolean = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundColor backgroundColor}.
       *
@@ -386,7 +387,7 @@ object sapMAppMod {
     sBackgroundColor: String): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundImage backgroundImage}.
       *
@@ -407,7 +408,7 @@ object sapMAppMod {
     sBackgroundImage: URI): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -428,7 +429,7 @@ object sapMAppMod {
     fBackgroundOpacity: float): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -486,7 +487,7 @@ object sapMAppMod {
     oHomeIcon: Any): this.type = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Sets a new value for property {@link #getIsTopLevel isTopLevel}.
       *
@@ -508,7 +509,7 @@ object sapMAppMod {
     bIsTopLevel: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * Sets a new value for property {@link #getMobileWebAppCapable mobileWebAppCapable}.
       *
@@ -536,12 +537,39 @@ object sapMAppMod {
     bMobileWebAppCapable: Boolean): this.type = js.native
   }
   
+  trait App$OrientationChangeEventParameters extends StObject {
+    
+    /**
+      * Whether the device is in landscape orientation.
+      */
+    var landscape: js.UndefOr[Boolean] = js.undefined
+  }
+  object App$OrientationChangeEventParameters {
+    
+    inline def apply(): App$OrientationChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[App$OrientationChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App$OrientationChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+      
+      inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    }
+  }
+  
+  type AppOrientationChangeEvent = typings.openui5.sapUiBaseEventMod.default[App$OrientationChangeEventParameters]
+  
+  type AppOrientationChangeEventParameters = App$OrientationChangeEventParameters
+  
   trait AppSettings
     extends StObject
        with NavContainerSettings {
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Background color of the App. If set, this color will override the default background defined by the theme.
       * So this should only be set when really required. Any configured background image will be placed above
@@ -552,7 +580,7 @@ object sapMAppMod {
     var backgroundColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Background image of the App. If set, this image will override the default background defined by the theme.
       * So this should only be set when really required. This background image will be placed above any color
@@ -563,7 +591,7 @@ object sapMAppMod {
     var backgroundImage: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Opacity of the background image. The opacity can be set between 0 (fully transparent) and 1 fully opaque).
       * This can be used to make the application content better readable by making the background image partly
@@ -574,7 +602,7 @@ object sapMAppMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Whether the background image (if configured) should be proportionally stretched to cover the whole App
       * (false) or whether it should be tiled (true).
@@ -612,7 +640,7 @@ object sapMAppMod {
     var homeIcon: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Determines whether `sap.m.App` is used as a top level control.
       *
@@ -624,7 +652,7 @@ object sapMAppMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * Determines whether the `App` is displayed without address bar when opened from an exported home screen
       * icon on a mobile device.
@@ -646,7 +674,12 @@ object sapMAppMod {
       *
       * Fired when the orientation (portrait/landscape) of the device is changed.
       */
-    var orientationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var orientationChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[App$OrientationChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object AppSettings {
     
@@ -686,7 +719,9 @@ object sapMAppMod {
       
       inline def setMobileWebAppCapableUndefined: Self = StObject.set(x, "mobileWebAppCapable", js.undefined)
       
-      inline def setOrientationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "orientationChange", js.Any.fromFunction1(value))
+      inline def setOrientationChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[App$OrientationChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "orientationChange", js.Any.fromFunction1(value))
       
       inline def setOrientationChangeUndefined: Self = StObject.set(x, "orientationChange", js.undefined)
     }

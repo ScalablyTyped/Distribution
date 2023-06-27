@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeasurementValue extends StObject {
   
   /**
-    * Measured value represented in significant figures in string format.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
-    */
+  		 * Measured value represented in significant figures in string format.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
+  		 */
   var displayValue: String
   
   /**
-    * Uncertainty of the measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
-    */
+  		 * Uncertainty of the measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
+  		 */
   var uncertainty: Double
   
   /**
-    * Unit used in the mensuration operation.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Unit used in the mensuration operation.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: String
   
   /**
-    * Measured value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
-    */
+  		 * Measured value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#measurementValue)
+  		 */
   var value: Double
 }
 object MeasurementValue {

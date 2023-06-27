@@ -53,6 +53,8 @@ type LibraryManagedAttributes[Component, Props] = Props
 
 type MouseEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedMouseEvent[Target]]
 
+type PictureInPictureEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedPictureInPictureEvent[Target]]
+
 type PointerEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedPointerEvent[Target]]
 
 type Signalish[T] = T | SignalLike[T]

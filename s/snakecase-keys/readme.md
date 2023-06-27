@@ -1,7 +1,7 @@
 
 # Scala.js typings for snakecase-keys
 
-Typings are for version 5.4.5
+Typings are for version 5.4.6
 
 ## Library description:
 Convert an object's keys to snake case

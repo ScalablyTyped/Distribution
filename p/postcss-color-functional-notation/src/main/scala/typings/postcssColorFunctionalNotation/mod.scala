@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  /** Transform lab() and lch() functions in CSS. */
   @JSImport("postcss-color-functional-notation", JSImport.Default)
   @js.native
   val default: PluginCreator[pluginOptions] = js.native
@@ -19,6 +18,9 @@ object mod extends Shortcut {
   override def _to: PluginCreator[pluginOptions] = default
   
   trait pluginOptions extends StObject {
+    
+    /** Enable "@csstools/postcss-progressive-custom-properties". default: true */
+    var enableProgressiveCustomProperties: js.UndefOr[Boolean] = js.undefined
     
     /** Preserve the original notation. default: false */
     var preserve: js.UndefOr[Boolean] = js.undefined
@@ -32,6 +34,10 @@ object mod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
+      
+      inline def setEnableProgressiveCustomProperties(value: Boolean): Self = StObject.set(x, "enableProgressiveCustomProperties", value.asInstanceOf[js.Any])
+      
+      inline def setEnableProgressiveCustomPropertiesUndefined: Self = StObject.set(x, "enableProgressiveCustomProperties", js.undefined)
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       

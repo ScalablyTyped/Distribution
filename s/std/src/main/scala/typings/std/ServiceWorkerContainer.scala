@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The ServiceWorkerContainer interface of the ServiceWorker API provides an object representing the service worker as an overall unit in the network ecosystem, including facilities to register, unregister and update service workers, and access the state of service workers and their registrations.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer)
   */
 @js.native
 trait ServiceWorkerContainer
@@ -63,29 +65,37 @@ trait ServiceWorkerContainer
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/controller) */
   /* standard dom */
   val controller: ServiceWorker | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistration) */
   /* standard dom */
   def getRegistration(): js.Promise[js.UndefOr[ServiceWorkerRegistration]] = js.native
   def getRegistration(clientURL: java.lang.String): js.Promise[js.UndefOr[ServiceWorkerRegistration]] = js.native
   def getRegistration(clientURL: URL): js.Promise[js.UndefOr[ServiceWorkerRegistration]] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/getRegistrations) */
   /* standard dom */
   def getRegistrations(): js.Promise[js.Array[ServiceWorkerRegistration]] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/controllerchange_event) */
   /* standard dom */
   var oncontrollerchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/message_event) */
   /* standard dom */
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/messageerror_event) */
   /* standard dom */
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/ready) */
   /* standard dom */
   val ready: js.Promise[ServiceWorkerRegistration] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/register) */
   /* standard dom */
   def register(scriptURL: java.lang.String): js.Promise[ServiceWorkerRegistration] = js.native
   def register(scriptURL: java.lang.String, options: RegistrationOptions): js.Promise[ServiceWorkerRegistration] = js.native
@@ -139,6 +149,7 @@ trait ServiceWorkerContainer
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorkerContainer/startMessages) */
   /* standard dom */
   def startMessages(): Unit = js.native
 }

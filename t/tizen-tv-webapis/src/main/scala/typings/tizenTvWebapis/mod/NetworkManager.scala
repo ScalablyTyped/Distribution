@@ -67,9 +67,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 2.3
     *
@@ -92,11 +92,11 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -120,7 +120,7 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -139,11 +139,11 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -164,9 +164,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -188,9 +188,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -211,9 +211,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -239,7 +239,7 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -260,9 +260,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -283,9 +283,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -306,9 +306,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -330,10 +330,10 @@ trait NetworkManager extends StObject {
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
     * @since 4.0
     *
@@ -353,7 +353,7 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -379,9 +379,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -407,9 +407,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -434,9 +434,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -457,9 +457,9 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a Wi-Fi connection is not available. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -481,7 +481,7 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -501,11 +501,11 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -527,11 +527,11 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.public
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the listenerId value is not the same as the value generated by addNetworkStateChangeListener. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if the listenerId value is not the same as the value generated by addNetworkStateChangeListener. (Since plugin version 3.0)
     *
     * @since 2.3
     *
@@ -553,13 +553,13 @@ trait NetworkManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/network.dhcpoption60
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if a network connection is not available. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidStateError, if the active connection type is Wi-Fi. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type. (Since plugin version 3.0)
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type. (Since plugin version 3.0)
     *
     * @since 2.3
     *

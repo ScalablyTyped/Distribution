@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalUserFetchItemsParams extends StObject {
   
   /**
-    * The folder to retrieve items from.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
-    */
+  		 * The folder to retrieve items from.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
+  		 */
   var folder: js.UndefOr[PortalFolder] = js.undefined
   
   /**
-    * The maximum number of results to be included in the result set response.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
-    */
+  		 * The maximum number of results to be included in the result set response.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * A comma-delimited list of fields to sort by.
-    *
-    * @default created
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
-    */
+  		 * A comma-delimited list of fields to sort by.
+  		 *
+  		 * @default created
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
+  		 */
   var sortField: js.UndefOr[String] = js.undefined
   
   /**
-    * The order in which to sort the results.
-    *
-    * @default asc
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
-    */
+  		 * The order in which to sort the results.
+  		 *
+  		 * @default asc
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
+  		 */
   var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
-    * The index of the first entry in the result set response.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
-    */
+  		 * The index of the first entry in the result set response.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fetchItems)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
 }
 object PortalUserFetchItemsParams {

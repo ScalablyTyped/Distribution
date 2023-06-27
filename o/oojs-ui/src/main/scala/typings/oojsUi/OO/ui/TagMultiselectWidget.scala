@@ -122,6 +122,11 @@ object TagMultiselectWidget {
     var inputWidget: js.UndefOr[InputWidget] = js.undefined
     
     /**
+      * Placeholder text for the input box
+      */
+    var placeholder: js.UndefOr[String] = js.undefined
+    
+    /**
       * A set of selected tags. If given,
       * these will appear in the tag list on initialization, as long as they
       * pass the validity tests.
@@ -183,6 +188,10 @@ object TagMultiselectWidget {
       inline def setInputWidget(value: InputWidget): Self = StObject.set(x, "inputWidget", value.asInstanceOf[js.Any])
       
       inline def setInputWidgetUndefined: Self = StObject.set(x, "inputWidget", js.undefined)
+      
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       inline def setSelected(value: js.Array[Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       

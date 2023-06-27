@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.quarantine_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.deviceDefault
   - typings.microsoftGraph.microsoftGraphStrings.clean
-  - typings.microsoftGraph.microsoftGraphStrings.quarantine
+  - typings.microsoftGraph.microsoftGraphStrings.quarantine_
   - typings.microsoftGraph.microsoftGraphStrings.remove
   - typings.microsoftGraph.microsoftGraphStrings.allow
   - typings.microsoftGraph.microsoftGraphStrings.userDefined
@@ -24,7 +25,7 @@ object DefenderThreatAction {
   
   inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  inline def quarantine: typings.microsoftGraph.microsoftGraphStrings.quarantine = "quarantine".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.quarantine]
+  inline def quarantine: quarantine_ = "quarantine".asInstanceOf[quarantine_]
   
   inline def remove: typings.microsoftGraph.microsoftGraphStrings.remove = "remove".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remove]
   

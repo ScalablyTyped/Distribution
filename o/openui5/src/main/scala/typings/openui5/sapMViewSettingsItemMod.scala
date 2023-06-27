@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PropertyValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreItemMod.ItemSettings
@@ -137,13 +136,13 @@ object sapMViewSettingsItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachItemPropertyChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsItem` itself
       */
@@ -169,7 +168,7 @@ object sapMViewSettingsItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachItemPropertyChanged(
       /**
@@ -180,7 +179,7 @@ object sapMViewSettingsItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsItem` itself
       */
@@ -199,13 +198,13 @@ object sapMViewSettingsItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def detachItemPropertyChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsItemItemPropertyChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -213,17 +212,19 @@ object sapMViewSettingsItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemPropertyChanged itemPropertyChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemPropertyChanged(): this.type = js.native
-    def fireItemPropertyChanged(/**
+    def fireItemPropertyChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PropertyValue): this.type = js.native
+    mParameters: ViewSettingsItem$ItemPropertyChangedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getSelected selected}.
@@ -256,6 +257,51 @@ object sapMViewSettingsItemMod {
     bSelected: Boolean): this.type = js.native
   }
   
+  trait ViewSettingsItem$ItemPropertyChangedEventParameters extends StObject {
+    
+    /**
+      * Instance of the item that changed.
+      */
+    var changedItem: js.UndefOr[ViewSettingsItem] = js.undefined
+    
+    /**
+      * Key of the changed property.
+      */
+    var propertyKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Value of the changed property.
+      */
+    var propertyValue: js.UndefOr[Any] = js.undefined
+  }
+  object ViewSettingsItem$ItemPropertyChangedEventParameters {
+    
+    inline def apply(): ViewSettingsItem$ItemPropertyChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSettingsItem$ItemPropertyChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsItem$ItemPropertyChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChangedItem(value: ViewSettingsItem): Self = StObject.set(x, "changedItem", value.asInstanceOf[js.Any])
+      
+      inline def setChangedItemUndefined: Self = StObject.set(x, "changedItem", js.undefined)
+      
+      inline def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
+      
+      inline def setPropertyValue(value: Any): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
+    }
+  }
+  
+  type ViewSettingsItemItemPropertyChangedEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsItem$ItemPropertyChangedEventParameters]
+  
+  type ViewSettingsItemItemPropertyChangedEventParameters = ViewSettingsItem$ItemPropertyChangedEventParameters
+  
   trait ViewSettingsItemSettings
     extends StObject
        with ItemSettings {
@@ -263,7 +309,12 @@ object sapMViewSettingsItemMod {
     /**
       * Let the outside world know that some of its properties has changed.
       */
-    var itemPropertyChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemPropertyChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsItem$ItemPropertyChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Selected state of the item. If set to "true", the item will be displayed as selected in the view settings
@@ -283,7 +334,9 @@ object sapMViewSettingsItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ViewSettingsItemSettings] (val x: Self) extends AnyVal {
       
-      inline def setItemPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemPropertyChanged", js.Any.fromFunction1(value))
+      inline def setItemPropertyChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsItem$ItemPropertyChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "itemPropertyChanged", js.Any.fromFunction1(value))
       
       inline def setItemPropertyChangedUndefined: Self = StObject.set(x, "itemPropertyChanged", js.undefined)
       

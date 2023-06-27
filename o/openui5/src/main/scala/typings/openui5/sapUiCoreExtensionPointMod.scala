@@ -15,7 +15,7 @@ object sapUiCoreExtensionPointMod extends Shortcut {
   trait ExtensionPoint extends StObject {
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Creates 0..n UI5 controls from an `ExtensionPoint`.
       *

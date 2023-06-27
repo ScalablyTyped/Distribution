@@ -273,7 +273,7 @@ trait ZeptoStatic extends StObject {
   /**
     * Alias for the native JSON.parse method.
     * @param str
-    * @retrun
+    * @return
     **/
   def parseJSON(str: String): Any = js.native
   

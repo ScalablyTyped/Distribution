@@ -19,7 +19,7 @@ object sapFGridContainerItemLayoutDataMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
     */
   open class default () extends GridContainerItemLayoutData {
     def this(/**
@@ -149,7 +149,7 @@ object sapFGridContainerItemLayoutDataMod {
     def getMinRows(): int = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
+      * @experimental (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Gets current value of property {@link #getRows rows}.
       *
@@ -196,7 +196,7 @@ object sapFGridContainerItemLayoutDataMod {
     iMinRows: int): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
+      * @experimental (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Sets a new value for property {@link #getRows rows}.
       *
@@ -232,7 +232,7 @@ object sapFGridContainerItemLayoutDataMod {
     var minRows: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.65) - this property may soon be removed, use minRows instead
+      * @experimental (since 1.65) - this property may soon be removed, use minRows instead
       *
       * Specifies the number of rows, which the item should take.
       */

@@ -217,6 +217,8 @@ object mod {
   
   inline def useDrag1D(props: UseDrag1DProps): HTMLAttributes[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDrag1D")(props.asInstanceOf[js.Any]).asInstanceOf[HTMLAttributes[HTMLElement]]
   
+  inline def useEffectEvent(fn: Any): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useEffectEvent")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
+  
   inline def useEvent_abort(
     ref: RefObject[EventTarget],
     event: abort,

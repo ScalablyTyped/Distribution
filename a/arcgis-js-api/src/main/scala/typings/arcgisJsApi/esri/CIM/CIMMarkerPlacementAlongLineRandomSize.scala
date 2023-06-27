@@ -10,15 +10,15 @@ trait CIMMarkerPlacementAlongLineRandomSize
      with CIMMarkerPlacementType {
   
   /**
-    * The amount of randomness to be used for the size and rotation of the markers on the line. The size and rotation of the marker will vary for individual markers.
-    */
+  			 * The amount of randomness to be used for the size and rotation of the markers on the line. The size and rotation of the marker will vary for individual markers.
+  			 */
   var randomization: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementRandomlyAlongLineRandomization * / any */ String
   ] = js.undefined
   
   /**
-    * The starting value for generating a random number. This random number is used by the Randomization property to determine the marker shape.
-    */
+  			 * The starting value for generating a random number. This random number is used by the Randomization property to determine the marker shape.
+  			 */
   var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

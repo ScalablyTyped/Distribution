@@ -47,14 +47,14 @@ trait DeleteParametersPathTeamidUsername extends StObject {
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: ParametersPathTeamidUsernameResponses88
+  var put: ParametersPathTeamidUsernameResponses102
 }
 object DeleteParametersPathTeamidUsername {
   
   inline def apply(
     delete: ParametersPathTeamidUsername,
     get: ParametersPathTeamidUsername,
-    put: ParametersPathTeamidUsernameResponses88
+    put: ParametersPathTeamidUsernameResponses102
   ): DeleteParametersPathTeamidUsername = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathTeamidUsername]
@@ -67,6 +67,6 @@ object DeleteParametersPathTeamidUsername {
     
     inline def setGet(value: ParametersPathTeamidUsername): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: ParametersPathTeamidUsernameResponses88): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: ParametersPathTeamidUsernameResponses102): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

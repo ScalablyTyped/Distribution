@@ -128,6 +128,8 @@ object distSrcTypesMod {
     
     def addTokenListener(listener: AppCheckTokenListener): Unit = js.native
     
+    def getLimitedUseToken(): js.Promise[AppCheckTokenResult] = js.native
+    
     def getToken(): js.Promise[AppCheckTokenResult] = js.native
     def getToken(forceRefresh: Boolean): js.Promise[AppCheckTokenResult] = js.native
     

@@ -17,8 +17,8 @@ object sapUiCommonsFileUploaderParameterMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.unified.FileUploaderParameter#constructor
-    * sap.ui.unified.FileUploaderParameter} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.unified.FileUploaderParameter#constructor sap.ui.unified.FileUploaderParameter }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiUnifiedFileUploaderParameterMod.default {

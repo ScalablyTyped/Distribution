@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StyleOriginProperties extends StObject {
   
   /**
-    * Name of the symbol in the style referenced by styleName or styleUrl.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#name)
-    */
+  		 * Name of the symbol in the style referenced by styleName or styleUrl.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The portal of the style origin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#portal)
-    */
+  		 * The portal of the style origin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#portal)
+  		 */
   var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
-    * The well-known esri-provided style, such as `EsriThematicShapesStyle`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#styleName)
-    */
+  		 * The well-known esri-provided style, such as `EsriThematicShapesStyle`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#styleName)
+  		 */
   var styleName: js.UndefOr[String] = js.undefined
   
   /**
-    * A url to a style definition.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#styleUrl)
-    */
+  		 * A url to a style definition.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html#styleUrl)
+  		 */
   var styleUrl: js.UndefOr[String] = js.undefined
 }
 object StyleOriginProperties {

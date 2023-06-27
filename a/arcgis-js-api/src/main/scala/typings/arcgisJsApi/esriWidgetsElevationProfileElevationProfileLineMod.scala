@@ -11,10 +11,10 @@ object esriWidgetsElevationProfileElevationProfileLineMod {
   @JSImport("esri/widgets/ElevationProfile/ElevationProfileLine", JSImport.Namespace)
   @js.native
   /**
-    * Common interface for all the elevation profile lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html)
-    */
+  		 * Common interface for all the elevation profile lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html)
+  		 */
   open class ^ ()
     extends StObject
        with ElevationProfileLine {

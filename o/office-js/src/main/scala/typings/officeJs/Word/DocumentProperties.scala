@@ -30,7 +30,7 @@ trait DocumentProperties
   val applicationName: String = js.native
   
   /**
-    * Gets or sets the author of the document.
+    * Specifies the author of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -38,7 +38,7 @@ trait DocumentProperties
   var author: String = js.native
   
   /**
-    * Gets or sets the category of the document.
+    * Specifies the category of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -46,7 +46,7 @@ trait DocumentProperties
   var category: String = js.native
   
   /**
-    * Gets or sets the comments of the document.
+    * Specifies the comments of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -54,7 +54,7 @@ trait DocumentProperties
   var comments: String = js.native
   
   /**
-    * Gets or sets the company of the document.
+    * Specifies the company of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -82,7 +82,7 @@ trait DocumentProperties
   val customProperties: CustomPropertyCollection = js.native
   
   /**
-    * Gets or sets the format of the document.
+    * Specifies the format of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -90,7 +90,7 @@ trait DocumentProperties
   var format: String = js.native
   
   /**
-    * Gets or sets the keywords of the document.
+    * Specifies the keywords of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -133,7 +133,7 @@ trait DocumentProperties
   def load(propertyNames: js.Array[String]): DocumentProperties = js.native
   
   /**
-    * Gets or sets the manager of the document.
+    * Specifies the manager of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -167,7 +167,7 @@ trait DocumentProperties
   def set(properties: DocumentPropertiesUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    * Gets or sets the subject of the document.
+    * Specifies the subject of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -183,7 +183,7 @@ trait DocumentProperties
   val template: String = js.native
   
   /**
-    * Gets or sets the title of the document.
+    * Specifies the title of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]

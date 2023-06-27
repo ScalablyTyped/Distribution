@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Permissions) */
 trait Permissions extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Permissions/query) */
   /* standard dom */
   def query(permissionDesc: PermissionDescriptor): js.Promise[PermissionStatus]
 }

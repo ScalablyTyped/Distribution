@@ -16,28 +16,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineSymbolMarkerProperties extends StObject {
   
   /**
-    * The color of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#color)
-    */
+  		 * The color of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The placement of the marker(s) on the line.
-    *
-    * @default "begin-end"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#placement)
-    */
+  		 * The placement of the marker(s) on the line.
+  		 *
+  		 * @default "begin-end"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#placement)
+  		 */
   var placement: js.UndefOr[begin | end | `begin-end`] = js.undefined
   
   /**
-    * The marker style.
-    *
-    * @default "arrow"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#style)
-    */
+  		 * The marker style.
+  		 *
+  		 * @default "arrow"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#style)
+  		 */
   var style: js.UndefOr[arrow | circle | square_ | diamond | cross | x] = js.undefined
 }
 object LineSymbolMarkerProperties {

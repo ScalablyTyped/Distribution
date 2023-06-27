@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.acorn.anon.Arrow
 import typings.acorn.anon.Bexpr
+import typings.acorn.anon.Break
 import typings.acorn.anon.GetToken
 import typings.acorn.mod.Node
 import typings.acorn.mod.Options
@@ -66,9 +67,13 @@ object anon {
     
     def isNewLine(code: Double): Boolean = js.native
     
+    val keywordTypes: Break = js.native
+    
     val lineBreak: js.RegExp = js.native
     
     val lineBreakG: js.RegExp = js.native
+    
+    val nonASCIIwhitespace: js.RegExp = js.native
     
     def parse(input: String, options: Options): Node = js.native
     

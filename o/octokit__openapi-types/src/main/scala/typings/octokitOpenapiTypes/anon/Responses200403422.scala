@@ -8,7 +8,7 @@ trait Responses200403422 extends StObject {
   
   var parameters: PathUsername
   
-  var requestBody: js.UndefOr[ContentApplicationjson91] = js.undefined
+  var requestBody: js.UndefOr[ContentApplicationjson105] = js.undefined
   
   var responses: `200403422`
 }
@@ -24,7 +24,7 @@ object Responses200403422 {
     
     inline def setParameters(value: PathUsername): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson91): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson105): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

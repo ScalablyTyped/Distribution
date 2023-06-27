@@ -59,6 +59,12 @@ trait Paragraph
     * @param width
     */
   def layout(width: Double): Unit
+  
+  /**
+    * When called after shaping, returns the glyph IDs which were not matched
+    * by any of the provided fonts.
+    */
+  def unresolvedCodepoints(): js.Array[Double]
 }
 object Paragraph {
   
@@ -81,9 +87,10 @@ object Paragraph {
     getWordBoundary: Double => URange,
     isAliasOf: Any => Boolean,
     isDeleted: () => Boolean,
-    layout: Double => Unit
+    layout: Double => Unit,
+    unresolvedCodepoints: () => js.Array[Double]
   ): Paragraph = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteLater = js.Any.fromFunction0(deleteLater), didExceedMaxLines = js.Any.fromFunction0(didExceedMaxLines), getAlphabeticBaseline = js.Any.fromFunction0(getAlphabeticBaseline), getGlyphPositionAtCoordinate = js.Any.fromFunction2(getGlyphPositionAtCoordinate), getHeight = js.Any.fromFunction0(getHeight), getIdeographicBaseline = js.Any.fromFunction0(getIdeographicBaseline), getLineMetrics = js.Any.fromFunction0(getLineMetrics), getLongestLine = js.Any.fromFunction0(getLongestLine), getMaxIntrinsicWidth = js.Any.fromFunction0(getMaxIntrinsicWidth), getMaxWidth = js.Any.fromFunction0(getMaxWidth), getMinIntrinsicWidth = js.Any.fromFunction0(getMinIntrinsicWidth), getRectsForPlaceholders = js.Any.fromFunction0(getRectsForPlaceholders), getRectsForRange = js.Any.fromFunction4(getRectsForRange), getShapedLines = js.Any.fromFunction0(getShapedLines), getWordBoundary = js.Any.fromFunction1(getWordBoundary), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), layout = js.Any.fromFunction1(layout))
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteLater = js.Any.fromFunction0(deleteLater), didExceedMaxLines = js.Any.fromFunction0(didExceedMaxLines), getAlphabeticBaseline = js.Any.fromFunction0(getAlphabeticBaseline), getGlyphPositionAtCoordinate = js.Any.fromFunction2(getGlyphPositionAtCoordinate), getHeight = js.Any.fromFunction0(getHeight), getIdeographicBaseline = js.Any.fromFunction0(getIdeographicBaseline), getLineMetrics = js.Any.fromFunction0(getLineMetrics), getLongestLine = js.Any.fromFunction0(getLongestLine), getMaxIntrinsicWidth = js.Any.fromFunction0(getMaxIntrinsicWidth), getMaxWidth = js.Any.fromFunction0(getMaxWidth), getMinIntrinsicWidth = js.Any.fromFunction0(getMinIntrinsicWidth), getRectsForPlaceholders = js.Any.fromFunction0(getRectsForPlaceholders), getRectsForRange = js.Any.fromFunction4(getRectsForRange), getShapedLines = js.Any.fromFunction0(getShapedLines), getWordBoundary = js.Any.fromFunction1(getWordBoundary), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), layout = js.Any.fromFunction1(layout), unresolvedCodepoints = js.Any.fromFunction0(unresolvedCodepoints))
     __obj.asInstanceOf[Paragraph]
   }
   
@@ -119,5 +126,7 @@ object Paragraph {
     inline def setGetWordBoundary(value: Double => URange): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction1(value))
     
     inline def setLayout(value: Double => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
+    
+    inline def setUnresolvedCodepoints(value: () => js.Array[Double]): Self = StObject.set(x, "unresolvedCodepoints", js.Any.fromFunction0(value))
   }
 }

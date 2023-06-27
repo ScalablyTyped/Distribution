@@ -7,94 +7,94 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsLocalTrigonometricOperation extends StObject {
   
   /**
-    * Calculates the inverse cosine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse cosine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var acos: Double
   
   /**
-    * Calculates the inverse hyperbolic cosine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse hyperbolic cosine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var acosh: Double
   
   /**
-    * Calculates the inverse sine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse sine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var asin: Double
   
   /**
-    * Calculates the inverse hyperbolic sine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse hyperbolic sine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var asinh: Double
   
   /**
-    * Calculates the inverse tangent of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse tangent of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var atan: Double
   
   /**
-    * Calculates the inverse tangent (based on x,y) of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse tangent (based on x,y) of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var atan2: Double
   
   /**
-    * Calculates the inverse hyperbolic tangent of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the inverse hyperbolic tangent of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var atanh: Double
   
   /**
-    * Calculates the cosine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the cosine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var cos: Double
   
   /**
-    * Calculates the hyperbolic cosine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the hyperbolic cosine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var cosh: Double
   
   /**
-    * Calculates the sine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the sine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var sin: Double
   
   /**
-    * Calculates the hyperbolic sine of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the hyperbolic sine of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var sinh: Double
   
   /**
-    * Calculates the tangent of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the tangent of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var tan: Double
   
   /**
-    * Calculates the hyperbolic tangent of cells in a raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * Calculates the hyperbolic tangent of cells in a raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   var tanh: Double
 }
 object rasterFunctionConstantsLocalTrigonometricOperation {

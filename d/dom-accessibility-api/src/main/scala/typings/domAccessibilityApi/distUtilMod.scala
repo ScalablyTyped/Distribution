@@ -56,6 +56,10 @@ object distUtilMod {
   inline def isSVGTitleElement(): /* is std.SVGTitleElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGTitleElement")().asInstanceOf[/* is std.SVGTitleElement */ Boolean]
   inline def isSVGTitleElement(node: Node): /* is std.SVGTitleElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGTitleElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is std.SVGTitleElement */ Boolean]
   
+  @JSImport("dom-accessibility-api/dist/util", "presentationRoles")
+  @js.native
+  val presentationRoles: js.Array[String] = js.native
+  
   inline def queryIdRefs(node: Node, attributeName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryIdRefs")(node.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
   inline def safeWindow(node: Node): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("safeWindow")(node.asInstanceOf[js.Any]).asInstanceOf[Window]

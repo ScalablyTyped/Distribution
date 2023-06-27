@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-util-encode" : "1.0.1"
+      "micromark-util-encode" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-util-encode" : "1.0.1"
+      "micromark-util-encode" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

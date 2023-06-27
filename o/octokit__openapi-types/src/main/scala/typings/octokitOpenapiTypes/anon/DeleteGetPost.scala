@@ -14,7 +14,7 @@ trait DeleteGetPost extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this
     * endpoint.
     */
-  var delete: ParametersPathRepoRunneridResponses65
+  var delete: ParametersPathRepoRunneridResponses73
   
   /**
     * List labels for a self-hosted runner for a repository
@@ -23,7 +23,7 @@ trait DeleteGetPost extends StObject {
     * You must authenticate using an access token with the `repo` scope to use this
     * endpoint.
     */
-  var get: ParametersPathRepoRunneridResponses64
+  var get: ParametersPathRepoRunneridResponses72
   
   /**
     * Add custom labels to a self-hosted runner for a repository
@@ -47,8 +47,8 @@ trait DeleteGetPost extends StObject {
 object DeleteGetPost {
   
   inline def apply(
-    delete: ParametersPathRepoRunneridResponses65,
-    get: ParametersPathRepoRunneridResponses64,
+    delete: ParametersPathRepoRunneridResponses73,
+    get: ParametersPathRepoRunneridResponses72,
     post: Responses200404422,
     put: Responses200404422
   ): DeleteGetPost = {
@@ -59,9 +59,9 @@ object DeleteGetPost {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteGetPost] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: ParametersPathRepoRunneridResponses65): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: ParametersPathRepoRunneridResponses73): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPathRepoRunneridResponses64): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathRepoRunneridResponses72): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     inline def setPost(value: Responses200404422): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     

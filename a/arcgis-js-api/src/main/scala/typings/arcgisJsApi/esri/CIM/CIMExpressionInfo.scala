@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMExpressionInfo extends StObject {
   
   /**
-    * The Arcade expression used to evaluate and return the value that a property expects.
-    */
+  			 * The Arcade expression used to evaluate and return the value that a property expects.
+  			 */
   var expression: js.UndefOr[String] = js.undefined
   
   /**
-    * The Name of the expression.
-    */
+  			 * The Name of the expression.
+  			 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The ReturnType of the expression.
-    */
+  			 * The ReturnType of the expression.
+  			 */
   var returnType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExpressionReturnType * / any */ String
   ] = js.undefined
   
   /**
-    * The human readable text that describes the expression.
-    */
+  			 * The human readable text that describes the expression.
+  			 */
   var title: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMExpressionInfo

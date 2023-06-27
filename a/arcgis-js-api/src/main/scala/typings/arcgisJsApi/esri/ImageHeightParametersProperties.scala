@@ -18,40 +18,42 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageHeightParametersProperties extends StObject {
+trait ImageHeightParametersProperties
+  extends StObject
+     with BaseImageMeasureParametersProperties {
   
   /**
-    * A point that defines the from location of the height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#fromGeometry)
-    */
+  		 * A point that defines the from location of the height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#fromGeometry)
+  		 */
   var fromGeometry: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * Linear unit used for height calculation.
-    *
-    * @default "meters"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#linearUnit)
-    */
+  		 * Linear unit used for height calculation.
+  		 *
+  		 * @default "meters"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#linearUnit)
+  		 */
   var linearUnit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * Determines how the height will be measured when the sensor info is available.
-    *
-    * @default "base-and-top"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#operationType)
-    */
+  		 * Determines how the height will be measured when the sensor info is available.
+  		 *
+  		 * @default "base-and-top"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#operationType)
+  		 */
   var operationType: js.UndefOr[`base-and-top` | `base-and-top-shadow` | `top-and-top-shadow`] = js.undefined
   
   /**
-    * A point that defines the to location of the height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#toGeometry)
-    */
+  		 * A point that defines the to location of the height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightParameters.html#toGeometry)
+  		 */
   var toGeometry: js.UndefOr[PointProperties] = js.undefined
 }
 object ImageHeightParametersProperties {

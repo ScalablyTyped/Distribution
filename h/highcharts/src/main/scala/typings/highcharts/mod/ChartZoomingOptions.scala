@@ -14,6 +14,14 @@ trait ChartZoomingOptions extends StObject {
   var key: js.UndefOr[OptionsKeyValue] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The mouse wheel zoom is a
+    * feature included in Highcharts Stock, but is also available for
+    * Highcharts Core as a module. Zooming with the mouse wheel is enabled by
+    * default. It can be disabled by setting this option to `false`.
+    */
+  var mouseWheel: js.UndefOr[Boolean | js.Object | ChartZoomingMouseWheelOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Gantt) Equivalent to type, but for multitouch
     * gestures only. By default, the `pinchType` is the same as the `type`
     * setting. However, pinching can be enabled separately in some cases, for
@@ -59,6 +67,10 @@ object ChartZoomingOptions {
     inline def setKey(value: OptionsKeyValue): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setMouseWheel(value: Boolean | js.Object | ChartZoomingMouseWheelOptions): Self = StObject.set(x, "mouseWheel", value.asInstanceOf[js.Any])
+    
+    inline def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
     
     inline def setPinchType(value: OptionsPinchTypeValue): Self = StObject.set(x, "pinchType", value.asInstanceOf[js.Any])
     

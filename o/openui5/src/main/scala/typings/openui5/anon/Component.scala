@@ -8,7 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Component extends StObject {
   
   /**
-    * Reference to the created component instance
+    * @since 1.34 Whether the views which are created through this Views are loaded asyncly. This option can
+    * be set only when the Views is used standalone without the involvement of a Router. Otherwise the async
+    * option is inherited from the Router.
+    */
+  var async: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * the owner of all the views that will be created by this Instance.
     */
   var component: js.UndefOr[default] = js.undefined
 }
@@ -21,6 +28,10 @@ object Component {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     inline def setComponent(value: default): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

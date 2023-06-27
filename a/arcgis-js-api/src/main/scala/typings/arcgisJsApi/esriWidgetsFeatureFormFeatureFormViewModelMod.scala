@@ -11,10 +11,10 @@ object esriWidgetsFeatureFormFeatureFormViewModelMod {
   @JSImport("esri/widgets/FeatureForm/FeatureFormViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html)
-    */
+  		 * Provides the logic for the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureFormViewModel {

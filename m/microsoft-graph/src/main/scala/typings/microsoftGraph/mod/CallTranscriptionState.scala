@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.active_
 import typings.microsoftGraph.microsoftGraphStrings.notStarted_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
@@ -8,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.notStarted_
-  - typings.microsoftGraph.microsoftGraphStrings.active
+  - typings.microsoftGraph.microsoftGraphStrings.active_
   - typings.microsoftGraph.microsoftGraphStrings.inactive
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait CallTranscriptionState extends StObject
 object CallTranscriptionState {
   
-  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: active_ = "active".asInstanceOf[active_]
   
   inline def inactive: typings.microsoftGraph.microsoftGraphStrings.inactive = "inactive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inactive]
   

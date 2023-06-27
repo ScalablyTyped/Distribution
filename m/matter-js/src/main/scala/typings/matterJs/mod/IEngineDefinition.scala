@@ -12,8 +12,6 @@ trait IEngineDefinition extends StObject {
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     * The default value of `2` is usually very adequate.
     *
-    * @property constraintIterations
-    * @type {number | undefined}
     * @default 2
     */
   var constraintIterations: js.UndefOr[Double] = js.undefined
@@ -21,8 +19,6 @@ trait IEngineDefinition extends StObject {
   /**
     * A `Matter.Detector` instance.
     *
-    * @property detector
-    * @type {Detector | undefined}
     * @default {Matter.Detector} instance
     */
   var detector: js.UndefOr[Detector] = js.undefined
@@ -31,8 +27,6 @@ trait IEngineDefinition extends StObject {
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
     *
-    * @property enableSleeping
-    * @type {boolean | undefined}
     * @default false
     */
   var enableSleeping: js.UndefOr[Boolean] = js.undefined
@@ -40,8 +34,6 @@ trait IEngineDefinition extends StObject {
   /**
     * The gravity to apply on all bodies in `engine.world`.
     *
-    * @property gravity
-    * @type {Partial<Gravity> | undefined}
     */
   var gravity: js.UndefOr[PartialGravity] = js.undefined
   
@@ -49,8 +41,6 @@ trait IEngineDefinition extends StObject {
     * A `Matter.Grid` instance.
     *
     * @deprecated replaced by `engine.detector`
-    * @property grid
-    * @type {Grid | undefined}
     * @default a Matter.Grid instance
     */
   var grid: js.UndefOr[Grid] = js.undefined
@@ -58,8 +48,6 @@ trait IEngineDefinition extends StObject {
   /**
     * An object reserved for storing plugin-specific properties.
     *
-    * @property plugin
-    * @type {{}}
     */
   var plugin: js.UndefOr[js.Object] = js.undefined
   
@@ -67,8 +55,6 @@ trait IEngineDefinition extends StObject {
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
-    * @property positionIterations
-    * @type {number | undefined}
     * @default 6
     */
   var positionIterations: js.UndefOr[Double] = js.undefined
@@ -76,8 +62,6 @@ trait IEngineDefinition extends StObject {
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
     *
-    * @property timing
-    * @type {IEngineTimingOptions | undefined}
     */
   var timing: js.UndefOr[IEngineTimingOptions] = js.undefined
   
@@ -85,8 +69,6 @@ trait IEngineDefinition extends StObject {
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
-    * @property velocityIterations
-    * @type {number | undefined}
     * @default 4
     */
   var velocityIterations: js.UndefOr[Double] = js.undefined
@@ -94,8 +76,6 @@ trait IEngineDefinition extends StObject {
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
     *
-    * @property world
-    * @type world
     * @default {Matter.World} instance
     */
   var world: js.UndefOr[World] = js.undefined

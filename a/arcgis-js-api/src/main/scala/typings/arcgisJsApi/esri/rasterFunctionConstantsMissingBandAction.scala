@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsMissingBandAction extends StObject {
   
   /**
-    * Finds the best available band to use in place of the missing band based on wavelength.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
-    */
+  		 * Finds the best available band to use in place of the missing band based on wavelength.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
+  		 */
   var bestMatch: Double
   
   /**
-    * If the input dataset is missing any band specified in the Band parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
-    */
+  		 * If the input dataset is missing any band specified in the Band parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
+  		 */
   var fail: Double
 }
 object rasterFunctionConstantsMissingBandAction {

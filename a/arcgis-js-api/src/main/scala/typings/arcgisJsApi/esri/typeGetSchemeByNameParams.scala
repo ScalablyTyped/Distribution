@@ -17,54 +17,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait typeGetSchemeByNameParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
-    * The name of the scheme to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
-    */
+  		 * The name of the scheme to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
+  		 */
   var name: String
   
   /**
-    * Determines whether to return a standardized  unique value scheme for point cloud class renderers (i.e.
-    *
-    * @default default
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
-    */
+  		 * Determines whether to return a standardized	unique value scheme for point cloud class renderers (i.e.
+  		 *
+  		 * @default default
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
+  		 */
   var theme: js.UndefOr[`point-cloud-class` | default_] = js.undefined
   
   /**
-    * The SceneView instance in which the scheme will be used.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The SceneView instance in which the scheme will be used.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates if the size units of the scheme will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
-    */
+  		 * Indicates if the size units of the scheme will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object typeGetSchemeByNameParams {

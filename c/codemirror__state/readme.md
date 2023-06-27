@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__state
 
-Typings are for version 6.1.1
+Typings are for version 6.2.1
 
 ## Library description:
 Editor state data structures for the CodeMirror code editor

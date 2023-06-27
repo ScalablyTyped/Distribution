@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemText
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +148,13 @@ object sapUiWebcMainMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Menu` itself
       */
@@ -180,7 +179,7 @@ object sapUiWebcMainMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
@@ -191,7 +190,7 @@ object sapUiWebcMainMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Menu` itself
       */
@@ -221,13 +220,13 @@ object sapUiWebcMainMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit]
     ): this.type = js.native
     def detachItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -235,7 +234,7 @@ object sapUiWebcMainMenuMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClick itemClick} to attached listeners.
       *
@@ -245,7 +244,7 @@ object sapUiWebcMainMenuMod {
     def fireItemClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: ItemText): this.type = js.native
+    mParameters: Menu$ItemClickEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getHeaderText headerText}.
@@ -347,6 +346,42 @@ object sapUiWebcMainMenuMod {
     opener: HTMLElement): Unit = js.native
   }
   
+  trait Menu$ItemClickEventParameters extends StObject {
+    
+    /**
+      * The currently clicked menu item.
+      */
+    var item: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The text of the currently clicked menu item.
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object Menu$ItemClickEventParameters {
+    
+    inline def apply(): Menu$ItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Menu$ItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu$ItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  type MenuItemClickEvent = typings.openui5.sapUiBaseEventMod.default[Menu$ItemClickEventParameters]
+  
+  type MenuItemClickEventParameters = Menu$ItemClickEventParameters
+  
   trait MenuSettings
     extends StObject
        with ControlSettings {
@@ -359,7 +394,12 @@ object sapUiWebcMainMenuMod {
     /**
       * Fired when an item is being clicked.
       */
-    var itemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of this component.
@@ -382,7 +422,9 @@ object sapUiWebcMainMenuMod {
       
       inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
       
-      inline def setItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
+      inline def setItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
       
       inline def setItemClickUndefined: Self = StObject.set(x, "itemClick", js.undefined)
       

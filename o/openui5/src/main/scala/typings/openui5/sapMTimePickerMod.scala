@@ -1,7 +1,9 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMDateTimeFieldMod.DateTimeField$LiveChangeEventParameters
 import typings.openui5.sapMDateTimeFieldMod.DateTimeFieldSettings
+import typings.openui5.sapMInputBaseMod.InputBase$ChangeEventParameters
 import typings.openui5.sapMLibraryMod.TimePickerMaskMode
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -139,7 +141,7 @@ object sapMTimePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.TimePicker`.
@@ -155,20 +157,20 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePicker` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.TimePicker`.
@@ -189,7 +191,7 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpClose(
       /**
@@ -200,7 +202,7 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePicker` itself
       */
@@ -208,7 +210,7 @@ object sapMTimePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.TimePicker`.
@@ -224,20 +226,20 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePicker` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.TimePicker`.
@@ -258,7 +260,7 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterValueHelpOpen(
       /**
@@ -269,7 +271,7 @@ object sapMTimePickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePicker` itself
       */
@@ -284,7 +286,7 @@ object sapMTimePickerMod {
     def destroyRules(): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterValueHelpClose afterValueHelpClose} event
       * of this `sap.m.TimePicker`.
@@ -297,13 +299,13 @@ object sapMTimePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterValueHelpClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -311,7 +313,7 @@ object sapMTimePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterValueHelpOpen afterValueHelpOpen} event
       * of this `sap.m.TimePicker`.
@@ -324,13 +326,13 @@ object sapMTimePickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterValueHelpOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -338,8 +340,8 @@ object sapMTimePickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpClose afterValueHelpClose} to attached listeners.
       *
@@ -352,8 +354,8 @@ object sapMTimePickerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterValueHelpOpen afterValueHelpOpen} to attached listeners.
       *
@@ -371,7 +373,7 @@ object sapMTimePickerMod {
     mArguments: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getHideInput hideInput}.
       *
@@ -423,7 +425,7 @@ object sapMTimePickerMod {
     def getMask(): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getMaskMode maskMode}.
       *
@@ -441,7 +443,7 @@ object sapMTimePickerMod {
     def getMaskMode(): TimePickerMaskMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TimePickerMaskMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getMinutesStep minutesStep}.
       *
@@ -473,7 +475,7 @@ object sapMTimePickerMod {
     def getRules(): js.Array[typings.openui5.sapMMaskInputRuleMod.default] = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getSecondsStep secondsStep}.
       *
@@ -487,7 +489,7 @@ object sapMTimePickerMod {
     def getSecondsStep(): int = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getShowCurrentTimeButton showCurrentTimeButton}.
       *
@@ -500,7 +502,7 @@ object sapMTimePickerMod {
     def getShowCurrentTimeButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getSupport2400 support2400}.
       *
@@ -569,7 +571,7 @@ object sapMTimePickerMod {
     def onBeforeOpen(): Unit = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Opens the picker popover. The popover is positioned relatively to the control given as `oDomRef` parameter
       * on tablet or desktop and is full screen on phone. Therefore the control parameter is only used on tablet
@@ -619,7 +621,7 @@ object sapMTimePickerMod {
     ): typings.openui5.sapMMaskInputRuleMod.default | Null = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getHideInput hideInput}.
       *
@@ -681,7 +683,7 @@ object sapMTimePickerMod {
     sMask: String): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getMaskMode maskMode}.
       *
@@ -748,7 +750,7 @@ object sapMTimePickerMod {
     step: int): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getShowCurrentTimeButton showCurrentTimeButton}.
       *
@@ -776,26 +778,77 @@ object sapMTimePickerMod {
     def setSupport2400(bSupport2400: Boolean): this.type = js.native
   }
   
+  trait TimePicker$AfterValueHelpCloseEventParameters extends StObject
+  
+  trait TimePicker$AfterValueHelpOpenEventParameters extends StObject
+  
+  trait TimePicker$ChangeEventParameters
+    extends StObject
+       with InputBase$ChangeEventParameters {
+    
+    /**
+      * Indicator for a valid time
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+  }
+  object TimePicker$ChangeEventParameters {
+    
+    inline def apply(): TimePicker$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TimePicker$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePicker$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    }
+  }
+  
+  type TimePicker$LiveChangeEventParameters = DateTimeField$LiveChangeEventParameters
+  
+  type TimePickerAfterValueHelpCloseEvent = typings.openui5.sapUiBaseEventMod.default[TimePicker$AfterValueHelpCloseEventParameters]
+  
+  type TimePickerAfterValueHelpCloseEventParameters = TimePicker$AfterValueHelpCloseEventParameters
+  
+  type TimePickerAfterValueHelpOpenEvent = typings.openui5.sapUiBaseEventMod.default[TimePicker$AfterValueHelpOpenEventParameters]
+  
+  type TimePickerAfterValueHelpOpenEventParameters = TimePicker$AfterValueHelpOpenEventParameters
+  
+  type TimePickerChangeEvent = typings.openui5.sapUiBaseEventMod.default[TimePicker$ChangeEventParameters]
+  
+  type TimePickerChangeEventParameters = TimePicker$ChangeEventParameters
+  
+  type TimePickerLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[TimePicker$LiveChangeEventParameters]
+  
+  type TimePickerLiveChangeEventParameters = TimePicker$LiveChangeEventParameters
+  
   trait TimePickerSettings
     extends StObject
        with DateTimeFieldSettings {
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired when `value help` dialog closes.
       */
-    var afterValueHelpClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterValueHelpClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired when `value help` dialog opens.
       */
-    var afterValueHelpOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterValueHelpOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Determines whether the input field of the picker is hidden or visible. When set to `true`, the input
       * field becomes invisible and there is no way to open the picker popover. In that case it can be opened
@@ -809,6 +862,22 @@ object sapMTimePickerMod {
       */
     var hideInput: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @since 1.104.0
+      *
+      * Fired when the value of the `TimePicker` is changed by user interaction - each keystroke, delete, paste,
+      * etc.
+      *
+      * **Note:** Browsing autocomplete suggestions doesn't fire the event.
+      */
+    @JSName("liveChange")
+    var liveChange_TimePickerSettings: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TimePicker$LiveChangeEventParameters], 
+          Unit
+        ]
       ] = js.undefined
     
     /**
@@ -835,7 +904,7 @@ object sapMTimePickerMod {
     var mask: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines whether the mask is enabled. When disabled, there are no restrictions and validation for the
       * user and no placeholders are displayed.
@@ -849,7 +918,7 @@ object sapMTimePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets the minutes step. If step is less than 1, it will be automatically converted back to 1. The minutes
       * clock is populated only by multiples of the step.
@@ -869,7 +938,7 @@ object sapMTimePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets the seconds step. If step is less than 1, it will be automatically converted back to 1. The seconds
       * clock is populated only by multiples of the step.
@@ -877,7 +946,7 @@ object sapMTimePickerMod {
     var secondsStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Determines whether there is a shortcut navigation to current time.
       */
@@ -886,7 +955,7 @@ object sapMTimePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Allows to set a value of 24:00, used to indicate the end of the day. Works only with HH or H formats.
       * Don't use it together with am/pm.
@@ -910,17 +979,23 @@ object sapMTimePickerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TimePickerSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterValueHelpClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterValueHelpClose", js.Any.fromFunction1(value))
+      inline def setAfterValueHelpClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterValueHelpClose", js.Any.fromFunction1(value))
       
       inline def setAfterValueHelpCloseUndefined: Self = StObject.set(x, "afterValueHelpClose", js.undefined)
       
-      inline def setAfterValueHelpOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterValueHelpOpen", js.Any.fromFunction1(value))
+      inline def setAfterValueHelpOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterValueHelpOpen", js.Any.fromFunction1(value))
       
       inline def setAfterValueHelpOpenUndefined: Self = StObject.set(x, "afterValueHelpOpen", js.undefined)
       
       inline def setHideInput(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "hideInput", value.asInstanceOf[js.Any])
       
       inline def setHideInputUndefined: Self = StObject.set(x, "hideInput", js.undefined)
+      
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TimePicker$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      
+      inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       
       inline def setLocaleId(value: String | PropertyBindingInfo): Self = StObject.set(x, "localeId", value.asInstanceOf[js.Any])
       

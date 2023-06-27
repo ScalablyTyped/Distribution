@@ -213,6 +213,8 @@ trait Windowwrapargsanyanyundef
     * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
     *
     * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
     */
   /* standard dom */
   def addEventListener(`type`: String): Unit = js.native
@@ -2083,57 +2085,86 @@ trait Windowwrapargsanyanyundef
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/alert) */
   /* standard dom */
   def alert(): Unit = js.native
   def alert(message: Any): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/atob) */
   /* standard dom */
   def atob(data: String): String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/blur) */
   /* standard dom */
   def blur(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/btoa) */
   /* standard dom */
   def btoa(data: String): String = js.native
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/caches)
+    */
   /* standard dom */
   val caches: CacheStorage = js.native
   
   /* standard dom */
   def cancelAnimationFrame(handle: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/cancelIdleCallback) */
   /* standard dom */
   def cancelIdleCallback(handle: Double): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/captureEvents)
+    */
   /* standard dom */
   def captureEvents(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearInterval) */
   /* standard dom */
   def clearInterval(): Unit = js.native
   def clearInterval(id: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/clearTimeout) */
   /* standard dom */
   def clearTimeout(): Unit = js.native
   def clearTimeout(id: Double): Unit = js.native
   
-  /** @deprecated This is a legacy alias of `navigator`. */
+  /**
+    * @deprecated This is a legacy alias of `navigator`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator)
+    */
   /* standard dom */
   val clientInformation: Navigator = js.native
   
-  /** Closes the window. */
+  /**
+    * Closes the window.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/close)
+    */
   /* standard dom */
   def close(): Unit = js.native
   
-  /** Returns true if the window has been closed, false otherwise. */
+  /**
+    * Returns true if the window has been closed, false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/closed)
+    */
   /* standard dom */
   val closed: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/confirm) */
   /* standard dom */
   def confirm(): Boolean = js.native
   def confirm(message: String): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/createImageBitmap) */
   /* standard dom */
   def createImageBitmap(image: ImageBitmapSource): js.Promise[ImageBitmap] = js.native
   def createImageBitmap(image: ImageBitmapSource, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
@@ -2148,163 +2179,232 @@ trait Windowwrapargsanyanyundef
     options: ImageBitmapOptions
   ): js.Promise[ImageBitmap] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/crossOriginIsolated) */
   /* standard dom */
   val crossOriginIsolated: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/crypto_property) */
   /* standard dom */
   val crypto: Crypto = js.native
   
-  /** Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element. */
+  /**
+    * Defines a new custom element, mapping the given name to the given constructor as an autonomous custom element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/customElements)
+    */
   /* standard dom */
   val customElements: CustomElementRegistry = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio) */
   /* standard dom */
   val devicePixelRatio: Double = js.native
   
-  /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+  /**
+    * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+    */
   /* standard dom */
   def dispatchEvent(event: typings.std.Event): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/document) */
   /* standard dom */
   val document: typings.std.Document = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/event)
+    */
   /* standard dom */
   val event: js.UndefOr[typings.std.Event] = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/external)
+    */
   /* standard dom */
   val external: External = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/fetch) */
   /* standard dom */
   def fetch(input: RequestInfo): js.Promise[Response] = js.native
   def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def fetch(input: URL): js.Promise[Response] = js.native
   def fetch(input: URL, init: RequestInit): js.Promise[Response] = js.native
   
-  /** Moves the focus to the window's browsing context, if any. */
+  /**
+    * Moves the focus to the window's browsing context, if any.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/focus)
+    */
   /* standard dom */
   def focus(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frameElement) */
   /* standard dom */
   val frameElement: typings.std.Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/frames) */
   /* standard dom */
   val frames: WindowProxy = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getComputedStyle) */
   /* standard dom */
   def getComputedStyle(elt: typings.std.Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: typings.std.Element, pseudoElt: String): CSSStyleDeclaration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/getSelection) */
   /* standard dom */
   def getSelection(): Selection | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/history) */
   /* standard dom */
   val history: History = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/indexedDB) */
   /* standard dom */
   val indexedDB: IDBFactory = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerHeight) */
   /* standard dom */
   val innerHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/innerWidth) */
   /* standard dom */
   val innerWidth: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/isSecureContext) */
   /* standard dom */
   val isSecureContext: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/length) */
   /* standard dom */
   val length: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage) */
   /* standard dom */
   val localStorage: Storage = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/location) */
   /* standard dom */
   def location: Location = js.native
   /* standard dom */
   def location_=(href: String | Location): Unit = js.native
   
-  /** Returns true if the location bar is visible; otherwise, returns false. */
+  /**
+    * Returns true if the location bar is visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/locationbar)
+    */
   /* standard dom */
   val locationbar: BarProp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/matchMedia) */
   /* standard dom */
   def matchMedia(query: String): MediaQueryList = js.native
   
-  /** Returns true if the menu bar is visible; otherwise, returns false. */
+  /**
+    * Returns true if the menu bar is visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/menubar)
+    */
   /* standard dom */
   val menubar: BarProp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveBy) */
   /* standard dom */
   def moveBy(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/moveTo) */
   /* standard dom */
   def moveTo(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/name) */
   /* standard dom */
   var name: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/navigator) */
   /* standard dom */
   val navigator: Navigator = js.native
   
   /**
     * Fires when the user aborts the download.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
     */
   /* standard dom */
   var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/afterprint_event) */
   /* standard dom */
   var onafterprint: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event) */
   /* standard dom */
   var onanimationcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event) */
   /* standard dom */
   var onanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event) */
   /* standard dom */
   var onanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event) */
   /* standard dom */
   var onanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event) */
   /* standard dom */
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforeinput_event) */
   /* standard dom */
   var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeprint_event) */
   /* standard dom */
   var onbeforeprint: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/beforeunload_event) */
   /* standard dom */
   var onbeforeunload: (js.ThisFunction1[/* this */ this.type, /* ev */ BeforeUnloadEvent, Any]) | Null = js.native
   
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/cancel_event) */
   /* standard dom */
   var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
     */
   /* standard dom */
   var oncanplay: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event) */
   /* standard dom */
   var oncanplaythrough: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Fires when the contents of the object or selection have changed.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
     */
   /* standard dom */
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2312,47 +2412,67 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the user clicks the left mouse button on the object
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
     */
   /* standard dom */
   var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event) */
   /* standard dom */
   var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the right mouse button in the client area, opening the context menu.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
     */
   /* standard dom */
   var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event) */
   /* standard dom */
   var oncopy: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event) */
   /* standard dom */
   var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event) */
   /* standard dom */
   var oncut: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user double-clicks the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
     */
   /* standard dom */
   var ondblclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/devicemotion_event)
+    */
   /* standard dom */
   var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, Any]) | Null = js.native
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/deviceorientation_event)
+    */
   /* standard dom */
   var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, Any]) | Null = js.native
   
   /**
     * Fires on the source object continuously during a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
     */
   /* standard dom */
   var ondrag: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -2360,6 +2480,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires on the source object when the user releases the mouse at the close of a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
     */
   /* standard dom */
   var ondragend: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -2367,6 +2489,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires on the target element when the user drags the object to a valid drop target.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
     */
   /* standard dom */
   var ondragenter: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -2374,6 +2498,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
     */
   /* standard dom */
   var ondragleave: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -2381,6 +2507,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires on the target element continuously while the user drags the object over a valid drop target.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
     */
   /* standard dom */
   var ondragover: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -2388,16 +2516,21 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires on the source object when the user starts to drag a text selection or selected object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
     */
   /* standard dom */
   var ondragstart: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event) */
   /* standard dom */
   var ondrop: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the duration attribute is updated.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
     */
   /* standard dom */
   var ondurationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2405,6 +2538,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the media element is reset to its initial state.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
     */
   /* standard dom */
   var onemptied: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2412,6 +2547,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the end of playback is reached.
     * @param ev The event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
     */
   /* standard dom */
   var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2419,6 +2556,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when an error occurs during object loading.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/error_event)
     */
   /* standard dom */
   var onerror: OnErrorEventHandler = js.native
@@ -2426,34 +2565,45 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the object receives focus.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
     */
   /* standard dom */
   var onfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event) */
   /* standard dom */
   var onformdata: (js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepadconnected_event) */
   /* standard dom */
   var ongamepadconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/gamepaddisconnected_event) */
   /* standard dom */
   var ongamepaddisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ GamepadEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event) */
   /* standard dom */
   var ongotpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/hashchange_event) */
   /* standard dom */
   var onhashchange: (js.ThisFunction1[/* this */ this.type, /* ev */ HashChangeEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/input_event) */
   /* standard dom */
   var oninput: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event) */
   /* standard dom */
   var oninvalid: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Fires when the user presses a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
     */
   /* standard dom */
   var onkeydown: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -2462,6 +2612,8 @@ trait Windowwrapargsanyanyundef
     * Fires when the user presses an alphanumeric key.
     * @param ev The event.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keypress_event)
     */
   /* standard dom */
   var onkeypress: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -2469,16 +2621,21 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the user releases a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
     */
   /* standard dom */
   var onkeyup: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/languagechange_event) */
   /* standard dom */
   var onlanguagechange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Fires immediately after the browser loads the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement/load_event)
     */
   /* standard dom */
   var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2486,6 +2643,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when media data is loaded at the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
     */
   /* standard dom */
   var onloadeddata: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2493,6 +2652,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the duration and dimensions of the media have been determined.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
     */
   /* standard dom */
   var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2500,35 +2661,46 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
     */
   /* standard dom */
   var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lostpointercapture_event) */
   /* standard dom */
   var onlostpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/message_event) */
   /* standard dom */
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/messageerror_event) */
   /* standard dom */
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the object with either mouse button.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
     */
   /* standard dom */
   var onmousedown: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event) */
   /* standard dom */
   var onmouseenter: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event) */
   /* standard dom */
   var onmouseleave: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user moves the mouse over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
     */
   /* standard dom */
   var onmousemove: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -2536,6 +2708,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the user moves the mouse pointer outside the boundaries of the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
     */
   /* standard dom */
   var onmouseout: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -2543,6 +2717,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the user moves the mouse pointer into the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
     */
   /* standard dom */
   var onmouseover: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -2550,32 +2726,45 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the user releases a mouse button while the mouse is over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
     */
   /* standard dom */
   var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/offline_event) */
   /* standard dom */
   var onoffline: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/online_event) */
   /* standard dom */
   var ononline: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/orientationchange_event)
+    */
   /* standard dom */
   var onorientationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pagehide_event) */
   /* standard dom */
   var onpagehide: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/pageshow_event) */
   /* standard dom */
   var onpageshow: (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event) */
   /* standard dom */
   var onpaste: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Occurs when playback is paused.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
     */
   /* standard dom */
   var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2583,6 +2772,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the play method is requested.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
     */
   /* standard dom */
   var onplay: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2590,40 +2781,53 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the audio or video has started playing.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
     */
   /* standard dom */
   var onplaying: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event) */
   /* standard dom */
   var onpointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event) */
   /* standard dom */
   var onpointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event) */
   /* standard dom */
   var onpointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event) */
   /* standard dom */
   var onpointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event) */
   /* standard dom */
   var onpointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event) */
   /* standard dom */
   var onpointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event) */
   /* standard dom */
   var onpointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event) */
   /* standard dom */
   var onpointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/popstate_event) */
   /* standard dom */
   var onpopstate: (js.ThisFunction1[/* this */ this.type, /* ev */ PopStateEvent, Any]) | Null = js.native
   
   /**
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
     */
   /* standard dom */
   var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[typings.std.EventTarget], Any]) | Null = js.native
@@ -2631,36 +2835,47 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
     */
   /* standard dom */
   var onratechange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/rejectionhandled_event) */
   /* standard dom */
   var onrejectionhandled: (js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user resets a form.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
     */
   /* standard dom */
   var onreset: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event) */
   /* standard dom */
   var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
     */
   /* standard dom */
   var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event) */
   /* standard dom */
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the seek operation ends.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
     */
   /* standard dom */
   var onseeked: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2668,6 +2883,8 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when the current playback position is moved.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
     */
   /* standard dom */
   var onseeking: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2675,35 +2892,46 @@ trait Windowwrapargsanyanyundef
   /**
     * Fires when the current selection changes.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
     */
   /* standard dom */
   var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event) */
   /* standard dom */
   var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event) */
   /* standard dom */
   var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event) */
   /* standard dom */
   var onslotchange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
     */
   /* standard dom */
   var onstalled: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/storage_event) */
   /* standard dom */
   var onstorage: (js.ThisFunction1[/* this */ this.type, /* ev */ StorageEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event) */
   /* standard dom */
   var onsubmit: (js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]) | Null = js.native
   
   /**
     * Occurs if the load operation has been intentionally halted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
     */
   /* standard dom */
   var onsuspend: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2711,46 +2939,61 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs to indicate the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
     */
   /* standard dom */
   var ontimeupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event) */
   /* standard dom */
   var ontoggle: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event) */
   /* standard dom */
   var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event) */
   /* standard dom */
   var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event) */
   /* standard dom */
   var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event) */
   /* standard dom */
   var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event) */
   /* standard dom */
   var ontransitioncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event) */
   /* standard dom */
   var ontransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event) */
   /* standard dom */
   var ontransitionrun: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event) */
   /* standard dom */
   var ontransitionstart: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unhandledrejection_event) */
   /* standard dom */
   var onunhandledrejection: (js.ThisFunction1[/* this */ this.type, /* ev */ PromiseRejectionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/unload_event) */
   /* standard dom */
   var onunload: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
   /**
     * Occurs when the volume is changed, or playback is muted or unmuted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
     */
   /* standard dom */
   var onvolumechange: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
@@ -2758,29 +3001,49 @@ trait Windowwrapargsanyanyundef
   /**
     * Occurs when playback stops because the next frame of a video resource is not available.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
     */
   /* standard dom */
   var onwaiting: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationend`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
+    */
   /* standard dom */
   var onwebkitanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationiteration`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationiteration`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
+    */
   /* standard dom */
   var onwebkitanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationstart`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationstart`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
+    */
   /* standard dom */
   var onwebkitanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `ontransitionend`. */
+  /**
+    * @deprecated This is a legacy alias of `ontransitionend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
+    */
   /* standard dom */
   var onwebkittransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event) */
   /* standard dom */
   var onwheel: (js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/open) */
   /* standard dom */
   def open(): WindowProxy | Null = js.native
   def open(url: String): WindowProxy | Null = js.native
@@ -2795,27 +3058,43 @@ trait Windowwrapargsanyanyundef
   def open(url: URL, target: String, features: String): WindowProxy | Null = js.native
   def open(url: URL, target: Unit, features: String): WindowProxy | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/opener) */
   /* standard dom */
   var opener: Any = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/orientation)
+    */
   /* standard dom */
   val orientation: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/origin) */
   /* standard dom */
   val origin: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerHeight) */
   /* standard dom */
   val outerHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/outerWidth) */
   /* standard dom */
   val outerWidth: Double = js.native
   
-  /** @deprecated This is a legacy alias of `scrollX`. */
+  /**
+    * @deprecated This is a legacy alias of `scrollX`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX)
+    */
   /* standard dom */
   val pageXOffset: Double = js.native
   
-  /** @deprecated This is a legacy alias of `scrollY`. */
+  /**
+    * @deprecated This is a legacy alias of `scrollY`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY)
+    */
   /* standard dom */
   val pageYOffset: Double = js.native
   
@@ -2823,14 +3102,21 @@ trait Windowwrapargsanyanyundef
     * Refers to either the parent WindowProxy, or itself.
     *
     * It can rarely be null e.g. for contentWindow of an iframe that is already removed from the parent.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/parent)
     */
   /* standard dom */
   val parent: WindowProxy = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/performance_property) */
   /* standard dom */
   val performance: Performance = js.native
   
-  /** Returns true if the personal bar is visible; otherwise, returns false. */
+  /**
+    * Returns true if the personal bar is visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/personalbar)
+    */
   /* standard dom */
   val personalbar: BarProp = js.native
   
@@ -2847,28 +3133,41 @@ trait Windowwrapargsanyanyundef
     * If the origin of the target window doesn't match the given target origin, the message is discarded, to avoid information leakage. To send the message to the target regardless of origin, set the target origin to "*".
     *
     * Throws a "DataCloneError" DOMException if transfer array contains duplicate objects or if message could not be cloned.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/postMessage)
     */
   /* standard dom */
   def postMessage(message: Any, targetOrigin: String): Unit = js.native
   def postMessage(message: Any, targetOrigin: String, transfer: js.Array[Transferable]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/print) */
   /* standard dom */
   def print(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/prompt) */
   /* standard dom */
   def prompt(): String | Null = js.native
   def prompt(message: String): String | Null = js.native
   def prompt(message: String, _default: String): String | Null = js.native
   def prompt(message: Unit, _default: String): String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/queueMicrotask) */
   /* standard dom */
   def queueMicrotask(callback: VoidFunction): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/releaseEvents)
+    */
   /* standard dom */
   def releaseEvents(): Unit = js.native
   
-  /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+  /**
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+    */
   /* standard dom */
   def removeEventListener(`type`: String): Unit = js.native
   def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native
@@ -4738,108 +5037,151 @@ trait Windowwrapargsanyanyundef
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/reportError) */
   /* standard dom */
   def reportError(e: Any): Unit = js.native
   
   /* standard dom */
   def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback) */
   /* standard dom */
   def requestIdleCallback(callback: IdleRequestCallback): Double = js.native
   def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeBy) */
   /* standard dom */
   def resizeBy(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/resizeTo) */
   /* standard dom */
   def resizeTo(width: Double, height: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screen) */
   /* standard dom */
   val screen: Screen = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenLeft) */
   /* standard dom */
   val screenLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenTop) */
   /* standard dom */
   val screenTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenX) */
   /* standard dom */
   val screenX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/screenY) */
   /* standard dom */
   val screenY: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scroll) */
   /* standard dom */
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scroll(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollBy) */
   /* standard dom */
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollBy(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollTo) */
   /* standard dom */
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollX) */
   /* standard dom */
   val scrollX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollY) */
   /* standard dom */
   val scrollY: Double = js.native
   
-  /** Returns true if the scrollbars are visible; otherwise, returns false. */
+  /**
+    * Returns true if the scrollbars are visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/scrollbars)
+    */
   /* standard dom */
   val scrollbars: BarProp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/self) */
   /* standard dom */
   val self: Window & (/* globalThis */ Any) = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) */
   /* standard dom */
   val sessionStorage: Storage = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/setInterval) */
   /* standard dom */
   def setInterval(handler: TimerHandler, timeout: Double, arguments: Any*): Double = js.native
   def setInterval(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/setTimeout) */
   /* standard dom */
   def setTimeout(handler: TimerHandler, timeout: Double, arguments: Any*): Double = js.native
   def setTimeout(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/speechSynthesis) */
   /* standard dom */
   val speechSynthesis: SpeechSynthesis = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/status)
+    */
   /* standard dom */
   var status: String = js.native
   
-  /** Returns true if the status bar is visible; otherwise, returns false. */
+  /**
+    * Returns true if the status bar is visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/statusbar)
+    */
   /* standard dom */
   val statusbar: BarProp = js.native
   
-  /** Cancels the document load. */
+  /**
+    * Cancels the document load.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/stop)
+    */
   /* standard dom */
   def stop(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/structuredClone) */
   /* standard dom */
-  def structuredClone(value: Any): Any = js.native
-  def structuredClone(value: Any, options: StructuredSerializeOptions): Any = js.native
+  def structuredClone[T](value: T): T = js.native
+  def structuredClone[T](value: T, options: StructuredSerializeOptions): T = js.native
   
-  /** Returns true if the toolbar is visible; otherwise, returns false. */
+  /**
+    * Returns true if the toolbar is visible; otherwise, returns false.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/toolbar)
+    */
   /* standard dom */
   val toolbar: BarProp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/top) */
   /* standard dom */
   val top: WindowProxy | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/visualViewport) */
   /* standard dom */
   val visualViewport: VisualViewport | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/window) */
   /* standard dom */
   val window: Window & (/* globalThis */ Any) = js.native
   

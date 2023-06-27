@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.mail
-  - typings.microsoftGraph.microsoftGraphStrings.url
+  - typings.microsoftGraph.microsoftGraphStrings.url_
   - typings.microsoftGraph.microsoftGraphStrings.file
 */
 trait ThreatAssessmentContentType extends StObject
@@ -16,5 +17,5 @@ object ThreatAssessmentContentType {
   
   inline def mail: typings.microsoftGraph.microsoftGraphStrings.mail = "mail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mail]
   
-  inline def url: typings.microsoftGraph.microsoftGraphStrings.url = "url".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.url]
+  inline def url: url_ = "url".asInstanceOf[url_]
 }

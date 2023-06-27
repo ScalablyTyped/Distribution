@@ -10,23 +10,23 @@ trait LineOfSightAnalysisTarget
      with Accessor {
   
   /**
-    * Specifies how the target is placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
-    */
+  		 * Specifies how the target is placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
+  		 */
   var elevationInfo: LineOfSightAnalysisTargetElevationInfo = js.native
   
   /**
-    * Specifies a feature which shall be excluded from intersection testing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#feature)
-    */
+  		 * Specifies a feature which shall be excluded from intersection testing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#feature)
+  		 */
   var feature: Graphic = js.native
   
   /**
-    * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the position of the target.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#position)
-    */
+  		 * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the position of the target.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#position)
+  		 */
   var position: Point = js.native
 }

@@ -9,12 +9,12 @@ trait LineSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The color of the line.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
-    */
+  		 * The color of the line.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object LineSymbol3DLayerMaterial {

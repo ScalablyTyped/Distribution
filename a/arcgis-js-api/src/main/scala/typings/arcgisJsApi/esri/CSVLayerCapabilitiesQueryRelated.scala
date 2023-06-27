@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSVLayerCapabilitiesQueryRelated extends StObject {
   
   /**
-    * Indicates if the layer's query response includes the number of features or records related to features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
-    */
+  		 * Indicates if the layer's query response includes the number of features or records related to features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
+  		 */
   var supportsCount: Boolean
   
   /**
-    * Indicates if the related features or records returned in the query response can be ordered by one or more fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
-    */
+  		 * Indicates if the related features or records returned in the query response can be ordered by one or more fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
+  		 */
   var supportsOrderBy: Boolean
   
   /**
-    * Indicates if the query response supports pagination for related features or records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
-    */
+  		 * Indicates if the query response supports pagination for related features or records.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
+  		 */
   var supportsPagination: Boolean
 }
 object CSVLayerCapabilitiesQueryRelated {

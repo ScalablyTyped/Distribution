@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DomRef_
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -139,13 +138,13 @@ object sapMObjectAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectAttribute` itself
       */
@@ -170,7 +169,7 @@ object sapMObjectAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -181,7 +180,7 @@ object sapMObjectAttributeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectAttribute` itself
       */
@@ -206,13 +205,13 @@ object sapMObjectAttributeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectAttributePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -220,17 +219,19 @@ object sapMObjectAttributeMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePress(): this.type = js.native
-    def firePress(/**
+    def firePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DomRef_): this.type = js.native
+    mParameters: ObjectAttribute$PressEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getActive active}.
@@ -248,7 +249,7 @@ object sapMObjectAttributeMod {
     def getActive(): Boolean = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -279,7 +280,7 @@ object sapMObjectAttributeMod {
     def getCustomContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Defines to which DOM reference the Popup should be docked.
       *
@@ -339,7 +340,7 @@ object sapMObjectAttributeMod {
     bActive: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -437,6 +438,33 @@ object sapMObjectAttributeMod {
     sTitle: String): this.type = js.native
   }
   
+  trait ObjectAttribute$PressEventParameters extends StObject {
+    
+    /**
+      * DOM reference of the ObjectAttribute's text to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+  }
+  object ObjectAttribute$PressEventParameters {
+    
+    inline def apply(): ObjectAttribute$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectAttribute$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectAttribute$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  type ObjectAttributePressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectAttribute$PressEventParameters]
+  
+  type ObjectAttributePressEventParameters = ObjectAttribute$PressEventParameters
+  
   trait ObjectAttributeSettings
     extends StObject
        with ControlSettings {
@@ -455,7 +483,7 @@ object sapMObjectAttributeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Specifies the value of the `aria-haspopup` attribute
       *
@@ -482,7 +510,12 @@ object sapMObjectAttributeMod {
     /**
       * Fires when the user clicks on active text.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectAttribute$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the ObjectAttribute text.
@@ -526,7 +559,9 @@ object sapMObjectAttributeMod {
       
       inline def setCustomContentUndefined: Self = StObject.set(x, "customContent", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectAttribute$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

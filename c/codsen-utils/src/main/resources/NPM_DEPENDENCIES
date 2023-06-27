@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "codsen-utils" : "1.5.0"
+      "codsen-utils" : "1.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "codsen-utils" : "1.5.0"
+      "codsen-utils" : "1.6.0"
     }
   ],
   "compile-devDependencies" : [

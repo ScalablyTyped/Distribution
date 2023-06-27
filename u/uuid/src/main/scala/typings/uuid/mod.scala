@@ -110,13 +110,14 @@ object mod {
   
   type InputBuffer = ArrayLike[Double]
   
-  // Uses ArrayLike to admit Unit8 and co.
+  // Uses ArrayLike to admit Uint8 and co.
   type OutputBuffer = ArrayLike[Double]
   
   trait RandomOptions
     extends StObject
        with V4Options {
     
+    /** `Array` of 16 random bytes (0-255) */
     var random: js.UndefOr[InputBuffer] = js.undefined
   }
   object RandomOptions {
@@ -139,6 +140,7 @@ object mod {
     extends StObject
        with V4Options {
     
+    /** Alternative to `options.random`, a `Function` that returns an `Array` of 16 random bytes (0-255) */
     var rng: js.UndefOr[js.Function0[InputBuffer]] = js.undefined
   }
   object RngOptions {
@@ -159,12 +161,16 @@ object mod {
   
   trait V1BaseOptions extends StObject {
     
+    /** RFC "clock sequence" as a `Number` between 0 - 0x3fff */
     var clockseq: js.UndefOr[Double] = js.undefined
     
+    /** RFC "timestamp" field (`Number` of milliseconds, unix epoch) */
     var msecs: js.UndefOr[Double | js.Date] = js.undefined
     
+    /** RFC "node" field as an `Array[6]` of byte values (per 4.1.6) */
     var node: js.UndefOr[InputBuffer] = js.undefined
     
+    /** RFC "timestamp" field (`Number` of nanoseconds to add to msecs, should be 0-10,000) */
     var nsecs: js.UndefOr[Double] = js.undefined
   }
   object V1BaseOptions {

@@ -149,15 +149,26 @@ open class BlendState protected () extends StObject {
 object BlendState {
   
   /**
-    * A default blend state that has blending disabled and writes to all color channels.
+    * A blend state that does simple translucency using alpha channel.
     *
     * @type {BlendState}
     * @readonly
     */
   /* static member */
-  @JSImport("playcanvas", "BlendState.DEFAULT")
+  @JSImport("playcanvas", "BlendState.ALPHABLEND")
   @js.native
-  val DEFAULT: BlendState = js.native
+  val ALPHABLEND: BlendState = js.native
+  
+  /**
+    * A blend state that has blending disabled and writes to all color channels.
+    *
+    * @type {BlendState}
+    * @readonly
+    */
+  /* static member */
+  @JSImport("playcanvas", "BlendState.NOBLEND")
+  @js.native
+  val NOBLEND: BlendState = js.native
   
   /**
     * A blend state that does not write to color channels.

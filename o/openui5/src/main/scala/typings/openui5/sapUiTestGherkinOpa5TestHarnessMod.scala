@@ -18,7 +18,7 @@ object sapUiTestGherkinOpa5TestHarnessMod extends Shortcut {
   override def _to: opa5TestHarness = default
   
   /**
-    * @SINCE 1.40
+    * @since 1.40
     *
     * Dynamically generates and executes Opa5 tests based on a Gherkin feature file and step definitions.
     *

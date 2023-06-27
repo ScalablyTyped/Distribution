@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/interaction-context" : "2.1.1"
+      "@atlaskit/interaction-context" : "2.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/interaction-context" : "2.1.1"
+      "@atlaskit/interaction-context" : "2.1.2"
     }
   ],
   "compile-devDependencies" : [

@@ -64,30 +64,36 @@ object distEsmSrcTestingFakesServiceWorkerMod {
     
     var auth: String = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/endpoint) */
     /* standard dom */
     /* CompleteClass */
     override val endpoint: String = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/expirationTime) */
     /* standard dom */
     /* CompleteClass */
     override val expirationTime: EpochTimeStamp | Null = js.native
     @JSName("expirationTime")
     var expirationTime_FakePushSubscription: Double = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/getKey) */
     /* standard dom */
     /* CompleteClass */
     override def getKey(name: PushEncryptionKeyName): js.typedarray.ArrayBuffer | Null = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/options) */
     /* standard dom */
     /* CompleteClass */
     override val options: PushSubscriptionOptions = js.native
     
     var p256: String = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/toJSON) */
     /* standard dom */
     /* CompleteClass */
     override def toJSON(): PushSubscriptionJSON = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/unsubscribe) */
     /* standard dom */
     /* CompleteClass */
     override def unsubscribe(): js.Promise[Boolean] = js.native

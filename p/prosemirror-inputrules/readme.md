@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-inputrules
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 Automatic transforms on text input for ProseMirror

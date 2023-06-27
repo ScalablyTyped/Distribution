@@ -65,7 +65,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
   }
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     *
     * Performance Measurement API.
     */
@@ -77,7 +77,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       *
       * This is useful to add external measurements (e.g. from a backend) to the common measurement UI
       *
-      * @returns [] current measurement containing id, info and start-timestamp, end-timestamp, time, duration,
+      * @returns current measurement containing id, info and start-timestamp, end-timestamp, time, duration,
       * categories (false if error)
       */
     def add(
@@ -105,7 +105,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * effective time in milliseconds
       */
     iDuration: int
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def add(
       /**
       * ID of the measurement
@@ -135,7 +135,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: String
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def add(
       /**
       * ID of the measurement
@@ -165,7 +165,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: js.Array[String]
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Starts an average performance measure.
@@ -184,7 +184,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * Info for the measurement
       */
     sInfo: String
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def average(
       /**
       * ID of the measurement
@@ -198,7 +198,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: String
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def average(
       /**
       * ID of the measurement
@@ -212,7 +212,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: js.Array[String]
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Clears all performance measurements.
@@ -228,7 +228,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
     def end(/**
       * ID of the measurement
       */
-    sId: String): js.Object = js.native
+    sId: String): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Gets all performance measurements where a provided filter function returns a truthy value.
@@ -245,13 +245,13 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       /**
       * a filter function that returns true if the passed measurement should be added to the result
       */
-    fnFilter: js.Function
+    fnFilter: js.Function1[/* p1 */ Entry, Unit]
     ): js.Array[Entry] = js.native
     def filterMeasurements(
       /**
       * a filter function that returns true if the passed measurement should be added to the result
       */
-    fnFilter: js.Function,
+    fnFilter: js.Function1[/* p1 */ Entry, Unit],
       /**
       * Optional parameter to determine if either completed or incomplete measurements should be returned (both
       * if not set or undefined)
@@ -262,7 +262,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       /**
       * a filter function that returns true if the passed measurement should be added to the result
       */
-    fnFilter: js.Function,
+    fnFilter: js.Function1[/* p1 */ Entry, Unit],
       /**
       * Optional parameter to determine if either completed or incomplete measurements should be returned (both
       * if not set or undefined)
@@ -277,7 +277,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       /**
       * a filter function that returns true if the passed measurement should be added to the result
       */
-    fnFilter: js.Function,
+    fnFilter: js.Function1[/* p1 */ Entry, Unit],
       /**
       * Optional parameter to determine if either completed or incomplete measurements should be returned (both
       * if not set or undefined)
@@ -343,14 +343,14 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * @returns current array with measurements containing id, info and start-timestamp, end-timestamp, time,
       * duration, categories
       */
-    def getAllMeasurements(): Entry = js.native
+    def getAllMeasurements(): js.Array[Entry] = js.native
     def getAllMeasurements(
       /**
       * Whether only completed measurements should be returned, if explicitly set to false only incomplete measurements
       * are returned
       */
     bCompleted: Boolean
-    ): Entry = js.native
+    ): js.Array[Entry] = js.native
     
     /**
       * Gets a performance measure.
@@ -361,7 +361,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
     def getMeasurement(/**
       * ID of the measurement
       */
-    sId: String): Entry = js.native
+    sId: String): Entry | Boolean = js.native
     
     /**
       * Pauses a performance measure.
@@ -371,7 +371,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
     def pause(/**
       * ID of the measurement
       */
-    sId: String): js.Object = js.native
+    sId: String): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Registers an average measurement for a given objects method.
@@ -427,7 +427,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
     def resume(/**
       * ID of the measurement
       */
-    sId: String): js.Object = js.native
+    sId: String): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Activates or deactivates the performance measure functionality.
@@ -474,7 +474,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * Info for the measurement
       */
     sInfo: String
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def start(
       /**
       * ID of the measurement
@@ -488,7 +488,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: String
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     def start(
       /**
       * ID of the measurement
@@ -502,7 +502,7 @@ object sapUiPerformanceMeasurementMod extends Shortcut {
       * An optional list of categories for the measure
       */
     aCategories: js.Array[String]
-    ): js.Object = js.native
+    ): js.UndefOr[Entry | Boolean] = js.native
     
     /**
       * Unregisters all average measurements.

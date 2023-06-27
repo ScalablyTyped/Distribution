@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The SVGTransformList defines a list of SVGTransform objects. */
+/**
+  * The SVGTransformList defines a list of SVGTransform objects.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGTransformList)
+  */
 @js.native
 trait SVGTransformList
   extends StObject

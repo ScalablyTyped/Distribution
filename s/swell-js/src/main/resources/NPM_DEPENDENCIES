@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "swell-js" : "3.21.6"
+      "swell-js" : "3.22.1"
     }
   ],
   "test-dependencies" : [
     {
-      "swell-js" : "3.21.6"
+      "swell-js" : "3.22.1"
     }
   ],
   "compile-devDependencies" : [

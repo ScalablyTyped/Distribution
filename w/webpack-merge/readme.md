@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-merge
 
-Typings are for version 5.8.0
+Typings are for version 5.9.0
 
 ## Library description:
 Variant of merge that's useful for webpack configuration

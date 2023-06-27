@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lezer/lr" : "1.2.3"
+      "@lezer/lr" : "1.3.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@lezer/lr" : "1.2.3"
+      "@lezer/lr" : "1.3.5"
     }
   ],
   "compile-devDependencies" : [

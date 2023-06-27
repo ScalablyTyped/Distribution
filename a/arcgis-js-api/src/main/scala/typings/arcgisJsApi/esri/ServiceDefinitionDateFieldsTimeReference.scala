@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionDateFieldsTimeReference extends StObject {
   
   /**
-    * Indicates if datetime fields respects daylight savings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#dateFieldsTimeReference)
-    */
+  		 * Indicates if datetime fields respects daylight savings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#dateFieldsTimeReference)
+  		 */
   var respectsDaylightSaving: Boolean
   
   /**
-    * the timezone for all datetime fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#dateFieldsTimeReference)
-    */
+  		 * the timezone for all datetime fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#dateFieldsTimeReference)
+  		 */
   var timeZone: String
 }
 object ServiceDefinitionDateFieldsTimeReference {

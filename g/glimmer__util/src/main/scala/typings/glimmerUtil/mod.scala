@@ -96,6 +96,7 @@ import typings.glimmerUtil.glimmerUtilStrings.ruby
 import typings.glimmerUtil.glimmerUtilStrings.s
 import typings.glimmerUtil.glimmerUtilStrings.samp
 import typings.glimmerUtil.glimmerUtilStrings.script
+import typings.glimmerUtil.glimmerUtilStrings.search
 import typings.glimmerUtil.glimmerUtilStrings.section
 import typings.glimmerUtil.glimmerUtilStrings.select
 import typings.glimmerUtil.glimmerUtilStrings.slot
@@ -713,6 +714,11 @@ object mod {
   inline def castToBrowser_script(node: BrowserNode, check: script): NodeForSugaryCheck[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[script]]
   inline def castToBrowser_script(node: SimpleNode, check: script): NodeForSugaryCheck[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[script]]
   
+  inline def castToBrowser_search(element: SimpleElement, check: search): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(element.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def castToBrowser_search(element: Element, check: search): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(element.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def castToBrowser_search(node: BrowserNode, check: search): NodeForSugaryCheck[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[search]]
+  inline def castToBrowser_search(node: SimpleNode, check: search): NodeForSugaryCheck[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[search]]
+  
   inline def castToBrowser_section(element: SimpleElement, check: section): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(element.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def castToBrowser_section(element: Element, check: section): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(element.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def castToBrowser_section(node: BrowserNode, check: section): NodeForSugaryCheck[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("castToBrowser")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[section]]
@@ -1125,6 +1131,9 @@ object mod {
   
   inline def checkNode_script(node: Null, check: script): NodeForSugaryCheck[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[script]]
   inline def checkNode_script(node: Node, check: script): NodeForSugaryCheck[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[script]]
+  
+  inline def checkNode_search(node: Null, check: search): NodeForSugaryCheck[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[search]]
+  inline def checkNode_search(node: Node, check: search): NodeForSugaryCheck[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[search]]
   
   inline def checkNode_section(node: Null, check: section): NodeForSugaryCheck[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[section]]
   inline def checkNode_section(node: Node, check: section): NodeForSugaryCheck[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(node.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[NodeForSugaryCheck[section]]

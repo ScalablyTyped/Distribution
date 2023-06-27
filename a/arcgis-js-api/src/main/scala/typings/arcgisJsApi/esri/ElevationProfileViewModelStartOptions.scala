@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationProfileViewModelStartOptions extends StObject {
   
   /**
-    * The mode that the widget will start with.
-    *
-    * @default "sketch"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#start)
-    */
+  		 * The mode that the widget will start with.
+  		 *
+  		 * @default "sketch"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#start)
+  		 */
   var mode: js.UndefOr[sketch | select] = js.undefined
 }
 object ElevationProfileViewModelStartOptions {

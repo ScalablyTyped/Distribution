@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseImageMeasureResult extends StObject {
   
   /**
-    * Name of the raster dataset used in the area and height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#name)
-    */
+  		 * Name of the raster dataset used in the area and height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#name)
+  		 */
   var name: String
   
   /**
-    * Sensor name of the raster dataset used in the area and height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#sensorName)
-    */
+  		 * Sensor name of the raster dataset used in the area and height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#sensorName)
+  		 */
   var sensorName: String
 }
 object BaseImageMeasureResult {

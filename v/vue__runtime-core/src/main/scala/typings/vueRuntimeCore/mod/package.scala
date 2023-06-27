@@ -5,6 +5,7 @@ import typings.std.Element
 import typings.std.Exclude
 import typings.std.Node
 import typings.std.NonNullable
+import typings.std.Omit
 import typings.std.Parameters
 import typings.std.Record
 import typings.vueReactivity.mod.ComputedGetter
@@ -535,7 +536,7 @@ inline def defineOptions[RawBindings, D, C /* <: ComputedOptions */, M /* <: Met
 ]) & Emits
 ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def defineProps[TypeProps](): DefineProps_[TypeProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")().asInstanceOf[DefineProps_[TypeProps]]
+inline def defineProps[TypeProps](): DefineProps_[TypeProps, BooleanKey[TypeProps, /* keyof TypeProps */ String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")().asInstanceOf[DefineProps_[TypeProps, BooleanKey[TypeProps, /* keyof TypeProps */ String]]]
 inline def defineProps[PP /* <: ComponentObjectPropsOptions[Data] */](props: PP): Prettify[ExtractPropTypes[PP]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")(props.asInstanceOf[js.Any]).asInstanceOf[Prettify[ExtractPropTypes[PP]]]
 inline def defineProps[PropNames /* <: String */](props: js.Array[PropNames]): Prettify[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")(props.asInstanceOf[js.Any]).asInstanceOf[Prettify[
@@ -1277,7 +1278,7 @@ inline def withCtx(fn: js.Function, ctx: Unit, isNonScopedSlot: Boolean): js.Fun
 inline def withCtx(fn: js.Function, ctx: ComponentInternalInstance): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 inline def withCtx(fn: js.Function, ctx: ComponentInternalInstance, isNonScopedSlot: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], isNonScopedSlot.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 
-inline def withDefaults[Props, Defaults /* <: InferDefaults[Props] */](props: Props, defaults: Defaults): PropsWithDefaults[Props, Defaults] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(props.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[PropsWithDefaults[Props, Defaults]]
+inline def withDefaults[T, BKeys /* <: /* keyof T */ String */, Defaults /* <: InferDefaults[T] */](props: DefineProps_[T, BKeys], defaults: Defaults): PropsWithDefaults[T, Defaults, BKeys] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(props.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[PropsWithDefaults[T, Defaults, BKeys]]
 
 inline def withDirectives[T /* <: VNode[RendererNode, RendererElement, StringDictionary[Any]] */](vnode: T, directives: DirectiveArguments): T = (^.asInstanceOf[js.Dynamic].applyDynamic("withDirectives")(vnode.asInstanceOf[js.Any], directives.asInstanceOf[js.Any])).asInstanceOf[T]
 
@@ -1402,7 +1403,7 @@ Any,
 ComputedOptions, 
 MethodOptions]) & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, js.Object, String, S]) & PP
 
-type DefineProps_[T] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in @vue/runtime-core.@vue/runtime-core.BooleanKey<T, keyof T> ]: -? boolean} */ js.Any)
+type DefineProps_[T, BKeys /* <: /* keyof T */ String */] = T & (/* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in BKeys ]: -? boolean} */ js.Any)
 
 type Directive[T, V] = (ObjectDirective[T, V]) | (FunctionDirective[T, V])
 
@@ -1465,14 +1466,7 @@ type HMRComponent = (ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, A
 
 type Hook[T] = T | js.Array[T]
 
-/** NOTE: Conditional type definitions are impossible to translate to Scala.
-  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-  * TS definition: {{{
-  T extends null | number | string | boolean | symbol | std.Function ? T | (props : P): T : (props : P): T
-  }}}
-  */
-type InferDefault[P, T] = T | (js.Function1[/* props */ P, T])
+type InferDefault[P, T] = (js.Function1[/* props */ P, T]) | (/* import warning: importer.ImportType#apply Failed type conversion: T extends @vue/runtime-core.@vue/runtime-core.NativeType ? T : never */ js.Any)
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -1548,6 +1542,8 @@ type MoveFn = js.Function5[
 Unit]
 
 type MultiWatchSources = js.Array[WatchSource[Any] | js.Object]
+
+type NativeType = Null | Double | String | Boolean | js.Symbol | js.Function
 
 type NextFn = js.Function1[
 /* vnode */ VNode[RendererNode, RendererElement, StringDictionary[Any]], 
@@ -1631,7 +1627,7 @@ type PropConstructor[T] = Instantiable[T] | js.Function0[T] | (PropMethod[T, Any
 
 type PropType[T] = PropConstructor[T] | js.Array[PropConstructor[T]]
 
-type PropsWithDefaults[Base, Defaults] = Base & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Defaults ]: K extends keyof Base? Defaults[K] extends undefined? Base[K] : @vue/runtime-core.@vue/runtime-core.NotUndefined<Base[K]> : never} */ js.Any)
+type PropsWithDefaults[T, Defaults /* <: InferDefaults[T] */, BKeys /* <: /* keyof T */ String */] = (Omit[T, /* keyof Defaults */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Defaults ]: -? K extends keyof T? Defaults[K] extends undefined? T[K] : @vue/runtime-core.@vue/runtime-core.NotUndefined<T[K]> : never} */ js.Any)
 
 type PublicOptionalKeys[T] = Exclude[/* keyof T */ String, PublicRequiredKeys[T]]
 

@@ -68,6 +68,8 @@ trait WindowOptions extends StObject {
   
   var size: js.UndefOr[String] = js.undefined
   
+  var themeColor: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String | Boolean] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -207,6 +209,10 @@ object WindowOptions {
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
+    
+    inline def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
     
     inline def setTitle(value: String | Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

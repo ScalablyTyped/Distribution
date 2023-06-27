@@ -356,7 +356,7 @@ object mod {
           
           /**
             *  The payload as a string if the payload consists of valid UTF-8 characters.
-            *  @throw {Error} if the payload is not valid UTF-8
+            *  @throws {Error} if the payload is not valid UTF-8
             */
           val payloadString: String = js.native
           

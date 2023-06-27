@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapSaveAsOptions extends StObject {
   
   /**
-    * The folder in which to save the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
-    */
+  		 * The folder in which to save the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
+  		 */
   var folder: js.UndefOr[PortalFolder] = js.undefined
   
   /**
-    * Allow the webmap to be saved even in the case it contains unsupported content (layers, renderers, symbols).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
-    */
+  		 * Allow the webmap to be saved even in the case it contains unsupported content (layers, renderers, symbols).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
+  		 */
   var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapSaveAsOptions {

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Diffhunk extends StObject {
   
-  var _links: PullrequestSelf
+  var _links: HtmlPullrequest
   
   var author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
   
@@ -177,7 +177,7 @@ trait Diffhunk extends StObject {
 object Diffhunk {
   
   inline def apply(
-    _links: PullrequestSelf,
+    _links: HtmlPullrequest,
     author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
     body: String,
     commit_id: String,
@@ -292,6 +292,6 @@ object Diffhunk {
     
     inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: PullrequestSelf): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

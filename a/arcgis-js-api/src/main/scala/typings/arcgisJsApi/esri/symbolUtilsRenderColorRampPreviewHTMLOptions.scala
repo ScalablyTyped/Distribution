@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderColorRampPreviewHTMLOptions extends StObject {
   
   /**
-    * Specifies the alignment of the color ramp.
-    *
-    * @default vertical
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
-    */
+  		 * Specifies the alignment of the color ramp.
+  		 *
+  		 * @default vertical
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+  		 */
   var align: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
-    * Indicates whether to render the color ramp with a continuous gradient.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
-    */
+  		 * Indicates whether to render the color ramp with a continuous gradient.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+  		 */
   var gradient: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The height of the ramp in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
-    */
+  		 * The height of the ramp in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the ramp in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
-    */
+  		 * The width of the ramp in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object symbolUtilsRenderColorRampPreviewHTMLOptions {

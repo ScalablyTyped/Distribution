@@ -9,81 +9,81 @@ trait DotDensityRendererProperties
      with RendererProperties {
   
   /**
-    * Defines the variable(s) used to visualize density.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes)
-    */
+  		 * Defines the variable(s) used to visualize density.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes)
+  		 */
   var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.undefined
   
   /**
-    * The color used to shade the polygon fill behind the dots.
-    *
-    * @default [0, 0, 0, 0.25] - black, semitransparent
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#backgroundColor)
-    */
+  		 * The color used to shade the polygon fill behind the dots.
+  		 *
+  		 * @default [0, 0, 0, 0.25] - black, semitransparent
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#backgroundColor)
+  		 */
   var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
-    */
+  		 * Only applicable when two or more [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#attributes) are specified.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotBlendingEnabled)
+  		 */
   var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the size of the dots in points.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotSize)
-    */
+  		 * Defines the size of the dots in points.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotSize)
+  		 */
   var dotSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Defines the initial dot value used for visualizing density.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue)
-    */
+  		 * Defines the initial dot value used for visualizing density.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#dotValue)
+  		 */
   var dotValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * An object providing options for configuring the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
-    */
+  		 * An object providing options for configuring the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[DotDensityRendererLegendOptions] = js.undefined
   
   /**
-    * The outline of the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#outline)
-    */
+  		 * The outline of the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#outline)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale)
-    */
+  		 * When defined, the renderer will recalculate the dot value linearly based on the change in the view's scale using the [calculateDotValue()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#calculateDotValue) method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale)
+  		 */
   var referenceScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
-    */
+  		 * When set to a consistent value, dot placements will be preserved for the same scale given all parameters are the same in the renderer.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#seed)
+  		 */
   var seed: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
-    */
+  		 * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#visualVariables)
+  		 */
   var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 object DotDensityRendererProperties {

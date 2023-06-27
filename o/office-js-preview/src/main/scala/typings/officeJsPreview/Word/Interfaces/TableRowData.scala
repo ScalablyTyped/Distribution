@@ -51,7 +51,7 @@ trait TableRowData extends StObject {
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * Specifies the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +67,7 @@ trait TableRowData extends StObject {
   var isHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets the preferred height of the row in points.
+    * Specifies the preferred height of the row in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait TableRowData extends StObject {
   var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+    * Specifies the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait TableRowData extends StObject {
   var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets and sets the text values in the row, as a 2D Javascript array.
+    * Specifies the text values in the row, as a 2D JavaScript array.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait TableRowData extends StObject {
   var values: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
-    * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+    * Specifies the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

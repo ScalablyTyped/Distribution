@@ -7,40 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldIndexProperties extends StObject {
   
   /**
-    * Specifies if the field is indexed in ascending order.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#ascending)
-    */
+  		 * Specifies if the field is indexed in ascending order.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#ascending)
+  		 */
   var ascending: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Description of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#description)
-    */
+  		 * Description of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The ordered field names included in this index.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#fieldNames)
-    */
+  		 * The ordered field names included in this index.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#fieldNames)
+  		 */
   var fieldNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The name of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#name)
-    */
+  		 * The name of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies if the values in the field are unique (no duplicate values).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#unique)
-    */
+  		 * Specifies if the values in the field are unique (no duplicate values).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#unique)
+  		 */
   var unique: js.UndefOr[Boolean] = js.undefined
 }
 object FieldIndexProperties {

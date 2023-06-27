@@ -1,9 +1,10 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
-import typings.openui5.anon.Collection
 import typings.openui5.anon.CollectionName
-import typings.openui5.anon.FontFamily
+import typings.openui5.anon.Content
+import typings.openui5.anon.Src
+import typings.openui5.sapUiCoreLibraryMod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +15,86 @@ object sapUiCoreIconPoolMod extends Shortcut {
   @js.native
   val default: IconPool = js.native
   
+  trait IconInfo extends StObject {
+    
+    /**
+      * the collection name of the icon. For the default icon font with name 'SAP-icons', this property is set
+      * with `undefined`
+      */
+    var collection: String
+    
+    /**
+      * the hexadecimal code in string format without the prefix, for example "e000"
+      */
+    var content: String
+    
+    /**
+      * the name of the font when importing the font using @font-face in CSS
+      */
+    var fontFamily: String
+    
+    /**
+      * the name of the icon
+      */
+    var name: String
+    
+    /**
+      * indicates whether this icon should NOT be mirrored in RTL (right to left) mode
+      */
+    var suppressMirroring: Boolean
+    
+    /**
+      * the translated text for the icon under the current used locale
+      */
+    var text: String
+    
+    /**
+      * The URI representing the icon following pattern `sap-icon://collection-name/icon-name`
+      */
+    var uri: URI
+  }
+  object IconInfo {
+    
+    inline def apply(
+      collection: String,
+      content: String,
+      fontFamily: String,
+      name: String,
+      suppressMirroring: Boolean,
+      text: String,
+      uri: URI
+    ): IconInfo = {
+      val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], suppressMirroring = suppressMirroring.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IconInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
+      
+      inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSuppressMirroring(value: Boolean): Self = StObject.set(x, "suppressMirroring", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setUri(value: URI): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /**
     * The IconPool is a static class for retrieving or registering icons. It also provides helping methods
     * for easier consumption of icons. There are already icons registered in IconPool, please use the Demo
     * App named "Icon Explorer" to find the name of the icon.
     *
-    * In order to use the icon inside an existing control, please call {@link sap.ui.core.IconPool.getIconURI}
+    * In order to use the icon inside an existing control, please call {@link sap.ui.core.IconPool.getIconURI }
     * and assign the URI to the control's property which supports icons. If you want to support both, icons
-    * and standard images in your own control, please use the static method {@link sap.ui.core.IconPool.createControlByURI}
+    * and standard images in your own control, please use the static method {@link sap.ui.core.IconPool.createControlByURI }
     * to either create an Icon in case the first argument is an icon-URL or another control which you define
     * by providing it as the second argument.
     */
@@ -47,8 +120,8 @@ object sapUiCoreIconPoolMod extends Shortcut {
       /**
       * the icon info which contains the following properties:
       */
-    iconInfo: FontFamily
-    ): Collection = js.native
+    iconInfo: Content
+    ): IconInfo = js.native
     
     /**
       * Creates an instance of {@link sap.ui.core.Icon} if the given URI is an icon URI, otherwise the given
@@ -74,7 +147,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * associated constructor can be used. Unknown properties are ignored. It should contain at least a property
       * named src. If it's given with a string type, it will be taken as the value of src property.
       */
-    setting: js.Object,
+    setting: Src,
       /**
       * The constructor function which is called when the given URI isn't an icon URI
       */
@@ -82,7 +155,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Checks if the icon font is loaded
       *
@@ -102,7 +175,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
     def getIconCollectionNames(): js.Array[Any] = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Returns the icon url based on the given mime type
       *
@@ -122,7 +195,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * The returned info object has the following properties:
       * 	 - `string: name` Name of the icon
       * 	 - `string: collection` Name of the collection that contains the icon or `undefined` in case of the
-      * 			default collection
+      *     default collection
       * 	 - `string: uri` Icon URI that identifies the icon
       * 	 - `string: fontFamily` CSS font family to use for this icon
       * 	 - `string: content` Character sequence that represents the icon in the icon font
@@ -137,7 +210,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * Name of the icon, or a complete icon-URI with icon collection and icon name; must not be empty
       */
     iconName: String
-    ): js.UndefOr[js.Object | js.Promise[Any]] = js.native
+    ): js.UndefOr[IconInfo | js.Promise[js.UndefOr[IconInfo]]] = js.native
     def getIconInfo(
       /**
       * Name of the icon, or a complete icon-URI with icon collection and icon name; must not be empty
@@ -147,7 +220,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * Name of the icon collection; to access built-in icons, omit the collection name
       */
     collectionName: String
-    ): js.UndefOr[js.Object | js.Promise[Any]] = js.native
+    ): js.UndefOr[IconInfo | js.Promise[js.UndefOr[IconInfo]]] = js.native
     def getIconInfo(
       /**
       * Name of the icon, or a complete icon-URI with icon collection and icon name; must not be empty
@@ -164,7 +237,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * afterwards the icon info
       */
     loadingMode: String
-    ): js.UndefOr[js.Object | js.Promise[Any]] = js.native
+    ): js.UndefOr[IconInfo | js.Promise[js.UndefOr[IconInfo]]] = js.native
     def getIconInfo(
       /**
       * Name of the icon, or a complete icon-URI with icon collection and icon name; must not be empty
@@ -181,7 +254,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
       * afterwards the icon info
       */
     loadingMode: String
-    ): js.UndefOr[js.Object | js.Promise[Any]] = js.native
+    ): js.UndefOr[IconInfo | js.Promise[js.UndefOr[IconInfo]]] = js.native
     
     /**
       * Returns all name of icons that are registered under the given collection.
@@ -256,7 +329,7 @@ object sapUiCoreIconPoolMod extends Shortcut {
     uri: String): Boolean = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Registers an additional icon font to the icon pool
       */

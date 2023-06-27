@@ -59,7 +59,7 @@ trait Paragraph
      with ClientObject {
   
   /**
-    * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+    * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -117,7 +117,7 @@ trait Paragraph
     * Gets the collection of endnotes in the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -130,7 +130,7 @@ trait Paragraph
   val fields: FieldCollection = js.native
   
   /**
-    * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -149,7 +149,7 @@ trait Paragraph
     * Gets the collection of footnotes in the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -167,8 +167,7 @@ trait Paragraph
     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param options Optional. Options that define which content controls are returned.
     */
@@ -301,6 +300,8 @@ trait Paragraph
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
     *
     * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
@@ -441,7 +442,7 @@ trait Paragraph
   val isListItem: Boolean = js.native
   
   /**
-    * Gets or sets the left indent value, in points, for the paragraph.
+    * Specifies the left indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -449,7 +450,7 @@ trait Paragraph
   var leftIndent: Double = js.native
   
   /**
-    * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+    * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -457,7 +458,7 @@ trait Paragraph
   var lineSpacing: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+    * Specifies the amount of spacing, in grid lines, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -465,7 +466,7 @@ trait Paragraph
   var lineUnitAfter: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+    * Specifies the amount of spacing, in grid lines, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -571,7 +572,7 @@ trait Paragraph
   val onCommentSelected: EventHandlers[CommentEventArgs] = js.native
   
   /**
-    * Gets or sets the outline level for the paragraph.
+    * Specifies the outline level for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -635,7 +636,7 @@ trait Paragraph
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets or sets the right indent value, in points, for the paragraph.
+    * Specifies the right indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -678,7 +679,7 @@ trait Paragraph
   def set(properties: Paragraph): Unit = js.native
   
   /**
-    * Gets or sets the spacing, in points, after the paragraph.
+    * Specifies the spacing, in points, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -686,7 +687,7 @@ trait Paragraph
   var spaceAfter: Double = js.native
   
   /**
-    * Gets or sets the spacing, in points, before the paragraph.
+    * Specifies the spacing, in points, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -717,7 +718,7 @@ trait Paragraph
   def startNewList(): typings.officeJsPreview.Word.List = js.native
   
   /**
-    * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -725,7 +726,7 @@ trait Paragraph
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]

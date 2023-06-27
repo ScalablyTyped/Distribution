@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonWorkflowfilepath extends StObject {
   
   var requestBody: ContentApplicationjsonWorkflowfilepath
   
-  var responses: `200Content60422`
+  var responses: `200Content68422`
 }
 object RequestBodyContentApplicationjsonWorkflowfilepath {
   
   inline def apply(
     parameters: PathRequiredworkflowid,
     requestBody: ContentApplicationjsonWorkflowfilepath,
-    responses: `200Content60422`
+    responses: `200Content68422`
   ): RequestBodyContentApplicationjsonWorkflowfilepath = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonWorkflowfilepath]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonWorkflowfilepath {
     
     inline def setRequestBody(value: ContentApplicationjsonWorkflowfilepath): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content60422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content68422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

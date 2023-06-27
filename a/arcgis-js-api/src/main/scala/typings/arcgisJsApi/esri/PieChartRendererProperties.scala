@@ -9,79 +9,79 @@ trait PieChartRendererProperties
      with RendererProperties {
   
   /**
-    * Defines the variable(s) to include in the pie charts.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#attributes)
-    */
+  		 * Defines the variable(s) to include in the pie charts.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#attributes)
+  		 */
   var attributes: js.UndefOr[js.Array[AttributeColorInfoProperties]] = js.undefined
   
   /**
-    * The symbol used to render polygons behind the pie symbols.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#backgroundFillSymbol)
-    */
+  		 * The symbol used to render polygons behind the pie symbols.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#backgroundFillSymbol)
+  		 */
   var backgroundFillSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.undefined
   
   /**
-    * The color used to visualize features whose [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#attributes) all have null or empty values.
-    *
-    * @default new Color([0, 0, 0, 0])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultColor)
-    */
+  		 * The color used to visualize features whose [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#attributes) all have null or empty values.
+  		 *
+  		 * @default new Color([0, 0, 0, 0])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultColor)
+  		 */
   var defaultColor: js.UndefOr[Color_] = js.undefined
   
   /**
-    * Describes the [defaultColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultColor) in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultLabel)
-    */
+  		 * Describes the [defaultColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultColor) in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#defaultLabel)
+  		 */
   var defaultLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Use this property to create a donut chart.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#holePercentage)
-    */
+  		 * Use this property to create a donut chart.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#holePercentage)
+  		 */
   var holePercentage: js.UndefOr[Double] = js.undefined
   
   /**
-    * An object providing options for describing the renderer in the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#legendOptions)
-    */
+  		 * An object providing options for describing the renderer in the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[PieChartRendererLegendOptions] = js.undefined
   
   /**
-    * Defines the rules for how to aggregate small categories to a generic "others" category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
-    */
+  		 * Defines the rules for how to aggregate small categories to a generic "others" category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
+  		 */
   var othersCategory: js.UndefOr[PieChartRendererOthersCategory] = js.undefined
   
   /**
-    * Defines the outline of the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#outline)
-    */
+  		 * Defines the outline of the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#outline)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * Defines the size of each pie chart in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#size)
-    */
+  		 * Defines the size of each pie chart in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#visualVariables)
-    */
+  		 * An array of [Size Visual Variable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#visualVariables)
+  		 */
   var visualVariables: js.UndefOr[js.Array[SizeVariableProperties]] = js.undefined
 }
 object PieChartRendererProperties {

@@ -29,7 +29,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjFieldGroup
     *
     * @since 2009.2
     * @param collapsible
@@ -45,7 +44,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjFieldGroup
     *
     * @since 2009.2
     * @param label
@@ -60,7 +58,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjFieldGroup
     *
     * @since 2011.1
     * @param showBorder
@@ -75,7 +72,6 @@ Instantiable0[Any] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjFieldGroup
     *
     * @since 2011.1
     * @param singleColumn

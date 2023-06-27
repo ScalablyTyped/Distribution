@@ -8,11 +8,11 @@ trait ParametersQueryPackagetypePage extends StObject {
   
   var parameters: QueryPackagetypePage
   
-  var responses: `200Content78400`
+  var responses: `200Content89400`
 }
 object ParametersQueryPackagetypePage {
   
-  inline def apply(parameters: QueryPackagetypePage, responses: `200Content78400`): ParametersQueryPackagetypePage = {
+  inline def apply(parameters: QueryPackagetypePage, responses: `200Content89400`): ParametersQueryPackagetypePage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPackagetypePage]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPackagetypePage {
     
     inline def setParameters(value: QueryPackagetypePage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content78400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content89400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

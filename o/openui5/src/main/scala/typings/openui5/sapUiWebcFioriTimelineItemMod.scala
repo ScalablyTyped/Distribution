@@ -155,13 +155,13 @@ object sapUiWebcFioriTimelineItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNameClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.TimelineItem` itself
       */
@@ -188,7 +188,7 @@ object sapUiWebcFioriTimelineItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNameClick(
       /**
@@ -199,7 +199,7 @@ object sapUiWebcFioriTimelineItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.TimelineItem` itself
       */
@@ -224,13 +224,13 @@ object sapUiWebcFioriTimelineItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNameClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -238,7 +238,7 @@ object sapUiWebcFioriTimelineItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:nameClick nameClick} to attached listeners.
       *
@@ -468,6 +468,12 @@ object sapUiWebcFioriTimelineItemMod {
     sTitleText: String): this.type = js.native
   }
   
+  trait TimelineItem$NameClickEventParameters extends StObject
+  
+  type TimelineItemNameClickEvent = typings.openui5.sapUiBaseEventMod.default[TimelineItem$NameClickEventParameters]
+  
+  type TimelineItemNameClickEventParameters = TimelineItem$NameClickEventParameters
+  
   trait TimelineItemSettings
     extends StObject
        with ControlSettings {
@@ -499,7 +505,9 @@ object sapUiWebcFioriTimelineItemMod {
       *
       *  **Note:** The event will not be fired if the `name-clickable` attribute is not set.
       */
-    var nameClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var nameClick: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines if the `name` is clickable.
@@ -542,7 +550,7 @@ object sapUiWebcFioriTimelineItemMod {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNameClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "nameClick", js.Any.fromFunction1(value))
+      inline def setNameClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "nameClick", js.Any.fromFunction1(value))
       
       inline def setNameClickUndefined: Self = StObject.set(x, "nameClick", js.undefined)
       

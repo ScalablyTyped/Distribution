@@ -38,6 +38,8 @@ import typings.std.ReferrerPolicy
 import typings.std.SecurityPolicyViolationEvent
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import typings.std.StylePropertyMap
+import typings.std.StylePropertyMapReadOnly
 import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
@@ -294,6 +296,8 @@ object anon {
     
     var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.undefined
     
+    var attributeStyleMap: js.UndefOr[StylePropertyMap] = js.undefined
+    
     var attributes: js.UndefOr[NamedNodeMap] = js.undefined
     
     var autocapitalize: js.UndefOr[String] = js.undefined
@@ -333,6 +337,8 @@ object anon {
     var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
     
     var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.undefined
+    
+    var computedStyleMap: js.UndefOr[js.Function0[StylePropertyMapReadOnly]] = js.undefined
     
     var contains: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
@@ -439,6 +445,8 @@ object anon {
     var lastChild: js.UndefOr[ChildNode | Null] = js.undefined
     
     var lastElementChild: js.UndefOr[Element | Null] = js.undefined
+    
+    var loading: js.UndefOr[String] = js.undefined
     
     var localName: js.UndefOr[String] = js.undefined
     
@@ -1088,6 +1096,10 @@ object anon {
       
       inline def setAttachShadowUndefined: Self = StObject.set(x, "attachShadow", js.undefined)
       
+      inline def setAttributeStyleMap(value: StylePropertyMap): Self = StObject.set(x, "attributeStyleMap", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeStyleMapUndefined: Self = StObject.set(x, "attributeStyleMap", js.undefined)
+      
       inline def setAttributes(value: NamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
@@ -1175,6 +1187,10 @@ object anon {
       inline def setCompareDocumentPosition(value: /* other */ Node => Double): Self = StObject.set(x, "compareDocumentPosition", js.Any.fromFunction1(value))
       
       inline def setCompareDocumentPositionUndefined: Self = StObject.set(x, "compareDocumentPosition", js.undefined)
+      
+      inline def setComputedStyleMap(value: () => StylePropertyMapReadOnly): Self = StObject.set(x, "computedStyleMap", js.Any.fromFunction0(value))
+      
+      inline def setComputedStyleMapUndefined: Self = StObject.set(x, "computedStyleMap", js.undefined)
       
       inline def setContains(value: () => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction0(value))
       
@@ -1437,6 +1453,10 @@ object anon {
       inline def setLastElementChildNull: Self = StObject.set(x, "lastElementChild", null)
       
       inline def setLastElementChildUndefined: Self = StObject.set(x, "lastElementChild", js.undefined)
+      
+      inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       

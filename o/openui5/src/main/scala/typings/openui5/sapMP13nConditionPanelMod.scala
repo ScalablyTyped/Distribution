@@ -198,13 +198,13 @@ object sapMP13nConditionPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDataChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nConditionPanel` itself
       */
@@ -229,7 +229,7 @@ object sapMP13nConditionPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDataChange(
       /**
@@ -240,7 +240,7 @@ object sapMP13nConditionPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nConditionPanel` itself
       */
@@ -258,13 +258,13 @@ object sapMP13nConditionPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDataChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -272,7 +272,7 @@ object sapMP13nConditionPanelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:dataChange dataChange} to attached listeners.
       *
@@ -490,14 +490,14 @@ object sapMP13nConditionPanelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * removes all invalid conditions.
       */
     def removeInvalidConditions(): Unit = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * removes all errors/warning states from the value1/2 fields of all conditions.
       */
@@ -694,6 +694,12 @@ object sapMP13nConditionPanelMod {
     oValidationExecutor: js.Object): this.type = js.native
   }
   
+  trait P13nConditionPanel$DataChangeEventParameters extends StObject
+  
+  type P13nConditionPanelDataChangeEvent = typings.openui5.sapUiBaseEventMod.default[P13nConditionPanel$DataChangeEventParameters]
+  
+  type P13nConditionPanelDataChangeEventParameters = P13nConditionPanel$DataChangeEventParameters
+  
   trait P13nConditionPanelSettings
     extends StObject
        with ControlSettings {
@@ -733,7 +739,9 @@ object sapMP13nConditionPanelMod {
     /**
       * Workaround for updating the binding
       */
-    var dataChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var dataChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * makes the remove icon on the first condition row disabled when only one condition exist.
@@ -813,7 +821,7 @@ object sapMP13nConditionPanelMod {
       
       inline def setContainerQueryUndefined: Self = StObject.set(x, "containerQuery", js.undefined)
       
-      inline def setDataChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "dataChange", js.Any.fromFunction1(value))
+      inline def setDataChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "dataChange", js.Any.fromFunction1(value))
       
       inline def setDataChangeUndefined: Self = StObject.set(x, "dataChange", js.undefined)
       

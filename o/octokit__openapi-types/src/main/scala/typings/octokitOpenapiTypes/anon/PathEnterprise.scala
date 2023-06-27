@@ -8,12 +8,12 @@ trait PathEnterprise extends StObject {
   
   var path: Enterprise
   
-  var query: Before
+  var query: js.UndefOr[Before] = js.undefined
 }
 object PathEnterprise {
   
-  inline def apply(path: Enterprise, query: Before): PathEnterprise = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Enterprise): PathEnterprise = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathEnterprise]
   }
   
@@ -23,5 +23,7 @@ object PathEnterprise {
     inline def setPath(value: Enterprise): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Before): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

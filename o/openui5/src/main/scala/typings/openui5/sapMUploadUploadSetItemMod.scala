@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`33`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.UploadState
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -139,7 +138,7 @@ object sapMUploadUploadSetItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Adds some headerField to the aggregation {@link #getHeaderFields headerFields}.
       *
@@ -190,13 +189,13 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit]
     ): this.type = js.native
     def attachOpenPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.UploadSetItem` itself
       */
@@ -221,7 +220,7 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit]
     ): this.type = js.native
     def attachOpenPressed(
       /**
@@ -232,7 +231,7 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.UploadSetItem` itself
       */
@@ -253,13 +252,13 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit]
     ): this.type = js.native
     def attachRemovePressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.UploadSetItem` itself
       */
@@ -284,7 +283,7 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit]
     ): this.type = js.native
     def attachRemovePressed(
       /**
@@ -295,7 +294,7 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.UploadSetItem` itself
       */
@@ -310,7 +309,7 @@ object sapMUploadUploadSetItemMod {
     def destroyAttributes(): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Destroys all the headerFields in the aggregation {@link #getHeaderFields headerFields}.
       *
@@ -343,13 +342,13 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit]
     ): this.type = js.native
     def detachOpenPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemOpenPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -368,13 +367,13 @@ object sapMUploadUploadSetItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit]
     ): this.type = js.native
     def detachRemovePressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadSetItemRemovePressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -394,7 +393,7 @@ object sapMUploadUploadSetItemMod {
     ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:openPressed openPressed} to attached listeners.
       *
@@ -404,13 +403,15 @@ object sapMUploadUploadSetItemMod {
       * @returns Whether or not to prevent the default action
       */
     def fireOpenPressed(): Boolean = js.native
-    def fireOpenPressed(/**
+    def fireOpenPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `33`): Boolean = js.native
+    mParameters: UploadSetItem$OpenPressedEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:removePressed removePressed} to attached listeners.
       *
@@ -420,10 +421,12 @@ object sapMUploadUploadSetItemMod {
       * @returns Whether or not to prevent the default action
       */
     def fireRemovePressed(): Boolean = js.native
-    def fireRemovePressed(/**
+    def fireRemovePressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `33`): Boolean = js.native
+    mParameters: UploadSetItem$RemovePressedEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getAttributes attributes}.
@@ -433,7 +436,7 @@ object sapMUploadUploadSetItemMod {
     def getAttributes(): js.Array[typings.openui5.sapMObjectAttributeMod.default] = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Returns edit state of the item.
       *
@@ -480,7 +483,7 @@ object sapMUploadUploadSetItemMod {
     def getFileObject(): File | Blob = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Gets content of aggregation {@link #getHeaderFields headerFields}.
       *
@@ -512,7 +515,7 @@ object sapMUploadUploadSetItemMod {
     def getMediaType(): String = js.native
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * Gets current value of property {@link #getSelected selected}.
       *
@@ -550,7 +553,7 @@ object sapMUploadUploadSetItemMod {
     def getUploadState(): UploadState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UploadState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Gets current value of property {@link #getUploadUrl uploadUrl}.
       *
@@ -607,7 +610,7 @@ object sapMUploadUploadSetItemMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getHeaderFields headerFields}.
       * and returns its index if found or -1 otherwise.
@@ -666,7 +669,7 @@ object sapMUploadUploadSetItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Inserts a headerField into the aggregation {@link #getHeaderFields headerFields}.
       *
@@ -722,7 +725,7 @@ object sapMUploadUploadSetItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Validates if the item is restricted, which means that it is restricted for the file type, media type,
       * maximum file name length and maximum file size limit.
@@ -741,7 +744,7 @@ object sapMUploadUploadSetItemMod {
     def removeAllAttributes(): js.Array[typings.openui5.sapMObjectAttributeMod.default] = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Removes all the controls from the aggregation {@link #getHeaderFields headerFields}.
       *
@@ -794,7 +797,7 @@ object sapMUploadUploadSetItemMod {
       */
     vHeaderField: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Removes a headerField from the aggregation {@link #getHeaderFields headerFields}.
       *
@@ -926,7 +929,7 @@ object sapMUploadUploadSetItemMod {
     iProgress: int): this.type = js.native
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * Sets a new value for property {@link #getSelected selected}.
       *
@@ -981,7 +984,7 @@ object sapMUploadUploadSetItemMod {
     sUploadState: UploadState): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Sets a new value for property {@link #getUploadUrl uploadUrl}.
       *
@@ -1049,6 +1052,60 @@ object sapMUploadUploadSetItemMod {
     bVisibleRemove: Boolean): this.type = js.native
   }
   
+  trait UploadSetItem$OpenPressedEventParameters extends StObject {
+    
+    /**
+      * The item on which the open action has been invoked.
+      */
+    var item: js.UndefOr[UploadSetItem] = js.undefined
+  }
+  object UploadSetItem$OpenPressedEventParameters {
+    
+    inline def apply(): UploadSetItem$OpenPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadSetItem$OpenPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadSetItem$OpenPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: UploadSetItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait UploadSetItem$RemovePressedEventParameters extends StObject {
+    
+    /**
+      * The item on which the open action has been invoked.
+      */
+    var item: js.UndefOr[UploadSetItem] = js.undefined
+  }
+  object UploadSetItem$RemovePressedEventParameters {
+    
+    inline def apply(): UploadSetItem$RemovePressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadSetItem$RemovePressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadSetItem$RemovePressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: UploadSetItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type UploadSetItemOpenPressedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSetItem$OpenPressedEventParameters]
+  
+  type UploadSetItemOpenPressedEventParameters = UploadSetItem$OpenPressedEventParameters
+  
+  type UploadSetItemRemovePressedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSetItem$RemovePressedEventParameters]
+  
+  type UploadSetItemRemovePressedEventParameters = UploadSetItem$RemovePressedEventParameters
+  
   trait UploadSetItemSettings
     extends StObject
        with ElementSettings {
@@ -1080,7 +1137,7 @@ object sapMUploadUploadSetItemMod {
     var fileName: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Header fields to be included in the header section of an XMLHttpRequest (XHR) request
       */
@@ -1103,15 +1160,25 @@ object sapMUploadUploadSetItemMod {
     /**
       * This event is fired when an open action is invoked on an item.
       */
-    var openPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var openPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadSetItem$OpenPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event is fired when a remove action is invoked on an item.
       */
-    var removePressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var removePressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadSetItem$RemovePressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * Defines the selected state of the UploadSetItem.
       */
@@ -1139,7 +1206,7 @@ object sapMUploadUploadSetItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * URL where the uploaded files will be stored. If empty, uploadUrl from the uploader is considered.
       */
@@ -1216,11 +1283,15 @@ object sapMUploadUploadSetItemMod {
       
       inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      inline def setOpenPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "openPressed", js.Any.fromFunction1(value))
+      inline def setOpenPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadSetItem$OpenPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "openPressed", js.Any.fromFunction1(value))
       
       inline def setOpenPressedUndefined: Self = StObject.set(x, "openPressed", js.undefined)
       
-      inline def setRemovePressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "removePressed", js.Any.fromFunction1(value))
+      inline def setRemovePressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadSetItem$RemovePressedEventParameters] => Unit
+      ): Self = StObject.set(x, "removePressed", js.Any.fromFunction1(value))
       
       inline def setRemovePressedUndefined: Self = StObject.set(x, "removePressed", js.undefined)
       

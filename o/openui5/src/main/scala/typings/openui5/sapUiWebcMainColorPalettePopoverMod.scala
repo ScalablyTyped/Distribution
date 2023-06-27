@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Color
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +149,13 @@ object sapUiWebcMainColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.ColorPalettePopover`
       * itself
@@ -182,7 +181,7 @@ object sapUiWebcMainColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
@@ -193,7 +192,7 @@ object sapUiWebcMainColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.ColorPalettePopover`
       * itself
@@ -219,13 +218,13 @@ object sapUiWebcMainColorPalettePopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit]
     ): this.type = js.native
     def detachItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -233,17 +232,19 @@ object sapUiWebcMainColorPalettePopoverMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClick itemClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemClick(): this.type = js.native
-    def fireItemClick(/**
+    def fireItemClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Color): this.type = js.native
+    mParameters: ColorPalettePopover$ItemClickEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getColors colors}.
@@ -437,6 +438,33 @@ object sapUiWebcMainColorPalettePopoverMod {
     opener: HTMLElement): Unit = js.native
   }
   
+  trait ColorPalettePopover$ItemClickEventParameters extends StObject {
+    
+    /**
+      * the selected color
+      */
+    var color: js.UndefOr[String] = js.undefined
+  }
+  object ColorPalettePopover$ItemClickEventParameters {
+    
+    inline def apply(): ColorPalettePopover$ItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColorPalettePopover$ItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPalettePopover$ItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    }
+  }
+  
+  type ColorPalettePopoverItemClickEvent = typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ItemClickEventParameters]
+  
+  type ColorPalettePopoverItemClickEventParameters = ColorPalettePopover$ItemClickEventParameters
+  
   trait ColorPalettePopoverSettings
     extends StObject
        with ControlSettings {
@@ -459,7 +487,12 @@ object sapUiWebcMainColorPalettePopoverMod {
     /**
       * Fired when the user selects a color.
       */
-    var itemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether the user can choose the default color from a button.
@@ -505,7 +538,9 @@ object sapUiWebcMainColorPalettePopoverMod {
       
       inline def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
       
-      inline def setItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
+      inline def setItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
       
       inline def setItemClickUndefined: Self = StObject.set(x, "itemClick", js.undefined)
       

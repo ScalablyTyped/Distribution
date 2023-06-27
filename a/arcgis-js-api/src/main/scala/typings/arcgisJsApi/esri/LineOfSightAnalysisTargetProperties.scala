@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineOfSightAnalysisTargetProperties extends StObject {
   
   /**
-    * Specifies how the target is placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
-    */
+  		 * Specifies how the target is placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[LineOfSightAnalysisTargetElevationInfo] = js.undefined
   
   /**
-    * Specifies a feature which shall be excluded from intersection testing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#feature)
-    */
+  		 * Specifies a feature which shall be excluded from intersection testing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#feature)
+  		 */
   var feature: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
-    * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the position of the target.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#position)
-    */
+  		 * A [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing the position of the target.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#position)
+  		 */
   var position: js.UndefOr[PointProperties] = js.undefined
 }
 object LineOfSightAnalysisTargetProperties {

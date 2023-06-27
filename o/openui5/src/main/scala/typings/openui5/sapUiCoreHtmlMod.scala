@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.IsPreservedDOM
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -141,13 +140,13 @@ object sapUiCoreHtmlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.HTML` itself
       */
@@ -176,7 +175,7 @@ object sapUiCoreHtmlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
@@ -187,7 +186,7 @@ object sapUiCoreHtmlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.HTML` itself
       */
@@ -206,13 +205,13 @@ object sapUiCoreHtmlMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit]
     ): this.type = js.native
     def detachAfterRendering(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HTMLAfterRenderingEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -220,17 +219,19 @@ object sapUiCoreHtmlMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterRendering afterRendering} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterRendering(): this.type = js.native
-    def fireAfterRendering(/**
+    def fireAfterRendering(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: IsPreservedDOM): this.type = js.native
+    mParameters: HTML$AfterRenderingEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getContent content}.
@@ -243,7 +244,7 @@ object sapUiCoreHtmlMod {
       * Some of these restrictions (there might be others!) are:
       * 	 - the content must be enclosed in tags, pure text is not supported.
       * 	 - if the content contains script tags, they will be executed but they will not appear in the resulting
-      * 			DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
+      *     DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
       *
       * Please consider to consult the jQuery documentation as well.
       *
@@ -266,11 +267,11 @@ object sapUiCoreHtmlMod {
       *
       * There are two scenarios where this flag is relevant (when set to true):
       * 	 - for the initial rendering: when an HTML control is added to a UIArea for the first time and if the
-      * 			root node of that UIArea contained DOM content with the same id as the HTML control, then that content
-      * 			will be used for rendering instead of any specified string content
+      *     root node of that UIArea contained DOM content with the same id as the HTML control, then that content
+      *     will be used for rendering instead of any specified string content
       * 	 - any follow-up rendering: when an HTML control is rendered for the second or any later time and the
-      * 			preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
-      * 			content
+      *     preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
+      *     content
       *
       * As preserving the existing DOM is the most common use case of the HTML control, the default value is
       * true.
@@ -286,8 +287,7 @@ object sapUiCoreHtmlMod {
       *
       * Whether to run the HTML sanitizer once the content (HTML markup) is applied or not.
       *
-      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add
-      * URLListValidator API}.
+      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add URLListValidator API}.
       *
       * Default value is `false`.
       *
@@ -306,7 +306,7 @@ object sapUiCoreHtmlMod {
       * Some of these restrictions (there might be others!) are:
       * 	 - the content must be enclosed in tags, pure text is not supported.
       * 	 - if the content contains script tags, they will be executed but they will not appear in the resulting
-      * 			DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
+      *     DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
       *
       * Please consider to consult the jQuery documentation as well.
       *
@@ -346,11 +346,11 @@ object sapUiCoreHtmlMod {
       *
       * There are two scenarios where this flag is relevant (when set to true):
       * 	 - for the initial rendering: when an HTML control is added to a UIArea for the first time and if the
-      * 			root node of that UIArea contained DOM content with the same id as the HTML control, then that content
-      * 			will be used for rendering instead of any specified string content
+      *     root node of that UIArea contained DOM content with the same id as the HTML control, then that content
+      *     will be used for rendering instead of any specified string content
       * 	 - any follow-up rendering: when an HTML control is rendered for the second or any later time and the
-      * 			preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
-      * 			content
+      *     preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
+      *     content
       *
       * As preserving the existing DOM is the most common use case of the HTML control, the default value is
       * true.
@@ -372,8 +372,7 @@ object sapUiCoreHtmlMod {
       *
       * Whether to run the HTML sanitizer once the content (HTML markup) is applied or not.
       *
-      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add
-      * URLListValidator API}.
+      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add URLListValidator API}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -388,6 +387,34 @@ object sapUiCoreHtmlMod {
     bSanitizeContent: Boolean): this.type = js.native
   }
   
+  trait HTML$AfterRenderingEventParameters extends StObject {
+    
+    /**
+      * Whether the current DOM of the control has been preserved (true) or not (e.g. rendered from content property
+      * or it is an empty HTML control).
+      */
+    var isPreservedDOM: js.UndefOr[Boolean] = js.undefined
+  }
+  object HTML$AfterRenderingEventParameters {
+    
+    inline def apply(): HTML$AfterRenderingEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HTML$AfterRenderingEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTML$AfterRenderingEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIsPreservedDOM(value: Boolean): Self = StObject.set(x, "isPreservedDOM", value.asInstanceOf[js.Any])
+      
+      inline def setIsPreservedDOMUndefined: Self = StObject.set(x, "isPreservedDOM", js.undefined)
+    }
+  }
+  
+  type HTMLAfterRenderingEvent = typings.openui5.sapUiBaseEventMod.default[HTML$AfterRenderingEventParameters]
+  
+  type HTMLAfterRenderingEventParameters = HTML$AfterRenderingEventParameters
+  
   trait HTMLSettings
     extends StObject
        with ControlSettings {
@@ -398,7 +425,12 @@ object sapUiCoreHtmlMod {
       * When the control doesn't have string content and no preserved DOM existed for this control, then this
       * event will fire, but there won't be a DOM node for this control.
       */
-    var afterRendering: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterRendering: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[HTML$AfterRenderingEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * HTML content to be displayed, defined as a string.
@@ -409,7 +441,7 @@ object sapUiCoreHtmlMod {
       * Some of these restrictions (there might be others!) are:
       * 	 - the content must be enclosed in tags, pure text is not supported.
       * 	 - if the content contains script tags, they will be executed but they will not appear in the resulting
-      * 			DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
+      *     DOM tree. When the contained code tries to find the corresponding script tag, it will fail.
       *
       * Please consider to consult the jQuery documentation as well.
       *
@@ -428,11 +460,11 @@ object sapUiCoreHtmlMod {
       *
       * There are two scenarios where this flag is relevant (when set to true):
       * 	 - for the initial rendering: when an HTML control is added to a UIArea for the first time and if the
-      * 			root node of that UIArea contained DOM content with the same id as the HTML control, then that content
-      * 			will be used for rendering instead of any specified string content
+      *     root node of that UIArea contained DOM content with the same id as the HTML control, then that content
+      *     will be used for rendering instead of any specified string content
       * 	 - any follow-up rendering: when an HTML control is rendered for the second or any later time and the
-      * 			preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
-      * 			content
+      *     preferDOM flag is set, then the DOM from the first rendering is preserved and not replaced by the string
+      *     content
       *
       * As preserving the existing DOM is the most common use case of the HTML control, the default value is
       * true.
@@ -444,8 +476,7 @@ object sapUiCoreHtmlMod {
     /**
       * Whether to run the HTML sanitizer once the content (HTML markup) is applied or not.
       *
-      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add
-      * URLListValidator API}.
+      * To configure the set of allowed URLs, you can use the {@link module:sap/base/security/URLListValidator.add URLListValidator API}.
       */
     var sanitizeContent: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -461,7 +492,9 @@ object sapUiCoreHtmlMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: HTMLSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
+      inline def setAfterRendering(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[HTML$AfterRenderingEventParameters] => Unit
+      ): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
       
       inline def setAfterRenderingUndefined: Self = StObject.set(x, "afterRendering", js.undefined)
       

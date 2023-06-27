@@ -10,7 +10,7 @@ trait Member extends StObject {
   /** @enum {string} */
   var action: added
   
-  var changes: js.UndefOr[`450`] = js.undefined
+  var changes: js.UndefOr[`528`] = js.undefined
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -37,7 +37,7 @@ object Member {
     
     inline def setAction(value: added): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `450`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `528`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     

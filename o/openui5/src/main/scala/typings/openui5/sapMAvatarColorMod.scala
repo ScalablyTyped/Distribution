@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMAvatarColorMod {
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Possible background color options for the {@link sap.m.Avatar} control.
     *
@@ -15,7 +15,7 @@ object sapMAvatarColorMod {
     * 	 - Keep in mind that the colors are theme-dependent and can differ based on the currently used theme.
     *
     * 	 -  If the `Random` value is assigned, a random color is chosen from the accent options (Accent1 to
-    * 			Accent10).
+    *     Accent10).
     */
   @JSImport("sap/m/AvatarColor", JSImport.Default)
   @js.native
@@ -56,7 +56,7 @@ object sapMAvatarColorMod {
   @js.native
   sealed trait AvatarColor extends StObject
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Possible background color options for the {@link sap.m.Avatar} control.
     *
@@ -64,7 +64,7 @@ object sapMAvatarColorMod {
     * 	 - Keep in mind that the colors are theme-dependent and can differ based on the currently used theme.
     *
     * 	 -  If the `Random` value is assigned, a random color is chosen from the accent options (Accent1 to
-    * 			Accent10).
+    *     Accent10).
     */
   @JSImport("sap/m/AvatarColor", "AvatarColor")
   @js.native

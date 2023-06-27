@@ -1,5 +1,6 @@
 package typings.draftJs
 
+import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,6 +79,48 @@ object anon {
       inline def setIsBackward(value: Boolean): Self = StObject.set(x, "isBackward", value.asInstanceOf[js.Any])
       
       inline def setIsBackwardUndefined: Self = StObject.set(x, "isBackward", js.undefined)
+    }
+  }
+  
+  trait TypeofComponent extends StObject {
+    
+    // tslint won't let me format the sample code in a way that vscode likes it :(
+    /**
+      * If set, `this.context` will be set at runtime to the current value of the given Context.
+      *
+      * Usage:
+      *
+      * ```ts
+      * type MyContext = number
+      * const Ctx = React.createContext<MyContext>(0)
+      *
+      * class Foo extends React.Component {
+      *   static contextType = Ctx
+      *   context!: React.ContextType<typeof Ctx>
+      *   render () {
+      *     return <>My context's value: {this.context}</>;
+      *   }
+      * }
+      * ```
+      *
+      * @see https://react.dev/reference/react/Component#static-contexttype
+      */
+    /* static member */
+    var contextType: js.UndefOr[Context[Any]] = js.undefined
+  }
+  object TypeofComponent {
+    
+    inline def apply(): TypeofComponent = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TypeofComponent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+      
+      inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      
+      inline def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
     }
   }
 }

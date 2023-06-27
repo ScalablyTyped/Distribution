@@ -11,10 +11,10 @@ object esriWidgetsFullscreenFullscreenViewModelMod {
   @JSImport("esri/widgets/Fullscreen/FullscreenViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Fullscreen](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html)
-    */
+  		 * Provides the logic for the [Fullscreen](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with FullscreenViewModel {

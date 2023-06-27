@@ -20,28 +20,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DistanceMeasurement2DViewModelProperties extends StObject {
   
   /**
-    * When the coordinate sustem is projected (other than web mercator) then distances less than this threshold will be computed planimetrically.
-    *
-    * @default 100000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#geodesicDistanceThreshold)
-    */
+  		 * When the coordinate sustem is projected (other than web mercator) then distances less than this threshold will be computed planimetrically.
+  		 *
+  		 * @default 100000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#geodesicDistanceThreshold)
+  		 */
   var geodesicDistanceThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unitOptions)
-    */
+  		 * List of available units and unit systems (imperial, metric) for displaying the distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#unitOptions)
+  		 */
   var unitOptions: js.UndefOr[
     js.Array[
       imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
@@ -49,10 +49,10 @@ trait DistanceMeasurement2DViewModelProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object DistanceMeasurement2DViewModelProperties {

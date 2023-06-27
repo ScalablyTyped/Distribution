@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a footnote or endnote.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.5]
   */
 trait NoteItemLoadOptions extends StObject {
   
@@ -22,7 +22,7 @@ trait NoteItemLoadOptions extends StObject {
     * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
@@ -30,7 +30,7 @@ trait NoteItemLoadOptions extends StObject {
     * Represents a footnote or endnote reference in the main document.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var reference: js.UndefOr[RangeLoadOptions] = js.undefined
   
@@ -38,7 +38,7 @@ trait NoteItemLoadOptions extends StObject {
     * Represents the note item type: footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
 }

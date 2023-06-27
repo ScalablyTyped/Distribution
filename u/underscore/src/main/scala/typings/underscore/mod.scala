@@ -3686,7 +3686,7 @@ object mod extends Shortcut {
       * they will be forwarded on to the function when it is invoked.
       * @param func Function to delay `waitMS` amount of ms.
       * @param wait The amount of milliseconds to delay `fn`.
-      * @arguments Additional arguments to pass to `fn`.
+      * @param args Additional arguments to pass to `fn`.
       **/
     def delay(func: js.Function, wait: Double, args: Any*): Any = js.native
     

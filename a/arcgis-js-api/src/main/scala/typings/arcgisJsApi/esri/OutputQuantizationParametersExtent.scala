@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OutputQuantizationParametersExtent extends StObject {
   
   /**
-    * Maximum horizontal grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
-    */
+  		 * Maximum horizontal grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
+  		 */
   var xmax: Double
   
   /**
-    * Minimum horizontal grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
-    */
+  		 * Minimum horizontal grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
+  		 */
   var xmin: Double
   
   /**
-    * Maximum vertical grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
-    */
+  		 * Maximum vertical grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
+  		 */
   var ymax: Double
   
   /**
-    * Minimum vertical grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
-    */
+  		 * Minimum vertical grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
+  		 */
   var ymin: Double
 }
 object OutputQuantizationParametersExtent {

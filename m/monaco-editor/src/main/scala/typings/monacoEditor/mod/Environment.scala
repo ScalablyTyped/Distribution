@@ -5,42 +5,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Environment extends StObject {
   
-  var baseUrl: js.UndefOr[String] = js.undefined
+  /**
+    * The base url where the editor sources are found (which contains the vs folder)
+    */
+  var baseUrl: js.UndefOr[String] = js.native
   
+  /**
+    * Create a trusted types policy (same API as window.trustedTypes.createPolicy)
+    */
+  def createTrustedTypesPolicy(policyName: String): js.UndefOr[ITrustedTypePolicy] = js.native
+  def createTrustedTypesPolicy(policyName: String, policyOptions: ITrustedTypePolicyOptions): js.UndefOr[ITrustedTypePolicy] = js.native
+  
+  /**
+    * A web worker factory.
+    * NOTE: If `getWorker` is defined, `getWorkerUrl` is not invoked.
+    */
   var getWorker: js.UndefOr[
     js.Function2[/* workerId */ String, /* label */ String, js.Promise[Worker] | Worker]
-  ] = js.undefined
+  ] = js.native
   
-  var getWorkerUrl: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, String]] = js.undefined
+  /**
+    * Return the location for web worker scripts.
+    * NOTE: If `getWorker` is defined, `getWorkerUrl` is not invoked.
+    */
+  var getWorkerUrl: js.UndefOr[js.Function2[/* workerId */ String, /* label */ String, String]] = js.native
   
-  var globalAPI: js.UndefOr[Boolean] = js.undefined
-}
-object Environment {
-  
-  inline def apply(): Environment = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[Environment]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
-    
-    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
-    
-    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
-    
-    inline def setGetWorker(value: (/* workerId */ String, /* label */ String) => js.Promise[Worker] | Worker): Self = StObject.set(x, "getWorker", js.Any.fromFunction2(value))
-    
-    inline def setGetWorkerUndefined: Self = StObject.set(x, "getWorker", js.undefined)
-    
-    inline def setGetWorkerUrl(value: (/* workerId */ String, /* label */ String) => String): Self = StObject.set(x, "getWorkerUrl", js.Any.fromFunction2(value))
-    
-    inline def setGetWorkerUrlUndefined: Self = StObject.set(x, "getWorkerUrl", js.undefined)
-    
-    inline def setGlobalAPI(value: Boolean): Self = StObject.set(x, "globalAPI", value.asInstanceOf[js.Any])
-    
-    inline def setGlobalAPIUndefined: Self = StObject.set(x, "globalAPI", js.undefined)
-  }
+  /**
+    * Define a global `monaco` symbol.
+    * This is true by default in AMD and false by default in ESM.
+    */
+  var globalAPI: js.UndefOr[Boolean] = js.native
 }

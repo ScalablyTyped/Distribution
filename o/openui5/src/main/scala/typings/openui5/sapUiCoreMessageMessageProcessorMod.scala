@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewMessages
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -95,15 +94,17 @@ object sapUiCoreMessageMessageProcessorMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachMessageChange(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachMessageChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit]
+    ): this.type = js.native
+    def attachMessageChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit],
       /**
       * Context object to call the event handler with, defaults to this `MessageProcessor` itself
       */
@@ -126,7 +127,7 @@ object sapUiCoreMessageMessageProcessorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit]
     ): this.type = js.native
     def attachMessageChange(
       /**
@@ -137,7 +138,7 @@ object sapUiCoreMessageMessageProcessorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit],
       /**
       * Context object to call the event handler with, defaults to this `MessageProcessor` itself
       */
@@ -157,15 +158,17 @@ object sapUiCoreMessageMessageProcessorMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachMessageChange(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachMessageChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit]
+    ): this.type = js.native
+    def detachMessageChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ MessageProcessorMessageChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -173,16 +176,19 @@ object sapUiCoreMessageMessageProcessorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @deprecated - 1.115 Use {@link sap.ui.core.messages.MessageManager#updateMessages} instead
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:messageChange messageChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def fireMessageChange(/**
+    def fireMessageChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewMessages): this.type = js.native
+    mParameters: MessageProcessor$MessageChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Returns the ID of the MessageProcessor instance
@@ -201,4 +207,40 @@ object sapUiCoreMessageMessageProcessorMod {
     mMessages: Record[String, js.Array[typings.openui5.sapUiCoreMessageMessageMod.default]]
     ): Unit = js.native
   }
+  
+  trait MessageProcessor$MessageChangeEventParameters extends StObject {
+    
+    /**
+      * New messages added by the trigger of the `messageChange` event.
+      */
+    var newMessages: js.UndefOr[typings.openui5.sapUiCoreMessageMessageMod.default] = js.undefined
+    
+    /**
+      * Messages already existing before the `messageChange` event was fired.
+      */
+    var oldMessages: js.UndefOr[typings.openui5.sapUiCoreMessageMessageMod.default] = js.undefined
+  }
+  object MessageProcessor$MessageChangeEventParameters {
+    
+    inline def apply(): MessageProcessor$MessageChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageProcessor$MessageChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageProcessor$MessageChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewMessages(value: typings.openui5.sapUiCoreMessageMessageMod.default): Self = StObject.set(x, "newMessages", value.asInstanceOf[js.Any])
+      
+      inline def setNewMessagesUndefined: Self = StObject.set(x, "newMessages", js.undefined)
+      
+      inline def setOldMessages(value: typings.openui5.sapUiCoreMessageMessageMod.default): Self = StObject.set(x, "oldMessages", value.asInstanceOf[js.Any])
+      
+      inline def setOldMessagesUndefined: Self = StObject.set(x, "oldMessages", js.undefined)
+    }
+  }
+  
+  type MessageProcessorMessageChangeEvent = typings.openui5.sapUiBaseEventMod.default[MessageProcessor$MessageChangeEventParameters]
+  
+  type MessageProcessorMessageChangeEventParameters = MessageProcessor$MessageChangeEventParameters
 }

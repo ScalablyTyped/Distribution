@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderPieChartPreviewHTMLOptions extends StObject {
   
   /**
-    * The hole percentage of the chart on a scale of 0-1.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
-    */
+  		 * The hole percentage of the chart on a scale of 0-1.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
+  		 */
   var holePercentage: js.UndefOr[Double] = js.undefined
   
   /**
-    * The outline of the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
-    */
+  		 * The outline of the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbol] = js.undefined
   
   /**
-    * The radius of the pie chart in pixels.
-    *
-    * @default 40
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
-    */
+  		 * The radius of the pie chart in pixels.
+  		 *
+  		 * @default 40
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
+  		 */
   var radius: js.UndefOr[Double] = js.undefined
   
   /**
-    * The values used to indicate the area each color should represent as a percentage when creating the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
-    */
+  		 * The values used to indicate the area each color should represent as a percentage when creating the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPieChartPreviewHTML)
+  		 */
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object symbolUtilsRenderPieChartPreviewHTMLOptions {

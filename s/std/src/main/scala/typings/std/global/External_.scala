@@ -13,12 +13,20 @@ open class External_ ()
   extends StObject
      with External {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/External/AddSearchProvider)
+    */
   /* standard dom */
   /* CompleteClass */
   override def AddSearchProvider(): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/External/IsSearchProviderInstalled)
+    */
   /* standard dom */
   /* CompleteClass */
   override def IsSearchProviderInstalled(): Unit = js.native

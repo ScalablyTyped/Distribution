@@ -12,6 +12,11 @@ trait Value extends StObject {
   var range: js.UndefOr[SourceRange] = js.undefined
   
   /**
+    * Specificity of the selector.
+    */
+  var specificity: js.UndefOr[Specificity] = js.undefined
+  
+  /**
     * Value text.
     */
   var text: String
@@ -29,6 +34,10 @@ object Value {
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setSpecificity(value: Specificity): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
+    
+    inline def setSpecificityUndefined: Self = StObject.set(x, "specificity", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

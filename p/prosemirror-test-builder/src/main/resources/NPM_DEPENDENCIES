@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-test-builder" : "1.1.0"
+      "prosemirror-test-builder" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-test-builder" : "1.1.0"
+      "prosemirror-test-builder" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

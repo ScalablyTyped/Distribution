@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleRangeSliderVisibleElements extends StObject {
   
   /**
-    * Indicates whether the preview thumbnail of the scale is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
-    */
+  		 * Indicates whether the preview thumbnail of the scale is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
+  		 */
   var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * _Since 4.24_ Indicates whether the scale dropdown menus are visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
-    */
+  		 * _Since 4.24_ Indicates whether the scale dropdown menus are visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#VisibleElements)
+  		 */
   var scaleMenus: js.UndefOr[Boolean | VisibleElementsScaleMenus] = js.undefined
 }
 object ScaleRangeSliderVisibleElements {

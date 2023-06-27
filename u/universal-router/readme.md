@@ -1,7 +1,7 @@
 
 # Scala.js typings for universal-router
 
-Typings are for version 9.1.0
+Typings are for version 9.2.0
 
 ## Library description:
 Isomorphic router for JavaScript web applications

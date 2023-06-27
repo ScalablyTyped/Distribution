@@ -9,38 +9,38 @@ trait ImageSymbolTableElementInfo
      with SymbolTableElementType {
   
   /**
-    * The height of the image in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
-    */
+  		 * The height of the image in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The label of the category corresponding to the given image.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label of the category corresponding to the given image.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The opacity of the image (`0` to `1`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
-    */
+  		 * The opacity of the image (`0` to `1`).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
+  		 */
   var opacity: Double
   
   /**
-    * The data URI of the image representing a colored pixel in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
-    */
+  		 * The data URI of the image representing a colored pixel in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
+  		 */
   var src: String
   
   /**
-    * The width of the image in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
-    */
+  		 * The width of the image in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#ImageSymbolTableElementInfo)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ImageSymbolTableElementInfo {

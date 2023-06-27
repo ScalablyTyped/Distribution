@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object libUndoablelistMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.std.Iterable because Already inherited
   - typings.luminoDisposable.mod.IDisposable because Already inherited
   - typings.jupyterlabObservables.libObservablelistMod.IObservableList because Already inherited
-  - typings.jupyterlabObservables.libUndoablelistMod.IObservableUndoableList because var conflicts: changed, isDisposed, length, `type`. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
+  - typings.jupyterlabObservables.libUndoablelistMod.IObservableUndoableList because var conflicts: changed, isDisposed, iterator, length, `type`. Inlined canRedo, canUndo, beginCompoundOperation, beginCompoundOperation, endCompoundOperation, undo, redo, clearUndo */ @JSImport("@jupyterlab/observables/lib/undoablelist", "ObservableUndoableList")
   @js.native
   open class ObservableUndoableList[T] protected () extends ObservableList[T] {
     /**

@@ -11,10 +11,10 @@ object esriWidgetsSupportTimePickerMod {
   @JSImport("esri/widgets/support/TimePicker", JSImport.Namespace)
   @js.native
   /**
-    * The `TimePicker` class provides functionality to easily choose an input date.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html)
-    */
+  		 * The `TimePicker` class provides functionality to easily choose an input date.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html)
+  		 */
   open class ^ ()
     extends StObject
        with TimePicker {

@@ -9,8 +9,8 @@ trait IAccessKeySupport extends StObject {
   var __implements__sap_ui_core_IAccessKeySupport: Boolean
   
   /**
-    * @SINCE 1.104
-    * @EXPERIMENTAL (since 1.104)
+    * @since 1.104
+    * @experimental (since 1.104)
     *
     * Returns a refence to DOM element to be focused during Access key navigation. If not implemented getFocusDomRef()
     * method is used.
@@ -18,16 +18,16 @@ trait IAccessKeySupport extends StObject {
   var getAccessKeysFocusTarget: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
-    * @SINCE 1.104
-    * @EXPERIMENTAL (since 1.104)
+    * @since 1.104
+    * @experimental (since 1.104)
     *
     * If implemented called when access keys feature is enabled and highlighting is over
     */
   var onAccKeysHighlightEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
-    * @SINCE 1.104
-    * @EXPERIMENTAL (since 1.104)
+    * @since 1.104
+    * @experimental (since 1.104)
     *
     * If implemented called when access keys feature is enabled and highlighting is ongoing
     */

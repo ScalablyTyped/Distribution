@@ -17,16 +17,16 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     */
   open class default () extends DateTimeWithTimezone {
     def this(/**
-      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance
-      * DateFormat}. The `strictParsing` format option is set to `true` by default and can be overwritten. Format
-      * options are immutable, that is, they can only be set once on construction.
+      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance DateFormat}.
+      * The `strictParsing` format option is set to `true` by default and can be overwritten. Format options
+      * are immutable, that is, they can only be set once on construction.
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance
-      * DateFormat}. The `strictParsing` format option is set to `true` by default and can be overwritten. Format
-      * options are immutable, that is, they can only be set once on construction.
+      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance DateFormat}.
+      * The `strictParsing` format option is set to `true` by default and can be overwritten. Format options
+      * are immutable, that is, they can only be set once on construction.
       */
     oFormatOptions: js.Object,
       /**
@@ -36,9 +36,9 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     ) = this()
     def this(
       /**
-      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance
-      * DateFormat}. The `strictParsing` format option is set to `true` by default and can be overwritten. Format
-      * options are immutable, that is, they can only be set once on construction.
+      * Format options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateTimeWithTimezoneInstance DateFormat}.
+      * The `strictParsing` format option is set to `true` by default and can be overwritten. Format options
+      * are immutable, that is, they can only be set once on construction.
       */
     oFormatOptions: Unit,
       /**
@@ -120,6 +120,16 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     extends typings.openui5.sapUiModelCompositeTypeMod.default {
     
     /**
+      * @experimental (since 1.114.0)
+      *
+      * Returns a language-dependent placeholder text such as "e.g. " where  is formatted
+      * using this type.
+      *
+      * @returns The language-dependent placeholder text or `undefined` if the type does not offer a placeholder
+      */
+    def getPlaceholderText(): js.UndefOr[String] = js.native
+    
+    /**
       * Parses the given value.
       *
       * @returns An array with two entries; the first one is a `Date` object for the timestamp and the second
@@ -133,7 +143,7 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     vValue: String,
       /**
       * The source type (the expected type of `vValue`); must be "object", "string", or a type with one of these
-      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type}
+      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type }
       * for more information
       */
     sSourceType: String
@@ -145,7 +155,7 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     vValue: String,
       /**
       * The source type (the expected type of `vValue`); must be "object", "string", or a type with one of these
-      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type}
+      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type }
       * for more information
       */
     sSourceType: String,
@@ -163,7 +173,7 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     vValue: js.Date,
       /**
       * The source type (the expected type of `vValue`); must be "object", "string", or a type with one of these
-      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type}
+      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type }
       * for more information
       */
     sSourceType: String
@@ -175,7 +185,7 @@ object sapUiModelOdataTypeDateTimeWithTimezoneMod {
     vValue: js.Date,
       /**
       * The source type (the expected type of `vValue`); must be "object", "string", or a type with one of these
-      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type}
+      * types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}; see {@link sap.ui.model.odata.type }
       * for more information
       */
     sSourceType: String,

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineCallout3DBorderProperties extends StObject {
   
   /**
-    * The color of the callout line border.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
-    */
+  		 * The color of the callout line border.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object LineCallout3DBorderProperties {

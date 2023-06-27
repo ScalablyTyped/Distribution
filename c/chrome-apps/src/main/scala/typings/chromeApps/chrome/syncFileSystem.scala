@@ -26,8 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the same data can be available across different clients. Read Manage Data for
   * more on using this API.
   *
-  * @requires[Permissions: 'syncFileSystem']
-  * @see[Learn more: Manage Data]{@link https://developer.chrome.com/apps/app_storage}
+  * @requires Permissions: 'syncFileSystem'
+  * @see https://developer.chrome.com/apps/app_storage
   * @since Chrome 27
   */
 object syncFileSystem {

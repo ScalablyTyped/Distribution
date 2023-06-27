@@ -12,17 +12,17 @@ trait PointSymbol3DProperties
      with Symbol3DProperties {
   
   /**
-    * Settings for adding a callout visualization to the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout)
-    */
+  		 * Settings for adding a callout visualization to the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout)
+  		 */
   var callout: js.UndefOr[LineCallout3DProperties] = js.undefined
   
   /**
-    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#symbolLayers)
-    */
+  		 * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#symbolLayers)
+  		 */
   @JSName("symbolLayers")
   var symbolLayers_PointSymbol3DProperties: js.UndefOr[
     CollectionProperties[
@@ -31,10 +31,10 @@ trait PointSymbol3DProperties
   ] = js.undefined
   
   /**
-    * Shifts the symbol along the vertical world axis by a given height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
-    */
+  		 * Shifts the symbol along the vertical world axis by a given height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
+  		 */
   var verticalOffset: js.UndefOr[Symbol3DVerticalOffsetProperties] = js.undefined
 }
 object PointSymbol3DProperties {

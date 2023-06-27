@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CurrentRange
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapUiCommonsResponsiveContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit]
     ): this.type = js.native
     def attachRangeSwitch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ResponsiveContainer`
       * itself
@@ -183,7 +182,7 @@ object sapUiCommonsResponsiveContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit]
     ): this.type = js.native
     def attachRangeSwitch(
       /**
@@ -194,7 +193,7 @@ object sapUiCommonsResponsiveContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ResponsiveContainer`
       * itself
@@ -220,13 +219,13 @@ object sapUiCommonsResponsiveContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit]
     ): this.type = js.native
     def detachRangeSwitch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveContainerRangeSwitchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -234,17 +233,19 @@ object sapUiCommonsResponsiveContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:rangeSwitch rangeSwitch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireRangeSwitch(): this.type = js.native
-    def fireRangeSwitch(/**
+    def fireRangeSwitch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CurrentRange): this.type = js.native
+    mParameters: ResponsiveContainer$RangeSwitchEventParameters
+    ): this.type = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getDefaultContent defaultContent},
@@ -282,8 +283,8 @@ object sapUiCommonsResponsiveContainerMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * Checks for the provided `sap.ui.commons.ResponsiveContainerRange` in the aggregation {@link #getRanges
-      * ranges}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.commons.ResponsiveContainerRange` in the aggregation {@link #getRanges ranges}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -396,6 +397,33 @@ object sapUiCommonsResponsiveContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait ResponsiveContainer$RangeSwitchEventParameters extends StObject {
+    
+    /**
+      * The current range
+      */
+    var currentRange: js.UndefOr[typings.openui5.sapUiCommonsResponsiveContainerRangeMod.default] = js.undefined
+  }
+  object ResponsiveContainer$RangeSwitchEventParameters {
+    
+    inline def apply(): ResponsiveContainer$RangeSwitchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResponsiveContainer$RangeSwitchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveContainer$RangeSwitchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentRange(value: typings.openui5.sapUiCommonsResponsiveContainerRangeMod.default): Self = StObject.set(x, "currentRange", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentRangeUndefined: Self = StObject.set(x, "currentRange", js.undefined)
+    }
+  }
+  
+  type ResponsiveContainerRangeSwitchEvent = typings.openui5.sapUiBaseEventMod.default[ResponsiveContainer$RangeSwitchEventParameters]
+  
+  type ResponsiveContainerRangeSwitchEventParameters = ResponsiveContainer$RangeSwitchEventParameters
+  
   trait ResponsiveContainerSettings
     extends StObject
        with ControlSettings {
@@ -415,7 +443,12 @@ object sapUiCommonsResponsiveContainerMod {
     /**
       * The event is fired the width of the container reaches a new range.
       */
-    var rangeSwitch: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var rangeSwitch: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ResponsiveContainer$RangeSwitchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The ranges defined for this container
@@ -449,7 +482,9 @@ object sapUiCommonsResponsiveContainerMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setRangeSwitch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rangeSwitch", js.Any.fromFunction1(value))
+      inline def setRangeSwitch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ResponsiveContainer$RangeSwitchEventParameters] => Unit
+      ): Self = StObject.set(x, "rangeSwitch", js.Any.fromFunction1(value))
       
       inline def setRangeSwitchUndefined: Self = StObject.set(x, "rangeSwitch", js.undefined)
       

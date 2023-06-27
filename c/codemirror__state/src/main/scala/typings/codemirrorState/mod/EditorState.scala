@@ -80,6 +80,18 @@ just break things.
   /**
     Find the values for a given language data field, provided by the
     the [`languageData`](https://codemirror.net/6/docs/ref/#state.EditorState^languageData) facet.
+    
+    Examples of language data fields are...
+    
+    - [`"commentTokens"`](https://codemirror.net/6/docs/ref/#commands.CommentTokens) for specifying
+    comment syntax.
+    - [`"autocomplete"`](https://codemirror.net/6/docs/ref/#autocomplete.autocompletion^config.override)
+    for providing language-specific completion sources.
+    - [`"wordChars"`](https://codemirror.net/6/docs/ref/#state.EditorState.charCategorizer) for adding
+    characters that should be considered part of words in this
+    language.
+    - [`"closeBrackets"`](https://codemirror.net/6/docs/ref/#autocomplete.CloseBracketConfig) controls
+    bracket closing behavior.
     */
   def languageDataAt[T](name: String, pos: Double): js.Array[T] = js.native
   def languageDataAt[T](name: String, pos: Double, side: `-1` | `0` | `1`): js.Array[T] = js.native

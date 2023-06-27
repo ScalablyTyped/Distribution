@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IToolbarItem extends StObject {
   
   /**
-    * Item name
+    * Unique item name
     */
   var name: String
   

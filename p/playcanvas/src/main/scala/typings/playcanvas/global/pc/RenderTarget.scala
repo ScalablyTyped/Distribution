@@ -21,6 +21,10 @@ open class RenderTarget protected ()
     * resolve after rendering to this RT (see {@link RenderTarget#resolve}). Defaults to true.
     * @param {import('./texture.js').Texture} [options.colorBuffer] - The texture that this render
     * target will treat as a rendering surface.
+    * @param {import('./texture.js').Texture[]} [options.colorBuffers] - The textures that this
+    * render target will treat as a rendering surfaces. If this option is set, the colorBuffer
+    * option is ignored. This option can be used only when {@link GraphicsDevice#supportsMrt} is
+    * true.
     * @param {boolean} [options.depth] - If set to true, depth buffer will be created. Defaults to
     * true. Ignored if depthBuffer is defined.
     * @param {import('./texture.js').Texture} [options.depthBuffer] - The texture that this render

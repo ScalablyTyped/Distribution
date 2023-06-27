@@ -71,95 +71,95 @@ trait TravelMode
      with JSONSupport {
   
   /**
-    * Lists the parameterized attributes used by the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#attributeParameterValues)
-    */
+  		 * Lists the parameterized attributes used by the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#attributeParameterValues)
+  		 */
   var attributeParameterValues: js.Array[TravelModeAttributeParameterValues] = js.native
   
   /**
-    * A short text description of the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#description)
-    */
+  		 * A short text description of the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#description)
+  		 */
   var description: String = js.native
   
   /**
-    * Indicates the distance-based cost attribute for reporting directions and for solving vehicle routing problems.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
-    */
+  		 * Indicates the distance-based cost attribute for reporting directions and for solving vehicle routing problems.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
+  		 */
   var distanceAttributeName: kilometers_ | miles_ | meters_ | String = js.native
   
   /**
-    * The unique identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#id)
-    */
+  		 * The unique identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#id)
+  		 */
   var id: String = js.native
   
   /**
-    * The network cost attribute used as impedance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
-    */
+  		 * The network cost attribute used as impedance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
+  		 */
   var impedanceAttributeName: kilometers_ | miles_ | meters_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String = js.native
   
   /**
-    * The unique name of the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#name)
-    */
+  		 * The unique name of the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * The list of the restriction attributes used when solving network analysis problems with this travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#restrictionAttributeNames)
-    */
+  		 * The list of the restriction attributes used when solving network analysis problems with this travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#restrictionAttributeNames)
+  		 */
   var restrictionAttributeNames: js.Array[
     `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
   ] = js.native
   
   /**
-    * Specifies whether the travel mode generalizes the geometry of analysis results and by how much.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance)
-    */
+  		 * Specifies whether the travel mode generalizes the geometry of analysis results and by how much.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance)
+  		 */
   var simplificationTolerance: Double = js.native
   
   /**
-    * The linear units associated with [simplificationTolerance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationToleranceUnits)
-    */
+  		 * The linear units associated with [simplificationTolerance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationToleranceUnits)
+  		 */
   var simplificationToleranceUnits: centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | unknown | yards = js.native
   
   /**
-    * Indicates the time-based cost attribute for reporting directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#timeAttributeName)
-    */
+  		 * Indicates the time-based cost attribute for reporting directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#timeAttributeName)
+  		 */
   var timeAttributeName: minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String = js.native
   
   /**
-    * Indicates the category of travel or vehicle represented by this travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#type)
-    */
+  		 * Indicates the category of travel or vehicle represented by this travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#type)
+  		 */
   var `type`: automobile | truck | walk | other = js.native
   
   /**
-    * Indicates whether the travel mode uses a hierarchy attribute while performing the analysis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#useHierarchy)
-    */
+  		 * Indicates whether the travel mode uses a hierarchy attribute while performing the analysis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#useHierarchy)
+  		 */
   var useHierarchy: Boolean = js.native
   
   /**
-    * Indicates how the U-turns at junctions that could occur during network traversal are handled by the solver.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#uturnAtJunctions)
-    */
+  		 * Indicates how the U-turns at junctions that could occur during network traversal are handled by the solver.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#uturnAtJunctions)
+  		 */
   var uturnAtJunctions: `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections` = js.native
 }

@@ -16,61 +16,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait predominanceGetSchemeByNameParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
-    * The name of the scheme to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * The name of the scheme to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var name: String
   
   /**
-    * The number of unique values to include in the predominance visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * The number of unique values to include in the predominance visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var numColors: Double
   
   /**
-    * Determines which set of primary and secondary color schemes to return.
-    *
-    * @default default
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * Determines which set of primary and secondary color schemes to return.
+  		 *
+  		 * @default default
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var theme: js.UndefOr[default_] = js.undefined
   
   /**
-    * The SceneView instance in which the scheme will be used.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The SceneView instance in which the scheme will be used.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates if the size units of the scheme will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
-    */
+  		 * Indicates if the size units of the scheme will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#getSchemeByName)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object predominanceGetSchemeByNameParams {

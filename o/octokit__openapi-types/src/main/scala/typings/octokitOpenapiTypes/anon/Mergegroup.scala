@@ -12,8 +12,7 @@ trait Mergegroup extends StObject {
   
   var installation: js.UndefOr[NodeidString] = js.undefined
   
-  /** MergeGroup */
-  var merge_group: Baseref
+  var merge_group: Basesha
   
   var organization: js.UndefOr[Hooksurl] = js.undefined
   
@@ -23,7 +22,7 @@ trait Mergegroup extends StObject {
 }
 object Mergegroup {
   
-  inline def apply(merge_group: Baseref): Mergegroup = {
+  inline def apply(merge_group: Basesha): Mergegroup = {
     val __obj = js.Dynamic.literal(action = "checks_requested", merge_group = merge_group.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mergegroup]
   }
@@ -37,7 +36,7 @@ object Mergegroup {
     
     inline def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
     
-    inline def setMerge_group(value: Baseref): Self = StObject.set(x, "merge_group", value.asInstanceOf[js.Any])
+    inline def setMerge_group(value: Basesha): Self = StObject.set(x, "merge_group", value.asInstanceOf[js.Any])
     
     inline def setOrganization(value: Hooksurl): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

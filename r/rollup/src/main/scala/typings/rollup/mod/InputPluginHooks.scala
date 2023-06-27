@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Exclude<keyof rollup.rollup.FunctionPluginHooks, rollup.rollup.OutputPluginHooks> */
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.rollupStrings.shouldTransformCachedModule
+  - typings.rollup.rollupStrings.onLog
   - typings.rollup.rollupStrings.watchChange
   - typings.rollup.rollupStrings.closeWatcher
   - typings.rollup.rollupStrings.closeBundle
@@ -33,6 +34,8 @@ object InputPluginHooks {
   inline def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
   
   inline def moduleParsed: typings.rollup.rollupStrings.moduleParsed = "moduleParsed".asInstanceOf[typings.rollup.rollupStrings.moduleParsed]
+  
+  inline def onLog: typings.rollup.rollupStrings.onLog = "onLog".asInstanceOf[typings.rollup.rollupStrings.onLog]
   
   inline def options: typings.rollup.rollupStrings.options = "options".asInstanceOf[typings.rollup.rollupStrings.options]
   

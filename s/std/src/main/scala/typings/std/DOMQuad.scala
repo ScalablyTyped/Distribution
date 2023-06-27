@@ -4,20 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad) */
 trait DOMQuad extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad/getBounds) */
   /* standard dom */
   def getBounds(): DOMRect
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad/p1) */
   /* standard dom */
   val p1: DOMPoint
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad/p2) */
   /* standard dom */
   val p2: DOMPoint
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad/p3) */
   /* standard dom */
   val p3: DOMPoint
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMQuad/p4) */
   /* standard dom */
   val p4: DOMPoint
   

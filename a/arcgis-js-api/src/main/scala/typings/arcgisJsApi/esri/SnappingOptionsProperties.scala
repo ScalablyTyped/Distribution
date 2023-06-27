@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SnappingOptionsProperties extends StObject {
   
   /**
-    * Snapping distance for snapping in pixels.
-    *
-    * @default 5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#distance)
-    */
+  		 * Snapping distance for snapping in pixels.
+  		 *
+  		 * @default 5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#distance)
+  		 */
   var distance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Global configuration to turn snapping on or off.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#enabled)
-    */
+  		 * Global configuration to turn snapping on or off.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#enabled)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Global configuration option to turn feature snapping on or off.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#featureEnabled)
-    */
+  		 * Global configuration option to turn feature snapping on or off.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#featureEnabled)
+  		 */
   var featureEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * List of sources for feature snapping.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#featureSources)
-    */
+  		 * List of sources for feature snapping.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#featureSources)
+  		 */
   var featureSources: js.UndefOr[CollectionProperties[FeatureSnappingLayerSourceProperties]] = js.undefined
   
   /**
-    * Global configuration option to turn self snapping (within one feature while either drawing or reshaping) on or off.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#selfEnabled)
-    */
+  		 * Global configuration option to turn self snapping (within one feature while either drawing or reshaping) on or off.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html#selfEnabled)
+  		 */
   var selfEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SnappingOptionsProperties {

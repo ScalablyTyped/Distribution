@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Available only in secure contexts. */
 trait NavigatorLocks extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/locks) */
   /* standard dom */
   val locks: LockManager
 }

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebGL2RenderingContextOverloads extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferData) */
   /* standard dom */
   def bufferData(target: GLenum, size: GLsizeiptr, usage: GLenum): Unit = js.native
   /* standard dom */
@@ -31,9 +32,11 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcOffset: GLuint,
     length: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bufferSubData) */
   /* standard dom */
   def bufferSubData(target: GLenum, dstByteOffset: GLintptr, srcData: BufferSource): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexImage2D) */
   /* standard dom */
   def compressedTexImage2D(
     target: GLenum,
@@ -88,6 +91,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcLengthOverride: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compressedTexSubImage2D) */
   /* standard dom */
   def compressedTexSubImage2D(
     target: GLenum,
@@ -147,6 +151,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcLengthOverride: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/readPixels) */
   /* standard dom */
   def readPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, format: GLenum, `type`: GLenum): Unit = js.native
   def readPixels(
@@ -189,6 +194,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     `type`: GLenum,
     source: TexImageSource
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texImage2D) */
   /* standard dom */
   def texImage2D(
     target: GLenum,
@@ -259,6 +265,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     `type`: GLenum,
     source: TexImageSource
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texSubImage2D) */
   /* standard dom */
   def texSubImage2D(
     target: GLenum,
@@ -323,6 +330,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform1fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform1fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint): Unit = js.native
   def uniform1fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform1fv(location: WebGLUniformLocation, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -344,6 +352,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform1iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform1iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint): Unit = js.native
   def uniform1iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform1iv(location: WebGLUniformLocation, data: Int32List | js.Iterable[GLint]): Unit = js.native
@@ -365,6 +374,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform2fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform2fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint): Unit = js.native
   def uniform2fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform2fv(location: WebGLUniformLocation, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -386,6 +396,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform2iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform2iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint): Unit = js.native
   def uniform2iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform2iv(location: WebGLUniformLocation, data: Int32List | js.Iterable[GLint]): Unit = js.native
@@ -407,6 +418,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform3fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform3fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint): Unit = js.native
   def uniform3fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform3fv(location: WebGLUniformLocation, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -428,6 +440,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform3iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform3iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint): Unit = js.native
   def uniform3iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform3iv(location: WebGLUniformLocation, data: Int32List | js.Iterable[GLint]): Unit = js.native
@@ -449,6 +462,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform4fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform4fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint): Unit = js.native
   def uniform4fv(location: Null, data: Float32List | js.Iterable[GLfloat], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform4fv(location: WebGLUniformLocation, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -470,6 +484,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
   def uniform4iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform4iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint): Unit = js.native
   def uniform4iv(location: Null, data: Int32List | js.Iterable[GLint], srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform4iv(location: WebGLUniformLocation, data: Int32List | js.Iterable[GLint]): Unit = js.native
@@ -503,6 +518,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix2fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -543,6 +559,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix3fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -583,6 +600,7 @@ trait WebGL2RenderingContextOverloads extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix4fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native

@@ -37,7 +37,7 @@ import typings.sentryCore.typesTransportsMultiplexedMod.Matcher
 import typings.sentryInternalTracing.anon.PartialBrowserTracingOpti
 import typings.sentryInternalTracing.anon.PartialRequestInstrumenta
 import typings.sentryInternalTracing.typesBrowserRequestMod.RequestInstrumentationOptions
-import typings.sentryReplay.typesTypesMod.ReplayConfiguration
+import typings.sentryReplay.typesTypesReplayMod.ReplayConfiguration
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesClientMod.Client
 import typings.sentryTypes.typesEnvelopeMod.EventEnvelope
@@ -427,7 +427,7 @@ object mod {
   
   @JSImport("@sentry/browser", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.51.2" */ String = js.native
+  val SDK_VERSION: /* "7.56.0" */ String = js.native
   
   @JSImport("@sentry/browser", "Scope")
   @js.native

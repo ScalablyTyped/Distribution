@@ -16,33 +16,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelVariableRenderingFormat extends StObject {
   
   /**
-    * Whether or not the data is discrete or continuous.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
-    */
+  		 * Whether or not the data is discrete or continuous.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
+  		 */
   var continuity: discrete | continuous
   
   /**
-    * Whether or not the data has a value representing NoData.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
-    */
+  		 * Whether or not the data has a value representing NoData.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
+  		 */
   var hasNoData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The NoData value if there is one.
-    *
-    * @default 0.0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
-    */
+  		 * The NoData value if there is one.
+  		 *
+  		 * @default 0.0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
+  		 */
   var noData: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates how the data are encoded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
-    */
+  		 * Indicates how the data are encoded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VoxelVariable.html#renderingFormat)
+  		 */
   var `type`: Int8 | UInt8 | Int16 | UInt16 | Int32 | UInt32 | Float32
 }
 object VoxelVariableRenderingFormat {

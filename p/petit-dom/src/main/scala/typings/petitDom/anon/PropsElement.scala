@@ -44,6 +44,7 @@ import typings.std.NodeListOf
 import typings.std.ParentNode
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import typings.std.StylePropertyMapReadOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -212,6 +213,8 @@ trait PropsElement extends StObject {
   var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
   
   var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.undefined
+  
+  var computedStyleMap: js.UndefOr[js.Function0[StylePropertyMapReadOnly]] = js.undefined
   
   var contains: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
@@ -748,6 +751,10 @@ object PropsElement {
     inline def setCompareDocumentPosition(value: /* other */ Node => Double): Self = StObject.set(x, "compareDocumentPosition", js.Any.fromFunction1(value))
     
     inline def setCompareDocumentPositionUndefined: Self = StObject.set(x, "compareDocumentPosition", js.undefined)
+    
+    inline def setComputedStyleMap(value: () => StylePropertyMapReadOnly): Self = StObject.set(x, "computedStyleMap", js.Any.fromFunction0(value))
+    
+    inline def setComputedStyleMapUndefined: Self = StObject.set(x, "computedStyleMap", js.undefined)
     
     inline def setContains(value: () => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction0(value))
     

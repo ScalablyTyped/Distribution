@@ -1,7 +1,7 @@
 
 # Scala.js typings for floating-ui__core
 
-Typings are for version 1.2.6
+Typings are for version 1.3.1
 
 ## Library description:
 Positioning library for floating elements: tooltips, popovers, dropdowns, and more

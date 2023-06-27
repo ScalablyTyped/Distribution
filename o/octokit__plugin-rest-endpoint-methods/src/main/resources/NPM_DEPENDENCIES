@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/plugin-rest-endpoint-methods" : "7.1.0"
+      "@octokit/plugin-rest-endpoint-methods" : "7.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/plugin-rest-endpoint-methods" : "7.1.0"
+      "@octokit/plugin-rest-endpoint-methods" : "7.2.3"
     }
   ],
   "compile-devDependencies" : [

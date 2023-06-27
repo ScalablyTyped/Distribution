@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpacityExpressionInfo extends StObject {
   
   /**
-    * The SQL expressions used for querying the histogram using the percentage the predominant value comprises among of a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
-    */
+  		 * The SQL expressions used for querying the histogram using the percentage the predominant value comprises among of a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
+  		 */
   var histogramQuery: SQLExpressionInfo
   
   /**
-    * The SQL expressions used for querying the percentage the predominant value comprises among of a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
-    */
+  		 * The SQL expressions used for querying the percentage the predominant value comprises among of a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
+  		 */
   var statisticsQuery: SQLExpressionInfo
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#OpacityExpressionInfo)
+  		 */
   var valueExpression: String
 }
 object OpacityExpressionInfo {

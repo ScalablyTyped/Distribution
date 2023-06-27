@@ -38,7 +38,7 @@ trait CommentReply
   val authorName: String = js.native
   
   /**
-    * Gets or sets the comment reply's content. The string is plain text.
+    * Specifies the comment reply's content. The string is plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -46,7 +46,7 @@ trait CommentReply
   var content: String = js.native
   
   /**
-    * Gets or sets the commentReply's content range.
+    * Specifies the commentReply's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]

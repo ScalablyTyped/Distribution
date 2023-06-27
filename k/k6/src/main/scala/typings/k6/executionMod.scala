@@ -1,5 +1,6 @@
 package typings.k6
 
+import typings.k6.anon.Metadata
 import typings.k6.optionsMod.Options
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -190,8 +191,14 @@ object executionMod {
       def iterationInScenario: Double = js.native
       inline def iterationInScenario_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iterationInScenario")(x.asInstanceOf[js.Any])
       
+      @JSImport("k6/execution", "default.vu.metrics")
+      @js.native
+      def metrics: Metadata = js.native
+      inline def metrics_=(x: Metadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metrics")(x.asInstanceOf[js.Any])
+      
       /**
-        * 	Hash to set or get VU tags.
+        * 	Map to set or get VU tags.
+        * 	@deprecated should use `metrics.tags` instead of just `tags`
         */
       @JSImport("k6/execution", "default.vu.tags")
       @js.native

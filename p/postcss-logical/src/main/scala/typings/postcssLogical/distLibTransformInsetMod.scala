@@ -11,5 +11,5 @@ object distLibTransformInsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformInset(): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformInset")().asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformInset(): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformInset")().asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

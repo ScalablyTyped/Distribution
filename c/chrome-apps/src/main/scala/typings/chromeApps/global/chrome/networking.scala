@@ -38,7 +38,7 @@ object networking {
   // NETWORKING CONFIG //
   ///////////////////////
   /**
-    * @requires(CrOS) Chrome OS only.
+    * @requires Chrome OS only.
     * @requires Permissions: 'networking.config'
     * @description
     * Use the *networking.config* API to authenticate to captive portals.
@@ -151,14 +151,14 @@ object networking {
   // Open Network Configuration (ONC) //
   //////////////////////////////////////
   /**
-    * @requires(CrOS kiosk mode) This API is available in Chrome OS kiosk sessions.
+    * @requires CrOS kiosk mode -This API is available in Chrome OS kiosk sessions.
     * @requires Permissions: 'networking.onc'
     * @since Chrome 59
     * @description
     * The chrome.networking.onc API is used for configuring network connections
     * (Cellular, Ethernet, VPN, WiFi or WiMAX).
     * Network connection configurations are specified following
-    * @see[Open Network Configuration (ONC) specification.]{@link https://chromium.googlesource.com/chromium/src/+/master/components/onc/docs/onc_spec.md}
+    * @see https://chromium.googlesource.com/chromium/src/+/master/components/onc/docs/onc_spec.md
     * @description
     * **NOTE**
     * Most interface properties and type values use UpperCamelCase to match

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PredominantCategoriesResultPredominantCategoryInfos extends StObject {
   
   /**
-    * The number of features belonging to the predominant category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
-    */
+  		 * The number of features belonging to the predominant category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
+  		 */
   var count: Double
   
   /**
-    * The label describing the predominant category, or field name.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label describing the predominant category, or field name.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The value or category referenced in a predominance visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
-    */
+  		 * The value or category referenced in a predominance visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
+  		 */
   var value: String | Double
 }
 object PredominantCategoriesResultPredominantCategoryInfos {

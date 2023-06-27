@@ -38,7 +38,7 @@ trait Comment
   val authorName: String = js.native
   
   /**
-    * Gets or sets the comment's content as plain text.
+    * Specifies the comment's content as plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -46,7 +46,7 @@ trait Comment
   var content: String = js.native
   
   /**
-    * Gets or sets the comment's content range.
+    * Specifies the comment's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -119,7 +119,7 @@ trait Comment
   def reply(replyText: String): CommentReply = js.native
   
   /**
-    * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
+    * Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
     * [Api set: WordApi 1.4]

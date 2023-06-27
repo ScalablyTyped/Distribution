@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PullrequestSelf extends StObject {
   
+  /** Link */
   var html: HrefString
   
+  /** Link */
   var pull_request: HrefString
   
+  /** Link */
   var self: HrefString
 }
 object PullrequestSelf {

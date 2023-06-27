@@ -1,5 +1,9 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.EuropeWest
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.SoutheastAsia_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.UsEast
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.UsWest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +18,12 @@ trait Clientip extends StObject {
   
   /** @description Display name for this codespace */
   var display_name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @description The geographic area for this codespace. If not specified, the value is assigned by IP. This property replaces `location`, which is being deprecated.
+    * @enum {string}
+    */
+  var geo: js.UndefOr[EuropeWest | SoutheastAsia_ | UsEast | UsWest] = js.undefined
   
   /** @description Time in minutes before codespace stops from inactivity */
   var idle_timeout_minutes: js.UndefOr[Double] = js.undefined
@@ -57,6 +67,10 @@ object Clientip {
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    
+    inline def setGeo(value: EuropeWest | SoutheastAsia_ | UsEast | UsWest): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+    
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     inline def setIdle_timeout_minutes(value: Double): Self = StObject.set(x, "idle_timeout_minutes", value.asInstanceOf[js.Any])
     

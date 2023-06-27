@@ -59,7 +59,7 @@ object sapUiModelFilterOperatorMod {
   object FilterOperator extends StObject {
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Used to filter a list based on filter criteria that are defined in a nested filter for dependent subitems.
       * `All` returns a list of those items for which **all** dependent subitems match the filter criteria of
@@ -75,7 +75,7 @@ object sapUiModelFilterOperatorMod {
          with FilterOperator
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Used to filter a list based on filter criteria that are defined in a nested filter for dependent subitems.
       * `Any` returns a list of those items for which **at least one** dependent subitem matches the filter criteria
@@ -166,7 +166,7 @@ object sapUiModelFilterOperatorMod {
          with FilterOperator
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * FilterOperator "Not Between"
       *
@@ -192,7 +192,7 @@ object sapUiModelFilterOperatorMod {
          with FilterOperator
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * FilterOperator not contains
       */
@@ -202,7 +202,7 @@ object sapUiModelFilterOperatorMod {
          with FilterOperator
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * FilterOperator not ends with
       */
@@ -212,7 +212,7 @@ object sapUiModelFilterOperatorMod {
          with FilterOperator
     
     /**
-      * @SINCE 1.58.0
+      * @since 1.58.0
       *
       * FilterOperator not starts with
       */

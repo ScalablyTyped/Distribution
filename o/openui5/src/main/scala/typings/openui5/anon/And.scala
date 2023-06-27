@@ -29,8 +29,8 @@ trait And extends StObject {
   var comparator: js.UndefOr[js.Function2[/* p1 */ Any, /* p2 */ Any, Double]] = js.undefined
   
   /**
-    * A filter instance which will be used as the condition for lambda operators ({@link sap.ui.model.FilterOperator.Any
-    * "Any"} and {@link sap.ui.model.FilterOperator.All "All"})
+    * A filter instance which will be used as the condition for lambda operators ({@link sap.ui.model.FilterOperator.Any "Any" }
+    * and {@link sap.ui.model.FilterOperator.All "All"})
     */
   var condition: js.UndefOr[typings.openui5.sapUiModelFilterMod.Filter] = js.undefined
   
@@ -64,14 +64,13 @@ trait And extends StObject {
   var value1: js.UndefOr[Any] = js.undefined
   
   /**
-    * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT
-    * "BT" between} and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
+    * Second value to use with the given filter operator, used only for the {@link sap.ui.model.FilterOperator.BT "BT" between }
+    * and {@link sap.ui.model.FilterOperator.NB "NB" not between} filter operators
     */
   var value2: js.UndefOr[Any] = js.undefined
   
   /**
-    * The variable name used in lambda operators ({@link sap.ui.model.FilterOperator.Any "Any"} and {@link
-    * sap.ui.model.FilterOperator.All "All"})
+    * The variable name used in lambda operators ({@link sap.ui.model.FilterOperator.Any "Any"} and {@link sap.ui.model.FilterOperator.All "All"})
     */
   var variable: js.UndefOr[String] = js.undefined
 }

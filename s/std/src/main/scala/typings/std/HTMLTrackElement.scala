@@ -8,12 +8,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The HTMLTrackElement */
+/**
+  * The HTMLTrackElement
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement)
+  */
 @js.native
 trait HTMLTrackElement
   extends StObject
      with HTMLElement {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/default) */
   /* standard dom */
   var default: scala.Boolean = js.native
   
@@ -40,12 +45,15 @@ trait HTMLTrackElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/kind) */
   /* standard dom */
   var kind: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/label) */
   /* standard dom */
   var label: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/readyState) */
   /* standard dom */
   val readyState: Double = js.native
   
@@ -60,13 +68,19 @@ trait HTMLTrackElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/src) */
   /* standard dom */
   var src: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/srclang) */
   /* standard dom */
   var srclang: java.lang.String = js.native
   
-  /** Returns the TextTrack object corresponding to the text track of the track element. */
+  /**
+    * Returns the TextTrack object corresponding to the text track of the track element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/track)
+    */
   /* standard dom */
   val track: TextTrack = js.native
 }

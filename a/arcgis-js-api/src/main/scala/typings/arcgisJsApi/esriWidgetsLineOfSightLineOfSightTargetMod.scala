@@ -11,10 +11,10 @@ object esriWidgetsLineOfSightLineOfSightTargetMod {
   @JSImport("esri/widgets/LineOfSight/LineOfSightTarget", JSImport.Namespace)
   @js.native
   /**
-    * This class represents a target point for a [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) analysis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html)
-    */
+  		 * This class represents a target point for a [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) analysis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightTarget.html)
+  		 */
   open class ^ ()
     extends StObject
        with LineOfSightTarget {

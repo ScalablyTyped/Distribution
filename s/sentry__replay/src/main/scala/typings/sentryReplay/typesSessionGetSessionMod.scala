@@ -1,8 +1,8 @@
 package typings.sentryReplay
 
 import typings.sentryReplay.anon.Session
-import typings.sentryReplay.typesTypesMod.SessionOptions
-import typings.sentryReplay.typesTypesMod.Timeouts
+import typings.sentryReplay.typesTypesReplayMod.SessionOptions
+import typings.sentryReplay.typesTypesReplayMod.Timeouts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ object typesSessionGetSessionMod {
     /**
       * The current session (e.g. if stickySession is off)
       */
-    var currentSession: js.UndefOr[typings.sentryReplay.typesTypesMod.Session] = js.undefined
+    var currentSession: js.UndefOr[typings.sentryReplay.typesTypesReplayMod.Session] = js.undefined
     
     var timeouts: Timeouts
   }
@@ -36,7 +36,7 @@ object typesSessionGetSessionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GetSessionParams] (val x: Self) extends AnyVal {
       
-      inline def setCurrentSession(value: typings.sentryReplay.typesTypesMod.Session): Self = StObject.set(x, "currentSession", value.asInstanceOf[js.Any])
+      inline def setCurrentSession(value: typings.sentryReplay.typesTypesReplayMod.Session): Self = StObject.set(x, "currentSession", value.asInstanceOf[js.Any])
       
       inline def setCurrentSessionUndefined: Self = StObject.set(x, "currentSession", js.undefined)
       

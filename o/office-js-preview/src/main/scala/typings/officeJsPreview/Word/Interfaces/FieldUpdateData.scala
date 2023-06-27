@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldUpdateData extends StObject {
   
   /**
-    * Gets or sets the field's code instruction.
+    * Specifies the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -16,20 +16,18 @@ trait FieldUpdateData extends StObject {
   var code: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var data: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+    * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
   
@@ -42,7 +40,7 @@ trait FieldUpdateData extends StObject {
   var result: js.UndefOr[RangeUpdateData] = js.undefined
   
   /**
-    * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

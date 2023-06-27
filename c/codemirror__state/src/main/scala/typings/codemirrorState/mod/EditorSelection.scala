@@ -107,6 +107,8 @@ object EditorSelection {
   /* static member */
   inline def range(anchor: Double, head: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
   inline def range(anchor: Double, head: Double, goalColumn: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
+  inline def range(anchor: Double, head: Double, goalColumn: Double, bidiLevel: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
+  inline def range(anchor: Double, head: Double, goalColumn: Unit, bidiLevel: Double): SelectionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any], goalColumn.asInstanceOf[js.Any], bidiLevel.asInstanceOf[js.Any])).asInstanceOf[SelectionRange]
   
   /**
     Create a selection holding a single range.

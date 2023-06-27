@@ -11,10 +11,10 @@ object esriSymbolsLineStyleMarker3DMod {
   @JSImport("esri/symbols/LineStyleMarker3D", JSImport.Namespace)
   @js.native
   /**
-    * LineStyleMarker3D is used for rendering a simple marker graphic on a [LineSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html)
-    */
+  		 * LineStyleMarker3D is used for rendering a simple marker graphic on a [LineSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineStyleMarker3D.html)
+  		 */
   open class ^ ()
     extends StObject
        with LineStyleMarker3D {

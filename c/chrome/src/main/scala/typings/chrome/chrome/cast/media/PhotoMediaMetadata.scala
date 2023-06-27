@@ -25,7 +25,7 @@ trait PhotoMediaMetadata extends StObject {
   
   var title: String
   
-  /** @deprecated. Use metadataType instead. */
+  /** @deprecated Use metadataType instead. */
   var `type`: MetadataType
   
   var width: Double

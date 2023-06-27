@@ -28,8 +28,7 @@ trait FieldCollection
     * Gets the Field object collection including the specified types of fields.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param types Required. An array of field types.
     */

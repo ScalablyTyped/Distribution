@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurementAnalysisResult extends StObject {
   
   /**
-    * Measured area quantity.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
-    */
+  		 * Measured area quantity.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
+  		 */
   var area: Area
   
   /**
-    * Describes the mode in which the measurement was taken.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
-    */
+  		 * Describes the mode in which the measurement was taken.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
+  		 */
   var mode: euclidean | geodesic
   
   /**
-    * Measured circumference of the measured area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
-    */
+  		 * Measured circumference of the measured area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-AreaMeasurementAnalysisView3D.html#AreaMeasurementAnalysisResult)
+  		 */
   var pathLength: Length
 }
 object AreaMeasurementAnalysisResult {

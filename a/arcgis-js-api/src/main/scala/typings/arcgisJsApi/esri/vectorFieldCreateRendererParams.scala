@@ -23,45 +23,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vectorFieldCreateRendererParams extends StObject {
   
   /**
-    * Defines the flow direction of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * Defines the flow direction of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var flowRepresentation: js.UndefOr[`flow-from` | `flow-to`] = js.undefined
   
   /**
-    * The input layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * The input layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var layer: ImageryLayer | ImageryTileLayer
   
   /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * Specifies the function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunction] = js.undefined
+  
+  /**
+  		 * Deprecated since 4.27.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var renderingRule: js.UndefOr[RasterFunction] = js.undefined
   
   /**
-    * Defines the origin and direction of rotation depending on how the angle of rotation was measured.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * Defines the origin and direction of rotation depending on how the angle of rotation was measured.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var rotationType: js.UndefOr[geographic | arithmetic] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * The predefined symbol styles used to represent the vector flow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
-    */
+  		 * The predefined symbol styles used to represent the vector flow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#createRenderer)
+  		 */
   var style: js.UndefOr[
     `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb`
   ] = js.undefined
@@ -81,6 +88,10 @@ object vectorFieldCreateRendererParams {
     inline def setFlowRepresentationUndefined: Self = StObject.set(x, "flowRepresentation", js.undefined)
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunction(value: RasterFunction): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunction): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

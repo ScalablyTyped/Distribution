@@ -8,11 +8,11 @@ trait ParametersPathProtectionruleid extends StObject {
   
   var parameters: PathProtectionruleid
   
-  var responses: `200Content242`
+  var responses: `200Content285`
 }
 object ParametersPathProtectionruleid {
   
-  inline def apply(parameters: PathProtectionruleid, responses: `200Content242`): ParametersPathProtectionruleid = {
+  inline def apply(parameters: PathProtectionruleid, responses: `200Content285`): ParametersPathProtectionruleid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathProtectionruleid]
   }
@@ -22,6 +22,6 @@ object ParametersPathProtectionruleid {
     
     inline def setParameters(value: PathProtectionruleid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content242`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content285`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

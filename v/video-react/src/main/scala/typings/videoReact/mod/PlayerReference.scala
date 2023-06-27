@@ -24,17 +24,29 @@ trait PlayerReference
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
-  /** Resets the audio or video object and loads a new media resource. */
+  /**
+    * Resets the audio or video object and loads a new media resource.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/load)
+    */
   /* standard dom */
   /* InferMemberOverrides */
   override def load(): Unit = js.native
   
-  /** Pauses the current playback and sets paused to TRUE. This can be used to test whether the media is playing or paused. You can also use the pause or play events to tell whether the media is playing or not. */
+  /**
+    * Pauses the current playback and sets paused to TRUE. This can be used to test whether the media is playing or paused. You can also use the pause or play events to tell whether the media is playing or not.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause)
+    */
   /* standard dom */
   /* InferMemberOverrides */
   override def pause(): Unit = js.native
   
-  /** Loads and starts playback of a media resource. */
+  /**
+    * Loads and starts playback of a media resource.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play)
+    */
   /* standard dom */
   /* InferMemberOverrides */
   override def play(): js.Promise[Unit] & Unit = js.native

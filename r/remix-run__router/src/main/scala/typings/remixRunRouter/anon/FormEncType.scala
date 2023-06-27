@@ -15,14 +15,26 @@ trait FormEncType extends StObject {
   
   var formMethod: Unit
   
+  var json: Unit
+  
   var location: Unit
   
   var state: idle
+  
+  var text: Unit
 }
 object FormEncType {
   
-  inline def apply(formAction: Unit, formData: Unit, formEncType: Unit, formMethod: Unit, location: Unit): FormEncType = {
-    val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], state = "idle")
+  inline def apply(
+    formAction: Unit,
+    formData: Unit,
+    formEncType: Unit,
+    formMethod: Unit,
+    json: Unit,
+    location: Unit,
+    text: Unit
+  ): FormEncType = {
+    val __obj = js.Dynamic.literal(formAction = formAction.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], formEncType = formEncType.asInstanceOf[js.Any], formMethod = formMethod.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], state = "idle", text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormEncType]
   }
   
@@ -37,8 +49,12 @@ object FormEncType {
     
     inline def setFormMethod(value: Unit): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
     
+    inline def setJson(value: Unit): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    
     inline def setLocation(value: Unit): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setState(value: idle): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: Unit): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

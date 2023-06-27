@@ -1,8 +1,8 @@
 package typings.adraffyEnsNormalize
 
 import typings.adraffyEnsNormalize.anon.Nf
-import typings.adraffyEnsNormalize.distMod.Label
-import typings.adraffyEnsNormalize.distMod.Token
+import typings.adraffyEnsNormalize.mod.Label
+import typings.adraffyEnsNormalize.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

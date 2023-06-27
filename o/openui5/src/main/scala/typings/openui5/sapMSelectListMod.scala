@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Item
-import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.SelectListKeyboardNavigationMode
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -134,7 +132,7 @@ object sapMSelectListMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -158,7 +156,7 @@ object sapMSelectListMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.4
+      * @since 1.32.4
       *
       * Attaches event handler `fnFunction` to the {@link #event:itemPress itemPress} event of this `sap.m.SelectList`.
       *
@@ -173,20 +171,20 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit]
     ): this.type = js.native
     def attachItemPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectList` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.32.4
+      * @since 1.32.4
       *
       * Attaches event handler `fnFunction` to the {@link #event:itemPress itemPress} event of this `sap.m.SelectList`.
       *
@@ -206,7 +204,7 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit]
     ): this.type = js.native
     def attachItemPress(
       /**
@@ -217,7 +215,7 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectList` itself
       */
@@ -242,13 +240,13 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectList` itself
       */
@@ -277,7 +275,7 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -288,7 +286,7 @@ object sapMSelectListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SelectList` itself
       */
@@ -309,7 +307,7 @@ object sapMSelectListMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Clear the selection.
       */
@@ -323,7 +321,7 @@ object sapMSelectListMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.32.4
+      * @since 1.32.4
       *
       * Detaches event handler `fnFunction` from the {@link #event:itemPress itemPress} event of this `sap.m.SelectList`.
       *
@@ -335,13 +333,13 @@ object sapMSelectListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit]
     ): this.type = js.native
     def detachItemPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListItemPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -360,13 +358,13 @@ object sapMSelectListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectListSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -374,42 +372,45 @@ object sapMSelectListMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.4
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.32.4
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemPress itemPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemPress(): this.type = js.native
-    def fireItemPress(/**
+    def fireItemPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Item): this.type = js.native
+    mParameters: SelectList$ItemPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: SelectList$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Retrieves the default selected item from the aggregation named `items`.
       */
@@ -446,7 +447,7 @@ object sapMSelectListMod {
     def getFirstItem(): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Gets current value of property {@link #getHideDisabledItems hideDisabledItems}.
       *
@@ -488,7 +489,7 @@ object sapMSelectListMod {
     def getItems(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Gets current value of property {@link #getKeyboardNavigationMode keyboardNavigationMode}.
       *
@@ -553,11 +554,11 @@ object sapMSelectListMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @SINCE 1.32.3
+      * @since 1.32.3
       *
       * Gets current value of property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * Default value is `false`.
@@ -607,7 +608,7 @@ object sapMSelectListMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -624,7 +625,7 @@ object sapMSelectListMod {
     def removeAllItems(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -683,7 +684,7 @@ object sapMSelectListMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Sets a new value for property {@link #getHideDisabledItems hideDisabledItems}.
       *
@@ -702,7 +703,7 @@ object sapMSelectListMod {
     bHideDisabledItems: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Sets a new value for property {@link #getKeyboardNavigationMode keyboardNavigationMode}.
       *
@@ -797,7 +798,7 @@ object sapMSelectListMod {
     sKey: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates and synchronizes `selectedItem` association, `selectedItemId` and `selectedKey` properties.
       */
@@ -806,11 +807,11 @@ object sapMSelectListMod {
     def setSelection(vItem: typings.openui5.sapUiCoreItemMod.default): Unit = js.native
     
     /**
-      * @SINCE 1.32.3
+      * @since 1.32.3
       *
       * Sets a new value for property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -850,12 +851,66 @@ object sapMSelectListMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait SelectList$ItemPressEventParameters extends StObject {
+    
+    /**
+      * The pressed item.
+      */
+    var item: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object SelectList$ItemPressEventParameters {
+    
+    inline def apply(): SelectList$ItemPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectList$ItemPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectList$ItemPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait SelectList$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object SelectList$SelectionChangeEventParameters {
+    
+    inline def apply(): SelectList$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SelectList$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectList$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type SelectListItemPressEvent = typings.openui5.sapUiBaseEventMod.default[SelectList$ItemPressEventParameters]
+  
+  type SelectListItemPressEventParameters = SelectList$ItemPressEventParameters
+  
+  type SelectListSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[SelectList$SelectionChangeEventParameters]
+  
+  type SelectListSelectionChangeEventParameters = SelectList$SelectionChangeEventParameters
+  
   trait SelectListSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
@@ -869,7 +924,7 @@ object sapMSelectListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.91
+      * @since 1.91
       *
       * Determines whether the disabled items are hidden from the DOM structure.
       */
@@ -878,11 +933,16 @@ object sapMSelectListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.4
+      * @since 1.32.4
       *
       * This event is fired when an item is pressed.
       */
-    var itemPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectList$ItemPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items contained within this control.
@@ -892,7 +952,7 @@ object sapMSelectListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Defines the keyboard navigation mode.
       *
@@ -933,12 +993,17 @@ object sapMSelectListMod {
       * **Note: ** The selection can be changed by pressing a non-selected item or via keyboard and after the
       * enter or space key is pressed.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectList$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.32.3
+      * @since 1.32.3
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       */
     var showSecondaryValues: js.UndefOr[
@@ -976,7 +1041,9 @@ object sapMSelectListMod {
       
       inline def setHideDisabledItemsUndefined: Self = StObject.set(x, "hideDisabledItems", js.undefined)
       
-      inline def setItemPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemPress", js.Any.fromFunction1(value))
+      inline def setItemPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectList$ItemPressEventParameters] => Unit
+      ): Self = StObject.set(x, "itemPress", js.Any.fromFunction1(value))
       
       inline def setItemPressUndefined: Self = StObject.set(x, "itemPress", js.undefined)
       
@@ -1010,7 +1077,9 @@ object sapMSelectListMod {
       
       inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SelectList$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

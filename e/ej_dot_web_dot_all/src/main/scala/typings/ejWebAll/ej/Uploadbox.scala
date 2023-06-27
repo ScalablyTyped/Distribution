@@ -645,17 +645,17 @@ object Uploadbox {
   trait Model extends StObject {
     
     /** Enables the file drag and drop support to the Uploadbox control.
-      * @Default {false}
+      * @default {false}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Uploadbox supports both synchronous and asynchronous upload. This can be achieved by using the asyncUpload property.
-      * @Default {true}
+      * @default {true}
       */
     var asyncUpload: js.UndefOr[Boolean] = js.undefined
     
     /** Uploadbox supports auto uploading of files after the file selection is done.
-      * @Default {false}
+      * @default {false}
       */
     var autoUpload: js.UndefOr[Boolean] = js.undefined
     
@@ -668,7 +668,7 @@ object Uploadbox {
     var begin: js.UndefOr[js.Function1[/* e */ BeginEventArgs, Unit]] = js.undefined
     
     /** Sets the text for each action button.
-      * @Default {{browse: Browse, upload: Upload, cancel: Cancel, close: Close}}
+      * @default {{browse: Browse, upload: Upload, cancel: Cancel, close: Close}}
       */
     var buttonText: js.UndefOr[ButtonText] = js.undefined
     
@@ -689,7 +689,7 @@ object Uploadbox {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the custom file details in the dialog popup on initialization.
-      * @Default {{ title:true, name:true, size:true, status:true, action:true}}
+      * @default {{ title:true, name:true, size:true, status:true, action:true}}
       */
     var customFileDetails: js.UndefOr[CustomFileDetails] = js.undefined
     
@@ -698,42 +698,42 @@ object Uploadbox {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the actions for dialog popup while initialization.
-      * @Default {{ modal:false, closeOnComplete:false, content:null, drag:true}}
+      * @default {{ modal:false, closeOnComplete:false, content:null, drag:true}}
       */
     var dialogAction: js.UndefOr[DialogAction] = js.undefined
     
     /** Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the left position value. Y: Dialog sets the top position value.
-      * @Default {null}
+      * @default {null}
       */
     var dialogPosition: js.UndefOr[Any] = js.undefined
     
     /** Property for applying the text to the Dialog title and content headers.
-      * @Default {{ title: Upload Box, name: Name, size: Size, status: Status}}
+      * @default {{ title: Upload Box, name: Name, size: Size, status: Status}}
       */
     var dialogText: js.UndefOr[DialogText] = js.undefined
     
     /** Specifies the dropAreaHeight when the drag and drop support is enabled in the Uploadbox control.
-      * @Default {100%}
+      * @default {100%}
       */
     var dropAreaHeight: js.UndefOr[Double | String] = js.undefined
     
     /** The dropAreaText is displayed when the drag and drop support is enabled in the Uploadbox control.
-      * @Default {Drop files or click to upload}
+      * @default {Drop files or click to upload}
       */
     var dropAreaText: js.UndefOr[String] = js.undefined
     
     /** Specifies the dropAreaWidth when the drag and drop support is enabled in the Uploadbox control.
-      * @Default {100%}
+      * @default {100%}
       */
     var dropAreaWidth: js.UndefOr[Double | String] = js.undefined
     
     /** Sets the right-to-left direction property for the Uploadbox control.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Based on the property value, Uploadbox is enabled or disabled.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -754,17 +754,17 @@ object Uploadbox {
     var fileSelect: js.UndefOr[js.Function1[/* e */ FileSelectEventArgs, Unit]] = js.undefined
     
     /** Sets the maximum size limit for uploading the file. This is mentioned in the number format.
-      * @Default {31457280}
+      * @default {31457280}
       */
     var fileSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the browse button.
-      * @Default {35px}
+      * @default {35px}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to uploadbox control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
@@ -773,17 +773,17 @@ object Uploadbox {
     var inProgress: js.UndefOr[js.Function1[/* e */ InProgressEventArgs, Unit]] = js.undefined
     
     /** Configures the culture data and sets the culture to the Uploadbox.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Enables multiple file selection for upload.
-      * @Default {true}
+      * @default {true}
       */
     var multipleFilesSelection: js.UndefOr[Boolean] = js.undefined
     
     /** You can push the file to the Uploadbox in the client-side of the XHR supported browsers alone.
-      * @Default {null}
+      * @default {null}
       */
     var pushFile: js.UndefOr[Any] = js.undefined
     
@@ -800,17 +800,17 @@ object Uploadbox {
     var saveUrl: js.UndefOr[String] = js.undefined
     
     /** Enables the browse button support to the Uploadbox control.
-      * @Default {true}
+      * @default {true}
       */
     var showBrowseButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
-      * @Default {true}
+      * @default {true}
       */
     var showFileDetails: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
-      * @Default {true}
+      * @default {true}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
@@ -823,7 +823,7 @@ object Uploadbox {
     var uploadName: js.UndefOr[String] = js.undefined
     
     /** Sets the width of the browse button.
-      * @Default {100px}
+      * @default {100px}
       */
     var width: js.UndefOr[String] = js.undefined
   }

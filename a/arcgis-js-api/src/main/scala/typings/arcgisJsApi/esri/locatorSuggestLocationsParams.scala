@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait locatorSuggestLocationsParams extends StObject {
   
   /**
-    * A place or address type which can be used to filter suggest results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
-    */
+  		 * A place or address type which can be used to filter suggest results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
+  		 */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Defines a normalized location point that is used to sort geocoding candidates based upon their proximity to the given location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
-    */
+  		 * Defines a normalized location point that is used to sort geocoding candidates based upon their proximity to the given location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
+  		 */
   var location: Point
   
   /**
-    * The input text entered by a user which is used by the suggest operation to generate a list of possible matches.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
-    */
+  		 * The input text entered by a user which is used by the suggest operation to generate a list of possible matches.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#suggestLocations)
+  		 */
   var text: String
 }
 object locatorSuggestLocationsParams {

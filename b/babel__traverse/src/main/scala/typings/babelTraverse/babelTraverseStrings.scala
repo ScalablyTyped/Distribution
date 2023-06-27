@@ -93,6 +93,10 @@ object babelTraverseStrings {
   inline def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
   
   @js.native
+  sealed trait BindingIdentifier extends StObject
+  inline def BindingIdentifier: BindingIdentifier = "BindingIdentifier".asInstanceOf[BindingIdentifier]
+  
+  @js.native
   sealed trait Block
     extends StObject
        with NodeType
@@ -103,6 +107,10 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def BlockParent: BlockParent = "BlockParent".asInstanceOf[BlockParent]
+  
+  @js.native
+  sealed trait BlockScoped extends StObject
+  inline def BlockScoped: BlockScoped = "BlockScoped".asInstanceOf[BlockScoped]
   
   @js.native
   sealed trait BlockStatement
@@ -423,6 +431,10 @@ object babelTraverseStrings {
   inline def EnumSymbolBody: EnumSymbolBody = "EnumSymbolBody".asInstanceOf[EnumSymbolBody]
   
   @js.native
+  sealed trait ExistentialTypeParam extends StObject
+  inline def ExistentialTypeParam: ExistentialTypeParam = "ExistentialTypeParam".asInstanceOf[ExistentialTypeParam]
+  
+  @js.native
   sealed trait ExistsTypeAnnotation
     extends StObject
        with NodeType
@@ -531,6 +543,10 @@ object babelTraverseStrings {
   inline def For: For = "For".asInstanceOf[For]
   
   @js.native
+  sealed trait ForAwaitStatement extends StObject
+  inline def ForAwaitStatement: ForAwaitStatement = "ForAwaitStatement".asInstanceOf[ForAwaitStatement]
+  
+  @js.native
   sealed trait ForInStatement
     extends StObject
        with NodeType
@@ -589,6 +605,10 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def FunctionTypeParam: FunctionTypeParam = "FunctionTypeParam".asInstanceOf[FunctionTypeParam]
+  
+  @js.native
+  sealed trait Generated extends StObject
+  inline def Generated: Generated = "Generated".asInstanceOf[Generated]
   
   @js.native
   sealed trait GenericTypeAnnotation
@@ -921,6 +941,10 @@ object babelTraverseStrings {
   inline def NumericLiteral: NumericLiteral = "NumericLiteral".asInstanceOf[NumericLiteral]
   
   @js.native
+  sealed trait NumericLiteralTypeAnnotation extends StObject
+  inline def NumericLiteralTypeAnnotation: NumericLiteralTypeAnnotation = "NumericLiteralTypeAnnotation".asInstanceOf[NumericLiteralTypeAnnotation]
+  
+  @js.native
   sealed trait ObjectExpression
     extends StObject
        with NodeType
@@ -1077,6 +1101,10 @@ object babelTraverseStrings {
   inline def Property: Property = "Property".asInstanceOf[Property]
   
   @js.native
+  sealed trait Pure extends StObject
+  inline def Pure: Pure = "Pure".asInstanceOf[Pure]
+  
+  @js.native
   sealed trait Pureish
     extends StObject
        with NodeType
@@ -1095,6 +1123,18 @@ object babelTraverseStrings {
   inline def RecordExpression: RecordExpression = "RecordExpression".asInstanceOf[RecordExpression]
   
   @js.native
+  sealed trait Referenced extends StObject
+  inline def Referenced: Referenced = "Referenced".asInstanceOf[Referenced]
+  
+  @js.native
+  sealed trait ReferencedIdentifier extends StObject
+  inline def ReferencedIdentifier: ReferencedIdentifier = "ReferencedIdentifier".asInstanceOf[ReferencedIdentifier]
+  
+  @js.native
+  sealed trait ReferencedMemberExpression extends StObject
+  inline def ReferencedMemberExpression: ReferencedMemberExpression = "ReferencedMemberExpression".asInstanceOf[ReferencedMemberExpression]
+  
+  @js.native
   sealed trait RegExpLiteral
     extends StObject
        with NodeType
@@ -1105,6 +1145,10 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
+  
+  @js.native
+  sealed trait RestProperty extends StObject
+  inline def RestProperty: RestProperty = "RestProperty".asInstanceOf[RestProperty]
   
   @js.native
   sealed trait ReturnStatement
@@ -1119,6 +1163,10 @@ object babelTraverseStrings {
   inline def Scopable: Scopable = "Scopable".asInstanceOf[Scopable]
   
   @js.native
+  sealed trait Scope extends StObject
+  inline def Scope: Scope = "Scope".asInstanceOf[Scope]
+  
+  @js.native
   sealed trait SequenceExpression
     extends StObject
        with NodeType
@@ -1129,6 +1177,10 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
+  
+  @js.native
+  sealed trait SpreadProperty extends StObject
+  inline def SpreadProperty: SpreadProperty = "SpreadProperty".asInstanceOf[SpreadProperty]
   
   @js.native
   sealed trait Standardized
@@ -1743,6 +1795,10 @@ object babelTraverseStrings {
   inline def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
   
   @js.native
+  sealed trait User extends StObject
+  inline def User: User = "User".asInstanceOf[User]
+  
+  @js.native
   sealed trait UserWhitespacable
     extends StObject
        with NodeType
@@ -1753,6 +1809,10 @@ object babelTraverseStrings {
     extends StObject
        with NodeType
   inline def V8IntrinsicIdentifier: V8IntrinsicIdentifier = "V8IntrinsicIdentifier".asInstanceOf[V8IntrinsicIdentifier]
+  
+  @js.native
+  sealed trait Var extends StObject
+  inline def Var: Var = "Var".asInstanceOf[Var]
   
   @js.native
   sealed trait VariableDeclaration
@@ -1809,6 +1869,14 @@ object babelTraverseStrings {
   inline def const: const = "const".asInstanceOf[const]
   
   @js.native
+  sealed trait enter extends StObject
+  inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
+  
+  @js.native
   sealed trait hoisted
     extends StObject
        with BindingKind
@@ -1845,8 +1913,8 @@ object babelTraverseStrings {
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait `var`
+  sealed trait var_
     extends StObject
        with BindingKind
-  inline def `var`: `var` = "var".asInstanceOf[`var`]
+  inline def var_ : var_ = "var".asInstanceOf[var_]
 }

@@ -244,7 +244,7 @@ object mod {
   - Shift-Alt-ArrowUp: [`copyLineUp`](https://codemirror.net/6/docs/ref/#commands.copyLineUp)
   - Shift-Alt-ArrowDown: [`copyLineDown`](https://codemirror.net/6/docs/ref/#commands.copyLineDown)
   - Escape: [`simplifySelection`](https://codemirror.net/6/docs/ref/#commands.simplifySelection)
-  - Ctrl-Enter (Comd-Enter on macOS): [`insertBlankLine`](https://codemirror.net/6/docs/ref/#commands.insertBlankLine)
+  - Ctrl-Enter (Cmd-Enter on macOS): [`insertBlankLine`](https://codemirror.net/6/docs/ref/#commands.insertBlankLine)
   - Alt-l (Ctrl-l on macOS): [`selectLine`](https://codemirror.net/6/docs/ref/#commands.selectLine)
   - Ctrl-i (Cmd-i on macOS): [`selectParentSyntax`](https://codemirror.net/6/docs/ref/#commands.selectParentSyntax)
   - Ctrl-[ (Cmd-[ on macOS): [`indentLess`](https://codemirror.net/6/docs/ref/#commands.indentLess)
@@ -874,6 +874,14 @@ object mod {
   trait HistoryConfig extends StObject {
     
     /**
+      By default, when close enough together in time, changes are
+      joined into an existing undo event if they touch any of the
+      changed ranges from that event. You can pass a custom predicate
+      here to influence that logic.
+      */
+    var joinToEvent: js.UndefOr[js.Function2[/* tr */ Transaction, /* isAdjacent */ Boolean, Boolean]] = js.undefined
+    
+    /**
       The minimum depth (amount of events) to store. Defaults to 100.
       */
     var minDepth: js.UndefOr[Double] = js.undefined
@@ -893,6 +901,10 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: HistoryConfig] (val x: Self) extends AnyVal {
+      
+      inline def setJoinToEvent(value: (/* tr */ Transaction, /* isAdjacent */ Boolean) => Boolean): Self = StObject.set(x, "joinToEvent", js.Any.fromFunction2(value))
+      
+      inline def setJoinToEventUndefined: Self = StObject.set(x, "joinToEvent", js.undefined)
       
       inline def setMinDepth(value: Double): Self = StObject.set(x, "minDepth", value.asInstanceOf[js.Any])
       

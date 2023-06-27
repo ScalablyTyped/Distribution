@@ -7,7 +7,7 @@ import typings.fundamentalReact.fundamentalReactStrings.button_
 import typings.fundamentalReact.fundamentalReactStrings.reset
 import typings.fundamentalReact.fundamentalReactStrings.submit
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.ValidationMap
 import typings.std.HTMLButtonElement
@@ -20,8 +20,8 @@ object libButtonButtonMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Button/Button.ButtonProps> & {  displayName :'Button'} */
   object default {
     
-    inline def apply(props: ButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: ButtonProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ButtonProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: ButtonProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Button/Button", JSImport.Default)
     @js.native

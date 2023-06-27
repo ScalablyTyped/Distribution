@@ -19,11 +19,11 @@ trait DeleteResponses403500 extends StObject {
     * this endpoint. If the repository is private you must use an access token with the `repo` scope. GitHub Apps must have
     * the `actions:read` permission to use this endpoint.
     */
-  var get: Parameters154
+  var get: Parameters181
 }
 object DeleteResponses403500 {
   
-  inline def apply(delete: Responses403500, get: Parameters154): DeleteResponses403500 = {
+  inline def apply(delete: Responses403500, get: Parameters181): DeleteResponses403500 = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResponses403500]
   }
@@ -33,6 +33,6 @@ object DeleteResponses403500 {
     
     inline def setDelete(value: Responses403500): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: Parameters154): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Parameters181): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }
 }

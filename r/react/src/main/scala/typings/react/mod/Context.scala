@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Context[T]
   extends StObject
      with Usable[T]
-     with typings.react.nextMod.reactAugmentingMod.Usable[T] {
+     with typings.react.canaryMod.reactAugmentingMod.Usable[T] {
   
   var Consumer: typings.react.mod.Consumer[T]
   

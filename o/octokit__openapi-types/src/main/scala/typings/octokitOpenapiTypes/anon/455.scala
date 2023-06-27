@@ -6,20 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `455` extends StObject {
   
-  var from: String | Null
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespace-with-full-repository'] */ js.Any
 }
 object `455` {
   
-  inline def apply(): `455` = {
-    val __obj = js.Dynamic.literal(from = null)
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespace-with-full-repository'] */ js.Any
+  ): `455` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`455`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `455`] (val x: Self) extends AnyVal {
     
-    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-    
-    inline def setFromNull: Self = StObject.set(x, "from", null)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['codespace-with-full-repository'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

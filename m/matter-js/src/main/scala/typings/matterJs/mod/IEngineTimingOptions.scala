@@ -9,8 +9,6 @@ trait IEngineTimingOptions extends StObject {
   /**
     * A `Number` that represents the `delta` value used in the last engine update.
     *
-    * @property timing.lastDelta
-    * @type {number}
     * @default 0
     */
   var lastDelta: Double
@@ -21,8 +19,6 @@ trait IEngineTimingOptions extends StObject {
     *
     * This value will also include the total execution time of all event handlers directly or indirectly triggered by the engine update.
     *
-    * @property timing.lastElapsed
-    * @type {number}
     * @default 0
     */
   var lastElapsed: Double
@@ -33,8 +29,6 @@ trait IEngineTimingOptions extends StObject {
     * A value of `0.1` gives a slow-motion effect.
     * A value of `1.2` gives a speed-up effect.
     *
-    * @property timing.timeScale
-    * @type {number}
     * @default 1
     */
   var timeScale: Double
@@ -43,8 +37,6 @@ trait IEngineTimingOptions extends StObject {
     * A `Number` that specifies the current simulation-time in milliseconds starting from `0`.
     * It is incremented on every `Engine.update` by the given `delta` argument.
     *
-    * @property timing.timestamp
-    * @type {number}
     * @default 0
     */
   var timestamp: Double

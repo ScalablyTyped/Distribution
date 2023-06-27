@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISMapServiceCapabilities extends StObject {
   
   /**
-    * Indicates options supported by the exportMap operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates options supported by the exportMap operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var exportMap: ArcGISMapServiceCapabilitiesExportMap
   
   /**
-    * Indicates options supported by the exportTiles operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates options supported by the exportTiles operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var exportTiles: ArcGISMapServiceCapabilitiesExportTiles
   
   /**
-    * Indicates operations that can be performed on the service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates operations that can be performed on the service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var operations: ArcGISMapServiceCapabilitiesOperations
 }
 object ArcGISMapServiceCapabilities {

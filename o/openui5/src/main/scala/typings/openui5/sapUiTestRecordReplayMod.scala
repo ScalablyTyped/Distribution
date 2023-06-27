@@ -25,6 +25,16 @@ object sapUiTestRecordReplayMod {
     val ^ : js.Any = js.native
     
     /**
+      * Interaction types.
+      *
+      * Values correspond to OPA5 built-in actions {@link sap.ui.test.actions}.
+      */
+    @JSImport("sap/ui/test/RecordReplay", "default.InteractionType")
+    @js.native
+    def InteractionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InteractionType */ Any = js.native
+    inline def InteractionType_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InteractionType */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InteractionType")(x.asInstanceOf[js.Any])
+    
+    /**
       * Creates a new subclass of class sap.ui.test.RecordReplay with name `sClassName` and enriches it with
       * the information contained in `oClassInfo`.
       *
@@ -143,24 +153,24 @@ object sapUiTestRecordReplayMod {
   
   @js.native
   sealed trait InteractionType extends StObject
+  /**
+    * Interaction types.
+    *
+    * Values correspond to OPA5 built-in actions {@link sap.ui.test.actions}.
+    */
   @JSImport("sap/ui/test/RecordReplay", "InteractionType")
   @js.native
   object InteractionType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[InteractionType & String] = js.native
     
     @js.native
     sealed trait EnterText
       extends StObject
          with InteractionType
-    /* "ENTER_TEXT" */ val EnterText: typings.openui5.sapUiTestRecordReplayMod.InteractionType.EnterText & String = js.native
     
     @js.native
     sealed trait Press
       extends StObject
          with InteractionType
-    /* "PRESS" */ val Press: typings.openui5.sapUiTestRecordReplayMod.InteractionType.Press & String = js.native
   }
   
   trait ControlSelector extends StObject {

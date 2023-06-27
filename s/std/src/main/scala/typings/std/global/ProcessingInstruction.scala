@@ -12,16 +12,25 @@ open class ProcessingInstruction ()
   extends StObject
      with typings.std.ProcessingInstruction {
   
-  /** Returns the first following sibling that is an element, and null otherwise. */
+  /**
+    * Returns the first following sibling that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/nextElementSibling)
+    */
   /* standard dom */
   /* CompleteClass */
   override val nextElementSibling: typings.std.Element | Null = js.native
   
-  /** Returns the first preceding sibling that is an element, and null otherwise. */
+  /**
+    * Returns the first preceding sibling that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/previousElementSibling)
+    */
   /* standard dom */
   /* CompleteClass */
   override val previousElementSibling: typings.std.Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/sheet) */
   /* standard dom */
   /* CompleteClass */
   override val sheet: typings.std.CSSStyleSheet | Null = js.native

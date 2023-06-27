@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewValue
-import typings.openui5.anon.RefreshButtonPressed
-import typings.openui5.anon.SuggestValue
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IShellBar
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -200,7 +196,7 @@ object sapMSearchFieldMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Adds some suggestionItem to the aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -214,7 +210,7 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.m.SearchField`.
       *
@@ -230,20 +226,20 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Attaches event handler `fnFunction` to the {@link #event:change change} event of this `sap.m.SearchField`.
       *
@@ -264,7 +260,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -275,7 +271,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
@@ -283,7 +279,7 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.SearchField`.
       *
@@ -299,20 +295,20 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.SearchField`.
       *
@@ -333,7 +329,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -344,7 +340,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
@@ -365,13 +361,13 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
@@ -396,7 +392,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -407,7 +403,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
@@ -415,7 +411,7 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Attaches event handler `fnFunction` to the {@link #event:suggest suggest} event of this `sap.m.SearchField`.
       *
@@ -432,20 +428,20 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Attaches event handler `fnFunction` to the {@link #event:suggest suggest} event of this `sap.m.SearchField`.
       *
@@ -467,7 +463,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
@@ -478,7 +474,7 @@ object sapMSearchFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SearchField` itself
       */
@@ -499,7 +495,7 @@ object sapMSearchFieldMod {
     oBindingInfo: PropertyBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Destroys all the suggestionItems in the aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -508,7 +504,7 @@ object sapMSearchFieldMod {
     def destroySuggestionItems(): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Detaches event handler `fnFunction` from the {@link #event:change change} event of this `sap.m.SearchField`.
       *
@@ -520,13 +516,13 @@ object sapMSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -534,7 +530,7 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.m.SearchField`.
       *
@@ -546,13 +542,13 @@ object sapMSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -570,13 +566,13 @@ object sapMSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -584,7 +580,7 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Detaches event handler `fnFunction` from the {@link #event:suggest suggest} event of this `sap.m.SearchField`.
       *
@@ -596,13 +592,13 @@ object sapMSearchFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit]
     ): this.type = js.native
     def detachSuggest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchFieldSuggestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -610,74 +606,80 @@ object sapMSearchFieldMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.77
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: SearchField$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.9.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.9.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewValue): this.type = js.native
+    mParameters: SearchField$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearch(): this.type = js.native
-    def fireSearch(/**
+    def fireSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RefreshButtonPressed): this.type = js.native
+    mParameters: SearchField$SearchEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.34
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.34
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggest(): this.type = js.native
-    def fireSuggest(/**
+    def fireSuggest(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SuggestValue): this.type = js.native
+    mParameters: SearchField$SuggestEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Gets current value of property {@link #getEnableSuggestions enableSuggestions}.
       *
@@ -725,8 +727,8 @@ object sapMSearchFieldMod {
     def getPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.34
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.34
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function returns DOM element which acts as reference point for the opening suggestion menu
       *
@@ -735,7 +737,7 @@ object sapMSearchFieldMod {
     def getPopupAnchorDomRef(): Element = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.110.0)
       *
       * Gets current value of property {@link #getRefreshButtonTooltip refreshButtonTooltip}.
@@ -748,7 +750,7 @@ object sapMSearchFieldMod {
     def getRefreshButtonTooltip(): String = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       * @deprecated (since 1.38) - This parameter is deprecated and has no effect in run time. The cursor position
       * of a focused search field is restored after re-rendering automatically.
       *
@@ -778,7 +780,7 @@ object sapMSearchFieldMod {
     def getShowMagnifier(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getShowRefreshButton showRefreshButton}.
       *
@@ -794,7 +796,7 @@ object sapMSearchFieldMod {
     def getShowRefreshButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.23
+      * @since 1.23
       *
       * Gets current value of property {@link #getShowSearchButton showSearchButton}.
       *
@@ -808,7 +810,7 @@ object sapMSearchFieldMod {
     def getShowSearchButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Gets content of aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -840,7 +842,7 @@ object sapMSearchFieldMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Checks for the provided `sap.m.SuggestionItem` in the aggregation {@link #getSuggestionItems suggestionItems}.
       * and returns its index if found or -1 otherwise.
@@ -855,7 +857,7 @@ object sapMSearchFieldMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Inserts a suggestionItem into the aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -889,7 +891,7 @@ object sapMSearchFieldMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Removes all the controls from the aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -944,7 +946,7 @@ object sapMSearchFieldMod {
       */
     vSuggestionItem: String): typings.openui5.sapMSuggestionItemMod.default | Null = js.native
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Removes a suggestionItem from the aggregation {@link #getSuggestionItems suggestionItems}.
       *
@@ -962,7 +964,7 @@ object sapMSearchFieldMod {
     ): typings.openui5.sapMSuggestionItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Sets a new value for property {@link #getEnableSuggestions enableSuggestions}.
       *
@@ -1034,7 +1036,7 @@ object sapMSearchFieldMod {
     sPlaceholder: String): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.110.0)
       *
       * Sets a new value for property {@link #getRefreshButtonTooltip refreshButtonTooltip}.
@@ -1053,7 +1055,7 @@ object sapMSearchFieldMod {
     sRefreshButtonTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       * @deprecated (since 1.38) - This parameter is deprecated and has no effect in run time. The cursor position
       * of a focused search field is restored after re-rendering automatically.
       *
@@ -1095,7 +1097,7 @@ object sapMSearchFieldMod {
     bShowMagnifier: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getShowRefreshButton showRefreshButton}.
       *
@@ -1117,7 +1119,7 @@ object sapMSearchFieldMod {
     bShowRefreshButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.23
+      * @since 1.23
       *
       * Sets a new value for property {@link #getShowSearchButton showSearchButton}.
       *
@@ -1167,7 +1169,7 @@ object sapMSearchFieldMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * Toggle visibility of the suggestion list.
       *
@@ -1194,6 +1196,156 @@ object sapMSearchFieldMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait SearchField$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new value of the control.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object SearchField$ChangeEventParameters {
+    
+    inline def apply(): SearchField$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait SearchField$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Current search string.
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object SearchField$LiveChangeEventParameters {
+    
+    inline def apply(): SearchField$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait SearchField$SearchEventParameters extends StObject {
+    
+    /**
+      * Indicates if the user pressed the clear icon.
+      */
+    var clearButtonPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates that ESC key triggered the event. **Note:** This parameter will not be sent unless the ESC
+      * key is pressed.
+      */
+    var escPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The search query string.
+      */
+    var query: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates if the user pressed the refresh icon.
+      */
+    var refreshButtonPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates if the user pressed the search button.
+      */
+    var searchButtonPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Suggestion list item in case if the user has selected an item from the suggestions list.
+      */
+    var suggestionItem: js.UndefOr[typings.openui5.sapMSuggestionItemMod.default] = js.undefined
+  }
+  object SearchField$SearchEventParameters {
+    
+    inline def apply(): SearchField$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setClearButtonPressed(value: Boolean): Self = StObject.set(x, "clearButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setClearButtonPressedUndefined: Self = StObject.set(x, "clearButtonPressed", js.undefined)
+      
+      inline def setEscPressed(value: Boolean): Self = StObject.set(x, "escPressed", value.asInstanceOf[js.Any])
+      
+      inline def setEscPressedUndefined: Self = StObject.set(x, "escPressed", js.undefined)
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      
+      inline def setRefreshButtonPressed(value: Boolean): Self = StObject.set(x, "refreshButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setRefreshButtonPressedUndefined: Self = StObject.set(x, "refreshButtonPressed", js.undefined)
+      
+      inline def setSearchButtonPressed(value: Boolean): Self = StObject.set(x, "searchButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setSearchButtonPressedUndefined: Self = StObject.set(x, "searchButtonPressed", js.undefined)
+      
+      inline def setSuggestionItem(value: typings.openui5.sapMSuggestionItemMod.default): Self = StObject.set(x, "suggestionItem", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestionItemUndefined: Self = StObject.set(x, "suggestionItem", js.undefined)
+    }
+  }
+  
+  trait SearchField$SuggestEventParameters extends StObject {
+    
+    /**
+      * Current search string of the search field.
+      */
+    var suggestValue: js.UndefOr[String] = js.undefined
+  }
+  object SearchField$SuggestEventParameters {
+    
+    inline def apply(): SearchField$SuggestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchField$SuggestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchField$SuggestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSuggestValue(value: String): Self = StObject.set(x, "suggestValue", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestValueUndefined: Self = StObject.set(x, "suggestValue", js.undefined)
+    }
+  }
+  
+  type SearchFieldChangeEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$ChangeEventParameters]
+  
+  type SearchFieldChangeEventParameters = SearchField$ChangeEventParameters
+  
+  type SearchFieldLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$LiveChangeEventParameters]
+  
+  type SearchFieldLiveChangeEventParameters = SearchField$LiveChangeEventParameters
+  
+  type SearchFieldSearchEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters]
+  
+  type SearchFieldSearchEventParameters = SearchField$SearchEventParameters
+  
   trait SearchFieldSettings
     extends StObject
        with ControlSettings {
@@ -1209,15 +1361,20 @@ object sapMSearchFieldMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * This event is fired when the user changes the value of the search field. Unlike the `liveChange` event,
       * the `change` event is not fired for each key press.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * If `true`, a `suggest` event is fired when user types in the input and when the input is focused. On
       * a phone device, a full screen dialog with suggestions is always shown even if the suggestions list is
@@ -1235,12 +1392,17 @@ object sapMSearchFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.1
+      * @since 1.9.1
       *
       * This event is fired each time when the value of the search field is changed by the user - e.g. at each
       * key press. Do not invalidate a focused search field, especially during the liveChange event.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Maximum number of characters. Value '0' means the feature is switched off.
@@ -1255,7 +1417,7 @@ object sapMSearchFieldMod {
     var placeholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.110.0)
       *
       * Tooltip text of the refresh button. If it is not set, the Default tooltip text is the word "Refresh"
@@ -1266,10 +1428,15 @@ object sapMSearchFieldMod {
     /**
       * Event which is fired when the user triggers a search.
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       * @deprecated (since 1.38) - This parameter is deprecated and has no effect in run time. The cursor position
       * of a focused search field is restored after re-rendering automatically.
       *
@@ -1291,7 +1458,7 @@ object sapMSearchFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Set to `true` to display a refresh button in place of the search icon. By pressing the refresh button
       * or F5 key on keyboard, the user can reload the results list without changing the search string. Note:
@@ -1303,7 +1470,7 @@ object sapMSearchFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.23
+      * @since 1.23
       *
       * Set to `true` to show the search button with the magnifier icon. If `false`, both the search and refresh
       * buttons are not displayed even if the "showRefreshButton" property is `true`.
@@ -1313,16 +1480,21 @@ object sapMSearchFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * This event is fired when the search field is initially focused or its value is changed by the user. This
       * event means that suggestion data should be updated, in case if suggestions are used. Use the value parameter
       * to create new suggestions for it.
       */
-    var suggest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.34
+      * @since 1.34
       *
       * `SuggestionItems` are the items which will be shown in the suggestions list. The following properties
       * can be used:
@@ -1369,7 +1541,9 @@ object sapMSearchFieldMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1381,7 +1555,9 @@ object sapMSearchFieldMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       
@@ -1397,7 +1573,9 @@ object sapMSearchFieldMod {
       
       inline def setRefreshButtonTooltipUndefined: Self = StObject.set(x, "refreshButtonTooltip", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
@@ -1417,7 +1595,9 @@ object sapMSearchFieldMod {
       
       inline def setShowSearchButtonUndefined: Self = StObject.set(x, "showSearchButton", js.undefined)
       
-      inline def setSuggest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
+      inline def setSuggest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters] => Unit
+      ): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
       
       inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
@@ -1438,4 +1618,8 @@ object sapMSearchFieldMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type SearchFieldSuggestEvent = typings.openui5.sapUiBaseEventMod.default[SearchField$SuggestEventParameters]
+  
+  type SearchFieldSuggestEventParameters = SearchField$SuggestEventParameters
 }

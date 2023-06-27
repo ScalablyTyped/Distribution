@@ -9,24 +9,24 @@ trait LocationSchemeForPolyline
      with LocationScheme {
   
   /**
-    * The color of the line symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
-    */
+  		 * The color of the line symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
+  		 */
   var color: Color_
   
   /**
-    * The opacity of the line symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
-    */
+  		 * The opacity of the line symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
+  		 */
   var opacity: Double
   
   /**
-    * The width of the line symbol in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
-    */
+  		 * The width of the line symbol in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolyline)
+  		 */
   var width: Double
 }
 object LocationSchemeForPolyline {

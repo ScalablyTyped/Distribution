@@ -9,10 +9,10 @@ trait BuildingSummaryStatisticsProperties
      with LoadableProperties {
   
   /**
-    * An array of statistics on all fields in all sublayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html#fields)
-    */
+  		 * An array of statistics on all fields in all sublayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html#fields)
+  		 */
   var fields: js.UndefOr[js.Array[BuildingFieldStatistics]] = js.undefined
 }
 object BuildingSummaryStatisticsProperties {

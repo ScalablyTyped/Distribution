@@ -6,19 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content80 extends StObject {
   
-  /** List organization webhooks */
-  var get: Responses200Content80
-  
   /**
-    * Create an organization webhook
-    * @description Here's how you can create a hook that posts payloads in JSON format:
+    * List users blocked by an organization
+    * @description List the users blocked by an organization.
     */
-  var post: RequestBodyContentApplicationjsonActive
+  var get: Responses200Content80
 }
 object GetResponses200Content80 {
   
-  inline def apply(get: Responses200Content80, post: RequestBodyContentApplicationjsonActive): GetResponses200Content80 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content80): GetResponses200Content80 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content80]
   }
   
@@ -26,7 +23,5 @@ object GetResponses200Content80 {
   implicit open class MutableBuilder[Self <: GetResponses200Content80] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content80): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPost(value: RequestBodyContentApplicationjsonActive): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenericDimension extends StObject {
   
   /**
-    * Name of dimensional axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#GenericDimension)
-    */
+  		 * Name of dimensional axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#GenericDimension)
+  		 */
   var name: String
 }
 object GenericDimension {

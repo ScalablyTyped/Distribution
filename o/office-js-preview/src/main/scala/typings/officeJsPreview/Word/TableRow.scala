@@ -84,7 +84,7 @@ trait TableRow
     * Gets the collection of endnotes in the table row.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -108,7 +108,7 @@ trait TableRow
     * Gets the collection of footnotes in the table row.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -169,7 +169,7 @@ trait TableRow
   def getNextOrNullObject(): TableRow = js.native
   
   /**
-    * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * Specifies the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -238,7 +238,7 @@ trait TableRow
   val parentTable: Table = js.native
   
   /**
-    * Gets and sets the preferred height of the row in points.
+    * Specifies the preferred height of the row in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -310,7 +310,7 @@ trait TableRow
   def setCellPadding(cellPaddingLocation: CellPaddingLocation, cellPadding: Double): Unit = js.native
   
   /**
-    * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+    * Specifies the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -334,7 +334,7 @@ trait TableRow
   def untrack(): TableRow = js.native
   
   /**
-    * Gets and sets the text values in the row, as a 2D Javascript array.
+    * Specifies the text values in the row, as a 2D JavaScript array.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -342,7 +342,7 @@ trait TableRow
   var values: js.Array[js.Array[String]] = js.native
   
   /**
-    * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+    * Specifies the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.MetaKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.EmptyIndicatorMode
 import typings.openui5.sapMLibraryMod.LinkAccessibleRole
@@ -224,13 +223,13 @@ object sapMLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Link` itself
       */
@@ -255,7 +254,7 @@ object sapMLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -266,7 +265,7 @@ object sapMLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Link` itself
       */
@@ -284,13 +283,13 @@ object sapMLinkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -298,7 +297,7 @@ object sapMLinkMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -311,10 +310,10 @@ object sapMLinkMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: MetaKey): Boolean = js.native
+    mParameters: Link$PressEventParameters): Boolean = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Gets current value of property {@link #getAccessibleRole accessibleRole}.
       *
@@ -322,7 +321,7 @@ object sapMLinkMod {
       * 	 - `LinkAccessibleRole.Default` - a navigation is expected to the location given in `href` property
       *
       * 	 - `LinkAccessibleRole.Button` - there will be `role` attribute with value "Button" rendered. In this
-      * 			scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
+      *     scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
       *
       * Default value is `Default`.
       *
@@ -331,13 +330,12 @@ object sapMLinkMod {
     def getAccessibleRole(): LinkAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkAccessibleRole * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -359,13 +357,12 @@ object sapMLinkMod {
     def getAriaHasPopup(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getEmphasized emphasized}.
       *
@@ -378,7 +375,7 @@ object sapMLinkMod {
     def getEmphasized(): Boolean = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -413,7 +410,7 @@ object sapMLinkMod {
     def getHref(): URI = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Gets current value of property {@link #getRel rel}.
       *
@@ -427,7 +424,7 @@ object sapMLinkMod {
     def getRel(): String = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getSubtle subtle}.
       *
@@ -466,7 +463,7 @@ object sapMLinkMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -479,7 +476,7 @@ object sapMLinkMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -493,7 +490,7 @@ object sapMLinkMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54.0
+      * @since 1.54.0
       *
       * Gets current value of property {@link #getValidateUrl validateUrl}.
       *
@@ -586,7 +583,7 @@ object sapMLinkMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Sets a new value for property {@link #getAccessibleRole accessibleRole}.
       *
@@ -594,7 +591,7 @@ object sapMLinkMod {
       * 	 - `LinkAccessibleRole.Default` - a navigation is expected to the location given in `href` property
       *
       * 	 - `LinkAccessibleRole.Button` - there will be `role` attribute with value "Button" rendered. In this
-      * 			scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
+      *     scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -615,7 +612,7 @@ object sapMLinkMod {
     sAccessibleRole: LinkAccessibleRole): this.type = js.native
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -649,7 +646,7 @@ object sapMLinkMod {
     sAriaHasPopup: HasPopup): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getEmphasized emphasized}.
       *
@@ -668,7 +665,7 @@ object sapMLinkMod {
     bEmphasized: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -727,7 +724,7 @@ object sapMLinkMod {
     sHref: URI): this.type = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Sets a new value for property {@link #getRel rel}.
       *
@@ -747,7 +744,7 @@ object sapMLinkMod {
     sRel: String): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getSubtle subtle}.
       *
@@ -804,7 +801,7 @@ object sapMLinkMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -829,7 +826,7 @@ object sapMLinkMod {
     sTextAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -855,7 +852,7 @@ object sapMLinkMod {
     sTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.54.0
+      * @since 1.54.0
       *
       * Sets a new value for property {@link #getValidateUrl validateUrl}.
       *
@@ -912,18 +909,56 @@ object sapMLinkMod {
     bWrapping: Boolean): this.type = js.native
   }
   
+  trait Link$PressEventParameters extends StObject {
+    
+    /**
+      * Indicates whether the CTRL key was pressed when the link was selected.
+      */
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates whether the "meta" key was pressed when the link was selected.
+      *
+      * On Macintosh keyboards, this is the command key (⌘). On Windows keyboards, this is the windows key (⊞).
+      */
+    var metaKey: js.UndefOr[Boolean] = js.undefined
+  }
+  object Link$PressEventParameters {
+    
+    inline def apply(): Link$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Link$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+    }
+  }
+  
+  type LinkPressEvent = typings.openui5.sapUiBaseEventMod.default[Link$PressEventParameters]
+  
+  type LinkPressEventParameters = Link$PressEventParameters
+  
   trait LinkSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Describes the accessibility role of the link:
       * 	 - `LinkAccessibleRole.Default` - a navigation is expected to the location given in `href` property
       *
       * 	 - `LinkAccessibleRole.Button` - there will be `role` attribute with value "Button" rendered. In this
-      * 			scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
+      *     scenario the `href` property value shouldn't be set as navigation isn't expected to occur.
       */
     var accessibleRole: js.UndefOr[
         LinkAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkAccessibleRole * / any */ String) | PropertyBindingInfo
@@ -935,7 +970,7 @@ object sapMLinkMod {
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.86.0
+      * @since 1.86.0
       *
       * Specifies the value of the `aria-haspopup` attribute
       *
@@ -958,7 +993,7 @@ object sapMLinkMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Emphasized links look visually more important than regular links.
       */
@@ -967,7 +1002,7 @@ object sapMLinkMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */
@@ -992,10 +1027,15 @@ object sapMLinkMod {
     /**
       * Event is fired when the user triggers the link control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Link$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Specifies the value of the HTML `rel` attribute.
       *
@@ -1005,7 +1045,7 @@ object sapMLinkMod {
     var rel: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Subtle links look more like standard text than like links. They should only be used to help with visual
       * hierarchy between large data lists of important and less important links. Subtle links should not be
@@ -1030,7 +1070,7 @@ object sapMLinkMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Determines the horizontal alignment of the text.
       */
@@ -1039,7 +1079,7 @@ object sapMLinkMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This property specifies the element's text directionality with enumerated options. By default, the control
       * inherits text direction from the parent DOM.
@@ -1049,7 +1089,7 @@ object sapMLinkMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54.0
+      * @since 1.54.0
       *
       * Defines whether the link target URI should be validated.
       *
@@ -1129,7 +1169,7 @@ object sapMLinkMod {
       
       inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Link$PressEventParameters] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectedButtonId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -135,7 +134,7 @@ object sapUiCommonsSegmentedButtonMod {
        with IFormContent {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Rerendering of the Buttons
       */
@@ -167,13 +166,13 @@ object sapUiCommonsSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SegmentedButton` itself
       */
@@ -198,7 +197,7 @@ object sapUiCommonsSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -209,7 +208,7 @@ object sapUiCommonsSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.SegmentedButton` itself
       */
@@ -234,13 +233,13 @@ object sapUiCommonsSegmentedButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -248,17 +247,19 @@ object sapUiCommonsSegmentedButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedButtonId): this.type = js.native
+    mParameters: SegmentedButton$SelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getButtons buttons}.
@@ -382,6 +383,33 @@ object sapUiCommonsSegmentedButtonMod {
     ): this.type = js.native
   }
   
+  trait SegmentedButton$SelectEventParameters extends StObject {
+    
+    /**
+      * Id of selected ToggleButton
+      */
+    var selectedButtonId: js.UndefOr[String] = js.undefined
+  }
+  object SegmentedButton$SelectEventParameters {
+    
+    inline def apply(): SegmentedButton$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SegmentedButton$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedButton$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedButtonId(value: String): Self = StObject.set(x, "selectedButtonId", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedButtonIdUndefined: Self = StObject.set(x, "selectedButtonId", js.undefined)
+    }
+  }
+  
+  type SegmentedButtonSelectEvent = typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectEventParameters]
+  
+  type SegmentedButtonSelectEventParameters = SegmentedButton$SelectEventParameters
+  
   trait SegmentedButtonSettings
     extends StObject
        with ControlSettings {
@@ -403,7 +431,12 @@ object sapUiCommonsSegmentedButtonMod {
     /**
       * Event fired when button selected
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Selected Button
@@ -432,7 +465,9 @@ object sapUiCommonsSegmentedButtonMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

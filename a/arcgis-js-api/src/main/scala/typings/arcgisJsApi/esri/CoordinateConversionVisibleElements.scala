@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoordinateConversionVisibleElements extends StObject {
   
   /**
-    * Indicates whether the capture mode button will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
-    */
+  		 * Indicates whether the capture mode button will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
+  		 */
   var captureButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the input coordinate button will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
-    */
+  		 * Indicates whether the input coordinate button will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
+  		 */
   var editButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the expand and retract buttons will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
-    */
+  		 * Indicates whether the expand and retract buttons will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
+  		 */
   var expandButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the settings button will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
-    */
+  		 * Indicates whether the settings button will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html#VisibleElements)
+  		 */
   var settingsButton: js.UndefOr[Boolean] = js.undefined
 }
 object CoordinateConversionVisibleElements {

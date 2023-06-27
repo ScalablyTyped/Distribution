@@ -11,10 +11,10 @@ object esriWidgetsEditorUpdateWorkflowDataMod {
   @JSImport("esri/widgets/Editor/UpdateWorkflowData", JSImport.Namespace)
   @js.native
   /**
-    * This object supports the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html)
-    */
+  		 * This object supports the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html)
+  		 */
   open class ^ ()
     extends StObject
        with UpdateWorkflowData {

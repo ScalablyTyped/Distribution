@@ -1,13 +1,14 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.failed_
+import typings.microsoftGraph.microsoftGraphStrings.success_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.failed_
-  - typings.microsoftGraph.microsoftGraphStrings.success
+  - typings.microsoftGraph.microsoftGraphStrings.success_
   - typings.microsoftGraph.microsoftGraphStrings.softReboot
   - typings.microsoftGraph.microsoftGraphStrings.hardReboot
   - typings.microsoftGraph.microsoftGraphStrings.retry
@@ -23,5 +24,5 @@ object Win32LobAppReturnCodeType {
   
   inline def softReboot: typings.microsoftGraph.microsoftGraphStrings.softReboot = "softReboot".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.softReboot]
   
-  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: success_ = "success".asInstanceOf[success_]
 }

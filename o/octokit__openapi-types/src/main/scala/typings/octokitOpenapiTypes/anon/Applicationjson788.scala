@@ -1,0 +1,25 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Applicationjson788 extends StObject {
+  
+  @JSName("application/json")
+  var applicationSlashjson: `788`
+}
+object Applicationjson788 {
+  
+  inline def apply(applicationSlashjson: `788`): Applicationjson788 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Applicationjson788]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicationjson788] (val x: Self) extends AnyVal {
+    
+    inline def setApplicationSlashjson(value: `788`): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+  }
+}

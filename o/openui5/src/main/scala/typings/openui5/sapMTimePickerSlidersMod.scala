@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -137,13 +136,13 @@ object sapMTimePickerSlidersMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePickerSliders` itself
       */
@@ -168,7 +167,7 @@ object sapMTimePickerSlidersMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -179,7 +178,7 @@ object sapMTimePickerSlidersMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TimePickerSliders` itself
       */
@@ -204,13 +203,13 @@ object sapMTimePickerSlidersMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TimePickerSlidersChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -218,17 +217,19 @@ object sapMTimePickerSlidersMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: TimePickerSliders$ChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDisplayFormat displayFormat}.
@@ -301,7 +302,7 @@ object sapMTimePickerSlidersMod {
     def getSecondsStep(): int = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getSupport2400 support2400}.
       *
@@ -473,6 +474,33 @@ object sapMTimePickerSlidersMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait TimePickerSliders$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new `value` of the control.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object TimePickerSliders$ChangeEventParameters {
+    
+    inline def apply(): TimePickerSliders$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TimePickerSliders$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerSliders$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type TimePickerSlidersChangeEvent = typings.openui5.sapUiBaseEventMod.default[TimePickerSliders$ChangeEventParameters]
+  
+  type TimePickerSlidersChangeEventParameters = TimePickerSliders$ChangeEventParameters
+  
   trait TimePickerSlidersSettings
     extends StObject
        with ControlSettings {
@@ -480,7 +508,12 @@ object sapMTimePickerSlidersMod {
     /**
       * Fired when the value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TimePickerSliders$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the time `displayFormat` of the sliders. The `displayFormat` comes from the browser language
@@ -527,7 +560,7 @@ object sapMTimePickerSlidersMod {
     var secondsStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Allows to set a value of 24:00, used to indicate the end of the day. Works only with HH or H formats.
       * Don't use it together with am/pm.
@@ -563,7 +596,9 @@ object sapMTimePickerSlidersMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TimePickerSlidersSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TimePickerSliders$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

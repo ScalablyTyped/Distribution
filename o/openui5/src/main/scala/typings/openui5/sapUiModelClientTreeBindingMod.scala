@@ -12,7 +12,7 @@ object sapUiModelClientTreeBindingMod {
   @js.native
   open class default protected () extends ClientTreeBinding {
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new ClientTreeBinding.
       *
@@ -587,7 +587,7 @@ object sapUiModelClientTreeBindingMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.model.ClientTreeBinding with name `sClassName` and enriches it
       * with the information contained in `oClassInfo`.
@@ -642,7 +642,7 @@ object sapUiModelClientTreeBindingMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.model.ClientTreeBinding.
       *

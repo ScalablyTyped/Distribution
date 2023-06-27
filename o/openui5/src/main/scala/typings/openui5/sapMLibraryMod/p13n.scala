@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object p13n {
   
   /**
-    * @SINCE 1.97
-    * @EXPERIMENTAL
+    * @since 1.97
+    * @experimental
     *
     * Interface for P13nPopup which are suitable as content for the `sap.m.p13n.Popup`. Implementation of this
     * interface should include the following methods:
@@ -19,7 +19,7 @@ object p13n {
     var __implements__sap_m_p13n_IContent: Boolean
     
     /**
-      * @EXPERIMENTAL
+      * @experimental
       *
       * Returns the title, which should be displayed in the P13nPopup to describe related content.
       *

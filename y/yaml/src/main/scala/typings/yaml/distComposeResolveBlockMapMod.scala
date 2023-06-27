@@ -6,6 +6,7 @@ import typings.yaml.distComposeComposerMod.ComposeErrorHandler
 import typings.yaml.distNodesNodeMod.ParsedNode
 import typings.yaml.distNodesYamlmapMod.YAMLMap.Parsed
 import typings.yaml.distParseCstMod.BlockMap
+import typings.yaml.distSchemaTypesMod.CollectionTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,4 +18,11 @@ object distComposeResolveBlockMapMod {
   val ^ : js.Any = js.native
   
   inline def resolveBlockMap(param0: ComposeNode_, ctx: ComposeContext, bm: BlockMap, onError: ComposeErrorHandler): Parsed[ParsedNode, ParsedNode | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBlockMap")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], bm.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode, ParsedNode | Null]]
+  inline def resolveBlockMap(
+    param0: ComposeNode_,
+    ctx: ComposeContext,
+    bm: BlockMap,
+    onError: ComposeErrorHandler,
+    tag: CollectionTag
+  ): Parsed[ParsedNode, ParsedNode | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBlockMap")(param0.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], bm.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode, ParsedNode | Null]]
 }

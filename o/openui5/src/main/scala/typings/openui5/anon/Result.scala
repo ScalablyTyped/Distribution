@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Result extends StObject {
   
-  var actual: Boolean
+  var actual: String
   
-  var expected: Boolean
+  var expected: String
   
   var message: String
   
@@ -16,7 +16,7 @@ trait Result extends StObject {
 }
 object Result {
   
-  inline def apply(actual: Boolean, expected: Boolean, message: String, result: Boolean): Result = {
+  inline def apply(actual: String, expected: String, message: String, result: Boolean): Result = {
     val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
@@ -24,9 +24,9 @@ object Result {
   @scala.inline
   implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
     
-    inline def setActual(value: Boolean): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    inline def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

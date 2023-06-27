@@ -9,68 +9,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderPreviewHTMLOptions extends StObject {
   
   /**
-    * Indicates whether to disable upsampling for raster images.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * Indicates whether to disable upsampling for raster images.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var disableUpsampling: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum size of the symbol preview in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The maximum size of the symbol preview in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The parent node to append to the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The parent node to append to the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var node: js.UndefOr[HTMLElement] = js.undefined
   
   /**
-    * The opacity of the layer represented by the `symbol`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The opacity of the layer represented by the `symbol`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * _Since 4.25_ The text that will be displayed in the symbol preview of a TextSymbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * _Since 4.25_ The text that will be displayed in the symbol preview of a TextSymbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var overrideText: js.UndefOr[String] = js.undefined
   
   /**
-    * The rotation of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * The rotation of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * When `true` the size of the symbol preview will include the outline in the measurement of the entire symbol.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * When `true` the size of the symbol preview will include the outline in the measurement of the entire symbol.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var scale: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Use a number to set the size (in points) of the symbol preview for any symbol representing a point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * Use a number to set the size (in points) of the symbol preview for any symbol representing a point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var size: js.UndefOr[Double | symbolUtilsRenderPreviewHTMLOptionsSize] = js.undefined
   
   /**
-    * Options for setting the shape of a fill symbol preview.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * Options for setting the shape of a fill symbol preview.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var symbolConfig: js.UndefOr[tall | symbolUtilsRenderPreviewHTMLOptionsSymbolConfig] = js.undefined
 }
 object symbolUtilsRenderPreviewHTMLOptions {

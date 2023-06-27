@@ -21,46 +21,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorFieldRendererProperties extends StObject {
   
   /**
-    * Attribute field presenting the magnitude.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#attributeField)
-    */
+  		 * Attribute field presenting the magnitude.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#attributeField)
+  		 */
   var attributeField: js.UndefOr[Magnitude] = js.undefined
   
   /**
-    * Defines the flow direction of the data.
-    *
-    * @default "flow-from"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
-    */
+  		 * Defines the flow direction of the data.
+  		 *
+  		 * @default "flow-from"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#flowRepresentation)
+  		 */
   var flowRepresentation: js.UndefOr[`flow-from` | `flow-to`] = js.undefined
   
   /**
-    * Predefined symbol styles used to represent the vector flow.
-    *
-    * @default "single-arrow"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
-    */
+  		 * Predefined symbol styles used to represent the vector flow.
+  		 *
+  		 * @default "single-arrow"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#style)
+  		 */
   var style: js.UndefOr[
     `beaufort-ft` | `beaufort-km` | `beaufort-kn` | `beaufort-m` | `beaufort-mi` | `classified-arrow` | `ocean-current-kn` | `ocean-current-m` | `simple-scalar` | `single-arrow` | `wind-barb`
   ] = js.undefined
   
   /**
-    * Determines the density of the symbols.
-    *
-    * @default 50
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
-    */
+  		 * Determines the density of the symbols.
+  		 *
+  		 * @default 50
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#symbolTileSize)
+  		 */
   var symbolTileSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#visualVariables)
-    */
+  		 * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-VectorFieldRenderer.html#visualVariables)
+  		 */
   var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 object VectorFieldRendererProperties {

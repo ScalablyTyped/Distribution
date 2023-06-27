@@ -1,14 +1,16 @@
 package typings.atlaskitMotion
 
-import org.scalablytyped.runtime.Shortcut
 import typings.atlaskitMotion.anon.Ref
 import typings.atlaskitMotion.distTypesEnteringTypesMod.MotionProps
-import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distTypesEnteringShrinkOutMod extends Shortcut {
+object distTypesEnteringShrinkOutMod {
+  
+  @JSImport("@atlaskit/motion/dist/types/entering/shrink-out", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * __ShrinkOut__
@@ -18,14 +20,7 @@ object distTypesEnteringShrinkOutMod extends Shortcut {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion/dist/types/entering/shrink-out", JSImport.Default)
-  @js.native
-  val default: FC[ShrinkOutProps] = js.native
+  inline def default(param0: ShrinkOutProps): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   type ShrinkOutProps = MotionProps[Ref]
-  
-  type _To = FC[ShrinkOutProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `distTypesEnteringShrinkOutMod.foo` */
-  override def _to: FC[ShrinkOutProps] = default
 }

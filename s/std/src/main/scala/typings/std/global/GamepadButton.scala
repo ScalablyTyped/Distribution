@@ -12,14 +12,17 @@ open class GamepadButton ()
   extends StObject
      with typings.std.GamepadButton {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/pressed) */
   /* standard dom */
   /* CompleteClass */
   override val pressed: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/touched) */
   /* standard dom */
   /* CompleteClass */
   override val touched: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/value) */
   /* standard dom */
   /* CompleteClass */
   override val value: Double = js.native

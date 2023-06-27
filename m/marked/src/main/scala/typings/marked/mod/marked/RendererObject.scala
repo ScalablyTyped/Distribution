@@ -85,9 +85,10 @@ trait RendererObject extends StObject {
   ] = js.undefined
   
   var html: js.UndefOr[
-    js.ThisFunction1[
+    js.ThisFunction2[
       /* this */ Renderer[scala.Nothing] | RendererThis, 
       /* html */ String, 
+      /* block */ Boolean, 
       String | `false`
     ]
   ] = js.undefined
@@ -276,9 +277,10 @@ object RendererObject {
     inline def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
     
     inline def setHtml(
-      value: js.ThisFunction1[
+      value: js.ThisFunction2[
           /* this */ Renderer[scala.Nothing] | RendererThis, 
           /* html */ String, 
+          /* block */ Boolean, 
           String | `false`
         ]
     ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])

@@ -18,7 +18,7 @@ open class point protected () extends StObject {
     */
   def convertToPoly(side: Double, radius: Double): polygon = js.native
   
-  /** 
+  /**
     * Creates a point from this point offset by a given x and y distance.
     * @param {number} dx The x offset.
     * @param {number} dy The y offset.

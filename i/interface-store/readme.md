@@ -1,7 +1,7 @@
 
 # Scala.js typings for interface-store
 
-Typings are for version 5.1.0
+Typings are for version 5.1.2
 
 ## Library description:
 A generic interface for storing and retrieving data

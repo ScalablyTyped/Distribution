@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddressCandidateProperties extends StObject {
   
   /**
-    * Address of the candidate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#address)
-    */
+  		 * Address of the candidate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#address)
+  		 */
   var address: js.UndefOr[String] = js.undefined
   
   /**
-    * Name value pairs of field name and field value as defined in `outFields` in [locator.addressToLocations()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#attributes)
-    */
+  		 * Name value pairs of field name and field value as defined in `outFields` in [locator.addressToLocations()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#attributes)
+  		 */
   var attributes: js.UndefOr[Any] = js.undefined
   
   /**
-    * The minimum and maximum X and Y coordinates of a bounding box of the address candidate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#extent)
-    */
+  		 * The minimum and maximum X and Y coordinates of a bounding box of the address candidate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#extent)
+  		 */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) object representing the location of the [address](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#address).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#location)
-    */
+  		 * The [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) object representing the location of the [address](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#address).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#location)
+  		 */
   var location: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * Numeric score between `0` and `100` for geocode candidates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#score)
-    */
+  		 * Numeric score between `0` and `100` for geocode candidates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html#score)
+  		 */
   var score: js.UndefOr[Double] = js.undefined
 }
 object AddressCandidateProperties {

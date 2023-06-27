@@ -9,24 +9,24 @@ trait HeatmapRampElement
      with LegendElement {
   
   /**
-    * The individual color stops rendered in the legend that correspond to the heatmap colorStops in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
-    */
+  		 * The individual color stops rendered in the legend that correspond to the heatmap colorStops in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
+  		 */
   var infos: js.Array[HeatmapRampStop]
   
   /**
-    * The title of the heatmap ramp as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
-    */
+  		 * The title of the heatmap ramp as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
+  		 */
   var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
-    * The type of this element is always `heatmap-ramp`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
-    */
+  		 * The type of this element is always `heatmap-ramp`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
+  		 */
   var `type`: String
 }
 object HeatmapRampElement {

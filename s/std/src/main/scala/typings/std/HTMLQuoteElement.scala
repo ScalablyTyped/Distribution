@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating quoting elements, like <blockquote> and <q>, but not the <cite> element. */
+/**
+  * Provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating quoting elements, like <blockquote> and <q>, but not the <cite> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLQuoteElement)
+  */
 @js.native
 trait HTMLQuoteElement
   extends StObject
@@ -21,7 +25,11 @@ trait HTMLQuoteElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Sets or retrieves reference information about the object. */
+  /**
+    * Sets or retrieves reference information about the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLQuoteElement/cite)
+    */
   /* standard dom */
   var cite: java.lang.String = js.native
   

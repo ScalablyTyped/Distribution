@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopsByInterval extends StObject {
   
   /**
-    * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
-    */
+  		 * Specifies a granularity of temporal data and allows you to visualize the data at specified intervals.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
+  		 */
   var interval: TimeInterval
   
   /**
-    * A period of time with definitive start and end dates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
-    */
+  		 * A period of time with definitive start and end dates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByInterval)
+  		 */
   var timeExtent: js.UndefOr[TimeExtent] = js.undefined
 }
 object StopsByInterval {

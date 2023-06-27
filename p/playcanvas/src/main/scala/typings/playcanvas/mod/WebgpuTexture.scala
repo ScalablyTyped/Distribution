@@ -55,6 +55,8 @@ trait WebgpuTexture extends StObject {
   
   def loseContext(): Unit = js.native
   
+  def propertyChanged(flag: Any): Unit = js.native
+  
   /**
     * An array of samplers, addressed by SAMPLETYPE_*** constant, allowing texture to be sampled
     * using different samplers. Most textures are sampled as interpolated floats, but some can
@@ -84,7 +86,7 @@ trait WebgpuTexture extends StObject {
     */
   def uploadImmediate(device: WebgpuGraphicsDevice, texture: Texture): Unit = js.native
   
-  def uploadTypedArrayData(wgpu: Any, data: Any): Unit = js.native
+  def uploadTypedArrayData(wgpu: Any, data: Any, mipLevel: Any, face: Any): Unit = js.native
   
   /**
     * @type {GPUTextureView}

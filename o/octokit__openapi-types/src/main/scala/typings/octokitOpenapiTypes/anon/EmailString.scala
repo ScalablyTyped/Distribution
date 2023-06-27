@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmailString extends StObject {
   
+  /**
+    * Format: email
+    * @description Git email address of the commit's committer
+    * @example monalisa.octocat@example.com
+    */
   var email: String
   
+  /**
+    * @description Name of the commit's committer
+    * @example Monalisa Octocat
+    */
   var name: String
 }
 object EmailString {

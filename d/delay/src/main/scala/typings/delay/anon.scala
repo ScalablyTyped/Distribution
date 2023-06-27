@@ -1,6 +1,6 @@
 package typings.delay
 
-import typings.delay.mod.AbortSignal
+import typings.delay.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,78 +32,10 @@ object anon {
     }
   }
   
-  trait Once extends StObject {
+  @js.native
+  trait FnCall extends StObject {
     
-    var once: js.UndefOr[Boolean] = js.undefined
-  }
-  object Once {
-    
-    inline def apply(): Once = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Once]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Once] (val x: Self) extends AnyVal {
-      
-      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
-      
-      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
-    }
-  }
-  
-  /* Inlined delay.delay.Options & {  value :unknown | undefined} */
-  trait Optionsvalueunknownundefi extends StObject {
-    
-    /**
-    		An optional AbortSignal to abort the delay.
-    		If aborted, the Promise will be rejected with an AbortError.
-    		*/
-    var signal: js.UndefOr[AbortSignal] = js.undefined
-    
-    /**
-    			Value to reject in the returned promise.
-    			*/
-    var value: js.UndefOr[Any] = js.undefined
-  }
-  object Optionsvalueunknownundefi {
-    
-    inline def apply(): Optionsvalueunknownundefi = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Optionsvalueunknownundefi]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Optionsvalueunknownundefi] (val x: Self) extends AnyVal {
-      
-      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
-      
-      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  trait Value[T] extends StObject {
-    
-    /**
-    			Value to resolve in the returned promise.
-    			*/
-    var value: T
-  }
-  object Value {
-    
-    inline def apply[T](value: T): Value[T] = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
-      
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
+    def apply[T](milliseconds: Double): js.Promise[T] = js.native
+    def apply[T](milliseconds: Double, options: Options[T]): js.Promise[T] = js.native
   }
 }

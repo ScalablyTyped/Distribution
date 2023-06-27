@@ -62,7 +62,7 @@ open class ColumnSet protected () extends StObject {
   
   /**
     * Sets the AllColumns property.
-    * @params allColumns A boolean value.
+    * @param allColumns A boolean value.
     */
   def setAllColumns(allColumns: scala.Boolean): Unit = js.native
   

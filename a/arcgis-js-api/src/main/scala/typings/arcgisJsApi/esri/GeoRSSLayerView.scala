@@ -10,10 +10,10 @@ trait GeoRSSLayerView
      with LayerView {
   
   /**
-    * Highlights the given feature(s).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoRSSLayerView.html#highlight)
-    */
+  		 * Highlights the given feature(s).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoRSSLayerView.html#highlight)
+  		 */
   def highlight(): Handle = js.native
   def highlight(target: js.Array[Graphic]): Handle = js.native
   def highlight(target: Graphic): Handle = js.native

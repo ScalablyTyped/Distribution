@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "yaml" : "2.2.2"
+      "yaml" : "2.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "yaml" : "2.2.2"
+      "yaml" : "2.3.1"
     }
   ],
   "compile-devDependencies" : [

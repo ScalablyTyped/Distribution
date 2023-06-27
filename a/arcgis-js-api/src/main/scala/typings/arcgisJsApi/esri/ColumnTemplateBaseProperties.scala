@@ -12,62 +12,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColumnTemplateBaseProperties extends StObject {
   
   /**
-    * Controls the sort order of the column.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#direction)
-    */
+  		 * Controls the sort order of the column.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#direction)
+  		 */
   var direction: js.UndefOr[asc_ | desc_ | Null] = js.undefined
   
   /**
-    * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#initialSortPriority)
-    */
+  		 * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#initialSortPriority)
+  		 */
   var initialSortPriority: js.UndefOr[Double] = js.undefined
   
   /**
-    * A string value containing the column alias.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#label)
-    */
+  		 * A string value containing the column alias.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Set this object to customize the column's menu content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#menuConfig)
-    */
+  		 * Set this object to customize the column's menu content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#menuConfig)
+  		 */
   var menuConfig: js.UndefOr[ButtonMenuConfig] = js.undefined
   
   /**
-    * Indicates whether the field column can be sorted.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#sortable)
-    */
+  		 * Indicates whether the field column can be sorted.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#sortable)
+  		 */
   var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Aligns the columns cell content horizontally.
-    *
-    * @default start
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#textAlign)
-    */
+  		 * Aligns the columns cell content horizontally.
+  		 *
+  		 * @default start
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#textAlign)
+  		 */
   var textAlign: js.UndefOr[start | center_ | end] = js.undefined
   
   /**
-    * Indicates whether the column is visible.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#visible)
-    */
+  		 * Indicates whether the column is visible.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplateBase.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ColumnTemplateBaseProperties {

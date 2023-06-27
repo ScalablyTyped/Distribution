@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vue-component-type-helpers" : "1.8.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vue-component-type-helpers" : "1.8.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

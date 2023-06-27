@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-uid" : "2.3.2"
+      "react-uid" : "2.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-uid" : "2.3.2"
+      "react-uid" : "2.3.3"
     }
   ],
   "compile-devDependencies" : [

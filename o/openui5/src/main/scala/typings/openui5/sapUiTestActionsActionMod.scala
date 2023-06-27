@@ -91,7 +91,7 @@ object sapUiTestActionsActionMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the matcher is matching - will get an instance of sap.ui.core.Control as parameter Should be
       * overwritten by subclasses
@@ -104,7 +104,7 @@ object sapUiTestActionsActionMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Gets current value of property {@link #getIdSuffix idSuffix}.
       *
@@ -119,7 +119,7 @@ object sapUiTestActionsActionMod {
     def getIdSuffix(): String = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Sets a new value for property {@link #getIdSuffix idSuffix}.
       *
@@ -144,7 +144,7 @@ object sapUiTestActionsActionMod {
        with ManagedObjectSettings {
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Use this only if the target property or the default of the action does not work for your control. The
       * id suffix of the DOM Element the press action will be executed on. For most of the controls you do not

@@ -44,21 +44,21 @@ open class Reminder ()
     * @see https://docs.scriptable.app/reminder/#completiondate
     */
   /* CompleteClass */
-  var completionDate: js.Date = js.native
+  var completionDate: js.Date | Null = js.native
   
   /**
     * _Creation date of reminder._
     * @see https://docs.scriptable.app/reminder/#creationdate
     */
   /* CompleteClass */
-  var creationDate: js.Date = js.native
+  var creationDate: js.Date | Null = js.native
   
   /**
     * _Due date of reminder._
     * @see https://docs.scriptable.app/reminder/#duedate
     */
   /* CompleteClass */
-  var dueDate: js.Date = js.native
+  var dueDate: js.Date | Null = js.native
   
   /**
     * _Whether the due date includes a time._
@@ -89,13 +89,6 @@ open class Reminder ()
     */
   /* CompleteClass */
   var isOverdue: Boolean = js.native
-  
-  /**
-    * _Notes associated with reminder._
-    * @see https://docs.scriptable.app/reminder/#notes
-    */
-  /* CompleteClass */
-  var notes: String = js.native
   
   /**
     * _Priority of reminder._

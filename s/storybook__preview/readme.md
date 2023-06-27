@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__preview
 
-Typings are for version 7.0.11
+Typings are for version 7.0.23
 
 
 

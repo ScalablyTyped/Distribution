@@ -20,76 +20,76 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextSymbol3DLayerProperti extends StObject {
   
   /**
-    * The background of the text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
-    */
+  		 * The background of the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
+  		 */
   var background: js.UndefOr[TextSymbol3DLayerBackgroundProperties] = js.undefined
   
   /**
-    * The font of the text label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#font)
-    */
+  		 * The font of the text label.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#font)
+  		 */
   var font: js.UndefOr[FontProperties] = js.undefined
   
   /**
-    * The halo surrounding the text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
-    */
+  		 * The halo surrounding the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
+  		 */
   var halo: js.UndefOr[TextSymbol3DLayerHaloProperties] = js.undefined
   
   /**
-    * Adjusts the horizontal alignment of the text in multi-lines.
-    *
-    * @default "center"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#horizontalAlignment)
-    */
+  		 * Adjusts the horizontal alignment of the text in multi-lines.
+  		 *
+  		 * @default "center"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#horizontalAlignment)
+  		 */
   var horizontalAlignment: js.UndefOr[left_ | right_ | center_] = js.undefined
   
   /**
-    * The height of the space between each line of text.
-    *
-    * @default 1.0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#lineHeight)
-    */
+  		 * The height of the space between each line of text.
+  		 *
+  		 * @default 1.0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#lineHeight)
+  		 */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    * The material used to color the text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
-    */
+  		 * The material used to color the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
+  		 */
   var material: js.UndefOr[TextSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
-    * Size of the text label in points.
-    *
-    * @default 9
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
-    */
+  		 * Size of the text label in points.
+  		 *
+  		 * @default 9
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The text to be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
-    */
+  		 * The text to be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#text)
+  		 */
   var text: js.UndefOr[String] = js.undefined
   
   var `type`: text
   
   /**
-    * Adjusts the vertical alignment of the text.
-    *
-    * @default "baseline"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#verticalAlignment)
-    */
+  		 * Adjusts the vertical alignment of the text.
+  		 *
+  		 * @default "baseline"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#verticalAlignment)
+  		 */
   var verticalAlignment: js.UndefOr[baseline_ | top_ | middle | bottom_] = js.undefined
 }
 object TextSymbol3DLayerProperti {

@@ -7,23 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Observable[T] extends StObject {
   
+  var getValue: js.UndefOr[js.Function0[T]] = js.native
+  
+  var hasValue: js.UndefOr[js.Function0[Boolean]] = js.native
+  
   def subscribe(): Subscription = js.native
-  def subscribe(observer: Observer[T]): Subscription = js.native
-  def subscribe(onNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
-  def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ Any, Unit]): Subscription = js.native
+  def subscribe(next: js.Function1[/* value */ T, Unit], error: js.Function1[/* error */ Any, Unit]): Subscription = js.native
   def subscribe(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.Function1[/* error */ Any, Unit],
-    onComplete: js.Function0[Unit]
+    next: js.Function1[/* value */ T, Unit],
+    error: js.Function1[/* error */ Any, Unit],
+    complete: js.Function0[Unit]
   ): Subscription = js.native
-  def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: Null, onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Null, onError: js.Function1[/* error */ Any, Unit]): Subscription = js.native
-  def subscribe(onNext: Null, onError: js.Function1[/* error */ Any, Unit], onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Null, onError: Null, onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Null, onError: Unit, onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Unit, onError: js.Function1[/* error */ Any, Unit]): Subscription = js.native
-  def subscribe(onNext: Unit, onError: js.Function1[/* error */ Any, Unit], onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Unit, onError: Null, onComplete: js.Function0[Unit]): Subscription = js.native
-  def subscribe(onNext: Unit, onError: Unit, onComplete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: js.Function1[/* value */ T, Unit], error: Null, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Null, error: js.Function1[/* error */ Any, Unit]): Subscription = js.native
+  def subscribe(next: Null, error: js.Function1[/* error */ Any, Unit], complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Null, error: Null, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Null, error: Unit, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Unit, error: js.Function1[/* error */ Any, Unit]): Subscription = js.native
+  def subscribe(next: Unit, error: js.Function1[/* error */ Any, Unit], complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Unit, error: Null, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(next: Unit, error: Unit, complete: js.Function0[Unit]): Subscription = js.native
+  def subscribe(observerOrNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
+  def subscribe(observerOrNext: Observer[T]): Subscription = js.native
 }

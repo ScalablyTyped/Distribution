@@ -1,6 +1,5 @@
 package typings.playcanvas.mod
 
-import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,35 +24,41 @@ open class AnimController protected () extends StObject {
     * @param {object[]} states - The list of states used to form the controller state graph.
     * @param {object[]} transitions - The list of transitions used to form the controller state
     * graph.
-    * @param {object[]} parameters - The anim components parameters.
     * @param {boolean} activate - Determines whether the anim controller should automatically play
     * once all {@link AnimNodes} are assigned animations.
     * @param {import('../../../core/event-handler.js').EventHandler} eventHandler - The event
     * handler which should be notified with anim events.
-    * @param {Set} consumedTriggers - Used to set triggers back to their default state after they
+    * @param {Function} findParameter - Retrieves a parameter which is used to control the transition between states.
+    * @param {Function} consumeTrigger - Used to set triggers back to their default state after they
     * have been consumed by a transition.
     */
   def this(
     animEvaluator: AnimEvaluator,
     states: js.Array[js.Object],
     transitions: js.Array[js.Object],
-    parameters: js.Array[js.Object],
     activate: Boolean,
     eventHandler: EventHandler,
-    consumedTriggers: Set[Any]
+    findParameter: js.Function,
+    consumeTrigger: js.Function
   ) = this()
   
   var _activate: Boolean = js.native
+  
+  var _activeStateDuration: Double = js.native
+  
+  var _activeStateDurationDirty: Boolean = js.native
   
   var _activeStateName: String = js.native
   
   var _animEvaluator: AnimEvaluator = js.native
   
-  var _consumedTriggers: Set[Any] = js.native
+  var _consumeTrigger: js.Function = js.native
   
   var _currTransitionTime: Double = js.native
   
   var _eventHandler: EventHandler = js.native
+  
+  var _findParameter: js.Function = js.native
   
   def _findState(stateName: Any): Any = js.native
   
@@ -66,8 +71,6 @@ open class AnimController protected () extends StObject {
   def _getActiveStateProgressForTime(time: Any): Double = js.native
   
   var _isTransitioning: Boolean = js.native
-  
-  var _parameters: js.Array[Any] = js.native
   
   var _playing: Boolean = js.native
   

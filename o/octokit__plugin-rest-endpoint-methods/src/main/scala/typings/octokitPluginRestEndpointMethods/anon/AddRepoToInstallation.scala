@@ -51,7 +51,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     */
   @JSName("addRepoToInstallationForAuthenticatedUser")
-  var addRepoToInstallationForAuthenticatedUser_Original: `152`
+  var addRepoToInstallationForAuthenticatedUser_Original: `154`
   
   /**
     * Add a single repository to an installation. The authenticated user must have admin access to the repository.
@@ -60,7 +60,7 @@ trait AddRepoToInstallation extends StObject {
     * @deprecated octokit.rest.apps.addRepoToInstallation() has been renamed to octokit.rest.apps.addRepoToInstallationForAuthenticatedUser() (2021-10-05)
     */
   @JSName("addRepoToInstallation")
-  var addRepoToInstallation_Original: `152`
+  var addRepoToInstallation_Original: `154`
   
   /**
     * OAuth applications and GitHub applications with OAuth authorizations can use this API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) to use this endpoint, where the username is the application `client_id` and the password is its `client_secret`. Invalid tokens will return `404 NOT FOUND`.
@@ -80,7 +80,7 @@ trait AddRepoToInstallation extends StObject {
     * OAuth applications and GitHub applications with OAuth authorizations can use this API method for checking OAuth token validity without exceeding the normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) to use this endpoint, where the username is the application `client_id` and the password is its `client_secret`. Invalid tokens will return `404 NOT FOUND`.
     */
   @JSName("checkToken")
-  var checkToken_Original: `153`
+  var checkToken_Original: `155`
   
   /**
     * Use this endpoint to complete the handshake necessary when implementing the [GitHub App Manifest flow](https://docs.github.com/apps/building-github-apps/creating-github-apps-from-a-manifest/). When you create a GitHub App with the manifest flow, you receive a temporary `code` used to retrieve the GitHub App's `id`, `pem` (private key), and `webhook_secret`.
@@ -100,7 +100,7 @@ trait AddRepoToInstallation extends StObject {
     * Use this endpoint to complete the handshake necessary when implementing the [GitHub App Manifest flow](https://docs.github.com/apps/building-github-apps/creating-github-apps-from-a-manifest/). When you create a GitHub App with the manifest flow, you receive a temporary `code` used to retrieve the GitHub App's `id`, `pem` (private key), and `webhook_secret`.
     */
   @JSName("createFromManifest")
-  var createFromManifest_Original: `154`
+  var createFromManifest_Original: `156`
   
   /**
     * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
@@ -124,7 +124,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("createInstallationAccessToken")
-  var createInstallationAccessToken_Original: `155`
+  var createInstallationAccessToken_Original: `157`
   
   /**
     * OAuth and GitHub application owners can revoke a grant for their application and a specific user. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the OAuth application's `client_id` and `client_secret` as the username and password. You must also provide a valid OAuth `access_token` as an input parameter and the grant for the token's owner will be deleted.
@@ -146,7 +146,7 @@ trait AddRepoToInstallation extends StObject {
     * Deleting an application's grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user's account and will no longer be listed on [the application authorizations settings screen within GitHub](https://github.com/settings/applications#authorized).
     */
   @JSName("deleteAuthorization")
-  var deleteAuthorization_Original: `156`
+  var deleteAuthorization_Original: `158`
   
   /**
     * Uninstalls a GitHub App on a user, organization, or business account. If you prefer to temporarily suspend an app's access to your account's resources, then we recommend the "[Suspend an app installation](https://docs.github.com/rest/reference/apps/#suspend-an-app-installation)" endpoint.
@@ -170,7 +170,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("deleteInstallation")
-  var deleteInstallation_Original: `157`
+  var deleteInstallation_Original: `159`
   
   /**
     * OAuth  or GitHub application owners can revoke a single token for an OAuth application or a GitHub application with an OAuth authorization. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the application's `client_id` and `client_secret` as the username and password.
@@ -190,7 +190,7 @@ trait AddRepoToInstallation extends StObject {
     * OAuth  or GitHub application owners can revoke a single token for an OAuth application or a GitHub application with an OAuth authorization. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the application's `client_id` and `client_secret` as the username and password.
     */
   @JSName("deleteToken")
-  var deleteToken_Original: `158`
+  var deleteToken_Original: `160`
   
   /**
     * Returns the GitHub App associated with the authentication credentials used. To see how many app installations are associated with this GitHub App, see the `installations_count` in the response. For more details about your app's installations, see the "[List installations for the authenticated app](https://docs.github.com/rest/reference/apps#list-installations-for-the-authenticated-app)" endpoint.
@@ -214,7 +214,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getAuthenticated")
-  var getAuthenticated_Original: `159`
+  var getAuthenticated_Original: `161`
   
   /**
     * **Note**: The `:app_slug` is just the URL-friendly name of your GitHub App. You can find this on the settings page for your GitHub App (e.g., `https://github.com/settings/apps/:app_slug`).
@@ -238,7 +238,7 @@ trait AddRepoToInstallation extends StObject {
     * If the GitHub App you specify is public, you can access this endpoint without authenticating. If the GitHub App you specify is private, you must authenticate with a [personal access token](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line/) or an [installation access token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("getBySlug")
-  var getBySlug_Original: `160`
+  var getBySlug_Original: `162`
   
   /**
     * Enables an authenticated GitHub App to find an installation's information using the installation id.
@@ -262,7 +262,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getInstallation")
-  var getInstallation_Original: `161`
+  var getInstallation_Original: `163`
   
   /**
     * Enables an authenticated GitHub App to find the organization's installation information.
@@ -286,7 +286,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getOrgInstallation")
-  var getOrgInstallation_Original: `162`
+  var getOrgInstallation_Original: `164`
   
   /**
     * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
@@ -310,7 +310,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getRepoInstallation")
-  var getRepoInstallation_Original: `163`
+  var getRepoInstallation_Original: `165`
   
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
@@ -351,7 +351,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("getSubscriptionPlanForAccountStubbed")
-  var getSubscriptionPlanForAccountStubbed_Original: `165`
+  var getSubscriptionPlanForAccountStubbed_Original: `167`
   
   /**
     * Shows whether the user or organization account actively subscribes to a plan listed by the authenticated GitHub App. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
@@ -359,7 +359,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("getSubscriptionPlanForAccount")
-  var getSubscriptionPlanForAccount_Original: `164`
+  var getSubscriptionPlanForAccount_Original: `166`
   
   /**
     * Enables an authenticated GitHub App to find the user’s installation information.
@@ -383,7 +383,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getUserInstallation")
-  var getUserInstallation_Original: `166`
+  var getUserInstallation_Original: `168`
   
   /**
     * Returns the webhook configuration for a GitHub App. For more information about configuring a webhook for your app, see "[Creating a GitHub App](/developers/apps/creating-a-github-app)."
@@ -407,7 +407,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getWebhookConfigForApp")
-  var getWebhookConfigForApp_Original: `167`
+  var getWebhookConfigForApp_Original: `169`
   
   /**
     * Returns a delivery for the webhook configured for a GitHub App.
@@ -431,7 +431,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("getWebhookDelivery")
-  var getWebhookDelivery_Original: `168`
+  var getWebhookDelivery_Original: `170`
   
   /**
     * Returns user and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
@@ -472,7 +472,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listAccountsForPlanStubbed")
-  var listAccountsForPlanStubbed_Original: `170`
+  var listAccountsForPlanStubbed_Original: `172`
   
   /**
     * Returns user and organization accounts associated with the specified plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
@@ -480,7 +480,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listAccountsForPlan")
-  var listAccountsForPlan_Original: `169`
+  var listAccountsForPlan_Original: `171`
   
   /**
     * List repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access for an installation.
@@ -512,7 +512,7 @@ trait AddRepoToInstallation extends StObject {
     * The access the user has to each repository is included in the hash under the `permissions` key.
     */
   @JSName("listInstallationReposForAuthenticatedUser")
-  var listInstallationReposForAuthenticatedUser_Original: `171`
+  var listInstallationReposForAuthenticatedUser_Original: `173`
   
   /**
     * Lists all the pending installation requests for the authenticated GitHub App.
@@ -532,7 +532,7 @@ trait AddRepoToInstallation extends StObject {
     * Lists all the pending installation requests for the authenticated GitHub App.
     */
   @JSName("listInstallationRequestsForAuthenticatedApp")
-  var listInstallationRequestsForAuthenticatedApp_Original: `172`
+  var listInstallationRequestsForAuthenticatedApp_Original: `174`
   
   /**
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
@@ -581,7 +581,7 @@ trait AddRepoToInstallation extends StObject {
     * You can find the permissions for the installation under the `permissions` key.
     */
   @JSName("listInstallationsForAuthenticatedUser")
-  var listInstallationsForAuthenticatedUser_Original: `174`
+  var listInstallationsForAuthenticatedUser_Original: `176`
   
   /**
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
@@ -589,7 +589,7 @@ trait AddRepoToInstallation extends StObject {
     * The permissions the installation has are included under the `permissions` key.
     */
   @JSName("listInstallations")
-  var listInstallations_Original: `173`
+  var listInstallations_Original: `175`
   
   /**
     * Lists all plans that are part of your GitHub Marketplace listing.
@@ -630,7 +630,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listPlansStubbed")
-  var listPlansStubbed_Original: `176`
+  var listPlansStubbed_Original: `178`
   
   /**
     * Lists all plans that are part of your GitHub Marketplace listing.
@@ -638,7 +638,7 @@ trait AddRepoToInstallation extends StObject {
     * GitHub Apps must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) with their client ID and client secret to access this endpoint.
     */
   @JSName("listPlans")
-  var listPlans_Original: `175`
+  var listPlans_Original: `177`
   
   /**
     * List repositories that an app installation can access.
@@ -662,7 +662,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use an [installation access token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("listReposAccessibleToInstallation")
-  var listReposAccessibleToInstallation_Original: `177`
+  var listReposAccessibleToInstallation_Original: `179`
   
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/).
@@ -697,13 +697,13 @@ trait AddRepoToInstallation extends StObject {
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     */
   @JSName("listSubscriptionsForAuthenticatedUserStubbed")
-  var listSubscriptionsForAuthenticatedUserStubbed_Original: `179`
+  var listSubscriptionsForAuthenticatedUserStubbed_Original: `181`
   
   /**
     * Lists the active subscriptions for the authenticated user. You must use a [user-to-server OAuth access token](https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps/#identifying-users-on-your-site), created for a user who has authorized your GitHub App, to access this endpoint. . OAuth Apps must authenticate using an [OAuth token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/).
     */
   @JSName("listSubscriptionsForAuthenticatedUser")
-  var listSubscriptionsForAuthenticatedUser_Original: `178`
+  var listSubscriptionsForAuthenticatedUser_Original: `180`
   
   /**
     * Returns a list of webhook deliveries for the webhook configured for a GitHub App.
@@ -727,7 +727,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("listWebhookDeliveries")
-  var listWebhookDeliveries_Original: `180`
+  var listWebhookDeliveries_Original: `182`
   
   /**
     * Redeliver a delivery for the webhook configured for a GitHub App.
@@ -751,10 +751,10 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("redeliverWebhookDelivery")
-  var redeliverWebhookDelivery_Original: `181`
+  var redeliverWebhookDelivery_Original: `183`
   
   /**
-    * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
+    * Remove a single repository from an installation. The authenticated user must have admin access to the repository. The installation must have the `repository_selection` of `selected`.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     * @deprecated octokit.rest.apps.removeRepoFromInstallation() has been renamed to octokit.rest.apps.removeRepoFromInstallationForAuthenticatedUser() (2021-10-05)
@@ -772,7 +772,7 @@ trait AddRepoToInstallation extends StObject {
   ]
   
   /**
-    * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
+    * Remove a single repository from an installation. The authenticated user must have admin access to the repository. The installation must have the `repository_selection` of `selected`.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     */
@@ -788,21 +788,21 @@ trait AddRepoToInstallation extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/installations/{installation_id}/repositories/{repository_id}']['response'] */ js.Any
   ]
   /**
-    * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
+    * Remove a single repository from an installation. The authenticated user must have admin access to the repository. The installation must have the `repository_selection` of `selected`.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     */
   @JSName("removeRepoFromInstallationForAuthenticatedUser")
-  var removeRepoFromInstallationForAuthenticatedUser_Original: `182`
+  var removeRepoFromInstallationForAuthenticatedUser_Original: `184`
   
   /**
-    * Remove a single repository from an installation. The authenticated user must have admin access to the repository.
+    * Remove a single repository from an installation. The authenticated user must have admin access to the repository. The installation must have the `repository_selection` of `selected`.
     *
     * You must use a personal access token (which you can create via the [command line](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token) or [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication)) to access this endpoint.
     * @deprecated octokit.rest.apps.removeRepoFromInstallation() has been renamed to octokit.rest.apps.removeRepoFromInstallationForAuthenticatedUser() (2021-10-05)
     */
   @JSName("removeRepoFromInstallation")
-  var removeRepoFromInstallation_Original: `182`
+  var removeRepoFromInstallation_Original: `184`
   
   /**
     * OAuth applications and GitHub applications with OAuth authorizations can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
@@ -822,7 +822,7 @@ trait AddRepoToInstallation extends StObject {
     * OAuth applications and GitHub applications with OAuth authorizations can use this API method to reset a valid OAuth token without end-user involvement. Applications must save the "token" property in the response because changes take effect immediately. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the application's `client_id` and `client_secret` as the username and password. Invalid tokens will return `404 NOT FOUND`.
     */
   @JSName("resetToken")
-  var resetToken_Original: `183`
+  var resetToken_Original: `185`
   
   /**
     * Revokes the installation token you're using to authenticate as an installation and access this endpoint.
@@ -850,7 +850,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use an [installation access token](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-an-installation) to access this endpoint.
     */
   @JSName("revokeInstallationAccessToken")
-  var revokeInstallationAccessToken_Original: `184`
+  var revokeInstallationAccessToken_Original: `186`
   
   /**
     * Use a non-scoped user-to-server access token to create a repository scoped and/or permission scoped user-to-server access token. You can specify which repositories the token can access and which permissions are granted to the token. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the `client_id` and `client_secret` of the GitHub App as the username and password. Invalid tokens will return `404 NOT FOUND`.
@@ -870,7 +870,7 @@ trait AddRepoToInstallation extends StObject {
     * Use a non-scoped user-to-server access token to create a repository scoped and/or permission scoped user-to-server access token. You can specify which repositories the token can access and which permissions are granted to the token. You must use [Basic Authentication](https://docs.github.com/rest/overview/other-authentication-methods#basic-authentication) when accessing this endpoint, using the `client_id` and `client_secret` of the GitHub App as the username and password. Invalid tokens will return `404 NOT FOUND`.
     */
   @JSName("scopeToken")
-  var scopeToken_Original: `185`
+  var scopeToken_Original: `187`
   
   /**
     * Suspends a GitHub App on a user, organization, or business account, which blocks the app from accessing the account's resources. When a GitHub App is suspended, the app's access to the GitHub API or webhook events is blocked for that account.
@@ -894,7 +894,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("suspendInstallation")
-  var suspendInstallation_Original: `186`
+  var suspendInstallation_Original: `188`
   
   /**
     * Removes a GitHub App installation suspension.
@@ -918,7 +918,7 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("unsuspendInstallation")
-  var unsuspendInstallation_Original: `187`
+  var unsuspendInstallation_Original: `189`
   
   /**
     * Updates the webhook configuration for a GitHub App. For more information about configuring a webhook for your app, see "[Creating a GitHub App](/developers/apps/creating-a-github-app)."
@@ -942,50 +942,50 @@ trait AddRepoToInstallation extends StObject {
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
   @JSName("updateWebhookConfigForApp")
-  var updateWebhookConfigForApp_Original: `188`
+  var updateWebhookConfigForApp_Original: `190`
 }
 object AddRepoToInstallation {
   
   inline def apply(
-    addRepoToInstallation: `152`,
-    addRepoToInstallationForAuthenticatedUser: `152`,
-    checkToken: `153`,
-    createFromManifest: `154`,
-    createInstallationAccessToken: `155`,
-    deleteAuthorization: `156`,
-    deleteInstallation: `157`,
-    deleteToken: `158`,
-    getAuthenticated: `159`,
-    getBySlug: `160`,
-    getInstallation: `161`,
-    getOrgInstallation: `162`,
-    getRepoInstallation: `163`,
-    getSubscriptionPlanForAccount: `164`,
-    getSubscriptionPlanForAccountStubbed: `165`,
-    getUserInstallation: `166`,
-    getWebhookConfigForApp: `167`,
-    getWebhookDelivery: `168`,
-    listAccountsForPlan: `169`,
-    listAccountsForPlanStubbed: `170`,
-    listInstallationReposForAuthenticatedUser: `171`,
-    listInstallationRequestsForAuthenticatedApp: `172`,
-    listInstallations: `173`,
-    listInstallationsForAuthenticatedUser: `174`,
-    listPlans: `175`,
-    listPlansStubbed: `176`,
-    listReposAccessibleToInstallation: `177`,
-    listSubscriptionsForAuthenticatedUser: `178`,
-    listSubscriptionsForAuthenticatedUserStubbed: `179`,
-    listWebhookDeliveries: `180`,
-    redeliverWebhookDelivery: `181`,
-    removeRepoFromInstallation: `182`,
-    removeRepoFromInstallationForAuthenticatedUser: `182`,
-    resetToken: `183`,
-    revokeInstallationAccessToken: `184`,
-    scopeToken: `185`,
-    suspendInstallation: `186`,
-    unsuspendInstallation: `187`,
-    updateWebhookConfigForApp: `188`
+    addRepoToInstallation: `154`,
+    addRepoToInstallationForAuthenticatedUser: `154`,
+    checkToken: `155`,
+    createFromManifest: `156`,
+    createInstallationAccessToken: `157`,
+    deleteAuthorization: `158`,
+    deleteInstallation: `159`,
+    deleteToken: `160`,
+    getAuthenticated: `161`,
+    getBySlug: `162`,
+    getInstallation: `163`,
+    getOrgInstallation: `164`,
+    getRepoInstallation: `165`,
+    getSubscriptionPlanForAccount: `166`,
+    getSubscriptionPlanForAccountStubbed: `167`,
+    getUserInstallation: `168`,
+    getWebhookConfigForApp: `169`,
+    getWebhookDelivery: `170`,
+    listAccountsForPlan: `171`,
+    listAccountsForPlanStubbed: `172`,
+    listInstallationReposForAuthenticatedUser: `173`,
+    listInstallationRequestsForAuthenticatedApp: `174`,
+    listInstallations: `175`,
+    listInstallationsForAuthenticatedUser: `176`,
+    listPlans: `177`,
+    listPlansStubbed: `178`,
+    listReposAccessibleToInstallation: `179`,
+    listSubscriptionsForAuthenticatedUser: `180`,
+    listSubscriptionsForAuthenticatedUserStubbed: `181`,
+    listWebhookDeliveries: `182`,
+    redeliverWebhookDelivery: `183`,
+    removeRepoFromInstallation: `184`,
+    removeRepoFromInstallationForAuthenticatedUser: `184`,
+    resetToken: `185`,
+    revokeInstallationAccessToken: `186`,
+    scopeToken: `187`,
+    suspendInstallation: `188`,
+    unsuspendInstallation: `189`,
+    updateWebhookConfigForApp: `190`
   ): AddRepoToInstallation = {
     val __obj = js.Dynamic.literal(addRepoToInstallation = addRepoToInstallation.asInstanceOf[js.Any], addRepoToInstallationForAuthenticatedUser = addRepoToInstallationForAuthenticatedUser.asInstanceOf[js.Any], checkToken = checkToken.asInstanceOf[js.Any], createFromManifest = createFromManifest.asInstanceOf[js.Any], createInstallationAccessToken = createInstallationAccessToken.asInstanceOf[js.Any], deleteAuthorization = deleteAuthorization.asInstanceOf[js.Any], deleteInstallation = deleteInstallation.asInstanceOf[js.Any], deleteToken = deleteToken.asInstanceOf[js.Any], getAuthenticated = getAuthenticated.asInstanceOf[js.Any], getBySlug = getBySlug.asInstanceOf[js.Any], getInstallation = getInstallation.asInstanceOf[js.Any], getOrgInstallation = getOrgInstallation.asInstanceOf[js.Any], getRepoInstallation = getRepoInstallation.asInstanceOf[js.Any], getSubscriptionPlanForAccount = getSubscriptionPlanForAccount.asInstanceOf[js.Any], getSubscriptionPlanForAccountStubbed = getSubscriptionPlanForAccountStubbed.asInstanceOf[js.Any], getUserInstallation = getUserInstallation.asInstanceOf[js.Any], getWebhookConfigForApp = getWebhookConfigForApp.asInstanceOf[js.Any], getWebhookDelivery = getWebhookDelivery.asInstanceOf[js.Any], listAccountsForPlan = listAccountsForPlan.asInstanceOf[js.Any], listAccountsForPlanStubbed = listAccountsForPlanStubbed.asInstanceOf[js.Any], listInstallationReposForAuthenticatedUser = listInstallationReposForAuthenticatedUser.asInstanceOf[js.Any], listInstallationRequestsForAuthenticatedApp = listInstallationRequestsForAuthenticatedApp.asInstanceOf[js.Any], listInstallations = listInstallations.asInstanceOf[js.Any], listInstallationsForAuthenticatedUser = listInstallationsForAuthenticatedUser.asInstanceOf[js.Any], listPlans = listPlans.asInstanceOf[js.Any], listPlansStubbed = listPlansStubbed.asInstanceOf[js.Any], listReposAccessibleToInstallation = listReposAccessibleToInstallation.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUser = listSubscriptionsForAuthenticatedUser.asInstanceOf[js.Any], listSubscriptionsForAuthenticatedUserStubbed = listSubscriptionsForAuthenticatedUserStubbed.asInstanceOf[js.Any], listWebhookDeliveries = listWebhookDeliveries.asInstanceOf[js.Any], redeliverWebhookDelivery = redeliverWebhookDelivery.asInstanceOf[js.Any], removeRepoFromInstallation = removeRepoFromInstallation.asInstanceOf[js.Any], removeRepoFromInstallationForAuthenticatedUser = removeRepoFromInstallationForAuthenticatedUser.asInstanceOf[js.Any], resetToken = resetToken.asInstanceOf[js.Any], revokeInstallationAccessToken = revokeInstallationAccessToken.asInstanceOf[js.Any], scopeToken = scopeToken.asInstanceOf[js.Any], suspendInstallation = suspendInstallation.asInstanceOf[js.Any], unsuspendInstallation = unsuspendInstallation.asInstanceOf[js.Any], updateWebhookConfigForApp = updateWebhookConfigForApp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRepoToInstallation]
@@ -994,82 +994,82 @@ object AddRepoToInstallation {
   @scala.inline
   implicit open class MutableBuilder[Self <: AddRepoToInstallation] (val x: Self) extends AnyVal {
     
-    inline def setAddRepoToInstallation(value: `152`): Self = StObject.set(x, "addRepoToInstallation", value.asInstanceOf[js.Any])
+    inline def setAddRepoToInstallation(value: `154`): Self = StObject.set(x, "addRepoToInstallation", value.asInstanceOf[js.Any])
     
-    inline def setAddRepoToInstallationForAuthenticatedUser(value: `152`): Self = StObject.set(x, "addRepoToInstallationForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setAddRepoToInstallationForAuthenticatedUser(value: `154`): Self = StObject.set(x, "addRepoToInstallationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCheckToken(value: `153`): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
+    inline def setCheckToken(value: `155`): Self = StObject.set(x, "checkToken", value.asInstanceOf[js.Any])
     
-    inline def setCreateFromManifest(value: `154`): Self = StObject.set(x, "createFromManifest", value.asInstanceOf[js.Any])
+    inline def setCreateFromManifest(value: `156`): Self = StObject.set(x, "createFromManifest", value.asInstanceOf[js.Any])
     
-    inline def setCreateInstallationAccessToken(value: `155`): Self = StObject.set(x, "createInstallationAccessToken", value.asInstanceOf[js.Any])
+    inline def setCreateInstallationAccessToken(value: `157`): Self = StObject.set(x, "createInstallationAccessToken", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAuthorization(value: `156`): Self = StObject.set(x, "deleteAuthorization", value.asInstanceOf[js.Any])
+    inline def setDeleteAuthorization(value: `158`): Self = StObject.set(x, "deleteAuthorization", value.asInstanceOf[js.Any])
     
-    inline def setDeleteInstallation(value: `157`): Self = StObject.set(x, "deleteInstallation", value.asInstanceOf[js.Any])
+    inline def setDeleteInstallation(value: `159`): Self = StObject.set(x, "deleteInstallation", value.asInstanceOf[js.Any])
     
-    inline def setDeleteToken(value: `158`): Self = StObject.set(x, "deleteToken", value.asInstanceOf[js.Any])
+    inline def setDeleteToken(value: `160`): Self = StObject.set(x, "deleteToken", value.asInstanceOf[js.Any])
     
-    inline def setGetAuthenticated(value: `159`): Self = StObject.set(x, "getAuthenticated", value.asInstanceOf[js.Any])
+    inline def setGetAuthenticated(value: `161`): Self = StObject.set(x, "getAuthenticated", value.asInstanceOf[js.Any])
     
-    inline def setGetBySlug(value: `160`): Self = StObject.set(x, "getBySlug", value.asInstanceOf[js.Any])
+    inline def setGetBySlug(value: `162`): Self = StObject.set(x, "getBySlug", value.asInstanceOf[js.Any])
     
-    inline def setGetInstallation(value: `161`): Self = StObject.set(x, "getInstallation", value.asInstanceOf[js.Any])
+    inline def setGetInstallation(value: `163`): Self = StObject.set(x, "getInstallation", value.asInstanceOf[js.Any])
     
-    inline def setGetOrgInstallation(value: `162`): Self = StObject.set(x, "getOrgInstallation", value.asInstanceOf[js.Any])
+    inline def setGetOrgInstallation(value: `164`): Self = StObject.set(x, "getOrgInstallation", value.asInstanceOf[js.Any])
     
-    inline def setGetRepoInstallation(value: `163`): Self = StObject.set(x, "getRepoInstallation", value.asInstanceOf[js.Any])
+    inline def setGetRepoInstallation(value: `165`): Self = StObject.set(x, "getRepoInstallation", value.asInstanceOf[js.Any])
     
-    inline def setGetSubscriptionPlanForAccount(value: `164`): Self = StObject.set(x, "getSubscriptionPlanForAccount", value.asInstanceOf[js.Any])
+    inline def setGetSubscriptionPlanForAccount(value: `166`): Self = StObject.set(x, "getSubscriptionPlanForAccount", value.asInstanceOf[js.Any])
     
-    inline def setGetSubscriptionPlanForAccountStubbed(value: `165`): Self = StObject.set(x, "getSubscriptionPlanForAccountStubbed", value.asInstanceOf[js.Any])
+    inline def setGetSubscriptionPlanForAccountStubbed(value: `167`): Self = StObject.set(x, "getSubscriptionPlanForAccountStubbed", value.asInstanceOf[js.Any])
     
-    inline def setGetUserInstallation(value: `166`): Self = StObject.set(x, "getUserInstallation", value.asInstanceOf[js.Any])
+    inline def setGetUserInstallation(value: `168`): Self = StObject.set(x, "getUserInstallation", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookConfigForApp(value: `167`): Self = StObject.set(x, "getWebhookConfigForApp", value.asInstanceOf[js.Any])
+    inline def setGetWebhookConfigForApp(value: `169`): Self = StObject.set(x, "getWebhookConfigForApp", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookDelivery(value: `168`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setGetWebhookDelivery(value: `170`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setListAccountsForPlan(value: `169`): Self = StObject.set(x, "listAccountsForPlan", value.asInstanceOf[js.Any])
+    inline def setListAccountsForPlan(value: `171`): Self = StObject.set(x, "listAccountsForPlan", value.asInstanceOf[js.Any])
     
-    inline def setListAccountsForPlanStubbed(value: `170`): Self = StObject.set(x, "listAccountsForPlanStubbed", value.asInstanceOf[js.Any])
+    inline def setListAccountsForPlanStubbed(value: `172`): Self = StObject.set(x, "listAccountsForPlanStubbed", value.asInstanceOf[js.Any])
     
-    inline def setListInstallationReposForAuthenticatedUser(value: `171`): Self = StObject.set(x, "listInstallationReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInstallationReposForAuthenticatedUser(value: `173`): Self = StObject.set(x, "listInstallationReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListInstallationRequestsForAuthenticatedApp(value: `172`): Self = StObject.set(x, "listInstallationRequestsForAuthenticatedApp", value.asInstanceOf[js.Any])
+    inline def setListInstallationRequestsForAuthenticatedApp(value: `174`): Self = StObject.set(x, "listInstallationRequestsForAuthenticatedApp", value.asInstanceOf[js.Any])
     
-    inline def setListInstallations(value: `173`): Self = StObject.set(x, "listInstallations", value.asInstanceOf[js.Any])
+    inline def setListInstallations(value: `175`): Self = StObject.set(x, "listInstallations", value.asInstanceOf[js.Any])
     
-    inline def setListInstallationsForAuthenticatedUser(value: `174`): Self = StObject.set(x, "listInstallationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListInstallationsForAuthenticatedUser(value: `176`): Self = StObject.set(x, "listInstallationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListPlans(value: `175`): Self = StObject.set(x, "listPlans", value.asInstanceOf[js.Any])
+    inline def setListPlans(value: `177`): Self = StObject.set(x, "listPlans", value.asInstanceOf[js.Any])
     
-    inline def setListPlansStubbed(value: `176`): Self = StObject.set(x, "listPlansStubbed", value.asInstanceOf[js.Any])
+    inline def setListPlansStubbed(value: `178`): Self = StObject.set(x, "listPlansStubbed", value.asInstanceOf[js.Any])
     
-    inline def setListReposAccessibleToInstallation(value: `177`): Self = StObject.set(x, "listReposAccessibleToInstallation", value.asInstanceOf[js.Any])
+    inline def setListReposAccessibleToInstallation(value: `179`): Self = StObject.set(x, "listReposAccessibleToInstallation", value.asInstanceOf[js.Any])
     
-    inline def setListSubscriptionsForAuthenticatedUser(value: `178`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListSubscriptionsForAuthenticatedUser(value: `180`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListSubscriptionsForAuthenticatedUserStubbed(value: `179`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUserStubbed", value.asInstanceOf[js.Any])
+    inline def setListSubscriptionsForAuthenticatedUserStubbed(value: `181`): Self = StObject.set(x, "listSubscriptionsForAuthenticatedUserStubbed", value.asInstanceOf[js.Any])
     
-    inline def setListWebhookDeliveries(value: `180`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
+    inline def setListWebhookDeliveries(value: `182`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
     
-    inline def setRedeliverWebhookDelivery(value: `181`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setRedeliverWebhookDelivery(value: `183`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRepoFromInstallation(value: `182`): Self = StObject.set(x, "removeRepoFromInstallation", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoFromInstallation(value: `184`): Self = StObject.set(x, "removeRepoFromInstallation", value.asInstanceOf[js.Any])
     
-    inline def setRemoveRepoFromInstallationForAuthenticatedUser(value: `182`): Self = StObject.set(x, "removeRepoFromInstallationForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setRemoveRepoFromInstallationForAuthenticatedUser(value: `184`): Self = StObject.set(x, "removeRepoFromInstallationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setResetToken(value: `183`): Self = StObject.set(x, "resetToken", value.asInstanceOf[js.Any])
+    inline def setResetToken(value: `185`): Self = StObject.set(x, "resetToken", value.asInstanceOf[js.Any])
     
-    inline def setRevokeInstallationAccessToken(value: `184`): Self = StObject.set(x, "revokeInstallationAccessToken", value.asInstanceOf[js.Any])
+    inline def setRevokeInstallationAccessToken(value: `186`): Self = StObject.set(x, "revokeInstallationAccessToken", value.asInstanceOf[js.Any])
     
-    inline def setScopeToken(value: `185`): Self = StObject.set(x, "scopeToken", value.asInstanceOf[js.Any])
+    inline def setScopeToken(value: `187`): Self = StObject.set(x, "scopeToken", value.asInstanceOf[js.Any])
     
-    inline def setSuspendInstallation(value: `186`): Self = StObject.set(x, "suspendInstallation", value.asInstanceOf[js.Any])
+    inline def setSuspendInstallation(value: `188`): Self = StObject.set(x, "suspendInstallation", value.asInstanceOf[js.Any])
     
-    inline def setUnsuspendInstallation(value: `187`): Self = StObject.set(x, "unsuspendInstallation", value.asInstanceOf[js.Any])
+    inline def setUnsuspendInstallation(value: `189`): Self = StObject.set(x, "unsuspendInstallation", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhookConfigForApp(value: `188`): Self = StObject.set(x, "updateWebhookConfigForApp", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhookConfigForApp(value: `190`): Self = StObject.set(x, "updateWebhookConfigForApp", value.asInstanceOf[js.Any])
   }
 }

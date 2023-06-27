@@ -12,7 +12,7 @@ object sapMInputRendererMod extends Shortcut {
   val default: InputRenderer = js.native
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Input renderer.
     *
@@ -21,7 +21,7 @@ object sapMInputRendererMod extends Shortcut {
   trait InputRenderer extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds inner css classes to the input field
       */
@@ -37,7 +37,7 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds control specific class
       */
@@ -53,7 +53,7 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds extra styles to the wrapper of the input field.
       */
@@ -69,7 +69,7 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the inner aria describedby ids for the accessibility.
       */
@@ -81,7 +81,7 @@ object sapMInputRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns aria accessibility role for the control. Hook for the subclasses.
       */
@@ -93,7 +93,7 @@ object sapMInputRendererMod extends Shortcut {
     ): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the decorations of the input - description and value-help icon.
       */
@@ -109,7 +109,7 @@ object sapMInputRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * add extra attributes to Input
       */

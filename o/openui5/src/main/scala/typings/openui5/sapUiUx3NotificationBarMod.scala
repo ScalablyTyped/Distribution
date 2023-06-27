@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Show
-import typings.openui5.anon.Status
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -152,13 +150,13 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit]
     ): this.type = js.native
     def attachDisplay(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NotificationBar` itself
       */
@@ -184,7 +182,7 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit]
     ): this.type = js.native
     def attachDisplay(
       /**
@@ -195,7 +193,7 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NotificationBar` itself
       */
@@ -203,7 +201,7 @@ object sapUiUx3NotificationBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:resize resize} event of this `sap.ui.ux3.NotificationBar`.
       *
@@ -220,20 +218,20 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NotificationBar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:resize resize} event of this `sap.ui.ux3.NotificationBar`.
       *
@@ -255,7 +253,7 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
@@ -266,7 +264,7 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NotificationBar` itself
       */
@@ -298,13 +296,13 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit]
     ): this.type = js.native
     def detachDisplay(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarDisplayEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -312,7 +310,7 @@ object sapUiUx3NotificationBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Detaches event handler `fnFunction` from the {@link #event:resize resize} event of this `sap.ui.ux3.NotificationBar`.
       *
@@ -324,13 +322,13 @@ object sapUiUx3NotificationBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit]
     ): this.type = js.native
     def detachResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationBarResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -338,34 +336,38 @@ object sapUiUx3NotificationBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:display display} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireDisplay(): this.type = js.native
-    def fireDisplay(/**
+    def fireDisplay(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Show): this.type = js.native
+    mParameters: NotificationBar$DisplayEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.12.2
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireResize(): this.type = js.native
-    def fireResize(/**
+    def fireResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Status): this.type = js.native
+    mParameters: NotificationBar$ResizeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.24.5
+      * @since 1.24.5
       *
       * Gets current value of property {@link #getAlwaysShowToggler alwaysShowToggler}.
       *
@@ -480,7 +482,7 @@ object sapUiUx3NotificationBarMod {
     ): typings.openui5.sapUiCoreElementMod.default | Null = js.native
     
     /**
-      * @SINCE 1.22.11
+      * @since 1.22.11
       */
     def setAlwaysShowToggler(
       /**
@@ -542,12 +544,71 @@ object sapUiUx3NotificationBarMod {
     sVisibleStatus: NotificationBarStatus): this.type = js.native
   }
   
+  trait NotificationBar$DisplayEventParameters extends StObject {
+    
+    /**
+      * Indicates if the bar wants to be shown or hidden
+      */
+    var show: js.UndefOr[Boolean] = js.undefined
+  }
+  object NotificationBar$DisplayEventParameters {
+    
+    inline def apply(): NotificationBar$DisplayEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NotificationBar$DisplayEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationBar$DisplayEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    }
+  }
+  
+  trait NotificationBar$ResizeEventParameters extends StObject {
+    
+    /**
+      * The corresponding status to which the bar was resized. The corresponding heights can be taken for the
+      * bar's CSS file.
+      */
+    var status: js.UndefOr[
+        NotificationBarStatus | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NotificationBarStatus * / any */ String)
+      ] = js.undefined
+  }
+  object NotificationBar$ResizeEventParameters {
+    
+    inline def apply(): NotificationBar$ResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NotificationBar$ResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationBar$ResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setStatus(
+        value: NotificationBarStatus | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NotificationBarStatus * / any */ String)
+      ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    }
+  }
+  
+  type NotificationBarDisplayEvent = typings.openui5.sapUiBaseEventMod.default[NotificationBar$DisplayEventParameters]
+  
+  type NotificationBarDisplayEventParameters = NotificationBar$DisplayEventParameters
+  
+  type NotificationBarResizeEvent = typings.openui5.sapUiBaseEventMod.default[NotificationBar$ResizeEventParameters]
+  
+  type NotificationBarResizeEventParameters = NotificationBar$ResizeEventParameters
+  
   trait NotificationBarSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.24.5
+      * @since 1.24.5
       *
       * This property defines if the toggler should be displayed the whole time when the NotificationBar is shown.
       */
@@ -559,7 +620,12 @@ object sapUiUx3NotificationBarMod {
       * Event is fired when the bar wants to be displayed depending on given flag. This allows the application
       * to decide what to do.
       */
-    var display: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var display: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationBar$DisplayEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Notifier that shows messages
@@ -574,13 +640,18 @@ object sapUiUx3NotificationBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * This event is thrown when the bar was resized (to the different valid states: Min, Max, Default, None).
       * The event itself can be used from SAPUI5-version 1.12.2 since there was a bug in the previous versions
       * firing this event.
       */
-    var resize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var resize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationBar$ResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This property enables the bar to be resized by the user.
@@ -610,7 +681,9 @@ object sapUiUx3NotificationBarMod {
       
       inline def setAlwaysShowTogglerUndefined: Self = StObject.set(x, "alwaysShowToggler", js.undefined)
       
-      inline def setDisplay(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+      inline def setDisplay(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationBar$DisplayEventParameters] => Unit
+      ): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
@@ -626,7 +699,9 @@ object sapUiUx3NotificationBarMod {
       
       inline def setNotifiersVarargs(value: typings.openui5.sapUiCoreElementMod.default*): Self = StObject.set(x, "notifiers", js.Array(value*))
       
-      inline def setResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationBar$ResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
       inline def setResizeEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "resizeEnabled", value.asInstanceOf[js.Any])
       

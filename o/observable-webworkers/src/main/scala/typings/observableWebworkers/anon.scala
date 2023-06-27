@@ -35,6 +35,8 @@ object anon {
       * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
       *
       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
       */
     /* standard dom */
     def addEventListener(`type`: String): Unit = js.native
@@ -91,16 +93,23 @@ object anon {
       options: AddEventListenerOptions
     ): Unit = js.native
     
-    /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+    /**
+      * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+      */
     /* standard dom */
     def dispatchEvent(event: Event): Boolean = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker/error_event) */
     /* standard dom */
     var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ ErrorEvent, Any]) | Null = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worker/message_event) */
     /* standard dom */
     var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worker/messageerror_event) */
     /* standard dom */
     var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
     
@@ -109,11 +118,19 @@ object anon {
     /* standard dom */
     def postMessage(message: Any): Unit = js.native
     def postMessage(message: Any, options: StructuredSerializeOptions): Unit = js.native
-    /** Clones message and transmits it to worker's global environment. transfer can be passed as a list of objects that are to be transferred rather than cloned. */
+    /**
+      * Clones message and transmits it to worker's global environment. transfer can be passed as a list of objects that are to be transferred rather than cloned.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worker/postMessage)
+      */
     /* standard dom */
     def postMessage(message: Any, transfer: js.Array[Transferable]): Unit = js.native
     
-    /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+    /**
+      * Removes the event listener in target's event listener list with the same type, callback, and options.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+      */
     /* standard dom */
     def removeEventListener(`type`: String): Unit = js.native
     def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native
@@ -169,7 +186,11 @@ object anon {
       options: EventListenerOptions
     ): Unit = js.native
     
-    /** Aborts worker's associated global environment. */
+    /**
+      * Aborts worker's associated global environment.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worker/terminate)
+      */
     /* standard dom */
     def terminate(): Unit = js.native
   }

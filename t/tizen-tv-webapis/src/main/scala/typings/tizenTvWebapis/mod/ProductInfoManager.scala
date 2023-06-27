@@ -53,11 +53,11 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -77,7 +77,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -95,7 +95,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -113,7 +113,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -131,7 +131,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -149,7 +149,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -167,9 +167,9 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type NotSupportedError, if the device is a BD device.
+    * @throws WebAPIException with error type NotSupportedError, if the device is a BD device.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -187,7 +187,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -205,7 +205,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -223,7 +223,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -243,11 +243,11 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -267,9 +267,9 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type NotSupportedError, if the device is a BD device.
+    * @throws WebAPIException with error type NotSupportedError, if the device is a BD device.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -287,7 +287,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -307,7 +307,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 4.0
     *
@@ -325,7 +325,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName N
     *
-    * @throw None N/A
+    * @throws None N/A
     *
     * @since 5.5
     *
@@ -345,9 +345,9 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type NotSupportedError, if the device is a BD device.
+    * @throws WebAPIException with error type NotSupportedError, if the device is a BD device.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -367,7 +367,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -387,7 +387,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 3.0
     *
@@ -407,7 +407,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -427,7 +427,7 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 5.0
     *
@@ -447,11 +447,11 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value. (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @since 2.3
     *
@@ -478,14 +478,14 @@ trait ProductInfoManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/productinfo
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
     * If only setSystemConfig can set CONFIG_KEY_DATA_SERVICE or CONFIG_KEY_ACTIVE_CATEGORY (Since plugin version 3.0)
     *
-    * @throw WebAPIException with error type NotSupportedError, if 'CONFIG_KEY_SERVICE_COUNTRY' is readonly (Deprecated since plugin version 3.0)
+    * @throws WebAPIException with error type NotSupportedError, if 'CONFIG_KEY_SERVICE_COUNTRY' is readonly (Deprecated since plugin version 3.0)
     *
-    * @throw WebAPIException with error type NotSupportedError, if 'CONFIG_KEY_SHOPLOGO' is readonly (Deprecated since plugin version 3.0)
+    * @throws WebAPIException with error type NotSupportedError, if 'CONFIG_KEY_SHOPLOGO' is readonly (Deprecated since plugin version 3.0)
     *
     * @since 2.3
     *

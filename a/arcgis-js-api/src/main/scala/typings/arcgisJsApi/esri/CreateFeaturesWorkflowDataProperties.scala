@@ -7,17 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFeaturesWorkflowDataProperties extends StObject {
   
   /**
-    * This provides the feature template and layer when creating a new feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflowData.html#creationInfo)
-    */
+  		 * This provides the feature template and layer when creating a new feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflowData.html#creationInfo)
+  		 */
   var creationInfo: js.UndefOr[CreationInfo] = js.undefined
   
   /**
-    * The associated [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) for this workflow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflowData.html#viewModel)
-    */
+  		 * Returns a collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) representing features that have been created during the workflow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflowData.html#pendingFeatures)
+  		 */
+  var pendingFeatures: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
+  
+  /**
+  		 * The associated [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) for this workflow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateFeaturesWorkflowData.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[EditorViewModelProperties] = js.undefined
 }
 object CreateFeaturesWorkflowDataProperties {
@@ -33,6 +40,12 @@ object CreateFeaturesWorkflowDataProperties {
     inline def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
     
     inline def setCreationInfoUndefined: Self = StObject.set(x, "creationInfo", js.undefined)
+    
+    inline def setPendingFeatures(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "pendingFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setPendingFeaturesUndefined: Self = StObject.set(x, "pendingFeatures", js.undefined)
+    
+    inline def setPendingFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "pendingFeatures", js.Array(value*))
     
     inline def setViewModel(value: EditorViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

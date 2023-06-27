@@ -19,8 +19,7 @@ object sapMOverflowToolbarMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/toolbar-overview/#overflow-generic Overflow
-    * Toolbar}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/toolbar-overview/#overflow-generic Overflow Toolbar}
     */
   open class default () extends OverflowToolbar {
     def this(/**
@@ -135,7 +134,7 @@ object sapMOverflowToolbarMod {
     def _removeContentFromControlsCollections(oControl: Unit): Unit = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Closes the overflow area. Useful to manually close the overflow after having suppressed automatic closing
       * with "closeOverflowOnInteraction=false".
@@ -143,7 +142,7 @@ object sapMOverflowToolbarMod {
     def closeOverflow(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
@@ -160,7 +159,7 @@ object sapMOverflowToolbarMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Gets current value of property {@link #getAsyncMode asyncMode}.
       *
@@ -177,7 +176,7 @@ object sapMOverflowToolbarMod {
     def getAsyncMode(): Boolean = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets the `asyncMode` property.
       *
@@ -191,7 +190,7 @@ object sapMOverflowToolbarMod {
        with ToolbarSettings {
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Defines whether the `OverflowToolbar` works in async mode.
       *

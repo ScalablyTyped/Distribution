@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchTooltipOptionsProperties extends StObject {
   
   /**
-    * Whether tooltips are shown while sketching and editing.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html#enabled)
-    */
+  		 * Whether tooltips are shown while sketching and editing.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html#enabled)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SketchTooltipOptionsProperties {

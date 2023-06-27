@@ -10,7 +10,7 @@ trait ChangesInstallation extends StObject {
   /** @enum {string} */
   var action: converted
   
-  var changes: `462`
+  var changes: `540`
   
   var installation: js.UndefOr[NodeidString] = js.undefined
   
@@ -22,7 +22,7 @@ trait ChangesInstallation extends StObject {
 }
 object ChangesInstallation {
   
-  inline def apply(changes: `462`, organization: Hooksurl, projects_v2_item: Contentnodeid, sender: Avatarurl): ChangesInstallation = {
+  inline def apply(changes: `540`, organization: Hooksurl, projects_v2_item: Contentnodeid, sender: Avatarurl): ChangesInstallation = {
     val __obj = js.Dynamic.literal(action = "converted", changes = changes.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], projects_v2_item = projects_v2_item.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesInstallation]
   }
@@ -32,7 +32,7 @@ object ChangesInstallation {
     
     inline def setAction(value: converted): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `462`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `540`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setInstallation(value: NodeidString): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     

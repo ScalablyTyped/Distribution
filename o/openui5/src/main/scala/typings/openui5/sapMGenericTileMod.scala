@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Scope
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.FrameType
 import typings.openui5.sapMLibraryMod.GenericTileMode
@@ -134,7 +133,7 @@ object sapMGenericTileMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Adds some actionButton to the aggregation {@link #getActionButtons actionButtons}.
       *
@@ -173,13 +172,13 @@ object sapMGenericTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.GenericTile` itself
       */
@@ -204,7 +203,7 @@ object sapMGenericTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -215,7 +214,7 @@ object sapMGenericTileMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.GenericTile` itself
       */
@@ -223,7 +222,7 @@ object sapMGenericTileMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Binds aggregation {@link #getActionButtons actionButtons} to model data.
       *
@@ -251,7 +250,7 @@ object sapMGenericTileMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Destroys all the actionButtons in the aggregation {@link #getActionButtons actionButtons}.
       *
@@ -287,13 +286,13 @@ object sapMGenericTileMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GenericTilePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -301,7 +300,7 @@ object sapMGenericTileMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -311,10 +310,10 @@ object sapMGenericTileMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: Scope): this.type = js.native
+    mParameters: GenericTile$PressEventParameters): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Gets content of aggregation {@link #getActionButtons actionButtons}.
       *
@@ -323,7 +322,7 @@ object sapMGenericTileMod {
     def getActionButtons(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Gets current value of property {@link #getAdditionalTooltip additionalTooltip}.
       *
@@ -334,8 +333,8 @@ object sapMGenericTileMod {
     def getAdditionalTooltip(): String = js.native
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Gets current value of property {@link #getAppShortcut appShortcut}.
       *
@@ -346,7 +345,7 @@ object sapMGenericTileMod {
     def getAppShortcut(): String = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Gets current value of property {@link #getAriaLabel ariaLabel}.
       *
@@ -357,7 +356,7 @@ object sapMGenericTileMod {
     def getAriaLabel(): String = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Gets current value of property {@link #getAriaRole ariaRole}.
       *
@@ -368,7 +367,7 @@ object sapMGenericTileMod {
     def getAriaRole(): String = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Gets current value of property {@link #getAriaRoleDescription ariaRoleDescription}.
       *
@@ -379,8 +378,8 @@ object sapMGenericTileMod {
     def getAriaRoleDescription(): String = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getBackgroundColor backgroundColor}.
       *
@@ -402,8 +401,8 @@ object sapMGenericTileMod {
     def getBackgroundImage(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.44.1) - This method's implementation is subject to change
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.44.1) - This method's implementation is subject to change
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Provides an interface to the tile's layout information consistent in all modes and content densities.
       *
@@ -412,7 +411,7 @@ object sapMGenericTileMod {
     def getBoundingRects(): js.Array[js.Object] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getEnableNavigationButton enableNavigationButton}.
       *
@@ -477,8 +476,8 @@ object sapMGenericTileMod {
     def getIcon(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.103
-      * @EXPERIMENTAL (since 1.103)
+      * @since 1.103
+      * @experimental (since 1.103)
       *
       * Gets current value of property {@link #getIconLoaded iconLoaded}.
       *
@@ -511,7 +510,7 @@ object sapMGenericTileMod {
     def getMode(): GenericTileMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileMode * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getNavigationButtonText navigationButtonText}.
       *
@@ -522,7 +521,7 @@ object sapMGenericTileMod {
     def getNavigationButtonText(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getPressEnabled pressEnabled}.
       *
@@ -535,8 +534,8 @@ object sapMGenericTileMod {
     def getPressEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.106
-      * @EXPERIMENTAL (since 1.106)
+      * @since 1.106
+      * @experimental (since 1.106)
       *
       * Gets current value of property {@link #getRenderOnThemeChange renderOnThemeChange}.
       *
@@ -549,7 +548,7 @@ object sapMGenericTileMod {
     def getRenderOnThemeChange(): Boolean = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getScope scope}.
       *
@@ -609,8 +608,8 @@ object sapMGenericTileMod {
     def getSubheader(): String = js.native
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Gets current value of property {@link #getSystemInfo systemInfo}.
       *
@@ -621,8 +620,8 @@ object sapMGenericTileMod {
     def getSystemInfo(): String = js.native
     
     /**
-      * @SINCE 1.113
-      * @EXPERIMENTAL (since 1.113)
+      * @since 1.113
+      * @experimental (since 1.113)
       *
       * Gets current value of property {@link #getTileBadge tileBadge}.
       *
@@ -644,8 +643,8 @@ object sapMGenericTileMod {
     def getTileContent(): js.Array[typings.openui5.sapMTileContentMod.default] = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getTileIcon tileIcon}.
       *
@@ -656,7 +655,7 @@ object sapMGenericTileMod {
     def getTileIcon(): URI = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Gets current value of property {@link #getUrl url}.
       *
@@ -667,8 +666,8 @@ object sapMGenericTileMod {
     def getUrl(): URI = js.native
     
     /**
-      * @SINCE 1.95
-      * @EXPERIMENTAL (since 1.95)
+      * @since 1.95
+      * @experimental (since 1.95)
       *
       * Gets current value of property {@link #getValueColor valueColor}.
       *
@@ -681,7 +680,7 @@ object sapMGenericTileMod {
     def getValueColor(): ValueColor | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueColor * / any */ String) = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -692,7 +691,7 @@ object sapMGenericTileMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getWrappingType wrappingType}.
       *
@@ -705,7 +704,7 @@ object sapMGenericTileMod {
     def getWrappingType(): WrappingType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappingType * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Checks for the provided `sap.m.Button` in the aggregation {@link #getActionButtons actionButtons}. and
       * returns its index if found or -1 otherwise.
@@ -733,7 +732,7 @@ object sapMGenericTileMod {
     ): int = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Inserts a actionButton into the aggregation {@link #getActionButtons actionButtons}.
       *
@@ -775,7 +774,7 @@ object sapMGenericTileMod {
       */
     vActionButton: String): typings.openui5.sapMButtonMod.default | Null = js.native
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Removes a actionButton from the aggregation {@link #getActionButtons actionButtons}.
       *
@@ -793,7 +792,7 @@ object sapMGenericTileMod {
     ): typings.openui5.sapMButtonMod.default | Null = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Removes all the controls from the aggregation {@link #getActionButtons actionButtons}.
       *
@@ -833,7 +832,7 @@ object sapMGenericTileMod {
     ): typings.openui5.sapMTileContentMod.default | Null = js.native
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Sets a new value for property {@link #getAdditionalTooltip additionalTooltip}.
       *
@@ -850,8 +849,8 @@ object sapMGenericTileMod {
     sAdditionalTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Sets a new value for property {@link #getAppShortcut appShortcut}.
       *
@@ -868,7 +867,7 @@ object sapMGenericTileMod {
     sAppShortcut: String): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Sets a new value for property {@link #getAriaLabel ariaLabel}.
       *
@@ -885,7 +884,7 @@ object sapMGenericTileMod {
     sAriaLabel: String): this.type = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Sets a new value for property {@link #getAriaRole ariaRole}.
       *
@@ -902,7 +901,7 @@ object sapMGenericTileMod {
     sAriaRole: String): this.type = js.native
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Sets a new value for property {@link #getAriaRoleDescription ariaRoleDescription}.
       *
@@ -919,8 +918,8 @@ object sapMGenericTileMod {
     sAriaRoleDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Sets a new value for property {@link #getBackgroundColor backgroundColor}.
       *
@@ -954,7 +953,7 @@ object sapMGenericTileMod {
     sBackgroundImage: URI): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Sets a new value for property {@link #getEnableNavigationButton enableNavigationButton}.
       *
@@ -1057,8 +1056,8 @@ object sapMGenericTileMod {
     oIcon: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.103
-      * @EXPERIMENTAL (since 1.103)
+      * @since 1.103
+      * @experimental (since 1.103)
       *
       * Sets a new value for property {@link #getIconLoaded iconLoaded}.
       *
@@ -1115,7 +1114,7 @@ object sapMGenericTileMod {
     sMode: GenericTileMode): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Sets a new value for property {@link #getNavigationButtonText navigationButtonText}.
       *
@@ -1132,8 +1131,8 @@ object sapMGenericTileMod {
     sNavigationButtonText: String): this.type = js.native
     
     /**
-      * @SINCE 1.46
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Provides an interface to switch on or off the tile's press event. Used in SlideTile for Actions scope.
       */
@@ -1143,8 +1142,8 @@ object sapMGenericTileMod {
     value: Boolean): Unit = js.native
     
     /**
-      * @SINCE 1.106
-      * @EXPERIMENTAL (since 1.106)
+      * @since 1.106
+      * @experimental (since 1.106)
       *
       * Sets a new value for property {@link #getRenderOnThemeChange renderOnThemeChange}.
       *
@@ -1163,7 +1162,7 @@ object sapMGenericTileMod {
     bRenderOnThemeChange: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getScope scope}.
       *
@@ -1277,8 +1276,8 @@ object sapMGenericTileMod {
     sSubheader: String): this.type = js.native
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Sets a new value for property {@link #getSystemInfo systemInfo}.
       *
@@ -1295,8 +1294,8 @@ object sapMGenericTileMod {
     sSystemInfo: String): this.type = js.native
     
     /**
-      * @SINCE 1.113
-      * @EXPERIMENTAL (since 1.113)
+      * @since 1.113
+      * @experimental (since 1.113)
       *
       * Sets a new value for property {@link #getTileBadge tileBadge}.
       *
@@ -1317,8 +1316,8 @@ object sapMGenericTileMod {
     sTileBadge: String): this.type = js.native
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Sets a new value for property {@link #getTileIcon tileIcon}.
       *
@@ -1334,7 +1333,7 @@ object sapMGenericTileMod {
     sTileIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Sets a new value for property {@link #getUrl url}.
       *
@@ -1351,8 +1350,8 @@ object sapMGenericTileMod {
     sUrl: URI): this.type = js.native
     
     /**
-      * @SINCE 1.95
-      * @EXPERIMENTAL (since 1.95)
+      * @since 1.95
+      * @experimental (since 1.95)
       *
       * Sets a new value for property {@link #getValueColor valueColor}.
       *
@@ -1377,7 +1376,7 @@ object sapMGenericTileMod {
     sValueColor: ValueColor): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -1393,7 +1392,7 @@ object sapMGenericTileMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getWrappingType wrappingType}.
       *
@@ -1418,8 +1417,8 @@ object sapMGenericTileMod {
     sWrappingType: WrappingType): this.type = js.native
     
     /**
-      * @SINCE 1.46
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Shows the actions scope view of GenericTile without changing the scope. Used in SlideTile for Actions
       * scope.
@@ -1430,7 +1429,7 @@ object sapMGenericTileMod {
     value: Boolean): Unit = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Unbinds aggregation {@link #getActionButtons actionButtons} from model data.
       *
@@ -1446,12 +1445,64 @@ object sapMGenericTileMod {
     def unbindTileContent(): this.type = js.native
   }
   
+  trait GenericTile$PressEventParameters extends StObject {
+    
+    /**
+      * The action that was pressed on the tile. In the Actions scope, the available actions are Press and Remove.
+      * In Display scope, the parameter value is only Press.
+      */
+    var action: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The pressed DOM Element pointing to the GenericTile's DOM Element in Display scope. In Actions scope
+      * it points to the more icon, when the tile is pressed, or to the DOM Element of the remove button, when
+      * the remove button is pressed.
+      */
+    var domRef: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * The current scope the GenericTile was in when the event occurred.
+      */
+    var scope: js.UndefOr[
+        GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
+      ] = js.undefined
+  }
+  object GenericTile$PressEventParameters {
+    
+    inline def apply(): GenericTile$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GenericTile$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericTile$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setDomRef(value: Any): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+      
+      inline def setScope(
+        value: GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
+      ): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    }
+  }
+  
+  type GenericTilePressEvent = typings.openui5.sapUiBaseEventMod.default[GenericTile$PressEventParameters]
+  
+  type GenericTilePressEventParameters = GenericTile$PressEventParameters
+  
   trait GenericTileSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Action buttons added in ActionMode.
       */
@@ -1460,44 +1511,44 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Tooltip text which is added at the tooltip generated by the control.
       */
     var additionalTooltip: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Application information such as ID/Shortcut
       */
     var appShortcut: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Additional description for aria-label. The aria-label is rendered before the standard aria-label.
       */
     var ariaLabel: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Additional description for aria-role.
       */
     var ariaRole: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.83
+      * @since 1.83
       *
       * Additional description for aria-roledescription.
       */
     var ariaRoleDescription: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Background color of the GenericTile. Only applicable for IconMode.
       */
@@ -1509,7 +1560,7 @@ object sapMGenericTileMod {
     var backgroundImage: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Renders the given link as a button, enabling the option of opening the link in new tab/window functionality.
       * Works only in ArticleMode.
@@ -1552,8 +1603,8 @@ object sapMGenericTileMod {
     var icon: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.103
-      * @EXPERIMENTAL (since 1.103)
+      * @since 1.103
+      * @experimental (since 1.103)
       *
       * The load state of the tileIcon.
       */
@@ -1574,7 +1625,7 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Text for navigate action button. Default Value is "Read More". Works only in ArticleMode.
       */
@@ -1583,10 +1634,15 @@ object sapMGenericTileMod {
     /**
       * The event is triggered when the user presses the tile.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GenericTile$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Disables press event for the tile control.
       */
@@ -1595,8 +1651,8 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.106
-      * @EXPERIMENTAL (since 1.106)
+      * @since 1.106
+      * @experimental (since 1.106)
       *
       * The Tile rerenders on theme change.
       */
@@ -1605,7 +1661,7 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Changes the visualization in order to enable additional actions with the Generic Tile.
       */
@@ -1645,16 +1701,16 @@ object sapMGenericTileMod {
     var subheader: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92.0
-      * @EXPERIMENTAL (since 1.92)
+      * @since 1.92.0
+      * @experimental (since 1.92)
       *
       * Backend system context information
       */
     var systemInfo: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.113
-      * @EXPERIMENTAL (since 1.113)
+      * @since 1.113
+      * @experimental (since 1.113)
       *
       * Show Badge Information associated with a Tile. Limited to 3 characters. When enabled, the badge information
       * is displayed inside a folder icon. Display limited only for tile in IconMode in TwoByHalf frameType.
@@ -1670,23 +1726,23 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.96
-      * @EXPERIMENTAL (since 1.96)
+      * @since 1.96
+      * @experimental (since 1.96)
       *
       * Icon of the GenericTile. Only applicable for IconMode.
       */
     var tileIcon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Renders the given link as root element and therefore enables the open in new tab / window functionality
       */
     var url: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.95
-      * @EXPERIMENTAL (since 1.95)
+      * @since 1.95
+      * @experimental (since 1.95)
       *
       * The semantic color of the value.
       */
@@ -1695,7 +1751,7 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Width of the control.
       */
@@ -1704,7 +1760,7 @@ object sapMGenericTileMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Defines the type of text wrapping to be used (hyphenated or normal).
       */
@@ -1802,7 +1858,9 @@ object sapMGenericTileMod {
       
       inline def setNavigationButtonTextUndefined: Self = StObject.set(x, "navigationButtonText", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GenericTile$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "pressEnabled", value.asInstanceOf[js.Any])
       

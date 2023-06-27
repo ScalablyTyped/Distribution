@@ -29,7 +29,7 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.close` instead.
     *
     * Closes the specified model and deletes it from the [scene](https://threejs.org/docs/#api/en/scenes/Scene).
-    * @scene Scene where the model is (if it's located in a scene).
+    * @param scene Scene where the model is (if it's located in a scene).
     */
   def close(): Unit = js.native
   def close(scene: Scene): Unit = js.native
@@ -38,7 +38,7 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.createSubset` instead.
     *
     * Creates a new geometric subset.
-    * @config A configuration object with the following options:
+    * @param config A configuration object with the following options:
     * - **scene**: `THREE.Object3D` where the model is located.
     * - **ids**: Express IDs of the items of the model that will conform the subset.
     * - **removePrevious**: Wether to remove the previous subset of this model with this material.
@@ -57,8 +57,8 @@ open class IFCModel_ ()
     * import { IFCWALLSTANDARDCASE } from 'web-ifc';
     * const walls = ifcLoader.getAllItemsOfType(IFCWALLSTANDARDCASE);
     * ```
-    * @ifcType The type of IFC items to get.
-    * @verbose If false (default), this only gets IDs. If true, this also gets the native properties of all the fetched items.
+    * @param ifcType The type of IFC items to get.
+    * @param verbose If false (default), this only gets IDs. If true, this also gets the native properties of all the fetched items.
     */
   def getAllItemsOfType(`type`: Double, verbose: Boolean): js.Array[Any] = js.native
   
@@ -67,8 +67,8 @@ open class IFCModel_ ()
     *
     * Gets the **Express ID** to which the given face belongs.
     * This ID uniquely identifies this entity within this IFC file.
-    * @geometry The geometry of the IFC model.
-    * @faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
+    * @param geometry The geometry of the IFC model.
+    * @param faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
     */
   def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], faceIndex: Double): js.UndefOr[Double] = js.native
   
@@ -76,7 +76,7 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.getIfcType` instead.
     *
     * Gets the ifc type of the specified item.
-    * @id Express ID of the element.
+    * @param id Express ID of the element.
     */
   def getIfcType(id: Double): String = js.native
   
@@ -84,8 +84,8 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.getItemProperties` instead.
     *
     * Gets the native properties of the given element.
-    * @id Express ID of the element.
-    * @recursive Wether you want to get the information of the referenced elements recursively.
+    * @param id Express ID of the element.
+    * @param recursive Wether you want to get the information of the referenced elements recursively.
     */
   def getItemProperties(id: Double): Any = js.native
   def getItemProperties(id: Double, recursive: Boolean): Any = js.native
@@ -95,8 +95,8 @@ open class IFCModel_ ()
     *
     * Gets the [property sets](https://standards.buildingsmart.org/IFC/DEV/IFC4_2/FINAL/HTML/schema/ifckernel/lexical/ifcpropertyset.htm)
     * assigned to the given element.
-    * @id Express ID of the element.
-    * @recursive If true, this gets the native properties of the referenced elements recursively.
+    * @param id Express ID of the element.
+    * @param recursive If true, this gets the native properties of the referenced elements recursively.
     */
   def getPropertySets(id: Double): js.Array[Any] = js.native
   def getPropertySets(id: Double, recursive: Boolean): js.Array[Any] = js.native
@@ -119,7 +119,7 @@ open class IFCModel_ ()
     *
     * Gets the mesh of the subset with the specified [material](https://threejs.org/docs/#api/en/materials/Material).
     * If no material is given, this returns the subset with the original materials.
-    * @material Material assigned to the subset, if any.
+    * @param material Material assigned to the subset, if any.
     */
   def getSubset(): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
   def getSubset(material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
@@ -130,8 +130,8 @@ open class IFCModel_ ()
     * Gets the properties of the type assigned to the element.
     * For example, if applied to a wall (IfcWall), this would get back the information
     * contained in the IfcWallType assigned to it, if any.
-    * @id Express ID of the element.
-    * @recursive If true, this gets the native properties of the referenced elements recursively.
+    * @param id Express ID of the element.
+    * @param recursive If true, this gets the native properties of the referenced elements recursively.
     */
   def getTypeProperties(id: Double): js.Array[Any] = js.native
   def getTypeProperties(id: Double, recursive: Boolean): js.Array[Any] = js.native
@@ -147,7 +147,7 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.hideItems` instead.
     *
     * Hides the selected items in the specified model
-    * @ids Express ID of the elements.
+    * @param ids Express ID of the elements.
     */
   def hideItems(ids: js.Array[Double]): Unit = js.native
   
@@ -165,7 +165,7 @@ open class IFCModel_ ()
     *
     * Removes the specified subset.
     * @parent The parent where the subset is (can be any `THREE.Object3D`).
-    * @material Material assigned to the subset, if any.
+    * @param material Material assigned to the subset, if any.
     */
   def removeSubset(): Unit = js.native
   def removeSubset(parent: Unit, material: typings.three.srcThreeMod.Material): Unit = js.native
@@ -188,7 +188,7 @@ open class IFCModel_ ()
     * Example if web-ifc.wasm is in dist/wasmDir:
     * `ifcLoader.setWasmPath("dist/wasmDir/");`
     *
-    * @path Relative path to web-ifc.wasm.
+    * @param path Relative path to web-ifc.wasm.
     */
   def setWasmPath(path: String): Unit = js.native
   
@@ -203,7 +203,7 @@ open class IFCModel_ ()
     * @deprecated Use `IfcModel.ifcManager.showItems` instead.
     *
     * Hides all the items of the specified model
-    * @ids Express ID of the elements.
+    * @param ids Express ID of the elements.
     */
   def showItems(ids: js.Array[Double]): Unit = js.native
 }

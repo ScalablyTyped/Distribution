@@ -1,6 +1,6 @@
 package typings.atlaskitMotion
 
-import typings.react.mod.FC
+import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ object distTypesEnteringExitingPersistenceMod {
     */
   @JSImport("@atlaskit/motion/dist/types/entering/exiting-persistence", JSImport.Default)
   @js.native
-  val default: FC[ExitingPersistenceProps] = js.native
+  val default: MemoExoticComponent[js.Function1[/* param0 */ ExitingPersistenceProps, Any]] = js.native
   
   inline def useExitingPersistence(): ExitingChildContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useExitingPersistence")().asInstanceOf[ExitingChildContext]
   

@@ -1,5 +1,6 @@
 package typings.domScreenWakeLock
 
+import typings.std.WakeLockType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,15 +28,11 @@ trait WakeLock extends StObject {
     *
     * @param type The type of wake lock to be requested.
     */
-  def request(
-    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WakeLockType */ Any
-  ): js.Promise[WakeLockSentinel]
+  def request(`type`: WakeLockType): js.Promise[WakeLockSentinel]
 }
 object WakeLock {
   
-  inline def apply(
-    request: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WakeLockType */ Any => js.Promise[WakeLockSentinel]
-  ): WakeLock = {
+  inline def apply(request: WakeLockType => js.Promise[WakeLockSentinel]): WakeLock = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
     __obj.asInstanceOf[WakeLock]
   }
@@ -43,8 +40,6 @@ object WakeLock {
   @scala.inline
   implicit open class MutableBuilder[Self <: WakeLock] (val x: Self) extends AnyVal {
     
-    inline def setRequest(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WakeLockType */ Any => js.Promise[WakeLockSentinel]
-    ): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
   }
 }

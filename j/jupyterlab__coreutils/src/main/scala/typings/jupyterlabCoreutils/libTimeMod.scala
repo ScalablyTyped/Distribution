@@ -13,18 +13,14 @@ object libTimeMod {
     val ^ : js.Any = js.native
     
     /**
-      * Convert a timestring to a date format.
+      * Convenient helper to convert a timestring to a date format.
       *
       * @param value - The date timestring or date object.
-      *
-      * @param format - The format string.
       *
       * @returns A formatted date.
       */
     inline def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def format(value: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(value: js.Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').

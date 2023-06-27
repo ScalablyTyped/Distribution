@@ -244,7 +244,7 @@ object examplesJsmLibsTweenDotmoduleMod {
   
   @JSImport("three/examples/jsm/libs/tween.module", "VERSION")
   @js.native
-  val VERSION: /* "20.0.3" */ String = js.native
+  val VERSION: /* "21.0.0" */ String = js.native
   
   inline def add(tween: typings.tweenjsTweenJs.mod.Tween[UnknownProps]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

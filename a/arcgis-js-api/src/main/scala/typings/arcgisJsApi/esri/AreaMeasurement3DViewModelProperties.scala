@@ -22,26 +22,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurement3DViewModelProperties extends StObject {
   
   /**
-    * The area measurement analysis object being created or modified by the view model.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#analysis)
-    */
+  		 * The area measurement analysis object being created or modified by the view model.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#analysis)
+  		 */
   var analysis: js.UndefOr[AreaMeasurementAnalysisProperties] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the area values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the area values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
   ] = js.undefined
   
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the area values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unitOptions)
-    */
+  		 * List of available units and unit systems (imperial, metric) for displaying the area values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unitOptions)
+  		 */
   var unitOptions: js.UndefOr[
     js.Array[
       imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
@@ -49,10 +49,10 @@ trait AreaMeasurement3DViewModelProperties extends StObject {
   ] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object AreaMeasurement3DViewModelProperties {

@@ -13,10 +13,12 @@ open class Lock ()
   extends StObject
      with typings.std.Lock {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Lock/mode) */
   /* standard dom */
   /* CompleteClass */
   override val mode: LockMode = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Lock/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native

@@ -9,13 +9,13 @@ trait `200ContentApplicationjsonItemsArrayTotalcountNumber` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonItemsArrayTotalcountNumber
   
-  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
 }
 object `200ContentApplicationjsonItemsArrayTotalcountNumber` {
   
   inline def apply(
     `200`: ContentApplicationjsonItemsArrayTotalcountNumber,
-    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
   ): `200ContentApplicationjsonItemsArrayTotalcountNumber` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -29,7 +29,7 @@ object `200ContentApplicationjsonItemsArrayTotalcountNumber` {
     inline def set200(value: ContentApplicationjsonItemsArrayTotalcountNumber): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set304(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
     ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
   }
 }

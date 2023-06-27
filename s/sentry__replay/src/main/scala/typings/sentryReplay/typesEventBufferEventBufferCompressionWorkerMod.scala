@@ -1,9 +1,9 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.AddEventResult
-import typings.sentryReplay.typesTypesMod.EventBuffer
-import typings.sentryReplay.typesTypesMod.EventBufferType
-import typings.sentryReplay.typesTypesMod.RecordingEvent
+import typings.sentryReplay.typesTypesReplayMod.AddEventResult
+import typings.sentryReplay.typesTypesReplayMod.EventBuffer
+import typings.sentryReplay.typesTypesReplayMod.EventBufferType
+import typings.sentryReplay.typesTypesReplayMod.RecordingEvent
 import typings.sentryTypes.typesReplayMod.ReplayRecordingData
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
@@ -30,6 +30,8 @@ object typesEventBufferEventBufferCompressionWorkerMod {
       * Send the event to the worker.
       */
     /* private */ var _sendEventToWorker: Any = js.native
+    
+    /* private */ var _totalSize: Any = js.native
     
     /* private */ var _worker: Any = js.native
     

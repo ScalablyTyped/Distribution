@@ -13,10 +13,10 @@ trait TileInfoConstructor
      with Instantiable1[/* properties */ TileInfoProperties, TileInfo] {
   
   /**
-    * A convenience method used to create a new TileInfo instance with preset properties like [LODs](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
-    */
+  		 * A convenience method used to create a new TileInfo instance with preset properties like [LODs](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#create)
+  		 */
   def create(): TileInfo = js.native
   def create(options: TileInfoCreateOptions): TileInfo = js.native
   

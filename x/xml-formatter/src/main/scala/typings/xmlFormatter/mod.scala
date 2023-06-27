@@ -32,6 +32,10 @@ object mod {
     
     var filter: js.UndefOr[js.Function1[/* node */ XmlParserNode, Boolean]] = js.undefined
     
+    var ignoredPaths: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var strictMode: js.UndefOr[Boolean] = js.undefined
+    
     var throwOnFailure: js.UndefOr[Boolean] = js.undefined
     
     var whiteSpaceAtEndOfSelfclosingTag: js.UndefOr[Boolean] = js.undefined
@@ -53,6 +57,16 @@ object mod {
       inline def setFilter(value: /* node */ XmlParserNode => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setIgnoredPaths(value: js.Array[String]): Self = StObject.set(x, "ignoredPaths", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoredPathsUndefined: Self = StObject.set(x, "ignoredPaths", js.undefined)
+      
+      inline def setIgnoredPathsVarargs(value: String*): Self = StObject.set(x, "ignoredPaths", js.Array(value*))
+      
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
       
       inline def setThrowOnFailure(value: Boolean): Self = StObject.set(x, "throwOnFailure", value.asInstanceOf[js.Any])
       
@@ -79,6 +93,13 @@ object mod {
     var filter: js.UndefOr[js.Function1[/* node */ XmlParserNode, Boolean]] = js.undefined
     
     /**
+      * List of XML element paths to ignore during formatting.
+      * This can be a partial path (element tag name) or full path starting from the document element.
+      * e.g. ['/html/head/script', 'pre']
+      */
+    var ignoredPaths: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
       * The value used for indentation.
       * Default = '    '
       */
@@ -89,6 +110,11 @@ object mod {
       * Default: '\r\n'
       */
     var lineSeparator: js.UndefOr[String] = js.undefined
+    
+    /**
+      * True to throw an error when parsing XML document with invalid content like mismatched closing tags.
+      */
+    var strictMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Throw an error when XML fails to parse and get formatted.
@@ -121,6 +147,12 @@ object mod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
+      inline def setIgnoredPaths(value: js.Array[String]): Self = StObject.set(x, "ignoredPaths", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoredPathsUndefined: Self = StObject.set(x, "ignoredPaths", js.undefined)
+      
+      inline def setIgnoredPathsVarargs(value: String*): Self = StObject.set(x, "ignoredPaths", js.Array(value*))
+      
       inline def setIndentation(value: String): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
       
       inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
@@ -128,6 +160,10 @@ object mod {
       inline def setLineSeparator(value: String): Self = StObject.set(x, "lineSeparator", value.asInstanceOf[js.Any])
       
       inline def setLineSeparatorUndefined: Self = StObject.set(x, "lineSeparator", js.undefined)
+      
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
       
       inline def setThrowOnFailure(value: Boolean): Self = StObject.set(x, "throwOnFailure", value.asInstanceOf[js.Any])
       

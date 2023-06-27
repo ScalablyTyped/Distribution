@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.any_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.any
+  - typings.microsoftGraph.microsoftGraphStrings.any_
   - typings.microsoftGraph.microsoftGraphStrings.call
   - typings.microsoftGraph.microsoftGraphStrings.doNotForward
   - typings.microsoftGraph.microsoftGraphStrings.followUp
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageActionFlag extends StObject
 object MessageActionFlag {
   
-  inline def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
+  inline def any: any_ = "any".asInstanceOf[any_]
   
   inline def call: typings.microsoftGraph.microsoftGraphStrings.call = "call".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.call]
   

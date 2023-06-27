@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TessellatedMesh extends StObject {
   
   /**
-    * The indices of the triangles that connect vertices together; each consecutive triplet of indices denotes a triangle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
-    */
+  		 * The indices of the triangles that connect vertices together; each consecutive triplet of indices denotes a triangle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
+  		 */
   var indices: js.Array[Double]
   
   /**
-    * The vertices that make up the mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
-    */
+  		 * The vertices that make up the mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#TessellatedMesh)
+  		 */
   var vertices: js.Array[MeshVertex]
 }
 object TessellatedMesh {

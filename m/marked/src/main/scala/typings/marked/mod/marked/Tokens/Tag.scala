@@ -1,5 +1,6 @@
 package typings.marked.mod.marked.Tokens
 
+import typings.marked.markedBooleans.`false`
 import typings.marked.markedStrings.html
 import typings.marked.markedStrings.text
 import typings.marked.mod.marked.Token
@@ -10,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag
   extends StObject
      with Token {
+  
+  var block: `false`
   
   var inLink: Boolean
   
@@ -24,13 +27,15 @@ trait Tag
 object Tag {
   
   inline def apply(inLink: Boolean, inRawBlock: Boolean, raw: String, text: String, `type`: text | html): Tag = {
-    val __obj = js.Dynamic.literal(inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(block = false, inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    
+    inline def setBlock(value: `false`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     inline def setInLink(value: Boolean): Self = StObject.set(x, "inLink", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,7 @@ trait TableCellLoadOptions extends StObject {
   var cellIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+    * Specifies the width of the cell's column in points. This is applicable to uniform tables.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait TableCellLoadOptions extends StObject {
   var columnWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * Specifies the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -75,7 +75,7 @@ trait TableCellLoadOptions extends StObject {
   var rowIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+    * Specifies the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait TableCellLoadOptions extends StObject {
   var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets the text of the cell.
+    * Specifies the text of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait TableCellLoadOptions extends StObject {
   var value: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+    * Specifies the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -113,6 +113,8 @@ trait GPUCommandEncoder
   
   /**
     * Writes a timestamp value into a querySet when all previous commands have completed executing.
+    * Note: Timestamp query values are written in nanoseconds, but how the value is determined is
+    * implementation-defined and may not increase monotonically. See [[#timestamp]] for details.
     * @param querySet - The query set that will store the timestamp values.
     * @param queryIndex - The index of the query in the query set.
     */

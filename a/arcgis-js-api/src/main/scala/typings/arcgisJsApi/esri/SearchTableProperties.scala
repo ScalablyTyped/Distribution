@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchTableProperties extends StObject {
   
   /**
-    * The field to use for search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html#field)
-    */
+  		 * The field to use for search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html#field)
+  		 */
   var field: js.UndefOr[SearchTableFieldProperties] = js.undefined
   
   /**
-    * The id of the table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html#id)
-    */
+  		 * The id of the table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTable.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
 }
 object SearchTableProperties {

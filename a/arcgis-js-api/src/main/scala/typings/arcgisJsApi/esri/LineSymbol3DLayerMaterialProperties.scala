@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineSymbol3DLayerMaterialProperties extends StObject {
   
   /**
-    * The color of the line.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
-    */
+  		 * The color of the line.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object LineSymbol3DLayerMaterialProperties {

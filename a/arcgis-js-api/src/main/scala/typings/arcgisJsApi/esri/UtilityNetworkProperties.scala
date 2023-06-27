@@ -9,10 +9,10 @@ trait UtilityNetworkProperties
      with NetworkProperties {
   
   /**
-    * This property returns the list of trace configurations shared on the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html#sharedNamedTraceConfigurations)
-    */
+  		 * This property returns the list of trace configurations shared on the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html#sharedNamedTraceConfigurations)
+  		 */
   var sharedNamedTraceConfigurations: js.UndefOr[js.Array[NamedTraceConfiguration]] = js.undefined
 }
 object UtilityNetworkProperties {

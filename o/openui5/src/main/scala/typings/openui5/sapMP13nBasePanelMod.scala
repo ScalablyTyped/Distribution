@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemReason
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.p13n.IContent
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -55,7 +54,7 @@ object sapMP13nBasePanelMod {
     var __implements__sap_m_p13n_IContent: Boolean = js.native
     
     /**
-      * @EXPERIMENTAL
+      * @experimental
       *
       * Returns the title, which should be displayed in the P13nPopup to describe related content.
       *
@@ -151,13 +150,13 @@ object sapMP13nBasePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.p13n.BasePanel` itself
       */
@@ -182,7 +181,7 @@ object sapMP13nBasePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -193,7 +192,7 @@ object sapMP13nBasePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.p13n.BasePanel` itself
       */
@@ -218,13 +217,13 @@ object sapMP13nBasePanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BasePanelChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -232,7 +231,7 @@ object sapMP13nBasePanelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -242,7 +241,7 @@ object sapMP13nBasePanelMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: ItemReason): this.type = js.native
+    mParameters: BasePanel$ChangeEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnableReorder enableReorder}.
@@ -321,6 +320,42 @@ object sapMP13nBasePanelMod {
     sTitle: String): this.type = js.native
   }
   
+  trait BasePanel$ChangeEventParameters extends StObject {
+    
+    /**
+      * An object containing information about the specific item that has been changed.
+      */
+    var item: js.UndefOr[Item] = js.undefined
+    
+    /**
+      * The reason why the panel state has changed, for example, items have been added, removed, or moved.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+  }
+  object BasePanel$ChangeEventParameters {
+    
+    inline def apply(): BasePanel$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BasePanel$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePanel$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    }
+  }
+  
+  type BasePanelChangeEvent = typings.openui5.sapUiBaseEventMod.default[BasePanel$ChangeEventParameters]
+  
+  type BasePanelChangeEventParameters = BasePanel$ChangeEventParameters
+  
   trait BasePanelSettings
     extends StObject
        with ControlSettings {
@@ -328,7 +363,12 @@ object sapMP13nBasePanelMod {
     /**
       * This event is fired if any change has been made within the `BasePanel` control.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BasePanel$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines whether the reordering of personalization items is enabled.
@@ -358,7 +398,9 @@ object sapMP13nBasePanelMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BasePanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BasePanel$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

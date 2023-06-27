@@ -227,6 +227,7 @@ import typings.svelte.svelteStrings.ruby
 import typings.svelte.svelteStrings.s
 import typings.svelte.svelteStrings.samp
 import typings.svelte.svelteStrings.script
+import typings.svelte.svelteStrings.search
 import typings.svelte.svelteStrings.section
 import typings.svelte.svelteStrings.select
 import typings.svelte.svelteStrings.set
@@ -662,6 +663,8 @@ object internalMod {
   
   inline def elementIs_script(name: script, is: String): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element_is")(name.asInstanceOf[js.Any], is.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
   
+  inline def elementIs_search(name: search, is: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element_is")(name.asInstanceOf[js.Any], is.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  
   inline def elementIs_section(name: section, is: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element_is")(name.asInstanceOf[js.Any], is.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   inline def elementIs_select(name: select, is: String): HTMLSelectElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element_is")(name.asInstanceOf[js.Any], is.asInstanceOf[js.Any])).asInstanceOf[HTMLSelectElement]
@@ -883,6 +886,8 @@ object internalMod {
   inline def element_samp(name: samp): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   inline def element_script(name: script): HTMLScriptElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLScriptElement]
+  
+  inline def element_search(name: search): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   inline def element_section(name: section): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   

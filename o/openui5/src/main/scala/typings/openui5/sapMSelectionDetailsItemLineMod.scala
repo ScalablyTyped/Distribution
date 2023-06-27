@@ -13,7 +13,7 @@ object sapMSelectionDetailsItemLineMod {
   @JSImport("sap/m/SelectionDetailsItemLine", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Constructor for a new SelectionDetailsItemLine.
     *
@@ -59,7 +59,7 @@ object sapMSelectionDetailsItemLineMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.m.SelectionDetailsItemLine with name `sClassName` and enriches it
       * with the information contained in `oClassInfo`.
@@ -114,7 +114,7 @@ object sapMSelectionDetailsItemLineMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.m.SelectionDetailsItemLine.
       *
@@ -128,7 +128,7 @@ object sapMSelectionDetailsItemLineMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets current value of property {@link #getDisplayValue displayValue}.
       *
@@ -140,7 +140,7 @@ object sapMSelectionDetailsItemLineMod {
     def getDisplayValue(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets current value of property {@link #getLabel label}.
       *
@@ -152,7 +152,7 @@ object sapMSelectionDetailsItemLineMod {
     def getLabel(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets current value of property {@link #getLineMarker lineMarker}.
       *
@@ -164,7 +164,7 @@ object sapMSelectionDetailsItemLineMod {
     def getLineMarker(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets current value of property {@link #getUnit unit}.
       *
@@ -175,7 +175,7 @@ object sapMSelectionDetailsItemLineMod {
     def getUnit(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets current value of property {@link #getValue value}.
       *
@@ -187,7 +187,7 @@ object sapMSelectionDetailsItemLineMod {
     def getValue(): Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets a new value for property {@link #getDisplayValue displayValue}.
       *
@@ -205,7 +205,7 @@ object sapMSelectionDetailsItemLineMod {
     sDisplayValue: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets a new value for property {@link #getLabel label}.
       *
@@ -222,7 +222,7 @@ object sapMSelectionDetailsItemLineMod {
     sLabel: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets a new value for property {@link #getLineMarker lineMarker}.
       *
@@ -240,7 +240,7 @@ object sapMSelectionDetailsItemLineMod {
     sLineMarker: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets a new value for property {@link #getUnit unit}.
       *
@@ -257,7 +257,7 @@ object sapMSelectionDetailsItemLineMod {
     sUnit: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets a new value for property {@link #getValue value}.
       *

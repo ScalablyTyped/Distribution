@@ -131,7 +131,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -143,7 +143,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Adds some selectedDate to the aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -157,7 +157,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:pageChange pageChange} event of this `sap.ui.unified.calendar.MonthPicker`.
       *
@@ -173,13 +173,13 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPageChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthPicker`
       * itself
@@ -187,7 +187,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:pageChange pageChange} event of this `sap.ui.unified.calendar.MonthPicker`.
       *
@@ -208,7 +208,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPageChange(
       /**
@@ -219,7 +219,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthPicker`
       * itself
@@ -241,13 +241,13 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthPicker`
       * itself
@@ -273,7 +273,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -284,7 +284,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthPicker`
       * itself
@@ -293,7 +293,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Destroys all the selectedDates in the aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -302,7 +302,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def destroySelectedDates(): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:pageChange pageChange} event of this `sap.ui.unified.calendar.MonthPicker`.
       *
@@ -314,13 +314,13 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPageChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -338,13 +338,13 @@ object sapUiUnifiedCalendarMonthPickerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -352,8 +352,8 @@ object sapUiUnifiedCalendarMonthPickerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.38.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pageChange pageChange} to attached listeners.
       *
@@ -366,7 +366,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -379,15 +379,14 @@ object sapUiUnifiedCalendarMonthPickerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getColumns columns}.
       *
@@ -401,7 +400,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getColumns(): int = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets current value of property {@link #getIntervalSelection intervalSelection}.
       *
@@ -425,7 +424,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getMonth(): int = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getMonths months}.
       *
@@ -438,7 +437,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getMonths(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -450,7 +449,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -462,7 +461,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getSecondaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets content of aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -471,7 +470,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def getSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Checks for the provided `sap.ui.unified.DateRange` in the aggregation {@link #getSelectedDates selectedDates}.
       * and returns its index if found or -1 otherwise.
@@ -486,7 +485,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Inserts a selectedDate into the aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -520,7 +519,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def previousPage(): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -529,7 +528,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Removes all the controls from the aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -540,7 +539,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     def removeAllSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -566,7 +565,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       */
     vSelectedDate: String): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Removes a selectedDate from the aggregation {@link #getSelectedDates selectedDates}.
       *
@@ -584,7 +583,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     ): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getColumns columns}.
       *
@@ -604,7 +603,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     iColumns: int): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Sets a new value for property {@link #getIntervalSelection intervalSelection}.
       *
@@ -671,7 +670,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     iMonth: int): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getMonths months}.
       *
@@ -696,7 +695,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -719,7 +718,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * Sets a new value for property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -736,19 +735,31 @@ object sapUiUnifiedCalendarMonthPickerMod {
     sSecondaryCalendarType: CalendarType): this.type = js.native
   }
   
+  trait MonthPicker$PageChangeEventParameters extends StObject
+  
+  trait MonthPicker$SelectEventParameters extends StObject
+  
+  type MonthPickerPageChangeEvent = typings.openui5.sapUiBaseEventMod.default[MonthPicker$PageChangeEventParameters]
+  
+  type MonthPickerPageChangeEventParameters = MonthPicker$PageChangeEventParameters
+  
+  type MonthPickerSelectEvent = typings.openui5.sapUiBaseEventMod.default[MonthPicker$SelectEventParameters]
+  
+  type MonthPickerSelectEventParameters = MonthPicker$SelectEventParameters
+  
   trait MonthPickerSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * number of months in each row The value must be between 0 and 12 (0 means just to have all months in one
       * row, independent of the number)
@@ -756,7 +767,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
     var columns: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * If set, interval selection is allowed
       */
@@ -770,22 +781,24 @@ object sapUiUnifiedCalendarMonthPickerMod {
     var month: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * number of displayed months The value must be between 1 and 12
       */
     var months: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * If less than 12 months are displayed the `pageChange` event is fired if the displayed months are changed
       * by user navigation.
       */
-    var pageChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pageChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
       * is used.
@@ -795,7 +808,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.104.0
+      * @since 1.104.0
       *
       * If set, the months are also displayed in this calendar type If not set, the months are only displayed
       * in the primary calendar type
@@ -807,10 +820,12 @@ object sapUiUnifiedCalendarMonthPickerMod {
     /**
       * Month selection changed
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Date Ranges for selected dates of the MonthPicker
       */
@@ -850,7 +865,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       
       inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
-      inline def setPageChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pageChange", js.Any.fromFunction1(value))
+      inline def setPageChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "pageChange", js.Any.fromFunction1(value))
       
       inline def setPageChangeUndefined: Self = StObject.set(x, "pageChange", js.undefined)
       
@@ -866,7 +881,7 @@ object sapUiUnifiedCalendarMonthPickerMod {
       
       inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathEventid extends StObject {
   
-  /** Get an issue event */
+  /**
+    * Get an issue event
+    * @description Gets a single event by the event id.
+    */
   var get: ParametersPathEventid
 }
 object GetParametersPathEventid {

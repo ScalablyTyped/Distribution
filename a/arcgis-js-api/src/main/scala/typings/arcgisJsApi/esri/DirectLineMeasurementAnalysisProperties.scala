@@ -20,24 +20,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurementAnalysisProperties extends StObject {
   
   /**
-    * Ending point for the measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#endPoint)
-    */
+  		 * Ending point for the measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#endPoint)
+  		 */
   var endPoint: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * Starting point for the measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#startPoint)
-    */
+  		 * Starting point for the measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#startPoint)
+  		 */
   var startPoint: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for computing the distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for computing the distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined

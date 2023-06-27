@@ -73,6 +73,8 @@ trait SchedulerOptions extends StObject {
   
   var navigate: js.UndefOr[js.Function1[/* e */ SchedulerNavigateEvent, Unit]] = js.undefined
   
+  var ongoingEvents: js.UndefOr[Boolean | SchedulerOngoing] = js.undefined
+  
   var pdf: js.UndefOr[SchedulerPdf] = js.undefined
   
   var pdfExport: js.UndefOr[js.Function1[/* e */ SchedulerPdfExportEvent, Unit]] = js.undefined
@@ -99,7 +101,7 @@ trait SchedulerOptions extends StObject {
   
   var timezone: js.UndefOr[String] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[SchedulerToolbarItem]] = js.undefined
+  var toolbar: js.UndefOr[js.Array[SchedulerToolbarItem] | SchedulerToolbarOptions] = js.undefined
   
   var views: js.UndefOr[js.Array[SchedulerView]] = js.undefined
   
@@ -255,6 +257,10 @@ object SchedulerOptions {
     
     inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
+    inline def setOngoingEvents(value: Boolean | SchedulerOngoing): Self = StObject.set(x, "ongoingEvents", value.asInstanceOf[js.Any])
+    
+    inline def setOngoingEventsUndefined: Self = StObject.set(x, "ongoingEvents", js.undefined)
+    
     inline def setPdf(value: SchedulerPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     inline def setPdfExport(value: /* e */ SchedulerPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
@@ -309,7 +315,7 @@ object SchedulerOptions {
     
     inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    inline def setToolbar(value: js.Array[SchedulerToolbarItem]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: js.Array[SchedulerToolbarItem] | SchedulerToolbarOptions): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     

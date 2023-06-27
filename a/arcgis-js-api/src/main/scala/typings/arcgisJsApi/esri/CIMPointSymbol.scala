@@ -8,54 +8,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMPointSymbol extends StObject {
   
   /**
-    * The amount of variation applied to the symbol, measured in degrees, propagated cumulatively to all marker symbols.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * The amount of variation applied to the symbol, measured in degrees, propagated cumulatively to all marker symbols.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether point symbols align to the map or to the display when a rotation is applied to the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * Indicates whether point symbols align to the map or to the display when a rotation is applied to the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var angleAlignment: js.UndefOr[Display | typings.arcgisJsApi.arcgisJsApiStrings.Map] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * The geometric effects applied to the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The X scale which changes the width of the symbol without changing the height, as a ratio.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * The X scale which changes the width of the symbol without changing the height, as a ratio.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The symbol layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * The symbol layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var symbolLayers: js.Array[CIMSymbolLayer]
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPointSymbol
   
   /**
-    * A value indicating whether the symbol size properties are rendered using real world units or page units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
-    */
+  		 * A value indicating whether the symbol size properties are rendered using real world units or page units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPointSymbol)
+  		 */
   var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
 }
 object CIMPointSymbol {

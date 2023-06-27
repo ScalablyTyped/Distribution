@@ -7,15 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An individual button of a gamepad or other controller, allowing access to the current state of different types of buttons available on the control device.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton)
   */
 trait GamepadButton extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/pressed) */
   /* standard dom */
   val pressed: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/touched) */
   /* standard dom */
   val touched: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GamepadButton/value) */
   /* standard dom */
   val value: Double
 }

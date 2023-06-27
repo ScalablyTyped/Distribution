@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.FirstTime
-import typings.openui5.anon.From
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -150,13 +148,13 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickViewBase` itself
       */
@@ -182,7 +180,7 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterNavigate(
       /**
@@ -193,7 +191,7 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickViewBase` itself
       */
@@ -215,13 +213,13 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickViewBase` itself
       */
@@ -247,7 +245,7 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -258,7 +256,7 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.QuickViewBase` itself
       */
@@ -297,13 +295,13 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseAfterNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -321,13 +319,13 @@ object sapMQuickViewBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewBaseNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -335,20 +333,22 @@ object sapMQuickViewBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterNavigate afterNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterNavigate(): this.type = js.native
-    def fireAfterNavigate(/**
+    def fireAfterNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FirstTime): this.type = js.native
+    mParameters: QuickViewBase$AfterNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -358,10 +358,12 @@ object sapMQuickViewBaseMod {
       * @returns Whether or not to prevent the default action
       */
     def fireNavigate(): Boolean = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: From): Boolean = js.native
+    mParameters: QuickViewBase$NavigateEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getPages pages}.
@@ -444,6 +446,251 @@ object sapMQuickViewBaseMod {
     def unbindPages(): this.type = js.native
   }
   
+  trait QuickViewBase$AfterNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (a control with the ID of the page, which has been navigated to) has
+      * not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines the page, which has been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Determines the ID of the page, which has been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation.
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page.
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page.
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a forward navigation.
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the top page.
+      */
+    var isTopPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines which link initiated the navigation.
+      */
+    var navOrigin: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Determines the page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Determines the ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object QuickViewBase$AfterNavigateEventParameters {
+    
+    inline def apply(): QuickViewBase$AfterNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickViewBase$AfterNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewBase$AfterNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setIsTopPage(value: Boolean): Self = StObject.set(x, "isTopPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsTopPageUndefined: Self = StObject.set(x, "isTopPage", js.undefined)
+      
+      inline def setNavOrigin(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "navOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setNavOriginUndefined: Self = StObject.set(x, "navOrigin", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait QuickViewBase$NavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (a control with the ID of the page which is currently navigated to)
+      * has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation.
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page.
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page.
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation.
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines which link initiated the navigation.
+      */
+    var navOrigin: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The page which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object QuickViewBase$NavigateEventParameters {
+    
+    inline def apply(): QuickViewBase$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickViewBase$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewBase$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setNavOrigin(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "navOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setNavOriginUndefined: Self = StObject.set(x, "navOrigin", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  type QuickViewBaseAfterNavigateEvent = typings.openui5.sapUiBaseEventMod.default[QuickViewBase$AfterNavigateEventParameters]
+  
+  type QuickViewBaseAfterNavigateEventParameters = QuickViewBase$AfterNavigateEventParameters
+  
+  type QuickViewBaseNavigateEvent = typings.openui5.sapUiBaseEventMod.default[QuickViewBase$NavigateEventParameters]
+  
+  type QuickViewBaseNavigateEventParameters = QuickViewBase$NavigateEventParameters
+  
   trait QuickViewBaseSettings
     extends StObject
        with ControlSettings {
@@ -452,13 +699,23 @@ object sapMQuickViewBaseMod {
       * The event is fired when navigation between two pages has completed. In case of animated transitions this
       * event is fired with some delay after the "navigate" event.
       */
-    var afterNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickViewBase$AfterNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is fired when navigation between two pages has been triggered. The transition (if any) to the
       * new page has not started yet.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickViewBase$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Displays a page header, object icon or image, object name with short description, and object information
@@ -478,11 +735,15 @@ object sapMQuickViewBaseMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QuickViewBaseSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
+      inline def setAfterNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickViewBase$AfterNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterNavigateUndefined: Self = StObject.set(x, "afterNavigate", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickViewBase$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       

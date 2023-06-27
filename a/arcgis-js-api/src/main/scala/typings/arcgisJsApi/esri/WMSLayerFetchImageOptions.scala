@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WMSLayerFetchImageOptions extends StObject {
   
   /**
-    * The ratio of the resolution in physical pixels of the image to the resolution it will be displayed at.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
-    */
+  		 * The ratio of the resolution in physical pixels of the image to the resolution it will be displayed at.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
+  		 */
   var pixelRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The rotation in degrees of the exported image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
-    */
+  		 * The rotation in degrees of the exported image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
-    */
+  		 * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fetchImage)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object WMSLayerFetchImageOptions {

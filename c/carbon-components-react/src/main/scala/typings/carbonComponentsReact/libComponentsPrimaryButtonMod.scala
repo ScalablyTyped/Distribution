@@ -139,6 +139,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -473,6 +474,8 @@ object libComponentsPrimaryButtonMod {
   inline def default_samp(props: FCProps[ButtonIntrinsicProps[samp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def default_search(props: FCProps[ButtonIntrinsicProps[search]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

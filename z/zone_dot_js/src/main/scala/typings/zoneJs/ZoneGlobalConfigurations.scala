@@ -425,9 +425,9 @@ trait ZoneGlobalConfigurations extends StObject {
   
   /**
     *
-    * Disable the monkey patching of the browser's `queueMicrotask()` API.
+    * Disable the monkey patching of the `queueMicrotask()` API.
     *
-    * By default, `zone.js` monkey patches the browser's `queueMicrotask()` API
+    * By default, `zone.js` monkey patches the `queueMicrotask()` API
     * to ensure that `queueMicrotask()` callback is invoked in the same zone as zone used to invoke
     * `queueMicrotask()`. And also the callback is running as `microTask` like
     * `Promise.prototype.then()`.

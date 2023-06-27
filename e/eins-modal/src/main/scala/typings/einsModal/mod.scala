@@ -130,7 +130,7 @@ object mod extends Shortcut {
     
     /**
       * Animation when closing modal
-      * @default: 'expandOut'
+      * @default 'expandOut'
       */
     var closeTransition: js.UndefOr[typings.einsModal.mod.closeTransition] = js.undefined
     
@@ -142,7 +142,7 @@ object mod extends Shortcut {
     
     /**
       * Duration it takes to open the modal in milliseconds
-      * @default: 400
+      * @default 400
       */
     var openDuration: js.UndefOr[Double] = js.undefined
     

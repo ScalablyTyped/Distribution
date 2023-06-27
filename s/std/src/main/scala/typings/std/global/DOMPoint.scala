@@ -34,6 +34,7 @@ object DOMPoint {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMPoint/fromPoint) */
   /* standard dom */
   inline def fromPoint(): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPoint]
   inline def fromPoint(other: DOMPointInit): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPoint]

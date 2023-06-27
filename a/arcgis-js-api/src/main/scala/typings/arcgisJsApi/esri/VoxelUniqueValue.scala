@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelUniqueValue extends StObject {
   
   /**
-    * The color to render this value with.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
-    */
+  		 * The color to render this value with.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
+  		 */
   var color: Color_
   
   /**
-    * Whether or not to render data with this value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
-    */
+  		 * Whether or not to render data with this value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The label string for this value.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label string for this value.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The data value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
-    */
+  		 * The data value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelUniqueValue)
+  		 */
   var value: Double
 }
 object VoxelUniqueValue {

@@ -122,8 +122,8 @@ object sapFCardsBaseHeaderMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.86
-      * @EXPERIMENTAL (since 1.86)
+      * @since 1.86
+      * @experimental (since 1.86)
       *
       * Destroys the toolbar in the aggregation {@link #getToolbar toolbar}.
       *
@@ -132,7 +132,7 @@ object sapFCardsBaseHeaderMod {
     def destroyToolbar(): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.89) - this feature is experimental and the API may change.
+      * @experimental (since 1.89) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getDataTimestamp dataTimestamp}.
       *
@@ -150,8 +150,8 @@ object sapFCardsBaseHeaderMod {
     def getDataTimestamp(): String = js.native
     
     /**
-      * @SINCE 1.86
-      * @EXPERIMENTAL (since 1.86)
+      * @since 1.86
+      * @experimental (since 1.86)
       *
       * Gets content of aggregation {@link #getToolbar toolbar}.
       *
@@ -160,8 +160,8 @@ object sapFCardsBaseHeaderMod {
     def getToolbar(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.86
-      * @EXPERIMENTAL (since 1.86)
+      * @since 1.86
+      * @experimental (since 1.86)
       *
       * Sets the aggregated {@link #getToolbar toolbar}.
       *
@@ -178,7 +178,7 @@ object sapFCardsBaseHeaderMod {
        with ControlSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.89) - this feature is experimental and the API may change.
+      * @experimental (since 1.89) - this feature is experimental and the API may change.
       *
       * Defines the timestamp of the oldest data in the card. Use this to show to the end user how fresh the
       * information in the card is.
@@ -190,8 +190,8 @@ object sapFCardsBaseHeaderMod {
     var dataTimestamp: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.86
-      * @EXPERIMENTAL (since 1.86)
+      * @since 1.86
+      * @experimental (since 1.86)
       *
       * Defines the toolbar.
       */

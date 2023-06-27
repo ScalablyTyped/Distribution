@@ -818,7 +818,7 @@ object ZC {
     /**
       * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
       * @param {Element} element
-      * @deprecated: The preferred method to use is focus but the alias activate is available for backward compatibility's sake.
+      * @deprecated The preferred method to use is focus but the alias activate is available for backward compatibility's sake.
       */
     def activate(element: Element): Unit = js.native
     
@@ -892,7 +892,7 @@ object ZC {
     
     /**
       * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
-      * @deprecated: The preferred method to use is blur but the alias deactivate is available for backward compatibility's sake.
+      * @deprecated The preferred method to use is blur but the alias deactivate is available for backward compatibility's sake.
       */
     def deactivate(): Unit = js.native
     

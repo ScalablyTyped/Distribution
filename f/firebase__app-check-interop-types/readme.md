@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-check-interop-types
 
-Typings are for version 0.2.0
+Typings are for version 0.3.0
 
 ## Library description:
 @firebase/app-check-interop-types Types

@@ -1,6 +1,7 @@
 package typings.linguiReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.linguiReact.mod.TransRenderCallbackOrComponent
 import typings.linguiReact.mod.TransRenderProps
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
@@ -61,29 +62,57 @@ object anon {
     }
   }
   
-  trait Component extends StObject {
+  trait Component
+    extends StObject
+       with TransRenderCallbackOrComponent {
     
-    var component: js.UndefOr[ComponentType[TransRenderProps]] = js.undefined
+    var component: Unit
     
     var render: js.UndefOr[js.Function1[/* props */ TransRenderProps, ReactElement | Null]] = js.undefined
   }
   object Component {
     
-    inline def apply(): Component = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(component: Unit): Component = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[Component]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
-      inline def setComponent(value: ComponentType[TransRenderProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponent(value: Unit): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setRender(value: /* props */ TransRenderProps => ReactElement | Null): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    }
+  }
+  
+  trait Render
+    extends StObject
+       with TransRenderCallbackOrComponent {
+    
+    var component: js.UndefOr[ComponentType[TransRenderProps] | Null] = js.undefined
+    
+    var render: Unit
+  }
+  object Render {
+    
+    inline def apply(render: Unit): Render = {
+      val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Render]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
+      
+      inline def setComponent(value: ComponentType[TransRenderProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentNull: Self = StObject.set(x, "component", null)
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      
+      inline def setRender(value: Unit): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
 }

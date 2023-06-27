@@ -13,10 +13,12 @@ open class GeolocationPosition ()
   extends StObject
      with typings.std.GeolocationPosition {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPosition/coords) */
   /* standard dom */
   /* CompleteClass */
   override val coords: typings.std.GeolocationCoordinates = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPosition/timestamp) */
   /* standard dom */
   /* CompleteClass */
   override val timestamp: EpochTimeStamp = js.native

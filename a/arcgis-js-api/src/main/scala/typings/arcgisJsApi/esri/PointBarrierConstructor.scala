@@ -13,10 +13,10 @@ trait PointBarrierConstructor
      with Instantiable1[/* properties */ PointBarrierProperties, PointBarrier] {
   
   /**
-    * Creates a [PointBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fromGraphic)
-    */
+  		 * Creates a [PointBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fromGraphic)
+  		 */
   def fromGraphic(): PointBarrier = js.native
   def fromGraphic(graphic: Graphic): PointBarrier = js.native
   

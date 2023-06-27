@@ -8,11 +8,11 @@ trait ParametersPathAssignee extends StObject {
   
   var parameters: PathAssignee
   
-  var responses: `404Content36`
+  var responses: `404Content41`
 }
 object ParametersPathAssignee {
   
-  inline def apply(parameters: PathAssignee, responses: `404Content36`): ParametersPathAssignee = {
+  inline def apply(parameters: PathAssignee, responses: `404Content41`): ParametersPathAssignee = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAssignee]
   }
@@ -22,6 +22,6 @@ object ParametersPathAssignee {
     
     inline def setParameters(value: PathAssignee): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `404Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

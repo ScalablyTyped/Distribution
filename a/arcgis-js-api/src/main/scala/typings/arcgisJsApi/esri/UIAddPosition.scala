@@ -16,17 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UIAddPosition extends StObject {
   
   /**
-    * The placement index of the component(s).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
-    */
+  		 * The placement index of the component(s).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
+  		 */
   var index: js.UndefOr[Double] = js.undefined
   
   /**
-    * The position in the view at which to add the component.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
-    */
+  		 * The position in the view at which to add the component.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
+  		 */
   var position: js.UndefOr[
     `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
   ] = js.undefined

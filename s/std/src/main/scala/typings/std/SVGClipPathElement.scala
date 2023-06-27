@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides access to the properties of <clipPath> elements, as well as methods to manipulate them. */
+/**
+  * Provides access to the properties of <clipPath> elements, as well as methods to manipulate them.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGClipPathElement)
+  */
 @js.native
 trait SVGClipPathElement
   extends StObject
@@ -21,6 +25,7 @@ trait SVGClipPathElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/clipPathUnits) */
   /* standard dom */
   val clipPathUnits: SVGAnimatedEnumeration = js.native
   
@@ -35,6 +40,7 @@ trait SVGClipPathElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGClipPathElement/transform) */
   /* standard dom */
   val transform: SVGAnimatedTransformList = js.native
 }

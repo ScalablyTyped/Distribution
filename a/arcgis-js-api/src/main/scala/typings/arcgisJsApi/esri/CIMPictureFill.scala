@@ -9,89 +9,89 @@ trait CIMPictureFill
      with CIMSymbolLayer {
   
   /**
-    * A value indicating whether the color can be changed for this symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * A value indicating whether the color can be changed for this symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The color substitutions which allows colors in the image to be substituted with a different color.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The color substitutions which allows colors in the image to be substituted with a different color.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The geometric effects applied to the symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * A value indicating whether the symbol layer is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * A value indicating whether the symbol layer is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var enable: Boolean
   
   /**
-    * The height of the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The height of the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance that the image is offset in the horizontal direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The distance that the image is offset in the horizontal direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance that the image is offset in the vertical direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The distance that the image is offset in the vertical direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The angle of the image within the fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The angle of the image within the fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the symbol without changing the height, as a ratio.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The width of the symbol without changing the height, as a ratio.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The color that is applied as a tint to the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The color that is applied as a tint to the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureFill
   
   /**
-    * The url of the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
-    */
+  		 * The url of the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPictureFill)
+  		 */
   var url: String
 }
 object CIMPictureFill {

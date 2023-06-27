@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewAnimationProperties extends StObject {
   
   /**
-    * The target of the animation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
-    */
+  		 * The target of the animation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
+  		 */
   var target: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object ViewAnimationProperties {

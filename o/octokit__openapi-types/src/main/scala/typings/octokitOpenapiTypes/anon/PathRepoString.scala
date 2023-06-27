@@ -8,12 +8,12 @@ trait PathRepoString extends StObject {
   
   var path: RepoString
   
-  var query: `473`
+  var query: js.UndefOr[`552`] = js.undefined
 }
 object PathRepoString {
   
-  inline def apply(path: RepoString, query: `473`): PathRepoString = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: RepoString): PathRepoString = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathRepoString]
   }
   
@@ -22,6 +22,8 @@ object PathRepoString {
     
     inline def setPath(value: RepoString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `473`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `552`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

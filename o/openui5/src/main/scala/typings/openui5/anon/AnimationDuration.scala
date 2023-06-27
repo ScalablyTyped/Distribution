@@ -4,7 +4,6 @@ import typings.openui5.int
 import typings.openui5.jQuery
 import typings.openui5.sapUiCoreControlMod.default
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
-import typings.openui5.sapUiCorePopupMod.Dock
 import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -29,7 +28,9 @@ trait AnimationDuration extends StObject {
     * Specifies the point of the reference element to which the message toast should be aligned (e.g. `Dock.RightBottom`
     * To position the message toast according to the bottom right corner of the reference element).
     */
-  var at: js.UndefOr[Dock] = js.undefined
+  var at: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
+  ] = js.undefined
   
   /**
     * Specify whether the message toast should close as soon as the end user touches the screen.
@@ -57,7 +58,9 @@ trait AnimationDuration extends StObject {
     * Specifies which point of the message toast should be aligned (e.g. `Dock.LeftTop` To use as align point
     * the left top corner of the message toast).
     */
-  var my: js.UndefOr[Dock] = js.undefined
+  var my: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
+  ] = js.undefined
   
   /**
     * Specifies the reference element to which the message toast should be aligned, by default it is aligned
@@ -99,7 +102,7 @@ object AnimationDuration {
     
     inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
     
-    inline def setAt(value: Dock): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
     inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
@@ -119,7 +122,7 @@ object AnimationDuration {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setMy(value: Dock): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     

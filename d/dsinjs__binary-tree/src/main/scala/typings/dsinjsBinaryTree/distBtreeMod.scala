@@ -459,6 +459,7 @@ object distBtreeMod {
     /* CompleteClass */
     override def cancelAnimationFrame(handle: Double): Unit = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/localStorage) */
     /* standard dom */
     /* CompleteClass */
     override val localStorage: Storage = js.native
@@ -477,6 +478,7 @@ object distBtreeMod {
     /* CompleteClass */
     override def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) */
     /* standard dom */
     /* CompleteClass */
     override val sessionStorage: Storage = js.native

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelColorStop extends StObject {
   
   /**
-    * The color to render data at this position with.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelColorStop)
-    */
+  		 * The color to render data at this position with.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelColorStop)
+  		 */
   var color: Color_
   
   /**
-    * The normalized (i.e.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelColorStop)
-    */
+  		 * The normalized (i.e.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelColorStop)
+  		 */
   var position: Double
 }
 object VoxelColorStop {

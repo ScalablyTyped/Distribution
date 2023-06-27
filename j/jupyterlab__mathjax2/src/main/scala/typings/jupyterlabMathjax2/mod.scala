@@ -42,12 +42,6 @@ object mod {
       *
       * @param element - the DOM element to typeset. The typesetting may
       *   happen synchronously or asynchronously.
-      *
-      * #### Notes
-      * The application-wide rendermime object has a settable
-      * `latexTypesetter` property which is used wherever LaTeX
-      * typesetting is required. Extensions wishing to provide their
-      * own typesetter may replace that on the global `lab.rendermime`.
       */
     /* CompleteClass */
     override def typeset(element: HTMLElement): Unit = js.native

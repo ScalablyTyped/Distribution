@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AddedTokens
-import typings.openui5.anon.RemovedTokens
 import typings.openui5.anon.SuggestionObject
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMInputMod.InputSettings
@@ -183,13 +181,13 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit]
     ): this.type = js.native
     def attachTokenChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiInput` itself
       */
@@ -216,7 +214,7 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit]
     ): this.type = js.native
     def attachTokenChange(
       /**
@@ -227,7 +225,7 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiInput` itself
       */
@@ -235,7 +233,7 @@ object sapMMultiInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.MultiInput`.
       *
@@ -250,20 +248,20 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit]
     ): this.type = js.native
     def attachTokenUpdate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiInput` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.MultiInput`.
       *
@@ -283,7 +281,7 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit]
     ): this.type = js.native
     def attachTokenUpdate(
       /**
@@ -294,7 +292,7 @@ object sapMMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiInput` itself
       */
@@ -302,7 +300,7 @@ object sapMMultiInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.58)
       *
       * Close multi-line MultiInput in multi-line mode
@@ -329,13 +327,13 @@ object sapMMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit]
     ): this.type = js.native
     def detachTokenChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -343,7 +341,7 @@ object sapMMultiInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Detaches event handler `fnFunction` from the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.MultiInput`.
       *
@@ -355,13 +353,13 @@ object sapMMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit]
     ): this.type = js.native
     def detachTokenUpdate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenUpdateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -370,21 +368,23 @@ object sapMMultiInputMod {
     
     /**
       * @deprecated (since 1.46) - Please use the new event tokenUpdate.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenChange tokenChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTokenChange(): this.type = js.native
-    def fireTokenChange(/**
+    def fireTokenChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AddedTokens): this.type = js.native
+    mParameters: MultiInput$TokenChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.46
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenUpdate tokenUpdate} to attached listeners.
       *
@@ -394,13 +394,15 @@ object sapMMultiInputMod {
       * @returns Whether or not to prevent the default action
       */
     def fireTokenUpdate(): Boolean = js.native
-    def fireTokenUpdate(/**
+    def fireTokenUpdate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RemovedTokens): Boolean = js.native
+    mParameters: MultiInput$TokenUpdateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the picker header title.
       *
@@ -409,7 +411,7 @@ object sapMMultiInputMod {
     def getDialogTitle(): typings.openui5.sapMTitleMod.default | Null = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.58) - Replaced with N-more/N-items labels, which work in all cases.
       *
       * Gets current value of property {@link #getEnableMultiLineMode enableMultiLineMode}.
@@ -426,7 +428,7 @@ object sapMMultiInputMod {
     def getEnableMultiLineMode(): Boolean = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getMaxTokens maxTokens}.
       *
@@ -487,7 +489,7 @@ object sapMMultiInputMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.58)
       *
       * Expand multi-line MultiInput in multi-line mode
@@ -535,7 +537,7 @@ object sapMMultiInputMod {
     fValidator: js.Function): Unit = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.58) - Replaced with N-more/N-items labels, which work in all cases.
       *
       * Sets a new value for property {@link #getEnableMultiLineMode enableMultiLineMode}.
@@ -558,7 +560,7 @@ object sapMMultiInputMod {
     bEnableMultiLineMode: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getMaxTokens maxTokens}.
       *
@@ -584,12 +586,126 @@ object sapMMultiInputMod {
     aTokens: js.Array[typings.openui5.sapMTokenMod.default]): this.type = js.native
   }
   
+  trait MultiInput$TokenChangeEventParameters extends StObject {
+    
+    /**
+      * The array of tokens that are added. This parameter is used when tokenChange type is "tokenChanged".
+      */
+    var addedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * The array of tokens that are removed. This parameter is used when tokenChange type is "tokenChanged".
+      */
+    var removedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * The added token or removed token. This parameter is used when tokenChange type is "added" or "removed".
+      */
+    var token: js.UndefOr[typings.openui5.sapMTokenMod.default] = js.undefined
+    
+    /**
+      * The array of removed tokens. This parameter is used when tokenChange type is "removedAll".
+      */
+    var tokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * Type of tokenChange event. There are four TokenChange types: "added", "removed", "removedAll", "tokensChanged".
+      * Use sap.m.Tokenizer.TokenChangeType.Added for "added", sap.m.Tokenizer.TokenChangeType.Removed for "removed",
+      * sap.m.Tokenizer.TokenChangeType.RemovedAll for "removedAll" and sap.m.Tokenizer.TokenChangeType.TokensChanged
+      * for "tokensChanged".
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object MultiInput$TokenChangeEventParameters {
+    
+    inline def apply(): MultiInput$TokenChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiInput$TokenChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInput$TokenChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAddedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "addedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setAddedTokensUndefined: Self = StObject.set(x, "addedTokens", js.undefined)
+      
+      inline def setAddedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "addedTokens", js.Array(value*))
+      
+      inline def setRemovedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "removedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setRemovedTokensUndefined: Self = StObject.set(x, "removedTokens", js.undefined)
+      
+      inline def setRemovedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "removedTokens", js.Array(value*))
+      
+      inline def setToken(value: typings.openui5.sapMTokenMod.default): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      
+      inline def setTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      
+      inline def setTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "tokens", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait MultiInput$TokenUpdateEventParameters extends StObject {
+    
+    /**
+      * The array of tokens that are added. This parameter is used when tokenUpdate type is "added".
+      */
+    var addedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * The array of tokens that are removed. This parameter is used when tokenUpdate type is "removed".
+      */
+    var removedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * Type of tokenChange event. There are two TokenUpdate types: "added", "removed" Use sap.m.Tokenizer.TokenUpdateType.Added
+      * for "added" and sap.m.Tokenizer.TokenUpdateType.Removed for "removed".
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object MultiInput$TokenUpdateEventParameters {
+    
+    inline def apply(): MultiInput$TokenUpdateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiInput$TokenUpdateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInput$TokenUpdateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAddedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "addedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setAddedTokensUndefined: Self = StObject.set(x, "addedTokens", js.undefined)
+      
+      inline def setAddedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "addedTokens", js.Array(value*))
+      
+      inline def setRemovedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "removedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setRemovedTokensUndefined: Self = StObject.set(x, "removedTokens", js.undefined)
+      
+      inline def setRemovedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "removedTokens", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
   trait MultiInputSettings
     extends StObject
        with InputSettings {
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       * @deprecated (since 1.58) - Replaced with N-more/N-items labels, which work in all cases.
       *
       * If set to true, the MultiInput will be displayed in multi-line display mode. In multi-line display mode,
@@ -602,7 +718,7 @@ object sapMMultiInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * The max number of tokens that is allowed in MultiInput.
       */
@@ -613,14 +729,24 @@ object sapMMultiInputMod {
       *
       * Fired when the tokens aggregation changed (add / remove token)
       */
-    var tokenChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Fired when the tokens aggregation changed due to a user interaction (add / remove token)
       */
-    var tokenUpdate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenUpdate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenUpdateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The currently displayed tokens
@@ -647,11 +773,15 @@ object sapMMultiInputMod {
       
       inline def setMaxTokensUndefined: Self = StObject.set(x, "maxTokens", js.undefined)
       
-      inline def setTokenChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenChange", js.Any.fromFunction1(value))
+      inline def setTokenChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenChange", js.Any.fromFunction1(value))
       
       inline def setTokenChangeUndefined: Self = StObject.set(x, "tokenChange", js.undefined)
       
-      inline def setTokenUpdate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenUpdate", js.Any.fromFunction1(value))
+      inline def setTokenUpdate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenUpdateEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenUpdate", js.Any.fromFunction1(value))
       
       inline def setTokenUpdateUndefined: Self = StObject.set(x, "tokenUpdate", js.undefined)
       
@@ -664,4 +794,12 @@ object sapMMultiInputMod {
       inline def setTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
+  
+  type MultiInputTokenChangeEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenChangeEventParameters]
+  
+  type MultiInputTokenChangeEventParameters = MultiInput$TokenChangeEventParameters
+  
+  type MultiInputTokenUpdateEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenUpdateEventParameters]
+  
+  type MultiInputTokenUpdateEventParameters = MultiInput$TokenUpdateEventParameters
 }

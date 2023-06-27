@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "interface-store" : "5.1.0"
+      "interface-store" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "interface-store" : "5.1.0"
+      "interface-store" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

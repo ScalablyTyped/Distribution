@@ -66,6 +66,7 @@ import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -139,7 +140,7 @@ trait IntrinsicElements extends StObject {
   
   var animateMotion: SVGAttributes[SVGAnimateMotionElement]
   
-  var animateTransform: SVGAttributes[SVGAnimateElement]
+  var animateTransform: SVGAttributes[SVGAnimateTransformElement]
   
   var area: HTMLAttributes[HTMLAreaElement]
   
@@ -486,7 +487,7 @@ object IntrinsicElements {
     address: HTMLAttributes[HTMLElement],
     animate: SVGAttributes[SVGAnimateElement],
     animateMotion: SVGAttributes[SVGAnimateMotionElement],
-    animateTransform: SVGAttributes[SVGAnimateElement],
+    animateTransform: SVGAttributes[SVGAnimateTransformElement],
     area: HTMLAttributes[HTMLAreaElement],
     article: HTMLAttributes[HTMLElement],
     aside: HTMLAttributes[HTMLElement],
@@ -675,7 +676,7 @@ object IntrinsicElements {
     
     inline def setAnimateMotion(value: SVGAttributes[SVGAnimateMotionElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
     
-    inline def setAnimateTransform(value: SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
+    inline def setAnimateTransform(value: SVGAttributes[SVGAnimateTransformElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
     
     inline def setArea(value: HTMLAttributes[HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

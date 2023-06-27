@@ -47,7 +47,6 @@ trait INotificationsService extends StObject {
   /**
     * @ngdoc property
     * @name umbraco.services.notificationsService#current
-    * @propertyOf umbraco.services.notificationsService
     *
     * @description
     * Returns an array of current notifications to display

@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AllSelectedAttributes
-import typings.openui5.anon.Query
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +148,13 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit]
     ): this.type = js.native
     def attachRefineSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Exact` itself
       */
@@ -181,7 +179,7 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit]
     ): this.type = js.native
     def attachRefineSearch(
       /**
@@ -192,7 +190,7 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Exact` itself
       */
@@ -213,13 +211,13 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Exact` itself
       */
@@ -244,7 +242,7 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -255,7 +253,7 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Exact` itself
       */
@@ -287,13 +285,13 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit]
     ): this.type = js.native
     def detachRefineSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactRefineSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -311,13 +309,13 @@ object sapUiUx3ExactMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -325,20 +323,22 @@ object sapUiUx3ExactMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:refineSearch refineSearch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireRefineSearch(): this.type = js.native
-    def fireRefineSearch(/**
+    def fireRefineSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AllSelectedAttributes): this.type = js.native
+    mParameters: Exact$RefineSearchEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
@@ -348,7 +348,7 @@ object sapUiUx3ExactMod {
     def fireSearch(/**
       * Parameters to pass along with the event
       */
-    mParameters: Query): this.type = js.native
+    mParameters: Exact$SearchEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getAttributes attributes}.
@@ -469,6 +469,78 @@ object sapUiUx3ExactMod {
     oSettingsMenu: typings.openui5.sapUiCommonsMenuMod.default): this.type = js.native
   }
   
+  trait Exact$RefineSearchEventParameters extends StObject {
+    
+    /**
+      * Array of all selected ExcatAttribute.
+      */
+    var allSelectedAttributes: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The attribute which was selected or unselected recently
+      */
+    var changedAttribute: js.UndefOr[typings.openui5.sapUiUx3ExactAttributeMod.default] = js.undefined
+    
+    /**
+      * The query string which was entered in the search field
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object Exact$RefineSearchEventParameters {
+    
+    inline def apply(): Exact$RefineSearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Exact$RefineSearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exact$RefineSearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAllSelectedAttributes(value: js.Object): Self = StObject.set(x, "allSelectedAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setAllSelectedAttributesUndefined: Self = StObject.set(x, "allSelectedAttributes", js.undefined)
+      
+      inline def setChangedAttribute(value: typings.openui5.sapUiUx3ExactAttributeMod.default): Self = StObject.set(x, "changedAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setChangedAttributeUndefined: Self = StObject.set(x, "changedAttribute", js.undefined)
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  trait Exact$SearchEventParameters extends StObject {
+    
+    /**
+      * The query string which was entered in the search field.
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object Exact$SearchEventParameters {
+    
+    inline def apply(): Exact$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Exact$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exact$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  type ExactRefineSearchEvent = typings.openui5.sapUiBaseEventMod.default[Exact$RefineSearchEventParameters]
+  
+  type ExactRefineSearchEventParameters = Exact$RefineSearchEventParameters
+  
+  type ExactSearchEvent = typings.openui5.sapUiBaseEventMod.default[Exact$SearchEventParameters]
+  
+  type ExactSearchEventParameters = Exact$SearchEventParameters
+  
   trait ExactSettings
     extends StObject
        with ControlSettings {
@@ -483,7 +555,12 @@ object sapUiUx3ExactMod {
     /**
       * Event which is fired when an attribute is selected or unselected.
       */
-    var refineSearch: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var refineSearch: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Exact$RefineSearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * A title text which is displayed above the result section
@@ -493,7 +570,12 @@ object sapUiUx3ExactMod {
     /**
       * Event is fired when the search button is clicked
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Exact$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the 'Settings' button in the browse section tool bar
@@ -518,7 +600,9 @@ object sapUiUx3ExactMod {
       
       inline def setAttributesVarargs(value: typings.openui5.sapUiUx3ExactAttributeMod.default*): Self = StObject.set(x, "attributes", js.Array(value*))
       
-      inline def setRefineSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "refineSearch", js.Any.fromFunction1(value))
+      inline def setRefineSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Exact$RefineSearchEventParameters] => Unit
+      ): Self = StObject.set(x, "refineSearch", js.Any.fromFunction1(value))
       
       inline def setRefineSearchUndefined: Self = StObject.set(x, "refineSearch", js.undefined)
       
@@ -526,7 +610,7 @@ object sapUiUx3ExactMod {
       
       inline def setResultTextUndefined: Self = StObject.set(x, "resultText", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Exact$SearchEventParameters] => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       

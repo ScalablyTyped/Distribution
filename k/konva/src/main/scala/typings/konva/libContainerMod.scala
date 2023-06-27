@@ -7,7 +7,9 @@ import typings.konva.libNodeMod.Node
 import typings.konva.libNodeMod.NodeConfig
 import typings.konva.libTypesMod.GetSet
 import typings.konva.libTypesMod.IRect
+import typings.std.CanvasFillRule
 import typings.std.CanvasRenderingContext2D
+import typings.std.Path2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,11 +39,13 @@ object libContainerMod {
     def clip(): IRect = js.native
     def clip(v: IRect): this.type = js.native
     
-    def clipFunc(): js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], Unit] = js.native
-    def clipFunc(v: js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], Unit]): this.type = js.native
+    def clipFunc(): js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], ClipFuncOutput] = js.native
+    def clipFunc(
+      v: js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], ClipFuncOutput]
+    ): this.type = js.native
     @JSName("clipFunc")
     var clipFunc_Original: GetSet[
-        js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], Unit], 
+        js.Function2[/* ctx */ CanvasRenderingContext2D, /* shape */ Container[ChildType], ClipFuncOutput], 
         this.type
       ] = js.native
     
@@ -89,13 +93,15 @@ object libContainerMod {
     def removeChildren(): this.type = js.native
   }
   
+  type ClipFuncOutput = Unit | (js.Array[Path2D | CanvasFillRule]) | (js.Tuple2[Path2D, CanvasFillRule])
+  
   trait ContainerConfig
     extends StObject
        with NodeConfig {
     
     var clearBeforeDraw: js.UndefOr[Boolean] = js.undefined
     
-    var clipFunc: js.UndefOr[js.Function1[/* ctx */ SceneContext, Unit]] = js.undefined
+    var clipFunc: js.UndefOr[js.Function1[/* ctx */ SceneContext, ClipFuncOutput]] = js.undefined
     
     var clipHeight: js.UndefOr[Double] = js.undefined
     
@@ -119,7 +125,7 @@ object libContainerMod {
       
       inline def setClearBeforeDrawUndefined: Self = StObject.set(x, "clearBeforeDraw", js.undefined)
       
-      inline def setClipFunc(value: /* ctx */ SceneContext => Unit): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
+      inline def setClipFunc(value: /* ctx */ SceneContext => ClipFuncOutput): Self = StObject.set(x, "clipFunc", js.Any.fromFunction1(value))
       
       inline def setClipFuncUndefined: Self = StObject.set(x, "clipFunc", js.undefined)
       

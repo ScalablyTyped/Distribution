@@ -11,8 +11,10 @@ trait Directory
   // Conceptual container for user and group directory objects.
   var administrativeUnits: js.UndefOr[NullableOption[js.Array[AdministrativeUnit]]] = js.undefined
   
+  // Group of related custom security attribute definitions.
   var attributeSets: js.UndefOr[NullableOption[js.Array[AttributeSet]]] = js.undefined
   
+  // Schema of a custom security attributes (key-value pairs).
   var customSecurityAttributeDefinitions: js.UndefOr[NullableOption[js.Array[CustomSecurityAttributeDefinition]]] = js.undefined
   
   // Recently deleted items. Read-only. Nullable.

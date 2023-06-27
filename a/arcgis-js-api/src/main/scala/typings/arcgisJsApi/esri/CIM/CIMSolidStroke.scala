@@ -10,8 +10,8 @@ trait CIMSolidStroke
      with CIMSymbolLayerType {
   
   /**
-    * The color that is applied to the stroke.
-    */
+  			 * The color that is applied to the stroke.
+  			 */
   var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")

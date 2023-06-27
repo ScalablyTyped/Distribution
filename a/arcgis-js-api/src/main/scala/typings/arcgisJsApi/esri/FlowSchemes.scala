@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowSchemes extends StObject {
   
   /**
-    * The ID of the basemap associated with the given schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
-    */
+  		 * The ID of the basemap associated with the given schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average basemap color is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
-    */
+  		 * Indicates whether the average basemap color is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
+  		 */
   var basemapTheme: String
   
   /**
-    * The flow scheme best suited for the given basemap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
-    */
+  		 * The flow scheme best suited for the given basemap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
+  		 */
   var primaryScheme: FlowScheme
   
   /**
-    * Additional flow schemes that may be used to visualize stream lines overlaid on the given basemap or basemap theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
-    */
+  		 * Additional flow schemes that may be used to visualize stream lines overlaid on the given basemap or basemap theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-flow.html#FlowSchemes)
+  		 */
   var secondarySchemes: js.Array[FlowScheme]
 }
 object FlowSchemes {

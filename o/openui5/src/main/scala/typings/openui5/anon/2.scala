@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.float
+import typings.openui5.sapUiBaseObjectMod.MetadataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `2` extends StObject {
   
   /**
-    * The current value of the slider after a live change.
+    * The metadata object describing the class
     */
-  var value: js.UndefOr[float] = js.undefined
+  var metadata: js.UndefOr[MetadataOptions] = js.undefined
 }
 object `2` {
   
@@ -22,8 +22,8 @@ object `2` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
-    inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

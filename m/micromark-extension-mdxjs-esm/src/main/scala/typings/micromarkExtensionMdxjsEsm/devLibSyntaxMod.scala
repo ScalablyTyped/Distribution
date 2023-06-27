@@ -1,6 +1,5 @@
 package typings.micromarkExtensionMdxjsEsm
 
-import typings.micromarkExtensionMdxjsEsm.anon.Flow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object devLibSyntaxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def mdxjsEsm(options: Options): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("mdxjsEsm")(options.asInstanceOf[js.Any]).asInstanceOf[Flow]
+  inline def mdxjsEsm(options: Options): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("mdxjsEsm")(options.asInstanceOf[js.Any]).asInstanceOf[Extension]
   
   type Acorn = typings.micromarkUtilEventsToAcorn.mod.Acorn
   
@@ -21,11 +20,22 @@ object devLibSyntaxMod {
   
   trait Options extends StObject {
     
+    /**
+      *   Acorn parser to use (required).
+      */
     var acorn: Acorn
     
-    var acornOptions: js.UndefOr[typings.acorn.mod.Options] = js.undefined
+    /**
+      * Configuration for acorn (default: `{ecmaVersion: 2020, locations: true,
+      * sourceType: 'module'}`).
+      * all fields except `locations` can be set
+      */
+    var acornOptions: js.UndefOr[AcornOptions | Null] = js.undefined
     
-    var addResult: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Whether to add `estree` fields to tokens with results from acorn.
+      */
+    var addResult: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Options {
     
@@ -39,17 +49,23 @@ object devLibSyntaxMod {
       
       inline def setAcorn(value: Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
       
-      inline def setAcornOptions(value: typings.acorn.mod.Options): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      inline def setAcornOptions(value: AcornOptions): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAcornOptionsNull: Self = StObject.set(x, "acornOptions", null)
       
       inline def setAcornOptionsUndefined: Self = StObject.set(x, "acornOptions", js.undefined)
       
       inline def setAddResult(value: Boolean): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
+      
+      inline def setAddResultNull: Self = StObject.set(x, "addResult", null)
       
       inline def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
     }
   }
   
   type State = typings.micromarkUtilTypes.mod.State
+  
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
   
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

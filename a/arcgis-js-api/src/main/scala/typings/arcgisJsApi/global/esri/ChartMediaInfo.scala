@@ -11,10 +11,10 @@ open class ChartMediaInfo ()
      with typings.arcgisJsApi.esri.ChartMediaInfo {
   
   /**
-    * Defines the chart value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
-    */
+  		 * Defines the chart value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
+  		 */
   /* CompleteClass */
   var value: typings.arcgisJsApi.esri.ChartMediaInfoValue = js.native
 }

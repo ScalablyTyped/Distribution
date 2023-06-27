@@ -8,9 +8,10 @@ import typings.openui5.anon.FailOnError
 import typings.openui5.anon.FragmentContent
 import typings.openui5.anon.FragmentName
 import typings.openui5.anon.HandleValidation
+import typings.openui5.anon.NoConflict
 import typings.openui5.anon.ViewContent
 import typings.openui5.anon.ViewData
-import typings.openui5.anon.`25`
+import typings.openui5.anon.`1`
 import typings.openui5.sapUiCoreComponentMod.default
 import typings.openui5.sapUiCoreCoreMod.Core
 import typings.std.Element
@@ -28,7 +29,7 @@ object global {
   object sap {
     
     /**
-      * @SINCE 1.4
+      * @since 1.4
       *
       * The main UI5 control library, with responsive controls that can be used in touch devices as well as desktop
       * browsers.
@@ -36,7 +37,7 @@ object global {
     object m {
       
       /**
-        * @SINCE 1.48.0
+        * @since 1.48.0
         *
         * The public facade of the {@link sap.m.SelectionDetailsItem} element.
         */
@@ -63,10 +64,10 @@ object global {
       object component {
         
         /**
-          * @SINCE 1.15.0
-          * @deprecated (since 1.56) - use {@link sap.ui.core.Component.get Component.get} or {@link sap.ui.core.Component.create
-          * Component.create} instead. Note: {@link sap.ui.core.Component.create Component.create} does not support
-          * synchronous loading or the deprecated options ***manifestFirst*** and ***manifestUrl***.
+          * @since 1.15.0
+          * @deprecated (since 1.56) - use {@link sap.ui.core.Component.get Component.get} or {@link sap.ui.core.Component.create Component.create }
+          * instead. Note: {@link sap.ui.core.Component.create Component.create} does not support synchronous loading
+          * or the deprecated options ***manifestFirst*** and ***manifestUrl***.
           *
           * Creates a new instance of a `Component` or returns the instance of an existing `Component`.
           *
@@ -110,7 +111,7 @@ object global {
         val ^ : js.Any = js.native
         
         /**
-          * @SINCE 1.16.3
+          * @since 1.16.3
           * @deprecated (since 1.56) - use {@link sap.ui.core.Component.load}
           *
           * Load a component without instantiating it.
@@ -131,18 +132,18 @@ object global {
           *
           *
           * 	 - `oConfig.asyncHints.components : string[]`a list of components needed by the current component and
-          * 			its subcomponents The framework will try to preload these components (their Component-preload.js) asynchronously,
-          * 			errors will be ignored. Please note that the framework has no knowledge about whether a Component provides
-          * 			a preload file or whether it is bundled in some library preload. If Components are listed in the hints
-          * 			section, they will be preloaded.
+          *     its subcomponents The framework will try to preload these components (their Component-preload.js) asynchronously,
+          *     errors will be ignored. Please note that the framework has no knowledge about whether a Component provides
+          *     a preload file or whether it is bundled in some library preload. If Components are listed in the hints
+          *     section, they will be preloaded.
           * 	 - `oConfig.asyncHints.libs : string[]`libraries needed by the Component and its subcomponents. The
-          * 			framework will asynchronously load those libraries, if they're not loaded yet.
+          *     framework will asynchronously load those libraries, if they're not loaded yet.
           * 	 - `oConfig.asyncHints.preloadBundles : string[]`a list of additional preload bundles The framework
-          * 			will try to load these bundles asynchronously before requiring the Component, errors will be ignored.
-          * 			The named modules must only represent preload bundles. If they are normal modules, their dependencies
-          * 			will be loaded with the normal synchronous request mechanism and performance might degrade. `oConfig.asyncHints.preloadOnly
-          * 			: boolean (default: false)` whether only the preloads should be done, but not the loading of the Component
-          * 			controller class itself.
+          *     will try to load these bundles asynchronously before requiring the Component, errors will be ignored.
+          *     The named modules must only represent preload bundles. If they are normal modules, their dependencies
+          *     will be loaded with the normal synchronous request mechanism and performance might degrade. `oConfig.asyncHints.preloadOnly
+          *     : boolean (default: false)` whether only the preloads should be done, but not the loading of the Component
+          *     controller class itself.
           *
           * If Components and/or libraries are listed in the hints section, all the corresponding preload files will
           * be requested in parallel. The constructor class will only be required after all of them are rejected
@@ -227,7 +228,7 @@ object global {
       ): Unit | typings.openui5.sapUiCoreMvcControllerMod.default | js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any], oControllerImpl.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[Unit | typings.openui5.sapUiCoreMvcControllerMod.default | js.Promise[Any]]
       
       /**
-        * @SINCE 1.27.0
+        * @since 1.27.0
         *
         * Defines a JavaScript module with its ID, its dependencies and a module export value or factory.
         *
@@ -290,7 +291,7 @@ object global {
         *
         * Module Name Syntax:
         *
-        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name}
+        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name }
         * syntax for the module's own name as well as for its dependencies. The only difference to that syntax
         * is, that for `sap.ui.define` and `sap.ui.require`, the extension (which always would be '.js') has to
         * be omitted. Both methods always add this extension internally.
@@ -366,9 +367,9 @@ object global {
         *
         *
         * 	 - Before the factory function is called, the existence of the global parent namespace for the current
-        * 			module is ensured
+        *     module is ensured
         * 	 - The module export returned by the module's factory function will be automatically exported under
-        * 			the global name which is derived from the ID of the module
+        *     the global name which is derived from the ID of the module
         *
         * The parameter lets the framework know whether any of those two operations is needed or not. In future
         * versions of UI5, a central configuration option is planned to suppress those 'exports'.
@@ -415,42 +416,42 @@ object global {
         * The current implementation of `sap.ui.define` differs from the AMD specification (https://github.com/amdjs/amdjs-api)
         * or from concrete AMD loaders like `requireJS` in several aspects:
         * 	 - The name `sap.ui.define` is different from the plain `define`. This has two reasons: first, it avoids
-        * 			the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
-        * 			the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
-        * 			or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
-        * 			of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
-        * 			methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
-        * 			can be loaded, but only when no AMD loader is present or when they expose their export also to the global
-        * 			namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
-        * 			using the `amd:true` flag (see example above)
+        *     the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
+        *     the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
+        *     or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
+        *     of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
+        *     methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
+        *     can be loaded, but only when no AMD loader is present or when they expose their export also to the global
+        *     namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
+        *     using the `amd:true` flag (see example above)
         * 	 - Depending on configuration and the current context, `sap.ui.define` loads the dependencies of a module
-        * 			either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
-        * 			is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
-        * 			synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
-        * 			that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
-        * 			{@link jQuery.sap.require}.
+        *     either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
+        *     is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
+        *     synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
+        *     that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
+        *     {@link jQuery.sap.require}.
         * 	 - `sap.ui.define` does not support plugins to use other file types, formats or protocols. It is not
-        * 			planned to support this in future
+        *     planned to support this in future
         * 	 - `sap.ui.define` does not support absolute URLs as module names (dependencies) nor does it allow module
-        * 			names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
-        * 			that points to that URL (or to a prefix of it).
+        *     names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
+        *     that points to that URL (or to a prefix of it).
         * 	 - `sap.ui.define` does **not** support the 'sugar' of requireJS where CommonJS style dependency declarations
-        * 			using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
-        * 			executing the factory function.
+        *     using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
+        *     executing the factory function.
         *
         * Restrictions, Design Considerations:
         * 	 - **Restriction**: as dependency management is not supported for Non-UI5 modules, the only way to ensure
-        * 			proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
-        * 			this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
-        * 			loading is implemented.
+        *     proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
+        *     this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
+        *     loading is implemented.
         * 	 - It was discussed to enforce asynchronous execution of the module factory function (e.g. with a timeout
-        * 			of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
-        * 			call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
-        * 			the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
+        *     of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
+        *     call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
+        *     the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
         *
         * 	 - A single file must not contain multiple calls to `sap.ui.define`. Multiple calls currently are only
-        * 			supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
-        * 			how this works might be changed in future implementations and are not part of the API contract
+        *     supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
+        *     how this works might be changed in future implementations and are not part of the API contract
         * See:
         * 	https://github.com/amdjs/amdjs-api
         */
@@ -459,59 +460,31 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function
+      vFactory: js.Function1[/* p1 */ Any, Any]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def define(
         /**
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function,
-        /**
-        * Whether an export to global names is required - should be used by SAP-owned code only
-        */
-      bExport: Boolean
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * List of dependencies of the module
-        */
-      aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
-            ],
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * List of dependencies of the module
-        */
-      aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
-            ],
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any,
+      vFactory: js.Function1[/* p1 */ Any, Any],
         /**
         * Whether an export to global names is required - should be used by SAP-owned code only
         */
       bExport: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
-        * @SINCE 1.27.0
+        * @since 1.27.0
         *
         * Defines a JavaScript module with its ID, its dependencies and a module export value or factory.
         *
@@ -574,7 +547,7 @@ object global {
         *
         * Module Name Syntax:
         *
-        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name}
+        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name }
         * syntax for the module's own name as well as for its dependencies. The only difference to that syntax
         * is, that for `sap.ui.define` and `sap.ui.require`, the extension (which always would be '.js') has to
         * be omitted. Both methods always add this extension internally.
@@ -650,9 +623,9 @@ object global {
         *
         *
         * 	 - Before the factory function is called, the existence of the global parent namespace for the current
-        * 			module is ensured
+        *     module is ensured
         * 	 - The module export returned by the module's factory function will be automatically exported under
-        * 			the global name which is derived from the ID of the module
+        *     the global name which is derived from the ID of the module
         *
         * The parameter lets the framework know whether any of those two operations is needed or not. In future
         * versions of UI5, a central configuration option is planned to suppress those 'exports'.
@@ -699,42 +672,42 @@ object global {
         * The current implementation of `sap.ui.define` differs from the AMD specification (https://github.com/amdjs/amdjs-api)
         * or from concrete AMD loaders like `requireJS` in several aspects:
         * 	 - The name `sap.ui.define` is different from the plain `define`. This has two reasons: first, it avoids
-        * 			the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
-        * 			the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
-        * 			or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
-        * 			of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
-        * 			methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
-        * 			can be loaded, but only when no AMD loader is present or when they expose their export also to the global
-        * 			namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
-        * 			using the `amd:true` flag (see example above)
+        *     the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
+        *     the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
+        *     or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
+        *     of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
+        *     methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
+        *     can be loaded, but only when no AMD loader is present or when they expose their export also to the global
+        *     namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
+        *     using the `amd:true` flag (see example above)
         * 	 - Depending on configuration and the current context, `sap.ui.define` loads the dependencies of a module
-        * 			either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
-        * 			is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
-        * 			synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
-        * 			that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
-        * 			{@link jQuery.sap.require}.
+        *     either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
+        *     is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
+        *     synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
+        *     that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
+        *     {@link jQuery.sap.require}.
         * 	 - `sap.ui.define` does not support plugins to use other file types, formats or protocols. It is not
-        * 			planned to support this in future
+        *     planned to support this in future
         * 	 - `sap.ui.define` does not support absolute URLs as module names (dependencies) nor does it allow module
-        * 			names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
-        * 			that points to that URL (or to a prefix of it).
+        *     names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
+        *     that points to that URL (or to a prefix of it).
         * 	 - `sap.ui.define` does **not** support the 'sugar' of requireJS where CommonJS style dependency declarations
-        * 			using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
-        * 			executing the factory function.
+        *     using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
+        *     executing the factory function.
         *
         * Restrictions, Design Considerations:
         * 	 - **Restriction**: as dependency management is not supported for Non-UI5 modules, the only way to ensure
-        * 			proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
-        * 			this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
-        * 			loading is implemented.
+        *     proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
+        *     this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
+        *     loading is implemented.
         * 	 - It was discussed to enforce asynchronous execution of the module factory function (e.g. with a timeout
-        * 			of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
-        * 			call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
-        * 			the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
+        *     of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
+        *     call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
+        *     the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
         *
         * 	 - A single file must not contain multiple calls to `sap.ui.define`. Multiple calls currently are only
-        * 			supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
-        * 			how this works might be changed in future implementations and are not part of the API contract
+        *     supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
+        *     how this works might be changed in future implementations and are not part of the API contract
         * See:
         * 	https://github.com/amdjs/amdjs-api
         */
@@ -748,12 +721,12 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function
+      vFactory: js.Function1[/* p1 */ Any, Any]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def define(
         /**
@@ -765,57 +738,19 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function,
-        /**
-        * Whether an export to global names is required - should be used by SAP-owned code only
-        */
-      bExport: Boolean
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * ID of the module in simplified resource name syntax. When omitted, the loader determines the ID from
-        * the request.
-        */
-      sModuleName: String,
-        /**
-        * List of dependencies of the module
-        */
-      aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
-            ],
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * ID of the module in simplified resource name syntax. When omitted, the loader determines the ID from
-        * the request.
-        */
-      sModuleName: String,
-        /**
-        * List of dependencies of the module
-        */
-      aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
-            ],
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any,
+      vFactory: js.Function1[/* p1 */ Any, Any],
         /**
         * Whether an export to global names is required - should be used by SAP-owned code only
         */
       bExport: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
-        * @SINCE 1.27.0
+        * @since 1.27.0
         *
         * Defines a JavaScript module with its ID, its dependencies and a module export value or factory.
         *
@@ -878,7 +813,7 @@ object global {
         *
         * Module Name Syntax:
         *
-        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name}
+        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name }
         * syntax for the module's own name as well as for its dependencies. The only difference to that syntax
         * is, that for `sap.ui.define` and `sap.ui.require`, the extension (which always would be '.js') has to
         * be omitted. Both methods always add this extension internally.
@@ -954,9 +889,9 @@ object global {
         *
         *
         * 	 - Before the factory function is called, the existence of the global parent namespace for the current
-        * 			module is ensured
+        *     module is ensured
         * 	 - The module export returned by the module's factory function will be automatically exported under
-        * 			the global name which is derived from the ID of the module
+        *     the global name which is derived from the ID of the module
         *
         * The parameter lets the framework know whether any of those two operations is needed or not. In future
         * versions of UI5, a central configuration option is planned to suppress those 'exports'.
@@ -1003,42 +938,42 @@ object global {
         * The current implementation of `sap.ui.define` differs from the AMD specification (https://github.com/amdjs/amdjs-api)
         * or from concrete AMD loaders like `requireJS` in several aspects:
         * 	 - The name `sap.ui.define` is different from the plain `define`. This has two reasons: first, it avoids
-        * 			the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
-        * 			the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
-        * 			or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
-        * 			of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
-        * 			methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
-        * 			can be loaded, but only when no AMD loader is present or when they expose their export also to the global
-        * 			namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
-        * 			using the `amd:true` flag (see example above)
+        *     the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
+        *     the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
+        *     or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
+        *     of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
+        *     methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
+        *     can be loaded, but only when no AMD loader is present or when they expose their export also to the global
+        *     namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
+        *     using the `amd:true` flag (see example above)
         * 	 - Depending on configuration and the current context, `sap.ui.define` loads the dependencies of a module
-        * 			either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
-        * 			is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
-        * 			synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
-        * 			that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
-        * 			{@link jQuery.sap.require}.
+        *     either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
+        *     is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
+        *     synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
+        *     that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
+        *     {@link jQuery.sap.require}.
         * 	 - `sap.ui.define` does not support plugins to use other file types, formats or protocols. It is not
-        * 			planned to support this in future
+        *     planned to support this in future
         * 	 - `sap.ui.define` does not support absolute URLs as module names (dependencies) nor does it allow module
-        * 			names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
-        * 			that points to that URL (or to a prefix of it).
+        *     names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
+        *     that points to that URL (or to a prefix of it).
         * 	 - `sap.ui.define` does **not** support the 'sugar' of requireJS where CommonJS style dependency declarations
-        * 			using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
-        * 			executing the factory function.
+        *     using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
+        *     executing the factory function.
         *
         * Restrictions, Design Considerations:
         * 	 - **Restriction**: as dependency management is not supported for Non-UI5 modules, the only way to ensure
-        * 			proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
-        * 			this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
-        * 			loading is implemented.
+        *     proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
+        *     this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
+        *     loading is implemented.
         * 	 - It was discussed to enforce asynchronous execution of the module factory function (e.g. with a timeout
-        * 			of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
-        * 			call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
-        * 			the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
+        *     of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
+        *     call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
+        *     the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
         *
         * 	 - A single file must not contain multiple calls to `sap.ui.define`. Multiple calls currently are only
-        * 			supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
-        * 			how this works might be changed in future implementations and are not part of the API contract
+        *     supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
+        *     how this works might be changed in future implementations and are not part of the API contract
         * See:
         * 	https://github.com/amdjs/amdjs-api
         */
@@ -1051,7 +986,7 @@ object global {
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function
+      vFactory: js.Function1[/* p1 */ Any, Any]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def define(
         /**
@@ -1062,40 +997,14 @@ object global {
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function,
-        /**
-        * Whether an export to global names is required - should be used by SAP-owned code only
-        */
-      bExport: Boolean
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * ID of the module in simplified resource name syntax. When omitted, the loader determines the ID from
-        * the request.
-        */
-      sModuleName: String,
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * ID of the module in simplified resource name syntax. When omitted, the loader determines the ID from
-        * the request.
-        */
-      sModuleName: String,
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any,
+      vFactory: js.Function1[/* p1 */ Any, Any],
         /**
         * Whether an export to global names is required - should be used by SAP-owned code only
         */
       bExport: Boolean
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
-        * @SINCE 1.27.0
+        * @since 1.27.0
         *
         * Defines a JavaScript module with its ID, its dependencies and a module export value or factory.
         *
@@ -1158,7 +1067,7 @@ object global {
         *
         * Module Name Syntax:
         *
-        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name}
+        * `sap.ui.define` uses a simplified variant of the {@link jQuery.sap.getResourcePath unified resource name }
         * syntax for the module's own name as well as for its dependencies. The only difference to that syntax
         * is, that for `sap.ui.define` and `sap.ui.require`, the extension (which always would be '.js') has to
         * be omitted. Both methods always add this extension internally.
@@ -1234,9 +1143,9 @@ object global {
         *
         *
         * 	 - Before the factory function is called, the existence of the global parent namespace for the current
-        * 			module is ensured
+        *     module is ensured
         * 	 - The module export returned by the module's factory function will be automatically exported under
-        * 			the global name which is derived from the ID of the module
+        *     the global name which is derived from the ID of the module
         *
         * The parameter lets the framework know whether any of those two operations is needed or not. In future
         * versions of UI5, a central configuration option is planned to suppress those 'exports'.
@@ -1283,42 +1192,42 @@ object global {
         * The current implementation of `sap.ui.define` differs from the AMD specification (https://github.com/amdjs/amdjs-api)
         * or from concrete AMD loaders like `requireJS` in several aspects:
         * 	 - The name `sap.ui.define` is different from the plain `define`. This has two reasons: first, it avoids
-        * 			the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
-        * 			the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
-        * 			or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
-        * 			of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
-        * 			methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
-        * 			can be loaded, but only when no AMD loader is present or when they expose their export also to the global
-        * 			namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
-        * 			using the `amd:true` flag (see example above)
+        *     the impression that `sap.ui.define` is an exact implementation of an AMD loader. And second, it allows
+        *     the coexistence of an AMD loader (e.g. requireJS) and `sap.ui.define` in one application as long as UI5
+        *     or applications using UI5 are not fully prepared to run with an AMD loader. Note that the difference
+        *     of the API names also implies that the UI5 loader can't be used to load 'real' AMD modules as they expect
+        *     methods `define` and `require` to be available. Modules that use Unified Module Definition (UMD) syntax,
+        *     can be loaded, but only when no AMD loader is present or when they expose their export also to the global
+        *     namespace, even when an AMD loader is present (as e.g. jQuery does) or when a shim is defined for them
+        *     using the `amd:true` flag (see example above)
         * 	 - Depending on configuration and the current context, `sap.ui.define` loads the dependencies of a module
-        * 			either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
-        * 			is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
-        * 			synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
-        * 			that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
-        * 			{@link jQuery.sap.require}.
+        *     either synchronously using a sync XHR call + eval or asynchronously via script tags. The sync loading
+        *     is basically a tribute to the synchronous history of UI5. There's no way for a module developer to enforce
+        *     synchronous loading of the dependencies and on the long run, sync loading will be faded out. Applications
+        *     that need to ensure synchronous loading of dependencies **MUST** use the deprecated legacy APIs like
+        *     {@link jQuery.sap.require}.
         * 	 - `sap.ui.define` does not support plugins to use other file types, formats or protocols. It is not
-        * 			planned to support this in future
+        *     planned to support this in future
         * 	 - `sap.ui.define` does not support absolute URLs as module names (dependencies) nor does it allow module
-        * 			names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
-        * 			that points to that URL (or to a prefix of it).
+        *     names that start with a slash. To refer to a module at an absolute URL, a resource root can be registered
+        *     that points to that URL (or to a prefix of it).
         * 	 - `sap.ui.define` does **not** support the 'sugar' of requireJS where CommonJS style dependency declarations
-        * 			using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
-        * 			executing the factory function.
+        *     using `sap.ui.require("something")` are automagically converted into `sap.ui.define` dependencies before
+        *     executing the factory function.
         *
         * Restrictions, Design Considerations:
         * 	 - **Restriction**: as dependency management is not supported for Non-UI5 modules, the only way to ensure
-        * 			proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
-        * 			this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
-        * 			loading is implemented.
+        *     proper execution order for such modules currently is to rely on the order in the dependency array. Obviously,
+        *     this only works as long as `sap.ui.define` uses synchronous loading. It will be enhanced when asynchronous
+        *     loading is implemented.
         * 	 - It was discussed to enforce asynchronous execution of the module factory function (e.g. with a timeout
-        * 			of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
-        * 			call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
-        * 			the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
+        *     of 0). But this would have invalidated the current migration scenario where a sync `jQuery.sap.require`
+        *     call can load a `sap.ui.define`'ed module. If the module definition would not execute synchronously,
+        *     the synchronous contract of the require call would be broken (default behavior in existing UI5 applications)
         *
         * 	 - A single file must not contain multiple calls to `sap.ui.define`. Multiple calls currently are only
-        * 			supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
-        * 			how this works might be changed in future implementations and are not part of the API contract
+        *     supported in the so called 'preload' files that the UI5 merge tooling produces. The exact details of
+        *     how this works might be changed in future implementations and are not part of the API contract
         * See:
         * 	https://github.com/amdjs/amdjs-api
         */
@@ -1326,27 +1235,13 @@ object global {
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function
+      vFactory: js.Function1[/* p1 */ Any, Any]
       ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(vFactory.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def define(
         /**
         * The module export value or a function that calculates that value
         */
-      vFactory: js.Function,
-        /**
-        * Whether an export to global names is required - should be used by SAP-owned code only
-        */
-      bExport: Boolean
-      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(vFactory.asInstanceOf[js.Any], bExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      inline def define(/**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(vFactory.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def define(
-        /**
-        * The module export value or a function that calculates that value
-        */
-      vFactory: Any,
+      vFactory: js.Function1[/* p1 */ Any, Any],
         /**
         * Whether an export to global names is required - should be used by SAP-owned code only
         */
@@ -2109,10 +2004,10 @@ object global {
         *
         *
         * 	 - View Definition `sap.ui.htmlview(sId, vView)`: Defines a view of the given name with the given implementation.
-        * 			sId must be the views name, vView must be an object and can contain implementations for any of the hooks
-        * 			provided by HTMLView
+        *     sId must be the views name, vView must be an object and can contain implementations for any of the hooks
+        *     provided by HTMLView
         * 	 - View Instantiation `sap.ui.htmlview(sId?, vView)`: Creates an instance of the view with the given
-        * 			name (and id).
+        *     name (and id).
         *
         * Any other call signature will lead to a runtime error. If the id is omitted in the second variant, an
         * id will be created automatically.
@@ -2137,7 +2032,7 @@ object global {
         /**
         * name or implementation of the view.
         */
-      vView: `25`
+      vView: `1`
       ): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
       /**
         * @deprecated (since 1.56) - Use {@link sap.ui.core.mvc.HTMLView.create HTMLView.create} to create view
@@ -2149,10 +2044,10 @@ object global {
         *
         *
         * 	 - View Definition `sap.ui.htmlview(sId, vView)`: Defines a view of the given name with the given implementation.
-        * 			sId must be the views name, vView must be an object and can contain implementations for any of the hooks
-        * 			provided by HTMLView
+        *     sId must be the views name, vView must be an object and can contain implementations for any of the hooks
+        *     provided by HTMLView
         * 	 - View Instantiation `sap.ui.htmlview(sId?, vView)`: Creates an instance of the view with the given
-        * 			name (and id).
+        *     name (and id).
         *
         * Any other call signature will lead to a runtime error. If the id is omitted in the second variant, an
         * id will be created automatically.
@@ -2166,10 +2061,10 @@ object global {
       inline def htmlview(/**
         * name or implementation of the view.
         */
-      vView: `25`): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
+      vView: `1`): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
       
       /**
-        * @SINCE 1.62
+        * @since 1.62
         *
         * SAPUI5 library with controls specialized for SAP Fiori apps.
         */
@@ -2184,8 +2079,8 @@ object global {
               object iconEditor {
                 
                 /**
-                  * @SINCE 1.81
-                  * @EXPERIMENTAL - 1.81
+                  * @since 1.81
+                  * @experimental - 1.81
                   *
                   * Validates if the provided value belongs to the icon pool.
                   */
@@ -2227,12 +2122,12 @@ object global {
         * ```
         *  where:
         * 	 - `sName` is the name by which this fragment later can be found and instantiated. If defined in its
-        * 			own file, in order to be found by the module loading system, the file location and name must correspond
-        * 			to `sName` (path + file name must be: fragmentName + ".fragment.js").
+        *     own file, in order to be found by the module loading system, the file location and name must correspond
+        *     to `sName` (path + file name must be: fragmentName + ".fragment.js").
         * 	 - `oFragmentDefinition` is an object at least holding the `createContent(oController)` method which
-        * 			defines the fragment content. If given during instantiation, the `createContent` method receives a controller
-        * 			instance (otherwise, parameter `oController` will be undefined) and the return value must be one `sap.ui.core.Control`
-        * 			(which could have any number of children).
+        *     defines the fragment content. If given during instantiation, the `createContent` method receives a controller
+        *     instance (otherwise, parameter `oController` will be undefined) and the return value must be one `sap.ui.core.Control`
+        *     (which could have any number of children).
         *
         * To instantiate a JS fragment, call:
         * ```javascript
@@ -2885,7 +2780,7 @@ object global {
         val ^ : js.Any = js.native
         
         /**
-          * @SINCE 1.56.0
+          * @since 1.56.0
           *
           * Sets the configuration for the UI5 loader. The configuration can be updated multiple times. Later changes
           * do not impact modules that have been loaded before.
@@ -2950,7 +2845,7 @@ object global {
           *
           * @returns UI5 loader configuration in use.
           */
-        inline def config(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.UndefOr[js.Object]]
+        inline def config(): js.UndefOr[NoConflict] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[js.UndefOr[NoConflict]]
         inline def config(
           /**
           * The provided configuration gets merged with the UI5 loader configuration in use. If `cfg` is omitted
@@ -2958,7 +2853,7 @@ object global {
           * `amd` and `async`.
           */
         cfg: Bundles
-        ): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+        ): js.UndefOr[NoConflict] = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NoConflict]]
       }
       
       /**
@@ -3025,8 +2920,8 @@ object global {
           val ^ : js.Any = js.native
           
           /**
-            * @EXPERIMENTAL - This module is only for experimental use!
-            * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+            * @experimental - This module is only for experimental use!
+            * Protected:  Do not call from applications (only from related classes in the framework)
             *
             * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
             */
@@ -3035,8 +2930,7 @@ object global {
       }
       
       /**
-        * @deprecated (since 1.1) - see {@link topic:c78c07c094e04ccfaab659378a1707c7 Creating Control and Class
-        * Modules}.
+        * @deprecated (since 1.1) - see {@link topic:c78c07c094e04ccfaab659378a1707c7 Creating Control and Class Modules}.
         *
         * Ensures that a given a namespace or hierarchy of nested namespaces exists in the current `window`.
         *
@@ -3109,7 +3003,7 @@ object global {
           /**
           * Callback function to execute after resolving an array of dependencies
           */
-        fnCallback: js.Function
+        fnCallback: js.Function1[/* p1 */ Any, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
@@ -3119,13 +3013,13 @@ object global {
           /**
           * Callback function to execute after resolving an array of dependencies
           */
-        fnCallback: js.Function,
+        fnCallback: js.Function1[/* p1 */ Any, Unit],
           /**
           * Callback function to execute if an error was detected while loading the dependencies or executing the
           * factory function. Note that due to browser restrictions not all errors will be reported via this callback.
           * In general, module loading is designed for the non-error case. Error handling is not complete.
           */
-        fnErrback: js.Function
+        fnErrback: js.Function1[/* p1 */ js.Error, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any], fnErrback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
@@ -3141,14 +3035,14 @@ object global {
           * factory function. Note that due to browser restrictions not all errors will be reported via this callback.
           * In general, module loading is designed for the non-error case. Error handling is not complete.
           */
-        fnErrback: js.Function
+        fnErrback: js.Function1[/* p1 */ js.Error, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any], fnErrback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ]
         ): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
@@ -3156,37 +3050,37 @@ object global {
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
           */
-        fnCallback: js.Function
+        fnCallback: js.Function1[/* p1 */ Any, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
           */
-        fnCallback: js.Function,
+        fnCallback: js.Function1[/* p1 */ Any, Unit],
           /**
           * Callback function to execute if an error was detected while loading the dependencies or executing the
           * factory function. Note that due to browser restrictions not all errors will be reported via this callback.
           * In general, module loading is designed for the non-error case. Error handling is not complete.
           */
-        fnErrback: js.Function
+        fnErrback: js.Function1[/* p1 */ js.Error, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any], fnErrback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
           /**
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1455, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
@@ -3197,7 +3091,7 @@ object global {
           * factory function. Note that due to browser restrictions not all errors will be reported via this callback.
           * In general, module loading is designed for the non-error case. Error handling is not complete.
           */
-        fnErrback: js.Function
+        fnErrback: js.Function1[/* p1 */ js.Error, Unit]
         ): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any], fnErrback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
         
         @JSGlobal("sap.ui.require")
@@ -3207,10 +3101,10 @@ object global {
         /**
           * Calculates a URL from the provided resource name.
           *
-          * The calculation takes any configured ID mappings or resource paths into account (see {@link sap.ui.loader.config
-          * config options map and paths}. It also supports relative segments such as `./` and `../` within the path,
-          * but not at its beginning. If relative navigation would cross the root namespace (e.g. `sap.ui.require.toUrl("../")`)
-          * or when the resource name starts with a slash or with a relative segment, an error is thrown.
+          * The calculation takes any configured ID mappings or resource paths into account (see {@link sap.ui.loader.config config options map and paths}.
+          * It also supports relative segments such as `./` and `../` within the path, but not at its beginning.
+          * If relative navigation would cross the root namespace (e.g. `sap.ui.require.toUrl("../")`) or when the
+          * resource name starts with a slash or with a relative segment, an error is thrown.
           *
           * **Note:** `toUrl` does not resolve the returned URL; whether it is an absolute URL or a relative URL
           * depends on the configured `baseUrl` and `paths`.
@@ -3333,7 +3227,7 @@ object global {
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
-        * @SINCE 1.50
+        * @since 1.50
         *
         * UI5 library: sap.ui.support. A library for the Support Assistant tool. Overview: The library provides
         * the Support Assistant tool. It enables application developers to check whether their applications are
@@ -3402,8 +3296,8 @@ object global {
       }
       
       /**
-        * @deprecated (since 1.56) - use an {@link sap.ui.core.mvc.XMLView XMLView} or {@link sap.ui.core.mvc.JSView
-        * JSView} instead.
+        * @deprecated (since 1.56) - use an {@link sap.ui.core.mvc.XMLView XMLView} or {@link sap.ui.core.mvc.JSView JSView }
+        * instead.
         *
         * Creates a Template for the given ID, DOM reference or a configuration object.
         *
@@ -3493,8 +3387,8 @@ object global {
       ): typings.openui5.sapUiCoreTmplTemplateMod.default | js.Array[typings.openui5.sapUiCoreTmplTemplateMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sapUiCoreTmplTemplateMod.default | js.Array[typings.openui5.sapUiCoreTmplTemplateMod.default]]
       
       /**
-        * @deprecated (since 1.56) - use {@link sap.ui.core.mvc.XMLView} in combination with {@link topic:5ee619fc1370463ea674ee04b65ed83b
-        * XML Templating} instead
+        * @deprecated (since 1.56) - use {@link sap.ui.core.mvc.XMLView} in combination with {@link topic:5ee619fc1370463ea674ee04b65ed83b XML Templating }
+        * instead
         *
         * Defines or creates an instance of a template view.
         *
@@ -3502,10 +3396,10 @@ object global {
         *
         *
         * 	 - View Definition `sap.ui.templateview(sId, vView)`: Defines a view of the given name with the given
-        * 			implementation. sId must be the views name, vView must be an object and can contain implementations for
-        * 			any of the hooks provided by templateview
+        *     implementation. sId must be the views name, vView must be an object and can contain implementations for
+        *     any of the hooks provided by templateview
         * 	 - View Instantiation `sap.ui.templateview(sId?, vView)`: Creates an instance of the view with the given
-        * 			name (and id).
+        *     name (and id).
         *
         * Any other call signature will lead to a runtime error. If the id is omitted in the second variant, an
         * id will be created automatically.
@@ -3533,8 +3427,8 @@ object global {
       vView: js.Object
       ): js.UndefOr[typings.openui5.sapUiCoreMvcTemplateViewMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcTemplateViewMod.default]]
       /**
-        * @deprecated (since 1.56) - use {@link sap.ui.core.mvc.XMLView} in combination with {@link topic:5ee619fc1370463ea674ee04b65ed83b
-        * XML Templating} instead
+        * @deprecated (since 1.56) - use {@link sap.ui.core.mvc.XMLView} in combination with {@link topic:5ee619fc1370463ea674ee04b65ed83b XML Templating }
+        * instead
         *
         * Defines or creates an instance of a template view.
         *
@@ -3542,10 +3436,10 @@ object global {
         *
         *
         * 	 - View Definition `sap.ui.templateview(sId, vView)`: Defines a view of the given name with the given
-        * 			implementation. sId must be the views name, vView must be an object and can contain implementations for
-        * 			any of the hooks provided by templateview
+        *     implementation. sId must be the views name, vView must be an object and can contain implementations for
+        *     any of the hooks provided by templateview
         * 	 - View Instantiation `sap.ui.templateview(sId?, vView)`: Creates an instance of the view with the given
-        * 			name (and id).
+        *     name (and id).
         *
         * Any other call signature will lead to a runtime error. If the id is omitted in the second variant, an
         * id will be created automatically.

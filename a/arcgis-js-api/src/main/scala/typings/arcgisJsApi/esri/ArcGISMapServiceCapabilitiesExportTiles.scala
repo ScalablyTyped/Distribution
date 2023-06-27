@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISMapServiceCapabilitiesExportTiles extends StObject {
   
   /**
-    * Specifies the maximum number of tiles that can be exported to a cache dataset or a tile package.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Specifies the maximum number of tiles that can be exported to a cache dataset or a tile package.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var maxExportTilesCount: Double
 }
 object ArcGISMapServiceCapabilitiesExportTiles {

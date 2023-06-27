@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dom-accessibility-api" : "0.6.0"
+      "dom-accessibility-api" : "0.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "dom-accessibility-api" : "0.6.0"
+      "dom-accessibility-api" : "0.6.1"
     }
   ],
   "compile-devDependencies" : [

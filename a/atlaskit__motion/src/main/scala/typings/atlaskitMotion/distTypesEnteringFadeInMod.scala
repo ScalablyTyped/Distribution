@@ -6,8 +6,8 @@ import typings.atlaskitMotion.distTypesEnteringTypesMod.Direction
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Distance
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.emotionSerialize.mod.CSSObject
-import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +25,7 @@ object distTypesEnteringFadeInMod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion/dist/types/entering/fade-in", JSImport.Default)
-  @js.native
-  val default: FC[FadeKeyframesMotionProps] = js.native
+  inline def default(param0: FadeKeyframesMotionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def fadeInAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")().asInstanceOf[CSSObject]
   inline def fadeInAnimation(direction: Unit, distance: Distance): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[CSSObject]

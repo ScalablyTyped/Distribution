@@ -105,6 +105,12 @@ open class WebgpuGraphicsDevice protected () extends GraphicsDevice {
   
   var extBlendMinmax: Boolean = js.native
   
+  var extCompressedTextureASTC: Boolean = js.native
+  
+  var extCompressedTextureETC: Boolean = js.native
+  
+  var extCompressedTextureS3TC: Boolean = js.native
+  
   var extStandardDerivatives: Boolean = js.native
   
   var extTextureFloat: Boolean = js.native

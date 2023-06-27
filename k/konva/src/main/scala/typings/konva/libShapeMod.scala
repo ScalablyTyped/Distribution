@@ -10,10 +10,12 @@ import typings.konva.libNodeMod.Node
 import typings.konva.libNodeMod.NodeConfig
 import typings.konva.libTypesMod.GetSet
 import typings.konva.libTypesMod.Vector2d
+import typings.std.CanvasFillRule
 import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.Path2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +35,7 @@ object libShapeMod {
     
     var _centroid: Boolean = js.native
     
-    def _fillFunc(ctx: Context): Unit = js.native
+    def _fillFunc(ctx: Context): FillFuncOutput = js.native
     
     def _fillFuncHit(ctx: Context): Unit = js.native
     
@@ -429,6 +431,8 @@ object libShapeMod {
     var stroke_Original: GetSet[String, this.type] = js.native
   }
   
+  type FillFuncOutput = Unit | (js.Array[Path2D | CanvasFillRule]) | (js.Tuple2[Path2D, CanvasFillRule])
+  
   /* Rewritten from type alias, can be one of: 
     - typings.konva.konvaStrings.butt
     - typings.konva.konvaStrings.round
@@ -530,6 +534,8 @@ object libShapeMod {
     var fillRadialGradientStartPointY: js.UndefOr[Double] = js.undefined
     
     var fillRadialGradientStartRadius: js.UndefOr[Double] = js.undefined
+    
+    var fillRule: js.UndefOr[CanvasFillRule] = js.undefined
     
     var hitFunc: js.UndefOr[js.Function2[/* con */ Context, /* shape */ Shape[this.type], Unit]] = js.undefined
     
@@ -718,6 +724,10 @@ object libShapeMod {
       inline def setFillRadialGradientStartRadius(value: Double): Self = StObject.set(x, "fillRadialGradientStartRadius", value.asInstanceOf[js.Any])
       
       inline def setFillRadialGradientStartRadiusUndefined: Self = StObject.set(x, "fillRadialGradientStartRadius", js.undefined)
+      
+      inline def setFillRule(value: CanvasFillRule): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+      
+      inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       

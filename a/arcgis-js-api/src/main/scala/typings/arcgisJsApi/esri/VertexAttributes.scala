@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VertexAttributes extends StObject {
   
   /**
-    * The normal buffer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
-    */
+  		 * The normal buffer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
+  		 */
   var normal: js.UndefOr[js.typedarray.Float32Array] = js.undefined
   
   /**
-    * The position buffer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
-    */
+  		 * The position buffer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
+  		 */
   var position: js.typedarray.Float64Array
   
   /**
-    * The tangent buffer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
-    */
+  		 * The tangent buffer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
+  		 */
   var tangent: js.UndefOr[js.typedarray.Float32Array] = js.undefined
 }
 object VertexAttributes {

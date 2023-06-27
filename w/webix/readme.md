@@ -1,7 +1,7 @@
 
 # Scala.js typings for webix
 
-Typings are for version 10.0.1
+Typings are for version 10.1.0
 
 ## Library description:
 Webix UI

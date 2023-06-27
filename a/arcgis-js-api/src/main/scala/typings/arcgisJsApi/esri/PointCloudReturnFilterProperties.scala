@@ -13,10 +13,10 @@ trait PointCloudReturnFilterProperties
      with PointCloudFilterProperties {
   
   /**
-    * An array of return types used to filter points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
-    */
+  		 * An array of return types used to filter points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
+  		 */
   var includedReturns: js.UndefOr[js.Array[firstOfMany | last | lastOfMany | single]] = js.undefined
 }
 object PointCloudReturnFilterProperties {

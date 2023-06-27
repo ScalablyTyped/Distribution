@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // SignedIn Devices //
 //////////////////////
 /**
-  * @requires(dev) Requires Chrome *dev*
+  * @requires Requires Chrome *dev*
   * Use the *chrome.signedInDevices* API to get a list of devices
   * signed into chrome with the same account as the current profile.
   */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for untildify
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Convert a tilde path to an absolute path: `~/dev` → `/Users/sindresorhus/dev`

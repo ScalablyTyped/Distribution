@@ -15,7 +15,11 @@ trait DataStore extends StObject {
   def addMark(id: String, name: String): Any = js.native
   def addMark(id: String, name: String, css: Boolean): Any = js.native
   def addMark(id: String, name: String, css: Boolean, value: Any): Any = js.native
+  def addMark(id: String, name: String, css: Boolean, value: Any, silent: Boolean): Any = js.native
+  def addMark(id: String, name: String, css: Boolean, value: Unit, silent: Boolean): Any = js.native
   def addMark(id: String, name: String, css: Unit, value: Any): Any = js.native
+  def addMark(id: String, name: String, css: Unit, value: Any, silent: Boolean): Any = js.native
+  def addMark(id: String, name: String, css: Unit, value: Unit, silent: Boolean): Any = js.native
   
   def attachEvent(`type`: String, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: String, functor: WebixCallback, id: String): String | Double = js.native
@@ -63,8 +67,8 @@ trait DataStore extends StObject {
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getFirstId(): Double | String = js.native
   
@@ -87,10 +91,14 @@ trait DataStore extends StObject {
   def getMark(id: String, mark_name: String): Any = js.native
   def getMark(id: Double, mark_name: String): Any = js.native
   
+  def getNextId(id: String): String | Double = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
+  def getNextId(id: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
+  def getPrevId(id: String): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
+  def getPrevId(id: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
   def getRange(from: String, to: String): js.Array[Any] = js.native
@@ -127,8 +135,14 @@ trait DataStore extends StObject {
   def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
+  def removeMark(id: String, name: String): Unit = js.native
   def removeMark(id: String, name: String, css: Boolean): Unit = js.native
+  def removeMark(id: String, name: String, css: Boolean, silent: Boolean): Unit = js.native
+  def removeMark(id: String, name: String, css: Unit, silent: Boolean): Unit = js.native
+  def removeMark(id: Double, name: String): Unit = js.native
   def removeMark(id: Double, name: String, css: Boolean): Unit = js.native
+  def removeMark(id: Double, name: String, css: Boolean, silent: Boolean): Unit = js.native
+  def removeMark(id: Double, name: String, css: Unit, silent: Boolean): Unit = js.native
   
   def scheme(config: obj): Unit = js.native
   
@@ -146,6 +160,9 @@ trait DataStore extends StObject {
   
   var sorting: obj = js.native
   
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
   def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native

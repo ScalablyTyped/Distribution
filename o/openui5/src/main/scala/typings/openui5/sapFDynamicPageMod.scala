@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Pinned
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IDynamicPageStickyContent
 import typings.openui5.sapMLibraryMod.IBar
@@ -129,7 +128,7 @@ object sapFDynamicPageMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:pinnedStateChange pinnedStateChange} event of
       * this `sap.f.DynamicPage`.
@@ -145,20 +144,20 @@ object sapFDynamicPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def attachPinnedStateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.DynamicPage` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Attaches event handler `fnFunction` to the {@link #event:pinnedStateChange pinnedStateChange} event of
       * this `sap.f.DynamicPage`.
@@ -179,7 +178,7 @@ object sapFDynamicPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def attachPinnedStateChange(
       /**
@@ -190,7 +189,7 @@ object sapFDynamicPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.DynamicPage` itself
       */
@@ -219,7 +218,7 @@ object sapFDynamicPageMod {
     def destroyHeader(): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Destroys the landmarkInfo in the aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -235,7 +234,7 @@ object sapFDynamicPageMod {
     def destroyTitle(): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Detaches event handler `fnFunction` from the {@link #event:pinnedStateChange pinnedStateChange} event
       * of this `sap.f.DynamicPage`.
@@ -248,13 +247,13 @@ object sapFDynamicPageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def detachPinnedStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicPagePinnedStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -262,21 +261,23 @@ object sapFDynamicPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.93
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pinnedStateChange pinnedStateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePinnedStateChange(): this.type = js.native
-    def firePinnedStateChange(/**
+    def firePinnedStateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Pinned): this.type = js.native
+    mParameters: DynamicPage$PinnedStateChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.68
+      * @since 1.68
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -296,15 +297,13 @@ object sapFDynamicPageMod {
       * **Note: ** You can change the default paddings by adding the following CSS classes:
       * 	 - `sapUiContentPadding`
       * 	 - `sapUiNoContentPadding`
-      * 	 - `sapUiResponsiveContentPadding`  For more information, see {@link topic:c71f6df62dae47ca8284310a6f5fc80a
-      * 			Using Container Content Padding CSS Classes}.
+      * 	 - `sapUiResponsiveContentPadding`  For more information, see {@link https://ui5.sap.com/#/topic/c71f6df62dae47ca8284310a6f5fc80a Using Container Content Padding CSS Classes}.
       *
       * **Note:** The SAP Fiori Design guidelines require that the `DynamicPageHeader`'s content and the `DynamicPage`'s
-      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link
-      * sap.m.Table} and {@link sap.m.List} in the content area of `DynamicPage`, if the content is not already
-      * aligned, you need to adjust their left text offset to achieve the vertical alignment. To do this, apply
-      * the `sapFDynamicPageAlignContent` CSS class to them and set their `width` property to `auto` (if not
-      * set by default).
+      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link sap.m.Table }
+      * and {@link sap.m.List} in the content area of `DynamicPage`, if the content is not already aligned, you
+      * need to adjust their left text offset to achieve the vertical alignment. To do this, apply the `sapFDynamicPageAlignContent`
+      * CSS class to them and set their `width` property to `auto` (if not set by default).
       *
       * Example:
       *
@@ -317,9 +316,9 @@ object sapFDynamicPageMod {
       *
       * Please keep in mind that the alignment is not possible in the following cases:
       * 	 -  When the controls are placed in an {@link sap.ui.layout.Grid} or other layout controls that use
-      * 			`overflow:hidden` CSS property
+      *     `overflow:hidden` CSS property
       * 	 -  In case any of the following CSS classes is applied to `DynamicPage`: `sapUiContentPadding`, `sapUiNoContentPadding`
-      * 			or `sapUiResponsiveContentPadding`
+      *     or `sapUiResponsiveContentPadding`
       */
     def getContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
@@ -331,11 +330,11 @@ object sapFDynamicPageMod {
       *
       * **Notes:**
       * 	 - Enable this property only if the control of the `content` aggregation is configured to automatically
-      * 			stretch to fill the available height, which means that the content would appear squashed in height when
-      * 			this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
-      * 			depending on their settings.
+      *     stretch to fill the available height, which means that the content would appear squashed in height when
+      *     this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
+      *     depending on their settings.
       * 	 - It is not recommended to enable this property for controls that do not stretch in height (and appear
-      * 			properly when this property is disabled).
+      *     properly when this property is disabled).
       *
       * Default value is `false`.
       *
@@ -375,7 +374,7 @@ object sapFDynamicPageMod {
     def getHeaderExpanded(): Boolean = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Gets current value of property {@link #getHeaderPinned headerPinned}.
       *
@@ -399,7 +398,7 @@ object sapFDynamicPageMod {
     def getHeaderPinned(): Boolean = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets content of aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -443,7 +442,7 @@ object sapFDynamicPageMod {
     def getShowFooter(): Boolean = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * ID of the element which is the current target of the association {@link #getStickySubheaderProvider stickySubheaderProvider},
       * or `null`.
@@ -475,7 +474,7 @@ object sapFDynamicPageMod {
     def getToggleHeaderOnTitleClick(): Boolean = js.native
     
     /**
-      * @SINCE 1.68
+      * @since 1.68
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -517,11 +516,11 @@ object sapFDynamicPageMod {
       *
       * **Notes:**
       * 	 - Enable this property only if the control of the `content` aggregation is configured to automatically
-      * 			stretch to fill the available height, which means that the content would appear squashed in height when
-      * 			this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
-      * 			depending on their settings.
+      *     stretch to fill the available height, which means that the content would appear squashed in height when
+      *     this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
+      *     depending on their settings.
       * 	 - It is not recommended to enable this property for controls that do not stretch in height (and appear
-      * 			properly when this property is disabled).
+      *     properly when this property is disabled).
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -579,7 +578,7 @@ object sapFDynamicPageMod {
     bHeaderExpanded: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Sets a new value for property {@link #getHeaderPinned headerPinned}.
       *
@@ -609,7 +608,7 @@ object sapFDynamicPageMod {
     bHeaderPinned: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets the aggregated {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -670,7 +669,7 @@ object sapFDynamicPageMod {
     oStickySubheaderProvider: IDynamicPageStickyContent
     ): this.type = js.native
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Sets the associated {@link #getStickySubheaderProvider stickySubheaderProvider}.
       *
@@ -718,12 +717,39 @@ object sapFDynamicPageMod {
     bToggleHeaderOnTitleClick: Boolean): this.type = js.native
   }
   
+  trait DynamicPage$PinnedStateChangeEventParameters extends StObject {
+    
+    /**
+      * False or True values indicate the new pinned property value.
+      */
+    var pinned: js.UndefOr[Boolean] = js.undefined
+  }
+  object DynamicPage$PinnedStateChangeEventParameters {
+    
+    inline def apply(): DynamicPage$PinnedStateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DynamicPage$PinnedStateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicPage$PinnedStateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    }
+  }
+  
+  type DynamicPagePinnedStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[DynamicPage$PinnedStateChangeEventParameters]
+  
+  type DynamicPagePinnedStateChangeEventParameters = DynamicPage$PinnedStateChangeEventParameters
+  
   trait DynamicPageSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.68
+      * @since 1.68
       *
       * Determines the background color of `DynamicPage`.
       */
@@ -737,15 +763,13 @@ object sapFDynamicPageMod {
       * **Note: ** You can change the default paddings by adding the following CSS classes:
       * 	 - `sapUiContentPadding`
       * 	 - `sapUiNoContentPadding`
-      * 	 - `sapUiResponsiveContentPadding`  For more information, see {@link topic:c71f6df62dae47ca8284310a6f5fc80a
-      * 			Using Container Content Padding CSS Classes}.
+      * 	 - `sapUiResponsiveContentPadding`  For more information, see {@link https://ui5.sap.com/#/topic/c71f6df62dae47ca8284310a6f5fc80a Using Container Content Padding CSS Classes}.
       *
       * **Note:** The SAP Fiori Design guidelines require that the `DynamicPageHeader`'s content and the `DynamicPage`'s
-      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link
-      * sap.m.Table} and {@link sap.m.List} in the content area of `DynamicPage`, if the content is not already
-      * aligned, you need to adjust their left text offset to achieve the vertical alignment. To do this, apply
-      * the `sapFDynamicPageAlignContent` CSS class to them and set their `width` property to `auto` (if not
-      * set by default).
+      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link sap.m.Table }
+      * and {@link sap.m.List} in the content area of `DynamicPage`, if the content is not already aligned, you
+      * need to adjust their left text offset to achieve the vertical alignment. To do this, apply the `sapFDynamicPageAlignContent`
+      * CSS class to them and set their `width` property to `auto` (if not set by default).
       *
       * Example:
       *
@@ -758,9 +782,9 @@ object sapFDynamicPageMod {
       *
       * Please keep in mind that the alignment is not possible in the following cases:
       * 	 -  When the controls are placed in an {@link sap.ui.layout.Grid} or other layout controls that use
-      * 			`overflow:hidden` CSS property
+      *     `overflow:hidden` CSS property
       * 	 -  In case any of the following CSS classes is applied to `DynamicPage`: `sapUiContentPadding`, `sapUiNoContentPadding`
-      * 			or `sapUiResponsiveContentPadding`
+      *     or `sapUiResponsiveContentPadding`
       */
     var content: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
@@ -770,11 +794,11 @@ object sapFDynamicPageMod {
       *
       * **Notes:**
       * 	 - Enable this property only if the control of the `content` aggregation is configured to automatically
-      * 			stretch to fill the available height, which means that the content would appear squashed in height when
-      * 			this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
-      * 			depending on their settings.
+      *     stretch to fill the available height, which means that the content would appear squashed in height when
+      *     this property is disabled. Such stretchable controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
+      *     depending on their settings.
       * 	 - It is not recommended to enable this property for controls that do not stretch in height (and appear
-      * 			properly when this property is disabled).
+      *     properly when this property is disabled).
       */
     var fitContent: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -804,7 +828,7 @@ object sapFDynamicPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Determines whether the `DynamicPageHeader` is pinned.
       *
@@ -824,7 +848,7 @@ object sapFDynamicPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Accessible landmark settings to be applied on the containers of the `sap.f.DynamicPage` control.
       *
@@ -833,11 +857,16 @@ object sapFDynamicPageMod {
     var landmarkInfo: js.UndefOr[typings.openui5.sapFDynamicPageAccessibleLandmarkInfoMod.default] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * The event is fired when the `headerPinned` property is changed via user interaction.
       */
-    var pinnedStateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pinnedStateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicPage$PinnedStateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Preserves the current header state when scrolling. For example, if the user expands the header by clicking
@@ -858,7 +887,7 @@ object sapFDynamicPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Association of Controls / IDs, that provide sticky subheader content. All controls that provide this
       * content have to implement the `sap.f.IDynamicPageStickyContent` interface.
@@ -927,7 +956,9 @@ object sapFDynamicPageMod {
       
       inline def setLandmarkInfoUndefined: Self = StObject.set(x, "landmarkInfo", js.undefined)
       
-      inline def setPinnedStateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pinnedStateChange", js.Any.fromFunction1(value))
+      inline def setPinnedStateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicPage$PinnedStateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "pinnedStateChange", js.Any.fromFunction1(value))
       
       inline def setPinnedStateChangeUndefined: Self = StObject.set(x, "pinnedStateChange", js.undefined)
       

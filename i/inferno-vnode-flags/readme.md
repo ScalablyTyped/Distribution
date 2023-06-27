@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-vnode-flags
 
-Typings are for version 8.1.1
+Typings are for version 8.2.1
 
 ## Library description:
 Provides an enum of all possible VNode Flags used when calling Inferno.createVNode

@@ -70,7 +70,7 @@ object Print {
   trait Model extends StObject {
     
     /** Append the custom HTML after the selected content.
-      * @Default {null}
+      * @default {null}
       */
     var append: js.UndefOr[String] = js.undefined
     
@@ -79,52 +79,52 @@ object Print {
     var beforeStart: js.UndefOr[js.Function1[/* e */ BeforeStartEventArgs, Unit]] = js.undefined
     
     /** Prepend a docType to the document frame.
-      * @Default {&lt;!doctype html&gt;}
+      * @default {&lt;!doctype html&gt;}
       */
     var docType: js.UndefOr[String] = js.undefined
     
     /** A selector that specifies a particular element to be excluded from printing.
-      * @Default {null}
+      * @default {null}
       */
     var excludeSelector: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the URL of an external stylesheet can be included to customize and print that page.
-      * @Default {null}
+      * @default {null}
       */
     var externalStyles: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the global styles can be applied to the element to be printed.
-      * @Default {true}
+      * @default {true}
       */
     var globalStyles: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of the print window.
-      * @Default {454}
+      * @default {454}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Prepends the custom HTML before the selected content.
-      * @Default {null}
+      * @default {null}
       */
     var prepend: js.UndefOr[String] = js.undefined
     
     /** Allows printing the content in a new window.
-      * @Default {false}
+      * @default {false}
       */
     var printInNewWindow: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the period of time to wait before printing the content.
-      * @Default {1000}
+      * @default {1000}
       */
     var timeOutPeriod: js.UndefOr[Double] = js.undefined
     
     /** Sets the title of the print document.
-      * @Default {null}
+      * @default {null}
       */
     var title: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the print window.
-      * @Default {1024}
+      * @default {1024}
       */
     var width: js.UndefOr[Double] = js.undefined
   }

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.OriginalEvent
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -9,7 +8,6 @@ import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.PopupInterface
 import typings.openui5.sapUiCoreLibraryMod.URI
-import typings.openui5.sapUiCorePopupMod.Dock
 import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -158,7 +156,7 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Adds an ID to the Popup that should be focusable as well when using `autoclose`. Chaining is only possible
       * if a valid type (string) is given.
@@ -184,13 +182,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -216,7 +214,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -227,7 +225,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -249,13 +247,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -281,7 +279,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -292,7 +290,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -313,13 +311,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit]
     ): this.type = js.native
     def attachEnter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -344,7 +342,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit]
     ): this.type = js.native
     def attachEnter(
       /**
@@ -355,7 +353,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -377,13 +375,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachIconChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -409,7 +407,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachIconChanged(
       /**
@@ -420,7 +418,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -441,13 +439,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -472,7 +470,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpen(
       /**
@@ -483,7 +481,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -491,7 +489,7 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:opened opened} event of this `sap.ui.ux3.ToolPopup`.
       *
@@ -506,20 +504,20 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:opened opened} event of this `sap.ui.ux3.ToolPopup`.
       *
@@ -539,7 +537,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
@@ -550,7 +548,7 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ToolPopup` itself
       */
@@ -595,13 +593,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -619,13 +617,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -643,13 +641,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit]
     ): this.type = js.native
     def detachEnter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ToolPopupEnterEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -667,13 +665,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachIconChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -691,13 +689,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -705,7 +703,7 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:opened opened} event of this `sap.ui.ux3.ToolPopup`.
       *
@@ -717,13 +715,13 @@ object sapUiUx3ToolPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOpened(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -731,7 +729,7 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -747,7 +745,7 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -760,7 +758,7 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:enter enter} to attached listeners.
       *
@@ -770,10 +768,10 @@ object sapUiUx3ToolPopupMod {
     def fireEnter(/**
       * Parameters to pass along with the event
       */
-    mParameters: OriginalEvent): this.type = js.native
+    mParameters: ToolPopup$EnterEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:iconChanged iconChanged} to attached listeners.
       *
@@ -786,7 +784,7 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:open open} to attached listeners.
       *
@@ -799,8 +797,8 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.19.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:opened opened} to attached listeners.
       *
@@ -813,7 +811,7 @@ object sapUiUx3ToolPopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Gets current value of property {@link #getAutoClose autoClose}.
       *
@@ -835,7 +833,7 @@ object sapUiUx3ToolPopupMod {
     def getButtons(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Gets current value of property {@link #getCloseDuration closeDuration}.
       *
@@ -855,7 +853,7 @@ object sapUiUx3ToolPopupMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.20.1
+      * @since 1.20.1
       *
       * ID of the element which is the current target of the association {@link #getDefaultButton defaultButton},
       * or `null`.
@@ -863,7 +861,7 @@ object sapUiUx3ToolPopupMod {
     def getDefaultButton(): ID = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Indicates whether the ToolPopup is currently enabled or not.
       *
@@ -913,7 +911,7 @@ object sapUiUx3ToolPopupMod {
     def getInitialFocus(): ID = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Gets current value of property {@link #getInverted inverted}.
       *
@@ -927,7 +925,7 @@ object sapUiUx3ToolPopupMod {
     def getInverted(): Boolean = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Gets current value of property {@link #getMaxHeight maxHeight}.
       *
@@ -939,7 +937,7 @@ object sapUiUx3ToolPopupMod {
     def getMaxHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getMaxWidth maxWidth}.
       *
@@ -964,7 +962,7 @@ object sapUiUx3ToolPopupMod {
     def getModal(): Boolean = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Gets current value of property {@link #getOpenDuration openDuration}.
       *
@@ -1070,25 +1068,27 @@ object sapUiUx3ToolPopupMod {
       /**
       * The ToolPopup's content reference position for docking
       */
-    my: Unit,
-      /**
-      * The "of" element's reference point for docking to
-      */
-    at: Dock
+    my: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
     ): this.type = js.native
-    def open(/**
-      * The ToolPopup's content reference position for docking
-      */
-    my: Dock): this.type = js.native
     def open(
       /**
       * The ToolPopup's content reference position for docking
       */
-    my: Dock,
+    my: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any,
       /**
       * The "of" element's reference point for docking to
       */
-    at: Dock
+    at: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
+    ): this.type = js.native
+    def open(
+      /**
+      * The ToolPopup's content reference position for docking
+      */
+    my: Unit,
+      /**
+      * The "of" element's reference point for docking to
+      */
+    at: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Popup.Dock */ Any
     ): this.type = js.native
     
     /**
@@ -1150,7 +1150,7 @@ object sapUiUx3ToolPopupMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Removes an ID to the Popup that should be focusable as well when using `autoclose`. Chaining is only
       * possible if a valid type (string) is given.
@@ -1162,7 +1162,7 @@ object sapUiUx3ToolPopupMod {
     sID: String): Unit = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Sets a new value for property {@link #getAutoClose autoClose}.
       *
@@ -1183,14 +1183,14 @@ object sapUiUx3ToolPopupMod {
     bAutoClose: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * This is just a forward to the Popup's function (sap.ui.core.Popup.setAutoCloseAreas) with the same functionality.
       */
     def setAutoCloseAreas(aAutoCloseAreas: js.Array[Element]): Unit = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Sets a new value for property {@link #getCloseDuration closeDuration}.
       *
@@ -1216,7 +1216,7 @@ object sapUiUx3ToolPopupMod {
     oDefaultButton: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.20.1
+      * @since 1.20.1
       *
       * Sets the associated {@link #getDefaultButton defaultButton}.
       *
@@ -1251,7 +1251,7 @@ object sapUiUx3ToolPopupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Sets a new value for property {@link #getInverted inverted}.
       *
@@ -1271,7 +1271,7 @@ object sapUiUx3ToolPopupMod {
     bInverted: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Sets a new value for property {@link #getMaxHeight maxHeight}.
       *
@@ -1309,7 +1309,7 @@ object sapUiUx3ToolPopupMod {
     bModal: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Sets a new value for property {@link #getOpenDuration openDuration}.
       *
@@ -1368,12 +1368,78 @@ object sapUiUx3ToolPopupMod {
     sTitle: String): this.type = js.native
   }
   
+  trait ToolPopup$CloseEventParameters extends StObject
+  
+  trait ToolPopup$ClosedEventParameters extends StObject
+  
+  trait ToolPopup$EnterEventParameters extends StObject {
+    
+    /**
+      * The onsapenter event, received by the pop up
+      */
+    var originalEvent: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The control that was focused when the user pressed the Enter key (may be null)
+      */
+    var originalSrcControl: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object ToolPopup$EnterEventParameters {
+    
+    inline def apply(): ToolPopup$EnterEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ToolPopup$EnterEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolPopup$EnterEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOriginalEvent(value: js.Object): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      
+      inline def setOriginalSrcControl(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "originalSrcControl", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalSrcControlUndefined: Self = StObject.set(x, "originalSrcControl", js.undefined)
+    }
+  }
+  
+  trait ToolPopup$IconChangedEventParameters extends StObject
+  
+  trait ToolPopup$OpenEventParameters extends StObject
+  
+  trait ToolPopup$OpenedEventParameters extends StObject
+  
+  type ToolPopupCloseEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$CloseEventParameters]
+  
+  type ToolPopupCloseEventParameters = ToolPopup$CloseEventParameters
+  
+  type ToolPopupClosedEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$ClosedEventParameters]
+  
+  type ToolPopupClosedEventParameters = ToolPopup$ClosedEventParameters
+  
+  type ToolPopupEnterEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$EnterEventParameters]
+  
+  type ToolPopupEnterEventParameters = ToolPopup$EnterEventParameters
+  
+  type ToolPopupIconChangedEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$IconChangedEventParameters]
+  
+  type ToolPopupIconChangedEventParameters = ToolPopup$IconChangedEventParameters
+  
+  type ToolPopupOpenEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$OpenEventParameters]
+  
+  type ToolPopupOpenEventParameters = ToolPopup$OpenEventParameters
+  
+  type ToolPopupOpenedEvent = typings.openui5.sapUiBaseEventMod.default[ToolPopup$OpenedEventParameters]
+  
+  type ToolPopupOpenedEventParameters = ToolPopup$OpenedEventParameters
+  
   trait ToolPopupSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Determines whether the ToolPopup will auto close when it loses focus. If the user e.g. clicks outside
       * of the ToolPopup it will be closed. Please don't use "modal" and "autoclose" at the same time. In this
@@ -1394,10 +1460,12 @@ object sapUiUx3ToolPopupMod {
       * Event is fired when the popup closes because the user pressed Escape or the ToolPopup Button in the Shell.
       * This is called before the closing animation.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Time in milliseconds for the close animation.
       */
@@ -1407,7 +1475,9 @@ object sapUiUx3ToolPopupMod {
       * This event is fired after the ToolPopup has finished its closing animation. It is called for EVERY close,
       * regardless of whether the user has triggered the close or whether the ToolPopup was closed via API call.
       */
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the content of the popup
@@ -1417,7 +1487,7 @@ object sapUiUx3ToolPopupMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.20.1
+      * @since 1.20.1
       *
       * Defines one of the buttons that have been provided via button aggregation to be the default button. This
       * default button is initially selected, if no control is set via the initialFocus association explicitly.
@@ -1429,7 +1499,12 @@ object sapUiUx3ToolPopupMod {
     /**
       * Event is fired whenever the user clicks the Enter or the Enter key inside the pop up
       */
-    var enter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var enter: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ToolPopup$EnterEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This property is relevant for Shell use: The URL to the icon displayed in the tool area which is used
@@ -1442,7 +1517,9 @@ object sapUiUx3ToolPopupMod {
       * Event is fired when one of the icon properties is modified (Note: The icon is not rendered by the ToolPopup).
       * To be used by other controls which want to update the icon in their UI.
       */
-    var iconChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var iconChanged: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This property is relevant for Shell use: The URL to the icon in hover state, displayed in the tool area
@@ -1462,7 +1539,7 @@ object sapUiUx3ToolPopupMod {
     var initialFocus: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Specifies whether the ToolPopup has a dark or bright background. If set to true the background and borders
       * will be dark. If false they will be bright. This property only has an effect for the GoldReflection-theme.
@@ -1472,7 +1549,7 @@ object sapUiUx3ToolPopupMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Forces a maximum height of the ToolPopup in pixels. If the ToolPopup content is higher than the ToolPopup,
       * the content will be scrollable.
@@ -1482,7 +1559,7 @@ object sapUiUx3ToolPopupMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Forces a maximum width of the ToolPopup in pixels.
       */
@@ -1503,21 +1580,25 @@ object sapUiUx3ToolPopupMod {
     /**
       * Event is fired when the popup opens
       */
-    var open: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var open: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Time in milliseconds for the open animation.
       */
     var openDuration: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.19.0
+      * @since 1.19.0
       *
       * Event is being fired after the ToolPopup has been opened.
       */
-    var opened: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var opened: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This property is relevant for stand-alone use: This association needs to be set if the ToolPopup should
@@ -1553,7 +1634,7 @@ object sapUiUx3ToolPopupMod {
       
       inline def setButtonsVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "buttons", js.Array(value*))
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseDuration(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "closeDuration", value.asInstanceOf[js.Any])
       
@@ -1561,7 +1642,7 @@ object sapUiUx3ToolPopupMod {
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
@@ -1577,13 +1658,15 @@ object sapUiUx3ToolPopupMod {
       
       inline def setDefaultButtonUndefined: Self = StObject.set(x, "defaultButton", js.undefined)
       
-      inline def setEnter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ToolPopup$EnterEventParameters] => Unit
+      ): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
       inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
       inline def setIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setIconChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "iconChanged", js.Any.fromFunction1(value))
+      inline def setIconChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "iconChanged", js.Any.fromFunction1(value))
       
       inline def setIconChangedUndefined: Self = StObject.set(x, "iconChanged", js.undefined)
       
@@ -1617,7 +1700,7 @@ object sapUiUx3ToolPopupMod {
       
       inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      inline def setOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
       inline def setOpenDuration(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "openDuration", value.asInstanceOf[js.Any])
       
@@ -1625,7 +1708,7 @@ object sapUiUx3ToolPopupMod {
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
+      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
       
       inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
       

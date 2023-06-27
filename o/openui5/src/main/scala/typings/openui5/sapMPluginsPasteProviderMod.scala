@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DataText
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
@@ -140,13 +139,13 @@ object sapMPluginsPasteProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit]
     ): this.type = js.native
     def attachPaste(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.PasteProvider` itself
       */
@@ -175,7 +174,7 @@ object sapMPluginsPasteProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit]
     ): this.type = js.native
     def attachPaste(
       /**
@@ -186,7 +185,7 @@ object sapMPluginsPasteProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.PasteProvider` itself
       */
@@ -204,13 +203,13 @@ object sapMPluginsPasteProviderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit]
     ): this.type = js.native
     def detachPaste(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PasteProviderPasteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -218,7 +217,7 @@ object sapMPluginsPasteProviderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:paste paste} to attached listeners.
       *
@@ -228,10 +227,12 @@ object sapMPluginsPasteProviderMod {
       * @returns Whether or not to prevent the default action
       */
     def firePaste(): Boolean = js.native
-    def firePaste(/**
+    def firePaste(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DataText): Boolean = js.native
+    mParameters: PasteProvider$PasteEventParameters
+    ): Boolean = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getPasteFor pasteFor}, or `null`.
@@ -259,6 +260,45 @@ object sapMPluginsPasteProviderMod {
     ): this.type = js.native
   }
   
+  trait PasteProvider$PasteEventParameters extends StObject {
+    
+    /**
+      * Two-dimentional array of strings with data from the clipboard. The first dimension represents the rows,
+      * and the second dimension represents the cells of the tabular data.
+      */
+    var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
+    
+    /**
+      * The text data, with all special characters, from the clipboard.
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object PasteProvider$PasteEventParameters {
+    
+    inline def apply(): PasteProvider$PasteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PasteProvider$PasteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasteProvider$PasteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  type PasteProviderPasteEvent = typings.openui5.sapUiBaseEventMod.default[PasteProvider$PasteEventParameters]
+  
+  type PasteProviderPasteEventParameters = PasteProvider$PasteEventParameters
+  
   trait PasteProviderSettings
     extends StObject
        with ElementSettings {
@@ -270,7 +310,12 @@ object sapMPluginsPasteProviderMod {
       * event that represents the paste data gets dispatched for the control defined in the `pasteFor` association.
       * To avoid this, call `preventDefault` on the event instance.
       */
-    var paste: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var paste: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PasteProvider$PasteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the control which the paste is associated with.
@@ -287,7 +332,9 @@ object sapMPluginsPasteProviderMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PasteProviderSettings] (val x: Self) extends AnyVal {
       
-      inline def setPaste(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+      inline def setPaste(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PasteProvider$PasteEventParameters] => Unit
+      ): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
       
       inline def setPasteFor(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "pasteFor", value.asInstanceOf[js.Any])
       

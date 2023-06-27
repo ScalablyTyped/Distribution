@@ -18,8 +18,8 @@ object sapMTablePersoProviderMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor
-    * sap.ui.base.ManagedObject} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor sap.ui.base.ManagedObject }
+    * can be used.
     */
   open class default () extends TablePersoProvider
   /* static members */
@@ -142,7 +142,7 @@ object sapMTablePersoProviderMod {
     def getPersData(): Unit = js.native
     
     /**
-      * @SINCE 1.88
+      * @since 1.88
       *
       * Retrieves the desired reset state. This getter is used by the `TablePersoController` if the `resetAllMode`
       * is `ServiceReset`.
@@ -153,7 +153,7 @@ object sapMTablePersoProviderMod {
     def getResetPersData(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Initializes the TablePersoProvider instance after creation.
       */

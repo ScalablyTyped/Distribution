@@ -11,10 +11,10 @@ object esriLayersSupportWmssublayerMod {
   @JSImport("esri/layers/support/WMSSublayer", JSImport.Namespace)
   @js.native
   /**
-    * Represents a sublayer in a [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)
-    */
+  		 * Represents a sublayer in a [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with WMSSublayer {

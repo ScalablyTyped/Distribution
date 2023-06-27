@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`7`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -10,6 +9,7 @@ import typings.openui5.sapUiCoreLibraryMod.Dock
 import typings.openui5.sapUiCoreLibraryMod.IContextMenu
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -136,7 +136,7 @@ object sapUiUnifiedMenuMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.26.3
+      * @since 1.26.3
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -175,13 +175,13 @@ object sapUiUnifiedMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.Menu` itself
       */
@@ -208,7 +208,7 @@ object sapUiUnifiedMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
@@ -219,7 +219,7 @@ object sapUiUnifiedMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.Menu` itself
       */
@@ -249,13 +249,13 @@ object sapUiUnifiedMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit]
     ): this.type = js.native
     def detachItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -263,7 +263,7 @@ object sapUiUnifiedMenuMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
@@ -273,7 +273,7 @@ object sapUiUnifiedMenuMod {
     def fireItemSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `7`): this.type = js.native
+    mParameters: Menu$ItemSelectEventParameters): this.type = js.native
     
     /**
       * @deprecated (since 1.27.0) - replaced by `ariaLabelledBy` association
@@ -287,10 +287,9 @@ object sapUiUnifiedMenuMod {
     def getAriaDescription(): String = js.native
     
     /**
-      * @SINCE 1.26.3
+      * @since 1.26.3
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -328,7 +327,7 @@ object sapUiUnifiedMenuMod {
     def getMaxVisibleItems(): int = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Gets current value of property {@link #getPageSize pageSize}.
       *
@@ -837,8 +836,31 @@ object sapUiUnifiedMenuMod {
     collision: Collision
     ): Unit = js.native
     
+    def openAsContextMenu(
+      /**
+      * The event object or an object containing offsetX, offsetY values and left, top values of the element's
+      * position
+      */
+    oEvent: js.Object,
+      /**
+      * Might be UI5 Element or DOM Element
+      */
+    oOpenerRef: typings.openui5.sapUiCoreElementMod.default
+    ): Unit = js.native
+    def openAsContextMenu(
+      /**
+      * The event object or an object containing offsetX, offsetY values and left, top values of the element's
+      * position
+      */
+    oEvent: js.Object,
+      /**
+      * Might be UI5 Element or DOM Element
+      */
+    oOpenerRef: HTMLElement
+    ): Unit = js.native
+    
     /**
-      * @SINCE 1.26.3
+      * @since 1.26.3
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -856,7 +878,7 @@ object sapUiUnifiedMenuMod {
     def removeAllItems(): js.Array[typings.openui5.sapUiUnifiedMenuItemBaseMod.default] = js.native
     
     /**
-      * @SINCE 1.26.3
+      * @since 1.26.3
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -953,7 +975,7 @@ object sapUiUnifiedMenuMod {
     iMaxVisibleItems: int): this.type = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Sets a new value for property {@link #getPageSize pageSize}.
       *
@@ -977,6 +999,33 @@ object sapUiUnifiedMenuMod {
     iPageSize: int): this.type = js.native
   }
   
+  trait Menu$ItemSelectEventParameters extends StObject {
+    
+    /**
+      * The action (item) which was selected by the user.
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUnifiedMenuItemBaseMod.default] = js.undefined
+  }
+  object Menu$ItemSelectEventParameters {
+    
+    inline def apply(): Menu$ItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Menu$ItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu$ItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiUnifiedMenuItemBaseMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type MenuItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectEventParameters]
+  
+  type MenuItemSelectEventParameters = Menu$ItemSelectEventParameters
+  
   trait MenuSettings
     extends StObject
        with ControlSettings {
@@ -989,7 +1038,7 @@ object sapUiUnifiedMenuMod {
     var ariaDescription: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.26.3
+      * @since 1.26.3
       *
       * Reference to accessible labels (ids of existing DOM elements or controls) for assistive technologies
       * like screenreaders.
@@ -1009,7 +1058,12 @@ object sapUiUnifiedMenuMod {
       * one of its direct or indirect submenus. **Note:** There is also a select event available for each single
       * menu item. This event and the event of the menu items are redundant.
       */
-    var itemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The available actions to be displayed as items of the menu.
@@ -1027,7 +1081,7 @@ object sapUiUnifiedMenuMod {
     var maxVisibleItems: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * The keyboard can be used to navigate through the items of a menu. Beside the arrow keys for single steps
       * and the Home / End keys for jumping to the first / last item, the Page Up / Page
@@ -1062,7 +1116,9 @@ object sapUiUnifiedMenuMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
+      inline def setItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
       
       inline def setItemSelectUndefined: Self = StObject.set(x, "itemSelect", js.undefined)
       

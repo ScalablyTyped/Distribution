@@ -15,7 +15,7 @@ trait AVPlayStoreManager extends StObject {
     *
     * @privilegeName None
     *
-    * @throw WebAPIException with error type QUOTA_EXCEEDED_ERR (Max player count reached) if there is insufficient memory to create the instance, or the number of player instances exceeds 4.
+    * @throws WebAPIException with error type QUOTA_EXCEEDED_ERR (Max player count reached) if there is insufficient memory to create the instance, or the number of player instances exceeds 4.
     *
     * @version 1.0
     *

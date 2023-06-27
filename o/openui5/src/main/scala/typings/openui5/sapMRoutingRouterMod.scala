@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`25`
+import typings.openui5.anon.`1`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -269,7 +269,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`
+    oConfig: `1`
     ) = this()
     def this(
       /**
@@ -400,7 +400,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`
+    oConfig: `1`
     ) = this()
     def this(
       /**
@@ -531,7 +531,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`
+    oConfig: `1`
     ) = this()
     def this(
       /**
@@ -799,7 +799,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -1073,7 +1073,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -1347,7 +1347,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -1844,7 +1844,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -2024,7 +2024,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -2564,7 +2564,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -2744,7 +2744,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -3284,7 +3284,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
@@ -3464,7 +3464,7 @@ object sapMRoutingRouterMod {
       * Since the xmlTarget does not specify its viewType, XML is taken from the config object. The jsTarget
       * is specifying it, so the viewType will be JS.
       */
-    oConfig: `25`,
+    oConfig: `1`,
       /**
       * the Component of all the views that will be created by this Router,
       *  will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.

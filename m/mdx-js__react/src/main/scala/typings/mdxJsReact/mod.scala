@@ -1,6 +1,5 @@
 package typings.mdxJsReact
 
-import typings.mdx.typesMod.MDXComponents
 import typings.mdxJsReact.libMod.Components
 import typings.mdxJsReact.libMod.MergeComponents
 import typings.mdxJsReact.libMod.Props
@@ -25,7 +24,7 @@ object mod {
   inline def MDXProvider(param0: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MDXProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useMDXComponents(): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")().asInstanceOf[Components]
-  inline def useMDXComponents(components: MDXComponents): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Components]
+  inline def useMDXComponents(components: Components): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Components]
   inline def useMDXComponents(components: MergeComponents): Components = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")(components.asInstanceOf[js.Any]).asInstanceOf[Components]
   
   inline def withMDXComponents(Component: ComponentType[Any]): js.Function1[/* props */ (Record[String, Any]) & typings.mdxJsReact.anon.Components, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMDXComponents")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ (Record[String, Any]) & typings.mdxJsReact.anon.Components, Element]]

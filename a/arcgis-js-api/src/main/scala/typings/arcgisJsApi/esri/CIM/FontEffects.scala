@@ -11,24 +11,24 @@ sealed trait FontEffects extends StObject
 object FontEffects extends StObject {
   
   /**
-    * Normal text.
-    */
+  			 * Normal text.
+  			 */
   @js.native
   sealed trait Normal
     extends StObject
        with FontEffects
   
   /**
-    * Subscript text
-    */
+  			 * Subscript text
+  			 */
   @js.native
   sealed trait Subscript
     extends StObject
        with FontEffects
   
   /**
-    * Superscript text.
-    */
+  			 * Superscript text.
+  			 */
   @js.native
   sealed trait Superscript
     extends StObject

@@ -7,11 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliceAnalysisProperties extends StObject {
   
   /**
-    * The shape used to slice elements in a 3D scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape)
-    */
+  		 * The shape used to slice elements in a 3D scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape)
+  		 */
   var shape: js.UndefOr[SlicePlaneProperties] = js.undefined
+  
+  /**
+  		 * Whether the [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape) supports a tilt angle or not.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#tiltEnabled)
+  		 */
+  var tiltEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SliceAnalysisProperties {
   
@@ -26,5 +35,9 @@ object SliceAnalysisProperties {
     inline def setShape(value: SlicePlaneProperties): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setTiltEnabled(value: Boolean): Self = StObject.set(x, "tiltEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTiltEnabledUndefined: Self = StObject.set(x, "tiltEnabled", js.undefined)
   }
 }

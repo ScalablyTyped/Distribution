@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TraceItem extends StObject {
   
   /**
-    * Returns `true` if there is a selection on the view for a trace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceItem)
-    */
+  		 * Returns `true` if there is a selection on the view for a trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#TraceItem)
+  		 */
   var selected: Boolean
 }
 object TraceItem {

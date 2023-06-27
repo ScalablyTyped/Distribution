@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ScaleBar")
 @js.native
 /**
-  * The ScaleBar widget displays a scale bar on the map or in a specified HTML node.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html)
-  */
+		 * The ScaleBar widget displays a scale bar on the map or in a specified HTML node.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html)
+		 */
 open class ScaleBar ()
   extends StObject
      with typings.arcgisJsApi.esri.ScaleBar {

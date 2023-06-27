@@ -9,32 +9,32 @@ trait CIMMarkerPlacementAlongLine
      with CIMMarkerStrokePlacement {
   
   /**
-    * How markers are placed at control points.
-    */
+  			 * How markers are placed at control points.
+  			 */
   var controlPointPlacement: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
   ] = js.undefined
   
   /**
-    * Where the pattern should end relative to the ending point of the geometry. The entire pattern is shifted along the line for the specified distance. Negative numbers shift to the left and positive numbers shift to the right. This is only applied if the Endings property is set to Custom.
-    */
+  			 * Where the pattern should end relative to the ending point of the geometry. The entire pattern is shifted along the line for the specified distance. Negative numbers shift to the left and positive numbers shift to the right. This is only applied if the Endings property is set to Custom.
+  			 */
   var customEndingOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * How markers are placed at the end points of a line.
-    */
+  			 * How markers are placed at the end points of a line.
+  			 */
   var endings: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
   ] = js.undefined
   
   /**
-    * Where the pattern should begin relative to the starting point of the geometry. The entire pattern is shifted along the line for the specified distance. Negative numbers shift to the left and positive numbers shift to the right. This is only applied if the Endings property is set to No Constraint or Custom.
-    */
+  			 * Where the pattern should begin relative to the starting point of the geometry. The entire pattern is shifted along the line for the specified distance. Negative numbers shift to the left and positive numbers shift to the right. This is only applied if the Endings property is set to No Constraint or Custom.
+  			 */
   var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   /**
-    * The numeric pattern that defines the sequence of placed markers and the length of space between them.
-    */
+  			 * The numeric pattern that defines the sequence of placed markers and the length of space between them.
+  			 */
   var placementTemplate: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object CIMMarkerPlacementAlongLine {

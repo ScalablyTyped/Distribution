@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.FieldGroupIds
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreElementMetadataMod.ControlRenderer
 import typings.openui5.sapUiCoreElementMod.ElementSettings
 import typings.openui5.sapUiCoreLibraryMod.AccessibilityInfo
 import typings.openui5.sapUiCoreLibraryMod.BusyIndicatorSize
@@ -97,26 +97,26 @@ object sapUiCoreControlMod {
       *
       *
       * There are multiple ways how a renderer can be specified:
-      * 	 - As a **plain object**: The object will be used to create a new renderer by using {@link sap.ui.core.Renderer.extend}
-      * 			to extend the renderer of the base class of this control. The new renderer will have the same global
-      * 			name as this control class with the additional suffix 'Renderer'.
+      * 	 - As a **plain object**: The object will be used to create a new renderer by using {@link sap.ui.core.Renderer.extend }
+      *     to extend the renderer of the base class of this control. The new renderer will have the same global
+      *     name as this control class with the additional suffix 'Renderer'.
       *  **Note:** The `Renderer.extend` method expects a plain object (no prototype chain).
       * 	 - As a **function**: The given function will be used as `render` function of a new renderer; the renderer
-      * 			will be created in the same way as described for the plain object case.
+      *     will be created in the same way as described for the plain object case.
       * 	 - As a **ready-made renderer**, e.g. imported from the corresponding renderer module. As renderers
-      * 			are simple objects (not instances of a specific class), some heuristic is used to distinguish renderers
-      * 			from the plain object case above: An object is assumed to be a ready-made renderer when it has
-      * 			a `render` function and either is already exposed under the expected global name or has an `extend` method.
+      *     are simple objects (not instances of a specific class), some heuristic is used to distinguish renderers
+      *     from the plain object case above: An object is assumed to be a ready-made renderer when it has
+      *     a `render` function and either is already exposed under the expected global name or has an `extend` method.
       *
       * 	 - As a **fully qualified name**: The name will be looked up as a global property. If not defined, a
-      * 			module name will be derived from the global name (dots replaced by slashes), the module will be required
-      * 			and provides the renderer, either as AMD export or via the named global property.
+      *     module name will be derived from the global name (dots replaced by slashes), the module will be required
+      *     and provides the renderer, either as AMD export or via the named global property.
       * 	 - **Omitting the `renderer` property** or setting it to `undefined`: The fully qualified name of the
-      * 			renderer will be derived from the fully qualified name of the control by adding the suffix "Renderer".
-      * 			The renderer then is retrieved in the same way as described for the fully qualified name case.
+      *     renderer will be derived from the fully qualified name of the control by adding the suffix "Renderer".
+      *     The renderer then is retrieved in the same way as described for the fully qualified name case.
       *
       * 	 - **`null` or empty string**: The control will have no renderer, a call to `oControl.getMetadata().getRenderer()`
-      * 			will return `undefined`.
+      *     will return `undefined`.
       *
       * If the resulting renderer is incomplete (has no `render` function) or if it cannot be found at all, rendering
       * of the control will be skipped.
@@ -295,7 +295,7 @@ object sapUiCoreControlMod {
       * By default, the `RETURN` key without any modifier keys triggers validation, see {@link #triggerValidateFieldGroup}.
       *
       * Listen to this event to validate data of the controls belonging to a field group. See {@link #setFieldGroupIds},
-      * or consult the {@link topic:5b0775397e394b1fb973fa207554003e Field Group} documentation.
+      * or consult the {@link https://ui5.sap.com/#/topic/5b0775397e394b1fb973fa207554003e Field Group} documentation.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -303,13 +303,13 @@ object sapUiCoreControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit]
     ): this.type = js.native
     def attachValidateFieldGroup(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Control` itself
       */
@@ -328,7 +328,7 @@ object sapUiCoreControlMod {
       * By default, the `RETURN` key without any modifier keys triggers validation, see {@link #triggerValidateFieldGroup}.
       *
       * Listen to this event to validate data of the controls belonging to a field group. See {@link #setFieldGroupIds},
-      * or consult the {@link topic:5b0775397e394b1fb973fa207554003e Field Group} documentation.
+      * or consult the {@link https://ui5.sap.com/#/topic/5b0775397e394b1fb973fa207554003e Field Group} documentation.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -341,7 +341,7 @@ object sapUiCoreControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit]
     ): this.type = js.native
     def attachValidateFieldGroup(
       /**
@@ -352,7 +352,7 @@ object sapUiCoreControlMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Control` itself
       */
@@ -436,13 +436,13 @@ object sapUiCoreControlMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit]
     ): this.type = js.native
     def detachValidateFieldGroup(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ControlValidateFieldGroupEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -450,21 +450,23 @@ object sapUiCoreControlMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:validateFieldGroup validateFieldGroup} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireValidateFieldGroup(): this.type = js.native
-    def fireValidateFieldGroup(/**
+    def fireValidateFieldGroup(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FieldGroupIds): this.type = js.native
+    mParameters: Control$ValidateFieldGroupEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.37.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.37.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This function (if available on the concrete control) provides the current accessibility state of the
       * control.
@@ -536,7 +538,7 @@ object sapUiCoreControlMod {
     def getBusyIndicatorDelay(): int = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getBusyIndicatorSize busyIndicatorSize}.
       *
@@ -552,7 +554,7 @@ object sapUiCoreControlMod {
     def getBusyIndicatorSize(): BusyIndicatorSize | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BusyIndicatorSize * / any */ String) = js.native
     
     /**
-      * Returns a list of all child controls with a field group ID. See {@link #checkFieldGroupIds checkFieldGroupIds}
+      * Returns a list of all child controls with a field group ID. See {@link #checkFieldGroupIds checkFieldGroupIds }
       * for a description of the `vFieldGroupIds` parameter. Associated controls are not taken into account.
       *
       * @returns The list of controls with a field group ID
@@ -570,8 +572,8 @@ object sapUiCoreControlMod {
     ): js.Array[Control] = js.native
     
     /**
-      * Returns a copy of the field group IDs array. Modification of the field group IDs need to call {@link
-      * #setFieldGroupIds setFieldGroupIds} to apply the changes.
+      * Returns a copy of the field group IDs array. Modification of the field group IDs need to call {@link #setFieldGroupIds setFieldGroupIds }
+      * to apply the changes.
       *
       * @returns copy of the field group IDs
       */
@@ -587,7 +589,7 @@ object sapUiCoreControlMod {
     def getIdForLabel(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a renderer for this control instance.
       *
@@ -595,7 +597,7 @@ object sapUiCoreControlMod {
       *
       * @returns a Renderer suitable for this Control instance.
       */
-    def getRenderer(): js.Object = js.native
+    def getRenderer(): ControlRenderer = js.native
     
     /**
       * Gets current value of property {@link #getVisible visible}.
@@ -639,7 +641,7 @@ object sapUiCoreControlMod {
     def isBusy(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function is called when the rendering of the control is completed.
       *
@@ -653,7 +655,7 @@ object sapUiCoreControlMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function is called before the rendering of the control is started.
       *
@@ -680,7 +682,7 @@ object sapUiCoreControlMod {
       * 	 - "first": The control is added as the first element to the container.
       * 	 - "last": The control is added as the last element to the container (default).
       * 	 - "only": All existing children of the container are removed (not destroyed!) and the control is added
-      * 			as new child.
+      *     as new child.
       * 	 - index: The control is added at the specified index to the container.
       *
       * @returns Returns `this` to allow method chaining
@@ -793,7 +795,7 @@ object sapUiCoreControlMod {
     iDelay: int): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getBusyIndicatorSize busyIndicatorSize}.
       *
@@ -821,7 +823,7 @@ object sapUiCoreControlMod {
     sBusyIndicatorSize: BusyIndicatorSize): this.type = js.native
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Sets a new value for property {@link #getFieldGroupIds fieldGroupIds}.
       *
@@ -833,8 +835,8 @@ object sapUiCoreControlMod {
       * For backward compatibility with older releases, field group IDs are syntactically not limited, but it
       * is suggested to use only valid {@link sap.ui.core.ID}s.
       *
-      * See {@link #attachValidateFieldGroup} or consult the {@link topic:5b0775397e394b1fb973fa207554003e Field
-      * Group} documentation.
+      * See {@link #attachValidateFieldGroup} or consult the {@link https://ui5.sap.com/#/topic/5b0775397e394b1fb973fa207554003e Field Group }
+      * documentation.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -913,6 +915,31 @@ object sapUiCoreControlMod {
     aFieldGroupIds: js.Array[String]): Unit = js.native
   }
   
+  trait Control$ValidateFieldGroupEventParameters extends StObject {
+    
+    /**
+      * field group IDs of the logical field groups to validate
+      */
+    var fieldGroupIds: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object Control$ValidateFieldGroupEventParameters {
+    
+    inline def apply(): Control$ValidateFieldGroupEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Control$ValidateFieldGroupEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Control$ValidateFieldGroupEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFieldGroupIds(value: js.Array[String]): Self = StObject.set(x, "fieldGroupIds", value.asInstanceOf[js.Any])
+      
+      inline def setFieldGroupIdsUndefined: Self = StObject.set(x, "fieldGroupIds", js.undefined)
+      
+      inline def setFieldGroupIdsVarargs(value: String*): Self = StObject.set(x, "fieldGroupIds", js.Array(value*))
+    }
+  }
+  
   trait ControlSettings
     extends StObject
        with ElementSettings {
@@ -941,7 +968,7 @@ object sapUiCoreControlMod {
     var busyIndicatorDelay: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * The size of the BusyIndicator. For controls with a width smaller 3rem a `sap.ui.core.BusyIndicatorSize.Small`
       * should be used. If the size could vary in width and the width could get smaller than 3rem, the `sap.ui.core.BusyIndicatorSize.Auto`
@@ -953,7 +980,7 @@ object sapUiCoreControlMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * The IDs of a logical field group that this control belongs to.
       *
@@ -963,8 +990,8 @@ object sapUiCoreControlMod {
       * For backward compatibility with older releases, field group IDs are syntactically not limited, but it
       * is suggested to use only valid {@link sap.ui.core.ID}s.
       *
-      * See {@link #attachValidateFieldGroup} or consult the {@link topic:5b0775397e394b1fb973fa207554003e Field
-      * Group} documentation.
+      * See {@link #attachValidateFieldGroup} or consult the {@link https://ui5.sap.com/#/topic/5b0775397e394b1fb973fa207554003e Field Group }
+      * documentation.
       */
     var fieldGroupIds: js.UndefOr[
         js.Array[String] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -977,9 +1004,14 @@ object sapUiCoreControlMod {
       * By default, the `RETURN` key without any modifier keys triggers validation, see {@link #triggerValidateFieldGroup}.
       *
       * Listen to this event to validate data of the controls belonging to a field group. See {@link #setFieldGroupIds},
-      * or consult the {@link topic:5b0775397e394b1fb973fa207554003e Field Group} documentation.
+      * or consult the {@link https://ui5.sap.com/#/topic/5b0775397e394b1fb973fa207554003e Field Group} documentation.
       */
-    var validateFieldGroup: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var validateFieldGroup: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Control$ValidateFieldGroupEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Whether the control should be visible on the screen.
@@ -1029,7 +1061,9 @@ object sapUiCoreControlMod {
       
       inline def setFieldGroupIdsVarargs(value: String*): Self = StObject.set(x, "fieldGroupIds", js.Array(value*))
       
-      inline def setValidateFieldGroup(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "validateFieldGroup", js.Any.fromFunction1(value))
+      inline def setValidateFieldGroup(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Control$ValidateFieldGroupEventParameters] => Unit
+      ): Self = StObject.set(x, "validateFieldGroup", js.Any.fromFunction1(value))
       
       inline def setValidateFieldGroupUndefined: Self = StObject.set(x, "validateFieldGroup", js.undefined)
       
@@ -1038,4 +1072,8 @@ object sapUiCoreControlMod {
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
+  
+  type ControlValidateFieldGroupEvent = typings.openui5.sapUiBaseEventMod.default[Control$ValidateFieldGroupEventParameters]
+  
+  type ControlValidateFieldGroupEventParameters = Control$ValidateFieldGroupEventParameters
 }

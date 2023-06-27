@@ -12,12 +12,12 @@ trait BuildingGroupSublayerProperties
      with BuildingSublayerProperties {
   
   /**
-    * Indicates how the sublayer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * @default show
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#listMode)
-    */
+  		 * Indicates how the sublayer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * @default show
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#listMode)
+  		 */
   var listMode: js.UndefOr[show | hide | `hide-children`] = js.undefined
 }
 object BuildingGroupSublayerProperties {

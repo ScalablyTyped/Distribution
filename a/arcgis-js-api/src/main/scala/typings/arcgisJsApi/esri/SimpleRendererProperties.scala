@@ -10,17 +10,17 @@ trait SimpleRendererProperties
      with VisualVariablesMixinProperties {
   
   /**
-    * The label for the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#label)
-    */
+  		 * The label for the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The symbol used by the renderer to visualize all features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol)
-    */
+  		 * The symbol used by the renderer to visualize all features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol)
+  		 */
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
 object SimpleRendererProperties {

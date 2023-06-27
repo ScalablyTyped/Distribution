@@ -81,5 +81,5 @@ object distNodesPairMod {
     var value: V | Null = js.native
   }
   
-  inline def createPair(key: Any, value: Any, ctx: CreateNodeContext): Pair[Node[Any], Alias | Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Pair[Node[Any], Alias | Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any]]]
+  inline def createPair(key: Any, value: Any, ctx: CreateNodeContext): Pair[Node[Any], (YAMLMap[Any, Any]) | Scalar[Any] | Alias | YAMLSeq[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Pair[Node[Any], (YAMLMap[Any, Any]) | Scalar[Any] | Alias | YAMLSeq[Any]]]
 }

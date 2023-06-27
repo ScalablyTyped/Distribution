@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ object sapUiCoreComponentMetadataMod {
       /**
       * Static info to construct the metadata from
       */
-    oClassInfo: js.Object
+    oClassInfo: `3`
     ) = this()
   }
   
@@ -49,7 +50,7 @@ object sapUiCoreComponentMetadataMod {
     def getComponents(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.15.1
+      * @since 1.15.1
       * @deprecated (since 1.27.1) - Please use {@link sap.ui.core.Component#getManifestEntry}("/sap.ui5/config")
       *
       * Returns a copy of the configuration property to disallow modifications. If no key is specified it returns
@@ -152,7 +153,7 @@ object sapUiCoreComponentMetadataMod {
     def getLibs(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.27.1
+      * @since 1.27.1
       * @deprecated (since 1.33.0) - Please use the sap.ui.core.Component#getManifest
       *
       * Returns the manifest defined in the metadata of the Component. If not specified, the return value is
@@ -163,7 +164,7 @@ object sapUiCoreComponentMetadataMod {
     def getManifest(): js.Object | Null = js.native
     
     /**
-      * @SINCE 1.27.1
+      * @since 1.27.1
       * @deprecated (since 1.33.0) - Please use the sap.ui.core.Component#getManifest
       *
       * Returns the configuration of a manifest section or the value for a specific path. If no section or key
@@ -198,7 +199,7 @@ object sapUiCoreComponentMetadataMod {
     ): Any | Null = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Returns the manifest object.
       *
@@ -207,8 +208,8 @@ object sapUiCoreComponentMetadataMod {
     def getManifestObject(): typings.openui5.sapUiCoreManifestMod.default = js.native
     
     /**
-      * @SINCE 1.27.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.27.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the version of the metadata which could be 1 or 2. 1 is for legacy metadata whereas 2 is for
       * the manifest.
@@ -218,7 +219,7 @@ object sapUiCoreComponentMetadataMod {
     def getMetadataVersion(): int = js.native
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       * @deprecated (since 1.33.0) - Please use the sap.ui.core.Component#getManifest
       *
       * Returns the raw manifest defined in the metadata of the Component. If not specified, the return value
@@ -254,8 +255,8 @@ object sapUiCoreComponentMetadataMod {
     def getVersion(): String = js.native
     
     /**
-      * @SINCE 1.33.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.33.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns whether the class of this metadata is a component base class or not.
       *

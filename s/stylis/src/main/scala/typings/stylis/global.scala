@@ -51,6 +51,10 @@ object global {
     @js.native
     val KEYFRAMES: /* "@keyframes" */ String = js.native
     
+    @JSGlobal("stylis.LAYER")
+    @js.native
+    val LAYER: /* "@layer" */ String = js.native
+    
     @JSGlobal("stylis.MEDIA")
     @js.native
     val MEDIA: /* "@media" */ String = js.native

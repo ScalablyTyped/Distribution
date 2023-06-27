@@ -11,17 +11,17 @@ trait CodedValueDomain
      with Domain {
   
   /**
-    * An array of the coded values in the domain.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
-    */
+  		 * An array of the coded values in the domain.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#codedValues)
+  		 */
   var codedValues: js.Array[CodedValue] = js.native
   
   /**
-    * Returns the name of the coded-value associated with the specified code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#getName)
-    */
+  		 * Returns the name of the coded-value associated with the specified code.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html#getName)
+  		 */
   def getName(code: String): String = js.native
   def getName(code: Double): String = js.native
   

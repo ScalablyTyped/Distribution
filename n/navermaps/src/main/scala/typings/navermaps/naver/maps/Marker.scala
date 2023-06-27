@@ -12,7 +12,7 @@ trait Marker
   extends StObject
      with OverlayView {
   
-  def getAnimation(): Animation = js.native
+  def getAnimation(): Animation | Null = js.native
   
   def getClickable(): Boolean = js.native
   
@@ -38,6 +38,7 @@ trait Marker
   
   def getZIndex(): Double = js.native
   
+  def setAnimation(): Unit = js.native
   def setAnimation(animation: Animation): Unit = js.native
   
   def setClickable(clickable: Boolean): Unit = js.native

@@ -12,67 +12,77 @@ trait TrackProperties
      with GoToProperties {
   
   /**
-    * An object used for setting optional position parameters.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#geolocationOptions)
-    */
+  		 * An object used for setting optional position parameters.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#geolocationOptions)
+  		 */
   var geolocationOptions: js.UndefOr[Any] = js.undefined
   
   /**
-    * Indicates whether the widget will automatically navigate the view to the user's position when a geolocation result is found.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#goToLocationEnabled)
-    */
+  		 * Indicates whether the widget will automatically navigate the view to the user's position when a geolocation result is found.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#goToLocationEnabled)
+  		 */
   var goToLocationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The graphic used to show the user's location on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#graphic)
-    */
+  		 * The graphic used to show the user's location on the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#graphic)
+  		 */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates the [scale](https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/) to set on the view when navigating to the position of the geolocated result, after a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event-track) event.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#scale)
-    */
+  		 * Indicates whether the widget will automatically rotate to the device heading based on the Geolocation APIs [`GeolocationCoordinates.heading`](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) property.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#rotationEnabled)
+  		 */
+  var rotationEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * Indicates the [scale](https://developers.arcgis.com/documentation/mapping-apis-and-services/reference/zoom-levels-and-scale/) to set on the view when navigating to the position of the geolocated result, after a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event-track) event.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#scale)
+  		 */
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the widget will automatically rotate to the device heading based on the Geolocation APIs [`GeolocationCoordinates.heading`](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) property.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#useHeadingEnabled)
-    */
+  		 * Indicates whether the widget will automatically rotate to the device heading based on the Geolocation APIs [`GeolocationCoordinates.heading`](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/heading) property.
+  		 *
+  		 * @default true
+  		 * @deprecated since 4.27. Use `rotationEnabled` instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#useHeadingEnabled)
+  		 */
   var useHeadingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The viewModel for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#viewModel)
-    */
+  		 * The viewModel for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[TrackViewModelProperties] = js.undefined
 }
 object TrackProperties {
@@ -100,6 +110,10 @@ object TrackProperties {
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setRotationEnabled(value: Boolean): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRotationEnabledUndefined: Self = StObject.set(x, "rotationEnabled", js.undefined)
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

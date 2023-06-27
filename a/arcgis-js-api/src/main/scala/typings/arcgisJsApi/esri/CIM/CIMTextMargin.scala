@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMTextMargin extends StObject {
   
   /**
-    * The bottom margin.
-    */
+  			 * The bottom margin.
+  			 */
   var bottom: js.UndefOr[Double] = js.undefined
   
   /**
-    * The left margin.
-    */
+  			 * The left margin.
+  			 */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    * The right margin.
-    */
+  			 * The right margin.
+  			 */
   var right: js.UndefOr[Double] = js.undefined
   
   /**
-    * The top margin.
-    */
+  			 * The top margin.
+  			 */
   var top: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextMargin

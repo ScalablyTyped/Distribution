@@ -12,7 +12,7 @@ trait ArchiveManager extends StObject {
     *
     * @param operationIdentifier Task ID returned by an asynchronous function from this module.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def abort(operationIdentifier: Double): Unit = js.native
   
@@ -48,8 +48,8 @@ trait ArchiveManager extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter type does not match.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter type does not match.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def open(file: FileReference, mode: FileMode, onsuccess: ArchiveFileSuccessCallback): Double = js.native
   def open(

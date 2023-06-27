@@ -23,8 +23,8 @@ trait MediaControllerServer extends StObject {
     *
     * @returns The identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addChangeRequestPlaybackInfoListener(listener: MediaControllerChangeRequestPlaybackInfoCallback): Double = js.native
   
@@ -36,8 +36,8 @@ trait MediaControllerServer extends StObject {
     *
     * @returns The identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addCommandListener(listener: MediaControllerReceiveCommandCallback): Double = js.native
   
@@ -52,8 +52,8 @@ trait MediaControllerServer extends StObject {
     *
     * @returns New empty _MediaControllerPlaylist_ object with given name.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if playlist with given name already exists.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if playlist with given name already exists.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def createPlaylist(name: String): MediaControllerPlaylist = js.native
   
@@ -72,8 +72,8 @@ trait MediaControllerServer extends StObject {
     * @param successCallback Function to be called when _deletePlaylist_ is finished without error.
     * @param errorCallback Function to be called when _deletePlaylist_ fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def deletePlaylist(playlistName: String): Unit = js.native
   def deletePlaylist(playlistName: String, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -102,7 +102,7 @@ trait MediaControllerServer extends StObject {
     *
     * @returns All existing clients info.
     *
-    * @throw WebAPIException with error type UnknownError, if any platform error occurs.
+    * @throws WebAPIException with error type UnknownError, if any platform error occurs.
     *
     * @remark Code example available at [sendEvent()](#MediaControllerClientInfo::sendEvent) method documentation.
     */
@@ -121,8 +121,8 @@ trait MediaControllerServer extends StObject {
     * @param successCallback Function to be called on _getAllPlaylists_ success.
     * @param errorCallback Function to be called when _getAllPlaylists_ fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any parameter has invalid type.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any parameter has invalid type.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getAllPlaylists(successCallback: MediaControllerGetAllPlaylistsSuccessCallback): Unit = js.native
   def getAllPlaylists(successCallback: MediaControllerGetAllPlaylistsSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -155,7 +155,7 @@ trait MediaControllerServer extends StObject {
     *
     * @param watchId Subscription identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeChangeRequestPlaybackInfoListener(watchId: Double): Unit = js.native
   
@@ -166,7 +166,7 @@ trait MediaControllerServer extends StObject {
     *
     * @param watchId Subscription identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeCommandListener(watchId: Double): Unit = js.native
   
@@ -187,8 +187,8 @@ trait MediaControllerServer extends StObject {
     * @param successCallback Function to be called when _savePlaylist_ is finished without error.
     * @param errorCallback Function to be called when _savePlaylist_ fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def savePlaylist(playlist: MediaControllerPlaylist): Unit = js.native
   def savePlaylist(playlist: MediaControllerPlaylist, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -203,8 +203,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param listener Function to be called for each search command received.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of the arguments has invalid type.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the arguments has invalid type.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def setSearchRequestListener(listener: MediaControllerSearchRequestCallback): Unit = js.native
   
@@ -222,7 +222,7 @@ trait MediaControllerServer extends StObject {
     *
     * @since 5.5
     *
-    * @throw WebAPIException with error type UnknownError, if unknown error occurs.
+    * @throws WebAPIException with error type UnknownError, if unknown error occurs.
     */
   def unsetSearchRequestListener(): Unit = js.native
   
@@ -233,7 +233,7 @@ trait MediaControllerServer extends StObject {
     *
     * @param iconURI URI of the icon to be set.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def updateIconURI(): Unit = js.native
   def updateIconURI(iconURI: String): Unit = js.native
@@ -243,8 +243,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param metadata Metadata object.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updateMetadata(metadata: MediaControllerMetadata): Unit = js.native
   
@@ -255,8 +255,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param rating New age rating for current playback item.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updatePlaybackAgeRating(rating: MediaControllerContentAgeRating): Unit = js.native
   
@@ -267,8 +267,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param type New content type for the current playback item.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updatePlaybackContentType(`type`: MediaControllerContentType): Unit = js.native
   
@@ -280,7 +280,7 @@ trait MediaControllerServer extends StObject {
     * @param playlistName Name of playlist to be set.
     * @param index Index of item on playlist _playlistName_ to be set.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def updatePlaybackItem(playlistName: String, index: String): Unit = js.native
   
@@ -289,8 +289,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param position Playback position.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updatePlaybackPosition(position: Double): Unit = js.native
   
@@ -301,8 +301,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param state Playback state.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updatePlaybackState(state: MediaControllerPlaybackState): Unit = js.native
   
@@ -313,7 +313,7 @@ trait MediaControllerServer extends StObject {
     *
     * @param mode Repeat mode.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def updateRepeatMode(mode: Boolean): Unit = js.native
   
@@ -324,8 +324,8 @@ trait MediaControllerServer extends StObject {
     *
     * @param state Repeat state to be set.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def updateRepeatState(state: MediaControllerRepeatState): Unit = js.native
   
@@ -334,7 +334,7 @@ trait MediaControllerServer extends StObject {
     *
     * @param mode Shuffle mode.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def updateShuffleMode(mode: Boolean): Unit = js.native
 }

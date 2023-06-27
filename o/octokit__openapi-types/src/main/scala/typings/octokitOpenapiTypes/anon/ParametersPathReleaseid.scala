@@ -8,11 +8,11 @@ trait ParametersPathReleaseid extends StObject {
   
   var parameters: PathReleaseid
   
-  var responses: `200333404`
+  var responses: `200388404`
 }
 object ParametersPathReleaseid {
   
-  inline def apply(parameters: PathReleaseid, responses: `200333404`): ParametersPathReleaseid = {
+  inline def apply(parameters: PathReleaseid, responses: `200388404`): ParametersPathReleaseid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathReleaseid]
   }
@@ -22,6 +22,6 @@ object ParametersPathReleaseid {
     
     inline def setParameters(value: PathReleaseid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200333404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200388404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

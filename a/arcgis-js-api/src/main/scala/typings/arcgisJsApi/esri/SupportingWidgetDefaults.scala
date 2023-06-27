@@ -7,24 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SupportingWidgetDefaults extends StObject {
   
   /**
-    * An object containing properties specific for customizing the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
-    */
+  		 * An object containing properties specific for customizing the [Attachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
+  		 */
+  var attachments: js.UndefOr[SupportingWidgetDefaultsAttachments] = js.undefined
+  
+  /**
+  		 * An object containing properties specific for customizing the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
+  		 */
   var featureForm: js.UndefOr[SupportingWidgetDefaultsFeatureForm] = js.undefined
   
   /**
-    * An object containing properties specific for customizing the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
-    */
+  		 * An object containing properties specific for customizing the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
+  		 */
   var featureTemplates: js.UndefOr[SupportingWidgetDefaultsFeatureTemplates] = js.undefined
   
   /**
-    * An object containing properties specific for customizing the [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
-    */
+  		 * An object containing properties specific for customizing the [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
+  		 */
   var sketch: js.UndefOr[SupportingWidgetDefaultsSketch] = js.undefined
 }
 object SupportingWidgetDefaults {
@@ -36,6 +43,10 @@ object SupportingWidgetDefaults {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SupportingWidgetDefaults] (val x: Self) extends AnyVal {
+    
+    inline def setAttachments(value: SupportingWidgetDefaultsAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     inline def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = StObject.set(x, "featureForm", value.asInstanceOf[js.Any])
     

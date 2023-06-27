@@ -175,6 +175,8 @@ trait RouteOptionsBase extends StObject {
   
   var overrideRestrict: js.UndefOr[Boolean] = js.undefined
   
+  var profileId: js.UndefOr[Double] = js.undefined
+  
   var profileName: js.UndefOr[String] = js.undefined
   
   var refrigerated: js.UndefOr[Boolean] = js.undefined
@@ -577,6 +579,10 @@ object RouteOptionsBase {
     inline def setOverrideRestrict(value: Boolean): Self = StObject.set(x, "overrideRestrict", value.asInstanceOf[js.Any])
     
     inline def setOverrideRestrictUndefined: Self = StObject.set(x, "overrideRestrict", js.undefined)
+    
+    inline def setProfileId(value: Double): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     inline def setProfileName(value: String): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     

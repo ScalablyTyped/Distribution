@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalRatingProperties extends StObject {
   
   /**
-    * Date the rating was added to the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#created)
-    */
+  		 * Date the rating was added to the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#created)
+  		 */
   var created: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * A rating between 1.0 and 5.0 for the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#rating)
-    */
+  		 * A rating between 1.0 and 5.0 for the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html#rating)
+  		 */
   var rating: js.UndefOr[Double] = js.undefined
 }
 object PortalRatingProperties {

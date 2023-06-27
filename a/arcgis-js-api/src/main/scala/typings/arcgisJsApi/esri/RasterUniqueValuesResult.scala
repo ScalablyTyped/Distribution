@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterUniqueValuesResult extends StObject {
   
   /**
-    * The class field name from which the unique value infos were generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#RasterUniqueValuesResult)
-    */
+  		 * The class field name from which the unique value infos were generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#RasterUniqueValuesResult)
+  		 */
   var classFieldName: String
   
   /**
-    * The UniqueValueRenderer renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#RasterUniqueValuesResult)
-    */
+  		 * The UniqueValueRenderer renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#RasterUniqueValuesResult)
+  		 */
   var renderer: UniqueValueRenderer
 }
 object RasterUniqueValuesResult {

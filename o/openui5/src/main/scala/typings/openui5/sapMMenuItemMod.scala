@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AggregationName
-import typings.openui5.anon.PropertyKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +147,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit]
     ): this.type = js.native
     def attachAggregationChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -181,7 +179,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit]
     ): this.type = js.native
     def attachAggregationChanged(
       /**
@@ -192,7 +190,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -213,13 +211,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -244,7 +242,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -255,7 +253,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -277,13 +275,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachPropertyChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -309,7 +307,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def attachPropertyChanged(
       /**
@@ -320,7 +318,7 @@ object sapMMenuItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MenuItem` itself
       */
@@ -359,13 +357,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit]
     ): this.type = js.native
     def detachAggregationChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemAggregationChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -383,13 +381,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -408,13 +406,13 @@ object sapMMenuItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit]
     ): this.type = js.native
     def detachPropertyChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemPropertyChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -422,20 +420,22 @@ object sapMMenuItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:aggregationChanged aggregationChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAggregationChanged(): this.type = js.native
-    def fireAggregationChanged(/**
+    def fireAggregationChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AggregationName): this.type = js.native
+    mParameters: MenuItem$AggregationChangedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -448,17 +448,19 @@ object sapMMenuItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:propertyChanged propertyChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePropertyChanged(): this.type = js.native
-    def firePropertyChanged(/**
+    def firePropertyChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PropertyKey): this.type = js.native
+    mParameters: MenuItem$PropertyChangedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getIcon icon}.
@@ -615,6 +617,93 @@ object sapMMenuItemMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait MenuItem$AggregationChangedEventParameters extends StObject {
+    
+    /**
+      * The aggregation name of the changed aggregation.
+      */
+    var aggregationName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Which method changed the aggregation.
+      */
+    var methodName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * What parameters were used to change the aggregation.
+      */
+    var methodParams: js.UndefOr[js.Object] = js.undefined
+  }
+  object MenuItem$AggregationChangedEventParameters {
+    
+    inline def apply(): MenuItem$AggregationChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuItem$AggregationChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem$AggregationChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAggregationName(value: String): Self = StObject.set(x, "aggregationName", value.asInstanceOf[js.Any])
+      
+      inline def setAggregationNameUndefined: Self = StObject.set(x, "aggregationName", js.undefined)
+      
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      
+      inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+      
+      inline def setMethodParams(value: js.Object): Self = StObject.set(x, "methodParams", value.asInstanceOf[js.Any])
+      
+      inline def setMethodParamsUndefined: Self = StObject.set(x, "methodParams", js.undefined)
+    }
+  }
+  
+  trait MenuItem$PressEventParameters extends StObject
+  
+  trait MenuItem$PropertyChangedEventParameters extends StObject {
+    
+    /**
+      * The property name to be changed.
+      */
+    var propertyKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The new property value.
+      */
+    var propertyValue: js.UndefOr[Any] = js.undefined
+  }
+  object MenuItem$PropertyChangedEventParameters {
+    
+    inline def apply(): MenuItem$PropertyChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuItem$PropertyChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem$PropertyChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPropertyKey(value: String): Self = StObject.set(x, "propertyKey", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyKeyUndefined: Self = StObject.set(x, "propertyKey", js.undefined)
+      
+      inline def setPropertyValue(value: Any): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+      
+      inline def setPropertyValueUndefined: Self = StObject.set(x, "propertyValue", js.undefined)
+    }
+  }
+  
+  type MenuItemAggregationChangedEvent = typings.openui5.sapUiBaseEventMod.default[MenuItem$AggregationChangedEventParameters]
+  
+  type MenuItemAggregationChangedEventParameters = MenuItem$AggregationChangedEventParameters
+  
+  type MenuItemPressEvent = typings.openui5.sapUiBaseEventMod.default[MenuItem$PressEventParameters]
+  
+  type MenuItemPressEventParameters = MenuItem$PressEventParameters
+  
+  type MenuItemPropertyChangedEvent = typings.openui5.sapUiBaseEventMod.default[MenuItem$PropertyChangedEventParameters]
+  
+  type MenuItemPropertyChangedEventParameters = MenuItem$PropertyChangedEventParameters
+  
   trait MenuItemSettings
     extends StObject
        with ItemSettings {
@@ -622,7 +711,12 @@ object sapMMenuItemMod {
     /**
       * Fired when aggregation of the item changes.
       */
-    var aggregationChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var aggregationChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItem$AggregationChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the icon, which belongs to the item. This can be a URI to an image or an icon font URI.
@@ -639,12 +733,19 @@ object sapMMenuItemMod {
     /**
       * Fired after the item has been pressed.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when a property of the item changes.
       */
-    var propertyChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var propertyChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItem$PropertyChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether a visual separator should be rendered before the item. **Note:** If an item is invisible
@@ -672,7 +773,9 @@ object sapMMenuItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MenuItemSettings] (val x: Self) extends AnyVal {
       
-      inline def setAggregationChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "aggregationChanged", js.Any.fromFunction1(value))
+      inline def setAggregationChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItem$AggregationChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "aggregationChanged", js.Any.fromFunction1(value))
       
       inline def setAggregationChangedUndefined: Self = StObject.set(x, "aggregationChanged", js.undefined)
       
@@ -688,11 +791,13 @@ object sapMMenuItemMod {
       
       inline def setItemsVarargs(value: MenuItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
-      inline def setPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
+      inline def setPropertyChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItem$PropertyChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
       
       inline def setPropertyChangedUndefined: Self = StObject.set(x, "propertyChanged", js.undefined)
       

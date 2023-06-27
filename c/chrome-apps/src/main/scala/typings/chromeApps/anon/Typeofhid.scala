@@ -37,8 +37,8 @@ trait Typeofhid extends StObject {
   def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = js.native
   
   /**
-    * @requires(dev) **Dev channel only!**
-    * @see[Learn more]{@link https://developer.chrome.com/apps/api_index#dev_apis}
+    * @requires **Dev channel only!**
+    * @see https://developer.chrome.com/apps/api_index#dev_apis
     * @description
     * Presents a device picker to the user and returns
     * HidDeviceInfo objects for the devices selected. If the user
@@ -51,8 +51,8 @@ trait Typeofhid extends StObject {
   def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = js.native
   /**
     * @since Chrome 45.
-    * @requires(dev) **Dev channel only!**
-    * @see[Learn more]{@link https://developer.chrome.com/apps/api_index#dev_apis}
+    * @requires **Dev channel only!**
+    * @see https://developer.chrome.com/apps/api_index#dev_apis
     * Presents a device picker to the user and returns
     * HidDeviceInfo objects for the devices selected. If the user
     * cancels the picker devices will be empty. A user gesture is
@@ -74,7 +74,7 @@ trait Typeofhid extends StObject {
     * have been granted at install time or when the user
     * accepted an optional permission.
     * @since Chrome 41.
-    * @see[permissions.request]{@link https://developer.chrome.com/apps/permissions#method-request}
+    * @see https://developer.chrome.com/apps/permissions#method-request
     */
   val onDeviceAdded: Event[js.Function1[/* device */ HidDeviceInfo, Unit]] = js.native
   
@@ -82,7 +82,7 @@ trait Typeofhid extends StObject {
     * Event generated when a device is removed from the system.
     * The callback will contain the deviceId property of the device passed to onDeviceAdded.
     * @since Chrome 41.
-    * @see[See onDeviceAdded for which events are delivered]{@link https://developer.chrome.com/apps/hid#event-onDeviceAdded}.
+    * @see https://developer.chrome.com/apps/hid#event-onDeviceAdded
     */
   val onDeviceRemoved: Event[js.Function1[/* deviceId */ integer, Unit]] = js.native
   

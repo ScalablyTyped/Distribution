@@ -1,10 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.ActivePages
-import typings.openui5.anon.NewActivePageId
-import typings.openui5.anon.PageId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
+import typings.openui5.sapMLibraryMod.BorderDesign
 import typings.openui5.sapMLibraryMod.CarouselArrowsPlacement
 import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -160,13 +158,13 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit]
     ): this.type = js.native
     def attachBeforePageChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -193,7 +191,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit]
     ): this.type = js.native
     def attachBeforePageChanged(
       /**
@@ -204,7 +202,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -227,13 +225,13 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit]
     ): this.type = js.native
     def attachLoadPage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -260,7 +258,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit]
     ): this.type = js.native
     def attachLoadPage(
       /**
@@ -271,7 +269,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -293,13 +291,13 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit]
     ): this.type = js.native
     def attachPageChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -325,7 +323,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit]
     ): this.type = js.native
     def attachPageChanged(
       /**
@@ -336,7 +334,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -360,13 +358,13 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit]
     ): this.type = js.native
     def attachUnloadPage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -394,7 +392,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit]
     ): this.type = js.native
     def attachUnloadPage(
       /**
@@ -405,7 +403,7 @@ object sapMCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Carousel` itself
       */
@@ -413,7 +411,7 @@ object sapMCarouselMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Destroys the customLayout in the aggregation {@link #getCustomLayout customLayout}.
       *
@@ -440,13 +438,13 @@ object sapMCarouselMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit]
     ): this.type = js.native
     def detachBeforePageChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselBeforePageChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -466,13 +464,13 @@ object sapMCarouselMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit]
     ): this.type = js.native
     def detachLoadPage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselLoadPageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -490,13 +488,13 @@ object sapMCarouselMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit]
     ): this.type = js.native
     def detachPageChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselPageChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -516,13 +514,13 @@ object sapMCarouselMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit]
     ): this.type = js.native
     def detachUnloadPage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselUnloadPageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -530,21 +528,23 @@ object sapMCarouselMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforePageChanged beforePageChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforePageChanged(): this.type = js.native
-    def fireBeforePageChanged(/**
+    def fireBeforePageChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ActivePages): this.type = js.native
+    mParameters: Carousel$BeforePageChangedEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.18.7) - Since 1.18.7 pages are no longer loaded or unloaded
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loadPage loadPage} to attached listeners.
       *
@@ -554,34 +554,38 @@ object sapMCarouselMod {
     def fireLoadPage(/**
       * Parameters to pass along with the event
       */
-    mParameters: PageId): this.type = js.native
+    mParameters: Carousel$LoadPageEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:pageChanged pageChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePageChanged(): this.type = js.native
-    def firePageChanged(/**
+    def firePageChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewActivePageId): this.type = js.native
+    mParameters: Carousel$PageChangedEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.18.7) - Since 1.18.7 pages are no longer loaded or unloaded
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:unloadPage unloadPage} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUnloadPage(): this.type = js.native
-    def fireUnloadPage(/**
+    def fireUnloadPage(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PageId): this.type = js.native
+    mParameters: Carousel$UnloadPageEventParameters
+    ): this.type = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getActivePage activePage}, or
@@ -603,7 +607,7 @@ object sapMCarouselMod {
     def getArrowsPlacement(): CarouselArrowsPlacement | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CarouselArrowsPlacement * / any */ String) = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -616,7 +620,7 @@ object sapMCarouselMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Gets content of aggregation {@link #getCustomLayout customLayout}.
       *
@@ -649,6 +653,32 @@ object sapMCarouselMod {
       * @returns Value of property `loop`
       */
     def getLoop(): Boolean = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Gets current value of property {@link #getPageIndicatorBackgroundDesign pageIndicatorBackgroundDesign}.
+      *
+      * Defines the carousel page indicator background design. Default is `sap.m.BackgroundDesign.Solid`.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Value of property `pageIndicatorBackgroundDesign`
+      */
+    def getPageIndicatorBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Gets current value of property {@link #getPageIndicatorBorderDesign pageIndicatorBorderDesign}.
+      *
+      * Defines the carousel page indicator border design. Default is `sap.m.BorderDesign.Solid`.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Value of property `pageIndicatorBorderDesign`
+      */
+    def getPageIndicatorBorderDesign(): BorderDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderDesign * / any */ String) = js.native
     
     /**
       * Gets current value of property {@link #getPageIndicatorPlacement pageIndicatorPlacement}.
@@ -825,7 +855,7 @@ object sapMCarouselMod {
     sArrowsPlacement: CarouselArrowsPlacement): this.type = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -850,7 +880,7 @@ object sapMCarouselMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Sets the aggregated {@link #getCustomLayout customLayout}.
       *
@@ -896,6 +926,60 @@ object sapMCarouselMod {
       * New value for property `loop`
       */
     bLoop: Boolean): this.type = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Sets a new value for property {@link #getPageIndicatorBackgroundDesign pageIndicatorBackgroundDesign}.
+      *
+      * Defines the carousel page indicator background design. Default is `sap.m.BackgroundDesign.Solid`.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setPageIndicatorBackgroundDesign(): this.type = js.native
+    def setPageIndicatorBackgroundDesign(
+      /**
+      * New value for property `pageIndicatorBackgroundDesign`
+      */
+    sPageIndicatorBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
+    ): this.type = js.native
+    def setPageIndicatorBackgroundDesign(
+      /**
+      * New value for property `pageIndicatorBackgroundDesign`
+      */
+    sPageIndicatorBackgroundDesign: BackgroundDesign
+    ): this.type = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Sets a new value for property {@link #getPageIndicatorBorderDesign pageIndicatorBorderDesign}.
+      *
+      * Defines the carousel page indicator border design. Default is `sap.m.BorderDesign.Solid`.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Solid`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setPageIndicatorBorderDesign(): this.type = js.native
+    def setPageIndicatorBorderDesign(
+      /**
+      * New value for property `pageIndicatorBorderDesign`
+      */
+    sPageIndicatorBorderDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderDesign * / any */ String
+    ): this.type = js.native
+    def setPageIndicatorBorderDesign(
+      /**
+      * New value for property `pageIndicatorBorderDesign`
+      */
+    sPageIndicatorBorderDesign: BorderDesign
+    ): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getPageIndicatorPlacement pageIndicatorPlacement}.
@@ -980,6 +1064,132 @@ object sapMCarouselMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Carousel$BeforePageChangedEventParameters extends StObject {
+    
+    /**
+      * Indexes of all active pages after the page change.
+      */
+    var activePages: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Carousel$BeforePageChangedEventParameters {
+    
+    inline def apply(): Carousel$BeforePageChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Carousel$BeforePageChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carousel$BeforePageChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActivePages(value: js.Array[Any]): Self = StObject.set(x, "activePages", value.asInstanceOf[js.Any])
+      
+      inline def setActivePagesUndefined: Self = StObject.set(x, "activePages", js.undefined)
+      
+      inline def setActivePagesVarargs(value: Any*): Self = StObject.set(x, "activePages", js.Array(value*))
+    }
+  }
+  
+  trait Carousel$LoadPageEventParameters extends StObject {
+    
+    /**
+      * Id of the page which will be loaded
+      */
+    var pageId: js.UndefOr[String] = js.undefined
+  }
+  object Carousel$LoadPageEventParameters {
+    
+    inline def apply(): Carousel$LoadPageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Carousel$LoadPageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carousel$LoadPageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+      
+      inline def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
+    }
+  }
+  
+  trait Carousel$PageChangedEventParameters extends StObject {
+    
+    /**
+      * Indexes of all active pages after the page change.
+      */
+    var activePages: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * ID of the page which will be active after the page change.
+      */
+    var newActivePageId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * ID of the page which was active before the page change.
+      */
+    var oldActivePageId: js.UndefOr[String] = js.undefined
+  }
+  object Carousel$PageChangedEventParameters {
+    
+    inline def apply(): Carousel$PageChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Carousel$PageChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carousel$PageChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActivePages(value: js.Array[Any]): Self = StObject.set(x, "activePages", value.asInstanceOf[js.Any])
+      
+      inline def setActivePagesUndefined: Self = StObject.set(x, "activePages", js.undefined)
+      
+      inline def setActivePagesVarargs(value: Any*): Self = StObject.set(x, "activePages", js.Array(value*))
+      
+      inline def setNewActivePageId(value: String): Self = StObject.set(x, "newActivePageId", value.asInstanceOf[js.Any])
+      
+      inline def setNewActivePageIdUndefined: Self = StObject.set(x, "newActivePageId", js.undefined)
+      
+      inline def setOldActivePageId(value: String): Self = StObject.set(x, "oldActivePageId", value.asInstanceOf[js.Any])
+      
+      inline def setOldActivePageIdUndefined: Self = StObject.set(x, "oldActivePageId", js.undefined)
+    }
+  }
+  
+  trait Carousel$UnloadPageEventParameters extends StObject {
+    
+    /**
+      * Id of the page which will be unloaded
+      */
+    var pageId: js.UndefOr[String] = js.undefined
+  }
+  object Carousel$UnloadPageEventParameters {
+    
+    inline def apply(): Carousel$UnloadPageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Carousel$UnloadPageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carousel$UnloadPageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+      
+      inline def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
+    }
+  }
+  
+  type CarouselBeforePageChangedEvent = typings.openui5.sapUiBaseEventMod.default[Carousel$BeforePageChangedEventParameters]
+  
+  type CarouselBeforePageChangedEventParameters = Carousel$BeforePageChangedEventParameters
+  
+  type CarouselLoadPageEvent = typings.openui5.sapUiBaseEventMod.default[Carousel$LoadPageEventParameters]
+  
+  type CarouselLoadPageEventParameters = Carousel$LoadPageEventParameters
+  
+  type CarouselPageChangedEvent = typings.openui5.sapUiBaseEventMod.default[Carousel$PageChangedEventParameters]
+  
+  type CarouselPageChangedEventParameters = Carousel$PageChangedEventParameters
+  
   trait CarouselSettings
     extends StObject
        with ControlSettings {
@@ -1001,7 +1211,7 @@ object sapMCarouselMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Defines the carousel's background design. Default is `sap.m.BackgroundDesign.Translucent`.
       */
@@ -1013,10 +1223,15 @@ object sapMCarouselMod {
       * This event is fired before a carousel swipe has been completed. It is triggered both by physical swipe
       * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       */
-    var beforePageChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforePageChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$BeforePageChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Defines how many pages are displayed in the visible area of the `Carousel` control.
       *
@@ -1037,7 +1252,12 @@ object sapMCarouselMod {
       *
       * Carousel requires a new page to be loaded. This event may be used to fill the content of that page
       */
-    var loadPage: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var loadPage: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$LoadPageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether the carousel should loop, i.e show the first page after the last page is reached and
@@ -1051,7 +1271,30 @@ object sapMCarouselMod {
       * This event is fired after a carousel swipe has been completed. It is triggered both by physical swipe
       * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       */
-    var pageChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var pageChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$PageChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * @since 1.115
+      *
+      * Defines the carousel page indicator background design. Default is `sap.m.BackgroundDesign.Solid`.
+      */
+    var pageIndicatorBackgroundDesign: js.UndefOr[
+        BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
+      * @since 1.115
+      *
+      * Defines the carousel page indicator border design. Default is `sap.m.BorderDesign.Solid`.
+      */
+    var pageIndicatorBorderDesign: js.UndefOr[
+        BorderDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderDesign * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * Defines where the carousel's page indicator is displayed. Possible values are sap.m.PlacementType.Top,
@@ -1092,7 +1335,12 @@ object sapMCarouselMod {
       * Carousel does not display a page any longer and unloads it. This event may be used to clean up the content
       * of that page.
       */
-    var unloadPage: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var unloadPage: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$UnloadPageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The width of the carousel. Note that when a percentage value is used, the height of the surrounding container
@@ -1128,7 +1376,9 @@ object sapMCarouselMod {
       
       inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
-      inline def setBeforePageChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforePageChanged", js.Any.fromFunction1(value))
+      inline def setBeforePageChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$BeforePageChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "beforePageChanged", js.Any.fromFunction1(value))
       
       inline def setBeforePageChangedUndefined: Self = StObject.set(x, "beforePageChanged", js.undefined)
       
@@ -1140,7 +1390,9 @@ object sapMCarouselMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setLoadPage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "loadPage", js.Any.fromFunction1(value))
+      inline def setLoadPage(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$LoadPageEventParameters] => Unit
+      ): Self = StObject.set(x, "loadPage", js.Any.fromFunction1(value))
       
       inline def setLoadPageUndefined: Self = StObject.set(x, "loadPage", js.undefined)
       
@@ -1148,9 +1400,23 @@ object sapMCarouselMod {
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setPageChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "pageChanged", js.Any.fromFunction1(value))
+      inline def setPageChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$PageChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "pageChanged", js.Any.fromFunction1(value))
       
       inline def setPageChangedUndefined: Self = StObject.set(x, "pageChanged", js.undefined)
+      
+      inline def setPageIndicatorBackgroundDesign(
+        value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "pageIndicatorBackgroundDesign", value.asInstanceOf[js.Any])
+      
+      inline def setPageIndicatorBackgroundDesignUndefined: Self = StObject.set(x, "pageIndicatorBackgroundDesign", js.undefined)
+      
+      inline def setPageIndicatorBorderDesign(
+        value: BorderDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderDesign * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "pageIndicatorBorderDesign", value.asInstanceOf[js.Any])
+      
+      inline def setPageIndicatorBorderDesignUndefined: Self = StObject.set(x, "pageIndicatorBorderDesign", js.undefined)
       
       inline def setPageIndicatorPlacement(
         value: PlacementType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementType * / any */ String) | PropertyBindingInfo
@@ -1174,7 +1440,9 @@ object sapMCarouselMod {
       
       inline def setShowPageIndicatorUndefined: Self = StObject.set(x, "showPageIndicator", js.undefined)
       
-      inline def setUnloadPage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "unloadPage", js.Any.fromFunction1(value))
+      inline def setUnloadPage(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$UnloadPageEventParameters] => Unit
+      ): Self = StObject.set(x, "unloadPage", js.Any.fromFunction1(value))
       
       inline def setUnloadPageUndefined: Self = StObject.set(x, "unloadPage", js.undefined)
       
@@ -1183,4 +1451,8 @@ object sapMCarouselMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type CarouselUnloadPageEvent = typings.openui5.sapUiBaseEventMod.default[Carousel$UnloadPageEventParameters]
+  
+  type CarouselUnloadPageEventParameters = Carousel$UnloadPageEventParameters
 }

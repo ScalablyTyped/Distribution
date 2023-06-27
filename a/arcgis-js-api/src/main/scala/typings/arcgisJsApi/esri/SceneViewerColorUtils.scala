@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Note: reserved for internal use only, this is not part of the stable public API.
-  *
-  * Color utilities for the Scene Viewer application.
-  */
+	 * Note: reserved for internal use only, this is not part of the stable public API.
+	 *
+	 * Color utilities for the Scene Viewer application.
+	 */
 trait SceneViewerColorUtils extends StObject {
   
   /**
-    * Note: reserved for internal use only, this is not part of the stable public API.
-    *
-    * Return true if a color is bright.
-    */
+  		 * Note: reserved for internal use only, this is not part of the stable public API.
+  		 *
+  		 * Return true if a color is bright.
+  		 */
   def isBright(color: Color_): Boolean
 }
 object SceneViewerColorUtils {

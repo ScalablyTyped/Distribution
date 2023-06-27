@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.rollupStrings.augmentChunkHash
+  - typings.rollup.rollupStrings.onLog
   - typings.rollup.rollupStrings.outputOptions
   - typings.rollup.rollupStrings.renderDynamicImport
   - typings.rollup.rollupStrings.resolveFileUrl
@@ -15,6 +16,8 @@ trait SyncPluginHooks extends StObject
 object SyncPluginHooks {
   
   inline def augmentChunkHash: typings.rollup.rollupStrings.augmentChunkHash = "augmentChunkHash".asInstanceOf[typings.rollup.rollupStrings.augmentChunkHash]
+  
+  inline def onLog: typings.rollup.rollupStrings.onLog = "onLog".asInstanceOf[typings.rollup.rollupStrings.onLog]
   
   inline def outputOptions: typings.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typings.rollup.rollupStrings.outputOptions]
   

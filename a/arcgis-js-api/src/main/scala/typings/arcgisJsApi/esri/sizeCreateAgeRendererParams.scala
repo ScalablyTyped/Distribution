@@ -21,128 +21,128 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait sizeCreateAgeRendererParams extends StObject {
   
   /**
-    * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Enables the `defaultSymbol` on the renderer and assigns it to features with no value.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the field, or a date value representing the end time in the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * The name of the field, or a date value representing the end time in the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var endTime: js.Date | String | Double
   
   /**
-    * The layer for which the visualization is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer for which the visualization is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var legendOptions: js.UndefOr[sizeCreateAgeRendererParamsLegendOptions] = js.undefined
   
   /**
-    * Sets a maximum age for the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Sets a maximum age for the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets a minimum age for the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Sets a minimum age for the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Only for polygon layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Only for polygon layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Indicates whether symbol sizes should vary based on view scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Indicates whether symbol sizes should vary based on view scale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * In authoring apps, the user may select a pre-defined size scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * In authoring apps, the user may select a pre-defined size scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var sizeScheme: js.UndefOr[SizeScheme] = js.undefined
   
   /**
-    * The name of the field, or a date value representing the start time in the age calculation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * The name of the field, or a date value representing the start time in the age calculation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var startTime: js.Date | String | Double
   
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
   
   /**
-    * The type of symbol to generate.
-    *
-    * @default 2d
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * The type of symbol to generate.
+  		 *
+  		 * @default 2d
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
-    * Sets the size stops based on meaningful data values.
-    *
-    * @default high-to-low
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
-    */
+  		 * Sets the size stops based on meaningful data values.
+  		 *
+  		 * @default high-to-low
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createAgeRenderer)
+  		 */
   var theme: js.UndefOr[`high-to-low` | above | below] = js.undefined
   
   /**
-    * The time unit used to calculate the difference between `endTime` and `startTime`.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The time unit used to calculate the difference between `endTime` and `startTime`.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
   
   /**
-    * The view where the input layer is rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view where the input layer is rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: View
 }
 object sizeCreateAgeRendererParams {
   
   inline def apply(
     endTime: js.Date | String | Double,
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer,
     startTime: js.Date | String | Double,
     view: View
   ): sizeCreateAgeRendererParams = {
@@ -159,7 +159,9 @@ object sizeCreateAgeRendererParams {
     
     inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLegendOptions(value: sizeCreateAgeRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     

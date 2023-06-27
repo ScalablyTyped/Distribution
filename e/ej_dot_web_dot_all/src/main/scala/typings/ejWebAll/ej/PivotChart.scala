@@ -330,7 +330,7 @@ object PivotChart {
   trait CommonSeriesOptions extends StObject {
     
     /** Allows you to set the specific chart type for the pivot chart widget.
-      * @Default {ej.PivotChart.ChartTypes.Column}
+      * @default {ej.PivotChart.ChartTypes.Column}
       */
     var `type`: js.UndefOr[ChartTypes | String] = js.undefined
   }
@@ -353,47 +353,47 @@ object PivotChart {
   trait DataSource extends StObject {
     
     /** In connection with the OLAP database, this property contains the database name as string to fetch the data from the given connection string.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as series of the pivot chart.
-      * @Default {[]}
+      * @default {[]}
       */
     var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from the OLAP database as string type.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw datasource for the pivot chart.
-      * @Default {null}
+      * @default {null}
       */
     var data: js.UndefOr[Any] = js.undefined
     
     /** Lists out the items that supports filtering of values without displaying the members in UI of the pivot chart.
-      * @Default {[]}
+      * @default {[]}
       */
     var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Sets the provider name for the pivot chart to identify whether the provider is SSAS or Mondrian.
-      * @Default {ssas}
+      * @default {ssas}
       */
     var providerName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as segments of the pivot chart.
-      * @Default {[]}
+      * @default {[]}
       */
     var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the datasource name to fetch the data from that.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items support calculation in the pivot chart.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
@@ -464,17 +464,17 @@ object PivotChart {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of field members.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -513,12 +513,12 @@ object PivotChart {
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -551,7 +551,7 @@ object PivotChart {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
@@ -578,12 +578,12 @@ object PivotChart {
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -620,17 +620,17 @@ object PivotChart {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of field members.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -669,12 +669,12 @@ object PivotChart {
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -703,7 +703,7 @@ object PivotChart {
   trait DataSourceValue extends StObject {
     
     /** Allows you to set the axis name to place the measures items.
-      * @Default {rows}
+      * @default {rows}
       */
     var axis: js.UndefOr[String] = js.undefined
     
@@ -720,12 +720,12 @@ object PivotChart {
     var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field with the relational datasource or not.
-      * @Default {false}
+      * @default {false}
       */
     var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** Holds the list of unique names of measures to bind them from the OLAP cube.
-      * @Default {[]}
+      * @default {[]}
       */
     var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
   }
@@ -880,12 +880,12 @@ object PivotChart {
     var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the pivot chart widget to bind either the OLAP or relational datasource.
-      * @Default {ej.Pivot.AnalysisMode.Pivot}
+      * @default {ej.Pivot.AnalysisMode.Pivot}
       */
     var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
     /** To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array.
-      * @Default {[]}
+      * @default {[]}
       */
     var axes: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -902,22 +902,22 @@ object PivotChart {
     var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Options available to configure the properties of entire series. You can also override the options for specific series by using the series collection.
-      * @Default {{}}
+      * @default {{}}
       */
     var commonSeriesOptions: js.UndefOr[CommonSeriesOptions] = js.undefined
     
     /** Specifies the CSS class to the pivot chart for achieving the custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object is utilized to pass additional information between the client-end and the service-end while operating the control in the server mode.
-      * @Default {{}}
+      * @default {{}}
       */
     var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the datasource for the pivot chart widget, when it functions completely on the client-side.
-      * @Default {{}}
+      * @default {{}}
       */
     var dataSource: js.UndefOr[DataSource] = js.undefined
     
@@ -926,37 +926,37 @@ object PivotChart {
     var drillSuccess: js.UndefOr[js.Function1[/* e */ DrillSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to enable the 3D view of the pivot chart.
-      * @Default {false}
+      * @default {false}
       */
     var enable3D: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable context menu options in the pivot chart.
-      * @Default {false}
+      * @default {false}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to render the complete pivot chart on drill operation, when expanding and collapsing members are shown in multi-level labels.
-      * @Default {false}
+      * @default {false}
       */
     var enableMultiLevelLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the pivot chart from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
-      * @Default {false}
+      * @default {false}
       */
     var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the responsiveness of pivot chart in the browser layout.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** You can customize the legend items and their labels.
-      * @Default {{}}
+      * @default {{}}
       */
     var legend: js.UndefOr[Any] = js.undefined
     
@@ -965,26 +965,26 @@ object PivotChart {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the mode for the pivot chart widget to bind the data source either in the server-side or client-side.
-      * @Default {ej.Pivot.OperationalMode.ClientMode}
+      * @default {ej.Pivot.OperationalMode.ClientMode}
       */
     var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** This is a horizontal axis that contains options to configure the axis and it is the primary x-axis for all series in the series array. To override x-axis for particular series,
       * create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the seriesâ€™s xAxisName property to link both
       * the axis and the series.
-      * @Default {{}}
+      * @default {{}}
       */
     var primaryXAxis: js.UndefOr[Any] = js.undefined
     
     /** This is a vertical axis that contains options to configure the axis. This is the primary y-axis for all the series in the series array. To override y-axis for particular series,
       * create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the seriesâ€™s yAxisName property to link both
       * the axis and the series.
-      * @Default {{}}
+      * @default {{}}
       */
     var primaryYAxis: js.UndefOr[Any] = js.undefined
     
@@ -1001,17 +1001,17 @@ object PivotChart {
     var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to rotate the angle of pivot chart in 3D view.
-      * @Default {0}
+      * @default {0}
       */
     var rotation: js.UndefOr[Double] = js.undefined
     
     /** Allows you to set the custom name for methods at service-end, when you are communicating on AJAX post.
-      * @Default {{}}
+      * @default {{}}
       */
     var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Options to customize the size of the pivot chart control.
-      * @Default {{}}
+      * @default {{}}
       */
     var size: js.UndefOr[Any] = js.undefined
     
@@ -1020,12 +1020,12 @@ object PivotChart {
     var title: js.UndefOr[Title] = js.undefined
     
     /** Connects the service by using the specified URL for any server updates while operating the control in the server mode.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var url: js.UndefOr[String] = js.undefined
     
     /** Options for enabling the zooming feature of the pivot chart.
-      * @Default {{}}
+      * @default {{}}
       */
     var zooming: js.UndefOr[Zooming] = js.undefined
   }
@@ -1280,22 +1280,22 @@ object PivotChart {
   trait ServiceMethodSettings extends StObject {
     
     /** Allows you to set the custom name for the service method that is responsible for drilling up/down in the pivot chart.
-      * @Default {DrillChart}
+      * @default {DrillChart}
       */
     var drillDown: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for exporting the pivot chart.
-      * @Default {Export}
+      * @default {Export}
       */
     var exportPivotChart: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for initializing the pivot chart.
-      * @Default {InitializeChart}
+      * @default {InitializeChart}
       */
     var initialize: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for navigating between pages in the paged pivot chart.
-      * @Default {Paging}
+      * @default {Paging}
       */
     var paging: js.UndefOr[String] = js.undefined
   }
@@ -1352,7 +1352,7 @@ object PivotChart {
   trait Zooming extends StObject {
     
     /** Enables or disables the horizontal scrollbar.
-      * @Default {false}
+      * @default {false}
       */
     var enableScrollbar: js.UndefOr[Boolean] = js.undefined
   }

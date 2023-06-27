@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CapabilitiesMetadata extends StObject {
   
   /**
-    * Indicates whether to provide a user-defined field description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
-    */
+  		 * Indicates whether to provide a user-defined field description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#Capabilities)
+  		 */
   var supportsAdvancedFieldProperties: Boolean
 }
 object CapabilitiesMetadata {

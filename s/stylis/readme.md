@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylis
 
-Typings are for version 4.0
+Typings are for version 4.2
 
 ## Library description:
 A Light–weight CSS Preprocessor

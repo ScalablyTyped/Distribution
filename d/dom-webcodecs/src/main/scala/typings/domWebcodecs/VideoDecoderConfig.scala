@@ -14,7 +14,9 @@ trait VideoDecoderConfig extends StObject {
   
   var colorSpace: js.UndefOr[VideoColorSpaceInit] = js.undefined
   
-  var description: js.UndefOr[AllowSharedBufferSource] = js.undefined
+  var description: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+  ] = js.undefined
   
   var displayAspectHeight: js.UndefOr[Double] = js.undefined
   
@@ -48,7 +50,9 @@ object VideoDecoderConfig {
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    inline def setDescription(value: AllowSharedBufferSource): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for esbuild
 
-Typings are for version 0.17.19
+Typings are for version 0.18.6
 
 ## Library description:
 An extremely fast JavaScript and CSS bundler and minifier.

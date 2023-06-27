@@ -12,7 +12,7 @@ object sapMInstanceManagerMod extends Shortcut {
   val default: InstanceManager = js.native
   
   /**
-    * @SINCE 1.9.2
+    * @since 1.9.2
     *
     * Provides methods to manage instances. This is specifically designed for managing the opened Popover,
     * Dialog, ActionSheet, and it's possible to close all of the opened Popover, Dialog, ActionSheet in history
@@ -33,7 +33,7 @@ object sapMInstanceManagerMod extends Shortcut {
   trait InstanceManager extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds a control to predefined dialog category in instance manager.
       *
@@ -48,7 +48,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds an instance to the given category. If the instance is already added to the same category, it won't
       * be added again.
@@ -67,7 +67,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds a control to predefined lightbox category in instance manager.
       *
@@ -81,7 +81,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): this.type
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds a control to predefined popover category in instance manager.
       *
@@ -117,7 +117,7 @@ object sapMInstanceManagerMod extends Shortcut {
     def closeAllPopovers(): this.type
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns an array of managed instances in the given category.
       *
@@ -174,7 +174,7 @@ object sapMInstanceManagerMod extends Shortcut {
     def hasOpenPopover(): Boolean
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns if there's no managed instance in the given category.
       *
@@ -203,7 +203,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): Boolean
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if an instance is managed under the given category.
       *
@@ -253,7 +253,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): Boolean
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes control from predefined dialog category in instance manager.
       *
@@ -267,7 +267,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): typings.openui5.sapUiCoreControlMod.default | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes a managed instance from the given category.
       *
@@ -285,7 +285,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): js.Object | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes control from predefined lightbox category in instance manager.
       *
@@ -299,7 +299,7 @@ object sapMInstanceManagerMod extends Shortcut {
     ): typings.openui5.sapMLightBoxMod.default | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes control from predefined popover category in instance manager.
       *

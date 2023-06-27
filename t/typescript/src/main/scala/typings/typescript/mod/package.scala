@@ -443,8 +443,20 @@ inline def createModuleResolutionCache(
 inline def createModuleResolutionCache(
   currentDirectory: java.lang.String,
   getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String],
+  options: Unit,
+  packageJsonInfoCache: PackageJsonInfoCache
+): ModuleResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any])).asInstanceOf[ModuleResolutionCache]
+inline def createModuleResolutionCache(
+  currentDirectory: java.lang.String,
+  getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String],
   options: CompilerOptions
 ): ModuleResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModuleResolutionCache]
+inline def createModuleResolutionCache(
+  currentDirectory: java.lang.String,
+  getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String],
+  options: CompilerOptions,
+  packageJsonInfoCache: PackageJsonInfoCache
+): ModuleResolutionCache = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleResolutionCache")(currentDirectory.asInstanceOf[js.Any], getCanonicalFileName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], packageJsonInfoCache.asInstanceOf[js.Any])).asInstanceOf[ModuleResolutionCache]
 
 inline def createPrinter(): Printer = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")().asInstanceOf[Printer]
 inline def createPrinter(printerOptions: Unit, handlers: PrintHandlers): Printer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrinter")(printerOptions.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Printer]
@@ -1757,6 +1769,27 @@ inline def getJSDocAugmentsTag(node: Node): js.UndefOr[JSDocAugmentsTag] = ^.asI
 /** Gets the JSDoc class tag for the node if present */
 inline def getJSDocClassTag(node: Node): js.UndefOr[JSDocClassTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocClassTag")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSDocClassTag]]
 
+/**
+  * This function checks multiple locations for JSDoc comments that apply to a host node.
+  * At each location, the whole comment may apply to the node, or only a specific tag in
+  * the comment. In the first case, location adds the entire {@link JSDoc} object. In the
+  * second case, it adds the applicable {@link JSDocTag}.
+  *
+  * For example, a JSDoc comment before a parameter adds the entire {@link JSDoc}. But a
+  * `@param` tag on the parent function only adds the {@link JSDocTag} for the `@param`.
+  *
+  * ```ts
+  * / ** JSDoc will be returned for `a` *\/
+  * const a = 0
+  * / **
+  *  * Entire JSDoc will be returned for `b`
+  *  * @param c JSDocTag will be returned for `c`
+  *  *\/
+  * function b(/ ** JSDoc will be returned for `c` *\/ c) {}
+  * ```
+  */
+inline def getJSDocCommentsAndTags(hostNode: Node): js.Array[JSDoc | JSDocTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocCommentsAndTags")(hostNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[JSDoc | JSDocTag]]
+
 /** Gets the JSDoc deprecated tag for the node if present */
 inline def getJSDocDeprecatedTag(node: Node): js.UndefOr[JSDocDeprecatedTag] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSDocDeprecatedTag")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[JSDocDeprecatedTag]]
 
@@ -2415,6 +2448,8 @@ inline def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ B
 inline def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxExpression */ Boolean]
 
 inline def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxFragment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxFragment */ Boolean]
+
+inline def isJsxNamespacedName(node: Node): /* is typescript.typescript.JsxNamespacedName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxNamespacedName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxNamespacedName */ Boolean]
 
 inline def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxOpeningElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxOpeningElement */ Boolean]
 
@@ -3320,7 +3355,7 @@ inline def validateLocaleAndSetLanguage(locale: java.lang.String, sys: FileExist
 /** The version of the TypeScript compiler release */
 inline def version: java.lang.String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
-inline def versionMajorMinor: /* "5.0" */ java.lang.String = ^.asInstanceOf[js.Dynamic].selectDynamic("versionMajorMinor").asInstanceOf[/* "5.0" */ java.lang.String]
+inline def versionMajorMinor: /* "5.1" */ java.lang.String = ^.asInstanceOf[js.Dynamic].selectDynamic("versionMajorMinor").asInstanceOf[/* "5.1" */ java.lang.String]
 
 /**
   * Visits the elements of a {@link CommaListExpression}.
@@ -3797,7 +3832,7 @@ type EqualsGreaterThanToken = PunctuationToken[typings.typescript.mod.SyntaxKind
 
 type EqualsToken = PunctuationToken[typings.typescript.mod.SyntaxKind.EqualsToken]
 
-type ErrorCallback = js.Function2[/* message */ DiagnosticMessage, /* length */ Double, Unit]
+type ErrorCallback = js.Function3[/* message */ DiagnosticMessage, /* length */ Double, /* arg0 */ js.UndefOr[Any], Unit]
 
 type ExclamationToken = PunctuationToken[typings.typescript.mod.SyntaxKind.ExclamationToken]
 
@@ -3874,7 +3909,7 @@ type QuestionToken = PunctuationToken[typings.typescript.mod.SyntaxKind.Question
 
 type ReadonlyKeyword = ModifierToken[typings.typescript.mod.SyntaxKind.ReadonlyKeyword]
 
-/** ReadonlyMap where keys are `__String`s. */
+/** @deprecated Use ReadonlyMap<__String, T> instead. */
 type ReadonlyUnderscoreEscapedMap[T] = ReadonlyMap[String, T]
 
 type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
@@ -3929,7 +3964,7 @@ type String = (java.lang.String & EscapedIdentifier) | (Unit & EscapedIdentifier
 type StructuredType = ObjectType | UnionType | IntersectionType
 
 /** SymbolTable based on ES6 Map interface. */
-type SymbolTable = UnderscoreEscapedMap[Symbol]
+type SymbolTable = Map[String, Symbol]
 
 /**
   * A function that transforms a node.
@@ -3946,7 +3981,7 @@ type TypeParameter = InstantiableType
 
 type TypeVariable = TypeParameter | IndexedAccessType
 
-/** Map where keys are `__String`s. */
+/** @deprecated Use Map<__String, T> instead. */
 type UnderscoreEscapedMap[T] = Map[String, T]
 
 type UnionType = UnionOrIntersectionType

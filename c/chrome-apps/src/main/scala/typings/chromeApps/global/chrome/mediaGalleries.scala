@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since Chrome 24.
   * @requires Permissions: {'mediaGalleries': ['accessType1' | 'accessType2', ...]}
   *                        {'mediaGalleries': ['accessType1' | 'accessType2', ..., 'allAutoDetected']}
-  * @see[More information]{@link https://developer.chrome.com/apps/mediaGalleries}
+  * @see https://developer.chrome.com/apps/mediaGalleries
   */
 object mediaGalleries {
   

@@ -1,6 +1,9 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.boolean_
+import typings.microsoftGraph.microsoftGraphStrings.dateTime_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import typings.microsoftGraph.microsoftGraphStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.multichoice
   - typings.microsoftGraph.microsoftGraphStrings.number
   - typings.microsoftGraph.microsoftGraphStrings.currency
-  - typings.microsoftGraph.microsoftGraphStrings.dateTime
+  - typings.microsoftGraph.microsoftGraphStrings.dateTime_
   - typings.microsoftGraph.microsoftGraphStrings.lookup
-  - typings.microsoftGraph.microsoftGraphStrings.boolean
+  - typings.microsoftGraph.microsoftGraphStrings.boolean_
   - typings.microsoftGraph.microsoftGraphStrings.user
-  - typings.microsoftGraph.microsoftGraphStrings.url
+  - typings.microsoftGraph.microsoftGraphStrings.url_
   - typings.microsoftGraph.microsoftGraphStrings.calculated
   - typings.microsoftGraph.microsoftGraphStrings.location
   - typings.microsoftGraph.microsoftGraphStrings.geolocation
@@ -31,7 +34,7 @@ object ColumnTypes {
   
   inline def approvalStatus: typings.microsoftGraph.microsoftGraphStrings.approvalStatus = "approvalStatus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approvalStatus]
   
-  inline def boolean: typings.microsoftGraph.microsoftGraphStrings.boolean = "boolean".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.boolean]
+  inline def boolean: boolean_ = "boolean".asInstanceOf[boolean_]
   
   inline def calculated: typings.microsoftGraph.microsoftGraphStrings.calculated = "calculated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.calculated]
   
@@ -39,7 +42,7 @@ object ColumnTypes {
   
   inline def currency: typings.microsoftGraph.microsoftGraphStrings.currency = "currency".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.currency]
   
-  inline def dateTime: typings.microsoftGraph.microsoftGraphStrings.dateTime = "dateTime".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dateTime]
+  inline def dateTime: dateTime_ = "dateTime".asInstanceOf[dateTime_]
   
   inline def geolocation: typings.microsoftGraph.microsoftGraphStrings.geolocation = "geolocation".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.geolocation]
   
@@ -63,7 +66,7 @@ object ColumnTypes {
   
   inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
-  inline def url: typings.microsoftGraph.microsoftGraphStrings.url = "url".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.url]
+  inline def url: url_ = "url".asInstanceOf[url_]
   
   inline def user: typings.microsoftGraph.microsoftGraphStrings.user = "user".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.user]
 }

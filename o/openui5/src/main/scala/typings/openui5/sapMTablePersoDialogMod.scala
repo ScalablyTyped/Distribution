@@ -18,12 +18,12 @@ object sapMTablePersoDialogMod {
     * The TablePersoDialog can be used to display and allow modification of personalization settings relating
     * to a Table. It displays the columns of the table that it refers to by using
     * 	 - The result of calling sap.m.TablePersoProvider's 'getCaption' callback if it is implemented and delivers
-    * 			a non-null value for a column
+    *     a non-null value for a column
     * 	 - the column header control's 'text' property if no caption property is available
     * 	 - the column header control's 'title' property if neither 'text' nor 'caption' property are available
     *
     * 	 - the column id is displayed as last fallback, if none of the above is at hand. In that case, a warning
-    * 			is logged.
+    *     is logged.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
@@ -146,13 +146,13 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoDialog` itself
       */
@@ -175,7 +175,7 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -186,7 +186,7 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoDialog` itself
       */
@@ -205,13 +205,13 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoDialog` itself
       */
@@ -234,7 +234,7 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
@@ -245,7 +245,7 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TablePersoDialog` itself
       */
@@ -273,13 +273,13 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -297,13 +297,13 @@ object sapMTablePersoDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachConfirm(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -311,7 +311,7 @@ object sapMTablePersoDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -324,7 +324,7 @@ object sapMTablePersoDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
@@ -409,7 +409,7 @@ object sapMTablePersoDialogMod {
     def getShowSelectAll(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Initializes the TablePersoDialog instance after creation.
       */
@@ -555,17 +555,33 @@ object sapMTablePersoDialogMod {
     bShowSelectAll: Boolean): this.type = js.native
   }
   
+  trait TablePersoDialog$CancelEventParameters extends StObject
+  
+  trait TablePersoDialog$ConfirmEventParameters extends StObject
+  
+  type TablePersoDialogCancelEvent = typings.openui5.sapUiBaseEventMod.default[TablePersoDialog$CancelEventParameters]
+  
+  type TablePersoDialogCancelEventParameters = TablePersoDialog$CancelEventParameters
+  
+  type TablePersoDialogConfirmEvent = typings.openui5.sapUiBaseEventMod.default[TablePersoDialog$ConfirmEventParameters]
+  
+  type TablePersoDialogConfirmEventParameters = TablePersoDialog$ConfirmEventParameters
+  
   trait TablePersoDialogSettings
     extends StObject
        with ManagedObjectSettings {
     
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     var columnInfoCallback: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
-    var confirm: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var confirm: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     var contentHeight: js.UndefOr[
         CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -618,7 +634,7 @@ object sapMTablePersoDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TablePersoDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
@@ -626,7 +642,7 @@ object sapMTablePersoDialogMod {
       
       inline def setColumnInfoCallbackUndefined: Self = StObject.set(x, "columnInfoCallback", js.undefined)
       
-      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
       
       inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
       

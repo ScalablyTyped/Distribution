@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Data")
 @js.native
-open class Data ()
+/**
+  * _Raw data representation._
+  * @see https://docs.scriptable.app/data
+  */
+/* private */ open class Data ()
   extends StObject
      with typings.scriptableIos.Data {
   

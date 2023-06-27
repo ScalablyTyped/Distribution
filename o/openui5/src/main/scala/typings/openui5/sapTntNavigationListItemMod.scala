@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Item
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -148,13 +147,13 @@ object sapTntNavigationListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.tnt.NavigationListItem` itself
       */
@@ -179,7 +178,7 @@ object sapTntNavigationListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -190,7 +189,7 @@ object sapTntNavigationListItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.tnt.NavigationListItem` itself
       */
@@ -215,13 +214,13 @@ object sapTntNavigationListItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationListItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -229,17 +228,19 @@ object sapTntNavigationListItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Item): this.type = js.native
+    mParameters: NavigationListItemSelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getExpanded expanded}.
@@ -305,7 +306,7 @@ object sapTntNavigationListItemMod {
     def getTarget(): String = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getVisible visible}.
       *
@@ -460,7 +461,7 @@ object sapTntNavigationListItemMod {
     sTarget: String): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getVisible visible}.
       *
@@ -477,6 +478,31 @@ object sapTntNavigationListItemMod {
       * New value for property `visible`
       */
     bVisible: Boolean): this.type = js.native
+  }
+  
+  type NavigationListItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[NavigationListItemSelectEventParameters]
+  
+  trait NavigationListItemSelectEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var item: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object NavigationListItemSelectEventParameters {
+    
+    inline def apply(): NavigationListItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavigationListItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationListItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
   }
   
   trait NavigationListItemSettings
@@ -518,7 +544,12 @@ object sapTntNavigationListItemMod {
     /**
       * Fired when this item is selected.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavigationListItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies the browsing context where the linked content will open.
@@ -530,7 +561,7 @@ object sapTntNavigationListItemMod {
     var target: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Specifies if the item should be shown.
       */
@@ -572,7 +603,9 @@ object sapTntNavigationListItemMod {
       
       inline def setItemsVarargs(value: NavigationListItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavigationListItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

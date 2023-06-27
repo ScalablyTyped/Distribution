@@ -19,5 +19,5 @@ object typesHelperMod {
     */
   type DistributiveOmit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
   
-  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any */] = LibraryManagedAttributes[C, ComponentProps[C]]
+  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any */] = LibraryManagedAttributes[C, ComponentProps[C]]
 }

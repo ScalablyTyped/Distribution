@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapTimeSlider extends StObject {
   
   /**
-    * The current time extent of the time slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * The current time extent of the time slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var currentTimeExtent: TimeExtent
   
   /**
-    * The temporal extent for the entire slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * The temporal extent for the entire slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var fullTimeExtent: TimeExtent
   
   /**
-    * When `true`, the time slider will play its animation in a loop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * When `true`, the time slider will play its animation in a loop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var loop: Boolean
   
   /**
-    * The number of stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * The number of stops.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var numStops: Double
   
   /**
-    * The thumb count.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * The thumb count.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var numThumbs: Double
   
   /**
-    * The time rate in milliseconds between animation steps.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * The time rate in milliseconds between animation steps.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var stopDelay: Double
   
   /**
-    * Defines regularly spaced stops on the time slider from a [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html) object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * Defines regularly spaced stops on the time slider from a [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html) object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var stopInterval: TimeInterval
   
   /**
-    * An array of dates for the time slider widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
-    */
+  		 * An array of dates for the time slider widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#TimeSlider)
+  		 */
   var stops: js.Array[js.Date]
 }
 object WebMapTimeSlider {

@@ -12,6 +12,7 @@ open class AuthenticatorResponse ()
   extends StObject
      with typings.std.AuthenticatorResponse {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse/clientDataJSON) */
   /* standard dom */
   /* CompleteClass */
   override val clientDataJSON: js.typedarray.ArrayBuffer = js.native

@@ -49,6 +49,9 @@ trait Grid
   
   var content: JQuery = js.native
   
+  def copySelectionToClipboard(): Unit = js.native
+  def copySelectionToClipboard(includeHeaders: Boolean): Unit = js.native
+  
   def current(): JQuery = js.native
   def current(cell: JQuery): Unit = js.native
   

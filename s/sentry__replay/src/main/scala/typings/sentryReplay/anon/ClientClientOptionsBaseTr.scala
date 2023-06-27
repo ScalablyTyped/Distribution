@@ -2,6 +2,8 @@ package typings.sentryReplay.anon
 
 import typings.sentryReplay.sentryReplayStrings.finishTransaction
 import typings.sentryReplay.sentryReplayStrings.startTransaction
+import typings.sentryTypes.typesCheckinMod.CheckIn
+import typings.sentryTypes.typesCheckinMod.MonitorConfig
 import typings.sentryTypes.typesClientreportMod.EventDropReason
 import typings.sentryTypes.typesDatacategoryMod.DataCategory
 import typings.sentryTypes.typesDsnMod.DsnComponents
@@ -40,6 +42,18 @@ trait ClientClientOptionsBaseTr extends StObject {
     * TODO (v8): Make this a required method.
     * */
   var addIntegration: js.UndefOr[js.Function1[/* integration */ Integration, Unit]] = js.native
+  
+  /**
+    * Create a cron monitor check in and send it to Sentry. This method is not available on all clients.
+    *
+    * @param checkIn An object that describes a check in.
+    * @param upsertMonitorConfig An optional object that describes a monitor config. Use this if you want
+    * to create a monitor automatically when sending a check in.
+    * @returns A string representing the id of the check in.
+    */
+  var captureCheckIn: js.UndefOr[
+    js.Function2[/* checkIn */ CheckIn, /* monitorConfig */ js.UndefOr[MonitorConfig], String]
+  ] = js.native
   
   /**
     * Captures a manually created event and sends it to Sentry.

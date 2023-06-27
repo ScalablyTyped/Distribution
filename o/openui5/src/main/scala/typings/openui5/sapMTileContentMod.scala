@@ -175,7 +175,7 @@ object sapMTileContentMod {
     def getFooter(): String = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getFooterColor footerColor}.
       *
@@ -199,7 +199,7 @@ object sapMTileContentMod {
     def getFrameType(): FrameType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FrameType * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Gets current value of property {@link #getPriority priority}.
       *
@@ -212,7 +212,7 @@ object sapMTileContentMod {
     def getPriority(): Priority | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.103)
+      * @experimental (since 1.103)
       *
       * Gets current value of property {@link #getPriorityText priorityText}.
       *
@@ -238,7 +238,7 @@ object sapMTileContentMod {
     def getSize(): Size | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Size * / any */ String) = js.native
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * Gets current value of property {@link #getState state}.
       *
@@ -302,7 +302,7 @@ object sapMTileContentMod {
     sFooter: String): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getFooterColor footerColor}.
       *
@@ -350,7 +350,7 @@ object sapMTileContentMod {
     sFrameType: FrameType): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Sets a new value for property {@link #getPriority priority}.
       *
@@ -375,7 +375,7 @@ object sapMTileContentMod {
     sPriority: Priority): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.103)
+      * @experimental (since 1.103)
       *
       * Sets a new value for property {@link #getPriorityText priorityText}.
       *
@@ -392,7 +392,7 @@ object sapMTileContentMod {
     sPriorityText: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Setter for protected property to enable or disable content rendering. This function does not invalidate
       * the control.
@@ -405,7 +405,7 @@ object sapMTileContentMod {
     value: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Setter for protected property to enable or disable footer rendering. This function does not invalidate
       * the control.
@@ -445,7 +445,7 @@ object sapMTileContentMod {
     sSize: Size): this.type = js.native
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * Sets a new value for property {@link #getState state}.
       *
@@ -514,7 +514,7 @@ object sapMTileContentMod {
     var footer: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * The semantic color of the footer.
       */
@@ -530,7 +530,7 @@ object sapMTileContentMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.96)
+      * @experimental (since 1.96)
       *
       * Adds a priority badge before the content. Works only in Generic Tile ActionMode.
       */
@@ -539,7 +539,7 @@ object sapMTileContentMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.103)
+      * @experimental (since 1.103)
       *
       * Sets the Text inside the Priority badge in Generic Tile ActionMode.
       */
@@ -557,7 +557,7 @@ object sapMTileContentMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.100.0
+      * @since 1.100.0
       *
       * The load status.
       */

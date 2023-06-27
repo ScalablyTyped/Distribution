@@ -93,7 +93,7 @@ open class spreadsheet ()
   
   def getRow(id: String): obj = js.native
   
-  def getSelectedId(asArray: Boolean): obj | js.Array[Any] = js.native
+  def getSelectedId(asArray: Boolean): Any = js.native
   
   def getSelectedRange(): String = js.native
   
@@ -122,8 +122,10 @@ open class spreadsheet ()
   def innerId(id: String): Double | String = js.native
   def innerId(id: Double): Double | String = js.native
   
+  def insertColumn(columnId: js.Array[Any]): Unit = js.native
   def insertColumn(columnId: Double): Unit = js.native
   
+  def insertRow(rowId: js.Array[Any]): Unit = js.native
   def insertRow(rowId: Double): Unit = js.native
   
   def isCellLocked(rowId: Double, columnId: Double): Boolean = js.native
@@ -161,8 +163,8 @@ open class spreadsheet ()
   def parse(data: obj, `type`: String, clear: Boolean): Unit = js.native
   def parse(data: obj, `type`: Unit, clear: Boolean): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   var ranges: obj = js.native
   

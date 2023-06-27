@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lingui/react" : "4.0.0"
+      "@lingui/react" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@lingui/react" : "4.0.0"
+      "@lingui/react" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

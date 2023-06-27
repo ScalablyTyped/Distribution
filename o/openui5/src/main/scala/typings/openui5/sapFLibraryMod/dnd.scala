@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dnd {
   
   /**
-    * @SINCE 1.68
+    * @since 1.68
     *
     * Interface that should be implemented by grid controls, if they are working with the `sap.f.dnd.GridDropInfo`.
     *

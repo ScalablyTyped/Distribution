@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/redux-routine" : "4.33.0"
+      "@wordpress/redux-routine" : "4.35.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/redux-routine" : "4.33.0"
+      "@wordpress/redux-routine" : "4.35.0"
     }
   ],
   "compile-devDependencies" : [

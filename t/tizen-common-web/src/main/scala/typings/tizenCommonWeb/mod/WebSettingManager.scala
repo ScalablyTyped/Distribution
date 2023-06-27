@@ -20,7 +20,7 @@ trait WebSettingManager extends StObject {
     * @param successCallback To be invoked if the requested delete operation succeeds.
     * @param errorCallback To be invoked if the requested delete operation fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     *
     * @warning http://tizen.org/privilege/websetting(public level privilege) **MUST NOT** be declared to use this API since 2.4.
     */
@@ -46,7 +46,7 @@ trait WebSettingManager extends StObject {
     * @param successCallback To be invoked if the requested setting operation succeeds.
     * @param errorCallback To be invoked if the requested setting operation fails.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def setUserAgentString(userAgent: String): Unit = js.native
   def setUserAgentString(userAgent: String, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native

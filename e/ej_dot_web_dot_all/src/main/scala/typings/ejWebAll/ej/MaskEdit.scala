@@ -398,12 +398,12 @@ object MaskEdit {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the cssClass to achieve custom theme.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specify the custom character allowed to entered in mask edit textbox control.
-      * @Default {null}
+      * @default {null}
       */
     var customCharacter: js.UndefOr[String] = js.undefined
     
@@ -416,7 +416,7 @@ object MaskEdit {
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the state of the mask edit textbox control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -429,22 +429,22 @@ object MaskEdit {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Specifies the height for the mask edit textbox control.
-      * @Default {28 px}
+      * @default {28 px}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies whether hide the prompt characters with spaces on blur. Prompt chars will be shown again on focus the textbox.
-      * @Default {false}
+      * @default {false}
       */
     var hidePromptOnLeave: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to mask edit textbox.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specify the inputMode for mask edit textbox control. See InputMode
-      * @Default {ej.InputMode.Text}
+      * @default {ej.InputMode.Text}
       */
     var inputMode: js.UndefOr[InputMode | String] = js.undefined
     
@@ -457,12 +457,12 @@ object MaskEdit {
     var keyUp: js.UndefOr[js.Function1[/* e */ KeyUpEventArgs, Unit]] = js.undefined
     
     /** Defines the localization culture for MaskEdit.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the input mask.
-      * @Default {null}
+      * @default {null}
       */
     var maskFormat: js.UndefOr[String] = js.undefined
     
@@ -475,7 +475,7 @@ object MaskEdit {
     var mouseOver: js.UndefOr[js.Function1[/* e */ MouseOverEventArgs, Unit]] = js.undefined
     
     /** Specifies the name attribute value for the mask edit textbox.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
@@ -484,52 +484,52 @@ object MaskEdit {
     var onKeyDown: js.UndefOr[js.Function1[/* e */ OnKeyDownEventArgs, Unit]] = js.undefined
     
     /** Toggles the readonly state of the mask edit textbox. When the mask edit textbox is readonly, it doesn't allow your input.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the error will show until correct value entered in the mask edit textbox control.
-      * @Default {false}
+      * @default {false}
       */
     var showError: js.UndefOr[Boolean] = js.undefined
     
     /** when showPromptChar is true, the hide the prompt characters are shown in focus of the control and hides in focus out of the control.
-      * @Default {true}
+      * @default {true}
       */
     var showPromptChar: js.UndefOr[Boolean] = js.undefined
     
     /** MaskEdit input is displayed in rounded corner style when this property is set to true.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the text alignment for mask edit textbox control.See TextAlign
-      * @Default {left}
+      * @default {left}
       */
     var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Sets the jQuery validation error message in mask edit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules to the MaskEdit. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value for the mask edit textbox control.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
-      * @Default {null}
+      * @default {null}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Specifies the width for the mask edit textbox control.
-      * @Default {143pixel}
+      * @default {143pixel}
       */
     var width: js.UndefOr[String] = js.undefined
   }

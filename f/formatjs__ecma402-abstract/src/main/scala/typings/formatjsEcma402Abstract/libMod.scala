@@ -294,7 +294,7 @@ object libMod {
   
   inline def MinFromTime(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("MinFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def MonthFromTime(t: Double): typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1` | `4` | `7` | `2` | `3` | `5` | `6` | `8` | `9` | `10` | `11` = ^.asInstanceOf[js.Dynamic].applyDynamic("MonthFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1` | `4` | `7` | `2` | `3` | `5` | `6` | `8` | `9` | `10` | `11`]
+  inline def MonthFromTime(t: Double): typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1` | `2` | `3` | `4` | `8` | `5` | `6` | `10` | `7` | `9` | `11` = ^.asInstanceOf[js.Dynamic].applyDynamic("MonthFromTime")(t.asInstanceOf[js.Any]).asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0` | `1` | `2` | `3` | `4` | `8` | `5` | `6` | `10` | `7` | `9` | `11`]
   
   inline def OrdinaryHasInstance(C: js.Object, O: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def OrdinaryHasInstance(C: js.Object, O: Any, internalSlots: BoundTargetFunction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("OrdinaryHasInstance")(C.asInstanceOf[js.Any], O.asInstanceOf[js.Any], internalSlots.asInstanceOf[js.Any])).asInstanceOf[Boolean]

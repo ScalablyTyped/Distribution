@@ -1,5 +1,7 @@
 package typings.yaml.anon
 
+import typings.yaml.distDocDocumentMod.Document
+import typings.yaml.distOptionsMod.ToJSOptions
 import typings.yaml.distParseCstMod.Token
 import typings.yaml.distSchemaSchemaMod.Schema
 import typings.yaml.distStringifyStringifyMod.StringifyContext
@@ -59,6 +61,9 @@ trait ReadonlyCollection extends StObject {
   val srcToken: js.UndefOr[Token] = js.native
   
   val tag: js.UndefOr[String] = js.native
+  
+  def toJS(doc: Document[typings.yaml.distNodesNodeMod.Node[Any], Boolean]): Any = js.native
+  def toJS(doc: Document[typings.yaml.distNodesNodeMod.Node[Any], Boolean], param1: ToJSOptions): Any = js.native
   
   def toJSON(): Any = js.native
   

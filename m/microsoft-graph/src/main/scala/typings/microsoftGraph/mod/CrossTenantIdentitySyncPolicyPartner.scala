@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CrossTenantIdentitySyncPolicyPartner extends StObject {
   
+  /**
+    * Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD (Azure Active
+    * Directory) tenant to easily identify the policy. Optional.
+    */
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Tenant identifier for the partner Azure AD organization. Read-only.
   var tenantId: js.UndefOr[String] = js.undefined
   
+  // Defines whether users can be synchronized from the partner tenant. Key.
   var userSyncInbound: js.UndefOr[NullableOption[CrossTenantUserSyncInbound]] = js.undefined
 }
 object CrossTenantIdentitySyncPolicyPartner {

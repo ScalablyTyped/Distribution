@@ -18,19 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateContinuousRendererParamsSymbolOptions extends StObject {
   
   /**
-    * Sets above and below symbols based on pre-defined named symbol pairs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * Sets above and below symbols based on pre-defined named symbol pairs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var symbolStyle: js.UndefOr[
     caret | `circle-caret` | arrow | `circle-arrow` | `plus-minus` | `circle-plus-minus` | square_ | circle | triangle_ | `happy-sad` | thumb
   ] = js.undefined
   
   /**
-    * Allows you to specify custom symbols in the `above-and-below` theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * Allows you to specify custom symbols in the `above-and-below` theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var symbols: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols] = js.undefined
 }
 object univariateColorSizeCreateContinuousRendererParamsSymbolOptions {

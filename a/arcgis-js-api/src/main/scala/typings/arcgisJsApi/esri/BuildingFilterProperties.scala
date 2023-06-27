@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingFilterProperties extends StObject {
   
   /**
-    * Description of the filter for display in UIs, for example when the filter is edited in ArcGIS Pro.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#description)
-    */
+  		 * Description of the filter for display in UIs, for example when the filter is edited in ArcGIS Pro.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Filter blocks define which features should be visible in the affected [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) and how the filtered features are drawn.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
-    */
+  		 * Filter blocks define which features should be visible in the affected [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) and how the filtered features are drawn.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#filterBlocks)
+  		 */
   var filterBlocks: js.UndefOr[CollectionProperties[BuildingFilterBlock]] = js.undefined
   
   /**
-    * Name of the filter for display in UIs, for example when the filter is edited in ArcGIS Pro.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#name)
-    */
+  		 * Name of the filter for display in UIs, for example when the filter is edited in ArcGIS Pro.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
 }
 object BuildingFilterProperties {

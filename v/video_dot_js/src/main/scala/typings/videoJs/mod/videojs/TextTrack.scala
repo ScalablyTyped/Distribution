@@ -64,7 +64,7 @@ trait TextTrack
   def addCue(cue: TextTrackCue): Unit = js.native
   
   /**
-    * @The text track cue list for this TextTrack.
+    * The text track cue list for this TextTrack.
     */
   var cues: TextTrackCueList = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Protection extends StObject {
   
-  var _links: Html
+  var _links: Self
   
   var commit: AuthorCommentsurl
   
@@ -28,7 +28,7 @@ trait Protection extends StObject {
 object Protection {
   
   inline def apply(
-    _links: Html,
+    _links: Self,
     commit: AuthorCommentsurl,
     name: String,
     `protected`: Boolean,
@@ -61,6 +61,6 @@ object Protection {
     
     inline def setRequired_approving_review_countUndefined: Self = StObject.set(x, "required_approving_review_count", js.undefined)
     
-    inline def set_links(value: Html): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: typings.octokitOpenapiTypes.anon.Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

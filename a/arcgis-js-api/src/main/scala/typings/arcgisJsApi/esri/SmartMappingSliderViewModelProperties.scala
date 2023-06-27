@@ -9,17 +9,17 @@ trait SmartMappingSliderViewModelProperties
      with SliderViewModelProperties {
   
   /**
-    * Zooms the slider track to the bounds provided in this property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#zoomOptions)
-    */
+  		 * Zooms the slider track to the bounds provided in this property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#zoomOptions)
+  		 */
   var zoomOptions: js.UndefOr[SmartMappingSliderViewModelZoomOptions] = js.undefined
   
   /**
-    * Enables zooming on the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#zoomingEnabled)
-    */
+  		 * Enables zooming on the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html#zoomingEnabled)
+  		 */
   var zoomingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SmartMappingSliderViewModelProperties {

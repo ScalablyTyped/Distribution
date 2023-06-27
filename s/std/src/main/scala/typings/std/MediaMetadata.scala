@@ -4,17 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata) */
 trait MediaMetadata extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/album) */
   /* standard dom */
   var album: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artist) */
   /* standard dom */
   var artist: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artwork) */
   /* standard dom */
   var artwork: js.Array[MediaImage]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/title) */
   /* standard dom */
   var title: java.lang.String
 }

@@ -7,21 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content383 extends StObject {
   
   /**
-    * List GPG keys for the authenticated user
-    * @description Lists the current user's GPG keys. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    * Get a repository README
+    * @description Gets the preferred README for a repository.
+    *
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   var get: Responses200Content383
-  
-  /**
-    * Create a GPG key for the authenticated user
-    * @description Adds a GPG key to the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth, or OAuth with at least `write:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
-    */
-  var post: RequestBodyContentApplicationjsonArmoredpublickey
 }
 object GetResponses200Content383 {
   
-  inline def apply(get: Responses200Content383, post: RequestBodyContentApplicationjsonArmoredpublickey): GetResponses200Content383 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content383): GetResponses200Content383 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content383]
   }
   
@@ -29,7 +25,5 @@ object GetResponses200Content383 {
   implicit open class MutableBuilder[Self <: GetResponses200Content383] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content383): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPost(value: RequestBodyContentApplicationjsonArmoredpublickey): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

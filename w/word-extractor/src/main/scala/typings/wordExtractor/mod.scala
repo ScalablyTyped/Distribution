@@ -22,7 +22,7 @@ object mod {
     
     def getBody(): String = js.native
     
-    def getEndNotes(): String = js.native
+    def getEndnotes(): String = js.native
     
     def getFooters(): String = js.native
     

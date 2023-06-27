@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataModelIdentifierInfoIdentifierMappingInfoUniformPropertyIdentifier extends StObject {
   
   /**
-    * The name of the unique identifier property for all records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
-    */
+  		 * The name of the unique identifier property for all records.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-DataModel.html#identifierInfo)
+  		 */
   var identifierPropertyName: String
 }
 object DataModelIdentifierInfoIdentifierMappingInfoUniformPropertyIdentifier {

@@ -9,19 +9,19 @@ trait ElevationProfileLineQuerySource extends StObject {
   def queryElevation(geometry: Multipoint): js.Promise[ElevationLayerElevationQueryResult]
   def queryElevation(geometry: Multipoint, options: Any): js.Promise[ElevationLayerElevationQueryResult]
   /**
-    * Function used to query elevation values for a geometry ([Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) or [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html)).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineQuery.html#source)
-    */
+  		 * Function used to query elevation values for a geometry ([Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) or [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html)).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineQuery.html#source)
+  		 */
   def queryElevation(geometry: Point): js.Promise[ElevationLayerElevationQueryResult]
   def queryElevation(geometry: Point, options: Any): js.Promise[ElevationLayerElevationQueryResult]
   def queryElevation(geometry: Polyline): js.Promise[ElevationLayerElevationQueryResult]
   def queryElevation(geometry: Polyline, options: Any): js.Promise[ElevationLayerElevationQueryResult]
   /**
-    * Function used to query elevation values for a geometry ([Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) or [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html)).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineQuery.html#source)
-    */
+  		 * Function used to query elevation values for a geometry ([Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html), [Multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) or [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html)).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineQuery.html#source)
+  		 */
   @JSName("queryElevation")
   var queryElevation_Original: QueryElevation
 }

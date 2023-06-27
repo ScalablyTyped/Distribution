@@ -14,56 +14,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshMaterialProperties extends StObject {
   
   /**
-    * Specifies how transparency on the object is handled.
-    *
-    * @default 0.5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
-    */
+  		 * Specifies how transparency on the object is handled.
+  		 *
+  		 * @default 0.5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaCutoff)
+  		 */
   var alphaCutoff: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies how transparency on the object is handled.
-    *
-    * @default "auto"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
-    */
+  		 * Specifies how transparency on the object is handled.
+  		 *
+  		 * @default "auto"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#alphaMode)
+  		 */
   var alphaMode: js.UndefOr[auto | blend | opaque | mask] = js.undefined
   
   /**
-    * Specifies a single, uniform color for the mesh component.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#color)
-    */
+  		 * Specifies a single, uniform color for the mesh component.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Specifies a texture from which to get color information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#colorTexture)
-    */
+  		 * Specifies a texture from which to get color information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#colorTexture)
+  		 */
   var colorTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
   ] = js.undefined
   
   /**
-    * Specifies whether both sides of each triangle are displayed, or only the front sides.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
-    */
+  		 * A transformation of UV mesh coordinates used to sample the color texture.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#colorTextureTransform)
+  		 */
+  var colorTextureTransform: js.UndefOr[MeshTextureTransformProperties] = js.undefined
+  
+  /**
+  		 * Specifies whether both sides of each triangle are displayed, or only the front sides.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#doubleSided)
+  		 */
   var doubleSided: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies a texture from which to get normal information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture)
-    */
+  		 * Specifies a texture from which to get normal information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTexture)
+  		 */
   var normalTexture: js.UndefOr[
     MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String
   ] = js.undefined
+  
+  /**
+  		 * A transformation of UV mesh coordinates used to sample the normal texture.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterial.html#normalTextureTransform)
+  		 */
+  var normalTextureTransform: js.UndefOr[MeshTextureTransformProperties] = js.undefined
 }
 object MeshMaterialProperties {
   
@@ -87,6 +105,10 @@ object MeshMaterialProperties {
     
     inline def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
     
+    inline def setColorTextureTransform(value: MeshTextureTransformProperties): Self = StObject.set(x, "colorTextureTransform", value.asInstanceOf[js.Any])
+    
+    inline def setColorTextureTransformUndefined: Self = StObject.set(x, "colorTextureTransform", js.undefined)
+    
     inline def setColorTextureUndefined: Self = StObject.set(x, "colorTexture", js.undefined)
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -98,6 +120,10 @@ object MeshMaterialProperties {
     inline def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
     
     inline def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "normalTexture", value.asInstanceOf[js.Any])
+    
+    inline def setNormalTextureTransform(value: MeshTextureTransformProperties): Self = StObject.set(x, "normalTextureTransform", value.asInstanceOf[js.Any])
+    
+    inline def setNormalTextureTransformUndefined: Self = StObject.set(x, "normalTextureTransform", js.undefined)
     
     inline def setNormalTextureUndefined: Self = StObject.set(x, "normalTexture", js.undefined)
   }

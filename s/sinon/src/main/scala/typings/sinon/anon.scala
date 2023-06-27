@@ -128,7 +128,7 @@ object anon {
     
     var concat: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (items : ...std.ConcatArray<any>): std.Array<any> extends object ? sinon.sinon.MatchExactArguments<(items : ...std.ConcatArray<any>): std.Array<any>> : (items : ...std.ConcatArray<any>): std.Array<any> */ js.Any)
     
-    var copyWithin: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number, start : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number, start : number): this> : (target : number, start : number): this */ js.Any)
+    var copyWithin: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number): this> : (target : number): this */ js.Any)
     
     var entries: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (): std.IterableIterator<[number, any]> extends object ? sinon.sinon.MatchExactArguments<(): std.IterableIterator<[number, any]>> : (): std.IterableIterator<[number, any]> */ js.Any)
     
@@ -201,7 +201,7 @@ object anon {
     inline def apply(
       at: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (index : number): any | undefined extends object ? sinon.sinon.MatchExactArguments<(index : number): any | undefined> : (index : number): any | undefined */ js.Any),
       concat: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (items : ...std.ConcatArray<any>): std.Array<any> extends object ? sinon.sinon.MatchExactArguments<(items : ...std.ConcatArray<any>): std.Array<any>> : (items : ...std.ConcatArray<any>): std.Array<any> */ js.Any),
-      copyWithin: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number, start : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number, start : number): this> : (target : number, start : number): this */ js.Any),
+      copyWithin: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number): this> : (target : number): this */ js.Any),
       entries: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (): std.IterableIterator<[number, any]> extends object ? sinon.sinon.MatchExactArguments<(): std.IterableIterator<[number, any]>> : (): std.IterableIterator<[number, any]> */ js.Any),
       every: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): this is std.Array<S> extends object ? sinon.sinon.MatchExactArguments<<S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): this is std.Array<S>> : <S extends any>(predicate : (value : any, index : number, array : std.Array<any>): value is S): this is std.Array<S> */ js.Any),
       fill: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (value : any): this extends object ? sinon.sinon.MatchExactArguments<(value : any): this> : (value : any): this */ js.Any),
@@ -252,7 +252,7 @@ object anon {
       ): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
       inline def setCopyWithin(
-        value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number, start : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number, start : number): this> : (target : number, start : number): this */ js.Any)
+        value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number): this extends object ? sinon.sinon.MatchExactArguments<(target : number): this> : (target : number): this */ js.Any)
       ): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
       
       inline def setEntries(
@@ -397,7 +397,7 @@ object anon {
       ] = js.undefined
     
     var copyWithin: js.UndefOr[
-        SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number, start : number): this extends object ? sinon.sinon.MatchPartialArguments<(target : number, start : number): this> : (target : number, start : number): this */ js.Any)
+        SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number): this extends object ? sinon.sinon.MatchPartialArguments<(target : number): this> : (target : number): this */ js.Any)
       ] = js.undefined
     
     var entries: js.UndefOr[
@@ -553,7 +553,7 @@ object anon {
       inline def setConcatUndefined: Self = StObject.set(x, "concat", js.undefined)
       
       inline def setCopyWithin(
-        value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number, start : number): this extends object ? sinon.sinon.MatchPartialArguments<(target : number, start : number): this> : (target : number, start : number): this */ js.Any)
+        value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (target : number): this extends object ? sinon.sinon.MatchPartialArguments<(target : number): this> : (target : number): this */ js.Any)
       ): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
       
       inline def setCopyWithinUndefined: Self = StObject.set(x, "copyWithin", js.undefined)

@@ -5,7 +5,7 @@ import typings.fundamentalReact.anon.PartialCounterProps
 import typings.fundamentalReact.anon.WeakValidationMapCounterP
 import typings.fundamentalReact.fundamentalReactStrings.Counter
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
@@ -17,8 +17,8 @@ object libCounterCounterMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Counter/Counter.CounterProps> & {  displayName :'Counter'} */
   object default {
     
-    inline def apply(props: CounterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: CounterProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: CounterProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: CounterProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Counter/Counter", JSImport.Default)
     @js.native

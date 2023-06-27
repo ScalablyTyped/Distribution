@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipld__dag-pb
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
 JS implementation of DAG-PB

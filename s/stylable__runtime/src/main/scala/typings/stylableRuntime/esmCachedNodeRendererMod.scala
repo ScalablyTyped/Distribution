@@ -183,6 +183,7 @@ import typings.stylableRuntime.stylableRuntimeStrings.ruby
 import typings.stylableRuntime.stylableRuntimeStrings.s
 import typings.stylableRuntime.stylableRuntimeStrings.samp
 import typings.stylableRuntime.stylableRuntimeStrings.script
+import typings.stylableRuntime.stylableRuntimeStrings.search
 import typings.stylableRuntime.stylableRuntimeStrings.section
 import typings.stylableRuntime.stylableRuntimeStrings.select
 import typings.stylableRuntime.stylableRuntimeStrings.slot
@@ -670,6 +671,10 @@ object esmCachedNodeRendererMod {
     def createElement_script(tagName: script): HTMLScriptElement
     @JSName("createElement")
     def createElement_script(tagName: script, options: ElementCreationOptions): HTMLScriptElement
+    @JSName("createElement")
+    def createElement_search(tagName: search): HTMLElement
+    @JSName("createElement")
+    def createElement_search(tagName: search, options: ElementCreationOptions): HTMLElement
     @JSName("createElement")
     def createElement_section(tagName: section): HTMLElement
     @JSName("createElement")

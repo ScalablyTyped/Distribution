@@ -14,5 +14,7 @@ object devLibHardBreakEscapeMod {
   
   type State = typings.micromarkUtilTypes.mod.State
   
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
+  
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

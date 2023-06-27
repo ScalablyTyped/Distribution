@@ -27,7 +27,7 @@ trait DocumentLoadOptions extends StObject {
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets or sets the ChangeTracking mode.
+    * Specifies the ChangeTracking mode.
     *
     * @remarks
     * [Api set: WordApi 1.4]

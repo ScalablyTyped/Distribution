@@ -1,7 +1,7 @@
 
 # Scala.js typings for zip_dot_js__zip_dot_js
 
-Typings are for version 2.7.11
+Typings are for version 2.7.14
 
 ## Library description:
 A JavaScript library to zip and unzip files in the browser, Deno and Node.js

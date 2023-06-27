@@ -1,6 +1,5 @@
 package typings.reactMonacoEditor.mod.monaco
 
-import typings.monacoEditor.anon.Fragment
 import typings.monacoEditor.mod.UriComponents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,7 +39,15 @@ object Uri {
     */
   inline def file(path: String): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Uri]
   
-  inline def from(components: Fragment): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Uri]
+  /**
+    * Creates new Uri from uri components.
+    *
+    * Unless `strict` is `true` the scheme is defaults to be `file`. This function performs
+    * validation and should be used for untrusted uri components retrieved from storage,
+    * user input, command arguments etc
+    */
+  inline def from(components: UriComponents): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Uri]
+  inline def from(components: UriComponents, strict: Boolean): typings.monacoEditor.mod.Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.monacoEditor.mod.Uri]
   
   inline def isUri(thing: Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
   
@@ -67,5 +74,15 @@ object Uri {
   inline def revive(data: UriComponents): js.UndefOr[typings.monacoEditor.mod.Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.monacoEditor.mod.Uri]]
   
   inline def revive_Uri(data: typings.monacoEditor.mod.Uri): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Uri]
+  /**
+    * A helper function to revive URIs.
+    *
+    * **Note** that this function should only be used when receiving Uri#toJSON generated data
+    * and that it doesn't do any validation. Use {@link Uri.from} when received "untrusted"
+    * uri components such as command arguments or data from storage.
+    *
+    * @param data The Uri components or Uri to revive.
+    * @returns The revived Uri or undefined or null.
+    */
   inline def revive_Uri(data: UriComponents): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Uri]
 }

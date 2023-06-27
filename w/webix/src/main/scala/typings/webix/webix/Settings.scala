@@ -4,28 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Settings extends StObject {
   
-  var config: obj
+  var config: obj = js.native
   
-  def define(property: String, value: Any): Unit
+  def define(property: String): Unit = js.native
+  def define(property: String, value: Any): Unit = js.native
+  def define(property: obj): Unit = js.native
+  def define(property: obj, value: Any): Unit = js.native
   
-  var name: String
-}
-object Settings {
-  
-  inline def apply(config: obj, define: (String, Any) => Unit, name: String): Settings = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], define = js.Any.fromFunction2(define), name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Settings]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
-    
-    inline def setConfig(value: obj): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
-    
-    inline def setDefine(value: (String, Any) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-  }
+  var name: String = js.native
 }

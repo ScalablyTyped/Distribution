@@ -8,45 +8,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uniqueValueCreateRendererParams extends StObject {
   
   /**
-    * A preferred class field name used for calculating unique values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * A preferred class field name used for calculating unique values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var classFieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * The color ramp to apply to the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * The color ramp to apply to the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var colorRamp: js.UndefOr[AlgorithmicColorRamp | MultipartColorRamp] = js.undefined
   
   /**
-    * The colors to apply to each unique value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * The colors to apply to each unique value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var colors: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
-    * The input layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * The input layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var layer: ImageryLayer | ImageryTileLayer
   
   /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * Specifies the function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunction] = js.undefined
+  
+  /**
+  		 * Deprecated since 4.27.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var renderingRule: js.UndefOr[RasterFunction] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-uniqueValue.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object uniqueValueCreateRendererParams {
@@ -74,6 +81,10 @@ object uniqueValueCreateRendererParams {
     inline def setColorsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunction(value: RasterFunction): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunction): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

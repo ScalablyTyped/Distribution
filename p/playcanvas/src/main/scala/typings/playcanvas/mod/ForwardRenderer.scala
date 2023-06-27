@@ -83,6 +83,8 @@ open class ForwardRenderer ()
   
   var fogStartId: ScopeId = js.native
   
+  var lightCameraParamsId: js.Array[Any] = js.native
+  
   var lightColorId: js.Array[Any] = js.native
   
   var lightCookieId: js.Array[Any] = js.native
@@ -119,9 +121,19 @@ open class ForwardRenderer ()
   
   var lightShadowParamsId: js.Array[Any] = js.native
   
+  var lightShadowSearchAreaId: js.Array[Any] = js.native
+  
   var lightWidth: js.Array[Any] = js.native
   
   var lightWidthId: js.Array[Any] = js.native
+  
+  var pcssDiskSamples: js.Array[Double] = js.native
+  
+  var pcssDiskSamplesId: ScopeId = js.native
+  
+  var pcssSphereSamples: js.Array[Double] = js.native
+  
+  var pcssSphereSamplesId: ScopeId = js.native
   
   def renderForward(
     camera: Any,

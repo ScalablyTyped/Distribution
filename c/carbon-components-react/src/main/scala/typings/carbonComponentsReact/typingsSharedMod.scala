@@ -140,7 +140,7 @@ object typingsSharedMod {
     REF extends true ? react.react.<global>.JSX.IntrinsicElements[K] : std.Omit<react.react.<global>.JSX.IntrinsicElements[K], 'ref'>
     }}}
     */
-  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */, REF /* <: Boolean */] = Omit[
+  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */, REF /* <: Boolean */] = Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[K] */ js.Any, 
     ref
   ]

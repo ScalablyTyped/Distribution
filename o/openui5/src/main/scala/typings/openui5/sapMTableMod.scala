@@ -1,11 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.ColumnListItem
-import typings.openui5.anon.HasPopin
-import typings.openui5.anon.`6`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.PopinLayout
+import typings.openui5.sapMListBaseMod.ListBase$BeforeOpenContextMenuEventParameters
 import typings.openui5.sapMListBaseMod.ListBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -143,7 +141,7 @@ object sapMTableMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:paste paste} event of this `sap.m.Table`.
       *
@@ -159,20 +157,20 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit]
     ): this.type = js.native
     def attachPaste(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Table` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:paste paste} event of this `sap.m.Table`.
       *
@@ -193,7 +191,7 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit]
     ): this.type = js.native
     def attachPaste(
       /**
@@ -204,7 +202,7 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Table` itself
       */
@@ -212,7 +210,7 @@ object sapMTableMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Attaches event handler `fnFunction` to the {@link #event:popinChanged popinChanged} event of this `sap.m.Table`.
       *
@@ -227,20 +225,20 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit]
     ): this.type = js.native
     def attachPopinChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Table` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Attaches event handler `fnFunction` to the {@link #event:popinChanged popinChanged} event of this `sap.m.Table`.
       *
@@ -260,7 +258,7 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit]
     ): this.type = js.native
     def attachPopinChanged(
       /**
@@ -271,7 +269,7 @@ object sapMTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Table` itself
       */
@@ -286,7 +284,7 @@ object sapMTableMod {
     def destroyColumns(): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Detaches event handler `fnFunction` from the {@link #event:paste paste} event of this `sap.m.Table`.
       *
@@ -298,13 +296,13 @@ object sapMTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit]
     ): this.type = js.native
     def detachPaste(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePasteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -312,7 +310,7 @@ object sapMTableMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Detaches event handler `fnFunction` from the {@link #event:popinChanged popinChanged} event of this `sap.m.Table`.
       *
@@ -324,27 +322,29 @@ object sapMTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit]
     ): this.type = js.native
     def detachPopinChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TablePopinChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
     oListener: js.Object
     ): this.type = js.native
     
-    def fireBeforeOpenContextMenu(/**
+    def fireBeforeOpenContextMenu(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ColumnListItem): Boolean = js.native
+    mParameters: Table$BeforeOpenContextMenuEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.60
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.60
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:paste paste} to attached listeners.
       *
@@ -357,24 +357,26 @@ object sapMTableMod {
     def firePaste(/**
       * Parameters to pass along with the event
       */
-    mParameters: `6`): Boolean = js.native
+    mParameters: Table$PasteEventParameters): Boolean = js.native
     
     /**
-      * @SINCE 1.77
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.77
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:popinChanged popinChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePopinChanged(): this.type = js.native
-    def firePopinChanged(/**
+    def firePopinChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: HasPopin): this.type = js.native
+    mParameters: Table$PopinChangedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getAlternateRowColors alternateRowColors}.
       *
@@ -388,7 +390,7 @@ object sapMTableMod {
     def getAlternateRowColors(): Boolean = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Gets current value of property {@link #getAutoPopinMode autoPopinMode}.
       *
@@ -440,7 +442,7 @@ object sapMTableMod {
     ): js.Array[typings.openui5.sapMColumnMod.default] = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getContextualWidth contextualWidth}.
       *
@@ -463,7 +465,7 @@ object sapMTableMod {
     def getContextualWidth(): String = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getFixedLayout fixedLayout}.
       *
@@ -510,7 +512,7 @@ object sapMTableMod {
     def getFixedLayout(): Any = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getHiddenInPopin hiddenInPopin}.
       *
@@ -518,8 +520,8 @@ object sapMTableMod {
       * See {@link sap.m.Column#getImportance}
       *
       * **Note:** To hide columns based on their importance, it's mandatory to set `demandPopin="true"` for the
-      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link topic:38855e06486f4910bfa6f4485f7c2bac
-      * Configuring Responsive Behavior of a Table} and {@link sap.m.Table#getAutoPopinMode}.
+      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link https://ui5.sap.com/#/topic/38855e06486f4910bfa6f4485f7c2bac Configuring Responsive Behavior of a Table }
+      * and {@link sap.m.Table#getAutoPopinMode}.
       *
       * @returns Value of property `hiddenInPopin`
       */
@@ -528,7 +530,7 @@ object sapMTableMod {
       ] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getPopinLayout popinLayout}.
       *
@@ -542,7 +544,7 @@ object sapMTableMod {
     def getPopinLayout(): PopinLayout | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PopinLayout * / any */ String) = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Gets current value of property {@link #getShowOverlay showOverlay}.
       *
@@ -614,7 +616,7 @@ object sapMTableMod {
     ): typings.openui5.sapMColumnMod.default | Null = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getAlternateRowColors alternateRowColors}.
       *
@@ -634,7 +636,7 @@ object sapMTableMod {
     bAlternateRowColors: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Sets a new value for property {@link #getAutoPopinMode autoPopinMode}.
       *
@@ -691,7 +693,7 @@ object sapMTableMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getContextualWidth contextualWidth}.
       *
@@ -720,7 +722,7 @@ object sapMTableMod {
     sContextualWidth: String): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getFixedLayout fixedLayout}.
       *
@@ -773,7 +775,7 @@ object sapMTableMod {
     oFixedLayout: Any): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getHiddenInPopin hiddenInPopin}.
       *
@@ -781,8 +783,8 @@ object sapMTableMod {
       * See {@link sap.m.Column#getImportance}
       *
       * **Note:** To hide columns based on their importance, it's mandatory to set `demandPopin="true"` for the
-      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link topic:38855e06486f4910bfa6f4485f7c2bac
-      * Configuring Responsive Behavior of a Table} and {@link sap.m.Table#getAutoPopinMode}.
+      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link https://ui5.sap.com/#/topic/38855e06486f4910bfa6f4485f7c2bac Configuring Responsive Behavior of a Table }
+      * and {@link sap.m.Table#getAutoPopinMode}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -798,7 +800,7 @@ object sapMTableMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getPopinLayout popinLayout}.
       *
@@ -824,7 +826,7 @@ object sapMTableMod {
     sPopinLayout: PopinLayout): this.type = js.native
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Sets a new value for property {@link #getShowOverlay showOverlay}.
       *
@@ -844,12 +846,121 @@ object sapMTableMod {
     bShowOverlay: Boolean): this.type = js.native
   }
   
+  trait Table$BeforeOpenContextMenuEventParameters
+    extends StObject
+       with ListBase$BeforeOpenContextMenuEventParameters {
+    
+    /**
+      * Column in which the context menu was opened. **Note:** This parameter might be undefined for the items
+      * that are not part of a column definition.
+      */
+    var column: js.UndefOr[typings.openui5.sapMColumnMod.default] = js.undefined
+  }
+  object Table$BeforeOpenContextMenuEventParameters {
+    
+    inline def apply(): Table$BeforeOpenContextMenuEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$BeforeOpenContextMenuEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$BeforeOpenContextMenuEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: typings.openui5.sapMColumnMod.default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    }
+  }
+  
+  trait Table$PasteEventParameters extends StObject {
+    
+    /**
+      * 2D array of strings with data from the clipboard. The first dimension represents the rows, and the second
+      * dimension represents the cells of the tabular data.
+      */
+    var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
+  }
+  object Table$PasteEventParameters {
+    
+    inline def apply(): Table$PasteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$PasteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$PasteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value*))
+    }
+  }
+  
+  trait Table$PopinChangedEventParameters extends StObject {
+    
+    /**
+      * Returns true if there are visible columns in the pop-in area
+      */
+    var hasPopin: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns array of columns that are hidden in the pop-in based on their importance. See {@link sap.m.Column#getImportance}
+      */
+    var hiddenInPopin: js.UndefOr[js.Array[typings.openui5.sapMColumnMod.default]] = js.undefined
+    
+    /**
+      * Returns array of all visible columns in the pop-in area.
+      */
+    var visibleInPopin: js.UndefOr[js.Array[typings.openui5.sapMColumnMod.default]] = js.undefined
+  }
+  object Table$PopinChangedEventParameters {
+    
+    inline def apply(): Table$PopinChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Table$PopinChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table$PopinChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHasPopin(value: Boolean): Self = StObject.set(x, "hasPopin", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopinUndefined: Self = StObject.set(x, "hasPopin", js.undefined)
+      
+      inline def setHiddenInPopin(value: js.Array[typings.openui5.sapMColumnMod.default]): Self = StObject.set(x, "hiddenInPopin", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenInPopinUndefined: Self = StObject.set(x, "hiddenInPopin", js.undefined)
+      
+      inline def setHiddenInPopinVarargs(value: typings.openui5.sapMColumnMod.default*): Self = StObject.set(x, "hiddenInPopin", js.Array(value*))
+      
+      inline def setVisibleInPopin(value: js.Array[typings.openui5.sapMColumnMod.default]): Self = StObject.set(x, "visibleInPopin", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleInPopinUndefined: Self = StObject.set(x, "visibleInPopin", js.undefined)
+      
+      inline def setVisibleInPopinVarargs(value: typings.openui5.sapMColumnMod.default*): Self = StObject.set(x, "visibleInPopin", js.Array(value*))
+    }
+  }
+  
+  type TableBeforeOpenContextMenuEvent = typings.openui5.sapUiBaseEventMod.default[Table$BeforeOpenContextMenuEventParameters]
+  
+  type TableBeforeOpenContextMenuEventParameters = Table$BeforeOpenContextMenuEventParameters
+  
+  type TablePasteEvent = typings.openui5.sapUiBaseEventMod.default[Table$PasteEventParameters]
+  
+  type TablePasteEventParameters = Table$PasteEventParameters
+  
+  type TablePopinChangedEvent = typings.openui5.sapUiBaseEventMod.default[Table$PopinChangedEventParameters]
+  
+  type TablePopinChangedEventParameters = Table$PopinChangedEventParameters
+  
   trait TableSettings
     extends StObject
        with ListBaseSettings {
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Enables alternating table row colors. **Note:** This property can only be used with the Belize and Belize
       * Deep themes. Alternate row coloring is not available for the High Contrast Black/White themes.
@@ -859,7 +970,7 @@ object sapMTableMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Enables the auto pop-in behavior for the table control.
       *
@@ -890,6 +1001,20 @@ object sapMTableMod {
       ] = js.undefined
     
     /**
+      * @since 1.54
+      *
+      * Fired when the context menu is opened. When the context menu is opened, the binding context of the item
+      * is set to the given `contextMenu`.
+      */
+    @JSName("beforeOpenContextMenu")
+    var beforeOpenContextMenu_TableSettings: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$BeforeOpenContextMenuEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
       * Defines the columns of the table.
       */
     var columns: js.UndefOr[
@@ -897,7 +1022,7 @@ object sapMTableMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Defines the contextual width for the `sap.m.Table` control. By defining this property the table adapts
       * the pop-in behavior based on the container in which the table is placed or the configured contextual
@@ -914,7 +1039,7 @@ object sapMTableMod {
     var contextualWidth: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Defines the algorithm to be used to layout the table cells, rows, and columns. This property allows three
       * possible values:
@@ -955,14 +1080,14 @@ object sapMTableMod {
     var fixedLayout: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Defines which columns should be hidden instead of moved into the pop-in area depending on their importance.
       * See {@link sap.m.Column#getImportance}
       *
       * **Note:** To hide columns based on their importance, it's mandatory to set `demandPopin="true"` for the
-      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link topic:38855e06486f4910bfa6f4485f7c2bac
-      * Configuring Responsive Behavior of a Table} and {@link sap.m.Table#getAutoPopinMode}.
+      * `sap.m.Column` control or set `autoPopinMode="true"` for the `sap.m.Table` control. See {@link https://ui5.sap.com/#/topic/38855e06486f4910bfa6f4485f7c2bac Configuring Responsive Behavior of a Table }
+      * and {@link sap.m.Table#getAutoPopinMode}.
       */
     var hiddenInPopin: js.UndefOr[
         (js.Array[
@@ -971,22 +1096,32 @@ object sapMTableMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * This event gets fired when the user pastes content from the clipboard to the table. Pasting can be done
       * via the context menu or the standard paste keyboard shortcut, if the focus is inside the table.
       */
-    var paste: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var paste: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PasteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Fired when the table pop-in has changed.
       */
-    var popinChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var popinChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PopinChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Defines the layout in which the table pop-in rows are rendered. **Note:** The `demandPopin` and `minScreenWidth`
       * properties of the `Column` control must be configured appropriately.
@@ -996,7 +1131,7 @@ object sapMTableMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.1
+      * @since 1.22.1
       *
       * Setting this property to `true` will show an overlay on top of the table content and prevents the user
       * interaction with it.
@@ -1029,6 +1164,12 @@ object sapMTableMod {
       
       inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
+      inline def setBeforeOpenContextMenu(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$BeforeOpenContextMenuEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpenContextMenu", js.Any.fromFunction1(value))
+      
+      inline def setBeforeOpenContextMenuUndefined: Self = StObject.set(x, "beforeOpenContextMenu", js.undefined)
+      
       inline def setColumns(
         value: js.Array[typings.openui5.sapMColumnMod.default] | typings.openui5.sapMColumnMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
@@ -1057,11 +1198,13 @@ object sapMTableMod {
         value: (Priority | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority * / any */ String))*
       ): Self = StObject.set(x, "hiddenInPopin", js.Array(value*))
       
-      inline def setPaste(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+      inline def setPaste(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PasteEventParameters] => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
       
       inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      inline def setPopinChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "popinChanged", js.Any.fromFunction1(value))
+      inline def setPopinChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Table$PopinChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "popinChanged", js.Any.fromFunction1(value))
       
       inline def setPopinChangedUndefined: Self = StObject.set(x, "popinChanged", js.undefined)
       

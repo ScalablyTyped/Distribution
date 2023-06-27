@@ -4,16 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams) */
 @js.native
 trait URLSearchParams
   extends StObject
      with _XMLHttpRequestBodyInit {
   
-  /** Appends a specified key/value pair as a new search parameter. */
+  /**
+    * Appends a specified key/value pair as a new search parameter.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/append)
+    */
   /* standard dom */
   def append(name: java.lang.String, value: java.lang.String): Unit = js.native
   
-  /** Deletes the given search parameter, and its associated value, from the list of all search parameters. */
+  /**
+    * Deletes the given search parameter, and its associated value, from the list of all search parameters.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/delete)
+    */
   /* standard dom */
   def delete(name: java.lang.String): Unit = js.native
   
@@ -30,15 +39,27 @@ trait URLSearchParams
     thisArg: Any
   ): Unit = js.native
   
-  /** Returns the first value associated to the given search parameter. */
+  /**
+    * Returns the first value associated to the given search parameter.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/get)
+    */
   /* standard dom */
   def get(name: java.lang.String): java.lang.String | Null = js.native
   
-  /** Returns all the values association with a given search parameter. */
+  /**
+    * Returns all the values association with a given search parameter.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/getAll)
+    */
   /* standard dom */
   def getAll(name: java.lang.String): js.Array[java.lang.String] = js.native
   
-  /** Returns a Boolean indicating if such a search parameter exists. */
+  /**
+    * Returns a Boolean indicating if such a search parameter exists.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/has)
+    */
   /* standard dom */
   def has(name: java.lang.String): scala.Boolean = js.native
   
@@ -50,10 +71,15 @@ trait URLSearchParams
   /* standard dom.iterable */
   def keys(): IterableIterator[java.lang.String] = js.native
   
-  /** Sets the value associated to a given search parameter to the given value. If there were several values, delete the others. */
+  /**
+    * Sets the value associated to a given search parameter to the given value. If there were several values, delete the others.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/set)
+    */
   /* standard dom */
   def set(name: java.lang.String, value: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/URLSearchParams/sort) */
   /* standard dom */
   def sort(): Unit = js.native
   

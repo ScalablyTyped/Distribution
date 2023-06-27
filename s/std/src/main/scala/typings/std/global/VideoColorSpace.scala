@@ -17,22 +17,27 @@ open class VideoColorSpace ()
      with typings.std.VideoColorSpace {
   def this(init: VideoColorSpaceInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/fullRange) */
   /* standard dom */
   /* CompleteClass */
   override val fullRange: scala.Boolean | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/matrix) */
   /* standard dom */
   /* CompleteClass */
   override val matrix: VideoMatrixCoefficients | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/primaries) */
   /* standard dom */
   /* CompleteClass */
   override val primaries: VideoColorPrimaries | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/toJSON) */
   /* standard dom */
   /* CompleteClass */
   override def toJSON(): VideoColorSpaceInit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/transfer) */
   /* standard dom */
   /* CompleteClass */
   override val transfer: VideoTransferCharacteristics | Null = js.native

@@ -13,14 +13,14 @@ trait GenericMediaMetadata extends StObject {
   
   var releaseDate: String
   
-  /** @deprecated. Use releaseDate instead. */
+  /** @deprecated Use releaseDate instead. */
   var releaseYear: Double
   
   var subtitle: String
   
   var title: String
   
-  /** @deprecated. Use metadataType instead. */
+  /** @deprecated Use metadataType instead. */
   var `type`: MetadataType
 }
 object GenericMediaMetadata {

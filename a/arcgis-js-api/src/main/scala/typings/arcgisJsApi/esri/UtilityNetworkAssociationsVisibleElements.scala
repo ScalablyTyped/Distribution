@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UtilityNetworkAssociationsVisibleElements extends StObject {
   
   /**
-    * Indicates whether to display a slider that adjusts the [maxAllowableAssociations](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociations).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#VisibleElements)
-    */
+  		 * Indicates whether to display a slider that adjusts the [maxAllowableAssociations](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#maxAllowableAssociations).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkAssociations.html#VisibleElements)
+  		 */
   var maxAllowableAssociationsSlider: Boolean
 }
 object UtilityNetworkAssociationsVisibleElements {

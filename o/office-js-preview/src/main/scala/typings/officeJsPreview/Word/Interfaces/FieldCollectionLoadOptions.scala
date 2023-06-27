@@ -19,19 +19,20 @@ trait FieldCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the field's code instruction.
+    * For EACH ITEM in the collection: Specifies the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
+    *
+    * Note: The ability to set the code was introduced in WordApi 1.5.
     */
   var code: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var data: js.UndefOr[Boolean] = js.undefined
   
@@ -39,17 +40,15 @@ trait FieldCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets the field's kind.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var kind: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+    * For EACH ITEM in the collection: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
   
@@ -118,7 +117,7 @@ trait FieldCollectionLoadOptions extends StObject {
   var result: js.UndefOr[RangeLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    * For EACH ITEM in the collection: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -130,8 +129,7 @@ trait FieldCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets the field's type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
 }

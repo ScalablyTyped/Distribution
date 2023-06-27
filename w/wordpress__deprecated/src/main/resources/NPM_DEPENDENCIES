@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/deprecated" : "3.33.0"
+      "@wordpress/deprecated" : "3.35.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/deprecated" : "3.33.0"
+      "@wordpress/deprecated" : "3.35.0"
     }
   ],
   "compile-devDependencies" : [

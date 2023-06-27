@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done.
   * @deprecated This interface is deprecated in the Navigation Timing Level 2 specification. Please use the PerformanceNavigationTiming interface instead.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation)
   */
 trait PerformanceNavigation extends StObject {
   
@@ -26,15 +28,27 @@ trait PerformanceNavigation extends StObject {
   /* standard dom */
   val TYPE_RESERVED: `255`
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/redirectCount)
+    */
   /* standard dom */
   val redirectCount: Double
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/toJSON)
+    */
   /* standard dom */
   def toJSON(): Any
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/type)
+    */
   /* standard dom */
   val `type`: Double
 }

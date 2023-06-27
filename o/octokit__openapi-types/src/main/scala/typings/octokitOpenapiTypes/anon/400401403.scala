@@ -11,23 +11,23 @@ trait `400401403` extends StObject {
   
   var `400`: ContentApplicationjsonApplicationscimjson
   
-  var `401`: Content36
+  var `401`: Content41
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
-  var `500`: Content36
+  var `500`: Content41
 }
 object `400401403` {
   
   inline def apply(
     `200`: ContentApplicationjsonDevcontainers,
     `400`: ContentApplicationjsonApplicationscimjson,
-    `401`: Content36,
-    `403`: Content36,
-    `404`: Content36,
-    `500`: Content36
+    `401`: Content41,
+    `403`: Content41,
+    `404`: Content41,
+    `500`: Content41
   ): `400401403` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -46,12 +46,12 @@ object `400401403` {
     
     inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content41): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set500(value: Content36): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: Content41): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
   }
 }

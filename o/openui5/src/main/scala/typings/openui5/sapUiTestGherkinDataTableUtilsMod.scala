@@ -11,6 +11,17 @@ object sapUiTestGherkinDataTableUtilsMod extends Shortcut {
   @js.native
   val default: dataTableUtils = js.native
   
+  /**
+    * A simple object containing a series of normalization functions that change a string according to a particular
+    * strategy. All strategies do the following normalization as a minimum:
+    *
+    *
+    * 	 - Trim spaces off the string on both sides. For example: `" hello "` becomes `"hello"`.
+    * 	 - Assume that dashes and underscores are analogs for a space. For example: `"sold-to party"` and `"sold
+    *     to party"` are equivalent, and would both convert to the camelCase `"soldToParty"`.
+    * 	 - Trim multiple spaces between words. For example: `"hello____world"` becomes `"hello world"`.
+    * 	 - Remove any characters that are not alphanumeric or whitespace. For example: `"(hello)"` becomes `"hello"`.
+    */
   trait normalization extends StObject {
     
     /**
@@ -91,7 +102,7 @@ object sapUiTestGherkinDataTableUtilsMod extends Shortcut {
   override def _to: dataTableUtils = default
   
   /**
-    * @SINCE 1.40
+    * @since 1.40
     *
     * Provides utility functions for formatting 2D arrays of strings (such as the raw data loaded from a Gherkin
     * feature file) into a more useful format such as an array of objects or a single object. Also handles
@@ -99,6 +110,19 @@ object sapUiTestGherkinDataTableUtilsMod extends Shortcut {
     */
   @js.native
   trait dataTableUtils extends StObject {
+    
+    /**
+      * A simple object containing a series of normalization functions that change a string according to a particular
+      * strategy. All strategies do the following normalization as a minimum:
+      *
+      *
+      * 	 - Trim spaces off the string on both sides. For example: `" hello "` becomes `"hello"`.
+      * 	 - Assume that dashes and underscores are analogs for a space. For example: `"sold-to party"` and `"sold
+      *     to party"` are equivalent, and would both convert to the camelCase `"soldToParty"`.
+      * 	 - Trim multiple spaces between words. For example: `"hello____world"` becomes `"hello world"`.
+      * 	 - Remove any characters that are not alphanumeric or whitespace. For example: `"(hello)"` becomes `"hello"`.
+      */
+    var normalization: typings.openui5.sapUiTestGherkinDataTableUtilsMod.normalization = js.native
     
     /**
       * Takes the inputed 2D array "aData" and returns an equivalent object. Each row of data is expected to

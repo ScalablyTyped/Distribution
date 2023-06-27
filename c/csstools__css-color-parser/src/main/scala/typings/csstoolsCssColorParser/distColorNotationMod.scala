@@ -58,10 +58,10 @@ object distColorNotationMod {
     /* "lab" */ val Lab: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Lab & String = js.native
     
     @js.native
-    sealed trait Linear_RGB
+    sealed trait Linear_sRGB
       extends StObject
          with ColorNotation
-    /* "srgb-linear" */ val Linear_RGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Linear_RGB & String = js.native
+    /* "srgb-linear" */ val Linear_sRGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Linear_sRGB & String = js.native
     
     @js.native
     sealed trait OKLCH
@@ -104,5 +104,11 @@ object distColorNotationMod {
       extends StObject
          with ColorNotation
     /* "xyz-d65" */ val XYZ_D65: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.XYZ_D65 & String = js.native
+    
+    @js.native
+    sealed trait sRGB
+      extends StObject
+         with ColorNotation
+    /* "srgb" */ val sRGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.sRGB & String = js.native
   }
 }

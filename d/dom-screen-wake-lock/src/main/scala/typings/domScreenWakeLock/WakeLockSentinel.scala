@@ -2,6 +2,7 @@ package typings.domScreenWakeLock
 
 import typings.std.Event
 import typings.std.EventTarget
+import typings.std.WakeLockType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,5 +26,5 @@ trait WakeLockSentinel
   val released: Boolean = js.native
   
   /** The WakeLockSentinel's wake lock type. */
-  val `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WakeLockType */ Any = js.native
+  val `type`: WakeLockType = js.native
 }

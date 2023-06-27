@@ -9,31 +9,31 @@ trait CIMGeometricEffectJog
      with CIMGeometricEffect {
   
   /**
-    * The angle of the job in the line which is measured in degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
-    */
+  		 * The angle of the job in the line which is measured in degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
+  		 */
   var angle: Double
   
   /**
-    * The length of the segment that forms the jog in the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
-    */
+  		 * The length of the segment that forms the jog in the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
+  		 */
   var length: Double
   
   /**
-    * The location of the center of the jog, as a percentage measured from the start of the input geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
-    */
+  		 * The location of the center of the jog, as a percentage measured from the start of the input geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
+  		 */
   var position: Double
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectJog)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectJog

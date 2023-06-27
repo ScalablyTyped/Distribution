@@ -129,7 +129,7 @@ object sapUiModelOdataTypeStringMod {
       */
     sValue: String,
       /**
-      * the target type; may be "any", "boolean", "float", "int" or "string". See {@link sap.ui.model.odata.type}
+      * the target type; may be "any", "boolean", "float", "int" or "string". See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sTargetType: String

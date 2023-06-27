@@ -9,17 +9,17 @@ trait HeatmapSliderProperties
      with WidgetProperties {
   
   /**
-    * The colorStops of the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) to associate with the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#stops)
-    */
+  		 * The colorStops of the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html) to associate with the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[HeatmapColorStopProperties]] = js.undefined
   
   /**
-    * The view model for the Heatmap widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#viewModel)
-    */
+  		 * The view model for the Heatmap widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[HeatmapSliderViewModelProperties] = js.undefined
 }
 object HeatmapSliderProperties {

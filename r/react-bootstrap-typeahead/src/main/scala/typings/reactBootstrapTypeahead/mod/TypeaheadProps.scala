@@ -175,7 +175,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends StObject {
     js.Function3[/* selectedItem */ T, /* props */ TokenProps, /* index */ Double, ReactNode]
   ] = js.undefined
   
-  /** @deprecated: Allows selecting the hinted result by pressing enter. */
+  /** @deprecated Allows selecting the hinted result by pressing enter. */
   var selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
   
   /* The selected option(s) displayed in the input. Use this prop if you want to control the component via its parent. */

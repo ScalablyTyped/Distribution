@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelOpacityStop extends StObject {
   
   /**
-    * The opacity value (0 = transparent, 1 = opaque) to apply to data at this position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelOpacityStop)
-    */
+  		 * The opacity value (0 = transparent, 1 = opaque) to apply to data at this position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelOpacityStop)
+  		 */
   var opacity: Double
   
   /**
-    * The normalized (i.e.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelOpacityStop)
-    */
+  		 * The normalized (i.e.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelOpacityStop)
+  		 */
   var position: Double
 }
 object VoxelOpacityStop {

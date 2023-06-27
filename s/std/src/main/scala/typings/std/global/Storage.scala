@@ -16,22 +16,36 @@ open class Storage ()
     * Removes all key/value pairs, if there are any.
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/clear)
     */
   /* standard dom */
   /* CompleteClass */
   override def clear(): Unit = js.native
   
-  /** Returns the current value associated with the given key, or null if the given key does not exist. */
+  /**
+    * Returns the current value associated with the given key, or null if the given key does not exist.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/getItem)
+    */
   /* standard dom */
   /* CompleteClass */
   override def getItem(key: java.lang.String): java.lang.String | Null = js.native
   
-  /** Returns the name of the nth key, or null if n is greater than or equal to the number of key/value pairs. */
+  /**
+    * Returns the name of the nth key, or null if n is greater than or equal to the number of key/value pairs.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/key)
+    */
   /* standard dom */
   /* CompleteClass */
   override def key(index: Double): java.lang.String | Null = js.native
   
-  /** Returns the number of key/value pairs. */
+  /**
+    * Returns the number of key/value pairs.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/length)
+    */
   /* standard dom */
   /* CompleteClass */
   override val length: Double = js.native
@@ -40,6 +54,8 @@ open class Storage ()
     * Removes the key/value pair with the given key, if a key/value pair with the given key exists.
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/removeItem)
     */
   /* standard dom */
   /* CompleteClass */
@@ -51,6 +67,8 @@ open class Storage ()
     * Throws a "QuotaExceededError" DOMException exception if the new value couldn't be set. (Setting could fail if, e.g., the user has disabled storage for the site, or if the quota has been exceeded.)
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/setItem)
     */
   /* standard dom */
   /* CompleteClass */

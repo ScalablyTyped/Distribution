@@ -1,12 +1,6 @@
 package typings.openui5
 
 import typings.openui5.anon.Actual
-import typings.openui5.anon.ListItem
-import typings.openui5.anon.ListItems
-import typings.openui5.anon.Reason
-import typings.openui5.anon.SrcControl
-import typings.openui5.anon.SwipeContent
-import typings.openui5.anon.Total
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.ListGrowingDirection
 import typings.openui5.sapMLibraryMod.ListHeaderDesign
@@ -147,7 +141,7 @@ object sapMListBaseMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -171,9 +165,9 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
-      * Attaches event handler `fnFunction` to the {@link #event:beforeOpenContextMenu beforeOpenContextMenu}
+      * Attaches event handler `fnFunction` to the {@link #event:beforeOpenContextMenu beforeOpenContextMenu }
       * event of this `sap.m.ListBase`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -188,22 +182,22 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpenContextMenu(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
-      * Attaches event handler `fnFunction` to the {@link #event:beforeOpenContextMenu beforeOpenContextMenu}
+      * Attaches event handler `fnFunction` to the {@link #event:beforeOpenContextMenu beforeOpenContextMenu }
       * event of this `sap.m.ListBase`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -223,7 +217,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit]
     ): this.type = js.native
     def attachBeforeOpenContextMenu(
       /**
@@ -234,7 +228,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -255,13 +249,13 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit]
     ): this.type = js.native
     def attachDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -286,7 +280,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit]
     ): this.type = js.native
     def attachDelete(
       /**
@@ -297,7 +291,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -305,7 +299,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
       *
       * Attaches event handler `fnFunction` to the {@link #event:growingFinished growingFinished} event of this
@@ -322,20 +316,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit]
     ): this.type = js.native
     def attachGrowingFinished(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
       *
       * Attaches event handler `fnFunction` to the {@link #event:growingFinished growingFinished} event of this
@@ -357,7 +351,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit]
     ): this.type = js.native
     def attachGrowingFinished(
       /**
@@ -368,7 +362,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -376,7 +370,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
       *
       * Attaches event handler `fnFunction` to the {@link #event:growingStarted growingStarted} event of this
@@ -393,20 +387,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit]
     ): this.type = js.native
     def attachGrowingStarted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
       *
       * Attaches event handler `fnFunction` to the {@link #event:growingStarted growingStarted} event of this
@@ -428,7 +422,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit]
     ): this.type = js.native
     def attachGrowingStarted(
       /**
@@ -439,7 +433,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -447,7 +441,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Attaches event handler `fnFunction` to the {@link #event:itemPress itemPress} event of this `sap.m.ListBase`.
       *
@@ -462,20 +456,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit]
     ): this.type = js.native
     def attachItemPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Attaches event handler `fnFunction` to the {@link #event:itemPress itemPress} event of this `sap.m.ListBase`.
       *
@@ -495,7 +489,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit]
     ): this.type = js.native
     def attachItemPress(
       /**
@@ -506,7 +500,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -530,13 +524,13 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -564,7 +558,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -575,7 +569,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -583,7 +577,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.ListBase`.
@@ -599,20 +593,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.ListBase`.
@@ -633,7 +627,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -644,7 +638,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -670,13 +664,13 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit]
     ): this.type = js.native
     def attachSwipe(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -706,7 +700,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit]
     ): this.type = js.native
     def attachSwipe(
       /**
@@ -717,7 +711,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -725,7 +719,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.ListBase`.
@@ -741,20 +735,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def attachUpdateFinished(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.ListBase`.
@@ -775,7 +769,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def attachUpdateFinished(
       /**
@@ -786,7 +780,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -794,7 +788,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateStarted updateStarted} event of this `sap.m.ListBase`.
       *
@@ -811,20 +805,20 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def attachUpdateStarted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Attaches event handler `fnFunction` to the {@link #event:updateStarted updateStarted} event of this `sap.m.ListBase`.
       *
@@ -846,7 +840,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def attachUpdateStarted(
       /**
@@ -857,7 +851,7 @@ object sapMListBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ListBase` itself
       */
@@ -878,7 +872,7 @@ object sapMListBaseMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Destroys the contextMenu in the aggregation {@link #getContextMenu contextMenu}.
       *
@@ -887,7 +881,7 @@ object sapMListBaseMod {
     def destroyContextMenu(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys the headerToolbar in the aggregation {@link #getHeaderToolbar headerToolbar}.
       *
@@ -896,7 +890,7 @@ object sapMListBaseMod {
     def destroyHeaderToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys the infoToolbar in the aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -912,7 +906,7 @@ object sapMListBaseMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Destroys the noData in the aggregation {@link #getNoData noData}.
       *
@@ -928,9 +922,9 @@ object sapMListBaseMod {
     def destroySwipeContent(): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
-      * Detaches event handler `fnFunction` from the {@link #event:beforeOpenContextMenu beforeOpenContextMenu}
+      * Detaches event handler `fnFunction` from the {@link #event:beforeOpenContextMenu beforeOpenContextMenu }
       * event of this `sap.m.ListBase`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -941,13 +935,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit]
     ): this.type = js.native
     def detachBeforeOpenContextMenu(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseBeforeOpenContextMenuEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -965,13 +959,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit]
     ): this.type = js.native
     def detachDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -979,7 +973,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
       *
       * Detaches event handler `fnFunction` from the {@link #event:growingFinished growingFinished} event of
@@ -993,13 +987,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit]
     ): this.type = js.native
     def detachGrowingFinished(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingFinishedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1007,7 +1001,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
       *
       * Detaches event handler `fnFunction` from the {@link #event:growingStarted growingStarted} event of this
@@ -1021,13 +1015,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit]
     ): this.type = js.native
     def detachGrowingStarted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseGrowingStartedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1035,7 +1029,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Detaches event handler `fnFunction` from the {@link #event:itemPress itemPress} event of this `sap.m.ListBase`.
       *
@@ -1047,13 +1041,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit]
     ): this.type = js.native
     def detachItemPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseItemPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1073,13 +1067,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1087,7 +1081,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Detaches event handler `fnFunction` from the {@link #event:selectionChange selectionChange} event of
       * this `sap.m.ListBase`.
@@ -1100,13 +1094,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1124,13 +1118,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit]
     ): this.type = js.native
     def detachSwipe(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseSwipeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1138,7 +1132,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Detaches event handler `fnFunction` from the {@link #event:updateFinished updateFinished} event of this
       * `sap.m.ListBase`.
@@ -1151,13 +1145,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit]
     ): this.type = js.native
     def detachUpdateFinished(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateFinishedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1165,7 +1159,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Detaches event handler `fnFunction` from the {@link #event:updateStarted updateStarted} event of this
       * `sap.m.ListBase`.
@@ -1178,13 +1172,13 @@ object sapMListBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit]
     ): this.type = js.native
     def detachUpdateStarted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBaseUpdateStartedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1192,7 +1186,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
@@ -1209,8 +1203,8 @@ object sapMListBaseMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.54
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.54
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpenContextMenu beforeOpenContextMenu} to attached listeners.
       *
@@ -1220,13 +1214,15 @@ object sapMListBaseMod {
       * @returns Whether or not to prevent the default action
       */
     def fireBeforeOpenContextMenu(): Boolean = js.native
-    def fireBeforeOpenContextMenu(/**
+    def fireBeforeOpenContextMenu(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ListItem): Boolean = js.native
+    mParameters: ListBase$BeforeOpenContextMenuEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:delete delete} to attached listeners.
       *
@@ -1236,55 +1232,61 @@ object sapMListBaseMod {
     def fireDelete(/**
       * Parameters to pass along with the event
       */
-    mParameters: ListItem): this.type = js.native
+    mParameters: ListBase$DeleteEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:growingFinished growingFinished} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireGrowingFinished(): this.type = js.native
-    def fireGrowingFinished(/**
+    def fireGrowingFinished(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Actual): this.type = js.native
+    mParameters: ListBase$GrowingFinishedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:growingStarted growingStarted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireGrowingStarted(): this.type = js.native
-    def fireGrowingStarted(/**
+    def fireGrowingStarted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Actual): this.type = js.native
+    mParameters: ListBase$GrowingStartedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.20
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.20
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemPress itemPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemPress(): this.type = js.native
-    def fireItemPress(/**
+    def fireItemPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SrcControl): this.type = js.native
+    mParameters: ListBase$ItemPressEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.16) - Use the `selectionChange` event instead.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -1294,24 +1296,26 @@ object sapMListBaseMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: ListItem): this.type = js.native
+    mParameters: ListBase$SelectEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ListItems): this.type = js.native
+    mParameters: ListBase$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:swipe swipe} to attached listeners.
       *
@@ -1324,46 +1328,49 @@ object sapMListBaseMod {
     def fireSwipe(/**
       * Parameters to pass along with the event
       */
-    mParameters: SwipeContent): Boolean = js.native
+    mParameters: ListBase$SwipeEventParameters): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.3
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateFinished updateFinished} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUpdateFinished(): this.type = js.native
-    def fireUpdateFinished(/**
+    def fireUpdateFinished(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Reason): this.type = js.native
+    mParameters: ListBase$UpdateFinishedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.3
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateStarted updateStarted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUpdateStarted(): this.type = js.native
-    def fireUpdateStarted(/**
+    def fireUpdateStarted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Reason): this.type = js.native
+    mParameters: ListBase$UpdateStartedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets content of aggregation {@link #getContextMenu contextMenu}.
       *
@@ -1372,7 +1379,7 @@ object sapMListBaseMod {
     def getContextMenu(): IContextMenu = js.native
     
     /**
-      * @SINCE 1.20.2
+      * @since 1.20.2
       *
       * Gets current value of property {@link #getEnableBusyIndicator enableBusyIndicator}.
       *
@@ -1397,7 +1404,7 @@ object sapMListBaseMod {
     def getFooterText(): String = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getGrowing growing}.
       *
@@ -1412,7 +1419,7 @@ object sapMListBaseMod {
     def getGrowing(): Boolean = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Gets current value of property {@link #getGrowingDirection growingDirection}.
       *
@@ -1427,15 +1434,15 @@ object sapMListBaseMod {
     def getGrowingDirection(): ListGrowingDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListGrowingDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Returns growing information as object with "actual" and "total" keys. Note: This function returns "null"
       * if "growing" feature is disabled.
       */
-    def getGrowingInfo(): Total | Null = js.native
+    def getGrowingInfo(): Actual | Null = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getGrowingScrollToLoad growingScrollToLoad}.
       *
@@ -1451,7 +1458,7 @@ object sapMListBaseMod {
     def getGrowingScrollToLoad(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getGrowingThreshold growingThreshold}.
       *
@@ -1465,7 +1472,7 @@ object sapMListBaseMod {
     def getGrowingThreshold(): int = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getGrowingTriggerText growingTriggerText}.
       *
@@ -1477,7 +1484,7 @@ object sapMListBaseMod {
     def getGrowingTriggerText(): String = js.native
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       * @deprecated (since 1.16) - No longer has any functionality.
       *
       * Gets current value of property {@link #getHeaderDesign headerDesign}.
@@ -1501,7 +1508,7 @@ object sapMListBaseMod {
     def getHeaderText(): String = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getHeaderToolbar headerToolbar}.
       *
@@ -1524,7 +1531,7 @@ object sapMListBaseMod {
     def getIncludeItemInSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -1544,8 +1551,8 @@ object sapMListBaseMod {
     def getInset(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.5
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.5
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the ItemNavigation delegate of the list
       */
@@ -1559,7 +1566,7 @@ object sapMListBaseMod {
     def getItems(): js.Array[typings.openui5.sapMListItemBaseMod.default] = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getKeyboardMode keyboardMode}.
       *
@@ -1572,7 +1579,7 @@ object sapMListBaseMod {
     def getKeyboardMode(): ListKeyboardMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListKeyboardMode * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the last list mode, the mode that is rendered This can be used to detect mode changes during
       * rendering
@@ -1602,7 +1609,7 @@ object sapMListBaseMod {
     def getModeAnimationOn(): Boolean = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Gets current value of property {@link #getMultiSelectMode multiSelectMode}.
       *
@@ -1615,8 +1622,7 @@ object sapMListBaseMod {
       * **Note:** This property must be used with the `MultiSelect` mode. If this property is set to `ClearAll`,
       * then a selection of multiple items is still possible via the range selection feature except CTRL +
       * A. Additionally, the CTRL + SHIFT + A key combination can be used for deselecting all the
-      * items. For details on the range selection, please see {@link topic:8a0d4efa29d44ef39219c18d832012da Keyboard
-      * Handling for Item Selection}.
+      * items. For details on the range selection, please see {@link https://ui5.sap.com/#/topic/8a0d4efa29d44ef39219c18d832012da Keyboard Handling for Item Selection}.
       *
       * Default value is `Default`.
       *
@@ -1625,7 +1631,7 @@ object sapMListBaseMod {
     def getMultiSelectMode(): MultiSelectMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MultiSelectMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Gets content of aggregation {@link #getNoData noData}.
       *
@@ -1647,7 +1653,7 @@ object sapMListBaseMod {
     def getNoDataText(): String = js.native
     
     /**
-      * @SINCE 1.16.6
+      * @since 1.16.6
       *
       * Gets current value of property {@link #getRememberSelections rememberSelections}.
       *
@@ -1664,7 +1670,7 @@ object sapMListBaseMod {
     def getRememberSelections(): Boolean = js.native
     
     /**
-      * @SINCE 1.18.6
+      * @since 1.18.6
       *
       * Returns the binding contexts of the selected items. Note: This method returns an empty array if no databinding
       * is used.
@@ -1723,7 +1729,7 @@ object sapMListBaseMod {
     def getShowUnread(): Boolean = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getSticky sticky}.
       *
@@ -1734,12 +1740,12 @@ object sapMListBaseMod {
       *
       * There are some known restrictions. A few are given below:
       * 	 - If the control is placed in layout containers that have the `overflow: hidden` or `overflow: auto`
-      * 			style definition, this can prevent the sticky elements of the control from becoming fixed at the top
-      * 			of the viewport.
+      *     style definition, this can prevent the sticky elements of the control from becoming fixed at the top
+      *     of the viewport.
       * 	 - If sticky column headers are enabled in the `sap.m.Table` control, setting focus on the column headers
-      * 			will let the table scroll to the top.
+      *     will let the table scroll to the top.
       * 	 - A transparent toolbar design is not supported for sticky bars. The toolbar will automatically get
-      * 			an intransparent background color.
+      *     an intransparent background color.
       * 	 - This feature supports only the default height of the toolbar control.
       *
       * @returns Value of property `sticky`
@@ -1754,7 +1760,7 @@ object sapMListBaseMod {
       * User can swipe to bring in this control on the right hand side of an item. **Note:**
       * 	 - For non-touch screen devices, this functionality is ignored.
       * 	 - There is no accessible alternative provided by the control for swiping. Applications that use this
-      * 			functionality must provide an accessible alternative UI to perform the same action.
+      *     functionality must provide an accessible alternative UI to perform the same action.
       */
     def getSwipeContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
@@ -1816,7 +1822,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -1834,7 +1840,7 @@ object sapMListBaseMod {
     def removeAllItems(): js.Array[typings.openui5.sapMListItemBaseMod.default] = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -1887,7 +1893,7 @@ object sapMListBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Requests a specified number of items from the back end to load more data in the list. If the number of
       * items are not specified, the `growingThreshold` value is used to request more data.
@@ -1903,7 +1909,7 @@ object sapMListBaseMod {
     iItems: int): Unit = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Scrolls the list so that the item with the given index is in the viewport. If the index is -1, it scrolls
       * to the bottom of the list. If the growing feature is enabled, the list is scrolled to the last available
@@ -1923,7 +1929,7 @@ object sapMListBaseMod {
     iIndex: Double): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Selects all items in the `MultiSelection` mode.
       *
@@ -1933,7 +1939,7 @@ object sapMListBaseMod {
     def selectAll(): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets the aggregated {@link #getContextMenu contextMenu}.
       *
@@ -1945,7 +1951,7 @@ object sapMListBaseMod {
     oContextMenu: IContextMenu): this.type = js.native
     
     /**
-      * @SINCE 1.20.2
+      * @since 1.20.2
       *
       * Sets a new value for property {@link #getEnableBusyIndicator enableBusyIndicator}.
       *
@@ -1982,7 +1988,7 @@ object sapMListBaseMod {
     sFooterText: String): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getGrowing growing}.
       *
@@ -2003,7 +2009,7 @@ object sapMListBaseMod {
     bGrowing: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Sets a new value for property {@link #getGrowingDirection growingDirection}.
       *
@@ -2030,7 +2036,7 @@ object sapMListBaseMod {
     sGrowingDirection: ListGrowingDirection): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getGrowingScrollToLoad growingScrollToLoad}.
       *
@@ -2052,7 +2058,7 @@ object sapMListBaseMod {
     bGrowingScrollToLoad: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getGrowingThreshold growingThreshold}.
       *
@@ -2072,7 +2078,7 @@ object sapMListBaseMod {
     iGrowingThreshold: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getGrowingTriggerText growingTriggerText}.
       *
@@ -2090,7 +2096,7 @@ object sapMListBaseMod {
     sGrowingTriggerText: String): this.type = js.native
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       * @deprecated (since 1.16) - No longer has any functionality.
       *
       * Sets a new value for property {@link #getHeaderDesign headerDesign}.
@@ -2132,7 +2138,7 @@ object sapMListBaseMod {
     sHeaderText: String): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets the aggregated {@link #getHeaderToolbar headerToolbar}.
       *
@@ -2163,7 +2169,7 @@ object sapMListBaseMod {
     bIncludeItemInSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets the aggregated {@link #getInfoToolbar infoToolbar}.
       *
@@ -2192,7 +2198,7 @@ object sapMListBaseMod {
     bInset: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getKeyboardMode keyboardMode}.
       *
@@ -2257,7 +2263,7 @@ object sapMListBaseMod {
     bModeAnimationOn: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Sets a new value for property {@link #getMultiSelectMode multiSelectMode}.
       *
@@ -2270,8 +2276,7 @@ object sapMListBaseMod {
       * **Note:** This property must be used with the `MultiSelect` mode. If this property is set to `ClearAll`,
       * then a selection of multiple items is still possible via the range selection feature except CTRL +
       * A. Additionally, the CTRL + SHIFT + A key combination can be used for deselecting all the
-      * items. For details on the range selection, please see {@link topic:8a0d4efa29d44ef39219c18d832012da Keyboard
-      * Handling for Item Selection}.
+      * items. For details on the range selection, please see {@link https://ui5.sap.com/#/topic/8a0d4efa29d44ef39219c18d832012da Keyboard Handling for Item Selection}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -2296,7 +2301,7 @@ object sapMListBaseMod {
       */
     vNoData: String): this.type = js.native
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Sets the aggregated {@link #getNoData noData}.
       *
@@ -2325,7 +2330,7 @@ object sapMListBaseMod {
     sNoDataText: String): this.type = js.native
     
     /**
-      * @SINCE 1.16.6
+      * @since 1.16.6
       *
       * Sets a new value for property {@link #getRememberSelections rememberSelections}.
       *
@@ -2443,7 +2448,7 @@ object sapMListBaseMod {
     bShowUnread: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getSticky sticky}.
       *
@@ -2454,12 +2459,12 @@ object sapMListBaseMod {
       *
       * There are some known restrictions. A few are given below:
       * 	 - If the control is placed in layout containers that have the `overflow: hidden` or `overflow: auto`
-      * 			style definition, this can prevent the sticky elements of the control from becoming fixed at the top
-      * 			of the viewport.
+      *     style definition, this can prevent the sticky elements of the control from becoming fixed at the top
+      *     of the viewport.
       * 	 - If sticky column headers are enabled in the `sap.m.Table` control, setting focus on the column headers
-      * 			will let the table scroll to the top.
+      *     will let the table scroll to the top.
       * 	 - A transparent toolbar design is not supported for sticky bars. The toolbar will automatically get
-      * 			an intransparent background color.
+      *     an intransparent background color.
       * 	 - This feature supports only the default height of the toolbar control.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -2547,27 +2552,416 @@ object sapMListBaseMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait ListBase$BeforeOpenContextMenuEventParameters extends StObject {
+    
+    /**
+      * Item in which the context menu was opened.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+  }
+  object ListBase$BeforeOpenContextMenuEventParameters {
+    
+    inline def apply(): ListBase$BeforeOpenContextMenuEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$BeforeOpenContextMenuEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$BeforeOpenContextMenuEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    }
+  }
+  
+  trait ListBase$DeleteEventParameters extends StObject {
+    
+    /**
+      * The item which fired the delete event.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+  }
+  object ListBase$DeleteEventParameters {
+    
+    inline def apply(): ListBase$DeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$DeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$DeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    }
+  }
+  
+  trait ListBase$GrowingFinishedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Total number of items.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object ListBase$GrowingFinishedEventParameters {
+    
+    inline def apply(): ListBase$GrowingFinishedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$GrowingFinishedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$GrowingFinishedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait ListBase$GrowingStartedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Total number of items.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object ListBase$GrowingStartedEventParameters {
+    
+    inline def apply(): ListBase$GrowingStartedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$GrowingStartedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$GrowingStartedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait ListBase$ItemPressEventParameters extends StObject {
+    
+    /**
+      * The item which fired the pressed event.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+    
+    /**
+      * The control which caused the press event within the container.
+      */
+    var srcControl: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+  }
+  object ListBase$ItemPressEventParameters {
+    
+    inline def apply(): ListBase$ItemPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$ItemPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$ItemPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      
+      inline def setSrcControl(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "srcControl", value.asInstanceOf[js.Any])
+      
+      inline def setSrcControlUndefined: Self = StObject.set(x, "srcControl", js.undefined)
+    }
+  }
+  
+  trait ListBase$SelectEventParameters extends StObject {
+    
+    /**
+      * The item which fired the select event.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+  }
+  object ListBase$SelectEventParameters {
+    
+    inline def apply(): ListBase$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    }
+  }
+  
+  trait ListBase$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * The item whose selection has changed. In `MultiSelect` mode, only the up-most selected item is returned.
+      * This parameter can be used for single-selection modes.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+    
+    /**
+      * Array of items whose selection has changed. This parameter can be used for `MultiSelect` mode.
+      */
+    var listItems: js.UndefOr[js.Array[typings.openui5.sapMListItemBaseMod.default]] = js.undefined
+    
+    /**
+      * Indicates whether the select all action is triggered or not.
+      */
+    var selectAll: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates whether the `listItem` parameter is selected or not.
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+  }
+  object ListBase$SelectionChangeEventParameters {
+    
+    inline def apply(): ListBase$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      
+      inline def setListItems(value: js.Array[typings.openui5.sapMListItemBaseMod.default]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+      
+      inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
+      
+      inline def setListItemsVarargs(value: typings.openui5.sapMListItemBaseMod.default*): Self = StObject.set(x, "listItems", js.Array(value*))
+      
+      inline def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+      
+      inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    }
+  }
+  
+  trait ListBase$SwipeEventParameters extends StObject {
+    
+    /**
+      * The item which fired the swipe.
+      */
+    var listItem: js.UndefOr[typings.openui5.sapMListItemBaseMod.default] = js.undefined
+    
+    /**
+      * Holds which control caused the swipe event within the item.
+      */
+    var srcControl: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Aggregated `swipeContent` control that is shown on the right hand side of the item.
+      */
+    var swipeContent: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * Shows in which direction the user swipes and can have the value `BeginToEnd` (left to right in LTR languages
+      * and right to left in RTL languages) or `EndToBegin` (right to left in LTR languages and left to right
+      * in RTL languages)
+      */
+    var swipeDirection: js.UndefOr[
+        SwipeDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwipeDirection * / any */ String)
+      ] = js.undefined
+  }
+  object ListBase$SwipeEventParameters {
+    
+    inline def apply(): ListBase$SwipeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$SwipeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$SwipeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setListItem(value: typings.openui5.sapMListItemBaseMod.default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      
+      inline def setSrcControl(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "srcControl", value.asInstanceOf[js.Any])
+      
+      inline def setSrcControlUndefined: Self = StObject.set(x, "srcControl", js.undefined)
+      
+      inline def setSwipeContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "swipeContent", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeContentUndefined: Self = StObject.set(x, "swipeContent", js.undefined)
+      
+      inline def setSwipeDirection(
+        value: SwipeDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwipeDirection * / any */ String)
+      ): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
+      
+      inline def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
+    }
+  }
+  
+  trait ListBase$UpdateFinishedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The reason of the update, e.g. Binding, Filter, Sort, Growing, Change, Refresh, Context.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The total count of bound items. This can be used if the `growing` property is set to `true`.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object ListBase$UpdateFinishedEventParameters {
+    
+    inline def apply(): ListBase$UpdateFinishedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$UpdateFinishedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$UpdateFinishedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait ListBase$UpdateStartedEventParameters extends StObject {
+    
+    /**
+      * Actual number of items.
+      */
+    var actual: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The reason of the update, e.g. Binding, Filter, Sort, Growing, Change, Refresh, Context.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The total count of bound items. This can be used if the `growing` property is set to `true`.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object ListBase$UpdateStartedEventParameters {
+    
+    inline def apply(): ListBase$UpdateStartedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBase$UpdateStartedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBase$UpdateStartedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  type ListBaseBeforeOpenContextMenuEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$BeforeOpenContextMenuEventParameters]
+  
+  type ListBaseBeforeOpenContextMenuEventParameters = ListBase$BeforeOpenContextMenuEventParameters
+  
+  type ListBaseDeleteEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$DeleteEventParameters]
+  
+  type ListBaseDeleteEventParameters = ListBase$DeleteEventParameters
+  
+  type ListBaseGrowingFinishedEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingFinishedEventParameters]
+  
+  type ListBaseGrowingFinishedEventParameters = ListBase$GrowingFinishedEventParameters
+  
+  type ListBaseGrowingStartedEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingStartedEventParameters]
+  
+  type ListBaseGrowingStartedEventParameters = ListBase$GrowingStartedEventParameters
+  
+  type ListBaseItemPressEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$ItemPressEventParameters]
+  
+  type ListBaseItemPressEventParameters = ListBase$ItemPressEventParameters
+  
+  type ListBaseSelectEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$SelectEventParameters]
+  
+  type ListBaseSelectEventParameters = ListBase$SelectEventParameters
+  
+  type ListBaseSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$SelectionChangeEventParameters]
+  
+  type ListBaseSelectionChangeEventParameters = ListBase$SelectionChangeEventParameters
+  
   trait ListBaseSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Association to controls / ids which label this control (see WAI-ARIA attribute aria-labelledby).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Fired when the context menu is opened. When the context menu is opened, the binding context of the item
       * is set to the given `contextMenu`.
       */
-    var beforeOpenContextMenu: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpenContextMenu: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$BeforeOpenContextMenuEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines the context menu of the items.
       */
@@ -2576,10 +2970,15 @@ object sapMListBaseMod {
     /**
       * Fires when delete icon is pressed by user.
       */
-    var delete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var delete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$DeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.20.2
+      * @since 1.20.2
       *
       * When this property is set to `true`, the control will automatically display a busy indicator when it
       * detects that data is being loaded. This busy indicator blocks the interaction with the items until data
@@ -2596,7 +2995,7 @@ object sapMListBaseMod {
     var footerText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * If set to `true`, enables the growing feature of the control to load more items by requesting from the
       * model. **Note:**: This feature only works when an `items` aggregation is bound. Growing must not be used
@@ -2607,7 +3006,7 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Defines the direction of the growing feature. If set to `Downwards` the user has to scroll down to load
       * more items or the growing button is displayed at the bottom. If set to `Upwards` the user has to scroll
@@ -2618,15 +3017,20 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use "updateFinished" event.
       *
       * Fires after the new growing chunk has been fetched from the model and processed by the control.
       */
-    var growingFinished: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var growingFinished: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingFinishedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * If set to true, the user can scroll down/up to load more items. Otherwise a growing button is displayed
       * at the bottom/top of the control. **Note:** This property can only be used if the `growing` property
@@ -2638,15 +3042,20 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       * @deprecated (since 1.16.3) - Instead, use `updateStarted` event with listening `changeReason`.
       *
       * Fires before the new growing chunk is requested from the model.
       */
-    var growingStarted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var growingStarted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingStartedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Defines the number of items to be requested from the model for each grow. This property can only be used
       * if the `growing` property is set to `true`.
@@ -2654,7 +3063,7 @@ object sapMListBaseMod {
     var growingThreshold: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Defines the text displayed on the growing button. The default is a translated text ("More") coming from
       * the message bundle. This property can only be used if the `growing` property is set to `true`.
@@ -2662,7 +3071,7 @@ object sapMListBaseMod {
     var growingTriggerText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.14
+      * @since 1.14
       * @deprecated (since 1.16) - No longer has any functionality.
       *
       * Defines the header style of the control. Possible values are `Standard` and `Plain`.
@@ -2678,7 +3087,7 @@ object sapMListBaseMod {
     var headerText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * The header area can be used as a toolbar to add extra controls for user interactions. **Note:** When
       * set, this overwrites the `headerText` property.
@@ -2695,7 +3104,7 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * A toolbar that is placed below the header to show extra information to the user.
       */
@@ -2709,11 +3118,16 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Fires when an item is pressed unless the item's `type` property is `Inactive`.
       */
-    var itemPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$ItemPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items contained within this control.
@@ -2723,7 +3137,7 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Defines keyboard handling behavior of the control.
       */
@@ -2746,7 +3160,7 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Defines the multi-selection mode for the control. If this property is set to the `Default` value, the
       * `sap.m.Table` control renders the Select All checkbox in the column header, otherwise the Deselect All
@@ -2757,15 +3171,14 @@ object sapMListBaseMod {
       * **Note:** This property must be used with the `MultiSelect` mode. If this property is set to `ClearAll`,
       * then a selection of multiple items is still possible via the range selection feature except CTRL +
       * A. Additionally, the CTRL + SHIFT + A key combination can be used for deselecting all the
-      * items. For details on the range selection, please see {@link topic:8a0d4efa29d44ef39219c18d832012da Keyboard
-      * Handling for Item Selection}.
+      * items. For details on the range selection, please see {@link https://ui5.sap.com/#/topic/8a0d4efa29d44ef39219c18d832012da Keyboard Handling for Item Selection}.
       */
     var multiSelectMode: js.UndefOr[
         MultiSelectMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MultiSelectMode * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Defines the custom visualization if there is no data available. **Note:** If both a `noDataText` property
       * and a `noData` aggregation are provided, the `noData` aggregation takes priority. If the `noData` aggregation
@@ -2781,7 +3194,7 @@ object sapMListBaseMod {
     var noDataText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16.6
+      * @since 1.16.6
       *
       * If set to true, this control remembers and retains the selection of the items after a binding update
       * has been performed (e.g. sorting, filtering). **Note:** This feature works only if two-way data binding
@@ -2799,14 +3212,24 @@ object sapMListBaseMod {
       * Fires when selection is changed via user interaction. In `MultiSelect` mode, this event is also fired
       * on deselection.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Fires when selection is changed via user interaction inside the control.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether or not the text specified in the `noDataText` property is displayed.
@@ -2830,7 +3253,7 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Defines the section of the control that remains fixed at the top of the page during vertical scrolling
       * as long as the control is in the viewport.
@@ -2839,12 +3262,12 @@ object sapMListBaseMod {
       *
       * There are some known restrictions. A few are given below:
       * 	 - If the control is placed in layout containers that have the `overflow: hidden` or `overflow: auto`
-      * 			style definition, this can prevent the sticky elements of the control from becoming fixed at the top
-      * 			of the viewport.
+      *     style definition, this can prevent the sticky elements of the control from becoming fixed at the top
+      *     of the viewport.
       * 	 - If sticky column headers are enabled in the `sap.m.Table` control, setting focus on the column headers
-      * 			will let the table scroll to the top.
+      *     will let the table scroll to the top.
       * 	 - A transparent toolbar design is not supported for sticky bars. The toolbar will automatically get
-      * 			an intransparent background color.
+      *     an intransparent background color.
       * 	 - This feature supports only the default height of the toolbar control.
       */
     var sticky: js.UndefOr[
@@ -2861,13 +3284,18 @@ object sapMListBaseMod {
       * **Note:** There is no accessible alternative provided by the control for swiping. Applications that use
       * this functionality must provide an accessible alternative UI to perform the same action.
       */
-    var swipe: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var swipe: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SwipeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * User can swipe to bring in this control on the right hand side of an item. **Note:**
       * 	 - For non-touch screen devices, this functionality is ignored.
       * 	 - There is no accessible alternative provided by the control for swiping. Applications that use this
-      * 			functionality must provide an accessible alternative UI to perform the same action.
+      *     functionality must provide an accessible alternative UI to perform the same action.
       */
     var swipeContent: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
@@ -2880,20 +3308,30 @@ object sapMListBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Fires after `items` binding is updated and processed by the control.
       */
-    var updateFinished: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateFinished: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateFinishedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Fires before `items` binding is updated (e.g. sorting, filtering)
       *
       * **Note:** Event handler should not invalidate the control.
       */
-    var updateStarted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateStarted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateStartedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sets the width of the control.
@@ -2918,7 +3356,9 @@ object sapMListBaseMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeOpenContextMenu(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpenContextMenu", js.Any.fromFunction1(value))
+      inline def setBeforeOpenContextMenu(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$BeforeOpenContextMenuEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeOpenContextMenu", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenContextMenuUndefined: Self = StObject.set(x, "beforeOpenContextMenu", js.undefined)
       
@@ -2926,7 +3366,9 @@ object sapMListBaseMod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$DeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
@@ -2946,7 +3388,9 @@ object sapMListBaseMod {
       
       inline def setGrowingDirectionUndefined: Self = StObject.set(x, "growingDirection", js.undefined)
       
-      inline def setGrowingFinished(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "growingFinished", js.Any.fromFunction1(value))
+      inline def setGrowingFinished(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingFinishedEventParameters] => Unit
+      ): Self = StObject.set(x, "growingFinished", js.Any.fromFunction1(value))
       
       inline def setGrowingFinishedUndefined: Self = StObject.set(x, "growingFinished", js.undefined)
       
@@ -2954,7 +3398,9 @@ object sapMListBaseMod {
       
       inline def setGrowingScrollToLoadUndefined: Self = StObject.set(x, "growingScrollToLoad", js.undefined)
       
-      inline def setGrowingStarted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "growingStarted", js.Any.fromFunction1(value))
+      inline def setGrowingStarted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$GrowingStartedEventParameters] => Unit
+      ): Self = StObject.set(x, "growingStarted", js.Any.fromFunction1(value))
       
       inline def setGrowingStartedUndefined: Self = StObject.set(x, "growingStarted", js.undefined)
       
@@ -2994,7 +3440,9 @@ object sapMListBaseMod {
       
       inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
       
-      inline def setItemPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemPress", js.Any.fromFunction1(value))
+      inline def setItemPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$ItemPressEventParameters] => Unit
+      ): Self = StObject.set(x, "itemPress", js.Any.fromFunction1(value))
       
       inline def setItemPressUndefined: Self = StObject.set(x, "itemPress", js.undefined)
       
@@ -3040,11 +3488,15 @@ object sapMListBaseMod {
       
       inline def setRememberSelectionsUndefined: Self = StObject.set(x, "rememberSelections", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
@@ -3074,7 +3526,9 @@ object sapMListBaseMod {
         value: (Sticky | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Sticky * / any */ String))*
       ): Self = StObject.set(x, "sticky", js.Array(value*))
       
-      inline def setSwipe(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "swipe", js.Any.fromFunction1(value))
+      inline def setSwipe(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$SwipeEventParameters] => Unit
+      ): Self = StObject.set(x, "swipe", js.Any.fromFunction1(value))
       
       inline def setSwipeContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "swipeContent", value.asInstanceOf[js.Any])
       
@@ -3088,11 +3542,15 @@ object sapMListBaseMod {
       
       inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
       
-      inline def setUpdateFinished(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateFinished", js.Any.fromFunction1(value))
+      inline def setUpdateFinished(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateFinishedEventParameters] => Unit
+      ): Self = StObject.set(x, "updateFinished", js.Any.fromFunction1(value))
       
       inline def setUpdateFinishedUndefined: Self = StObject.set(x, "updateFinished", js.undefined)
       
-      inline def setUpdateStarted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateStarted", js.Any.fromFunction1(value))
+      inline def setUpdateStarted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateStartedEventParameters] => Unit
+      ): Self = StObject.set(x, "updateStarted", js.Any.fromFunction1(value))
       
       inline def setUpdateStartedUndefined: Self = StObject.set(x, "updateStarted", js.undefined)
       
@@ -3101,4 +3559,16 @@ object sapMListBaseMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type ListBaseSwipeEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$SwipeEventParameters]
+  
+  type ListBaseSwipeEventParameters = ListBase$SwipeEventParameters
+  
+  type ListBaseUpdateFinishedEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateFinishedEventParameters]
+  
+  type ListBaseUpdateFinishedEventParameters = ListBase$UpdateFinishedEventParameters
+  
+  type ListBaseUpdateStartedEvent = typings.openui5.sapUiBaseEventMod.default[ListBase$UpdateStartedEventParameters]
+  
+  type ListBaseUpdateStartedEventParameters = ListBase$UpdateStartedEventParameters
 }

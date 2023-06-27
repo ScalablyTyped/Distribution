@@ -1,5 +1,6 @@
 package typings.codemirrorAutocomplete
 
+import typings.codemirrorAutocomplete.anon.Class
 import typings.codemirrorAutocomplete.anon.Dispatch
 import typings.codemirrorAutocomplete.anon.From
 import typings.codemirrorAutocomplete.anon.Position
@@ -20,6 +21,8 @@ import typings.codemirrorState.mod.TransactionSpec
 import typings.codemirrorView.mod.Command
 import typings.codemirrorView.mod.EditorView
 import typings.codemirrorView.mod.KeyBinding
+import typings.codemirrorView.mod.Rect
+import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -200,6 +203,18 @@ object mod {
   val deleteBracketPair: StateCommand = js.native
   
   /**
+  Check if there is an active snippet with a next field for
+  `nextSnippetField` to move to.
+  */
+  inline def hasNextSnippetField(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasNextSnippetField")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+  Returns true if there is an active snippet and a previous field
+  for `prevSnippetField` to move to.
+  */
+  inline def hasPrevSnippetField(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPrevSnippetField")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
   Wrap the given completion source so that it will only fire when the
   cursor is in a syntax node with one of the given names.
   */
@@ -297,20 +312,19 @@ object mod {
   The order of fields defaults to textual order, but you can add
   numbers to placeholders (`${1}` or `${1:defaultText}`) to provide
   a custom order.
-  To include a literal `${` or `#{` in your template, put a
-  backslash after the dollar or hash and before the brace (`$\\{`).
-  This will be removed and the sequence will not be interpreted as a
-  placeholder.
+  To include a literal `{` or `}` in your template, put a backslash
+  in front of it. This will be removed and the brace will not be
+  interpreted as indicating a placeholder.
   */
   inline def snippet(template: String): js.Function4[
     /* editor */ Dispatch, 
-    /* _completion */ Completion, 
+    /* completion */ Completion | Null, 
     /* from */ Double, 
     /* to */ Double, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("snippet")(template.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* editor */ Dispatch, 
-    /* _completion */ Completion, 
+    /* completion */ Completion | Null, 
     /* from */ Double, 
     /* to */ Double, 
     Unit
@@ -361,6 +375,12 @@ object mod {
       (as in `"''''"`).
       */
     var brackets: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      When determining whether a given node may be a string, recognize
+      these prefixes before the opening quote.
+      */
+    var stringPrefixes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CloseBracketConfig {
     
@@ -381,6 +401,12 @@ object mod {
       inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
       
       inline def setBracketsVarargs(value: String*): Self = StObject.set(x, "brackets", js.Array(value*))
+      
+      inline def setStringPrefixes(value: js.Array[String]): Self = StObject.set(x, "stringPrefixes", value.asInstanceOf[js.Any])
+      
+      inline def setStringPrefixesUndefined: Self = StObject.set(x, "stringPrefixes", js.undefined)
+      
+      inline def setStringPrefixesVarargs(value: String*): Self = StObject.set(x, "stringPrefixes", js.Array(value*))
     }
   }
   
@@ -440,6 +466,15 @@ object mod {
     var label: String
     
     /**
+      Can be used to divide the completion list into sections.
+      Completions in a given section (matched by name) will be grouped
+      together, with a heading above them. Options without section
+      will appear above all sections. A string value is equivalent to
+      a `{name}` object.
+      */
+    var section: js.UndefOr[String | CompletionSection] = js.undefined
+    
+    /**
       The type of the completion. This is used to pick an icon to show
       for the completion. Icons are styled with a CSS class created by
       appending the type name to `"cm-completionIcon-"`. You can
@@ -486,6 +521,10 @@ object mod {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
+      inline def setSection(value: String | CompletionSection): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -513,7 +552,8 @@ object mod {
       completion, and should produce a DOM node to show. `position`
       determines where in the DOM the result appears, relative to
       other added widgets and the standard content. The default icons
-      have position 20, the label position 50, and the detail position 70.
+      have position 20, the label position 50, and the detail position
+      80.
       */
     var addToOptions: js.UndefOr[js.Array[Position]] = js.undefined
     
@@ -575,6 +615,26 @@ object mod {
     var `override`: js.UndefOr[js.Array[CompletionSource] | Null] = js.undefined
     
     /**
+      By default, [info](https://codemirror.net/6/docs/ref/#autocomplet.Completion.info) tooltips are
+      placed to the side of the selected. This option can be used to
+      override that. It will be given rectangles for the list of
+      completions, the selected option, the info element, and the
+      availble [tooltip space](https://codemirror.net/6/docs/ref/#view.tooltips^config.tooltipSpace),
+      and should return style and/or class strings for the info
+      element.
+      */
+    var positionInfo: js.UndefOr[
+        js.Function5[
+          /* view */ EditorView, 
+          /* list */ Rect, 
+          /* option */ Rect, 
+          /* info */ Rect, 
+          /* space */ Rect, 
+          Class
+        ]
+      ] = js.undefined
+    
+    /**
       By default, when completion opens, the first option is selected
       and can be confirmed with
       [`acceptCompletion`](https://codemirror.net/6/docs/ref/#autocomplete.acceptCompletion). When this
@@ -583,6 +643,12 @@ object mod {
       before you can confirm one.
       */
     var selectOnOpen: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      When given, this may return an additional CSS class to add to
+      the completion dialog element.
+      */
+    var tooltipClass: js.UndefOr[js.Function1[/* state */ EditorState, String]] = js.undefined
   }
   object CompletionConfig {
     
@@ -644,9 +710,19 @@ object mod {
       
       inline def setOverrideVarargs(value: CompletionSource*): Self = StObject.set(x, "override", js.Array(value*))
       
+      inline def setPositionInfo(
+        value: (/* view */ EditorView, /* list */ Rect, /* option */ Rect, /* info */ Rect, /* space */ Rect) => Class
+      ): Self = StObject.set(x, "positionInfo", js.Any.fromFunction5(value))
+      
+      inline def setPositionInfoUndefined: Self = StObject.set(x, "positionInfo", js.undefined)
+      
       inline def setSelectOnOpen(value: Boolean): Self = StObject.set(x, "selectOnOpen", value.asInstanceOf[js.Any])
       
       inline def setSelectOnOpenUndefined: Self = StObject.set(x, "selectOnOpen", js.undefined)
+      
+      inline def setTooltipClass(value: /* state */ EditorState => String): Self = StObject.set(x, "tooltipClass", js.Any.fromFunction1(value))
+      
+      inline def setTooltipClassUndefined: Self = StObject.set(x, "tooltipClass", js.undefined)
     }
   }
   
@@ -764,6 +840,56 @@ object mod {
       inline def setValidForFunction4(value: (/* text */ String, /* from */ Double, /* to */ Double, /* state */ EditorState) => Boolean): Self = StObject.set(x, "validFor", js.Any.fromFunction4(value))
       
       inline def setValidForUndefined: Self = StObject.set(x, "validFor", js.undefined)
+    }
+  }
+  
+  /**
+  Object used to describe a completion
+  [section](https://codemirror.net/6/docs/ref/#autocomplete.Completion.section). It is recommended to
+  create a shared object used by all the completions in a given
+  section.
+  */
+  trait CompletionSection extends StObject {
+    
+    /**
+      An optional function that renders the section header. Since the
+      headers are shown inside a list, you should make sure the
+      resulting element has a `display: list-item` style.
+      */
+    var header: js.UndefOr[js.Function1[/* section */ this.type, HTMLElement]] = js.undefined
+    
+    /**
+      The name of the section. If no `render` method is present, this
+      will be displayed above the options.
+      */
+    var name: String
+    
+    /**
+      By default, sections are ordered alphabetically by name. To
+      specify an explicit order, `rank` can be used. Sections with a
+      lower rank will be shown above sections with a higher rank.
+      */
+    var rank: js.UndefOr[Double] = js.undefined
+  }
+  object CompletionSection {
+    
+    inline def apply(name: String): CompletionSection = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompletionSection]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionSection] (val x: Self) extends AnyVal {
+      
+      inline def setHeader(value: CompletionSection => HTMLElement): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     }
   }
   

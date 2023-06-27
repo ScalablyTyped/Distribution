@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectionState
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsLibraryMod.TriStateCheckBoxState
@@ -140,13 +139,13 @@ object sapUiCommonsTriStateCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TriStateCheckBox` itself
       */
@@ -171,7 +170,7 @@ object sapUiCommonsTriStateCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -182,7 +181,7 @@ object sapUiCommonsTriStateCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TriStateCheckBox` itself
       */
@@ -200,13 +199,13 @@ object sapUiCommonsTriStateCheckBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TriStateCheckBoxChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -214,17 +213,19 @@ object sapUiCommonsTriStateCheckBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectionState): this.type = js.native
+    mParameters: TriStateCheckBox$ChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEditable editable}.
@@ -451,6 +452,33 @@ object sapUiCommonsTriStateCheckBoxMod {
     destState: TriStateCheckBoxState): Unit = js.native
   }
   
+  trait TriStateCheckBox$ChangeEventParameters extends StObject {
+    
+    /**
+      * Checks whether the box is flagged or not flagged.
+      */
+    var selectionState: js.UndefOr[String] = js.undefined
+  }
+  object TriStateCheckBox$ChangeEventParameters {
+    
+    inline def apply(): TriStateCheckBox$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TriStateCheckBox$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriStateCheckBox$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectionState(value: String): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionStateUndefined: Self = StObject.set(x, "selectionState", js.undefined)
+    }
+  }
+  
+  type TriStateCheckBoxChangeEvent = typings.openui5.sapUiBaseEventMod.default[TriStateCheckBox$ChangeEventParameters]
+  
+  type TriStateCheckBoxChangeEventParameters = TriStateCheckBox$ChangeEventParameters
+  
   trait TriStateCheckBoxSettings
     extends StObject
        with ControlSettings {
@@ -458,7 +486,12 @@ object sapUiCommonsTriStateCheckBoxMod {
     /**
       * Event is triggered when the control status is changed by the user by flagging or unflagging the checkbox.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TriStateCheckBox$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies whether the user shall be allowed to flag the check box
@@ -519,7 +552,9 @@ object sapUiCommonsTriStateCheckBoxMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TriStateCheckBoxSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TriStateCheckBox$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

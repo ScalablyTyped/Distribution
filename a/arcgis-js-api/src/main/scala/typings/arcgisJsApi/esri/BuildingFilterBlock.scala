@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingFilterBlock extends StObject {
   
   /**
-    * The SQL where clause used to match features to this filter block.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
-    */
+  		 * The SQL where clause used to match features to this filter block.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
+  		 */
   var filterExpression: String
   
   /**
-    * This object contains information about the filter mode of the filter block.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
-    */
+  		 * This object contains information about the filter mode of the filter block.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
+  		 */
   var filterMode: js.UndefOr[BuildingFilterBlockFilterMode] = js.undefined
   
   /**
-    * Title of the filter for display in UIs, for example when the filter block is edited in ArcGIS Pro.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
-    */
+  		 * Title of the filter for display in UIs, for example when the filter block is edited in ArcGIS Pro.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object BuildingFilterBlock {

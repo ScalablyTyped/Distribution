@@ -15,9 +15,9 @@ trait MediaControllerManager extends StObject {
     *
     * @returns The _MediaController Server_ object.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def createServer(): MediaControllerServer
   
@@ -29,9 +29,9 @@ trait MediaControllerManager extends StObject {
     *
     * @returns The _MediaController Client_ object.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getClient(): MediaControllerClient
 }

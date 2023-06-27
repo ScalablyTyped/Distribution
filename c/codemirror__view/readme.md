@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__view
 
-Typings are for version 6.2.4
+Typings are for version 6.13.0
 
 ## Library description:
 DOM view component for the CodeMirror code editor

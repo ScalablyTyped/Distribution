@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SketchTooltipOptions")
 @js.native
 /**
-  * The `SketchTooltipOptions` allows users to configure the tooltips which are shown while sketching and editing.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html)
-  */
+		 * The `SketchTooltipOptions` allows users to configure the tooltips which are shown while sketching and editing.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html)
+		 */
 open class SketchTooltipOptions ()
   extends StObject
      with typings.arcgisJsApi.esri.SketchTooltipOptions {

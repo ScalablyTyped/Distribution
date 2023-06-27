@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionServiceCapabilitiesGeometryCapabilities extends StObject {
   
   /**
-    * The maximum bounding rectangle size along the x-axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * The maximum bounding rectangle size along the x-axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var geometryMaxBoundingRectangleSizeX: Double
   
   /**
-    * The maximum bounding rectangle size along the y-axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * The maximum bounding rectangle size along the y-axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var geometryMaxBoundingRectangleSizeY: Double
   
   /**
-    * Specifies what geometry types are supported by the graph such as `Point`, `Multipoint`, `Polyline`, `Polygon`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies what geometry types are supported by the graph such as `Point`, `Multipoint`, `Polyline`, `Polygon`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportedGeometryTypes: js.Array[String]
   
   /**
-    * Specifies if the knowledge graph service supports m-values on geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if the knowledge graph service supports m-values on geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportsMValues: Double
   
   /**
-    * Specifies if the knowledge graph service supports z-values on geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Specifies if the knowledge graph service supports z-values on geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var supportsZValues: Double
 }
 object ServiceDefinitionServiceCapabilitiesGeometryCapabilities {

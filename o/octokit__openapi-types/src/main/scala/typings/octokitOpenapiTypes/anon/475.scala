@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `475` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Contactemail]
+  var invitation_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['invitation-id'] */ js.Any
 }
 object `475` {
   
-  inline def apply(applicationSlashjson: js.Array[Contactemail]): `475` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(
+    invitation_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['invitation-id'] */ js.Any
+  ): `475` = {
+    val __obj = js.Dynamic.literal(invitation_id = invitation_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`475`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `475`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Contactemail]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: Contactemail*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setInvitation_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['invitation-id'] */ js.Any
+    ): Self = StObject.set(x, "invitation_id", value.asInstanceOf[js.Any])
   }
 }

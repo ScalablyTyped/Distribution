@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureTableVisibleElements extends StObject {
   
   /**
-    * _(Since 4.23)_ Indicates whether to display the menu items within the individual columns.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
-    */
+  		 * _(Since 4.23)_ Indicates whether to display the menu items within the individual columns.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+  		 */
   var columnMenus: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the feature table's header information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
-    */
+  		 * Indicates whether to display the feature table's header information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+  		 */
   var header: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the feature table's menu.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
-    */
+  		 * Indicates whether to display the feature table's menu.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+  		 */
   var menu: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The menu items within the feature table menu.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
-    */
+  		 * The menu items within the feature table menu.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+  		 */
   var menuItems: js.UndefOr[VisibleElementsMenuItems] = js.undefined
   
   /**
-    * Indicates whether to display the selection column in the table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
-    */
+  		 * Indicates whether to display the selection column in the table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
+  		 */
   var selectionColumn: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureTableVisibleElements {

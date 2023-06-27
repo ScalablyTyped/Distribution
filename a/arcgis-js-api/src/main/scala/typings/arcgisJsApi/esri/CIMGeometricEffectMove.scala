@@ -9,24 +9,24 @@ trait CIMGeometricEffectMove
      with CIMGeometricEffect {
   
   /**
-    * The distance to move the symbol along the X-axis of the feature geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
-    */
+  		 * The distance to move the symbol along the X-axis of the feature geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance to move the symbol along the Y-axis of the feature geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
-    */
+  		 * The distance to move the symbol along the Y-axis of the feature geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectMove)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove

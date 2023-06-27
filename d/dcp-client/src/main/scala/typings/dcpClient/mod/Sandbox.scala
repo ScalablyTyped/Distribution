@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Sandbox () extends StObject {
   
   /**
-    * @sliceError - Emitted when the slice the sandbox was working on throws an error. The first argument is the same payload from sliceStart, the second argument is the error instance.
-    * @sliceEnd - Emitted when the slice either finishes or throws an error. The callback argument is the payload from sliceStart.
-    * @terminate - Emitted when the sandbox environment is terminated. The sandbox will not be used after this event is emitted.
+    * sliceError - Emitted when the slice the sandbox was working on throws an error. The first argument is the same payload from sliceStart, the second argument is the error instance.
+    * sliceEnd - Emitted when the slice either finishes or throws an error. The callback argument is the payload from sliceStart.
+    * terminate - Emitted when the sandbox environment is terminated. The sandbox will not be used after this event is emitted.
     */
   def addEventListener(event: sliceError | sliceEnd | terminate, listener: js.Function0[Unit]): Unit = js.native
   /**

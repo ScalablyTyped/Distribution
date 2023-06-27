@@ -11,6 +11,8 @@ import typings.sentryCore.anon.FnCallNameContext
 import typings.sentryCore.anon.FnCallUser
 import typings.sentryCore.typesScopeMod.Scope
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesCheckinMod.CheckIn
+import typings.sentryTypes.typesCheckinMod.MonitorConfig
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesExtraMod.Extra
@@ -34,6 +36,9 @@ object typesExportsMod {
   val ^ : js.Any = js.native
   
   inline def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallBreadcrumbHint]]
+  
+  inline def captureCheckIn(checkIn: CheckIn): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureCheckIn")(checkIn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureCheckIn(checkIn: CheckIn, upsertMonitorConfig: MonitorConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureCheckIn")(checkIn.asInstanceOf[js.Any], upsertMonitorConfig.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
   inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]

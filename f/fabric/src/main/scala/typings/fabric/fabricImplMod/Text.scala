@@ -544,7 +544,6 @@ object Text {
   /**
     * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
     * @static
-    * @memberOf fabric.Text
     * @param {SVGElement} element Element to parse
     * @param {Function} callback callback function invoked after parsing
     * @param {Object} [options] Options object
@@ -557,7 +556,6 @@ object Text {
   /**
     * Returns fabric.Text instance from an object representation
     * @static
-    * @memberOf fabric.Text
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */

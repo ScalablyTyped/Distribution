@@ -55,7 +55,7 @@ open class BootstrapTable protected ()
   
   /**
     * Call this function to do column filtering on table.
-    * @example:
+    * @example
     *  // Filtering passing an array of values
     *  this.refs.table.handleFilterData({
     *      name: { type: 'ArrayFilter', value: ['Item name 3', 'Item name 4'] },

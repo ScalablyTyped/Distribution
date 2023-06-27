@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-hwb-function
 
-Typings are for version 2.2.1
+Typings are for version 2.2.2
 
 ## Library description:
 Use hwb() color functions in CSS

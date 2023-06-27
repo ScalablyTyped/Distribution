@@ -11,10 +11,10 @@ trait InheritedDomain
      with Domain {
   
   /**
-    * The domain type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-InheritedDomain.html#type)
-    */
+  		 * The domain type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-InheritedDomain.html#type)
+  		 */
   @JSName("type")
   val type_InheritedDomain: inherited = js.native
 }

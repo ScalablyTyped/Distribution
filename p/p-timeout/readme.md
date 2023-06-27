@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-timeout
 
-Typings are for version 6.1.1
+Typings are for version 6.1.2
 
 ## Library description:
 Timeout a promise after a specified amount of time

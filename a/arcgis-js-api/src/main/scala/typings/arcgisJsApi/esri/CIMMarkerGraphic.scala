@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMMarkerGraphic extends StObject {
   
   /**
-    * The geometry of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
-    */
+  		 * The geometry of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
+  		 */
   var geometry: Any
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The symbol used to draw the marker graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
-    */
+  		 * The symbol used to draw the marker graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
+  		 */
   var symbol: CIMPointSymbol | CIMLineSymbol | CIMPolygonSymbol | CIMTextSymbol
   
   /**
-    * The text that is defined within the marker if drawn with a text symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
-    */
+  		 * The text that is defined within the marker if drawn with a text symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerGraphic)
+  		 */
   var textString: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic

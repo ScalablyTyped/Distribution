@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachmentEdit extends StObject {
   
   /**
-    * The attachment to be added, updated or deleted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The attachment to be added, updated or deleted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var attachment: AttachmentEditAttachment
   
   /**
-    * The feature, `objectId` or `globalId` of feature associated with the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The feature, `objectId` or `globalId` of feature associated with the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var feature: Graphic | Double | String
 }
 object AttachmentEdit {

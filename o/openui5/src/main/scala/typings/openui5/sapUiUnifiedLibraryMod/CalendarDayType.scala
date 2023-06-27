@@ -122,7 +122,7 @@ object CalendarDayType extends StObject {
   /* "Type10" */ val Type10: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type10 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -133,7 +133,7 @@ object CalendarDayType extends StObject {
   /* "Type11" */ val Type11: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type11 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -144,7 +144,7 @@ object CalendarDayType extends StObject {
   /* "Type12" */ val Type12: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type12 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -155,7 +155,7 @@ object CalendarDayType extends StObject {
   /* "Type13" */ val Type13: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type13 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -166,7 +166,7 @@ object CalendarDayType extends StObject {
   /* "Type14" */ val Type14: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type14 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -177,7 +177,7 @@ object CalendarDayType extends StObject {
   /* "Type15" */ val Type15: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type15 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -188,7 +188,7 @@ object CalendarDayType extends StObject {
   /* "Type16" */ val Type16: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type16 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -199,7 +199,7 @@ object CalendarDayType extends StObject {
   /* "Type17" */ val Type17: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type17 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -210,7 +210,7 @@ object CalendarDayType extends StObject {
   /* "Type18" */ val Type18: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type18 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */
@@ -221,7 +221,7 @@ object CalendarDayType extends StObject {
   /* "Type19" */ val Type19: typings.openui5.sapUiUnifiedLibraryMod.CalendarDayType.Type19 & String = js.native
   
   /**
-    * @SINCE 1.50
+    * @since 1.50
     *
     * The semantic meaning must be defined by the app. It can be displayed in a legend.
     */

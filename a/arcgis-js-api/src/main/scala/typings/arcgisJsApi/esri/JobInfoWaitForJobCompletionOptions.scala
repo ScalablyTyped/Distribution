@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobInfoWaitForJobCompletionOptions extends StObject {
   
   /**
-    * The time in millisecond between remote job status requests.
-    *
-    * @default 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
-    */
+  		 * The time in millisecond between remote job status requests.
+  		 *
+  		 * @default 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
+  		 */
   var interval: js.UndefOr[Any] = js.undefined
   
   /**
-    * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
-    */
+  		 * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
+  		 */
   var signal: js.UndefOr[Any] = js.undefined
   
   /**
-    * Callback function that is called at the specified interval.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
-    */
+  		 * Callback function that is called at the specified interval.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#waitForJobCompletion)
+  		 */
   var statusCallback: js.UndefOr[Any] = js.undefined
 }
 object JobInfoWaitForJobCompletionOptions {

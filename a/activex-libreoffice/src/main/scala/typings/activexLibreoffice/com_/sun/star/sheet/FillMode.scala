@@ -33,7 +33,7 @@ object FillMode {
     * specifies an arithmetic series for date values. <p>Cell by cell, the value used to fill the cells is increased
     *
     * by a specified number of days</p>
-    * @@see com::sun::star::sheet::FillDateMode  any date value matching the specified condition is valid.
+    * @see com::sun::star::sheet::FillDateMode  any date value matching the specified condition is valid.
     */
   inline def DATE: `3` = 3.asInstanceOf[`3`]
   

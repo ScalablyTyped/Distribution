@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("WidgetStack")
 @js.native
-open class WidgetStack ()
+/**
+  * _Stack element shown in widget._
+  * @see https://docs.scriptable.app/widgetstack
+  */
+/* private */ open class WidgetStack ()
   extends StObject
      with typings.scriptableIos.WidgetStack

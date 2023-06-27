@@ -124,14 +124,14 @@ object sapMDateTimePickerMod {
     extends typings.openui5.sapMDatePickerMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Apply the correct icon to the used Date control
       */
     def getIconSrc(): Unit = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getMinutesStep minutesStep}.
       *
@@ -145,7 +145,7 @@ object sapMDateTimePickerMod {
     def getMinutesStep(): int = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getSecondsStep secondsStep}.
       *
@@ -159,7 +159,7 @@ object sapMDateTimePickerMod {
     def getSecondsStep(): int = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getShowCurrentTimeButton showCurrentTimeButton}.
       *
@@ -172,7 +172,7 @@ object sapMDateTimePickerMod {
     def getShowCurrentTimeButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Gets current value of property {@link #getShowTimezone showTimezone}.
       *
@@ -183,7 +183,7 @@ object sapMDateTimePickerMod {
     def getShowTimezone(): Boolean = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Gets current value of property {@link #getTimezone timezone}.
       *
@@ -197,7 +197,7 @@ object sapMDateTimePickerMod {
     def getTimezone(): String = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getMinutesStep minutesStep}.
       *
@@ -217,7 +217,7 @@ object sapMDateTimePickerMod {
     iMinutesStep: int): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getSecondsStep secondsStep}.
       *
@@ -237,7 +237,7 @@ object sapMDateTimePickerMod {
     iSecondsStep: int): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getShowCurrentTimeButton showCurrentTimeButton}.
       *
@@ -256,7 +256,7 @@ object sapMDateTimePickerMod {
     bShowCurrentTimeButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Sets a new value for property {@link #getShowTimezone showTimezone}.
       *
@@ -272,7 +272,7 @@ object sapMDateTimePickerMod {
     bShowTimezone: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Sets a new value for property {@link #getTimezone timezone}.
       *
@@ -296,7 +296,7 @@ object sapMDateTimePickerMod {
        with DatePickerSettings {
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets the minutes step. If the step is less than 1, it will be automatically converted back to 1. The
       * minutes clock is populated only by multiples of the step.
@@ -304,7 +304,7 @@ object sapMDateTimePickerMod {
     var minutesStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets the seconds step. If the step is less than 1, it will be automatically converted back to 1. The
       * seconds clock is populated only by multiples of the step.
@@ -312,7 +312,7 @@ object sapMDateTimePickerMod {
     var secondsStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Determines whether there is a shortcut navigation to current time.
       */
@@ -321,7 +321,7 @@ object sapMDateTimePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Determines whether to show the timezone or not.
       */
@@ -330,7 +330,7 @@ object sapMDateTimePickerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * The IANA timezone ID, e.g `"Europe/Berlin"`. For display purposes only in combination with `showTimezone`
       * property. The `value` property is a string representation of a date and time and is not related to the

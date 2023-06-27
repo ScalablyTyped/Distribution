@@ -12,19 +12,19 @@ trait BaseTileLayerProperties
      with BlendLayerProperties {
   
   /**
-    * The spatial reference of the layer.
-    *
-    * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer.
+  		 *
+  		 * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The tiling scheme information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#tileInfo)
-    */
+  		 * The tiling scheme information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#tileInfo)
+  		 */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
 object BaseTileLayerProperties {

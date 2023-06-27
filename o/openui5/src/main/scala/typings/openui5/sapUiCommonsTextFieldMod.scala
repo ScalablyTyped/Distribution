@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.LiveValue
-import typings.openui5.anon.NewValue
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -140,14 +138,14 @@ object sapUiCommonsTextFieldMod {
   trait FocusInfo extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * ID of the component
       */
     var id: js.UndefOr[String] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * User input
       */
@@ -182,7 +180,7 @@ object sapUiCommonsTextFieldMod {
        with IFormContent {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Compares the previous value with the current value and fires the change event if the TextField is editable
       * and the value has changed.
@@ -239,13 +237,13 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TextField` itself
       */
@@ -271,7 +269,7 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -282,7 +280,7 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TextField` itself
       */
@@ -305,13 +303,13 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TextField` itself
       */
@@ -338,7 +336,7 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -349,7 +347,7 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TextField` itself
       */
@@ -380,13 +378,13 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -404,13 +402,13 @@ object sapUiCommonsTextFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextFieldLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -418,7 +416,7 @@ object sapUiCommonsTextFieldMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -428,20 +426,22 @@ object sapUiCommonsTextFieldMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: NewValue): this.type = js.native
+    mParameters: TextField$ChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: LiveValue): this.type = js.native
+    mParameters: TextField$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleRole accessibleRole}.
@@ -455,14 +455,12 @@ object sapUiCommonsTextFieldMod {
     def getAccessibleRole(): AccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AccessibleRole * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -522,7 +520,7 @@ object sapUiCommonsTextFieldMod {
     def getImeMode(): ImeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImeMode * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Method for accessing the DOM Ref of the input element.
       *
@@ -560,7 +558,7 @@ object sapUiCommonsTextFieldMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Gets current value of property {@link #getPlaceholder placeholder}.
       *
@@ -637,7 +635,7 @@ object sapUiCommonsTextFieldMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler called when control is receiving the focus
       */
@@ -647,7 +645,7 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for keyup. fire the liveChange event
       */
@@ -657,7 +655,7 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler called when enter key is pressed.
       * See:
@@ -669,7 +667,7 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler called when control is losing the focus
       */
@@ -679,7 +677,7 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler called when text selection starts. When the text field is disabled, the text should not
       * be selectable, so cancel the event.
@@ -897,7 +895,7 @@ object sapUiCommonsTextFieldMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Sets a new value for property {@link #getPlaceholder placeholder}.
       *
@@ -1041,6 +1039,60 @@ object sapUiCommonsTextFieldMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait TextField$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new / changed value of the `TextField`.
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object TextField$ChangeEventParameters {
+    
+    inline def apply(): TextField$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextField$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextField$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait TextField$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Current visible value of the `TextField`.
+      */
+    var liveValue: js.UndefOr[String] = js.undefined
+  }
+  object TextField$LiveChangeEventParameters {
+    
+    inline def apply(): TextField$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextField$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextField$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLiveValue(value: String): Self = StObject.set(x, "liveValue", value.asInstanceOf[js.Any])
+      
+      inline def setLiveValueUndefined: Self = StObject.set(x, "liveValue", js.undefined)
+    }
+  }
+  
+  type TextFieldChangeEvent = typings.openui5.sapUiBaseEventMod.default[TextField$ChangeEventParameters]
+  
+  type TextFieldChangeEventParameters = TextField$ChangeEventParameters
+  
+  type TextFieldLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[TextField$LiveChangeEventParameters]
+  
+  type TextFieldLiveChangeEventParameters = TextField$LiveChangeEventParameters
+  
   trait TextFieldSettings
     extends StObject
        with ControlSettings {
@@ -1066,7 +1118,12 @@ object sapUiCommonsTextFieldMod {
       * Event is fired when the text in the field has changed AND the focus leaves the TextField or the Enter
       * key is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextField$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Font type. valid values are Standard and Monospace.
@@ -1106,7 +1163,12 @@ object sapUiCommonsTextFieldMod {
       * This is not the content of the value property. The value property is only updated by ENTER and by leaving
       * the control.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextField$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Maximum number of characters. Value '0' means the feature is switched off.
@@ -1120,7 +1182,7 @@ object sapUiCommonsTextFieldMod {
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.14.0
+      * @since 1.14.0
       *
       * Placeholder for the text field.
       */
@@ -1196,7 +1258,9 @@ object sapUiCommonsTextFieldMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextField$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1224,7 +1288,9 @@ object sapUiCommonsTextFieldMod {
       
       inline def setImeModeUndefined: Self = StObject.set(x, "imeMode", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextField$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

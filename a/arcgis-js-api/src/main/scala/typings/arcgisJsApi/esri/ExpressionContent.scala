@@ -14,17 +14,17 @@ trait ExpressionContent
      with contentContent {
   
   /**
-    * Contains the Arcade expression used to create a popup content element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html#expressionInfo)
-    */
+  		 * Contains the Arcade expression used to create a popup content element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html#expressionInfo)
+  		 */
   var expressionInfo: ElementExpressionInfo = js.native
   
   /**
-    * The type of popup element displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html#type)
-    */
+  		 * The type of popup element displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ExpressionContent.html#type)
+  		 */
   @JSName("type")
   val type_ExpressionContent: expression = js.native
 }

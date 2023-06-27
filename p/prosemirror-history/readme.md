@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-history
 
-Typings are for version 1.3.1
+Typings are for version 1.3.2
 
 ## Library description:
 Undo history for ProseMirror

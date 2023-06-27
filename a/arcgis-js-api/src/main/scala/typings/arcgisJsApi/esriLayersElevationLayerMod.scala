@@ -15,44 +15,44 @@ object esriLayersElevationLayerMod {
   @JSImport("esri/layers/ElevationLayer", JSImport.Namespace)
   @js.native
   /**
-    * ElevationLayer is a tile layer used for rendering elevations in [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html)
-    */
+  		 * ElevationLayer is a tile layer used for rendering elevations in [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with ElevationLayer {
     def this(properties: ElevationLayerProperties) = this()
     
     /**
-      * The copyright text as defined by the service.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
-      */
+    		 * The copyright text as defined by the service.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
+    		 */
     /* CompleteClass */
     var copyright: String = js.native
     
     /**
-      * The portal item from which the layer is loaded.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-      */
+    		 * The portal item from which the layer is loaded.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+    		 */
     /* CompleteClass */
     var portalItem: PortalItem = js.native
     
     /**
-      * The spatial reference of the layer as defined by the service.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#spatialReference)
-      */
+    		 * The spatial reference of the layer as defined by the service.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#spatialReference)
+    		 */
     /* CompleteClass */
     override val spatialReference: SpatialReference = js.native
     
     /**
-      * Contains information about the tiling scheme for the layer.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
-      */
+    		 * Contains information about the tiling scheme for the layer.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
+    		 */
     /* CompleteClass */
     var tileInfo: TileInfo = js.native
   }

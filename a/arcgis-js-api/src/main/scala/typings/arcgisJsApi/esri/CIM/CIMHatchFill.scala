@@ -10,28 +10,28 @@ trait CIMHatchFill
      with CIMSymbolLayerType {
   
   /**
-    * The line symbol that is used to draw the hatch lines in the fill.
-    */
+  			 * The line symbol that is used to draw the hatch lines in the fill.
+  			 */
   var lineSymbol: js.UndefOr[CIMLineSymbol] = js.undefined
   
   /**
-    * How much to move the stroke to a new X-position.
-    */
+  			 * How much to move the stroke to a new X-position.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * How much to move the stroke to a new Y-position.
-    */
+  			 * How much to move the stroke to a new Y-position.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The angle of rotation for all the strokes, in degrees.
-    */
+  			 * The angle of rotation for all the strokes, in degrees.
+  			 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance between the line symbols in the hatch pattern.
-    */
+  			 * The distance between the line symbols in the hatch pattern.
+  			 */
   var separation: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

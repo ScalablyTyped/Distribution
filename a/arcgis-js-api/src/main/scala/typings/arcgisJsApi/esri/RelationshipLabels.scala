@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipLabels extends StObject {
   
   /**
-    * The label corresponding with the bottom corner of the legend if the focus is set to `HH`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
-    */
+  		 * The label corresponding with the bottom corner of the legend if the focus is set to `HH`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
+  		 */
   var bottom: String
   
   /**
-    * The label corresponding with the left corner of the legend (if the focus is set to `HH`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
-    */
+  		 * The label corresponding with the left corner of the legend (if the focus is set to `HH`).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
+  		 */
   var left: String
   
   /**
-    * The label corresponding with the right corner of the legend (if the focus is set to `HH`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
-    */
+  		 * The label corresponding with the right corner of the legend (if the focus is set to `HH`).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
+  		 */
   var right: String
   
   /**
-    * The label corresponding with the top corner of the legend if the focus is set to `HH`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
-    */
+  		 * The label corresponding with the top corner of the legend if the focus is set to `HH`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipLabels)
+  		 */
   var top: String
 }
 object RelationshipLabels {

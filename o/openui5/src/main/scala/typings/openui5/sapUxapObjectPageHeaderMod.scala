@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DomRef_
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMAvatarColorMod.AvatarColor
 import typings.openui5.sapMAvatarShapeMod.AvatarShape
@@ -25,9 +24,9 @@ object sapUxapObjectPageHeaderMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:0fecbce45e39406aa939bd25e89823f4 Object Page Classic Header}
-    * 	{@link topic:d2ef0099542d44dc868719d908e576d0 Object Page Headers}
-    * 	{@link topic:9c9d94fd28284539a9a5a57e9caf82a8 Object Page Headers Comparison}
+    * 	{@link https://ui5.sap.com/#/topic/0fecbce45e39406aa939bd25e89823f4 Object Page Classic Header}
+    * 	{@link https://ui5.sap.com/#/topic/d2ef0099542d44dc868719d908e576d0 Object Page Headers}
+    * 	{@link https://ui5.sap.com/#/topic/9c9d94fd28284539a9a5a57e9caf82a8 Object Page Headers Comparison}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/snapping-header/ Object Page Header}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-page/ UX Guidelines: Object Page}
     */
@@ -178,13 +177,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit]
     ): this.type = js.native
     def attachMarkChangesPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -210,7 +209,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit]
     ): this.type = js.native
     def attachMarkChangesPress(
       /**
@@ -221,7 +220,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -243,13 +242,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit]
     ): this.type = js.native
     def attachMarkLockedPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -275,7 +274,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit]
     ): this.type = js.native
     def attachMarkLockedPress(
       /**
@@ -286,7 +285,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -308,13 +307,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def attachTitleSelectorPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -340,7 +339,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def attachTitleSelectorPress(
       /**
@@ -351,7 +350,7 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageHeader` itself
       */
@@ -375,7 +374,7 @@ object sapUxapObjectPageHeaderMod {
     def destroyBreadCrumbsLinks(): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Destroys the breadcrumbs in the aggregation {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -391,7 +390,7 @@ object sapUxapObjectPageHeaderMod {
     def destroyNavigationBar(): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Destroys the sideContentButton in the aggregation {@link #getSideContentButton sideContentButton}.
       *
@@ -400,7 +399,7 @@ object sapUxapObjectPageHeaderMod {
     def destroySideContentButton(): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Destroys the titleSelectorTooltip in the aggregation {@link #getTitleSelectorTooltip titleSelectorTooltip}.
       *
@@ -420,13 +419,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit]
     ): this.type = js.native
     def detachMarkChangesPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkChangesPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -445,13 +444,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit]
     ): this.type = js.native
     def detachMarkLockedPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderMarkLockedPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -470,13 +469,13 @@ object sapUxapObjectPageHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def detachTitleSelectorPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -484,43 +483,49 @@ object sapUxapObjectPageHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:markChangesPress markChangesPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMarkChangesPress(): this.type = js.native
-    def fireMarkChangesPress(/**
+    def fireMarkChangesPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DomRef_): this.type = js.native
+    mParameters: ObjectPageHeader$MarkChangesPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:markLockedPress markLockedPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMarkLockedPress(): this.type = js.native
-    def fireMarkLockedPress(/**
+    def fireMarkLockedPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DomRef_): this.type = js.native
+    mParameters: ObjectPageHeader$MarkLockedPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:titleSelectorPress titleSelectorPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTitleSelectorPress(): this.type = js.native
-    def fireTitleSelectorPress(/**
+    def fireTitleSelectorPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DomRef_): this.type = js.native
+    mParameters: ObjectPageHeader$TitleSelectorPressEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getActions actions}.
@@ -545,7 +550,7 @@ object sapUxapObjectPageHeaderMod {
     def getBreadCrumbsLinks(): js.Array[typings.openui5.sapMLinkMod.default] = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets content of aggregation {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -613,7 +618,7 @@ object sapUxapObjectPageHeaderMod {
     def getIsObjectTitleAlwaysVisible(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getMarkChanges markChanges}.
       *
@@ -680,7 +685,7 @@ object sapUxapObjectPageHeaderMod {
     def getObjectImageAlt(): String = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Gets current value of property {@link #getObjectImageBackgroundColor objectImageBackgroundColor}.
       *
@@ -777,7 +782,7 @@ object sapUxapObjectPageHeaderMod {
     def getShowTitleSelector(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets content of aggregation {@link #getSideContentButton sideContentButton}.
       *
@@ -786,7 +791,7 @@ object sapUxapObjectPageHeaderMod {
     def getSideContentButton(): typings.openui5.sapMButtonMod.default = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets content of aggregation {@link #getTitleSelectorTooltip titleSelectorTooltip}.
       *
@@ -928,7 +933,7 @@ object sapUxapObjectPageHeaderMod {
     ): typings.openui5.sapMLinkMod.default | Null = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets the aggregated {@link #getBreadcrumbs breadcrumbs}.
       *
@@ -1016,7 +1021,7 @@ object sapUxapObjectPageHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getMarkChanges markChanges}.
       *
@@ -1116,7 +1121,7 @@ object sapUxapObjectPageHeaderMod {
     sObjectImageAlt: String): this.type = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Sets a new value for property {@link #getObjectImageBackgroundColor objectImageBackgroundColor}.
       *
@@ -1281,7 +1286,7 @@ object sapUxapObjectPageHeaderMod {
     bShowTitleSelector: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets the aggregated {@link #getSideContentButton sideContentButton}.
       *
@@ -1299,7 +1304,7 @@ object sapUxapObjectPageHeaderMod {
       */
     vTitleSelectorTooltip: String): this.type = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets the aggregated {@link #getTitleSelectorTooltip titleSelectorTooltip}.
       *
@@ -1312,6 +1317,83 @@ object sapUxapObjectPageHeaderMod {
     vTitleSelectorTooltip: typings.openui5.sapUiCoreTooltipBaseMod.default
     ): this.type = js.native
   }
+  
+  trait ObjectPageHeader$MarkChangesPressEventParameters extends StObject {
+    
+    /**
+      * DOM reference of the changed item's icon to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+  }
+  object ObjectPageHeader$MarkChangesPressEventParameters {
+    
+    inline def apply(): ObjectPageHeader$MarkChangesPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageHeader$MarkChangesPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageHeader$MarkChangesPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  trait ObjectPageHeader$MarkLockedPressEventParameters extends StObject {
+    
+    /**
+      * DOM reference of the lock item's icon to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+  }
+  object ObjectPageHeader$MarkLockedPressEventParameters {
+    
+    inline def apply(): ObjectPageHeader$MarkLockedPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageHeader$MarkLockedPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageHeader$MarkLockedPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  trait ObjectPageHeader$TitleSelectorPressEventParameters extends StObject {
+    
+    /**
+      * DOM reference of the title item's icon to be used for positioning.
+      */
+    var domRef: js.UndefOr[String] = js.undefined
+  }
+  object ObjectPageHeader$TitleSelectorPressEventParameters {
+    
+    inline def apply(): ObjectPageHeader$TitleSelectorPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageHeader$TitleSelectorPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageHeader$TitleSelectorPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  type ObjectPageHeaderMarkChangesPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkChangesPressEventParameters]
+  
+  type ObjectPageHeaderMarkChangesPressEventParameters = ObjectPageHeader$MarkChangesPressEventParameters
+  
+  type ObjectPageHeaderMarkLockedPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkLockedPressEventParameters]
+  
+  type ObjectPageHeaderMarkLockedPressEventParameters = ObjectPageHeader$MarkLockedPressEventParameters
   
   trait ObjectPageHeaderSettings
     extends StObject
@@ -1340,7 +1422,7 @@ object sapUxapObjectPageHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * The breadcrumbs displayed in the `ObjectPageHeader`. If this aggregation is set, the `breadCrumbsLinks`
       * aggregation is omitted.
@@ -1386,7 +1468,7 @@ object sapUxapObjectPageHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Marks that there are unsaved changes in the objectPageHeader. The markChanges state cannot be used together
       * with the markLocked state. If both are set to true, only the locked state will be displayed.
@@ -1398,7 +1480,12 @@ object sapUxapObjectPageHeaderMod {
     /**
       * The event is fired when the unsaved changes button is pressed
       */
-    var markChangesPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var markChangesPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkChangesPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Set the favorite state to true or false. The showMarkers property must be true for this property to take
@@ -1426,7 +1513,12 @@ object sapUxapObjectPageHeaderMod {
     /**
       * The event is fired when the Locked button is pressed
       */
-    var markLockedPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var markLockedPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkLockedPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * An instance of sap.m.Bar to be embedded in the header
@@ -1439,7 +1531,7 @@ object sapUxapObjectPageHeaderMod {
     var objectImageAlt: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Determines the background color of the image placeholder or icon if valid icon URI is provided.
       */
@@ -1500,7 +1592,7 @@ object sapUxapObjectPageHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * A button that is used for opening the side content of the page or some additional content.
       */
@@ -1509,10 +1601,15 @@ object sapUxapObjectPageHeaderMod {
     /**
       * The event is fired when the objectPage header title selector (down-arrow) is pressed
       */
-    var titleSelectorPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var titleSelectorPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$TitleSelectorPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * A custom tooltip for the title selector button.
       *
@@ -1577,7 +1674,9 @@ object sapUxapObjectPageHeaderMod {
       
       inline def setMarkChanges(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "markChanges", value.asInstanceOf[js.Any])
       
-      inline def setMarkChangesPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "markChangesPress", js.Any.fromFunction1(value))
+      inline def setMarkChangesPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkChangesPressEventParameters] => Unit
+      ): Self = StObject.set(x, "markChangesPress", js.Any.fromFunction1(value))
       
       inline def setMarkChangesPressUndefined: Self = StObject.set(x, "markChangesPress", js.undefined)
       
@@ -1593,7 +1692,9 @@ object sapUxapObjectPageHeaderMod {
       
       inline def setMarkLocked(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "markLocked", value.asInstanceOf[js.Any])
       
-      inline def setMarkLockedPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "markLockedPress", js.Any.fromFunction1(value))
+      inline def setMarkLockedPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$MarkLockedPressEventParameters] => Unit
+      ): Self = StObject.set(x, "markLockedPress", js.Any.fromFunction1(value))
       
       inline def setMarkLockedPressUndefined: Self = StObject.set(x, "markLockedPress", js.undefined)
       
@@ -1651,7 +1752,9 @@ object sapUxapObjectPageHeaderMod {
       
       inline def setSideContentButtonUndefined: Self = StObject.set(x, "sideContentButton", js.undefined)
       
-      inline def setTitleSelectorPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "titleSelectorPress", js.Any.fromFunction1(value))
+      inline def setTitleSelectorPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$TitleSelectorPressEventParameters] => Unit
+      ): Self = StObject.set(x, "titleSelectorPress", js.Any.fromFunction1(value))
       
       inline def setTitleSelectorPressUndefined: Self = StObject.set(x, "titleSelectorPress", js.undefined)
       
@@ -1660,4 +1763,8 @@ object sapUxapObjectPageHeaderMod {
       inline def setTitleSelectorTooltipUndefined: Self = StObject.set(x, "titleSelectorTooltip", js.undefined)
     }
   }
+  
+  type ObjectPageHeaderTitleSelectorPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageHeader$TitleSelectorPressEventParameters]
+  
+  type ObjectPageHeaderTitleSelectorPressEventParameters = ObjectPageHeader$TitleSelectorPressEventParameters
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTemplateUpdateData extends StObject {
   
   /**
-    * Gets or sets whether the specified ListTemplate object is outline numbered.
+    * Specifies whether the specified ListTemplate object is outline numbered.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

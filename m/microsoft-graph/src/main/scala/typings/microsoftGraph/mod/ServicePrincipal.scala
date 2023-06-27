@@ -249,6 +249,8 @@ trait ServicePrincipal
     */
   var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
+  var synchronization: js.UndefOr[NullableOption[Synchronization]] = js.undefined
+  
   /**
     * Custom strings that can be used to categorize and identify the service principal. Not nullable. The value is the union
     * of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le,
@@ -565,6 +567,12 @@ object ServicePrincipal {
     inline def setSignInAudienceNull: Self = StObject.set(x, "signInAudience", null)
     
     inline def setSignInAudienceUndefined: Self = StObject.set(x, "signInAudience", js.undefined)
+    
+    inline def setSynchronization(value: NullableOption[Synchronization]): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
+    
+    inline def setSynchronizationNull: Self = StObject.set(x, "synchronization", null)
+    
+    inline def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object cards {
   @js.native
   sealed trait HeaderPosition extends StObject
   /**
-    * @SINCE 1.65
+    * @since 1.65
     *
     * Different options for the position of the header in controls that implement the {@link sap.f.ICard} interface.
     */
@@ -42,7 +42,7 @@ object cards {
   @js.native
   sealed trait NumericHeaderSideIndicatorsAlignment extends StObject
   /**
-    * @SINCE 1.96
+    * @since 1.96
     *
     * Different options for the alignment of the side indicators in the numeric header.
     */
@@ -73,9 +73,9 @@ object cards {
   }
   
   /**
-    * @SINCE 1.62
+    * @since 1.62
     *
-    * Marker interface for controls suitable as a header in controls that implement the {@link sap.f.ICard}
+    * Marker interface for controls suitable as a header in controls that implement the {@link sap.f.ICard }
     * interface.
     */
   trait IHeader extends StObject {

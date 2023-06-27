@@ -11,10 +11,10 @@ object esriPortalPortalQueryResultMod {
   @JSImport("esri/portal/PortalQueryResult", JSImport.Namespace)
   @js.native
   /**
-    * Represents the result object returned from a portal query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html)
-    */
+  		 * Represents the result object returned from a portal query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html)
+  		 */
   open class ^ ()
     extends StObject
        with PortalQueryResult {

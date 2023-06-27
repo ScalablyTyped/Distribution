@@ -9,84 +9,84 @@ trait WebSceneProperties
      with MapProperties {
   
   /**
-    * Configuration of application and UI elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#applicationProperties)
-    */
+  		 * Configuration of application and UI elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#applicationProperties)
+  		 */
   var applicationProperties: js.UndefOr[websceneApplicationPropertiesProperties] = js.undefined
   
   /**
-    * The name of the application that authored the WebScene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringApp)
-    */
+  		 * The name of the application that authored the WebScene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringApp)
+  		 */
   var authoringApp: js.UndefOr[String] = js.undefined
   
   /**
-    * The version of the application that authored the WebScene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringAppVersion)
-    */
+  		 * The version of the application that authored the WebScene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#authoringAppVersion)
+  		 */
   var authoringAppVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * *This property only applies to local scenes.* Represents an optional clipping area used to define the bounds or [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea)
-    */
+  		 * *This property only applies to local scenes.* Represents an optional clipping area used to define the bounds or [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea)
+  		 */
   var clippingArea: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * *This property only applies to local scenes.* Determines whether clipping using the [clippingArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea) is enabled.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled)
-    */
+  		 * *This property only applies to local scenes.* Determines whether clipping using the [clippingArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea) is enabled.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled)
+  		 */
   var clippingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When a web scene is configured as floor-aware, it has a floorInfo property defined.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#floorInfo)
-    */
+  		 * When a web scene is configured as floor-aware, it has a floorInfo property defined.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#floorInfo)
+  		 */
   var floorInfo: js.UndefOr[MapFloorInfoProperties] = js.undefined
   
   /**
-    * The height model info of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#heightModelInfo)
-    */
+  		 * The height model info of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#heightModelInfo)
+  		 */
   var heightModelInfo: js.UndefOr[HeightModelInfoProperties] = js.undefined
   
   /**
-    * The initial view of the WebScene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#initialViewProperties)
-    */
+  		 * The initial view of the WebScene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#initialViewProperties)
+  		 */
   var initialViewProperties: js.UndefOr[websceneInitialViewPropertiesProperties] = js.undefined
   
   /**
-    * The portal item from which the WebScene is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#portalItem)
-    */
+  		 * The portal item from which the WebScene is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#portalItem)
+  		 */
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
-    * Provides a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of slides that act as bookmarks for saving predefined [viewpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) and visible layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#presentation)
-    */
+  		 * Provides a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of slides that act as bookmarks for saving predefined [viewpoints](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) and visible layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#presentation)
+  		 */
   var presentation: js.UndefOr[PresentationProperties] = js.undefined
   
   /**
-    * The URL to the thumbnail used for the web scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#thumbnailUrl)
-    */
+  		 * The URL to the thumbnail used for the web scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#thumbnailUrl)
+  		 */
   var thumbnailUrl: js.UndefOr[String] = js.undefined
 }
 object WebSceneProperties {

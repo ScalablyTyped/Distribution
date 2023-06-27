@@ -15,33 +15,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionLineProperties extends StObject {
   
   /**
-    * The type of line which is defined by esriDirectionLineType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#directionLineType)
-    */
+  		 * The type of line which is defined by esriDirectionLineType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#directionLineType)
+  		 */
   var directionLineType: js.UndefOr[
     unknown | segment | `maneuver-segment` | `restriction-violation` | `scaled-cost-barrier` | `heavy-traffic` | `slow-traffic` | `moderate-traffic`
   ] = js.undefined
   
   /**
-    * Length of the line measured in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#distance)
-    */
+  		 * Length of the line measured in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#distance)
+  		 */
   var distance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Time of the line measured in minutes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#duration)
-    */
+  		 * Time of the line measured in minutes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#duration)
+  		 */
   var duration: js.UndefOr[Double] = js.undefined
   
   /**
-    * Polyline representing the direction's location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#geometry)
-    */
+  		 * Polyline representing the direction's location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionLine.html#geometry)
+  		 */
   var geometry: js.UndefOr[PolylineProperties] = js.undefined
 }
 object DirectionLineProperties {

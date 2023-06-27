@@ -8,7 +8,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The SVGGradient interface is a base interface used by SVGLinearGradientElement and SVGRadialGradientElement. */
+/**
+  * The SVGGradient interface is a base interface used by SVGLinearGradientElement and SVGRadialGradientElement.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGGradientElement)
+  */
 @js.native
 trait SVGGradientElement
   extends StObject

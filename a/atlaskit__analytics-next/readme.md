@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__analytics-next
 
-Typings are for version 9.1.2
+Typings are for version 9.1.3
 
 ## Library description:
 React components, HOCs and hooks to assist with tracking user activity with React components

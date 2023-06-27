@@ -132,7 +132,7 @@ object sapFCardsNumericSideIndicatorMod {
     def getNumber(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getState state}.
@@ -174,7 +174,7 @@ object sapFCardsNumericSideIndicatorMod {
     sValue: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getState state}.
@@ -230,7 +230,7 @@ object sapFCardsNumericSideIndicatorMod {
     var number: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.95) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * The semantic color which represents the state of the side indicator.

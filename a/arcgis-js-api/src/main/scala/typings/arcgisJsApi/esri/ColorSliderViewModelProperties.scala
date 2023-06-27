@@ -9,10 +9,10 @@ trait ColorSliderViewModelProperties
      with SmartMappingPrimaryHandleSliderViewModelProperties {
   
   /**
-    * The color stops from the [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#stops)
-    */
+  		 * The color stops from the [ColorVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 object ColorSliderViewModelProperties {

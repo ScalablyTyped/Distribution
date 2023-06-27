@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingSmartMappingPrimaryHandleSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/SmartMappingPrimaryHandleSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Shared properties for sliders that have a [primaryHandle](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled) option.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html)
-    */
+  		 * Shared properties for sliders that have a [primaryHandle](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html#primaryHandleEnabled) option.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingPrimaryHandleSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SmartMappingPrimaryHandleSliderViewModel {

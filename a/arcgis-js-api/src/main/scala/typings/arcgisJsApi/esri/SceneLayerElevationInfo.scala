@@ -17,26 +17,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneLayerElevationInfo extends StObject {
   
   /**
-    * Defines how the feature is placed with respect to the terrain surface.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
-    */
+  		 * Defines how the feature is placed with respect to the terrain surface.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
+  		 */
   var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   
   /**
-    * An elevation offset which is added to the vertical position of the feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
-    */
+  		 * An elevation offset which is added to the vertical position of the feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The unit for `offset` values.
-    *
-    * @default meters
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The unit for `offset` values.
+  		 *
+  		 * @default meters
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 object SceneLayerElevationInfo {

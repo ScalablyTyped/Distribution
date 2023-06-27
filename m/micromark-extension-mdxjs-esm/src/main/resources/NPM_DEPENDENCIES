@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-extension-mdxjs-esm" : "1.0.3"
+      "micromark-extension-mdxjs-esm" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-extension-mdxjs-esm" : "1.0.3"
+      "micromark-extension-mdxjs-esm" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

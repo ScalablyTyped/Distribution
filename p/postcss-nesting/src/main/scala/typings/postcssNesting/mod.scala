@@ -21,6 +21,9 @@ object mod extends Shortcut {
     
     /** Avoid the `:is()` pseudo class as much as possible. default: false */
     var noIsPseudoSelector: js.UndefOr[Boolean] = js.undefined
+    
+    /** Silence the `@nest` warning. */
+    var silenceAtNestWarning: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {
     
@@ -35,6 +38,10 @@ object mod extends Shortcut {
       inline def setNoIsPseudoSelector(value: Boolean): Self = StObject.set(x, "noIsPseudoSelector", value.asInstanceOf[js.Any])
       
       inline def setNoIsPseudoSelectorUndefined: Self = StObject.set(x, "noIsPseudoSelector", js.undefined)
+      
+      inline def setSilenceAtNestWarning(value: Boolean): Self = StObject.set(x, "silenceAtNestWarning", value.asInstanceOf[js.Any])
+      
+      inline def setSilenceAtNestWarningUndefined: Self = StObject.set(x, "silenceAtNestWarning", js.undefined)
     }
   }
 }

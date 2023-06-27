@@ -4,14 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest) */
 trait ReadableStreamBYOBRequest extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respond) */
   /* standard dom */
   def respond(bytesWritten: Double): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/respondWithNewView) */
   /* standard dom */
   def respondWithNewView(view: js.typedarray.ArrayBufferView): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ReadableStreamBYOBRequest/view) */
   /* standard dom */
   val view: js.typedarray.ArrayBufferView | Null
 }

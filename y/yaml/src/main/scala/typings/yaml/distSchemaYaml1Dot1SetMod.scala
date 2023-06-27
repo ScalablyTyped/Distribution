@@ -1,6 +1,7 @@
 package typings.yaml
 
 import typings.yaml.anon.KeyT
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesYamlmapMod.YAMLMap
 import typings.yaml.distSchemaSchemaMod.Schema
@@ -28,6 +29,8 @@ object distSchemaYaml1Dot1SetMod {
     @JSImport("yaml/dist/schema/yaml-1.1/set", "YAMLSet")
     @js.native
     val ^ : js.Any = js.native
+    
+    inline def from(schema: Schema, iterable: Any, ctx: CreateNodeContext): YAMLSet[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[YAMLSet[Any]]
     
     @JSImport("yaml/dist/schema/yaml-1.1/set", "YAMLSet.tag")
     @js.native

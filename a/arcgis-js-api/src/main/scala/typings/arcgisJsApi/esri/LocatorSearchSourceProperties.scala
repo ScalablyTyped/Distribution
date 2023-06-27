@@ -11,77 +11,77 @@ trait LocatorSearchSourceProperties
      with SearchSourceProperties {
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * A string array which limits the results to one or more categories.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#categories)
-    */
+  		 * A string array which limits the results to one or more categories.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#categories)
+  		 */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Constricts search results to a specified country code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#countryCode)
-    */
+  		 * Constricts search results to a specified country code.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#countryCode)
+  		 */
   var countryCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result, if the locator service doesn’t return an extent with a scale.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#defaultZoomScale)
-    */
+  		 * Sets the scale of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale) for the resulting search result, if the locator service doesn’t return an extent with a scale.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#defaultZoomScale)
+  		 */
   var defaultZoomScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * This property controls prioritization of [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) widget result candidates depending on the view scale.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchDisabled)
-    */
+  		 * This property controls prioritization of [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) widget result candidates depending on the view scale.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#localSearchDisabled)
+  		 */
   var localSearchDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the type of location, either `street` or `rooftop`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
-    */
+  		 * Defines the type of location, either `street` or `rooftop`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#locationType)
+  		 */
   var locationType: js.UndefOr[rooftop | street] = js.undefined
   
   /**
-    * The name of the source for display.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#name)
-    */
+  		 * The name of the source for display.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * A template string used to display multiple fields in a defined order when results are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#searchTemplate)
-    */
+  		 * A template string used to display multiple fields in a defined order when results are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#searchTemplate)
+  		 */
   var searchTemplate: js.UndefOr[String] = js.undefined
   
   /**
-    * The field name of the Single Line Address Field in the REST services directory for the locator service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#singleLineFieldName)
-    */
+  		 * The field name of the Single Line Address Field in the REST services directory for the locator service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#singleLineFieldName)
+  		 */
   var singleLineFieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * URL to the ArcGIS Server REST resource that represents a locator service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#url)
-    */
+  		 * URL to the ArcGIS Server REST resource that represents a locator service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object LocatorSearchSourceProperties {

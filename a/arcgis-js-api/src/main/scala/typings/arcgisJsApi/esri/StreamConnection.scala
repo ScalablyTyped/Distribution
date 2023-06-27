@@ -7,31 +7,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A web socket connection to a stream service.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html)
-  */
+	 * A web socket connection to a stream service.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html)
+	 */
 trait StreamConnection extends StObject {
   
   /**
-    * The error that explains an unsuccessful attempt to connect to the stream service or an unexpected disconnection from the stream service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#connectionError)
-    */
+  		 * The error that explains an unsuccessful attempt to connect to the stream service or an unexpected disconnection from the stream service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#connectionError)
+  		 */
   val connectionError: Error
   
   /**
-    * The status of the Web Socket connection with the stream service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#connectionStatus)
-    */
+  		 * The status of the Web Socket connection with the stream service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#connectionStatus)
+  		 */
   val connectionStatus: connected | disconnected
   
   /**
-    * Destroys the existing connection instance to the stream service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#destroy)
-    */
+  		 * Destroys the existing connection instance to the stream service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-StreamConnection.html#destroy)
+  		 */
   def destroy(): scala.Unit
 }
 object StreamConnection {

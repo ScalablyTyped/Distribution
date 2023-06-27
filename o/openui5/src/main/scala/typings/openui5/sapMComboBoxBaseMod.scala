@@ -124,7 +124,7 @@ object sapMComboBoxBaseMod {
     extends typings.openui5.sapMComboBoxTextFieldMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the ID of the hidden label for the group header items
       *
@@ -145,7 +145,7 @@ object sapMComboBoxBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Attaches event handler `fnFunction` to the {@link #event:loadItems loadItems} event of this `sap.m.ComboBoxBase`.
       *
@@ -170,20 +170,20 @@ object sapMComboBoxBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadItems(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ComboBoxBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Attaches event handler `fnFunction` to the {@link #event:loadItems loadItems} event of this `sap.m.ComboBoxBase`.
       *
@@ -213,7 +213,7 @@ object sapMComboBoxBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadItems(
       /**
@@ -224,7 +224,7 @@ object sapMComboBoxBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ComboBoxBase` itself
       */
@@ -245,7 +245,7 @@ object sapMComboBoxBaseMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Clears the selection. To be overwritten by subclasses.
       */
@@ -263,7 +263,7 @@ object sapMComboBoxBaseMod {
       */
     oPicker: typings.openui5.sapMDialogMod.default): Unit = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Base method for picker configuration
       */
@@ -273,7 +273,7 @@ object sapMComboBoxBaseMod {
     oPicker: typings.openui5.sapMPopoverMod.default): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a picker popup container where the selection should take place. To be overwritten by subclasses.
       *
@@ -292,7 +292,7 @@ object sapMComboBoxBaseMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Detaches event handler `fnFunction` from the {@link #event:loadItems loadItems} event of this `sap.m.ComboBoxBase`.
       *
@@ -304,13 +304,13 @@ object sapMComboBoxBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLoadItems(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -318,8 +318,8 @@ object sapMComboBoxBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.38
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loadItems loadItems} to attached listeners.
       *
@@ -352,8 +352,8 @@ object sapMComboBoxBaseMod {
     def getFirstItem(): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.66
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.66
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the input properties, which should be forwarded from the combobox text field to the picker text
       * field
@@ -400,7 +400,7 @@ object sapMComboBoxBaseMod {
     
     /**
       * @deprecated (since 1.62) - The list structure should not be used as per SAP note: 2746748.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the `list`.
       *
@@ -422,7 +422,7 @@ object sapMComboBoxBaseMod {
     def getOpen(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the control's picker popup.
       *
@@ -431,7 +431,7 @@ object sapMComboBoxBaseMod {
     def getPicker(): typings.openui5.sapMDialogMod.default | typings.openui5.sapMPopoverMod.default | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the ID of the hidden label
       *
@@ -440,8 +440,8 @@ object sapMComboBoxBaseMod {
     def getPickerInvisibleTextId(): String = js.native
     
     /**
-      * @SINCE 1.42
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.42
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the control's input from the picker.
       *
@@ -450,7 +450,7 @@ object sapMComboBoxBaseMod {
     def getPickerTextField(): typings.openui5.sapMComboBoxTextFieldMod.default | typings.openui5.sapMInputMod.default | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the property `_sPickerType`
       *
@@ -459,7 +459,7 @@ object sapMComboBoxBaseMod {
     def getPickerType(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the flag indicating whether the list items should be recreated
       *
@@ -468,7 +468,7 @@ object sapMComboBoxBaseMod {
     def getRecreateItems(): Boolean = js.native
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Gets current value of property {@link #getShowClearIcon showClearIcon}.
       *
@@ -481,11 +481,11 @@ object sapMComboBoxBaseMod {
     def getShowClearIcon(): Boolean = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * Default value is `false`.
@@ -495,7 +495,7 @@ object sapMComboBoxBaseMod {
     def getShowSecondaryValues(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires when an object gets inserted in the items aggregation.
       */
@@ -505,7 +505,7 @@ object sapMComboBoxBaseMod {
     oItem: typings.openui5.sapUiCoreItemMod.default): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires when an object gets removed from the items aggregation.
       */
@@ -515,7 +515,7 @@ object sapMComboBoxBaseMod {
     oItem: typings.openui5.sapUiCoreItemMod.default): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether the control has content or not.
       *
@@ -524,7 +524,7 @@ object sapMComboBoxBaseMod {
     def hasContent(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles highlighting of items after filtering.
       */
@@ -563,7 +563,7 @@ object sapMComboBoxBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Finds the common items of two arrays
       *
@@ -589,8 +589,8 @@ object sapMComboBoxBaseMod {
     def isOpen(): Boolean = js.native
     
     /**
-      * @SINCE 1.90
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.90
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles properties' changes of items in the aggregation named `items`.
       */
@@ -598,7 +598,7 @@ object sapMComboBoxBaseMod {
       /**
       * The change event
       */
-    oControlEvent: typings.openui5.sapUiBaseEventMod.default,
+    oControlEvent: typings.openui5.sapUiBaseEventMod.default[js.Object],
       /**
       * Indicates whether second values should be shown
       */
@@ -606,7 +606,7 @@ object sapMComboBoxBaseMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called when the composition of a passage of text has been completed or cancelled.
       */
@@ -616,7 +616,7 @@ object sapMComboBoxBaseMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Opens the control's picker popup.
       *
@@ -652,7 +652,7 @@ object sapMComboBoxBaseMod {
     vItem: typings.openui5.sapUiCoreItemMod.default): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a custom filter function for items. The function accepts two parameters: - currenly typed value
       * in the input field - item to be matched The function should return a Boolean value (true or false) which
@@ -692,7 +692,7 @@ object sapMComboBoxBaseMod {
     bOpen: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the property `_sPickerType`.
       */
@@ -702,7 +702,7 @@ object sapMComboBoxBaseMod {
     sPickerType: String): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets whether the list items should be recreated.
       */
@@ -712,7 +712,7 @@ object sapMComboBoxBaseMod {
     bRecreate: Boolean): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the selectable property of `sap.ui.core.Item`
       */
@@ -728,7 +728,7 @@ object sapMComboBoxBaseMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Sets a new value for property {@link #getShowClearIcon showClearIcon}.
       *
@@ -747,11 +747,11 @@ object sapMComboBoxBaseMod {
     bShowClearIcon: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getShowSecondaryValues showSecondaryValues}.
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -767,7 +767,7 @@ object sapMComboBoxBaseMod {
     bShowSecondaryValues: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the TextField handler
       */
@@ -781,7 +781,7 @@ object sapMComboBoxBaseMod {
     oTextField: typings.openui5.sapMInputMod.default): Unit = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Opens the `SuggestionsPopover` with the available items.
       */
@@ -792,7 +792,7 @@ object sapMComboBoxBaseMod {
     fnFilter: js.Function): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates picker if doesn't exist yet and sync with Control items To be overwritten by subclasses.
       */
@@ -805,6 +805,12 @@ object sapMComboBoxBaseMod {
       */
     def unbindItems(): this.type = js.native
   }
+  
+  trait ComboBoxBase$LoadItemsEventParameters extends StObject
+  
+  type ComboBoxBaseLoadItemsEvent = typings.openui5.sapUiBaseEventMod.default[ComboBoxBase$LoadItemsEventParameters]
+  
+  type ComboBoxBaseLoadItemsEventParameters = ComboBoxBase$LoadItemsEventParameters
   
   trait ComboBoxBaseSettings
     extends StObject
@@ -819,7 +825,7 @@ object sapMComboBoxBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * This event is fired when the end user clicks the combo box button to open the dropdown list and the data
       * used to display items is not already loaded. Alternatively, it is fired after the user moves the cursor
@@ -833,7 +839,9 @@ object sapMComboBoxBaseMod {
       *
       * **Note**: Currently the `sap.m.MultiComboBox` does not support this event.
       */
-    var loadItems: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var loadItems: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.110)
@@ -845,7 +853,7 @@ object sapMComboBoxBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.96
+      * @since 1.96
       *
       * Specifies whether clear icon is shown. Pressing the icon will clear input's value.
       */
@@ -854,9 +862,9 @@ object sapMComboBoxBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
-      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem}
+      * Indicates whether the text values of the `additionalText` property of a {@link sap.ui.core.ListItem }
       * are shown.
       */
     var showSecondaryValues: js.UndefOr[
@@ -881,7 +889,7 @@ object sapMComboBoxBaseMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLoadItems(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "loadItems", js.Any.fromFunction1(value))
+      inline def setLoadItems(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "loadItems", js.Any.fromFunction1(value))
       
       inline def setLoadItemsUndefined: Self = StObject.set(x, "loadItems", js.undefined)
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "many-keys-map" : "2.0.0"
+      "many-keys-map" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "many-keys-map" : "2.0.0"
+      "many-keys-map" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

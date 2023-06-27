@@ -9,33 +9,33 @@ trait MediaContentProperties
      with ContentProperties {
   
   /**
-    * Index of the current active media within the popup's media content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#activeMediaInfoIndex)
-    */
+  		 * Index of the current active media within the popup's media content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#activeMediaInfoIndex)
+  		 */
   var activeMediaInfoIndex: js.UndefOr[String] = js.undefined
   
   /**
-    * Describes the media's content in detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#description)
-    */
+  		 * Describes the media's content in detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains the media elements representing images or charts to display within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#mediaInfos)
-    */
+  		 * Contains the media elements representing images or charts to display within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#mediaInfos)
+  		 */
   var mediaInfos: js.UndefOr[
     BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[Any]
   ] = js.undefined
   
   /**
-    * Heading indicating what the media's content represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#title)
-    */
+  		 * Heading indicating what the media's content represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object MediaContentProperties {

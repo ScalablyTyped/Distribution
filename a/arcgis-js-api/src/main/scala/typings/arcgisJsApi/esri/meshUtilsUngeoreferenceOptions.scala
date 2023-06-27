@@ -18,17 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait meshUtilsUngeoreferenceOptions extends StObject {
   
   /**
-    * Indicates whether the coordinates are georeferenced relative to the globe or the projected coordinate system.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#ungeoreference)
-    */
+  		 * Indicates whether the coordinates are georeferenced relative to the globe or the projected coordinate system.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#ungeoreference)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the unit of the resulting data.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Indicates the unit of the resulting data.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined

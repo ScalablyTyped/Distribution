@@ -11,10 +11,10 @@ object esriViewsInputGamepadGamepadSettingsMod {
   @JSImport("esri/views/input/gamepad/GamepadSettings", JSImport.Namespace)
   @js.native
   /**
-    * Gamepad input specific configuration settings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html)
-    */
+  		 * Gamepad input specific configuration settings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html)
+  		 */
   open class ^ ()
     extends StObject
        with GamepadSettings {

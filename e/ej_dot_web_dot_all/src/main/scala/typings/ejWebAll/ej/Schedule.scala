@@ -349,17 +349,17 @@ object Schedule {
   trait AgendaViewSettings extends StObject {
     
     /** You can customize the Date column display based on the requirement.
-      * @Default {null}
+      * @default {null}
       */
     var dateColumnTemplateId: js.UndefOr[String] = js.undefined
     
     /** You can display the summary of multiple week's appointment by setting this value.
-      * @Default {7}
+      * @default {7}
       */
     var daysInAgenda: js.UndefOr[Double] = js.undefined
     
     /** You can customize the time column display based on the requirement.
-      * @Default {null}
+      * @default {null}
       */
     var timeColumnTemplateId: js.UndefOr[String] = js.undefined
   }
@@ -676,99 +676,99 @@ object Schedule {
   trait AppointmentSettings extends StObject {
     
     /** Binds the name of allDay field in dataSource. It indicates whether the appointment is an all-day appointment or not.
-      * @Default {null}
+      * @default {null}
       */
     var allDay: js.UndefOr[String] = js.undefined
     
     /** When set to false, doesn't consider the time difference offset calculation on appointment time.
-      * @Default {true}
+      * @default {true}
       */
     var applyTimeOffset: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
-      * @Default {null}
+      * @default {null}
       */
     var categorize: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule appointments.
-      * @Default {[]}
+      * @default {[]}
       */
     var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** Binds the description field name in dataSource. It indicates the appointment description.
-      * @Default {null}
+      * @default {null}
       */
     var description: js.UndefOr[String] = js.undefined
     
     /** When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
-      * @Default {false}
+      * @default {false}
       */
     var editFutureEventsOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
-      * @Default {null}
+      * @default {null}
       */
     var endTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the
       * Schedule timeZone or System timeZone.
-      * @Default {null}
+      * @default {null}
       */
     var endTimeZone: js.UndefOr[String] = js.undefined
     
     /** Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Binds the name of location field in dataSource. It indicates the appointment location.
-      * @Default {null}
+      * @default {null}
       */
     var location: js.UndefOr[String] = js.undefined
     
     /** Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
-      * @Default {null}
+      * @default {null}
       */
     var priority: js.UndefOr[String] = js.undefined
     
     /** It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[String] = js.undefined
     
     /** Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
-      * @Default {null}
+      * @default {null}
       */
     var recurrence: js.UndefOr[String] = js.undefined
     
     /** Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
-      * @Default {null}
+      * @default {null}
       */
     var recurrenceRule: js.UndefOr[String] = js.undefined
     
     /** Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
-      * @Default {null}
+      * @default {null}
       */
     var resourceFields: js.UndefOr[String] = js.undefined
     
     /** Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
-      * @Default {null}
+      * @default {null}
       */
     var startTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the
       * Schedule timeZone or System timeZone.
-      * @Default {null}
+      * @default {null}
       */
     var startTimeZone: js.UndefOr[String] = js.undefined
     
     /** Binds the name of subject field in the dataSource to appointment Subject. Indicates the Subject or title that gets displayed on Schedule appointments.
-      * @Default {null}
+      * @default {null}
       */
     var subject: js.UndefOr[String] = js.undefined
     
     /** Assign the table name from where the records are to be fetched for the Schedule.
-      * @Default {null}
+      * @default {null}
       */
     var tableName: js.UndefOr[String] = js.undefined
   }
@@ -1207,74 +1207,74 @@ object Schedule {
   trait BlockoutSettings extends StObject {
     
     /** Binds the name of customStyle field in dataSource. It applies the custom CSS to the block intervals.
-      * @Default {null}
+      * @default {null}
       */
     var customStyle: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule block intervals.
-      * @Default {[]}
+      * @default {[]}
       */
     var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** When set to true, enables the blockout option to be applied on the Scheduler cells.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of endTime field in dataSource with the end time of block time interval. It indicates the date and time, when the block interval actually ends in the Scheduler.
-      * @Default {null}
+      * @default {null}
       */
     var endTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of groupId field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
-      * @Default {null}
+      * @default {null}
       */
     var groupId: js.UndefOr[String] = js.undefined
     
     /** Binds the id field name in dataSource to the id of block time interval. It denotes the unique id assigned to each of the block records.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Binds the name of isAllDay field in dataSource. It indicates whether an entire day is blocked or not.
-      * @Default {null}
+      * @default {null}
       */
     var isAllDay: js.UndefOr[String] = js.undefined
     
     /** Binds the name of isBlockAppointment field in dataSource. When set to true, disables the appointments that lies on the blocked area and restrict to perform CRUD operations in it.
-      * @Default {null}
+      * @default {null}
       */
     var isBlockAppointment: js.UndefOr[String] = js.undefined
     
     /** It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[String] = js.undefined
     
     /** Binds the name of resourceId field in dataSource. Specifies the id of the resources, to which the time intervals are needed to be blocked.
-      * @Default {null}
+      * @default {null}
       */
     var resourceId: js.UndefOr[String] = js.undefined
     
     /** Binds the name of startTime field in the dataSource with start time of block time interval. It indicates the date and time, when the block interval actually starts in the
       * Scheduler.
-      * @Default {null}
+      * @default {null}
       */
     var startTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of subject field in the dataSource to block time Subject. Indicates the Subject or title that gets displayed on the Schedule block intervals.
-      * @Default {null}
+      * @default {null}
       */
     var subject: js.UndefOr[String] = js.undefined
     
     /** Assign the table name from where the records are to be fetched for the Schedule.
-      * @Default {null}
+      * @default {null}
       */
     var tableName: js.UndefOr[String] = js.undefined
     
     /** Template design that applies on the Schedule block intervals. All the field names that are mapped from dataSource to the appropriate field properties within the blockoutSettings
       * can be used within the template.
-      * @Default {null}
+      * @default {null}
       */
     var templateId: js.UndefOr[String] = js.undefined
   }
@@ -1351,12 +1351,12 @@ object Schedule {
   trait CategorizeSettings extends StObject {
     
     /** When set to true, enables the multiple selection of categories to be applied for the appointments.
-      * @Default {false}
+      * @default {false}
       */
     var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
     /** Binds color field name in the dataSource to category color.
-      * @Default {color}
+      * @default {color}
       */
     var color: js.UndefOr[String] = js.undefined
     
@@ -1365,22 +1365,22 @@ object Schedule {
     var dataSource: js.UndefOr[js.Array[Any] | Any] = js.undefined
     
     /** When set to true, enables the categories option to be applied for the appointments.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Binds fontColor field name in the dataSource to category font.
-      * @Default {fontColor}
+      * @default {fontColor}
       */
     var fontColor: js.UndefOr[String] = js.undefined
     
     /** Binds id field name in the dataSource to id of category data.
-      * @Default {id}
+      * @default {id}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to category text.
-      * @Default {text}
+      * @default {text}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -1663,7 +1663,7 @@ object Schedule {
   trait ContextMenuSettings extends StObject {
     
     /** When set to true, enables the context menu options available for the Schedule cells and appointments.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
@@ -1959,7 +1959,7 @@ object Schedule {
   trait Group extends StObject {
     
     /** When set to true, allows performing CRUD actions simultaneously on all the grouped appointments of multiple resources.
-      * @Default {false}
+      * @default {false}
       */
     var allowGroupEditing: js.UndefOr[Boolean] = js.undefined
     
@@ -2104,28 +2104,28 @@ object Schedule {
     var agendaViewSettings: js.UndefOr[AgendaViewSettings] = js.undefined
     
     /** Accepts the id value of the template layout defined for the all-day cells and customizes it.
-      * @Default {null}
+      * @default {null}
       */
     var allDayCellsTemplateId: js.UndefOr[String] = js.undefined
     
     /** When set to false, disables the appointment delete option on the Scheduler.
-      * @Default {true}
+      * @default {true}
       */
     var allowDelete: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Schedule allows the appointments to be dragged and dropped at required time.
-      * @Default {true}
+      * @default {true}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, allows the user to create/edit appointments inline - simply through a single click made either on the Scheduler cells or on the existing appointmentâ€™s Subject
       * text respectively. Pressing enter key after the new Subject text   typed onto the inline created text box, will save/update the appointments appropriately.
-      * @Default {false}
+      * @default {false}
       */
     var allowInline: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Scheduler allows interaction through keyboard shortcut keys.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
@@ -2160,7 +2160,7 @@ object Schedule {
     
     /** Template design that applies on the Schedule appointments. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings
       * can be used within the template.
-      * @Default {null}
+      * @default {null}
       */
     var appointmentTemplateId: js.UndefOr[String] = js.undefined
     
@@ -2202,7 +2202,7 @@ object Schedule {
     var cellDoubleClick: js.UndefOr[js.Function1[/* e */ CellDoubleClickEventArgs, Unit]] = js.undefined
     
     /** Sets the height for Schedule cells.
-      * @Default {20px}
+      * @default {20px}
       */
     var cellHeight: js.UndefOr[String] = js.undefined
     
@@ -2227,14 +2227,14 @@ object Schedule {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets current date of the Schedule. The Schedule displays initially with the date that is provided here.
-      * @Default {new Date()}
+      * @default {new Date()}
       */
     var currentDate: js.UndefOr[Any] = js.undefined
     
     /** Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view -
       * from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by
       * currentView(ej.Schedule.CurrentView) are as follows,
-      * @Default {ej.Schedule.CurrentView.Week}
+      * @default {ej.Schedule.CurrentView.Week}
       */
     var currentView: js.UndefOr[String | CurrentView] = js.undefined
     
@@ -2243,7 +2243,7 @@ object Schedule {
     var dateFormat: js.UndefOr[String] = js.undefined
     
     /** Accepts the id value of the template layout defined for the date header cells and customizes it.
-      * @Default {null}
+      * @default {null}
       */
     var dateHeaderTemplateId: js.UndefOr[String] = js.undefined
     
@@ -2264,39 +2264,39 @@ object Schedule {
     var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.undefined
     
     /** When set to true, enables the resize behavior of appointments within the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var enableAppointmentResize: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, enables the loading of Schedule appointments based on your demand. With this load on demand concept, the data consumption of the Schedule can be limited.
-      * @Default {false}
+      * @default {false}
       */
     var enableLoadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Saves the current model value to browser cookies for state maintenance. When the page gets refreshed, Schedule control values are retained.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, the Schedule layout and behavior changes as per the common RTL conventions.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Schedule allows the validation of recurrence pattern to take place before it is being assigned to the appointments. For example, when one of the instance of
       * recurrence appointment is dragged beyond the next or previous instance of the same recurrence appointment, a pop-up is displayed with the validation message disallowing the drag
       * functionality.
-      * @Default {true}
+      * @default {true}
       */
     var enableRecurrenceValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the end hour time limit to be displayed on the Schedule.
-      * @Default {24}
+      * @default {24}
       */
     var endHour: js.UndefOr[Double] = js.undefined
     
     /** Sets specific day as the starting day of the week.
-      * @Default {null}
+      * @default {null}
       */
     var firstDayOfWeek: js.UndefOr[String] = js.undefined
     
@@ -2305,17 +2305,17 @@ object Schedule {
     var group: js.UndefOr[Group] = js.undefined
     
     /** Sets the height of the Schedule. Accepts both pixel and percentage values.
-      * @Default {1120px}
+      * @default {1120px}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** When set to true, enables the Schedule to observe Daylight Saving Time for supported timezones.
-      * @Default {false}
+      * @default {false}
       */
     var isDST: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, adapts the Schedule layout to fit the screen size of devices on which it renders.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -2324,12 +2324,12 @@ object Schedule {
     var keyDown: js.UndefOr[js.Function1[/* e */ KeyDownEventArgs, Unit]] = js.undefined
     
     /** Sets the specific culture to the Schedule.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum date limit to display on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
-      * @Default {new Date(2099, 12, 31)}
+      * @default {new Date(2099, 12, 31)}
       */
     var maxDate: js.UndefOr[Any] = js.undefined
     
@@ -2338,7 +2338,7 @@ object Schedule {
     var menuItemClick: js.UndefOr[js.Function1[/* e */ MenuItemClickEventArgs, Unit]] = js.undefined
     
     /** Sets the minimum date limit to display on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
-      * @Default {new Date(1900, 01, 01)}
+      * @default {new Date(1900, 01, 01)}
       */
     var minDate: js.UndefOr[Any] = js.undefined
     
@@ -2348,7 +2348,7 @@ object Schedule {
     
     /** Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string(&quot;vertical&quot; or &quot;horizontal&quot;) or enum values. The enum
       * values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
-      * @Default {ej.Schedule.Orientation.Vertical}
+      * @default {ej.Schedule.Orientation.Vertical}
       */
     var orientation: js.UndefOr[String | typings.ejWebAll.ej.Orientation] = js.undefined
     
@@ -2369,7 +2369,7 @@ object Schedule {
     var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** When set to true, disables the interaction with the Schedule appointments, simply allowing the date and view navigation to occur.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -2383,7 +2383,7 @@ object Schedule {
     
     /** Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the currentView
       * property to ej.Schedule.CurrentView.CustomView.
-      * @Default {null}
+      * @default {null}
       */
     var renderDates: js.UndefOr[RenderDates] = js.undefined
     
@@ -2400,79 +2400,79 @@ object Schedule {
     var resizeStop: js.UndefOr[js.Function1[/* e */ ResizeStopEventArgs, Unit]] = js.undefined
     
     /** Template design that applies on the Schedule resource header.
-      * @Default {null}
+      * @default {null}
       */
     var resourceHeaderTemplateId: js.UndefOr[String] = js.undefined
     
     /** Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, where the levels of resources are rendered on the
       * Schedule based on the order of the resource data provided within this collection.
-      * @Default {null}
+      * @default {null}
       */
     var resources: js.UndefOr[js.Array[Resource]] = js.undefined
     
     /** When set to true, displays the all-day row cells on the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var showAllDayRow: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, shows the previous/next appointment navigator button on the Scheduler.
-      * @Default {true}
+      * @default {true}
       */
     var showAppointmentNavigator: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the current time indicator on the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, shows the delete confirmation dialog before deleting an appointment.
-      * @Default {true}
+      * @default {true}
       */
     var showDeleteConfirmationDialog: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the header bar on the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var showHeaderBar: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the location field additionally on Schedule appointment window.
-      * @Default {false}
+      * @default {false}
       */
     var showLocationField: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the other months days from the current month on the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var showNextPrevMonth: js.UndefOr[Boolean] = js.undefined
     
     /** when set to false, allows the height of the work-cells to adjust automatically (either expand or collapse) based on the number of appointment count it has.
-      * @Default {true}
+      * @default {true}
       */
     var showOverflowButton: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the quick window for every single click made on the Schedule cells or appointments.
-      * @Default {true}
+      * @default {true}
       */
     var showQuickWindow: js.UndefOr[Boolean] = js.undefined
     
     /** When set to false, doesn't render the start and end timezone fields on the Schedule appointment window.
-      * @Default {true}
+      * @default {true}
       */
     var showTimeZoneFields: js.UndefOr[Boolean] = js.undefined
     
     /** When set to false, hides the weekend days on all the Scheduler views.
-      * @Default {true}
+      * @default {true}
       */
     var showWeekend: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the start hour time range to be displayed on the Schedule.
-      * @Default {0}
+      * @default {0}
       */
     var startHour: js.UndefOr[Double] = js.undefined
     
     /** Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value(&quot;12&quot; or &quot;24&quot;) or the below mentioned enum values. The enum values that
       * are accepted by timeMode(ej.Schedule.TimeMode) are as follows,
-      * @Default {null}
+      * @default {null}
       */
     var timeMode: js.UndefOr[String | TimeMode] = js.undefined
     
@@ -2481,7 +2481,7 @@ object Schedule {
     var timeScale: js.UndefOr[TimeScale] = js.undefined
     
     /** Sets the timezone for the Schedule.
-      * @Default {null}
+      * @default {null}
       */
     var timeZone: js.UndefOr[String] = js.undefined
     
@@ -2494,17 +2494,17 @@ object Schedule {
     var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Defines the view collection to be displayed on the Schedule. By default, it displays all the views namely, Day, Week, WorkWeek and Month.
-      * @Default {[Day, Week, WorkWeek, Month, Agenda]}
+      * @default {[Day, Week, WorkWeek, Month, Agenda]}
       */
     var views: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the width of the Schedule. Accepts both pixel and percentage values.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[String] = js.undefined
     
     /** Accepts the id value of the template layout defined for the work cells and month cells.
-      * @Default {null}
+      * @default {null}
       */
     var workCellsTemplateId: js.UndefOr[String] = js.undefined
     
@@ -2513,7 +2513,7 @@ object Schedule {
     var workHours: js.UndefOr[WorkHours] = js.undefined
     
     /** Sets different day collection within workWeek view.
-      * @Default {[Monday, Tuesday, Wednesday, Thursday, Friday]}
+      * @default {[Monday, Tuesday, Wednesday, Thursday, Friday]}
       */
     var workWeek: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -3100,27 +3100,27 @@ object Schedule {
   trait PrioritySettings extends StObject {
     
     /** The dataSource option can accept the JSON object collection that contains the priority related data.
-      * @Default {{% highlight js%}[{ text: None, value: none },{ text: High, value: high },{ text: Medium, value: medium },{ text: Low, value: low }]{% endhighlight %}}
+      * @default {{% highlight js%}[{ text: None, value: none },{ text: High, value: high },{ text: Medium, value: medium },{ text: Low, value: low }]{% endhighlight %}}
       */
     var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** When set to true, enables the priority options available for the Schedule appointments.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Allows priority field customization in the appointment window to add custom icons denoting the priority level for the appointments.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to prioritySettings text. These text gets listed out in priority field of the appointment window.
-      * @Default {text}
+      * @default {text}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Binds value field name in the dataSource to prioritySettings value. These field names usually accepts four priority values by default, high, low, medium and none.
-      * @Default {value}
+      * @default {value}
       */
     var value: js.UndefOr[String] = js.undefined
   }
@@ -3301,12 +3301,12 @@ object Schedule {
   trait ReminderSettings extends StObject {
     
     /** Sets the timing, when the reminders are to be alerted for the Schedule appointments.
-      * @Default {5}
+      * @default {5}
       */
     var alertBefore: js.UndefOr[Double] = js.undefined
     
     /** When set to true, enables the reminder option available for the Schedule appointments.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
   }
@@ -3333,12 +3333,12 @@ object Schedule {
   trait RenderDates extends StObject {
     
     /** Sets the end limit of the custom date range.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[Any] = js.undefined
     
     /** Sets the start of custom date range to be rendered in the Schedule.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[Any] = js.undefined
   }
@@ -3527,17 +3527,17 @@ object Schedule {
   trait Resource extends StObject {
     
     /** When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
-      * @Default {false}
+      * @default {false}
       */
     var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
     /** It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
-      * @Default {null}
+      * @default {null}
       */
     var field: js.UndefOr[String] = js.undefined
     
     /** A unique resource name that is used for differentiating various resource objects while grouping it in various levels.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
@@ -3546,7 +3546,7 @@ object Schedule {
     var resourceSettings: js.UndefOr[ResourcesResourceSettings] = js.undefined
     
     /** It holds the title name of the resource field to be displayed on the Schedule appointment window.
-      * @Default {null}
+      * @default {null}
       */
     var title: js.UndefOr[String] = js.undefined
   }
@@ -3585,48 +3585,48 @@ object Schedule {
   trait ResourcesResourceSettings extends StObject {
     
     /** Binds appointmentClass field name in the dataSource. It applies custom CSS class name to appointments depicting to the resource it belongs.
-      * @Default {null}
+      * @default {null}
       */
     var appointmentClass: js.UndefOr[String] = js.undefined
     
     /** Binds color field name in the dataSource to resourceSettings color. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ejDataManager) instance that contains the resources related data.
-      * @Default {[]}
+      * @default {[]}
       */
     var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** Binds the end work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the end work hour for specific resources.
-      * @Default {null}
+      * @default {null}
       */
     var end: js.UndefOr[String] = js.undefined
     
     /** Binds groupId field name in the dataSource to resourceSettings groupId.
-      * @Default {null}
+      * @default {null}
       */
     var groupId: js.UndefOr[String] = js.undefined
     
     /** Binds id field name in the dataSource to resourceSettings id.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Binds the starting work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the starting work hour for specific resources.
-      * @Default {null}
+      * @default {null}
       */
     var start: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to resourceSettings text. These text gets listed out in resources field of the appointment window.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with specific collection of days
       * (array of day names), only those days will render for the specific resources.
-      * @Default {null}
+      * @default {null}
       */
     var workWeek: js.UndefOr[String] = js.undefined
   }
@@ -3683,28 +3683,28 @@ object Schedule {
   trait TimeScale extends StObject {
     
     /** When set to true, displays the time slots on the Scheduler.
-      * @Default {true}
+      * @default {true}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Accepts the value in minutes. When provided with specific value, displays the appropriate time interval on the Scheduler
-      * @Default {60}
+      * @default {60}
       */
     var majorSlot: js.UndefOr[Double] = js.undefined
     
     /** Template design that customizes the timecells (major slots). Accepts id value of the template defined for major time slots.
-      * @Default {null}
+      * @default {null}
       */
     var majorSlotTemplateId: js.UndefOr[String] = js.undefined
     
     /** When set with some specific value, defines the number of time divisions split per hour(as per value given for the majorTimeSlot). Those time divisions are meant to be the minor
       * slots.
-      * @Default {2}
+      * @default {2}
       */
     var minorSlotCount: js.UndefOr[Double] = js.undefined
     
     /** Template design that customizes the timecells (minor slots) that are partitioned based on minorSlotCount. Accepts id value of the template defined for minor time slots.
-      * @Default {null}
+      * @default {null}
       */
     var minorSlotTemplateId: js.UndefOr[String] = js.undefined
   }
@@ -3747,17 +3747,17 @@ object Schedule {
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Binds id field name in the dataSource to timeZoneCollection id.
-      * @Default {id}
+      * @default {id}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to timeZoneCollection text. These text gets listed out in the timezone fields of the appointment window.
-      * @Default {text}
+      * @default {text}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Binds value field name in the dataSource to timeZoneCollection value.
-      * @Default {value}
+      * @default {value}
       */
     var value: js.UndefOr[String] = js.undefined
   }
@@ -3792,13 +3792,13 @@ object Schedule {
   trait TooltipSettings extends StObject {
     
     /** Enables or disables the tooltip display.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Template design that customizes the tooltip. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be accessed
       * within the template.
-      * @Default {null}
+      * @default {null}
       */
     var templateId: js.UndefOr[String] = js.undefined
   }
@@ -3825,17 +3825,17 @@ object Schedule {
   trait WorkHours extends StObject {
     
     /** Sets the end time to depict the end of working or business hour in a day.
-      * @Default {18}
+      * @default {18}
       */
     var end: js.UndefOr[Double] = js.undefined
     
     /** When set to true, highlights the work hours of the Schedule.
-      * @Default {true}
+      * @default {true}
       */
     var highlight: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the start time to depict the start of working or business hour in a day.
-      * @Default {9}
+      * @default {9}
       */
     var start: js.UndefOr[Double] = js.undefined
   }

@@ -67,54 +67,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TravelModeProperties extends StObject {
   
   /**
-    * Lists the parameterized attributes used by the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#attributeParameterValues)
-    */
+  		 * Lists the parameterized attributes used by the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#attributeParameterValues)
+  		 */
   var attributeParameterValues: js.UndefOr[js.Array[TravelModeAttributeParameterValues]] = js.undefined
   
   /**
-    * A short text description of the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#description)
-    */
+  		 * A short text description of the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates the distance-based cost attribute for reporting directions and for solving vehicle routing problems.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
-    */
+  		 * Indicates the distance-based cost attribute for reporting directions and for solving vehicle routing problems.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#distanceAttributeName)
+  		 */
   var distanceAttributeName: js.UndefOr[kilometers_ | miles_ | meters_ | String] = js.undefined
   
   /**
-    * The unique identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#id)
-    */
+  		 * The unique identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The network cost attribute used as impedance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
-    */
+  		 * The network cost attribute used as impedance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#impedanceAttributeName)
+  		 */
   var impedanceAttributeName: js.UndefOr[
     kilometers_ | miles_ | meters_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
   ] = js.undefined
   
   /**
-    * The unique name of the travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#name)
-    */
+  		 * The unique name of the travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of the restriction attributes used when solving network analysis problems with this travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#restrictionAttributeNames)
-    */
+  		 * The list of the restriction attributes used when solving network analysis problems with this travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#restrictionAttributeNames)
+  		 */
   var restrictionAttributeNames: js.UndefOr[
     js.Array[
       `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
@@ -122,49 +122,49 @@ trait TravelModeProperties extends StObject {
   ] = js.undefined
   
   /**
-    * Specifies whether the travel mode generalizes the geometry of analysis results and by how much.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance)
-    */
+  		 * Specifies whether the travel mode generalizes the geometry of analysis results and by how much.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance)
+  		 */
   var simplificationTolerance: js.UndefOr[Double] = js.undefined
   
   /**
-    * The linear units associated with [simplificationTolerance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationToleranceUnits)
-    */
+  		 * The linear units associated with [simplificationTolerance](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationTolerance).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#simplificationToleranceUnits)
+  		 */
   var simplificationToleranceUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | unknown | yards
   ] = js.undefined
   
   /**
-    * Indicates the time-based cost attribute for reporting directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#timeAttributeName)
-    */
+  		 * Indicates the time-based cost attribute for reporting directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#timeAttributeName)
+  		 */
   var timeAttributeName: js.UndefOr[
     minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
   ] = js.undefined
   
   /**
-    * Indicates the category of travel or vehicle represented by this travel mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#type)
-    */
+  		 * Indicates the category of travel or vehicle represented by this travel mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#type)
+  		 */
   var `type`: js.UndefOr[automobile | truck | walk | other] = js.undefined
   
   /**
-    * Indicates whether the travel mode uses a hierarchy attribute while performing the analysis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#useHierarchy)
-    */
+  		 * Indicates whether the travel mode uses a hierarchy attribute while performing the analysis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#useHierarchy)
+  		 */
   var useHierarchy: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates how the U-turns at junctions that could occur during network traversal are handled by the solver.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#uturnAtJunctions)
-    */
+  		 * Indicates how the U-turns at junctions that could occur during network traversal are handled by the solver.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html#uturnAtJunctions)
+  		 */
   var uturnAtJunctions: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
   ] = js.undefined

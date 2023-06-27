@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BDD {
   
   /**
-    @class
     */
   @js.native
   trait Expectation extends StObject {

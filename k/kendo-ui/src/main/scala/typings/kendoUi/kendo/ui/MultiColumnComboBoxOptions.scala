@@ -1,6 +1,8 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.DataSource
+import typings.kendoUi.kendoUiStrings.auto
+import typings.kendoUi.kendoUiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultiColumnComboBoxOptions
   extends StObject
      with AllEditorOptions {
+  
+  var adaptiveMode: js.UndefOr[none | auto] = js.undefined
   
   var animation: js.UndefOr[MultiColumnComboBoxAnimation] = js.undefined
   
@@ -116,6 +120,10 @@ object MultiColumnComboBoxOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MultiColumnComboBoxOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAdaptiveMode(value: none | auto): Self = StObject.set(x, "adaptiveMode", value.asInstanceOf[js.Any])
+    
+    inline def setAdaptiveModeUndefined: Self = StObject.set(x, "adaptiveMode", js.undefined)
     
     inline def setAnimation(value: MultiColumnComboBoxAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

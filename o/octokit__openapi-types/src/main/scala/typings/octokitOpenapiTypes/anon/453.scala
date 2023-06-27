@@ -6,20 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `453` extends StObject {
   
-  var version: js.UndefOr[String] = js.undefined
+  var codespace_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
 }
 object `453` {
   
-  inline def apply(): `453` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    codespace_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
+  ): `453` = {
+    val __obj = js.Dynamic.literal(codespace_name = codespace_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[`453`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `453`] (val x: Self) extends AnyVal {
     
-    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-    
-    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setCodespace_name(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any
+    ): Self = StObject.set(x, "codespace_name", value.asInstanceOf[js.Any])
   }
 }

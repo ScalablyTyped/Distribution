@@ -1,8 +1,9 @@
 package typings.domMediacaptureRecord
 
+import typings.std.VideoEncoderBitrateMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BitrateMode = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoEncoderBitrateMode */ Any
+type BitrateMode = VideoEncoderBitrateMode

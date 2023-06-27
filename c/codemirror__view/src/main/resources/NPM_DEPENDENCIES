@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@codemirror/view" : "6.2.4"
+      "@codemirror/view" : "6.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@codemirror/view" : "6.2.4"
+      "@codemirror/view" : "6.13.0"
     }
   ],
   "compile-devDependencies" : [

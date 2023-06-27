@@ -10,48 +10,48 @@ trait CIMPictureMarker
      with CIMSymbolLayerType {
   
   /**
-    * The color substitutions for the picture.
-    */
+  			 * The color substitutions for the picture.
+  			 */
   var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
-    * The depth of the image when drawn in 3D.
-    */
+  			 * The depth of the image when drawn in 3D.
+  			 */
   var depth3D: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the image is right-reading when viewed from behind.
-    */
+  			 * A value indicating whether the image is right-reading when viewed from behind.
+  			 */
   var invertBackfaceTexture: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The scale X which changes the width of the symbol without changing the height (or depth in 3D), as a ratio.
-    */
+  			 * The scale X which changes the width of the symbol without changing the height (or depth in 3D), as a ratio.
+  			 */
   var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
-    * How the image is resampled.
-    */
+  			 * How the image is resampled.
+  			 */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
   ] = js.undefined
   
   /**
-    * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
-    */
+  			 * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
+  			 */
   var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
   var type_CIMPictureMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker
   
   /**
-    * The image that is used in the symbol layer. Typically a base64 encoded image.
-    */
+  			 * The image that is used in the symbol layer. Typically a base64 encoded image.
+  			 */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * A value indicating whether the marker stands upright as though locked in place. The marker can be viewed from all angles.
-    */
+  			 * A value indicating whether the marker stands upright as though locked in place. The marker can be viewed from all angles.
+  			 */
   var verticalOrientation3D: js.UndefOr[Boolean] = js.undefined
 }
 object CIMPictureMarker {

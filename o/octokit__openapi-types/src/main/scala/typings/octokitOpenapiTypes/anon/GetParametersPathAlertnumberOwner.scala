@@ -19,6 +19,8 @@ trait GetParametersPathAlertnumberOwner extends StObject {
     * @description You must use an access token with the `security_events` scope to use this endpoint with private repositories.
     * You can also use tokens with the `public_repo` scope for public repositories only.
     * GitHub Apps must have **Dependabot alerts** write permission to use this endpoint.
+    *
+    * To use this endpoint, you must have access to security alerts for the repository. For more information, see "[Granting access to security alerts](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)."
     */
   var patch: RequestBodyContentApplicationjsonDismissedreason
 }

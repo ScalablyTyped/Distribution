@@ -10,16 +10,16 @@ trait DimensionAnalysis
      with Accessor {
   
   /**
-    * A list of dimensions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#dimensions)
-    */
+  		 * A list of dimensions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#dimensions)
+  		 */
   var dimensions: Collection[LengthDimension] = js.native
   
   /**
-    * The style defines how the dimension objects of this analysis are displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#style)
-    */
+  		 * The style defines how the dimension objects of this analysis are displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionAnalysis.html#style)
+  		 */
   var style: DimensionSimpleStyle = js.native
 }

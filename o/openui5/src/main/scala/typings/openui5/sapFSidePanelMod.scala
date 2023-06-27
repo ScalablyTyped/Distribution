@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.Expanded
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapFLibraryMod.SidePanelPosition
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -159,12 +159,12 @@ object sapFSidePanelMod {
       *
       *
       * 	 - If the event fired as a result of action item selection (`expanded` parameter contains `true`) is
-      * 			prevented, the display of the side content will be blocked.
+      *     prevented, the display of the side content will be blocked.
       * 	 - If the event fired as a result of action item deselection, selection of different action item, pressing
-      * 			the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
-      * 			this will block closing of the currently displayed side content, and if the event is fired by selection
-      * 			of a different action item, the selection will be cancelled, and the next event (for expansion of a new
-      * 			action item) will not be fired and the new side content will not be displayed.
+      *     the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
+      *     this will block closing of the currently displayed side content, and if the event is fired by selection
+      *     of a different action item, the selection will be cancelled, and the next event (for expansion of a new
+      *     action item) will not be fired and the new side content will not be displayed.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -172,13 +172,13 @@ object sapFSidePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit]
     ): this.type = js.native
     def attachToggle(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SidePanel` itself
       */
@@ -194,12 +194,12 @@ object sapFSidePanelMod {
       *
       *
       * 	 - If the event fired as a result of action item selection (`expanded` parameter contains `true`) is
-      * 			prevented, the display of the side content will be blocked.
+      *     prevented, the display of the side content will be blocked.
       * 	 - If the event fired as a result of action item deselection, selection of different action item, pressing
-      * 			the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
-      * 			this will block closing of the currently displayed side content, and if the event is fired by selection
-      * 			of a different action item, the selection will be cancelled, and the next event (for expansion of a new
-      * 			action item) will not be fired and the new side content will not be displayed.
+      *     the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
+      *     this will block closing of the currently displayed side content, and if the event is fired by selection
+      *     of a different action item, the selection will be cancelled, and the next event (for expansion of a new
+      *     action item) will not be fired and the new side content will not be displayed.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -212,7 +212,7 @@ object sapFSidePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit]
     ): this.type = js.native
     def attachToggle(
       /**
@@ -223,7 +223,7 @@ object sapFSidePanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SidePanel` itself
       */
@@ -255,13 +255,13 @@ object sapFSidePanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit]
     ): this.type = js.native
     def detachToggle(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SidePanelToggleEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -269,7 +269,7 @@ object sapFSidePanelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggle toggle} to attached listeners.
       *
@@ -282,7 +282,7 @@ object sapFSidePanelMod {
     def fireToggle(/**
       * Parameters to pass along with the event
       */
-    mParameters: Expanded): Boolean = js.native
+    mParameters: SidePanel$ToggleEventParameters): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getActionBarExpanded actionBarExpanded}.
@@ -327,7 +327,7 @@ object sapFSidePanelMod {
     def getSelectedItem(): ID = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSidePanelMaxWidth sidePanelMaxWidth}.
       *
@@ -342,7 +342,7 @@ object sapFSidePanelMod {
     def getSidePanelMaxWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSidePanelMinWidth sidePanelMinWidth}.
       *
@@ -357,6 +357,17 @@ object sapFSidePanelMod {
     def getSidePanelMinWidth(): CSSSize = js.native
     
     /**
+      * Gets current value of property {@link #getSidePanelPosition sidePanelPosition}.
+      *
+      * Defines where to place the side panel position.
+      *
+      * Default value is `Right`.
+      *
+      * @returns Value of property `sidePanelPosition`
+      */
+    def getSidePanelPosition(): SidePanelPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SidePanelPosition * / any */ String) = js.native
+    
+    /**
       * Gets current value of property {@link #getSidePanelResizable sidePanelResizable}.
       *
       * Determines whether the side panel is resizable or fixed. **Note:** setting this property only affects
@@ -369,7 +380,7 @@ object sapFSidePanelMod {
     def getSidePanelResizable(): Boolean = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSidePanelResizeLargerStep sidePanelResizeLargerStep}.
       *
@@ -384,7 +395,7 @@ object sapFSidePanelMod {
     def getSidePanelResizeLargerStep(): int = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSidePanelResizeStep sidePanelResizeStep}.
       *
@@ -566,7 +577,7 @@ object sapFSidePanelMod {
     sAriaLabel: String): this.type = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Sets a new value for property {@link #getSidePanelMaxWidth sidePanelMaxWidth}.
       *
@@ -587,7 +598,7 @@ object sapFSidePanelMod {
     sSidePanelMaxWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Sets a new value for property {@link #getSidePanelMinWidth sidePanelMinWidth}.
       *
@@ -608,6 +619,29 @@ object sapFSidePanelMod {
     sSidePanelMinWidth: CSSSize): this.type = js.native
     
     /**
+      * Sets a new value for property {@link #getSidePanelPosition sidePanelPosition}.
+      *
+      * Defines where to place the side panel position.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Right`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSidePanelPosition(): this.type = js.native
+    def setSidePanelPosition(
+      /**
+      * New value for property `sidePanelPosition`
+      */
+    sSidePanelPosition: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SidePanelPosition * / any */ String
+    ): this.type = js.native
+    def setSidePanelPosition(/**
+      * New value for property `sidePanelPosition`
+      */
+    sSidePanelPosition: SidePanelPosition): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getSidePanelResizable sidePanelResizable}.
       *
       * Determines whether the side panel is resizable or fixed. **Note:** setting this property only affects
@@ -626,7 +660,7 @@ object sapFSidePanelMod {
     bSidePanelResizable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Sets a new value for property {@link #getSidePanelResizeLargerStep sidePanelResizeLargerStep}.
       *
@@ -647,7 +681,7 @@ object sapFSidePanelMod {
     iSidePanelResizeLargerStep: int): this.type = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Sets a new value for property {@link #getSidePanelResizeStep sidePanelResizeStep}.
       *
@@ -666,6 +700,38 @@ object sapFSidePanelMod {
       * New value for property `sidePanelResizeStep`
       */
     iSidePanelResizeStep: int): this.type = js.native
+  }
+  
+  trait SidePanel$ToggleEventParameters extends StObject {
+    
+    /**
+      * State of the action item.
+      */
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The action item that triggers the event.
+      */
+    var item: js.UndefOr[typings.openui5.sapFSidePanelItemMod.default] = js.undefined
+  }
+  object SidePanel$ToggleEventParameters {
+    
+    inline def apply(): SidePanel$ToggleEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SidePanel$ToggleEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidePanel$ToggleEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapFSidePanelItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
   }
   
   trait SidePanelSettings
@@ -704,7 +770,7 @@ object sapFSidePanelMod {
     var selectedItem: js.UndefOr[typings.openui5.sapFSidePanelItemMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Determines the maximum side panel width (Side Content width + Action Bar width). **Note:** if the width
       * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
@@ -715,7 +781,7 @@ object sapFSidePanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Determines the minimum side panel width (Side Content width + Action Bar width). **Note:** if the width
       * is given in percent(%), it is calculated as given percent from the Side Panel parent container width,
@@ -723,6 +789,13 @@ object sapFSidePanelMod {
       */
     var sidePanelMinWidth: js.UndefOr[
         CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * Defines where to place the side panel position.
+      */
+    var sidePanelPosition: js.UndefOr[
+        SidePanelPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SidePanelPosition * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
     /**
@@ -734,7 +807,7 @@ object sapFSidePanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Determines the large step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
       * the width can be changed by large step with `Shift + Left Arrow` and `Shift + Right Arrow` keys when
@@ -743,7 +816,7 @@ object sapFSidePanelMod {
     var sidePanelResizeLargerStep: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Determines the step (in pixels) when changing the width of the side panel with the keyboard. **Note:**
       * the width can be changed by this step with `Left Arrow` and `Right Arrow` keys when the resize splitter
@@ -765,14 +838,19 @@ object sapFSidePanelMod {
       *
       *
       * 	 - If the event fired as a result of action item selection (`expanded` parameter contains `true`) is
-      * 			prevented, the display of the side content will be blocked.
+      *     prevented, the display of the side content will be blocked.
       * 	 - If the event fired as a result of action item deselection, selection of different action item, pressing
-      * 			the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
-      * 			this will block closing of the currently displayed side content, and if the event is fired by selection
-      * 			of a different action item, the selection will be cancelled, and the next event (for expansion of a new
-      * 			action item) will not be fired and the new side content will not be displayed.
+      *     the `Close` button, or pressing the `Escape` key (`expanded` parameter contains `false`) is prevented,
+      *     this will block closing of the currently displayed side content, and if the event is fired by selection
+      *     of a different action item, the selection will be cancelled, and the next event (for expansion of a new
+      *     action item) will not be fired and the new side content will not be displayed.
       */
-    var toggle: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggle: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SidePanel$ToggleEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object SidePanelSettings {
     
@@ -820,6 +898,12 @@ object sapFSidePanelMod {
       
       inline def setSidePanelMinWidthUndefined: Self = StObject.set(x, "sidePanelMinWidth", js.undefined)
       
+      inline def setSidePanelPosition(
+        value: SidePanelPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SidePanelPosition * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "sidePanelPosition", value.asInstanceOf[js.Any])
+      
+      inline def setSidePanelPositionUndefined: Self = StObject.set(x, "sidePanelPosition", js.undefined)
+      
       inline def setSidePanelResizable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "sidePanelResizable", value.asInstanceOf[js.Any])
       
       inline def setSidePanelResizableUndefined: Self = StObject.set(x, "sidePanelResizable", js.undefined)
@@ -836,9 +920,15 @@ object sapFSidePanelMod {
       
       inline def setSidePanelWidthUndefined: Self = StObject.set(x, "sidePanelWidth", js.undefined)
       
-      inline def setToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SidePanel$ToggleEventParameters] => Unit
+      ): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
+  
+  type SidePanelToggleEvent = typings.openui5.sapUiBaseEventMod.default[SidePanel$ToggleEventParameters]
+  
+  type SidePanelToggleEventParameters = SidePanel$ToggleEventParameters
 }

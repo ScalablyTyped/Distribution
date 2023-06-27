@@ -36,7 +36,7 @@ object mod {
     
     /* "lab" */ val Lab: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Lab & String = js.native
     
-    /* "srgb-linear" */ val Linear_RGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Linear_RGB & String = js.native
+    /* "srgb-linear" */ val Linear_sRGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.Linear_sRGB & String = js.native
     
     /* "oklch" */ val OKLCH: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.OKLCH & String = js.native
     
@@ -51,6 +51,8 @@ object mod {
     /* "xyz-d50" */ val XYZ_D50: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.XYZ_D50 & String = js.native
     
     /* "xyz-d65" */ val XYZ_D65: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.XYZ_D65 & String = js.native
+    
+    /* "srgb" */ val sRGB: typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation.sRGB & String = js.native
   }
   
   @JSImport("@csstools/css-color-parser", "SyntaxFlag")

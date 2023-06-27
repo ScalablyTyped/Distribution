@@ -9,11 +9,11 @@ trait `200ContentApplicationjsonDismissedreasonFixedat` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonDismissedreasonFixedat
   
-  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -21,9 +21,9 @@ object `200ContentApplicationjsonDismissedreasonFixedat` {
   
   inline def apply(
     `200`: ContentApplicationjsonDismissedreasonFixedat,
-    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
-    `403`: Content36,
-    `404`: Content36,
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any,
+    `403`: Content41,
+    `404`: Content41,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `200ContentApplicationjsonDismissedreasonFixedat` = {
     val __obj = js.Dynamic.literal()
@@ -41,12 +41,12 @@ object `200ContentApplicationjsonDismissedreasonFixedat` {
     inline def set200(value: ContentApplicationjsonDismissedreasonFixedat): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set304(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
     ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ object sapUiCoreUtilXmlpreprocessorMod extends Shortcut {
     var __implements__sap_ui_core_util_XMLPreprocessor_IContext: Boolean = js.native
     
     /**
-      * @SINCE 1.31.0
+      * @since 1.31.0
       *
       * Returns a context interface for the indicated part in case of the root formatter of a composite binding.
       * The new interface provides access to the original settings, but only to the model and path of the indicated
@@ -117,7 +117,7 @@ object sapUiCoreUtilXmlpreprocessorMod extends Shortcut {
   }
   
   /**
-    * @SINCE 1.27.1
+    * @since 1.27.1
     *
     * The XML pre-processor for template instructions in XML views.
     */

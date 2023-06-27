@@ -1,6 +1,6 @@
 package typings.themeUiComponents
 
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.Omit
 import typings.themeUiComponents.distDeclarationsSrcIconButtonMod.IconButtonProps

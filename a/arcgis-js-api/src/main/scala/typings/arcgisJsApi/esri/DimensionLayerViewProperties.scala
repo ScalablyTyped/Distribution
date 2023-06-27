@@ -9,19 +9,19 @@ trait DimensionLayerViewProperties
      with LayerViewProperties {
   
   /**
-    * Set to `true` to enable interactivity for the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#layer).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#interactive)
-    */
+  		 * Set to `true` to enable interactivity for the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#layer).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#interactive)
+  		 */
   var interactive: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The selected dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#selectedDimension)
-    */
+  		 * The selected dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#selectedDimension)
+  		 */
   var selectedDimension: js.UndefOr[LengthDimensionProperties] = js.undefined
 }
 object DimensionLayerViewProperties {

@@ -185,13 +185,13 @@ object EditorOption extends StObject {
   sealed trait defaultColorDecorators
     extends StObject
        with EditorOption
-  /* 141 */ val defaultColorDecorators: typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators & Double = js.native
+  /* 142 */ val defaultColorDecorators: typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators & Double = js.native
   
   @js.native
   sealed trait definitionLinkOpensInPeek
     extends StObject
        with EditorOption
-  /* 84 */ val definitionLinkOpensInPeek: typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek & Double = js.native
+  /* 85 */ val definitionLinkOpensInPeek: typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek & Double = js.native
   
   @js.native
   sealed trait disableLayerHinting
@@ -227,7 +227,7 @@ object EditorOption extends StObject {
   sealed trait editorClassName
     extends StObject
        with EditorOption
-  /* 136 */ val editorClassName: typings.monacoEditor.mod.editor.EditorOption.editorClassName & Double = js.native
+  /* 137 */ val editorClassName: typings.monacoEditor.mod.editor.EditorOption.editorClassName & Double = js.native
   
   @js.native
   sealed trait emptySelectionClipboard
@@ -383,7 +383,7 @@ object EditorOption extends StObject {
   sealed trait inlayHints
     extends StObject
        with EditorOption
-  /* 135 */ val inlayHints: typings.monacoEditor.mod.editor.EditorOption.inlayHints & Double = js.native
+  /* 136 */ val inlayHints: typings.monacoEditor.mod.editor.EditorOption.inlayHints & Double = js.native
   
   @js.native
   sealed trait inlineSuggest
@@ -395,7 +395,7 @@ object EditorOption extends StObject {
   sealed trait layoutInfo
     extends StObject
        with EditorOption
-  /* 139 */ val layoutInfo: typings.monacoEditor.mod.editor.EditorOption.layoutInfo & Double = js.native
+  /* 140 */ val layoutInfo: typings.monacoEditor.mod.editor.EditorOption.layoutInfo & Double = js.native
   
   @js.native
   sealed trait letterSpacing
@@ -527,97 +527,103 @@ object EditorOption extends StObject {
   sealed trait parameterHints
     extends StObject
        with EditorOption
-  /* 82 */ val parameterHints: typings.monacoEditor.mod.editor.EditorOption.parameterHints & Double = js.native
+  /* 83 */ val parameterHints: typings.monacoEditor.mod.editor.EditorOption.parameterHints & Double = js.native
+  
+  @js.native
+  sealed trait pasteAs
+    extends StObject
+       with EditorOption
+  /* 82 */ val pasteAs: typings.monacoEditor.mod.editor.EditorOption.pasteAs & Double = js.native
   
   @js.native
   sealed trait peekWidgetDefaultFocus
     extends StObject
        with EditorOption
-  /* 83 */ val peekWidgetDefaultFocus: typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus & Double = js.native
+  /* 84 */ val peekWidgetDefaultFocus: typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus & Double = js.native
   
   @js.native
   sealed trait pixelRatio
     extends StObject
        with EditorOption
-  /* 137 */ val pixelRatio: typings.monacoEditor.mod.editor.EditorOption.pixelRatio & Double = js.native
+  /* 138 */ val pixelRatio: typings.monacoEditor.mod.editor.EditorOption.pixelRatio & Double = js.native
   
   @js.native
   sealed trait quickSuggestions
     extends StObject
        with EditorOption
-  /* 85 */ val quickSuggestions: typings.monacoEditor.mod.editor.EditorOption.quickSuggestions & Double = js.native
+  /* 86 */ val quickSuggestions: typings.monacoEditor.mod.editor.EditorOption.quickSuggestions & Double = js.native
   
   @js.native
   sealed trait quickSuggestionsDelay
     extends StObject
        with EditorOption
-  /* 86 */ val quickSuggestionsDelay: typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay & Double = js.native
+  /* 87 */ val quickSuggestionsDelay: typings.monacoEditor.mod.editor.EditorOption.quickSuggestionsDelay & Double = js.native
   
   @js.native
   sealed trait readOnly
     extends StObject
        with EditorOption
-  /* 87 */ val readOnly: typings.monacoEditor.mod.editor.EditorOption.readOnly & Double = js.native
+  /* 88 */ val readOnly: typings.monacoEditor.mod.editor.EditorOption.readOnly & Double = js.native
   
   @js.native
   sealed trait renameOnType
     extends StObject
        with EditorOption
-  /* 88 */ val renameOnType: typings.monacoEditor.mod.editor.EditorOption.renameOnType & Double = js.native
+  /* 89 */ val renameOnType: typings.monacoEditor.mod.editor.EditorOption.renameOnType & Double = js.native
   
   @js.native
   sealed trait renderControlCharacters
     extends StObject
        with EditorOption
-  /* 89 */ val renderControlCharacters: typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters & Double = js.native
+  /* 90 */ val renderControlCharacters: typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters & Double = js.native
   
   @js.native
   sealed trait renderFinalNewline
     extends StObject
        with EditorOption
-  /* 90 */ val renderFinalNewline: typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline & Double = js.native
+  /* 91 */ val renderFinalNewline: typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline & Double = js.native
   
   @js.native
   sealed trait renderLineHighlight
     extends StObject
        with EditorOption
-  /* 91 */ val renderLineHighlight: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight & Double = js.native
+  /* 92 */ val renderLineHighlight: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight & Double = js.native
   
   @js.native
   sealed trait renderLineHighlightOnlyWhenFocus
     extends StObject
        with EditorOption
-  /* 92 */ val renderLineHighlightOnlyWhenFocus: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlightOnlyWhenFocus & Double = js.native
+  /* 93 */ val renderLineHighlightOnlyWhenFocus: typings.monacoEditor.mod.editor.EditorOption.renderLineHighlightOnlyWhenFocus & Double = js.native
   
   @js.native
   sealed trait renderValidationDecorations
     extends StObject
        with EditorOption
-  /* 93 */ val renderValidationDecorations: typings.monacoEditor.mod.editor.EditorOption.renderValidationDecorations & Double = js.native
+  /* 94 */ val renderValidationDecorations: typings.monacoEditor.mod.editor.EditorOption.renderValidationDecorations & Double = js.native
   
   @js.native
   sealed trait renderWhitespace
     extends StObject
        with EditorOption
-  /* 94 */ val renderWhitespace: typings.monacoEditor.mod.editor.EditorOption.renderWhitespace & Double = js.native
+  /* 95 */ val renderWhitespace: typings.monacoEditor.mod.editor.EditorOption.renderWhitespace & Double = js.native
   
   @js.native
   sealed trait revealHorizontalRightPadding
     extends StObject
        with EditorOption
-  /* 95 */ val revealHorizontalRightPadding: typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding & Double = js.native
+  /* 96 */ val revealHorizontalRightPadding: typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding & Double = js.native
   
   @js.native
   sealed trait roundedSelection
     extends StObject
        with EditorOption
-  /* 96 */ val roundedSelection: typings.monacoEditor.mod.editor.EditorOption.roundedSelection & Double = js.native
+  /* 97 */ val roundedSelection: typings.monacoEditor.mod.editor.EditorOption.roundedSelection & Double = js.native
   
   @js.native
   sealed trait rulers
     extends StObject
        with EditorOption
-  /* 97 */ val rulers: typings.monacoEditor.mod.editor.EditorOption.rulers & Double = js.native
+  /* 98 */ val rulers: typings.monacoEditor.mod.editor.EditorOption.rulers & Double = js.native
   
   @js.native
   sealed trait screenReaderAnnounceInlineSuggestion
@@ -629,145 +635,145 @@ object EditorOption extends StObject {
   sealed trait scrollBeyondLastColumn
     extends StObject
        with EditorOption
-  /* 99 */ val scrollBeyondLastColumn: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn & Double = js.native
+  /* 100 */ val scrollBeyondLastColumn: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn & Double = js.native
   
   @js.native
   sealed trait scrollBeyondLastLine
     extends StObject
        with EditorOption
-  /* 100 */ val scrollBeyondLastLine: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine & Double = js.native
+  /* 101 */ val scrollBeyondLastLine: typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine & Double = js.native
   
   @js.native
   sealed trait scrollPredominantAxis
     extends StObject
        with EditorOption
-  /* 101 */ val scrollPredominantAxis: typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis & Double = js.native
+  /* 102 */ val scrollPredominantAxis: typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis & Double = js.native
   
   @js.native
   sealed trait scrollbar
     extends StObject
        with EditorOption
-  /* 98 */ val scrollbar: typings.monacoEditor.mod.editor.EditorOption.scrollbar & Double = js.native
+  /* 99 */ val scrollbar: typings.monacoEditor.mod.editor.EditorOption.scrollbar & Double = js.native
   
   @js.native
   sealed trait selectOnLineNumbers
     extends StObject
        with EditorOption
-  /* 104 */ val selectOnLineNumbers: typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers & Double = js.native
+  /* 105 */ val selectOnLineNumbers: typings.monacoEditor.mod.editor.EditorOption.selectOnLineNumbers & Double = js.native
   
   @js.native
   sealed trait selectionClipboard
     extends StObject
        with EditorOption
-  /* 102 */ val selectionClipboard: typings.monacoEditor.mod.editor.EditorOption.selectionClipboard & Double = js.native
+  /* 103 */ val selectionClipboard: typings.monacoEditor.mod.editor.EditorOption.selectionClipboard & Double = js.native
   
   @js.native
   sealed trait selectionHighlight
     extends StObject
        with EditorOption
-  /* 103 */ val selectionHighlight: typings.monacoEditor.mod.editor.EditorOption.selectionHighlight & Double = js.native
+  /* 104 */ val selectionHighlight: typings.monacoEditor.mod.editor.EditorOption.selectionHighlight & Double = js.native
   
   @js.native
   sealed trait showDeprecated
     extends StObject
        with EditorOption
-  /* 134 */ val showDeprecated: typings.monacoEditor.mod.editor.EditorOption.showDeprecated & Double = js.native
+  /* 135 */ val showDeprecated: typings.monacoEditor.mod.editor.EditorOption.showDeprecated & Double = js.native
   
   @js.native
   sealed trait showFoldingControls
     extends StObject
        with EditorOption
-  /* 105 */ val showFoldingControls: typings.monacoEditor.mod.editor.EditorOption.showFoldingControls & Double = js.native
+  /* 106 */ val showFoldingControls: typings.monacoEditor.mod.editor.EditorOption.showFoldingControls & Double = js.native
   
   @js.native
   sealed trait showUnused
     extends StObject
        with EditorOption
-  /* 106 */ val showUnused: typings.monacoEditor.mod.editor.EditorOption.showUnused & Double = js.native
+  /* 107 */ val showUnused: typings.monacoEditor.mod.editor.EditorOption.showUnused & Double = js.native
   
   @js.native
   sealed trait smartSelect
     extends StObject
        with EditorOption
-  /* 108 */ val smartSelect: typings.monacoEditor.mod.editor.EditorOption.smartSelect & Double = js.native
+  /* 109 */ val smartSelect: typings.monacoEditor.mod.editor.EditorOption.smartSelect & Double = js.native
   
   @js.native
   sealed trait smoothScrolling
     extends StObject
        with EditorOption
-  /* 109 */ val smoothScrolling: typings.monacoEditor.mod.editor.EditorOption.smoothScrolling & Double = js.native
+  /* 110 */ val smoothScrolling: typings.monacoEditor.mod.editor.EditorOption.smoothScrolling & Double = js.native
   
   @js.native
   sealed trait snippetSuggestions
     extends StObject
        with EditorOption
-  /* 107 */ val snippetSuggestions: typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions & Double = js.native
+  /* 108 */ val snippetSuggestions: typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions & Double = js.native
   
   @js.native
   sealed trait stickyScroll
     extends StObject
        with EditorOption
-  /* 110 */ val stickyScroll: typings.monacoEditor.mod.editor.EditorOption.stickyScroll & Double = js.native
+  /* 111 */ val stickyScroll: typings.monacoEditor.mod.editor.EditorOption.stickyScroll & Double = js.native
   
   @js.native
   sealed trait stickyTabStops
     extends StObject
        with EditorOption
-  /* 111 */ val stickyTabStops: typings.monacoEditor.mod.editor.EditorOption.stickyTabStops & Double = js.native
+  /* 112 */ val stickyTabStops: typings.monacoEditor.mod.editor.EditorOption.stickyTabStops & Double = js.native
   
   @js.native
   sealed trait stopRenderingLineAfter
     extends StObject
        with EditorOption
-  /* 112 */ val stopRenderingLineAfter: typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter & Double = js.native
+  /* 113 */ val stopRenderingLineAfter: typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter & Double = js.native
   
   @js.native
   sealed trait suggest
     extends StObject
        with EditorOption
-  /* 113 */ val suggest: typings.monacoEditor.mod.editor.EditorOption.suggest & Double = js.native
+  /* 114 */ val suggest: typings.monacoEditor.mod.editor.EditorOption.suggest & Double = js.native
   
   @js.native
   sealed trait suggestFontSize
     extends StObject
        with EditorOption
-  /* 114 */ val suggestFontSize: typings.monacoEditor.mod.editor.EditorOption.suggestFontSize & Double = js.native
+  /* 115 */ val suggestFontSize: typings.monacoEditor.mod.editor.EditorOption.suggestFontSize & Double = js.native
   
   @js.native
   sealed trait suggestLineHeight
     extends StObject
        with EditorOption
-  /* 115 */ val suggestLineHeight: typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight & Double = js.native
+  /* 116 */ val suggestLineHeight: typings.monacoEditor.mod.editor.EditorOption.suggestLineHeight & Double = js.native
   
   @js.native
   sealed trait suggestOnTriggerCharacters
     extends StObject
        with EditorOption
-  /* 116 */ val suggestOnTriggerCharacters: typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters & Double = js.native
+  /* 117 */ val suggestOnTriggerCharacters: typings.monacoEditor.mod.editor.EditorOption.suggestOnTriggerCharacters & Double = js.native
   
   @js.native
   sealed trait suggestSelection
     extends StObject
        with EditorOption
-  /* 117 */ val suggestSelection: typings.monacoEditor.mod.editor.EditorOption.suggestSelection & Double = js.native
+  /* 118 */ val suggestSelection: typings.monacoEditor.mod.editor.EditorOption.suggestSelection & Double = js.native
   
   @js.native
   sealed trait tabCompletion
     extends StObject
        with EditorOption
-  /* 118 */ val tabCompletion: typings.monacoEditor.mod.editor.EditorOption.tabCompletion & Double = js.native
+  /* 119 */ val tabCompletion: typings.monacoEditor.mod.editor.EditorOption.tabCompletion & Double = js.native
   
   @js.native
   sealed trait tabFocusMode
     extends StObject
        with EditorOption
-  /* 138 */ val tabFocusMode: typings.monacoEditor.mod.editor.EditorOption.tabFocusMode & Double = js.native
+  /* 139 */ val tabFocusMode: typings.monacoEditor.mod.editor.EditorOption.tabFocusMode & Double = js.native
   
   @js.native
   sealed trait tabIndex
     extends StObject
        with EditorOption
-  /* 119 */ val tabIndex: typings.monacoEditor.mod.editor.EditorOption.tabIndex & Double = js.native
+  /* 120 */ val tabIndex: typings.monacoEditor.mod.editor.EditorOption.tabIndex & Double = js.native
   
   @js.native
   sealed trait unfoldOnClickAfterEndOfLine
@@ -779,89 +785,89 @@ object EditorOption extends StObject {
   sealed trait unicodeHighlighting
     extends StObject
        with EditorOption
-  /* 120 */ val unicodeHighlighting: typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting & Double = js.native
+  /* 121 */ val unicodeHighlighting: typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting & Double = js.native
   
   @js.native
   sealed trait unusualLineTerminators
     extends StObject
        with EditorOption
-  /* 121 */ val unusualLineTerminators: typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators & Double = js.native
+  /* 122 */ val unusualLineTerminators: typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators & Double = js.native
   
   @js.native
   sealed trait useShadowDOM
     extends StObject
        with EditorOption
-  /* 122 */ val useShadowDOM: typings.monacoEditor.mod.editor.EditorOption.useShadowDOM & Double = js.native
+  /* 123 */ val useShadowDOM: typings.monacoEditor.mod.editor.EditorOption.useShadowDOM & Double = js.native
   
   @js.native
   sealed trait useTabStops
     extends StObject
        with EditorOption
-  /* 123 */ val useTabStops: typings.monacoEditor.mod.editor.EditorOption.useTabStops & Double = js.native
+  /* 124 */ val useTabStops: typings.monacoEditor.mod.editor.EditorOption.useTabStops & Double = js.native
   
   @js.native
   sealed trait wordBreak
     extends StObject
        with EditorOption
-  /* 124 */ val wordBreak: typings.monacoEditor.mod.editor.EditorOption.wordBreak & Double = js.native
+  /* 125 */ val wordBreak: typings.monacoEditor.mod.editor.EditorOption.wordBreak & Double = js.native
   
   @js.native
   sealed trait wordSeparators
     extends StObject
        with EditorOption
-  /* 125 */ val wordSeparators: typings.monacoEditor.mod.editor.EditorOption.wordSeparators & Double = js.native
+  /* 126 */ val wordSeparators: typings.monacoEditor.mod.editor.EditorOption.wordSeparators & Double = js.native
   
   @js.native
   sealed trait wordWrap
     extends StObject
        with EditorOption
-  /* 126 */ val wordWrap: typings.monacoEditor.mod.editor.EditorOption.wordWrap & Double = js.native
+  /* 127 */ val wordWrap: typings.monacoEditor.mod.editor.EditorOption.wordWrap & Double = js.native
   
   @js.native
   sealed trait wordWrapBreakAfterCharacters
     extends StObject
        with EditorOption
-  /* 127 */ val wordWrapBreakAfterCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters & Double = js.native
+  /* 128 */ val wordWrapBreakAfterCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters & Double = js.native
   
   @js.native
   sealed trait wordWrapBreakBeforeCharacters
     extends StObject
        with EditorOption
-  /* 128 */ val wordWrapBreakBeforeCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters & Double = js.native
+  /* 129 */ val wordWrapBreakBeforeCharacters: typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakBeforeCharacters & Double = js.native
   
   @js.native
   sealed trait wordWrapColumn
     extends StObject
        with EditorOption
-  /* 129 */ val wordWrapColumn: typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn & Double = js.native
+  /* 130 */ val wordWrapColumn: typings.monacoEditor.mod.editor.EditorOption.wordWrapColumn & Double = js.native
   
   @js.native
   sealed trait wordWrapOverride1
     extends StObject
        with EditorOption
-  /* 130 */ val wordWrapOverride1: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride1 & Double = js.native
+  /* 131 */ val wordWrapOverride1: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride1 & Double = js.native
   
   @js.native
   sealed trait wordWrapOverride2
     extends StObject
        with EditorOption
-  /* 131 */ val wordWrapOverride2: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride2 & Double = js.native
+  /* 132 */ val wordWrapOverride2: typings.monacoEditor.mod.editor.EditorOption.wordWrapOverride2 & Double = js.native
   
   @js.native
   sealed trait wrappingIndent
     extends StObject
        with EditorOption
-  /* 132 */ val wrappingIndent: typings.monacoEditor.mod.editor.EditorOption.wrappingIndent & Double = js.native
+  /* 133 */ val wrappingIndent: typings.monacoEditor.mod.editor.EditorOption.wrappingIndent & Double = js.native
   
   @js.native
   sealed trait wrappingInfo
     extends StObject
        with EditorOption
-  /* 140 */ val wrappingInfo: typings.monacoEditor.mod.editor.EditorOption.wrappingInfo & Double = js.native
+  /* 141 */ val wrappingInfo: typings.monacoEditor.mod.editor.EditorOption.wrappingInfo & Double = js.native
   
   @js.native
   sealed trait wrappingStrategy
     extends StObject
        with EditorOption
-  /* 133 */ val wrappingStrategy: typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy & Double = js.native
+  /* 134 */ val wrappingStrategy: typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy & Double = js.native
 }

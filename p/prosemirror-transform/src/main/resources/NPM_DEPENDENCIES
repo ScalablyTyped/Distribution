@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-transform" : "1.7.1"
+      "prosemirror-transform" : "1.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-transform" : "1.7.1"
+      "prosemirror-transform" : "1.7.3"
     }
   ],
   "compile-devDependencies" : [

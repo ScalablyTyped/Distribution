@@ -10,28 +10,28 @@ trait CIMPictureStroke
      with CIMSymbolLayerType {
   
   /**
-    * The color substitutions for the picture.
-    */
+  			 * The color substitutions for the picture.
+  			 */
   var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
-    * How the image is resampled.
-    */
+  			 * How the image is resampled.
+  			 */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
   ] = js.undefined
   
   /**
-    * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
-    */
+  			 * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
+  			 */
   var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
   var type_CIMPictureStroke: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureStroke
   
   /**
-    * The image that is used in the symbol layer. Typically a base64 encoded image.
-    */
+  			 * The image that is used in the symbol layer. Typically a base64 encoded image.
+  			 */
   var url: js.UndefOr[String] = js.undefined
 }
 object CIMPictureStroke {

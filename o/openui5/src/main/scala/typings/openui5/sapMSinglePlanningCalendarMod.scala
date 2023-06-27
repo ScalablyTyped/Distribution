@@ -1,10 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AppointmentCopy
-import typings.openui5.anon.AppointmentEndDate
-import typings.openui5.anon.Appointments
-import typings.openui5.anon.EndDateStartDate
-import typings.openui5.anon.`27`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PlanningCalendarStickyMode
 import typings.openui5.sapMLibraryMod.SinglePlanningCalendarSelectionMode
@@ -156,19 +151,17 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * Adds some selectedDate to the aggregation {@link #getSelectedDates selectedDates}.
+      * Adds a selected date to the grid.
       *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def addSelectedDate(
-      /**
-      * The selectedDate to add; if empty, nothing is inserted
+    def addSelectedDate(/**
+      * A DateRange object
       */
-    oSelectedDate: typings.openui5.sapUiUnifiedDateRangeMod.default
-    ): this.type = js.native
+    oSelectedDate: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Adds some specialDate to the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -194,7 +187,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentCreate appointmentCreate} event of
       * this `sap.m.SinglePlanningCalendar`.
@@ -210,20 +203,20 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def attachAppointmentCreate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentCreate appointmentCreate} event of
       * this `sap.m.SinglePlanningCalendar`.
@@ -244,7 +237,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def attachAppointmentCreate(
       /**
@@ -255,7 +248,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -263,7 +256,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDrop appointmentDrop} event of this
       * `sap.m.SinglePlanningCalendar`.
@@ -279,20 +272,20 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDrop(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentDrop appointmentDrop} event of this
       * `sap.m.SinglePlanningCalendar`.
@@ -313,7 +306,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit]
     ): this.type = js.native
     def attachAppointmentDrop(
       /**
@@ -324,7 +317,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -332,7 +325,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentResize appointmentResize} event of
       * this `sap.m.SinglePlanningCalendar`.
@@ -348,20 +341,20 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def attachAppointmentResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:appointmentResize appointmentResize} event of
       * this `sap.m.SinglePlanningCalendar`.
@@ -382,7 +375,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def attachAppointmentResize(
       /**
@@ -393,7 +386,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -415,13 +408,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def attachAppointmentSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -447,7 +440,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def attachAppointmentSelect(
       /**
@@ -458,7 +451,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -466,7 +459,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:cellPress cellPress} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -481,20 +474,20 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit]
     ): this.type = js.native
     def attachCellPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Attaches event handler `fnFunction` to the {@link #event:cellPress cellPress} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -514,7 +507,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit]
     ): this.type = js.native
     def attachCellPress(
       /**
@@ -525,7 +518,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -547,13 +540,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit]
     ): this.type = js.native
     def attachHeaderDateSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -579,7 +572,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit]
     ): this.type = js.native
     def attachHeaderDateSelect(
       /**
@@ -590,7 +583,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -612,13 +605,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit]
     ): this.type = js.native
     def attachMoreLinkPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -644,7 +637,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit]
     ): this.type = js.native
     def attachMoreLinkPress(
       /**
@@ -655,7 +648,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -677,13 +670,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -709,7 +702,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
@@ -720,7 +713,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -728,7 +721,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.71.0
+      * @since 1.71.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:viewChange viewChange} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -743,20 +736,20 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachViewChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.71.0
+      * @since 1.71.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:viewChange viewChange} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -776,7 +769,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachViewChange(
       /**
@@ -787,7 +780,7 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SinglePlanningCalendar` itself
       */
@@ -816,7 +809,7 @@ object sapMSinglePlanningCalendarMod {
     def destroySelectedDates(): this.type = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Destroys all the specialDates in the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -832,7 +825,7 @@ object sapMSinglePlanningCalendarMod {
     def destroyViews(): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentCreate appointmentCreate} event
       * of this `sap.m.SinglePlanningCalendar`.
@@ -845,13 +838,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit]
     ): this.type = js.native
     def detachAppointmentCreate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentCreateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -859,7 +852,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentDrop appointmentDrop} event of
       * this `sap.m.SinglePlanningCalendar`.
@@ -872,13 +865,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit]
     ): this.type = js.native
     def detachAppointmentDrop(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentDropEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -886,7 +879,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Detaches event handler `fnFunction` from the {@link #event:appointmentResize appointmentResize} event
       * of this `sap.m.SinglePlanningCalendar`.
@@ -899,13 +892,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit]
     ): this.type = js.native
     def detachAppointmentResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -924,13 +917,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit]
     ): this.type = js.native
     def detachAppointmentSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarAppointmentSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -938,7 +931,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Detaches event handler `fnFunction` from the {@link #event:cellPress cellPress} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -950,13 +943,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit]
     ): this.type = js.native
     def detachCellPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarCellPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -975,13 +968,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit]
     ): this.type = js.native
     def detachHeaderDateSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarHeaderDateSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1000,13 +993,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit]
     ): this.type = js.native
     def detachMoreLinkPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarMoreLinkPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1025,13 +1018,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit]
     ): this.type = js.native
     def detachStartDateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SinglePlanningCalendarStartDateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1039,7 +1032,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.71.0
+      * @since 1.71.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:viewChange viewChange} event of this `sap.m.SinglePlanningCalendar`.
       *
@@ -1051,13 +1044,13 @@ object sapMSinglePlanningCalendarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachViewChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1065,116 +1058,132 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentCreate appointmentCreate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentCreate(): this.type = js.native
-    def fireAppointmentCreate(/**
+    def fireAppointmentCreate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: EndDateStartDate): this.type = js.native
+    mParameters: SinglePlanningCalendar$AppointmentCreateEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.64
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.64
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentDrop appointmentDrop} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentDrop(): this.type = js.native
-    def fireAppointmentDrop(/**
+    def fireAppointmentDrop(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AppointmentCopy): this.type = js.native
+    mParameters: SinglePlanningCalendar$AppointmentDropEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentResize appointmentResize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentResize(): this.type = js.native
-    def fireAppointmentResize(/**
+    def fireAppointmentResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AppointmentEndDate): this.type = js.native
+    mParameters: SinglePlanningCalendar$AppointmentResizeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:appointmentSelect appointmentSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAppointmentSelect(): this.type = js.native
-    def fireAppointmentSelect(/**
+    def fireAppointmentSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Appointments): this.type = js.native
+    mParameters: SinglePlanningCalendar$AppointmentSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cellPress cellPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCellPress(): this.type = js.native
-    def fireCellPress(/**
+    def fireCellPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: EndDateStartDate): this.type = js.native
+    mParameters: SinglePlanningCalendar$CellPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:headerDateSelect headerDateSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireHeaderDateSelect(): this.type = js.native
-    def fireHeaderDateSelect(/**
+    def fireHeaderDateSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `27`): this.type = js.native
+    mParameters: SinglePlanningCalendar$HeaderDateSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:moreLinkPress moreLinkPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMoreLinkPress(): this.type = js.native
-    def fireMoreLinkPress(/**
+    def fireMoreLinkPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `27`): this.type = js.native
+    mParameters: SinglePlanningCalendar$MoreLinkPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStartDateChange(): this.type = js.native
-    def fireStartDateChange(/**
+    def fireStartDateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `27`): this.type = js.native
+    mParameters: SinglePlanningCalendar$StartDateChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.71.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.71.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:viewChange viewChange} to attached listeners.
       *
@@ -1206,7 +1215,7 @@ object sapMSinglePlanningCalendarMod {
     def getAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -1230,7 +1239,7 @@ object sapMSinglePlanningCalendarMod {
     def getDateSelectionMode(): SinglePlanningCalendarSelectionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SinglePlanningCalendarSelectionMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Gets current value of property {@link #getEnableAppointmentsCreate enableAppointmentsCreate}.
       *
@@ -1246,7 +1255,7 @@ object sapMSinglePlanningCalendarMod {
     def getEnableAppointmentsCreate(): Boolean = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Gets current value of property {@link #getEnableAppointmentsDragAndDrop enableAppointmentsDragAndDrop}.
       *
@@ -1262,7 +1271,7 @@ object sapMSinglePlanningCalendarMod {
     def getEnableAppointmentsDragAndDrop(): Boolean = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Gets current value of property {@link #getEnableAppointmentsResize enableAppointmentsResize}.
       *
@@ -1270,8 +1279,8 @@ object sapMSinglePlanningCalendarMod {
       *
       * The resize interaction is visualized by making the appointment transparent.
       *
-      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize
-      * appointmentResize} event is fired, containing the new start and end JavaScript date objects.
+      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects.
       *
       * Default value is `false`.
       *
@@ -1292,7 +1301,7 @@ object sapMSinglePlanningCalendarMod {
     def getEndHour(): int = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -1322,14 +1331,14 @@ object sapMSinglePlanningCalendarMod {
     def getFullDay(): Boolean = js.native
     
     /**
-      * @SINCE 1.65.0
+      * @since 1.65.0
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Gets current value of property {@link #getScaleFactor scaleFactor}.
       *
@@ -1344,7 +1353,7 @@ object sapMSinglePlanningCalendarMod {
     def getScaleFactor(): float = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Holds the selected appointments. If no appointments are selected, an empty array is returned.
       *
@@ -1353,14 +1362,11 @@ object sapMSinglePlanningCalendarMod {
     def getSelectedAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * Gets content of aggregation {@link #getSelectedDates selectedDates}.
+      * Gets the selected dates of the grid.
       *
-      * Dates or date ranges for selected dates.
-      *
-      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange}
-      * class.
+      * @returns An array of DateRange objects
       */
-    def getSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
+    def getSelectedDates(): js.Object = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getSelectedView selectedView},
@@ -1369,7 +1375,7 @@ object sapMSinglePlanningCalendarMod {
     def getSelectedView(): ID = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Gets content of aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1382,8 +1388,8 @@ object sapMSinglePlanningCalendarMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Determines the start date of the grid, as a JavaScript date object. It is considered as a local date.
-      * The time part will be ignored. The current date is used as default.
+      * Determines the start date of the grid, as a UI5Date or JavaScript Date object. It is considered as a
+      * local date. The time part will be ignored. The current date is used as default.
       *
       * @returns Value of property `startDate`
       */
@@ -1402,7 +1408,7 @@ object sapMSinglePlanningCalendarMod {
     def getStartHour(): int = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Gets current value of property {@link #getStickyMode stickyMode}.
       *
@@ -1432,7 +1438,7 @@ object sapMSinglePlanningCalendarMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.75
+      * @since 1.75
       *
       * Finds the view object by given key.
       *
@@ -1466,8 +1472,8 @@ object sapMSinglePlanningCalendarMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments
-      * appointments}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments appointments}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1492,7 +1498,7 @@ object sapMSinglePlanningCalendarMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Checks for the provided `sap.ui.unified.DateTypeRange` in the aggregation {@link #getSpecialDates specialDates}.
       * and returns its index if found or -1 otherwise.
@@ -1574,7 +1580,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Inserts a specialDate into the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1650,16 +1656,14 @@ object sapMSinglePlanningCalendarMod {
     def removeAllAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * Removes all the controls from the aggregation {@link #getSelectedDates selectedDates}.
+      * Removes the selected dates of the grid.
       *
-      * Additionally, it unregisters them from the hosting UIArea.
-      *
-      * @returns An array of the removed elements (might be empty)
+      * @returns An array of the removed DateRange objects
       */
-    def removeAllSelectedDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
+    def removeAllSelectedDates(): js.Object = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Removes all the controls from the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1723,7 +1727,7 @@ object sapMSinglePlanningCalendarMod {
       */
     vSpecialDate: String): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Removes a specialDate from the aggregation {@link #getSpecialDates specialDates}.
       *
@@ -1761,7 +1765,7 @@ object sapMSinglePlanningCalendarMod {
     ): typings.openui5.sapMSinglePlanningCalendarViewMod.default | Null = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -1813,7 +1817,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Sets a new value for property {@link #getEnableAppointmentsCreate enableAppointmentsCreate}.
       *
@@ -1835,7 +1839,7 @@ object sapMSinglePlanningCalendarMod {
     bEnableAppointmentsCreate: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Sets a new value for property {@link #getEnableAppointmentsDragAndDrop enableAppointmentsDragAndDrop}.
       *
@@ -1859,7 +1863,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Sets a new value for property {@link #getEnableAppointmentsResize enableAppointmentsResize}.
       *
@@ -1867,8 +1871,8 @@ object sapMSinglePlanningCalendarMod {
       *
       * The resize interaction is visualized by making the appointment transparent.
       *
-      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize
-      * appointmentResize} event is fired, containing the new start and end JavaScript date objects.
+      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1901,7 +1905,7 @@ object sapMSinglePlanningCalendarMod {
     iEndHour: int): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -1950,7 +1954,7 @@ object sapMSinglePlanningCalendarMod {
     oLegend: typings.openui5.sapMPlanningCalendarLegendMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.65.0
+      * @since 1.65.0
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -1965,7 +1969,7 @@ object sapMSinglePlanningCalendarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Sets a new value for property {@link #getScaleFactor scaleFactor}.
       *
@@ -2011,9 +2015,13 @@ object sapMSinglePlanningCalendarMod {
       * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getStartHour startHour}.
@@ -2034,7 +2042,7 @@ object sapMSinglePlanningCalendarMod {
     iStartHour: int): this.type = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Sets a new value for property {@link #getStickyMode stickyMode}.
       *
@@ -2082,6 +2090,294 @@ object sapMSinglePlanningCalendarMod {
     sTitle: String): this.type = js.native
   }
   
+  trait SinglePlanningCalendar$AppointmentCreateEventParameters extends StObject {
+    
+    /**
+      * End date of the created appointment, as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the created appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$AppointmentCreateEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$AppointmentCreateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$AppointmentCreateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$AppointmentCreateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$AppointmentDropEventParameters extends StObject {
+    
+    /**
+      * The dropped appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * The drop type. If true - it's "Copy", if false - it's "Move".
+      */
+    var copy: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Dropped appointment end date as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the dropped appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$AppointmentDropEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$AppointmentDropEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$AppointmentDropEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$AppointmentDropEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$AppointmentResizeEventParameters extends StObject {
+    
+    /**
+      * The resized appointment.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * End date of the resized appointment, as a UI5Date or JavaScript Date object.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Start date of the resized appointment, as a UI5Date or JavaScript Date object.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$AppointmentResizeEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$AppointmentResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$AppointmentResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$AppointmentResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$AppointmentSelectEventParameters extends StObject {
+    
+    /**
+      * The appointment on which the event was triggered.
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * All appointments with changed selected state.
+      */
+    var appointments: js.UndefOr[js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]] = js.undefined
+  }
+  object SinglePlanningCalendar$AppointmentSelectEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$AppointmentSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$AppointmentSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$AppointmentSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setAppointments(value: js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentsUndefined: Self = StObject.set(x, "appointments", js.undefined)
+      
+      inline def setAppointmentsVarargs(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default*): Self = StObject.set(x, "appointments", js.Array(value*))
+    }
+  }
+  
+  trait SinglePlanningCalendar$CellPressEventParameters extends StObject {
+    
+    /**
+      * The end date as a UI5Date or JavaScript Date object of the focused grid cell.
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The start date as a UI5Date or JavaScript Date object of the focused grid cell.
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$CellPressEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$CellPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$CellPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$CellPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$HeaderDateSelectEventParameters extends StObject {
+    
+    /**
+      * Date of the selected header, as a UI5Date or JavaScript Date object. It is considered as a local date.
+      */
+    var date: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$HeaderDateSelectEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$HeaderDateSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$HeaderDateSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$HeaderDateSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$MoreLinkPressEventParameters extends StObject {
+    
+    /**
+      * The date as a UI5Date or JavaScript Date object of the cell with the pressed more link.
+      */
+    var date: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$MoreLinkPressEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$MoreLinkPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$MoreLinkPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$MoreLinkPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$StartDateChangeEventParameters extends StObject {
+    
+    /**
+      * The new start date, as a UI5Date or JavaScript Date object. It is considered as a local date.
+      */
+    var date: js.UndefOr[js.Object] = js.undefined
+  }
+  object SinglePlanningCalendar$StartDateChangeEventParameters {
+    
+    inline def apply(): SinglePlanningCalendar$StartDateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SinglePlanningCalendar$StartDateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendar$StartDateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    }
+  }
+  
+  trait SinglePlanningCalendar$ViewChangeEventParameters extends StObject
+  
+  type SinglePlanningCalendarAppointmentCreateEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentCreateEventParameters]
+  
+  type SinglePlanningCalendarAppointmentCreateEventParameters = SinglePlanningCalendar$AppointmentCreateEventParameters
+  
+  type SinglePlanningCalendarAppointmentDropEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentDropEventParameters]
+  
+  type SinglePlanningCalendarAppointmentDropEventParameters = SinglePlanningCalendar$AppointmentDropEventParameters
+  
+  type SinglePlanningCalendarAppointmentResizeEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentResizeEventParameters]
+  
+  type SinglePlanningCalendarAppointmentResizeEventParameters = SinglePlanningCalendar$AppointmentResizeEventParameters
+  
+  type SinglePlanningCalendarAppointmentSelectEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentSelectEventParameters]
+  
+  type SinglePlanningCalendarAppointmentSelectEventParameters = SinglePlanningCalendar$AppointmentSelectEventParameters
+  
+  type SinglePlanningCalendarCellPressEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$CellPressEventParameters]
+  
+  type SinglePlanningCalendarCellPressEventParameters = SinglePlanningCalendar$CellPressEventParameters
+  
+  type SinglePlanningCalendarHeaderDateSelectEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$HeaderDateSelectEventParameters]
+  
+  type SinglePlanningCalendarHeaderDateSelectEventParameters = SinglePlanningCalendar$HeaderDateSelectEventParameters
+  
+  type SinglePlanningCalendarMoreLinkPressEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$MoreLinkPressEventParameters]
+  
+  type SinglePlanningCalendarMoreLinkPressEventParameters = SinglePlanningCalendar$MoreLinkPressEventParameters
+  
   trait SinglePlanningCalendarSettings
     extends StObject
        with ControlSettings {
@@ -2094,30 +2390,50 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Fired if an appointment is created.
       */
-    var appointmentCreate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentCreate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentCreateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Fired if an appointment is dropped.
       */
-    var appointmentDrop: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentDrop: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentDropEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Fired when an appointment is resized.
       */
-    var appointmentResize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentResize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the selected state of an appointment is changed.
       */
-    var appointmentSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var appointmentSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The appointments to be displayed in the grid. Appointments outside the visible time frame are not rendered.
@@ -2132,7 +2448,7 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
@@ -2142,11 +2458,16 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Fired when a grid cell is pressed.
       */
-    var cellPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cellPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$CellPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines whether more than one day will be selectable. **Note:** selecting more than one day is possible
@@ -2157,7 +2478,7 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Determines whether the appointments can be created by dragging on empty cells.
       *
@@ -2169,7 +2490,7 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Determines whether the appointments in the grid are draggable.
       *
@@ -2181,14 +2502,14 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Determines whether the appointments are resizable.
       *
       * The resize interaction is visualized by making the appointment transparent.
       *
-      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize
-      * appointmentResize} event is fired, containing the new start and end JavaScript date objects.
+      * The appointment snaps on every interval of 30 minutes. After the resize is finished, the {@link #event:appointmentResize appointmentResize }
+      * event is fired, containing the new start and end UI5Date or JavaScript Date objects.
       */
     var enableAppointmentsResize: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2201,7 +2522,7 @@ object sapMSinglePlanningCalendarMod {
     var endHour: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * If set, the first day of the displayed week is this day. Valid values are 0 to 6 starting on Sunday.
       * If there is no valid value set, the default of the used locale is used.
@@ -2223,10 +2544,15 @@ object sapMSinglePlanningCalendarMod {
     /**
       * Fired if a date is selected in the calendar header.
       */
-    var headerDateSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var headerDateSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$HeaderDateSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.65.0
+      * @since 1.65.0
       *
       * Association to the `PlanningCalendarLegend` explaining the colors of the `Appointments`.
       *
@@ -2238,10 +2564,15 @@ object sapMSinglePlanningCalendarMod {
       * Fired when a 'more' button is pressed. **Note:** The 'more' button appears in a month view cell when
       * multiple appointments exist and the available space is not sufficient to display all of them.
       */
-    var moreLinkPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var moreLinkPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$MoreLinkPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.99
+      * @since 1.99
       *
       * Determines scale factor for the appointments.
       *
@@ -2254,7 +2585,7 @@ object sapMSinglePlanningCalendarMod {
     /**
       * Dates or date ranges for selected dates.
       *
-      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange}
+      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange }
       * class.
       */
     var selectedDates: js.UndefOr[
@@ -2267,7 +2598,7 @@ object sapMSinglePlanningCalendarMod {
     var selectedView: js.UndefOr[typings.openui5.sapMSinglePlanningCalendarViewMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Special days in the header visualized as a date range with type.
       *
@@ -2278,8 +2609,8 @@ object sapMSinglePlanningCalendarMod {
       ] = js.undefined
     
     /**
-      * Determines the start date of the grid, as a JavaScript date object. It is considered as a local date.
-      * The time part will be ignored. The current date is used as default.
+      * Determines the start date of the grid, as a UI5Date or JavaScript Date object. It is considered as a
+      * local date. The time part will be ignored. The current date is used as default.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2288,7 +2619,12 @@ object sapMSinglePlanningCalendarMod {
     /**
       * `startDate` is changed while navigating in the `SinglePlanningCalendar`.
       */
-    var startDateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var startDateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$StartDateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the start hour of the grid to be shown if the `fullDay` property is set to `false`. Otherwise
@@ -2297,7 +2633,7 @@ object sapMSinglePlanningCalendarMod {
     var startHour: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Determines which part of the control will remain fixed at the top of the page during vertical scrolling
       * as long as the control is in the viewport.
@@ -2317,11 +2653,13 @@ object sapMSinglePlanningCalendarMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.71.0
+      * @since 1.71.0
       *
       * The view was changed by user interaction.
       */
-    var viewChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var viewChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Views of the `SinglePlanningCalendar`.
@@ -2350,19 +2688,27 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setActionsVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setAppointmentCreate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentCreate", js.Any.fromFunction1(value))
+      inline def setAppointmentCreate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentCreateEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentCreate", js.Any.fromFunction1(value))
       
       inline def setAppointmentCreateUndefined: Self = StObject.set(x, "appointmentCreate", js.undefined)
       
-      inline def setAppointmentDrop(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentDrop", js.Any.fromFunction1(value))
+      inline def setAppointmentDrop(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentDropEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentDrop", js.Any.fromFunction1(value))
       
       inline def setAppointmentDropUndefined: Self = StObject.set(x, "appointmentDrop", js.undefined)
       
-      inline def setAppointmentResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentResize", js.Any.fromFunction1(value))
+      inline def setAppointmentResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentResize", js.Any.fromFunction1(value))
       
       inline def setAppointmentResizeUndefined: Self = StObject.set(x, "appointmentResize", js.undefined)
       
-      inline def setAppointmentSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "appointmentSelect", js.Any.fromFunction1(value))
+      inline def setAppointmentSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$AppointmentSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "appointmentSelect", js.Any.fromFunction1(value))
       
       inline def setAppointmentSelectUndefined: Self = StObject.set(x, "appointmentSelect", js.undefined)
       
@@ -2380,7 +2726,9 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
-      inline def setCellPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cellPress", js.Any.fromFunction1(value))
+      inline def setCellPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$CellPressEventParameters] => Unit
+      ): Self = StObject.set(x, "cellPress", js.Any.fromFunction1(value))
       
       inline def setCellPressUndefined: Self = StObject.set(x, "cellPress", js.undefined)
       
@@ -2414,7 +2762,9 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setFullDayUndefined: Self = StObject.set(x, "fullDay", js.undefined)
       
-      inline def setHeaderDateSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "headerDateSelect", js.Any.fromFunction1(value))
+      inline def setHeaderDateSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$HeaderDateSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "headerDateSelect", js.Any.fromFunction1(value))
       
       inline def setHeaderDateSelectUndefined: Self = StObject.set(x, "headerDateSelect", js.undefined)
       
@@ -2422,7 +2772,9 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      inline def setMoreLinkPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "moreLinkPress", js.Any.fromFunction1(value))
+      inline def setMoreLinkPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$MoreLinkPressEventParameters] => Unit
+      ): Self = StObject.set(x, "moreLinkPress", js.Any.fromFunction1(value))
       
       inline def setMoreLinkPressUndefined: Self = StObject.set(x, "moreLinkPress", js.undefined)
       
@@ -2452,7 +2804,9 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setStartDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
+      inline def setStartDateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$StartDateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
       
       inline def setStartDateChangeUndefined: Self = StObject.set(x, "startDateChange", js.undefined)
       
@@ -2472,7 +2826,7 @@ object sapMSinglePlanningCalendarMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setViewChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "viewChange", js.Any.fromFunction1(value))
+      inline def setViewChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "viewChange", js.Any.fromFunction1(value))
       
       inline def setViewChangeUndefined: Self = StObject.set(x, "viewChange", js.undefined)
       
@@ -2485,4 +2839,12 @@ object sapMSinglePlanningCalendarMod {
       inline def setViewsVarargs(value: typings.openui5.sapMSinglePlanningCalendarViewMod.default*): Self = StObject.set(x, "views", js.Array(value*))
     }
   }
+  
+  type SinglePlanningCalendarStartDateChangeEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$StartDateChangeEventParameters]
+  
+  type SinglePlanningCalendarStartDateChangeEventParameters = SinglePlanningCalendar$StartDateChangeEventParameters
+  
+  type SinglePlanningCalendarViewChangeEvent = typings.openui5.sapUiBaseEventMod.default[SinglePlanningCalendar$ViewChangeEventParameters]
+  
+  type SinglePlanningCalendarViewChangeEventParameters = SinglePlanningCalendar$ViewChangeEventParameters
 }

@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for importing [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers.html)
-  */
+	 * A convenience module for importing [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) classes when developing with [TypeScript](https://developers.arcgis.com/javascript/latest/typescript-setup/).
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers.html)
+	 */
 object renderers {
   
   type ClassBreaksRenderer = typings.arcgisJsApi.esri.ClassBreaksRenderer

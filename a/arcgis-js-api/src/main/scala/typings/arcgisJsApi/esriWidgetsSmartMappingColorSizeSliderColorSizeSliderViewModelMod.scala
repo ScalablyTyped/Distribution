@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingColorSizeSliderColorSizeSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/ColorSizeSlider/ColorSizeSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ColorSizeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider-ColorSizeSliderViewModel.html)
-    */
+  		 * Provides the logic for the [ColorSizeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider-ColorSizeSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ColorSizeSliderViewModel {

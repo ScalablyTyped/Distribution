@@ -118,12 +118,18 @@ object pluginIsoWeekMod extends Shortcut {
       
       def endOf(unit: ISOUnitType): Dayjs = js.native
       
+      def isAfter(): Boolean = js.native
+      def isAfter(date: Unit, unit: ISOUnitType): Boolean = js.native
       def isAfter(date: ConfigType): Boolean = js.native
       def isAfter(date: ConfigType, unit: ISOUnitType): Boolean = js.native
       
+      def isBefore(): Boolean = js.native
+      def isBefore(date: Unit, unit: ISOUnitType): Boolean = js.native
       def isBefore(date: ConfigType): Boolean = js.native
       def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
       
+      def isSame(): Boolean = js.native
+      def isSame(date: Unit, unit: ISOUnitType): Boolean = js.native
       def isSame(date: ConfigType): Boolean = js.native
       def isSame(date: ConfigType, unit: ISOUnitType): Boolean = js.native
       

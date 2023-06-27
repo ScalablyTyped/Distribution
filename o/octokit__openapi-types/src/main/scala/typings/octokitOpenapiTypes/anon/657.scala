@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `657` extends StObject {
   
-  var query: DirectionFilter
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Keyprefix]
 }
 object `657` {
   
-  inline def apply(query: DirectionFilter): `657` = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Keyprefix]): `657` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`657`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `657`] (val x: Self) extends AnyVal {
     
-    inline def setQuery(value: DirectionFilter): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Keyprefix]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(value: Keyprefix*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

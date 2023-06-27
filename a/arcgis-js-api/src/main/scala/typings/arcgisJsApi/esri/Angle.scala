@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Angle extends StObject {
   
   /**
-    * Unit type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Angle)
-    */
+  		 * Unit type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Angle)
+  		 */
   var `type`: angle
   
   /**
-    * Any unit which represents an angle.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Any unit which represents an angle.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: AngleUnit
   
   /**
-    * Scalar value representing a angle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Angle)
-    */
+  		 * Scalar value representing a angle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Angle)
+  		 */
   var value: Double
 }
 object Angle {

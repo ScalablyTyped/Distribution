@@ -9,19 +9,19 @@ trait SizeSliderViewModelProperties
      with SmartMappingPrimaryHandleSliderViewModelProperties {
   
   /**
-    * This property is typically used in diverging, or `above-and-below` renderer configurations.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html#persistSizeRangeEnabled)
-    */
+  		 * This property is typically used in diverging, or `above-and-below` renderer configurations.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html#persistSizeRangeEnabled)
+  		 */
   var persistSizeRangeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html#stops)
-    */
+  		 * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider-SizeSliderViewModel.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[SizeStopProperties]] = js.undefined
 }
 object SizeSliderViewModelProperties {

@@ -57,7 +57,6 @@ trait IApp
   
   /**
     * Loads the last logical operation (if any).
-    * @returns"
     */
   def back(): js.Promise[Unit] = js.native
   

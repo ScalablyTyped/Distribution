@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Area extends StObject {
   
   /**
-    * Unit type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Area)
-    */
+  		 * Unit type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Area)
+  		 */
   var `type`: area
   
   /**
-    * Any unit which represents area.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Any unit which represents area.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: AreaUnit
   
   /**
-    * Scalar value representing a area.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Area)
-    */
+  		 * Scalar value representing a area.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Area)
+  		 */
   var value: Double
 }
 object Area {

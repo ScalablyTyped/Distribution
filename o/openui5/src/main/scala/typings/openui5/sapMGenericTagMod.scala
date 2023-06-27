@@ -164,7 +164,7 @@ object sapMGenericTagMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -189,13 +189,13 @@ object sapMGenericTagMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.GenericTag` itself
       */
@@ -220,7 +220,7 @@ object sapMGenericTagMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -231,7 +231,7 @@ object sapMGenericTagMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.GenericTag` itself
       */
@@ -256,13 +256,13 @@ object sapMGenericTagMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -270,7 +270,7 @@ object sapMGenericTagMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -283,10 +283,9 @@ object sapMGenericTagMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -302,8 +301,8 @@ object sapMGenericTagMod {
     def getDesign(): GenericTagDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTagDesign * / any */ String) = js.native
     
     /**
-      * Sets the behavior of the `GenericTag` inside an `OverflowToolbar` configuration. Required by the {@link
-      * sap.m.IOverflowToolbarContent} interface.
+      * Sets the behavior of the `GenericTag` inside an `OverflowToolbar` configuration. Required by the {@link sap.m.IOverflowToolbarContent }
+      * interface.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
@@ -354,7 +353,7 @@ object sapMGenericTagMod {
     def getValueState(): GenericTagValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTagValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -363,7 +362,7 @@ object sapMGenericTagMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -479,12 +478,18 @@ object sapMGenericTagMod {
     sValueState: GenericTagValueState): this.type = js.native
   }
   
+  trait GenericTag$PressEventParameters extends StObject
+  
+  type GenericTagPressEvent = typings.openui5.sapUiBaseEventMod.default[GenericTag$PressEventParameters]
+  
+  type GenericTagPressEventParameters = GenericTag$PressEventParameters
+  
   trait GenericTagSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Association to controls / ids which label this control (see WAI-ARIA attribute aria-labelledBy).
       */
@@ -500,7 +505,9 @@ object sapMGenericTagMod {
     /**
       * Fired when the user clicks/taps on the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines the control status that is represented in different colors, including the color bar and the
@@ -552,7 +559,7 @@ object sapMGenericTagMod {
       
       inline def setDesignUndefined: Self = StObject.set(x, "design", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

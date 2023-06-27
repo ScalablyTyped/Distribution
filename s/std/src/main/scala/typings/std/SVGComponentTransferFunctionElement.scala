@@ -10,7 +10,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A base interface used by the component transfer function interfaces. */
+/**
+  * A base interface used by the component transfer function interfaces.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGComponentTransferFunctionElement)
+  */
 @js.native
 trait SVGComponentTransferFunctionElement
   extends StObject

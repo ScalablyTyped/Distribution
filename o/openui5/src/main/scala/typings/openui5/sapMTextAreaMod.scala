@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMInputBaseMod.InputBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -140,13 +139,13 @@ object sapMTextAreaMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TextArea` itself
       */
@@ -171,7 +170,7 @@ object sapMTextAreaMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -182,7 +181,7 @@ object sapMTextAreaMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TextArea` itself
       */
@@ -200,13 +199,13 @@ object sapMTextAreaMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TextAreaLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -214,17 +213,19 @@ object sapMTextAreaMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: TextArea$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCols cols}.
@@ -239,7 +240,7 @@ object sapMTextAreaMod {
     def getCols(): int = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getGrowing growing}.
       *
@@ -253,7 +254,7 @@ object sapMTextAreaMod {
     def getGrowing(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getGrowingMaxLines growingMaxLines}.
       *
@@ -298,7 +299,7 @@ object sapMTextAreaMod {
     def getRows(): int = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Gets current value of property {@link #getShowExceededText showExceededText}.
       *
@@ -316,7 +317,7 @@ object sapMTextAreaMod {
     def getShowExceededText(): Boolean = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets current value of property {@link #getValueLiveUpdate valueLiveUpdate}.
       *
@@ -359,7 +360,7 @@ object sapMTextAreaMod {
     iCols: int): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getGrowing growing}.
       *
@@ -379,7 +380,7 @@ object sapMTextAreaMod {
     bGrowing: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getGrowingMaxLines growingMaxLines}.
       *
@@ -448,7 +449,7 @@ object sapMTextAreaMod {
     iRows: int): this.type = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Sets a new value for property {@link #getShowExceededText showExceededText}.
       *
@@ -472,7 +473,7 @@ object sapMTextAreaMod {
     bShowExceededText: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Sets a new value for property {@link #getValueLiveUpdate valueLiveUpdate}.
       *
@@ -515,6 +516,33 @@ object sapMTextAreaMod {
     sWrapping: Wrapping): this.type = js.native
   }
   
+  trait TextArea$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The new `value` of the control.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object TextArea$LiveChangeEventParameters {
+    
+    inline def apply(): TextArea$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextArea$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextArea$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type TextAreaLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[TextArea$LiveChangeEventParameters]
+  
+  type TextAreaLiveChangeEventParameters = TextArea$LiveChangeEventParameters
+  
   trait TextAreaSettings
     extends StObject
        with InputBaseSettings {
@@ -526,7 +554,7 @@ object sapMTextAreaMod {
     var cols: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Indicates the ability of the control to automatically grow and shrink dynamically with its content. **Note:**
       * This property should not be used when the `height` property is set.
@@ -536,7 +564,7 @@ object sapMTextAreaMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Defines the maximum number of lines that the control can grow.
       */
@@ -552,7 +580,12 @@ object sapMTextAreaMod {
     /**
       * Is fired whenever the user has modified the text shown on the text area.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextArea$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the maximum number of characters that the `value` can be.
@@ -566,7 +599,7 @@ object sapMTextAreaMod {
     var rows: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Determines whether the characters, exceeding the maximum allowed character count, are visible in the
       * input field.
@@ -580,7 +613,7 @@ object sapMTextAreaMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Indicates when the `value` property gets updated with the user changes. Setting it to `true` updates
       * the `value` property whenever the user has modified the text shown on the text area.
@@ -622,7 +655,9 @@ object sapMTextAreaMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TextArea$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

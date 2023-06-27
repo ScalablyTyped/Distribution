@@ -65,6 +65,10 @@ trait ChatMessage
   // List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
   var mentions: js.UndefOr[NullableOption[js.Array[ChatMessageMention]]] = js.undefined
   
+  /**
+    * List of activity history of a message item, including modification time and actions, such as reactionAdded,
+    * reactionRemoved, or reaction changes, on the message.
+    */
   var messageHistory: js.UndefOr[NullableOption[js.Array[ChatMessageHistoryItem]]] = js.undefined
   
   /**

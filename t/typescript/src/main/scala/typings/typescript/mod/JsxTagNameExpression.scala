@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.Identifier
   - typings.typescript.mod.ThisExpression
   - typings.typescript.mod.JsxTagNamePropertyAccess
+  - typings.typescript.mod.JsxNamespacedName
 */
 trait JsxTagNameExpression extends StObject

@@ -10,9 +10,9 @@ trait websceneApplicationProperties
      with Accessor {
   
   /**
-    * View-specific properties of application and UI elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html#viewing)
-    */
+  		 * View-specific properties of application and UI elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html#viewing)
+  		 */
   var viewing: Viewing = js.native
 }

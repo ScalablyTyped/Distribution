@@ -125,6 +125,7 @@ object anon {
   
   trait TypeofPerformanceObserver extends StObject {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceObserver/supportedEntryTypes) */
     /* standard dom */
     val supportedEntryTypes: js.Array[String]
   }

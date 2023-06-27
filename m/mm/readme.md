@@ -1,7 +1,7 @@
 
 # Scala.js typings for mm
 
-Typings are for version 3.2.2
+Typings are for version 3.3.0
 
 ## Library description:
 mock mate, mock http request, fs access and so on.

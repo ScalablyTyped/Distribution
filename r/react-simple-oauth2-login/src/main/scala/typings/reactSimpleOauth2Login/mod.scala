@@ -1,6 +1,6 @@
 package typings.reactSimpleOauth2Login
 
-import typings.react.mod.ReactChildren
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactSimpleOauth2Login.anon.ButtonText
 import typings.reactSimpleOauth2Login.reactSimpleOauth2LoginStrings.code
@@ -24,7 +24,7 @@ object mod {
     
     var buttonText: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactChildren] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -79,7 +79,7 @@ object mod {
       
       inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      inline def setChildren(value: ReactChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

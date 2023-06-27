@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WeatherVisibleElements extends StObject {
   
   /**
-    * When set to `false`, the header is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html#VisibleElements)
-    */
+  		 * When set to `false`, the header is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html#VisibleElements)
+  		 */
   var header: js.UndefOr[Boolean] = js.undefined
 }
 object WeatherVisibleElements {

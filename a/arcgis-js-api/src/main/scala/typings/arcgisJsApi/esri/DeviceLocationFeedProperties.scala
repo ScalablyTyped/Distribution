@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceLocationFeedProperties extends StObject {
   
   /**
-    * An optional Arcade expression that controls whether a location update will be used by a geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-DeviceLocationFeed.html#filterExpression)
-    */
+  		 * An optional Arcade expression that controls whether a location update will be used by a geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-DeviceLocationFeed.html#filterExpression)
+  		 */
   var filterExpression: js.UndefOr[geotriggersInfoExpressionInfoProperties] = js.undefined
 }
 object DeviceLocationFeedProperties {

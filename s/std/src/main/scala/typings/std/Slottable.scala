@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Slottable extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/assignedSlot) */
   /* standard dom */
   val assignedSlot: HTMLSlotElement | Null
 }

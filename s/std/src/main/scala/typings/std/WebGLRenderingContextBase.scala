@@ -318,6 +318,7 @@ import typings.std.stdStrings.WEBGL_color_buffer_float
 import typings.std.stdStrings.WEBGL_compressed_texture_astc
 import typings.std.stdStrings.WEBGL_compressed_texture_etc
 import typings.std.stdStrings.WEBGL_compressed_texture_etc1
+import typings.std.stdStrings.WEBGL_compressed_texture_pvrtc
 import typings.std.stdStrings.WEBGL_compressed_texture_s3tc
 import typings.std.stdStrings.WEBGL_compressed_texture_s3tc_srgb
 import typings.std.stdStrings.WEBGL_debug_renderer_info
@@ -1221,70 +1222,91 @@ trait WebGLRenderingContextBase extends StObject {
   /* standard dom */
   val ZERO: `0` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/activeTexture) */
   /* standard dom */
   def activeTexture(texture: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/attachShader) */
   /* standard dom */
   def attachShader(program: WebGLProgram, shader: WebGLShader): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindAttribLocation) */
   /* standard dom */
   def bindAttribLocation(program: WebGLProgram, index: GLuint, name: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindBuffer) */
   /* standard dom */
   def bindBuffer(target: GLenum): Unit = js.native
   def bindBuffer(target: GLenum, buffer: WebGLBuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindFramebuffer) */
   /* standard dom */
   def bindFramebuffer(target: GLenum): Unit = js.native
   def bindFramebuffer(target: GLenum, framebuffer: WebGLFramebuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindRenderbuffer) */
   /* standard dom */
   def bindRenderbuffer(target: GLenum): Unit = js.native
   def bindRenderbuffer(target: GLenum, renderbuffer: WebGLRenderbuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/bindTexture) */
   /* standard dom */
   def bindTexture(target: GLenum): Unit = js.native
   def bindTexture(target: GLenum, texture: WebGLTexture): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendColor) */
   /* standard dom */
   def blendColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquation) */
   /* standard dom */
   def blendEquation(mode: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendEquationSeparate) */
   /* standard dom */
   def blendEquationSeparate(modeRGB: GLenum, modeAlpha: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFunc) */
   /* standard dom */
   def blendFunc(sfactor: GLenum, dfactor: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/blendFuncSeparate) */
   /* standard dom */
   def blendFuncSeparate(srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/canvas) */
   /* standard dom */
   val canvas: HTMLCanvasElement | OffscreenCanvas = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/checkFramebufferStatus) */
   /* standard dom */
   def checkFramebufferStatus(target: GLenum): GLenum = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clear) */
   /* standard dom */
   def clear(mask: GLbitfield): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearColor) */
   /* standard dom */
   def clearColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearDepth) */
   /* standard dom */
   def clearDepth(depth: GLclampf): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/clearStencil) */
   /* standard dom */
   def clearStencil(s: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/colorMask) */
   /* standard dom */
   def colorMask(red: GLboolean, green: GLboolean, blue: GLboolean, alpha: GLboolean): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/compileShader) */
   /* standard dom */
   def compileShader(shader: WebGLShader): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexImage2D) */
   /* standard dom */
   def copyTexImage2D(
     target: GLenum,
@@ -1297,6 +1319,7 @@ trait WebGLRenderingContextBase extends StObject {
     border: GLint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/copyTexSubImage2D) */
   /* standard dom */
   def copyTexSubImage2D(
     target: GLenum,
@@ -1309,130 +1332,172 @@ trait WebGLRenderingContextBase extends StObject {
     height: GLsizei
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createBuffer) */
   /* standard dom */
   def createBuffer(): WebGLBuffer | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createFramebuffer) */
   /* standard dom */
   def createFramebuffer(): WebGLFramebuffer | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createProgram) */
   /* standard dom */
   def createProgram(): WebGLProgram | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createRenderbuffer) */
   /* standard dom */
   def createRenderbuffer(): WebGLRenderbuffer | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createShader) */
   /* standard dom */
   def createShader(`type`: GLenum): WebGLShader | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/createTexture) */
   /* standard dom */
   def createTexture(): WebGLTexture | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/cullFace) */
   /* standard dom */
   def cullFace(mode: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteBuffer) */
   /* standard dom */
   def deleteBuffer(): Unit = js.native
   def deleteBuffer(buffer: WebGLBuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteFramebuffer) */
   /* standard dom */
   def deleteFramebuffer(): Unit = js.native
   def deleteFramebuffer(framebuffer: WebGLFramebuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteProgram) */
   /* standard dom */
   def deleteProgram(): Unit = js.native
   def deleteProgram(program: WebGLProgram): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteRenderbuffer) */
   /* standard dom */
   def deleteRenderbuffer(): Unit = js.native
   def deleteRenderbuffer(renderbuffer: WebGLRenderbuffer): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteShader) */
   /* standard dom */
   def deleteShader(): Unit = js.native
   def deleteShader(shader: WebGLShader): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/deleteTexture) */
   /* standard dom */
   def deleteTexture(): Unit = js.native
   def deleteTexture(texture: WebGLTexture): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthFunc) */
   /* standard dom */
   def depthFunc(func: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthMask) */
   /* standard dom */
   def depthMask(flag: GLboolean): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/depthRange) */
   /* standard dom */
   def depthRange(zNear: GLclampf, zFar: GLclampf): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/detachShader) */
   /* standard dom */
   def detachShader(program: WebGLProgram, shader: WebGLShader): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disable) */
   /* standard dom */
   def disable(cap: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/disableVertexAttribArray) */
   /* standard dom */
   def disableVertexAttribArray(index: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawArrays) */
   /* standard dom */
   def drawArrays(mode: GLenum, first: GLint, count: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawElements) */
   /* standard dom */
   def drawElements(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr): Unit = js.native
   
   /* standard dom */
+  var drawingBufferColorSpace: PredefinedColorSpace = js.native
+  
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferHeight) */
+  /* standard dom */
   val drawingBufferHeight: GLsizei = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/drawingBufferWidth) */
   /* standard dom */
   val drawingBufferWidth: GLsizei = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enable) */
   /* standard dom */
   def enable(cap: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/enableVertexAttribArray) */
   /* standard dom */
   def enableVertexAttribArray(index: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/finish) */
   /* standard dom */
   def finish(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/flush) */
   /* standard dom */
   def flush(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferRenderbuffer) */
   /* standard dom */
   def framebufferRenderbuffer(target: GLenum, attachment: GLenum, renderbuffertarget: GLenum): Unit = js.native
   def framebufferRenderbuffer(target: GLenum, attachment: GLenum, renderbuffertarget: GLenum, renderbuffer: WebGLRenderbuffer): Unit = js.native
   
   def framebufferTexture2D(target: GLenum, attachment: GLenum, textarget: GLenum, texture: Null, level: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/framebufferTexture2D) */
   /* standard dom */
   def framebufferTexture2D(target: GLenum, attachment: GLenum, textarget: GLenum, texture: WebGLTexture, level: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/frontFace) */
   /* standard dom */
   def frontFace(mode: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/generateMipmap) */
   /* standard dom */
   def generateMipmap(target: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveAttrib) */
   /* standard dom */
   def getActiveAttrib(program: WebGLProgram, index: GLuint): WebGLActiveInfo | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getActiveUniform) */
   /* standard dom */
   def getActiveUniform(program: WebGLProgram, index: GLuint): WebGLActiveInfo | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttachedShaders) */
   /* standard dom */
   def getAttachedShaders(program: WebGLProgram): js.Array[WebGLShader] | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getAttribLocation) */
   /* standard dom */
   def getAttribLocation(program: WebGLProgram, name: java.lang.String): GLint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getBufferParameter) */
   /* standard dom */
   def getBufferParameter(target: GLenum, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getContextAttributes) */
   /* standard dom */
   def getContextAttributes(): WebGLContextAttributes | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getError) */
   /* standard dom */
   def getError(): GLenum = js.native
   
   /* standard dom */
   def getExtension(name: java.lang.String): Any = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getExtension) */
   /* standard dom */
   @JSName("getExtension")
   def getExtension_ANGLEinstancedarrays(extensionName: ANGLE_instanced_arrays): ANGLEInstancedArrays | Null = js.native
@@ -1510,6 +1575,9 @@ trait WebGLRenderingContextBase extends StObject {
   def getExtension_WEBGLcompressedtextureetc1(extensionName: WEBGL_compressed_texture_etc1): WEBGLCompressedTextureEtc1 | Null = js.native
   /* standard dom */
   @JSName("getExtension")
+  def getExtension_WEBGLcompressedtexturepvrtc(extensionName: WEBGL_compressed_texture_pvrtc): WEBGLCompressedTexturePvrtc | Null = js.native
+  /* standard dom */
+  @JSName("getExtension")
   def getExtension_WEBGLcompressedtextures3tc(extensionName: WEBGL_compressed_texture_s3tc): WEBGLCompressedTextureS3tc | Null = js.native
   /* standard dom */
   @JSName("getExtension")
@@ -1533,80 +1601,104 @@ trait WebGLRenderingContextBase extends StObject {
   @JSName("getExtension")
   def getExtension_WEBGLmultidraw(extensionName: WEBGL_multi_draw): WEBGLMultiDraw | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getFramebufferAttachmentParameter) */
   /* standard dom */
   def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getParameter) */
   /* standard dom */
   def getParameter(pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramInfoLog) */
   /* standard dom */
   def getProgramInfoLog(program: WebGLProgram): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getProgramParameter) */
   /* standard dom */
   def getProgramParameter(program: WebGLProgram, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getRenderbufferParameter) */
   /* standard dom */
   def getRenderbufferParameter(target: GLenum, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderInfoLog) */
   /* standard dom */
   def getShaderInfoLog(shader: WebGLShader): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderParameter) */
   /* standard dom */
   def getShaderParameter(shader: WebGLShader, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderPrecisionFormat) */
   /* standard dom */
   def getShaderPrecisionFormat(shadertype: GLenum, precisiontype: GLenum): WebGLShaderPrecisionFormat | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getShaderSource) */
   /* standard dom */
   def getShaderSource(shader: WebGLShader): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getSupportedExtensions) */
   /* standard dom */
   def getSupportedExtensions(): js.Array[java.lang.String] | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getTexParameter) */
   /* standard dom */
   def getTexParameter(target: GLenum, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniform) */
   /* standard dom */
   def getUniform(program: WebGLProgram, location: WebGLUniformLocation): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getUniformLocation) */
   /* standard dom */
   def getUniformLocation(program: WebGLProgram, name: java.lang.String): WebGLUniformLocation | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttrib) */
   /* standard dom */
   def getVertexAttrib(index: GLuint, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/getVertexAttribOffset) */
   /* standard dom */
   def getVertexAttribOffset(index: GLuint, pname: GLenum): GLintptr = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/hint) */
   /* standard dom */
   def hint(target: GLenum, mode: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isBuffer) */
   /* standard dom */
   def isBuffer(): GLboolean = js.native
   def isBuffer(buffer: WebGLBuffer): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isContextLost) */
   /* standard dom */
   def isContextLost(): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isEnabled) */
   /* standard dom */
   def isEnabled(cap: GLenum): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isFramebuffer) */
   /* standard dom */
   def isFramebuffer(): GLboolean = js.native
   def isFramebuffer(framebuffer: WebGLFramebuffer): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isProgram) */
   /* standard dom */
   def isProgram(): GLboolean = js.native
   def isProgram(program: WebGLProgram): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isRenderbuffer) */
   /* standard dom */
   def isRenderbuffer(): GLboolean = js.native
   def isRenderbuffer(renderbuffer: WebGLRenderbuffer): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isShader) */
   /* standard dom */
   def isShader(): GLboolean = js.native
   def isShader(shader: WebGLShader): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/isTexture) */
   /* standard dom */
   def isTexture(): GLboolean = js.native
   def isTexture(texture: WebGLTexture): GLboolean = js.native
@@ -1614,119 +1706,153 @@ trait WebGLRenderingContextBase extends StObject {
   /* standard dom */
   def lineWidth(width: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/linkProgram) */
   /* standard dom */
   def linkProgram(program: WebGLProgram): Unit = js.native
   
   def pixelStorei(pname: GLenum, param: GLboolean): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/pixelStorei) */
   /* standard dom */
   def pixelStorei(pname: GLenum, param: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/polygonOffset) */
   /* standard dom */
   def polygonOffset(factor: GLfloat, units: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/renderbufferStorage) */
   /* standard dom */
   def renderbufferStorage(target: GLenum, internalformat: GLenum, width: GLsizei, height: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/sampleCoverage) */
   /* standard dom */
   def sampleCoverage(value: GLclampf, invert: GLboolean): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/scissor) */
   /* standard dom */
   def scissor(x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/shaderSource) */
   /* standard dom */
   def shaderSource(shader: WebGLShader, source: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFunc) */
   /* standard dom */
   def stencilFunc(func: GLenum, ref: GLint, mask: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilFuncSeparate) */
   /* standard dom */
   def stencilFuncSeparate(face: GLenum, func: GLenum, ref: GLint, mask: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMask) */
   /* standard dom */
   def stencilMask(mask: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilMaskSeparate) */
   /* standard dom */
   def stencilMaskSeparate(face: GLenum, mask: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOp) */
   /* standard dom */
   def stencilOp(fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/stencilOpSeparate) */
   /* standard dom */
   def stencilOpSeparate(face: GLenum, fail: GLenum, zfail: GLenum, zpass: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter) */
   /* standard dom */
   def texParameterf(target: GLenum, pname: GLenum, param: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/texParameter) */
   /* standard dom */
   def texParameteri(target: GLenum, pname: GLenum, param: GLint): Unit = js.native
   
   def uniform1f(location: Null, x: GLfloat): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform1f(location: WebGLUniformLocation, x: GLfloat): Unit = js.native
   
   def uniform1i(location: Null, x: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform1i(location: WebGLUniformLocation, x: GLint): Unit = js.native
   
   def uniform2f(location: Null, x: GLfloat, y: GLfloat): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform2f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat): Unit = js.native
   
   def uniform2i(location: Null, x: GLint, y: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform2i(location: WebGLUniformLocation, x: GLint, y: GLint): Unit = js.native
   
   def uniform3f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform3f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
   
   def uniform3i(location: Null, x: GLint, y: GLint, z: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform3i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint): Unit = js.native
   
   def uniform4f(location: Null, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform4f(location: WebGLUniformLocation, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
   
   def uniform4i(location: Null, x: GLint, y: GLint, z: GLint, w: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/uniform) */
   /* standard dom */
   def uniform4i(location: WebGLUniformLocation, x: GLint, y: GLint, z: GLint, w: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/useProgram) */
   /* standard dom */
   def useProgram(): Unit = js.native
   def useProgram(program: WebGLProgram): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/validateProgram) */
   /* standard dom */
   def validateProgram(program: WebGLProgram): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   def vertexAttrib1f(index: GLuint, x: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttrib1fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   def vertexAttrib2f(index: GLuint, x: GLfloat, y: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttrib2fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   def vertexAttrib3f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttrib3fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   def vertexAttrib4f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttrib) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttrib4fv(index: GLuint, values: Float32List | js.Iterable[GLfloat]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/vertexAttribPointer) */
   /* standard dom */
   def vertexAttribPointer(
     index: GLuint,
@@ -1737,6 +1863,7 @@ trait WebGLRenderingContextBase extends StObject {
     offset: GLintptr
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLRenderingContext/viewport) */
   /* standard dom */
   def viewport(x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = js.native
 }

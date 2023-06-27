@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`28`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PageBackgroundDesign
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -152,13 +151,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddNewButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -184,7 +183,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddNewButtonPress(
       /**
@@ -195,7 +194,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -216,13 +215,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit]
     ): this.type = js.native
     def attachItemClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -247,7 +246,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit]
     ): this.type = js.native
     def attachItemClose(
       /**
@@ -258,7 +257,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -279,13 +278,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -310,7 +309,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit]
     ): this.type = js.native
     def attachItemSelect(
       /**
@@ -321,7 +320,7 @@ object sapMTabContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TabContainer` itself
       */
@@ -360,13 +359,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAddNewButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -384,13 +383,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit]
     ): this.type = js.native
     def detachItemClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -408,13 +407,13 @@ object sapMTabContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit]
     ): this.type = js.native
     def detachItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabContainerItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -422,7 +421,7 @@ object sapMTabContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:addNewButtonPress addNewButtonPress} to attached listeners.
       *
@@ -435,7 +434,7 @@ object sapMTabContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClose itemClose} to attached listeners.
       *
@@ -445,13 +444,15 @@ object sapMTabContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireItemClose(): Boolean = js.native
-    def fireItemClose(/**
+    def fireItemClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `28`): Boolean = js.native
+    mParameters: TabContainer$ItemCloseEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
@@ -461,13 +462,15 @@ object sapMTabContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireItemSelect(): Boolean = js.native
-    def fireItemSelect(/**
+    def fireItemSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `28`): Boolean = js.native
+    mParameters: TabContainer$ItemSelectEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -564,7 +567,7 @@ object sapMTabContainerMod {
     ): typings.openui5.sapMTabContainerItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -633,6 +636,66 @@ object sapMTabContainerMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait TabContainer$AddNewButtonPressEventParameters extends StObject
+  
+  trait TabContainer$ItemCloseEventParameters extends StObject {
+    
+    /**
+      * The item to be closed.
+      */
+    var item: js.UndefOr[typings.openui5.sapMTabContainerItemMod.default] = js.undefined
+  }
+  object TabContainer$ItemCloseEventParameters {
+    
+    inline def apply(): TabContainer$ItemCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabContainer$ItemCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainer$ItemCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMTabContainerItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait TabContainer$ItemSelectEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var item: js.UndefOr[typings.openui5.sapMTabContainerItemMod.default] = js.undefined
+  }
+  object TabContainer$ItemSelectEventParameters {
+    
+    inline def apply(): TabContainer$ItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabContainer$ItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainer$ItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMTabContainerItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type TabContainerAddNewButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[TabContainer$AddNewButtonPressEventParameters]
+  
+  type TabContainerAddNewButtonPressEventParameters = TabContainer$AddNewButtonPressEventParameters
+  
+  type TabContainerItemCloseEvent = typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemCloseEventParameters]
+  
+  type TabContainerItemCloseEventParameters = TabContainer$ItemCloseEventParameters
+  
+  type TabContainerItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemSelectEventParameters]
+  
+  type TabContainerItemSelectEventParameters = TabContainer$ItemSelectEventParameters
+  
   trait TabContainerSettings
     extends StObject
        with ControlSettings {
@@ -640,10 +703,12 @@ object sapMTabContainerMod {
     /**
       * Fired when the Add New Tab button is pressed.
       */
-    var addNewButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var addNewButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Determines the background color of the content in `TabContainer`.
       */
@@ -654,12 +719,22 @@ object sapMTabContainerMod {
     /**
       * Fired when an item is closed.
       */
-    var itemClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when an item is pressed.
       */
-    var itemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The items displayed in the `TabContainer`.
@@ -690,7 +765,7 @@ object sapMTabContainerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TabContainerSettings] (val x: Self) extends AnyVal {
       
-      inline def setAddNewButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addNewButtonPress", js.Any.fromFunction1(value))
+      inline def setAddNewButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "addNewButtonPress", js.Any.fromFunction1(value))
       
       inline def setAddNewButtonPressUndefined: Self = StObject.set(x, "addNewButtonPress", js.undefined)
       
@@ -700,11 +775,15 @@ object sapMTabContainerMod {
       
       inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
-      inline def setItemClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClose", js.Any.fromFunction1(value))
+      inline def setItemClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClose", js.Any.fromFunction1(value))
       
       inline def setItemCloseUndefined: Self = StObject.set(x, "itemClose", js.undefined)
       
-      inline def setItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
+      inline def setItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabContainer$ItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelect", js.Any.fromFunction1(value))
       
       inline def setItemSelectUndefined: Self = StObject.set(x, "itemSelect", js.undefined)
       

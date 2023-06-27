@@ -4,6 +4,8 @@ import typings.jupyterlabObservables.libObservablelistMod.IObservableList.IChang
 import typings.jupyterlabObservables.libObservablelistMod.ObservableList.IOptions
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
+import typings.std.Iterable
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,25 +33,8 @@ object libObservablelistMod {
     /**
       * A signal emitted when the list has changed.
       */
-    /* CompleteClass */
-    override val changed: ISignal[this.type, IChangedArgs[T]] = js.native
-    /**
-      * A signal emitted when the list has changed.
-      */
     @JSName("changed")
     def changed_MObservableList: ISignal[this.type, IChangedArgs[T]] = js.native
-    
-    /**
-      * Remove all values from the list.
-      *
-      * #### Complexity
-      * Linear.
-      *
-      * #### Iterator Validity
-      * All current iterators are invalidated.
-      */
-    /* CompleteClass */
-    override def clear(): Unit = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -64,66 +49,6 @@ object libObservablelistMod {
       */
     /* CompleteClass */
     override def dispose(): Unit = js.native
-    
-    /**
-      * Get the value at the specified index.
-      *
-      * @param index - The positive integer index of interest.
-      *
-      * @returns The value at the specified index.
-      *
-      * #### Undefined Behavior
-      * An `index` which is non-integral or out of range.
-      */
-    /* CompleteClass */
-    override def get(index: Double): T = js.native
-    
-    /**
-      * Insert a value into the list at a specific index.
-      *
-      * @param index - The index at which to insert the value.
-      *
-      * @param value - The value to set at the specified index.
-      *
-      * #### Complexity
-      * Linear.
-      *
-      * #### Iterator Validity
-      * No changes.
-      *
-      * #### Notes
-      * The `index` will be clamped to the bounds of the list.
-      *
-      * #### Undefined Behavior
-      * An `index` which is non-integral.
-      */
-    /* CompleteClass */
-    override def insert(index: Double, value: T): Unit = js.native
-    
-    /**
-      * Insert a set of items into the list at the specified index.
-      *
-      * @param index - The index at which to insert the values.
-      *
-      * @param values - The values to insert at the specified index.
-      *
-      * #### Complexity.
-      * Linear.
-      *
-      * #### Iterator Validity
-      * No changes.
-      *
-      * #### Notes
-      * The `index` will be clamped to the bounds of the list.
-      *
-      * #### Undefined Behavior.
-      * An `index` which is non-integral.
-      */
-    /* CompleteClass */
-    override def insertAll(
-      index: Double,
-      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-    ): Unit = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -150,159 +75,15 @@ object libObservablelistMod {
       * #### Iterator Validity
       * No changes.
       */
-    /* CompleteClass */
-    override def iter(): Any = js.native
+    @JSName(js.Symbol.iterator)
+    var iterator_ObservableList: js.Function0[IterableIterator[T]] = js.native
     
-    /**
-      * The length of the list.
-      *
-      * #### Notes
-      * This is a read-only property.
-      */
-    /* CompleteClass */
-    var length: Double = js.native
     /**
       * The length of the list.
       */
     @JSName("length")
     def length_MObservableList: Double = js.native
     
-    /**
-      * Move a value from one index to another.
-      *
-      * @parm fromIndex - The index of the element to move.
-      *
-      * @param toIndex - The index to move the element to.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * Iterators pointing at the lesser of the `fromIndex` and the `toIndex`
-      * and beyond are invalidated.
-      *
-      * #### Undefined Behavior
-      * A `fromIndex` or a `toIndex` which is non-integral.
-      */
-    /* CompleteClass */
-    override def move(fromIndex: Double, toIndex: Double): Unit = js.native
-    
-    /**
-      * Add a value to the back of the list.
-      *
-      * @param value - The value to add to the back of the list.
-      *
-      * @returns The new length of the list.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * No changes.
-      */
-    /* CompleteClass */
-    override def push(value: T): Double = js.native
-    
-    /**
-      * Push a set of values to the back of the list.
-      *
-      * @param values - An iterable or array-like set of values to add.
-      *
-      * @returns The new length of the list.
-      *
-      * #### Complexity
-      * Linear.
-      *
-      * #### Iterator Validity
-      * No changes.
-      */
-    /* CompleteClass */
-    override def pushAll(
-      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-    ): Double = js.native
-    
-    /**
-      * Remove and return the value at a specific index.
-      *
-      * @param index - The index of the value of interest.
-      *
-      * @returns The value at the specified index, or `undefined` if the
-      *   index is out of range.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * Iterators pointing at the removed value and beyond are invalidated.
-      *
-      * #### Undefined Behavior
-      * An `index` which is non-integral.
-      */
-    /* CompleteClass */
-    override def remove(index: Double): js.UndefOr[T] = js.native
-    
-    /**
-      * Remove a range of items from the list.
-      *
-      * @param startIndex - The start index of the range to remove (inclusive).
-      *
-      * @param endIndex - The end index of the range to remove (exclusive).
-      *
-      * @returns The new length of the list.
-      *
-      * #### Complexity
-      * Linear.
-      *
-      * #### Iterator Validity
-      * Iterators pointing to the first removed value and beyond are invalid.
-      *
-      * #### Undefined Behavior
-      * A `startIndex` or `endIndex` which is non-integral.
-      */
-    /* CompleteClass */
-    override def removeRange(startIndex: Double, endIndex: Double): Double = js.native
-    
-    /**
-      * Remove the first occurrence of a value from the list.
-      *
-      * @param value - The value of interest.
-      *
-      * @returns The index of the removed value, or `-1` if the value
-      *   is not contained in the list.
-      *
-      * #### Complexity
-      * Linear.
-      *
-      * #### Iterator Validity
-      * Iterators pointing at the removed value and beyond are invalidated.
-      */
-    /* CompleteClass */
-    override def removeValue(value: T): Double = js.native
-    
-    /**
-      * Set the value at the specified index.
-      *
-      * @param index - The positive integer index of interest.
-      *
-      * @param value - The value to set at the specified index.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * No changes.
-      *
-      * #### Undefined Behavior
-      * An `index` which is non-integral or out of range.
-      */
-    /* CompleteClass */
-    override def set(index: Double, value: T): Unit = js.native
-    
-    /**
-      * The type of this object.
-      */
-    /* CompleteClass */
-    override val `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = js.native
     /**
       * The type of this object.
       */
@@ -326,9 +107,7 @@ object libObservablelistMod {
       /**
         * An optional initial set of values.
         */
-      var values: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-          ] = js.undefined
+      var values: js.UndefOr[js.Iterable[T]] = js.undefined
     }
     object IOptions {
       
@@ -344,23 +123,23 @@ object libObservablelistMod {
         
         inline def setItemCmpUndefined: Self = StObject.set(x, "itemCmp", js.undefined)
         
-        inline def setValues(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-        ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Iterable[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       }
     }
   }
   
+  @js.native
   trait IObservableList[T]
     extends StObject
-       with IDisposable {
+       with IDisposable
+       with Iterable[T] {
     
     /**
       * A signal emitted when the list has changed.
       */
-    val changed: ISignal[this.type, IChangedArgs[T]]
+    val changed: ISignal[this.type, IChangedArgs[T]] = js.native
     
     /**
       * Remove all values from the list.
@@ -371,7 +150,7 @@ object libObservablelistMod {
       * #### Iterator Validity
       * All current iterators are invalidated.
       */
-    def clear(): Unit
+    def clear(): Unit = js.native
     
     /**
       * Get the value at the specified index.
@@ -383,7 +162,7 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * An `index` which is non-integral or out of range.
       */
-    def get(index: Double): T
+    def get(index: Double): T = js.native
     
     /**
       * Insert a value into the list at a specific index.
@@ -404,7 +183,7 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * An `index` which is non-integral.
       */
-    def insert(index: Double, value: T): Unit
+    def insert(index: Double, value: T): Unit = js.native
     
     /**
       * Insert a set of items into the list at the specified index.
@@ -425,23 +204,7 @@ object libObservablelistMod {
       * #### Undefined Behavior.
       * An `index` which is non-integral.
       */
-    def insertAll(
-      index: Double,
-      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-    ): Unit
-    
-    /**
-      * Create an iterator over the values in the list.
-      *
-      * @returns A new iterator starting at the front of the list.
-      *
-      * #### Complexity
-      * Constant.
-      *
-      * #### Iterator Validity
-      * No changes.
-      */
-    def iter(): Any
+    def insertAll(index: Double, values: js.Iterable[T]): Unit = js.native
     
     /**
       * The length of the list.
@@ -449,7 +212,7 @@ object libObservablelistMod {
       * #### Notes
       * This is a read-only property.
       */
-    var length: Double
+    var length: Double = js.native
     
     /**
       * Move a value from one index to another.
@@ -468,7 +231,7 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * A `fromIndex` or a `toIndex` which is non-integral.
       */
-    def move(fromIndex: Double, toIndex: Double): Unit
+    def move(fromIndex: Double, toIndex: Double): Unit = js.native
     
     /**
       * Add a value to the back of the list.
@@ -483,12 +246,12 @@ object libObservablelistMod {
       * #### Iterator Validity
       * No changes.
       */
-    def push(value: T): Double
+    def push(value: T): Double = js.native
     
     /**
       * Push a set of values to the back of the list.
       *
-      * @param values - An iterable or array-like set of values to add.
+      * @param values - An iterable set of values to add.
       *
       * @returns The new length of the list.
       *
@@ -498,9 +261,7 @@ object libObservablelistMod {
       * #### Iterator Validity
       * No changes.
       */
-    def pushAll(
-      values: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any
-    ): Double
+    def pushAll(values: js.Iterable[T]): Double = js.native
     
     /**
       * Remove and return the value at a specific index.
@@ -519,7 +280,7 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * An `index` which is non-integral.
       */
-    def remove(index: Double): js.UndefOr[T]
+    def remove(index: Double): js.UndefOr[T] = js.native
     
     /**
       * Remove a range of items from the list.
@@ -539,7 +300,7 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * A `startIndex` or `endIndex` which is non-integral.
       */
-    def removeRange(startIndex: Double, endIndex: Double): Double
+    def removeRange(startIndex: Double, endIndex: Double): Double = js.native
     
     /**
       * Remove the first occurrence of a value from the list.
@@ -555,7 +316,7 @@ object libObservablelistMod {
       * #### Iterator Validity
       * Iterators pointing at the removed value and beyond are invalidated.
       */
-    def removeValue(value: T): Double
+    def removeValue(value: T): Double = js.native
     
     /**
       * Set the value at the specified index.
@@ -573,37 +334,14 @@ object libObservablelistMod {
       * #### Undefined Behavior
       * An `index` which is non-integral or out of range.
       */
-    def set(index: Double, value: T): Unit
+    def set(index: Double, value: T): Unit = js.native
     
     /**
       * The type of this object.
       */
-    val `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.List
+    val `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = js.native
   }
   object IObservableList {
-    
-    inline def apply[T](
-      changed: ISignal[IObservableList[T], IChangedArgs[T]],
-      clear: () => Unit,
-      dispose: () => Unit,
-      get: Double => T,
-      insert: (Double, T) => Unit,
-      insertAll: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any) => Unit,
-      isDisposed: Boolean,
-      iter: () => Any,
-      length: Double,
-      move: (Double, Double) => Unit,
-      push: T => Double,
-      pushAll: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any => Double,
-      remove: Double => js.UndefOr[T],
-      removeRange: (Double, Double) => Double,
-      removeValue: T => Double,
-      set: (Double, T) => Unit
-    ): IObservableList[T] = {
-      val __obj = js.Dynamic.literal(changed = changed.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), dispose = js.Any.fromFunction0(dispose), get = js.Any.fromFunction1(get), insert = js.Any.fromFunction2(insert), insertAll = js.Any.fromFunction2(insertAll), isDisposed = isDisposed.asInstanceOf[js.Any], iter = js.Any.fromFunction0(iter), length = length.asInstanceOf[js.Any], move = js.Any.fromFunction2(move), push = js.Any.fromFunction1(push), pushAll = js.Any.fromFunction1(pushAll), remove = js.Any.fromFunction1(remove), removeRange = js.Any.fromFunction2(removeRange), removeValue = js.Any.fromFunction1(removeValue), set = js.Any.fromFunction2(set))
-      __obj.updateDynamic("type")("List")
-      __obj.asInstanceOf[IObservableList[T]]
-    }
     
     /**
       * The change types which occur on an observable list.
@@ -693,44 +431,6 @@ object libObservablelistMod {
         
         inline def setType(value: ChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IObservableList[?], T] (val x: Self & IObservableList[T]) extends AnyVal {
-      
-      inline def setChanged(value: ISignal[IObservableList[T], IChangedArgs[T]]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
-      
-      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
-      
-      inline def setGet(value: Double => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-      
-      inline def setInsert(value: (Double, T) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
-      
-      inline def setInsertAll(
-        value: (Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any) => Unit
-      ): Self = StObject.set(x, "insertAll", js.Any.fromFunction2(value))
-      
-      inline def setIter(value: () => Any): Self = StObject.set(x, "iter", js.Any.fromFunction0(value))
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-      
-      inline def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
-      
-      inline def setPush(value: T => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
-      
-      inline def setPushAll(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IterableOrArrayLike<T> */ Any => Double
-      ): Self = StObject.set(x, "pushAll", js.Any.fromFunction1(value))
-      
-      inline def setRemove(value: Double => js.UndefOr[T]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
-      
-      inline def setRemoveRange(value: (Double, Double) => Double): Self = StObject.set(x, "removeRange", js.Any.fromFunction2(value))
-      
-      inline def setRemoveValue(value: T => Double): Self = StObject.set(x, "removeValue", js.Any.fromFunction1(value))
-      
-      inline def setSet(value: (Double, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
-      
-      inline def setType(value: typings.jupyterlabObservables.jupyterlabObservablesStrings.List): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

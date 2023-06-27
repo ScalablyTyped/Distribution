@@ -9,51 +9,51 @@ trait SizeSliderProperties
      with SmartMappingSliderBaseProperties {
   
   /**
-    * Only applicable when three thumbs (i.e.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#handlesSyncedToPrimary)
-    */
+  		 * Only applicable when three thumbs (i.e.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#handlesSyncedToPrimary)
+  		 */
   var handlesSyncedToPrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only applicable when three thumbs (i.e.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#persistSizeRangeEnabled)
-    */
+  		 * Only applicable when three thumbs (i.e.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#persistSizeRangeEnabled)
+  		 */
   var persistSizeRangeEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the slider will render a third handle between the two handles already provided by default.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#primaryHandleEnabled)
-    */
+  		 * When `true`, the slider will render a third handle between the two handles already provided by default.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#primaryHandleEnabled)
+  		 */
   var primaryHandleEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#stops)
-    */
+  		 * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[SizeStopProperties]] = js.undefined
   
   /**
-    * Exposes various properties of the widget that can be styled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
-    */
+  		 * Exposes various properties of the widget that can be styled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
+  		 */
   var style: js.UndefOr[SizeSliderStyleProperties] = js.undefined
   
   /**
-    * The view model for the SizeSlider widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#viewModel)
-    */
+  		 * The view model for the SizeSlider widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[SizeSliderViewModelProperties] = js.undefined
 }
 object SizeSliderProperties {

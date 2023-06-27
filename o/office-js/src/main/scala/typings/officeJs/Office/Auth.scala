@@ -21,14 +21,22 @@ trait Auth extends StObject {
     * @remarks
     *
     * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
-    * 
-    * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-    * 
-    * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
+    *
+    * **Important**:
+    *
+    * - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+    *
+    * - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The user is not signed into Office").
+    *
+    * - In Outlook on the web, if you use the
+    * {@link https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1) | displayDialogAsync}
+    * method to open a dialog, you must close the dialog before you can call `getAccessToken`.
+    *
+    * - In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
     * To retrieve an access token in older builds, use 
-    * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
+    * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
     * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
     *

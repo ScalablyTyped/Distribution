@@ -16,7 +16,7 @@ object sapUiModelOdataOdatautilsMod extends Shortcut {
   trait ODataUtils extends StObject {
     
     /**
-      * @SINCE 1.29.1
+      * @since 1.29.1
       *
       * Compares the given OData values based on their type. All date and time types can also be compared with
       * a number. This number is then interpreted as the number of milliseconds that the corresponding date or
@@ -73,7 +73,7 @@ object sapUiModelOdataOdatautilsMod extends Shortcut {
     ): String = js.native
     
     /**
-      * @SINCE 1.29.1
+      * @since 1.29.1
       *
       * Returns a comparator function optimized for the given EDM type.
       *
@@ -98,7 +98,7 @@ object sapUiModelOdataOdatautilsMod extends Shortcut {
     vParameters: String
     ): String = js.native
     /**
-      * @SINCE 1.30.7
+      * @since 1.30.7
       *
       * Adds an origin to the given service URL. If an origin is already present, it will only be replaced if
       * the parameters object contains the flag "force: true". In case the URL already contains URL parameters,

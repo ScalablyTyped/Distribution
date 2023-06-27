@@ -11,10 +11,10 @@ open class VisualVariablesMixin ()
      with typings.arcgisJsApi.esri.VisualVariablesMixin {
   
   /**
-    * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
-    */
+  		 * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
+  		 */
   /* CompleteClass */
   var visualVariables: js.Array[typings.arcgisJsApi.esri.VisualVariable] = js.native
 }

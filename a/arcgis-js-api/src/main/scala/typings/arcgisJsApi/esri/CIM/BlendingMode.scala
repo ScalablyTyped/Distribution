@@ -11,40 +11,40 @@ sealed trait BlendingMode extends StObject
 object BlendingMode extends StObject {
   
   /**
-    * Add.
-    */
+  			 * Add.
+  			 */
   @js.native
   sealed trait Add
     extends StObject
        with BlendingMode
   
   /**
-    * Alpha blending.
-    */
+  			 * Alpha blending.
+  			 */
   @js.native
   sealed trait Alpha
     extends StObject
        with BlendingMode
   
   /**
-    * Multiply.
-    */
+  			 * Multiply.
+  			 */
   @js.native
   sealed trait Multiply
     extends StObject
        with BlendingMode
   
   /**
-    * No blending.
-    */
+  			 * No blending.
+  			 */
   @js.native
   sealed trait None
     extends StObject
        with BlendingMode
   
   /**
-    * Screen.
-    */
+  			 * Screen.
+  			 */
   @js.native
   sealed trait Screen
     extends StObject

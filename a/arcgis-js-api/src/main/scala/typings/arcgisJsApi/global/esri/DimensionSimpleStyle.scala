@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.DimensionSimpleStyle")
 @js.native
 /**
-  * Style that specifies how dimensions and their labels are displayed.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html)
-  */
+		 * Style that specifies how dimensions and their labels are displayed.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html)
+		 */
 open class DimensionSimpleStyle ()
   extends StObject
      with typings.arcgisJsApi.esri.DimensionSimpleStyle {

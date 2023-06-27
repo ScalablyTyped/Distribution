@@ -138,7 +138,7 @@ object sapMHeaderContainerMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -175,13 +175,13 @@ object sapMHeaderContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachScroll(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.HeaderContainer` itself
       */
@@ -206,7 +206,7 @@ object sapMHeaderContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachScroll(
       /**
@@ -217,7 +217,7 @@ object sapMHeaderContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.HeaderContainer` itself
       */
@@ -242,13 +242,13 @@ object sapMHeaderContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachScroll(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -256,7 +256,7 @@ object sapMHeaderContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:scroll scroll} to attached listeners.
       *
@@ -269,10 +269,9 @@ object sapMHeaderContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -296,8 +295,8 @@ object sapMHeaderContainerMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.99
-      * @EXPERIMENTAL (since 1.99)
+      * @since 1.99
+      * @experimental (since 1.99)
       *
       * Gets current value of property {@link #getGridLayout gridLayout}.
       *
@@ -430,7 +429,7 @@ object sapMHeaderContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -448,7 +447,7 @@ object sapMHeaderContainerMod {
     def removeAllContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -514,8 +513,8 @@ object sapMHeaderContainerMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.99
-      * @EXPERIMENTAL (since 1.99)
+      * @since 1.99
+      * @experimental (since 1.99)
       *
       * Sets a new value for property {@link #getGridLayout gridLayout}.
       *
@@ -675,12 +674,18 @@ object sapMHeaderContainerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait HeaderContainer$ScrollEventParameters extends StObject
+  
+  type HeaderContainerScrollEvent = typings.openui5.sapUiBaseEventMod.default[HeaderContainer$ScrollEventParameters]
+  
+  type HeaderContainerScrollEventParameters = HeaderContainer$ScrollEventParameters
+  
   trait HeaderContainerSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.62.0
+      * @since 1.62.0
       *
       * Controls or IDs that label controls in the `content` aggregation. Each ariaLabelledBy item is assigned
       * to its appropriate counterpart in the `content` aggregation.
@@ -706,8 +711,8 @@ object sapMHeaderContainerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.99
-      * @EXPERIMENTAL (since 1.99)
+      * @since 1.99
+      * @experimental (since 1.99)
       *
       * Enables grid layout in mobile view.
       */
@@ -735,7 +740,9 @@ object sapMHeaderContainerMod {
     /**
       * This event is triggered on pressing the scroll button.
       */
-    var scroll: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var scroll: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Number of pixels to scroll when the user chooses Next or Previous buttons. Relevant only for desktop.
@@ -819,7 +826,7 @@ object sapMHeaderContainerMod {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setScroll(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+      inline def setScroll(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
       
       inline def setScrollStep(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "scrollStep", value.asInstanceOf[js.Any])
       

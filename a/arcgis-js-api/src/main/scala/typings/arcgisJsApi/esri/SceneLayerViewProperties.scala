@@ -9,24 +9,24 @@ trait SceneLayerViewProperties
      with LayerViewProperties {
   
   /**
-    * Applies a client-side [FeatureFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html) to the displayed data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#filter)
-    */
+  		 * Applies a client-side [FeatureFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureFilter.html) to the displayed data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#filter)
+  		 */
   var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
-    * The maximum number of features that can be displayed at a time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeatures)
-    */
+  		 * The maximum number of features that can be displayed at a time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeatures)
+  		 */
   var maximumNumberOfFeatures: js.UndefOr[Double] = js.undefined
   
   /**
-    * Signifies whether the maximum number of features has been exceeded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeaturesExceeded)
-    */
+  		 * Signifies whether the maximum number of features has been exceeded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeaturesExceeded)
+  		 */
   var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.undefined
 }
 object SceneLayerViewProperties {

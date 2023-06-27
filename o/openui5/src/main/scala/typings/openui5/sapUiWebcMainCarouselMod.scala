@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectedIndex
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapUiWebcMainCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Carousel` itself
       */
@@ -183,7 +182,7 @@ object sapUiWebcMainCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -194,7 +193,7 @@ object sapUiWebcMainCarouselMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Carousel` itself
       */
@@ -219,13 +218,13 @@ object sapUiWebcMainCarouselMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CarouselNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -233,7 +232,7 @@ object sapUiWebcMainCarouselMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -243,7 +242,7 @@ object sapUiWebcMainCarouselMod {
     def fireNavigate(/**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedIndex): this.type = js.native
+    mParameters: Carousel$NavigateEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getArrowsPlacement arrowsPlacement}.
@@ -547,6 +546,33 @@ object sapUiWebcMainCarouselMod {
     iItemsPerPageS: int): this.type = js.native
   }
   
+  trait Carousel$NavigateEventParameters extends StObject {
+    
+    /**
+      * the current selected index
+      */
+    var selectedIndex: js.UndefOr[int] = js.undefined
+  }
+  object Carousel$NavigateEventParameters {
+    
+    inline def apply(): Carousel$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Carousel$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carousel$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedIndex(value: int): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    }
+  }
+  
+  type CarouselNavigateEvent = typings.openui5.sapUiBaseEventMod.default[Carousel$NavigateEventParameters]
+  
+  type CarouselNavigateEventParameters = Carousel$NavigateEventParameters
+  
   trait CarouselSettings
     extends StObject
        with ControlSettings {
@@ -617,7 +643,12 @@ object sapUiWebcMainCarouselMod {
       * Fired whenever the page changes due to user interaction, when the user clicks on the navigation arrows
       * or while resizing, based on the `items-per-page-l`, `items-per-page-m` and `items-per-page-s` properties.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object CarouselSettings {
     
@@ -667,7 +698,9 @@ object sapUiWebcMainCarouselMod {
       
       inline def setItemsPerPageSUndefined: Self = StObject.set(x, "itemsPerPageS", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Carousel$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     }

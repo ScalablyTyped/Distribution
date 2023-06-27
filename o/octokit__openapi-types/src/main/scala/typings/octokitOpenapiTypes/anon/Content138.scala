@@ -8,11 +8,11 @@ trait Content138 extends StObject {
   
   var content: `138`
   
-  var headers: XRateLimitLimit
+  var headers: Link
 }
 object Content138 {
   
-  inline def apply(content: `138`, headers: XRateLimitLimit): Content138 = {
+  inline def apply(content: `138`, headers: Link): Content138 = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content138]
   }
@@ -22,6 +22,6 @@ object Content138 {
     
     inline def setContent(value: `138`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: XRateLimitLimit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Link): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

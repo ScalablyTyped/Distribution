@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-remove-position
 
-Typings are for version 4.0.1
+Typings are for version 4.0.2
 
 ## Library description:
 unist utility to remove positions from a tree

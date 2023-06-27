@@ -1,6 +1,8 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiCoreRoutingTargetMod.TargetSettings
 import typings.openui5.sapUiCoreRoutingViewsMod.default
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +60,7 @@ trait Targets extends StObject {
   /**
     * One or multiple targets in a map.
     */
-  var targets: AnyNameControlAggregation
+  var targets: Record[String, TargetSettings]
   
   /**
     * the views instance will create the instances of all the targets defined, so if 2 targets have the same
@@ -68,7 +70,7 @@ trait Targets extends StObject {
 }
 object Targets {
   
-  inline def apply(targets: AnyNameControlAggregation, views: default): Targets = {
+  inline def apply(targets: Record[String, TargetSettings], views: default): Targets = {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     __obj.asInstanceOf[Targets]
   }
@@ -80,7 +82,7 @@ object Targets {
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setTargets(value: AnyNameControlAggregation): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: Record[String, TargetSettings]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     inline def setViews(value: default): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }

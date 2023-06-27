@@ -8,7 +8,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as <audio> or <video>. */
+/**
+  * An error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as <audio> or <video>.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaError)
+  */
 trait MediaError extends StObject {
   
   /* standard dom */
@@ -23,9 +27,11 @@ trait MediaError extends StObject {
   /* standard dom */
   val MEDIA_ERR_SRC_NOT_SUPPORTED: `4`
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaError/code) */
   /* standard dom */
   val code: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaError/message) */
   /* standard dom */
   val message: java.lang.String
 }

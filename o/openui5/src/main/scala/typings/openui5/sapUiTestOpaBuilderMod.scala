@@ -8,7 +8,6 @@ import typings.openui5.anon.I18NText
 import typings.openui5.anon.LabelFor
 import typings.openui5.anon.Properties
 import typings.openui5.sapUiTestOpa5Mod.Action
-import typings.openui5.sapUiTestOpa5Mod.Chain
 import typings.openui5.sapUiTestOpa5Mod.Matcher
 import typings.openui5.sapUiTestOpa5Mod.MultiControlSelector
 import typings.openui5.sapUiTestOpa5Mod.SingleControlSelector
@@ -80,6 +79,22 @@ object sapUiTestOpaBuilderMod {
     val ^ : js.Any = js.native
     
     /**
+      * A collection of predefined actions. See also {@link sap.ui.test.actions}.
+      */
+    @JSImport("sap/ui/test/OpaBuilder", "default.Actions")
+    @js.native
+    def Actions: typings.openui5.sapUiTestOpaBuilderMod.Actions = js.native
+    inline def Actions_=(x: typings.openui5.sapUiTestOpaBuilderMod.Actions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A collection of predefined matchers. See also {@link sap.ui.test.matchers}
+      */
+    @JSImport("sap/ui/test/OpaBuilder", "default.Matchers")
+    @js.native
+    def Matchers: typings.openui5.sapUiTestOpaBuilderMod.Matchers = js.native
+    inline def Matchers_=(x: typings.openui5.sapUiTestOpaBuilderMod.Matchers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matchers")(x.asInstanceOf[js.Any])
+    
+    /**
       * Convenience creation and initialization of a new OpaBuilder.
       *
       * @returns a new OpaBuilder instance
@@ -132,6 +147,9 @@ object sapUiTestOpaBuilderMod {
     oOptions: SingleControlSelector): SingleControlSelector | MultiControlSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(oOptions.asInstanceOf[js.Any]).asInstanceOf[SingleControlSelector | MultiControlSelector]
   }
   
+  /**
+    * A collection of predefined actions. See also {@link sap.ui.test.actions}.
+    */
   @js.native
   trait Actions extends StObject {
     
@@ -943,6 +961,9 @@ object sapUiTestOpaBuilderMod {
   @js.native
   val Actions: typings.openui5.sapUiTestOpaBuilderMod.Actions = js.native
   
+  /**
+    * A collection of predefined matchers. See also {@link sap.ui.test.matchers}
+    */
   @js.native
   trait Matchers extends StObject {
     
@@ -2967,13 +2988,13 @@ object sapUiTestOpaBuilderMod {
       *
       * @returns an object extending a jQuery promise, corresponding to the result of {@link sap.ui.test.Opa5#waitFor}
       */
-    def execute(): Chain = js.native
+    def execute(): Any = js.native
     def execute(
       /**
       * the Opa5 instance to call {@link sap.ui.test.Opa5#waitFor} on
       */
     oOpaInstance: typings.openui5.sapUiTestOpa5Mod.default
-    ): Chain = js.native
+    ): Any = js.native
     
     /**
       * Sets the `fragmentId` parameter.
@@ -2986,7 +3007,7 @@ object sapUiTestOpaBuilderMod {
     sFragmentId: String): this.type = js.native
     
     /**
-      * Get the Opa5 instance that will be used for {@link sap.ui.test.OpaBuilder#execute}. If no {sap.ui.test.Opa5}
+      * Get the Opa5 instance that will be used for {@link sap.ui.test.OpaBuilder#execute}. If no {sap.ui.test.Opa5 }
       * instance was set before, this function creates a new one lazily.
       *
       * @returns the Opa5 instance
@@ -3438,8 +3459,7 @@ object sapUiTestOpaBuilderMod {
     oProperties: Record[String, Any]): this.type = js.native
     
     /**
-      * Adds a group of matchers that requires only one of them to actually match. It is internally using {@link
-      * sap.ui.test.OpaBuilder.Matchers.some}.
+      * Adds a group of matchers that requires only one of them to actually match. It is internally using {@link sap.ui.test.OpaBuilder.Matchers.some}.
       *
       * @returns this OpaBuilder instance
       */
@@ -3541,7 +3561,7 @@ object sapUiTestOpaBuilderMod {
     /**
       * Set the Opa5 instance to be used for {@link sap.ui.test.OpaBuilder#execute}. Please note that this function
       * does not return the OpaBuilder instance and can therefore not be chained. Use the `oOpaInstance` argument
-      * of {@link sap.ui.test.OpaBuilder.create}, {@link sap.ui.test.OpaBuilder#constructor} or {@link sap.ui.test.OpaBuilder#execute}
+      * of {@link sap.ui.test.OpaBuilder.create}, {@link sap.ui.test.OpaBuilder#constructor} or {@link sap.ui.test.OpaBuilder#execute }
       * to provide the Opa5 instance within the builder chain.
       */
     def setOpaInstance(): Unit = js.native

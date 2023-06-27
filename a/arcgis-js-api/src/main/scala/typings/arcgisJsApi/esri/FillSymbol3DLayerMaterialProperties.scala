@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FillSymbol3DLayerMaterialProperties extends StObject {
   
   /**
-    * The color of the fill.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
-    */
+  		 * The color of the fill.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Specifies how the material `color` is applied to the geometry color/texture information.
-    *
-    * @default multiply
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
-    */
+  		 * Specifies how the material `color` is applied to the geometry color/texture information.
+  		 *
+  		 * @default multiply
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#material)
+  		 */
   var colorMixMode: js.UndefOr[tint | replace | multiply] = js.undefined
 }
 object FillSymbol3DLayerMaterialProperties {

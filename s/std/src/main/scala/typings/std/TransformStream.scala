@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TransformStream) */
 trait TransformStream[I, O] extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TransformStream/readable) */
   /* standard dom */
   val readable: ReadableStream[O]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TransformStream/writable) */
   /* standard dom */
   val writable: WritableStream[I]
 }

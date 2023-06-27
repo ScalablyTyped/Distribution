@@ -1,7 +1,7 @@
 
 # Scala.js typings for estree-util-is-identifier-name
 
-Typings are for version 2.0.1
+Typings are for version 2.1.0
 
 ## Library description:
 Check if something can be an ecmascript (javascript) identifier name

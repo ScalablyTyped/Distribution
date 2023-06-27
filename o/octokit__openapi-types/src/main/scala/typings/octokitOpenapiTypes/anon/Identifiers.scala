@@ -18,7 +18,7 @@ trait Identifiers extends StObject {
   
   var published_at: String
   
-  var references: js.Array[`466`]
+  var references: js.Array[`544`]
   
   var severity: String
   
@@ -39,7 +39,7 @@ object Identifiers {
     ghsa_id: String,
     identifiers: js.Array[TypeString],
     published_at: String,
-    references: js.Array[`466`],
+    references: js.Array[`544`],
     severity: String,
     summary: String,
     updated_at: String,
@@ -69,9 +69,9 @@ object Identifiers {
     
     inline def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
     
-    inline def setReferences(value: js.Array[`466`]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[`544`]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    inline def setReferencesVarargs(value: `466`*): Self = StObject.set(x, "references", js.Array(value*))
+    inline def setReferencesVarargs(value: `544`*): Self = StObject.set(x, "references", js.Array(value*))
     
     inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     

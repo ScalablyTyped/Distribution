@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/openapi-types" : "17.1.2"
+      "@octokit/openapi-types" : "18.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/openapi-types" : "17.1.2"
+      "@octokit/openapi-types" : "18.0.0"
     }
   ],
   "compile-devDependencies" : [

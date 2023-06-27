@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "logrocket" : "4.0.1"
+      "logrocket" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "logrocket" : "4.0.1"
+      "logrocket" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

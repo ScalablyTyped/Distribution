@@ -12,9 +12,9 @@ trait ImageHeightResult
      with BaseImageMeasureResult {
   
   /**
-    * An object containing results of the height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightResult.html#height)
-    */
+  		 * An object containing results of the height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHeightResult.html#height)
+  		 */
   var height: MeasurementValue = js.native
 }

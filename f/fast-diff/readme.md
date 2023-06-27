@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-diff
 
-Typings are for version 1.2.0
+Typings are for version 1.3.0
 
 ## Library description:
 Fast Javascript text diff

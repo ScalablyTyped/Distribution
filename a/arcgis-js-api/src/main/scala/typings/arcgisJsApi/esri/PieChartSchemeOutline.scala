@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PieChartSchemeOutline extends StObject {
   
   /**
-    * The outline color of the pie chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The outline color of the pie chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var color: Color_
   
   /**
-    * The width of the outline in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
-    */
+  		 * The width of the outline in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-pieChart.html#PieChartScheme)
+  		 */
   var width: Double | String
 }
 object PieChartSchemeOutline {

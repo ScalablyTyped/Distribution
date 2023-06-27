@@ -9,45 +9,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeDimension extends StObject {
   
   /**
-    * Default value(s) for the time dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Default value(s) for the time dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var default: js.Array[js.Date | TimeDimensionInterval]
   
   /**
-    * Available value(s) for the time dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Available value(s) for the time dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var extent: js.Array[js.Date | TimeDimensionInterval]
   
   /**
-    * Indicates whether multiple values of the dimension may be requested.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Indicates whether multiple values of the dimension may be requested.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var multipleValues: Boolean
   
   /**
-    * Name of dimensional axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Name of dimensional axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var name: time
   
   /**
-    * Indicates whether the nearest value of the dimension will be returned in response to a request for a nearby value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Indicates whether the nearest value of the dimension will be returned in response to a request for a nearby value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var nearestValue: Boolean
   
   /**
-    * Units of dimensional axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
-    */
+  		 * Units of dimensional axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimension)
+  		 */
   var units: ISO8601
 }
 object TimeDimension {

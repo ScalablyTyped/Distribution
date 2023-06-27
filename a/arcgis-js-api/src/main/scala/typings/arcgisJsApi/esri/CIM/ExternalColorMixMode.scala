@@ -11,24 +11,24 @@ sealed trait ExternalColorMixMode extends StObject
 object ExternalColorMixMode extends StObject {
   
   /**
-    * Ignore external color.
-    */
+  			 * Ignore external color.
+  			 */
   @js.native
   sealed trait Ignore
     extends StObject
        with ExternalColorMixMode
   
   /**
-    * Multiply components by components of external color.
-    */
+  			 * Multiply components by components of external color.
+  			 */
   @js.native
   sealed trait Multiply
     extends StObject
        with ExternalColorMixMode
   
   /**
-    * Tint using external color.
-    */
+  			 * Tint using external color.
+  			 */
   @js.native
   sealed trait Tint
     extends StObject

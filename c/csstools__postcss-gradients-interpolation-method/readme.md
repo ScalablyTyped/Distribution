@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-gradients-interpolation-method
 
-Typings are for version 3.0.4
+Typings are for version 3.0.6
 
 ## Library description:
 Use interpolation methods in CSS gradient functions

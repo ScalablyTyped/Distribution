@@ -9,7 +9,7 @@ object sapUiUx3ShellPersonalizationMod extends Shortcut {
   
   /**
     * @deprecated (since 1.36) - This class was never released for productive use and will never be.
-    * @EXPERIMENTAL (since 1.0) - The Shell-features Personalization, Color Picker and “Inspect”-Tool are only
+    * @experimental (since 1.0) - The Shell-features Personalization, Color Picker and “Inspect”-Tool are only
     * experimental work and might change or disappear in future versions.
     *
     * Experimental implementation of visual Ux3 Shell personalization / branding.

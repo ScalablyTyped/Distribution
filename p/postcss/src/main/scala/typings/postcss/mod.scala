@@ -665,13 +665,6 @@ object mod {
     var DocumentExit: js.UndefOr[DocumentProcessor] = js.undefined
     
     /**
-      * Will be called when all other listeners processed the document.
-      *
-      * This listener will not be called again.
-      */
-    var Exit: js.UndefOr[RootProcessor] = js.undefined
-    
-    /**
       * Will be called on `Root` node once.
       */
     var Once: js.UndefOr[RootProcessor] = js.undefined
@@ -766,12 +759,6 @@ object mod {
       inline def setDocumentExitUndefined: Self = StObject.set(x, "DocumentExit", js.undefined)
       
       inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
-      
-      inline def setExit(
-        value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit
-      ): Self = StObject.set(x, "Exit", js.Any.fromFunction2(value))
-      
-      inline def setExitUndefined: Self = StObject.set(x, "Exit", js.undefined)
       
       inline def setOnce(
         value: (/* root */ typings.postcss.libRootMod.default, /* helper */ Helpers) => js.Promise[Unit] | Unit

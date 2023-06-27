@@ -795,6 +795,10 @@ object reactStrings {
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
+  sealed trait high extends StObject
+  inline def high: high = "high".asInstanceOf[high]
+  
+  @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -931,6 +935,10 @@ object reactStrings {
     extends StObject
        with _AriaRole
   inline def log: log = "log".asInstanceOf[log]
+  
+  @js.native
+  sealed trait low extends StObject
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait main

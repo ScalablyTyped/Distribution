@@ -13,45 +13,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryTableDataSource extends StObject {
   
   /**
-    * The geometry type of each record in the table.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of each record in the table.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon | multipatch
   
   /**
-    * The field name(s) containing the unique IDs for each record in the table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
-    */
+  		 * The field name(s) containing the unique IDs for each record in the table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+  		 */
   var oidFields: String
   
   /**
-    * The SQL query used to filter records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
-    */
+  		 * The SQL query used to filter records.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+  		 */
   var query: String
   
   /**
-    * The spatial reference of the geometry of each feature in the table source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
-    */
+  		 * The spatial reference of the geometry of each feature in the table source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+  		 */
   var spatialReference: SpatialReference
   
   /**
-    * This value is always `query-table` and is inferred when the `query` property of this object is set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
-    */
+  		 * This value is always `query-table` and is inferred when the `query` property of this object is set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+  		 */
   var `type`: `query-table`
   
   /**
-    * The workspace where the data resides (defined in ArcGIS Server Manager).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
-    */
+  		 * The workspace where the data resides (defined in ArcGIS Server Manager).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+  		 */
   var workspaceId: String
 }
 object QueryTableDataSource {

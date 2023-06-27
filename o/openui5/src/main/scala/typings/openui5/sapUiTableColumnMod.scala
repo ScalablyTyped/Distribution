@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Menu
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -129,7 +128,7 @@ object sapUiTableColumnMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Adds some multiLabel to the aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -143,7 +142,7 @@ object sapUiTableColumnMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:columnMenuOpen columnMenuOpen} event of this
       * `sap.ui.table.Column`.
@@ -159,20 +158,20 @@ object sapUiTableColumnMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit]
     ): this.type = js.native
     def attachColumnMenuOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.Column` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:columnMenuOpen columnMenuOpen} event of this
       * `sap.ui.table.Column`.
@@ -193,7 +192,7 @@ object sapUiTableColumnMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit]
     ): this.type = js.native
     def attachColumnMenuOpen(
       /**
@@ -204,7 +203,7 @@ object sapUiTableColumnMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.Column` itself
       */
@@ -226,7 +225,7 @@ object sapUiTableColumnMod {
     def destroyMenu(): this.type = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Destroys all the multiLabels in the aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -242,7 +241,7 @@ object sapUiTableColumnMod {
     def destroyTemplate(): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:columnMenuOpen columnMenuOpen} event of this
       * `sap.ui.table.Column`.
@@ -255,13 +254,13 @@ object sapUiTableColumnMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit]
     ): this.type = js.native
     def detachColumnMenuOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColumnColumnMenuOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -269,8 +268,8 @@ object sapUiTableColumnMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.33.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.33.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:columnMenuOpen columnMenuOpen} to attached listeners.
       *
@@ -280,13 +279,15 @@ object sapUiTableColumnMod {
       * @returns Whether or not to prevent the default action
       */
     def fireColumnMenuOpen(): Boolean = js.native
-    def fireColumnMenuOpen(/**
+    def fireColumnMenuOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Menu): Boolean = js.native
+    mParameters: Column$ColumnMenuOpenEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets current value of property {@link #getAutoResizable autoResizable}.
       *
@@ -337,7 +338,7 @@ object sapUiTableColumnMod {
     def getFilterProperty(): String = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Gets current value of property {@link #getFilterType filterType}.
       *
@@ -346,8 +347,8 @@ object sapUiTableColumnMod {
       * be set to the class name of the type, e.g.: `sap.ui.model.type.Date`, or an expression similar to the
       * binding syntax, e.g.: `"\{type: 'sap.ui.model.type.Date', formatOptions: \{UTC: true\}, constraints:
       * \{\} \}"`. Here the escaping is mandatory to avoid handling by the binding parser. As an alternative,
-      * a function can be passed that takes over the conversion. This cannot be done in the XMLView, use {@link
-      * #setFilterType} instead.
+      * a function can be passed that takes over the conversion. This cannot be done in the XMLView, use {@link #setFilterType }
+      * instead.
       *
       * @returns Value of property `filterType`
       */
@@ -382,8 +383,7 @@ object sapUiTableColumnMod {
       * Gets current value of property {@link #getFiltered filtered}.
       *
       * Indicates if the column is filtered. This property only controls if a filter indicator is displayed in
-      * the column header - it does not trigger the filter function. The column can be filtered using {@link
-      * sap.ui.table.Table#filter}.
+      * the column header - it does not trigger the filter function. The column can be filtered using {@link sap.ui.table.Table#filter}.
       *
       * Default value is `false`.
       *
@@ -432,7 +432,7 @@ object sapUiTableColumnMod {
     def getHAlign(): HorizontalAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * ID of the element which is the current target of the association {@link #getHeaderMenu headerMenu}, or
       * `null`.
@@ -476,7 +476,7 @@ object sapUiTableColumnMod {
     def getMenu(): typings.openui5.sapUiUnifiedMenuMod.default = js.native
     
     /**
-      * @SINCE 1.44.1
+      * @since 1.44.1
       *
       * Gets current value of property {@link #getMinWidth minWidth}.
       *
@@ -492,7 +492,7 @@ object sapUiTableColumnMod {
     def getMinWidth(): int = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Gets content of aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -502,7 +502,7 @@ object sapUiTableColumnMod {
     def getMultiLabels(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Gets current value of property {@link #getName name}.
       *
@@ -527,7 +527,7 @@ object sapUiTableColumnMod {
     def getResizable(): Boolean = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getShowFilterMenuEntry showFilterMenuEntry}.
       *
@@ -540,7 +540,7 @@ object sapUiTableColumnMod {
     def getShowFilterMenuEntry(): Boolean = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Gets current value of property {@link #getShowSortMenuEntry showSortMenuEntry}.
       *
@@ -598,7 +598,7 @@ object sapUiTableColumnMod {
       * for the changes to take effect. If a string is defined, a default text control will be created with its
       * text property bound to the value of the string. The default template depends on the libraries loaded.
       * If there is no template, the column will not be rendered in the table. The set of supported controls
-      * is limited. See section "{@link topic:148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}"
+      * is limited. See section "{@link https://ui5.sap.com/#/topic/148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}"
       * in the documentation for more details. While it is technically possible to also use other controls, doing
       * so might lead to issues with regards to scrolling, alignment, condensed mode, screen reader support,
       * and keyboard support.
@@ -606,7 +606,7 @@ object sapUiTableColumnMod {
     def getTemplate(): typings.openui5.sapUiCoreControlMod.default | String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a template clone. It either finds an unused clone or clones a new one from the template.
       *
@@ -642,7 +642,7 @@ object sapUiTableColumnMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getMultiLabels multiLabels}.
       * and returns its index if found or -1 otherwise.
@@ -657,7 +657,7 @@ object sapUiTableColumnMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Inserts a multiLabel into the aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -677,7 +677,7 @@ object sapUiTableColumnMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Removes all the controls from the aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -692,7 +692,7 @@ object sapUiTableColumnMod {
       */
     vMultiLabel: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Removes a multiLabel from the aggregation {@link #getMultiLabels multiLabels}.
       *
@@ -710,7 +710,7 @@ object sapUiTableColumnMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Sets a new value for property {@link #getAutoResizable autoResizable}.
       *
@@ -831,8 +831,7 @@ object sapUiTableColumnMod {
       * Sets a new value for property {@link #getFiltered filtered}.
       *
       * Indicates if the column is filtered. This property only controls if a filter indicator is displayed in
-      * the column header - it does not trigger the filter function. The column can be filtered using {@link
-      * sap.ui.table.Table#filter}.
+      * the column header - it does not trigger the filter function. The column can be filtered using {@link sap.ui.table.Table#filter}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -918,7 +917,7 @@ object sapUiTableColumnMod {
     oHeaderMenu: IColumnHeaderMenu
     ): this.type = js.native
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Sets the associated {@link #getHeaderMenu headerMenu}.
       *
@@ -979,7 +978,7 @@ object sapUiTableColumnMod {
     oMenu: typings.openui5.sapUiUnifiedMenuMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.44.1
+      * @since 1.44.1
       *
       * Sets a new value for property {@link #getMinWidth minWidth}.
       *
@@ -1001,7 +1000,7 @@ object sapUiTableColumnMod {
     iMinWidth: int): this.type = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Sets a new value for property {@link #getName name}.
       *
@@ -1038,7 +1037,7 @@ object sapUiTableColumnMod {
     bResizable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Sets a new value for property {@link #getShowFilterMenuEntry showFilterMenuEntry}.
       *
@@ -1057,7 +1056,7 @@ object sapUiTableColumnMod {
     bShowFilterMenuEntry: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Sets a new value for property {@link #getShowSortMenuEntry showSortMenuEntry}.
       *
@@ -1188,7 +1187,7 @@ object sapUiTableColumnMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns whether the column should be rendered.
       *
@@ -1218,12 +1217,39 @@ object sapUiTableColumnMod {
     def toggleSort(): Unit = js.native
   }
   
+  trait Column$ColumnMenuOpenEventParameters extends StObject {
+    
+    /**
+      * Refence to the selected `menu` instance to be opened.
+      */
+    var menu: js.UndefOr[typings.openui5.sapUiUnifiedMenuMod.default] = js.undefined
+  }
+  object Column$ColumnMenuOpenEventParameters {
+    
+    inline def apply(): Column$ColumnMenuOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Column$ColumnMenuOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column$ColumnMenuOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMenu(value: typings.openui5.sapUiUnifiedMenuMod.default): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    }
+  }
+  
+  type ColumnColumnMenuOpenEvent = typings.openui5.sapUiBaseEventMod.default[Column$ColumnMenuOpenEventParameters]
+  
+  type ColumnColumnMenuOpenEventParameters = Column$ColumnMenuOpenEventParameters
+  
   trait ColumnSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Enables auto-resizing of the column on double clicking the resize bar. The width is determined on the
       * widest currently displayed content. It does not consider rows which are currently not scrolled into view.
@@ -1236,11 +1262,16 @@ object sapUiTableColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Fires before the column menu is opened.
       */
-    var columnMenuOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var columnMenuOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Column$ColumnMenuOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If this property is set, the default filter operator of the column is overridden. By default `Contains`
@@ -1265,15 +1296,15 @@ object sapUiTableColumnMod {
     var filterProperty: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Type of filter. It is used to transform the search term into the specified type and should be the same
       * as defined in the binding for the column template. Default value is `sap.ui.model.type.String`. It can
       * be set to the class name of the type, e.g.: `sap.ui.model.type.Date`, or an expression similar to the
       * binding syntax, e.g.: `"\{type: 'sap.ui.model.type.Date', formatOptions: \{UTC: true\}, constraints:
       * \{\} \}"`. Here the escaping is mandatory to avoid handling by the binding parser. As an alternative,
-      * a function can be passed that takes over the conversion. This cannot be done in the XMLView, use {@link
-      * #setFilterType} instead.
+      * a function can be passed that takes over the conversion. This cannot be done in the XMLView, use {@link #setFilterType }
+      * instead.
       */
     var filterType: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
@@ -1299,8 +1330,7 @@ object sapUiTableColumnMod {
     
     /**
       * Indicates if the column is filtered. This property only controls if a filter indicator is displayed in
-      * the column header - it does not trigger the filter function. The column can be filtered using {@link
-      * sap.ui.table.Table#filter}.
+      * the column header - it does not trigger the filter function. The column can be filtered using {@link sap.ui.table.Table#filter}.
       */
     var filtered: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1335,7 +1365,7 @@ object sapUiTableColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * The menu that can be opened by the header element of this column.
       */
@@ -1368,7 +1398,7 @@ object sapUiTableColumnMod {
     var menu: js.UndefOr[typings.openui5.sapUiUnifiedMenuMod.default] = js.undefined
     
     /**
-      * @SINCE 1.44.1
+      * @since 1.44.1
       *
       * Defines the minimum width of a column in pixels. This property only has an effect if the given column
       * width is flexible, for example with width `auto`. This property only influences the automatic behavior.
@@ -1378,7 +1408,7 @@ object sapUiTableColumnMod {
     var minWidth: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Labels of the column which are displayed in the column header. Define a control for each header row in
       * the table. Use this aggregation if you want to use multiple headers per column.
@@ -1388,7 +1418,7 @@ object sapUiTableColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * The name of the column which is used for the text representation of this column, for example, in menus.
       * If not set, the text from the multiLabels aggregation or the label aggregation (in that order) is used
@@ -1405,7 +1435,7 @@ object sapUiTableColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Defines if the filter menu entry is displayed
       */
@@ -1414,7 +1444,7 @@ object sapUiTableColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * Defines if the sort menu entries are displayed
       */
@@ -1454,7 +1484,7 @@ object sapUiTableColumnMod {
       * for the changes to take effect. If a string is defined, a default text control will be created with its
       * text property bound to the value of the string. The default template depends on the libraries loaded.
       * If there is no template, the column will not be rendered in the table. The set of supported controls
-      * is limited. See section "{@link topic:148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}"
+      * is limited. See section "{@link https://ui5.sap.com/#/topic/148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}"
       * in the documentation for more details. While it is technically possible to also use other controls, doing
       * so might lead to issues with regards to scrolling, alignment, condensed mode, screen reader support,
       * and keyboard support.
@@ -1493,7 +1523,9 @@ object sapUiTableColumnMod {
       
       inline def setAutoResizableUndefined: Self = StObject.set(x, "autoResizable", js.undefined)
       
-      inline def setColumnMenuOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "columnMenuOpen", js.Any.fromFunction1(value))
+      inline def setColumnMenuOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Column$ColumnMenuOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "columnMenuOpen", js.Any.fromFunction1(value))
       
       inline def setColumnMenuOpenUndefined: Self = StObject.set(x, "columnMenuOpen", js.undefined)
       

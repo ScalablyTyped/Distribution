@@ -4,15 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate)
+  */
 trait DeviceMotionEventRotationRate extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/alpha) */
   /* standard dom */
   val alpha: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/beta) */
   /* standard dom */
   val beta: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DeviceMotionEventRotationRate/gamma) */
   /* standard dom */
   val gamma: Double | Null
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for popperjs__core
 
-Typings are for version 2.11.7
+Typings are for version 2.11.8
 
 ## Library description:
 Tooltip and Popover Positioning Engine

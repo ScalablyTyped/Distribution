@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Clipboard //
 ///////////////
 /**
-  * @requires(dev) **Dev** channel only.
+  * @requires **Dev** channel only.
   * @requires Permissions: 'clipboard'
   * @description
   * *This API is* **experimental**. *It is* **only** *available to Chrome users on the* **dev** *channel.*
   * The chrome.clipboard API is provided to allow users to access data of the clipboard.
   * This is a temporary solution for chromeos platform apps until open-web alternative is available.
   * It will be deprecated once open-web solution is available.
-  * @see[Docs]{@link https://developer.chrome.com/apps/clipboard}
+  * @see https://developer.chrome.com/apps/clipboard
   */
 object clipboard {
   

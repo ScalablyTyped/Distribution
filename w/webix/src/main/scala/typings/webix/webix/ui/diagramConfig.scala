@@ -3,6 +3,7 @@ package typings.webix.webix.ui
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.WebixProxy
 import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -78,7 +79,7 @@ trait diagramConfig extends StObject {
   
   var root: js.UndefOr[String] = js.undefined
   
-  var save: js.UndefOr[String | obj] = js.undefined
+  var save: js.UndefOr[String | obj | WebixCallback] = js.undefined
   
   var scheme: js.UndefOr[obj] = js.undefined
   
@@ -98,7 +99,7 @@ trait diagramConfig extends StObject {
   
   var `type`: js.UndefOr[Any] = js.undefined
   
-  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | WebixProxy] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -256,7 +257,7 @@ object diagramConfig {
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setSave(value: String | obj): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String | obj | WebixCallback): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
@@ -298,7 +299,7 @@ object diagramConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | WebixProxy): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

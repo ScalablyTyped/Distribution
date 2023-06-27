@@ -10,18 +10,18 @@ trait CIMMarkerPlacementOnVertices
      with CIMMarkerPlacementType {
   
   /**
-    * A value indicating whether a marker will be placed on the control points of the line.
-    */
+  			 * A value indicating whether a marker will be placed on the control points of the line.
+  			 */
   var placeOnControlPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether a marker will be placed on the endpoints of the line.
-    */
+  			 * A value indicating whether a marker will be placed on the endpoints of the line.
+  			 */
   var placeOnEndPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether a marker will be placed on the vertices of the line.
-    */
+  			 * A value indicating whether a marker will be placed on the vertices of the line.
+  			 */
   var placeOnRegularVertices: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")

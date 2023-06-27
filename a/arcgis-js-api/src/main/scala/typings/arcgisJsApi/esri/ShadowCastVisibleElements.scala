@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShadowCastVisibleElements extends StObject {
   
   /**
-    * When set to `false`, the color picker is not displayed in the options for any of the visualization modes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the color picker is not displayed in the options for any of the visualization modes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var colorPicker: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the date picker is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the date picker is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var datePicker: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the slider used to select a time range for the analysis is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the slider used to select a time range for the analysis is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var timeRangeSlider: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the dropdown used to select a timezone for the time range is not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the dropdown used to select a timezone for the time range is not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var timezone: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the tooltip with the accumulated shadow time is not displayed when hovering the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the tooltip with the accumulated shadow time is not displayed when hovering the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var tooltip: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When set to `false`, the options for the various visualization modes are not displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
-    */
+  		 * When set to `false`, the options for the various visualization modes are not displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html#VisibleElements)
+  		 */
   var visualizationOptions: js.UndefOr[Boolean] = js.undefined
 }
 object ShadowCastVisibleElements {

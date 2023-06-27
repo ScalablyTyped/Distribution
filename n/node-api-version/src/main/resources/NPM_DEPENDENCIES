@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-api-version" : "0.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-api-version" : "0.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

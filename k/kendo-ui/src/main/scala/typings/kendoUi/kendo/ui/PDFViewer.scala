@@ -21,8 +21,6 @@ trait PDFViewer
   @JSName("options")
   var options_PDFViewer: PDFViewerOptions = js.native
   
-  var processor: Any = js.native
-  
   def setOptions(options: Any): Unit = js.native
   
   var wrapper: JQuery = js.native

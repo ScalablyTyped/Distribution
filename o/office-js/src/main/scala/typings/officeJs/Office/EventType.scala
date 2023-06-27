@@ -235,6 +235,34 @@ object EventType extends StObject {
        with EventType
   
   /**
+    * Occurs in Outlook when one or more messages are selected or deselected.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+    * 
+    * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
+    * 
+    * [Api set: Mailbox 1.13]
+    */
+  @js.native
+  sealed trait SelectedItemsChanged
+    extends StObject
+       with EventType
+  
+  /**
+    * Occurs in Outlook when the sensitivity label of a message or appointment changes.
+    * **Important**: This event can only be handled in a task pane. It isn't supported by function commands.
+    * 
+    * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
+    * The event handler receives an argument of type
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs | Office.SensitivityLabelChangedEventArgs}.
+    * 
+    * [Api set: Mailbox 1.13]
+    */
+  @js.native
+  sealed trait SensitivityLabelChanged
+    extends StObject
+       with EventType
+  
+  /**
     * A Settings.settingsChanged event was raised.
     *
     * @remarks

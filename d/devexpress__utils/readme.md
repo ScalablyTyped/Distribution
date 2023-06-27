@@ -1,7 +1,7 @@
 
 # Scala.js typings for devexpress__utils
 
-Typings are for version 1.4.0
+Typings are for version 1.4.1
 
 ## Library description:
 DevExpress utils

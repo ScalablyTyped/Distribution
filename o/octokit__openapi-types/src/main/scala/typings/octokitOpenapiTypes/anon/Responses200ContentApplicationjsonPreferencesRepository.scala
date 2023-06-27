@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200ContentApplicationjsonPreferencesRepository extends StObject {
   
-  var parameters: `540`
+  var parameters: `639`
   
   var requestBody: ContentApplicationjsonAutotriggerchecks
   
@@ -15,7 +15,7 @@ trait Responses200ContentApplicationjsonPreferencesRepository extends StObject {
 object Responses200ContentApplicationjsonPreferencesRepository {
   
   inline def apply(
-    parameters: `540`,
+    parameters: `639`,
     requestBody: ContentApplicationjsonAutotriggerchecks,
     responses: `200ContentApplicationjsonPreferencesRepository`
   ): Responses200ContentApplicationjsonPreferencesRepository = {
@@ -26,7 +26,7 @@ object Responses200ContentApplicationjsonPreferencesRepository {
   @scala.inline
   implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonPreferencesRepository] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `540`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `639`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAutotriggerchecks): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

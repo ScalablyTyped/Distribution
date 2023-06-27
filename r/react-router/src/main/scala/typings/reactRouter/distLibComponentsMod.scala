@@ -88,6 +88,24 @@ object distLibComponentsMod {
   
   type AwaitResolveRenderFunction = js.Function1[/* data */ Awaited[Any], ReactNode]
   
+  trait FutureConfig extends StObject {
+    
+    var v7_startTransition: Boolean
+  }
+  object FutureConfig {
+    
+    inline def apply(v7_startTransition: Boolean): FutureConfig = {
+      val __obj = js.Dynamic.literal(v7_startTransition = v7_startTransition.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FutureConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FutureConfig] (val x: Self) extends AnyVal {
+      
+      inline def setV7_startTransition(value: Boolean): Self = StObject.set(x, "v7_startTransition", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait IndexRouteProps
     extends StObject
        with _RouteProps {
@@ -238,6 +256,8 @@ object distLibComponentsMod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    var future: js.UndefOr[FutureConfig] = js.undefined
+    
     var initialEntries: js.UndefOr[js.Array[InitialEntry]] = js.undefined
     
     var initialIndex: js.UndefOr[Double] = js.undefined
@@ -259,6 +279,10 @@ object distLibComponentsMod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setFuture(value: FutureConfig): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
       
       inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
@@ -531,6 +555,8 @@ object distLibComponentsMod {
     
     var fallbackElement: js.UndefOr[ReactNode] = js.undefined
     
+    var future: js.UndefOr[FutureConfig] = js.undefined
+    
     var router: Router
   }
   object RouterProviderProps {
@@ -546,6 +572,10 @@ object distLibComponentsMod {
       inline def setFallbackElement(value: ReactNode): Self = StObject.set(x, "fallbackElement", value.asInstanceOf[js.Any])
       
       inline def setFallbackElementUndefined: Self = StObject.set(x, "fallbackElement", js.undefined)
+      
+      inline def setFuture(value: FutureConfig): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
       
       inline def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }

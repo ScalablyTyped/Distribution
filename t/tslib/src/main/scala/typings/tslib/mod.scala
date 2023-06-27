@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.PropertyKey
 import typings.std.TemplateStringsArray
 import typings.tslib.anon.Default
+import typings.tslib.anon.Error
 import typings.tslib.anon.Get
 import typings.tslib.anon.Has
 import typings.tslib.anon.Set
@@ -21,6 +22,8 @@ object mod {
   @JSImport("tslib", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def addDisposableResource[T](env: Error, value: T, async: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("__addDisposableResource")(env.asInstanceOf[js.Any], value.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def assign(t: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__assign")(scala.List(t.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
@@ -65,6 +68,8 @@ object mod {
   inline def decorate(decorators: js.Array[js.Function], target: Any, key: js.Symbol): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def decorate(decorators: js.Array[js.Function], target: Any, key: js.Symbol, desc: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def decorate(decorators: js.Array[js.Function], target: Any, key: Unit, desc: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("__decorate")(decorators.asInstanceOf[js.Any], target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def disposeResources(env: Error): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__disposeResources")(env.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def esDecorate(
     ctor: js.Function,

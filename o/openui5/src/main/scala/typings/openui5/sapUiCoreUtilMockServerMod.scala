@@ -36,26 +36,6 @@ object sapUiCoreUtilMockServerMod {
     sId: String) = this()
     def this(
       /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: Unit,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
-    ) = this()
-    def this(
-      /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: MockServerSettings,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
-    ) = this()
-    def this(
-      /**
       * id for the new server object; generated automatically if no non-empty id is given Note: this can be omitted,
       * no matter whether `mSettings` will be given or not!
       */
@@ -75,66 +55,6 @@ object sapUiCoreUtilMockServerMod {
       * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
       */
     mSettings: MockServerSettings
-    ) = this()
-    def this(
-      /**
-      * id for the new server object; generated automatically if no non-empty id is given Note: this can be omitted,
-      * no matter whether `mSettings` will be given or not!
-      */
-    sId: String,
-      /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: Unit,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
-    ) = this()
-    def this(
-      /**
-      * id for the new server object; generated automatically if no non-empty id is given Note: this can be omitted,
-      * no matter whether `mSettings` will be given or not!
-      */
-    sId: String,
-      /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: MockServerSettings,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
-    ) = this()
-    def this(
-      /**
-      * id for the new server object; generated automatically if no non-empty id is given Note: this can be omitted,
-      * no matter whether `mSettings` will be given or not!
-      */
-    sId: Unit,
-      /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: Unit,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
-    ) = this()
-    def this(
-      /**
-      * id for the new server object; generated automatically if no non-empty id is given Note: this can be omitted,
-      * no matter whether `mSettings` will be given or not!
-      */
-    sId: Unit,
-      /**
-      * optional map/JSON-object with initial property values, aggregated objects etc. for the new object
-      */
-    mSettings: MockServerSettings,
-      /**
-      * scope object for resolving string based type and formatter references in bindings
-      */
-    oScope: js.Object
     ) = this()
   }
   /* static members */
@@ -143,6 +63,14 @@ object sapUiCoreUtilMockServerMod {
     @JSImport("sap/ui/core/util/MockServer", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Enum for the method.
+      */
+    @JSImport("sap/ui/core/util/MockServer", "default.HTTPMETHOD")
+    @js.native
+    def HTTPMETHOD: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTTPMETHOD */ Any = js.native
+    inline def HTTPMETHOD_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTTPMETHOD */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPMETHOD")(x.asInstanceOf[js.Any])
     
     /**
       * Global configuration of all mock servers.
@@ -235,48 +163,42 @@ object sapUiCoreUtilMockServerMod {
   
   @js.native
   sealed trait HTTPMETHOD extends StObject
+  /**
+    * Enum for the method.
+    */
   @JSImport("sap/ui/core/util/MockServer", "HTTPMETHOD")
   @js.native
   object HTTPMETHOD extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[HTTPMETHOD & String] = js.native
     
     @js.native
     sealed trait DELETE
       extends StObject
          with HTTPMETHOD
-    /* "DELETE" */ val DELETE: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.DELETE & String = js.native
     
     @js.native
     sealed trait GET
       extends StObject
          with HTTPMETHOD
-    /* "GET" */ val GET: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.GET & String = js.native
     
     @js.native
     sealed trait MERGE
       extends StObject
          with HTTPMETHOD
-    /* "MERGE" */ val MERGE: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.MERGE & String = js.native
     
     @js.native
     sealed trait PATCH
       extends StObject
          with HTTPMETHOD
-    /* "PATCH" */ val PATCH: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.PATCH & String = js.native
     
     @js.native
     sealed trait POST
       extends StObject
          with HTTPMETHOD
-    /* "POST" */ val POST: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.POST & String = js.native
     
     @js.native
     sealed trait PUT
       extends StObject
          with HTTPMETHOD
-    /* "PUT" */ val PUT: typings.openui5.sapUiCoreUtilMockServerMod.HTTPMETHOD.PUT & String = js.native
   }
   
   @js.native
@@ -450,7 +372,7 @@ object sapUiCoreUtilMockServerMod {
     rootUri: String): Unit = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Simulates an existing OData service by sepcifying the metadata URL and the base URL for the mockdata.
       * The server configures the request handlers depending on the service metadata. The mockdata needs to be
@@ -701,7 +623,7 @@ object sapUiCoreUtilMockServerMod {
       * Convenience variant of {@link #respond} which allows to send the content of an external resource as response.
       *
       * This method first synchronously fetches the given `sFileUrl`. Depending on the extension and path of
-      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML}
+      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML }
       * or {@link #respond}, using the given `iStatus` and `mHeaders`.
       *
       * The status code and headers of the received response are ignored. In particular, the `Content-Type` header
@@ -725,7 +647,7 @@ object sapUiCoreUtilMockServerMod {
       * Convenience variant of {@link #respond} which allows to send the content of an external resource as response.
       *
       * This method first synchronously fetches the given `sFileUrl`. Depending on the extension and path of
-      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML}
+      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML }
       * or {@link #respond}, using the given `iStatus` and `mHeaders`.
       *
       * The status code and headers of the received response are ignored. In particular, the `Content-Type` header
@@ -745,7 +667,7 @@ object sapUiCoreUtilMockServerMod {
       * Convenience variant of {@link #respond} which allows to send the content of an external resource as response.
       *
       * This method first synchronously fetches the given `sFileUrl`. Depending on the extension and path of
-      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML}
+      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML }
       * or {@link #respond}, using the given `iStatus` and `mHeaders`.
       *
       * The status code and headers of the received response are ignored. In particular, the `Content-Type` header
@@ -765,7 +687,7 @@ object sapUiCoreUtilMockServerMod {
       * Convenience variant of {@link #respond} which allows to send the content of an external resource as response.
       *
       * This method first synchronously fetches the given `sFileUrl`. Depending on the extension and path of
-      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML}
+      * the `sFileUrl`, it propagates the received response body to {@link #respondJSON}, {@link #respondXML }
       * or {@link #respond}, using the given `iStatus` and `mHeaders`.
       *
       * The status code and headers of the received response are ignored. In particular, the `Content-Type` header
@@ -812,7 +734,49 @@ object sapUiCoreUtilMockServerMod {
       /**
       * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
       */
+    vBody: js.Array[Any]
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
     vBody: js.Object
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Boolean
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Double
     ): Unit = js.native
     def respondJSON(
       /**
@@ -850,7 +814,49 @@ object sapUiCoreUtilMockServerMod {
       /**
       * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
       */
+    vBody: js.Array[Any]
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
     vBody: js.Object
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Boolean
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: Unit,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Double
     ): Unit = js.native
     def respondJSON(/**
       * HTTP status code to send with the response
@@ -882,7 +888,49 @@ object sapUiCoreUtilMockServerMod {
       /**
       * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
       */
+    vBody: js.Array[Any]
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
     vBody: js.Object
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Boolean
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Unit,
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Double
     ): Unit = js.native
     def respondJSON(
       /**
@@ -920,7 +968,49 @@ object sapUiCoreUtilMockServerMod {
       /**
       * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
       */
+    vBody: js.Array[Any]
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
     vBody: js.Object
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Boolean
+    ): Unit = js.native
+    def respondJSON(
+      /**
+      * HTTP status code to send with the response
+      */
+    iStatusCode: int,
+      /**
+      * HTTP Headers to send with the response
+      */
+    mHeaders: Record[String, String],
+      /**
+      * A valid JSON-string or a JSON-stringifiable object that should be sent as response body
+      */
+    vBody: Double
     ): Unit = js.native
     
     /**

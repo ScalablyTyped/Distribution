@@ -28,15 +28,15 @@ object buildPlaycanvasExtrasDotmjsExportersUsdzExporterMod {
       * @param {Entity} entity - The root of the entity hierarchy to convert.
       * @param {object} options - Object for passing optional arguments.
       * @param {number} [options.maxTextureSize] - Maximum texture size. Texture is resized if over the size.
-      * @returns {ArrayBuffer} - The USDZ file content.
+      * @returns {Promise<ArrayBuffer>} - The USDZ file content.
       */
     def build(
       entity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ Any
-    ): js.typedarray.ArrayBuffer = js.native
+    ): js.Promise[js.typedarray.ArrayBuffer] = js.native
     def build(
       entity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ Any,
       options: `0`
-    ): js.typedarray.ArrayBuffer = js.native
+    ): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     def buildArray2(array: Any): String = js.native
     

@@ -34,7 +34,6 @@ object BingMaps {
   /**
     * The attribution containing a link to the Microsoft® Bing™ Maps Platform APIs’
     * Terms Of Use.
-    * @const
     * @api
     */
   /* static member */

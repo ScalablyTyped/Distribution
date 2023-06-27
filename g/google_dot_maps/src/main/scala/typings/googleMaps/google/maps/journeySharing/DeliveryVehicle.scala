@@ -48,7 +48,10 @@ trait DeliveryVehicle extends StObject {
   
   /**
     * The journey segments assigned to this delivery vehicle, starting from the
-    * vehicle&#39;s most recently reported location.
+    * vehicle&#39;s most recently reported location. This is only populated
+    * when the {@link google.maps.journeySharing.DeliveryVehicle} data object
+    * is provided through {@link
+    * google.maps.journeySharing.FleetEngineDeliveryVehicleLocationProvider}.
     */
   var remainingVehicleJourneySegments: js.Array[VehicleJourneySegment]
 }

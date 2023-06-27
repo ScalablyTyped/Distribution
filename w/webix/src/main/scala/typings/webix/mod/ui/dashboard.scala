@@ -66,8 +66,8 @@ open class dashboard ()
   def moveView(id: String, view: obj): Unit = js.native
   def moveView(id: Double, view: obj): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def reconstruct(): Unit = js.native
   

@@ -73,6 +73,7 @@ open class EncryptedData ()
     * @param parameters Parameters necessary for encryption
     */
   def encrypt(parameters: EncryptedDataEncryptParams): js.Promise[Unit] = js.native
+  def encrypt(parameters: EncryptedDataEncryptParams, crypto: ICryptoEngine): js.Promise[Unit] = js.native
   
   /**
     * Encrypted content information

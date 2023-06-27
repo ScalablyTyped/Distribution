@@ -51,9 +51,9 @@ object sapUiModelOdataCountModeMod {
       *
       * Count is retrieved by a separate request upfront and inline with each data request.
       *
-      * The only purpose of this mode is to reflect the behavior of the {@link sap.ui.model.odata.ODataModel
-      * ODataModel (v1)} before the introduction of the `CountMode`. For compatibility reasons, it is the default
-      * for the `ODataModel` (v1) and shouldn't be used otherwise.
+      * The only purpose of this mode is to reflect the behavior of the {@link sap.ui.model.odata.ODataModel ODataModel (v1) }
+      * before the introduction of the `CountMode`. For compatibility reasons, it is the default for the `ODataModel`
+      * (v1) and shouldn't be used otherwise.
       */
     @js.native
     sealed trait Both

@@ -136,13 +136,13 @@ object sapUiCommonsApplicationHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogoff(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ApplicationHeader` itself
       */
@@ -167,7 +167,7 @@ object sapUiCommonsApplicationHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogoff(
       /**
@@ -178,7 +178,7 @@ object sapUiCommonsApplicationHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ApplicationHeader` itself
       */
@@ -196,13 +196,13 @@ object sapUiCommonsApplicationHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLogoff(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -210,7 +210,7 @@ object sapUiCommonsApplicationHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:logoff logoff} to attached listeners.
       *
@@ -351,6 +351,12 @@ object sapUiCommonsApplicationHeaderMod {
     sUserName: String): this.type = js.native
   }
   
+  trait ApplicationHeader$LogoffEventParameters extends StObject
+  
+  type ApplicationHeaderLogoffEvent = typings.openui5.sapUiBaseEventMod.default[ApplicationHeader$LogoffEventParameters]
+  
+  type ApplicationHeaderLogoffEventParameters = ApplicationHeader$LogoffEventParameters
+  
   trait ApplicationHeaderSettings
     extends StObject
        with ControlSettings {
@@ -382,7 +388,9 @@ object sapUiCommonsApplicationHeaderMod {
     /**
       * Fires an event to log off the user from the application. No parameters.
       */
-    var logoff: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var logoff: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * User name that will be displayed beside the welcome text
@@ -415,7 +423,7 @@ object sapUiCommonsApplicationHeaderMod {
       
       inline def setLogoTextUndefined: Self = StObject.set(x, "logoText", js.undefined)
       
-      inline def setLogoff(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "logoff", js.Any.fromFunction1(value))
+      inline def setLogoff(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "logoff", js.Any.fromFunction1(value))
       
       inline def setLogoffUndefined: Self = StObject.set(x, "logoff", js.undefined)
       

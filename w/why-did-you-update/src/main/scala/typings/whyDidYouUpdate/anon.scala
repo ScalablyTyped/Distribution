@@ -3,6 +3,9 @@ package typings.whyDidYouUpdate
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Default
+import typings.react.canaryMod.reactAugmentingMod.ServerContext
+import typings.react.canaryMod.reactAugmentingMod.ServerContextJSONValue
+import typings.react.canaryMod.reactAugmentingMod.Usable
 import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
 import typings.react.mod.Attributes
 import typings.react.mod.CElement
@@ -59,9 +62,6 @@ import typings.react.mod.SetStateAction
 import typings.react.mod.SuspenseProps
 import typings.react.mod.TransitionFunction
 import typings.react.mod.TransitionStartFunction
-import typings.react.nextMod.reactAugmentingMod.ServerContext
-import typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue
-import typings.react.nextMod.reactAugmentingMod.Usable
 import typings.std.Element
 import typings.std.Exclude
 import typings.std.HTMLElement
@@ -148,6 +148,7 @@ object anon {
     
     val Fragment: ExoticComponent[typings.react.anon.Children] = js.native
     
+    // Keep in sync with JSX namespace in ./jsx-runtime.d.ts and ./jsx-dev-runtime.d.ts
     val JSX: Any = js.native
     
     val Profiler: ExoticComponent[ProfilerProps] = js.native
@@ -220,17 +221,17 @@ object anon {
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
@@ -299,7 +300,7 @@ object anon {
     // DOM Elements
     @JSName("createFactory")
     def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any
     ): HTMLFactory[T] = js.native
     
     def createRef[T](): RefObject[T] = js.native

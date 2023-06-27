@@ -12,7 +12,7 @@ trait Delete extends StObject {
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */
-  var delete: Responses7
+  var delete: Responses9
   
   /**
     * Get an installation for the authenticated app
@@ -24,7 +24,7 @@ trait Delete extends StObject {
 }
 object Delete {
   
-  inline def apply(delete: Responses7, get: ParametersPathInstallationid): Delete = {
+  inline def apply(delete: Responses9, get: ParametersPathInstallationid): Delete = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delete]
   }
@@ -32,7 +32,7 @@ object Delete {
   @scala.inline
   implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses7): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses9): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     inline def setGet(value: ParametersPathInstallationid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

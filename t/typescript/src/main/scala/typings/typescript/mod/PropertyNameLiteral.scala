@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.Identifier
   - typings.typescript.mod.StringLiteralLike
   - typings.typescript.mod.NumericLiteral
+  - typings.typescript.mod.JsxNamespacedName
 */
 trait PropertyNameLiteral extends StObject

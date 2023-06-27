@@ -5,10 +5,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @since 1.16.7
+  * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+  *
+  * Helper for Popups.
+  */
 trait PopupHelper extends StObject {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Converts the given percentage value to an absolute number based on the given base size.
     *

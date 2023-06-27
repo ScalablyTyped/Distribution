@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@codemirror/legacy-modes" : "6.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@codemirror/legacy-modes" : "6.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

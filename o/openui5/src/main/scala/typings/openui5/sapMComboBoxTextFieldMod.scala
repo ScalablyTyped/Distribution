@@ -123,7 +123,7 @@ object sapMComboBoxTextFieldMod {
     extends typings.openui5.sapMInputBaseMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the arrow icon
       *
@@ -143,7 +143,7 @@ object sapMComboBoxTextFieldMod {
     def getMaxWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Gets current value of property {@link #getShowButton showButton}.
       *
@@ -173,7 +173,7 @@ object sapMComboBoxTextFieldMod {
     sMaxWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Sets a new value for property {@link #getShowButton showButton}.
       *
@@ -192,7 +192,7 @@ object sapMComboBoxTextFieldMod {
     bShowButton: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Toggles the icon pressed style on or off.
       */
@@ -215,7 +215,7 @@ object sapMComboBoxTextFieldMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Indicates whether the dropdown downward-facing arrow button is shown.
       */

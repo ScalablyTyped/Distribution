@@ -5,101 +5,101 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Various constant values used by different raster functions when setting [ImageryTileLayer.rasterFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#rasterFunction) or [ImageryLayer.renderingRule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#renderingRule) properties.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html)
-  */
+	 * Various constant values used by different raster functions when setting [ImageryTileLayer.rasterFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#rasterFunction) or [ImageryLayer.rasterFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#rasterFunction) properties.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html)
+	 */
 trait rasterFunctionConstants extends StObject {
   
   /**
-    * Method name constants used by the [band index raster functions](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_4D75298B90D94E6B87B0C9F28D5AE269).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#bandIndexType)
-    */
+  		 * Method name constants used by the [band index raster functions](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_4D75298B90D94E6B87B0C9F28D5AE269).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#bandIndexType)
+  		 */
   val bandIndexType: rasterFunctionConstantsBandIndexType
   
   /**
-    * The local cell statistics operations type constants.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * The local cell statistics operations type constants.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   val cellStatisticalOperation: rasterFunctionConstantsCellStatisticalOperation
   
   /**
-    * Predefined raster color ramp name constants used for the [Colormap raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#GUID-5DDFC961-A857-445F-A983-13AF67D45833).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Predefined raster color ramp name constants used for the [Colormap raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#GUID-5DDFC961-A857-445F-A983-13AF67D45833).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   val colorRampName: rasterFunctionConstantsColorRampName
   
   /**
-    * Predefined raster color map name constants used for the [Colormap raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#GUID-5DDFC961-A857-445F-A983-13AF67D45833).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * Predefined raster color map name constants used for the [Colormap raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#GUID-5DDFC961-A857-445F-A983-13AF67D45833).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   val colormapName: rasterFunctionConstantsColormapName
   
   /**
-    * Kernel type constants used for the [Convolution raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_B69A71FDFD7C46A6860A7302A9AD3B17).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Kernel type constants used for the [Convolution raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_B69A71FDFD7C46A6860A7302A9AD3B17).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   val convolutionKernel: rasterFunctionConstantsConvolutionKernel
   
   /**
-    * The local arithmetic operations types.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
-    */
+  		 * The local arithmetic operations types.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localArithmeticOperation)
+  		 */
   var localArithmeticOperation: rasterFunctionConstantsLocalArithmeticOperation
   
   /**
-    * The local conditional operations type constants.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
-    */
+  		 * The local conditional operations type constants.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
+  		 */
   val localConditionalOperation: rasterFunctionConstantsLocalConditionalOperation
   
   /**
-    * The local logical operations type constants.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
-    */
+  		 * The local logical operations type constants.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localLogicalOperation)
+  		 */
   val localLogicalOperation: rasterFunctionConstantsLocalLogicalOperation
   
   /**
-    * The local trigonometric operations type constants.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
-    */
+  		 * The local trigonometric operations type constants.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localTrigonometricOperation)
+  		 */
   val localTrigonometricOperation: rasterFunctionConstantsLocalTrigonometricOperation
   
   /**
-    * The missing band action constants available for the [Extract band raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_2FC6FEAA2801446B9578A7C90B1DD6AB).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
-    */
+  		 * The missing band action constants available for the [Extract band raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_2FC6FEAA2801446B9578A7C90B1DD6AB).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#missingBandAction)
+  		 */
   val missingBandAction: rasterFunctionConstantsMissingBandAction
   
   /**
-    * The NoData interpretation constants used for the [Mask raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_5515B13D320B408B9F70B9B8344028FF).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
-    */
+  		 * The NoData interpretation constants used for the [Mask raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_5515B13D320B408B9F70B9B8344028FF).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
+  		 */
   val noDataInterpretation: rasterFunctionConstantsNoDataInterpretation
   
   /**
-    * Slope type constants used for the [slope raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_641F092319AE46D1A9441F8D1FDF186C).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
-    */
+  		 * Slope type constants used for the [slope raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_641F092319AE46D1A9441F8D1FDF186C).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
+  		 */
   val slopeType: rasterFunctionConstantsSlopeType
   
   /**
-    * Stretch type constants used for the [stretch raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_7545363F0B8A4B7B931A54B3C4189D9D).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#stretchType)
-    */
+  		 * Stretch type constants used for the [stretch raster function](https://developers.arcgis.com/documentation/common-data-types/raster-function-objects.htm#ESRI_SECTION1_7545363F0B8A4B7B931A54B3C4189D9D).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#stretchType)
+  		 */
   val stretchType: rasterFunctionConstantsStretchType
 }
 object rasterFunctionConstants {

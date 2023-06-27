@@ -7,21 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The MediaDevicesInfo interface contains information that describes a single media input or output device.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo)
   */
 trait MediaDeviceInfo extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/deviceId) */
   /* standard dom */
   val deviceId: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/groupId) */
   /* standard dom */
   val groupId: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/kind) */
   /* standard dom */
   val kind: MediaDeviceKind
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/label) */
   /* standard dom */
   val label: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaDeviceInfo/toJSON) */
   /* standard dom */
   def toJSON(): Any
 }

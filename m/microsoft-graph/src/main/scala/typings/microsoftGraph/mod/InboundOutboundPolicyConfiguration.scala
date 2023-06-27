@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InboundOutboundPolicyConfiguration extends StObject {
   
+  // Defines whether external users coming inbound are allowed.
   var inboundAllowed: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Defines whether internal users are allowed to go outbound.
   var outboundAllowed: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object InboundOutboundPolicyConfiguration {

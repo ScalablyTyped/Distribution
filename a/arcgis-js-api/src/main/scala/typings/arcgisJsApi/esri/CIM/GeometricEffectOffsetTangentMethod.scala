@@ -11,16 +11,16 @@ sealed trait GeometricEffectOffsetTangentMethod extends StObject
 object GeometricEffectOffsetTangentMethod extends StObject {
   
   /**
-    * BeginningOfLine - the tangent offset is applied from the beginning of the line.
-    */
+  			 * BeginningOfLine - the tangent offset is applied from the beginning of the line.
+  			 */
   @js.native
   sealed trait BeginningOfLine
     extends StObject
        with GeometricEffectOffsetTangentMethod
   
   /**
-    * EndOfLine - the tangent offset is applied from the end of the line.
-    */
+  			 * EndOfLine - the tangent offset is applied from the end of the line.
+  			 */
   @js.native
   sealed trait EndOfLine
     extends StObject

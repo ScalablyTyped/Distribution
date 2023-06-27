@@ -7,19 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Date extends StObject {
   
   /**
-    * focused date
+    * Display format options for the values that contain dates. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance DateFormat}.
     */
   var date: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * focused date is in an other month than the displayed one
+    * Display format options for the values that contain numbers. For a list of all available options, see
+    * {@link sap.ui.core.format.NumberFormat.getInstance NumberFormat}.
     */
-  var otherMonth: js.UndefOr[Boolean] = js.undefined
+  var int: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * focused date is set to the same as before (date in other month clicked)
+    * Display format options for the values that contain month names. The only supported option is the `pattern`
+    * using the respective symbols for displaying months "MM", "MMM" or "MMMM".
     */
-  var restoreOldDate: js.UndefOr[Boolean] = js.undefined
+  var month: js.UndefOr[js.Object] = js.undefined
 }
 object Date {
   
@@ -35,12 +37,12 @@ object Date {
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setOtherMonth(value: Boolean): Self = StObject.set(x, "otherMonth", value.asInstanceOf[js.Any])
+    inline def setInt(value: js.Object): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
     
-    inline def setOtherMonthUndefined: Self = StObject.set(x, "otherMonth", js.undefined)
+    inline def setIntUndefined: Self = StObject.set(x, "int", js.undefined)
     
-    inline def setRestoreOldDate(value: Boolean): Self = StObject.set(x, "restoreOldDate", value.asInstanceOf[js.Any])
+    inline def setMonth(value: js.Object): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    inline def setRestoreOldDateUndefined: Self = StObject.set(x, "restoreOldDate", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
   }
 }

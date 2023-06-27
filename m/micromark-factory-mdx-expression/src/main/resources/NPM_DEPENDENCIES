@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-factory-mdx-expression" : "1.0.6"
+      "micromark-factory-mdx-expression" : "1.0.9"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-factory-mdx-expression" : "1.0.6"
+      "micromark-factory-mdx-expression" : "1.0.9"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for heap-js
 
-Typings are for version 2.2.0
+Typings are for version 2.3.0
 
 ## Library description:
 Efficient Binary heap (priority queue, binary tree) data structure for JavaScript / TypeScript. Includes JavaScript methods, Python's heapq module methods, and Java's PriorityQueue methods.

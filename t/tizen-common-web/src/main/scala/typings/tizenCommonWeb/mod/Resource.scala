@@ -15,9 +15,9 @@ trait Resource extends StObject {
     *
     * @param resource The child resource to be added to the parent resource.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def addChildResource(resource: Resource): Unit = js.native
   
@@ -29,9 +29,9 @@ trait Resource extends StObject {
     *
     * @param interface The interface to be added to resource.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def addResourceInterface(interface: ResourceInterface): Unit = js.native
   
@@ -43,9 +43,9 @@ trait Resource extends StObject {
     *
     * @param types An array of types to be added to resource.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def addResourceTypes(types: js.Array[ResourceType]): Unit = js.native
   
@@ -93,10 +93,10 @@ trait Resource extends StObject {
     * @param qosLevel The quality of service level.
     * @param observerIds A list of observer id.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def notify(qosLevel: QosLevel): Unit = js.native
   def notify(qosLevel: QosLevel, observerIds: js.Array[Double]): Unit = js.native
@@ -114,10 +114,10 @@ trait Resource extends StObject {
     *
     * @param resource The child resource to be removed from the parent resource.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if the resource does not have the input child resource.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the resource does not have the input child resource.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def removeChildResource(resource: Resource): Unit = js.native
   
@@ -141,7 +141,7 @@ trait Resource extends StObject {
     *
     * @param listener Request listener to set.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def setRequestListener(listener: RequestCallback): Unit = js.native
   

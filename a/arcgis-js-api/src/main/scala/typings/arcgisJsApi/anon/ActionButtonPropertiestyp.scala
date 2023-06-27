@@ -11,67 +11,76 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActionButtonPropertiestyp extends StObject {
   
   /**
-    * Set this property to `true` to display a spinner icon.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#active)
-    */
+  		 * Set this property to `true` to display a spinner icon.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#active)
+  		 */
   var active: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This adds a CSS class to the [ActionButton's](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#className)
-    */
+  		 * This adds a CSS class to the [ActionButton's](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#className)
+  		 */
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether this action is disabled.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#disabled)
-    */
+  		 * Indicates whether this action is disabled.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#disabled)
+  		 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the ID assigned to this action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#id)
-    */
+  		 * Calcite icon used for the action.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#icon)
+  		 */
+  var icon: js.UndefOr[String] = js.undefined
+  
+  /**
+  		 * The name of the ID assigned to this action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL to an image that will be used to represent the action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
-    */
+  		 * The URL to an image that will be used to represent the action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
+  		 */
   var image: js.UndefOr[String] = js.undefined
   
   /**
-    * The title of the action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#title)
-    */
+  		 * The title of the action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the type of action.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
-    */
+  		 * Specifies the type of action.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#type)
+  		 */
   var `type`: js.UndefOr[button | slider | toggle] = js.undefined
   
   /**
-    * Indicates if the action is visible.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#visible)
-    */
+  		 * Indicates if the action is visible.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ActionButtonPropertiestyp {
@@ -95,6 +104,10 @@ object ActionButtonPropertiestyp {
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

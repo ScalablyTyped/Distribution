@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteLayerUpdateRouteLayerSolveResult extends StObject {
   
   /**
-    * Collection of direction polylines associated with line segments between turns.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of direction polylines associated with line segments between turns.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var directionLines: Collection[DirectionLine]
   
   /**
-    * Collection of direction items as points with various display information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of direction items as points with various display information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var directionPoints: Collection[DirectionPoint]
   
   /**
-    * Collection of polygon barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of polygon barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var polygonBarriers: Collection[PolygonBarrier]
   
   /**
-    * Collection of polyline barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of polyline barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var polylineBarriers: Collection[PolylineBarrier]
   
   /**
-    * Collection of point barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of point barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var readPointBarriers: Collection[PointBarrier]
   
   /**
-    * Information about a solved route including the routes geometry and overall distance and time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Information about a solved route including the routes geometry and overall distance and time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var routeInfo: RouteInfo
   
   /**
-    * Collection of stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
-    */
+  		 * Collection of stops.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#update)
+  		 */
   var stops: Collection[Stop]
 }
 object RouteLayerUpdateRouteLayerSolveResult {

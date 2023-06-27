@@ -11,10 +11,10 @@ object esriViewsInteractiveSketchSketchTooltipOptionsMod {
   @JSImport("esri/views/interactive/sketch/SketchTooltipOptions", JSImport.Namespace)
   @js.native
   /**
-    * The `SketchTooltipOptions` allows users to configure the tooltips which are shown while sketching and editing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html)
-    */
+  		 * The `SketchTooltipOptions` allows users to configure the tooltips which are shown while sketching and editing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchTooltipOptions.html)
+  		 */
   open class ^ ()
     extends StObject
        with SketchTooltipOptions {

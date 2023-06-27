@@ -62,38 +62,47 @@ open class XPathResult ()
   /* CompleteClass */
   override val UNORDERED_NODE_SNAPSHOT_TYPE: `6` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/booleanValue) */
   /* standard dom */
   /* CompleteClass */
   override val booleanValue: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/invalidIteratorState) */
   /* standard dom */
   /* CompleteClass */
   override val invalidIteratorState: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/iterateNext) */
   /* standard dom */
   /* CompleteClass */
   override def iterateNext(): typings.std.Node | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/numberValue) */
   /* standard dom */
   /* CompleteClass */
   override val numberValue: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/resultType) */
   /* standard dom */
   /* CompleteClass */
   override val resultType: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/singleNodeValue) */
   /* standard dom */
   /* CompleteClass */
   override val singleNodeValue: typings.std.Node | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/snapshotItem) */
   /* standard dom */
   /* CompleteClass */
   override def snapshotItem(index: Double): typings.std.Node | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/snapshotLength) */
   /* standard dom */
   /* CompleteClass */
   override val snapshotLength: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathResult/stringValue) */
   /* standard dom */
   /* CompleteClass */
   override val stringValue: java.lang.String = js.native

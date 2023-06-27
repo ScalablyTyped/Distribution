@@ -18,6 +18,7 @@ StringDictionary[Any]
 
 type MathArray = js.Array[js.Array[MathNumericType] | MathNumericType]
 
+// TODO: MathArray can also contain Unit
 type MathCollection = MathArray | Matrix
 
 type MathExpression = String | js.Array[String] | MathCollection
@@ -27,6 +28,7 @@ type MathExpression = String | js.Array[String] | MathCollection
   */
 type MathNodeCommon = MathNode
 
+// TODO: introduce generics for MathCollection, MathMatrix, and MathArray
 /* Rewritten from type alias, can be one of: 
   - scala.Double
   - typings.mathjs.mod.BigNumber
@@ -38,9 +40,10 @@ type MathNumericType = _MathNumericType | Double | BigNumber
 /* Rewritten from type alias, can be one of: 
   - typings.mathjs.mod.MathNumericType
   - typings.mathjs.mod.Unit
-  - typings.mathjs.mod.MathCollection
 */
-type MathType = _MathType | MathCollection | Double | BigNumber
+type MathScalarType = _MathScalarType | Double | BigNumber
+
+type MathType = MathScalarType | MathCollection
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

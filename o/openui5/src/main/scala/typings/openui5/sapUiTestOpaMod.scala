@@ -53,9 +53,8 @@ object sapUiTestOpaMod {
       * 	 - timeout : 15 seconds, 0 for infinite timeout
       * 	 - pollingInterval: 400 milliseconds
       * 	 - debugTimeout: 0 seconds, infinite timeout by default. This will be used instead of timeout if running
-      * 			in debug mode.
-      * 	 - asyncPolling: false  You can either directly manipulate the config, or extend it using {@link
-      * 			sap.ui.test.Opa.extendConfig}.
+      *     in debug mode.
+      * 	 - asyncPolling: false  You can either directly manipulate the config, or extend it using {@link sap.ui.test.Opa.extendConfig}.
       */
     @JSImport("sap/ui/test/Opa", "default.config")
     @js.native
@@ -70,7 +69,7 @@ object sapUiTestOpaMod {
     inline def emptyQueue(): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyQueue")().asInstanceOf[Promise[Any]]
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Extends and overwrites default values of the {@link sap.ui.test.Opa sap.ui.test.Opa.config} field. Sample
       * usage:
@@ -107,7 +106,7 @@ object sapUiTestOpaMod {
     options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Gives access to a singleton object you can save values in. Same as {@link sap.ui.test.Opa#getContext}
       *
@@ -116,7 +115,7 @@ object sapUiTestOpaMod {
     inline def getContext(): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[Record[String, Any]]
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Reset Opa.config to its default values. All of the global values can be overwritten in an individual
       * waitFor call.
@@ -128,22 +127,22 @@ object sapUiTestOpaMod {
       * 	 - timeout : 15 seconds, 0 for infinite timeout
       * 	 - pollingInterval: 400 milliseconds
       * 	 - debugTimeout: 0 seconds, infinite timeout by default. This will be used instead of timeout if running
-      * 			in debug mode.
+      *     in debug mode.
       * 	 -  executionDelay: 0 or 50 (depending on the browser). The value is a number representing milliseconds.
-      * 			The executionDelay will slow down the execution of every single waitFor statement to be delayed by the
-      * 			number of milliseconds. This does not effect the polling interval it just adds an initial pause. Use
-      * 			this parameter to slow down OPA when you want to watch your test during development or checking the UI
-      * 			of your app. It is not recommended to use this parameter in any automated test executions.
+      *     The executionDelay will slow down the execution of every single waitFor statement to be delayed by the
+      *     number of milliseconds. This does not effect the polling interval it just adds an initial pause. Use
+      *     this parameter to slow down OPA when you want to watch your test during development or checking the UI
+      *     of your app. It is not recommended to use this parameter in any automated test executions.
       * 	 - asyncPolling: false
       */
     inline def resetConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfig")().asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Clears the queue and stops running tests so that new tests can be run. This means all waitFor statements
       * registered by {@link sap.ui.test.Opa#waitFor} will not be invoked anymore and the promise returned by
-      * {@link sap.ui.test.Opa.emptyQueue} will be rejected When it is called inside of a check in {@link sap.ui.test.Opa#waitFor}
+      * {@link sap.ui.test.Opa.emptyQueue} will be rejected When it is called inside of a check in {@link sap.ui.test.Opa#waitFor }
       * the success function of this waitFor will not be called.
       */
     inline def stopQueue(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopQueue")().asInstanceOf[Unit]
@@ -201,17 +200,6 @@ object sapUiTestOpaMod {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Chain
-    extends StObject
-       with Opa {
-    
-    /**
-      * A reference to the same `sap.ui.test.Opa` instance that can be used for chaining statements
-      */
-    var and: Opa = js.native
   }
   
   trait Config
@@ -274,6 +262,11 @@ object sapUiTestOpaMod {
   trait Opa extends StObject {
     
     /**
+      * "and" property for chaining actions and assertions
+      */
+    var and: this.type = js.native
+    
+    /**
       * Calls the static emptyQueue function in the Opa namespace {@link sap.ui.test.Opa.emptyQueue}
       */
     def emptyQueue(): Unit = js.native
@@ -308,7 +301,7 @@ object sapUiTestOpaMod {
     oPromise: Promise[Any]): Promise[Any] = js.native
     
     /**
-      * Queues up a waitFor command for Opa. The Queue will not be emptied until {@link sap.ui.test.Opa.emptyQueue}
+      * Queues up a waitFor command for Opa. The Queue will not be emptied until {@link sap.ui.test.Opa.emptyQueue }
       * is called. If you are using {@link module:sap/ui/test/opaQunit}, emptyQueue will be called by the wrapped
       * tests.
       *
@@ -324,7 +317,7 @@ object sapUiTestOpaMod {
     def waitFor(/**
       * configuration options
       */
-    options: WaitForOptions): Chain = js.native
+    options: WaitForOptions): this.type = js.native
   }
   
   trait WaitForOptions

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WFSOperationsGetFeature extends StObject {
   
   /**
-    * Value of the output format parameter to send with the GetFeature call.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
-    */
+  		 * Value of the output format parameter to send with the GetFeature call.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
+  		 */
   var outputFormat: String
   
   /**
-    * Indicates if the GetFeature request supports pagination.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
-    */
+  		 * Indicates if the GetFeature request supports pagination.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
+  		 */
   var supportsPagination: Boolean
   
   /**
-    * The URL to the GetFeature endpoint.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
-    */
+  		 * The URL to the GetFeature endpoint.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSOperations)
+  		 */
   var url: String
 }
 object WFSOperationsGetFeature {

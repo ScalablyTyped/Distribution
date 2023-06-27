@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "estree-util-is-identifier-name" : "2.0.1"
+      "estree-util-is-identifier-name" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "estree-util-is-identifier-name" : "2.0.1"
+      "estree-util-is-identifier-name" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

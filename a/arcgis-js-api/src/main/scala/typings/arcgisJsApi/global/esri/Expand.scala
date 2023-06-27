@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Expand")
 @js.native
 /**
-  * The Expand widget acts as a clickable button for opening a widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html)
-  */
+		 * The Expand widget acts as a clickable button for opening a widget.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html)
+		 */
 open class Expand ()
   extends StObject
      with typings.arcgisJsApi.esri.Expand {

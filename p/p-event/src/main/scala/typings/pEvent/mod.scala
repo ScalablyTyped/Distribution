@@ -1,6 +1,7 @@
 package typings.pEvent
 
 import typings.pEvent.pEventBooleans.`true`
+import typings.std.AbortSignal
 import typings.std.AsyncIterableIterator
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
@@ -401,6 +402,11 @@ object mod {
     val rejectionEvents: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
     
     /**
+    	An [`AbortSignal`](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort waiting for the event.
+    	*/
+    val signal: js.UndefOr[AbortSignal] = js.undefined
+    
+    /**
     	The time in milliseconds before timing out.
     	@default Infinity
     	*/
@@ -429,6 +435,10 @@ object mod {
       inline def setRejectionEventsUndefined: Self = StObject.set(x, "rejectionEvents", js.undefined)
       
       inline def setRejectionEventsVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "rejectionEvents", js.Array(value*))
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

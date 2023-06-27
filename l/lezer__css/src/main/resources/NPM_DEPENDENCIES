@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lezer/css" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lezer/css" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

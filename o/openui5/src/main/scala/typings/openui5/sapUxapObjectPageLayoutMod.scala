@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Fixed
-import typings.openui5.anon.Pinned
-import typings.openui5.anon.Section
-import typings.openui5.anon.VisibleSubSections
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.IBar
@@ -31,15 +27,14 @@ object sapUxapObjectPageLayoutMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:2e61ab6c68a2480eb666c1927a707658 Object Page Layout}
-    * 	{@link topic:d2ef0099542d44dc868719d908e576d0 Object Page Headers}
-    * 	{@link topic:370b67986497463187336fa130aebbf1 Anchor Bar}
-    * 	{@link topic:4527729576cb4a4888275b6935aad03a Object Page Blocks}
-    * 	{@link topic:2978f6064742456ebed31c5ccf4d051d Creating Blocks}
-    * 	{@link topic:bc410e94e46540efa02857e15aae583f Object Page Scrolling}
+    * 	{@link https://ui5.sap.com/#/topic/2e61ab6c68a2480eb666c1927a707658 Object Page Layout}
+    * 	{@link https://ui5.sap.com/#/topic/d2ef0099542d44dc868719d908e576d0 Object Page Headers}
+    * 	{@link https://ui5.sap.com/#/topic/370b67986497463187336fa130aebbf1 Anchor Bar}
+    * 	{@link https://ui5.sap.com/#/topic/4527729576cb4a4888275b6935aad03a Object Page Blocks}
+    * 	{@link https://ui5.sap.com/#/topic/2978f6064742456ebed31c5ccf4d051d Creating Blocks}
+    * 	{@link https://ui5.sap.com/#/topic/bc410e94e46540efa02857e15aae583f Object Page Scrolling}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-page/ Object Page Layout}
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/snapping-header/ UX Guidelines: Object Page
-    * - Snapping Header}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/snapping-header/ UX Guidelines: Object Page - Snapping Header}
     */
   open class default () extends ObjectPageLayout {
     def this(/**
@@ -168,7 +163,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:editHeaderButtonPress editHeaderButtonPress}
+      * Attaches event handler `fnFunction` to the {@link #event:editHeaderButtonPress editHeaderButtonPress }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -182,20 +177,20 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachEditHeaderButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:editHeaderButtonPress editHeaderButtonPress}
+      * Attaches event handler `fnFunction` to the {@link #event:editHeaderButtonPress editHeaderButtonPress }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -214,7 +209,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachEditHeaderButtonPress(
       /**
@@ -225,7 +220,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -233,9 +228,9 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
-      * Attaches event handler `fnFunction` to the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange}
+      * Attaches event handler `fnFunction` to the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -249,22 +244,22 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def attachHeaderContentPinnedStateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
-      * Attaches event handler `fnFunction` to the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange}
+      * Attaches event handler `fnFunction` to the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -283,7 +278,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def attachHeaderContentPinnedStateChange(
       /**
@@ -294,7 +289,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -302,7 +297,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.uxap.ObjectPageLayout`.
       *
@@ -317,20 +312,20 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.uxap.ObjectPageLayout`.
       *
@@ -350,7 +345,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -361,7 +356,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -369,7 +364,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Attaches event handler `fnFunction` to the {@link #event:sectionChange sectionChange} event of this `sap.uxap.ObjectPageLayout`.
       *
@@ -384,20 +379,20 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Attaches event handler `fnFunction` to the {@link #event:sectionChange sectionChange} event of this `sap.uxap.ObjectPageLayout`.
       *
@@ -417,7 +412,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSectionChange(
       /**
@@ -428,7 +423,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -436,9 +431,9 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
-      * Attaches event handler `fnFunction` to the {@link #event:subSectionVisibilityChange subSectionVisibilityChange}
+      * Attaches event handler `fnFunction` to the {@link #event:subSectionVisibilityChange subSectionVisibilityChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -452,22 +447,22 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit]
     ): this.type = js.native
     def attachSubSectionVisibilityChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
-      * Attaches event handler `fnFunction` to the {@link #event:subSectionVisibilityChange subSectionVisibilityChange}
+      * Attaches event handler `fnFunction` to the {@link #event:subSectionVisibilityChange subSectionVisibilityChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -486,7 +481,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit]
     ): this.type = js.native
     def attachSubSectionVisibilityChange(
       /**
@@ -497,7 +492,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -519,13 +514,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit]
     ): this.type = js.native
     def attachToggleAnchorBar(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -551,7 +546,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit]
     ): this.type = js.native
     def attachToggleAnchorBar(
       /**
@@ -562,7 +557,7 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.ObjectPageLayout` itself
       */
@@ -570,7 +565,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Destroys the footer in the aggregation {@link #getFooter footer}.
       *
@@ -593,7 +588,7 @@ object sapUxapObjectPageLayoutMod {
     def destroyHeaderTitle(): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Destroys the landmarkInfo in the aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -609,7 +604,7 @@ object sapUxapObjectPageLayoutMod {
     def destroySections(): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:editHeaderButtonPress editHeaderButtonPress}
+      * Detaches event handler `fnFunction` from the {@link #event:editHeaderButtonPress editHeaderButtonPress }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -620,13 +615,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachEditHeaderButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -634,9 +629,9 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
-      * Detaches event handler `fnFunction` from the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange}
+      * Detaches event handler `fnFunction` from the {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -647,13 +642,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit]
     ): this.type = js.native
     def detachHeaderContentPinnedStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutHeaderContentPinnedStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -661,7 +656,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.uxap.ObjectPageLayout`.
       *
@@ -673,13 +668,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -687,7 +682,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Detaches event handler `fnFunction` from the {@link #event:sectionChange sectionChange} event of this
       * `sap.uxap.ObjectPageLayout`.
@@ -700,13 +695,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -714,9 +709,9 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
-      * Detaches event handler `fnFunction` from the {@link #event:subSectionVisibilityChange subSectionVisibilityChange}
+      * Detaches event handler `fnFunction` from the {@link #event:subSectionVisibilityChange subSectionVisibilityChange }
       * event of this `sap.uxap.ObjectPageLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -727,13 +722,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit]
     ): this.type = js.native
     def detachSubSectionVisibilityChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutSubSectionVisibilityChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -752,13 +747,13 @@ object sapUxapObjectPageLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit]
     ): this.type = js.native
     def detachToggleAnchorBar(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectPageLayoutToggleAnchorBarEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -766,7 +761,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:editHeaderButtonPress editHeaderButtonPress} to attached listeners.
       *
@@ -779,8 +774,8 @@ object sapUxapObjectPageLayoutMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.93
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:headerContentPinnedStateChange headerContentPinnedStateChange} to attached
       * listeners.
@@ -788,68 +783,78 @@ object sapUxapObjectPageLayoutMod {
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireHeaderContentPinnedStateChange(): this.type = js.native
-    def fireHeaderContentPinnedStateChange(/**
+    def fireHeaderContentPinnedStateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Pinned): this.type = js.native
+    mParameters: ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.40
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.40
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavigate(): this.type = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Section): this.type = js.native
+    mParameters: ObjectPageLayout$NavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.73
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.73
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sectionChange sectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSectionChange(): this.type = js.native
-    def fireSectionChange(/**
+    def fireSectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Section): this.type = js.native
+    mParameters: ObjectPageLayout$SectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.77
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.77
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:subSectionVisibilityChange subSectionVisibilityChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSubSectionVisibilityChange(): this.type = js.native
-    def fireSubSectionVisibilityChange(/**
+    def fireSubSectionVisibilityChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: VisibleSubSections): this.type = js.native
+    mParameters: ObjectPageLayout$SubSectionVisibilityChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleAnchorBar toggleAnchorBar} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleAnchorBar(): this.type = js.native
-    def fireToggleAnchorBar(/**
+    def fireToggleAnchorBar(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Fixed): this.type = js.native
+    mParameters: ObjectPageLayout$ToggleAnchorBarEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAlwaysShowContentHeader alwaysShowContentHeader}.
       *
@@ -865,7 +870,7 @@ object sapUxapObjectPageLayoutMod {
     def getAlwaysShowContentHeader(): Boolean = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getBackgroundDesignAnchorBar backgroundDesignAnchorBar}.
       *
@@ -890,7 +895,7 @@ object sapUxapObjectPageLayoutMod {
     def getEnableLazyLoading(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getFlexEnabled flexEnabled}.
       *
@@ -904,7 +909,7 @@ object sapUxapObjectPageLayoutMod {
     def getFlexEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets content of aggregation {@link #getFooter footer}.
       *
@@ -920,7 +925,7 @@ object sapUxapObjectPageLayoutMod {
     def getHeaderContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getHeaderContentPinnable headerContentPinnable}.
       *
@@ -939,7 +944,7 @@ object sapUxapObjectPageLayoutMod {
     def getHeaderContentPinnable(): Boolean = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Gets current value of property {@link #getHeaderContentPinned headerContentPinned}.
       *
@@ -983,7 +988,7 @@ object sapUxapObjectPageLayoutMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getIsChildPage isChildPage}.
       *
@@ -1000,7 +1005,7 @@ object sapUxapObjectPageLayoutMod {
     def getIsChildPage(): Boolean = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets content of aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -1011,7 +1016,7 @@ object sapUxapObjectPageLayoutMod {
     def getLandmarkInfo(): typings.openui5.sapUxapObjectPageAccessibleLandmarkInfoMod.default = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getPreserveHeaderStateOnScroll preserveHeaderStateOnScroll}.
       *
@@ -1020,10 +1025,10 @@ object sapUxapObjectPageLayoutMod {
       *
       * **Notes:**
       * 	 - This property is only taken into account if an instance of `sap.uxap.ObjectPageDynamicHeaderTitle`
-      * 			is used for the `headerTitle` aggregation.
+      *     is used for the `headerTitle` aggregation.
       * 	 - Based on internal rules, the value of the property is not always taken into account - for example,
-      * 			when the control is rendered on tablet or mobile and the control`s title and header are with height larger
-      * 			than the given threshold.
+      *     when the control is rendered on tablet or mobile and the control`s title and header are with height larger
+      *     than the given threshold.
       *
       * Default value is `false`.
       *
@@ -1044,7 +1049,7 @@ object sapUxapObjectPageLayoutMod {
     def getScrollingSectionId(): String = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Gets current value of property {@link #getSectionTitleLevel sectionTitleLevel}.
       *
@@ -1055,18 +1060,18 @@ object sapUxapObjectPageLayoutMod {
       *
       * **Note:**
       * 	 - Defining a `sectionTitleLevel` will add `aria-level` attribute from 1 to 6 instead of changing the
-      * 			titles` HTML tag from H1 to H6.
+      *     titles` HTML tag from H1 to H6.
       * For example: if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 1 added to the
       * `ObjectPageSection` title.
       *
       *
       * 	 -  The `ObjectPageSubSection` title would have `aria-level` one level lower than the defined. For example:
-      * 			if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
-      * 			title.
+      *     if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
+      *     title.
       *
       *
       * 	 -  It is possible to define a `titleLevel` on `ObjectPageSection` or `ObjectPageSubSection` level.
-      * 			In this case the value of this property will be ignored.
+      *     In this case the value of this property will be ignored.
       *
       * Default value is `Auto`.
       *
@@ -1082,7 +1087,7 @@ object sapUxapObjectPageLayoutMod {
     def getSections(): js.Array[typings.openui5.sapUxapObjectPageSectionMod.default] = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * ID of the element which is the current target of the association {@link #getSelectedSection selectedSection},
       * or `null`.
@@ -1113,7 +1118,7 @@ object sapUxapObjectPageLayoutMod {
     def getShowAnchorBarPopover(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getShowEditHeaderButton showEditHeaderButton}.
       *
@@ -1129,7 +1134,7 @@ object sapUxapObjectPageLayoutMod {
     def getShowEditHeaderButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getShowFooter showFooter}.
       *
@@ -1153,7 +1158,7 @@ object sapUxapObjectPageLayoutMod {
     def getShowHeaderContent(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getShowOnlyHighImportance showOnlyHighImportance}.
       *
@@ -1191,7 +1196,7 @@ object sapUxapObjectPageLayoutMod {
     def getSubSectionLayout(): ObjectPageSubSectionLayout | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectPageSubSectionLayout * / any */ String) = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getToggleHeaderOnTitleClick toggleHeaderOnTitleClick}.
       *
@@ -1412,7 +1417,7 @@ object sapUxapObjectPageLayoutMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAlwaysShowContentHeader alwaysShowContentHeader}.
       *
@@ -1440,7 +1445,7 @@ object sapUxapObjectPageLayoutMod {
     sBackgroundDesignAnchorBar: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets the value of the `backgroundDesignAnchorBar` property.
       *
@@ -1471,7 +1476,7 @@ object sapUxapObjectPageLayoutMod {
     bEnableLazyLoading: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getFlexEnabled flexEnabled}.
       *
@@ -1491,7 +1496,7 @@ object sapUxapObjectPageLayoutMod {
     bFlexEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets the aggregated {@link #getFooter footer}.
       *
@@ -1503,7 +1508,7 @@ object sapUxapObjectPageLayoutMod {
     oFooter: IBar): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getHeaderContentPinnable headerContentPinnable}.
       *
@@ -1528,7 +1533,7 @@ object sapUxapObjectPageLayoutMod {
     bHeaderContentPinnable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Sets a new value for property {@link #getHeaderContentPinned headerContentPinned}.
       *
@@ -1587,7 +1592,7 @@ object sapUxapObjectPageLayoutMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getIsChildPage isChildPage}.
       *
@@ -1610,7 +1615,7 @@ object sapUxapObjectPageLayoutMod {
     bIsChildPage: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets the aggregated {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -1624,7 +1629,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getPreserveHeaderStateOnScroll preserveHeaderStateOnScroll}.
       *
@@ -1633,10 +1638,10 @@ object sapUxapObjectPageLayoutMod {
       *
       * **Notes:**
       * 	 - This property is only taken into account if an instance of `sap.uxap.ObjectPageDynamicHeaderTitle`
-      * 			is used for the `headerTitle` aggregation.
+      *     is used for the `headerTitle` aggregation.
       * 	 - Based on internal rules, the value of the property is not always taken into account - for example,
-      * 			when the control is rendered on tablet or mobile and the control`s title and header are with height larger
-      * 			than the given threshold.
+      *     when the control is rendered on tablet or mobile and the control`s title and header are with height larger
+      *     than the given threshold.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1653,7 +1658,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Sets a new value for property {@link #getSectionTitleLevel sectionTitleLevel}.
       *
@@ -1664,18 +1669,18 @@ object sapUxapObjectPageLayoutMod {
       *
       * **Note:**
       * 	 - Defining a `sectionTitleLevel` will add `aria-level` attribute from 1 to 6 instead of changing the
-      * 			titles` HTML tag from H1 to H6.
+      *     titles` HTML tag from H1 to H6.
       * For example: if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 1 added to the
       * `ObjectPageSection` title.
       *
       *
       * 	 -  The `ObjectPageSubSection` title would have `aria-level` one level lower than the defined. For example:
-      * 			if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
-      * 			title.
+      *     if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
+      *     title.
       *
       *
       * 	 -  It is possible to define a `titleLevel` on `ObjectPageSection` or `ObjectPageSubSection` level.
-      * 			In this case the value of this property will be ignored.
+      *     In this case the value of this property will be ignored.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1758,7 +1763,7 @@ object sapUxapObjectPageLayoutMod {
     bShowAnchorBarPopover: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getShowEditHeaderButton showEditHeaderButton}.
       *
@@ -1780,7 +1785,7 @@ object sapUxapObjectPageLayoutMod {
     bShowEditHeaderButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Sets a new value for property {@link #getShowFooter showFooter}.
       *
@@ -1816,7 +1821,7 @@ object sapUxapObjectPageLayoutMod {
     bShowHeaderContent: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getShowOnlyHighImportance showOnlyHighImportance}.
       *
@@ -1880,7 +1885,7 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getToggleHeaderOnTitleClick toggleHeaderOnTitleClick}.
       *
@@ -1961,12 +1966,164 @@ object sapUxapObjectPageLayoutMod {
     ): this.type = js.native
   }
   
+  trait ObjectPageLayout$EditHeaderButtonPressEventParameters extends StObject
+  
+  trait ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters extends StObject {
+    
+    /**
+      * False or True values indicate the new pinned property value.
+      */
+    var pinned: js.UndefOr[Boolean] = js.undefined
+  }
+  object ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters {
+    
+    inline def apply(): ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    }
+  }
+  
+  trait ObjectPageLayout$NavigateEventParameters extends StObject {
+    
+    /**
+      * The selected section object.
+      */
+    var section: js.UndefOr[typings.openui5.sapUxapObjectPageSectionMod.default] = js.undefined
+    
+    /**
+      * The selected subsection object.
+      */
+    var subSection: js.UndefOr[typings.openui5.sapUxapObjectPageSubSectionMod.default] = js.undefined
+  }
+  object ObjectPageLayout$NavigateEventParameters {
+    
+    inline def apply(): ObjectPageLayout$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageLayout$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayout$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSection(value: typings.openui5.sapUxapObjectPageSectionMod.default): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      
+      inline def setSubSection(value: typings.openui5.sapUxapObjectPageSubSectionMod.default): Self = StObject.set(x, "subSection", value.asInstanceOf[js.Any])
+      
+      inline def setSubSectionUndefined: Self = StObject.set(x, "subSection", js.undefined)
+    }
+  }
+  
+  trait ObjectPageLayout$SectionChangeEventParameters extends StObject {
+    
+    /**
+      * The section which the layout is scrolled to.
+      */
+    var section: js.UndefOr[typings.openui5.sapUxapObjectPageSectionMod.default] = js.undefined
+    
+    /**
+      * The subsection which the layout is scrolled to.
+      */
+    var subSection: js.UndefOr[typings.openui5.sapUxapObjectPageSubSectionMod.default] = js.undefined
+  }
+  object ObjectPageLayout$SectionChangeEventParameters {
+    
+    inline def apply(): ObjectPageLayout$SectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageLayout$SectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayout$SectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSection(value: typings.openui5.sapUxapObjectPageSectionMod.default): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      
+      inline def setSubSection(value: typings.openui5.sapUxapObjectPageSubSectionMod.default): Self = StObject.set(x, "subSection", value.asInstanceOf[js.Any])
+      
+      inline def setSubSectionUndefined: Self = StObject.set(x, "subSection", js.undefined)
+    }
+  }
+  
+  trait ObjectPageLayout$SubSectionVisibilityChangeEventParameters extends StObject {
+    
+    /**
+      * Object whose keys are the visible SubSection IDs and their values are the SubSection instances
+      */
+    var visibleSubSections: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectPageLayout$SubSectionVisibilityChangeEventParameters {
+    
+    inline def apply(): ObjectPageLayout$SubSectionVisibilityChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageLayout$SubSectionVisibilityChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayout$SubSectionVisibilityChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setVisibleSubSections(value: js.Object): Self = StObject.set(x, "visibleSubSections", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleSubSectionsUndefined: Self = StObject.set(x, "visibleSubSections", js.undefined)
+    }
+  }
+  
+  trait ObjectPageLayout$ToggleAnchorBarEventParameters extends StObject {
+    
+    /**
+      * False indicates that the Anchor bar has just detached from the Header and became part of the scrolling
+      * area. True means that the Anchor bar has just snapped to the Header.
+      */
+    var fixed: js.UndefOr[Boolean] = js.undefined
+  }
+  object ObjectPageLayout$ToggleAnchorBarEventParameters {
+    
+    inline def apply(): ObjectPageLayout$ToggleAnchorBarEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectPageLayout$ToggleAnchorBarEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageLayout$ToggleAnchorBarEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    }
+  }
+  
+  type ObjectPageLayoutEditHeaderButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$EditHeaderButtonPressEventParameters]
+  
+  type ObjectPageLayoutEditHeaderButtonPressEventParameters = ObjectPageLayout$EditHeaderButtonPressEventParameters
+  
+  type ObjectPageLayoutHeaderContentPinnedStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters]
+  
+  type ObjectPageLayoutHeaderContentPinnedStateChangeEventParameters = ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters
+  
+  type ObjectPageLayoutNavigateEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$NavigateEventParameters]
+  
+  type ObjectPageLayoutNavigateEventParameters = ObjectPageLayout$NavigateEventParameters
+  
+  type ObjectPageLayoutSectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SectionChangeEventParameters]
+  
+  type ObjectPageLayoutSectionChangeEventParameters = ObjectPageLayout$SectionChangeEventParameters
+  
   trait ObjectPageLayoutSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Determines whether Header Content will always be expanded on desktop.
       *
@@ -1978,7 +2135,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Determines the background color of the `AnchorBar`.
       *
@@ -1992,7 +2149,9 @@ object sapUxapObjectPageLayoutMod {
     /**
       * The event is fired when the Edit Header button is pressed
       */
-    var editHeaderButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var editHeaderButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Enable lazy loading for the Object page Subsections.
@@ -2002,7 +2161,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Specifies whether the object page enables flexibility features, such as hiding and adding sections.
       *  For more information about SAPUI5 flexibility, refer to the Developer Guide.
@@ -2012,7 +2171,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Object page floating footer.
       */
@@ -2026,7 +2185,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Determines whether the Header Content area can be pinned.
       *
@@ -2041,7 +2200,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * Determines whether the `sap.uxap.ObjectPageDynamicHeaderContent` is pinned.
       *
@@ -2063,11 +2222,16 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
+      * @since 1.93
       *
       * The event is fired when the `headerContentPinned` property is changed via user interaction.
       */
-    var headerContentPinnedStateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var headerContentPinnedStateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Object page header title - the upper, always static, part of the Object page header.
@@ -2082,7 +2246,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Determines whether the page is a child page and renders it with a different design. Child pages have
       * an additional (darker/lighter) stripe on the left side of their header content area.
@@ -2095,7 +2259,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Accessible landmark settings to be applied on the containers of the `sap.uxap.ObjectPageLayout` control.
       *
@@ -2104,38 +2268,48 @@ object sapUxapObjectPageLayoutMod {
     var landmarkInfo: js.UndefOr[typings.openui5.sapUxapObjectPageAccessibleLandmarkInfoMod.default] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * The event is fired when the selected section is changed using the navigation.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Preserves the current header state when scrolling. For example, if the user expands the header by clicking
       * on the title and then scrolls down the page, the header will remain expanded.
       *
       * **Notes:**
       * 	 - This property is only taken into account if an instance of `sap.uxap.ObjectPageDynamicHeaderTitle`
-      * 			is used for the `headerTitle` aggregation.
+      *     is used for the `headerTitle` aggregation.
       * 	 - Based on internal rules, the value of the property is not always taken into account - for example,
-      * 			when the control is rendered on tablet or mobile and the control`s title and header are with height larger
-      * 			than the given threshold.
+      *     when the control is rendered on tablet or mobile and the control`s title and header are with height larger
+      *     than the given threshold.
       */
     var preserveHeaderStateOnScroll: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Fired when the current section is changed by scrolling.
       */
-    var sectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Determines the ARIA level of the `ObjectPageSection` and `ObjectPageSubSection` titles. The ARIA level
       * is used by assisting technologies, such as screen readers, to create a hierarchical site map for faster
@@ -2144,18 +2318,18 @@ object sapUxapObjectPageLayoutMod {
       *
       * **Note:**
       * 	 - Defining a `sectionTitleLevel` will add `aria-level` attribute from 1 to 6 instead of changing the
-      * 			titles` HTML tag from H1 to H6.
+      *     titles` HTML tag from H1 to H6.
       * For example: if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 1 added to the
       * `ObjectPageSection` title.
       *
       *
       * 	 -  The `ObjectPageSubSection` title would have `aria-level` one level lower than the defined. For example:
-      * 			if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
-      * 			title.
+      *     if `sectionTitleLevel` is `TitleLevel.H1`, it will result as aria-level of 2 added to the `ObjectPageSubSection`
+      *     title.
       *
       *
       * 	 -  It is possible to define a `titleLevel` on `ObjectPageSection` or `ObjectPageSubSection` level.
-      * 			In this case the value of this property will be ignored.
+      *     In this case the value of this property will be ignored.
       */
     var sectionTitleLevel: js.UndefOr[
         TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
@@ -2169,7 +2343,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * The section that is selected by default on load.
       */
@@ -2191,7 +2365,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Determines whether an Edit button will be displayed in Header Content.
       *
@@ -2203,7 +2377,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Determines whether the footer is visible.
       */
@@ -2219,7 +2393,7 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Determines whether sections and subsections with importance Low and Medium are hidden even on large screens.
       */
@@ -2245,19 +2419,29 @@ object sapUxapObjectPageLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Fired when the visibility of subsections is changed.
       */
-    var subSectionVisibilityChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var subSectionVisibilityChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SubSectionVisibilityChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is fired when the Anchor bar is switched from moving to fixed or the other way round.
       */
-    var toggleAnchorBar: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleAnchorBar: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$ToggleAnchorBarEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Determines whether the user can switch between the expanded/collapsed states of the `sap.uxap.ObjectPageDynamicHeaderContent`
       * by clicking on the `sap.uxap.ObjectPageDynamicHeaderTitle`. If set to `false`, the `sap.uxap.ObjectPageDynamicHeaderTitle`
@@ -2315,7 +2499,7 @@ object sapUxapObjectPageLayoutMod {
       
       inline def setBackgroundDesignAnchorBarUndefined: Self = StObject.set(x, "backgroundDesignAnchorBar", js.undefined)
       
-      inline def setEditHeaderButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "editHeaderButtonPress", js.Any.fromFunction1(value))
+      inline def setEditHeaderButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "editHeaderButtonPress", js.Any.fromFunction1(value))
       
       inline def setEditHeaderButtonPressUndefined: Self = StObject.set(x, "editHeaderButtonPress", js.undefined)
       
@@ -2341,7 +2525,9 @@ object sapUxapObjectPageLayoutMod {
       
       inline def setHeaderContentPinned(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "headerContentPinned", value.asInstanceOf[js.Any])
       
-      inline def setHeaderContentPinnedStateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "headerContentPinnedStateChange", js.Any.fromFunction1(value))
+      inline def setHeaderContentPinnedStateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$HeaderContentPinnedStateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "headerContentPinnedStateChange", js.Any.fromFunction1(value))
       
       inline def setHeaderContentPinnedStateChangeUndefined: Self = StObject.set(x, "headerContentPinnedStateChange", js.undefined)
       
@@ -2367,7 +2553,9 @@ object sapUxapObjectPageLayoutMod {
       
       inline def setLandmarkInfoUndefined: Self = StObject.set(x, "landmarkInfo", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       
@@ -2375,7 +2563,9 @@ object sapUxapObjectPageLayoutMod {
       
       inline def setPreserveHeaderStateOnScrollUndefined: Self = StObject.set(x, "preserveHeaderStateOnScroll", js.undefined)
       
-      inline def setSectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sectionChange", js.Any.fromFunction1(value))
+      inline def setSectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "sectionChange", js.Any.fromFunction1(value))
       
       inline def setSectionChangeUndefined: Self = StObject.set(x, "sectionChange", js.undefined)
       
@@ -2431,11 +2621,15 @@ object sapUxapObjectPageLayoutMod {
       
       inline def setSubSectionLayoutUndefined: Self = StObject.set(x, "subSectionLayout", js.undefined)
       
-      inline def setSubSectionVisibilityChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "subSectionVisibilityChange", js.Any.fromFunction1(value))
+      inline def setSubSectionVisibilityChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SubSectionVisibilityChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "subSectionVisibilityChange", js.Any.fromFunction1(value))
       
       inline def setSubSectionVisibilityChangeUndefined: Self = StObject.set(x, "subSectionVisibilityChange", js.undefined)
       
-      inline def setToggleAnchorBar(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleAnchorBar", js.Any.fromFunction1(value))
+      inline def setToggleAnchorBar(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$ToggleAnchorBarEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleAnchorBar", js.Any.fromFunction1(value))
       
       inline def setToggleAnchorBarUndefined: Self = StObject.set(x, "toggleAnchorBar", js.undefined)
       
@@ -2456,4 +2650,12 @@ object sapUxapObjectPageLayoutMod {
       inline def setUseTwoColumnsForLargeScreenUndefined: Self = StObject.set(x, "useTwoColumnsForLargeScreen", js.undefined)
     }
   }
+  
+  type ObjectPageLayoutSubSectionVisibilityChangeEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$SubSectionVisibilityChangeEventParameters]
+  
+  type ObjectPageLayoutSubSectionVisibilityChangeEventParameters = ObjectPageLayout$SubSectionVisibilityChangeEventParameters
+  
+  type ObjectPageLayoutToggleAnchorBarEvent = typings.openui5.sapUiBaseEventMod.default[ObjectPageLayout$ToggleAnchorBarEventParameters]
+  
+  type ObjectPageLayoutToggleAnchorBarEventParameters = ObjectPageLayout$ToggleAnchorBarEventParameters
 }

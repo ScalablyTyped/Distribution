@@ -8,12 +8,15 @@ trait `200Content570` extends StObject {
   
   /** @description Response */
   var `200`: Content570
+  
+  var `404`: Content41
 }
 object `200Content570` {
   
-  inline def apply(`200`: Content570): `200Content570` = {
+  inline def apply(`200`: Content570, `404`: Content41): `200Content570` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content570`]
   }
   
@@ -21,5 +24,7 @@ object `200Content570` {
   implicit open class MutableBuilder[Self <: `200Content570`] (val x: Self) extends AnyVal {
     
     inline def set200(value: Content570): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

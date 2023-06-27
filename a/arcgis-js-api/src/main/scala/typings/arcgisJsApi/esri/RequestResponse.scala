@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestResponse extends StObject {
   
   /**
-    * The requested data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * The requested data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var data: js.UndefOr[Any] = js.undefined
   
   /**
-    * Method for getting a header sent from the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * Method for getting a header sent from the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var getHeader: js.UndefOr[GetHeader] = js.undefined
   
   /**
-    * _Since 4.26_ The status code of the http response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * _Since 4.26_ The status code of the http response.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var httpStatus: js.UndefOr[Double] = js.undefined
   
   /**
-    * The options specified by the user in the data request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * The options specified by the user in the data request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   
   /**
-    * Indicates if the request required https.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * Indicates if the request required https.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The URL used to request the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
-    */
+  		 * The URL used to request the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object RequestResponse {

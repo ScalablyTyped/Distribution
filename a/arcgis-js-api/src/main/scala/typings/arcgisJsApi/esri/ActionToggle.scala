@@ -11,21 +11,21 @@ trait ActionToggle
      with ActionBase {
   
   /**
-    * Specifies the type of action.
-    *
-    * @default "toggle"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#type)
-    */
+  		 * Specifies the type of action.
+  		 *
+  		 * @default "toggle"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#type)
+  		 */
   @JSName("type")
   val type_ActionToggle: toggle = js.native
   
   /**
-    * Indicates the value of whether the action is toggled on/off.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
-    */
+  		 * Indicates the value of whether the action is toggled on/off.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
+  		 */
   var value: Boolean = js.native
 }

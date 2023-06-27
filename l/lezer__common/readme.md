@@ -1,7 +1,7 @@
 
 # Scala.js typings for lezer__common
 
-Typings are for version 1.0.1
+Typings are for version 1.0.3
 
 ## Library description:
 Syntax tree data structure and parser interfaces for the lezer parser

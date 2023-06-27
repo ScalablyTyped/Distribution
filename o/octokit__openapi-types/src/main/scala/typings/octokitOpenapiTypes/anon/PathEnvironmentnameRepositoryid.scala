@@ -8,12 +8,12 @@ trait PathEnvironmentnameRepositoryid extends StObject {
   
   var path: EnvironmentnameRepositoryid
   
-  var query: Page
+  var query: js.UndefOr[Page] = js.undefined
 }
 object PathEnvironmentnameRepositoryid {
   
-  inline def apply(path: EnvironmentnameRepositoryid, query: Page): PathEnvironmentnameRepositoryid = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: EnvironmentnameRepositoryid): PathEnvironmentnameRepositoryid = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathEnvironmentnameRepositoryid]
   }
   
@@ -23,5 +23,7 @@ object PathEnvironmentnameRepositoryid {
     inline def setPath(value: EnvironmentnameRepositoryid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Page): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

@@ -97,6 +97,21 @@ object declarationConstMod {
   @js.native
   val META: /* "meta" */ String = js.native
   
+  object MOUSE_BUTTON_CODE_MAP {
+    
+    @JSImport("@egjs/axes/declaration/const", "MOUSE_BUTTON_CODE_MAP.1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("@egjs/axes/declaration/const", "MOUSE_BUTTON_CODE_MAP.2")
+    @js.native
+    val `2`: String = js.native
+    
+    @JSImport("@egjs/axes/declaration/const", "MOUSE_BUTTON_CODE_MAP.3")
+    @js.native
+    val `3`: String = js.native
+  }
+  
   @JSImport("@egjs/axes/declaration/const", "MOUSE_LEFT")
   @js.native
   val MOUSE_LEFT: /* "left" */ String = js.native

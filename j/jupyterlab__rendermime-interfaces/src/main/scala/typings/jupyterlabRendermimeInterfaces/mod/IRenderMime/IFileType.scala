@@ -24,11 +24,11 @@ trait IFileType extends StObject {
   /**
     * The file format for the file type ('text', 'base64', or 'json').
     */
-  val fileFormat: js.UndefOr[String] = js.undefined
+  val fileFormat: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The icon for the file type. Can either be a string containing the name
-    * of an existing icon, or an object with {name, svgstr} fields, where
+    * of an existing icon, or an object with \{name, svgstr\} fields, where
     * svgstr is a string containing the raw contents of an svg file.
     */
   val icon: js.UndefOr[IResolvable] = js.undefined
@@ -77,6 +77,8 @@ object IFileType {
     inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFileFormat(value: String): Self = StObject.set(x, "fileFormat", value.asInstanceOf[js.Any])
+    
+    inline def setFileFormatNull: Self = StObject.set(x, "fileFormat", null)
     
     inline def setFileFormatUndefined: Self = StObject.set(x, "fileFormat", js.undefined)
     

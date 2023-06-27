@@ -174,7 +174,7 @@ object sapMInputListItemMod {
     def getLabel(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getLabelTextDirection labelTextDirection}.
       *
@@ -263,7 +263,7 @@ object sapMInputListItemMod {
     sLabel: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getLabelTextDirection labelTextDirection}.
       *
@@ -313,7 +313,7 @@ object sapMInputListItemMod {
     var label: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * This property specifies the label text directionality with enumerated options. By default, the label
       * inherits text direction from the DOM.

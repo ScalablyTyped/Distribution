@@ -213,7 +213,7 @@ object ToggleButton {
     var activeSuffixIcon: js.UndefOr[String] = js.undefined
     
     /** Sets the text when ToggleButton is in active state i.e.,checked state.
-      * @Default {null}
+      * @default {null}
       */
     var activeText: js.UndefOr[String] = js.undefined
     
@@ -226,7 +226,7 @@ object ToggleButton {
     var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentType of the ToggleButton. See ContentType as below
-      * @Default {ej.ContentType.TextOnly}
+      * @default {ej.ContentType.TextOnly}
       */
     var contentType: js.UndefOr[ContentType | String] = js.undefined
     
@@ -247,7 +247,7 @@ object ToggleButton {
     var defaultSuffixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the text of the ToggleButton, when the control is a default state. i.e., unChecked state.
-      * @Default {null}
+      * @default {null}
       */
     var defaultText: js.UndefOr[String] = js.undefined
     
@@ -257,62 +257,62 @@ object ToggleButton {
     
     /** Save current model value to browser cookies for maintaining states. When refreshing the ToggleButton control page, the model value is applied from browser cookies or HTML 5local
       * storage.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the Right to Left direction of the ToggleButton.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the state of the ToggleButton.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the ToggleButton.
-      * @Default {28pixel}
+      * @default {28pixel}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** It allows to define the characteristics of the ToggleButton control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the image position of the ToggleButton.
-      * @Default {ej.ImagePosition.ImageLeft}
+      * @default {ej.ImagePosition.ImageLeft}
       */
     var imagePosition: js.UndefOr[ImagePosition | String] = js.undefined
     
     /** Allows to prevents the control switched to checked (active) state.
-      * @Default {false}
+      * @default {false}
       */
     var preventToggle: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the ToggleButton with rounded corners.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the ToggleButton. See ButtonSize as below
-      * @Default {ej.ButtonSize.Normal}
+      * @default {ej.ButtonSize.Normal}
       */
     var size: js.UndefOr[ButtonSize | String] = js.undefined
     
     /** It allows to define the ToggleButton state to checked(Active) or unchecked(Default) at initial time.
-      * @Default {false}
+      * @default {false}
       */
     var toggleState: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of the ToggleButton. See ButtonType as below
-      * @Default {ej.ButtonType.Button}
+      * @default {ej.ButtonType.Button}
       */
     var `type`: js.UndefOr[ButtonType | String] = js.undefined
     
     /** Specifies the width of the ToggleButton.
-      * @Default {100pixel}
+      * @default {100pixel}
       */
     var width: js.UndefOr[Double | String] = js.undefined
   }

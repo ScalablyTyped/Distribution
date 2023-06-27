@@ -10,66 +10,66 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TraceConfiguration extends StObject {
   
   /**
-    * An array of objects representing network attribute or category conditions that serve as barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#conditionBarriers)
-    */
+  		 * An array of objects representing network attribute or category conditions that serve as barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#conditionBarriers)
+  		 */
   var conditionBarriers: js.Array[Any]
   
   /**
-    * An array of objects representing function barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#functionBarriers)
-    */
+  		 * An array of objects representing function barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#functionBarriers)
+  		 */
   var functionBarriers: js.Array[Any]
   
   /**
-    * An array of objects representing function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#functions)
-    */
+  		 * An array of objects representing function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#functions)
+  		 */
   var functions: js.Array[Any]
   
   /**
-    * Do not stop the trace if the starting point is a barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#ignoreBarriersAtStartingPoints)
-    */
+  		 * Do not stop the trace if the starting point is a barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#ignoreBarriersAtStartingPoints)
+  		 */
   var ignoreBarriersAtStartingPoints: Boolean
   
   /**
-    * Specifies whether the traversability barrier features will be included in the trace results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#includeBarriers)
-    */
+  		 * Specifies whether the traversability barrier features will be included in the trace results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#includeBarriers)
+  		 */
   var includeBarriers: Boolean
   
   /**
-    * Specifies the type of features returned based on a network attribute or check for a category string.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#outputConditions)
-    */
+  		 * Specifies the type of features returned based on a network attribute or check for a category string.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#outputConditions)
+  		 */
   var outputConditions: js.Array[Any]
   
   /**
-    * Specifies the network attribute name used for determining the shortest path.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#shortestPathNetworkAttributeName)
-    */
+  		 * Specifies the network attribute name used for determining the shortest path.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#shortestPathNetworkAttributeName)
+  		 */
   var shortestPathNetworkAttributeName: String
   
   /**
-    * Determines whether traversability is applied to both junctions and edges, junctions only, or edges only.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#traversabilityScope)
-    */
+  		 * Determines whether traversability is applied to both junctions and edges, junctions only, or edges only.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#traversabilityScope)
+  		 */
   var traversabilityScope: junctions | edges | junctionsAndEdges
   
   /**
-    * Specifies whether an error will be returned if dirty areas are encountered in any of the traversed features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#validateConsistency)
-    */
+  		 * Specifies whether an error will be returned if dirty areas are encountered in any of the traversed features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TraceConfiguration.html#validateConsistency)
+  		 */
   var validateConsistency: Boolean
 }
 object TraceConfiguration {

@@ -9,32 +9,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VirtualLightingProperties extends StObject {
   
   /**
-    * Indicates whether to show ambient occlusion shading.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-VirtualLighting.html#ambientOcclusionEnabled)
-    */
+  		 * Indicates whether to show ambient occlusion shading.
+  		 *
+  		 * @default false
+  		 * @deprecated since version 4.27. Ambient occlusion is automatically shown and this property has no effect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-VirtualLighting.html#ambientOcclusionEnabled)
+  		 */
   var ambientOcclusionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to show shadows cast by the light source.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the light source.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   var `type`: virtual
   
   /**
-    * Indicates whether [WaterSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html) display reflections of surrounding terrain, buildings and other 3D objects.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-VirtualLighting.html#waterReflectionEnabled)
-    */
+  		 * Indicates whether [WaterSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html) display reflections of surrounding terrain, buildings and other 3D objects.
+  		 *
+  		 * @default false
+  		 * @deprecated since version 4.27. Reflections are automatically shown and this property has no effect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-VirtualLighting.html#waterReflectionEnabled)
+  		 */
   var waterReflectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object VirtualLightingProperties {

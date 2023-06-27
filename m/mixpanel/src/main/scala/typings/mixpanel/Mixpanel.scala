@@ -5,6 +5,7 @@ import typings.mixpanel.Mixpanel.Config
 import typings.mixpanel.Mixpanel.EventBaseType
 import typings.mixpanel.Mixpanel.People
 import typings.mixpanel.Mixpanel.Query
+import typings.mixpanel.anon.Persistent
 import typings.mixpanel.mixpanelStrings.cookie
 import typings.mixpanel.mixpanelStrings.localStorage
 import typings.std.Element
@@ -175,10 +176,11 @@ trait Mixpanel extends StObject {
     *     });
     *
     * @param properties An associative array of properties to store about the user
-    * @param days How many days since the user's last visit to store the super properties
+    * @param daysOrOptions How many days since the user's last visit to store the super properties or the options object which controls persistence
     */
   def register(properties: StringDictionary[Any]): Unit = js.native
-  def register(properties: StringDictionary[Any], days: Double): Unit = js.native
+  def register(properties: StringDictionary[Any], daysOrOptions: Double): Unit = js.native
+  def register(properties: StringDictionary[Any], daysOrOptions: Persistent): Unit = js.native
   
   /**
     * Register a set of super properties only once. This will not
@@ -198,12 +200,14 @@ trait Mixpanel extends StObject {
     *
     * @param properties An associative array of properties to store about the user
     * @param defaultValue Value to override if already set in super properties (ex: 'False') Default: 'None'
-    * @param days How many days since the users last visit to store the super properties
+    * @param daysOrOptions How many days since the users last visit to store the super properties or the options object which controls persistence
     */
   def register_once(properties: StringDictionary[Any]): Unit = js.native
   def register_once(properties: StringDictionary[Any], defaultValue: String): Unit = js.native
-  def register_once(properties: StringDictionary[Any], defaultValue: String, days: Double): Unit = js.native
-  def register_once(properties: StringDictionary[Any], defaultValue: Unit, days: Double): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: String, daysOrOptions: Double): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: String, daysOrOptions: Persistent): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: Unit, daysOrOptions: Double): Unit = js.native
+  def register_once(properties: StringDictionary[Any], defaultValue: Unit, daysOrOptions: Persistent): Unit = js.native
   
   /**
     * Clears super properties and generates a new random `distinct_id` for this instance.
@@ -351,8 +355,10 @@ trait Mixpanel extends StObject {
     * Delete a super property stored with the current user.
     *
     * @param propertyName The name of the super property to remove
+    * @param options The options object which controls persistence
     */
   def unregister(propertyName: String): Unit = js.native
+  def unregister(propertyName: String, options: Persistent): Unit = js.native
 }
 object Mixpanel {
   

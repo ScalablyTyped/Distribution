@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.TimePicker")
 @js.native
 /**
-  * The `TimePicker` class provides functionality to easily choose an input date.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html)
-  */
+		 * The `TimePicker` class provides functionality to easily choose an input date.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html)
+		 */
 open class TimePicker ()
   extends StObject
      with typings.arcgisJsApi.esri.TimePicker {

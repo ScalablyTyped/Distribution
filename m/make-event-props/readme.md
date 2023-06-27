@@ -1,7 +1,7 @@
 
 # Scala.js typings for make-event-props
 
-Typings are for version 1.5.0
+Typings are for version 1.6.1
 
 ## Library description:
 Returns an object with on-event callback props curried with provided args.

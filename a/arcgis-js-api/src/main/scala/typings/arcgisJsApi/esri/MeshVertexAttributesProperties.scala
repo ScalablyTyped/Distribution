@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshVertexAttributesProperties extends StObject {
   
   /**
-    * **Since: 4.9**  A flat array of the vertex colors (4 elements per vertex ranging from 0 to 255).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
-    */
+  		 * **Since: 4.9**	 A flat array of the vertex colors (4 elements per vertex ranging from 0 to 255).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+  		 */
   var color: js.UndefOr[js.typedarray.Uint8Array | js.Array[Double] | js.typedarray.Uint8ClampedArray] = js.undefined
   
   /**
-    * A flat array of the vertex normals (3 elements per vertex ranging from -1 to 1).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
-    */
+  		 * A flat array of the vertex normals (3 elements per vertex ranging from -1 to 1).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+  		 */
   var normal: js.UndefOr[js.typedarray.Float32Array | js.Array[Double] | js.typedarray.Float64Array] = js.undefined
   
   /**
-    * A flat array of vertex positions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
-    */
+  		 * A flat array of vertex positions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+  		 */
   var position: js.UndefOr[js.typedarray.Float64Array | js.Array[Double] | js.typedarray.Float32Array] = js.undefined
   
   /**
-    * **Since: 4.11**  A flat array of the vertex tangents (4 elements per vertex ranging from -1 to 1.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
-    */
+  		 * **Since: 4.11**	A flat array of the vertex tangents (4 elements per vertex ranging from -1 to 1.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+  		 */
   var tangent: js.UndefOr[js.typedarray.Float32Array | js.Array[Double] | js.typedarray.Float64Array] = js.undefined
   
   /**
-    * A flat array of vertex uv coordinates (2 elements per vertex).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
-    */
+  		 * A flat array of vertex uv coordinates (2 elements per vertex).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributes)
+  		 */
   var uv: js.UndefOr[js.typedarray.Float32Array | js.Array[Double] | js.typedarray.Float64Array] = js.undefined
 }
 object MeshVertexAttributesProperties {

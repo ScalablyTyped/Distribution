@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HistogramRangeSliderDataLines extends StObject {
   
   /**
-    * The label associated with the line.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label associated with the line.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * The value on the data axis of the histogram where a line will be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLines)
-    */
+  		 * The value on the data axis of the histogram where a line will be rendered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLines)
+  		 */
   var value: Double
 }
 object HistogramRangeSliderDataLines {

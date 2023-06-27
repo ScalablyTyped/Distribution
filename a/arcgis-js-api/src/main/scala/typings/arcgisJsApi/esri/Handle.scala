@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Handle extends StObject {
   
   /**
-    * Removes the handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Handles.html#Handle)
-    */
+  		 * Removes the handle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Handles.html#Handle)
+  		 */
   def remove(): scala.Unit
 }
 object Handle {

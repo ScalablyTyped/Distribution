@@ -3,6 +3,7 @@ package typings.openui5
 import typings.openui5.anon.RootView
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreComponentMod.ComponentSettings
+import typings.openui5.sapUiCoreRoutingRouteMod.RouteSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -126,7 +127,7 @@ object sapUiCoreUicomponentMod {
     oControllerOrView: typings.openui5.sapUiCoreMvcControllerMod.default
     ): typings.openui5.sapUiCoreRoutingRouterMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouterFor")(oControllerOrView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sapUiCoreRoutingRouterMod.default]
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Returns the reference to the router instance.
       *
@@ -159,22 +160,16 @@ object sapUiCoreUicomponentMod {
   trait RoutingMetadata extends StObject {
     
     /**
-      * Since 1.16. An object containing default values used for routes and targets. See {@link sap.ui.core.routing.Router#constructor}
+      * Since 1.16. An object containing default values used for routes and targets. See {@link sap.ui.core.routing.Router#constructor }
       * and {@link sap.ui.core.routing.Targets} for more documentation.
       */
     var config: js.UndefOr[RootView] = js.undefined
     
     /**
-      * An object containing the routes that should be added to the router. See {@link sap.ui.core.routing.Route}
+      * An array containing the routes that should be added to the router. See {@link sap.ui.core.routing.Route }
       * for the allowed properties.
       */
-    var routes: js.UndefOr[js.Object] = js.undefined
-    
-    /**
-      * Since 1.28.1. An object containing the targets that will be available for the router and the `Targets`
-      * instance. See {@link sap.ui.core.routing.Targets} for the allowed values.
-      */
-    var targets: js.UndefOr[js.Object] = js.undefined
+    var routes: js.UndefOr[js.Array[RouteSettings] | (Record[String, RouteSettings])] = js.undefined
   }
   object RoutingMetadata {
     
@@ -190,13 +185,11 @@ object sapUiCoreUicomponentMod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      inline def setRoutes(value: js.Object): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[RouteSettings] | (Record[String, RouteSettings])): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setTargets(value: js.Object): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
-      
-      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setRoutesVarargs(value: RouteSettings*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
   
@@ -229,9 +222,9 @@ object sapUiCoreUicomponentMod {
       * are not limited to views as return type but may return any control, but only a single control (can be
       * the root of a larger control tree, however).
       *
-      * A `sap.ui.core.UIComponent` subclass can additionally implement the {@link sap.ui.core.IAsyncContentCreation}
+      * A `sap.ui.core.UIComponent` subclass can additionally implement the {@link sap.ui.core.IAsyncContentCreation }
       * interface. When implementing this interface the loading and processing of an asynchronous `rootView`
-      * will be chained into the result Promise of the {@link sap.ui.core.Component.create Component.create}
+      * will be chained into the result Promise of the {@link sap.ui.core.Component.create Component.create }
       * factory. An additional async flag can be omitted. See Sample 1 below.
       *
       * Samples 2 and 3 show how subclasses can overwrite the `createContent` function to run asynchronously.
@@ -255,11 +248,11 @@ object sapUiCoreUicomponentMod {
     sId: String): String = js.native
     
     /**
-      * @SINCE 1.15.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.15.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * A method to be implemented by UIComponents, returning the flag whether to prefix the IDs of controls
-      * automatically or not if the controls are created inside the {@link sap.ui.core.UIComponent#createContent}
+      * automatically or not if the controls are created inside the {@link sap.ui.core.UIComponent#createContent }
       * function. By default this feature is not activated.
       *
       * You can overwrite this function and return `true` to activate the automatic prefixing. In addition the
@@ -270,7 +263,7 @@ object sapUiCoreUicomponentMod {
     def getAutoPrefixId(): Boolean = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns the local ID of an element by removing the component ID prefix or `null` if the ID does not contain
       * a prefix.
@@ -283,8 +276,8 @@ object sapUiCoreUicomponentMod {
     sId: String): String | Null = js.native
     
     /**
-      * @SINCE 1.44.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.44.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the content of {@link sap.ui.core.UIComponent#createContent}. If you specified a `rootView` in
       * your metadata or in the descriptor file (manifest.json), you will get the instance of the root view.
@@ -311,7 +304,7 @@ object sapUiCoreUicomponentMod {
     def getRootControl(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Returns the reference to the router instance which has been created by the UIComponent once the routes
       * in the routing metadata has been defined.
@@ -321,7 +314,7 @@ object sapUiCoreUicomponentMod {
     def getRouter(): typings.openui5.sapUiCoreRoutingRouterMod.default = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Returns the reference to the Targets instance which has been created by the UIComponent once the targets
       * in the routing metadata has been defined. If routes have been defined, it will be the Targets instance
@@ -339,7 +332,7 @@ object sapUiCoreUicomponentMod {
     def getUIArea(): typings.openui5.sapUiCoreUiareaMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function is called when the rendering of the ComponentContainer is completed.
       *
@@ -350,7 +343,7 @@ object sapUiCoreUicomponentMod {
     def onAfterRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function is called when the rendering of the ComponentContainer is started.
       *
@@ -371,17 +364,17 @@ object sapUiCoreUicomponentMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.90.0
+      * @since 1.90.0
       *
       * Returns a Promise representing the loading state of the root control.
       *
       * For UIComponents implementing the {@link sap.ui.core.IAsyncContentCreation} interface, there are two
       * possible cases:
       * 	 -  The `UIComponent` overwrites the {@link sap.ui.core.UIComponent#createContent} function and returns
-      * 			a Promise. The `rootControlLoaded` function will then return the same Promise.
+      *     a Promise. The `rootControlLoaded` function will then return the same Promise.
       * 	 -  The `UIComponent` defines a root view via its manifest. The root view is then automatically created
-      * 			asynchronously, and the `rootControlLoaded` function returns a Promise which resolves with the fully
-      * 			loaded and processed root view instance.
+      *     asynchronously, and the `rootControlLoaded` function returns a Promise which resolves with the fully
+      *     loaded and processed root view instance.
       *
       * For synchronous root control creation the Promise resolves immediately with the root control instance
       * or null if none was created.

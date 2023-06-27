@@ -857,7 +857,7 @@ object Dialog {
     var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the content to the Dialog control.
-      * @Default {null}
+      * @default {null}
       */
     var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.Dialog.AjaxSettings] = js.undefined
     
@@ -988,7 +988,7 @@ object Dialog {
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the Dialog.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     

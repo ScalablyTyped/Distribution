@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandleValidation extends StObject {
   
   /**
-    * List of active terminologies. The order of the given active terminologies is significant. The {@link
-    * module:sap/base/i18n/ResourceBundle ResourceBundle} API documentation describes the processing behavior
-    * in more detail. Please also have a look at this dev-guide chapter for general usage instructions: {@link
-    * topic:eba8d25a31ef416ead876e091e67824e Text Verticalization}.
+    * List of active terminologies. The order of the given active terminologies is significant. The {@link module:sap/base/i18n/ResourceBundle ResourceBundle }
+    * API documentation describes the processing behavior in more detail. Please also have a look at this dev-guide
+    * chapter for general usage instructions: {@link https://ui5.sap.com/#/topic/eba8d25a31ef416ead876e091e67824e Text Verticalization}.
     */
   var activeTerminologies: js.UndefOr[js.Array[String]] = js.undefined
   

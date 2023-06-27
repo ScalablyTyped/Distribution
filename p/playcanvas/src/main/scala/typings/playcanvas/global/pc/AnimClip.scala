@@ -41,3 +41,28 @@ open class AnimClip protected ()
     eventHandler: typings.playcanvas.mod.EventHandler
   ) = this()
 }
+object AnimClip {
+  
+  /* static member */
+  object eventFrame {
+    
+    @JSGlobal("pc.AnimClip.eventFrame")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("pc.AnimClip.eventFrame.end")
+    @js.native
+    def end: Double = js.native
+    inline def end_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("end")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("pc.AnimClip.eventFrame.residual")
+    @js.native
+    def residual: Double = js.native
+    inline def residual_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("residual")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("pc.AnimClip.eventFrame.start")
+    @js.native
+    def start: Double = js.native
+    inline def start_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
+  }
+}

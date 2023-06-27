@@ -18,28 +18,28 @@ object esriWidgetsFeatureTableGridGroupColumnMod {
     def this(properties: GroupColumnProperties) = this()
     
     /**
-      * Returns any associated menu items on the column.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#getMenuItems)
-      */
+    		 * Returns any associated menu items on the column.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#getMenuItems)
+    		 */
     /* CompleteClass */
     override def getMenuItems(): ButtonMenuItemConfig = js.native
     
     /**
-      * The object to customize the feature table column's menu content.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#menu)
-      */
+    		 * The object to customize the feature table column's menu content.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#menu)
+    		 */
     /* CompleteClass */
     override val menu: ButtonMenu = js.native
     
     /**
-      * Indicates whether the column is resizable.
-      *
-      * @default true
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
-      */
+    		 * Indicates whether the column is resizable.
+    		 *
+    		 * @default true
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
+    		 */
     /* CompleteClass */
     override val resizable: Boolean = js.native
   }

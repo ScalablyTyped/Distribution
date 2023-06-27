@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeatmapRendererLegendOptions extends StObject {
   
   /**
-    * The label used to describe max density areas in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
-    */
+  		 * The label used to describe max density areas in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
+  		 */
   var maxLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * The label used to describe low density areas in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
-    */
+  		 * The label used to describe low density areas in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
+  		 */
   var minLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Describes the variable driving the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
-    */
+  		 * Describes the variable driving the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object HeatmapRendererLegendOptions {

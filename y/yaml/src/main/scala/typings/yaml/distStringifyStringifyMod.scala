@@ -6,6 +6,7 @@ import typings.yaml.distDocDocumentMod.Document
 import typings.yaml.distNodesAliasMod.Alias
 import typings.yaml.distNodesNodeMod.Node
 import typings.yaml.distOptionsMod.ToStringOptions
+import typings.yaml.yamlBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object distStringifyStringifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStringifyContext(doc: Document[Node[Any]], options: ToStringOptions): StringifyContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringifyContext")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringifyContext]
+  inline def createStringifyContext_true(doc: Document[Node[Any], `true`], options: ToStringOptions): StringifyContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createStringifyContext")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringifyContext]
   
   inline def stringify(item: Any, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(item: Any, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -31,7 +32,7 @@ object distStringifyStringifyMod {
     
     var anchors: Set[String]
     
-    var doc: Document[Node[Any]]
+    var doc: Document[Node[Any], `true`]
     
     var flowCollectionPadding: String
     
@@ -57,7 +58,7 @@ object distStringifyStringifyMod {
     
     inline def apply(
       anchors: Set[String],
-      doc: Document[Node[Any]],
+      doc: Document[Node[Any], `true`],
       flowCollectionPadding: String,
       indent: String,
       indentStep: String,
@@ -80,7 +81,7 @@ object distStringifyStringifyMod {
       
       inline def setAnchors(value: Set[String]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
-      inline def setDoc(value: Document[Node[Any]]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: Document[Node[Any], `true`]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
       inline def setFlowCollectionPadding(value: String): Self = StObject.set(x, "flowCollectionPadding", value.asInstanceOf[js.Any])
       

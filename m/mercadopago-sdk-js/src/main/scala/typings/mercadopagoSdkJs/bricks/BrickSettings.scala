@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrickSettings extends StObject {
+trait BrickSettings[BrickType] extends StObject {
   
   // For a more detailed view of each Brick`s supported settings, please check the documentation at: https://github.com/mercadopago/sdk-js/blob/main/API/bricks/index.md
-  var callbacks: js.UndefOr[BrickCallbacks] = js.undefined
+  var callbacks: /* import warning: importer.ImportType#apply Failed type conversion: BrickType extends 'wallet' ? mercadopago-sdk-js.bricks.WalletBrickCallbacks<BrickType> : BrickType extends 'cardPayment' ? mercadopago-sdk-js.bricks.CardPaymentBrickCallbacks<BrickType> : BrickType extends 'payment' ? mercadopago-sdk-js.bricks.PaymentBrickCallbacks<BrickType> : mercadopago-sdk-js.bricks.BrickCallbacks */ js.Any
   
   var customization: js.UndefOr[BrickCustomization] = js.undefined
   
@@ -15,17 +15,19 @@ trait BrickSettings extends StObject {
 }
 object BrickSettings {
   
-  inline def apply(): BrickSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[BrickSettings]
+  inline def apply[BrickType](
+    callbacks: /* import warning: importer.ImportType#apply Failed type conversion: BrickType extends 'wallet' ? mercadopago-sdk-js.bricks.WalletBrickCallbacks<BrickType> : BrickType extends 'cardPayment' ? mercadopago-sdk-js.bricks.CardPaymentBrickCallbacks<BrickType> : BrickType extends 'payment' ? mercadopago-sdk-js.bricks.PaymentBrickCallbacks<BrickType> : mercadopago-sdk-js.bricks.BrickCallbacks */ js.Any
+  ): BrickSettings[BrickType] = {
+    val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrickSettings[BrickType]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: BrickSettings] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: BrickSettings[?], BrickType] (val x: Self & BrickSettings[BrickType]) extends AnyVal {
     
-    inline def setCallbacks(value: BrickCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
-    
-    inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+    inline def setCallbacks(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: BrickType extends 'wallet' ? mercadopago-sdk-js.bricks.WalletBrickCallbacks<BrickType> : BrickType extends 'cardPayment' ? mercadopago-sdk-js.bricks.CardPaymentBrickCallbacks<BrickType> : BrickType extends 'payment' ? mercadopago-sdk-js.bricks.PaymentBrickCallbacks<BrickType> : mercadopago-sdk-js.bricks.BrickCallbacks */ js.Any
+    ): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     inline def setCustomization(value: BrickCustomization): Self = StObject.set(x, "customization", value.asInstanceOf[js.Any])
     

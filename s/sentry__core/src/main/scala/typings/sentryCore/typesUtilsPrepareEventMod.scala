@@ -17,7 +17,9 @@ object typesUtilsPrepareEventMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyDebugMetadata(event: Event, stackParser: StackParser): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDebugMetadata")(event.asInstanceOf[js.Any], stackParser.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyDebugIds(event: Event, stackParser: StackParser): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDebugIds")(event.asInstanceOf[js.Any], stackParser.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def applyDebugMeta(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyDebugMeta")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def prepareEvent(options: ClientOptions[BaseTransportOptions], event: Event, hint: EventHint): PromiseLike[Event | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEvent")(options.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event | Null]]
   inline def prepareEvent(options: ClientOptions[BaseTransportOptions], event: Event, hint: EventHint, scope: Scope): PromiseLike[Event | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareEvent")(options.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event | Null]]

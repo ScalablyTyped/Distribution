@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIAccess)
+  */
 @js.native
 trait MIDIAccess
   extends StObject
@@ -27,12 +31,15 @@ trait MIDIAccess
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIAccess/inputs) */
   /* standard dom */
   val inputs: MIDIInputMap = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIAccess/statechange_event) */
   /* standard dom */
   var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIAccess/outputs) */
   /* standard dom */
   val outputs: MIDIOutputMap = js.native
   
@@ -52,6 +59,7 @@ trait MIDIAccess
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIAccess/sysexEnabled) */
   /* standard dom */
   val sysexEnabled: scala.Boolean = js.native
 }

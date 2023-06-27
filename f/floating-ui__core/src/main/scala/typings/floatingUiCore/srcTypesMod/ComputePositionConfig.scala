@@ -7,12 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComputePositionConfig extends StObject {
   
+  /**
+    * Array of middleware objects to modify the positioning or provide data for
+    * rendering.
+    */
   var middleware: js.UndefOr[js.Array[js.UndefOr[Middleware | Null | `false`]]] = js.undefined
   
+  /**
+    * Where to place the floating element relative to the reference element.
+    */
   var placement: js.UndefOr[Placement] = js.undefined
   
+  /**
+    * Object to interface with the current platform.
+    */
   var platform: Platform
   
+  /**
+    * The strategy to use when positioning the floating element.
+    */
   var strategy: js.UndefOr[Strategy] = js.undefined
 }
 object ComputePositionConfig {

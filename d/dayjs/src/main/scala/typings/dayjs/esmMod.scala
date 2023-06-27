@@ -250,6 +250,10 @@ object esmMod {
       *
       * Docs: https://day.js.org/docs/en/query/is-after
       */
+    def isAfter(): Boolean = js.native
+    def isAfter(date: Unit, unit: OpUnitType): Boolean = js.native
+    def isAfter(date: Unit, unit: QUnitType): Boolean = js.native
+    def isAfter(date: Unit, unit: ISOUnitType): Boolean = js.native
     def isAfter(date: ConfigType): Boolean = js.native
     def isAfter(date: ConfigType, unit: OpUnitType): Boolean = js.native
     def isAfter(date: ConfigType, unit: QUnitType): Boolean = js.native
@@ -268,6 +272,10 @@ object esmMod {
       *
       * Docs: https://day.js.org/docs/en/query/is-before
       */
+    def isBefore(): Boolean = js.native
+    def isBefore(date: Unit, unit: OpUnitType): Boolean = js.native
+    def isBefore(date: Unit, unit: QUnitType): Boolean = js.native
+    def isBefore(date: Unit, unit: ISOUnitType): Boolean = js.native
     def isBefore(date: ConfigType): Boolean = js.native
     def isBefore(date: ConfigType, unit: OpUnitType): Boolean = js.native
     def isBefore(date: ConfigType, unit: QUnitType): Boolean = js.native
@@ -292,14 +300,22 @@ object esmMod {
       * ```
       * Docs: https://day.js.org/docs/en/query/is-same
       */
+    def isSame(): Boolean = js.native
+    def isSame(date: Unit, unit: OpUnitType): Boolean = js.native
+    def isSame(date: Unit, unit: QUnitType): Boolean = js.native
+    def isSame(date: Unit, unit: ISOUnitType): Boolean = js.native
     def isSame(date: ConfigType): Boolean = js.native
     def isSame(date: ConfigType, unit: OpUnitType): Boolean = js.native
     def isSame(date: ConfigType, unit: QUnitType): Boolean = js.native
     def isSame(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
+    def isSameOrAfter(): Boolean = js.native
+    def isSameOrAfter(date: Unit, unit: OpUnitType): Boolean = js.native
     def isSameOrAfter(date: ConfigType): Boolean = js.native
     def isSameOrAfter(date: ConfigType, unit: OpUnitType): Boolean = js.native
     
+    def isSameOrBefore(): Boolean = js.native
+    def isSameOrBefore(date: Unit, unit: OpUnitType): Boolean = js.native
     def isSameOrBefore(date: ConfigType): Boolean = js.native
     def isSameOrBefore(date: ConfigType, unit: OpUnitType): Boolean = js.native
     
@@ -743,6 +759,8 @@ object esmMod {
   @js.native
   trait DayjsTimezone extends StObject {
     
+    def apply(): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def apply(date: Unit, timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def apply(date: ConfigType): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def apply(date: ConfigType, format: String, timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def apply(date: ConfigType, timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native

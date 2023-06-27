@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneFilterProperties extends StObject {
   
   /**
-    * The geometries to apply to the spatial filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#geometries)
-    */
+  		 * The geometries to apply to the spatial filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#geometries)
+  		 */
   var geometries: js.UndefOr[CollectionProperties[Any]] = js.undefined
   
   /**
-    * The type of masking to perform.
-    *
-    * @default "disjoint"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#spatialRelationship)
-    */
+  		 * The type of masking to perform.
+  		 *
+  		 * @default "disjoint"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html#spatialRelationship)
+  		 */
   var spatialRelationship: js.UndefOr[disjoint | contains] = js.undefined
 }
 object SceneFilterProperties {

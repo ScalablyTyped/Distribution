@@ -8,11 +8,11 @@ trait ParametersPathRequiredworkflowid extends StObject {
   
   var parameters: PathRequiredworkflowid
   
-  var responses: `200Content60`
+  var responses: `200Content68`
 }
 object ParametersPathRequiredworkflowid {
   
-  inline def apply(parameters: PathRequiredworkflowid, responses: `200Content60`): ParametersPathRequiredworkflowid = {
+  inline def apply(parameters: PathRequiredworkflowid, responses: `200Content68`): ParametersPathRequiredworkflowid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRequiredworkflowid]
   }
@@ -22,6 +22,6 @@ object ParametersPathRequiredworkflowid {
     
     inline def setParameters(value: PathRequiredworkflowid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content60`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content68`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

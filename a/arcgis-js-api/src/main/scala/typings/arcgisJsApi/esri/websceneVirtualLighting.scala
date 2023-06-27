@@ -11,18 +11,18 @@ trait websceneVirtualLighting
      with Accessor {
   
   /**
-    * Indicates whether to show shadows cast by the light source.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the light source.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: Boolean = js.native
   
   /**
-    * Indicates that the light source is virtual light.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#type)
-    */
+  		 * Indicates that the light source is virtual light.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-VirtualLighting.html#type)
+  		 */
   val `type`: virtual = js.native
 }

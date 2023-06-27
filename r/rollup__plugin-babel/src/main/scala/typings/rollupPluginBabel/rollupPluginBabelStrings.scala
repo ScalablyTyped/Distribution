@@ -1163,6 +1163,10 @@ object rollupPluginBabelStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait `await using` extends StObject
+  inline def `await using`: `await using` = ("await using").asInstanceOf[`await using`]
+  
+  @js.native
   sealed trait boolean extends StObject
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   

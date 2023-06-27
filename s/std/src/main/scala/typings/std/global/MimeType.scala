@@ -15,6 +15,8 @@ open class MimeType ()
   /**
     * Returns the MIME type's description.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/description)
     */
   /* standard dom */
   /* CompleteClass */
@@ -23,6 +25,8 @@ open class MimeType ()
   /**
     * Returns the Plugin object that implements this MIME type.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/enabledPlugin)
     */
   /* standard dom */
   /* CompleteClass */
@@ -31,6 +35,8 @@ open class MimeType ()
   /**
     * Returns the MIME type's typical file extensions, in a comma-separated list.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/suffixes)
     */
   /* standard dom */
   /* CompleteClass */
@@ -39,6 +45,8 @@ open class MimeType ()
   /**
     * Returns the MIME type.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/type)
     */
   /* standard dom */
   /* CompleteClass */

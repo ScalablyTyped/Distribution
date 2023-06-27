@@ -35,7 +35,7 @@ trait CommentCollectionLoadOptions extends StObject {
   var authorName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the comment's content as plain text.
+    * For EACH ITEM in the collection: Specifies the comment's content as plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -43,7 +43,7 @@ trait CommentCollectionLoadOptions extends StObject {
   var content: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the comment's content range.
+    * For EACH ITEM in the collection: Specifies the comment's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -67,7 +67,7 @@ trait CommentCollectionLoadOptions extends StObject {
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
+    * For EACH ITEM in the collection: Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
     * [Api set: WordApi 1.4]

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectedIndex
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -190,13 +189,13 @@ object sapMRadioButtonGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RadioButtonGroup` itself
       */
@@ -221,7 +220,7 @@ object sapMRadioButtonGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -232,7 +231,7 @@ object sapMRadioButtonGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.RadioButtonGroup` itself
       */
@@ -270,13 +269,13 @@ object sapMRadioButtonGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RadioButtonGroupSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -284,27 +283,27 @@ object sapMRadioButtonGroupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedIndex): this.type = js.native
+    mParameters: RadioButtonGroup$SelectEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -370,7 +369,7 @@ object sapMRadioButtonGroupMod {
     def getSelectedIndex(): int = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -575,7 +574,7 @@ object sapMRadioButtonGroupMod {
     iSelectedIndex: Double): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -654,6 +653,33 @@ object sapMRadioButtonGroupMod {
     def updateButtons(): Unit = js.native
   }
   
+  trait RadioButtonGroup$SelectEventParameters extends StObject {
+    
+    /**
+      * Index of the selected RadioButton.
+      */
+    var selectedIndex: js.UndefOr[int] = js.undefined
+  }
+  object RadioButtonGroup$SelectEventParameters {
+    
+    inline def apply(): RadioButtonGroup$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RadioButtonGroup$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonGroup$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedIndex(value: int): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    }
+  }
+  
+  type RadioButtonGroupSelectEvent = typings.openui5.sapUiBaseEventMod.default[RadioButtonGroup$SelectEventParameters]
+  
+  type RadioButtonGroupSelectEventParameters = RadioButtonGroup$SelectEventParameters
+  
   trait RadioButtonGroupSettings
     extends StObject
        with ControlSettings {
@@ -699,7 +725,12 @@ object sapMRadioButtonGroupMod {
     /**
       * Fires when selection is changed by user interaction.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RadioButtonGroup$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the index of the selected/checked RadioButton. Default is 0. If no radio button is selected,
@@ -708,7 +739,7 @@ object sapMRadioButtonGroupMod {
     var selectedIndex: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * This property specifies the element's text directionality with enumerated options. By default, the control
       * inherits text direction from the DOM.
@@ -776,7 +807,9 @@ object sapMRadioButtonGroupMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RadioButtonGroup$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

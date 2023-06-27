@@ -11,10 +11,10 @@ trait ColumnNode
      with SQLNode {
   
   /**
-    * Column or field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#ColumnNode)
-    */
+  		 * Column or field name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#ColumnNode)
+  		 */
   var column: string_
   
   var `type`: `column-reference`

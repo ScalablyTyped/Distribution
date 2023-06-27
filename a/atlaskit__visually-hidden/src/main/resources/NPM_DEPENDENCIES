@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/visually-hidden" : "1.2.1"
+      "@atlaskit/visually-hidden" : "1.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/visually-hidden" : "1.2.1"
+      "@atlaskit/visually-hidden" : "1.2.3"
     }
   ],
   "compile-devDependencies" : [

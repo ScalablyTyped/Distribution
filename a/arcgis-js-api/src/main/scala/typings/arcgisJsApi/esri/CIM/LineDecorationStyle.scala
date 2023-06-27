@@ -11,48 +11,48 @@ sealed trait LineDecorationStyle extends StObject
 object LineDecorationStyle extends StObject {
   
   /**
-    * A circle is added at the end of the line.
-    */
+  			 * A circle is added at the end of the line.
+  			 */
   @js.native
   sealed trait Circle
     extends StObject
        with LineDecorationStyle
   
   /**
-    * A closed arrow is added to the end of the line.
-    */
+  			 * A closed arrow is added to the end of the line.
+  			 */
   @js.native
   sealed trait ClosedArrow
     extends StObject
        with LineDecorationStyle
   
   /**
-    * The decoration is defined in the Layers property as a set of SymbolReferences.
-    */
+  			 * The decoration is defined in the Layers property as a set of SymbolReferences.
+  			 */
   @js.native
   sealed trait Custom
     extends StObject
        with LineDecorationStyle
   
   /**
-    * A diamond is added at the end of the line.
-    */
+  			 * A diamond is added at the end of the line.
+  			 */
   @js.native
   sealed trait Diamond
     extends StObject
        with LineDecorationStyle
   
   /**
-    * No decoration.
-    */
+  			 * No decoration.
+  			 */
   @js.native
   sealed trait None
     extends StObject
        with LineDecorationStyle
   
   /**
-    * An open arrow is added to the end of the line.
-    */
+  			 * An open arrow is added to the end of the line.
+  			 */
   @js.native
   sealed trait OpenArrow
     extends StObject

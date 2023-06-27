@@ -10,45 +10,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JoinTableDataSource extends StObject {
   
   /**
-    * The type of join that will be performed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * The type of join that will be performed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var joinType: `left-outer-join` | `left-inner-join`
   
   /**
-    * The field name used for joining or matching records in the left table to records in the right table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * The field name used for joining or matching records in the left table to records in the right table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var leftTableKey: String
   
   /**
-    * The left table for joining to the right table source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * The left table for joining to the right table source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var leftTableSource: DynamicMapLayer | DynamicDataLayer
   
   /**
-    * The field name used for joining or matching records in the right table to records in the left table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * The field name used for joining or matching records in the right table to records in the left table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var rightTableKey: String
   
   /**
-    * The right table for joining to the left table source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * The right table for joining to the left table source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var rightTableSource: DynamicMapLayer | DynamicDataLayer
   
   /**
-    * This value is always `join-table` and is inferred when other join table properties of this object are set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
-    */
+  		 * This value is always `join-table` and is inferred when other join table properties of this object are set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
+  		 */
   var `type`: `join-table`
 }
 object JoinTableDataSource {

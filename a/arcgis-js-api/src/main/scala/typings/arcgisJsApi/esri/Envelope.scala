@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Envelope extends StObject {
   
   /**
-    * The maximum X value in the area of the envelope.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
-    */
+  		 * The maximum X value in the area of the envelope.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
+  		 */
   var xmax: Double
   
   /**
-    * The minimum X value in the area of the envelope.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
-    */
+  		 * The minimum X value in the area of the envelope.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
+  		 */
   var xmin: Double
   
   /**
-    * The maximum Y value in the area of the envelope.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
-    */
+  		 * The maximum Y value in the area of the envelope.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
+  		 */
   var ymax: Double
   
   /**
-    * The minimum Y value in the area of the envelope.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
-    */
+  		 * The minimum Y value in the area of the envelope.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#Envelope)
+  		 */
   var ymin: Double
 }
 object Envelope {

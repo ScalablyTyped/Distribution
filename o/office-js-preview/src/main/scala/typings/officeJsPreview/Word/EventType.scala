@@ -10,7 +10,7 @@ sealed trait EventType extends StObject
   * Provides information about the type of a raised event.
   *
   * @remarks
-  * [Api set: WordApi 1.3]
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.EventType")
 @js.native
@@ -74,8 +74,7 @@ object EventType extends StObject {
   /**
     * ContentControlAdded represents the event a content control has been added to the document.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlAdded
@@ -85,8 +84,7 @@ object EventType extends StObject {
   /**
     * ContentControlDataChanged represents the event that the data in the content control have been changed.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlDataChanged
@@ -96,8 +94,7 @@ object EventType extends StObject {
   /**
     * ContentControlDeleted represents the event that the content control has been deleted.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlDeleted
@@ -107,8 +104,7 @@ object EventType extends StObject {
   /**
     * Represents that a content control has been entered.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlEntered
@@ -118,8 +114,7 @@ object EventType extends StObject {
   /**
     * Represents that a content control has been exited.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlExited
@@ -129,8 +124,7 @@ object EventType extends StObject {
   /**
     * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait contentControlSelectionChanged

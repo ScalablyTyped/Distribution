@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DotDensitySchemes extends StObject {
   
   /**
-    * The ID of the basemap associated with the given schemes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
-    */
+  		 * The ID of the basemap associated with the given schemes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average basemap color is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
-    */
+  		 * Indicates whether the average basemap color is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
+  		 */
   var basemapTheme: String
   
   /**
-    * The dot density scheme best suited for the given basemap and geometry type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
-    */
+  		 * The dot density scheme best suited for the given basemap and geometry type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
+  		 */
   var primaryScheme: DotDensityScheme
   
   /**
-    * Additional dot density schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
-    */
+  		 * Additional dot density schemes that may be used to visualize data of the given geometry type overlaid on the given basemap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#DotDensitySchemes)
+  		 */
   var secondarySchemes: js.Array[DotDensityScheme]
 }
 object DotDensitySchemes {

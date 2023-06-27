@@ -7,18 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The CryptoKey dictionary of the Web Crypto API represents a cryptographic key.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CryptoKey)
   */
 trait CryptoKey extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CryptoKey/algorithm) */
   /* standard dom */
   val algorithm: KeyAlgorithm
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CryptoKey/extractable) */
   /* standard dom */
   val extractable: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CryptoKey/type) */
   /* standard dom */
   val `type`: KeyType
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CryptoKey/usages) */
   /* standard dom */
   val usages: js.Array[KeyUsage]
 }

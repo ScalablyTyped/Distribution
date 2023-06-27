@@ -140,6 +140,7 @@ import typings.cxs.cxsStrings.ruby
 import typings.cxs.cxsStrings.s
 import typings.cxs.cxsStrings.samp
 import typings.cxs.cxsStrings.script
+import typings.cxs.cxsStrings.search
 import typings.cxs.cxsStrings.section
 import typings.cxs.cxsStrings.select
 import typings.cxs.cxsStrings.slot
@@ -180,7 +181,7 @@ import typings.cxs.cxsStrings.webview
 import typings.cxs.mod.CSSObject
 import typings.react.mod.ComponentProps
 import typings.react.mod.JSXElementConstructor
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1160,6 +1161,13 @@ object componentMod {
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ]]
+  inline def apply[PropsType /* <: ApparentComponentProps[search] */](component: search): js.Function1[
+    /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
+    JSXElementConstructor[PropsType]
+  ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
+    JSXElementConstructor[PropsType]
+  ]]
   inline def apply[PropsType /* <: ApparentComponentProps[section] */](component: section): js.Function1[
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
@@ -1419,7 +1427,7 @@ object componentMod {
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ]]
-  inline def apply[Component /* <: (js.Function1[/* props */ Any, ReactElement | Null]) | (Instantiable1[/* props */ Any, typings.react.mod.Component[Any, Any, Any]]) */, PropsType /* <: ApparentComponentProps[Component] */](component: Component): js.Function1[
+  inline def apply[Component /* <: (js.Function2[/* props */ Any, /* deprecatedLegacyContext */ js.UndefOr[Any], ReactNode]) | (Instantiable1[/* props */ Any, typings.react.mod.Component[Any, Any, Any]]) */, PropsType /* <: ApparentComponentProps[Component] */](component: Component): js.Function1[
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -1439,5 +1447,5 @@ object componentMod {
     }}}
     */
   type ApparentComponentProps[// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.cxs.cxsStrings.a, typings.cxs.cxsStrings.abbr, typings.cxs.cxsStrings.address */ Any */] = ComponentProps[C]
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.cxs.cxsStrings.a, typings.cxs.cxsStrings.abbr, typings.cxs.cxsStrings.address */ Any */] = ComponentProps[C]
 }

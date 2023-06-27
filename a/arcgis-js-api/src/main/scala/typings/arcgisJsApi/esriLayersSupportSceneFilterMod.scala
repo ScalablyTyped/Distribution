@@ -11,10 +11,10 @@ object esriLayersSupportSceneFilterMod {
   @JSImport("esri/layers/support/SceneFilter", JSImport.Namespace)
   @js.native
   /**
-    * A SceneFilter defines parameters for setting a client-side spatial filter on a [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#filter).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html)
-    */
+  		 * A SceneFilter defines parameters for setting a client-side spatial filter on a [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#filter).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneFilter.html)
+  		 */
   open class ^ ()
     extends StObject
        with SceneFilter {

@@ -148,13 +148,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddGroupItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -179,7 +179,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddGroupItem(
       /**
@@ -190,7 +190,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -212,13 +212,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveGroupItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -244,7 +244,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveGroupItem(
       /**
@@ -255,7 +255,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -277,13 +277,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateGroupItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -309,7 +309,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateGroupItem(
       /**
@@ -320,7 +320,7 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nGroupPanel` itself
       */
@@ -358,13 +358,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAddGroupItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -383,13 +383,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRemoveGroupItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -408,13 +408,13 @@ object sapMP13nGroupPanelMod_ {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachUpdateGroupItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -422,7 +422,7 @@ object sapMP13nGroupPanelMod_ {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:addGroupItem addGroupItem} to attached listeners.
       *
@@ -435,7 +435,7 @@ object sapMP13nGroupPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:removeGroupItem removeGroupItem} to attached listeners.
       *
@@ -448,7 +448,7 @@ object sapMP13nGroupPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateGroupItem updateGroupItem} to attached listeners.
       *
@@ -561,14 +561,14 @@ object sapMP13nGroupPanelMod_ {
     ): typings.openui5.sapMP13nGroupItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Removes all invalid group conditions.
       */
     def removeInvalidConditions(): Unit = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Removes all errors/warning states from of all group conditions.
       */
@@ -651,6 +651,20 @@ object sapMP13nGroupPanelMod_ {
     def validateConditions(): Boolean = js.native
   }
   
+  trait P13nGroupPanel$AddGroupItemEventParameters extends StObject
+  
+  trait P13nGroupPanel$RemoveGroupItemEventParameters extends StObject
+  
+  trait P13nGroupPanel$UpdateGroupItemEventParameters extends StObject
+  
+  type P13nGroupPanelAddGroupItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nGroupPanel$AddGroupItemEventParameters]
+  
+  type P13nGroupPanelAddGroupItemEventParameters = P13nGroupPanel$AddGroupItemEventParameters
+  
+  type P13nGroupPanelRemoveGroupItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nGroupPanel$RemoveGroupItemEventParameters]
+  
+  type P13nGroupPanelRemoveGroupItemEventParameters = P13nGroupPanel$RemoveGroupItemEventParameters
+  
   trait P13nGroupPanelSettings
     extends StObject
        with P13nPanelSettings {
@@ -658,7 +672,9 @@ object sapMP13nGroupPanelMod_ {
     /**
       * Event raised if a `GroupItem` has been added.
       */
-    var addGroupItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var addGroupItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines if `mediaQuery` or `ContainerResize` is used for a layout update. If `ConditionPanel` is used
@@ -689,12 +705,16 @@ object sapMP13nGroupPanelMod_ {
     /**
       * Event raised if a `GroupItem` has been removed.
       */
-    var removeGroupItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var removeGroupItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Event raised if a `GroupItem` has been updated.
       */
-    var updateGroupItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateGroupItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object P13nGroupPanelSettings {
     
@@ -706,7 +726,7 @@ object sapMP13nGroupPanelMod_ {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nGroupPanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setAddGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addGroupItem", js.Any.fromFunction1(value))
+      inline def setAddGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "addGroupItem", js.Any.fromFunction1(value))
       
       inline def setAddGroupItemUndefined: Self = StObject.set(x, "addGroupItem", js.undefined)
       
@@ -730,13 +750,17 @@ object sapMP13nGroupPanelMod_ {
       
       inline def setMaxGroupsUndefined: Self = StObject.set(x, "maxGroups", js.undefined)
       
-      inline def setRemoveGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "removeGroupItem", js.Any.fromFunction1(value))
+      inline def setRemoveGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "removeGroupItem", js.Any.fromFunction1(value))
       
       inline def setRemoveGroupItemUndefined: Self = StObject.set(x, "removeGroupItem", js.undefined)
       
-      inline def setUpdateGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateGroupItem", js.Any.fromFunction1(value))
+      inline def setUpdateGroupItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "updateGroupItem", js.Any.fromFunction1(value))
       
       inline def setUpdateGroupItemUndefined: Self = StObject.set(x, "updateGroupItem", js.undefined)
     }
   }
+  
+  type P13nGroupPanelUpdateGroupItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nGroupPanel$UpdateGroupItemEventParameters]
+  
+  type P13nGroupPanelUpdateGroupItemEventParameters = P13nGroupPanel$UpdateGroupItemEventParameters
 }

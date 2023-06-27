@@ -11,10 +11,10 @@ object esriWidgetsDistanceMeasurement2DMod {
   @JSImport("esri/widgets/DistanceMeasurement2D", JSImport.Namespace)
   @js.native
   /**
-    * The DistanceMeasurement2D widget calculates and displays the distance between two or more points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html)
-    */
+  		 * The DistanceMeasurement2D widget calculates and displays the distance between two or more points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html)
+  		 */
   open class ^ ()
     extends StObject
        with DistanceMeasurement2D {

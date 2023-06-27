@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Implements the document object model (DOM) representation of the font element. The HTML Font Element <font> defines the font size, font face and color of text.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFontElement)
   */
 @js.native
 trait HTMLFontElement
@@ -24,13 +26,19 @@ trait HTMLFontElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFontElement/color)
+    */
   /* standard dom */
   var color: java.lang.String = js.native
   
   /**
     * Sets or retrieves the current typeface family.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFontElement/face)
     */
   /* standard dom */
   var face: java.lang.String = js.native
@@ -46,7 +54,11 @@ trait HTMLFontElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFontElement/size)
+    */
   /* standard dom */
   var size: java.lang.String = js.native
 }

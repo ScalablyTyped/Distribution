@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@egjs/axes" : "3.8.4"
+      "@egjs/axes" : "3.8.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@egjs/axes" : "3.8.4"
+      "@egjs/axes" : "3.8.5"
     }
   ],
   "compile-devDependencies" : [

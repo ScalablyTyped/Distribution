@@ -11,79 +11,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DaylightViewModelProperties extends StObject {
   
   /**
-    * A season can be set instead of a date.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
-    */
+  		 * A season can be set instead of a date.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
+  		 */
   var currentSeason: js.UndefOr[spring | summer | fall | winter] = js.undefined
   
   /**
-    * Starts or pauses the daytime animation cycling through the minutes of the day.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
-    */
+  		 * Starts or pauses the daytime animation cycling through the minutes of the day.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
+  		 */
   var dayPlaying: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to show shadows cast by the sun.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the sun.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#localDate)
-    */
+  		 * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#localDate)
+  		 */
   var localDate: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * Controls the daytime and date animation speed.
-    *
-    * @default 1.0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
-    */
+  		 * Controls the daytime and date animation speed.
+  		 *
+  		 * @default 1.0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
+  		 */
   var playSpeedMultiplier: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether date and time are used to determine position of the light source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#sunLightingEnabled)
-    */
+  		 * Indicates whether date and time are used to determine position of the light source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#sunLightingEnabled)
+  		 */
   var sunLightingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#timeSliderPosition)
-    */
+  		 * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#timeSliderPosition)
+  		 */
   var timeSliderPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * The difference in hours between UTC time and the time displayed in the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset)
-    */
+  		 * The difference in hours between UTC time and the time displayed in the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset)
+  		 */
   var utcOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
-    * Starts or pauses the date animation cycling through the months of the year.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
-    */
+  		 * Starts or pauses the date animation cycling through the months of the year.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
+  		 */
   var yearPlaying: js.UndefOr[Boolean] = js.undefined
 }
 object DaylightViewModelProperties {

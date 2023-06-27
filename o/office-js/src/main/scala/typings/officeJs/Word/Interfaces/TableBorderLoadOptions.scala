@@ -19,7 +19,7 @@ trait TableBorderLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the table border color.
+    * Specifies the table border color.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -27,7 +27,7 @@ trait TableBorderLoadOptions extends StObject {
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the type of the table border.
+    * Specifies the type of the table border.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,7 @@ trait TableBorderLoadOptions extends StObject {
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+    * Specifies the width, in points, of the table border. Not applicable to table border types that have fixed widths.
     *
     * @remarks
     * [Api set: WordApi 1.3]

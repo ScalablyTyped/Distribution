@@ -458,7 +458,7 @@ object DateTimePicker {
   trait Model extends StObject {
     
     /** Used to allow or restrict the editing in DateTimePicker input field directly. By setting false to this API, You can only pick the date and time values from DateTimePicker popup.
-      * @Default {true}
+      * @default {true}
       */
     var allowEdit: js.UndefOr[Boolean] = js.undefined
     
@@ -471,12 +471,12 @@ object DateTimePicker {
     var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Disable the list of specified date value.
-      * @Default {{}}
+      * @default {{}}
       */
     var blackoutDates: js.UndefOr[Any] = js.undefined
     
     /** Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
-      * @Default {{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }}
+      * @default {{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }}
       */
     var buttonText: js.UndefOr[ButtonText] = js.undefined
     
@@ -497,12 +497,12 @@ object DateTimePicker {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Defines the datetime format displayed in the DateTimePicker. The value should be a combination of date format and time format.
-      * @Default {M/d/yyyy h:mm tt}
+      * @default {M/d/yyyy h:mm tt}
       */
     var dateTimeFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the header format of the datepicker inside the DateTimePicker popup. See DatePicker.Header
-      * @Default {ej.DatePicker.Header.Short}
+      * @default {ej.DatePicker.Header.Short}
       */
     var dayHeaderFormat: js.UndefOr[Header | String] = js.undefined
     
@@ -516,32 +516,32 @@ object DateTimePicker {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the list of time range to be disabled.
-      * @Default {{}}
+      * @default {{}}
       */
     var disableTimeRanges: js.UndefOr[Any] = js.undefined
     
     /** Enable or disable the animation effect in DateTimePicker.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the state maintenance of DateTimePicker.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DateTimePicker direction as right to left alignment.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When enableStrictMode true it allows the value outside of the range also but it highlights the textbox with error class, otherwise it internally changed to the correct value.
-      * @Default {false}
+      * @default {false}
       */
     var enableStrictMode: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the DateTimePicker control.
-      * @Default {false}
+      * @default {false}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -554,37 +554,37 @@ object DateTimePicker {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Specifies the header format to be displayed in the DatePicker calendar inside the DateTimePicker popup.
-      * @Default {MMMM yyyy}
+      * @default {MMMM yyyy}
       */
     var headerFormat: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the DateTimePicker textbox.
-      * @Default {30}
+      * @default {30}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes of the ejDateTimePicker
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the time popup.
-      * @Default {30}
+      * @default {30}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the localization culture for DateTimePicker.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element when we set true to enableStrictMode.
-      * @Default {new Date(12/31/2099 11:59:59 PM)}
+      * @default {new Date(12/31/2099 11:59:59 PM)}
       */
     var maxDateTime: js.UndefOr[String | js.Date] = js.undefined
     
     /** Sets the minimum value to the DateTimePicker. Behind the minimum value an error class is added to the wrapper element.
-      * @Default {new Date(1/1/1900 12:00:00 AM)}
+      * @default {new Date(1/1/1900 12:00:00 AM)}
       */
     var minDateTime: js.UndefOr[String | js.Date] = js.undefined
     
@@ -593,73 +593,73 @@ object DateTimePicker {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the popup position of DateTimePicker.See below to know available popup positions
-      * @Default {ej.PopupPosition.Bottom}
+      * @default {ej.PopupPosition.Bottom}
       */
     var popupPosition: js.UndefOr[String | typings.ejWebAll.ej.popupPosition] = js.undefined
     
     /** Indicates that the DateTimePicker value can only be read and canâ€™t change.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** It allows showing days in other months of DatePicker calendar inside the DateTimePicker popup.
-      * @Default {true}
+      * @default {true}
       */
     var showOtherMonths: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the arrow button from the DateTimePicker textbox. When the button disabled, the DateTimePicker popup opens while focus in the textbox and hides while focus out from
       * the textbox.
-      * @Default {true}
+      * @default {true}
       */
     var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** Changes the sharped edges into rounded corner for the DateTimePicker textbox and popup.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the special dates in DateTimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var specialDates: js.UndefOr[Any] = js.undefined
     
     /** Specifies the start day of the week in datepicker inside the DateTimePicker popup.
-      * @Default {1}
+      * @default {1}
       */
     var startDay: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start level view in datepicker inside the DateTimePicker popup. See DatePicker.Level
-      * @Default {ej.DatePicker.Level.Month or month}
+      * @default {ej.DatePicker.Level.Month or month}
       */
     var startLevel: js.UndefOr[Level | String] = js.undefined
     
     /** Specifies the number of months to navigate at one click of next and previous button in datepicker inside the DateTimePicker popup.
-      * @Default {1}
+      * @default {1}
       */
     var stepMonths: js.UndefOr[Double] = js.undefined
     
     /** Defines the time format displayed in the time dropdown inside the DateTimePicker popup.
-      * @Default {h:mm tt}
+      * @default {h:mm tt}
       */
     var timeDisplayFormat: js.UndefOr[String] = js.undefined
     
     /** We can drill down up to time interval on selected date with meridian details.
-      * @Default {{ enabled: false, interval: 5, showMeridian: false, autoClose: true }}
+      * @default {{ enabled: false, interval: 5, showMeridian: false, autoClose: true }}
       */
     var timeDrillDown: js.UndefOr[TimeDrillDown] = js.undefined
     
     /** Defines the width of the time dropdown inside the DateTimePicker popup.
-      * @Default {100}
+      * @default {100}
       */
     var timePopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Set the jQuery validation error message in DateTimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in DateTimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
@@ -668,12 +668,12 @@ object DateTimePicker {
     var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
-      * @Default {Select date and time}
+      * @default {Select date and time}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DateTimePicker textbox.
-      * @Default {143}
+      * @default {143}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

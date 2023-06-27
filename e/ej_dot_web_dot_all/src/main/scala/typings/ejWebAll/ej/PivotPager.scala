@@ -49,37 +49,37 @@ object PivotPager {
   trait Model extends StObject {
     
     /** Contains the current page number in categorical axis.
-      * @Default {1}
+      * @default {1}
       */
     var categoricalCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Contains the total page count in categorical axis.
-      * @Default {1}
+      * @default {1}
       */
     var categoricalPageCount: js.UndefOr[Double] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the pager mode (Only Categorical Pager/Only Series Pager/Both) for the PivotPager.
-      * @Default {ej.PivotPager.Mode.Both}
+      * @default {ej.PivotPager.Mode.Both}
       */
     var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** Contains the current page number in series axis.
-      * @Default {1}
+      * @default {1}
       */
     var seriesCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Contains the total page count in series axis.
-      * @Default {1}
+      * @default {1}
       */
     var seriesPageCount: js.UndefOr[Double] = js.undefined
     
     /** Contains the ID of the target element for which paging needs to be done.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var targetControlID: js.UndefOr[String] = js.undefined
   }

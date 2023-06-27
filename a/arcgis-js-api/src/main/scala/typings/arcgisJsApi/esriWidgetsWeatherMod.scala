@@ -11,10 +11,10 @@ object esriWidgetsWeatherMod {
   @JSImport("esri/widgets/Weather", JSImport.Namespace)
   @js.native
   /**
-    * The Weather widget provides an interface for easily selecting and configuring the weather effects in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html)
-    */
+  		 * The Weather widget provides an interface for easily selecting and configuring the weather effects in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html)
+  		 */
   open class ^ ()
     extends StObject
        with Weather {

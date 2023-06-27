@@ -13,18 +13,22 @@ open class NavigationPreloadManager ()
   extends StObject
      with typings.std.NavigationPreloadManager {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/disable) */
   /* standard dom */
   /* CompleteClass */
   override def disable(): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/enable) */
   /* standard dom */
   /* CompleteClass */
   override def enable(): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/getState) */
   /* standard dom */
   /* CompleteClass */
   override def getState(): js.Promise[NavigationPreloadState] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager/setHeaderValue) */
   /* standard dom */
   /* CompleteClass */
   override def setHeaderValue(value: java.lang.String): js.Promise[Unit] = js.native

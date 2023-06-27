@@ -82,10 +82,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClosestFacilityParametersProperties extends StObject {
   
   /**
-    * Use this property to specify whether the operation should accumulate values other than the value specified for [impedanceAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#accumulateAttributes)
-    */
+  		 * Use this property to specify whether the operation should accumulate values other than the value specified for [impedanceAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#accumulateAttributes)
+  		 */
   var accumulateAttributes: js.UndefOr[
     js.Array[
       kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
@@ -93,214 +93,214 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * An authorization string used to access a resource or service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#apiKey)
-    */
+  		 * An authorization string used to access a resource or service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#apiKey)
+  		 */
   var apiKey: js.UndefOr[String] = js.undefined
   
   /**
-    * Use this property to specify additional values required by an attribute or restriction, such as to specify whether the restriction prohibits, avoids, or prefers travel on restricted roads.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#attributeParameterValues)
-    */
+  		 * Use this property to specify additional values required by an attribute or restriction, such as to specify whether the restriction prohibits, avoids, or prefers travel on restricted roads.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#attributeParameterValues)
+  		 */
   var attributeParameterValues: js.UndefOr[js.Array[AttributeParameterValue]] = js.undefined
   
   /**
-    * The travel time or travel distance value at which to stop searching for facilities for a given incident.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultCutoff)
-    */
+  		 * The travel time or travel distance value at which to stop searching for facilities for a given incident.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultCutoff)
+  		 */
   var defaultCutoff: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of closest facilities to find per incident.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultTargetFacilityCount)
-    */
+  		 * The number of closest facilities to find per incident.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#defaultTargetFacilityCount)
+  		 */
   var defaultTargetFacilityCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * The language that will be used when generating travel directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLanguage)
-    */
+  		 * The language that will be used when generating travel directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLanguage)
+  		 */
   var directionsLanguage: js.UndefOr[String] = js.undefined
   
   /**
-    * Specify the units for displaying travel distance in the driving directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLengthUnits)
-    */
+  		 * Specify the units for displaying travel distance in the driving directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsLengthUnits)
+  		 */
   var directionsLengthUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   
   /**
-    * Define the content and verbosity of the driving directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsOutputType)
-    */
+  		 * Define the content and verbosity of the driving directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsOutputType)
+  		 */
   var directionsOutputType: js.UndefOr[
     complete | `complete-no-events` | featuresets | `instructions-only` | standard | `summary-only`
   ] = js.undefined
   
   /**
-    * Specify the name of the formatting style for the directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsStyleName)
-    */
+  		 * Specify the name of the formatting style for the directions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsStyleName)
+  		 */
   var directionsStyleName: js.UndefOr[desktop | navigation | campus] = js.undefined
   
   /**
-    * Set the time-based impedance attribute to display the duration of a maneuver, such as "Go northwest on Alvorado St.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsTimeAttribute)
-    */
+  		 * Set the time-based impedance attribute to display the duration of a maneuver, such as "Go northwest on Alvorado St.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#directionsTimeAttribute)
+  		 */
   var directionsTimeAttribute: js.UndefOr[
     `travel-time` | `truck-travel-time` | `walk-time` | minutes | `truck-time` | String
   ] = js.undefined
   
   /**
-    * One or more locations that are searched for when finding the closest location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#facilities)
-    */
+  		 * One or more locations that are searched for when finding the closest location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#facilities)
+  		 */
   var facilities: js.UndefOr[
     DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecision)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecision)
+  		 */
   var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionM)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionM)
+  		 */
   var geometryPrecisionM: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the number of decimal places in the response geometries returned by a solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionZ)
-    */
+  		 * Use this property to specify the number of decimal places in the response geometries returned by a solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#geometryPrecisionZ)
+  		 */
   var geometryPrecisionZ: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specify whether invalid input locations should be ignored when finding the best solution.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#ignoreInvalidLocations)
-    */
+  		 * Specify whether invalid input locations should be ignored when finding the best solution.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#ignoreInvalidLocations)
+  		 */
   var ignoreInvalidLocations: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the impedance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute)
-    */
+  		 * Specifies the impedance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#impedanceAttribute)
+  		 */
   var impedanceAttribute: js.UndefOr[
     kilometers_ | miles_ | minutes | `travel-time` | `truck-minutes` | `truck-travel-time` | `walk-time` | String
   ] = js.undefined
   
   /**
-    * One or more locations from which the service searches for the nearby locations
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#incidents)
-    */
+  		 * One or more locations from which the service searches for the nearby locations
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#incidents)
+  		 */
   var incidents: js.UndefOr[
     DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify the spatial reference of the geometries, such as line or point features, returned by a solve operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outSpatialReference)
-    */
+  		 * Use this property to specify the spatial reference of the geometries, such as line or point features, returned by a solve operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * Use this property to specify by how much you want to simplify the route geometry returned by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision)
-    */
+  		 * Use this property to specify by how much you want to simplify the route geometry returned by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision)
+  		 */
   var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * Use this property to specify the units for the value specified for the [outputGeometryPrecision](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision) parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
-    */
+  		 * Use this property to specify the units for the value specified for the [outputGeometryPrecision](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecision) parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
+  		 */
   var outputGeometryPrecisionUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
   ] = js.undefined
   
   /**
-    * Use this property to specify the type of route features that are output by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputLines)
-    */
+  		 * Use this property to specify the type of route features that are output by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#outputLines)
+  		 */
   var outputLines: js.UndefOr[none_ | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
-    * Specify additional settings that can influence the behavior of the solver when finding solutions for the network analysis problems.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#overrides)
-    */
+  		 * Specify additional settings that can influence the behavior of the solver when finding solutions for the network analysis problems.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#overrides)
+  		 */
   var overrides: js.UndefOr[Any] = js.undefined
   
   /**
-    * Use this property to specify one or more points that will act as temporary restrictions or represent additional time or distance that may be required to travel on the underlying streets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers)
-    */
+  		 * Use this property to specify one or more points that will act as temporary restrictions or represent additional time or distance that may be required to travel on the underlying streets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers)
+  		 */
   var pointBarriers: js.UndefOr[
     CollectionProperties[PointBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify polygons that either completely restrict travel or proportionately scale the time or distance required to travel on the streets intersected by the polygons.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers)
-    */
+  		 * Use this property to specify polygons that either completely restrict travel or proportionately scale the time or distance required to travel on the streets intersected by the polygons.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers)
+  		 */
   var polygonBarriers: js.UndefOr[
     CollectionProperties[PolygonBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify one or more lines that prohibit travel anywhere the lines intersect the streets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers)
-    */
+  		 * Use this property to specify one or more lines that prohibit travel anywhere the lines intersect the streets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers)
+  		 */
   var polylineBarriers: js.UndefOr[
     CollectionProperties[PolylineBarrierProperties] | DataLayerPropertiestypela | FeatureSetProperties | NetworkFeatureSetProperties | NetworkUrlProperties
   ] = js.undefined
   
   /**
-    * Use this property to specify if the Object IDs specified for input locations such as stops or barriers should be preserved when the input locations are returned as output.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#preserveObjectID)
-    */
+  		 * Use this property to specify if the Object IDs specified for input locations such as stops or barriers should be preserved when the input locations are returned as output.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#preserveObjectID)
+  		 */
   var preserveObjectID: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies how U-Turns should be handled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#restrictUTurns)
-    */
+  		 * Specifies how U-Turns should be handled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#restrictUTurns)
+  		 */
   var restrictUTurns: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
   ] = js.undefined
   
   /**
-    * Use this property to specify which restrictions should be honored by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#restrictionAttributes)
-    */
+  		 * Use this property to specify which restrictions should be honored by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#restrictionAttributes)
+  		 */
   var restrictionAttributes: js.UndefOr[
     js.Array[
       `any-hazmat-prohibited` | `avoid-carpool-roads` | `avoid-express-lanes` | `avoid-ferries` | `avoid-gates` | `avoid-limited-access-roads` | `avoid-private-roads` | `avoid-roads-unsuitable-for-pedestrians` | `avoid-stairways` | `avoid-toll-roads` | `avoid-toll-roads-for-trucks` | `avoid-truck-restricted-roads` | `avoid-unpaved-roads` | `axle-count-restriction` | `driving-a-bus` | `driving-a-taxi` | `driving-a-truck` | `driving-an-automobile` | `driving-an-emergency-vehicle` | `height-restriction` | `kingpin-to-rear-axle-length-restriction` | `length-restriction` | `preferred-for-pedestrians` | `riding-a-motorcycle` | `roads-under-construction-prohibited` | `semi-or-tractor-with-one-or-more-trailers-prohibited` | `single-axle-vehicles-prohibited` | `tandem-axle-vehicles-prohibited` | `through-traffic-prohibited` | `truck-with-trailers-restriction` | `use-preferred-hazmat-routes` | `use-preferred-truck-routes` | walking | `weight-restriction` | String
@@ -308,138 +308,138 @@ trait ClosestFacilityParametersProperties extends StObject {
   ] = js.undefined
   
   /**
-    * Specify whether the operation should generate driving directions for each route.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnDirections)
-    */
+  		 * Specify whether the operation should generate driving directions for each route.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnDirections)
+  		 */
   var returnDirections: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines if facilities will be returned by the service.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnFacilities)
-    */
+  		 * Determines if facilities will be returned by the service.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnFacilities)
+  		 */
   var returnFacilities: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines if incidents will be returned by the service.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnIncidents)
-    */
+  		 * Determines if incidents will be returned by the service.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnIncidents)
+  		 */
   var returnIncidents: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [point barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPointBarriers)
-    */
+  		 * Specify whether [point barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#pointBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPointBarriers)
+  		 */
   var returnPointBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [polygon barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPolygonBarriers)
-    */
+  		 * Specify whether [polygon barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polygonBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPolygonBarriers)
+  		 */
   var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether [polyline barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers) will be returned by the routing operation.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPolylineBarriers)
-    */
+  		 * Specify whether [polyline barriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#polylineBarriers) will be returned by the routing operation.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnPolylineBarriers)
+  		 */
   var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Use this property to specify if the operation should return routes.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnRoutes)
-    */
+  		 * Use this property to specify if the operation should return routes.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnRoutes)
+  		 */
   var returnRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether traversed edges will be returned by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedEdges)
-    */
+  		 * Specify whether traversed edges will be returned by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedEdges)
+  		 */
   var returnTraversedEdges: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether traversed junctions will be returned by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedJunctions)
-    */
+  		 * Specify whether traversed junctions will be returned by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedJunctions)
+  		 */
   var returnTraversedJunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify whether traversed turns will be returned by the operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedTurns)
-    */
+  		 * Specify whether traversed turns will be returned by the operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnTraversedTurns)
+  		 */
   var returnTraversedTurns: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Include z values for the returned geometries if supported by the underlying network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnZ)
-    */
+  		 * Include z values for the returned geometries if supported by the underlying network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#returnZ)
+  		 */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the time and date to depart from or arrive at incidents or facilities.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay)
-    */
+  		 * Specify the time and date to depart from or arrive at incidents or facilities.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay)
+  		 */
   var timeOfDay: js.UndefOr[DateProperties | now] = js.undefined
   
   /**
-    * Specify the time zone or zones of the [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayIsUTC)
-    */
+  		 * Specify the time zone or zones of the [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayIsUTC)
+  		 */
   var timeOfDayIsUTC: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) parameter value represents the arrival or departure time for the routes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayUsage)
-    */
+  		 * The [timeOfDay](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDay) parameter value represents the arrival or departure time for the routes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#timeOfDayUsage)
+  		 */
   var timeOfDayUsage: js.UndefOr[start | end] = js.undefined
   
   /**
-    * Specifies how the travel direction for the closest facility search will be measured.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#travelDirection)
-    */
+  		 * Specifies how the travel direction for the closest facility search will be measured.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#travelDirection)
+  		 */
   var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.undefined
   
   /**
-    * A travel mode represents a means of transportation, such as driving or walking.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#travelMode)
-    */
+  		 * A travel mode represents a means of transportation, such as driving or walking.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#travelMode)
+  		 */
   var travelMode: js.UndefOr[TravelModeProperties] = js.undefined
   
   /**
-    * Specify whether hierarchy should be used when finding the shortest paths.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#useHierarchy)
-    */
+  		 * Specify whether hierarchy should be used when finding the shortest paths.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html#useHierarchy)
+  		 */
   var useHierarchy: js.UndefOr[Boolean] = js.undefined
 }
 object ClosestFacilityParametersProperties {

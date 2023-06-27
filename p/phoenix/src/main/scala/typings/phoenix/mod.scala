@@ -5,6 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phoenix.anon.Diff
 import typings.phoenix.anon.Joins
 import typings.phoenix.anon.PartialSocketConnectOptio
+import typings.std.CloseEvent
+import typings.std.Event
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -332,19 +334,28 @@ object mod {
     
     def off(refs: js.Array[MessageRef]): Unit = js.native
     
-    def onClose(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
+    def onClose(callback: js.Function1[/* event */ CloseEvent, Unit | js.Promise[Unit]]): MessageRef = js.native
     
-    def onError(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
+    def onError(
+      callback: js.Function3[
+          /* error */ Event | String | Double, 
+          /* transport */ Instantiable1[/* endpoint */ String, js.Object], 
+          /* establishedConnections */ Double, 
+          Unit | js.Promise[Unit]
+        ]
+    ): MessageRef = js.native
     
-    def onMessage(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
+    def onMessage(callback: js.Function1[/* message */ js.Object, Unit | js.Promise[Unit]]): MessageRef = js.native
     
-    def onOpen(callback: js.Function1[/* cb */ Any, Unit | js.Promise[Unit]]): MessageRef = js.native
+    def onOpen(callback: js.Function0[Unit | js.Promise[Unit]]): MessageRef = js.native
     
     def protocol(): String = js.native
     
     def push(data: js.Object): Unit = js.native
     
     def remove(channel: Channel): Unit = js.native
+    
+    def replaceTransport(transport: Instantiable1[/* endpoint */ String, js.Object]): Unit = js.native
   }
   
   @JSImport("phoenix", "Timer")

@@ -17,12 +17,12 @@ trait SimpleFillSymbolProperties
      with FillSymbolProperties {
   
   /**
-    * The fill style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
-    */
+  		 * The fill style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
+  		 */
   var style: js.UndefOr[
     `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical
   ] = js.undefined

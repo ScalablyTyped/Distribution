@@ -23,9 +23,13 @@ trait WebglTexture extends StObject {
   
   def destroy(device: Any): Unit
   
+  var dirtyParameterFlags: Double
+  
   def initialize(device: Any, texture: Any): Unit
   
   def loseContext(): Unit
+  
+  def propertyChanged(flag: Any): Unit
   
   def upload(device: Any, texture: Any): Unit
 }
@@ -38,11 +42,13 @@ object WebglTexture {
     _glTarget: Any,
     _glTexture: Any,
     destroy: Any => Unit,
+    dirtyParameterFlags: Double,
     initialize: (Any, Any) => Unit,
     loseContext: () => Unit,
+    propertyChanged: Any => Unit,
     upload: (Any, Any) => Unit
   ): WebglTexture = {
-    val __obj = js.Dynamic.literal(_glFormat = _glFormat.asInstanceOf[js.Any], _glInternalFormat = _glInternalFormat.asInstanceOf[js.Any], _glPixelType = _glPixelType.asInstanceOf[js.Any], _glTarget = _glTarget.asInstanceOf[js.Any], _glTexture = _glTexture.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), initialize = js.Any.fromFunction2(initialize), loseContext = js.Any.fromFunction0(loseContext), upload = js.Any.fromFunction2(upload))
+    val __obj = js.Dynamic.literal(_glFormat = _glFormat.asInstanceOf[js.Any], _glInternalFormat = _glInternalFormat.asInstanceOf[js.Any], _glPixelType = _glPixelType.asInstanceOf[js.Any], _glTarget = _glTarget.asInstanceOf[js.Any], _glTexture = _glTexture.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), dirtyParameterFlags = dirtyParameterFlags.asInstanceOf[js.Any], initialize = js.Any.fromFunction2(initialize), loseContext = js.Any.fromFunction0(loseContext), propertyChanged = js.Any.fromFunction1(propertyChanged), upload = js.Any.fromFunction2(upload))
     __obj.asInstanceOf[WebglTexture]
   }
   
@@ -51,9 +57,13 @@ object WebglTexture {
     
     inline def setDestroy(value: Any => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
+    inline def setDirtyParameterFlags(value: Double): Self = StObject.set(x, "dirtyParameterFlags", value.asInstanceOf[js.Any])
+    
     inline def setInitialize(value: (Any, Any) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
     inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
+    
+    inline def setPropertyChanged(value: Any => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
     
     inline def setUpload(value: (Any, Any) => Unit): Self = StObject.set(x, "upload", js.Any.fromFunction2(value))
     

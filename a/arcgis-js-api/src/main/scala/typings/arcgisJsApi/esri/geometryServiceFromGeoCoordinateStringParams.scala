@@ -15,33 +15,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait geometryServiceFromGeoCoordinateStringParams extends StObject {
   
   /**
-    * Conversion options for mrgs, utm and gars conversion types.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
-    */
+  		 * Conversion options for mrgs, utm and gars conversion types.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
+  		 */
   var conversionMode: js.UndefOr[String] = js.undefined
   
   /**
-    * The conversion type of the input strings.
-    *
-    * @default mrgs
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
-    */
+  		 * The conversion type of the input strings.
+  		 *
+  		 * @default mrgs
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
+  		 */
   var conversionType: js.UndefOr[mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd] = js.undefined
   
   /**
-    * The spatial reference or well-known ID to convert the input string coordinates to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
-    */
+  		 * The spatial reference or well-known ID to convert the input string coordinates to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
+  		 */
   var sr: SpatialReference | String | Double
   
   /**
-    * An array of formatted strings as specified by `conversionType`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
-    */
+  		 * An array of formatted strings as specified by `conversionType`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#fromGeoCoordinateString)
+  		 */
   var strings: js.Array[String]
 }
 object geometryServiceFromGeoCoordinateStringParams {

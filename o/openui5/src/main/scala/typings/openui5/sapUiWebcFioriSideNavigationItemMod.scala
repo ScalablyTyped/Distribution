@@ -216,8 +216,8 @@ object sapUiWebcFioriSideNavigationItemMod {
     def getWholeItemToggleable(): Boolean = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.fiori.ISideNavigationSubItem` in the aggregation {@link #getItems
-      * items}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.fiori.ISideNavigationSubItem` in the aggregation {@link #getItems items}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */

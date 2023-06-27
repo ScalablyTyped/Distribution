@@ -4,39 +4,54 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The nodes of a document subtree and a position within them. */
+/**
+  * The nodes of a document subtree and a position within them.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker)
+  */
 trait TreeWalker extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/currentNode) */
   /* standard dom */
   var currentNode: Node
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/filter) */
   /* standard dom */
   val filter: NodeFilter | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/firstChild) */
   /* standard dom */
   def firstChild(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/lastChild) */
   /* standard dom */
   def lastChild(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/nextNode) */
   /* standard dom */
   def nextNode(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/nextSibling) */
   /* standard dom */
   def nextSibling(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/parentNode) */
   /* standard dom */
   def parentNode(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/previousNode) */
   /* standard dom */
   def previousNode(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/previousSibling) */
   /* standard dom */
   def previousSibling(): Node | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/root) */
   /* standard dom */
   val root: Node
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TreeWalker/whatToShow) */
   /* standard dom */
   val whatToShow: Double
 }

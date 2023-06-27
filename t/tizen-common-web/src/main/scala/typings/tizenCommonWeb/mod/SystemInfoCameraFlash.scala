@@ -17,7 +17,7 @@ trait SystemInfoCameraFlash
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/led
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val brightness: Double
   
@@ -47,7 +47,7 @@ trait SystemInfoCameraFlash
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/led
     *
-    * @throw WebAPIException with error type SecurityError, if this attribute is not allowed.
+    * @throws WebAPIException with error type SecurityError, if this attribute is not allowed.
     */
   val levels: Double
   
@@ -62,9 +62,9 @@ trait SystemInfoCameraFlash
     * @privilegeName http://tizen.org/privilege/led
     *
     * @param brightness The brightness value of LED (0~1).
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def setBrightness(brightness: Double): Unit
 }

@@ -1,6 +1,6 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.SendReplayData
+import typings.sentryReplay.typesTypesReplayMod.SendReplayData
 import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject

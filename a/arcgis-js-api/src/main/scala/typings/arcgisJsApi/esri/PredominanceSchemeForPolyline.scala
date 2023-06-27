@@ -9,52 +9,52 @@ trait PredominanceSchemeForPolyline
      with PredominanceScheme {
   
   /**
-    * The colors of the line symbols used for each category.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The colors of the line symbols used for each category.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var name: String
   
   /**
-    * The color of the line symbol used to indicate features with no data and features that are out of range.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The color of the line symbol used to indicate features with no data and features that are out of range.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the line symbol (0 - 1).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The opacity of the line symbol (0 - 1).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var opacity: Double
   
   /**
-    * The scheme defining the size visual variable if included in a predominance visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The scheme defining the size visual variable if included in a predominance visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var sizeScheme: SizeSchemeForPolyline
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * The default width of the line symbol in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
-    */
+  		 * The default width of the line symbol in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-predominance.html#PredominanceSchemeForPolyline)
+  		 */
   var width: Double
 }
 object PredominanceSchemeForPolyline {

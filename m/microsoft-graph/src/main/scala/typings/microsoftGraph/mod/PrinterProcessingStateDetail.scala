@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.none_
+import typings.microsoftGraph.microsoftGraphStrings.paused_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.paused
+  - typings.microsoftGraph.microsoftGraphStrings.paused_
   - typings.microsoftGraph.microsoftGraphStrings.mediaJam
   - typings.microsoftGraph.microsoftGraphStrings.mediaNeeded
   - typings.microsoftGraph.microsoftGraphStrings.mediaLow
@@ -1612,7 +1613,7 @@ object PrinterProcessingStateDetail {
   
   inline def outputTrayMissing: typings.microsoftGraph.microsoftGraphStrings.outputTrayMissing = "outputTrayMissing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.outputTrayMissing]
   
-  inline def paused: typings.microsoftGraph.microsoftGraphStrings.paused = "paused".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.paused]
+  inline def paused: paused_ = "paused".asInstanceOf[paused_]
   
   inline def perforaterAdded: typings.microsoftGraph.microsoftGraphStrings.perforaterAdded = "perforaterAdded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.perforaterAdded]
   

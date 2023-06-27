@@ -22,7 +22,7 @@ object mod {
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
   ]]
-  inline def default(fetch: FnCall, defaults: js.Object): js.Function2[
+  inline def default(fetch: FnCall, defaults: RequestInitRetryParams): js.Function2[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<fetch-retry.anon.FnCall>[0] */ /* input */ js.Any, 
     /* init */ js.UndefOr[RequestInitWithRetry], 
     js.Promise[Response]
@@ -39,9 +39,7 @@ object mod {
     Double
   ]
   
-  trait RequestInitWithRetry
-    extends StObject
-       with RequestInit {
+  trait RequestInitRetryParams extends StObject {
     
     var retries: js.UndefOr[Double] = js.undefined
     
@@ -49,15 +47,15 @@ object mod {
     
     var retryOn: js.UndefOr[js.Array[Double] | RequestRetryOnFunction] = js.undefined
   }
-  object RequestInitWithRetry {
+  object RequestInitRetryParams {
     
-    inline def apply(): RequestInitWithRetry = {
+    inline def apply(): RequestInitRetryParams = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RequestInitWithRetry]
+      __obj.asInstanceOf[RequestInitRetryParams]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: RequestInitWithRetry] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RequestInitRetryParams] (val x: Self) extends AnyVal {
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
@@ -80,6 +78,18 @@ object mod {
       inline def setRetryOnUndefined: Self = StObject.set(x, "retryOn", js.undefined)
       
       inline def setRetryOnVarargs(value: Double*): Self = StObject.set(x, "retryOn", js.Array(value*))
+    }
+  }
+  
+  trait RequestInitWithRetry
+    extends StObject
+       with RequestInit
+       with RequestInitRetryParams
+  object RequestInitWithRetry {
+    
+    inline def apply(): RequestInitWithRetry = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RequestInitWithRetry]
     }
   }
   

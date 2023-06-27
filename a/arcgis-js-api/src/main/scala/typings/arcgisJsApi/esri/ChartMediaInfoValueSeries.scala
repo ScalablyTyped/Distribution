@@ -10,23 +10,23 @@ trait ChartMediaInfoValueSeries
      with Accessor {
   
   /**
-    * String value indicating the field's name for a series.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#fieldName)
-    */
+  		 * String value indicating the field's name for a series.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#fieldName)
+  		 */
   val fieldName: String = js.native
   
   /**
-    * String value indicating the tooltip for a series.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltip)
-    */
+  		 * String value indicating the tooltip for a series.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#tooltip)
+  		 */
   val tooltip: String = js.native
   
   /**
-    * Numerical value for the chart series.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#value)
-    */
+  		 * Numerical value for the chart series.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html#value)
+  		 */
   val value: Double = js.native
 }

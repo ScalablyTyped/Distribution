@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WFSCapabilities extends StObject {
   
   /**
-    * An array of featureTypes (or layers) available in the WFS service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSCapabilities)
-    */
+  		 * An array of featureTypes (or layers) available in the WFS service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSCapabilities)
+  		 */
   var featureTypes: js.Array[WFSFeatureType]
   
   /**
-    * Information about the operations needed to consume the WFS service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSCapabilities)
-    */
+  		 * Information about the operations needed to consume the WFS service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSCapabilities)
+  		 */
   var operations: WFSOperations
 }
 object WFSCapabilities {

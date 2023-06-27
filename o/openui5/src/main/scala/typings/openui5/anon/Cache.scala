@@ -12,7 +12,7 @@ trait Cache extends StObject {
     * Cache configuration; caching gets active when this object is provided with vView.cache.keys array; keys
     * are used to store data in the cache and for invalidation of the cache.
     */
-  var cache: js.UndefOr[`36`] = js.undefined
+  var cache: js.UndefOr[`6`] = js.undefined
   
   /**
     * Controller instance to be used for this view. The given controller instance overrides the controller
@@ -51,7 +51,7 @@ object Cache {
   @scala.inline
   implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
     
-    inline def setCache(value: `36`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: `6`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     

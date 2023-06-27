@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micromark-util-normalize-identifier"
-version := "1.0.0-106428"
+version := "1.1.0-bb23ca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

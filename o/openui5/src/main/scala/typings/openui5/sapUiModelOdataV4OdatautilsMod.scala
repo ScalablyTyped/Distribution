@@ -12,7 +12,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
   val default: ODataUtils = js.native
   
   /**
-    * @SINCE 1.43.0
+    * @since 1.43.0
     *
     * A collection of methods which help to consume OData V4 services.
     */
@@ -20,7 +20,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
   trait ODataUtils extends StObject {
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Compares the given OData values.
       *
@@ -75,7 +75,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
     ): Double = js.native
     
     /**
-      * @SINCE 1.64.0
+      * @since 1.64.0
       *
       * Formats the given OData value into a literal suitable for usage in data binding paths and URLs.
       *
@@ -93,7 +93,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
     ): String = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Parses an "Edm.Date" value and returns the corresponding JavaScript `Date` value (UTC with a time value
       * of "00:00:00").
@@ -106,7 +106,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
     sDate: String): js.Date = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Parses an "Edm.DateTimeOffset" value and returns the corresponding JavaScript `Date` value.
       *
@@ -118,7 +118,7 @@ object sapUiModelOdataV4OdatautilsMod extends Shortcut {
     sDateTimeOffset: String): js.Date = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Parses an "Edm.TimeOfDay" value and returns the corresponding JavaScript `Date` value (UTC with a date
       * value of "1970-01-01").

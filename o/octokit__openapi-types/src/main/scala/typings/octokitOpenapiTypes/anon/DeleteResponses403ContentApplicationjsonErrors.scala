@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteResponses403ContentApplicationjsonErrors extends StObject {
   
-  /** Delete a project card */
+  /**
+    * Delete a project card
+    * @description Deletes a project card
+    */
   var delete: Responses403ContentApplicationjsonErrors
   
-  /** Get a project card */
+  /**
+    * Get a project card
+    * @description Gets information about a project card.
+    */
   var get: ParametersPathCardid
   
   /** Update an existing project card */

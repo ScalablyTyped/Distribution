@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.IndexType
+import typings.openui5.anon.Index
 import typings.openui5.anon.Replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,7 @@ object sapBaseUtilArrayDiffMod {
   aOld: js.Array[Any], /**
     * New Array
     */
-  aNew: js.Array[Any]): js.Array[IndexType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any])).asInstanceOf[js.Array[IndexType]]
+  aNew: js.Array[Any]): js.Array[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any])).asInstanceOf[js.Array[Index]]
   inline def default(
     /**
     * Old Array
@@ -32,7 +32,7 @@ object sapBaseUtilArrayDiffMod {
     * Configuration object or a function to calculate substitute symbols for array items
     */
   vConfigOrSymbol: js.Function
-  ): js.Array[IndexType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any], vConfigOrSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Array[IndexType]]
+  ): js.Array[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any], vConfigOrSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Array[Index]]
   inline def default(
     /**
     * Old Array
@@ -46,5 +46,5 @@ object sapBaseUtilArrayDiffMod {
     * Configuration object or a function to calculate substitute symbols for array items
     */
   vConfigOrSymbol: Replace
-  ): js.Array[IndexType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any], vConfigOrSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Array[IndexType]]
+  ): js.Array[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(aOld.asInstanceOf[js.Any], aNew.asInstanceOf[js.Any], vConfigOrSymbol.asInstanceOf[js.Any])).asInstanceOf[js.Array[Index]]
 }

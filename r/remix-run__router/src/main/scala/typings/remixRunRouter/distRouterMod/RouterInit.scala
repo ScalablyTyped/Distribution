@@ -7,6 +7,7 @@ import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
 import typings.remixRunRouter.distUtilsMod.DetectErrorBoundaryFunction
 import typings.remixRunRouter.distUtilsMod.MapRoutePropertiesFunction
 import typings.std.Record
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,8 @@ trait RouterInit extends StObject {
   var mapRouteProperties: js.UndefOr[MapRoutePropertiesFunction] = js.undefined
   
   var routes: js.Array[AgnosticRouteObject]
+  
+  var window: js.UndefOr[Window] = js.undefined
 }
 object RouterInit {
   
@@ -65,5 +68,9 @@ object RouterInit {
     inline def setRoutes(value: js.Array[AgnosticRouteObject]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     inline def setRoutesVarargs(value: AgnosticRouteObject*): Self = StObject.set(x, "routes", js.Array(value*))
+    
+    inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

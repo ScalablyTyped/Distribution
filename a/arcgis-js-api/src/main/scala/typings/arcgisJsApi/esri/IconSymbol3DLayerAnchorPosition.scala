@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconSymbol3DLayerAnchorPosition extends StObject {
   
   /**
-    * Value defining the position relative to the icon's width.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Value defining the position relative to the icon's width.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
+  		 */
   var x: Double
   
   /**
-    * Value defining the position relative to the icon's height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
-    */
+  		 * Value defining the position relative to the icon's height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
+  		 */
   var y: Double
 }
 object IconSymbol3DLayerAnchorPosition {

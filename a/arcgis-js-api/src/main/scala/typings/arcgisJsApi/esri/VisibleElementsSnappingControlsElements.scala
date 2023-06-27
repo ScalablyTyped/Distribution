@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisibleElementsSnappingControlsElements extends StObject {
   
   /**
-    * Indicates whether to display the snapping controls' toggle to entirely enable/disable snapping.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether to display the snapping controls' toggle to entirely enable/disable snapping.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var enabledToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the snapping controls' toggle to enable/disable `Feature to feature` snapping.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether to display the snapping controls' toggle to enable/disable `Feature to feature` snapping.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var featureEnabledToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the snapping controls' header.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether to display the snapping controls' header.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var header: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display snapping controls' `Snapping layers`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether to display snapping controls' `Snapping layers`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var layerList: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the snapping controls' toggle to enable/disable `Geometry guides`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether to display the snapping controls' toggle to enable/disable `Geometry guides`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var selfEnabledToggle: js.UndefOr[Boolean] = js.undefined
 }
 object VisibleElementsSnappingControlsElements {

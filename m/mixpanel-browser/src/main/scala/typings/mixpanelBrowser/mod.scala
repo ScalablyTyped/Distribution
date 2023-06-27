@@ -7,6 +7,7 @@ import typings.mixpanelBrowser.anon.PartialConfigApihost
 import typings.mixpanelBrowser.anon.PartialHasOptedInOutOptio
 import typings.mixpanelBrowser.anon.PartialInTrackingOptions
 import typings.mixpanelBrowser.anon.PartialOutTrackingOptions
+import typings.mixpanelBrowser.anon.PartialRegisterOptions
 import typings.mixpanelBrowser.mixpanelBrowserStrings.sendBeacon
 import typings.mixpanelBrowser.mixpanelBrowserStrings.xhr
 import typings.std.Element
@@ -71,12 +72,15 @@ object mod {
   inline def push(item: PushItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def register(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def register(props: Dict, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(props: Dict, days_or_options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(props: Dict, days_or_options: PartialRegisterOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def registerOnce(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def registerOnce(props: Dict, default_value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def registerOnce(props: Dict, default_value: Any, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def registerOnce(props: Dict, default_value: Unit, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: Any, days_or_options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: Any, days_or_options: PartialRegisterOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: Unit, days_or_options: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: Unit, days_or_options: PartialRegisterOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days_or_options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def removeGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -123,6 +127,7 @@ object mod {
   inline def trackWithGroups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def unregister(property: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregister(property: String, options: PartialRegisterOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(property.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback = js.Function1[/* response */ Response, Unit]
   
@@ -236,6 +241,8 @@ object mod {
     
     var track_links_timeout: Double
     
+    var track_pageview: Boolean
+    
     var upgrade: Boolean
     
     var verbose: Boolean
@@ -282,11 +289,12 @@ object mod {
       store_google: Boolean,
       test: Boolean,
       track_links_timeout: Double,
+      track_pageview: Boolean,
       upgrade: Boolean,
       verbose: Boolean,
       xhr_headers: XhrHeadersDef
     ): Config = {
-      val __obj = js.Dynamic.literal(api_host = api_host.asInstanceOf[js.Any], api_method = api_method.asInstanceOf[js.Any], api_transport = api_transport.asInstanceOf[js.Any], app_host = app_host.asInstanceOf[js.Any], autotrack = autotrack.asInstanceOf[js.Any], batch_flush_interval_ms = batch_flush_interval_ms.asInstanceOf[js.Any], batch_request_timeout_ms = batch_request_timeout_ms.asInstanceOf[js.Any], batch_requests = batch_requests.asInstanceOf[js.Any], batch_size = batch_size.asInstanceOf[js.Any], cdn = cdn.asInstanceOf[js.Any], cookie_domain = cookie_domain.asInstanceOf[js.Any], cookie_expiration = cookie_expiration.asInstanceOf[js.Any], cookie_name = cookie_name.asInstanceOf[js.Any], cross_site_cookie = cross_site_cookie.asInstanceOf[js.Any], cross_subdomain_cookie = cross_subdomain_cookie.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], disable_cookie = disable_cookie.asInstanceOf[js.Any], disable_notifications = disable_notifications.asInstanceOf[js.Any], disable_persistence = disable_persistence.asInstanceOf[js.Any], ignore_dnt = ignore_dnt.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], inapp_link_new_window = inapp_link_new_window.asInstanceOf[js.Any], inapp_protocol = inapp_protocol.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], loaded = js.Any.fromFunction1(loaded), opt_out_persistence_by_default = opt_out_persistence_by_default.asInstanceOf[js.Any], opt_out_tracking_by_default = opt_out_tracking_by_default.asInstanceOf[js.Any], opt_out_tracking_cookie_prefix = opt_out_tracking_cookie_prefix.asInstanceOf[js.Any], opt_out_tracking_persistence_type = opt_out_tracking_persistence_type.asInstanceOf[js.Any], persistence = persistence.asInstanceOf[js.Any], persistence_name = persistence_name.asInstanceOf[js.Any], property_blacklist = property_blacklist.asInstanceOf[js.Any], save_referrer = save_referrer.asInstanceOf[js.Any], secure_cookie = secure_cookie.asInstanceOf[js.Any], store_google = store_google.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], track_links_timeout = track_links_timeout.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], xhr_headers = xhr_headers.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(api_host = api_host.asInstanceOf[js.Any], api_method = api_method.asInstanceOf[js.Any], api_transport = api_transport.asInstanceOf[js.Any], app_host = app_host.asInstanceOf[js.Any], autotrack = autotrack.asInstanceOf[js.Any], batch_flush_interval_ms = batch_flush_interval_ms.asInstanceOf[js.Any], batch_request_timeout_ms = batch_request_timeout_ms.asInstanceOf[js.Any], batch_requests = batch_requests.asInstanceOf[js.Any], batch_size = batch_size.asInstanceOf[js.Any], cdn = cdn.asInstanceOf[js.Any], cookie_domain = cookie_domain.asInstanceOf[js.Any], cookie_expiration = cookie_expiration.asInstanceOf[js.Any], cookie_name = cookie_name.asInstanceOf[js.Any], cross_site_cookie = cross_site_cookie.asInstanceOf[js.Any], cross_subdomain_cookie = cross_subdomain_cookie.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], disable_cookie = disable_cookie.asInstanceOf[js.Any], disable_notifications = disable_notifications.asInstanceOf[js.Any], disable_persistence = disable_persistence.asInstanceOf[js.Any], ignore_dnt = ignore_dnt.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], inapp_link_new_window = inapp_link_new_window.asInstanceOf[js.Any], inapp_protocol = inapp_protocol.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], loaded = js.Any.fromFunction1(loaded), opt_out_persistence_by_default = opt_out_persistence_by_default.asInstanceOf[js.Any], opt_out_tracking_by_default = opt_out_tracking_by_default.asInstanceOf[js.Any], opt_out_tracking_cookie_prefix = opt_out_tracking_cookie_prefix.asInstanceOf[js.Any], opt_out_tracking_persistence_type = opt_out_tracking_persistence_type.asInstanceOf[js.Any], persistence = persistence.asInstanceOf[js.Any], persistence_name = persistence_name.asInstanceOf[js.Any], property_blacklist = property_blacklist.asInstanceOf[js.Any], save_referrer = save_referrer.asInstanceOf[js.Any], secure_cookie = secure_cookie.asInstanceOf[js.Any], store_google = store_google.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], track_links_timeout = track_links_timeout.asInstanceOf[js.Any], track_pageview = track_pageview.asInstanceOf[js.Any], upgrade = upgrade.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], xhr_headers = xhr_headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
@@ -368,6 +376,8 @@ object mod {
       inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
       
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
@@ -543,12 +553,15 @@ object mod {
     def push(item: PushItem): Unit = js.native
     
     def register(props: Dict): Unit = js.native
-    def register(props: Dict, days: Double): Unit = js.native
+    def register(props: Dict, days_or_options: Double): Unit = js.native
+    def register(props: Dict, days_or_options: PartialRegisterOptions): Unit = js.native
     
     def register_once(props: Dict): Unit = js.native
     def register_once(props: Dict, default_value: Any): Unit = js.native
-    def register_once(props: Dict, default_value: Any, days: Double): Unit = js.native
-    def register_once(props: Dict, default_value: Unit, days: Double): Unit = js.native
+    def register_once(props: Dict, default_value: Any, days_or_options: Double): Unit = js.native
+    def register_once(props: Dict, default_value: Any, days_or_options: PartialRegisterOptions): Unit = js.native
+    def register_once(props: Dict, default_value: Unit, days_or_options: Double): Unit = js.native
+    def register_once(props: Dict, default_value: Unit, days_or_options: PartialRegisterOptions): Unit = js.native
     
     def remove_group(group_key: String, group_ids: String): Unit = js.native
     def remove_group(group_key: String, group_ids: String, callback: Callback): Unit = js.native
@@ -591,10 +604,14 @@ object mod {
     def track_links(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = js.native
     def track_links(query: Query, event_name: String, properties: Dict): Unit = js.native
     
+    def track_pageview(): Unit = js.native
+    def track_pageview(properties: Dict): Unit = js.native
+    
     def track_with_groups(event_name: String, properties: Dict, groups: Dict): Unit = js.native
     def track_with_groups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = js.native
     
     def unregister(property: String): Unit = js.native
+    def unregister(property: String, options: PartialRegisterOptions): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -716,6 +733,24 @@ object mod {
   type PushItem = js.Array[String | Dict]
   
   type Query = String | Element | js.Array[Element]
+  
+  trait RegisterOptions extends StObject {
+    
+    var persistent: Boolean
+  }
+  object RegisterOptions {
+    
+    inline def apply(persistent: Boolean): RegisterOptions = {
+      val __obj = js.Dynamic.literal(persistent = persistent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegisterOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+      
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait RequestOptions extends StObject {
     

@@ -1648,6 +1648,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.alignmentBaseline
     - typings.domHelpers.domHelpersStrings.all
     - typings.domHelpers.domHelpersStrings.animation
+    - typings.domHelpers.domHelpersStrings.animationComposition
     - typings.domHelpers.domHelpersStrings.animationDelay
     - typings.domHelpers.domHelpersStrings.animationDirection
     - typings.domHelpers.domHelpersStrings.animationDuration
@@ -1771,7 +1772,6 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.containerName
     - typings.domHelpers.domHelpersStrings.containerType
     - typings.domHelpers.domHelpersStrings.content
-    - typings.domHelpers.domHelpersStrings.contentVisibility
     - typings.domHelpers.domHelpersStrings.counterIncrement
     - typings.domHelpers.domHelpersStrings.counterReset
     - typings.domHelpers.domHelpersStrings.counterSet
@@ -1807,6 +1807,9 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.fontStretch
     - typings.domHelpers.domHelpersStrings.fontStyle
     - typings.domHelpers.domHelpersStrings.fontSynthesis
+    - typings.domHelpers.domHelpersStrings.fontSynthesisSmallCaps
+    - typings.domHelpers.domHelpersStrings.fontSynthesisStyle
+    - typings.domHelpers.domHelpersStrings.fontSynthesisWeight
     - typings.domHelpers.domHelpersStrings.fontVariant
     - typings.domHelpers.domHelpersStrings.fontVariantAlternates
     - typings.domHelpers.domHelpersStrings.fontVariantCaps
@@ -1933,6 +1936,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.paddingLeft
     - typings.domHelpers.domHelpersStrings.paddingRight
     - typings.domHelpers.domHelpersStrings.paddingTop
+    - typings.domHelpers.domHelpersStrings.page
     - typings.domHelpers.domHelpersStrings.pageBreakAfter
     - typings.domHelpers.domHelpersStrings.pageBreakBefore
     - typings.domHelpers.domHelpersStrings.pageBreakInside

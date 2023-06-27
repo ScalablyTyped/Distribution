@@ -25,6 +25,14 @@ trait AuthOptions extends StObject {
   
   var clientID: String
   
+  /**
+    * The domain the cookie is accessible from.
+    * If not set, the cookie is scoped to the current domain, including the subdomain.
+    * To keep a user logged in across multiple subdomains set this to your top-level domain
+    * and prefixed with a `.` (eg: `.example.com`)
+    */
+  var cookieDomain: js.UndefOr[String] = js.undefined
+  
   var domain: String
   
   var jwksURI: js.UndefOr[String] = js.undefined
@@ -76,6 +84,10 @@ object AuthOptions {
     inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    
+    inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+    
+    inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

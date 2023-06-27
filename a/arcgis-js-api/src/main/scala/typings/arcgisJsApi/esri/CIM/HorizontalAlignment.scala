@@ -11,32 +11,32 @@ sealed trait HorizontalAlignment extends StObject
 object HorizontalAlignment extends StObject {
   
   /**
-    * Centered.
-    */
+  			 * Centered.
+  			 */
   @js.native
   sealed trait Center
     extends StObject
        with HorizontalAlignment
   
   /**
-    * Justified alignment.
-    */
+  			 * Justified alignment.
+  			 */
   @js.native
   sealed trait Justify
     extends StObject
        with HorizontalAlignment
   
   /**
-    * Left aligned.
-    */
+  			 * Left aligned.
+  			 */
   @js.native
   sealed trait Left
     extends StObject
        with HorizontalAlignment
   
   /**
-    * Right aligned.
-    */
+  			 * Right aligned.
+  			 */
   @js.native
   sealed trait Right
     extends StObject

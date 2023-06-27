@@ -456,50 +456,50 @@ object mod {
     
     /**
       * If true, the picker will show on textbox focus and icon click when used in a button group
-      * @default: false
+      * @default false
       */
     var allowInputToggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the week of the year to the left of first day of the week.
-      * @default: false
+      * @default false
       */
     var calendarWeeks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Using a Bootstraps collapse to switch between date/time pickers.
-      * @default: true
+      * @default true
       */
     var collapse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes the heading of the datepicker when in "days" view.
-      * @default: "MMMM YYYY"
+      * @default "MMMM YYYY"
       */
     var dayViewHeaderFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Disables the section of days of the week, e.g. weekends.
       * Accepts: array of numbers from 0-6
-      * @default: false
+      * @default false
       */
     var daysOfWeekDisabled: js.UndefOr[js.Array[Double] | Boolean] = js.undefined
     
     /**
       * Will cause the date picker to stay open after a blur event.
-      * @default: false
+      * @default false
       */
     var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the picker default date/time. Overrides useCurrent
-      * @default: false
+      * @default false
       */
     var defaultDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * Disables selection of dates in the array, e.g. holidays
-      * @default: false
+      * @default false
       * IMPORTANT! The getter returns an Object NOT an Array, with keys being the dates, values being true.
       * eg disabledDates = ["2010-10-10"]; -> disabledDated will be { "2010-01-01": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
@@ -508,7 +508,7 @@ object mod {
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
-      * @default: false
+      * @default false
       * IMPORTANT! The getter returns an Object NOT an Array, with keys being the hours, values being true.
       * eg disabledHours = [0, 1]; -> disabledHours will be { "0": true, "1": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
@@ -518,13 +518,13 @@ object mod {
     /**
       * Disables time selection between the given moments
       * eg: [[moment({ h: 0 }), moment({ h: 8 })], [moment({ h: 18 }), moment({ h: 24 })]]
-      * @default: false
+      * @default false
       */
     var disabledTimeIntervals: js.UndefOr[Boolean | js.Array[js.Array[Moment]]] = js.undefined
     
     /**
       * Disables selection of dates NOT in the array, e.g. holidays
-      * @default: false
+      * @default false
       * IMPORTANT! The getter returns an Object NOT an Array, with keys being the dates, values being true.
       * eg enabledDates = ["2010-10-10"]; -> enabledDated will be { "2010-01-01": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
@@ -533,7 +533,7 @@ object mod {
     
     /**
       * Will allow or disallow hour selections (much like disabledTimeIntervals) but will affect all days
-      * @default: false
+      * @default false
       * IMPORTANT! The getter returns an Object NOT an Array, with keys being the hours, values being true.
       * eg enabledHours = [0, 1]; -> enabledHours will be { "0": true, "1": true }
       * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1499
@@ -542,19 +542,19 @@ object mod {
     
     /**
       * Allows for several input formats to be valid. See: https://github.com/Eonasdan/bootstrap-datetimepicker/pull/666
-      * @default: false
+      * @default false
       */
     var extraFormats: js.UndefOr[Boolean | (js.Array[String | MomentBuiltinFormat])] = js.undefined
     
     /**
       * If false, the textbox will not be given focus when the picker is shown
-      * @default: true
+      * @default true
       */
     var focusOnShow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * See momentjs' docs for valid formats. Format also dictates what components are shown, e.g. MM/dd/YYYY will not display the time picker.
-      * @default: false
+      * @default false
       */
     var format: js.UndefOr[Boolean | String | MomentBuiltinFormat] = js.undefined
     
@@ -563,25 +563,25 @@ object mod {
     
     /**
       * Allow date picker show event to fire even when the associated input element has the readonly="readonly"property.
-      * @default: false
+      * @default false
       */
     var ignoreReadonly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will display the picker inline without the need of a input field. This will also hide borders and shadows.
-      * @default: false
+      * @default false
       */
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will cause the date picker to not revert or overwrite invalid dates.
-      * @default: false
+      * @default false
       */
     var keepInvalid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will cause the date picker to stay open after selecting a date if no time components are being used.
-      * @default: false
+      * @default false
       */
     var keepOpen: js.UndefOr[Boolean] = js.undefined
     
@@ -597,21 +597,21 @@ object mod {
     
     /**
       * See momentjs for valid locales. You must include moment-with-locales.js or a local js file.
-      * @default: moment.locale()
+      * @default moment.locale()
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /**
       * Prevents date/time selections after this date.
       * maxDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
-      * @default: false
+      * @default false
       */
     var maxDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * Prevents date/time selections before this date.
       * minDate will override defaultDate and useCurrent if either of these settings are the same day since both options are invalid according to the rules you've selected.
-      * @default: false
+      * @default false
       */
     var minDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
@@ -624,45 +624,45 @@ object mod {
     /**
       * Show the "Clear" button in the icon toolbar.
       * Clicking the "Clear" button will set the calendar to null.
-      * @default: false
+      * @default false
       */
     var showClear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the "Close" button in the icon toolbar.
       * Clicking the "Close" button will call hide()
-      * @default: false
+      * @default false
       */
     var showClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the "Today" button in the icon toolbar.
       * Clicking the "Today" button will set the calendar view and set the date to now.
-      * @default: false
+      * @default false
       */
     var showTodayButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the picker side by side when using the time and date together.
-      * @default: false
+      * @default false
       */
     var sideBySide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of minutes the up/down arrow's will move the minutes value in the time picker
-      * @default: 1
+      * @default 1
       */
     var stepping: js.UndefOr[Double] = js.undefined
     
     /**
       * Timezone to use, if moment-timezone is loaded. If null or empty string, ignore timezones.
-      * @default: ""
+      * @default ""
       */
     var timeZone: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Changes the placement of the icon toolbar.
-      * @default: "default"
+      * @default "default"
       */
     var toolbarPlacement: js.UndefOr[default | top | bottom] = js.undefined
     
@@ -671,32 +671,32 @@ object mod {
     
     /**
       * On show, will set the picker to the current date/time
-      * @default: true
+      * @default true
       */
     var useCurrent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines if moment should use strict date parsing when considering a date to be valid
-      * @default: false
+      * @default false
       */
     var useStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This will change the viewDate without changing or setting the selected date.
-      * @default: false
+      * @default false
       */
     var viewDate: js.UndefOr[Boolean | Moment | js.Date | String] = js.undefined
     
     /**
       * The default view to display when the picker is shown.
       * Note: To limit the picker to selecting, for instance the year and month, use format: MM/YYYY
-      * @default: "days"
+      * @default "days"
       */
     var viewMode: js.UndefOr[decades | years | months | days] = js.undefined
     
     /**
       * On picker show, places the widget at the identifier (string) or jQuery object if the element has css position: "relative"
-      * @default: null
+      * @default null
       */
     var widgetParent: js.UndefOr[String | JQuery | Null] = js.undefined
     

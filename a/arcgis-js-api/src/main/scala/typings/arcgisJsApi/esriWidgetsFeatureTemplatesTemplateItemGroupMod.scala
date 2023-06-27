@@ -11,10 +11,10 @@ object esriWidgetsFeatureTemplatesTemplateItemGroupMod {
   @JSImport("esri/widgets/FeatureTemplates/TemplateItemGroup", JSImport.Namespace)
   @js.native
   /**
-    * This is a read-only support class that represents a group of items displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItemGroup.html)
-    */
+  		 * This is a read-only support class that represents a group of items displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItemGroup.html)
+  		 */
   open class ^ ()
     extends StObject
        with TemplateItemGroup {

@@ -13,49 +13,49 @@ trait GeoRSSLayerProperties
      with BlendLayerProperties {
   
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#legendEnabled)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Symbol used to represent line features from the GeoRSS feed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#lineSymbol)
-    */
+  		 * Symbol used to represent line features from the GeoRSS feed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#lineSymbol)
+  		 */
   var lineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * Symbol used to represent point features from the GeoRSS feed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
-    */
+  		 * Symbol used to represent point features from the GeoRSS feed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
+  		 */
   var pointSymbol: js.UndefOr[PictureMarkerSymbolProper | SimpleMarkerSymbolPropert] = js.undefined
   
   /**
-    * Symbol used to represent polygon features from the GeoRSS feed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
-    */
+  		 * Symbol used to represent polygon features from the GeoRSS feed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
+  		 */
   var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.undefined
   
   /**
-    * Refresh interval of the layer in minutes.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#refreshInterval)
-    */
+  		 * Refresh interval of the layer in minutes.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#refreshInterval)
+  		 */
   var refreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The URL pointing to a GeoRSS file.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#url)
-    */
+  		 * The URL pointing to a GeoRSS file.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object GeoRSSLayerProperties {

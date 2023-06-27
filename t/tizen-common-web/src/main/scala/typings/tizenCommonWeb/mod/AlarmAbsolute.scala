@@ -36,7 +36,7 @@ open class AlarmAbsolute protected () extends Alarm_ {
     *
     * @returns The date/time of the next alarm trigger.
     *
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def getNextScheduledDate(): js.Date | Null = js.native
   

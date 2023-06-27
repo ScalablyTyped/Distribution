@@ -49,12 +49,12 @@ object mod {
     
     var onError: js.UndefOr[OnError] = js.undefined
     
-    var url: String
+    var url: js.UndefOr[String] = js.undefined
   }
   object CreateChannelArgs {
     
-    inline def apply(url: String): CreateChannelArgs = {
-      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    inline def apply(): CreateChannelArgs = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateChannelArgs]
     }
     
@@ -70,6 +70,8 @@ object mod {
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

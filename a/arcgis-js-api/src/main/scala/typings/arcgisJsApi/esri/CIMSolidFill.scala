@@ -9,38 +9,38 @@ trait CIMSolidFill
      with CIMSymbolLayer {
   
   /**
-    * The color that is applied to the fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
-    */
+  		 * The color that is applied to the fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
+  		 */
   var color: js.Array[Double]
   
   /**
-    * A value indicating whether the color can be changed for this symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
-    */
+  		 * A value indicating whether the color can be changed for this symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The geometric effects applied to the symbol layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
-    */
+  		 * The geometric effects applied to the symbol layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * A value indicating whether the symbol layer is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
-    */
+  		 * A value indicating whether the symbol layer is visible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
+  		 */
   var enable: Boolean
   
   /**
-    * The primitive name of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
-    */
+  		 * The primitive name of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSolidFill)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidFill

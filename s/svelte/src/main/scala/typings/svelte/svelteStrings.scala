@@ -1082,6 +1082,10 @@ object svelteStrings {
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section extends StObject
   inline def section: section = "section".asInstanceOf[section]
   

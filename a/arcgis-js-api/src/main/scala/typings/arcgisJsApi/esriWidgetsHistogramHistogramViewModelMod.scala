@@ -11,10 +11,10 @@ object esriWidgetsHistogramHistogramViewModelMod {
   @JSImport("esri/widgets/Histogram/HistogramViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html)
-    */
+  		 * Provides the logic for the [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with HistogramViewModel {

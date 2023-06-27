@@ -182,6 +182,8 @@ import typings.std.ScrollToOptions
 import typings.std.SecurityPolicyViolationEvent
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import typings.std.StylePropertyMap
+import typings.std.StylePropertyMapReadOnly
 import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
@@ -568,6 +570,7 @@ import typings.zinggrid.zinggridStrings.s_
 import typings.zinggrid.zinggridStrings.samp
 import typings.zinggrid.zinggridStrings.script
 import typings.zinggrid.zinggridStrings.scroll
+import typings.zinggrid.zinggridStrings.search
 import typings.zinggrid.zinggridStrings.section
 import typings.zinggrid.zinggridStrings.securitypolicyviolation
 import typings.zinggrid.zinggridStrings.seeked
@@ -722,9 +725,11 @@ trait ZingGrid
   /* standard dom */
   val TEXT_NODE: `3` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKey) */
   /* standard dom */
   var accessKey: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKeyLabel) */
   /* standard dom */
   val accessKeyLabel: String = js.native
   
@@ -742,6 +747,8 @@ trait ZingGrid
     * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
     *
     * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
     */
   /* standard dom */
   def addEventListener(`type`: String): Unit = js.native
@@ -3142,12 +3149,15 @@ trait ZingGrid
     * Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/after)
     */
   /* standard dom */
   def after(nodes: (Node | String)*): Unit = js.native
   
   var align: js.UndefOr[center | left | right] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animate) */
   /* standard dom */
   def animate(): Animation = js.native
   def animate(keyframes: js.Array[Keyframe]): Animation = js.native
@@ -3163,134 +3173,183 @@ trait ZingGrid
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/append)
     */
   /* standard dom */
   def append(nodes: (Node | String)*): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/appendChild) */
   /* standard dom */
   def appendChild[T /* <: Node */](node: T): T = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAtomic) */
   /* standard dom */
   var ariaAtomic: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAutoComplete) */
   /* standard dom */
   var ariaAutoComplete: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaBusy) */
   /* standard dom */
   var ariaBusy: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaChecked) */
   /* standard dom */
   var ariaChecked: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColCount) */
   /* standard dom */
   var ariaColCount: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColIndex) */
   /* standard dom */
   var ariaColIndex: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColSpan) */
   /* standard dom */
   var ariaColSpan: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaCurrent) */
   /* standard dom */
   var ariaCurrent: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaDisabled) */
   /* standard dom */
   var ariaDisabled: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaExpanded) */
   /* standard dom */
   var ariaExpanded: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHasPopup) */
   /* standard dom */
   var ariaHasPopup: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHidden) */
   /* standard dom */
   var ariaHidden: String | Null = js.native
   
   /* standard dom */
   var ariaInvalid: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaKeyShortcuts) */
   /* standard dom */
   var ariaKeyShortcuts: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLabel) */
   /* standard dom */
   var ariaLabel: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLevel) */
   /* standard dom */
   var ariaLevel: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLive) */
   /* standard dom */
   var ariaLive: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaModal) */
   /* standard dom */
   var ariaModal: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiLine) */
   /* standard dom */
   var ariaMultiLine: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiSelectable) */
   /* standard dom */
   var ariaMultiSelectable: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaOrientation) */
   /* standard dom */
   var ariaOrientation: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPlaceholder) */
   /* standard dom */
   var ariaPlaceholder: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPosInSet) */
   /* standard dom */
   var ariaPosInSet: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPressed) */
   /* standard dom */
   var ariaPressed: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaReadOnly) */
   /* standard dom */
   var ariaReadOnly: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRequired) */
   /* standard dom */
   var ariaRequired: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRoleDescription) */
   /* standard dom */
   var ariaRoleDescription: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowCount) */
   /* standard dom */
   var ariaRowCount: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowIndex) */
   /* standard dom */
   var ariaRowIndex: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowSpan) */
   /* standard dom */
   var ariaRowSpan: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSelected) */
   /* standard dom */
   var ariaSelected: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSetSize) */
   /* standard dom */
   var ariaSetSize: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSort) */
   /* standard dom */
   var ariaSort: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMax) */
   /* standard dom */
   var ariaValueMax: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMin) */
   /* standard dom */
   var ariaValueMin: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueNow) */
   /* standard dom */
   var ariaValueNow: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueText) */
   /* standard dom */
   var ariaValueText: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/assignedSlot) */
   /* standard dom */
   val assignedSlot: HTMLSlotElement | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals) */
   /* standard dom */
   def attachInternals(): ElementInternals = js.native
   
-  /** Creates a shadow root for element and returns it. */
+  /**
+    * Creates a shadow root for element and returns it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/attachShadow)
+    */
   /* standard dom */
   def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
   
+  /* standard dom */
+  val attributeStyleMap: StylePropertyMap = js.native
+  
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/attributes) */
   /* standard dom */
   val attributes: NamedNodeMap = js.native
   
@@ -3300,7 +3359,11 @@ trait ZingGrid
   /* standard dom */
   var autofocus: Boolean = js.native
   
-  /** Returns node's node document's document base URL. */
+  /**
+    * Returns node's node document's document base URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/baseURI)
+    */
   /* standard dom */
   val baseURI: String = js.native
   
@@ -3308,10 +3371,13 @@ trait ZingGrid
     * Inserts nodes just before node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/before)
     */
   /* standard dom */
   def before(nodes: (Node | String)*): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/blur) */
   /* standard dom */
   def blur(): Unit = js.native
   
@@ -3353,41 +3419,67 @@ trait ZingGrid
   def checkVisibility(): Boolean = js.native
   def checkVisibility(options: CheckVisibilityOptions): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/childElementCount) */
   /* standard dom */
   val childElementCount: Double = js.native
   
-  /** Returns the children. */
+  /**
+    * Returns the children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/childNodes)
+    */
   /* standard dom */
   val childNodes: NodeListOf[ChildNode] = js.native
   
-  /** Returns the child elements. */
+  /**
+    * Returns the child elements.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/children)
+    */
   /* standard dom */
   val children: HTMLCollection = js.native
   
-  /** Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object. */
+  /**
+    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/classList)
+    */
   /* standard dom */
   val classList: DOMTokenList = js.native
   
-  /** Returns the value of element's class content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's class content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/className)
+    */
   /* standard dom */
   var className: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/click) */
   /* standard dom */
   def click(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientHeight) */
   /* standard dom */
   val clientHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientLeft) */
   /* standard dom */
   val clientLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientTop) */
   /* standard dom */
   val clientTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientWidth) */
   /* standard dom */
   val clientWidth: Double = js.native
   
-  /** Returns a copy of node. If deep is true, the copy also includes the node's descendants. */
+  /**
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/cloneNode)
+    */
   /* standard dom */
   def cloneNode(): Node = js.native
   def cloneNode(deep: Boolean): Node = js.native
@@ -3400,7 +3492,11 @@ trait ZingGrid
   
   /* standard dom */
   def closest[E /* <: Element */](selectors: String): E | Null = js.native
-  /** Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise. */
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/closest)
+    */
   /* standard dom */
   @JSName("closest")
   def closest_a(selector: a_): HTMLAnchorElement | Null = js.native
@@ -3726,6 +3822,8 @@ trait ZingGrid
   @JSName("closest")
   def closest_script(selector: script): HTMLScriptElement | Null = js.native
   @JSName("closest")
+  def closest_search(selector: search): HTMLElement | Null = js.native
+  @JSName("closest")
   def closest_section(selector: section): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_select(selector: select): HTMLSelectElement | Null = js.native
@@ -3835,19 +3933,32 @@ trait ZingGrid
   
   var compact: js.UndefOr[Boolean] = js.native
   
-  /** Returns a bitmask indicating the position of other relative to node. */
+  /**
+    * Returns a bitmask indicating the position of other relative to node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/compareDocumentPosition)
+    */
   /* standard dom */
   def compareDocumentPosition(other: Node): Double = js.native
+  
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/computedStyleMap) */
+  /* standard dom */
+  def computedStyleMap(): StylePropertyMapReadOnly = js.native
   
   var config: js.UndefOr[Any] = js.native
   
   var confirmDelete: js.UndefOr[disabled] = js.native
   
-  /** Returns true if other is an inclusive descendant of node, and false otherwise. */
+  /**
+    * Returns true if other is an inclusive descendant of node, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/contains)
+    */
   /* standard dom */
   def contains(): Boolean = js.native
   def contains(other: Node): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/contentEditable) */
   /* standard dom */
   var contentEditable: String = js.native
   
@@ -3885,6 +3996,7 @@ trait ZingGrid
   
   var data: js.UndefOr[Any] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dataset) */
   /* standard dom */
   val dataset: DOMStringMap = js.native
   
@@ -3895,13 +4007,19 @@ trait ZingGrid
   /**
     * @description The HTML standard direction to indicate direction of grid's columns and text
     */
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dir) */
   /* standard dom */
   var dir: String = js.native
   
-  /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+  /**
+    * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+    */
   /* standard dom */
   def dispatchEvent(event: Event): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/draggable) */
   /* standard dom */
   var draggable: Boolean = js.native
   
@@ -3909,6 +4027,7 @@ trait ZingGrid
   
   var editorControls: js.UndefOr[editor | remover | creator | all | Boolean] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/enterKeyHint) */
   /* standard dom */
   var enterKeyHint: String = js.native
   
@@ -3929,11 +4048,19 @@ trait ZingGrid
     */
   def filterColumn(columnIndex: String, filter: String): ZingGrid = js.native
   
-  /** Returns the first child. */
+  /**
+    * Returns the first child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/firstChild)
+    */
   /* standard dom */
   val firstChild: ChildNode | Null = js.native
   
-  /** Returns the first child that is an element, and null otherwise. */
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/firstElementChild)
+    */
   /* standard dom */
   val firstElementChild: Element | Null = js.native
   
@@ -3943,6 +4070,7 @@ trait ZingGrid
     */
   def firstPage(): ZingGrid = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/focus) */
   /* standard dom */
   def focus(): Unit = js.native
   def focus(options: FocusOptions): Unit = js.native
@@ -3964,30 +4092,46 @@ trait ZingGrid
     */
   def fromNow(date: js.Date, raw: Boolean): String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAnimations) */
   /* standard dom */
   def getAnimations(): js.Array[Animation] = js.native
   def getAnimations(options: GetAnimationsOptions): js.Array[Animation] = js.native
   
-  /** Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise. */
+  /**
+    * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttribute)
+    */
   /* standard dom */
   def getAttribute(qualifiedName: String): String | Null = js.native
   
-  /** Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise. */
+  /**
+    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNS)
+    */
   /* standard dom */
   def getAttributeNS(namespace: String, localName: String): String | Null = js.native
   def getAttributeNS(namespace: Null, localName: String): String | Null = js.native
   
-  /** Returns the qualified names of all element's attributes. Can contain duplicates. */
+  /**
+    * Returns the qualified names of all element's attributes. Can contain duplicates.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames)
+    */
   /* standard dom */
   def getAttributeNames(): js.Array[String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNode) */
   /* standard dom */
   def getAttributeNode(qualifiedName: String): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNodeNS) */
   /* standard dom */
   def getAttributeNodeNS(namespace: String, localName: String): Attr | Null = js.native
   def getAttributeNodeNS(namespace: Null, localName: String): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect) */
   /* standard dom */
   def getBoundingClientRect(): DOMRect = js.native
   
@@ -4012,6 +4156,7 @@ trait ZingGrid
     */
   def getCells(): js.Array[Any] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getClientRects) */
   /* standard dom */
   def getClientRects(): DOMRectList = js.native
   
@@ -4081,7 +4226,11 @@ trait ZingGrid
     */
   def getEditorControls(): String = js.native
   
-  /** Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes. */
+  /**
+    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName)
+    */
   /* standard dom */
   def getElementsByClassName(classNames: String): HTMLCollectionOf[Element] = js.native
   
@@ -4094,6 +4243,7 @@ trait ZingGrid
   /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1998MathMathML(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, localName: String): HTMLCollectionOf[MathMLElement] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagNameNS) */
   /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: String): HTMLCollectionOf[HTMLElement] = js.native
@@ -4101,6 +4251,7 @@ trait ZingGrid
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: String): HTMLCollectionOf[SVGElement] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName) */
   /* standard dom */
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a_): HTMLCollectionOf[HTMLAnchorElement] = js.native
@@ -4478,6 +4629,8 @@ trait ZingGrid
   @JSName("getElementsByTagName")
   def getElementsByTagName_script(qualifiedName: script): HTMLCollectionOf[HTMLScriptElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_search(qualifiedName: search): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_section(qualifiedName: section): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
@@ -4650,7 +4803,11 @@ trait ZingGrid
     */
   def getPager(): Boolean = js.native
   
-  /** Returns node's root. */
+  /**
+    * Returns node's root.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/getRootNode)
+    */
   /* standard dom */
   def getRootNode(): Node = js.native
   def getRootNode(options: GetRootNodeOptions): Node = js.native
@@ -4759,23 +4916,40 @@ trait ZingGrid
   
   var gridlines: js.UndefOr[both | horz | horizontal | vert | vertical] = js.native
   
-  /** Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise. */
+  /**
+    * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttribute)
+    */
   /* standard dom */
   def hasAttribute(qualifiedName: String): Boolean = js.native
   
-  /** Returns true if element has an attribute whose namespace is namespace and local name is localName. */
+  /**
+    * Returns true if element has an attribute whose namespace is namespace and local name is localName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttributeNS)
+    */
   /* standard dom */
   def hasAttributeNS(namespace: String, localName: String): Boolean = js.native
   def hasAttributeNS(namespace: Null, localName: String): Boolean = js.native
   
-  /** Returns true if element has attributes, and false otherwise. */
+  /**
+    * Returns true if element has attributes, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttributes)
+    */
   /* standard dom */
   def hasAttributes(): Boolean = js.native
   
-  /** Returns whether node has children. */
+  /**
+    * Returns whether node has children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/hasChildNodes)
+    */
   /* standard dom */
   def hasChildNodes(): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasPointerCapture) */
   /* standard dom */
   def hasPointerCapture(pointerId: Double): Boolean = js.native
   
@@ -4806,6 +4980,7 @@ trait ZingGrid
   /**
     * @description Presence of attribute hides the column
     */
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/hidden) */
   /* standard dom */
   var hidden: Boolean = js.native
   
@@ -4819,31 +4994,43 @@ trait ZingGrid
   
   var iconSetData: js.UndefOr[String] = js.native
   
-  /** Returns the value of element's id content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's id content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/id)
+    */
   /* standard dom */
   var id: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/inert) */
   /* standard dom */
   var inert: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/innerHTML) */
   /* standard dom */
   var innerHTML: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/innerText) */
   /* standard dom */
   var innerText: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/inputMode) */
   /* standard dom */
   var inputMode: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentElement) */
   /* standard dom */
   def insertAdjacentElement(where: InsertPosition, element: Element): Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentHTML) */
   /* standard dom */
   def insertAdjacentHTML(position: InsertPosition, text: String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentText) */
   /* standard dom */
   def insertAdjacentText(where: InsertPosition, data: String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/insertBefore) */
   /* standard dom */
   def insertBefore[T /* <: Node */](node: T): T = js.native
   def insertBefore[T /* <: Node */](node: T, child: Node): T = js.native
@@ -4856,22 +5043,33 @@ trait ZingGrid
     */
   def insertRow(data: Any, id: String, noDataSource: Boolean): ZingGrid = js.native
   
-  /** Returns true if node is connected and false otherwise. */
+  /**
+    * Returns true if node is connected and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isConnected)
+    */
   /* standard dom */
   val isConnected: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/isContentEditable) */
   /* standard dom */
   val isContentEditable: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isDefaultNamespace) */
   /* standard dom */
   def isDefaultNamespace(): Boolean = js.native
   def isDefaultNamespace(namespace: String): Boolean = js.native
   
-  /** Returns whether node and otherNode have the same properties. */
+  /**
+    * Returns whether node and otherNode have the same properties.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isEqualNode)
+    */
   /* standard dom */
   def isEqualNode(): Boolean = js.native
   def isEqualNode(otherNode: Node): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isSameNode) */
   /* standard dom */
   def isSameNode(): Boolean = js.native
   def isSameNode(otherNode: Node): Boolean = js.native
@@ -4879,14 +5077,23 @@ trait ZingGrid
   /**
     * @description Sets the language to use for the grid
     */
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/lang) */
   /* standard dom */
   var lang: String = js.native
   
-  /** Returns the last child. */
+  /**
+    * Returns the last child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lastChild)
+    */
   /* standard dom */
   val lastChild: ChildNode | Null = js.native
   
-  /** Returns the last child that is an element, and null otherwise. */
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lastElementChild)
+    */
   /* standard dom */
   val lastElementChild: Element | Null = js.native
   
@@ -4905,27 +5112,45 @@ trait ZingGrid
   
   var loadmask: js.UndefOr[disabled] = js.native
   
-  /** Returns the local name. */
+  /**
+    * Returns the local name.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/localName)
+    */
   /* standard dom */
   val localName: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupNamespaceURI) */
   /* standard dom */
   def lookupNamespaceURI(): String | Null = js.native
   def lookupNamespaceURI(prefix: String): String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupPrefix) */
   /* standard dom */
   def lookupPrefix(): String | Null = js.native
   def lookupPrefix(namespace: String): String | Null = js.native
   
-  /** Returns true if matching selectors against element's root yields element, and false otherwise. */
+  /**
+    * Returns true if matching selectors against element's root yields element, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/matches)
+    */
   /* standard dom */
   def matches(selectors: String): Boolean = js.native
   
-  /** Returns the namespace. */
+  /**
+    * Returns the namespace.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/namespaceURI)
+    */
   /* standard dom */
   val namespaceURI: String | Null = js.native
   
-  /** Returns the first following sibling that is an element, and null otherwise. */
+  /**
+    * Returns the first following sibling that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/nextElementSibling)
+    */
   /* standard dom */
   val nextElementSibling: Element | Null = js.native
   
@@ -4934,93 +5159,132 @@ trait ZingGrid
     */
   def nextPage(): ZingGrid = js.native
   
-  /** Returns the next sibling. */
+  /**
+    * Returns the next sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)
+    */
   /* standard dom */
   val nextSibling: ChildNode | Null = js.native
   
   var noData: js.UndefOr[String] = js.native
   
-  /** Returns a string appropriate for the type of node. */
+  /**
+    * Returns a string appropriate for the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeName)
+    */
   /* standard dom */
   val nodeName: String = js.native
   
-  /** Returns the type of node. */
+  /**
+    * Returns the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeType)
+    */
   /* standard dom */
   val nodeType: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeValue) */
   /* standard dom */
   var nodeValue: String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/nonce) */
   /* standard dom */
   var nonce: js.UndefOr[String] = js.native
   
-  /** Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes. */
+  /**
+    * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/normalize)
+    */
   /* standard dom */
   def normalize(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetHeight) */
   /* standard dom */
   val offsetHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetLeft) */
   /* standard dom */
   val offsetLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetParent) */
   /* standard dom */
   val offsetParent: Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetTop) */
   /* standard dom */
   val offsetTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetWidth) */
   /* standard dom */
   val offsetWidth: Double = js.native
   
   /**
     * Fires when the user aborts the download.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
     */
   /* standard dom */
   var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event) */
   /* standard dom */
   var onanimationcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event) */
   /* standard dom */
   var onanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event) */
   /* standard dom */
   var onanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event) */
   /* standard dom */
   var onanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event) */
   /* standard dom */
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforeinput_event) */
   /* standard dom */
   var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
   
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/cancel_event) */
   /* standard dom */
   var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
     */
   /* standard dom */
   var oncanplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event) */
   /* standard dom */
   var oncanplaythrough: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the contents of the object or selection have changed.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
     */
   /* standard dom */
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5028,32 +5292,42 @@ trait ZingGrid
   /**
     * Fires when the user clicks the left mouse button on the object
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
     */
   /* standard dom */
   var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event) */
   /* standard dom */
   var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the right mouse button in the client area, opening the context menu.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
     */
   /* standard dom */
   var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event) */
   /* standard dom */
   var oncopy: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event) */
   /* standard dom */
   var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event) */
   /* standard dom */
   var oncut: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user double-clicks the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
     */
   /* standard dom */
   var ondblclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -5061,6 +5335,8 @@ trait ZingGrid
   /**
     * Fires on the source object continuously during a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
     */
   /* standard dom */
   var ondrag: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -5068,6 +5344,8 @@ trait ZingGrid
   /**
     * Fires on the source object when the user releases the mouse at the close of a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
     */
   /* standard dom */
   var ondragend: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -5075,6 +5353,8 @@ trait ZingGrid
   /**
     * Fires on the target element when the user drags the object to a valid drop target.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
     */
   /* standard dom */
   var ondragenter: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -5082,6 +5362,8 @@ trait ZingGrid
   /**
     * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
     */
   /* standard dom */
   var ondragleave: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -5089,6 +5371,8 @@ trait ZingGrid
   /**
     * Fires on the target element continuously while the user drags the object over a valid drop target.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
     */
   /* standard dom */
   var ondragover: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -5096,16 +5380,21 @@ trait ZingGrid
   /**
     * Fires on the source object when the user starts to drag a text selection or selected object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
     */
   /* standard dom */
   var ondragstart: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event) */
   /* standard dom */
   var ondrop: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the duration attribute is updated.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
     */
   /* standard dom */
   var ondurationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5113,6 +5402,8 @@ trait ZingGrid
   /**
     * Occurs when the media element is reset to its initial state.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
     */
   /* standard dom */
   var onemptied: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5120,6 +5411,8 @@ trait ZingGrid
   /**
     * Occurs when the end of playback is reached.
     * @param ev The event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
     */
   /* standard dom */
   var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5127,6 +5420,8 @@ trait ZingGrid
   /**
     * Fires when an error occurs during object loading.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/error_event)
     */
   /* standard dom */
   var onerror: OnErrorEventHandler = js.native
@@ -5134,31 +5429,41 @@ trait ZingGrid
   /**
     * Fires when the object receives focus.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
     */
   /* standard dom */
   var onfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event) */
   /* standard dom */
   var onformdata: (js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenchange_event) */
   /* standard dom */
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenerror_event) */
   /* standard dom */
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event) */
   /* standard dom */
   var ongotpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/input_event) */
   /* standard dom */
   var oninput: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event) */
   /* standard dom */
   var oninvalid: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the user presses a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
     */
   /* standard dom */
   var onkeydown: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -5167,6 +5472,8 @@ trait ZingGrid
     * Fires when the user presses an alphanumeric key.
     * @param ev The event.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keypress_event)
     */
   /* standard dom */
   var onkeypress: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -5174,6 +5481,8 @@ trait ZingGrid
   /**
     * Fires when the user releases a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
     */
   /* standard dom */
   var onkeyup: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -5181,6 +5490,8 @@ trait ZingGrid
   /**
     * Fires immediately after the browser loads the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement/load_event)
     */
   /* standard dom */
   var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5188,6 +5499,8 @@ trait ZingGrid
   /**
     * Occurs when media data is loaded at the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
     */
   /* standard dom */
   var onloadeddata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5195,6 +5508,8 @@ trait ZingGrid
   /**
     * Occurs when the duration and dimensions of the media have been determined.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
     */
   /* standard dom */
   var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5202,29 +5517,38 @@ trait ZingGrid
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
     */
   /* standard dom */
   var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lostpointercapture_event) */
   /* standard dom */
   var onlostpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the object with either mouse button.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
     */
   /* standard dom */
   var onmousedown: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event) */
   /* standard dom */
   var onmouseenter: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event) */
   /* standard dom */
   var onmouseleave: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user moves the mouse over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
     */
   /* standard dom */
   var onmousemove: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -5232,6 +5556,8 @@ trait ZingGrid
   /**
     * Fires when the user moves the mouse pointer outside the boundaries of the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
     */
   /* standard dom */
   var onmouseout: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -5239,6 +5565,8 @@ trait ZingGrid
   /**
     * Fires when the user moves the mouse pointer into the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
     */
   /* standard dom */
   var onmouseover: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -5246,16 +5574,21 @@ trait ZingGrid
   /**
     * Fires when the user releases a mouse button while the mouse is over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
     */
   /* standard dom */
   var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event) */
   /* standard dom */
   var onpaste: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Occurs when playback is paused.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
     */
   /* standard dom */
   var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5263,6 +5596,8 @@ trait ZingGrid
   /**
     * Occurs when the play method is requested.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
     */
   /* standard dom */
   var onplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5270,37 +5605,49 @@ trait ZingGrid
   /**
     * Occurs when the audio or video has started playing.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
     */
   /* standard dom */
   var onplaying: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event) */
   /* standard dom */
   var onpointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event) */
   /* standard dom */
   var onpointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event) */
   /* standard dom */
   var onpointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event) */
   /* standard dom */
   var onpointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event) */
   /* standard dom */
   var onpointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event) */
   /* standard dom */
   var onpointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event) */
   /* standard dom */
   var onpointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event) */
   /* standard dom */
   var onpointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
   /**
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
     */
   /* standard dom */
   var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]) | Null = js.native
@@ -5308,6 +5655,8 @@ trait ZingGrid
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
     */
   /* standard dom */
   var onratechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5315,26 +5664,34 @@ trait ZingGrid
   /**
     * Fires when the user resets a form.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
     */
   /* standard dom */
   var onreset: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event) */
   /* standard dom */
   var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
     */
   /* standard dom */
   var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event) */
   /* standard dom */
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the seek operation ends.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
     */
   /* standard dom */
   var onseeked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5342,6 +5699,8 @@ trait ZingGrid
   /**
     * Occurs when the current playback position is moved.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
     */
   /* standard dom */
   var onseeking: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5349,32 +5708,42 @@ trait ZingGrid
   /**
     * Fires when the current selection changes.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
     */
   /* standard dom */
   var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event) */
   /* standard dom */
   var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event) */
   /* standard dom */
   var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event) */
   /* standard dom */
   var onslotchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
     */
   /* standard dom */
   var onstalled: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event) */
   /* standard dom */
   var onsubmit: (js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]) | Null = js.native
   
   /**
     * Occurs if the load operation has been intentionally halted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
     */
   /* standard dom */
   var onsuspend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5382,40 +5751,53 @@ trait ZingGrid
   /**
     * Occurs to indicate the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
     */
   /* standard dom */
   var ontimeupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event) */
   /* standard dom */
   var ontoggle: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event) */
   /* standard dom */
   var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event) */
   /* standard dom */
   var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event) */
   /* standard dom */
   var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event) */
   /* standard dom */
   var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event) */
   /* standard dom */
   var ontransitioncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event) */
   /* standard dom */
   var ontransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event) */
   /* standard dom */
   var ontransitionrun: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event) */
   /* standard dom */
   var ontransitionstart: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the volume is changed, or playback is muted or unmuted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
     */
   /* standard dom */
   var onvolumechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -5423,32 +5805,53 @@ trait ZingGrid
   /**
     * Occurs when playback stops because the next frame of a video resource is not available.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
     */
   /* standard dom */
   var onwaiting: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationend`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
+    */
   /* standard dom */
   var onwebkitanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationiteration`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationiteration`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
+    */
   /* standard dom */
   var onwebkitanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationstart`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationstart`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
+    */
   /* standard dom */
   var onwebkitanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `ontransitionend`. */
+  /**
+    * @deprecated This is a legacy alias of `ontransitionend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
+    */
   /* standard dom */
   var onwebkittransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event) */
   /* standard dom */
   var onwheel: (js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/outerHTML) */
   /* standard dom */
   var outerHTML: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/outerText) */
   /* standard dom */
   var outerText: String = js.native
   
@@ -5473,18 +5876,31 @@ trait ZingGrid
   
   var params: js.UndefOr[Any] = js.native
   
-  /** Returns the parent element. */
+  /**
+    * Returns the parent element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentElement)
+    */
   /* standard dom */
   val parentElement: HTMLElement | Null = js.native
   
-  /** Returns the parent. */
+  /**
+    * Returns the parent.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentNode)
+    */
   /* standard dom */
   val parentNode: ParentNode | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/part) */
   /* standard dom */
   val part: DOMTokenList = js.native
   
-  /** Returns the namespace prefix. */
+  /**
+    * Returns the namespace prefix.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/prefix)
+    */
   /* standard dom */
   val prefix: String | Null = js.native
   
@@ -5492,6 +5908,8 @@ trait ZingGrid
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/prepend)
     */
   /* standard dom */
   def prepend(nodes: (Node | String)*): Unit = js.native
@@ -5501,11 +5919,19 @@ trait ZingGrid
     */
   def prevPage(): ZingGrid = js.native
   
-  /** Returns the first preceding sibling that is an element, and null otherwise. */
+  /**
+    * Returns the first preceding sibling that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/previousElementSibling)
+    */
   /* standard dom */
   val previousElementSibling: Element | Null = js.native
   
-  /** Returns the previous sibling. */
+  /**
+    * Returns the previous sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/previousSibling)
+    */
   /* standard dom */
   val previousSibling: ChildNode | Null = js.native
   
@@ -5514,7 +5940,11 @@ trait ZingGrid
   
   /* standard dom */
   def querySelectorAll[E /* <: Element */](selectors: String): NodeListOf[E] = js.native
-  /** Returns all element descendants of node that match selectors. */
+  /**
+    * Returns all element descendants of node that match selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
+    */
   /* standard dom */
   @JSName("querySelectorAll")
   def querySelectorAll_a(selectors: a_): NodeListOf[HTMLAnchorElement] = js.native
@@ -5892,6 +6322,8 @@ trait ZingGrid
   @JSName("querySelectorAll")
   def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_search(selectors: search): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
@@ -5978,7 +6410,11 @@ trait ZingGrid
   @JSName("querySelectorAll")
   def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
-  /** Returns the first element that is a descendant of node that matches selectors. */
+  /**
+    * Returns the first element that is a descendant of node that matches selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelector)
+    */
   /* standard dom */
   @JSName("querySelector")
   def querySelector_a(selectors: a_): HTMLAnchorElement | Null = js.native
@@ -6356,6 +6792,8 @@ trait ZingGrid
   @JSName("querySelector")
   def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_search(selectors: search): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_section(selectors: section): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
@@ -6454,29 +6892,48 @@ trait ZingGrid
     */
   def refreshGrid(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/releasePointerCapture) */
   /* standard dom */
   def releasePointerCapture(pointerId: Double): Unit = js.native
   
-  /** Removes node. */
+  /**
+    * Removes node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/remove)
+    */
   /* standard dom */
   def remove(): Unit = js.native
   
-  /** Removes element's first attribute whose qualified name is qualifiedName. */
+  /**
+    * Removes element's first attribute whose qualified name is qualifiedName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttribute)
+    */
   /* standard dom */
   def removeAttribute(qualifiedName: String): Unit = js.native
   
-  /** Removes element's attribute whose namespace is namespace and local name is localName. */
+  /**
+    * Removes element's attribute whose namespace is namespace and local name is localName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttributeNS)
+    */
   /* standard dom */
   def removeAttributeNS(namespace: String, localName: String): Unit = js.native
   def removeAttributeNS(namespace: Null, localName: String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttributeNode) */
   /* standard dom */
   def removeAttributeNode(attr: Attr): Attr = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/removeChild) */
   /* standard dom */
   def removeChild[T /* <: Node */](child: T): T = js.native
   
-  /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+  /**
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+    */
   /* standard dom */
   def removeEventListener(`type`: String): Unit = js.native
   def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native
@@ -8886,6 +9343,7 @@ trait ZingGrid
     */
   def removeRow(rowIndex: String, noDataSource: Boolean): ZingGrid = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/replaceChild) */
   /* standard dom */
   def replaceChild[T /* <: Node */](node: Node, child: T): T = js.native
   
@@ -8893,6 +9351,8 @@ trait ZingGrid
     * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/replaceChildren)
     */
   /* standard dom */
   def replaceChildren(nodes: (Node | String)*): Unit = js.native
@@ -8901,6 +9361,8 @@ trait ZingGrid
     * Replaces node with nodes, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CharacterData/replaceWith)
     */
   /* standard dom */
   def replaceWith(nodes: (Node | String)*): Unit = js.native
@@ -8909,11 +9371,14 @@ trait ZingGrid
     * Displays element fullscreen and resolves promise when done.
     *
     * When supplied, options's navigationUI member indicates whether showing navigation UI while in fullscreen is preferred or not. If set to "show", navigation simplicity is preferred over screen space, and if set to "hide", more screen space is preferred. User agents are always free to honor user preference over the application's. The default value "auto" indicates no application preference.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/requestFullscreen)
     */
   /* standard dom */
   def requestFullscreen(): js.Promise[Unit] = js.native
   def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/requestPointerLock) */
   /* standard dom */
   def requestPointerLock(): Unit = js.native
   
@@ -8932,38 +9397,46 @@ trait ZingGrid
   
   var rowSelector: js.UndefOr[Boolean] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scroll) */
   /* standard dom */
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scroll(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollBy) */
   /* standard dom */
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollBy(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollHeight) */
   /* standard dom */
   val scrollHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollIntoView) */
   /* standard dom */
   def scrollIntoView(): Unit = js.native
   def scrollIntoView(arg: Boolean): Unit = js.native
   def scrollIntoView(arg: ScrollIntoViewOptions): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollLeft) */
   /* standard dom */
   var scrollLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTo) */
   /* standard dom */
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTop) */
   /* standard dom */
   var scrollTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollWidth) */
   /* standard dom */
   val scrollWidth: Double = js.native
   
@@ -8991,18 +9464,28 @@ trait ZingGrid
   
   var serverRendered: js.UndefOr[Boolean] = js.native
   
-  /** Sets the value of element's first attribute whose qualified name is qualifiedName to value. */
+  /**
+    * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttribute)
+    */
   /* standard dom */
   def setAttribute(qualifiedName: String, value: String): Unit = js.native
   
-  /** Sets the value of element's attribute whose namespace is namespace and local name is localName to value. */
+  /**
+    * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNS)
+    */
   /* standard dom */
   def setAttributeNS(namespace: String, qualifiedName: String, value: String): Unit = js.native
   def setAttributeNS(namespace: Null, qualifiedName: String, value: String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNode) */
   /* standard dom */
   def setAttributeNode(attr: Attr): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNodeNS) */
   /* standard dom */
   def setAttributeNodeNS(attr: Attr): Attr | Null = js.native
   
@@ -9208,6 +9691,7 @@ trait ZingGrid
     */
   def setPager(activate: Boolean): ZingGrid = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setPointerCapture) */
   /* standard dom */
   def setPointerCapture(pointerId: Double): Unit = js.native
   
@@ -9314,7 +9798,11 @@ trait ZingGrid
     */
   def setZebra(`type`: String): ZingGrid = js.native
   
-  /** Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise. */
+  /**
+    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/shadowRoot)
+    */
   /* standard dom */
   val shadowRoot: ShadowRoot | Null = js.native
   
@@ -9324,7 +9812,11 @@ trait ZingGrid
     */
   def showColumn(columnIndex: String): ZingGrid = js.native
   
-  /** Returns the value of element's slot content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's slot content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/slot)
+    */
   /* standard dom */
   var slot: String = js.native
   
@@ -9343,6 +9835,7 @@ trait ZingGrid
   
   var source: js.UndefOr[String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/spellcheck) */
   /* standard dom */
   var spellcheck: Boolean = js.native
   
@@ -9358,13 +9851,19 @@ trait ZingGrid
     (`top left`) | (`center left`) | (`bottom left`) | (`top center`) | center | (`bottom center`) | (`top right`) | (`center right`) | (`bottom right`) | bar
   ] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/style) */
   /* standard dom */
   val style: CSSStyleDeclaration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/tabIndex) */
   /* standard dom */
   var tabIndex: Double = js.native
   
-  /** Returns the HTML-uppercased qualified name. */
+  /**
+    * Returns the HTML-uppercased qualified name.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/tagName)
+    */
   /* standard dom */
   val tagName: String = js.native
   
@@ -9372,6 +9871,7 @@ trait ZingGrid
   
   var templateStartDelimiter: js.UndefOr[String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/textContent) */
   /* standard dom */
   var textContent: String | Null = js.native
   
@@ -9379,6 +9879,7 @@ trait ZingGrid
     android | black | default | dark | ios | urlToThemeFile | customThemeName | String
   ] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/title) */
   /* standard dom */
   var title: String = js.native
   
@@ -9386,6 +9887,8 @@ trait ZingGrid
     * If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
     *
     * Returns true if qualifiedName is now present, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute)
     */
   /* standard dom */
   def toggleAttribute(qualifiedName: String): Boolean = js.native
@@ -9452,7 +9955,11 @@ trait ZingGrid
   
   var viewportTypes: js.UndefOr[String] = js.native
   
-  /** @deprecated This is a legacy alias of `matches`. */
+  /**
+    * @deprecated This is a legacy alias of `matches`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/matches)
+    */
   /* standard dom */
   def webkitMatchesSelector(selectors: String): Boolean = js.native
   

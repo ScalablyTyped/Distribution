@@ -10,18 +10,18 @@ trait CIMGeometricEffectLocalizerFeather
      with CIMGeometricEffectType {
   
   /**
-    * The angle of the localizer feather.
-    */
+  			 * The angle of the localizer feather.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The length of the localizer feather.
-    */
+  			 * The length of the localizer feather.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The localizer feather style.
-    */
+  			 * The localizer feather style.
+  			 */
   var style: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectLocalizerFeatherStyle * / any */ String
   ] = js.undefined
@@ -30,8 +30,8 @@ trait CIMGeometricEffectLocalizerFeather
   var type_CIMGeometricEffectLocalizerFeather: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather
   
   /**
-    * The width of the localizer feather.
-    */
+  			 * The width of the localizer feather.
+  			 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectLocalizerFeather {

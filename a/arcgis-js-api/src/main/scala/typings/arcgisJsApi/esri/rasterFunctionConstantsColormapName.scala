@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsColormapName extends StObject {
   
   /**
-    * colormap to visualize vegetation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * colormap to visualize vegetation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var NDVI: String
   
   /**
-    * A colormap to visualize vegetation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A colormap to visualize vegetation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var NDVI2: String
   
   /**
-    * A colormap to visualize vegetation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A colormap to visualize vegetation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var NDVI3: String
   
   /**
-    * A color map that gradually changes from cyan to purple to black.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A color map that gradually changes from cyan to purple to black.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var elevation: String
   
   /**
-    * A color map that gradually changes from black to white.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A color map that gradually changes from black to white.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var gray: String
   
   /**
-    * A colormap to visualize a hillshade product.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A colormap to visualize a hillshade product.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var hillshade: String
   
   /**
-    * A random colormap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
-    */
+  		 * A random colormap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colormapName)
+  		 */
   var random: String
 }
 object rasterFunctionConstantsColormapName {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/icu-skeleton-parser" : "1.4.0"
+      "@formatjs/icu-skeleton-parser" : "1.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/icu-skeleton-parser" : "1.4.0"
+      "@formatjs/icu-skeleton-parser" : "1.6.0"
     }
   ],
   "compile-devDependencies" : [

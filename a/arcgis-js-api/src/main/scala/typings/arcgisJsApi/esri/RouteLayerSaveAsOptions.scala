@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteLayerSaveAsOptions extends StObject {
   
   /**
-    * The folder in which to save the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#saveAs)
-    */
+  		 * The folder in which to save the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#saveAs)
+  		 */
   var folder: js.UndefOr[PortalFolder] = js.undefined
 }
 object RouteLayerSaveAsOptions {

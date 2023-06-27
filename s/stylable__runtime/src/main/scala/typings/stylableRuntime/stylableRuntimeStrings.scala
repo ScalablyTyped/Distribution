@@ -439,6 +439,10 @@ object stylableRuntimeStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section extends StObject
   inline def section: section = "section".asInstanceOf[section]
   

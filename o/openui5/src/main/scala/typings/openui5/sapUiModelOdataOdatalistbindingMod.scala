@@ -324,7 +324,7 @@ object sapUiModelOdataOdatalistbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24
+      * @since 1.24
       *
       * Get a download URL with the specified format considering the sort/filter/custom parameters.
       *

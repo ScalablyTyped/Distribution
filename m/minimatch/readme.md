@@ -1,7 +1,7 @@
 
 # Scala.js typings for minimatch
 
-Typings are for version 9.0.0
+Typings are for version 9.0.1
 
 ## Library description:
 a glob matcher in javascript

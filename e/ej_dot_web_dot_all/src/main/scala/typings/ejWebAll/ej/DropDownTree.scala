@@ -535,7 +535,7 @@ object DropDownTree {
     var Create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Uses the keyboard for any action, including opening and closing the drop-down tree; navigating, expanding, and collapsing nodes of the dropdown tree; and more.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
@@ -556,14 +556,14 @@ object DropDownTree {
     var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for DropDownTree that allows customization of appearance.
-      * @Default {``}
+      * @default {``}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled. When you enter the delimiter value, the text after the delimiter is considered as a
       * separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,), semi-colon (;), or any other special
       * character.
-      * @Default {,}
+      * @default {,}
       */
     var delimiter: js.UndefOr[String] = js.undefined
     
@@ -572,22 +572,22 @@ object DropDownTree {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The enabled animation property uses the easeOutQuad animation to SlideDown and SlideUp the popup wrapper in 200 and 100 milliseconds, respectively.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to continue the DropDownTree model state in the page using applicable medium, i.e., HTML5 localStorage or cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DropDownTree textbox direction from right to left alignment.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether the DropDownTree control responds to user interaction or not. By default, the control is in the enabled mode and can be disabled by setting this to false.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -600,17 +600,17 @@ object DropDownTree {
     var focus: js.UndefOr[js.Function1[/* e */ FocusEventArgs, Unit]] = js.undefined
     
     /** Creates footer with text or HTML elements for the dropdown items.
-      * @Default {null}
+      * @default {null}
       */
     var footerTemplate: js.UndefOr[String] = js.undefined
     
     /** Serves as a patch of the entries comprising the path (that is set in the entry area) of the selected node.
-      * @Default {'/'}
+      * @default {'/'}
       */
     var fullPathDelimiter: js.UndefOr[String] = js.undefined
     
     /** Creates header with text or HTML elements for the dropdown items.
-      * @Default {null}
+      * @default {null}
       */
     var headerTemplate: js.UndefOr[String] = js.undefined
     
@@ -619,7 +619,7 @@ object DropDownTree {
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Allows you to set a particular country or regional language for the DropDownTree.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -628,12 +628,12 @@ object DropDownTree {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Customizes the height and width of the popup wrapper.
-      * @Default {{height: '152px',width: 'auto',showPopupOnLoad: false}}
+      * @default {{height: '152px',width: 'auto',showPopupOnLoad: false}}
       */
     var popupSettings: js.UndefOr[PopupSettings] = js.undefined
     
     /** Specifies that the DropDownTree textbox values should be read-only.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -642,48 +642,48 @@ object DropDownTree {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** The DropDownTree's textbox is displayed with rounded corner style.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the targetID for the DropDownTree's items.
-      * @Default {null}
+      * @default {null}
       */
     var targetID: js.UndefOr[String] = js.undefined
     
     /** Specifies the delimiter between nodes (indicating their hierarchy).
-      * @Default {ej.DropDownTree.TextMode.none}
+      * @default {ej.DropDownTree.TextMode.none}
       */
     var textMode: js.UndefOr[Textmode | String] = js.undefined
     
     /** Defines the popup settings of the DropDownTree widget. You can use any property which are in treeview using this property.
-      * @Default {{}}
+      * @default {{}}
       */
     var treeViewSettings: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation error message in the DropDownTree.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules in the DropDownTree.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownTree control. For the single selection mode, the selected item's value will be returned in its data type, and for
       * MultiSelectMode, returns the selected items values separated by delimiter in string type.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
     
     /** Specifies a short hint that describes the expected value of the DropDownTree control.
-      * @Default {null}
+      * @default {null}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DropDownTree textbox.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

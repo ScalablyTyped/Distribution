@@ -1,5 +1,6 @@
 package typings.postcssLogical
 
+import typings.postcss.mod.Declaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -150,4 +151,6 @@ object distLibTypesMod {
     
     var inlineIsHorizontal: Boolean = js.native
   }
+  
+  type TransformFunction = js.Function1[/* decl */ Declaration, js.Array[Declaration]]
 }

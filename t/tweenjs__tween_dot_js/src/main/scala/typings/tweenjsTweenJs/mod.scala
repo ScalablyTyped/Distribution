@@ -416,7 +416,7 @@ object mod {
   
   @JSImport("@tweenjs/tween.js", "VERSION")
   @js.native
-  val VERSION: /* "20.0.3" */ String = js.native
+  val VERSION: /* "21.0.0" */ String = js.native
   
   inline def add(tween: Tween[UnknownProps]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

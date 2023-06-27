@@ -34,7 +34,7 @@ trait timeboard
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): String | obj = js.native
+  def getValue(): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   

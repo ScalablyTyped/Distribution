@@ -181,14 +181,14 @@ trait Context extends StObject {
   /**
     * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
     * sensitivity labels if the catalog is enabled.
-    * 
+    *
     * @remarks
-    * 
+    *
+    * [Api set: Mailbox 1.13]
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
-    * @beta
     */
   var sensitivityLabelsCatalog: SensitivityLabelsCatalog
   

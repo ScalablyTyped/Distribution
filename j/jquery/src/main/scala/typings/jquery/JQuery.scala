@@ -203,6 +203,7 @@ import typings.jquery.jqueryStrings.s
 import typings.jquery.jqueryStrings.samp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.scroll
+import typings.jquery.jqueryStrings.search
 import typings.jquery.jqueryStrings.section
 import typings.jquery.jqueryStrings.select
 import typings.jquery.jqueryStrings.set
@@ -2477,6 +2478,8 @@ trait JQuery[TElement]
   def children_samp(selector: samp): JQuery[HTMLElement] = js.native
   @JSName("children")
   def children_script(selector: script): JQuery[HTMLScriptElement] = js.native
+  @JSName("children")
+  def children_search(selector: search): JQuery[HTMLElement] = js.native
   @JSName("children")
   def children_section(selector: section): JQuery[HTMLElement] = js.native
   @JSName("children")
@@ -5527,6 +5530,10 @@ trait JQuery[TElement]
   def find_script(selector_element: JQuery[script]): JQuery[HTMLScriptElement] = js.native
   @JSName("find")
   def find_script(selector_element: script): JQuery[HTMLScriptElement] = js.native
+  @JSName("find")
+  def find_search(selector_element: JQuery[search]): JQuery[HTMLElement] = js.native
+  @JSName("find")
+  def find_search(selector_element: search): JQuery[HTMLElement] = js.native
   @JSName("find")
   def find_section(selector_element: JQuery[section]): JQuery[HTMLElement] = js.native
   @JSName("find")
@@ -11038,6 +11045,10 @@ trait JQuery[TElement]
   def parents_script(selector: JQuery[script]): JQuery[HTMLScriptElement] = js.native
   @JSName("parents")
   def parents_script(selector: script): JQuery[HTMLScriptElement] = js.native
+  @JSName("parents")
+  def parents_search(selector: JQuery[search]): JQuery[HTMLElement] = js.native
+  @JSName("parents")
+  def parents_search(selector: search): JQuery[HTMLElement] = js.native
   @JSName("parents")
   def parents_section(selector: JQuery[section]): JQuery[HTMLElement] = js.native
   @JSName("parents")

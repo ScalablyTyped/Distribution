@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextSymbol3DLayerBackgroundProperties extends StObject {
   
   /**
-    * The color of the background.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
-    */
+  		 * The color of the background.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#background)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object TextSymbol3DLayerBackgroundProperties {

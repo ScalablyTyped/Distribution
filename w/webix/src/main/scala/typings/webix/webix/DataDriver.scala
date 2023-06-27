@@ -8,7 +8,7 @@ trait DataDriver extends StObject {
   
   var csv: obj
   
-  var excel: String
+  var excel: obj
   
   var html: obj
   
@@ -22,7 +22,7 @@ trait DataDriver extends StObject {
 }
 object DataDriver {
   
-  inline def apply(csv: obj, excel: String, html: obj, htmltable: obj, jsarray: obj, json: obj, xml: obj): DataDriver = {
+  inline def apply(csv: obj, excel: obj, html: obj, htmltable: obj, jsarray: obj, json: obj, xml: obj): DataDriver = {
     val __obj = js.Dynamic.literal(csv = csv.asInstanceOf[js.Any], excel = excel.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], htmltable = htmltable.asInstanceOf[js.Any], jsarray = jsarray.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], xml = xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataDriver]
   }
@@ -32,7 +32,7 @@ object DataDriver {
     
     inline def setCsv(value: obj): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    inline def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: obj): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: obj): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

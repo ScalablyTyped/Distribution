@@ -7,82 +7,82 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MagnifierProperties extends StObject {
   
   /**
-    * Controls the amount of magnification to display.
-    *
-    * @default 1.5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#factor)
-    */
+  		 * Controls the amount of magnification to display.
+  		 *
+  		 * @default 1.5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#factor)
+  		 */
   var factor: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the mask image is enabled.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#maskEnabled)
-    */
+  		 * Indicates whether the mask image is enabled.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#maskEnabled)
+  		 */
   var maskEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The mask url points to an image that determines the visible area of the magnified image [(alpha channel)](https://developer.mozilla.org/en-US/docs/Glossary/Alpha).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#maskUrl)
-    */
+  		 * The mask url points to an image that determines the visible area of the magnified image [(alpha channel)](https://developer.mozilla.org/en-US/docs/Glossary/Alpha).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#maskUrl)
+  		 */
   var maskUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * The offset of the magnifier in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#offset)
-    */
+  		 * The offset of the magnifier in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#offset)
+  		 */
   var offset: js.UndefOr[MagnifierScreenPoint] = js.undefined
   
   /**
-    * Indicates whether the overlay image is enabled.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#overlayEnabled)
-    */
+  		 * Indicates whether the overlay image is enabled.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#overlayEnabled)
+  		 */
   var overlayEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The overlay url points to an image that is displayed on top of the magnified image.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#overlayUrl)
-    */
+  		 * The overlay url points to an image that is displayed on top of the magnified image.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#overlayUrl)
+  		 */
   var overlayUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * The position of the magnifier in pixels.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#position)
-    */
+  		 * The position of the magnifier in pixels.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#position)
+  		 */
   var position: js.UndefOr[MagnifierScreenPoint] = js.undefined
   
   /**
-    * The size of the magnifier in pixels.
-    *
-    * @default 120
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#size)
-    */
+  		 * The size of the magnifier in pixels.
+  		 *
+  		 * @default 120
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#size)
+  		 */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the magnifier is visible.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#visible)
-    */
+  		 * Indicates whether the magnifier is visible.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object MagnifierProperties {

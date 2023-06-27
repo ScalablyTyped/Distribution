@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.StyleOrigin")
 @js.native
 /**
-  * The style origin.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html)
-  */
+		 * The style origin.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html)
+		 */
 open class StyleOrigin ()
   extends StObject
      with typings.arcgisJsApi.esri.StyleOrigin {

@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HTMLCanvasElement extends StObject {
+trait HTMLCanvasElement
+  extends StObject
+     with _GPUImageCopyExternalImageSource {
   
   @JSName("getContext")
   def getContext_webgpu(contextId: webgpu): GPUCanvasContext | Null

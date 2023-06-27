@@ -1,12 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.FileName
-import typings.openui5.anon.FileSize
-import typings.openui5.anon.FileType
-import typings.openui5.anon.Files
-import typings.openui5.anon.LengthComputable
-import typings.openui5.anon.ReadyStateXHR
-import typings.openui5.anon.RequestHeaders
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -74,7 +67,7 @@ object sapUiUnifiedFileUploaderMod {
     var __implements__sap_ui_unified_IProcessableBlobs: Boolean = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Allows to process Blobs before they get uploaded. This API can be used to create custom Blobs and upload
       * these custom Blobs instead of the received/initials Blobs in the parameter `aBlobs`. One use case could
@@ -166,7 +159,7 @@ object sapUiUnifiedFileUploaderMod {
        with IProcessableBlobs {
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Aborts the currently running upload.
       */
@@ -232,7 +225,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Adds some parameter to the aggregation {@link #getParameters parameters}.
       *
@@ -246,7 +239,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterDialogClose afterDialogClose} event of
       * this `sap.ui.unified.FileUploader`.
@@ -262,20 +255,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterDialogClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterDialogClose afterDialogClose} event of
       * this `sap.ui.unified.FileUploader`.
@@ -296,7 +289,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterDialogClose(
       /**
@@ -307,7 +300,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -315,7 +308,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeDialogOpen beforeDialogOpen} event of
       * this `sap.ui.unified.FileUploader`.
@@ -331,20 +324,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeDialogOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:beforeDialogOpen beforeDialogOpen} event of
       * this `sap.ui.unified.FileUploader`.
@@ -365,7 +358,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeDialogOpen(
       /**
@@ -376,7 +369,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -400,13 +393,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -434,7 +427,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -445,7 +438,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -466,13 +459,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFileAllowed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -497,7 +490,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFileAllowed(
       /**
@@ -508,7 +501,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -529,13 +522,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit]
     ): this.type = js.native
     def attachFileEmpty(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -560,7 +553,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit]
     ): this.type = js.native
     def attachFileEmpty(
       /**
@@ -571,7 +564,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -594,13 +587,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def attachFileSizeExceed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -627,7 +620,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def attachFileSizeExceed(
       /**
@@ -638,7 +631,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -646,7 +639,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:filenameLengthExceed filenameLengthExceed} event
       * of this `sap.ui.unified.FileUploader`.
@@ -663,20 +656,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def attachFilenameLengthExceed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:filenameLengthExceed filenameLengthExceed} event
       * of this `sap.ui.unified.FileUploader`.
@@ -698,7 +691,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def attachFilenameLengthExceed(
       /**
@@ -709,7 +702,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -730,13 +723,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def attachTypeMissmatch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -761,7 +754,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def attachTypeMissmatch(
       /**
@@ -772,7 +765,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -780,7 +773,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadAborted uploadAborted} event of this `sap.ui.unified.FileUploader`.
       *
@@ -798,20 +791,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def attachUploadAborted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadAborted uploadAborted} event of this `sap.ui.unified.FileUploader`.
       *
@@ -834,7 +827,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def attachUploadAborted(
       /**
@@ -845,7 +838,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -871,13 +864,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit]
     ): this.type = js.native
     def attachUploadComplete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -907,7 +900,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit]
     ): this.type = js.native
     def attachUploadComplete(
       /**
@@ -918,7 +911,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -926,7 +919,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadProgress uploadProgress} event of this
       * `sap.ui.unified.FileUploader`.
@@ -948,20 +941,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit]
     ): this.type = js.native
     def attachUploadProgress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadProgress uploadProgress} event of this
       * `sap.ui.unified.FileUploader`.
@@ -988,7 +981,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit]
     ): this.type = js.native
     def attachUploadProgress(
       /**
@@ -999,7 +992,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -1007,7 +1000,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadStart uploadStart} event of this `sap.ui.unified.FileUploader`.
       *
@@ -1022,20 +1015,20 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit]
     ): this.type = js.native
     def attachUploadStart(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:uploadStart uploadStart} event of this `sap.ui.unified.FileUploader`.
       *
@@ -1055,7 +1048,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit]
     ): this.type = js.native
     def attachUploadStart(
       /**
@@ -1066,7 +1059,7 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.FileUploader` itself
       */
@@ -1082,7 +1075,7 @@ object sapUiUnifiedFileUploaderMod {
     def checkFileReadable(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.25.0
+      * @since 1.25.0
       *
       * Clears the content of the `FileUploader`.
       *
@@ -1100,7 +1093,7 @@ object sapUiUnifiedFileUploaderMod {
     def destroyHeaderParameters(): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Destroys all the parameters in the aggregation {@link #getParameters parameters}.
       *
@@ -1109,7 +1102,7 @@ object sapUiUnifiedFileUploaderMod {
     def destroyParameters(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys the xhrSettings in the aggregation {@link #getXhrSettings xhrSettings}.
       *
@@ -1118,7 +1111,7 @@ object sapUiUnifiedFileUploaderMod {
     def destroyXhrSettings(): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterDialogClose afterDialogClose} event of
       * this `sap.ui.unified.FileUploader`.
@@ -1131,13 +1124,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterDialogClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1145,7 +1138,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:beforeDialogOpen beforeDialogOpen} event of
       * this `sap.ui.unified.FileUploader`.
@@ -1158,13 +1151,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeDialogOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1182,13 +1175,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1206,13 +1199,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachFileAllowed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1230,13 +1223,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit]
     ): this.type = js.native
     def detachFileEmpty(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileEmptyEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1255,13 +1248,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def detachFileSizeExceed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFileSizeExceedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1269,9 +1262,9 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
-      * Detaches event handler `fnFunction` from the {@link #event:filenameLengthExceed filenameLengthExceed}
+      * Detaches event handler `fnFunction` from the {@link #event:filenameLengthExceed filenameLengthExceed }
       * event of this `sap.ui.unified.FileUploader`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -1282,13 +1275,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def detachFilenameLengthExceed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderFilenameLengthExceedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1307,13 +1300,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def detachTypeMissmatch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderTypeMissmatchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1321,7 +1314,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:uploadAborted uploadAborted} event of this
       * `sap.ui.unified.FileUploader`.
@@ -1334,13 +1327,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def detachUploadAborted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadAbortedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1359,13 +1352,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit]
     ): this.type = js.native
     def detachUploadComplete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadCompleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1373,7 +1366,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:uploadProgress uploadProgress} event of this
       * `sap.ui.unified.FileUploader`.
@@ -1386,13 +1379,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit]
     ): this.type = js.native
     def detachUploadProgress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadProgressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1400,7 +1393,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:uploadStart uploadStart} event of this `sap.ui.unified.FileUploader`.
       *
@@ -1412,13 +1405,13 @@ object sapUiUnifiedFileUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit]
     ): this.type = js.native
     def detachUploadStart(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FileUploaderUploadStartEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1426,8 +1419,8 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterDialogClose afterDialogClose} to attached listeners.
       *
@@ -1440,8 +1433,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.102.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.102.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeDialogOpen beforeDialogOpen} to attached listeners.
       *
@@ -1454,20 +1447,22 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Files): this.type = js.native
+    mParameters: FileUploader$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileAllowed fileAllowed} to attached listeners.
       *
@@ -1480,112 +1475,128 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileEmpty fileEmpty} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFileEmpty(): this.type = js.native
-    def fireFileEmpty(/**
+    def fireFileEmpty(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FileName): this.type = js.native
+    mParameters: FileUploader$FileEmptyEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileSizeExceed fileSizeExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFileSizeExceed(): this.type = js.native
-    def fireFileSizeExceed(/**
+    def fireFileSizeExceed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FileSize): this.type = js.native
+    mParameters: FileUploader$FileSizeExceedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.24.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filenameLengthExceed filenameLengthExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFilenameLengthExceed(): this.type = js.native
-    def fireFilenameLengthExceed(/**
+    def fireFilenameLengthExceed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FileName): this.type = js.native
+    mParameters: FileUploader$FilenameLengthExceedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:typeMissmatch typeMissmatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTypeMissmatch(): this.type = js.native
-    def fireTypeMissmatch(/**
+    def fireTypeMissmatch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FileType): this.type = js.native
+    mParameters: FileUploader$TypeMissmatchEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.24.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadAborted uploadAborted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadAborted(): this.type = js.native
-    def fireUploadAborted(/**
+    def fireUploadAborted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RequestHeaders): this.type = js.native
+    mParameters: FileUploader$UploadAbortedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadComplete uploadComplete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadComplete(): this.type = js.native
-    def fireUploadComplete(/**
+    def fireUploadComplete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ReadyStateXHR): this.type = js.native
+    mParameters: FileUploader$UploadCompleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.24.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadProgress uploadProgress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadProgress(): this.type = js.native
-    def fireUploadProgress(/**
+    def fireUploadProgress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: LengthComputable): this.type = js.native
+    mParameters: FileUploader$UploadProgressEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.30.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadStart uploadStart} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadStart(): this.type = js.native
-    def fireUploadStart(/**
+    def fireUploadStart(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RequestHeaders): this.type = js.native
+    mParameters: FileUploader$UploadStartEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAdditionalData additionalData}.
@@ -1600,14 +1611,12 @@ object sapUiUnifiedFileUploaderMod {
     def getAdditionalData(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -1632,7 +1641,7 @@ object sapUiUnifiedFileUploaderMod {
     def getButtonText(): String = js.native
     
     /**
-      * @SINCE 1.105.0
+      * @since 1.105.0
       *
       * Gets current value of property {@link #getDirectory directory}.
       *
@@ -1678,7 +1687,7 @@ object sapUiUnifiedFileUploaderMod {
     def getHeaderParameters(): js.Array[typings.openui5.sapUiUnifiedFileUploaderParameterMod.default] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getHttpRequestMethod httpRequestMethod}.
       *
@@ -1691,7 +1700,7 @@ object sapUiUnifiedFileUploaderMod {
     def getHttpRequestMethod(): FileUploaderHttpRequestMethod = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIcon icon}.
       *
@@ -1706,7 +1715,7 @@ object sapUiUnifiedFileUploaderMod {
     def getIcon(): URI = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIconFirst iconFirst}.
       *
@@ -1719,7 +1728,7 @@ object sapUiUnifiedFileUploaderMod {
     def getIconFirst(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIconHovered iconHovered}.
       *
@@ -1735,7 +1744,7 @@ object sapUiUnifiedFileUploaderMod {
     def getIconHovered(): URI = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIconOnly iconOnly}.
       *
@@ -1748,7 +1757,7 @@ object sapUiUnifiedFileUploaderMod {
     def getIconOnly(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIconSelected iconSelected}.
       *
@@ -1775,7 +1784,7 @@ object sapUiUnifiedFileUploaderMod {
     def getMaximumFileSize(): float = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Gets current value of property {@link #getMaximumFilenameLength maximumFilenameLength}.
       *
@@ -1832,7 +1841,7 @@ object sapUiUnifiedFileUploaderMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Gets content of aggregation {@link #getParameters parameters}.
       *
@@ -1937,7 +1946,7 @@ object sapUiUnifiedFileUploaderMod {
     def getValue(): String = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Gets current value of property {@link #getValueState valueState}.
       *
@@ -1952,7 +1961,7 @@ object sapUiUnifiedFileUploaderMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -1976,7 +1985,7 @@ object sapUiUnifiedFileUploaderMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getXhrSettings xhrSettings}.
       *
@@ -1986,8 +1995,8 @@ object sapUiUnifiedFileUploaderMod {
     def getXhrSettings(): typings.openui5.sapUiUnifiedFileUploaderXHRSettingsMod.default = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.FileUploaderParameter` in the aggregation {@link #getHeaderParameters
-      * headerParameters}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.FileUploaderParameter` in the aggregation {@link #getHeaderParameters headerParameters}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1999,10 +2008,10 @@ object sapUiUnifiedFileUploaderMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
-      * Checks for the provided `sap.ui.unified.FileUploaderParameter` in the aggregation {@link #getParameters
-      * parameters}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.FileUploaderParameter` in the aggregation {@link #getParameters parameters}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -2032,7 +2041,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Inserts a parameter into the aggregation {@link #getParameters parameters}.
       *
@@ -2075,7 +2084,7 @@ object sapUiUnifiedFileUploaderMod {
     def removeAllHeaderParameters(): js.Array[typings.openui5.sapUiUnifiedFileUploaderParameterMod.default] = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Removes all the controls from the aggregation {@link #getParameters parameters}.
       *
@@ -2150,7 +2159,7 @@ object sapUiUnifiedFileUploaderMod {
       */
     vParameter: String): typings.openui5.sapUiUnifiedFileUploaderParameterMod.default | Null = js.native
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Removes a parameter from the aggregation {@link #getParameters parameters}.
       *
@@ -2218,7 +2227,7 @@ object sapUiUnifiedFileUploaderMod {
     sButtonText: String): this.type = js.native
     
     /**
-      * @SINCE 1.105.0
+      * @since 1.105.0
       *
       * Sets a new value for property {@link #getDirectory directory}.
       *
@@ -2274,7 +2283,7 @@ object sapUiUnifiedFileUploaderMod {
     sFileType: js.Array[String]): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getHttpRequestMethod httpRequestMethod}.
       *
@@ -2295,7 +2304,7 @@ object sapUiUnifiedFileUploaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIcon icon}.
       *
@@ -2316,7 +2325,7 @@ object sapUiUnifiedFileUploaderMod {
     sIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIconFirst iconFirst}.
       *
@@ -2335,7 +2344,7 @@ object sapUiUnifiedFileUploaderMod {
     bIconFirst: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIconHovered iconHovered}.
       *
@@ -2357,7 +2366,7 @@ object sapUiUnifiedFileUploaderMod {
     sIconHovered: URI): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIconOnly iconOnly}.
       *
@@ -2376,7 +2385,7 @@ object sapUiUnifiedFileUploaderMod {
     bIconOnly: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIconSelected iconSelected}.
       *
@@ -2415,7 +2424,7 @@ object sapUiUnifiedFileUploaderMod {
     fMaximumFileSize: float): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Sets a new value for property {@link #getMaximumFilenameLength maximumFilenameLength}.
       *
@@ -2640,7 +2649,7 @@ object sapUiUnifiedFileUploaderMod {
     sValue: String): this.type = js.native
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Sets a new value for property {@link #getValueState valueState}.
       *
@@ -2667,7 +2676,7 @@ object sapUiUnifiedFileUploaderMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -2703,7 +2712,7 @@ object sapUiUnifiedFileUploaderMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets the aggregated {@link #getXhrSettings xhrSettings}.
       *
@@ -2730,6 +2739,433 @@ object sapUiUnifiedFileUploaderMod {
     ): Unit = js.native
   }
   
+  trait FileUploader$AfterDialogCloseEventParameters extends StObject
+  
+  trait FileUploader$BeforeDialogOpenEventParameters extends StObject
+  
+  trait FileUploader$ChangeEventParameters extends StObject {
+    
+    /**
+      * Files.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * New file path value.
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$ChangeEventParameters {
+    
+    inline def apply(): FileUploader$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait FileUploader$FileAllowedEventParameters extends StObject
+  
+  trait FileUploader$FileEmptyEventParameters extends StObject {
+    
+    /**
+      * The name of the file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$FileEmptyEventParameters {
+    
+    inline def apply(): FileUploader$FileEmptyEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$FileEmptyEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$FileEmptyEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    }
+  }
+  
+  trait FileUploader$FileSizeExceedEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The size in MB of a file to be uploaded.
+      */
+    var fileSize: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$FileSizeExceedEventParameters {
+    
+    inline def apply(): FileUploader$FileSizeExceedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$FileSizeExceedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$FileSizeExceedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    }
+  }
+  
+  trait FileUploader$FilenameLengthExceedEventParameters extends StObject {
+    
+    /**
+      * The filename, which is longer than specified by the value of the property `maximumFilenameLength`.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$FilenameLengthExceedEventParameters {
+    
+    inline def apply(): FileUploader$FilenameLengthExceedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$FilenameLengthExceedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$FilenameLengthExceedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    }
+  }
+  
+  trait FileUploader$TypeMissmatchEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The file ending of a file to be uploaded.
+      */
+    var fileType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The MIME type of a file to be uploaded.
+      */
+    var mimeType: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$TypeMissmatchEventParameters {
+    
+    inline def apply(): FileUploader$TypeMissmatchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$TypeMissmatchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$TypeMissmatchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    }
+  }
+  
+  trait FileUploader$UploadAbortedEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Http-Request-Headers.
+      *
+      * Required for receiving `requestHeader` is to set the property `sendXHR` to true. This property is not
+      * supported by Internet Explorer 9.
+      */
+    var requestHeaders: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object FileUploader$UploadAbortedEventParameters {
+    
+    inline def apply(): FileUploader$UploadAbortedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$UploadAbortedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$UploadAbortedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setRequestHeaders(value: js.Array[js.Object]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      
+      inline def setRequestHeadersVarargs(value: js.Object*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
+    }
+  }
+  
+  trait FileUploader$UploadCompleteEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Http-Response-Headers which come from the server.
+      *
+      * Provided as a JSON-map, i.e. each header-field is reflected by a property in the `headers` object, with
+      * the property value reflecting the header-field's content.
+      *
+      * Required for receiving `headers` is to set the property `sendXHR` to true. This property is not supported
+      * by Internet Explorer 9.
+      */
+    var headers: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * ReadyState of the XHR request.
+      *
+      * Required for receiving a `readyStateXHR` is to set the property `sendXHR` to true. This property is not
+      * supported by Internet Explorer 9.
+      */
+    var readyStateXHR: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Http-Request-Headers.
+      *
+      * Required for receiving `requestHeaders` is to set the property `sendXHR` to true. This property is not
+      * supported by Internet Explorer 9.
+      */
+    var requestHeaders: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * Response message which comes from the server.
+      *
+      * On the server side this response has to be put within the "body" tags of the response document
+      * of the iFrame. It can consist of a return code and an optional message. This does not work in cross-domain
+      * scenarios.
+      */
+    var response: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Http-Response which comes from the server.
+      *
+      * Required for receiving `responseRaw` is to set the property `sendXHR` to true.
+      *
+      * This property is not supported by Internet Explorer 9.
+      */
+    var responseRaw: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Status of the XHR request.
+      *
+      * Required for receiving a `status` is to set the property `sendXHR` to true. This property is not supported
+      * by Internet Explorer 9.
+      */
+    var status: js.UndefOr[String] = js.undefined
+  }
+  object FileUploader$UploadCompleteEventParameters {
+    
+    inline def apply(): FileUploader$UploadCompleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$UploadCompleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$UploadCompleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setReadyStateXHR(value: String): Self = StObject.set(x, "readyStateXHR", value.asInstanceOf[js.Any])
+      
+      inline def setReadyStateXHRUndefined: Self = StObject.set(x, "readyStateXHR", js.undefined)
+      
+      inline def setRequestHeaders(value: js.Array[js.Object]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      
+      inline def setRequestHeadersVarargs(value: js.Object*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
+      
+      inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseRaw(value: String): Self = StObject.set(x, "responseRaw", value.asInstanceOf[js.Any])
+      
+      inline def setResponseRawUndefined: Self = StObject.set(x, "responseRaw", js.undefined)
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    }
+  }
+  
+  trait FileUploader$UploadProgressEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates whether or not the relative upload progress can be calculated out of loaded and total.
+      */
+    var lengthComputable: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The number of bytes of the file which have been uploaded by the time the event was fired.
+      */
+    var loaded: js.UndefOr[float] = js.undefined
+    
+    /**
+      * Http-Request-Headers.
+      *
+      * Required for receiving `requestHeaders` is to set the property `sendXHR` to true. This property is not
+      * supported by Internet Explorer 9.
+      */
+    var requestHeaders: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * The total size of the file to be uploaded in bytes.
+      */
+    var total: js.UndefOr[float] = js.undefined
+  }
+  object FileUploader$UploadProgressEventParameters {
+    
+    inline def apply(): FileUploader$UploadProgressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$UploadProgressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$UploadProgressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+      
+      inline def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+      
+      inline def setLoaded(value: float): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      
+      inline def setRequestHeaders(value: js.Array[js.Object]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      
+      inline def setRequestHeadersVarargs(value: js.Object*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
+      
+      inline def setTotal(value: float): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait FileUploader$UploadStartEventParameters extends StObject {
+    
+    /**
+      * The name of a file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Http-Request-Headers.
+      *
+      * Required for receiving `requestHeaders` is to set the property `sendXHR` to true. This property is not
+      * supported by Internet Explorer 9.
+      */
+    var requestHeaders: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object FileUploader$UploadStartEventParameters {
+    
+    inline def apply(): FileUploader$UploadStartEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FileUploader$UploadStartEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploader$UploadStartEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setRequestHeaders(value: js.Array[js.Object]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      
+      inline def setRequestHeadersVarargs(value: js.Object*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
+    }
+  }
+  
+  type FileUploaderAfterDialogCloseEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$AfterDialogCloseEventParameters]
+  
+  type FileUploaderAfterDialogCloseEventParameters = FileUploader$AfterDialogCloseEventParameters
+  
+  type FileUploaderBeforeDialogOpenEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$BeforeDialogOpenEventParameters]
+  
+  type FileUploaderBeforeDialogOpenEventParameters = FileUploader$BeforeDialogOpenEventParameters
+  
+  type FileUploaderChangeEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters]
+  
+  type FileUploaderChangeEventParameters = FileUploader$ChangeEventParameters
+  
+  type FileUploaderFileAllowedEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$FileAllowedEventParameters]
+  
+  type FileUploaderFileAllowedEventParameters = FileUploader$FileAllowedEventParameters
+  
+  type FileUploaderFileEmptyEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$FileEmptyEventParameters]
+  
+  type FileUploaderFileEmptyEventParameters = FileUploader$FileEmptyEventParameters
+  
+  type FileUploaderFileSizeExceedEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$FileSizeExceedEventParameters]
+  
+  type FileUploaderFileSizeExceedEventParameters = FileUploader$FileSizeExceedEventParameters
+  
+  type FileUploaderFilenameLengthExceedEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$FilenameLengthExceedEventParameters]
+  
+  type FileUploaderFilenameLengthExceedEventParameters = FileUploader$FilenameLengthExceedEventParameters
+  
   trait FileUploaderSettings
     extends StObject
        with ControlSettings {
@@ -2743,11 +3179,13 @@ object sapUiUnifiedFileUploaderMod {
     var additionalData: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired after select file dialog closes.
       */
-    var afterDialogClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterDialogClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Association to controls / IDs which describe this control (see WAI-ARIA attribute `aria-describedby`).
@@ -2760,11 +3198,13 @@ object sapUiUnifiedFileUploaderMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.102.0
+      * @since 1.102.0
       *
       * Fired before select file dialog opens.
       */
-    var beforeDialogOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeDialogOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If set to "true", the `FileUploader` will be rendered as Button only, without showing the input field.
@@ -2784,10 +3224,15 @@ object sapUiUnifiedFileUploaderMod {
       * **Note:** Keep in mind that because of the HTML input element of type file, the event is also fired in
       * Chrome browser when the Cancel button of the uploads window is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.105.0
+      * @since 1.105.0
       *
       * Allows users to upload all files from a given directory and its corresponding subdirectories.
       */
@@ -2805,18 +3250,30 @@ object sapUiUnifiedFileUploaderMod {
     /**
       * Event is fired when the file is allowed for upload on client side.
       */
-    var fileAllowed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileAllowed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Event is fired when the size of the file is 0
       */
-    var fileEmpty: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileEmpty: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FileEmptyEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when the size of a file is above the `maximumFileSize` property. This event is not supported
       * by Internet Explorer 9 (same restriction as for the property `maximumFileSize`).
       */
-    var fileSizeExceed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileSizeExceed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FileSizeExceedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The chosen files will be checked against an array of file types.
@@ -2831,12 +3288,17 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Event is fired, if the filename of a chosen file is longer than the value specified with the `maximumFilenameLength`
       * property.
       */
-    var filenameLengthExceed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filenameLengthExceed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FilenameLengthExceedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The header parameters for the `FileUploader` which are only submitted with XHR requests. Header parameters
@@ -2847,7 +3309,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Chosen HTTP request method for file upload.
       */
@@ -2856,7 +3318,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Icon to be displayed as graphical element within the button.
       *
@@ -2865,7 +3327,7 @@ object sapUiUnifiedFileUploaderMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * If set to true (default), the display sequence is 1. icon 2. control text.
       */
@@ -2874,7 +3336,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Icon to be displayed as graphical element within the button when it is hovered (only if also a base icon
       * was specified).
@@ -2884,7 +3346,7 @@ object sapUiUnifiedFileUploaderMod {
     var iconHovered: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * If set to true, the button is displayed without any text.
       */
@@ -2893,7 +3355,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Icon to be displayed as graphical element within the button when it is selected (only if also a base
       * icon was specified).
@@ -2912,7 +3374,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * The maximum length of a filename which the `FileUploader` will accept.
       *
@@ -2955,7 +3417,7 @@ object sapUiUnifiedFileUploaderMod {
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * The parameters for the `FileUploader` which are rendered as a hidden input field.
       */
@@ -2998,17 +3460,27 @@ object sapUiUnifiedFileUploaderMod {
     /**
       * Event is fired when the type of a file does not match the `mimeType` or `fileType` property.
       */
-    var typeMissmatch: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var typeMissmatch: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$TypeMissmatchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Event is fired after the current upload has been aborted.
       *
       * This event is only supported with property `sendXHR` set to true, i.e. the event is not supported in
       * Internet Explorer 9.
       */
-    var uploadAborted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadAborted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadAbortedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired as soon as the upload request is completed (either successful or unsuccessful).
@@ -3017,7 +3489,12 @@ object sapUiUnifiedFileUploaderMod {
       * progress of the upload can be monitored by listening to the `uploadProgress` event. However, this covers
       * only the client side of the upload process and does not give any success status from the server.
       */
-    var uploadComplete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadComplete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadCompleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to "true", the upload immediately starts after file selection. With the default setting, the upload
@@ -3028,7 +3505,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Event is fired after the upload has started and before the upload is completed.
       *
@@ -3038,14 +3515,24 @@ object sapUiUnifiedFileUploaderMod {
       * This event is only supported with property `sendXHR` set to true, i.e. the event is not supported in
       * Internet Explorer 9.
       */
-    var uploadProgress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadProgress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadProgressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Event is fired before an upload is started.
       */
-    var uploadStart: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadStart: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadStartEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Used when URL address is on a remote server.
@@ -3068,7 +3555,7 @@ object sapUiUnifiedFileUploaderMod {
     var value: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.24.0
+      * @since 1.24.0
       *
       * Visualizes warnings or errors related to the text field.
       *
@@ -3079,7 +3566,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Custom text for the value state message pop-up.
       *
@@ -3095,7 +3582,7 @@ object sapUiUnifiedFileUploaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Settings for the `XMLHttpRequest` object. **Note:** This aggregation is only used when the `sendXHR`
       * property is set to `true`.
@@ -3116,7 +3603,7 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
       
-      inline def setAfterDialogClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterDialogClose", js.Any.fromFunction1(value))
+      inline def setAfterDialogClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterDialogClose", js.Any.fromFunction1(value))
       
       inline def setAfterDialogCloseUndefined: Self = StObject.set(x, "afterDialogClose", js.undefined)
       
@@ -3132,7 +3619,7 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setBeforeDialogOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeDialogOpen", js.Any.fromFunction1(value))
+      inline def setBeforeDialogOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeDialogOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeDialogOpenUndefined: Self = StObject.set(x, "beforeDialogOpen", js.undefined)
       
@@ -3144,7 +3631,9 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -3156,15 +3645,19 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setFileAllowed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileAllowed", js.Any.fromFunction1(value))
+      inline def setFileAllowed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "fileAllowed", js.Any.fromFunction1(value))
       
       inline def setFileAllowedUndefined: Self = StObject.set(x, "fileAllowed", js.undefined)
       
-      inline def setFileEmpty(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileEmpty", js.Any.fromFunction1(value))
+      inline def setFileEmpty(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FileEmptyEventParameters] => Unit
+      ): Self = StObject.set(x, "fileEmpty", js.Any.fromFunction1(value))
       
       inline def setFileEmptyUndefined: Self = StObject.set(x, "fileEmpty", js.undefined)
       
-      inline def setFileSizeExceed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileSizeExceed", js.Any.fromFunction1(value))
+      inline def setFileSizeExceed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FileSizeExceedEventParameters] => Unit
+      ): Self = StObject.set(x, "fileSizeExceed", js.Any.fromFunction1(value))
       
       inline def setFileSizeExceedUndefined: Self = StObject.set(x, "fileSizeExceed", js.undefined)
       
@@ -3176,7 +3669,9 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value*))
       
-      inline def setFilenameLengthExceed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filenameLengthExceed", js.Any.fromFunction1(value))
+      inline def setFilenameLengthExceed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$FilenameLengthExceedEventParameters] => Unit
+      ): Self = StObject.set(x, "filenameLengthExceed", js.Any.fromFunction1(value))
       
       inline def setFilenameLengthExceedUndefined: Self = StObject.set(x, "filenameLengthExceed", js.undefined)
       
@@ -3262,15 +3757,21 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTypeMissmatch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "typeMissmatch", js.Any.fromFunction1(value))
+      inline def setTypeMissmatch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$TypeMissmatchEventParameters] => Unit
+      ): Self = StObject.set(x, "typeMissmatch", js.Any.fromFunction1(value))
       
       inline def setTypeMissmatchUndefined: Self = StObject.set(x, "typeMissmatch", js.undefined)
       
-      inline def setUploadAborted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadAborted", js.Any.fromFunction1(value))
+      inline def setUploadAborted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadAbortedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadAborted", js.Any.fromFunction1(value))
       
       inline def setUploadAbortedUndefined: Self = StObject.set(x, "uploadAborted", js.undefined)
       
-      inline def setUploadComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadComplete", js.Any.fromFunction1(value))
+      inline def setUploadComplete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadCompleteEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadComplete", js.Any.fromFunction1(value))
       
       inline def setUploadCompleteUndefined: Self = StObject.set(x, "uploadComplete", js.undefined)
       
@@ -3278,11 +3779,15 @@ object sapUiUnifiedFileUploaderMod {
       
       inline def setUploadOnChangeUndefined: Self = StObject.set(x, "uploadOnChange", js.undefined)
       
-      inline def setUploadProgress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadProgress", js.Any.fromFunction1(value))
+      inline def setUploadProgress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadProgressEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadProgress", js.Any.fromFunction1(value))
       
       inline def setUploadProgressUndefined: Self = StObject.set(x, "uploadProgress", js.undefined)
       
-      inline def setUploadStart(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadStart", js.Any.fromFunction1(value))
+      inline def setUploadStart(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadStartEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadStart", js.Any.fromFunction1(value))
       
       inline def setUploadStartUndefined: Self = StObject.set(x, "uploadStart", js.undefined)
       
@@ -3317,4 +3822,24 @@ object sapUiUnifiedFileUploaderMod {
       inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
     }
   }
+  
+  type FileUploaderTypeMissmatchEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$TypeMissmatchEventParameters]
+  
+  type FileUploaderTypeMissmatchEventParameters = FileUploader$TypeMissmatchEventParameters
+  
+  type FileUploaderUploadAbortedEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadAbortedEventParameters]
+  
+  type FileUploaderUploadAbortedEventParameters = FileUploader$UploadAbortedEventParameters
+  
+  type FileUploaderUploadCompleteEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadCompleteEventParameters]
+  
+  type FileUploaderUploadCompleteEventParameters = FileUploader$UploadCompleteEventParameters
+  
+  type FileUploaderUploadProgressEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadProgressEventParameters]
+  
+  type FileUploaderUploadProgressEventParameters = FileUploader$UploadProgressEventParameters
+  
+  type FileUploaderUploadStartEvent = typings.openui5.sapUiBaseEventMod.default[FileUploader$UploadStartEventParameters]
+  
+  type FileUploaderUploadStartEventParameters = FileUploader$UploadStartEventParameters
 }

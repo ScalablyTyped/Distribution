@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Collapsed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMNotificationListBaseMod.NotificationListBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -136,7 +135,7 @@ object sapMNotificationListGroupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Attaches event handler `fnFunction` to the {@link #event:onCollapse onCollapse} event of this `sap.m.NotificationListGroup`.
       *
@@ -151,20 +150,20 @@ object sapMNotificationListGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit]
     ): this.type = js.native
     def attachOnCollapse(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NotificationListGroup` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Attaches event handler `fnFunction` to the {@link #event:onCollapse onCollapse} event of this `sap.m.NotificationListGroup`.
       *
@@ -184,7 +183,7 @@ object sapMNotificationListGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit]
     ): this.type = js.native
     def attachOnCollapse(
       /**
@@ -195,7 +194,7 @@ object sapMNotificationListGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NotificationListGroup` itself
       */
@@ -210,7 +209,7 @@ object sapMNotificationListGroupMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Detaches event handler `fnFunction` from the {@link #event:onCollapse onCollapse} event of this `sap.m.NotificationListGroup`.
       *
@@ -222,13 +221,13 @@ object sapMNotificationListGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit]
     ): this.type = js.native
     def detachOnCollapse(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotificationListGroupOnCollapseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -236,18 +235,20 @@ object sapMNotificationListGroupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.44
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:onCollapse onCollapse} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireOnCollapse(): this.type = js.native
-    def fireOnCollapse(/**
+    def fireOnCollapse(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Collapsed): this.type = js.native
+    mParameters: NotificationListGroup$OnCollapseEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAutoPriority autoPriority}.
@@ -467,6 +468,33 @@ object sapMNotificationListGroupMod {
     bShowItemsCounter: Boolean): this.type = js.native
   }
   
+  trait NotificationListGroup$OnCollapseEventParameters extends StObject {
+    
+    /**
+      * Indicates exact collapse direction
+      */
+    var collapsed: js.UndefOr[Boolean] = js.undefined
+  }
+  object NotificationListGroup$OnCollapseEventParameters {
+    
+    inline def apply(): NotificationListGroup$OnCollapseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NotificationListGroup$OnCollapseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationListGroup$OnCollapseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    }
+  }
+  
+  type NotificationListGroupOnCollapseEvent = typings.openui5.sapUiBaseEventMod.default[NotificationListGroup$OnCollapseEventParameters]
+  
+  type NotificationListGroupOnCollapseEventParameters = NotificationListGroup$OnCollapseEventParameters
+  
   trait NotificationListGroupSettings
     extends StObject
        with NotificationListBaseSettings {
@@ -501,11 +529,16 @@ object sapMNotificationListGroupMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * `onCollapse` event is called when collapse property value is changed
       */
-    var onCollapse: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var onCollapse: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationListGroup$OnCollapseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines if the group header/footer of the empty group will be always shown. By default groups with
@@ -554,7 +587,9 @@ object sapMNotificationListGroupMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapMNotificationListItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setOnCollapse(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
+      inline def setOnCollapse(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NotificationListGroup$OnCollapseEventParameters] => Unit
+      ): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
       
       inline def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
       

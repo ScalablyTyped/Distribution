@@ -68,6 +68,8 @@ trait i18n extends StObject {
   
   var kanban: js.UndefOr[Confirm] = js.undefined
   
+  var locale: String
+  
   var locales: Any
   
   var longDateFormat: String
@@ -176,6 +178,8 @@ object i18n {
     inline def setKanban(value: Confirm): Self = StObject.set(x, "kanban", value.asInstanceOf[js.Any])
     
     inline def setKanbanUndefined: Self = StObject.set(x, "kanban", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocales(value: Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     

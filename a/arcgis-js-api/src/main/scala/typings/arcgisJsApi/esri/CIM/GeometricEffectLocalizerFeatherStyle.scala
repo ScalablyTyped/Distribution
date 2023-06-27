@@ -11,24 +11,24 @@ sealed trait GeometricEffectLocalizerFeatherStyle extends StObject
 object GeometricEffectLocalizerFeatherStyle extends StObject {
   
   /**
-    * Displays a complete localizer feather.
-    */
+  			 * Displays a complete localizer feather.
+  			 */
   @js.native
   sealed trait Complete
     extends StObject
        with GeometricEffectLocalizerFeatherStyle
   
   /**
-    * Displays the left side of a localizer feather.
-    */
+  			 * Displays the left side of a localizer feather.
+  			 */
   @js.native
   sealed trait Left
     extends StObject
        with GeometricEffectLocalizerFeatherStyle
   
   /**
-    * Displays the right side of a localizer feather.
-    */
+  			 * Displays the right side of a localizer feather.
+  			 */
   @js.native
   sealed trait Right
     extends StObject

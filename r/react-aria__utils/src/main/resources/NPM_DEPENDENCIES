@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-aria/utils" : "3.16.0"
+      "@react-aria/utils" : "3.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-aria/utils" : "3.16.0"
+      "@react-aria/utils" : "3.17.0"
     }
   ],
   "compile-devDependencies" : [

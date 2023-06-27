@@ -17,49 +17,51 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageDistanceParametersProperties extends StObject {
+trait ImageDistanceParametersProperties
+  extends StObject
+     with BaseImageMeasureParametersProperties {
   
   /**
-    * The angular unit used for angle calculation.
-    *
-    * @default "degrees"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#angularUnit)
-    */
+  		 * The angular unit used for angle calculation.
+  		 *
+  		 * @default "degrees"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#angularUnit)
+  		 */
   var angularUnit: js.UndefOr[degrees | radians] = js.undefined
   
   /**
-    * A point that defines the from location of the distance and angle measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#fromGeometry)
-    */
+  		 * A point that defines the from location of the distance and angle measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#fromGeometry)
+  		 */
   var fromGeometry: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * When `true`, this method calculates the 3D measurements for the distance and angle between two points on an image service.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#is3D)
-    */
+  		 * When `true`, this method calculates the 3D measurements for the distance and angle between two points on an image service.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#is3D)
+  		 */
   var is3D: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The linear unit used for distance calculation.
-    *
-    * @default "meters"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#linearUnit)
-    */
+  		 * The linear unit used for distance calculation.
+  		 *
+  		 * @default "meters"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#linearUnit)
+  		 */
   var linearUnit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * A point that defines the to location of the distance and angle measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#toGeometry)
-    */
+  		 * A point that defines the to location of the distance and angle measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageDistanceParameters.html#toGeometry)
+  		 */
   var toGeometry: js.UndefOr[PointProperties] = js.undefined
 }
 object ImageDistanceParametersProperties {

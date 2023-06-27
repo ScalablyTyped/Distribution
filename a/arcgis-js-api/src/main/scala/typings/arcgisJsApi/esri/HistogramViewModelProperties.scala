@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HistogramViewModelProperties extends StObject {
   
   /**
-    * The statistical average of the data in the histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#average)
-    */
+  		 * The statistical average of the data in the histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#average)
+  		 */
   var average: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of objects representing each bin in the histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins)
-    */
+  		 * An array of objects representing each bin in the histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#bins)
+  		 */
   var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
-    * A function used to format labels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#labelFormatFunction)
-    */
+  		 * A function used to format labels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#labelFormatFunction)
+  		 */
   var labelFormatFunction: js.UndefOr[LabelFormatter] = js.undefined
   
   /**
-    * The maximum value or bound of the entire histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#max)
-    */
+  		 * The maximum value or bound of the entire histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#max)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum value or bound of the entire histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#min)
-    */
+  		 * The minimum value or bound of the entire histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram-HistogramViewModel.html#min)
+  		 */
   var min: js.UndefOr[Double] = js.undefined
 }
 object HistogramViewModelProperties {

@@ -41,7 +41,6 @@ open class MapBrowserEvent protected () extends MapEvent {
   
   /**
     * The original browser event.
-    * @const
     * @api stable
     */
   var originalEvent: Event = js.native

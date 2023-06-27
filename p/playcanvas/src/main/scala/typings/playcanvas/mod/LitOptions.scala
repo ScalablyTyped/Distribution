@@ -114,7 +114,8 @@ open class LitOptions () extends StObject {
   var fastTbn: Boolean = js.native
   
   /**
-    * If cubemaps require seam fixing (see {@link Texture#options.fixCubemapSeams}).
+    * If cubemaps require seam fixing (see the `fixCubemapSeams` property of the options object
+    * passed to the {@link Texture} constructor).
     *
     * @type {boolean}
     */
@@ -197,7 +198,7 @@ open class LitOptions () extends StObject {
   var occludeSpecularFloat: Boolean = js.native
   
   /**
-    * Enable specular fade. See {@link Material#opacityFadesSpecular}.
+    * Enable specular fade. See {@link StandardMaterial#opacityFadesSpecular}.
     *
     * @type {boolean}
     */
@@ -207,6 +208,8 @@ open class LitOptions () extends StObject {
   def pass_=(arg: Double): Unit = js.native
   
   var pixelSnap: Boolean = js.native
+  
+  var reflectionCubemapEncoding: Any = js.native
   
   var reflectionEncoding: Any = js.native
   
@@ -246,7 +249,7 @@ open class LitOptions () extends StObject {
   var toneMap: Double = js.native
   
   /**
-    * The value of {@link Material#twoSidedLighting}.
+    * The value of {@link StandardMaterial#twoSidedLighting}.
     *
     * @type {boolean}
     */

@@ -12,37 +12,37 @@ trait FillSymbol3DLayerOutline
      with AnonymousAccessor {
   
   /**
-    * The color of the outline.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
-    */
+  		 * The color of the outline.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The stroke pattern used to render the outline.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
-    */
+  		 * The stroke pattern used to render the outline.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
+  		 */
   var pattern: js.UndefOr[LineStylePattern3D] = js.undefined
   
   /**
-    * The style applied to the tips of each pattern segment along the line.
-    *
-    * @default butt
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
-    */
+  		 * The style applied to the tips of each pattern segment along the line.
+  		 *
+  		 * @default butt
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
+  		 */
   var patternCap: js.UndefOr[butt_ | round_ | square_] = js.undefined
   
   /**
-    * The width of the outline in points.
-    *
-    * @default 1px
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
-    */
+  		 * The width of the outline in points.
+  		 *
+  		 * @default 1px
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#outline)
+  		 */
   var size: js.UndefOr[Double] = js.undefined
 }
 object FillSymbol3DLayerOutline {

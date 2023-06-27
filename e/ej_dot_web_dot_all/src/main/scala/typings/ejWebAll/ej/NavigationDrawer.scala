@@ -325,7 +325,7 @@ object NavigationDrawer {
     var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the content to the NavigationDrawer control.
-      * @Default {null}
+      * @default {null}
       */
     var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.NavigationDrawer.AjaxSettings] = js.undefined
     
@@ -338,7 +338,7 @@ object NavigationDrawer {
     var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentId for navigation drawer, where the AJAX content need to updated
-      * @Default {null}
+      * @default {null}
       */
     var contentId: js.UndefOr[String] = js.undefined
     
@@ -348,22 +348,22 @@ object NavigationDrawer {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the Direction for the control. See Direction
-      * @Default {left}
+      * @default {left}
       */
     var direction: js.UndefOr[Direction | String] = js.undefined
     
     /** Sets the listview to be enabled or not
-      * @Default {false}
+      * @default {false}
       */
     var enableListView: js.UndefOr[Boolean] = js.undefined
     
     /** Navigation pane opened initially when isPaneOpen property is true.
-      * @Default {false}
+      * @default {false}
       */
     var isPaneOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the listview items as an array of object.
-      * @Default {[]}
+      * @default {[]}
       */
     var items: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -376,7 +376,7 @@ object NavigationDrawer {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies position whether it is in fixed or relative to the page. See Position
-      * @Default {normal}
+      * @default {normal}
       */
     var position: js.UndefOr[String] = js.undefined
     
@@ -389,12 +389,12 @@ object NavigationDrawer {
     var targetId: js.UndefOr[String] = js.undefined
     
     /** Sets the rendering type of the control. See Type
-      * @Default {overlay}
+      * @default {overlay}
       */
     var `type`: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the control
-      * @Default {auto}
+      * @default {auto}
       */
     var width: js.UndefOr[Double] = js.undefined
   }

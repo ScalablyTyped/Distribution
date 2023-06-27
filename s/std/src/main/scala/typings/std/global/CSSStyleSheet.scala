@@ -14,30 +14,37 @@ open class CSSStyleSheet ()
      with typings.std.CSSStyleSheet {
   def this(options: CSSStyleSheetInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/disabled) */
   /* standard dom */
   /* CompleteClass */
   var disabled: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/href) */
   /* standard dom */
   /* CompleteClass */
   override val href: java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/media) */
   /* standard dom */
   /* CompleteClass */
   override val media: typings.std.MediaList = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/ownerNode) */
   /* standard dom */
   /* CompleteClass */
   override val ownerNode: typings.std.Element | typings.std.ProcessingInstruction | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/parentStyleSheet) */
   /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/title) */
   /* standard dom */
   /* CompleteClass */
   override val title: java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StyleSheet/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: java.lang.String = js.native

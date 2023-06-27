@@ -1,27 +1,25 @@
 package typings.openui5
 
 import typings.openui5.anon.AdjustDeepPath
-import typings.openui5.anon.AsyncRequests
 import typings.openui5.anon.BatchGroupId
 import typings.openui5.anon.BatchGroupIdError
 import typings.openui5.anon.BindableResponseHeaders
 import typings.openui5.anon.CreatePreliminaryContext
 import typings.openui5.anon.Created
 import typings.openui5.anon.CreatedEntitiesKey
-import typings.openui5.anon.ID_
+import typings.openui5.anon.GroupId
 import typings.openui5.anon.IgnoreMessages
-import typings.openui5.anon.Metadata
-import typings.openui5.anon.Navigation
 import typings.openui5.anon.RefreshAfterChange
-import typings.openui5.anon.Requests
-import typings.openui5.anon.ResponseText
 import typings.openui5.anon.Select
 import typings.openui5.anon.Sorters
 import typings.openui5.anon.UrlParameters
-import typings.openui5.anon.`42`
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiModelModelMod.Model$RequestCompletedEventParameters
+import typings.openui5.sapUiModelModelMod.Model$RequestFailedEventParameters
+import typings.openui5.sapUiModelModelMod.Model$RequestSentEventParameters
 import typings.openui5.sapUiModelOdataCountModeMod.CountMode
 import typings.openui5.sapUiModelOdataMessageScopeMod.MessageScope
+import typings.openui5.sapUiModelOdataV2OdataannotationsMod.Source
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -184,7 +182,7 @@ object sapUiModelOdataV2OdatamodelMod {
     extends typings.openui5.sapUiModelModelMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds (a) new URL(s) whose content should be parsed as OData annotations, which are then merged into the
       * annotations object which can be retrieved by calling the {@link #getServiceAnnotations}-method. If a
@@ -207,7 +205,7 @@ object sapUiModelOdataV2OdatamodelMod {
     vUrl: js.Array[String]): js.Promise[Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds new XML content to be parsed for OData annotations, which are then merged into the annotations object
       * which can be retrieved by calling the {@link #getServiceAnnotations}-method.
@@ -231,7 +229,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Returns a promise that resolves with an array containing information about the initially loaded annotations.
       *
@@ -248,15 +246,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachAnnotationsFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachAnnotationsFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit]
+    ): this.type = js.native
+    def attachAnnotationsFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -276,7 +276,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit]
     ): this.type = js.native
     def attachAnnotationsFailed(
       /**
@@ -287,7 +287,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -299,15 +299,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachAnnotationsLoaded(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachAnnotationsLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit]
+    ): this.type = js.native
+    def attachAnnotationsLoaded(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -327,7 +329,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit]
     ): this.type = js.native
     def attachAnnotationsLoaded(
       /**
@@ -338,7 +340,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -346,27 +348,29 @@ object sapUiModelOdataV2OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:batchRequestCompleted batchRequestCompleted}
+      * Attaches event handler `fnFunction` to the {@link #event:batchRequestCompleted batchRequestCompleted }
       * event of this `sap.ui.model.odata.v2.ODataModel`.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachBatchRequestCompleted(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachBatchRequestCompleted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit]
+    ): this.type = js.native
+    def attachBatchRequestCompleted(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:batchRequestCompleted batchRequestCompleted}
+      * Attaches event handler `fnFunction` to the {@link #event:batchRequestCompleted batchRequestCompleted }
       * event of this `sap.ui.model.odata.v2.ODataModel`.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -380,7 +384,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit]
     ): this.type = js.native
     def attachBatchRequestCompleted(
       /**
@@ -391,7 +395,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -404,15 +408,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachBatchRequestFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachBatchRequestFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit]
+    ): this.type = js.native
+    def attachBatchRequestFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -433,7 +439,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit]
     ): this.type = js.native
     def attachBatchRequestFailed(
       /**
@@ -444,7 +450,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -457,15 +463,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachBatchRequestSent(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachBatchRequestSent(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit]
+    ): this.type = js.native
+    def attachBatchRequestSent(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -486,7 +494,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit]
     ): this.type = js.native
     def attachBatchRequestSent(
       /**
@@ -497,7 +505,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -509,15 +517,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachMetadataFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachMetadataFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit]
+    ): this.type = js.native
+    def attachMetadataFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -537,7 +547,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit]
     ): this.type = js.native
     def attachMetadataFailed(
       /**
@@ -548,7 +558,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -560,15 +570,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachMetadataLoaded(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachMetadataLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit]
+    ): this.type = js.native
+    def attachMetadataLoaded(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -588,7 +600,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit]
     ): this.type = js.native
     def attachMetadataLoaded(
       /**
@@ -599,7 +611,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.model.odata.v2.ODataModel` itself
       */
@@ -1114,7 +1126,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1133,7 +1145,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1156,7 +1168,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1202,7 +1214,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1221,7 +1233,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1244,7 +1256,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1328,7 +1340,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1347,7 +1359,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1370,7 +1382,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1416,7 +1428,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1435,7 +1447,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1458,7 +1470,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1504,7 +1516,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1523,7 +1535,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1546,7 +1558,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1630,7 +1642,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation
+    mParameters: GroupId
     ): typings.openui5.sapUiModelOdataV2OdatatreebindingMod.default = js.native
     def bindTree(
       /**
@@ -1649,7 +1661,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1672,7 +1684,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map of binding parameters
       */
-    mParameters: Navigation,
+    mParameters: GroupId,
       /**
       * The dynamic sorters to be used initially
       */
@@ -1685,6 +1697,15 @@ object sapUiModelOdataV2OdatamodelMod {
       * If the return type of the function import is either an entity type or a collection of an entity type,
       * then this OData model's cache is updated with the values of the returned entities. Otherwise they are
       * ignored, and the `response` can be processed in the `success` callback.
+      *
+      * The `contextCreated` property of the returned object is a function that returns a Promise which resolves
+      * with an `sap.ui.model.odata.v2.Context`. This context can be used to modify the function import parameter
+      * values and to bind the function call's result. Changes of a parameter value via that context after the
+      * function import has been processed lead to another function call with the modified parameters. Changed
+      * function import parameters are considered as pending changes, see {@link #hasPendingChanges} or {@link #getPendingChanges},
+      * and can be reset via {@link #resetChanges}. If the function import returns an entity or a collection
+      * of entities, the `$result` property relative to that context can be used to bind the result to a control,
+      * see {@link https://ui5.sap.com/#/topic/6c47b2b39db9404582994070ec3d57a2#loio6cb8d585ed594ee4b447b5b560f292a4 Binding of Function Import Parameters}.
       *
       * @returns An object which has a `contextCreated` function that returns a `Promise`. This resolves with
       * the created {@link sap.ui.model.Context}. In addition it has an `abort` function to abort the current
@@ -1717,12 +1738,11 @@ object sapUiModelOdataV2OdatamodelMod {
     def canonicalRequestsEnabled(): Boolean = js.native
     
     /**
-      * Trigger a `POST` request to the OData service that was specified in the model constructor; see {@link
-      * topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation}
+      * Trigger a `POST` request to the OData service that was specified in the model constructor; see {@link https://ui5.sap.com/#/topic/6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation }
       * for comprehensive information on the topic.
       *
-      * **Note:** This function does not support a "deep create" scenario. Use {@link #createEntry} or {@link
-      * sap.ui.model.odata.v2.ODataListBinding#create} instead.
+      * **Note:** This function does not support a "deep create" scenario. Use {@link #createEntry} or {@link sap.ui.model.odata.v2.ODataListBinding#create }
+      * instead.
       *
       * @returns An object which has an `abort` function to abort the current request.
       */
@@ -1986,8 +2006,7 @@ object sapUiModelOdataV2OdatamodelMod {
     
     /**
       * Creates a new entry object which is described by the metadata of the entity type of the specified `sPath`
-      * Name. A context object is returned which can be used to bind against the newly created object. See {@link
-      * topic:6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation}
+      * Name. A context object is returned which can be used to bind against the newly created object. See {@link https://ui5.sap.com/#/topic/6c47b2b39db9404582994070ec3d57a2#loio4c4cd99af9b14e08bb72470cc7cabff4 Creating Entities documentation }
       * for comprehensive information on the topic.
       *
       * For each created entry a request is created and stored in a request queue. The request queue can be submitted
@@ -1999,10 +2018,10 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * The optional parameter `mParameters.properties` can be used as follows:
       * 	 - `properties` could be an array containing the property names which should be included in the new
-      * 			entry. Other properties defined in the entity type won't be included.
+      *     entry. Other properties defined in the entity type won't be included.
       * 	 - `properties` could be an object which includes the desired properties and the corresponding values
-      * 			which should be used for the created entry.   If `properties` is not specified, all properties in
-      * 			the entity type will be included in the created entry.
+      *     which should be used for the created entry.   If `properties` is not specified, all properties in
+      *     the entity type will be included in the created entry.
       *
       * If there are no values specified, the properties will have `undefined` values.
       *
@@ -2016,15 +2035,15 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * 	 - a POST request for creating an entity,
       * 	 - a GET request for requesting the navigation properties for the just created entity.   The following
-      * 			outcomes are possible:
+      *     outcomes are possible:
       * 	 - If both requests succeed, the success handler is called with the merged data of the POST and the
-      * 			GET request and with the response of the POST request.
+      *     GET request and with the response of the POST request.
       * 	 - If the POST request fails, the GET request also fails. In that case the error callback handler is
-      * 			called with the error response of the POST request.
+      *     called with the error response of the POST request.
       * 	 - If the POST request succeeds but the GET request for the navigation properties fails, the success
-      * 			handler is called with the data and the response of the POST request. The response object of the success
-      * 			handler call and the response parameter of the corresponding `requestFailed` and `requestCompleted` events
-      * 			have an additional property `expandAfterCreateFailed` set to `true`.
+      *     handler is called with the data and the response of the POST request. The response object of the success
+      *     handler call and the response parameter of the corresponding `requestFailed` and `requestCompleted` events
+      *     have an additional property `expandAfterCreateFailed` set to `true`.
       *
       * Note: If a server requires a property in the request, you must supply this property in the initial data,
       * for example if the server requires a unit for an amount. This also applies if this property has a default
@@ -2093,15 +2112,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachAnnotationsFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachAnnotationsFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit]
+    ): this.type = js.native
+    def detachAnnotationsFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsFailedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2115,15 +2136,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachAnnotationsLoaded(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachAnnotationsLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit]
+    ): this.type = js.native
+    def detachAnnotationsLoaded(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelAnnotationsLoadedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2131,22 +2154,24 @@ object sapUiModelOdataV2OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:batchRequestCompleted batchRequestCompleted}
+      * Detaches event handler `fnFunction` from the {@link #event:batchRequestCompleted batchRequestCompleted }
       * event of this `sap.ui.model.odata.v2.ODataModel`.
       *
       * The passed function and listener object must match the ones used for event registration.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachBatchRequestCompleted(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachBatchRequestCompleted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit]
+    ): this.type = js.native
+    def detachBatchRequestCompleted(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestCompletedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2161,15 +2186,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachBatchRequestFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachBatchRequestFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit]
+    ): this.type = js.native
+    def detachBatchRequestFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestFailedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2184,15 +2211,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachBatchRequestSent(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachBatchRequestSent(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit]
+    ): this.type = js.native
+    def detachBatchRequestSent(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelBatchRequestSentEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2206,15 +2235,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachMetadataFailed(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachMetadataFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit]
+    ): this.type = js.native
+    def detachMetadataFailed(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataFailedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2228,15 +2259,17 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachMetadataLoaded(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachMetadataLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit]
+    ): this.type = js.native
+    def detachMetadataLoaded(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ ODataModelMetadataLoadedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -2244,93 +2277,107 @@ object sapUiModelOdataV2OdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:annotationsFailed annotationsFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
     def fireAnnotationsFailed(): this.type = js.native
-    def fireAnnotationsFailed(/**
+    def fireAnnotationsFailed(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: ResponseText): this.type = js.native
+    oParameters: ODataModel$AnnotationsFailedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:annotationsLoaded annotationsLoaded} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
     def fireAnnotationsLoaded(): this.type = js.native
-    def fireAnnotationsLoaded(/**
+    def fireAnnotationsLoaded(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: `42`): this.type = js.native
+    oParameters: ODataModel$AnnotationsLoadedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:batchRequestCompleted batchRequestCompleted} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
-    def fireBatchRequestCompleted(/**
+    def fireBatchRequestCompleted(
+      /**
       * parameters to add to the fired event
       */
-    oParameters: ID_): this.type = js.native
+    oParameters: ODataModel$BatchRequestCompletedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:batchRequestFailed batchRequestFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
-    def fireBatchRequestFailed(/**
+    def fireBatchRequestFailed(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: Requests): this.type = js.native
+    oParameters: ODataModel$BatchRequestFailedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:batchRequestSent batchRequestSent} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
     def fireBatchRequestSent(): this.type = js.native
-    def fireBatchRequestSent(/**
+    def fireBatchRequestSent(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: AsyncRequests): this.type = js.native
+    oParameters: ODataModel$BatchRequestSentEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:metadataFailed metadataFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
     def fireMetadataFailed(): this.type = js.native
-    def fireMetadataFailed(/**
+    def fireMetadataFailed(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: ResponseText): this.type = js.native
+    oParameters: ODataModel$MetadataFailedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:metadataLoaded metadataLoaded} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
       */
     def fireMetadataLoaded(): this.type = js.native
-    def fireMetadataLoaded(/**
+    def fireMetadataLoaded(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: Metadata): this.type = js.native
+    oParameters: ODataModel$MetadataLoadedEventParameters
+    ): this.type = js.native
     
     /**
       * Force the update on the server of an entity by setting its ETag to '*'.
@@ -2421,7 +2468,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): js.Object = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Returns the default count mode for retrieving the count of collections
       *
@@ -2561,7 +2608,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): js.UndefOr[String] = js.native
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Returns this model's message scope.
       * See:
@@ -2622,14 +2669,17 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Any = js.native
     
     /**
-      * Returns the changed properties of all changed entities in a map which are still pending. The key is the
-      * string name of the entity, and the value is an object which contains the changed properties. The tree
-      * hierarchy changes for removed nodes are represented via an empty object.
+      * Returns the pending changes in this model.
       *
-      * In contrast to the two related functions {@link #hasPendingChanges} and {@link #resetChanges}, only client
-      * data changes are supported.
+      * Only changes triggered through {@link #createEntry} or {@link #setProperty}, and tree hierarchy changes
+      * are taken into account. Changes are returned as a map from the changed entity's key to an object containing
+      * the changed properties. A node removed from a tree hierarchy has the empty object as value in this map;
+      * all other pending entity deletions are not contained in the map.
+      * See:
+      * 	#hasPendingChanges
+      * 	#resetChanges
       *
-      * @returns the pending changes in a map
+      * @returns The map of pending changes
       */
     def getPendingChanges(): Record[String, js.Object] = js.native
     
@@ -2677,7 +2727,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Any = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Whether all affected bindings are refreshed after a change operation.
       *
@@ -2725,6 +2775,9 @@ object sapUiModelOdataV2OdatamodelMod {
       *
       * If `bAll` is set to `true`, also deferred requests triggered through {@link #create}, {@link #update},
       * and {@link #remove} are taken into account.
+      * See:
+      * 	#getPendingChanges
+      * 	#resetChanges
       *
       * @returns `true` if there are pending changes, `false` otherwise.
       */
@@ -2742,7 +2795,7 @@ object sapUiModelOdataV2OdatamodelMod {
     def hasPendingRequests(): Boolean = js.native
     
     /**
-      * @SINCE 1.52.1
+      * @since 1.52.1
       *
       * Invalidate the model data.
       *
@@ -2761,7 +2814,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.52.1
+      * @since 1.52.1
       *
       * Invalidate all entries of the given entity type in the model data.
       *
@@ -2780,7 +2833,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.52.1
+      * @since 1.52.1
       *
       * Invalidate a single entry in the model data.
       *
@@ -2801,7 +2854,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Checks whether metadata loading has failed in the past.
       *
@@ -2810,10 +2863,10 @@ object sapUiModelOdataV2OdatamodelMod {
     def isMetadataLoadingFailed(): Boolean = js.native
     
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Checks whether the service has set the OData V2 annotation "message-scope-supported" on the `EntityContainer`
-      * with the value `true`. This is a a precondition for the setting of {@link sap.ui.model.odata.MessageScope.BusinessObject}
+      * with the value `true`. This is a a precondition for the setting of {@link sap.ui.model.odata.MessageScope.BusinessObject }
       * via {@link #setMessageScope}.
       * See:
       * 	sap.ui.model.odata.MessageScope
@@ -2824,7 +2877,7 @@ object sapUiModelOdataV2OdatamodelMod {
     def messageScopeSupported(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Returns a promise for the loaded state of the metadata.
       *
@@ -2837,16 +2890,16 @@ object sapUiModelOdataV2OdatamodelMod {
       * but is only resolved if
       * 	 - the metadata are loaded successfully,
       * 	 - the annotations are processed, provided the model parameter `loadAnnotationsJoined` has been set.
-      * 			 Use this promise for delaying OData calls until all required information is available, i.e. this
-      * 			promise is resolved.
+      *      Use this promise for delaying OData calls until all required information is available, i.e. this
+      *     promise is resolved.
       *
       * `bRejectOnFailure=true`: Since 1.79, the parameter `bRejectOnFailure` allows to request a promise that
       * is rejected when one of the following fails:
       * 	 - the loading of the metadata,
       * 	 - the loading of the annotations, provided the model parameter `loadAnnotationsJoined` has been set.
-      * 			 The promise is fulfilled upon successful loading of both. This promise can be used to start processing
-      * 			OData calls when it is fulfilled and to display an error message when it is rejected. See also the example
-      * 			below.
+      *      The promise is fulfilled upon successful loading of both. This promise can be used to start processing
+      *     OData calls when it is fulfilled and to display an error message when it is rejected. See also the example
+      *     below.
       *
       * If the method `refreshMetadata` is called after the returned promise is already resolved or rejected,
       * you should use the promise returned by `refreshMetadata` to get information about the refreshed state.
@@ -3109,18 +3162,21 @@ object sapUiModelOdataV2OdatamodelMod {
     /**
       * Resets pending changes and aborts corresponding requests.
       *
-      * By default, only changes triggered through {@link #createEntry} or {@link #setProperty} are taken into
-      * account. If `bAll` is set, also deferred requests triggered through {@link #create}, {@link #update}
-      * or {@link #remove} are taken into account.
+      * By default, only changes triggered through {@link #createEntry} or {@link #setProperty}, and tree hierarchy
+      * changes are taken into account. If `bAll` is set, also deferred requests triggered through {@link #create},
+      * {@link #update} or {@link #remove} are taken into account.
       *
       * With a given `aPath` only specified entities are reset. Note that tree hierarchy changes are only affected
       * if a given path is equal to the tree binding's resolved binding path.
       *
       * If `bDeleteCreatedEntities` is set, the entity is completely removed, provided it has been created by
       * one of the following methods:
-      * 	 - {@link #createEntry}, provided it is not yet persisted in the back end and is active (see {@link
-      * 			sap.ui.model.odata.v2.Context#isInactive}),
+      * 	 - {@link #createEntry}, provided it is not yet persisted in the back end and is active (see {@link sap.ui.model.odata.v2.Context#isInactive}),
+      *
       * 	 - {@link #callFunction}.
+      * See:
+      * 	#getPendingChanges
+      * 	#hasPendingChanges
       *
       * @returns Resolves when all regarded changes have been reset.
       */
@@ -3272,7 +3328,7 @@ object sapUiModelOdataV2OdatamodelMod {
     sCountMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CountMode * / any */ String
     ): Unit = js.native
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Sets the default mode how to retrieve the item count for a collection in this model.
       *
@@ -3280,8 +3336,8 @@ object sapUiModelOdataV2OdatamodelMod {
       * 	 - by sending a separate `$count` request
       * 	 - by adding parameter `$inlinecount=allpages` to one or all data requests
       * 	 - a combination of the previous two
-      * 	 - not at all (questions about the size of the collection can't be answered then)  See {@link sap.ui.model.odata.CountMode}
-      * 			for all enumeration values and more details.
+      * 	 - not at all (questions about the size of the collection can't be answered then)  See {@link sap.ui.model.odata.CountMode }
+      *     for all enumeration values and more details.
       *
       * Note that a call to this method does not modify the count mode for existing list bindings, only bindings
       * that are created afterwards will use the new mode when no mode is defined at their creation.
@@ -3339,7 +3395,7 @@ object sapUiModelOdataV2OdatamodelMod {
     sMessageScope: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageScope * / any */ String
     ): Unit = js.native
     /**
-      * @SINCE 1.76.0
+      * @since 1.76.0
       *
       * Sets this model's message scope.
       * See:
@@ -3421,7 +3477,7 @@ object sapUiModelOdataV2OdatamodelMod {
     ): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Defines whether all affected bindings are refreshed after a change operation.
       *
@@ -3524,4 +3580,595 @@ object sapUiModelOdataV2OdatamodelMod {
     bForceUpdate: Boolean
     ): Unit = js.native
   }
+  
+  trait ODataModel$AnnotationsFailedEventParameters extends StObject {
+    
+    /**
+      * An array of Errors
+      */
+    var result: js.UndefOr[js.Array[js.Error]] = js.undefined
+  }
+  object ODataModel$AnnotationsFailedEventParameters {
+    
+    inline def apply(): ODataModel$AnnotationsFailedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$AnnotationsFailedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$AnnotationsFailedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setResult(value: js.Array[js.Error]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      
+      inline def setResultVarargs(value: js.Error*): Self = StObject.set(x, "result", js.Array(value*))
+    }
+  }
+  
+  trait ODataModel$AnnotationsLoadedEventParameters extends StObject {
+    
+    /**
+      * An array consisting of one or several annotation sources and/or errors containing a source property and
+      * error details.
+      */
+    var result: js.UndefOr[js.Array[Source]] = js.undefined
+  }
+  object ODataModel$AnnotationsLoadedEventParameters {
+    
+    inline def apply(): ODataModel$AnnotationsLoadedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$AnnotationsLoadedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$AnnotationsLoadedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setResult(value: js.Array[Source]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      
+      inline def setResultVarargs(value: Source*): Self = StObject.set(x, "result", js.Array(value*))
+    }
+  }
+  
+  trait ODataModel$BatchRequestCompletedEventParameters extends StObject {
+    
+    /**
+      * The request ID
+      */
+    var ID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If the request is synchronous or asynchronous (if available)
+      */
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The request headers
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * The HTTP method
+      */
+    var method: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Array of embedded requests ($batch) Each request object within the array contains the following properties:
+      * url, method, headers, response object
+      */
+    var requests: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The response object - empty object if no response: The response object contains the following properties:
+      * message, success, headers, statusCode, statusText, responseText
+      */
+    var response: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Request was successful or not
+      */
+    var success: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The URL which is sent to the backend
+      */
+    var url: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$BatchRequestCompletedEventParameters {
+    
+    inline def apply(): ODataModel$BatchRequestCompletedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$BatchRequestCompletedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$BatchRequestCompletedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setRequests(value: js.Array[Any]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      
+      inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+      
+      inline def setRequestsVarargs(value: Any*): Self = StObject.set(x, "requests", js.Array(value*))
+      
+      inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait ODataModel$BatchRequestFailedEventParameters extends StObject {
+    
+    /**
+      * The request ID
+      */
+    var ID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If the request is synchronous or asynchronous (if available)
+      */
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The request headers
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * The HTTP method
+      */
+    var method: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Array of embedded requests ($batch) Each request object within the array contains the following properties:
+      * url, method, headers, response object
+      */
+    var requests: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The response object - empty object if no response The response object contains the following properties:
+      * message, success, headers, statusCode, statusText, responseText
+      */
+    var response: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Request was successful or not
+      */
+    var success: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The URL which is sent to the backend
+      */
+    var url: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$BatchRequestFailedEventParameters {
+    
+    inline def apply(): ODataModel$BatchRequestFailedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$BatchRequestFailedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$BatchRequestFailedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setRequests(value: js.Array[Any]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      
+      inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+      
+      inline def setRequestsVarargs(value: Any*): Self = StObject.set(x, "requests", js.Array(value*))
+      
+      inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait ODataModel$BatchRequestSentEventParameters extends StObject {
+    
+    /**
+      * If the request is synchronous or asynchronous (if available)
+      */
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Array of embedded requests ($batch) Each request object within the array contains the following properties:
+      * url, method, headers
+      */
+    var requests: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The type of the request (if available)
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The URL which is sent to the backend
+      */
+    var url: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$BatchRequestSentEventParameters {
+    
+    inline def apply(): ODataModel$BatchRequestSentEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$BatchRequestSentEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$BatchRequestSentEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setRequests(value: js.Array[Any]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      
+      inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+      
+      inline def setRequestsVarargs(value: Any*): Self = StObject.set(x, "requests", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait ODataModel$MetadataFailedEventParameters extends StObject {
+    
+    /**
+      * A text that describes the failure.
+      */
+    var message: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The parsed metadata
+      */
+    var metadata: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The response object - empty object if no response
+      */
+    var response: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Response that has been received for the request, as a text string
+      */
+    var responseText: js.UndefOr[String] = js.undefined
+    
+    /**
+      * HTTP status code returned by the request (if available)
+      */
+    var statusCode: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The status as a text, details not specified, intended only for diagnosis output
+      */
+    var statusText: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$MetadataFailedEventParameters {
+    
+    inline def apply(): ODataModel$MetadataFailedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$MetadataFailedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$MetadataFailedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      
+      inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    }
+  }
+  
+  trait ODataModel$MetadataLoadedEventParameters extends StObject {
+    
+    /**
+      * The parsed metadata
+      */
+    var metadata: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$MetadataLoadedEventParameters {
+    
+    inline def apply(): ODataModel$MetadataLoadedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$MetadataLoadedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$MetadataLoadedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    }
+  }
+  
+  trait ODataModel$RequestCompletedEventParameters
+    extends StObject
+       with Model$RequestCompletedEventParameters {
+    
+    /**
+      * The request ID
+      */
+    var ID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The request headers
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * The HTTP method
+      */
+    var method: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The response object - empty object if no response: The response object contains the following properties:
+      * message, success, headers, statusCode, statusText, responseText
+      */
+    var response: js.UndefOr[js.Object] = js.undefined
+  }
+  object ODataModel$RequestCompletedEventParameters {
+    
+    inline def apply(): ODataModel$RequestCompletedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$RequestCompletedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$RequestCompletedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    }
+  }
+  
+  trait ODataModel$RequestFailedEventParameters
+    extends StObject
+       with Model$RequestFailedEventParameters {
+    
+    /**
+      * The request ID
+      */
+    var ID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If the request is synchronous or asynchronous (if available)
+      */
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The request headers
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * The HTTP method
+      */
+    var method: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The response object - empty object if no response The response object contains the following properties:
+      * message, success, headers, statusCode, statusText, responseText
+      */
+    var response: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Request was successful or not
+      */
+    var success: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The URL which is sent to the backend
+      */
+    var url: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$RequestFailedEventParameters {
+    
+    inline def apply(): ODataModel$RequestFailedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$RequestFailedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$RequestFailedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait ODataModel$RequestSentEventParameters
+    extends StObject
+       with Model$RequestSentEventParameters {
+    
+    /**
+      * The request ID
+      */
+    var ID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The request headers
+      */
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * The HTTP method
+      */
+    var method: js.UndefOr[String] = js.undefined
+  }
+  object ODataModel$RequestSentEventParameters {
+    
+    inline def apply(): ODataModel$RequestSentEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ODataModel$RequestSentEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ODataModel$RequestSentEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    }
+  }
+  
+  type ODataModelAnnotationsFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$AnnotationsFailedEventParameters]
+  
+  type ODataModelAnnotationsFailedEventParameters = ODataModel$AnnotationsFailedEventParameters
+  
+  type ODataModelAnnotationsLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$AnnotationsLoadedEventParameters]
+  
+  type ODataModelAnnotationsLoadedEventParameters = ODataModel$AnnotationsLoadedEventParameters
+  
+  type ODataModelBatchRequestCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$BatchRequestCompletedEventParameters]
+  
+  type ODataModelBatchRequestCompletedEventParameters = ODataModel$BatchRequestCompletedEventParameters
+  
+  type ODataModelBatchRequestFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$BatchRequestFailedEventParameters]
+  
+  type ODataModelBatchRequestFailedEventParameters = ODataModel$BatchRequestFailedEventParameters
+  
+  type ODataModelBatchRequestSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$BatchRequestSentEventParameters]
+  
+  type ODataModelBatchRequestSentEventParameters = ODataModel$BatchRequestSentEventParameters
+  
+  type ODataModelMetadataFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$MetadataFailedEventParameters]
+  
+  type ODataModelMetadataFailedEventParameters = ODataModel$MetadataFailedEventParameters
+  
+  type ODataModelMetadataLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$MetadataLoadedEventParameters]
+  
+  type ODataModelMetadataLoadedEventParameters = ODataModel$MetadataLoadedEventParameters
+  
+  type ODataModelRequestCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestCompletedEventParameters]
+  
+  type ODataModelRequestCompletedEventParameters = ODataModel$RequestCompletedEventParameters
+  
+  type ODataModelRequestFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestFailedEventParameters]
+  
+  type ODataModelRequestFailedEventParameters = ODataModel$RequestFailedEventParameters
+  
+  type ODataModelRequestSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$RequestSentEventParameters]
+  
+  type ODataModelRequestSentEventParameters = ODataModel$RequestSentEventParameters
 }

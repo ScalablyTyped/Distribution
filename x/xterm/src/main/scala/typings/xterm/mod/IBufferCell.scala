@@ -114,6 +114,9 @@ trait IBufferCell extends StObject {
   /** Whether the cell has the italic attribute (CSI 3 m). */
   def isItalic(): Double
   
+  /** Whether the cell has the overline attribute (CSI 53 m). */
+  def isOverline(): Double
+  
   /** Whether the cell has the strikethrough attribute (CSI 9 m). */
   def isStrikethrough(): Double
   
@@ -143,10 +146,11 @@ object IBufferCell {
     isInverse: () => Double,
     isInvisible: () => Double,
     isItalic: () => Double,
+    isOverline: () => Double,
     isStrikethrough: () => Double,
     isUnderline: () => Double
   ): IBufferCell = {
-    val __obj = js.Dynamic.literal(getBgColor = js.Any.fromFunction0(getBgColor), getBgColorMode = js.Any.fromFunction0(getBgColorMode), getChars = js.Any.fromFunction0(getChars), getCode = js.Any.fromFunction0(getCode), getFgColor = js.Any.fromFunction0(getFgColor), getFgColorMode = js.Any.fromFunction0(getFgColorMode), getWidth = js.Any.fromFunction0(getWidth), isAttributeDefault = js.Any.fromFunction0(isAttributeDefault), isBgDefault = js.Any.fromFunction0(isBgDefault), isBgPalette = js.Any.fromFunction0(isBgPalette), isBgRGB = js.Any.fromFunction0(isBgRGB), isBlink = js.Any.fromFunction0(isBlink), isBold = js.Any.fromFunction0(isBold), isDim = js.Any.fromFunction0(isDim), isFgDefault = js.Any.fromFunction0(isFgDefault), isFgPalette = js.Any.fromFunction0(isFgPalette), isFgRGB = js.Any.fromFunction0(isFgRGB), isInverse = js.Any.fromFunction0(isInverse), isInvisible = js.Any.fromFunction0(isInvisible), isItalic = js.Any.fromFunction0(isItalic), isStrikethrough = js.Any.fromFunction0(isStrikethrough), isUnderline = js.Any.fromFunction0(isUnderline))
+    val __obj = js.Dynamic.literal(getBgColor = js.Any.fromFunction0(getBgColor), getBgColorMode = js.Any.fromFunction0(getBgColorMode), getChars = js.Any.fromFunction0(getChars), getCode = js.Any.fromFunction0(getCode), getFgColor = js.Any.fromFunction0(getFgColor), getFgColorMode = js.Any.fromFunction0(getFgColorMode), getWidth = js.Any.fromFunction0(getWidth), isAttributeDefault = js.Any.fromFunction0(isAttributeDefault), isBgDefault = js.Any.fromFunction0(isBgDefault), isBgPalette = js.Any.fromFunction0(isBgPalette), isBgRGB = js.Any.fromFunction0(isBgRGB), isBlink = js.Any.fromFunction0(isBlink), isBold = js.Any.fromFunction0(isBold), isDim = js.Any.fromFunction0(isDim), isFgDefault = js.Any.fromFunction0(isFgDefault), isFgPalette = js.Any.fromFunction0(isFgPalette), isFgRGB = js.Any.fromFunction0(isFgRGB), isInverse = js.Any.fromFunction0(isInverse), isInvisible = js.Any.fromFunction0(isInvisible), isItalic = js.Any.fromFunction0(isItalic), isOverline = js.Any.fromFunction0(isOverline), isStrikethrough = js.Any.fromFunction0(isStrikethrough), isUnderline = js.Any.fromFunction0(isUnderline))
     __obj.asInstanceOf[IBufferCell]
   }
   
@@ -192,6 +196,8 @@ object IBufferCell {
     inline def setIsInvisible(value: () => Double): Self = StObject.set(x, "isInvisible", js.Any.fromFunction0(value))
     
     inline def setIsItalic(value: () => Double): Self = StObject.set(x, "isItalic", js.Any.fromFunction0(value))
+    
+    inline def setIsOverline(value: () => Double): Self = StObject.set(x, "isOverline", js.Any.fromFunction0(value))
     
     inline def setIsStrikethrough(value: () => Double): Self = StObject.set(x, "isStrikethrough", js.Any.fromFunction0(value))
     

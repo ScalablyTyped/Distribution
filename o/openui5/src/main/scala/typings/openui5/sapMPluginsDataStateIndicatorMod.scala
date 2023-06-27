@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DataState
-import typings.openui5.anon.Filter
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -125,7 +123,7 @@ object sapMPluginsDataStateIndicatorMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Attaches event handler `fnFunction` to the {@link #event:applyFilter applyFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -141,20 +139,20 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit]
     ): this.type = js.native
     def attachApplyFilter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Attaches event handler `fnFunction` to the {@link #event:applyFilter applyFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -175,7 +173,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit]
     ): this.type = js.native
     def attachApplyFilter(
       /**
@@ -186,7 +184,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
@@ -194,7 +192,7 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Attaches event handler `fnFunction` to the {@link #event:clearFilter clearFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -210,20 +208,20 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClearFilter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Attaches event handler `fnFunction` to the {@link #event:clearFilter clearFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -244,7 +242,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClearFilter(
       /**
@@ -255,7 +253,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
@@ -263,7 +261,7 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Attaches event handler `fnFunction` to the {@link #event:close close} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -279,20 +277,20 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Attaches event handler `fnFunction` to the {@link #event:close close} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -313,7 +311,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -324,7 +322,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
@@ -346,13 +344,13 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit]
     ): this.type = js.native
     def attachDataStateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
@@ -378,7 +376,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit]
     ): this.type = js.native
     def attachDataStateChange(
       /**
@@ -389,7 +387,7 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.DataStateIndicator` itself
       */
@@ -397,7 +395,7 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Detaches event handler `fnFunction` from the {@link #event:applyFilter applyFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -409,13 +407,13 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit]
     ): this.type = js.native
     def detachApplyFilter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorApplyFilterEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -423,7 +421,7 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Detaches event handler `fnFunction` from the {@link #event:clearFilter clearFilter} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -435,13 +433,13 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClearFilter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -449,7 +447,7 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Detaches event handler `fnFunction` from the {@link #event:close close} event of this `sap.m.plugins.DataStateIndicator`.
       *
@@ -461,13 +459,13 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -486,13 +484,13 @@ object sapMPluginsDataStateIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit]
     ): this.type = js.native
     def detachDataStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DataStateIndicatorDataStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -500,8 +498,8 @@ object sapMPluginsDataStateIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.89
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.89
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:applyFilter applyFilter} to attached listeners.
       *
@@ -511,14 +509,16 @@ object sapMPluginsDataStateIndicatorMod {
       * @returns Whether or not to prevent the default action
       */
     def fireApplyFilter(): Boolean = js.native
-    def fireApplyFilter(/**
+    def fireApplyFilter(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Filter): Boolean = js.native
+    mParameters: DataStateIndicator$ApplyFilterEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.89
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.89
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:clearFilter clearFilter} to attached listeners.
       *
@@ -534,8 +534,8 @@ object sapMPluginsDataStateIndicatorMod {
     mParameters: js.Object): Boolean = js.native
     
     /**
-      * @SINCE 1.103
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.103
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -548,7 +548,7 @@ object sapMPluginsDataStateIndicatorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:dataStateChange dataStateChange} to attached listeners.
       *
@@ -558,13 +558,15 @@ object sapMPluginsDataStateIndicatorMod {
       * @returns Whether or not to prevent the default action
       */
     def fireDataStateChange(): Boolean = js.native
-    def fireDataStateChange(/**
+    def fireDataStateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DataState): Boolean = js.native
+    mParameters: DataStateIndicator$DataStateChangeEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEnableFiltering enableFiltering}.
       *
@@ -585,15 +587,15 @@ object sapMPluginsDataStateIndicatorMod {
       *
       * Defines a predicate to test each message of the data state.
       *
-      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control
-      * related control} parameters. Return `true` to keep the message, `false` otherwise.
+      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control related control }
+      * parameters. Return `true` to keep the message, `false` otherwise.
       *
       * @returns Value of property `filter`
       */
     def getFilter(): js.Function = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Return whether message filtering is active or not.
       *
@@ -608,7 +610,7 @@ object sapMPluginsDataStateIndicatorMod {
     def refresh(): Unit = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEnableFiltering enableFiltering}.
       *
@@ -635,8 +637,8 @@ object sapMPluginsDataStateIndicatorMod {
       *
       * Defines a predicate to test each message of the data state.
       *
-      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control
-      * related control} parameters. Return `true` to keep the message, `false` otherwise.
+      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control related control }
+      * parameters. Return `true` to keep the message, `false` otherwise.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -697,41 +699,133 @@ object sapMPluginsDataStateIndicatorMod {
     ): Unit = js.native
   }
   
+  trait DataStateIndicator$ApplyFilterEventParameters extends StObject {
+    
+    /**
+      * The filter object representing the entries with messages.
+      */
+    var filter: js.UndefOr[typings.openui5.sapUiModelFilterMod.default] = js.undefined
+  }
+  object DataStateIndicator$ApplyFilterEventParameters {
+    
+    inline def apply(): DataStateIndicator$ApplyFilterEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataStateIndicator$ApplyFilterEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStateIndicator$ApplyFilterEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFilter(value: typings.openui5.sapUiModelFilterMod.default): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    }
+  }
+  
+  trait DataStateIndicator$ClearFilterEventParameters extends StObject
+  
+  trait DataStateIndicator$CloseEventParameters extends StObject
+  
+  trait DataStateIndicator$DataStateChangeEventParameters extends StObject {
+    
+    /**
+      * The data state object.
+      */
+    var dataState: js.UndefOr[typings.openui5.sapUiModelDataStateMod.default] = js.undefined
+    
+    /**
+      * The messages ({@link sap.ui.core.message.Message}) from the current `dataState` object filtered by the
+      * given `filter` function.
+      */
+    var filteredMessages: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object DataStateIndicator$DataStateChangeEventParameters {
+    
+    inline def apply(): DataStateIndicator$DataStateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataStateIndicator$DataStateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStateIndicator$DataStateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDataState(value: typings.openui5.sapUiModelDataStateMod.default): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
+      
+      inline def setDataStateUndefined: Self = StObject.set(x, "dataState", js.undefined)
+      
+      inline def setFilteredMessages(value: js.Array[js.Object]): Self = StObject.set(x, "filteredMessages", value.asInstanceOf[js.Any])
+      
+      inline def setFilteredMessagesUndefined: Self = StObject.set(x, "filteredMessages", js.undefined)
+      
+      inline def setFilteredMessagesVarargs(value: js.Object*): Self = StObject.set(x, "filteredMessages", js.Array(value*))
+    }
+  }
+  
+  type DataStateIndicatorApplyFilterEvent = typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$ApplyFilterEventParameters]
+  
+  type DataStateIndicatorApplyFilterEventParameters = DataStateIndicator$ApplyFilterEventParameters
+  
+  type DataStateIndicatorClearFilterEvent = typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$ClearFilterEventParameters]
+  
+  type DataStateIndicatorClearFilterEventParameters = DataStateIndicator$ClearFilterEventParameters
+  
+  type DataStateIndicatorCloseEvent = typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$CloseEventParameters]
+  
+  type DataStateIndicatorCloseEventParameters = DataStateIndicator$CloseEventParameters
+  
+  type DataStateIndicatorDataStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$DataStateChangeEventParameters]
+  
+  type DataStateIndicatorDataStateChangeEventParameters = DataStateIndicator$DataStateChangeEventParameters
+  
   trait DataStateIndicatorSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * This event is fired when the user filters data state messages and if the `enableFiltering` property is
       * set to `true`.
       */
-    var applyFilter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var applyFilter: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$ApplyFilterEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * This event is fired when the user clears the data state message filter and if the `enableFiltering` property
       * is set to `true`.
       */
-    var clearFilter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var clearFilter: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * This event is fired when the user presses the `Close` button of the `MessageStrip` control which is managed
       * by this plugin.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This event is fired when the {@link sap.ui.model.DataState data state} of the plugin parent is changed.
       */
-    var dataStateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var dataStateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$DataStateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Enables filtering for data state messages if this property is set to `true`. A link is provided to the
       * user that allows them to filter. After the binding-related messages have been filtered by the user, all
@@ -746,8 +840,8 @@ object sapMPluginsDataStateIndicatorMod {
     /**
       * Defines a predicate to test each message of the data state.
       *
-      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control
-      * related control} parameters. Return `true` to keep the message, `false` otherwise.
+      * This callback gets called using the {@link sap.ui.core.message.Message message} and {@link sap.ui.core.Control related control }
+      * parameters. Return `true` to keep the message, `false` otherwise.
       */
     var filter: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -763,19 +857,23 @@ object sapMPluginsDataStateIndicatorMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DataStateIndicatorSettings] (val x: Self) extends AnyVal {
       
-      inline def setApplyFilter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "applyFilter", js.Any.fromFunction1(value))
+      inline def setApplyFilter(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$ApplyFilterEventParameters] => Unit
+      ): Self = StObject.set(x, "applyFilter", js.Any.fromFunction1(value))
       
       inline def setApplyFilterUndefined: Self = StObject.set(x, "applyFilter", js.undefined)
       
-      inline def setClearFilter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction1(value))
+      inline def setClearFilter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction1(value))
       
       inline def setClearFilterUndefined: Self = StObject.set(x, "clearFilter", js.undefined)
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setDataStateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "dataStateChange", js.Any.fromFunction1(value))
+      inline def setDataStateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DataStateIndicator$DataStateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "dataStateChange", js.Any.fromFunction1(value))
       
       inline def setDataStateChangeUndefined: Self = StObject.set(x, "dataStateChange", js.undefined)
       

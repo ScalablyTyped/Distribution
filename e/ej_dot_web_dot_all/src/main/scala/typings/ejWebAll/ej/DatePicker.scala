@@ -585,12 +585,12 @@ object DatePicker {
   trait Model extends StObject {
     
     /** allow or restrict the drill down to multiple levels of view (month/year/decade) in DatePicker calendar
-      * @Default {true}
+      * @default {true}
       */
     var allowDrillDown: js.UndefOr[Boolean] = js.undefined
     
     /** Used to allow or restrict the editing in DatePicker input field directly. By setting false to this API, You can only pick the date from DatePicker popup.
-      * @Default {true}
+      * @default {true}
       */
     var allowEdit: js.UndefOr[Boolean] = js.undefined
     
@@ -607,12 +607,12 @@ object DatePicker {
     var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Disable the list of specified date value.
-      * @Default {{}}
+      * @default {{}}
       */
     var blackoutDates: js.UndefOr[Any] = js.undefined
     
     /** Sets the specified text value to the today button in the DatePicker calendar.
-      * @Default {Today}
+      * @default {Today}
       */
     var buttonText: js.UndefOr[String] = js.undefined
     
@@ -633,12 +633,12 @@ object DatePicker {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Formats the value of the DatePicker in to the specified date format. If this API is not specified, dateFormat will be set based on the current culture of DatePicker.
-      * @Default {MM/dd/yyyy}
+      * @default {MM/dd/yyyy}
       */
     var dateFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the header format of days in DatePicker calendar. See below to get available Headers options
-      * @Default {ej.DatePicker.Header.Short}
+      * @default {ej.DatePicker.Header.Short}
       */
     var dayHeaderFormat: js.UndefOr[String | Header] = js.undefined
     
@@ -652,38 +652,38 @@ object DatePicker {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Allows to embed the DatePicker calendar in the page. Also associates DatePicker with div element instead of input.
-      * @Default {false}
+      * @default {false}
       */
     var displayInline: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the animation effect with DatePicker calendar.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Sustain the entire widget model of DatePicker even after form post or browser refresh
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays DatePicker calendar along with DatePicker input field in Right to Left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to enter valid or invalid date in input textbox and indicate as error if it is invalid value, when this API value is set to true. For false value, invalid date is not
       * allowed to input field and corrected to valid date automatically, even if invalid date is given.
-      * @Default {false}
+      * @default {false}
       */
     var enableStrictMode: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable the DatePicker control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Used  the required fields for special Dates in DatePicker in order to customize the special dates in a calendar.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
@@ -696,42 +696,42 @@ object DatePicker {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Specifies the header format to be displayed in the DatePicker calendar.
-      * @Default {MMMM yyyy}
+      * @default {MMMM yyyy}
       */
     var headerFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the height of the DatePicker input text.
-      * @Default {28px}
+      * @default {28px}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** HighlightSection is used to highlight currently selected date's month/week/workdays. See below to get available HighlightSection options
-      * @Default {none}
+      * @default {none}
       */
     var highlightSection: js.UndefOr[String | HighlightSection] = js.undefined
     
     /** Weekend  dates will be highlighted when this property is set to true.
-      * @Default {false}
+      * @default {false}
       */
     var highlightWeekend: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the HTML Attributes of the DatePicker.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Change the DatePicker calendar and date format based on given culture.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum date in the calendar that the user can select.
-      * @Default {new Date(2099, 11, 31)}
+      * @default {new Date(2099, 11, 31)}
       */
     var maxDate: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the minimum date in the calendar that the user can select.
-      * @Default {new Date(1900, 00, 01)}
+      * @default {new Date(1900, 00, 01)}
       */
     var minDate: js.UndefOr[String | js.Date] = js.undefined
     
@@ -744,7 +744,7 @@ object DatePicker {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Allows to toggles the read only state of the DatePicker. When the widget is readOnly, it doesn't allow your input.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -753,87 +753,87 @@ object DatePicker {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** It allow to show/hide the disabled date ranges
-      * @Default {true}
+      * @default {true}
       */
     var showDisabledRange: js.UndefOr[Boolean] = js.undefined
     
     /** It allows to display footer in DatePicker calendar.
-      * @Default {true}
+      * @default {true}
       */
     var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /** It allows to display/hides the other months days from the current month calendar in a DatePicker.
-      * @Default {true}
+      * @default {true}
       */
     var showOtherMonths: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the date icon button at right side of textbox, which is used to open or close the DatePicker calendar popup.
-      * @Default {true}
+      * @default {true}
       */
     var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** DatePicker input is displayed with rounded corner when this property is set to true.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Used to show the tooltip when hovering on the days in the DatePicker calendar.
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the special dates in DatePicker.
-      * @Default {null}
+      * @default {null}
       */
     var specialDates: js.UndefOr[Any] = js.undefined
     
     /** Specifies the start day of the week in DatePicker calendar.
-      * @Default {0}
+      * @default {0}
       */
     var startDay: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start level view in DatePicker calendar. See below available Levels
-      * @Default {ej.DatePicker.Level.Month}
+      * @default {ej.DatePicker.Level.Month}
       */
     var startLevel: js.UndefOr[String | Level] = js.undefined
     
     /** Specifies the number of months to be navigate for one click of next and previous button in a DatePicker Calendar.
-      * @Default {1}
+      * @default {1}
       */
     var stepMonths: js.UndefOr[Double] = js.undefined
     
     /** Provides option to customize the tooltip format.
-      * @Default {ddd MMM dd yyyy}
+      * @default {ddd MMM dd yyyy}
       */
     var tooltipFormat: js.UndefOr[String] = js.undefined
     
     /** Sets the jQuery validation support to DatePicker Date value. See validation
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation custom rules to the DatePicker. see validation
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** sets or returns the current value of DatePicker
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
-      * @Default {Select date}
+      * @default {Select date}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Allows to embed  a new column with the calendar in the popup, which will display the week number of every week in a calendar year.
-      * @Default {false}
+      * @default {false}
       */
     var weekNumber: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the width of the DatePicker input text.
-      * @Default {160px}
+      * @default {160px}
       */
     var width: js.UndefOr[String] = js.undefined
   }

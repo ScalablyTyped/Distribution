@@ -125,7 +125,7 @@ object sapUiLayoutBlockLayoutRowMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Adds some accentCell into the association {@link #getAccentCells accentCells}.
       *
@@ -162,10 +162,9 @@ object sapUiLayoutBlockLayoutRowMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAccentCells
-      * accentCells}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAccentCells accentCells}.
       */
     def getAccentCells(): js.Array[ID] = js.native
     
@@ -177,7 +176,7 @@ object sapUiLayoutBlockLayoutRowMod {
     def getContent(): js.Array[typings.openui5.sapUiLayoutBlockLayoutCellMod.default] = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets current value of property {@link #getRowColorSet rowColorSet}.
       *
@@ -231,7 +230,7 @@ object sapUiLayoutBlockLayoutRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Removes an accentCell from the association named {@link #getAccentCells accentCells}.
       *
@@ -253,7 +252,7 @@ object sapUiLayoutBlockLayoutRowMod {
     ): ID | Null = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Removes all the controls in the association named {@link #getAccentCells accentCells}.
       *
@@ -294,7 +293,7 @@ object sapUiLayoutBlockLayoutRowMod {
       sType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockRowColorSets * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Changes dynamically row color set Note: this might invalidate cells inside and also change color sets
       * of the other BlockLayoutRow-s below it.
@@ -325,7 +324,7 @@ object sapUiLayoutBlockLayoutRowMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Cells that would be accented. *Note:* This association has visual impact only for BlockLayouts with background
       * types "Mixed" and "Accent".
@@ -344,7 +343,7 @@ object sapUiLayoutBlockLayoutRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Defines background type for that row. There might be several rows with the same type
       */

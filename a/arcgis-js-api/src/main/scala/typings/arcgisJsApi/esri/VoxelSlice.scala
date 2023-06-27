@@ -9,38 +9,38 @@ trait VoxelSlice
      with JSONSupport {
   
   /**
-    * Whether or not the slice is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#enabled)
-    */
+  		 * Whether or not the slice is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#enabled)
+  		 */
   var enabled: Boolean
   
   /**
-    * The label for the slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#label)
-    */
+  		 * The label for the slice.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#label)
+  		 */
   var label: String
   
   /**
-    * The orientation angle (in the degrees) of the slice plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#orientation)
-    */
+  		 * The orientation angle (in the degrees) of the slice plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#orientation)
+  		 */
   var orientation: Double
   
   /**
-    * A point on the slice plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#point)
-    */
+  		 * A point on the slice plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#point)
+  		 */
   var point: js.Array[Double]
   
   /**
-    * The tilt angle (in degrees) of the slice plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#tilt)
-    */
+  		 * The tilt angle (in degrees) of the slice plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#tilt)
+  		 */
   var tilt: Double
 }
 object VoxelSlice {

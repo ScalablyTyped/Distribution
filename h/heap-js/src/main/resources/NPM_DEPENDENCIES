@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "heap-js" : "2.2.0"
+      "heap-js" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "heap-js" : "2.2.0"
+      "heap-js" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

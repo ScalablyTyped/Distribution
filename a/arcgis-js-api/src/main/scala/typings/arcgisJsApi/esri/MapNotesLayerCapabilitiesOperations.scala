@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapNotesLayerCapabilitiesOperations extends StObject {
   
   /**
-    * Indicates if map notes in the layer can be edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapNotesLayer.html#capabilities)
-    */
+  		 * Indicates if map notes in the layer can be edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapNotesLayer.html#capabilities)
+  		 */
   var supportsMapNotesEditing: Boolean
 }
 object MapNotesLayerCapabilitiesOperations {

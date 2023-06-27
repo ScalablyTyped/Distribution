@@ -23,19 +23,19 @@ trait SimpleFillSymbol
      with symbolsFillSymbol {
   
   /**
-    * The fill style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
-    */
+  		 * The fill style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style)
+  		 */
   var style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#type)
+  		 */
   @JSName("type")
   val type_SimpleFillSymbol: `simple-fill` = js.native
 }

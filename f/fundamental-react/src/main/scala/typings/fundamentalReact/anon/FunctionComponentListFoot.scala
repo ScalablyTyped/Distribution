@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.libListListMod.ListFooterProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentListFoot extends StObject {
   
-  def apply(props: ListFooterProps): ReactElement | Null = js.native
-  def apply(props: ListFooterProps, context: Any): ReactElement | Null = js.native
+  def apply(props: ListFooterProps): ReactNode = js.native
+  def apply(props: ListFooterProps, context: Any): ReactNode = js.native
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   

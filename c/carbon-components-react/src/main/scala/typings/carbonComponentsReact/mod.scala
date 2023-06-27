@@ -143,6 +143,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -692,6 +693,8 @@ object mod {
   
   inline def AspectRatio_script(props: AspectRatioIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def AspectRatio_search(props: AspectRatioIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def AspectRatio_section(props: AspectRatioIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_select(props: AspectRatioIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -1080,6 +1083,8 @@ object mod {
   
   inline def Button_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def Button_search[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[search] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def Button_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Button_select[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[select] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -1462,6 +1467,8 @@ object mod {
   
   inline def Column_script(props: ColumnIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def Column_search(props: ColumnIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def Column_section(props: ColumnIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_select(props: ColumnIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -1827,6 +1834,8 @@ object mod {
   inline def Content_samp(props: ContentIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Content_script(props: ContentIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Content_search(props: ContentIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Content_section(props: ContentIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -2200,6 +2209,8 @@ object mod {
   
   inline def DangerButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def DangerButton_search(props: FCProps[ButtonIntrinsicProps[search]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def DangerButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def DangerButton_select(props: FCProps[ButtonIntrinsicProps[select]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -2309,7 +2320,7 @@ object mod {
     inline def TableBatchAction[R /* <: HTMLElement */](
       props: ForwardRefProps[
           R, 
-          ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[center] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
+          ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[center] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[search] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
         ]
     ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     /* static member */
@@ -2804,6 +2815,8 @@ object mod {
   inline def Grid_samp(props: GridIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid_script(props: GridIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Grid_search(props: GridIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid_section(props: GridIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -3333,6 +3346,8 @@ object mod {
   
   inline def PrimaryButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def PrimaryButton_search(props: FCProps[ButtonIntrinsicProps[search]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def PrimaryButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def PrimaryButton_select(props: FCProps[ButtonIntrinsicProps[select]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -3725,6 +3740,8 @@ object mod {
   
   inline def Row_script(props: RowIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def Row_search(props: RowIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def Row_section(props: RowIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_select(props: RowIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -4105,6 +4122,8 @@ object mod {
   inline def SecondaryButton_samp(props: FCProps[ButtonIntrinsicProps[samp]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def SecondaryButton_script(props: FCProps[ButtonIntrinsicProps[script]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def SecondaryButton_search(props: FCProps[ButtonIntrinsicProps[search]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def SecondaryButton_section(props: FCProps[ButtonIntrinsicProps[section]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -4625,6 +4644,8 @@ object mod {
   inline def TableBatchAction_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def TableBatchAction_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def TableBatchAction_search[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[search] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def TableBatchAction_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -5240,6 +5261,8 @@ object mod {
   inline def unstableSection_samp(props: SectionIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def unstableSection_script(props: SectionIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def unstableSection_search(props: SectionIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def unstableSection_section(props: SectionIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_Section")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

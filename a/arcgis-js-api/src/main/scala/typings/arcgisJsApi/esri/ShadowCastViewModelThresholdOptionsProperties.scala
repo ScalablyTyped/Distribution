@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShadowCastViewModelThresholdOptionsProperties extends StObject {
   
   /**
-    * Color of the shadow visualization.
-    *
-    * @default [255, 0 , 0, 0.7]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
-    */
+  		 * Color of the shadow visualization.
+  		 *
+  		 * @default [255, 0 , 0, 0.7]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The maximum time period (in milliseconds) selectable in the UI for the threshold value.
-    *
-    * @default 8 * 3600 * 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
-    */
+  		 * The maximum time period (in milliseconds) selectable in the UI for the threshold value.
+  		 *
+  		 * @default 8 * 3600 * 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum time period (in milliseconds) selectable in the UI for the threshold value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
-    */
+  		 * The minimum time period (in milliseconds) selectable in the UI for the threshold value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Time period in milliseconds.
-    *
-    * @default 4 * 3600 * 1000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
-    */
+  		 * Time period in milliseconds.
+  		 *
+  		 * @default 4 * 3600 * 1000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html#thresholdOptions)
+  		 */
   var value: js.UndefOr[Double] = js.undefined
 }
 object ShadowCastViewModelThresholdOptionsProperties {

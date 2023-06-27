@@ -1858,6 +1858,25 @@ trait PlotOptions extends StObject {
   var tema: js.UndefOr[PlotTemaOptions] = js.undefined
   
   /**
+    * (Highmaps) A tiledwebmap series allows user to display dynamically joined
+    * individual images (tiles) and join them together to create a map.
+    *
+    * In TypeScript the type option must always be set.
+    *
+    * Configuration options for the series are given in three levels:
+    *
+    * 1. Options for all series in a chart are defined in the
+    * plotOptions.series object.
+    *
+    * 2. Options for all `tiledwebmap` series are defined in
+    * plotOptions.tiledwebmap.
+    *
+    * 3. Options for one single series are given in the series instance array.
+    * (see online documentation for example)
+    */
+  var tiledwebmap: js.UndefOr[PlotTiledwebmapOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) A tilemap series is a type of heatmap where the
     * tile shapes are configurable.
     *
@@ -2614,6 +2633,10 @@ object PlotOptions {
     inline def setTema(value: PlotTemaOptions): Self = StObject.set(x, "tema", value.asInstanceOf[js.Any])
     
     inline def setTemaUndefined: Self = StObject.set(x, "tema", js.undefined)
+    
+    inline def setTiledwebmap(value: PlotTiledwebmapOptions): Self = StObject.set(x, "tiledwebmap", value.asInstanceOf[js.Any])
+    
+    inline def setTiledwebmapUndefined: Self = StObject.set(x, "tiledwebmap", js.undefined)
     
     inline def setTilemap(value: PlotTilemapOptions): Self = StObject.set(x, "tilemap", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.sentryReplay
 
 import typings.sentryReplay.anon.Count
-import typings.sentryReplay.typesTypesMod.SendReplayData
+import typings.sentryReplay.typesTypesReplayMod.SendReplayData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

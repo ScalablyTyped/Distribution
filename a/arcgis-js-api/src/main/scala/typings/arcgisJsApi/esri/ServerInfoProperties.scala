@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServerInfoProperties extends StObject {
   
   /**
-    * The token service URL used to generate tokens for ArcGIS Server Admin resources.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#adminTokenServiceUrl)
-    */
+  		 * The token service URL used to generate tokens for ArcGIS Server Admin resources.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#adminTokenServiceUrl)
+  		 */
   var adminTokenServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Version of the ArcGIS Server or Portal deployed on the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#currentVersion)
-    */
+  		 * Version of the ArcGIS Server or Portal deployed on the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#currentVersion)
+  		 */
   var currentVersion: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether the [server](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server) is a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html) instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#hasPortal)
-    */
+  		 * Indicates whether the [server](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server) is a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html) instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#hasPortal)
+  		 */
   var hasPortal: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the [server](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server) is an [ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/get-started/windows/what-is-arcgis-for-server-.htm) instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#hasServer)
-    */
+  		 * Indicates whether the [server](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server) is an [ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/get-started/windows/what-is-arcgis-for-server-.htm) instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#hasServer)
+  		 */
   var hasServer: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The server URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server)
-    */
+  		 * The server URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#server)
+  		 */
   var server: js.UndefOr[String] = js.undefined
   
   /**
-    * Validity of short-lived token in minutes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#shortLivedTokenValidity)
-    */
+  		 * Validity of short-lived token in minutes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#shortLivedTokenValidity)
+  		 */
   var shortLivedTokenValidity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The token service URL used to generate tokens for the secured resources on the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#tokenServiceUrl)
-    */
+  		 * The token service URL used to generate tokens for the secured resources on the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#tokenServiceUrl)
+  		 */
   var tokenServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the server is configured to work with web tier authentication.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#webTierAuth)
-    */
+  		 * Indicates whether the server is configured to work with web tier authentication.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#webTierAuth)
+  		 */
   var webTierAuth: js.UndefOr[Boolean] = js.undefined
 }
 object ServerInfoProperties {

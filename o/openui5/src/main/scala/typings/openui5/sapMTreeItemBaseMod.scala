@@ -18,8 +18,8 @@ object sapMTreeItemBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.ListItemBase#constructor
-    * sap.m.ListItemBase} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.ListItemBase#constructor sap.m.ListItemBase }
+    * can be used.
     */
   open class default () extends TreeItemBase {
     def this(/**
@@ -124,49 +124,49 @@ object sapMTreeItemBaseMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets the expanding information of the node.
       */
     def getExpanded(): Boolean = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets the context of the node.
       */
     def getItemNodeContext(): js.Object = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets the node level in the hierarchy.
       */
     def getLevel(): int = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets the parent node control.
       */
     def getParentNode(): js.UndefOr[TreeItemBase] = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets the context of the parent node control.
       */
     def getParentNodeContext(): js.Object = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Determines if the node is a leaf.
       */
     def isLeaf(): Boolean = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Checks if the node is the top level node.
       */

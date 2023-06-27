@@ -162,7 +162,7 @@ object sapUiUx3NavigationItemMod {
     def getSubItems(): js.Array[NavigationItem] = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getVisible visible}.
       *
@@ -253,7 +253,7 @@ object sapUiUx3NavigationItemMod {
     sHref: URI): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getVisible visible}.
       *
@@ -296,7 +296,7 @@ object sapUiUx3NavigationItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Whether the NavigationItem is currently visible. When making NavigationItems invisible at runtime it
       * is the application's responsibility to make sure it is not the currently selected one - or to select

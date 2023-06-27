@@ -25,6 +25,8 @@ object pluginIsSameOrAfterMod extends Shortcut {
     @js.native
     trait Dayjs extends StObject {
       
+      def isSameOrAfter(): Boolean = js.native
+      def isSameOrAfter(date: Unit, unit: OpUnitType): Boolean = js.native
       def isSameOrAfter(date: ConfigType): Boolean = js.native
       def isSameOrAfter(date: ConfigType, unit: OpUnitType): Boolean = js.native
     }

@@ -54,6 +54,7 @@ import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompi
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.^
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`--`
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`-_`
+import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`await using`
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`object`
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`throw`
 import typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.`using`
@@ -89,8 +90,11 @@ import typings.babelTemplate.mod.TemplateBuilder
 import typings.babelTemplate.mod.TemplateBuilderOptions
 import typings.babelTraverse.anon.Container
 import typings.babelTraverse.anon.FnCall
+import typings.babelTraverse.anon.Hub
+import typings.babelTraverse.anon.Typeofcache
 import typings.babelTraverse.anon.Typeofvisitors
-import typings.babelTraverse.mod.Hub
+import typings.babelTraverse.mod.HubInterface
+import typings.babelTraverse.mod.NodeKeyOfArrays
 import typings.babelTraverse.mod.Scope
 import typings.babelTraverse.mod.TraverseOptions
 import typings.babelTraverse.mod.Visitor
@@ -679,11 +683,16 @@ object anon {
   @js.native
   trait TypeofNodePath
     extends StObject
-       with Instantiable2[/* hub */ Hub, /* parent */ typings.babelTypes.mod.Node, NodePath[js.Object]] {
+       with Instantiable2[
+          /* hub */ HubInterface, 
+          /* parent */ typings.babelTypes.mod.Node, 
+          NodePath[js.Object]
+        ] {
     
     def get[C /* <: typings.babelTypes.mod.Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): typings.babelTraverse.mod.NodePath[
         /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
       ] = js.native
+    def get[C /* <: typings.babelTypes.mod.Node */, L /* <: NodeKeyOfArrays[C] */](opts: Hub[C, L]): /* import warning: importer.ImportType#apply Failed type conversion: C[L] extends std.Array<@babel/types.@babel/types.Node | null | undefined> ? @babel/traverse.@babel/traverse.NodePath<C[L][number]> : never */ js.Any = js.native
   }
   
   @js.native
@@ -793,85 +802,232 @@ object anon {
   @js.native
   trait Typeoftraverse extends StObject {
     
+    def apply(parent: typings.babelTypes.mod.Node): Unit = js.native
+    def apply(parent: typings.babelTypes.mod.Node, opts: Unit, scope: Unit, state: Any): Unit = js.native
     def apply(
-      parent: js.UndefOr[typings.babelTypes.mod.Node | js.Array[typings.babelTypes.mod.Node] | Null],
-      opts: js.UndefOr[TraverseOptions[typings.babelTypes.mod.Node]],
-      scope: js.UndefOr[Scope],
-      state: js.UndefOr[Any],
-      parentPath: js.UndefOr[typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]]
-    ): Unit = js.native
-    def apply[S](parent: js.Array[typings.babelTypes.mod.Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = js.native
-    def apply[S](
-      parent: js.Array[typings.babelTypes.mod.Node],
-      opts: TraverseOptions[S],
-      scope: Unit,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: js.Array[typings.babelTypes.mod.Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    def apply[S](
-      parent: js.Array[typings.babelTypes.mod.Node],
-      opts: TraverseOptions[S],
-      scope: Scope,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S): Unit = js.native
-    def apply[S](
-      parent: Null,
-      opts: TraverseOptions[S],
-      scope: Unit,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    def apply[S](
-      parent: Null,
-      opts: TraverseOptions[S],
-      scope: Scope,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S): Unit = js.native
-    def apply[S](
-      parent: Unit,
-      opts: TraverseOptions[S],
-      scope: Unit,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    def apply[S](
-      parent: Unit,
-      opts: TraverseOptions[S],
-      scope: Scope,
-      state: S,
-      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
-    ): Unit = js.native
-    def apply[S](parent: typings.babelTypes.mod.Node, opts: TraverseOptions[S], scope: Unit, state: S): Unit = js.native
-    def apply[S](
       parent: typings.babelTypes.mod.Node,
-      opts: TraverseOptions[S],
+      opts: Unit,
       scope: Unit,
-      state: S,
+      state: Any,
       parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
     ): Unit = js.native
-    def apply[S](parent: typings.babelTypes.mod.Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = js.native
-    def apply[S](
+    def apply(
       parent: typings.babelTypes.mod.Node,
-      opts: TraverseOptions[S],
+      opts: Unit,
+      scope: Unit,
+      state: Unit,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(parent: typings.babelTypes.mod.Node, opts: Unit, scope: Scope): Unit = js.native
+    def apply(parent: typings.babelTypes.mod.Node, opts: Unit, scope: Scope, state: Any): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: Unit,
       scope: Scope,
-      state: S,
+      state: Any,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: Unit,
+      scope: Scope,
+      state: Unit,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(parent: typings.babelTypes.mod.Node, opts: TraverseOptions[typings.babelTypes.mod.Node]): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Unit,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any,
+      parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def apply(
+      parent: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Unit,
       parentPath: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
     ): Unit = js.native
     
-    def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply Failed type conversion: {[ Type in 'ClassAccessorProperty' | 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'RecordExpression' | 'TupleExpression' | 'ModuleExpression' | 'TopicReference' | 'PipelineTopicExpression' | 'PipelineBareFunction' | 'PipelinePrimaryTopicReference' | 'TSInstantiationExpression' | 'TSAsExpression' | 'TSSatisfiesExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'IndexedAccessType' | 'OptionalIndexedAccessType' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'Placeholder' | 'V8IntrinsicIdentifier' | 'ObjectProperty' | 'PrivateName' | 'SpreadElement' | 'SwitchCase' | 'TryStatement' | 'VariableDeclarator' | 'WithStatement' | 'TemplateElement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any = js.native
+    var cache: Typeofcache = js.native
+    
+    def cheap(
+      node: typings.babelTypes.mod.Node,
+      enter: js.Function1[/* node */ typings.babelTypes.mod.Node, Unit]
+    ): Unit = js.native
+    
+    def clearNode(node: typings.babelTypes.mod.Node): Unit = js.native
+    def clearNode(
+      node: typings.babelTypes.mod.Node,
+      opts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemovePropertiesOptions */ Any
+    ): Unit = js.native
+    
+    def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply Failed type conversion: {[ Type in std.Exclude<@babel/types.@babel/types.Node, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.DeprecatedAliases * / any>['type'] ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>} */ js.Any = js.native
     @JSName("explode")
     var explode_Original: FnCall = js.native
     
-    def verify(visitor: Visitor[js.Object]): Unit = js.native
+    def hasType(
+      tree: typings.babelTypes.mod.Node,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.ClassAccessorProperty, typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.AnyTypeAnnotation, typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.ArgumentPlaceholder */ Any
+    ): Boolean = js.native
+    def hasType(
+      tree: typings.babelTypes.mod.Node,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 249, starting with typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.ClassAccessorProperty, typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.AnyTypeAnnotation, typings.babelPluginEmberTemplateCompilation.babelPluginEmberTemplateCompilationStrings.ArgumentPlaceholder */ Any,
+      denylistTypes: js.Array[String]
+    ): Boolean = js.native
+    
+    def node(node: typings.babelTypes.mod.Node, opts: TraverseOptions[typings.babelTypes.mod.Node]): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any,
+      path: Unit,
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Any,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node],
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Unit,
+      path: Unit,
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Unit,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Unit,
+      state: Unit,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node],
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any,
+      path: Unit,
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Any,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node],
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Unit,
+      path: Unit,
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Unit,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node]
+    ): Unit = js.native
+    def node(
+      node: typings.babelTypes.mod.Node,
+      opts: TraverseOptions[typings.babelTypes.mod.Node],
+      scope: Scope,
+      state: Unit,
+      path: typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node],
+      skipKeys: Record[String, Boolean]
+    ): Unit = js.native
+    
+    def removeProperties(tree: typings.babelTypes.mod.Node): typings.babelTypes.mod.Node = js.native
+    def removeProperties(
+      tree: typings.babelTypes.mod.Node,
+      opts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RemovePropertiesOptions */ Any
+    ): typings.babelTypes.mod.Node = js.native
+    
+    def verify(visitor: Visitor[Any]): Unit = js.native
     @JSName("verify")
-    var verify_Original: js.Function1[/* visitor */ Visitor[js.Object], Unit] = js.native
+    var verify_Original: js.Function1[/* visitor */ Visitor[Any], Unit] = js.native
     
     var visitors: Typeofvisitors = js.native
   }
@@ -6458,7 +6614,7 @@ object anon {
     @JSName("valueToNode")
     def valueToNode_RegExpLiteral_(value: js.RegExp): RegExpLiteral_ = js.native
     
-    def variableDeclaration(kind: `var` | let | const | `using`, declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
+    def variableDeclaration(kind: `var` | let | const | `using` | (`await using`), declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
     
     def variableDeclarator(id: LVal): VariableDeclarator_ = js.native
     def variableDeclarator(id: LVal, init: Expression): VariableDeclarator_ = js.native

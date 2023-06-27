@@ -157,7 +157,7 @@ trait DeleteAnalysis extends StObject {
     * The above process assumes that you want to remove all trace of the tool's analyses from the GitHub user interface, for the specified repository, and it therefore uses the `confirm_delete_url` value. Alternatively, you could use the `next_analysis_url` value, which would leave the last analysis in each set undeleted to avoid removing a tool's analysis entirely.
     */
   @JSName("deleteAnalysis")
-  var deleteAnalysis_Original: `207`
+  var deleteAnalysis_Original: `209`
   
   /**
     * Gets a single code scanning alert. You must use an access token with the `security_events` scope to use this endpoint with private repos, the `public_repo` scope also grants permission to read security events on public repos only. GitHub Apps must have the `security_events` read permission to use this endpoint.
@@ -177,7 +177,7 @@ trait DeleteAnalysis extends StObject {
     * Gets a single code scanning alert. You must use an access token with the `security_events` scope to use this endpoint with private repos, the `public_repo` scope also grants permission to read security events on public repos only. GitHub Apps must have the `security_events` read permission to use this endpoint.
     */
   @JSName("getAlert")
-  var getAlert_Original: `208`
+  var getAlert_Original: `210`
   
   /**
     * Gets a specified code scanning analysis for a repository.
@@ -233,7 +233,7 @@ trait DeleteAnalysis extends StObject {
     * [SARIF version 2.1.0](https://docs.oasis-open.org/sarif/sarif/v2.1.0/cs01/sarif-v2.1.0-cs01.html).
     */
   @JSName("getAnalysis")
-  var getAnalysis_Original: `209`
+  var getAnalysis_Original: `211`
   
   /**
     * Gets a CodeQL database for a language in a repository.
@@ -273,7 +273,7 @@ trait DeleteAnalysis extends StObject {
     * GitHub Apps must have the `contents` read permission to use this endpoint.
     */
   @JSName("getCodeqlDatabase")
-  var getCodeqlDatabase_Original: `210`
+  var getCodeqlDatabase_Original: `212`
   
   /**
     * Gets a code scanning default setup configuration.
@@ -297,7 +297,7 @@ trait DeleteAnalysis extends StObject {
     * scope for public repos. GitHub Apps must have the `repo` write permission to use this endpoint.
     */
   @JSName("getDefaultSetup")
-  var getDefaultSetup_Original: `211`
+  var getDefaultSetup_Original: `213`
   
   /**
     * Gets information about a SARIF upload, including the status and the URL of the analysis that was uploaded so that you can retrieve details of the analysis. For more information, see "[Get a code scanning analysis for a repository](/rest/reference/code-scanning#get-a-code-scanning-analysis-for-a-repository)." You must use an access token with the `security_events` scope to use this endpoint with private repos, the `public_repo` scope also grants permission to read security events on public repos only. GitHub Apps must have the `security_events` read permission to use this endpoint.
@@ -317,7 +317,7 @@ trait DeleteAnalysis extends StObject {
     * Gets information about a SARIF upload, including the status and the URL of the analysis that was uploaded so that you can retrieve details of the analysis. For more information, see "[Get a code scanning analysis for a repository](/rest/reference/code-scanning#get-a-code-scanning-analysis-for-a-repository)." You must use an access token with the `security_events` scope to use this endpoint with private repos, the `public_repo` scope also grants permission to read security events on public repos only. GitHub Apps must have the `security_events` read permission to use this endpoint.
     */
   @JSName("getSarif")
-  var getSarif_Original: `212`
+  var getSarif_Original: `214`
   
   /**
     * Lists all instances of the specified code scanning alert.
@@ -343,7 +343,7 @@ trait DeleteAnalysis extends StObject {
     * GitHub Apps must have the `security_events` read permission to use this endpoint.
     */
   @JSName("listAlertInstances")
-  var listAlertInstances_Original: `213`
+  var listAlertInstances_Original: `215`
   
   /**
     * Lists code scanning alerts for the default branch for all eligible repositories in an organization. Eligible repositories are repositories that are owned by organizations that you own or for which you are a security manager. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
@@ -375,7 +375,7 @@ trait DeleteAnalysis extends StObject {
     * GitHub Apps must have the `security_events` read permission to use this endpoint.
     */
   @JSName("listAlertsForOrg")
-  var listAlertsForOrg_Original: `214`
+  var listAlertsForOrg_Original: `216`
   
   /**
     * Lists all open code scanning alerts for the default branch (usually `main`
@@ -413,7 +413,7 @@ trait DeleteAnalysis extends StObject {
     * (if you used `ref` in the request).
     */
   @JSName("listAlertsForRepo")
-  var listAlertsForRepo_Original: `215`
+  var listAlertsForRepo_Original: `217`
   
   /**
     * Lists all instances of the specified code scanning alert.
@@ -441,7 +441,7 @@ trait DeleteAnalysis extends StObject {
     * @deprecated octokit.rest.codeScanning.listAlertsInstances() has been renamed to octokit.rest.codeScanning.listAlertInstances() (2021-04-30)
     */
   @JSName("listAlertsInstances")
-  var listAlertsInstances_Original: `213`
+  var listAlertsInstances_Original: `215`
   
   /**
     * Lists the CodeQL databases that are available in a repository.
@@ -469,7 +469,7 @@ trait DeleteAnalysis extends StObject {
     * GitHub Apps must have the `contents` read permission to use this endpoint.
     */
   @JSName("listCodeqlDatabases")
-  var listCodeqlDatabases_Original: `216`
+  var listCodeqlDatabases_Original: `218`
   
   /**
     * Lists the details of all code scanning analyses for a repository,
@@ -521,7 +521,7 @@ trait DeleteAnalysis extends StObject {
     * The `tool_name` field is deprecated and will, in future, not be included in the response for this endpoint. The example response reflects this change. The tool name can now be found inside the `tool` field.
     */
   @JSName("listRecentAnalyses")
-  var listRecentAnalyses_Original: `217`
+  var listRecentAnalyses_Original: `219`
   
   /**
     * Updates the status of a single code scanning alert. You must use an access token with the `security_events` scope to use this endpoint with private repositories. You can also use tokens with the `public_repo` scope for public repositories only. GitHub Apps must have the `security_events` write permission to use this endpoint.
@@ -541,7 +541,7 @@ trait DeleteAnalysis extends StObject {
     * Updates the status of a single code scanning alert. You must use an access token with the `security_events` scope to use this endpoint with private repositories. You can also use tokens with the `public_repo` scope for public repositories only. GitHub Apps must have the `security_events` write permission to use this endpoint.
     */
   @JSName("updateAlert")
-  var updateAlert_Original: `218`
+  var updateAlert_Original: `220`
   
   /**
     * Updates a code scanning default setup configuration.
@@ -565,7 +565,7 @@ trait DeleteAnalysis extends StObject {
     * scope for public repos. GitHub Apps must have the `repo` write permission to use this endpoint.
     */
   @JSName("updateDefaultSetup")
-  var updateDefaultSetup_Original: `219`
+  var updateDefaultSetup_Original: `221`
   
   /**
     * Uploads SARIF data containing the results of a code scanning analysis to make the results available in a repository. You must use an access token with the `security_events` scope to use this endpoint for private repositories. You can also use tokens with the `public_repo` scope for public repositories only. GitHub Apps must have the `security_events` write permission to use this endpoint.
@@ -643,26 +643,26 @@ trait DeleteAnalysis extends StObject {
     * For more information, see "[Get information about a SARIF upload](/rest/reference/code-scanning#get-information-about-a-sarif-upload)."
     */
   @JSName("uploadSarif")
-  var uploadSarif_Original: `220`
+  var uploadSarif_Original: `222`
 }
 object DeleteAnalysis {
   
   inline def apply(
-    deleteAnalysis: `207`,
-    getAlert: `208`,
-    getAnalysis: `209`,
-    getCodeqlDatabase: `210`,
-    getDefaultSetup: `211`,
-    getSarif: `212`,
-    listAlertInstances: `213`,
-    listAlertsForOrg: `214`,
-    listAlertsForRepo: `215`,
-    listAlertsInstances: `213`,
-    listCodeqlDatabases: `216`,
-    listRecentAnalyses: `217`,
-    updateAlert: `218`,
-    updateDefaultSetup: `219`,
-    uploadSarif: `220`
+    deleteAnalysis: `209`,
+    getAlert: `210`,
+    getAnalysis: `211`,
+    getCodeqlDatabase: `212`,
+    getDefaultSetup: `213`,
+    getSarif: `214`,
+    listAlertInstances: `215`,
+    listAlertsForOrg: `216`,
+    listAlertsForRepo: `217`,
+    listAlertsInstances: `215`,
+    listCodeqlDatabases: `218`,
+    listRecentAnalyses: `219`,
+    updateAlert: `220`,
+    updateDefaultSetup: `221`,
+    uploadSarif: `222`
   ): DeleteAnalysis = {
     val __obj = js.Dynamic.literal(deleteAnalysis = deleteAnalysis.asInstanceOf[js.Any], getAlert = getAlert.asInstanceOf[js.Any], getAnalysis = getAnalysis.asInstanceOf[js.Any], getCodeqlDatabase = getCodeqlDatabase.asInstanceOf[js.Any], getDefaultSetup = getDefaultSetup.asInstanceOf[js.Any], getSarif = getSarif.asInstanceOf[js.Any], listAlertInstances = listAlertInstances.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listAlertsInstances = listAlertsInstances.asInstanceOf[js.Any], listCodeqlDatabases = listCodeqlDatabases.asInstanceOf[js.Any], listRecentAnalyses = listRecentAnalyses.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any], updateDefaultSetup = updateDefaultSetup.asInstanceOf[js.Any], uploadSarif = uploadSarif.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnalysis]
@@ -671,34 +671,34 @@ object DeleteAnalysis {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteAnalysis] (val x: Self) extends AnyVal {
     
-    inline def setDeleteAnalysis(value: `207`): Self = StObject.set(x, "deleteAnalysis", value.asInstanceOf[js.Any])
+    inline def setDeleteAnalysis(value: `209`): Self = StObject.set(x, "deleteAnalysis", value.asInstanceOf[js.Any])
     
-    inline def setGetAlert(value: `208`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `210`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    inline def setGetAnalysis(value: `209`): Self = StObject.set(x, "getAnalysis", value.asInstanceOf[js.Any])
+    inline def setGetAnalysis(value: `211`): Self = StObject.set(x, "getAnalysis", value.asInstanceOf[js.Any])
     
-    inline def setGetCodeqlDatabase(value: `210`): Self = StObject.set(x, "getCodeqlDatabase", value.asInstanceOf[js.Any])
+    inline def setGetCodeqlDatabase(value: `212`): Self = StObject.set(x, "getCodeqlDatabase", value.asInstanceOf[js.Any])
     
-    inline def setGetDefaultSetup(value: `211`): Self = StObject.set(x, "getDefaultSetup", value.asInstanceOf[js.Any])
+    inline def setGetDefaultSetup(value: `213`): Self = StObject.set(x, "getDefaultSetup", value.asInstanceOf[js.Any])
     
-    inline def setGetSarif(value: `212`): Self = StObject.set(x, "getSarif", value.asInstanceOf[js.Any])
+    inline def setGetSarif(value: `214`): Self = StObject.set(x, "getSarif", value.asInstanceOf[js.Any])
     
-    inline def setListAlertInstances(value: `213`): Self = StObject.set(x, "listAlertInstances", value.asInstanceOf[js.Any])
+    inline def setListAlertInstances(value: `215`): Self = StObject.set(x, "listAlertInstances", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForOrg(value: `214`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
+    inline def setListAlertsForOrg(value: `216`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForRepo(value: `215`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `217`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsInstances(value: `213`): Self = StObject.set(x, "listAlertsInstances", value.asInstanceOf[js.Any])
+    inline def setListAlertsInstances(value: `215`): Self = StObject.set(x, "listAlertsInstances", value.asInstanceOf[js.Any])
     
-    inline def setListCodeqlDatabases(value: `216`): Self = StObject.set(x, "listCodeqlDatabases", value.asInstanceOf[js.Any])
+    inline def setListCodeqlDatabases(value: `218`): Self = StObject.set(x, "listCodeqlDatabases", value.asInstanceOf[js.Any])
     
-    inline def setListRecentAnalyses(value: `217`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
+    inline def setListRecentAnalyses(value: `219`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
     
-    inline def setUpdateAlert(value: `218`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setUpdateAlert(value: `220`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
     
-    inline def setUpdateDefaultSetup(value: `219`): Self = StObject.set(x, "updateDefaultSetup", value.asInstanceOf[js.Any])
+    inline def setUpdateDefaultSetup(value: `221`): Self = StObject.set(x, "updateDefaultSetup", value.asInstanceOf[js.Any])
     
-    inline def setUploadSarif(value: `220`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
+    inline def setUploadSarif(value: `222`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
   }
 }

@@ -5,31 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Utility methods for working with URLs.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html)
-  */
+	 * Utility methods for working with URLs.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html)
+	 */
 trait urlUtils extends StObject {
   
   /**
-    * Adds the given proxy rule to the proxy rules list: `esriConfig.request.proxyRules`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#addProxyRule)
-    */
+  		 * Adds the given proxy rule to the proxy rules list: `esriConfig.request.proxyRules`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#addProxyRule)
+  		 */
   def addProxyRule(rule: urlUtilsAddProxyRuleRule): Double
   
   /**
-    * Returns the proxy rule that matches the given URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#getProxyRule)
-    */
+  		 * Returns the proxy rule that matches the given URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#getProxyRule)
+  		 */
   def getProxyRule(url: String): Any
   
   /**
-    * Converts the URL arguments to an object representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#urlToObject)
-    */
+  		 * Converts the URL arguments to an object representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#urlToObject)
+  		 */
   def urlToObject(url: String): Any
 }
 object urlUtils {

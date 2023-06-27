@@ -11,10 +11,10 @@ object esriAnalysisDirectLineMeasurementAnalysisMod {
   @JSImport("esri/analysis/DirectLineMeasurementAnalysis", JSImport.Namespace)
   @js.native
   /**
-    * DirectLineMeasurementAnalysis computes the distance between two points and displays the measurement in a 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html)
-    */
+  		 * DirectLineMeasurementAnalysis computes the distance between two points and displays the measurement in a 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DirectLineMeasurementAnalysis.html)
+  		 */
   open class ^ ()
     extends StObject
        with DirectLineMeasurementAnalysis {

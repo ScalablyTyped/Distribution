@@ -7,48 +7,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionSimpleStyleProperties extends StObject {
   
   /**
-    * Color of dimension lines.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#color)
-    */
+  		 * Color of dimension lines.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Size of text in dimension labels in points.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#fontSize)
-    */
+  		 * Size of text in dimension labels in points.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#fontSize)
+  		 */
   var fontSize: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Width of dimension lines in points.
-    *
-    * @default 2
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#lineSize)
-    */
+  		 * Width of dimension lines in points.
+  		 *
+  		 * @default 2
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#lineSize)
+  		 */
   var lineSize: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * Background color of dimension labels.
-    *
-    * @default [255, 255, 255, 0.6]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#textBackgroundColor)
-    */
+  		 * Background color of dimension labels.
+  		 *
+  		 * @default [255, 255, 255, 0.6]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#textBackgroundColor)
+  		 */
   var textBackgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * Color of text in dimension labels.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#textColor)
-    */
+  		 * Color of text in dimension labels.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-DimensionSimpleStyle.html#textColor)
+  		 */
   var textColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object DimensionSimpleStyleProperties {

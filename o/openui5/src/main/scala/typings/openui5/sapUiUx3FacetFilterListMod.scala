@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.All
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +148,13 @@ object sapUiUx3FacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FacetFilterList` itself
       */
@@ -180,7 +179,7 @@ object sapUiUx3FacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -191,7 +190,7 @@ object sapUiUx3FacetFilterListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FacetFilterList` itself
       */
@@ -216,13 +215,13 @@ object sapUiUx3FacetFilterListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FacetFilterListSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -230,20 +229,22 @@ object sapUiUx3FacetFilterListMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: All): this.type = js.native
+    mParameters: FacetFilterList$SelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getDisplaySecondaryValues displaySecondaryValues}.
       *
@@ -364,7 +365,7 @@ object sapUiUx3FacetFilterListMod {
     ): typings.openui5.sapUiCoreListItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getDisplaySecondaryValues displaySecondaryValues}.
       *
@@ -448,12 +449,71 @@ object sapUiUx3FacetFilterListMod {
     sTitle: String): this.type = js.native
   }
   
+  trait FacetFilterList$SelectEventParameters extends StObject {
+    
+    /**
+      * If it is true, then Item All is selected. That means all items in the list are selected - no filter is
+      * set.
+      */
+    var all: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Id of the FacetFilterList taht fires the event.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Array of selected Indices.
+      */
+    var selectedIndices: js.UndefOr[js.Array[int]] = js.undefined
+    
+    /**
+      * Array of selected Items.
+      */
+    var selectedItems: js.UndefOr[js.Array[typings.openui5.sapUiCoreListItemMod.default]] = js.undefined
+  }
+  object FacetFilterList$SelectEventParameters {
+    
+    inline def apply(): FacetFilterList$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FacetFilterList$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterList$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setSelectedIndices(value: js.Array[int]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
+      
+      inline def setSelectedIndicesVarargs(value: int*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
+      
+      inline def setSelectedItems(value: js.Array[typings.openui5.sapUiCoreListItemMod.default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: typings.openui5.sapUiCoreListItemMod.default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  type FacetFilterListSelectEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SelectEventParameters]
+  
+  type FacetFilterListSelectEventParameters = FacetFilterList$SelectEventParameters
+  
   trait FacetFilterListSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Specifies whether the text values from the additionalText property (see sap.ui.core.ListItems) shall
       * be displayed.
@@ -479,7 +539,12 @@ object sapUiUx3FacetFilterListMod {
     /**
       * On Select event.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Array of type string containing the selected keys.
@@ -526,7 +591,9 @@ object sapUiUx3FacetFilterListMod {
       
       inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FacetFilterList$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

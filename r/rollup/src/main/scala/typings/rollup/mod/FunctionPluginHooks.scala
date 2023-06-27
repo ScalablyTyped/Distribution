@@ -38,6 +38,8 @@ trait FunctionPluginHooks extends StObject {
   @JSName("moduleParsed")
   var moduleParsed_Original: ModuleParsedHook = js.native
   
+  def onLog(level: LogLevel, log: RollupLog): Boolean | NullValue = js.native
+  
   def options(options: InputOptions): InputOptions | NullValue = js.native
   
   def outputOptions(options: OutputOptions): OutputOptions | NullValue = js.native

@@ -9,24 +9,24 @@ trait SizeRampElement
      with LegendElement {
   
   /**
-    * The individual size stops rendered in the legend that correspond to the size visual variable in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
-    */
+  		 * The individual size stops rendered in the legend that correspond to the size visual variable in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
+  		 */
   var infos: js.Array[SizeRampStop]
   
   /**
-    * The title of the size ramp as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
-    */
+  		 * The title of the size ramp as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
+  		 */
   var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
-    * The type of this element is always `size-ramp`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
-    */
+  		 * The type of this element is always `size-ramp`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
+  		 */
   var `type`: String
 }
 object SizeRampElement {

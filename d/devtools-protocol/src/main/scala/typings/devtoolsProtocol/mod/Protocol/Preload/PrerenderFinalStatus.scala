@@ -65,6 +65,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptInInMainFrameNavigation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.MemoryPressureOnTrigger
   - typings.devtoolsProtocol.devtoolsProtocolStrings.MemoryPressureAfterTriggered
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PrerenderingDisabledByDevTools
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceLoadBlockedByClient
 */
 trait PrerenderFinalStatus extends StObject
 object PrerenderFinalStatus {
@@ -155,6 +157,8 @@ object PrerenderFinalStatus {
   
   inline def PreloadingUnsupportedByWebContents: typings.devtoolsProtocol.devtoolsProtocolStrings.PreloadingUnsupportedByWebContents = "PreloadingUnsupportedByWebContents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PreloadingUnsupportedByWebContents]
   
+  inline def PrerenderingDisabledByDevTools: typings.devtoolsProtocol.devtoolsProtocolStrings.PrerenderingDisabledByDevTools = "PrerenderingDisabledByDevTools".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrerenderingDisabledByDevTools]
+  
   inline def PrimaryMainFrameRendererProcessCrashed: typings.devtoolsProtocol.devtoolsProtocolStrings.PrimaryMainFrameRendererProcessCrashed = "PrimaryMainFrameRendererProcessCrashed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrimaryMainFrameRendererProcessCrashed]
   
   inline def PrimaryMainFrameRendererProcessKilled: typings.devtoolsProtocol.devtoolsProtocolStrings.PrimaryMainFrameRendererProcessKilled = "PrimaryMainFrameRendererProcessKilled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PrimaryMainFrameRendererProcessKilled]
@@ -162,6 +166,8 @@ object PrerenderFinalStatus {
   inline def RendererProcessCrashed: typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed = "RendererProcessCrashed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessCrashed]
   
   inline def RendererProcessKilled: typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled = "RendererProcessKilled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RendererProcessKilled]
+  
+  inline def ResourceLoadBlockedByClient: typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceLoadBlockedByClient = "ResourceLoadBlockedByClient".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceLoadBlockedByClient]
   
   inline def SameSiteCrossOriginNavigationNotOptInInInitialNavigation: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptInInInitialNavigation = "SameSiteCrossOriginNavigationNotOptInInInitialNavigation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteCrossOriginNavigationNotOptInInInitialNavigation]
   

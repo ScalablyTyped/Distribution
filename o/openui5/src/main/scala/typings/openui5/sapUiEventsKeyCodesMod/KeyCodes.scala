@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait KeyCodes extends StObject
 /**
-  * @SINCE 1.58
+  * @since 1.58
   */
 @JSImport("sap/ui/events/KeyCodes", "KeyCodes")
 @js.native

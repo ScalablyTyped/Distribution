@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.websceneApplicationProperties")
 @js.native
 /**
-  * Represents configuration of application and UI elements.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html)
-  */
+		 * Represents configuration of application and UI elements.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html)
+		 */
 open class websceneApplicationProperties ()
   extends StObject
      with typings.arcgisJsApi.esri.websceneApplicationProperties {

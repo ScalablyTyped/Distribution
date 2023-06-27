@@ -35,7 +35,7 @@ trait CommentReplyCollectionLoadOptions extends StObject {
   var authorName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+    * For EACH ITEM in the collection: Specifies the comment reply's content. The string is plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -43,7 +43,7 @@ trait CommentReplyCollectionLoadOptions extends StObject {
   var content: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the commentReply's content range.
+    * For EACH ITEM in the collection: Specifies the commentReply's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]

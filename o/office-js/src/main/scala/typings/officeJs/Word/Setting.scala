@@ -79,7 +79,7 @@ trait Setting
   def untrack(): Setting = js.native
   
   /**
-    * Gets or sets the value of the setting.
+    * Specifies the value of the setting.
     *
     * @remarks
     * [Api set: WordApi 1.4]

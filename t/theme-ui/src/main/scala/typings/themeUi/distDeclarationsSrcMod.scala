@@ -11,14 +11,12 @@ import typings.react.mod.ComponentState
 import typings.react.mod.Context
 import typings.react.mod.DetailedReactHTMLElement
 import typings.react.mod.Dispatch
-import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.FunctionComponentElement
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.react.mod.SetStateAction
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLAnchorElement
@@ -111,7 +109,7 @@ object distDeclarationsSrcMod {
   
   @JSImport("theme-ui/dist/declarations/src", "Box")
   @js.native
-  val Box: ForwardRefExoticComponent[BoxProps & RefAttributes[Any]] = js.native
+  val Box: ForwardRef[Any, BoxProps] = js.native
   
   @JSImport("theme-ui/dist/declarations/src", "Button")
   @js.native
@@ -131,7 +129,7 @@ object distDeclarationsSrcMod {
   
   @JSImport("theme-ui/dist/declarations/src", "CloseIcon")
   @js.native
-  val CloseIcon: Element = js.native
+  val CloseIcon: typings.react.mod.JSX.Element = js.native
   
   @JSImport("theme-ui/dist/declarations/src", "Container")
   @js.native
@@ -191,7 +189,7 @@ object distDeclarationsSrcMod {
   @js.native
   val MenuButton: ForwardRef[HTMLButtonElement, MenuButtonProps] = js.native
   
-  inline def MenuIcon(param0: Size): typings.emotionReact.mod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.mod.jsx.JSX.Element]
+  inline def MenuIcon(param0: Size): typings.react.mod.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(param0.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.JSX.Element]
   
   @JSImport("theme-ui/dist/declarations/src", "Message")
   @js.native
@@ -281,17 +279,17 @@ object distDeclarationsSrcMod {
     inline def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]

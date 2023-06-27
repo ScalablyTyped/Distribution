@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsFeature extends StObject {
   
   /**
-    * Name-value pairs of fields and field values associated with the Directions Feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#attributes)
-    */
+  		 * Name-value pairs of fields and field values associated with the Directions Feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#attributes)
+  		 */
   var attributes: Any
   
   /**
-    * An array of Direction Events.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#events)
-    */
+  		 * An array of Direction Events.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#events)
+  		 */
   var events: js.Array[DirectionsEvent]
   
   /**
-    * The geometry of the Directions Feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#geometry)
-    */
+  		 * The geometry of the Directions Feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#geometry)
+  		 */
   var geometry: Polyline
   
   /**
-    * An array of [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#strings)
-    */
+  		 * An array of [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeature.html#strings)
+  		 */
   var strings: js.Array[DirectionsString]
 }
 object DirectionsFeature {

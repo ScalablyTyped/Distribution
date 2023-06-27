@@ -9,11 +9,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @since 1.12
+  * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+  *
+  * Helper for rendering themable background.
+  */
 @js.native
 trait BackgroundHelper extends StObject {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Adds CSS classes and styles to the given RenderManager, depending on the given configuration for background
     * color and background image. To be called by control renderers supporting the global themable background
@@ -63,7 +69,7 @@ trait BackgroundHelper extends StObject {
   ): Unit = js.native
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Renders an HTML tag into the given RenderManager which carries the background image which is either configured
     * and given or coming from the current theme. Should be called right after the opening root tag has been

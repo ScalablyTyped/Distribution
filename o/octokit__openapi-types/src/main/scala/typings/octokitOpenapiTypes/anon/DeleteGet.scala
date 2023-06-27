@@ -16,11 +16,11 @@ trait DeleteGet extends StObject {
     * Update a gist
     * @description Allows you to update a gist's description and to update, delete, or rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged.
     */
-  var patch: RequestBodyContent21
+  var patch: RequestBodyContent24
 }
 object DeleteGet {
   
-  inline def apply(delete: Responses304403404, get: ParametersPathGistid, patch: RequestBodyContent21): DeleteGet = {
+  inline def apply(delete: Responses304403404, get: ParametersPathGistid, patch: RequestBodyContent24): DeleteGet = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGet]
   }
@@ -32,6 +32,6 @@ object DeleteGet {
     
     inline def setGet(value: ParametersPathGistid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContent21): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: RequestBodyContent24): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

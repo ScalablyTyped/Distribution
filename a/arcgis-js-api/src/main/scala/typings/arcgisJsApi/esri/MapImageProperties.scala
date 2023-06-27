@@ -11,56 +11,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapImageProperties extends StObject {
   
   /**
-    * The extent of the exported map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#extent)
-    */
+  		 * The extent of the exported map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#extent)
+  		 */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The requested image height in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#height)
-    */
+  		 * The requested image height in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#height)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * URL to the returned image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#href)
-    */
+  		 * URL to the returned image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#href)
+  		 */
   var href: js.UndefOr[gif | jpg | png | bmp] = js.undefined
   
   /**
-    * The opacity of the image.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#opacity)
-    */
+  		 * The opacity of the image.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#opacity)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Scale of the requested dynamic map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#scale)
-    */
+  		 * Scale of the requested dynamic map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#scale)
+  		 */
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates if the requested image is visible in the view.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#visible)
-    */
+  		 * Indicates if the requested image is visible in the view.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The requested image width in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#width)
-    */
+  		 * The requested image width in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#width)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object MapImageProperties {

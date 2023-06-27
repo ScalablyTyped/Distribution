@@ -24,133 +24,133 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TemplateOptionsProperties extends StObject {
   
   /**
-    * When `false`, the attribution is not displayed on the printout.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#attributionEnabled)
-    */
+  		 * When `false`, the attribution is not displayed on the printout.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#attributionEnabled)
+  		 */
   var attributionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The text used for the author if the specified layout contains an author text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#author)
-    */
+  		 * The text used for the author if the specified layout contains an author text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#author)
+  		 */
   var author: js.UndefOr[String] = js.undefined
   
   /**
-    * The text used for the copyright if the specified layout contains an copyright text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#copyright)
-    */
+  		 * The text used for the copyright if the specified layout contains an copyright text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Use this prop to display text fields for custom text elements from the print service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#customTextElements)
-    */
+  		 * Use this prop to display text fields for custom text elements from the print service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#customTextElements)
+  		 */
   var customTextElements: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Resolution in dots per inch.
-    *
-    * @default 96
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#dpi)
-    */
+  		 * Resolution in dots per inch.
+  		 *
+  		 * @default 96
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#dpi)
+  		 */
   var dpi: js.UndefOr[String] = js.undefined
   
   /**
-    * This property only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName)
-    */
+  		 * This property only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout) value is `map-only`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName)
+  		 */
   var fileName: js.UndefOr[String] = js.undefined
   
   /**
-    * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
-    */
+  		 * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#forceFeatureAttributes)
+  		 */
   var forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The output format for the printed map.
-    *
-    * @default pdf
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
-    */
+  		 * The output format for the printed map.
+  		 *
+  		 * @default pdf
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format)
+  		 */
   var format: js.UndefOr[pdf | png32 | png8 | jpg | gif | eps | svg | svgz] = js.undefined
   
   /**
-    * Map height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#height)
-    */
+  		 * Map height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#height)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The layout used for the print output.
-    *
-    * @default letter-ansi-a-landscape
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout)
-    */
+  		 * The layout used for the print output.
+  		 *
+  		 * @default letter-ansi-a-landscape
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#layout)
+  		 */
   var layout: js.UndefOr[
     `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
   ] = js.undefined
   
   /**
-    * When `false`, the legend is not displayed on the printout.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#legendEnabled)
-    */
+  		 * When `false`, the legend is not displayed on the printout.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the north arrow will be included on the printout.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#northArrowEnabled)
-    */
+  		 * When `true`, the north arrow will be included on the printout.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#northArrowEnabled)
+  		 */
   var northArrowEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The map scale of the printed map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scale)
-    */
+  		 * The map scale of the printed map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scale)
+  		 */
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * Define whether the printed map should preserve map scale or map extent.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scaleEnabled)
-    */
+  		 * Define whether the printed map should preserve map scale or map extent.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#scaleEnabled)
+  		 */
   var scaleEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The text used for the map title if the specified layout contains a title text element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title)
-    */
+  		 * The text used for the map title if the specified layout contains a title text element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Map width.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#width)
-    */
+  		 * Map width.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#width)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object TemplateOptionsProperties {

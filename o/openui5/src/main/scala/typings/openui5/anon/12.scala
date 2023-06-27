@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiModelContextMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `12` extends StObject {
   
   /**
-    * the error message
+    * If present, it must point to this meta model's root entity container, that is, `oDetails.context.getModel()
+    * === this` and `oDetails.context.getPath() === "/"`
     */
-  var message: js.UndefOr[String] = js.undefined
+  var context: js.UndefOr[default] = js.undefined
 }
 object `12` {
   
@@ -21,8 +23,8 @@ object `12` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `12`] (val x: Self) extends AnyVal {
     
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setContext(value: default): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
   }
 }

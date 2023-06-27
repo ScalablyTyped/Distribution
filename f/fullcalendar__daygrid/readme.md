@@ -1,7 +1,7 @@
 
 # Scala.js typings for fullcalendar__daygrid
 
-Typings are for version 6.1.7
+Typings are for version 6.1.8
 
 ## Library description:
 Display events on a month view or "day grid" view

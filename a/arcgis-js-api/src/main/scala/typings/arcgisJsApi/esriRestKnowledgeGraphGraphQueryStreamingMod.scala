@@ -11,10 +11,10 @@ object esriRestKnowledgeGraphGraphQueryStreamingMod {
   @JSImport("esri/rest/knowledgeGraph/GraphQueryStreaming", JSImport.Namespace)
   @js.native
   /**
-    * Defines a streaming query operation performed on a [knowledge graph service's](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html) [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQueryStreaming.html)
-    */
+  		 * Defines a streaming query operation performed on a [knowledge graph service's](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html) [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQueryStreaming.html)
+  		 */
   open class ^ ()
     extends StObject
        with GraphQueryStreaming {

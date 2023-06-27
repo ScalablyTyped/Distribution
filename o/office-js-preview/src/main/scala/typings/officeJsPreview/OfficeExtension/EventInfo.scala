@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	* Used by Office to construct event handlers. Do not call in your code.
+	*/
 trait EventInfo[T] extends StObject {
   
   def eventArgsTransformFunc(args: Any): js.Promise[T]

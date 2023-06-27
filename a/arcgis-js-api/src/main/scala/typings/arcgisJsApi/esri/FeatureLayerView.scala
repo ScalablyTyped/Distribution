@@ -12,10 +12,10 @@ trait FeatureLayerView
      with HighlightLayerViewMixin {
   
   /**
-    * The layer being viewed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#layer)
-    */
+  		 * The layer being viewed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#layer)
+  		 */
   @JSName("layer")
   val layer_FeatureLayerView: FeatureLayer = js.native
 }

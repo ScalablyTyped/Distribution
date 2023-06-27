@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@opentelemetry/semantic-conventions" : "1.13.0"
+      "@opentelemetry/semantic-conventions" : "1.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@opentelemetry/semantic-conventions" : "1.13.0"
+      "@opentelemetry/semantic-conventions" : "1.14.0"
     }
   ],
   "compile-devDependencies" : [

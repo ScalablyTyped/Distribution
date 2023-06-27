@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewPosition
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -137,13 +136,13 @@ object sapMPagingButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit]
     ): this.type = js.native
     def attachPositionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PagingButton` itself
       */
@@ -169,7 +168,7 @@ object sapMPagingButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit]
     ): this.type = js.native
     def attachPositionChange(
       /**
@@ -180,7 +179,7 @@ object sapMPagingButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PagingButton` itself
       */
@@ -199,13 +198,13 @@ object sapMPagingButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit]
     ): this.type = js.native
     def detachPositionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PagingButtonPositionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -213,17 +212,19 @@ object sapMPagingButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:positionChange positionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePositionChange(): this.type = js.native
-    def firePositionChange(/**
+    def firePositionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewPosition): this.type = js.native
+    mParameters: PagingButton$PositionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCount count}.
@@ -238,7 +239,7 @@ object sapMPagingButtonMod {
     def getCount(): int = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getNextButtonTooltip nextButtonTooltip}.
       *
@@ -263,7 +264,7 @@ object sapMPagingButtonMod {
     def getPosition(): int = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getPreviousButtonTooltip previousButtonTooltip}.
       *
@@ -294,7 +295,7 @@ object sapMPagingButtonMod {
     iCount: int): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getNextButtonTooltip nextButtonTooltip}.
       *
@@ -331,7 +332,7 @@ object sapMPagingButtonMod {
     iPosition: int): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getPreviousButtonTooltip previousButtonTooltip}.
       *
@@ -350,6 +351,42 @@ object sapMPagingButtonMod {
     sPreviousButtonTooltip: String): this.type = js.native
   }
   
+  trait PagingButton$PositionChangeEventParameters extends StObject {
+    
+    /**
+      * The number of the new position.
+      */
+    var newPosition: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The number of the old position.
+      */
+    var oldPosition: js.UndefOr[int] = js.undefined
+  }
+  object PagingButton$PositionChangeEventParameters {
+    
+    inline def apply(): PagingButton$PositionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PagingButton$PositionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagingButton$PositionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewPosition(value: int): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
+      
+      inline def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
+      
+      inline def setOldPosition(value: int): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOldPositionUndefined: Self = StObject.set(x, "oldPosition", js.undefined)
+    }
+  }
+  
+  type PagingButtonPositionChangeEvent = typings.openui5.sapUiBaseEventMod.default[PagingButton$PositionChangeEventParameters]
+  
+  type PagingButtonPositionChangeEventParameters = PagingButton$PositionChangeEventParameters
+  
   trait PagingButtonSettings
     extends StObject
        with ControlSettings {
@@ -361,7 +398,7 @@ object sapMPagingButtonMod {
     var count: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Determines the tooltip of the next button.
       */
@@ -376,10 +413,15 @@ object sapMPagingButtonMod {
     /**
       * Fired when the current position is changed.
       */
-    var positionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var positionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PagingButton$PositionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Determines the tooltip of the previous button.
       */
@@ -405,7 +447,9 @@ object sapMPagingButtonMod {
       
       inline def setPosition(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setPositionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "positionChange", js.Any.fromFunction1(value))
+      inline def setPositionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PagingButton$PositionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "positionChange", js.Any.fromFunction1(value))
       
       inline def setPositionChangeUndefined: Self = StObject.set(x, "positionChange", js.undefined)
       

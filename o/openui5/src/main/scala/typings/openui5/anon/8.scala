@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiUnifiedMenuItemBaseMod.MenuItemBase
+import typings.openui5.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `8` extends StObject {
   
   /**
-    * The current item
+    * The aggregation level number
     */
-  var item: js.UndefOr[MenuItemBase] = js.undefined
+  var level: js.UndefOr[int] = js.undefined
 }
 object `8` {
   
@@ -22,8 +22,8 @@ object `8` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `8`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: MenuItemBase): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setLevel(value: int): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterMultidimensionalInfoVariables extends StObject {
   
   /**
-    * Variable description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Variable description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * A dimension may be used to represent real physical dimensions such as time or depth/height.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * A dimension may be used to represent real physical dimensions such as time or depth/height.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var dimensions: js.Array[RasterMultidimensionalInfoVariablesDimensions]
   
   /**
-    * Variable histograms.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Variable histograms.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var histograms: js.UndefOr[js.Array[RasterHistogram]] = js.undefined
   
   /**
-    * Variable name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Variable name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var name: String
   
   /**
-    * Variable statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Variable statistics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var statistics: js.UndefOr[js.Array[RasterBandStatistics]] = js.undefined
   
   /**
-    * Unit of the variable measured in.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Unit of the variable measured in.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[String] = js.undefined
 }
 object RasterMultidimensionalInfoVariables {

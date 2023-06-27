@@ -389,9 +389,9 @@ object mod extends Shortcut {
     
     var Alpine: typings.alpinejs.mod.Alpine
     
-    def cleanup(): Unit
+    def cleanup(cb: js.Function0[Unit]): Unit
     
-    def effect(): Unit
+    def effect(cb: js.Function0[Unit]): Unit
     
     def evaluate(expression: String): Any
     
@@ -401,12 +401,12 @@ object mod extends Shortcut {
     
     inline def apply(
       Alpine: Alpine,
-      cleanup: () => Unit,
-      effect: () => Unit,
+      cleanup: js.Function0[Unit] => Unit,
+      effect: js.Function0[Unit] => Unit,
       evaluate: String => Any,
       evaluateLater: String => js.Function1[/* result */ Any, Unit]
     ): DirectiveUtilities = {
-      val __obj = js.Dynamic.literal(Alpine = Alpine.asInstanceOf[js.Any], cleanup = js.Any.fromFunction0(cleanup), effect = js.Any.fromFunction0(effect), evaluate = js.Any.fromFunction1(evaluate), evaluateLater = js.Any.fromFunction1(evaluateLater))
+      val __obj = js.Dynamic.literal(Alpine = Alpine.asInstanceOf[js.Any], cleanup = js.Any.fromFunction1(cleanup), effect = js.Any.fromFunction1(effect), evaluate = js.Any.fromFunction1(evaluate), evaluateLater = js.Any.fromFunction1(evaluateLater))
       __obj.asInstanceOf[DirectiveUtilities]
     }
     
@@ -415,9 +415,9 @@ object mod extends Shortcut {
       
       inline def setAlpine(value: Alpine): Self = StObject.set(x, "Alpine", value.asInstanceOf[js.Any])
       
-      inline def setCleanup(value: () => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
+      inline def setCleanup(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction1(value))
       
-      inline def setEffect(value: () => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction0(value))
+      inline def setEffect(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
       
       inline def setEvaluate(value: String => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
       

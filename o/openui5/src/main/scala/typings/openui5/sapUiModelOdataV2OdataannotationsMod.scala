@@ -762,7 +762,7 @@ object sapUiModelOdataV2OdataannotationsMod {
   trait errorParameters extends StObject {
     
     /**
-      * The error that occurred. Also contains the properties from {@link sap.ui.model.odata.v2.ODataAnnotations.Source}
+      * The error that occurred. Also contains the properties from {@link sap.ui.model.odata.v2.ODataAnnotations.Source }
       * that could be filled up to that point
       */
     var result: js.Error

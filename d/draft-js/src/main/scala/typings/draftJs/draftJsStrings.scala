@@ -324,6 +324,10 @@ object draftJsStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait ltr_ extends StObject
+  inline def ltr_ : ltr_ = "ltr".asInstanceOf[ltr_]
+  
+  @js.native
   sealed trait `move-block`
     extends StObject
        with EditorChangeType
@@ -377,6 +381,10 @@ object draftJsStrings {
     extends StObject
        with DraftTextAlignment
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rtl_ extends StObject
+  inline def rtl_ : rtl_ = "rtl".asInstanceOf[rtl_]
   
   @js.native
   sealed trait `secondary-cut`

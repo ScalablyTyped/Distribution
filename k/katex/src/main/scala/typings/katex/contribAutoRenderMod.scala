@@ -63,7 +63,7 @@ object contribAutoRenderMod {
       */
     var ignoredTags: js.UndefOr[
         js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any
         ]
       ] = js.undefined
   }
@@ -95,14 +95,14 @@ object contribAutoRenderMod {
       
       inline def setIgnoredTags(
         value: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any
             ]
       ): Self = StObject.set(x, "ignoredTags", value.asInstanceOf[js.Any])
       
       inline def setIgnoredTagsUndefined: Self = StObject.set(x, "ignoredTags", js.undefined)
       
       inline def setIgnoredTagsVarargs(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any)*
+        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.katex.katexStrings.a, typings.katex.katexStrings.abbr, typings.katex.katexStrings.address */ Any)*
       ): Self = StObject.set(x, "ignoredTags", js.Array(value*))
     }
   }

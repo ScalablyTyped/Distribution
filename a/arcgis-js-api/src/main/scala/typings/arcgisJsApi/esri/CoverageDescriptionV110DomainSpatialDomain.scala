@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV110DomainSpatialDomain extends StObject {
   
   /**
-    * Spatial domain columns.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
-    */
+  		 * Spatial domain columns.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
+  		 */
   var columns: Double
   
   /**
-    * Spatial domain extent.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
-    */
+  		 * Spatial domain extent.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
+  		 */
   var envelope: Extent
   
   /**
-    * Spatial domain x, y offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
-    */
+  		 * Spatial domain x, y offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
+  		 */
   var offset: CoverageDescriptionV110DomainSpatialDomainOffset
   
   /**
-    * Spatial domain x, y origin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
-    */
+  		 * Spatial domain x, y origin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
+  		 */
   var origin: CoverageDescriptionV110DomainSpatialDomainOrigin
   
   /**
-    * Spatial domain rows.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
-    */
+  		 * Spatial domain rows.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV110)
+  		 */
   var rows: Double
 }
 object CoverageDescriptionV110DomainSpatialDomain {

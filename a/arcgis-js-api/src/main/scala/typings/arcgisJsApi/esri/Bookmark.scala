@@ -12,30 +12,30 @@ trait Bookmark
      with Identifiable {
   
   /**
-    * The name of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
-    */
+  		 * The name of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * The URL for a thumbnail image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
-    */
+  		 * The URL for a thumbnail image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
+  		 */
   var thumbnail: BookmarkThumbnail = js.native
   
   /**
-    * The time extent of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
-    */
+  		 * The time extent of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
+  		 */
   var timeExtent: TimeExtent = js.native
   
   /**
-    * The viewpoint of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint)
-    */
+  		 * The viewpoint of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint)
+  		 */
   var viewpoint: Viewpoint = js.native
 }

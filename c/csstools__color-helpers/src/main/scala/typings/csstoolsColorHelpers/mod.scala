@@ -208,6 +208,10 @@ object mod {
       RGB: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGB_to_HSL")(RGB.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    inline def sRGBToHWB(
+      RGB: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGB_to_HWB")(RGB.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
     inline def sRGBToLuminance(
       RGB: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Color */ Any
     ): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGB_to_luminance")(RGB.asInstanceOf[js.Any]).asInstanceOf[Double]

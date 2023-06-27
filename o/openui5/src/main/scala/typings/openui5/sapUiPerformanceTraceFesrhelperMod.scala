@@ -12,14 +12,14 @@ object sapUiPerformanceTraceFesrhelperMod extends Shortcut {
   val default: FESRHelper = js.native
   
   /**
-    * @SINCE 1.100
+    * @since 1.100
     *
     * FESRHelper API Provides helper functionality for FESR and consumers of FESR
     */
   trait FESRHelper extends StObject {
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Get semantic stepname for an event of a given element used for FESR.
       *
@@ -37,7 +37,7 @@ object sapUiPerformanceTraceFesrhelperMod extends Shortcut {
     ): String
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Add semantic stepname for an event of a given element used for FESR.
       */

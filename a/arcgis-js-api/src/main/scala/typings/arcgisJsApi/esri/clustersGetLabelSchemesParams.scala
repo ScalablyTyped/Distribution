@@ -7,29 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait clustersGetLabelSchemesParams extends StObject {
   
   /**
-    * The point layer that has or will have clustering enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
-    */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The point layer that has or will have clustering enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
+  		 */
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * The renderer to set on the input layer when clustering is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
-    */
+  		 * The renderer to set on the input layer when clustering is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
+  		 */
   var renderer: js.UndefOr[Renderer] = js.undefined
   
   /**
-    * The view where the input layer will be rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view where the input layer will be rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: MapView
 }
 object clustersGetLabelSchemesParams {
   
-  inline def apply(layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer, view: MapView): clustersGetLabelSchemesParams = {
+  inline def apply(
+    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer,
+    view: MapView
+  ): clustersGetLabelSchemesParams = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[clustersGetLabelSchemesParams]
   }
@@ -37,7 +40,7 @@ object clustersGetLabelSchemesParams {
   @scala.inline
   implicit open class MutableBuilder[Self <: clustersGetLabelSchemesParams] (val x: Self) extends AnyVal {
     
-    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

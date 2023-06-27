@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GPUComputePassTimestampWrites extends StObject {
   
   /**
-    * If defined indicates the query index in {@link GPURenderPassTimestampWrites#querySet} into
+    * If defined, indicates the query index in {@link GPURenderPassTimestampWrites#querySet} into
     * which the timestamp at the beginning of the compute pass will be written.
     */
   var beginningOfPassWriteIndex: js.UndefOr[GPUSize32] = js.undefined
   
   /**
-    * If defined indicates the query index in {@link GPURenderPassTimestampWrites#querySet} into
+    * If defined, indicates the query index in {@link GPURenderPassTimestampWrites#querySet} into
     * which the timestamp at the end of the compute pass will be written.
     */
   var endOfPassWriteIndex: js.UndefOr[GPUSize32] = js.undefined

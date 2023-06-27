@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContinuousRendererResultColor extends StObject {
   
   /**
-    * The color scheme used by the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
-    */
+  		 * The color scheme used by the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
+  		 */
   var colorScheme: ColorScheme
   
   /**
-    * A color visual variable configured based on the statistics of the data and the color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
-    */
+  		 * A color visual variable configured based on the statistics of the data and the color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
+  		 */
   var visualVariable: ColorVariable
 }
 object ContinuousRendererResultColor {

@@ -11,10 +11,10 @@ object esriPortalPortalFolderMod {
   @JSImport("esri/portal/PortalFolder", JSImport.Namespace)
   @js.native
   /**
-    * Provides information about folders used to organize content in a portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
-    */
+  		 * Provides information about folders used to organize content in a portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
+  		 */
   open class ^ ()
     extends StObject
        with PortalFolder {

@@ -4,6 +4,7 @@ import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCommonsTextFieldMod.TextField$ChangeEventParameters
 import typings.openui5.sapUiCommonsTextFieldMod.TextFieldSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Element
@@ -187,7 +188,7 @@ object sapUiCommonsComboBoxMod {
     def getDisplaySecondaryValues(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the DOM element which represents the icon for value help. Could be overwritten in child-classes.
       *
@@ -277,7 +278,7 @@ object sapUiCommonsComboBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle sapescape pseudo events on the control
       */
@@ -287,7 +288,7 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle saphide pseudo events on the control
       */
@@ -297,7 +298,7 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle sapnextmodifiers pseudo events on the control if in toolbar prevent item navigation if popup is
       * opened.
@@ -308,7 +309,7 @@ object sapUiCommonsComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle sapshow pseudo events on the control
       */
@@ -447,6 +448,35 @@ object sapUiCommonsComboBoxMod {
       */
     def unbindItems(): this.type = js.native
   }
+  
+  trait ComboBox$ChangeEventParameters
+    extends StObject
+       with TextField$ChangeEventParameters {
+    
+    /**
+      * The new / changed item of the ComboBox.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreListItemMod.default] = js.undefined
+  }
+  object ComboBox$ChangeEventParameters {
+    
+    inline def apply(): ComboBox$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComboBox$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBox$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreListItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type ComboBoxChangeEvent = typings.openui5.sapUiBaseEventMod.default[ComboBox$ChangeEventParameters]
+  
+  type ComboBoxChangeEventParameters = ComboBox$ChangeEventParameters
   
   trait ComboBoxSettings
     extends StObject

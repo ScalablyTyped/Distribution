@@ -123,20 +123,19 @@ object sapUiModelSimpleTypeMod {
       */
     vValue: Any,
       /**
-      * The target type; see {@link topic:ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
+      * The target type; see {@link https://ui5.sap.com/#/topic/ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
       */
     sTargetType: String
     ): Any | js.Promise[Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns an object with `format` and `parse` methods. `format` converts the internal value which has a
       * JavaScript primitive type or is a built-in object such as Date which can be used by a control to the
       * raw value, and `parse` converts the raw value to the internal value.
       *
-      * You may return an instance of {@link sap.ui.core.format.DateFormat DateFormat} or {@link sap.ui.core.format.NumberFormat
-      * NumberFormat}.
+      * You may return an instance of {@link sap.ui.core.format.DateFormat DateFormat} or {@link sap.ui.core.format.NumberFormat NumberFormat}.
       *
       * The default implementation of the `format` and `parse` methods simply returns the given parameter. Subclasses
       * of {@link sap.ui.model.SimpleType#constructor SimpleType} should override this method if the raw value
@@ -163,7 +162,7 @@ object sapUiModelSimpleTypeMod {
       */
     vValue: Any,
       /**
-      * The type of the given value; see {@link topic:ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
+      * The type of the given value; see {@link https://ui5.sap.com/#/topic/ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
       */
     sSourceType: String
     ): Any | js.Promise[Any] = js.native

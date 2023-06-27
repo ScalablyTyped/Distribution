@@ -12,10 +12,10 @@ object esriLayersBuildingSublayersBuildingSublayerMod {
   @JSImport("esri/layers/buildingSublayers/BuildingSublayer", JSImport.Namespace)
   @js.native
   /**
-    * BuildingSublayer is the base class for sublayers of a BuildingSceneLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html)
-    */
+  		 * BuildingSublayer is the base class for sublayers of a BuildingSceneLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingSublayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingSublayer {

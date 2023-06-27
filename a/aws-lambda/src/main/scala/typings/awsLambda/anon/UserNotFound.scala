@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UserNotFound extends StObject {
   
+  var clientMetadata: js.UndefOr[StringMap] = js.undefined
+  
   var userAttributes: StringMap
   
   var userNotFound: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +24,10 @@ object UserNotFound {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UserNotFound] (val x: Self) extends AnyVal {
+    
+    inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
     inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     

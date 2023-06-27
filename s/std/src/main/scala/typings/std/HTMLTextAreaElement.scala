@@ -7,7 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties and methods for manipulating the layout and presentation of <textarea> elements. */
+/**
+  * Provides special properties and methods for manipulating the layout and presentation of <textarea> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTextAreaElement)
+  */
 @js.native
 trait HTMLTextAreaElement
   extends StObject
@@ -24,6 +28,7 @@ trait HTMLTextAreaElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTextAreaElement/autocomplete) */
   /* standard dom */
   var autocomplete: java.lang.String = js.native
   
@@ -49,6 +54,7 @@ trait HTMLTextAreaElement
   /* standard dom */
   val form: HTMLFormElement | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTextAreaElement/labels) */
   /* standard dom */
   val labels: NodeListOf[HTMLLabelElement] = js.native
   
@@ -82,6 +88,7 @@ trait HTMLTextAreaElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTextAreaElement/reportValidity) */
   /* standard dom */
   def reportValidity(): scala.Boolean = js.native
   
@@ -137,6 +144,7 @@ trait HTMLTextAreaElement
   def setSelectionRange(start: Null, end: Double, direction: forward | backward | none): Unit = js.native
   def setSelectionRange(start: Null, end: Null, direction: forward | backward | none): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTextAreaElement/textLength) */
   /* standard dom */
   val textLength: Double = js.native
   

@@ -85,7 +85,7 @@ object sapUiModelOdataV2OdatatreebindingMod {
     extends typings.openui5.sapUiModelTreeBindingMod.default {
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Expand a nodes subtree to a given level.
       *
@@ -167,7 +167,7 @@ object sapUiModelOdataV2OdatatreebindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Get a download URL with the specified format considering the sort/filter/custom parameters.
       *

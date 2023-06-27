@@ -192,7 +192,7 @@ object sapUiCoreMessageMessageMod {
     def getTarget(): String = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Returns the targets of this message.
       *
@@ -275,12 +275,10 @@ object sapUiCoreMessageMessageMod {
     /**
       * Set message processor
       */
-    def setMessageProcessor(
-      /**
+    def setMessageProcessor(/**
       * The Message processor
       */
-    oMessageProcessor: typings.openui5.sapUiCoreMessageMessageProcessorMod.default
-    ): Unit = js.native
+    oMessageProcessor: typings.openui5.sapUiModelModelMod.default): Unit = js.native
     
     /**
       * Set message persistent
@@ -304,7 +302,7 @@ object sapUiCoreMessageMessageMod {
     sTarget: String): Unit = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Sets the targets of this message.
       */

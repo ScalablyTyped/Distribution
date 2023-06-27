@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingClassedSizeSliderClassedSizeSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/ClassedSizeSlider/ClassedSizeSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ClassedSizeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider-ClassedSizeSliderViewModel.html)
-    */
+  		 * Provides the logic for the [ClassedSizeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider-ClassedSizeSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ClassedSizeSliderViewModel {

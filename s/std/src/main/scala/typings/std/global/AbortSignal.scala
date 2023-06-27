@@ -17,10 +17,12 @@ object AbortSignal {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbortSignal/abort) */
   /* standard dom */
   inline def abort(): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")().asInstanceOf[typings.std.AbortSignal]
   inline def abort(reason: Any): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("abort")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.std.AbortSignal]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbortSignal/timeout) */
   /* standard dom */
   inline def timeout(milliseconds: Double): typings.std.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.std.AbortSignal]
 }

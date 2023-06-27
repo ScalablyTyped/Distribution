@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.esbuild.esbuildStrings.`file-loader`
 import typings.esbuild.esbuildStrings.`react-jsx`
 import typings.esbuild.esbuildStrings.`react-jsxdev`
+import typings.esbuild.esbuildStrings.`react-native`
 import typings.esbuild.esbuildStrings.cjs
 import typings.esbuild.esbuildStrings.error
 import typings.esbuild.esbuildStrings.esm
@@ -19,8 +20,10 @@ import typings.esbuild.mod.ImportKind
 import typings.esbuild.mod.InitializeOptions
 import typings.esbuild.mod.Metafile
 import typings.esbuild.mod.PartialMessage
+import typings.esbuild.mod.SameShape
 import typings.esbuild.mod.TransformOptions
 import typings.esbuild.mod.TransformResult
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,9 +34,13 @@ object anon {
     
     var alwaysStrict: js.UndefOr[Boolean] = js.undefined
     
+    var baseUrl: js.UndefOr[Boolean] = js.undefined
+    
+    var experimentalDecorators: js.UndefOr[Boolean] = js.undefined
+    
     var importsNotUsedAsValues: js.UndefOr[remove | preserve | error] = js.undefined
     
-    var jsx: js.UndefOr[react | `react-jsx` | `react-jsxdev` | preserve] = js.undefined
+    var jsx: js.UndefOr[preserve | `react-native` | react | `react-jsx` | `react-jsxdev`] = js.undefined
     
     var jsxFactory: js.UndefOr[String] = js.undefined
     
@@ -41,11 +48,17 @@ object anon {
     
     var jsxImportSource: js.UndefOr[String] = js.undefined
     
+    var paths: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
+    
     var preserveValueImports: js.UndefOr[Boolean] = js.undefined
+    
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
     
     var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
+    
+    var verbatimModuleSyntax: js.UndefOr[Boolean] = js.undefined
   }
   object AlwaysStrict {
     
@@ -61,11 +74,19 @@ object anon {
       
       inline def setAlwaysStrictUndefined: Self = StObject.set(x, "alwaysStrict", js.undefined)
       
+      inline def setBaseUrl(value: Boolean): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      
+      inline def setExperimentalDecorators(value: Boolean): Self = StObject.set(x, "experimentalDecorators", value.asInstanceOf[js.Any])
+      
+      inline def setExperimentalDecoratorsUndefined: Self = StObject.set(x, "experimentalDecorators", js.undefined)
+      
       inline def setImportsNotUsedAsValues(value: remove | preserve | error): Self = StObject.set(x, "importsNotUsedAsValues", value.asInstanceOf[js.Any])
       
       inline def setImportsNotUsedAsValuesUndefined: Self = StObject.set(x, "importsNotUsedAsValues", js.undefined)
       
-      inline def setJsx(value: react | `react-jsx` | `react-jsxdev` | preserve): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: preserve | `react-native` | react | `react-jsx` | `react-jsxdev`): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
       inline def setJsxFactory(value: String): Self = StObject.set(x, "jsxFactory", value.asInstanceOf[js.Any])
       
@@ -81,9 +102,17 @@ object anon {
       
       inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
       
+      inline def setPaths(value: Record[String, js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      
       inline def setPreserveValueImports(value: Boolean): Self = StObject.set(x, "preserveValueImports", value.asInstanceOf[js.Any])
       
       inline def setPreserveValueImportsUndefined: Self = StObject.set(x, "preserveValueImports", js.undefined)
+      
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -92,6 +121,10 @@ object anon {
       inline def setUseDefineForClassFields(value: Boolean): Self = StObject.set(x, "useDefineForClassFields", value.asInstanceOf[js.Any])
       
       inline def setUseDefineForClassFieldsUndefined: Self = StObject.set(x, "useDefineForClassFields", js.undefined)
+      
+      inline def setVerbatimModuleSyntax(value: Boolean): Self = StObject.set(x, "verbatimModuleSyntax", value.asInstanceOf[js.Any])
+      
+      inline def setVerbatimModuleSyntaxUndefined: Self = StObject.set(x, "verbatimModuleSyntax", js.undefined)
     }
   }
   
@@ -120,19 +153,16 @@ object anon {
         js.Promise[String]
       ]
     
-    def build(options: BuildOptions): js.Promise[BuildResult[BuildOptions]]
-    def build[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): js.Promise[BuildResult[SpecificOptions]]
+    def build[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildResult[T]]
     
-    def buildSync(options: BuildOptions): BuildResult[BuildOptions]
-    def buildSync[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): BuildResult[SpecificOptions]
+    def buildSync[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): BuildResult[T]
     @JSName("buildSync")
     var buildSync_Original: Fn0
     
     @JSName("build")
     var build_Original: FnCallOptions
     
-    def context(options: BuildOptions): js.Promise[BuildContext[BuildOptions]]
-    def context[T /* <: BuildOptions */](options: T): js.Promise[BuildContext[T]]
+    def context[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildContext[T]]
     @JSName("context")
     var context_Original: FnCall
     
@@ -157,29 +187,20 @@ object anon {
     @JSName("initialize")
     var initialize_Original: js.Function1[/* options */ InitializeOptions, js.Promise[Unit]]
     
-    def transform(input: String): js.Promise[TransformResult[TransformOptions]]
-    def transform(input: String, options: TransformOptions): js.Promise[TransformResult[TransformOptions]]
-    def transform(input: js.typedarray.Uint8Array): js.Promise[TransformResult[TransformOptions]]
-    def transform(input: js.typedarray.Uint8Array, options: TransformOptions): js.Promise[TransformResult[TransformOptions]]
-    def transform[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]]
-    def transform[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]]
+    def transform[T /* <: TransformOptions */](input: String): js.Promise[TransformResult[T]]
+    def transform[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]]
+    def transform[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[T]]
+    def transform[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]]
     
-    def transformSync(input: String): TransformResult[TransformOptions]
-    def transformSync(input: String, options: TransformOptions): TransformResult[TransformOptions]
-    def transformSync(input: js.typedarray.Uint8Array): TransformResult[TransformOptions]
-    def transformSync(input: js.typedarray.Uint8Array, options: TransformOptions): TransformResult[TransformOptions]
-    def transformSync[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): TransformResult[SpecificOptions]
+    def transformSync[T /* <: TransformOptions */](input: String): TransformResult[T]
+    def transformSync[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): TransformResult[T]
+    def transformSync[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): TransformResult[T]
+    def transformSync[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): TransformResult[T]
     @JSName("transformSync")
     var transformSync_Original: Fn1
-    @JSName("transformSync")
-    def transformSync_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): TransformResult[SpecificOptions]
     
     @JSName("transform")
     var transform_Original: FnCallInputOptions
-    @JSName("transform")
-    def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: String): js.Promise[TransformResult[SpecificOptions]]
-    @JSName("transform")
-    def transform_SpecificOptions[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[SpecificOptions]]
     
     var version: String
   }
@@ -393,43 +414,37 @@ object anon {
   @js.native
   trait Fn0 extends StObject {
     
-    def apply(options: BuildOptions): BuildResult[BuildOptions] = js.native
-    def apply[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): BuildResult[SpecificOptions] = js.native
+    def apply[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): BuildResult[T] = js.native
   }
   
   @js.native
   trait Fn1 extends StObject {
     
-    def apply(input: String): TransformResult[TransformOptions] = js.native
-    def apply(input: String, options: TransformOptions): TransformResult[TransformOptions] = js.native
-    def apply(input: js.typedarray.Uint8Array): TransformResult[TransformOptions] = js.native
-    def apply(input: js.typedarray.Uint8Array, options: TransformOptions): TransformResult[TransformOptions] = js.native
-    def apply[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): TransformResult[SpecificOptions] = js.native
+    def apply[T /* <: TransformOptions */](input: String): TransformResult[T] = js.native
+    def apply[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): TransformResult[T] = js.native
+    def apply[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): TransformResult[T] = js.native
+    def apply[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): TransformResult[T] = js.native
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply(options: BuildOptions): js.Promise[BuildContext[BuildOptions]] = js.native
-    def apply[T /* <: BuildOptions */](options: T): js.Promise[BuildContext[T]] = js.native
+    def apply[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildContext[T]] = js.native
   }
   
   @js.native
   trait FnCallInputOptions extends StObject {
     
-    def apply(input: String): js.Promise[TransformResult[TransformOptions]] = js.native
-    def apply(input: String, options: TransformOptions): js.Promise[TransformResult[TransformOptions]] = js.native
-    def apply(input: js.typedarray.Uint8Array): js.Promise[TransformResult[TransformOptions]] = js.native
-    def apply(input: js.typedarray.Uint8Array, options: TransformOptions): js.Promise[TransformResult[TransformOptions]] = js.native
-    def apply[SpecificOptions /* <: TransformOptions */](input: String, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]] = js.native
-    def apply[SpecificOptions /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SpecificOptions): js.Promise[TransformResult[SpecificOptions]] = js.native
+    def apply[T /* <: TransformOptions */](input: String): js.Promise[TransformResult[T]] = js.native
+    def apply[T /* <: TransformOptions */](input: String, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]] = js.native
+    def apply[T /* <: TransformOptions */](input: js.typedarray.Uint8Array): js.Promise[TransformResult[T]] = js.native
+    def apply[T /* <: TransformOptions */](input: js.typedarray.Uint8Array, options: SameShape[TransformOptions, T]): js.Promise[TransformResult[T]] = js.native
   }
   
   @js.native
   trait FnCallOptions extends StObject {
     
-    def apply(options: BuildOptions): js.Promise[BuildResult[BuildOptions]] = js.native
-    def apply[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): js.Promise[BuildResult[SpecificOptions]] = js.native
+    def apply[T /* <: BuildOptions */](options: SameShape[BuildOptions, T]): js.Promise[BuildResult[T]] = js.native
   }
   
   trait In extends StObject {

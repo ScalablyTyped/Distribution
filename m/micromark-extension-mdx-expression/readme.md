@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-extension-mdx-expression
 
-Typings are for version 1.0.3
+Typings are for version 1.0.8
 
 ## Library description:
 micromark extension to support MDX or MDX JS expressions

@@ -9,7 +9,6 @@ object has {
   /**
     * True if both the library and browser support Canvas.  Always `false`
     * if `ol.ENABLE_CANVAS` is set to `false` at compile time.
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.CANVAS")
@@ -18,7 +17,6 @@ object has {
   
   /**
     * Indicates if DeviceOrientation is supported in the user's browser.
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.DEVICE_ORIENTATION")
@@ -28,7 +26,6 @@ object has {
   /**
     * The ratio between physical pixels and device-independent pixels
     * (dips) on the device (`window.devicePixelRatio`).
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.DEVICE_PIXEL_RATIO")
@@ -37,7 +34,6 @@ object has {
   
   /**
     * Is HTML5 geolocation supported in the current browser?
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.GEOLOCATION")
@@ -46,7 +42,6 @@ object has {
   
   /**
     * True if browser supports touch events.
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.TOUCH")
@@ -56,7 +51,6 @@ object has {
   /**
     * True if both OpenLayers and browser support WebGL.  Always `false`
     * if `ol.ENABLE_WEBGL` is set to `false` at compile time.
-    * @const
     * @api stable
     */
   @JSGlobal("ol.has.WEBGL")

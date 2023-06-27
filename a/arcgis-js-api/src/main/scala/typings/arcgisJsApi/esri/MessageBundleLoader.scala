@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageBundleLoader extends StObject {
   
   /**
-    * Called to load the message bundle if the `pattern` matches the bundle identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
-    */
+  		 * Called to load the message bundle if the `pattern` matches the bundle identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
+  		 */
   def fetchMessageBundle(bundleId: String, locale: String): js.Promise[Any]
   /**
-    * Called to load the message bundle if the `pattern` matches the bundle identifier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
-    */
+  		 * Called to load the message bundle if the `pattern` matches the bundle identifier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
+  		 */
   @JSName("fetchMessageBundle")
   var fetchMessageBundle_Original: FetchMessageBundle
   
   /**
-    * Used to check if the loader should be used to load a candidate message bundle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
-    */
+  		 * Used to check if the loader should be used to load a candidate message bundle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#MessageBundleLoader)
+  		 */
   var pattern: String | js.RegExp
 }
 object MessageBundleLoader {

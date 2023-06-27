@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchVisibleElementsSnappingControlsElements extends StObject {
   
   /**
-    * Indicates whether to display the `enabledToggle` (Enable snapping).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `enabledToggle` (Enable snapping).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var enabledToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the `featureEnabledToggle` (Feature to feature).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `featureEnabledToggle` (Feature to feature).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var featureEnabledToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the header.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the header.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var header: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the [FeatureSnappingLayerSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html) layerList.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the [FeatureSnappingLayerSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html) layerList.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var layerList: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the `selfEnabledToggle` (Geometry guides).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `selfEnabledToggle` (Geometry guides).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var selfEnabledToggle: js.UndefOr[Boolean] = js.undefined
 }
 object SketchVisibleElementsSnappingControlsElements {

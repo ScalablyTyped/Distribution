@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fullcalendar/timegrid" : "6.1.7"
+      "@fullcalendar/timegrid" : "6.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@fullcalendar/timegrid" : "6.1.7"
+      "@fullcalendar/timegrid" : "6.1.8"
     }
   ],
   "compile-devDependencies" : [

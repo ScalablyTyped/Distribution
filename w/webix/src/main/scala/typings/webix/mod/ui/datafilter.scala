@@ -1,83 +1,82 @@
 package typings.webix.mod.ui
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datafilter {
   
+  @JSImport("webix", "ui.datafilter")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("webix", "ui.datafilter.columnGroup")
   @js.native
-  open class columnGroup () extends textFilter
+  def columnGroup: typings.webix.mod.ui.columnGroup = js.native
+  inline def columnGroup_=(x: columnGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("columnGroup")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.dateFilter")
   @js.native
-  open class dateFilter () extends textFilter
+  def dateFilter: typings.webix.mod.ui.dateFilter = js.native
+  inline def dateFilter_=(x: dateFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.dateRangeFilter")
   @js.native
-  open class dateRangeFilter () extends textFilter
+  def dateRangeFilter: typings.webix.mod.ui.dateRangeFilter = js.native
+  inline def dateRangeFilter_=(x: dateRangeFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateRangeFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.datepickerFilter")
   @js.native
-  open class datepickerFilter () extends textFilter
+  def datepickerFilter: typings.webix.mod.ui.datepickerFilter = js.native
+  inline def datepickerFilter_=(x: datepickerFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datepickerFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.masterCheckbox")
   @js.native
-  open class masterCheckbox () extends textFilter
+  def masterCheckbox: typings.webix.mod.ui.masterCheckbox = js.native
+  inline def masterCheckbox_=(x: masterCheckbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masterCheckbox")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.multiComboFilter")
   @js.native
-  open class multiComboFilter () extends textFilter
+  def multiComboFilter: typings.webix.mod.ui.multiComboFilter = js.native
+  inline def multiComboFilter_=(x: multiComboFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiComboFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.multiSelectFilter")
   @js.native
-  open class multiSelectFilter () extends textFilter
+  def multiSelectFilter: typings.webix.mod.ui.multiSelectFilter = js.native
+  inline def multiSelectFilter_=(x: multiSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.numberFilter")
   @js.native
-  open class numberFilter () extends textFilter
+  def numberFilter: typings.webix.mod.ui.numberFilter = js.native
+  inline def numberFilter_=(x: numberFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("numberFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.selectFilter")
   @js.native
-  open class selectFilter () extends textFilter
+  def selectFilter: typings.webix.mod.ui.selectFilter = js.native
+  inline def selectFilter_=(x: selectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.serverFilter")
   @js.native
-  open class serverFilter () extends textFilter
+  def serverFilter: typings.webix.mod.ui.serverFilter = js.native
+  inline def serverFilter_=(x: serverFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.serverMultiSelectFilter")
   @js.native
-  open class serverMultiSelectFilter () extends textFilter
+  def serverMultiSelectFilter: typings.webix.mod.ui.serverMultiSelectFilter = js.native
+  inline def serverMultiSelectFilter_=(x: serverMultiSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverMultiSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.serverSelectFilter")
   @js.native
-  open class serverSelectFilter () extends textFilter
+  def serverSelectFilter: typings.webix.mod.ui.serverSelectFilter = js.native
+  inline def serverSelectFilter_=(x: serverSelectFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serverSelectFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.summColumn")
   @js.native
-  open class summColumn () extends textFilter
+  def summColumn: typings.webix.mod.ui.summColumn = js.native
+  inline def summColumn_=(x: summColumn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summColumn")(x.asInstanceOf[js.Any])
   
   @JSImport("webix", "ui.datafilter.textFilter")
   @js.native
-  open class textFilter ()
-    extends StObject
-       with WebixFilter {
-    
-    def getInputNode(node: HTMLElement): HTMLElement = js.native
-    
-    /* CompleteClass */
-    override def getValue(node: HTMLElement): Any = js.native
-    
-    /* CompleteClass */
-    override def refresh(master: typings.webix.webix.ui.baseview, node: HTMLElement, value: Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def render(master: typings.webix.webix.ui.baseview, config: StringDictionary[Any]): String = js.native
-    
-    /* CompleteClass */
-    override def setValue(node: HTMLElement, value: Any): Any = js.native
-  }
+  def textFilter: typings.webix.mod.ui.textFilter = js.native
+  inline def textFilter_=(x: textFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textFilter")(x.asInstanceOf[js.Any])
 }

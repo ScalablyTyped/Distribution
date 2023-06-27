@@ -10,13 +10,13 @@ open class IfcAPI () extends StObject {
   
   /**
     * Closes a model and frees all related memory
-    * @modelID Model handle retrieved by OpenModel, model must not be closed
+    * @param modelID Model handle retrieved by OpenModel, model must not be closed
     */
   def CloseModel(modelID: Double): Unit = js.native
   
   /**
     * Creates a new model and returns a modelID number
-    * @data Settings settings for generating data the model
+    * @param settings Settings settings for generating data the model
     */
   def CreateModel(): Double = js.native
   def CreateModel(settings: LoaderSettings): Double = js.native
@@ -29,14 +29,14 @@ open class IfcAPI () extends StObject {
   
   /**
     * Load geometry for a single element
-    * @modelID Model handle retrieved by OpenModel
+    * @param modelID Model handle retrieved by OpenModel
     */
   def GetFlatMesh(modelID: Double, expressID: Double): FlatMesh = js.native
   
   /**
     * Opens a model and returns a modelID number
-    * @modelID Model handle retrieved by OpenModel, model must not be closed
-    * @data Buffer containing IFC data (bytes)
+    * @param modelID Model handle retrieved by OpenModel, model must not be closed
+    * @param data Buffer containing IFC data (bytes)
     */
   def GetGeometry(modelID: Double, geometryExpressID: Double): IfcGeometry = js.native
   
@@ -58,20 +58,20 @@ open class IfcAPI () extends StObject {
   
   /**
     * Checks if a specific model ID is open or closed
-    * @modelID Model handle retrieved by OpenModel
+    * @param modelID Model handle retrieved by OpenModel
     */
   def IsModelOpen(modelID: Double): Boolean = js.native
   
   /**
     * Load all geometry in a model
-    * @modelID Model handle retrieved by OpenModel
+    * @param modelID Model handle retrieved by OpenModel
     */
   def LoadAllGeometry(modelID: Double): Vector[FlatMesh] = js.native
   
   /**
     * Opens a model and returns a modelID number
-    * @data Buffer containing IFC data (bytes)
-    * @data Settings settings for loading the model
+    * @param data Buffer containing IFC data (bytes)
+    * @param settings Settings settings for loading the model
     */
   def OpenModel(data: String): Double = js.native
   def OpenModel(data: String, settings: LoaderSettings): Double = js.native

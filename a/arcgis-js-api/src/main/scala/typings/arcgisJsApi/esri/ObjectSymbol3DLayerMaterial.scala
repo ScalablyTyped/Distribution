@@ -9,12 +9,12 @@ trait ObjectSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The fill color of the object.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
-    */
+  		 * The fill color of the object.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object ObjectSymbol3DLayerMaterial {

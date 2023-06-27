@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeDimensionInterval extends StObject {
   
   /**
-    * End of interval.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
-    */
+  		 * End of interval.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
+  		 */
   var max: js.Date
   
   /**
-    * Start of interval.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
-    */
+  		 * Start of interval.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
+  		 */
   var min: js.Date
   
   /**
-    * Interval duration defined by the following properties.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
-    */
+  		 * Interval duration defined by the following properties.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#TimeDimensionInterval)
+  		 */
   var resolution: TimeDimensionIntervalResolution
 }
 object TimeDimensionInterval {

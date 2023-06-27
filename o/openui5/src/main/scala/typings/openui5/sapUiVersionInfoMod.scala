@@ -13,13 +13,13 @@ object sapUiVersionInfoMod extends Shortcut {
   val default: VersionInfo = js.native
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     */
   @js.native
   trait VersionInfo extends StObject {
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Loads the version info asynchronously from resource "sap-ui-version.json".
       *

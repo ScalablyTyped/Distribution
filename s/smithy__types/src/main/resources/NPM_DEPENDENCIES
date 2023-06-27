@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@smithy/types" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@smithy/types" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

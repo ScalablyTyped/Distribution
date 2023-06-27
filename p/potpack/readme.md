@@ -1,7 +1,7 @@
 
 # Scala.js typings for potpack
 
-Typings are for version 1.0.2
+Typings are for version 2.0.0
 
 ## Library description:
 A tiny library for packing 2D rectangles (for sprite layouts)

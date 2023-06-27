@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphicColor extends StObject {
   
   /**
-    * The color of the trace result graphic in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
-    */
+  		 * The color of the trace result graphic in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
+  		 */
   var color: js.Array[Double]
   
   /**
-    * The opacity of the graphic symbol's halo.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
-    */
+  		 * The opacity of the graphic symbol's halo.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
+  		 */
   var haloOpacity: Double
   
   /**
-    * The color of the trace result graphic in the color picker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
-    */
+  		 * The color of the trace result graphic in the color picker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#GraphicColor)
+  		 */
   var hex: String
 }
 object GraphicColor {

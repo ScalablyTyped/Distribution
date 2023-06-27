@@ -12,45 +12,45 @@ trait CIMMarkerPlacementPolygonCenter
      with MarkerPlacement {
   
   /**
-    * A value indicating whether the marker should be clipped if it extends pasts the boundary of the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * A value indicating whether the marker should be clipped if it extends pasts the boundary of the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var clipAtBoundary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The method used to determine the polygon center.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * The method used to determine the polygon center.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var method: js.UndefOr[OnPolygon | CenterOfMass | BoundingBoxCenter] = js.undefined
   
   /**
-    * The value which offsets the marker horizontally from the center.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * The value which offsets the marker horizontally from the center.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value which offsets the marker vertically from the center.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * The value which offsets the marker vertically from the center.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementPolygonCenter)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementPolygonCenter

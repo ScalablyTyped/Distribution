@@ -62,16 +62,16 @@ object sapUiCoreRoutingHistoryMod {
       ] = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Returns the length difference between the history state stored in browser's pushState and the state maintained
       * in this class.
       *
       * The function returns `undefined` when
       * 	 - The current state in browser's history pushState isn't initialized, for example, between a new hash
-      * 			is set or replaced and the "hashChange" event is processed by this class
+      *     is set or replaced and the "hashChange" event is processed by this class
       * 	 - History pushState is already used before UI5 History is initialized, and UI5 can't maintain the hash
-      * 			history by using the browser pushState
+      *     history by using the browser pushState
       *
       * Once the "hashChange" event is processed by this class, this method always returns 0. However, before
       * a "hashChange" event reaches this class, it returns the offset between the new hash and the previous

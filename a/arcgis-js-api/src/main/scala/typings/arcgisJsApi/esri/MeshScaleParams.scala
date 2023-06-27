@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshScaleParams extends StObject {
   
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale)
-    */
+  		 * Whether to georeference relative to the globe or the projected coordinate system (PCS).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The origin point for scaling.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale)
-    */
+  		 * The origin point for scaling.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale)
+  		 */
   var origin: js.UndefOr[Point] = js.undefined
 }
 object MeshScaleParams {

@@ -6,26 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `459` extends StObject {
   
-  var from: js.UndefOr[String] = js.undefined
-  
-  var to: js.UndefOr[String] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
 }
 object `459` {
   
-  inline def apply(): `459` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
+  ): `459` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`459`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `459`] (val x: Self) extends AnyVal {
     
-    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
-    
-    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
-    
-    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    
-    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

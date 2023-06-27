@@ -12,9 +12,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -29,11 +29,11 @@ trait AVPlayManager extends StObject {
     *
     * @returns AVPlayStreamInfo structure containing tracktype, extraInfo and index for the current stream
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -50,9 +50,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns unsigned long number Current playback time, in milliseconds.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -67,9 +67,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns unsigned long number Duration, in milliseconds
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -84,9 +84,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns AVPlayPlayerState "NONE", "IDLE", "READY", "PLAYING", "PAUSED".
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -103,15 +103,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns DOMString Property value
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -136,11 +136,11 @@ trait AVPlayManager extends StObject {
     * "{"track_num":"%d","track_lang":"%s","subtitle_type":"%d","fourCC":"%s"}"
     * Some of them are not constant value(E.g. Video:Width, Height, and Bit_rate,Audio:channels, sample_rate, and bit_rate) for adaptive streaming such as HLS, DASH and SmoothStreaming.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -163,17 +163,17 @@ trait AVPlayManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/drmplay
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -188,9 +188,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns DOMString string current version
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 3.0
     *
@@ -213,15 +213,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -248,15 +248,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -277,15 +277,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -300,13 +300,13 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type InvalidAccessError, if this API couldn't operate at the moment. (E.g. During the async operation such as seekTo, etc.)
+    * @throws WebAPIException with error type InvalidAccessError, if this API couldn't operate at the moment. (E.g. During the async operation such as seekTo, etc.)
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -321,11 +321,11 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -342,15 +342,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if given URL through open() is invalid. e.g., webapis.avplay.open("InvalidURL").
+    * @throws WebAPIException with error type InvalidValuesError, if given URL through open() is invalid. e.g., webapis.avplay.open("InvalidURL").
     *
-    * @throw WebAPIException with error type InvalidAccessError, if given URL through open() is valid, but not exist or Network Issue. e.g., webapis.avplay.open("http://abc").
+    * @throws WebAPIException with error type InvalidAccessError, if given URL through open() is valid, but not exist or Network Issue. e.g., webapis.avplay.open("http://abc").
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -381,7 +381,7 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @version 1.0
     *
@@ -410,15 +410,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -457,15 +457,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -544,15 +544,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -581,15 +581,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -608,15 +608,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -640,15 +640,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -675,17 +675,17 @@ trait AVPlayManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/drmplay
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     * Examples of exception scenarios include an invalid DRM session, or failure to create the underlying DRM module or configuration. In these scenarios, an exception is thrown and the method call returns FALSE.
     *
     *
@@ -710,15 +710,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -735,13 +735,13 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -761,15 +761,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -792,15 +792,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -817,15 +817,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -845,15 +845,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -875,15 +875,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 4.0
     *
@@ -900,15 +900,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -926,15 +926,15 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -949,9 +949,9 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 3.0
     *
@@ -966,11 +966,11 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *
@@ -985,11 +985,11 @@ trait AVPlayManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
     *
-    * @throw WebAPIException with error type InvalidStateError, if it is called in an invalid state.
+    * @throws WebAPIException with error type InvalidStateError, if it is called in an invalid state.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @version 1.0
     *

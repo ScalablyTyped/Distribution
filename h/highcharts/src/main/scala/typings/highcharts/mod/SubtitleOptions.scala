@@ -24,7 +24,7 @@ trait SubtitleOptions extends StObject {
     * In styled mode, the subtitle style is given in the `.highcharts-subtitle`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject | SubtitleStyleOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The subtitle of the chart.
@@ -83,7 +83,7 @@ object SubtitleOptions {
     
     inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
     
-    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject | SubtitleStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

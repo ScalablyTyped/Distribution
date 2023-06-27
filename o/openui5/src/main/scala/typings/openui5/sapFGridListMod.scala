@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Column
+import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.NavigationDirection
 import typings.openui5.sapFLibraryMod.dnd.IGridDroppable
@@ -23,7 +23,7 @@ object sapFGridListMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
     * 	{@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout MDN web docs: CSS Grid Layout}
     */
   open class default () extends GridList {
@@ -63,7 +63,7 @@ object sapFGridListMod {
     var __implements__sap_ui_layout_cssgrid_IGridConfigurable: Boolean = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to determine on which HTML Elements the display:grid styles
       * should be applied
@@ -74,7 +74,7 @@ object sapFGridListMod {
     override def getGridDomRefs(): js.Array[HTMLElement | typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.60.0
+      * @since 1.60.0
       *
       * The function is used by GridLayoutDelegate to get the grid layout (display:grid styles) to apply
       *
@@ -171,13 +171,13 @@ object sapFGridListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit]
     ): this.type = js.native
     def attachBorderReached(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridList` itself
       */
@@ -202,7 +202,7 @@ object sapFGridListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit]
     ): this.type = js.native
     def attachBorderReached(
       /**
@@ -213,7 +213,7 @@ object sapFGridListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.GridList` itself
       */
@@ -239,13 +239,13 @@ object sapFGridListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit]
     ): this.type = js.native
     def detachBorderReached(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ GridListBorderReachedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -253,17 +253,19 @@ object sapFGridListMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:borderReached borderReached} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBorderReached(): this.type = js.native
-    def fireBorderReached(/**
+    def fireBorderReached(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Column): this.type = js.native
+    mParameters: GridList$BorderReachedEventParameters
+    ): this.type = js.native
     
     def focusItemByDirection(
       /**
@@ -280,7 +282,7 @@ object sapFGridListMod {
     iColumn: int
     ): Unit = js.native
     /**
-      * @EXPERIMENTAL (since 1.87) - Behavior might change.
+      * @experimental (since 1.87) - Behavior might change.
       *
       * Focuses an item in the given direction - up, down, left or right, from the starting position specified
       * by row and column.
@@ -328,6 +330,64 @@ object sapFGridListMod {
     ): this.type = js.native
   }
   
+  trait GridList$BorderReachedEventParameters extends StObject {
+    
+    /**
+      * The the column index, from which the border is reached.
+      */
+    var column: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The navigation direction that is used to reach the border.
+      */
+    var direction: js.UndefOr[
+        NavigationDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationDirection * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * Event that leads to the focus change.
+      */
+    var event: js.UndefOr[Event] = js.undefined
+    
+    /**
+      * The row index, from which the border is reached.
+      */
+    var row: js.UndefOr[int] = js.undefined
+  }
+  object GridList$BorderReachedEventParameters {
+    
+    inline def apply(): GridList$BorderReachedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GridList$BorderReachedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridList$BorderReachedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: int): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      
+      inline def setDirection(
+        value: NavigationDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NavigationDirection * / any */ String)
+      ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      
+      inline def setRow(value: int): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    }
+  }
+  
+  type GridListBorderReachedEvent = typings.openui5.sapUiBaseEventMod.default[GridList$BorderReachedEventParameters]
+  
+  type GridListBorderReachedEventParameters = GridList$BorderReachedEventParameters
+  
   trait GridListSettings
     extends StObject
        with ListBaseSettings {
@@ -335,7 +395,12 @@ object sapFGridListMod {
     /**
       * Fires if the border of the visualizations is reached so that an application can react on this.
       */
-    var borderReached: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var borderReached: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridList$BorderReachedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines a custom grid layout
@@ -352,7 +417,9 @@ object sapFGridListMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GridListSettings] (val x: Self) extends AnyVal {
       
-      inline def setBorderReached(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "borderReached", js.Any.fromFunction1(value))
+      inline def setBorderReached(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[GridList$BorderReachedEventParameters] => Unit
+      ): Self = StObject.set(x, "borderReached", js.Any.fromFunction1(value))
       
       inline def setBorderReachedUndefined: Self = StObject.set(x, "borderReached", js.undefined)
       

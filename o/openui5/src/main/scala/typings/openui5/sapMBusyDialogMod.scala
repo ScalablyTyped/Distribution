@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CancelPressed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.TitleAlignment
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -159,13 +158,13 @@ object sapMBusyDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.BusyDialog` itself
       */
@@ -191,7 +190,7 @@ object sapMBusyDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -202,7 +201,7 @@ object sapMBusyDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.BusyDialog` itself
       */
@@ -233,13 +232,13 @@ object sapMBusyDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BusyDialogCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -247,7 +246,7 @@ object sapMBusyDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -257,11 +256,10 @@ object sapMBusyDialogMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: CancelPressed): this.type = js.native
+    mParameters: BusyDialog$CloseEventParameters): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -372,7 +370,7 @@ object sapMBusyDialogMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -514,7 +512,7 @@ object sapMBusyDialogMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -541,6 +539,34 @@ object sapMBusyDialogMod {
     sTitleAlignment: TitleAlignment): this.type = js.native
   }
   
+  trait BusyDialog$CloseEventParameters extends StObject {
+    
+    /**
+      * Indicates if the close events are triggered by a user, pressing a cancel button or because the operation
+      * was terminated. This parameter is set to true if the close event is fired by user interaction.
+      */
+    var cancelPressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object BusyDialog$CloseEventParameters {
+    
+    inline def apply(): BusyDialog$CloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BusyDialog$CloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusyDialog$CloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCancelPressed(value: Boolean): Self = StObject.set(x, "cancelPressed", value.asInstanceOf[js.Any])
+      
+      inline def setCancelPressedUndefined: Self = StObject.set(x, "cancelPressed", js.undefined)
+    }
+  }
+  
+  type BusyDialogCloseEvent = typings.openui5.sapUiBaseEventMod.default[BusyDialog$CloseEventParameters]
+  
+  type BusyDialogCloseEventParameters = BusyDialog$CloseEventParameters
+  
   trait BusyDialogSettings
     extends StObject
        with ControlSettings {
@@ -559,7 +585,12 @@ object sapMBusyDialogMod {
       * Fires when the busy dialog is closed. Note: the BusyDialog will not be closed by the InstanceManager.closeAllDialogs
       * method
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BusyDialog$CloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Icon, used from the BusyIndicator. This icon is invisible in iOS platform and it is density aware. You
@@ -617,7 +648,7 @@ object sapMBusyDialogMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.Auto`, the Title will be aligned
       * as it is set in the theme (if not set, the default value is `center`); Other possible values are `TitleAlignment.Start`
@@ -647,7 +678,9 @@ object sapMBusyDialogMod {
       
       inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BusyDialog$CloseEventParameters] => Unit
+      ): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       

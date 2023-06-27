@@ -91,6 +91,7 @@ object mod {
     - typings.htmlEntities.htmlEntitiesStrings.specialChars
     - typings.htmlEntities.htmlEntitiesStrings.nonAscii
     - typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintable
+    - typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintableOnly
     - typings.htmlEntities.htmlEntitiesStrings.extensive
   */
   trait EncodeMode extends StObject
@@ -101,6 +102,8 @@ object mod {
     inline def nonAscii: typings.htmlEntities.htmlEntitiesStrings.nonAscii = "nonAscii".asInstanceOf[typings.htmlEntities.htmlEntitiesStrings.nonAscii]
     
     inline def nonAsciiPrintable: typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintable = "nonAsciiPrintable".asInstanceOf[typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintable]
+    
+    inline def nonAsciiPrintableOnly: typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintableOnly = "nonAsciiPrintableOnly".asInstanceOf[typings.htmlEntities.htmlEntitiesStrings.nonAsciiPrintableOnly]
     
     inline def specialChars: typings.htmlEntities.htmlEntitiesStrings.specialChars = "specialChars".asInstanceOf[typings.htmlEntities.htmlEntitiesStrings.specialChars]
   }

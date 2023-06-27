@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait BuiltInStyleName extends StObject
 /**
+  * Represents the built-in style in a Word document.
+  *
+  * Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
+  *
   * @remarks
   * [Api set: WordApi 1.3]
   */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "html-entities" : "2.3.3"
+      "html-entities" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "html-entities" : "2.3.3"
+      "html-entities" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

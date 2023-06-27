@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "untildify" : "4.0.0"
+      "untildify" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "untildify" : "4.0.0"
+      "untildify" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

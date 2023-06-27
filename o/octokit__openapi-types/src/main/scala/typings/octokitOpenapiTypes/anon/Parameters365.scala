@@ -8,11 +8,11 @@ trait Parameters365 extends StObject {
   
   var parameters: `365`
   
-  var responses: `200Content66`
+  var responses: `304422`
 }
 object Parameters365 {
   
-  inline def apply(parameters: `365`, responses: `200Content66`): Parameters365 = {
+  inline def apply(parameters: `365`, responses: `304422`): Parameters365 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters365]
   }
@@ -22,6 +22,6 @@ object Parameters365 {
     
     inline def setParameters(value: `365`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content66`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `304422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -7,48 +7,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMSymbolReference extends StObject {
   
   /**
-    * The maximum distance at which symbols are visible. Objects beyond this point don't get rendered.
-    */
+  			 * The maximum distance at which symbols are visible. Objects beyond this point don't get rendered.
+  			 */
   var maxDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum scale range the symbol reference should be displayed at.
-    */
+  			 * The maximum scale range the symbol reference should be displayed at.
+  			 */
   var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum distance at which symbols are visible. Objects closer than this don't get rendered.
-    */
+  			 * The minimum distance at which symbols are visible. Objects closer than this don't get rendered.
+  			 */
   var minDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum scale range the symbol reference should be displayed at.
-    */
+  			 * The minimum scale range the symbol reference should be displayed at.
+  			 */
   var minScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive overrides. Typically set by renderers at draw time.
-    */
+  			 * The primitive overrides. Typically set by renderers at draw time.
+  			 */
   var primitiveOverrides: js.UndefOr[js.Array[CIMPrimitiveOverride]] = js.undefined
   
   /**
-    * An array of scale dependent sizes.
-    */
+  			 * An array of scale dependent sizes.
+  			 */
   var scaleDependentSizeVariation: js.UndefOr[js.Array[CIMScaleDependentSizeVariation]] = js.undefined
   
   /**
-    * The style path. Reserved for future use.
-    */
+  			 * The style path. Reserved for future use.
+  			 */
   var stylePath: js.UndefOr[String] = js.undefined
   
   /**
-    * The symbol.
-    */
+  			 * The symbol.
+  			 */
   var symbol: js.UndefOr[CIMSymbolType] = js.undefined
   
   /**
-    * The symbol name.
-    */
+  			 * The symbol name.
+  			 */
   var symbolName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference

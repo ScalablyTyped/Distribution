@@ -478,6 +478,196 @@ object anon {
     }
   }
   
+  trait Break extends StObject {
+    
+    var _break: TokenType
+    
+    var _case: TokenType
+    
+    var _catch: TokenType
+    
+    var _class: TokenType
+    
+    var _const: TokenType
+    
+    var _continue: TokenType
+    
+    var _debugger: TokenType
+    
+    var _default: TokenType
+    
+    var _delete: TokenType
+    
+    var _do: TokenType
+    
+    var _else: TokenType
+    
+    var _export: TokenType
+    
+    var _extends: TokenType
+    
+    var _false: TokenType
+    
+    var _finally: TokenType
+    
+    var _for: TokenType
+    
+    var _function: TokenType
+    
+    var _if: TokenType
+    
+    var _import: TokenType
+    
+    var _in: TokenType
+    
+    var _instanceof: TokenType
+    
+    var _new: TokenType
+    
+    var _null: TokenType
+    
+    var _return: TokenType
+    
+    var _super: TokenType
+    
+    var _switch: TokenType
+    
+    var _this: TokenType
+    
+    var _throw: TokenType
+    
+    var _true: TokenType
+    
+    var _try: TokenType
+    
+    var _typeof: TokenType
+    
+    var _var: TokenType
+    
+    var _void: TokenType
+    
+    var _while: TokenType
+    
+    var _with: TokenType
+  }
+  object Break {
+    
+    inline def apply(
+      _break: TokenType,
+      _case: TokenType,
+      _catch: TokenType,
+      _class: TokenType,
+      _const: TokenType,
+      _continue: TokenType,
+      _debugger: TokenType,
+      _default: TokenType,
+      _delete: TokenType,
+      _do: TokenType,
+      _else: TokenType,
+      _export: TokenType,
+      _extends: TokenType,
+      _false: TokenType,
+      _finally: TokenType,
+      _for: TokenType,
+      _function: TokenType,
+      _if: TokenType,
+      _import: TokenType,
+      _in: TokenType,
+      _instanceof: TokenType,
+      _new: TokenType,
+      _null: TokenType,
+      _return: TokenType,
+      _super: TokenType,
+      _switch: TokenType,
+      _this: TokenType,
+      _throw: TokenType,
+      _true: TokenType,
+      _try: TokenType,
+      _typeof: TokenType,
+      _var: TokenType,
+      _void: TokenType,
+      _while: TokenType,
+      _with: TokenType
+    ): Break = {
+      val __obj = js.Dynamic.literal(_break = _break.asInstanceOf[js.Any], _case = _case.asInstanceOf[js.Any], _catch = _catch.asInstanceOf[js.Any], _class = _class.asInstanceOf[js.Any], _const = _const.asInstanceOf[js.Any], _continue = _continue.asInstanceOf[js.Any], _debugger = _debugger.asInstanceOf[js.Any], _default = _default.asInstanceOf[js.Any], _delete = _delete.asInstanceOf[js.Any], _do = _do.asInstanceOf[js.Any], _else = _else.asInstanceOf[js.Any], _export = _export.asInstanceOf[js.Any], _extends = _extends.asInstanceOf[js.Any], _false = _false.asInstanceOf[js.Any], _finally = _finally.asInstanceOf[js.Any], _for = _for.asInstanceOf[js.Any], _function = _function.asInstanceOf[js.Any], _if = _if.asInstanceOf[js.Any], _import = _import.asInstanceOf[js.Any], _in = _in.asInstanceOf[js.Any], _instanceof = _instanceof.asInstanceOf[js.Any], _new = _new.asInstanceOf[js.Any], _null = _null.asInstanceOf[js.Any], _return = _return.asInstanceOf[js.Any], _super = _super.asInstanceOf[js.Any], _switch = _switch.asInstanceOf[js.Any], _this = _this.asInstanceOf[js.Any], _throw = _throw.asInstanceOf[js.Any], _true = _true.asInstanceOf[js.Any], _try = _try.asInstanceOf[js.Any], _typeof = _typeof.asInstanceOf[js.Any], _var = _var.asInstanceOf[js.Any], _void = _void.asInstanceOf[js.Any], _while = _while.asInstanceOf[js.Any], _with = _with.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Break]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Break] (val x: Self) extends AnyVal {
+      
+      inline def set_break(value: TokenType): Self = StObject.set(x, "_break", value.asInstanceOf[js.Any])
+      
+      inline def set_case(value: TokenType): Self = StObject.set(x, "_case", value.asInstanceOf[js.Any])
+      
+      inline def set_catch(value: TokenType): Self = StObject.set(x, "_catch", value.asInstanceOf[js.Any])
+      
+      inline def set_class(value: TokenType): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+      
+      inline def set_const(value: TokenType): Self = StObject.set(x, "_const", value.asInstanceOf[js.Any])
+      
+      inline def set_continue(value: TokenType): Self = StObject.set(x, "_continue", value.asInstanceOf[js.Any])
+      
+      inline def set_debugger(value: TokenType): Self = StObject.set(x, "_debugger", value.asInstanceOf[js.Any])
+      
+      inline def set_default(value: TokenType): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
+      
+      inline def set_delete(value: TokenType): Self = StObject.set(x, "_delete", value.asInstanceOf[js.Any])
+      
+      inline def set_do(value: TokenType): Self = StObject.set(x, "_do", value.asInstanceOf[js.Any])
+      
+      inline def set_else(value: TokenType): Self = StObject.set(x, "_else", value.asInstanceOf[js.Any])
+      
+      inline def set_export(value: TokenType): Self = StObject.set(x, "_export", value.asInstanceOf[js.Any])
+      
+      inline def set_extends(value: TokenType): Self = StObject.set(x, "_extends", value.asInstanceOf[js.Any])
+      
+      inline def set_false(value: TokenType): Self = StObject.set(x, "_false", value.asInstanceOf[js.Any])
+      
+      inline def set_finally(value: TokenType): Self = StObject.set(x, "_finally", value.asInstanceOf[js.Any])
+      
+      inline def set_for(value: TokenType): Self = StObject.set(x, "_for", value.asInstanceOf[js.Any])
+      
+      inline def set_function(value: TokenType): Self = StObject.set(x, "_function", value.asInstanceOf[js.Any])
+      
+      inline def set_if(value: TokenType): Self = StObject.set(x, "_if", value.asInstanceOf[js.Any])
+      
+      inline def set_import(value: TokenType): Self = StObject.set(x, "_import", value.asInstanceOf[js.Any])
+      
+      inline def set_in(value: TokenType): Self = StObject.set(x, "_in", value.asInstanceOf[js.Any])
+      
+      inline def set_instanceof(value: TokenType): Self = StObject.set(x, "_instanceof", value.asInstanceOf[js.Any])
+      
+      inline def set_new(value: TokenType): Self = StObject.set(x, "_new", value.asInstanceOf[js.Any])
+      
+      inline def set_null(value: TokenType): Self = StObject.set(x, "_null", value.asInstanceOf[js.Any])
+      
+      inline def set_return(value: TokenType): Self = StObject.set(x, "_return", value.asInstanceOf[js.Any])
+      
+      inline def set_super(value: TokenType): Self = StObject.set(x, "_super", value.asInstanceOf[js.Any])
+      
+      inline def set_switch(value: TokenType): Self = StObject.set(x, "_switch", value.asInstanceOf[js.Any])
+      
+      inline def set_this(value: TokenType): Self = StObject.set(x, "_this", value.asInstanceOf[js.Any])
+      
+      inline def set_throw(value: TokenType): Self = StObject.set(x, "_throw", value.asInstanceOf[js.Any])
+      
+      inline def set_true(value: TokenType): Self = StObject.set(x, "_true", value.asInstanceOf[js.Any])
+      
+      inline def set_try(value: TokenType): Self = StObject.set(x, "_try", value.asInstanceOf[js.Any])
+      
+      inline def set_typeof(value: TokenType): Self = StObject.set(x, "_typeof", value.asInstanceOf[js.Any])
+      
+      inline def set_var(value: TokenType): Self = StObject.set(x, "_var", value.asInstanceOf[js.Any])
+      
+      inline def set_void(value: TokenType): Self = StObject.set(x, "_void", value.asInstanceOf[js.Any])
+      
+      inline def set_while(value: TokenType): Self = StObject.set(x, "_while", value.asInstanceOf[js.Any])
+      
+      inline def set_with(value: TokenType): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait GetToken extends StObject {
     

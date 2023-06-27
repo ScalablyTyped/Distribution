@@ -9,7 +9,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <feColorMatrix> element. */
+/**
+  * Corresponds to the <feColorMatrix> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement)
+  */
 @js.native
 trait SVGFEColorMatrixElement
   extends StObject
@@ -42,6 +46,7 @@ trait SVGFEColorMatrixElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/in1) */
   /* standard dom */
   val in1: SVGAnimatedString = js.native
   
@@ -56,9 +61,11 @@ trait SVGFEColorMatrixElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/type) */
   /* standard dom */
   val `type`: SVGAnimatedEnumeration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEColorMatrixElement/values) */
   /* standard dom */
   val values: SVGAnimatedNumberList = js.native
 }

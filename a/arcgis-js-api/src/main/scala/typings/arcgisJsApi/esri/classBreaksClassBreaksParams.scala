@@ -12,128 +12,128 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait classBreaksClassBreaksParams extends StObject {
   
   /**
-    * The method for classifying the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * The method for classifying the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var classificationMethod: js.UndefOr[`equal-interval` | `natural-breaks` | quantile | `standard-deviation`] = js.undefined
   
   /**
-    * A subset of features for which to generate the class breaks.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * A subset of features for which to generate the class breaks.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var features: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
-    * The class breaks will be generated based on values of this field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * The class breaks will be generated based on values of this field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * A feature filter used to filter statistic queries by geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * A feature filter used to filter statistic queries by geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var filter: js.UndefOr[FeatureFilter] = js.undefined
   
   /**
-    * Indicates whether the generated statistics are for a binning or clustering visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * Indicates whether the generated statistics are for a binning or clustering visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var forBinning: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The layer from which to generate class breaks.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  		 * The layer from which to generate class breaks.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
+  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   
   /**
-    * The maximum bounding value for the class breaks definition.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * The maximum bounding value for the class breaks definition.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum bounding value for the class breaks definition.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * The minimum bounding value for the class breaks definition.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The field by which to normalize the values returned from the given `field`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * The field by which to normalize the values returned from the given `field`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates the number of classes to generate for the class breaks definition.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * Indicates the number of classes to generate for the class breaks definition.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var numClasses: js.UndefOr[Double] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * A SQL expression evaluating to a number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * A SQL expression evaluating to a number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var sqlExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * A SQL where clause used to filter features for the statistics query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * A SQL where clause used to filter features for the statistics query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var sqlWhere: js.UndefOr[String] = js.undefined
   
   /**
-    * When `classificationMethod = "standard-deviation"`, this sets the interval at which each class break should be set (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * When `classificationMethod = "standard-deviation"`, this sets the interval at which each class break should be set (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var standardDeviationInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * Only applicable when the input `layer` is a service-backed FeatureLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * Only applicable when the input `layer` is a service-backed FeatureLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var useFeaturesInView: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks)
+  		 */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance is required when a `valueExpression` is specified.
-    *
-    * [Read more...](global.html)
-    */
+  		 * A [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance is required when a `valueExpression` is specified.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[View] = js.undefined
 }
 object classBreaksClassBreaksParams {
   
   inline def apply(
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
   ): classBreaksClassBreaksParams = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[classBreaksClassBreaksParams]
@@ -165,7 +165,7 @@ object classBreaksClassBreaksParams {
     inline def setForBinningUndefined: Self = StObject.set(x, "forBinning", js.undefined)
     
     inline def setLayer(
-      value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+      value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer | StreamLayer
     ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])

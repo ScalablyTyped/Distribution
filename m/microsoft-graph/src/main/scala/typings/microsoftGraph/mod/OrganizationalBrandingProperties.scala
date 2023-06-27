@@ -45,6 +45,42 @@ trait OrganizationalBrandingProperties
     */
   var cdnList: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
+  var customAccountResetCredentialsUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customCSS: js.UndefOr[NullableOption[Any]] = js.undefined
+  
+  var customCSSRelativeUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customCannotAccessYourAccountText: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customCannotAccessYourAccountUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customForgotMyPasswordText: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customPrivacyAndCookiesText: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customPrivacyAndCookiesUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customResetItNowText: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customTermsOfUseText: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var customTermsOfUseUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var favicon: js.UndefOr[NullableOption[Any]] = js.undefined
+  
+  var faviconRelativeUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var headerBackgroundColor: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var headerLogo: js.UndefOr[NullableOption[Any]] = js.undefined
+  
+  var headerLogoRelativeUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var loginPageLayoutConfiguration: js.UndefOr[NullableOption[LoginPageLayoutConfiguration]] = js.undefined
+  
+  var loginPageTextVisibilitySettings: js.UndefOr[NullableOption[LoginPageTextVisibilitySettings]] = js.undefined
+  
   /**
     * Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the
     * phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters.
@@ -57,6 +93,10 @@ trait OrganizationalBrandingProperties
     * KB in size. We recommend using a transparent image with no padding around the logo.
     */
   var squareLogo: js.UndefOr[NullableOption[Any]] = js.undefined
+  
+  var squareLogoDark: js.UndefOr[NullableOption[Any]] = js.undefined
+  
+  var squareLogoDarkRelativeUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version
@@ -118,6 +158,114 @@ object OrganizationalBrandingProperties {
     
     inline def setCdnListVarargs(value: String*): Self = StObject.set(x, "cdnList", js.Array(value*))
     
+    inline def setCustomAccountResetCredentialsUrl(value: NullableOption[String]): Self = StObject.set(x, "customAccountResetCredentialsUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAccountResetCredentialsUrlNull: Self = StObject.set(x, "customAccountResetCredentialsUrl", null)
+    
+    inline def setCustomAccountResetCredentialsUrlUndefined: Self = StObject.set(x, "customAccountResetCredentialsUrl", js.undefined)
+    
+    inline def setCustomCSS(value: NullableOption[Any]): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCSSNull: Self = StObject.set(x, "customCSS", null)
+    
+    inline def setCustomCSSRelativeUrl(value: NullableOption[String]): Self = StObject.set(x, "customCSSRelativeUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCSSRelativeUrlNull: Self = StObject.set(x, "customCSSRelativeUrl", null)
+    
+    inline def setCustomCSSRelativeUrlUndefined: Self = StObject.set(x, "customCSSRelativeUrl", js.undefined)
+    
+    inline def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
+    
+    inline def setCustomCannotAccessYourAccountText(value: NullableOption[String]): Self = StObject.set(x, "customCannotAccessYourAccountText", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCannotAccessYourAccountTextNull: Self = StObject.set(x, "customCannotAccessYourAccountText", null)
+    
+    inline def setCustomCannotAccessYourAccountTextUndefined: Self = StObject.set(x, "customCannotAccessYourAccountText", js.undefined)
+    
+    inline def setCustomCannotAccessYourAccountUrl(value: NullableOption[String]): Self = StObject.set(x, "customCannotAccessYourAccountUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCannotAccessYourAccountUrlNull: Self = StObject.set(x, "customCannotAccessYourAccountUrl", null)
+    
+    inline def setCustomCannotAccessYourAccountUrlUndefined: Self = StObject.set(x, "customCannotAccessYourAccountUrl", js.undefined)
+    
+    inline def setCustomForgotMyPasswordText(value: NullableOption[String]): Self = StObject.set(x, "customForgotMyPasswordText", value.asInstanceOf[js.Any])
+    
+    inline def setCustomForgotMyPasswordTextNull: Self = StObject.set(x, "customForgotMyPasswordText", null)
+    
+    inline def setCustomForgotMyPasswordTextUndefined: Self = StObject.set(x, "customForgotMyPasswordText", js.undefined)
+    
+    inline def setCustomPrivacyAndCookiesText(value: NullableOption[String]): Self = StObject.set(x, "customPrivacyAndCookiesText", value.asInstanceOf[js.Any])
+    
+    inline def setCustomPrivacyAndCookiesTextNull: Self = StObject.set(x, "customPrivacyAndCookiesText", null)
+    
+    inline def setCustomPrivacyAndCookiesTextUndefined: Self = StObject.set(x, "customPrivacyAndCookiesText", js.undefined)
+    
+    inline def setCustomPrivacyAndCookiesUrl(value: NullableOption[String]): Self = StObject.set(x, "customPrivacyAndCookiesUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomPrivacyAndCookiesUrlNull: Self = StObject.set(x, "customPrivacyAndCookiesUrl", null)
+    
+    inline def setCustomPrivacyAndCookiesUrlUndefined: Self = StObject.set(x, "customPrivacyAndCookiesUrl", js.undefined)
+    
+    inline def setCustomResetItNowText(value: NullableOption[String]): Self = StObject.set(x, "customResetItNowText", value.asInstanceOf[js.Any])
+    
+    inline def setCustomResetItNowTextNull: Self = StObject.set(x, "customResetItNowText", null)
+    
+    inline def setCustomResetItNowTextUndefined: Self = StObject.set(x, "customResetItNowText", js.undefined)
+    
+    inline def setCustomTermsOfUseText(value: NullableOption[String]): Self = StObject.set(x, "customTermsOfUseText", value.asInstanceOf[js.Any])
+    
+    inline def setCustomTermsOfUseTextNull: Self = StObject.set(x, "customTermsOfUseText", null)
+    
+    inline def setCustomTermsOfUseTextUndefined: Self = StObject.set(x, "customTermsOfUseText", js.undefined)
+    
+    inline def setCustomTermsOfUseUrl(value: NullableOption[String]): Self = StObject.set(x, "customTermsOfUseUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCustomTermsOfUseUrlNull: Self = StObject.set(x, "customTermsOfUseUrl", null)
+    
+    inline def setCustomTermsOfUseUrlUndefined: Self = StObject.set(x, "customTermsOfUseUrl", js.undefined)
+    
+    inline def setFavicon(value: NullableOption[Any]): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+    
+    inline def setFaviconNull: Self = StObject.set(x, "favicon", null)
+    
+    inline def setFaviconRelativeUrl(value: NullableOption[String]): Self = StObject.set(x, "faviconRelativeUrl", value.asInstanceOf[js.Any])
+    
+    inline def setFaviconRelativeUrlNull: Self = StObject.set(x, "faviconRelativeUrl", null)
+    
+    inline def setFaviconRelativeUrlUndefined: Self = StObject.set(x, "faviconRelativeUrl", js.undefined)
+    
+    inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
+    
+    inline def setHeaderBackgroundColor(value: NullableOption[String]): Self = StObject.set(x, "headerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderBackgroundColorNull: Self = StObject.set(x, "headerBackgroundColor", null)
+    
+    inline def setHeaderBackgroundColorUndefined: Self = StObject.set(x, "headerBackgroundColor", js.undefined)
+    
+    inline def setHeaderLogo(value: NullableOption[Any]): Self = StObject.set(x, "headerLogo", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderLogoNull: Self = StObject.set(x, "headerLogo", null)
+    
+    inline def setHeaderLogoRelativeUrl(value: NullableOption[String]): Self = StObject.set(x, "headerLogoRelativeUrl", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderLogoRelativeUrlNull: Self = StObject.set(x, "headerLogoRelativeUrl", null)
+    
+    inline def setHeaderLogoRelativeUrlUndefined: Self = StObject.set(x, "headerLogoRelativeUrl", js.undefined)
+    
+    inline def setHeaderLogoUndefined: Self = StObject.set(x, "headerLogo", js.undefined)
+    
+    inline def setLoginPageLayoutConfiguration(value: NullableOption[LoginPageLayoutConfiguration]): Self = StObject.set(x, "loginPageLayoutConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLoginPageLayoutConfigurationNull: Self = StObject.set(x, "loginPageLayoutConfiguration", null)
+    
+    inline def setLoginPageLayoutConfigurationUndefined: Self = StObject.set(x, "loginPageLayoutConfiguration", js.undefined)
+    
+    inline def setLoginPageTextVisibilitySettings(value: NullableOption[LoginPageTextVisibilitySettings]): Self = StObject.set(x, "loginPageTextVisibilitySettings", value.asInstanceOf[js.Any])
+    
+    inline def setLoginPageTextVisibilitySettingsNull: Self = StObject.set(x, "loginPageTextVisibilitySettings", null)
+    
+    inline def setLoginPageTextVisibilitySettingsUndefined: Self = StObject.set(x, "loginPageTextVisibilitySettings", js.undefined)
+    
     inline def setSignInPageText(value: NullableOption[String]): Self = StObject.set(x, "signInPageText", value.asInstanceOf[js.Any])
     
     inline def setSignInPageTextNull: Self = StObject.set(x, "signInPageText", null)
@@ -125,6 +273,18 @@ object OrganizationalBrandingProperties {
     inline def setSignInPageTextUndefined: Self = StObject.set(x, "signInPageText", js.undefined)
     
     inline def setSquareLogo(value: NullableOption[Any]): Self = StObject.set(x, "squareLogo", value.asInstanceOf[js.Any])
+    
+    inline def setSquareLogoDark(value: NullableOption[Any]): Self = StObject.set(x, "squareLogoDark", value.asInstanceOf[js.Any])
+    
+    inline def setSquareLogoDarkNull: Self = StObject.set(x, "squareLogoDark", null)
+    
+    inline def setSquareLogoDarkRelativeUrl(value: NullableOption[String]): Self = StObject.set(x, "squareLogoDarkRelativeUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSquareLogoDarkRelativeUrlNull: Self = StObject.set(x, "squareLogoDarkRelativeUrl", null)
+    
+    inline def setSquareLogoDarkRelativeUrlUndefined: Self = StObject.set(x, "squareLogoDarkRelativeUrl", js.undefined)
+    
+    inline def setSquareLogoDarkUndefined: Self = StObject.set(x, "squareLogoDark", js.undefined)
     
     inline def setSquareLogoNull: Self = StObject.set(x, "squareLogo", null)
     

@@ -17,7 +17,7 @@ import typings.reactShare.anon.OmitPropstitlestringundefAccessKey
 import typings.reactShare.anon.OmitPropstitlestringundefAriaactivedescendant
 import typings.reactShare.anon.OmitPropstitlestringundefAriaatomic
 import typings.reactShare.anon.OmitPropstitlestringundefAriaautocomplete
-import typings.reactShare.anon.OmitPropstitlestringundefAriabusy
+import typings.reactShare.anon.OmitPropstitlestringundefAriabraillelabel
 import typings.reactShare.anon.OmitSVGPropsSVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -273,7 +273,7 @@ object mod {
   
   @JSImport("react-share", "WeiboShareButton")
   @js.native
-  val WeiboShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriabusy] = js.native
+  val WeiboShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriabraillelabel] = js.native
   
   @JSImport("react-share", "WhatsappIcon")
   @js.native

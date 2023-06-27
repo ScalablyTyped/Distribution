@@ -1,8 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Collapse
 import typings.openui5.anon.HeaderDescription
-import typings.openui5.anon.PreviousKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IDynamicPageStickyContent
 import typings.openui5.sapMLibraryMod.BackgroundDesign
@@ -165,7 +163,7 @@ object sapMIconTabBarMod {
     oItem: IconTab): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:expand expand} event of this `sap.m.IconTabBar`.
       *
@@ -180,20 +178,20 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit]
     ): this.type = js.native
     def attachExpand(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabBar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:expand expand} event of this `sap.m.IconTabBar`.
       *
@@ -213,7 +211,7 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit]
     ): this.type = js.native
     def attachExpand(
       /**
@@ -224,7 +222,7 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabBar` itself
       */
@@ -245,13 +243,13 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabBar` itself
       */
@@ -276,7 +274,7 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -287,7 +285,7 @@ object sapMIconTabBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.IconTabBar` itself
       */
@@ -309,7 +307,7 @@ object sapMIconTabBarMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:expand expand} event of this `sap.m.IconTabBar`.
       *
@@ -321,13 +319,13 @@ object sapMIconTabBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit]
     ): this.type = js.native
     def detachExpand(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarExpandEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -345,13 +343,13 @@ object sapMIconTabBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ IconTabBarSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -359,8 +357,8 @@ object sapMIconTabBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.15.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:expand expand} to attached listeners.
       *
@@ -370,10 +368,10 @@ object sapMIconTabBarMod {
     def fireExpand(/**
       * Parameters to pass along with the event
       */
-    mParameters: Collapse): this.type = js.native
+    mParameters: IconTabBar$ExpandEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -383,10 +381,10 @@ object sapMIconTabBarMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: PreviousKey): this.type = js.native
+    mParameters: IconTabBar$SelectEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Gets current value of property {@link #getApplyContentPadding applyContentPadding}.
       *
@@ -412,7 +410,7 @@ object sapMIconTabBarMod {
     def getAriaTexts(): HeaderDescription | Null = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -437,14 +435,14 @@ object sapMIconTabBarMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getEnableTabReordering enableTabReordering}.
       *
-      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control`
-      * + arrow keys (Mac OS)
+      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control` + arrow keys (Mac
+      * OS)
       *
       * Default value is `false`.
       *
@@ -453,7 +451,7 @@ object sapMIconTabBarMod {
     def getEnableTabReordering(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getExpandable expandable}.
       *
@@ -466,7 +464,7 @@ object sapMIconTabBarMod {
     def getExpandable(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getExpanded expanded}.
       *
@@ -479,7 +477,7 @@ object sapMIconTabBarMod {
     def getExpanded(): Boolean = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getHeaderBackgroundDesign headerBackgroundDesign}.
       *
@@ -495,7 +493,7 @@ object sapMIconTabBarMod {
     def getHeaderBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Gets current value of property {@link #getHeaderMode headerMode}.
       *
@@ -515,14 +513,13 @@ object sapMIconTabBarMod {
     def getItems(): js.Array[IconTab] = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Gets current value of property {@link #getMaxNestingLevel maxNestingLevel}.
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       *
       * Default value is `0`.
       *
@@ -538,7 +535,7 @@ object sapMIconTabBarMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       * @deprecated (since 1.77)
       *
       * Gets current value of property {@link #getShowOverflowSelectList showOverflowSelectList}.
@@ -568,7 +565,7 @@ object sapMIconTabBarMod {
     def getShowSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Gets current value of property {@link #getStretchContentHeight stretchContentHeight}.
       *
@@ -582,7 +579,7 @@ object sapMIconTabBarMod {
     def getStretchContentHeight(): Boolean = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getTabDensityMode tabDensityMode}.
       *
@@ -599,7 +596,7 @@ object sapMIconTabBarMod {
     def getTabDensityMode(): IconTabDensityMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IconTabDensityMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Gets current value of property {@link #getTabsOverflowMode tabsOverflowMode}.
       *
@@ -616,7 +613,7 @@ object sapMIconTabBarMod {
     def getTabsOverflowMode(): TabsOverflowMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TabsOverflowMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getUpperCase upperCase}.
       *
@@ -745,7 +742,7 @@ object sapMIconTabBarMod {
     vItem: IconTab): IconTab | Null = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Sets a new value for property {@link #getApplyContentPadding applyContentPadding}.
       *
@@ -775,7 +772,7 @@ object sapMIconTabBarMod {
     oAriaTexts: HeaderDescription): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -813,7 +810,7 @@ object sapMIconTabBarMod {
     value: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets a new value for property {@link #getExpandable expandable}.
       *
@@ -874,14 +871,13 @@ object sapMIconTabBarMod {
     mode: IconTabHeaderMode): this.type = js.native
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Sets a new value for property {@link #getMaxNestingLevel maxNestingLevel}.
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -906,7 +902,7 @@ object sapMIconTabBarMod {
     sValue: String): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       * @deprecated (since 1.77)
       *
       * Sets a new value for property {@link #getShowOverflowSelectList showOverflowSelectList}.
@@ -939,7 +935,7 @@ object sapMIconTabBarMod {
     bValue: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Sets a new value for property {@link #getStretchContentHeight stretchContentHeight}.
       *
@@ -975,7 +971,7 @@ object sapMIconTabBarMod {
     mode: IconTabDensityMode): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Sets a new value for property {@link #getTabsOverflowMode tabsOverflowMode}.
       *
@@ -1004,7 +1000,7 @@ object sapMIconTabBarMod {
     sTabsOverflowMode: TabsOverflowMode): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getUpperCase upperCase}.
       *
@@ -1023,12 +1019,111 @@ object sapMIconTabBarMod {
     bUpperCase: Boolean): this.type = js.native
   }
   
+  trait IconTabBar$ExpandEventParameters extends StObject {
+    
+    /**
+      * If the tab will collapse, this is true.
+      */
+    var collapse: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If the tab will expand, this is true.
+      */
+    var expand: js.UndefOr[Boolean] = js.undefined
+  }
+  object IconTabBar$ExpandEventParameters {
+    
+    inline def apply(): IconTabBar$ExpandEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IconTabBar$ExpandEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabBar$ExpandEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+      
+      inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+      
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    }
+  }
+  
+  trait IconTabBar$SelectEventParameters extends StObject {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapMIconTabFilterMod.default] = js.undefined
+    
+    /**
+      * The key of the selected item
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The key of the previous selected item
+      */
+    var previousKey: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The selected item
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapMIconTabFilterMod.default] = js.undefined
+    
+    /**
+      * The key of the selected item
+      */
+    var selectedKey: js.UndefOr[String] = js.undefined
+  }
+  object IconTabBar$SelectEventParameters {
+    
+    inline def apply(): IconTabBar$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IconTabBar$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabBar$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMIconTabFilterMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setPreviousKey(value: String): Self = StObject.set(x, "previousKey", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousKeyUndefined: Self = StObject.set(x, "previousKey", js.undefined)
+      
+      inline def setSelectedItem(value: typings.openui5.sapMIconTabFilterMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+      
+      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+    }
+  }
+  
+  type IconTabBarExpandEvent = typings.openui5.sapUiBaseEventMod.default[IconTabBar$ExpandEventParameters]
+  
+  type IconTabBarExpandEventParameters = IconTabBar$ExpandEventParameters
+  
+  type IconTabBarSelectEvent = typings.openui5.sapUiBaseEventMod.default[IconTabBar$SelectEventParameters]
+  
+  type IconTabBarSelectEventParameters = IconTabBar$SelectEventParameters
+  
   trait IconTabBarSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Determines whether the IconTabBar content fits to the full area. The paddings are removed if it's set
       * to false.
@@ -1038,7 +1133,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.78
+      * @since 1.78
       *
       * Specifies optional texts for the screen reader.
       *
@@ -1050,7 +1145,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Specifies the background color of the IconTabBar.
       *
@@ -1071,26 +1166,31 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
-      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator
-      * sap.m.IconTabSeparator} Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control`
-      * + arrow keys (Mac OS)
+      * Specifies whether tab reordering is enabled. Relevant only for desktop devices. The {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * cannot be dragged and dropped Items can be moved around {@link sap.m.IconTabSeparator sap.m.IconTabSeparator }
+      * Reordering is enabled via keyboard using `Ctrl` + arrow keys (Windows) and `Control` + arrow keys (Mac
+      * OS)
       */
     var enableTabReordering: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Indicates that the tab will expand or collapse.
       */
-    var expand: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var expand: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabBar$ExpandEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Defines if the tabs are collapsible and expandable.
       */
@@ -1099,7 +1199,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Indicates if the actual tab content is expanded or not.
       */
@@ -1108,7 +1208,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Specifies the background color of the header.
       *
@@ -1120,7 +1220,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Specifies the header mode.
       */
@@ -1136,22 +1236,26 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.79
+      * @since 1.79
       *
       * Specifies the allowed level of tabs nesting within one another using drag and drop. Default value is
       * 0 which means nesting via interaction is not allowed. Maximum value is 100. This property allows nesting
-      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter
-      * sap.m.IconTabFilter}.
+      * via user interaction only, and does not restrict adding items to the `items` aggregation of {@link sap.m.IconTabFilter sap.m.IconTabFilter}.
       */
     var maxNestingLevel: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
       * Fires when an item is selected.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabBar$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Key of the selected tab item.
       *
@@ -1161,7 +1265,7 @@ object sapMIconTabBarMod {
     var selectedKey: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       * @deprecated (since 1.77)
       *
       * Specifies if the overflow select list is displayed.
@@ -1183,7 +1287,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Determines whether the IconTabBar height is stretched to the maximum possible height of its parent container.
       * As a prerequisite, the height of the parent container must be defined as a fixed value.
@@ -1193,7 +1297,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Specifies the visual density mode of the tabs.
       *
@@ -1206,7 +1310,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Specifies the overflow mode of the header.
       *
@@ -1219,7 +1323,7 @@ object sapMIconTabBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Determines whether the text of the icon tab filter (not the count) is displayed in uppercase.
       */
@@ -1263,7 +1367,9 @@ object sapMIconTabBarMod {
       
       inline def setEnableTabReorderingUndefined: Self = StObject.set(x, "enableTabReordering", js.undefined)
       
-      inline def setExpand(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabBar$ExpandEventParameters] => Unit
+      ): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
@@ -1299,7 +1405,9 @@ object sapMIconTabBarMod {
       
       inline def setMaxNestingLevelUndefined: Self = StObject.set(x, "maxNestingLevel", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[IconTabBar$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

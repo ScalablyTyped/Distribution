@@ -4,26 +4,50 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A key range can be a single value or a range with upper and lower bounds or endpoints. If the key range has both upper and lower bounds, then it is bounded; if it has no bounds, it is unbounded. A bounded key range can either be open (the endpoints are excluded) or closed (the endpoints are included). To retrieve all keys within a certain range, you can use the following code constructs: */
+/**
+  * A key range can be a single value or a range with upper and lower bounds or endpoints. If the key range has both upper and lower bounds, then it is bounded; if it has no bounds, it is unbounded. A bounded key range can either be open (the endpoints are excluded) or closed (the endpoints are included). To retrieve all keys within a certain range, you can use the following code constructs:
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange)
+  */
 trait IDBKeyRange extends StObject {
   
-  /** Returns true if key is included in the range, and false otherwise. */
+  /**
+    * Returns true if key is included in the range, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes)
+    */
   /* standard dom */
   def includes(key: Any): scala.Boolean
   
-  /** Returns lower bound, or undefined if none. */
+  /**
+    * Returns lower bound, or undefined if none.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower)
+    */
   /* standard dom */
   val lower: Any
   
-  /** Returns true if the lower open flag is set, and false otherwise. */
+  /**
+    * Returns true if the lower open flag is set, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerOpen)
+    */
   /* standard dom */
   val lowerOpen: scala.Boolean
   
-  /** Returns upper bound, or undefined if none. */
+  /**
+    * Returns upper bound, or undefined if none.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper)
+    */
   /* standard dom */
   val upper: Any
   
-  /** Returns true if the upper open flag is set, and false otherwise. */
+  /**
+    * Returns true if the upper open flag is set, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen)
+    */
   /* standard dom */
   val upperOpen: scala.Boolean
 }

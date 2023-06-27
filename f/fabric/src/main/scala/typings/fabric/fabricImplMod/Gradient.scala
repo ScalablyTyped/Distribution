@@ -67,7 +67,6 @@ object Gradient {
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element
     * @static
-    * @memberOf fabric.Gradient
     * @param {SVGGradientElement} el SVG gradient element
     * @param {fabric.Object} instance
     * @return {fabric.Gradient} Gradient instance

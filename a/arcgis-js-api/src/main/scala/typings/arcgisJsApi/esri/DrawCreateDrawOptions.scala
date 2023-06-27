@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DrawCreateDrawOptions extends StObject {
   
   /**
-    * The drawing mode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
-    */
+  		 * The drawing mode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
+  		 */
   var mode: js.UndefOr[hybrid | freehand | click] = js.undefined
 }
 object DrawCreateDrawOptions {

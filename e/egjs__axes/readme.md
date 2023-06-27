@@ -1,7 +1,7 @@
 
 # Scala.js typings for egjs__axes
 
-Typings are for version 3.8.4
+Typings are for version 3.8.5
 
 ## Library description:
 A module used to change the information of user action entered by various input devices such as touch screen or mouse into the logical virtual coordinates. You can easily create a UI that responds to user actions.

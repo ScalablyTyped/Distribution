@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TemporalDomain extends StObject {
   
   /**
-    * Start date for the temporal domain of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
-    */
+  		 * Start date for the temporal domain of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
+  		 */
   var begin: js.Date
   
   /**
-    * End date for the temporal domain of a coverage.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
-    */
+  		 * End date for the temporal domain of a coverage.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
+  		 */
   var end: js.Date
   
   /**
-    * The numerical value of the temporal domain or extent.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
-    */
+  		 * The numerical value of the temporal domain or extent.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
+  		 */
   var resolution: js.UndefOr[Double] = js.undefined
   
   /**
-    * Temporal units such as day, month, year etc.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
-    */
+  		 * Temporal units such as day, month, year etc.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
+  		 */
   var units: js.UndefOr[Any] = js.undefined
   
   /**
-    * Date values available in the temporal domain.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
-    */
+  		 * Date values available in the temporal domain.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#TemporalDomain)
+  		 */
   var values: js.UndefOr[js.Array[js.Date]] = js.undefined
 }
 object TemporalDomain {

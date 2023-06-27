@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IButtonConfig extends StObject {
   
   /**
-    * @default: 'active'
+    * @default 'active'
     */
   var activeClass: js.UndefOr[String] = js.undefined
   
   /**
-    * @default: 'Click'
+    * @default 'Click'
     */
   var toggleEvent: js.UndefOr[String] = js.undefined
 }

@@ -1,9 +1,7 @@
 package typings.k6.anon
 
-import typings.k6.k6Strings.Alt
-import typings.k6.k6Strings.Control
-import typings.k6.k6Strings.Meta
-import typings.k6.k6Strings.Shift
+import typings.k6.experimentalBrowserMod.KeyboardModifier
+import typings.k6.experimentalBrowserMod.MouseButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Modifiers extends StObject {
   
   /**
-    * Setting this to `true` will bypass the actionability checks (visible,
-    * stable, enabled). Defaults to `false`.
+    * The mouse button (`left`, `middle` or `right`) to use during the action.
+    * Defaults to `left`.
+    */
+  var button: js.UndefOr[MouseButton] = js.undefined
+  
+  /**
+    * Milliseconds to wait between `mousedown` and `mouseup`. Defaults to `0`.
+    */
+  var delay: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Setting this to `true` will bypass the actionability checks (`visible`,
+    * `stable`, `enabled`). Defaults to `false`.
     */
   var force: js.UndefOr[Boolean] = js.undefined
   
@@ -21,7 +30,7 @@ trait Modifiers extends StObject {
     * action. If not specified, currently pressed modifiers are used,
     * otherwise defaults to `null`.
     */
-  var modifiers: js.UndefOr[js.Array[Alt | Control | Meta | Shift]] = js.undefined
+  var modifiers: js.UndefOr[js.Array[KeyboardModifier]] = js.undefined
   
   /**
     * If set to `true` and a navigation occurs from performing this action, it
@@ -68,15 +77,23 @@ object Modifiers {
   @scala.inline
   implicit open class MutableBuilder[Self <: Modifiers] (val x: Self) extends AnyVal {
     
+    inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    inline def setModifiers(value: js.Array[Alt | Control | Meta | Shift]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[KeyboardModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setModifiersVarargs(value: (Alt | Control | Meta | Shift)*): Self = StObject.set(x, "modifiers", js.Array(value*))
+    inline def setModifiersVarargs(value: KeyboardModifier*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setNoWaitAfter(value: Boolean): Self = StObject.set(x, "noWaitAfter", value.asInstanceOf[js.Any])
     

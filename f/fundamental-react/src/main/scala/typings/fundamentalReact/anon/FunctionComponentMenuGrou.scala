@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.libMenuMenuMod.MenuGroupProps
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentMenuGrou extends StObject {
   
-  def apply(props: MenuGroupProps): ReactElement | Null = js.native
-  def apply(props: MenuGroupProps, context: Any): ReactElement | Null = js.native
+  def apply(props: MenuGroupProps): ReactNode = js.native
+  def apply(props: MenuGroupProps, context: Any): ReactNode = js.native
   
   var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   

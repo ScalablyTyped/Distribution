@@ -102,6 +102,7 @@ import typings.devtoolsProtocol.mod.Protocol.Page.SetFontSizesRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetGeolocationOverrideRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetInterceptFileChooserDialogRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetLifecycleEventsEnabledRequest
+import typings.devtoolsProtocol.mod.Protocol.Page.SetPrerenderingAllowedRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetRPHRegistrationModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetSPCTransactionModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.SetTouchEmulationEnabledRequest
@@ -539,6 +540,17 @@ trait PageApi extends StObject {
     * Controls whether page will emit lifecycle events.
     */
   def setLifecycleEventsEnabled(params: SetLifecycleEventsEnabledRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Enable/disable prerendering manually.
+    * 
+    * This command is a short-term solution for https://crbug.com/1440085.
+    * See https://docs.google.com/document/d/12HVmFxYj5Jc-eJr5OmWsa2bqTJsbgGLKI6ZIyx0_wpA
+    * for more details.
+    * 
+    * TODO(https://crbug.com/1440085): Remove this once Puppeteer supports tab targets.
+    */
+  def setPrerenderingAllowed(params: SetPrerenderingAllowedRequest): js.Promise[Unit] = js.native
   
   /**
     * Extensions for Custom Handlers API:

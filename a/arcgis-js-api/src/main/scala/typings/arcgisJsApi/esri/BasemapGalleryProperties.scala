@@ -11,58 +11,60 @@ trait BasemapGalleryProperties
      with WidgetProperties {
   
   /**
-    * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#activeBasemap)
-    */
+  		 * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#activeBasemap)
+  		 */
   var activeBasemap: js.UndefOr[BasemapProperties] = js.undefined
   
   /**
-    * When `true`, sets the widget to a disabled state so the user cannot interact with it.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
-    */
+  		 * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#disabled)
+  		 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the heading level to use for the message "No basemaps available" when no basemaps are available in the BasemapGallery.
-    *
-    * @default 2
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#headingLevel)
-    */
+  		 * Indicates the heading level to use for the message "No basemaps available" when no basemaps are available in the BasemapGallery.
+  		 *
+  		 * @default 2
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#headingLevel)
+  		 */
   var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/BasemapGallery#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * The source for basemaps that the widget will display.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#source)
-    */
+  		 * The source for basemaps that the widget will display.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#source)
+  		 */
   var source: js.UndefOr[
     LocalBasemapsSourceProperties | PortalBasemapsSourceProperties | CollectionProperties[BasemapProperties] | js.Array[BasemapProperties] | PortalProperties
   ] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[BasemapGalleryViewModelProperties] = js.undefined
 }
 object BasemapGalleryProperties {

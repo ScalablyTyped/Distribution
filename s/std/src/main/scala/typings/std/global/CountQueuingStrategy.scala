@@ -14,11 +14,13 @@ open class CountQueuingStrategy protected ()
   /* standard dom */
   def this(init: QueuingStrategyInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark) */
   /* standard dom */
   /* CompleteClass */
   @JSName("highWaterMark")
   override val highWaterMark_CountQueuingStrategy: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size) */
   /* standard dom */
   /* CompleteClass */
   @JSName("size")

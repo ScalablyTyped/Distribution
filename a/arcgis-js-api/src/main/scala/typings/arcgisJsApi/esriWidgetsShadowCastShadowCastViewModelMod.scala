@@ -11,10 +11,10 @@ object esriWidgetsShadowCastShadowCastViewModelMod {
   @JSImport("esri/widgets/ShadowCast/ShadowCastViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ShadowCast](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html)
-    */
+  		 * Provides the logic for the [ShadowCast](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ShadowCast-ShadowCastViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ShadowCastViewModel {

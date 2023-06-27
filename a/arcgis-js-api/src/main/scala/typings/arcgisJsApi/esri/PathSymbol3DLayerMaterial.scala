@@ -9,12 +9,12 @@ trait PathSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The color of the path.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
-    */
+  		 * The color of the path.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object PathSymbol3DLayerMaterial {

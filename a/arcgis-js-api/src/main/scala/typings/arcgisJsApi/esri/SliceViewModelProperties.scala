@@ -7,51 +7,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliceViewModelProperties extends StObject {
   
   /**
-    * The slice analysis object being created or modified by the view model.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#analysis)
-    */
+  		 * The slice analysis object being created or modified by the view model.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#analysis)
+  		 */
   var analysis: js.UndefOr[SliceAnalysisProperties] = js.undefined
   
   /**
-    * Indicates whether the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) and layers that are draped on the ground surface are excluded from the slice.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface)
-    */
+  		 * Indicates whether the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) and layers that are draped on the ground surface are excluded from the slice.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface)
+  		 */
   var excludeGroundSurface: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Add layers to this collection to exclude them from the slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludedLayers)
-    */
+  		 * Add layers to this collection to exclude them from the slice.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludedLayers)
+  		 */
   var excludedLayers: js.UndefOr[
     CollectionProperties[LayerProperties | typings.arcgisJsApi.anon.BuildingComponentSublayer]
   ] = js.undefined
   
   /**
-    * The shape used to slice elements in a 3D scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape)
-    */
+  		 * The shape used to slice elements in a 3D scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape)
+  		 */
   var shape: js.UndefOr[SlicePlaneProperties] = js.undefined
   
   /**
-    * Enable tilting the slice shape.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#tiltEnabled)
-    */
+  		 * Enable tilting the slice shape.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#tiltEnabled)
+  		 */
   var tiltEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#view)
-    */
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object SliceViewModelProperties {

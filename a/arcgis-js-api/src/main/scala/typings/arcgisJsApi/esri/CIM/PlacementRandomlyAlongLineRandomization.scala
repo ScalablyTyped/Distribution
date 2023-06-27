@@ -11,24 +11,24 @@ sealed trait PlacementRandomlyAlongLineRandomization extends StObject
 object PlacementRandomlyAlongLineRandomization extends StObject {
   
   /**
-    * A high amount of randomness is applied
-    */
+  			 * A high amount of randomness is applied
+  			 */
   @js.native
   sealed trait High
     extends StObject
        with PlacementRandomlyAlongLineRandomization
   
   /**
-    * A low amount of randomness is applied
-    */
+  			 * A low amount of randomness is applied
+  			 */
   @js.native
   sealed trait Low
     extends StObject
        with PlacementRandomlyAlongLineRandomization
   
   /**
-    * A medium amount of randomness is applied
-    */
+  			 * A medium amount of randomness is applied
+  			 */
   @js.native
   sealed trait Medium
     extends StObject

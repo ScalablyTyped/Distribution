@@ -9,6 +9,7 @@ import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserBooleans
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,8 @@ object distNodesGeneralEnclosedMod {
     
     var value: ComponentValue = js.native
     
-    def walk(cb: js.Function2[/* entry */ Node, /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit], state: T): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object GeneralEnclosed {

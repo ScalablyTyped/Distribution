@@ -9,15 +9,17 @@ trait `200Content120` extends StObject {
   /** @description Response */
   var `200`: Content120
   
-  /** @description Response */
-  var `201`: Content120
+  var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed_simple'] */ js.Any
 }
 object `200Content120` {
   
-  inline def apply(`200`: Content120, `201`: Content120): `200Content120` = {
+  inline def apply(
+    `200`: Content120,
+    `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed_simple'] */ js.Any
+  ): `200Content120` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
+    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content120`]
   }
   
@@ -26,6 +28,8 @@ object `200Content120` {
     
     inline def set200(value: Content120): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set201(value: Content120): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set422(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed_simple'] */ js.Any
+    ): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

@@ -99,7 +99,7 @@ object sapUiCoreManifestMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Function to load the manifest by URL
       *
@@ -108,7 +108,7 @@ object sapUiCoreManifestMod {
     inline def load(/**
       * the configuration options
       */
-    mOptions: ComponentName): Manifest | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(mOptions.asInstanceOf[js.Any]).asInstanceOf[Manifest | js.Promise[Any]]
+    mOptions: ComponentName): Manifest | js.Promise[Manifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(mOptions.asInstanceOf[js.Any]).asInstanceOf[Manifest | js.Promise[Manifest]]
   }
   
   @js.native
@@ -161,7 +161,7 @@ object sapUiCoreManifestMod {
     def getRawJson(): js.Object = js.native
     
     /**
-      * @SINCE 1.60.1
+      * @since 1.60.1
       *
       * Resolves the given URI relative to the Component by default or optional relative to the manifest when
       * passing 'manifest' as second parameter.

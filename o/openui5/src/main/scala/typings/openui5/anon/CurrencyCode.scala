@@ -25,7 +25,7 @@ trait CurrencyCode extends StObject {
     * defines a set of custom currencies exclusive to this NumberFormat instance. Custom currencies must not
     * only consist of digits. If custom currencies are defined on the instance, no other currencies can be
     * formatted and parsed by this instance. Globally available custom currencies can be added via the global
-    * configuration. See the above examples. See also {@link sap.ui.core.Configuration.FormatSettings#setCustomCurrencies}
+    * configuration. See the above examples. See also {@link sap.ui.core.Configuration.FormatSettings#setCustomCurrencies }
     * and {@link sap.ui.core.Configuration.FormatSettings#addCustomCurrencies}.
     */
   var customCurrencies: js.UndefOr[Record[String, js.Object]] = js.undefined
@@ -126,7 +126,7 @@ trait CurrencyCode extends StObject {
     * assigned
     * 	 - by value in {@link sap.ui.core.format.NumberFormat.RoundingMode RoundingMode},
     * 	 - via a function that is used for rounding the number and takes two parameters: the number itself,
-    * 			and the number of decimal digits that should be reserved.
+    *     and the number of decimal digits that should be reserved.
     */
   var roundingMode: js.UndefOr[
     RoundingMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RoundingMode * / any */ String)

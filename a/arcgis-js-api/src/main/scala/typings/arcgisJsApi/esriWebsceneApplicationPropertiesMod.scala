@@ -11,10 +11,10 @@ object esriWebsceneApplicationPropertiesMod {
   @JSImport("esri/webscene/ApplicationProperties", JSImport.Namespace)
   @js.native
   /**
-    * Represents configuration of application and UI elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html)
-    */
+  		 * Represents configuration of application and UI elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html)
+  		 */
   open class ^ ()
     extends StObject
        with websceneApplicationProperties {

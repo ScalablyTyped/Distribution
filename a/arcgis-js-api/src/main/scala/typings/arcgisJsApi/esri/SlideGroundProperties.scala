@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideGroundProperties extends StObject {
   
   /**
-    * Ground opacity
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
-    */
+  		 * Ground opacity
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
+  		 */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object SlideGroundProperties {

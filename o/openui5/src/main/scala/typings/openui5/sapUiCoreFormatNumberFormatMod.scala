@@ -23,6 +23,15 @@ object sapUiCoreFormatNumberFormatMod {
     val ^ : js.Any = js.native
     
     /**
+      * Specifies a rounding behavior for numerical operations capable of discarding precision. Each rounding
+      * mode in this object indicates how the least significant returned digits of rounded result is to be calculated.
+      */
+    @JSImport("sap/ui/core/format/NumberFormat", "default.RoundingMode")
+    @js.native
+    def RoundingMode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RoundingMode */ Any = js.native
+    inline def RoundingMode_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RoundingMode */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RoundingMode")(x.asInstanceOf[js.Any])
+    
+    /**
       * Creates a new subclass of class sap.ui.core.format.NumberFormat with name `sClassName` and enriches it
       * with the information contained in `oClassInfo`.
       *
@@ -78,8 +87,8 @@ object sapUiCoreFormatNumberFormatMod {
     /**
       * Get a currency instance of the NumberFormat, which can be used for formatting.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       *  This instance has HALF_AWAY_FROM_ZERO set as default rounding mode. Please set the roundingMode property
       * in oFormatOptions to change the default value.
@@ -169,8 +178,8 @@ object sapUiCoreFormatNumberFormatMod {
     /**
       * Get a float instance of the NumberFormat, which can be used for formatting.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       *  This instance has HALF_AWAY_FROM_ZERO set as default rounding mode. Please set the roundingMode property
       * in oFormatOptions to change the default value.
@@ -225,8 +234,8 @@ object sapUiCoreFormatNumberFormatMod {
     /**
       * Get an integer instance of the NumberFormat, which can be used for formatting.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       *  This instance has TOWARDS_ZERO set as default rounding mode. Please set the roundingMode property
       * in oFormatOptions to change the default value.
@@ -287,8 +296,8 @@ object sapUiCoreFormatNumberFormatMod {
     /**
       * Get a percent instance of the NumberFormat, which can be used for formatting.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       *  This instance has HALF_AWAY_FROM_ZERO set as default rounding mode. Please set the roundingMode property
       * in oFormatOptions to change the default value.
@@ -329,8 +338,8 @@ object sapUiCoreFormatNumberFormatMod {
     /**
       * Get a unit instance of the NumberFormat, which can be used for formatting units.
       *
-      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale
-      * formatLocale} will be used.
+      * If no locale is given, the currently configured {@link sap.ui.core.Configuration.FormatSettings#getFormatLocale formatLocale }
+      * will be used.
       *
       *  This instance has HALF_AWAY_FROM_ZERO set as default rounding mode. Please set the roundingMode property
       * in oFormatOptions to change the default value.
@@ -371,12 +380,13 @@ object sapUiCoreFormatNumberFormatMod {
   
   @js.native
   sealed trait RoundingMode extends StObject
+  /**
+    * Specifies a rounding behavior for numerical operations capable of discarding precision. Each rounding
+    * mode in this object indicates how the least significant returned digits of rounded result is to be calculated.
+    */
   @JSImport("sap/ui/core/format/NumberFormat", "RoundingMode")
   @js.native
   object RoundingMode extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[RoundingMode & String] = js.native
     
     /**
       * Rounding mode to round away from zero
@@ -385,7 +395,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait AWAY_FROM_ZERO
       extends StObject
          with RoundingMode
-    /* "AWAY_FROM_ZERO" */ val AWAY_FROM_ZERO: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.AWAY_FROM_ZERO & String = js.native
     
     /**
       * Rounding mode to round towards positive infinity
@@ -394,7 +403,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait CEILING
       extends StObject
          with RoundingMode
-    /* "CEILING" */ val CEILING: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.CEILING & String = js.native
     
     /**
       * Rounding mode to round towards negative infinity
@@ -403,7 +411,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait FLOOR
       extends StObject
          with RoundingMode
-    /* "FLOOR" */ val FLOOR: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.FLOOR & String = js.native
     
     /**
       * Rounding mode to round towards the nearest neighbor unless both neighbors are equidistant, in which case
@@ -413,7 +420,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait HALF_AWAY_FROM_ZERO
       extends StObject
          with RoundingMode
-    /* "HALF_AWAY_FROM_ZERO" */ val HALF_AWAY_FROM_ZERO: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.HALF_AWAY_FROM_ZERO & String = js.native
     
     /**
       * Rounding mode to round towards the nearest neighbor unless both neighbors are equidistant, in which case
@@ -423,7 +429,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait HALF_CEILING
       extends StObject
          with RoundingMode
-    /* "HALF_CEILING" */ val HALF_CEILING: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.HALF_CEILING & String = js.native
     
     /**
       * Rounding mode to round towards the nearest neighbor unless both neighbors are equidistant, in which case
@@ -433,7 +438,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait HALF_FLOOR
       extends StObject
          with RoundingMode
-    /* "HALF_FLOOR" */ val HALF_FLOOR: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.HALF_FLOOR & String = js.native
     
     /**
       * Rounding mode to round towards the nearest neighbor unless both neighbors are equidistant, in which case
@@ -443,7 +447,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait HALF_TOWARDS_ZERO
       extends StObject
          with RoundingMode
-    /* "HALF_TOWARDS_ZERO" */ val HALF_TOWARDS_ZERO: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.HALF_TOWARDS_ZERO & String = js.native
     
     /**
       * Rounding mode to round towards zero
@@ -452,7 +455,6 @@ object sapUiCoreFormatNumberFormatMod {
     sealed trait TOWARDS_ZERO
       extends StObject
          with RoundingMode
-    /* "TOWARDS_ZERO" */ val TOWARDS_ZERO: typings.openui5.sapUiCoreFormatNumberFormatMod.RoundingMode.TOWARDS_ZERO & String = js.native
   }
   
   @js.native
@@ -498,7 +500,7 @@ object sapUiCoreFormatNumberFormatMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.100
+      * @since 1.100
       *
       * Returns the scaling factor which is calculated based on the format options and the current locale being
       * used.
@@ -520,7 +522,7 @@ object sapUiCoreFormatNumberFormatMod {
       * @returns the parsed value as:
       * 	 - number
       * 	 - array which contains the parsed value and the currency code (symbol) or unit for currency and unit
-      * 			instances
+      *     instances
       * 	 - string when option "parseAsString" is `true`
       * 	 - `NaN` if value cannot be parsed
       * 	 - `null` if value is invalid

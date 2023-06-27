@@ -4,16 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Simple user interface events. */
+/**
+  * Simple user interface events.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/UIEvent)
+  */
 @js.native
 trait UIEvent
   extends StObject
      with Event {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/UIEvent/detail) */
   /* standard dom */
   val detail: Double = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/UIEvent/initUIEvent)
+    */
   /* standard dom */
   def initUIEvent(typeArg: java.lang.String): Unit = js.native
   def initUIEvent(typeArg: java.lang.String, bubblesArg: scala.Boolean): Unit = js.native
@@ -101,10 +110,15 @@ trait UIEvent
     detailArg: Double
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/UIEvent/view) */
   /* standard dom */
   val view: Window | Null = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/UIEvent/which)
+    */
   /* standard dom */
   val which: Double = js.native
 }

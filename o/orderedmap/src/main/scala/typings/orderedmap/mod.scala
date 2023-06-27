@@ -49,6 +49,8 @@ object mod {
     
     def subtract(map: MapLike[T]): OrderedMap[T] = js.native
     
+    def toObject(): Record[String, T] = js.native
+    
     def update(key: String, value: T): OrderedMap[T] = js.native
     def update(key: String, value: T, newKey: String): OrderedMap[T] = js.native
   }

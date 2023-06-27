@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__search
 
-Typings are for version 6.2.0
+Typings are for version 6.5.0
 
 ## Library description:
 Search functionality for the CodeMirror code editor

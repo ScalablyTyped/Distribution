@@ -9,7 +9,7 @@ object dnd {
   @js.native
   sealed trait DropEffect extends StObject
   /**
-    * @SINCE 1.52.0
+    * @since 1.52.0
     *
     * Configuration options for visual drop effects that are given during a drag and drop operation.
     */
@@ -60,7 +60,7 @@ object dnd {
   @js.native
   sealed trait DropLayout extends StObject
   /**
-    * @SINCE 1.52.0
+    * @since 1.52.0
     *
     * Configuration options for the layout of the droppable controls.
     */
@@ -102,7 +102,7 @@ object dnd {
   @js.native
   sealed trait DropPosition extends StObject
   /**
-    * @SINCE 1.52.0
+    * @since 1.52.0
     *
     * Configuration options for drop positions.
     */
@@ -144,7 +144,7 @@ object dnd {
   @js.native
   sealed trait RelativeDropPosition extends StObject
   /**
-    * @SINCE 1.100.0
+    * @since 1.100.0
     *
     * Drop positions relative to a dropped element.
     */
@@ -184,7 +184,7 @@ object dnd {
   }
   
   /**
-    * @SINCE 1.52.0
+    * @since 1.52.0
     *
     * Marker interface for drag configuration providing information about the source of the drag operation.
     */
@@ -207,7 +207,7 @@ object dnd {
   }
   
   /**
-    * @SINCE 1.52.0
+    * @since 1.52.0
     *
     * Marker interface for drop configuration providing information about the target of the drop operation.
     */

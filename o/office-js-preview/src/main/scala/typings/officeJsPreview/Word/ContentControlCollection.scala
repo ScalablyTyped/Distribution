@@ -28,8 +28,7 @@ trait ContentControlCollection
     * Gets the content controls that have the specified tracking state.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param changeTrackingStates Required. An array of content control change tracking states.
     */

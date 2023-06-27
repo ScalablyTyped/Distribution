@@ -11,5 +11,5 @@ object distLibTransformTextAlignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformTextAlign(inlineValues: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformTextAlign")(inlineValues.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformTextAlign(inlineValues: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformTextAlign")(inlineValues.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

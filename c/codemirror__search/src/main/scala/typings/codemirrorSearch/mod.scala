@@ -5,7 +5,9 @@ import typings.codemirrorSearch.anon.From
 import typings.codemirrorSearch.anon.To
 import typings.codemirrorState.mod.EditorState
 import typings.codemirrorState.mod.Extension
+import typings.codemirrorState.mod.SelectionRange
 import typings.codemirrorState.mod.StateCommand
+import typings.codemirrorState.mod.StateEffect
 import typings.codemirrorState.mod.StateEffectType
 import typings.codemirrorState.mod.Text
 import typings.codemirrorView.mod.Command
@@ -369,8 +371,6 @@ object mod {
   `-`, document percentages suffixed with `%`, and an optional
   column position by adding `:` and a second number after the line
   number.
-  The dialog can be styled with the `panel.gotoLine` theme
-  selector.
   */
   @JSImport("@codemirror/search", "gotoLine")
   @js.native
@@ -579,6 +579,23 @@ object mod {
     var literal: js.UndefOr[Boolean] = js.undefined
     
     /**
+      Used to turn on regular expression search in the default query.
+      Defaults to false.
+      */
+    var regexp: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      By default, matches are scrolled into view using the default
+      behavior of
+      [`EditorView.scrollIntoView`](https://codemirror.net/6/docs/ref/#view.EditorView^scrollIntoView).
+      This option allows you to pass a custom function to produce the
+      scroll effect.
+      */
+    var scrollToMatch: js.UndefOr[
+        js.Function2[/* range */ SelectionRange, /* view */ EditorView, StateEffect[Any]]
+      ] = js.undefined
+    
+    /**
       Whether to position the search panel at the top of the editor
       (the default is at the bottom).
       */
@@ -611,6 +628,14 @@ object mod {
       inline def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
       inline def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
+      
+      inline def setRegexp(value: Boolean): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      
+      inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+      
+      inline def setScrollToMatch(value: (/* range */ SelectionRange, /* view */ EditorView) => StateEffect[Any]): Self = StObject.set(x, "scrollToMatch", js.Any.fromFunction2(value))
+      
+      inline def setScrollToMatchUndefined: Self = StObject.set(x, "scrollToMatch", js.undefined)
       
       inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       

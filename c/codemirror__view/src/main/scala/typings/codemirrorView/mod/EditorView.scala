@@ -640,6 +640,28 @@ object EditorView {
   inline def findFromDOM(dom: HTMLElement): EditorView | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findFromDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[EditorView | Null]
   
   /**
+    This facet can be used to provide functions that create effects
+    to be dispatched when the editor's focus state changes.
+    */
+  /* static member */
+  @JSImport("@codemirror/view", "EditorView.focusChangeEffect")
+  @js.native
+  def focusChangeEffect: Facet[
+    js.Function2[/* state */ EditorState, /* focusing */ Boolean, StateEffect[Any] | Null], 
+    js.Array[
+      js.Function2[/* state */ EditorState, /* focusing */ Boolean, StateEffect[Any] | Null]
+    ]
+  ] = js.native
+  inline def focusChangeEffect_=(
+    x: Facet[
+      js.Function2[/* state */ EditorState, /* focusing */ Boolean, StateEffect[Any] | Null], 
+      js.Array[
+        js.Function2[/* state */ EditorState, /* focusing */ Boolean, StateEffect[Any] | Null]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusChangeEffect")(x.asInstanceOf[js.Any])
+  
+  /**
     An input handler can override the way changes to the editable
     DOM content are handled. Handlers are passed the document
     positions between which the change was found, and the new

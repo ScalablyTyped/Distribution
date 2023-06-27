@@ -12,37 +12,37 @@ trait MarkerSymbol
      with Symbol {
   
   /**
-    * The angle of the marker relative to the screen in degrees.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
-    */
+  		 * The angle of the marker relative to the screen in degrees.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
+  		 */
   var angle: Double = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
+  		 */
   @JSName("type")
   var type_MarkerSymbol: `simple-marker` | `picture-marker` = js.native
   
   /**
-    * The offset on the x-axis in points.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
-    */
+  		 * The offset on the x-axis in points.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
+  		 */
   var xoffset: Double = js.native
   
   /**
-    * The offset on the y-axis in points.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
-    */
+  		 * The offset on the y-axis in points.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
+  		 */
   var yoffset: Double = js.native
 }

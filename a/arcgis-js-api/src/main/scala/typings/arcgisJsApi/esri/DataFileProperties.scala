@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataFileProperties extends StObject {
   
   /**
-    * The ID of the uploaded file returned as a result of the upload operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#itemId)
-    */
+  		 * The ID of the uploaded file returned as a result of the upload operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#itemId)
+  		 */
   var itemId: js.UndefOr[String] = js.undefined
   
   /**
-    * URL to the location of the data file.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#url)
-    */
+  		 * URL to the location of the data file.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object DataFileProperties {

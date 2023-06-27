@@ -11,11 +11,20 @@ trait SliceAnalysis
      with Accessor {
   
   /**
-    * The shape used to slice elements in a 3D scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape)
-    */
+  		 * The shape used to slice elements in a 3D scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape)
+  		 */
   var shape: SlicePlane = js.native
+  
+  /**
+  		 * Whether the [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#shape) supports a tilt angle or not.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SliceAnalysis.html#tiltEnabled)
+  		 */
+  var tiltEnabled: Boolean = js.native
   
   val `type`: slice = js.native
 }

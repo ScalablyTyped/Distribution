@@ -18,8 +18,8 @@ object sapUiCoreSeparatorItemMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Item#constructor
-    * sap.ui.core.Item} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Item#constructor sap.ui.core.Item }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiCoreItemMod.default {

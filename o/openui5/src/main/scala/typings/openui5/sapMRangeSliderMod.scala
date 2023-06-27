@@ -192,7 +192,7 @@ object sapMRangeSliderMod {
     fValue2: float): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates values of the advanced tooltips.
       */

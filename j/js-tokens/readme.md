@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-tokens
 
-Typings are for version 8.0.0
+Typings are for version 8.0.1
 
 ## Library description:
 Tiny JavaScript tokenizer.

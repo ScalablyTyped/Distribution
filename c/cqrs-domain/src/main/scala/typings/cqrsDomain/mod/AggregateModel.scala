@@ -40,7 +40,7 @@ trait AggregateModel extends StObject {
     * @param attr The attribute name.
     * @return The result value.
     *
-    * @example:
+    * @example
     *     aggregate.get('firstname'); // returns 'Jack'
     */
   def get(attr: String): Any = js.native
@@ -62,7 +62,7 @@ trait AggregateModel extends StObject {
     * @param attr The attribute name.
     * @return The result value.
     *
-    * @example:
+    * @example
     *     aggregate.has('firstname'); // returns true or false
     */
   def has(attr: String): Boolean = js.native
@@ -82,7 +82,7 @@ trait AggregateModel extends StObject {
   /**
     * Sets attributes for the aggregate.
     *
-    * @example:
+    * @example
     *     aggregate.set('firstname', 'Jack');
     *     // or
     *     aggregate.set({

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerSaveOptions extends StObject {
   
   /**
-    * Options for validating the save operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#save)
-    */
+  		 * Options for validating the save operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#save)
+  		 */
   var validationOptions: js.UndefOr[FeatureLayerSaveOptionsValidationOptions] = js.undefined
 }
 object FeatureLayerSaveOptions {

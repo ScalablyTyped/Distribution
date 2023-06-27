@@ -17,30 +17,37 @@ open class IntersectionObserver protected ()
   def this(callback: IntersectionObserverCallback) = this()
   def this(callback: IntersectionObserverCallback, options: IntersectionObserverInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/disconnect) */
   /* standard dom */
   /* CompleteClass */
   override def disconnect(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/observe) */
   /* standard dom */
   /* CompleteClass */
   override def observe(target: typings.std.Element): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/root) */
   /* standard dom */
   /* CompleteClass */
   override val root: typings.std.Element | Document | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/rootMargin) */
   /* standard dom */
   /* CompleteClass */
   override val rootMargin: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/takeRecords) */
   /* standard dom */
   /* CompleteClass */
   override def takeRecords(): js.Array[typings.std.IntersectionObserverEntry] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/thresholds) */
   /* standard dom */
   /* CompleteClass */
   override val thresholds: js.Array[Double] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/unobserve) */
   /* standard dom */
   /* CompleteClass */
   override def unobserve(target: typings.std.Element): Unit = js.native

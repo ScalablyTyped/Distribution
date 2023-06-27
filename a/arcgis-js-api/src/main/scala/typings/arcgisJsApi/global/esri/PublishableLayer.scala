@@ -11,10 +11,10 @@ open class PublishableLayer ()
      with typings.arcgisJsApi.esri.PublishableLayer {
   
   /**
-    * Checks layer's publishing status while the layer is being published to the portal.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
-    */
+  		 * Checks layer's publishing status while the layer is being published to the portal.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PublishableLayer.html#publishingInfo)
+  		 */
   /* CompleteClass */
   override val publishingInfo: typings.arcgisJsApi.esri.PublishingInfo = js.native
 }

@@ -26,9 +26,9 @@ object anon {
     @JSName("concat")
     var concat_Original: js.Function1[/* repeated */ js.Array[String], js.Array[String]] = js.native
     
-    def copyWithin(target: Double, start: Double): this.type = js.native
+    def copyWithin(target: Double): this.type = js.native
     @JSName("copyWithin")
-    var copyWithin_Original: js.Function2[/* target */ Double, /* start */ Double, this.type] = js.native
+    var copyWithin_Original: js.Function1[/* target */ Double, this.type] = js.native
     
     def entries(): IterableIterator[js.Tuple2[Double, String]] = js.native
     @JSName("entries")

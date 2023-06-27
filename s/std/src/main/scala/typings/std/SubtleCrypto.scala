@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This Web Crypto API interface provides a number of low-level cryptographic functions. It is accessed via the Crypto.subtle properties available in a window context (via Window.crypto).
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto)
   */
 @js.native
 trait SubtleCrypto extends StObject {
@@ -15,10 +17,12 @@ trait SubtleCrypto extends StObject {
   def decrypt(algorithm: AesCbcParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def decrypt(algorithm: AesCtrParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def decrypt(algorithm: AesGcmParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/decrypt) */
   /* standard dom */
   def decrypt(algorithm: AlgorithmIdentifier, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def decrypt(algorithm: RsaOaepParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/deriveBits) */
   /* standard dom */
   def deriveBits(algorithm: AlgorithmIdentifier, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def deriveBits(algorithm: EcdhKeyDeriveParams, baseKey: CryptoKey, length: Double): js.Promise[js.typedarray.ArrayBuffer] = js.native
@@ -39,6 +43,7 @@ trait SubtleCrypto extends StObject {
     extractable: scala.Boolean,
     keyUsages: js.Iterable[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/deriveKey) */
   /* standard dom */
   def deriveKey(
     algorithm: AlgorithmIdentifier,
@@ -47,6 +52,7 @@ trait SubtleCrypto extends StObject {
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/deriveKey) */
   /* standard dom.iterable */
   def deriveKey(
     algorithm: AlgorithmIdentifier,
@@ -308,12 +314,14 @@ trait SubtleCrypto extends StObject {
     keyUsages: js.Iterable[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest) */
   /* standard dom */
   def digest(algorithm: AlgorithmIdentifier, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
   def encrypt(algorithm: AesCbcParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def encrypt(algorithm: AesCtrParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def encrypt(algorithm: AesGcmParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/encrypt) */
   /* standard dom */
   def encrypt(algorithm: AlgorithmIdentifier, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def encrypt(algorithm: RsaOaepParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
@@ -321,6 +329,7 @@ trait SubtleCrypto extends StObject {
   /* standard dom */
   @JSName("exportKey")
   def exportKey_jwk(format: Exclude[KeyFormat, jwk], key: CryptoKey): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/exportKey) */
   /* standard dom */
   @JSName("exportKey")
   def exportKey_jwk(format: jwk, key: CryptoKey): js.Promise[JsonWebKey] = js.native
@@ -334,6 +343,7 @@ trait SubtleCrypto extends StObject {
   def generateKey(algorithm: EcKeyGenParams, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKeyPair] = js.native
   def generateKey(algorithm: HmacKeyGenParams, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKey] = js.native
   def generateKey(algorithm: Pbkdf2Params, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/generateKey) */
   /* standard dom */
   def generateKey(algorithm: RsaHashedKeyGenParams, extractable: scala.Boolean, keyUsages: js.Array[KeyUsage]): js.Promise[CryptoKeyPair] = js.native
   
@@ -427,6 +437,7 @@ trait SubtleCrypto extends StObject {
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/importKey) */
   /* standard dom */
   @JSName("importKey")
   def importKey_jwk(
@@ -461,6 +472,7 @@ trait SubtleCrypto extends StObject {
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/sign) */
   /* standard dom */
   def sign(algorithm: AlgorithmIdentifier, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def sign(algorithm: EcdsaParams, key: CryptoKey, data: BufferSource): js.Promise[js.typedarray.ArrayBuffer] = js.native
@@ -754,6 +766,7 @@ trait SubtleCrypto extends StObject {
     extractable: scala.Boolean,
     keyUsages: js.Iterable[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/unwrapKey) */
   /* standard dom */
   def unwrapKey(
     format: KeyFormat,
@@ -764,6 +777,7 @@ trait SubtleCrypto extends StObject {
     extractable: scala.Boolean,
     keyUsages: js.Array[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/unwrapKey) */
   /* standard dom.iterable */
   def unwrapKey(
     format: KeyFormat,
@@ -919,6 +933,7 @@ trait SubtleCrypto extends StObject {
     keyUsages: js.Iterable[KeyUsage]
   ): js.Promise[CryptoKey] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/verify) */
   /* standard dom */
   def verify(algorithm: AlgorithmIdentifier, key: CryptoKey, signature: BufferSource, data: BufferSource): js.Promise[scala.Boolean] = js.native
   def verify(algorithm: EcdsaParams, key: CryptoKey, signature: BufferSource, data: BufferSource): js.Promise[scala.Boolean] = js.native
@@ -927,6 +942,7 @@ trait SubtleCrypto extends StObject {
   def wrapKey(format: KeyFormat, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCbcParams): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def wrapKey(format: KeyFormat, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesCtrParams): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def wrapKey(format: KeyFormat, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AesGcmParams): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/wrapKey) */
   /* standard dom */
   def wrapKey(format: KeyFormat, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: AlgorithmIdentifier): js.Promise[js.typedarray.ArrayBuffer] = js.native
   def wrapKey(format: KeyFormat, key: CryptoKey, wrappingKey: CryptoKey, wrapAlgorithm: RsaOaepParams): js.Promise[js.typedarray.ArrayBuffer] = js.native

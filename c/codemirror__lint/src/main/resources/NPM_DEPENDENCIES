@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@codemirror/lint" : "6.0.0"
+      "@codemirror/lint" : "6.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@codemirror/lint" : "6.0.0"
+      "@codemirror/lint" : "6.2.2"
     }
   ],
   "compile-devDependencies" : [

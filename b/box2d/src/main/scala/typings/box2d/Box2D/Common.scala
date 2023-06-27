@@ -268,7 +268,7 @@ object Common {
       
       /**
         * Advance the sweep forward, yielding a new initial state.
-        * @t The new initial time.
+        * @param t The new initial time.
         **/
       def Advance(t: Double): Unit
       

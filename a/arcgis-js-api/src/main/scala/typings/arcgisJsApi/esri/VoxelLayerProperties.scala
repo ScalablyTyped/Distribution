@@ -15,74 +15,74 @@ trait VoxelLayerProperties
      with APIKeyMixinProperties {
   
   /**
-    * The variable that is being displayed.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#currentVariableId)
-    */
+  		 * The variable that is being displayed.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#currentVariableId)
+  		 */
   var currentVariableId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Controls whether or not to globally disable all dynamic sections in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableDynamicSections)
-    */
+  		 * Controls whether or not to globally disable all dynamic sections in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableDynamicSections)
+  		 */
   var enableDynamicSections: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls whether or not to globally disable all isosurfaces in the current [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableIsosurfaces)
-    */
+  		 * Controls whether or not to globally disable all isosurfaces in the current [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableIsosurfaces)
+  		 */
   var enableIsosurfaces: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls whether or not to globally disable all slices in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableSlices)
-    */
+  		 * Controls whether or not to globally disable all slices in the current [VoxelVolumeStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVolumeStyle.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#enableSlices)
+  		 */
   var enableSlices: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#legendEnabled)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#legendEnabled)
+  		 */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display popups when voxels in the layer are clicked.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#popupEnabled)
-    */
+  		 * Indicates whether to display popups when voxels in the layer are clicked.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#popupEnabled)
+  		 */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Current rendering mode for the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
-    *
-    * @default "volume"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#renderMode)
-    */
+  		 * Current rendering mode for the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
+  		 *
+  		 * @default "volume"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#renderMode)
+  		 */
   var renderMode: js.UndefOr[volume | surfaces] = js.undefined
   
   /**
-    * The collection of variable styles, containing exactly one [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html) for each [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#variableStyles)
-    */
+  		 * The collection of variable styles, containing exactly one [VoxelVariableStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html) for each [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#variableStyles)
+  		 */
   var variableStyles: js.UndefOr[CollectionProperties[VoxelVariableStyleProperties]] = js.undefined
   
   /**
-    * The collection of volume styles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#volumeStyles)
-    */
+  		 * The collection of volume styles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#volumeStyles)
+  		 */
   var volumeStyles: js.UndefOr[CollectionProperties[voxelVoxelVolumeStyleProperties]] = js.undefined
 }
 object VoxelLayerProperties {

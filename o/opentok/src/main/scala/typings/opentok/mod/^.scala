@@ -10,4 +10,5 @@ open class ^ protected ()
   extends StObject
      with OpenTok {
   def this(apiKey: String, apiSecret: String) = this()
+  def this(apiKey: String, apiSecret: String, env: Env) = this()
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__lint
 
-Typings are for version 6.0.0
+Typings are for version 6.2.2
 
 ## Library description:
 Linting support for the CodeMirror code editor

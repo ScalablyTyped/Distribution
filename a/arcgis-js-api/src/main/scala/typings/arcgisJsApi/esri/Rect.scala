@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Rect extends StObject {
   
   /**
-    * Height of the rectangle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
-    */
+  		 * Height of the rectangle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
+  		 */
   var height: Double
   
   /**
-    * Width of the rectangle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
-    */
+  		 * Width of the rectangle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
+  		 */
   var width: Double
   
   /**
-    * The `x`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
-    */
+  		 * The `x`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
+  		 */
   var x: Double
   
   /**
-    * The `y`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
-    */
+  		 * The `y`-coordinate of the upper-left corner of the rectangle, relative to the anchor of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#Rect)
+  		 */
   var y: Double
 }
 object Rect {

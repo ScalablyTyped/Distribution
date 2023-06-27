@@ -37,9 +37,9 @@ object mod {
   
   @JSImport("react-toastr", "ToastMessageAnimated")
   @js.native
-  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.reactToastr.reactToastrStrings.a, typings.reactToastr.reactToastrStrings.abbr, typings.reactToastr.reactToastrStrings.address */ Any = js.native
+  val ToastMessageAnimated: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactToastr.reactToastrStrings.a, typings.reactToastr.reactToastrStrings.abbr, typings.reactToastr.reactToastrStrings.address */ Any = js.native
   
   @JSImport("react-toastr", "ToastMessagejQuery")
   @js.native
-  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.reactToastr.reactToastrStrings.a, typings.reactToastr.reactToastrStrings.abbr, typings.reactToastr.reactToastrStrings.address */ Any = js.native
+  val ToastMessagejQuery: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactToastr.reactToastrStrings.a, typings.reactToastr.reactToastrStrings.abbr, typings.reactToastr.reactToastrStrings.address */ Any = js.native
 }

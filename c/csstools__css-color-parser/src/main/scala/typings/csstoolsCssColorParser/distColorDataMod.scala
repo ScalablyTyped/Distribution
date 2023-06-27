@@ -3,7 +3,9 @@ package typings.csstoolsCssColorParser
 import typings.csstoolsColorHelpers.distTypesColorMod.Color
 import typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation
 import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ComponentValue
+import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenDimension
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenNumber
+import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenPercentage
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -110,8 +112,6 @@ object distColorDataMod {
     /* "relative-color-syntax" */ val RelativeColorSyntax: typings.csstoolsCssColorParser.distColorDataMod.SyntaxFlag.RelativeColorSyntax & String = js.native
   }
   
-  inline def colorDataChannelsToCalcGlobals(x: ColorData): Map[String, TokenNumber] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDataChannelsToCalcGlobals")(x.asInstanceOf[js.Any]).asInstanceOf[Map[String, TokenNumber]]
-  
   inline def colorDataFitsRGBGamut(x: ColorData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDataFitsRGB_Gamut")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def colorDataTo(colorData: ColorData, toNotation: ColorNotation): ColorData = (^.asInstanceOf[js.Dynamic].applyDynamic("colorDataTo")(colorData.asInstanceOf[js.Any], toNotation.asInstanceOf[js.Any])).asInstanceOf[ColorData]
@@ -121,6 +121,10 @@ object distColorDataMod {
   inline def convertPowerlessComponentsToMissingComponents(a: Color, colorNotation: ColorNotation): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPowerlessComponentsToMissingComponents")(a.asInstanceOf[js.Any], colorNotation.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   inline def fillInMissingComponents(a: Color, b: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fillInMissingComponents")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Color]
+  
+  inline def noneToZeroInRelativeColorDataChannels(x: Map[String, TokenNumber | TokenPercentage | TokenDimension]): Map[String, TokenNumber | TokenPercentage | TokenDimension] = ^.asInstanceOf[js.Dynamic].applyDynamic("noneToZeroInRelativeColorDataChannels")(x.asInstanceOf[js.Any]).asInstanceOf[Map[String, TokenNumber | TokenPercentage | TokenDimension]]
+  
+  inline def normalizeRelativeColorDataChannels(x: ColorData): Map[String, TokenNumber | TokenPercentage | TokenDimension] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRelativeColorDataChannels")(x.asInstanceOf[js.Any]).asInstanceOf[Map[String, TokenNumber | TokenPercentage | TokenDimension]]
   
   trait ColorData extends StObject {
     

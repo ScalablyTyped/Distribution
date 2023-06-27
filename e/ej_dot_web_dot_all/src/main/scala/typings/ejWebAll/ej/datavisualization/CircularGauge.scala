@@ -2043,17 +2043,17 @@ object CircularGauge {
     var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
-      * @Default {CircularGauge}
+      * @default {CircularGauge}
       */
     var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
-      * @Default {client}
+      * @default {client}
       */
     var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
-      * @Default {png}
+      * @default {png}
       */
     var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
@@ -2088,22 +2088,22 @@ object CircularGauge {
   trait Frame extends StObject {
     
     /** Specify the URL of the frame background image for circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the frameType of circular gauge. See
-      * @Default {FullCircle}
+      * @default {FullCircle}
       */
     var frameType: js.UndefOr[FrameType | String] = js.undefined
     
     /** Specifies the end angle for the half circular frame.
-      * @Default {360}
+      * @default {360}
       */
     var halfCircleFrameEndAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start angle for the half circular frame.
-      * @Default {180}
+      * @default {180}
       */
     var halfCircleFrameStartAngle: js.UndefOr[Double] = js.undefined
   }
@@ -2138,7 +2138,7 @@ object CircularGauge {
   trait Legend extends StObject {
     
     /** Specifies the alignment of the legend.
-      * @Default {Center. See Alignment}
+      * @default {Center. See Alignment}
       */
     var alignment: js.UndefOr[LegendAlignment | String] = js.undefined
     
@@ -2147,7 +2147,7 @@ object CircularGauge {
     var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Fill color for the legend items. By using this property, it displays all legend item shapes in same color.Legend items representing invisible ranges is displayed in gray color.
-      * @Default {null}
+      * @default {null}
       */
     var fill: js.UndefOr[String] = js.undefined
     
@@ -2156,7 +2156,7 @@ object CircularGauge {
     var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
-      * @Default {20}
+      * @default {20}
       */
     var itemPadding: js.UndefOr[Double] = js.undefined
     
@@ -2165,17 +2165,17 @@ object CircularGauge {
     var itemStyle: js.UndefOr[LegendItemStyle] = js.undefined
     
     /** Opacity of the legend.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the circular gauge.
-      * @Default {Bottom. See Position}
+      * @default {Bottom. See Position}
       */
     var position: js.UndefOr[LegendPosition | String] = js.undefined
     
     /** Shape of the legend items.
-      * @Default {Circle. See Shape}
+      * @default {Circle. See Shape}
       */
     var shape: js.UndefOr[LegendShape | String] = js.undefined
     
@@ -2184,12 +2184,12 @@ object CircularGauge {
     var size: js.UndefOr[LegendSize] = js.undefined
     
     /** Toggles the visibility of the ranges.
-      * @Default {true}
+      * @default {true}
       */
     var toggleVisibility: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the legend.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -2256,12 +2256,12 @@ object CircularGauge {
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2288,27 +2288,27 @@ object CircularGauge {
   trait LegendFont extends StObject {
     
     /** Font color of the text for legend items.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Font family for legend item text.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Font weight for legend item text.
-      * @Default {Regular}
+      * @default {Regular}
       */
     var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Font size for legend item text.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -2443,12 +2443,12 @@ object CircularGauge {
     var border: js.UndefOr[LegendItemStyleBorder] = js.undefined
     
     /** Specifies the height of the  legend item shapes.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the  legend item shapes.
-      * @Default {10}
+      * @default {10}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2479,12 +2479,12 @@ object CircularGauge {
   trait LegendItemStyleBorder extends StObject {
     
     /** Border color of the legend items.
-      * @Default {transparent}
+      * @default {transparent}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend items.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2511,12 +2511,12 @@ object CircularGauge {
   trait LegendSize extends StObject {
     
     /** Specify the height of the legend. Height can be specified in pixel.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specify the width of the legend. Width can be specified in pixel.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
   }
@@ -2605,17 +2605,17 @@ object CircularGauge {
   trait Model extends StObject {
     
     /** Specifies animationSpeed of circular gauge
-      * @Default {500}
+      * @default {500}
       */
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Specifies the background color of circular gauge.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromCorner value of circular gauge
-      * @Default {center}
+      * @default {center}
       */
     var distanceFromCorner: js.UndefOr[Double] = js.undefined
     
@@ -2652,17 +2652,17 @@ object CircularGauge {
     var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.undefined
     
     /** Specify animate value of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the  date object to  string, using locale settings.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether circular gauge has to be responsive while resizing.
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
@@ -2671,32 +2671,32 @@ object CircularGauge {
     var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specify the frame of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specify gaugePosition value of circular gauge See GaugePosition
-      * @Default {center}
+      * @default {center}
       */
     var gaugePosition: js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition | String] = js.undefined
     
     /** Specifies the height of circular gauge.
-      * @Default {360}
+      * @default {360}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the interiorGradient of circular gauge.
-      * @Default {null}
+      * @default {null}
       */
     var interiorGradient: js.UndefOr[Any] = js.undefined
     
     /** Specify isRadialGradient value of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var isRadialGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specify isResponsive value of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -2718,17 +2718,17 @@ object CircularGauge {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which circular gauge should be localized.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum value of circular gauge.
-      * @Default {100}
+      * @default {100}
       */
     var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum value of circular gauge.
-      * @Default {0}
+      * @default {0}
       */
     var minimum: js.UndefOr[Double] = js.undefined
     
@@ -2745,12 +2745,12 @@ object CircularGauge {
     var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.undefined
     
     /** Specify outerCustomLabelPosition value of circular gauge See
-      * @Default {bottom}
+      * @default {bottom}
       */
     var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.undefined
     
     /** Specifies the radius of circular gauge.
-      * @Default {180}
+      * @default {180}
       */
     var radius: js.UndefOr[Double] = js.undefined
     
@@ -2759,12 +2759,12 @@ object CircularGauge {
     var rangeMouseMove: js.UndefOr[js.Function1[/* e */ RangeMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Specify range Z-order placement of circular gauge.
-      * @Default {Rear}
+      * @default {Rear}
       */
     var rangeZOrder: js.UndefOr[RangeZOrderPlacement | String] = js.undefined
     
     /** Specify readonly value of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -2777,27 +2777,27 @@ object CircularGauge {
     var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specify the pointers, ticks, labels, indicators, ranges of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var scales: js.UndefOr[js.Array[Scale]] = js.undefined
     
     /** Specify the theme of circular gauge.
-      * @Default {flatlight}
+      * @default {flatlight}
       */
     var theme: js.UndefOr[String] = js.undefined
     
     /** Specify tooltip option of circular gauge
-      * @Default {object}
+      * @default {object}
       */
     var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the value of circular gauge.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of circular gauge.
-      * @Default {360}
+      * @default {360}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3499,137 +3499,137 @@ object CircularGauge {
   trait Scale extends StObject {
     
     /** Specify backgroundColor for the scale of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify border for scales of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var border: js.UndefOr[ScalesBorder] = js.undefined
     
     /** Specify the custom labels for the scales.
-      * @Default {Array}
+      * @default {Array}
       */
     var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.undefined
     
     /** Specify scale direction of circular gauge. See
-      * @Default {Clockwise}
+      * @default {Clockwise}
       */
     var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.undefined
     
     /** Specify representing state of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.undefined
     
     /** Specify the text values displayed in a meaningful manner alongside the ticks of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var labels: js.UndefOr[js.Array[ScalesLabel]] = js.undefined
     
     /** Specify majorIntervalValue of circular gauge
-      * @Default {10}
+      * @default {10}
       */
     var majorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specify maximum scale value of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specify minimum scale value of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var minimum: js.UndefOr[Double] = js.undefined
     
     /** Specify minorIntervalValue of circular gauge
-      * @Default {2}
+      * @default {2}
       */
     var minorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specify opacity value of circular gauge
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer cap of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var pointerCap: js.UndefOr[ScalesPointerCap] = js.undefined
     
     /** Specify pointers value of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var pointers: js.UndefOr[js.Array[ScalesPointer]] = js.undefined
     
     /** Specify scale radius of circular gauge
-      * @Default {170}
+      * @default {170}
       */
     var radius: js.UndefOr[Double] = js.undefined
     
     /** Specify ranges value of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var ranges: js.UndefOr[js.Array[ScalesRange]] = js.undefined
     
     /** Specify shadowOffset value of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var shadowOffset: js.UndefOr[Double] = js.undefined
     
     /** Specify showIndicators of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showIndicators: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showLabels of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showPointers of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var showPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showRanges of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showRanges: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showScaleBar of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showScaleBar: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showTicks of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var showTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specify scaleBar size of circular gauge
-      * @Default {6}
+      * @default {6}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Specify startAngle of circular gauge
-      * @Default {115}
+      * @default {115}
       */
     var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Specify subGauge of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var subGauges: js.UndefOr[js.Array[ScalesSubGauge]] = js.undefined
     
     /** Specify sweepAngle of circular gauge
-      * @Default {310}
+      * @default {310}
       */
     var sweepAngle: js.UndefOr[Double] = js.undefined
     
     /** Specify ticks of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var ticks: js.UndefOr[js.Array[ScalesTick]] = js.undefined
   }
@@ -3770,12 +3770,12 @@ object CircularGauge {
   trait ScalesBorder extends StObject {
     
     /** Specify border color for scales of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width of circular gauge
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -3806,22 +3806,22 @@ object CircularGauge {
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify font for custom labels
-      * @Default {Object}
+      * @default {Object}
       */
     var font: js.UndefOr[ScalesCustomLabelsFont] = js.undefined
     
     /** Specify position of custom labels
-      * @Default {Object}
+      * @default {Object}
       */
     var position: js.UndefOr[ScalesCustomLabelsPosition] = js.undefined
     
     /** Specifies the position of the  custom labels. See
-      * @Default {inner}
+      * @default {inner}
       */
     var positionType: js.UndefOr[CustomLabelPositionType | String] = js.undefined
     
     /** Specify angle for the rotation of the custom labels in degrees.
-      * @Default {0}
+      * @default {0}
       */
     var textAngle: js.UndefOr[Double] = js.undefined
     
@@ -3868,17 +3868,17 @@ object CircularGauge {
   trait ScalesCustomLabelsFont extends StObject {
     
     /** Specify font fontFamily for custom labels.
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify font Style for custom labels.
-      * @Default {Bold}
+      * @default {Bold}
       */
     var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify font size for custom labels.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -3909,12 +3909,12 @@ object CircularGauge {
   trait ScalesCustomLabelsPosition extends StObject {
     
     /** Specify x-axis position of label
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis  position of labels.
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -3941,32 +3941,32 @@ object CircularGauge {
   trait ScalesIndicator extends StObject {
     
     /** Specify indicator height of circular gauge
-      * @Default {15}
+      * @default {15}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specify imageUrl of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Specify position of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var position: js.UndefOr[ScalesIndicatorsPosition] = js.undefined
     
     /** Specify the various states of circular gauge
-      * @Default {Array}
+      * @default {Array}
       */
     var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.undefined
     
     /** Specify indicator style of circular gauge. See
-      * @Default {Circle}
+      * @default {Circle}
       */
     var `type`: js.UndefOr[IndicatorTypes | String] = js.undefined
     
     /** Specify indicator width of circular gauge
-      * @Default {15}
+      * @default {15}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4011,12 +4011,12 @@ object CircularGauge {
   trait ScalesIndicatorsPosition extends StObject {
     
     /** Specify x-axis of position of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis of position of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -4043,27 +4043,27 @@ object CircularGauge {
   trait ScalesIndicatorsStateRange extends StObject {
     
     /** Specify backgroundColor for indicator of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify borderColor for indicator of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specify end value for each specified state of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specify value of the font as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var font: js.UndefOr[Any] = js.undefined
     
     /** Specify start value for each specified state of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var startValue: js.UndefOr[Double] = js.undefined
     
@@ -4072,7 +4072,7 @@ object CircularGauge {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specify value of the textColor as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var textColor: js.UndefOr[String] = js.undefined
   }
@@ -4119,47 +4119,47 @@ object CircularGauge {
   trait ScalesLabel extends StObject {
     
     /** Specify the angle for the labels of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify labels autoAngle value of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var autoAngle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify label color of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromScale value for labels of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify font for labels of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var font: js.UndefOr[ScalesLabelsFont] = js.undefined
     
     /** Specify includeFirstValue of circular gauge
-      * @Default {true}
+      * @default {true}
       */
     var includeFirstValue: js.UndefOr[Boolean] = js.undefined
     
     /** Specify opacity value for labels of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify label placement of circular gauge. See
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify label Style of circular gauge. See
-      * @Default {Major}
+      * @default {Major}
       */
     var `type`: js.UndefOr[LabelType | String] = js.undefined
     
@@ -4168,7 +4168,7 @@ object CircularGauge {
     var unitText: js.UndefOr[String] = js.undefined
     
     /** Specify unitTextPosition of circular gauge. See UnitTextPosition
-      * @Default {Back}
+      * @default {Back}
       */
     var unitTextPosition: js.UndefOr[UnitTextPlacement | String] = js.undefined
   }
@@ -4231,17 +4231,17 @@ object CircularGauge {
   trait ScalesLabelsFont extends StObject {
     
     /** Specify font fontFamily for labels of circular gauge
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify font Style for labels of circular gauge
-      * @Default {Bold}
+      * @default {Bold}
       */
     var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify font size for labels of circular gauge
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -4272,87 +4272,87 @@ object CircularGauge {
   trait ScalesPointer extends StObject {
     
     /** Specify backNeedleLength of circular gauge
-      * @Default {10}
+      * @default {10}
       */
     var backNeedleLength: js.UndefOr[Double] = js.undefined
     
     /** Specify backgroundColor for the pointer of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify the border for pointers of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var border: js.UndefOr[ScalesPointersBorder] = js.undefined
     
     /** Specify distanceFromScale value for pointers of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer gradients of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specify pointer image of circular gauge.It is applicable for both marker as well as needle type pointers.
-      * @Default {NULL}
+      * @default {NULL}
       */
     var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Specify pointer length of circular gauge
-      * @Default {150}
+      * @default {150}
       */
     var length: js.UndefOr[Double] = js.undefined
     
     /** Specify marker Style value of circular gauge. See
-      * @Default {Rectangle}
+      * @default {Rectangle}
       */
     var markerType: js.UndefOr[MarkerType | String] = js.undefined
     
     /** Specify needle Style value of circular gauge. See
-      * @Default {Triangle}
+      * @default {Triangle}
       */
     var needleType: js.UndefOr[NeedleType | String] = js.undefined
     
     /** Specify opacity value for pointer of circular gauge
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer Placement value of circular gauge. See PointerPlacement
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify pointer value text of circular gauge.
-      * @Default {Object}
+      * @default {Object}
       */
     var pointerValueText: js.UndefOr[ScalesPointersPointerValueText] = js.undefined
     
     /** Specify radius value for pointer of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var radius: js.UndefOr[Double] = js.undefined
     
     /** Specify showBackNeedle value of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showBackNeedle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify pointer type value of circular gauge. See
-      * @Default {Needle}
+      * @default {Needle}
       */
     var `type`: js.UndefOr[PointerType | String] = js.undefined
     
     /** Specify value of the pointer of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer width of circular gauge
-      * @Default {7}
+      * @default {7}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4439,27 +4439,27 @@ object CircularGauge {
   trait ScalesPointerCap extends StObject {
     
     /** Specify cap backgroundColor of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify cap borderColor of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specify pointerCap borderWidth value of circular gauge
-      * @Default {3}
+      * @default {3}
       */
     var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Specify cap interiorGradient value of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var interiorGradient: js.UndefOr[Any] = js.undefined
     
     /** Specify pointerCap Radius value of circular gauge
-      * @Default {7}
+      * @default {7}
       */
     var radius: js.UndefOr[Double] = js.undefined
   }
@@ -4498,12 +4498,12 @@ object CircularGauge {
   trait ScalesPointersBorder extends StObject {
     
     /** Specify border color for pointer of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width for pointers of circular gauge
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4530,37 +4530,37 @@ object CircularGauge {
   trait ScalesPointersPointerValueText extends StObject {
     
     /** Specify pointer text angle of circular gauge.
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer text auto angle of circular gauge.
-      * @Default {false}
+      * @default {false}
       */
     var autoAngle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify pointer value text color of circular gauge.
-      * @Default {#8c8c8c}
+      * @default {#8c8c8c}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text distance from pointer of circular gauge.
-      * @Default {20}
+      * @default {20}
       */
     var distance: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer value text font option of circular gauge.
-      * @Default {object}
+      * @default {object}
       */
     var font: js.UndefOr[ScalesPointersPointerValueTextFont] = js.undefined
     
     /** Specify pointer value text opacity of circular gauge.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** enable pointer value text visibility of circular gauge.
-      * @Default {false}
+      * @default {false}
       */
     var showValue: js.UndefOr[Boolean] = js.undefined
   }
@@ -4607,17 +4607,17 @@ object CircularGauge {
   trait ScalesPointersPointerValueTextFont extends StObject {
     
     /** Specify pointer value text font family of circular gauge.
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text font style of circular gauge.
-      * @Default {Bold}
+      * @default {Bold}
       */
     var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text size of circular gauge.
-      * @Default {11px}
+      * @default {11px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -4648,62 +4648,62 @@ object CircularGauge {
   trait ScalesRange extends StObject {
     
     /** Specify backgroundColor for the ranges of circular gauge
-      * @Default {#32b3c6}
+      * @default {#32b3c6}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify border for ranges of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var border: js.UndefOr[ScalesRangesBorder] = js.undefined
     
     /** Specify distanceFromScale value for ranges of circular gauge
-      * @Default {25}
+      * @default {25}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify endValue for ranges of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specify endWidth for ranges of circular gauge
-      * @Default {10}
+      * @default {10}
       */
     var endWidth: js.UndefOr[Double] = js.undefined
     
     /** Specify range gradients of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var gradients: js.UndefOr[Any] = js.undefined
     
     /** Specify text for the ranges of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var legendText: js.UndefOr[String] = js.undefined
     
     /** Specify opacity value for ranges of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify placement of circular gauge. See RangePlacement
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify size of the range value of circular gauge
-      * @Default {5}
+      * @default {5}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Specify startValue for ranges of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specify startWidth of circular gauge
-      * @Default {[Array.number] scale.ranges.startWidth = 10}
+      * @default {[Array.number] scale.ranges.startWidth = 10}
       */
     var startWidth: js.UndefOr[Double] = js.undefined
   }
@@ -4770,12 +4770,12 @@ object CircularGauge {
   trait ScalesRangesBorder extends StObject {
     
     /** Specify border color for ranges of circular gauge
-      * @Default {#32b3c6}
+      * @default {#32b3c6}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width for ranges of circular gauge
-      * @Default {1.5}
+      * @default {1.5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4802,17 +4802,17 @@ object CircularGauge {
   trait ScalesSubGauge extends StObject {
     
     /** Specify subGauge Height of circular gauge
-      * @Default {150}
+      * @default {150}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specify position for sub-gauge of circular gauge
-      * @Default {Object}
+      * @default {Object}
       */
     var position: js.UndefOr[ScalesSubGaugesPosition] = js.undefined
     
     /** Specify subGauge Width of circular gauge
-      * @Default {150}
+      * @default {150}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4843,12 +4843,12 @@ object CircularGauge {
   trait ScalesSubGaugesPosition extends StObject {
     
     /** Specify x-axis position for sub-gauge of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis position for sub-gauge of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -4875,37 +4875,37 @@ object CircularGauge {
   trait ScalesTick extends StObject {
     
     /** Specify the angle for the ticks of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify tick color of circular gauge
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromScale value for ticks of circular gauge
-      * @Default {0}
+      * @default {0}
       */
     var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify tick height of circular gauge
-      * @Default {16}
+      * @default {16}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specify tick placement of circular gauge. See TickPlacement
-      * @Default {Near}
+      * @default {Near}
       */
     var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify tick Style of circular gauge. See TickType
-      * @Default {Major}
+      * @default {Major}
       */
     var `type`: js.UndefOr[LabelType | String] = js.undefined
     
     /** Specify tick width of circular gauge
-      * @Default {3}
+      * @default {3}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -4952,17 +4952,17 @@ object CircularGauge {
   trait Tooltip extends StObject {
     
     /** enable showCustomLabelTooltip of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showCustomLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** enable showLabelTooltip of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var showLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify tooltip templateID of circular gauge
-      * @Default {false}
+      * @default {false}
       */
     var templateID: js.UndefOr[String] = js.undefined
   }

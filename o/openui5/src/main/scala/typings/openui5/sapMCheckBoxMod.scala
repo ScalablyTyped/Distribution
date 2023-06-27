@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Selected
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -216,13 +215,13 @@ object sapMCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.CheckBox` itself
       */
@@ -247,7 +246,7 @@ object sapMCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -258,7 +257,7 @@ object sapMCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.CheckBox` itself
       */
@@ -276,13 +275,13 @@ object sapMCheckBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -290,7 +289,7 @@ object sapMCheckBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -300,7 +299,7 @@ object sapMCheckBoxMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: Selected): this.type = js.native
+    mParameters: CheckBox$SelectEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getActiveHandling activeHandling}.
@@ -315,19 +314,17 @@ object sapMCheckBoxMod {
     def getActiveHandling(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getDisplayOnly displayOnly}.
       *
@@ -345,7 +342,7 @@ object sapMCheckBoxMod {
     def getDisplayOnly(): Boolean = js.native
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -381,7 +378,7 @@ object sapMCheckBoxMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getPartiallySelected partiallySelected}.
       *
@@ -416,8 +413,8 @@ object sapMCheckBoxMod {
     def getSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the CheckBox`s tab index.
       *
@@ -459,7 +456,7 @@ object sapMCheckBoxMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getUseEntireWidth useEntireWidth}.
       *
@@ -474,7 +471,7 @@ object sapMCheckBoxMod {
     def getUseEntireWidth(): Boolean = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Gets current value of property {@link #getValueState valueState}.
       *
@@ -502,7 +499,7 @@ object sapMCheckBoxMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getWrapping wrapping}.
       *
@@ -589,7 +586,7 @@ object sapMCheckBoxMod {
     bActiveHandling: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getDisplayOnly displayOnly}.
       *
@@ -613,7 +610,7 @@ object sapMCheckBoxMod {
     bDisplayOnly: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -667,7 +664,7 @@ object sapMCheckBoxMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getPartiallySelected partiallySelected}.
       *
@@ -714,8 +711,8 @@ object sapMCheckBoxMod {
     bSelected: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the tab index of the control
       *
@@ -790,7 +787,7 @@ object sapMCheckBoxMod {
     sTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getUseEntireWidth useEntireWidth}.
       *
@@ -811,7 +808,7 @@ object sapMCheckBoxMod {
     bUseEntireWidth: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Sets a new value for property {@link #getValueState valueState}.
       *
@@ -857,7 +854,7 @@ object sapMCheckBoxMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getWrapping wrapping}.
       *
@@ -877,6 +874,33 @@ object sapMCheckBoxMod {
       */
     bWrapping: Boolean): this.type = js.native
   }
+  
+  trait CheckBox$SelectEventParameters extends StObject {
+    
+    /**
+      * Checks whether the CheckBox is marked or not .
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+  }
+  object CheckBox$SelectEventParameters {
+    
+    inline def apply(): CheckBox$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CheckBox$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBox$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    }
+  }
+  
+  type CheckBoxSelectEvent = typings.openui5.sapUiBaseEventMod.default[CheckBox$SelectEventParameters]
+  
+  type CheckBoxSelectEventParameters = CheckBox$SelectEventParameters
   
   trait CheckBoxSettings
     extends StObject
@@ -901,7 +925,7 @@ object sapMCheckBoxMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines whether the `CheckBox` is in display only state.
       *
@@ -915,7 +939,7 @@ object sapMCheckBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.25
+      * @since 1.25
       *
       * Specifies whether the user shall be allowed to edit the state of the checkbox
       */
@@ -939,7 +963,7 @@ object sapMCheckBoxMod {
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Determines whether the `CheckBox` is displayed as partially selected.
       *
@@ -957,7 +981,12 @@ object sapMCheckBoxMod {
     /**
       * Event is triggered when the control status is changed by the user by selecting or deselecting the checkbox.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CheckBox$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines whether the `CheckBox` is selected (checked).
@@ -991,7 +1020,7 @@ object sapMCheckBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Indicates if the given width will be applied to the control as a whole or to its label only.
       *
@@ -1002,7 +1031,7 @@ object sapMCheckBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38
+      * @since 1.38
       *
       * Accepts the core enumeration ValueState.type that supports 'None', 'Error', 'Warning', 'Success' and
       * 'Information'.
@@ -1022,7 +1051,7 @@ object sapMCheckBoxMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Determines whether the label's text is wrapped.
       *
@@ -1078,7 +1107,9 @@ object sapMCheckBoxMod {
       
       inline def setPartiallySelectedUndefined: Self = StObject.set(x, "partiallySelected", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CheckBox$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

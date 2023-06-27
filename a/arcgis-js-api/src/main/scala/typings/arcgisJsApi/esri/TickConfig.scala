@@ -16,38 +16,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TickConfig extends StObject {
   
   /**
-    * Callback for formatting tick labels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
-    */
+  		 * Callback for formatting tick labels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
+  		 */
   var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
   
   /**
-    * Indicates whether to render labels for the ticks.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
-    */
+  		 * Indicates whether to render labels for the ticks.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
+  		 */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The mode or method of positioning ticks along the slider track.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
-    */
+  		 * The mode or method of positioning ticks along the slider track.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
+  		 */
   var mode: count | percent | position
   
   /**
-    * Callback that fires for each tick.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
-    */
+  		 * Callback that fires for each tick.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
+  		 */
   var tickCreatedFunction: js.UndefOr[TickCreatedFunction] = js.undefined
   
   /**
-    * Indicates where ticks will be rendered below the track.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
-    */
+  		 * Indicates where ticks will be rendered below the track.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
+  		 */
   var values: Double | js.Array[Double]
 }
 object TickConfig {

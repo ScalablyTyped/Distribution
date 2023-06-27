@@ -11,10 +11,10 @@ object esriWidgetsFeatureTableGridSupportButtonMenuViewModelMod {
   @JSImport("esri/widgets/FeatureTable/Grid/support/ButtonMenuViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the module:esri/widgets/ButtonMenuItemConfig widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html)
-    */
+  		 * Provides the logic for the module:esri/widgets/ButtonMenuItemConfig widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ButtonMenuViewModel {

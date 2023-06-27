@@ -62,35 +62,46 @@ open class CSSImportRule ()
   /* CompleteClass */
   override val SUPPORTS_RULE: `12` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/cssText) */
   /* standard dom */
   /* CompleteClass */
   var cssText: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSImportRule/href) */
   /* standard dom */
   /* CompleteClass */
   override val href: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSImportRule/layerName) */
   /* standard dom */
   /* CompleteClass */
   override val layerName: java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSImportRule/media) */
   /* standard dom */
   /* CompleteClass */
   override val media: typings.std.MediaList = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule) */
   /* standard dom */
   /* CompleteClass */
   override val parentRule: typings.std.CSSRule | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet) */
   /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSImportRule/styleSheet) */
   /* standard dom */
   /* CompleteClass */
   override val styleSheet: typings.std.CSSStyleSheet = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/type)
+    */
   /* standard dom */
   /* CompleteClass */
   override val `type`: Double = js.native

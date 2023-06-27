@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__traverse
 
-Typings are for version 7.18
+Typings are for version 7.20
 
 
 

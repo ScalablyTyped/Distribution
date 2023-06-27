@@ -11,19 +11,19 @@ trait SceneViewConstraintsTilt
      with AnonymousAccessor {
   
   /**
-    * Specifies the maximum amount of tilt (in degrees) allowed in the view and may range from 0.5 to 179.5 degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies the maximum amount of tilt (in degrees) allowed in the view and may range from 0.5 to 179.5 degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the mode of the constraint.
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies the mode of the constraint.
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var mode: js.UndefOr[auto | manual] = js.undefined
 }
 object SceneViewConstraintsTilt {

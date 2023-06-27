@@ -15,40 +15,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointBarrierProperties extends StObject {
   
   /**
-    * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#barrierType)
-    */
+  		 * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#barrierType)
+  		 */
   var barrierType: js.UndefOr[restriction | `added-cost`] = js.undefined
   
   /**
-    * The side of the vehicle the curb is on when arriving at the stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#curbApproach)
-    */
+  		 * The side of the vehicle the curb is on when arriving at the stop.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#curbApproach)
+  		 */
   var curbApproach: js.UndefOr[
     `either-side-of-vehicle` | `right-side-of-vehicle` | `left-side-of-vehicle` | `no-u-turn`
   ] = js.undefined
   
   /**
-    * Point barriers are applied to the edge elements during the analysis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fullEdge)
-    */
+  		 * Point barriers are applied to the edge elements during the analysis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#fullEdge)
+  		 */
   var fullEdge: js.UndefOr[permit | restrict] = js.undefined
   
   /**
-    * The point location of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#geometry)
-    */
+  		 * The point location of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#geometry)
+  		 */
   var geometry: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The name of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#name)
-    */
+  		 * The name of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PointBarrier.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
 }
 object PointBarrierProperties {

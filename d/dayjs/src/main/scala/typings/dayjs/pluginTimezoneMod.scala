@@ -38,6 +38,8 @@ object pluginTimezoneMod extends Shortcut {
     @js.native
     trait DayjsTimezone extends StObject {
       
+      def apply(): Dayjs = js.native
+      def apply(date: Unit, timezone: String): Dayjs = js.native
       def apply(date: ConfigType): Dayjs = js.native
       def apply(date: ConfigType, format: String, timezone: String): Dayjs = js.native
       def apply(date: ConfigType, timezone: String): Dayjs = js.native

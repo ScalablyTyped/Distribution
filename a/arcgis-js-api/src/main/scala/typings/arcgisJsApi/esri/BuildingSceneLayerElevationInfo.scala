@@ -14,26 +14,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingSceneLayerElevationInfo extends StObject {
   
   /**
-    * Defines how features are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
-    */
+  		 * Defines how features are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
+  		 */
   var mode: `absolute-height`
   
   /**
-    * An elevation offset, which is added to the vertical position of each feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
-    */
+  		 * An elevation offset, which is added to the vertical position of each feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The unit for `offset` values.
-    *
-    * @default meters
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The unit for `offset` values.
+  		 *
+  		 * @default meters
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 object BuildingSceneLayerElevationInfo {

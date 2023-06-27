@@ -220,6 +220,9 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var cullFace: Any = js.native
   
+  def debugLoseContext(): Unit = js.native
+  def debugLoseContext(sleep: Double): Unit = js.native
+  
   var defaultFramebuffer: Any = js.native
   
   var depthBiasEnabled: Any = js.native
@@ -262,6 +265,8 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   def draw(primitive: Base, numInstances: Double): Unit = js.native
   def draw(primitive: Base, numInstances: Double, keepBuffers: Boolean): Unit = js.native
   def draw(primitive: Base, numInstances: Unit, keepBuffers: Boolean): Unit = js.native
+  
+  var drawBuffers: Any = js.native
   
   /**
     * End a render pass.
@@ -424,8 +429,6 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def loseContext(): Unit = js.native
   
-  var maxColorAttachments: Any = js.native
-  
   var maxCombinedTextures: Any = js.native
   
   var maxDrawBuffers: Any = js.native
@@ -459,6 +462,20 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * @ignore
     */
   def readPixels(x: Double, y: Double, w: Double, h: Double, pixels: js.typedarray.ArrayBufferView): Unit = js.native
+  
+  /**
+    * Asynchronously reads a block of pixels from a specified rectangle of the current color framebuffer
+    * into an ArrayBufferView object.
+    *
+    * @param {number} x - The x-coordinate of the rectangle's lower-left corner.
+    * @param {number} y - The y-coordinate of the rectangle's lower-left corner.
+    * @param {number} w - The width of the rectangle, in pixels.
+    * @param {number} h - The height of the rectangle, in pixels.
+    * @param {ArrayBufferView} pixels - The ArrayBufferView object that holds the returned pixel
+    * data.
+    * @ignore
+    */
+  def readPixelsAsync(x: Double, y: Double, w: Double, h: Double, pixels: js.typedarray.ArrayBufferView): js.Promise[Unit] = js.native
   
   def resizeCanvas(width: Any, height: Any): Unit = js.native
   

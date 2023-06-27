@@ -109,7 +109,7 @@ object HeadlessExperimental {
     var optimizeForSpeed: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Compression quality from range [0..100] (jpeg only).
+      * Compression quality from range [0..100] (jpeg and webp only).
       */
     var quality: js.UndefOr[integer] = js.undefined
   }

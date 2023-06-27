@@ -12,7 +12,7 @@ trait DelegatedAdminRelationship
   var accessAssignments: js.UndefOr[NullableOption[js.Array[DelegatedAdminAccessAssignment]]] = js.undefined
   
   /**
-    * The access details containing the identifiers of the administrative roles that the partner admin is requesting in the
+    * The access details that contain the identifiers of the administrative roles that the partner admin is requesting in the
     * customer tenant.
     */
   var accessDetails: js.UndefOr[DelegatedAdminAccessDetails] = js.undefined

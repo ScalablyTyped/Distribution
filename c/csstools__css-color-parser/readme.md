@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__css-color-parser
 
-Typings are for version 1.1.2
+Typings are for version 1.2.1
 
 
 

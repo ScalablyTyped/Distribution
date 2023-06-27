@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait cimSymbolUtilsScaleCIMSymbolToOptions extends StObject {
   
   /**
-    * When `true`, this property will preserve the outline width of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#scaleCIMSymbolTo)
-    */
+  		 * When `true`, this property will preserve the outline width of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#scaleCIMSymbolTo)
+  		 */
   var preserveOutlineWidth: js.UndefOr[Boolean] = js.undefined
 }
 object cimSymbolUtilsScaleCIMSymbolToOptions {

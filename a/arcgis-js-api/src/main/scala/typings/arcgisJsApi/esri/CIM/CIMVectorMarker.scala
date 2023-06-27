@@ -10,41 +10,41 @@ trait CIMVectorMarker
      with CIMSymbolLayerType {
   
   /**
-    * A clipping path for the vector marker graphics.
-    */
+  			 * A clipping path for the vector marker graphics.
+  			 */
   var clippingPath: js.UndefOr[CIMClippingPath] = js.undefined
   
   /**
-    * The depth of the marker when drawn in 3D.
-    */
+  			 * The depth of the marker when drawn in 3D.
+  			 */
   var depth3D: js.UndefOr[Double] = js.undefined
   
   /**
-    * The outer boundary of the entire vector marker.
-    */
+  			 * The outer boundary of the entire vector marker.
+  			 */
   var frame: js.UndefOr[ExternalReferenceEnvelope] = js.undefined
   
   /**
-    * The vector graphics that define the shape of the marker.
-    */
+  			 * The vector graphics that define the shape of the marker.
+  			 */
   var markerGraphics: js.UndefOr[js.Array[CIMMarkerGraphic]] = js.undefined
   
   /**
-    * A value indicating whether the frame of the vector marker should be honored when drawing the marker.
-    */
+  			 * A value indicating whether the frame of the vector marker should be honored when drawing the marker.
+  			 */
   var respectFrame: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether the strokes and or fills of a marker are scaled proportionally when the symbol size is changed. When enabled, the strokes for the outline or fill of the polygon symbol used to draw the marker will be scaled proportionally with changes to the symbol size. If this property is not enabled, then the stroke will draw with the specified width regardless of the marker size.
-    */
+  			 * A value indicating whether the strokes and or fills of a marker are scaled proportionally when the symbol size is changed. When enabled, the strokes for the outline or fill of the polygon symbol used to draw the marker will be scaled proportionally with changes to the symbol size. If this property is not enabled, then the stroke will draw with the specified width regardless of the marker size.
+  			 */
   var scaleSymbolsProportionally: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
   var type_CIMVectorMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMVectorMarker
   
   /**
-    * A value indicating whether the marker stands upright as though locked in place. The marker can be viewed from all angles.
-    */
+  			 * A value indicating whether the marker stands upright as though locked in place. The marker can be viewed from all angles.
+  			 */
   var verticalOrientation3D: js.UndefOr[Boolean] = js.undefined
 }
 object CIMVectorMarker {

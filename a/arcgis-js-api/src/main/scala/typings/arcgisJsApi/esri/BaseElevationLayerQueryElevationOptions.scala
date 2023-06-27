@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseElevationLayerQueryElevationOptions extends StObject {
   
   /**
-    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
-    */
+  		 * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
+  		 */
   var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The value to use when there is no data available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
-    */
+  		 * The value to use when there is no data available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
+  		 */
   var noDataValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates whether to return additional sample information for each coordinate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
-    */
+  		 * Indicates whether to return additional sample information for each coordinate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
+  		 */
   var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
 }
 object BaseElevationLayerQueryElevationOptions {

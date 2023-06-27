@@ -13,10 +13,10 @@ trait SizeSliderConstructor
      with Instantiable1[/* properties */ SizeSliderProperties, SizeSlider] {
   
   /**
-    * A convenience function used to create a SizeSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult) of the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createContinuousRenderer) method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#fromRendererResult)
-    */
+  		 * A convenience function used to create a SizeSlider widget instance from the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult) of the [createContinuousRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#createContinuousRenderer) method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#fromRendererResult)
+  		 */
   def fromRendererResult(rendererResult: sizeContinuousRendererResult): SizeSlider = js.native
   def fromRendererResult(rendererResult: sizeContinuousRendererResult, histogramResult: HistogramResult): SizeSlider = js.native
 }

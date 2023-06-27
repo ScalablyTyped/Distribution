@@ -9,10 +9,10 @@ trait TvShowMediaMetadata extends StObject {
   
   var episode: Double
   
-  /** @deprecated. Use episode instead. */
+  /** @deprecated Use episode instead. */
   var episodeNumber: Double
   
-  /** @deprecated. Use title instead. */
+  /** @deprecated Use title instead. */
   var episodeTitle: String
   
   var images: js.Array[Image]
@@ -21,19 +21,19 @@ trait TvShowMediaMetadata extends StObject {
   
   var originalAirdate: String
   
-  /** @deprecated. Use originalAirdate instead. */
+  /** @deprecated Use originalAirdate instead. */
   var releaseYear: Double
   
   var season: Double
   
-  /** @deprecated. Use season instead. */
+  /** @deprecated Use season instead. */
   var seasonNumber: Double
   
   var seriesTitle: String
   
   var title: String
   
-  /** @deprecated. Use metadataType instead. */
+  /** @deprecated Use metadataType instead. */
   var `type`: MetadataType
 }
 object TvShowMediaMetadata {

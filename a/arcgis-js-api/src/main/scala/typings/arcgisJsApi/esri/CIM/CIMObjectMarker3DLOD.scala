@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMObjectMarker3DLOD extends StObject {
   
   /**
-    * The total number of triangles in the geometry of this level of detail.
-    */
+  			 * The total number of triangles in the geometry of this level of detail.
+  			 */
   var faceCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * The URI of the binary reference containing the "web resource" for this level of detail.
-    */
+  			 * The URI of the binary reference containing the "web resource" for this level of detail.
+  			 */
   var modelURI: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3DLOD

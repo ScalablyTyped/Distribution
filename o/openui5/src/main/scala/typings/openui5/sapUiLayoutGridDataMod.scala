@@ -21,8 +21,8 @@ object sapUiLayoutGridDataMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:43ae317cf39640a88bc8be979d2671df Grid}
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/43ae317cf39640a88bc8be979d2671df Grid}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
     */
   open class default () extends GridData {
     def this(/**

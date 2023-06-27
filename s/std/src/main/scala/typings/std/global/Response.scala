@@ -19,58 +19,72 @@ open class Response ()
   def this(body: Unit, init: ResponseInit) = this()
   def this(body: BodyInit, init: ResponseInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/arrayBuffer) */
   /* standard dom */
   /* CompleteClass */
   override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/blob) */
   /* standard dom */
   /* CompleteClass */
   override def blob(): js.Promise[typings.std.Blob] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/body) */
   /* standard dom */
   /* CompleteClass */
   override val body: typings.std.ReadableStream[js.typedarray.Uint8Array] | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/bodyUsed) */
   /* standard dom */
   /* CompleteClass */
   override val bodyUsed: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/formData) */
   /* standard dom */
   /* CompleteClass */
   override def formData(): js.Promise[typings.std.FormData] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/headers) */
   /* standard dom */
   /* CompleteClass */
   override val headers: typings.std.Headers = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/json) */
   /* standard dom */
   /* CompleteClass */
   override def json(): js.Promise[Any] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/ok) */
   /* standard dom */
   /* CompleteClass */
   override val ok: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/redirected) */
   /* standard dom */
   /* CompleteClass */
   override val redirected: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/status) */
   /* standard dom */
   /* CompleteClass */
   override val status: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/statusText) */
   /* standard dom */
   /* CompleteClass */
   override val statusText: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/text) */
   /* standard dom */
   /* CompleteClass */
   override def text(): js.Promise[java.lang.String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: ResponseType = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/url) */
   /* standard dom */
   /* CompleteClass */
   override val url: java.lang.String = js.native
@@ -81,9 +95,11 @@ object Response {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/error) */
   /* standard dom */
   inline def error(): typings.std.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.std.Response]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/redirect) */
   /* standard dom */
   inline def redirect(url: java.lang.String): typings.std.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.std.Response]
   inline def redirect(url: java.lang.String, status: Double): typings.std.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.std.Response]

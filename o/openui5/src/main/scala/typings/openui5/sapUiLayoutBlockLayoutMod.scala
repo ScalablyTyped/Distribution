@@ -145,7 +145,7 @@ object sapUiLayoutBlockLayoutMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets current value of property {@link #getBackground background}.
       *
@@ -165,7 +165,7 @@ object sapUiLayoutBlockLayoutMod {
     def getContent(): js.Array[typings.openui5.sapUiLayoutBlockLayoutRowMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getKeepFontSize keepFontSize}.
       *
@@ -238,7 +238,7 @@ object sapUiLayoutBlockLayoutMod {
     ): typings.openui5.sapUiLayoutBlockLayoutRowMod.default | Null = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets a new value for property {@link #getBackground background}.
       *
@@ -263,7 +263,7 @@ object sapUiLayoutBlockLayoutMod {
     sBackground: BlockBackgroundType): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getKeepFontSize keepFontSize}.
       *
@@ -287,7 +287,7 @@ object sapUiLayoutBlockLayoutMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Determines the background used for the Layout
       */
@@ -303,7 +303,7 @@ object sapUiLayoutBlockLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Keeps the font-size of the contents as is, independent from the screen size.
       */

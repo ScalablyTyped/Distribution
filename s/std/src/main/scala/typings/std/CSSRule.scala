@@ -14,7 +14,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A single CSS rule. There are several types of rules, listed in the Type constants section below. */
+/**
+  * A single CSS rule. There are several types of rules, listed in the Type constants section below.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule)
+  */
 trait CSSRule extends StObject {
   
   /* standard dom */
@@ -47,16 +51,23 @@ trait CSSRule extends StObject {
   /* standard dom */
   val SUPPORTS_RULE: `12`
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/cssText) */
   /* standard dom */
   var cssText: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule) */
   /* standard dom */
   val parentRule: CSSRule | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet) */
   /* standard dom */
   val parentStyleSheet: CSSStyleSheet | Null
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/type)
+    */
   /* standard dom */
   val `type`: Double
 }

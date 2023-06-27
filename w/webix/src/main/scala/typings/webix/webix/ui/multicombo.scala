@@ -95,8 +95,8 @@ trait multicombo
   
   def getText(): String = js.native
   
-  def getValue(): String | js.Array[Any] = js.native
-  def getValue(config: obj): String | js.Array[Any] = js.native
+  def getValue(): Any = js.native
+  def getValue(config: obj): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   

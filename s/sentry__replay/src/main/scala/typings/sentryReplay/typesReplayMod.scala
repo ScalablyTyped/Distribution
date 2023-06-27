@@ -11,7 +11,7 @@ object typesReplayMod {
   @js.native
   open class ReplayContainer protected ()
     extends StObject
-       with typings.sentryReplay.typesTypesMod.ReplayContainer {
+       with typings.sentryReplay.typesTypesReplayMod.ReplayContainer {
     def this(param0: Options) = this()
     
     /**
@@ -29,11 +29,6 @@ object typesReplayMod {
       * Clear _context
       */
     /* private */ var _clearContext: Any = js.native
-    
-    /**
-      * Only flush if `this.recordingMode === 'session'`
-      */
-    /* private */ var _conditionalFlush: Any = js.native
     
     /* private */ var _context: Any = js.native
     
@@ -160,6 +155,8 @@ object typesReplayMod {
       * Function to stop recording
       */
     /* private */ var _stopRecording: Any = js.native
+    
+    /* private */ var _throttledAddEvent: Any = js.native
     
     /**
       * Trigger rrweb to take a full snapshot which will cause this plugin to

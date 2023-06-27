@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.active_
 import typings.microsoftGraph.microsoftGraphStrings.failed_
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.none_
   - typings.microsoftGraph.microsoftGraphStrings.pending
   - typings.microsoftGraph.microsoftGraphStrings.canceled
-  - typings.microsoftGraph.microsoftGraphStrings.active
+  - typings.microsoftGraph.microsoftGraphStrings.active_
   - typings.microsoftGraph.microsoftGraphStrings.done
   - typings.microsoftGraph.microsoftGraphStrings.failed_
   - typings.microsoftGraph.microsoftGraphStrings.notSupported
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActionState extends StObject
 object ActionState {
   
-  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: active_ = "active".asInstanceOf[active_]
   
   inline def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = "canceled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.canceled]
   

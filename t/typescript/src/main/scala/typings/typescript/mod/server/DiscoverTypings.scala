@@ -4,7 +4,6 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Path
 import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
-import typings.typescript.mod.WatchOptions
 import typings.typescript.typescriptStrings.discover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,8 +26,6 @@ trait DiscoverTypings
   val typeAcquisition: TypeAcquisition
   
   val unresolvedImports: SortedReadonlyArray[String]
-  
-  val watchOptions: js.UndefOr[WatchOptions] = js.undefined
 }
 object DiscoverTypings {
   
@@ -64,9 +61,5 @@ object DiscoverTypings {
     inline def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
     inline def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
-    
-    inline def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
-    
-    inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
   }
 }

@@ -10,47 +10,47 @@ trait RelationshipContentProperties
      with ContentProperties {
   
   /**
-    * Describes the relationship's content in detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#description)
-    */
+  		 * Describes the relationship's content in detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * A numeric value indicating the maximum number of related features to display in the list of related records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#displayCount)
-    */
+  		 * A numeric value indicating the maximum number of related features to display in the list of related records.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#displayCount)
+  		 */
   var displayCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * A string value indicating how to display related records within the relationship content.
-    *
-    * @default "list"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#displayType)
-    */
+  		 * A string value indicating how to display related records within the relationship content.
+  		 *
+  		 * @default "list"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#displayType)
+  		 */
   var displayType: js.UndefOr[list] = js.undefined
   
   /**
-    * An array of [RelatedRecordsInfoFieldOrder](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html) indicating the display order for the related records, and whether they should be sorted in ascending `asc` or descending `desc` order.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#orderByFields)
-    */
+  		 * An array of [RelatedRecordsInfoFieldOrder](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-RelatedRecordsInfoFieldOrder.html) indicating the display order for the related records, and whether they should be sorted in ascending `asc` or descending `desc` order.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#orderByFields)
+  		 */
   var orderByFields: js.UndefOr[js.Array[RelatedRecordsInfoFieldOrderProperties]] = js.undefined
   
   /**
-    * The numeric id value for the defined relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#relationshipId)
-    */
+  		 * The numeric id value for the defined relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#relationshipId)
+  		 */
   var relationshipId: js.UndefOr[Double] = js.undefined
   
   /**
-    * A heading indicating what the relationship's content represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#title)
-    */
+  		 * A heading indicating what the relationship's content represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-RelationshipContent.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object RelationshipContentProperties {

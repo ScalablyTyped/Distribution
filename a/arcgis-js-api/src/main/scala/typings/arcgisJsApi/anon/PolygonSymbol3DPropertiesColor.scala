@@ -19,29 +19,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolygonSymbol3DPropertiesColor extends StObject {
   
   /**
-    * The color of the symbol.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
-    */
+  		 * The color of the symbol.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
-    * The origin of the style from which the symbol was originally referenced.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
-    */
+  		 * The origin of the style from which the symbol was originally referenced.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
+  		 */
   var styleOrigin: js.UndefOr[StyleOriginProperties] = js.undefined
   
   /**
-    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#symbolLayers)
-    */
+  		 * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PolygonSymbol3D.html#symbolLayers)
+  		 */
   var symbolLayers: js.UndefOr[
     CollectionProperties[
-      (ExtrudeSymbol3DLayerProperties & Type) | (FillSymbol3DLayerProperties & `0`) | (IconSymbol3DLayerProperties & `1`) | (LineSymbol3DLayerProperties & `2`) | (ObjectSymbol3DLayerProperties & `3`) | (TextSymbol3DLayerProperties & `4`) | (WaterSymbol3DLayerProperties & `5`)
+      (ExtrudeSymbol3DLayerProperties & `0`) | (FillSymbol3DLayerProperties & `1`) | (IconSymbol3DLayerProperties & `2`) | (LineSymbol3DLayerProperties & `3`) | (ObjectSymbol3DLayerProperties & `4`) | (TextSymbol3DLayerProperties & `5`) | (WaterSymbol3DLayerProperties & `6`)
     ]
   ] = js.undefined
   
@@ -70,14 +70,14 @@ object PolygonSymbol3DPropertiesColor {
     
     inline def setSymbolLayers(
       value: CollectionProperties[
-          (ExtrudeSymbol3DLayerProperties & Type) | (FillSymbol3DLayerProperties & `0`) | (IconSymbol3DLayerProperties & `1`) | (LineSymbol3DLayerProperties & `2`) | (ObjectSymbol3DLayerProperties & `3`) | (TextSymbol3DLayerProperties & `4`) | (WaterSymbol3DLayerProperties & `5`)
+          (ExtrudeSymbol3DLayerProperties & `0`) | (FillSymbol3DLayerProperties & `1`) | (IconSymbol3DLayerProperties & `2`) | (LineSymbol3DLayerProperties & `3`) | (ObjectSymbol3DLayerProperties & `4`) | (TextSymbol3DLayerProperties & `5`) | (WaterSymbol3DLayerProperties & `6`)
         ]
     ): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
     
     inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
     
     inline def setSymbolLayersVarargs(
-      value: ((ExtrudeSymbol3DLayerProperties & Type) | (FillSymbol3DLayerProperties & `0`) | (IconSymbol3DLayerProperties & `1`) | (LineSymbol3DLayerProperties & `2`) | (ObjectSymbol3DLayerProperties & `3`) | (TextSymbol3DLayerProperties & `4`) | (WaterSymbol3DLayerProperties & `5`))*
+      value: ((ExtrudeSymbol3DLayerProperties & `0`) | (FillSymbol3DLayerProperties & `1`) | (IconSymbol3DLayerProperties & `2`) | (LineSymbol3DLayerProperties & `3`) | (ObjectSymbol3DLayerProperties & `4`) | (TextSymbol3DLayerProperties & `5`) | (WaterSymbol3DLayerProperties & `6`))*
     ): Self = StObject.set(x, "symbolLayers", js.Array(value*))
     
     inline def setType(value: `polygon-3d`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

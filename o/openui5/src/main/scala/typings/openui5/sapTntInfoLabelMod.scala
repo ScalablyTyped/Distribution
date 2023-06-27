@@ -170,7 +170,7 @@ object sapTntInfoLabelMod {
     def getDisplayOnly(): Boolean = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets current value of property {@link #getIcon icon}.
       *
@@ -267,7 +267,7 @@ object sapTntInfoLabelMod {
     bDisplayOnly: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Sets a new value for property {@link #getIcon icon}.
       *
@@ -396,7 +396,7 @@ object sapTntInfoLabelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Defines the icon to be displayed as graphical element within the `InfoLabel`. It can be an icon from
       * the icon font.

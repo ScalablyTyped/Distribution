@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.std.HTMLElement
 import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.WebixProxy
 import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +51,7 @@ trait pdfviewerConfig extends StObject {
   
   var toolbar: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String | WebixCallback | obj] = js.undefined
+  var url: js.UndefOr[String | WebixCallback | WebixProxy] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -148,7 +149,7 @@ object pdfviewerConfig {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setUrl(value: String | WebixCallback | obj): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | WebixCallback | WebixProxy): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

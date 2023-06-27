@@ -11,7 +11,7 @@ trait ChangesComment extends StObject {
   var action: edited
   
   /** @description The changes to the comment. */
-  var changes: `449`
+  var changes: `527`
   
   /**
     * issue comment
@@ -35,7 +35,7 @@ trait ChangesComment extends StObject {
 object ChangesComment {
   
   inline def apply(
-    changes: `449`,
+    changes: `527`,
     comment: IdIssueurl,
     issue: AssigneeAssignees,
     repository: Allowupdatebranch,
@@ -50,7 +50,7 @@ object ChangesComment {
     
     inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `449`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `527`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setComment(value: IdIssueurl): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

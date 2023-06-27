@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMShapeVertices extends StObject {
   
   /**
-    * The indices.
-    */
+  			 * The indices.
+  			 */
   var indices: js.UndefOr[Double] = js.undefined
   
   /**
-    * The shape.
-    */
+  			 * The shape.
+  			 */
   var shapes: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMShapeVertices

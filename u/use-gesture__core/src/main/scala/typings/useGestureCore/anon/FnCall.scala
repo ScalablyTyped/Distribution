@@ -180,6 +180,7 @@ import typings.useGestureCore.useGestureCoreStrings.ruby
 import typings.useGestureCore.useGestureCoreStrings.s
 import typings.useGestureCore.useGestureCoreStrings.samp
 import typings.useGestureCore.useGestureCoreStrings.script
+import typings.useGestureCore.useGestureCoreStrings.search
 import typings.useGestureCore.useGestureCoreStrings.section
 import typings.useGestureCore.useGestureCoreStrings.select
 import typings.useGestureCore.useGestureCoreStrings.slot
@@ -437,6 +438,8 @@ trait FnCall extends StObject {
   def apply(tagName: samp, options: ElementCreationOptions): HTMLElement = js.native
   def apply(tagName: script): HTMLScriptElement = js.native
   def apply(tagName: script, options: ElementCreationOptions): HTMLScriptElement = js.native
+  def apply(tagName: search): HTMLElement = js.native
+  def apply(tagName: search, options: ElementCreationOptions): HTMLElement = js.native
   def apply(tagName: section): HTMLElement = js.native
   def apply(tagName: section, options: ElementCreationOptions): HTMLElement = js.native
   def apply(tagName: select): HTMLSelectElement = js.native

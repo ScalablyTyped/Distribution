@@ -29,10 +29,10 @@ trait UI
   def add(component: UIAddComponent, position: String): scala.Unit = js.native
   def add(component: UIAddComponent, position: UIAddPosition): scala.Unit = js.native
   /**
-    * Adds one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) to the UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
-    */
+  		 * Adds one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) to the UI.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
+  		 */
   def add(component: Widget_): scala.Unit = js.native
   def add(component: Widget_, position: String): scala.Unit = js.native
   def add(component: Widget_, position: UIAddPosition): scala.Unit = js.native
@@ -41,34 +41,43 @@ trait UI
   def add(component: HTMLElement, position: UIAddPosition): scala.Unit = js.native
   
   /**
-    * The HTML Element that contains the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container)
-    */
+  		 * The HTML Element that contains the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container)
+  		 */
   var container: HTMLElement = js.native
   
   /**
-    * Removes all components from a given position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#empty)
-    */
+  		 * Removes all components from a given position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#empty)
+  		 */
   def empty(): scala.Unit = js.native
   def empty(
     position: `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
   ): scala.Unit = js.native
   
   /**
-    * Find a component by widget or DOM ID.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#find)
-    */
+  		 * Find a component by widget or DOM ID.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#find)
+  		 */
   def find(id: String): HTMLElement | Widget_ = js.native
   
   /**
-    * The height of the UI container.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#height)
-    */
+  		 * Returns all widgets and/or HTML elements in the view, or only components at specified positions in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#getComponents)
+  		 */
+  def getComponents(): js.Array[Widget_ | HTMLElement] = js.native
+  def getComponents(position: js.Array[UIPosition]): js.Array[Widget_ | HTMLElement] = js.native
+  def getComponents(position: UIPosition): js.Array[Widget_ | HTMLElement] = js.native
+  
+  /**
+  		 * The height of the UI container.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#height)
+  		 */
   val height: Double = js.native
   
   def move(component: String): scala.Unit = js.native
@@ -81,10 +90,10 @@ trait UI
   def move(component: UIMoveComponent, position: String): scala.Unit = js.native
   def move(component: UIMoveComponent, position: UIMovePosition): scala.Unit = js.native
   /**
-    * Moves one or more UI component(s) to the specified position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
-    */
+  		 * Moves one or more UI component(s) to the specified position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
+  		 */
   def move(component: Widget_): scala.Unit = js.native
   def move(component: Widget_, position: String): scala.Unit = js.native
   def move(component: Widget_, position: UIMovePosition): scala.Unit = js.native
@@ -93,35 +102,35 @@ trait UI
   def move(component: HTMLElement, position: UIMovePosition): scala.Unit = js.native
   
   /**
-    * Defines the padding for the UI from the top, left, right, and bottom sides of the container or [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * @default { left: 15, top: 15, right: 15, bottom: 15 }
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#padding)
-    */
+  		 * Defines the padding for the UI from the top, left, right, and bottom sides of the container or [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * @default { left: 15, top: 15, right: 15, bottom: 15 }
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#padding)
+  		 */
   var padding: Any | Double = js.native
   
   def remove(component: String): scala.Unit = js.native
   def remove(component: js.Array[Any]): scala.Unit = js.native
   /**
-    * Removes one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) from the UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#remove)
-    */
+  		 * Removes one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) from the UI.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#remove)
+  		 */
   def remove(component: Widget_): scala.Unit = js.native
   def remove(component: HTMLElement): scala.Unit = js.native
   
   /**
-    * The view associated with the UI components.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#view)
-    */
+  		 * The view associated with the UI components.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#view)
+  		 */
   var view: MapView | SceneView = js.native
   
   /**
-    * The width of the UI container.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#width)
-    */
+  		 * The width of the UI container.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#width)
+  		 */
   val width: Double = js.native
 }

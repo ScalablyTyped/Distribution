@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`1`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsLibraryMod.RatingIndicatorVisualMode
@@ -171,13 +170,13 @@ object sapUiCommonsRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RatingIndicator` itself
       */
@@ -202,7 +201,7 @@ object sapUiCommonsRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -213,7 +212,7 @@ object sapUiCommonsRatingIndicatorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RatingIndicator` itself
       */
@@ -244,13 +243,13 @@ object sapUiCommonsRatingIndicatorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RatingIndicatorChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -258,27 +257,27 @@ object sapUiCommonsRatingIndicatorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: RatingIndicator$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -571,6 +570,33 @@ object sapUiCommonsRatingIndicatorMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait RatingIndicator$ChangeEventParameters extends StObject {
+    
+    /**
+      * The value of the user rating
+      */
+    var value: js.UndefOr[int] = js.undefined
+  }
+  object RatingIndicator$ChangeEventParameters {
+    
+    inline def apply(): RatingIndicator$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RatingIndicator$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingIndicator$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: int): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type RatingIndicatorChangeEvent = typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters]
+  
+  type RatingIndicatorChangeEventParameters = RatingIndicator$ChangeEventParameters
+  
   trait RatingIndicatorSettings
     extends StObject
        with ControlSettings {
@@ -596,7 +622,12 @@ object sapUiCommonsRatingIndicatorMod {
     /**
       * The event is fired when the user has done a rating.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines if the rating symbols can be edited.
@@ -671,7 +702,9 @@ object sapUiCommonsRatingIndicatorMod {
       
       inline def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RatingIndicator$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

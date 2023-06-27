@@ -6,15 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Key extends StObject {
   
-  /**
-    * Variant key
-    */
-  var key: js.UndefOr[String] = js.undefined
+  var key: String
 }
 object Key {
   
-  inline def apply(): Key = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(key: String): Key = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -22,7 +19,5 @@ object Key {
   implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

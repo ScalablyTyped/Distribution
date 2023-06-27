@@ -105,7 +105,7 @@ object sapUiTestGherkinStepDefinitionsMod {
       */
     def register(
       /**
-      * the regular expression that matches the feature file step (with leading "Given", "When", "Then", "But"
+      * The regular expression that matches the feature file step (with leading "Given", "When", "Then", "But"
       * or "*" removed). E.g. if the feature file has the step "Then I should be served a coffee" it will be
       * truncated to "I should be served a coffee" and tested against "rRegex" to check for a match. The simple
       * regular expression /^I should be served a coffee$/i would match this text. The regular expression can

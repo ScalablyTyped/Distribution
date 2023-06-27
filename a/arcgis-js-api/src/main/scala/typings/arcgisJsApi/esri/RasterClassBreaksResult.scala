@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterClassBreaksResult extends StObject {
   
   /**
-    * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#RasterClassBreaksResult)
-    */
+  		 * This object describes class breaks generated from data in a layer for a given field with a specified classification method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#RasterClassBreaksResult)
+  		 */
   var classBreaksResult: ClassBreaksResult
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#RasterClassBreaksResult)
-    */
+  		 * The renderer object configured to best match the given basemap and the spread of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#RasterClassBreaksResult)
+  		 */
   var renderer: ClassBreaksRenderer
 }
 object RasterClassBreaksResult {

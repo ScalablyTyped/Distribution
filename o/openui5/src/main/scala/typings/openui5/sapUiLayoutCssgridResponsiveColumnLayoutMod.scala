@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Layout
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.std.Record
@@ -135,13 +134,13 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.cssgrid.ResponsiveColumnLayout`
       * itself
@@ -167,7 +166,7 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
@@ -178,7 +177,7 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.cssgrid.ResponsiveColumnLayout`
       * itself
@@ -197,13 +196,13 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def detachLayoutChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ResponsiveColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -211,18 +210,47 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLayoutChange(): this.type = js.native
-    def fireLayoutChange(/**
+    def fireLayoutChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Layout): this.type = js.native
+    mParameters: ResponsiveColumnLayout$LayoutChangeEventParameters
+    ): this.type = js.native
   }
+  
+  trait ResponsiveColumnLayout$LayoutChangeEventParameters extends StObject {
+    
+    /**
+      * The name of the newly active layout - "S", "M", "ML", "L", "XL", "XXL" or "XXXL".
+      */
+    var layout: js.UndefOr[String] = js.undefined
+  }
+  object ResponsiveColumnLayout$LayoutChangeEventParameters {
+    
+    inline def apply(): ResponsiveColumnLayout$LayoutChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResponsiveColumnLayout$LayoutChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveColumnLayout$LayoutChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    }
+  }
+  
+  type ResponsiveColumnLayoutLayoutChangeEvent = typings.openui5.sapUiBaseEventMod.default[ResponsiveColumnLayout$LayoutChangeEventParameters]
+  
+  type ResponsiveColumnLayoutLayoutChangeEventParameters = ResponsiveColumnLayout$LayoutChangeEventParameters
   
   trait ResponsiveColumnLayoutSettings
     extends StObject
@@ -231,7 +259,12 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
     /**
       * Fired when the currently active layout changes
       */
-    var layoutChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var layoutChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ResponsiveColumnLayout$LayoutChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object ResponsiveColumnLayoutSettings {
     
@@ -243,7 +276,9 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ResponsiveColumnLayoutSettings] (val x: Self) extends AnyVal {
       
-      inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
+      inline def setLayoutChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ResponsiveColumnLayout$LayoutChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       
       inline def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
     }

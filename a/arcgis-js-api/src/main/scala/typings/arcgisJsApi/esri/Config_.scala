@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Config_ extends StObject {
   
   /**
-    * The display field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
-    */
+  		 * The display field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
+  		 */
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * The fields that record who adds or edits data in the feature service and when the edit is made.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
-    */
+  		 * The fields that record who adds or edits data in the feature service and when the edit is made.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
+  		 */
   var editFieldsInfo: js.UndefOr[EditFieldsInfo] = js.undefined
   
   /**
-    * The fields displayed within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
-    */
+  		 * The fields displayed within the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
+  		 */
   var fields: js.Array[Field]
   
   /**
-    * The object id field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
-    */
+  		 * The object id field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
+  		 */
   var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
-    * The title for the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
-    */
+  		 * The title for the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-popupUtils.html#Config)
+  		 */
   var title: String
 }
 object Config_ {

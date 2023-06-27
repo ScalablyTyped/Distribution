@@ -25,6 +25,8 @@ object esmPluginIsSameOrBeforeMod extends Shortcut {
     @js.native
     trait Dayjs extends StObject {
       
+      def isSameOrBefore(): Boolean = js.native
+      def isSameOrBefore(date: Unit, unit: OpUnitType): Boolean = js.native
       def isSameOrBefore(date: ConfigType): Boolean = js.native
       def isSameOrBefore(date: ConfigType, unit: OpUnitType): Boolean = js.native
     }

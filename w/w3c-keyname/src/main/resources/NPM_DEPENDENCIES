@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "w3c-keyname" : "2.2.6"
+      "w3c-keyname" : "2.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "w3c-keyname" : "2.2.6"
+      "w3c-keyname" : "2.2.8"
     }
   ],
   "compile-devDependencies" : [

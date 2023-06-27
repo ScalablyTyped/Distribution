@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputSetting extends StObject {
   
   /**
-    * The description that replaces the default sub-headings for either the starting points or barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
-    */
+  		 * The description that replaces the default sub-headings for either the starting points or barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
+  		 */
   var description: String
   
   /**
-    * The label that replaces either the default "Starting points" or "Barriers" headings depending on what flag type is passed.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label that replaces either the default "Starting points" or "Barriers" headings depending on what flag type is passed.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String
   
   /**
-    * The symbol displayed next to either the "Starting points" or "Barriers" headings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
-    */
+  		 * The symbol displayed next to either the "Starting points" or "Barriers" headings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
+  		 */
   var symbol: SimpleMarkerSymbol | PictureMarkerSymbol
   
   /**
-    * The flag type indicates which section will have its settings overridden.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
-    */
+  		 * The flag type indicates which section will have its settings overridden.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
+  		 */
   var `type`: `starting-point` | barrier
 }
 object InputSetting {

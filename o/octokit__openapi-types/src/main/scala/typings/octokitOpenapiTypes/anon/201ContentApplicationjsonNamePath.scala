@@ -9,11 +9,11 @@ trait `201ContentApplicationjsonNamePath` extends StObject {
   /** @description Response */
   var `201`: ContentApplicationjsonNamePath
   
-  var `422`: Content471
+  var `422`: Content549
 }
 object `201ContentApplicationjsonNamePath` {
   
-  inline def apply(`201`: ContentApplicationjsonNamePath, `422`: Content471): `201ContentApplicationjsonNamePath` = {
+  inline def apply(`201`: ContentApplicationjsonNamePath, `422`: Content549): `201ContentApplicationjsonNamePath` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
@@ -25,6 +25,6 @@ object `201ContentApplicationjsonNamePath` {
     
     inline def set201(value: ContentApplicationjsonNamePath): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content471): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content549): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

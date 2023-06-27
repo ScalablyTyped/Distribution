@@ -1,7 +1,6 @@
 package typings.monacoEditor.mod
 
 import typings.monacoEditor.anon.Authority
-import typings.monacoEditor.anon.Fragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,18 @@ open class Uri ()
   extends StObject
      with UriComponents {
   
-  /* CompleteClass */
-  var authority: String = js.native
+  /**
+    * authority is the 'www.example.com' part of 'http://www.example.com/some/path?query#fragment'.
+    * The part between the first double slashes and the next slash.
+    */
+  @JSName("authority")
+  val authority_Uri: String = js.native
   
-  /* CompleteClass */
-  var fragment: String = js.native
+  /**
+    * fragment is the 'fragment' part of 'http://www.example.com/some/path?query#fragment'.
+    */
+  @JSName("fragment")
+  val fragment_Uri: String = js.native
   
   /**
     * Returns a string representing the corresponding file system path of this Uri.
@@ -44,11 +50,17 @@ open class Uri ()
     */
   def fsPath: String = js.native
   
-  /* CompleteClass */
-  var path: String = js.native
+  /**
+    * path is the '/some/path' part of 'http://www.example.com/some/path?query#fragment'.
+    */
+  @JSName("path")
+  val path_Uri: String = js.native
   
-  /* CompleteClass */
-  var query: String = js.native
+  /**
+    * query is the 'query' part of 'http://www.example.com/some/path?query#fragment'.
+    */
+  @JSName("query")
+  val query_Uri: String = js.native
   
   /* CompleteClass */
   var scheme: String = js.native
@@ -89,7 +101,15 @@ object Uri {
     */
   inline def file(path: String): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(path.asInstanceOf[js.Any]).asInstanceOf[Uri]
   
-  inline def from(components: Fragment): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  /**
+    * Creates new Uri from uri components.
+    *
+    * Unless `strict` is `true` the scheme is defaults to be `file`. This function performs
+    * validation and should be used for untrusted uri components retrieved from storage,
+    * user input, command arguments etc
+    */
+  inline def from(components: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  inline def from(components: UriComponents, strict: Boolean): Uri = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(components.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Uri]
   
   inline def isUri(thing: Any): /* is monaco-editor.monaco-editor.Uri */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.Uri */ Boolean]
   
@@ -116,5 +136,15 @@ object Uri {
   inline def revive(data: UriComponents): js.UndefOr[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Uri]]
   
   inline def revive_Uri(data: Uri): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
+  /**
+    * A helper function to revive URIs.
+    *
+    * **Note** that this function should only be used when receiving Uri#toJSON generated data
+    * and that it doesn't do any validation. Use {@link Uri.from} when received "untrusted"
+    * uri components such as command arguments or data from storage.
+    *
+    * @param data The Uri components or Uri to revive.
+    * @returns The revived Uri or undefined or null.
+    */
   inline def revive_Uri(data: UriComponents): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("revive")(data.asInstanceOf[js.Any]).asInstanceOf[Uri]
 }

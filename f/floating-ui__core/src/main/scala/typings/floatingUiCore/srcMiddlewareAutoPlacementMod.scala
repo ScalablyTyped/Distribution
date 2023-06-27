@@ -1,9 +1,13 @@
 package typings.floatingUiCore
 
-import typings.floatingUiCore.anon.PartialOptionsOptions
 import typings.floatingUiCore.srcTypesMod.Alignment
+import typings.floatingUiCore.srcTypesMod.Boundary
+import typings.floatingUiCore.srcTypesMod.Derivable
+import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.Middleware
+import typings.floatingUiCore.srcTypesMod.Padding
 import typings.floatingUiCore.srcTypesMod.Placement
+import typings.floatingUiCore.srcTypesMod.RootBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,61 +19,82 @@ object srcMiddlewareAutoPlacementMod {
   val ^ : js.Any = js.native
   
   inline def autoPlacement(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("autoPlacement")().asInstanceOf[Middleware]
-  inline def autoPlacement(options: PartialOptionsOptions): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("autoPlacement")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def autoPlacement(options: AutoPlacementOptions): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("autoPlacement")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def autoPlacement(options: Derivable[AutoPlacementOptions]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("autoPlacement")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   inline def getPlacementList(alignment: Null, autoAlignment: Boolean, allowedPlacements: js.Array[Placement]): js.Array[Placement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlacementList")(alignment.asInstanceOf[js.Any], autoAlignment.asInstanceOf[js.Any], allowedPlacements.asInstanceOf[js.Any])).asInstanceOf[js.Array[Placement]]
   inline def getPlacementList(alignment: Alignment, autoAlignment: Boolean, allowedPlacements: js.Array[Placement]): js.Array[Placement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlacementList")(alignment.asInstanceOf[js.Any], autoAlignment.asInstanceOf[js.Any], allowedPlacements.asInstanceOf[js.Any])).asInstanceOf[js.Array[Placement]]
   
-  trait Options extends StObject {
+  /* Inlined std.Partial<@floating-ui/core.@floating-ui/core/src/detectOverflow.Options & {  crossAxis :boolean,   alignment :@floating-ui/core.@floating-ui/core/src/types.Alignment | null,   autoAlignment :boolean,   allowedPlacements :std.Array<@floating-ui/core.@floating-ui/core/src/types.Placement>}> */
+  trait AutoPlacementOptions extends StObject {
     
-    /**
-      * Choose placements with a particular alignment.
-      * @default undefined
-      */
-    var alignment: Alignment | Null
+    var alignment: js.UndefOr[Alignment | Null] = js.undefined
     
-    /**
-      * Which placements are allowed to be chosen. Placements must be within the
-      * `alignment` option if explicitly set.
-      * @default allPlacements (variable)
-      */
-    var allowedPlacements: js.Array[Placement]
+    var allowedPlacements: js.UndefOr[js.Array[Placement]] = js.undefined
     
-    /**
-      * Whether to choose placements with the opposite alignment if the preferred
-      * alignment does not fit.
-      * @default true
-      */
-    var autoAlignment: Boolean
+    var altBoundary: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The axis that runs along the alignment of the floating element. Determines
-      * whether to check for most space along this axis.
-      * @default false
-      */
-    var crossAxis: Boolean
+    var autoAlignment: js.UndefOr[Boolean] = js.undefined
+    
+    var boundary: js.UndefOr[Boundary] = js.undefined
+    
+    var crossAxis: js.UndefOr[Boolean] = js.undefined
+    
+    var elementContext: js.UndefOr[ElementContext] = js.undefined
+    
+    var padding: js.UndefOr[Padding] = js.undefined
+    
+    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
   }
-  object Options {
+  object AutoPlacementOptions {
     
-    inline def apply(allowedPlacements: js.Array[Placement], autoAlignment: Boolean, crossAxis: Boolean): Options = {
-      val __obj = js.Dynamic.literal(allowedPlacements = allowedPlacements.asInstanceOf[js.Any], autoAlignment = autoAlignment.asInstanceOf[js.Any], crossAxis = crossAxis.asInstanceOf[js.Any], alignment = null)
-      __obj.asInstanceOf[Options]
+    inline def apply(): AutoPlacementOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AutoPlacementOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: AutoPlacementOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
       inline def setAlignmentNull: Self = StObject.set(x, "alignment", null)
       
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      
       inline def setAllowedPlacements(value: js.Array[Placement]): Self = StObject.set(x, "allowedPlacements", value.asInstanceOf[js.Any])
+      
+      inline def setAllowedPlacementsUndefined: Self = StObject.set(x, "allowedPlacements", js.undefined)
       
       inline def setAllowedPlacementsVarargs(value: Placement*): Self = StObject.set(x, "allowedPlacements", js.Array(value*))
       
+      inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
+      
       inline def setAutoAlignment(value: Boolean): Self = StObject.set(x, "autoAlignment", value.asInstanceOf[js.Any])
       
+      inline def setAutoAlignmentUndefined: Self = StObject.set(x, "autoAlignment", js.undefined)
+      
+      inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      
+      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+      
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
+      
+      inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
+      
+      inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
+      
+      inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
+      
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
     }
   }
 }

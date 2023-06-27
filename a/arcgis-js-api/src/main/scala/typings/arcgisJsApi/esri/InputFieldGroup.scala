@@ -6,55 +6,61 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputFieldGroup
-  extends StObject
-     with Accessor {
+/**
+	 * Starting at version 4.27, this class is deprecated and should no longer be used.
+	 *
+	 * @deprecated since 4.27. Use {@link module:esri/widgets/FeatureForm/GroupInput} instead.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html)
+	 */
+trait InputFieldGroup extends StObject {
   
-  /**
-    * The group's description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#description)
-    */
-  var description: String = js.native
+  val description: String
   
-  /**
-    * The result of `visibilityExpression`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#evaluatedVisibilityExpression)
-    */
-  val evaluatedVisibilityExpression: Boolean = js.native
+  val evaluatedVisibilityExpression: Boolean
   
-  /**
-    * The input fields belonging to this group.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#inputFields)
-    */
-  val inputFields: js.Array[InputField] = js.native
+  val inputFields: js.Array[InputField]
   
-  /**
-    * The group's label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#label)
-    */
-  val label: String = js.native
+  val label: String
   
-  var state: expanded | collapsed = js.native
+  val state: expanded | collapsed
   
-  /**
-    * Arcade expression to determine whether this group is visible or not.
-    *
-    * @default null
-    * @deprecated Since 4.23. Use {@link esri/form/elements/GroupElement#visibilityExpression groupElement.visibilityExpression}
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
-    */
-  var visibilityExpression: String = js.native
+  val visibilityExpression: String
   
-  /**
-    * The group's visibility.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visible)
-    */
-  val visible: Boolean = js.native
+  val visible: Boolean
+}
+object InputFieldGroup {
+  
+  inline def apply(
+    description: String,
+    evaluatedVisibilityExpression: Boolean,
+    inputFields: js.Array[InputField],
+    label: String,
+    state: expanded | collapsed,
+    visibilityExpression: String,
+    visible: Boolean
+  ): InputFieldGroup = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], evaluatedVisibilityExpression = evaluatedVisibilityExpression.asInstanceOf[js.Any], inputFields = inputFields.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], visibilityExpression = visibilityExpression.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputFieldGroup]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFieldGroup] (val x: Self) extends AnyVal {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluatedVisibilityExpression(value: Boolean): Self = StObject.set(x, "evaluatedVisibilityExpression", value.asInstanceOf[js.Any])
+    
+    inline def setInputFields(value: js.Array[InputField]): Self = StObject.set(x, "inputFields", value.asInstanceOf[js.Any])
+    
+    inline def setInputFieldsVarargs(value: InputField*): Self = StObject.set(x, "inputFields", js.Array(value*))
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: expanded | collapsed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
 }

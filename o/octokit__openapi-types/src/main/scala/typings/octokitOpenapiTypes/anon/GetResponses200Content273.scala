@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content273 extends StObject {
   
-  /** List issue events for a repository */
+  /**
+    * Export a software bill of materials (SBOM) for a repository.
+    * @description Exports the software bill of materials (SBOM) for a repository in SPDX JSON format.
+    */
   var get: Responses200Content273
 }
 object GetResponses200Content273 {

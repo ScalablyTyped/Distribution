@@ -142,7 +142,7 @@ object Signature {
   trait Model extends StObject {
     
     /** This property is used to set the background color for the signature.
-      * @Default {#ffffff}
+      * @default {#ffffff}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
@@ -155,17 +155,17 @@ object Signature {
     var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the Signature textbox widget.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of the Signature control.
-      * @Default {100%}
+      * @default {100%}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -186,27 +186,27 @@ object Signature {
     var saveImageFormat: js.UndefOr[SaveImageFormat | String] = js.undefined
     
     /** Allows the signature image to be saved along with its background.
-      * @Default {false}
+      * @default {false}
       */
     var saveWithBackground: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables rounded corner.
-      * @Default {true}
+      * @default {true}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the stroke color for the stroke of the signature.
-      * @Default {#000000}
+      * @default {#000000}
       */
     var strokeColor: js.UndefOr[String] = js.undefined
     
     /** Sets the stroke width for the stroke of the signature.
-      * @Default {2}
+      * @default {2}
       */
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the width of the Signature control.
-      * @Default {100%}
+      * @default {100%}
       */
     var width: js.UndefOr[String] = js.undefined
   }

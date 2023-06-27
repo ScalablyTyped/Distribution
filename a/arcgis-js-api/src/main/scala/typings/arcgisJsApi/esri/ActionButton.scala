@@ -11,19 +11,19 @@ trait ActionButton
      with ActionBase {
   
   /**
-    * The URL to an image that will be used to represent the action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
-    */
+  		 * The URL to an image that will be used to represent the action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#image)
+  		 */
   var image: String = js.native
   
   /**
-    * Specifies the type of action.
-    *
-    * @default "button"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#type)
-    */
+  		 * Specifies the type of action.
+  		 *
+  		 * @default "button"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html#type)
+  		 */
   @JSName("type")
   val type_ActionButton: button = js.native
 }

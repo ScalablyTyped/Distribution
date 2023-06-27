@@ -1,10 +1,10 @@
 package typings.openui5
 
-import typings.openui5.anon.TargetRef
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcFioriLibraryMod.IShellBarItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -141,13 +141,13 @@ object sapUiWebcFioriShellBarItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBarItem` itself
       */
@@ -172,7 +172,7 @@ object sapUiWebcFioriShellBarItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -183,7 +183,7 @@ object sapUiWebcFioriShellBarItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBarItem` itself
       */
@@ -201,13 +201,13 @@ object sapUiWebcFioriShellBarItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -215,7 +215,7 @@ object sapUiWebcFioriShellBarItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -225,10 +225,12 @@ object sapUiWebcFioriShellBarItemMod {
       * @returns Whether or not to prevent the default action
       */
     def fireClick(): Boolean = js.native
-    def fireClick(/**
+    def fireClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): Boolean = js.native
+    mParameters: ShellBarItem$ClickEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getCount count}.
@@ -315,6 +317,33 @@ object sapUiWebcFioriShellBarItemMod {
     sText: String): this.type = js.native
   }
   
+  trait ShellBarItem$ClickEventParameters extends StObject {
+    
+    /**
+      * DOM ref of the clicked element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBarItem$ClickEventParameters {
+    
+    inline def apply(): ShellBarItem$ClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBarItem$ClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBarItem$ClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  type ShellBarItemClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBarItem$ClickEventParameters]
+  
+  type ShellBarItemClickEventParameters = ShellBarItem$ClickEventParameters
+  
   trait ShellBarItemSettings
     extends StObject
        with ControlSettings {
@@ -322,7 +351,12 @@ object sapUiWebcFioriShellBarItemMod {
     /**
       * Fired, when the item is pressed.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBarItem$ClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the count displayed in the top-right corner.
@@ -349,7 +383,9 @@ object sapUiWebcFioriShellBarItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ShellBarItemSettings] (val x: Self) extends AnyVal {
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBarItem$ClickEventParameters] => Unit
+      ): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       

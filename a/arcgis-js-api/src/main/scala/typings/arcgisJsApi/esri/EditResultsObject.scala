@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditResultsObject extends StObject {
   
   /**
-    * A list of objects containing the id and error information for every added entity or relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
-    */
+  		 * A list of objects containing the id and error information for every added entity or relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
+  		 */
   var adds: js.Array[NamedObjectEditResults]
   
   /**
-    * A list of objects containing the id and error information for every deleted entity or relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
-    */
+  		 * A list of objects containing the id and error information for every deleted entity or relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
+  		 */
   var deletes: js.Array[NamedObjectEditResults]
   
   /**
-    * The name of the [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) or [RelationshipType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html) that had changed items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
-    */
+  		 * The name of the [EntityType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html) or [RelationshipType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html) that had changed items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
+  		 */
   var typeName: String
   
   /**
-    * A list of objects containing the id and error information for every updated entity or relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
-    */
+  		 * A list of objects containing the id and error information for every updated entity or relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEditsResult.html#editResultsObject)
+  		 */
   var updates: js.Array[NamedObjectEditResults]
 }
 object EditResultsObject {

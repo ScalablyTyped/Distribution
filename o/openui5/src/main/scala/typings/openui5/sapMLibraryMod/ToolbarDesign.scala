@@ -33,7 +33,7 @@ object ToolbarDesign extends StObject {
   /* "Info" */ val Info: typings.openui5.sapMLibraryMod.ToolbarDesign.Info & String = js.native
   
   /**
-    * @SINCE 1.22
+    * @since 1.22
     *
     * The toolbar has a solid background. Its content will be rendered in a standard way.
     */

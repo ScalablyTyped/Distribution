@@ -17,20 +17,20 @@ object sapUiModelTypeUnitMod {
     */
   open class default () extends Unit {
     def this(/**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: Source) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -40,11 +40,11 @@ object sapUiModelTypeUnitMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: Source,
       /**
@@ -54,11 +54,11 @@ object sapUiModelTypeUnitMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -72,11 +72,11 @@ object sapUiModelTypeUnitMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: scala.Unit,
       /**
@@ -90,11 +90,11 @@ object sapUiModelTypeUnitMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: Source,
       /**
@@ -108,11 +108,11 @@ object sapUiModelTypeUnitMod {
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance
-      * NumberFormat}. If the format options `showMeasure` or `showNumber` are set to `false`, model messages
-      * for the respective parts are not propagated to the control, provided the corresponding binding supports
-      * the feature of ignoring model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and
-      * the corresponding binding parameter is not set manually.
+      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.NumberFormat.getUnitInstance NumberFormat}.
+      * If the format options `showMeasure` or `showNumber` are set to `false`, model messages for the respective
+      * parts are not propagated to the control, provided the corresponding binding supports the feature of ignoring
+      * model messages, see {@link sap.ui.model.Binding#supportsIgnoreMessages}, and the corresponding binding
+      * parameter is not set manually.
       */
     oFormatOptions: Source,
       /**

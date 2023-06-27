@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.flipY
   - typings.std.stdStrings.`from-image`
+  - typings.std.stdStrings.none
 */
 trait ImageOrientation extends StObject
 object ImageOrientation {
@@ -14,4 +15,6 @@ object ImageOrientation {
   inline def flipY: typings.std.stdStrings.flipY = "flipY".asInstanceOf[typings.std.stdStrings.flipY]
   
   inline def `from-image`: typings.std.stdStrings.`from-image` = "from-image".asInstanceOf[typings.std.stdStrings.`from-image`]
+  
+  inline def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }

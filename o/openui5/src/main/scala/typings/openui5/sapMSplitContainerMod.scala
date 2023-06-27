@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Direction
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.SplitAppMode
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -156,7 +155,7 @@ object sapMSplitContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Adds a content entity either to master area or detail area depending on the master parameter.
       *
@@ -193,13 +192,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterDetailNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -226,7 +225,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterDetailNavigate(
       /**
@@ -237,7 +236,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -259,13 +258,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterMasterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -291,7 +290,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterMasterClose(
       /**
@@ -302,7 +301,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -325,13 +324,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterMasterNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -358,7 +357,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterMasterNavigate(
       /**
@@ -369,7 +368,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -391,13 +390,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterMasterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -423,7 +422,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterMasterOpen(
       /**
@@ -434,7 +433,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -456,13 +455,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMasterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -488,7 +487,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMasterClose(
       /**
@@ -499,7 +498,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -521,13 +520,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMasterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -553,7 +552,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeMasterOpen(
       /**
@@ -564,7 +563,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -588,13 +587,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit]
     ): this.type = js.native
     def attachDetailNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -622,7 +621,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit]
     ): this.type = js.native
     def attachDetailNavigate(
       /**
@@ -633,7 +632,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -655,13 +654,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachMasterButton(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -687,7 +686,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachMasterButton(
       /**
@@ -698,7 +697,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -722,13 +721,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit]
     ): this.type = js.native
     def attachMasterNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -756,7 +755,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit]
     ): this.type = js.native
     def attachMasterNavigate(
       /**
@@ -767,7 +766,7 @@ object sapMSplitContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.SplitContainer` itself
       */
@@ -929,7 +928,7 @@ object sapMSplitContainerMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.10.0
+      * @since 1.10.0
       *
       * Navigates back to the nearest previous page in the SplitContainer history with the given ID (if there
       * is no such page among the previous pages, nothing happens). The transition effect, which had been used
@@ -1217,13 +1216,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterDetailNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterDetailNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1242,13 +1241,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterMasterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1267,13 +1266,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterMasterNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerAfterMasterNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1292,13 +1291,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterMasterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1317,13 +1316,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeMasterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1342,13 +1341,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeMasterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1367,13 +1366,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit]
     ): this.type = js.native
     def detachDetailNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerDetailNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1391,13 +1390,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachMasterButton(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1416,13 +1415,13 @@ object sapMSplitContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit]
     ): this.type = js.native
     def detachMasterNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitContainerMasterNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1430,20 +1429,22 @@ object sapMSplitContainerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterDetailNavigate afterDetailNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterDetailNavigate(): this.type = js.native
-    def fireAfterDetailNavigate(/**
+    def fireAfterDetailNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: SplitContainer$AfterDetailNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterMasterClose afterMasterClose} to attached listeners.
       *
@@ -1456,20 +1457,22 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterMasterNavigate afterMasterNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterMasterNavigate(): this.type = js.native
-    def fireAfterMasterNavigate(/**
+    def fireAfterMasterNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: SplitContainer$AfterMasterNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterMasterOpen afterMasterOpen} to attached listeners.
       *
@@ -1482,7 +1485,7 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeMasterClose beforeMasterClose} to attached listeners.
       *
@@ -1495,7 +1498,7 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeMasterOpen beforeMasterOpen} to attached listeners.
       *
@@ -1508,7 +1511,7 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:detailNavigate detailNavigate} to attached listeners.
       *
@@ -1518,13 +1521,15 @@ object sapMSplitContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireDetailNavigate(): Boolean = js.native
-    def fireDetailNavigate(/**
+    def fireDetailNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: SplitContainer$DetailNavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:masterButton masterButton} to attached listeners.
       *
@@ -1537,7 +1542,7 @@ object sapMSplitContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:masterNavigate masterNavigate} to attached listeners.
       *
@@ -1547,13 +1552,15 @@ object sapMSplitContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireMasterNavigate(): Boolean = js.native
-    def fireMasterNavigate(/**
+    def fireMasterNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: SplitContainer$MasterNavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundColor backgroundColor}.
       *
@@ -1568,7 +1575,7 @@ object sapMSplitContainerMod {
     def getBackgroundColor(): String = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundImage backgroundImage}.
       *
@@ -1583,7 +1590,7 @@ object sapMSplitContainerMod {
     def getBackgroundImage(): URI = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -1597,7 +1604,7 @@ object sapMSplitContainerMod {
     def getBackgroundOpacity(): float = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -1621,7 +1628,7 @@ object sapMSplitContainerMod {
     def getCurrentMasterPage(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Returns the currently displayed page either in master area or in detail area. When the parameter is set
       * to true, the current page in master area is returned, otherwise, the current page in detail area is returned.
@@ -1664,7 +1671,7 @@ object sapMSplitContainerMod {
     def getDefaultTransitionNameMaster(): String = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Returns the page with the given ID in detail area. If there's no page that has the given ID, null is
       * returned.
@@ -1681,8 +1688,8 @@ object sapMSplitContainerMod {
       *
       * Determines the content entities, between which the SplitContainer navigates in detail area. These can
       * be of type sap.m.Page, sap.ui.core.mvc.View, sap.m.Carousel or any other control with fullscreen/page
-      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
+      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
       */
     def getDetailPages(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
@@ -1714,7 +1721,7 @@ object sapMSplitContainerMod {
     def getMasterButtonText(): String = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Gets current value of property {@link #getMasterButtonTooltip masterButtonTooltip}.
       *
@@ -1726,7 +1733,7 @@ object sapMSplitContainerMod {
     def getMasterButtonTooltip(): String = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Returns the page with the given ID in master area (if there's no page that has the given ID, null is
       * returned).
@@ -1743,8 +1750,8 @@ object sapMSplitContainerMod {
       *
       * Determines the content entities, between which the SplitContainer navigates in master area. These can
       * be of type sap.m.Page, sap.ui.core.mvc.View, sap.m.Carousel or any other control with fullscreen/page
-      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
+      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
       */
     def getMasterPages(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
@@ -1762,7 +1769,7 @@ object sapMSplitContainerMod {
     def getMode(): SplitAppMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SplitAppMode * / any */ String) = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Returns the page with the given ID from either master area, or detail area depending on the master parameter
       * (if there's no page that has the given ID, null is returned).
@@ -1906,7 +1913,7 @@ object sapMSplitContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       *
       * Returns whether master area is currently displayed on the screen.
       *
@@ -1975,7 +1982,7 @@ object sapMSplitContainerMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundColor backgroundColor}.
       *
@@ -1996,7 +2003,7 @@ object sapMSplitContainerMod {
     sBackgroundColor: String): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundImage backgroundImage}.
       *
@@ -2017,7 +2024,7 @@ object sapMSplitContainerMod {
     sBackgroundImage: URI): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -2037,7 +2044,7 @@ object sapMSplitContainerMod {
     fBackgroundOpacity: float): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -2160,7 +2167,7 @@ object sapMSplitContainerMod {
     sMasterButtonText: String): this.type = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Sets a new value for property {@link #getMasterButtonTooltip masterButtonTooltip}.
       *
@@ -2208,7 +2215,7 @@ object sapMSplitContainerMod {
     def showMaster(): Unit = js.native
     
     /**
-      * @SINCE 1.10.0
+      * @since 1.10.0
       *
       * Navigates to the given page inside the SplitContainer. The navigation is done inside the master area
       * if the page has been added, otherwise, it tries to do the page navigation in the detail area.
@@ -2664,6 +2671,472 @@ object sapMSplitContainerMod {
     ): Unit = js.native
   }
   
+  trait SplitContainer$AfterDetailNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which has been navigated
+      * to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which had been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which had been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether was a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object SplitContainer$AfterDetailNavigateEventParameters {
+    
+    inline def apply(): SplitContainer$AfterDetailNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitContainer$AfterDetailNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitContainer$AfterDetailNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait SplitContainer$AfterMasterCloseEventParameters extends StObject
+  
+  trait SplitContainer$AfterMasterNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page, which has been navigated to)
+      * has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which had been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which had been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether was a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object SplitContainer$AfterMasterNavigateEventParameters {
+    
+    inline def apply(): SplitContainer$AfterMasterNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitContainer$AfterMasterNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitContainer$AfterMasterNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait SplitContainer$AfterMasterOpenEventParameters extends StObject
+  
+  trait SplitContainer$BeforeMasterCloseEventParameters extends StObject
+  
+  trait SplitContainer$BeforeMasterOpenEventParameters extends StObject
+  
+  trait SplitContainer$DetailNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which is currently
+      * navigated to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object SplitContainer$DetailNavigateEventParameters {
+    
+    inline def apply(): SplitContainer$DetailNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitContainer$DetailNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitContainer$DetailNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait SplitContainer$MasterButtonEventParameters extends StObject
+  
+  trait SplitContainer$MasterNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which is currently
+      * being navigated to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object SplitContainer$MasterNavigateEventParameters {
+    
+    inline def apply(): SplitContainer$MasterNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitContainer$MasterNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitContainer$MasterNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  type SplitContainerAfterDetailNavigateEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterDetailNavigateEventParameters]
+  
+  type SplitContainerAfterDetailNavigateEventParameters = SplitContainer$AfterDetailNavigateEventParameters
+  
+  type SplitContainerAfterMasterCloseEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterMasterCloseEventParameters]
+  
+  type SplitContainerAfterMasterCloseEventParameters = SplitContainer$AfterMasterCloseEventParameters
+  
+  type SplitContainerAfterMasterNavigateEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterMasterNavigateEventParameters]
+  
+  type SplitContainerAfterMasterNavigateEventParameters = SplitContainer$AfterMasterNavigateEventParameters
+  
+  type SplitContainerAfterMasterOpenEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterMasterOpenEventParameters]
+  
+  type SplitContainerAfterMasterOpenEventParameters = SplitContainer$AfterMasterOpenEventParameters
+  
+  type SplitContainerBeforeMasterCloseEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$BeforeMasterCloseEventParameters]
+  
+  type SplitContainerBeforeMasterCloseEventParameters = SplitContainer$BeforeMasterCloseEventParameters
+  
+  type SplitContainerBeforeMasterOpenEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$BeforeMasterOpenEventParameters]
+  
+  type SplitContainerBeforeMasterOpenEventParameters = SplitContainer$BeforeMasterOpenEventParameters
+  
+  type SplitContainerDetailNavigateEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$DetailNavigateEventParameters]
+  
+  type SplitContainerDetailNavigateEventParameters = SplitContainer$DetailNavigateEventParameters
+  
+  type SplitContainerMasterButtonEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$MasterButtonEventParameters]
+  
+  type SplitContainerMasterButtonEventParameters = SplitContainer$MasterButtonEventParameters
+  
+  type SplitContainerMasterNavigateEvent = typings.openui5.sapUiBaseEventMod.default[SplitContainer$MasterNavigateEventParameters]
+  
+  type SplitContainerMasterNavigateEventParameters = SplitContainer$MasterNavigateEventParameters
+  
   trait SplitContainerSettings
     extends StObject
        with ControlSettings {
@@ -2672,26 +3145,40 @@ object sapMSplitContainerMod {
       * Fires when navigation between two pages in detail area has completed. NOTE: In case of animated transitions
       * this event is fired with some delay after the "navigate" event.
       */
-    var afterDetailNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterDetailNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterDetailNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when the master area is fully closed after the animation (if any).
       */
-    var afterMasterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterMasterClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fires when navigation between two pages in master area has completed. NOTE: In case of animated transitions
       * this event is fired with some delay after the navigate event.
       */
-    var afterMasterNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterMasterNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterMasterNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when the master area is fully opened after animation if any.
       */
-    var afterMasterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterMasterOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Determines the background color of the SplitContainer. If set, this color overrides the default one,
       * which is defined by the theme (should only be used when really required). Any configured background image
@@ -2702,7 +3189,7 @@ object sapMSplitContainerMod {
     var backgroundColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets the background image of the SplitContainer. When set, this image overrides the default background
       * defined by the theme (should only be used when really required). This background image will be placed
@@ -2713,7 +3200,7 @@ object sapMSplitContainerMod {
     var backgroundImage: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Defines the opacity of the background image - between 0 (fully transparent) and 1 (fully opaque). This
       * can be used to improve the content visibility by making the background image partly transparent.
@@ -2723,7 +3210,7 @@ object sapMSplitContainerMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Defines whether the background image (if configured) is proportionally stretched to cover the whole SplitContainer
       * (false) or whether it should be tiled (true).
@@ -2735,12 +3222,16 @@ object sapMSplitContainerMod {
     /**
       * Fires before the master area is closed.
       */
-    var beforeMasterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeMasterClose: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fires before the master area is opened.
       */
-    var beforeMasterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeMasterOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines the type of the transition/animation to apply when to() is called without defining the transition
@@ -2761,13 +3252,18 @@ object sapMSplitContainerMod {
       * the new page has not started yet. NOTE: This event can be aborted by the application with preventDefault(),
       * which means that there will be no navigation.
       */
-    var detailNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var detailNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$DetailNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the content entities, between which the SplitContainer navigates in detail area. These can
       * be of type sap.m.Page, sap.ui.core.mvc.View, sap.m.Carousel or any other control with fullscreen/page
-      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
+      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
       */
     var detailPages: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2787,7 +3283,9 @@ object sapMSplitContainerMod {
       * Fires when a Master Button needs to be shown or hidden. This is necessary for custom headers when the
       * SplitContainer control does not handle the placement of the master button automatically.
       */
-    var masterButton: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var masterButton: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines the text displayed in master button, which has a default value "Navigation". This text is
@@ -2801,7 +3299,7 @@ object sapMSplitContainerMod {
     var masterButtonText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Specifies the tooltip of the master button. If the tooltip is not specified, the title of the page, which
       * is displayed is the master part, is set as tooltip to the master button.
@@ -2813,13 +3311,18 @@ object sapMSplitContainerMod {
       * the new page has not started yet. This event can be aborted by the application with preventDefault(),
       * which means that there will be no navigation.
       */
-    var masterNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var masterNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$MasterNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the content entities, between which the SplitContainer navigates in master area. These can
       * be of type sap.m.Page, sap.ui.core.mvc.View, sap.m.Carousel or any other control with fullscreen/page
-      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
+      * semantics. These aggregated controls receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}.
       */
     var masterPages: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2844,19 +3347,23 @@ object sapMSplitContainerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SplitContainerSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterDetailNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterDetailNavigate", js.Any.fromFunction1(value))
+      inline def setAfterDetailNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterDetailNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterDetailNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterDetailNavigateUndefined: Self = StObject.set(x, "afterDetailNavigate", js.undefined)
       
-      inline def setAfterMasterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterMasterClose", js.Any.fromFunction1(value))
+      inline def setAfterMasterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterMasterClose", js.Any.fromFunction1(value))
       
       inline def setAfterMasterCloseUndefined: Self = StObject.set(x, "afterMasterClose", js.undefined)
       
-      inline def setAfterMasterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterMasterNavigate", js.Any.fromFunction1(value))
+      inline def setAfterMasterNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$AfterMasterNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterMasterNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterMasterNavigateUndefined: Self = StObject.set(x, "afterMasterNavigate", js.undefined)
       
-      inline def setAfterMasterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterMasterOpen", js.Any.fromFunction1(value))
+      inline def setAfterMasterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterMasterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterMasterOpenUndefined: Self = StObject.set(x, "afterMasterOpen", js.undefined)
       
@@ -2876,11 +3383,11 @@ object sapMSplitContainerMod {
       
       inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
       
-      inline def setBeforeMasterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeMasterClose", js.Any.fromFunction1(value))
+      inline def setBeforeMasterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeMasterClose", js.Any.fromFunction1(value))
       
       inline def setBeforeMasterCloseUndefined: Self = StObject.set(x, "beforeMasterClose", js.undefined)
       
-      inline def setBeforeMasterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeMasterOpen", js.Any.fromFunction1(value))
+      inline def setBeforeMasterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeMasterOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeMasterOpenUndefined: Self = StObject.set(x, "beforeMasterOpen", js.undefined)
       
@@ -2892,7 +3399,9 @@ object sapMSplitContainerMod {
       
       inline def setDefaultTransitionNameMasterUndefined: Self = StObject.set(x, "defaultTransitionNameMaster", js.undefined)
       
-      inline def setDetailNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "detailNavigate", js.Any.fromFunction1(value))
+      inline def setDetailNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$DetailNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "detailNavigate", js.Any.fromFunction1(value))
       
       inline def setDetailNavigateUndefined: Self = StObject.set(x, "detailNavigate", js.undefined)
       
@@ -2912,7 +3421,7 @@ object sapMSplitContainerMod {
       
       inline def setInitialMasterUndefined: Self = StObject.set(x, "initialMaster", js.undefined)
       
-      inline def setMasterButton(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "masterButton", js.Any.fromFunction1(value))
+      inline def setMasterButton(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "masterButton", js.Any.fromFunction1(value))
       
       inline def setMasterButtonText(value: String | PropertyBindingInfo): Self = StObject.set(x, "masterButtonText", value.asInstanceOf[js.Any])
       
@@ -2924,7 +3433,9 @@ object sapMSplitContainerMod {
       
       inline def setMasterButtonUndefined: Self = StObject.set(x, "masterButton", js.undefined)
       
-      inline def setMasterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "masterNavigate", js.Any.fromFunction1(value))
+      inline def setMasterNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SplitContainer$MasterNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "masterNavigate", js.Any.fromFunction1(value))
       
       inline def setMasterNavigateUndefined: Self = StObject.set(x, "masterNavigate", js.undefined)
       

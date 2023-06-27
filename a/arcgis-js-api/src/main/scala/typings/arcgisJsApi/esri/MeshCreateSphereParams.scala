@@ -18,38 +18,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreateSphereParams extends StObject {
   
   /**
-    * The additional number of subdivisions for generating the mesh representing a sphere.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * The additional number of subdivisions for generating the mesh representing a sphere.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var densificationFactor: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * Whether to georeference relative to the globe or the projected coordinate system (PCS).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The material to be used for the mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * The material to be used for the mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var material: js.UndefOr[MeshMaterial] = js.undefined
   
   /**
-    * A uniform size value or an object containing individual values width, height and depth.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * A uniform size value or an object containing individual values width, height and depth.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   var size: js.UndefOr[Double | MeshCreateSphereParamsSize] = js.undefined
   
   /**
-    * The unit of the size (defaults to the unit of the location's spatial reference).
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The unit of the size (defaults to the unit of the location's spatial reference).
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined

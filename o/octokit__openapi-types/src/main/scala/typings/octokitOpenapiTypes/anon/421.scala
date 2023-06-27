@@ -6,22 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `421` extends StObject {
   
-  var tag: js.UndefOr[js.Array[String]] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-subscription'] */ js.Any
 }
 object `421` {
   
-  inline def apply(): `421` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-subscription'] */ js.Any
+  ): `421` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`421`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `421`] (val x: Self) extends AnyVal {
     
-    inline def setTag(value: js.Array[String]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
-    
-    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
-    
-    inline def setTagVarargs(value: String*): Self = StObject.set(x, "tag", js.Array(value*))
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-subscription'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

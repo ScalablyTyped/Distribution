@@ -22,14 +22,14 @@ trait DeleteParametersPathReleaseidResponses extends StObject {
     * Update a release
     * @description Users with push access to the repository can edit a release.
     */
-  var patch: Responses200333404Content36
+  var patch: Responses200388404Content41
 }
 object DeleteParametersPathReleaseidResponses {
   
   inline def apply(
     delete: ParametersPathReleaseidResponses,
     get: ParametersPathReleaseid,
-    patch: Responses200333404Content36
+    patch: Responses200388404Content41
   ): DeleteParametersPathReleaseidResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathReleaseidResponses]
@@ -42,6 +42,6 @@ object DeleteParametersPathReleaseidResponses {
     
     inline def setGet(value: ParametersPathReleaseid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200333404Content36): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200388404Content41): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

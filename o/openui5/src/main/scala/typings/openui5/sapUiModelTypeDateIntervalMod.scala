@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Interval
-import typings.openui5.anon.`46`
+import typings.openui5.anon.`14`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -28,7 +28,7 @@ object sapUiModelTypeDateIntervalMod {
       /**
       * Value constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
-    oConstraints: `46`
+    oConstraints: `14`
     ) = this()
     def this(
       /**
@@ -38,7 +38,7 @@ object sapUiModelTypeDateIntervalMod {
       /**
       * Value constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
-    oConstraints: `46`
+    oConstraints: `14`
     ) = this()
   }
   /* static members */
@@ -114,6 +114,16 @@ object sapUiModelTypeDateIntervalMod {
     extends typings.openui5.sapUiModelCompositeTypeMod.default {
     
     /**
+      * @experimental (since 1.114.0)
+      *
+      * Returns a language-dependent placeholder text such as "e.g. " where  is formatted
+      * using this type.
+      *
+      * @returns The language-dependent placeholder text or `undefined` if the type does not offer a placeholder
+      */
+    def getPlaceholderText(): js.UndefOr[String] = js.native
+    
+    /**
       * Parses the given value to an array of two values representing the start date and the end date of the
       * interval, where the time part of the start date is 0 and the time part of end date is the end of day
       * (23:59:59.999). If the `singleIntervalValue` format option is used, the second entry is `null` if no
@@ -123,7 +133,7 @@ object sapUiModelTypeDateIntervalMod {
       * 	 - Two `Date` or `module:sap/ui/core/date/UI5Date` objects, or
       * 	 - Two strings as formatted start and end dates based on the `source` format option, or
       * 	 - Two numbers, representing the milliseconds of the timestamps based on the UNIX epoch if the `source`
-      * 			format option is used and `source.pattern` is `"timestamp"`.
+      *     format option is used and `source.pattern` is `"timestamp"`.
       */
     def parseValue(
       /**
@@ -132,7 +142,7 @@ object sapUiModelTypeDateIntervalMod {
     sValue: String,
       /**
       * The source type (the expected type of `sValue`); it must be either "string" or a type with "string" as
-      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String

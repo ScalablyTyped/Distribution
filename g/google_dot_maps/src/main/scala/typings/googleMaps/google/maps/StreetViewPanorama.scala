@@ -35,7 +35,7 @@ trait StreetViewPanorama
   /**
     * Returns the StreetViewLocation of the current panorama.
     */
-  def getLocation(): StreetViewLocation | Null = js.native
+  def getLocation(): StreetViewLocation = js.native
   
   /**
     * Returns the state of motion tracker. If <code>true</code> when the user

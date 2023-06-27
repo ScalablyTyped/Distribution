@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object sapUiBaseMetadataMod {
       /**
       * Info to construct the class and its metadata from
       */
-    oClassInfo: js.Object
+    oClassInfo: `2`
     ) = this()
   }
   
@@ -38,7 +39,7 @@ object sapUiBaseMetadataMod {
       * methods or some of the returned methods might not really be intended for public use. In general, pure
       * visibility information should not be exposed in runtime metadata but be part of the documentation. Subclasses
       * of `sap.ui.base.Object` might decide to provide runtime metadata describing their public API, but this
-      * then should not be backed by this method. See {@link sap.ui.core.mvc.ControllerMetadata#getAllMethods}
+      * then should not be backed by this method. See {@link sap.ui.core.mvc.ControllerMetadata#getAllMethods }
       * for an example.
       *
       * Returns an array with the names of all public methods declared by the described class and all its ancestors
@@ -69,7 +70,7 @@ object sapUiBaseMetadataMod {
       * methods or some of the returned methods might not really be intended for public use. In general, pure
       * visibility information should not be exposed in runtime metadata but be part of the documentation. Subclasses
       * of `sap.ui.base.Object` might decide to provide runtime metadata describing their public API, but this
-      * then should not be backed by this method. See {@link sap.ui.core.mvc.ControllerMetadata#getAllMethods}
+      * then should not be backed by this method. See {@link sap.ui.core.mvc.ControllerMetadata#getAllMethods }
       * for an example.
       *
       * Returns an array with the names of the public methods declared by the described class, methods of ancestors
@@ -80,7 +81,7 @@ object sapUiBaseMetadataMod {
     def getPublicMethods(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks whether the class described by this metadata object is of the named type.
       *
@@ -113,7 +114,7 @@ object sapUiBaseMetadataMod {
     def isAbstract(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.4
+      * @since 1.26.4
       *
       * Whether the described class is deprecated and should not be used any more
       *

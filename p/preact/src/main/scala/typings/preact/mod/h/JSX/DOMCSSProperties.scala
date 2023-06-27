@@ -21,6 +21,8 @@ trait DOMCSSProperties extends StObject {
   
   var animation: js.UndefOr[String | Double | Null] = js.undefined
   
+  var animationComposition: js.UndefOr[String | Double | Null] = js.undefined
+  
   var animationDelay: js.UndefOr[String | Double | Null] = js.undefined
   
   var animationDirection: js.UndefOr[String | Double | Null] = js.undefined
@@ -267,8 +269,6 @@ trait DOMCSSProperties extends StObject {
   
   var content: js.UndefOr[String | Double | Null] = js.undefined
   
-  var contentVisibility: js.UndefOr[String | Double | Null] = js.undefined
-  
   var counterIncrement: js.UndefOr[String | Double | Null] = js.undefined
   
   var counterReset: js.UndefOr[String | Double | Null] = js.undefined
@@ -338,6 +338,12 @@ trait DOMCSSProperties extends StObject {
   var fontStyle: js.UndefOr[String | Double | Null] = js.undefined
   
   var fontSynthesis: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var fontSynthesisSmallCaps: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var fontSynthesisStyle: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var fontSynthesisWeight: js.UndefOr[String | Double | Null] = js.undefined
   
   var fontVariant: js.UndefOr[String | Double | Null] = js.undefined
   
@@ -590,6 +596,8 @@ trait DOMCSSProperties extends StObject {
   var paddingRight: js.UndefOr[String | Double | Null] = js.undefined
   
   var paddingTop: js.UndefOr[String | Double | Null] = js.undefined
+  
+  var page: js.UndefOr[String | Double | Null] = js.undefined
   
   var pageBreakAfter: js.UndefOr[String | Double | Null] = js.undefined
   
@@ -998,6 +1006,12 @@ object DOMCSSProperties {
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     inline def setAnimation(value: String | Double): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationComposition(value: String | Double): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationCompositionNull: Self = StObject.set(x, "animationComposition", null)
+    
+    inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
     
     inline def setAnimationDelay(value: String | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
     
@@ -1741,12 +1755,6 @@ object DOMCSSProperties {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setContentVisibility(value: String | Double): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
-    
-    inline def setContentVisibilityNull: Self = StObject.set(x, "contentVisibility", null)
-    
-    inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
-    
     inline def setCounterIncrement(value: String | Double): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
     
     inline def setCounterIncrementNull: Self = StObject.set(x, "counterIncrement", null)
@@ -1953,7 +1961,25 @@ object DOMCSSProperties {
     
     inline def setFontSynthesisNull: Self = StObject.set(x, "fontSynthesis", null)
     
+    inline def setFontSynthesisSmallCaps(value: String | Double): Self = StObject.set(x, "fontSynthesisSmallCaps", value.asInstanceOf[js.Any])
+    
+    inline def setFontSynthesisSmallCapsNull: Self = StObject.set(x, "fontSynthesisSmallCaps", null)
+    
+    inline def setFontSynthesisSmallCapsUndefined: Self = StObject.set(x, "fontSynthesisSmallCaps", js.undefined)
+    
+    inline def setFontSynthesisStyle(value: String | Double): Self = StObject.set(x, "fontSynthesisStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontSynthesisStyleNull: Self = StObject.set(x, "fontSynthesisStyle", null)
+    
+    inline def setFontSynthesisStyleUndefined: Self = StObject.set(x, "fontSynthesisStyle", js.undefined)
+    
     inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
+    
+    inline def setFontSynthesisWeight(value: String | Double): Self = StObject.set(x, "fontSynthesisWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontSynthesisWeightNull: Self = StObject.set(x, "fontSynthesisWeight", null)
+    
+    inline def setFontSynthesisWeightUndefined: Self = StObject.set(x, "fontSynthesisWeight", js.undefined)
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -2713,6 +2739,8 @@ object DOMCSSProperties {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
+    inline def setPage(value: String | Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
     inline def setPageBreakAfter(value: String | Double): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
     
     inline def setPageBreakAfterNull: Self = StObject.set(x, "pageBreakAfter", null)
@@ -2730,6 +2758,10 @@ object DOMCSSProperties {
     inline def setPageBreakInsideNull: Self = StObject.set(x, "pageBreakInside", null)
     
     inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+    
+    inline def setPageNull: Self = StObject.set(x, "page", null)
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     inline def setPaintOrder(value: String | Double): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ trait AvInfoManager extends StObject {
     *
     * @returns dolby digital component mode
     *
-    * @throw WebAPIException with error type NotSupportedError, this feature doesn't be supported since 2016
+    * @throws WebAPIException with error type NotSupportedError, this feature doesn't be supported since 2016
     *
     * @since 2.3
     *
@@ -37,7 +37,7 @@ trait AvInfoManager extends StObject {
     *
     * @returns return value of plugin's version
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method
     *
     * @since 2.3
     *
@@ -53,7 +53,7 @@ trait AvInfoManager extends StObject {
     * - true is support
     * - false is not support
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method
     *
     * @since 2.3
     *

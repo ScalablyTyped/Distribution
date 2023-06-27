@@ -13,30 +13,37 @@ open class Screen_ ()
   extends StObject
      with Screen {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/availHeight) */
   /* standard dom */
   /* CompleteClass */
   override val availHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/availWidth) */
   /* standard dom */
   /* CompleteClass */
   override val availWidth: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/colorDepth) */
   /* standard dom */
   /* CompleteClass */
   override val colorDepth: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/height) */
   /* standard dom */
   /* CompleteClass */
   override val height: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/orientation) */
   /* standard dom */
   /* CompleteClass */
   override val orientation: typings.std.ScreenOrientation = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/pixelDepth) */
   /* standard dom */
   /* CompleteClass */
   override val pixelDepth: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/width) */
   /* standard dom */
   /* CompleteClass */
   override val width: Double = js.native

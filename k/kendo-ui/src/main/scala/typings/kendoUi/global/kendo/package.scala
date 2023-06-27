@@ -10,6 +10,7 @@ import typings.kendoUi.anon.TypeofuiActionSheet
 import typings.kendoUi.anon.TypeofuiArcGauge
 import typings.kendoUi.global.kendo.^
 import typings.kendoUi.kendo.History
+import typings.kendoUi.kendo.MediaQueryHandler
 import typings.kendoUi.kendo.TemplateOptions
 import typings.kendoUi.kendo.data.Model
 import typings.kendoUi.kendo.data.ObservableArray
@@ -63,6 +64,8 @@ inline def htmlEncode(value: String): String = ^.asInstanceOf[js.Dynamic].applyD
 inline def init(element: JQuery, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 inline def init(element: Element, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 inline def init(selector: String, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(selector.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+
+inline def mediaQuery(query: String): MediaQueryHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[MediaQueryHandler]
 
 inline def notify_(
   widget: TypeofWidget & (Instantiable2[/* element */ Element, /* options */ js.UndefOr[js.Object], Widget])

@@ -12,10 +12,10 @@ trait TimeStampNode
   var `type`: timestamp
   
   /**
-    * String date value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#TimeStampNode)
-    */
+  		 * String date value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#TimeStampNode)
+  		 */
   var value: String
 }
 object TimeStampNode {

@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Image")
 @js.native
-open class Image ()
+/**
+  * _Manages image data._
+  * @see https://docs.scriptable.app/image
+  */
+/* private */ open class Image ()
   extends StObject
      with typings.scriptableIos.Image {
   

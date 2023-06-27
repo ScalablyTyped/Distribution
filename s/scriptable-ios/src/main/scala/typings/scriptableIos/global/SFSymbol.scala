@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SFSymbol")
 @js.native
+/**
+  * _Representation of an SF symbol._
+  * @see https://docs.scriptable.app/sfsymbol
+  */
 /* private */ open class SFSymbol ()
   extends StObject
      with typings.scriptableIos.SFSymbol {

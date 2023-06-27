@@ -11,10 +11,10 @@ trait ElevationProfileLineInput
      with ElevationProfileLine {
   
   /**
-    * The line type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineInput.html#type)
-    */
+  		 * The line type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineInput.html#type)
+  		 */
   @JSName("type")
   val type_ElevationProfileLineInput: input = js.native
 }

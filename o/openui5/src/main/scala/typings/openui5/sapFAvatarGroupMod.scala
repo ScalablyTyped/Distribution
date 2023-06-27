@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AvatarsDisplayed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.AvatarGroupType
 import typings.openui5.sapMAvatarSizeMod.AvatarSize
@@ -152,13 +151,13 @@ object sapFAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.AvatarGroup` itself
       */
@@ -183,7 +182,7 @@ object sapFAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -194,7 +193,7 @@ object sapFAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.AvatarGroup` itself
       */
@@ -219,13 +218,13 @@ object sapFAvatarGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -233,7 +232,7 @@ object sapFAvatarGroupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -243,10 +242,10 @@ object sapFAvatarGroupMod {
     def firePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: AvatarsDisplayed): this.type = js.native
+    mParameters: AvatarGroup$PressEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Gets current value of property {@link #getAvatarCustomDisplaySize avatarCustomDisplaySize}.
       *
@@ -263,7 +262,7 @@ object sapFAvatarGroupMod {
     def getAvatarCustomDisplaySize(): AbsoluteCSSSize = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Gets current value of property {@link #getAvatarCustomFontSize avatarCustomFontSize}.
       *
@@ -367,7 +366,7 @@ object sapFAvatarGroupMod {
     ): typings.openui5.sapFAvatarGroupItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Sets a new value for property {@link #getAvatarCustomDisplaySize avatarCustomDisplaySize}.
       *
@@ -392,7 +391,7 @@ object sapFAvatarGroupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Sets a new value for property {@link #getAvatarCustomFontSize avatarCustomFontSize}.
       *
@@ -459,12 +458,57 @@ object sapFAvatarGroupMod {
     sGroupType: AvatarGroupType): this.type = js.native
   }
   
+  trait AvatarGroup$PressEventParameters extends StObject {
+    
+    /**
+      * The number of currently displayed (visible) avatars.
+      */
+    var avatarsDisplayed: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The `GroupType` of the control.
+      */
+    var groupType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indication whether the overflow button is pressed.
+      */
+    var overflowButtonPressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object AvatarGroup$PressEventParameters {
+    
+    inline def apply(): AvatarGroup$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AvatarGroup$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroup$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAvatarsDisplayed(value: int): Self = StObject.set(x, "avatarsDisplayed", value.asInstanceOf[js.Any])
+      
+      inline def setAvatarsDisplayedUndefined: Self = StObject.set(x, "avatarsDisplayed", js.undefined)
+      
+      inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+      
+      inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+      
+      inline def setOverflowButtonPressed(value: Boolean): Self = StObject.set(x, "overflowButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowButtonPressedUndefined: Self = StObject.set(x, "overflowButtonPressed", js.undefined)
+    }
+  }
+  
+  type AvatarGroupPressEvent = typings.openui5.sapUiBaseEventMod.default[AvatarGroup$PressEventParameters]
+  
+  type AvatarGroupPressEventParameters = AvatarGroup$PressEventParameters
+  
   trait AvatarGroupSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Specifies a custom display size for each avatar.
       *
@@ -477,7 +521,7 @@ object sapFAvatarGroupMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.103
+      * @since 1.103
       *
       * Specifies a custom font size for each avatar.
       *
@@ -511,7 +555,12 @@ object sapFAvatarGroupMod {
     /**
       * Fired when the user clicks or taps on the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AvatarGroup$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object AvatarGroupSettings {
     
@@ -551,7 +600,9 @@ object sapFAvatarGroupMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapFAvatarGroupItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AvatarGroup$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
     }

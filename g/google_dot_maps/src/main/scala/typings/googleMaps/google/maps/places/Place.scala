@@ -53,10 +53,9 @@ trait Place extends StObject {
   
   /**
     * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Calculates the timestamp (as milliseconds since the epoch, suitable for
-    * use with <code>new Date()</code>) representing the next OpeningHoursTime.
-    * Returns undefined if the data is insufficient to calculate the result, or
-    * this place is not operational.
+    * Calculates the Date representing the next OpeningHoursTime. Returns
+    * undefined if the data is insufficient to calculate the result, or this
+    * place is not operational.
     */
   def getNextOpeningTime(): js.Promise[js.UndefOr[js.Date]] = js.native
   def getNextOpeningTime(date: js.Date): js.Promise[js.UndefOr[js.Date]] = js.native

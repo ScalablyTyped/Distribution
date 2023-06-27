@@ -1,5 +1,7 @@
 package typings.kendoUi.kendo.ui
 
+import typings.kendoUi.kendoUiStrings.auto
+import typings.kendoUi.kendoUiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimePickerOptions
   extends StObject
      with AllEditorOptions {
+  
+  var adaptiveMode: js.UndefOr[none | auto] = js.undefined
   
   var animation: js.UndefOr[Boolean | TimePickerAnimation] = js.undefined
   
@@ -29,6 +33,8 @@ trait TimePickerOptions
   var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
   
   var max: js.UndefOr[js.Date] = js.undefined
+  
+  var messages: js.UndefOr[TimePickerMessages] = js.undefined
   
   var min: js.UndefOr[js.Date] = js.undefined
   
@@ -53,6 +59,10 @@ object TimePickerOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TimePickerOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAdaptiveMode(value: none | auto): Self = StObject.set(x, "adaptiveMode", value.asInstanceOf[js.Any])
+    
+    inline def setAdaptiveModeUndefined: Self = StObject.set(x, "adaptiveMode", js.undefined)
     
     inline def setAnimation(value: Boolean | TimePickerAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
@@ -97,6 +107,10 @@ object TimePickerOptions {
     inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMessages(value: TimePickerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

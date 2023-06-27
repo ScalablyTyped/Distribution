@@ -1,7 +1,7 @@
 
 # Scala.js typings for remark-stringify
 
-Typings are for version 10.0.2
+Typings are for version 10.0.3
 
 ## Library description:
 remark plugin to add support for serializing markdown

@@ -26,7 +26,7 @@ trait Dataset extends StObject {
     * The type of data that you're expecting back from the server.
     * If none is specified, jQuery will try to infer it based on the MIME type of the response...
     *
-    * @enum('xml', 'html', 'script', 'json', 'jsonp', 'text')
+    * ('xml', 'html', 'script', 'json', 'jsonp', 'text')
     * @default 'json'
     * @see http://api.jquery.com/jQuery.ajax
     */
@@ -36,7 +36,7 @@ trait Dataset extends StObject {
     * Defining the `method` setting for the jQuery's ajax call...
     * The HTTP method to use for the request (e.g. "POST", "GET", "PUT").
     *
-    * @enum('GET', 'POST')
+    * ('GET', 'POST')
     * @default 'GET'
     * @todo Check if other methods could be used... ('GET', 'PUT', 'HEAD', 'POST', 'PATCH', 'TRACE', 'DELETE', 'CONNECT', 'OPTIONS', 'IS_AWARE', 'IS_EAGER', 'PROPFIND', 'IS_OPTIONAL', 'IS_REQUIRED', 'IS_CONSTRUCTOR', 'IS_INSTANTIATOR')
     */

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartMediaInfoProperties extends StObject {
   
   /**
-    * Defines the chart value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
-    */
+  		 * Defines the chart value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-ChartMediaInfo.html#value)
+  		 */
   var value: js.UndefOr[ChartMediaInfoValueProperties] = js.undefined
 }
 object ChartMediaInfoProperties {

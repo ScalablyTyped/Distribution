@@ -24,6 +24,36 @@ object anon {
     }
   }
   
+  trait Async extends StObject {
+    
+    var async: Boolean
+    
+    var dispose: js.UndefOr[js.Function] = js.undefined
+    
+    var value: js.UndefOr[Any] = js.undefined
+  }
+  object Async {
+    
+    inline def apply(async: Boolean): Async = {
+      val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Async]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setDispose(value: js.Function): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
+      
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
   trait Default[T] extends StObject {
     
     var default: T
@@ -39,6 +69,34 @@ object anon {
     implicit open class MutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Error extends StObject {
+    
+    var error: Any
+    
+    var hasError: Boolean
+    
+    var stack: js.Array[Async]
+  }
+  object Error {
+    
+    inline def apply(error: Any, hasError: Boolean, stack: js.Array[Async]): Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Error]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+      
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      
+      inline def setStack(value: js.Array[Async]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      
+      inline def setStackVarargs(value: Async*): Self = StObject.set(x, "stack", js.Array(value*))
     }
   }
   

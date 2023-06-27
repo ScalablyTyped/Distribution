@@ -125,7 +125,7 @@ trait JsGridControl extends StObject {
   def GetCheckSelectionManager(): Any = js.native
   
   /** Get ColumnInfo object by fieldKey
-    @fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
+    * @param fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
   def GetColumnByFieldKey(fieldKey: String): ColumnInfo = js.native
   def GetColumnByFieldKey(fieldKey: String, optPaneId: Any): ColumnInfo = js.native
   
@@ -164,7 +164,7 @@ trait JsGridControl extends StObject {
   def GetOutlineLevel(record: Any): Any = js.native
   
   /** Gets record based on the recordKey
-    @recordKey internal unique id of a row. You can get recordKey from view index via GetRecordKeyByViewIndex method. */
+    * @param recordKey internal unique id of a row. You can get recordKey from view index via GetRecordKeyByViewIndex method. */
   def GetRecord(recordKey: Double): IRecord = js.native
   
   /** Returns index of the system RecordIndicatorCheckBoxColumn. If not present in the view, returns null. */

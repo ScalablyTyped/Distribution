@@ -2,6 +2,7 @@ package typings.nobleHashes
 
 import typings.nobleHashes.anon.BlockLen
 import typings.nobleHashes.anon.Call
+import typings.nobleHashes.anon.Create
 import typings.nobleHashes.anon.FnCall
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -48,7 +49,7 @@ object utilsMod {
   
   inline def asyncLoop(iters: Double, tick: Double, cb: js.Function1[/* i */ Double, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncLoop")(iters.asInstanceOf[js.Any], tick.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def bytesToHex(uint8a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(uint8a.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bytesToHex(bytes: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def checkOpts[T1 /* <: EmptyObj */, T2 /* <: EmptyObj */](defaults: T1): T1 & T2 = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOpts")(defaults.asInstanceOf[js.Any]).asInstanceOf[T1 & T2]
   inline def checkOpts[T1 /* <: EmptyObj */, T2 /* <: EmptyObj */](defaults: T1, opts: T2): T1 & T2 = (^.asInstanceOf[js.Dynamic].applyDynamic("checkOpts")(defaults.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T1 & T2]
@@ -78,9 +79,11 @@ object utilsMod {
   
   inline def utf8ToBytes(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8ToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def wrapConstructor[T /* <: Hash[T] */](hashConstructor: js.Function0[Hash[T]]): Call[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConstructor")(hashConstructor.asInstanceOf[js.Any]).asInstanceOf[Call[T]]
+  inline def wrapConstructor[T /* <: Hash[T] */](hashCons: js.Function0[Hash[T]]): Call[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConstructor")(hashCons.asInstanceOf[js.Any]).asInstanceOf[Call[T]]
   
   inline def wrapConstructorWithOpts[H /* <: Hash[H] */, T /* <: js.Object */](hashCons: js.Function1[/* opts */ js.UndefOr[T], Hash[H]]): BlockLen[T, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConstructorWithOpts")(hashCons.asInstanceOf[js.Any]).asInstanceOf[BlockLen[T, H]]
+  
+  inline def wrapXOFConstructorWithOpts[H /* <: HashXOF[H] */, T /* <: js.Object */](hashCons: js.Function1[/* opts */ js.UndefOr[T], HashXOF[H]]): Create[T, H] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapXOFConstructorWithOpts")(hashCons.asInstanceOf[js.Any]).asInstanceOf[Create[T, H]]
   
   type CHash = ReturnType[FnCall]
   

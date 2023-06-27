@@ -12,7 +12,7 @@ object sapUiFlWriteInternalFieldExtensibilitySingleTenantABAPExtensibilityVarian
   val default: SingleTenantABAPExtensibilityVariant = js.native
   
   /**
-    * @SINCE 1.87
+    * @since 1.87
     *
     * Extension variant for ABAP single tenant environnments (via so called Custom Fields)
     */

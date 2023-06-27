@@ -12,17 +12,29 @@ open class ImageBitmap ()
   extends StObject
      with typings.std.ImageBitmap {
   
-  /** Releases imageBitmap's underlying bitmap data. */
+  /**
+    * Releases imageBitmap's underlying bitmap data.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/close)
+    */
   /* standard dom */
   /* CompleteClass */
   override def close(): Unit = js.native
   
-  /** Returns the intrinsic height of the image, in CSS pixels. */
+  /**
+    * Returns the intrinsic height of the image, in CSS pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/height)
+    */
   /* standard dom */
   /* CompleteClass */
   override val height: Double = js.native
   
-  /** Returns the intrinsic width of the image, in CSS pixels. */
+  /**
+    * Returns the intrinsic width of the image, in CSS pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/width)
+    */
   /* standard dom */
   /* CompleteClass */
   override val width: Double = js.native

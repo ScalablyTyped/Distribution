@@ -1,14 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AddHeaderParameter
-import typings.openui5.anon.DocumentId
-import typings.openui5.anon.DocumentIdFileName
-import typings.openui5.anon.DocumentIdFileSize
-import typings.openui5.anon.DocumentIdItem
-import typings.openui5.anon.GetHeaderParameter
-import typings.openui5.anon.MimeType
-import typings.openui5.anon.Response
-import typings.openui5.anon.SelectedSelectedItem
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.ListMode
 import typings.openui5.sapMLibraryMod.ListSeparators
@@ -185,13 +176,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit]
     ): this.type = js.native
     def attachBeforeUploadStarts(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -218,7 +209,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit]
     ): this.type = js.native
     def attachBeforeUploadStarts(
       /**
@@ -229,7 +220,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -252,13 +243,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -285,7 +276,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -296,7 +287,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -317,13 +308,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit]
     ): this.type = js.native
     def attachFileDeleted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -348,7 +339,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit]
     ): this.type = js.native
     def attachFileDeleted(
       /**
@@ -359,7 +350,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -380,13 +371,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit]
     ): this.type = js.native
     def attachFileRenamed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -411,7 +402,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit]
     ): this.type = js.native
     def attachFileRenamed(
       /**
@@ -422,7 +413,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -445,13 +436,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def attachFileSizeExceed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -478,7 +469,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def attachFileSizeExceed(
       /**
@@ -489,7 +480,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -512,13 +503,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def attachFilenameLengthExceed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -545,7 +536,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def attachFilenameLengthExceed(
       /**
@@ -556,7 +547,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -564,7 +555,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.UploadCollection`.
@@ -580,20 +571,20 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:selectionChange selectionChange} event of this
       * `sap.m.UploadCollection`.
@@ -614,7 +605,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -625,7 +616,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -647,13 +638,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def attachTypeMissmatch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -679,7 +670,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def attachTypeMissmatch(
       /**
@@ -690,7 +681,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -712,13 +703,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit]
     ): this.type = js.native
     def attachUploadComplete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -744,7 +735,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit]
     ): this.type = js.native
     def attachUploadComplete(
       /**
@@ -755,7 +746,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -777,13 +768,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit]
     ): this.type = js.native
     def attachUploadTerminated(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -809,7 +800,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit]
     ): this.type = js.native
     def attachUploadTerminated(
       /**
@@ -820,7 +811,7 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollection` itself
       */
@@ -848,7 +839,7 @@ object sapMUploadCollectionMod {
     def destroyHeaderParameters(): this.type = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Destroys the infoToolbar in the aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -871,7 +862,7 @@ object sapMUploadCollectionMod {
     def destroyParameters(): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Destroys the toolbar in the aggregation {@link #getToolbar toolbar}.
       *
@@ -891,13 +882,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit]
     ): this.type = js.native
     def detachBeforeUploadStarts(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionBeforeUploadStartsEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -915,13 +906,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -939,13 +930,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit]
     ): this.type = js.native
     def detachFileDeleted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileDeletedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -963,13 +954,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit]
     ): this.type = js.native
     def detachFileRenamed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileRenamedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -988,13 +979,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit]
     ): this.type = js.native
     def detachFileSizeExceed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFileSizeExceedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1002,7 +993,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:filenameLengthExceed filenameLengthExceed}
+      * Detaches event handler `fnFunction` from the {@link #event:filenameLengthExceed filenameLengthExceed }
       * event of this `sap.m.UploadCollection`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -1013,13 +1004,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit]
     ): this.type = js.native
     def detachFilenameLengthExceed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionFilenameLengthExceedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1027,7 +1018,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:selectionChange selectionChange} event of
       * this `sap.m.UploadCollection`.
@@ -1040,13 +1031,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1065,13 +1056,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit]
     ): this.type = js.native
     def detachTypeMissmatch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionTypeMissmatchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1090,13 +1081,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit]
     ): this.type = js.native
     def detachUploadComplete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadCompleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1115,13 +1106,13 @@ object sapMUploadCollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit]
     ): this.type = js.native
     def detachUploadTerminated(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploadCollectionUploadTerminatedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1129,7 +1120,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Downloads the given item. This function delegates to {@link sap.m.UploadCollectionItem#download uploadCollectionItem.download}.
       *
@@ -1147,135 +1138,155 @@ object sapMUploadCollectionMod {
     ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeUploadStarts beforeUploadStarts} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeUploadStarts(): this.type = js.native
-    def fireBeforeUploadStarts(/**
+    def fireBeforeUploadStarts(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AddHeaderParameter): this.type = js.native
+    mParameters: UploadCollection$BeforeUploadStartsEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DocumentId): this.type = js.native
+    mParameters: UploadCollection$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileDeleted fileDeleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFileDeleted(): this.type = js.native
-    def fireFileDeleted(/**
+    def fireFileDeleted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DocumentIdItem): this.type = js.native
+    mParameters: UploadCollection$FileDeletedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileRenamed fileRenamed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFileRenamed(): this.type = js.native
-    def fireFileRenamed(/**
+    def fireFileRenamed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DocumentIdFileName): this.type = js.native
+    mParameters: UploadCollection$FileRenamedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileSizeExceed fileSizeExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFileSizeExceed(): this.type = js.native
-    def fireFileSizeExceed(/**
+    def fireFileSizeExceed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DocumentIdFileSize): this.type = js.native
+    mParameters: UploadCollection$FileSizeExceedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filenameLengthExceed filenameLengthExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFilenameLengthExceed(): this.type = js.native
-    def fireFilenameLengthExceed(/**
+    def fireFilenameLengthExceed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DocumentId): this.type = js.native
+    mParameters: UploadCollection$FilenameLengthExceedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.36.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedSelectedItem): this.type = js.native
+    mParameters: UploadCollection$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:typeMissmatch typeMissmatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTypeMissmatch(): this.type = js.native
-    def fireTypeMissmatch(/**
+    def fireTypeMissmatch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: MimeType): this.type = js.native
+    mParameters: UploadCollection$TypeMissmatchEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadComplete uploadComplete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadComplete(): this.type = js.native
-    def fireUploadComplete(/**
+    def fireUploadComplete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Response): this.type = js.native
+    mParameters: UploadCollection$UploadCompleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadTerminated uploadTerminated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadTerminated(): this.type = js.native
-    def fireUploadTerminated(/**
+    def fireUploadTerminated(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: GetHeaderParameter): this.type = js.native
+    mParameters: UploadCollection$UploadTerminatedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getFileType fileType}.
@@ -1297,7 +1308,7 @@ object sapMUploadCollectionMod {
     def getHeaderParameters(): js.Array[typings.openui5.sapMUploadCollectionParameterMod.default] = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Gets content of aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -1306,7 +1317,7 @@ object sapMUploadCollectionMod {
     def getInfoToolbar(): typings.openui5.sapMToolbarMod.default = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getInstantUpload instantUpload}.
       *
@@ -1320,7 +1331,7 @@ object sapMUploadCollectionMod {
     def getInstantUpload(): Boolean = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Provides access to the internally used request headers to allow adding them to the "Access-Control-Allow-Headers"
       * header parameter if needed.
@@ -1368,7 +1379,7 @@ object sapMUploadCollectionMod {
     def getMimeType(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getMode mode}.
       *
@@ -1401,7 +1412,7 @@ object sapMUploadCollectionMod {
     def getMultiple(): Boolean = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getNoDataDescription noDataDescription}.
       *
@@ -1421,7 +1432,7 @@ object sapMUploadCollectionMod {
     def getNoDataText(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getNumberOfAttachmentsText numberOfAttachmentsText}.
       *
@@ -1454,7 +1465,7 @@ object sapMUploadCollectionMod {
     def getSameFilenameAllowed(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Retrieves the currently selected UploadCollectionItem.
       *
@@ -1463,7 +1474,7 @@ object sapMUploadCollectionMod {
     def getSelectedItem(): typings.openui5.sapMUploadCollectionItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Returns an array containing the selected UploadCollectionItems.
       *
@@ -1483,7 +1494,7 @@ object sapMUploadCollectionMod {
     def getShowSeparators(): ListSeparators | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListSeparators * / any */ String) = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets current value of property {@link #getTerminationEnabled terminationEnabled}.
       *
@@ -1497,7 +1508,7 @@ object sapMUploadCollectionMod {
     def getTerminationEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets content of aggregation {@link #getToolbar toolbar}.
       *
@@ -1506,7 +1517,7 @@ object sapMUploadCollectionMod {
     def getToolbar(): typings.openui5.sapMOverflowToolbarMod.default = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Gets current value of property {@link #getUploadButtonInvisible uploadButtonInvisible}.
       *
@@ -1542,8 +1553,8 @@ object sapMUploadCollectionMod {
     def getUploadUrl(): String = js.native
     
     /**
-      * Checks for the provided `sap.m.UploadCollectionParameter` in the aggregation {@link #getHeaderParameters
-      * headerParameters}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.m.UploadCollectionParameter` in the aggregation {@link #getHeaderParameters headerParameters}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1635,7 +1646,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Opens the FileUploader dialog. When an UploadCollectionItem is provided, this method can be used to update
       * a file with a new version. In this case, the upload progress can be sequenced using the events: beforeUploadStarts,
@@ -1740,7 +1751,7 @@ object sapMUploadCollectionMod {
     ): typings.openui5.sapMUploadCollectionParameterMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Select all items in "MultiSelection" mode.
       *
@@ -1766,7 +1777,7 @@ object sapMUploadCollectionMod {
     sFileType: js.Array[String]): this.type = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Sets the aggregated {@link #getInfoToolbar infoToolbar}.
       *
@@ -1778,7 +1789,7 @@ object sapMUploadCollectionMod {
     oInfoToolbar: typings.openui5.sapMToolbarMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getInstantUpload instantUpload}.
       *
@@ -1847,7 +1858,7 @@ object sapMUploadCollectionMod {
     sMimeType: js.Array[String]): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getMode mode}.
       *
@@ -1898,7 +1909,7 @@ object sapMUploadCollectionMod {
     bMultiple: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getNoDataDescription noDataDescription}.
       *
@@ -1930,7 +1941,7 @@ object sapMUploadCollectionMod {
     sNoDataText: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getNumberOfAttachmentsText numberOfAttachmentsText}.
       *
@@ -1968,7 +1979,7 @@ object sapMUploadCollectionMod {
     bSameFilenameAllowed: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Selects or deselects the given list item.
       *
@@ -1992,7 +2003,7 @@ object sapMUploadCollectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets an UploadCollectionItem to be selected by ID. In single selection mode, the method removes the previous
       * selection.
@@ -2038,7 +2049,7 @@ object sapMUploadCollectionMod {
     sShowSeparators: ListSeparators): this.type = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Sets a new value for property {@link #getTerminationEnabled terminationEnabled}.
       *
@@ -2058,7 +2069,7 @@ object sapMUploadCollectionMod {
     bTerminationEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets the aggregated {@link #getToolbar toolbar}.
       *
@@ -2070,7 +2081,7 @@ object sapMUploadCollectionMod {
     oToolbar: typings.openui5.sapMOverflowToolbarMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * Sets a new value for property {@link #getUploadButtonInvisible uploadButtonInvisible}.
       *
@@ -2131,12 +2142,473 @@ object sapMUploadCollectionMod {
     def unbindItems(): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Starts the upload for all selected files.
       */
     def upload(): Unit = js.native
   }
+  
+  trait UploadCollection$BeforeUploadStartsEventParameters extends StObject {
+    
+    /**
+      * A function that adds a header parameter to the file that will be uploaded. The function accepts one parameter
+      * of type `sap.m.UploadCollectionParameter` which specifies the header parameter that will be added.
+      */
+    var addHeaderParameter: js.UndefOr[js.Function] = js.undefined
+    
+    /**
+      * Specifies the name of the file to be uploaded.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A function that returns the corresponding header parameter (type `sap.m.UploadCollectionParameter`) if
+      * available. The function accepts one optional parameter of type `string`, which is the name of the header
+      * parameter. If no parameter is provided all header parameters are returned.
+      */
+    var getHeaderParameter: js.UndefOr[js.Function] = js.undefined
+  }
+  object UploadCollection$BeforeUploadStartsEventParameters {
+    
+    inline def apply(): UploadCollection$BeforeUploadStartsEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$BeforeUploadStartsEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$BeforeUploadStartsEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAddHeaderParameter(value: js.Function): Self = StObject.set(x, "addHeaderParameter", value.asInstanceOf[js.Any])
+      
+      inline def setAddHeaderParameterUndefined: Self = StObject.set(x, "addHeaderParameter", js.undefined)
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setGetHeaderParameter(value: js.Function): Self = StObject.set(x, "getHeaderParameter", value.asInstanceOf[js.Any])
+      
+      inline def setGetHeaderParameterUndefined: Self = StObject.set(x, "getHeaderParameter", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$ChangeEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `files` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A FileList of individually selected files from the underlying system. See www.w3.org for the FileList
+      * Interface definition. Restriction: Internet Explorer 9 supports only single file with property file.name.
+      * Since version 1.28.0.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object UploadCollection$ChangeEventParameters {
+    
+    inline def apply(): UploadCollection$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+    }
+  }
+  
+  trait UploadCollection$FileDeletedEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `item` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * An item to be deleted from the collection. Since version 1.28.0.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadCollectionItemMod.default] = js.undefined
+  }
+  object UploadCollection$FileDeletedEventParameters {
+    
+    inline def apply(): UploadCollection$FileDeletedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$FileDeletedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$FileDeletedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapMUploadCollectionItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$FileRenamedEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `item` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The new file name. This parameter is deprecated since 1.28.0. Use the `item` parameter instead.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The renamed UI element as an UploadCollectionItem. Since 1.28.0.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadCollectionItemMod.default] = js.undefined
+  }
+  object UploadCollection$FileRenamedEventParameters {
+    
+    inline def apply(): UploadCollection$FileRenamedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$FileRenamedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$FileRenamedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setItem(value: typings.openui5.sapMUploadCollectionItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$FileSizeExceedEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `files` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The size in MB of a file to be uploaded. This parameter is deprecated since 1.28.0. Use the `files` parameter
+      * instead.
+      */
+    var fileSize: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A FileList of individually selected files from the underlying system. Restriction: Internet Explorer
+      * 9 supports only single file with property file.name. Since 1.28.0.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object UploadCollection$FileSizeExceedEventParameters {
+    
+    inline def apply(): UploadCollection$FileSizeExceedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$FileSizeExceedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$FileSizeExceedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+    }
+  }
+  
+  trait UploadCollection$FilenameLengthExceedEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `files` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A FileList of individually selected files from the underlying system. Restriction: Internet Explorer
+      * 9 supports only single file with property file.name. Since version 1.28.0.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object UploadCollection$FilenameLengthExceedEventParameters {
+    
+    inline def apply(): UploadCollection$FilenameLengthExceedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$FilenameLengthExceedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$FilenameLengthExceedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+    }
+  }
+  
+  trait UploadCollection$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * Indicates whether the `listItem` parameter is selected or not.
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The item whose selection has changed. In `MultiSelect` mode, only the topmost selected item is returned.
+      * This parameter can be used for single-selection modes.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapMUploadCollectionItemMod.default] = js.undefined
+    
+    /**
+      * Array of items whose selection has changed. This parameter can be used for `MultiSelect` mode.
+      */
+    var selectedItems: js.UndefOr[js.Array[typings.openui5.sapMUploadCollectionItemMod.default]] = js.undefined
+  }
+  object UploadCollection$SelectionChangeEventParameters {
+    
+    inline def apply(): UploadCollection$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItem(value: typings.openui5.sapMUploadCollectionItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+      
+      inline def setSelectedItems(value: js.Array[typings.openui5.sapMUploadCollectionItemMod.default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: typings.openui5.sapMUploadCollectionItemMod.default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$TypeMissmatchEventParameters extends StObject {
+    
+    /**
+      * A unique Id of the attached document. This parameter is deprecated since 1.28.0. Use the `files` parameter
+      * instead.
+      */
+    var documentId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * File type. This parameter is deprecated since 1.28.0. Use the `files` parameter instead.
+      */
+    var fileType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A FileList of individually selected files from the underlying system. Restriction: Internet Explorer
+      * 9 supports only single file. Since 1.28.0.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * MIME type. This parameter is deprecated since 1.28.0. Use the `files` parameter instead.
+      */
+    var mimeType: js.UndefOr[String] = js.undefined
+  }
+  object UploadCollection$TypeMissmatchEventParameters {
+    
+    inline def apply(): UploadCollection$TypeMissmatchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$TypeMissmatchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$TypeMissmatchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+      
+      inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      
+      inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+      
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$UploadCompleteEventParameters extends StObject {
+    
+    /**
+      * A list of uploaded files. Each entry contains the following members. fileName : The name of a file to
+      * be uploaded. response : Response message which comes from the server. On the server side, this response
+      * has to be put within the 'body' tags of the response document of the iFrame. It can consist of a return
+      * code and an optional message. This does not work in cross-domain scenarios. reponse : deprecated Since
+      * version 1.48.0. This parameter is deprecated, use parameter response instead. responseRaw : HTTP-Response
+      * which comes from the server. This property is not supported by Internet Explorer Versions lower than
+      * 9. status : Status of the XHR request. This property is not supported by Internet Explorer 9 and lower.
+      * headers : HTTP-Response-Headers which come from the server. Provided as a JSON-map, i.e. each header-field
+      * is reflected by a property in the header-object, with the property value reflecting the header-field's
+      * content. This property is not supported by Internet Explorer 9 and lower. Since 1.28.0.
+      */
+    var files: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * Ready state XHR. This parameter is deprecated since 1.28.0. Use the `files` parameter instead.
+      */
+    var readyStateXHR: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Response of the completed upload request. This parameter is deprecated since 1.28.0. Use the `files`
+      * parameter instead.
+      */
+    var response: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Status Code of the completed upload event. This parameter is deprecated since 1.28.0. Use the `files`
+      * parameter instead.
+      */
+    var status: js.UndefOr[String] = js.undefined
+  }
+  object UploadCollection$UploadCompleteEventParameters {
+    
+    inline def apply(): UploadCollection$UploadCompleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$UploadCompleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$UploadCompleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFiles(value: js.Array[js.Object]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
+      
+      inline def setReadyStateXHR(value: String): Self = StObject.set(x, "readyStateXHR", value.asInstanceOf[js.Any])
+      
+      inline def setReadyStateXHRUndefined: Self = StObject.set(x, "readyStateXHR", js.undefined)
+      
+      inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    }
+  }
+  
+  trait UploadCollection$UploadTerminatedEventParameters extends StObject {
+    
+    /**
+      * Specifies the name of the file of which the upload is to be terminated.
+      */
+    var fileName: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A function that returns the corresponding header parameter (type `sap.m.UploadCollectionParameter`) if
+      * available. The function accepts one optional parameter of type `string`, which is the name of the header
+      * parameter. If no parameter is provided all header parameters are returned.
+      */
+    var getHeaderParameter: js.UndefOr[js.Function] = js.undefined
+  }
+  object UploadCollection$UploadTerminatedEventParameters {
+    
+    inline def apply(): UploadCollection$UploadTerminatedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UploadCollection$UploadTerminatedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollection$UploadTerminatedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      
+      inline def setGetHeaderParameter(value: js.Function): Self = StObject.set(x, "getHeaderParameter", value.asInstanceOf[js.Any])
+      
+      inline def setGetHeaderParameterUndefined: Self = StObject.set(x, "getHeaderParameter", js.undefined)
+    }
+  }
+  
+  type UploadCollectionBeforeUploadStartsEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$BeforeUploadStartsEventParameters]
+  
+  type UploadCollectionBeforeUploadStartsEventParameters = UploadCollection$BeforeUploadStartsEventParameters
+  
+  type UploadCollectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$ChangeEventParameters]
+  
+  type UploadCollectionChangeEventParameters = UploadCollection$ChangeEventParameters
+  
+  type UploadCollectionFileDeletedEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileDeletedEventParameters]
+  
+  type UploadCollectionFileDeletedEventParameters = UploadCollection$FileDeletedEventParameters
+  
+  type UploadCollectionFileRenamedEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileRenamedEventParameters]
+  
+  type UploadCollectionFileRenamedEventParameters = UploadCollection$FileRenamedEventParameters
+  
+  type UploadCollectionFileSizeExceedEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileSizeExceedEventParameters]
+  
+  type UploadCollectionFileSizeExceedEventParameters = UploadCollection$FileSizeExceedEventParameters
+  
+  type UploadCollectionFilenameLengthExceedEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$FilenameLengthExceedEventParameters]
+  
+  type UploadCollectionFilenameLengthExceedEventParameters = UploadCollection$FilenameLengthExceedEventParameters
+  
+  type UploadCollectionSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters]
+  
+  type UploadCollectionSelectionChangeEventParameters = UploadCollection$SelectionChangeEventParameters
   
   trait UploadCollectionSettings
     extends StObject
@@ -2146,30 +2618,55 @@ object sapMUploadCollectionMod {
       * The event is triggered before the actual upload starts. An event is fired per file. All the necessary
       * header parameters should be set here.
       */
-    var beforeUploadStarts: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeUploadStarts: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$BeforeUploadStartsEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is triggered when files are selected in the FileUploader dialog. Applications can set parameters
       * and headerParameters which will be dispatched to the embedded FileUploader control. Restriction: parameters
       * and headerParameters are not supported by Internet Explorer 9.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is triggered when an uploaded attachment is selected and the Delete button is pressed.
       */
-    var fileDeleted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileDeleted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileDeletedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is triggered when the file name is changed.
       */
-    var fileRenamed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileRenamed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileRenamedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is triggered when the file size of an uploaded file is exceeded (only if the maxFileSize property
       * was provided by the application). This event is not supported by Internet Explorer 9.
       */
-    var fileSizeExceed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileSizeExceed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileSizeExceedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the allowed file types for the upload. The chosen files will be checked against an array of file
@@ -2184,7 +2681,12 @@ object sapMUploadCollectionMod {
       * The event is triggered when the name of a chosen file is longer than the value specified with the maximumFilenameLength
       * property (only if provided by the application).
       */
-    var filenameLengthExceed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filenameLengthExceed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FilenameLengthExceedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies the header parameters for the FileUploader that are submitted only with XHR requests. Header
@@ -2195,14 +2697,14 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Specifies the info toolbar for filtering information. Sorting information will not displayed.
       */
     var infoToolbar: js.UndefOr[typings.openui5.sapMToolbarMod.default] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * If false, no upload is triggered when a file is selected. In addition, if a file was selected, a new
       * FileUploader instance is created to ensure that multiple files can be chosen.
@@ -2242,7 +2744,7 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Defines the selection mode of the control (e.g. None, SingleSelect, MultiSelect, SingleSelectLeft, SingleSelectMaster).
       * Since the UploadCollection reacts like a list for attachments, the API is close to the ListBase Interface.
@@ -2267,7 +2769,7 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Allows you to set your own text for the 'No data' description label.
       */
@@ -2279,7 +2781,7 @@ object sapMUploadCollectionMod {
     var noDataText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets the title text in the toolbar of the list of attachments. To show as well the number of attachments
       * in brackets like the default text does. The number of attachments could be retrieved via "getItems().length".
@@ -2304,11 +2806,16 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Fires when selection is changed via user interaction inside the control.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether separators are shown between list items.
@@ -2318,7 +2825,7 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * If true, the button that is used to terminate the instant file upload gets visible. The button normally
       * appears when a file is being uploaded.
@@ -2328,7 +2835,7 @@ object sapMUploadCollectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Specifies the toolbar.
       */
@@ -2338,10 +2845,15 @@ object sapMUploadCollectionMod {
       * The event is triggered when the file type or the MIME type don't match the permitted types (only if the
       * fileType property or the mimeType property are provided by the application).
       */
-    var typeMissmatch: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var typeMissmatch: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$TypeMissmatchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.42.0
+      * @since 1.42.0
       *
       * If true, the button used for uploading files is invisible.
       */
@@ -2352,7 +2864,12 @@ object sapMUploadCollectionMod {
     /**
       * The event is triggered as soon as the upload request is completed.
       */
-    var uploadComplete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadComplete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadCompleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Enables the upload of a file. If property instantUpload is false it is not allowed to change uploadEnabled
@@ -2365,7 +2882,12 @@ object sapMUploadCollectionMod {
     /**
       * The event is triggered as soon as the upload request was terminated by the user.
       */
-    var uploadTerminated: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadTerminated: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadTerminatedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies the URL where the uploaded files have to be stored.
@@ -2382,23 +2904,33 @@ object sapMUploadCollectionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: UploadCollectionSettings] (val x: Self) extends AnyVal {
       
-      inline def setBeforeUploadStarts(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeUploadStarts", js.Any.fromFunction1(value))
+      inline def setBeforeUploadStarts(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$BeforeUploadStartsEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeUploadStarts", js.Any.fromFunction1(value))
       
       inline def setBeforeUploadStartsUndefined: Self = StObject.set(x, "beforeUploadStarts", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      inline def setFileDeleted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileDeleted", js.Any.fromFunction1(value))
+      inline def setFileDeleted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileDeletedEventParameters] => Unit
+      ): Self = StObject.set(x, "fileDeleted", js.Any.fromFunction1(value))
       
       inline def setFileDeletedUndefined: Self = StObject.set(x, "fileDeleted", js.undefined)
       
-      inline def setFileRenamed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileRenamed", js.Any.fromFunction1(value))
+      inline def setFileRenamed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileRenamedEventParameters] => Unit
+      ): Self = StObject.set(x, "fileRenamed", js.Any.fromFunction1(value))
       
       inline def setFileRenamedUndefined: Self = StObject.set(x, "fileRenamed", js.undefined)
       
-      inline def setFileSizeExceed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileSizeExceed", js.Any.fromFunction1(value))
+      inline def setFileSizeExceed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FileSizeExceedEventParameters] => Unit
+      ): Self = StObject.set(x, "fileSizeExceed", js.Any.fromFunction1(value))
       
       inline def setFileSizeExceedUndefined: Self = StObject.set(x, "fileSizeExceed", js.undefined)
       
@@ -2410,7 +2942,9 @@ object sapMUploadCollectionMod {
       
       inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value*))
       
-      inline def setFilenameLengthExceed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filenameLengthExceed", js.Any.fromFunction1(value))
+      inline def setFilenameLengthExceed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$FilenameLengthExceedEventParameters] => Unit
+      ): Self = StObject.set(x, "filenameLengthExceed", js.Any.fromFunction1(value))
       
       inline def setFilenameLengthExceedUndefined: Self = StObject.set(x, "filenameLengthExceed", js.undefined)
       
@@ -2488,7 +3022,9 @@ object sapMUploadCollectionMod {
       
       inline def setSameFilenameAllowedUndefined: Self = StObject.set(x, "sameFilenameAllowed", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
@@ -2506,7 +3042,9 @@ object sapMUploadCollectionMod {
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
-      inline def setTypeMissmatch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "typeMissmatch", js.Any.fromFunction1(value))
+      inline def setTypeMissmatch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$TypeMissmatchEventParameters] => Unit
+      ): Self = StObject.set(x, "typeMissmatch", js.Any.fromFunction1(value))
       
       inline def setTypeMissmatchUndefined: Self = StObject.set(x, "typeMissmatch", js.undefined)
       
@@ -2514,7 +3052,9 @@ object sapMUploadCollectionMod {
       
       inline def setUploadButtonInvisibleUndefined: Self = StObject.set(x, "uploadButtonInvisible", js.undefined)
       
-      inline def setUploadComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadComplete", js.Any.fromFunction1(value))
+      inline def setUploadComplete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadCompleteEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadComplete", js.Any.fromFunction1(value))
       
       inline def setUploadCompleteUndefined: Self = StObject.set(x, "uploadComplete", js.undefined)
       
@@ -2522,7 +3062,9 @@ object sapMUploadCollectionMod {
       
       inline def setUploadEnabledUndefined: Self = StObject.set(x, "uploadEnabled", js.undefined)
       
-      inline def setUploadTerminated(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadTerminated", js.Any.fromFunction1(value))
+      inline def setUploadTerminated(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadTerminatedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadTerminated", js.Any.fromFunction1(value))
       
       inline def setUploadTerminatedUndefined: Self = StObject.set(x, "uploadTerminated", js.undefined)
       
@@ -2531,4 +3073,16 @@ object sapMUploadCollectionMod {
       inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
     }
   }
+  
+  type UploadCollectionTypeMissmatchEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$TypeMissmatchEventParameters]
+  
+  type UploadCollectionTypeMissmatchEventParameters = UploadCollection$TypeMissmatchEventParameters
+  
+  type UploadCollectionUploadCompleteEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadCompleteEventParameters]
+  
+  type UploadCollectionUploadCompleteEventParameters = UploadCollection$UploadCompleteEventParameters
+  
+  type UploadCollectionUploadTerminatedEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollection$UploadTerminatedEventParameters]
+  
+  type UploadCollectionUploadTerminatedEventParameters = UploadCollection$UploadTerminatedEventParameters
 }

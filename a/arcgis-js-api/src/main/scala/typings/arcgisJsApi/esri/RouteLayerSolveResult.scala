@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteLayerSolveResult extends StObject {
   
   /**
-    * Represents polyline segments associated with individual direction items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Represents polyline segments associated with individual direction items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var directionLines: Collection[DirectionLine]
   
   /**
-    * Represents direction items as points with various display information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Represents direction items as points with various display information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var directionPoints: Collection[DirectionPoint]
   
   /**
-    * Point barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Point barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var pointBarriers: js.UndefOr[Collection[PointBarrier]] = js.undefined
   
   /**
-    * Polygon barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Polygon barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var polygonBarriers: js.UndefOr[Collection[PolygonBarrier]] = js.undefined
   
   /**
-    * Polyline barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Polyline barrier(s) to restrict travel along a street network when using a [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var polylineBarriers: js.UndefOr[Collection[PolylineBarrier]] = js.undefined
   
   /**
-    * Contains information about a solved route including the routes geometry and overall distance and time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Contains information about a solved route including the routes geometry and overall distance and time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var routeInfo: RouteInfo
   
   /**
-    * Respresents the start, end, or midpoint of a route created using the [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
-    */
+  		 * Respresents the start, end, or midpoint of a route created using the [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#RouteLayerSolveResult)
+  		 */
   var stops: Collection[Stop]
 }
 object RouteLayerSolveResult {

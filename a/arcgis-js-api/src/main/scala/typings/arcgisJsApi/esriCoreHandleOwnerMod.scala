@@ -11,10 +11,10 @@ object esriCoreHandleOwnerMod {
   @JSImport("esri/core/HandleOwner", JSImport.Namespace)
   @js.native
   /**
-    * Provides a single [handles](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles) property to be shared with all subclasses.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html)
-    */
+  		 * Provides a single [handles](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles) property to be shared with all subclasses.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html)
+  		 */
   open class ^ ()
     extends StObject
        with HandleOwner {

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnowledgeGraphProperties extends StObject {
   
   /**
-    * The url to a hosted knowledge graph.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html#url)
-    */
+  		 * The url to a hosted knowledge graph.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html#url)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object KnowledgeGraphProperties {

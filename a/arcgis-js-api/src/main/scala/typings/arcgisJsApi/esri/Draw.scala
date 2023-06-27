@@ -17,24 +17,24 @@ trait Draw
      with Accessor {
   
   /**
-    * A reference to the active [draw action](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#activeAction)
-    */
+  		 * A reference to the active [draw action](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#activeAction)
+  		 */
   var activeAction: DrawAction = js.native
   
   /**
-    * Complete the current active drawing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#complete)
-    */
+  		 * Complete the current active drawing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#complete)
+  		 */
   def complete(): scala.Unit = js.native
   
   /**
-    * Creates an instance of the requested draw action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
-    */
+  		 * Creates an instance of the requested draw action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
+  		 */
   def create(drawAction: point | multipoint | polyline | polygon | rectangle | circle | ellipse): DrawAction = js.native
   def create(
     drawAction: point | multipoint | polyline | polygon | rectangle | circle | ellipse,
@@ -42,16 +42,16 @@ trait Draw
   ): DrawAction = js.native
   
   /**
-    * Resets the drawing by clearing the active action.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#reset)
-    */
+  		 * Resets the drawing by clearing the active action.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#reset)
+  		 */
   def reset(): scala.Unit = js.native
   
   /**
-    * The view in which geometries will be drawn by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#view)
-    */
+  		 * The view in which geometries will be drawn by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#view)
+  		 */
   var view: MapView | SceneView = js.native
 }

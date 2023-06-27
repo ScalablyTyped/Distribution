@@ -13,9 +13,9 @@ trait ViewConstructor
      with Instantiable1[/* properties */ ViewProperties, View] {
   
   /**
-    * Contains the collection of active views on the page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#views)
-    */
+  		 * Contains the collection of active views on the page.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#views)
+  		 */
   val views: Collection[View] = js.native
 }

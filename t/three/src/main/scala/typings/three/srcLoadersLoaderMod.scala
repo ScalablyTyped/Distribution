@@ -51,7 +51,7 @@ object srcLoadersLoaderMod {
     def setWithCredentials(value: Boolean): this.type = js.native
     
     /**
-      * @default: false
+      * @default false
       */
     var withCredentials: Boolean = js.native
   }

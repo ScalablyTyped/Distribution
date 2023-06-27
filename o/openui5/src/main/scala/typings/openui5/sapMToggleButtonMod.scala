@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.Pressed
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMButtonMod.Button$PressEventParameters
 import typings.openui5.sapMButtonMod.ButtonSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.std.Record
@@ -124,10 +124,12 @@ object sapMToggleButtonMod {
   trait ToggleButton
     extends typings.openui5.sapMButtonMod.default {
     
-    def firePress(/**
+    def firePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Pressed): this.type = js.native
+    mParameters: ToggleButton$PressEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getPressed pressed}.
@@ -158,9 +160,49 @@ object sapMToggleButtonMod {
     bPressed: Boolean): this.type = js.native
   }
   
+  trait ToggleButton$PressEventParameters
+    extends StObject
+       with Button$PressEventParameters {
+    
+    /**
+      * The current pressed state of the control.
+      */
+    var pressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object ToggleButton$PressEventParameters {
+    
+    inline def apply(): ToggleButton$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ToggleButton$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButton$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+      
+      inline def setPressedUndefined: Self = StObject.set(x, "pressed", js.undefined)
+    }
+  }
+  
+  type ToggleButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[ToggleButton$PressEventParameters]
+  
+  type ToggleButtonPressEventParameters = ToggleButton$PressEventParameters
+  
   trait ToggleButtonSettings
     extends StObject
        with ButtonSettings {
+    
+    /**
+      * Fired when the user clicks or taps on the control.
+      */
+    @JSName("press")
+    var press_ToggleButtonSettings: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ToggleButton$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The property is “true” when the control is toggled. The default state of this property is "false".
@@ -178,6 +220,12 @@ object sapMToggleButtonMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ToggleButtonSettings] (val x: Self) extends AnyVal {
+      
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ToggleButton$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      
+      inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
       inline def setPressed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       

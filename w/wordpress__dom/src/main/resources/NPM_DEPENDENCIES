@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/dom" : "3.33.0"
+      "@wordpress/dom" : "3.35.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/dom" : "3.33.0"
+      "@wordpress/dom" : "3.35.0"
     }
   ],
   "compile-devDependencies" : [

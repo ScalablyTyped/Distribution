@@ -1,10 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Chunk
-import typings.openui5.anon.ItemId
-import typings.openui5.anon.Live
-import typings.openui5.anon.NewValue
-import typings.openui5.anon.Query
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -178,13 +173,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit]
     ): this.type = js.native
     def attachChunkAdded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -209,7 +204,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit]
     ): this.type = js.native
     def attachChunkAdded(
       /**
@@ -220,7 +215,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -241,13 +236,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit]
     ): this.type = js.native
     def attachFilterChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -272,7 +267,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit]
     ): this.type = js.native
     def attachFilterChange(
       /**
@@ -283,7 +278,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -304,13 +299,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -335,7 +330,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -346,7 +341,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -367,13 +362,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit]
     ): this.type = js.native
     def attachToggleLive(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -398,7 +393,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit]
     ): this.type = js.native
     def attachToggleLive(
       /**
@@ -409,7 +404,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -431,13 +426,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachToolsItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -463,7 +458,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachToolsItemSelected(
       /**
@@ -474,7 +469,7 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feed` itself
       */
@@ -552,13 +547,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit]
     ): this.type = js.native
     def detachChunkAdded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkAddedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -576,13 +571,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit]
     ): this.type = js.native
     def detachFilterChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedFilterChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -600,13 +595,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -624,13 +619,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit]
     ): this.type = js.native
     def detachToggleLive(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToggleLiveEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -649,13 +644,13 @@ object sapUiUx3FeedMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachToolsItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedToolsItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -663,7 +658,7 @@ object sapUiUx3FeedMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:chunkAdded chunkAdded} to attached listeners.
       *
@@ -673,10 +668,10 @@ object sapUiUx3FeedMod {
     def fireChunkAdded(/**
       * Parameters to pass along with the event
       */
-    mParameters: Chunk): this.type = js.native
+    mParameters: Feed$ChunkAddedEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filterChange filterChange} to attached listeners.
       *
@@ -686,10 +681,10 @@ object sapUiUx3FeedMod {
     def fireFilterChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: NewValue): this.type = js.native
+    mParameters: Feed$FilterChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
@@ -699,10 +694,10 @@ object sapUiUx3FeedMod {
     def fireSearch(/**
       * Parameters to pass along with the event
       */
-    mParameters: Query): this.type = js.native
+    mParameters: Feed$SearchEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleLive toggleLive} to attached listeners.
       *
@@ -712,20 +707,22 @@ object sapUiUx3FeedMod {
     def fireToggleLive(/**
       * Parameters to pass along with the event
       */
-    mParameters: Live): this.type = js.native
+    mParameters: Feed$ToggleLiveEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toolsItemSelected toolsItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToolsItemSelected(): this.type = js.native
-    def fireToolsItemSelected(/**
+    def fireToolsItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemId): this.type = js.native
+    mParameters: Feed$ToolsItemSelectedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getChunks chunks}.
@@ -1050,6 +1047,142 @@ object sapUiUx3FeedMod {
     def unbindToolsMenuItems(): this.type = js.native
   }
   
+  trait Feed$ChunkAddedEventParameters extends StObject {
+    
+    /**
+      * New chunk
+      */
+    var chunk: js.UndefOr[typings.openui5.sapUiUx3FeedChunkMod.default] = js.undefined
+  }
+  object Feed$ChunkAddedEventParameters {
+    
+    inline def apply(): Feed$ChunkAddedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feed$ChunkAddedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed$ChunkAddedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChunk(value: typings.openui5.sapUiUx3FeedChunkMod.default): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      
+      inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+    }
+  }
+  
+  trait Feed$FilterChangeEventParameters extends StObject {
+    
+    /**
+      * The new/changed value of the filter
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object Feed$FilterChangeEventParameters {
+    
+    inline def apply(): Feed$FilterChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feed$FilterChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed$FilterChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait Feed$SearchEventParameters extends StObject {
+    
+    /**
+      * The search query
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object Feed$SearchEventParameters {
+    
+    inline def apply(): Feed$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feed$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  trait Feed$ToggleLiveEventParameters extends StObject {
+    
+    /**
+      * Current live indicator
+      */
+    var live: js.UndefOr[Boolean] = js.undefined
+  }
+  object Feed$ToggleLiveEventParameters {
+    
+    inline def apply(): Feed$ToggleLiveEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feed$ToggleLiveEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed$ToggleLiveEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+      
+      inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
+    }
+  }
+  
+  trait Feed$ToolsItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUnifiedMenuItemBaseMod.default] = js.undefined
+    
+    /**
+      * The Id of the selected item
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object Feed$ToolsItemSelectedEventParameters {
+    
+    inline def apply(): Feed$ToolsItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feed$ToolsItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed$ToolsItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiUnifiedMenuItemBaseMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type FeedChunkAddedEvent = typings.openui5.sapUiBaseEventMod.default[Feed$ChunkAddedEventParameters]
+  
+  type FeedChunkAddedEventParameters = Feed$ChunkAddedEventParameters
+  
+  type FeedFilterChangeEvent = typings.openui5.sapUiBaseEventMod.default[Feed$FilterChangeEventParameters]
+  
+  type FeedFilterChangeEventParameters = Feed$FilterChangeEventParameters
+  
+  type FeedSearchEvent = typings.openui5.sapUiBaseEventMod.default[Feed$SearchEventParameters]
+  
+  type FeedSearchEventParameters = Feed$SearchEventParameters
+  
   trait FeedSettings
     extends StObject
        with ControlSettings {
@@ -1057,7 +1190,12 @@ object sapUiUx3FeedMod {
     /**
       * Event is fired when a new chunk is added
       */
-    var chunkAdded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var chunkAdded: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ChunkAddedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The chunks
@@ -1079,7 +1217,12 @@ object sapUiUx3FeedMod {
     /**
       * Event is fired when the filter is changed
       */
-    var filterChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filterChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$FilterChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Items of the filter
@@ -1098,7 +1241,12 @@ object sapUiUx3FeedMod {
     /**
       * Event is fired when the search function on SearchField is triggered
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Title text of the Feed. If no text is entered "FEED" is displayed.
@@ -1108,12 +1256,22 @@ object sapUiUx3FeedMod {
     /**
       * Event is fired when the live mode has changed
       */
-    var toggleLive: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleLive: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ToggleLiveEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when an item from the tools MenuButton was selected
       */
-    var toolsItemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toolsItemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ToolsItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * MenuItems to open when the tool button is clicked by the user
@@ -1132,7 +1290,9 @@ object sapUiUx3FeedMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FeedSettings] (val x: Self) extends AnyVal {
       
-      inline def setChunkAdded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "chunkAdded", js.Any.fromFunction1(value))
+      inline def setChunkAdded(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ChunkAddedEventParameters] => Unit
+      ): Self = StObject.set(x, "chunkAdded", js.Any.fromFunction1(value))
       
       inline def setChunkAddedUndefined: Self = StObject.set(x, "chunkAdded", js.undefined)
       
@@ -1152,7 +1312,9 @@ object sapUiUx3FeedMod {
       
       inline def setFeederThumbnailSrcUndefined: Self = StObject.set(x, "feederThumbnailSrc", js.undefined)
       
-      inline def setFilterChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filterChange", js.Any.fromFunction1(value))
+      inline def setFilterChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$FilterChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "filterChange", js.Any.fromFunction1(value))
       
       inline def setFilterChangeUndefined: Self = StObject.set(x, "filterChange", js.undefined)
       
@@ -1168,7 +1330,7 @@ object sapUiUx3FeedMod {
       
       inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$SearchEventParameters] => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
@@ -1176,11 +1338,15 @@ object sapUiUx3FeedMod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setToggleLive(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleLive", js.Any.fromFunction1(value))
+      inline def setToggleLive(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ToggleLiveEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleLive", js.Any.fromFunction1(value))
       
       inline def setToggleLiveUndefined: Self = StObject.set(x, "toggleLive", js.undefined)
       
-      inline def setToolsItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toolsItemSelected", js.Any.fromFunction1(value))
+      inline def setToolsItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feed$ToolsItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "toolsItemSelected", js.Any.fromFunction1(value))
       
       inline def setToolsItemSelectedUndefined: Self = StObject.set(x, "toolsItemSelected", js.undefined)
       
@@ -1193,4 +1359,12 @@ object sapUiUx3FeedMod {
       inline def setToolsMenuItemsVarargs(value: typings.openui5.sapUiCommonsMenuItemMod.default*): Self = StObject.set(x, "toolsMenuItems", js.Array(value*))
     }
   }
+  
+  type FeedToggleLiveEvent = typings.openui5.sapUiBaseEventMod.default[Feed$ToggleLiveEventParameters]
+  
+  type FeedToggleLiveEventParameters = Feed$ToggleLiveEventParameters
+  
+  type FeedToolsItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Feed$ToolsItemSelectedEventParameters]
+  
+  type FeedToolsItemSelectedEventParameters = Feed$ToolsItemSelectedEventParameters
 }

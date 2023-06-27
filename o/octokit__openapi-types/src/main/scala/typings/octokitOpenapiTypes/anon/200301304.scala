@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200301304` extends StObject {
   
   /** @description Response */
-  var `200`: Content480
+  var `200`: Content561
   
-  var `301`: Content36
+  var `301`: Content41
   
-  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
 }
 object `200301304` {
   
   inline def apply(
-    `200`: Content480,
-    `301`: Content36,
-    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
-    `403`: Content36,
-    `404`: Content36
+    `200`: Content561,
+    `301`: Content41,
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any,
+    `403`: Content41,
+    `404`: Content41
   ): `200301304` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -38,16 +38,16 @@ object `200301304` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `200301304`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content480): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content561): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set301(value: Content36): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
+    inline def set301(value: Content41): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
     
     inline def set304(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabels['not_modified'] */ js.Any
     ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

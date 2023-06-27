@@ -1,19 +1,19 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.Emulation.SetDeviceMetricsOverrideRequest
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetCPUThrottlingRateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `87` extends StObject {
   
-  var paramsType: js.Array[SetDeviceMetricsOverrideRequest]
+  var paramsType: js.Array[SetCPUThrottlingRateRequest]
   
   var returnType: Unit
 }
 object `87` {
   
-  inline def apply(paramsType: js.Array[SetDeviceMetricsOverrideRequest], returnType: Unit): `87` = {
+  inline def apply(paramsType: js.Array[SetCPUThrottlingRateRequest], returnType: Unit): `87` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`87`]
   }
@@ -21,9 +21,9 @@ object `87` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `87`] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[SetDeviceMetricsOverrideRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetCPUThrottlingRateRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetDeviceMetricsOverrideRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: SetCPUThrottlingRateRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

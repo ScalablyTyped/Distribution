@@ -13,10 +13,10 @@ trait PolylineBarrierConstructor
      with Instantiable1[/* properties */ PolylineBarrierProperties, PolylineBarrier] {
   
   /**
-    * Creates a [PolylineBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html#fromGraphic)
-    */
+  		 * Creates a [PolylineBarrier](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html) from the parsed [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolylineBarrier.html#fromGraphic)
+  		 */
   def fromGraphic(): PolylineBarrier = js.native
   def fromGraphic(graphic: Graphic): PolylineBarrier = js.native
   

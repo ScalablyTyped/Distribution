@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreControlMod.default
+import typings.openui5.sapBaseI18nResourceBundleMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,43 +8,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Content extends StObject {
   
   /**
-    * The content of the currently viewed page that was previously added via {@link sap.m.SelectionDetailsFacade#navTo}.
-    * This contains the content of the page before the navigation was triggered. Can be null in case of first
-    * event triggering.
+    * is the special hexadecimal code without the prefix, for example "e000" or several of them
     */
-  var content: js.UndefOr[default] = js.undefined
+  var content: String | js.Array[String]
   
   /**
-    * Direction of the triggered navigation, possible values are "to" and "back".
+    * is the name of the font when importing the font using @font-face in CSS
     */
-  var direction: js.UndefOr[String] = js.undefined
+  var fontFamily: String
   
   /**
-    * The item on which the action has been pressed. Can be null in case a navigation was done without item
-    * context, e.g. action press.
+    * indicates if already registered icons should be overwritten when the same name and collection are given.
+    * The built in icons can never be overwritten.
     */
-  var item: js.UndefOr[typings.openui5.sapMSelectionDetailsItemMod.default] = js.undefined
+  var overWrite: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * ResourceBundle to be used for translation. Key format: "Icon.".
+    */
+  var resourceBundle: js.UndefOr[default] = js.undefined
+  
+  /**
+    * indicates whether this icon should NOT be mirrored in RTL (right to left) mode.
+    */
+  var suppressMirroring: js.UndefOr[Boolean] = js.undefined
 }
 object Content {
   
-  inline def apply(): Content = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(content: String | js.Array[String], fontFamily: String): Content = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: default): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value*))
     
-    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setOverWrite(value: Boolean): Self = StObject.set(x, "overWrite", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: typings.openui5.sapMSelectionDetailsItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setOverWriteUndefined: Self = StObject.set(x, "overWrite", js.undefined)
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setResourceBundle(value: default): Self = StObject.set(x, "resourceBundle", value.asInstanceOf[js.Any])
+    
+    inline def setResourceBundleUndefined: Self = StObject.set(x, "resourceBundle", js.undefined)
+    
+    inline def setSuppressMirroring(value: Boolean): Self = StObject.set(x, "suppressMirroring", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressMirroringUndefined: Self = StObject.set(x, "suppressMirroring", js.undefined)
   }
 }

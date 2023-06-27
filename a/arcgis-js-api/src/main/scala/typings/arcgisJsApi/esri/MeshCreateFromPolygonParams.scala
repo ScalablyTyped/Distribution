@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreateFromPolygonParams extends StObject {
   
   /**
-    * The material to be used for the mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
-    */
+  		 * The material to be used for the mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
+  		 */
   var material: js.UndefOr[MeshMaterial] = js.undefined
 }
 object MeshCreateFromPolygonParams {

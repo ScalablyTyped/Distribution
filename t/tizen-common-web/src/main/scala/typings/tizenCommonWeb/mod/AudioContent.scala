@@ -46,7 +46,7 @@ trait AudioContent
   /**
     * The lyrics of a song in an audio file.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   val lyrics: AudioContentLyrics | Null
   

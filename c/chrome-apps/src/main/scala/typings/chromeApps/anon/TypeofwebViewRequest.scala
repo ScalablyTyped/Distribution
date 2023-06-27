@@ -102,7 +102,7 @@ trait TypeofwebViewRequest extends StObject {
   /**
     * Redirects a request by applying a regular expression on the URL.
     * The regular expressions use the RE2 syntax.
-    * @see[RE2 syntax]{@link https://github.com/google/re2/blob/master/doc/syntax.txt}
+    * @see https://github.com/google/re2/blob/master/doc/syntax.txt
     */
   var RedirectByRegEx: Instantiable1[
     /* parameters */ RedirectByRegExParams, 

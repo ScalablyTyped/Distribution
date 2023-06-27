@@ -9,59 +9,59 @@ trait RelationshipRampElement
      with LegendElement {
   
   /**
-    * A 2-dimensional array of colors as displayed in the legend grid.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * A 2-dimensional array of colors as displayed in the legend grid.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var colors: js.Array[js.Array[Color_]]
   
   /**
-    * Determines the orientation of the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * Determines the orientation of the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var focus: String
   
   /**
-    * Info objects associated with the relationship renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * Info objects associated with the relationship renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var infos: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * The labels for each corner of the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * The labels for each corner of the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var labels: RelationshipLabels
   
   /**
-    * The number of classes for each field comprising the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * The number of classes for each field comprising the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var numClasses: Double
   
   /**
-    * The rotation of the legend in degrees (0-360).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * The rotation of the legend in degrees (0-360).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var rotation: Double
   
   /**
-    * The title of the renderer as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * The title of the renderer as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of this element is always `relationship-ramp`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
-    */
+  		 * The type of this element is always `relationship-ramp`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#RelationshipRampElement)
+  		 */
   var `type`: String
 }
 object RelationshipRampElement {

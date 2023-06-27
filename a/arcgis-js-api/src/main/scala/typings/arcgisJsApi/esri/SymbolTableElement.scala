@@ -9,31 +9,31 @@ trait SymbolTableElement
      with LegendElement {
   
   /**
-    * An array of each symbol/category/break rendered for the symbol table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
-    */
+  		 * An array of each symbol/category/break rendered for the symbol table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
+  		 */
   var infos: js.Array[SymbolTableElementType]
   
   /**
-    * Only used for renderers set to ImageryLayers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
-    */
+  		 * Only used for renderers set to ImageryLayers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
+  		 */
   var legendType: js.UndefOr[String] = js.undefined
   
   /**
-    * The title of the renderer as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
-    */
+  		 * The title of the renderer as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
+  		 */
   var title: js.UndefOr[String | RendererTitle] = js.undefined
   
   /**
-    * The type of this element is always `symbol-table`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
-    */
+  		 * The type of this element is always `symbol-table`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElement)
+  		 */
   var `type`: String
 }
 object SymbolTableElement {

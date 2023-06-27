@@ -9,24 +9,24 @@ trait SizeSchemeForPolygon
      with SizeScheme {
   
   /**
-    * The schema defining the backgound symbol of the feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
-    */
+  		 * The schema defining the backgound symbol of the feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+  		 */
   var background: SizeSchemeForPolygonBackground
   
   /**
-    * The scheme defining the symbology of the marker symbol used to represent polygon features by size.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
-    */
+  		 * The scheme defining the symbology of the marker symbol used to represent polygon features by size.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+  		 */
   var marker: SizeSchemeForPoint
   
   /**
-    * The opacity of the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
-    */
+  		 * The opacity of the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+  		 */
   var opacity: Double
 }
 object SizeSchemeForPolygon {

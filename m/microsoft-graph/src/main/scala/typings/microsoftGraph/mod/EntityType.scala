@@ -15,11 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.listItem
   - typings.microsoftGraph.microsoftGraphStrings.drive
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.acronym
+  - typings.microsoftGraph.microsoftGraphStrings.bookmark
   - typings.microsoftGraph.microsoftGraphStrings.chatMessage
   - typings.microsoftGraph.microsoftGraphStrings.person
 */
 trait EntityType extends StObject
 object EntityType {
+  
+  inline def acronym: typings.microsoftGraph.microsoftGraphStrings.acronym = "acronym".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.acronym]
+  
+  inline def bookmark: typings.microsoftGraph.microsoftGraphStrings.bookmark = "bookmark".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.bookmark]
   
   inline def chatMessage: typings.microsoftGraph.microsoftGraphStrings.chatMessage = "chatMessage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.chatMessage]
   

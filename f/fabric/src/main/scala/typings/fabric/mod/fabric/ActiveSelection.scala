@@ -27,7 +27,6 @@ object ActiveSelection {
   
   /**
     * Returns {@link fabric.ActiveSelection} instance from an object representation
-    * @memberOf fabric.ActiveSelection
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an ActiveSelection instance is created
     */

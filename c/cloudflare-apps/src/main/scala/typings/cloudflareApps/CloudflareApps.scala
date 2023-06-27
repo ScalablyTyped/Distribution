@@ -62,7 +62,7 @@ object CloudflareApps {
     def matchPage(patterns: js.Array[String]): Boolean = js.native
     
     def querySelector(selectors: String): Element | Null = js.native
-    def querySelector[K /* <: /* keyof cloudflare-apps.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.cloudflareApps.cloudflareAppsStrings.a, typings.cloudflareApps.cloudflareAppsStrings.abbr, typings.cloudflareApps.cloudflareAppsStrings.address */ Any */](selectors: K): (/* import warning: importer.ImportType#apply Failed type conversion: cloudflare-apps.anon.ElementTagNameMap[K] */ js.Any) | Null = js.native
+    def querySelector[K /* <: /* keyof cloudflare-apps.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.cloudflareApps.cloudflareAppsStrings.a, typings.cloudflareApps.cloudflareAppsStrings.abbr, typings.cloudflareApps.cloudflareAppsStrings.address */ Any */](selectors: K): (/* import warning: importer.ImportType#apply Failed type conversion: cloudflare-apps.anon.ElementTagNameMap[K] */ js.Any) | Null = js.native
   }
   
   trait CloudflareAppsProxy extends StObject {

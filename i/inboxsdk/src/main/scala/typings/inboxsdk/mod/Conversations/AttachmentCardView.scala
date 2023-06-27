@@ -14,7 +14,7 @@ trait AttachmentCardView extends StObject {
   def getAttachmentType(): String
   
   /**
-    * @deprecated. Use AttachmentCardClickEvent.getDownloadURL() instead
+    * @deprecated Use AttachmentCardClickEvent.getDownloadURL() instead
     */
   def getDownloadURL(): js.Promise[String]
   

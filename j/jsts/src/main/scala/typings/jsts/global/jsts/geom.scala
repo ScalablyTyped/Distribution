@@ -331,9 +331,6 @@ object geom {
   open class MultiLineString protected ()
     extends StObject
        with typings.jsts.jsts.geom.MultiLineString {
-    /**
-      * @construtor
-      */
     def this(
       lineStrings: js.Array[typings.jsts.jsts.geom.LineString],
       factory: typings.jsts.jsts.geom.GeometryFactory

@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Avatar
-import typings.openui5.anon.Button
-import typings.openui5.anon.Icon
-import typings.openui5.anon.Image
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IShellBar
 import typings.openui5.sapMBarInPageEnablerMod.BarContexts
@@ -144,8 +140,8 @@ object sapFShellBarMod {
        with IToolHeader {
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes according to the context of the page. Possible contexts are header, footer, and subheader.
       *
@@ -154,8 +150,8 @@ object sapFShellBarMod {
     def _applyContextClassFor(): IBar = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the HTML tag according to the context of the page. Possible contexts are header, footer, and subheader.
       *
@@ -176,8 +172,8 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes and HTML tag according to the context of the page. Possible contexts are header, footer,
       * and subheader
@@ -200,13 +196,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit]
     ): this.type = js.native
     def attachAvatarPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -231,7 +227,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit]
     ): this.type = js.native
     def attachAvatarPressed(
       /**
@@ -242,7 +238,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -264,13 +260,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit]
     ): this.type = js.native
     def attachCopilotPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -296,7 +292,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit]
     ): this.type = js.native
     def attachCopilotPressed(
       /**
@@ -307,7 +303,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -329,13 +325,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit]
     ): this.type = js.native
     def attachHomeIconPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -361,7 +357,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit]
     ): this.type = js.native
     def attachHomeIconPressed(
       /**
@@ -372,7 +368,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -394,13 +390,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachMenuButtonPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -426,7 +422,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachMenuButtonPressed(
       /**
@@ -437,7 +433,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -459,13 +455,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachNavButtonPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -491,7 +487,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachNavButtonPressed(
       /**
@@ -502,7 +498,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -524,13 +520,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit]
     ): this.type = js.native
     def attachNotificationsPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -556,7 +552,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit]
     ): this.type = js.native
     def attachNotificationsPressed(
       /**
@@ -567,7 +563,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -575,7 +571,7 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:productSwitcherPressed productSwitcherPressed}
+      * Attaches event handler `fnFunction` to the {@link #event:productSwitcherPressed productSwitcherPressed }
       * event of this `sap.f.ShellBar`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -589,20 +585,20 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit]
     ): this.type = js.native
     def attachProductSwitcherPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:productSwitcherPressed productSwitcherPressed}
+      * Attaches event handler `fnFunction` to the {@link #event:productSwitcherPressed productSwitcherPressed }
       * event of this `sap.f.ShellBar`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -621,7 +617,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit]
     ): this.type = js.native
     def attachProductSwitcherPressed(
       /**
@@ -632,7 +628,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -654,13 +650,13 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachSearchButtonPressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -686,7 +682,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit]
     ): this.type = js.native
     def attachSearchButtonPressed(
       /**
@@ -697,7 +693,7 @@ object sapFShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ShellBar` itself
       */
@@ -726,7 +722,7 @@ object sapFShellBarMod {
     def destroyProfile(): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Destroys the searchManager in the aggregation {@link #getSearchManager searchManager}.
       *
@@ -746,13 +742,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit]
     ): this.type = js.native
     def detachAvatarPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarAvatarPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -771,13 +767,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit]
     ): this.type = js.native
     def detachCopilotPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCopilotPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -796,13 +792,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit]
     ): this.type = js.native
     def detachHomeIconPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarHomeIconPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -821,13 +817,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit]
     ): this.type = js.native
     def detachMenuButtonPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuButtonPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -846,13 +842,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit]
     ): this.type = js.native
     def detachNavButtonPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNavButtonPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -860,7 +856,7 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:notificationsPressed notificationsPressed}
+      * Detaches event handler `fnFunction` from the {@link #event:notificationsPressed notificationsPressed }
       * event of this `sap.f.ShellBar`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -871,13 +867,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit]
     ): this.type = js.native
     def detachNotificationsPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -885,7 +881,7 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:productSwitcherPressed productSwitcherPressed}
+      * Detaches event handler `fnFunction` from the {@link #event:productSwitcherPressed productSwitcherPressed }
       * event of this `sap.f.ShellBar`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -896,13 +892,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit]
     ): this.type = js.native
     def detachProductSwitcherPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitcherPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -921,13 +917,13 @@ object sapFShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit]
     ): this.type = js.native
     def detachSearchButtonPressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarSearchButtonPressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -935,108 +931,124 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:avatarPressed avatarPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAvatarPressed(): this.type = js.native
-    def fireAvatarPressed(/**
+    def fireAvatarPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Avatar): this.type = js.native
+    mParameters: ShellBar$AvatarPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:copilotPressed copilotPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCopilotPressed(): this.type = js.native
-    def fireCopilotPressed(/**
+    def fireCopilotPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Image): this.type = js.native
+    mParameters: ShellBar$CopilotPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:homeIconPressed homeIconPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireHomeIconPressed(): this.type = js.native
-    def fireHomeIconPressed(/**
+    def fireHomeIconPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Icon): this.type = js.native
+    mParameters: ShellBar$HomeIconPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:menuButtonPressed menuButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMenuButtonPressed(): this.type = js.native
-    def fireMenuButtonPressed(/**
+    def fireMenuButtonPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Button): this.type = js.native
+    mParameters: ShellBar$MenuButtonPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navButtonPressed navButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavButtonPressed(): this.type = js.native
-    def fireNavButtonPressed(/**
+    def fireNavButtonPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Button): this.type = js.native
+    mParameters: ShellBar$NavButtonPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:notificationsPressed notificationsPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNotificationsPressed(): this.type = js.native
-    def fireNotificationsPressed(/**
+    def fireNotificationsPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Button): this.type = js.native
+    mParameters: ShellBar$NotificationsPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:productSwitcherPressed productSwitcherPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireProductSwitcherPressed(): this.type = js.native
-    def fireProductSwitcherPressed(/**
+    def fireProductSwitcherPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Button): this.type = js.native
+    mParameters: ShellBar$ProductSwitcherPressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:searchButtonPressed searchButtonPressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearchButtonPressed(): this.type = js.native
-    def fireSearchButtonPressed(/**
+    def fireSearchButtonPressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Button): this.type = js.native
+    mParameters: ShellBar$SearchButtonPressedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getAdditionalContent additionalContent}.
@@ -1048,8 +1060,8 @@ object sapFShellBarMod {
     def getAdditionalContent(): js.Array[IShellBar] = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the available Bar contexts.
       *
@@ -1058,8 +1070,8 @@ object sapFShellBarMod {
     def getContext(): BarContexts = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the HTML tag of the root DOM Reference.
       *
@@ -1079,7 +1091,7 @@ object sapFShellBarMod {
     def getHomeIcon(): URI = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Gets current value of property {@link #getHomeIconTooltip homeIconTooltip}.
       *
@@ -1099,7 +1111,7 @@ object sapFShellBarMod {
     def getMenu(): typings.openui5.sapMMenuMod.default = js.native
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Gets current value of property {@link #getNotificationsNumber notificationsNumber}.
       *
@@ -1119,7 +1131,7 @@ object sapFShellBarMod {
     def getProfile(): typings.openui5.sapMAvatarMod.default = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Gets content of aggregation {@link #getSearchManager searchManager}.
       *
@@ -1248,8 +1260,8 @@ object sapFShellBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns if the bar is sensitive to the container context. Implementation of the IBar interface
       *
@@ -1285,8 +1297,8 @@ object sapFShellBarMod {
     def removeAllAdditionalContent(): js.Array[IShellBar] = js.native
     
     /**
-      * @SINCE 1.65
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.65
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the HTML tag of the root DOM Reference.
       *
@@ -1312,7 +1324,7 @@ object sapFShellBarMod {
     sHomeIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets a new value for property {@link #getHomeIconTooltip homeIconTooltip}.
       *
@@ -1351,7 +1363,7 @@ object sapFShellBarMod {
     oProfile: typings.openui5.sapMAvatarMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets the aggregated {@link #getSearchManager searchManager}.
       *
@@ -1500,6 +1512,222 @@ object sapFShellBarMod {
     sTitle: String): this.type = js.native
   }
   
+  trait ShellBar$AvatarPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var avatar: js.UndefOr[typings.openui5.sapMAvatarMod.default] = js.undefined
+  }
+  object ShellBar$AvatarPressedEventParameters {
+    
+    inline def apply(): ShellBar$AvatarPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$AvatarPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$AvatarPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAvatar(value: typings.openui5.sapMAvatarMod.default): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    }
+  }
+  
+  trait ShellBar$CopilotPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var image: js.UndefOr[typings.openui5.sapMImageMod.default] = js.undefined
+  }
+  object ShellBar$CopilotPressedEventParameters {
+    
+    inline def apply(): ShellBar$CopilotPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$CopilotPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$CopilotPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setImage(value: typings.openui5.sapMImageMod.default): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    }
+  }
+  
+  trait ShellBar$HomeIconPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the image that has been pressed
+      */
+    var icon: js.UndefOr[typings.openui5.sapMImageMod.default] = js.undefined
+  }
+  object ShellBar$HomeIconPressedEventParameters {
+    
+    inline def apply(): ShellBar$HomeIconPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$HomeIconPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$HomeIconPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIcon(value: typings.openui5.sapMImageMod.default): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    }
+  }
+  
+  trait ShellBar$MenuButtonPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var button: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ShellBar$MenuButtonPressedEventParameters {
+    
+    inline def apply(): ShellBar$MenuButtonPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$MenuButtonPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$MenuButtonPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    }
+  }
+  
+  trait ShellBar$NavButtonPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var button: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ShellBar$NavButtonPressedEventParameters {
+    
+    inline def apply(): ShellBar$NavButtonPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$NavButtonPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$NavButtonPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    }
+  }
+  
+  trait ShellBar$NotificationsPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var button: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ShellBar$NotificationsPressedEventParameters {
+    
+    inline def apply(): ShellBar$NotificationsPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$NotificationsPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$NotificationsPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    }
+  }
+  
+  trait ShellBar$ProductSwitcherPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var button: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ShellBar$ProductSwitcherPressedEventParameters {
+    
+    inline def apply(): ShellBar$ProductSwitcherPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$ProductSwitcherPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$ProductSwitcherPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    }
+  }
+  
+  trait ShellBar$SearchButtonPressedEventParameters extends StObject {
+    
+    /**
+      * Reference to the button that has been pressed
+      */
+    var button: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ShellBar$SearchButtonPressedEventParameters {
+    
+    inline def apply(): ShellBar$SearchButtonPressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$SearchButtonPressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$SearchButtonPressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setButton(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    }
+  }
+  
+  type ShellBarAvatarPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$AvatarPressedEventParameters]
+  
+  type ShellBarAvatarPressedEventParameters = ShellBar$AvatarPressedEventParameters
+  
+  type ShellBarCopilotPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$CopilotPressedEventParameters]
+  
+  type ShellBarCopilotPressedEventParameters = ShellBar$CopilotPressedEventParameters
+  
+  type ShellBarHomeIconPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$HomeIconPressedEventParameters]
+  
+  type ShellBarHomeIconPressedEventParameters = ShellBar$HomeIconPressedEventParameters
+  
+  type ShellBarMenuButtonPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuButtonPressedEventParameters]
+  
+  type ShellBarMenuButtonPressedEventParameters = ShellBar$MenuButtonPressedEventParameters
+  
+  type ShellBarNavButtonPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$NavButtonPressedEventParameters]
+  
+  type ShellBarNavButtonPressedEventParameters = ShellBar$NavButtonPressedEventParameters
+  
+  type ShellBarNotificationsPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsPressedEventParameters]
+  
+  type ShellBarNotificationsPressedEventParameters = ShellBar$NotificationsPressedEventParameters
+  
+  type ShellBarProductSwitcherPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitcherPressedEventParameters]
+  
+  type ShellBarProductSwitcherPressedEventParameters = ShellBar$ProductSwitcherPressedEventParameters
+  
+  type ShellBarSearchButtonPressedEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$SearchButtonPressedEventParameters]
+  
+  type ShellBarSearchButtonPressedEventParameters = ShellBar$SearchButtonPressedEventParameters
+  
   trait ShellBarSettings
     extends StObject
        with ControlSettings {
@@ -1516,12 +1744,22 @@ object sapFShellBarMod {
     /**
       * Fired when the profile avatar is pressed.
       */
-    var avatarPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var avatarPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$AvatarPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the SAP CoPilot icon is pressed.
       */
-    var copilotPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var copilotPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$CopilotPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the URI to the home icon, such as company or product logo.
@@ -1531,10 +1769,15 @@ object sapFShellBarMod {
     /**
       * Fired when the `homeIcon` is pressed.
       */
-    var homeIconPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var homeIconPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$HomeIconPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Defines a custom tooltip for the home icon. If not set, a default tooltip is used.
       */
@@ -1548,15 +1791,25 @@ object sapFShellBarMod {
     /**
       * Fired when the alternative menu button is pressed.
       */
-    var menuButtonPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var menuButtonPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuButtonPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the navigation/back button is pressed.
       */
-    var navButtonPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navButtonPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NavButtonPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.64
+      * @since 1.64
       *
       * Defines the displayed number of upcoming notifications.
       */
@@ -1565,12 +1818,22 @@ object sapFShellBarMod {
     /**
       * Fired when the notifications button is pressed.
       */
-    var notificationsPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var notificationsPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the product switcher button is pressed.
       */
-    var productSwitcherPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var productSwitcherPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitcherPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The profile avatar.
@@ -1580,10 +1843,15 @@ object sapFShellBarMod {
     /**
       * Fired when the search button is pressed.
       */
-    var searchButtonPressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var searchButtonPressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$SearchButtonPressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Configurable search.
       *
@@ -1662,17 +1930,23 @@ object sapFShellBarMod {
       
       inline def setAdditionalContentVarargs(value: IShellBar*): Self = StObject.set(x, "additionalContent", js.Array(value*))
       
-      inline def setAvatarPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "avatarPressed", js.Any.fromFunction1(value))
+      inline def setAvatarPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$AvatarPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "avatarPressed", js.Any.fromFunction1(value))
       
       inline def setAvatarPressedUndefined: Self = StObject.set(x, "avatarPressed", js.undefined)
       
-      inline def setCopilotPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "copilotPressed", js.Any.fromFunction1(value))
+      inline def setCopilotPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$CopilotPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "copilotPressed", js.Any.fromFunction1(value))
       
       inline def setCopilotPressedUndefined: Self = StObject.set(x, "copilotPressed", js.undefined)
       
       inline def setHomeIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "homeIcon", value.asInstanceOf[js.Any])
       
-      inline def setHomeIconPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "homeIconPressed", js.Any.fromFunction1(value))
+      inline def setHomeIconPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$HomeIconPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "homeIconPressed", js.Any.fromFunction1(value))
       
       inline def setHomeIconPressedUndefined: Self = StObject.set(x, "homeIconPressed", js.undefined)
       
@@ -1684,13 +1958,17 @@ object sapFShellBarMod {
       
       inline def setMenu(value: typings.openui5.sapMMenuMod.default): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      inline def setMenuButtonPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "menuButtonPressed", js.Any.fromFunction1(value))
+      inline def setMenuButtonPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuButtonPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "menuButtonPressed", js.Any.fromFunction1(value))
       
       inline def setMenuButtonPressedUndefined: Self = StObject.set(x, "menuButtonPressed", js.undefined)
       
       inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      inline def setNavButtonPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navButtonPressed", js.Any.fromFunction1(value))
+      inline def setNavButtonPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NavButtonPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "navButtonPressed", js.Any.fromFunction1(value))
       
       inline def setNavButtonPressedUndefined: Self = StObject.set(x, "navButtonPressed", js.undefined)
       
@@ -1698,11 +1976,15 @@ object sapFShellBarMod {
       
       inline def setNotificationsNumberUndefined: Self = StObject.set(x, "notificationsNumber", js.undefined)
       
-      inline def setNotificationsPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "notificationsPressed", js.Any.fromFunction1(value))
+      inline def setNotificationsPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "notificationsPressed", js.Any.fromFunction1(value))
       
       inline def setNotificationsPressedUndefined: Self = StObject.set(x, "notificationsPressed", js.undefined)
       
-      inline def setProductSwitcherPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "productSwitcherPressed", js.Any.fromFunction1(value))
+      inline def setProductSwitcherPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitcherPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "productSwitcherPressed", js.Any.fromFunction1(value))
       
       inline def setProductSwitcherPressedUndefined: Self = StObject.set(x, "productSwitcherPressed", js.undefined)
       
@@ -1710,7 +1992,9 @@ object sapFShellBarMod {
       
       inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      inline def setSearchButtonPressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "searchButtonPressed", js.Any.fromFunction1(value))
+      inline def setSearchButtonPressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$SearchButtonPressedEventParameters] => Unit
+      ): Self = StObject.set(x, "searchButtonPressed", js.Any.fromFunction1(value))
       
       inline def setSearchButtonPressedUndefined: Self = StObject.set(x, "searchButtonPressed", js.undefined)
       

@@ -81,6 +81,11 @@ trait Loader extends StObject {
     * Unused @deprecated
     */
   def onLoadReplace(): Unit
+  
+  /*
+    * Waits for all assets to load (checking once every 200ms) and then calls the callback
+    */
+  def waitForLoad(assets: js.Array[String], callback: js.Function0[Unit]): Unit
 }
 object Loader {
   
@@ -98,9 +103,10 @@ object Loader {
     loaded: PseudoNull | js.Function0[Unit],
     loadingN: Double,
     onLoad: Event => Unit,
-    onLoadReplace: () => Unit
+    onLoadReplace: () => Unit,
+    waitForLoad: (js.Array[String], js.Function0[Unit]) => Unit
   ): Loader = {
-    val __obj = js.Dynamic.literal(Load = js.Any.fromFunction1(Load), Replace = js.Any.fromFunction2(Replace), assets = assets.asInstanceOf[js.Any], assetsLoaded = assetsLoaded.asInstanceOf[js.Any], assetsLoading = assetsLoading.asInstanceOf[js.Any], assetsN = assetsN.asInstanceOf[js.Any], blank = blank.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], doneLoading = doneLoading.asInstanceOf[js.Any], getProgress = js.Any.fromFunction0(getProgress), loaded = loaded.asInstanceOf[js.Any], loadingN = loadingN.asInstanceOf[js.Any], onLoad = js.Any.fromFunction1(onLoad), onLoadReplace = js.Any.fromFunction0(onLoadReplace))
+    val __obj = js.Dynamic.literal(Load = js.Any.fromFunction1(Load), Replace = js.Any.fromFunction2(Replace), assets = assets.asInstanceOf[js.Any], assetsLoaded = assetsLoaded.asInstanceOf[js.Any], assetsLoading = assetsLoading.asInstanceOf[js.Any], assetsN = assetsN.asInstanceOf[js.Any], blank = blank.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], doneLoading = doneLoading.asInstanceOf[js.Any], getProgress = js.Any.fromFunction0(getProgress), loaded = loaded.asInstanceOf[js.Any], loadingN = loadingN.asInstanceOf[js.Any], onLoad = js.Any.fromFunction1(onLoad), onLoadReplace = js.Any.fromFunction0(onLoadReplace), waitForLoad = js.Any.fromFunction2(waitForLoad))
     __obj.asInstanceOf[Loader]
   }
   
@@ -140,5 +146,7 @@ object Loader {
     inline def setOnLoadReplace(value: () => Unit): Self = StObject.set(x, "onLoadReplace", js.Any.fromFunction0(value))
     
     inline def setReplace(value: (String, String) => Unit): Self = StObject.set(x, "Replace", js.Any.fromFunction2(value))
+    
+    inline def setWaitForLoad(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "waitForLoad", js.Any.fromFunction2(value))
   }
 }

@@ -10,13 +10,13 @@ trait CIMGeometricEffectOffsetHatch
      with CIMGeometricEffectType {
   
   /**
-    * The length of the offset hatch.
-    */
+  			 * The length of the offset hatch.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The spacing of the offset hatch.
-    */
+  			 * The spacing of the offset hatch.
+  			 */
   var spacing: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

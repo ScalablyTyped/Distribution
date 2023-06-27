@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingSmartMappingSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/SmartMappingSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the shared base logic for the smart mapping slider view models.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
-    */
+  		 * Provides the shared base logic for the smart mapping slider view models.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SmartMappingSliderViewModel {

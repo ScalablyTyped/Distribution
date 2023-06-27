@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new Plane instance.
   *
   * @param {Vec3} [normal] - Normal of the plane. The constructor copies this parameter. Defaults
-  * to {@link Vec3#UP}.
-  * @param {Vec3} [distance] - The distance from the plane to the origin, along its normal.
+  * to {@link Vec3.UP}.
+  * @param {number} [distance] - The distance from the plane to the origin, along its normal.
   * Defaults to 0.
   */
 open class Plane () extends StObject {
   def this(normal: Vec3) = this()
-  def this(normal: Unit, distance: Vec3) = this()
-  def this(normal: Vec3, distance: Vec3) = this()
+  def this(normal: Unit, distance: Double) = this()
+  def this(normal: Vec3, distance: Double) = this()
   
   /**
     * Copies the contents of a source Plane.

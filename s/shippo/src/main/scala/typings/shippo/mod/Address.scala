@@ -18,6 +18,8 @@ trait Address
   
   var email: js.UndefOr[String] = js.undefined
   
+  var is_complete: js.UndefOr[Boolean] = js.undefined
+  
   var is_residential: js.UndefOr[Boolean] = js.undefined
   
   var metadata: js.UndefOr[String] = js.undefined
@@ -74,6 +76,10 @@ object Address {
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setIs_complete(value: Boolean): Self = StObject.set(x, "is_complete", value.asInstanceOf[js.Any])
+    
+    inline def setIs_completeUndefined: Self = StObject.set(x, "is_complete", js.undefined)
     
     inline def setIs_residential(value: Boolean): Self = StObject.set(x, "is_residential", value.asInstanceOf[js.Any])
     

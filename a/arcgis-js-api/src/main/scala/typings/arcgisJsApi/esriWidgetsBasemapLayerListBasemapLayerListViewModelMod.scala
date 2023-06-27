@@ -11,10 +11,10 @@ object esriWidgetsBasemapLayerListBasemapLayerListViewModelMod {
   @JSImport("esri/widgets/BasemapLayerList/BasemapLayerListViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides logic for the [BasemapLayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html)
-    */
+  		 * Provides logic for the [BasemapLayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList-BasemapLayerListViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with BasemapLayerListViewModel {

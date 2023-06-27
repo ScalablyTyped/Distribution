@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.UnsupportedLayer")
 @js.native
 /**
-  * Represents an unsupported layer instance.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnsupportedLayer.html)
-  */
+		 * Represents an unsupported layer instance.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnsupportedLayer.html)
+		 */
 open class UnsupportedLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.UnsupportedLayer {

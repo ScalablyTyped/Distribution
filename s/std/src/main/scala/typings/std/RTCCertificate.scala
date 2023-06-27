@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCCertificate) */
 trait RTCCertificate extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCCertificate/expires) */
   /* standard dom */
   val expires: EpochTimeStamp
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCCertificate/getFingerprints) */
   /* standard dom */
   def getFingerprints(): js.Array[RTCDtlsFingerprint]
 }

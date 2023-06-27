@@ -8,13 +8,13 @@ trait ParametersPathPackagenamePackagetypePackageversionidUsername extends StObj
   
   var parameters: PathPackagenamePackagetypePackageversionidUsername
   
-  var responses: `401Content36403Content36`
+  var responses: `401Content41403Content41`
 }
 object ParametersPathPackagenamePackagetypePackageversionidUsername {
   
   inline def apply(
     parameters: PathPackagenamePackagetypePackageversionidUsername,
-    responses: `401Content36403Content36`
+    responses: `401Content41403Content41`
   ): ParametersPathPackagenamePackagetypePackageversionidUsername = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathPackagenamePackagetypePackageversionidUsername]
@@ -25,6 +25,6 @@ object ParametersPathPackagenamePackagetypePackageversionidUsername {
     
     inline def setParameters(value: PathPackagenamePackagetypePackageversionidUsername): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `401Content36403Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `401Content41403Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

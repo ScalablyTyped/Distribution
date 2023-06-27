@@ -32,7 +32,7 @@ open class Morph protected ()
   
   def _createTexture(name: Any, format: Any): Texture = js.native
   
-  def _findSparseSet(deltaArrays: Any, ids: Any, usedDataIndices: Any): Double = js.native
+  def _findSparseSet(deltaArrays: Any, ids: Any, usedDataIndices: Any, floatRounding: Any): Double = js.native
   
   def _init(): Unit = js.native
   

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Value
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -142,7 +141,7 @@ object sapMInputBaseMod {
     vAriaDescribedBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Adds some ariaDescribedBy into the association {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -160,7 +159,7 @@ object sapMInputBaseMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -172,7 +171,7 @@ object sapMInputBaseMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds an icon to the beginning of the input
       * See:
@@ -184,7 +183,7 @@ object sapMInputBaseMod {
     oIconSettings: js.Object): Null | typings.openui5.sapUiCoreIconMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds an icon to the end of the input
       * See:
@@ -202,7 +201,7 @@ object sapMInputBaseMod {
     ): Null | typings.openui5.sapUiCoreIconMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Applies the focus info. To be overwritten by subclasses.
       *
@@ -228,13 +227,13 @@ object sapMInputBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.InputBase` itself
       */
@@ -260,7 +259,7 @@ object sapMInputBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -271,7 +270,7 @@ object sapMInputBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.InputBase` itself
       */
@@ -279,14 +278,14 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Indicates whether the input field is in the rendering phase.
       */
     var bRenderingPhase: Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Use labels as placeholder configuration. It can be necessary for the subclasses to overwrite this when
       * native placeholder usage causes undesired input events or when placeholder attribute is not supported
@@ -310,16 +309,16 @@ object sapMInputBaseMod {
     oBindingInfo: PropertyBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Close value state message popup.
       */
     def closeValueStateMessage(): Unit = js.native
     
     /**
-      * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * @since 1.78
+      * @experimental (since 1.78) - This aggregation is experimental and provides only limited functionality.
       * Also the API might be changed in future.
       *
       * Destroys the formattedValueStateText in the aggregation {@link #getFormattedValueStateText formattedValueStateText}.
@@ -339,13 +338,13 @@ object sapMInputBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InputBaseChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -353,7 +352,7 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -363,11 +362,11 @@ object sapMInputBaseMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Value): this.type = js.native
+    mParameters: InputBase$ChangeEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.22.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires the change event for the listeners
       */
@@ -387,24 +386,22 @@ object sapMInputBaseMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the DOM element reference where the message popup is attached.
       *
@@ -413,7 +410,7 @@ object sapMInputBaseMod {
     def getDomRefForValueStateMessage(): Element = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -439,8 +436,8 @@ object sapMInputBaseMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * @since 1.78
+      * @experimental (since 1.78) - This aggregation is experimental and provides only limited functionality.
       * Also the API might be changed in future.
       *
       * Gets content of aggregation {@link #getFormattedValueStateText formattedValueStateText}.
@@ -451,8 +448,8 @@ object sapMInputBaseMod {
     def getFormattedValueStateText(): typings.openui5.sapMFormattedTextMod.default = js.native
     
     /**
-      * @SINCE 1.48
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.48
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the labels referencing this control.
       *
@@ -462,8 +459,8 @@ object sapMInputBaseMod {
     def getLabels(): js.Array[typings.openui5.sapMLabelMod.default] = js.native
     
     /**
-      * @SINCE 1.78
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.78
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the last value of the InputBase
       */
@@ -488,7 +485,7 @@ object sapMInputBaseMod {
     def getPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.38.4
+      * @since 1.38.4
       *
       * Gets current value of property {@link #getRequired required}.
       *
@@ -503,8 +500,8 @@ object sapMInputBaseMod {
     def getRequired(): Boolean = js.native
     
     /**
-      * @SINCE 1.32
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.32
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Retrieves the selected text. Only supported for input control's type of Text, Url, Tel and Password.
       *
@@ -513,7 +510,7 @@ object sapMInputBaseMod {
     def getSelectedText(): String = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getShowValueStateMessage showValueStateMessage}.
       *
@@ -526,7 +523,7 @@ object sapMInputBaseMod {
     def getShowValueStateMessage(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -539,7 +536,7 @@ object sapMInputBaseMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -561,7 +558,7 @@ object sapMInputBaseMod {
     def getValue(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the value of the accessibility description info field.
       *
@@ -581,7 +578,7 @@ object sapMInputBaseMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -605,7 +602,7 @@ object sapMInputBaseMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * indicating if a character is currently composing.
       *
@@ -615,7 +612,7 @@ object sapMInputBaseMod {
     def isComposingCharacter(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles the change event.
       *
@@ -636,7 +633,7 @@ object sapMInputBaseMod {
     sNewValue: String
     ): js.UndefOr[Boolean] = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles the change event.
       *
@@ -651,8 +648,8 @@ object sapMInputBaseMod {
     sNewValue: String): js.UndefOr[Boolean] = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook method that gets called when the input value is reverted with hitting escape. It may require to
       * re-implement this method from sub classes for control specific behaviour.
@@ -663,16 +660,16 @@ object sapMInputBaseMod {
     sValue: String): Unit = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Open value state message popup.
       */
     def openValueStateMessage(): Unit = js.native
     
     /**
-      * @SINCE 1.46
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.46
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook method to prevent the change event from being fired when the text input field loses focus.
       *
@@ -685,7 +682,7 @@ object sapMInputBaseMod {
     oEvent: Event): Boolean = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Removes all the controls in the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -694,7 +691,7 @@ object sapMInputBaseMod {
     def removeAllAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -703,7 +700,7 @@ object sapMInputBaseMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Removes an ariaDescribedBy from the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -725,7 +722,7 @@ object sapMInputBaseMod {
     vAriaDescribedBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -747,8 +744,8 @@ object sapMInputBaseMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.22.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Selects the text within the input field between the specified start and end positions. Only supported
       * for input control's type of Text, Url, Tel and Password.
@@ -767,7 +764,7 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -805,8 +802,8 @@ object sapMInputBaseMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * @since 1.78
+      * @experimental (since 1.78) - This aggregation is experimental and provides only limited functionality.
       * Also the API might be changed in future.
       *
       * Sets the aggregated {@link #getFormattedValueStateText formattedValueStateText}.
@@ -821,8 +818,8 @@ object sapMInputBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.78
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.78
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the last value of the InputBase
       */
@@ -859,7 +856,7 @@ object sapMInputBaseMod {
     sPlaceholder: String): this.type = js.native
     
     /**
-      * @SINCE 1.38.4
+      * @since 1.38.4
       *
       * Sets a new value for property {@link #getRequired required}.
       *
@@ -880,7 +877,7 @@ object sapMInputBaseMod {
     bRequired: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getShowValueStateMessage showValueStateMessage}.
       *
@@ -899,7 +896,7 @@ object sapMInputBaseMod {
     bShowValueStateMessage: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -924,7 +921,7 @@ object sapMInputBaseMod {
     sTextAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -984,7 +981,7 @@ object sapMInputBaseMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -1027,8 +1024,8 @@ object sapMInputBaseMod {
     def unbindValue(): this.type = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the DOM value of the input field and handles placeholder visibility.
       *
@@ -1040,19 +1037,46 @@ object sapMInputBaseMod {
     sValue: String): this.type = js.native
   }
   
+  trait InputBase$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new `value` of the `control`.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object InputBase$ChangeEventParameters {
+    
+    inline def apply(): InputBase$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InputBase$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputBase$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type InputBaseChangeEvent = typings.openui5.sapUiBaseEventMod.default[InputBase$ChangeEventParameters]
+  
+  type InputBaseChangeEventParameters = InputBase$ChangeEventParameters
+  
   trait InputBaseSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Association to controls / IDs that describe this control (see WAI-ARIA attribute aria-describedby).
       */
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).
       */
@@ -1062,10 +1086,15 @@ object sapMInputBaseMod {
       * Is fired when the text in the input field has changed and the focus leaves the input field or the enter
       * key is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InputBase$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Defines whether the control can be modified by the user or not. **Note:** A user can tab to non-editable
       * control, highlight it, and copy the text from it.
@@ -1083,8 +1112,8 @@ object sapMInputBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.78
-      * @EXPERIMENTAL (since 1.78) - This aggregation is experimental and provides only limited functionality.
+      * @since 1.78
+      * @experimental (since 1.78) - This aggregation is experimental and provides only limited functionality.
       * Also the API might be changed in future.
       *
       * Defines the formatted text that appears in the value state message pop-up. It can include links. If both
@@ -1103,7 +1132,7 @@ object sapMInputBaseMod {
     var placeholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.38.4
+      * @since 1.38.4
       *
       * Indicates that user input is required. This property is only needed for accessibility purposes when a
       * single relationship between the field and a label (see aggregation `labelFor` of `sap.m.Label`) cannot
@@ -1114,7 +1143,7 @@ object sapMInputBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Indicates whether the value state message should be shown or not.
       */
@@ -1123,7 +1152,7 @@ object sapMInputBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Defines the horizontal alignment of the text that is shown inside the input field.
       */
@@ -1132,7 +1161,7 @@ object sapMInputBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the text directionality of the input field, e.g. `RTL`, `LTR`
       */
@@ -1153,7 +1182,7 @@ object sapMInputBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Defines the text that appears in the value state message pop-up. If this is not specified, a default
       * text is shown from the resource bundle.
@@ -1192,7 +1221,9 @@ object sapMInputBaseMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InputBase$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

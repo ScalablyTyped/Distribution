@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Theme extends StObject {
   
   /**
-    * The Esri basemaps that pair well with the given theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
-    */
+  		 * The Esri basemaps that pair well with the given theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
+  		 */
   var basemaps: js.Array[String]
   
   /**
-    * Text describing the theme in the UI.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
-    */
+  		 * Text describing the theme in the UI.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
+  		 */
   var description: String
   
   /**
-    * The label identifying the theme in UI elements.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label identifying the theme in UI elements.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String
   
   /**
-    * The name of the theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
-    */
+  		 * The name of the theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
+  		 */
   var name: String
 }
 object Theme {

@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond those defined on the regular HTMLElement interface it also has available to it by inheritance) for manipulating ordered list elements. */
+/**
+  * Provides special properties (beyond those defined on the regular HTMLElement interface it also has available to it by inheritance) for manipulating ordered list elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOListElement)
+  */
 @js.native
 trait HTMLOListElement
   extends StObject
@@ -21,7 +25,11 @@ trait HTMLOListElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOListElement/compact)
+    */
   /* standard dom */
   var compact: scala.Boolean = js.native
   
@@ -36,13 +44,19 @@ trait HTMLOListElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOListElement/reversed) */
   /* standard dom */
   var reversed: scala.Boolean = js.native
   
-  /** The starting number. */
+  /**
+    * The starting number.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOListElement/start)
+    */
   /* standard dom */
   var start: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLOListElement/type) */
   /* standard dom */
   var `type`: java.lang.String = js.native
 }

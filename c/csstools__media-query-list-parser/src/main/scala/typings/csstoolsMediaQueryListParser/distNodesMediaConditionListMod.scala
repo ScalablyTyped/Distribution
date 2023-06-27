@@ -3,8 +3,8 @@ package typings.csstoolsMediaQueryListParser
 import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ComponentValue
 import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ContainerNode
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
-import typings.csstoolsMediaQueryListParser.anon.NodeMediaConditionListWithOrWalkerEntry
 import typings.csstoolsMediaQueryListParser.anon.NodeParent
+import typings.csstoolsMediaQueryListParser.anon.State
 import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserBooleans.`false`
 import typings.csstoolsMediaQueryListParser.distNodesMediaAndMod.MediaAnd
 import typings.csstoolsMediaQueryListParser.distNodesMediaConditionMod._MediaConditionWalkerEntry
@@ -14,6 +14,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInPa
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distNodesMediaOrMod.MediaOr
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +65,8 @@ object distNodesMediaConditionListMod {
     
     var `type`: NodeType = js.native
     
-    def walk(cb: js.Function2[/* entry */ NodeParent, /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ State[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ State[T], /* index */ Double | String, Boolean | Unit], state: T): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object MediaConditionListWithAnd {
@@ -120,13 +122,8 @@ object distNodesMediaConditionListMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
-      cb: js.Function2[
-          /* entry */ NodeMediaConditionListWithOrWalkerEntry, 
-          /* index */ Double | String, 
-          Boolean | Unit
-        ]
-    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ NodeParent[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ NodeParent[T], /* index */ Double | String, Boolean | Unit], state: T): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object MediaConditionListWithOr {
@@ -151,7 +148,7 @@ object distNodesMediaConditionListMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaAndMod.MediaAndWalkerEntry
     - typings.csstoolsMediaQueryListParser.distNodesMediaAndMod.MediaAnd
   */
-  type MediaConditionListWithAndWalkerEntry = _MediaConditionListWithAndWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaConditionListWithAndWalkerEntry = _MediaConditionListWithAndWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaAndMod.MediaAndWalkerParent
@@ -163,7 +160,7 @@ object distNodesMediaConditionListMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaOrMod.MediaOrWalkerEntry
     - typings.csstoolsMediaQueryListParser.distNodesMediaOrMod.MediaOr
   */
-  type MediaConditionListWithOrWalkerEntry = _MediaConditionListWithOrWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaConditionListWithOrWalkerEntry = _MediaConditionListWithOrWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaOrMod.MediaOrWalkerParent

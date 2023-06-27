@@ -1,8 +1,8 @@
 package typings.domMediacaptureTransform
 
 import typings.domWebcodecs.AudioData
-import typings.domWebcodecs.VideoFrame
 import typings.std.ReadableStream
+import typings.std.VideoFrame
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -49,7 +49,10 @@ object StateEffect {
   
   /**
     Define a new effect type. The type parameter indicates the type
-    of values that his effect holds.
+    of values that his effect holds. It should be a type that
+    doesn't include `undefined`, since that is used in
+    [mapping](https://codemirror.net/6/docs/ref/#state.StateEffect.map) to indicate that an effect is
+    removed.
     */
   /* static member */
   inline def define[Value](): StateEffectType[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[StateEffectType[Value]]

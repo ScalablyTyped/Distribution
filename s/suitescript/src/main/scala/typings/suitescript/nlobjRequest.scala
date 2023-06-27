@@ -25,7 +25,6 @@ Instantiable0[Any] {
     * @return {Object}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2009.1
     * @return
@@ -37,7 +36,6 @@ Instantiable0[Any] {
     * @return {Object}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @return
@@ -48,7 +46,6 @@ Instantiable0[Any] {
     * return an Object containing all the request parameters and their values.
     * @return {Object}
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @return
@@ -60,7 +57,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRequest
     * @since 2008.1
     * @return
     */
@@ -72,7 +68,6 @@ Instantiable0[Any] {
     * @return {nlobjFile}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2009.1
     * @param name
@@ -86,7 +81,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @param name
@@ -100,7 +94,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @param group
@@ -116,7 +109,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @param group
@@ -131,7 +123,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRequest
     * @since 2008.1
     * @return
     */
@@ -143,7 +134,6 @@ Instantiable0[Any] {
     * @param {string} name parameter name
     * @return {string}
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @param name
@@ -157,7 +147,6 @@ Instantiable0[Any] {
     * @param {string} name parameter name
     * @return {string[]}
     * @method
-    * @memberOf nlobjRequest
     *
     * @since 2008.2
     * @param name
@@ -169,7 +158,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjRequest
     * @since 2008.1
     * @return
     */

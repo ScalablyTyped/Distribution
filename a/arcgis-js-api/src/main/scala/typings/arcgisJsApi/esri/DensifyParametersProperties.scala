@@ -13,31 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DensifyParametersProperties extends StObject {
   
   /**
-    * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geodesic)
-    */
+  		 * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geodesic)
+  		 */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The array of geometries to be densified.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geometries)
-    */
+  		 * The array of geometries to be densified.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geometries)
+  		 */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
-    * The length unit of `maxSegmentLength`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#lengthUnit)
-    */
+  		 * The length unit of `maxSegmentLength`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#lengthUnit)
+  		 */
   var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
-    * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#maxSegmentLength)
-    */
+  		 * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#maxSegmentLength)
+  		 */
   var maxSegmentLength: js.UndefOr[Double] = js.undefined
 }
 object DensifyParametersProperties {

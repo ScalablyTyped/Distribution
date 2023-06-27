@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemItemId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -166,13 +165,13 @@ object sapUiUx3NavigationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NavigationBar` itself
       */
@@ -197,7 +196,7 @@ object sapUiUx3NavigationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -208,7 +207,7 @@ object sapUiUx3NavigationBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.NavigationBar` itself
       */
@@ -233,13 +232,13 @@ object sapUiUx3NavigationBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavigationBarSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -247,7 +246,7 @@ object sapUiUx3NavigationBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -257,14 +256,15 @@ object sapUiUx3NavigationBarMod {
       * @returns Whether or not to prevent the default action
       */
     def fireSelect(): Boolean = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemItemId): Boolean = js.native
+    mParameters: NavigationBar$SelectEventParameters
+    ): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAssociatedItems
-      * associatedItems}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAssociatedItems associatedItems}.
       */
     def getAssociatedItems(): js.Array[ID] = js.native
     
@@ -278,7 +278,7 @@ object sapUiUx3NavigationBarMod {
     def getItems(): js.Array[typings.openui5.sapUiUx3NavigationItemMod.default] = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Gets current value of property {@link #getOverflowItemsToUpperCase overflowItemsToUpperCase}.
       *
@@ -411,7 +411,7 @@ object sapUiUx3NavigationBarMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets a new value for property {@link #getOverflowItemsToUpperCase overflowItemsToUpperCase}.
       *
@@ -467,6 +467,42 @@ object sapUiUx3NavigationBarMod {
     bToplevelVariant: Boolean): this.type = js.native
   }
   
+  trait NavigationBar$SelectEventParameters extends StObject {
+    
+    /**
+      * The newly selected NavigationItem.
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUx3NavigationItemMod.default] = js.undefined
+    
+    /**
+      * The ID of the newly selected NavigationItem.
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object NavigationBar$SelectEventParameters {
+    
+    inline def apply(): NavigationBar$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavigationBar$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBar$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiUx3NavigationItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type NavigationBarSelectEvent = typings.openui5.sapUiBaseEventMod.default[NavigationBar$SelectEventParameters]
+  
+  type NavigationBarSelectEventParameters = NavigationBar$SelectEventParameters
+  
   trait NavigationBarSettings
     extends StObject
        with ControlSettings {
@@ -487,7 +523,7 @@ object sapUiUx3NavigationBarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.36
+      * @since 1.36
       *
       * Sets the appearance of the menu items in the overflow menu to uppercase
       */
@@ -498,7 +534,12 @@ object sapUiUx3NavigationBarMod {
     /**
       * Event is fired when an item is selected by the user
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavigationBar$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The selected NavigationItem.
@@ -540,7 +581,9 @@ object sapUiUx3NavigationBarMod {
       
       inline def setOverflowItemsToUpperCaseUndefined: Self = StObject.set(x, "overflowItemsToUpperCase", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavigationBar$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

@@ -12,7 +12,7 @@ object sapUiModelOdataOdatapropertybindingMod {
   @js.native
   open class default protected () extends ODataPropertyBinding {
     /**
-      * Do **NOT** call this private constructor, but rather use {@link sap.ui.model.odata.v2.ODataModel#bindProperty}
+      * Do **NOT** call this private constructor, but rather use {@link sap.ui.model.odata.v2.ODataModel#bindProperty }
       * instead!
       */
     def this(

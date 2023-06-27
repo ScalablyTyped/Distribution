@@ -37,7 +37,7 @@ object tile {
     def getBleedRatio(): Double = js.native
     
     /**
-      * Checks the flag whether to clip geometry fetched at the bounds 
+      * Checks the flag whether to clip geometry fetched at the bounds
       * of the request.
       * @returns {boolean} The value of the flag.
       */
@@ -76,24 +76,24 @@ object tile {
     def getVersion(): String = js.native
     
     /**
-      * Sets the bleed ratio. Bleeds greater than 1.0 will fetch content 
+      * Sets the bleed ratio. Bleeds greater than 1.0 will fetch content
       * beyond the edge of the tile extents (this is useful for point features).
       * @param {number} br The desired bleed ratio, a number between 1.0 and 2.0.
       */
     def setBleedRatio(br: Double): Unit = js.native
     
     /**
-      * Sets the flag whether to clip geometry fetched at the bounds 
+      * Sets the flag whether to clip geometry fetched at the bounds
       * of the request. This can greatly improve performance with large
-      * complex geometries. Only supported when back-end store is SQL 
+      * complex geometries. Only supported when back-end store is SQL
       * 2008/2012 or PostGIS.
       * @param {boolean} flag Whether or not to clip geometries fetched
       * at the bounds of the request.
       */
     def setClipToRenderBounds(flag: Boolean): Unit = js.native
     
-    /** 
-      * Sets the optional field names to query. This attribute data may be used in 
+    /**
+      * Sets the optional field names to query. This attribute data may be used in
       * dynamic client-side rendering.
       * @param {string} names - array of strings for each field to query
       */
@@ -108,7 +108,7 @@ object tile {
     /**
       * Sets the flag whether to simplify paths based on the units per
       * pixel for the quad tile being requested.
-      * @param {boolean} flag Whether or not to simply paths based on 
+      * @param {boolean} flag Whether or not to simply paths based on
       * the units per pixel.
       */
     def setSimplifyEnabled(flag: Boolean): Unit = js.native
@@ -163,7 +163,7 @@ object tile {
       * Gets a layer's outline color and thickness.
       * @param {string} layerId The MapDotNet map layer ID.
       * @returns {object} JavaScript object of the form {color, thickness}
-      * where color is the CSS style string of the outline color and 
+      * where color is the CSS style string of the outline color and
       * thickness is the outline thickness in pixels.
       */
     def getLayerOutline(layerId: String): Color = js.native
@@ -185,7 +185,7 @@ object tile {
     
     /**
       * Returns the current separator for the layer where clause in the
-      * query string. 
+      * query string.
       * @returns {string} The current seperator.
       */
     def getLayerWhereSep(): String = js.native
@@ -197,7 +197,7 @@ object tile {
     def getMapCacheName(): String = js.native
     
     /**
-      * Gets the map's cache setting, which is one of 'None', 
+      * Gets the map's cache setting, which is one of 'None',
       * 'ReadOnly', 'ReadWrite', 'ForceWrite', and 'Default.'
       * @returns {string} The map's cache setting.
       */
@@ -210,7 +210,7 @@ object tile {
     def getMapId(): String = js.native
     
     /**
-      * Gets a tag which is used to modify the request URIs to avoid 
+      * Gets a tag which is used to modify the request URIs to avoid
       * browser caching
       * @returns {string} The map's tag.
       */
@@ -240,8 +240,8 @@ object tile {
     def setBackgroundColor(a: Double, r: Double, g: Double, b: Double): Unit = js.native
     
     /**
-      * Sets the bleed ratio. Bleeds greater than 1.0 will fetch content 
-      * beyond the edge of the tile extents (this is useful for point 
+      * Sets the bleed ratio. Bleeds greater than 1.0 will fetch content
+      * beyond the edge of the tile extents (this is useful for point
       * features).
       * @param {number} br The desired bleed ratio, between 1.0 and 2.0.
       */
@@ -303,9 +303,9 @@ object tile {
     
     /**
       * Sets a separator character for the layer where clause expression
-      * in the query string. This is set to ',' by default, which is 
+      * in the query string. This is set to ',' by default, which is
       * consistent with SQL.
-      * @param {string} sep The desired seperator, which should be a 
+      * @param {string} sep The desired seperator, which should be a
       * single character.
       */
     def setLayerWhereSep(sep: String): Unit = js.native
@@ -317,14 +317,14 @@ object tile {
     def setMapCacheName(mcn: String): Unit = js.native
     
     /**
-      * Gets the map's cache setting to one of 'None', 
+      * Gets the map's cache setting to one of 'None',
       * 'ReadOnly', 'ReadWrite', 'ForceWrite', and 'Default.'
       * @param {string} mco The desired cache setting for the map.
       */
     def setMapCacheOption(mco: String): Unit = js.native
     
     /**
-      * Sets the flag to suspend descriptor change notifications. If 
+      * Sets the flag to suspend descriptor change notifications. If
       * set true, all changes to this descriptor will not cause the map
       * to redraw. Setting to false will enable redraws and immediately
       * force a redraw.
@@ -334,7 +334,7 @@ object tile {
     def setSuspendDescriptorChangeNotifications(flag: Boolean): Unit = js.native
     
     /**
-      * Sets the map's tag, which is used modify request URIs to avoid 
+      * Sets the map's tag, which is used modify request URIs to avoid
       * browser caching.
       * @param {string} tag The desired tag.
       */
@@ -366,14 +366,14 @@ object tile {
       * Composes an array of quadtiles with composition information and
       * requestor endpoints. This can be used to create static images
       * or print-ready versions of this tile layer at arbitrary extents
-      * (both source and target) For example: If you needed a 5x3 inch 
+      * (both source and target) For example: If you needed a 5x3 inch
       * 300 dpi output you can specify extents in device units to be
-      * 1500x900. This function determines the correct zoom level so 
+      * 1500x900. This function determines the correct zoom level so
       * that the source extents fits in the target extents to the
       * nearest integer zoom level.
       * @param {envelope} extentsMapUnits Source extents in map units.
       * @param {envelope} extentsDeviceUnits Target extents in pixels.
-      * @returns {object} Composed object in the form 
+      * @returns {object} Composed object in the form
       * {quadCollection, endpointCollection, idxMinX, idxMinY, ulX, ulY }
       * where quadCollection is an array of quad objects, endpointCollection
       * is an array of REST endpoints from which to obtain the tiled content,
@@ -389,7 +389,7 @@ object tile {
     def dispose(): Unit = js.native
     
     /**
-      * Returns the tile layer's descriptor, which describes how 
+      * Returns the tile layer's descriptor, which describes how
       * requested content is rendered or styled.
       * @returns {object} The tile layer's descriptor.
       */
@@ -430,14 +430,14 @@ object tile {
     def getOpacity(): Double = js.native
     
     /**
-      * Returns this tile layer's renderer if it exists, which defines 
+      * Returns this tile layer's renderer if it exists, which defines
       * how geometry data for a quadView is rendered.
       * @returns {renderer} The renderer object.
       */
     def getRenderer(): renderer = js.native
     
     /**
-      * Returns this tile layer's requestor which defines what kind of 
+      * Returns this tile layer's requestor which defines what kind of
       * content to get and where to get it.
       * @returns {requestor} This tile layer's requestor.
       */
@@ -461,12 +461,12 @@ object tile {
     
     /**
       * Instructs the tile loader to populate a specified tile pyramid.
-      * This is used to fetch content (e.g. bitmap tiles) and preload 
+      * This is used to fetch content (e.g. bitmap tiles) and preload
       * it into the browser cache.
       * @param {envelope} extents Envelope for which to fetch content.
       * @param {number} startZoomLevel Minimum zoom level for which to
       * fetch content.
-      * @param {number} endZoomLevel Maximum zoom level for which to 
+      * @param {number} endZoomLevel Maximum zoom level for which to
       * fetch content.
       */
     def preload(extents: envelope, startZoomLevel: Double, endZoomLevel: Double): Unit = js.native
@@ -480,7 +480,7 @@ object tile {
     
     /**
       * Enables or disables the fade in on tile content, which defaults to enabled.
-      * @param {boolean} fadeIn Whether or not fade in on tile content 
+      * @param {boolean} fadeIn Whether or not fade in on tile content
       * should be enabled.
       */
     def setEnableTileFadeIn(fadeIn: Boolean): Unit = js.native
@@ -497,7 +497,7 @@ object tile {
       */
     def setMaxZoomLevel(maxZ: Double): Unit = js.native
     
-    /** 
+    /**
       * Sets minimum zoom level where this tile layer is visible.
       * @param {number} minZ The desired minimum zoom level.
       */
@@ -509,7 +509,7 @@ object tile {
       */
     def setNotifyErrorAction(action: js.Function0[Unit]): Unit = js.native
     
-    /** 
+    /**
       * Sets an optional function to be called when the tile loading
       * queue for this layer has emptied.
       * @param {function} action Callback function.
@@ -517,32 +517,32 @@ object tile {
     def setNotifyLoadingQueueHasEmptiedAction(action: js.Function0[Unit]): Unit = js.native
     
     /**
-      * Sets the optional function to be called by this layer's tile 
-      * loader during processing. The supplied progress function takes 
+      * Sets the optional function to be called by this layer's tile
+      * loader during processing. The supplied progress function takes
       * tiles loaded and tiles total parameters.
       * @param {function} action Callback of the signature action(tileLoaded, tilesTotal).
       */
     def setNotifyLoadingQueueProgressAction(action: js.Function2[/* tilesLoaded */ Double, /* tilesTotal */ Double, Unit]): Unit = js.native
     
-    /** 
+    /**
       * Sets opacity of this tile layer.
       * @param {number} o Opacity as a decimal.
       */
     def setOpacity(o: Double): Unit = js.native
     
     /**
-      * Sets optional renderer which defines how geometry data for 
+      * Sets optional renderer which defines how geometry data for
       * quadView is rendered.
-      * @param {renderer} r The renderer delegate function with 
+      * @param {renderer} r The renderer delegate function with
       * signature renderer(quadview).
       */
     def setRenderer(r: Any): Unit = js.native
     
     /**
-      * Sets optional request processor for this tile layer. This is 
-      * an advanced feature allowing developers to tap into tile 
-      * request pipeline for purposes of customizing requests or manage 
-      * custom caching. This is also the mechanism used for offline 
+      * Sets optional request processor for this tile layer. This is
+      * an advanced feature allowing developers to tap into tile
+      * request pipeline for purposes of customizing requests or manage
+      * custom caching. This is also the mechanism used for offline
       * apps with frameworks such as phonegap.
       * @param {function} Processor function with signature
       * processor(requestor, descriptor, quad, timeoutMs, complete, error)
@@ -565,25 +565,25 @@ object tile {
       * @param {tile.requestor} req A requestor object.
       * @param {tile.requestor} [desc] Descriptor object so that both
       * can be set in one call and incur only one content change event.
-      */             
+      */
     def setRequestor(req: requestor): Unit = js.native
     def setRequestor(req: requestor, desc: Any): Unit = js.native
     
     /**
-      * Sets whether or not to retain and display previous level tile 
-      * content as you change tile levels to provide a nice zoom level 
-      * change effect. Once the next level is loaded the old level 
-      * content is always discarded. This should be set to false if there 
-      * is translucent content to display. Defaults to true (prior to 
+      * Sets whether or not to retain and display previous level tile
+      * content as you change tile levels to provide a nice zoom level
+      * change effect. Once the next level is loaded the old level
+      * content is always discarded. This should be set to false if there
+      * is translucent content to display. Defaults to true (prior to
       * version 9.0.0001 this value had the same state as useBackdrop.)
       * @param {boolean} ret Whether or not to retain interlevel content.
       */
     def setRetainInterlevelContent(retain: Boolean): Unit = js.native
     
     /**
-      * Sets pixel bleed on quadTiles, which defaults to 1. Setting this 
-      * to zero for overlay layers with translucent polygon fills is 
-      * recommended. Bleed overlap can create faint lines at tile 
+      * Sets pixel bleed on quadTiles, which defaults to 1. Setting this
+      * to zero for overlay layers with translucent polygon fills is
+      * recommended. Bleed overlap can create faint lines at tile
       * boundries when fill is not opaque.
       * @param {number} bleed The number of pixels to bleed.
       */
@@ -617,7 +617,7 @@ object tile {
   @js.native
   open class quad () extends StObject {
     
-    /** 
+    /**
       * Compares this quad tile with another quad tile and determines
       * whether or not they are equal.
       * @param {quad} Quad tile with which to check for equality with this quad tile.
@@ -658,7 +658,7 @@ object tile {
       */
     def getX(): Double = js.native
     
-    /** 
+    /**
       * Gets the y coordinate of this quad tile.
       * @returns {number} The y coordinate of this quad tile.
       */
@@ -681,9 +681,9 @@ object tile {
     /**
       * Sets the render bitmap function which takes a bitmap image and
       * a canvas context and renders the image to the canvas context.
-      * @param {function} func Function with the signature 
+      * @param {function} func Function with the signature
       * func(img, context, contextSize, bleed) where img is the bitmap
-      * image to render, context is the canvas context on which to 
+      * image to render, context is the canvas context on which to
       * render the image, contextSize is the size of the canvas context
       * in pixels and bleed is the margin around each tile to bleed.
       */
@@ -698,9 +698,9 @@ object tile {
     ): Unit = js.native
     
     /**
-      * Sets render geometry function which takes a geometry and canvas 
-      * context and renders the geometry to the canvas context. The 
-      * geometries passed in are transformed to pixel units and offset 
+      * Sets render geometry function which takes a geometry and canvas
+      * context and renders the geometry to the canvas context. The
+      * geometries passed in are transformed to pixel units and offset
       * to the context origin.
       * @param {function} func Function with signature func(shape, context)
       * where shape is the geometry to render and context is the canvas
@@ -709,11 +709,11 @@ object tile {
     def setRenderGeometry(func: js.Function2[/* shape */ geometry, /* context */ CanvasRenderingContext2D, Unit]): Unit = js.native
     
     /**
-      * Sets the render point function which takes a point and canvas 
-      * context and renders the point to the canvas. The points passed 
+      * Sets the render point function which takes a point and canvas
+      * context and renders the point to the canvas. The points passed
       * in are transformed to pixel units and offset to context origin.
       * @param {function} func Function of the form func(shape, context)
-      * where shape is the point object to be rendered and context is the 
+      * where shape is the point object to be rendered and context is the
       * canvas context on which to render.
       */
     def setRenderPoint(func: js.Function2[/* pt */ point, /* context */ CanvasRenderingContext2D, Unit]): Unit = js.native
@@ -724,7 +724,7 @@ object tile {
   open class rendererDensityMap () extends StObject {
     
     /**
-      * Tells renderer to re-render density map and recompute ranges. 
+      * Tells renderer to re-render density map and recompute ranges.
       * This should be called if the data changes or if, due to extent
       * changes, the density changes.
       */
@@ -754,13 +754,13 @@ object tile {
       * filter radius is the cutoff point at which adjacent cells no
       * longer contribute to a cell's calculation.
       * @param {number} filterStdDevRadius Number of standard deviations
-      * from the mean of a normal distribution to which to give positive 
+      * from the mean of a normal distribution to which to give positive
       * weight.
       */
     def setFilterStdDevRadius(filterStdDevRadius: Double): Unit = js.native
     
     /**
-      * Sets the number of rows and columns of cells to be used for 
+      * Sets the number of rows and columns of cells to be used for
       * computation within the grid.
       * @param {number} gridSize Number of rows and columns used in
       * the grid.
@@ -768,14 +768,14 @@ object tile {
     def setGridSize(gridSize: Double): Unit = js.native
     
     /**
-      * Sets the minimum required cell value for a cell to receive 
+      * Sets the minimum required cell value for a cell to receive
       * a color. Default minimum value is 0.
       * @param {number} mcv The minimum cell value for painting.
       */
     def setMinCellValue(min: Double): Unit = js.native
     
     /**
-      * Sets an optional action to perform on each row. This enables 
+      * Sets an optional action to perform on each row. This enables
       * processing the values on one or more columns for each row for
       * use in the density map computations.
       * @param {action} ra Function to call on each row with signature
@@ -790,8 +790,8 @@ object tile {
   open class requestor () extends StObject {
     
     /**
-      * Returns whether or not caching is enabled for vector-based 
-      * requestors. 
+      * Returns whether or not caching is enabled for vector-based
+      * requestors.
       * @returns {boolean} Whether or not caching is enabled.
       */
     def getCacheEnabled(): Boolean = js.native
@@ -817,7 +817,7 @@ object tile {
     def getIsRestImage(): Boolean = js.native
     
     /** ???
-      * Gets the additional 
+      * Gets the additional
       * @returns {object[]}
       */
     def getKeyVals(): js.Array[js.Object] = js.native
@@ -830,7 +830,7 @@ object tile {
     def getLocalData(quad: quad, descriptor: Any): String = js.native
     
     /**
-      * Gets maximum available zoom level content that can be retrieved 
+      * Gets maximum available zoom level content that can be retrieved
       * from the endpoint this requestor consumes.
       * @returns {number} The maximum available zoom level for this requestor.
       */
@@ -843,7 +843,7 @@ object tile {
     def getTimeoutMs(): Double = js.native
     
     /**
-      * Determines whether or not this requestor uses an endpoint 
+      * Determines whether or not this requestor uses an endpoint
       * rather than local data.
       * @returns {boolean} Whether or not this requestor gets data from
       * an endpoint.
@@ -852,23 +852,23 @@ object tile {
     
     /**
       * Creates unique sha1 hash from this requestor and the supplied
-      * descriptor. This is useful in creating a unique key or folder 
-      * for tile caching. This combined with a tile's quad-key can 
+      * descriptor. This is useful in creating a unique key or folder
+      * for tile caching. This combined with a tile's quad-key can
       * efficiently and uniquely identify a particular tile.
-      * @params {descriptor} The descriptor for which to create the hash.
+      * @param {descriptor} The descriptor for which to create the hash.
       * @returns {string} The generated sha1 hash.
       */
     def hash(descriptor: Any): String = js.native
     
     /**
-      * Sets whether or not caching is enabled for vector-beased requestors. 
+      * Sets whether or not caching is enabled for vector-beased requestors.
       * @param {boolean} flagce - true (default) if caching is enabled
       */
     def setCacheEnabled(flag: Boolean): Unit = js.native
     
     /**
       * Sets format of data that should be returned by REST service.
-      * @param {string} df Name of the data format the REST service 
+      * @param {string} df Name of the data format the REST service
       * should use.
       */
     def setDataFormat(df: String): Unit = js.native
@@ -920,7 +920,7 @@ object tile {
     def getBingKey(): String = js.native
     
     /**
-      * Gets the formatted endpoint uri for Bing maps, e.g. 
+      * Gets the formatted endpoint uri for Bing maps, e.g.
       * ecn.t{0}.tiles.virtualearth.net/tiles/{1}{2}{3}?g={4}&mkt={5}&shading=hill.
       * @returns {string} endpoint to Bing tile server as a formatted string
       */
@@ -977,17 +977,17 @@ object tile {
   open class requestorLocal () extends requestor {
     def this(options: Data) = this()
     
-    /** 
+    /**
       * Returns your source data parsed into theformat { Shapes: [],
-      * Values: [], Bounds: [] } This may be useful for doing client-side 
-      * queries on the local data where all of the WKT has been parsed 
-      * into points and geometry. There is also a bounds collection to 
+      * Values: [], Bounds: [] } This may be useful for doing client-side
+      * queries on the local data where all of the WKT has been parsed
+      * into points and geometry. There is also a bounds collection to
       * do a quick spatial check for complex polygons.
       * @returns {object} Parsed data object in the form {Shapes, Values, Bounds}.
       */
     def getParsedData(): Bounds = js.native
     
-    /** 
+    /**
       * Gets the unparsed source data.
       * @returns {object} Array of source data objects.
       */

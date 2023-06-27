@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.delete_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import typings.microsoftGraph.microsoftGraphStrings.update_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.create
   - typings.microsoftGraph.microsoftGraphStrings.delete_
   - typings.microsoftGraph.microsoftGraphStrings.disable
-  - typings.microsoftGraph.microsoftGraphStrings.update
+  - typings.microsoftGraph.microsoftGraphStrings.update_
   - typings.microsoftGraph.microsoftGraphStrings.stagedDelete
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
@@ -30,5 +31,5 @@ object ProvisioningAction {
   
   inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
   
-  inline def update: typings.microsoftGraph.microsoftGraphStrings.update = "update".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.update]
+  inline def update: update_ = "update".asInstanceOf[update_]
 }

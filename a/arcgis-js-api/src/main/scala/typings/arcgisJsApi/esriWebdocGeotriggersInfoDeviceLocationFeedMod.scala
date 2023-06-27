@@ -12,20 +12,20 @@ object esriWebdocGeotriggersInfoDeviceLocationFeedMod {
   @JSImport("esri/webdoc/geotriggersInfo/DeviceLocationFeed", JSImport.Namespace)
   @js.native
   /**
-    * A Geotrigger feed which uses the device location to provide updates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-DeviceLocationFeed.html)
-    */
+  		 * A Geotrigger feed which uses the device location to provide updates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-DeviceLocationFeed.html)
+  		 */
   open class ^ ()
     extends StObject
        with DeviceLocationFeed {
     def this(properties: DeviceLocationFeedProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

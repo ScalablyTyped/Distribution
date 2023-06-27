@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpriteSourceImageInfoSpriteSource1x extends StObject {
   
   /**
-    * Image containing sprite data for non high-DPI devices.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * Image containing sprite data for non high-DPI devices.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var image: HTMLImageElement | HTMLCanvasElement | Any | ImageData | ImageObject
   
   /**
-    * The JSON representation of an index file containing a description of each image in the sprite for non high-DPI devices.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
-    */
+  		 * The JSON representation of an index file containing a description of each image in the sprite for non high-DPI devices.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#SpriteSourceImageInfo)
+  		 */
   var json: SpriteInfo
 }
 object SpriteSourceImageInfoSpriteSource1x {

@@ -97,6 +97,8 @@ object mod extends Shortcut {
       * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
       *
       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
       */
     /* standard dom */
     def addEventListener(`type`: String): Unit = js.native
@@ -108,7 +110,11 @@ object mod extends Shortcut {
     
     val back: Boolean = js.native
     
-    /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+    /**
+      * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+      */
     /* standard dom */
     def dispatchEvent(event: Event): Boolean = js.native
     
@@ -140,7 +146,11 @@ object mod extends Shortcut {
     def query(params: Record[String, String | Null]): Unit = js.native
     def query(params: Record[String, String | Null], replace: Boolean): Unit = js.native
     
-    /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+    /**
+      * Removes the event listener in target's event listener list with the same type, callback, and options.
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+      */
     /* standard dom */
     def removeEventListener(`type`: String): Unit = js.native
     def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native

@@ -12,20 +12,20 @@ object esriRenderersDotDensityRendererMod {
   @JSImport("esri/renderers/DotDensityRenderer", JSImport.Namespace)
   @js.native
   /**
-    * DotDensityRenderer allows you to create dot density visualizations for polygon layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html)
-    */
+  		 * DotDensityRenderer allows you to create dot density visualizations for polygon layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html)
+  		 */
   open class ^ ()
     extends StObject
        with DotDensityRenderer {
     def this(properties: DotDensityRendererProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

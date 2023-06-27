@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewingProperties extends StObject {
   
   /**
-    * An object specifying the search parameters set within the web scene or web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html#search)
-    */
+  		 * An object specifying the search parameters set within the web scene or web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html#search)
+  		 */
   var search: js.UndefOr[SearchProperties] = js.undefined
 }
 object ViewingProperties {

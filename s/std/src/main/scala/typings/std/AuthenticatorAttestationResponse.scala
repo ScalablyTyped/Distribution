@@ -4,11 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse)
+  */
 trait AuthenticatorAttestationResponse
   extends StObject
      with AuthenticatorResponse {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/attestationObject) */
   /* standard dom */
   val attestationObject: js.typedarray.ArrayBuffer
   
@@ -21,6 +26,7 @@ trait AuthenticatorAttestationResponse
   /* standard dom */
   def getPublicKeyAlgorithm(): COSEAlgorithmIdentifier
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse/getTransports) */
   /* standard dom */
   def getTransports(): js.Array[java.lang.String]
 }

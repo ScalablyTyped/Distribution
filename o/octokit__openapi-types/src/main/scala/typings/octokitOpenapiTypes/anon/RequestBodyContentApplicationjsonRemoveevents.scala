@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonRemoveevents extends StObject {
   
   var requestBody: ContentApplicationjsonRemoveevents
   
-  var responses: `200588404Content36`
+  var responses: `200705404Content41`
 }
 object RequestBodyContentApplicationjsonRemoveevents {
   
   inline def apply(
     parameters: PathHookidOwnerRepo,
     requestBody: ContentApplicationjsonRemoveevents,
-    responses: `200588404Content36`
+    responses: `200705404Content41`
   ): RequestBodyContentApplicationjsonRemoveevents = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonRemoveevents]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonRemoveevents {
     
     inline def setRequestBody(value: ContentApplicationjsonRemoveevents): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200588404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200705404Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

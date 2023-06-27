@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tagsinput
 
-Typings are for version 3.19
+Typings are for version 3.20
 
 ## Library description:
 Highly customizable React component for inputing tags

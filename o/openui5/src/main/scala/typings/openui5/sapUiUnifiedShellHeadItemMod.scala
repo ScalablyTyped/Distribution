@@ -153,13 +153,13 @@ object sapUiUnifiedShellHeadItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ShellHeadItem` itself
       */
@@ -184,7 +184,7 @@ object sapUiUnifiedShellHeadItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -195,7 +195,7 @@ object sapUiUnifiedShellHeadItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.ShellHeadItem` itself
       */
@@ -213,13 +213,13 @@ object sapUiUnifiedShellHeadItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -227,7 +227,7 @@ object sapUiUnifiedShellHeadItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -240,8 +240,7 @@ object sapUiUnifiedShellHeadItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -280,7 +279,7 @@ object sapUiUnifiedShellHeadItemMod {
     def getShowMarker(): Boolean = js.native
     
     /**
-      * @SINCE 1.22.5
+      * @since 1.22.5
       *
       * Gets current value of property {@link #getShowSeparator showSeparator}.
       *
@@ -306,7 +305,7 @@ object sapUiUnifiedShellHeadItemMod {
     def getStartsSection(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.3
+      * @since 1.34.3
       *
       * Gets current value of property {@link #getToggleEnabled toggleEnabled}.
       *
@@ -321,7 +320,7 @@ object sapUiUnifiedShellHeadItemMod {
     def getToggleEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Gets current value of property {@link #getVisible visible}.
       *
@@ -413,7 +412,7 @@ object sapUiUnifiedShellHeadItemMod {
     bShowMarker: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.22.5
+      * @since 1.22.5
       *
       * Sets a new value for property {@link #getShowSeparator showSeparator}.
       *
@@ -451,7 +450,7 @@ object sapUiUnifiedShellHeadItemMod {
     bStartsSection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.3
+      * @since 1.34.3
       *
       * Sets a new value for property {@link #getToggleEnabled toggleEnabled}.
       *
@@ -472,7 +471,7 @@ object sapUiUnifiedShellHeadItemMod {
     bToggleEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Sets a new value for property {@link #getVisible visible}.
       *
@@ -490,6 +489,12 @@ object sapUiUnifiedShellHeadItemMod {
       */
     bVisible: Boolean): this.type = js.native
   }
+  
+  trait ShellHeadItem$PressEventParameters extends StObject
+  
+  type ShellHeadItemPressEvent = typings.openui5.sapUiBaseEventMod.default[ShellHeadItem$PressEventParameters]
+  
+  type ShellHeadItemPressEventParameters = ShellHeadItem$PressEventParameters
   
   trait ShellHeadItemSettings
     extends StObject
@@ -509,7 +514,9 @@ object sapUiUnifiedShellHeadItemMod {
     /**
       * Event is fired when the user presses the item.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the toggle state in case the item represents a toggle button (see also property `toggleEnabled`).
@@ -528,7 +535,7 @@ object sapUiUnifiedShellHeadItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22.5
+      * @since 1.22.5
       *
       * If set to true, a separator is displayed after the item.
       */
@@ -546,7 +553,7 @@ object sapUiUnifiedShellHeadItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.3
+      * @since 1.34.3
       *
       * If set to true, the item represents a toggle button. The `selected` property can the be used to define
       * the toggle state. Otherwise the item is displayed as action button. In this case the `selected` property
@@ -557,7 +564,7 @@ object sapUiUnifiedShellHeadItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Invisible items are not shown on the UI.
       */
@@ -585,7 +592,7 @@ object sapUiUnifiedShellHeadItemMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

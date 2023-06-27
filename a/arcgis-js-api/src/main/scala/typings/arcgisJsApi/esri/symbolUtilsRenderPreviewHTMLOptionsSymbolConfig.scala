@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait symbolUtilsRenderPreviewHTMLOptionsSymbolConfig extends StObject {
   
   /**
-    * Set to `true` to render the preview as a square instead of a generic polygon shape.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * Set to `true` to render the preview as a square instead of a generic polygon shape.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var isSquareFill: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Set to `true` for "tall" symbols in portrait view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
-    */
+  		 * Set to `true` for "tall" symbols in portrait view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
+  		 */
   var isTall: js.UndefOr[Boolean] = js.undefined
 }
 object symbolUtilsRenderPreviewHTMLOptionsSymbolConfig {

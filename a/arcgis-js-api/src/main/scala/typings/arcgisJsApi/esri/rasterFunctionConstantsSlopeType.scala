@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsSlopeType extends StObject {
   
   /**
-    * The inclination of slope is calculated the same as DEGREE.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
-    */
+  		 * The inclination of slope is calculated the same as DEGREE.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
+  		 */
   var adjusted: Double
   
   /**
-    * The inclination of slope is calculated in degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
-    */
+  		 * The inclination of slope is calculated in degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
+  		 */
   var degree: Double
   
   /**
-    * The inclination of slope is calculated as percentage values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
-    */
+  		 * The inclination of slope is calculated as percentage values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#slopeType)
+  		 */
   var percentRise: Double
 }
 object rasterFunctionConstantsSlopeType {

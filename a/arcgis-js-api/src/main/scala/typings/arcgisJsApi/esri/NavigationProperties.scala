@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationProperties extends StObject {
   
   /**
-    * Indicates if single finger touch [drag](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#event-drag) events are enabled or disabled.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#browserTouchPanEnabled)
-    */
+  		 * Indicates if single finger touch [drag](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#event-drag) events are enabled or disabled.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#browserTouchPanEnabled)
+  		 */
   var browserTouchPanEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gamepad navigation specific configuration settings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#gamepad)
-    */
+  		 * Gamepad navigation specific configuration settings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#gamepad)
+  		 */
   var gamepad: js.UndefOr[gamepadGamepadSettingsProperties] = js.undefined
   
   /**
-    * When `true`, the view will temporarily continue to pan after the pointer (e.g.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#momentumEnabled)
-    */
+  		 * When `true`, the view will temporarily continue to pan after the pointer (e.g.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#momentumEnabled)
+  		 */
   var momentumEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the view can be zoomed in or out with the mouse wheel.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#mouseWheelZoomEnabled)
-    */
+  		 * Indicates whether the view can be zoomed in or out with the mouse wheel.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html#mouseWheelZoomEnabled)
+  		 */
   var mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object NavigationProperties {

@@ -12,82 +12,89 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait flowCreateRendererParams extends StObject {
   
   /**
-    * Defines the flow direction of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * Defines the flow direction of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var flowRepresentation: js.UndefOr[`flow-from` | `flow-to`] = js.undefined
   
   /**
-    * The flow scheme used to set colors and sizes to the flow lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * The flow scheme used to set colors and sizes to the flow lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var flowScheme: js.UndefOr[FlowScheme] = js.undefined
   
   /**
-    * When `true`, the color of stream lines will vary depending on the magnitude of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * When `true`, the color of stream lines will vary depending on the magnitude of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var includeColorVariable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the opacity of stream lines will vary depending on the magnitude of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * When `true`, the opacity of stream lines will vary depending on the magnitude of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var includeOpacityVariable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the width of stream lines will vary depending on the magnitude of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * When `true`, the width of stream lines will vary depending on the magnitude of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var includeSizeVariable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The input layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * The input layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var layer: ImageryLayer | ImageryTileLayer
   
   /**
-    * Provides options for setting a title to the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * Provides options for setting a title to the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var legendOptions: js.UndefOr[flowCreateRendererParamsLegendOptions] = js.undefined
   
   /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * Specifies the function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunction] = js.undefined
+  
+  /**
+  		 * Deprecated since 4.27.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var renderingRule: js.UndefOr[RasterFunction] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Determines how flow lines will render.
-    *
-    * @default "flow-line"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
-    */
+  		 * Determines how flow lines will render.
+  		 *
+  		 * @default "flow-line"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer)
+  		 */
   var theme: js.UndefOr[`flow-line` | `wave-front`] = js.undefined
   
   /**
-    * The view where the input layer is rendered.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The view where the input layer is rendered.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[MapView] = js.undefined
 }
 object flowCreateRendererParams {
@@ -125,6 +132,10 @@ object flowCreateRendererParams {
     inline def setLegendOptions(value: flowCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    
+    inline def setRasterFunction(value: RasterFunction): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunction): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

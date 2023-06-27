@@ -15,7 +15,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the preserveAspectRatio attribute, which is available for some of SVG's elements. */
+/**
+  * Corresponds to the preserveAspectRatio attribute, which is available for some of SVG's elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGPreserveAspectRatio)
+  */
 trait SVGPreserveAspectRatio extends StObject {
   
   /* standard dom */

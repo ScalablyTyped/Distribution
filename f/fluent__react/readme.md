@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__react
 
-Typings are for version 0.15.0
+Typings are for version 0.15.1
 
 ## Library description:
 Fluent bindings for React

@@ -304,7 +304,7 @@ object BulletGraph {
   trait CaptionSettings extends StObject {
     
     /** Specifies whether trim the labels will be true or false.
-      * @Default {true}
+      * @default {true}
       */
     var enableTrim: js.UndefOr[Boolean] = js.undefined
     
@@ -321,7 +321,7 @@ object BulletGraph {
     var location: js.UndefOr[CaptionSettingsLocation] = js.undefined
     
     /** Specifies the padding to be applied when text position is used.
-      * @Default {5}
+      * @default {5}
       */
     var padding: js.UndefOr[Double] = js.undefined
     
@@ -334,23 +334,23 @@ object BulletGraph {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of caption text with respect to scale. This property will not be applied when text position is float.
-      * @Default {'Near'}
+      * @default {'Near'}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies caption text anchoring when caption text overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position.
       * Anchoring is not applicable for float position.
-      * @Default {'start'}
+      * @default {'start'}
       */
     var textAnchor: js.UndefOr[TextAnchor | String] = js.undefined
     
     /** Specifies the angel in which the caption is rendered.
-      * @Default {0}
+      * @default {0}
       */
     var textAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies how caption text should be placed.
-      * @Default {'float'}
+      * @default {'float'}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
   }
@@ -413,32 +413,32 @@ object BulletGraph {
   trait CaptionSettingsFont extends StObject {
     
     /** Specifies the color of the text in caption.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontFamily of caption. Caption text render with this fontFamily
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of caption
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the fontWeight of caption
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Specifies the opacity of caption. Caption text render with this opacity.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the size of caption. Caption text render with this size
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -489,7 +489,7 @@ object BulletGraph {
     var location: js.UndefOr[CaptionSettingsIndicatorLocation] = js.undefined
     
     /** Specifies the padding to be applied when text position is used.
-      * @Default {2}
+      * @default {2}
       */
     var padding: js.UndefOr[Double] = js.undefined
     
@@ -502,33 +502,33 @@ object BulletGraph {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of indicator with respect to scale based on text position
-      * @Default {'Near'}
+      * @default {'Near'}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same
       * position. Anchoring is not applicable for float position.
-      * @Default {'start'}
+      * @default {'start'}
       */
     var textAnchor: js.UndefOr[TextAnchor | String] = js.undefined
     
     /** indicator text render in the specified angle.
-      * @Default {0}
+      * @default {0}
       */
     var textAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies where indicator should be placed
-      * @Default {'float'}
+      * @default {'float'}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
     
     /** Specifies the space between indicator symbol and text.
-      * @Default {3}
+      * @default {3}
       */
     var textSpacing: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether indicator will be visible or not.
-      * @Default {false}
+      * @default {false}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -591,32 +591,32 @@ object BulletGraph {
   trait CaptionSettingsIndicatorFont extends StObject {
     
     /** Specifies the color of the indicator's text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontFamily of indicator. Indicator text render with this fontFamily.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of indicator. Indicator text render with this fontStyle. See FontStyle
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the fontWeight of indicator. Indicator text render with this fontWeight. See FontWeight
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Specifies the opacity of indicator text. Indicator text render with this Opacity.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the size of indicator. Indicator text render with this size.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -659,12 +659,12 @@ object BulletGraph {
   trait CaptionSettingsIndicatorLocation extends StObject {
     
     /** Specifies the horizontal position of the indicator.
-      * @Default {10}
+      * @default {10}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the vertical position of the indicator.
-      * @Default {60}
+      * @default {60}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -695,7 +695,7 @@ object BulletGraph {
     var border: js.UndefOr[CaptionSettingsIndicatorSymbolBorder] = js.undefined
     
     /** Specifies the color of indicator symbol.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
@@ -704,7 +704,7 @@ object BulletGraph {
     var imageURL: js.UndefOr[String] = js.undefined
     
     /** Specifies the opacity of indicator symbol.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
@@ -755,12 +755,12 @@ object BulletGraph {
   trait CaptionSettingsIndicatorSymbolBorder extends StObject {
     
     /** Specifies the border color of indicator symbol.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of indicator symbol.
-      * @Default {1}
+      * @default {1}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -787,12 +787,12 @@ object BulletGraph {
   trait CaptionSettingsIndicatorSymbolSize extends StObject {
     
     /** Specifies the height of indicator symbol.
-      * @Default {10}
+      * @default {10}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of indicator symbol.
-      * @Default {10}
+      * @default {10}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -819,12 +819,12 @@ object BulletGraph {
   trait CaptionSettingsLocation extends StObject {
     
     /** Specifies the position in horizontal direction
-      * @Default {17}
+      * @default {17}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position in horizontal direction
-      * @Default {30}
+      * @default {30}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -859,7 +859,7 @@ object BulletGraph {
     var location: js.UndefOr[CaptionSettingsSubTitleLocation] = js.undefined
     
     /** Specifies the padding to be applied when text position is used.
-      * @Default {5}
+      * @default {5}
       */
     var padding: js.UndefOr[Double] = js.undefined
     
@@ -868,23 +868,23 @@ object BulletGraph {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of sub title text with respect to scale. Alignment will not be applied in float position.
-      * @Default {'Near'}
+      * @default {'Near'}
       */
     var textAlignment: js.UndefOr[TextAlignment | String] = js.undefined
     
     /** Specifies where subtitle text should be anchored when sub title text overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same
       * position. Anchoring is not applicable for float position.
-      * @Default {'start'}
+      * @default {'start'}
       */
     var textAnchor: js.UndefOr[TextAnchor | String] = js.undefined
     
     /** Subtitle render in the specified angle.
-      * @Default {0}
+      * @default {0}
       */
     var textAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies where sub title text should be placed.
-      * @Default {'float'}
+      * @default {'float'}
       */
     var textPosition: js.UndefOr[TextPosition | String] = js.undefined
   }
@@ -935,32 +935,32 @@ object BulletGraph {
   trait CaptionSettingsSubTitleFont extends StObject {
     
     /** Specifies the color of the subtitle's text.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontFamily of subtitle. Subtitle text render with this fontFamily.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. See FontStyle
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight. See FontWeight
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Specifies the opacity of subtitle. Subtitle text render with this opacity.
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the size of subtitle. Subtitle text render with this size.
-      * @Default {12px}
+      * @default {12px}
       */
     var size: js.UndefOr[String] = js.undefined
   }
@@ -1003,12 +1003,12 @@ object BulletGraph {
   trait CaptionSettingsSubTitleLocation extends StObject {
     
     /** Specifies the horizontal position of the subtitle.
-      * @Default {10}
+      * @default {10}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the vertical position of the subtitle.
-      * @Default {45}
+      * @default {45}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -1579,12 +1579,12 @@ object BulletGraph {
     var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Toggles the visibility of the range stroke color of the labels.
-      * @Default {false}
+      * @default {false}
       */
     var applyRangeStrokeToLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the range stroke color of the ticks.
-      * @Default {false}
+      * @default {false}
       */
     var applyRangeStrokeToTicks: js.UndefOr[Boolean] = js.undefined
     
@@ -1593,7 +1593,7 @@ object BulletGraph {
     var captionSettings: js.UndefOr[CaptionSettings] = js.undefined
     
     /** Comparative measure bar in bullet graph render till the specified value.
-      * @Default {0}
+      * @default {0}
       */
     var comparativeMeasureValue: js.UndefOr[Double] = js.undefined
     
@@ -1634,32 +1634,32 @@ object BulletGraph {
     var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.undefined
     
     /** Toggles the animation of bullet graph.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to convert the date object to string, using locale settings.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether bullet graph has to be responsive while resizing.
-      * @Default {true}
+      * @default {true}
       */
     var enableResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
-      * @Default {forward}
+      * @default {forward}
       */
     var flowDirection: js.UndefOr[FlowDirection | String] = js.undefined
     
     /** Specifies the height of the bullet graph.
-      * @Default {90}
+      * @default {90}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Sets a value whether to make the bullet graph responsive on resize.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1668,17 +1668,17 @@ object BulletGraph {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which bulletgraph should be localized.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Bullet graph will render in the specified orientation.
-      * @Default {horizontal}
+      * @default {horizontal}
       */
     var orientation: js.UndefOr[typings.ejWebAll.ej.Orientation | String] = js.undefined
     
     /** Size of the qualitative range depends up on the specified value.
-      * @Default {32}
+      * @default {32}
       */
     var qualitativeRangeSize: js.UndefOr[Double] = js.undefined
     
@@ -1687,7 +1687,7 @@ object BulletGraph {
     var qualitativeRanges: js.UndefOr[js.Array[QualitativeRange]] = js.undefined
     
     /** Length of the quantitative range depends up on the specified value.
-      * @Default {475}
+      * @default {475}
       */
     var quantitativeScaleLength: js.UndefOr[Double] = js.undefined
     
@@ -1700,7 +1700,7 @@ object BulletGraph {
     var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** By specifying this property the user can change the theme of the bullet graph.
-      * @Default {flatlight}
+      * @default {flatlight}
       */
     var theme: js.UndefOr[String] = js.undefined
     
@@ -1709,12 +1709,12 @@ object BulletGraph {
     var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Feature measure bar in bullet graph render till the specified value.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the bullet graph.
-      * @Default {595}
+      * @default {595}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -1863,17 +1863,17 @@ object BulletGraph {
   trait QualitativeRange extends StObject {
     
     /** Specifies the ending range to which the qualitative ranges will render.
-      * @Default {3}
+      * @default {3}
       */
     var rangeEnd: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity for the qualitative ranges.
-      * @Default {1}
+      * @default {1}
       */
     var rangeOpacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the stroke for the qualitative ranges.
-      * @Default {null}
+      * @default {null}
       */
     var rangeStroke: js.UndefOr[String] = js.undefined
   }
@@ -1920,7 +1920,7 @@ object BulletGraph {
     var fields: js.UndefOr[QuantitativeScaleSettingsFields] = js.undefined
     
     /** Specifies the interval for the Graph.
-      * @Default {1}
+      * @default {1}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
@@ -1937,12 +1937,12 @@ object BulletGraph {
     var majorTickSettings: js.UndefOr[QuantitativeScaleSettingsMajorTickSettings] = js.undefined
     
     /** Specifies the maximum value of the Graph.
-      * @Default {10}
+      * @default {10}
       */
     var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum value of the Graph.
-      * @Default {0}
+      * @default {0}
       */
     var minimum: js.UndefOr[Double] = js.undefined
     
@@ -1951,17 +1951,17 @@ object BulletGraph {
     var minorTickSettings: js.UndefOr[QuantitativeScaleSettingsMinorTickSettings] = js.undefined
     
     /** The specified number of minor ticks will be rendered per interval.
-      * @Default {4}
+      * @default {4}
       */
     var minorTicksPerInterval: js.UndefOr[Double] = js.undefined
     
     /** Specifies the placement of ticks to render either inside or outside the scale.
-      * @Default {ej.datavisualization.BulletGraph.TickPlacement.Outside}
+      * @default {ej.datavisualization.BulletGraph.TickPlacement.Outside}
       */
     var tickPlacement: js.UndefOr[TickPlacement | String] = js.undefined
     
     /** Specifies the position of the ticks to render either above,below or inside
-      * @Default {ej.datavisualization.BulletGraph.TickPosition.Far}
+      * @default {ej.datavisualization.BulletGraph.TickPosition.Far}
       */
     var tickPosition: js.UndefOr[TickPosition | String] = js.undefined
   }
@@ -2038,12 +2038,12 @@ object BulletGraph {
   trait QuantitativeScaleSettingsComparativeMeasureSettings extends StObject {
     
     /** Specifies the stroke of the comparative measure.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the comparative measure.
-      * @Default {5}
+      * @default {5}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2070,17 +2070,17 @@ object BulletGraph {
   trait QuantitativeScaleSettingsFeatureMeasure extends StObject {
     
     /** Specifies the category of feature measure.
-      * @Default {null}
+      * @default {null}
       */
     var category: js.UndefOr[String] = js.undefined
     
     /** Comparative measure render till the specified value.
-      * @Default {null}
+      * @default {null}
       */
     var comparativeMeasureValue: js.UndefOr[Double] = js.undefined
     
     /** Feature measure render till the specified value.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[Double] = js.undefined
   }
@@ -2111,12 +2111,12 @@ object BulletGraph {
   trait QuantitativeScaleSettingsFeaturedMeasureSettings extends StObject {
     
     /** Specifies the Stroke of the featured measure in bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the featured measure in bullet graph.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2143,32 +2143,32 @@ object BulletGraph {
   trait QuantitativeScaleSettingsFields extends StObject {
     
     /** Specifies the category of the bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var category: js.UndefOr[String] = js.undefined
     
     /** Comparative measure render based on the values in the specified field.
-      * @Default {null}
+      * @default {null}
       */
     var comparativeMeasure: js.UndefOr[String] = js.undefined
     
     /** Specifies the dataSource for the bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Feature measure render based on the values in the specified field.
-      * @Default {null}
+      * @default {null}
       */
     var featureMeasures: js.UndefOr[String] = js.undefined
     
     /** Specifies the query for fetching the values form data source to render the bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[String] = js.undefined
     
     /** Specifies the name of the table.
-      * @Default {null}
+      * @default {null}
       */
     var tableName: js.UndefOr[String] = js.undefined
   }
@@ -2215,37 +2215,37 @@ object BulletGraph {
     var font: js.UndefOr[QuantitativeScaleSettingsLabelSettingsFont] = js.undefined
     
     /** Specifies the placement of labels in bullet graph scale.
-      * @Default {outside}
+      * @default {outside}
       */
     var labelPlacement: js.UndefOr[LabelPlacement | String] = js.undefined
     
     /** Specifies the prefix to be added with labels in bullet graph.
-      * @Default {Empty string}
+      * @default {Empty string}
       */
     var labelPrefix: js.UndefOr[String] = js.undefined
     
     /** Specifies the suffix to be added after labels in bullet graph.
-      * @Default {Empty string}
+      * @default {Empty string}
       */
     var labelSuffix: js.UndefOr[String] = js.undefined
     
     /** Specifies the horizontal/vertical padding of labels.
-      * @Default {15}
+      * @default {15}
       */
     var offset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position of the labels to render either above or below the graph. See
-      * @Default {below}
+      * @default {below}
       */
     var position: js.UndefOr[LabelPosition | String] = js.undefined
     
     /** Specifies the Size of the labels.
-      * @Default {12}
+      * @default {12}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Specifies the stroke color of the labels in bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[String] = js.undefined
   }
@@ -2296,22 +2296,22 @@ object BulletGraph {
   trait QuantitativeScaleSettingsLabelSettingsFont extends StObject {
     
     /** Specifies the fontFamily of labels in bullet graph. Labels render with this fontFamily.
-      * @Default {Segoe UI}
+      * @default {Segoe UI}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of labels in bullet graph. Labels render with this fontStyle. See FontStyle
-      * @Default {Normal}
+      * @default {Normal}
       */
     var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the fontWeight of labels in bullet graph. Labels render with this fontWeight. See FontWeight
-      * @Default {regular}
+      * @default {regular}
       */
     var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Specifies the opacity of labels in bullet graph. Labels render with this opacity
-      * @Default {1}
+      * @default {1}
       */
     var opacity: js.UndefOr[Double] = js.undefined
   }
@@ -2346,12 +2346,12 @@ object BulletGraph {
   trait QuantitativeScaleSettingsLocation extends StObject {
     
     /** This property specifies the x position for rendering quantitative scale.
-      * @Default {10}
+      * @default {10}
       */
     var x: js.UndefOr[Double] = js.undefined
     
     /** This property specifies the y position for rendering quantitative scale.
-      * @Default {10}
+      * @default {10}
       */
     var y: js.UndefOr[Double] = js.undefined
   }
@@ -2378,17 +2378,17 @@ object BulletGraph {
   trait QuantitativeScaleSettingsMajorTickSettings extends StObject {
     
     /** Specifies the size of the major ticks.
-      * @Default {13}
+      * @default {13}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Specifies the stroke color of the major tick lines.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the major tick lines.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2419,17 +2419,17 @@ object BulletGraph {
   trait QuantitativeScaleSettingsMinorTickSettings extends StObject {
     
     /** Specifies the size of minor ticks.
-      * @Default {7}
+      * @default {7}
       */
     var size: js.UndefOr[Double] = js.undefined
     
     /** Specifies the stroke color of minor ticks in bullet graph.
-      * @Default {null}
+      * @default {null}
       */
     var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the minor ticks in bullet graph.
-      * @Default {2}
+      * @default {2}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -2507,22 +2507,22 @@ object BulletGraph {
   trait TooltipSettings extends StObject {
     
     /** Specifies template for caption tooltip
-      * @Default {null}
+      * @default {null}
       */
     var captionTemplate: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of caption tooltip
-      * @Default {false}
+      * @default {false}
       */
     var enableCaptionTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the ID of a div, which is to be displayed as tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Toggles the visibility of tooltip
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
   }

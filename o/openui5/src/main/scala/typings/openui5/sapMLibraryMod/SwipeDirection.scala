@@ -14,7 +14,7 @@ object SwipeDirection extends StObject {
   def apply(value: String): js.UndefOr[SwipeDirection & String] = js.native
   
   /**
-    * @SINCE 1.72
+    * @since 1.72
     *
     * Swipe from the beginning to the end - left to right in LTR languages and right to left in RTL languages.
     */
@@ -34,7 +34,7 @@ object SwipeDirection extends StObject {
   /* "Both" */ val Both: typings.openui5.sapMLibraryMod.SwipeDirection.Both & String = js.native
   
   /**
-    * @SINCE 1.72
+    * @since 1.72
     *
     * Swipe from the end to the beginning - right to left in LTR languages and left to right in RTL languages.
     */

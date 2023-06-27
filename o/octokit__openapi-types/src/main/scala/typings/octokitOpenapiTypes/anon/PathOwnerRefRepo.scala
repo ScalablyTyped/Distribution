@@ -8,12 +8,12 @@ trait PathOwnerRefRepo extends StObject {
   
   var path: OwnerRefRepo
   
-  var query: `507`
+  var query: js.UndefOr[`591`] = js.undefined
 }
 object PathOwnerRefRepo {
   
-  inline def apply(path: OwnerRefRepo, query: `507`): PathOwnerRefRepo = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: OwnerRefRepo): PathOwnerRefRepo = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOwnerRefRepo]
   }
   
@@ -22,6 +22,8 @@ object PathOwnerRefRepo {
     
     inline def setPath(value: OwnerRefRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `507`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `591`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

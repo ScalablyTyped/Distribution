@@ -1,0 +1,12 @@
+organization := "org.scalablytyped"
+name := "vextab"
+version := "3.0-dt-20230608Z-469e9d"
+scalaVersion := "3.2.0"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2",
+  "org.scalablytyped" %%% "vexflow" % "v1.2.93-dt-20230322Z-64b987")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Totaled
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMTableColumnmenuEntryMod.EntrySettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -148,13 +147,13 @@ object sapMTableColumnmenuQuickTotalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickTotal` itself
       */
@@ -179,7 +178,7 @@ object sapMTableColumnmenuQuickTotalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -190,7 +189,7 @@ object sapMTableColumnmenuQuickTotalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.table.columnmenu.QuickTotal` itself
       */
@@ -215,13 +214,13 @@ object sapMTableColumnmenuQuickTotalMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickTotalChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -229,7 +228,7 @@ object sapMTableColumnmenuQuickTotalMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -239,7 +238,7 @@ object sapMTableColumnmenuQuickTotalMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Totaled): this.type = js.native
+    mParameters: QuickTotal$ChangeEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -309,6 +308,42 @@ object sapMTableColumnmenuQuickTotalMod {
     ): typings.openui5.sapMTableColumnmenuQuickTotalItemMod.default | Null = js.native
   }
   
+  trait QuickTotal$ChangeEventParameters extends StObject {
+    
+    /**
+      * The key of the property.
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The new value.
+      */
+    var totaled: js.UndefOr[Boolean] = js.undefined
+  }
+  object QuickTotal$ChangeEventParameters {
+    
+    inline def apply(): QuickTotal$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickTotal$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickTotal$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setTotaled(value: Boolean): Self = StObject.set(x, "totaled", value.asInstanceOf[js.Any])
+      
+      inline def setTotaledUndefined: Self = StObject.set(x, "totaled", js.undefined)
+    }
+  }
+  
+  type QuickTotalChangeEvent = typings.openui5.sapUiBaseEventMod.default[QuickTotal$ChangeEventParameters]
+  
+  type QuickTotalChangeEventParameters = QuickTotal$ChangeEventParameters
+  
   trait QuickTotalSettings
     extends StObject
        with EntrySettings {
@@ -316,7 +351,12 @@ object sapMTableColumnmenuQuickTotalMod {
     /**
       * Fires the change event.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickTotal$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the totalable properties and the initial state.
@@ -335,7 +375,9 @@ object sapMTableColumnmenuQuickTotalMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QuickTotalSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickTotal$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

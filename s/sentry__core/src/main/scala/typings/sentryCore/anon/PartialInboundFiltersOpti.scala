@@ -11,6 +11,10 @@ trait PartialInboundFiltersOpti extends StObject {
   
   var denyUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
   
+  var disableErrorDefaults: js.UndefOr[Boolean] = js.undefined
+  
+  var disableTransactionDefaults: js.UndefOr[Boolean] = js.undefined
+  
   var ignoreErrors: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
   
   var ignoreInternal: js.UndefOr[Boolean] = js.undefined
@@ -38,6 +42,14 @@ object PartialInboundFiltersOpti {
     inline def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
     
     inline def setDenyUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value*))
+    
+    inline def setDisableErrorDefaults(value: Boolean): Self = StObject.set(x, "disableErrorDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setDisableErrorDefaultsUndefined: Self = StObject.set(x, "disableErrorDefaults", js.undefined)
+    
+    inline def setDisableTransactionDefaults(value: Boolean): Self = StObject.set(x, "disableTransactionDefaults", value.asInstanceOf[js.Any])
+    
+    inline def setDisableTransactionDefaultsUndefined: Self = StObject.set(x, "disableTransactionDefaults", js.undefined)
     
     inline def setIgnoreErrors(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
     

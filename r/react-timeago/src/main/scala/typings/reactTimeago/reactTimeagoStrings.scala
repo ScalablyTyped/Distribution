@@ -597,6 +597,10 @@ object reactTimeagoStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait second
     extends StObject
        with Unit

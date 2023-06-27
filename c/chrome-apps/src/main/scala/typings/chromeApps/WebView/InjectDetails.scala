@@ -21,7 +21,7 @@ trait InjectDetails extends StObject {
     * Be careful using the *code* parameter.
     * Incorrect use of it may open your app to
     * cross site scripting attacks.
-    * @see[More information]{@link https://en.wikipedia.org/wiki/Cross-site_scripting}
+    * @see https://en.wikipedia.org/wiki/Cross-site_scripting
     */
   /**
     * JavaScript or CSS code to inject.

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lezer/cpp" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lezer/cpp" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

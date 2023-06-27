@@ -13,12 +13,15 @@ object sapBaseLogMod extends Shortcut {
   
   @js.native
   sealed trait Level extends StObject
+  /**
+    * Enumeration of the configurable log levels that a Logger should persist to the log.
+    *
+    * Only if the current LogLevel is higher than the level {@link module:sap/base/Log.Level} of the currently
+    * added log entry, then this very entry is permanently added to the log. Otherwise it is ignored.
+    */
   @JSImport("sap/base/Log", "Level")
   @js.native
   object Level extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Level & String] = js.native
     
     /**
       * Trace level to log everything.
@@ -27,7 +30,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait ALL
       extends StObject
          with Level
-    /* "undefined" */ val ALL: typings.openui5.sapBaseLogMod.Level.ALL & String = js.native
     
     /**
       * Debug level. Use this for logging information necessary for debugging
@@ -36,7 +38,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait DEBUG
       extends StObject
          with Level
-    /* "undefined" */ val DEBUG: typings.openui5.sapBaseLogMod.Level.DEBUG & String = js.native
     
     /**
       * Error level. Use this for logging of erroneous but still recoverable situations
@@ -45,7 +46,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait ERROR
       extends StObject
          with Level
-    /* "undefined" */ val ERROR: typings.openui5.sapBaseLogMod.Level.ERROR & String = js.native
     
     /**
       * Fatal level. Use this for logging unrecoverable situations
@@ -54,7 +54,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait FATAL
       extends StObject
          with Level
-    /* "undefined" */ val FATAL: typings.openui5.sapBaseLogMod.Level.FATAL & String = js.native
     
     /**
       * Info level. Use this for logging information of purely informative nature
@@ -63,7 +62,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait INFO
       extends StObject
          with Level
-    /* "undefined" */ val INFO: typings.openui5.sapBaseLogMod.Level.INFO & String = js.native
     
     /**
       * Do not log anything
@@ -72,7 +70,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait NONE
       extends StObject
          with Level
-    /* "undefined" */ val NONE: typings.openui5.sapBaseLogMod.Level.NONE & String = js.native
     
     /**
       * Trace level. Use this for tracing the program flow.
@@ -81,7 +78,6 @@ object sapBaseLogMod extends Shortcut {
     sealed trait TRACE
       extends StObject
          with Level
-    /* "undefined" */ val TRACE: typings.openui5.sapBaseLogMod.Level.TRACE & String = js.native
     
     /**
       * Warning level. Use this for logging unwanted but foreseen situations
@@ -90,11 +86,144 @@ object sapBaseLogMod extends Shortcut {
     sealed trait WARNING
       extends StObject
          with Level
-    /* "undefined" */ val WARNING: typings.openui5.sapBaseLogMod.Level.WARNING & String = js.native
+  }
+  
+  trait Entry extends StObject {
+    
+    /**
+      * The component that creates the log entry
+      */
+    var component: String
+    
+    /**
+      * Date string in format yyyy-MM-dd
+      */
+    var date: String
+    
+    /**
+      * The detailed information of the log entry
+      */
+    var details: String
+    
+    /**
+      * The level of the log entry, see {@link module:sap/base/Log.Level}
+      */
+    var level: Level
+    
+    /**
+      * The message of the log entry
+      */
+    var message: String
+    
+    /**
+      * Callback that returns an additional support object to be logged in support mode.
+      */
+    var supportInfo: js.UndefOr[js.Function0[Any]] = js.undefined
+    
+    /**
+      * Time string in format HH:mm:ss:mmmnnn
+      */
+    var time: String
+    
+    /**
+      * The number of milliseconds since the epoch
+      */
+    var timestamp: float
+  }
+  object Entry {
+    
+    inline def apply(
+      component: String,
+      date: String,
+      details: String,
+      level: Level,
+      message: String,
+      time: String,
+      timestamp: float
+    ): Entry = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Entry]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+      
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      
+      inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setSupportInfo(value: () => Any): Self = StObject.set(x, "supportInfo", js.Any.fromFunction0(value))
+      
+      inline def setSupportInfoUndefined: Self = StObject.set(x, "supportInfo", js.undefined)
+      
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      
+      inline def setTimestamp(value: float): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Listener extends StObject {
+    
+    var __implements__sap_base_Log_Listener: Boolean
+    
+    /**
+      * The function that is called once the Listener is attached
+      */
+    var onAttachToLog: js.UndefOr[js.Function1[/* oLog */ Log, Unit]] = js.undefined
+    
+    /**
+      * The function that is called once the Listener is detached
+      */
+    var onDetachFromLog: js.UndefOr[js.Function1[/* oLog */ Log, Unit]] = js.undefined
+    
+    /**
+      * The function that is called once log entries are discarded due to the exceed of total log entry amount
+      */
+    var onDiscardLogEntries: js.UndefOr[js.Function1[/* aDiscardedEntries */ js.Array[Entry], Unit]] = js.undefined
+    
+    /**
+      * The function that is called when a new log entry is created
+      */
+    var onLogEntry: js.UndefOr[js.Function1[/* oLogEntry */ Entry, Unit]] = js.undefined
+  }
+  object Listener {
+    
+    inline def apply(__implements__sap_base_Log_Listener: Boolean): Listener = {
+      val __obj = js.Dynamic.literal(__implements__sap_base_Log_Listener = __implements__sap_base_Log_Listener.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Listener]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+      
+      inline def setOnAttachToLog(value: /* oLog */ Log => Unit): Self = StObject.set(x, "onAttachToLog", js.Any.fromFunction1(value))
+      
+      inline def setOnAttachToLogUndefined: Self = StObject.set(x, "onAttachToLog", js.undefined)
+      
+      inline def setOnDetachFromLog(value: /* oLog */ Log => Unit): Self = StObject.set(x, "onDetachFromLog", js.Any.fromFunction1(value))
+      
+      inline def setOnDetachFromLogUndefined: Self = StObject.set(x, "onDetachFromLog", js.undefined)
+      
+      inline def setOnDiscardLogEntries(value: /* aDiscardedEntries */ js.Array[Entry] => Unit): Self = StObject.set(x, "onDiscardLogEntries", js.Any.fromFunction1(value))
+      
+      inline def setOnDiscardLogEntriesUndefined: Self = StObject.set(x, "onDiscardLogEntries", js.undefined)
+      
+      inline def setOnLogEntry(value: /* oLogEntry */ Entry => Unit): Self = StObject.set(x, "onLogEntry", js.Any.fromFunction1(value))
+      
+      inline def setOnLogEntryUndefined: Self = StObject.set(x, "onLogEntry", js.undefined)
+      
+      inline def set__implements__sap_base_Log_Listener(value: Boolean): Self = StObject.set(x, "__implements__sap_base_Log_Listener", value.asInstanceOf[js.Any])
+    }
   }
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     *
     * A Logging API for JavaScript.
     *
@@ -131,7 +260,15 @@ object sapBaseLogMod extends Shortcut {
   trait Log extends StObject {
     
     /**
-      * Allows to add a new LogListener that will be notified for new log entries.
+      * Enumeration of the configurable log levels that a Logger should persist to the log.
+      *
+      * Only if the current LogLevel is higher than the level {@link module:sap/base/Log.Level} of the currently
+      * added log entry, then this very entry is permanently added to the log. Otherwise it is ignored.
+      */
+    var Level: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level */ Any = js.native
+    
+    /**
+      * Allows to add a new listener that will be notified for new log entries.
       *
       * The given object must provide method `onLogEntry` and can also be informed about `onDetachFromLog`, `onAttachToLog`
       * and `onDiscardLogEntries`.
@@ -139,7 +276,7 @@ object sapBaseLogMod extends Shortcut {
     def addLogListener(/**
       * The new listener object that should be informed
       */
-    oListener: js.Object): Unit = js.native
+    oListener: Listener): Unit = js.native
     
     /**
       * Creates a new debug-level entry in the log with the given message, details and calling component.
@@ -785,16 +922,16 @@ object sapBaseLogMod extends Shortcut {
       *
       * @returns an array containing the recorded log entries
       */
-    def getLogEntries(): js.Array[js.Object] = js.native
+    def getLogEntries(): js.Array[Entry] = js.native
     
     /**
-      * Returns a dedicated logger for a component
+      * Returns a dedicated logger for a component.
       *
       * The logger comes with the same API as the `sap/base/Log` module:
-      * 	`#fatal` - see: {@link module:sap/base/Log.fatal} `#error` - see: {@link module:sap/base/Log.error}
-      * `#warning` - see: {@link module:sap/base/Log.warning} `#info` - see: {@link module:sap/base/Log.info}
-      * `#debug` - see: {@link module:sap/base/Log.debug} `#trace` - see: {@link module:sap/base/Log.trace}
-      * `#setLevel` - see: {@link module:sap/base/Log.setLevel} `#getLevel` - see: {@link module:sap/base/Log.getLevel}
+      * 	`#fatal` - see: {@link module:sap/base/Log.fatal} `#error` - see: {@link module:sap/base/Log.error }
+      * `#warning` - see: {@link module:sap/base/Log.warning} `#info` - see: {@link module:sap/base/Log.info }
+      * `#debug` - see: {@link module:sap/base/Log.debug} `#trace` - see: {@link module:sap/base/Log.trace }
+      * `#setLevel` - see: {@link module:sap/base/Log.setLevel} `#getLevel` - see: {@link module:sap/base/Log.getLevel }
       * `#isLoggable` - see: {@link module:sap/base/Log.isLoggable}
       *
       * @returns A logger with a specified component
@@ -802,7 +939,7 @@ object sapBaseLogMod extends Shortcut {
     def getLogger(/**
       * Name of the component which should be logged
       */
-    sComponent: String): js.Object = js.native
+    sComponent: String): Logger = js.native
     def getLogger(
       /**
       * Name of the component which should be logged
@@ -812,7 +949,7 @@ object sapBaseLogMod extends Shortcut {
       * The default log level
       */
     iDefaultLogLevel: Level
-    ): js.Object = js.native
+    ): Logger = js.native
     
     /**
       * Creates a new info-level entry in the log with the given message, details and calling component.
@@ -1059,9 +1196,1328 @@ object sapBaseLogMod extends Shortcut {
       * Allows to remove a registered LogListener.
       */
     def removeLogListener(/**
-      * The new listener object that should be removed
+      * The listener object that should be removed
       */
-    oListener: js.Object): Unit = js.native
+    oListener: Listener): Unit = js.native
+    
+    /**
+      * Defines the maximum `sap/base/Log.Level` of log entries that will be recorded. Log entries with a higher
+      * (less important) log level will be omitted from the log. When a component name is given, the log level
+      * will be configured for that component only, otherwise the log level for the default component of this
+      * logger is set. For the global logger, the global default level is set.
+      *
+      * **Note**: Setting a global default log level has no impact on already defined component log levels. They
+      * always override the global default log level.
+      */
+    def setLevel(/**
+      * The new log level
+      */
+    iLogLevel: Level): Unit = js.native
+    def setLevel(
+      /**
+      * The new log level
+      */
+    iLogLevel: Level,
+      /**
+      * The log component to set the log level for
+      */
+    sComponent: String
+    ): Unit = js.native
+    
+    /**
+      * Creates a new trace-level entry in the log with the given message, details and calling component.
+      */
+    def trace(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    
+    /**
+      * Creates a new warning-level entry in the log with the given message, details and calling component.
+      */
+    def warning(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+  }
+  
+  @js.native
+  trait Logger extends StObject {
+    
+    var __implements__sap_base_Log_Logger: Boolean = js.native
+    
+    /**
+      * Creates a new debug-level entry in the log with the given message, details and calling component.
+      */
+    def debug(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    
+    /**
+      * Creates a new error-level entry in the log with the given message, details and calling component.
+      */
+    def error(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    
+    /**
+      * Creates a new fatal-level entry in the log with the given message, details and calling component.
+      */
+    def fatal(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    
+    /**
+      * Returns the log level currently effective for the given component. If no component is given or when no
+      * level has been configured for a given component, the log level for the default component of this logger
+      * is returned.
+      *
+      * @returns The log level for the given component or the default log level
+      */
+    def getLevel(): Level = js.native
+    def getLevel(/**
+      * Name of the component to retrieve the log level for
+      */
+    sComponent: String): Level = js.native
+    
+    /**
+      * Creates a new info-level entry in the log with the given message, details and calling component.
+      */
+    def info(/**
+      * Message text to display
+      */
+    sMessage: String): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: String,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    
+    /**
+      * Checks whether logging is enabled for the given log level, depending on the currently effective log level
+      * for the given component.
+      *
+      * If no component is given, the default component of this logger will be taken into account.
+      *
+      * @returns Whether logging is enabled or not
+      */
+    def isLoggable(): Boolean = js.native
+    def isLoggable(
+      /**
+      * The log level in question
+      */
+    iLevel: Unit,
+      /**
+      * Name of the component to check the log level for
+      */
+    sComponent: String
+    ): Boolean = js.native
+    def isLoggable(/**
+      * The log level in question
+      */
+    iLevel: Level): Boolean = js.native
+    def isLoggable(
+      /**
+      * The log level in question
+      */
+    iLevel: Level,
+      /**
+      * Name of the component to check the log level for
+      */
+    sComponent: String
+    ): Boolean = js.native
     
     /**
       * Defines the maximum `sap/base/Log.Level` of log entries that will be recorded. Log entries with a higher

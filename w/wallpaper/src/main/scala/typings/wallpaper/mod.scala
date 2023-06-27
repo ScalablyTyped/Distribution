@@ -6,7 +6,9 @@ import typings.wallpaper.wallpaperStrings.center
 import typings.wallpaper.wallpaperStrings.fill
 import typings.wallpaper.wallpaperStrings.fit
 import typings.wallpaper.wallpaperStrings.main
+import typings.wallpaper.wallpaperStrings.span
 import typings.wallpaper.wallpaperStrings.stretch
+import typings.wallpaper.wallpaperStrings.tile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,11 +59,14 @@ object mod {
   trait SetOptions extends StObject {
     
     /**
-    	__macOS only.__
-    	Scaling method. Values: `auto` `fill` `fit` `stretch` `center`.
-    	@default 'auto'
+    	__macOS & Windows__
+    	Scaling method.
+    	macOS Values: `auto` `fill` `fit` `stretch` `center`.
+    	Windows Values: `stretch` `center` `tile` `span` `max` `crop-to-fit` `keep-aspect-ratio`.
+    	@default 'auto' for macOS
+    	@default 'span' for Windows
     	*/
-    val scale: js.UndefOr[auto | fill | fit | stretch | center] = js.undefined
+    val scale: js.UndefOr[auto | fill | fit | stretch | center | tile | span] = js.undefined
     
     /**
     	__macOS only.__
@@ -82,7 +87,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
-      inline def setScale(value: auto | fill | fit | stretch | center): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: auto | fill | fit | stretch | center | tile | span): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       

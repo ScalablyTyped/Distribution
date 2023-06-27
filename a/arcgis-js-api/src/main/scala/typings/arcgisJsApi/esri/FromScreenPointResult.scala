@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FromScreenPointResult extends StObject {
   
   /**
-    * The map point of the point associated with the given screen point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#FromScreenPointResult)
-    */
+  		 * The map point of the point associated with the given screen point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#FromScreenPointResult)
+  		 */
   var mapPoint: Point
   
   /**
-    * Array of x, y, and z component (if hasZ is enabled).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#FromScreenPointResult)
-    */
+  		 * Array of x, y, and z component (if hasZ is enabled).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html#FromScreenPointResult)
+  		 */
   var vertex: js.Array[Double]
 }
 object FromScreenPointResult {

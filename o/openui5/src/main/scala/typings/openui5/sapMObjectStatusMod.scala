@@ -24,8 +24,7 @@ object sapMObjectStatusMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object
-    * Status}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object Status}
     */
   open class default () extends ObjectStatus {
     def this(/**
@@ -150,7 +149,7 @@ object sapMObjectStatusMod {
     vAriaDescribedBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.ObjectStatus`.
       *
@@ -165,20 +164,20 @@ object sapMObjectStatusMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectStatus` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.ObjectStatus`.
       *
@@ -198,7 +197,7 @@ object sapMObjectStatusMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -209,7 +208,7 @@ object sapMObjectStatusMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectStatus` itself
       */
@@ -217,7 +216,7 @@ object sapMObjectStatusMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Detaches event handler `fnFunction` from the {@link #event:press press} event of this `sap.m.ObjectStatus`.
       *
@@ -229,13 +228,13 @@ object sapMObjectStatusMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -243,8 +242,8 @@ object sapMObjectStatusMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.54
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -257,7 +256,7 @@ object sapMObjectStatusMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getActive active}.
       *
@@ -272,13 +271,12 @@ object sapMObjectStatusMod {
     def getActive(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -314,7 +312,7 @@ object sapMObjectStatusMod {
     def getIconDensityAware(): Boolean = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Gets current value of property {@link #getInverted inverted}.
       *
@@ -339,7 +337,7 @@ object sapMObjectStatusMod {
     def getState(): String = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Gets current value of property {@link #getStateAnnouncementText stateAnnouncementText}.
       *
@@ -408,7 +406,7 @@ object sapMObjectStatusMod {
     vAriaDescribedBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getActive active}.
       *
@@ -429,7 +427,7 @@ object sapMObjectStatusMod {
     bActive: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -489,7 +487,7 @@ object sapMObjectStatusMod {
     bIconDensityAware: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Sets a new value for property {@link #getInverted inverted}.
       *
@@ -520,7 +518,7 @@ object sapMObjectStatusMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Sets a new value for property {@link #getStateAnnouncementText stateAnnouncementText}.
       *
@@ -591,12 +589,18 @@ object sapMObjectStatusMod {
     sTitle: String): this.type = js.native
   }
   
+  trait ObjectStatus$PressEventParameters extends StObject
+  
+  type ObjectStatusPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectStatus$PressEventParameters]
+  
+  type ObjectStatusPressEventParameters = ObjectStatus$PressEventParameters
+  
   trait ObjectStatusSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Indicates if the `ObjectStatus` text and icon can be clicked/tapped by the user.
       *
@@ -614,7 +618,7 @@ object sapMObjectStatusMod {
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */
@@ -638,7 +642,7 @@ object sapMObjectStatusMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.66
+      * @since 1.66
       *
       * Determines whether the background color reflects the set `state` instead of the control's text.
       */
@@ -647,11 +651,13 @@ object sapMObjectStatusMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Fires when the user clicks/taps on active text.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the text value state. The allowed values are from the enum type `sap.ui.core.ValueState`. Since
@@ -660,7 +666,7 @@ object sapMObjectStatusMod {
     var state: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Еnables overriding of the default state announcement.
       */
@@ -723,7 +729,7 @@ object sapMObjectStatusMod {
       
       inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

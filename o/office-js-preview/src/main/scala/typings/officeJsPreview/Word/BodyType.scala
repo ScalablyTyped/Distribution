@@ -16,7 +16,7 @@ object BodyType extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait endnote
@@ -34,7 +34,7 @@ object BodyType extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait footnote
@@ -61,7 +61,7 @@ object BodyType extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait noteItem

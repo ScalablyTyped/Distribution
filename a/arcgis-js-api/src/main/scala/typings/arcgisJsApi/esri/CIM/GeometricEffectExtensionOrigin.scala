@@ -11,16 +11,16 @@ sealed trait GeometricEffectExtensionOrigin extends StObject
 object GeometricEffectExtensionOrigin extends StObject {
   
   /**
-    * BeginningOfLine - extension is added to the end of the line.
-    */
+  			 * BeginningOfLine - extension is added to the end of the line.
+  			 */
   @js.native
   sealed trait BeginningOfLine
     extends StObject
        with GeometricEffectExtensionOrigin
   
   /**
-    * EndOfLine - extension is added to the end of the line.
-    */
+  			 * EndOfLine - extension is added to the end of the line.
+  			 */
   @js.native
   sealed trait EndOfLine
     extends StObject

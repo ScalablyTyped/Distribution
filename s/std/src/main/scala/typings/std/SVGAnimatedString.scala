@@ -4,12 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The SVGAnimatedString interface represents string attributes which can be animated from each SVG declaration. You need to create SVG attribute before doing anything else, everything should be declared inside this. */
+/**
+  * The SVGAnimatedString interface represents string attributes which can be animated from each SVG declaration. You need to create SVG attribute before doing anything else, everything should be declared inside this.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString)
+  */
 trait SVGAnimatedString extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/animVal) */
   /* standard dom */
   val animVal: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedString/baseVal) */
   /* standard dom */
   var baseVal: java.lang.String
 }

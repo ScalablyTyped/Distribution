@@ -22,7 +22,7 @@ open class RotatingTool () extends Tool {
   
   /**
     * Compute the new angle given a point.
-    * @param{Point} newPoint
+    * @param {Point} newPoint
     */
   def computeRotate(newPoint: Point): Double = js.native
   

@@ -5,7 +5,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.custom_
 import typings.arcgisJsApi.arcgisJsApiStrings.expression
 import typings.arcgisJsApi.arcgisJsApiStrings.fields
 import typings.arcgisJsApi.arcgisJsApiStrings.media
-import typings.arcgisJsApi.arcgisJsApiStrings.relationship_
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,9 +17,9 @@ trait Content_
      with JSONSupport {
   
   /**
-    * The type of popup element displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html#type)
-    */
-  val `type`: text | fields | media | attachments | custom_ | expression | relationship_ = js.native
+  		 * The type of popup element displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-Content.html#type)
+  		 */
+  val `type`: text | fields | media | attachments | custom_ | expression | typings.arcgisJsApi.arcgisJsApiStrings.relationship = js.native
 }

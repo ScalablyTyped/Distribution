@@ -31,8 +31,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       * column.
       *
       * **Note:** This method relies on the internal `FlexibleColumnLayout` reference to be rendered in the DOM
-      * tree. For convenience, use methods {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady} and {@link
-      * sap.f.FlexibleColumnLayoutSemanticHelper#whenDOMReady}.
+      * tree. For convenience, use methods {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady} and {@link sap.f.FlexibleColumnLayoutSemanticHelper#whenDOMReady}.
       *
       * @returns The object describing the current UI state
       */
@@ -46,9 +45,9 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       * 	 - defaultLayoutType - the layout that will be suggested by default when only 1 column needs to be shown
       *
       * 	 - defaultTwoColumnLayoutType - the layout that will be suggested by default when 2 columns have to
-      * 			be shown side by side
+      *     be shown side by side
       * 	 - defaultThreeColumnLayoutType - the layout that will be suggested by default when 3 columns have to
-      * 			be shown side by side
+      *     be shown side by side
       *
       * @returns The object describing the default layout types for the different numbers of columns
       */
@@ -71,7 +70,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     ): UIState = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns `true` if internal `FlexibleColumnLayout` reference is rendered in the DOM tree.
       *
@@ -81,7 +80,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     override def isDOMReady(): Boolean = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Abstract wrapper for {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady}. Returns `true` if criteria
       * are met for the APIs in this helper to be used.
@@ -92,7 +91,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     override def isReady(): Boolean = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns promise which can be used to find out when the internal `FlexibleColumnLayout` is rendered. This
       * is needed because methods in `FlexibleColumnLayout` rely on the control being rendered.
@@ -103,7 +102,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     override def whenDOMReady(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns promise which can be used to find out when internal criteria for this helper's API reliability
       * are met.
@@ -266,8 +265,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       * column.
       *
       * **Note:** This method relies on the internal `FlexibleColumnLayout` reference to be rendered in the DOM
-      * tree. For convenience, use methods {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady} and {@link
-      * sap.f.FlexibleColumnLayoutSemanticHelper#whenDOMReady}.
+      * tree. For convenience, use methods {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady} and {@link sap.f.FlexibleColumnLayoutSemanticHelper#whenDOMReady}.
       *
       * @returns The object describing the current UI state
       */
@@ -280,9 +278,9 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
       * 	 - defaultLayoutType - the layout that will be suggested by default when only 1 column needs to be shown
       *
       * 	 - defaultTwoColumnLayoutType - the layout that will be suggested by default when 2 columns have to
-      * 			be shown side by side
+      *     be shown side by side
       * 	 - defaultThreeColumnLayoutType - the layout that will be suggested by default when 3 columns have to
-      * 			be shown side by side
+      *     be shown side by side
       *
       * @returns The object describing the default layout types for the different numbers of columns
       */
@@ -303,7 +301,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     ): UIState
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns `true` if internal `FlexibleColumnLayout` reference is rendered in the DOM tree.
       *
@@ -312,7 +310,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     def isDOMReady(): Boolean
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Abstract wrapper for {@link sap.f.FlexibleColumnLayoutSemanticHelper#isDOMReady}. Returns `true` if criteria
       * are met for the APIs in this helper to be used.
@@ -322,7 +320,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     def isReady(): Boolean
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns promise which can be used to find out when the internal `FlexibleColumnLayout` is rendered. This
       * is needed because methods in `FlexibleColumnLayout` rely on the control being rendered.
@@ -332,7 +330,7 @@ object sapFFlexibleColumnLayoutSemanticHelperMod {
     def whenDOMReady(): js.Promise[Any]
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Returns promise which can be used to find out when internal criteria for this helper's API reliability
       * are met.

@@ -14,7 +14,7 @@ object sapUiCoreDelegateScrollEnablementMod {
   @js.native
   open class default protected () extends ScrollEnablement {
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a ScrollEnablement delegate that can be attached to Controls requiring capabilities for scrolling
       * of a certain part of their DOM.
@@ -42,7 +42,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.core.delegate.ScrollEnablement with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
@@ -97,7 +97,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.core.delegate.ScrollEnablement.
       *
@@ -117,7 +117,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     vElement: jQuery[HTMLElement]
     ): js.Object = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Calculates scroll position of a child of a container.
       *
@@ -131,8 +131,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): js.Object = js.native
     
     /**
-      * @SINCE 1.9.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.9.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Get current setting for horizontal scrolling.
       *
@@ -141,8 +141,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     def getHorizontal(): Boolean = js.native
     
     /**
-      * @SINCE 1.9.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.9.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Get current setting for vertical scrolling.
       *
@@ -151,7 +151,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     def getVertical(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Refreshes this Scrolling delegate.
       */
@@ -198,7 +198,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Scrolls to an element within a container.
       */
@@ -339,9 +339,9 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.17
+      * @since 1.17
       * @deprecated (since 1.42)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Setter for property `bounce`.
       */
@@ -351,8 +351,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     bBounce: Boolean): Unit = js.native
     
     /**
-      * @SINCE 1.11.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.11.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets GrowingList control to scroll container
       */
@@ -372,7 +372,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enable or disable horizontal scrolling.
       */
@@ -382,8 +382,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     bHorizontal: Boolean): Unit = js.native
     
     /**
-      * @SINCE 1.16.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets IconTabBar control to scroll container
       */
@@ -403,8 +403,8 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.9.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.9.2
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Set overflow control on top of scroll container.
       */
@@ -416,7 +416,7 @@ object sapUiCoreDelegateScrollEnablementMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enable or disable vertical scrolling.
       */

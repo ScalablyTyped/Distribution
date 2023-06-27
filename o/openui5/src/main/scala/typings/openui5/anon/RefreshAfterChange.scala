@@ -39,9 +39,8 @@ trait RefreshAfterChange extends StObject {
   var headers: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
-    * Since 1.46; defines whether to update all bindings after submitting this change operation. See {@link
-    * #setRefreshAfterChange} If given, this overrules the model-wide `refreshAfterChange` flag for this operation
-    * only.
+    * Since 1.46; defines whether to update all bindings after submitting this change operation. See {@link #setRefreshAfterChange }
+    * If given, this overrules the model-wide `refreshAfterChange` flag for this operation only.
     */
   var refreshAfterChange: js.UndefOr[Boolean] = js.undefined
   

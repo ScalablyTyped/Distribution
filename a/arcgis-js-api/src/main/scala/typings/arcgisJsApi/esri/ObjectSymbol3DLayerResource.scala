@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectSymbol3DLayerResource extends StObject {
   
   /**
-    * The URL to the 3D model in [glTF format](https://www.khronos.org/gltf/).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
-    */
+  		 * The URL to the 3D model in [glTF format](https://www.khronos.org/gltf/).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
+  		 */
   var href: js.UndefOr[String] = js.undefined
   
   /**
-    * Uses a built-in shape.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
-    */
+  		 * Uses a built-in shape.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
+  		 */
   var primitive: js.UndefOr[String] = js.undefined
 }
 object ObjectSymbol3DLayerResource {

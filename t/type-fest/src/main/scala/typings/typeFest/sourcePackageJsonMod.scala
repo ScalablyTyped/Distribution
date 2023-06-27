@@ -40,30 +40,21 @@ import typings.typeFest.typeFestStrings.Exclamationmarksunos
 import typings.typeFest.typeFestStrings.Exclamationmarkwin32
 import typings.typeFest.typeFestStrings.Exclamationmarkx32
 import typings.typeFest.typeFestStrings.Exclamationmarkx64
-import typings.typeFest.typeFestStrings.`import`
-import typings.typeFest.typeFestStrings.`node-addons`
-import typings.typeFest.typeFestStrings.`react-native`
 import typings.typeFest.typeFestStrings.aix
 import typings.typeFest.typeFestStrings.arm
 import typings.typeFest.typeFestStrings.arm64
-import typings.typeFest.typeFestStrings.browser
 import typings.typeFest.typeFestStrings.commonjs_
 import typings.typeFest.typeFestStrings.darwin
-import typings.typeFest.typeFestStrings.default
-import typings.typeFest.typeFestStrings.deno
-import typings.typeFest.typeFestStrings.electron
 import typings.typeFest.typeFestStrings.freebsd
 import typings.typeFest.typeFestStrings.ia32
 import typings.typeFest.typeFestStrings.linux
 import typings.typeFest.typeFestStrings.mips
 import typings.typeFest.typeFestStrings.mipsel
 import typings.typeFest.typeFestStrings.module
-import typings.typeFest.typeFestStrings.node_
 import typings.typeFest.typeFestStrings.openbsd
 import typings.typeFest.typeFestStrings.ppc
 import typings.typeFest.typeFestStrings.ppc64
 import typings.typeFest.typeFestStrings.public
-import typings.typeFest.typeFestStrings.require
 import typings.typeFest.typeFestStrings.restricted
 import typings.typeFest.typeFestStrings.s390
 import typings.typeFest.typeFestStrings.s390x
@@ -156,23 +147,30 @@ object sourcePackageJsonMod {
       }
     }
     
-    type ExportCondition = LiteralUnion[
-        `import` | require | node_ | `node-addons` | deno | browser | electron | `react-native` | default, 
-        String
-      ]
-    
     /**
     	A mapping of conditions and the paths to which they resolve.
     	*/
-    /** NOTE: Mapped type definitions are impossible to translate to Scala.
-      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
-      * You'll have to cast your way around this structure, unfortunately. 
-      * TS definition: {{{
-      {[ condition in type-fest.type-fest/source/package-json.PackageJson.ExportCondition ]:? type-fest.type-fest/source/package-json.PackageJson.Exports}
-      }}}
-      */
-    @js.native
-    trait ExportConditions extends StObject
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type ExportConditions = {[condition: string] : type-fest.type-fest/source/package-json.PackageJson.Exports}
+    }}}
+    to avoid circular code involving: 
+    - type-fest.type-fest/source/package-json.PackageJson.ExportConditions
+    - type-fest.type-fest/source/package-json.PackageJson.Exports
+    - type-fest.type-fest/source/package-json.PackageJson.Imports
+    */
+    trait ExportConditions
+      extends StObject
+         with // eslint-disable-line @typescript-eslint/consistent-indexed-object-style
+    /* condition */ StringDictionary[Exports]
+    object ExportConditions {
+      
+      inline def apply(): ExportConditions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[ExportConditions]
+      }
+    }
     
     type Exports = Null | String | (js.Array[String | ExportConditions]) | ExportConditions
     

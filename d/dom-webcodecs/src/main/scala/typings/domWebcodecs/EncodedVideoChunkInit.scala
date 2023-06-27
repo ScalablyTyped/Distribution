@@ -1,25 +1,26 @@
 package typings.domWebcodecs
 
+import typings.std.EncodedVideoChunkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EncodedVideoChunkInit extends StObject {
   
-  var data: AllowSharedBufferSource
+  var data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
   
   var duration: js.UndefOr[Double] = js.undefined
   
   var timestamp: Double
   
-  var `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
+  var `type`: EncodedVideoChunkType
 }
 object EncodedVideoChunkInit {
   
   inline def apply(
-    data: AllowSharedBufferSource,
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
     timestamp: Double,
-    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
+    `type`: EncodedVideoChunkType
   ): EncodedVideoChunkInit = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -29,7 +30,9 @@ object EncodedVideoChunkInit {
   @scala.inline
   implicit open class MutableBuilder[Self <: EncodedVideoChunkInit] (val x: Self) extends AnyVal {
     
-    inline def setData(value: AllowSharedBufferSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
@@ -37,8 +40,6 @@ object EncodedVideoChunkInit {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    inline def setType(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any
-    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EncodedVideoChunkType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

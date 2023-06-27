@@ -10,7 +10,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing. */
+/**
+  * Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest)
+  */
 @js.native
 trait XMLHttpRequest
   extends StObject
@@ -31,7 +35,11 @@ trait XMLHttpRequest
   /* standard dom */
   val UNSENT: `0` = js.native
   
-  /** Cancels any network activity. */
+  /**
+    * Cancels any network activity.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/abort)
+    */
   /* standard dom */
   def abort(): Unit = js.native
   
@@ -51,12 +59,15 @@ trait XMLHttpRequest
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getAllResponseHeaders) */
   /* standard dom */
   def getAllResponseHeaders(): java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/getResponseHeader) */
   /* standard dom */
   def getResponseHeader(name: java.lang.String): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/readystatechange_event) */
   /* standard dom */
   var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
@@ -68,6 +79,8 @@ trait XMLHttpRequest
     * Throws a "SecurityError" DOMException if method is a case-insensitive match for `CONNECT`, `TRACE`, or `TRACK`.
     *
     * Throws an "InvalidAccessError" DOMException if async is false, current global object is a Window object, and the timeout attribute is not zero or the responseType attribute is not the empty string.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/open)
     */
   /* standard dom */
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native
@@ -124,11 +137,17 @@ trait XMLHttpRequest
     * Acts as if the `Content-Type` header value for a response is mime. (It does not change the header.)
     *
     * Throws an "InvalidStateError" DOMException if state is loading or done.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/overrideMimeType)
     */
   /* standard dom */
   def overrideMimeType(mime: java.lang.String): Unit = js.native
   
-  /** Returns client's state. */
+  /**
+    * Returns client's state.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/readyState)
+    */
   /* standard dom */
   val readyState: Double = js.native
   
@@ -148,7 +167,11 @@ trait XMLHttpRequest
     options: EventListenerOptions
   ): Unit = js.native
   
-  /** Returns the response body. */
+  /**
+    * Returns the response body.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/response)
+    */
   /* standard dom */
   val response: Any = js.native
   
@@ -156,6 +179,8 @@ trait XMLHttpRequest
     * Returns response as text.
     *
     * Throws an "InvalidStateError" DOMException if responseType is not the empty string or "text".
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseText)
     */
   /* standard dom */
   val responseText: java.lang.String = js.native
@@ -170,10 +195,13 @@ trait XMLHttpRequest
     * When set: throws an "InvalidStateError" DOMException if state is loading or done.
     *
     * When set: throws an "InvalidAccessError" DOMException if the synchronous flag is set and current global object is a Window object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseType)
     */
   /* standard dom */
   var responseType: XMLHttpRequestResponseType = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseURL) */
   /* standard dom */
   val responseURL: java.lang.String = js.native
   
@@ -181,6 +209,8 @@ trait XMLHttpRequest
     * Returns the response as document.
     *
     * Throws an "InvalidStateError" DOMException if responseType is not the empty string or "document".
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/responseXML)
     */
   /* standard dom */
   val responseXML: Document | Null = js.native
@@ -189,6 +219,8 @@ trait XMLHttpRequest
     * Initiates the request. The body argument provides the request body, if any, and is ignored if the request method is GET or HEAD.
     *
     * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/send)
     */
   /* standard dom */
   def send(): Unit = js.native
@@ -201,13 +233,17 @@ trait XMLHttpRequest
     * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
     *
     * Throws a "SyntaxError" DOMException if name is not a header name or if value is not a header value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/setRequestHeader)
     */
   /* standard dom */
   def setRequestHeader(name: java.lang.String, value: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/status) */
   /* standard dom */
   val status: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/statusText) */
   /* standard dom */
   val statusText: java.lang.String = js.native
   
@@ -215,11 +251,17 @@ trait XMLHttpRequest
     * Can be set to a time in milliseconds. When set to a non-zero value will cause fetching to terminate after the given time has passed. When the time has passed, the request has not yet completed, and this's synchronous flag is unset, a timeout event will then be dispatched, or a "TimeoutError" DOMException will be thrown otherwise (for the send() method).
     *
     * When set: throws an "InvalidAccessError" DOMException if the synchronous flag is set and current global object is a Window object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/timeout)
     */
   /* standard dom */
   var timeout: Double = js.native
   
-  /** Returns the associated XMLHttpRequestUpload object. It can be used to gather transmission information when data is transferred to a server. */
+  /**
+    * Returns the associated XMLHttpRequestUpload object. It can be used to gather transmission information when data is transferred to a server.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/upload)
+    */
   /* standard dom */
   val upload: XMLHttpRequestUpload = js.native
   
@@ -227,6 +269,8 @@ trait XMLHttpRequest
     * True when credentials are to be included in a cross-origin request. False when they are to be excluded in a cross-origin request and when cookies are to be ignored in its response. Initially false.
     *
     * When set: throws an "InvalidStateError" DOMException if state is not unsent or opened, or if the send() flag is set.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest/withCredentials)
     */
   /* standard dom */
   var withCredentials: scala.Boolean = js.native

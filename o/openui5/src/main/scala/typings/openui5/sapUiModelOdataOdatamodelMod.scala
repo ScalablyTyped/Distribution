@@ -2,15 +2,15 @@ package typings.openui5
 
 import typings.openui5.anon.AnnotationURI
 import typings.openui5.anon.Annotations
+import typings.openui5.anon.Context
 import typings.openui5.anon.CountMode
 import typings.openui5.anon.ETag
 import typings.openui5.anon.Filters
 import typings.openui5.anon.Merge
-import typings.openui5.anon.Metadata
-import typings.openui5.anon.Method
 import typings.openui5.anon.ResponseText
 import typings.openui5.anon.SETag
 import typings.openui5.anon.Success
+import typings.openui5.anon.`9`
 import typings.openui5.openui5Booleans.`false`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
@@ -130,7 +130,7 @@ object sapUiModelOdataOdatamodelMod {
     extends typings.openui5.sapUiModelModelMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds (a) new URL(s) to the be parsed for OData annotations, which are then merged into the annotations
       * object which can be retrieved by calling the getServiceAnnotations()-method. If a $metadata url is passed
@@ -153,7 +153,7 @@ object sapUiModelOdataOdatamodelMod {
     vUrl: js.Array[String]): js.Promise[Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds new xml content to be parsed for OData annotations, which are then merged into the annotations object
       * which can be retrieved by calling the getServiceAnnotations()-method.
@@ -836,7 +836,7 @@ object sapUiModelOdataOdatamodelMod {
       /**
       * Optional parameter map containing any of the following properties:
       */
-    mParameters: Method
+    mParameters: Context
     ): js.Object = js.native
     
     /**
@@ -957,8 +957,8 @@ object sapUiModelOdataOdatamodelMod {
       * The optional vProperties parameter can be used as follows:
       *
       * - vProperties could be an array containing the property names which should be included in the new entry.
-      * 			Other properties defined in the entity type are not included. - vProperties could be an object which
-      * 			includes the desired properties and the values which should be used for the created entry.
+      *     Other properties defined in the entity type are not included. - vProperties could be an object which
+      *     includes the desired properties and the values which should be used for the created entry.
       *
       * If vProperties is not specified, all properties in the entity type will be included in the created entry.
       *
@@ -1110,7 +1110,7 @@ object sapUiModelOdataOdatamodelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:annotationsFailed annotationsFailed} to attached listeners.
       *
@@ -1123,7 +1123,7 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:annotationsLoaded annotationsLoaded} to attached listeners.
       *
@@ -1136,7 +1136,7 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: Annotations): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:metadataFailed metadataFailed} to attached listeners.
       *
@@ -1149,7 +1149,7 @@ object sapUiModelOdataOdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:metadataLoaded metadataLoaded} to attached listeners.
       *
@@ -1159,7 +1159,7 @@ object sapUiModelOdataOdatamodelMod {
     def fireMetadataLoaded(/**
       * Parameters to pass along with the event
       */
-    oParameters: Metadata): this.type = js.native
+    oParameters: `9`): this.type = js.native
     
     /**
       * @deprecated (since 1.13) - the caching should be controlled by the backend by setting the correct cache
@@ -1234,7 +1234,7 @@ object sapUiModelOdataOdatamodelMod {
     ): js.Object = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Returns the default count mode for retrieving the count of collections.
       *
@@ -1592,7 +1592,7 @@ object sapUiModelOdataOdatamodelMod {
     sCountMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CountMode * / any */ String
     ): Unit = js.native
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Sets the default mode how to retrieve the item count for a collection in this model.
       *
@@ -1600,8 +1600,8 @@ object sapUiModelOdataOdatamodelMod {
       * 	 - by sending a separate `$count` request
       * 	 - by adding parameter `$inlinecount=allpages` to one or all data requests
       * 	 - a combination of the previous two
-      * 	 - not at all (questions about the size of the collection can't be answered then)  See {@link sap.ui.model.odata.CountMode}
-      * 			for all enumeration values and more details.
+      * 	 - not at all (questions about the size of the collection can't be answered then)  See {@link sap.ui.model.odata.CountMode }
+      *     for all enumeration values and more details.
       *
       * Note that a call to this method does not modify the count mode for existing list bindings, only bindings
       * that are created afterwards will use the new mode when no mode is defined at their creation.
@@ -1708,7 +1708,7 @@ object sapUiModelOdataOdatamodelMod {
     ): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Enable/Disable automatic updates of all Bindings after change operations
       */
@@ -2167,4 +2167,28 @@ object sapUiModelOdataOdatamodelMod {
     bForceUpdate: Boolean
     ): Unit = js.native
   }
+  
+  trait ODataModel$AnnotationsFailedEventParameters extends StObject
+  
+  trait ODataModel$AnnotationsLoadedEventParameters extends StObject
+  
+  trait ODataModel$MetadataFailedEventParameters extends StObject
+  
+  trait ODataModel$MetadataLoadedEventParameters extends StObject
+  
+  type ODataModelAnnotationsFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$AnnotationsFailedEventParameters]
+  
+  type ODataModelAnnotationsFailedEventParameters = ODataModel$AnnotationsFailedEventParameters
+  
+  type ODataModelAnnotationsLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$AnnotationsLoadedEventParameters]
+  
+  type ODataModelAnnotationsLoadedEventParameters = ODataModel$AnnotationsLoadedEventParameters
+  
+  type ODataModelMetadataFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$MetadataFailedEventParameters]
+  
+  type ODataModelMetadataFailedEventParameters = ODataModel$MetadataFailedEventParameters
+  
+  type ODataModelMetadataLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataModel$MetadataLoadedEventParameters]
+  
+  type ODataModelMetadataLoadedEventParameters = ODataModel$MetadataLoadedEventParameters
 }

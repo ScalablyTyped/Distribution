@@ -9,45 +9,45 @@ trait TypeSchemeForPolyline
      with TypeScheme {
   
   /**
-    * The colors of the line symbols comprising the theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * The colors of the line symbols comprising the theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The unique name of the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * The unique name of the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var name: String
   
   /**
-    * The color of the line symbol used to indicate features with no data and features that are out of range.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * The color of the line symbol used to indicate features with no data and features that are out of range.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var noDataColor: Color_
   
   /**
-    * The opacity of the line symbol (0 - 1).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * The opacity of the line symbol (0 - 1).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var opacity: Double
   
   /**
-    * Tags associated with the scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * Tags associated with the scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * The default width of the line symbol in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
-    */
+  		 * The default width of the line symbol in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolyline)
+  		 */
   var width: Double
 }
 object TypeSchemeForPolyline {

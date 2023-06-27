@@ -21,8 +21,8 @@ import typings.octokitPluginRestEndpointMethods.anon.DeleteArchiveForAuthenticat
 import typings.octokitPluginRestEndpointMethods.anon.DeletePackageForOrg
 import typings.octokitPluginRestEndpointMethods.anon.DeleteRepoSubscription
 import typings.octokitPluginRestEndpointMethods.anon.DiffRange
-import typings.octokitPluginRestEndpointMethods.anon.Get1139
-import typings.octokitPluginRestEndpointMethods.anon.Get1390
+import typings.octokitPluginRestEndpointMethods.anon.Get1143
+import typings.octokitPluginRestEndpointMethods.anon.Get1394
 import typings.octokitPluginRestEndpointMethods.anon.GetAnalysis
 import typings.octokitPluginRestEndpointMethods.anon.GetConductCode
 import typings.octokitPluginRestEndpointMethods.anon.GetForRepo
@@ -60,7 +60,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var dependencyGraph: DiffRange
     
-    var emojis: Get1139
+    var emojis: Get1143
     
     var gists: CreateComment
     
@@ -88,7 +88,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
     
     var pulls: CreateReplyForReviewComment
     
-    var rateLimit: Get1390
+    var rateLimit: Get1394
     
     var reactions: CreateForIssue
     
@@ -117,7 +117,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       codespaces: CodespaceMachinesForAuthenticatedUser,
       dependabot: CreateOrUpdateOrgSecret,
       dependencyGraph: DiffRange,
-      emojis: Get1139,
+      emojis: Get1143,
       gists: CreateComment,
       git: CreateCommit,
       gitignore: GetTemplate,
@@ -131,7 +131,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       packages: DeletePackageForOrg,
       projects: CreateCard,
       pulls: CreateReplyForReviewComment,
-      rateLimit: Get1390,
+      rateLimit: Get1394,
       reactions: CreateForIssue,
       repos: AcceptInvitationForAuthenticatedUser,
       search: Commits,
@@ -167,7 +167,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setDependencyGraph(value: DiffRange): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
       
-      inline def setEmojis(value: Get1139): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
+      inline def setEmojis(value: Get1143): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
       inline def setGists(value: CreateComment): Self = StObject.set(x, "gists", value.asInstanceOf[js.Any])
       
@@ -195,7 +195,7 @@ object distTypesGeneratedParametersAndResponseTypesMod {
       
       inline def setPulls(value: CreateReplyForReviewComment): Self = StObject.set(x, "pulls", value.asInstanceOf[js.Any])
       
-      inline def setRateLimit(value: Get1390): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Get1394): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
       inline def setReactions(value: CreateForIssue): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
       

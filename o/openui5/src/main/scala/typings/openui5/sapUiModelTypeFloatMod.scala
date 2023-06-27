@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Source
-import typings.openui5.anon.`47`
+import typings.openui5.anon.`15`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -29,7 +29,7 @@ object sapUiModelTypeFloatMod {
       /**
       * Value constraints
       */
-    oConstraints: `47`
+    oConstraints: `15`
     ) = this()
     def this(
       /**
@@ -39,7 +39,7 @@ object sapUiModelTypeFloatMod {
       /**
       * Value constraints
       */
-    oConstraints: `47`
+    oConstraints: `15`
     ) = this()
   }
   /* static members */

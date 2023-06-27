@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterShadedReliefResult extends StObject {
   
   /**
-    * The RasterShadedReliefRenderer renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html#RasterShadedReliefResult)
-    */
+  		 * The RasterShadedReliefRenderer renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html#RasterShadedReliefResult)
+  		 */
   var renderer: RasterShadedReliefRenderer
 }
 object RasterShadedReliefResult {

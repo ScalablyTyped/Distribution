@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureSnappingLayerSourceProperties extends StObject {
   
   /**
-    * Indicates whether feature snapping is turned on or off.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#enabled)
-    */
+  		 * Indicates whether feature snapping is turned on or off.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#enabled)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The source layer used for snapping.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#layer)
-    */
+  		 * The source layer used for snapping.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-FeatureSnappingLayerSource.html#layer)
+  		 */
   var layer: js.UndefOr[
     BuildingSceneLayerPropert | CSVLayerPropertiestypecsv | FeatureLayerPropertiestyp | GeoJSONLayerPropertiestyp | GraphicsLayerPropertiesty | MapNotesLayerPropertiesty | SceneLayerPropertiestypes | WFSLayerPropertiestypewfs
   ] = js.undefined

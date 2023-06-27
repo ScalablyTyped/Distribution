@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeatmapStatisticsResult extends StObject {
   
   /**
-    * The maximum density value of all pixels in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
+  		 * The maximum density value of all pixels in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
+  		 */
   var max: Double
   
   /**
-    * The minimum density value of all pixels in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
+  		 * The minimum density value of all pixels in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
+  		 */
   var min: Double
   
   /**
-    * The summary statistics for all values returned from the field, if provided.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
-    */
+  		 * The summary statistics for all values returned from the field, if provided.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-heatmapStatistics.html#HeatmapStatisticsResult)
+  		 */
   var summaryStatistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
 }
 object HeatmapStatisticsResult {

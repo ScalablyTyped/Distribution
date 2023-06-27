@@ -85,6 +85,12 @@ object lezerLrInts {
   inline def `200`: `200` = 200.asInstanceOf[`200`]
   
   @js.native
+  sealed trait `2000`
+    extends StObject
+       with Recover
+  inline def `2000`: `2000` = 2000.asInstanceOf[`2000`]
+  
+  @js.native
   sealed trait `262144`
     extends StObject
        with Action

@@ -8,18 +8,12 @@ trait `200Content219` extends StObject {
   
   /** @description Response */
   var `200`: Content219
-  
-  var `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
 }
 object `200Content219` {
   
-  inline def apply(
-    `200`: Content219,
-    `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
-  ): `200Content219` = {
+  inline def apply(`200`: Content219): `200Content219` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("301")(`301`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content219`]
   }
   
@@ -27,9 +21,5 @@ object `200Content219` {
   implicit open class MutableBuilder[Self <: `200Content219`] (val x: Self) extends AnyVal {
     
     inline def set200(value: Content219): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set301(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
-    ): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
   }
 }

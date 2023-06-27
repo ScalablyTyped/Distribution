@@ -6,22 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `516` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Parent]
+  /** @default false */
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object `516` {
   
-  inline def apply(applicationSlashjson: js.Array[Parent]): `516` = {
+  inline def apply(): `516` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`516`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `516`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Parent]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Parent*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

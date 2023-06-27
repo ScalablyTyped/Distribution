@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideDescriptionProperties extends StObject {
   
   /**
-    * The description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#description)
-    */
+  		 * The description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#description)
+  		 */
   var text: js.UndefOr[String] = js.undefined
 }
 object SlideDescriptionProperties {

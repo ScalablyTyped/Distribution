@@ -19,16 +19,16 @@ trait NAMessage
      with JSONSupport {
   
   /**
-    * A description of the network analyst message.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#description)
-    */
+  		 * A description of the network analyst message.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#description)
+  		 */
   var description: String = js.native
   
   /**
-    * The network analyst message type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#type)
-    */
+  		 * The network analyst message type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-NAMessage.html#type)
+  		 */
   var `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = js.native
 }

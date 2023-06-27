@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.NetworkSystemLayers")
 @js.native
 /**
-  * The NetworkSystemLayers contains the url and IDs of the utility network rules, subnetworks, and dirty areas tables or layers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NetworkSystemLayers.html)
-  */
+		 * The NetworkSystemLayers contains the url and IDs of the utility network rules, subnetworks, and dirty areas tables or layers.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NetworkSystemLayers.html)
+		 */
 open class NetworkSystemLayers ()
   extends StObject
      with typings.arcgisJsApi.esri.NetworkSystemLayers {

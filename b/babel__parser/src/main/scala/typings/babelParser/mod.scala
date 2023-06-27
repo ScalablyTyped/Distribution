@@ -1,6 +1,7 @@
 package typings.babelParser
 
 import typings.babelParser.anon.ClassFeatures
+import typings.babelParser.anon.DeprecatedAssertSyntax
 import typings.babelParser.anon.Errors
 import typings.babelParser.anon.ParseResultFile
 import typings.babelParser.anon.Version
@@ -15,6 +16,7 @@ import typings.babelParser.babelParserStrings.flow
 import typings.babelParser.babelParserStrings.fsharp
 import typings.babelParser.babelParserStrings.hack
 import typings.babelParser.babelParserStrings.hash
+import typings.babelParser.babelParserStrings.importAttributes
 import typings.babelParser.babelParserStrings.minimal
 import typings.babelParser.babelParserStrings.module
 import typings.babelParser.babelParserStrings.moduleAttributes
@@ -334,8 +336,8 @@ object mod {
   type ParserPlugin = PluginConfig
   
   type ParserPluginWithOptions = js.Tuple2[
-    decorators | estree | moduleAttributes | pipelineOperator | recordAndTuple | flow | typescript, 
-    ClassFeatures | DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions | Version
+    decorators | estree | importAttributes | moduleAttributes | pipelineOperator | recordAndTuple | flow | typescript, 
+    ClassFeatures | DecoratorsPluginOptions | DeprecatedAssertSyntax | FlowPluginOptions | PipelineOperatorPluginOptions | RecordAndTuplePluginOptions | TypeScriptPluginOptions | Version
   ]
   
   trait PipelineOperatorPluginOptions extends StObject {
@@ -389,6 +391,7 @@ object mod {
     - typings.babelParser.babelParserStrings.jsx
     - typings.babelParser.babelParserStrings.logicalAssignment
     - typings.babelParser.babelParserStrings.importAssertions
+    - typings.babelParser.babelParserStrings.importAttributes
     - typings.babelParser.babelParserStrings.importReflection
     - typings.babelParser.babelParserStrings.moduleBlocks
     - typings.babelParser.babelParserStrings.moduleStringNames

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DotDensityRendererLegendOptions extends StObject {
   
   /**
-    * Indicates the unit of the data being visualized.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Indicates the unit of the data being visualized.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[String] = js.undefined
 }
 object DotDensityRendererLegendOptions {

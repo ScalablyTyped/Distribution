@@ -59,7 +59,7 @@ object IndicationColor extends StObject {
   /* "Indication05" */ val Indication05: typings.openui5.sapUiCoreLibraryMod.IndicationColor.Indication05 & String = js.native
   
   /**
-    * @SINCE 1.75
+    * @since 1.75
     *
     * Indication Color 6
     */
@@ -70,7 +70,7 @@ object IndicationColor extends StObject {
   /* "Indication06" */ val Indication06: typings.openui5.sapUiCoreLibraryMod.IndicationColor.Indication06 & String = js.native
   
   /**
-    * @SINCE 1.75
+    * @since 1.75
     *
     * Indication Color 7
     */
@@ -81,7 +81,7 @@ object IndicationColor extends StObject {
   /* "Indication07" */ val Indication07: typings.openui5.sapUiCoreLibraryMod.IndicationColor.Indication07 & String = js.native
   
   /**
-    * @SINCE 1.75
+    * @since 1.75
     *
     * Indication Color 8
     */

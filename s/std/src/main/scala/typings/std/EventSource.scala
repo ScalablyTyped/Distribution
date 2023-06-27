@@ -10,6 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource) */
 @js.native
 trait EventSource
   extends StObject
@@ -83,20 +84,31 @@ trait EventSource
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Aborts any instances of the fetch algorithm started for this EventSource object, and sets the readyState attribute to CLOSED. */
+  /**
+    * Aborts any instances of the fetch algorithm started for this EventSource object, and sets the readyState attribute to CLOSED.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/close)
+    */
   /* standard dom */
   def close(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/error_event) */
   /* standard dom */
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/message_event) */
   /* standard dom */
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent[Any], Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/open_event) */
   /* standard dom */
   var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** Returns the state of this EventSource object's connection. It can have the values described below. */
+  /**
+    * Returns the state of this EventSource object's connection. It can have the values described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/readyState)
+    */
   /* standard dom */
   val readyState: Double = js.native
   
@@ -159,11 +171,19 @@ trait EventSource
     options: EventListenerOptions
   ): Unit = js.native
   
-  /** Returns the URL providing the event stream. */
+  /**
+    * Returns the URL providing the event stream.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/url)
+    */
   /* standard dom */
   val url: java.lang.String = js.native
   
-  /** Returns true if the credentials mode for connection requests to the URL providing the event stream is set to "include", and false otherwise. */
+  /**
+    * Returns true if the credentials mode for connection requests to the URL providing the event stream is set to "include", and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventSource/withCredentials)
+    */
   /* standard dom */
   val withCredentials: scala.Boolean = js.native
 }

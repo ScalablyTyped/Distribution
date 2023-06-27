@@ -29,7 +29,7 @@ trait CreateRepositorySnapshot extends StObject {
     * Create a new snapshot of a repository's dependencies. You must authenticate using an access token with the `repo` scope to use this endpoint for a repository that the requesting user has access to.
     */
   @JSName("createRepositorySnapshot")
-  var createRepositorySnapshot_Original: `289`
+  var createRepositorySnapshot_Original: `291`
   
   /**
     * Gets the diff of the dependency changes between two commits of a repository, based on the changes to the dependency manifests made in those commits.
@@ -49,7 +49,7 @@ trait CreateRepositorySnapshot extends StObject {
     * Gets the diff of the dependency changes between two commits of a repository, based on the changes to the dependency manifests made in those commits.
     */
   @JSName("diffRange")
-  var diffRange_Original: `290`
+  var diffRange_Original: `292`
   
   /**
     * Exports the software bill of materials (SBOM) for a repository in SPDX JSON format.
@@ -69,11 +69,11 @@ trait CreateRepositorySnapshot extends StObject {
     * Exports the software bill of materials (SBOM) for a repository in SPDX JSON format.
     */
   @JSName("exportSbom")
-  var exportSbom_Original: `291`
+  var exportSbom_Original: `293`
 }
 object CreateRepositorySnapshot {
   
-  inline def apply(createRepositorySnapshot: `289`, diffRange: `290`, exportSbom: `291`): CreateRepositorySnapshot = {
+  inline def apply(createRepositorySnapshot: `291`, diffRange: `292`, exportSbom: `293`): CreateRepositorySnapshot = {
     val __obj = js.Dynamic.literal(createRepositorySnapshot = createRepositorySnapshot.asInstanceOf[js.Any], diffRange = diffRange.asInstanceOf[js.Any], exportSbom = exportSbom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRepositorySnapshot]
   }
@@ -81,10 +81,10 @@ object CreateRepositorySnapshot {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateRepositorySnapshot] (val x: Self) extends AnyVal {
     
-    inline def setCreateRepositorySnapshot(value: `289`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
+    inline def setCreateRepositorySnapshot(value: `291`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
     
-    inline def setDiffRange(value: `290`): Self = StObject.set(x, "diffRange", value.asInstanceOf[js.Any])
+    inline def setDiffRange(value: `292`): Self = StObject.set(x, "diffRange", value.asInstanceOf[js.Any])
     
-    inline def setExportSbom(value: `291`): Self = StObject.set(x, "exportSbom", value.asInstanceOf[js.Any])
+    inline def setExportSbom(value: `293`): Self = StObject.set(x, "exportSbom", value.asInstanceOf[js.Any])
   }
 }

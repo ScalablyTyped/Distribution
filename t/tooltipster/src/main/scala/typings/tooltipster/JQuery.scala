@@ -35,7 +35,7 @@ trait JQuery extends StObject {
   @JSName("tooltipster")
   var tooltipster_Original: ITooltipsterJQuery
   /**
-    * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
+    * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the
     * DOM). The `callback` function argument is optional.
     */
   @JSName("tooltipster")
@@ -43,7 +43,7 @@ trait JQuery extends StObject {
   @JSName("tooltipster")
   def tooltipster_close(method: close, callback: TooltipsterStandardCallbackFunction): JQuery
   /**
-    * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first 
+    * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first
     * will be returned.
     */
   @JSName("tooltipster")
@@ -80,7 +80,7 @@ trait JQuery extends StObject {
   @JSName("tooltipster")
   def tooltipster_enable(method: enable): JQuery
   /**
-    * Returns the instance of Tooltipster associated to the tooltip. If the selector matches multiple origins, 
+    * Returns the instance of Tooltipster associated to the tooltip. If the selector matches multiple origins,
     * only the instance of the first will be returned.
     */
   @JSName("tooltipster")
@@ -102,7 +102,7 @@ trait JQuery extends StObject {
   @JSName("tooltipster")
   def tooltipster_one(method: one, eventName: String, callback: js.Function1[/* e */ JQueryEventObject, Unit]): JQuery
   /**
-    * Opens the tooltip. The `callback` function argument is optional (see its input signature) and, if provided, 
+    * Opens the tooltip. The `callback` function argument is optional (see its input signature) and, if provided,
     * is called when the opening animation has ended
     */
   @JSName("tooltipster")
@@ -125,7 +125,7 @@ trait JQuery extends StObject {
   @JSName("tooltipster")
   def tooltipster_reposition(method: reposition): JQuery
   /**
-    * Returns various information about the tooltip, like whether it is open or not. See 
+    * Returns various information about the tooltip, like whether it is open or not. See
     * http://iamceege.github.io/tooltipster/#status
     */
   @JSName("tooltipster")

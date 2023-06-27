@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tweenjs/tween.js" : "20.0.3"
+      "@tweenjs/tween.js" : "21.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@tweenjs/tween.js" : "20.0.3"
+      "@tweenjs/tween.js" : "21.0.0"
     }
   ],
   "compile-devDependencies" : [

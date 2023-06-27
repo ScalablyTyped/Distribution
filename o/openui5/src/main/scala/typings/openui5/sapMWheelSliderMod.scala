@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NewKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +148,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCollapsed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -180,7 +179,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCollapsed(
       /**
@@ -191,7 +190,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -212,13 +211,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachExpanded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -243,7 +242,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachExpanded(
       /**
@@ -254,7 +253,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -276,13 +275,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectedKeyChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -308,7 +307,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectedKeyChange(
       /**
@@ -319,7 +318,7 @@ object sapMWheelSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.WheelSlider` itself
       */
@@ -344,13 +343,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCollapsed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -368,13 +367,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachExpanded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -393,13 +392,13 @@ object sapMWheelSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectedKeyChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WheelSliderSelectedKeyChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -407,7 +406,7 @@ object sapMWheelSliderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:collapsed collapsed} to attached listeners.
       *
@@ -420,7 +419,7 @@ object sapMWheelSliderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:expanded expanded} to attached listeners.
       *
@@ -433,17 +432,19 @@ object sapMWheelSliderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectedKeyChange selectedKeyChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectedKeyChange(): this.type = js.native
-    def fireSelectedKeyChange(/**
+    def fireSelectedKeyChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewKey): this.type = js.native
+    mParameters: WheelSlider$SelectedKeyChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getIsCyclic isCyclic}.
@@ -613,6 +614,45 @@ object sapMWheelSliderMod {
     sSelectedKey: String): this.type = js.native
   }
   
+  trait WheelSlider$CollapsedEventParameters extends StObject
+  
+  trait WheelSlider$ExpandedEventParameters extends StObject
+  
+  trait WheelSlider$SelectedKeyChangeEventParameters extends StObject {
+    
+    /**
+      * The new selected key
+      */
+    var newKey: js.UndefOr[String] = js.undefined
+  }
+  object WheelSlider$SelectedKeyChangeEventParameters {
+    
+    inline def apply(): WheelSlider$SelectedKeyChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WheelSlider$SelectedKeyChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelSlider$SelectedKeyChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewKey(value: String): Self = StObject.set(x, "newKey", value.asInstanceOf[js.Any])
+      
+      inline def setNewKeyUndefined: Self = StObject.set(x, "newKey", js.undefined)
+    }
+  }
+  
+  type WheelSliderCollapsedEvent = typings.openui5.sapUiBaseEventMod.default[WheelSlider$CollapsedEventParameters]
+  
+  type WheelSliderCollapsedEventParameters = WheelSlider$CollapsedEventParameters
+  
+  type WheelSliderExpandedEvent = typings.openui5.sapUiBaseEventMod.default[WheelSlider$ExpandedEventParameters]
+  
+  type WheelSliderExpandedEventParameters = WheelSlider$ExpandedEventParameters
+  
+  type WheelSliderSelectedKeyChangeEvent = typings.openui5.sapUiBaseEventMod.default[WheelSlider$SelectedKeyChangeEventParameters]
+  
+  type WheelSliderSelectedKeyChangeEventParameters = WheelSlider$SelectedKeyChangeEventParameters
+  
   trait WheelSliderSettings
     extends StObject
        with ControlSettings {
@@ -620,12 +660,16 @@ object sapMWheelSliderMod {
     /**
       * Fires when the slider is collapsed.
       */
-    var collapsed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var collapsed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fires when the slider is expanded.
       */
-    var expanded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var expanded: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Indicates whether the slider supports cyclic scrolling.
@@ -661,7 +705,12 @@ object sapMWheelSliderMod {
     /**
       * Fires when the selected key changes.
       */
-    var selectedKeyChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectedKeyChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[WheelSlider$SelectedKeyChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object WheelSliderSettings {
     
@@ -673,11 +722,11 @@ object sapMWheelSliderMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: WheelSliderSettings] (val x: Self) extends AnyVal {
       
-      inline def setCollapsed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction1(value))
+      inline def setCollapsed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction1(value))
       
       inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      inline def setExpanded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "expanded", js.Any.fromFunction1(value))
+      inline def setExpanded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "expanded", js.Any.fromFunction1(value))
       
       inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
       
@@ -703,7 +752,9 @@ object sapMWheelSliderMod {
       
       inline def setSelectedKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      inline def setSelectedKeyChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectedKeyChange", js.Any.fromFunction1(value))
+      inline def setSelectedKeyChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[WheelSlider$SelectedKeyChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectedKeyChange", js.Any.fromFunction1(value))
       
       inline def setSelectedKeyChangeUndefined: Self = StObject.set(x, "selectedKeyChange", js.undefined)
       

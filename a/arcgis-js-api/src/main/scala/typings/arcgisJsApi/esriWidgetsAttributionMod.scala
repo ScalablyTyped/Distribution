@@ -11,10 +11,10 @@ object esriWidgetsAttributionMod {
   @JSImport("esri/widgets/Attribution", JSImport.Namespace)
   @js.native
   /**
-    * The Attribution widget displays attribution text for the layers in a map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
-    */
+  		 * The Attribution widget displays attribution text for the layers in a map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
+  		 */
   open class ^ ()
     extends StObject
        with Attribution {

@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content29 extends StObject {
   
-  /**
-    * Get all gitignore templates
-    * @description List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/reference/repos#create-a-repository-for-the-authenticated-user).
-    */
+  /** List gist commits */
   var get: Responses200Content29
 }
 object GetResponses200Content29 {

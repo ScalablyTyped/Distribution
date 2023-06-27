@@ -8,5 +8,5 @@ object distTypesVersionMod {
   
   @JSImport("@octokit/plugin-paginate-rest/dist-types/version", "VERSION")
   @js.native
-  val VERSION: /* "6.1.0" */ String = js.native
+  val VERSION: /* "7.1.2" */ String = js.native
 }

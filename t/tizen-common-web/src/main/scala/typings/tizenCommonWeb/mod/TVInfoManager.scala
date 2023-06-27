@@ -14,9 +14,9 @@ trait TVInfoManager extends StObject {
     *
     * @returns long Subscription identifier
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def addCaptionValueChangeListener(key: CaptionInfoKey, callback: CaptionValueChangeCallback): Double
   
@@ -25,8 +25,8 @@ trait TVInfoManager extends StObject {
     *
     * @returns CaptionValue value for given caption menu key
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def getCaptionValue(key: CaptionInfoKey): CaptionValue
   
@@ -37,7 +37,7 @@ trait TVInfoManager extends StObject {
     *
     * @param watchId Identifier of the subscription returned by addCaptionValueChangeListener()
     *
-    * @throw WebAPIException with error type UnknownError, in any other error case.
+    * @throws WebAPIException with error type UnknownError, in any other error case.
     */
   def removeCaptionValueChangeListener(watchId: Double): Unit
 }

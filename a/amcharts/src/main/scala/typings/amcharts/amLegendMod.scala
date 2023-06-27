@@ -325,7 +325,7 @@ object amLegendMod {
     
     /**
       * Vertical space between legend items also between legend border and first and last legend row.
-      * @default: 10
+      * @default 10
       */
     /* CompleteClass */
     var verticalGap: Double = js.native
@@ -600,7 +600,7 @@ object amLegendMod {
     
     /**
       * Vertical space between legend items also between legend border and first and last legend row.
-      * @default: 10
+      * @default 10
       */
     var verticalGap: Double
   }

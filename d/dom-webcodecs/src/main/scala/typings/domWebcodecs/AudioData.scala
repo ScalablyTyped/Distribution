@@ -10,7 +10,10 @@ trait AudioData extends StObject {
   
   def close(): Unit
   
-  def copyTo(destination: AllowSharedBufferSource, options: AudioDataCopyToOptions): Unit
+  def copyTo(
+    destination: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
+    options: AudioDataCopyToOptions
+  ): Unit
   
   val duration: Double
   
@@ -29,7 +32,7 @@ object AudioData {
   inline def apply(
     allocationSize: AudioDataCopyToOptions => Double,
     close: () => Unit,
-    copyTo: (AllowSharedBufferSource, AudioDataCopyToOptions) => Unit,
+    copyTo: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any, AudioDataCopyToOptions) => Unit,
     duration: Double,
     format: AudioSampleFormat,
     numberOfChannels: Double,
@@ -48,7 +51,9 @@ object AudioData {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    inline def setCopyTo(value: (AllowSharedBufferSource, AudioDataCopyToOptions) => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction2(value))
+    inline def setCopyTo(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any, AudioDataCopyToOptions) => Unit
+    ): Self = StObject.set(x, "copyTo", js.Any.fromFunction2(value))
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

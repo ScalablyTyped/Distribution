@@ -14,10 +14,10 @@ trait VoiceControlClient extends StObject {
     *
     * @returns Identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def addLanguageChangeListener(listener: VoiceControlLanguageChangeCallback): Double = js.native
   
@@ -28,10 +28,10 @@ trait VoiceControlClient extends StObject {
     *
     * @returns Identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def addResultListener(listener: VoiceControlResultCallback): Double = js.native
   
@@ -43,8 +43,8 @@ trait VoiceControlClient extends StObject {
     *
     * @returns Currently set language.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def getCurrentLanguage(): String = js.native
   
@@ -57,7 +57,7 @@ trait VoiceControlClient extends StObject {
     *
     * @remark If you call this method, all other VoiceControlClient objects are also released.
     *
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def release(): Unit = js.native
   
@@ -68,8 +68,8 @@ trait VoiceControlClient extends StObject {
     *
     * @param id Identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def removeLanguageChangeListener(id: Double): Unit = js.native
   
@@ -80,8 +80,8 @@ trait VoiceControlClient extends StObject {
     *
     * @param id Identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def removeResultListener(id: Double): Unit = js.native
   
@@ -94,13 +94,13 @@ trait VoiceControlClient extends StObject {
     * @param list Command list handle.
     * @param type Type of registered commands. The default value is "FOREGROUND"
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input
     * parameters contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def setCommandList(list: js.Array[VoiceControlCommand]): Unit = js.native
   def setCommandList(list: js.Array[VoiceControlCommand], `type`: VoiceControlCommandType): Unit = js.native
@@ -113,11 +113,11 @@ trait VoiceControlClient extends StObject {
     *
     * @param type Type of commands that should be unset. The default value is "FOREGROUND"
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not
     * compatible with the expected type.
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def unsetCommandList(): Unit = js.native
   def unsetCommandList(`type`: VoiceControlCommandType): Unit = js.native

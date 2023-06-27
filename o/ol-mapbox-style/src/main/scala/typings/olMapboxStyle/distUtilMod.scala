@@ -16,8 +16,8 @@ object distUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addMapboxLayer(mapOrGroup: LayerGroup | Map, mapboxLayer: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMapboxLayer")(mapOrGroup.asInstanceOf[js.Any], mapboxLayer.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addMapboxLayer(mapOrGroup: LayerGroup | Map, mapboxLayer: Any, beforeLayerId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMapboxLayer")(mapOrGroup.asInstanceOf[js.Any], mapboxLayer.asInstanceOf[js.Any], beforeLayerId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addMapboxLayer(mapOrGroup: LayerGroup | Map, mapboxLayer: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMapboxLayer")(mapOrGroup.asInstanceOf[js.Any], mapboxLayer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def addMapboxLayer(mapOrGroup: LayerGroup | Map, mapboxLayer: Any, beforeLayerId: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMapboxLayer")(mapOrGroup.asInstanceOf[js.Any], mapboxLayer.asInstanceOf[js.Any], beforeLayerId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def clearFunctionCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFunctionCache")().asInstanceOf[Unit]
   

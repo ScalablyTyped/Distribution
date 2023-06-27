@@ -1,10 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemPressedValue
-import typings.openui5.anon.`16`
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMComboBoxBaseMod.ComboBoxBaseSettings
+import typings.openui5.sapMInputBaseMod.InputBase$ChangeEventParameters
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.std.Object
 import typings.std.PropertyKey
@@ -153,7 +152,7 @@ object sapMComboBoxMod {
     var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Configures the SuggestionsPopover's list.
       */
@@ -178,13 +177,13 @@ object sapMComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ComboBox` itself
       */
@@ -211,7 +210,7 @@ object sapMComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -222,7 +221,7 @@ object sapMComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ComboBox` itself
       */
@@ -241,13 +240,13 @@ object sapMComboBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -257,23 +256,25 @@ object sapMComboBoxMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: ItemPressedValue): this.type = js.native
+    mParameters: ComboBox$ChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `16`): this.type = js.native
+    mParameters: ComboBox$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the default selected item from the aggregation named `items`.
       *
@@ -282,7 +283,7 @@ object sapMComboBoxMod {
     def getDefaultSelectedItem(): Null = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getFilterSecondaryValues filterSecondaryValues}.
       *
@@ -327,49 +328,49 @@ object sapMComboBoxMod {
     def getSelectedKey(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called after the ComboBox Picker's List is rendered.
       */
     def onAfterRenderingList(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called after the ComboBox's Picker is rendered.
       */
     def onAfterRenderingPicker(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler is called before the picker popup is opened.
       */
     def onBeforeOpen(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called before the ComboBox is rendered.
       */
     def onBeforeRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called before the ComboBox' Picker of type `sap.m.Popover` is rendered.
       */
     def onBeforeRenderingDropdown(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called before the ComboBox Picker's List is rendered.
       */
     def onBeforeRenderingList(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This event handler will be called before the ComboBox's Picker is rendered.
       */
@@ -384,7 +385,7 @@ object sapMComboBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets a new value for property {@link #getFilterSecondaryValues filterSecondaryValues}.
       *
@@ -461,19 +462,92 @@ object sapMComboBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Synchronizes the `selectedItem` association and the `selectedItemId` property.
       */
     def synchronizeSelection(): Unit = js.native
   }
   
+  trait ComboBox$ChangeEventParameters
+    extends StObject
+       with InputBase$ChangeEventParameters {
+    
+    /**
+      * Indicates whether the change event was caused by selecting an item in the list
+      */
+    var itemPressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object ComboBox$ChangeEventParameters {
+    
+    inline def apply(): ComboBox$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComboBox$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBox$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItemPressed(value: Boolean): Self = StObject.set(x, "itemPressed", value.asInstanceOf[js.Any])
+      
+      inline def setItemPressedUndefined: Self = StObject.set(x, "itemPressed", js.undefined)
+    }
+  }
+  
+  trait ComboBox$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object ComboBox$SelectionChangeEventParameters {
+    
+    inline def apply(): ComboBox$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComboBox$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBox$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type ComboBoxChangeEvent = typings.openui5.sapUiBaseEventMod.default[ComboBox$ChangeEventParameters]
+  
+  type ComboBoxChangeEventParameters = ComboBox$ChangeEventParameters
+  
+  type ComboBoxSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[ComboBox$SelectionChangeEventParameters]
+  
+  type ComboBoxSelectionChangeEventParameters = ComboBox$SelectionChangeEventParameters
+  
   trait ComboBoxSettings
     extends StObject
        with ComboBoxBaseSettings {
     
     /**
-      * @SINCE 1.46
+      * This event is fired when the value in the text input field is changed in combination with one of the
+      * following actions:
+      *
+      *
+      * 	 - The focus leaves the text input field
+      * 	 - The Enter key is pressed
+      * 	 - An item in the list is selected
+      */
+    @JSName("change")
+    var change_ComboBoxSettings: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComboBox$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * @since 1.46
       *
       * Indicates whether the filter should check in both the `text` and the `additionalText` property of the
       * {@link sap.ui.core.ListItem} for the suggestion.
@@ -503,7 +577,12 @@ object sapMComboBoxMod {
       * This event is fired when the user types something that matches with an item in the list; it is also fired
       * when the user presses on a list item, or when navigating via keyboard.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComboBox$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object ComboBoxSettings {
     
@@ -514,6 +593,12 @@ object sapMComboBoxMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ComboBoxSettings] (val x: Self) extends AnyVal {
+      
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComboBox$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
       inline def setFilterSecondaryValues(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "filterSecondaryValues", value.asInstanceOf[js.Any])
       
@@ -531,7 +616,9 @@ object sapMComboBoxMod {
       
       inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ComboBox$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
     }

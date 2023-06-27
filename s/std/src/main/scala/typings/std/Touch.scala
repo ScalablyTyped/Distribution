@@ -4,42 +4,58 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A single contact point on a touch-sensitive device. The contact point is commonly a finger or stylus and the device may be a touchscreen or trackpad. */
+/**
+  * A single contact point on a touch-sensitive device. The contact point is commonly a finger or stylus and the device may be a touchscreen or trackpad.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch)
+  */
 trait Touch extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/clientX) */
   /* standard dom */
   val clientX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/clientY) */
   /* standard dom */
   val clientY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/force) */
   /* standard dom */
   val force: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/identifier) */
   /* standard dom */
   val identifier: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/pageX) */
   /* standard dom */
   val pageX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/pageY) */
   /* standard dom */
   val pageY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/radiusX) */
   /* standard dom */
   val radiusX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/radiusY) */
   /* standard dom */
   val radiusY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/rotationAngle) */
   /* standard dom */
   val rotationAngle: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/screenX) */
   /* standard dom */
   val screenX: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/screenY) */
   /* standard dom */
   val screenY: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/target) */
   /* standard dom */
   val target: EventTarget
 }

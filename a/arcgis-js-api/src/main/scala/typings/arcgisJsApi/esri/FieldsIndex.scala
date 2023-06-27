@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldsIndex extends StObject {
   
   /**
-    * An array of date fields or field json objects.
-    *
-    * @default []
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#dateFields)
-    */
+  		 * An array of date fields or field json objects.
+  		 *
+  		 * @default []
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#dateFields)
+  		 */
   var dateFields: js.Array[Any | Field]
   
   /**
-    * Returns a field with the specified field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#get)
-    */
+  		 * Returns a field with the specified field name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#get)
+  		 */
   def get(fieldName: String): Field
   
   /**
-    * Checks if a field with the specified field name exists in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#has)
-    */
+  		 * Checks if a field with the specified field name exists in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#has)
+  		 */
   def has(fieldName: String): Boolean
   
   /**
-    * Checks if a field with the specified field name is a date field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#isDateField)
-    */
+  		 * Checks if a field with the specified field name is a date field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#isDateField)
+  		 */
   def isDateField(fieldName: String): Boolean
 }
 object FieldsIndex {

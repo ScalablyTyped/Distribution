@@ -16,6 +16,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaFeatureValueMod.MediaF
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -61,12 +62,20 @@ object distNodesMediaFeatureRangeMod {
     
     var value: MediaFeatureValue = js.native
     
-    def walk(
+    def walk[T /* <: Record[String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaFeatureRangeWalkerEntry, 
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
           /* index */ Double | String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
+          /* index */ Double | String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -113,12 +122,20 @@ object distNodesMediaFeatureRangeMod {
     
     var value: MediaFeatureValue = js.native
     
-    def walk(
+    def walk[T /* <: Record[String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaFeatureRangeWalkerEntry, 
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
           /* index */ Double | String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
+          /* index */ Double | String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -197,12 +214,20 @@ object distNodesMediaFeatureRangeMod {
     
     def valueTwoOperatorKind(): MediaFeatureComparison | `false` = js.native
     
-    def walk(
+    def walk[T /* <: Record[String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaFeatureRangeWalkerEntry, 
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
           /* index */ Double | String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaFeatureRangeWalkerEntry[T], 
+          /* index */ Double | String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */

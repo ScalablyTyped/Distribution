@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiUnifiedFileUploaderHttpRequestMethodMod {
   
   /**
-    * @SINCE 1.81.0
+    * @since 1.81.0
     *
     * Types of HTTP request methods.
     */
@@ -26,7 +26,7 @@ object sapUiUnifiedFileUploaderHttpRequestMethodMod {
   @js.native
   sealed trait FileUploaderHttpRequestMethod extends StObject
   /**
-    * @SINCE 1.81.0
+    * @since 1.81.0
     *
     * Types of HTTP request methods.
     */

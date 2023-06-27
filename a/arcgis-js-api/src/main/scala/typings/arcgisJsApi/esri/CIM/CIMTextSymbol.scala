@@ -10,256 +10,256 @@ trait CIMTextSymbol
      with CIMSymbolType {
   
   /**
-    * The amount of rotation applied to the text symbol, measured in degrees, around the geometry.
-    */
+  			 * The amount of rotation applied to the text symbol, measured in degrees, around the geometry.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The amount of rotation of the text symbol around the X axis, measured in degrees, around the geometry. This type of rotation is also referred to as tilt. It is applied in 3D.
-    */
+  			 * The amount of rotation of the text symbol around the X axis, measured in degrees, around the geometry. This type of rotation is also referred to as tilt. It is applied in 3D.
+  			 */
   var angleX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The amount of rotation of the text symbol around the Y axis, measured in degrees, around the geometry. This type of rotation is also referred to as roll. It is applied in 3D.
-    */
+  			 * The amount of rotation of the text symbol around the Y axis, measured in degrees, around the geometry. This type of rotation is also referred to as roll. It is applied in 3D.
+  			 */
   var angleY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The billboard mode of the text symbol.
-    */
+  			 * The billboard mode of the text symbol.
+  			 */
   var billboardMode3D: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BillboardMode * / any */ String
   ] = js.undefined
   
   /**
-    * The direction in which multi-line text is stacked.
-    */
+  			 * The direction in which multi-line text is stacked.
+  			 */
   var blockProgression: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockProgression * / any */ String
   ] = js.undefined
   
   /**
-    * The callout or background of the text with optional leader lines.
-    */
+  			 * The callout or background of the text with optional leader lines.
+  			 */
   var callout: js.UndefOr[CIMCalloutType] = js.undefined
   
   /**
-    * A value indicating whether to draw the text in a fashion compatible with ArcMap.
-    */
+  			 * A value indicating whether to draw the text in a fashion compatible with ArcMap.
+  			 */
   var compatibilityMode: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ISO code for the base country of the text.
-    */
+  			 * The ISO code for the base country of the text.
+  			 */
   var countryISO: js.UndefOr[String] = js.undefined
   
   /**
-    * The depth of the glyph when drawn in 3D. This is an extrusion of the characters of the text in the Z axis.
-    */
+  			 * The depth of the glyph when drawn in 3D. This is an extrusion of the characters of the text in the Z axis.
+  			 */
   var depth3D: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether fonts that are drawn as rasters at some scales to draw as vectors instead.
-    */
+  			 * A value indicating whether fonts that are drawn as rasters at some scales to draw as vectors instead.
+  			 */
   var drawGlyphsAsGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether soft hyphens should be drawn. Soft hyphens are invisible markers that indicate where a hyphenated break is allowed within the text. They are only drawn if there is word wrapping at the end of a line.
-    */
+  			 * A value indicating whether soft hyphens should be drawn. Soft hyphens are invisible markers that indicate where a hyphenated break is allowed within the text. They are only drawn if there is word wrapping at the end of a line.
+  			 */
   var drawSoftHyphen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether the baseline of the text geometry should be expanded in the same manner as the existing geometry if the text extends beyond the baseline.
-    */
+  			 * A value indicating whether the baseline of the text geometry should be expanded in the same manner as the existing geometry if the text extends beyond the baseline.
+  			 */
   var extrapolateBaselines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The angle (in degrees from vertical) at which point rotated text is flipped (mirrored) in place.
-    */
+  			 * The angle (in degrees from vertical) at which point rotated text is flipped (mirrored) in place.
+  			 */
   var flipAngle: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether the text is drawn as subscript or superscript.
-    */
+  			 * Whether the text is drawn as subscript or superscript.
+  			 */
   var fontEffects: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontEffects * / any */ String
   ] = js.undefined
   
   /**
-    * The font encoding.
-    */
+  			 * The font encoding.
+  			 */
   var fontEncoding: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontEncoding * / any */ String
   ] = js.undefined
   
   /**
-    * The font family name of the font. e.g. Comic Sans.
-    */
+  			 * The font family name of the font. e.g. Comic Sans.
+  			 */
   var fontFamilyName: js.UndefOr[String] = js.undefined
   
   /**
-    * The style name for the font family. e.g. Regular, Bold, or Italic.
-    */
+  			 * The style name for the font family. e.g. Regular, Bold, or Italic.
+  			 */
   var fontStyleName: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of font that the font family/style name reference.
-    */
+  			 * The type of font that the font family/style name reference.
+  			 */
   var fontType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontType * / any */ String
   ] = js.undefined
   
   /**
-    * An additional rotation that is applied to the individual glyphs contained in the text. This is applied to the individual glyphs whereas Angle, AngleX and AngleY are affect how the entire text string is oriented.
-    */
+  			 * An additional rotation that is applied to the individual glyphs contained in the text. This is applied to the individual glyphs whereas Angle, AngleX and AngleY are affect how the entire text string is oriented.
+  			 */
   var glyphRotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The size of the halo that extends beyond the symbol shape.
-    */
+  			 * The size of the halo that extends beyond the symbol shape.
+  			 */
   var haloSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The polygon symbol that is used to draw the halo for a text symbol.
-    */
+  			 * The polygon symbol that is used to draw the halo for a text symbol.
+  			 */
   var haloSymbol: js.UndefOr[CIMPolygonSymbol] = js.undefined
   
   /**
-    * The size of the text in points.
-    */
+  			 * The size of the text in points.
+  			 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * If hinting from the font is used for text rendering. Hinting is information included with most fonts to effectively fit the vector glyphs of the font into the raster grid onto which they are displayed.
-    */
+  			 * If hinting from the font is used for text rendering. Hinting is information included with most fonts to effectively fit the vector glyphs of the font into the raster grid onto which they are displayed.
+  			 */
   var hinting: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphHinting * / any */ String
   ] = js.undefined
   
   /**
-    * The alignment type used to align the text to the geometry horizontally. Affects which side of a point geometry the point text is drawn or which end of a line it is drawn close to. Commonly used to define how stacked text appears.
-    */
+  			 * The alignment type used to align the text to the geometry horizontally. Affects which side of a point geometry the point text is drawn or which end of a line it is drawn close to. Commonly used to define how stacked text appears.
+  			 */
   var horizontalAlignment: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment * / any */ String
   ] = js.undefined
   
   /**
-    * How many points to indent the text back from the end of the baseline.
-    */
+  			 * How many points to indent the text back from the end of the baseline.
+  			 */
   var indentAfter: js.UndefOr[Double] = js.undefined
   
   /**
-    * How many points to indent the text from the beginning of the baseline.
-    */
+  			 * How many points to indent the text from the beginning of the baseline.
+  			 */
   var indentBefore: js.UndefOr[Double] = js.undefined
   
   /**
-    * How many points to indent the text from the beginning of the baseline for the first line only.
-    */
+  			 * How many points to indent the text from the beginning of the baseline for the first line only.
+  			 */
   var indentFirstLine: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the text is drawn with metric kerning, which adjusts the spacing between individual letter forms.
-    */
+  			 * A value indicating whether the text is drawn with metric kerning, which adjusts the spacing between individual letter forms.
+  			 */
   var kerning: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the ISO code for the base language of the text.
-    */
+  			 * Whether the ISO code for the base language of the text.
+  			 */
   var languageISO: js.UndefOr[String] = js.undefined
   
   /**
-    * The additional spacing that is added to each glyph beyond what is defined by its character box in the font. Value indicates the percentage of a glyph's width. Also known as tracking.
-    */
+  			 * The additional spacing that is added to each glyph beyond what is defined by its character box in the font. Value indicates the percentage of a glyph's width. Also known as tracking.
+  			 */
   var letterSpacing: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width that is added to each glyph beyond what is defined by its character box in its font. This is a percentage of the original glyph.
-    */
+  			 * The width that is added to each glyph beyond what is defined by its character box in its font. This is a percentage of the original glyph.
+  			 */
   var letterWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether text is to be drawn with ligatures, which occur when two or more letters or portions of letters are joined to form a single glyph.
-    */
+  			 * A value indicating whether text is to be drawn with ligatures, which occur when two or more letters or portions of letters are joined to form a single glyph.
+  			 */
   var ligatures: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The spacing between lines of text. This is also known as leading or line spacing.
-    */
+  			 * The spacing between lines of text. This is also known as leading or line spacing.
+  			 */
   var lineGap: js.UndefOr[Double] = js.undefined
   
   /**
-    * The type of line gap that is applied.
-    */
+  			 * The type of line gap that is applied.
+  			 */
   var lineGapType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineGapType * / any */ String
   ] = js.undefined
   
   /**
-    * The X offset.
-    */
+  			 * The X offset.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The Y offset.
-    */
+  			 * The Y offset.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * The Z offset.
-    */
+  			 * The Z offset.
+  			 */
   var offsetZ: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether or not the symbol should overprint in press printing.
-    */
+  			 * A value indicating whether or not the symbol should overprint in press printing.
+  			 */
   var overprint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The color of the shadow that is defined for the text symbol. The shadow is drawn as an offset copy of the text.
-    */
+  			 * The color of the shadow that is defined for the text symbol. The shadow is drawn as an offset copy of the text.
+  			 */
   var shadowColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The shadow offset from the text symbol in the horizontal direction. If X and Y are zero, no shadow is drawn.
-    */
+  			 * The shadow offset from the text symbol in the horizontal direction. If X and Y are zero, no shadow is drawn.
+  			 */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The shadow offset from the text symbol in the vertical direction. If X and Y are zero, no shadow is drawn.
-    */
+  			 * The shadow offset from the text symbol in the vertical direction. If X and Y are zero, no shadow is drawn.
+  			 */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the text should be drawn as Small Capitals, where lower case text is converted to small caps and upper case text is left as upper case.
-    */
+  			 * A value indicating whether the text should be drawn as Small Capitals, where lower case text is converted to small caps and upper case text is left as upper case.
+  			 */
   var smallCaps: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether to draw the text with a strike through it.
-    */
+  			 * A value indicating whether to draw the text with a strike through it.
+  			 */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The polygon symbol that is used to draw the glyphs of the text.
-    */
+  			 * The polygon symbol that is used to draw the glyphs of the text.
+  			 */
   var symbol: js.UndefOr[CIMPolygonSymbol] = js.undefined
   
   /**
-    * The collection of properties that are applied to the text symbol only in a 3D context.
-    */
+  			 * The collection of properties that are applied to the text symbol only in a 3D context.
+  			 */
   var symbol3DProperties: js.UndefOr[CIM3DSymbolProperties] = js.undefined
   
   /**
-    * The letter case used to draw the text.
-    */
+  			 * The letter case used to draw the text.
+  			 */
   var textCase: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextCase * / any */ String
   ] = js.undefined
   
   /**
-    * The base text direction to draw the text.
-    */
+  			 * The base text direction to draw the text.
+  			 */
   var textDirection: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextReadingDirection * / any */ String
   ] = js.undefined
@@ -268,27 +268,27 @@ trait CIMTextSymbol
   var type_CIMTextSymbol: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextSymbol
   
   /**
-    * A value indicating whether to draw the text with an underline.
-    */
+  			 * A value indicating whether to draw the text with an underline.
+  			 */
   var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The vertical alignment of the text.
-    */
+  			 * The vertical alignment of the text.
+  			 */
   var verticalAlignment: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment * / any */ String
   ] = js.undefined
   
   /**
-    * The orientation for the non-vertical text in a vertical layout. For example, an English fragment in a Japanese text.
-    */
+  			 * The orientation for the non-vertical text in a vertical layout. For example, an English fragment in a Japanese text.
+  			 */
   var verticalGlyphOrientation: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalGlyphOrientation * / any */ String
   ] = js.undefined
   
   /**
-    * The additional spacing that is added to between the words of the text string. 100% indicates that regular spacing is used.
-    */
+  			 * The additional spacing that is added to between the words of the text string. 100% indicates that regular spacing is used.
+  			 */
   var wordSpacing: js.UndefOr[Double] = js.undefined
 }
 object CIMTextSymbol {

@@ -2,11 +2,13 @@ package typings.openui5
 
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreDndDragAndDropMod.DragSession
 import typings.openui5.sapUiCoreDndDragDropBaseMod.DragDropBaseSettings
 import typings.openui5.sapUiCoreLibraryMod.dnd.DropEffect
 import typings.openui5.sapUiCoreLibraryMod.dnd.DropLayout
 import typings.openui5.sapUiCoreLibraryMod.dnd.DropPosition
 import typings.openui5.sapUiCoreLibraryMod.dnd.IDropInfo
+import typings.openui5.sapUiCoreLibraryMod.dnd.RelativeDropPosition
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -143,13 +145,13 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit]
     ): this.type = js.native
     def attachDragEnter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
@@ -174,7 +176,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit]
     ): this.type = js.native
     def attachDragEnter(
       /**
@@ -185,7 +187,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
@@ -193,7 +195,7 @@ object sapUiCoreDndDropInfoMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:dragOver dragOver} event of this `sap.ui.core.dnd.DropInfo`.
       *
@@ -208,20 +210,20 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit]
     ): this.type = js.native
     def attachDragOver(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Attaches event handler `fnFunction` to the {@link #event:dragOver dragOver} event of this `sap.ui.core.dnd.DropInfo`.
       *
@@ -241,7 +243,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit]
     ): this.type = js.native
     def attachDragOver(
       /**
@@ -252,7 +254,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
@@ -274,13 +276,13 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit]
     ): this.type = js.native
     def attachDrop(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
@@ -306,7 +308,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit]
     ): this.type = js.native
     def attachDrop(
       /**
@@ -317,7 +319,7 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.dnd.DropInfo` itself
       */
@@ -335,13 +337,13 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit]
     ): this.type = js.native
     def detachDragEnter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragEnterEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -349,7 +351,7 @@ object sapUiCoreDndDropInfoMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Detaches event handler `fnFunction` from the {@link #event:dragOver dragOver} event of this `sap.ui.core.dnd.DropInfo`.
       *
@@ -361,13 +363,13 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit]
     ): this.type = js.native
     def detachDragOver(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDragOverEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -385,13 +387,13 @@ object sapUiCoreDndDropInfoMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit]
     ): this.type = js.native
     def detachDrop(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DropInfoDropEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -399,7 +401,7 @@ object sapUiCoreDndDropInfoMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:dragEnter dragEnter} to attached listeners.
       *
@@ -409,14 +411,16 @@ object sapUiCoreDndDropInfoMod {
       * @returns Whether or not to prevent the default action
       */
     def fireDragEnter(): Boolean = js.native
-    def fireDragEnter(/**
+    def fireDragEnter(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): Boolean = js.native
+    mParameters: DropInfo$DragEnterEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.56
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.56
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:dragOver dragOver} to attached listeners.
       *
@@ -426,10 +430,10 @@ object sapUiCoreDndDropInfoMod {
     def fireDragOver(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: DropInfo$DragOverEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:drop drop} to attached listeners.
       *
@@ -439,7 +443,7 @@ object sapUiCoreDndDropInfoMod {
     def fireDrop(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: DropInfo$DropEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDropEffect dropEffect}.
@@ -572,6 +576,176 @@ object sapUiCoreDndDropInfoMod {
     sTargetAggregation: String): this.type = js.native
   }
   
+  trait DropInfo$DragEnterEventParameters extends StObject {
+    
+    /**
+      * The underlying browser event
+      */
+    var browserEvent: js.UndefOr[typings.openui5.sapUiBaseEventMod.default[js.Object]] = js.undefined
+    
+    /**
+      * The UI5 `dragSession` object that exists only during drag and drop
+      */
+    var dragSession: js.UndefOr[DragSession] = js.undefined
+    
+    /**
+      * The target element on which the dragged element will be dropped
+      */
+    var target: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+  }
+  object DropInfo$DragEnterEventParameters {
+    
+    inline def apply(): DropInfo$DragEnterEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropInfo$DragEnterEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropInfo$DragEnterEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setBrowserEvent(value: typings.openui5.sapUiBaseEventMod.default[js.Object]): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserEventUndefined: Self = StObject.set(x, "browserEvent", js.undefined)
+      
+      inline def setDragSession(value: DragSession): Self = StObject.set(x, "dragSession", value.asInstanceOf[js.Any])
+      
+      inline def setDragSessionUndefined: Self = StObject.set(x, "dragSession", js.undefined)
+      
+      inline def setTarget(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    }
+  }
+  
+  trait DropInfo$DragOverEventParameters extends StObject {
+    
+    /**
+      * The underlying browser event
+      */
+    var browserEvent: js.UndefOr[typings.openui5.sapUiBaseEventMod.default[js.Object]] = js.undefined
+    
+    /**
+      * The UI5 `dragSession` object that exists only during drag and drop
+      */
+    var dragSession: js.UndefOr[DragSession] = js.undefined
+    
+    /**
+      * The calculated position of the drop action relative to the `target`.
+      */
+    var dropPosition: js.UndefOr[
+        RelativeDropPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.RelativeDropPosition * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * The target element on which the dragged element will be dropped
+      */
+    var target: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+  }
+  object DropInfo$DragOverEventParameters {
+    
+    inline def apply(): DropInfo$DragOverEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropInfo$DragOverEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropInfo$DragOverEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setBrowserEvent(value: typings.openui5.sapUiBaseEventMod.default[js.Object]): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserEventUndefined: Self = StObject.set(x, "browserEvent", js.undefined)
+      
+      inline def setDragSession(value: DragSession): Self = StObject.set(x, "dragSession", value.asInstanceOf[js.Any])
+      
+      inline def setDragSessionUndefined: Self = StObject.set(x, "dragSession", js.undefined)
+      
+      inline def setDropPosition(
+        value: RelativeDropPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.RelativeDropPosition * / any */ String)
+      ): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      
+      inline def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
+      
+      inline def setTarget(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    }
+  }
+  
+  trait DropInfo$DropEventParameters extends StObject {
+    
+    /**
+      * The underlying browser event
+      */
+    var browserEvent: js.UndefOr[typings.openui5.sapUiBaseEventMod.default[js.Object]] = js.undefined
+    
+    /**
+      * The UI5 `dragSession` object that exists only during drag and drop
+      */
+    var dragSession: js.UndefOr[DragSession] = js.undefined
+    
+    /**
+      * The element being dragged
+      */
+    var draggedControl: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+    
+    /**
+      * The calculated position of the drop action relative to the `droppedControl`.
+      */
+    var dropPosition: js.UndefOr[
+        RelativeDropPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.RelativeDropPosition * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * The element being dropped
+      */
+    var droppedControl: js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.undefined
+  }
+  object DropInfo$DropEventParameters {
+    
+    inline def apply(): DropInfo$DropEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropInfo$DropEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropInfo$DropEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setBrowserEvent(value: typings.openui5.sapUiBaseEventMod.default[js.Object]): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserEventUndefined: Self = StObject.set(x, "browserEvent", js.undefined)
+      
+      inline def setDragSession(value: DragSession): Self = StObject.set(x, "dragSession", value.asInstanceOf[js.Any])
+      
+      inline def setDragSessionUndefined: Self = StObject.set(x, "dragSession", js.undefined)
+      
+      inline def setDraggedControl(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "draggedControl", value.asInstanceOf[js.Any])
+      
+      inline def setDraggedControlUndefined: Self = StObject.set(x, "draggedControl", js.undefined)
+      
+      inline def setDropPosition(
+        value: RelativeDropPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.RelativeDropPosition * / any */ String)
+      ): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      
+      inline def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
+      
+      inline def setDroppedControl(value: typings.openui5.sapUiCoreElementMod.default): Self = StObject.set(x, "droppedControl", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedControlUndefined: Self = StObject.set(x, "droppedControl", js.undefined)
+    }
+  }
+  
+  type DropInfoDragEnterEvent = typings.openui5.sapUiBaseEventMod.default[DropInfo$DragEnterEventParameters]
+  
+  type DropInfoDragEnterEventParameters = DropInfo$DragEnterEventParameters
+  
+  type DropInfoDragOverEvent = typings.openui5.sapUiBaseEventMod.default[DropInfo$DragOverEventParameters]
+  
+  type DropInfoDragOverEventParameters = DropInfo$DragOverEventParameters
+  
+  type DropInfoDropEvent = typings.openui5.sapUiBaseEventMod.default[DropInfo$DropEventParameters]
+  
+  type DropInfoDropEventParameters = DropInfo$DropEventParameters
+  
   trait DropInfoSettings
     extends StObject
        with DragDropBaseSettings {
@@ -579,20 +753,35 @@ object sapUiCoreDndDropInfoMod {
     /**
       * This event is fired when a dragged element enters a drop target.
       */
-    var dragEnter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var dragEnter: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DragEnterEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * This event is fired when an element is being dragged over a valid drop target.
       */
-    var dragOver: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var dragOver: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DragOverEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event is fired when an element is dropped on a valid drop target, as specified by the drag-and-drop
       * info.
       */
-    var drop: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var drop: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DropEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the visual drop effect.
@@ -632,15 +821,21 @@ object sapUiCoreDndDropInfoMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DropInfoSettings] (val x: Self) extends AnyVal {
       
-      inline def setDragEnter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
+      inline def setDragEnter(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DragEnterEventParameters] => Unit
+      ): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
       
       inline def setDragEnterUndefined: Self = StObject.set(x, "dragEnter", js.undefined)
       
-      inline def setDragOver(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
+      inline def setDragOver(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DragOverEventParameters] => Unit
+      ): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
       
       inline def setDragOverUndefined: Self = StObject.set(x, "dragOver", js.undefined)
       
-      inline def setDrop(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DropInfo$DropEventParameters] => Unit
+      ): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
       inline def setDropEffect(
         value: DropEffect | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.DropEffect * / any */ String) | PropertyBindingInfo

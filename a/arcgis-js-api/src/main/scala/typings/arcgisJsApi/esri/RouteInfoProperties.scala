@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteInfoProperties extends StObject {
   
   /**
-    * The end time of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#endTime)
-    */
+  		 * The end time of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#endTime)
+  		 */
   var endTime: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The local time offset (in minutes) for the end time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#endTimeOffset)
-    */
+  		 * The local time offset (in minutes) for the end time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#endTimeOffset)
+  		 */
   var endTimeOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * Polyline representing the route's geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#geometry)
-    */
+  		 * Polyline representing the route's geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#geometry)
+  		 */
   var geometry: js.UndefOr[PolylineProperties] = js.undefined
   
   /**
-    * User specified route name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#name)
-    */
+  		 * User specified route name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The start time of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#startTime)
-    */
+  		 * The start time of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#startTime)
+  		 */
   var startTime: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The local time offset (in minutes) for the start time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#startTimeOffset)
-    */
+  		 * The local time offset (in minutes) for the start time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#startTimeOffset)
+  		 */
   var startTimeOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * Total distance traveled in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#totalDistance)
-    */
+  		 * Total distance traveled in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#totalDistance)
+  		 */
   var totalDistance: js.UndefOr[Double] = js.undefined
   
   /**
-    * Total time in minutes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#totalDuration)
-    */
+  		 * Total time in minutes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteInfo.html#totalDuration)
+  		 */
   var totalDuration: js.UndefOr[Double] = js.undefined
 }
 object RouteInfoProperties {

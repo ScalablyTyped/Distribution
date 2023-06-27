@@ -12,20 +12,20 @@ object esriNetworksUtilityNetworkMod {
   @JSImport("esri/networks/UtilityNetwork", JSImport.Namespace)
   @js.native
   /**
-    * This class contains metadata about the utility network dataset retrieved from a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html)
-    */
+  		 * This class contains metadata about the utility network dataset retrieved from a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html)
+  		 */
   open class ^ ()
     extends StObject
        with UtilityNetwork {
     def this(properties: UtilityNetworkProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

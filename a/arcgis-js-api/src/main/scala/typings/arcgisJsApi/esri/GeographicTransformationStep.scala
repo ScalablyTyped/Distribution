@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeographicTransformationStep extends StObject {
   
   /**
-    * Gets the inverse of the geographic transformation step used to call this method or `null` if the transformation step is not invertible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#getInverse)
-    */
+  		 * Gets the inverse of the geographic transformation step used to call this method or `null` if the transformation step is not invertible.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#getInverse)
+  		 */
   def getInverse(): GeographicTransformationStep
   
   /**
-    * Indicates with the geographic transformation is inverted.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#isInverse)
-    */
+  		 * Indicates with the geographic transformation is inverted.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#isInverse)
+  		 */
   var isInverse: Boolean
   
   /**
-    * The well-known id (wkid) hat represents a known geographic transformation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#wkid)
-    */
+  		 * The well-known id (wkid) hat represents a known geographic transformation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#wkid)
+  		 */
   var wkid: Double
   
   /**
-    * The well-known text (wkt) that represents a known geographic transformation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#wkt)
-    */
+  		 * The well-known text (wkt) that represents a known geographic transformation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html#wkt)
+  		 */
   var wkt: String
 }
 object GeographicTransformationStep {

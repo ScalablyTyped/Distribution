@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Left
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +149,13 @@ object sapUiCommonsAccordionSectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit]
     ): this.type = js.native
     def attachScroll(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.AccordionSection` itself
       */
@@ -181,7 +180,7 @@ object sapUiCommonsAccordionSectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit]
     ): this.type = js.native
     def attachScroll(
       /**
@@ -192,7 +191,7 @@ object sapUiCommonsAccordionSectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.AccordionSection` itself
       */
@@ -217,13 +216,13 @@ object sapUiCommonsAccordionSectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit]
     ): this.type = js.native
     def detachScroll(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionScrollEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -231,17 +230,19 @@ object sapUiCommonsAccordionSectionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:scroll scroll} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireScroll(): this.type = js.native
-    def fireScroll(/**
+    def fireScroll(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Left): this.type = js.native
+    mParameters: AccordionSection$ScrollEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.34) - Use Accordion's "openedSectionsId" property
@@ -406,6 +407,42 @@ object sapUiCommonsAccordionSectionMod {
     sTitle: String): this.type = js.native
   }
   
+  trait AccordionSection$ScrollEventParameters extends StObject {
+    
+    /**
+      * Horizontal scroll position
+      */
+    var left: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Vertical scroll position
+      */
+    var top: js.UndefOr[int] = js.undefined
+  }
+  object AccordionSection$ScrollEventParameters {
+    
+    inline def apply(): AccordionSection$ScrollEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AccordionSection$ScrollEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionSection$ScrollEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLeft(value: int): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
+      inline def setTop(value: int): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    }
+  }
+  
+  type AccordionSectionScrollEvent = typings.openui5.sapUiBaseEventMod.default[AccordionSection$ScrollEventParameters]
+  
+  type AccordionSectionScrollEventParameters = AccordionSection$ScrollEventParameters
+  
   trait AccordionSectionSettings
     extends StObject
        with ElementSettings {
@@ -446,7 +483,12 @@ object sapUiCommonsAccordionSectionMod {
     /**
       * Event is fired when the user scrolls the panel
       */
-    var scroll: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var scroll: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AccordionSection$ScrollEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Text for the section header
@@ -483,7 +525,9 @@ object sapUiCommonsAccordionSectionMod {
       
       inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      inline def setScroll(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+      inline def setScroll(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AccordionSection$ScrollEventParameters] => Unit
+      ): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
       
       inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       

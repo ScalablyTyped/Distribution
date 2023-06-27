@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "storybook__channel-postmessage"
-version := "7.0.11-a251ff"
+version := "7.0.23-0ab4e7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "5.0-e63739",
-  "org.scalablytyped" %%% "storybook__channels" % "7.0.11-b4b54f")
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2",
+  "org.scalablytyped" %%% "storybook__channels" % "7.0.23-3ee76f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

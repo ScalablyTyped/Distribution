@@ -261,7 +261,7 @@ object typesIndexDotbundleMod {
   
   @JSImport("@sentry/browser/types/index.bundle", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.51.2" */ String = js.native
+  val SDK_VERSION: /* "7.56.0" */ String = js.native
   
   @JSImport("@sentry/browser/types/index.bundle", "Scope")
   @js.native

@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonIntegrationid extends StObject {
   
   var requestBody: ContentApplicationjsonIntegrationid
   
-  var responses: `201Content242`
+  var responses: `201Content285`
 }
 object RequestBodyContentApplicationjsonIntegrationid {
   
   inline def apply(
     parameters: PathEnvironmentnameOwner,
     requestBody: ContentApplicationjsonIntegrationid,
-    responses: `201Content242`
+    responses: `201Content285`
   ): RequestBodyContentApplicationjsonIntegrationid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonIntegrationid]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonIntegrationid {
     
     inline def setRequestBody(value: ContentApplicationjsonIntegrationid): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content242`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content285`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

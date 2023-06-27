@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityManagerGetCredentialOptions extends StObject {
   
   /**
-    * Error object returned by the server from a previous attempt to fetch the given URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
-    */
+  		 * Error object returned by the server from a previous attempt to fetch the given URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
+  		 */
   var error: js.UndefOr[Error] = js.undefined
   
   /**
-    * If set to *false*, the user will not be shown a dialog before the OAuth popup window is opened.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
-    */
+  		 * If set to *false*, the user will not be shown a dialog before the OAuth popup window is opened.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
+  		 */
   var oAuthPopupConfirmation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Token used for a previous unsuccessful attempt to fetch the given URL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
-    */
+  		 * Token used for a previous unsuccessful attempt to fetch the given URL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
+  		 */
   var token: js.UndefOr[String] = js.undefined
 }
 object IdentityManagerGetCredentialOptions {

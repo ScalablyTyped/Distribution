@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Platform Keys //
 ///////////////////
 /**
-  * @requires(CrOS) Only for Chrome OS.
+  * @requires Only for Chrome OS.
   * @requires Permissions: 'platformKeys'
   * @description
   * Use the *chrome.platformKeys* API to access client certificates
@@ -72,8 +72,8 @@ object platformKeys {
     * @param callback The public and private CryptoKey of a certificate which can only be used with *subleCrypto*.
     * @param callback.privateKey Might be *null* if this app does not have access to it.
     * @param callback.privateKey
-    * @see[WebCrypto's importKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey}
-    * @see[CryptoKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey}
+    * @see http://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey
+    * @see http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey
     */
   inline def getKeyPair(
     certificate: js.typedarray.ArrayBuffer,
@@ -98,7 +98,7 @@ object platformKeys {
     * An implementation of WebCrypto's SubtleCrypto
     * that allows crypto operations on keys of client
     * certificates that are available to this app.
-    * @see[SubtleCrypto]{@link http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface}
+    * @see http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface
     */
   inline def subtleCrypto(): SubtleCrypto = ^.asInstanceOf[js.Dynamic].applyDynamic("subtleCrypto")().asInstanceOf[SubtleCrypto]
   

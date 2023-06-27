@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconSymbol3DLayerResource extends StObject {
   
   /**
-    * The URL or data URI for the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
-    */
+  		 * The URL or data URI for the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
+  		 */
   var href: js.UndefOr[String] = js.undefined
   
   /**
-    * Uses a built-in shape.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
-    */
+  		 * Uses a built-in shape.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
+  		 */
   var primitive: js.UndefOr[String] = js.undefined
 }
 object IconSymbol3DLayerResource {

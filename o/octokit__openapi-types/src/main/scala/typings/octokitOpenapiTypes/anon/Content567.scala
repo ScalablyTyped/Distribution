@@ -8,11 +8,11 @@ trait Content567 extends StObject {
   
   var content: `567`
   
-  var headers: LinkString
+  var headers: `28`
 }
 object Content567 {
   
-  inline def apply(content: `567`, headers: LinkString): Content567 = {
+  inline def apply(content: `567`, headers: `28`): Content567 = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content567]
   }
@@ -22,6 +22,6 @@ object Content567 {
     
     inline def setContent(value: `567`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: LinkString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: `28`): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

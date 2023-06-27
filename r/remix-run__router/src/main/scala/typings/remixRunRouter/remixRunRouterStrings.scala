@@ -29,6 +29,12 @@ object remixRunRouterStrings {
   inline def `Space_hasFetcherDoneAnything `: `Space_hasFetcherDoneAnything ` = (" _hasFetcherDoneAnything ").asInstanceOf[`Space_hasFetcherDoneAnything `]
   
   @js.native
+  sealed trait applicationSlashjson
+    extends StObject
+       with FormEncType
+  inline def applicationSlashjson: applicationSlashjson = "application/json".asInstanceOf[applicationSlashjson]
+  
+  @js.native
   sealed trait `applicationSlashx-www-form-urlencoded`
     extends StObject
        with FormEncType
@@ -116,6 +122,13 @@ object remixRunRouterStrings {
   inline def index: index = "index".asInstanceOf[index]
   
   @js.native
+  sealed trait json
+    extends StObject
+       with Fetcher[Any]
+       with Navigation
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
   sealed trait `lazy`
     extends StObject
        with ImmutableRouteKey
@@ -187,6 +200,19 @@ object remixRunRouterStrings {
   @js.native
   sealed trait submitting extends StObject
   inline def submitting: submitting = "submitting".asInstanceOf[submitting]
+  
+  @js.native
+  sealed trait text
+    extends StObject
+       with Fetcher[Any]
+       with Navigation
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait textSlashplain
+    extends StObject
+       with FormEncType
+  inline def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
   
   @js.native
   sealed trait unblocked extends StObject

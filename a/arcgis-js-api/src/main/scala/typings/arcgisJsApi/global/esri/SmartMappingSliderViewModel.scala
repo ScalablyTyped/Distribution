@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SmartMappingSliderViewModel")
 @js.native
 /**
-  * Provides the shared base logic for the smart mapping slider view models.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
-  */
+		 * Provides the shared base logic for the smart mapping slider view models.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderViewModel.html)
+		 */
 open class SmartMappingSliderViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.SmartMappingSliderViewModel {

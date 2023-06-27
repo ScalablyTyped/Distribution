@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-gradients-interpolation-method" : "3.0.4"
+      "@csstools/postcss-gradients-interpolation-method" : "3.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-gradients-interpolation-method" : "3.0.4"
+      "@csstools/postcss-gradients-interpolation-method" : "3.0.6"
     }
   ],
   "compile-devDependencies" : [

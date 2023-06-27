@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-icons
 
-Typings are for version 4.8.0
+Typings are for version 4.10.1
 
 ## Library description:
 SVG React icons of popular icon packs using ES6 imports

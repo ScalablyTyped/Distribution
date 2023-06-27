@@ -12,10 +12,12 @@ open class Credential ()
   extends StObject
      with typings.std.Credential {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Credential/id) */
   /* standard dom */
   /* CompleteClass */
   override val id: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Credential/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: java.lang.String = js.native

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationQueryResultSampleInfo extends StObject {
   
   /**
-    * The resolution at which the z-value was sampled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
-    */
+  		 * The resolution at which the z-value was sampled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
+  		 */
   var demResolution: Double
   
   /**
-    * The elevation source from which the data for the corresponding coordinate was sampled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
-    */
+  		 * The elevation source from which the data for the corresponding coordinate was sampled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#ElevationQueryResult)
+  		 */
   var source: ElevationLayer
 }
 object ElevationQueryResultSampleInfo {

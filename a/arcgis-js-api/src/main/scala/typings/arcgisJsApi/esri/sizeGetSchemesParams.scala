@@ -13,38 +13,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait sizeGetSchemesParams extends StObject {
   
   /**
-    * The Esri basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
-    */
+  		 * The Esri basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon
   
   /**
-    * The SceneView instance in which the scheme will be used.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The SceneView instance in which the scheme will be used.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates if the size units of the scheme will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
-    */
+  		 * Indicates if the size units of the scheme will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#getSchemes)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object sizeGetSchemesParams {

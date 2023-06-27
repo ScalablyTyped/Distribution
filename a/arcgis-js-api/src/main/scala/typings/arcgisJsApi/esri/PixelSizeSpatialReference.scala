@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PixelSizeSpatialReference extends StObject {
   
   /**
-    * The wkid of the spatial reference.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
-    */
+  		 * The wkid of the spatial reference.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
+  		 */
   var wkid: js.UndefOr[Double] = js.undefined
   
   /**
-    * The Well known text or wkt of the spatial reference.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
-    */
+  		 * The Well known text or wkt of the spatial reference.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#PixelSize)
+  		 */
   var wkt: js.UndefOr[Double] = js.undefined
 }
 object PixelSizeSpatialReference {

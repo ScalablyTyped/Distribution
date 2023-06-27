@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__autocomplete
 
-Typings are for version 6.2.0
+Typings are for version 6.7.1
 
 ## Library description:
 Autocompletion for the CodeMirror code editor

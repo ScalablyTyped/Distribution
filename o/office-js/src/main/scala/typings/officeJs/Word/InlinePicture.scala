@@ -43,7 +43,7 @@ trait InlinePicture
      with ClientObject {
   
   /**
-    * Gets or sets a string that represents the alternative text associated with the inline image.
+    * Specifies a string that represents the alternative text associated with the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -51,7 +51,7 @@ trait InlinePicture
   var altTextDescription: String = js.native
   
   /**
-    * Gets or sets a string that contains the title for the inline image.
+    * Specifies a string that contains the title for the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -109,7 +109,7 @@ trait InlinePicture
   def getRange(rangeLocation: whole): Range = js.native
   
   /**
-    * Gets or sets a number that describes the height of the inline image.
+    * Specifies a number that describes the height of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -117,7 +117,7 @@ trait InlinePicture
   var height: Double = js.native
   
   /**
-    * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+    * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -248,7 +248,7 @@ trait InlinePicture
   def load(propertyNames: js.Array[String]): InlinePicture = js.native
   
   /**
-    * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -350,7 +350,7 @@ trait InlinePicture
   def untrack(): InlinePicture = js.native
   
   /**
-    * Gets or sets a number that describes the width of the inline image.
+    * Specifies a number that describes the width of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]

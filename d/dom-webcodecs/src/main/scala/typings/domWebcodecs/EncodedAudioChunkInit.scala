@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EncodedAudioChunkInit extends StObject {
   
-  var data: AllowSharedBufferSource
+  var data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -16,7 +16,11 @@ trait EncodedAudioChunkInit extends StObject {
 }
 object EncodedAudioChunkInit {
   
-  inline def apply(data: AllowSharedBufferSource, timestamp: Double, `type`: EncodedAudioChunkType): EncodedAudioChunkInit = {
+  inline def apply(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
+    timestamp: Double,
+    `type`: EncodedAudioChunkType
+  ): EncodedAudioChunkInit = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodedAudioChunkInit]
@@ -25,7 +29,9 @@ object EncodedAudioChunkInit {
   @scala.inline
   implicit open class MutableBuilder[Self <: EncodedAudioChunkInit] (val x: Self) extends AnyVal {
     
-    inline def setData(value: AllowSharedBufferSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -193,8 +193,7 @@ object sapUiWebcFioriWizardStepMod {
       *
       *
       *
-      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * Default value is `empty string`.
       *
@@ -360,8 +359,7 @@ object sapUiWebcFioriWizardStepMod {
       *
       *
       *
-      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -481,8 +479,7 @@ object sapUiWebcFioriWizardStepMod {
       *
       *
       *
-      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * The SAP-icons font provides numerous options. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       */
     var icon: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     

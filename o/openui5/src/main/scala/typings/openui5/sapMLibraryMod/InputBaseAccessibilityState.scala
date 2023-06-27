@@ -8,49 +8,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputBaseAccessibilityState extends StObject {
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The describedby property.
     */
   var describedby: js.UndefOr[Append] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is disabled. If not relevant, it shouldn`t be set or set as `null`.
     */
   var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The errormessage property.
     */
   var errormessage: js.UndefOr[String] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is invalid.
     */
   var invalid: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The labelledby property.
     */
   var labelledby: js.UndefOr[Append] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Whether the control is readonly. If not relevant, it shouldn`t be set or set as `null`.
     */
   var readonly: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The WAI-ARIA role which is implemented by the control.
     */

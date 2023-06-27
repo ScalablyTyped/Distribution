@@ -183,7 +183,7 @@ object Client {
     var autoHideSplash: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @deprecated. If you would like your application to connect to the Worklight Server, use WL.Client.connect().
+      * @deprecated If you would like your application to connect to the Worklight Server, use WL.Client.connect().
       */
     var connectOnStartup: js.UndefOr[Boolean] = js.undefined
     

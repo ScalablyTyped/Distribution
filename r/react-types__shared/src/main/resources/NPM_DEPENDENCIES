@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-types/shared" : "3.18.0"
+      "@react-types/shared" : "3.18.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-types/shared" : "3.18.0"
+      "@react-types/shared" : "3.18.1"
     }
   ],
   "compile-devDependencies" : [

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SizeSchemeForPolygonBackgroundOutline extends StObject {
   
   /**
-    * The outline color of the background fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
-    */
+  		 * The outline color of the background fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+  		 */
   var color: Color_
   
   /**
-    * The width of the background fill symbol's outline in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
-    */
+  		 * The width of the background fill symbol's outline in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+  		 */
   var width: Double
 }
 object SizeSchemeForPolygonBackgroundOutline {

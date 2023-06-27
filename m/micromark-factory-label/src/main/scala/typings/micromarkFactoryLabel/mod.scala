@@ -10,11 +10,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def factoryLabel(effects: Effects, ok: State, nok: State, `type`: String, markerType: String, stringType: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("factoryLabel")(effects.asInstanceOf[js.Any], ok.asInstanceOf[js.Any], nok.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], markerType.asInstanceOf[js.Any], stringType.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def factoryLabel(
+    effects: Effects,
+    ok: State,
+    nok: State,
+    `type`: TokenType,
+    markerType: TokenType,
+    stringType: TokenType
+  ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("factoryLabel")(effects.asInstanceOf[js.Any], ok.asInstanceOf[js.Any], nok.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], markerType.asInstanceOf[js.Any], stringType.asInstanceOf[js.Any])).asInstanceOf[State]
   
   type Effects = typings.micromarkUtilTypes.mod.Effects
   
   type State = typings.micromarkUtilTypes.mod.State
+  
+  type TokenType = typings.micromarkUtilTypes.mod.TokenType
   
   type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
 }

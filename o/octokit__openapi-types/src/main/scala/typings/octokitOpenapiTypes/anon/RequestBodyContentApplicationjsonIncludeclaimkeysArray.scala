@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonIncludeclaimkeysArray extends StObject {
   
-  var parameters: `496`
+  var parameters: `582`
   
   var requestBody: ContentApplicationjsonIncludeclaimkeysArray
   
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonIncludeclaimkeysArray extends StObject {
 object RequestBodyContentApplicationjsonIncludeclaimkeysArray {
   
   inline def apply(
-    parameters: `496`,
+    parameters: `582`,
     requestBody: ContentApplicationjsonIncludeclaimkeysArray,
     responses: `201ContentApplicationjsonRecord`
   ): RequestBodyContentApplicationjsonIncludeclaimkeysArray = {
@@ -26,7 +26,7 @@ object RequestBodyContentApplicationjsonIncludeclaimkeysArray {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonIncludeclaimkeysArray] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `496`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `582`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonIncludeclaimkeysArray): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

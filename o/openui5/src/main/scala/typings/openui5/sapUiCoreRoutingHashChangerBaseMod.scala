@@ -12,7 +12,7 @@ object sapUiCoreRoutingHashChangerBaseMod {
   @JSImport("sap/ui/core/routing/HashChangerBase", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     */
   open class default () extends HashChangerBase
   /* static members */
@@ -23,7 +23,7 @@ object sapUiCoreRoutingHashChangerBaseMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.core.routing.HashChangerBase with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
@@ -78,7 +78,7 @@ object sapUiCoreRoutingHashChangerBaseMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.core.routing.HashChangerBase.
       *
@@ -102,7 +102,7 @@ object sapUiCoreRoutingHashChangerBaseMod {
     sDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof routing.HistoryDirection * / any */ String
     ): Unit = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Replaces the hash with a certain value. When using the replace function, no browser history entry is
       * written. If you want to have an entry in the browser history, please use the {@link #setHash} function.
@@ -124,7 +124,7 @@ object sapUiCoreRoutingHashChangerBaseMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the hash to a certain value. When using this function, a browser history entry is written. If you
       * do not want to have an entry in the browser history, please use the {@link #replaceHash} function.
@@ -134,4 +134,76 @@ object sapUiCoreRoutingHashChangerBaseMod {
       */
     sHash: String): Unit = js.native
   }
+  
+  trait HashChangerBase$HashChangedEventParameters extends StObject {
+    
+    /**
+      * The full format of the hash if the newHash only contains part of the relevant hash
+      */
+    var fullHash: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The new hash segment
+      */
+    var newHash: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The hash segment before it's changed
+      */
+    var oldHash: js.UndefOr[String] = js.undefined
+  }
+  object HashChangerBase$HashChangedEventParameters {
+    
+    inline def apply(): HashChangerBase$HashChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HashChangerBase$HashChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChangerBase$HashChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFullHash(value: String): Self = StObject.set(x, "fullHash", value.asInstanceOf[js.Any])
+      
+      inline def setFullHashUndefined: Self = StObject.set(x, "fullHash", js.undefined)
+      
+      inline def setNewHash(value: js.Object): Self = StObject.set(x, "newHash", value.asInstanceOf[js.Any])
+      
+      inline def setNewHashUndefined: Self = StObject.set(x, "newHash", js.undefined)
+      
+      inline def setOldHash(value: String): Self = StObject.set(x, "oldHash", value.asInstanceOf[js.Any])
+      
+      inline def setOldHashUndefined: Self = StObject.set(x, "oldHash", js.undefined)
+    }
+  }
+  
+  trait HashChangerBase$HashReplacedEventParameters extends StObject {
+    
+    /**
+      * The relevant hash segment
+      */
+    var hash: js.UndefOr[String] = js.undefined
+  }
+  object HashChangerBase$HashReplacedEventParameters {
+    
+    inline def apply(): HashChangerBase$HashReplacedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HashChangerBase$HashReplacedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChangerBase$HashReplacedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    }
+  }
+  
+  type HashChangerBaseHashChangedEvent = typings.openui5.sapUiBaseEventMod.default[HashChangerBase$HashChangedEventParameters]
+  
+  type HashChangerBaseHashChangedEventParameters = HashChangerBase$HashChangedEventParameters
+  
+  type HashChangerBaseHashReplacedEvent = typings.openui5.sapUiBaseEventMod.default[HashChangerBase$HashReplacedEventParameters]
+  
+  type HashChangerBaseHashReplacedEventParameters = HashChangerBase$HashReplacedEventParameters
 }

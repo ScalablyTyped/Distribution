@@ -22,9 +22,9 @@ open class TimeDuration protected () extends StObject {
     *
     * @returns New TimeDuration object corresponding to the result of _this_ - _other_.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def difference(other: TimeDuration): TimeDuration = js.native
   
@@ -38,9 +38,9 @@ open class TimeDuration protected () extends StObject {
     *
     * @returns true if the two TimeDuration object represent the same duration.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def equalsTo(other: TimeDuration): Boolean = js.native
   
@@ -53,9 +53,9 @@ open class TimeDuration protected () extends StObject {
     *
     * @returns true if the TimeDuration is greater than _other_.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def greaterThan(other: TimeDuration): Boolean = js.native
   
@@ -76,8 +76,8 @@ open class TimeDuration protected () extends StObject {
     *
     * @returns true if the TimeDuration is less than _other_.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the call failed due to an unknown error.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if the call failed due to an unknown error.
     */
   def lessThan(other: TimeDuration): Boolean = js.native
   

@@ -10,24 +10,24 @@ trait GraphicHit
      with ViewHit {
   
   /**
-    * A graphic representing a feature in the view that intersects the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
-    */
+  		 * A graphic representing a feature in the view that intersects the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
+  		 */
   var graphic: Graphic
   
   /**
-    * The layer that contains the feature/graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
-    */
+  		 * The layer that contains the feature/graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
+  		 */
   var layer: Layer
   
   /**
-    * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
-    */
+  		 * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#GraphicHit)
+  		 */
   var mapPoint: Point
   
   var `type`: graphic

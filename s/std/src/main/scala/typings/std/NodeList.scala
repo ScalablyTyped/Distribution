@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll(). */
+/**
+  * NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeList)
+  */
 @js.native
 trait NodeList
   extends StObject
@@ -28,7 +32,11 @@ trait NodeList
     thisArg: Any
   ): Unit = js.native
   
-  /** Returns the node with index index from the collection. The nodes are sorted in tree order. */
+  /**
+    * Returns the node with index index from the collection. The nodes are sorted in tree order.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeList/item)
+    */
   /* standard dom */
   def item(index: Double): Node | Null = js.native
   
@@ -40,7 +48,11 @@ trait NodeList
   /* standard dom.iterable */
   def keys(): IterableIterator[Double] = js.native
   
-  /** Returns the number of nodes in the collection. */
+  /**
+    * Returns the number of nodes in the collection.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeList/length)
+    */
   /* standard dom */
   val length: Double = js.native
   

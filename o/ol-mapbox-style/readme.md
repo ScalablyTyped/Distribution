@@ -1,7 +1,7 @@
 
 # Scala.js typings for ol-mapbox-style
 
-Typings are for version 10.5.0
+Typings are for version 10.6.0
 
 ## Library description:
 Create OpenLayers maps from Mapbox Style objects

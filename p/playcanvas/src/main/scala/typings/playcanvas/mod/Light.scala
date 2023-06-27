@@ -15,6 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Light protected () extends StObject {
   def this(graphicsDevice: Any) = this()
   
+  var _affectSpecularity: Boolean = js.native
+  
   var _atlasViewport: Vec4 = js.native
   
   var _castShadows: Boolean = js.native
@@ -77,11 +79,15 @@ open class Light protected () extends StObject {
   
   var _outerConeAngleSin: Double = js.native
   
+  var _penumbraSize: Double = js.native
+  
   var _position: Vec3 = js.native
   
   var _renderData: js.Array[Any] = js.native
   
   var _scene: Any = js.native
+  
+  var _shadowCameraParams: js.Array[Any] = js.native
   
   var _shadowCascadeDistances: js.typedarray.Float32Array = js.native
   
@@ -106,6 +112,9 @@ open class Light protected () extends StObject {
   var _usePhysicalUnits: Any = js.native
   
   var _vsmBlurSize: Double = js.native
+  
+  def affectSpecularity: Boolean = js.native
+  def affectSpecularity_=(arg: Boolean): Unit = js.native
   
   var atlasSlotIndex: Double = js.native
   
@@ -205,6 +214,9 @@ open class Light protected () extends StObject {
   
   def outerConeAngle: Double = js.native
   def outerConeAngle_=(arg: Double): Unit = js.native
+  
+  def penumbraSize: Double = js.native
+  def penumbraSize_=(arg: Double): Unit = js.native
   
   def releaseRenderData(): Unit = js.native
   

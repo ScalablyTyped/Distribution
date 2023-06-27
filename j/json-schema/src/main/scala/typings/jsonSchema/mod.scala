@@ -998,7 +998,7 @@ object mod {
     
     var const: js.UndefOr[JSONSchema7Type] = js.undefined
     
-    var contains: js.UndefOr[JSONSchema7] = js.undefined
+    var contains: js.UndefOr[JSONSchema7Definition] = js.undefined
     
     var contentEncoding: js.UndefOr[String] = js.undefined
     
@@ -1156,7 +1156,7 @@ object mod {
       
       inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
       
-      inline def setContains(value: JSONSchema7): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: JSONSchema7Definition): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
       inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       

@@ -16,9 +16,11 @@ trait EditorTool extends StObject {
   
   var palette: js.UndefOr[String | Any] = js.undefined
   
-  var template: js.UndefOr[String] = js.undefined
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
   var tooltip: js.UndefOr[String] = js.undefined
+  
+  var ui: js.UndefOr[ToolBarItem] = js.undefined
 }
 object EditorTool {
   
@@ -52,12 +54,16 @@ object EditorTool {
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setUi(value: ToolBarItem): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

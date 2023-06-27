@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nouislider" : "15.7.0"
+      "nouislider" : "15.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "nouislider" : "15.7.0"
+      "nouislider" : "15.7.1"
     }
   ],
   "compile-devDependencies" : [

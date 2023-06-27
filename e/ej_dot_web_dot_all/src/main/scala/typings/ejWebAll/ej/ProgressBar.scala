@@ -235,7 +235,7 @@ object ProgressBar {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for ProgressBar theme, which is used customize.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
@@ -244,47 +244,47 @@ object ProgressBar {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Save current model value to browser cookies for state maintains. While refresh the progressBar control page retains the model value apply from browser cookies
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the ProgressBar direction as right to left alignment.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When this property sets to false, it disables the ProgressBar control
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the ProgressBar.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** It allows to define the characteristics of the progressBar control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the maximum value of the ProgressBar.
-      * @Default {100}
+      * @default {100}
       */
     var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Sets the minimum value of the ProgressBar.
-      * @Default {0}
+      * @default {0}
       */
     var minValue: js.UndefOr[Double] = js.undefined
     
     /** Sets the ProgressBar value in percentage. The value should be in between 0 to 100.
-      * @Default {0}
+      * @default {0}
       */
     var percentage: js.UndefOr[Double] = js.undefined
     
     /** Displays rounded corner borders on the progressBar control.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
@@ -293,17 +293,17 @@ object ProgressBar {
     var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Sets the custom text for the ProgressBar. The text placed in the middle of the ProgressBar and it can be customizable using the class 'e-progress-text'.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Sets the ProgressBar value. The value should be in between min and max values.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Defines the width of the ProgressBar.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Double | String] = js.undefined
   }

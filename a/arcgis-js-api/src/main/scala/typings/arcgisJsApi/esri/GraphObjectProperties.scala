@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphObjectProperties extends StObject {
   
   /**
-    * The properties of the graph object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObject.html#properties)
-    */
+  		 * The properties of the graph object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObject.html#properties)
+  		 */
   var properties: js.UndefOr[Any] = js.undefined
 }
 object GraphObjectProperties {

@@ -10,69 +10,76 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchDefaultUpdateOptions extends StObject {
   
   /**
-    * Indicates if the `rotation` operation will be enabled when updating graphics.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Indicates if the `rotation` operation will be enabled when updating graphics.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var enableRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the `scale` operation will be enabled when updating graphics.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Indicates if the `scale` operation will be enabled when updating graphics.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var enableScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if z-values can be modified when updating the graphic.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Indicates if z-values can be modified when updating the graphic.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var enableZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether more than one selection can be made at once.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Options that control when to display or hide highlights for update operations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
+  var highlightOptions: js.UndefOr[SketchDefaultUpdateOptionsHighlightOptions] = js.undefined
+  
+  /**
+  		 * Indicates whether more than one selection can be made at once.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the uniform scale operation will be enabled when updating graphics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Indicates if the uniform scale operation will be enabled when updating graphics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Changes the behavior for the `reshape` tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Changes the behavior for the `reshape` tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var reshapeOptions: js.UndefOr[SketchDefaultUpdateOptionsReshapeOptions] = js.undefined
   
   /**
-    * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var toggleToolOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Name of the update tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Name of the update tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var tool: js.UndefOr[move | transform | reshape] = js.undefined
 }
 object SketchDefaultUpdateOptions {
@@ -96,6 +103,10 @@ object SketchDefaultUpdateOptions {
     inline def setEnableZ(value: Boolean): Self = StObject.set(x, "enableZ", value.asInstanceOf[js.Any])
     
     inline def setEnableZUndefined: Self = StObject.set(x, "enableZ", js.undefined)
+    
+    inline def setHighlightOptions(value: SketchDefaultUpdateOptionsHighlightOptions): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     
     inline def setMultipleSelectionEnabled(value: Boolean): Self = StObject.set(x, "multipleSelectionEnabled", value.asInstanceOf[js.Any])
     

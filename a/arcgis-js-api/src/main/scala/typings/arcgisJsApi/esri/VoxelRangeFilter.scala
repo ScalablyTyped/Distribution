@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelRangeFilter extends StObject {
   
   /**
-    * Whether or not the filter is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelRangeFilter)
-    */
+  		 * Whether or not the filter is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelRangeFilter)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The data range to render, specified as [minimum, maximum].
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelRangeFilter)
-    */
+  		 * The data range to render, specified as [minimum, maximum].
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelTransferFunctionStyle.html#VoxelRangeFilter)
+  		 */
   var range: js.Array[Double]
 }
 object VoxelRangeFilter {

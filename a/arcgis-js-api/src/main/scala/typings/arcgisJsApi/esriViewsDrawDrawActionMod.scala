@@ -11,10 +11,10 @@ object esriViewsDrawDrawActionMod {
   @JSImport("esri/views/draw/DrawAction", JSImport.Namespace)
   @js.native
   /**
-    * DrawAction is the base class for all draw actions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html)
-    */
+  		 * DrawAction is the base class for all draw actions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html)
+  		 */
   open class ^ ()
     extends StObject
        with DrawAction {

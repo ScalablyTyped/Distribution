@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content347 extends StObject {
   
   /**
-    * List stargazers
-    * @description Lists the people that have starred the repository.
+    * Get the license for a repository
+    * @description This method returns the contents of the repository's license file, if one is detected.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
+    * Similar to [Get repository content](https://docs.github.com/rest/reference/repos#get-repository-content), this method also supports [custom media types](https://docs.github.com/rest/overview/media-types) for retrieving the raw license content or rendered license HTML.
     */
   var get: Responses200Content347
 }

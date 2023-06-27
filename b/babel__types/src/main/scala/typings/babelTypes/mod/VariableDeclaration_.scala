@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.VariableDeclaration
+import typings.babelTypes.babelTypesStrings.`await using`
 import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
@@ -21,14 +22,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var declare: Boolean | Null
   
-  var kind: `var` | let | const | `using`
+  var kind: `var` | let | const | `using` | (`await using`)
   
   @JSName("type")
   var type_VariableDeclaration_ : VariableDeclaration
 }
 object VariableDeclaration_ {
   
-  inline def apply(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): VariableDeclaration_ = {
+  inline def apply(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using` | (`await using`)): VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration_]
@@ -45,7 +46,7 @@ object VariableDeclaration_ {
     
     inline def setDeclareNull: Self = StObject.set(x, "declare", null)
     
-    inline def setKind(value: `var` | let | const | `using`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: `var` | let | const | `using` | (`await using`)): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setType(value: VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

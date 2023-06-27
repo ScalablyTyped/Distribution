@@ -1,32 +1,25 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintainer
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `123` extends StObject {
   
-  /**
-    * @description The role that this user should have in the team.
-    * @default member
-    * @enum {string}
-    */
-  var role: js.UndefOr[member_ | maintainer] = js.undefined
+  /** @description Response */
+  var `200`: Content56
 }
 object `123` {
   
-  inline def apply(): `123` = {
+  inline def apply(`200`: Content56): `123` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`123`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `123`] (val x: Self) extends AnyVal {
     
-    inline def setRole(value: member_ | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-    
-    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def set200(value: Content56): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

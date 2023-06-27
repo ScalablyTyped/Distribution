@@ -66,7 +66,8 @@ object distDocDirectivesMod {
     
     var tags: Record[String, String] = js.native
     
-    def toString(doc: Document[Node[Any]]): String = js.native
+    @JSName("toString")
+    def toString_true(doc: Document[Node[Any], `true`]): String = js.native
     
     var yaml: Explicit = js.native
   }

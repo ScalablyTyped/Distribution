@@ -4,11 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+	*
+	* **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+  * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+  */
 trait EventHandlerResult[T] extends StObject {
   
   /** The request context associated with the object */
   var context: ClientRequestContext
   
+  /**
+  		* Removes the handler from the event.
+  		*/
   def remove(): Unit
 }
 object EventHandlerResult {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for esc-pos-encoder
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 Create a set of commands that can be send to any receipt printer that supports ESC/POS

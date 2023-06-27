@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapUpdateFromOptions extends StObject {
   
   /**
-    * When `true`, the view's background will not be updated for the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * When `true`, the view's background will not be updated for the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var backgroundExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the view's scale will be updated for the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * When `true`, the view's scale will be updated for the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var scalePreserved: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the thumbnail will not be updated for the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * When `true`, the thumbnail will not be updated for the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var thumbnailExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The size of the thumbnail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * The size of the thumbnail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var thumbnailSize: js.UndefOr[WebMapUpdateFromOptionsThumbnailSize] = js.undefined
   
   /**
-    * When `true`, the initial [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) of the view will not be updated for the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * When `true`, the initial [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) of the view will not be updated for the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, the webmap's [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets) property will not be updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * When `true`, the webmap's [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets) property will not be updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var widgetsExcluded: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapUpdateFromOptions {

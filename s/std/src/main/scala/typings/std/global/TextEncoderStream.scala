@@ -12,11 +12,16 @@ open class TextEncoderStream ()
   extends StObject
      with typings.std.TextEncoderStream {
   
-  /** Returns "utf-8". */
+  /**
+    * Returns "utf-8".
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextEncoder/encoding)
+    */
   /* standard dom */
   /* CompleteClass */
   override val encoding: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/readable) */
   /* standard dom */
   /* CompleteClass */
   override val readable: typings.std.ReadableStream[Any] = js.native
@@ -25,6 +30,7 @@ open class TextEncoderStream ()
   @JSName("readable")
   override val readable_TextEncoderStream: typings.std.ReadableStream[js.typedarray.Uint8Array] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream/writable) */
   /* standard dom */
   /* CompleteClass */
   override val writable: typings.std.WritableStream[Any] = js.native

@@ -32,6 +32,8 @@ trait NormalizedInputOptions extends StObject {
   
   var input: js.Array[String] | StringDictionary[String]
   
+  var logLevel: LogLevelOption
+  
   var makeAbsoluteExternalsRelative: Boolean | ifRelativeSource
   
   /** @deprecated Use the "manualChunks" output option instead. */
@@ -44,9 +46,11 @@ trait NormalizedInputOptions extends StObject {
   
   def moduleContext(id: String): String
   
-  def onwarn(warning: RollupWarning): Unit
-  @JSName("onwarn")
-  var onwarn_Original: WarningHandler
+  def onLog(level: LogLevel, log: RollupLog): Unit
+  @JSName("onLog")
+  var onLog_Original: LogHandler
+  
+  def onwarn(warning: RollupLog): Unit
   
   var perf: Boolean
   
@@ -75,11 +79,13 @@ object NormalizedInputOptions {
     experimentalLogSideEffects: Boolean,
     external: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean,
     input: js.Array[String] | StringDictionary[String],
+    logLevel: LogLevelOption,
     makeAbsoluteExternalsRelative: Boolean | ifRelativeSource,
     maxParallelFileOps: Double,
     maxParallelFileReads: Double,
     moduleContext: String => String,
-    onwarn: /* warning */ RollupWarning => Unit,
+    onLog: (/* level */ LogLevel, /* log */ RollupLog) => Unit,
+    onwarn: RollupLog => Unit,
     perf: Boolean,
     plugins: js.Array[Plugin],
     preserveEntrySignatures: PreserveEntrySignaturesOption,
@@ -88,7 +94,7 @@ object NormalizedInputOptions {
     strictDeprecations: Boolean,
     treeshake: `false` | NormalizedTreeshakingOptions
   ): NormalizedInputOptions = {
-    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], experimentalLogSideEffects = experimentalLogSideEffects.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], makeAbsoluteExternalsRelative = makeAbsoluteExternalsRelative.asInstanceOf[js.Any], maxParallelFileOps = maxParallelFileOps.asInstanceOf[js.Any], maxParallelFileReads = maxParallelFileReads.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], experimentalLogSideEffects = experimentalLogSideEffects.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], logLevel = logLevel.asInstanceOf[js.Any], makeAbsoluteExternalsRelative = makeAbsoluteExternalsRelative.asInstanceOf[js.Any], maxParallelFileOps = maxParallelFileOps.asInstanceOf[js.Any], maxParallelFileReads = maxParallelFileReads.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onLog = js.Any.fromFunction2(onLog), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedInputOptions]
   }
   
@@ -123,6 +129,8 @@ object NormalizedInputOptions {
     
     inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
     
+    inline def setLogLevel(value: LogLevelOption): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    
     inline def setMakeAbsoluteExternalsRelative(value: Boolean | ifRelativeSource): Self = StObject.set(x, "makeAbsoluteExternalsRelative", value.asInstanceOf[js.Any])
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
@@ -137,7 +145,9 @@ object NormalizedInputOptions {
     
     inline def setModuleContext(value: String => String): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
-    inline def setOnwarn(value: /* warning */ RollupWarning => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction1(value))
+    inline def setOnLog(value: (/* level */ LogLevel, /* log */ RollupLog) => Unit): Self = StObject.set(x, "onLog", js.Any.fromFunction2(value))
+    
+    inline def setOnwarn(value: RollupLog => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction1(value))
     
     inline def setPerf(value: Boolean): Self = StObject.set(x, "perf", value.asInstanceOf[js.Any])
     

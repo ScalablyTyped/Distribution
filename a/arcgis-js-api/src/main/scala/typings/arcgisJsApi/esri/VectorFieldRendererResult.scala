@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorFieldRendererResult extends StObject {
   
   /**
-    * The VectorFieldRenderer renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#VectorFieldRendererResult)
-    */
+  		 * The VectorFieldRenderer renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-vectorField.html#VectorFieldRendererResult)
+  		 */
   var renderer: VectorFieldRenderer
 }
 object VectorFieldRendererResult {

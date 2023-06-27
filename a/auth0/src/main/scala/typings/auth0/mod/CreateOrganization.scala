@@ -11,6 +11,8 @@ trait CreateOrganization extends StObject {
   
   var display_name: js.UndefOr[String] = js.undefined
   
+  var enabled_connections: js.UndefOr[js.Array[AddOrganizationEnabledConnection]] = js.undefined
+  
   var metadata: js.UndefOr[Any] = js.undefined
   
   var name: String
@@ -32,6 +34,12 @@ object CreateOrganization {
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    
+    inline def setEnabled_connections(value: js.Array[AddOrganizationEnabledConnection]): Self = StObject.set(x, "enabled_connections", value.asInstanceOf[js.Any])
+    
+    inline def setEnabled_connectionsUndefined: Self = StObject.set(x, "enabled_connections", js.undefined)
+    
+    inline def setEnabled_connectionsVarargs(value: AddOrganizationEnabledConnection*): Self = StObject.set(x, "enabled_connections", js.Array(value*))
     
     inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

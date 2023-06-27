@@ -72,9 +72,9 @@ object triggerSnsMod {
     
     var SignatureVersion: String
     
-    var SigningCertUrl: String
+    var SigningCertURL: String
     
-    var Subject: String
+    var Subject: js.UndefOr[String] = js.undefined
     
     var Timestamp: String
     
@@ -84,7 +84,7 @@ object triggerSnsMod {
     
     var Type: String
     
-    var UnsubscribeUrl: String
+    var UnsubscribeURL: String
   }
   object SNSMessage {
     
@@ -94,14 +94,13 @@ object triggerSnsMod {
       MessageId: String,
       Signature: String,
       SignatureVersion: String,
-      SigningCertUrl: String,
-      Subject: String,
+      SigningCertURL: String,
       Timestamp: String,
       TopicArn: String,
       Type: String,
-      UnsubscribeUrl: String
+      UnsubscribeURL: String
     ): SNSMessage = {
-      val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], MessageAttributes = MessageAttributes.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], SignatureVersion = SignatureVersion.asInstanceOf[js.Any], SigningCertUrl = SigningCertUrl.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UnsubscribeUrl = UnsubscribeUrl.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], MessageAttributes = MessageAttributes.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], SignatureVersion = SignatureVersion.asInstanceOf[js.Any], SigningCertURL = SigningCertURL.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UnsubscribeURL = UnsubscribeURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[SNSMessage]
     }
     
@@ -118,9 +117,11 @@ object triggerSnsMod {
       
       inline def setSignatureVersion(value: String): Self = StObject.set(x, "SignatureVersion", value.asInstanceOf[js.Any])
       
-      inline def setSigningCertUrl(value: String): Self = StObject.set(x, "SigningCertUrl", value.asInstanceOf[js.Any])
+      inline def setSigningCertURL(value: String): Self = StObject.set(x, "SigningCertURL", value.asInstanceOf[js.Any])
       
       inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      
+      inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
       
       inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,7 @@ object triggerSnsMod {
       
       inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      inline def setUnsubscribeUrl(value: String): Self = StObject.set(x, "UnsubscribeUrl", value.asInstanceOf[js.Any])
+      inline def setUnsubscribeURL(value: String): Self = StObject.set(x, "UnsubscribeURL", value.asInstanceOf[js.Any])
     }
   }
   

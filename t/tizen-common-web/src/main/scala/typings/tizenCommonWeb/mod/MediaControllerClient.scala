@@ -19,8 +19,8 @@ trait MediaControllerClient extends StObject {
     *
     * @returns The identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addAbilityChangeListener(listener: MediaControllerAbilityChangeCallback): Double = js.native
   
@@ -30,8 +30,8 @@ trait MediaControllerClient extends StObject {
     * @param successCallback The method to invoke when all of the registered media controller servers have been found.
     * @param errorCallback The method to invoke on failure of retrieving servers list.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def findServers(successCallback: MediaControllerServerInfoArraySuccessCallback): Unit = js.native
   def findServers(successCallback: MediaControllerServerInfoArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -49,8 +49,8 @@ trait MediaControllerClient extends StObject {
     * @param successCallback The method to invoke when all of subscribed media controller servers have been found.
     * @param errorCallback The method to invoke on failure of retrieving servers list.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def findSubscribedServers(successCallback: MediaControllerServerInfoArraySuccessCallback): Unit = js.native
   def findSubscribedServers(successCallback: MediaControllerServerInfoArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -62,7 +62,7 @@ trait MediaControllerClient extends StObject {
     *
     * @returns Server info or null.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def getLatestServerInfo(): MediaControllerServerInfo | Null = js.native
   
@@ -75,7 +75,7 @@ trait MediaControllerClient extends StObject {
     *
     * @param watchId Subscription identifier returned by [addAbilityChangeListener()](#MediaControllerClient::addAbilityChangeListener).
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeAbilityChangeListener(watchId: Double): Unit = js.native
   
@@ -88,8 +88,8 @@ trait MediaControllerClient extends StObject {
     *
     * @param listener Event handling function.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of the arguments has invalid types.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the arguments has invalid types.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def setCustomEventListener(listener: MediaControllerReceiveCommandCallback): Unit = js.native
   
@@ -100,7 +100,7 @@ trait MediaControllerClient extends StObject {
     *
     * @since 5.5
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def unsetCustomEventListener(): Unit = js.native
 }

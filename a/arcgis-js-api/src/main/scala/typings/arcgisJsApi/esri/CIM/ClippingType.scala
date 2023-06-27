@@ -11,16 +11,16 @@ sealed trait ClippingType extends StObject
 object ClippingType extends StObject {
   
   /**
-    * Intersect.
-    */
+  			 * Intersect.
+  			 */
   @js.native
   sealed trait Intersect
     extends StObject
        with ClippingType
   
   /**
-    * Subtract.
-    */
+  			 * Subtract.
+  			 */
   @js.native
   sealed trait Subtract
     extends StObject

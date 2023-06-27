@@ -40,8 +40,8 @@ trait Accessor extends StObject {
   
   def own(handles: js.Array[IHandle]): scala.Unit = js.native
   /**
-    * @deprecated Since 4.25. Use addHandles(), removeHandles() and hasHandles() instead.
-    */
+  		 * @deprecated Since 4.25. Use addHandles(), removeHandles() and hasHandles() instead.
+  		 */
   def own(handles: IHandle): scala.Unit = js.native
   
   def removeHandles[T](): scala.Unit = js.native

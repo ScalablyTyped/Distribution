@@ -23,8 +23,8 @@ trait Commitid extends StObject {
     */
   var in_reply_to: js.UndefOr[Double] = js.undefined
   
-  /** @description The line of the blob in the pull request diff that the comment applies to. For a multi-line comment, the last line of the range that your comment applies to. */
-  var line: Double
+  /** @description **Required unless using `subject_type:file`**. The line of the blob in the pull request diff that the comment applies to. For a multi-line comment, the last line of the range that your comment applies to. */
+  var line: js.UndefOr[Double] = js.undefined
   
   /** @description The relative path to the file that necessitates a comment. */
   var path: String
@@ -58,8 +58,8 @@ trait Commitid extends StObject {
 }
 object Commitid {
   
-  inline def apply(body: String, commit_id: String, line: Double, path: String): Commitid = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  inline def apply(body: String, commit_id: String, path: String): Commitid = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Commitid]
   }
   
@@ -75,6 +75,8 @@ object Commitid {
     inline def setIn_reply_toUndefined: Self = StObject.set(x, "in_reply_to", js.undefined)
     
     inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

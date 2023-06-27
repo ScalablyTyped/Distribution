@@ -127,12 +127,16 @@ object sapMSinglePlanningCalendarViewMod {
       * a given date.
       */
     def calculateStartDate(/**
-      * A JavaScript Date
+      * A date instance
       */
     oDate: js.Date): Unit = js.native
+    def calculateStartDate(/**
+      * A date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): Unit = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -149,7 +153,7 @@ object sapMSinglePlanningCalendarViewMod {
     def getEntityCount(): Unit = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -192,7 +196,7 @@ object sapMSinglePlanningCalendarViewMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -218,7 +222,7 @@ object sapMSinglePlanningCalendarViewMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -274,7 +278,7 @@ object sapMSinglePlanningCalendarViewMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.110.0
+      * @since 1.110.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
@@ -284,7 +288,7 @@ object sapMSinglePlanningCalendarViewMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * If set, the first day of the displayed week is this day. Valid values are 0 to 6 starting on Sunday.
       * If there is no valid value set, the default of the used locale is used.

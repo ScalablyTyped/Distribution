@@ -11,10 +11,10 @@ object esriWidgetsFeatureFormFieldConfigMod {
   @JSImport("esri/widgets/FeatureForm/FieldConfig", JSImport.Namespace)
   @js.native
   /**
-    * Configuration options for configuring an individual field within the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html)
-    */
+  		 * Configuration options for configuring an individual field within the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html)
+  		 */
   open class ^ ()
     extends StObject
        with FieldConfig {

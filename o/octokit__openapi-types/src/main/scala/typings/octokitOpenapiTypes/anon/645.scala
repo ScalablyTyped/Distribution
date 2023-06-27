@@ -6,28 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `645` extends StObject {
   
-  var incomplete_results: Boolean
-  
-  var items: js.Array[Createdby]
-  
-  var total_count: Double
+  var path: RepoRunid
 }
 object `645` {
   
-  inline def apply(incomplete_results: Boolean, items: js.Array[Createdby], total_count: Double): `645` = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(path: RepoRunid): `645` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`645`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `645`] (val x: Self) extends AnyVal {
     
-    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
-    
-    inline def setItems(value: js.Array[Createdby]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-    
-    inline def setItemsVarargs(value: Createdby*): Self = StObject.set(x, "items", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setPath(value: RepoRunid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

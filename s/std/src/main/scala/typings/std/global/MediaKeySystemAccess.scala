@@ -13,14 +13,17 @@ open class MediaKeySystemAccess ()
   extends StObject
      with typings.std.MediaKeySystemAccess {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/createMediaKeys) */
   /* standard dom */
   /* CompleteClass */
   override def createMediaKeys(): js.Promise[typings.std.MediaKeys] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/getConfiguration) */
   /* standard dom */
   /* CompleteClass */
   override def getConfiguration(): MediaKeySystemConfiguration = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess/keySystem) */
   /* standard dom */
   /* CompleteClass */
   override val keySystem: java.lang.String = js.native

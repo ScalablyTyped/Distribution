@@ -59,7 +59,7 @@ trait ListItem
   def getDescendants(directChildrenOnly: Boolean): ParagraphCollection = js.native
   
   /**
-    * Gets or sets the level of the item in the list.
+    * Specifies the level of the item in the list.
     *
     * @remarks
     * [Api set: WordApi 1.3]

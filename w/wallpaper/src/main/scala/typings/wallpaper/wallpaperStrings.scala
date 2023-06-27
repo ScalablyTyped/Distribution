@@ -31,6 +31,14 @@ object wallpaperStrings {
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
+  sealed trait span extends StObject
+  inline def span: span = "span".asInstanceOf[span]
+  
+  @js.native
   sealed trait stretch extends StObject
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @js.native
+  sealed trait tile extends StObject
+  inline def tile: tile = "tile".asInstanceOf[tile]
 }

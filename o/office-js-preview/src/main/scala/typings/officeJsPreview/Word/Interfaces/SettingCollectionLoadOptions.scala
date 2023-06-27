@@ -27,7 +27,7 @@ trait SettingCollectionLoadOptions extends StObject {
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the value of the setting.
+    * For EACH ITEM in the collection: Specifies the value of the setting.
     *
     * @remarks
     * [Api set: WordApi 1.4]

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Height
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -172,13 +171,13 @@ object sapUiCommonsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Dialog` itself
       */
@@ -204,7 +203,7 @@ object sapUiCommonsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -215,7 +214,7 @@ object sapUiCommonsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Dialog` itself
       */
@@ -252,13 +251,13 @@ object sapUiCommonsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DialogClosedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -266,7 +265,7 @@ object sapUiCommonsDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -276,7 +275,7 @@ object sapUiCommonsDialogMod {
     def fireClosed(/**
       * Parameters to pass along with the event
       */
-    mParameters: Height): this.type = js.native
+    mParameters: Dialog$ClosedEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleRole accessibleRole}.
@@ -301,7 +300,7 @@ object sapUiCommonsDialogMod {
     def getApplyContentPadding(): Boolean = js.native
     
     /**
-      * @SINCE 1.10
+      * @since 1.10
       *
       * Gets current value of property {@link #getAutoClose autoClose}.
       *
@@ -349,7 +348,7 @@ object sapUiCommonsDialogMod {
     def getDefaultButton(): ID = js.native
     
     /**
-      * @EXPERIMENTAL - Whether a dialog is regarded as "enabled" during the state transitions (OPENING, CLOSING)
+      * @experimental - Whether a dialog is regarded as "enabled" during the state transitions (OPENING, CLOSING)
       * is not fully decided. Currently, it is enabled during the OPENING phase and disabled during the CLOSING
       * phase. The only potential change would be to treat the OPENING phase as disabled as well. Applications
       * should be prepared to receive events from "enabled" controls after they called open() on the dialog until
@@ -388,7 +387,7 @@ object sapUiCommonsDialogMod {
     def getInitialFocus(): ID = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getKeepInWindow keepInWindow}.
       *
@@ -697,7 +696,7 @@ object sapUiCommonsDialogMod {
     bApplyContentPadding: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.10
+      * @since 1.10
       *
       * Sets a new value for property {@link #getAutoClose autoClose}.
       *
@@ -795,7 +794,7 @@ object sapUiCommonsDialogMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getKeepInWindow keepInWindow}.
       *
@@ -1000,6 +999,60 @@ object sapUiCommonsDialogMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Dialog$ClosedEventParameters extends StObject {
+    
+    /**
+      * The height of the dialog when closed
+      */
+    var height: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The left position of the dialog when closed
+      */
+    var left: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The top position of the dialog when closed
+      */
+    var top: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The width of the dialog when closed
+      */
+    var width: js.UndefOr[int] = js.undefined
+  }
+  object Dialog$ClosedEventParameters {
+    
+    inline def apply(): Dialog$ClosedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dialog$ClosedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog$ClosedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHeight(value: int): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setLeft(value: int): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
+      inline def setTop(value: int): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      
+      inline def setWidth(value: int): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
+  type DialogClosedEvent = typings.openui5.sapUiBaseEventMod.default[Dialog$ClosedEventParameters]
+  
+  type DialogClosedEventParameters = Dialog$ClosedEventParameters
+  
   trait DialogSettings
     extends StObject
        with ControlSettings {
@@ -1019,7 +1072,7 @@ object sapUiCommonsDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.10
+      * @since 1.10
       *
       * If this property is set to true the Dialog will close if the Dialog loses its focus
       */
@@ -1039,7 +1092,12 @@ object sapUiCommonsDialogMod {
       * Event is fired when the dialog has been closed (after closing-animation etc.). Event parameters provide
       * information about last position and last size.
       */
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$ClosedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Aggregation of the content of the dialog (one or more controls).
@@ -1080,7 +1138,7 @@ object sapUiCommonsDialogMod {
     var initialFocus: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Specifies whether Dialog movement should be restricted to the visible area of the window. This only affects
       * drag&drop movements by the user. This doesn't affect modal dialogs -> modal dialogs always stay in the
@@ -1200,7 +1258,9 @@ object sapUiCommonsDialogMod {
       
       inline def setButtonsVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "buttons", js.Array(value*))
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Dialog$ClosedEventParameters] => Unit
+      ): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       

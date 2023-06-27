@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemContext
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMListBaseMod.ListBaseSettings
 import typings.std.Record
@@ -124,7 +123,7 @@ object sapMTreeMod {
     extends typings.openui5.sapMListBaseMod.default {
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Attaches event handler `fnFunction` to the {@link #event:toggleOpenState toggleOpenState} event of this
       * `sap.m.Tree`.
@@ -140,20 +139,20 @@ object sapMTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tree` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Attaches event handler `fnFunction` to the {@link #event:toggleOpenState toggleOpenState} event of this
       * `sap.m.Tree`.
@@ -174,7 +173,7 @@ object sapMTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
@@ -185,7 +184,7 @@ object sapMTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tree` itself
       */
@@ -197,7 +196,7 @@ object sapMTreeMod {
       */
     vParam: js.Array[int]): this.type = js.native
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Collapses one or multiple items.
       *
@@ -209,7 +208,7 @@ object sapMTreeMod {
     vParam: int): this.type = js.native
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Collapses all nodes.
       *
@@ -218,7 +217,7 @@ object sapMTreeMod {
     def collapseAll(): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Detaches event handler `fnFunction` from the {@link #event:toggleOpenState toggleOpenState} event of
       * this `sap.m.Tree`.
@@ -231,13 +230,13 @@ object sapMTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def detachToggleOpenState(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeToggleOpenStateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -249,7 +248,7 @@ object sapMTreeMod {
       */
     vParam: js.Array[int]): this.type = js.native
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Expands one or multiple items. Note that items that are hidden at the time of calling this API can't
       * be expanded.
@@ -262,7 +261,7 @@ object sapMTreeMod {
     vParam: int): this.type = js.native
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Defines the level to which the tree is expanded. The function can be used to define the initial expanding
       * state. An alternative way to define the initial expanding state is to set the parameter `numberOfExpandedLevels`
@@ -288,18 +287,61 @@ object sapMTreeMod {
     iLevel: int): this.type = js.native
     
     /**
-      * @SINCE 1.50
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleOpenState(): this.type = js.native
-    def fireToggleOpenState(/**
+    def fireToggleOpenState(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemContext): this.type = js.native
+    mParameters: Tree$ToggleOpenStateEventParameters
+    ): this.type = js.native
+  }
+  
+  trait Tree$ToggleOpenStateEventParameters extends StObject {
+    
+    /**
+      * Flag that indicates whether the item has been expanded or collapsed
+      */
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Binding context of the item
+      */
+    var itemContext: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Index of the expanded/collapsed item
+      */
+    var itemIndex: js.UndefOr[int] = js.undefined
+  }
+  object Tree$ToggleOpenStateEventParameters {
+    
+    inline def apply(): Tree$ToggleOpenStateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ToggleOpenStateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ToggleOpenStateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setItemContext(value: js.Object): Self = StObject.set(x, "itemContext", value.asInstanceOf[js.Any])
+      
+      inline def setItemContextUndefined: Self = StObject.set(x, "itemContext", js.undefined)
+      
+      inline def setItemIndex(value: int): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemIndexUndefined: Self = StObject.set(x, "itemIndex", js.undefined)
+    }
   }
   
   trait TreeSettings
@@ -307,11 +349,16 @@ object sapMTreeMod {
        with ListBaseSettings {
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Fired when an item has been expanded or collapsed by user interaction.
       */
-    var toggleOpenState: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleOpenState: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ToggleOpenStateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object TreeSettings {
     
@@ -323,9 +370,15 @@ object sapMTreeMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
       
-      inline def setToggleOpenState(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
+      inline def setToggleOpenState(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ToggleOpenStateEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
       
       inline def setToggleOpenStateUndefined: Self = StObject.set(x, "toggleOpenState", js.undefined)
     }
   }
+  
+  type TreeToggleOpenStateEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ToggleOpenStateEventParameters]
+  
+  type TreeToggleOpenStateEventParameters = Tree$ToggleOpenStateEventParameters
 }

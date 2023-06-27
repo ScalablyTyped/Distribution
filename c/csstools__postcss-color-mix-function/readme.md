@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-color-mix-function
 
-Typings are for version 1.0.1
+Typings are for version 1.0.3
 
 
 

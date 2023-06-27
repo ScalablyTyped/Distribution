@@ -32,114 +32,128 @@ trait RasterInfo
      with JSONSupport {
   
   /**
-    * The raster attribute table associated with an imagery layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
-    */
+  		 * The raster attribute table associated with an imagery layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
+  		 */
   var attributeTable: FeatureSet = js.native
   
   /**
-    * Raster band count.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#bandCount)
-    */
+  		 * Raster band count.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#bandCount)
+  		 */
   var bandCount: Double = js.native
   
   /**
-    * Raster colormap that can be used to display the imagery layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#colormap)
-    */
+  		 * This property provides additional information for each band in the raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#bandInfos)
+  		 */
+  var bandInfos: js.Array[RasterBandInfo] = js.native
+  
+  /**
+  		 * Raster colormap that can be used to display the imagery layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#colormap)
+  		 */
   var colormap: js.Array[js.Array[Double]] = js.native
   
   /**
-    * Raster data type controls how the data is rendered by default.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
-    */
+  		 * Raster data type controls how the data is rendered by default.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#dataType)
+  		 */
   var dataType: generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-u` | `vector-v` | `vector-magdir` | `vector-magnitude` | `vector-direction` | `standard-time` = js.native
   
   /**
-    * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
-    */
+  		 * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
+  		 */
   var extent: Extent = js.native
   
   /**
-    * Indicates whether the source multidimensional data has been transposed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#hasMultidimensionalTranspose)
-    */
+  		 * Indicates whether the source multidimensional data has been transposed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#hasMultidimensionalTranspose)
+  		 */
   var hasMultidimensionalTranspose: Boolean = js.native
   
   /**
-    * Raster height (row count) in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
-    */
+  		 * Raster height (row count) in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
+  		 */
   var height: Double = js.native
   
   /**
-    * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
-    */
+  		 * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
+  		 */
   var histograms: js.Array[Any] = js.native
   
   /**
-    * Raster key properties.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
-    */
+  		 * Raster key properties.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
+  		 */
   var keyProperties: Any = js.native
   
   /**
-    * Returns the multidimensional information associated with the raster service referenced in an imagery layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
-    */
+  		 * Returns the multidimensional information associated with the raster service referenced in an imagery layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
+  		 */
   var multidimensionalInfo: RasterMultidimensionalInfo = js.native
   
   /**
-    * The pixel value representing no available information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
-    */
+  		 * The pixel value representing no available information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
+  		 */
   var noDataValue: Double | js.Array[Double] = js.native
   
   /**
-    * Raster pixel size.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
-    */
+  		 * Raster pixel size.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
+  		 */
   var pixelSize: RasterInfoPixelSize = js.native
   
   /**
-    * Pixel type for the raster data source.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
-    */
+  		 * Pixel type for the raster data source.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
+  		 */
   var pixelType: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64 = js.native
   
   /**
-    * The spatial reference of the raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#spatialReference)
-    */
+  		 * The sensor information associated with an image service referenced by a layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#sensorInfo)
+  		 */
+  var sensorInfo: RasterSensorInfo = js.native
+  
+  /**
+  		 * The spatial reference of the raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#spatialReference)
+  		 */
   var spatialReference: SpatialReference = js.native
   
   /**
-    * Raster band statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
-    */
+  		 * Raster band statistics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
+  		 */
   var statistics: js.Array[RasterInfoStatistics] = js.native
   
   /**
-    * Raster width (column count) in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
-    */
+  		 * Raster width (column count) in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
+  		 */
   var width: Double = js.native
 }

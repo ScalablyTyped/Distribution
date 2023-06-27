@@ -16,102 +16,109 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMTextSymbol extends StObject {
   
   /**
-    * The amount of rotation applied to the text symbol, measured in degrees, around the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The amount of rotation applied to the text symbol, measured in degrees, around the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var angle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The font family name of the font (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * _Since 4.26_ The background of the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
+  var callout: js.UndefOr[CIMBackgroundCallout] = js.undefined
+  
+  /**
+  		 * The font family name of the font (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var fontFamilyName: String
   
   /**
-    * The style name for the font family.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The style name for the font family.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var fontStyleName: js.UndefOr[Regular | Bold | Italic] = js.undefined
   
   /**
-    * The size of the halo that extends beyond the symbol shape.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The size of the halo that extends beyond the symbol shape.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var haloSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The polygon symbol that is used to draw the halo for a text symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
-  var haloSymbol: CIMPolygonSymbol
+  		 * The polygon symbol that is used to draw the halo for a text symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
+  var haloSymbol: js.UndefOr[CIMPolygonSymbol] = js.undefined
   
   /**
-    * The size of the text in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The size of the text in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var height: Double
   
   /**
-    * The alignment type used to align the text to the geometry horizontally.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The alignment type used to align the text to the geometry horizontally.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var horizontalAlignment: js.UndefOr[Left | Right | Center] = js.undefined
   
   /**
-    * The X offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The X offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The Y offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The Y offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to draw the text with a strike through it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * A value indicating whether to draw the text with a strike through it.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The polygon symbol that is used to draw the glyphs of the text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The polygon symbol that is used to draw the glyphs of the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var symbol: CIMPolygonSymbol
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextSymbol
   
   /**
-    * A value indicating whether to draw the text with an underline.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * A value indicating whether to draw the text with an underline.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The vertical alignment of the text.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
-    */
+  		 * The vertical alignment of the text.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMTextSymbol)
+  		 */
   var verticalAlignment: js.UndefOr[Top | Center | Baseline | Bottom] = js.undefined
 }
 object CIMTextSymbol {
   
-  inline def apply(fontFamilyName: String, haloSymbol: CIMPolygonSymbol, height: Double, symbol: CIMPolygonSymbol): CIMTextSymbol = {
-    val __obj = js.Dynamic.literal(fontFamilyName = fontFamilyName.asInstanceOf[js.Any], haloSymbol = haloSymbol.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  inline def apply(fontFamilyName: String, height: Double, symbol: CIMPolygonSymbol): CIMTextSymbol = {
+    val __obj = js.Dynamic.literal(fontFamilyName = fontFamilyName.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMTextSymbol")
     __obj.asInstanceOf[CIMTextSymbol]
   }
@@ -122,6 +129,10 @@ object CIMTextSymbol {
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setCallout(value: CIMBackgroundCallout): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
     inline def setFontFamilyName(value: String): Self = StObject.set(x, "fontFamilyName", value.asInstanceOf[js.Any])
     
@@ -134,6 +145,8 @@ object CIMTextSymbol {
     inline def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
     
     inline def setHaloSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "haloSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setHaloSymbolUndefined: Self = StObject.set(x, "haloSymbol", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

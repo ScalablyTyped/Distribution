@@ -15,31 +15,31 @@ trait CIMGeometricEffectOffset
      with CIMGeometricEffect {
   
   /**
-    * The way strokes or fills are displayed at corners.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
-    */
+  		 * The way strokes or fills are displayed at corners.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
+  		 */
   var method: Mitered | Bevelled | Rounded | Square
   
   /**
-    * The distance of the symbol perpendicular to the feature geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
-    */
+  		 * The distance of the symbol perpendicular to the feature geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
+  		 */
   var offset: Double
   
   /**
-    * The way the symbol handles complex geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
-    */
+  		 * The way the symbol handles complex geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
+  		 */
   var option: Fast | Accurate
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectOffset)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffset

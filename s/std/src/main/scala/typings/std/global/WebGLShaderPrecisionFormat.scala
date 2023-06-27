@@ -13,14 +13,17 @@ open class WebGLShaderPrecisionFormat ()
   extends StObject
      with typings.std.WebGLShaderPrecisionFormat {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/precision) */
   /* standard dom */
   /* CompleteClass */
   override val precision: GLint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMax) */
   /* standard dom */
   /* CompleteClass */
   override val rangeMax: GLint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGLShaderPrecisionFormat/rangeMin) */
   /* standard dom */
   /* CompleteClass */
   override val rangeMin: GLint = js.native

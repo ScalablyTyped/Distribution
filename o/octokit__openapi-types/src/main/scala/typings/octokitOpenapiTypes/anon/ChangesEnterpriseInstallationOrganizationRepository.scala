@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChangesEnterpriseInstallationOrganizationRepository extends StObject {
   
-  var changes: `468`
+  var changes: `546`
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -20,7 +20,7 @@ trait ChangesEnterpriseInstallationOrganizationRepository extends StObject {
 }
 object ChangesEnterpriseInstallationOrganizationRepository {
   
-  inline def apply(changes: `468`, repository: Contributorsurl): ChangesEnterpriseInstallationOrganizationRepository = {
+  inline def apply(changes: `546`, repository: Contributorsurl): ChangesEnterpriseInstallationOrganizationRepository = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesEnterpriseInstallationOrganizationRepository]
   }
@@ -28,7 +28,7 @@ object ChangesEnterpriseInstallationOrganizationRepository {
   @scala.inline
   implicit open class MutableBuilder[Self <: ChangesEnterpriseInstallationOrganizationRepository] (val x: Self) extends AnyVal {
     
-    inline def setChanges(value: `468`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `546`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

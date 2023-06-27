@@ -24,8 +24,8 @@ trait RequestedApplicationControl extends StObject {
     * Notifies the calling application that the application failed
     * to perform the requested action.
     *
-    * @throw WebAPIException with error type NotFoundError, if the caller app is not alive or there is no response from the caller app.
-    * @throw WebAPIException with error type UnknownError, if the reply request fails because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the caller app is not alive or there is no response from the caller app.
+    * @throws WebAPIException with error type UnknownError, if the reply request fails because of an unknown error.
     */
   def replyFailure(): Unit = js.native
   
@@ -34,9 +34,9 @@ trait RequestedApplicationControl extends StObject {
     *
     * @param data An array of ApplicationControlData objects.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type NotFoundError, if the caller app is not alive or there is no response from the caller app.
-    * @throw WebAPIException with error type UnknownError, if the reply request fails because of an unknown error.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotFoundError, if the caller app is not alive or there is no response from the caller app.
+    * @throws WebAPIException with error type UnknownError, if the reply request fails because of an unknown error.
     */
   def replyResult(): Unit = js.native
   def replyResult(data: js.Array[ApplicationControlData]): Unit = js.native

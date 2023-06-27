@@ -1,6 +1,7 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
+import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object sapUiEventsControlEventsMod extends Shortcut {
   val default: ControlEvents = js.native
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     */
   trait ControlEvents extends StObject {
     
@@ -22,7 +23,7 @@ object sapUiEventsControlEventsMod extends Shortcut {
     def bindAnyEvent(/**
       * Callback function
       */
-    fnCallback: js.Function): Unit
+    fnCallback: js.Function1[/* p1 */ Event, Unit]): Unit
     
     /**
       * List of DOM events that a UIArea automatically takes care of.
@@ -45,11 +46,15 @@ object sapUiEventsControlEventsMod extends Shortcut {
     def unbindAnyEvent(/**
       * Callback function
       */
-    fnCallback: js.Function): Unit
+    fnCallback: js.Function1[/* p1 */ Event, Unit]): Unit
   }
   object ControlEvents {
     
-    inline def apply(bindAnyEvent: js.Function => Unit, events: Unit, unbindAnyEvent: js.Function => Unit): ControlEvents = {
+    inline def apply(
+      bindAnyEvent: js.Function1[/* p1 */ Event, Unit] => Unit,
+      events: Unit,
+      unbindAnyEvent: js.Function1[/* p1 */ Event, Unit] => Unit
+    ): ControlEvents = {
       val __obj = js.Dynamic.literal(bindAnyEvent = js.Any.fromFunction1(bindAnyEvent), events = events.asInstanceOf[js.Any], unbindAnyEvent = js.Any.fromFunction1(unbindAnyEvent))
       __obj.asInstanceOf[ControlEvents]
     }
@@ -57,11 +62,11 @@ object sapUiEventsControlEventsMod extends Shortcut {
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlEvents] (val x: Self) extends AnyVal {
       
-      inline def setBindAnyEvent(value: js.Function => Unit): Self = StObject.set(x, "bindAnyEvent", js.Any.fromFunction1(value))
+      inline def setBindAnyEvent(value: js.Function1[/* p1 */ Event, Unit] => Unit): Self = StObject.set(x, "bindAnyEvent", js.Any.fromFunction1(value))
       
       inline def setEvents(value: Unit): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setUnbindAnyEvent(value: js.Function => Unit): Self = StObject.set(x, "unbindAnyEvent", js.Any.fromFunction1(value))
+      inline def setUnbindAnyEvent(value: js.Function1[/* p1 */ Event, Unit] => Unit): Self = StObject.set(x, "unbindAnyEvent", js.Any.fromFunction1(value))
     }
   }
   

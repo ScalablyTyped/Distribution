@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudRendererProperties extends StObject {
   
   /**
-    * Reduces the brightness of the point's color, based on the value of another field, usually `intensity`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
-    */
+  		 * Reduces the brightness of the point's color, based on the value of another field, usually `intensity`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
+  		 */
   var colorModulation: js.UndefOr[PointCloudRendererColorModulation] = js.undefined
   
   /**
-    * Specifies how the size of the points in the point cloud is computed for rendering.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
-    */
+  		 * Specifies how the size of the points in the point cloud is computed for rendering.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
+  		 */
   var pointSizeAlgorithm: js.UndefOr[PointCloudRendererPointSizeAlgorithm] = js.undefined
   
   /**
-    * The number of points to draw per display inch.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointsPerInch)
-    */
+  		 * The number of points to draw per display inch.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointsPerInch)
+  		 */
   var pointsPerInch: js.UndefOr[Double] = js.undefined
 }
 object PointCloudRendererProperties {

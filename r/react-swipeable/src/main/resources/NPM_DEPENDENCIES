@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-swipeable" : "7.0.0"
+      "react-swipeable" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-swipeable" : "7.0.0"
+      "react-swipeable" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

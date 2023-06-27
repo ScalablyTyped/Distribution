@@ -41,14 +41,14 @@ open class timeboard ()
   
   def detachEvent(id: String): Unit = js.native
   
-  def getValue(): String | obj = js.native
+  def getValue(): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
   def mapEvent(map: obj): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def setValue(value: String): Unit = js.native
   def setValue(value: String, config: Any): Unit = js.native

@@ -41,7 +41,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -53,7 +52,6 @@ Instantiable0[Any] {
     *  @return {string}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -65,7 +63,6 @@ Instantiable0[Any] {
     *  @return {string}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -77,7 +74,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -89,7 +85,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -101,7 +96,6 @@ Instantiable0[Any] {
     * @return {boolean}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @return
@@ -129,7 +123,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @param breaktype
@@ -157,7 +150,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @param disabled
@@ -202,7 +194,6 @@ Instantiable0[Any] {
     * @return {nlobjField}
     *
     * @method
-    * @memberOf nlobjField
     *
     * @since 2009.2
     * @param help

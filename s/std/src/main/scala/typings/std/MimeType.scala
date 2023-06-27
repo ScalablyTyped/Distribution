@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides contains information about a MIME type associated with a particular plugin. NavigatorPlugins.mimeTypes returns an array of this object.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType)
   */
 trait MimeType extends StObject {
   
   /**
     * Returns the MIME type's description.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/description)
     */
   /* standard dom */
   val description: java.lang.String
@@ -20,6 +24,8 @@ trait MimeType extends StObject {
   /**
     * Returns the Plugin object that implements this MIME type.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/enabledPlugin)
     */
   /* standard dom */
   val enabledPlugin: Plugin
@@ -27,6 +33,8 @@ trait MimeType extends StObject {
   /**
     * Returns the MIME type's typical file extensions, in a comma-separated list.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/suffixes)
     */
   /* standard dom */
   val suffixes: java.lang.String
@@ -34,6 +42,8 @@ trait MimeType extends StObject {
   /**
     * Returns the MIME type.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MimeType/type)
     */
   /* standard dom */
   val `type`: java.lang.String

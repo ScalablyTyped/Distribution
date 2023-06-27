@@ -87,7 +87,7 @@ object Token {
   }
   
   inline def HTML(pre: Boolean, raw: String, text: String): typings.marked.mod.marked.Tokens.HTML = {
-    val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(block = true, pre = pre.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("html")
     __obj.asInstanceOf[typings.marked.mod.marked.Tokens.HTML]
   }
@@ -158,7 +158,7 @@ object Token {
   }
   
   inline def Tag(inLink: Boolean, inRawBlock: Boolean, raw: String, text: String, `type`: text | html): typings.marked.mod.marked.Tokens.Tag = {
-    val __obj = js.Dynamic.literal(inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(block = false, inLink = inLink.asInstanceOf[js.Any], inRawBlock = inRawBlock.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.marked.mod.marked.Tokens.Tag]
   }

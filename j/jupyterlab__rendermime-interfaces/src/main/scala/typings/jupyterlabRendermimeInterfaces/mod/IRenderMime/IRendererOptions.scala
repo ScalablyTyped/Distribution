@@ -1,6 +1,5 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
-import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +18,11 @@ trait IRendererOptions extends StObject {
     * An optional link handler.
     */
   var linkHandler: ILinkHandler | Null
+  
+  /**
+    * The Markdown parser.
+    */
+  var markdownParser: js.UndefOr[IMarkdownParser | Null] = js.undefined
   
   /**
     * The preferred mimeType to render.
@@ -57,6 +61,12 @@ object IRendererOptions {
     inline def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
     
     inline def setLinkHandlerNull: Self = StObject.set(x, "linkHandler", null)
+    
+    inline def setMarkdownParser(value: IMarkdownParser): Self = StObject.set(x, "markdownParser", value.asInstanceOf[js.Any])
+    
+    inline def setMarkdownParserNull: Self = StObject.set(x, "markdownParser", null)
+    
+    inline def setMarkdownParserUndefined: Self = StObject.set(x, "markdownParser", js.undefined)
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

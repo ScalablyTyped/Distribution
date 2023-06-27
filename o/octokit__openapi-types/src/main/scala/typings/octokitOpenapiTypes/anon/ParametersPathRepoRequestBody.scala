@@ -8,7 +8,7 @@ trait ParametersPathRepoRequestBody extends StObject {
   
   var parameters: PathRepo
   
-  var requestBody: js.UndefOr[ContentApplicationjson128] = js.undefined
+  var requestBody: js.UndefOr[ContentApplicationjson151] = js.undefined
 }
 object ParametersPathRepoRequestBody {
   
@@ -22,7 +22,7 @@ object ParametersPathRepoRequestBody {
     
     inline def setParameters(value: PathRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson128): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson151): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }

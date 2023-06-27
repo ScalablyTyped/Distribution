@@ -9,6 +9,8 @@ trait RegistryValueEvidence
   extends StObject
      with AlertEvidence {
   
+  var mdeDeviceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Registry hive of the key that the recorded action was applied to.
   var registryHive: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -33,6 +35,12 @@ object RegistryValueEvidence {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RegistryValueEvidence] (val x: Self) extends AnyVal {
+    
+    inline def setMdeDeviceId(value: NullableOption[String]): Self = StObject.set(x, "mdeDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setMdeDeviceIdNull: Self = StObject.set(x, "mdeDeviceId", null)
+    
+    inline def setMdeDeviceIdUndefined: Self = StObject.set(x, "mdeDeviceId", js.undefined)
     
     inline def setRegistryHive(value: NullableOption[String]): Self = StObject.set(x, "registryHive", value.asInstanceOf[js.Any])
     

@@ -122,7 +122,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     extends typings.openui5.sapUiLayoutFormFormLayoutMod.default {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAdjustLabelSpan adjustLabelSpan}.
       *
@@ -142,7 +142,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getAdjustLabelSpan(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getBreakpointL breakpointL}.
       *
@@ -155,7 +155,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getBreakpointL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getBreakpointM breakpointM}.
       *
@@ -168,7 +168,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getBreakpointM(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getBreakpointXL breakpointXL}.
       *
@@ -181,7 +181,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getBreakpointXL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getColumnsL columnsL}.
       *
@@ -196,7 +196,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getColumnsL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getColumnsM columnsM}.
       *
@@ -209,7 +209,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getColumnsM(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getColumnsXL columnsXL}.
       *
@@ -226,7 +226,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getColumnsXL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanL emptySpanL}.
       *
@@ -239,7 +239,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getEmptySpanL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanM emptySpanM}.
       *
@@ -252,7 +252,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getEmptySpanM(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanS emptySpanS}.
       *
@@ -265,7 +265,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getEmptySpanS(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getEmptySpanXL emptySpanXL}.
       *
@@ -281,7 +281,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getEmptySpanXL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanL labelSpanL}.
       *
@@ -297,7 +297,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getLabelSpanL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanM labelSpanM}.
       *
@@ -313,7 +313,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getLabelSpanM(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanS labelSpanS}.
       *
@@ -326,7 +326,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getLabelSpanS(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getLabelSpanXL labelSpanXL}.
       *
@@ -342,7 +342,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getLabelSpanXL(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getSingleContainerFullSize singleContainerFullSize}.
       *
@@ -359,7 +359,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     def getSingleContainerFullSize(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAdjustLabelSpan adjustLabelSpan}.
       *
@@ -385,7 +385,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     bAdjustLabelSpan: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getBreakpointL breakpointL}.
       *
@@ -404,7 +404,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iBreakpointL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getBreakpointM breakpointM}.
       *
@@ -423,7 +423,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iBreakpointM: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getBreakpointXL breakpointXL}.
       *
@@ -442,7 +442,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iBreakpointXL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getColumnsL columnsL}.
       *
@@ -463,7 +463,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iColumnsL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getColumnsM columnsM}.
       *
@@ -482,7 +482,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iColumnsM: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getColumnsXL columnsXL}.
       *
@@ -505,7 +505,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iColumnsXL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanL emptySpanL}.
       *
@@ -524,7 +524,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iEmptySpanL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanM emptySpanM}.
       *
@@ -543,7 +543,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iEmptySpanM: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanS emptySpanS}.
       *
@@ -562,7 +562,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iEmptySpanS: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getEmptySpanXL emptySpanXL}.
       *
@@ -584,7 +584,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iEmptySpanXL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanL labelSpanL}.
       *
@@ -606,7 +606,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iLabelSpanL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanM labelSpanM}.
       *
@@ -628,7 +628,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iLabelSpanM: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanS labelSpanS}.
       *
@@ -647,7 +647,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iLabelSpanS: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getLabelSpanXL labelSpanXL}.
       *
@@ -669,7 +669,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     iLabelSpanXL: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getSingleContainerFullSize singleContainerFullSize}.
       *
@@ -697,7 +697,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
        with FormLayoutSettings {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the usage of `labelSpanL` and `labelSpanM` are dependent on the number of `FormContainers` in
       * one row. If only one `FormContainer` is displayed in one row, `labelSpanM` is used to define the size
@@ -713,28 +713,28 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Breakpoint (in pixel) between Medium size and Large size.
       */
     var breakpointL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Breakpoint (in pixel) between Small size and Medium size.
       */
     var breakpointM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Breakpoint (in pixel) between large size and extra large (XL) size.
       */
     var breakpointXL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of columns for large size.
       *
@@ -743,14 +743,14 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var columnsL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of columns for medium size.
       */
     var columnsM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Number of columns for extra large size.
       *
@@ -761,28 +761,28 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var columnsXL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on large size.
       */
     var emptySpanL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on medium size.
       */
     var emptySpanM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on small size.
       */
     var emptySpanS: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Number of grid cells that are empty at the end of each line on extra large size.
       *
@@ -792,7 +792,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var emptySpanXL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in large size.
       *
@@ -802,7 +802,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var labelSpanL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in medium size.
       *
@@ -812,14 +812,14 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var labelSpanM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in small size.
       */
     var labelSpanS: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Default span for labels in extra large size.
       *
@@ -829,7 +829,7 @@ object sapUiLayoutFormResponsiveGridLayoutMod {
     var labelSpanXL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If the `Form` contains only one single `FormContainer` and this property is set, the `FormContainer`
       * is displayed using the full size of the `Form`. In this case the properties `columnsXL`, `columnsL` and

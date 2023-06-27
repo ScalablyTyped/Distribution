@@ -13,6 +13,7 @@ open class PushManager ()
      with typings.std.PushManager
 object PushManager {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushManager/supportedContentEncodings) */
   /* standard dom */
   @JSGlobal("PushManager.supportedContentEncodings")
   @js.native

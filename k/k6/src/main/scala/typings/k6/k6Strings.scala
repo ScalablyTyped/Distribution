@@ -3,6 +3,14 @@ package typings.k6
 import typings.k6.cryptoMod.Algorithm
 import typings.k6.cryptoMod.StringEncoding
 import typings.k6.encodingMod.Base64Variant
+import typings.k6.experimentalBrowserMod.ElementState
+import typings.k6.experimentalBrowserMod.ImageFormat
+import typings.k6.experimentalBrowserMod.InputElementState
+import typings.k6.experimentalBrowserMod.KeyboardModifier
+import typings.k6.experimentalBrowserMod.LifecycleEvent
+import typings.k6.experimentalBrowserMod.MouseButton
+import typings.k6.experimentalBrowserMod.PollingMethod
+import typings.k6.experimentalBrowserMod.ResourceType
 import typings.k6.experimentalWebcryptoMod.HashAlgorithmIdentifier
 import typings.k6.httpMod.AuthMethod
 import typings.k6.httpMod.CipherSuite
@@ -37,11 +45,15 @@ object k6Strings {
   inline def `AES-KW`: `AES-KW` = "AES-KW".asInstanceOf[`AES-KW`]
   
   @js.native
-  sealed trait Alt extends StObject
+  sealed trait Alt
+    extends StObject
+       with KeyboardModifier
   inline def Alt: Alt = "Alt".asInstanceOf[Alt]
   
   @js.native
-  sealed trait Control extends StObject
+  sealed trait Control
+    extends StObject
+       with KeyboardModifier
   inline def Control: Control = "Control".asInstanceOf[Control]
   
   @js.native
@@ -67,7 +79,9 @@ object k6Strings {
   inline def HTTPSlash2Dot0: HTTPSlash2Dot0 = "HTTP/2.0".asInstanceOf[HTTPSlash2Dot0]
   
   @js.native
-  sealed trait Meta extends StObject
+  sealed trait Meta
+    extends StObject
+       with KeyboardModifier
   inline def Meta: Meta = "Meta".asInstanceOf[Meta]
   
   @js.native
@@ -95,7 +109,9 @@ object k6Strings {
   inline def `SHA-512`: `SHA-512` = "SHA-512".asInstanceOf[`SHA-512`]
   
   @js.native
-  sealed trait Shift extends StObject
+  sealed trait Shift
+    extends StObject
+       with KeyboardModifier
   inline def Shift: Shift = "Shift".asInstanceOf[Shift]
   
   @js.native
@@ -257,7 +273,10 @@ object k6Strings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait attached extends StObject
+  sealed trait attached
+    extends StObject
+       with ElementState
+       with InputElementState
   inline def attached: attached = "attached".asInstanceOf[attached]
   
   @js.native
@@ -331,7 +350,10 @@ object k6Strings {
   inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait detached extends StObject
+  sealed trait detached
+    extends StObject
+       with ElementState
+       with InputElementState
   inline def detached: detached = "detached".asInstanceOf[detached]
   
   @js.native
@@ -345,8 +367,34 @@ object k6Strings {
   inline def digest: digest = "digest".asInstanceOf[digest]
   
   @js.native
-  sealed trait domcontentloaded extends StObject
+  sealed trait disabled
+    extends StObject
+       with InputElementState
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
+  sealed trait document
+    extends StObject
+       with ResourceType
+  inline def document: document = "document".asInstanceOf[document]
+  
+  @js.native
+  sealed trait domcontentloaded
+    extends StObject
+       with LifecycleEvent
   inline def domcontentloaded: domcontentloaded = "domcontentloaded".asInstanceOf[domcontentloaded]
+  
+  @js.native
+  sealed trait editable
+    extends StObject
+       with InputElementState
+  inline def editable: editable = "editable".asInstanceOf[editable]
+  
+  @js.native
+  sealed trait enabled
+    extends StObject
+       with InputElementState
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait encrypt extends StObject
@@ -359,14 +407,32 @@ object k6Strings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait eventsource
+    extends StObject
+       with ResourceType
+  inline def eventsource: eventsource = "eventsource".asInstanceOf[eventsource]
+  
+  @js.native
   sealed trait `externally-controlled`
     extends StObject
        with ExecutorOptions
   inline def `externally-controlled`: `externally-controlled` = "externally-controlled".asInstanceOf[`externally-controlled`]
   
   @js.native
+  sealed trait fetch
+    extends StObject
+       with ResourceType
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
+  
+  @js.native
   sealed trait first extends StObject
   inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
+  sealed trait font
+    extends StObject
+       with ResourceType
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
   sealed trait hex
@@ -375,7 +441,10 @@ object k6Strings {
   inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait hidden extends StObject
+  sealed trait hidden
+    extends StObject
+       with ElementState
+       with InputElementState
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
@@ -383,15 +452,31 @@ object k6Strings {
   inline def `http-url`: `http-url` = "http-url".asInstanceOf[`http-url`]
   
   @js.native
+  sealed trait image
+    extends StObject
+       with ResourceType
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
+  sealed trait interval
+    extends StObject
+       with PollingMethod
+  inline def interval: interval = "interval".asInstanceOf[interval]
+  
+  @js.native
   sealed trait jaeger extends StObject
   inline def jaeger: jaeger = "jaeger".asInstanceOf[jaeger]
   
   @js.native
-  sealed trait jpeg extends StObject
+  sealed trait jpeg
+    extends StObject
+       with ImageFormat
   inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
-  sealed trait left extends StObject
+  sealed trait left
+    extends StObject
+       with MouseButton
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -399,8 +484,16 @@ object k6Strings {
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait load extends StObject
+  sealed trait load
+    extends StObject
+       with LifecycleEvent
   inline def load: load = "load".asInstanceOf[load]
+  
+  @js.native
+  sealed trait manifest
+    extends StObject
+       with ResourceType
+  inline def manifest: manifest = "manifest".asInstanceOf[manifest]
   
   @js.native
   sealed trait md4
@@ -415,17 +508,33 @@ object k6Strings {
   inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
+  sealed trait media
+    extends StObject
+       with ResourceType
+  inline def media: media = "media".asInstanceOf[media]
+  
+  @js.native
   sealed trait message
     extends StObject
        with EventType
   inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait middle extends StObject
+  sealed trait middle
+    extends StObject
+       with MouseButton
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait networkidle extends StObject
+  sealed trait mutation
+    extends StObject
+       with PollingMethod
+  inline def mutation: mutation = "mutation".asInstanceOf[mutation]
+  
+  @js.native
+  sealed trait networkidle
+    extends StObject
+       with LifecycleEvent
   inline def networkidle: networkidle = "networkidle".asInstanceOf[networkidle]
   
   @js.native
@@ -459,6 +568,12 @@ object k6Strings {
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
+  sealed trait other
+    extends StObject
+       with ResourceType
+  inline def other: other = "other".asInstanceOf[other]
+  
+  @js.native
   sealed trait `per-vu-iterations`
     extends StObject
        with ExecutorOptions
@@ -471,7 +586,9 @@ object k6Strings {
   inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
-  sealed trait png extends StObject
+  sealed trait png
+    extends StObject
+       with ImageFormat
   inline def png: png = "png".asInstanceOf[png]
   
   @js.native
@@ -505,7 +622,9 @@ object k6Strings {
   inline def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait raf extends StObject
+  sealed trait raf
+    extends StObject
+       with PollingMethod
   inline def raf: raf = "raf".asInstanceOf[raf]
   
   @js.native
@@ -545,7 +664,9 @@ object k6Strings {
   inline def reduce: reduce = "reduce".asInstanceOf[reduce]
   
   @js.native
-  sealed trait right extends StObject
+  sealed trait right
+    extends StObject
+       with MouseButton
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -565,6 +686,12 @@ object k6Strings {
   @js.native
   sealed trait screen extends StObject
   inline def screen: screen = "screen".asInstanceOf[screen]
+  
+  @js.native
+  sealed trait script
+    extends StObject
+       with ResourceType
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
   sealed trait secret extends StObject
@@ -623,10 +750,22 @@ object k6Strings {
   inline def std: std = "std".asInstanceOf[std]
   
   @js.native
+  sealed trait stylesheet
+    extends StObject
+       with ResourceType
+  inline def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
+  
+  @js.native
   sealed trait text
     extends StObject
        with ResponseType
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait texttrack
+    extends StObject
+       with ResourceType
+  inline def texttrack: texttrack = "texttrack".asInstanceOf[texttrack]
   
   @js.native
   sealed trait tritanopia extends StObject
@@ -643,10 +782,25 @@ object k6Strings {
   inline def verify: verify = "verify".asInstanceOf[verify]
   
   @js.native
-  sealed trait visible extends StObject
+  sealed trait visible
+    extends StObject
+       with ElementState
+       with InputElementState
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
   sealed trait w3c extends StObject
   inline def w3c: w3c = "w3c".asInstanceOf[w3c]
+  
+  @js.native
+  sealed trait websocket
+    extends StObject
+       with ResourceType
+  inline def websocket: websocket = "websocket".asInstanceOf[websocket]
+  
+  @js.native
+  sealed trait xhr
+    extends StObject
+       with ResourceType
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
 }

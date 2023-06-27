@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait arcadeUtilsExpressionInfo extends StObject {
   
   /**
-    * An Arcade expression defined on a layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * An Arcade expression defined on a layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var expression: String
   
   /**
-    * The name of the expression used when referencing it in popup and form templates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * The name of the expression used when referencing it in popup and form templates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the profile, or environment, where the expression was defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * Information about the profile, or environment, where the expression was defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var profileInfo: ExpressionInfoProfileInfo
   
   /**
-    * The expression's title, describing it in the legend and other UI elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
-    */
+  		 * The expression's title, describing it in the legend and other UI elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-arcadeUtils.html#ExpressionInfo)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object arcadeUtilsExpressionInfo {

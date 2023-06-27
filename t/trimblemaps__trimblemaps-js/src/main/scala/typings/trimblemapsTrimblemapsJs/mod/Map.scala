@@ -1084,6 +1084,8 @@ open class Map () extends Evented {
   /* @deprecated */
   def setCustomRoadVisibility(isVisible: Boolean): this.type = js.native
   
+  def setDarkMode(isVisible: Boolean): this.type = js.native
+  
   def setFeatureState(feature: FeatureIdentifier, state: StringDictionary[Any]): Unit = js.native
   def setFeatureState(feature: GeoJSONFeature, state: StringDictionary[Any]): Unit = js.native
   

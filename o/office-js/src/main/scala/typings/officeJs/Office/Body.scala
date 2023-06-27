@@ -120,16 +120,16 @@ trait Body extends StObject {
     *
     * This method returns the entire current body in the format specified by `coercionType`.
     *
-    * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-    * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously.
-    * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-    *
     * @remarks
     * [Api set: Mailbox 1.3]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+    * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+    * render efficiently with its rendering engine.
     *
     * @param coercionType - The format for the returned body.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -142,16 +142,16 @@ trait Body extends StObject {
     *
     * This method returns the entire current body in the format specified by `coercionType`.
     *
-    * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-    * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously.
-    * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-    *
     * @remarks
     * [Api set: Mailbox 1.3]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    *
+    * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+    * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+    * render efficiently with its rendering engine.
     *
     * @param coercionType - The format for the returned body.
     * @param options - An object literal that contains one or more of the following properties:-
@@ -207,24 +207,28 @@ trait Body extends StObject {
   /**
     * Adds the specified content to the beginning of the item body.
     *
-    * The `prependAsync` method inserts the specified string at the beginning of the item body.
-    * After insertion, the cursor is returned to its original place, relative to the inserted content.
-    *
-    * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-    * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-    * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-    *
-    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-    * (see the **Examples** section for a sample).
-    *
-    * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-    *
     * @remarks
     * [Api set: Mailbox 1.1]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    *
+    * **Important**:
+    *
+    * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+    * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+    * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+    * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+    *
+    * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+    * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+    * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+    *
+    * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+    * (see the **Examples** section for a sample).
+    *
+    * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
     *
     * **Errors**:
     *
@@ -239,24 +243,28 @@ trait Body extends StObject {
   /**
     * Adds the specified content to the beginning of the item body.
     *
-    * The `prependAsync` method inserts the specified string at the beginning of the item body.
-    * After insertion, the cursor is returned to its original place, relative to the inserted content.
-    *
-    * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-    * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-    * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-    *
-    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-    * (see the **Examples** section for a sample).
-    *
-    * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-    *
     * @remarks
     * [Api set: Mailbox 1.1]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    *
+    * **Important**:
+    *
+    * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+    * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+    * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+    * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+    *
+    * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+    * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+    * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+    *
+    * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+    * (see the **Examples** section for a sample).
+    *
+    * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
     *
     * **Errors**:
     *
@@ -277,18 +285,93 @@ trait Body extends StObject {
   ): Unit = js.native
   
   /**
+    * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+    * 
+    * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance,
+    * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.
+    * 
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+    * 
+    * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
+    * 
+    * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+    * the prepend-on-send feature runs first.
+    * 
+    * - A new line is added after the prepended content.
+    * 
+    * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs.
+    * The content of the last run add-in appears above previously prepended content.
+    * 
+    * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.
+    * 
+    * **Errors**:
+    * 
+    * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.
+    * 
+    * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.
+    * 
+    * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
+    */
+  def prependOnSendAsync(data: String): Unit = js.native
+  def prependOnSendAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+    * 
+    * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance,
+    * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.
+    * 
+    * @remarks
+    * [Api set: Mailbox 1.13]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+    * 
+    * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
+    * 
+    * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+    * the prepend-on-send feature runs first.
+    * 
+    * - A new line is added after the prepended content.
+    * 
+    * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs.
+    * The content of the last run add-in appears above previously prepended content.
+    * 
+    * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.
+    * 
+    * **Errors**:
+    * 
+    * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.
+    * 
+    * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.
+    * 
+    * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Any object that can be accessed in the callback function.
+    *        `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
+    */
+  def prependOnSendAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
+  def prependOnSendAsync(
+    data: String,
+    options: AsyncContextOptions & CoercionTypeOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  
+  /**
     * Replaces the entire body with the specified text.
-    *
-    * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-    * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method
-    * previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-    *
-    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-    * (see the **Examples** section for a sample).
-    *
-    * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-    *
-    * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
     *
     * @remarks
     * [Api set: Mailbox 1.3]
@@ -296,6 +379,24 @@ trait Body extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    *
+    * **Important**:
+    *
+    * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+    * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+    * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+    * something in the body of the mail item.
+    *
+    * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+    * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+    * render efficiently with its rendering engine.
+    *
+    * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+    * (see the **Examples** section for a sample).
+    *
+    * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+    *
+    * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
     *
     * **Errors**:
     *
@@ -312,23 +413,30 @@ trait Body extends StObject {
   /**
     * Replaces the entire body with the specified text.
     *
-    * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-    * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method
-    * previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-    *
-    * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-    * (see the **Examples** section for a sample).
-    *
-    * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-    *
-    * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
-    *
     * @remarks
     * [Api set: Mailbox 1.3]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    *
+    * **Important**:
+    *
+    * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+    * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+    * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+    * something in the body of the mail item.
+    *
+    * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+    * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+    * render efficiently with its rendering engine.
+    *
+    * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+    * (see the **Examples** section for a sample).
+    *
+    * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+    *
+    * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
     *
     * **Errors**:
     *

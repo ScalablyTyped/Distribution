@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.HTMLCanvasElement
   - typings.std.ImageBitmap
   - typings.std.OffscreenCanvas
+  - typings.std.VideoFrame
 */
 trait CanvasImageSource
   extends StObject

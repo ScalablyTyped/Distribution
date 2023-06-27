@@ -22,7 +22,7 @@ trait AppCommonManager extends StObject {
     *
     * @returns DOMString Plugin version
     *
-    * @throw None N/A
+    * @throws None N/A
     *
     * @since 2.3
     *
@@ -42,9 +42,9 @@ trait AppCommonManager extends StObject {
     *
     * @returns void
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value. (Since plugin version 3.0)
     *
     * @since 2.3
     *

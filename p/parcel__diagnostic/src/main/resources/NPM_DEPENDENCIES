@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@parcel/diagnostic" : "2.8.3"
+      "@parcel/diagnostic" : "2.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@parcel/diagnostic" : "2.8.3"
+      "@parcel/diagnostic" : "2.9.2"
     }
   ],
   "compile-devDependencies" : [

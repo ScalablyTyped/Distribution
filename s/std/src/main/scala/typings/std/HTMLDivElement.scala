@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <div> elements. */
+/**
+  * Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <div> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDivElement)
+  */
 @js.native
 trait HTMLDivElement
   extends StObject
@@ -24,6 +28,8 @@ trait HTMLDivElement
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDivElement/align)
     */
   /* standard dom */
   var align: java.lang.String = js.native

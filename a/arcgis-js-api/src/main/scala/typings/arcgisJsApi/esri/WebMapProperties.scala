@@ -9,87 +9,87 @@ trait WebMapProperties
      with MapProperties {
   
   /**
-    * The applicationProperties contains the viewing properties of the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#applicationProperties)
-    */
+  		 * The applicationProperties contains the viewing properties of the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#applicationProperties)
+  		 */
   var applicationProperties: js.UndefOr[ApplicationPropertiesProperties] = js.undefined
   
   /**
-    * The name of the application that authored the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringApp)
-    */
+  		 * The name of the application that authored the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringApp)
+  		 */
   var authoringApp: js.UndefOr[String] = js.undefined
   
   /**
-    * The version of the application that authored the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringAppVersion)
-    */
+  		 * The version of the application that authored the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringAppVersion)
+  		 */
   var authoringAppVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of saved geographic extents that allow end users to quickly navigate to a particular area of interest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#bookmarks)
-    */
+  		 * An array of saved geographic extents that allow end users to quickly navigate to a particular area of interest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#bookmarks)
+  		 */
   var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   
   /**
-    * When a web map is configured as floor-aware, it has a floorInfo property defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#floorInfo)
-    */
+  		 * When a web map is configured as floor-aware, it has a floorInfo property defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#floorInfo)
+  		 */
   var floorInfo: js.UndefOr[MapFloorInfoProperties] = js.undefined
   
   /**
-    * Information relating to a list of Geotriggers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#geotriggersInfo)
-    */
+  		 * Information relating to a list of Geotriggers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#geotriggersInfo)
+  		 */
   var geotriggersInfo: js.UndefOr[GeotriggersInfoProperties] = js.undefined
   
   /**
-    * The initial view of the WebMap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties)
-    */
+  		 * The initial view of the WebMap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties)
+  		 */
   var initialViewProperties: js.UndefOr[InitialViewPropertiesProperties] = js.undefined
   
   /**
-    * The portal item from which the WebMap is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem)
-    */
+  		 * The portal item from which the WebMap is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem)
+  		 */
   var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
-    * Provides multiple slides.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#presentation)
-    */
+  		 * Provides multiple slides.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#presentation)
+  		 */
   var presentation: js.UndefOr[Any] = js.undefined
   
   /**
-    * The URL to the thumbnail used for the webmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#thumbnailUrl)
-    */
+  		 * The URL to the thumbnail used for the webmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#thumbnailUrl)
+  		 */
   var thumbnailUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * The utilityNetworks object contains a collection of [UtilityNetworks](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html) saved on the web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#utilityNetworks)
-    */
+  		 * The utilityNetworks object contains a collection of [UtilityNetworks](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-UtilityNetwork.html) saved on the web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#utilityNetworks)
+  		 */
   var utilityNetworks: js.UndefOr[CollectionProperties[UtilityNetworkProperties]] = js.undefined
   
   /**
-    * The widgets object contains widgets that are exposed to the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets)
-    */
+  		 * The widgets object contains widgets that are exposed to the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets)
+  		 */
   var widgets: js.UndefOr[Widgets] = js.undefined
 }
 object WebMapProperties {

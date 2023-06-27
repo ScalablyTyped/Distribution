@@ -16,11 +16,11 @@ trait GetParametersPathThreadid extends StObject {
     * Mark a thread as read
     * @description Marks a thread as "read." Marking a thread as "read" is equivalent to clicking a notification in your notification inbox on GitHub: https://github.com/notifications.
     */
-  var patch: Responses42
+  var patch: Responses48
 }
 object GetParametersPathThreadid {
   
-  inline def apply(get: ParametersPathThreadid, patch: Responses42): GetParametersPathThreadid = {
+  inline def apply(get: ParametersPathThreadid, patch: Responses48): GetParametersPathThreadid = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathThreadid]
   }
@@ -30,6 +30,6 @@ object GetParametersPathThreadid {
     
     inline def setGet(value: ParametersPathThreadid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses42): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses48): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

@@ -538,10 +538,13 @@ object mod {
   information that client code or plugins can use to describe what a
   transaction represents, so that they can update their [own
   state](https://prosemirror.net/docs/ref/#state.StateField) accordingly.
-  The [editor view](https://prosemirror.net/docs/ref/#view.EditorView) uses a few metadata properties:
-  it will attach a property `"pointer"` with the value `true` to
-  selection transactions directly caused by mouse or touch input, and
-  a `"uiEvent"` property of that may be `"paste"`, `"cut"`, or `"drop"`.
+  The [editor view](https://prosemirror.net/docs/ref/#view.EditorView) uses a few metadata
+  properties: it will attach a property `"pointer"` with the value
+  `true` to selection transactions directly caused by mouse or touch
+  input, a `"composition"` property holding an ID identifying the
+  composition that caused it to transactions caused by composed DOM
+  input, and a `"uiEvent"` property of that may be `"paste"`,
+  `"cut"`, or `"drop"`.
   */
   @JSImport("prosemirror-state", "Transaction")
   @js.native

@@ -24,6 +24,8 @@ trait InspectorIssueDetails extends StObject {
   
   var federatedAuthRequestIssueDetails: js.UndefOr[FederatedAuthRequestIssueDetails] = js.undefined
   
+  var federatedAuthUserInfoRequestIssueDetails: js.UndefOr[FederatedAuthUserInfoRequestIssueDetails] = js.undefined
+  
   var genericIssueDetails: js.UndefOr[GenericIssueDetails] = js.undefined
   
   var heavyAdIssueDetails: js.UndefOr[HeavyAdIssueDetails] = js.undefined
@@ -37,6 +39,8 @@ trait InspectorIssueDetails extends StObject {
   var quirksModeIssueDetails: js.UndefOr[QuirksModeIssueDetails] = js.undefined
   
   var sharedArrayBufferIssueDetails: js.UndefOr[SharedArrayBufferIssueDetails] = js.undefined
+  
+  var stylesheetLoadingIssueDetails: js.UndefOr[StylesheetLoadingIssueDetails] = js.undefined
 }
 object InspectorIssueDetails {
   
@@ -84,6 +88,10 @@ object InspectorIssueDetails {
     
     inline def setFederatedAuthRequestIssueDetailsUndefined: Self = StObject.set(x, "federatedAuthRequestIssueDetails", js.undefined)
     
+    inline def setFederatedAuthUserInfoRequestIssueDetails(value: FederatedAuthUserInfoRequestIssueDetails): Self = StObject.set(x, "federatedAuthUserInfoRequestIssueDetails", value.asInstanceOf[js.Any])
+    
+    inline def setFederatedAuthUserInfoRequestIssueDetailsUndefined: Self = StObject.set(x, "federatedAuthUserInfoRequestIssueDetails", js.undefined)
+    
     inline def setGenericIssueDetails(value: GenericIssueDetails): Self = StObject.set(x, "genericIssueDetails", value.asInstanceOf[js.Any])
     
     inline def setGenericIssueDetailsUndefined: Self = StObject.set(x, "genericIssueDetails", js.undefined)
@@ -111,5 +119,9 @@ object InspectorIssueDetails {
     inline def setSharedArrayBufferIssueDetails(value: SharedArrayBufferIssueDetails): Self = StObject.set(x, "sharedArrayBufferIssueDetails", value.asInstanceOf[js.Any])
     
     inline def setSharedArrayBufferIssueDetailsUndefined: Self = StObject.set(x, "sharedArrayBufferIssueDetails", js.undefined)
+    
+    inline def setStylesheetLoadingIssueDetails(value: StylesheetLoadingIssueDetails): Self = StObject.set(x, "stylesheetLoadingIssueDetails", value.asInstanceOf[js.Any])
+    
+    inline def setStylesheetLoadingIssueDetailsUndefined: Self = StObject.set(x, "stylesheetLoadingIssueDetails", js.undefined)
   }
 }

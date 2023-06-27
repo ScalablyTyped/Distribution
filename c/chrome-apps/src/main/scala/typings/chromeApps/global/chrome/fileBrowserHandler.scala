@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // File Browser Handle //
 /////////////////////////
 /**
-  * @requires(CrOS) Chrome OS Only
+  * @requires Chrome OS Only
   * @requires Permissions: 'fileBrowserHandler'
   * @requires Manifest: 'file_browser_handlers'
   * @description
   * Use the chrome.fileBrowserHandler API to extend the Chrome OS file browser.
   * For example, you can use this API to enable users to upload files to your website.
-  * @see[Documentation]{@link https://developer.chrome.com/extensions/fileBrowserHandler}
+  * @see https://developer.chrome.com/extensions/fileBrowserHandler
   */
 object fileBrowserHandler {
   

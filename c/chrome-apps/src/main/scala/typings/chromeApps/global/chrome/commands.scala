@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * trigger actions in your app, for example, an
   * action to open the browser action or send a command
   * to the app.
-  * @see[Usage]{@link https://developer.chrome.com/apps/commands}
+  * @see https://developer.chrome.com/apps/commands
   */
 object commands {
   

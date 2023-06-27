@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BrickInitialization extends StObject {
   
+  var additionalData: js.UndefOr[StatusBrickAdditionalData] = js.undefined
+  
   var amount: js.UndefOr[Double] = js.undefined
   
   var externalReference: js.UndefOr[String] = js.undefined
@@ -27,6 +29,10 @@ object BrickInitialization {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: BrickInitialization] (val x: Self) extends AnyVal {
+    
+    inline def setAdditionalData(value: StatusBrickAdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

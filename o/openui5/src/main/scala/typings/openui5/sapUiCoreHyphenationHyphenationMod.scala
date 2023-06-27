@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SErrorMessage
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.std.Record
@@ -108,13 +107,13 @@ object sapUiCoreHyphenationHyphenationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit]
     ): this.type = js.native
     def attachError(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.hyphenation.Hyphenation`
       * itself
@@ -140,7 +139,7 @@ object sapUiCoreHyphenationHyphenationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit]
     ): this.type = js.native
     def attachError(
       /**
@@ -151,7 +150,7 @@ object sapUiCoreHyphenationHyphenationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.hyphenation.Hyphenation`
       * itself
@@ -199,13 +198,13 @@ object sapUiCoreHyphenationHyphenationMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit]
     ): this.type = js.native
     def detachError(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ HyphenationErrorEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -213,7 +212,7 @@ object sapUiCoreHyphenationHyphenationMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:error error} to attached listeners.
       *
@@ -223,7 +222,7 @@ object sapUiCoreHyphenationHyphenationMod {
     def fireError(/**
       * Parameters to pass along with the event
       */
-    mParameters: SErrorMessage): this.type = js.native
+    mParameters: Hyphenation$ErrorEventParameters): this.type = js.native
     
     /**
       * What languages were initialized with {@link sap.ui.core.hyphenation.Hyphenation#initialize Hyphenation#initialize}
@@ -272,8 +271,7 @@ object sapUiCoreHyphenationHyphenationMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * Checks if the given language was initialized with {@link sap.ui.core.hyphenation.Hyphenation#initialize
-      * Hyphenation#initialize}
+      * Checks if the given language was initialized with {@link sap.ui.core.hyphenation.Hyphenation#initialize Hyphenation#initialize}
       *
       * @returns True if the language was initialized
       */
@@ -299,6 +297,33 @@ object sapUiCoreHyphenationHyphenationMod {
     ): Boolean = js.native
   }
   
+  trait Hyphenation$ErrorEventParameters extends StObject {
+    
+    /**
+      * The message of the error.
+      */
+    var sErrorMessage: js.UndefOr[String] = js.undefined
+  }
+  object Hyphenation$ErrorEventParameters {
+    
+    inline def apply(): Hyphenation$ErrorEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Hyphenation$ErrorEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hyphenation$ErrorEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSErrorMessage(value: String): Self = StObject.set(x, "sErrorMessage", value.asInstanceOf[js.Any])
+      
+      inline def setSErrorMessageUndefined: Self = StObject.set(x, "sErrorMessage", js.undefined)
+    }
+  }
+  
+  type HyphenationErrorEvent = typings.openui5.sapUiBaseEventMod.default[Hyphenation$ErrorEventParameters]
+  
+  type HyphenationErrorEventParameters = Hyphenation$ErrorEventParameters
+  
   trait HyphenationSettings
     extends StObject
        with ManagedObjectSettings {
@@ -306,7 +331,12 @@ object sapUiCoreHyphenationHyphenationMod {
     /**
       * Fired if an error with initialization or hyphenation occurs.
       */
-    var error: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var error: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Hyphenation$ErrorEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object HyphenationSettings {
     
@@ -318,7 +348,9 @@ object sapUiCoreHyphenationHyphenationMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: HyphenationSettings] (val x: Self) extends AnyVal {
       
-      inline def setError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Hyphenation$ErrorEventParameters] => Unit
+      ): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }

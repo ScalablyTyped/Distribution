@@ -99,7 +99,6 @@ import typings.wdioProtocols.anon.`0`
 import typings.wdioProtocols.anon.`1`
 import typings.wdioProtocols.anon.`2`
 import typings.wdioProtocols.anon.`3`
-import typings.wdioProtocols.buildTypesMod.BidiResponse
 import typings.wdioProtocols.buildTypesMod.Context
 import typings.wdioProtocols.buildTypesMod.Cookie
 import typings.wdioProtocols.buildTypesMod.ElementReference
@@ -1313,15 +1312,147 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browser.close")
+    @js.native
+    def browserClose: SocketCommandDescriptionParameters = js.native
+    
+    inline def browserClose_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browser.close")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.captureScreenshot")
+    @js.native
+    def browsingContextCaptureScreenshot: Socket = js.native
+    
+    inline def browsingContextCaptureScreenshot_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.captureScreenshot")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.close")
+    @js.native
+    def browsingContextClose: SocketCommandDescriptionParameters = js.native
+    
+    inline def browsingContextClose_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.close")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.create")
+    @js.native
+    def browsingContextCreate: Socket = js.native
+    
+    inline def browsingContextCreate_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.create")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.getTree")
+    @js.native
+    def browsingContextGetTree: Socket = js.native
+    
+    inline def browsingContextGetTree_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.getTree")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.handleUserPrompt")
+    @js.native
+    def browsingContextHandleUserPrompt: SocketCommandDescriptionParameters = js.native
+    
+    inline def browsingContextHandleUserPrompt_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.handleUserPrompt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.navigate")
+    @js.native
+    def browsingContextNavigate: Socket = js.native
+    
+    inline def browsingContextNavigate_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.navigate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.print")
+    @js.native
+    def browsingContextPrint: Socket = js.native
+    
+    inline def browsingContextPrint_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.print")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.browsingContext.reload")
+    @js.native
+    def browsingContextReload: SocketCommandDescriptionParameters = js.native
+    
+    inline def browsingContextReload_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("browsingContext.reload")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.input.performActions")
+    @js.native
+    def inputPerformActions: SocketCommandDescriptionParameters = js.native
+    
+    inline def inputPerformActions_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input.performActions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.input.releaseActions")
+    @js.native
+    def inputReleaseActions: SocketCommandDescriptionParameters = js.native
+    
+    inline def inputReleaseActions_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input.releaseActions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.addPreloadScript")
+    @js.native
+    def scriptAddPreloadScript: SocketCommandDescriptionParameters = js.native
+    
+    inline def scriptAddPreloadScript_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.addPreloadScript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.callFunction")
+    @js.native
+    def scriptCallFunction: SocketCommandDescriptionParameters = js.native
+    
+    inline def scriptCallFunction_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.callFunction")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.disown")
+    @js.native
+    def scriptDisown: SocketCommandDescriptionParameters = js.native
+    
+    inline def scriptDisown_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.disown")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.evaluate")
+    @js.native
+    def scriptEvaluate: Socket = js.native
+    
+    inline def scriptEvaluate_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.evaluate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.getRealms")
+    @js.native
+    def scriptGetRealms: Socket = js.native
+    
+    inline def scriptGetRealms_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.getRealms")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.script.removePreloadScript")
+    @js.native
+    def scriptRemovePreloadScript: SocketCommandDescriptionParameters = js.native
+    
+    inline def scriptRemovePreloadScript_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("script.removePreloadScript")(x.asInstanceOf[js.Any])
+    
     @JSImport("@wdio/protocols", "WebDriverBidiProtocol.sendAsyncCommand")
     @js.native
-    def sendAsyncCommand: SocketCommandDescriptionParameters = js.native
-    inline def sendAsyncCommand_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sendAsyncCommand")(x.asInstanceOf[js.Any])
+    def sendAsyncCommand: Socket = js.native
+    inline def sendAsyncCommand_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sendAsyncCommand")(x.asInstanceOf[js.Any])
     
     @JSImport("@wdio/protocols", "WebDriverBidiProtocol.sendCommand")
     @js.native
     def sendCommand: Socket = js.native
     inline def sendCommand_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sendCommand")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.session.end")
+    @js.native
+    def sessionEnd: SocketCommandDescriptionParameters = js.native
+    
+    inline def sessionEnd_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("session.end")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.session.new")
+    @js.native
+    def sessionNew: Socket = js.native
+    
+    inline def sessionNew_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("session.new")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.session.status")
+    @js.native
+    def sessionStatus: Socket = js.native
+    
+    inline def sessionStatus_=(x: Socket): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("session.status")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.session.subscribe")
+    @js.native
+    def sessionSubscribe: SocketCommandDescriptionParameters = js.native
+    
+    inline def sessionSubscribe_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("session.subscribe")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@wdio/protocols", "WebDriverBidiProtocol.session.unsubscribe")
+    @js.native
+    def sessionUnsubscribe: SocketCommandDescriptionParameters = js.native
+    
+    inline def sessionUnsubscribe_=(x: SocketCommandDescriptionParameters): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("session.unsubscribe")(x.asInstanceOf[js.Any])
   }
   
   object WebDriverProtocol {
@@ -1717,7 +1848,6 @@ object mod {
   /* Inlined parent @wdio/protocols.@wdio/protocols/build/commands/saucelabs.default */
   /* Inlined parent @wdio/protocols.@wdio/protocols/build/commands/selenium.default */
   /* Inlined parent @wdio/protocols.@wdio/protocols/build/commands/gecko.default */
-  /* Inlined parent @wdio/protocols.@wdio/protocols/build/commands/webdriverBidi.default */
   @js.native
   trait ProtocolCommands extends StObject {
     
@@ -3360,15 +3490,6 @@ object mod {
     def selectCastSink(sinkName: String): js.Promise[Unit] = js.native
     
     /**
-      * WebdriverBidi Protocol Command
-      *
-      * Send socket commands via WebDriver Bidi
-      * @ref https://github.com/w3c/webdriver-bidi
-      *
-      */
-    def send(params: js.Object): js.Promise[BidiResponse] = js.native
-    
-    /**
       * Webdriver Protocol Command
       *
       * The Send Alert Text command sets the text field of a window.prompt user prompt to the given value.
@@ -3376,15 +3497,6 @@ object mod {
       *
       */
     def sendAlertText(text: String): js.Promise[Unit] = js.native
-    
-    /**
-      * WebdriverBidi Protocol Command
-      *
-      * Send asynchronous socket commands via WebDriver Bidi
-      * @ref https://github.com/w3c/webdriver-bidi
-      *
-      */
-    def sendAsync(params: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Chromium Protocol Command

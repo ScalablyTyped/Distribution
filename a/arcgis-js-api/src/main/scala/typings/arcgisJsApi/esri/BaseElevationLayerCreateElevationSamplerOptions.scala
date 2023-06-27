@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseElevationLayerCreateElevationSamplerOptions extends StObject {
   
   /**
-    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
-    */
+  		 * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
+  		 */
   var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The value to use when there is no data available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
-    */
+  		 * The value to use when there is no data available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#createElevationSampler)
+  		 */
   var noDataValue: js.UndefOr[Double] = js.undefined
 }
 object BaseElevationLayerCreateElevationSamplerOptions {

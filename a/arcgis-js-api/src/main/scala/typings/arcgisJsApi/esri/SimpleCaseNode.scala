@@ -11,26 +11,26 @@ trait SimpleCaseNode
      with SQLNode {
   
   /**
-    * When nodes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
-    */
+  		 * When nodes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
+  		 */
   var clauses: js.Array[WhenNode]
   
   /**
-    * else sql node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
-    */
+  		 * else sql node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
+  		 */
   var `else`: SQLNode
   
   var format: simple
   
   /**
-    * SQL node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
-    */
+  		 * SQL node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SimpleCaseNode)
+  		 */
   var operand: SQLNode
   
   var `type`: case_expression

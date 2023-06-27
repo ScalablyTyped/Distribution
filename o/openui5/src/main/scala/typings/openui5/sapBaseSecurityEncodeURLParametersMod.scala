@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,5 +14,5 @@ object sapBaseSecurityEncodeURLParametersMod {
   inline def default(/**
     * The map of parameters to encode
     */
-  mParams: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mParams.asInstanceOf[js.Any]).asInstanceOf[String]
+  mParams: Record[String, String | Double | Boolean]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mParams.asInstanceOf[js.Any]).asInstanceOf[String]
 }

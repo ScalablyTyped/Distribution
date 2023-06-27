@@ -1,7 +1,7 @@
 
 # Scala.js typings for kendo-ui
 
-Typings are for version v2023.1.117
+Typings are for version v2023.2.606
 
 
 

@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NonElementParentNode extends StObject {
   
-  /** Returns the first element within node's descendants whose ID is elementId. */
+  /**
+    * Returns the first element within node's descendants whose ID is elementId.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementById)
+    */
   /* standard dom */
   def getElementById(elementId: java.lang.String): Element | Null
 }

@@ -366,13 +366,13 @@ object Toolbars {
     def registerThreadButton(toolbarButtonDescriptor: ToolbarButtonDescriptor): js.Function0[Unit]
     
     /**
-      * @deprecated. use registerThreadButton
+      * @deprecated use registerThreadButton
       * @param toolbarButtonDescriptor
       */
     def registerToolbarButtonForList(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit]
     
     /**
-      * @deprecated. use registerThreadButton
+      * @deprecated use registerThreadButton
       * @param toolbarButtonDescriptor
       */
     def registerToolbarButtonForThreadView(toolbarButtonDescriptor: LegacyToolbarButtonDescriptor): js.Function0[Unit]

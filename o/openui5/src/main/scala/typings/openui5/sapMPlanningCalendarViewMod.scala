@@ -124,7 +124,7 @@ object sapMPlanningCalendarViewMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -146,8 +146,8 @@ object sapMPlanningCalendarViewMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Gets current value of property {@link #getIntervalLabelFormatter intervalLabelFormatter}.
@@ -159,8 +159,8 @@ object sapMPlanningCalendarViewMod {
     def getIntervalLabelFormatter(): js.Object = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Gets current value of property {@link #getIntervalSize intervalSize}.
@@ -233,8 +233,8 @@ object sapMPlanningCalendarViewMod {
     def getKey(): String = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Gets current value of property {@link #getRelative relative}.
@@ -265,7 +265,7 @@ object sapMPlanningCalendarViewMod {
     def getShowSubIntervals(): Boolean = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -306,8 +306,8 @@ object sapMPlanningCalendarViewMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Sets a new value for property {@link #getIntervalLabelFormatter intervalLabelFormatter}.
@@ -324,8 +324,8 @@ object sapMPlanningCalendarViewMod {
     oIntervalLabelFormatter: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Sets a new value for property {@link #getIntervalSize intervalSize}.
@@ -434,8 +434,8 @@ object sapMPlanningCalendarViewMod {
     sKey: String): this.type = js.native
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Sets a new value for property {@link #getRelative relative}.
@@ -483,7 +483,7 @@ object sapMPlanningCalendarViewMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Determines the different possible sizes for appointments.
       */
@@ -497,8 +497,8 @@ object sapMPlanningCalendarViewMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * A function that formats the interval.
@@ -508,8 +508,8 @@ object sapMPlanningCalendarViewMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * An integer that defines the period size.
@@ -550,8 +550,8 @@ object sapMPlanningCalendarViewMod {
     var key: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.93
-      * @EXPERIMENTAL (since 1.93) - This class is experimental and provides only limited functionality. Also
+      * @since 1.93
+      * @experimental (since 1.93) - This class is experimental and provides only limited functionality. Also
       * the API might be changed in future.
       *
       * Defines if the view will be relative. NOTE: Relative views, can be only used with intervalType - Day

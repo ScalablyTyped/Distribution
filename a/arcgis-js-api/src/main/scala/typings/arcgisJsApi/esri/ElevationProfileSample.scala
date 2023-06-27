@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationProfileSample extends StObject {
   
   /**
-    * Distance from the beginning of the path, in the effective selected by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
-    */
+  		 * Distance from the beginning of the path, in the effective selected by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
+  		 */
   var distance: Double
   
   /**
-    * The elevation of the sample, in the effective units selected by the user.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
-    */
+  		 * The elevation of the sample, in the effective units selected by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
+  		 */
   var elevation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The x coordinate of the sample, in the spatial reference of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
-    */
+  		 * The x coordinate of the sample, in the spatial reference of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
+  		 */
   var x: Double
   
   /**
-    * The y coordinate of the sample, in the spatial reference of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
-    */
+  		 * The y coordinate of the sample, in the spatial reference of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
+  		 */
   var y: Double
   
   /**
-    * The z coordinate of the sample, in the spatial reference of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
-    */
+  		 * The z coordinate of the sample, in the spatial reference of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html#ElevationProfileSample)
+  		 */
   var z: js.UndefOr[Double] = js.undefined
 }
 object ElevationProfileSample {

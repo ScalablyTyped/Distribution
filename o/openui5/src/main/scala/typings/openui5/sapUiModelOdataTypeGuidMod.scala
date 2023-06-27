@@ -126,8 +126,8 @@ object sapUiModelOdataTypeGuidMod {
       */
     sValue: String,
       /**
-      * the target type; may be "any", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType
-      * primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the target type; may be "any", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sTargetType: String
     ): String = js.native
@@ -143,8 +143,8 @@ object sapUiModelOdataTypeGuidMod {
       */
     sValue: String,
       /**
-      * the source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sSourceType: String
     ): String = js.native

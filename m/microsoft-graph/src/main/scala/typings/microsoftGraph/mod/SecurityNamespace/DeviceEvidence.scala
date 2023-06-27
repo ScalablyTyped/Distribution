@@ -30,6 +30,8 @@ trait DeviceEvidence
     */
   var healthStatus: js.UndefOr[NullableOption[DeviceHealthStatus]] = js.undefined
   
+  var ipInterfaces: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // Users that were logged on the machine during the time of the alert.
   var loggedOnUsers: js.UndefOr[NullableOption[js.Array[LoggedOnUser]]] = js.undefined
   
@@ -105,6 +107,14 @@ object DeviceEvidence {
     inline def setHealthStatusNull: Self = StObject.set(x, "healthStatus", null)
     
     inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
+    
+    inline def setIpInterfaces(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "ipInterfaces", value.asInstanceOf[js.Any])
+    
+    inline def setIpInterfacesNull: Self = StObject.set(x, "ipInterfaces", null)
+    
+    inline def setIpInterfacesUndefined: Self = StObject.set(x, "ipInterfaces", js.undefined)
+    
+    inline def setIpInterfacesVarargs(value: String*): Self = StObject.set(x, "ipInterfaces", js.Array(value*))
     
     inline def setLoggedOnUsers(value: NullableOption[js.Array[LoggedOnUser]]): Self = StObject.set(x, "loggedOnUsers", value.asInstanceOf[js.Any])
     

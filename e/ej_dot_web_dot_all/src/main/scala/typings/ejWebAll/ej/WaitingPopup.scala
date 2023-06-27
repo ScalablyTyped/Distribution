@@ -110,7 +110,7 @@ object WaitingPopup {
   trait Model extends StObject {
     
     /** Waitingpopup element append to given container element.
-      * @Default {null}
+      * @default {null}
       */
     var appendTo: js.UndefOr[String] = js.undefined
     
@@ -119,7 +119,7 @@ object WaitingPopup {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for the WaitingPopup control theme
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
@@ -128,32 +128,32 @@ object WaitingPopup {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to waitingpopup control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Enables or disables the default loading icon.
-      * @Default {true}
+      * @default {true}
       */
     var showImage: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the visibility of the WaitingPopup control
-      * @Default {false}
+      * @default {false}
       */
     var showOnInit: js.UndefOr[Boolean] = js.undefined
     
     /** Specified a selector for elements, within the container.
-      * @Default {null}
+      * @default {null}
       */
     var target: js.UndefOr[String] = js.undefined
     
     /** Loads HTML content inside the popup panel instead of the default icon
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[Any] = js.undefined
     
     /** Sets the custom text in the pop-up panel to notify the waiting process
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.success_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.downloadRequiresComputer
   - typings.microsoftGraph.microsoftGraphStrings.downloadFailed
   - typings.microsoftGraph.microsoftGraphStrings.downloading
-  - typings.microsoftGraph.microsoftGraphStrings.success
+  - typings.microsoftGraph.microsoftGraphStrings.success_
   - typings.microsoftGraph.microsoftGraphStrings.available
   - typings.microsoftGraph.microsoftGraphStrings.idle
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
@@ -60,7 +61,7 @@ object IosUpdatesInstallStatus {
   
   inline def sharedDeviceUserLoggedInError: typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError = "sharedDeviceUserLoggedInError".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError]
   
-  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: success_ = "success".asInstanceOf[success_]
   
   inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

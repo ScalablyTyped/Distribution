@@ -258,7 +258,7 @@ object anon {
     
     var Replay: TypeofReplay = js.native
     
-    val SDK_VERSION: /* "7.51.2" */ String = js.native
+    val SDK_VERSION: /* "7.56.0" */ String = js.native
     
     var Scope: TypeofScope = js.native
     

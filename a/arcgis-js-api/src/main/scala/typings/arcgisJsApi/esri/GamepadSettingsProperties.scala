@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GamepadSettingsProperties extends StObject {
   
   /**
-    * Determines what focus is required for gamepad events to be dispatched.
-    *
-    * @default document
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
-    */
+  		 * Determines what focus is required for gamepad events to be dispatched.
+  		 *
+  		 * @default document
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
+  		 */
   var enabledFocusMode: js.UndefOr[document | view | none_] = js.undefined
 }
 object GamepadSettingsProperties {

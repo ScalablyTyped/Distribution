@@ -20,10 +20,10 @@ trait PackageManager extends StObject {
     *
     * @returns The information of a package.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type NotFoundError, if the package with the specified ID is not found.
-    * @throw WebAPIException with error type UnknownError, if the package information cannot be retrieved because of a platform error.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type NotFoundError, if the package with the specified ID is not found.
+    * @throws WebAPIException with error type UnknownError, if the package information cannot be retrieved because of a platform error.
     */
   def getPackageInfo(): PackageInformation = js.native
   def getPackageInfo(id: PackageId): PackageInformation = js.native
@@ -44,8 +44,8 @@ trait PackageManager extends StObject {
     * @param successCallback The method to call when an invocation ends successfully.
     * @param errorCallback The method to call when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def getPackagesInfo(successCallback: PackageInformationArraySuccessCallback): Unit = js.native
   def getPackagesInfo(successCallback: PackageInformationArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -70,8 +70,8 @@ trait PackageManager extends StObject {
     * @param progressCallback The method to invoke when the installation is in progress or has been completed.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def install(packageFileURI: String, progressCallback: PackageProgressCallback): Unit = js.native
   def install(packageFileURI: String, progressCallback: PackageProgressCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -88,9 +88,9 @@ trait PackageManager extends StObject {
     *
     * @param eventCallback The method to be called when any change is made to the list of installed packages.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if the package list change event cannot be generated because of a platform error.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if the package list change event cannot be generated because of a platform error.
     */
   def setPackageInfoEventListener(eventCallback: PackageInformationEventCallback): Unit = js.native
   
@@ -114,8 +114,8 @@ trait PackageManager extends StObject {
     * @param progressCallback The method to invoke when uninstallation is in progress or has been completed.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def uninstall(id: PackageId, progressCallback: PackageProgressCallback): Unit = js.native
   def uninstall(id: PackageId, progressCallback: PackageProgressCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -128,8 +128,8 @@ trait PackageManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/package.info
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if the listener removal request fails because of a platform error.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if the listener removal request fails because of a platform error.
     */
   def unsetPackageInfoEventListener(): Unit = js.native
 }

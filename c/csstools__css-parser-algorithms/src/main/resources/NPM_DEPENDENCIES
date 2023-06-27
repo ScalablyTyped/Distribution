@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/css-parser-algorithms" : "2.1.1"
+      "@csstools/css-parser-algorithms" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/css-parser-algorithms" : "2.1.1"
+      "@csstools/css-parser-algorithms" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

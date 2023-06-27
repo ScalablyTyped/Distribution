@@ -25,8 +25,7 @@ trait Apply extends StObject {
     * is a map from expand path to expand options, where the options are again maps of system query options,
     * typically with string values. $count can also be given as a `boolean` value, $expand can recursively
     * be given as a map, $levels can also be given as a `number` value, and $select can also be given as an
-    * array (but without navigation paths). An empty map can also be given as `null` or `true`. See also {@link
-    * topic:1ab4f62de6ab467096a2a98b363a1373 Parameters}.
+    * array (but without navigation paths). An empty map can also be given as `null` or `true`. See also {@link https://ui5.sap.com/#/topic/1ab4f62de6ab467096a2a98b363a1373 Parameters}.
     */
   @JSName("$expand")
   var $expand: js.UndefOr[String | js.Object] = js.undefined
@@ -44,7 +43,7 @@ trait Apply extends StObject {
   var $orderby: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * The value for the "5.1.7 System Query Option $search"; see also `oAggregation.search` at {@link sap.ui.model.odata.v4.ODataListBinding#setAggregation}
+    * The value for the "5.1.7 System Query Option $search"; see also `oAggregation.search` at {@link sap.ui.model.odata.v4.ODataListBinding#setAggregation }
     * and the note there!
     */
   @JSName("$search")
@@ -60,7 +59,7 @@ trait Apply extends StObject {
   var $select: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * An object holding the information needed for data aggregation, see {@link sap.ui.model.odata.v4.ODataListBinding#setAggregation}
+    * An object holding the information needed for data aggregation, see {@link sap.ui.model.odata.v4.ODataListBinding#setAggregation }
     * for details.
     */
   @JSName("$$aggregation")
@@ -94,7 +93,7 @@ trait Apply extends StObject {
   /**
     * The operation mode for filtering and sorting with the model's operation mode as default. Since 1.39.0,
     * the operation mode {@link sap.ui.model.odata.OperationMode.Server} is supported. All other operation
-    * modes including `undefined` lead to an error if 'vFilters' or 'vSorters' are given or if {@link sap.ui.model.odata.v4.ODataListBinding#filter}
+    * modes including `undefined` lead to an error if 'vFilters' or 'vSorters' are given or if {@link sap.ui.model.odata.v4.ODataListBinding#filter }
     * or {@link sap.ui.model.odata.v4.ODataListBinding#sort} is called.
     */
   @JSName("$$operationMode")
@@ -122,16 +121,16 @@ trait Apply extends StObject {
     * Supported since 1.80.0 **Note:** These bindings are read-only, so they may be especially useful for value
     * lists; state messages (since 1.108.0) and the following APIs are **not** allowed
     * 	 for the list binding itself:
-    * 	 {@link sap.ui.model.odata.v4.ODataListBinding#create}  {@link sap.ui.model.odata.v4.ODataListBinding#getKeepAliveContext}
-    * or {@link #getKeepAliveContext} as far as it affects such a list binding  {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges}
+    * 	 {@link sap.ui.model.odata.v4.ODataListBinding#create}  {@link sap.ui.model.odata.v4.ODataListBinding#getKeepAliveContext }
+    * or {@link #getKeepAliveContext} as far as it affects such a list binding  {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges }
     *   for the {@link sap.ui.model.odata.v4.ODataListBinding#getHeaderContext header context} of
     * a list binding:
     * 	 {@link sap.ui.model.odata.v4.Context#requestSideEffects}   for the context of a list binding
     * representing a single entity:
     * 	 {@link sap.ui.model.odata.v4.Context#delete}  {@link sap.ui.model.odata.v4.Context#refresh}
-    * {@link sap.ui.model.odata.v4.Context#replaceWith}  {@link sap.ui.model.odata.v4.Context#requestSideEffects}
-    *  {@link sap.ui.model.odata.v4.Context#setKeepAlive}  {@link sap.ui.model.odata.v4.Context#setProperty}
-    *  executing a bound operation using `bReplaceWithRVC`, see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}
+    * {@link sap.ui.model.odata.v4.Context#replaceWith}  {@link sap.ui.model.odata.v4.Context#requestSideEffects }
+    *  {@link sap.ui.model.odata.v4.Context#setKeepAlive}  {@link sap.ui.model.odata.v4.Context#setProperty }
+    *  executing a bound operation using `bReplaceWithRVC`, see {@link sap.ui.model.odata.v4.ODataContextBinding#execute }
     *   for a dependent property binding of the list binding:
     * 	 {@link sap.ui.model.odata.v4.ODataPropertyBinding#setValue}
     */

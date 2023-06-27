@@ -1,11 +1,15 @@
 package typings.floatingUiCore
 
-import typings.floatingUiCore.anon.CrossAxis
 import typings.floatingUiCore.anon.Fn
-import typings.floatingUiCore.anon.PartialLimitShiftOptions
-import typings.floatingUiCore.anon.PartialOptionsOptionsCrossAxis
+import typings.floatingUiCore.anon.Options
+import typings.floatingUiCore.anon.PartialmainAxisnumbercrosCrossAxis
+import typings.floatingUiCore.srcTypesMod.Boundary
+import typings.floatingUiCore.srcTypesMod.Derivable
+import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.Middleware
 import typings.floatingUiCore.srcTypesMod.MiddlewareState
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.RootBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,38 +21,28 @@ object srcMiddlewareShiftMod {
   val ^ : js.Any = js.native
   
   inline def limitShift(): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[Fn]
-  inline def limitShift(options: PartialLimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
+  inline def limitShift(options: LimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
+  inline def limitShift(options: Derivable[LimitShiftOptions]): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
   
   inline def shift(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[Middleware]
-  inline def shift(options: PartialOptionsOptionsCrossAxis): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def shift(options: ShiftOptions): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def shift(options: Derivable[ShiftOptions]): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  type LimitShiftOffset = (js.Function1[/* args */ MiddlewareState, Double | CrossAxis]) | Double | CrossAxis
+  type LimitShiftOffset = Double | PartialmainAxisnumbercrosCrossAxis
   
+  /* Inlined std.Partial<{  offset :@floating-ui/core.@floating-ui/core/src/middleware/shift.LimitShiftOffset | @floating-ui/core.@floating-ui/core/src/types.Derivable<@floating-ui/core.@floating-ui/core/src/middleware/shift.LimitShiftOffset>,   mainAxis :boolean,   crossAxis :boolean}> */
   trait LimitShiftOptions extends StObject {
     
-    /**
-      * Whether to limit the axis that runs along the side of the floating element.
-      */
-    var crossAxis: Boolean
+    var crossAxis: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Whether to limit the axis that runs along the alignment of the floating
-      * element.
-      */
-    var mainAxis: Boolean
+    var mainAxis: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Offset when limiting starts. `0` will limit when the opposite edges of the
-      * reference and floating elements are aligned.
-      * - positive = start limiting earlier
-      * - negative = start limiting later
-      */
-    var offset: LimitShiftOffset
+    var offset: js.UndefOr[LimitShiftOffset | Derivable[LimitShiftOffset]] = js.undefined
   }
   object LimitShiftOptions {
     
-    inline def apply(crossAxis: Boolean, mainAxis: Boolean, offset: LimitShiftOffset): LimitShiftOptions = {
-      val __obj = js.Dynamic.literal(crossAxis = crossAxis.asInstanceOf[js.Any], mainAxis = mainAxis.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+    inline def apply(): LimitShiftOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LimitShiftOptions]
     }
     
@@ -57,51 +51,80 @@ object srcMiddlewareShiftMod {
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       
+      inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
+      
       inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
       
-      inline def setOffset(value: LimitShiftOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setMainAxisUndefined: Self = StObject.set(x, "mainAxis", js.undefined)
       
-      inline def setOffsetFunction1(value: /* args */ MiddlewareState => Double | CrossAxis): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+      inline def setOffset(value: LimitShiftOffset | Derivable[LimitShiftOffset]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetFunction1(value: /* state */ MiddlewareState => LimitShiftOffset): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
-  trait Options extends StObject {
+  /* Inlined std.Partial<@floating-ui/core.@floating-ui/core/src/detectOverflow.Options & {  mainAxis :boolean,   crossAxis :boolean,   limiter :{fn (state : @floating-ui/core.@floating-ui/core/src/types.MiddlewareState): @floating-ui/core.@floating-ui/core/src/types.Coords,   options :any | undefined}}> */
+  trait ShiftOptions extends StObject {
     
-    /**
-      * The axis that runs along the side of the floating element. Determines
-      * whether overflow along this axis is checked to perform shifting.
-      * @default false
-      */
-    var crossAxis: Boolean
+    var altBoundary: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Accepts a function that limits the shifting done in order to prevent
-      * detachment.
-      */
-    var limiter: typings.floatingUiCore.anon.Options
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
-    /**
-      * The axis that runs along the alignment of the floating element. Determines
-      * whether overflow along this axis is checked to perform shifting.
-      * @default true
-      */
-    var mainAxis: Boolean
+    var crossAxis: js.UndefOr[Boolean] = js.undefined
+    
+    var elementContext: js.UndefOr[ElementContext] = js.undefined
+    
+    var limiter: js.UndefOr[Options] = js.undefined
+    
+    var mainAxis: js.UndefOr[Boolean] = js.undefined
+    
+    var padding: js.UndefOr[Padding] = js.undefined
+    
+    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
   }
-  object Options {
+  object ShiftOptions {
     
-    inline def apply(crossAxis: Boolean, limiter: typings.floatingUiCore.anon.Options, mainAxis: Boolean): Options = {
-      val __obj = js.Dynamic.literal(crossAxis = crossAxis.asInstanceOf[js.Any], limiter = limiter.asInstanceOf[js.Any], mainAxis = mainAxis.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+    inline def apply(): ShiftOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShiftOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ShiftOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
+      
+      inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      
+      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       
-      inline def setLimiter(value: typings.floatingUiCore.anon.Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+      inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
+      
+      inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
+      
+      inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
+      
+      inline def setLimiter(value: Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+      
+      inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
       
       inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
+      
+      inline def setMainAxisUndefined: Self = StObject.set(x, "mainAxis", js.undefined)
+      
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
     }
   }
 }

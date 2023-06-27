@@ -131,8 +131,8 @@ object sapMColumnMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.20.4
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.20.4
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Clears the last value of the column if mergeDuplicates property is true
       */
@@ -153,7 +153,7 @@ object sapMColumnMod {
     def destroyHeader(): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Gets current value of property {@link #getAutoPopinWidth autoPopinWidth}.
       *
@@ -171,7 +171,7 @@ object sapMColumnMod {
     def getAutoPopinWidth(): float = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns CSS alignment according to column hAlign setting or given parameter for Begin/End values checks
       * the locale settings
@@ -225,7 +225,7 @@ object sapMColumnMod {
     def getHeader(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * ID of the element which is the current target of the association {@link #getHeaderMenu headerMenu}, or
       * `null`.
@@ -233,7 +233,7 @@ object sapMColumnMod {
     def getHeaderMenu(): ID = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Gets current value of property {@link #getImportance importance}.
       *
@@ -250,14 +250,14 @@ object sapMColumnMod {
     def getImportance(): Priority | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Priority * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the rendering index of the column
       */
     def getIndex(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the initial order of the column
       *
@@ -266,15 +266,15 @@ object sapMColumnMod {
     def getInitialOrder(): int = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the last value of the column
       */
     def getLastValue(): Unit = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getMergeDuplicates mergeDuplicates}.
       *
@@ -294,7 +294,7 @@ object sapMColumnMod {
     def getMergeDuplicates(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getMergeFunctionName mergeFunctionName}.
       *
@@ -316,7 +316,7 @@ object sapMColumnMod {
       * Defines the minimum screen width to show or hide this column. By default column is always shown. The
       * responsive behavior of the `sap.m.Table` is determined by this property. As an example by setting `minScreenWidth`
       * property to "40em" (or "640px" or "Tablet") shows this column on tablet (and desktop) but hides on mobile.
-      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize}
+      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize }
       * enumeration (e.g: "Phone", "Tablet", "Desktop", "Small", "Medium", "Large", ....). Please also see `demandPopin`
       * property for further responsive design options. **Note:** This property gets overwritten if the `sap.m.Table`
       * control is configured with `autoPopinMode=true`. See {@link sap.m.Table#getAutoPopinMode}
@@ -326,7 +326,7 @@ object sapMColumnMod {
     def getMinScreenWidth(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the order of the column
       *
@@ -335,7 +335,7 @@ object sapMColumnMod {
     def getOrder(): int = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Gets current value of property {@link #getPopinDisplay popinDisplay}.
       *
@@ -364,7 +364,7 @@ object sapMColumnMod {
     def getPopinHAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets current value of property {@link #getSortIndicator sortIndicator}.
       *
@@ -427,29 +427,29 @@ object sapMColumnMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether the column will be hidden via media queries or not
       */
     def isHidden(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether the column will be shown as pop-in or not
       */
     def isPopin(): Unit = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets called from the Table when the all items are removed
       */
     def onItemsRemoved(): Unit = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Sets a new value for property {@link #getAutoPopinWidth autoPopinWidth}.
       *
@@ -492,7 +492,7 @@ object sapMColumnMod {
     bDemandPopin: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Display or hide the column from given table This does not set the visibility property of the column
       */
@@ -564,7 +564,7 @@ object sapMColumnMod {
     oHeaderMenu: IColumnHeaderMenu
     ): this.type = js.native
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Sets the associated {@link #getHeaderMenu headerMenu}.
       *
@@ -579,7 +579,7 @@ object sapMColumnMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Sets a new value for property {@link #getImportance importance}.
       *
@@ -608,7 +608,7 @@ object sapMColumnMod {
     sImportance: Priority): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the visible column index Negative index values can be used to clear
       */
@@ -618,7 +618,7 @@ object sapMColumnMod {
     nIndex: int): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the initial order of the column
       */
@@ -628,8 +628,8 @@ object sapMColumnMod {
     nOrder: int): Unit = js.native
     
     /**
-      * @SINCE 1.16
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the last value of the column if mergeDuplicates property is true
       */
@@ -639,7 +639,7 @@ object sapMColumnMod {
     value: Any): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getMergeDuplicates mergeDuplicates}.
       *
@@ -665,7 +665,7 @@ object sapMColumnMod {
     bMergeDuplicates: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getMergeFunctionName mergeFunctionName}.
       *
@@ -693,7 +693,7 @@ object sapMColumnMod {
       * Defines the minimum screen width to show or hide this column. By default column is always shown. The
       * responsive behavior of the `sap.m.Table` is determined by this property. As an example by setting `minScreenWidth`
       * property to "40em" (or "640px" or "Tablet") shows this column on tablet (and desktop) but hides on mobile.
-      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize}
+      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize }
       * enumeration (e.g: "Phone", "Tablet", "Desktop", "Small", "Medium", "Large", ....). Please also see `demandPopin`
       * property for further responsive design options. **Note:** This property gets overwritten if the `sap.m.Table`
       * control is configured with `autoPopinMode=true`. See {@link sap.m.Table#getAutoPopinMode}
@@ -709,7 +709,7 @@ object sapMColumnMod {
     sMinScreenWidth: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the order of the column Does not do the visual effect Table should be invalidate to re-render
       */
@@ -719,7 +719,7 @@ object sapMColumnMod {
     nOrder: int): Unit = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Sets a new value for property {@link #getPopinDisplay popinDisplay}.
       *
@@ -772,7 +772,7 @@ object sapMColumnMod {
     sPopinHAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets a new value for property {@link #getSortIndicator sortIndicator}.
       *
@@ -882,7 +882,7 @@ object sapMColumnMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Defines the auto pop-in width for the column.
       *
@@ -924,7 +924,7 @@ object sapMColumnMod {
     var header: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Provides a menu that is used by the column. The given menu has to follow the same pattern as the `sap.ui.core.IColumnHeaderMenu`
       * interface.
@@ -932,7 +932,7 @@ object sapMColumnMod {
     var headerMenu: js.UndefOr[IColumnHeaderMenu | String] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Defines the column importance.
       *
@@ -945,7 +945,7 @@ object sapMColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Set `true` to merge repeating/duplicate cells into one cell block. See `mergeFunctionName` property to
       * customize.
@@ -961,7 +961,7 @@ object sapMColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Defines the control serialization function if `mergeDuplicates` property is set to `true`. The control
       * itself uses this function to compare values of two repeating cells. Default value "getText" is suitable
@@ -975,7 +975,7 @@ object sapMColumnMod {
       * Defines the minimum screen width to show or hide this column. By default column is always shown. The
       * responsive behavior of the `sap.m.Table` is determined by this property. As an example by setting `minScreenWidth`
       * property to "40em" (or "640px" or "Tablet") shows this column on tablet (and desktop) but hides on mobile.
-      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize}
+      * As you can give specific CSS sizes (e.g: "480px" or "40em"), you can also use the {@link sap.m.ScreenSize }
       * enumeration (e.g: "Phone", "Tablet", "Desktop", "Small", "Medium", "Large", ....). Please also see `demandPopin`
       * property for further responsive design options. **Note:** This property gets overwritten if the `sap.m.Table`
       * control is configured with `autoPopinMode=true`. See {@link sap.m.Table#getAutoPopinMode}
@@ -983,7 +983,7 @@ object sapMColumnMod {
     var minScreenWidth: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Defines enumerated display options for the pop-in.
       */
@@ -1004,7 +1004,7 @@ object sapMColumnMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Defines if a column is sorted by setting the sort indicator for this column.
       *

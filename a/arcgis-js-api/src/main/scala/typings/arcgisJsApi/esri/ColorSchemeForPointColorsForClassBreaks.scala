@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorSchemeForPointColorsForClassBreaks extends StObject {
   
   /**
-    * An array of hex color strings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
-    */
+  		 * An array of hex color strings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The number of classes used in the classed color visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
-    */
+  		 * The number of classes used in the classed color visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPoint)
+  		 */
   var numClasses: Double
 }
 object ColorSchemeForPointColorsForClassBreaks {

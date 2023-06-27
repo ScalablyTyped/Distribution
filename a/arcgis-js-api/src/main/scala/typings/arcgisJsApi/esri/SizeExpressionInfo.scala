@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SizeExpressionInfo extends StObject {
   
   /**
-    * The SQL expressions used for querying the histogram for the sum of a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
-    */
+  		 * The SQL expressions used for querying the histogram for the sum of a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
+  		 */
   var histogramQuery: SQLExpressionInfo
   
   /**
-    * The SQL expressions used for querying the sum of a set of fields.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
-    */
+  		 * The SQL expressions used for querying the sum of a set of fields.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
+  		 */
   var statisticsQuery: SQLExpressionInfo
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-predominanceUtils.html#SizeExpressionInfo)
+  		 */
   var valueExpression: String
 }
 object SizeExpressionInfo {

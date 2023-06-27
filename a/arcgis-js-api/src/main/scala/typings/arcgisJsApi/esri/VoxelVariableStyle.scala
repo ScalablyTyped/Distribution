@@ -9,38 +9,38 @@ trait VoxelVariableStyle
      with JSONSupport {
   
   /**
-    * The collection of continuous variable isosurfaces.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#isosurfaces)
-    */
+  		 * The collection of continuous variable isosurfaces.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#isosurfaces)
+  		 */
   var isosurfaces: Collection[VoxelIsosurface]
   
   /**
-    * The variable label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#label)
-    */
+  		 * The variable label.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#label)
+  		 */
   var label: String
   
   /**
-    * The transferFunction describes how to render continuous variable volumes and sections.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#transferFunction)
-    */
+  		 * The transferFunction describes how to render continuous variable volumes and sections.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#transferFunction)
+  		 */
   var transferFunction: VoxelTransferFunctionStyle
   
   /**
-    * The collection of unique values describes how to render discrete variable volumes and sections.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#uniqueValues)
-    */
+  		 * The collection of unique values describes how to render discrete variable volumes and sections.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#uniqueValues)
+  		 */
   var uniqueValues: Collection[VoxelUniqueValue]
   
   /**
-    * Id of the [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html) that the style applies to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#variableId)
-    */
+  		 * Id of the [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html) that the style applies to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#variableId)
+  		 */
   var variableId: Double
 }
 object VoxelVariableStyle {

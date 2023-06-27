@@ -6,28 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `264` extends StObject {
   
-  /** @description The new Git author email. */
-  var email: js.UndefOr[String] = js.undefined
+  var path: Owner
   
-  /** @description The new Git author name. */
-  var name: js.UndefOr[String] = js.undefined
+  var query: js.UndefOr[Anon] = js.undefined
 }
 object `264` {
   
-  inline def apply(): `264` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(path: Owner): `264` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`264`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `264`] (val x: Self) extends AnyVal {
     
-    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setQuery(value: Anon): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ open class Engine () extends StObject {
     * Replaced by and now alias for `engine.grid`.
     *
     * @deprecated use `engine.grid`
-    * @property broadphase
-    * @type grid
     * @default a Matter.Grid instance
     */
   var broadphase: Grid = js.native
@@ -23,8 +21,6 @@ open class Engine () extends StObject {
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     * The default value of `2` is usually very adequate.
     *
-    * @property constraintIterations
-    * @type {number}
     * @default 2
     */
   var constraintIterations: Double = js.native
@@ -32,8 +28,6 @@ open class Engine () extends StObject {
   /**
     * A `Matter.Detector` instance.
     *
-    * @property detector
-    * @type {Detector}
     * @default {Matter.Detector} instance
     */
   var detector: Detector = js.native
@@ -42,8 +36,6 @@ open class Engine () extends StObject {
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
     *
-    * @property enableSleeping
-    * @type {boolean}
     * @default false
     */
   var enableSleeping: Boolean = js.native
@@ -56,8 +48,6 @@ open class Engine () extends StObject {
   /**
     * The gravity to apply on all bodies in `engine.world`.
     *
-    * @property gravity
-    * @type {Gravity}
     */
   var gravity: Gravity = js.native
   
@@ -65,8 +55,6 @@ open class Engine () extends StObject {
     * A `Matter.Grid` instance.
     *
     * @deprecated replaced by `engine.detector`
-    * @property grid
-    * @type grid
     * @default a Matter.Grid instance
     */
   var grid: Grid = js.native
@@ -80,8 +68,6 @@ open class Engine () extends StObject {
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
-    * @property positionIterations
-    * @type {number}
     * @default 6
     */
   var positionIterations: Double = js.native
@@ -93,8 +79,6 @@ open class Engine () extends StObject {
     * A minimal custom renderer object must define at least three functions: `create`, `clear` and `world` (see `Matter.Render`).
     * It is also possible to instead pass the _module_ reference via `options.render.controller` and `Engine.create` will instantiate one for you.
     *
-    * @property render
-    * @type render
     * @default a Matter.Render instance
     */
   var render: Render = js.native
@@ -102,8 +86,6 @@ open class Engine () extends StObject {
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
     *
-    * @property timing
-    * @type {IEngineTimingOptions}
     */
   var timing: IEngineTimingOptions = js.native
   
@@ -111,8 +93,6 @@ open class Engine () extends StObject {
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
-    * @property velocityIterations
-    * @type {number}
     * @default 4
     */
   var velocityIterations: Double = js.native
@@ -120,8 +100,6 @@ open class Engine () extends StObject {
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
     *
-    * @property world
-    * @type world
     * @default a Matter.World instance
     */
   var world: World = js.native

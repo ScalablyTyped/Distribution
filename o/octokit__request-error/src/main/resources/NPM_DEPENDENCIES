@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/request-error" : "3.0.3"
+      "@octokit/request-error" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/request-error" : "3.0.3"
+      "@octokit/request-error" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

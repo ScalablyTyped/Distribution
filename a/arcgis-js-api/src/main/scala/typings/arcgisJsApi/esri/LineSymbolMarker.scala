@@ -20,34 +20,34 @@ trait LineSymbolMarker
      with Accessor {
   
   /**
-    * The color of the marker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#color)
-    */
+  		 * The color of the marker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#color)
+  		 */
   var color: Color_ = js.native
   
   /**
-    * The placement of the marker(s) on the line.
-    *
-    * @default "begin-end"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#placement)
-    */
+  		 * The placement of the marker(s) on the line.
+  		 *
+  		 * @default "begin-end"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#placement)
+  		 */
   var placement: begin | end | `begin-end` = js.native
   
   /**
-    * The marker style.
-    *
-    * @default "arrow"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#style)
-    */
+  		 * The marker style.
+  		 *
+  		 * @default "arrow"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#style)
+  		 */
   var style: arrow | circle | square_ | diamond | cross | x = js.native
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbolMarker.html#type)
+  		 */
   val `type`: `line-marker` = js.native
 }

@@ -4,26 +4,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed) */
 trait OESDrawBuffersIndexed extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendEquationSeparateiOES) */
   /* standard dom */
   def blendEquationSeparateiOES(buf: GLuint, modeRGB: GLenum, modeAlpha: GLenum): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendEquationiOES) */
   /* standard dom */
   def blendEquationiOES(buf: GLuint, mode: GLenum): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendFuncSeparateiOES) */
   /* standard dom */
   def blendFuncSeparateiOES(buf: GLuint, srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/blendFunciOES) */
   /* standard dom */
   def blendFunciOES(buf: GLuint, src: GLenum, dst: GLenum): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/colorMaskiOES) */
   /* standard dom */
   def colorMaskiOES(buf: GLuint, r: GLboolean, g: GLboolean, b: GLboolean, a: GLboolean): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/disableiOES) */
   /* standard dom */
   def disableiOES(target: GLenum, index: GLuint): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OES_draw_buffers_indexed/enableiOES) */
   /* standard dom */
   def enableiOES(target: GLenum, index: GLuint): Unit
 }

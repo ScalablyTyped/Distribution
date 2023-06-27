@@ -81,8 +81,8 @@ object global {
          with typings.appletvjs.AppleTVJS.MediaItem {
       /**
         * Creates a new MediaItem object from the information stored in the URL location.
-        * @type: Valid values are: audio, video. Defaults to video.
-        * @url: The URL pointing to the media item information.
+        * @param type Valid values are: audio, video. Defaults to video.
+        * @param url The URL pointing to the media item information.
         * */
       def this(`type`: String) = this()
       def this(`type`: String, url: String) = this()

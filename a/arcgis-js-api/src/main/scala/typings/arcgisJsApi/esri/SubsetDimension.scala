@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubsetDimension extends StObject {
   
   /**
-    * The computed extent or ranges for the given dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#SubsetDimension)
-    */
+  		 * The computed extent or ranges for the given dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#SubsetDimension)
+  		 */
   var extent: js.Array[Double]
   
   /**
-    * The dimension name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#SubsetDimension)
-    */
+  		 * The dimension name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MultidimensionalSubset.html#SubsetDimension)
+  		 */
   var name: String
 }
 object SubsetDimension {

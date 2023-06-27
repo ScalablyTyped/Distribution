@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-relative-color-syntax" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-relative-color-syntax" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

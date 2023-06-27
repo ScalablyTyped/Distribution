@@ -13,28 +13,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrimExtendParametersProperties extends StObject {
   
   /**
-    * A flag used with the `trimExtend` operation.
-    *
-    * @default "default-curve-extension"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#extendHow)
-    */
+  		 * A flag used with the `trimExtend` operation.
+  		 *
+  		 * @default "default-curve-extension"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#extendHow)
+  		 */
   var extendHow: js.UndefOr[
     `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
   ] = js.undefined
   
   /**
-    * The array of polylines to trim or extend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#polylines)
-    */
+  		 * The array of polylines to trim or extend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#polylines)
+  		 */
   var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
   
   /**
-    * A polyline used as a guide for trimming or extending input polylines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#trimExtendTo)
-    */
+  		 * A polyline used as a guide for trimming or extending input polylines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TrimExtendParameters.html#trimExtendTo)
+  		 */
   var trimExtendTo: js.UndefOr[PolylineProperties] = js.undefined
 }
 object TrimExtendParametersProperties {

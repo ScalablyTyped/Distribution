@@ -31,10 +31,10 @@ trait SystemInfo_ extends StObject {
     *
     * @returns An identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value (e.g. the invalid value for _options_).
-    * @throw WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value (e.g. the invalid value for _options_).
+    * @throws WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def addPropertyValueArrayChangeListener(property: SystemInfoPropertyId, successCallback: SystemInfoPropertyArraySuccessCallback): Double = js.native
   def addPropertyValueArrayChangeListener(
@@ -94,10 +94,10 @@ trait SystemInfo_ extends StObject {
     *
     * @returns An identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value (e.g. the invalid value for _options_).
-    * @throw WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value (e.g. the invalid value for _options_).
+    * @throws WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def addPropertyValueChangeListener(property: SystemInfoPropertyId, successCallback: SystemInfoPropertySuccessCallback): Double = js.native
   def addPropertyValueChangeListener(
@@ -131,7 +131,7 @@ trait SystemInfo_ extends StObject {
     *
     * @returns Not used memory in bytes.
     *
-    * @throw WebAPIException with error type UnknownError in any error case.
+    * @throws WebAPIException with error type UnknownError in any error case.
     */
   def getAvailableMemory(): Double = js.native
   
@@ -146,7 +146,7 @@ trait SystemInfo_ extends StObject {
     *
     * @returns Capabilities of the device.
     *
-    * @throw WebAPIException with error type UnknownError in any error case.
+    * @throws WebAPIException with error type UnknownError in any error case.
     */
   def getCapabilities(): SystemInfoDeviceCapability = js.native
   
@@ -162,7 +162,7 @@ trait SystemInfo_ extends StObject {
     *
     * @returns The value of the specified device capability.
     *
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def getCapability(key: String): Any = js.native
   
@@ -177,7 +177,7 @@ trait SystemInfo_ extends StObject {
     *
     * @returns The number of property values for the given property. If the property is not supported, 0 is returned.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
     */
   def getCount(property: SystemInfoPropertyId): Double = js.native
   
@@ -200,9 +200,9 @@ trait SystemInfo_ extends StObject {
     * @param successCallback Callback function called when the properties are successfully retrieved.
     * @param errorCallback Callback function called when an error occurs while retrieving the properties.
     *
-    * @throw WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def getPropertyValue(property: SystemInfoPropertyId, successCallback: SystemInfoPropertySuccessCallback): Unit = js.native
   def getPropertyValue(
@@ -233,8 +233,8 @@ trait SystemInfo_ extends StObject {
     * @param successCallback Callback function called when the properties are successfully retrieved.
     * @param errorCallback Callback function called when an error occurs while retrieving the properties.
     *
-    * @throw WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type SecurityError, this error is only thrown for CELLULAR\_NETWORK property when an application does not declare _http://tizen.org/privilege/telephony_ privilege in _config.xml_.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
     */
   def getPropertyValueArray(property: SystemInfoPropertyId, successCallback: SystemInfoPropertyArraySuccessCallback): Unit = js.native
   def getPropertyValueArray(
@@ -250,7 +250,7 @@ trait SystemInfo_ extends StObject {
     *
     * @returns Total system memory.
     *
-    * @throw WebAPIException with error type UnknownError in any error case.
+    * @throws WebAPIException with error type UnknownError in any error case.
     */
   def getTotalMemory(): Double = js.native
   
@@ -264,9 +264,9 @@ trait SystemInfo_ extends StObject {
     * @param listenerId An identifier of the subscription returned by the [addPropertyValueChangeListener()](#SystemInfo::addPropertyValueChangeListener) or
     * [addPropertyValueArrayChangeListener()](#SystemInfo::addPropertyValueArrayChangeListener) method.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def removePropertyValueChangeListener(listenerId: Double): Unit = js.native
 }

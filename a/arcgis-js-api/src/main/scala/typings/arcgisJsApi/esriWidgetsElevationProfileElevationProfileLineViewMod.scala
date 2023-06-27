@@ -11,10 +11,10 @@ object esriWidgetsElevationProfileElevationProfileLineViewMod {
   @JSImport("esri/widgets/ElevationProfile/ElevationProfileLineView", JSImport.Namespace)
   @js.native
   /**
-    * Profile line which samples elevation directly from the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html)
-    */
+  		 * Profile line which samples elevation directly from the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html)
+  		 */
   open class ^ ()
     extends StObject
        with ElevationProfileLineView {

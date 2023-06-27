@@ -93,32 +93,6 @@ object anon {
     }
   }
   
-  trait ExtraDurationMillis extends StObject {
-    
-    var extraDurationMillis: Double | Null
-    
-    var id: String | Null
-  }
-  object ExtraDurationMillis {
-    
-    inline def apply(): ExtraDurationMillis = {
-      val __obj = js.Dynamic.literal(extraDurationMillis = null, id = null)
-      __obj.asInstanceOf[ExtraDurationMillis]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ExtraDurationMillis] (val x: Self) extends AnyVal {
-      
-      inline def setExtraDurationMillis(value: Double): Self = StObject.set(x, "extraDurationMillis", value.asInstanceOf[js.Any])
-      
-      inline def setExtraDurationMillisNull: Self = StObject.set(x, "extraDurationMillis", null)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdNull: Self = StObject.set(x, "id", null)
-    }
-  }
-  
   trait IsHighlighted extends StObject {
     
     var isHighlighted: Boolean

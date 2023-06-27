@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@parcel/package-manager" : "2.8.3"
+      "@parcel/package-manager" : "2.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@parcel/package-manager" : "2.8.3"
+      "@parcel/package-manager" : "2.9.2"
     }
   ],
   "compile-devDependencies" : [

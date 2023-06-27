@@ -369,7 +369,7 @@ trait SearchOptions extends StObject {
   val snippetEllipsisText: js.UndefOr[String] = js.undefined
   
   /**
-    * Restricts a given query to look in only a subset of your searchable attributes.
+    * Controls how facet values are sorted.
     */
   val sortFacetValuesBy: js.UndefOr[count | alpha] = js.undefined
   

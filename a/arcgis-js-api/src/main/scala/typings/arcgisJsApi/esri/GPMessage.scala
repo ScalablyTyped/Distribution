@@ -19,16 +19,16 @@ trait GPMessage
      with JSONSupport {
   
   /**
-    * The geoprocessing message.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#description)
-    */
+  		 * The geoprocessing message.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#description)
+  		 */
   var description: String = js.native
   
   /**
-    * The geoprocessing message type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#type)
-    */
+  		 * The geoprocessing message type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#type)
+  		 */
   var `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = js.native
 }

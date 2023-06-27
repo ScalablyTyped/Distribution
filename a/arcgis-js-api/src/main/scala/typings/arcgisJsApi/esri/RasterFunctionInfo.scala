@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterFunctionInfo extends StObject {
   
   /**
-    * Description of the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
-    */
+  		 * Description of the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
+  		 */
   var description: String
   
   /**
-    * The function type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
-    */
+  		 * The function type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
+  		 */
   var functionType: Double
   
   /**
-    * Additional info describing what the raster function does.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
-    */
+  		 * Additional info describing what the raster function does.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
+  		 */
   var help: String
   
   /**
-    * Name of the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
-    */
+  		 * Name of the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
+  		 */
   var name: String
   
   /**
-    * Inline base64 encoded thumbnail of the raster function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
-    */
+  		 * Inline base64 encoded thumbnail of the raster function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterFunctionInfo)
+  		 */
   var thumbnail: String
 }
 object RasterFunctionInfo {

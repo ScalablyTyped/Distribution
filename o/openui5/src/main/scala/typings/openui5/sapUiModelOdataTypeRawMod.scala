@@ -112,7 +112,7 @@ object sapUiModelOdataTypeRawMod {
     extends typings.openui5.sapUiModelOdataTypeOdatatypeMod.default {
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       * See:
@@ -121,7 +121,7 @@ object sapUiModelOdataTypeRawMod {
     def parseValue(): Unit = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Method not supported
       * See:

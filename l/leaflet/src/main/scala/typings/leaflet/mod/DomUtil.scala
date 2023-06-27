@@ -84,6 +84,7 @@ import typings.leaflet.leafletStrings.ruby
 import typings.leaflet.leafletStrings.s
 import typings.leaflet.leafletStrings.samp
 import typings.leaflet.leafletStrings.script
+import typings.leaflet.leafletStrings.search
 import typings.leaflet.leafletStrings.section
 import typings.leaflet.leafletStrings.select
 import typings.leaflet.leafletStrings.slot
@@ -626,6 +627,11 @@ object DomUtil {
   inline def create_script(tagName: script, className: String): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
   inline def create_script(tagName: script, className: String, container: HTMLElement): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
   inline def create_script(tagName: script, className: Unit, container: HTMLElement): HTMLScriptElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLScriptElement]
+  
+  inline def create_search(tagName: search): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def create_search(tagName: search, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def create_search(tagName: search, className: String, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def create_search(tagName: search, className: Unit, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   inline def create_section(tagName: section): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   inline def create_section(tagName: section, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]

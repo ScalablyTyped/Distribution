@@ -23,18 +23,18 @@ import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAccessKey
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriaactivedescendant
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriaatomic
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriaautocomplete
+import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriabraillelabel
+import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriabrailleroledescription
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriabusy
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriachecked
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacolcount
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacolindex
+import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacolindextext
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacolspan
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacontrols
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriacurrent
 import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriadescribedby
-import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriadetails
-import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriadisabled
-import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriadropeffect
-import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriaerrormessage
+import typings.emotionReact.anon.DetailedHTMLPropsHTMLAttrAriadescription
 import typings.emotionReact.anon.DetailedHTMLPropsHtmlHTML
 import typings.emotionReact.anon.DetailedHTMLPropsIframeHT
 import typings.emotionReact.anon.DetailedHTMLPropsImgHTMLA
@@ -215,17 +215,17 @@ object mod {
     inline def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def apply[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.emotionReact.emotionReactStrings.a_, typings.emotionReact.emotionReactStrings.abbr, typings.emotionReact.emotionReactStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -243,6 +243,8 @@ object mod {
       type ElementChildrenAttribute = typings.emotionReact.typesJsxNamespaceMod.EmotionJSX.ElementChildrenAttribute
       
       type ElementClass = typings.emotionReact.typesJsxNamespaceMod.EmotionJSX.ElementClass
+      
+      type ElementType = typings.emotionReact.typesJsxNamespaceMod.EmotionJSX.ElementType
       
       type IntrinsicAttributes = typings.emotionReact.typesJsxNamespaceMod.EmotionJSX.IntrinsicAttributes
       
@@ -283,9 +285,9 @@ object mod {
         
         var blockquote: DetailedHTMLPropsBlockquo
         
-        var body: DetailedHTMLPropsHTMLAttrAriacolspan
+        var body: DetailedHTMLPropsHTMLAttrAriacolcount
         
-        var br: DetailedHTMLPropsHTMLAttrAriadisabled
+        var br: DetailedHTMLPropsHTMLAttrAriacurrent
         
         var button: DetailedHTMLPropsButtonHT
         
@@ -309,7 +311,7 @@ object mod {
         
         var data: DetailedHTMLPropsDataHTML
         
-        var datalist: DetailedHTMLPropsHTMLAttrAriacolindex
+        var datalist: DetailedHTMLPropsHTMLAttrAriachecked
         
         var dd: DetailedHTMLPropsHTMLAttrAbout
         
@@ -327,7 +329,7 @@ object mod {
         
         var div: DetailedHTMLPropsHTMLAttrAriaatomic
         
-        var dl: DetailedHTMLPropsHTMLAttrAriadescribedby
+        var dl: DetailedHTMLPropsHTMLAttrAriacolspan
         
         var dt: DetailedHTMLPropsHTMLAttrAbout
         
@@ -403,25 +405,25 @@ object mod {
         
         var g: SVGPropsSVGGElementcssInt
         
-        var h1: DetailedHTMLPropsHTMLAttrAriachecked
+        var h1: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var h2: DetailedHTMLPropsHTMLAttrAriachecked
+        var h2: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var h3: DetailedHTMLPropsHTMLAttrAriachecked
+        var h3: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var h4: DetailedHTMLPropsHTMLAttrAriachecked
+        var h4: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var h5: DetailedHTMLPropsHTMLAttrAriachecked
+        var h5: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var h6: DetailedHTMLPropsHTMLAttrAriachecked
+        var h6: DetailedHTMLPropsHTMLAttrAriabrailleroledescription
         
-        var head: DetailedHTMLPropsHTMLAttrAriacolcount
+        var head: DetailedHTMLPropsHTMLAttrAriabusy
         
         var header: DetailedHTMLPropsHTMLAttrAbout
         
         var hgroup: DetailedHTMLPropsHTMLAttrAbout
         
-        var hr: DetailedHTMLPropsHTMLAttrAriadetails
+        var hr: DetailedHTMLPropsHTMLAttrAriacontrols
         
         var html: DetailedHTMLPropsHtmlHTML
         
@@ -443,7 +445,7 @@ object mod {
         
         var label: DetailedHTMLPropsLabelHTM
         
-        var legend: DetailedHTMLPropsHTMLAttrAriabusy
+        var legend: DetailedHTMLPropsHTMLAttrAriabraillelabel
         
         var li: DetailedHTMLPropsLiHTMLAt
         
@@ -491,7 +493,7 @@ object mod {
         
         var output: DetailedHTMLPropsOutputHT
         
-        var p: DetailedHTMLPropsHTMLAttrAriaerrormessage
+        var p: DetailedHTMLPropsHTMLAttrAriadescription
         
         var param: DetailedHTMLPropsParamHTM
         
@@ -527,6 +529,8 @@ object mod {
         
         var script: DetailedHTMLPropsScriptHT
         
+        var search: DetailedHTMLPropsHTMLAttrAbout
+        
         var section: DetailedHTMLPropsHTMLAttrAbout
         
         var select: DetailedHTMLPropsSelectHT
@@ -537,7 +541,7 @@ object mod {
         
         var source: DetailedHTMLPropsSourceHT
         
-        var span: DetailedHTMLPropsHTMLAttrAriacurrent
+        var span: DetailedHTMLPropsHTMLAttrAriacolindextext
         
         var stop: SVGPropsSVGStopElementcss
         
@@ -563,7 +567,7 @@ object mod {
         
         var td: DetailedHTMLPropsTdHTMLAt
         
-        var template: DetailedHTMLPropsHTMLAttrAriacontrols
+        var template: DetailedHTMLPropsHTMLAttrAriacolindex
         
         var text: SVGTextElementAttributesS
         
@@ -589,7 +593,7 @@ object mod {
         
         var u: DetailedHTMLPropsHTMLAttrAbout
         
-        var ul: DetailedHTMLPropsHTMLAttrAriadropeffect
+        var ul: DetailedHTMLPropsHTMLAttrAriadescribedby
         
         var use: SVGPropsSVGUseElementcssI
         
@@ -622,8 +626,8 @@ object mod {
           bdo: DetailedHTMLPropsHTMLAttrAbout,
           big: DetailedHTMLPropsHTMLAttrAbout,
           blockquote: DetailedHTMLPropsBlockquo,
-          body: DetailedHTMLPropsHTMLAttrAriacolspan,
-          br: DetailedHTMLPropsHTMLAttrAriadisabled,
+          body: DetailedHTMLPropsHTMLAttrAriacolcount,
+          br: DetailedHTMLPropsHTMLAttrAriacurrent,
           button: DetailedHTMLPropsButtonHT,
           canvas: DetailedHTMLPropsCanvasHT,
           caption: DetailedHTMLPropsHTMLAttrAbout,
@@ -635,7 +639,7 @@ object mod {
           col: DetailedHTMLPropsColHTMLA,
           colgroup: DetailedHTMLPropsColgroup,
           data: DetailedHTMLPropsDataHTML,
-          datalist: DetailedHTMLPropsHTMLAttrAriacolindex,
+          datalist: DetailedHTMLPropsHTMLAttrAriachecked,
           dd: DetailedHTMLPropsHTMLAttrAbout,
           defs: SVGPropsSVGDefsElementcss,
           del: DetailedHTMLPropsDelHTMLA,
@@ -644,7 +648,7 @@ object mod {
           dfn: DetailedHTMLPropsHTMLAttrAbout,
           dialog: DetailedHTMLPropsDialogHT,
           div: DetailedHTMLPropsHTMLAttrAriaatomic,
-          dl: DetailedHTMLPropsHTMLAttrAriadescribedby,
+          dl: DetailedHTMLPropsHTMLAttrAriacolspan,
           dt: DetailedHTMLPropsHTMLAttrAbout,
           ellipse: SVGPropsSVGEllipseElement,
           em: DetailedHTMLPropsHTMLAttrAbout,
@@ -682,16 +686,16 @@ object mod {
           foreignObject: SVGPropsSVGForeignObjectE,
           form: DetailedHTMLPropsFormHTML,
           g: SVGPropsSVGGElementcssInt,
-          h1: DetailedHTMLPropsHTMLAttrAriachecked,
-          h2: DetailedHTMLPropsHTMLAttrAriachecked,
-          h3: DetailedHTMLPropsHTMLAttrAriachecked,
-          h4: DetailedHTMLPropsHTMLAttrAriachecked,
-          h5: DetailedHTMLPropsHTMLAttrAriachecked,
-          h6: DetailedHTMLPropsHTMLAttrAriachecked,
-          head: DetailedHTMLPropsHTMLAttrAriacolcount,
+          h1: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          h2: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          h3: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          h4: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          h5: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          h6: DetailedHTMLPropsHTMLAttrAriabrailleroledescription,
+          head: DetailedHTMLPropsHTMLAttrAriabusy,
           header: DetailedHTMLPropsHTMLAttrAbout,
           hgroup: DetailedHTMLPropsHTMLAttrAbout,
-          hr: DetailedHTMLPropsHTMLAttrAriadetails,
+          hr: DetailedHTMLPropsHTMLAttrAriacontrols,
           html: DetailedHTMLPropsHtmlHTML,
           i: DetailedHTMLPropsHTMLAttrAbout,
           iframe: DetailedHTMLPropsIframeHT,
@@ -702,7 +706,7 @@ object mod {
           kbd: DetailedHTMLPropsHTMLAttrAbout,
           keygen: DetailedHTMLPropsKeygenHT,
           label: DetailedHTMLPropsLabelHTM,
-          legend: DetailedHTMLPropsHTMLAttrAriabusy,
+          legend: DetailedHTMLPropsHTMLAttrAriabraillelabel,
           li: DetailedHTMLPropsLiHTMLAt,
           line: SVGLineElementAttributesS,
           linearGradient: SVGPropsSVGLinearGradient,
@@ -726,7 +730,7 @@ object mod {
           optgroup: DetailedHTMLPropsOptgroup,
           option: DetailedHTMLPropsOptionHT,
           output: DetailedHTMLPropsOutputHT,
-          p: DetailedHTMLPropsHTMLAttrAriaerrormessage,
+          p: DetailedHTMLPropsHTMLAttrAriadescription,
           param: DetailedHTMLPropsParamHTM,
           path: SVGPropsSVGPathElementcss,
           pattern: SVGPropsSVGPatternElement,
@@ -744,12 +748,13 @@ object mod {
           s: DetailedHTMLPropsHTMLAttrAbout,
           samp: DetailedHTMLPropsHTMLAttrAbout,
           script: DetailedHTMLPropsScriptHT,
+          search: DetailedHTMLPropsHTMLAttrAbout,
           section: DetailedHTMLPropsHTMLAttrAbout,
           select: DetailedHTMLPropsSelectHT,
           slot: DetailedHTMLPropsSlotHTML,
           small: DetailedHTMLPropsHTMLAttrAbout,
           source: DetailedHTMLPropsSourceHT,
-          span: DetailedHTMLPropsHTMLAttrAriacurrent,
+          span: DetailedHTMLPropsHTMLAttrAriacolindextext,
           stop: SVGPropsSVGStopElementcss,
           strong: DetailedHTMLPropsHTMLAttrAbout,
           style: DetailedHTMLPropsStyleHTM,
@@ -762,7 +767,7 @@ object mod {
           table: DetailedHTMLPropsTableHTM,
           tbody: DetailedHTMLPropsHTMLAttr,
           td: DetailedHTMLPropsTdHTMLAt,
-          template: DetailedHTMLPropsHTMLAttrAriacontrols,
+          template: DetailedHTMLPropsHTMLAttrAriacolindex,
           text: SVGTextElementAttributesS,
           textPath: SVGPropsSVGTextPathElemen,
           textarea: DetailedHTMLPropsTextarea,
@@ -775,7 +780,7 @@ object mod {
           track: DetailedHTMLPropsTrackHTM,
           tspan: SVGPropsSVGTSpanElementcs,
           u: DetailedHTMLPropsHTMLAttrAbout,
-          ul: DetailedHTMLPropsHTMLAttrAriadropeffect,
+          ul: DetailedHTMLPropsHTMLAttrAriadescribedby,
           use: SVGPropsSVGUseElementcssI,
           `var`: DetailedHTMLPropsHTMLAttrAbout,
           video: DetailedHTMLPropsVideoHTM,
@@ -783,7 +788,7 @@ object mod {
           wbr: DetailedHTMLPropsHTMLAttrAbout,
           webview: DetailedHTMLPropsWebViewH
         ): IntrinsicElements = {
-          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any], webview = webview.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any], webview = webview.asInstanceOf[js.Any])
           __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
           __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
@@ -824,9 +829,9 @@ object mod {
           
           inline def setBlockquote(value: DetailedHTMLPropsBlockquo): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
           
-          inline def setBody(value: DetailedHTMLPropsHTMLAttrAriacolspan): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+          inline def setBody(value: DetailedHTMLPropsHTMLAttrAriacolcount): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
           
-          inline def setBr(value: DetailedHTMLPropsHTMLAttrAriadisabled): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+          inline def setBr(value: DetailedHTMLPropsHTMLAttrAriacurrent): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
           
           inline def setButton(value: DetailedHTMLPropsButtonHT): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
           
@@ -850,7 +855,7 @@ object mod {
           
           inline def setData(value: DetailedHTMLPropsDataHTML): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          inline def setDatalist(value: DetailedHTMLPropsHTMLAttrAriacolindex): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
+          inline def setDatalist(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
           
           inline def setDd(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
           
@@ -868,7 +873,7 @@ object mod {
           
           inline def setDiv(value: DetailedHTMLPropsHTMLAttrAriaatomic): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
           
-          inline def setDl(value: DetailedHTMLPropsHTMLAttrAriadescribedby): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
+          inline def setDl(value: DetailedHTMLPropsHTMLAttrAriacolspan): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
           
           inline def setDt(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
           
@@ -944,25 +949,25 @@ object mod {
           
           inline def setG(value: SVGPropsSVGGElementcssInt): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
           
-          inline def setH1(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+          inline def setH1(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
           
-          inline def setH2(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+          inline def setH2(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
           
-          inline def setH3(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+          inline def setH3(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
           
-          inline def setH4(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+          inline def setH4(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
           
-          inline def setH5(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+          inline def setH5(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
           
-          inline def setH6(value: DetailedHTMLPropsHTMLAttrAriachecked): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+          inline def setH6(value: DetailedHTMLPropsHTMLAttrAriabrailleroledescription): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
           
-          inline def setHead(value: DetailedHTMLPropsHTMLAttrAriacolcount): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+          inline def setHead(value: DetailedHTMLPropsHTMLAttrAriabusy): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
           
           inline def setHeader(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
           
           inline def setHgroup(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
           
-          inline def setHr(value: DetailedHTMLPropsHTMLAttrAriadetails): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+          inline def setHr(value: DetailedHTMLPropsHTMLAttrAriacontrols): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
           
           inline def setHtml(value: DetailedHTMLPropsHtmlHTML): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
           
@@ -984,7 +989,7 @@ object mod {
           
           inline def setLabel(value: DetailedHTMLPropsLabelHTM): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          inline def setLegend(value: DetailedHTMLPropsHTMLAttrAriabusy): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+          inline def setLegend(value: DetailedHTMLPropsHTMLAttrAriabraillelabel): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
           
           inline def setLi(value: DetailedHTMLPropsLiHTMLAt): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
           
@@ -1032,7 +1037,7 @@ object mod {
           
           inline def setOutput(value: DetailedHTMLPropsOutputHT): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
           
-          inline def setP(value: DetailedHTMLPropsHTMLAttrAriaerrormessage): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+          inline def setP(value: DetailedHTMLPropsHTMLAttrAriadescription): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
           
           inline def setParam(value: DetailedHTMLPropsParamHTM): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
           
@@ -1068,6 +1073,8 @@ object mod {
           
           inline def setScript(value: DetailedHTMLPropsScriptHT): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
           
+          inline def setSearch(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+          
           inline def setSection(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           
           inline def setSelect(value: DetailedHTMLPropsSelectHT): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
@@ -1078,7 +1085,7 @@ object mod {
           
           inline def setSource(value: DetailedHTMLPropsSourceHT): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
-          inline def setSpan(value: DetailedHTMLPropsHTMLAttrAriacurrent): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+          inline def setSpan(value: DetailedHTMLPropsHTMLAttrAriacolindextext): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
           
           inline def setStop(value: SVGPropsSVGStopElementcss): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
           
@@ -1104,7 +1111,7 @@ object mod {
           
           inline def setTd(value: DetailedHTMLPropsTdHTMLAt): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
           
-          inline def setTemplate(value: DetailedHTMLPropsHTMLAttrAriacontrols): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+          inline def setTemplate(value: DetailedHTMLPropsHTMLAttrAriacolindex): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
           
           inline def setText(value: SVGTextElementAttributesS): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
           
@@ -1130,7 +1137,7 @@ object mod {
           
           inline def setU(value: DetailedHTMLPropsHTMLAttrAbout): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
           
-          inline def setUl(value: DetailedHTMLPropsHTMLAttrAriadropeffect): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+          inline def setUl(value: DetailedHTMLPropsHTMLAttrAriadescribedby): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
           
           inline def setUse(value: SVGPropsSVGUseElementcssI): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
           

@@ -24,9 +24,9 @@ trait FileSystemManager extends StObject {
     *
     * @returns Subscription identifier.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addStorageStateChangeListener(onsuccess: FileSystemStorageSuccessCallback): Double = js.native
   def addStorageStateChangeListener(onsuccess: FileSystemStorageSuccessCallback, onerror: ErrorCallback): Double = js.native
@@ -59,9 +59,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def copyDirectory(sourcePath: Path, destinationPath: Path): Unit = js.native
   def copyDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
@@ -135,9 +135,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def copyFile(sourcePath: Path, destinationPath: Path): Unit = js.native
   def copyFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
@@ -210,9 +210,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def createDirectory(path: Path): Unit = js.native
   def createDirectory(path: Path, makeParents: Boolean): Unit = js.native
@@ -253,9 +253,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def deleteDirectory(path: Path): Unit = js.native
   def deleteDirectory(path: Path, recursive: Boolean): Unit = js.native
@@ -288,9 +288,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def deleteFile(path: Path): Unit = js.native
   def deleteFile(path: Path, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -333,8 +333,8 @@ trait FileSystemManager extends StObject {
     * @param onsuccess Callback method to be invoked when the list of storages is available, passing the storage list to the callback.
     * @param onerror Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def getStorage(label: String, onsuccess: FileSystemStorageSuccessCallback): Unit = js.native
   def getStorage(label: String, onsuccess: FileSystemStorageSuccessCallback, onerror: ErrorCallback): Unit = js.native
@@ -351,10 +351,10 @@ trait FileSystemManager extends StObject {
     *
     * @returns true if _path_ points to a directory, false otherwise.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type IOError, if any of the input/output error occurs.
-    * @throw WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file or directory.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type IOError, if any of the input/output error occurs.
+    * @throws WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file or directory.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def isDirectory(path: Path): Boolean = js.native
   
@@ -370,10 +370,10 @@ trait FileSystemManager extends StObject {
     *
     * @returns true if _path_ points to a file, false otherwise.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type IOError, if any of the input/output error occurs.
-    * @throw WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file or directory.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type IOError, if any of the input/output error occurs.
+    * @throws WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file or directory.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def isFile(path: Path): Boolean = js.native
   
@@ -403,9 +403,9 @@ trait FileSystemManager extends StObject {
     * @param errorCallback Callback function to be invoked when an error occurs.
     * @param filter Filter to restrict the listed files.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _path_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _path_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def listDirectory(path: Path, successCallback: ListDirectorySuccessCallback): Unit = js.native
   def listDirectory(path: Path, successCallback: ListDirectorySuccessCallback, errorCallback: Null, filter: FileFilter): Unit = js.native
@@ -440,8 +440,8 @@ trait FileSystemManager extends StObject {
     * @param onsuccess Callback method to be invoked when a list of storage is available and passing the storage list to the callback.
     * @param onerror Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def listStorages(onsuccess: FileSystemStorageArraySuccessCallback): Unit = js.native
   def listStorages(onsuccess: FileSystemStorageArraySuccessCallback, onerror: ErrorCallback): Unit = js.native
@@ -485,9 +485,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def moveDirectory(sourcePath: Path, destinationPath: Path): Unit = js.native
   def moveDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
@@ -561,9 +561,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value. For example, the _sourcePath_ or the _destinationPath_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def moveFile(sourcePath: Path, destinationPath: Path): Unit = js.native
   def moveFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
@@ -643,10 +643,10 @@ trait FileSystemManager extends StObject {
     *
     * @returns Object representing open file.
     *
-    * @throw WebAPIException with error type IOError, if a file is not available for open or any other IO error occurs.
-    * @throw WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a file is not available for open or any other IO error occurs.
+    * @throws WebAPIException with error type NotFoundError, if the _path_ does not point to an existing file.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def openFile(path: Path, openMode: FileMode): FileHandle = js.native
   def openFile(path: Path, openMode: FileMode, makeParents: Boolean): FileHandle = js.native
@@ -663,9 +663,9 @@ trait FileSystemManager extends StObject {
     *
     * @returns true if _path_ points to a existing element, false otherwise.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
-    * @throw WebAPIException with error type IOError, if input/output error occurs.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type IOError, if input/output error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def pathExists(path: Path): Boolean = js.native
   
@@ -680,8 +680,8 @@ trait FileSystemManager extends StObject {
     *
     * @param watchId Subscription identifier.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def removeStorageStateChangeListener(watchId: Double): Unit = js.native
   
@@ -706,9 +706,9 @@ trait FileSystemManager extends StObject {
     * @param successCallback Callback function to be invoked on success.
     * @param errorCallback Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ or _newName_ is invalid.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ or _newName_ is invalid.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def rename(path: Path, newName: String): Unit = js.native
   def rename(path: Path, newName: String, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -760,9 +760,9 @@ trait FileSystemManager extends StObject {
     * @param mode Optional value to indicate the file access mode on all files and directories that can be reached from the _File_ object passed to onsuccess.
     * Default value of this parameter is rw if absent or null.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported (e.g. in the case of "camera" virtual path if the device does not support camera), or if mode has been set to "rwo", which was introduced in tizen version 5.0
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported (e.g. in the case of "camera" virtual path if the device does not support camera), or if mode has been set to "rwo", which was introduced in tizen version 5.0
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameters is not compatible with the expected type for that parameter.
     */
   def resolve(location: String, onsuccess: FileSuccessCallback): Unit = js.native
   def resolve(location: String, onsuccess: FileSuccessCallback, onerror: Null, mode: FileMode): Unit = js.native
@@ -781,7 +781,7 @@ trait FileSystemManager extends StObject {
     *
     * @returns [File URI](https://tools.ietf.org/html/rfc8089) for given path.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
+    * @throws WebAPIException with error type InvalidValuesError, if the _path_ is invalid.
     */
   def toURI(path: Path): String = js.native
 }

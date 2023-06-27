@@ -9,75 +9,75 @@ trait ExtentProperties
      with GeometryProperties {
   
   /**
-    * The maximum possible `m` value in an extent envelope.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmax)
-    */
+  		 * The maximum possible `m` value in an extent envelope.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmax)
+  		 */
   var mmax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum possible `m` value of an extent envelope.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmin)
-    */
+  		 * The minimum possible `m` value of an extent envelope.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#mmin)
+  		 */
   var mmin: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum X-coordinate of an extent envelope.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
-    */
+  		 * The maximum X-coordinate of an extent envelope.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmax)
+  		 */
   var xmax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum X-coordinate of an extent envelope.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
-    */
+  		 * The minimum X-coordinate of an extent envelope.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#xmin)
+  		 */
   var xmin: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum Y-coordinate of an extent envelope.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
-    */
+  		 * The maximum Y-coordinate of an extent envelope.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymax)
+  		 */
   var ymax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum Y-coordinate of an extent envelope.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
-    */
+  		 * The minimum Y-coordinate of an extent envelope.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#ymin)
+  		 */
   var ymin: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum possible `z`, or elevation, value in an extent envelope.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmax)
-    */
+  		 * The maximum possible `z`, or elevation, value in an extent envelope.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmax)
+  		 */
   var zmax: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum possible `z`, or elevation, value of an extent envelope.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmin)
-    */
+  		 * The minimum possible `z`, or elevation, value of an extent envelope.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html#zmin)
+  		 */
   var zmin: js.UndefOr[Double] = js.undefined
 }
 object ExtentProperties {

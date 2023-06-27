@@ -1,8 +1,8 @@
 package typings.jupyterlabNbformat
 
-import typings.jupyterlabNbformat.mod.CellType
 import typings.jupyterlabNbformat.mod.OutputType
 import typings.jupyterlabNbformat.mod.StreamType
+import typings.jupyterlabNbformat.mod._CellType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object jupyterlabNbformatStrings {
   @js.native
   sealed trait code
     extends StObject
-       with CellType
+       with _CellType
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
@@ -40,13 +40,13 @@ object jupyterlabNbformatStrings {
   @js.native
   sealed trait markdown
     extends StObject
-       with CellType
+       with _CellType
   inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
   sealed trait raw
     extends StObject
-       with CellType
+       with _CellType
   inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native

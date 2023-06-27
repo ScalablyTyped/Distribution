@@ -12,5 +12,5 @@ object distLibTransformLogicalSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformLogicalSize(directionConfig: DirectionConfig): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformLogicalSize")(directionConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformLogicalSize(directionConfig: DirectionConfig): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformLogicalSize")(directionConfig.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

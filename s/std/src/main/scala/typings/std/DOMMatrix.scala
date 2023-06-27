@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMMatrix) */
 @js.native
 trait DOMMatrix
   extends StObject
@@ -54,6 +55,7 @@ trait DOMMatrix
   def rotateSelf(rotX: Unit, rotY: Double, rotZ: Double): DOMMatrix = js.native
   def rotateSelf(rotX: Unit, rotY: Unit, rotZ: Double): DOMMatrix = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMMatrix/scale3dSelf) */
   /* standard dom */
   def scale3dSelf(): DOMMatrix = js.native
   def scale3dSelf(scale: Double): DOMMatrix = js.native
@@ -72,6 +74,7 @@ trait DOMMatrix
   def scale3dSelf(scale: Unit, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
   def scale3dSelf(scale: Unit, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMMatrix/scaleSelf) */
   /* standard dom */
   def scaleSelf(
     scaleX: js.UndefOr[Double],

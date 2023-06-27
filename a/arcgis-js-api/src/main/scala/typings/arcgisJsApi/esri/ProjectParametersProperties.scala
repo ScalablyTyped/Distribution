@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectParametersProperties extends StObject {
   
   /**
-    * The input geometries to project.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#geometries)
-    */
+  		 * The input geometries to project.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#geometries)
+  		 */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
-    * The spatial reference to which you are projecting the geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#outSpatialReference)
-    */
+  		 * The spatial reference to which you are projecting the geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * Indicates whether to transform forward or not.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformForward)
-    */
+  		 * Indicates whether to transform forward or not.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformForward)
+  		 */
   var transformForward: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
-    */
+  		 * The well-known id {wkid:number} or well-known text {wkt:string} of the datum transformation to be applied to the projected geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html#transformation)
+  		 */
   var transformation: js.UndefOr[ProjectParametersTransformation] = js.undefined
 }
 object ProjectParametersProperties {

@@ -6,22 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `536` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[ColumnsurlCreatedat]
+  var from: js.UndefOr[Boolean] = js.undefined
+  
+  var to: js.UndefOr[Boolean] = js.undefined
 }
 object `536` {
   
-  inline def apply(applicationSlashjson: js.Array[ColumnsurlCreatedat]): `536` = {
+  inline def apply(): `536` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`536`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `536`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[ColumnsurlCreatedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Boolean): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: ColumnsurlCreatedat*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setTo(value: Boolean): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

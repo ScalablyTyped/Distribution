@@ -18,31 +18,31 @@ object devLibFactoryTagMod {
     acornOptions: js.UndefOr[AcornOptions],
     addResult: js.UndefOr[Boolean],
     allowLazy: js.UndefOr[Boolean],
-    tagType: String,
-    tagMarkerType: String,
-    tagClosingMarkerType: String,
-    tagSelfClosingMarker: String,
-    tagNameType: String,
-    tagNamePrimaryType: String,
-    tagNameMemberMarkerType: String,
-    tagNameMemberType: String,
-    tagNamePrefixMarkerType: String,
-    tagNameLocalType: String,
-    tagExpressionAttributeType: String,
-    tagExpressionAttributeMarkerType: String,
-    tagExpressionAttributeValueType: String,
-    tagAttributeType: String,
-    tagAttributeNameType: String,
-    tagAttributeNamePrimaryType: String,
-    tagAttributeNamePrefixMarkerType: String,
-    tagAttributeNameLocalType: String,
-    tagAttributeInitializerMarkerType: String,
-    tagAttributeValueLiteralType: String,
-    tagAttributeValueLiteralMarkerType: String,
-    tagAttributeValueLiteralValueType: String,
-    tagAttributeValueExpressionType: String,
-    tagAttributeValueExpressionMarkerType: String,
-    tagAttributeValueExpressionValueType: String
+    tagType: TokenType,
+    tagMarkerType: TokenType,
+    tagClosingMarkerType: TokenType,
+    tagSelfClosingMarker: TokenType,
+    tagNameType: TokenType,
+    tagNamePrimaryType: TokenType,
+    tagNameMemberMarkerType: TokenType,
+    tagNameMemberType: TokenType,
+    tagNamePrefixMarkerType: TokenType,
+    tagNameLocalType: TokenType,
+    tagExpressionAttributeType: TokenType,
+    tagExpressionAttributeMarkerType: TokenType,
+    tagExpressionAttributeValueType: TokenType,
+    tagAttributeType: TokenType,
+    tagAttributeNameType: TokenType,
+    tagAttributeNamePrimaryType: TokenType,
+    tagAttributeNamePrefixMarkerType: TokenType,
+    tagAttributeNameLocalType: TokenType,
+    tagAttributeInitializerMarkerType: TokenType,
+    tagAttributeValueLiteralType: TokenType,
+    tagAttributeValueLiteralMarkerType: TokenType,
+    tagAttributeValueLiteralValueType: TokenType,
+    tagAttributeValueExpressionType: TokenType,
+    tagAttributeValueExpressionMarkerType: TokenType,
+    tagAttributeValueExpressionValueType: TokenType
   ): js.Function1[
     /* code */ typings.micromarkUtilTypes.mod.Code, 
     Unit | typings.micromarkUtilTypes.mod.State
@@ -59,11 +59,9 @@ object devLibFactoryTagMod {
   
   type Effects = typings.micromarkUtilTypes.mod.Effects
   
-  type Point = typings.micromarkUtilTypes.mod.Point
-  
   type State = typings.micromarkUtilTypes.mod.State
   
-  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
+  type TokenType = typings.micromarkUtilTypes.mod.TokenType
   
-  type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
 }

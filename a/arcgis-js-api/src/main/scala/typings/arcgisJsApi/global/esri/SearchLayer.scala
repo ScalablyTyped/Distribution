@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SearchLayer")
 @js.native
 /**
-  * Represents a layer to be included in search.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html)
-  */
+		 * Represents a layer to be included in search.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html)
+		 */
 open class SearchLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.SearchLayer {

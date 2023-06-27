@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that can be accessible from the file manager on Chrome OS.
   * @since Chrome 40.
   * @requires Permissions: 'fileSystemProvider'
-  * @requires(CrOS) This API works only on Chrome OS.
+  * @requires This API works only on Chrome OS.
   * @requires Manifest:
   * Requires an section in addition to the permission.
   * The file_system_provider section must be declared as follows:
@@ -82,7 +82,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * allow to add more than one mount points from the UI. If watchable is false, then a
   * refresh button will be rendered. Note, that if possible you should add support for
   * watchers, so changes on the file system can be reflected immediately and automatically.
-  * @see[More information]{@link https://developer.chrome.com/apps/fileSystemProvider}
+  * @see https://developer.chrome.com/apps/fileSystemProvider
   */
 object fileSystemProvider {
   

@@ -138,13 +138,13 @@ object sapMShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogout(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Shell` itself
       */
@@ -169,7 +169,7 @@ object sapMShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLogout(
       /**
@@ -180,7 +180,7 @@ object sapMShellMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Shell` itself
       */
@@ -205,13 +205,13 @@ object sapMShellMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLogout(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -219,7 +219,7 @@ object sapMShellMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:logout logout} to attached listeners.
       *
@@ -251,7 +251,7 @@ object sapMShellMod {
     def getAppWidthLimited(): Boolean = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundColor backgroundColor}.
       *
@@ -265,7 +265,7 @@ object sapMShellMod {
     def getBackgroundColor(): CSSColor = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundImage backgroundImage}.
       *
@@ -279,7 +279,7 @@ object sapMShellMod {
     def getBackgroundImage(): URI = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -294,7 +294,7 @@ object sapMShellMod {
     def getBackgroundOpacity(): float = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Gets current value of property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -418,7 +418,7 @@ object sapMShellMod {
     bAppWidthLimited: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundColor backgroundColor}.
       *
@@ -438,7 +438,7 @@ object sapMShellMod {
     sBackgroundColor: CSSColor): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundImage backgroundImage}.
       *
@@ -458,7 +458,7 @@ object sapMShellMod {
     sBackgroundImage: URI): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundOpacity backgroundOpacity}.
       *
@@ -479,7 +479,7 @@ object sapMShellMod {
     fBackgroundOpacity: float): this.type = js.native
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Sets a new value for property {@link #getBackgroundRepeat backgroundRepeat}.
       *
@@ -596,6 +596,12 @@ object sapMShellMod {
     sTitleLevel: TitleLevel): this.type = js.native
   }
   
+  trait Shell$LogoutEventParameters extends StObject
+  
+  type ShellLogoutEvent = typings.openui5.sapUiBaseEventMod.default[Shell$LogoutEventParameters]
+  
+  type ShellLogoutEventParameters = Shell$LogoutEventParameters
+  
   trait ShellSettings
     extends StObject
        with ControlSettings {
@@ -614,7 +620,7 @@ object sapMShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Defines the background color of the Shell. If set, this color will override the default background defined
       * by the theme. This should only be set when really required. Any configured background image will be placed
@@ -626,7 +632,7 @@ object sapMShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Defines the background image of the Shell. If set, this image will override the default background defined
       * by the theme. This should only be set when really required. This background image will be placed above
@@ -636,7 +642,7 @@ object sapMShellMod {
     var backgroundImage: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Defines the opacity of the background image. The opacity can be set between 0 (fully transparent) and
       * 1 (fully opaque). This can be used to improve readability of the Shell content by making the background
@@ -647,7 +653,7 @@ object sapMShellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.11.2
+      * @since 1.11.2
       *
       * Determines whether the background image (if configured) should be proportionally stretched to cover the
       * whole Shell (false, default) or whether it should be tiled (true). Note: the image will not be displayed
@@ -695,7 +701,9 @@ object sapMShellMod {
     /**
       * Fires when the user presses the logout button/link.
       */
-    var logout: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var logout: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines whether the Logout button should be displayed. Currently, this only happens on very tall screens
@@ -767,7 +775,7 @@ object sapMShellMod {
       
       inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      inline def setLogout(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
+      inline def setLogout(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
       
       inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
       

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface which provides access to webRequest events on the guest page.
-  * @see[chrome.webRequest]{@link http://developer.chrome.com/extensions/webRequest}
+  * @see http://developer.chrome.com/extensions/webRequest
   * extensions API for details on webRequest life cycle and related concepts.
   *
   * To illustrate how usage differs from the extensions webRequest API,
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   function(details) { return {cancel: true}; }, {urls: ['*://www.evil.com/ *']}, ['blocking']);
   * @description
   * Additionally, this interface supports declarative webRequest rules through onRequest and onMessage events.
-  * @see[Docs]{@link http://developer.chrome.com/extensions/declarativeWebRequest.htmldeclarativeWebRequest}
+  * @see http://developer.chrome.com/extensions/declarativeWebRequest.htmldeclarativeWebRequest
   * @description
   * Note that conditions and actions for declarative webview webRequests should be instantiated
   * from their chrome.webViewRequest.* counterparts. The following example code declaratively
@@ -61,7 +61,7 @@ trait WebRequestEventInterface extends StObject {
   /**
     * This interface supports declarative webRequest rules through
     * **onRequest** and **onMessage** events.
-    * @see[See declarativeWebRequest for API details.]{@link http://developer.chrome.com/extensions/declarativeWebRequest.html}
+    * @see http://developer.chrome.com/extensions/declarativeWebRequest.html
     */
   var onMessage: OnMessageEvent
   
@@ -69,7 +69,7 @@ trait WebRequestEventInterface extends StObject {
     * Provides the Declarative Event API consisting of addRules, removeRules, and getRules.
     * This interface supports declarative webRequest rules through
     * **onRequest** and **onMessage** events.
-    * @see[See declarativeWebRequest for API details.]{@link http://developer.chrome.com/extensions/declarativeWebRequest.html}
+    * @see http://developer.chrome.com/extensions/declarativeWebRequest.html
     */
   var onRequest: OnRequestEvent
   

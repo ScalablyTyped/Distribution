@@ -1,8 +1,8 @@
 package typings.openui5
 
-import typings.openui5.anon.ValidValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.DynamicDateRangeValue
+import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
@@ -151,7 +151,7 @@ object sapMDynamicDateRangeMod {
     vAriaDescribedBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Adds some ariaDescribedBy into the association {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -169,7 +169,7 @@ object sapMDynamicDateRangeMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -181,11 +181,23 @@ object sapMDynamicDateRangeMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * Adds some customOption to the aggregation {@link #getCustomOptions customOptions}.
       *
-      * Appends an option key, identifying an additional option to be used by the control.
+      * @returns Reference to `this` in order to allow method chaining
       */
-    def addOption(/**
+    def addCustomOption(
+      /**
+      * The customOption to add; if empty, nothing is inserted
+      */
+    oCustomOption: typings.openui5.sapMDynamicDateOptionMod.default
+    ): this.type = js.native
+    
+    /**
+      * @since 1.92
+      *
+      * Appends an option key, identifying an additional standard option to be used by the control.
+      */
+    def addStandardOption(/**
       * option key
       */
     sKey: String): Unit = js.native
@@ -205,13 +217,13 @@ object sapMDynamicDateRangeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DynamicDateRange` itself
       */
@@ -237,7 +249,7 @@ object sapMDynamicDateRangeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -248,12 +260,19 @@ object sapMDynamicDateRangeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DynamicDateRange` itself
       */
     oListener: js.Object
     ): this.type = js.native
+    
+    /**
+      * Destroys all the customOptions in the aggregation {@link #getCustomOptions customOptions}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def destroyCustomOptions(): this.type = js.native
     
     /**
       * Detaches event handler `fnFunction` from the {@link #event:change change} event of this `sap.m.DynamicDateRange`.
@@ -266,13 +285,13 @@ object sapMDynamicDateRangeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicDateRangeChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -280,36 +299,36 @@ object sapMDynamicDateRangeMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ValidValue): this.type = js.native
+    mParameters: DynamicDateRange$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -321,7 +340,14 @@ object sapMDynamicDateRangeMod {
     def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
-      * @SINCE 1.92
+      * Gets content of aggregation {@link #getCustomOptions customOptions}.
+      *
+      * Custom options for the `DynamicDateRange`.
+      */
+    def getCustomOptions(): js.Array[typings.openui5.sapMDynamicDateOptionMod.default] = js.native
+    
+    /**
+      * @since 1.92
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -335,7 +361,7 @@ object sapMDynamicDateRangeMod {
     def getEditable(): Boolean = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getEnableGroupHeaders enableGroupHeaders}.
       *
@@ -348,7 +374,7 @@ object sapMDynamicDateRangeMod {
     def getEnableGroupHeaders(): Boolean = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getEnabled enabled}.
       *
@@ -362,19 +388,7 @@ object sapMDynamicDateRangeMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.92
-      *
-      * Gets current value of property {@link #getFormatter formatter}.
-      *
-      * An instance of sap.m.DynamicDateFormat or a user defined format object with the corresponding formatting
-      * and parsing functionality.
-      *
-      * @returns Value of property `formatter`
-      */
-    def getFormatter(): js.Object = js.native
-    
-    /**
-      * @SINCE 1.105
+      * @since 1.105
       *
       * Gets current value of property {@link #getHideInput hideInput}.
       *
@@ -395,7 +409,7 @@ object sapMDynamicDateRangeMod {
     def getHideInput(): Boolean = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getName name}.
       *
@@ -406,26 +420,17 @@ object sapMDynamicDateRangeMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.92
+      * Gets an option object by its key.
       *
-      * Gets current value of property {@link #getOptions options}.
-      *
-      * Array of standard and custom option keys
-      *
-      * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
-      * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
-      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
-      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
-      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
-      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
-      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
-      *
-      * @returns Value of property `options`
+      * @returns The option
       */
-    def getOptions(): js.Array[String] = js.native
+    def getOption(/**
+      * The option key
+      */
+    sKey: String): typings.openui5.sapMDynamicDateOptionMod.default = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getPlaceholder placeholder}.
       *
@@ -436,7 +441,7 @@ object sapMDynamicDateRangeMod {
     def getPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getRequired required}.
       *
@@ -451,20 +456,26 @@ object sapMDynamicDateRangeMod {
     def getRequired(): Boolean = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
-      * Gets current value of property {@link #getValue value}.
+      * Gets current value of property {@link #getStandardOptions standardOptions}.
       *
-      * Defines the control value. The object has two properties 'operator' - a string, the key of a DynamicDateOption
-      * and 'values' - an array of parameters for the same option. The control uses a special wrong-value object,
-      * when the input receives an unrecognized string - { operator: "PARSEERROR", values: [...]}
+      * Array of standard option keys
       *
-      * @returns Value of property `value`
+      * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
+      * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
+      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
+      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
+      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
+      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
+      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
+      *
+      * @returns Value of property `standardOptions`
       */
-    def getValue(): js.Object = js.native
+    def getStandardOptions(): js.Array[String] = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getValueState valueState}.
       *
@@ -478,7 +489,7 @@ object sapMDynamicDateRangeMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -489,7 +500,7 @@ object sapMDynamicDateRangeMod {
     def getValueStateText(): String = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -500,7 +511,38 @@ object sapMDynamicDateRangeMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.92
+      * Checks for the provided `sap.m.DynamicDateOption` in the aggregation {@link #getCustomOptions customOptions}.
+      * and returns its index if found or -1 otherwise.
+      *
+      * @returns The index of the provided control in the aggregation if found, or -1 otherwise
+      */
+    def indexOfCustomOption(
+      /**
+      * The customOption whose index is looked for
+      */
+    oCustomOption: typings.openui5.sapMDynamicDateOptionMod.default
+    ): int = js.native
+    
+    /**
+      * Inserts a customOption into the aggregation {@link #getCustomOptions customOptions}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def insertCustomOption(
+      /**
+      * The customOption to insert; if empty, nothing is inserted
+      */
+    oCustomOption: typings.openui5.sapMDynamicDateOptionMod.default,
+      /**
+      * The `0`-based index the customOption should be inserted at; for a negative value of `iIndex`, the customOption
+      * is inserted at position 0; for a value greater than the current size of the aggregation, the customOption
+      * is inserted at the last position
+      */
+    iIndex: int
+    ): this.type = js.native
+    
+    /**
+      * @since 1.92
       *
       * Opens the value help dialog.
       */
@@ -513,7 +555,7 @@ object sapMDynamicDateRangeMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.105
+      * @since 1.105
       *
       * Opens the value help popover. The popover is positioned relatively to the control given as `oDomRef`
       * parameter on tablet or desktop and is full screen on phone. Therefore the control parameter is only used
@@ -535,7 +577,7 @@ object sapMDynamicDateRangeMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes all the controls in the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -544,7 +586,7 @@ object sapMDynamicDateRangeMod {
     def removeAllAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -553,7 +595,16 @@ object sapMDynamicDateRangeMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.92
+      * Removes all the controls from the aggregation {@link #getCustomOptions customOptions}.
+      *
+      * Additionally, it unregisters them from the hosting UIArea.
+      *
+      * @returns An array of the removed elements (might be empty)
+      */
+    def removeAllCustomOptions(): js.Array[typings.openui5.sapMDynamicDateOptionMod.default] = js.native
+    
+    /**
+      * @since 1.92
       *
       * Removes an ariaDescribedBy from the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -575,7 +626,7 @@ object sapMDynamicDateRangeMod {
     vAriaDescribedBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -596,8 +647,28 @@ object sapMDynamicDateRangeMod {
       */
     vAriaLabelledBy: ID): ID | Null = js.native
     
+    def removeCustomOption(/**
+      * The customOption to remove or its index or id
+      */
+    vCustomOption: String): typings.openui5.sapMDynamicDateOptionMod.default | Null = js.native
     /**
-      * @SINCE 1.111.0
+      * Removes a customOption from the aggregation {@link #getCustomOptions customOptions}.
+      *
+      * @returns The removed customOption or `null`
+      */
+    def removeCustomOption(/**
+      * The customOption to remove or its index or id
+      */
+    vCustomOption: int): typings.openui5.sapMDynamicDateOptionMod.default | Null = js.native
+    def removeCustomOption(
+      /**
+      * The customOption to remove or its index or id
+      */
+    vCustomOption: typings.openui5.sapMDynamicDateOptionMod.default
+    ): typings.openui5.sapMDynamicDateOptionMod.default | Null = js.native
+    
+    /**
+      * @since 1.111.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -623,7 +694,7 @@ object sapMDynamicDateRangeMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -643,7 +714,7 @@ object sapMDynamicDateRangeMod {
     bEditable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getEnableGroupHeaders enableGroupHeaders}.
       *
@@ -662,7 +733,7 @@ object sapMDynamicDateRangeMod {
     bEnableGroupHeaders: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getEnabled enabled}.
       *
@@ -682,24 +753,7 @@ object sapMDynamicDateRangeMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.92
-      *
-      * Sets a new value for property {@link #getFormatter formatter}.
-      *
-      * An instance of sap.m.DynamicDateFormat or a user defined format object with the corresponding formatting
-      * and parsing functionality.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setFormatter(/**
-      * New value for property `formatter`
-      */
-    oFormatter: js.Object): this.type = js.native
-    
-    /**
-      * @SINCE 1.105
+      * @since 1.105
       *
       * Sets a new value for property {@link #getHideInput hideInput}.
       *
@@ -726,7 +780,7 @@ object sapMDynamicDateRangeMod {
     bHideInput: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getName name}.
       *
@@ -743,32 +797,7 @@ object sapMDynamicDateRangeMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.92
-      *
-      * Sets a new value for property {@link #getOptions options}.
-      *
-      * Array of standard and custom option keys
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
-      * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
-      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
-      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
-      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
-      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
-      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setOptions(): this.type = js.native
-    def setOptions(/**
-      * New value for property `options`
-      */
-    sOptions: js.Array[String]): this.type = js.native
-    
-    /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getPlaceholder placeholder}.
       *
@@ -785,7 +814,7 @@ object sapMDynamicDateRangeMod {
     sPlaceholder: String): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getRequired required}.
       *
@@ -806,7 +835,32 @@ object sapMDynamicDateRangeMod {
     bRequired: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
+      *
+      * Sets a new value for property {@link #getStandardOptions standardOptions}.
+      *
+      * Array of standard option keys
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
+      * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
+      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
+      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
+      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
+      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
+      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setStandardOptions(): this.type = js.native
+    def setStandardOptions(/**
+      * New value for property `standardOptions`
+      */
+    sStandardOptions: js.Array[String]): this.type = js.native
+    
+    /**
+      * @since 1.92
       *
       * Sets a new value for property {@link #getValueState valueState}.
       *
@@ -832,7 +886,7 @@ object sapMDynamicDateRangeMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -849,7 +903,7 @@ object sapMDynamicDateRangeMod {
     sValueStateText: String): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -864,28 +918,74 @@ object sapMDynamicDateRangeMod {
       * New value for property `width`
       */
     sWidth: CSSSize): this.type = js.native
+    
+    /**
+      * Calculates a date range from a provided object in the format of the DynamicDateRange's value.
+      *
+      * @returns An array of two date objects - start and end date
+      */
+    def toDates(/**
+      * The provided value
+      */
+    oValue: String): js.Array[/* was: sap.ui.core.date.UniversalDate */ Any] = js.native
   }
+  
+  trait DynamicDateRange$ChangeEventParameters extends StObject {
+    
+    /**
+      * Whether the new value is valid.
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The current value of the control.
+      */
+    var value: js.UndefOr[js.Object] = js.undefined
+  }
+  object DynamicDateRange$ChangeEventParameters {
+    
+    inline def apply(): DynamicDateRange$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DynamicDateRange$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDateRange$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      
+      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DynamicDateRangeChangeEvent = typings.openui5.sapUiBaseEventMod.default[DynamicDateRange$ChangeEventParameters]
+  
+  type DynamicDateRangeChangeEventParameters = DynamicDateRange$ChangeEventParameters
   
   trait DynamicDateRangeSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Association to controls / IDs that describe this control (see WAI-ARIA attribute aria-describedby).
       */
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used.
@@ -898,10 +998,22 @@ object sapMDynamicDateRangeMod {
       * Is fired when the text in the input field has changed and the focus leaves the input field or the Enter
       * key is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicDateRange$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * Custom options for the `DynamicDateRange`.
+      */
+    var customOptions: js.UndefOr[
+        js.Array[typings.openui5.sapMDynamicDateOptionMod.default] | typings.openui5.sapMDynamicDateOptionMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @since 1.92
       *
       * Defines whether the control can be modified by the user or not. **Note:** A user can tab to the non-editable
       * control, highlight it, and copy the text from it.
@@ -911,7 +1023,7 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Disable list group headers.
       */
@@ -920,7 +1032,7 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Indicates whether the user can interact with the control or not. **Note:** Disabled controls cannot be
       * focused and they are out of the tab-chain.
@@ -930,7 +1042,7 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * An instance of sap.m.DynamicDateFormat or a user defined format object with the corresponding formatting
       * and parsing functionality.
@@ -940,7 +1052,7 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.105
+      * @since 1.105
       *
       * Determines whether the input field of the control is hidden or visible. When set to `true`, the input
       * field becomes invisible and there is no way to open the value help popover. In that case it can be opened
@@ -957,30 +1069,21 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Defines the name of the control for the purposes of form submission.
       */
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92
-      *
-      * Array of standard and custom option keys
-      */
-    var options: js.UndefOr[
-        js.Array[String] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
-      ] = js.undefined
-    
-    /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Defines a short hint intended to aid the user with data entry when the control has no value.
       */
     var placeholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Indicates that user input is required. This property is only needed for accessibility purposes when a
       * single relationship between the field and a label (see aggregation `labelFor` of `sap.m.Label`) cannot
@@ -991,7 +1094,16 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
+      *
+      * Array of standard option keys
+      */
+    var standardOptions: js.UndefOr[
+        js.Array[String] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
+      * @since 1.92
       *
       * Defines the control value. The object has two properties 'operator' - a string, the key of a DynamicDateOption
       * and 'values' - an array of parameters for the same option. The control uses a special wrong-value object,
@@ -1002,7 +1114,7 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Accepts the core enumeration ValueState.type that supports `None`, `Error`, `Warning` and `Success`.
       * ValueState is managed internally only when validation is triggered by user interaction.
@@ -1012,14 +1124,14 @@ object sapMDynamicDateRangeMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Defines the text that appears in the value state message popup.
       */
     var valueStateText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Defines the width of the control.
       */
@@ -1055,9 +1167,19 @@ object sapMDynamicDateRangeMod {
       
       inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicDateRange$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      
+      inline def setCustomOptions(
+        value: js.Array[typings.openui5.sapMDynamicDateOptionMod.default] | typings.openui5.sapMDynamicDateOptionMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
+      ): Self = StObject.set(x, "customOptions", value.asInstanceOf[js.Any])
+      
+      inline def setCustomOptionsUndefined: Self = StObject.set(x, "customOptions", js.undefined)
+      
+      inline def setCustomOptionsVarargs(value: typings.openui5.sapMDynamicDateOptionMod.default*): Self = StObject.set(x, "customOptions", js.Array(value*))
       
       inline def setEditable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
@@ -1083,14 +1205,6 @@ object sapMDynamicDateRangeMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOptions(
-        value: js.Array[String] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
-      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-      
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
-      
       inline def setPlaceholder(value: String | PropertyBindingInfo): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1098,6 +1212,14 @@ object sapMDynamicDateRangeMod {
       inline def setRequired(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
+      inline def setStandardOptions(
+        value: js.Array[String] | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ): Self = StObject.set(x, "standardOptions", value.asInstanceOf[js.Any])
+      
+      inline def setStandardOptionsUndefined: Self = StObject.set(x, "standardOptions", js.undefined)
+      
+      inline def setStandardOptionsVarargs(value: String*): Self = StObject.set(x, "standardOptions", js.Array(value*))
       
       inline def setValue(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

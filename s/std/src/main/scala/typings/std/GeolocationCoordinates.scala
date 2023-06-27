@@ -4,27 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates)
+  */
 trait GeolocationCoordinates extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/accuracy) */
   /* standard dom */
   val accuracy: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/altitude) */
   /* standard dom */
   val altitude: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/altitudeAccuracy) */
   /* standard dom */
   val altitudeAccuracy: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/heading) */
   /* standard dom */
   val heading: Double | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/latitude) */
   /* standard dom */
   val latitude: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/longitude) */
   /* standard dom */
   val longitude: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationCoordinates/speed) */
   /* standard dom */
   val speed: Double | Null
 }

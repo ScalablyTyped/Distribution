@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides information about a browser plugin.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin)
   */
 @js.native
 trait Plugin
@@ -18,6 +20,8 @@ trait Plugin
   /**
     * Returns the plugin's description.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin/description)
     */
   /* standard dom */
   val description: java.lang.String = js.native
@@ -25,6 +29,8 @@ trait Plugin
   /**
     * Returns the plugin library's filename, if applicable on the current platform.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin/filename)
     */
   /* standard dom */
   val filename: java.lang.String = js.native
@@ -32,6 +38,8 @@ trait Plugin
   /**
     * Returns the specified MimeType object.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin/item)
     */
   /* standard dom */
   def item(index: Double): MimeType | Null = js.native
@@ -50,11 +58,17 @@ trait Plugin
   /**
     * Returns the plugin's name.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin/name)
     */
   /* standard dom */
   val name: java.lang.String = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Plugin/namedItem)
+    */
   /* standard dom */
   def namedItem(name: java.lang.String): MimeType | Null = js.native
 }

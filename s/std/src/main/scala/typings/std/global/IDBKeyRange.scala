@@ -12,27 +12,47 @@ open class IDBKeyRange ()
   extends StObject
      with typings.std.IDBKeyRange {
   
-  /** Returns true if key is included in the range, and false otherwise. */
+  /**
+    * Returns true if key is included in the range, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/includes)
+    */
   /* standard dom */
   /* CompleteClass */
   override def includes(key: Any): scala.Boolean = js.native
   
-  /** Returns lower bound, or undefined if none. */
+  /**
+    * Returns lower bound, or undefined if none.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lower)
+    */
   /* standard dom */
   /* CompleteClass */
   override val lower: Any = js.native
   
-  /** Returns true if the lower open flag is set, and false otherwise. */
+  /**
+    * Returns true if the lower open flag is set, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerOpen)
+    */
   /* standard dom */
   /* CompleteClass */
   override val lowerOpen: scala.Boolean = js.native
   
-  /** Returns upper bound, or undefined if none. */
+  /**
+    * Returns upper bound, or undefined if none.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upper)
+    */
   /* standard dom */
   /* CompleteClass */
   override val upper: Any = js.native
   
-  /** Returns true if the upper open flag is set, and false otherwise. */
+  /**
+    * Returns true if the upper open flag is set, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperOpen)
+    */
   /* standard dom */
   /* CompleteClass */
   override val upperOpen: scala.Boolean = js.native
@@ -43,23 +63,39 @@ object IDBKeyRange {
   @js.native
   val ^ : js.Any = js.native
   
-  /** Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range. */
+  /**
+    * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/bound)
+    */
   /* standard dom */
   inline def bound(lower: Any, upper: Any): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   inline def bound(lower: Any, upper: Any, lowerOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   inline def bound(lower: Any, upper: Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   inline def bound(lower: Any, upper: Any, lowerOpen: Unit, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   
-  /** Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range. */
+  /**
+    * Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/lowerBound)
+    */
   /* standard dom */
   inline def lowerBound(lower: Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
   inline def lowerBound(lower: Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   
-  /** Returns a new IDBKeyRange spanning only key. */
+  /**
+    * Returns a new IDBKeyRange spanning only key.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/only)
+    */
   /* standard dom */
   inline def only(value: Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(value.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
   
-  /** Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range. */
+  /**
+    * Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBKeyRange/upperBound)
+    */
   /* standard dom */
   inline def upperBound(upper: Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
   inline def upperBound(upper: Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]

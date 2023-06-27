@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This ServiceWorker API interface provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker)
   */
 @js.native
 trait ServiceWorker
@@ -42,12 +44,14 @@ trait ServiceWorker
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker/statechange_event) */
   /* standard dom */
   var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /* standard dom */
   def postMessage(message: Any): Unit = js.native
   def postMessage(message: Any, options: StructuredSerializeOptions): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker/postMessage) */
   /* standard dom */
   def postMessage(message: Any, transfer: js.Array[Transferable]): Unit = js.native
   
@@ -77,9 +81,11 @@ trait ServiceWorker
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker/scriptURL) */
   /* standard dom */
   val scriptURL: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ServiceWorker/state) */
   /* standard dom */
   val state: ServiceWorkerState = js.native
 }

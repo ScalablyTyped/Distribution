@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  {[ K in keyof TPreloadedEntryPoints ]: react-relay.react-relay/relay-hooks/EntryPointTypes.ThinNestedEntryPointParams<TPreloadedEntryPoints[K]>}
+  {[ K in keyof TEntryPoints ]: react-relay.react-relay/relay-hooks/EntryPointTypes.ThinNestedEntryPointParams<TEntryPoints[K]>}
   }}}
   */
 @js.native
-trait ThinNestedEntryPointParamsObject[TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */] extends StObject
+trait ThinNestedEntryPointParamsObject[TEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */] extends StObject

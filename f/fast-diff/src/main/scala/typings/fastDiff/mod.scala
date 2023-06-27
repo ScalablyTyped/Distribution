@@ -12,7 +12,10 @@ object mod {
   
   inline def apply(text1: String, text2: String): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
   inline def apply(text1: String, text2: String, cursorPos: Double): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def apply(text1: String, text2: String, cursorPos: Double, cleanup: Boolean): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any], cleanup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def apply(text1: String, text2: String, cursorPos: Unit, cleanup: Boolean): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any], cleanup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
   inline def apply(text1: String, text2: String, cursorPos: CursorInfo): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def apply(text1: String, text2: String, cursorPos: CursorInfo, cleanup: Boolean): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].apply(text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any], cursorPos.asInstanceOf[js.Any], cleanup.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
   
   @JSImport("fast-diff", JSImport.Namespace)
   @js.native

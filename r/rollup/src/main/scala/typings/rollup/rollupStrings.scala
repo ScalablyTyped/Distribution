@@ -8,6 +8,8 @@ import typings.rollup.mod.GeneratedCodePreset
 import typings.rollup.mod.InputPluginHooks
 import typings.rollup.mod.InternalModuleFormat
 import typings.rollup.mod.InteropType
+import typings.rollup.mod.LogLevel
+import typings.rollup.mod.LogLevelOption
 import typings.rollup.mod.ModuleFormat
 import typings.rollup.mod.OutputPluginHooks
 import typings.rollup.mod.ParallelPluginHooks
@@ -160,6 +162,13 @@ object rollupStrings {
   inline def create: create = "create".asInstanceOf[create]
   
   @js.native
+  sealed trait debug
+    extends StObject
+       with LogLevel
+       with LogLevelOption
+  inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
   sealed trait defaultOnly
     extends StObject
        with InteropType
@@ -170,6 +179,10 @@ object rollupStrings {
     extends StObject
        with ChangeEvent
   inline def delete: delete = "delete".asInstanceOf[delete]
+  
+  @js.native
+  sealed trait error_ extends StObject
+  inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait es
@@ -241,6 +254,13 @@ object rollupStrings {
        with InternalModuleFormat
        with ModuleFormat
   inline def iife: iife = "iife".asInstanceOf[iife]
+  
+  @js.native
+  sealed trait info
+    extends StObject
+       with LogLevel
+       with LogLevelOption
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait `inline` extends StObject
@@ -316,6 +336,14 @@ object rollupStrings {
   inline def onError: onError = "onError".asInstanceOf[onError]
   
   @js.native
+  sealed trait onLog
+    extends StObject
+       with InputPluginHooks
+       with SequentialPluginHooks
+       with SyncPluginHooks
+  inline def onLog: onLog = "onLog".asInstanceOf[onLog]
+  
+  @js.native
   sealed trait onStart
     extends StObject
        with RollupWatchHooks
@@ -351,6 +379,10 @@ object rollupStrings {
   @js.native
   sealed trait pre extends StObject
   inline def pre: pre = "pre".asInstanceOf[pre]
+  
+  @js.native
+  sealed trait `prebuilt-chunk` extends StObject
+  inline def `prebuilt-chunk`: `prebuilt-chunk` = "prebuilt-chunk".asInstanceOf[`prebuilt-chunk`]
   
   @js.native
   sealed trait recommended
@@ -441,6 +473,12 @@ object rollupStrings {
   inline def shouldTransformCachedModule: shouldTransformCachedModule = "shouldTransformCachedModule".asInstanceOf[shouldTransformCachedModule]
   
   @js.native
+  sealed trait silent
+    extends StObject
+       with LogLevelOption
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
   sealed trait smallest
     extends StObject
        with TreeshakingPreset
@@ -485,6 +523,13 @@ object rollupStrings {
     extends StObject
        with ChangeEvent
   inline def update: update = "update".asInstanceOf[update]
+  
+  @js.native
+  sealed trait warn
+    extends StObject
+       with LogLevel
+       with LogLevelOption
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait watchChange

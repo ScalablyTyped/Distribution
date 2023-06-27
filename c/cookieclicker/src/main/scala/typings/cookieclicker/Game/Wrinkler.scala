@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Wrinkler extends StObject {
   
+  var clicks: Double
+  
   var close: Double
   
   var hp: Double
@@ -31,6 +33,7 @@ trait Wrinkler extends StObject {
 object Wrinkler {
   
   inline def apply(
+    clicks: Double,
     close: Double,
     hp: Double,
     hurt: Double,
@@ -43,13 +46,15 @@ object Wrinkler {
     x: Double,
     y: Double
   ): Wrinkler = {
-    val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], hp = hp.asInstanceOf[js.Any], hurt = hurt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], sucked = sucked.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clicks = clicks.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], hp = hp.asInstanceOf[js.Any], hurt = hurt.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], sucked = sucked.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wrinkler]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Wrinkler] (val x: Self) extends AnyVal {
+    
+    inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     
     inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

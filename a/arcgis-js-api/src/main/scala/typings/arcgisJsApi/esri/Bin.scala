@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bin extends StObject {
   
   /**
-    * The number of values in a dataset that are contained between the indicated `minValue` and `maxValue`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
-    */
+  		 * The number of values in a dataset that are contained between the indicated `minValue` and `maxValue`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
+  		 */
   var count: Double
   
   /**
-    * The maximum value (or bound) of the bin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
-    */
+  		 * The maximum value (or bound) of the bin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
+  		 */
   var maxValue: Double
   
   /**
-    * The minimum value (or bound) of the bin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
-    */
+  		 * The minimum value (or bound) of the bin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
+  		 */
   var minValue: Double
 }
 object Bin {

@@ -22,11 +22,11 @@ trait GetParametersPathOrg extends StObject {
     *
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
-  var post: Parameters47
+  var post: Parameters55
 }
 object GetParametersPathOrg {
   
-  inline def apply(get: ParametersPathOrg, post: Parameters47): GetParametersPathOrg = {
+  inline def apply(get: ParametersPathOrg, post: Parameters55): GetParametersPathOrg = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathOrg]
   }
@@ -36,6 +36,6 @@ object GetParametersPathOrg {
     
     inline def setGet(value: ParametersPathOrg): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: Parameters47): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Parameters55): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

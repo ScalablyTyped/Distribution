@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.LocalMediaElementSource")
 @js.native
 /**
-  * The LocalMediaElementSource is the default [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) for the MediaLayer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LocalMediaElementSource.html)
-  */
+		 * The LocalMediaElementSource is the default [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) for the MediaLayer.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LocalMediaElementSource.html)
+		 */
 open class LocalMediaElementSource ()
   extends StObject
      with typings.arcgisJsApi.esri.LocalMediaElementSource {

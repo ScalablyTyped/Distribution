@@ -11,10 +11,10 @@ object esriWidgetsZoomZoomViewModelMod {
   @JSImport("esri/widgets/Zoom/ZoomViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html)
-    */
+  		 * Provides the logic for the [Zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ZoomViewModel {

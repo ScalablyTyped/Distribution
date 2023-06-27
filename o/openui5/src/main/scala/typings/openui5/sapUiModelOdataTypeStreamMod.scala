@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`41`
+import typings.openui5.anon.`10`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -27,7 +27,7 @@ object sapUiModelOdataTypeStreamMod {
       /**
       * constraints; they are only stored for documentation purpose, since no validation can occur
       */
-    oConstraints: `41`
+    oConstraints: `10`
     ) = this()
     def this(
       /**
@@ -37,7 +37,7 @@ object sapUiModelOdataTypeStreamMod {
       /**
       * constraints; they are only stored for documentation purpose, since no validation can occur
       */
-    oConstraints: `41`
+    oConstraints: `10`
     ) = this()
   }
   /* static members */
@@ -113,7 +113,7 @@ object sapUiModelOdataTypeStreamMod {
     extends typings.openui5.sapUiModelOdataTypeOdatatypeMod.default {
     
     /**
-      * @SINCE 1.51.0
+      * @since 1.51.0
       *
       * Returns the input value unchanged.
       * See:
@@ -133,7 +133,7 @@ object sapUiModelOdataTypeStreamMod {
     ): String = js.native
     
     /**
-      * @SINCE 1.51.0
+      * @since 1.51.0
       *
       * Method not supported
       * See:
@@ -142,7 +142,7 @@ object sapUiModelOdataTypeStreamMod {
     def parseValue(): Unit = js.native
     
     /**
-      * @SINCE 1.51.0
+      * @since 1.51.0
       *
       * Method not supported
       * See:

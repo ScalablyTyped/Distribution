@@ -11,7 +11,7 @@ object sapUiBaseEventMod {
   
   @JSImport("sap/ui/base/Event", JSImport.Default)
   @js.native
-  open class default protected () extends Event {
+  open class default[ParamsType /* <: Record[String, Any] */] protected () extends Event[ParamsType] {
     /**
       * Creates an event with the given `sId`, linked to the provided `oSource` and enriched with the `mParameters`.
       */
@@ -27,14 +27,14 @@ object sapUiBaseEventMod {
       /**
       * Parameters for this event
       */
-    oParameters: js.Object
+    oParameters: ParamsType
     ) = this()
     
     /* CompleteClass */
     var __implements__sap_ui_base_Poolable: Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called by the `ObjectPool` when this instance will be activated for a caller.
       *
@@ -52,7 +52,7 @@ object sapUiBaseEventMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called by the object pool when an instance is returned to the pool.
       *
@@ -105,7 +105,7 @@ object sapUiBaseEventMod {
       /**
       * Object literal with information about the class
       */
-    oClassInfo: ClassInfo[T, Event]
+    oClassInfo: ClassInfo[T, Event[js.Object]]
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
@@ -115,7 +115,7 @@ object sapUiBaseEventMod {
       /**
       * Object literal with information about the class
       */
-    oClassInfo: ClassInfo[T, Event],
+    oClassInfo: ClassInfo[T, Event[js.Object]],
       /**
       * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
       * used by this class
@@ -132,7 +132,7 @@ object sapUiBaseEventMod {
   }
   
   @js.native
-  trait Event
+  trait Event[ParamsType /* <: Record[String, Any] */]
     extends typings.openui5.sapUiBaseObjectMod.default
        with Poolable {
     
@@ -155,17 +155,17 @@ object sapUiBaseEventMod {
       *
       * @returns Value of the named parameter
       */
-    def getParameter(/**
+    def getParameter[ParamName /* <: /* keyof ParamsType */ String */](/**
       * Name of the parameter to return
       */
-    sName: String): Any = js.native
+    sName: ParamName): /* import warning: importer.ImportType#apply Failed type conversion: ParamsType[ParamName] */ js.Any = js.native
     
     /**
       * Returns an object with all parameter values of the event.
       *
       * @returns All parameters of the event
       */
-    def getParameters(): Record[String, Any] = js.native
+    def getParameters(): ParamsType = js.native
     
     /**
       * Returns the event provider on which the event was fired.
@@ -175,7 +175,7 @@ object sapUiBaseEventMod {
     def getSource(): typings.openui5.sapUiBaseEventProviderMod.default = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Init this event with its data.
       *
@@ -207,7 +207,7 @@ object sapUiBaseEventMod {
       /**
       * The event parameters
       */
-    oParameters: js.Object
+    oParameters: ParamsType
     ): Unit = js.native
     
     /**

@@ -6,11 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultUserRolePermissions extends StObject {
   
-  // Indicates whether the default user role can create applications.
+  /**
+    * Indicates whether the default user role can create applications. This setting corresponds to the Users can register
+    * applications setting in the User settings menu in the Azure portal.
+    */
   var allowedToCreateApps: js.UndefOr[Boolean] = js.undefined
   
-  // Indicates whether the default user role can create security groups.
+  /**
+    * Indicates whether the default user role can create security groups. This setting corresponds to the following menus in
+    * the Azure portal: The Users can create security groups in Azure portals, API or PowerShell setting in the Group
+    * settings menu. Users can create security groups setting in the User settings menu.
+    */
   var allowedToCreateSecurityGroups: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether the default user role can create tenants. This setting corresponds to the Restrict non-admin users
+    * from creating tenants setting in the User settings menu in the Azure portal. When this setting is false, users assigned
+    * the Tenant Creator role can still create tenants.
+    */
+  var allowedToCreateTenants: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
   var allowedToReadBitlockerKeysForOwnedDevice: js.UndefOr[NullableOption[Boolean]] = js.undefined
@@ -43,6 +57,12 @@ object DefaultUserRolePermissions {
     inline def setAllowedToCreateSecurityGroups(value: Boolean): Self = StObject.set(x, "allowedToCreateSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setAllowedToCreateSecurityGroupsUndefined: Self = StObject.set(x, "allowedToCreateSecurityGroups", js.undefined)
+    
+    inline def setAllowedToCreateTenants(value: NullableOption[Boolean]): Self = StObject.set(x, "allowedToCreateTenants", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedToCreateTenantsNull: Self = StObject.set(x, "allowedToCreateTenants", null)
+    
+    inline def setAllowedToCreateTenantsUndefined: Self = StObject.set(x, "allowedToCreateTenants", js.undefined)
     
     inline def setAllowedToReadBitlockerKeysForOwnedDevice(value: NullableOption[Boolean]): Self = StObject.set(x, "allowedToReadBitlockerKeysForOwnedDevice", value.asInstanceOf[js.Any])
     

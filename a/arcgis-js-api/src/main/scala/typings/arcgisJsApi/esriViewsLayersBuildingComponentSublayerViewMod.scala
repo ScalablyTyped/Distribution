@@ -11,10 +11,10 @@ object esriViewsLayersBuildingComponentSublayerViewMod {
   @JSImport("esri/views/layers/BuildingComponentSublayerView", JSImport.Namespace)
   @js.native
   /**
-    * Represents the sublayer view of a [BuildingComponentSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-BuildingComponentSublayerView.html)
-    */
+  		 * Represents the sublayer view of a [BuildingComponentSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingComponentSublayer.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-BuildingComponentSublayerView.html)
+  		 */
   open class ^ ()
     extends StObject
        with BuildingComponentSublayerView {

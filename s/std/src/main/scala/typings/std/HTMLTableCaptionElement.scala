@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating table caption elements. */
+/**
+  * Special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating table caption elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement)
+  */
 @js.native
 trait HTMLTableCaptionElement
   extends StObject
@@ -24,6 +28,8 @@ trait HTMLTableCaptionElement
   /**
     * Sets or retrieves the alignment of the caption or legend.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTableCaptionElement/align)
     */
   /* standard dom */
   var align: java.lang.String = js.native

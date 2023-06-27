@@ -28,6 +28,7 @@ open class PKCS8ShroudedKeyBag ()
   var encryptionAlgorithm: AlgorithmIdentifier = js.native
   
   def makeInternalValues(parameters: PKCS8ShroudedKeyBagMakeInternalValuesParams): js.Promise[Unit] = js.native
+  def makeInternalValues(parameters: PKCS8ShroudedKeyBagMakeInternalValuesParams, crypto: ICryptoEngine): js.Promise[Unit] = js.native
   
   /* protected */ def parseInternalValues(parameters: Password): js.Promise[Unit] = js.native
   /* protected */ def parseInternalValues(parameters: Password, crypto: ICryptoEngine): js.Promise[Unit] = js.native

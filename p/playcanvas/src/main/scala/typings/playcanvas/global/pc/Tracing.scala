@@ -47,6 +47,7 @@ object Tracing {
     * - {@link TRACEID_VRAM_IB}
     * - {@link TRACEID_RENDERPIPELINE_ALLOC}
     * - {@link TRACEID_PIPELINELAYOUT_ALLOC}
+    * - {@link TRACEID_TEXTURES}
     *
     * @param {boolean} enabled - New enabled state for the channel.
     */

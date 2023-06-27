@@ -17,9 +17,9 @@ trait VoiceControlClientManager extends StObject {
     *
     * @returns The object to manage voice control.
     *
-    * @throw WebAPIException with error type NotSupportedError, if this feature is not supported.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation cannot be finished properly.
+    * @throws WebAPIException with error type NotSupportedError, if this feature is not supported.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation cannot be finished properly.
     */
   def getVoiceControlClient(): VoiceControlClient
 }

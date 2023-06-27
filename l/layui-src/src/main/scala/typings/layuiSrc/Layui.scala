@@ -283,6 +283,7 @@ import typings.layuiSrc.layuiSrcStrings.s
 import typings.layuiSrc.layuiSrcStrings.samp
 import typings.layuiSrc.layuiSrcStrings.script
 import typings.layuiSrc.layuiSrcStrings.scroll
+import typings.layuiSrc.layuiSrcStrings.search
 import typings.layuiSrc.layuiSrcStrings.section
 import typings.layuiSrc.layuiSrcStrings.securitypolicyviolation
 import typings.layuiSrc.layuiSrcStrings.seeked
@@ -3033,9 +3034,9 @@ object Layui {
     @JSName("concat")
     var concat_Original: js.Function1[/* repeated */ js.Array[Any], js.Array[Any]] = js.native
     
-    def copyWithin(target: Double, start: Double): this.type = js.native
+    def copyWithin(target: Double): this.type = js.native
     @JSName("copyWithin")
-    var copyWithin_Original: js.Function2[/* target */ Double, /* start */ Double, this.type] = js.native
+    var copyWithin_Original: js.Function1[/* target */ Double, this.type] = js.native
     
     /**
       * 获取 css style
@@ -3729,6 +3730,10 @@ object Layui {
     def elem_script(elemName: script): HTMLScriptElement = js.native
     @JSName("elem")
     def elem_script(elemName: script, attr: js.Object): HTMLScriptElement = js.native
+    @JSName("elem")
+    def elem_search(elemName: search): HTMLElement = js.native
+    @JSName("elem")
+    def elem_search(elemName: search, attr: js.Object): HTMLElement = js.native
     @JSName("elem")
     def elem_section(elemName: section): HTMLElement = js.native
     @JSName("elem")

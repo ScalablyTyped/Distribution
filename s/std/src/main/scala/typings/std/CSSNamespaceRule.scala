@@ -4,14 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An object representing a single CSS @namespace at-rule. It implements the CSSRule interface, with a type value of 10 (CSSRule.NAMESPACE_RULE). */
+/**
+  * An object representing a single CSS @namespace at-rule. It implements the CSSRule interface, with a type value of 10 (CSSRule.NAMESPACE_RULE).
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule)
+  */
 trait CSSNamespaceRule
   extends StObject
      with CSSRule {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/namespaceURI) */
   /* standard dom */
   val namespaceURI: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSNamespaceRule/prefix) */
   /* standard dom */
   val prefix: java.lang.String
 }

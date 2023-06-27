@@ -7,6 +7,7 @@ import typings.rollup.anon.Change
 import typings.rollup.anon.ChunkId
 import typings.rollup.anon.Chunks
 import typings.rollup.anon.Code
+import typings.rollup.anon.Column
 import typings.rollup.anon.Custom
 import typings.rollup.anon.Event
 import typings.rollup.anon.FileName
@@ -15,6 +16,7 @@ import typings.rollup.anon.PartialSourceDescription
 import typings.rollup.mod.^
 import typings.rollup.rollupBooleans.`false`
 import typings.rollup.rollupStrings.`no-external`
+import typings.rollup.rollupStrings.error_
 import typings.std.Parameters
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -89,6 +91,23 @@ type LoadHook = js.ThisFunction1[/* this */ PluginContext, /* id */ String, Load
 
 type LoadResult = SourceDescription | String | NullValue
 
+type LogHandler = js.Function2[/* level */ LogLevel, /* log */ RollupLog, Unit]
+
+type LogHandlerWithDefault = js.Function3[
+/* level */ LogLevel, 
+/* log */ RollupLog, 
+/* defaultHandler */ LogOrStringHandler, 
+Unit]
+
+type LogOrStringHandler = js.Function2[/* level */ LogLevel | error_, /* log */ RollupLog | String, Unit]
+
+type LoggingFunction = js.Function1[/* log */ RollupLog | String | (js.Function0[RollupLog | String]), Unit]
+
+type LoggingFunctionWithPosition = js.Function2[
+/* log */ RollupLog | String | (js.Function0[RollupLog | String]), 
+/* pos */ js.UndefOr[Double | Column], 
+Unit]
+
 type ManualChunksOption = StringDictionary[js.Array[String]] | GetManualChunk
 
 type MaybeArray[T] = T | js.Array[T]
@@ -130,8 +149,6 @@ to avoid circular code involving:
 type OutputPluginOption = Any
 
 type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
-
-type PureModulesOption = Boolean | js.Array[String] | IsPureModule
 
 type RenderChunkHook = js.ThisFunction4[
 /* this */ PluginContext, 
@@ -212,8 +229,6 @@ type TransformHook = js.ThisFunction2[/* this */ TransformPluginContext, /* code
 
 type TransformResult = String | NullValue | PartialSourceDescription
 
-type WarningHandler = js.Function1[/* warning */ RollupWarning, Unit]
-
-type WarningHandlerWithDefault = js.Function2[/* warning */ RollupWarning, /* defaultHandler */ WarningHandler, Unit]
+type WarningHandlerWithDefault = js.Function2[/* warning */ RollupLog, /* defaultHandler */ LoggingFunction, Unit]
 
 type WatchChangeHook = js.ThisFunction2[/* this */ PluginContext, /* id */ String, /* change */ Event, Unit]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tabbable" : "6.0.0"
+      "tabbable" : "6.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "tabbable" : "6.0.0"
+      "tabbable" : "6.1.2"
     }
   ],
   "compile-devDependencies" : [

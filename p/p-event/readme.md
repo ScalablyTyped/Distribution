@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-event
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0
 
 ## Library description:
 Promisify an event by waiting for it to be emitted

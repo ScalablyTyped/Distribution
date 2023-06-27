@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-position-from-estree
 
-Typings are for version 1.1.1
+Typings are for version 1.1.2
 
 ## Library description:
 unist utility to get a position from an estree node

@@ -85,15 +85,26 @@ open class BlendState protected ()
 object BlendState {
   
   /**
-    * A default blend state that has blending disabled and writes to all color channels.
+    * A blend state that does simple translucency using alpha channel.
     *
     * @type {BlendState}
     * @readonly
     */
   /* static member */
-  @JSGlobal("pc.BlendState.DEFAULT")
+  @JSGlobal("pc.BlendState.ALPHABLEND")
   @js.native
-  val DEFAULT: typings.playcanvas.mod.BlendState = js.native
+  val ALPHABLEND: typings.playcanvas.mod.BlendState = js.native
+  
+  /**
+    * A blend state that has blending disabled and writes to all color channels.
+    *
+    * @type {BlendState}
+    * @readonly
+    */
+  /* static member */
+  @JSGlobal("pc.BlendState.NOBLEND")
+  @js.native
+  val NOBLEND: typings.playcanvas.mod.BlendState = js.native
   
   /**
     * A blend state that does not write to color channels.

@@ -1,12 +1,12 @@
 package typings.openui5
 
-import typings.openui5.anon.ChangeWithClick
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiWebcFioriLibraryMod.IWizardStep
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -150,13 +150,13 @@ object sapUiWebcFioriWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit]
     ): this.type = js.native
     def attachStepChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.Wizard` itself
       */
@@ -182,7 +182,7 @@ object sapUiWebcFioriWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit]
     ): this.type = js.native
     def attachStepChange(
       /**
@@ -193,7 +193,7 @@ object sapUiWebcFioriWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.Wizard` itself
       */
@@ -218,13 +218,13 @@ object sapUiWebcFioriWizardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit]
     ): this.type = js.native
     def detachStepChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -232,7 +232,7 @@ object sapUiWebcFioriWizardMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stepChange stepChange} to attached listeners.
       *
@@ -242,7 +242,7 @@ object sapUiWebcFioriWizardMod {
     def fireStepChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: ChangeWithClick): this.type = js.native
+    mParameters: Wizard$StepChangeEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getHeight height}.
@@ -333,6 +333,47 @@ object sapUiWebcFioriWizardMod {
     sHeight: CSSSize): this.type = js.native
   }
   
+  trait Wizard$StepChangeEventParameters extends StObject {
+    
+    /**
+      * The step change occurs due to user's click or 'Enter'/'Space' key press on step within the navigation.
+      */
+    var changeWithClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The previous step.
+      */
+    var previousStep: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The new step.
+      */
+    var step: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Wizard$StepChangeEventParameters {
+    
+    inline def apply(): Wizard$StepChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Wizard$StepChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wizard$StepChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChangeWithClick(value: Boolean): Self = StObject.set(x, "changeWithClick", value.asInstanceOf[js.Any])
+      
+      inline def setChangeWithClickUndefined: Self = StObject.set(x, "changeWithClick", js.undefined)
+      
+      inline def setPreviousStep(value: HTMLElement): Self = StObject.set(x, "previousStep", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousStepUndefined: Self = StObject.set(x, "previousStep", js.undefined)
+      
+      inline def setStep(value: HTMLElement): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    }
+  }
+  
   trait WizardSettings
     extends StObject
        with ControlSettings {
@@ -348,7 +389,12 @@ object sapUiWebcFioriWizardMod {
       * Fired when the step is changed by user interaction - either with scrolling, or by clicking on the steps
       * within the component header.
       */
-    var stepChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stepChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Wizard$StepChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the steps.
@@ -373,7 +419,9 @@ object sapUiWebcFioriWizardMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setStepChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stepChange", js.Any.fromFunction1(value))
+      inline def setStepChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Wizard$StepChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "stepChange", js.Any.fromFunction1(value))
       
       inline def setStepChangeUndefined: Self = StObject.set(x, "stepChange", js.undefined)
       
@@ -386,4 +434,8 @@ object sapUiWebcFioriWizardMod {
       inline def setStepsVarargs(value: IWizardStep*): Self = StObject.set(x, "steps", js.Array(value*))
     }
   }
+  
+  type WizardStepChangeEvent = typings.openui5.sapUiBaseEventMod.default[Wizard$StepChangeEventParameters]
+  
+  type WizardStepChangeEventParameters = Wizard$StepChangeEventParameters
 }

@@ -1,8 +1,8 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.AllPerformanceEntry
-import typings.sentryReplay.typesTypesMod.AllPerformanceEntryData
-import typings.sentryReplay.typesTypesMod.ReplayPerformanceEntry
+import typings.sentryReplay.typesTypesPerformanceMod.AllPerformanceEntry
+import typings.sentryReplay.typesTypesPerformanceMod.AllPerformanceEntryData
+import typings.sentryReplay.typesTypesPerformanceMod.ReplayPerformanceEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

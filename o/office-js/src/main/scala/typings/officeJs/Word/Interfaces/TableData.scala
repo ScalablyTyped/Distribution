@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableData extends StObject {
   
   /**
-    * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+    * Specifies the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait TableData extends StObject {
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    * Gets and sets the number of header rows.
+    * Specifies the number of header rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -51,7 +51,7 @@ trait TableData extends StObject {
   var headerRowCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+    * Specifies the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait TableData extends StObject {
   var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
   
   /**
-    * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+    * Specifies the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait TableData extends StObject {
   var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +107,7 @@ trait TableData extends StObject {
   var style: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets and sets whether the table has banded columns.
+    * Specifies whether the table has banded columns.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -115,7 +115,7 @@ trait TableData extends StObject {
   var styleBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets whether the table has banded rows.
+    * Specifies whether the table has banded rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -123,17 +123,17 @@ trait TableData extends StObject {
   var styleBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
   ] = js.undefined
   
   /**
-    * Gets and sets whether the table has a first column with a special style.
+    * Specifies whether the table has a first column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -141,7 +141,7 @@ trait TableData extends StObject {
   var styleFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets whether the table has a last column with a special style.
+    * Specifies whether the table has a last column with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -149,7 +149,7 @@ trait TableData extends StObject {
   var styleLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets and sets whether the table has a total (last) row with a special style.
+    * Specifies whether the table has a total (last) row with a special style.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -165,7 +165,7 @@ trait TableData extends StObject {
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
-    * Gets and sets the text values in the table, as a 2D Javascript array.
+    * Specifies the text values in the table, as a 2D JavaScript array.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -173,7 +173,7 @@ trait TableData extends StObject {
   var values: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
-    * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+    * Specifies the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -181,7 +181,7 @@ trait TableData extends StObject {
   var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
   
   /**
-    * Gets and sets the width of the table in points.
+    * Specifies the width of the table in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -253,7 +253,7 @@ object TableData {
     inline def setStyleBandedRowsUndefined: Self = StObject.set(x, "styleBandedRows", js.undefined)
     
     inline def setStyleBuiltIn(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any
     ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)

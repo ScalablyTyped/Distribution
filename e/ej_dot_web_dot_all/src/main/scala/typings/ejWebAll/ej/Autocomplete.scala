@@ -705,33 +705,33 @@ object Autocomplete {
     var actionSuccess: js.UndefOr[js.Function1[/* e */ ActionSuccessEventArgs, Unit]] = js.undefined
     
     /** Customize &quot;Add New&quot; text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it.
-      * @Default {Add New}
+      * @default {Add New}
       */
     var addNewText: js.UndefOr[String] = js.undefined
     
     /** Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display â€œNo suggestionsâ€
       * label in the popup.
-      * @Default {false}
+      * @default {false}
       */
     var allowAddNew: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order.
-      * @Default {true}
+      * @default {true}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables selecting the animation style for the popup list. Animation types can be selected through either of the following options,
-      * @Default {slide}
+      * @default {slide}
       */
     var animateType: js.UndefOr[typings.ejWebAll.ej.Animation | String] = js.undefined
     
     /** To focus the items in the suggestion list when the popup is shown. By default first item will be focused.
-      * @Default {false}
+      * @default {false}
       */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the case sensitive search.
-      * @Default {false}
+      * @default {false}
       */
     var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
@@ -748,23 +748,23 @@ object Autocomplete {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** The root class for the Autocomplete textbox widget which helps in customizing its theme.
-      * @Default {â€â€}
+      * @default {â€â€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** The data source contains the list of data for the suggestions list. It can be a string array or JSON array or service URL that returns JSON.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
     /** The time delay (in milliseconds) after which the suggestion popup will be shown.
-      * @Default {200}
+      * @default {200}
       */
     var delaySuggestionTimeout: js.UndefOr[Double] = js.undefined
     
     /** The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search
       * operation.
-      * @Default {â€™,â€™}
+      * @default {â€™,â€™}
       */
     var delimiterChar: js.UndefOr[String] = js.undefined
     
@@ -773,44 +773,44 @@ object Autocomplete {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The text to be displayed in the popup when there are no suggestions available for the entered text.
-      * @Default {â€œNo suggestionsâ€}
+      * @default {â€œNo suggestionsâ€}
       */
     var emptyResultText: js.UndefOr[String] = js.undefined
     
     /** Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled.
-      * @Default {false}
+      * @default {false}
       */
     var enableAutoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables displaying the duplicate names present in the search result.
-      * @Default {false}
+      * @default {false}
       */
     var enableDistinct: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true. While refreshing the page, it retains the model value
       * from browser cookies or local storage.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the Autocomplete widgetâ€™s content from right to left when enabled.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Autocomplete textbox widget.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Mapping fields for the suggestion items of the Autocomplete textbox widget.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
     /** Specifies the search filter type. There are several types of search filter available such as â€˜startswithâ€™, â€˜containsâ€™, â€˜endswithâ€™, â€˜lessthanâ€™,
       * â€˜lessthanorequalâ€™, â€˜greaterthanâ€™, â€˜greaterthanorequalâ€™, â€˜equalâ€™, â€˜notequalâ€™.
-      * @Default {ej.filterType.StartsWith}
+      * @default {ej.filterType.StartsWith}
       */
     var filterType: js.UndefOr[String] = js.undefined
     
@@ -823,22 +823,22 @@ object Autocomplete {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** The height of the Autocomplete textbox.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** The search text can be highlighted in the AutoComplete suggestion list when enabled.
-      * @Default {false}
+      * @default {false}
       */
     var highlightSearch: js.UndefOr[Boolean] = js.undefined
     
     /** To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
-      * @Default {false}
+      * @default {false}
       */
     var ignoreAccent: js.UndefOr[Boolean] = js.undefined
     
     /** Number of items to be displayed in the suggestion list.
-      * @Default {0}
+      * @default {0}
       */
     var itemsCount: js.UndefOr[Double] = js.undefined
     
@@ -847,7 +847,7 @@ object Autocomplete {
     var locale: js.UndefOr[String] = js.undefined
     
     /** Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
-      * @Default {1}
+      * @default {1}
       */
     var minCharacter: js.UndefOr[Double] = js.undefined
     
@@ -857,7 +857,7 @@ object Autocomplete {
     var multiColumnSettings: js.UndefOr[MultiColumnSettings] = js.undefined
     
     /** Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
-      * @Default {ej.MultiSelectMode.None}
+      * @default {ej.MultiSelectMode.None}
       */
     var multiSelectMode: js.UndefOr[typings.ejWebAll.ej.MultiSelectMode | String] = js.undefined
     
@@ -866,22 +866,22 @@ object Autocomplete {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** The height of the suggestion list.
-      * @Default {â€œ152pxâ€}
+      * @default {â€œ152pxâ€}
       */
     var popupHeight: js.UndefOr[String] = js.undefined
     
     /** The width of the suggestion list.
-      * @Default {â€œautoâ€}
+      * @default {â€œautoâ€}
       */
     var popupWidth: js.UndefOr[String] = js.undefined
     
     /** The query to retrieve the data from the data source.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Query] = js.undefined
     
     /** Indicates that the autocomplete textbox values can only be readable.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -894,67 +894,67 @@ object Autocomplete {
     var selectValueByKey: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables showing the message when there are no suggestions for the entered text.
-      * @Default {true}
+      * @default {true}
       */
     var showEmptyResultText: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
-      * @Default {true}
+      * @default {true}
       */
     var showLoadingIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the showPopup button in autocomplete textbox. When the showPopup button is clicked, it displays all the available data from the data source.
-      * @Default {false}
+      * @default {false}
       */
     var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables reset icon to clear the textbox values.
-      * @Default {false}
+      * @default {false}
       */
     var showResetIcon: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables rounded corner.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Sort order specifies whether the suggestion list values has to be displayed in ascending or descending order.
-      * @Default {ej.SortOrder.Ascending}
+      * @default {ej.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** The template to display the suggestion list items with customized appearance.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** The jQuery validation error message to be displayed on form validation.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** The jQuery validation rules for form validation.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** The value to be displayed in the autocomplete textbox.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the visibility of the autocomplete textbox.
-      * @Default {true}
+      * @default {true}
       */
     var visible: js.UndefOr[Boolean] = js.undefined
     
     /** The text to be displayed when the value of the autocomplete textbox is empty.
-      * @Default {null}
+      * @default {null}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** The width of the Autocomplete textbox.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -1203,7 +1203,7 @@ object Autocomplete {
     var columns: js.UndefOr[js.Array[MultiColumnSettingsColumn]] = js.undefined
     
     /** Allow list of data to be displayed in several columns.
-      * @Default {false}
+      * @default {false}
       */
     var enable: js.UndefOr[Boolean] = js.undefined
     
@@ -1212,7 +1212,7 @@ object Autocomplete {
     var searchColumnIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Allow header text to be displayed in corresponding columns.
-      * @Default {true}
+      * @default {true}
       */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
@@ -1268,7 +1268,7 @@ object Autocomplete {
     
     /** Specifies the search filter type. There are several types of search filter available such as â€˜startswithâ€™, â€˜containsâ€™, â€˜endswithâ€™, â€˜lessthanâ€™,
       * â€˜lessthanorequalâ€™, â€˜greaterthanâ€™, â€˜greaterthanorequalâ€™, â€˜equalâ€™, â€˜notequalâ€™.
-      * @Default {ej.filterType.StartsWith}
+      * @default {ej.filterType.StartsWith}
       */
     var filterType: js.UndefOr[typings.ejWebAll.ej.filterType | String] = js.undefined
     
@@ -1277,17 +1277,17 @@ object Autocomplete {
     var headerText: js.UndefOr[String] = js.undefined
     
     /** This defines the text alignment of a particular column header cell value. See headerTextAlign
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var headerTextAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Gets or sets a value that indicates to align the text within the column. See textAlign
-      * @Default {ej.TextAlign.Left}
+      * @default {ej.TextAlign.Left}
       */
     var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Specifies the search data type. There are four types of data types available such as string, â€˜numberâ€™, â€˜booleanâ€™ and â€˜dateâ€™.
-      * @Default {ej.Type.String}
+      * @default {ej.Type.String}
       */
     var `type`: js.UndefOr[Type | String] = js.undefined
   }

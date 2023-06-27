@@ -356,6 +356,7 @@ import typings.vueRuntimeCore.vueRuntimeCoreStrings.ruby
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.s
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.samp
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.script
+import typings.vueRuntimeCore.vueRuntimeCoreStrings.search
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.section
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.select
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.semantics
@@ -482,6 +483,8 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     * For the purposes of this API, when a child browsing context is focused, its container is focused in the parent browsing context. For example, if the user moves the focus to a text control in an iframe, the iframe is the element returned by the activeElement API in the iframe's node document.
     *
     * Similarly, when the focused element is in a different node tree than documentOrShadowRoot, the element returned will be the host that's located in the same node tree as documentOrShadowRoot if documentOrShadowRoot is a shadow-including inclusive ancestor of the focused element, and null if not.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/activeElement)
     */
   /* standard dom */
   val activeElement: Element | Null = js.native
@@ -500,6 +503,8 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     * If an AbortSignal is passed for options's signal, then the event listener will be removed when signal is aborted.
     *
     * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
     */
   /* standard dom */
   def addEventListener(`type`: String): Unit = js.native
@@ -526,6 +531,7 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/adoptedStyleSheets) */
   /* standard dom */
   var adoptedStyleSheets: js.Array[CSSStyleSheet] = js.native
   
@@ -533,46 +539,79 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/append)
     */
   /* standard dom */
   def append(nodes: (Node | String)*): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/appendChild) */
   /* standard dom */
   def appendChild[T /* <: Node */](node: T): T = js.native
   
-  /** Returns node's node document's document base URL. */
+  /**
+    * Returns node's node document's document base URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/baseURI)
+    */
   /* standard dom */
   val baseURI: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/childElementCount) */
   /* standard dom */
   val childElementCount: Double = js.native
   
-  /** Returns the children. */
+  /**
+    * Returns the children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/childNodes)
+    */
   /* standard dom */
   val childNodes: NodeListOf[ChildNode] = js.native
   
-  /** Returns the child elements. */
+  /**
+    * Returns the child elements.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/children)
+    */
   /* standard dom */
   val children: HTMLCollection = js.native
   
-  /** Returns a copy of node. If deep is true, the copy also includes the node's descendants. */
+  /**
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/cloneNode)
+    */
   /* standard dom */
   def cloneNode(): Node = js.native
   def cloneNode(deep: Boolean): Node = js.native
   
-  /** Returns a bitmask indicating the position of other relative to node. */
+  /**
+    * Returns a bitmask indicating the position of other relative to node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/compareDocumentPosition)
+    */
   /* standard dom */
   def compareDocumentPosition(other: Node): Double = js.native
   
-  /** Returns true if other is an inclusive descendant of node, and false otherwise. */
+  /**
+    * Returns true if other is an inclusive descendant of node, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/contains)
+    */
   /* standard dom */
   def contains(): Boolean = js.native
   def contains(other: Node): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/delegatesFocus) */
   /* standard dom */
   val delegatesFocus: Boolean = js.native
   
-  /** Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise. */
+  /**
+    * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/dispatchEvent)
+    */
   /* standard dom */
   def dispatchEvent(event: Event): Boolean = js.native
   
@@ -587,96 +626,162 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   /* standard dom */
   def elementsFromPoint(x: Double, y: Double): js.Array[Element] = js.native
   
-  /** Returns the first child. */
+  /**
+    * Returns the first child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/firstChild)
+    */
   /* standard dom */
   val firstChild: ChildNode | Null = js.native
   
-  /** Returns the first child that is an element, and null otherwise. */
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/firstElementChild)
+    */
   /* standard dom */
   val firstElementChild: Element | Null = js.native
   
-  /** Returns document's fullscreen element. */
+  /**
+    * Returns document's fullscreen element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fullscreenElement)
+    */
   /* standard dom */
   val fullscreenElement: Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getAnimations) */
   /* standard dom */
   def getAnimations(): js.Array[Animation] = js.native
   
   /* standard dom */
-  /** Returns the first element within node's descendants whose ID is elementId. */
+  /**
+    * Returns the first element within node's descendants whose ID is elementId.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/getElementById)
+    */
   def getElementById(elementId: String): HTMLElement | Null = js.native
   
-  /** Returns node's root. */
+  /**
+    * Returns node's root.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/getRootNode)
+    */
   /* standard dom */
   def getRootNode(): Node = js.native
   def getRootNode(options: GetRootNodeOptions): Node = js.native
   
-  /** Returns whether node has children. */
+  /**
+    * Returns whether node has children.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/hasChildNodes)
+    */
   /* standard dom */
   def hasChildNodes(): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/host) */
   /* standard dom */
   val host: Element = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/innerHTML) */
   /* standard dom */
   var innerHTML: String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/insertBefore) */
   /* standard dom */
   def insertBefore[T /* <: Node */](node: T): T = js.native
   def insertBefore[T /* <: Node */](node: T, child: Node): T = js.native
   
-  /** Returns true if node is connected and false otherwise. */
+  /**
+    * Returns true if node is connected and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isConnected)
+    */
   /* standard dom */
   val isConnected: Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isDefaultNamespace) */
   /* standard dom */
   def isDefaultNamespace(): Boolean = js.native
   def isDefaultNamespace(namespace: String): Boolean = js.native
   
-  /** Returns whether node and otherNode have the same properties. */
+  /**
+    * Returns whether node and otherNode have the same properties.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isEqualNode)
+    */
   /* standard dom */
   def isEqualNode(): Boolean = js.native
   def isEqualNode(otherNode: Node): Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isSameNode) */
   /* standard dom */
   def isSameNode(): Boolean = js.native
   def isSameNode(otherNode: Node): Boolean = js.native
   
-  /** Returns the last child. */
+  /**
+    * Returns the last child.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lastChild)
+    */
   /* standard dom */
   val lastChild: ChildNode | Null = js.native
   
-  /** Returns the last child that is an element, and null otherwise. */
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lastElementChild)
+    */
   /* standard dom */
   val lastElementChild: Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupNamespaceURI) */
   /* standard dom */
   def lookupNamespaceURI(): String | Null = js.native
   def lookupNamespaceURI(prefix: String): String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupPrefix) */
   /* standard dom */
   def lookupPrefix(): String | Null = js.native
   def lookupPrefix(namespace: String): String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/mode) */
   /* standard dom */
   val mode: ShadowRootMode = js.native
   
-  /** Returns the next sibling. */
+  /**
+    * Returns the next sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nextSibling)
+    */
   /* standard dom */
   val nextSibling: ChildNode | Null = js.native
   
-  /** Returns a string appropriate for the type of node. */
+  /**
+    * Returns a string appropriate for the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeName)
+    */
   /* standard dom */
   val nodeName: String = js.native
   
-  /** Returns the type of node. */
+  /**
+    * Returns the type of node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeType)
+    */
   /* standard dom */
   val nodeType: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeValue) */
   /* standard dom */
   var nodeValue: String | Null = js.native
   
-  /** Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes. */
+  /**
+    * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/normalize)
+    */
   /* standard dom */
   def normalize(): Unit = js.native
   
@@ -686,17 +791,27 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   /* standard dom */
   val ownerDocument: Document = js.native
   
-  /** Returns the parent element. */
+  /**
+    * Returns the parent element.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentElement)
+    */
   /* standard dom */
   val parentElement: HTMLElement | Null = js.native
   
-  /** Returns the parent. */
+  /**
+    * Returns the parent.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/parentNode)
+    */
   /* standard dom */
   val parentNode: ParentNode | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pictureInPictureElement) */
   /* standard dom */
   val pictureInPictureElement: Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/pointerLockElement) */
   /* standard dom */
   val pointerLockElement: Element | Null = js.native
   
@@ -704,11 +819,17 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/prepend)
     */
   /* standard dom */
   def prepend(nodes: (Node | String)*): Unit = js.native
   
-  /** Returns the previous sibling. */
+  /**
+    * Returns the previous sibling.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/previousSibling)
+    */
   /* standard dom */
   val previousSibling: ChildNode | Null = js.native
   
@@ -717,7 +838,11 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   
   /* standard dom */
   def querySelectorAll[E /* <: Element */](selectors: String): NodeListOf[E] = js.native
-  /** Returns all element descendants of node that match selectors. */
+  /**
+    * Returns all element descendants of node that match selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
+    */
   /* standard dom */
   @JSName("querySelectorAll")
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
@@ -1095,6 +1220,8 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_search(selectors: search): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
@@ -1181,7 +1308,11 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
-  /** Returns the first element that is a descendant of node that matches selectors. */
+  /**
+    * Returns the first element that is a descendant of node that matches selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelector)
+    */
   /* standard dom */
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
@@ -1559,6 +1690,8 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   @JSName("querySelector")
   def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_search(selectors: search): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_section(selectors: section): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
@@ -1645,10 +1778,15 @@ trait ShadowRootvnodeVNodeRende extends StObject {
   @JSName("querySelector")
   def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/removeChild) */
   /* standard dom */
   def removeChild[T /* <: Node */](child: T): T = js.native
   
-  /** Removes the event listener in target's event listener list with the same type, callback, and options. */
+  /**
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener)
+    */
   /* standard dom */
   def removeEventListener(`type`: String): Unit = js.native
   def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native
@@ -1673,6 +1811,7 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/replaceChild) */
   /* standard dom */
   def replaceChild[T /* <: Node */](node: Node, child: T): T = js.native
   
@@ -1680,17 +1819,25 @@ trait ShadowRootvnodeVNodeRende extends StObject {
     * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/replaceChildren)
     */
   /* standard dom */
   def replaceChildren(nodes: (Node | String)*): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ShadowRoot/slotAssignment) */
   /* standard dom */
   val slotAssignment: SlotAssignmentMode = js.native
   
-  /** Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document. */
+  /**
+    * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/styleSheets)
+    */
   /* standard dom */
   val styleSheets: StyleSheetList = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/textContent) */
   /* standard dom */
   var textContent: String | Null = js.native
 }

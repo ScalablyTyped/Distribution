@@ -10,12 +10,12 @@ object anon {
     
     var ast: Any
     
-    var functionMap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FBSourceFunctionMap */ Any) | Null
+    var metadata: Any
   }
   object Ast {
     
-    inline def apply(ast: Any): Ast = {
-      val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], functionMap = null)
+    inline def apply(ast: Any, metadata: Any): Ast = {
+      val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ast]
     }
     
@@ -24,11 +24,7 @@ object anon {
       
       inline def setAst(value: Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
-      inline def setFunctionMap(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FBSourceFunctionMap */ Any
-      ): Self = StObject.set(x, "functionMap", value.asInstanceOf[js.Any])
-      
-      inline def setFunctionMapNull: Self = StObject.set(x, "functionMap", null)
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
 }

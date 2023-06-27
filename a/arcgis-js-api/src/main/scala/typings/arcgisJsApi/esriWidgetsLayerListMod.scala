@@ -11,10 +11,10 @@ object esriWidgetsLayerListMod {
   @JSImport("esri/widgets/LayerList", JSImport.Namespace)
   @js.native
   /**
-    * The LayerList widget provides a way to display a list of layers, and switch on/off their visibility.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
-    */
+  		 * The LayerList widget provides a way to display a list of layers, and switch on/off their visibility.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
+  		 */
   open class ^ ()
     extends StObject
        with LayerList {

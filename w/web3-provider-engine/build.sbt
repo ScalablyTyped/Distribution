@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "web3-provider-engine"
-version := "14.0-dt-20211202Z-27869f"
+version := "14.0-dt-20211202Z-a7e479"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bignumber_dot_js" % "9.1.1-68ba19",
-  "org.scalablytyped" %%% "ethereum-protocol" % "1.0-dt-20211202Z-a9406c",
-  "org.scalablytyped" %%% "std" % "5.0-e63739")
+  "org.scalablytyped" %%% "bignumber_dot_js" % "9.1.1-e2aecf",
+  "org.scalablytyped" %%% "ethereum-protocol" % "1.0-dt-20211202Z-290853",
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

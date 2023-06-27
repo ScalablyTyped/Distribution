@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorLanguage extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/language) */
   /* standard dom */
   val language: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/languages) */
   /* standard dom */
   val languages: js.Array[java.lang.String]
 }

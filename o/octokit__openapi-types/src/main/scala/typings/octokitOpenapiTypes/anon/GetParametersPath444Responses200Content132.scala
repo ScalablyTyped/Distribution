@@ -1,0 +1,31 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetParametersPath444Responses200Content132 extends StObject {
+  
+  /**
+    * Get shared storage billing for a user
+    * @description Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.
+    *
+    * Paid minutes only apply to packages stored for private repositories. For more information, see "[Managing billing for GitHub Packages](https://docs.github.com/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-packages)."
+    *
+    * Access tokens must have the `user` scope.
+    */
+  var get: ParametersPath444Responses200Content132
+}
+object GetParametersPath444Responses200Content132 {
+  
+  inline def apply(get: ParametersPath444Responses200Content132): GetParametersPath444Responses200Content132 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetParametersPath444Responses200Content132]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPath444Responses200Content132] (val x: Self) extends AnyVal {
+    
+    inline def setGet(value: ParametersPath444Responses200Content132): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+  }
+}

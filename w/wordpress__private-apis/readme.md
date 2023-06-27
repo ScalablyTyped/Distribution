@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__private-apis
 
-Typings are for version 0.15.0
+Typings are for version 0.17.0
 
 
 

@@ -16,6 +16,9 @@ open class Auth0ContextInterface () extends StObject {
   def clearCredentials(): js.Promise[Unit] = js.native
   
   def clearSession(): js.Promise[Unit] = js.native
+  def clearSession(parameters: Unit, options: ClearSessionOptions): js.Promise[Unit] = js.native
+  def clearSession(parameters: ClearSessionParams): js.Promise[Unit] = js.native
+  def clearSession(parameters: ClearSessionParams, options: ClearSessionOptions): js.Promise[Unit] = js.native
   
   var error: BaseError | Null = js.native
   

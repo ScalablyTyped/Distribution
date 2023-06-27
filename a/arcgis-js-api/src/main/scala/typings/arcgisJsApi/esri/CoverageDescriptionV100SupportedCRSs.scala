@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverageDescriptionV100SupportedCRSs extends StObject {
   
   /**
-    * The native coordinate reference system of a coverage – that is, the coordinate reference systems in which coverages can be obtained without any distortion or degradation of the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * The native coordinate reference system of a coverage – that is, the coordinate reference systems in which coverages can be obtained without any distortion or degradation of the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var nativeCRSs: js.Array[String]
   
   /**
-    * Coordinate reference systems in which the coverage can both accept GetCoverage requests and deliver coverage responses.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
-    */
+  		 * Coordinate reference systems in which the coverage can both accept GetCoverage requests and deliver coverage responses.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#CoverageDescriptionV100)
+  		 */
   var requestResponseCRSs: js.Array[String]
 }
 object CoverageDescriptionV100SupportedCRSs {

@@ -232,7 +232,7 @@ object TagCloud {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** The dataSource contains the list of data to display in a cloud format. Each data contains a link URL, frequency to categorize the font size and a display text.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -241,32 +241,32 @@ object TagCloud {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Sets the TagCloud and tag items direction as right to left alignment.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the mapping fields for the data items of the TagCloud.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
     /** Defines the format for the TagCloud to display the tag items.See Format
-      * @Default {ej.Format.Cloud}
+      * @default {ej.Format.Cloud}
       */
     var format: js.UndefOr[String | Format] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to TagCloud control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the maximum font size value for the tag items. The font size for the tag items will be generated in between the minimum and maximum font size values.
-      * @Default {40px}
+      * @default {40px}
       */
     var maxFontSize: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum font size value for the tag items. The font size for the tag items will be generated in between the minimum and maximum font size values.
-      * @Default {10px}
+      * @default {10px}
       */
     var minFontSize: js.UndefOr[String | Double] = js.undefined
     
@@ -279,22 +279,22 @@ object TagCloud {
     var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Define the query to retrieve the data from online server. The query is used only when the online dataSource is used.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Shows or hides the TagCloud title. When this set to false, it hides the TagCloud header.
-      * @Default {true}
+      * @default {true}
       */
     var showTitle: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the title image for the TagCloud. To show the title image, the showTitle property should be enabled.
-      * @Default {null}
+      * @default {null}
       */
     var titleImage: js.UndefOr[String] = js.undefined
     
     /** Sets the title text for the TagCloud. To show the title text, the showTitle property should be enabled.
-      * @Default {Title}
+      * @default {Title}
       */
     var titleText: js.UndefOr[String] = js.undefined
   }

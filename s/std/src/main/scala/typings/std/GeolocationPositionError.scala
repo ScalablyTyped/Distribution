@@ -7,6 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError) */
 trait GeolocationPositionError extends StObject {
   
   /* standard dom */
@@ -18,9 +19,11 @@ trait GeolocationPositionError extends StObject {
   /* standard dom */
   val TIMEOUT: `3`
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/code) */
   /* standard dom */
   val code: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/message) */
   /* standard dom */
   val message: java.lang.String
 }

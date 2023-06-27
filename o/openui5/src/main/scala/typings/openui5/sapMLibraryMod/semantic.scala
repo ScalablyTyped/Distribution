@@ -9,7 +9,7 @@ object semantic {
   @js.native
   sealed trait SemanticRuleSetType extends StObject
   /**
-    * @SINCE 1.44
+    * @since 1.44
     *
     * Declares the type of semantic ruleset that will govern the styling and positioning of semantic content.
     */

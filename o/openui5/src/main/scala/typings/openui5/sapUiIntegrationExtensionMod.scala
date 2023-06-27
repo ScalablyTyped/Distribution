@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.ActionConfig
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiIntegrationLibraryMod.CardActionType
 import typings.openui5.sapUiIntegrationLibraryMod.CardMenuAction
 import typings.openui5.sapUiIntegrationWidgetsCardMod.CardFacade
 import typings.std.Record
@@ -126,7 +126,7 @@ object sapUiIntegrationExtensionMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Extension`.
@@ -146,20 +146,20 @@ object sapUiIntegrationExtensionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Extension` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Attaches event handler `fnFunction` to the {@link #event:action action} event of this `sap.ui.integration.Extension`.
@@ -184,7 +184,7 @@ object sapUiIntegrationExtensionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit]
     ): this.type = js.native
     def attachAction(
       /**
@@ -195,7 +195,7 @@ object sapUiIntegrationExtensionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.integration.Extension` itself
       */
@@ -203,7 +203,7 @@ object sapUiIntegrationExtensionMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Detaches event handler `fnFunction` from the {@link #event:action action} event of this `sap.ui.integration.Extension`.
@@ -216,13 +216,13 @@ object sapUiIntegrationExtensionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit]
     ): this.type = js.native
     def detachAction(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExtensionActionEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -230,7 +230,7 @@ object sapUiIntegrationExtensionMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.113) - The API might change.
+      * @experimental (since 1.113) - The API might change.
       *
       * Starts the process of fetching a resource from the network, returning a promise that is fulfilled once
       * the response is available. Use this method to override the default behavior when fetching network resources.
@@ -255,9 +255,9 @@ object sapUiIntegrationExtensionMod {
     ): js.Promise[Response] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:action action} to attached listeners.
       *
@@ -270,11 +270,11 @@ object sapUiIntegrationExtensionMod {
     def fireAction(/**
       * Parameters to pass along with the event
       */
-    mParameters: ActionConfig): Boolean = js.native
+    mParameters: Extension$ActionEventParameters): Boolean = js.native
     
     /**
       * @deprecated (since 1.85) - This property is replaced by the `actions` aggregation of the card;
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getActions actions}.
@@ -302,7 +302,7 @@ object sapUiIntegrationExtensionMod {
     def getFormatters(): js.UndefOr[Record[String, js.Function0[Unit]]] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.108)
+      * @experimental (since 1.108)
       *
       * Override this method to lazy load dependencies for the extension.
       *
@@ -331,12 +331,79 @@ object sapUiIntegrationExtensionMod {
     aFormatters: Record[String, js.Function]): this.type = js.native
   }
   
+  trait Extension$ActionEventParameters extends StObject {
+    
+    /**
+      * The action configuration.
+      */
+    var actionConfig: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The action source.
+      */
+    var actionSource: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The card the action is fired from.
+      */
+    var card: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The parameters related to the triggered action.
+      */
+    var parameters: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The type of the action.
+      */
+    var `type`: js.UndefOr[
+        CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ] = js.undefined
+  }
+  object Extension$ActionEventParameters {
+    
+    inline def apply(): Extension$ActionEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Extension$ActionEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension$ActionEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setActionConfig(value: js.Object): Self = StObject.set(x, "actionConfig", value.asInstanceOf[js.Any])
+      
+      inline def setActionConfigUndefined: Self = StObject.set(x, "actionConfig", js.undefined)
+      
+      inline def setActionSource(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "actionSource", value.asInstanceOf[js.Any])
+      
+      inline def setActionSourceUndefined: Self = StObject.set(x, "actionSource", js.undefined)
+      
+      inline def setCard(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      
+      inline def setType(
+        value: CardActionType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CardActionType * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  type ExtensionActionEvent = typings.openui5.sapUiBaseEventMod.default[Extension$ActionEventParameters]
+  
+  type ExtensionActionEventParameters = Extension$ActionEventParameters
+  
   trait ExtensionSettings
     extends StObject
        with ManagedObjectSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
+      * @experimental (since 1.75) - Disclaimer: this event is in a beta state - incompatible API changes may
       * be done before its official public release. Use at your own discretion.
       *
       * Fired when an action is triggered in the card.
@@ -345,11 +412,16 @@ object sapUiIntegrationExtensionMod {
       * In consecutive order those places are: `Extension`, `Card`, `Host`. Each of them can prevent the next
       * one to handle the action by calling `oEvent.preventDefault()`.
       */
-    var action: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var action: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Extension$ActionEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.85) - This property is replaced by the `actions` aggregation of the card;
-      * @EXPERIMENTAL (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.75) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * The actions configuration.
@@ -359,7 +431,7 @@ object sapUiIntegrationExtensionMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.79)
+      * @experimental (since 1.79)
       *
       * The formatters that can be used in the manifest.
       */
@@ -377,7 +449,9 @@ object sapUiIntegrationExtensionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ExtensionSettings] (val x: Self) extends AnyVal {
       
-      inline def setAction(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Extension$ActionEventParameters] => Unit
+      ): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       

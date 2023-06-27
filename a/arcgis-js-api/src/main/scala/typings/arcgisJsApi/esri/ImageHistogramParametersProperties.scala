@@ -9,38 +9,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageHistogramParametersProperties extends StObject {
   
   /**
-    * Input geometry that defines the area of interest for which the histograms and statistics will be computed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#geometry)
-    */
+  		 * Input geometry that defines the area of interest for which the histograms and statistics will be computed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#geometry)
+  		 */
   var geometry: js.UndefOr[ExtentPropertiestypeexten | PolygonPropertiestypepoly] = js.undefined
   
   /**
-    * Specifies the [mosaic rule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html) on how individual images should be mosaicked when the histogram is computed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#mosaicRule)
-    */
+  		 * Specifies the [mosaic rule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html) on how individual images should be mosaicked when the histogram is computed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#mosaicRule)
+  		 */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
-    * Specifies the pixel size (or the resolution).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#pixelSize)
-    */
+  		 * Specifies the pixel size (or the resolution).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#pixelSize)
+  		 */
   var pixelSize: js.UndefOr[PixelSize] = js.undefined
   
   /**
-    * Specifies the [rendering rule](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html) from which to compute the statistics and histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#renderingRule)
-    */
+  		 * Specifies the [raster function](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html) from which to compute the statistics and histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#rasterFunction)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunctionProperties] = js.undefined
+  
+  /**
+  		 * A raster parameter for dynamic raster rendering input.
+  		 *
+  		 * @deprecated since version 4.27. Use {@link module:esri/rest/support/ImageHistogramParameters#rasterFunction rasterFunction} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#renderingRule)
+  		 */
   var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
-    * The [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html) for which to compute the statistics and histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#timeExtent)
-    */
+  		 * The [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeExtent.html) for which to compute the statistics and histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageHistogramParameters.html#timeExtent)
+  		 */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 object ImageHistogramParametersProperties {
@@ -64,6 +73,10 @@ object ImageHistogramParametersProperties {
     inline def setPixelSize(value: PixelSize): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    
+    inline def setRasterFunction(value: RasterFunctionProperties): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

@@ -38,6 +38,6 @@ open class resizer ()
   @JSName("on_mouse_move")
   var on_mouse_move_Original: WebixCallback = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
 }

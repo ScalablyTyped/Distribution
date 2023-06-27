@@ -10,7 +10,7 @@ object mod {
   @js.native
   /**
     * constructs mt with a number
-    * @params seed
+    * @param seed
     */
   open class ^ ()
     extends StObject

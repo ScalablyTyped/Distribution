@@ -91,7 +91,7 @@ object mod {
     children: Children
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   inline def apply[T /* <: HTMLElement */, P /* <: HTMLAttributes[T] */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.reactHyperscript.reactHyperscriptStrings.a, typings.reactHyperscript.reactHyperscriptStrings.abbr, typings.reactHyperscript.reactHyperscriptStrings.address */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.reactHyperscript.reactHyperscriptStrings.a, typings.reactHyperscript.reactHyperscriptStrings.abbr, typings.reactHyperscript.reactHyperscriptStrings.address */ Any,
     attributes: ClassAttributes[T] & P,
     children: Children
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]

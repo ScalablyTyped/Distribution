@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lezer/common" : "1.0.1"
+      "@lezer/common" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@lezer/common" : "1.0.1"
+      "@lezer/common" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

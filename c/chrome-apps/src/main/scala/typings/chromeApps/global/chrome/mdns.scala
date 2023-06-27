@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.mdns API to discover services over mDNS.
   * This comprises a subset of the features of the NSD spec:
-  * @see[NSD Spec]{@link http://www.w3.org/TR/discovery-api/}
+  * @see http://www.w3.org/TR/discovery-api
   * @requires Permissions: 'mdns'
   * @since Chrome 31
   */

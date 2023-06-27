@@ -1,5 +1,6 @@
 package typings.yaml
 
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distNodesCollectionMod.Collection
 import typings.yaml.distNodesNodeMod.ParsedNode
 import typings.yaml.distNodesNodeMod.Range
@@ -45,7 +46,14 @@ object distNodesYamlseqMod {
     def toJSON(_underscore: Any, ctx: ToJSContext): js.Array[Any] = js.native
     def toJSON(_underscore: Unit, ctx: ToJSContext): js.Array[Any] = js.native
   }
+  /* static members */
   object YAMLSeq {
+    
+    @JSImport("yaml/dist/nodes/YAMLSeq", "YAMLSeq")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def from(schema: Schema, obj: Any, ctx: CreateNodeContext): YAMLSeq[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[YAMLSeq[Any]]
     
     @js.native
     trait Parsed[T /* <: ParsedNode | (Pair[ParsedNode, ParsedNode | Null]) */] extends YAMLSeq[T] {

@@ -9,17 +9,17 @@ trait LocationSchemeForMesh
      with LocationScheme {
   
   /**
-    * The color of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
-    */
+  		 * The color of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
+  		 */
   var color: Color_
   
   /**
-    * The opacity of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
-    */
+  		 * The opacity of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForMesh)
+  		 */
   var opacity: Double
 }
 object LocationSchemeForMesh {

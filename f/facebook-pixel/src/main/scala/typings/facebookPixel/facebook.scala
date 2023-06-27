@@ -224,28 +224,115 @@ object facebook {
       
       def apply(eventType: String, InitialAppId: String): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: AddPaymentInfoParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: AddPaymentInfoParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: AddToCartParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: AddToCartParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: AddToWishlistParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: AddToWishlistParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(
         eventType: String,
         InitialAppId: String,
         eventName: String,
         parameters: CompleteRegistrationParameters
       ): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: CompleteRegistrationParameters,
+        option: EventIDOptions
+      ): Unit = js.native
+      def apply(eventType: String, InitialAppId: String, eventName: String, parameters: CustomParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: CustomParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: InitiateCheckoutParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: InitiateCheckoutParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: LeadParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: LeadParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: PurchaseParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: PurchaseParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: SearchParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: SearchParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, InitialAppId: String, eventName: String, parameters: ViewContentParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        InitialAppId: String,
+        eventName: String,
+        parameters: ViewContentParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: AddPaymentInfoParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: AddPaymentInfoParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: AddToCartParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: AddToCartParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: AddToWishlistParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: AddToWishlistParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: CompleteRegistrationParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        eventName: String,
+        parameters: CompleteRegistrationParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: CustomParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: CustomParameters, option: EventIDOptions): Unit = js.native
       def apply(
         eventType: String,
         eventName: String,
         parameters: typings.facebookPixel.facebook.Pixel.DPA.AddToCartParameters
+      ): Unit = js.native
+      def apply(
+        eventType: String,
+        eventName: String,
+        parameters: typings.facebookPixel.facebook.Pixel.DPA.AddToCartParameters,
+        option: EventIDOptions
       ): Unit = js.native
       def apply(
         eventType: String,
@@ -255,13 +342,53 @@ object facebook {
       def apply(
         eventType: String,
         eventName: String,
+        parameters: typings.facebookPixel.facebook.Pixel.DPA.PurchaseParameters,
+        option: EventIDOptions
+      ): Unit = js.native
+      def apply(
+        eventType: String,
+        eventName: String,
         parameters: typings.facebookPixel.facebook.Pixel.DPA.ViewContentParameters
       ): Unit = js.native
+      def apply(
+        eventType: String,
+        eventName: String,
+        parameters: typings.facebookPixel.facebook.Pixel.DPA.ViewContentParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: InitiateCheckoutParameters): Unit = js.native
+      def apply(
+        eventType: String,
+        eventName: String,
+        parameters: InitiateCheckoutParameters,
+        option: EventIDOptions
+      ): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: LeadParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: LeadParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: PurchaseParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: PurchaseParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: SearchParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: SearchParameters, option: EventIDOptions): Unit = js.native
       def apply(eventType: String, eventName: String, parameters: ViewContentParameters): Unit = js.native
+      def apply(eventType: String, eventName: String, parameters: ViewContentParameters, option: EventIDOptions): Unit = js.native
+    }
+    
+    trait EventIDOptions extends StObject {
+      
+      var eventID: String
+    }
+    object EventIDOptions {
+      
+      inline def apply(eventID: String): EventIDOptions = {
+        val __obj = js.Dynamic.literal(eventID = eventID.asInstanceOf[js.Any])
+        __obj.asInstanceOf[EventIDOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventIDOptions] (val x: Self) extends AnyVal {
+        
+        inline def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
+      }
     }
     
     trait InitiateCheckoutParameters extends StObject {

@@ -32,7 +32,7 @@ object libUrlMod {
       *
       * @param url - The URL string to parse
       *
-      * @return a hostname string value
+      * @returns a hostname string value
       */
     inline def getHostName(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     

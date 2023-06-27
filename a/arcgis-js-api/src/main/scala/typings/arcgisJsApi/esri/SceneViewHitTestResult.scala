@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewHitTestResult extends StObject {
   
   /**
-    * Ground intersection result.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
-    */
+  		 * Ground intersection result.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
+  		 */
   var ground: HitTestResultGround
   
   /**
-    * An array of result objects returned from the [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest) when the location of the input screen coordinates intersect features in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
-    */
+  		 * An array of result objects returned from the [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest) when the location of the input screen coordinates intersect features in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
+  		 */
   var results: js.Array[SceneViewViewHit]
   
   /**
-    * The screen coordinates (or native mouse event) of the click on the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
-    */
+  		 * The screen coordinates (or native mouse event) of the click on the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
+  		 */
   var screenPoint: SceneViewScreenPoint | MouseEvent
 }
 object SceneViewHitTestResult {

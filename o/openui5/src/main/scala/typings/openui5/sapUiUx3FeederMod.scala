@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Text
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -138,13 +137,13 @@ object sapUiUx3FeederMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit]
     ): this.type = js.native
     def attachSubmit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feeder` itself
       */
@@ -169,7 +168,7 @@ object sapUiUx3FeederMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit]
     ): this.type = js.native
     def attachSubmit(
       /**
@@ -180,7 +179,7 @@ object sapUiUx3FeederMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Feeder` itself
       */
@@ -198,13 +197,13 @@ object sapUiUx3FeederMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit]
     ): this.type = js.native
     def detachSubmit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeederSubmitEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -212,7 +211,7 @@ object sapUiUx3FeederMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:submit submit} to attached listeners.
       *
@@ -222,7 +221,7 @@ object sapUiUx3FeederMod {
     def fireSubmit(/**
       * Parameters to pass along with the event
       */
-    mParameters: Text): this.type = js.native
+    mParameters: Feeder$SubmitEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getPlaceholderText placeholderText}.
@@ -335,6 +334,29 @@ object sapUiUx3FeederMod {
     sType: FeederType): this.type = js.native
   }
   
+  trait Feeder$SubmitEventParameters extends StObject {
+    
+    /**
+      * The text that is submitted
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object Feeder$SubmitEventParameters {
+    
+    inline def apply(): Feeder$SubmitEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Feeder$SubmitEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feeder$SubmitEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
   trait FeederSettings
     extends StObject
        with ControlSettings {
@@ -347,7 +369,12 @@ object sapUiUx3FeederMod {
     /**
       * Event is fired when the entered text is submitted
       */
-    var submit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var submit: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feeder$SubmitEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The text for the Feeder. @References are supported.
@@ -382,7 +409,9 @@ object sapUiUx3FeederMod {
       
       inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
       
-      inline def setSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+      inline def setSubmit(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Feeder$SubmitEventParameters] => Unit
+      ): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
       
       inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
@@ -401,4 +430,8 @@ object sapUiUx3FeederMod {
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
+  
+  type FeederSubmitEvent = typings.openui5.sapUiBaseEventMod.default[Feeder$SubmitEventParameters]
+  
+  type FeederSubmitEventParameters = Feeder$SubmitEventParameters
 }

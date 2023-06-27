@@ -11,8 +11,6 @@ type DefinitionsObject = StringDictionary[SchemaObject]
 
 type ExampleObject = StringDictionary[Any]
 
-type HeaderObject = ItemsObject
-
 type HeadersObject = StringDictionary[HeaderObject]
 
 type MimeTypes = js.Array[String]

@@ -9,24 +9,24 @@ trait OpacityRampElement
      with LegendElement {
   
   /**
-    * The individual opacity stops rendered in the legend that correspond to the opacity visual variable in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
-    */
+  		 * The individual opacity stops rendered in the legend that correspond to the opacity visual variable in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
+  		 */
   var infos: js.Array[OpacityRampStop]
   
   /**
-    * The title of the opacity ramp as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
-    */
+  		 * The title of the opacity ramp as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
+  		 */
   var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
-    * The type of this element is always `opacity-ramp`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
-    */
+  		 * The type of this element is always `opacity-ramp`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#OpacityRampElement)
+  		 */
   var `type`: String
 }
 object OpacityRampElement {

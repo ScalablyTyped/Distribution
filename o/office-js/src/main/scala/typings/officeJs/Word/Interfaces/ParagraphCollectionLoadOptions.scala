@@ -19,7 +19,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+    * For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -27,7 +27,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var alignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    * For EACH ITEM in the collection: Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -59,7 +59,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var isListItem: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
+    * For EACH ITEM in the collection: Specifies the left indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -67,7 +67,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var leftIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+    * For EACH ITEM in the collection: Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -75,7 +75,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var lineSpacing: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
+    * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -83,7 +83,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var lineUnitAfter: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
+    * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -123,7 +123,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var listOrNullObject: js.UndefOr[ListLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
+    * For EACH ITEM in the collection: Specifies the outline level for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -187,7 +187,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
+    * For EACH ITEM in the collection: Specifies the right indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -195,7 +195,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var rightIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
+    * For EACH ITEM in the collection: Specifies the spacing, in points, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -203,7 +203,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var spaceAfter: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
+    * For EACH ITEM in the collection: Specifies the spacing, in points, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -211,7 +211,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var spaceBefore: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * For EACH ITEM in the collection: Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -219,7 +219,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * For EACH ITEM in the collection: Specifies the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]

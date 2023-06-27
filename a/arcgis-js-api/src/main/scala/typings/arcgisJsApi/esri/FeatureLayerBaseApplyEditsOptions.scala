@@ -9,38 +9,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerBaseApplyEditsOptions extends StObject {
   
   /**
-    * The geodatabase version to apply the edits.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
-    */
+  		 * The geodatabase version to apply the edits.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the edits can be applied using globalIds of features or attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
-    */
+  		 * Indicates whether the edits can be applied using globalIds of features or attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
+  		 */
   var globalIdUsed: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the edit results should return the time edits were applied.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
-    */
+  		 * Indicates whether the edit results should return the time edits were applied.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
+  		 */
   var returnEditMoment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If set to `original-and-current-features`, the [EditedFeatureResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult) parameter will be included in the `applyEdits` response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
-    */
+  		 * If set to `original-and-current-features`, the [EditedFeatureResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult) parameter will be included in the `applyEdits` response.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
+  		 */
   var returnServiceEditsOption: js.UndefOr[none_ | `original-and-current-features`] = js.undefined
   
   /**
-    * Indicates whether the edits should be applied only if all submitted edits succeed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
-    */
+  		 * Indicates whether the edits should be applied only if all submitted edits succeed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-FeatureLayerBase.html#applyEdits)
+  		 */
   var rollbackOnFailureEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureLayerBaseApplyEditsOptions {

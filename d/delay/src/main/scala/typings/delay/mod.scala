@@ -1,143 +1,81 @@
 package typings.delay
 
 import typings.delay.anon.ClearTimeout
-import typings.delay.anon.Once
-import typings.delay.anon.Optionsvalueunknownundefi
-import typings.delay.anon.Value
-import typings.delay.delayStrings.abort
-import typings.std.Promise
+import typings.delay.anon.FnCall
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined delay.delay.Delay & {createWithTimers (timers : {clearTimeout (timeoutId : any): void, setTimeout (callback : (args : ...any): void, milliseconds : number, args : ...any): unknown}): delay.delay.Delay,   default :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay * / any} */
 object mod {
-  
-  /**
-  	Create a promise which resolves after the specified `milliseconds`.
-  	@param milliseconds - Milliseconds to delay the promise.
-  	@returns A promise which resolves after the specified `milliseconds`.
-  	*/
-  inline def apply(milliseconds: Double): ClearablePromise[Unit] = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[Unit]]
-  inline def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[Unit]]
-  inline def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
   
   @JSImport("delay", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release.
-  @JSImport("delay", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ Any = js.native
+  inline def default[T](milliseconds: Double): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def default[T](milliseconds: Double, options: Options[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  // The types are intentionally loose to make it work with both Node.js and browser versions of these methods.
-  inline def createWithTimers(timers: ClearTimeout): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithTimers")(timers.asInstanceOf[js.Any]).asInstanceOf[Delay]
+  inline def clearDelay(delayPromise: js.Promise[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearDelay")(delayPromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def createDelay(timers: ClearTimeout): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createDelay")(timers.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   
-  /**
-  	Create a promise which resolves after a random amount of milliseconds between `minimum` and `maximum` has passed.
-  	Useful for tests and web scraping since they can have unpredictable performance. For example, if you have a test that asserts a method should not take longer than a certain amount of time, and then run it on a CI, it could take longer. So with `.range()`, you could give it a threshold instead.
-  	@param minimum - Minimum amount of milliseconds to delay the promise.
-  	@param maximum - Maximum amount of milliseconds to delay the promise.
-  	@returns A promise which resolves after a random amount of milliseconds between `maximum` and `maximum` has passed.
-  	*/
-  inline def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
-  inline def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
+  inline def rangeDelay[T](minimum: Double, maximum: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeDelay")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def rangeDelay[T](minimum: Double, maximum: Double, options: Options[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeDelay")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 is resolved.
-  /**
-  	Create a promise which rejects after the specified `milliseconds`.
-  	@param milliseconds - Milliseconds to delay the promise.
-  	@returns A promise which rejects after the specified `milliseconds`.
-  	*/
-  inline def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[scala.Nothing]]
-  inline def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[scala.Nothing]]
-  
-  /**
-  	Minimal subset of `AbortSignal` that delay will use if passed.
-  	This avoids a dependency on dom.d.ts.
-  	The dom.d.ts `AbortSignal` is compatible with this one.
-  	*/
-  @js.native
-  trait AbortSignal extends StObject {
-    
-    val aborted: Boolean = js.native
-    
-    @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, listener: js.Function0[Unit]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, listener: js.Function0[Unit], options: Once): Unit = js.native
-    
-    @JSName("removeEventListener")
-    def removeEventListener_abort(`type`: abort, listener: js.Function0[Unit]): Unit = js.native
-  }
-  
-  @js.native
-  trait ClearablePromise[T]
-    extends StObject
-       with Promise[T] {
+  trait Options[T] extends StObject {
     
     /**
-    		Clears the delay and settles the promise.
-    		*/
-    def clear(): Unit = js.native
-  }
-  
-  @js.native
-  trait Delay extends StObject {
-    
-    /**
-    	Create a promise which resolves after the specified `milliseconds`.
-    	@param milliseconds - Milliseconds to delay the promise.
-    	@returns A promise which resolves after the specified `milliseconds`.
+    	An `AbortSignal` to abort the delay.
+    	The returned promise will be rejected with an `AbortError` if the signal is aborted.
+    	@example
+    	```
+    	import delay from 'delay';
+    	const abortController = new AbortController();
+    	setTimeout(() => {
+    		abortController.abort();
+    	}, 500);
+    	try {
+    		await delay(1000, {signal: abortController.signal});
+    	} catch (error) {
+    		// 500 milliseconds later
+    		console.log(error.name)
+    		//=> 'AbortError'
+    	}
+    	```
     	*/
-    def apply(milliseconds: Double): ClearablePromise[Unit] = js.native
-    def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = js.native
-    def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = js.native
-    
-    /**
-    	Create a promise which resolves after a random amount of milliseconds between `minimum` and `maximum` has passed.
-    	Useful for tests and web scraping since they can have unpredictable performance. For example, if you have a test that asserts a method should not take longer than a certain amount of time, and then run it on a CI, it could take longer. So with `.range()`, you could give it a threshold instead.
-    	@param minimum - Minimum amount of milliseconds to delay the promise.
-    	@param maximum - Maximum amount of milliseconds to delay the promise.
-    	@returns A promise which resolves after a random amount of milliseconds between `maximum` and `maximum` has passed.
-    	*/
-    def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = js.native
-    def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = js.native
-    
-    // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 is resolved.
-    /**
-    	Create a promise which rejects after the specified `milliseconds`.
-    	@param milliseconds - Milliseconds to delay the promise.
-    	@returns A promise which rejects after the specified `milliseconds`.
-    	*/
-    def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = js.native
-    def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = js.native
-  }
-  
-  trait Options extends StObject {
-    
-    /**
-    		An optional AbortSignal to abort the delay.
-    		If aborted, the Promise will be rejected with an AbortError.
-    		*/
     var signal: js.UndefOr[AbortSignal] = js.undefined
+    
+    /**
+    	A value to resolve in the returned promise.
+    	@example
+    	```
+    	import delay from 'delay';
+    	const result = await delay(100, {value: '🦄'});
+    	// Executed after 100 milliseconds
+    	console.log(result);
+    	//=> '🦄'
+    	```
+    	*/
+    var value: js.UndefOr[T] = js.undefined
   }
   object Options {
     
-    inline def apply(): Options = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[Options[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
       inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

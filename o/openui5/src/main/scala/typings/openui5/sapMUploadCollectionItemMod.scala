@@ -124,7 +124,7 @@ object sapMUploadCollectionItemMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Adds some attribute to the aggregation {@link #getAttributes attributes}.
       *
@@ -138,7 +138,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Adds some marker to the aggregation {@link #getMarkers markers}.
       *
@@ -152,7 +152,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Adds some status to the aggregation {@link #getStatuses statuses}.
       *
@@ -166,7 +166,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:deletePress deletePress} event of this `sap.m.UploadCollectionItem`.
       *
@@ -183,20 +183,20 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDeletePress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollectionItem` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:deletePress deletePress} event of this `sap.m.UploadCollectionItem`.
       *
@@ -218,7 +218,7 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDeletePress(
       /**
@@ -229,7 +229,7 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollectionItem` itself
       */
@@ -237,7 +237,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.UploadCollectionItem`.
       *
@@ -253,20 +253,20 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollectionItem` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:press press} event of this `sap.m.UploadCollectionItem`.
       *
@@ -287,7 +287,7 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -298,7 +298,7 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.UploadCollectionItem` itself
       */
@@ -306,7 +306,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Binds aggregation {@link #getAttributes attributes} to model data.
       *
@@ -321,7 +321,7 @@ object sapMUploadCollectionItemMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Binds aggregation {@link #getMarkers markers} to model data.
       *
@@ -336,7 +336,7 @@ object sapMUploadCollectionItemMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Binds aggregation {@link #getStatuses statuses} to model data.
       *
@@ -351,7 +351,7 @@ object sapMUploadCollectionItemMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Destroys all the attributes in the aggregation {@link #getAttributes attributes}.
       *
@@ -360,7 +360,7 @@ object sapMUploadCollectionItemMod {
     def destroyAttributes(): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Destroys all the markers in the aggregation {@link #getMarkers markers}.
       *
@@ -369,7 +369,7 @@ object sapMUploadCollectionItemMod {
     def destroyMarkers(): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Destroys all the statuses in the aggregation {@link #getStatuses statuses}.
       *
@@ -378,7 +378,7 @@ object sapMUploadCollectionItemMod {
     def destroyStatuses(): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:deletePress deletePress} event of this `sap.m.UploadCollectionItem`.
       *
@@ -390,13 +390,13 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDeletePress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -404,7 +404,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:press press} event of this `sap.m.UploadCollectionItem`.
       *
@@ -416,13 +416,13 @@ object sapMUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -430,7 +430,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Downloads the item. The sap.ui.core.util.File method is used here. For further details on this method,
       * see {sap.ui.core.util.File.save}.
@@ -443,8 +443,8 @@ object sapMUploadCollectionItemMod {
     askForLocation: Boolean): Boolean = js.native
     
     /**
-      * @SINCE 1.50.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:deletePress deletePress} to attached listeners.
       *
@@ -457,8 +457,8 @@ object sapMUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.50.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.50.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -471,7 +471,7 @@ object sapMUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getAriaLabelForPicture ariaLabelForPicture}.
       *
@@ -482,7 +482,7 @@ object sapMUploadCollectionItemMod {
     def getAriaLabelForPicture(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets content of aggregation {@link #getAttributes attributes}.
       *
@@ -564,7 +564,7 @@ object sapMUploadCollectionItemMod {
     def getFileSize(): float = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * ID of the element which is the current target of the association {@link #getFileUploader fileUploader},
       * or `null`.
@@ -572,7 +572,7 @@ object sapMUploadCollectionItemMod {
     def getFileUploader(): ID = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Gets content of aggregation {@link #getMarkers markers}.
       *
@@ -591,7 +591,7 @@ object sapMUploadCollectionItemMod {
     def getMimeType(): String = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getSelected selected}.
       *
@@ -604,7 +604,7 @@ object sapMUploadCollectionItemMod {
     def getSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets content of aggregation {@link #getStatuses statuses}.
       *
@@ -667,7 +667,7 @@ object sapMUploadCollectionItemMod {
     def getVisibleEdit(): Boolean = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Checks for the provided `sap.m.ObjectAttribute` in the aggregation {@link #getAttributes attributes}.
       * and returns its index if found or -1 otherwise.
@@ -682,7 +682,7 @@ object sapMUploadCollectionItemMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Checks for the provided `sap.m.ObjectMarker` in the aggregation {@link #getMarkers markers}. and returns
       * its index if found or -1 otherwise.
@@ -697,7 +697,7 @@ object sapMUploadCollectionItemMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Checks for the provided `sap.m.ObjectStatus` in the aggregation {@link #getStatuses statuses}. and returns
       * its index if found or -1 otherwise.
@@ -712,7 +712,7 @@ object sapMUploadCollectionItemMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Inserts a attribute into the aggregation {@link #getAttributes attributes}.
       *
@@ -732,7 +732,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Inserts a marker into the aggregation {@link #getMarkers markers}.
       *
@@ -752,7 +752,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Inserts a status into the aggregation {@link #getStatuses statuses}.
       *
@@ -772,7 +772,7 @@ object sapMUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Removes all the controls from the aggregation {@link #getAttributes attributes}.
       *
@@ -783,7 +783,7 @@ object sapMUploadCollectionItemMod {
     def removeAllAttributes(): js.Array[typings.openui5.sapMObjectAttributeMod.default] = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Removes all the controls from the aggregation {@link #getMarkers markers}.
       *
@@ -794,7 +794,7 @@ object sapMUploadCollectionItemMod {
     def removeAllMarkers(): js.Array[typings.openui5.sapMObjectMarkerMod.default] = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Removes all the controls from the aggregation {@link #getStatuses statuses}.
       *
@@ -809,7 +809,7 @@ object sapMUploadCollectionItemMod {
       */
     vAttribute: String): typings.openui5.sapMObjectAttributeMod.default | Null = js.native
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Removes a attribute from the aggregation {@link #getAttributes attributes}.
       *
@@ -831,7 +831,7 @@ object sapMUploadCollectionItemMod {
       */
     vMarker: String): typings.openui5.sapMObjectMarkerMod.default | Null = js.native
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Removes a marker from the aggregation {@link #getMarkers markers}.
       *
@@ -853,7 +853,7 @@ object sapMUploadCollectionItemMod {
       */
     vStatus: String): typings.openui5.sapMObjectStatusMod.default | Null = js.native
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Removes a status from the aggregation {@link #getStatuses statuses}.
       *
@@ -871,7 +871,7 @@ object sapMUploadCollectionItemMod {
     ): typings.openui5.sapMObjectStatusMod.default | Null = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getAriaLabelForPicture ariaLabelForPicture}.
       *
@@ -990,7 +990,7 @@ object sapMUploadCollectionItemMod {
     fFileSize: float): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets the associated {@link #getFileUploader fileUploader}.
       *
@@ -1027,7 +1027,7 @@ object sapMUploadCollectionItemMod {
     sMimeType: String): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getSelected selected}.
       *
@@ -1130,7 +1130,7 @@ object sapMUploadCollectionItemMod {
     bVisibleEdit: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Unbinds aggregation {@link #getAttributes attributes} from model data.
       *
@@ -1139,7 +1139,7 @@ object sapMUploadCollectionItemMod {
     def unbindAttributes(): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Unbinds aggregation {@link #getMarkers markers} from model data.
       *
@@ -1148,7 +1148,7 @@ object sapMUploadCollectionItemMod {
     def unbindMarkers(): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Unbinds aggregation {@link #getStatuses statuses} from model data.
       *
@@ -1157,19 +1157,31 @@ object sapMUploadCollectionItemMod {
     def unbindStatuses(): this.type = js.native
   }
   
+  trait UploadCollectionItem$DeletePressEventParameters extends StObject
+  
+  trait UploadCollectionItem$PressEventParameters extends StObject
+  
+  type UploadCollectionItemDeletePressEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$DeletePressEventParameters]
+  
+  type UploadCollectionItemDeletePressEventParameters = UploadCollectionItem$DeletePressEventParameters
+  
+  type UploadCollectionItemPressEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$PressEventParameters]
+  
+  type UploadCollectionItemPressEventParameters = UploadCollectionItem$PressEventParameters
+  
   trait UploadCollectionItemSettings
     extends StObject
        with ElementSettings {
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Aria label for the icon (or for the image).
       */
     var ariaLabelForPicture: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Attributes of an uploaded item, for example, 'Uploaded By', 'Uploaded On', 'File Size' attributes are
       * displayed after an item has been uploaded. Additionally, the Active property of sap.m.ObjectAttribute
@@ -1194,13 +1206,15 @@ object sapMUploadCollectionItemMod {
     var contributor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * When a deletePress event handler is attached to the item and the user presses the delete button, this
       * event is triggered. If this event is triggered, it overwrites the default delete behavior of UploadCollection
       * and the fileDeleted event of UploadCollection is not triggered.
       */
-    var deletePress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var deletePress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Specifies a unique identifier of the file (created by the application).
@@ -1238,14 +1252,14 @@ object sapMUploadCollectionItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * ID of the FileUploader instance
       */
     var fileUploader: js.UndefOr[typings.openui5.sapUiUnifiedFileUploaderMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Markers of an uploaded item Markers will be displayed after an item has been uploaded But not in Edit
       * mode
@@ -1260,15 +1274,17 @@ object sapMUploadCollectionItemMod {
     var mimeType: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.50.0
+      * @since 1.50.0
       *
       * This event is triggered when the user presses the filename link. If this event is provided, it overwrites
       * the default behavior of opening the file.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Defines the selected state of the UploadCollectionItem.
       */
@@ -1277,7 +1293,7 @@ object sapMUploadCollectionItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Statuses of an uploaded item Statuses will be displayed after an item has been uploaded
       */
@@ -1345,7 +1361,7 @@ object sapMUploadCollectionItemMod {
       
       inline def setContributorUndefined: Self = StObject.set(x, "contributor", js.undefined)
       
-      inline def setDeletePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "deletePress", js.Any.fromFunction1(value))
+      inline def setDeletePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "deletePress", js.Any.fromFunction1(value))
       
       inline def setDeletePressUndefined: Self = StObject.set(x, "deletePress", js.undefined)
       
@@ -1385,7 +1401,7 @@ object sapMUploadCollectionItemMod {
       
       inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

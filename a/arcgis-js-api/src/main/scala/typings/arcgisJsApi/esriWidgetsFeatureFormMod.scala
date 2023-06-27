@@ -11,10 +11,10 @@ object esriWidgetsFeatureFormMod {
   @JSImport("esri/widgets/FeatureForm", JSImport.Namespace)
   @js.native
   /**
-    * The FeatureForm widget displays attributes of a feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
-    */
+  		 * The FeatureForm widget displays attributes of a feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureForm {

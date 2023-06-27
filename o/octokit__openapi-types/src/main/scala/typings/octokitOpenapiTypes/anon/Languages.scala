@@ -1,16 +1,15 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`c-cpp`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`java-kotlin`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`javascript-typescript`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`not-configured`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.c
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.configured
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.cpp
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.csharp
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.default
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.extended
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.go
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.java_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.javascript
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.kotlin
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.python
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.ruby
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.typescript
@@ -22,7 +21,9 @@ trait Languages extends StObject {
   
   /** @description Languages to be analysed. */
   var languages: js.UndefOr[
-    js.Array[c | cpp | csharp | go | java_ | javascript | kotlin | python | ruby | typescript]
+    js.Array[
+      `c-cpp` | csharp | go | `java-kotlin` | `javascript-typescript` | javascript | python | ruby | typescript
+    ]
   ] = js.undefined
   
   /**
@@ -54,11 +55,17 @@ object Languages {
   @scala.inline
   implicit open class MutableBuilder[Self <: Languages] (val x: Self) extends AnyVal {
     
-    inline def setLanguages(value: js.Array[c | cpp | csharp | go | java_ | javascript | kotlin | python | ruby | typescript]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(
+      value: js.Array[
+          `c-cpp` | csharp | go | `java-kotlin` | `javascript-typescript` | javascript | python | ruby | typescript
+        ]
+    ): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: (c | cpp | csharp | go | java_ | javascript | kotlin | python | ruby | typescript)*): Self = StObject.set(x, "languages", js.Array(value*))
+    inline def setLanguagesVarargs(
+      value: (`c-cpp` | csharp | go | `java-kotlin` | `javascript-typescript` | javascript | python | ruby | typescript)*
+    ): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setQuery_suite(value: default | extended): Self = StObject.set(x, "query_suite", value.asInstanceOf[js.Any])
     

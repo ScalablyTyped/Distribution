@@ -9,13 +9,13 @@ trait CIMMarkerStrokePlacement
      with CIMMarkerPlacementBase {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    */
+  			 * A value indicating whether to angle the marker to the line.
+  			 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The offset.
-    */
+  			 * The offset.
+  			 */
   var offset: js.UndefOr[Double] = js.undefined
 }
 object CIMMarkerStrokePlacement {

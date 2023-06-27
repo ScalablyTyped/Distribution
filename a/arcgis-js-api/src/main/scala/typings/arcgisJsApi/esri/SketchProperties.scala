@@ -16,100 +16,102 @@ trait SketchProperties
      with WidgetProperties {
   
   /**
-    * Property controlling the visibility and order of create tool buttons.
-    *
-    * @default ["point", "polyline", "polygon", "rectangle", "circle"]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
-    */
+  		 * Property controlling the visibility and order of create tool buttons.
+  		 *
+  		 * @default ["point", "polyline", "polygon", "rectangle", "circle"]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
+  		 */
   var availableCreateTools: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed.
-    *
-    * @default continuous
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
-    */
+  		 * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed.
+  		 *
+  		 * @default continuous
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
+  		 */
   var creationMode: js.UndefOr[single | continuous | update] = js.undefined
   
   /**
-    * Default create options set for the Sketch widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
-    */
+  		 * Default create options set for the Sketch widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
+  		 */
   var defaultCreateOptions: js.UndefOr[SketchDefaultCreateOptions] = js.undefined
   
   /**
-    * Default update options set for the Sketch widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
-    */
+  		 * Default update options set for the Sketch widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
   var defaultUpdateOptions: js.UndefOr[SketchDefaultUpdateOptions] = js.undefined
   
   /**
-    * The Sketch widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
-    */
+  		 * The Sketch widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/Sketch#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Options to configure the labels shown next to each segment of the geometry being created or updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#labelOptions)
-    */
+  		 * Options to configure the labels shown next to each segment of the geometry being created or updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#labelOptions)
+  		 */
   var labelOptions: js.UndefOr[SketchLabelOptionsProperties] = js.undefined
   
   /**
-    * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer)
-    */
+  		 * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer)
+  		 */
   var layer: js.UndefOr[GraphicsLayerProperties] = js.undefined
   
   /**
-    * Determines the layout/orientation of the Sketch widget.
-    *
-    * @default horizontal
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
-    */
+  		 * Determines the layout/orientation of the Sketch widget.
+  		 *
+  		 * @default horizontal
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
+  		 */
   var layout: js.UndefOr[vertical | horizontal] = js.undefined
   
   /**
-    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#snappingOptions)
-    */
+  		 * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#snappingOptions)
+  		 */
   var snappingOptions: js.UndefOr[SnappingOptionsProperties] = js.undefined
   
   /**
-    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#tooltipOptions)
-    */
+  		 * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#tooltipOptions)
+  		 */
   var tooltipOptions: js.UndefOr[SketchTooltipOptionsProperties] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for the Sketch widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#viewModel)
-    */
+  		 * The view model for the Sketch widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[SketchViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[SketchVisibleElements] = js.undefined
 }
 object SketchProperties {

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextBoxInputPropertiestyp extends StObject {
   
   /**
-    * When set, defines the text input's maximum length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
-    */
+  		 * When set, defines the text input's maximum length.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
+  		 */
   var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * When set, defines the text input's minimum length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
-    */
+  		 * When set, defines the text input's minimum length.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
+  		 */
   var minLength: js.UndefOr[Double] = js.undefined
   
   var `type`: `text-box`

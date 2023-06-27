@@ -1,12 +1,12 @@
 package typings.openui5
 
-import typings.openui5.anon.FilterItems
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcFioriLibraryMod.IFilterItem
 import typings.openui5.sapUiWebcFioriLibraryMod.ISortItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -159,13 +159,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -191,7 +191,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -202,7 +202,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -224,13 +224,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -256,7 +256,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -267,7 +267,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -289,13 +289,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -321,7 +321,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
@@ -332,7 +332,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ViewSettingsDialog`
       * itself
@@ -365,13 +365,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -389,13 +389,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogCancelEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -413,13 +413,13 @@ object sapUiWebcFioriViewSettingsDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit]
     ): this.type = js.native
     def detachConfirm(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ViewSettingsDialogConfirmEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -427,7 +427,7 @@ object sapUiWebcFioriViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -440,30 +440,34 @@ object sapUiWebcFioriViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCancel(): this.type = js.native
-    def fireCancel(/**
+    def fireCancel(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FilterItems): this.type = js.native
+    mParameters: ViewSettingsDialog$CancelEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireConfirm(): this.type = js.native
-    def fireConfirm(/**
+    def fireConfirm(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FilterItems): this.type = js.native
+    mParameters: ViewSettingsDialog$ConfirmEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getFilterItems filterItems}.
@@ -633,6 +637,142 @@ object sapUiWebcFioriViewSettingsDialogMod {
     def show(): Unit = js.native
   }
   
+  trait ViewSettingsDialog$BeforeOpenEventParameters extends StObject
+  
+  trait ViewSettingsDialog$CancelEventParameters extends StObject {
+    
+    /**
+      * The selected filters items.
+      */
+    var filterItems: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The currently selected `sap.ui.webc.fiori.SortItem` text attribute.
+      */
+    var sortBy: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The currently selected `sap.ui.webc.fiori.SortItem`.
+      */
+    var sortByItem: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The selected sort order (true = descending, false = ascending).
+      */
+    var sortDescending: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The current sort order selected.
+      */
+    var sortOrder: js.UndefOr[String] = js.undefined
+  }
+  object ViewSettingsDialog$CancelEventParameters {
+    
+    inline def apply(): ViewSettingsDialog$CancelEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSettingsDialog$CancelEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsDialog$CancelEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFilterItems(value: js.Array[Any]): Self = StObject.set(x, "filterItems", value.asInstanceOf[js.Any])
+      
+      inline def setFilterItemsUndefined: Self = StObject.set(x, "filterItems", js.undefined)
+      
+      inline def setFilterItemsVarargs(value: Any*): Self = StObject.set(x, "filterItems", js.Array(value*))
+      
+      inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      
+      inline def setSortByItem(value: HTMLElement): Self = StObject.set(x, "sortByItem", value.asInstanceOf[js.Any])
+      
+      inline def setSortByItemUndefined: Self = StObject.set(x, "sortByItem", js.undefined)
+      
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      
+      inline def setSortDescending(value: Boolean): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+      
+      inline def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
+      
+      inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    }
+  }
+  
+  trait ViewSettingsDialog$ConfirmEventParameters extends StObject {
+    
+    /**
+      * The selected filters items.
+      */
+    var filterItems: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * The currently selected `sap.ui.webc.fiori.SortItem` text attribute.
+      */
+    var sortBy: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The currently selected `sap.ui.webc.fiori.SortItem`.
+      */
+    var sortByItem: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The selected sort order (true = descending, false = ascending).
+      */
+    var sortDescending: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The current sort order selected.
+      */
+    var sortOrder: js.UndefOr[String] = js.undefined
+  }
+  object ViewSettingsDialog$ConfirmEventParameters {
+    
+    inline def apply(): ViewSettingsDialog$ConfirmEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSettingsDialog$ConfirmEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsDialog$ConfirmEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFilterItems(value: js.Array[Any]): Self = StObject.set(x, "filterItems", value.asInstanceOf[js.Any])
+      
+      inline def setFilterItemsUndefined: Self = StObject.set(x, "filterItems", js.undefined)
+      
+      inline def setFilterItemsVarargs(value: Any*): Self = StObject.set(x, "filterItems", js.Array(value*))
+      
+      inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      
+      inline def setSortByItem(value: HTMLElement): Self = StObject.set(x, "sortByItem", value.asInstanceOf[js.Any])
+      
+      inline def setSortByItemUndefined: Self = StObject.set(x, "sortByItem", js.undefined)
+      
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      
+      inline def setSortDescending(value: Boolean): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+      
+      inline def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
+      
+      inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    }
+  }
+  
+  type ViewSettingsDialogBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$BeforeOpenEventParameters]
+  
+  type ViewSettingsDialogBeforeOpenEventParameters = ViewSettingsDialog$BeforeOpenEventParameters
+  
+  type ViewSettingsDialogCancelEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$CancelEventParameters]
+  
+  type ViewSettingsDialogCancelEventParameters = ViewSettingsDialog$CancelEventParameters
+  
+  type ViewSettingsDialogConfirmEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters]
+  
+  type ViewSettingsDialogConfirmEventParameters = ViewSettingsDialog$ConfirmEventParameters
+  
   trait ViewSettingsDialogSettings
     extends StObject
        with ControlSettings {
@@ -640,17 +780,29 @@ object sapUiWebcFioriViewSettingsDialogMod {
     /**
       * Fired before the component is opened. **This event does not bubble.**
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when cancel button is activated.
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$CancelEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when confirmation button is activated.
       */
-    var confirm: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var confirm: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     var filterItems: js.UndefOr[
         js.Array[IFilterItem] | IFilterItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -677,15 +829,19 @@ object sapUiWebcFioriViewSettingsDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ViewSettingsDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$CancelEventParameters] => Unit
+      ): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+      inline def setConfirm(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ViewSettingsDialog$ConfirmEventParameters] => Unit
+      ): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
       
       inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
       

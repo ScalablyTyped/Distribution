@@ -6,17 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Timestamp extends StObject {
   
+  /** @description Information about the Git author */
   var author: EmailString | Null
   
+  /** @description Information about the Git committer */
   var committer: EmailString | Null
   
+  /**
+    * @description SHA for the commit
+    * @example 7638417db6d59f3c431d3e1f261cc637155684cd
+    */
   var id: String
   
+  /**
+    * @description Message describing the purpose of the commit
+    * @example Fix #42
+    */
   var message: String
   
-  /** Format: date-time */
+  /**
+    * Format: date-time
+    * @description Timestamp of the commit
+    * @example 2014-08-09T08:02:04+12:00
+    */
   var timestamp: String
   
+  /** @description SHA for the commit's tree */
   var tree_id: String
 }
 object Timestamp {

@@ -12,10 +12,16 @@ trait ActionSheet
   
   def close(): Unit = js.native
   
+  def fullscreen(fullscreen: Boolean): Unit = js.native
+  
   def open(): Unit = js.native
   
   @JSName("options")
   var options_ActionSheet: ActionSheetOptions = js.native
+  
+  def toggle(): Unit = js.native
+  
+  def visible(): Boolean = js.native
   
   var wrapper: JQuery = js.native
 }

@@ -5,8 +5,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of `EmbeddedSession`.
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+  */
 trait EmbeddedOptions extends StObject {
   
+  /*
+  		* The iframe element that hosts the Visio diagram.
+  		*/
   var container: js.UndefOr[HTMLElement] = js.undefined
   
   var height: js.UndefOr[String] = js.undefined

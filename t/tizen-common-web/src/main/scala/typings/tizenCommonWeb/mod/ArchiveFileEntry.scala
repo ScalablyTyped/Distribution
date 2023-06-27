@@ -44,9 +44,9 @@ open class ArchiveFileEntry () extends StObject {
     *
     * @returns Task ID which can be used to cancel the operation with abort().
     *
-    * @throw WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
-    * @throw WebAPIException with error type InvalidValuesError, if directory parameter does not represent a directory.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type TypeMismatchError, if parameter is of the wrong type.
+    * @throws WebAPIException with error type InvalidValuesError, if directory parameter does not represent a directory.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   def extract(
     destinationDirectory: FileReference,

@@ -5,34 +5,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle)
+  */
+@js.native
 trait FileSystemFileHandle
   extends StObject
      with FileSystemHandle {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createWritable) */
   /* standard dom */
-  def getFile(): js.Promise[File]
+  def createWritable(): js.Promise[FileSystemWritableFileStream] = js.native
+  def createWritable(options: FileSystemCreateWritableOptions): js.Promise[FileSystemWritableFileStream] = js.native
+  
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/getFile) */
+  /* standard dom */
+  def getFile(): js.Promise[File] = js.native
   
   /* standard dom */
   @JSName("kind")
-  val kind_FileSystemFileHandle: file
-}
-object FileSystemFileHandle {
-  
-  inline def apply(
-    getFile: () => js.Promise[File],
-    isSameEntry: FileSystemHandle => js.Promise[scala.Boolean],
-    name: java.lang.String
-  ): FileSystemFileHandle = {
-    val __obj = js.Dynamic.literal(getFile = js.Any.fromFunction0(getFile), isSameEntry = js.Any.fromFunction1(isSameEntry), kind = "file", name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FileSystemFileHandle]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: FileSystemFileHandle] (val x: Self) extends AnyVal {
-    
-    inline def setGetFile(value: () => js.Promise[File]): Self = StObject.set(x, "getFile", js.Any.fromFunction0(value))
-    
-    inline def setKind(value: file): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-  }
+  val kind_FileSystemFileHandle: file = js.native
 }

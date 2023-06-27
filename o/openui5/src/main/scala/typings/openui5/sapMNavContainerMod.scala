@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Direction
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -24,7 +23,7 @@ object sapMNavContainerMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:a4afb138acf64a61a038aa5b91a4f082 Nav Container}
+    * 	{@link https://ui5.sap.com/#/topic/a4afb138acf64a61a038aa5b91a4f082 Nav Container}
     */
   open class default () extends NavContainer {
     def this(/**
@@ -208,7 +207,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterNavigate afterNavigate} event of this `sap.m.NavContainer`.
       *
@@ -226,20 +225,20 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:afterNavigate afterNavigate} event of this `sap.m.NavContainer`.
       *
@@ -262,7 +261,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterNavigate(
       /**
@@ -273,7 +272,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
@@ -281,7 +280,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.NavContainer`.
       *
@@ -298,20 +297,20 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.NavContainer`.
       *
@@ -333,7 +332,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -344,7 +343,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
@@ -352,7 +351,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigationFinished navigationFinished} event
       * of this `sap.m.NavContainer`.
@@ -370,20 +369,20 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit]
     ): this.type = js.native
     def attachNavigationFinished(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigationFinished navigationFinished} event
       * of this `sap.m.NavContainer`.
@@ -406,7 +405,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit]
     ): this.type = js.native
     def attachNavigationFinished(
       /**
@@ -417,7 +416,7 @@ object sapMNavContainerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.NavContainer` itself
       */
@@ -514,7 +513,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.2
+      * @since 1.7.2
       *
       * Navigates back to the nearest previous page in the NavContainer history with the given ID. If there is
       * no such page among the previous pages, nothing happens. The transition effect which had been used to
@@ -610,7 +609,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Navigates back to the initial/top level (this is the element aggregated as "initialPage", or the first
       * added element). If already on the initial page, nothing happens. The transition effect which had been
@@ -699,7 +698,7 @@ object sapMNavContainerMod {
     def destroyPages(): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Detaches event handler `fnFunction` from the {@link #event:afterNavigate afterNavigate} event of this
       * `sap.m.NavContainer`.
@@ -712,13 +711,13 @@ object sapMNavContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerAfterNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -726,7 +725,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.m.NavContainer`.
       *
@@ -738,13 +737,13 @@ object sapMNavContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -752,7 +751,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigationFinished navigationFinished} event
       * of this `sap.m.NavContainer`.
@@ -765,13 +764,13 @@ object sapMNavContainerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit]
     ): this.type = js.native
     def detachNavigationFinished(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NavContainerNavigationFinishedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -779,22 +778,24 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.7.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterNavigate afterNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterNavigate(): this.type = js.native
-    def fireAfterNavigate(/**
+    def fireAfterNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: NavContainer$AfterNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.7.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -804,27 +805,31 @@ object sapMNavContainerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireNavigate(): Boolean = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: NavContainer$NavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.111.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.111.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigationFinished navigationFinished} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavigationFinished(): this.type = js.native
-    def fireNavigationFinished(/**
+    def fireNavigationFinished(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: NavContainer$NavigationFinishedEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets current value of property {@link #getAutoFocus autoFocus}.
       *
@@ -836,12 +841,12 @@ object sapMNavContainerMod {
       * **Note:** The following scenarios are possible, depending on where the focus was before navigation to
       * a new page:
       * 	 - If `autoFocus` is set to `true` and the focus was inside the current page, the focus will be moved
-      * 			automatically on the new page.
+      *     automatically on the new page.
       * 	 - If `autoFocus` is set to `false` and the focus was inside the current page, the focus will disappear.
-      * 			If the focus was outside the current page, after the navigation it will remain unchanged regardless
-      * 			of what is set to the `autoFocus` property.
+      *     If the focus was outside the current page, after the navigation it will remain unchanged regardless
+      *     of what is set to the `autoFocus` property.
       * 	 - If the `autoFocus` is set to `false` and at the same time another wrapping control has its own logic
-      * 			for focus restoring upon rerendering, the focus will still appear.
+      *     for focus restoring upon rerendering, the focus will still appear.
       *
       * Default value is `true`.
       *
@@ -860,7 +865,7 @@ object sapMNavContainerMod {
     def getCurrentPage(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Gets current value of property {@link #getDefaultTransitionName defaultTransitionName}.
       *
@@ -908,13 +913,13 @@ object sapMNavContainerMod {
       * The content entities between which this NavContainer navigates. These can be of type sap.m.Page, sap.ui.core.mvc.View,
       * sap.m.Carousel or any other control with fullscreen/page semantics.
       *
-      * These aggregated controls will receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}
+      * These aggregated controls will receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}
       */
     def getPages(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Returns the previous page (the page from which the user drilled down to the current page with "to()").
       *
@@ -967,7 +972,7 @@ object sapMNavContainerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Inserts the page/control with the specified ID into the navigation history stack of the NavContainer.
       *
@@ -990,7 +995,7 @@ object sapMNavContainerMod {
     data: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.1
+      * @since 1.16.1
       *
       * Inserts the page/control with the specified ID into the navigation history stack of the NavContainer.
       *
@@ -1037,7 +1042,7 @@ object sapMNavContainerMod {
     vPage: String
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes a page.
       *
@@ -1059,7 +1064,7 @@ object sapMNavContainerMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Sets a new value for property {@link #getAutoFocus autoFocus}.
       *
@@ -1071,12 +1076,12 @@ object sapMNavContainerMod {
       * **Note:** The following scenarios are possible, depending on where the focus was before navigation to
       * a new page:
       * 	 - If `autoFocus` is set to `true` and the focus was inside the current page, the focus will be moved
-      * 			automatically on the new page.
+      *     automatically on the new page.
       * 	 - If `autoFocus` is set to `false` and the focus was inside the current page, the focus will disappear.
-      * 			If the focus was outside the current page, after the navigation it will remain unchanged regardless
-      * 			of what is set to the `autoFocus` property.
+      *     If the focus was outside the current page, after the navigation it will remain unchanged regardless
+      *     of what is set to the `autoFocus` property.
       * 	 - If the `autoFocus` is set to `false` and at the same time another wrapping control has its own logic
-      * 			for focus restoring upon rerendering, the focus will still appear.
+      *     for focus restoring upon rerendering, the focus will still appear.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1091,7 +1096,7 @@ object sapMNavContainerMod {
     bAutoFocus: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Sets a new value for property {@link #getDefaultTransitionName defaultTransitionName}.
       *
@@ -1610,6 +1615,325 @@ object sapMNavContainerMod {
     ): this.type = js.native
   }
   
+  trait NavContainer$AfterNavigateEventParameters extends StObject {
+    
+    /**
+      * How the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page which has been navigated to)
+      * had not been shown/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which had been shown before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which had been shown before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether this was a back navigation, triggered by "back()".
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this was a navigation to a specific page, triggered by "backToPage()".
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this was a navigation to the root page, triggered by "backToTop()".
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether was a forward navigation, triggered by "to()".
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which is now shown after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which is now shown after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object NavContainer$AfterNavigateEventParameters {
+    
+    inline def apply(): NavContainer$AfterNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavContainer$AfterNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavContainer$AfterNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait NavContainer$NavigateEventParameters extends StObject {
+    
+    /**
+      * How the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page which is currently navigated
+      * to) has not been shown/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which was shown before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which was shown before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether this is a back navigation, triggered by "back()".
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this was a navigation to a specific page, triggered by "backToPage()".
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this is a navigation to the root page, triggered by "backToTop()".
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this is a forward navigation, triggered by "to()".
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which will be shown after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which will be shown after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object NavContainer$NavigateEventParameters {
+    
+    inline def apply(): NavContainer$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavContainer$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavContainer$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait NavContainer$NavigationFinishedEventParameters extends StObject {
+    
+    /**
+      * How the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page which has been navigated to)
+      * had not been shown/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which had been shown before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which had been shown before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether this was a back navigation, triggered by "back()".
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this was a navigation to a specific page, triggered by "backToPage()".
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether this was a navigation to the root page, triggered by "backToTop()".
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether was a forward navigation, triggered by "to()".
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page which is now shown after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page which is now shown after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object NavContainer$NavigationFinishedEventParameters {
+    
+    inline def apply(): NavContainer$NavigationFinishedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NavContainer$NavigationFinishedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavContainer$NavigationFinishedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  type NavContainerAfterNavigateEvent = typings.openui5.sapUiBaseEventMod.default[NavContainer$AfterNavigateEventParameters]
+  
+  type NavContainerAfterNavigateEventParameters = NavContainer$AfterNavigateEventParameters
+  
   trait NavContainerChild extends StObject {
     
     var __implements__sap_m_NavContainerChild: Boolean
@@ -1628,22 +1952,35 @@ object sapMNavContainerMod {
     }
   }
   
+  type NavContainerNavigateEvent = typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigateEventParameters]
+  
+  type NavContainerNavigateEventParameters = NavContainer$NavigateEventParameters
+  
+  type NavContainerNavigationFinishedEvent = typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigationFinishedEventParameters]
+  
+  type NavContainerNavigationFinishedEventParameters = NavContainer$NavigationFinishedEventParameters
+  
   trait NavContainerSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * The event is fired when navigation between two pages has completed (once all events to the child controls
       * have been fired). In case of animated transitions this event is fired with some delay after the "navigate"
       * event. This event is only fired if the DOM ref of the `NavContainer` is available. If the DOM ref is
       * not available, the `navigationFinished` event should be used instead.
       */
-    var afterNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$AfterNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Determines whether the initial focus is set automatically on first rendering and after navigating to
       * a new page. This is useful when on touch devices the keyboard pops out due to the focus being automatically
@@ -1653,19 +1990,19 @@ object sapMNavContainerMod {
       * **Note:** The following scenarios are possible, depending on where the focus was before navigation to
       * a new page:
       * 	 - If `autoFocus` is set to `true` and the focus was inside the current page, the focus will be moved
-      * 			automatically on the new page.
+      *     automatically on the new page.
       * 	 - If `autoFocus` is set to `false` and the focus was inside the current page, the focus will disappear.
-      * 			If the focus was outside the current page, after the navigation it will remain unchanged regardless
-      * 			of what is set to the `autoFocus` property.
+      *     If the focus was outside the current page, after the navigation it will remain unchanged regardless
+      *     of what is set to the `autoFocus` property.
       * 	 - If the `autoFocus` is set to `false` and at the same time another wrapping control has its own logic
-      * 			for focus restoring upon rerendering, the focus will still appear.
+      *     for focus restoring upon rerendering, the focus will still appear.
       */
     var autoFocus: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * The type of the transition/animation to apply when "to()" is called without defining a transition type
       * to use. The default is "slide". Other options are: "baseSlide", "fade", "flip" and "show" - and the names
@@ -1692,29 +2029,39 @@ object sapMNavContainerMod {
     var initialPage: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * The event is fired when navigation between two pages has been triggered (before any events to the child
       * controls are fired). The transition (if any) to the new page has not started yet. This event can be aborted
       * by the application with preventDefault(), which means that there will be no navigation.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * The event is fired when navigation between two pages has completed regardless of whether the DOM is ready
       * or not. This event is useful when performing navigation without/before rendering of the `NavContainer`.
       * Keep in mind that the DOM is not guaranteed to be ready when this event is fired.
       */
-    var navigationFinished: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigationFinished: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigationFinishedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The content entities between which this NavContainer navigates. These can be of type sap.m.Page, sap.ui.core.mvc.View,
       * sap.m.Carousel or any other control with fullscreen/page semantics.
       *
-      * These aggregated controls will receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow
-      * BeforeShow}, they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}
+      * These aggregated controls will receive navigation events like {@link sap.m.NavContainerChild#event:BeforeShow BeforeShow},
+      * they are documented in the pseudo interface {@link sap.m.NavContainerChild sap.m.NavContainerChild}
       */
     var pages: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1738,7 +2085,9 @@ object sapMNavContainerMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: NavContainerSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
+      inline def setAfterNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$AfterNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterNavigateUndefined: Self = StObject.set(x, "afterNavigate", js.undefined)
       
@@ -1758,11 +2107,15 @@ object sapMNavContainerMod {
       
       inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       
-      inline def setNavigationFinished(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigationFinished", js.Any.fromFunction1(value))
+      inline def setNavigationFinished(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[NavContainer$NavigationFinishedEventParameters] => Unit
+      ): Self = StObject.set(x, "navigationFinished", js.Any.fromFunction1(value))
       
       inline def setNavigationFinishedUndefined: Self = StObject.set(x, "navigationFinished", js.undefined)
       

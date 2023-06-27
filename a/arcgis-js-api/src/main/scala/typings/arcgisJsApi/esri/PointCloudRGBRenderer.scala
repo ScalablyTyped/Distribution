@@ -13,17 +13,17 @@ trait PointCloudRGBRenderer
      with pointCloudRenderersPointCloudRenderer {
   
   /**
-    * The name of the field containing RGB values used to drive the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#field)
-    */
+  		 * The name of the field containing RGB values used to drive the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#field)
+  		 */
   var field: String = js.native
   
   /**
-    * The type of Renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#type)
-    */
+  		 * The type of Renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html#type)
+  		 */
   @JSName("type")
   val type_PointCloudRGBRenderer: `point-cloud-rgb` = js.native
 }

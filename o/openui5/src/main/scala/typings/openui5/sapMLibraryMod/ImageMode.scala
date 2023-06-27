@@ -34,7 +34,7 @@ object ImageMode extends StObject {
   /* "Image" */ val Image: typings.openui5.sapMLibraryMod.ImageMode.Image & String = js.native
   
   /**
-    * @EXPERIMENTAL (since 1.106)
+    * @experimental (since 1.106)
     *
     * The image is rendered with 'div' tag, containing the inline 'svg' **Note:** Please, be aware that this
     * feature works under the Browser's Cross-Origin Resource Sharing (CORS) policy. This means that a web

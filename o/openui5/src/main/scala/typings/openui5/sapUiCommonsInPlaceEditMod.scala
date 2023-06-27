@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.LiveValue
-import typings.openui5.anon.NewValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsLibraryMod.TextViewDesign
@@ -140,13 +138,13 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.InPlaceEdit` itself
       */
@@ -172,7 +170,7 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -183,7 +181,7 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.InPlaceEdit` itself
       */
@@ -191,7 +189,7 @@ object sapUiCommonsInPlaceEditMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.ui.commons.InPlaceEdit`.
       *
@@ -208,20 +206,20 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.InPlaceEdit` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.ui.commons.InPlaceEdit`.
       *
@@ -243,7 +241,7 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -254,7 +252,7 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.InPlaceEdit` itself
       */
@@ -285,13 +283,13 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -299,7 +297,7 @@ object sapUiCommonsInPlaceEditMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.ui.commons.InPlaceEdit`.
       *
@@ -311,13 +309,13 @@ object sapUiCommonsInPlaceEditMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ InPlaceEditLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -325,31 +323,35 @@ object sapUiCommonsInPlaceEditMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewValue): this.type = js.native
+    mParameters: InPlaceEdit$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.16.5
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.5
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: LiveValue): this.type = js.native
+    mParameters: InPlaceEdit$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getContent content}.
@@ -360,7 +362,7 @@ object sapUiCommonsInPlaceEditMod {
     def getContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getDesign design}.
       *
@@ -406,7 +408,7 @@ object sapUiCommonsInPlaceEditMod {
     oContent: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getDesign design}.
       *
@@ -472,6 +474,60 @@ object sapUiCommonsInPlaceEditMod {
     sValueState: ValueState): this.type = js.native
   }
   
+  trait InPlaceEdit$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new / changed value of the InPlaceEdit.
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object InPlaceEdit$ChangeEventParameters {
+    
+    inline def apply(): InPlaceEdit$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InPlaceEdit$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InPlaceEdit$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait InPlaceEdit$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Current value of the Textfield.
+      */
+    var liveValue: js.UndefOr[String] = js.undefined
+  }
+  object InPlaceEdit$LiveChangeEventParameters {
+    
+    inline def apply(): InPlaceEdit$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InPlaceEdit$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InPlaceEdit$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setLiveValue(value: String): Self = StObject.set(x, "liveValue", value.asInstanceOf[js.Any])
+      
+      inline def setLiveValueUndefined: Self = StObject.set(x, "liveValue", js.undefined)
+    }
+  }
+  
+  type InPlaceEditChangeEvent = typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$ChangeEventParameters]
+  
+  type InPlaceEditChangeEventParameters = InPlaceEdit$ChangeEventParameters
+  
+  type InPlaceEditLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$LiveChangeEventParameters]
+  
+  type InPlaceEditLiveChangeEventParameters = InPlaceEdit$LiveChangeEventParameters
+  
   trait InPlaceEditSettings
     extends StObject
        with ControlSettings {
@@ -480,7 +536,12 @@ object sapUiCommonsInPlaceEditMod {
       * Event is fired when the text in the field has changed AND the focus leaves the InPlaceEdit or the Enter
       * key is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Content control of the InPlaceEdit. The following controls are allowed: TextField, ComboBox, DropdownBox
@@ -489,7 +550,7 @@ object sapUiCommonsInPlaceEditMod {
     var content: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Defines the visual appearance of the control. Currently this is not supported for Labels.
       */
@@ -498,13 +559,18 @@ object sapUiCommonsInPlaceEditMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.5
+      * @since 1.16.5
       *
       * This event if fired during typing into the InPlaceEdit and returns the currently entered value. This
       * is not the content of the value property. The value property is only updated by ENTER and by leaving
       * the control.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If undo is enabled after changing the text an undo button appears.
@@ -531,7 +597,9 @@ object sapUiCommonsInPlaceEditMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: InPlaceEditSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -545,7 +613,9 @@ object sapUiCommonsInPlaceEditMod {
       
       inline def setDesignUndefined: Self = StObject.set(x, "design", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[InPlaceEdit$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

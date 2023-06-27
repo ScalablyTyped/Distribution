@@ -13,9 +13,9 @@ trait TemplateItemConstructor
      with Instantiable1[/* properties */ TemplateItemProperties, TemplateItem] {
   
   /**
-    * Fetches the thumbnail used to display the template item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
-    */
+  		 * Fetches the thumbnail used to display the template item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
+  		 */
   def fetchThumbnail(): js.Promise[Any] = js.native
 }

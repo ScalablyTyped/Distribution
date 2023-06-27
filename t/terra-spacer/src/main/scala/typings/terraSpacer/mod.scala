@@ -1,6 +1,6 @@
 package typings.terraSpacer
 
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.terraSpacer.anon.PartialSpacerProps
 import typings.terraSpacer.anon.Sizes
@@ -15,8 +15,8 @@ object mod {
   /* Inlined react.react.FC<terra-spacer.terra-spacer/lib/Spacer.SpacerProps> & {  Opts :{  Sizes :terra-spacer.terra-spacer/lib/Spacer.SpacerSizes}} */
   object default {
     
-    inline def apply(props: SpacerProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: SpacerProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SpacerProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: SpacerProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("terra-spacer", JSImport.Default)
     @js.native

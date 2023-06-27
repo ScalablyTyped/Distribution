@@ -104,7 +104,7 @@ object sapUiCoreMvcControllerExtensionMod {
     inline def `override`(/**
       * The custom extension definition
       */
-    oExtension: js.Object): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(oExtension.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    oExtension: Record[String, js.Function]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(oExtension.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   }
   
   @js.native

@@ -4,24 +4,41 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The underlying pixel data of an area of a <canvas> element. It is created using the ImageData() constructor or creator methods on the CanvasRenderingContext2D object associated with a canvas: createImageData() and getImageData(). It can also be used to set a part of the canvas by using putImageData(). */
+/**
+  * The underlying pixel data of an area of a <canvas> element. It is created using the ImageData() constructor or creator methods on the CanvasRenderingContext2D object associated with a canvas: createImageData() and getImageData(). It can also be used to set a part of the canvas by using putImageData().
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageData)
+  */
 trait ImageData
   extends StObject
      with ImageBitmapSource
      with TexImageSource {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageData/colorSpace) */
   /* standard dom */
   val colorSpace: PredefinedColorSpace
   
-  /** Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255. */
+  /**
+    * Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageData/data)
+    */
   /* standard dom */
   val data: js.typedarray.Uint8ClampedArray
   
-  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /**
+    * Returns the actual dimensions of the data in the ImageData object, in pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageData/height)
+    */
   /* standard dom */
   val height: Double
   
-  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /**
+    * Returns the actual dimensions of the data in the ImageData object, in pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageData/width)
+    */
   /* standard dom */
   val width: Double
 }

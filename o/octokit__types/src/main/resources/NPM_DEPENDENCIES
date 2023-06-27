@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/types" : "9.2.2"
+      "@octokit/types" : "10.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/types" : "9.2.2"
+      "@octokit/types" : "10.0.0"
     }
   ],
   "compile-devDependencies" : [

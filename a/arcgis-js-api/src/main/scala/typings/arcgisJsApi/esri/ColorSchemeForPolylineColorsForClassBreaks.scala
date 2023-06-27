@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorSchemeForPolylineColorsForClassBreaks extends StObject {
   
   /**
-    * An array of hex color strings.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
-    */
+  		 * An array of hex color strings.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The number of classes used in the classed color visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
-    */
+  		 * The number of classes used in the classed color visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
+  		 */
   var numClasses: Double
 }
 object ColorSchemeForPolylineColorsForClassBreaks {

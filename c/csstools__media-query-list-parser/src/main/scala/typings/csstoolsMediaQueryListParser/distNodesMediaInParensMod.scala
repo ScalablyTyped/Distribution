@@ -16,6 +16,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaNotMod._MediaNotWalker
 import typings.csstoolsMediaQueryListParser.distNodesMediaOrMod._MediaOrWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaOrMod._MediaOrWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,12 +73,20 @@ object distNodesMediaInParensMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
+    def walk[T /* <: Record[String, Any] */](
       cb: js.Function2[
-          /* entry */ NodeMediaInParensWalkerEntry, 
+          /* entry */ NodeMediaInParensWalkerEntry[T], 
           /* index */ Double | String, 
           Boolean | Unit
         ]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[
+          /* entry */ NodeMediaInParensWalkerEntry[T], 
+          /* index */ Double | String, 
+          Boolean | Unit
+        ],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -92,8 +101,6 @@ object distNodesMediaInParensMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ComponentValue
-    - js.Array[
-  typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ComponentValue]
     - typings.csstoolsMediaQueryListParser.distNodesGeneralEnclosedMod.GeneralEnclosed
     - typings.csstoolsMediaQueryListParser.distNodesMediaAndMod.MediaAnd
     - typings.csstoolsMediaQueryListParser.distNodesMediaNotMod.MediaNot
@@ -108,7 +115,7 @@ object distNodesMediaInParensMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaFeatureMod.MediaFeature
     - typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod.MediaInParens
   */
-  type MediaInParensWalkerEntry = _MediaInParensWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaInParensWalkerEntry = _MediaInParensWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ContainerNode

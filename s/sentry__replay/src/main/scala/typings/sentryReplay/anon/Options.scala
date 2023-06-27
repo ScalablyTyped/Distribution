@@ -1,7 +1,7 @@
 package typings.sentryReplay.anon
 
-import typings.sentryReplay.typesTypesMod.RecordingOptions
-import typings.sentryReplay.typesTypesMod.ReplayPluginOptions
+import typings.sentryReplay.typesTypesReplayMod.RecordingOptions
+import typings.sentryReplay.typesTypesReplayMod.ReplayPluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

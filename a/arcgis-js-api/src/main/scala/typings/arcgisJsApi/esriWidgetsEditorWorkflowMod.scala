@@ -11,10 +11,10 @@ object esriWidgetsEditorWorkflowMod {
   @JSImport("esri/widgets/Editor/Workflow", JSImport.Namespace)
   @js.native
   /**
-    * A Workflow helps manage different stages of an [editing](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) workflow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html)
-    */
+  		 * The read-only `Workflow` class helps manage different stages of an [editing](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) workflow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html)
+  		 */
   open class ^ ()
     extends StObject
        with Workflow {

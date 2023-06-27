@@ -84,7 +84,7 @@ object sapUiModelOdataV4ContextMod {
     extends typings.openui5.sapUiModelContextMod.default {
     
     /**
-      * @SINCE 1.83.0
+      * @since 1.83.0
       *
       * Collapses the group node that this context points to.
       * See:
@@ -94,11 +94,11 @@ object sapUiModelOdataV4ContextMod {
     def collapse(): Unit = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Returns a promise that is resolved without data when the entity represented by this context has been
       * created in the back end and all selected properties of this entity are available. Expanded navigation
-      * properties are only available if the context's binding is refreshable. {@link sap.ui.model.odata.v4.ODataContextBinding#refresh}
+      * properties are only available if the context's binding is refreshable. {@link sap.ui.model.odata.v4.ODataContextBinding#refresh }
       * and {@link sap.ui.model.odata.v4.ODataListBinding#refresh} describe which bindings are refreshable.
       *
       * As long as the promise is not yet resolved or rejected, the entity represented by this context is transient.
@@ -106,24 +106,27 @@ object sapUiModelOdataV4ContextMod {
       * Once the promise is resolved, {@link #getPath} returns a path including the key predicate of the new
       * entity. This requires that all key properties are available.
       *
+      * Note that the promise of a nested context within a deep create is always rejected, even if the deep create
+      * succeeds. See {@link sap.ui.model.odata.v4.ODataListBinding#create} for more details.
+      *
       * @returns A promise that is resolved without data when the entity represented by this context has been
       * created in the back end. It is rejected with an `Error` instance where `oError.canceled === true` if
       * the transient entity is deleted before it is created in the back end, for example via {@link sap.ui.model.odata.v4.Context#delete},
-      * {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges} or {@link sap.ui.model.odata.v4.ODataModel#resetChanges}.
-      * It is rejected with an `Error` instance without `oError.canceled` if loading of $metadata fails. Returns
-      * `undefined` if the context has not been created using {@link sap.ui.model.odata.v4.ODataListBinding#create}.
+      * {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges} or {@link sap.ui.model.odata.v4.ODataModel#resetChanges},
+      * and for all nested contexts within a deep create. It is rejected with an `Error` instance without `oError.canceled`
+      * if loading of $metadata fails. Returns `undefined` if the context has not been created using {@link sap.ui.model.odata.v4.ODataListBinding#create}.
       */
     def created(): js.UndefOr[js.Promise[Unit]] = js.native
     
     /**
-      * @SINCE 1.41.0
+      * @since 1.41.0
       *
       * Deletes the OData entity this context points to. The context is removed from the binding immediately,
       * even if {@link sap.ui.model.odata.v4.SubmitMode.API} is used, and the request is only sent later when
       * {@link sap.ui.model.odata.v4.ODataModel#submitBatch} is called. As soon as the context is deleted on
-      * the client, {@link #isDeleted} returns `true` and the context must not be used anymore (except for status
-      * APIs like {@link #isDeleted}, {@link #isKeepAlive}, {@link #hasPendingChanges}, {@link #resetChanges}),
-      * especially not as a binding context.
+      * the client, {@link #isDeleted} returns `true` and the context must not be used anymore, especially not
+      * as a binding context. Exceptions hold for status APIs like {@link #isDeleted}, {@link #isKeepAlive},
+      * {@link #hasPendingChanges}, {@link #resetChanges}, or {@link #isSelected} (returns `false` since 1.114.0).
       *
       * Since 1.105 such a pending deletion is a pending change. It causes `hasPendingChanges` to return `true`
       * for the context, the binding containing it, and the model. The `resetChanges` method called on the context
@@ -160,22 +163,22 @@ object sapUiModelOdataV4ContextMod {
     def delete(
       /**
       * The group ID to be used for the DELETE request; if not specified, the update group ID for the context's
-      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
-      * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
-      * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
-      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
+      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link #isTransient}),
+      * no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE request in
+      * case of a kept-alive context that is not in the collection and of which you know that it does not exist
+      * on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a group ID
+      * with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: String
     ): js.Promise[Any] = js.native
     def delete(
       /**
       * The group ID to be used for the DELETE request; if not specified, the update group ID for the context's
-      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
-      * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
-      * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
-      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
+      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link #isTransient}),
+      * no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE request in
+      * case of a kept-alive context that is not in the collection and of which you know that it does not exist
+      * on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a group ID
+      * with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: String,
       /**
@@ -188,11 +191,11 @@ object sapUiModelOdataV4ContextMod {
     def delete(
       /**
       * The group ID to be used for the DELETE request; if not specified, the update group ID for the context's
-      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link
-      * #isTransient}), no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE
-      * request in case of a kept-alive context that is not in the collection and of which you know that it does
-      * not exist on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a
-      * group ID with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
+      * binding is used, see {@link #getUpdateGroupId}. Since 1.81, if this context is transient (see {@link #isTransient}),
+      * no group ID needs to be specified. Since 1.98.0, you can use `null` to prevent the DELETE request in
+      * case of a kept-alive context that is not in the collection and of which you know that it does not exist
+      * on the server anymore (for example, a draft after activation). Since 1.108.0 the usage of a group ID
+      * with {@link sap.ui.model.odata.v4.SubmitMode.API} is possible.
       */
     sGroupId: Unit,
       /**
@@ -204,7 +207,7 @@ object sapUiModelOdataV4ContextMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.77.0
+      * @since 1.77.0
       *
       * Expands the group node that this context points to.
       * See:
@@ -214,7 +217,7 @@ object sapUiModelOdataV4ContextMod {
     def expand(): Unit = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns the binding this context belongs to.
       *
@@ -223,7 +226,7 @@ object sapUiModelOdataV4ContextMod {
     def getBinding(): typings.openui5.sapUiModelOdataV4OdatacontextbindingMod.default | typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns the "canonical path" of the entity for this context. According to "4.3.1 Canonical URL" of the specification "OData Version 4.0 Part 2: URL Conventions", this is
       * the "name of the entity set associated with the entity followed by the key predicate identifying the
@@ -238,9 +241,9 @@ object sapUiModelOdataV4ContextMod {
     def getCanonicalPath(): String = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
-      * Returns the group ID of the context's binding that is used for read requests. See {@link sap.ui.model.odata.v4.ODataListBinding#getGroupId}
+      * Returns the group ID of the context's binding that is used for read requests. See {@link sap.ui.model.odata.v4.ODataListBinding#getGroupId }
       * and {@link sap.ui.model.odata.v4.ODataContextBinding#getGroupId}.
       *
       * @returns The group ID
@@ -248,7 +251,7 @@ object sapUiModelOdataV4ContextMod {
     def getGroupId(): String = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns the context's index within the binding's collection. The return value changes when a new entity
       * is added via {@link sap.ui.model.odata.v4.ODataListBinding#create} without `bAtEnd`, and when a context
@@ -274,9 +277,9 @@ object sapUiModelOdataV4ContextMod {
     ): Any = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
-      * Returns the group ID of the context's binding that is used for update requests. See {@link sap.ui.model.odata.v4.ODataListBinding#getUpdateGroupId}
+      * Returns the group ID of the context's binding that is used for update requests. See {@link sap.ui.model.odata.v4.ODataListBinding#getUpdateGroupId }
       * and {@link sap.ui.model.odata.v4.ODataContextBinding#getUpdateGroupId}.
       *
       * @returns The update group ID
@@ -284,24 +287,24 @@ object sapUiModelOdataV4ContextMod {
     def getUpdateGroupId(): String = js.native
     
     /**
-      * @SINCE 1.53.0
+      * @since 1.53.0
       *
       * Returns whether there are pending changes for bindings dependent on this context, or for unresolved bindings
       * (see {@link sap.ui.model.Binding#isResolved}) which were dependent on this context at the time the pending
-      * change was created. This includes the context itself being {@link #isTransient transient} or {@link #delete
-      * deleted} on the client, but not yet on the server. Since 1.98.0, {@link #isInactive inactive} contexts
-      * are ignored, unless their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
-      * has been prevented and therefore {@link #isInactive} returns `1`.
+      * change was created. This includes the context itself being {@link #isTransient transient} or {@link #delete deleted }
+      * on the client, but not yet on the server. Since 1.98.0, {@link #isInactive inactive} contexts are ignored,
+      * unless their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation} has been
+      * prevented and therefore {@link #isInactive} returns `1`.
       *
       * @returns Whether there are pending changes
       */
     def hasPendingChanges(): Boolean = js.native
     
     /**
-      * @SINCE 1.105.0
+      * @since 1.105.0
       *
       * Returns whether this context is deleted. It becomes `true` immediately after calling {@link #delete},
-      * even while the request is waiting for {@link sap.ui.model.odata.v4.ODataModel#submitBatch submitBatch}
+      * even while the request is waiting for {@link sap.ui.model.odata.v4.ODataModel#submitBatch submitBatch }
       * or is in process. It becomes `false` again when the DELETE request fails or is canceled. The result of
       * this function can also be accessed via the "@$ui5.context.isDeleted" instance annotation at the entity.
       * See:
@@ -312,7 +315,7 @@ object sapUiModelOdataV4ContextMod {
     def isDeleted(): Boolean = js.native
     
     /**
-      * @SINCE 1.77.0
+      * @since 1.77.0
       *
       * Tells whether the group node that this context points to is expanded.
       * See:
@@ -325,13 +328,13 @@ object sapUiModelOdataV4ContextMod {
     def isExpanded(): js.UndefOr[Boolean] = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Returns whether this context is inactive. The result of this function can also be accessed via instance
       * annotation "@$ui5.context.isInactive" at the entity.
       *
-      * Since 1.110.0, `1` is returned in case {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate
-      * activation} has been prevented. Note that
+      * Since 1.110.0, `1` is returned in case {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation }
+      * has been prevented. Note that
       * 	 it is truthy: `!!1 === true`,  it is almost like `true`: `1 == true`,  but it can easily be
       * distinguished: `1 !== true`,  and `if (oContext.isInactive()) {...}` treats inactive contexts the
       * same, no matter whether activation has been prevented or not.
@@ -345,7 +348,7 @@ object sapUiModelOdataV4ContextMod {
     def isInactive(): js.UndefOr[Boolean | Double] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns whether this context is kept alive even when it is removed from its binding's collection, for
       * example if a filter is applied and the entity represented by this context does not match the filter criteria.
@@ -357,9 +360,9 @@ object sapUiModelOdataV4ContextMod {
     def isKeepAlive(): Boolean = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.111.0)
+      * @experimental (since 1.111.0)
       *
-      * Tells whether this context is currently selected.
+      * Tells whether this context is currently selected, but not {@link #delete deleted} on the client.
       * See:
       * 	#setSelected
       *
@@ -368,7 +371,7 @@ object sapUiModelOdataV4ContextMod {
     def isSelected(): Boolean = js.native
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * For a context created using {@link sap.ui.model.odata.v4.ODataListBinding#create}, the method returns
       * `true` if the context is transient, meaning that the promise returned by {@link #created} is not yet
@@ -383,7 +386,7 @@ object sapUiModelOdataV4ContextMod {
     def isTransient(): js.UndefOr[Boolean] = js.native
     
     /**
-      * @SINCE 1.53.0
+      * @since 1.53.0
       *
       * Refreshes the single entity represented by this context. Use {@link #requestRefresh} if you want to wait
       * for the refresh.
@@ -434,7 +437,7 @@ object sapUiModelOdataV4ContextMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.97.0
+      * @since 1.97.0
       *
       * Replaces this context with the given other context "in situ", that is, at the index it currently has
       * in its list binding's collection. You probably want to delete this context afterwards without requesting
@@ -446,7 +449,7 @@ object sapUiModelOdataV4ContextMod {
     oOtherContext: Context): Unit = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns a promise for the "canonical path" of the entity for this context. According to "4.3.1 Canonical URL" of the specification "OData Version 4.0 Part 2: URL Conventions", this is
       * the "name of the entity set associated with the entity followed by the key predicate identifying the
@@ -463,12 +466,11 @@ object sapUiModelOdataV4ContextMod {
     def requestCanonicalPath(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns a promise on the value for the given path relative to this context. The function allows access
       * to the complete data the context points to (if `sPath` is "") or any part thereof. The data is a JSON
-      * structure as described in "OData JSON Format Version 4.0". Note that the function clones the result. Modify values via {@link
-      * sap.ui.model.odata.v4.Context#setProperty}.
+      * structure as described in "OData JSON Format Version 4.0". Note that the function clones the result. Modify values via {@link sap.ui.model.odata.v4.Context#setProperty}.
       *
       * The header context of a list binding only delivers `$count` (wrapped in an object if `sPath` is "").
       *
@@ -478,8 +480,7 @@ object sapUiModelOdataV4ContextMod {
       * 	sap.ui.model.odata.v4.ODataContextBinding#refresh
       * 	sap.ui.model.odata.v4.ODataListBinding#refresh
       *
-      * @returns A promise on the requested value; it is rejected if the context is a header context and the
-      * path is neither empty nor "$count".
+      * @returns A promise on the requested value
       */
     def requestObject(): js.Promise[Any] = js.native
     def requestObject(/**
@@ -488,7 +489,7 @@ object sapUiModelOdataV4ContextMod {
     sPath: String): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns a promise on the property value for the given path relative to this context. The path is expected
       * to point to a structural property with primitive type. Since 1.81.1 it is possible to request more than
@@ -543,10 +544,10 @@ object sapUiModelOdataV4ContextMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
-      * Refreshes the single entity represented by this context and returns a promise to wait for it. See {@link
-      * #refresh} for details. Use {@link #refresh} if you do not need the promise.
+      * Refreshes the single entity represented by this context and returns a promise to wait for it. See {@link #refresh }
+      * for details. Use {@link #refresh} if you do not need the promise.
       *
       * @returns A promise which resolves without a defined result when the refresh is finished and rejects with
       * an instance of `Error` if the refresh failed
@@ -578,7 +579,7 @@ object sapUiModelOdataV4ContextMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.61.0
+      * @since 1.61.0
       *
       * Loads side effects for this context using the given "14.5.11 Expression edm:NavigationPropertyPath" or
       * "14.5.13 Expression edm:PropertyPath" objects. Use this method to explicitly load side effects in case
@@ -672,7 +673,7 @@ object sapUiModelOdataV4ContextMod {
     aPathExpressions: js.Array[js.Object | String],
       /**
       * The group ID to be used (since 1.69.0); if not specified, the update group ID for the context's binding
-      * is used, see {@link #getUpdateGroupId}. If a different group ID is specified, make sure that {@link #requestSideEffects}
+      * is used, see {@link #getUpdateGroupId}. If a different group ID is specified, make sure that {@link #requestSideEffects }
       * is called after the corresponding updates have been successfully processed by the server and that there
       * are no pending changes for the affected properties.
       */
@@ -680,7 +681,7 @@ object sapUiModelOdataV4ContextMod {
     ): js.Promise[Unit] = js.native
     
     /**
-      * @SINCE 1.113.0
+      * @since 1.113.0
       *
       * Resets all property changes, created entities, and entity deletions of this context. Resets also invalid
       * user input and inactive contexts which had their activation prevented (see {@link sap.ui.model.odata.v4.Context#isInactive}).
@@ -696,7 +697,7 @@ object sapUiModelOdataV4ContextMod {
     def resetChanges(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets this context's `keepAlive` attribute. If `true` the context is kept alive even when it is removed
       * from its binding's collection, for example if a filter is applied and the entity represented by this
@@ -722,8 +723,8 @@ object sapUiModelOdataV4ContextMod {
       */
     bKeepAlive: Boolean,
       /**
-      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link
-      * #destroy}. Supported since 1.84.0
+      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link #destroy}.
+      * Supported since 1.84.0
       */
     fnOnBeforeDestroy: js.Function
     ): Unit = js.native
@@ -733,8 +734,8 @@ object sapUiModelOdataV4ContextMod {
       */
     bKeepAlive: Boolean,
       /**
-      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link
-      * #destroy}. Supported since 1.84.0
+      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link #destroy}.
+      * Supported since 1.84.0
       */
     fnOnBeforeDestroy: js.Function,
       /**
@@ -751,8 +752,8 @@ object sapUiModelOdataV4ContextMod {
       */
     bKeepAlive: Boolean,
       /**
-      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link
-      * #destroy}. Supported since 1.84.0
+      * Callback function that is executed once for a kept-alive context just before it is destroyed, see {@link #destroy}.
+      * Supported since 1.84.0
       */
     fnOnBeforeDestroy: Unit,
       /**
@@ -765,7 +766,7 @@ object sapUiModelOdataV4ContextMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.67.0
+      * @since 1.67.0
       *
       * Sets a new value for the property identified by the given path. The path is relative to this context
       * and is expected to point to a structural property with primitive type or, since 1.85.0, to an instance
@@ -782,7 +783,7 @@ object sapUiModelOdataV4ContextMod {
       * With `bRetry` it is only rejected with an `Error` instance where `oError.canceled === true` when the
       * entity has been deleted while the request was pending or the property has been reset via the methods
       *
-      * 	 {@link sap.ui.model.odata.v4.ODataModel#resetChanges}  {@link sap.ui.model.odata.v4.ODataContextBinding#resetChanges}
+      * 	 {@link sap.ui.model.odata.v4.ODataModel#resetChanges}  {@link sap.ui.model.odata.v4.ODataContextBinding#resetChanges }
       * or  {@link sap.ui.model.odata.v4.ODataListBinding#resetChanges}.
       */
     def setProperty(
@@ -828,11 +829,11 @@ object sapUiModelOdataV4ContextMod {
     sGroupId: String,
       /**
       * Since 1.85.0, if `true` the property is not reset if the PATCH request failed. It contributes to the
-      * pending changes instead (see {@link sap.ui.model.odata.v4.ODataModel#hasPendingChanges}, {@link sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges}
+      * pending changes instead (see {@link sap.ui.model.odata.v4.ODataModel#hasPendingChanges}, {@link sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges }
       * and {@link sap.ui.model.odata.v4.ODataListBinding#hasPendingChanges}) and can be reset via the corresponding
       * `resetChanges` methods.
       *
-      * The PATCH is automatically repeated with the next call of {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * The PATCH is automatically repeated with the next call of {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * if the group ID has {@link sap.ui.model.odata.v4.SubmitMode.API}. Otherwise it is repeated when the property
       * is modified again.
       *
@@ -859,11 +860,11 @@ object sapUiModelOdataV4ContextMod {
     sGroupId: Unit,
       /**
       * Since 1.85.0, if `true` the property is not reset if the PATCH request failed. It contributes to the
-      * pending changes instead (see {@link sap.ui.model.odata.v4.ODataModel#hasPendingChanges}, {@link sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges}
+      * pending changes instead (see {@link sap.ui.model.odata.v4.ODataModel#hasPendingChanges}, {@link sap.ui.model.odata.v4.ODataContextBinding#hasPendingChanges }
       * and {@link sap.ui.model.odata.v4.ODataListBinding#hasPendingChanges}) and can be reset via the corresponding
       * `resetChanges` methods.
       *
-      * The PATCH is automatically repeated with the next call of {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * The PATCH is automatically repeated with the next call of {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * if the group ID has {@link sap.ui.model.odata.v4.SubmitMode.API}. Otherwise it is repeated when the property
       * is modified again.
       *
@@ -875,9 +876,13 @@ object sapUiModelOdataV4ContextMod {
     ): js.Promise[Any] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.111.0)
+      * @experimental (since 1.111.0)
       *
-      * Determines whether this context is currently selected.
+      * Determines whether this context is currently selected. If the preconditions of {@link #setKeepAlive }
+      * hold, a best effort is made to implicitly keep a selected context alive in order to preserve the selection
+      * state. While a context is currently {@link #delete deleted} on the client, it does not appear as {@link #isSelected selected}.
+      *
+      * **Note:** It is unsafe to keep a reference to a context instance which is not {@link #isKeepAlive kept alive}.
       * See:
       * 	#isSelected
       */

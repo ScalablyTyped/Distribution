@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Row
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -138,13 +137,13 @@ object sapUiTableRowActionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.RowActionItem` itself
       */
@@ -169,7 +168,7 @@ object sapUiTableRowActionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -180,7 +179,7 @@ object sapUiTableRowActionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.RowActionItem` itself
       */
@@ -198,13 +197,13 @@ object sapUiTableRowActionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowActionItemPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -212,17 +211,19 @@ object sapUiTableRowActionItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePress(): this.type = js.native
-    def firePress(/**
+    def firePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Row): this.type = js.native
+    mParameters: RowActionItem$PressEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getIcon icon}.
@@ -341,6 +342,42 @@ object sapUiTableRowActionItemMod {
     bVisible: Boolean): this.type = js.native
   }
   
+  trait RowActionItem$PressEventParameters extends StObject {
+    
+    /**
+      * The item which was pressed.
+      */
+    var item: js.UndefOr[RowActionItem] = js.undefined
+    
+    /**
+      * The table row to which the pressed item belongs to.
+      */
+    var row: js.UndefOr[typings.openui5.sapUiTableRowMod.default] = js.undefined
+  }
+  object RowActionItem$PressEventParameters {
+    
+    inline def apply(): RowActionItem$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RowActionItem$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowActionItem$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: RowActionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setRow(value: typings.openui5.sapUiTableRowMod.default): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    }
+  }
+  
+  type RowActionItemPressEvent = typings.openui5.sapUiBaseEventMod.default[RowActionItem$PressEventParameters]
+  
+  type RowActionItemPressEventParameters = RowActionItem$PressEventParameters
+  
   trait RowActionItemSettings
     extends StObject
        with ElementSettings {
@@ -353,7 +390,12 @@ object sapUiTableRowActionItemMod {
     /**
       * The `press` is fired when the user triggers the corresponding action.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowActionItem$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The text of the item. It is used as tooltip and for accessibility purposes.
@@ -389,7 +431,9 @@ object sapUiTableRowActionItemMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowActionItem$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -162,13 +162,13 @@ object sapUiWebcMainCardHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.CardHeader` itself
       */
@@ -195,7 +195,7 @@ object sapUiWebcMainCardHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -206,7 +206,7 @@ object sapUiWebcMainCardHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.CardHeader` itself
       */
@@ -238,13 +238,13 @@ object sapUiWebcMainCardHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -252,7 +252,7 @@ object sapUiWebcMainCardHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -513,6 +513,12 @@ object sapUiWebcMainCardHeaderMod {
     sTitleText: String): this.type = js.native
   }
   
+  trait CardHeader$ClickEventParameters extends StObject
+  
+  type CardHeaderClickEvent = typings.openui5.sapUiBaseEventMod.default[CardHeader$ClickEventParameters]
+  
+  type CardHeaderClickEventParameters = CardHeader$ClickEventParameters
+  
   trait CardHeaderSettings
     extends StObject
        with ControlSettings {
@@ -536,7 +542,9 @@ object sapUiWebcMainCardHeaderMod {
       *
       *  **Note:** The event would be fired only if the `interactive` property is set to true.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines if the component would be interactive, e.g gets hover effect, gets focus outline and `click`
@@ -587,7 +595,7 @@ object sapUiWebcMainCardHeaderMod {
       
       inline def setAvatarVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "avatar", js.Array(value*))
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       

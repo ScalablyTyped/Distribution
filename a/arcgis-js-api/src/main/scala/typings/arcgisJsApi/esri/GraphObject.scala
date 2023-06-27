@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GraphObject
   extends StObject
-     with Accessor {
+     with Accessor
+     with JSONSupport {
   
   /**
-    * The properties of the graph object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObject.html#properties)
-    */
+  		 * The properties of the graph object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphObject.html#properties)
+  		 */
   var properties: Any = js.native
 }

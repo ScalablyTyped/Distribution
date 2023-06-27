@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-extension-mdxjs-esm
 
-Typings are for version 1.0.3
+Typings are for version 1.0.5
 
 ## Library description:
 micromark extension to support MDX JS import/exports

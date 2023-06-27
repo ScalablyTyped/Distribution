@@ -8,15 +8,23 @@ trait ButtonGroupOptions extends StObject {
   
   var enable: js.UndefOr[Boolean] = js.undefined
   
+  var fillMode: js.UndefOr[String] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
   
   var items: js.UndefOr[js.Array[ButtonGroupItem]] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ ButtonGroupSelectEvent, Unit]] = js.undefined
   
   var selection: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
+  
+  var themeColor: js.UndefOr[String] = js.undefined
 }
 object ButtonGroupOptions {
   
@@ -32,6 +40,10 @@ object ButtonGroupOptions {
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
+    
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
@@ -46,6 +58,10 @@ object ButtonGroupOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ ButtonGroupSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
@@ -53,5 +69,13 @@ object ButtonGroupOptions {
     inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
+    
+    inline def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
   }
 }

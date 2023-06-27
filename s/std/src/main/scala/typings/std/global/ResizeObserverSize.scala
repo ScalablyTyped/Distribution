@@ -12,10 +12,12 @@ open class ResizeObserverSize ()
   extends StObject
      with typings.std.ResizeObserverSize {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/blockSize) */
   /* standard dom */
   /* CompleteClass */
   override val blockSize: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverSize/inlineSize) */
   /* standard dom */
   /* CompleteClass */
   override val inlineSize: Double = js.native

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCenterAtParams extends StObject {
   
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
-    */
+  		 * Whether to georeference relative to the globe or the projected coordinate system (PCS).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The origin at which to center.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
-    */
+  		 * The origin at which to center.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#centerAt)
+  		 */
   var origin: js.UndefOr[Point] = js.undefined
 }
 object MeshCenterAtParams {

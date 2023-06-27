@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassBreakInfoProperties extends StObject {
   
   /**
-    * Describes the data represented by the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#label)
-    */
+  		 * Describes the data represented by the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the maximum value for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#maxValue)
-    */
+  		 * Sets the maximum value for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#maxValue)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets the minimum value for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#minValue)
-    */
+  		 * Sets the minimum value for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#minValue)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Defines the symbol used to render features with data values that are within the bounds defined for the class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#symbol)
-    */
+  		 * Defines the symbol used to render features with data values that are within the bounds defined for the class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ClassBreakInfo.html#symbol)
+  		 */
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
 object ClassBreakInfoProperties {

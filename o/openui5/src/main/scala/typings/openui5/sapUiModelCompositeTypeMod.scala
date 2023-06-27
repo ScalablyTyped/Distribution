@@ -123,7 +123,7 @@ object sapUiModelCompositeTypeMod {
       */
     aValues: js.Array[Any],
       /**
-      * The target type; see {@link topic:ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
+      * The target type; see {@link https://ui5.sap.com/#/topic/ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
       */
     sTargetType: String
     ): Any = js.native
@@ -136,11 +136,10 @@ object sapUiModelCompositeTypeMod {
     def getParseWithValues(): Boolean = js.native
     
     /**
-      * @SINCE 1.82.0
+      * @since 1.82.0
       *
       * Gets an array of indices that determine which parts of this type shall not propagate their model messages
-      * to the attached control. Prerequisite is that the corresponding binding supports this feature, see {@link
-      * sap.ui.model.Binding#supportsIgnoreMessages}.
+      * to the attached control. Prerequisite is that the corresponding binding supports this feature, see {@link sap.ui.model.Binding#supportsIgnoreMessages}.
       * See:
       * 	sap.ui.model.Binding#supportsIgnoreMessages
       *
@@ -173,8 +172,7 @@ object sapUiModelCompositeTypeMod {
       */
     vValue: Any,
       /**
-      * The source type (the expected type of `vValue`); see {@link topic:ac56d92162ed47ff858fdf1ce26c18c4 Allowed
-      * Property Types}
+      * The source type (the expected type of `vValue`); see {@link https://ui5.sap.com/#/topic/ac56d92162ed47ff858fdf1ce26c18c4 Allowed Property Types}
       */
     sSourceType: String,
       /**
@@ -184,8 +182,8 @@ object sapUiModelCompositeTypeMod {
     ): js.Array[Any] | Any = js.native
     
     /**
-      * @SINCE 1.100.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.100.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Processes the types of the parts of this composite type. A concrete composite type may override this
       * method if it needs to derive information from the types of the parts.

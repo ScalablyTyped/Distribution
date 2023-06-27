@@ -114,7 +114,7 @@ trait Decimals extends StObject {
     * assigned
     * 	 - by value in {@link sap.ui.core.format.NumberFormat.RoundingMode RoundingMode},
     * 	 - via a function that is used for rounding the number and takes two parameters: the number itself,
-    * 			and the number of decimal digits that should be reserved.
+    *     and the number of decimal digits that should be reserved.
     */
   var roundingMode: js.UndefOr[
     RoundingMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RoundingMode * / any */ String)

@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SuggestValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsComboBoxMod.ComboBoxSettings
@@ -136,13 +135,13 @@ object sapUiCommonsAutoCompleteMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.AutoComplete` itself
       */
@@ -167,7 +166,7 @@ object sapUiCommonsAutoCompleteMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
@@ -178,7 +177,7 @@ object sapUiCommonsAutoCompleteMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.AutoComplete` itself
       */
@@ -196,13 +195,13 @@ object sapUiCommonsAutoCompleteMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit]
     ): this.type = js.native
     def detachSuggest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AutoCompleteSuggestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -210,17 +209,19 @@ object sapUiCommonsAutoCompleteMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggest(): this.type = js.native
-    def fireSuggest(/**
+    def fireSuggest(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SuggestValue): this.type = js.native
+    mParameters: AutoComplete$SuggestEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnableScrolling enableScrolling}.
@@ -268,6 +269,29 @@ object sapUiCommonsAutoCompleteMod {
     ): Unit = js.native
   }
   
+  trait AutoComplete$SuggestEventParameters extends StObject {
+    
+    /**
+      * The current value which was typed in.
+      */
+    var suggestValue: js.UndefOr[String] = js.undefined
+  }
+  object AutoComplete$SuggestEventParameters {
+    
+    inline def apply(): AutoComplete$SuggestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AutoComplete$SuggestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoComplete$SuggestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSuggestValue(value: String): Self = StObject.set(x, "suggestValue", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestValueUndefined: Self = StObject.set(x, "suggestValue", js.undefined)
+    }
+  }
+  
   trait AutoCompleteSettings
     extends StObject
        with ComboBoxSettings {
@@ -283,7 +307,12 @@ object sapUiCommonsAutoCompleteMod {
     /**
       * Fired when the user has changed the value and a suggestion list update should occur.
       */
-    var suggest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AutoComplete$SuggestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object AutoCompleteSettings {
     
@@ -299,9 +328,15 @@ object sapUiCommonsAutoCompleteMod {
       
       inline def setEnableScrollingUndefined: Self = StObject.set(x, "enableScrolling", js.undefined)
       
-      inline def setSuggest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
+      inline def setSuggest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AutoComplete$SuggestEventParameters] => Unit
+      ): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
       
       inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
     }
   }
+  
+  type AutoCompleteSuggestEvent = typings.openui5.sapUiBaseEventMod.default[AutoComplete$SuggestEventParameters]
+  
+  type AutoCompleteSuggestEventParameters = AutoComplete$SuggestEventParameters
 }

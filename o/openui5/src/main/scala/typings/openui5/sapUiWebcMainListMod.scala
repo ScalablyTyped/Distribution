@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PreviouslySelectedItems
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -12,6 +10,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.IListItem
 import typings.openui5.sapUiWebcMainLibraryMod.ListGrowingMode
 import typings.openui5.sapUiWebcMainLibraryMod.ListMode
 import typings.openui5.sapUiWebcMainLibraryMod.ListSeparators
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -183,13 +182,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -214,7 +213,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
@@ -225,7 +224,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -249,13 +248,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit]
     ): this.type = js.native
     def attachItemClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -283,7 +282,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit]
     ): this.type = js.native
     def attachItemClose(
       /**
@@ -294,7 +293,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -317,13 +316,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -350,7 +349,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
@@ -361,7 +360,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -385,13 +384,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit]
     ): this.type = js.native
     def attachItemToggle(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -419,7 +418,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit]
     ): this.type = js.native
     def attachItemToggle(
       /**
@@ -430,7 +429,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -453,13 +452,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadMore(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -486,7 +485,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoadMore(
       /**
@@ -497,7 +496,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -520,13 +519,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -553,7 +552,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -564,7 +563,7 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.List` itself
       */
@@ -596,13 +595,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit]
     ): this.type = js.native
     def detachItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -620,13 +619,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit]
     ): this.type = js.native
     def detachItemClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -644,13 +643,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit]
     ): this.type = js.native
     def detachItemDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -668,13 +667,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit]
     ): this.type = js.native
     def detachItemToggle(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListItemToggleEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -692,13 +691,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLoadMore(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -717,13 +716,13 @@ object sapUiWebcMainListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -731,7 +730,7 @@ object sapUiWebcMainListMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClick itemClick} to attached listeners.
       *
@@ -744,10 +743,10 @@ object sapUiWebcMainListMod {
     def fireItemClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): Boolean = js.native
+    mParameters: List$ItemClickEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClose itemClose} to attached listeners.
       *
@@ -757,10 +756,10 @@ object sapUiWebcMainListMod {
     def fireItemClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: List$ItemCloseEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemDelete itemDelete} to attached listeners.
       *
@@ -770,10 +769,10 @@ object sapUiWebcMainListMod {
     def fireItemDelete(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: List$ItemDeleteEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemToggle itemToggle} to attached listeners.
       *
@@ -783,10 +782,10 @@ object sapUiWebcMainListMod {
     def fireItemToggle(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: List$ItemToggleEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loadMore loadMore} to attached listeners.
       *
@@ -799,17 +798,19 @@ object sapUiWebcMainListMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PreviouslySelectedItems): this.type = js.native
+    mParameters: List$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -836,8 +837,7 @@ object sapUiWebcMainListMod {
     def getAccessibleRole(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -975,7 +975,7 @@ object sapUiWebcMainListMod {
       * 	 - Avalaible options are `All`, `Inner`, and `None`.
       * 	 - When set to `None`, none of the items are separated by horizontal lines.
       * 	 - When set to `Inner`, the first item doesn't have a top separator and the last item doesn't have a
-      * 			bottom separator.
+      *     bottom separator.
       *
       * Default value is `All`.
       *
@@ -1358,7 +1358,7 @@ object sapUiWebcMainListMod {
       * 	 - Avalaible options are `All`, `Inner`, and `None`.
       * 	 - When set to `None`, none of the items are separated by horizontal lines.
       * 	 - When set to `Inner`, the first item doesn't have a top separator and the last item doesn't have a
-      * 			bottom separator.
+      *     bottom separator.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1392,6 +1392,160 @@ object sapUiWebcMainListMod {
       */
     sWidth: CSSSize): this.type = js.native
   }
+  
+  trait List$ItemClickEventParameters extends StObject {
+    
+    /**
+      * The clicked item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object List$ItemClickEventParameters {
+    
+    inline def apply(): List$ItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[List$ItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: List$ItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait List$ItemCloseEventParameters extends StObject {
+    
+    /**
+      * the item about to be closed.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object List$ItemCloseEventParameters {
+    
+    inline def apply(): List$ItemCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[List$ItemCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: List$ItemCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait List$ItemDeleteEventParameters extends StObject {
+    
+    /**
+      * the deleted item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object List$ItemDeleteEventParameters {
+    
+    inline def apply(): List$ItemDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[List$ItemDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: List$ItemDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait List$ItemToggleEventParameters extends StObject {
+    
+    /**
+      * the toggled item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object List$ItemToggleEventParameters {
+    
+    inline def apply(): List$ItemToggleEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[List$ItemToggleEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: List$ItemToggleEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait List$LoadMoreEventParameters extends StObject
+  
+  trait List$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * An array of the previously selected items.
+      */
+    var previouslySelectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * An array of the selected items.
+      */
+    var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object List$SelectionChangeEventParameters {
+    
+    inline def apply(): List$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[List$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: List$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviouslySelectedItems(value: js.Array[Any]): Self = StObject.set(x, "previouslySelectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setPreviouslySelectedItemsUndefined: Self = StObject.set(x, "previouslySelectedItems", js.undefined)
+      
+      inline def setPreviouslySelectedItemsVarargs(value: Any*): Self = StObject.set(x, "previouslySelectedItems", js.Array(value*))
+      
+      inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  type ListItemClickEvent = typings.openui5.sapUiBaseEventMod.default[List$ItemClickEventParameters]
+  
+  type ListItemClickEventParameters = List$ItemClickEventParameters
+  
+  type ListItemCloseEvent = typings.openui5.sapUiBaseEventMod.default[List$ItemCloseEventParameters]
+  
+  type ListItemCloseEventParameters = List$ItemCloseEventParameters
+  
+  type ListItemDeleteEvent = typings.openui5.sapUiBaseEventMod.default[List$ItemDeleteEventParameters]
+  
+  type ListItemDeleteEventParameters = List$ItemDeleteEventParameters
+  
+  type ListItemToggleEvent = typings.openui5.sapUiBaseEventMod.default[List$ItemToggleEventParameters]
+  
+  type ListItemToggleEventParameters = List$ItemToggleEventParameters
+  
+  type ListLoadMoreEvent = typings.openui5.sapUiBaseEventMod.default[List$LoadMoreEventParameters]
+  
+  type ListLoadMoreEventParameters = List$LoadMoreEventParameters
+  
+  type ListSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[List$SelectionChangeEventParameters]
+  
+  type ListSelectionChangeEventParameters = List$SelectionChangeEventParameters
   
   trait ListSettings
     extends StObject
@@ -1477,7 +1631,12 @@ object sapUiWebcMainListMod {
     /**
       * Fired when an item is activated, unless the item's `type` property is set to `Inactive`.
       */
-    var itemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the `Close` button of any item is clicked
@@ -1485,14 +1644,24 @@ object sapUiWebcMainListMod {
       *  **Note:** This event is only applicable to list items that can be closed (such as notification list
       * items), not to be confused with `item-delete`.
       */
-    var itemClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the Delete button of any item is pressed.
       *
       *  **Note:** A Delete button is displayed on each item, when the component `mode` property is set to `Delete`.
       */
-    var itemDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the `Toggle` button of any item is clicked.
@@ -1500,7 +1669,12 @@ object sapUiWebcMainListMod {
       *  **Note:** This event is only applicable to list items that can be toggled (such as notification group
       * list items).
       */
-    var itemToggle: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemToggle: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemToggleEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of the component.
@@ -1517,7 +1691,9 @@ object sapUiWebcMainListMod {
       *
       *  **Note:** The event is fired when the `growing='Scroll'` property is enabled.
       */
-    var loadMore: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var loadMore: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the mode of the component.
@@ -1538,7 +1714,12 @@ object sapUiWebcMainListMod {
       * Fired when selection is changed by user interaction in `SingleSelect`, `SingleSelectBegin`, `SingleSelectEnd`
       * and `MultiSelect` modes.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the item separator style that is used.
@@ -1547,7 +1728,7 @@ object sapUiWebcMainListMod {
       * 	 - Avalaible options are `All`, `Inner`, and `None`.
       * 	 - When set to `None`, none of the items are separated by horizontal lines.
       * 	 - When set to `Inner`, the first item doesn't have a top separator and the last item doesn't have a
-      * 			bottom separator.
+      *     bottom separator.
       */
     var separators: js.UndefOr[
         ListSeparators | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ListSeparators * / any */ String) | PropertyBindingInfo
@@ -1618,19 +1799,27 @@ object sapUiWebcMainListMod {
       
       inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      inline def setItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
+      inline def setItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
       
       inline def setItemClickUndefined: Self = StObject.set(x, "itemClick", js.undefined)
       
-      inline def setItemClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClose", js.Any.fromFunction1(value))
+      inline def setItemClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClose", js.Any.fromFunction1(value))
       
       inline def setItemCloseUndefined: Self = StObject.set(x, "itemClose", js.undefined)
       
-      inline def setItemDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
+      inline def setItemDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
       
       inline def setItemDeleteUndefined: Self = StObject.set(x, "itemDelete", js.undefined)
       
-      inline def setItemToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemToggle", js.Any.fromFunction1(value))
+      inline def setItemToggle(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$ItemToggleEventParameters] => Unit
+      ): Self = StObject.set(x, "itemToggle", js.Any.fromFunction1(value))
       
       inline def setItemToggleUndefined: Self = StObject.set(x, "itemToggle", js.undefined)
       
@@ -1642,7 +1831,7 @@ object sapUiWebcMainListMod {
       
       inline def setItemsVarargs(value: IListItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLoadMore(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
+      inline def setLoadMore(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
       
       inline def setLoadMoreUndefined: Self = StObject.set(x, "loadMore", js.undefined)
       
@@ -1656,7 +1845,9 @@ object sapUiWebcMainListMod {
       
       inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[List$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

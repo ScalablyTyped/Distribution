@@ -138,13 +138,13 @@ object sapUiWebcMainMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MessageStrip` itself
       */
@@ -169,7 +169,7 @@ object sapUiWebcMainMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -180,7 +180,7 @@ object sapUiWebcMainMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MessageStrip` itself
       */
@@ -205,13 +205,13 @@ object sapUiWebcMainMessageStripMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -219,7 +219,7 @@ object sapUiWebcMainMessageStripMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -426,6 +426,12 @@ object sapUiWebcMainMessageStripMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait MessageStrip$CloseEventParameters extends StObject
+  
+  type MessageStripCloseEvent = typings.openui5.sapUiBaseEventMod.default[MessageStrip$CloseEventParameters]
+  
+  type MessageStripCloseEventParameters = MessageStrip$CloseEventParameters
+  
   trait MessageStripSettings
     extends StObject
        with ControlSettings {
@@ -433,7 +439,9 @@ object sapUiWebcMainMessageStripMod {
     /**
       * Fired when the close button is pressed either with a click/tap or by using the Enter or Space key.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the component type.
@@ -500,7 +508,7 @@ object sapUiWebcMainMessageStripMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MessageStripSettings] (val x: Self) extends AnyVal {
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       

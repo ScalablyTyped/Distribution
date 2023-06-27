@@ -26,11 +26,11 @@ trait GetParametersPathGhsaid extends StObject {
     * In order to update any security advisory, you must be a security manager or administrator of that repository,
     * or a collaborator on the repository security advisory.
     */
-  var patch: RequestBodyContent345
+  var patch: RequestBodyContent413
 }
 object GetParametersPathGhsaid {
   
-  inline def apply(get: ParametersPathGhsaid, patch: RequestBodyContent345): GetParametersPathGhsaid = {
+  inline def apply(get: ParametersPathGhsaid, patch: RequestBodyContent413): GetParametersPathGhsaid = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathGhsaid]
   }
@@ -40,6 +40,6 @@ object GetParametersPathGhsaid {
     
     inline def setGet(value: ParametersPathGhsaid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContent345): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: RequestBodyContent413): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

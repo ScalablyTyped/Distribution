@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__tree
 
-Typings are for version 8.8.3
+Typings are for version 8.8.5
 
 ## Library description:
 A React Component for displaying expandable and sortable tree hierarchies

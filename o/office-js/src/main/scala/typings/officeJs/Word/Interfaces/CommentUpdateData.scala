@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentUpdateData extends StObject {
   
   /**
-    * Gets or sets the comment's content as plain text.
+    * Specifies the comment's content as plain text.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -16,7 +16,7 @@ trait CommentUpdateData extends StObject {
   var content: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the comment's content range.
+    * Specifies the comment's content range.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -24,7 +24,7 @@ trait CommentUpdateData extends StObject {
   var contentRange: js.UndefOr[CommentContentRangeUpdateData] = js.undefined
   
   /**
-    * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
+    * Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
     * [Api set: WordApi 1.4]

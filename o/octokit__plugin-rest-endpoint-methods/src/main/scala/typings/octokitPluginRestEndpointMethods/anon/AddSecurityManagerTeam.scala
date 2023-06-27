@@ -37,7 +37,7 @@ trait AddSecurityManagerTeam extends StObject {
     * GitHub Apps must have the `administration` organization read-write permission to use this endpoint.
     */
   @JSName("addSecurityManagerTeam")
-  var addSecurityManagerTeam_Original: `409`
+  var addSecurityManagerTeam_Original: `411`
   
   def blockUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/blocks/{username}']['response'] */ js.Any
@@ -51,7 +51,7 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /orgs/{org}/blocks/{username}']['response'] */ js.Any
   ]
   @JSName("blockUser")
-  var blockUser_Original: `410`
+  var blockUser_Original: `412`
   
   /**
     * Cancel an organization invitation. In order to cancel an organization invitation, the authenticated user must be an organization owner.
@@ -75,7 +75,7 @@ trait AddSecurityManagerTeam extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications).
     */
   @JSName("cancelInvitation")
-  var cancelInvitation_Original: `411`
+  var cancelInvitation_Original: `413`
   
   def checkBlockedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/blocks/{username}']['response'] */ js.Any
@@ -89,7 +89,7 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/blocks/{username}']['response'] */ js.Any
   ]
   @JSName("checkBlockedUser")
-  var checkBlockedUser_Original: `412`
+  var checkBlockedUser_Original: `414`
   
   /**
     * Check if a user is, publicly or privately, a member of the organization.
@@ -109,8 +109,11 @@ trait AddSecurityManagerTeam extends StObject {
     * Check if a user is, publicly or privately, a member of the organization.
     */
   @JSName("checkMembershipForUser")
-  var checkMembershipForUser_Original: `413`
+  var checkMembershipForUser_Original: `415`
   
+  /**
+    * Check if the provided user is a public member of the organization.
+    */
   def checkPublicMembershipForUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/public_members/{username}']['response'] */ js.Any
   ]
@@ -122,8 +125,11 @@ trait AddSecurityManagerTeam extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/public_members/{username}']['response'] */ js.Any
   ]
+  /**
+    * Check if the provided user is a public member of the organization.
+    */
   @JSName("checkPublicMembershipForUser")
-  var checkPublicMembershipForUser_Original: `414`
+  var checkPublicMembershipForUser_Original: `416`
   
   /**
     * When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://docs.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)". Converting an organization member to an outside collaborator may be restricted by enterprise administrators. For more information, see "[Enforcing repository management policies in your enterprise](https://docs.github.com/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories)."
@@ -143,7 +149,7 @@ trait AddSecurityManagerTeam extends StObject {
     * When an organization member is converted to an outside collaborator, they'll only have access to the repositories that their current team membership allows. The user will no longer be a member of the organization. For more information, see "[Converting an organization member to an outside collaborator](https://docs.github.com/articles/converting-an-organization-member-to-an-outside-collaborator/)". Converting an organization member to an outside collaborator may be restricted by enterprise administrators. For more information, see "[Enforcing repository management policies in your enterprise](https://docs.github.com/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories)."
     */
   @JSName("convertMemberToOutsideCollaborator")
-  var convertMemberToOutsideCollaborator_Original: `415`
+  var convertMemberToOutsideCollaborator_Original: `417`
   
   /**
     * Invite people to an organization by using their GitHub user ID or their email address. In order to create invitations in an organization, the authenticated user must be an organization owner.
@@ -167,7 +173,7 @@ trait AddSecurityManagerTeam extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createInvitation")
-  var createInvitation_Original: `416`
+  var createInvitation_Original: `418`
   
   /**
     * Here's how you can create a hook that posts payloads in JSON format:
@@ -187,7 +193,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Here's how you can create a hook that posts payloads in JSON format:
     */
   @JSName("createWebhook")
-  var createWebhook_Original: `417`
+  var createWebhook_Original: `419`
   
   /**
     * Deletes an organization and all its repositories.
@@ -222,7 +228,7 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/hooks/{hook_id}']['response'] */ js.Any
   ]
   @JSName("deleteWebhook")
-  var deleteWebhook_Original: `419`
+  var deleteWebhook_Original: `421`
   
   /**
     * Deletes an organization and all its repositories.
@@ -234,7 +240,7 @@ trait AddSecurityManagerTeam extends StObject {
     * https://docs.github.com/site-policy/github-terms/github-terms-of-service
     */
   @JSName("delete")
-  var delete_Original: `418`
+  var delete_Original: `420`
   
   /**
     * Enables or disables the specified security feature for all eligible repositories in an organization.
@@ -268,7 +274,7 @@ trait AddSecurityManagerTeam extends StObject {
     * For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
     */
   @JSName("enableOrDisableSecurityProductOnAllOrgRepos")
-  var enableOrDisableSecurityProductOnAllOrgRepos_Original: `420`
+  var enableOrDisableSecurityProductOnAllOrgRepos_Original: `422`
   
   /**
     * To see many of the organization response values, you need to be an authenticated organization owner with the `admin:org` scope. When the value of `two_factor_requirement_enabled` is `true`, the organization requires all members, billing managers, and outside collaborators to enable [two-factor authentication](https://docs.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/).
@@ -287,6 +293,9 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}']['response'] */ js.Any
   ]
   
+  /**
+    * If the authenticated user is an active or pending member of the organization, this endpoint will return the user's membership. If the authenticated user is not affiliated with the organization, a `404` is returned. This endpoint will return a `403` if the request is made by a GitHub App that is blocked by the organization.
+    */
   def getMembershipForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs/{org}']['response'] */ js.Any
   ]
@@ -298,8 +307,11 @@ trait AddSecurityManagerTeam extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs/{org}']['response'] */ js.Any
   ]
+  /**
+    * If the authenticated user is an active or pending member of the organization, this endpoint will return the user's membership. If the authenticated user is not affiliated with the organization, a `404` is returned. This endpoint will return a `403` if the request is made by a GitHub App that is blocked by the organization.
+    */
   @JSName("getMembershipForAuthenticatedUser")
-  var getMembershipForAuthenticatedUser_Original: `422`
+  var getMembershipForAuthenticatedUser_Original: `424`
   
   /**
     * In order to get a user's membership with an organization, the authenticated user must be an organization member. The `state` parameter in the response can be used to identify the user's membership status.
@@ -319,7 +331,7 @@ trait AddSecurityManagerTeam extends StObject {
     * In order to get a user's membership with an organization, the authenticated user must be an organization member. The `state` parameter in the response can be used to identify the user's membership status.
     */
   @JSName("getMembershipForUser")
-  var getMembershipForUser_Original: `423`
+  var getMembershipForUser_Original: `425`
   
   /**
     * Returns a webhook configured in an organization. To get only the webhook `config` properties, see "[Get a webhook configuration for an organization](/rest/reference/orgs#get-a-webhook-configuration-for-an-organization)."
@@ -358,7 +370,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:read` permission.
     */
   @JSName("getWebhookConfigForOrg")
-  var getWebhookConfigForOrg_Original: `425`
+  var getWebhookConfigForOrg_Original: `427`
   
   /**
     * Returns a delivery for a webhook configured in an organization.
@@ -378,13 +390,13 @@ trait AddSecurityManagerTeam extends StObject {
     * Returns a delivery for a webhook configured in an organization.
     */
   @JSName("getWebhookDelivery")
-  var getWebhookDelivery_Original: `426`
+  var getWebhookDelivery_Original: `428`
   
   /**
     * Returns a webhook configured in an organization. To get only the webhook `config` properties, see "[Get a webhook configuration for an organization](/rest/reference/orgs#get-a-webhook-configuration-for-an-organization)."
     */
   @JSName("getWebhook")
-  var getWebhook_Original: `424`
+  var getWebhook_Original: `426`
   
   /**
     * To see many of the organization response values, you need to be an authenticated organization owner with the `admin:org` scope. When the value of `two_factor_requirement_enabled` is `true`, the organization requires all members, billing managers, and outside collaborators to enable [two-factor authentication](https://docs.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/).
@@ -392,7 +404,7 @@ trait AddSecurityManagerTeam extends StObject {
     * GitHub Apps with the `Organization plan` permission can use this endpoint to retrieve information about an organization's GitHub plan. See "[Authenticating with GitHub Apps](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/)" for details. For an example response, see 'Response with GitHub plan information' below."
     */
   @JSName("get")
-  var get_Original: `421`
+  var get_Original: `423`
   
   /**
     * Lists all organizations, in the order that they were created on GitHub.
@@ -429,7 +441,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Lists all GitHub Apps in an organization. The installation count includes all GitHub Apps installed on repositories in the organization. You must be an organization owner with `admin:read` scope to use this endpoint.
     */
   @JSName("listAppInstallations")
-  var listAppInstallations_Original: `428`
+  var listAppInstallations_Original: `430`
   
   /**
     * List the users blocked by an organization.
@@ -449,7 +461,7 @@ trait AddSecurityManagerTeam extends StObject {
     * List the users blocked by an organization.
     */
   @JSName("listBlockedUsers")
-  var listBlockedUsers_Original: `429`
+  var listBlockedUsers_Original: `431`
   
   /**
     * The return hash contains `failed_at` and `failed_reason` fields which represent the time at which the invitation failed and the reason for the failure.
@@ -469,7 +481,7 @@ trait AddSecurityManagerTeam extends StObject {
     * The return hash contains `failed_at` and `failed_reason` fields which represent the time at which the invitation failed and the reason for the failure.
     */
   @JSName("listFailedInvitations")
-  var listFailedInvitations_Original: `430`
+  var listFailedInvitations_Original: `432`
   
   /**
     * List organizations for the authenticated user.
@@ -497,7 +509,7 @@ trait AddSecurityManagerTeam extends StObject {
     * This only lists organizations that your authorization allows you to operate on in some way (e.g., you can list teams with `read:org` scope, you can publicize your organization membership with `user` scope, etc.). Therefore, this API requires at least `user` or `read:org` scope. OAuth requests with insufficient scope receive a `403 Forbidden` response.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `431`
+  var listForAuthenticatedUser_Original: `433`
   
   /**
     * List [public organization memberships](https://docs.github.com/articles/publicizing-or-concealing-organization-membership) for the specified user.
@@ -521,7 +533,7 @@ trait AddSecurityManagerTeam extends StObject {
     * This method only lists _public_ memberships, regardless of authentication. If you need to fetch all of the organization memberships (public and private) for the authenticated user, use the [List organizations for the authenticated user](https://docs.github.com/rest/reference/orgs#list-organizations-for-the-authenticated-user) API instead.
     */
   @JSName("listForUser")
-  var listForUser_Original: `432`
+  var listForUser_Original: `434`
   
   /**
     * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
@@ -541,7 +553,7 @@ trait AddSecurityManagerTeam extends StObject {
     * List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
     */
   @JSName("listInvitationTeams")
-  var listInvitationTeams_Original: `433`
+  var listInvitationTeams_Original: `435`
   
   /**
     * List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned.
@@ -561,8 +573,11 @@ trait AddSecurityManagerTeam extends StObject {
     * List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned.
     */
   @JSName("listMembers")
-  var listMembers_Original: `434`
+  var listMembers_Original: `436`
   
+  /**
+    * Lists all of the authenticated user's organization memberships.
+    */
   def listMembershipsForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['response'] */ js.Any
   ]
@@ -574,8 +589,11 @@ trait AddSecurityManagerTeam extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/memberships/orgs']['response'] */ js.Any
   ]
+  /**
+    * Lists all of the authenticated user's organization memberships.
+    */
   @JSName("listMembershipsForAuthenticatedUser")
-  var listMembershipsForAuthenticatedUser_Original: `435`
+  var listMembershipsForAuthenticatedUser_Original: `437`
   
   /**
     * List all users who are outside collaborators of an organization.
@@ -595,7 +613,7 @@ trait AddSecurityManagerTeam extends StObject {
     * List all users who are outside collaborators of an organization.
     */
   @JSName("listOutsideCollaborators")
-  var listOutsideCollaborators_Original: `436`
+  var listOutsideCollaborators_Original: `438`
   
   /**
     * Lists the repositories a fine-grained personal access token has access to. Only GitHub Apps can call this API,
@@ -621,7 +639,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("listPatGrantRepositories")
-  var listPatGrantRepositories_Original: `437`
+  var listPatGrantRepositories_Original: `439`
   
   /**
     * Lists the repositories a fine-grained personal access token request is requesting access to. Only GitHub Apps can call this API,
@@ -647,7 +665,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("listPatGrantRequestRepositories")
-  var listPatGrantRequestRepositories_Original: `438`
+  var listPatGrantRequestRepositories_Original: `440`
   
   /**
     * Lists requests from organization members to access organization resources with a fine-grained personal access token. Only GitHub Apps can call this API,
@@ -673,7 +691,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("listPatGrantRequests")
-  var listPatGrantRequests_Original: `439`
+  var listPatGrantRequests_Original: `441`
   
   /**
     * Lists approved fine-grained personal access tokens owned by organization members that can access organization resources. Only GitHub Apps can call this API,
@@ -699,7 +717,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("listPatGrants")
-  var listPatGrants_Original: `440`
+  var listPatGrants_Original: `442`
   
   /**
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, or `hiring_manager`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
@@ -719,7 +737,7 @@ trait AddSecurityManagerTeam extends StObject {
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, or `hiring_manager`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
     */
   @JSName("listPendingInvitations")
-  var listPendingInvitations_Original: `441`
+  var listPendingInvitations_Original: `443`
   
   /**
     * Members of an organization can choose to have their membership publicized or not.
@@ -739,7 +757,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Members of an organization can choose to have their membership publicized or not.
     */
   @JSName("listPublicMembers")
-  var listPublicMembers_Original: `442`
+  var listPublicMembers_Original: `444`
   
   /**
     * Lists teams that are security managers for an organization. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)."
@@ -767,7 +785,7 @@ trait AddSecurityManagerTeam extends StObject {
     * GitHub Apps must have the `administration` organization read permission to use this endpoint.
     */
   @JSName("listSecurityManagerTeams")
-  var listSecurityManagerTeams_Original: `443`
+  var listSecurityManagerTeams_Original: `445`
   
   /**
     * Returns a list of webhook deliveries for a webhook configured in an organization.
@@ -787,7 +805,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Returns a list of webhook deliveries for a webhook configured in an organization.
     */
   @JSName("listWebhookDeliveries")
-  var listWebhookDeliveries_Original: `444`
+  var listWebhookDeliveries_Original: `446`
   
   def listWebhooks(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/hooks']['response'] */ js.Any
@@ -801,7 +819,7 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/hooks']['response'] */ js.Any
   ]
   @JSName("listWebhooks")
-  var listWebhooks_Original: `445`
+  var listWebhooks_Original: `447`
   
   /**
     * Lists all organizations, in the order that they were created on GitHub.
@@ -809,7 +827,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
     */
   @JSName("list")
-  var list_Original: `427`
+  var list_Original: `429`
   
   /**
     * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
@@ -829,7 +847,7 @@ trait AddSecurityManagerTeam extends StObject {
     * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingWebhook")
-  var pingWebhook_Original: `446`
+  var pingWebhook_Original: `448`
   
   /**
     * Redeliver a delivery for a webhook configured in an organization.
@@ -849,7 +867,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Redeliver a delivery for a webhook configured in an organization.
     */
   @JSName("redeliverWebhookDelivery")
-  var redeliverWebhookDelivery_Original: `447`
+  var redeliverWebhookDelivery_Original: `449`
   
   /**
     * Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories.
@@ -869,7 +887,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Removing a user from this list will remove them from all teams and they will no longer have any access to the organization's repositories.
     */
   @JSName("removeMember")
-  var removeMember_Original: `448`
+  var removeMember_Original: `450`
   
   /**
     * In order to remove a user's membership with an organization, the authenticated user must be an organization owner.
@@ -893,7 +911,7 @@ trait AddSecurityManagerTeam extends StObject {
     * If the specified user is an active member of the organization, this will remove them from the organization. If the specified user has been invited to the organization, this will cancel their invitation. The specified user will receive an email notification in both cases.
     */
   @JSName("removeMembershipForUser")
-  var removeMembershipForUser_Original: `449`
+  var removeMembershipForUser_Original: `451`
   
   /**
     * Removing a user from this list will remove them from all the organization's repositories.
@@ -913,8 +931,11 @@ trait AddSecurityManagerTeam extends StObject {
     * Removing a user from this list will remove them from all the organization's repositories.
     */
   @JSName("removeOutsideCollaborator")
-  var removeOutsideCollaborator_Original: `450`
+  var removeOutsideCollaborator_Original: `452`
   
+  /**
+    * Removes the public membership for the authenticated user from the specified organization, unless public visibility is enforced by default.
+    */
   def removePublicMembershipForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/public_members/{username}']['response'] */ js.Any
   ]
@@ -926,8 +947,11 @@ trait AddSecurityManagerTeam extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/public_members/{username}']['response'] */ js.Any
   ]
+  /**
+    * Removes the public membership for the authenticated user from the specified organization, unless public visibility is enforced by default.
+    */
   @JSName("removePublicMembershipForAuthenticatedUser")
-  var removePublicMembershipForAuthenticatedUser_Original: `451`
+  var removePublicMembershipForAuthenticatedUser_Original: `453`
   
   /**
     * Removes the security manager role from a team for an organization. For more information, see "[Managing security managers in your organization](https://docs.github.com/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization) team from an organization."
@@ -955,7 +979,7 @@ trait AddSecurityManagerTeam extends StObject {
     * GitHub Apps must have the `administration` organization read-write permission to use this endpoint.
     */
   @JSName("removeSecurityManagerTeam")
-  var removeSecurityManagerTeam_Original: `452`
+  var removeSecurityManagerTeam_Original: `454`
   
   /**
     * Approves or denies a pending request to access organization resources via a fine-grained personal access token. Only GitHub Apps can call this API,
@@ -981,7 +1005,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("reviewPatGrantRequest")
-  var reviewPatGrantRequest_Original: `453`
+  var reviewPatGrantRequest_Original: `455`
   
   /**
     * Approves or denies multiple pending requests to access organization resources via a fine-grained personal access token. Only GitHub Apps can call this API,
@@ -1007,7 +1031,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("reviewPatGrantRequestsInBulk")
-  var reviewPatGrantRequestsInBulk_Original: `454`
+  var reviewPatGrantRequestsInBulk_Original: `456`
   
   /**
     * Only authenticated organization owners can add a member to the organization or update the member's role.
@@ -1043,7 +1067,7 @@ trait AddSecurityManagerTeam extends StObject {
     * To prevent abuse, the authenticated user is limited to 50 organization invitations per 24 hour period. If the organization is more than one month old or on a paid plan, the limit is 500 invitations per 24 hour period.
     */
   @JSName("setMembershipForUser")
-  var setMembershipForUser_Original: `455`
+  var setMembershipForUser_Original: `457`
   
   /**
     * The user can publicize their own membership. (A user cannot publicize the membership for another user.)
@@ -1067,7 +1091,7 @@ trait AddSecurityManagerTeam extends StObject {
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
   @JSName("setPublicMembershipForAuthenticatedUser")
-  var setPublicMembershipForAuthenticatedUser_Original: `456`
+  var setPublicMembershipForAuthenticatedUser_Original: `458`
   
   def unblockUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/blocks/{username}']['response'] */ js.Any
@@ -1081,12 +1105,12 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /orgs/{org}/blocks/{username}']['response'] */ js.Any
   ]
   @JSName("unblockUser")
-  var unblockUser_Original: `457`
+  var unblockUser_Original: `459`
   
   /**
     * **Parameter Deprecation Notice:** GitHub will replace and discontinue `members_allowed_repository_creation_type` in favor of more granular permissions. The new input parameters are `members_can_create_public_repositories`, `members_can_create_private_repositories` for all organizations and `members_can_create_internal_repositories` for organizations associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+. For more information, see the [blog post](https://developer.github.com/changes/2019-12-03-internal-visibility-changes).
     *
-    * Enables an authenticated organization owner with the `admin:org` scope to update the organization's profile and member privileges.
+    * Enables an authenticated organization owner with the `admin:org` scope or the `repo` scope to update the organization's profile and member privileges.
     */
   def update(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}']['response'] */ js.Any
@@ -1100,6 +1124,9 @@ trait AddSecurityManagerTeam extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /orgs/{org}']['response'] */ js.Any
   ]
   
+  /**
+    * Converts the authenticated user to an active member of the organization, if that user has a pending invitation from the organization.
+    */
   def updateMembershipForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/{org}']['response'] */ js.Any
   ]
@@ -1111,8 +1138,11 @@ trait AddSecurityManagerTeam extends StObject {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/memberships/orgs/{org}']['response'] */ js.Any
   ]
+  /**
+    * Converts the authenticated user to an active member of the organization, if that user has a pending invitation from the organization.
+    */
   @JSName("updateMembershipForAuthenticatedUser")
-  var updateMembershipForAuthenticatedUser_Original: `459`
+  var updateMembershipForAuthenticatedUser_Original: `461`
   
   /**
     * Updates the access an organization member has to organization resources via a fine-grained personal access token. Limited to revoking the token's existing access. Limited to revoking a token's existing access. Only GitHub Apps can call this API,
@@ -1138,7 +1168,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("updatePatAccess")
-  var updatePatAccess_Original: `460`
+  var updatePatAccess_Original: `462`
   
   /**
     * Updates the access organization members have to organization resources via fine-grained personal access tokens. Limited to revoking a token's existing access. Only GitHub Apps can call this API,
@@ -1164,7 +1194,7 @@ trait AddSecurityManagerTeam extends StObject {
     * **Note**: Fine-grained PATs are in public beta. Related APIs, events, and functionality are subject to change.
     */
   @JSName("updatePatAccesses")
-  var updatePatAccesses_Original: `461`
+  var updatePatAccesses_Original: `463`
   
   /**
     * Updates a webhook configured in an organization. When you update a webhook, the `secret` will be overwritten. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for an organization](/rest/reference/orgs#update-a-webhook-configuration-for-an-organization)."
@@ -1203,80 +1233,80 @@ trait AddSecurityManagerTeam extends StObject {
     * Access tokens must have the `admin:org_hook` scope, and GitHub Apps must have the `organization_hooks:write` permission.
     */
   @JSName("updateWebhookConfigForOrg")
-  var updateWebhookConfigForOrg_Original: `463`
+  var updateWebhookConfigForOrg_Original: `465`
   
   /**
     * Updates a webhook configured in an organization. When you update a webhook, the `secret` will be overwritten. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for an organization](/rest/reference/orgs#update-a-webhook-configuration-for-an-organization)."
     */
   @JSName("updateWebhook")
-  var updateWebhook_Original: `462`
+  var updateWebhook_Original: `464`
   
   /**
     * **Parameter Deprecation Notice:** GitHub will replace and discontinue `members_allowed_repository_creation_type` in favor of more granular permissions. The new input parameters are `members_can_create_public_repositories`, `members_can_create_private_repositories` for all organizations and `members_can_create_internal_repositories` for organizations associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+. For more information, see the [blog post](https://developer.github.com/changes/2019-12-03-internal-visibility-changes).
     *
-    * Enables an authenticated organization owner with the `admin:org` scope to update the organization's profile and member privileges.
+    * Enables an authenticated organization owner with the `admin:org` scope or the `repo` scope to update the organization's profile and member privileges.
     */
   @JSName("update")
-  var update_Original: `458`
+  var update_Original: `460`
 }
 object AddSecurityManagerTeam {
   
   inline def apply(
-    addSecurityManagerTeam: `409`,
-    blockUser: `410`,
-    cancelInvitation: `411`,
-    checkBlockedUser: `412`,
-    checkMembershipForUser: `413`,
-    checkPublicMembershipForUser: `414`,
-    convertMemberToOutsideCollaborator: `415`,
-    createInvitation: `416`,
-    createWebhook: `417`,
-    delete: `418`,
-    deleteWebhook: `419`,
-    enableOrDisableSecurityProductOnAllOrgRepos: `420`,
-    get: `421`,
-    getMembershipForAuthenticatedUser: `422`,
-    getMembershipForUser: `423`,
-    getWebhook: `424`,
-    getWebhookConfigForOrg: `425`,
-    getWebhookDelivery: `426`,
-    list: `427`,
-    listAppInstallations: `428`,
-    listBlockedUsers: `429`,
-    listFailedInvitations: `430`,
-    listForAuthenticatedUser: `431`,
-    listForUser: `432`,
-    listInvitationTeams: `433`,
-    listMembers: `434`,
-    listMembershipsForAuthenticatedUser: `435`,
-    listOutsideCollaborators: `436`,
-    listPatGrantRepositories: `437`,
-    listPatGrantRequestRepositories: `438`,
-    listPatGrantRequests: `439`,
-    listPatGrants: `440`,
-    listPendingInvitations: `441`,
-    listPublicMembers: `442`,
-    listSecurityManagerTeams: `443`,
-    listWebhookDeliveries: `444`,
-    listWebhooks: `445`,
-    pingWebhook: `446`,
-    redeliverWebhookDelivery: `447`,
-    removeMember: `448`,
-    removeMembershipForUser: `449`,
-    removeOutsideCollaborator: `450`,
-    removePublicMembershipForAuthenticatedUser: `451`,
-    removeSecurityManagerTeam: `452`,
-    reviewPatGrantRequest: `453`,
-    reviewPatGrantRequestsInBulk: `454`,
-    setMembershipForUser: `455`,
-    setPublicMembershipForAuthenticatedUser: `456`,
-    unblockUser: `457`,
-    update: `458`,
-    updateMembershipForAuthenticatedUser: `459`,
-    updatePatAccess: `460`,
-    updatePatAccesses: `461`,
-    updateWebhook: `462`,
-    updateWebhookConfigForOrg: `463`
+    addSecurityManagerTeam: `411`,
+    blockUser: `412`,
+    cancelInvitation: `413`,
+    checkBlockedUser: `414`,
+    checkMembershipForUser: `415`,
+    checkPublicMembershipForUser: `416`,
+    convertMemberToOutsideCollaborator: `417`,
+    createInvitation: `418`,
+    createWebhook: `419`,
+    delete: `420`,
+    deleteWebhook: `421`,
+    enableOrDisableSecurityProductOnAllOrgRepos: `422`,
+    get: `423`,
+    getMembershipForAuthenticatedUser: `424`,
+    getMembershipForUser: `425`,
+    getWebhook: `426`,
+    getWebhookConfigForOrg: `427`,
+    getWebhookDelivery: `428`,
+    list: `429`,
+    listAppInstallations: `430`,
+    listBlockedUsers: `431`,
+    listFailedInvitations: `432`,
+    listForAuthenticatedUser: `433`,
+    listForUser: `434`,
+    listInvitationTeams: `435`,
+    listMembers: `436`,
+    listMembershipsForAuthenticatedUser: `437`,
+    listOutsideCollaborators: `438`,
+    listPatGrantRepositories: `439`,
+    listPatGrantRequestRepositories: `440`,
+    listPatGrantRequests: `441`,
+    listPatGrants: `442`,
+    listPendingInvitations: `443`,
+    listPublicMembers: `444`,
+    listSecurityManagerTeams: `445`,
+    listWebhookDeliveries: `446`,
+    listWebhooks: `447`,
+    pingWebhook: `448`,
+    redeliverWebhookDelivery: `449`,
+    removeMember: `450`,
+    removeMembershipForUser: `451`,
+    removeOutsideCollaborator: `452`,
+    removePublicMembershipForAuthenticatedUser: `453`,
+    removeSecurityManagerTeam: `454`,
+    reviewPatGrantRequest: `455`,
+    reviewPatGrantRequestsInBulk: `456`,
+    setMembershipForUser: `457`,
+    setPublicMembershipForAuthenticatedUser: `458`,
+    unblockUser: `459`,
+    update: `460`,
+    updateMembershipForAuthenticatedUser: `461`,
+    updatePatAccess: `462`,
+    updatePatAccesses: `463`,
+    updateWebhook: `464`,
+    updateWebhookConfigForOrg: `465`
   ): AddSecurityManagerTeam = {
     val __obj = js.Dynamic.literal(addSecurityManagerTeam = addSecurityManagerTeam.asInstanceOf[js.Any], blockUser = blockUser.asInstanceOf[js.Any], cancelInvitation = cancelInvitation.asInstanceOf[js.Any], checkBlockedUser = checkBlockedUser.asInstanceOf[js.Any], checkMembershipForUser = checkMembershipForUser.asInstanceOf[js.Any], checkPublicMembershipForUser = checkPublicMembershipForUser.asInstanceOf[js.Any], convertMemberToOutsideCollaborator = convertMemberToOutsideCollaborator.asInstanceOf[js.Any], createInvitation = createInvitation.asInstanceOf[js.Any], createWebhook = createWebhook.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteWebhook = deleteWebhook.asInstanceOf[js.Any], enableOrDisableSecurityProductOnAllOrgRepos = enableOrDisableSecurityProductOnAllOrgRepos.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getMembershipForAuthenticatedUser = getMembershipForAuthenticatedUser.asInstanceOf[js.Any], getMembershipForUser = getMembershipForUser.asInstanceOf[js.Any], getWebhook = getWebhook.asInstanceOf[js.Any], getWebhookConfigForOrg = getWebhookConfigForOrg.asInstanceOf[js.Any], getWebhookDelivery = getWebhookDelivery.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listAppInstallations = listAppInstallations.asInstanceOf[js.Any], listBlockedUsers = listBlockedUsers.asInstanceOf[js.Any], listFailedInvitations = listFailedInvitations.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], listInvitationTeams = listInvitationTeams.asInstanceOf[js.Any], listMembers = listMembers.asInstanceOf[js.Any], listMembershipsForAuthenticatedUser = listMembershipsForAuthenticatedUser.asInstanceOf[js.Any], listOutsideCollaborators = listOutsideCollaborators.asInstanceOf[js.Any], listPatGrantRepositories = listPatGrantRepositories.asInstanceOf[js.Any], listPatGrantRequestRepositories = listPatGrantRequestRepositories.asInstanceOf[js.Any], listPatGrantRequests = listPatGrantRequests.asInstanceOf[js.Any], listPatGrants = listPatGrants.asInstanceOf[js.Any], listPendingInvitations = listPendingInvitations.asInstanceOf[js.Any], listPublicMembers = listPublicMembers.asInstanceOf[js.Any], listSecurityManagerTeams = listSecurityManagerTeams.asInstanceOf[js.Any], listWebhookDeliveries = listWebhookDeliveries.asInstanceOf[js.Any], listWebhooks = listWebhooks.asInstanceOf[js.Any], pingWebhook = pingWebhook.asInstanceOf[js.Any], redeliverWebhookDelivery = redeliverWebhookDelivery.asInstanceOf[js.Any], removeMember = removeMember.asInstanceOf[js.Any], removeMembershipForUser = removeMembershipForUser.asInstanceOf[js.Any], removeOutsideCollaborator = removeOutsideCollaborator.asInstanceOf[js.Any], removePublicMembershipForAuthenticatedUser = removePublicMembershipForAuthenticatedUser.asInstanceOf[js.Any], removeSecurityManagerTeam = removeSecurityManagerTeam.asInstanceOf[js.Any], reviewPatGrantRequest = reviewPatGrantRequest.asInstanceOf[js.Any], reviewPatGrantRequestsInBulk = reviewPatGrantRequestsInBulk.asInstanceOf[js.Any], setMembershipForUser = setMembershipForUser.asInstanceOf[js.Any], setPublicMembershipForAuthenticatedUser = setPublicMembershipForAuthenticatedUser.asInstanceOf[js.Any], unblockUser = unblockUser.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateMembershipForAuthenticatedUser = updateMembershipForAuthenticatedUser.asInstanceOf[js.Any], updatePatAccess = updatePatAccess.asInstanceOf[js.Any], updatePatAccesses = updatePatAccesses.asInstanceOf[js.Any], updateWebhook = updateWebhook.asInstanceOf[js.Any], updateWebhookConfigForOrg = updateWebhookConfigForOrg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddSecurityManagerTeam]
@@ -1285,114 +1315,114 @@ object AddSecurityManagerTeam {
   @scala.inline
   implicit open class MutableBuilder[Self <: AddSecurityManagerTeam] (val x: Self) extends AnyVal {
     
-    inline def setAddSecurityManagerTeam(value: `409`): Self = StObject.set(x, "addSecurityManagerTeam", value.asInstanceOf[js.Any])
+    inline def setAddSecurityManagerTeam(value: `411`): Self = StObject.set(x, "addSecurityManagerTeam", value.asInstanceOf[js.Any])
     
-    inline def setBlockUser(value: `410`): Self = StObject.set(x, "blockUser", value.asInstanceOf[js.Any])
+    inline def setBlockUser(value: `412`): Self = StObject.set(x, "blockUser", value.asInstanceOf[js.Any])
     
-    inline def setCancelInvitation(value: `411`): Self = StObject.set(x, "cancelInvitation", value.asInstanceOf[js.Any])
+    inline def setCancelInvitation(value: `413`): Self = StObject.set(x, "cancelInvitation", value.asInstanceOf[js.Any])
     
-    inline def setCheckBlockedUser(value: `412`): Self = StObject.set(x, "checkBlockedUser", value.asInstanceOf[js.Any])
+    inline def setCheckBlockedUser(value: `414`): Self = StObject.set(x, "checkBlockedUser", value.asInstanceOf[js.Any])
     
-    inline def setCheckMembershipForUser(value: `413`): Self = StObject.set(x, "checkMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setCheckMembershipForUser(value: `415`): Self = StObject.set(x, "checkMembershipForUser", value.asInstanceOf[js.Any])
     
-    inline def setCheckPublicMembershipForUser(value: `414`): Self = StObject.set(x, "checkPublicMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setCheckPublicMembershipForUser(value: `416`): Self = StObject.set(x, "checkPublicMembershipForUser", value.asInstanceOf[js.Any])
     
-    inline def setConvertMemberToOutsideCollaborator(value: `415`): Self = StObject.set(x, "convertMemberToOutsideCollaborator", value.asInstanceOf[js.Any])
+    inline def setConvertMemberToOutsideCollaborator(value: `417`): Self = StObject.set(x, "convertMemberToOutsideCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setCreateInvitation(value: `416`): Self = StObject.set(x, "createInvitation", value.asInstanceOf[js.Any])
+    inline def setCreateInvitation(value: `418`): Self = StObject.set(x, "createInvitation", value.asInstanceOf[js.Any])
     
-    inline def setCreateWebhook(value: `417`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
+    inline def setCreateWebhook(value: `419`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: `418`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `420`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setDeleteWebhook(value: `419`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
+    inline def setDeleteWebhook(value: `421`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
     
-    inline def setEnableOrDisableSecurityProductOnAllOrgRepos(value: `420`): Self = StObject.set(x, "enableOrDisableSecurityProductOnAllOrgRepos", value.asInstanceOf[js.Any])
+    inline def setEnableOrDisableSecurityProductOnAllOrgRepos(value: `422`): Self = StObject.set(x, "enableOrDisableSecurityProductOnAllOrgRepos", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `421`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `423`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetMembershipForAuthenticatedUser(value: `422`): Self = StObject.set(x, "getMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForAuthenticatedUser(value: `424`): Self = StObject.set(x, "getMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetMembershipForUser(value: `423`): Self = StObject.set(x, "getMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setGetMembershipForUser(value: `425`): Self = StObject.set(x, "getMembershipForUser", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhook(value: `424`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
+    inline def setGetWebhook(value: `426`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookConfigForOrg(value: `425`): Self = StObject.set(x, "getWebhookConfigForOrg", value.asInstanceOf[js.Any])
+    inline def setGetWebhookConfigForOrg(value: `427`): Self = StObject.set(x, "getWebhookConfigForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhookDelivery(value: `426`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setGetWebhookDelivery(value: `428`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setList(value: `427`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `429`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    inline def setListAppInstallations(value: `428`): Self = StObject.set(x, "listAppInstallations", value.asInstanceOf[js.Any])
+    inline def setListAppInstallations(value: `430`): Self = StObject.set(x, "listAppInstallations", value.asInstanceOf[js.Any])
     
-    inline def setListBlockedUsers(value: `429`): Self = StObject.set(x, "listBlockedUsers", value.asInstanceOf[js.Any])
+    inline def setListBlockedUsers(value: `431`): Self = StObject.set(x, "listBlockedUsers", value.asInstanceOf[js.Any])
     
-    inline def setListFailedInvitations(value: `430`): Self = StObject.set(x, "listFailedInvitations", value.asInstanceOf[js.Any])
+    inline def setListFailedInvitations(value: `432`): Self = StObject.set(x, "listFailedInvitations", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `431`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `433`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForUser(value: `432`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `434`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    inline def setListInvitationTeams(value: `433`): Self = StObject.set(x, "listInvitationTeams", value.asInstanceOf[js.Any])
+    inline def setListInvitationTeams(value: `435`): Self = StObject.set(x, "listInvitationTeams", value.asInstanceOf[js.Any])
     
-    inline def setListMembers(value: `434`): Self = StObject.set(x, "listMembers", value.asInstanceOf[js.Any])
+    inline def setListMembers(value: `436`): Self = StObject.set(x, "listMembers", value.asInstanceOf[js.Any])
     
-    inline def setListMembershipsForAuthenticatedUser(value: `435`): Self = StObject.set(x, "listMembershipsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListMembershipsForAuthenticatedUser(value: `437`): Self = StObject.set(x, "listMembershipsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListOutsideCollaborators(value: `436`): Self = StObject.set(x, "listOutsideCollaborators", value.asInstanceOf[js.Any])
+    inline def setListOutsideCollaborators(value: `438`): Self = StObject.set(x, "listOutsideCollaborators", value.asInstanceOf[js.Any])
     
-    inline def setListPatGrantRepositories(value: `437`): Self = StObject.set(x, "listPatGrantRepositories", value.asInstanceOf[js.Any])
+    inline def setListPatGrantRepositories(value: `439`): Self = StObject.set(x, "listPatGrantRepositories", value.asInstanceOf[js.Any])
     
-    inline def setListPatGrantRequestRepositories(value: `438`): Self = StObject.set(x, "listPatGrantRequestRepositories", value.asInstanceOf[js.Any])
+    inline def setListPatGrantRequestRepositories(value: `440`): Self = StObject.set(x, "listPatGrantRequestRepositories", value.asInstanceOf[js.Any])
     
-    inline def setListPatGrantRequests(value: `439`): Self = StObject.set(x, "listPatGrantRequests", value.asInstanceOf[js.Any])
+    inline def setListPatGrantRequests(value: `441`): Self = StObject.set(x, "listPatGrantRequests", value.asInstanceOf[js.Any])
     
-    inline def setListPatGrants(value: `440`): Self = StObject.set(x, "listPatGrants", value.asInstanceOf[js.Any])
+    inline def setListPatGrants(value: `442`): Self = StObject.set(x, "listPatGrants", value.asInstanceOf[js.Any])
     
-    inline def setListPendingInvitations(value: `441`): Self = StObject.set(x, "listPendingInvitations", value.asInstanceOf[js.Any])
+    inline def setListPendingInvitations(value: `443`): Self = StObject.set(x, "listPendingInvitations", value.asInstanceOf[js.Any])
     
-    inline def setListPublicMembers(value: `442`): Self = StObject.set(x, "listPublicMembers", value.asInstanceOf[js.Any])
+    inline def setListPublicMembers(value: `444`): Self = StObject.set(x, "listPublicMembers", value.asInstanceOf[js.Any])
     
-    inline def setListSecurityManagerTeams(value: `443`): Self = StObject.set(x, "listSecurityManagerTeams", value.asInstanceOf[js.Any])
+    inline def setListSecurityManagerTeams(value: `445`): Self = StObject.set(x, "listSecurityManagerTeams", value.asInstanceOf[js.Any])
     
-    inline def setListWebhookDeliveries(value: `444`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
+    inline def setListWebhookDeliveries(value: `446`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
     
-    inline def setListWebhooks(value: `445`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    inline def setListWebhooks(value: `447`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
     
-    inline def setPingWebhook(value: `446`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    inline def setPingWebhook(value: `448`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
     
-    inline def setRedeliverWebhookDelivery(value: `447`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
+    inline def setRedeliverWebhookDelivery(value: `449`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMember(value: `448`): Self = StObject.set(x, "removeMember", value.asInstanceOf[js.Any])
+    inline def setRemoveMember(value: `450`): Self = StObject.set(x, "removeMember", value.asInstanceOf[js.Any])
     
-    inline def setRemoveMembershipForUser(value: `449`): Self = StObject.set(x, "removeMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setRemoveMembershipForUser(value: `451`): Self = StObject.set(x, "removeMembershipForUser", value.asInstanceOf[js.Any])
     
-    inline def setRemoveOutsideCollaborator(value: `450`): Self = StObject.set(x, "removeOutsideCollaborator", value.asInstanceOf[js.Any])
+    inline def setRemoveOutsideCollaborator(value: `452`): Self = StObject.set(x, "removeOutsideCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setRemovePublicMembershipForAuthenticatedUser(value: `451`): Self = StObject.set(x, "removePublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setRemovePublicMembershipForAuthenticatedUser(value: `453`): Self = StObject.set(x, "removePublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setRemoveSecurityManagerTeam(value: `452`): Self = StObject.set(x, "removeSecurityManagerTeam", value.asInstanceOf[js.Any])
+    inline def setRemoveSecurityManagerTeam(value: `454`): Self = StObject.set(x, "removeSecurityManagerTeam", value.asInstanceOf[js.Any])
     
-    inline def setReviewPatGrantRequest(value: `453`): Self = StObject.set(x, "reviewPatGrantRequest", value.asInstanceOf[js.Any])
+    inline def setReviewPatGrantRequest(value: `455`): Self = StObject.set(x, "reviewPatGrantRequest", value.asInstanceOf[js.Any])
     
-    inline def setReviewPatGrantRequestsInBulk(value: `454`): Self = StObject.set(x, "reviewPatGrantRequestsInBulk", value.asInstanceOf[js.Any])
+    inline def setReviewPatGrantRequestsInBulk(value: `456`): Self = StObject.set(x, "reviewPatGrantRequestsInBulk", value.asInstanceOf[js.Any])
     
-    inline def setSetMembershipForUser(value: `455`): Self = StObject.set(x, "setMembershipForUser", value.asInstanceOf[js.Any])
+    inline def setSetMembershipForUser(value: `457`): Self = StObject.set(x, "setMembershipForUser", value.asInstanceOf[js.Any])
     
-    inline def setSetPublicMembershipForAuthenticatedUser(value: `456`): Self = StObject.set(x, "setPublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setSetPublicMembershipForAuthenticatedUser(value: `458`): Self = StObject.set(x, "setPublicMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUnblockUser(value: `457`): Self = StObject.set(x, "unblockUser", value.asInstanceOf[js.Any])
+    inline def setUnblockUser(value: `459`): Self = StObject.set(x, "unblockUser", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `458`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `460`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    inline def setUpdateMembershipForAuthenticatedUser(value: `459`): Self = StObject.set(x, "updateMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setUpdateMembershipForAuthenticatedUser(value: `461`): Self = StObject.set(x, "updateMembershipForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUpdatePatAccess(value: `460`): Self = StObject.set(x, "updatePatAccess", value.asInstanceOf[js.Any])
+    inline def setUpdatePatAccess(value: `462`): Self = StObject.set(x, "updatePatAccess", value.asInstanceOf[js.Any])
     
-    inline def setUpdatePatAccesses(value: `461`): Self = StObject.set(x, "updatePatAccesses", value.asInstanceOf[js.Any])
+    inline def setUpdatePatAccesses(value: `463`): Self = StObject.set(x, "updatePatAccesses", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhook(value: `462`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhook(value: `464`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhookConfigForOrg(value: `463`): Self = StObject.set(x, "updateWebhookConfigForOrg", value.asInstanceOf[js.Any])
+    inline def setUpdateWebhookConfigForOrg(value: `465`): Self = StObject.set(x, "updateWebhookConfigForOrg", value.asInstanceOf[js.Any])
   }
 }

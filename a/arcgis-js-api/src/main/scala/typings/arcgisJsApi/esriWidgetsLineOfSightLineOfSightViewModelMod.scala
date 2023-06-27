@@ -11,10 +11,10 @@ object esriWidgetsLineOfSightLineOfSightViewModelMod {
   @JSImport("esri/widgets/LineOfSight/LineOfSightViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html)
-    */
+  		 * Provides the logic for the [LineOfSight](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with LineOfSightViewModel {

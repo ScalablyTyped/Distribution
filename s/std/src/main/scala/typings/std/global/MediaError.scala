@@ -32,10 +32,12 @@ open class MediaError ()
   /* CompleteClass */
   override val MEDIA_ERR_SRC_NOT_SUPPORTED: `4` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaError/code) */
   /* standard dom */
   /* CompleteClass */
   override val code: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaError/message) */
   /* standard dom */
   /* CompleteClass */
   override val message: java.lang.String = js.native

@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Alpha
-import typings.openui5.anon.DefaultAction
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -139,13 +137,13 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit]
     ): this.type = js.native
     def attachColorSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ColorPalettePopover` itself
       */
@@ -170,7 +168,7 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit]
     ): this.type = js.native
     def attachColorSelect(
       /**
@@ -181,7 +179,7 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ColorPalettePopover` itself
       */
@@ -189,7 +187,7 @@ object sapMColorPalettePopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.ColorPalettePopover`.
       *
@@ -204,20 +202,20 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ColorPalettePopover` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Attaches event handler `fnFunction` to the {@link #event:liveChange liveChange} event of this `sap.m.ColorPalettePopover`.
       *
@@ -237,7 +235,7 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -248,7 +246,7 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ColorPalettePopover` itself
       */
@@ -273,13 +271,13 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit]
     ): this.type = js.native
     def detachColorSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverColorSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -287,7 +285,7 @@ object sapMColorPalettePopoverMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Detaches event handler `fnFunction` from the {@link #event:liveChange liveChange} event of this `sap.m.ColorPalettePopover`.
       *
@@ -299,13 +297,13 @@ object sapMColorPalettePopoverMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ColorPalettePopoverLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -313,31 +311,35 @@ object sapMColorPalettePopoverMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:colorSelect colorSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireColorSelect(): this.type = js.native
-    def fireColorSelect(/**
+    def fireColorSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DefaultAction): this.type = js.native
+    mParameters: ColorPalettePopover$ColorSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.85
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.85
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Alpha): this.type = js.native
+    mParameters: ColorPalettePopover$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getColors colors}.
@@ -362,7 +364,7 @@ object sapMColorPalettePopoverMod {
     def getDefaultColor(): CSSColor = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Gets current value of property {@link #getDisplayMode displayMode}.
       *
@@ -398,7 +400,7 @@ object sapMColorPalettePopoverMod {
     def getShowMoreColorsButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets current value of property {@link #getShowRecentColorsSection showRecentColorsSection}.
       *
@@ -471,7 +473,7 @@ object sapMColorPalettePopoverMod {
     sDefaultColor: CSSColor): this.type = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Sets a new value for property {@link #getDisplayMode displayMode}.
       *
@@ -531,7 +533,7 @@ object sapMColorPalettePopoverMod {
     bShowMoreColorsButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Sets a new value for property {@link #getShowRecentColorsSection showRecentColorsSection}.
       *
@@ -550,6 +552,141 @@ object sapMColorPalettePopoverMod {
     bShowRecentColorsSection: Boolean): this.type = js.native
   }
   
+  trait ColorPalettePopover$ColorSelectEventParameters extends StObject {
+    
+    /**
+      * Denotes if the color has been chosen by selecting the "Default Color" button (true or false).
+      */
+    var defaultAction: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The selected color value.
+      */
+    var value: js.UndefOr[CSSColor] = js.undefined
+  }
+  object ColorPalettePopover$ColorSelectEventParameters {
+    
+    inline def apply(): ColorPalettePopover$ColorSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColorPalettePopover$ColorSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPalettePopover$ColorSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDefaultAction(value: Boolean): Self = StObject.set(x, "defaultAction", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultActionUndefined: Self = StObject.set(x, "defaultAction", js.undefined)
+      
+      inline def setValue(value: CSSColor): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait ColorPalettePopover$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Parameter containing the alpha value (transparency).
+      */
+    var alpha: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the BLUE value (0-255).
+      */
+    var b: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the GREEN value (0-255).
+      */
+    var g: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the HUE value (0-360).
+      */
+    var h: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the Hexadecimal string (#FFFFFF).
+      */
+    var hex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Parameter containing the LIGHTNESS value (0-100).
+      */
+    var l: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the RED value (0-255).
+      */
+    var r: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the SATURATION value (0-100).
+      */
+    var s: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Parameter containing the VALUE value (0-100).
+      */
+    var v: js.UndefOr[int] = js.undefined
+  }
+  object ColorPalettePopover$LiveChangeEventParameters {
+    
+    inline def apply(): ColorPalettePopover$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ColorPalettePopover$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPalettePopover$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      
+      inline def setB(value: int): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      
+      inline def setG(value: int): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      
+      inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+      
+      inline def setH(value: int): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      
+      inline def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
+      
+      inline def setL(value: int): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+      
+      inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+      
+      inline def setR(value: int): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      
+      inline def setS(value: int): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setV(value: int): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    }
+  }
+  
+  type ColorPalettePopoverColorSelectEvent = typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ColorSelectEventParameters]
+  
+  type ColorPalettePopoverColorSelectEventParameters = ColorPalettePopover$ColorSelectEventParameters
+  
+  type ColorPalettePopoverLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$LiveChangeEventParameters]
+  
+  type ColorPalettePopoverLiveChangeEventParameters = ColorPalettePopover$LiveChangeEventParameters
+  
   trait ColorPalettePopoverSettings
     extends StObject
        with ControlSettings {
@@ -557,7 +694,12 @@ object sapMColorPalettePopoverMod {
     /**
       * Fired when the user selects a color.
       */
-    var colorSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var colorSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ColorSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the list of colors displayed in the palette. Minimum is 2 colors, maximum is 15 colors.
@@ -575,7 +717,7 @@ object sapMColorPalettePopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Determines the `displayMode` of the `ColorPicker` among three types - Default, Large and Simplified
       */
@@ -584,11 +726,16 @@ object sapMColorPalettePopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.85
+      * @since 1.85
       *
       * Fired when the value is changed by user interaction in the internal ColorPicker of the ColorPalette
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Indicates if the button for default color selection is available.
@@ -606,7 +753,7 @@ object sapMColorPalettePopoverMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Indicates if the Recent Colors section is available
       */
@@ -624,7 +771,9 @@ object sapMColorPalettePopoverMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ColorPalettePopoverSettings] (val x: Self) extends AnyVal {
       
-      inline def setColorSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "colorSelect", js.Any.fromFunction1(value))
+      inline def setColorSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$ColorSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "colorSelect", js.Any.fromFunction1(value))
       
       inline def setColorSelectUndefined: Self = StObject.set(x, "colorSelect", js.undefined)
       
@@ -646,7 +795,9 @@ object sapMColorPalettePopoverMod {
       
       inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ColorPalettePopover$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeotriggersInfoProperties extends StObject {
   
   /**
-    * A list of Geotriggers.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html#geotriggers)
-    */
+  		 * A list of Geotriggers.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-GeotriggersInfo.html#geotriggers)
+  		 */
   var geotriggers: js.UndefOr[js.Array[GeotriggerProperties]] = js.undefined
 }
 object GeotriggersInfoProperties {

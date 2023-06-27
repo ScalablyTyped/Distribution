@@ -12,20 +12,20 @@ object esriRestSupportFindResultMod {
   @JSImport("esri/rest/support/FindResult", JSImport.Namespace)
   @js.native
   /**
-    * The result from [find](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-find.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FindResult.html)
-    */
+  		 * The result from [find](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-find.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FindResult.html)
+  		 */
   open class ^ ()
     extends StObject
        with FindResult {
     def this(properties: FindResultProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

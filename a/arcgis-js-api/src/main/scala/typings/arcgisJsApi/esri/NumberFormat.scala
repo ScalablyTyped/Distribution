@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormat extends StObject {
   
   /**
-    * Indicates if the number should be formatted with a thousands separator.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
-    */
+  		 * Indicates if the number should be formatted with a thousands separator.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
+  		 */
   var digitSeparator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the number of decimal places that should appear in the formatted number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
-    */
+  		 * Specifies the number of decimal places that should appear in the formatted number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#NumberFormat)
+  		 */
   var places: js.UndefOr[Double] = js.undefined
 }
 object NumberFormat {

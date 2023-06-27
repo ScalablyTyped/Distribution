@@ -15,9 +15,9 @@ trait WFSLayerConstructor
   def fromJSON(json: Any): WFSLayer = js.native
   
   /**
-    * Creates a WFSLayer from an object created by [wfsUtils.getWFSLayerInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getWFSLayerInfo).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#fromWFSLayerInfo)
-    */
+  		 * Creates a WFSLayer from an object created by [wfsUtils.getWFSLayerInfo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getWFSLayerInfo).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html#fromWFSLayerInfo)
+  		 */
   def fromWFSLayerInfo(layerInfo: WFSLayerInfo): WFSLayer = js.native
 }

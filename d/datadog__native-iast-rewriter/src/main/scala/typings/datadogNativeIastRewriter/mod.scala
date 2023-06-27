@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@datadog/native-iast-rewriter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@datadog/native-iast-rewriter", "Rewriter")
   @js.native
   open class Rewriter () extends StObject {
@@ -15,6 +19,8 @@ object mod {
     
     def rewrite(code: String, file: String): ResultWithoutMetrics = js.native
   }
+  
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   
   trait CsiMethod extends StObject {
     

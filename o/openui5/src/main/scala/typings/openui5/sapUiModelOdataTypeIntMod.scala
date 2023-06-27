@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Nullable
+import typings.openui5.anon.ParseEmptyValueToZero
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,12 +19,12 @@ object sapUiModelOdataTypeIntMod {
     def this(/**
       * type-specific format options; see subtypes
       */
-    oFormatOptions: js.Object) = this()
+    oFormatOptions: ParseEmptyValueToZero) = this()
     def this(
       /**
       * type-specific format options; see subtypes
       */
-    oFormatOptions: js.Object,
+    oFormatOptions: Unit,
       /**
       * constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
@@ -33,7 +34,7 @@ object sapUiModelOdataTypeIntMod {
       /**
       * type-specific format options; see subtypes
       */
-    oFormatOptions: Unit,
+    oFormatOptions: ParseEmptyValueToZero,
       /**
       * constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
@@ -124,41 +125,56 @@ object sapUiModelOdataTypeIntMod {
       */
     iValue: Double,
       /**
-      * the target type; may be "any", "int", "float", "string", or a type with one of these types as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type} for more information.
+      * the target type; may be "any", "int", "float", "string", or a type with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * See {@link sap.ui.model.odata.type} for more information.
       */
     sTargetType: String
     ): Double | String = js.native
     
     def parseValue(
       /**
-      * the value to be parsed. The empty string and `null` are parsed to `null`.
+      * The value to be parsed
       */
     vValue: String,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): Double = js.native
+    ): Double | Null = js.native
     /**
       * Parses the given value, which is expected to be of the given source type, to an Int in number representation.
       *
-      * @returns the parsed value
+      * @returns The parsed value. The empty string and `null` are parsed to:
+      * 	 - `0` if the `parseEmptyValueToZero` format option is set to `true` and the `nullable` constraint is
+      *     set to `false`,
+      * 	 - `null` otherwise.
       */
     def parseValue(
       /**
-      * the value to be parsed. The empty string and `null` are parsed to `null`.
+      * The value to be parsed
       */
     vValue: Double,
       /**
-      * the source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
-      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sSourceType: String
-    ): Double = js.native
+    ): Double | Null = js.native
+    def parseValue(
+      /**
+      * The value to be parsed
+      */
+    vValue: Null,
+      /**
+      * The source type (the expected type of `vValue`); may be "float", "int", "string", or a type with one
+      * of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
+      */
+    sSourceType: String
+    ): Double | Null = js.native
     
     /**
       * Validates whether the given value in model representation is valid and meets the defined constraints.

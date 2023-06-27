@@ -1,5 +1,6 @@
 package typings.codemirrorView.mod
 
+import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,12 @@ other platforms. So `Mod-b` is `Ctrl-b` on Linux but `Cmd-b` on
 macOS.
 */
 trait KeyBinding extends StObject {
+  
+  /**
+    When this property is present, the function is called for every
+    key that is not a multi-stroke prefix.
+    */
+  var any: js.UndefOr[js.Function2[/* view */ EditorView, /* event */ KeyboardEvent, Boolean]] = js.undefined
   
   /**
     The key name to use for this binding. If the platform-specific
@@ -61,14 +68,7 @@ trait KeyBinding extends StObject {
     command function returns `false`, further bindings will be tried
     for the key.
     */
-  def run(target: EditorView): Boolean
-  /**
-    The command to execute when this binding is triggered. When the
-    command function returns `false`, further bindings will be tried
-    for the key.
-    */
-  @JSName("run")
-  var run_Original: Command
+  var run: js.UndefOr[Command] = js.undefined
   
   /**
     By default, key bindings apply when focus is on the editor
@@ -94,13 +94,17 @@ trait KeyBinding extends StObject {
 }
 object KeyBinding {
   
-  inline def apply(run: /* target */ EditorView => Boolean): KeyBinding = {
-    val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
+  inline def apply(): KeyBinding = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyBinding]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
+    
+    inline def setAny(value: (/* view */ EditorView, /* event */ KeyboardEvent) => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
+    
+    inline def setAnyUndefined: Self = StObject.set(x, "any", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -119,6 +123,8 @@ object KeyBinding {
     inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
     inline def setRun(value: /* target */ EditorView => Boolean): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

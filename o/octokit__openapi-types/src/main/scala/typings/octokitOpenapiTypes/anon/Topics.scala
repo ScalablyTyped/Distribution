@@ -8,11 +8,11 @@ trait Topics extends StObject {
   
   var default_branch: js.UndefOr[FromString] = js.undefined
   
-  var description: js.UndefOr[`455`] = js.undefined
+  var description: js.UndefOr[`533`] = js.undefined
   
-  var homepage: js.UndefOr[`455`] = js.undefined
+  var homepage: js.UndefOr[`533`] = js.undefined
   
-  var topics: js.UndefOr[`465`] = js.undefined
+  var topics: js.UndefOr[`543`] = js.undefined
 }
 object Topics {
   
@@ -28,15 +28,15 @@ object Topics {
     
     inline def setDefault_branchUndefined: Self = StObject.set(x, "default_branch", js.undefined)
     
-    inline def setDescription(value: `455`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: `533`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setHomepage(value: `455`): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+    inline def setHomepage(value: `533`): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
     inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
-    inline def setTopics(value: `465`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: `543`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
   }

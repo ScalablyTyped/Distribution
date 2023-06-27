@@ -2,7 +2,7 @@ package typings.remixRunRouter.distRouterMod
 
 import typings.remixRunRouter.anon.FormEncType
 import typings.remixRunRouter.anon.FormMethod
-import typings.remixRunRouter.anon.Location
+import typings.remixRunRouter.anon.Json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +13,11 @@ trait NavigationStates extends StObject {
   
   var Loading: FormMethod
   
-  var Submitting: Location
+  var Submitting: Json
 }
 object NavigationStates {
   
-  inline def apply(Idle: FormEncType, Loading: FormMethod, Submitting: Location): NavigationStates = {
+  inline def apply(Idle: FormEncType, Loading: FormMethod, Submitting: Json): NavigationStates = {
     val __obj = js.Dynamic.literal(Idle = Idle.asInstanceOf[js.Any], Loading = Loading.asInstanceOf[js.Any], Submitting = Submitting.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationStates]
   }
@@ -29,6 +29,6 @@ object NavigationStates {
     
     inline def setLoading(value: FormMethod): Self = StObject.set(x, "Loading", value.asInstanceOf[js.Any])
     
-    inline def setSubmitting(value: Location): Self = StObject.set(x, "Submitting", value.asInstanceOf[js.Any])
+    inline def setSubmitting(value: Json): Self = StObject.set(x, "Submitting", value.asInstanceOf[js.Any])
   }
 }

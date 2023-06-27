@@ -11,24 +11,24 @@ sealed trait WaterbodySize extends StObject
 object WaterbodySize extends StObject {
   
   /**
-    * Large water body.
-    */
+  			 * Large water body.
+  			 */
   @js.native
   sealed trait Large
     extends StObject
        with WaterbodySize
   
   /**
-    * Medium water body.
-    */
+  			 * Medium water body.
+  			 */
   @js.native
   sealed trait Medium
     extends StObject
        with WaterbodySize
   
   /**
-    * Small water body.
-    */
+  			 * Small water body.
+  			 */
   @js.native
   sealed trait Small
     extends StObject

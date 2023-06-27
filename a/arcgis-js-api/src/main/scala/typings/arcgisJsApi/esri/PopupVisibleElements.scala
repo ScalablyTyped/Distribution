@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PopupVisibleElements extends StObject {
   
   /**
-    * Indicates whether to display a close button on the popup dialog.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
-    */
+  		 * Indicates whether to display a close button on the popup dialog.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
+  		 */
   var closeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether pagination for feature navigation will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
-    */
+  		 * Indicates whether pagination for feature navigation will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
+  		 */
   var featureNavigation: js.UndefOr[Boolean] = js.undefined
 }
 object PopupVisibleElements {

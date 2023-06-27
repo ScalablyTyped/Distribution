@@ -11,10 +11,10 @@ trait ElevationProfileLineGround
      with ElevationProfileLine {
   
   /**
-    * The line type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineGround.html#type)
-    */
+  		 * The line type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineGround.html#type)
+  		 */
   @JSName("type")
   val type_ElevationProfileLineGround: ground = js.native
 }

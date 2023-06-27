@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/postcss-hwb-function" : "2.2.1"
+      "@csstools/postcss-hwb-function" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/postcss-hwb-function" : "2.2.1"
+      "@csstools/postcss-hwb-function" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

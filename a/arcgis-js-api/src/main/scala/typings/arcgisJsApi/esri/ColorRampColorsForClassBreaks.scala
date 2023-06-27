@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorRampColorsForClassBreaks extends StObject {
   
   /**
-    * An array of 1 to 10 colors intended for displaying as a ramp with distinct or unique colors.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
-    */
+  		 * An array of 1 to 10 colors intended for displaying as a ramp with distinct or unique colors.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
+  		 */
   var colors: js.Array[Color_]
   
   /**
-    * The number of classes or colors used in the ramp of discrete colors.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
-    */
+  		 * The number of classes or colors used in the ramp of discrete colors.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
+  		 */
   var numClasses: Double
 }
 object ColorRampColorsForClassBreaks {

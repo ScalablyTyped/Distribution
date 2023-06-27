@@ -48,7 +48,7 @@ object sha3Mod {
   
   object keccak224 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "keccak_224")
     @js.native
@@ -69,7 +69,7 @@ object sha3Mod {
   
   object keccak256 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "keccak_256")
     @js.native
@@ -90,7 +90,7 @@ object sha3Mod {
   
   object keccak384 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "keccak_384")
     @js.native
@@ -111,7 +111,7 @@ object sha3Mod {
   
   object keccak512 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "keccak_512")
     @js.native
@@ -135,7 +135,7 @@ object sha3Mod {
   
   object sha3224 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "sha3_224")
     @js.native
@@ -156,7 +156,7 @@ object sha3Mod {
   
   object sha3256 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "sha3_256")
     @js.native
@@ -177,7 +177,7 @@ object sha3Mod {
   
   object sha3384 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "sha3_384")
     @js.native
@@ -198,7 +198,7 @@ object sha3Mod {
   
   object sha3512 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/sha3", "sha3_512")
     @js.native
@@ -231,7 +231,7 @@ object sha3Mod {
     def blockLen: Double = js.native
     inline def blockLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockLen")(x.asInstanceOf[js.Any])
     
-    inline def create(opts: ShakeOpts): Hash[Keccak] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Hash[Keccak]]
+    inline def create(opts: ShakeOpts): HashXOF[HashXOF[Keccak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[HashXOF[HashXOF[Keccak]]]
     
     @JSImport("@noble/hashes/sha3", "shake128.outputLen")
     @js.native
@@ -253,7 +253,7 @@ object sha3Mod {
     def blockLen: Double = js.native
     inline def blockLen_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockLen")(x.asInstanceOf[js.Any])
     
-    inline def create(opts: ShakeOpts): Hash[Keccak] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Hash[Keccak]]
+    inline def create(opts: ShakeOpts): HashXOF[HashXOF[Keccak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[HashXOF[HashXOF[Keccak]]]
     
     @JSImport("@noble/hashes/sha3", "shake256.outputLen")
     @js.native

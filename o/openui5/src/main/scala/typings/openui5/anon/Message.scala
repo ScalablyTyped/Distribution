@@ -1,39 +1,35 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreMessageMod.default
-import typings.openui5.sapUiUx3NotifierMod.Notifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Message extends StObject {
   
-  /**
-    * The message that was selected
-    */
-  var message: js.UndefOr[default] = js.undefined
+  var actual: Boolean
   
-  /**
-    * The notifier that contains the selected message
-    */
-  var notifier: js.UndefOr[Notifier] = js.undefined
+  var expected: Boolean
+  
+  var message: String
+  
+  var result: Boolean
 }
 object Message {
   
-  inline def apply(): Message = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(actual: Boolean, expected: Boolean, message: String, result: Boolean): Message = {
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
-    inline def setMessage(value: default): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setActual(value: Boolean): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
-    inline def setNotifier(value: Notifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

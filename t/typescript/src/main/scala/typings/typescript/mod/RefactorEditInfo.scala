@@ -14,6 +14,8 @@ trait RefactorEditInfo extends StObject {
   
   var edits: js.Array[FileTextChanges]
   
+  var notApplicableReason: js.UndefOr[java.lang.String] = js.undefined
+  
   var renameFilename: js.UndefOr[java.lang.String] = js.undefined
   
   var renameLocation: js.UndefOr[Double] = js.undefined
@@ -37,6 +39,10 @@ object RefactorEditInfo {
     inline def setEdits(value: js.Array[FileTextChanges]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
     inline def setEditsVarargs(value: FileTextChanges*): Self = StObject.set(x, "edits", js.Array(value*))
+    
+    inline def setNotApplicableReason(value: java.lang.String): Self = StObject.set(x, "notApplicableReason", value.asInstanceOf[js.Any])
+    
+    inline def setNotApplicableReasonUndefined: Self = StObject.set(x, "notApplicableReason", js.undefined)
     
     inline def setRenameFilename(value: java.lang.String): Self = StObject.set(x, "renameFilename", value.asInstanceOf[js.Any])
     

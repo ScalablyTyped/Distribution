@@ -222,8 +222,7 @@ object sapUiWebcMainTabMod {
       * Gets current value of property {@link #getIcon icon}.
       *
       * Defines the icon source URI to be displayed as graphical element within the component. The SAP-icons
-      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * Default value is `empty string`.
       *
@@ -459,8 +458,7 @@ object sapUiWebcMainTabMod {
       * Sets a new value for property {@link #getIcon icon}.
       *
       * Defines the icon source URI to be displayed as graphical element within the component. The SAP-icons
-      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -555,8 +553,7 @@ object sapUiWebcMainTabMod {
     
     /**
       * Defines the icon source URI to be displayed as graphical element within the component. The SAP-icons
-      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html
-      * Icon Explorer}.
+      * font provides numerous built-in icons. See all the available icons in the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       */
     var icon: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     

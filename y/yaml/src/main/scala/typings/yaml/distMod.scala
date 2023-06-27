@@ -1,10 +1,10 @@
 package typings.yaml
 
 import typings.yaml.anon.AfterKey
+import typings.yaml.anon.Comment
 import typings.yaml.anon.End
-import typings.yaml.anon.Value
 import typings.yaml.distDocApplyReviverMod.Reviver
-import typings.yaml.distDocDocumentMod.Document.Parsed
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distDocDocumentMod.Replacer
 import typings.yaml.distErrorsMod.ErrorCode
 import typings.yaml.distNodesNodeMod.Node
@@ -28,6 +28,7 @@ import typings.yaml.distParseCstVisitMod.Visitor
 import typings.yaml.distPublicApiMod.EmptyStream
 import typings.yaml.distVisitMod.asyncVisitor
 import typings.yaml.distVisitMod.visitor
+import typings.yaml.yamlBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,65 +78,65 @@ object distMod {
     
     inline def prettyToken(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyToken")(token.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def resolveAsScalar(): Value | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")().asInstanceOf[Value | Null]
-    inline def resolveAsScalar(token: Null, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    inline def resolveAsScalar(): Comment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")().asInstanceOf[Comment | Null]
+    inline def resolveAsScalar(token: Null, strict: Boolean): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Null,
       strict: Boolean,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Null,
       strict: Unit,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
-    inline def resolveAsScalar(token: Unit, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
+    inline def resolveAsScalar(token: Unit, strict: Boolean): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Unit,
       strict: Boolean,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Unit,
       strict: Unit,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
-    inline def resolveAsScalar(token: BlockScalar): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value]
-    inline def resolveAsScalar(token: BlockScalar, strict: Boolean): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
+    inline def resolveAsScalar(token: BlockScalar): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Comment]
+    inline def resolveAsScalar(token: BlockScalar, strict: Boolean): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Comment]
     inline def resolveAsScalar(
       token: BlockScalar,
       strict: Boolean,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    ): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment]
     inline def resolveAsScalar(
       token: BlockScalar,
       strict: Unit,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
-    inline def resolveAsScalar(token: FlowScalar): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value]
-    inline def resolveAsScalar(token: FlowScalar, strict: Boolean): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value]
+    ): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment]
+    inline def resolveAsScalar(token: FlowScalar): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Comment]
+    inline def resolveAsScalar(token: FlowScalar, strict: Boolean): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Comment]
     inline def resolveAsScalar(
       token: FlowScalar,
       strict: Boolean,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
+    ): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment]
     inline def resolveAsScalar(
       token: FlowScalar,
       strict: Unit,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value]
-    inline def resolveAsScalar(token: Token): Value | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Value | Null]
-    inline def resolveAsScalar(token: Token, strict: Boolean): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment]
+    inline def resolveAsScalar(token: Token): Comment | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any]).asInstanceOf[Comment | Null]
+    inline def resolveAsScalar(token: Token, strict: Boolean): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Token,
       strict: Boolean,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     inline def resolveAsScalar(
       token: Token,
       strict: Unit,
       onError: js.Function3[/* offset */ Double, /* code */ ErrorCode, /* message */ String, Unit]
-    ): Value | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Value | Null]
+    ): Comment | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAsScalar")(token.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Comment | Null]
     
     inline def setScalarValue(token: Token, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScalarValue")(token.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setScalarValue(token: Token, value: String, context: AfterKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScalarValue")(token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -203,8 +204,8 @@ object distMod {
   
   @JSImport("yaml/dist", "Composer")
   @js.native
-  open class Composer ()
-    extends typings.yaml.distComposeComposerMod.Composer {
+  open class Composer[Contents /* <: ParsedNode */, Strict /* <: Boolean */] ()
+    extends typings.yaml.distComposeComposerMod.Composer[Contents, Strict] {
     def this(options: ParseOptions & DocumentOptions & SchemaOptions) = this()
   }
   
@@ -214,8 +215,8 @@ object distMod {
     * @param value - The initial value for the document, which will be wrapped
     *   in a Node container.
     */
-  open class Document[T /* <: Node[Any] */] ()
-    extends typings.yaml.distDocDocumentMod.Document[T] {
+  open class Document[Contents /* <: Node[Any] */, Strict /* <: Boolean */] ()
+    extends typings.yaml.distDocDocumentMod.Document[Contents, Strict] {
     def this(value: Any) = this()
     def this(value: Any, options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions) = this()
     def this(value: Any, replacer: Replacer) = this()
@@ -316,6 +317,19 @@ object distMod {
     extends typings.yaml.distNodesYamlmapMod.YAMLMap[K, V] {
     def this(schema: typings.yaml.distSchemaSchemaMod.Schema) = this()
   }
+  /* static members */
+  object YAMLMap {
+    
+    @JSImport("yaml/dist", "YAMLMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A generic collection parsing method that can be extended
+      * to other node classes that inherit from YAMLMap
+      */
+    inline def from(schema: typings.yaml.distSchemaSchemaMod.Schema, obj: Any, ctx: CreateNodeContext): typings.yaml.distNodesYamlmapMod.YAMLMap[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.distNodesYamlmapMod.YAMLMap[Any, Any]]
+  }
   
   @JSImport("yaml/dist", "YAMLOMap")
   @js.native
@@ -327,6 +341,8 @@ object distMod {
     @JSImport("yaml/dist", "YAMLOMap")
     @js.native
     val ^ : js.Any = js.native
+    
+    inline def from(schema: typings.yaml.distSchemaSchemaMod.Schema, iterable: Any, ctx: CreateNodeContext): typings.yaml.distSchemaYaml1Dot1OmapMod.YAMLOMap = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.distSchemaYaml1Dot1OmapMod.YAMLOMap]
     
     @JSImport("yaml/dist", "YAMLOMap.tag")
     @js.native
@@ -347,6 +363,15 @@ object distMod {
     extends typings.yaml.distNodesYamlseqMod.YAMLSeq[T] {
     def this(schema: typings.yaml.distSchemaSchemaMod.Schema) = this()
   }
+  /* static members */
+  object YAMLSeq {
+    
+    @JSImport("yaml/dist", "YAMLSeq")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def from(schema: typings.yaml.distSchemaSchemaMod.Schema, obj: Any, ctx: CreateNodeContext): typings.yaml.distNodesYamlseqMod.YAMLSeq[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.distNodesYamlseqMod.YAMLSeq[Any]]
+  }
   
   @JSImport("yaml/dist", "YAMLSet")
   @js.native
@@ -360,6 +385,8 @@ object distMod {
     @JSImport("yaml/dist", "YAMLSet")
     @js.native
     val ^ : js.Any = js.native
+    
+    inline def from(schema: typings.yaml.distSchemaSchemaMod.Schema, iterable: Any, ctx: CreateNodeContext): typings.yaml.distSchemaYaml1Dot1SetMod.YAMLSet[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.yaml.distSchemaYaml1Dot1SetMod.YAMLSet[Any]]
     
     @JSImport("yaml/dist", "YAMLSet.tag")
     @js.native
@@ -378,7 +405,7 @@ object distMod {
   
   inline def isCollection[K, V](node: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isDocument[T /* <: Node[Any] */](node: Any): /* is yaml.yaml/dist/doc/Document.Document<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/doc/Document.Document<T> */ Boolean]
+  inline def isDocument[T /* <: Node[Any] */](node: Any): /* is yaml.yaml/dist/doc/Document.Document<T, true> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/doc/Document.Document<T, true> */ Boolean]
   
   inline def isMap[K, V](node: Any): /* is yaml.yaml/dist/nodes/YAMLMap.YAMLMap<K, V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMap")(node.asInstanceOf[js.Any]).asInstanceOf[/* is yaml.yaml/dist/nodes/YAMLMap.YAMLMap<K, V> */ Boolean]
   
@@ -399,11 +426,19 @@ object distMod {
     options: ParseOptions & DocumentOptions & SchemaOptions & ToJSOptions
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def parseAllDocuments[T /* <: ParsedNode */](source: String): js.Array[Parsed[T]] | EmptyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
-  inline def parseAllDocuments[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): js.Array[Parsed[T]] | EmptyStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
+  inline def parseAllDocuments[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String): (js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any]).asInstanceOf[(js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream]
+  inline def parseAllDocuments[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): (js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream]
   
-  inline def parseDocument[T /* <: ParsedNode */](source: String): Parsed[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any]).asInstanceOf[Parsed[T]]
-  inline def parseDocument[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): Parsed[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed[T]]
+  inline def parseDocument[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String): /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any]
+  inline def parseDocument[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any]
   
   inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(
@@ -436,7 +471,7 @@ object distMod {
   object visit {
     
     inline def apply(node: Null, visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def apply(node: typings.yaml.distDocDocumentMod.Document[Node[Any]], visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(node: typings.yaml.distDocDocumentMod.Document[Node[Any], `true`], visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(node: Node[Any], visitor: visitor): Unit = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("yaml/dist", "visit")
@@ -462,7 +497,7 @@ object distMod {
   object visitAsync {
     
     inline def apply(node: Null, visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    inline def apply(node: typings.yaml.distDocDocumentMod.Document[Node[Any]], visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def apply(node: typings.yaml.distDocDocumentMod.Document[Node[Any], `true`], visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def apply(node: Node[Any], visitor: asyncVisitor): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("yaml/dist", "visitAsync")

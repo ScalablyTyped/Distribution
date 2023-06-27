@@ -19,7 +19,7 @@ object sapMFacetFilterItemMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:395392f30f2a4c4d80d110d5f923da77 Facet Filter Item}
+    * 	{@link https://ui5.sap.com/#/topic/395392f30f2a4c4d80d110d5f923da77 Facet Filter Item}
     */
   open class default () extends FacetFilterItem {
     def this(/**

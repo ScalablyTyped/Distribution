@@ -9,38 +9,38 @@ trait CIMGeometricEffectCut
      with CIMGeometricEffect {
   
   /**
-    * The distance from the beginning of a line that the display of the stroke starts.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
-    */
+  		 * The distance from the beginning of a line that the display of the stroke starts.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
+  		 */
   var beginCut: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance from the end of a line that the display of the stroke ends.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
-    */
+  		 * The distance from the end of a line that the display of the stroke ends.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
+  		 */
   var endCut: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the effect should be applied in the opposite manner.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
-    */
+  		 * A value indicating whether the effect should be applied in the opposite manner.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
+  		 */
   var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The distance around the middle of a line that the display of the stroke is interrupted.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
-    */
+  		 * The distance around the middle of a line that the display of the stroke is interrupted.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
+  		 */
   var middleCut: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectCut)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut

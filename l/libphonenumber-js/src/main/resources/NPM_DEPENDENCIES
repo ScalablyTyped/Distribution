@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "libphonenumber-js" : "1.10.30"
+      "libphonenumber-js" : "1.10.36"
     }
   ],
   "test-dependencies" : [
     {
-      "libphonenumber-js" : "1.10.30"
+      "libphonenumber-js" : "1.10.36"
     }
   ],
   "compile-devDependencies" : [

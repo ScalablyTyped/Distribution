@@ -1,11 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Comment
-import typings.openui5.anon.Favorite
-import typings.openui5.anon.Flagged
-import typings.openui5.anon.ItemId
-import typings.openui5.anon.Shareed
-import typings.openui5.anon.Text
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -166,13 +160,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachActionItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -198,7 +192,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachActionItemSelected(
       /**
@@ -209,7 +203,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -230,13 +224,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit]
     ): this.type = js.native
     def attachCommentAdded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -261,7 +255,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit]
     ): this.type = js.native
     def attachCommentAdded(
       /**
@@ -272,7 +266,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -293,13 +287,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDeleted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -324,7 +318,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachDeleted(
       /**
@@ -335,7 +329,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -356,13 +350,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInspect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -387,7 +381,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInspect(
       /**
@@ -398,7 +392,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -420,13 +414,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit]
     ): this.type = js.native
     def attachReferenceClicked(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -452,7 +446,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit]
     ): this.type = js.native
     def attachReferenceClicked(
       /**
@@ -463,7 +457,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -484,13 +478,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSenderClicked(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -515,7 +509,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSenderClicked(
       /**
@@ -526,7 +520,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -549,13 +543,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit]
     ): this.type = js.native
     def attachToggleFavorite(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -582,7 +576,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit]
     ): this.type = js.native
     def attachToggleFavorite(
       /**
@@ -593,7 +587,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -614,13 +608,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit]
     ): this.type = js.native
     def attachToggleFlagged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -645,7 +639,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit]
     ): this.type = js.native
     def attachToggleFlagged(
       /**
@@ -656,7 +650,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -677,13 +671,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit]
     ): this.type = js.native
     def attachToggleShared(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -708,7 +702,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit]
     ): this.type = js.native
     def attachToggleShared(
       /**
@@ -719,7 +713,7 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.FeedChunk` itself
       */
@@ -778,13 +772,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachActionItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkActionItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -802,13 +796,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit]
     ): this.type = js.native
     def detachCommentAdded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkCommentAddedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -826,13 +820,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachDeleted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -850,13 +844,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachInspect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -875,13 +869,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit]
     ): this.type = js.native
     def detachReferenceClicked(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkReferenceClickedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -900,13 +894,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSenderClicked(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -925,13 +919,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit]
     ): this.type = js.native
     def detachToggleFavorite(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFavoriteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -950,13 +944,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit]
     ): this.type = js.native
     def detachToggleFlagged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleFlaggedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -974,13 +968,13 @@ object sapUiUx3FeedChunkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit]
     ): this.type = js.native
     def detachToggleShared(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FeedChunkToggleSharedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -988,33 +982,37 @@ object sapUiUx3FeedChunkMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:actionItemSelected actionItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireActionItemSelected(): this.type = js.native
-    def fireActionItemSelected(/**
+    def fireActionItemSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemId): this.type = js.native
+    mParameters: FeedChunk$ActionItemSelectedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:commentAdded commentAdded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCommentAdded(): this.type = js.native
-    def fireCommentAdded(/**
+    def fireCommentAdded(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Comment): this.type = js.native
+    mParameters: FeedChunk$CommentAddedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:deleted deleted} to attached listeners.
       *
@@ -1027,7 +1025,7 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:inspect inspect} to attached listeners.
       *
@@ -1040,20 +1038,22 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:referenceClicked referenceClicked} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireReferenceClicked(): this.type = js.native
-    def fireReferenceClicked(/**
+    def fireReferenceClicked(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Text): this.type = js.native
+    mParameters: FeedChunk$ReferenceClickedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:senderClicked senderClicked} to attached listeners.
       *
@@ -1066,43 +1066,49 @@ object sapUiUx3FeedChunkMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleFavorite toggleFavorite} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleFavorite(): this.type = js.native
-    def fireToggleFavorite(/**
+    def fireToggleFavorite(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Favorite): this.type = js.native
+    mParameters: FeedChunk$ToggleFavoriteEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleFlagged toggleFlagged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleFlagged(): this.type = js.native
-    def fireToggleFlagged(/**
+    def fireToggleFlagged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Flagged): this.type = js.native
+    mParameters: FeedChunk$ToggleFlaggedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleShared toggleShared} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleShared(): this.type = js.native
-    def fireToggleShared(/**
+    def fireToggleShared(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Shareed): this.type = js.native
+    mParameters: FeedChunk$ToggleSharedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getActionMenuItems actionMenuItems}.
@@ -1687,6 +1693,183 @@ object sapUiUx3FeedChunkMod {
     def unbindComments(): this.type = js.native
   }
   
+  trait FeedChunk$ActionItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The selected item
+      */
+    var item: js.UndefOr[typings.openui5.sapUiUnifiedMenuItemBaseMod.default] = js.undefined
+    
+    /**
+      * The Id of the selected item
+      */
+    var itemId: js.UndefOr[String] = js.undefined
+  }
+  object FeedChunk$ActionItemSelectedEventParameters {
+    
+    inline def apply(): FeedChunk$ActionItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$ActionItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$ActionItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapUiUnifiedMenuItemBaseMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      
+      inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait FeedChunk$CommentAddedEventParameters extends StObject {
+    
+    /**
+      * New comment chunk
+      */
+    var comment: js.UndefOr[FeedChunk] = js.undefined
+  }
+  object FeedChunk$CommentAddedEventParameters {
+    
+    inline def apply(): FeedChunk$CommentAddedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$CommentAddedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$CommentAddedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setComment(value: FeedChunk): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    }
+  }
+  
+  trait FeedChunk$DeletedEventParameters extends StObject
+  
+  trait FeedChunk$InspectEventParameters extends StObject
+  
+  trait FeedChunk$ReferenceClickedEventParameters extends StObject {
+    
+    /**
+      * Text of the @-reference
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object FeedChunk$ReferenceClickedEventParameters {
+    
+    inline def apply(): FeedChunk$ReferenceClickedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$ReferenceClickedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$ReferenceClickedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  trait FeedChunk$SenderClickedEventParameters extends StObject
+  
+  trait FeedChunk$ToggleFavoriteEventParameters extends StObject {
+    
+    /**
+      * Current favorite state
+      */
+    var favorite: js.UndefOr[Boolean] = js.undefined
+  }
+  object FeedChunk$ToggleFavoriteEventParameters {
+    
+    inline def apply(): FeedChunk$ToggleFavoriteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$ToggleFavoriteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$ToggleFavoriteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFavorite(value: Boolean): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
+      
+      inline def setFavoriteUndefined: Self = StObject.set(x, "favorite", js.undefined)
+    }
+  }
+  
+  trait FeedChunk$ToggleFlaggedEventParameters extends StObject {
+    
+    /**
+      * Current flagged state
+      */
+    var flagged: js.UndefOr[Boolean] = js.undefined
+  }
+  object FeedChunk$ToggleFlaggedEventParameters {
+    
+    inline def apply(): FeedChunk$ToggleFlaggedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$ToggleFlaggedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$ToggleFlaggedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFlagged(value: Boolean): Self = StObject.set(x, "flagged", value.asInstanceOf[js.Any])
+      
+      inline def setFlaggedUndefined: Self = StObject.set(x, "flagged", js.undefined)
+    }
+  }
+  
+  trait FeedChunk$ToggleSharedEventParameters extends StObject {
+    
+    /**
+      * Current shared state
+      */
+    var shareed: js.UndefOr[Boolean] = js.undefined
+  }
+  object FeedChunk$ToggleSharedEventParameters {
+    
+    inline def apply(): FeedChunk$ToggleSharedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FeedChunk$ToggleSharedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedChunk$ToggleSharedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setShareed(value: Boolean): Self = StObject.set(x, "shareed", value.asInstanceOf[js.Any])
+      
+      inline def setShareedUndefined: Self = StObject.set(x, "shareed", js.undefined)
+    }
+  }
+  
+  type FeedChunkActionItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$ActionItemSelectedEventParameters]
+  
+  type FeedChunkActionItemSelectedEventParameters = FeedChunk$ActionItemSelectedEventParameters
+  
+  type FeedChunkCommentAddedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$CommentAddedEventParameters]
+  
+  type FeedChunkCommentAddedEventParameters = FeedChunk$CommentAddedEventParameters
+  
+  type FeedChunkDeletedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$DeletedEventParameters]
+  
+  type FeedChunkDeletedEventParameters = FeedChunk$DeletedEventParameters
+  
+  type FeedChunkInspectEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$InspectEventParameters]
+  
+  type FeedChunkInspectEventParameters = FeedChunk$InspectEventParameters
+  
+  type FeedChunkReferenceClickedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$ReferenceClickedEventParameters]
+  
+  type FeedChunkReferenceClickedEventParameters = FeedChunk$ReferenceClickedEventParameters
+  
+  type FeedChunkSenderClickedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$SenderClickedEventParameters]
+  
+  type FeedChunkSenderClickedEventParameters = FeedChunk$SenderClickedEventParameters
+  
   trait FeedChunkSettings
     extends StObject
        with ControlSettings {
@@ -1694,7 +1877,12 @@ object sapUiUx3FeedChunkMod {
     /**
       * Event is fired when an item from the action menu button was selected.
       */
-    var actionItemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var actionItemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ActionItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * MenuItems to open when there is a click on the action menu button
@@ -1706,7 +1894,12 @@ object sapUiUx3FeedChunkMod {
     /**
       * Event is raised when a comment is added to the entry. This event is not supported for comment chunks.
       */
-    var commentAdded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var commentAdded: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$CommentAddedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.4.0) - Not longer used. If a chunk is a comment is determined from hierarchy. If
@@ -1729,7 +1922,9 @@ object sapUiUx3FeedChunkMod {
     /**
       * Event is fired when the deletion button is pressed.
       */
-    var deleted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var deleted: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Flag if the deletion of the chunk shall be allowed
@@ -1805,12 +2000,19 @@ object sapUiUx3FeedChunkMod {
     /**
       * Event is fired when the inspect button was pressed
       */
-    var inspect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var inspect: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Click on a @-reference
       */
-    var referenceClicked: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var referenceClicked: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ReferenceClickedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sender of the chunk
@@ -1820,7 +2022,9 @@ object sapUiUx3FeedChunkMod {
     /**
       * Event is fired when the thumbnail or the name of the sender is clicked.
       */
-    var senderClicked: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var senderClicked: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the entry shall be shared. This property is not supported for comment chunks.
@@ -1848,17 +2052,32 @@ object sapUiUx3FeedChunkMod {
       * Event is raised when the user clicks to set the entry as favorite. This event is not supported for comment
       * chunks.
       */
-    var toggleFavorite: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleFavorite: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFavoriteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is raised when the user clicks to flag the entry. This event is not supported for comment chunks.
       */
-    var toggleFlagged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleFlagged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFlaggedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is raised when the user clicks to share the entry. This event is not supported for comment chunks.
       */
-    var toggleShared: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleShared: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleSharedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object FeedChunkSettings {
     
@@ -1870,7 +2089,9 @@ object sapUiUx3FeedChunkMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FeedChunkSettings] (val x: Self) extends AnyVal {
       
-      inline def setActionItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "actionItemSelected", js.Any.fromFunction1(value))
+      inline def setActionItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ActionItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "actionItemSelected", js.Any.fromFunction1(value))
       
       inline def setActionItemSelectedUndefined: Self = StObject.set(x, "actionItemSelected", js.undefined)
       
@@ -1882,7 +2103,9 @@ object sapUiUx3FeedChunkMod {
       
       inline def setActionMenuItemsVarargs(value: typings.openui5.sapUiCommonsMenuItemMod.default*): Self = StObject.set(x, "actionMenuItems", js.Array(value*))
       
-      inline def setCommentAdded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "commentAdded", js.Any.fromFunction1(value))
+      inline def setCommentAdded(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$CommentAddedEventParameters] => Unit
+      ): Self = StObject.set(x, "commentAdded", js.Any.fromFunction1(value))
       
       inline def setCommentAddedUndefined: Self = StObject.set(x, "commentAdded", js.undefined)
       
@@ -1898,7 +2121,7 @@ object sapUiUx3FeedChunkMod {
       
       inline def setCommentsVarargs(value: FeedChunk*): Self = StObject.set(x, "comments", js.Array(value*))
       
-      inline def setDeleted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "deleted", js.Any.fromFunction1(value))
+      inline def setDeleted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "deleted", js.Any.fromFunction1(value))
       
       inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
       
@@ -1942,17 +2165,19 @@ object sapUiUx3FeedChunkMod {
       
       inline def setFlaggedUndefined: Self = StObject.set(x, "flagged", js.undefined)
       
-      inline def setInspect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
+      inline def setInspect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
       
       inline def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
       
-      inline def setReferenceClicked(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "referenceClicked", js.Any.fromFunction1(value))
+      inline def setReferenceClicked(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ReferenceClickedEventParameters] => Unit
+      ): Self = StObject.set(x, "referenceClicked", js.Any.fromFunction1(value))
       
       inline def setReferenceClickedUndefined: Self = StObject.set(x, "referenceClicked", js.undefined)
       
       inline def setSender(value: String | PropertyBindingInfo): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      inline def setSenderClicked(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "senderClicked", js.Any.fromFunction1(value))
+      inline def setSenderClicked(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "senderClicked", js.Any.fromFunction1(value))
       
       inline def setSenderClickedUndefined: Self = StObject.set(x, "senderClicked", js.undefined)
       
@@ -1974,17 +2199,35 @@ object sapUiUx3FeedChunkMod {
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      inline def setToggleFavorite(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleFavorite", js.Any.fromFunction1(value))
+      inline def setToggleFavorite(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFavoriteEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleFavorite", js.Any.fromFunction1(value))
       
       inline def setToggleFavoriteUndefined: Self = StObject.set(x, "toggleFavorite", js.undefined)
       
-      inline def setToggleFlagged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleFlagged", js.Any.fromFunction1(value))
+      inline def setToggleFlagged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFlaggedEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleFlagged", js.Any.fromFunction1(value))
       
       inline def setToggleFlaggedUndefined: Self = StObject.set(x, "toggleFlagged", js.undefined)
       
-      inline def setToggleShared(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleShared", js.Any.fromFunction1(value))
+      inline def setToggleShared(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleSharedEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleShared", js.Any.fromFunction1(value))
       
       inline def setToggleSharedUndefined: Self = StObject.set(x, "toggleShared", js.undefined)
     }
   }
+  
+  type FeedChunkToggleFavoriteEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFavoriteEventParameters]
+  
+  type FeedChunkToggleFavoriteEventParameters = FeedChunk$ToggleFavoriteEventParameters
+  
+  type FeedChunkToggleFlaggedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleFlaggedEventParameters]
+  
+  type FeedChunkToggleFlaggedEventParameters = FeedChunk$ToggleFlaggedEventParameters
+  
+  type FeedChunkToggleSharedEvent = typings.openui5.sapUiBaseEventMod.default[FeedChunk$ToggleSharedEventParameters]
+  
+  type FeedChunkToggleSharedEventParameters = FeedChunk$ToggleSharedEventParameters
 }

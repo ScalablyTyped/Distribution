@@ -14,16 +14,15 @@ object sapUiCoreMvcTemplateViewMod {
   /**
     * Constructor for a new mvc/TemplateView.
     *
-    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link
-    * sap.ui.templateview} or {@link sap.ui.core.mvc.View.create View.create} with type {@link sap.ui.core.mvc.ViewType.Template
-    * Template}.
+    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link sap.ui.templateview }
+    * or {@link sap.ui.core.mvc.View.create View.create} with type {@link sap.ui.core.mvc.ViewType.Template Template}.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor
-    * sap.ui.core.mvc.View} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor sap.ui.core.mvc.View }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiCoreMvcViewMod.default {

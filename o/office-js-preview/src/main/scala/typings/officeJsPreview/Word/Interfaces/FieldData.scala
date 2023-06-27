@@ -13,19 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldData extends StObject {
   
   /**
-    * Gets or sets the field's code instruction.
+    * Specifies the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
+    *
+    * Note: The ability to set the code was introduced in WordApi 1.5.
     */
   var code: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var data: js.UndefOr[String] = js.undefined
   
@@ -33,17 +34,15 @@ trait FieldData extends StObject {
     * Gets the field's kind.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var kind: js.UndefOr[FieldKind | None | Hot | Warm | Cold] = js.undefined
   
   /**
-    * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+    * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var locked: js.UndefOr[Boolean] = js.undefined
   
@@ -56,7 +55,7 @@ trait FieldData extends StObject {
   var result: js.UndefOr[RangeData] = js.undefined
   
   /**
-    * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -68,8 +67,7 @@ trait FieldData extends StObject {
     * Gets the field's type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var `type`: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92, starting with typings.officeJsPreview.Word.FieldType, typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock */ Any

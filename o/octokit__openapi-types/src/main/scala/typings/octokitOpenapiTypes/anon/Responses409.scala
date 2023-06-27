@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses409 extends StObject {
   
-  var parameters: `47`
+  var parameters: `55`
   
   var requestBody: js.UndefOr[ContentApplicationjsonAdvancedsecurityenabledfornewrepositories] = js.undefined
   
@@ -14,7 +14,7 @@ trait Responses409 extends StObject {
 }
 object Responses409 {
   
-  inline def apply(parameters: `47`, responses: `409`): Responses409 = {
+  inline def apply(parameters: `55`, responses: `409`): Responses409 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses409]
   }
@@ -22,7 +22,7 @@ object Responses409 {
   @scala.inline
   implicit open class MutableBuilder[Self <: Responses409] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `47`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `55`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAdvancedsecurityenabledfornewrepositories): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

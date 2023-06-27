@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.UI")
 @js.native
 /**
-  * This class provides a simple interface for [adding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add), [moving](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move) and [removing](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#remove) components from a view's user interface (UI).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html)
-  */
+		 * This class provides a simple interface for [adding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add), [moving](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move) and [removing](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#remove) components from a view's user interface (UI).
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html)
+		 */
 open class UI ()
   extends StObject
      with typings.arcgisJsApi.esri.UI {

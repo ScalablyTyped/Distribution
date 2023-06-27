@@ -14,7 +14,6 @@ NOTE: Rewritten from type alias:
 type ReactNodeArray = std.ReadonlyArray<react.react.ReactNode>
 }}}
 to avoid circular code involving: 
-- react.react.ReactFragment
 - react.react.ReactNode
 - react.react.ReactNodeArray
 */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for codemirror__language
 
-Typings are for version 6.2.1
+Typings are for version 6.7.0
 
 ## Library description:
 Language support infrastructure for the CodeMirror code editor

@@ -122,7 +122,7 @@ object sapMP13nColumnsItemMod {
     extends typings.openui5.sapUiCoreItemMod.default {
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getColumnKey columnKey}.
       *
@@ -133,7 +133,7 @@ object sapMP13nColumnsItemMod {
     def getColumnKey(): String = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getIndex index}.
       *
@@ -144,7 +144,7 @@ object sapMP13nColumnsItemMod {
     def getIndex(): int = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getTotal total}.
       *
@@ -155,7 +155,7 @@ object sapMP13nColumnsItemMod {
     def getTotal(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getVisible visible}.
       *
@@ -166,7 +166,7 @@ object sapMP13nColumnsItemMod {
     def getVisible(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -177,7 +177,7 @@ object sapMP13nColumnsItemMod {
     def getWidth(): String = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getColumnKey columnKey}.
       *
@@ -193,7 +193,7 @@ object sapMP13nColumnsItemMod {
     sColumnKey: String): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getIndex index}.
       *
@@ -209,7 +209,7 @@ object sapMP13nColumnsItemMod {
     iIndex: int): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getTotal total}.
       *
@@ -225,7 +225,7 @@ object sapMP13nColumnsItemMod {
     bTotal: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getVisible visible}.
       *
@@ -241,7 +241,7 @@ object sapMP13nColumnsItemMod {
     bVisible: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -262,21 +262,21 @@ object sapMP13nColumnsItemMod {
        with ItemSettings {
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * This property contains the unique table column key
       */
     var columnKey: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * This property contains the index of a table column
       */
     var index: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * This property contains the total flag of a table column.
       */
@@ -285,7 +285,7 @@ object sapMP13nColumnsItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * This property decides whether a `P13nColumnsItem` is visible
       */
@@ -294,7 +294,7 @@ object sapMP13nColumnsItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * This property contains the with of a table column.
       */

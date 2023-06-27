@@ -168,8 +168,8 @@ object sapMPlanningCalendarLegendMod {
     def getItemsHeader(): String = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarLegendItem` in the aggregation {@link #getAppointmentItems
-      * appointmentItems}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarLegendItem` in the aggregation {@link #getAppointmentItems appointmentItems}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */

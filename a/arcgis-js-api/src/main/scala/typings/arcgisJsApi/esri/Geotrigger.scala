@@ -12,9 +12,9 @@ trait Geotrigger
      with JSONSupport {
   
   /**
-    * String indicating the Geotrigger condition type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-Geotrigger.html#type)
-    */
+  		 * String indicating the Geotrigger condition type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-Geotrigger.html#type)
+  		 */
   val `type`: fence = js.native
 }

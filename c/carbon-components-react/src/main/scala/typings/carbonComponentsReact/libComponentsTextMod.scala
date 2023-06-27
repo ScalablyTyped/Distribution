@@ -140,6 +140,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -485,6 +486,8 @@ object libComponentsTextMod {
   inline def Text_samp(props: TextIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Text_script(props: TextIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def Text_search(props: TextIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Text_section(props: TextIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Text")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

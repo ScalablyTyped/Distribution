@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ClearButtonPressedItemsBinding
-import typings.openui5.anon.ItemsBinding
-import typings.openui5.anon.SelectedContextsSelectedItem
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.TitleAlignment
 import typings.openui5.sapMSelectDialogBaseMod.SelectDialogBaseSettings
@@ -167,13 +164,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -198,7 +195,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -209,7 +206,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -231,13 +228,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -263,7 +260,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
@@ -274,7 +271,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -295,13 +292,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -326,7 +323,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -337,7 +334,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -358,13 +355,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -389,7 +386,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -400,7 +397,7 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.TableSelectDialog` itself
       */
@@ -458,13 +455,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -482,13 +479,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit]
     ): this.type = js.native
     def detachConfirm(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogConfirmEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -506,13 +503,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -530,13 +527,13 @@ object sapMTableSelectDialogMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TableSelectDialogSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -544,7 +541,7 @@ object sapMTableSelectDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -557,43 +554,49 @@ object sapMTableSelectDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireConfirm(): this.type = js.native
-    def fireConfirm(/**
+    def fireConfirm(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedContextsSelectedItem): this.type = js.native
+    mParameters: TableSelectDialog$ConfirmEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemsBinding): this.type = js.native
+    mParameters: TableSelectDialog$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearch(): this.type = js.native
-    def fireSearch(/**
+    def fireSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ClearButtonPressedItemsBinding): this.type = js.native
+    mParameters: TableSelectDialog$SearchEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getColumns columns}.
@@ -603,7 +606,7 @@ object sapMTableSelectDialogMod {
     def getColumns(): js.Array[typings.openui5.sapMColumnMod.default] = js.native
     
     /**
-      * @SINCE 1.68
+      * @since 1.68
       *
       * Gets current value of property {@link #getConfirmButtonText confirmButtonText}.
       *
@@ -629,7 +632,7 @@ object sapMTableSelectDialogMod {
     def getContentWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Gets current value of property {@link #getDraggable draggable}.
       *
@@ -643,7 +646,7 @@ object sapMTableSelectDialogMod {
     def getDraggable(): Boolean = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getGrowing growing}.
       *
@@ -697,7 +700,7 @@ object sapMTableSelectDialogMod {
     def getNoDataText(): String = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Gets current value of property {@link #getRememberSelections rememberSelections}.
       *
@@ -713,7 +716,7 @@ object sapMTableSelectDialogMod {
     def getRememberSelections(): Boolean = js.native
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Gets current value of property {@link #getResizable resizable}.
       *
@@ -734,7 +737,7 @@ object sapMTableSelectDialogMod {
     def getSearchPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getShowClearButton showClearButton}.
       *
@@ -768,7 +771,7 @@ object sapMTableSelectDialogMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -850,7 +853,7 @@ object sapMTableSelectDialogMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Shows the busy state and is called after the renderer is finished.
       *
@@ -1007,7 +1010,7 @@ object sapMTableSelectDialogMod {
     sNoDataText: String): Unit = js.native
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Sets a new value for property {@link #getRememberSelections rememberSelections}.
       *
@@ -1069,7 +1072,7 @@ object sapMTableSelectDialogMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1110,6 +1113,148 @@ object sapMTableSelectDialogMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait TableSelectDialog$CancelEventParameters extends StObject
+  
+  trait TableSelectDialog$ConfirmEventParameters extends StObject {
+    
+    /**
+      * Returns the binding contexts of the selected items including the non-visible items, but excluding the
+      * not loaded items. Note: In contrast to the parameter "selectedItems", this parameter includes the selected
+      * but NOT visible items (due to list filtering). An empty array is set for this parameter if no Databinding
+      * is used. NOTE: When the list binding is pre-filtered and there are items in the selection that are not
+      * visible upon opening the dialog, these contexts are not loaded. Therefore, these items will not be included
+      * in the selectedContexts array unless they are displayed at least once.
+      */
+    var selectedContexts: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Returns the selected list item. When no item is selected, "null" is returned. When multi-selection is
+      * enabled and multiple items are selected, only the first selected item is returned.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapMStandardListItemMod.default] = js.undefined
+    
+    /**
+      * Returns an array containing the visible selected list items. If no items are selected, an empty array
+      * is returned.
+      */
+    var selectedItems: js.UndefOr[js.Array[typings.openui5.sapMStandardListItemMod.default]] = js.undefined
+  }
+  object TableSelectDialog$ConfirmEventParameters {
+    
+    inline def apply(): TableSelectDialog$ConfirmEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableSelectDialog$ConfirmEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSelectDialog$ConfirmEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedContexts(value: String): Self = StObject.set(x, "selectedContexts", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedContextsUndefined: Self = StObject.set(x, "selectedContexts", js.undefined)
+      
+      inline def setSelectedItem(value: typings.openui5.sapMStandardListItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+      
+      inline def setSelectedItems(value: js.Array[typings.openui5.sapMStandardListItemMod.default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: typings.openui5.sapMStandardListItemMod.default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  trait TableSelectDialog$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The Items binding of the Table Select Dialog. Only available if the items aggregation is bound to a model.
+      */
+    var itemsBinding: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Specifies the value entered in the search field.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object TableSelectDialog$LiveChangeEventParameters {
+    
+    inline def apply(): TableSelectDialog$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableSelectDialog$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSelectDialog$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItemsBinding(value: Any): Self = StObject.set(x, "itemsBinding", value.asInstanceOf[js.Any])
+      
+      inline def setItemsBindingUndefined: Self = StObject.set(x, "itemsBinding", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait TableSelectDialog$SearchEventParameters extends StObject {
+    
+    /**
+      * Returns if the Clear button is pressed.
+      */
+    var clearButtonPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines the Items binding of the Table Select Dialog. Only available if the items aggregation is bound
+      * to a model.
+      */
+    var itemsBinding: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Specifies the value entered in the search field.
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object TableSelectDialog$SearchEventParameters {
+    
+    inline def apply(): TableSelectDialog$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TableSelectDialog$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSelectDialog$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setClearButtonPressed(value: Boolean): Self = StObject.set(x, "clearButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setClearButtonPressedUndefined: Self = StObject.set(x, "clearButtonPressed", js.undefined)
+      
+      inline def setItemsBinding(value: Any): Self = StObject.set(x, "itemsBinding", value.asInstanceOf[js.Any])
+      
+      inline def setItemsBindingUndefined: Self = StObject.set(x, "itemsBinding", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type TableSelectDialogCancelEvent = typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$CancelEventParameters]
+  
+  type TableSelectDialogCancelEventParameters = TableSelectDialog$CancelEventParameters
+  
+  type TableSelectDialogConfirmEvent = typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$ConfirmEventParameters]
+  
+  type TableSelectDialogConfirmEventParameters = TableSelectDialog$ConfirmEventParameters
+  
+  type TableSelectDialogLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$LiveChangeEventParameters]
+  
+  type TableSelectDialogLiveChangeEventParameters = TableSelectDialog$LiveChangeEventParameters
+  
+  type TableSelectDialogSearchEvent = typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$SearchEventParameters]
+  
+  type TableSelectDialogSearchEventParameters = TableSelectDialog$SearchEventParameters
+  
   trait TableSelectDialogSettings
     extends StObject
        with SelectDialogBaseSettings {
@@ -1117,7 +1262,9 @@ object sapMTableSelectDialogMod {
     /**
       * Fires when the Cancel button is clicked.
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * The columns bindings.
@@ -1130,10 +1277,15 @@ object sapMTableSelectDialogMod {
       * Fires when the dialog is confirmed by selecting an item in single-selection mode or by pressing the confirmation
       * button in multi-selection mode. The items being selected are returned as event parameters.
       */
-    var confirm: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var confirm: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$ConfirmEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.68
+      * @since 1.68
       *
       * Overwrites the default text for the confirmation button. Note: This property applies only when the property
       * `multiSelect` is set to `true`.
@@ -1148,7 +1300,7 @@ object sapMTableSelectDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Determines the content width of the inner dialog. For more information, see the Dialog documentation.
       */
@@ -1157,7 +1309,7 @@ object sapMTableSelectDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * When set to `true`, the TableSelectDialog is draggable by its header. The default value is `false`. **Note**:
       * The TableSelectDialog can be draggable only in desktop mode.
@@ -1167,7 +1319,7 @@ object sapMTableSelectDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Determines the progressive loading. When set to `true`, enables the growing feature of the control to
       * load more items by requesting from the bound model. **Note:** This feature only works when an `items`
@@ -1197,7 +1349,12 @@ object sapMTableSelectDialogMod {
     /**
       * Fires when the value of the search field is changed by a user (for example at each key press).
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Enables the user to select several options from the table.
@@ -1212,7 +1369,7 @@ object sapMTableSelectDialogMod {
     var noDataText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.18
+      * @since 1.18
       *
       * Controls whether the dialog clears the selection or not. When the dialog is opened multiple times in
       * the same context to allow for corrections of previous user inputs, set this flag to `true`. When the
@@ -1224,7 +1381,7 @@ object sapMTableSelectDialogMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * When set to `true`, the TableSelectDialog will have a resize handler in its bottom right corner. The
       * default value is `false`. **Note**: The TableSelectDialog can be resizable only in desktop mode.
@@ -1236,10 +1393,15 @@ object sapMTableSelectDialogMod {
     /**
       * Fires when the search button has been clicked on dialog.
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.110
+      * @since 1.110
       *
       * Allows overriding the SearchField's default placeholder text. If not set, the word "Search" in the current
       * local language or English will be used as a placeholder.
@@ -1247,7 +1409,7 @@ object sapMTableSelectDialogMod {
     var searchPlaceholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * This flag controls whether the Clear button is shown. When set to `true`, it provides a way to clear
       * a selection made in Table Select Dialog.
@@ -1273,7 +1435,7 @@ object sapMTableSelectDialogMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.Auto`, the Title will be aligned
       * as it is set in the theme (if not set, the default value is `center`); Other possible values are `TitleAlignment.Start`
@@ -1293,7 +1455,7 @@ object sapMTableSelectDialogMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TableSelectDialogSettings] (val x: Self) extends AnyVal {
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
@@ -1305,7 +1467,9 @@ object sapMTableSelectDialogMod {
       
       inline def setColumnsVarargs(value: typings.openui5.sapMColumnMod.default*): Self = StObject.set(x, "columns", js.Array(value*))
       
-      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+      inline def setConfirm(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$ConfirmEventParameters] => Unit
+      ): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
       
       inline def setConfirmButtonText(value: String | PropertyBindingInfo): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
       
@@ -1341,7 +1505,9 @@ object sapMTableSelectDialogMod {
       
       inline def setItemsVarargs(value: typings.openui5.sapMColumnListItemMod.default*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       
@@ -1361,7 +1527,9 @@ object sapMTableSelectDialogMod {
       
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TableSelectDialog$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchPlaceholder(value: String | PropertyBindingInfo): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
       

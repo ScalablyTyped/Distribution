@@ -4,17 +4,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse)
+  */
 trait AuthenticatorAssertionResponse
   extends StObject
      with AuthenticatorResponse {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/authenticatorData) */
   /* standard dom */
   val authenticatorData: js.typedarray.ArrayBuffer
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/signature) */
   /* standard dom */
   val signature: js.typedarray.ArrayBuffer
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse/userHandle) */
   /* standard dom */
   val userHandle: js.typedarray.ArrayBuffer | Null
 }

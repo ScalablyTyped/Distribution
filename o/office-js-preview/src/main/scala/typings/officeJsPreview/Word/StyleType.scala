@@ -10,8 +10,7 @@ sealed trait StyleType extends StObject
   * Represents the type of style.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.StyleType")
 @js.native
@@ -20,8 +19,7 @@ object StyleType extends StObject {
   /**
     * Represents that the style is a character style.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait character
@@ -31,8 +29,7 @@ object StyleType extends StObject {
   /**
     * Represents that the style is a list style. Currently supported on desktop.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait list
@@ -42,8 +39,7 @@ object StyleType extends StObject {
   /**
     * Represents that the style is a paragraph style.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait paragraph
@@ -53,8 +49,7 @@ object StyleType extends StObject {
   /**
     * Represents that the style is a table style.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait table

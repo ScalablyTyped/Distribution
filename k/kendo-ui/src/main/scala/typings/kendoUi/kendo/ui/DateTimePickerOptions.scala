@@ -1,5 +1,7 @@
 package typings.kendoUi.kendo.ui
 
+import typings.kendoUi.kendoUiStrings.auto
+import typings.kendoUi.kendoUiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +11,8 @@ trait DateTimePickerOptions
      with AllEditorOptions {
   
   var ARIATemplate: js.UndefOr[String] = js.undefined
+  
+  var adaptiveMode: js.UndefOr[none | auto] = js.undefined
   
   var animation: js.UndefOr[Boolean | DateTimePickerAnimation] = js.undefined
   
@@ -25,6 +29,8 @@ trait DateTimePickerOptions
   var depth: js.UndefOr[String] = js.undefined
   
   var disableDates: js.UndefOr[Any | js.Function] = js.undefined
+  
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   var fillMode: js.UndefOr[String] = js.undefined
   
@@ -56,6 +62,8 @@ trait DateTimePickerOptions
   
   var start: js.UndefOr[String] = js.undefined
   
+  var startTime: js.UndefOr[js.Date] = js.undefined
+  
   var timeFormat: js.UndefOr[String] = js.undefined
   
   var value: js.UndefOr[js.Date] = js.undefined
@@ -75,6 +83,10 @@ object DateTimePickerOptions {
     inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
     
     inline def setARIATemplateUndefined: Self = StObject.set(x, "ARIATemplate", js.undefined)
+    
+    inline def setAdaptiveMode(value: none | auto): Self = StObject.set(x, "adaptiveMode", value.asInstanceOf[js.Any])
+    
+    inline def setAdaptiveModeUndefined: Self = StObject.set(x, "adaptiveMode", js.undefined)
     
     inline def setAnimation(value: Boolean | DateTimePickerAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
@@ -107,6 +119,10 @@ object DateTimePickerOptions {
     inline def setDisableDates(value: Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
     
     inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
     
@@ -165,6 +181,10 @@ object DateTimePickerOptions {
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

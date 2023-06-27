@@ -59,8 +59,8 @@ object google {
         
         /**
           * Opens the infobubble
-          * @map The google map object
-          * @marker The marker used for anchoring the infobubble to
+          * @param map The google map object
+          * @param marker The marker used for anchoring the infobubble to
           */
         def open(map: Map, marker: Marker_): Unit
       }

@@ -167,13 +167,13 @@ object sapUiWebcMainButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Button` itself
       */
@@ -200,7 +200,7 @@ object sapUiWebcMainButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -211,7 +211,7 @@ object sapUiWebcMainButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Button` itself
       */
@@ -229,13 +229,13 @@ object sapUiWebcMainButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -243,7 +243,7 @@ object sapUiWebcMainButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -265,18 +265,18 @@ object sapUiWebcMainButtonMod {
       *
       *
       * 	 - `expanded`: Indicates whether the button, or another grouping element it controls, is currently expanded
-      * 			or collapsed. Accepts the following string values:
+      *     or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the button. Accepts the following string values:
+      *     that can be triggered by the button. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
       * 	 - `Menu`
       * 	 - `Tree`
       * 	 - `controls`: Identifies the element (or elements) whose contents or presence are controlled by the
-      * 			button element. Accepts a string value.
+      *     button element. Accepts a string value.
       *
       * Default value is `{}`.
       *
@@ -294,8 +294,7 @@ object sapUiWebcMainButtonMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -342,8 +341,7 @@ object sapUiWebcMainButtonMod {
       *
       *  Example:
       *
-      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon
-      * Explorer}.
+      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * Default value is `empty string`.
       *
@@ -440,18 +438,18 @@ object sapUiWebcMainButtonMod {
       *
       *
       * 	 - `expanded`: Indicates whether the button, or another grouping element it controls, is currently expanded
-      * 			or collapsed. Accepts the following string values:
+      *     or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the button. Accepts the following string values:
+      *     that can be triggered by the button. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
       * 	 - `Menu`
       * 	 - `Tree`
       * 	 - `controls`: Identifies the element (or elements) whose contents or presence are controlled by the
-      * 			button element. Accepts a string value.
+      *     button element. Accepts a string value.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -540,8 +538,7 @@ object sapUiWebcMainButtonMod {
       *
       *  Example:
       *
-      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon
-      * Explorer}.
+      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -643,6 +640,12 @@ object sapUiWebcMainButtonMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Button$ClickEventParameters extends StObject
+  
+  type ButtonClickEvent = typings.openui5.sapUiBaseEventMod.default[Button$ClickEventParameters]
+  
+  type ButtonClickEventParameters = Button$ClickEventParameters
+  
   trait ButtonSettings
     extends StObject
        with ControlSettings {
@@ -655,18 +658,18 @@ object sapUiWebcMainButtonMod {
       *
       *
       * 	 - `expanded`: Indicates whether the button, or another grouping element it controls, is currently expanded
-      * 			or collapsed. Accepts the following string values:
+      *     or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the button. Accepts the following string values:
+      *     that can be triggered by the button. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
       * 	 - `Menu`
       * 	 - `Tree`
       * 	 - `controls`: Identifies the element (or elements) whose contents or presence are controlled by the
-      * 			button element. Accepts a string value.
+      *     button element. Accepts a string value.
       */
     var accessibilityAttributes: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -687,7 +690,9 @@ object sapUiWebcMainButtonMod {
       *
       *  **Note:** The event will not be fired if the `disabled` property is set to `true`.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the component design.
@@ -722,8 +727,7 @@ object sapUiWebcMainButtonMod {
       *
       *  Example:
       *
-      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon
-      * Explorer}.
+      * See all the available icons within the {@link demo:sap/m/demokit/iconExplorer/webapp/index.html Icon Explorer}.
       */
     var icon: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
@@ -782,7 +786,7 @@ object sapUiWebcMainButtonMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       

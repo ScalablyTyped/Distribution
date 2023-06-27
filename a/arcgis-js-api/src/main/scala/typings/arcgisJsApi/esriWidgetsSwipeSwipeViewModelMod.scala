@@ -11,10 +11,10 @@ object esriWidgetsSwipeSwipeViewModelMod {
   @JSImport("esri/widgets/Swipe/SwipeViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Swipe](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html)
-    */
+  		 * Provides the logic for the [Swipe](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SwipeViewModel {

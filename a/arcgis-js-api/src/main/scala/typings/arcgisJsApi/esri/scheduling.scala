@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Various utilities and convenience functions for executing code at various phases of browser frames.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html)
-  */
+	 * Various utilities and convenience functions for executing code at various phases of browser frames.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html)
+	 */
 trait scheduling extends StObject {
   
   /**
-    * Registers a frame task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#addFrameTask)
-    */
+  		 * Registers a frame task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#addFrameTask)
+  		 */
   def addFrameTask(phases: PhaseCallbacks): FrameTaskHandle
   
   /**
-    * Schedules the execution of a `callback` function at the next web browser tick.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#schedule)
-    */
+  		 * Schedules the execution of a `callback` function at the next web browser tick.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#schedule)
+  		 */
   def schedule(callback: js.Function): Any
 }
 object scheduling {

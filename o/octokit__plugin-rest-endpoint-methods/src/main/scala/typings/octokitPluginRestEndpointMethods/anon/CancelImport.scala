@@ -37,7 +37,7 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("cancelImport")
-  var cancelImport_Original: `387`
+  var cancelImport_Original: `389`
   
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/migrations/users#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/migrations/users#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
@@ -57,7 +57,7 @@ trait CancelImport extends StObject {
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://docs.github.com/rest/migrations/users#list-user-migrations) and [Get a user migration status](https://docs.github.com/rest/migrations/users#get-a-user-migration-status) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
-  var deleteArchiveForAuthenticatedUser_Original: `388`
+  var deleteArchiveForAuthenticatedUser_Original: `390`
   
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
@@ -77,7 +77,7 @@ trait CancelImport extends StObject {
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   @JSName("deleteArchiveForOrg")
-  var deleteArchiveForOrg_Original: `389`
+  var deleteArchiveForOrg_Original: `391`
   
   /**
     * Fetches the URL to a migration archive.
@@ -97,7 +97,7 @@ trait CancelImport extends StObject {
     * Fetches the URL to a migration archive.
     */
   @JSName("downloadArchiveForOrg")
-  var downloadArchiveForOrg_Original: `390`
+  var downloadArchiveForOrg_Original: `392`
   
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
@@ -157,7 +157,7 @@ trait CancelImport extends StObject {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   @JSName("getArchiveForAuthenticatedUser")
-  var getArchiveForAuthenticatedUser_Original: `391`
+  var getArchiveForAuthenticatedUser_Original: `393`
   
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
@@ -189,7 +189,7 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("getCommitAuthors")
-  var getCommitAuthors_Original: `392`
+  var getCommitAuthors_Original: `394`
   
   /**
     * View the progress of an import.
@@ -283,7 +283,7 @@ trait CancelImport extends StObject {
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
   @JSName("getImportStatus")
-  var getImportStatus_Original: `393`
+  var getImportStatus_Original: `395`
   
   /**
     * List files larger than 100MB found during the import
@@ -311,7 +311,7 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("getLargeFiles")
-  var getLargeFiles_Original: `394`
+  var getLargeFiles_Original: `396`
   
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
@@ -345,7 +345,7 @@ trait CancelImport extends StObject {
     * Once the migration has been `exported` you can [download the migration archive](https://docs.github.com/rest/migrations/users#download-a-user-migration-archive).
     */
   @JSName("getStatusForAuthenticatedUser")
-  var getStatusForAuthenticatedUser_Original: `395`
+  var getStatusForAuthenticatedUser_Original: `397`
   
   /**
     * Fetches the status of a migration.
@@ -379,7 +379,7 @@ trait CancelImport extends StObject {
     * *   `failed`, which means the migration failed.
     */
   @JSName("getStatusForOrg")
-  var getStatusForOrg_Original: `396`
+  var getStatusForOrg_Original: `398`
   
   /**
     * Lists all migrations a user has started.
@@ -399,7 +399,7 @@ trait CancelImport extends StObject {
     * Lists all migrations a user has started.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `397`
+  var listForAuthenticatedUser_Original: `399`
   
   /**
     * Lists the most recent migrations, including both exports (which can be started through the REST API) and imports (which cannot be started using the REST API).
@@ -423,7 +423,7 @@ trait CancelImport extends StObject {
     * A list of `repositories` is only returned for export migrations.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `398`
+  var listForOrg_Original: `400`
   
   /**
     * Lists all the repositories for this user migration.
@@ -443,7 +443,7 @@ trait CancelImport extends StObject {
     * Lists all the repositories for this user migration.
     */
   @JSName("listReposForAuthenticatedUser")
-  var listReposForAuthenticatedUser_Original: `399`
+  var listReposForAuthenticatedUser_Original: `401`
   
   /**
     * List all the repositories for this organization migration.
@@ -463,7 +463,7 @@ trait CancelImport extends StObject {
     * List all the repositories for this organization migration.
     */
   @JSName("listReposForOrg")
-  var listReposForOrg_Original: `400`
+  var listReposForOrg_Original: `402`
   
   /**
     * Lists all the repositories for this user migration.
@@ -485,7 +485,7 @@ trait CancelImport extends StObject {
     * @deprecated octokit.rest.migrations.listReposForUser() has been renamed to octokit.rest.migrations.listReposForAuthenticatedUser() (2021-10-05)
     */
   @JSName("listReposForUser")
-  var listReposForUser_Original: `399`
+  var listReposForUser_Original: `401`
   
   /**
     * Update an author's identity for the import. Your application can continue updating authors any time before you push
@@ -515,7 +515,7 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("mapCommitAuthor")
-  var mapCommitAuthor_Original: `401`
+  var mapCommitAuthor_Original: `403`
   
   /**
     * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability
@@ -551,7 +551,7 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("setLfsPreference")
-  var setLfsPreference_Original: `402`
+  var setLfsPreference_Original: `404`
   
   /**
     * Initiates the generation of a user migration archive.
@@ -571,7 +571,7 @@ trait CancelImport extends StObject {
     * Initiates the generation of a user migration archive.
     */
   @JSName("startForAuthenticatedUser")
-  var startForAuthenticatedUser_Original: `403`
+  var startForAuthenticatedUser_Original: `405`
   
   /**
     * Initiates the generation of a migration archive.
@@ -591,7 +591,7 @@ trait CancelImport extends StObject {
     * Initiates the generation of a migration archive.
     */
   @JSName("startForOrg")
-  var startForOrg_Original: `404`
+  var startForOrg_Original: `406`
   
   /**
     * Start a source import to a GitHub repository using GitHub Importer. Importing into a GitHub repository with GitHub Actions enabled is not supported and will return a status `422 Unprocessable Entity` response.
@@ -613,7 +613,7 @@ trait CancelImport extends StObject {
     * **Warning:** Support for importing Mercurial, Subversion and Team Foundation Version Control repositories will end on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("startImport")
-  var startImport_Original: `405`
+  var startImport_Original: `407`
   
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/migrations/users#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/repos/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
@@ -633,7 +633,7 @@ trait CancelImport extends StObject {
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://docs.github.com/rest/migrations/users#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://docs.github.com/rest/repos/repos#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
-  var unlockRepoForAuthenticatedUser_Original: `406`
+  var unlockRepoForAuthenticatedUser_Original: `408`
   
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/repos/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
@@ -653,7 +653,7 @@ trait CancelImport extends StObject {
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://docs.github.com/rest/repos/repos#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   @JSName("unlockRepoForOrg")
-  var unlockRepoForOrg_Original: `407`
+  var unlockRepoForOrg_Original: `409`
   
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API
@@ -691,34 +691,34 @@ trait CancelImport extends StObject {
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
   @JSName("updateImport")
-  var updateImport_Original: `408`
+  var updateImport_Original: `410`
 }
 object CancelImport {
   
   inline def apply(
-    cancelImport: `387`,
-    deleteArchiveForAuthenticatedUser: `388`,
-    deleteArchiveForOrg: `389`,
-    downloadArchiveForOrg: `390`,
-    getArchiveForAuthenticatedUser: `391`,
-    getCommitAuthors: `392`,
-    getImportStatus: `393`,
-    getLargeFiles: `394`,
-    getStatusForAuthenticatedUser: `395`,
-    getStatusForOrg: `396`,
-    listForAuthenticatedUser: `397`,
-    listForOrg: `398`,
-    listReposForAuthenticatedUser: `399`,
-    listReposForOrg: `400`,
-    listReposForUser: `399`,
-    mapCommitAuthor: `401`,
-    setLfsPreference: `402`,
-    startForAuthenticatedUser: `403`,
-    startForOrg: `404`,
-    startImport: `405`,
-    unlockRepoForAuthenticatedUser: `406`,
-    unlockRepoForOrg: `407`,
-    updateImport: `408`
+    cancelImport: `389`,
+    deleteArchiveForAuthenticatedUser: `390`,
+    deleteArchiveForOrg: `391`,
+    downloadArchiveForOrg: `392`,
+    getArchiveForAuthenticatedUser: `393`,
+    getCommitAuthors: `394`,
+    getImportStatus: `395`,
+    getLargeFiles: `396`,
+    getStatusForAuthenticatedUser: `397`,
+    getStatusForOrg: `398`,
+    listForAuthenticatedUser: `399`,
+    listForOrg: `400`,
+    listReposForAuthenticatedUser: `401`,
+    listReposForOrg: `402`,
+    listReposForUser: `401`,
+    mapCommitAuthor: `403`,
+    setLfsPreference: `404`,
+    startForAuthenticatedUser: `405`,
+    startForOrg: `406`,
+    startImport: `407`,
+    unlockRepoForAuthenticatedUser: `408`,
+    unlockRepoForOrg: `409`,
+    updateImport: `410`
   ): CancelImport = {
     val __obj = js.Dynamic.literal(cancelImport = cancelImport.asInstanceOf[js.Any], deleteArchiveForAuthenticatedUser = deleteArchiveForAuthenticatedUser.asInstanceOf[js.Any], deleteArchiveForOrg = deleteArchiveForOrg.asInstanceOf[js.Any], downloadArchiveForOrg = downloadArchiveForOrg.asInstanceOf[js.Any], getArchiveForAuthenticatedUser = getArchiveForAuthenticatedUser.asInstanceOf[js.Any], getCommitAuthors = getCommitAuthors.asInstanceOf[js.Any], getImportStatus = getImportStatus.asInstanceOf[js.Any], getLargeFiles = getLargeFiles.asInstanceOf[js.Any], getStatusForAuthenticatedUser = getStatusForAuthenticatedUser.asInstanceOf[js.Any], getStatusForOrg = getStatusForOrg.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listReposForAuthenticatedUser = listReposForAuthenticatedUser.asInstanceOf[js.Any], listReposForOrg = listReposForOrg.asInstanceOf[js.Any], listReposForUser = listReposForUser.asInstanceOf[js.Any], mapCommitAuthor = mapCommitAuthor.asInstanceOf[js.Any], setLfsPreference = setLfsPreference.asInstanceOf[js.Any], startForAuthenticatedUser = startForAuthenticatedUser.asInstanceOf[js.Any], startForOrg = startForOrg.asInstanceOf[js.Any], startImport = startImport.asInstanceOf[js.Any], unlockRepoForAuthenticatedUser = unlockRepoForAuthenticatedUser.asInstanceOf[js.Any], unlockRepoForOrg = unlockRepoForOrg.asInstanceOf[js.Any], updateImport = updateImport.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelImport]
@@ -727,50 +727,50 @@ object CancelImport {
   @scala.inline
   implicit open class MutableBuilder[Self <: CancelImport] (val x: Self) extends AnyVal {
     
-    inline def setCancelImport(value: `387`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
+    inline def setCancelImport(value: `389`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
     
-    inline def setDeleteArchiveForAuthenticatedUser(value: `388`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setDeleteArchiveForAuthenticatedUser(value: `390`): Self = StObject.set(x, "deleteArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteArchiveForOrg(value: `389`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
+    inline def setDeleteArchiveForOrg(value: `391`): Self = StObject.set(x, "deleteArchiveForOrg", value.asInstanceOf[js.Any])
     
-    inline def setDownloadArchiveForOrg(value: `390`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
+    inline def setDownloadArchiveForOrg(value: `392`): Self = StObject.set(x, "downloadArchiveForOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetArchiveForAuthenticatedUser(value: `391`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetArchiveForAuthenticatedUser(value: `393`): Self = StObject.set(x, "getArchiveForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitAuthors(value: `392`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
+    inline def setGetCommitAuthors(value: `394`): Self = StObject.set(x, "getCommitAuthors", value.asInstanceOf[js.Any])
     
-    inline def setGetImportStatus(value: `393`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
+    inline def setGetImportStatus(value: `395`): Self = StObject.set(x, "getImportStatus", value.asInstanceOf[js.Any])
     
-    inline def setGetLargeFiles(value: `394`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
+    inline def setGetLargeFiles(value: `396`): Self = StObject.set(x, "getLargeFiles", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusForAuthenticatedUser(value: `395`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetStatusForAuthenticatedUser(value: `397`): Self = StObject.set(x, "getStatusForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusForOrg(value: `396`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
+    inline def setGetStatusForOrg(value: `398`): Self = StObject.set(x, "getStatusForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `397`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `399`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `398`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `400`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposForAuthenticatedUser(value: `399`): Self = StObject.set(x, "listReposForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setListReposForAuthenticatedUser(value: `401`): Self = StObject.set(x, "listReposForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setListReposForOrg(value: `400`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
+    inline def setListReposForOrg(value: `402`): Self = StObject.set(x, "listReposForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListReposForUser(value: `399`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
+    inline def setListReposForUser(value: `401`): Self = StObject.set(x, "listReposForUser", value.asInstanceOf[js.Any])
     
-    inline def setMapCommitAuthor(value: `401`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
+    inline def setMapCommitAuthor(value: `403`): Self = StObject.set(x, "mapCommitAuthor", value.asInstanceOf[js.Any])
     
-    inline def setSetLfsPreference(value: `402`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
+    inline def setSetLfsPreference(value: `404`): Self = StObject.set(x, "setLfsPreference", value.asInstanceOf[js.Any])
     
-    inline def setStartForAuthenticatedUser(value: `403`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setStartForAuthenticatedUser(value: `405`): Self = StObject.set(x, "startForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setStartForOrg(value: `404`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
+    inline def setStartForOrg(value: `406`): Self = StObject.set(x, "startForOrg", value.asInstanceOf[js.Any])
     
-    inline def setStartImport(value: `405`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
+    inline def setStartImport(value: `407`): Self = StObject.set(x, "startImport", value.asInstanceOf[js.Any])
     
-    inline def setUnlockRepoForAuthenticatedUser(value: `406`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setUnlockRepoForAuthenticatedUser(value: `408`): Self = StObject.set(x, "unlockRepoForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUnlockRepoForOrg(value: `407`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
+    inline def setUnlockRepoForOrg(value: `409`): Self = StObject.set(x, "unlockRepoForOrg", value.asInstanceOf[js.Any])
     
-    inline def setUpdateImport(value: `408`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
+    inline def setUpdateImport(value: `410`): Self = StObject.set(x, "updateImport", value.asInstanceOf[js.Any])
   }
 }

@@ -1,48 +1,27 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.actions
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.composer
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.erlang
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.go
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maven
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.npm
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.nuget
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.other
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pip
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pub
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rubygems
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rust
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `444` extends StObject {
   
-  var ecosystem: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
-  
-  /** @description The unique package name within its ecosystem. */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
 }
 object `444` {
   
   inline def apply(
-    ecosystem: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
   ): `444` = {
-    val __obj = js.Dynamic.literal(ecosystem = ecosystem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[`444`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `444`] (val x: Self) extends AnyVal {
     
-    inline def setEcosystem(
-      value: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
-    ): Self = StObject.set(x, "ecosystem", value.asInstanceOf[js.Any])
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameNull: Self = StObject.set(x, "name", null)
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setUsername(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

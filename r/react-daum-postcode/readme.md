@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-daum-postcode
 
-Typings are for version 3.1.1
+Typings are for version 3.1.3
 
 ## Library description:
 Daum Postcode service for React

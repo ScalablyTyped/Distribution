@@ -18,7 +18,7 @@ object sapUiUtilXmlhelperMod extends Shortcut {
   val default: XMLHelper = js.native
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     *
     * Provides functionality for parsing XML formatted strings and serializing XML documents.
     */
@@ -42,8 +42,8 @@ object sapUiUtilXmlhelperMod extends Shortcut {
     
     /**
       * Parses the specified XML string into an XML document, using the native parsing functionality of the browser.
-      * If an error occurs during parsing, a {@link module:sap/base/util/XMLHelper.XMLParseErrorInfo parse error
-      * info object} is attached as the `parseError` property of the returned document.
+      * If an error occurs during parsing, a {@link module:sap/base/util/XMLHelper.XMLParseErrorInfo parse error info object }
+      * is attached as the `parseError` property of the returned document.
       *
       * @returns the parsed XML document with a `parseError` property as described in {@link #getParseError}.
       * An error occurred if the `errorCode` property of the `parseError` is not 0.

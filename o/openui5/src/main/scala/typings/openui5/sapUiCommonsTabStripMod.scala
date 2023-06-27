@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Index
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -150,13 +149,13 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TabStrip` itself
       */
@@ -181,7 +180,7 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -192,7 +191,7 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TabStrip` itself
       */
@@ -213,13 +212,13 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TabStrip` itself
       */
@@ -244,7 +243,7 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -255,7 +254,7 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TabStrip` itself
       */
@@ -308,13 +307,13 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -332,13 +331,13 @@ object sapUiCommonsTabStripMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TabStripSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -346,7 +345,7 @@ object sapUiCommonsTabStripMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -356,10 +355,10 @@ object sapUiCommonsTabStripMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: Index): this.type = js.native
+    mParameters: TabStrip$CloseEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -369,7 +368,7 @@ object sapUiCommonsTabStripMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: Index): this.type = js.native
+    mParameters: TabStrip$SelectEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnableTabReordering enableTabReordering}.
@@ -537,6 +536,60 @@ object sapUiCommonsTabStripMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait TabStrip$CloseEventParameters extends StObject {
+    
+    /**
+      * The index of the closed tab.
+      */
+    var index: js.UndefOr[int] = js.undefined
+  }
+  object TabStrip$CloseEventParameters {
+    
+    inline def apply(): TabStrip$CloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabStrip$CloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStrip$CloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: int): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    }
+  }
+  
+  trait TabStrip$SelectEventParameters extends StObject {
+    
+    /**
+      * The index of the selected tab.
+      */
+    var index: js.UndefOr[int] = js.undefined
+  }
+  object TabStrip$SelectEventParameters {
+    
+    inline def apply(): TabStrip$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabStrip$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStrip$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: int): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    }
+  }
+  
+  type TabStripCloseEvent = typings.openui5.sapUiBaseEventMod.default[TabStrip$CloseEventParameters]
+  
+  type TabStripCloseEventParameters = TabStrip$CloseEventParameters
+  
+  type TabStripSelectEvent = typings.openui5.sapUiBaseEventMod.default[TabStrip$SelectEventParameters]
+  
+  type TabStripSelectEventParameters = TabStrip$SelectEventParameters
+  
   trait TabStripSettings
     extends StObject
        with ControlSettings {
@@ -544,7 +597,12 @@ object sapUiCommonsTabStripMod {
     /**
       * Fires when the user closes a tab.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabStrip$CloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies whether tab reordering is enabled.
@@ -563,7 +621,12 @@ object sapUiCommonsTabStripMod {
     /**
       * Fires when the user selects a tab.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabStrip$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Specifies the index of the currently selected tab.
@@ -594,7 +657,9 @@ object sapUiCommonsTabStripMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TabStripSettings] (val x: Self) extends AnyVal {
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabStrip$CloseEventParameters] => Unit
+      ): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
@@ -606,7 +671,9 @@ object sapUiCommonsTabStripMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TabStrip$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

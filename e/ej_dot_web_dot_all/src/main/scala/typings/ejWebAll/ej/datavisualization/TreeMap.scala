@@ -270,27 +270,27 @@ object TreeMap {
   trait DesaturationColorMapping extends StObject {
     
     /** Specifies the color for desaturationColorMapping
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the from value for desaturation color mapping
-      * @Default {0}
+      * @default {0}
       */
     var from: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rangeMaximum value for desaturation color mapping
-      * @Default {0}
+      * @default {0}
       */
     var rangeMaximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the rangeMinimum value for desaturation color mapping
-      * @Default {0}
+      * @default {0}
       */
     var rangeMinimum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the to value for desaturation color mapping
-      * @Default {0}
+      * @default {0}
       */
     var to: js.UndefOr[Double] = js.undefined
   }
@@ -395,7 +395,7 @@ object TreeMap {
   trait GroupColorMapping extends StObject {
     
     /** Specifies the groupID for GroupColorMapping.
-      * @Default {null}
+      * @default {null}
       */
     var groupID: js.UndefOr[String] = js.undefined
   }
@@ -462,47 +462,47 @@ object TreeMap {
   trait LeafItemSettings extends StObject {
     
     /** Specifies the border brush color of the leaf item.
-      * @Default {white}
+      * @default {white}
       */
     var borderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness of the leaf item.
-      * @Default {1}
+      * @default {1}
       */
     var borderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the space between the leaf items.
-      * @Default {0}
+      * @default {0}
       */
     var gap: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label template of the leaf item.
-      * @Default {null}
+      * @default {null}
       */
     var itemTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the label path of the leaf item.
-      * @Default {null}
+      * @default {null}
       */
     var labelPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of the leaf labels.
-      * @Default {center}
+      * @default {center}
       */
     var labelPosition: js.UndefOr[Position | String] = js.undefined
     
     /** Specifies the mode of label visibility
-      * @Default {visible}
+      * @default {visible}
       */
     var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Shows or hides the label of the leaf item.
-      * @Default {false}
+      * @default {false}
       */
     var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the overflow options for leaf labels.
-      * @Default {none}
+      * @default {none}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
   }
@@ -579,32 +579,32 @@ object TreeMap {
   trait LegendSettings extends StObject {
     
     /** Specifies the alignment text for legend
-      * @Default {near}
+      * @default {near}
       */
     var alignment: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment text for legend
-      * @Default {0}
+      * @default {0}
       */
     var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the dockPosition text for legend
-      * @Default {top}
+      * @default {top}
       */
     var dockPosition: js.UndefOr[String] = js.undefined
     
     /** Specifies the height for legend
-      * @Default {30}
+      * @default {30}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the iconHeight for legend
-      * @Default {15}
+      * @default {15}
       */
     var iconHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the iconWidth for legend
-      * @Default {15}
+      * @default {15}
       */
     var iconWidth: js.UndefOr[Double] = js.undefined
     
@@ -613,7 +613,7 @@ object TreeMap {
     var leftLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode for legendSettings whether default or interactive mode
-      * @Default {default}
+      * @default {default}
       */
     var mode: js.UndefOr[String] = js.undefined
     
@@ -622,7 +622,7 @@ object TreeMap {
     var rightLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the template for legendSettings
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
@@ -631,7 +631,7 @@ object TreeMap {
     var title: js.UndefOr[String] = js.undefined
     
     /** Specifies the width for legend
-      * @Default {100}
+      * @default {100}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -698,27 +698,27 @@ object TreeMap {
   trait Level extends StObject {
     
     /** specifies the group background
-      * @Default {null}
+      * @default {null}
       */
     var groupBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the group border color for tree map level.
-      * @Default {null}
+      * @default {null}
       */
     var groupBorderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the group border thickness for tree map level.
-      * @Default {1}
+      * @default {1}
       */
     var groupBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the group gap for tree map level.
-      * @Default {1}
+      * @default {1}
       */
     var groupGap: js.UndefOr[Double] = js.undefined
     
     /** Specifies the group padding for tree map level.
-      * @Default {4}
+      * @default {4}
       */
     var groupPadding: js.UndefOr[Double] = js.undefined
     
@@ -727,47 +727,47 @@ object TreeMap {
     var groupPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the header height for tree map level.
-      * @Default {0}
+      * @default {0}
       */
     var headerHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the header template for tree map level.
-      * @Default {null}
+      * @default {null}
       */
     var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of header visibility
-      * @Default {visible}
+      * @default {visible}
       */
     var headerVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Specifies the position of the labels.
-      * @Default {center}
+      * @default {center}
       */
     var labelPosition: js.UndefOr[Position | String] = js.undefined
     
     /** Specifies the label template for tree map level.
-      * @Default {null}
+      * @default {null}
       */
     var labelTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of label visibility
-      * @Default {visible}
+      * @default {visible}
       */
     var labelVisibilityMode: js.UndefOr[VisibilityMode | String] = js.undefined
     
     /** Shows or hides the header for tree map level.
-      * @Default {false}
+      * @default {false}
       */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the labels for tree map level.
-      * @Default {false}
+      * @default {false}
       */
     var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the overflow options for leaf labels.
-      * @Default {none}
+      * @default {none}
       */
     var textOverflow: js.UndefOr[TextOverflow | String] = js.undefined
   }
@@ -850,27 +850,27 @@ object TreeMap {
     var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the border brush color of the treemap
-      * @Default {white}
+      * @default {white}
       */
     var borderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness of the treemap
-      * @Default {1}
+      * @default {1}
       */
     var borderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the field name in the datasource that contains color values for treemap items.
-      * @Default {null}
+      * @default {null}
       */
     var colorPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the color value path of the treemap
-      * @Default {null}
+      * @default {null}
       */
     var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Specifies the datasource of the treemap
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -879,7 +879,7 @@ object TreeMap {
     var desaturationColorMapping: js.UndefOr[DesaturationColorMapping] = js.undefined
     
     /** Specifies the dockPosition for legend
-      * @Default {top}
+      * @default {top}
       */
     var dockPosition: js.UndefOr[DockPosition | String] = js.undefined
     
@@ -888,17 +888,17 @@ object TreeMap {
     var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** This property is used to select group of treemap items while clicking and dragging
-      * @Default {false}
+      * @default {false}
       */
     var draggingGroupOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to select treemap items while clicking and dragging
-      * @Default {false}
+      * @default {false}
       */
     var draggingOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** specifies the drillDown header color
-      * @Default {'null'}
+      * @default {'null'}
       */
     var drillDownHeaderColor: js.UndefOr[String] = js.undefined
     
@@ -907,17 +907,17 @@ object TreeMap {
     var drillDownItemSelected: js.UndefOr[js.Function1[/* e */ DrillDownItemSelectedEventArgs, Unit]] = js.undefined
     
     /** Specifies to render particular level of the treemap.
-      * @Default {0}
+      * @default {0}
       */
     var drillDownLevel: js.UndefOr[Double] = js.undefined
     
     /** specifies the drillDown selection color
-      * @Default {'#000000'}
+      * @default {'#000000'}
       */
     var drillDownSelectionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies to drill the particular data of the treemap.
-      * @Default {null}
+      * @default {null}
       */
     var drillDownValue: js.UndefOr[String] = js.undefined
     
@@ -926,37 +926,37 @@ object TreeMap {
     var drillStarted: js.UndefOr[js.Function1[/* e */ DrillStartedEventArgs, Unit]] = js.undefined
     
     /** Enable/Disable the drillDown for treemap
-      * @Default {false}
+      * @default {false}
       */
     var enableDrillDown: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether gradient color has to be applied for treemap items
-      * @Default {false}
+      * @default {false}
       */
     var enableGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the date object to string, using locale settings.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether treemap need to resize when container is resized
-      * @Default {true}
+      * @default {true}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the group color mapping of the treemap
-      * @Default {[]}
+      * @default {[]}
       */
     var groupColorMapping: js.UndefOr[js.Array[GroupColorMapping]] = js.undefined
     
     /** Specifies the selection mode of the treemap. Accepted selection mode values are Default and Multiple.
-      * @Default {default}
+      * @default {default}
       */
     var groupSelectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.groupSelectionMode | String] = js.undefined
     
     /** Specifies the header for parent item during drilldown. This is applicable only for hierarchical data source.
-      * @Default {null}
+      * @default {null}
       */
     var header: js.UndefOr[String] = js.undefined
     
@@ -965,42 +965,42 @@ object TreeMap {
     var headerTemplateRendering: js.UndefOr[js.Function1[/* e */ HeaderTemplateRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the highlight border brush of treemap
-      * @Default {gray}
+      * @default {gray}
       */
     var highlightBorderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness when treemap items is highlighted in the treemap
-      * @Default {5}
+      * @default {5}
       */
     var highlightBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the highlight border brush of treemap
-      * @Default {gray}
+      * @default {gray}
       */
     var highlightGroupBorderBrush: js.UndefOr[String] = js.undefined
     
     /** Specifies the border thickness when treemap items is highlighted in the treemap
-      * @Default {5}
+      * @default {5}
       */
     var highlightGroupBorderThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether treemap item need to highlighted on selection
-      * @Default {false}
+      * @default {false}
       */
     var highlightGroupOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether treemap item need to highlighted on selection
-      * @Default {false}
+      * @default {false}
       */
     var highlightOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether datasource is hierarchical or not.
-      * @Default {false}
+      * @default {false}
       */
     var isHierarchicalDatasource: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether Treemap has to be responsive while resizing the window.
-      * @Default {true}
+      * @default {true}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1009,7 +1009,7 @@ object TreeMap {
     var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
-      * @Default {Squarified}
+      * @default {Squarified}
       */
     var itemsLayoutMode: js.UndefOr[ItemsLayoutMode | String] = js.undefined
     
@@ -1026,12 +1026,12 @@ object TreeMap {
     var legendSettings: js.UndefOr[LegendSettings] = js.undefined
     
     /** Specify levels of treemap for grouped visualization of data
-      * @Default {[]}
+      * @default {[]}
       */
     var levels: js.UndefOr[js.Array[Level]] = js.undefined
     
     /** Name of the culture based on which Tree Map should be localized.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -1040,7 +1040,7 @@ object TreeMap {
     var paletteColorMapping: js.UndefOr[PaletteColorMapping] = js.undefined
     
     /** Specifies the rangeColorMapping settings of the treemap
-      * @Default {[]}
+      * @default {[]}
       */
     var rangeColorMapping: js.UndefOr[js.Array[RangeColorMapping]] = js.undefined
     
@@ -1053,12 +1053,12 @@ object TreeMap {
     var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the selection mode of treemap item. Accepted selection mode values are Default and Multiple.
-      * @Default {default}
+      * @default {default}
       */
     var selectionMode: js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.selectionMode | String] = js.undefined
     
     /** Specifies the legend visibility status of the treemap
-      * @Default {false}
+      * @default {false}
       */
     var showLegend: js.UndefOr[Boolean] = js.undefined
     
@@ -1067,7 +1067,7 @@ object TreeMap {
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the tooltip template of the treemap
-      * @Default {null}
+      * @default {null}
       */
     var tooltipTemplate: js.UndefOr[String] = js.undefined
     
@@ -1080,7 +1080,7 @@ object TreeMap {
     var treeMapItemSelected: js.UndefOr[js.Function1[/* e */ TreeMapItemSelectedEventArgs, Unit]] = js.undefined
     
     /** Hold the treeMapItems to be displayed in treemap
-      * @Default {[]}
+      * @default {[]}
       */
     var treeMapItems: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1089,7 +1089,7 @@ object TreeMap {
     var uniColorMapping: js.UndefOr[UniColorMapping] = js.undefined
     
     /** Specifies the weight value path of the treemap
-      * @Default {null}
+      * @default {null}
       */
     var weightValuePath: js.UndefOr[String] = js.undefined
   }
@@ -1328,7 +1328,7 @@ object TreeMap {
   trait PaletteColorMapping extends StObject {
     
     /** Specifies the colors of the paletteColorMapping
-      * @Default {[]}
+      * @default {[]}
       */
     var colors: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -1353,27 +1353,27 @@ object TreeMap {
   trait RangeColorMapping extends StObject {
     
     /** Specifies the color value for rangeColorMapping.
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the from value for rangeColorMapping.
-      * @Default {-1}
+      * @default {-1}
       */
     var from: js.UndefOr[Double] = js.undefined
     
     /** specifies the gradient colors for th given range value
-      * @Default {[]}
+      * @default {[]}
       */
     var gradientColors: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the legend label value for rangeColorMapping.
-      * @Default {null}
+      * @default {null}
       */
     var legendLabel: js.UndefOr[String] = js.undefined
     
     /** Specifies the to value for rangeColorMapping.
-      * @Default {-1}
+      * @default {-1}
       */
     var to: js.UndefOr[Double] = js.undefined
   }
@@ -1502,7 +1502,7 @@ object TreeMap {
   trait UniColorMapping extends StObject {
     
     /** Specifies the uniform color mapping of the treemap
-      * @Default {null}
+      * @default {null}
       */
     var color: js.UndefOr[String] = js.undefined
   }

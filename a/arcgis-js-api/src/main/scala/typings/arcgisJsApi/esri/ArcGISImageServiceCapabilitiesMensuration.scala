@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISImageServiceCapabilitiesMensuration extends StObject {
   
   /**
-    * Indicates if the layer supports 3D mensuration operations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports 3D mensuration operations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supports3D: Boolean
   
   /**
-    * Indicates if the layer supports area and perimeter mensuration operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports area and perimeter mensuration operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsAreaAndPerimeter: Boolean
   
   /**
-    * Indicates if the layer supports distance and angle mensuration operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports distance and angle mensuration operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsDistanceAndAngle: Boolean
   
   /**
-    * Indicates if the layer supports a mensuration operation for calculating a height of a ground feature by measuring from the base of the object to the top of the object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports a mensuration operation for calculating a height of a ground feature by measuring from the base of the object to the top of the object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsHeightFromBaseAndTop: Boolean
   
   /**
-    * Indicates if the layer supports a mensuration operation for calculating a height of a feature by measuring from the base of the object to the top of the object's shadow on the ground.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports a mensuration operation for calculating a height of a feature by measuring from the base of the object to the top of the object's shadow on the ground.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsHeightFromBaseAndTopShadow: Boolean
   
   /**
-    * Indicates if the layer supports mensuration operation for calculating a height from the top of the object to the top of the objects's shadow on the ground.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports mensuration operation for calculating a height from the top of the object to the top of the objects's shadow on the ground.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsHeightFromTopAndTopShadow: Boolean
   
   /**
-    * Indicates if the layer supports point or centroid mensuration operations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Indicates if the layer supports point or centroid mensuration operations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var supportsPointOrCentroid: Boolean
 }
 object ArcGISImageServiceCapabilitiesMensuration {

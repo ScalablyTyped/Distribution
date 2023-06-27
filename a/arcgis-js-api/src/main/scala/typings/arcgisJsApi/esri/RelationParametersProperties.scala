@@ -19,33 +19,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationParametersProperties extends StObject {
   
   /**
-    * The first array of geometries to compute the relation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#geometries1)
-    */
+  		 * The first array of geometries to compute the relation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#geometries1)
+  		 */
   var geometries1: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
-    * The second array of geometries to compute the relation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#geometries2)
-    */
+  		 * The second array of geometries to compute the relation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#geometries2)
+  		 */
   var geometries2: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
-    * The spatial relationship to be tested between the two input geometry arrays.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#relation)
-    */
+  		 * The spatial relationship to be tested between the two input geometry arrays.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#relation)
+  		 */
   var relation: js.UndefOr[
     cross | disjoint | in_ | `interior-intersection` | intersection | `line-coincidence` | `line-touch` | overlap | `point-touch` | typings.arcgisJsApi.arcgisJsApiStrings.relation | touch | within
   ] = js.undefined
   
   /**
-    * The string describes the spatial relationship to be tested when `RelationParameters.relation = 'relation'`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#relationParameter)
-    */
+  		 * The string describes the spatial relationship to be tested when `RelationParameters.relation = 'relation'`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationParameters.html#relationParameter)
+  		 */
   var relationParameter: js.UndefOr[String] = js.undefined
 }
 object RelationParametersProperties {

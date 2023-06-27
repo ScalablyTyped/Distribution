@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.View
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -24,8 +23,8 @@ object sapUxapBlockBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:4527729576cb4a4888275b6935aad03a Block Base}
-    * 	{@link topic:2978f6064742456ebed31c5ccf4d051d Creating Blocks}
+    * 	{@link https://ui5.sap.com/#/topic/4527729576cb4a4888275b6935aad03a Block Base}
+    * 	{@link https://ui5.sap.com/#/topic/2978f6064742456ebed31c5ccf4d051d Creating Blocks}
     */
   open class default () extends BlockBase {
     def this(/**
@@ -142,7 +141,7 @@ object sapUxapBlockBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Attaches event handler `fnFunction` to the {@link #event:viewInit viewInit} event of this `sap.uxap.BlockBase`.
       *
@@ -157,20 +156,20 @@ object sapUxapBlockBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit]
     ): this.type = js.native
     def attachViewInit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.BlockBase` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Attaches event handler `fnFunction` to the {@link #event:viewInit viewInit} event of this `sap.uxap.BlockBase`.
       *
@@ -190,7 +189,7 @@ object sapUxapBlockBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit]
     ): this.type = js.native
     def attachViewInit(
       /**
@@ -201,7 +200,7 @@ object sapUxapBlockBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.uxap.BlockBase` itself
       */
@@ -209,7 +208,7 @@ object sapUxapBlockBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a view.
       *
@@ -234,7 +233,7 @@ object sapUxapBlockBaseMod {
     def destroyMappings(): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Detaches event handler `fnFunction` from the {@link #event:viewInit viewInit} event of this `sap.uxap.BlockBase`.
       *
@@ -246,13 +245,13 @@ object sapUxapBlockBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit]
     ): this.type = js.native
     def detachViewInit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ BlockBaseViewInitEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -260,18 +259,20 @@ object sapUxapBlockBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.72
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.72
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:viewInit viewInit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireViewInit(): this.type = js.native
-    def fireViewInit(/**
+    def fireViewInit(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: View): this.type = js.native
+    mParameters: BlockBase$ViewInitEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getColumnLayout columnLayout}.
@@ -489,6 +490,29 @@ object sapUxapBlockBaseMod {
     bShowSubSectionMore: Boolean): this.type = js.native
   }
   
+  trait BlockBase$ViewInitEventParameters extends StObject {
+    
+    /**
+      * The initialized view.
+      */
+    var view: js.UndefOr[typings.openui5.sapUiCoreMvcViewMod.default] = js.undefined
+  }
+  object BlockBase$ViewInitEventParameters {
+    
+    inline def apply(): BlockBase$ViewInitEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BlockBase$ViewInitEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockBase$ViewInitEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setView(value: typings.openui5.sapUiCoreMvcViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    }
+  }
+  
   trait BlockBaseSettings
     extends StObject
        with ControlSettings {
@@ -548,11 +572,16 @@ object sapUxapBlockBaseMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Fired when an aggregated view is instantiated.
       */
-    var viewInit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var viewInit: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BlockBase$ViewInitEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object BlockBaseSettings {
     
@@ -596,9 +625,15 @@ object sapUxapBlockBaseMod {
       
       inline def setShowSubSectionMoreUndefined: Self = StObject.set(x, "showSubSectionMore", js.undefined)
       
-      inline def setViewInit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "viewInit", js.Any.fromFunction1(value))
+      inline def setViewInit(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[BlockBase$ViewInitEventParameters] => Unit
+      ): Self = StObject.set(x, "viewInit", js.Any.fromFunction1(value))
       
       inline def setViewInitUndefined: Self = StObject.set(x, "viewInit", js.undefined)
     }
   }
+  
+  type BlockBaseViewInitEvent = typings.openui5.sapUiBaseEventMod.default[BlockBase$ViewInitEventParameters]
+  
+  type BlockBaseViewInitEventParameters = BlockBase$ViewInitEventParameters
 }

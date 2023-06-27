@@ -5,45 +5,45 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This class contains performance information like memory usage and number of features for a specific layer.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html)
-  */
+	 * This class contains performance information like memory usage and number of features for a specific layer.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html)
+	 */
 trait LayerPerformanceInfo extends StObject {
   
   /**
-    * The number of features displayed in the SceneView.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#displayedNumberOfFeatures)
-    */
+  		 * The number of features displayed in the SceneView.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#displayedNumberOfFeatures)
+  		 */
   var displayedNumberOfFeatures: Double
   
   /**
-    * The layer corresponding to the memory usage information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#layer)
-    */
+  		 * The layer corresponding to the memory usage information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#layer)
+  		 */
   var layer: Layer
   
   /**
-    * The maximum number of features that can be displayed in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#maximumNumberOfFeatures)
-    */
+  		 * The maximum number of features that can be displayed in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#maximumNumberOfFeatures)
+  		 */
   var maximumNumberOfFeatures: Double
   
   /**
-    * An estimate of the memory currently in use by the layer, in bytes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#memory)
-    */
+  		 * An estimate of the memory currently in use by the layer, in bytes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#memory)
+  		 */
   var memory: Double
   
   /**
-    * The total number of features contained in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#totalNumberOfFeatures)
-    */
+  		 * The total number of features contained in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html#totalNumberOfFeatures)
+  		 */
   var totalNumberOfFeatures: Double
 }
 object LayerPerformanceInfo {

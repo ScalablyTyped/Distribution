@@ -1,5 +1,10 @@
 package typings.openui5
 
+import typings.openui5.anon.Metadata
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Aggregation
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Association
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Event
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions.Property
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +19,8 @@ object sapUiBaseManagedObjectMetadataMod {
       * Creates a new metadata object that describes a subclass of ManagedObject.
       *
       * **Note:** Code outside the `sap.ui.base` namespace must not call this constructor directly. Instances
-      * will be created automatically when a new class is defined with one of the {@link sap.ui.base.ManagedObject.extend
-      * SomeClass.extend} methods.
+      * will be created automatically when a new class is defined with one of the {@link sap.ui.base.ManagedObject.extend SomeClass.extend }
+      * methods.
       *
       * **Note**: throughout this class documentation, the described subclass of ManagedObject is referenced
       * as the described class.
@@ -28,7 +33,7 @@ object sapUiBaseManagedObjectMetadataMod {
       /**
       * static info to construct the metadata from
       */
-    oClassInfo: js.Object
+    oClassInfo: Metadata
     ) = this()
   }
   /* static members */
@@ -39,7 +44,7 @@ object sapUiBaseManagedObjectMetadataMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds information to the given oAggregatedObject about its original API parent (or a subsequent API parent
       * in case of multiple forwarding). MUST be called before an element is forwarded to another internal aggregation
@@ -65,7 +70,7 @@ object sapUiBaseManagedObjectMetadataMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAPIParentInfoBegin")(oAggregatedObject.asInstanceOf[js.Any], oParent.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Completes the information about the original API parent of the given element. MUST be called after an
       * element is forwarded to another internal aggregation. For every call to ManagedObjectMetadata.addAPIParentInfoBegin(...)
@@ -124,7 +129,7 @@ object sapUiBaseManagedObjectMetadataMod {
     extends typings.openui5.sapUiBaseMetadataMod.default {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns an info object for the named public aggregation of the described class no matter whether the
       * aggregation was defined by the class itself or by one of its ancestor classes.
@@ -141,11 +146,11 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns An info object describing the aggregation or `undefined`
       */
-    def getAggregation(): js.UndefOr[js.Object] = js.native
+    def getAggregation(): js.UndefOr[Aggregation] = js.native
     def getAggregation(/**
       * name of the aggregation or empty
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Aggregation] = js.native
     
     /**
       * Returns a map of info objects for the public aggregations of the described class. Aggregations declared
@@ -160,7 +165,7 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of aggregation info objects keyed by aggregation names
       */
-    def getAggregations(): Record[String, js.Object] = js.native
+    def getAggregations(): Record[String, Aggregation] = js.native
     
     /**
       * Returns a map of info objects for all public aggregations of the described class, including public aggregations
@@ -175,7 +180,7 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of aggregation info objects keyed by aggregation names
       */
-    def getAllAggregations(): Record[String, js.Object] = js.native
+    def getAllAggregations(): Record[String, Aggregation] = js.native
     
     /**
       * Returns a map of info objects for all public associations of the described class, including public associations
@@ -190,7 +195,7 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of association info objects keyed by association names
       */
-    def getAllAssociations(): Record[String, js.Object] = js.native
+    def getAllAssociations(): Record[String, Association] = js.native
     
     /**
       * Returns a map of info objects for all public events of the described class, including public events form
@@ -204,10 +209,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of event info objects keyed by event names
       */
-    def getAllEvents(): Record[String, js.Object] = js.native
+    def getAllEvents(): Record[String, Event] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a map of info objects for all private (hidden) aggregations of the described class, including
       * private aggregations from the ancestor classes.
@@ -221,10 +226,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of aggregation info objects keyed by aggregation names
       */
-    def getAllPrivateAggregations(): Record[String, js.Object] = js.native
+    def getAllPrivateAggregations(): Record[String, Aggregation] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a map of info objects for all private (hidden) associations of the described class, including
       * private associations from the ancestor classes.
@@ -238,10 +243,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of association info objects keyed by association names
       */
-    def getAllPrivateAssociations(): Record[String, js.Object] = js.native
+    def getAllPrivateAssociations(): Record[String, Association] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a map of info objects for all private (hidden) properties of the described class, including private
       * properties from the ancestor classes.
@@ -254,7 +259,7 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of property info objects keyed by property names
       */
-    def getAllPrivateProperties(): Record[String, js.Object] = js.native
+    def getAllPrivateProperties(): Record[String, Property] = js.native
     
     /**
       * Returns a map of info objects for all public properties of the described class, including public properties
@@ -268,10 +273,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of property info objects keyed by the property names
       */
-    def getAllProperties(): Record[String, js.Object] = js.native
+    def getAllProperties(): Record[String, Property] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns an info object for the named public association of the described class, no matter whether the
       * association was defined by the class itself or by one of its ancestor classes.
@@ -288,7 +293,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getAssociation(/**
       * name of the association
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Association] = js.native
     
     /**
       * Returns a map of info objects for all public associations of the described class. Associations declared
@@ -303,10 +308,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of association info objects keyed by association names
       */
-    def getAssociations(): Record[String, js.Object] = js.native
+    def getAssociations(): Record[String, Association] = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Returns an info object for the default aggregation of the described class.
       *
@@ -315,10 +320,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns An info object for the default aggregation
       */
-    def getDefaultAggregation(): js.Object = js.native
+    def getDefaultAggregation(): Aggregation = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Returns the name of the default aggregation of the described class.
       *
@@ -330,7 +335,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getDefaultAggregationName(): String = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns an info object for the named public event of the described class, no matter whether the event
       * was defined by the class itself or by one of its ancestor classes.
@@ -347,7 +352,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getEvent(/**
       * name of the event
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Event] = js.native
     
     /**
       * Returns a map of info objects for the public events of the described class. Events declared by ancestor
@@ -361,7 +366,7 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of event info objects keyed by event names
       */
-    def getEvents(): Record[String, js.Object] = js.native
+    def getEvents(): Record[String, Event] = js.native
     
     /**
       * Returns the name of the library that contains the described UIElement.
@@ -371,7 +376,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getLibraryName(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the info object for the named public or private aggregation declared by the described class or
       * by any of its ancestors.
@@ -388,10 +393,10 @@ object sapUiBaseManagedObjectMetadataMod {
     def getManagedAggregation(/**
       * name of the aggregation to be retrieved or empty
       */
-    sAggregationName: String): js.UndefOr[js.Object] = js.native
+    sAggregationName: String): js.UndefOr[Aggregation] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the info object for the named public or private association declared by the described class or
       * by any of its ancestors.
@@ -405,10 +410,10 @@ object sapUiBaseManagedObjectMetadataMod {
     def getManagedAssociation(/**
       * name of the association to be retrieved
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Association] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the info object for the named public or private property declared by the described class or by
       * any of its ancestors.
@@ -425,7 +430,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getManagedProperty(/**
       * name of the property to be retrieved or empty
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Property] = js.native
     
     /**
       * Returns a map of info objects for the public properties of the described class. Properties declared by
@@ -439,10 +444,10 @@ object sapUiBaseManagedObjectMetadataMod {
       *
       * @returns Map of property info objects keyed by the property names
       */
-    def getProperties(): Record[String, js.Object] = js.native
+    def getProperties(): Record[String, Property] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns an info object for the named public property of the described class, no matter whether the property
       * was defined by the class itself or by one of its ancestor classes.
@@ -459,7 +464,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getProperty(/**
       * name of the property
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Property] = js.native
     
     /**
       * Returns a map of default values for all properties declared by the described class and its ancestors,
@@ -470,7 +475,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getPropertyDefaults(): Record[String, Any] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Returns an info object for a public setting with the given name that either is a public property or a
       * public aggregation of cardinality 0..1 and with at least one simple alternative type. The setting can
@@ -488,7 +493,7 @@ object sapUiBaseManagedObjectMetadataMod {
     def getPropertyLikeSetting(/**
       * name of the property like setting
       */
-    sName: String): js.UndefOr[js.Object] = js.native
+    sName: String): js.UndefOr[Property | Aggregation] = js.native
     
     /**
       * Checks the existence of the given public aggregation by its name.

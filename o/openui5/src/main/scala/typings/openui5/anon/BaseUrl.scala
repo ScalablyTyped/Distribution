@@ -10,9 +10,9 @@ trait BaseUrl extends StObject {
     * (optional) A list of active terminologies. If the `mOptions.process` flag is set to `true`, the given
     * terminologies will be respected when replacing placeholders with resource bundle values. To use active
     * terminologies, the `sap.app.i18n` section in the manifest must be defined in object syntax as described
-    * here: {@link topic:eba8d25a31ef416ead876e091e67824e Text Verticalization}. The order of the given active
-    * terminologies is significant. The {@link module:sap/base/i18n/ResourceBundle ResourceBundle} API documentation
-    * describes the processing behavior in more detail.
+    * here: {@link https://ui5.sap.com/#/topic/eba8d25a31ef416ead876e091e67824e Text Verticalization}. The
+    * order of the given active terminologies is significant. The {@link module:sap/base/i18n/ResourceBundle ResourceBundle }
+    * API documentation describes the processing behavior in more detail.
     */
   var activeTerminologies: js.UndefOr[js.Array[String]] = js.undefined
   

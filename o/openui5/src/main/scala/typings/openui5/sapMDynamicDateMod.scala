@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Int
+import typings.openui5.anon.Date
 import typings.openui5.anon.Maximum
 import typings.openui5.anon.Operator
 import typings.openui5.anon.OperatorValues
@@ -22,7 +22,7 @@ object sapMDynamicDateMod {
     def this(/**
       * Format options. There are format options for each of the supported types of value parameters.
       */
-    oFormatOptions: Int) = this()
+    oFormatOptions: Date) = this()
     def this(
       /**
       * Format options. There are format options for each of the supported types of value parameters.
@@ -37,7 +37,7 @@ object sapMDynamicDateMod {
       /**
       * Format options. There are format options for each of the supported types of value parameters.
       */
-    oFormatOptions: Int,
+    oFormatOptions: Date,
       /**
       * Value constraints
       */

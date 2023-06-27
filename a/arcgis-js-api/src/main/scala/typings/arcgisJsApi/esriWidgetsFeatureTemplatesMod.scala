@@ -11,10 +11,10 @@ object esriWidgetsFeatureTemplatesMod {
   @JSImport("esri/widgets/FeatureTemplates", JSImport.Namespace)
   @js.native
   /**
-    * The FeatureTemplates widget is part of the overall editing workflow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
-    */
+  		 * The FeatureTemplates widget is part of the overall editing workflow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html)
+  		 */
   open class ^ ()
     extends StObject
        with FeatureTemplates {

@@ -18,38 +18,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeshCreateBoxParams extends StObject {
   
   /**
-    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
-    */
+  		 * Whether to georeference relative to the globe or the projected coordinate system (PCS).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+  		 */
   var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The face for generating image uv coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
-    */
+  		 * The face for generating image uv coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+  		 */
   var imageFace: js.UndefOr[String] = js.undefined
   
   /**
-    * The material to be used for the mesh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
-    */
+  		 * The material to be used for the mesh.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+  		 */
   var material: js.UndefOr[MeshMaterial] = js.undefined
   
   /**
-    * A uniform size value or an object containing individual values width, height and depth.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
-    */
+  		 * A uniform size value or an object containing individual values width, height and depth.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+  		 */
   var size: js.UndefOr[Double | MeshCreateBoxParamsSize] = js.undefined
   
   /**
-    * The unit of the size (defaults to the unit of the location's spatial reference).
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The unit of the size (defaults to the unit of the location's spatial reference).
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined

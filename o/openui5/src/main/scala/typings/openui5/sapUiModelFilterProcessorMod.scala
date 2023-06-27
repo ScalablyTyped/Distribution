@@ -12,14 +12,14 @@ object sapUiModelFilterProcessorMod extends Shortcut {
   val default: FilterProcessor = js.native
   
   /**
-    * @SINCE 1.71
+    * @since 1.71
     *
     * Helper class for processing of filter objects
     */
   trait FilterProcessor extends StObject {
     
     /**
-      * @SINCE 1.71
+      * @since 1.71
       *
       * Groups filters according to their path and combines filters on the same path using "OR" and filters on
       * different paths using "AND", all multi-filters contained are ANDed.

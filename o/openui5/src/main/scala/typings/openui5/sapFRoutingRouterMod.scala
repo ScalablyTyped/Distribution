@@ -28,9 +28,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Array[js.Object],
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default
     ) = this()
@@ -40,9 +39,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Object,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default
     ) = this()
@@ -52,9 +50,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: Unit,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default
     ) = this()
@@ -64,9 +61,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Array[js.Object],
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: Unit,
       /**
@@ -80,9 +76,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Array[js.Object],
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default,
       /**
@@ -96,9 +91,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Object,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: Unit,
       /**
@@ -112,9 +106,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: js.Object,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default,
       /**
@@ -128,9 +121,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: Unit,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: Unit,
       /**
@@ -144,9 +136,8 @@ object sapFRoutingRouterMod {
       */
     oRoutes: Unit,
       /**
-      * the Component of all the views that will be created by this Router, will get forwarded to the {@link
-      * sap.ui.core.routing.Views#constructor}. If you are using the componentMetadata to define your routes
-      * you should skip this parameter.
+      * the Component of all the views that will be created by this Router, will get forwarded to the {@link sap.ui.core.routing.Views#constructor}.
+      * If you are using the componentMetadata to define your routes you should skip this parameter.
       */
     oOwner: typings.openui5.sapUiCoreUicomponentMod.default,
       /**

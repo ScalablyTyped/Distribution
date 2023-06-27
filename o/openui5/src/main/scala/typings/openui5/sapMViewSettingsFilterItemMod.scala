@@ -135,7 +135,7 @@ object sapMViewSettingsFilterItemMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange}
+      * Attaches event handler `fnFunction` to the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange }
       * event of this `sap.m.ViewSettingsFilterItem`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -149,20 +149,20 @@ object sapMViewSettingsFilterItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFilterDetailItemsAggregationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsFilterItem` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange}
+      * Attaches event handler `fnFunction` to the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange }
       * event of this `sap.m.ViewSettingsFilterItem`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -181,7 +181,7 @@ object sapMViewSettingsFilterItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFilterDetailItemsAggregationChange(
       /**
@@ -192,7 +192,7 @@ object sapMViewSettingsFilterItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ViewSettingsFilterItem` itself
       */
@@ -220,7 +220,7 @@ object sapMViewSettingsFilterItemMod {
     def destroyItems(): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange}
+      * Detaches event handler `fnFunction` from the {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange }
       * event of this `sap.m.ViewSettingsFilterItem`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -231,13 +231,13 @@ object sapMViewSettingsFilterItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachFilterDetailItemsAggregationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -245,7 +245,7 @@ object sapMViewSettingsFilterItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filterDetailItemsAggregationChange filterDetailItemsAggregationChange} to attached
       * listeners.
@@ -362,6 +362,12 @@ object sapMViewSettingsFilterItemMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait ViewSettingsFilterItem$FilterDetailItemsAggregationChangeEventParameters extends StObject
+  
+  type ViewSettingsFilterItemFilterDetailItemsAggregationChangeEvent = typings.openui5.sapUiBaseEventMod.default[ViewSettingsFilterItem$FilterDetailItemsAggregationChangeEventParameters]
+  
+  type ViewSettingsFilterItemFilterDetailItemsAggregationChangeEventParameters = ViewSettingsFilterItem$FilterDetailItemsAggregationChangeEventParameters
+  
   trait ViewSettingsFilterItemSettings
     extends StObject
        with ViewSettingsItemSettings {
@@ -369,7 +375,9 @@ object sapMViewSettingsFilterItemMod {
     /**
       * Let the outside world know that the filter detail aggregation was changed.
       */
-    var filterDetailItemsAggregationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filterDetailItemsAggregationChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Items with key and value that are logically grouped under this filter item. They are used to display
@@ -396,7 +404,7 @@ object sapMViewSettingsFilterItemMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ViewSettingsFilterItemSettings] (val x: Self) extends AnyVal {
       
-      inline def setFilterDetailItemsAggregationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filterDetailItemsAggregationChange", js.Any.fromFunction1(value))
+      inline def setFilterDetailItemsAggregationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "filterDetailItemsAggregationChange", js.Any.fromFunction1(value))
       
       inline def setFilterDetailItemsAggregationChangeUndefined: Self = StObject.set(x, "filterDetailItemsAggregationChange", js.undefined)
       

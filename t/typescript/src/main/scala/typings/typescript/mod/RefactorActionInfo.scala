@@ -18,6 +18,12 @@ trait RefactorActionInfo extends StObject {
   var description: java.lang.String
   
   /**
+    * Indicates that the action requires additional arguments to be passed
+    * when calling `getEditsForRefactor`.
+    */
+  var isInteractive: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The hierarchical dotted name of the refactor action.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
@@ -44,6 +50,10 @@ object RefactorActionInfo {
   implicit open class MutableBuilder[Self <: RefactorActionInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setIsInteractive(value: Boolean): Self = StObject.set(x, "isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def setIsInteractiveUndefined: Self = StObject.set(x, "isInteractive", js.undefined)
     
     inline def setKind(value: java.lang.String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

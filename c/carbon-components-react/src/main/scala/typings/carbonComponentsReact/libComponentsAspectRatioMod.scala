@@ -139,6 +139,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -469,6 +470,8 @@ object libComponentsAspectRatioMod {
   inline def AspectRatio_samp(props: AspectRatioIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_script(props: AspectRatioIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def AspectRatio_search(props: AspectRatioIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def AspectRatio_section(props: AspectRatioIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

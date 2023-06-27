@@ -4,6 +4,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.DataStore
 import typings.webix.webix.WebixCallback
+import typings.webix.webix.WebixProxy
 import typings.webix.webix.WebixTemplate
 import typings.webix.webix.obj
 import org.scalablytyped.runtime.StObject
@@ -82,8 +83,8 @@ trait treemap
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getBranchIndex(id: String): Double = js.native
   def getBranchIndex(id: Double): Double = js.native
@@ -107,7 +108,9 @@ trait treemap
   
   def getLastId(): Double | String = js.native
   
+  def getNextId(id: String): String | Double = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
+  def getNextId(id: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
   def getNextSiblingId(id: String): String | Double = js.native
@@ -122,7 +125,9 @@ trait treemap
   def getParentId(id: String): String | Double = js.native
   def getParentId(id: Double): String | Double = js.native
   
+  def getPrevId(id: String): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
+  def getPrevId(id: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
   def getPrevSiblingId(id: String): String | Double = js.native
@@ -130,8 +135,8 @@ trait treemap
   
   def getScrollState(): obj = js.native
   
-  def getSelectedId(): String | js.Array[Any] = js.native
-  def getSelectedId(as_array: Boolean): String | js.Array[Any] = js.native
+  def getSelectedId(): Any = js.native
+  def getSelectedId(as_array: Boolean): Any = js.native
   
   def getSelectedItem(): obj = js.native
   def getSelectedItem(as_array: Boolean): obj = js.native
@@ -164,6 +169,22 @@ trait treemap
   def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
   def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
@@ -233,7 +254,9 @@ trait treemap
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  def select(id: String): Unit = js.native
   def select(id: String, preserve: Boolean): Unit = js.native
+  def select(id: js.Array[Any]): Unit = js.native
   def select(id: js.Array[Any], preserve: Boolean): Unit = js.native
   
   def selectAll(): Unit = js.native
@@ -259,6 +282,9 @@ trait treemap
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
   def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   var `type`: obj = js.native

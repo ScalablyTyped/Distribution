@@ -4,20 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace) */
 trait VideoColorSpace extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/fullRange) */
   /* standard dom */
   val fullRange: scala.Boolean | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/matrix) */
   /* standard dom */
   val matrix: VideoMatrixCoefficients | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/primaries) */
   /* standard dom */
   val primaries: VideoColorPrimaries | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/toJSON) */
   /* standard dom */
   def toJSON(): VideoColorSpaceInit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/VideoColorSpace/transfer) */
   /* standard dom */
   val transfer: VideoTransferCharacteristics | Null
 }

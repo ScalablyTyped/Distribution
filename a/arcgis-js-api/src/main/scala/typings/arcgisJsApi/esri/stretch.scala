@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains helper methods for generating a single-band [stretch visualization](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html) for raster layers (i.e.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html)
-  */
+	 * This object contains helper methods for generating a single-band [stretch visualization](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html) for raster layers (i.e.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html)
+	 */
 trait stretch extends StObject {
   
   /**
-    * Generates a [RasterStretchRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html) to render data from a single raster band.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#createRenderer)
-    */
+  		 * Generates a [RasterStretchRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterStretchRenderer.html) to render data from a single raster band.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#createRenderer)
+  		 */
   def createRenderer(params: stretchCreateRendererParams): js.Promise[RasterStretchColorrampResult]
 }
 object stretch {

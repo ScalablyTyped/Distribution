@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import typings.typescript.anon.Files
 import typings.typescript.anon.WithMetadataCompletionInf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +27,15 @@ trait LanguageService extends StObject {
   
   def findReferences(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferencedSymbol]] = js.native
   
+  /** @deprecated Pass `providePrefixAndSuffixTextForRename` as part of a `UserPreferences` parameter. */
   def findRenameLocations(fileName: java.lang.String, position: Double, findInStrings: Boolean, findInComments: Boolean): js.UndefOr[js.Array[RenameLocation]] = js.native
+  def findRenameLocations(
+    fileName: java.lang.String,
+    position: Double,
+    findInStrings: Boolean,
+    findInComments: Boolean,
+    preferences: UserPreferences
+  ): js.UndefOr[js.Array[RenameLocation]] = js.native
   def findRenameLocations(
     fileName: java.lang.String,
     position: Double,
@@ -35,6 +44,12 @@ trait LanguageService extends StObject {
     providePrefixAndSuffixTextForRename: Boolean
   ): js.UndefOr[js.Array[RenameLocation]] = js.native
   
+  /**
+    * @param includeInteractiveActions Include refactor actions that require additional arguments to be
+    * passed when calling `getEditsForRefactor`. When true, clients should inspect the `isInteractive`
+    * property of each returned `RefactorActionInfo` and ensure they are able to collect the appropriate
+    * arguments for any interactive action before offering it.
+    */
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: Double): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
     fileName: java.lang.String,
@@ -42,6 +57,22 @@ trait LanguageService extends StObject {
     preferences: Unit,
     triggerReason: Unit,
     kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: Unit,
+    kind: Unit,
+    includeInteractiveActions: Boolean
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
     fileName: java.lang.String,
@@ -55,6 +86,22 @@ trait LanguageService extends StObject {
     preferences: Unit,
     triggerReason: RefactorTriggerReason,
     kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: Unit,
+    includeInteractiveActions: Boolean
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: Double, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -68,6 +115,22 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     positionOrRange: Double,
     preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: Unit,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
     triggerReason: RefactorTriggerReason
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -76,6 +139,22 @@ trait LanguageService extends StObject {
     preferences: UserPreferences,
     triggerReason: RefactorTriggerReason,
     kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: Unit,
+    includeInteractiveActions: Boolean
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -89,6 +168,22 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     positionOrRange: TextRange,
     preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: Unit,
+    kind: Unit,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
     triggerReason: RefactorTriggerReason
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -97,6 +192,22 @@ trait LanguageService extends StObject {
     preferences: Unit,
     triggerReason: RefactorTriggerReason,
     kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: Unit,
+    includeInteractiveActions: Boolean
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -110,6 +221,22 @@ trait LanguageService extends StObject {
     fileName: java.lang.String,
     positionOrRange: TextRange,
     preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: Unit,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
     triggerReason: RefactorTriggerReason
   ): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(
@@ -118,6 +245,22 @@ trait LanguageService extends StObject {
     preferences: UserPreferences,
     triggerReason: RefactorTriggerReason,
     kind: java.lang.String
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String,
+    includeInteractiveActions: Boolean
+  ): js.Array[ApplicableRefactorInfo] = js.native
+  def getApplicableRefactors(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: Unit,
+    includeInteractiveActions: Boolean
   ): js.Array[ApplicableRefactorInfo] = js.native
   
   def getBraceMatchingAtPosition(fileName: java.lang.String, position: Double): js.Array[TextSpan] = js.native
@@ -411,7 +554,25 @@ trait LanguageService extends StObject {
     positionOrRange: Double,
     refactorName: java.lang.String,
     actionName: java.lang.String,
+    preferences: Unit,
+    interactiveRefactorArguments: InteractiveRefactorArguments
+  ): js.UndefOr[RefactorEditInfo] = js.native
+  def getEditsForRefactor(
+    fileName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    positionOrRange: Double,
+    refactorName: java.lang.String,
+    actionName: java.lang.String,
     preferences: UserPreferences
+  ): js.UndefOr[RefactorEditInfo] = js.native
+  def getEditsForRefactor(
+    fileName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    positionOrRange: Double,
+    refactorName: java.lang.String,
+    actionName: java.lang.String,
+    preferences: UserPreferences,
+    interactiveRefactorArguments: InteractiveRefactorArguments
   ): js.UndefOr[RefactorEditInfo] = js.native
   def getEditsForRefactor(
     fileName: java.lang.String,
@@ -426,7 +587,25 @@ trait LanguageService extends StObject {
     positionOrRange: TextRange,
     refactorName: java.lang.String,
     actionName: java.lang.String,
+    preferences: Unit,
+    interactiveRefactorArguments: InteractiveRefactorArguments
+  ): js.UndefOr[RefactorEditInfo] = js.native
+  def getEditsForRefactor(
+    fileName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    positionOrRange: TextRange,
+    refactorName: java.lang.String,
+    actionName: java.lang.String,
     preferences: UserPreferences
+  ): js.UndefOr[RefactorEditInfo] = js.native
+  def getEditsForRefactor(
+    fileName: java.lang.String,
+    formatOptions: FormatCodeSettings,
+    positionOrRange: TextRange,
+    refactorName: java.lang.String,
+    actionName: java.lang.String,
+    preferences: UserPreferences,
+    interactiveRefactorArguments: InteractiveRefactorArguments
   ): js.UndefOr[RefactorEditInfo] = js.native
   
   def getEmitOutput(fileName: java.lang.String): EmitOutput = js.native
@@ -471,6 +650,93 @@ trait LanguageService extends StObject {
     */
   def getJsxClosingTagAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[JsxClosingTagInfo] = js.native
   
+  def getLinkedEditingRangeAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[LinkedEditingInfo] = js.native
+  
+  def getMoveToRefactoringFileSuggestions(fileName: java.lang.String, positionOrRange: Double): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(fileName: java.lang.String, positionOrRange: Double, preferences: UserPreferences): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: Double,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(fileName: java.lang.String, positionOrRange: TextRange): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: Unit,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(fileName: java.lang.String, positionOrRange: TextRange, preferences: UserPreferences): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: Unit,
+    kind: java.lang.String
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason
+  ): Files = js.native
+  def getMoveToRefactoringFileSuggestions(
+    fileName: java.lang.String,
+    positionOrRange: TextRange,
+    preferences: UserPreferences,
+    triggerReason: RefactorTriggerReason,
+    kind: java.lang.String
+  ): Files = js.native
+  
   def getNameOrDottedNameSpan(fileName: java.lang.String, startPos: Double, endPos: Double): js.UndefOr[TextSpan] = js.native
   
   def getNavigateToItems(searchValue: java.lang.String): js.Array[NavigateToItem] = js.native
@@ -495,9 +761,6 @@ trait LanguageService extends StObject {
   def getNavigationBarItems(fileName: java.lang.String): js.Array[NavigationBarItem] = js.native
   
   def getNavigationTree(fileName: java.lang.String): NavigationTree = js.native
-  
-  /** @deprecated */
-  def getOccurrencesAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   
   def getOutliningSpans(fileName: java.lang.String): js.Array[OutliningSpan] = js.native
   

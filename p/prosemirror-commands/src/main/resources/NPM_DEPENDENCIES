@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-commands" : "1.5.1"
+      "prosemirror-commands" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-commands" : "1.5.1"
+      "prosemirror-commands" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

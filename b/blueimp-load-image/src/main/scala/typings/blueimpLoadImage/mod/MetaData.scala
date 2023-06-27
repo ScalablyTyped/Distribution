@@ -10,6 +10,8 @@ trait MetaData
   
   var exif: js.UndefOr[Exif] = js.undefined
   
+  var exifOffsets: js.UndefOr[ExifMap] = js.undefined
+  
   var iptc: js.UndefOr[Iptc] = js.undefined
   
   var originalHeight: js.UndefOr[Double] = js.undefined
@@ -27,6 +29,10 @@ object MetaData {
   implicit open class MutableBuilder[Self <: MetaData] (val x: Self) extends AnyVal {
     
     inline def setExif(value: Exif): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+    
+    inline def setExifOffsets(value: ExifMap): Self = StObject.set(x, "exifOffsets", value.asInstanceOf[js.Any])
+    
+    inline def setExifOffsetsUndefined: Self = StObject.set(x, "exifOffsets", js.undefined)
     
     inline def setExifUndefined: Self = StObject.set(x, "exif", js.undefined)
     

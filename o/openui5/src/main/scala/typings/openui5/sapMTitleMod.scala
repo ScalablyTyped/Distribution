@@ -162,7 +162,7 @@ object sapMTitleMod {
     var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Destroys the content in the aggregation {@link #getContent content}.
       *
@@ -171,7 +171,7 @@ object sapMTitleMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Gets content of aggregation {@link #getContent content}.
       *
@@ -271,7 +271,7 @@ object sapMTitleMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getWrapping wrapping}.
       *
@@ -287,7 +287,7 @@ object sapMTitleMod {
     def getWrapping(): Boolean = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getWrappingType wrappingType}.
       *
@@ -303,7 +303,7 @@ object sapMTitleMod {
     def getWrappingType(): WrappingType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrappingType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Sets the aggregated {@link #getContent content}.
       *
@@ -474,7 +474,7 @@ object sapMTitleMod {
     sWidth: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getWrapping wrapping}.
       *
@@ -496,7 +496,7 @@ object sapMTitleMod {
     bWrapping: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getWrappingType wrappingType}.
       *
@@ -529,7 +529,7 @@ object sapMTitleMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Holds a control that implements `sap.ui.core.ITitleContent` and renders this control instead of simple
       * text
@@ -609,7 +609,7 @@ object sapMTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Enables text wrapping.
       *
@@ -621,7 +621,7 @@ object sapMTitleMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Defines the type of text wrapping to be used (hyphenated or normal).
       *

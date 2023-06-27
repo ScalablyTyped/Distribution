@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchSourceFilter extends StObject {
   
   /**
-    * The filter geometry for suggests or search results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
-    */
+  		 * The filter geometry for suggests or search results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
+  		 */
   var geometry: js.UndefOr[Geometry_] = js.undefined
   
   /**
-    * The where clause specified for filtering suggests or search results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
-    */
+  		 * The where clause specified for filtering suggests or search results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
+  		 */
   var where: js.UndefOr[String] = js.undefined
 }
 object SearchSourceFilter {

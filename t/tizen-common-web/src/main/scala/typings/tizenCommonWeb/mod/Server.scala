@@ -21,9 +21,9 @@ trait Server extends StObject {
     *
     * @returns Instance of _Resource_ object.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def createResource(
     uriPath: String,
@@ -44,7 +44,7 @@ trait Server extends StObject {
     *
     * @returns Array of _Resource_ objects registered on server.
     *
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def getResources(): js.Array[Resource] = js.native
   
@@ -56,9 +56,9 @@ trait Server extends StObject {
     *
     * @param resource The resource object to delete.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def removeResource(resource: Resource): Unit = js.native
   
@@ -74,8 +74,8 @@ trait Server extends StObject {
     *
     * @param timeToLive The interval of announcing presence in seconds(value must range between 1 and 60 \* 60 \* 24 inclusive). default value is 60 seconds.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def startPresence(timeToLive: Double): Unit = js.native
   
@@ -87,8 +87,8 @@ trait Server extends StObject {
     *
     * @remark Example of using can be find at [startPresence](iotcon.html#Server::startPresence) code example.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def stopPresence(): Unit = js.native
 }

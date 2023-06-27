@@ -9,14 +9,14 @@ trait IProgressConfig extends StObject {
   /**
     * Whether bars use transitions to achieve the width change.
     *
-    * @default: true
+    * @default true
     */
   var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A number that specifies the total value of bars that is required.
     *
-    * @default: 100
+    * @default 100
     */
   var max: js.UndefOr[Double] = js.undefined
 }

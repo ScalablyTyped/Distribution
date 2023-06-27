@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionLayerViewCreateLengthDimensionsOptions extends StObject {
   
   /**
-    * Abort signal which can be used to cancel creation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#createLengthDimensions)
-    */
+  		 * Abort signal which can be used to cancel creation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-DimensionLayerView.html#createLengthDimensions)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object DimensionLayerViewCreateLengthDimensionsOptions {

@@ -6,6 +6,20 @@ import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorTestBuilder.anon.Eq
 import typings.prosemirrorTestBuilder.anon.Flat
+import typings.prosemirrorTestBuilder.anon.NodetagTags
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.addBefore
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.addToEnd
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.addToStart
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.append
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.constructor
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.forEach
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.get
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.prepend
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.remove
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.size
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.subtract
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.toObject
+import typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,8 +42,8 @@ object mod {
   @js.native
   val br: NodeBuilder = js.native
   
-  inline def builders(schema: Schema[Any, Any]): typings.prosemirrorTestBuilder.anon.Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("builders")(schema.asInstanceOf[js.Any]).asInstanceOf[typings.prosemirrorTestBuilder.anon.Schema]
-  inline def builders(schema: Schema[Any, Any], names: StringDictionary[Attrs]): typings.prosemirrorTestBuilder.anon.Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("builders")(schema.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[typings.prosemirrorTestBuilder.anon.Schema]
+  inline def builders[Nodes /* <: String */, Marks /* <: String */](schema: Schema[Nodes, Marks]): Builders_[Schema[Nodes, Marks]] = ^.asInstanceOf[js.Dynamic].applyDynamic("builders")(schema.asInstanceOf[js.Any]).asInstanceOf[Builders_[Schema[Nodes, Marks]]]
+  inline def builders[Nodes /* <: String */, Marks /* <: String */](schema: Schema[Nodes, Marks], names: StringDictionary[Attrs]): Builders_[Schema[Nodes, Marks]] = (^.asInstanceOf[js.Dynamic].applyDynamic("builders")(schema.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[Builders_[Schema[Nodes, Marks]]]
   
   @JSImport("prosemirror-test-builder", "code")
   @js.native
@@ -87,7 +101,10 @@ object mod {
   
   @JSImport("prosemirror-test-builder", "schema")
   @js.native
-  val schema: Schema[Any, Any] = js.native
+  val schema: Schema[
+    /* keyof orderedmap.orderedmap.default<prosemirror-model.prosemirror-model.NodeSpec> */ constructor | size | get | update | remove | addToStart | addToEnd | addBefore | forEach | prepend | append | subtract | toObject, 
+    /* keyof orderedmap.orderedmap.default<prosemirror-model.prosemirror-model.MarkSpec> */ constructor | size | get | update | remove | addToStart | addToEnd | addBefore | forEach | prepend | append | subtract | toObject
+  ] = js.native
   
   @JSImport("prosemirror-test-builder", "strong")
   @js.native
@@ -96,6 +113,14 @@ object mod {
   @JSImport("prosemirror-test-builder", "ul")
   @js.native
   val ul: NodeBuilder = js.native
+  
+  @js.native
+  trait Builders_[S /* <: Schema[Any, Any] */]
+    extends StObject
+       with /* name */ StringDictionary[NodeBuilder | MarkBuilder] {
+    
+    var schema: S = js.native
+  }
   
   type ChildSpec = String | Node | Flat
   
@@ -110,9 +135,9 @@ object mod {
   @js.native
   trait NodeBuilder extends StObject {
     
-    def apply(attrsOrFirstChild: Unit, children: ChildSpec*): Node = js.native
-    def apply(attrsOrFirstChild: Attrs, children: ChildSpec*): Node = js.native
-    def apply(attrsOrFirstChild: ChildSpec, children: ChildSpec*): Node = js.native
+    def apply(attrsOrFirstChild: Unit, children: ChildSpec*): NodetagTags = js.native
+    def apply(attrsOrFirstChild: Attrs, children: ChildSpec*): NodetagTags = js.native
+    def apply(attrsOrFirstChild: ChildSpec, children: ChildSpec*): NodetagTags = js.native
   }
   
   type Tags = StringDictionary[Double]

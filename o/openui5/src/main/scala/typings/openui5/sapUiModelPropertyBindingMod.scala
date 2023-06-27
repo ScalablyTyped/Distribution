@@ -121,13 +121,12 @@ object sapUiModelPropertyBindingMod {
     def getFormatter(): js.Function = js.native
     
     /**
-      * Returns the related JavaScript primitive value of the bound target which is parsed by the {@link sap.ui.model.SimpleType#getModelFormat
-      * model format} of this binding's type. If this binding doesn't have a type, the original value which is
-      * stored in the model is returned.
+      * Returns the related JavaScript primitive value of the bound target which is parsed by the {@link sap.ui.model.SimpleType#getModelFormat model format }
+      * of this binding's type. If this binding doesn't have a type, the original value which is stored in the
+      * model is returned.
       *
-      * This method will be used when targetType is set to "internal" or when it's included in a {@link sap.ui.model.CompositeBinding
-      * CompositeBinding} and the CompositeBinding needs to have the related JavaScript primitive values for
-      * its type or formatter.
+      * This method will be used when targetType is set to "internal" or when it's included in a {@link sap.ui.model.CompositeBinding CompositeBinding }
+      * and the CompositeBinding needs to have the related JavaScript primitive values for its type or formatter.
       *
       * @returns The value which is parsed by the model format of the bound target, or the original value in
       * case of no type.
@@ -137,9 +136,8 @@ object sapUiModelPropertyBindingMod {
     /**
       * Returns the raw model value, as it exists in the model dataset.
       *
-      * This method will be used when targetType of a binding is set to "raw" or when it's include in a {@link
-      * sap.ui.model.CompositeBinding CompositeBinding} and the CompositeBinding needs to have the related JavaScript
-      * primitive values for its type or formatter.
+      * This method will be used when targetType of a binding is set to "raw" or when it's include in a {@link sap.ui.model.CompositeBinding CompositeBinding }
+      * and the CompositeBinding needs to have the related JavaScript primitive values for its type or formatter.
       *
       * @returns The value which is parsed by the model format of the bound target, or the original value in
       * case of no type.
@@ -167,7 +165,7 @@ object sapUiModelPropertyBindingMod {
     sBindingMode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BindingMode * / any */ String
     ): Unit = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the binding mode.
       */

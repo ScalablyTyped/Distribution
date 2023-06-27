@@ -18,8 +18,8 @@ object sapFSemanticDiscussInJamActionMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.f.semantic.SemanticButton#constructor
-    * sap.f.semantic.SemanticButton} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.f.semantic.SemanticButton#constructor sap.f.semantic.SemanticButton }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapFSemanticSemanticButtonMod.default {

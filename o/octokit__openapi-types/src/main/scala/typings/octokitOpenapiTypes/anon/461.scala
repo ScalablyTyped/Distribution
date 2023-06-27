@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `461` extends StObject {
   
-  var from: js.UndefOr[String | Null] = js.undefined
-  
-  var to: js.UndefOr[String] = js.undefined
+  var query: js.UndefOr[Filter] = js.undefined
 }
 object `461` {
   
@@ -20,14 +18,8 @@ object `461` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `461`] (val x: Self) extends AnyVal {
     
-    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Filter): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setFromNull: Self = StObject.set(x, "from", null)
-    
-    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
-    
-    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    
-    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

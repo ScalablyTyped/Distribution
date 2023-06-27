@@ -6,12 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.stdStrings.auto
+  - typings.std.stdStrings.instant
   - typings.std.stdStrings.smooth
 */
 trait ScrollBehavior extends StObject
 object ScrollBehavior {
   
   inline def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  
+  inline def instant: typings.std.stdStrings.instant = "instant".asInstanceOf[typings.std.stdStrings.instant]
   
   inline def smooth: typings.std.stdStrings.smooth = "smooth".asInstanceOf[typings.std.stdStrings.smooth]
 }

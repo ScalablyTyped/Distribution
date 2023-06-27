@@ -14,53 +14,53 @@ trait FieldColumnConfigProperties
      with FieldConfigProperties {
   
   /**
-    * Controls the sort order of the column.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#direction)
-    */
+  		 * Controls the sort order of the column.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#direction)
+  		 */
   var direction: js.UndefOr[asc_ | desc_ | Null] = js.undefined
   
   /**
-    * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#initialSortPriority)
-    */
+  		 * Use this in combination with [FeatureTable.multiSortEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled) and FeatureTable.direction properties to set sorting functionality on multiple columns.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#initialSortPriority)
+  		 */
   var initialSortPriority: js.UndefOr[Double] = js.undefined
   
   /**
-    * Set this object to customize the field column's menu content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#menuConfig)
-    */
+  		 * Set this object to customize the field column's menu content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#menuConfig)
+  		 */
   var menuConfig: js.UndefOr[ButtonMenuConfig] = js.undefined
   
   /**
-    * Indicates whether the field column can be sorted.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#sortable)
-    */
+  		 * Indicates whether the field column can be sorted.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#sortable)
+  		 */
   var sortable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Aligns the columns cell content horizontally.
-    *
-    * @default start
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#textAlign)
-    */
+  		 * Aligns the columns cell content horizontally.
+  		 *
+  		 * @default start
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#textAlign)
+  		 */
   var textAlign: js.UndefOr[start | center_ | end] = js.undefined
   
   /**
-    * Indicates whether the field column is visible.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#visible)
-    */
+  		 * Indicates whether the field column is visible.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object FieldColumnConfigProperties {

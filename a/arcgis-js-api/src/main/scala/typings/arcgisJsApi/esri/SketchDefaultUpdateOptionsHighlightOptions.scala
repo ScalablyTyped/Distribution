@@ -1,0 +1,32 @@
+package typings.arcgisJsApi.esri
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SketchDefaultUpdateOptionsHighlightOptions extends StObject {
+  
+  /**
+  		 * Indicates if highlighting is enabled for update operations.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
+  		 */
+  var enabled: js.UndefOr[Boolean] = js.undefined
+}
+object SketchDefaultUpdateOptionsHighlightOptions {
+  
+  inline def apply(): SketchDefaultUpdateOptionsHighlightOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SketchDefaultUpdateOptionsHighlightOptions]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchDefaultUpdateOptionsHighlightOptions] (val x: Self) extends AnyVal {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+  }
+}

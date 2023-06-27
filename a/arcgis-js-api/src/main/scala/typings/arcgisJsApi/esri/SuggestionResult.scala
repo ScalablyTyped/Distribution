@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuggestionResult extends StObject {
   
   /**
-    * Indicates if the result is a Collection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
-    */
+  		 * Indicates if the result is a Collection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
+  		 */
   var isCollection: Boolean
   
   /**
-    * ID used in combination with the `text` property to uniquely identify a suggestion.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
-    */
+  		 * ID used in combination with the `text` property to uniquely identify a suggestion.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
+  		 */
   var magicKey: String
   
   /**
-    * The string name of the suggested location to geocode.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
-    */
+  		 * The string name of the suggested location to geocode.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#SuggestionResult)
+  		 */
   var text: String
 }
 object SuggestionResult {

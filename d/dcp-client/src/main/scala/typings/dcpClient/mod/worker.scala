@@ -23,16 +23,16 @@ object worker {
   open class Worker () extends StObject {
     
     /**
-      * @start - Emitted when the worker is started.
-      * @stop - Emitted when the worker is stopped.
-      * @fetchStart - Emitted when the worker submits a result. Contains the value of DCC earned.
-      * @fetchEnd - Emitted when the worker’s slice fetch request is finished, on both success and error. If it was emmitted due to an error, the callback argument will be the error instance.
-      * @fetch - Emitted when the worker successfully fetches slices from the scheduler.
-      * @fetchError - Emitted when the worker’s slice fetch request returns an error. The callback argument is the error instance.
-      * @submitStart - Emitted when the worker starts a request to submit a result to the scheduler.
-      * @submitEnd - Emitted when the worker’s result submit request is finished, on both success and error. If it was emitted due to an error, the callback argument wil be the error instance.
-      * @submit - Emitted when the worker successfully submits a result to the scheduler.
-      * @submitError - Emitted when the worker successfully submits a result to the scheduler.
+      * start - Emitted when the worker is started.
+      * stop - Emitted when the worker is stopped.
+      * fetchStart - Emitted when the worker submits a result. Contains the value of DCC earned.
+      * fetchEnd - Emitted when the worker’s slice fetch request is finished, on both success and error. If it was emmitted due to an error, the callback argument will be the error instance.
+      * fetch - Emitted when the worker successfully fetches slices from the scheduler.
+      * fetchError - Emitted when the worker’s slice fetch request returns an error. The callback argument is the error instance.
+      * submitStart - Emitted when the worker starts a request to submit a result to the scheduler.
+      * submitEnd - Emitted when the worker’s result submit request is finished, on both success and error. If it was emitted due to an error, the callback argument wil be the error instance.
+      * submit - Emitted when the worker successfully submits a result to the scheduler.
+      * submitError - Emitted when the worker successfully submits a result to the scheduler.
       */
     def on(
       event: start | stop | fetchStart | fetchEnd | fetch | fetchError | submitStart | submitEnd | submit | submitError,

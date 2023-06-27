@@ -20,7 +20,7 @@ trait ListLevelLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+    * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -38,7 +38,7 @@ trait ListLevelLoadOptions extends StObject {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    * Gets or sets the name of the style that's linked to the specified list level object.
+    * Specifies the name of the style that's linked to the specified list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -47,7 +47,7 @@ trait ListLevelLoadOptions extends StObject {
   var linkedStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the number format for the specified list level.
+    * Specifies the number format for the specified list level.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -56,7 +56,7 @@ trait ListLevelLoadOptions extends StObject {
   var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the position (in points) of the number or bullet for the specified list level object.
+    * Specifies the position (in points) of the number or bullet for the specified list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -65,7 +65,7 @@ trait ListLevelLoadOptions extends StObject {
   var numberPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the number style for the list level object.
+    * Specifies the number style for the list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -74,7 +74,7 @@ trait ListLevelLoadOptions extends StObject {
   var numberStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
+    * Specifies the list level that must appear before the specified list level restarts numbering at 1.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -83,7 +83,7 @@ trait ListLevelLoadOptions extends StObject {
   var resetOnHigher: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the starting number for the specified list level object.
+    * Specifies the starting number for the specified list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -92,7 +92,7 @@ trait ListLevelLoadOptions extends StObject {
   var startAt: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the tab position for the specified list level object.
+    * Specifies the tab position for the specified list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -101,7 +101,7 @@ trait ListLevelLoadOptions extends StObject {
   var tabPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
+    * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -110,7 +110,7 @@ trait ListLevelLoadOptions extends StObject {
   var textPosition: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets the character inserted after the number for the specified list level.
+    * Specifies the character inserted after the number for the specified list level.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

@@ -24,7 +24,7 @@ trait Created extends StObject {
   var context: js.UndefOr[default] = js.undefined
   
   /**
-    * The callback function that is called after the metadata of the service is loaded and the {@link sap.ui.model.odata.v2.Context}
+    * The callback function that is called after the metadata of the service is loaded and the {@link sap.ui.model.odata.v2.Context }
     * instance for the newly created entry is available; The {@link sap.ui.model.odata.v2.Context} instance
     * for the newly created entry is passed as the first and only parameter.
     */
@@ -42,7 +42,7 @@ trait Created extends StObject {
     * 	 - batch mode must be enabled; see constructor parameter `useBatch`,
     * 	 - the back-end service must support the "Content-ID" header,
     * 	 - the back end must allow GET requests relative to this content ID outside the changeset within the
-    * 			`$batch` request.
+    *     `$batch` request.
     */
   var expand: js.UndefOr[String] = js.undefined
   

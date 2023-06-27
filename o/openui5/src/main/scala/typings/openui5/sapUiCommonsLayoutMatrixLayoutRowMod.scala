@@ -205,8 +205,8 @@ object sapUiCommonsLayoutMatrixLayoutRowMod {
     sStyleClass: String): Boolean = js.native
     
     /**
-      * Checks for the provided `sap.ui.commons.layout.MatrixLayoutCell` in the aggregation {@link #getCells
-      * cells}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.commons.layout.MatrixLayoutCell` in the aggregation {@link #getCells cells}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */

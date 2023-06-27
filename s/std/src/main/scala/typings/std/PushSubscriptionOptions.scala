@@ -4,12 +4,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions)
+  */
 trait PushSubscriptionOptions extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/applicationServerKey) */
   /* standard dom */
   val applicationServerKey: js.typedarray.ArrayBuffer | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/userVisibleOnly) */
   /* standard dom */
   val userVisibleOnly: scala.Boolean
 }

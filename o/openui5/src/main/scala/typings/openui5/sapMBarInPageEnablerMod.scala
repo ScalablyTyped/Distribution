@@ -12,7 +12,7 @@ object sapMBarInPageEnablerMod {
   @JSImport("sap/m/BarInPageEnabler", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     */
   open class default () extends BarInPageEnabler
   /* static members */
@@ -23,7 +23,7 @@ object sapMBarInPageEnablerMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds the sapMBarChildClass to a control.
       */
@@ -35,7 +35,7 @@ object sapMBarInPageEnablerMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addChildClassTo")(oControl.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.m.BarInPageEnabler with name `sClassName` and enriches it with the
       * information contained in `oClassInfo`.
@@ -90,7 +90,7 @@ object sapMBarInPageEnablerMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.m.BarInPageEnabler.
       *
@@ -99,7 +99,7 @@ object sapMBarInPageEnablerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the tooltip for the given control
       */
@@ -184,7 +184,7 @@ object sapMBarInPageEnablerMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets classes and HTML tag according to the context of the page.
       *
@@ -198,7 +198,7 @@ object sapMBarInPageEnablerMod {
     sContext: String): IBar = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       *
       * @returns with all available contexts.
@@ -206,7 +206,7 @@ object sapMBarInPageEnablerMod {
     def getContext(): BarContexts = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the HTML tag of the root domref.
       *
@@ -215,7 +215,7 @@ object sapMBarInPageEnablerMod {
     def getHTMLTag(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether the bar is sensitive to the container context.
       *
@@ -226,7 +226,7 @@ object sapMBarInPageEnablerMod {
     def isContextSensitive(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the HTML for the given control, using the provided {@link sap.ui.core.RenderManager}.
       */
@@ -242,7 +242,7 @@ object sapMBarInPageEnablerMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the HTML tag of the root element.
       *

@@ -8,6 +8,10 @@ trait SubscribedSku
   extends StObject
      with Entity {
   
+  var accountId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var accountName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // For example, 'User' or 'Company'.
   var appliesTo: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -34,6 +38,8 @@ trait SubscribedSku
     * organization has acquired, see List subscribedSkus.
     */
   var skuPartNumber: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var subscriptionIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object SubscribedSku {
   
@@ -44,6 +50,18 @@ object SubscribedSku {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SubscribedSku] (val x: Self) extends AnyVal {
+    
+    inline def setAccountId(value: NullableOption[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    
+    inline def setAccountName(value: NullableOption[String]): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    
+    inline def setAccountNameNull: Self = StObject.set(x, "accountName", null)
+    
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
     inline def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     
@@ -86,5 +104,13 @@ object SubscribedSku {
     inline def setSkuPartNumberNull: Self = StObject.set(x, "skuPartNumber", null)
     
     inline def setSkuPartNumberUndefined: Self = StObject.set(x, "skuPartNumber", js.undefined)
+    
+    inline def setSubscriptionIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "subscriptionIds", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptionIdsNull: Self = StObject.set(x, "subscriptionIds", null)
+    
+    inline def setSubscriptionIdsUndefined: Self = StObject.set(x, "subscriptionIds", js.undefined)
+    
+    inline def setSubscriptionIdsVarargs(value: String*): Self = StObject.set(x, "subscriptionIds", js.Array(value*))
   }
 }

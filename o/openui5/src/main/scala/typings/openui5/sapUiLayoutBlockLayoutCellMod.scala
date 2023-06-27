@@ -146,7 +146,7 @@ object sapUiLayoutBlockLayoutCellMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Destroys the titleLink in the aggregation {@link #getTitleLink titleLink}.
       *
@@ -155,7 +155,7 @@ object sapUiLayoutBlockLayoutCellMod {
     def destroyTitleLink(): this.type = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Gets current value of property {@link #getBackgroundColorSet backgroundColorSet}.
       *
@@ -167,7 +167,7 @@ object sapUiLayoutBlockLayoutCellMod {
     def getBackgroundColorSet(): BlockLayoutCellColorSet | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockLayoutCellColorSet * / any */ String) = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Gets current value of property {@link #getBackgroundColorShade backgroundColorShade}.
       *
@@ -219,7 +219,7 @@ object sapUiLayoutBlockLayoutCellMod {
     def getTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets content of aggregation {@link #getTitleLink titleLink}.
       *
@@ -315,7 +315,7 @@ object sapUiLayoutBlockLayoutCellMod {
     sBackgroundColorSet: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockLayoutCellColorSet * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Sets a new value for property {@link #getBackgroundColorSet backgroundColorSet}.
       *
@@ -340,7 +340,7 @@ object sapUiLayoutBlockLayoutCellMod {
     sBackgroundColorShade: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockLayoutCellColorShade * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Sets a new value for property {@link #getBackgroundColorShade backgroundColorShade}.
       *
@@ -422,7 +422,7 @@ object sapUiLayoutBlockLayoutCellMod {
     sTitleLevel: TitleLevel): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets the aggregated {@link #getTitleLink titleLink}.
       *
@@ -449,7 +449,7 @@ object sapUiLayoutBlockLayoutCellMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * The Background color set from which the background color will be selected. **Note:** backgroundColorSet
       * should be used only in combination with backgroundColorShade.
@@ -459,7 +459,7 @@ object sapUiLayoutBlockLayoutCellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * The index of the background color in the color set from which the color will be selected. **Note:** backgroundColorShade
       * should be used only in combination with backgroundColorSet.
@@ -497,7 +497,7 @@ object sapUiLayoutBlockLayoutCellMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * The link that will replace the title of the cell. **Note:** The only possible value is the `sap.m.Link`
       * control.

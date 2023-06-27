@@ -78,9 +78,9 @@ open class RemoteResource () extends StObject {
     * @param responseCallback The method to invoked when a client receive get response.
     * @param errorCallback The method to invoke on failure of getting response.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def methodDelete(responseCallback: RemoteResourceResponseCallback): Unit = js.native
   def methodDelete(responseCallback: RemoteResourceResponseCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -101,9 +101,9 @@ open class RemoteResource () extends StObject {
     * @param query The query to send to server. The resource request handler should handle this value.
     * @param errorCallback The method to invoke on failure of getting response.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def methodGet(responseCallback: RemoteResourceResponseCallback): Unit = js.native
   def methodGet(responseCallback: RemoteResourceResponseCallback, query: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -128,9 +128,9 @@ open class RemoteResource () extends StObject {
     * @param query The query to send to server. The resource request handler should handle this value.
     * @param errorCallback The method to invoke on failure of getting response.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def methodPost(representation: Representation, responseCallback: RemoteResourceResponseCallback): Unit = js.native
   def methodPost(
@@ -170,9 +170,9 @@ open class RemoteResource () extends StObject {
     * @param query The query to send to server. The resource request handler should handle this value.
     * @param errorCallback The method to invoke on failure of getting response.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def methodPut(representation: Representation, responseCallback: RemoteResourceResponseCallback): Unit = js.native
   def methodPut(
@@ -220,9 +220,9 @@ open class RemoteResource () extends StObject {
     *
     * @param successCallback The method to invoked when remote resource's state is changed, registered callbacks will be called in turn. Internally, it checks the state of resource, periodically. Thus, it may not receive the state, immediately.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def setResourceStateChangeListener(successCallback: ResourceStateChangeCallback): Unit = js.native
   
@@ -234,9 +234,9 @@ open class RemoteResource () extends StObject {
     *
     * @param updatedCallback The method to invoked when the remote resource is changed.
     *
-    * @throw WebAPIException with error type InvalidStateError, this error occur when already started.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type InvalidStateError, this error occur when already started.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def startCaching(): Unit = js.native
   def startCaching(updatedCallback: CacheUpdatedCallback): Unit = js.native
@@ -251,9 +251,9 @@ open class RemoteResource () extends StObject {
     * @param successCallback The method to invoked when the resource receive notification message.
     * @param query The query to send to server. The resource request handler should handle this value.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def startObserving(observePolicy: ObservePolicy, successCallback: RemoteResourceResponseCallback): Unit = js.native
   def startObserving(observePolicy: ObservePolicy, successCallback: RemoteResourceResponseCallback, query: Query): Unit = js.native
@@ -266,8 +266,8 @@ open class RemoteResource () extends StObject {
     *
     * @remark Example of using can be find at [startCaching](iotcon.html#RemoteResource::startCaching) code example.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped
     */
   def stopCaching(): Unit = js.native
   
@@ -279,8 +279,8 @@ open class RemoteResource () extends StObject {
     *
     * @remark Example of using can be find at [startObserving](iotcon.html#RemoteResource::startObserving) code example.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def stopObserving(): Unit = js.native
   
@@ -299,8 +299,8 @@ open class RemoteResource () extends StObject {
     *
     * @remark Example of using can be find at [setResourceStateChangeListener](iotcon.html#RemoteResource::setResourceStateChangeListener) code example.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def unsetResourceStateChangeListener(): Unit = js.native
   

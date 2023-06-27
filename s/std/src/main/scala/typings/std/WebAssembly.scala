@@ -18,10 +18,12 @@ object WebAssembly {
   
   type Exports = Record[java.lang.String, ExportValue]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global) */
   trait Global
     extends StObject
        with _ExportValue {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/value) */
     /* standard dom */
     var value: Any
   }
@@ -87,8 +89,10 @@ object WebAssembly {
   
   type Imports = Record[java.lang.String, ModuleImports]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance) */
   trait Instance extends StObject {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance/exports) */
     /* standard dom */
     val exports: Exports
   }
@@ -108,13 +112,16 @@ object WebAssembly {
   
   type LinkError = js.Error
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory) */
   trait Memory
     extends StObject
        with _ExportValue {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer) */
     /* standard dom */
     val buffer: js.typedarray.ArrayBuffer
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow) */
     /* standard dom */
     def grow(delta: Double): Double
   }
@@ -167,6 +174,7 @@ object WebAssembly {
     }
   }
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module) */
   trait Module extends StObject
   
   trait ModuleExportDescriptor extends StObject {
@@ -226,21 +234,26 @@ object WebAssembly {
   
   type RuntimeError = js.Error
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table) */
   @js.native
   trait Table
     extends StObject
        with _ExportValue {
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/get) */
     /* standard dom */
     def get(index: Double): Any = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/grow) */
     /* standard dom */
     def grow(delta: Double): Double = js.native
     def grow(delta: Double, value: Any): Double = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/length) */
     /* standard dom */
     val length: Double = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/set) */
     /* standard dom */
     def set(index: Double): Unit = js.native
     def set(index: Double, value: Any): Unit = js.native

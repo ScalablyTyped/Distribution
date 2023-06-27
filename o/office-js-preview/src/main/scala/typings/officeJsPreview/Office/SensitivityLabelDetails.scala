@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the properties of available sensitivity labels in Outlook.
   * 
   * @remarks
-  * [Api set: Mailbox preview]
+  * [Api set: Mailbox 1.13]
   * 
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
   *
@@ -17,45 +17,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
   *
   * To learn more about how to manage sensitivity labels in your add-in, see
-  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
-  * 
-  * @beta
+  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.
   */
 trait SensitivityLabelDetails extends StObject {
   
   /**
     * The {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels | sublabels} of the sensitivity label.
     * Returns `null` if a label doesn't have any sublabels.
-    * 
-    * @beta
     */
   var children: js.Array[SensitivityLabelDetails]
   
   /**
     * The color of the sensitivity label.
-    * 
-    * @beta
     */
   var color: String
   
   /**
     * The unique identifier (GUID) of the sensitivity label.
-    * 
-    * @beta
     */
   var id: String
   
   /**
     * The name of the sensitivity label.
-    * 
-    * @beta
     */
   var name: String
   
   /**
     * The description of the sensitivity label.
-    * 
-    * @beta
     */
   var tooltip: String
 }

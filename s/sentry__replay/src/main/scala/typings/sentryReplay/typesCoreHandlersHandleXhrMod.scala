@@ -1,8 +1,8 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.NetworkRequestData
-import typings.sentryReplay.typesTypesMod.ReplayContainer
-import typings.sentryReplay.typesTypesMod.ReplayPerformanceEntry
+import typings.sentryReplay.typesTypesPerformanceMod.NetworkRequestData
+import typings.sentryReplay.typesTypesPerformanceMod.ReplayPerformanceEntry
+import typings.sentryReplay.typesTypesReplayMod.ReplayContainer
 import typings.sentryTypes.typesInstrumentMod.HandlerDataXhr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

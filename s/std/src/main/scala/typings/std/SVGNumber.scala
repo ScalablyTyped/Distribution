@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <number> basic data type. */
+/**
+  * Corresponds to the <number> basic data type.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGNumber)
+  */
 trait SVGNumber extends StObject {
   
   /* standard dom */

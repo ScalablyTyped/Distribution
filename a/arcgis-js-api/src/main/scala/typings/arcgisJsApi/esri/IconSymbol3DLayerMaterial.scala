@@ -9,12 +9,12 @@ trait IconSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The fill color of the icon.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
-    */
+  		 * The fill color of the icon.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object IconSymbol3DLayerMaterial {

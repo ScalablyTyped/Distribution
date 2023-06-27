@@ -9,26 +9,26 @@ trait DatePickerProperties
      with WidgetProperties {
   
   /**
-    * Indicates whether the date gets updated when the user changes the month in the drop-down.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#commitOnMonthChange)
-    */
+  		 * Indicates whether the date gets updated when the user changes the month in the drop-down.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#commitOnMonthChange)
+  		 */
   var commitOnMonthChange: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The input value for the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#value)
-    */
+  		 * The input value for the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#value)
+  		 */
   var value: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[DatePickerViewModelProperties] = js.undefined
 }
 object DatePickerProperties {

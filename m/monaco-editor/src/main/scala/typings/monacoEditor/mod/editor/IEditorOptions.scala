@@ -547,6 +547,11 @@ trait IEditorOptions extends StObject {
   var parameterHints: js.UndefOr[IEditorParameterHintOptions] = js.undefined
   
   /**
+    * Controls support for changing how content is pasted into the editor.
+    */
+  var pasteAs: js.UndefOr[IPasteAsOptions] = js.undefined
+  
+  /**
     * Controls whether to focus the inline editor in the peek widget by default.
     * Defaults to false.
     */
@@ -1213,6 +1218,10 @@ object IEditorOptions {
     inline def setParameterHints(value: IEditorParameterHintOptions): Self = StObject.set(x, "parameterHints", value.asInstanceOf[js.Any])
     
     inline def setParameterHintsUndefined: Self = StObject.set(x, "parameterHints", js.undefined)
+    
+    inline def setPasteAs(value: IPasteAsOptions): Self = StObject.set(x, "pasteAs", value.asInstanceOf[js.Any])
+    
+    inline def setPasteAsUndefined: Self = StObject.set(x, "pasteAs", js.undefined)
     
     inline def setPeekWidgetDefaultFocus(value: tree | typings.monacoEditor.monacoEditorStrings.editor): Self = StObject.set(x, "peekWidgetDefaultFocus", value.asInstanceOf[js.Any])
     

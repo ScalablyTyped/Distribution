@@ -8,7 +8,7 @@ trait Responses200ContentApplicationjsonInvitee extends StObject {
   
   var parameters: PathInvitationidOwnerRepo
   
-  var requestBody: js.UndefOr[ContentApplicationjson269] = js.undefined
+  var requestBody: js.UndefOr[ContentApplicationjson318] = js.undefined
   
   var responses: `200ContentApplicationjsonInvitee`
 }
@@ -24,7 +24,7 @@ object Responses200ContentApplicationjsonInvitee {
     
     inline def setParameters(value: PathInvitationidOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson269): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson318): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

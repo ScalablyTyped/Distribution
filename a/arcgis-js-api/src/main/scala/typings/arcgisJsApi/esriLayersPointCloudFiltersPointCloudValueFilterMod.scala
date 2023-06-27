@@ -12,20 +12,20 @@ object esriLayersPointCloudFiltersPointCloudValueFilterMod {
   @JSImport("esri/layers/pointCloudFilters/PointCloudValueFilter", JSImport.Namespace)
   @js.native
   /**
-    * Every lidar point can have a classification that defines the type of surface that reflected the laser pulse.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html)
-    */
+  		 * Every lidar point can have a classification that defines the type of surface that reflected the laser pulse.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html)
+  		 */
   open class ^ ()
     extends StObject
        with PointCloudValueFilter {
     def this(properties: PointCloudValueFilterProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

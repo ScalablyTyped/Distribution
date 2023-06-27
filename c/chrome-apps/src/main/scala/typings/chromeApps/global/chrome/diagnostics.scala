@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Diagnostics //
 /////////////////
 /**
-  * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
+  * @requires Only Chrome OS. Crashes app on Windows.
   * @requires Permissions: 'diagnostics'
   */
 object diagnostics {

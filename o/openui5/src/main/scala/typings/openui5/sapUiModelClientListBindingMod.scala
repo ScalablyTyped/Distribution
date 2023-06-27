@@ -12,7 +12,7 @@ object sapUiModelClientListBindingMod {
   @js.native
   open class default protected () extends ClientListBinding {
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new ClientListBinding.
       *
@@ -445,7 +445,7 @@ object sapUiModelClientListBindingMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new subclass of class sap.ui.model.ClientListBinding with name `sClassName` and enriches it
       * with the information contained in `oClassInfo`.
@@ -500,7 +500,7 @@ object sapUiModelClientListBindingMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns a metadata object for class sap.ui.model.ClientListBinding.
       *

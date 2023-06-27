@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryRangeValues extends StObject {
   
   /**
-    * The range id.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#rangeValues)
-    */
+  		 * The range id.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#rangeValues)
+  		 */
   var name: String
   
   /**
-    * Single value or value range.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#rangeValues)
-    */
+  		 * Single value or value range.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#rangeValues)
+  		 */
   var values: Double | js.Array[Double]
 }
 object QueryRangeValues {

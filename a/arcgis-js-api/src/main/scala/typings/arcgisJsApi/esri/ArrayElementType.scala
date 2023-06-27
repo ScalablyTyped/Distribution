@@ -16,24 +16,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrayElementType extends StObject {
   
   /**
-    * Only applicable when `type` is `array`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
-    */
+  		 * Only applicable when `type` is `array`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
+  		 */
   var elementType: js.UndefOr[ArrayElementType] = js.undefined
   
   /**
-    * Only applicable when `type` is `dictionary`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
-    */
+  		 * Only applicable when `type` is `dictionary`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
+  		 */
   var properties: js.UndefOr[js.Array[ProfileVariable]] = js.undefined
   
   /**
-    * The Arcade data type of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
-    */
+  		 * The Arcade data type of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayElementType)
+  		 */
   var `type`: array | dictionary | feature | featureSet | featureSetCollection | typings.arcgisJsApi.arcgisJsApiStrings.geometry | number | text | date | boolean
 }
 object ArrayElementType {

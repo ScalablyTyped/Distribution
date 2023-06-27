@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@datadog/native-iast-taint-tracking" : "1.4.1"
+      "@datadog/native-iast-taint-tracking" : "2.0.0-pre"
     }
   ],
   "test-dependencies" : [
     {
-      "@datadog/native-iast-taint-tracking" : "1.4.1"
+      "@datadog/native-iast-taint-tracking" : "2.0.0-pre"
     }
   ],
   "compile-devDependencies" : [

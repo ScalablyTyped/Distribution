@@ -16,7 +16,7 @@ trait Colors extends StObject {
   
   var startSizeIndex: Double
   
-  var stats: js.Array[DecimalPlaces | Name]
+  var stats: js.Array[DecimalPlaces | Stats]
   
   var textRefreshRate: Double
 }
@@ -28,7 +28,7 @@ object Colors {
     gpu: Enabled,
     sizes: js.Array[Graphs],
     startSizeIndex: Double,
-    stats: js.Array[DecimalPlaces | Name],
+    stats: js.Array[DecimalPlaces | Stats],
     textRefreshRate: Double
   ): Colors = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], gpu = gpu.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any], startSizeIndex = startSizeIndex.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], textRefreshRate = textRefreshRate.asInstanceOf[js.Any])
@@ -50,9 +50,9 @@ object Colors {
     
     inline def setStartSizeIndex(value: Double): Self = StObject.set(x, "startSizeIndex", value.asInstanceOf[js.Any])
     
-    inline def setStats(value: js.Array[DecimalPlaces | Name]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: js.Array[DecimalPlaces | Stats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    inline def setStatsVarargs(value: (DecimalPlaces | Name)*): Self = StObject.set(x, "stats", js.Array(value*))
+    inline def setStatsVarargs(value: (DecimalPlaces | Stats)*): Self = StObject.set(x, "stats", js.Array(value*))
     
     inline def setTextRefreshRate(value: Double): Self = StObject.set(x, "textRefreshRate", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ object mod {
        with typings.zumly.mod.zumly {
     /**
       * Creates a Zumly instance
-      * @params options
+      * @param options
       * @example
       *  new Zumly({
       *  mount: '.mount',

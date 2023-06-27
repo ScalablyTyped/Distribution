@@ -10,38 +10,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidateNetworkTopologyParametersProperties extends StObject {
   
   /**
-    * Specifies the geodatabase version name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#gdbVersion)
-    */
+  		 * Specifies the geodatabase version name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the GUID used to lock the version.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#sessionID)
-    */
+  		 * Specifies the GUID used to lock the version.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#sessionID)
+  		 */
   var sessionID: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the envelope of the area to validate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validateArea)
-    */
+  		 * Specifies the envelope of the area to validate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validateArea)
+  		 */
   var validateArea: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * Specifies the set of features and objects to validate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationSet)
-    */
+  		 * Specifies the set of features and objects to validate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationSet)
+  		 */
   var validationSet: js.UndefOr[js.Array[ValidationSetItemJSON]] = js.undefined
   
   /**
-    * Specifies the validation to perform.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationType)
-    */
+  		 * Specifies the validation to perform.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#validationType)
+  		 */
   var validationType: js.UndefOr[normal | rebuild | `force-rebuild`] = js.undefined
 }
 object ValidateNetworkTopologyParametersProperties {

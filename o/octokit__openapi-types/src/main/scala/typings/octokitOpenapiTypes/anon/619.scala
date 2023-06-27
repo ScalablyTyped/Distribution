@@ -6,22 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `619` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Pullrequestreviewid]
+  var path: OrgString
+  
+  var query: js.UndefOr[PerpageSortType] = js.undefined
 }
 object `619` {
   
-  inline def apply(applicationSlashjson: js.Array[Pullrequestreviewid]): `619` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(path: OrgString): `619` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`619`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `619`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Pullrequestreviewid]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Pullrequestreviewid*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setQuery(value: PerpageSortType): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

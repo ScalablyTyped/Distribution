@@ -7,39 +7,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlideCreateFromOptionsScreenshot extends StObject {
   
   /**
-    * The image format.
-    *
-    * @default png
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
-    */
+  		 * The image format.
+  		 *
+  		 * @default png
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
+  		 */
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    * The image height.
-    *
-    * @default 75
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
-    */
+  		 * The image height.
+  		 *
+  		 * @default 75
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The image quality (due to compression).
-    *
-    * @default 80
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
-    */
+  		 * The image quality (due to compression).
+  		 *
+  		 * @default 80
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
+  		 */
   var quality: js.UndefOr[Double] = js.undefined
   
   /**
-    * The image width.
-    *
-    * @default 120
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
-    */
+  		 * The image width.
+  		 *
+  		 * @default 120
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object SlideCreateFromOptionsScreenshot {

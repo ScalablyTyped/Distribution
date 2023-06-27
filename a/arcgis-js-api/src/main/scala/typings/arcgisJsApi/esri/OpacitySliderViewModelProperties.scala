@@ -9,10 +9,10 @@ trait OpacitySliderViewModelProperties
      with SmartMappingSliderViewModelProperties {
   
   /**
-    * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#stops)
-    */
+  		 * The opacity stops from the [OpacityVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html) to link to the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider-OpacitySliderViewModel.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
 }
 object OpacitySliderViewModelProperties {

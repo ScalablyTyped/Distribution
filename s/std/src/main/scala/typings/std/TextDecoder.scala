@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A decoder for a specific method, that is a specific character encoding, like utf-8, iso-8859-2, koi8, cp1261, gbk, etc. A decoder takes a stream of bytes as input and emits a stream of code points. For a more scalable, non-native library, see StringView – a C-like representation of strings based on typed arrays. */
+/**
+  * A decoder for a specific method, that is a specific character encoding, like utf-8, iso-8859-2, koi8, cp1261, gbk, etc. A decoder takes a stream of bytes as input and emits a stream of code points. For a more scalable, non-native library, see StringView – a C-like representation of strings based on typed arrays.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder)
+  */
 @js.native
 trait TextDecoder
   extends StObject
@@ -22,6 +26,8 @@ trait TextDecoder
     * ```
     *
     * If the error mode is "fatal" and encoding's decoder returns error, throws a TypeError.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextDecoder/decode)
     */
   /* standard dom */
   def decode(): java.lang.String = js.native

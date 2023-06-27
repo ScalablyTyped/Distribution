@@ -1,5 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSMathOperator
 import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ trait CSSMathValue
   extends StObject
      with CSSNumericValue {
   
-  val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any
+  val operator: CSSMathOperator
 }
 object CSSMathValue {
   
@@ -20,7 +21,7 @@ object CSSMathValue {
     max: /* repeated */ CSSNumberish => CSSNumericValue,
     min: /* repeated */ CSSNumberish => CSSNumericValue,
     mul: /* repeated */ CSSNumberish => CSSNumericValue,
-    operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any,
+    operator: CSSMathOperator,
     sub: /* repeated */ CSSNumberish => CSSNumericValue,
     to: String => CSSUnitValue,
     toSum: /* repeated */ String => CSSMathSum,
@@ -35,8 +36,6 @@ object CSSMathValue {
   @scala.inline
   implicit open class MutableBuilder[Self <: CSSMathValue] (val x: Self) extends AnyVal {
     
-    inline def setOperator(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any
-    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: CSSMathOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

@@ -9,9 +9,9 @@ trait `503ContentApplicationjsonCodeDocumentationurlMessage` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonDismissedreasonFixedat
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
   var `503`: ContentApplicationjsonCodeDocumentationurlMessage
 }
@@ -19,8 +19,8 @@ object `503ContentApplicationjsonCodeDocumentationurlMessage` {
   
   inline def apply(
     `200`: ContentApplicationjsonDismissedreasonFixedat,
-    `403`: Content36,
-    `404`: Content36,
+    `403`: Content41,
+    `404`: Content41,
     `503`: ContentApplicationjsonCodeDocumentationurlMessage
   ): `503ContentApplicationjsonCodeDocumentationurlMessage` = {
     val __obj = js.Dynamic.literal()
@@ -36,9 +36,9 @@ object `503ContentApplicationjsonCodeDocumentationurlMessage` {
     
     inline def set200(value: ContentApplicationjsonDismissedreasonFixedat): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurlMessage): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

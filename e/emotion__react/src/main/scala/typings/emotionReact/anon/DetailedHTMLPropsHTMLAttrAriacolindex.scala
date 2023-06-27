@@ -90,12 +90,12 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
-import typings.std.HTMLDataListElement
+import typings.std.HTMLTemplateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDataListElement>, std.HTMLDataListElement> & {  css :@emotion/serialize.@emotion/serialize.Interpolation<@emotion/react.@emotion/react.Theme> | undefined} */
+/* Inlined react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLTemplateElement>, std.HTMLTemplateElement> & {  css :@emotion/serialize.@emotion/serialize.Interpolation<@emotion/react.@emotion/react.Theme> | undefined} */
 trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
   
   // RDFa Attributes
@@ -117,6 +117,18 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
+  /**
+    * Defines a string value that labels the current element, which is intended to be converted into Braille.
+    * @see aria-label.
+    */
+  var `aria-braillelabel`: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.
+    * @see aria-roledescription.
+    */
+  var `aria-brailleroledescription`: js.UndefOr[String] = js.undefined
+  
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   /**
@@ -138,6 +150,12 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
   var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
   /**
+    * Defines a human readable text alternative of aria-colindex.
+    * @see aria-rowindextext.
+    */
+  var `aria-colindextext`: js.UndefOr[String] = js.undefined
+  
+  /**
     * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-colindex @see aria-rowspan.
     */
@@ -157,6 +175,12 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
     * @see aria-labelledby
     */
   var `aria-describedby`: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines a string value that describes or annotates the current element.
+    * @see related aria-describedby.
+    */
+  var `aria-description`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element that provides a detailed, extended description for the object.
@@ -303,6 +327,12 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
   var `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
   /**
+    * Defines a human readable text alternative of aria-rowindex.
+    * @see aria-colindextext.
+    */
+  var `aria-rowindextext`: js.UndefOr[String] = js.undefined
+  
+  /**
     * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-rowindex @see aria-colspan.
     */
@@ -410,181 +440,181 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
   var nonce: js.UndefOr[String] = js.undefined
   
   // Media Events
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDataListElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDataListElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDataListElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTemplateElement]] = js.undefined
   
   // MouseEvents
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLDataListElement]] = js.undefined
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Form Events
-  var onChange: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onChange: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDataListElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDataListElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDataListElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDrag: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[HTMLDataListElement]] = js.undefined
+  var onDrop: js.UndefOr[DragEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onError: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLDataListElement]] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onInput: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
   // also a Media Event
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTemplateElement]] = js.undefined
   
   /** @deprecated */
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Image Events
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDataListElement]] = js.undefined
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDataListElement]] = js.undefined
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onPause: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Pointer Events
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDataListElement]] = js.undefined
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onReset: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onResize: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onResize: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler[HTMLDataListElement]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Selection Events
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLDataListElement]] = js.undefined
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDataListElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDataListElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDataListElement]] = js.undefined
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDataListElement]] = js.undefined
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDataListElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLDataListElement]] = js.undefined
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLTemplateElement]] = js.undefined
   
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLDataListElement]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLTemplateElement]] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -600,7 +630,7 @@ trait DetailedHTMLPropsHTMLAttrAriacolindex extends StObject {
     * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
     * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
     */
-  var ref: js.UndefOr[LegacyRef[HTMLDataListElement]] = js.undefined
+  var ref: js.UndefOr[LegacyRef[HTMLTemplateElement]] = js.undefined
   
   var rel: js.UndefOr[String] = js.undefined
   
@@ -668,6 +698,14 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
+    inline def `setAria-braillelabel`(value: String): Self = StObject.set(x, "aria-braillelabel", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-braillelabelUndefined`: Self = StObject.set(x, "aria-braillelabel", js.undefined)
+    
+    inline def `setAria-brailleroledescription`(value: String): Self = StObject.set(x, "aria-brailleroledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-brailleroledescriptionUndefined`: Self = StObject.set(x, "aria-brailleroledescription", js.undefined)
+    
     inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
@@ -684,6 +722,10 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     
     inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
     
+    inline def `setAria-colindextext`(value: String): Self = StObject.set(x, "aria-colindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colindextextUndefined`: Self = StObject.set(x, "aria-colindextext", js.undefined)
+    
     inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
     
     inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
@@ -699,6 +741,10 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-description`(value: String): Self = StObject.set(x, "aria-description", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-descriptionUndefined`: Self = StObject.set(x, "aria-description", js.undefined)
     
     inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
     
@@ -817,6 +863,10 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
     
     inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+    
+    inline def `setAria-rowindextext`(value: String): Self = StObject.set(x, "aria-rowindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowindextextUndefined`: Self = StObject.set(x, "aria-rowindextext", js.undefined)
     
     inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
     
@@ -976,323 +1026,323 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     
     inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    inline def setOnAbort(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+    inline def setOnAbort(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnAnimationEnd(value: AnimationEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+    inline def setOnAnimationEnd(value: AnimationEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
     
     inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
-    inline def setOnAnimationIteration(value: AnimationEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+    inline def setOnAnimationIteration(value: AnimationEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
     
     inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
-    inline def setOnAnimationStart(value: AnimationEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+    inline def setOnAnimationStart(value: AnimationEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
-    inline def setOnAuxClick(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+    inline def setOnAuxClick(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
     inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
-    inline def setOnBeforeInput(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+    inline def setOnBeforeInput(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[HTMLDataListElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[HTMLTemplateElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnCanPlay(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+    inline def setOnCanPlay(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
-    inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+    inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
     
     inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
     
     inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
     
-    inline def setOnChange(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnCompositionEnd(value: CompositionEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+    inline def setOnCompositionEnd(value: CompositionEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
     
     inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
-    inline def setOnCompositionStart(value: CompositionEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+    inline def setOnCompositionStart(value: CompositionEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
     
     inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
-    inline def setOnCompositionUpdate(value: CompositionEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+    inline def setOnCompositionUpdate(value: CompositionEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    inline def setOnContextMenu(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
-    inline def setOnCopy(value: ClipboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+    inline def setOnCopy(value: ClipboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
     
     inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
-    inline def setOnCut(value: ClipboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+    inline def setOnCut(value: ClipboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDoubleClick(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnDoubleClick(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
-    inline def setOnDrag(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragEnd(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    inline def setOnDragEnter(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+    inline def setOnDragEnter(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
     
     inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
-    inline def setOnDragExit(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+    inline def setOnDragExit(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
     
     inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
-    inline def setOnDragLeave(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+    inline def setOnDragLeave(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
     
     inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
-    inline def setOnDragOver(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+    inline def setOnDragOver(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
     
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
-    inline def setOnDragStart(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    inline def setOnDrop(value: DragEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+    inline def setOnDrop(value: DragEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
     
     inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
-    inline def setOnDurationChange(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+    inline def setOnDurationChange(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
-    inline def setOnEmptied(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+    inline def setOnEmptied(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
     
     inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
-    inline def setOnEncrypted(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+    inline def setOnEncrypted(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
     
     inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
-    inline def setOnEnded(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+    inline def setOnEnded(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnError(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnFocus(value: FocusEvent[HTMLDataListElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: FocusEvent[HTMLTemplateElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnInput(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+    inline def setOnInput(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
     
     inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
-    inline def setOnInvalid(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+    inline def setOnInvalid(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeyDown(value: KeyboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
-    inline def setOnKeyPress(value: KeyboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+    inline def setOnKeyPress(value: KeyboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
     inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
-    inline def setOnKeyUp(value: KeyboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: KeyboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
-    inline def setOnLoad(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    inline def setOnLoadStart(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+    inline def setOnLoadStart(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
     
     inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    inline def setOnLoadedData(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+    inline def setOnLoadedData(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
     
     inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
-    inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+    inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
     
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnMouseDown(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    inline def setOnMouseEnter(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseLeave(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
-    inline def setOnMouseMove(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    inline def setOnMouseOut(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    inline def setOnMouseOut(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    inline def setOnMouseOver(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    inline def setOnMouseOver(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    inline def setOnMouseUp(value: MouseEvent[HTMLDataListElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    inline def setOnMouseUp(value: MouseEvent[HTMLTemplateElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
-    inline def setOnPaste(value: ClipboardEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+    inline def setOnPaste(value: ClipboardEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
     
     inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
-    inline def setOnPause(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+    inline def setOnPause(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
-    inline def setOnPlay(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+    inline def setOnPlay(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
-    inline def setOnPlaying(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+    inline def setOnPlaying(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
     
     inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
-    inline def setOnPointerCancel(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    inline def setOnPointerCancel(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
     
     inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
-    inline def setOnPointerDown(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    inline def setOnPointerDown(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
     
     inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
-    inline def setOnPointerEnter(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    inline def setOnPointerEnter(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
     
     inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
-    inline def setOnPointerLeave(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    inline def setOnPointerLeave(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
     
     inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
-    inline def setOnPointerMove(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    inline def setOnPointerMove(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
     
     inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
-    inline def setOnPointerOut(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+    inline def setOnPointerOut(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
     
     inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
-    inline def setOnPointerOver(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+    inline def setOnPointerOver(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
     
     inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
-    inline def setOnPointerUp(value: PointerEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    inline def setOnPointerUp(value: PointerEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
-    inline def setOnProgress(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
-    inline def setOnRateChange(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+    inline def setOnRateChange(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
     
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
-    inline def setOnReset(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+    inline def setOnReset(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
-    inline def setOnResize(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+    inline def setOnResize(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
     inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
-    inline def setOnScroll(value: UIEvent[HTMLDataListElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: UIEvent[HTMLTemplateElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSeeked(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+    inline def setOnSeeked(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
     
     inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
-    inline def setOnSeeking(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+    inline def setOnSeeking(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
-    inline def setOnSelect(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnStalled(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+    inline def setOnStalled(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
     
     inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
-    inline def setOnSubmit(value: FormEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    inline def setOnSubmit(value: FormEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
-    inline def setOnSuspend(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+    inline def setOnSuspend(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
     
     inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
-    inline def setOnTimeUpdate(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+    inline def setOnTimeUpdate(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
     
     inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
-    inline def setOnTouchCancel(value: TouchEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    inline def setOnTouchCancel(value: TouchEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     
     inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
-    inline def setOnTouchEnd(value: TouchEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    inline def setOnTouchEnd(value: TouchEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
     
     inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
-    inline def setOnTouchMove(value: TouchEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    inline def setOnTouchMove(value: TouchEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
     
     inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
-    inline def setOnTouchStart(value: TouchEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    inline def setOnTouchStart(value: TouchEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setOnTransitionEnd(value: TransitionEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+    inline def setOnTransitionEnd(value: TransitionEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
-    inline def setOnVolumeChange(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+    inline def setOnVolumeChange(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
-    inline def setOnWaiting(value: SyntheticEvent[HTMLDataListElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+    inline def setOnWaiting(value: SyntheticEvent[HTMLTemplateElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
     
     inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
-    inline def setOnWheel(value: WheelEvent[HTMLDataListElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+    inline def setOnWheel(value: WheelEvent[HTMLTemplateElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
@@ -1312,9 +1362,9 @@ object DetailedHTMLPropsHTMLAttrAriacolindex {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
-    inline def setRef(value: LegacyRef[HTMLDataListElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[HTMLTemplateElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ HTMLDataListElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ HTMLTemplateElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

@@ -208,9 +208,9 @@ object sapUxapObjectPageSubSectionMod {
       *
       * Don't use the `sapUxAPObjectPageSubSectionAlignContent` CSS class in the following cases:
       * 	 - In combination with `ResponsiveLayout`, because `ResponsiveLayout` applies custom paddings. To align
-      * 			items with `sapUxAPObjectPageSubSectionAlignContent`, use `ColumnLayout`.
+      *     items with `sapUxAPObjectPageSubSectionAlignContent`, use `ColumnLayout`.
       * 	 - If there are multiple controls in the same `ObjectPageSubSection`, because the CSS class interferes
-      * 			with their alignment.  Example:
+      *     with their alignment.  Example:
       *
       *
       * ```javascript
@@ -240,7 +240,7 @@ object sapUxapObjectPageSubSectionMod {
     def getMoreBlocks(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getShowTitle showTitle}.
       *
@@ -475,7 +475,7 @@ object sapUxapObjectPageSubSectionMod {
     sMode: ObjectPageSubSectionMode): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getShowTitle showTitle}.
       *
@@ -546,9 +546,9 @@ object sapUxapObjectPageSubSectionMod {
       *
       * Don't use the `sapUxAPObjectPageSubSectionAlignContent` CSS class in the following cases:
       * 	 - In combination with `ResponsiveLayout`, because `ResponsiveLayout` applies custom paddings. To align
-      * 			items with `sapUxAPObjectPageSubSectionAlignContent`, use `ColumnLayout`.
+      *     items with `sapUxAPObjectPageSubSectionAlignContent`, use `ColumnLayout`.
       * 	 - If there are multiple controls in the same `ObjectPageSubSection`, because the CSS class interferes
-      * 			with their alignment.  Example:
+      *     with their alignment.  Example:
       *
       *
       * ```javascript
@@ -576,7 +576,7 @@ object sapUxapObjectPageSubSectionMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Determines whether to display the `SubSection` title or not.
       *

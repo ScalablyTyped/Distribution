@@ -1,6 +1,6 @@
 package typings.swr
 
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.swr.anon.PartialPropsWithChildrenv
 import typings.swr.anon.PropsWithChildrenvaluePar
@@ -37,8 +37,8 @@ object mod {
   /* Inlined react.react.FC<react.react.PropsWithChildren<{  value :std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | (parentConfig : std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | undefined): std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | undefined}>> & {  defaultValue :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FullConfiguration * / any} */
   object SWRConfig {
     
-    inline def apply(props: PropsWithChildrenvaluePar): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildrenvaluePar, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenvaluePar): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: PropsWithChildrenvaluePar, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("swr", "SWRConfig")
     @js.native

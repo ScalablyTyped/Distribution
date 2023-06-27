@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-ble-central
 
-Typings are for version 1.6.3
+Typings are for version 1.7.0
 
 ## Library description:
 Bluetooth Low Energy (BLE) Central Plugin

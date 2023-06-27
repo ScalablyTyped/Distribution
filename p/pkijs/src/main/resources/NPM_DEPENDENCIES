@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkijs" : "3.0.14"
+      "pkijs" : "3.0.15"
     }
   ],
   "test-dependencies" : [
     {
-      "pkijs" : "3.0.14"
+      "pkijs" : "3.0.15"
     }
   ],
   "compile-devDependencies" : [

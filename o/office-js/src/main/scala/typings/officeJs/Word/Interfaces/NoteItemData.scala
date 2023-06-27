@@ -14,7 +14,7 @@ trait NoteItemData extends StObject {
     * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var body: js.UndefOr[BodyData] = js.undefined
   
@@ -22,7 +22,7 @@ trait NoteItemData extends StObject {
     * Represents a footnote or endnote reference in the main document.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var reference: js.UndefOr[RangeData] = js.undefined
   
@@ -30,7 +30,7 @@ trait NoteItemData extends StObject {
     * Represents the note item type: footnote or endnote.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   var `type`: js.UndefOr[NoteItemType | Footnote | Endnote] = js.undefined
 }

@@ -11,24 +11,24 @@ sealed trait TextCase extends StObject
 object TextCase extends StObject {
   
   /**
-    * Text is all upper case.
-    */
+  			 * Text is all upper case.
+  			 */
   @js.native
   sealed trait Allcaps
     extends StObject
        with TextCase
   
   /**
-    * Text is all lower case.
-    */
+  			 * Text is all lower case.
+  			 */
   @js.native
   sealed trait LowerCase
     extends StObject
        with TextCase
   
   /**
-    * Text is proper/mixed case.
-    */
+  			 * Text is proper/mixed case.
+  			 */
   @js.native
   sealed trait Normal
     extends StObject

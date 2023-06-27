@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationPropertiesProperties extends StObject {
   
   /**
-    * View-specific properties of application and UI elements for the web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html#viewing)
-    */
+  		 * View-specific properties of application and UI elements for the web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html#viewing)
+  		 */
   var viewing: js.UndefOr[ViewingProperties] = js.undefined
 }
 object ApplicationPropertiesProperties {

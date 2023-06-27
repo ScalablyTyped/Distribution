@@ -10,53 +10,53 @@ trait CIMPictureFill
      with CIMSymbolLayerType {
   
   /**
-    * The color substitutions which allows colors in the image to be substituted with a different color.
-    */
+  			 * The color substitutions which allows colors in the image to be substituted with a different color.
+  			 */
   var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
-    * The height of the image.
-    */
+  			 * The height of the image.
+  			 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance that the image is offset in the horizontal direction.
-    */
+  			 * The distance that the image is offset in the horizontal direction.
+  			 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance that the image is offset in the vertical direction.
-    */
+  			 * The distance that the image is offset in the vertical direction.
+  			 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * Angle of the image within the fill.
-    */
+  			 * Angle of the image within the fill.
+  			 */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the symbol without changing the height (or depth in 3D), as a ratio.
-    */
+  			 * The width of the symbol without changing the height (or depth in 3D), as a ratio.
+  			 */
   var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
-    * How the image is resampled.
-    */
+  			 * How the image is resampled.
+  			 */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
   ] = js.undefined
   
   /**
-    * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
-    */
+  			 * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
+  			 */
   var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
   var type_CIMPictureFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureFill
   
   /**
-    * The URL of the image. Typically a base64 encoded image.
-    */
+  			 * The URL of the image. Typically a base64 encoded image.
+  			 */
   var url: js.UndefOr[String] = js.undefined
 }
 object CIMPictureFill {

@@ -10,24 +10,24 @@ trait VertexRemoveEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * An array of x,y coordinates representing the vertices removed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * An array of x,y coordinates representing the vertices removed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var removed: js.Array[Double]
   
   /**
-    * Type is always `vertex-remove`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * Type is always `vertex-remove`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var `type`: `vertex-remove`
   
   /**
-    * Contains the details of the removed vertices to track changes in topology of the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
-    */
+  		 * Contains the details of the removed vertices to track changes in topology of the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexRemoveEventInfo)
+  		 */
   var vertices: js.Array[VertexRemoveEventInfoVertices]
 }
 object VertexRemoveEventInfo {

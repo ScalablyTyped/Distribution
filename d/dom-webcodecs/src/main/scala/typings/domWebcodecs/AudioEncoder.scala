@@ -1,5 +1,6 @@
 package typings.domWebcodecs
 
+import typings.std.CodecState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait AudioEncoder extends StObject {
   
   def reset(): Unit
   
-  val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
+  val state: CodecState
 }
 object AudioEncoder {
   
@@ -30,7 +31,7 @@ object AudioEncoder {
     encodeQueueSize: Double,
     flush: () => js.Promise[Unit],
     reset: () => Unit,
-    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
+    state: CodecState
   ): AudioEncoder = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), configure = js.Any.fromFunction1(configure), encode = js.Any.fromFunction1(encode), encodeQueueSize = encodeQueueSize.asInstanceOf[js.Any], flush = js.Any.fromFunction0(flush), reset = js.Any.fromFunction0(reset), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioEncoder]
@@ -51,8 +52,6 @@ object AudioEncoder {
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    inline def setState(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
-    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CodecState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `201304401` extends StObject {
   
   /** @description Response */
-  var `201`: Content130
+  var `201`: Content153
   
   var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
   
@@ -16,7 +16,7 @@ trait `201304401` extends StObject {
   var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   
   /** @description Validation failed */
-  var `422`: Content52
+  var `422`: Content60
   
   /** @description Response */
   var `503`: ContentApplicationjsonCodeDocumentationurl
@@ -24,11 +24,11 @@ trait `201304401` extends StObject {
 object `201304401` {
   
   inline def apply(
-    `201`: Content130,
+    `201`: Content153,
     `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
     `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
-    `422`: Content52,
+    `422`: Content60,
     `503`: ContentApplicationjsonCodeDocumentationurl
   ): `201304401` = {
     val __obj = js.Dynamic.literal()
@@ -44,7 +44,7 @@ object `201304401` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `201304401`] (val x: Self) extends AnyVal {
     
-    inline def set201(value: Content130): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+    inline def set201(value: Content153): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
     inline def set304(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any
@@ -58,7 +58,7 @@ object `201304401` {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
     ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content52): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content60): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
     inline def set503(value: ContentApplicationjsonCodeDocumentationurl): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }

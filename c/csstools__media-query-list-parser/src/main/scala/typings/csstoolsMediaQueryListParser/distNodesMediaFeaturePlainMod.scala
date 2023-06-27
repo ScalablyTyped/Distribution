@@ -4,7 +4,7 @@ import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunct
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenColon
 import typings.csstoolsMediaQueryListParser.anon.NameTokens
-import typings.csstoolsMediaQueryListParser.anon.NodeMediaFeaturePlainWalkerEntry
+import typings.csstoolsMediaQueryListParser.anon.NodeParentState
 import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserBooleans.`false`
 import typings.csstoolsMediaQueryListParser.distNodesMediaFeatureMod._MediaFeatureWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaFeatureNameMod.MediaFeatureName
@@ -14,6 +14,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaFeatureValueMod.MediaF
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,12 +58,10 @@ object distNodesMediaFeaturePlainMod {
     
     var value: MediaFeatureValue = js.native
     
-    def walk(
-      cb: js.Function2[
-          /* entry */ NodeMediaFeaturePlainWalkerEntry, 
-          /* index */ Double | String, 
-          Boolean | Unit
-        ]
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ NodeParentState[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[/* entry */ NodeParentState[T], /* index */ Double | String, Boolean | Unit],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */

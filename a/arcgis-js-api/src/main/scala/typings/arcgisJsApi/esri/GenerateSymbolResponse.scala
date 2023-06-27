@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateSymbolResponse extends StObject {
   
   /**
-    * The CIMSymbol created from the [generateSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#generateSymbol) method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#GenerateSymbolResponse)
-    */
+  		 * The CIMSymbol created from the [generateSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#generateSymbol) method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-symbolService.html#GenerateSymbolResponse)
+  		 */
   var symbol: CIMSymbol
 }
 object GenerateSymbolResponse {

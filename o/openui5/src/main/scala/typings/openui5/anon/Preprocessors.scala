@@ -15,7 +15,7 @@ trait Preprocessors extends StObject {
   var controller: js.UndefOr[default] = js.undefined
   
   /**
-    * The view definition. Only supported for XML and HTML views. See also {@link sap.ui.core.mvc.XMLView.create}
+    * The view definition. Only supported for XML and HTML views. See also {@link sap.ui.core.mvc.XMLView.create }
     * and {@link sap.ui.core.mvc.HTMLView.create} (deprecated) for more information.
     */
   var definition: js.UndefOr[Any] = js.undefined
@@ -29,10 +29,10 @@ trait Preprocessors extends StObject {
     * Can hold a map from the specified preprocessor type (e.g. "xml") to an array of preprocessor configurations;
     * each configuration consists of a `preprocessor` property (optional when registered as on-demand preprocessor)
     * and may contain further preprocessor-specific settings. The preprocessor can be either a module name
-    * as string implementation of {@link sap.ui.core.mvc.View.Preprocessor} or a function according to {@link
-    * sap.ui.core.mvc.View.Preprocessor.process}. Do not set properties starting with underscore like `_sProperty`
-    * property, these are reserved for internal purposes. When several preprocessors are provided for one hook,
-    * it has to be made sure that they do not conflict when being processed serially.
+    * as string implementation of {@link sap.ui.core.mvc.View.Preprocessor} or a function according to {@link sap.ui.core.mvc.View.Preprocessor.process}.
+    * Do not set properties starting with underscore like `_sProperty` property, these are reserved for internal
+    * purposes. When several preprocessors are provided for one hook, it has to be made sure that they do not
+    * conflict when being processed serially.
     *
     * **Note**: These preprocessors are only available to this instance. For global or on-demand availability
     * use {@link sap.ui.core.mvc.XMLView.registerPreprocessor}. **Note**: Please note that preprocessors in
@@ -49,11 +49,11 @@ trait Preprocessors extends StObject {
   ] = js.undefined
   
   /**
-    * A general purpose data bag, which is under full control of the caller. It can be retrieved with the {@link
-    * sap.ui.core.mvc.View#getViewData} method during the whole lifecycle of the view and controller. In contrast
-    * to data propagated from the parent control (e.g. models, binding contexts), `viewData` can already be
-    * accessed at construction time, e.g. in the `onInit` hook of the controller. Propagated data can only
-    * be accessed after the view has been added to the control hierarchy.
+    * A general purpose data bag, which is under full control of the caller. It can be retrieved with the {@link sap.ui.core.mvc.View#getViewData }
+    * method during the whole lifecycle of the view and controller. In contrast to data propagated from the
+    * parent control (e.g. models, binding contexts), `viewData` can already be accessed at construction time,
+    * e.g. in the `onInit` hook of the controller. Propagated data can only be accessed after the view has
+    * been added to the control hierarchy.
     */
   var viewData: js.UndefOr[Any] = js.undefined
   

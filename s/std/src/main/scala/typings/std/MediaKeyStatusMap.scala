@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This EncryptedMediaExtensions API interface is a read-only map of media key statuses by key IDs.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap)
   */
 @js.native
 trait MediaKeyStatusMap extends StObject {
@@ -23,9 +25,11 @@ trait MediaKeyStatusMap extends StObject {
     thisArg: Any
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/get) */
   /* standard dom */
   def get(keyId: BufferSource): js.UndefOr[MediaKeyStatus] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/has) */
   /* standard dom */
   def has(keyId: BufferSource): scala.Boolean = js.native
   
@@ -36,6 +40,7 @@ trait MediaKeyStatusMap extends StObject {
   /* standard dom.iterable */
   def keys(): IterableIterator[BufferSource] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap/size) */
   /* standard dom */
   val size: Double = js.native
   

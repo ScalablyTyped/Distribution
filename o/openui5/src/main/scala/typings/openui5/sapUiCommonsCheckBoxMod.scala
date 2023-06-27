@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Checked
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -177,13 +176,13 @@ object sapUiCommonsCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CheckBox` itself
       */
@@ -208,7 +207,7 @@ object sapUiCommonsCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -219,7 +218,7 @@ object sapUiCommonsCheckBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.CheckBox` itself
       */
@@ -250,13 +249,13 @@ object sapUiCommonsCheckBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CheckBoxChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -264,7 +263,7 @@ object sapUiCommonsCheckBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -274,17 +273,15 @@ object sapUiCommonsCheckBoxMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Checked): this.type = js.native
+    mParameters: CheckBox$ChangeEventParameters): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -585,6 +582,33 @@ object sapUiCommonsCheckBoxMod {
     def unbindChecked(): this.type = js.native
   }
   
+  trait CheckBox$ChangeEventParameters extends StObject {
+    
+    /**
+      * Checks whether the box is flagged or not flagged.
+      */
+    var checked: js.UndefOr[Boolean] = js.undefined
+  }
+  object CheckBox$ChangeEventParameters {
+    
+    inline def apply(): CheckBox$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CheckBox$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBox$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    }
+  }
+  
+  type CheckBoxChangeEvent = typings.openui5.sapUiBaseEventMod.default[CheckBox$ChangeEventParameters]
+  
+  type CheckBoxChangeEventParameters = CheckBox$ChangeEventParameters
+  
   trait CheckBoxSettings
     extends StObject
        with ControlSettings {
@@ -602,7 +626,12 @@ object sapUiCommonsCheckBoxMod {
     /**
       * Event is triggered when the control status is changed by the user by flagging or unflagging the checkbox.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CheckBox$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Contains the state of the control whether it is flagged with a check mark, or not
@@ -681,7 +710,9 @@ object sapUiCommonsCheckBoxMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CheckBox$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

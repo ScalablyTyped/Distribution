@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CloseSectionId
-import typings.openui5.anon.CloseSectionIds
-import typings.openui5.anon.MovedSectionId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -152,13 +149,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit]
     ): this.type = js.native
     def attachSectionClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -183,7 +180,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit]
     ): this.type = js.native
     def attachSectionClose(
       /**
@@ -194,7 +191,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -215,13 +212,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit]
     ): this.type = js.native
     def attachSectionOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -246,7 +243,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit]
     ): this.type = js.native
     def attachSectionOpen(
       /**
@@ -257,7 +254,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -279,13 +276,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit]
     ): this.type = js.native
     def attachSectionsReorder(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -311,7 +308,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit]
     ): this.type = js.native
     def attachSectionsReorder(
       /**
@@ -322,7 +319,7 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Accordion` itself
       */
@@ -355,13 +352,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit]
     ): this.type = js.native
     def detachSectionClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -379,13 +376,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit]
     ): this.type = js.native
     def detachSectionOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -404,13 +401,13 @@ object sapUiCommonsAccordionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit]
     ): this.type = js.native
     def detachSectionsReorder(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AccordionSectionsReorderEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -418,43 +415,49 @@ object sapUiCommonsAccordionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sectionClose sectionClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSectionClose(): this.type = js.native
-    def fireSectionClose(/**
+    def fireSectionClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CloseSectionId): this.type = js.native
+    mParameters: Accordion$SectionCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sectionOpen sectionOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSectionOpen(): this.type = js.native
-    def fireSectionOpen(/**
+    def fireSectionOpen(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: CloseSectionIds): this.type = js.native
+    mParameters: Accordion$SectionOpenEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sectionsReorder sectionsReorder} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSectionsReorder(): this.type = js.native
-    def fireSectionsReorder(/**
+    def fireSectionsReorder(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: MovedSectionId): this.type = js.native
+    mParameters: Accordion$SectionsReorderEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getOpenedSectionsId openedSectionsId}.
@@ -579,6 +582,107 @@ object sapUiCommonsAccordionMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Accordion$SectionCloseEventParameters extends StObject {
+    
+    /**
+      * ID of the closed section
+      */
+    var closeSectionId: js.UndefOr[String] = js.undefined
+  }
+  object Accordion$SectionCloseEventParameters {
+    
+    inline def apply(): Accordion$SectionCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Accordion$SectionCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accordion$SectionCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCloseSectionId(value: String): Self = StObject.set(x, "closeSectionId", value.asInstanceOf[js.Any])
+      
+      inline def setCloseSectionIdUndefined: Self = StObject.set(x, "closeSectionId", js.undefined)
+    }
+  }
+  
+  trait Accordion$SectionOpenEventParameters extends StObject {
+    
+    /**
+      * IDs of the sections to be closed. Can be initial in the case of no previously opened section.
+      */
+    var closeSectionIds: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * ID of the opened section
+      */
+    var openSectionId: js.UndefOr[String] = js.undefined
+  }
+  object Accordion$SectionOpenEventParameters {
+    
+    inline def apply(): Accordion$SectionOpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Accordion$SectionOpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accordion$SectionOpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCloseSectionIds(value: js.Array[String]): Self = StObject.set(x, "closeSectionIds", value.asInstanceOf[js.Any])
+      
+      inline def setCloseSectionIdsUndefined: Self = StObject.set(x, "closeSectionIds", js.undefined)
+      
+      inline def setCloseSectionIdsVarargs(value: String*): Self = StObject.set(x, "closeSectionIds", js.Array(value*))
+      
+      inline def setOpenSectionId(value: String): Self = StObject.set(x, "openSectionId", value.asInstanceOf[js.Any])
+      
+      inline def setOpenSectionIdUndefined: Self = StObject.set(x, "openSectionId", js.undefined)
+    }
+  }
+  
+  trait Accordion$SectionsReorderEventParameters extends StObject {
+    
+    /**
+      * ID of the moved section
+      */
+    var movedSectionId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * New index of the moved section
+      */
+    var newIndex: js.UndefOr[int] = js.undefined
+  }
+  object Accordion$SectionsReorderEventParameters {
+    
+    inline def apply(): Accordion$SectionsReorderEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Accordion$SectionsReorderEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accordion$SectionsReorderEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMovedSectionId(value: String): Self = StObject.set(x, "movedSectionId", value.asInstanceOf[js.Any])
+      
+      inline def setMovedSectionIdUndefined: Self = StObject.set(x, "movedSectionId", js.undefined)
+      
+      inline def setNewIndex(value: int): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      
+      inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    }
+  }
+  
+  type AccordionSectionCloseEvent = typings.openui5.sapUiBaseEventMod.default[Accordion$SectionCloseEventParameters]
+  
+  type AccordionSectionCloseEventParameters = Accordion$SectionCloseEventParameters
+  
+  type AccordionSectionOpenEvent = typings.openui5.sapUiBaseEventMod.default[Accordion$SectionOpenEventParameters]
+  
+  type AccordionSectionOpenEventParameters = Accordion$SectionOpenEventParameters
+  
+  type AccordionSectionsReorderEvent = typings.openui5.sapUiBaseEventMod.default[Accordion$SectionsReorderEventParameters]
+  
+  type AccordionSectionsReorderEventParameters = Accordion$SectionsReorderEventParameters
+  
   trait AccordionSettings
     extends StObject
        with ControlSettings {
@@ -591,12 +695,22 @@ object sapUiCommonsAccordionMod {
     /**
       * Event is triggered when the user closes a section.
       */
-    var sectionClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sectionClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is triggered when the user opens a section.
       */
-    var sectionOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sectionOpen: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionOpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Empty container used to display any library control
@@ -608,7 +722,12 @@ object sapUiCommonsAccordionMod {
     /**
       * Event is triggered when the user changes the position of a section.
       */
-    var sectionsReorder: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sectionsReorder: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionsReorderEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * When the specified width is less than the width of a section content, a horizontal scroll bar is provided.
@@ -631,11 +750,15 @@ object sapUiCommonsAccordionMod {
       
       inline def setOpenedSectionsIdUndefined: Self = StObject.set(x, "openedSectionsId", js.undefined)
       
-      inline def setSectionClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sectionClose", js.Any.fromFunction1(value))
+      inline def setSectionClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "sectionClose", js.Any.fromFunction1(value))
       
       inline def setSectionCloseUndefined: Self = StObject.set(x, "sectionClose", js.undefined)
       
-      inline def setSectionOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sectionOpen", js.Any.fromFunction1(value))
+      inline def setSectionOpen(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionOpenEventParameters] => Unit
+      ): Self = StObject.set(x, "sectionOpen", js.Any.fromFunction1(value))
       
       inline def setSectionOpenUndefined: Self = StObject.set(x, "sectionOpen", js.undefined)
       
@@ -643,7 +766,9 @@ object sapUiCommonsAccordionMod {
         value: js.Array[typings.openui5.sapUiCommonsAccordionSectionMod.default] | typings.openui5.sapUiCommonsAccordionSectionMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      inline def setSectionsReorder(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sectionsReorder", js.Any.fromFunction1(value))
+      inline def setSectionsReorder(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Accordion$SectionsReorderEventParameters] => Unit
+      ): Self = StObject.set(x, "sectionsReorder", js.Any.fromFunction1(value))
       
       inline def setSectionsReorderUndefined: Self = StObject.set(x, "sectionsReorder", js.undefined)
       

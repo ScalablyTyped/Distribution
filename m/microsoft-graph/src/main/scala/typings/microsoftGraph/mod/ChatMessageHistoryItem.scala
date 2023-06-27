@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChatMessageHistoryItem extends StObject {
   
+  /**
+    * The modification actions of a message item.The possible values are: reactionAdded, reactionRemoved, actionUndefined,
+    * unknownFutureValue.
+    */
   var actions: js.UndefOr[ChatMessageActions] = js.undefined
   
+  // The date and time when the message was modified.
   var modifiedDateTime: js.UndefOr[String] = js.undefined
   
+  // The reaction in the modified message.
   var reaction: js.UndefOr[NullableOption[ChatMessageReaction]] = js.undefined
 }
 object ChatMessageHistoryItem {

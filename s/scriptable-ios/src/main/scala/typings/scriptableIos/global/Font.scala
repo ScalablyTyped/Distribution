@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Refer to [iosfonts.com](http://iosfonts.com) for a list of the fonts that are available in iOS and iPadOS.
   * @see https://docs.scriptable.app/font/#-new-font
   */
-// tslint:disable-next-line no-unnecessary-class
 @JSGlobal("Font")
 @js.native
 open class Font protected ()
@@ -25,6 +24,14 @@ open class Font protected ()
     * @see https://docs.scriptable.app/font/#-new-font
     */
   def this(name: String, size: Double) = this()
+  
+  /**
+    * _This is only here for TypeScript_
+    *
+    * TypeScript can't distinguish an instance of this class from an empty object if it doesn't have at least one property or function
+    */
+  /* private */ /* CompleteClass */
+  var font: Boolean = js.native
 }
 object Font {
   

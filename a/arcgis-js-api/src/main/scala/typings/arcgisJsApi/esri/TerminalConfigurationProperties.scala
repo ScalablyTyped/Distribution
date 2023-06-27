@@ -9,40 +9,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalConfigurationProperties extends StObject {
   
   /**
-    * The default terminal configuration path defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#defaultConfiguration)
-    */
+  		 * The default terminal configuration path defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#defaultConfiguration)
+  		 */
   var defaultConfiguration: js.UndefOr[String] = js.undefined
   
   /**
-    * A unique numeric identifer of the terminal configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#id)
-    */
+  		 * A unique numeric identifer of the terminal configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#id)
+  		 */
   var id: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of the terminal configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#name)
-    */
+  		 * The name of the terminal configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of [terminals](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html) defined in this configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#terminals)
-    */
+  		 * An array of [terminals](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html) defined in this configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#terminals)
+  		 */
   var terminals: js.UndefOr[js.Array[TerminalProperties]] = js.undefined
   
   /**
-    * Terminal configurations can be defined as directional or bidirectional.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#traversabilityModel)
-    */
+  		 * Terminal configurations can be defined as directional or bidirectional.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-TerminalConfiguration.html#traversabilityModel)
+  		 */
   var traversabilityModel: js.UndefOr[directional | bidirectional] = js.undefined
 }
 object TerminalConfigurationProperties {

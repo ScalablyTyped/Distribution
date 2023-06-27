@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditingInfo extends StObject {
   
   /**
-    * Indicates the last time the layer was edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditingInfo)
-    */
+  		 * Indicates the last time the layer was edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditingInfo)
+  		 */
   var lastEditDate: js.Date
 }
 object EditingInfo {

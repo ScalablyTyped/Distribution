@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FontFaceSource extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/fonts) */
   /* standard dom */
   val fonts: FontFaceSet
 }

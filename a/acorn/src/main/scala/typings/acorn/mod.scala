@@ -11,6 +11,7 @@ import typings.acorn.acornStrings.never
 import typings.acorn.acornStrings.script
 import typings.acorn.anon.Arrow
 import typings.acorn.anon.Bexpr
+import typings.acorn.anon.Break
 import typings.acorn.anon.GetToken
 import typings.acorn.anon.TypeofParser
 import org.scalablytyped.runtime.StObject
@@ -252,6 +253,10 @@ object mod {
       
       inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
+      @JSImport("acorn", "Parser.acorn.keywordTypes")
+      @js.native
+      val keywordTypes: Break = js.native
+      
       @JSImport("acorn", "Parser.acorn.lineBreak")
       @js.native
       val lineBreak: js.RegExp = js.native
@@ -259,6 +264,10 @@ object mod {
       @JSImport("acorn", "Parser.acorn.lineBreakG")
       @js.native
       val lineBreakG: js.RegExp = js.native
+      
+      @JSImport("acorn", "Parser.acorn.nonASCIIwhitespace")
+      @js.native
+      val nonASCIIwhitespace: js.RegExp = js.native
       
       inline def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
       
@@ -381,6 +390,177 @@ object mod {
   
   inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  object keywordTypes {
+    
+    @JSImport("acorn", "keywordTypes")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("acorn", "keywordTypes._default")
+    @js.native
+    def default: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._break")
+    @js.native
+    def break: TokenType = js.native
+    
+    inline def break_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_break")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._case")
+    @js.native
+    val `case`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._catch")
+    @js.native
+    val `catch`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._class")
+    @js.native
+    val `class`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._const")
+    @js.native
+    def const: TokenType = js.native
+    
+    inline def const_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_const")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._continue")
+    @js.native
+    def continue: TokenType = js.native
+    
+    inline def continue_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_continue")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._debugger")
+    @js.native
+    def debugger: TokenType = js.native
+    
+    inline def debugger_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debugger")(x.asInstanceOf[js.Any])
+    
+    inline def default_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._delete")
+    @js.native
+    def delete: TokenType = js.native
+    
+    inline def delete_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._do")
+    @js.native
+    val `do`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._else")
+    @js.native
+    val `else`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._export")
+    @js.native
+    val `export`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._extends")
+    @js.native
+    val `extends`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._false")
+    @js.native
+    val `false`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._finally")
+    @js.native
+    val `finally`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._for")
+    @js.native
+    val `for`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._function")
+    @js.native
+    def function: TokenType = js.native
+    
+    inline def function_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_function")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._if")
+    @js.native
+    val `if`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._import")
+    @js.native
+    val `import`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._in")
+    @js.native
+    def in: TokenType = js.native
+    
+    inline def in_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_in")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._instanceof")
+    @js.native
+    def instanceof: TokenType = js.native
+    
+    inline def instanceof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceof")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._new")
+    @js.native
+    val `new`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._null")
+    @js.native
+    val `null`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._return")
+    @js.native
+    val `return`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._super")
+    @js.native
+    val `super`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._switch")
+    @js.native
+    def switch: TokenType = js.native
+    
+    inline def switch_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_switch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._this")
+    @js.native
+    val `this`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._throw")
+    @js.native
+    val `throw`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._true")
+    @js.native
+    val `true`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._try")
+    @js.native
+    val `try`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._typeof")
+    @js.native
+    def typeof: TokenType = js.native
+    
+    inline def typeof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._var")
+    @js.native
+    val `var`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._void")
+    @js.native
+    def void: TokenType = js.native
+    
+    inline def void_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn", "keywordTypes._while")
+    @js.native
+    val `while`: TokenType = js.native
+    
+    @JSImport("acorn", "keywordTypes._with")
+    @js.native
+    val `with`: TokenType = js.native
+  }
+  
   @JSImport("acorn", "lineBreak")
   @js.native
   val lineBreak: js.RegExp = js.native
@@ -388,6 +568,10 @@ object mod {
   @JSImport("acorn", "lineBreakG")
   @js.native
   val lineBreakG: js.RegExp = js.native
+  
+  @JSImport("acorn", "nonASCIIwhitespace")
+  @js.native
+  val nonASCIIwhitespace: js.RegExp = js.native
   
   inline def parse(input: String, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
   

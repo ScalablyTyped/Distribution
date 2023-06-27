@@ -27,95 +27,95 @@ trait PrintTemplate
      with Accessor {
   
   /**
-    * When `false`, the attribution is not displayed on the printout.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#attributionVisible)
-    */
+  		 * When `false`, the attribution is not displayed on the printout.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#attributionVisible)
+  		 */
   var attributionVisible: Boolean = js.native
   
   /**
-    * Define the map width, height and dpi.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
-    */
+  		 * Define the map width, height and dpi.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
+  		 */
   var exportOptions: PrintTemplateExportOptions = js.native
   
   /**
-    * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#forceFeatureAttributes)
-    */
+  		 * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#forceFeatureAttributes)
+  		 */
   var forceFeatureAttributes: Boolean = js.native
   
   /**
-    * The output format for the printed map.
-    *
-    * @default png32
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#format)
-    */
+  		 * The output format for the printed map.
+  		 *
+  		 * @default png32
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#format)
+  		 */
   var format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = js.native
   
   /**
-    * When `true`, tables will be included in the printout request.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#includeTables)
-    */
+  		 * When `true`, tables will be included in the printout request.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#includeTables)
+  		 */
   var includeTables: Boolean = js.native
   
   /**
-    * The layout used for the print output.
-    *
-    * @default map-only
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layout)
-    */
+  		 * The layout used for the print output.
+  		 *
+  		 * @default map-only
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layout)
+  		 */
   var layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = js.native
   
   /**
-    * A custom layout hosted as a [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutItem)
-    */
+  		 * A custom layout hosted as a [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutItem)
+  		 */
   var layoutItem: PortalItem = js.native
   
   /**
-    * Defines the layout elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
-    */
+  		 * Defines the layout elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
+  		 */
   var layoutOptions: PrintTemplateLayoutOptions = js.native
   
   /**
-    * The optional map scale of the printed map.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#outScale)
-    */
+  		 * The optional map scale of the printed map.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#outScale)
+  		 */
   var outScale: Double = js.native
   
   /**
-    * Define whether the printed map should preserve map scale or map extent.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#scalePreserved)
-    */
+  		 * Define whether the printed map should preserve map scale or map extent.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#scalePreserved)
+  		 */
   var scalePreserved: Boolean = js.native
   
   /**
-    * When `true`, labels will be shown on the layout.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#showLabels)
-    */
+  		 * When `true`, labels will be shown on the layout.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#showLabels)
+  		 */
   var showLabels: Boolean = js.native
 }

@@ -12,10 +12,10 @@ trait NullNode
   var `type`: `null`
   
   /**
-    * Null value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#NullNode)
-    */
+  		 * Null value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#NullNode)
+  		 */
   var value: Null
 }
 object NullNode {

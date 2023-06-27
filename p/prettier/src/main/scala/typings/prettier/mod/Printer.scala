@@ -35,6 +35,8 @@ trait Printer[T] extends StObject {
     */
   var massageAstNode: js.UndefOr[js.Function3[/* node */ Any, /* newNode */ Any, /* parent */ Any, Any]] = js.native
   
+  var preprocess: js.UndefOr[js.Function2[/* ast */ AST, /* options */ ParserOptions[T], AST]] = js.native
+  
   def print(path: AstPath[T], options: ParserOptions[T], print: js.Function1[/* path */ AstPath[T], Doc_]): Doc_ = js.native
   def print(
     path: AstPath[T],

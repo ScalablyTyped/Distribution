@@ -14,85 +14,85 @@ trait EditorProperties
      with WidgetProperties {
   
   /**
-    * An array of string values which specifies what end users are allowed to edit.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#allowedWorkflows)
-    */
+  		 * An array of string values which specifies what end users are allowed to edit.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#allowedWorkflows)
+  		 */
   var allowedWorkflows: js.UndefOr[`create-features` | create | update] = js.undefined
   
   /**
-    * Indicates the heading level to use for title of the widget.
-    *
-    * @default 4
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#headingLevel)
-    */
+  		 * Indicates the heading level to use for title of the widget.
+  		 *
+  		 * @default 4
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#headingLevel)
+  		 */
   var headingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * Options to configure the labels shown next to each segment of the geometry being created or updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#labelOptions)
-    */
+  		 * Options to configure the labels shown next to each segment of the geometry being created or updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#labelOptions)
+  		 */
   var labelOptions: js.UndefOr[SketchLabelOptionsProperties] = js.undefined
   
   /**
-    * An array of editing configurations for individual layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#layerInfos)
-    */
+  		 * An array of editing configurations for individual layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#layerInfos)
+  		 */
   var layerInfos: js.UndefOr[js.Array[LayerInfo]] = js.undefined
   
   /**
-    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for editing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#snappingOptions)
-    */
+  		 * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for editing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#snappingOptions)
+  		 */
   var snappingOptions: js.UndefOr[SnappingOptionsProperties] = js.undefined
   
   /**
-    * This property allows customization of supporting Editor widgets and their default behavior.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#supportingWidgetDefaults)
-    */
+  		 * This property allows customization of supporting Editor widgets and their default behavior.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#supportingWidgetDefaults)
+  		 */
   var supportingWidgetDefaults: js.UndefOr[SupportingWidgetDefaults] = js.undefined
   
   /**
-    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#tooltipOptions)
-    */
+  		 * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#tooltipOptions)
+  		 */
   var tooltipOptions: js.UndefOr[SketchTooltipOptionsProperties] = js.undefined
   
   /**
-    * Indicates whether the Editor should default to use the deprecated [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html).
-    *
-    * @default false
-    * @deprecated since version 4.23. Although new at 4.23, this property was introduced to help migrate from the legacy {@link module:esri/widgets/Editor/CreateWorkflow} to the updated {@link module:esri/widgets/Editor/CreateFeaturesWorkflow}. Once {@link module:esri/widgets/Editor/CreateWorkflow} is fully removed, this property will no longer be necessary.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#useDeprecatedCreateWorkflow)
-    */
+  		 * Indicates whether the Editor should default to use the deprecated [CreateWorkflow](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html).
+  		 *
+  		 * @default false
+  		 * @deprecated since version 4.23. Although new at 4.23, this property was introduced to help migrate from the legacy {@link module:esri/widgets/Editor/CreateWorkflow} to the updated {@link module:esri/widgets/Editor/CreateFeaturesWorkflow}. Once {@link module:esri/widgets/Editor/CreateWorkflow} is fully removed, this property will no longer be necessary.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#useDeprecatedCreateWorkflow)
+  		 */
   var useDeprecatedCreateWorkflow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[EditorViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[EditorVisibleElements] = js.undefined
 }
 object EditorProperties {

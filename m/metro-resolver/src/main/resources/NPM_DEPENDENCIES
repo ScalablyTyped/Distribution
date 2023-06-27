@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "metro-resolver" : "0.76.4"
+      "metro-resolver" : "0.76.7"
     }
   ],
   "test-dependencies" : [
     {
-      "metro-resolver" : "0.76.4"
+      "metro-resolver" : "0.76.7"
     }
   ],
   "compile-devDependencies" : [

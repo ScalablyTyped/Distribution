@@ -169,13 +169,13 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPropertyChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Collection` itself
       */
@@ -201,7 +201,7 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPropertyChanged(
       /**
@@ -212,7 +212,7 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Collection` itself
       */
@@ -234,13 +234,13 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelectionChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Collection` itself
       */
@@ -266,7 +266,7 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelectionChanged(
       /**
@@ -277,7 +277,7 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Collection` itself
       */
@@ -303,13 +303,13 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPropertyChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -328,13 +328,13 @@ object sapUiUx3CollectionMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelectionChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -342,7 +342,7 @@ object sapUiUx3CollectionMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:propertyChanged propertyChanged} to attached listeners.
       *
@@ -355,7 +355,7 @@ object sapUiUx3CollectionMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
@@ -397,8 +397,7 @@ object sapUiUx3CollectionMod {
     def getMultiSelection(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getSelectedItems
-      * selectedItems}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getSelectedItems selectedItems}.
       */
     def getSelectedItems(): js.Array[ID] = js.native
     
@@ -542,6 +541,18 @@ object sapUiUx3CollectionMod {
     sTitle: String): this.type = js.native
   }
   
+  trait Collection$PropertyChangedEventParameters extends StObject
+  
+  trait Collection$SelectionChangedEventParameters extends StObject
+  
+  type CollectionPropertyChangedEvent = typings.openui5.sapUiBaseEventMod.default[Collection$PropertyChangedEventParameters]
+  
+  type CollectionPropertyChangedEventParameters = Collection$PropertyChangedEventParameters
+  
+  type CollectionSelectionChangedEvent = typings.openui5.sapUiBaseEventMod.default[Collection$SelectionChangedEventParameters]
+  
+  type CollectionSelectionChangedEventParameters = Collection$SelectionChangedEventParameters
+  
   trait CollectionSettings
     extends StObject
        with ElementSettings {
@@ -570,7 +581,9 @@ object sapUiUx3CollectionMod {
     /**
       * Fires if a property has changed, and the collection inspector needs to do something after that
       */
-    var propertyChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var propertyChanged: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Contains all items that are currently selected
@@ -580,7 +593,9 @@ object sapUiUx3CollectionMod {
     /**
       * Fired when ever the selected items changer
       */
-    var selectionChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChanged: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Name for the collection
@@ -613,7 +628,7 @@ object sapUiUx3CollectionMod {
       
       inline def setMultiSelectionUndefined: Self = StObject.set(x, "multiSelection", js.undefined)
       
-      inline def setPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
+      inline def setPropertyChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction1(value))
       
       inline def setPropertyChangedUndefined: Self = StObject.set(x, "propertyChanged", js.undefined)
       
@@ -623,7 +638,7 @@ object sapUiUx3CollectionMod {
       
       inline def setSelectedItemsVarargs(value: (typings.openui5.sapUiCoreItemMod.default | String)*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
-      inline def setSelectionChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
+      inline def setSelectionChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
       
       inline def setSelectionChangedUndefined: Self = StObject.set(x, "selectionChanged", js.undefined)
       

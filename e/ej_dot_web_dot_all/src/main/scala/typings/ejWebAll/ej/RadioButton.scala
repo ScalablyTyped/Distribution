@@ -221,7 +221,7 @@ object RadioButton {
     var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the check attribute of the Radio Button.
-      * @Default {false}
+      * @default {false}
       */
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -239,42 +239,42 @@ object RadioButton {
     
     /** Specifies the enablePersistence property for RadioButton while initialization. The enablePersistence API save current model value to browser cookies for state maintains. While
       * refreshing the radio button control page the model value apply from browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the Right to Left direction to RadioButton
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the RadioButton control state.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the HTML Attributes of the Checkbox
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the id attribute for the Radio Button while initialization.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Specify the idPrefix value to be added before the current id of the RadioButton.
-      * @Default {ej}
+      * @default {ej}
       */
     var idPrefix: js.UndefOr[String] = js.undefined
     
     /** Specifies the name attribute for the Radio Button while initialization.
-      * @Default {Sets id as name if it is null}
+      * @default {Sets id as name if it is null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Specifies the size of the RadioButton.
-      * @Default {small}
+      * @default {small}
       */
     var size: js.UndefOr[RadioButtonSize | String] = js.undefined
     
@@ -283,17 +283,17 @@ object RadioButton {
     var text: js.UndefOr[String] = js.undefined
     
     /** Set the jQuery validation error message in radio button.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in radio button.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value attribute of the Radio Button.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
   }

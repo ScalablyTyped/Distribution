@@ -13,6 +13,7 @@ open class Permissions ()
   extends StObject
      with typings.std.Permissions {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Permissions/query) */
   /* standard dom */
   /* CompleteClass */
   override def query(permissionDesc: PermissionDescriptor): js.Promise[typings.std.PermissionStatus] = js.native

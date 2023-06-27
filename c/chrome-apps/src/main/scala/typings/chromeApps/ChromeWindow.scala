@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Only warnings since:
   *  1. It's not possible as of now to override or remove something from *Window* or *Document*.
   *  2. It may also cause other unforseen consequences if it's removed (and if it was possible).
-  * @see[Disallowed]
+  * @see Disallowed
   */
 /**
   * Chrome app - Web APIs
-  * @see[Docs]{@link https://developer.chrome.com/apps/api_other}
+  * @see https://developer.chrome.com/apps/api_other
   */
 @js.native
 trait ChromeWindow extends StObject {

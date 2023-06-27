@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeodesicDistanceResult extends StObject {
   
   /**
-    * The azimuth (or "bearing") in degrees.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
-    */
+  		 * The azimuth (or "bearing") in degrees.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
+  		 */
   var azimuth: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance between the two locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
-    */
+  		 * The distance between the two locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
+  		 */
   var distance: js.UndefOr[Double] = js.undefined
   
   /**
-    * The azimuth in degrees in the reverse direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
-    */
+  		 * The azimuth in degrees in the reverse direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
+  		 */
   var reverseAzimuth: js.UndefOr[Double] = js.undefined
 }
 object GeodesicDistanceResult {

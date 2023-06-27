@@ -10,15 +10,15 @@ trait CIMMarkerPlacementAtExtremities
      with CIMMarkerPlacementType {
   
   /**
-    * Which ends of the line a marker will be placed.
-    */
+  			 * Which ends of the line a marker will be placed.
+  			 */
   var extremityPlacement: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtremityPlacement * / any */ String
   ] = js.undefined
   
   /**
-    * The distance from the ends of a line that the marker will be placed.
-    */
+  			 * The distance from the ends of a line that the marker will be placed.
+  			 */
   var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

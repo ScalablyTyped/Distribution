@@ -11,7 +11,7 @@ trait MediaControllerDisplayModeAbilitiesInfo extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   val croppedFull: MediaControllerAbilitySupport
   
@@ -20,7 +20,7 @@ trait MediaControllerDisplayModeAbilitiesInfo extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   val fullScreen: MediaControllerAbilitySupport
   
@@ -29,7 +29,7 @@ trait MediaControllerDisplayModeAbilitiesInfo extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   val letterBox: MediaControllerAbilitySupport
   
@@ -38,7 +38,7 @@ trait MediaControllerDisplayModeAbilitiesInfo extends StObject {
     *
     * Default value is NO.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   val originSize: MediaControllerAbilitySupport
 }

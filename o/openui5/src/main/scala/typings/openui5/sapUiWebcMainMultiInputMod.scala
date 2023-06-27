@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemTargetRef
-import typings.openui5.anon.Token
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -16,6 +13,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.IIcon
 import typings.openui5.sapUiWebcMainLibraryMod.IInputSuggestionItem
 import typings.openui5.sapUiWebcMainLibraryMod.IToken
 import typings.openui5.sapUiWebcMainLibraryMod.InputType
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -204,13 +202,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -235,7 +233,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -246,7 +244,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -268,13 +266,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -300,7 +298,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInput(
       /**
@@ -311,7 +309,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -319,7 +317,7 @@ object sapUiWebcMainMultiInputMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.MultiInput`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -334,20 +332,20 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemPreview(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Attaches event handler `fnFunction` to the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.MultiInput`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -367,7 +365,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemPreview(
       /**
@@ -378,7 +376,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -400,13 +398,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -432,7 +430,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def attachSuggestionItemSelect(
       /**
@@ -443,7 +441,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -464,13 +462,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit]
     ): this.type = js.native
     def attachTokenDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -495,7 +493,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit]
     ): this.type = js.native
     def attachTokenDelete(
       /**
@@ -506,7 +504,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -529,13 +527,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachValueHelpTrigger(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -562,7 +560,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachValueHelpTrigger(
       /**
@@ -573,7 +571,7 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.MultiInput` itself
       */
@@ -612,13 +610,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -636,13 +634,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachInput(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -650,7 +648,7 @@ object sapUiWebcMainMultiInputMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemPreview suggestionItemPreview}
+      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemPreview suggestionItemPreview }
       * event of this `sap.ui.webc.main.MultiInput`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -661,13 +659,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit]
     ): this.type = js.native
     def detachSuggestionItemPreview(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemPreviewEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -675,7 +673,7 @@ object sapUiWebcMainMultiInputMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelect suggestionItemSelect}
+      * Detaches event handler `fnFunction` from the {@link #event:suggestionItemSelect suggestionItemSelect }
       * event of this `sap.ui.webc.main.MultiInput`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -686,13 +684,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit]
     ): this.type = js.native
     def detachSuggestionItemSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputSuggestionItemSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -710,13 +708,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit]
     ): this.type = js.native
     def detachTokenDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiInputTokenDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -735,13 +733,13 @@ object sapUiWebcMainMultiInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachValueHelpTrigger(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -749,7 +747,7 @@ object sapUiWebcMainMultiInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -762,7 +760,7 @@ object sapUiWebcMainMultiInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:input input} to attached listeners.
       *
@@ -775,46 +773,52 @@ object sapUiWebcMainMultiInputMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemPreview suggestionItemPreview} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggestionItemPreview(): this.type = js.native
-    def fireSuggestionItemPreview(/**
+    def fireSuggestionItemPreview(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemTargetRef): this.type = js.native
+    mParameters: MultiInput$SuggestionItemPreviewEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemSelect suggestionItemSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggestionItemSelect(): this.type = js.native
-    def fireSuggestionItemSelect(/**
+    def fireSuggestionItemSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: MultiInput$SuggestionItemSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenDelete tokenDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTokenDelete(): this.type = js.native
-    def fireTokenDelete(/**
+    def fireTokenDelete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Token): this.type = js.native
+    mParameters: MultiInput$TokenDeleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:valueHelpTrigger valueHelpTrigger} to attached listeners.
       *
@@ -836,8 +840,7 @@ object sapUiWebcMainMultiInputMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -996,9 +999,9 @@ object sapUiWebcMainMultiInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       *
       * Default value is `Text`.
       *
@@ -1073,8 +1076,8 @@ object sapUiWebcMainMultiInputMod {
     oIcon: IIcon): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.main.IInputSuggestionItem` in the aggregation {@link #getSuggestionItems
-      * suggestionItems}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.main.IInputSuggestionItem` in the aggregation {@link #getSuggestionItems suggestionItems}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1466,9 +1469,9 @@ object sapUiWebcMainMultiInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1573,6 +1576,98 @@ object sapUiWebcMainMultiInputMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait MultiInput$ChangeEventParameters extends StObject
+  
+  trait MultiInput$InputEventParameters extends StObject
+  
+  trait MultiInput$SuggestionItemPreviewEventParameters extends StObject {
+    
+    /**
+      * The previewed suggestion item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+    
+    /**
+      * The DOM ref of the suggestion item.
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object MultiInput$SuggestionItemPreviewEventParameters {
+    
+    inline def apply(): MultiInput$SuggestionItemPreviewEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiInput$SuggestionItemPreviewEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInput$SuggestionItemPreviewEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait MultiInput$SuggestionItemSelectEventParameters extends StObject {
+    
+    /**
+      * The selected item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object MultiInput$SuggestionItemSelectEventParameters {
+    
+    inline def apply(): MultiInput$SuggestionItemSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiInput$SuggestionItemSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInput$SuggestionItemSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait MultiInput$TokenDeleteEventParameters extends StObject {
+    
+    /**
+      * deleted token.
+      */
+    var token: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object MultiInput$TokenDeleteEventParameters {
+    
+    inline def apply(): MultiInput$TokenDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiInput$TokenDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInput$TokenDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setToken(value: HTMLElement): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    }
+  }
+  
+  trait MultiInput$ValueHelpTriggerEventParameters extends StObject
+  
+  type MultiInputChangeEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$ChangeEventParameters]
+  
+  type MultiInputChangeEventParameters = MultiInput$ChangeEventParameters
+  
+  type MultiInputInputEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$InputEventParameters]
+  
+  type MultiInputInputEventParameters = MultiInput$InputEventParameters
+  
   trait MultiInputSettings
     extends StObject
        with ControlSettings {
@@ -1590,7 +1685,9 @@ object sapUiWebcMainMultiInputMod {
     /**
       * Fired when the input operation has finished by pressing Enter or on focusout.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines whether the control is enabled. A disabled control can't be interacted with, and it is not in
@@ -1611,7 +1708,9 @@ object sapUiWebcMainMultiInputMod {
       * Fired when the value of the component changes at each keystroke, and when a suggestion item has been
       * selected.
       */
-    var input: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var input: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Sets the maximum number of characters available in the input field.
@@ -1688,12 +1787,22 @@ object sapUiWebcMainMultiInputMod {
       * Fired when the user navigates to a suggestion item via the ARROW keys, as a preview, before the final
       * selection.
       */
-    var suggestionItemPreview: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggestionItemPreview: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemPreviewEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when a suggestion item, that is displayed in the suggestion popup, is selected.
       */
-    var suggestionItemSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggestionItemSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     var suggestionItems: js.UndefOr[
         js.Array[IInputSuggestionItem] | IInputSuggestionItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1702,7 +1811,12 @@ object sapUiWebcMainMultiInputMod {
     /**
       * Fired when a token is about to be deleted.
       */
-    var tokenDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the component tokens.
@@ -1717,9 +1831,9 @@ object sapUiWebcMainMultiInputMod {
       *
       *  **Notes:**
       * 	 - The particular effect of this property differs depending on the browser and the current language
-      * 			settings, especially for type `Number`.
+      *     settings, especially for type `Number`.
       * 	 - The property is mostly intended to be used with touch devices that use different soft keyboard layouts
-      * 			depending on the given input type.
+      *     depending on the given input type.
       */
     var `type`: js.UndefOr[
         InputType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputType * / any */ String) | PropertyBindingInfo
@@ -1736,7 +1850,9 @@ object sapUiWebcMainMultiInputMod {
       * Fired when the value help icon is pressed and F4 or ALT/OPTION + ARROW_UP/ARROW_DOWN keyboard keys are
       * used.
       */
-    var valueHelpTrigger: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var valueHelpTrigger: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the value state of the component.
@@ -1788,7 +1904,7 @@ object sapUiWebcMainMultiInputMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1804,7 +1920,7 @@ object sapUiWebcMainMultiInputMod {
       
       inline def setIconVarargs(value: IIcon*): Self = StObject.set(x, "icon", js.Array(value*))
       
-      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
+      inline def setInput(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
@@ -1844,11 +1960,15 @@ object sapUiWebcMainMultiInputMod {
       
       inline def setShowValueHelpIconUndefined: Self = StObject.set(x, "showValueHelpIcon", js.undefined)
       
-      inline def setSuggestionItemPreview(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggestionItemPreview", js.Any.fromFunction1(value))
+      inline def setSuggestionItemPreview(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemPreviewEventParameters] => Unit
+      ): Self = StObject.set(x, "suggestionItemPreview", js.Any.fromFunction1(value))
       
       inline def setSuggestionItemPreviewUndefined: Self = StObject.set(x, "suggestionItemPreview", js.undefined)
       
-      inline def setSuggestionItemSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggestionItemSelect", js.Any.fromFunction1(value))
+      inline def setSuggestionItemSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "suggestionItemSelect", js.Any.fromFunction1(value))
       
       inline def setSuggestionItemSelectUndefined: Self = StObject.set(x, "suggestionItemSelect", js.undefined)
       
@@ -1860,7 +1980,9 @@ object sapUiWebcMainMultiInputMod {
       
       inline def setSuggestionItemsVarargs(value: IInputSuggestionItem*): Self = StObject.set(x, "suggestionItems", js.Array(value*))
       
-      inline def setTokenDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenDelete", js.Any.fromFunction1(value))
+      inline def setTokenDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenDelete", js.Any.fromFunction1(value))
       
       inline def setTokenDeleteUndefined: Self = StObject.set(x, "tokenDelete", js.undefined)
       
@@ -1880,7 +2002,7 @@ object sapUiWebcMainMultiInputMod {
       
       inline def setValue(value: String | PropertyBindingInfo): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueHelpTrigger(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "valueHelpTrigger", js.Any.fromFunction1(value))
+      inline def setValueHelpTrigger(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "valueHelpTrigger", js.Any.fromFunction1(value))
       
       inline def setValueHelpTriggerUndefined: Self = StObject.set(x, "valueHelpTrigger", js.undefined)
       
@@ -1901,4 +2023,20 @@ object sapUiWebcMainMultiInputMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type MultiInputSuggestionItemPreviewEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemPreviewEventParameters]
+  
+  type MultiInputSuggestionItemPreviewEventParameters = MultiInput$SuggestionItemPreviewEventParameters
+  
+  type MultiInputSuggestionItemSelectEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$SuggestionItemSelectEventParameters]
+  
+  type MultiInputSuggestionItemSelectEventParameters = MultiInput$SuggestionItemSelectEventParameters
+  
+  type MultiInputTokenDeleteEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$TokenDeleteEventParameters]
+  
+  type MultiInputTokenDeleteEventParameters = MultiInput$TokenDeleteEventParameters
+  
+  type MultiInputValueHelpTriggerEvent = typings.openui5.sapUiBaseEventMod.default[MultiInput$ValueHelpTriggerEventParameters]
+  
+  type MultiInputValueHelpTriggerEventParameters = MultiInput$ValueHelpTriggerEventParameters
 }

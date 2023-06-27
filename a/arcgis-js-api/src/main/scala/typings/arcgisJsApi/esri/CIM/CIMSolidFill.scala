@@ -10,8 +10,8 @@ trait CIMSolidFill
      with CIMSymbolLayerType {
   
   /**
-    * The color that is applied to the fill.
-    */
+  			 * The color that is applied to the fill.
+  			 */
   var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")

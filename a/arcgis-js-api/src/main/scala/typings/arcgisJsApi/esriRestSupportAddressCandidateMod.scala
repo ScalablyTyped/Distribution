@@ -12,20 +12,20 @@ object esriRestSupportAddressCandidateMod {
   @JSImport("esri/rest/support/AddressCandidate", JSImport.Namespace)
   @js.native
   /**
-    * Represents the result of a geocode service operation as a list of address candidates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html)
-    */
+  		 * Represents the result of a geocode service operation as a list of address candidates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AddressCandidate.html)
+  		 */
   open class ^ ()
     extends StObject
        with AddressCandidate {
     def this(properties: AddressCandidateProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

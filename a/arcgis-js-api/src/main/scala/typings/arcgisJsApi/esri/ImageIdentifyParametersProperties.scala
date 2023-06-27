@@ -9,84 +9,102 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageIdentifyParametersProperties extends StObject {
   
   /**
-    * Input geometry that defines the location to be identified.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#geometry)
-    */
+  		 * Input geometry that defines the location to be identified.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#geometry)
+  		 */
   var geometry: js.UndefOr[PointPropertiestypepoint | PolygonPropertiestypepoly] = js.undefined
   
   /**
-    * Controls the maximum number of returned catalog items, set to 1 to return the top most raster only.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#maxItemCount)
-    */
+  		 * Controls the maximum number of returned catalog items, set to 1 to return the top most raster only.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#maxItemCount)
+  		 */
   var maxItemCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the mosaic rules defining the image sorting order.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#mosaicRule)
-    */
+  		 * Specifies the mosaic rules defining the image sorting order.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#mosaicRule)
+  		 */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
-    * Specifies the pixel level being identified on the x and y axis.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#pixelSize)
-    */
+  		 * Specifies the pixel level being identified on the x and y axis.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#pixelSize)
+  		 */
   var pixelSize: js.UndefOr[PixelSize] = js.undefined
   
   /**
-    * When `true`, the request is processed for all variables and dimensions.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#processAsMultidimensional)
-    */
+  		 * When `true`, the request is processed for all variables and dimensions.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#processAsMultidimensional)
+  		 */
   var processAsMultidimensional: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the rendering rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRule)
-    */
-  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
+  		 * Specifies the raster function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#rasterFunction)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
-    * An array the [rendering rules](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRule) to retrieve multiple processed pixel values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRules)
-    */
+  		 * An array the [raster functions](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#rasterFunction) to retrieve multiple processed pixel values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#rasterFunctions)
+  		 */
+  var rasterFunctions: js.UndefOr[RasterFunctionProperties] = js.undefined
+  
+  /**
+  		 * Specifies the rendering rule for how the requested image should be rendered.
+  		 *
+  		 * @deprecated since version 4.27. Use {@link module:esri/rest/support/ImageIdentifyParameters#rasterFunctions rasterFunctions} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRule)
+  		 */
+  var renderingRule: js.UndefOr[scala.Unit] = js.undefined
+  
+  /**
+  		 * An array the [rendering rules](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRule) to retrieve multiple processed pixel values.
+  		 *
+  		 * @deprecated since version 4.27. Use {@link module:esri/rest/support/ImageIdentifyParameters#rasterFunctions rasterFunctions} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#renderingRules)
+  		 */
   var renderingRules: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
-    * If `true`, returns both geometry and attributes of the catalog items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnCatalogItems)
-    */
+  		 * If `true`, returns both geometry and attributes of the catalog items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnCatalogItems)
+  		 */
   var returnCatalogItems: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, each feature in the catalog items includes the geometry.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnGeometry)
-    */
+  		 * When `true`, each feature in the catalog items includes the geometry.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnGeometry)
+  		 */
   var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, the pixel values of all raster catalog items under the requested geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnPixelValues)
-    */
+  		 * If `true`, the pixel values of all raster catalog items under the requested geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#returnPixelValues)
+  		 */
   var returnPixelValues: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A time extent for a temporal data against [time-aware imagery layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#timeInfo).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#timeExtent)
-    */
+  		 * A time extent for a temporal data against [time-aware imagery layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#timeInfo).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyParameters.html#timeExtent)
+  		 */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 object ImageIdentifyParametersProperties {
@@ -119,7 +137,15 @@ object ImageIdentifyParametersProperties {
     
     inline def setProcessAsMultidimensionalUndefined: Self = StObject.set(x, "processAsMultidimensional", js.undefined)
     
-    inline def setRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
+    inline def setRasterFunction(value: RasterFunctionProperties): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
+    
+    inline def setRasterFunctions(value: RasterFunctionProperties): Self = StObject.set(x, "rasterFunctions", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionsUndefined: Self = StObject.set(x, "rasterFunctions", js.undefined)
+    
+    inline def setRenderingRule(value: scala.Unit): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     
     inline def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
     

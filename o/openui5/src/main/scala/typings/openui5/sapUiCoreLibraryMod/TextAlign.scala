@@ -41,7 +41,7 @@ object TextAlign extends StObject {
   /* "End" */ val End: typings.openui5.sapUiCoreLibraryMod.TextAlign.End & String = js.native
   
   /**
-    * @SINCE 1.26.0
+    * @since 1.26.0
     *
     * Sets no text align, so the browser default is used.
     */

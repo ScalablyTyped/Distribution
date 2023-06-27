@@ -9,26 +9,26 @@ trait DirectionsLastRoute
      with RouteLayerSolveResult {
   
   /**
-    * Collection of point barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
-    */
+  		 * Collection of point barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
+  		 */
   @JSName("pointBarriers")
   var pointBarriers_DirectionsLastRoute: Collection[PointBarrier]
   
   /**
-    * Collection of polygon barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
-    */
+  		 * Collection of polygon barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
+  		 */
   @JSName("polygonBarriers")
   var polygonBarriers_DirectionsLastRoute: Collection[PolygonBarrier]
   
   /**
-    * Collection of polyline barriers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
-    */
+  		 * Collection of polyline barriers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
+  		 */
   @JSName("polylineBarriers")
   var polylineBarriers_DirectionsLastRoute: Collection[PolylineBarrier]
 }

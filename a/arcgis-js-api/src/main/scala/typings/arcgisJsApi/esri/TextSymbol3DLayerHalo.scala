@@ -9,19 +9,19 @@ trait TextSymbol3DLayerHalo
      with AnonymousAccessor {
   
   /**
-    * The color of the halo.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
-    */
+  		 * The color of the halo.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The size of the halo in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
-    */
+  		 * The size of the halo in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
+  		 */
   var size: js.UndefOr[Double] = js.undefined
 }
 object TextSymbol3DLayerHalo {

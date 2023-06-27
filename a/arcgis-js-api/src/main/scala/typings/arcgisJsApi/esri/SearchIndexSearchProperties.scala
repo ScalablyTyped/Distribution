@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchIndexSearchProperties extends StObject {
   
   /**
-    * The properties of the named type that are included in the search index.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html#searchProperties)
-    */
+  		 * The properties of the named type that are included in the search index.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-SearchIndex.html#searchProperties)
+  		 */
   var propertyNames: js.Array[String]
 }
 object SearchIndexSearchProperties {

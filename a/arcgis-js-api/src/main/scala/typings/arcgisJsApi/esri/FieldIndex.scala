@@ -7,42 +7,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FieldIndex
   extends StObject
-     with Accessor {
+     with Accessor
+     with JSONSupport {
   
   /**
-    * Specifies if the field is indexed in ascending order.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#ascending)
-    */
+  		 * Specifies if the field is indexed in ascending order.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#ascending)
+  		 */
   var ascending: Boolean = js.native
   
   /**
-    * Description of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#description)
-    */
+  		 * Description of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#description)
+  		 */
   var description: String = js.native
   
   /**
-    * The ordered field names included in this index.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#fieldNames)
-    */
+  		 * The ordered field names included in this index.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#fieldNames)
+  		 */
   var fieldNames: js.Array[String] = js.native
   
   /**
-    * The name of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#name)
-    */
+  		 * The name of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * Specifies if the values in the field are unique (no duplicate values).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#unique)
-    */
+  		 * Specifies if the values in the field are unique (no duplicate values).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-FieldIndex.html#unique)
+  		 */
   var unique: Boolean = js.native
 }

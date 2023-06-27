@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Web Storage API interface provides access to a particular domain's session or local storage. It allows, for example, the addition, modification, or deletion of stored data items. */
+/**
+  * This Web Storage API interface provides access to a particular domain's session or local storage. It allows, for example, the addition, modification, or deletion of stored data items.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage)
+  */
 trait Storage
   extends StObject
      with /* standard dom */
@@ -15,19 +19,33 @@ trait Storage
     * Removes all key/value pairs, if there are any.
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/clear)
     */
   /* standard dom */
   def clear(): Unit
   
-  /** Returns the current value associated with the given key, or null if the given key does not exist. */
+  /**
+    * Returns the current value associated with the given key, or null if the given key does not exist.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/getItem)
+    */
   /* standard dom */
   def getItem(key: java.lang.String): java.lang.String | Null
   
-  /** Returns the name of the nth key, or null if n is greater than or equal to the number of key/value pairs. */
+  /**
+    * Returns the name of the nth key, or null if n is greater than or equal to the number of key/value pairs.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/key)
+    */
   /* standard dom */
   def key(index: Double): java.lang.String | Null
   
-  /** Returns the number of key/value pairs. */
+  /**
+    * Returns the number of key/value pairs.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/length)
+    */
   /* standard dom */
   val length: Double
   
@@ -35,6 +53,8 @@ trait Storage
     * Removes the key/value pair with the given key, if a key/value pair with the given key exists.
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/removeItem)
     */
   /* standard dom */
   def removeItem(key: java.lang.String): Unit
@@ -45,6 +65,8 @@ trait Storage
     * Throws a "QuotaExceededError" DOMException exception if the new value couldn't be set. (Setting could fail if, e.g., the user has disabled storage for the site, or if the quota has been exceeded.)
     *
     * Dispatches a storage event on Window objects holding an equivalent Storage object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Storage/setItem)
     */
   /* standard dom */
   def setItem(key: java.lang.String, value: java.lang.String): Unit

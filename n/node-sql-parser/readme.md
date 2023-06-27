@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-sql-parser
 
-Typings are for version 4.6.6
+Typings are for version 4.7.0
 
 ## Library description:
 simple node sql parser

@@ -14,16 +14,16 @@ trait Domain
      with JSONSupport {
   
   /**
-    * The domain name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
-    */
+  		 * The domain name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
+  		 */
   var name: String = js.native
   
   /**
-    * The domain type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
-    */
+  		 * The domain type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
+  		 */
   var `type`: range | `coded-value` | inherited = js.native
 }

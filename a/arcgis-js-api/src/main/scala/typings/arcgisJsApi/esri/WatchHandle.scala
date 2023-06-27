@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WatchHandle extends StObject {
   
   /**
-    * Removes the watch handle.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html#WatchHandle)
-    */
+  		 * Removes the watch handle.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html#WatchHandle)
+  		 */
   def remove(): scala.Unit
 }
 object WatchHandle {

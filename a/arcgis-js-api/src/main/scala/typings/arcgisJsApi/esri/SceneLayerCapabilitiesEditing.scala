@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneLayerCapabilitiesEditing extends StObject {
   
   /**
-    * Indicates if the geometry of the features in the layer can be edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
-    */
+  		 * Indicates if the geometry of the features in the layer can be edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
+  		 */
   var supportsGeometryUpdate: Boolean
   
   /**
-    * Indicates if the `globalId` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
-    */
+  		 * Indicates if the `globalId` values provided by the client are used in [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
+  		 */
   var supportsGlobalId: Boolean
   
   /**
-    * Indicates if the `rollbackOnFailureEnabled` parameter can be set to `true` or `false` when editing features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
-    */
+  		 * Indicates if the `rollbackOnFailureEnabled` parameter can be set to `true` or `false` when editing features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
+  		 */
   var supportsRollbackOnFailure: Boolean
 }
 object SceneLayerCapabilitiesEditing {

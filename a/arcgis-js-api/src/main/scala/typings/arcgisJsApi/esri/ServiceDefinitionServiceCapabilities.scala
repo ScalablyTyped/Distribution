@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionServiceCapabilities extends StObject {
   
   /**
-    * Information on the supported capabilities of the the [executeApplyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeApplyEdits) operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Information on the supported capabilities of the the [executeApplyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeApplyEdits) operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var applyEditsCapabilities: ServiceDefinitionServiceCapabilitiesApplyEditsCapabilities
   
   /**
-    * Information on the supported capabilities of geometries in the knowledge graph service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Information on the supported capabilities of geometries in the knowledge graph service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var geometryCapabilities: ServiceDefinitionServiceCapabilitiesGeometryCapabilities
   
   /**
-    * Information on the supported capabilities of indexes in the knowledge graph service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Information on the supported capabilities of indexes in the knowledge graph service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var indexCapabilities: ServiceDefinitionServiceCapabilitiesIndexCapabilities
   
   /**
-    * Information on the supported capabilities of [search](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeSearch) operations in the knowledge graph service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * Information on the supported capabilities of [search](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraphService.html#executeSearch) operations in the knowledge graph service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var searchCapabilities: ServiceDefinitionServiceCapabilitiesSearchCapabilities
 }
 object ServiceDefinitionServiceCapabilities {

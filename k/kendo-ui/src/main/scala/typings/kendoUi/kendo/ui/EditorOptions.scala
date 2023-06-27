@@ -32,6 +32,8 @@ trait EditorOptions
   
   var name: js.UndefOr[String] = js.undefined
   
+  var navigateOnTab: js.UndefOr[Boolean] = js.undefined
+  
   var paste: js.UndefOr[js.Function1[/* e */ EditorPasteEvent, Unit]] = js.undefined
   
   var pasteCleanup: js.UndefOr[EditorPasteCleanup] = js.undefined
@@ -109,6 +111,10 @@ object EditorOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigateOnTab(value: Boolean): Self = StObject.set(x, "navigateOnTab", value.asInstanceOf[js.Any])
+    
+    inline def setNavigateOnTabUndefined: Self = StObject.set(x, "navigateOnTab", js.undefined)
     
     inline def setPaste(value: /* e */ EditorPasteEvent => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     

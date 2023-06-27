@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-tel-input
 
-Typings are for version 17.0
+Typings are for version 18.1
 
 ## Library description:
 A JavaScript plugin for entering and validating international telephone numbers

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides information about the type of a raised event.
   *
   * @remarks
-  * [Api set: WordApi 1.3]
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.EventType")
 @js.native

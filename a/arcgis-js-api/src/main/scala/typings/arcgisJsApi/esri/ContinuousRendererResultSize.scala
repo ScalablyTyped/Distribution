@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContinuousRendererResultSize extends StObject {
   
   /**
-    * The size scheme used by the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
-    */
+  		 * The size scheme used by the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
+  		 */
   var sizeScheme: SizeScheme
   
   /**
-    * The size visual variable(s) configured based on the statistics of the data and the view scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
-    */
+  		 * The size visual variable(s) configured based on the statistics of the data and the view scale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
+  		 */
   var visualVariables: js.Array[SizeVariable]
 }
 object ContinuousRendererResultSize {

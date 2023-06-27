@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hashids" : "2.2.11"
+      "hashids" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hashids" : "2.2.11"
+      "hashids" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

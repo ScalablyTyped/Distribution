@@ -12,10 +12,10 @@ trait StringNode
   var `type`: string_
   
   /**
-    * The string value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#StringNode)
-    */
+  		 * The string value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#StringNode)
+  		 */
   var value: String
 }
 object StringNode {

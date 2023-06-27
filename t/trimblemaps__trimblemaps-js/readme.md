@@ -1,7 +1,7 @@
 
 # Scala.js typings for trimblemaps__trimblemaps-js
 
-Typings are for version 3.9.0
+Typings are for version 3.10.0
 
 ## Library description:
 WebGL based JavaScript API using Trimble Maps Vector Data

@@ -8,30 +8,12 @@ trait `200Content663` extends StObject {
   
   /** @description Response */
   var `200`: Content663
-  
-  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
-  
-  var `401`: Content36
-  
-  var `403`: Content36
-  
-  var `422`: Content346
 }
 object `200Content663` {
   
-  inline def apply(
-    `200`: Content663,
-    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
-    `401`: Content36,
-    `403`: Content36,
-    `422`: Content346
-  ): `200Content663` = {
+  inline def apply(`200`: Content663): `200Content663` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
-    __obj.updateDynamic("401")(`401`.asInstanceOf[js.Any])
-    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
-    __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content663`]
   }
   
@@ -39,15 +21,5 @@ object `200Content663` {
   implicit open class MutableBuilder[Self <: `200Content663`] (val x: Self) extends AnyVal {
     
     inline def set200(value: Content663): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set304(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
-    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
-    
-    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
-    
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
-    
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

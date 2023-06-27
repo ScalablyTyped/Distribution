@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorTileLayerCapabilitiesOperations extends StObject {
   
   /**
-    * Indicates if the tiles from the service can be exported.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
-    */
+  		 * Indicates if the tiles from the service can be exported.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
+  		 */
   var supportsExportTiles: Boolean
   
   /**
-    * Indicates if the service exposes a tile map that describes the presence of tiles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
-    */
+  		 * Indicates if the service exposes a tile map that describes the presence of tiles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
+  		 */
   var supportsTileMap: Boolean
 }
 object VectorTileLayerCapabilitiesOperations {

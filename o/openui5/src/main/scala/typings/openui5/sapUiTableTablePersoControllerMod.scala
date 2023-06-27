@@ -196,7 +196,7 @@ object sapUiTableTablePersoControllerMod {
     def getTable(): ID = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.21.2) - API might change / feature requires the sap.m library!
+      * @experimental (since 1.21.2) - API might change / feature requires the sap.m library!
       *
       * Opens the personalization dialog for the Table to modify the visibility and the order of the columns.
       *

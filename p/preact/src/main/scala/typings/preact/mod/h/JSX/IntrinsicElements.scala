@@ -66,6 +66,7 @@ import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -139,7 +140,7 @@ trait IntrinsicElements extends StObject {
   
   var animateMotion: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement]
   
-  var animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]
+  var animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateTransformElement]
   
   var area: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLAreaElement]
   
@@ -486,7 +487,7 @@ object IntrinsicElements {
     address: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     animate: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement],
     animateMotion: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement],
-    animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement],
+    animateTransform: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateTransformElement],
     area: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLAreaElement],
     article: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
     aside: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLElement],
@@ -675,7 +676,7 @@ object IntrinsicElements {
     
     inline def setAnimateMotion(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateMotionElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
     
-    inline def setAnimateTransform(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
+    inline def setAnimateTransform(value: typings.preact.srcJsxMod.JSXInternal.SVGAttributes[SVGAnimateTransformElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
     
     inline def setArea(value: typings.preact.srcJsxMod.JSXInternal.HTMLAttributes[HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

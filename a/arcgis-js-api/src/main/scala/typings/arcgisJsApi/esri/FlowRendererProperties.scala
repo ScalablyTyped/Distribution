@@ -11,96 +11,96 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowRendererProperties extends StObject {
   
   /**
-    * Contains metadata about renderers generated from the [flowRendererCreator.createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer) method, including information for setting UI elements such as sliders and themes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#authoringInfo)
-    */
+  		 * Contains metadata about renderers generated from the [flowRendererCreator.createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#createRenderer) method, including information for setting UI elements such as sliders and themes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#authoringInfo)
+  		 */
   var authoringInfo: js.UndefOr[AuthoringInfoProperties] = js.undefined
   
   /**
-    * The color of the animated streamlines.
-    *
-    * @default [255, 255, 255, 1]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#color)
-    */
+  		 * The color of the animated streamlines.
+  		 *
+  		 * @default [255, 255, 255, 1]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#color)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The density of the streamlines.
-    *
-    * @default 0.8
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#density)
-    */
+  		 * The density of the streamlines.
+  		 *
+  		 * @default 0.8
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#density)
+  		 */
   var density: js.UndefOr[Double] = js.undefined
   
   /**
-    * Defines the flow direction of the data.
-    *
-    * @default "flow-from"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowRepresentation)
-    */
+  		 * Defines the flow direction of the data.
+  		 *
+  		 * @default "flow-from"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowRepresentation)
+  		 */
   var flowRepresentation: js.UndefOr[`flow-from` | `flow-to`] = js.undefined
   
   /**
-    * The speed of the animated streamlines, relative to the simulation time.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowSpeed)
-    */
+  		 * The speed of the animated streamlines, relative to the simulation time.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#flowSpeed)
+  		 */
   var flowSpeed: js.UndefOr[Double] = js.undefined
   
   /**
-    * An object providing options for displaying the renderer in the Legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#legendOptions)
-    */
+  		 * An object providing options for displaying the renderer in the Legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[FlowRendererLegendOptions] = js.undefined
   
   /**
-    * The maximum path length streamlines will travel in points.
-    *
-    * @default 200
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#maxPathLength)
-    */
+  		 * The maximum path length streamlines will travel in points.
+  		 *
+  		 * @default 200
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#maxPathLength)
+  		 */
   var maxPathLength: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The front cap of the streamline.
-    *
-    * @default "butt"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailCap)
-    */
+  		 * The front cap of the streamline.
+  		 *
+  		 * @default "butt"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailCap)
+  		 */
   var trailCap: js.UndefOr[butt_ | round_] = js.undefined
   
   /**
-    * The approximate visible length of the streamline in points.
-    *
-    * @default 100
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailLength)
-    */
+  		 * The approximate visible length of the streamline in points.
+  		 *
+  		 * @default 100
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailLength)
+  		 */
   var trailLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the streamline trail in points.
-    *
-    * @default 1.5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailWidth)
-    */
+  		 * The width of the streamline trail in points.
+  		 *
+  		 * @default 1.5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#trailWidth)
+  		 */
   var trailWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#visualVariables)
-    */
+  		 * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-FlowRenderer.html#visualVariables)
+  		 */
   var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 object FlowRendererProperties {

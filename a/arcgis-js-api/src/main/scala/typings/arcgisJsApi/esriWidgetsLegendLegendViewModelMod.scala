@@ -11,10 +11,10 @@ object esriWidgetsLegendLegendViewModelMod {
   @JSImport("esri/widgets/Legend/LegendViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget, which displays a label and symbol for interpreting the [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) of each layer in a map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html)
-    */
+  		 * Provides the logic for the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget, which displays a label and symbol for interpreting the [Renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) of each layer in a map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with LegendViewModel {

@@ -52,6 +52,11 @@ trait ResourceTiming extends StObject {
   var receiveHeadersEnd: Double
   
   /**
+    * Started receiving response headers.
+    */
+  var receiveHeadersStart: Double
+  
+  /**
     * Timing's requestTime is a baseline in seconds, while the other numbers are ticks in
     * milliseconds relatively to this requestTime.
     */
@@ -109,6 +114,7 @@ object ResourceTiming {
     pushEnd: Double,
     pushStart: Double,
     receiveHeadersEnd: Double,
+    receiveHeadersStart: Double,
     requestTime: Double,
     sendEnd: Double,
     sendStart: Double,
@@ -119,7 +125,7 @@ object ResourceTiming {
     workerRespondWithSettled: Double,
     workerStart: Double
   ): ResourceTiming = {
-    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], dnsEnd = dnsEnd.asInstanceOf[js.Any], dnsStart = dnsStart.asInstanceOf[js.Any], proxyEnd = proxyEnd.asInstanceOf[js.Any], proxyStart = proxyStart.asInstanceOf[js.Any], pushEnd = pushEnd.asInstanceOf[js.Any], pushStart = pushStart.asInstanceOf[js.Any], receiveHeadersEnd = receiveHeadersEnd.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any], sendEnd = sendEnd.asInstanceOf[js.Any], sendStart = sendStart.asInstanceOf[js.Any], sslEnd = sslEnd.asInstanceOf[js.Any], sslStart = sslStart.asInstanceOf[js.Any], workerFetchStart = workerFetchStart.asInstanceOf[js.Any], workerReady = workerReady.asInstanceOf[js.Any], workerRespondWithSettled = workerRespondWithSettled.asInstanceOf[js.Any], workerStart = workerStart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectEnd = connectEnd.asInstanceOf[js.Any], connectStart = connectStart.asInstanceOf[js.Any], dnsEnd = dnsEnd.asInstanceOf[js.Any], dnsStart = dnsStart.asInstanceOf[js.Any], proxyEnd = proxyEnd.asInstanceOf[js.Any], proxyStart = proxyStart.asInstanceOf[js.Any], pushEnd = pushEnd.asInstanceOf[js.Any], pushStart = pushStart.asInstanceOf[js.Any], receiveHeadersEnd = receiveHeadersEnd.asInstanceOf[js.Any], receiveHeadersStart = receiveHeadersStart.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any], sendEnd = sendEnd.asInstanceOf[js.Any], sendStart = sendStart.asInstanceOf[js.Any], sslEnd = sslEnd.asInstanceOf[js.Any], sslStart = sslStart.asInstanceOf[js.Any], workerFetchStart = workerFetchStart.asInstanceOf[js.Any], workerReady = workerReady.asInstanceOf[js.Any], workerRespondWithSettled = workerRespondWithSettled.asInstanceOf[js.Any], workerStart = workerStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceTiming]
   }
   
@@ -143,6 +149,8 @@ object ResourceTiming {
     inline def setPushStart(value: Double): Self = StObject.set(x, "pushStart", value.asInstanceOf[js.Any])
     
     inline def setReceiveHeadersEnd(value: Double): Self = StObject.set(x, "receiveHeadersEnd", value.asInstanceOf[js.Any])
+    
+    inline def setReceiveHeadersStart(value: Double): Self = StObject.set(x, "receiveHeadersStart", value.asInstanceOf[js.Any])
     
     inline def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     

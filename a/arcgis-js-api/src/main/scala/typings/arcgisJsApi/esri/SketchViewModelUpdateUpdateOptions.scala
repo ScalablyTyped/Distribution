@@ -10,62 +10,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchViewModelUpdateUpdateOptions extends StObject {
   
   /**
-    * Indicates if the `rotation` operation will be enabled when updating graphics.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates if the `rotation` operation will be enabled when updating graphics.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var enableRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the `scale` operation will be enabled when updating graphics.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates if the `scale` operation will be enabled when updating graphics.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var enableScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if z-values can be modified when updating the graphic.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates if z-values can be modified when updating the graphic.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var enableZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether more than one selection can be made at once.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates whether more than one selection can be made at once.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the uniform scale operation will be enabled when updating graphics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates if the uniform scale operation will be enabled when updating graphics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var toggleToolOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Name of the update tool.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
-    */
+  		 * Name of the update tool.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
+  		 */
   var tool: js.UndefOr[transform | reshape | move] = js.undefined
 }
 object SketchViewModelUpdateUpdateOptions {

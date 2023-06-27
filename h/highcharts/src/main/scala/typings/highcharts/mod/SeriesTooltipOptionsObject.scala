@@ -70,6 +70,17 @@ trait SeriesTooltipOptionsObject extends StObject {
   var footerFormat: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highstock) A format string for the whole tooltip. When format strings
+    * are a requirement, it is usually more convenient to use `headerFormat`,
+    * `pointFormat` and `footerFormat`, but the `format` option allows
+    * combining them into one setting.
+    *
+    * The context of the format string is the same as that of the `formatter`
+    * callback.
+    */
+  var format: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highstock) The HTML of the tooltip header line. Variables are enclosed
     * by curly brackets. Available variables are `point.key`, `series.name`,
     * `series.color` and other members from the `point` and `series` objects.
@@ -195,6 +206,10 @@ object SeriesTooltipOptionsObject {
     inline def setFooterFormat(value: String): Self = StObject.set(x, "footerFormat", value.asInstanceOf[js.Any])
     
     inline def setFooterFormatUndefined: Self = StObject.set(x, "footerFormat", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setHeaderFormat(value: String): Self = StObject.set(x, "headerFormat", value.asInstanceOf[js.Any])
     

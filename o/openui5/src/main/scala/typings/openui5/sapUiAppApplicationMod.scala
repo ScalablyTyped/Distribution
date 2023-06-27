@@ -125,7 +125,7 @@ object sapUiAppApplicationMod {
     extends typings.openui5.sapUiCoreComponentMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates and returns the root component. Override this method in your application implementation, if you
       * want to override the default creation by metadata.
@@ -161,7 +161,7 @@ object sapUiAppApplicationMod {
     def getRootComponent(): typings.openui5.sapUiCoreUicomponentMod.default = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       * @deprecated (since 1.14)
       *
       * Returns the application root component.
@@ -210,7 +210,7 @@ object sapUiAppApplicationMod {
     def onExit(): Unit = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Sets the configuration model.
       */

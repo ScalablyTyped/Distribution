@@ -5,24 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the result of a LengthDimension.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html)
-  */
+	 * Represents the result of a LengthDimension.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html)
+	 */
 trait LengthDimensionResult extends StObject {
   
   /**
-    * The [LengthDimension](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html) that this result corresponds to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#dimension)
-    */
+  		 * The [LengthDimension](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html) that this result corresponds to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#dimension)
+  		 */
   var dimension: LengthDimension
   
   /**
-    * The length currently being measured by the [dimension](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#dimension).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#length)
-    */
+  		 * The length currently being measured by the [dimension](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#dimension).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-LengthDimensionResult.html#length)
+  		 */
   var length: Length
 }
 object LengthDimensionResult {

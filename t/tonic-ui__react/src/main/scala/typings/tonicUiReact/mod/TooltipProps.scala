@@ -1873,6 +1873,10 @@ trait TooltipProps extends StObject {
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
+  var `aria-braillelabel`: js.UndefOr[String] = js.undefined
+  
+  var `aria-brailleroledescription`: js.UndefOr[String] = js.undefined
+  
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
@@ -1881,6 +1885,8 @@ trait TooltipProps extends StObject {
   
   var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
+  var `aria-colindextext`: js.UndefOr[String] = js.undefined
+  
   var `aria-colspan`: js.UndefOr[Double] = js.undefined
   
   var `aria-controls`: js.UndefOr[String] = js.undefined
@@ -1888,6 +1894,8 @@ trait TooltipProps extends StObject {
   var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
   var `aria-describedby`: js.UndefOr[String] = js.undefined
+  
+  var `aria-description`: js.UndefOr[String] = js.undefined
   
   var `aria-details`: js.UndefOr[String] = js.undefined
   
@@ -1948,6 +1956,8 @@ trait TooltipProps extends StObject {
   var `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
   var `aria-rowindex`: js.UndefOr[Double] = js.undefined
+  
+  var `aria-rowindextext`: js.UndefOr[String] = js.undefined
   
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
@@ -3455,6 +3465,14 @@ object TooltipProps {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
+    inline def `setAria-braillelabel`(value: String): Self = StObject.set(x, "aria-braillelabel", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-braillelabelUndefined`: Self = StObject.set(x, "aria-braillelabel", js.undefined)
+    
+    inline def `setAria-brailleroledescription`(value: String): Self = StObject.set(x, "aria-brailleroledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-brailleroledescriptionUndefined`: Self = StObject.set(x, "aria-brailleroledescription", js.undefined)
+    
     inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
@@ -3471,6 +3489,10 @@ object TooltipProps {
     
     inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
     
+    inline def `setAria-colindextext`(value: String): Self = StObject.set(x, "aria-colindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colindextextUndefined`: Self = StObject.set(x, "aria-colindextext", js.undefined)
+    
     inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
     
     inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
@@ -3486,6 +3508,10 @@ object TooltipProps {
     inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-description`(value: String): Self = StObject.set(x, "aria-description", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-descriptionUndefined`: Self = StObject.set(x, "aria-description", js.undefined)
     
     inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
     
@@ -3604,6 +3630,10 @@ object TooltipProps {
     inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
     
     inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+    
+    inline def `setAria-rowindextext`(value: String): Self = StObject.set(x, "aria-rowindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowindextextUndefined`: Self = StObject.set(x, "aria-rowindextext", js.undefined)
     
     inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
     

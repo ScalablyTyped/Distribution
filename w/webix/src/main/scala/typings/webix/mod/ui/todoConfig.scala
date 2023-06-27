@@ -11,8 +11,6 @@ trait todoConfig extends StObject {
   
   var animate: js.UndefOr[Boolean | obj] = js.undefined
   
-  var body: js.UndefOr[obj] = js.undefined
-  
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
@@ -72,10 +70,6 @@ object todoConfig {
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
-    
-    inline def setBody(value: obj): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-    
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

@@ -9,13 +9,13 @@ trait `200ContentApplicationjsonAuthorscount` extends StObject {
   /** @description Response */
   var `200`: ContentApplicationjsonAuthorscount
   
-  var `404`: Content36
+  var `404`: Content41
   
-  var `503`: Content36
+  var `503`: Content41
 }
 object `200ContentApplicationjsonAuthorscount` {
   
-  inline def apply(`200`: ContentApplicationjsonAuthorscount, `404`: Content36, `503`: Content36): `200ContentApplicationjsonAuthorscount` = {
+  inline def apply(`200`: ContentApplicationjsonAuthorscount, `404`: Content41, `503`: Content41): `200ContentApplicationjsonAuthorscount` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
@@ -28,8 +28,8 @@ object `200ContentApplicationjsonAuthorscount` {
     
     inline def set200(value: ContentApplicationjsonAuthorscount): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set503(value: Content36): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(value: Content41): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

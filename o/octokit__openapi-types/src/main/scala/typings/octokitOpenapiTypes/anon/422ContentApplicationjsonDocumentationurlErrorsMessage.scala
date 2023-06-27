@@ -9,9 +9,9 @@ trait `422ContentApplicationjsonDocumentationurlErrorsMessage` extends StObject 
   /** @description Response */
   var `200`: ContentApplicationjsonCreditsdetailed
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
   /** @description Validation failed, or the endpoint has been spammed. */
   var `422`: ContentApplicationjsonDocumentationurlErrorsMessage
@@ -20,8 +20,8 @@ object `422ContentApplicationjsonDocumentationurlErrorsMessage` {
   
   inline def apply(
     `200`: ContentApplicationjsonCreditsdetailed,
-    `403`: Content36,
-    `404`: Content36,
+    `403`: Content41,
+    `404`: Content41,
     `422`: ContentApplicationjsonDocumentationurlErrorsMessage
   ): `422ContentApplicationjsonDocumentationurlErrorsMessage` = {
     val __obj = js.Dynamic.literal()
@@ -37,9 +37,9 @@ object `422ContentApplicationjsonDocumentationurlErrorsMessage` {
     
     inline def set200(value: ContentApplicationjsonCreditsdetailed): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set422(value: ContentApplicationjsonDocumentationurlErrorsMessage): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }

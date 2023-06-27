@@ -68,6 +68,8 @@ trait i18n extends StObject {
   
   var kanban: js.UndefOr[Confirm] = js.undefined
   
+  var locale: String
+  
   var locales: Any
   
   var longDateFormat: String
@@ -140,6 +142,7 @@ object i18n {
     groupDelimiter: String,
     groupSize: Double,
     intFormat: Double => String,
+    locale: String,
     locales: Any,
     longDateFormat: String,
     longDateFormatDate: String => js.Date,
@@ -164,7 +167,7 @@ object i18n {
     timeFormatStr: js.Date => String,
     timeboard: Seconds
   ): i18n = {
-    val __obj = js.Dynamic.literal(PDFviewer = PDFviewer.asInstanceOf[js.Any], am = am.asInstanceOf[js.Any], aria = aria.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], combo = combo.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], dataExport = dataExport.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], dateFormatDate = js.Any.fromFunction1(dateFormatDate), dateFormatStr = js.Any.fromFunction1(dateFormatStr), dbllist = dbllist.asInstanceOf[js.Any], decimalDelimiter = decimalDelimiter.asInstanceOf[js.Any], decimalSize = decimalSize.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fullDateFormat = fullDateFormat.asInstanceOf[js.Any], fullDateFormatDate = js.Any.fromFunction1(fullDateFormatDate), fullDateFormatStr = js.Any.fromFunction1(fullDateFormatStr), groupDelimiter = groupDelimiter.asInstanceOf[js.Any], groupSize = groupSize.asInstanceOf[js.Any], intFormat = js.Any.fromFunction1(intFormat), locales = locales.asInstanceOf[js.Any], longDateFormat = longDateFormat.asInstanceOf[js.Any], longDateFormatDate = js.Any.fromFunction1(longDateFormatDate), longDateFormatStr = js.Any.fromFunction1(longDateFormatStr), message = message.asInstanceOf[js.Any], numberFormat = js.Any.fromFunction1(numberFormat), pager = pager.asInstanceOf[js.Any], parseFormat = parseFormat.asInstanceOf[js.Any], parseFormatDate = js.Any.fromFunction1(parseFormatDate), parseFormatStr = js.Any.fromFunction1(parseFormatStr), parseTimeFormat = parseTimeFormat.asInstanceOf[js.Any], parseTimeFormatDate = js.Any.fromFunction1(parseTimeFormatDate), parseTimeFormatStr = js.Any.fromFunction1(parseTimeFormatStr), pm = pm.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], priceFormat = js.Any.fromFunction1(priceFormat), priceSettings = priceSettings.asInstanceOf[js.Any], richtext = richtext.asInstanceOf[js.Any], setLocale = js.Any.fromFunction1(setLocale), timeFormat = timeFormat.asInstanceOf[js.Any], timeFormatDate = js.Any.fromFunction1(timeFormatDate), timeFormatStr = js.Any.fromFunction1(timeFormatStr), timeboard = timeboard.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(PDFviewer = PDFviewer.asInstanceOf[js.Any], am = am.asInstanceOf[js.Any], aria = aria.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], combo = combo.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], dataExport = dataExport.asInstanceOf[js.Any], dateFormat = dateFormat.asInstanceOf[js.Any], dateFormatDate = js.Any.fromFunction1(dateFormatDate), dateFormatStr = js.Any.fromFunction1(dateFormatStr), dbllist = dbllist.asInstanceOf[js.Any], decimalDelimiter = decimalDelimiter.asInstanceOf[js.Any], decimalSize = decimalSize.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fullDateFormat = fullDateFormat.asInstanceOf[js.Any], fullDateFormatDate = js.Any.fromFunction1(fullDateFormatDate), fullDateFormatStr = js.Any.fromFunction1(fullDateFormatStr), groupDelimiter = groupDelimiter.asInstanceOf[js.Any], groupSize = groupSize.asInstanceOf[js.Any], intFormat = js.Any.fromFunction1(intFormat), locale = locale.asInstanceOf[js.Any], locales = locales.asInstanceOf[js.Any], longDateFormat = longDateFormat.asInstanceOf[js.Any], longDateFormatDate = js.Any.fromFunction1(longDateFormatDate), longDateFormatStr = js.Any.fromFunction1(longDateFormatStr), message = message.asInstanceOf[js.Any], numberFormat = js.Any.fromFunction1(numberFormat), pager = pager.asInstanceOf[js.Any], parseFormat = parseFormat.asInstanceOf[js.Any], parseFormatDate = js.Any.fromFunction1(parseFormatDate), parseFormatStr = js.Any.fromFunction1(parseFormatStr), parseTimeFormat = parseTimeFormat.asInstanceOf[js.Any], parseTimeFormatDate = js.Any.fromFunction1(parseTimeFormatDate), parseTimeFormatStr = js.Any.fromFunction1(parseTimeFormatStr), pm = pm.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], priceFormat = js.Any.fromFunction1(priceFormat), priceSettings = priceSettings.asInstanceOf[js.Any], richtext = richtext.asInstanceOf[js.Any], setLocale = js.Any.fromFunction1(setLocale), timeFormat = timeFormat.asInstanceOf[js.Any], timeFormatDate = js.Any.fromFunction1(timeFormatDate), timeFormatStr = js.Any.fromFunction1(timeFormatStr), timeboard = timeboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[i18n]
   }
   
@@ -222,6 +225,8 @@ object i18n {
     inline def setKanban(value: Confirm): Self = StObject.set(x, "kanban", value.asInstanceOf[js.Any])
     
     inline def setKanbanUndefined: Self = StObject.set(x, "kanban", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocales(value: Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     

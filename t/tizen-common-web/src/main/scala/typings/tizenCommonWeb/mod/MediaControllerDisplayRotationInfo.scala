@@ -13,15 +13,15 @@ trait MediaControllerDisplayRotationInfo extends StObject {
     *
     * @returns The identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addDisplayRotationChangeListener(listener: MediaControllerDisplayRotationChangeCallback): Double
   
   /**
     * State of display rotation on the server represented by this object.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val displayRotation: MediaControllerDisplayRotationType
   
@@ -32,7 +32,7 @@ trait MediaControllerDisplayRotationInfo extends StObject {
     *
     * @param watchId Watcher identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeDisplayRotationChangeListener(watchId: Double): Unit
   
@@ -45,9 +45,9 @@ trait MediaControllerDisplayRotationInfo extends StObject {
     * @param displayRotation Display rotation, which is requested by client.
     * @param replyCallback The method to invoke when server responded to change request.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type NotSupportedError, if related ability is not supported by server.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotSupportedError, if related ability is not supported by server.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def sendRequest(
     displayRotation: MediaControllerDisplayRotationType,

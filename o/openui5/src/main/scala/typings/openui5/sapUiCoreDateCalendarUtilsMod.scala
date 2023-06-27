@@ -14,7 +14,7 @@ object sapUiCoreDateCalendarUtilsMod extends Shortcut {
   val default: CalendarUtils = js.native
   
   /**
-    * @SINCE 1.108.0
+    * @since 1.108.0
     *
     * Provides calendar-related utilities.
     */
@@ -22,14 +22,14 @@ object sapUiCoreDateCalendarUtilsMod extends Shortcut {
   trait CalendarUtils extends StObject {
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Resolves calendar week configuration.
       *
       * Returns an object with the following fields:
       * 	 - `firstDayOfWeek`: specifies the first day of the week starting with `0` (which is Sunday)
       * 	 - `minimalDaysInFirstWeek`: minimal days at the beginning of the year which define the first calendar
-      * 			week
+      *     week
       *
       * @returns The calendar week configuration, or `undefined for an invalid value of sap.ui.core.date.CalendarWeekNumbering`.
       */

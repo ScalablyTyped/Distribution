@@ -14,19 +14,19 @@ trait TextContent
      with contentContent {
   
   /**
-    * The formatted string content to display.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#text)
-    */
+  		 * The formatted string content to display.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#text)
+  		 */
   var text: String = js.native
   
   /**
-    * The type of popup element displayed.
-    *
-    * @default text
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#type)
-    */
+  		 * The type of popup element displayed.
+  		 *
+  		 * @default text
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#type)
+  		 */
   @JSName("type")
   val type_TextContent: text = js.native
 }

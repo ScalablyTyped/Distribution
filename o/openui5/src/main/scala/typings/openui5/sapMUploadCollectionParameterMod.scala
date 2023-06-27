@@ -122,7 +122,7 @@ object sapMUploadCollectionParameterMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Gets current value of property {@link #getName name}.
       *
@@ -133,7 +133,7 @@ object sapMUploadCollectionParameterMod {
     def getName(): String = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Gets current value of property {@link #getValue value}.
       *
@@ -144,7 +144,7 @@ object sapMUploadCollectionParameterMod {
     def getValue(): String = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Sets a new value for property {@link #getName name}.
       *
@@ -161,7 +161,7 @@ object sapMUploadCollectionParameterMod {
     sName: String): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Sets a new value for property {@link #getValue value}.
       *
@@ -183,14 +183,14 @@ object sapMUploadCollectionParameterMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Specifies the name of the parameter.
       */
     var name: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Specifies the value of the parameter.
       */

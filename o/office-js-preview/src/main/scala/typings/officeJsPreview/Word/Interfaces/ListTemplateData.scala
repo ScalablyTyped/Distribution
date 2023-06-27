@@ -17,7 +17,7 @@ trait ListTemplateData extends StObject {
   var listLevels: js.UndefOr[js.Array[ListLevelData]] = js.undefined
   
   /**
-    * Gets or sets whether the specified ListTemplate object is outline numbered.
+    * Specifies whether the specified ListTemplate object is outline numbered.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

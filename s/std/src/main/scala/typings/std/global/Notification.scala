@@ -23,11 +23,13 @@ object Notification {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Notification/permission) */
   /* standard dom */
   @JSGlobal("Notification.permission")
   @js.native
   val permission: NotificationPermission = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission) */
   /* standard dom */
   inline def requestPermission(): js.Promise[NotificationPermission] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")().asInstanceOf[js.Promise[NotificationPermission]]
   inline def requestPermission(deprecatedCallback: NotificationPermissionCallback): js.Promise[NotificationPermission] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermission")(deprecatedCallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NotificationPermission]]

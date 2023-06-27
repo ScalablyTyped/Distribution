@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditFieldsInfo extends StObject {
   
   /**
-    * The name of the field that stores the date and time the feature was created.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
-    */
+  		 * The name of the field that stores the date and time the feature was created.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
+  		 */
   var creationDateField: String
   
   /**
-    * The name of the field that stores the name of the user who created the feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
-    */
+  		 * The name of the field that stores the name of the user who created the feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
+  		 */
   var creatorField: String
   
   /**
-    * The name of the field that stores the date and time the feature was last edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
-    */
+  		 * The name of the field that stores the date and time the feature was last edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
+  		 */
   var editDateField: String
   
   /**
-    * The name of the field that stores the name of the user who last edited the feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
-    */
+  		 * The name of the field that stores the name of the user who last edited the feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditFieldsInfo)
+  		 */
   var editorField: String
 }
 object EditFieldsInfo {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__preview"
-version := "7.0.11-caa32f"
+version := "7.0.23-e718e0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiModelOdataOdatametadataMod.default
+import typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Metadata extends StObject {
   
   /**
-    * the metadata object.
+    * The metadata object describing the class
     */
-  var metadata: js.UndefOr[default] = js.undefined
+  var metadata: js.UndefOr[MetadataOptions] = js.undefined
 }
 object Metadata {
   
@@ -22,7 +22,7 @@ object Metadata {
   @scala.inline
   implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
-    inline def setMetadata(value: default): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }

@@ -10,24 +10,24 @@ trait ArrayVariable
      with ProfileVariable {
   
   /**
-    * The type definition of the Array's items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
-    */
+  		 * The type definition of the Array's items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
+  		 */
   var elementType: js.UndefOr[ArrayElementType] = js.undefined
   
   /**
-    * The name of the profile variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
-    */
+  		 * The name of the profile variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
+  		 */
   var name: String
   
   /**
-    * The Arcade data type of the variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
-    */
+  		 * The Arcade data type of the variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ArrayVariable)
+  		 */
   var `type`: array
 }
 object ArrayVariable {

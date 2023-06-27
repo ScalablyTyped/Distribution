@@ -11,24 +11,24 @@ trait VertexAddEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * An array of x,y coordinates representing the vertices added.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
-    */
+  		 * An array of x,y coordinates representing the vertices added.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
+  		 */
   var added: js.Array[Double]
   
   /**
-    * Type is always `vertex-add`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
-    */
+  		 * Type is always `vertex-add`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
+  		 */
   var `type`: `vertex-add`
   
   /**
-    * Contains the details of the added vertices to track changes in topology of the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
-    */
+  		 * Contains the details of the added vertices to track changes in topology of the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
+  		 */
   var vertices: js.Array[VertexAddEventInfoVertices]
 }
 object VertexAddEventInfo {

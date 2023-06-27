@@ -11,10 +11,10 @@ object esriWidgetsWidgetMod {
   @JSImport("esri/widgets/Widget", JSImport.Namespace)
   @js.native
   /**
-    * The base class for widgets.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html)
-    */
+  		 * The base class for the SDK's out-of-the-box widgets.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html)
+  		 */
   open class ^ ()
     extends StObject
        with Widget_ {

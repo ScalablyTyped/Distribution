@@ -124,8 +124,8 @@ object sapMColumnListItemMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns pop-in DOMRef as a jQuery Object
       */
@@ -173,15 +173,15 @@ object sapMColumnListItemMod {
     def getCells(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.30.9
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.30.9
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the pop-in element.
       */
     def getPopin(): Unit = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Gets current value of property {@link #getVAlign vAlign}.
       *
@@ -196,7 +196,7 @@ object sapMColumnListItemMod {
     def getVAlign(): VerticalAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlign * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Determines whether control has pop-in or not.
       */
@@ -261,14 +261,14 @@ object sapMColumnListItemMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Pemove pop-in from DOM
       */
     def removePopin(): Unit = js.native
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Sets a new value for property {@link #getVAlign vAlign}.
       *
@@ -315,7 +315,7 @@ object sapMColumnListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.20
+      * @since 1.20
       *
       * Sets the vertical alignment of all the cells within the table row (including selection and navigation).
       * **Note:** `vAlign` property of `sap.m.Column` overrides the property for cell vertical alignment if both

@@ -58,6 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ErrorDocument
   - typings.devtoolsProtocol.devtoolsProtocolStrings.FencedFramesEmbedder
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CookieDisabled
   - typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocket
   - typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransport
   - typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTC
@@ -103,7 +104,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest
   - typings.devtoolsProtocol.devtoolsProtocolStrings.IndexedDBEvent
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Dummy
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.JsNetworkRequestReceivedCacheControlNoStoreResource
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTCSticky
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransportSticky
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocketSticky
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentSecurityHandler
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebAuthenticationAPI
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ContentFileChooser
@@ -136,8 +140,6 @@ object BackForwardCacheNotRestoredReason {
   inline def ActivationNavigationsDisallowedForBug1234857: typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857 = "ActivationNavigationsDisallowedForBug1234857".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ActivationNavigationsDisallowedForBug1234857]
   
   inline def AppBanner: typings.devtoolsProtocol.devtoolsProtocolStrings.AppBanner = "AppBanner".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AppBanner]
-  
-  inline def AuthorizationHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader = "AuthorizationHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AuthorizationHeader]
   
   inline def BackForwardCacheDisabled: typings.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled = "BackForwardCacheDisabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BackForwardCacheDisabled]
   
@@ -186,6 +188,8 @@ object BackForwardCacheNotRestoredReason {
   inline def ContentWebBluetooth: typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebBluetooth = "ContentWebBluetooth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebBluetooth]
   
   inline def ContentWebUSB: typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebUSB = "ContentWebUSB".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ContentWebUSB]
+  
+  inline def CookieDisabled: typings.devtoolsProtocol.devtoolsProtocolStrings.CookieDisabled = "CookieDisabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CookieDisabled]
   
   inline def DedicatedWorkerOrWorklet: typings.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet = "DedicatedWorkerOrWorklet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DedicatedWorkerOrWorklet]
   
@@ -254,6 +258,8 @@ object BackForwardCacheNotRestoredReason {
   inline def InjectedStyleSheet: typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet = "InjectedStyleSheet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InjectedStyleSheet]
   
   inline def JavaScriptExecution: typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution = "JavaScriptExecution".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.JavaScriptExecution]
+  
+  inline def JsNetworkRequestReceivedCacheControlNoStoreResource: typings.devtoolsProtocol.devtoolsProtocolStrings.JsNetworkRequestReceivedCacheControlNoStoreResource = "JsNetworkRequestReceivedCacheControlNoStoreResource".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.JsNetworkRequestReceivedCacheControlNoStoreResource]
   
   inline def KeepaliveRequest: typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest = "KeepaliveRequest".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.KeepaliveRequest]
   
@@ -373,11 +379,17 @@ object BackForwardCacheNotRestoredReason {
   
   inline def WebRTC: typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTC = "WebRTC".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTC]
   
+  inline def WebRTCSticky: typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTCSticky = "WebRTCSticky".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebRTCSticky]
+  
   inline def WebShare: typings.devtoolsProtocol.devtoolsProtocolStrings.WebShare = "WebShare".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebShare]
   
   inline def WebSocket: typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocket = "WebSocket".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocket]
   
+  inline def WebSocketSticky: typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocketSticky = "WebSocketSticky".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebSocketSticky]
+  
   inline def WebTransport: typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransport = "WebTransport".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransport]
+  
+  inline def WebTransportSticky: typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransportSticky = "WebTransportSticky".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebTransportSticky]
   
   inline def WebXR: typings.devtoolsProtocol.devtoolsProtocolStrings.WebXR = "WebXR".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.WebXR]
 }

@@ -18,73 +18,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedTraceConfiguration extends StObject {
   
   /**
-    * The date/time when the trace configuration has been added to the utility network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creationDate)
-    */
+  		 * The date/time when the trace configuration has been added to the utility network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creationDate)
+  		 */
   var creationDate: js.Date
   
   /**
-    * The portal user who created the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creator)
-    */
+  		 * The portal user who created the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#creator)
+  		 */
   var creator: String
   
   /**
-    * Short description of what kind of trace this trace configuration performs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#description)
-    */
+  		 * Short description of what kind of trace this trace configuration performs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#description)
+  		 */
   var description: String
   
   /**
-    * The `globalId` (UUID) uniquely identifies a trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#globalId)
-    */
+  		 * The `globalId` (UUID) uniquely identifies a trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#globalId)
+  		 */
   var globalId: String
   
   /**
-    * The minimum number of starting points required to perform a trace with this particular trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#minStartingPoints)
-    */
+  		 * The minimum number of starting points required to perform a trace with this particular trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#minStartingPoints)
+  		 */
   var minStartingPoints: none_ | one | many
   
   /**
-    * The result types of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#resultTypes)
-    */
+  		 * The result types of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#resultTypes)
+  		 */
   var resultTypes: js.Array[Any]
   
   /**
-    * Labels that help identify and search for a particular trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#tags)
-    */
+  		 * Labels that help identify and search for a particular trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#tags)
+  		 */
   var tags: js.Array[String]
   
   /**
-    * The title or the name of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#title)
-    */
+  		 * The title or the name of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#title)
+  		 */
   var title: String
   
   /**
-    * The full definition of the trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
-    */
+  		 * The full definition of the trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceConfiguration)
+  		 */
   var traceConfiguration: TraceConfiguration | UNTraceConfiguration
   
   /**
-    * The trace type defined in this trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceType)
-    */
+  		 * The trace type defined in this trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NamedTraceConfiguration.html#traceType)
+  		 */
   var traceType: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation
 }
 object NamedTraceConfiguration {

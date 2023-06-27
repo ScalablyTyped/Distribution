@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.reference_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.noPreview
   - typings.microsoftGraph.microsoftGraphStrings.checklist
   - typings.microsoftGraph.microsoftGraphStrings.description
-  - typings.microsoftGraph.microsoftGraphStrings.reference
+  - typings.microsoftGraph.microsoftGraphStrings.reference_
 */
 trait PlannerPreviewType extends StObject
 object PlannerPreviewType {
@@ -22,5 +23,5 @@ object PlannerPreviewType {
   
   inline def noPreview: typings.microsoftGraph.microsoftGraphStrings.noPreview = "noPreview".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noPreview]
   
-  inline def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
+  inline def reference: reference_ = "reference".asInstanceOf[reference_]
 }

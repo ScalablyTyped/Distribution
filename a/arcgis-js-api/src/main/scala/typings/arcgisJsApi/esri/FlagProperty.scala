@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlagProperty extends StObject {
   
   /**
-    * The available [terminals](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html) to define the permissible paths based on the terminal configurations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The available [terminals](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-Terminal.html) to define the permissible paths based on the terminal configurations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var allTerminals: TerminalConfiguration
   
   /**
-    * All the information returned by the hitTest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * All the information returned by the hitTest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var details: Any
   
   /**
-    * The display field of the flag.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The display field of the flag.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var displayField: DisplayField
   
   /**
-    * The id of the flag.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The id of the flag.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var id: Double
   
   /**
-    * The flag graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The flag graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var mapGraphic: Graphic
   
   /**
-    * The geometry point of the flag.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The geometry point of the flag.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var mapPoint: Point
   
   /**
-    * The terminals that are selected for the flag (this can be the default terminal or terminals selected by the end-user).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The terminals that are selected for the flag (this can be the default terminal or terminals selected by the end-user).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var selectedTerminals: js.Array[Double]
   
   /**
-    * The flag type being set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
-    */
+  		 * The flag type being set.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#FlagProperty)
+  		 */
   var `type`: String
 }
 object FlagProperty {

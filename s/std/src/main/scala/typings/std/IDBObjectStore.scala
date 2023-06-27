@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This example shows a variety of different uses of object stores, from updating the data structure with IDBObjectStore.createIndex inside an onupgradeneeded function, to adding a new item to our object store with IDBObjectStore.add. For a full working example, see our To-do Notifications app (view example live.) */
+/**
+  * This example shows a variety of different uses of object stores, from updating the data structure with IDBObjectStore.createIndex inside an onupgradeneeded function, to adding a new item to our object store with IDBObjectStore.add. For a full working example, see our To-do Notifications app (view example live.)
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore)
+  */
 @js.native
 trait IDBObjectStore extends StObject {
   
@@ -16,12 +20,18 @@ trait IDBObjectStore extends StObject {
     * If put() is used, any existing record with the key will be replaced. If add() is used, and if a record with the key already exists the request will fail, with request's error set to a "ConstraintError" DOMException.
     *
     * If successful, request's result will be the record's key.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/add)
     */
   /* standard dom */
   def add(value: Any): IDBRequest[IDBValidKey] = js.native
   def add(value: Any, key: IDBValidKey): IDBRequest[IDBValidKey] = js.native
   
-  /** Returns true if the store has a key generator, and false otherwise. */
+  /**
+    * Returns true if the store has a key generator, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/autoIncrement)
+    */
   /* standard dom */
   val autoIncrement: scala.Boolean = js.native
   
@@ -29,6 +39,8 @@ trait IDBObjectStore extends StObject {
     * Deletes all records in store.
     *
     * If successful, request's result will be undefined.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/clear)
     */
   /* standard dom */
   def clear(): IDBRequest[Unit] = js.native
@@ -37,6 +49,8 @@ trait IDBObjectStore extends StObject {
     * Retrieves the number of records matching the given key or key range in query.
     *
     * If successful, request's result will be the count.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/count)
     */
   /* standard dom */
   def count(): IDBRequest[Double] = js.native
@@ -47,6 +61,8 @@ trait IDBObjectStore extends StObject {
     * Creates a new index in store with the given name, keyPath and options and returns a new IDBIndex. If the keyPath and options define constraints that cannot be satisfied with the data already in store the upgrade transaction will abort with a "ConstraintError" DOMException.
     *
     * Throws an "InvalidStateError" DOMException if not called within an upgrade transaction.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/createIndex)
     */
   /* standard dom */
   def createIndex(name: java.lang.String, keyPath: java.lang.String): IDBIndex = js.native
@@ -61,6 +77,8 @@ trait IDBObjectStore extends StObject {
     * Deletes records in store with the given key or in the given key range in query.
     *
     * If successful, request's result will be undefined.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/delete)
     */
   /* standard dom */
   def delete(query: IDBValidKey): IDBRequest[Unit] = js.native
@@ -69,6 +87,8 @@ trait IDBObjectStore extends StObject {
     * Deletes the index in store with the given name.
     *
     * Throws an "InvalidStateError" DOMException if not called within an upgrade transaction.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/deleteIndex)
     */
   /* standard dom */
   def deleteIndex(name: java.lang.String): Unit = js.native
@@ -78,6 +98,8 @@ trait IDBObjectStore extends StObject {
     * Retrieves the value of the first record matching the given key or key range in query.
     *
     * If successful, request's result will be the value, or undefined if there was no matching record.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/get)
     */
   /* standard dom */
   def get(query: IDBValidKey): IDBRequest[Any] = js.native
@@ -86,6 +108,8 @@ trait IDBObjectStore extends StObject {
     * Retrieves the values of the records matching the given key or key range in query (up to count if given).
     *
     * If successful, request's result will be an Array of the values.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAll)
     */
   /* standard dom */
   def getAll(): IDBRequest[js.Array[Any]] = js.native
@@ -100,6 +124,8 @@ trait IDBObjectStore extends StObject {
     * Retrieves the keys of records matching the given key or key range in query (up to count if given).
     *
     * If successful, request's result will be an Array of the keys.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getAllKeys)
     */
   /* standard dom */
   def getAllKeys(): IDBRequest[js.Array[IDBValidKey]] = js.native
@@ -115,22 +141,37 @@ trait IDBObjectStore extends StObject {
     * Retrieves the key of the first record matching the given key or key range in query.
     *
     * If successful, request's result will be the key, or undefined if there was no matching record.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/getKey)
     */
   /* standard dom */
   def getKey(query: IDBValidKey): IDBRequest[js.UndefOr[IDBValidKey]] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/index) */
   /* standard dom */
   def index(name: java.lang.String): IDBIndex = js.native
   
-  /** Returns a list of the names of indexes in the store. */
+  /**
+    * Returns a list of the names of indexes in the store.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/indexNames)
+    */
   /* standard dom */
   val indexNames: DOMStringList = js.native
   
-  /** Returns the key path of the store, or null if none. */
+  /**
+    * Returns the key path of the store, or null if none.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/keyPath)
+    */
   /* standard dom */
   val keyPath: java.lang.String | js.Array[java.lang.String] = js.native
   
-  /** Returns the name of the store. */
+  /**
+    * Returns the name of the store.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/name)
+    */
   /* standard dom */
   var name: java.lang.String = js.native
   
@@ -138,6 +179,8 @@ trait IDBObjectStore extends StObject {
     * Opens a cursor over the records matching query, ordered by direction. If query is null, all records in store are matched.
     *
     * If successful, request's result will be an IDBCursorWithValue pointing at the first matching record, or null if there were no matching records.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/openCursor)
     */
   /* standard dom */
   def openCursor(): IDBRequest[IDBCursorWithValue | Null] = js.native
@@ -152,6 +195,8 @@ trait IDBObjectStore extends StObject {
     * Opens a cursor with key only flag set over the records matching query, ordered by direction. If query is null, all records in store are matched.
     *
     * If successful, request's result will be an IDBCursor pointing at the first matching record, or null if there were no matching records.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/openKeyCursor)
     */
   /* standard dom */
   def openKeyCursor(): IDBRequest[IDBCursor | Null] = js.native
@@ -170,12 +215,18 @@ trait IDBObjectStore extends StObject {
     * If put() is used, any existing record with the key will be replaced. If add() is used, and if a record with the key already exists the request will fail, with request's error set to a "ConstraintError" DOMException.
     *
     * If successful, request's result will be the record's key.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/put)
     */
   /* standard dom */
   def put(value: Any): IDBRequest[IDBValidKey] = js.native
   def put(value: Any, key: IDBValidKey): IDBRequest[IDBValidKey] = js.native
   
-  /** Returns the associated transaction. */
+  /**
+    * Returns the associated transaction.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IDBObjectStore/transaction)
+    */
   /* standard dom */
   val transaction: IDBTransaction = js.native
 }

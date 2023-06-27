@@ -13,18 +13,18 @@ trait GamepadSettings
      with Accessor {
   
   /**
-    * A readonly collection of all gamepads detected.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#devices)
-    */
+  		 * A readonly collection of all gamepads detected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#devices)
+  		 */
   val devices: Collection[GamepadInputDevice] = js.native
   
   /**
-    * Determines what focus is required for gamepad events to be dispatched.
-    *
-    * @default document
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
-    */
+  		 * Determines what focus is required for gamepad events to be dispatched.
+  		 *
+  		 * @default document
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
+  		 */
   var enabledFocusMode: document | view | none_ = js.native
 }

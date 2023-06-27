@@ -19,53 +19,58 @@ trait TraceParameters
      with JSONSupport {
   
   /**
-    * The geodatabase version to execute the function against.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#gdbVersion)
-    */
+  		 * The geodatabase version to execute the function against.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#gdbVersion)
+  		 */
   var gdbVersion: String = js.native
   
   /**
-    * The date/timestamp (in UTC) to execute the function at a given time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#moment)
-    */
+  		 * The date/timestamp (in UTC) to execute the function at a given time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#moment)
+  		 */
   var moment: js.Date = js.native
   
   /**
-    * The globalId (UUID) of the named trace configuration persisted in the network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#namedTraceConfigurationGlobalId)
-    */
+  		 * The globalId (UUID) of the named trace configuration persisted in the network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#namedTraceConfigurationGlobalId)
+  		 */
   var namedTraceConfigurationGlobalId: String = js.native
   
   /**
-    * The spatial reference that should be used to project the [aggregated geometries](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html) returned by the trace (if applicable).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#outSpatialReference)
-    */
+  		 * The spatial reference that should be used to project the [aggregated geometries](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html) returned by the trace (if applicable).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: SpatialReference = js.native
   
-  var resultTypes: js.Array[Any] = js.native
+  /**
+  		 * Parameter specifying the types of results to return after running a trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#resultTypes)
+  		 */
+  var resultTypes: js.Array[ResultTypeJSON] = js.native
   
   /**
-    * Defines the properties of a trace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceConfiguration)
-    */
-  var traceConfiguration: TraceConfiguration = js.native
+  		 * Defines the properties of a trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceConfiguration)
+  		 */
+  var traceConfiguration: UNTraceConfiguration = js.native
   
   /**
-    * The list of starting points and barriers that will define where the trace starts and stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceLocations)
-    */
+  		 * The list of starting points and barriers that will define where the trace starts and stops.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceLocations)
+  		 */
   var traceLocations: js.Array[TraceLocation] = js.native
   
   /**
-    * The trace type defined in this trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceType)
-    */
+  		 * The trace type defined in this trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceType)
+  		 */
   var traceType: connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation = js.native
 }

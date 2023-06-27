@@ -13,33 +13,42 @@ trait BuildingSceneLayerProperties
      with APIKeyMixinProperties {
   
   /**
-    * The id of the currently active filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#activeFilterId)
-    */
+  		 * The id of the currently active filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#activeFilterId)
+  		 */
   var activeFilterId: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how features are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
-    */
+  		 * Specifies how features are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#elevationInfo)
+  		 */
   var elevationInfo: js.UndefOr[BuildingSceneLayerElevationInfo] = js.undefined
   
   /**
-    * Collection of filters that can be used to show or hide specific features in the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters)
-    */
+  		 * Collection of filters that can be used to show or hide specific features in the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#filters)
+  		 */
   var filters: js.UndefOr[CollectionProperties[BuildingFilterProperties]] = js.undefined
   
   /**
-    * An array of field names from the service to include with each feature in all sublayers.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
-    */
+  		 * Indicates whether the layer will be included in the legend.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#legendEnabled)
+  		 */
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * An array of field names from the service to include with each feature in all sublayers.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BuildingSceneLayerProperties {
@@ -65,6 +74,10 @@ object BuildingSceneLayerProperties {
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     inline def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     

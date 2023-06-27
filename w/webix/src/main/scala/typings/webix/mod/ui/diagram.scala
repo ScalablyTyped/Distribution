@@ -5,6 +5,7 @@ import typings.std.HTMLElement
 import typings.webix.mod.DataCollection
 import typings.webix.mod.DataStore
 import typings.webix.mod.WebixCallback
+import typings.webix.mod.WebixProxy
 import typings.webix.mod.WebixTemplate
 import typings.webix.mod.obj
 import org.scalablytyped.runtime.StObject
@@ -91,8 +92,8 @@ open class diagram ()
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Array[Any] | obj = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Array[Any] | obj = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
   def getFirstId(): Double | String = js.native
   
@@ -118,16 +119,20 @@ open class diagram ()
   
   def getLinks(): DataCollection = js.native
   
+  def getNextId(id: String): String | Double = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
+  def getNextId(id: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   
+  def getPrevId(id: String): String | Double = js.native
   def getPrevId(id: String, step: Double): String | Double = js.native
+  def getPrevId(id: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
   def getScrollState(): obj = js.native
   
-  def getSelectedId(): String | js.Array[Any] = js.native
-  def getSelectedId(as_array: Boolean): String | js.Array[Any] = js.native
+  def getSelectedId(): Any = js.native
+  def getSelectedId(as_array: Boolean): Any = js.native
   
   def getSelectedItem(): obj = js.native
   def getSelectedItem(as_array: Boolean): obj = js.native
@@ -154,6 +159,22 @@ open class diagram ()
   def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[Any] = js.native
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean, clear: Boolean): js.Promise[Any] = js.native
@@ -181,8 +202,8 @@ open class diagram ()
   def parse(data: js.Promise[Any]): Unit = js.native
   def parse(data: obj): Unit = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
@@ -202,7 +223,9 @@ open class diagram ()
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  def select(id: String): Unit = js.native
   def select(id: String, preserve: Boolean): Unit = js.native
+  def select(id: js.Array[Any]): Unit = js.native
   def select(id: js.Array[Any], preserve: Boolean): Unit = js.native
   
   def selectAll(): Unit = js.native
@@ -220,6 +243,9 @@ open class diagram ()
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
+  def sync(source: obj): Unit = js.native
+  def sync(source: obj, filter: Unit, silent: Boolean): Unit = js.native
+  def sync(source: obj, filter: WebixCallback): Unit = js.native
   def sync(source: obj, filter: WebixCallback, silent: Boolean): Unit = js.native
   
   def unblockEvent(): Unit = js.native

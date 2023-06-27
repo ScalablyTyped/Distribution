@@ -28,11 +28,14 @@ trait WebgpuRenderTarget extends StObject {
     */
   /* private */ var assignedColorTexture: Any
   
-  /** @type {string} */
-  var colorFormat: String
+  /** @type {ColorAttachment[]} */
+  var colorAttachments: js.Array[ColorAttachment]
   
-  /** @type {string} */
-  var depthFormat: String
+  /**
+    * @type {GPUTextureFormat}
+    * @private
+    */
+  /* private */ var depthFormat: Any
   
   /**
     * @type {GPUTexture}
@@ -68,6 +71,13 @@ trait WebgpuRenderTarget extends StObject {
     */
   def init(device: WebgpuGraphicsDevice, renderTarget: RenderTarget): Unit
   
+  /**
+    * @private
+    */
+  /* private */ var initColor: Any
+  
+  def initDepthStencil(wgpu: Any, renderTarget: Any): Unit
+  
   /** @type {boolean} */
   var initialized: Boolean
   
@@ -81,12 +91,6 @@ trait WebgpuRenderTarget extends StObject {
   def loseContext(): Unit
   
   /**
-    * @type {GPUTexture}
-    * @private
-    */
-  /* private */ var multisampledColorBuffer: Any
-  
-  /**
     * Render pass descriptor used when starting a render pass for this render target.
     *
     * @type {GPURenderPassDescriptor}
@@ -97,6 +101,8 @@ trait WebgpuRenderTarget extends StObject {
   var renderTarget: RenderTarget
   
   def resolve(device: Any, target: Any, color: Any, depth: Any): Unit
+  
+  def setColorAttachment(index: Any, multisampledBuffer: Any, format: Any): Unit
   
   def setDepthFormat(depthFormat: Any): Unit
   
@@ -114,25 +120,27 @@ object WebgpuRenderTarget {
   inline def apply(
     assignColorTexture: Any => Unit,
     assignedColorTexture: Any,
-    colorFormat: String,
-    depthFormat: String,
+    colorAttachments: js.Array[ColorAttachment],
+    depthFormat: Any,
     depthTexture: Any,
     depthTextureInternal: Boolean,
     destroy: WebgpuGraphicsDevice => Unit,
     hasStencil: Boolean,
     init: (WebgpuGraphicsDevice, RenderTarget) => Unit,
+    initColor: Any,
+    initDepthStencil: (Any, Any) => Unit,
     initialized: Boolean,
     key: String,
     loseContext: () => Unit,
-    multisampledColorBuffer: Any,
     renderPassDescriptor: Any,
     renderTarget: RenderTarget,
     resolve: (Any, Any, Any, Any) => Unit,
+    setColorAttachment: (Any, Any, Any) => Unit,
     setDepthFormat: Any => Unit,
     setupForRenderPass: RenderPass => Unit,
     updateKey: () => Unit
   ): WebgpuRenderTarget = {
-    val __obj = js.Dynamic.literal(assignColorTexture = js.Any.fromFunction1(assignColorTexture), assignedColorTexture = assignedColorTexture.asInstanceOf[js.Any], colorFormat = colorFormat.asInstanceOf[js.Any], depthFormat = depthFormat.asInstanceOf[js.Any], depthTexture = depthTexture.asInstanceOf[js.Any], depthTextureInternal = depthTextureInternal.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), hasStencil = hasStencil.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), initialized = initialized.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loseContext = js.Any.fromFunction0(loseContext), multisampledColorBuffer = multisampledColorBuffer.asInstanceOf[js.Any], renderPassDescriptor = renderPassDescriptor.asInstanceOf[js.Any], renderTarget = renderTarget.asInstanceOf[js.Any], resolve = js.Any.fromFunction4(resolve), setDepthFormat = js.Any.fromFunction1(setDepthFormat), setupForRenderPass = js.Any.fromFunction1(setupForRenderPass), updateKey = js.Any.fromFunction0(updateKey))
+    val __obj = js.Dynamic.literal(assignColorTexture = js.Any.fromFunction1(assignColorTexture), assignedColorTexture = assignedColorTexture.asInstanceOf[js.Any], colorAttachments = colorAttachments.asInstanceOf[js.Any], depthFormat = depthFormat.asInstanceOf[js.Any], depthTexture = depthTexture.asInstanceOf[js.Any], depthTextureInternal = depthTextureInternal.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), hasStencil = hasStencil.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), initColor = initColor.asInstanceOf[js.Any], initDepthStencil = js.Any.fromFunction2(initDepthStencil), initialized = initialized.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loseContext = js.Any.fromFunction0(loseContext), renderPassDescriptor = renderPassDescriptor.asInstanceOf[js.Any], renderTarget = renderTarget.asInstanceOf[js.Any], resolve = js.Any.fromFunction4(resolve), setColorAttachment = js.Any.fromFunction3(setColorAttachment), setDepthFormat = js.Any.fromFunction1(setDepthFormat), setupForRenderPass = js.Any.fromFunction1(setupForRenderPass), updateKey = js.Any.fromFunction0(updateKey))
     __obj.asInstanceOf[WebgpuRenderTarget]
   }
   
@@ -143,9 +151,11 @@ object WebgpuRenderTarget {
     
     inline def setAssignedColorTexture(value: Any): Self = StObject.set(x, "assignedColorTexture", value.asInstanceOf[js.Any])
     
-    inline def setColorFormat(value: String): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
+    inline def setColorAttachments(value: js.Array[ColorAttachment]): Self = StObject.set(x, "colorAttachments", value.asInstanceOf[js.Any])
     
-    inline def setDepthFormat(value: String): Self = StObject.set(x, "depthFormat", value.asInstanceOf[js.Any])
+    inline def setColorAttachmentsVarargs(value: ColorAttachment*): Self = StObject.set(x, "colorAttachments", js.Array(value*))
+    
+    inline def setDepthFormat(value: Any): Self = StObject.set(x, "depthFormat", value.asInstanceOf[js.Any])
     
     inline def setDepthTexture(value: Any): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
     
@@ -157,19 +167,23 @@ object WebgpuRenderTarget {
     
     inline def setInit(value: (WebgpuGraphicsDevice, RenderTarget) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
+    inline def setInitColor(value: Any): Self = StObject.set(x, "initColor", value.asInstanceOf[js.Any])
+    
+    inline def setInitDepthStencil(value: (Any, Any) => Unit): Self = StObject.set(x, "initDepthStencil", js.Any.fromFunction2(value))
+    
     inline def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     
-    inline def setMultisampledColorBuffer(value: Any): Self = StObject.set(x, "multisampledColorBuffer", value.asInstanceOf[js.Any])
-    
     inline def setRenderPassDescriptor(value: Any): Self = StObject.set(x, "renderPassDescriptor", value.asInstanceOf[js.Any])
     
     inline def setRenderTarget(value: RenderTarget): Self = StObject.set(x, "renderTarget", value.asInstanceOf[js.Any])
     
     inline def setResolve(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction4(value))
+    
+    inline def setSetColorAttachment(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "setColorAttachment", js.Any.fromFunction3(value))
     
     inline def setSetDepthFormat(value: Any => Unit): Self = StObject.set(x, "setDepthFormat", js.Any.fromFunction1(value))
     

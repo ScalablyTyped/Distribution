@@ -9,10 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Types of units used across the JS API.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-units.html)
-  */
+	 * Types of units used across the JS API.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-units.html)
+	 */
 object units {
   
   /* Rewritten from type alias, can be one of: 

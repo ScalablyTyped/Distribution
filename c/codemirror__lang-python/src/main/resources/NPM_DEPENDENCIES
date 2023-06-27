@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@codemirror/lang-python" : "6.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@codemirror/lang-python" : "6.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -16,7 +16,7 @@ trait ActiveTerminologies extends StObject {
   var activeTerminologies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Whether the first bundle should be loaded asynchronously Note: Fallback bundles loaded by {@link #getText}
+    * Whether the first bundle should be loaded asynchronously Note: Fallback bundles loaded by {@link #getText }
     * are always loaded synchronously.
     */
   var async: js.UndefOr[Boolean] = js.undefined

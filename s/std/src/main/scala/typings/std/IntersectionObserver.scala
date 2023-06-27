@@ -4,27 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport. */
+/**
+  * provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver)
+  */
 trait IntersectionObserver extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/disconnect) */
   /* standard dom */
   def disconnect(): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/observe) */
   /* standard dom */
   def observe(target: Element): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/root) */
   /* standard dom */
   val root: Element | Document | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/rootMargin) */
   /* standard dom */
   val rootMargin: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/takeRecords) */
   /* standard dom */
   def takeRecords(): js.Array[IntersectionObserverEntry]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/thresholds) */
   /* standard dom */
   val thresholds: js.Array[Double]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserver/unobserve) */
   /* standard dom */
   def unobserve(target: Element): Unit
 }

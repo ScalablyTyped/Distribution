@@ -11,10 +11,10 @@ object esriRestKnowledgeGraphGraphQueryMod {
   @JSImport("esri/rest/knowledgeGraph/GraphQuery", JSImport.Namespace)
   @js.native
   /**
-    * Defines the query operation performed on a knowledge graph service's [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQuery.html)
-    */
+  		 * Defines the query operation performed on a knowledge graph service's [graph](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html) resource.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQuery.html)
+  		 */
   open class ^ ()
     extends StObject
        with GraphQuery {

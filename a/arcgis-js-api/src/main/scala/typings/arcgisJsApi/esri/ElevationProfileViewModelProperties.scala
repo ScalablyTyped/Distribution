@@ -24,42 +24,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElevationProfileViewModelProperties extends StObject {
   
   /**
-    * When the spatial reference is projected (other than web mercator) and the path is shorter than this threshold, distances will be computed planimetrically.
-    *
-    * @default 100000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#geodesicDistanceThreshold)
-    */
+  		 * When the spatial reference is projected (other than web mercator) and the path is shorter than this threshold, distances will be computed planimetrically.
+  		 *
+  		 * @default 100000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#geodesicDistanceThreshold)
+  		 */
   var geodesicDistanceThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether the graphic used as [input](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#input) is highlighted.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#highlightEnabled)
-    */
+  		 * Whether the graphic used as [input](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile.html#input) is highlighted.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#highlightEnabled)
+  		 */
   var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The position, in the range [0, 1], being hovered in the graph.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#hoveredChartPosition)
-    */
+  		 * The position, in the range [0, 1], being hovered in the graph.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#hoveredChartPosition)
+  		 */
   var hoveredChartPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * The input path along which elevation will be queried in order to generate an elevation profile.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#input)
-    */
+  		 * The input path along which elevation will be queried in order to generate an elevation profile.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#input)
+  		 */
   var input: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
-    * Collection of elevation profile lines which are to be generated and displayed in the widget's chart.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#profiles)
-    */
+  		 * Collection of elevation profile lines which are to be generated and displayed in the widget's chart.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#profiles)
+  		 */
   var profiles: js.UndefOr[
     CollectionProperties[
       ElevationProfileLineGroun | typings.arcgisJsApi.anon.ElevationProfileLineInput | typings.arcgisJsApi.anon.ElevationProfileLineQuery | ElevationProfileLineViewP
@@ -67,26 +67,26 @@ trait ElevationProfileViewModelProperties extends StObject {
   ] = js.undefined
   
   /**
-    * Whether the chart should use a uniform scale for the X and Y axes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#uniformChartScaling)
-    */
+  		 * Whether the chart should use a uniform scale for the X and Y axes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#uniformChartScaling)
+  		 */
   var uniformChartScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the elevation and distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the elevation and distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
   
   /**
-    * List of available units and unit systems (imperial, metric) for displaying the elevation and distance values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#unitOptions)
-    */
+  		 * List of available units and unit systems (imperial, metric) for displaying the elevation and distance values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#unitOptions)
+  		 */
   var unitOptions: js.UndefOr[
     js.Array[
       imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
@@ -94,10 +94,10 @@ trait ElevationProfileViewModelProperties extends StObject {
   ] = js.undefined
   
   /**
-    * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#view)
-    */
+  		 * A reference to the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#view)
+  		 */
   var view: js.UndefOr[SceneViewPropertiestype3d | MapViewPropertiestype2d] = js.undefined
 }
 object ElevationProfileViewModelProperties {

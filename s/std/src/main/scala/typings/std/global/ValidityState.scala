@@ -12,6 +12,7 @@ open class ValidityState ()
   extends StObject
      with typings.std.ValidityState {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/badInput) */
   /* standard dom */
   /* CompleteClass */
   override val badInput: scala.Boolean = js.native
@@ -20,30 +21,37 @@ open class ValidityState ()
   /* CompleteClass */
   override val customError: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/patternMismatch) */
   /* standard dom */
   /* CompleteClass */
   override val patternMismatch: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/rangeOverflow) */
   /* standard dom */
   /* CompleteClass */
   override val rangeOverflow: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/rangeUnderflow) */
   /* standard dom */
   /* CompleteClass */
   override val rangeUnderflow: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/stepMismatch) */
   /* standard dom */
   /* CompleteClass */
   override val stepMismatch: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/tooLong) */
   /* standard dom */
   /* CompleteClass */
   override val tooLong: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/tooShort) */
   /* standard dom */
   /* CompleteClass */
   override val tooShort: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/typeMismatch) */
   /* standard dom */
   /* CompleteClass */
   override val typeMismatch: scala.Boolean = js.native

@@ -14,6 +14,7 @@ import typings.monacoEditor.anon.ReadonlyRequiredIEditorSt
 import typings.monacoEditor.anon.ReadonlyRequiredIGotoLoca
 import typings.monacoEditor.anon.ReadonlyRequiredIGuidesOp
 import typings.monacoEditor.anon.ReadonlyRequiredIInlineSu
+import typings.monacoEditor.anon.ReadonlyRequiredIPasteAsO
 import typings.monacoEditor.anon.ReadonlyRequiredISmartSel
 import typings.monacoEditor.anon.ReadonlyRequiredISuggestO
 import typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnCommitCharacter
@@ -102,6 +103,7 @@ import typings.monacoEditor.mod.editor.EditorOption.overviewRulerBorder
 import typings.monacoEditor.mod.editor.EditorOption.overviewRulerLanes
 import typings.monacoEditor.mod.editor.EditorOption.padding
 import typings.monacoEditor.mod.editor.EditorOption.parameterHints
+import typings.monacoEditor.mod.editor.EditorOption.pasteAs
 import typings.monacoEditor.mod.editor.EditorOption.peekWidgetDefaultFocus
 import typings.monacoEditor.mod.editor.EditorOption.pixelRatio
 import typings.monacoEditor.mod.editor.EditorOption.quickSuggestions
@@ -710,6 +712,11 @@ object EditorOptions {
     ReadonlyRequiredIEditorPaCycle
   ] = js.native
   inline def parameterHints_=(x: IEditorOption[parameterHints, ReadonlyRequiredIEditorPaCycle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameterHints")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.pasteAs")
+  @js.native
+  def pasteAs: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.pasteAs, ReadonlyRequiredIPasteAsO] = js.native
+  inline def pasteAs_=(x: IEditorOption[pasteAs, ReadonlyRequiredIPasteAsO]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pasteAs")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.peekWidgetDefaultFocus")
   @js.native

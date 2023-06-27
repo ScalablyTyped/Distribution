@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides the ability to parse XML or HTML source code from a string into a DOM Document. */
+/**
+  * Provides the ability to parse XML or HTML source code from a string into a DOM Document.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMParser)
+  */
 trait DOMParser extends StObject {
   
   /**
@@ -15,6 +19,8 @@ trait DOMParser extends StObject {
     * Note that script elements are not evaluated during parsing, and the resulting document's encoding will always be UTF-8.
     *
     * Values other than the above for type will cause a TypeError exception to be thrown.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMParser/parseFromString)
     */
   /* standard dom */
   def parseFromString(string: java.lang.String, `type`: DOMParserSupportedType): Document

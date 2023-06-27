@@ -157,13 +157,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFileNameClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -191,7 +191,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachFileNameClick(
       /**
@@ -202,7 +202,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -227,13 +227,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRename(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -262,7 +262,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRename(
       /**
@@ -273,7 +273,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -297,13 +297,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRetry(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -331,7 +331,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRetry(
       /**
@@ -342,7 +342,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -366,13 +366,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTerminate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -400,7 +400,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachTerminate(
       /**
@@ -411,7 +411,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.UploadCollectionItem`
       * itself
@@ -445,13 +445,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachFileNameClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -469,13 +469,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRename(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -493,13 +493,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRetry(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -517,13 +517,13 @@ object sapUiWebcFioriUploadCollectionItemMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachTerminate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -531,7 +531,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:fileNameClick fileNameClick} to attached listeners.
       *
@@ -544,7 +544,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:rename rename} to attached listeners.
       *
@@ -557,7 +557,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:retry retry} to attached listeners.
       *
@@ -570,7 +570,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:terminate terminate} to attached listeners.
       *
@@ -903,6 +903,26 @@ object sapUiWebcFioriUploadCollectionItemMod {
     sUploadState: UploadState): this.type = js.native
   }
   
+  trait UploadCollectionItem$FileNameClickEventParameters extends StObject
+  
+  trait UploadCollectionItem$RenameEventParameters extends StObject
+  
+  trait UploadCollectionItem$RetryEventParameters extends StObject
+  
+  trait UploadCollectionItem$TerminateEventParameters extends StObject
+  
+  type UploadCollectionItemFileNameClickEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$FileNameClickEventParameters]
+  
+  type UploadCollectionItemFileNameClickEventParameters = UploadCollectionItem$FileNameClickEventParameters
+  
+  type UploadCollectionItemRenameEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$RenameEventParameters]
+  
+  type UploadCollectionItemRenameEventParameters = UploadCollectionItem$RenameEventParameters
+  
+  type UploadCollectionItemRetryEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$RetryEventParameters]
+  
+  type UploadCollectionItemRetryEventParameters = UploadCollectionItem$RetryEventParameters
+  
   trait UploadCollectionItemSettings
     extends StObject
        with ControlSettings {
@@ -938,7 +958,9 @@ object sapUiWebcFioriUploadCollectionItemMod {
       *
       *  **Note:** This event is only available when `fileNameClickable` property is `true`.
       */
-    var fileNameClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var fileNameClick: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If set to `true` the file name will be clickable and it will fire `file-name-click` event upon click.
@@ -974,21 +996,27 @@ object sapUiWebcFioriUploadCollectionItemMod {
       *  **Note:** An edit button is displayed on each item, when the `sap.ui.webc.fiori.UploadCollectionItem`
       * `type` property is set to `Detail`.
       */
-    var rename: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var rename: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when the retry button is pressed.
       *
       *  **Note:** Retry button is displayed when `uploadState` property is set to `Error`.
       */
-    var retry: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var retry: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when the terminate button is pressed.
       *
       *  **Note:** Terminate button is displayed when `uploadState` property is set to `Uploading`.
       */
-    var terminate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var terminate: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * A thumbnail, which will be shown in the beginning of the `sap.ui.webc.fiori.UploadCollectionItem`.
@@ -1032,7 +1060,7 @@ object sapUiWebcFioriUploadCollectionItemMod {
       
       inline def setFileName(value: String | PropertyBindingInfo): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      inline def setFileNameClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "fileNameClick", js.Any.fromFunction1(value))
+      inline def setFileNameClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "fileNameClick", js.Any.fromFunction1(value))
       
       inline def setFileNameClickUndefined: Self = StObject.set(x, "fileNameClick", js.undefined)
       
@@ -1056,15 +1084,15 @@ object sapUiWebcFioriUploadCollectionItemMod {
       
       inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      inline def setRename(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+      inline def setRename(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
       
       inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      inline def setRetry(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction1(value))
+      inline def setRetry(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction1(value))
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      inline def setTerminate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction1(value))
+      inline def setTerminate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction1(value))
       
       inline def setTerminateUndefined: Self = StObject.set(x, "terminate", js.undefined)
       
@@ -1079,4 +1107,8 @@ object sapUiWebcFioriUploadCollectionItemMod {
       inline def setUploadStateUndefined: Self = StObject.set(x, "uploadState", js.undefined)
     }
   }
+  
+  type UploadCollectionItemTerminateEvent = typings.openui5.sapUiBaseEventMod.default[UploadCollectionItem$TerminateEventParameters]
+  
+  type UploadCollectionItemTerminateEventParameters = UploadCollectionItem$TerminateEventParameters
 }

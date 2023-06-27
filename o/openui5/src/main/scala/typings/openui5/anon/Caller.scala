@@ -6,30 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Caller extends StObject {
   
-  /**
-    * identifies the caller of this preprocessor; basis for log or exception messages
-    */
   var caller: String
   
-  /**
-    * the id of the owning Component
-    */
   var componentId: String
   
-  /**
-    * the id
-    */
   var id: String
   
-  /**
-    * the name
-    */
   var name: String
+  
+  var sync: Boolean
 }
 object Caller {
   
-  inline def apply(caller: String, componentId: String, id: String, name: String): Caller = {
-    val __obj = js.Dynamic.literal(caller = caller.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(caller: String, componentId: String, id: String, name: String, sync: Boolean): Caller = {
+    val __obj = js.Dynamic.literal(caller = caller.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Caller]
   }
   
@@ -43,5 +33,7 @@ object Caller {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
   }
 }

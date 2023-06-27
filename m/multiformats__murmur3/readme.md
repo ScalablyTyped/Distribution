@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiformats__murmur3
 
-Typings are for version 2.1.3
+Typings are for version 2.1.4
 
 ## Library description:
 Multiformats Murmur3 implementations

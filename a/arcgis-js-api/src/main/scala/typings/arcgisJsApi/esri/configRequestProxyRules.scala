@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait configRequestProxyRules extends StObject {
   
   /**
-    * The URL of the proxy.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * The URL of the proxy.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var proxyUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * URL prefix for resources that need to be accessed through a specific proxy.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * URL prefix for resources that need to be accessed through a specific proxy.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var urlPrefix: js.UndefOr[String] = js.undefined
 }
 object configRequestProxyRules {

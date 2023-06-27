@@ -9,17 +9,17 @@ trait ImageAreaResultProperties
      with BaseImageMeasureResultProperties {
   
   /**
-    * An object containing results of the area measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAreaResult.html#area)
-    */
+  		 * An object containing results of the area measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAreaResult.html#area)
+  		 */
   var area: js.UndefOr[MeasurementValue] = js.undefined
   
   /**
-    * An object containing results of the perimeter measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAreaResult.html#perimeter)
-    */
+  		 * An object containing results of the perimeter measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAreaResult.html#perimeter)
+  		 */
   var perimeter: js.UndefOr[MeasurementValue] = js.undefined
 }
 object ImageAreaResultProperties {

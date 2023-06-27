@@ -1,7 +1,7 @@
 
 # Scala.js typings for lezer__lr
 
-Typings are for version 1.2.3
+Typings are for version 1.3.5
 
 ## Library description:
 Incremental parser

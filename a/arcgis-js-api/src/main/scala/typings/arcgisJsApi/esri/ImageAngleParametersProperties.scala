@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageAngleParametersProperties extends StObject {
   
   /**
-    * Angle names to be computed.
-    *
-    * @default ["north","up"]
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#angleNames)
-    */
+  		 * Angle names to be computed.
+  		 *
+  		 * @default ["north","up"]
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#angleNames)
+  		 */
   var angleNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry that defines the reference point of rotation to compute the angle direction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#point)
-    */
+  		 * A [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry that defines the reference point of rotation to compute the angle direction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#point)
+  		 */
   var point: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The rasterId of a raster catalog in the image service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#rasterId)
-    */
+  		 * The rasterId of a raster catalog in the image service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#rasterId)
+  		 */
   var rasterId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The spatial reference used to compute the angles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#spatialReference)
-    */
+  		 * The spatial reference used to compute the angles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleParameters.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object ImageAngleParametersProperties {

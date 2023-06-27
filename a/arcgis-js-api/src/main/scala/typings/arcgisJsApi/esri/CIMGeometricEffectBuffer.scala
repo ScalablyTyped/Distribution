@@ -9,17 +9,17 @@ trait CIMGeometricEffectBuffer
      with CIMGeometricEffect {
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectBuffer)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectBuffer)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The distance from the feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectBuffer)
-    */
+  		 * The distance from the feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectBuffer)
+  		 */
   var size: Double
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectBuffer

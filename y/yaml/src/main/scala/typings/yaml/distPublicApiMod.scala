@@ -4,6 +4,7 @@ import typings.std.Array
 import typings.yaml.distDocApplyReviverMod.Reviver
 import typings.yaml.distDocDocumentMod.Document.Parsed
 import typings.yaml.distDocDocumentMod.Replacer
+import typings.yaml.distNodesNodeMod.Node
 import typings.yaml.distNodesNodeMod.ParsedNode
 import typings.yaml.distOptionsMod.CreateNodeOptions
 import typings.yaml.distOptionsMod.DocumentOptions
@@ -31,11 +32,19 @@ object distPublicApiMod {
     options: ParseOptions & DocumentOptions & SchemaOptions & ToJSOptions
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def parseAllDocuments[T /* <: ParsedNode */](source: String): js.Array[Parsed[T]] | EmptyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
-  inline def parseAllDocuments[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): js.Array[Parsed[T]] | EmptyStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed[T]] | EmptyStream]
+  inline def parseAllDocuments[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String): (js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any]).asInstanceOf[(js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream]
+  inline def parseAllDocuments[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): (js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any
+  ]) | EmptyStream]
   
-  inline def parseDocument[T /* <: ParsedNode */](source: String): Parsed[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any]).asInstanceOf[Parsed[T]]
-  inline def parseDocument[T /* <: ParsedNode */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): Parsed[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed[T]]
+  inline def parseDocument[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String): /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any]
+  inline def parseDocument[Contents /* <: Node[Any] */, Strict /* <: Boolean */](source: String, options: ParseOptions & DocumentOptions & SchemaOptions): /* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Contents extends yaml.yaml/dist/nodes/Node.ParsedNode ? yaml.yaml/dist/doc/Document.Document.Parsed<Contents, Strict> : yaml.yaml/dist/doc/Document.Document<Contents, Strict> */ js.Any]
   
   inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def stringify(
@@ -66,10 +75,10 @@ object distPublicApiMod {
   inline def stringify(value: Any, replacer: Replacer, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped (): yaml.anon.Comment extends (args : any): infer R ? R : any */ @js.native
+  - Dropped (): yaml.anon.Directives extends (args : any): infer R ? R : any */ @js.native
   trait EmptyStream
     extends StObject
-       with Array[Parsed[ParsedNode]] {
+       with Array[Parsed[ParsedNode, `true`]] {
     
     var empty: `true` = js.native
   }

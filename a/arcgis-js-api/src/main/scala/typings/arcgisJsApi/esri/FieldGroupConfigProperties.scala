@@ -7,34 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldGroupConfigProperties extends StObject {
   
   /**
-    * The field's description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#description)
-    */
+  		 * The field's description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of field configurations belonging to a group.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#fieldConfig)
-    */
+  		 * An array of field configurations belonging to a group.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#fieldConfig)
+  		 */
   var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties]] = js.undefined
   
   /**
-    * The field's label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#label)
-    */
+  		 * The field's label.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Arcade Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
-    *
-    * @default null
-    * @deprecated since version 4.23. Set fields via the {@link module:esri/form/elements/GroupElement#visibilityExpression GroupElement.visibilityExpression}
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Arcade Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
+  		 *
+  		 * @default null
+  		 * @deprecated since version 4.23. Set fields via the {@link module:esri/form/elements/GroupElement#visibilityExpression GroupElement.visibilityExpression}
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
+  		 */
   var visibilityExpression: js.UndefOr[String] = js.undefined
 }
 object FieldGroupConfigProperties {

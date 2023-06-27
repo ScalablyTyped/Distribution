@@ -13,14 +13,14 @@ object sapMInputBaseRendererMod extends Shortcut {
   val default: InputBaseRenderer = js.native
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * InputBase renderer.
     */
   trait InputBaseRenderer extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived class to set width inline style
       */
@@ -36,7 +36,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Add cursor class to input container.
       */
@@ -52,7 +52,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra classes for input element.
       */
@@ -68,7 +68,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra styles for input element.
       */
@@ -84,7 +84,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra classes for input container.
       */
@@ -100,7 +100,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived class to add extra styles for input container.
       */
@@ -116,7 +116,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Add a padding class to input container. May be overwritten by subclasses.
       */
@@ -133,7 +133,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     
     /**
       * @deprecated (since 1.58.0)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Adds custom placeholder classes, if native placeholder is not used. To be overwritten by subclasses.
       * Note that this method should not be used anymore as native placeholder is used on all browsers
@@ -151,7 +151,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     
     /**
       * @deprecated (since 1.58.0)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra styles for the placeholder, if rendered as label.
       */
@@ -167,7 +167,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Add the CSS value state classes to the control's root element using the provided {@link sap.ui.core.RenderManager}.
       * To be overwritten by subclasses.
@@ -184,7 +184,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra styles for input element.
       */
@@ -200,7 +200,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the closing tag name of the input.
       */
@@ -216,7 +216,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Ends opened input tag.
       */
@@ -232,7 +232,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the accessibility state of the control. Hook for the subclasses.
       *
@@ -246,7 +246,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): InputBaseAccessibilityState
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the inner aria describedby ids for the accessibility. Hook for the subclasses.
       */
@@ -258,7 +258,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the inner aria labelledby ids for the accessibility. Hook for the subclasses.
       */
@@ -270,7 +270,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): js.UndefOr[String]
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns aria accessibility role for the control. Hook for the subclasses.
       */
@@ -282,7 +282,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the inner aria describedby announcement texts for the accessibility. Hook for the subclasses.
       */
@@ -294,7 +294,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Defines the ID suffix of the inner element
       *
@@ -303,7 +303,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     def getInnerSuffix(): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the inner aria labelledby announcement texts for the accessibility. Hook for the subclasses.
       */
@@ -315,7 +315,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the opening tag name of the input.
       */
@@ -331,7 +331,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to prepend inner content.
       */
@@ -347,7 +347,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the hidden aria labelledby node for the accessibility. Hook for the subclasses.
       */
@@ -363,7 +363,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the hidden aria labelledby node for the accessibility. Hook for the subclasses.
       */
@@ -379,7 +379,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the hidden aria describedby and errormessage nodes for the accessibility.
       */
@@ -395,7 +395,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Writes the accessibility state of the control. Hook for the subclasses.
       */
@@ -411,7 +411,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the decorations of the input - description and value-help icon.
       */
@@ -427,7 +427,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders icons from the icon aggregations.
       */
@@ -443,7 +443,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived classes to add extra attributes for the input element.
       */
@@ -459,7 +459,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the value of the input.
       */
@@ -475,7 +475,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Write the value of the input.
       */
@@ -491,7 +491,7 @@ object sapMInputBaseRendererMod extends Shortcut {
     ): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is reserved for derived class to add extra attributes for input container.
       */

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ElevationProfileLineGround")
 @js.native
 /**
-  * Profile line which samples elevation from the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of the [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) currently set in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineGround.html)
-  */
+		 * Profile line which samples elevation from the [Ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html) of the [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) currently set in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineGround.html)
+		 */
 open class ElevationProfileLineGround ()
   extends StObject
      with typings.arcgisJsApi.esri.ElevationProfileLineGround {

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native/virtualized-lists" : "0.72.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native/virtualized-lists" : "0.72.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

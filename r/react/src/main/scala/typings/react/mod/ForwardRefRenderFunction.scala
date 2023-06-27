@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ForwardRefRenderFunction[T, P] extends StObject {
   
-  def apply(props: P, ref: ForwardedRef[T]): ReactElement | Null = js.native
+  def apply(props: P, ref: ForwardedRef[T]): ReactNode = js.native
   
   // explicit rejected with `never` required due to
   // https://github.com/microsoft/TypeScript/issues/36826

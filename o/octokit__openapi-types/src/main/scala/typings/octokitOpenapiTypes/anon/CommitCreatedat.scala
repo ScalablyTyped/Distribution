@@ -13,7 +13,7 @@ trait CommitCreatedat extends StObject {
   
   var duration: Double
   
-  var error: `441`
+  var error: `519`
   
   var pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   
@@ -31,7 +31,7 @@ object CommitCreatedat {
     commit: String,
     created_at: String,
     duration: Double,
-    error: `441`,
+    error: `519`,
     pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     status: String,
     updated_at: String,
@@ -50,7 +50,7 @@ object CommitCreatedat {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setError(value: `441`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `519`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPusher(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any

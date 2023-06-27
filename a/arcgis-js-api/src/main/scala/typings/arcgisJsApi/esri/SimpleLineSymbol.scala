@@ -29,45 +29,45 @@ trait SimpleLineSymbol
      with Symbol2D {
   
   /**
-    * Specifies the cap style.
-    *
-    * @default round
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#cap)
-    */
+  		 * Specifies the cap style.
+  		 *
+  		 * @default round
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#cap)
+  		 */
   var cap: butt_ | round_ | square_ = js.native
   
   /**
-    * Specifies the join style.
-    *
-    * @default round
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#join)
-    */
+  		 * Specifies the join style.
+  		 *
+  		 * @default round
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#join)
+  		 */
   var join: miter_ | round_ | bevel_ = js.native
   
   /**
-    * Specifies the color, style, and placement of a symbol marker on the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
-    */
+  		 * Specifies the color, style, and placement of a symbol marker on the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
+  		 */
   var marker: LineSymbolMarker | Null = js.native
   
   /**
-    * Maximum allowed ratio of the width of a miter join to the line width.
-    *
-    * @default 2
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#miterLimit)
-    */
+  		 * Maximum allowed ratio of the width of a miter join to the line width.
+  		 *
+  		 * @default 2
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#miterLimit)
+  		 */
   var miterLimit: Double = js.native
   
   /**
-    * Specifies the line style.
-    *
-    * @default solid
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#style)
-    */
+  		 * Specifies the line style.
+  		 *
+  		 * @default solid
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#style)
+  		 */
   var style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none_ | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = js.native
 }

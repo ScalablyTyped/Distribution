@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiCoreFormatDateFormatTimezoneDisplayMod {
   
   /**
-    * @SINCE 1.99.0
+    * @since 1.99.0
     * @deprecated (since 1.101) - replaced by `DateFormat#getDateTimeWithTimezoneInstance` with the `showDate`,
     * `showTime` and `showTimezone` format options.
     *
@@ -30,7 +30,7 @@ object sapUiCoreFormatDateFormatTimezoneDisplayMod {
   @js.native
   sealed trait DateFormatTimezoneDisplay extends StObject
   /**
-    * @SINCE 1.99.0
+    * @since 1.99.0
     * @deprecated (since 1.101) - replaced by `DateFormat#getDateTimeWithTimezoneInstance` with the `showDate`,
     * `showTime` and `showTimezone` format options.
     *

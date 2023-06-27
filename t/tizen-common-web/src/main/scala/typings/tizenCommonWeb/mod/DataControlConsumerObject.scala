@@ -29,10 +29,10 @@ trait DataControlConsumerObject extends StObject {
     *
     * @returns An identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter
     * is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type ServiceNotAvailableError, if the application could not connect with the provider.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type ServiceNotAvailableError, if the application could not connect with the provider.
     */
   def addChangeListener(dataChangeCallback: DataControlChangeCallback): Double = js.native
   def addChangeListener(dataChangeCallback: DataControlChangeCallback, errorCallback: ErrorCallback): Double = js.native
@@ -65,8 +65,8 @@ trait DataControlConsumerObject extends StObject {
     *
     * @param watchId Subscription identifier.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
     */
   def removeChangeListener(watchId: Double): Unit = js.native
   

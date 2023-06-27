@@ -200,8 +200,8 @@ trait TableHeaderColumnProps extends StObject {
   /**
     * Return the value you want to be filtered on that column.
     * It's useful if your column data is an object.
-    * @example: (cell, row) => cell.fieldOne;
-    * @see: https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/manipulation/search-format-table.js
+    * @example (cell, row) => cell.fieldOne;
+    * @see https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/manipulation/search-format-table.js
     */
   var filterValue: js.UndefOr[js.Function2[/* cell */ Any, /* row */ Any, Any]] = js.undefined
   

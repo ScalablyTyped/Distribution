@@ -1,6 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.denied
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PersonalaccesstokenrequestSender extends StObject {
   
   /** @enum {string} */
-  var action: denied
+  var action: created_
   
   var installation: NodeidString
   
@@ -26,14 +26,14 @@ object PersonalaccesstokenrequestSender {
     personal_access_token_request: Permissionsresult,
     sender: Avatarurl
   ): PersonalaccesstokenrequestSender = {
-    val __obj = js.Dynamic.literal(action = "denied", installation = installation.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], personal_access_token_request = personal_access_token_request.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = "created", installation = installation.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], personal_access_token_request = personal_access_token_request.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersonalaccesstokenrequestSender]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PersonalaccesstokenrequestSender] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: denied): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: created_): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setInstallation(value: NodeidString): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     

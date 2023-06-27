@@ -19,7 +19,7 @@ object mod {
     override def eval(code: String): Any = js.native
     
     /* CompleteClass */
-    override def evalFile(): Any = js.native
+    override def evalFile(filepath: String): Any = js.native
   }
   
   trait Jsonnet extends StObject {
@@ -28,12 +28,12 @@ object mod {
     
     def eval(code: String): Any
     
-    def evalFile(): Any
+    def evalFile(filepath: String): Any
   }
   object Jsonnet {
     
-    inline def apply(destroy: () => Unit, eval: String => Any, evalFile: () => Any): Jsonnet = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), eval = js.Any.fromFunction1(eval), evalFile = js.Any.fromFunction0(evalFile))
+    inline def apply(destroy: () => Unit, eval: String => Any, evalFile: String => Any): Jsonnet = {
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), eval = js.Any.fromFunction1(eval), evalFile = js.Any.fromFunction1(evalFile))
       __obj.asInstanceOf[Jsonnet]
     }
     
@@ -44,7 +44,7 @@ object mod {
       
       inline def setEval(value: String => Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
       
-      inline def setEvalFile(value: () => Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction0(value))
+      inline def setEvalFile(value: String => Any): Self = StObject.set(x, "evalFile", js.Any.fromFunction1(value))
     }
   }
 }

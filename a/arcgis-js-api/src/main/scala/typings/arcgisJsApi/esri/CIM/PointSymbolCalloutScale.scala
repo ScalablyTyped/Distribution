@@ -11,40 +11,40 @@ sealed trait PointSymbolCalloutScale extends StObject
 object PointSymbolCalloutScale extends StObject {
   
   /**
-    * Non-uniform scaling.
-    */
+  			 * Non-uniform scaling.
+  			 */
   @js.native
   sealed trait DifNonuniform
     extends StObject
        with PointSymbolCalloutScale
   
   /**
-    * Uniform scaling.
-    */
+  			 * Uniform scaling.
+  			 */
   @js.native
   sealed trait DifUniform
     extends StObject
        with PointSymbolCalloutScale
   
   /**
-    * No scaling.
-    */
+  			 * No scaling.
+  			 */
   @js.native
   sealed trait None
     extends StObject
        with PointSymbolCalloutScale
   
   /**
-    * Non-uniform scaling.
-    */
+  			 * Non-uniform scaling.
+  			 */
   @js.native
   sealed trait PropNonuniform
     extends StObject
        with PointSymbolCalloutScale
   
   /**
-    * Uniform scaling.
-    */
+  			 * Uniform scaling.
+  			 */
   @js.native
   sealed trait PropUniform
     extends StObject

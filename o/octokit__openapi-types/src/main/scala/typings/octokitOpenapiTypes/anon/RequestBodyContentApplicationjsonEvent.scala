@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonEvent extends StObject {
   
   var requestBody: ContentApplicationjsonEvent
   
-  var responses: `200Content325404422`
+  var responses: `200Content380404422`
 }
 object RequestBodyContentApplicationjsonEvent {
   
   inline def apply(
     parameters: PathReviewid,
     requestBody: ContentApplicationjsonEvent,
-    responses: `200Content325404422`
+    responses: `200Content380404422`
   ): RequestBodyContentApplicationjsonEvent = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonEvent]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonEvent {
     
     inline def setRequestBody(value: ContentApplicationjsonEvent): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content325404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content380404422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

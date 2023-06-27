@@ -13,10 +13,10 @@ object esriWidgetsHistogramMod {
   @JSImport("esri/widgets/Histogram", JSImport.Namespace)
   @js.native
   /**
-    * Renders a histogram to visualize the spread of a dataset based on [bins](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins) representing buckets, or sub-ranges, of data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html)
-    */
+  		 * Renders a histogram to visualize the spread of a dataset based on [bins](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#bins) representing buckets, or sub-ranges, of data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html)
+  		 */
   open class ^ ()
     extends StObject
        with Histogram_ {
@@ -27,9 +27,9 @@ object esriWidgetsHistogramMod {
   val ^ : js.Any = js.native
   
   /**
-    * A convenience function used to create a Histogram widget instance from the result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) statistics function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#fromHistogramResult)
-    */
+  		 * A convenience function used to create a Histogram widget instance from the result of the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) statistics function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#fromHistogramResult)
+  		 */
   inline def fromHistogramResult(result: HistogramResult): Histogram_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHistogramResult")(result.asInstanceOf[js.Any]).asInstanceOf[Histogram_]
 }

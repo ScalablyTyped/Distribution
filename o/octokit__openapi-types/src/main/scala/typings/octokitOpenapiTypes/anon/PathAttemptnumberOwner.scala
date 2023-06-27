@@ -8,12 +8,12 @@ trait PathAttemptnumberOwner extends StObject {
   
   var path: AttemptnumberOwner
   
-  var query: `543`
+  var query: js.UndefOr[`644`] = js.undefined
 }
 object PathAttemptnumberOwner {
   
-  inline def apply(path: AttemptnumberOwner, query: `543`): PathAttemptnumberOwner = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: AttemptnumberOwner): PathAttemptnumberOwner = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathAttemptnumberOwner]
   }
   
@@ -22,6 +22,8 @@ object PathAttemptnumberOwner {
     
     inline def setPath(value: AttemptnumberOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `543`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `644`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

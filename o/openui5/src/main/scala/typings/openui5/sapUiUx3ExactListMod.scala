@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AllAttributes
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -149,13 +148,13 @@ object sapUiUx3ExactListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def attachAttributeSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactList` itself
       */
@@ -181,7 +180,7 @@ object sapUiUx3ExactListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def attachAttributeSelected(
       /**
@@ -192,7 +191,7 @@ object sapUiUx3ExactListMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactList` itself
       */
@@ -218,13 +217,13 @@ object sapUiUx3ExactListMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def detachAttributeSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactListAttributeSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -232,17 +231,19 @@ object sapUiUx3ExactListMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:attributeSelected attributeSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAttributeSelected(): this.type = js.native
-    def fireAttributeSelected(/**
+    def fireAttributeSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AllAttributes): this.type = js.native
+    mParameters: ExactList$AttributeSelectedEventParameters
+    ): this.type = js.native
     
     /**
       * ID of the element which is the current target of the association {@link #getData data}, or `null`.
@@ -414,6 +415,42 @@ object sapUiUx3ExactListMod {
     sTopTitle: String): this.type = js.native
   }
   
+  trait ExactList$AttributeSelectedEventParameters extends StObject {
+    
+    /**
+      * Array of all ExactAttributes
+      */
+    var allAttributes: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The attribute which was selected/unselected recently
+      */
+    var attribute: js.UndefOr[typings.openui5.sapUiUx3ExactAttributeMod.default] = js.undefined
+  }
+  object ExactList$AttributeSelectedEventParameters {
+    
+    inline def apply(): ExactList$AttributeSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExactList$AttributeSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactList$AttributeSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAllAttributes(value: js.Object): Self = StObject.set(x, "allAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setAllAttributesUndefined: Self = StObject.set(x, "allAttributes", js.undefined)
+      
+      inline def setAttribute(value: typings.openui5.sapUiUx3ExactAttributeMod.default): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    }
+  }
+  
+  type ExactListAttributeSelectedEvent = typings.openui5.sapUiBaseEventMod.default[ExactList$AttributeSelectedEventParameters]
+  
+  type ExactListAttributeSelectedEventParameters = ExactList$AttributeSelectedEventParameters
+  
   trait ExactListSettings
     extends StObject
        with ControlSettings {
@@ -421,7 +458,12 @@ object sapUiUx3ExactListMod {
     /**
       * Event which is fired when an attribute is selected/unselected
       */
-    var attributeSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var attributeSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactList$AttributeSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The associated ExactAttribute
@@ -463,7 +505,9 @@ object sapUiUx3ExactListMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ExactListSettings] (val x: Self) extends AnyVal {
       
-      inline def setAttributeSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "attributeSelected", js.Any.fromFunction1(value))
+      inline def setAttributeSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactList$AttributeSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "attributeSelected", js.Any.fromFunction1(value))
       
       inline def setAttributeSelectedUndefined: Self = StObject.set(x, "attributeSelected", js.undefined)
       

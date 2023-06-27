@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@multiformats/murmur3" : "2.1.3"
+      "@multiformats/murmur3" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@multiformats/murmur3" : "2.1.3"
+      "@multiformats/murmur3" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

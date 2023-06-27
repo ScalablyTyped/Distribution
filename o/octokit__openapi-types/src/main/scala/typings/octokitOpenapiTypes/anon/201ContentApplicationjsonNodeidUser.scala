@@ -12,14 +12,14 @@ trait `201ContentApplicationjsonNodeidUser` extends StObject {
   /** @description Reaction created */
   var `201`: ContentApplicationjsonNodeidUser
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `201ContentApplicationjsonNodeidUser` {
   
   inline def apply(
     `200`: ContentApplicationjsonNodeidUser,
     `201`: ContentApplicationjsonNodeidUser,
-    `422`: Content346
+    `422`: Content414
   ): `201ContentApplicationjsonNodeidUser` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -35,6 +35,6 @@ object `201ContentApplicationjsonNodeidUser` {
     
     inline def set201(value: ContentApplicationjsonNodeidUser): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

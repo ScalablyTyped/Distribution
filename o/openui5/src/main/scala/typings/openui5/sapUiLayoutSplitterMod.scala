@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.OldSizes
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapUiLayoutSplitterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.Splitter` itself
       */
@@ -182,7 +181,7 @@ object sapUiLayoutSplitterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
@@ -193,7 +192,7 @@ object sapUiLayoutSplitterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.layout.Splitter` itself
       */
@@ -218,13 +217,13 @@ object sapUiLayoutSplitterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit]
     ): this.type = js.native
     def detachResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SplitterResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -235,7 +234,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Disables the resize handler for this control, this leads to an automatic resize of the contents whenever
       * the control changes its size. The resize handler is enabled in every control instance by default. For
@@ -251,7 +250,7 @@ object sapUiLayoutSplitterMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Disables the resizing of the Splitter contents via keyboard. This changes the Splitter bars to non-focusable
       * elements.
@@ -262,7 +261,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Disables recalculation and resize of the splitter contents while dragging the splitter bar. This means
       * that the contents are resized only once after moving the splitter bar.
@@ -273,7 +272,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enables the resize handler for this control, this leads to an automatic resize of the contents whenever
       * the control changes its size. The resize handler is enabled in every control instance by default. For
@@ -288,7 +287,7 @@ object sapUiLayoutSplitterMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enables the resizing of the Splitter contents via keyboard. This makes the Splitter bars focusable elements.
       */
@@ -298,7 +297,7 @@ object sapUiLayoutSplitterMod {
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Enables recalculation and resize of the splitter contents while dragging the splitter bar. This means
       * that the contents are resized several times per second when moving the splitter bar.
@@ -306,7 +305,7 @@ object sapUiLayoutSplitterMod {
     def enableLiveResize(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
@@ -316,13 +315,13 @@ object sapUiLayoutSplitterMod {
     def fireResize(/**
       * Parameters to pass along with the event
       */
-    mParameters: OldSizes): this.type = js.native
+    mParameters: Splitter$ResizeEventParameters): this.type = js.native
     
     /**
       * @deprecated (since 1.21) - This method is declared as protected in order to assess the need for this
       * feature. It is declared as deprecated because the API might change in case the need for this is high
       * enough to make it part of the official Splitter interface
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the current actual content sizes as pixel value - these values can change with every resize.
       *
@@ -504,6 +503,56 @@ object sapUiLayoutSplitterMod {
     forceDirectly: Boolean): Unit = js.native
   }
   
+  trait Splitter$ResizeEventParameters extends StObject {
+    
+    /**
+      * The ID of the splitter control. The splitter control can also be accessed by calling getSource() on the
+      * event.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * An array of values representing the new (pixel-)sizes of the splitter contents
+      */
+    var newSizes: js.UndefOr[js.Array[int]] = js.undefined
+    
+    /**
+      * An array of values representing the old (pixel-)sizes of the splitter contents
+      */
+    var oldSizes: js.UndefOr[js.Array[int]] = js.undefined
+  }
+  object Splitter$ResizeEventParameters {
+    
+    inline def apply(): Splitter$ResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Splitter$ResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Splitter$ResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setNewSizes(value: js.Array[int]): Self = StObject.set(x, "newSizes", value.asInstanceOf[js.Any])
+      
+      inline def setNewSizesUndefined: Self = StObject.set(x, "newSizes", js.undefined)
+      
+      inline def setNewSizesVarargs(value: int*): Self = StObject.set(x, "newSizes", js.Array(value*))
+      
+      inline def setOldSizes(value: js.Array[int]): Self = StObject.set(x, "oldSizes", value.asInstanceOf[js.Any])
+      
+      inline def setOldSizesUndefined: Self = StObject.set(x, "oldSizes", js.undefined)
+      
+      inline def setOldSizesVarargs(value: int*): Self = StObject.set(x, "oldSizes", js.Array(value*))
+    }
+  }
+  
+  type SplitterResizeEvent = typings.openui5.sapUiBaseEventMod.default[Splitter$ResizeEventParameters]
+  
+  type SplitterResizeEventParameters = Splitter$ResizeEventParameters
+  
   trait SplitterSettings
     extends StObject
        with ControlSettings {
@@ -532,7 +581,12 @@ object sapUiLayoutSplitterMod {
     /**
       * Event is fired when contents are resized.
       */
-    var resize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var resize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Splitter$ResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The width of the control
@@ -569,7 +623,9 @@ object sapUiLayoutSplitterMod {
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      inline def setResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Splitter$ResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       

@@ -15,7 +15,7 @@ trait TypeUser extends StObject {
     */
   var state: accepted | declined | pending
   
-  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-credit-types'] */ js.Any
+  var `type`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-advisory-credit-types'] */ js.Any
   
   var user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
 }
@@ -23,7 +23,7 @@ object TypeUser {
   
   inline def apply(
     state: accepted | declined | pending,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-credit-types'] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-advisory-credit-types'] */ js.Any,
     user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   ): TypeUser = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -37,7 +37,7 @@ object TypeUser {
     inline def setState(value: accepted | declined | pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setType(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-advisory-credit-types'] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-advisory-credit-types'] */ js.Any
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUser(

@@ -8,7 +8,7 @@ trait ParametersPathAuthorid extends StObject {
   
   var parameters: PathAuthorid
   
-  var requestBody: js.UndefOr[ContentApplicationjson264] = js.undefined
+  var requestBody: js.UndefOr[ContentApplicationjson313] = js.undefined
   
   var responses: `200404422503`
 }
@@ -24,7 +24,7 @@ object ParametersPathAuthorid {
     
     inline def setParameters(value: PathAuthorid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson264): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson313): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

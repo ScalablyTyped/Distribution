@@ -242,7 +242,7 @@ object app {
     /**
       * Fired when an embedding app requests to embed this app.
       * @since Chrome 43.
-      * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
+      * @see https://developer.chrome.com/apps/tags/appview
       */
     @JSGlobal("chrome.app.runtime.onEmbedRequested")
     @js.native

@@ -14,7 +14,7 @@ object GenericTileMode extends StObject {
   def apply(value: String): js.UndefOr[GenericTileMode & String] = js.native
   
   /**
-    * @EXPERIMENTAL (since 1.96)
+    * @experimental (since 1.96)
     *
     * Action Mode (Two lines for the header).
     *
@@ -27,7 +27,7 @@ object GenericTileMode extends StObject {
   /* "ActionMode" */ val ActionMode: typings.openui5.sapMLibraryMod.GenericTileMode.ActionMode & String = js.native
   
   /**
-    * @EXPERIMENTAL (since 1.96)
+    * @experimental (since 1.96)
     *
     * Article Mode (Two lines for the header and one line for the subtitle).
     *
@@ -58,8 +58,8 @@ object GenericTileMode extends StObject {
   /* "HeaderMode" */ val HeaderMode: typings.openui5.sapMLibraryMod.GenericTileMode.HeaderMode & String = js.native
   
   /**
-    * @SINCE 1.96
-    * @EXPERIMENTAL (since 1.96)
+    * @since 1.96
+    * @experimental (since 1.96)
     *
     * Icon mode.
     *
@@ -74,7 +74,7 @@ object GenericTileMode extends StObject {
   /* "IconMode" */ val IconMode: typings.openui5.sapMLibraryMod.GenericTileMode.IconMode & String = js.native
   
   /**
-    * @SINCE 1.44.0
+    * @since 1.44.0
     *
     * Line mode (Implemented for both, cozy and compact densities).
     *

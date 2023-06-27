@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiCoreComponentMod.ComponentSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait ComponentData extends StObject {
   /**
     * Settings for the nested component like for {#link sap.ui.component} or the component constructor
     */
-  var settings: js.UndefOr[js.Object] = js.undefined
+  var settings: js.UndefOr[ComponentSettings] = js.undefined
   
   /**
     * ID of component usage
@@ -54,7 +55,7 @@ object ComponentData {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setSettings(value: js.Object): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: ComponentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     

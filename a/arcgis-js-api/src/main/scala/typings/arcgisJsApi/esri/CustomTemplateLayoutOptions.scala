@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomTemplateLayoutOptions extends StObject {
   
   /**
-    * Indicates whether the legend will be included in the print-out.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layoutOptions)
-    */
+  		 * Indicates whether the legend will be included in the print-out.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-CustomTemplate.html#layoutOptions)
+  		 */
   var legend: js.UndefOr[Boolean] = js.undefined
 }
 object CustomTemplateLayoutOptions {

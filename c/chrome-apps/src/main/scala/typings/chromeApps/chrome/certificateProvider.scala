@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Certificate Provider //
 //////////////////////////
 /**
-  * @requires(CrOS) Chrome OS only.
+  * @requires Chrome OS only.
   * @requires Permissions: 'certificateProvider'
   * @description
   * Use this API to expose certificates to the platform which

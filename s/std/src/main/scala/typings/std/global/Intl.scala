@@ -35,7 +35,13 @@ import typings.std.Pick
 import typings.std.anon.LocaleMatcher
 import typings.std.anon.TypeValue
 import typings.std.anon.`1`
+import typings.std.stdStrings.calendar
+import typings.std.stdStrings.collation
+import typings.std.stdStrings.currency
 import typings.std.stdStrings.localeMatcher
+import typings.std.stdStrings.numberingSystem
+import typings.std.stdStrings.timeZone
+import typings.std.stdStrings.unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +50,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /// ECMAScript Internationalization API
 /////////////////////////////
 object Intl {
+  
+  @JSGlobal("Intl")
+  @js.native
+  val ^ : js.Any = js.native
   
   object Collator {
     
@@ -603,4 +613,13 @@ object Intl {
     /* CompleteClass */
     override def segment(input: java.lang.String): Segments = js.native
   }
+  
+  /**
+    * Returns a sorted array of the supported collation, calendar, currency, numbering system, timezones, and units by the implementation.
+    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/supportedValuesOf)
+    *
+    * @param key A string indicating the category of values to return.
+    * @returns A sorted array of the supported values.
+    */
+  inline def supportedValuesOf(key: calendar | collation | currency | numberingSystem | timeZone | unit): js.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedValuesOf")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
 }

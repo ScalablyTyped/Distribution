@@ -526,42 +526,42 @@ object PivotGrid {
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the columns section of the PivotGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name as string type in the OLAP database.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the PivotGrid.
-      * @Default {null}
+      * @default {null}
       */
     var data: js.UndefOr[Any] = js.undefined
     
     /** Allows you to filter the members (by its name and values) through advanced filtering (e.g., Microsoft Excel) option at OLAP data source in client-mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI of the PivotGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Allows to set the page size and current page number for each axis on applying the paging.
-      * @Default {{}}
+      * @default {{}}
       */
     var pagerOptions: js.UndefOr[DataSourcePagerOptions] = js.undefined
     
     /** Sets the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian.
-      * @Default {ssas}
+      * @default {ssas}
       */
     var providerName: js.UndefOr[String] = js.undefined
     
@@ -570,17 +570,17 @@ object PivotGrid {
     var reportName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the rows section of PivotGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the data source name to fetch the data.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items that support calculation in the PivotGrid.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
@@ -655,7 +655,7 @@ object PivotGrid {
   trait DataSourceColumn extends StObject {
     
     /** Allows you to filter the report by using advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in client-mode.
-      * @Default {[]}
+      * @default {[]}
       */
     var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.undefined
     
@@ -668,7 +668,7 @@ object PivotGrid {
     var delimiter: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
-      * @Default {[]}
+      * @default {[]}
       */
     var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -681,7 +681,7 @@ object PivotGrid {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
@@ -694,17 +694,17 @@ object PivotGrid {
     var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field in PivotGrid.
-      * @Default {true}
+      * @default {true}
       */
     var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of members of the field.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -779,7 +779,7 @@ object PivotGrid {
     var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the label filtering.
-      * @Default {none}
+      * @default {none}
       */
     var labelFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -792,7 +792,7 @@ object PivotGrid {
     var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the value filtering.
-      * @Default {none}
+      * @default {none}
       */
     var valueFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -841,12 +841,12 @@ object PivotGrid {
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -883,7 +883,7 @@ object PivotGrid {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
@@ -914,12 +914,12 @@ object PivotGrid {
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -948,22 +948,22 @@ object PivotGrid {
   trait DataSourcePagerOptions extends StObject {
     
     /** Allows to set the page number to be loaded in the categorical axis by default.
-      * @Default {1}
+      * @default {1}
       */
     var categoricalCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of categorical columns to be displayed in each page on applying the paging.
-      * @Default {0}
+      * @default {0}
       */
     var categoricalPageSize: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the page number to be loaded in the series axis by default.
-      * @Default {1}
+      * @default {1}
       */
     var seriesCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of series rows to be displayed in each page on applying the paging.
-      * @Default {0}
+      * @default {0}
       */
     var seriesPageSize: js.UndefOr[Double] = js.undefined
   }
@@ -998,7 +998,7 @@ object PivotGrid {
   trait DataSourceRow extends StObject {
     
     /** Allows you to filter the report by using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in client-mode.
-      * @Default {[]}
+      * @default {[]}
       */
     var advancedFilter: js.UndefOr[js.Array[DataSourceRowsAdvancedFilter]] = js.undefined
     
@@ -1011,7 +1011,7 @@ object PivotGrid {
     var delimiter: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
-      * @Default {[]}
+      * @default {[]}
       */
     var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1024,7 +1024,7 @@ object PivotGrid {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
@@ -1037,17 +1037,17 @@ object PivotGrid {
     var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field.
-      * @Default {true}
+      * @default {true}
       */
     var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of members of the field.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -1122,7 +1122,7 @@ object PivotGrid {
     var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the label filtering.
-      * @Default {none}
+      * @default {none}
       */
     var labelFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -1135,7 +1135,7 @@ object PivotGrid {
     var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the value filtering.
-      * @Default {none}
+      * @default {none}
       */
     var valueFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -1184,12 +1184,12 @@ object PivotGrid {
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -1218,7 +1218,7 @@ object PivotGrid {
   trait DataSourceValue extends StObject {
     
     /** Allows you to set the axis name to place measures items.
-      * @Default {rows}
+      * @default {rows}
       */
     var axis: js.UndefOr[String] = js.undefined
     
@@ -1247,17 +1247,17 @@ object PivotGrid {
     var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field with the relational datasource or not.
-      * @Default {false}
+      * @default {false}
       */
     var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
-      * @Default {[]}
+      * @default {[]}
       */
     var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
     
     /** Allows to set the type of PivotGrid summary calculation in the value field with the relational datasource.
-      * @Default {ej.PivotAnalysis.SummaryType.Sum}
+      * @default {ej.PivotAnalysis.SummaryType.Sum}
       */
     var summaryType: js.UndefOr[SummaryType | String] = js.undefined
   }
@@ -1392,22 +1392,22 @@ object PivotGrid {
   trait FrozenHeaderSettings extends StObject {
     
     /** Allows you to freeze the column headers alone when scrolling the vertical scroll bar.
-      * @Default {false}
+      * @default {false}
       */
     var enableFrozenColumnHeaders: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to freeze both row headers and column headers while scrolling.
-      * @Default {false}
+      * @default {false}
       */
     var enableFrozenHeaders: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to freeze the row headers alone when scrolling the horizontal scroll bar.
-      * @Default {false}
+      * @default {false}
       */
     var enableFrozenRowHeaders: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the size of the scrollbar (horizontal and vertical) that is visible in the PivotGrid.
-      * @Default {18}
+      * @default {18}
       */
     var scrollerSize: js.UndefOr[Double] = js.undefined
   }
@@ -1442,12 +1442,12 @@ object PivotGrid {
   trait HeaderSettings extends StObject {
     
     /** Allows you to enable/disable the column header names in the PivotGrid control.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnItems: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable the row header names in the PivotGrid control.
-      * @Default {false}
+      * @default {false}
       */
     var showRowItems: js.UndefOr[Boolean] = js.undefined
   }
@@ -1474,22 +1474,22 @@ object PivotGrid {
   trait HyperlinkSettings extends StObject {
     
     /** Allows you to enable/disable the hyperlink for the column header.
-      * @Default {false}
+      * @default {false}
       */
     var enableColumnHeaderHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable the hyperlink for the row header.
-      * @Default {false}
+      * @default {false}
       */
     var enableRowHeaderHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable the hyperlink for summary cells.
-      * @Default {false}
+      * @default {false}
       */
     var enableSummaryCellHyperlink: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable the hyperlink for value cells.
-      * @Default {false}
+      * @default {false}
       */
     var enableValueCellHyperlink: js.UndefOr[Boolean] = js.undefined
   }
@@ -1588,7 +1588,7 @@ object PivotGrid {
     var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the PivotGrid widget to bind either OLAP or relational data source.
-      * @Default {ej.Pivot.AnalysisMode.Pivot}
+      * @default {ej.Pivot.AnalysisMode.Pivot}
       */
     var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
@@ -1625,7 +1625,7 @@ object PivotGrid {
     var cellSelection: js.UndefOr[js.Function1[/* e */ CellSelectionEventArgs, Unit]] = js.undefined
     
     /** Allows you to collapse specified members in each field by default.
-      * @Default {null}
+      * @default {null}
       */
     var collapsedMembers: js.UndefOr[Any] = js.undefined
     
@@ -1634,17 +1634,17 @@ object PivotGrid {
     var columnHeaderHyperlinkClick: js.UndefOr[js.Function1[/* e */ ColumnHeaderHyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the CSS class to the PivotGrid for achieving the custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object is utilized to pass additional information between the client-end and the service-end while operating the control in server mode.
-      * @Default {null}
+      * @default {null}
       */
     var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the data source for the PivotGrid widget, when it functions completely on client-side.
-      * @Default {{}}
+      * @default {{}}
       */
     var dataSource: js.UndefOr[DataSource] = js.undefined
     
@@ -1657,157 +1657,157 @@ object PivotGrid {
     var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.undefined
     
     /** Enables the advanced filtering options such as value filtering, label filtering, and sorting for each field in the server mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by clicking the value cell.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to access each cell by right-clicking the mouse.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellContext: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by double-clicking the value cell.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellDoubleClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to edit value cells for write-back support in the PivotGrid. This is applicable only for the server-mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the cell selection for a specific range of value cells.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Collapses the pivot items along rows and columns by default. It works only for the relational data source.
-      * @Default {false}
+      * @default {false}
       */
     var enableCollapseByDefault: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the display of grand total for all columns.
-      * @Default {true}
+      * @default {true}
       */
     var enableColumnGrandTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to adjust the width of columns dynamically within given widget size.
-      * @Default {false}
+      * @default {false}
       */
     var enableColumnResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to export entire data instead of current page data, while paging option is enabled.
-      * @Default {false}
+      * @default {false}
       */
     var enableCompleteDataExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to format a specific set of cells based on the condition.
-      * @Default {false}
+      * @default {false}
       */
     var enableConditionalFormatting: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable the context menu of pivot buttons in the PivotGrid.
-      * @Default {false}
+      * @default {false}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to refresh the control on-demand and not during every UI operation.
-      * @Default {false}
+      * @default {false}
       */
     var enableDeferUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the Drill-Through feature which retrieves raw items that are used to create a specific cell in the PivotGrid.
-      * @Default {false}
+      * @default {false}
       */
     var enableDrillThrough: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the display of grand total for rows and columns.
-      * @Default {true}
+      * @default {true}
       */
     var enableGrandTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the display of GroupingBar allowing you to filter, sort, and remove fields obtained from the datasource.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupingBar: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to load the PivotGrid using the JSON data.
-      * @Default {false}
+      * @default {false}
       */
     var enableJSONRendering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables paging in the member editor for viewing the large count of members in pages.
-      * @Default {false}
+      * @default {false}
       */
     var enableMemberEditorPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/Disables sorting option in member editor dialog for the members of the respective field.
-      * @Default {false}
+      * @default {false}
       */
     var enableMemberEditorSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the large amount of data by applying paging.
-      * @Default {false}
+      * @default {false}
       */
     var enablePaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables rendering of the PivotGrid widget along with the PivotTable field list which allows UI operations.
-      * @Default {true}
+      * @default {true}
       */
     var enablePivotFieldList: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the layout of PivotGrid from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the display of grand total for all rows.
-      * @Default {true}
+      * @default {true}
       */
     var enableRowGrandTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the ToolTip.
-      * @Default {false}
+      * @default {false}
       */
     var enableToolTip: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the animation effects in the tooltip.
-      * @Default {false}
+      * @default {false}
       */
     var enableToolTipAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the large amount of data through virtual scrolling.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
-      * @Default {false}
+      * @default {false}
       */
     var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Object that holds the settings of frozen headers.
-      * @Default {{}}
+      * @default {{}}
       */
     var frozenHeaderSettings: js.UndefOr[FrozenHeaderSettings] = js.undefined
     
     /** Allows you to display the header name in the PivotGrid control.
-      * @Default {{}}
+      * @default {{}}
       */
     var headerSettings: js.UndefOr[HeaderSettings] = js.undefined
     
     /** Allows you to configure the hyperlink settings of the PivotGrid control.
-      * @Default {{}}
+      * @default {{}}
       */
     var hyperlinkSettings: js.UndefOr[HyperlinkSettings] = js.undefined
     
     /** Allows you to enable PivotGridâ€™s responsiveness in the browser layout.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1816,7 +1816,7 @@ object PivotGrid {
     var jsonRecords: js.UndefOr[String] = js.undefined
     
     /** Sets the summary layout for PivotGrid.Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary, and excel-like summary.
-      * @Default {ej.PivotGrid.Layout.Normal}
+      * @default {ej.PivotGrid.Layout.Normal}
       */
     var layout: js.UndefOr[Layout | String] = js.undefined
     
@@ -1829,27 +1829,27 @@ object PivotGrid {
     var loadReport: js.UndefOr[js.Function1[/* e */ LoadReportEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor.
-      * @Default {1000}
+      * @default {1000}
       */
     var maxNodeLimitInMemberEditor: js.UndefOr[Double] = js.undefined
     
     /** Allows you to set the number of members to be displayed in each page of member editor on applying paging in it.
-      * @Default {100}
+      * @default {100}
       */
     var memberEditorPageSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the mode for PivotGrid widget for binding the data source either in the server-side or client-side.
-      * @Default {ej.Pivot.OperationalMode.ClientMode}
+      * @default {ej.Pivot.OperationalMode.ClientMode}
       */
     var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** Connects the PivotSchemaDesigner with specified ID to the PivotGrid control.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var pivotTableFieldListID: js.UndefOr[String] = js.undefined
     
@@ -1866,7 +1866,7 @@ object PivotGrid {
     var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to fit the width of the column based on its maximum text width.
-      * @Default {true}
+      * @default {true}
       */
     var resizeColumnsToFit: js.UndefOr[Boolean] = js.undefined
     
@@ -1879,12 +1879,12 @@ object PivotGrid {
     var saveReport: js.UndefOr[js.Function1[/* e */ SaveReportEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the custom name for the methods at service-end, communicated during AJAX post.
-      * @Default {{}}
+      * @default {{}}
       */
     var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Allows you to show the appropriate unique name in the pivot button.
-      * @Default {false}
+      * @default {false}
       */
     var showUniqueNameOnPivotButton: js.UndefOr[Boolean] = js.undefined
     
@@ -1893,7 +1893,7 @@ object PivotGrid {
     var summaryCellHyperlinkClick: js.UndefOr[js.Function1[/* e */ SummaryCellHyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var url: js.UndefOr[String] = js.undefined
     
@@ -1902,7 +1902,7 @@ object PivotGrid {
     var valueCellHyperlinkClick: js.UndefOr[js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Holds the necessary properties for value sorting.
-      * @Default {{}}
+      * @default {{}}
       */
     var valueSortSettings: js.UndefOr[ValueSortSettings] = js.undefined
   }
@@ -2379,102 +2379,102 @@ object PivotGrid {
   trait ServiceMethodSettings extends StObject {
     
     /** Allows you to set the custom name for the service method that is responsible for adding a calculated field to the report.
-      * @Default {CalculatedField}
+      * @default {CalculatedField}
       */
     var calculatedField: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for editing the cells.
-      * @Default {CellEditing}
+      * @default {CellEditing}
       */
     var cellEditing: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method responsible for performing server-side actions based on defer update.
-      * @Default {DeferUpdate}
+      * @default {DeferUpdate}
       */
     var deferUpdate: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for service method which is responsible for drill up/down operation in the PivotGrid.
-      * @Default {DrillGrid}
+      * @default {DrillGrid}
       */
     var drillDown: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing drill through operation in the data table.
-      * @Default {DrillThroughDataTable}
+      * @default {DrillThroughDataTable}
       */
     var drillThroughDataTable: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing the drill through operation.
-      * @Default {DrillThroughHierarchies}
+      * @default {DrillThroughHierarchies}
       */
     var drillThroughHierarchies: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for exporting.
-      * @Default {Export}
+      * @default {Export}
       */
     var exportPivotGrid: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for getting values of the tree-view inside filter dialog.
-      * @Default {FetchMembers}
+      * @default {FetchMembers}
       */
     var fetchMembers: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for filtering operation in the PivotGrid.
-      * @Default {Filtering}
+      * @default {Filtering}
       */
     var filtering: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for initializing the PivotGrid.
-      * @Default {InitializeGrid}
+      * @default {InitializeGrid}
       */
     var initialize: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for loading a report from the database.
-      * @Default {LoadReportFromDB}
+      * @default {LoadReportFromDB}
       */
     var loadReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for expanding members in the member editor.
-      * @Default {MemberExpanded}
+      * @default {MemberExpanded}
       */
     var memberExpand: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for the server-side action when dropping a node from the field list.
-      * @Default {NodeDropped}
+      * @default {NodeDropped}
       */
     var nodeDropped: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for server-side action when changing the checked state of a node in the field list.
-      * @Default {NodeStateModified}
+      * @default {NodeStateModified}
       */
     var nodeStateModified: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing paging operation in the PivotGrid.
-      * @Default {Paging}
+      * @default {Paging}
       */
     var paging: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for removing the pivot button from the GroupingBar/field list.
-      * @Default {RemoveButton}
+      * @default {RemoveButton}
       */
     var removeButton: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for saving the current report to the database.
-      * @Default {SaveReport}
+      * @default {SaveReport}
       */
     var saveReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for sorting operation in the PivotGrid.
-      * @Default {Sorting}
+      * @default {Sorting}
       */
     var sorting: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing value sorting operation in the PivotGrid.
-      * @Default {ValueSorting}
+      * @default {ValueSorting}
       */
     var valueSorting: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for write-back operation in the OLAP Cube. This is applicable only in the server-side component.
-      * @Default {WriteBack}
+      * @default {WriteBack}
       */
     var writeBack: js.UndefOr[String] = js.undefined
   }
@@ -2657,7 +2657,7 @@ object PivotGrid {
     var headerText: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the sorting order of values of the field.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }

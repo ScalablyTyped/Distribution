@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.BaseElevationLayer")
 @js.native
 /**
-  * BaseElevationLayer is intended to be extended for creating custom elevation layers.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
-  */
+		 * BaseElevationLayer is intended to be extended for creating custom elevation layers.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
+		 */
 open class BaseElevationLayer ()
   extends StObject
      with typings.arcgisJsApi.esri.BaseElevationLayer {

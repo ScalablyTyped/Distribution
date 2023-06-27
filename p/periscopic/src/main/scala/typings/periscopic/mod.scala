@@ -20,10 +20,17 @@ object mod {
   @JSImport("periscopic", "Scope")
   @js.native
   open class Scope protected () extends StObject {
-    def this(parent: Any, block: Any) = this()
+    def this(parent: Null, block: Boolean) = this()
+    /**
+      * @param {Scope | null} parent
+      * @param {boolean} block
+      */
+    def this(parent: Scope, block: Boolean) = this()
     
     def add_declaration(node: ClassDeclaration): Unit = js.native
-    /** @param {import('estree').VariableDeclaration | import('estree').ClassDeclaration} node */
+    /**
+      * @param {import('estree').VariableDeclaration | import('estree').ClassDeclaration} node
+      */
     def add_declaration(node: VariableDeclaration): Unit = js.native
     
     /** @type {boolean} */

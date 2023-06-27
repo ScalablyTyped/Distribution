@@ -1,7 +1,7 @@
 
 # Scala.js typings for tiny-secp256k1
 
-Typings are for version 2.2.1
+Typings are for version 2.2.2
 
 ## Library description:
 A tiny secp256k1 JS

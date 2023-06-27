@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-media-queries-aspect-ratio-number-values
 
-Typings are for version 1.0.2
+Typings are for version 1.0.4
 
 
 

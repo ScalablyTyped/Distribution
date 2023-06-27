@@ -16,8 +16,8 @@ trait MediaControllerDisplayMode extends StObject {
     *
     * @returns The identifier used to remove the listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addChangeRequestListener(listener: MediaControllerDisplayModeChangeRequestCallback): Double
   
@@ -28,15 +28,15 @@ trait MediaControllerDisplayMode extends StObject {
     *
     * @param watchId Watcher identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeChangeRequestListener(watchId: Double): Unit
   
   /**
     * Type of display mode on the server. Default value for a newly created server is "FULL\_SCREEN".
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   var `type`: MediaControllerDisplayModeType
 }

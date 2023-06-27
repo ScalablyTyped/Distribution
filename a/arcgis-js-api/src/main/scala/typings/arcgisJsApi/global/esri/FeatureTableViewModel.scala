@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.FeatureTableViewModel")
 @js.native
 /**
-  * Provides the logic for the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget, which allows users to view content from feature attributes in a tabular format.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html)
-  */
+		 * Provides the logic for the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget, which allows users to view content from feature attributes in a tabular format.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html)
+		 */
 open class FeatureTableViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.FeatureTableViewModel {

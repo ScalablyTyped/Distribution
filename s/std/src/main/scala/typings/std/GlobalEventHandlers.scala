@@ -1559,51 +1559,67 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user aborts the download.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/abort_event)
     */
   /* standard dom */
   var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event) */
   /* standard dom */
   var onanimationcancel: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event) */
   /* standard dom */
   var onanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event) */
   /* standard dom */
   var onanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event) */
   /* standard dom */
   var onanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event) */
   /* standard dom */
   var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforeinput_event) */
   /* standard dom */
   var onbeforeinput: (js.ThisFunction1[/* this */ this.type, /* ev */ InputEvent, Any]) | Null = js.native
   
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/blur_event)
     */
   /* standard dom */
   var onblur: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/cancel_event) */
   /* standard dom */
   var oncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when playback is possible, but would require further buffering.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplay_event)
     */
   /* standard dom */
   var oncanplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event) */
   /* standard dom */
   var oncanplaythrough: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the contents of the object or selection have changed.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/change_event)
     */
   /* standard dom */
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1611,32 +1627,42 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user clicks the left mouse button on the object
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/click_event)
     */
   /* standard dom */
   var onclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event) */
   /* standard dom */
   var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the right mouse button in the client area, opening the context menu.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/contextmenu_event)
     */
   /* standard dom */
   var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event) */
   /* standard dom */
   var oncopy: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event) */
   /* standard dom */
   var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event) */
   /* standard dom */
   var oncut: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user double-clicks the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/dblclick_event)
     */
   /* standard dom */
   var ondblclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -1644,6 +1670,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the source object continuously during a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drag_event)
     */
   /* standard dom */
   var ondrag: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -1651,6 +1679,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the source object when the user releases the mouse at the close of a drag operation.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragend_event)
     */
   /* standard dom */
   var ondragend: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -1658,6 +1688,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the target element when the user drags the object to a valid drop target.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragenter_event)
     */
   /* standard dom */
   var ondragenter: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -1665,6 +1697,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
     * @param ev The drag event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragleave_event)
     */
   /* standard dom */
   var ondragleave: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -1672,6 +1706,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the target element continuously while the user drags the object over a valid drop target.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragover_event)
     */
   /* standard dom */
   var ondragover: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
@@ -1679,16 +1715,21 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires on the source object when the user starts to drag a text selection or selected object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dragstart_event)
     */
   /* standard dom */
   var ondragstart: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event) */
   /* standard dom */
   var ondrop: (js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the duration attribute is updated.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/durationchange_event)
     */
   /* standard dom */
   var ondurationchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1696,6 +1737,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the media element is reset to its initial state.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/emptied_event)
     */
   /* standard dom */
   var onemptied: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1703,6 +1746,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the end of playback is reached.
     * @param ev The event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ended_event)
     */
   /* standard dom */
   var onended: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1710,6 +1755,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when an error occurs during object loading.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/error_event)
     */
   /* standard dom */
   var onerror: OnErrorEventHandler = js.native
@@ -1717,25 +1764,33 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the object receives focus.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/focus_event)
     */
   /* standard dom */
   var onfocus: (js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event) */
   /* standard dom */
   var onformdata: (js.ThisFunction1[/* this */ this.type, /* ev */ FormDataEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event) */
   /* standard dom */
   var ongotpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/input_event) */
   /* standard dom */
   var oninput: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event) */
   /* standard dom */
   var oninvalid: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Fires when the user presses a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keydown_event)
     */
   /* standard dom */
   var onkeydown: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -1744,6 +1799,8 @@ trait GlobalEventHandlers extends StObject {
     * Fires when the user presses an alphanumeric key.
     * @param ev The event.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keypress_event)
     */
   /* standard dom */
   var onkeypress: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -1751,6 +1808,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user releases a key.
     * @param ev The keyboard event
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/keyup_event)
     */
   /* standard dom */
   var onkeyup: (js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, Any]) | Null = js.native
@@ -1758,6 +1817,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires immediately after the browser loads the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGElement/load_event)
     */
   /* standard dom */
   var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1765,6 +1826,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when media data is loaded at the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadeddata_event)
     */
   /* standard dom */
   var onloadeddata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1772,6 +1835,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the duration and dimensions of the media have been determined.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadedmetadata_event)
     */
   /* standard dom */
   var onloadedmetadata: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1779,29 +1844,38 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when Internet Explorer begins looking for media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/loadstart_event)
     */
   /* standard dom */
   var onloadstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lostpointercapture_event) */
   /* standard dom */
   var onlostpointercapture: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user clicks the object with either mouse button.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousedown_event)
     */
   /* standard dom */
   var onmousedown: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event) */
   /* standard dom */
   var onmouseenter: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event) */
   /* standard dom */
   var onmouseleave: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user moves the mouse over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mousemove_event)
     */
   /* standard dom */
   var onmousemove: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -1809,6 +1883,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user moves the mouse pointer outside the boundaries of the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseout_event)
     */
   /* standard dom */
   var onmouseout: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -1816,6 +1892,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user moves the mouse pointer into the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseover_event)
     */
   /* standard dom */
   var onmouseover: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
@@ -1823,16 +1901,21 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user releases a mouse button while the mouse is over the object.
     * @param ev The mouse event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseup_event)
     */
   /* standard dom */
   var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event) */
   /* standard dom */
   var onpaste: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Occurs when playback is paused.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/pause_event)
     */
   /* standard dom */
   var onpause: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1840,6 +1923,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the play method is requested.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/play_event)
     */
   /* standard dom */
   var onplay: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1847,37 +1932,49 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the audio or video has started playing.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playing_event)
     */
   /* standard dom */
   var onplaying: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event) */
   /* standard dom */
   var onpointercancel: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event) */
   /* standard dom */
   var onpointerdown: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event) */
   /* standard dom */
   var onpointerenter: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event) */
   /* standard dom */
   var onpointerleave: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event) */
   /* standard dom */
   var onpointermove: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event) */
   /* standard dom */
   var onpointerout: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event) */
   /* standard dom */
   var onpointerover: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event) */
   /* standard dom */
   var onpointerup: (js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, Any]) | Null = js.native
   
   /**
     * Occurs to indicate progress while downloading media data.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/progress_event)
     */
   /* standard dom */
   var onprogress: (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], Any]) | Null = js.native
@@ -1885,6 +1982,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the playback rate is increased or decreased.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/ratechange_event)
     */
   /* standard dom */
   var onratechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1892,26 +1991,34 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the user resets a form.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/reset_event)
     */
   /* standard dom */
   var onreset: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event) */
   /* standard dom */
   var onresize: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scroll_event)
     */
   /* standard dom */
   var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event) */
   /* standard dom */
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the seek operation ends.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeked_event)
     */
   /* standard dom */
   var onseeked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1919,6 +2026,8 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when the current playback position is moved.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/seeking_event)
     */
   /* standard dom */
   var onseeking: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1926,32 +2035,42 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Fires when the current selection changes.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/select_event)
     */
   /* standard dom */
   var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event) */
   /* standard dom */
   var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event) */
   /* standard dom */
   var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event) */
   /* standard dom */
   var onslotchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/stalled_event)
     */
   /* standard dom */
   var onstalled: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event) */
   /* standard dom */
   var onsubmit: (js.ThisFunction1[/* this */ this.type, /* ev */ SubmitEvent, Any]) | Null = js.native
   
   /**
     * Occurs if the load operation has been intentionally halted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/suspend_event)
     */
   /* standard dom */
   var onsuspend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -1959,40 +2078,53 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs to indicate the current playback position.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/timeupdate_event)
     */
   /* standard dom */
   var ontimeupdate: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event) */
   /* standard dom */
   var ontoggle: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event) */
   /* standard dom */
   var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event) */
   /* standard dom */
   var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event) */
   /* standard dom */
   var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event) */
   /* standard dom */
   var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, Any]) | Null] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event) */
   /* standard dom */
   var ontransitioncancel: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event) */
   /* standard dom */
   var ontransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event) */
   /* standard dom */
   var ontransitionrun: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event) */
   /* standard dom */
   var ontransitionstart: (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, Any]) | Null = js.native
   
   /**
     * Occurs when the volume is changed, or playback is muted or unmuted.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/volumechange_event)
     */
   /* standard dom */
   var onvolumechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
@@ -2000,26 +2132,45 @@ trait GlobalEventHandlers extends StObject {
   /**
     * Occurs when playback stops because the next frame of a video resource is not available.
     * @param ev The event.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/waiting_event)
     */
   /* standard dom */
   var onwaiting: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationend`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
+    */
   /* standard dom */
   var onwebkitanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationiteration`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationiteration`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
+    */
   /* standard dom */
   var onwebkitanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `onanimationstart`. */
+  /**
+    * @deprecated This is a legacy alias of `onanimationstart`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
+    */
   /* standard dom */
   var onwebkitanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  /** @deprecated This is a legacy alias of `ontransitionend`. */
+  /**
+    * @deprecated This is a legacy alias of `ontransitionend`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
+    */
   /* standard dom */
   var onwebkittransitionend: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event) */
   /* standard dom */
   var onwheel: (js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, Any]) | Null = js.native
   

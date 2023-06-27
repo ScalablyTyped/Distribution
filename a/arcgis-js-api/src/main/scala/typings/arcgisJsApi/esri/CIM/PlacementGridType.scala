@@ -11,24 +11,24 @@ sealed trait PlacementGridType extends StObject
 object PlacementGridType extends StObject {
   
   /**
-    * Markers are placed on a uniform grid.
-    */
+  			 * Markers are placed on a uniform grid.
+  			 */
   @js.native
   sealed trait Fixed
     extends StObject
        with PlacementGridType
   
   /**
-    * Markers are placed randomly in the polygon.
-    */
+  			 * Markers are placed randomly in the polygon.
+  			 */
   @js.native
   sealed trait Random
     extends StObject
        with PlacementGridType
   
   /**
-    * Markers are placed randomly with a fixed quantity (dot density).
-    */
+  			 * Markers are placed randomly with a fixed quantity (dot density).
+  			 */
   @js.native
   sealed trait RandomFixedQuantity
     extends StObject

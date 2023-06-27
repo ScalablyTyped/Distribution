@@ -1,9 +1,14 @@
 package typings.yaml
 
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distLogMod.LogLevelId
+import typings.yaml.distNodesAliasMod.Alias
+import typings.yaml.distNodesNodeMod.Node
 import typings.yaml.distNodesPairMod.Pair
 import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesToJSMod.ToJSContext
+import typings.yaml.distNodesYamlmapMod.YAMLMap
+import typings.yaml.distNodesYamlseqMod.YAMLSeq
 import typings.yaml.distSchemaTypesMod.CollectionTag
 import typings.yaml.distSchemaTypesMod.ScalarTag
 import typings.yaml.distStringifyFoldFlowLinesMod.FoldMode
@@ -19,6 +24,11 @@ object distUtilMod {
   @JSImport("yaml/dist/util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def createNode(value: Any, tagName: String, ctx: CreateNodeContext): Node[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Node[Any]]
+  inline def createNode(value: Any, tagName: Unit, ctx: CreateNodeContext): Node[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Node[Any]]
+  
+  inline def createPair(key: Any, value: Any, ctx: CreateNodeContext): Pair[Node[Any], (YAMLMap[Any, Any]) | Scalar[Any] | Alias | YAMLSeq[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Pair[Node[Any], (YAMLMap[Any, Any]) | Scalar[Any] | Alias | YAMLSeq[Any]]]
   
   inline def debug(logLevel: LogLevelId, messages: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(logLevel.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   

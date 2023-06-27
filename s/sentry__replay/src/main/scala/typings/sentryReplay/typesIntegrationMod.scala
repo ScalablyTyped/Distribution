@@ -1,7 +1,7 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.ReplayConfiguration
-import typings.sentryReplay.typesTypesMod.SendBufferedReplayOptions
+import typings.sentryReplay.typesTypesReplayMod.ReplayConfiguration
+import typings.sentryReplay.typesTypesReplayMod.SendBufferedReplayOptions
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
 import typings.sentryTypes.typesHubMod.Hub
 import typings.sentryTypes.typesIntegrationMod.Integration

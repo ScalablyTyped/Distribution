@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-types
 
-Typings are for version 1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 micromark utility with a couple of typescript types

@@ -1,12 +1,12 @@
 package typings.openui5
 
-import typings.openui5.anon.`17`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.Dock
 import typings.openui5.sapUiCoreLibraryMod.IContextMenu
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -152,13 +152,13 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Menu` itself
       */
@@ -183,7 +183,7 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -194,7 +194,7 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Menu` itself
       */
@@ -215,13 +215,13 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachItemSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Menu` itself
       */
@@ -246,7 +246,7 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit]
     ): this.type = js.native
     def attachItemSelected(
       /**
@@ -257,7 +257,7 @@ object sapMMenuMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Menu` itself
       */
@@ -300,13 +300,13 @@ object sapMMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -324,13 +324,13 @@ object sapMMenuMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit]
     ): this.type = js.native
     def detachItemSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -338,7 +338,7 @@ object sapMMenuMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -351,7 +351,7 @@ object sapMMenuMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelected itemSelected} to attached listeners.
       *
@@ -361,7 +361,7 @@ object sapMMenuMod {
     def fireItemSelected(/**
       * Parameters to pass along with the event
       */
-    mParameters: `17`): this.type = js.native
+    mParameters: Menu$ItemSelectedEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -407,6 +407,29 @@ object sapMMenuMod {
       */
     iIndex: int
     ): this.type = js.native
+    
+    def openAsContextMenu(
+      /**
+      * The event object or an object containing offsetX, offsetY values and left, top values of the element's
+      * position
+      */
+    oEvent: js.Object,
+      /**
+      * The reference of the opener
+      */
+    oOpenerRef: typings.openui5.sapUiCoreElementMod.default
+    ): Unit = js.native
+    def openAsContextMenu(
+      /**
+      * The event object or an object containing offsetX, offsetY values and left, top values of the element's
+      * position
+      */
+    oEvent: js.Object,
+      /**
+      * The reference of the opener
+      */
+    oOpenerRef: HTMLElement
+    ): Unit = js.native
     
     /**
       * Opens the `Menu` next to the given control.
@@ -613,6 +636,39 @@ object sapMMenuMod {
     def unbindItems(): this.type = js.native
   }
   
+  trait Menu$ClosedEventParameters extends StObject
+  
+  trait Menu$ItemSelectedEventParameters extends StObject {
+    
+    /**
+      * The `MenuItem` which was selected.
+      */
+    var item: js.UndefOr[typings.openui5.sapMMenuItemMod.default] = js.undefined
+  }
+  object Menu$ItemSelectedEventParameters {
+    
+    inline def apply(): Menu$ItemSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Menu$ItemSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu$ItemSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMMenuItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type MenuClosedEvent = typings.openui5.sapUiBaseEventMod.default[Menu$ClosedEventParameters]
+  
+  type MenuClosedEventParameters = Menu$ClosedEventParameters
+  
+  type MenuItemSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectedEventParameters]
+  
+  type MenuItemSelectedEventParameters = Menu$ItemSelectedEventParameters
+  
   trait MenuSettings
     extends StObject
        with ControlSettings {
@@ -620,12 +676,19 @@ object sapMMenuMod {
     /**
       * Fired when the menu is closed.
       */
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when a `MenuItem` is selected.
       */
-    var itemSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items contained within this control.
@@ -649,11 +712,13 @@ object sapMMenuMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      inline def setItemSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
+      inline def setItemSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Menu$ItemSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
       
       inline def setItemSelectedUndefined: Self = StObject.set(x, "itemSelected", js.undefined)
       

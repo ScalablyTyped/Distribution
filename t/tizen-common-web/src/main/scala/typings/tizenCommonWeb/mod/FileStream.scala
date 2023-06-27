@@ -64,10 +64,10 @@ trait FileStream extends StObject {
     *
     * @returns Array of read characters as a string.
     *
-    * @throw WebAPIException with error type IOError, if a read error occurs, such as the bytes in the stream cannot be decoded with the encoding in use.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type IOError, if a read error occurs, such as the bytes in the stream cannot be decoded with the encoding in use.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def read(charCount: Double): String
   
@@ -83,10 +83,10 @@ trait FileStream extends StObject {
     *
     * @returns Array of read characters as base64 encoding string.
     *
-    * @throw WebAPIException with error type IOError, if a read error occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type IOError, if a read error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def readBase64(byteCount: Double): String
   
@@ -102,10 +102,10 @@ trait FileStream extends StObject {
     *
     * @returns Result of read bytes as a byte (or number) array.
     *
-    * @throw WebAPIException with error type IOError, if a read error occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type IOError, if a read error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contains an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def readBytes(byteCount: Double): js.Array[Double]
   
@@ -118,9 +118,9 @@ trait FileStream extends StObject {
     *
     * @param stringData Actual string to write.
     *
-    * @throw WebAPIException with error type IOError, if a write error occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type IOError, if a write error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def write(stringData: String): Unit
   
@@ -134,10 +134,10 @@ trait FileStream extends StObject {
     *
     * @param base64Data The base64 data to written.
     *
-    * @throw WebAPIException with error type IOError, if an error occurs during writeBase64.
-    * @throw WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value
+    * @throws WebAPIException with error type IOError, if an error occurs during writeBase64.
+    * @throws WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value
     * (e.g. the base64Data input parameter is not a valid Base64 sequence).
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def writeBase64(base64Data: String): Unit
   
@@ -151,9 +151,9 @@ trait FileStream extends StObject {
     *
     * @param byteData Byte data array being written.
     *
-    * @throw WebAPIException with error type IOError, if a write error occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type IOError, if a write error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method. For more information, see [Storage privileges](#StorageRemark).
     */
   def writeBytes(byteData: js.Array[Double]): Unit
 }

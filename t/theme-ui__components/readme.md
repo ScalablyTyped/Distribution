@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__components
 
-Typings are for version 0.15.7
+Typings are for version 0.16.0
 
 ## Library description:
 Primitive layout, typographic, and other components for use with Theme UI.

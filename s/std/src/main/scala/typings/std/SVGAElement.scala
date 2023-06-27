@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides access to the properties of <a> element, as well as methods to manipulate them. */
+/**
+  * Provides access to the properties of <a> element, as well as methods to manipulate them.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAElement)
+  */
 @js.native
 trait SVGAElement
   extends StObject
@@ -39,6 +43,7 @@ trait SVGAElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAElement/target) */
   /* standard dom */
   val target: SVGAnimatedString = js.native
 }

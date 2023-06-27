@@ -76,6 +76,7 @@ object distErrorsMod {
     - typings.yaml.yamlStrings.TAB_AS_INDENT
     - typings.yaml.yamlStrings.TAG_RESOLVE_FAILED
     - typings.yaml.yamlStrings.UNEXPECTED_TOKEN
+    - typings.yaml.yamlStrings.BAD_COLLECTION_TYPE
   */
   trait ErrorCode extends StObject
   object ErrorCode {
@@ -83,6 +84,8 @@ object distErrorsMod {
     inline def ALIAS_PROPS: typings.yaml.yamlStrings.ALIAS_PROPS = "ALIAS_PROPS".asInstanceOf[typings.yaml.yamlStrings.ALIAS_PROPS]
     
     inline def BAD_ALIAS: typings.yaml.yamlStrings.BAD_ALIAS = "BAD_ALIAS".asInstanceOf[typings.yaml.yamlStrings.BAD_ALIAS]
+    
+    inline def BAD_COLLECTION_TYPE: typings.yaml.yamlStrings.BAD_COLLECTION_TYPE = "BAD_COLLECTION_TYPE".asInstanceOf[typings.yaml.yamlStrings.BAD_COLLECTION_TYPE]
     
     inline def BAD_DIRECTIVE: typings.yaml.yamlStrings.BAD_DIRECTIVE = "BAD_DIRECTIVE".asInstanceOf[typings.yaml.yamlStrings.BAD_DIRECTIVE]
     

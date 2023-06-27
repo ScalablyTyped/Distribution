@@ -20,6 +20,8 @@ trait ExportAllDeclaration_
   
   var assertions: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
   
+  var attributes: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
+  
   var exportKind: js.UndefOr[`type` | value | Null] = js.undefined
   
   var source: StringLiteral_
@@ -45,6 +47,14 @@ object ExportAllDeclaration_ {
     inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
     
     inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
+    
+    inline def setAttributes(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     

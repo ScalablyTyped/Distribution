@@ -7,171 +7,171 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsConvolutionKernel extends StObject {
   
   /**
-    * East gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * East gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientEast: Double
   
   /**
-    * North gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * North gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientNorth: Double
   
   /**
-    * North east gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * North east gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientNorthEast: Double
   
   /**
-    * North west gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * North west gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientNorthWest: Double
   
   /**
-    * South gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * South gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientSouth: Double
   
   /**
-    * West gradient detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * West gradient detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var gradientWest: Double
   
   /**
-    * Laplacian filters are often used for edge detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Laplacian filters are often used for edge detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var laplacian3x3: Double
   
   /**
-    * Laplacian filters are often used for edge detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Laplacian filters are often used for edge detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var laplacian5x5: Double
   
   /**
-    * Horizontal line detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Horizontal line detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var lineDetectionHorizontal: Double
   
   /**
-    * Left diagonal line detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Left diagonal line detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var lineDetectionLeftDiagonal: Double
   
   /**
-    * Right diagonal line detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Right diagonal line detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var lineDetectionRightDiagonal: Double
   
   /**
-    * Vertical line detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Vertical line detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var lineDetectionVertical: Double
   
   /**
-    * No kernel type is specified.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * No kernel type is specified.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var none: Double
   
   /**
-    * The point spread function portrays the distribution of light from a point source through a lense.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * The point spread function portrays the distribution of light from a point source through a lense.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var pointSpread: Double
   
   /**
-    * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sharpen: Double
   
   /**
-    * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sharpen2: Double
   
   /**
-    * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sharpening3x3: Double
   
   /**
-    * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Sharpens the date by calculating the focal sum statistic for each cell of the input using a weighted kernel neighborhood.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sharpening5x5: Double
   
   /**
-    * Smooths the data by reducing local variation and removing noise.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Smooths the data by reducing local variation and removing noise.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var smoothArithmeticMean: Double
   
   /**
-    * Smooths (low-pass) the data by reducing local variation and removing noise.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Smooths (low-pass) the data by reducing local variation and removing noise.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var smoothing3x3: Double
   
   /**
-    * Smooths (low-pass) the data by reducing local variation and removing noise.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * Smooths (low-pass) the data by reducing local variation and removing noise.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var smoothing5x5: Double
   
   /**
-    * The horizontal Sobel filter is used for edge detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * The horizontal Sobel filter is used for edge detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sobelHorizontal: Double
   
   /**
-    * The vertical Sobel filter is used for edge detection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * The vertical Sobel filter is used for edge detection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var sobelVertical: Double
   
   /**
-    * User defined kernel type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
-    */
+  		 * User defined kernel type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#convolutionKernel)
+  		 */
   var userDefined: Double
 }
 object rasterFunctionConstantsConvolutionKernel {

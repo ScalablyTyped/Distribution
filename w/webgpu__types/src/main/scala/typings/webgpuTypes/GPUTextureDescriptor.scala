@@ -57,7 +57,7 @@ trait GPUTextureDescriptor
     * </div>
     * Formats in this list must be texture view format compatible with the texture format.
     * <div algorithm>
-    * Two {@link GPUTextureFormat}s `format` and `viewFormat` are <dfn dfn for=>texture view format compatible</dfn> if:
+    * Two {@link GPUTextureFormat}s `format` and `viewFormat` are <dfn dfn for="">texture view format compatible</dfn> if:
     * - `format` equals `viewFormat`, or
     * - `format` and `viewFormat` differ only in whether they are `srgb` formats (have the `-srgb` suffix).
     * </div>

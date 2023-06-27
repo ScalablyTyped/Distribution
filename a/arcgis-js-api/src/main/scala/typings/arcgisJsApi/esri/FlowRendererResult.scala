@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal color of the flow lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal color of the flow lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * The flow scheme used to set colors and sizes to the flow lines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * The flow scheme used to set colors and sizes to the flow lines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var flowScheme: FlowScheme
   
   /**
-    * A suggested layer effect to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * A suggested layer effect to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var layerEffect: String
   
   /**
-    * The FlowRenderer renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * The FlowRenderer renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var renderer: FlowRenderer
   
   /**
-    * Summary statistics of the raster layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * Summary statistics of the raster layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var statistics: SummaryStatisticsResult
   
   /**
-    * Visual variables included in the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
-    */
+  		 * Visual variables included in the output renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-flow.html#FlowRendererResult)
+  		 */
   var visualVariables: js.Array[VisualVariable]
 }
 object FlowRendererResult {

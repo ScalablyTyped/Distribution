@@ -8,60 +8,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.VoxelSlice")
 @js.native
 /**
-  * The VoxelSlice allows you to define the properties of an individual slice.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html)
-  */
+		 * The VoxelSlice allows you to define the properties of an individual slice.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html)
+		 */
 open class VoxelSlice ()
   extends StObject
      with typings.arcgisJsApi.esri.VoxelSlice {
   def this(properties: VoxelSliceProperties) = this()
   
   /**
-    * Whether or not the slice is enabled.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#enabled)
-    */
+  		 * Whether or not the slice is enabled.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#enabled)
+  		 */
   /* CompleteClass */
   var enabled: Boolean = js.native
   
   /**
-    * The label for the slice.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#label)
-    */
+  		 * The label for the slice.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#label)
+  		 */
   /* CompleteClass */
   var label: String = js.native
   
   /**
-    * The orientation angle (in the degrees) of the slice plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#orientation)
-    */
+  		 * The orientation angle (in the degrees) of the slice plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#orientation)
+  		 */
   /* CompleteClass */
   var orientation: Double = js.native
   
   /**
-    * A point on the slice plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#point)
-    */
+  		 * A point on the slice plane specified as [x ,y, z] in voxel space for XYZ and XYZT volumes and as [x, y, t] for XYT volumes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#point)
+  		 */
   /* CompleteClass */
   var point: js.Array[Double] = js.native
   
   /**
-    * The tilt angle (in degrees) of the slice plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#tilt)
-    */
+  		 * The tilt angle (in degrees) of the slice plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelSlice.html#tilt)
+  		 */
   /* CompleteClass */
   var tilt: Double = js.native
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

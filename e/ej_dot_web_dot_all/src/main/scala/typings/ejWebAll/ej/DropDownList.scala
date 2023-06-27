@@ -1037,7 +1037,7 @@ object DropDownList {
     /** The Virtual Scrolling(lazy loading) feature is used to display a large amount of data that you require without buffering the entire load of a huge database records in the
       * DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the
       * allowVirtualScrolling to true.
-      * @Default {false}
+      * @default {false}
       */
     var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
@@ -1054,12 +1054,12 @@ object DropDownList {
     var cascade: js.UndefOr[js.Function1[/* e */ CascadeEventArgs, Unit]] = js.undefined
     
     /** The cascading DropDownLists is a series of two or more DropDownLists in which each DropDownList is filtered according to the previous DropDownListâ€™s value.
-      * @Default {null}
+      * @default {null}
       */
     var cascadeTo: js.UndefOr[String] = js.undefined
     
     /** Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
-      * @Default {false}
+      * @default {false}
       */
     var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
@@ -1086,14 +1086,14 @@ object DropDownList {
     
     /** This property is used to serve data from the data services based on the query provided. To bind the data to the dropdown widget, the dataSource property is assigned with the
       * instance of the ej.DataManager.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are
       * considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or
       * any other special character.
-      * @Default {','}
+      * @default {','}
       */
     var delimiterChar: js.UndefOr[String] = js.undefined
     
@@ -1102,62 +1102,62 @@ object DropDownList {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.
-      * @Default {false}
+      * @default {false}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** This property selects the item in the DropDownList when the item is entered in the Search textbox.
-      * @Default {false}
+      * @default {false}
       */
     var enableFilterSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to perform incremental search for the selection of items from the DropDownList with the help of this property. This helps in selecting the item by using the typed
       * character.
-      * @Default {true}
+      * @default {true}
       */
     var enableIncrementalSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Saves the current model value to the browser cookies for state maintenance. While refreshing the DropDownList control page, it retains the model value and it is applied from the
       * browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** This enables the resize handler to resize the popup to any size.
-      * @Default {false}
+      * @default {false}
       */
     var enablePopupResize: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the DropDownList textbox direction from right to left align.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** The serverfiltering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire
       * datasource. Serverfiltering will be done based on the entire items in DataSource.
-      * @Default {false}
+      * @default {false}
       */
     var enableServerFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to sort the Items in the DropDownList. By default, it sorts the items in an ascending order.
-      * @Default {false}
+      * @default {false}
       */
     var enableSorting: js.UndefOr[Boolean] = js.undefined
     
     /** This property is used to indicate whether the DropDownList control responds to the user interaction or not. By default, the control is in the enabled mode and you can disable it
       * by setting it to false.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mapping fields for the data items of the DropDownList.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
     /** When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search
       * textbox.
-      * @Default {ej.FilterType.Contains}
+      * @default {ej.FilterType.Contains}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
@@ -1170,64 +1170,64 @@ object DropDownList {
     var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Used to create visualized header for dropdown items
-      * @Default {null}
+      * @default {null}
       */
     var headerTemplate: js.UndefOr[String] = js.undefined
     
     /** Defines the height of the DropDownList textbox.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** It sets the given HTML attributes for the DropDownList control such as ID, name, disabled, etc.
-      * @Default {null}
+      * @default {null}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Data can be fetched in the DropDownList control by using the DataSource, specifying the number of items.
-      * @Default {5}
+      * @default {5}
       */
     var itemsCount: js.UndefOr[Double] = js.undefined
     
     /** The property is used to determine whether the popup list is generated dynamically.
-      * @Default {false}
+      * @default {false}
       */
     var loadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to set the particular country or region language for the DropDownList.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Defines the maximum height of the suggestion box. This property restricts the maximum height of the popup when resize is enabled.
-      * @Default {null}
+      * @default {null}
       */
     var maxPopupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the maximum width of the suggestion box. This property restricts the maximum width of the popup when resize is enabled.
-      * @Default {null}
+      * @default {null}
       */
     var maxPopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled.
-      * @Default {null}
+      * @default {null}
       */
     var minPopupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled.
-      * @Default {0}
+      * @default {0}
       */
     var minPopupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** With the help of this property, you can make a single or multi selection with the DropDownList and display the text in two modes, delimiter and visual mode. In delimiter mode, you
       * can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes
       * with close icon in the textbox.
-      * @Default {ej.MultiSelectMode.None}
+      * @default {ej.MultiSelectMode.None}
       */
     var multiSelectMode: js.UndefOr[MultiSelectMode | String] = js.undefined
     
     /** Defines the height of the suggestion popup box in the DropDownList control.
-      * @Default {152px}
+      * @default {152px}
       */
     var popupHeight: js.UndefOr[String | Double] = js.undefined
     
@@ -1252,17 +1252,17 @@ object DropDownList {
     var popupShown: js.UndefOr[js.Function1[/* e */ PopupShownEventArgs, Unit]] = js.undefined
     
     /** Defines the width of the suggestion popup box in the DropDownList control.
-      * @Default {auto}
+      * @default {auto}
       */
     var popupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the query to retrieve the data from the DataSource.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies that the DropDownList textbox values should be read-only.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
@@ -1275,79 +1275,79 @@ object DropDownList {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Specifies an item to be selected in the DropDownList.
-      * @Default {null}
+      * @default {null}
       */
     var selectedIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the selectedItems for the DropDownList.
-      * @Default {[]}
+      * @default {[]}
       */
     var selectedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Selects multiple items in the DropDownList with the help of the checkbox control. To achieve this, enable the showCheckbox option to true.
-      * @Default {false}
+      * @default {false}
       */
     var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownList control is displayed with the popup seen.
-      * @Default {false}
+      * @default {false}
       */
     var showPopupOnLoad: js.UndefOr[Boolean] = js.undefined
     
     /** DropDownList textbox displayed with the rounded corner style.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
-      * @Default {ej.SortOrder.Ascending}
+      * @default {ej.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder_ | String] = js.undefined
     
     /** Specifies the targetID for the DropDownListâ€™s items.
-      * @Default {null}
+      * @default {null}
       */
     var targetID: js.UndefOr[String] = js.undefined
     
     /** By default, you can add any text or image to the DropDownList item. To customize the item layout or to create your own visualized elements, you can use this template support.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** Defines the text value that is displayed in the DropDownList textbox.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Sets the jQuery validation error message in the DropDownList
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules in the Dropdownlist.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value (text content) for the DropDownList control.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String | Double] = js.undefined
     
     /** The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an AJAX request is sent to fetch some amount of data from
       * the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items
       * to be fetched from the server on every AJAX request.
-      * @Default {normal}
+      * @default {normal}
       */
     var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
     
     /** Specifies a short hint that describes the expected value of the DropDownList control.
-      * @Default {null}
+      * @default {null}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the DropDownList textbox.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

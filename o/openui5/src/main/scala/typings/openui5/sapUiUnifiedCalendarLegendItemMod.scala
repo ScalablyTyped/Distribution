@@ -124,7 +124,7 @@ object sapUiUnifiedCalendarLegendItemMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getColor color}.
       *
@@ -144,7 +144,7 @@ object sapUiUnifiedCalendarLegendItemMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Gets current value of property {@link #getType type}.
       *
@@ -158,7 +158,7 @@ object sapUiUnifiedCalendarLegendItemMod {
     def getType(): CalendarDayType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarDayType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getColor color}.
       *
@@ -190,7 +190,7 @@ object sapUiUnifiedCalendarLegendItemMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Sets a new value for property {@link #getType type}.
       *
@@ -221,7 +221,7 @@ object sapUiUnifiedCalendarLegendItemMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Overrides the color derived from the `type` property.
       */
@@ -235,7 +235,7 @@ object sapUiUnifiedCalendarLegendItemMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Type of the item. If not set the type is automatically determined from the order of the items in the
       * CalendarLegend.

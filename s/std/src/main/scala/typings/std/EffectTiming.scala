@@ -13,7 +13,7 @@ trait EffectTiming extends StObject {
   var direction: js.UndefOr[PlaybackDirection] = js.undefined
   
   /* standard dom */
-  var duration: js.UndefOr[Double | java.lang.String] = js.undefined
+  var duration: js.UndefOr[Double | CSSNumericValue | java.lang.String] = js.undefined
   
   /* standard dom */
   var easing: js.UndefOr[java.lang.String] = js.undefined
@@ -51,7 +51,7 @@ object EffectTiming {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDuration(value: Double | java.lang.String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | CSSNumericValue | java.lang.String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     

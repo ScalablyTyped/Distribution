@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Not all apps can be embedded; apps have to explicitly allow themselves to be embedded.
   * @since Chrome 43.
   * @requires Permissions: 'appview'
-  * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
+  * @see https://developer.chrome.com/apps/tags/appview
   */
 @js.native
 trait HTMLAppViewElement

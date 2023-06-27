@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@codemirror/autocomplete" : "6.2.0"
+      "@codemirror/autocomplete" : "6.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@codemirror/autocomplete" : "6.2.0"
+      "@codemirror/autocomplete" : "6.7.1"
     }
   ],
   "compile-devDependencies" : [

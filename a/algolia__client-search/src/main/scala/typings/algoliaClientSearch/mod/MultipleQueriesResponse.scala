@@ -9,11 +9,11 @@ trait MultipleQueriesResponse[TObject] extends StObject {
   /**
     * The list of results.
     */
-  var results: js.Array[SearchResponse[TObject]]
+  var results: js.Array[SearchResponse[TObject] | SearchForFacetValuesResponse]
 }
 object MultipleQueriesResponse {
   
-  inline def apply[TObject](results: js.Array[SearchResponse[TObject]]): MultipleQueriesResponse[TObject] = {
+  inline def apply[TObject](results: js.Array[SearchResponse[TObject] | SearchForFacetValuesResponse]): MultipleQueriesResponse[TObject] = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleQueriesResponse[TObject]]
   }
@@ -21,8 +21,8 @@ object MultipleQueriesResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: MultipleQueriesResponse[?], TObject] (val x: Self & MultipleQueriesResponse[TObject]) extends AnyVal {
     
-    inline def setResults(value: js.Array[SearchResponse[TObject]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchResponse[TObject] | SearchForFacetValuesResponse]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: SearchResponse[TObject]*): Self = StObject.set(x, "results", js.Array(value*))
+    inline def setResultsVarargs(value: (SearchResponse[TObject] | SearchForFacetValuesResponse)*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

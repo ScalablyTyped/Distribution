@@ -309,7 +309,7 @@ object mod {
       * SVG provides no programmatic method for retrieving the initial viewport size. Alternatively, consider using element.getBoundingClientRect.
       * (In Firefox, element.clientWidth and element.clientHeight is zero for SVG elements!)
       *
-      * @extent An extent accessor function which is evaluated for each selected element, being passed the current datum d, with the this context as the current DOM element.
+      * @param extent An extent accessor function which is evaluated for each selected element, being passed the current datum d, with the this context as the current DOM element.
       * The function returns the extent array.
       */
     def extent(

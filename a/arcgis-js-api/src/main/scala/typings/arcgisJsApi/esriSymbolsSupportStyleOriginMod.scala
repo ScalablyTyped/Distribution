@@ -11,10 +11,10 @@ object esriSymbolsSupportStyleOriginMod {
   @JSImport("esri/symbols/support/StyleOrigin", JSImport.Namespace)
   @js.native
   /**
-    * The style origin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html)
-    */
+  		 * The style origin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-StyleOrigin.html)
+  		 */
   open class ^ ()
     extends StObject
        with StyleOrigin {

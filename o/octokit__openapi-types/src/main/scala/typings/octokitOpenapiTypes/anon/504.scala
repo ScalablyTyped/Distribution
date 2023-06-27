@@ -1,27 +1,32 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.required_deployments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `504` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Architecture]
+  var parameters: js.UndefOr[Requireddeploymentenvironments] = js.undefined
+  
+  /** @enum {string} */
+  var `type`: required_deployments
 }
 object `504` {
   
-  inline def apply(applicationSlashjson: js.Array[Architecture]): `504` = {
+  inline def apply(): `504` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("required_deployments")
     __obj.asInstanceOf[`504`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `504`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Architecture]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Requireddeploymentenvironments): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Architecture*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    
+    inline def setType(value: required_deployments): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

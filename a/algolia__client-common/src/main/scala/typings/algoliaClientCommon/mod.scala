@@ -52,7 +52,7 @@ object mod {
   
   @JSImport("@algolia/client-common", "version")
   @js.native
-  val version: /* "4.17.0" */ String = js.native
+  val version: /* "4.18.0" */ String = js.native
   
   type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase & (/* import warning: importer.ImportType#apply Failed type conversion: {[ TKey in keyof TMethods extends string? keyof TMethods : never ]: std.ReturnType<TMethods[TKey]>} */ js.Any)
   

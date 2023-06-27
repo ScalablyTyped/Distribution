@@ -10,33 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachmentsViewModelProperties extends StObject {
   
   /**
-    * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html) being edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#activeAttachmentInfo)
-    */
+  		 * The current [AttachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-query-support-AttachmentInfo.html) being edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#activeAttachmentInfo)
+  		 */
   var activeAttachmentInfo: js.UndefOr[AttachmentInfoProperties] = js.undefined
   
   /**
-    * The graphic for the attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#graphic)
-    */
+  		 * Configures the attachment editing functionality that can be performed by the user.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#capabilities)
+  		 */
+  var capabilities: js.UndefOr[AttachmentsCapabilities] = js.undefined
+  
+  /**
+  		 * The graphic for the attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#graphic)
+  		 */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
-    * The current mode performed by the user.
-    *
-    * @default "view"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#mode)
-    */
+  		 * The current mode performed by the user.
+  		 *
+  		 * @default "view"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#mode)
+  		 */
   var mode: js.UndefOr[view | add | edit] = js.undefined
   
   /**
-    * Defines whether or not the feature supports resizing attachments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#supportsResizeAttachments)
-    */
+  		 * Defines whether or not the feature supports resizing attachments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html#supportsResizeAttachments)
+  		 */
   var supportsResizeAttachments: js.UndefOr[Boolean] = js.undefined
 }
 object AttachmentsViewModelProperties {
@@ -52,6 +59,10 @@ object AttachmentsViewModelProperties {
     inline def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = StObject.set(x, "activeAttachmentInfo", value.asInstanceOf[js.Any])
     
     inline def setActiveAttachmentInfoUndefined: Self = StObject.set(x, "activeAttachmentInfo", js.undefined)
+    
+    inline def setCapabilities(value: AttachmentsCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     

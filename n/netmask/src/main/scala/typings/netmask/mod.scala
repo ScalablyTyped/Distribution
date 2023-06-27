@@ -69,6 +69,10 @@ object mod {
       */
     var mask: String = js.native
     
+    var maskLong: Double = js.native
+    
+    var netLong: Double = js.native
+    
     /**
       * Without a count, return the next block of the same size after the current one. With a count, return the Nth block after the current one.
       * A count of -1 returns the previous block. Undef will be returned if out of legal address space.

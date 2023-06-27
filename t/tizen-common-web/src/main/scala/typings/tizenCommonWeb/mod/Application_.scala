@@ -18,8 +18,8 @@ trait Application_ extends StObject {
     *
     * @returns Listener identifier.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def addEventListener(event: EventInfo, callback: EventCallback): Double
   
@@ -38,8 +38,8 @@ trait Application_ extends StObject {
     * @param event Event to broadcast.
     * @param data User defined event data to broadcast.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def broadcastEvent(event: EventInfo, data: UserEventData): Unit
   
@@ -53,8 +53,8 @@ trait Application_ extends StObject {
     * @param event Trusted event to broadcast.
     * @param data User defined trusted event data to broadcast.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def broadcastTrustedEvent(event: EventInfo, data: UserEventData): Unit
   
@@ -68,7 +68,7 @@ trait Application_ extends StObject {
     *
     * @remark This method is not supported by Web Widget.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def exit(): Unit
   
@@ -88,7 +88,7 @@ trait Application_ extends StObject {
     *
     * @returns The details of a requested application control.
     *
-    * @throw WebAPIException with error type UnknownError, if the application control cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the application control cannot be retrieved because of an unknown error.
     */
   def getRequestedAppControl(): RequestedApplicationControl
   
@@ -97,7 +97,7 @@ trait Application_ extends StObject {
     *
     * @remark This method is not supported by Web Widget.
     *
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def hide(): Unit
   
@@ -110,7 +110,7 @@ trait Application_ extends StObject {
     *
     * @param watchId Listener identifier.
     *
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     */
   def removeEventListener(watchId: Double): Unit
 }

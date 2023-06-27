@@ -9,8 +9,8 @@ trait ISemanticFormContent extends StObject {
   var __implements__sap_ui_core_ISemanticFormContent: Boolean
   
   /**
-    * @SINCE 1.86.0
-    * @EXPERIMENTAL (since 1.86)
+    * @since 1.86.0
+    * @experimental (since 1.86)
     *
     * Returns the formatted value of a control used in a `SemanticFormElement`.
     *
@@ -24,11 +24,11 @@ trait ISemanticFormContent extends StObject {
     *
     * @returns Formatted value or a `Promise` returning the formatted value if resolved
     */
-  var getFormFormattedValue: js.UndefOr[js.Function0[String | js.Promise[Any]]] = js.undefined
+  var getFormFormattedValue: js.UndefOr[js.Function0[String | js.Promise[String]]] = js.undefined
   
   /**
-    * @SINCE 1.86.0
-    * @EXPERIMENTAL (since 1.86)
+    * @since 1.86.0
+    * @experimental (since 1.86)
     *
     * Returns the name of the value-holding property of a control used in a `SemanticFormElement`.
     *
@@ -54,7 +54,7 @@ object ISemanticFormContent {
   @scala.inline
   implicit open class MutableBuilder[Self <: ISemanticFormContent] (val x: Self) extends AnyVal {
     
-    inline def setGetFormFormattedValue(value: () => String | js.Promise[Any]): Self = StObject.set(x, "getFormFormattedValue", js.Any.fromFunction0(value))
+    inline def setGetFormFormattedValue(value: () => String | js.Promise[String]): Self = StObject.set(x, "getFormFormattedValue", js.Any.fromFunction0(value))
     
     inline def setGetFormFormattedValueUndefined: Self = StObject.set(x, "getFormFormattedValue", js.undefined)
     

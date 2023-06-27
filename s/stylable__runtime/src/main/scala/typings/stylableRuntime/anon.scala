@@ -181,6 +181,7 @@ import typings.stylableRuntime.stylableRuntimeStrings.ruby
 import typings.stylableRuntime.stylableRuntimeStrings.s
 import typings.stylableRuntime.stylableRuntimeStrings.samp
 import typings.stylableRuntime.stylableRuntimeStrings.script
+import typings.stylableRuntime.stylableRuntimeStrings.search
 import typings.stylableRuntime.stylableRuntimeStrings.section
 import typings.stylableRuntime.stylableRuntimeStrings.select
 import typings.stylableRuntime.stylableRuntimeStrings.slot
@@ -474,6 +475,8 @@ object anon {
     def apply(tagName: samp, options: ElementCreationOptions): HTMLElement = js.native
     def apply(tagName: script): HTMLScriptElement = js.native
     def apply(tagName: script, options: ElementCreationOptions): HTMLScriptElement = js.native
+    def apply(tagName: search): HTMLElement = js.native
+    def apply(tagName: search, options: ElementCreationOptions): HTMLElement = js.native
     def apply(tagName: section): HTMLElement = js.native
     def apply(tagName: section, options: ElementCreationOptions): HTMLElement = js.native
     def apply(tagName: select): HTMLSelectElement = js.native

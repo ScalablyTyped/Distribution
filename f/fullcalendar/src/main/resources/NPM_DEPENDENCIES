@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fullcalendar" : "6.1.7"
+      "fullcalendar" : "6.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "fullcalendar" : "6.1.7"
+      "fullcalendar" : "6.1.8"
     }
   ],
   "compile-devDependencies" : [

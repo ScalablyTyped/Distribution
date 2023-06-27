@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityManagerRegisterTokenProperties extends StObject {
   
   /**
-    * Token expiration time specified as number of milliseconds since 1 January 1970 00:00:00 UTC.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
-    */
+  		 * Token expiration time specified as number of milliseconds since 1 January 1970 00:00:00 UTC.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
+  		 */
   var expires: js.UndefOr[Double] = js.undefined
   
   /**
-    * For ArcGIS Online or Portal, this is https://www.arcgis.com/sharing/rest or similar to https://www.example.com/portal/sharing/rest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
-    */
+  		 * For ArcGIS Online or Portal, this is https://www.arcgis.com/sharing/rest or similar to https://www.example.com/portal/sharing/rest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
+  		 */
   var server: String
   
   /**
-    * Set this to `true` if the user has an ArcGIS Online organizational account and the organization is configured to allow access to resources only through SSL.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
-    */
+  		 * Set this to `true` if the user has an ArcGIS Online organizational account and the organization is configured to allow access to resources only through SSL.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
+  		 */
   var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The access token.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
-    */
+  		 * The access token.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
+  		 */
   var token: String
   
   /**
-    * The id of the user who owns the access token.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
-    */
+  		 * The id of the user who owns the access token.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
+  		 */
   var userId: js.UndefOr[String] = js.undefined
 }
 object IdentityManagerRegisterTokenProperties {

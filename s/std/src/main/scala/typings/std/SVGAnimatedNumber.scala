@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Used for attributes of basic type <Number> which can be animated. */
+/**
+  * Used for attributes of basic type <Number> which can be animated.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumber)
+  */
 trait SVGAnimatedNumber extends StObject {
   
   /* standard dom */

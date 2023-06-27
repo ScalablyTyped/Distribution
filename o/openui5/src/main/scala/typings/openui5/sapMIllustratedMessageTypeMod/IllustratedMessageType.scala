@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait IllustratedMessageType extends StObject
 /**
-  * @SINCE 1.98
+  * @since 1.98
   *
   * Available `Illustration` types for the {@link sap.f.IllustratedMessage} control.
   */

@@ -4,6 +4,7 @@ import typings.csstoolsCssColorParser.csstoolsCssColorParserBooleans.`false`
 import typings.csstoolsCssColorParser.distColorDataMod.ColorData
 import typings.csstoolsCssColorParser.distColorDataMod.SyntaxFlag
 import typings.csstoolsCssColorParser.distColorNotationMod.ColorNotation
+import typings.csstoolsCssColorParser.distColorParserMod.ColorParser
 import typings.csstoolsCssColorParser.distFunctionsNormalizeChannelValuesMod.normalizeChannelValuesFn
 import typings.csstoolsCssParserAlgorithms.mod.FunctionNode
 import org.scalablytyped.runtime.StObject
@@ -20,6 +21,7 @@ object distFunctionsThreeChannelSpaceSeparatedMod {
     colorFunctionNode: FunctionNode,
     normalizeChannelValues: normalizeChannelValuesFn,
     colorNotation: ColorNotation,
-    syntaxFlags: js.Array[SyntaxFlag]
-  ): ColorData | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("threeChannelSpaceSeparated")(colorFunctionNode.asInstanceOf[js.Any], normalizeChannelValues.asInstanceOf[js.Any], colorNotation.asInstanceOf[js.Any], syntaxFlags.asInstanceOf[js.Any])).asInstanceOf[ColorData | `false`]
+    syntaxFlags: js.Array[SyntaxFlag],
+    colorParser: ColorParser
+  ): ColorData | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("threeChannelSpaceSeparated")(colorFunctionNode.asInstanceOf[js.Any], normalizeChannelValues.asInstanceOf[js.Any], colorNotation.asInstanceOf[js.Any], syntaxFlags.asInstanceOf[js.Any], colorParser.asInstanceOf[js.Any])).asInstanceOf[ColorData | `false`]
 }

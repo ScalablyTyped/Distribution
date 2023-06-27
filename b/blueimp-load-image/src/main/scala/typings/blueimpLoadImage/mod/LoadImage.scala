@@ -4,7 +4,9 @@ import typings.blueimpLoadImage.blueimpLoadImageBooleans.`false`
 import typings.std.Blob
 import typings.std.File
 import typings.std.FileReader
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +27,14 @@ trait LoadImage extends StObject {
   def blobSlice(start: Double): Blob = js.native
   def blobSlice(start: Double, end: Double): Blob = js.native
   def blobSlice(start: Unit, end: Double): Blob = js.native
+  
+  def createObjectURL(blob: Blob): String | `false` = js.native
+  
+  def fetchBlob(url: String, callback: js.Function0[Unit]): Unit = js.native
+  
+  var global: Window = js.native
+  
+  var isInstanceOf: Any = js.native
   
   def parseMetaData(file: String): js.Promise[MetaData] = js.native
   def parseMetaData(file: String, callback: ParseMetaDataCallback): Unit = js.native
@@ -53,6 +63,8 @@ trait LoadImage extends StObject {
   @JSName("parseMetaData")
   var parseMetaData_Original: ParseMetadata = js.native
   
+  var readFile: Any = js.native
+  
   // Replaces the image head of a JPEG blob with the given one
   def replaceHead(blob: Blob, head: js.typedarray.ArrayBuffer): js.Promise[Blob | Null] = js.native
   // Replaces the image head of a JPEG blob with the given one
@@ -63,8 +75,22 @@ trait LoadImage extends StObject {
   @JSName("replaceHead")
   var replaceHead_Original: ReplaceHead = js.native
   
-  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: MetaData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
-  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: MetaData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
-  def writeExifData(buffer: js.typedarray.Uint8Array, data: MetaData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
-  def writeExifData(buffer: js.typedarray.Uint8Array, data: MetaData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  // Internal functions, undocumented
+  def requiresMetaData(options: LoadImageOptions): Boolean = js.native
+  
+  def revokeObjectURL(url: String): Unit | `false` = js.native
+  
+  def scale[O /* <: LoadImageOptions */](image: HTMLCanvasElement): /* import warning: importer.ImportType#apply Failed type conversion: O extends blueimp-load-image.blueimp-load-image.CanvasTrueOptions ? std.HTMLCanvasElement : std.HTMLImageElement */ js.Any = js.native
+  def scale[O /* <: LoadImageOptions */](image: HTMLCanvasElement, options: O): /* import warning: importer.ImportType#apply Failed type conversion: O extends blueimp-load-image.blueimp-load-image.CanvasTrueOptions ? std.HTMLCanvasElement : std.HTMLImageElement */ js.Any = js.native
+  def scale[O /* <: LoadImageOptions */](image: HTMLImageElement): /* import warning: importer.ImportType#apply Failed type conversion: O extends blueimp-load-image.blueimp-load-image.CanvasTrueOptions ? std.HTMLCanvasElement : std.HTMLImageElement */ js.Any = js.native
+  def scale[O /* <: LoadImageOptions */](image: HTMLImageElement, options: O): /* import warning: importer.ImportType#apply Failed type conversion: O extends blueimp-load-image.blueimp-load-image.CanvasTrueOptions ? std.HTMLCanvasElement : std.HTMLImageElement */ js.Any = js.native
+  @JSName("scale")
+  var scale_Original: Scale = js.native
+  
+  def transform(img: Any, options: Any, callback: js.Function0[Unit], file: Any, data: Any): Unit = js.native
+  
+  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: WriteExifData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: WriteExifData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.Uint8Array, data: WriteExifData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.Uint8Array, data: WriteExifData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
 }

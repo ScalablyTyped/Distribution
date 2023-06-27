@@ -3,6 +3,7 @@ package typings.nobleHashes
 import typings.nobleHashes.eskdfMod.AccountID
 import typings.nobleHashes.eskdfMod.KeyOpts
 import typings.nobleHashes.utilsMod.Hash
+import typings.nobleHashes.utilsMod.HashXOF
 import typings.nobleHashes.utilsMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +27,7 @@ object anon {
   @js.native
   trait Call[T /* <: Hash[T] */] extends StObject {
     
-    def apply(message: Input): js.typedarray.Uint8Array = js.native
+    def apply(msg: Input): js.typedarray.Uint8Array = js.native
     
     var blockLen: Double = js.native
     
@@ -36,9 +37,22 @@ object anon {
   }
   
   @js.native
+  trait Create[T /* <: js.Object */, H /* <: HashXOF[H] */] extends StObject {
+    
+    def apply(msg: Input): js.typedarray.Uint8Array = js.native
+    def apply(msg: Input, opts: T): js.typedarray.Uint8Array = js.native
+    
+    var blockLen: Double = js.native
+    
+    def create(opts: T): HashXOF[H] = js.native
+    
+    var outputLen: Double = js.native
+  }
+  
+  @js.native
   trait FnCall extends StObject {
     
-    def apply[T /* <: Hash[T] */](hashConstructor: js.Function0[Hash[T]]): Call[T] = js.native
+    def apply[T /* <: Hash[T] */](hashCons: js.Function0[Hash[T]]): Call[T] = js.native
   }
   
   trait H extends StObject {

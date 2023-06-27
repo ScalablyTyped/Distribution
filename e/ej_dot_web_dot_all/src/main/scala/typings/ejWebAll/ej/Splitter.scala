@@ -297,12 +297,12 @@ object Splitter {
   trait Model extends StObject {
     
     /** Turns on keyboard interaction with the Splitter panes. You must set this property to true to access the keyboard shortcuts of ejSplitter.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify animation speed for the Splitter pane movement, while collapsing and expanding.
-      * @Default {300}
+      * @default {300}
       */
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
@@ -319,7 +319,7 @@ object Splitter {
     var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to splitter control to achieve custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
@@ -328,12 +328,12 @@ object Splitter {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the animation behavior of the splitter.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the splitter control to be displayed in right to left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
@@ -342,32 +342,32 @@ object Splitter {
     var expandCollapse: js.UndefOr[js.Function1[/* e */ ExpandCollapseEventArgs, Unit]] = js.undefined
     
     /** Specifies HTML element string to replace the existing expand/collapse icons.
-      * @Default {null}
+      * @default {null}
       */
     var expanderTemplate: js.UndefOr[String] = js.undefined
     
     /** Specify height for splitter control.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML Attributes of the Splitter.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specify window resizing behavior for splitter control.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the orientation for splitter control. See orientation
-      * @Default {ej.orientation.Horizontal or â€œhorizontalâ€}
+      * @default {ej.orientation.Horizontal or â€œhorizontalâ€}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Specify properties for each pane like paneSize, minSize, maxSize, collapsible, expandable, resizable.
-      * @Default {[]}
+      * @default {[]}
       */
     var properties: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -376,7 +376,7 @@ object Splitter {
     var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.undefined
     
     /** Specify width for splitter control.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
   }

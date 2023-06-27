@@ -391,42 +391,42 @@ object PivotClient {
   trait DataSource extends StObject {
     
     /** In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the columns section of the pivot client.
-      * @Default {[]}
+      * @default {[]}
       */
     var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from the OLAP database as string type.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw data source for the pivot client.
-      * @Default {null}
+      * @default {null}
       */
     var data: js.UndefOr[Any] = js.undefined
     
     /** Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft Excel) option in the client-mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI of the pivot client.
-      * @Default {[]}
+      * @default {[]}
       */
     var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Allows to set the page size and current page number for each axis on applying the paging.
-      * @Default {{}}
+      * @default {{}}
       */
     var pagerOptions: js.UndefOr[DataSourcePagerOptions] = js.undefined
     
     /** Sets the provider name for the pivot client to identify whether the provider is SSAS or Mondrian.
-      * @Default {ssas}
+      * @default {ssas}
       */
     var providerName: js.UndefOr[String] = js.undefined
     
@@ -435,17 +435,17 @@ object PivotClient {
     var reportName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be arranged in the rows section of the pivot client.
-      * @Default {[]}
+      * @default {[]}
       */
     var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** Allows to set the data source name to fetch the data from that.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items which supports calculation in the pivot client.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
@@ -520,7 +520,7 @@ object PivotClient {
   trait DataSourceColumn extends StObject {
     
     /** Allows you to filter the report by default using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
-      * @Default {[]}
+      * @default {[]}
       */
     var advancedFilter: js.UndefOr[js.Array[DataSourceColumnsAdvancedFilter]] = js.undefined
     
@@ -529,7 +529,7 @@ object PivotClient {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
-      * @Default {[]}
+      * @default {[]}
       */
     var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -542,7 +542,7 @@ object PivotClient {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
@@ -555,17 +555,17 @@ object PivotClient {
     var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field in the pivot grid.
-      * @Default {true}
+      * @default {true}
       */
     var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of members of the field.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -636,7 +636,7 @@ object PivotClient {
     var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform label filtering.
-      * @Default {none}
+      * @default {none}
       */
     var labelFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -649,7 +649,7 @@ object PivotClient {
     var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform value filtering.
-      * @Default {none}
+      * @default {none}
       */
     var valueFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -698,12 +698,12 @@ object PivotClient {
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -740,7 +740,7 @@ object PivotClient {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to the field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
@@ -771,12 +771,12 @@ object PivotClient {
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -805,22 +805,22 @@ object PivotClient {
   trait DataSourcePagerOptions extends StObject {
     
     /** Allows to set the page number in the categorical axis to be loaded by default.
-      * @Default {1}
+      * @default {1}
       */
     var categoricalCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of categorical columns to be displayed in each page on applying the paging.
-      * @Default {0}
+      * @default {0}
       */
     var categoricalPageSize: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the page number in the series axis to be loaded by default.
-      * @Default {1}
+      * @default {1}
       */
     var seriesCurrentPage: js.UndefOr[Double] = js.undefined
     
     /** Allows to set the number of series rows to be displayed in each page on applying the paging.
-      * @Default {0}
+      * @default {0}
       */
     var seriesPageSize: js.UndefOr[Double] = js.undefined
   }
@@ -855,7 +855,7 @@ object PivotClient {
   trait DataSourceRow extends StObject {
     
     /** Allows you to filter the report by using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
-      * @Default {[]}
+      * @default {[]}
       */
     var advancedFilter: js.UndefOr[js.Array[DataSourceRowsAdvancedFilter]] = js.undefined
     
@@ -864,7 +864,7 @@ object PivotClient {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of members need to be drilled down by default in the field.
-      * @Default {[]}
+      * @default {[]}
       */
     var drilledItems: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -877,7 +877,7 @@ object PivotClient {
     var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies the filter to the field members.
-      * @Default {null}
+      * @default {null}
       */
     var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
@@ -890,17 +890,17 @@ object PivotClient {
     var formatString: js.UndefOr[String] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
-      * @Default {false}
+      * @default {false}
       */
     var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/hides the sub-total of the field.
-      * @Default {true}
+      * @default {true}
       */
     var showSubTotal: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order for the field members.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
@@ -971,7 +971,7 @@ object PivotClient {
     var advancedFilterType: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the label filtering.
-      * @Default {none}
+      * @default {none}
       */
     var labelFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -984,7 +984,7 @@ object PivotClient {
     var name: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the operator to perform the value filtering.
-      * @Default {none}
+      * @default {none}
       */
     var valueFilterOperator: js.UndefOr[String] = js.undefined
     
@@ -1033,12 +1033,12 @@ object PivotClient {
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
-      * @Default {ej.PivotAnalysis.FilterType.Exclude}
+      * @default {ej.PivotAnalysis.FilterType.Exclude}
       */
     var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
-      * @Default {[]}
+      * @default {[]}
       */
     var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -1067,7 +1067,7 @@ object PivotClient {
   trait DataSourceValue extends StObject {
     
     /** Allows to set the axis name to place the measures items.
-      * @Default {rows}
+      * @default {rows}
       */
     var axis: js.UndefOr[String] = js.undefined
     
@@ -1096,17 +1096,17 @@ object PivotClient {
     var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field or not with the relational data source.
-      * @Default {false}
+      * @default {false}
       */
     var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** This holds the list of unique names of measures to bind them from the OLAP cube.
-      * @Default {[]}
+      * @default {[]}
       */
     var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
     
     /** Allows to set the type of the pivot grid summary calculation for the value field with the relational data source.
-      * @Default {ej.PivotAnalysis.SummaryType.Sum}
+      * @default {ej.PivotAnalysis.SummaryType.Sum}
       */
     var summaryType: js.UndefOr[SummaryType | String] = js.undefined
   }
@@ -1189,27 +1189,27 @@ object PivotClient {
   trait DisplaySettings extends StObject {
     
     /** Allows you to customize the display of the pivot chart and pivot grid widgets in the tabs or tiles.
-      * @Default {ej.PivotClient.ControlPlacement.Tab}
+      * @default {ej.PivotClient.ControlPlacement.Tab}
       */
     var controlPlacement: js.UndefOr[ControlPlacement | String] = js.undefined
     
     /** Allows you to set either the chart or grid as the start-up widget.
-      * @Default {ej.PivotClient.DefaultView.Grid}
+      * @default {ej.PivotClient.DefaultView.Grid}
       */
     var defaultView: js.UndefOr[DefaultView | String] = js.undefined
     
     /** Allows you to switch to full screen view of the pivot chart and the pivot grid from default view in the pivot client.
-      * @Default {false}
+      * @default {false}
       */
     var enableFullScreen: js.UndefOr[Boolean] = js.undefined
     
     /** Enables an option to enhance the space for the pivot grid and pivot chart by hiding the cube browser and the axis element builder.
-      * @Default {false}
+      * @default {false}
       */
     var enableTogglePanel: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the display mode (only chart/only grid/both) in the pivot client.
-      * @Default {ej.PivotClient.DisplayMode.ChartAndGrid}
+      * @default {ej.PivotClient.DisplayMode.ChartAndGrid}
       */
     var mode: js.UndefOr[DisplayMode | String] = js.undefined
   }
@@ -1372,7 +1372,7 @@ object PivotClient {
     var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the pivot client widget for binding the OLAP or relational data sources.
-      * @Default {ej.Pivot.AnalysisMode.Pivot}
+      * @default {ej.Pivot.AnalysisMode.Pivot}
       */
     var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
@@ -1397,37 +1397,37 @@ object PivotClient {
     var chartLoad: js.UndefOr[js.Function1[/* e */ ChartLoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the specific chart type for the pivot chart in the pivot client widget.
-      * @Default {ej.PivotChart.ChartTypes.Column}
+      * @default {ej.PivotChart.ChartTypes.Column}
       */
     var chartType: js.UndefOr[ChartTypes | String] = js.undefined
     
     /** Allows you to set the content for exporting the pivot client widget.
-      * @Default {ej.PivotClient.ClientExportMode.ChartAndGrid}
+      * @default {ej.PivotClient.ClientExportMode.ChartAndGrid}
       */
     var clientExportMode: js.UndefOr[ClientExportMode | String] = js.undefined
     
     /** Allows you to hide the cube browser and the axis element builder of the pivot client while initiating the widget.
-      * @Default {false}
+      * @default {false}
       */
     var collapseCubeBrowserByDefault: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the CSS class to the pivot client for achieving the custom theme.
-      * @Default {â€œâ€}
+      * @default {â€œâ€}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** An object is utilized to pass the additional information between the client-end and the service-end when the control functions are present in the server-mode.
-      * @Default {{}}
+      * @default {{}}
       */
     var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the data source for the pivot client widget, when it functions completely on the client-side.
-      * @Default {{}}
+      * @default {{}}
       */
     var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Allows you to customize the layout and appearance of the widget.
-      * @Default {{}}
+      * @default {{}}
       */
     var displaySettings: js.UndefOr[DisplaySettings] = js.undefined
     
@@ -1436,87 +1436,87 @@ object PivotClient {
     var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.undefined
     
     /** Enables the advanced filtering options such as value filtering, label filtering, and sorting for each dimensions when binding the OLAP data in the server mode.
-      * @Default {false}
+      * @default {false}
       */
     var enableAdvancedFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by clicking the value cell.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to get cell details in JSON format by double-clicking the value cell.
-      * @Default {false}
+      * @default {false}
       */
     var enableCellDoubleClick: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to export entire data instead of current page data, while paging option is enabled.
-      * @Default {false}
+      * @default {false}
       */
     var enableCompleteDataExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to refresh the control on-demand and not during the every UI operation.
-      * @Default {false}
+      * @default {false}
       */
     var enableDeferUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the drill-through feature which retrieves the raw items that are used to create a specific cell in the pivot grid.
-      * @Default {false}
+      * @default {false}
       */
     var enableDrillThrough: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the KPI elements in tree-view of the pivot client's cube browser.
-      * @Default {false}
+      * @default {false}
       */
     var enableKPI: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to save and load the reports in a customized way with the help of events.
-      * @Default {false}
+      * @default {false}
       */
     var enableLocalStorage: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the visibility of measure group selector drop-down in the cube browser.
-      * @Default {false}
+      * @default {false}
       */
     var enableMeasureGroups: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables paging in the member editor for viewing the large count of members in the pages.
-      * @Default {false}
+      * @default {false}
       */
     var enableMemberEditorPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/Disables sorting option in member editor dialog for the members of the respective field.
-      * @Default {false}
+      * @default {false}
       */
     var enableMemberEditorSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the paging for both the pivot chart and the pivot grid components for viewing the large data.
-      * @Default {false}
+      * @default {false}
       */
     var enablePaging: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to include the pivot tree map component as one of the chart types.
-      * @Default {false}
+      * @default {false}
       */
     var enablePivotTreeMap: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the layout of the pivot client from right to left.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the splitter option for resizing the elements in the control.
-      * @Default {false}
+      * @default {false}
       */
     var enableSplitter: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the virtual scrolling for both the pivot chart and pivot grid components for viewing the large data.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
-      * @Default {false}
+      * @default {false}
       */
     var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
@@ -1526,12 +1526,12 @@ object PivotClient {
     
     /** Sets the summary layout for the pivot grid. Following are the ways in which the summary can be positioned: normal summary (bottom), top summary, no summary, and Microsoft Excel
       * summary.
-      * @Default {ej.PivotGrid.Layout.Normal}
+      * @default {ej.PivotGrid.Layout.Normal}
       */
     var gridLayout: js.UndefOr[Layout | String] = js.undefined
     
     /** Allows you to enable the pivot clientâ€™s responsiveness in the browser layout.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1544,22 +1544,22 @@ object PivotClient {
     var loadReport: js.UndefOr[js.Function1[/* e */ LoadReportEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the localized language for the widget.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor.
-      * @Default {1000}
+      * @default {1000}
       */
     var maxNodeLimitInMemberEditor: js.UndefOr[Double] = js.undefined
     
     /** Allows you to set the number of members to be displayed in each page of the member editor on applying the paging in it.
-      * @Default {100}
+      * @default {100}
       */
     var memberEditorPageSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the mode for the pivot client widget to bind the data source in the server-side or the client-side.
-      * @Default {ej.Pivot.OperationalMode.ClientMode}
+      * @default {ej.Pivot.OperationalMode.ClientMode}
       */
     var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
@@ -1588,22 +1588,22 @@ object PivotClient {
     var schemaLoad: js.UndefOr[js.Function1[/* e */ SchemaLoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the custom name for methods at service-end, and it is communicated during the AJAX post.
-      * @Default {{}}
+      * @default {{}}
       */
     var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Allows you to load the saved report collection from the database.
-      * @Default {false}
+      * @default {false}
       */
     var showReportCollection: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to show a unique name on the pivot button.
-      * @Default {false}
+      * @default {false}
       */
     var showUniqueNameOnPivotButton: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the size of the pivot client control.
-      * @Default {Example:}
+      * @default {Example:}
       */
     var size: js.UndefOr[Any] = js.undefined
     
@@ -1612,7 +1612,7 @@ object PivotClient {
     var title: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the visibility of icons in the toolbar panel.
-      * @Default {{}}
+      * @default {{}}
       */
     var toolbarIconSettings: js.UndefOr[ToolbarIconSettings] = js.undefined
     
@@ -1629,7 +1629,7 @@ object PivotClient {
     var valueCellHyperlinkClick: js.UndefOr[js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, Unit]] = js.undefined
     
     /** Holds the necessary properties for value sorting.
-      * @Default {{}}
+      * @default {{}}
       */
     var valueSortSettings: js.UndefOr[ValueSortSettings] = js.undefined
   }
@@ -2056,117 +2056,117 @@ object PivotClient {
   trait ServiceMethodSettings extends StObject {
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report with the calculated member.
-      * @Default {CalculatedMember}
+      * @default {CalculatedMember}
       */
     var calculatedMember: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the entire report and widget, while changing the cube.
-      * @Default {CubeChanged}
+      * @default {CubeChanged}
       */
     var cubeChanged: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing the drill through operation in the data table.
-      * @Default {DrillThroughDataTable}
+      * @default {DrillThroughDataTable}
       */
     var drillThroughDataTable: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing the drill through operation.
-      * @Default {DrillThroughHierarchies}
+      * @default {DrillThroughHierarchies}
       */
     var drillThroughHierarchies: js.UndefOr[String] = js.undefined
     
     /** Allows to set the custom name for the service method responsible for exporting.
-      * @Default {Export}
+      * @default {Export}
       */
     var exportPivotClient: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to get the members for tree-view in the member-editor dialog.
-      * @Default {FetchMemberTreeNodes}
+      * @default {FetchMemberTreeNodes}
       */
     var fetchMemberTreeNodes: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for fetching the report names from the database.
-      * @Default {FetchReportListFromDB}
+      * @default {FetchReportListFromDB}
       */
     var fetchReportList: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report while filtering the members.
-      * @Default {FilterElement}
+      * @default {FilterElement}
       */
     var filterElement: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for initializing the pivot client.
-      * @Default {InitializeClient}
+      * @default {InitializeClient}
       */
     var initialize: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for loading a report collection from the database.
-      * @Default {LoadReportFromDB}
+      * @default {LoadReportFromDB}
       */
     var loadReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for retrieving the MDX query for the current report.
-      * @Default {GetMDXQuery}
+      * @default {GetMDXQuery}
       */
     var mdxQuery: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the tree-view in the cube browser, while changing the measure group.
-      * @Default {MeasureGroupChanged}
+      * @default {MeasureGroupChanged}
       */
     var measureGroupChanged: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to get the child members, on tree-view node expansion.
-      * @Default {MemberExpanded}
+      * @default {MemberExpanded}
       */
     var memberExpand: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report while dropping a node/split button in the axis element builder.
-      * @Default {NodeDropped}
+      * @default {NodeDropped}
       */
     var nodeDropped: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method while navigating between the pages in the paged pivot client.
-      * @Default {Paging}
+      * @default {Paging}
       */
     var paging: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to remove a report collection from the database.
-      * @Default {RemoveReportFromDB}
+      * @default {RemoveReportFromDB}
       */
     var removeDBReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible to update the report while removing the split button from the axis element builder.
-      * @Default {RemoveSplitButton}
+      * @default {RemoveSplitButton}
       */
     var removeSplitButton: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for renaming the report collection in the database.
-      * @Default {RenameReportInDB}
+      * @default {RenameReportInDB}
       */
     var renameDBReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for saving the report collection in the database.
-      * @Default {SaveReportToDB}
+      * @default {SaveReportToDB}
       */
     var saveReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for toggling the elements in the row and column axes.
-      * @Default {ToggleAxis}
+      * @default {ToggleAxis}
       */
     var toggleAxis: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for all the toolbar operations.
-      * @Default {ToolbarOperations}
+      * @default {ToolbarOperations}
       */
     var toolbarServices: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for updating the report collection.
-      * @Default {UpdateReport}
+      * @default {UpdateReport}
       */
     var updateReport: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method that is responsible for performing value sorting operation in the PivotClient.
-      * @Default {ValueSorting}
+      * @default {ValueSorting}
       */
     var valueSorting: js.UndefOr[String] = js.undefined
   }
@@ -2277,82 +2277,82 @@ object PivotClient {
   trait ToolbarIconSettings extends StObject {
     
     /** Allows you to set the visibility of Add Report icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableAddReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Calculated Member icon in the toolbar panel.
-      * @Default {false}
+      * @default {false}
       */
     var enableCalculatedMember: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Chart Types icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableChartTypes: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of DB Manipulation icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableDBManipulation: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to set the visibility of Defer Update icon in the toolbar panel.
-      * @Default {false}
+      * @default {false}
       */
     var enableDeferUpdate: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Excel Export icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableExcelExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to set the visibility of Full Screen icon in the toolbar panel.
-      * @Default {false}
+      * @default {false}
       */
     var enableFullScreen: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of MDX Query icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableMDXQuery: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of New Report icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableNewReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of PDF Export icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enablePdfExport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Remove Report icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableRemoveReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Rename Report icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableRenameReport: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Sort/Filter Column icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableSortOrFilterColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Sort/Filter Row icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableSortOrFilterRow: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Toggle Axis icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableToggleAxis: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the visibility of Word Export icon in the toolbar panel.
-      * @Default {true}
+      * @default {true}
       */
     var enableWordExport: js.UndefOr[Boolean] = js.undefined
   }
@@ -2535,7 +2535,7 @@ object PivotClient {
     var headerText: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the sorting order of values of the field.
-      * @Default {ej.PivotAnalysis.SortOrder.Ascending}
+      * @default {ej.PivotAnalysis.SortOrder.Ascending}
       */
     var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }

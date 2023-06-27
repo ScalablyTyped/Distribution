@@ -9,8 +9,6 @@ trait Gravity extends StObject {
   /**
     * The gravity scale factor.
     *
-    * @property scale
-    * @type {number}
     * @default 0.001
     */
   var scale: Double
@@ -18,8 +16,6 @@ trait Gravity extends StObject {
   /**
     * The gravity x component.
     *
-    * @property x
-    * @type {number}
     * @default 0
     */
   var x: Double
@@ -27,8 +23,6 @@ trait Gravity extends StObject {
   /**
     * The gravity y component.
     *
-    * @property y
-    * @type {number}
     * @default 1
     */
   var y: Double

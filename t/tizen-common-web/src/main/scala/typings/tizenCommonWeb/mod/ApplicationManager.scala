@@ -33,8 +33,8 @@ trait ApplicationManager extends StObject {
     *
     * @returns ID of the listener that can be used to remove the listener later.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if it fails to add a listener because of an unknown error.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if it fails to add a listener because of an unknown error.
     */
   def addAppInfoEventListener(eventCallback: ApplicationInformationEventCallback): Double = js.native
   
@@ -48,9 +48,9 @@ trait ApplicationManager extends StObject {
     *
     * @returns Listener id that can be used to remove the listener later.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if the application id parameter is an empty string.
-    * @throw WebAPIException with error type AbortError, if it fails to add a listener.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if the application id parameter is an empty string.
+    * @throws WebAPIException with error type AbortError, if it fails to add a listener.
     */
   def addAppStatusChangeListener(eventCallback: StatusEventCallback): Double = js.native
   def addAppStatusChangeListener(eventCallback: StatusEventCallback, appId: ApplicationId): Double = js.native
@@ -70,7 +70,7 @@ trait ApplicationManager extends StObject {
     * @param successCallback The method to call that returns a list of application information.
     * @param errorCallback The method to call when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def findAppControl(appControl: ApplicationControl, successCallback: FindAppControlSuccessCallback): Unit = js.native
   def findAppControl(
@@ -105,9 +105,9 @@ trait ApplicationManager extends StObject {
     *
     * @returns Array of certificate information of a specified application.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
     */
   def getAppCerts(): js.Array[ApplicationCertificate] = js.native
   def getAppCerts(id: ApplicationId): js.Array[ApplicationCertificate] = js.native
@@ -122,8 +122,8 @@ trait ApplicationManager extends StObject {
     *
     * @returns A data structure that lists running application details.
     *
-    * @throw WebAPIException with error type NotFoundError, if the application context is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if the application context cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the application context is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if the application context cannot be retrieved because of an unknown error.
     */
   def getAppContext(): ApplicationContext = js.native
   def getAppContext(contextId: ApplicationContextId): ApplicationContext = js.native
@@ -139,8 +139,8 @@ trait ApplicationManager extends StObject {
     *
     * @returns The information of an application.
     *
-    * @throw WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
     */
   def getAppInfo(): ApplicationInformation = js.native
   def getAppInfo(id: ApplicationId): ApplicationInformation = js.native
@@ -160,9 +160,9 @@ trait ApplicationManager extends StObject {
     * @returns Array of meta data of a specified application. If there are no meta data for a specified application,
     * an empty array is returned
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
     */
   def getAppMetaData(): js.Array[ApplicationMetaData] = js.native
   def getAppMetaData(id: ApplicationId): js.Array[ApplicationMetaData] = js.native
@@ -184,8 +184,8 @@ trait ApplicationManager extends StObject {
     *
     * @returns The shared directory URI of an application.
     *
-    * @throw WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the application is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
     */
   def getAppSharedURI(): String = js.native
   def getAppSharedURI(id: ApplicationId): String = js.native
@@ -202,7 +202,7 @@ trait ApplicationManager extends StObject {
     * @param successCallback The method to call when the invocation ends successfully.
     * @param errorCallback The method to call when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def getAppsContext(successCallback: ApplicationContextArraySuccessCallback): Unit = js.native
   def getAppsContext(successCallback: ApplicationContextArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -219,7 +219,7 @@ trait ApplicationManager extends StObject {
     * @param successCallback The method to call when the invocation ends successfully.
     * @param errorCallback The method to call when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def getAppsInfo(successCallback: ApplicationInformationArraySuccessCallback): Unit = js.native
   def getAppsInfo(successCallback: ApplicationInformationArraySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
@@ -231,7 +231,7 @@ trait ApplicationManager extends StObject {
     *
     * @returns The data structure that defines the current application.
     *
-    * @throw WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the application cannot be retrieved because of an unknown error.
     */
   def getCurrentApplication(): Application_ = js.native
   
@@ -253,8 +253,8 @@ trait ApplicationManager extends StObject {
     * @param successCallback The method to invoke when an application is killed successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def kill(contextId: ApplicationContextId): Unit = js.native
   def kill(contextId: ApplicationContextId, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -281,8 +281,8 @@ trait ApplicationManager extends StObject {
     * @param successCallback The method to call when the invocation ends successfully.
     * @param errorCallback The method to call when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def launch(id: ApplicationId): Unit = js.native
   def launch(id: ApplicationId, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -329,8 +329,8 @@ trait ApplicationManager extends StObject {
     * @param errorCallback The method to invoke when an error occurs.
     * @param replyCallback The method to invoke when the application gets back results from the launched application.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def launchAppControl(
     appControl: ApplicationControl,
@@ -347,8 +347,8 @@ trait ApplicationManager extends StObject {
     *
     * @param watchId An ID that identifies the listener
     *
-    * @throw WebAPIException with error type NotFoundError, if the listener is not found with the specified ID.
-    * @throw WebAPIException with error type UnknownError, if it fails to remove a listener because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the listener is not found with the specified ID.
+    * @throws WebAPIException with error type UnknownError, if it fails to remove a listener because of an unknown error.
     */
   def removeAppInfoEventListener(watchId: Double): Unit = js.native
   
@@ -361,7 +361,7 @@ trait ApplicationManager extends StObject {
     *
     * @param watchId An ID that identifies the listener.
     *
-    * @throw WebAPIException with error type AbortError, if it fails to remove listener.
+    * @throws WebAPIException with error type AbortError, if it fails to remove listener.
     */
   def removeAppStatusChangeListener(watchId: Double): Unit = js.native
 }

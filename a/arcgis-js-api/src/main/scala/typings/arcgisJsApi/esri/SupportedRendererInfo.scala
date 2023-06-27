@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SupportedRendererInfo extends StObject {
   
   /**
-    * The default renderer of the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#SupportedRendererInfo)
-    */
+  		 * The default renderer of the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#SupportedRendererInfo)
+  		 */
   var defaultRenderer: ClassBreaksRenderer | RasterColormapRenderer | UniqueValueRenderer | RasterStretchRenderer | VectorFieldRenderer | RasterShadedReliefRenderer | FlowRenderer
   
   /**
-    * A list of supported renderer types that may be applied to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#SupportedRendererInfo)
-    */
+  		 * A list of supported renderer types that may be applied to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#SupportedRendererInfo)
+  		 */
   var supportedTypes: js.Array[SupportedRendererType]
 }
 object SupportedRendererInfo {

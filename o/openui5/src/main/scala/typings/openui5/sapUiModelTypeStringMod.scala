@@ -142,8 +142,7 @@ object sapUiModelTypeStringMod {
     vValue: String,
       /**
       * The source type (the expected type of `vValue`); may be "boolean", "float", "int" or "string", or a type
-      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive
-      * type}
+      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}
       */
     sSourceType: String
     ): String = js.native
@@ -154,8 +153,7 @@ object sapUiModelTypeStringMod {
     vValue: Boolean,
       /**
       * The source type (the expected type of `vValue`); may be "boolean", "float", "int" or "string", or a type
-      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive
-      * type}
+      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}
       */
     sSourceType: String
     ): String = js.native
@@ -166,8 +164,7 @@ object sapUiModelTypeStringMod {
     vValue: Double,
       /**
       * The source type (the expected type of `vValue`); may be "boolean", "float", "int" or "string", or a type
-      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive
-      * type}
+      * with "boolean", "float", "int" or "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}
       */
     sSourceType: String
     ): String = js.native

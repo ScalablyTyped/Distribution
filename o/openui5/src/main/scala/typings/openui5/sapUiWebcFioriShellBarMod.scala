@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.TargetRef
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -11,6 +9,7 @@ import typings.openui5.sapUiWebcMainLibraryMod.IAvatar
 import typings.openui5.sapUiWebcMainLibraryMod.IButton
 import typings.openui5.sapUiWebcMainLibraryMod.IInput
 import typings.openui5.sapUiWebcMainLibraryMod.IListItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -163,13 +162,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit]
     ): this.type = js.native
     def attachCoPilotClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -194,7 +193,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit]
     ): this.type = js.native
     def attachCoPilotClick(
       /**
@@ -205,7 +204,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -226,13 +225,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit]
     ): this.type = js.native
     def attachLogoClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -257,7 +256,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit]
     ): this.type = js.native
     def attachLogoClick(
       /**
@@ -268,7 +267,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -290,13 +289,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit]
     ): this.type = js.native
     def attachMenuItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -322,7 +321,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit]
     ): this.type = js.native
     def attachMenuItemClick(
       /**
@@ -333,7 +332,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -355,13 +354,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit]
     ): this.type = js.native
     def attachNotificationsClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -387,7 +386,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit]
     ): this.type = js.native
     def attachNotificationsClick(
       /**
@@ -398,7 +397,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -421,13 +420,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit]
     ): this.type = js.native
     def attachProductSwitchClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -454,7 +453,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit]
     ): this.type = js.native
     def attachProductSwitchClick(
       /**
@@ -465,7 +464,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -486,13 +485,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit]
     ): this.type = js.native
     def attachProfileClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -517,7 +516,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit]
     ): this.type = js.native
     def attachProfileClick(
       /**
@@ -528,7 +527,7 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.ShellBar` itself
       */
@@ -594,13 +593,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit]
     ): this.type = js.native
     def detachCoPilotClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarCoPilotClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -618,13 +617,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit]
     ): this.type = js.native
     def detachLogoClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarLogoClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -643,13 +642,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit]
     ): this.type = js.native
     def detachMenuItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarMenuItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -668,13 +667,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit]
     ): this.type = js.native
     def detachNotificationsClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarNotificationsClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -693,13 +692,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit]
     ): this.type = js.native
     def detachProductSwitchClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProductSwitchClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -717,13 +716,13 @@ object sapUiWebcFioriShellBarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit]
     ): this.type = js.native
     def detachProfileClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ShellBarProfileClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -731,46 +730,52 @@ object sapUiWebcFioriShellBarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:coPilotClick coPilotClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireCoPilotClick(): this.type = js.native
-    def fireCoPilotClick(/**
+    def fireCoPilotClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): this.type = js.native
+    mParameters: ShellBar$CoPilotClickEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:logoClick logoClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLogoClick(): this.type = js.native
-    def fireLogoClick(/**
+    def fireLogoClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): this.type = js.native
+    mParameters: ShellBar$LogoClickEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:menuItemClick menuItemClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMenuItemClick(): this.type = js.native
-    def fireMenuItemClick(/**
+    def fireMenuItemClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: ShellBar$MenuItemClickEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:notificationsClick notificationsClick} to attached listeners.
       *
@@ -780,13 +785,15 @@ object sapUiWebcFioriShellBarMod {
       * @returns Whether or not to prevent the default action
       */
     def fireNotificationsClick(): Boolean = js.native
-    def fireNotificationsClick(/**
+    def fireNotificationsClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): Boolean = js.native
+    mParameters: ShellBar$NotificationsClickEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:productSwitchClick productSwitchClick} to attached listeners.
       *
@@ -796,23 +803,27 @@ object sapUiWebcFioriShellBarMod {
       * @returns Whether or not to prevent the default action
       */
     def fireProductSwitchClick(): Boolean = js.native
-    def fireProductSwitchClick(/**
+    def fireProductSwitchClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): Boolean = js.native
+    mParameters: ShellBar$ProductSwitchClickEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:profileClick profileClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireProfileClick(): this.type = js.native
-    def fireProfileClick(/**
+    def fireProfileClick(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: TargetRef): this.type = js.native
+    mParameters: ShellBar$ProfileClickEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibilityTexts accessibilityTexts}.
@@ -1263,6 +1274,168 @@ object sapUiWebcFioriShellBarMod {
     oStartButton: IButton): this.type = js.native
   }
   
+  trait ShellBar$CoPilotClickEventParameters extends StObject {
+    
+    /**
+      * dom ref of the activated element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$CoPilotClickEventParameters {
+    
+    inline def apply(): ShellBar$CoPilotClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$CoPilotClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$CoPilotClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait ShellBar$LogoClickEventParameters extends StObject {
+    
+    /**
+      * dom ref of the activated element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$LogoClickEventParameters {
+    
+    inline def apply(): ShellBar$LogoClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$LogoClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$LogoClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait ShellBar$MenuItemClickEventParameters extends StObject {
+    
+    /**
+      * DOM ref of the activated list item
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$MenuItemClickEventParameters {
+    
+    inline def apply(): ShellBar$MenuItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$MenuItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$MenuItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait ShellBar$NotificationsClickEventParameters extends StObject {
+    
+    /**
+      * dom ref of the activated element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$NotificationsClickEventParameters {
+    
+    inline def apply(): ShellBar$NotificationsClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$NotificationsClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$NotificationsClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait ShellBar$ProductSwitchClickEventParameters extends StObject {
+    
+    /**
+      * dom ref of the activated element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$ProductSwitchClickEventParameters {
+    
+    inline def apply(): ShellBar$ProductSwitchClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$ProductSwitchClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$ProductSwitchClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait ShellBar$ProfileClickEventParameters extends StObject {
+    
+    /**
+      * dom ref of the activated element
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object ShellBar$ProfileClickEventParameters {
+    
+    inline def apply(): ShellBar$ProfileClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ShellBar$ProfileClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBar$ProfileClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  type ShellBarCoPilotClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$CoPilotClickEventParameters]
+  
+  type ShellBarCoPilotClickEventParameters = ShellBar$CoPilotClickEventParameters
+  
+  type ShellBarLogoClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$LogoClickEventParameters]
+  
+  type ShellBarLogoClickEventParameters = ShellBar$LogoClickEventParameters
+  
+  type ShellBarMenuItemClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuItemClickEventParameters]
+  
+  type ShellBarMenuItemClickEventParameters = ShellBar$MenuItemClickEventParameters
+  
+  type ShellBarNotificationsClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsClickEventParameters]
+  
+  type ShellBarNotificationsClickEventParameters = ShellBar$NotificationsClickEventParameters
+  
+  type ShellBarProductSwitchClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitchClickEventParameters]
+  
+  type ShellBarProductSwitchClickEventParameters = ShellBar$ProductSwitchClickEventParameters
+  
+  type ShellBarProfileClickEvent = typings.openui5.sapUiBaseEventMod.default[ShellBar$ProfileClickEventParameters]
+  
+  type ShellBarProfileClickEventParameters = ShellBar$ProfileClickEventParameters
+  
   trait ShellBarSettings
     extends StObject
        with ControlSettings {
@@ -1280,7 +1453,12 @@ object sapUiWebcFioriShellBarMod {
     /**
       * Fired, when the co pilot is activated.
       */
-    var coPilotClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var coPilotClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$CoPilotClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the `sap.ui.webc.fiori.ShellBar` aditional items.
@@ -1300,13 +1478,23 @@ object sapUiWebcFioriShellBarMod {
     /**
       * Fired, when the logo is activated.
       */
-    var logoClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var logoClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$LogoClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired, when a menu item is activated **Note:** You can prevent closing of overflow popover by calling
       * `event.preventDefault()`.
       */
-    var menuItemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var menuItemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items displayed in menu after a click on the primary title.
@@ -1320,7 +1508,12 @@ object sapUiWebcFioriShellBarMod {
     /**
       * Fired, when the notification icon is activated.
       */
-    var notificationsClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var notificationsClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the `notificationsCount`, displayed in the notification icon top-right corner.
@@ -1338,7 +1531,12 @@ object sapUiWebcFioriShellBarMod {
       * Fired, when the product switch icon is activated. **Note:** You can prevent closing of overflow popover
       * by calling `event.preventDefault()`.
       */
-    var productSwitchClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var productSwitchClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitchClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * You can pass `sap.ui.webc.main.Avatar` to set the profile image/icon. If no profile slot is set - profile
@@ -1352,7 +1550,12 @@ object sapUiWebcFioriShellBarMod {
     /**
       * Fired, when the profile slot is present.
       */
-    var profileClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var profileClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProfileClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the `sap.ui.webc.main.Input`, that will be used as a search field.
@@ -1409,7 +1612,9 @@ object sapUiWebcFioriShellBarMod {
       
       inline def setAccessibilityTextsUndefined: Self = StObject.set(x, "accessibilityTexts", js.undefined)
       
-      inline def setCoPilotClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "coPilotClick", js.Any.fromFunction1(value))
+      inline def setCoPilotClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$CoPilotClickEventParameters] => Unit
+      ): Self = StObject.set(x, "coPilotClick", js.Any.fromFunction1(value))
       
       inline def setCoPilotClickUndefined: Self = StObject.set(x, "coPilotClick", js.undefined)
       
@@ -1423,13 +1628,17 @@ object sapUiWebcFioriShellBarMod {
       
       inline def setLogo(value: IAvatar): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      inline def setLogoClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "logoClick", js.Any.fromFunction1(value))
+      inline def setLogoClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$LogoClickEventParameters] => Unit
+      ): Self = StObject.set(x, "logoClick", js.Any.fromFunction1(value))
       
       inline def setLogoClickUndefined: Self = StObject.set(x, "logoClick", js.undefined)
       
       inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      inline def setMenuItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "menuItemClick", js.Any.fromFunction1(value))
+      inline def setMenuItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$MenuItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "menuItemClick", js.Any.fromFunction1(value))
       
       inline def setMenuItemClickUndefined: Self = StObject.set(x, "menuItemClick", js.undefined)
       
@@ -1441,7 +1650,9 @@ object sapUiWebcFioriShellBarMod {
       
       inline def setMenuItemsVarargs(value: IListItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
       
-      inline def setNotificationsClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "notificationsClick", js.Any.fromFunction1(value))
+      inline def setNotificationsClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$NotificationsClickEventParameters] => Unit
+      ): Self = StObject.set(x, "notificationsClick", js.Any.fromFunction1(value))
       
       inline def setNotificationsClickUndefined: Self = StObject.set(x, "notificationsClick", js.undefined)
       
@@ -1453,13 +1664,17 @@ object sapUiWebcFioriShellBarMod {
       
       inline def setPrimaryTitleUndefined: Self = StObject.set(x, "primaryTitle", js.undefined)
       
-      inline def setProductSwitchClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "productSwitchClick", js.Any.fromFunction1(value))
+      inline def setProductSwitchClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProductSwitchClickEventParameters] => Unit
+      ): Self = StObject.set(x, "productSwitchClick", js.Any.fromFunction1(value))
       
       inline def setProductSwitchClickUndefined: Self = StObject.set(x, "productSwitchClick", js.undefined)
       
       inline def setProfile(value: IAvatar): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      inline def setProfileClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "profileClick", js.Any.fromFunction1(value))
+      inline def setProfileClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ShellBar$ProfileClickEventParameters] => Unit
+      ): Self = StObject.set(x, "profileClick", js.Any.fromFunction1(value))
       
       inline def setProfileClickUndefined: Self = StObject.set(x, "profileClick", js.undefined)
       

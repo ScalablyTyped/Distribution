@@ -14,59 +14,59 @@ trait CIMMarkerPlacementAlongLineSameSize
      with MarkerPlacement {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * A value indicating whether to angle the marker to the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Where the pattern should end relative to the ending point of the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * Where the pattern should end relative to the ending point of the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var customEndingOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * How markers are placed at the end points of a line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * How markers are placed at the end points of a line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var endings: js.UndefOr[NoConstraint | WithMarkers | WithFullGap | WithHalfGap | Custom] = js.undefined
   
   /**
-    * The offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * The offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * Where the pattern should begin relative to the starting point of the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * Where the pattern should begin relative to the starting point of the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var offsetAlongLine: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The numeric pattern that defines the sequence of placed markers and the length of space between them.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * The numeric pattern that defines the sequence of placed markers and the length of space between them.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var placementTemplate: js.Array[Double]
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementAlongLineSameSize)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize

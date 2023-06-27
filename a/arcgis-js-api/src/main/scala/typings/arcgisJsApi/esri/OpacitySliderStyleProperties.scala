@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpacitySliderStyleProperties extends StObject {
   
   /**
-    * The color of the slider's track.
-    *
-    * @default new Color([0, 121, 193])
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
-    */
+  		 * The color of the slider's track.
+  		 *
+  		 * @default new Color([0, 121, 193])
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
+  		 */
   var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object OpacitySliderStyleProperties {

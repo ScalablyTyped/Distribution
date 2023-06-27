@@ -36,15 +36,15 @@ open class SearchFilter protected () extends StObject {
   /**
     * Specifies filter's search category parameter.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if keyword is null and new category value is not NO\_CATEGORY.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if keyword is null and new category value is not NO\_CATEGORY.
     */
   var category: MediaControllerSearchCategory = js.native
   
   /**
     * Specifies filter's content type parameter.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
     */
   var contentType: MediaControllerContentType = js.native
   
@@ -58,7 +58,7 @@ open class SearchFilter protected () extends StObject {
     *
     * @remark Keyword can only be null or empty if the category is set to NO\_CATEGORY.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if the category is not NO\_CATEGORY and the keyword is null.
+    * @throws WebAPIException with error type InvalidValuesError, if the category is not NO\_CATEGORY and the keyword is null.
     */
   var keyword: String | Null = js.native
 }

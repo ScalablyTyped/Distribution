@@ -1,7 +1,7 @@
 
 # Scala.js typings for lezer__highlight
 
-Typings are for version 1.1.0
+Typings are for version 1.1.6
 
 ## Library description:
 Highlighting system for Lezer parse trees

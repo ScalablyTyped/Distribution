@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean extends StObject {
   
-  var parameters: `540`
+  var parameters: `639`
   
   var requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean
 }
 object RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean {
   
-  inline def apply(parameters: `540`, requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean): RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean = {
+  inline def apply(parameters: `639`, requestBody: ContentApplicationjsonAllowedactionsEnabledBoolean): RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean]
   }
@@ -20,7 +20,7 @@ object RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `540`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `639`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAllowedactionsEnabledBoolean): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
   }

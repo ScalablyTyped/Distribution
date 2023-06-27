@@ -1,5 +1,6 @@
 package typings.braintreeWebDropIn.mod
 
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldsEvent
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.changeActiveView
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.noPaymentMethodRequestable
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.paymentMethodRequestable
@@ -15,6 +16,7 @@ trait Dropin extends StObject {
   
   def isPaymentMethodRequestable(): Boolean = js.native
   
+  def off(event: HostedFieldsStateEvents, handler: js.Function1[/* event */ HostedFieldsEvent, Unit]): Unit = js.native
   @JSName("off")
   def off_changeActiveView(event: changeActiveView, handler: js.Function1[/* payload */ ChangeActiveViewPayload, Unit]): Unit = js.native
   @JSName("off")
@@ -30,6 +32,7 @@ trait Dropin extends StObject {
     handler: js.Function1[/* payload */ PaymentOptionSelectedPayload, Unit]
   ): Unit = js.native
   
+  def on(event: HostedFieldsStateEvents, handler: js.Function1[/* event */ HostedFieldsEvent, Unit]): Unit = js.native
   @JSName("on")
   def on_changeActiveView(event: changeActiveView, handler: js.Function1[/* payload */ ChangeActiveViewPayload, Unit]): Unit = js.native
   @JSName("on")

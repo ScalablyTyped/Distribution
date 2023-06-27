@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond those of the regular HTMLElement interface it also has available to it by inheritance) for manipulating definition list (<dl>) elements. */
+/**
+  * Provides special properties (beyond those of the regular HTMLElement interface it also has available to it by inheritance) for manipulating definition list (<dl>) elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDListElement)
+  */
 @js.native
 trait HTMLDListElement
   extends StObject
@@ -21,7 +25,11 @@ trait HTMLDListElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDListElement/compact)
+    */
   /* standard dom */
   var compact: scala.Boolean = js.native
   

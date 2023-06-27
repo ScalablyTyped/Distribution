@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathBuildid extends StObject {
   
-  /** Get GitHub Pages build */
+  /**
+    * Get GitHub Pages build
+    * @description Gets information about a GitHub Pages build.
+    *
+    * A token with the `repo` scope is required. GitHub Apps must have the `pages:read` permission.
+    */
   var get: ParametersPathBuildid
 }
 object GetParametersPathBuildid {

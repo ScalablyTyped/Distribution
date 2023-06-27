@@ -17,65 +17,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldInfoProperties extends StObject {
   
   /**
-    * The field name as defined by the service or the name of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#fieldName)
-    */
+  		 * The field name as defined by the service or the name of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#fieldName)
+  		 */
   var fieldName: js.UndefOr[String] = js.undefined
   
   /**
-    * Class which provides formatting options for numerical or date fields and how they should display within a popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#format)
-    */
+  		 * Class which provides formatting options for numerical or date fields and how they should display within a popup.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#format)
+  		 */
   var format: js.UndefOr[FieldInfoFormatProperties] = js.undefined
   
   /**
-    * A Boolean determining whether users can edit this field.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#isEditable)
-    */
+  		 * A Boolean determining whether users can edit this field.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#isEditable)
+  		 */
   var isEditable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A string containing the field alias.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#label)
-    */
+  		 * A string containing the field alias.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#statisticType)
-    */
+  		 * Used in a `one:many` or `many:many` relationship to compute the statistics on the field to show in the popup.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#statisticType)
+  		 */
   var statisticType: js.UndefOr[count | sum | min | max | avg | stddev | `var`] = js.undefined
   
   /**
-    * A string determining what type of input box editors see when editing the field.
-    *
-    * @default text-box
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
-    */
+  		 * A string determining what type of input box editors see when editing the field.
+  		 *
+  		 * @default text-box
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#stringFieldOption)
+  		 */
   var stringFieldOption: js.UndefOr[`rich-text` | `text-area` | `text-box`] = js.undefined
   
   /**
-    * A string providing an editing hint for editors of the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#tooltip)
-    */
+  		 * A string providing an editing hint for editors of the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#tooltip)
+  		 */
   var tooltip: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the field is visible in the popup window.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#visible)
-    */
+  		 * Indicates whether the field is visible in the popup window.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object FieldInfoProperties {

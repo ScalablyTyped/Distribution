@@ -3,6 +3,8 @@ package typings.officeJs.Word
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.UpdateOptions
+import typings.officeJs.Word.ContentControlType.plainText
+import typings.officeJs.Word.ContentControlType.richText
 import typings.officeJs.Word.InsertLocation.before
 import typings.officeJs.Word.InsertLocation.replace
 import typings.officeJs.Word.Interfaces.ParagraphData
@@ -28,7 +30,9 @@ import typings.officeJs.officeJsStrings.Mixed
 import typings.officeJs.officeJsStrings.Next
 import typings.officeJs.officeJsStrings.Original
 import typings.officeJs.officeJsStrings.Page
+import typings.officeJs.officeJsStrings.PlainText
 import typings.officeJs.officeJsStrings.Replace
+import typings.officeJs.officeJsStrings.RichText
 import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.SectionContinuous
 import typings.officeJs.officeJsStrings.SectionEven
@@ -54,7 +58,7 @@ trait Paragraph
      with ClientObject {
   
   /**
-    * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+    * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -112,7 +116,7 @@ trait Paragraph
     * Gets the collection of endnotes in the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -125,7 +129,7 @@ trait Paragraph
   val fields: FieldCollection = js.native
   
   /**
-    * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -144,7 +148,7 @@ trait Paragraph
     * Gets the collection of footnotes in the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -155,6 +159,19 @@ trait Paragraph
     * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
+  
+  /**
+    * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
   
   /**
     * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
@@ -278,12 +295,19 @@ trait Paragraph
   def insertBreak(breakType: BreakType, insertLocation: before): Unit = js.native
   
   /**
-    * Wraps the Paragraph object with a rich text content control.
+    * Wraps the Paragraph object with a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+    *
+    * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
   def insertContentControl(): ContentControl = js.native
+  def insertContentControl(contentControlType: RichText | PlainText): ContentControl = js.native
+  def insertContentControl(contentControlType: plainText): ContentControl = js.native
+  def insertContentControl(contentControlType: richText): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
@@ -413,7 +437,7 @@ trait Paragraph
   val isListItem: Boolean = js.native
   
   /**
-    * Gets or sets the left indent value, in points, for the paragraph.
+    * Specifies the left indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -421,7 +445,7 @@ trait Paragraph
   var leftIndent: Double = js.native
   
   /**
-    * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+    * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -429,7 +453,7 @@ trait Paragraph
   var lineSpacing: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+    * Specifies the amount of spacing, in grid lines, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -437,7 +461,7 @@ trait Paragraph
   var lineUnitAfter: Double = js.native
   
   /**
-    * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+    * Specifies the amount of spacing, in grid lines, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -488,7 +512,7 @@ trait Paragraph
   def load(propertyNames: js.Array[String]): Paragraph = js.native
   
   /**
-    * Gets or sets the outline level for the paragraph.
+    * Specifies the outline level for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -552,7 +576,7 @@ trait Paragraph
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets or sets the right indent value, in points, for the paragraph.
+    * Specifies the right indent value, in points, for the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -595,7 +619,7 @@ trait Paragraph
   def set(properties: Paragraph): Unit = js.native
   
   /**
-    * Gets or sets the spacing, in points, after the paragraph.
+    * Specifies the spacing, in points, after the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -603,7 +627,7 @@ trait Paragraph
   var spaceAfter: Double = js.native
   
   /**
-    * Gets or sets the spacing, in points, before the paragraph.
+    * Specifies the spacing, in points, before the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -634,7 +658,7 @@ trait Paragraph
   def startNewList(): typings.officeJs.Word.List = js.native
   
   /**
-    * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -642,12 +666,12 @@ trait Paragraph
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.BuiltInStyleName, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
     * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.

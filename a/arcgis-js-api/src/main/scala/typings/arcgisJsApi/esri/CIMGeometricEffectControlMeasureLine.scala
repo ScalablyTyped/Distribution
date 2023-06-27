@@ -9,17 +9,17 @@ trait CIMGeometricEffectControlMeasureLine
      with CIMGeometricEffect {
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectControlMeasureLine)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectControlMeasureLine)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The style of effect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectControlMeasureLine)
-    */
+  		 * The style of effect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectControlMeasureLine)
+  		 */
   var rule: String
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectControlMeasureLine

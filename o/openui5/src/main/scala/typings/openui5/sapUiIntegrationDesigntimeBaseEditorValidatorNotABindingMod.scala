@@ -12,8 +12,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorNotABindingMod extends Short
   val default: NotABinding = js.native
   
   /**
-    * @SINCE 1.81
-    * @EXPERIMENTAL - 1.81
+    * @since 1.81
+    * @experimental - 1.81
     *
     * Validates if the provided value doesn't contain a binding.
     */

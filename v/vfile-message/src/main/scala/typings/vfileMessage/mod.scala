@@ -14,27 +14,44 @@ object mod {
   @js.native
   open class VFileMessage protected ()
     extends typings.vfileMessage.libMod.VFileMessage {
-    /**
-      * Create a message for `reason` at `place` from `origin`.
-      *
-      * When an error is passed in as `reason`, the `stack` is copied.
-      *
-      * @param {string | Error | VFileMessage} reason
-      *   Reason for message, uses the stack and message of the error if given.
-      *
-      *   > 👉 **Note**: you should use markdown.
-      * @param {Node | NodeLike | Position | Point | null | undefined} [place]
-      *   Place in file where the message occurred.
-      * @param {string | null | undefined} [origin]
-      *   Place in code where the message originates (example:
-      *   `'my-package:my-rule'` or `'my-rule'`).
-      * @returns
-      *   Instance of `VFileMessage`.
-      */
-    def this(
-      reason: String | js.Error | typings.vfileMessage.libMod.VFileMessage,
-      place: js.UndefOr[Node | NodeLike | Position | Point | Null],
-      origin: js.UndefOr[String | Null]
-    ) = this()
+    def this(cause: js.Error) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage) = this()
+    def this(reason: String) = this()
+    def this(cause: js.Error, origin: String) = this()
+    def this(cause: js.Error, parent: Node) = this()
+    def this(cause: js.Error, parent: NodeLike) = this()
+    def this(cause: js.Error, place: Point) = this()
+    def this(cause: js.Error, place: Position) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: Node) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: NodeLike) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, place: Point) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, place: Position) = this()
+    def this(reason: String, options: typings.vfileMessage.libMod.Options) = this()
+    def this(reason: String, origin: String) = this()
+    def this(reason: String, parent: Node) = this()
+    def this(reason: String, parent: NodeLike) = this()
+    def this(reason: String, place: Point) = this()
+    def this(reason: String, place: Position) = this()
+    def this(cause: js.Error, parent: Null, origin: String) = this()
+    def this(cause: js.Error, parent: Unit, origin: String) = this()
+    def this(cause: js.Error, parent: NodeLike, origin: String) = this()
+    def this(cause: js.Error, parent: Node, origin: String) = this()
+    def this(cause: js.Error, place: Point, origin: String) = this()
+    def this(cause: js.Error, place: Position, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: Null, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: Unit, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: NodeLike, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, parent: Node, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, place: Point, origin: String) = this()
+    def this(cause: typings.vfileMessage.libMod.VFileMessage, place: Position, origin: String) = this()
+    def this(reason: String, parent: Null, origin: String) = this()
+    def this(reason: String, parent: Unit, origin: String) = this()
+    def this(reason: String, parent: NodeLike, origin: String) = this()
+    def this(reason: String, parent: Node, origin: String) = this()
+    def this(reason: String, place: Point, origin: String) = this()
+    def this(reason: String, place: Position, origin: String) = this()
   }
+  
+  type Options = typings.vfileMessage.libMod.Options
 }

@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NavigatorContentUtils extends StObject {
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler)
+    */
   /* standard dom */
   def registerProtocolHandler(scheme: java.lang.String, url: java.lang.String): Unit = js.native
   def registerProtocolHandler(scheme: java.lang.String, url: URL): Unit = js.native

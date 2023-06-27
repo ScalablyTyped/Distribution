@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiModelOdataV4ValueListTypeMod {
   
   /**
-    * @SINCE 1.45.0
+    * @since 1.45.0
     *
     * Specifies the value list type of a property.
     * See:
@@ -30,7 +30,7 @@ object sapUiModelOdataV4ValueListTypeMod {
   @js.native
   sealed trait ValueListType extends StObject
   /**
-    * @SINCE 1.45.0
+    * @since 1.45.0
     *
     * Specifies the value list type of a property.
     * See:
@@ -41,7 +41,7 @@ object sapUiModelOdataV4ValueListTypeMod {
   object ValueListType extends StObject {
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * There is one enumeration of fixed values.
       */
@@ -51,7 +51,7 @@ object sapUiModelOdataV4ValueListTypeMod {
          with ValueListType
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * There is no value list.
       */
@@ -61,7 +61,7 @@ object sapUiModelOdataV4ValueListTypeMod {
          with ValueListType
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * There is a dynamic value list with multiple queries including selection criteria.
       */

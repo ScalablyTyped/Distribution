@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`21`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.EmptyIndicatorMode
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -23,8 +22,7 @@ object sapMObjectIdentifierMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object
-    * Identifier}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object Identifier}
     */
   open class default () extends ObjectIdentifier {
     def this(/**
@@ -145,7 +143,7 @@ object sapMObjectIdentifierMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Attaches event handler `fnFunction` to the {@link #event:titlePress titlePress} event of this `sap.m.ObjectIdentifier`.
       *
@@ -160,20 +158,20 @@ object sapMObjectIdentifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit]
     ): this.type = js.native
     def attachTitlePress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectIdentifier` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Attaches event handler `fnFunction` to the {@link #event:titlePress titlePress} event of this `sap.m.ObjectIdentifier`.
       *
@@ -193,7 +191,7 @@ object sapMObjectIdentifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit]
     ): this.type = js.native
     def attachTitlePress(
       /**
@@ -204,7 +202,7 @@ object sapMObjectIdentifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectIdentifier` itself
       */
@@ -212,7 +210,7 @@ object sapMObjectIdentifierMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Detaches event handler `fnFunction` from the {@link #event:titlePress titlePress} event of this `sap.m.ObjectIdentifier`.
       *
@@ -224,13 +222,13 @@ object sapMObjectIdentifierMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit]
     ): this.type = js.native
     def detachTitlePress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectIdentifierTitlePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -238,22 +236,23 @@ object sapMObjectIdentifierMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.26
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.26
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:titlePress titlePress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTitlePress(): this.type = js.native
-    def fireTitlePress(/**
+    def fireTitlePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: ObjectIdentifier$TitlePressEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -291,7 +290,7 @@ object sapMObjectIdentifierMod {
     def getBadgePeople(): Boolean = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Gets current value of property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -313,7 +312,7 @@ object sapMObjectIdentifierMod {
     def getText(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -336,7 +335,7 @@ object sapMObjectIdentifierMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Gets current value of property {@link #getTitleActive titleActive}.
       *
@@ -427,7 +426,7 @@ object sapMObjectIdentifierMod {
     bBadgePeople: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Sets a new value for property {@link #getEmptyIndicatorMode emptyIndicatorMode}.
       *
@@ -462,7 +461,7 @@ object sapMObjectIdentifierMod {
     sText: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -508,6 +507,29 @@ object sapMObjectIdentifierMod {
     bValue: Boolean): this.type = js.native
   }
   
+  trait ObjectIdentifier$TitlePressEventParameters extends StObject {
+    
+    /**
+      * DOM reference of the object identifier's title.
+      */
+    var domRef: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectIdentifier$TitlePressEventParameters {
+    
+    inline def apply(): ObjectIdentifier$TitlePressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectIdentifier$TitlePressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectIdentifier$TitlePressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
   trait ObjectIdentifierSettings
     extends StObject
        with ControlSettings {
@@ -545,7 +567,7 @@ object sapMObjectIdentifierMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.89
+      * @since 1.89
       *
       * Specifies if an empty indicator should be displayed when there is no text.
       */
@@ -559,7 +581,7 @@ object sapMObjectIdentifierMod {
     var text: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the element's text directionality with enumerated options. By default, the control inherits
       * text direction from the DOM.
@@ -574,7 +596,7 @@ object sapMObjectIdentifierMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Indicates if the ObjectIdentifier's title is clickable.
       */
@@ -583,11 +605,16 @@ object sapMObjectIdentifierMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Fires when the title is active and the user taps/clicks on it.
       */
-    var titlePress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var titlePress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectIdentifier$TitlePressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object ObjectIdentifierSettings {
     
@@ -639,11 +666,17 @@ object sapMObjectIdentifierMod {
       
       inline def setTitleActiveUndefined: Self = StObject.set(x, "titleActive", js.undefined)
       
-      inline def setTitlePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "titlePress", js.Any.fromFunction1(value))
+      inline def setTitlePress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectIdentifier$TitlePressEventParameters] => Unit
+      ): Self = StObject.set(x, "titlePress", js.Any.fromFunction1(value))
       
       inline def setTitlePressUndefined: Self = StObject.set(x, "titlePress", js.undefined)
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
+  
+  type ObjectIdentifierTitlePressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectIdentifier$TitlePressEventParameters]
+  
+  type ObjectIdentifierTitlePressEventParameters = ObjectIdentifier$TitlePressEventParameters
 }

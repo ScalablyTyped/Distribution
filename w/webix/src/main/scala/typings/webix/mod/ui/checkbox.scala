@@ -100,8 +100,8 @@ open class checkbox ()
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
   
-  def queryView(config: WebixCallback): obj | js.Array[Any] = js.native
-  def queryView(config: WebixCallback, mode: String): obj | js.Array[Any] = js.native
+  def queryView(config: WebixCallback): Any = js.native
+  def queryView(config: WebixCallback, mode: String): Any = js.native
   
   def refresh(): Unit = js.native
   
@@ -120,7 +120,9 @@ open class checkbox ()
   
   def setBottomText(text: String): Unit = js.native
   
+  def setValue(value: Boolean): Unit = js.native
   def setValue(value: Boolean, config: Any): Unit = js.native
+  def setValue(value: Double): Unit = js.native
   def setValue(value: Double, config: Any): Unit = js.native
   
   def setValueHere(value: String): Unit = js.native

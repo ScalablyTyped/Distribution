@@ -11,10 +11,10 @@ object esriWidgetsCoordinateConversionSupportConversionMod {
   @JSImport("esri/widgets/CoordinateConversion/support/Conversion", JSImport.Namespace)
   @js.native
   /**
-    * The Conversion class represents one of the [conversions](esri-widgets-CoordinateConversion.html#conversions) in the [Coordinate Conversion widget](esri-widgets-CoordinateConversion.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html)
-    */
+  		 * The Conversion class represents one of the [conversions](esri-widgets-CoordinateConversion.html#conversions) in the [Coordinate Conversion widget](esri-widgets-CoordinateConversion.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html)
+  		 */
   open class ^ ()
     extends StObject
        with Conversion {

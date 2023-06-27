@@ -6,15 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type extends StObject {
   
-  /**
-    * The type of the event that triggers this `leaveRow`
-    */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: String
 }
 object Type {
   
-  inline def apply(): Type = {
+  inline def apply(`type`: String): Type = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
@@ -22,7 +20,5 @@ object Type {
   implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

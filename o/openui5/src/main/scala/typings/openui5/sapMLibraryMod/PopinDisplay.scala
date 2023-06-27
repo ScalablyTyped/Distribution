@@ -34,7 +34,7 @@ object PopinDisplay extends StObject {
   /* "Inline" */ val Inline: typings.openui5.sapMLibraryMod.PopinDisplay.Inline & String = js.native
   
   /**
-    * @SINCE 1.28
+    * @since 1.28
     *
     * Inside the table popin, only the cell content will be visible.
     */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ol-mapbox-style" : "10.5.0"
+      "ol-mapbox-style" : "10.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ol-mapbox-style" : "10.5.0"
+      "ol-mapbox-style" : "10.6.0"
     }
   ],
   "compile-devDependencies" : [

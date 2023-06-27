@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerSourceProperties extends StObject {
   
   /**
-    * A unique identifying string that must match the `id` property of a feature layer in an associated map.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerId)
-    */
+  		 * A unique identifying string that must match the `id` property of a feature layer in an associated map.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerId)
+  		 */
   var layerId: js.UndefOr[String] = js.undefined
   
   /**
-    * A URL to a service that will be used for all queries against the layer.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerUrl)
-    */
+  		 * A URL to a service that will be used for all queries against the layer.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureLayerSource.html#layerUrl)
+  		 */
   var layerUrl: js.UndefOr[String] = js.undefined
 }
 object FeatureLayerSourceProperties {

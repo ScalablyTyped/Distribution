@@ -13,40 +13,40 @@ trait CIMGeometricEffectWave
      with CIMGeometricEffect {
   
   /**
-    * The distance perpendicular to a feature to display the curves for the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
-    */
+  		 * The distance perpendicular to a feature to display the curves for the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
+  		 */
   var amplitude: Double
   
   /**
-    * The distance along the line or polygon to display the curves for the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
-    */
+  		 * The distance along the line or polygon to display the curves for the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
+  		 */
   var period: Double
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The starting value for generating a random number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
-    */
+  		 * The starting value for generating a random number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
+  		 */
   var seed: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave
   
   /**
-    * The shape of the curves to be displayed along the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
-    */
+  		 * The shape of the curves to be displayed along the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMGeometricEffectWave)
+  		 */
   var waveform: Sinus | Square | Triangle | Random
 }
 object CIMGeometricEffectWave {

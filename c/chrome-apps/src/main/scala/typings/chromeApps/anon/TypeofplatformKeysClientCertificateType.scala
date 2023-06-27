@@ -36,8 +36,8 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * @param callback The public and private CryptoKey of a certificate which can only be used with *subleCrypto*.
     * @param callback.privateKey Might be *null* if this app does not have access to it.
     * @param callback.privateKey
-    * @see[WebCrypto's importKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey}
-    * @see[CryptoKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey}
+    * @see http://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey
+    * @see http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey
     */
   def getKeyPair(
     certificate: js.typedarray.ArrayBuffer,
@@ -62,7 +62,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * An implementation of WebCrypto's SubtleCrypto
     * that allows crypto operations on keys of client
     * certificates that are available to this app.
-    * @see[SubtleCrypto]{@link http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface}
+    * @see http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface
     */
   def subtleCrypto(): SubtleCrypto
   

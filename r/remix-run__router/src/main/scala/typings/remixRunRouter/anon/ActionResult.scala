@@ -1,6 +1,7 @@
 package typings.remixRunRouter.anon
 
 import typings.remixRunRouter.distUtilsMod.DataResult
+import typings.remixRunRouter.distUtilsMod.JsonValue
 import typings.remixRunRouter.distUtilsMod.Params
 import typings.remixRunRouter.distUtilsMod.V7FormMethod
 import typings.std.URL
@@ -26,9 +27,13 @@ trait ActionResult extends StObject {
   
   var formMethod: js.UndefOr[typings.remixRunRouter.distUtilsMod.FormMethod | V7FormMethod] = js.undefined
   
+  var json: js.UndefOr[JsonValue] = js.undefined
+  
   var nextParams: Params[String]
   
   var nextUrl: URL
+  
+  var text: js.UndefOr[String] = js.undefined
 }
 object ActionResult {
   
@@ -72,8 +77,18 @@ object ActionResult {
     
     inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
     
+    inline def setJson(value: JsonValue): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    
+    inline def setJsonNull: Self = StObject.set(x, "json", null)
+    
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    
     inline def setNextParams(value: Params[String]): Self = StObject.set(x, "nextParams", value.asInstanceOf[js.Any])
     
     inline def setNextUrl(value: URL): Self = StObject.set(x, "nextUrl", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

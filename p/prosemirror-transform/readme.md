@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-transform
 
-Typings are for version 1.7.1
+Typings are for version 1.7.3
 
 ## Library description:
 ProseMirror document transformations

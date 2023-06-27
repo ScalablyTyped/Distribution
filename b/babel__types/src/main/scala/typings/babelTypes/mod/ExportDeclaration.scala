@@ -15,7 +15,7 @@ trait ExportDeclaration
 object ExportDeclaration {
   
   inline def ExportAllDeclaration_(source: StringLiteral_): typings.babelTypes.mod.ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, attributes = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportAllDeclaration_]
   }
@@ -27,7 +27,7 @@ object ExportDeclaration {
   }
   
   inline def ExportNamedDeclaration_(specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]): typings.babelTypes.mod.ExportNamedDeclaration_ = {
-    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any], assertions = null, declaration = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, source = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any], assertions = null, attributes = null, declaration = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, source = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportNamedDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportNamedDeclaration_]
   }

@@ -11,10 +11,10 @@ object esriViewsViewAnimationMod {
   @JSImport("esri/views/ViewAnimation", JSImport.Namespace)
   @js.native
   /**
-    * Contains a [state](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state) property used for checking the state of the animation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html)
-    */
+  		 * Contains a [state](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state) property used for checking the state of the animation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html)
+  		 */
   open class ^ ()
     extends StObject
        with ViewAnimation {

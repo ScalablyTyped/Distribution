@@ -15,54 +15,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TraceParametersProperties extends StObject {
   
   /**
-    * The geodatabase version to execute the function against.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#gdbVersion)
-    */
+  		 * The geodatabase version to execute the function against.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The date/timestamp (in UTC) to execute the function at a given time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#moment)
-    */
+  		 * The date/timestamp (in UTC) to execute the function at a given time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#moment)
+  		 */
   var moment: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The globalId (UUID) of the named trace configuration persisted in the network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#namedTraceConfigurationGlobalId)
-    */
+  		 * The globalId (UUID) of the named trace configuration persisted in the network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#namedTraceConfigurationGlobalId)
+  		 */
   var namedTraceConfigurationGlobalId: js.UndefOr[String] = js.undefined
   
   /**
-    * The spatial reference that should be used to project the [aggregated geometries](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html) returned by the trace (if applicable).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#outSpatialReference)
-    */
+  		 * The spatial reference that should be used to project the [aggregated geometries](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-AggregatedGeometry.html) returned by the trace (if applicable).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
-  var resultTypes: js.UndefOr[js.Array[Any]] = js.undefined
+  /**
+  		 * Parameter specifying the types of results to return after running a trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#resultTypes)
+  		 */
+  var resultTypes: js.UndefOr[js.Array[ResultTypeJSON]] = js.undefined
   
   /**
-    * Defines the properties of a trace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceConfiguration)
-    */
-  var traceConfiguration: js.UndefOr[TraceConfiguration] = js.undefined
+  		 * Defines the properties of a trace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceConfiguration)
+  		 */
+  var traceConfiguration: js.UndefOr[UNTraceConfiguration] = js.undefined
   
   /**
-    * The list of starting points and barriers that will define where the trace starts and stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceLocations)
-    */
+  		 * The list of starting points and barriers that will define where the trace starts and stops.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceLocations)
+  		 */
   var traceLocations: js.UndefOr[js.Array[TraceLocationProperties]] = js.undefined
   
   /**
-    * The trace type defined in this trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceType)
-    */
+  		 * The trace type defined in this trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-TraceParameters.html#traceType)
+  		 */
   var traceType: js.UndefOr[
     connected | upstream | downstream | `shortest-path` | subnetwork | `subnetwork-controllers` | loops | isolation
   ] = js.undefined
@@ -93,13 +98,13 @@ object TraceParametersProperties {
     
     inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    inline def setResultTypes(value: js.Array[Any]): Self = StObject.set(x, "resultTypes", value.asInstanceOf[js.Any])
+    inline def setResultTypes(value: js.Array[ResultTypeJSON]): Self = StObject.set(x, "resultTypes", value.asInstanceOf[js.Any])
     
     inline def setResultTypesUndefined: Self = StObject.set(x, "resultTypes", js.undefined)
     
-    inline def setResultTypesVarargs(value: Any*): Self = StObject.set(x, "resultTypes", js.Array(value*))
+    inline def setResultTypesVarargs(value: ResultTypeJSON*): Self = StObject.set(x, "resultTypes", js.Array(value*))
     
-    inline def setTraceConfiguration(value: TraceConfiguration): Self = StObject.set(x, "traceConfiguration", value.asInstanceOf[js.Any])
+    inline def setTraceConfiguration(value: UNTraceConfiguration): Self = StObject.set(x, "traceConfiguration", value.asInstanceOf[js.Any])
     
     inline def setTraceConfigurationUndefined: Self = StObject.set(x, "traceConfiguration", js.undefined)
     

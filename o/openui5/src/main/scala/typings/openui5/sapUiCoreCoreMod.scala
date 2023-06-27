@@ -1,10 +1,9 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
-import typings.openui5.anon.Controls
-import typings.openui5.anon.ElementException
 import typings.openui5.anon.Exception
-import typings.openui5.anon.Name
+import typings.openui5.anon.Id
+import typings.openui5.anon.NewValue
 import typings.openui5.anon.Url
 import typings.openui5.sapUiCoreConfigurationMod.Configuration
 import typings.openui5.sapUiCoreLibraryMod.ID
@@ -37,8 +36,8 @@ object sapUiCoreCoreMod extends Shortcut {
     * With methods of the Core framework you can {@link #attachInit execute code} after the framework has been
     * initialized. It provides access to the {@link #getConfiguration configuration} and exposes events that
     * an application or a control can register to (e.g. {@link #event:localizationChanged localizationChanged},
-    * {@link #event:parseError parseError}, {@link #event:validationError validationError}, {@link #event:formatError
-    * formatError}, {@link #event:validationSuccess validationSuccess}).
+    * {@link #event:parseError parseError}, {@link #event:validationError validationError}, {@link #event:formatError formatError},
+    * {@link #event:validationSuccess validationSuccess}).
     *
     * Example:
     * ```javascript
@@ -181,7 +180,7 @@ object sapUiCoreCoreMod extends Shortcut {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.13.2
+      * @since 1.13.2
       *
       * Registers a given function that is executed after the framework has been initialized.
       *
@@ -189,7 +188,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * been initialized already, it will be called immediately.
       *
       * More information about the initialization process and the steps it consists of can be found in the documentation
-      * topic "{@link topic:91f2c9076f4d1014b6dd926db0e91070 Initialization Process}".
+      * topic "{@link https://ui5.sap.com/#/topic/91f2c9076f4d1014b6dd926db0e91070 Initialization Process}".
       */
     def attachInit(/**
       * Function to be after initialization of the framework
@@ -202,7 +201,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * Registers a given function that is executed after the framework has been initialized.
       *
       * The method is executed only once and only if the framework has not been initialized already. This could
-      * be checked by calling {@link #isInitialized}, but in most cases it is more convenient to use {@link #attachInit}
+      * be checked by calling {@link #isInitialized}, but in most cases it is more convenient to use {@link #attachInit }
       * instead. This guarantees that the given function is executed exactly once, independent of the state of
       * the framework.
       */
@@ -212,7 +211,7 @@ object sapUiCoreCoreMod extends Shortcut {
     fnFunction: js.Function): Unit = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.61) - Use `IntervalTrigger.addListener()` from "sap/ui/core/IntervalTrigger" module.
       *
       * Registers a listener to the central interval timer.
@@ -461,8 +460,8 @@ object sapUiCoreCoreMod extends Shortcut {
     ): this.type = js.native
     
     /**
-      * Returns a list of all controls with a field group ID. See {@link sap.ui.core.Control#checkFieldGroupIds
-      * Control.prototype.checkFieldGroupIds} for a description of the `vFieldGroupIds` parameter.
+      * Returns a list of all controls with a field group ID. See {@link sap.ui.core.Control#checkFieldGroupIds Control.prototype.checkFieldGroupIds }
+      * for a description of the `vFieldGroupIds` parameter.
       *
       * @returns The list of controls with matching field group IDs
       */
@@ -485,8 +484,8 @@ object sapUiCoreCoreMod extends Shortcut {
       *
       * When the element has been created from a declarative source (e.g. XMLView), that source might have used
       * a shorter, non-unique local ID. A search for such a local ID cannot be executed with this method. It
-      * can only be executed on the corresponding scope (e.g. on an XMLView instance), by using the {@link sap.ui.core.mvc.View#byId
-      * View#byId} method of that scope.
+      * can only be executed on the corresponding scope (e.g. on an XMLView instance), by using the {@link sap.ui.core.mvc.View#byId View#byId }
+      * method of that scope.
       *
       * @returns Element with the given ID or `undefined`
       */
@@ -635,13 +634,13 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name
+    vComponent: Id
     ): typings.openui5.sapUiCoreComponentMod.default | js.Promise[typings.openui5.sapUiCoreComponentMod.default] = js.native
     def createComponent(
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -651,7 +650,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -665,7 +664,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -683,7 +682,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -701,7 +700,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -715,7 +714,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -733,7 +732,7 @@ object sapUiCoreCoreMod extends Shortcut {
       /**
       * name of the component to import or object containing all needed parameters
       */
-    vComponent: Name,
+    vComponent: Id,
       /**
       * the URL to load the component from
       */
@@ -817,7 +816,7 @@ object sapUiCoreCoreMod extends Shortcut {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.61) - Use `IntervalTrigger.removeListener()` from "sap/ui/core/IntervalTrigger"
       * module.
       *
@@ -1004,7 +1003,7 @@ object sapUiCoreCoreMod extends Shortcut {
     ): js.Function = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:formatError formatError} to attached listeners.
       *
@@ -1017,7 +1016,7 @@ object sapUiCoreCoreMod extends Shortcut {
     oParameters: Exception): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:parseError parseError} to attached listeners.
       *
@@ -1027,10 +1026,10 @@ object sapUiCoreCoreMod extends Shortcut {
     def fireParseError(/**
       * Parameters to pass along with the event.
       */
-    oParameters: ElementException): this.type = js.native
+    oParameters: NewValue): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:validationError validationError} to attached listeners.
       *
@@ -1040,10 +1039,10 @@ object sapUiCoreCoreMod extends Shortcut {
     def fireValidationError(/**
       * Parameters to pass along with the event.
       */
-    oParameters: ElementException): this.type = js.native
+    oParameters: NewValue): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:validationSuccess validationSuccess} to attached listeners.
       *
@@ -1121,7 +1120,7 @@ object sapUiCoreCoreMod extends Shortcut {
     sId: ID): js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
-      * @SINCE 1.8.0
+      * @since 1.8.0
       *
       * Returns the event bus.
       *
@@ -1287,7 +1286,7 @@ object sapUiCoreCoreMod extends Shortcut {
     /**
       * Returns a map of library info objects for all currently loaded libraries, keyed by their names.
       *
-      * The structure of the library info objects matches the structure of the info object that the {@link #initLibrary}
+      * The structure of the library info objects matches the structure of the info object that the {@link #initLibrary }
       * method expects. Only property names documented with `initLibrary` should be accessed, any additional
       * properties might change or disappear in future. When a property does not exists, its default value (as
       * documented with `initLibrary`) should be assumed.
@@ -1300,7 +1299,7 @@ object sapUiCoreCoreMod extends Shortcut {
     def getLoadedLibraries(): Record[String, js.Object] = js.native
     
     /**
-      * @SINCE 1.33.0
+      * @since 1.33.0
       *
       * Returns the active `MessageManager` instance.
       */
@@ -1339,8 +1338,7 @@ object sapUiCoreCoreMod extends Shortcut {
     def getRenderManager(): typings.openui5.sapUiCoreRenderManagerMod.default = js.native
     
     /**
-      * @deprecated (since 1.95) - Please use {@link module:sap/ui/core/ComponentSupport} instead. See also {@link
-      * topic:82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
+      * @deprecated (since 1.95) - Please use {@link module:sap/ui/core/ComponentSupport} instead. See also {@link topic:82a0fcecc3cb427c91469bc537ebdddf Declarative API for Initial Components}.
       *
       * Returns the instance of the root component (if exists).
       *
@@ -1360,8 +1358,8 @@ object sapUiCoreCoreMod extends Shortcut {
     def getStaticAreaRef(): Element = js.native
     
     /**
-      * @deprecated (since 1.29.1) - Require 'sap/ui/core/tmpl/Template' and use {@link sap.ui.core.tmpl.Template.byId
-      * Template.byId} instead.
+      * @deprecated (since 1.29.1) - Require 'sap/ui/core/tmpl/Template' and use {@link sap.ui.core.tmpl.Template.byId Template.byId }
+      * instead.
       *
       * Returns the registered template for the given id, if any.
       *
@@ -1464,27 +1462,27 @@ object sapUiCoreCoreMod extends Shortcut {
       * While analyzing the `oLibInfo`, the framework takes some additional actions:
       *
       *
-      * 	 - If the info object contains a list of `interfaces`, they will be registered with the {@link sap.ui.base.DataType}
-      * 			class to make them available as aggregation types in managed objects.
+      * 	 - If the info object contains a list of `interfaces`, they will be registered with the {@link sap.ui.base.DataType }
+      *     class to make them available as aggregation types in managed objects.
       *
       *
-      * 	 - If the object contains a list of `controls` or `elements`, {@link sap.ui.lazyRequire lazy stubs}
-      * 			will be created for their constructor as well as for their static `extend` and `getMetadata` methods.
+      * 	 - If the object contains a list of `controls` or `elements`, {@link sap.ui.lazyRequire lazy stubs }
+      *     will be created for their constructor as well as for their static `extend` and `getMetadata` methods.
       *  **Note:** Future versions might abandon the concept of lazy stubs as it requires synchronous XMLHttpRequests
       * which have been deprecated (see {@link http://xhr.spec.whatwg.org}). To be on the safe side, productive
       * applications should always require any modules that they directly depend on.
       *
       *
       * 	 - With the `noLibraryCSS` property, the library can be marked as 'theming-free'. Otherwise, the framework
-      * 			will add a <link> tag to the page's head, pointing to the library's theme-specific stylesheet.
-      * 			The creation of such a <link> tag can be suppressed with the {@link sap.ui.core.Configuration global
-      * 			configuration option} `preloadLibCss`. It can contain a list of library names for which no stylesheet
-      * 			should be included. This is e.g. useful when an application merges the CSS for multiple libraries and
-      * 			already loaded the resulting stylesheet.
+      *     will add a <link> tag to the page's head, pointing to the library's theme-specific stylesheet.
+      *     The creation of such a <link> tag can be suppressed with the {@link sap.ui.core.Configuration global configuration option }
+      *     `preloadLibCss`. It can contain a list of library names for which no stylesheet should be included. This
+      *     is e.g. useful when an application merges the CSS for multiple libraries and already loaded the resulting
+      *     stylesheet.
       *
       *
       * 	 - If a list of library `dependencies` is specified in the info object, those libraries will be loaded
-      * 			synchronously by `initLibrary`.
+      *     synchronously by `initLibrary`.
       *  **Note:** Dependencies between libraries don't have to be modeled as AMD dependencies. Only when enums
       * or types from an additional library are used in the coding of the `library.js` module, the library should
       * be additionally listed in the AMD dependencies.
@@ -1512,7 +1510,7 @@ object sapUiCoreCoreMod extends Shortcut {
     def initLibrary(/**
       * Info object for the library
       */
-    oLibInfo: Controls): js.UndefOr[js.Object] = js.native
+    oLibInfo: LibraryInfo): js.UndefOr[js.Object] = js.native
     
     /**
       * Returns true if the Core has already been initialized. This means that instances of RenderManager etc.
@@ -1537,7 +1535,7 @@ object sapUiCoreCoreMod extends Shortcut {
     def isMobile(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks whether the given DOM element is the root of the static area.
       *
@@ -1630,7 +1628,7 @@ object sapUiCoreCoreMod extends Shortcut {
     def loadLibrary(/**
       * Name of the library to load
       */
-    sLibrary: String): js.Object | js.Promise[js.Object] = js.native
+    sLibrary: String): LibraryInfo | js.Promise[LibraryInfo] = js.native
     def loadLibrary(
       /**
       * Name of the library to load
@@ -1640,7 +1638,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * URL to load the library from or the async flag or a complex configuration object
       */
     vUrl: String
-    ): js.Object | js.Promise[js.Object] = js.native
+    ): LibraryInfo | js.Promise[LibraryInfo] = js.native
     def loadLibrary(
       /**
       * Name of the library to load
@@ -1650,7 +1648,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * URL to load the library from or the async flag or a complex configuration object
       */
     vUrl: Boolean
-    ): js.Object | js.Promise[js.Object] = js.native
+    ): LibraryInfo | js.Promise[LibraryInfo] = js.native
     def loadLibrary(
       /**
       * Name of the library to load
@@ -1660,7 +1658,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * URL to load the library from or the async flag or a complex configuration object
       */
     vUrl: Url
-    ): js.Object | js.Promise[js.Object] = js.native
+    ): LibraryInfo | js.Promise[LibraryInfo] = js.native
     
     /**
       * Locks the Core. No browser events are dispatched to the controls.
@@ -1686,7 +1684,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * @deprecated (since 1.73) - Plugins never have been meant as a public offering, but were intended for
       * internal usage only. They unfortunately allow access to all internals of the Core and therefore break
       * encapsulation and hinder evolution of the Core. The most common use case of accessing the set of all
-      * controls/elements or all components can now be addressed by using the APIs {@link sap.ui.core.Element.registry}
+      * controls/elements or all components can now be addressed by using the APIs {@link sap.ui.core.Element.registry }
       * or {@link sap.ui.core.Component.registry}, respectively. Future refactorings of the Core will only take
       * existing plugins in the OpenUI5 repository into account.
       *
@@ -1694,7 +1692,7 @@ object sapUiCoreCoreMod extends Shortcut {
       *
       * Plugin object need to implement two methods:
       * 	 - `startPlugin(oCore)`: will be invoked, when the Plugin should start (as parameter the reference to
-      * 			the Core will be provided
+      *     the Core will be provided
       * 	 - `stopPlugin()`: will be invoked, when the Plugin should stop
       */
     def registerPlugin(/**
@@ -1783,7 +1781,7 @@ object sapUiCoreCoreMod extends Shortcut {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.10
+      * @since 1.10
       *
       * Defines the root directory from below which UI5 should load the theme with the given name. Optionally
       * allows restricting the setting to parts of a theme covering specific control libraries.
@@ -1866,7 +1864,7 @@ object sapUiCoreCoreMod extends Shortcut {
     bForceUpdate: Boolean
     ): this.type = js.native
     /**
-      * @SINCE 1.10
+      * @since 1.10
       *
       * Defines the root directory from below which UI5 should load the theme with the given name. Optionally
       * allows restricting the setting to parts of a theme covering specific control libraries.
@@ -1952,7 +1950,7 @@ object sapUiCoreCoreMod extends Shortcut {
       * @deprecated (since 1.73) - Plugins never have been meant as a public offering, but were intended for
       * internal usage only. They unfortunately allow access to all internals of the Core and therefore break
       * encapsulation and hinder evolution of the Core. The most common use case of accessing the set of all
-      * controls/elements or all components can now be addressed by using the APIs {@link sap.ui.core.Element.registry}
+      * controls/elements or all components can now be addressed by using the APIs {@link sap.ui.core.Element.registry }
       * or {@link sap.ui.core.Component.registry}, respectively. Future refactorings of the Core will only take
       * existing plugins in the OpenUI5 repository into account.
       *
@@ -1962,6 +1960,111 @@ object sapUiCoreCoreMod extends Shortcut {
       * reference to a Plugin object
       */
     oPlugin: js.Object): Unit = js.native
+  }
+  
+  trait LibraryInfo extends StObject {
+    
+    /**
+      * Names of control types that this library provides; names are in dot notation (e.g. "sap.ui.core.ComponentContainer")
+      */
+    var controls: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * List of libraries that this library depends on; names are in dot notation (e.g. "sap.ui.core")
+      */
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Names of element types that this library provides (excluding controls); names are in dot notation (e.g.
+      * "sap.ui.core.Item")
+      */
+    var elements: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Potential extensions of the library metadata; structure not defined by the UI5 core framework.
+      */
+    var extensions: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    /**
+      * List of names of interface types that this library provides; names are in dot notation (e.g. "sap.ui.core.PopupInterface")
+      */
+    var interfaces: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Name of the library; when given it must match the name by which the library has been loaded
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates whether the library doesn't provide/use theming. When set to true, no library.css will be loaded
+      * for this library
+      */
+    var noLibraryCSS: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * List of names of types that this library provides; names are in dot notation (e.g. "sap.ui.core.CSSSize")
+      */
+    var types: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Version of the library
+      */
+    var version: String
+  }
+  object LibraryInfo {
+    
+    inline def apply(version: String): LibraryInfo = {
+      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LibraryInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryInfo] (val x: Self) extends AnyVal {
+      
+      inline def setControls(value: js.Array[String]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      
+      inline def setControlsVarargs(value: String*): Self = StObject.set(x, "controls", js.Array(value*))
+      
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
+      
+      inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      
+      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
+      
+      inline def setExtensions(value: Record[String, Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setInterfaces(value: js.Array[String]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+      
+      inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
+      
+      inline def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setNoLibraryCSS(value: Boolean): Self = StObject.set(x, "noLibraryCSS", value.asInstanceOf[js.Any])
+      
+      inline def setNoLibraryCSSUndefined: Self = StObject.set(x, "noLibraryCSS", js.undefined)
+      
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = Core

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintResponse extends StObject {
   
   /**
-    * URL pointing to the location of the generated printout of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html#PrintResponse)
-    */
+  		 * URL pointing to the location of the generated printout of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-print.html#PrintResponse)
+  		 */
   var url: String
 }
 object PrintResponse {

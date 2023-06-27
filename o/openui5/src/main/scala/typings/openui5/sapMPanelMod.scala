@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Expand
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.PanelAccessibleRole
@@ -141,7 +140,7 @@ object sapMPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Attaches event handler `fnFunction` to the {@link #event:expand expand} event of this `sap.m.Panel`.
       *
@@ -156,20 +155,20 @@ object sapMPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit]
     ): this.type = js.native
     def attachExpand(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Panel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Attaches event handler `fnFunction` to the {@link #event:expand expand} event of this `sap.m.Panel`.
       *
@@ -189,7 +188,7 @@ object sapMPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit]
     ): this.type = js.native
     def attachExpand(
       /**
@@ -200,7 +199,7 @@ object sapMPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Panel` itself
       */
@@ -215,7 +214,7 @@ object sapMPanelMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys the headerToolbar in the aggregation {@link #getHeaderToolbar headerToolbar}.
       *
@@ -224,7 +223,7 @@ object sapMPanelMod {
     def destroyHeaderToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Destroys the infoToolbar in the aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -233,7 +232,7 @@ object sapMPanelMod {
     def destroyInfoToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Detaches event handler `fnFunction` from the {@link #event:expand expand} event of this `sap.m.Panel`.
       *
@@ -245,13 +244,13 @@ object sapMPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit]
     ): this.type = js.native
     def detachExpand(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PanelExpandEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -259,8 +258,8 @@ object sapMPanelMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.22
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.22
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:expand expand} to attached listeners.
       *
@@ -270,10 +269,10 @@ object sapMPanelMod {
     def fireExpand(/**
       * Parameters to pass along with the event
       */
-    mParameters: Expand): this.type = js.native
+    mParameters: Panel$ExpandEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets current value of property {@link #getAccessibleRole accessibleRole}.
       *
@@ -287,7 +286,7 @@ object sapMPanelMod {
     def getAccessibleRole(): PanelAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PanelAccessibleRole * / any */ String) = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -308,7 +307,7 @@ object sapMPanelMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Gets current value of property {@link #getExpandAnimation expandAnimation}.
       *
@@ -322,7 +321,7 @@ object sapMPanelMod {
     def getExpandAnimation(): Boolean = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getExpandable expandable}.
       *
@@ -337,7 +336,7 @@ object sapMPanelMod {
     def getExpandable(): Boolean = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Gets current value of property {@link #getExpanded expanded}.
       *
@@ -364,7 +363,7 @@ object sapMPanelMod {
     def getHeaderText(): String = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getHeaderToolbar headerToolbar}.
       *
@@ -386,7 +385,7 @@ object sapMPanelMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets content of aggregation {@link #getInfoToolbar infoToolbar}.
       *
@@ -468,7 +467,7 @@ object sapMPanelMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets a new value for property {@link #getAccessibleRole accessibleRole}.
       *
@@ -494,7 +493,7 @@ object sapMPanelMod {
     sAccessibleRole: PanelAccessibleRole): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -520,7 +519,7 @@ object sapMPanelMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Sets a new value for property {@link #getExpandAnimation expandAnimation}.
       *
@@ -540,7 +539,7 @@ object sapMPanelMod {
     bExpandAnimation: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Sets a new value for property {@link #getExpandable expandable}.
       *
@@ -589,7 +588,7 @@ object sapMPanelMod {
     sHeaderText: String): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets the aggregated {@link #getHeaderToolbar headerToolbar}.
       *
@@ -618,7 +617,7 @@ object sapMPanelMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets the aggregated {@link #getInfoToolbar infoToolbar}.
       *
@@ -647,12 +646,48 @@ object sapMPanelMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Panel$ExpandEventParameters extends StObject {
+    
+    /**
+      * If the panel will expand, this is true. If the panel will collapse, this is false.
+      */
+    var expand: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Identifies whether the event is triggered by an user interaction or by calling setExpanded.
+      */
+    var triggeredByInteraction: js.UndefOr[Boolean] = js.undefined
+  }
+  object Panel$ExpandEventParameters {
+    
+    inline def apply(): Panel$ExpandEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Panel$ExpandEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panel$ExpandEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      
+      inline def setTriggeredByInteraction(value: Boolean): Self = StObject.set(x, "triggeredByInteraction", value.asInstanceOf[js.Any])
+      
+      inline def setTriggeredByInteractionUndefined: Self = StObject.set(x, "triggeredByInteraction", js.undefined)
+    }
+  }
+  
+  type PanelExpandEvent = typings.openui5.sapUiBaseEventMod.default[Panel$ExpandEventParameters]
+  
+  type PanelExpandEventParameters = Panel$ExpandEventParameters
+  
   trait PanelSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * This property is used to set the accessible aria role of the Panel. Depending on the usage you can change
       * the role from the default `Form` to `Region` or `Complementary`.
@@ -662,7 +697,7 @@ object sapMPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * This property is used to set the background color of the Panel. Depending on the theme you can change
       * the state of the background from "Solid" over "Translucent" to "Transparent".
@@ -679,14 +714,19 @@ object sapMPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Indicates that the panel will expand or collapse.
       */
-    var expand: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var expand: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Panel$ExpandEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.26
+      * @since 1.26
       *
       * Indicates whether the transition between the expanded and the collapsed state of the control is animated.
       * By default the animation is enabled.
@@ -696,7 +736,7 @@ object sapMPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Specifies whether the control is expandable. This allows for collapsing or expanding the infoToolbar
       * (if available) and content of the Panel. Note: If expandable is set to false, the Panel will always be
@@ -707,7 +747,7 @@ object sapMPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.22
+      * @since 1.22
       *
       * Indicates whether the Panel is expanded or not. If expanded is set to true, then both the infoToolbar
       * (if available) and the content are rendered. If expanded is set to false, then only the headerText or
@@ -724,7 +764,7 @@ object sapMPanelMod {
     var headerText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * This aggregation allows the use of a custom Toolbar as header for the Panel. The "headerToolbar" is visible
       * in both expanded and collapsed state. Use it when you want to add extra controls for user interactions
@@ -740,7 +780,7 @@ object sapMPanelMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * This aggregation allows the use of a custom Toolbar as information bar for the Panel. The "infoToolbar"
       * is placed below the header and is visible only in expanded state. Use it when you want to show extra
@@ -785,7 +825,7 @@ object sapMPanelMod {
       
       inline def setContentVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "content", js.Array(value*))
       
-      inline def setExpand(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+      inline def setExpand(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Panel$ExpandEventParameters] => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
       inline def setExpandAnimation(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "expandAnimation", value.asInstanceOf[js.Any])
       

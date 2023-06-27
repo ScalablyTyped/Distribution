@@ -1,32 +1,39 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.commit_author_email_pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `432` extends StObject {
   
-  var parameters: js.UndefOr[Negate] = js.undefined
-  
-  /** @enum {string} */
-  var `type`: commit_author_email_pattern
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+  ]
 }
 object `432` {
   
-  inline def apply(): `432` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+    ]
+  ): `432` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("commit_author_email_pattern")
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`432`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `432`] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: Negate): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
-    
-    inline def setType(value: commit_author_email_pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['referrer-traffic'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

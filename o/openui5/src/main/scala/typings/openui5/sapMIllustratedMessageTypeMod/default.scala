@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @SINCE 1.98
+  * @since 1.98
   *
   * Available `Illustration` types for the {@link sap.f.IllustratedMessage} control.
   */

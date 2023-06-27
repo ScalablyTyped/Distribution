@@ -4,24 +4,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This WebRTC API interface manages the reception and decoding of data for a MediaStreamTrack on an RTCPeerConnection. */
+/**
+  * This WebRTC API interface manages the reception and decoding of data for a MediaStreamTrack on an RTCPeerConnection.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver)
+  */
 trait RTCRtpReceiver extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getContributingSources) */
   /* standard dom */
   def getContributingSources(): js.Array[RTCRtpContributingSource]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getParameters) */
   /* standard dom */
   def getParameters(): RTCRtpReceiveParameters
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getStats) */
   /* standard dom */
   def getStats(): js.Promise[RTCStatsReport]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/getSynchronizationSources) */
   /* standard dom */
   def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/track) */
   /* standard dom */
   val track: MediaStreamTrack
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver/transport) */
   /* standard dom */
   val transport: RTCDtlsTransport | Null
 }

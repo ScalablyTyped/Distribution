@@ -27,30 +27,30 @@ trait AreasAndLengthsParameters
      with JSONSupport {
   
   /**
-    * The area unit in which areas of polygons will be calculated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#areaUnit)
-    */
+  		 * The area unit in which areas of polygons will be calculated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#areaUnit)
+  		 */
   var areaUnit: acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards` = js.native
   
   /**
-    * Defines the type of calculation for the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#calculationType)
-    */
+  		 * Defines the type of calculation for the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#calculationType)
+  		 */
   var calculationType: planar | geodesic | `preserve-shape` = js.native
   
   /**
-    * The length unit in which perimeters of polygons will be calculated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#lengthUnit)
-    */
+  		 * The length unit in which perimeters of polygons will be calculated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#lengthUnit)
+  		 */
   var lengthUnit: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards = js.native
   
   /**
-    * Polygon geometries for which to compute areas and lengths.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#polygons)
-    */
+  		 * Polygon geometries for which to compute areas and lengths.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html#polygons)
+  		 */
   var polygons: js.Array[Polygon] = js.native
 }

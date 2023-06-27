@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentPropertiesUpdateData extends StObject {
   
   /**
-    * Gets or sets the author of the document.
+    * Specifies the author of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -16,7 +16,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var author: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the category of the document.
+    * Specifies the category of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -24,7 +24,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var category: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the comments of the document.
+    * Specifies the comments of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -32,7 +32,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var comments: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the company of the document.
+    * Specifies the company of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -40,7 +40,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var company: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the format of the document.
+    * Specifies the format of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -48,7 +48,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the keywords of the document.
+    * Specifies the keywords of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -56,7 +56,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var keywords: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the manager of the document.
+    * Specifies the manager of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -64,7 +64,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var manager: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the subject of the document.
+    * Specifies the subject of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -72,7 +72,7 @@ trait DocumentPropertiesUpdateData extends StObject {
   var subject: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets the title of the document.
+    * Specifies the title of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -18,9 +18,9 @@ trait DataControlManager extends StObject {
     *
     * @returns The local _DataControlConsumerObject_.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getDataControlConsumer(providerId: String, dataId: String, `type`: DataType): DataControlConsumerObject
 }

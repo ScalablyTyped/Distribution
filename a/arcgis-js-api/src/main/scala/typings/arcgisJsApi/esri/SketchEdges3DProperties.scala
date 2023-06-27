@@ -10,10 +10,10 @@ trait SketchEdges3DProperties
      with Edges3DProperties {
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SketchEdges3D.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SketchEdges3D.html#type)
+  		 */
   var `type`: js.UndefOr[sketch] = js.undefined
 }
 object SketchEdges3DProperties {

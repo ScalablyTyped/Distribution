@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.LayerList")
 @js.native
 /**
-  * The LayerList widget provides a way to display a list of layers, and switch on/off their visibility.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
-  */
+		 * The LayerList widget provides a way to display a list of layers, and switch on/off their visibility.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
+		 */
 open class LayerList ()
   extends StObject
      with typings.arcgisJsApi.esri.LayerList {

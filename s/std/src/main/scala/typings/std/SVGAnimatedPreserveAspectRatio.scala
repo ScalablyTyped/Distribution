@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Used for attributes of type SVGPreserveAspectRatio which can be animated. */
+/**
+  * Used for attributes of type SVGPreserveAspectRatio which can be animated.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedPreserveAspectRatio)
+  */
 trait SVGAnimatedPreserveAspectRatio extends StObject {
   
   /* standard dom */

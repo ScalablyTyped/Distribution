@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait websceneApplicationPropertiesProperties extends StObject {
   
   /**
-    * View-specific properties of application and UI elements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html#viewing)
-    */
+  		 * View-specific properties of application and UI elements.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-ApplicationProperties.html#viewing)
+  		 */
   var viewing: js.UndefOr[ViewingProperties] = js.undefined
 }
 object websceneApplicationPropertiesProperties {

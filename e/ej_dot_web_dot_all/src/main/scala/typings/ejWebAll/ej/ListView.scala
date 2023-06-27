@@ -678,7 +678,7 @@ object ListView {
     var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the items to the ListView control.
-      * @Default {null}
+      * @default {null}
       */
     var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.ListView.AjaxSettings] = js.undefined
     
@@ -688,12 +688,12 @@ object ListView {
     
     /** Loads the list data on demand via scrolling behavior to improve the applicationâ€™s performance. There are two ways to load data which can be defined using virtualScrollMode
       * property.
-      * @Default {false}
+      * @default {false}
       */
     var allowVirtualScrolling: js.UndefOr[Boolean] = js.undefined
     
     /** Set the index values to be selected on initial loading. This works only when enableCheckMark is set true.
-      * @Default {[]}
+      * @default {[]}
       */
     var checkedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -703,37 +703,37 @@ object ListView {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Contains the list of data for generating the ListView items.
-      * @Default {[]}
+      * @default {[]}
       */
     var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies whether to load AJAX content while selecting item.
-      * @Default {false}
+      * @default {false}
       */
     var enableAjax: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable caching the content.
-      * @Default {false}
+      * @default {false}
       */
     var enableCache: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable check mark for the item.
-      * @Default {false}
+      * @default {false}
       */
     var enableCheckMark: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to enable the filtering feature to filter the item.
-      * @Default {false}
+      * @default {false}
       */
     var enableFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to group the list item.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupList: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to maintain the current model value to browser cookies for state maintenance. While refresh the page, the model value will get apply to the control from browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
@@ -742,27 +742,27 @@ object ListView {
     var fieldSettings: js.UndefOr[FieldSettings] = js.undefined
     
     /** Specifies the text of the back button in the header.
-      * @Default {null}
+      * @default {null}
       */
     var headerBackButtonText: js.UndefOr[String] = js.undefined
     
     /** Specifies the title of the header.
-      * @Default {Title}
+      * @default {Title}
       */
     var headerTitle: js.UndefOr[String] = js.undefined
     
     /** Specifies the height.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the number of items to be fetched on each scroll. Note: This property works only with Virtual scrolling.
-      * @Default {5}
+      * @default {5}
       */
     var itemRequestCount: js.UndefOr[Double] = js.undefined
     
     /** Contains the array of items to be added in ListView.
-      * @Default {[]}
+      * @default {[]}
       */
     var items: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -787,57 +787,57 @@ object ListView {
     var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
     
     /** Specifies whether to retain the selection of the item.
-      * @Default {false}
+      * @default {false}
       */
     var persistSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to prevent the selection of the item.
-      * @Default {false}
+      * @default {false}
       */
     var preventSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the query to execute with the datasource.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies whether need to render the control with the template contents.
-      * @Default {false}
+      * @default {false}
       */
     var renderTemplate: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the index of item which need to be in selected state initially while loading.
-      * @Default {0}
+      * @default {0}
       */
     var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether to show the header.
-      * @Default {true}
+      * @default {true}
       */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show the back button header.
-      * @Default {false}
+      * @default {false}
       */
     var showHeaderBackButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies ID of the element contains template contents.
-      * @Default {null}
+      * @default {null}
       */
     var templateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
-      * @Default {5}
+      * @default {5}
       */
     var totalItemsCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
-      * @Default {ej.VirtualScrollMode.Normal}
+      * @default {ej.VirtualScrollMode.Normal}
       */
     var virtualScrollMode: js.UndefOr[VirtualScrollMode | String] = js.undefined
     
     /** Specifies the width.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

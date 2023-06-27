@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphemer" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphemer" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

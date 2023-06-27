@@ -134,6 +134,8 @@ import typings.kendoUi.kendo.ui.FlatColorPicker
 import typings.kendoUi.kendo.ui.FlatColorPickerOptions
 import typings.kendoUi.kendo.ui.FloatingActionButton
 import typings.kendoUi.kendo.ui.FloatingActionButtonOptions
+import typings.kendoUi.kendo.ui.FontIcon
+import typings.kendoUi.kendo.ui.FontIconOptions
 import typings.kendoUi.kendo.ui.Form
 import typings.kendoUi.kendo.ui.FormOptions
 import typings.kendoUi.kendo.ui.Gantt
@@ -220,6 +222,8 @@ import typings.kendoUi.kendo.ui.Spreadsheet
 import typings.kendoUi.kendo.ui.SpreadsheetOptions
 import typings.kendoUi.kendo.ui.Stepper
 import typings.kendoUi.kendo.ui.StepperOptions
+import typings.kendoUi.kendo.ui.SvgIcon
+import typings.kendoUi.kendo.ui.SvgIconOptions
 import typings.kendoUi.kendo.ui.TextArea
 import typings.kendoUi.kendo.ui.TextAreaOptions
 import typings.kendoUi.kendo.ui.TextBox
@@ -298,6 +302,7 @@ import typings.kendoUi.kendoUiStrings.kendoFilter
 import typings.kendoUi.kendoUiStrings.kendoFilterMenu
 import typings.kendoUi.kendoUiStrings.kendoFlatColorPicker
 import typings.kendoUi.kendoUiStrings.kendoFloatingActionButton
+import typings.kendoUi.kendoUiStrings.kendoFontIcon
 import typings.kendoUi.kendoUiStrings.kendoForm
 import typings.kendoUi.kendoUiStrings.kendoGantt
 import typings.kendoUi.kendoUiStrings.kendoGrid
@@ -368,6 +373,7 @@ import typings.kendoUi.kendoUiStrings.kendoSplitter
 import typings.kendoUi.kendoUiStrings.kendoSpreadsheet
 import typings.kendoUi.kendoUiStrings.kendoStepper
 import typings.kendoUi.kendoUiStrings.kendoStockChart
+import typings.kendoUi.kendoUiStrings.kendoSvgIcon
 import typings.kendoUi.kendoUiStrings.kendoSwitch
 import typings.kendoUi.kendoUiStrings.kendoTabStrip
 import typings.kendoUi.kendoUiStrings.kendoTextArea
@@ -487,6 +493,8 @@ trait JQuery extends StObject {
   def data_kendoFlatColorPicker(key: kendoFlatColorPicker): js.UndefOr[FlatColorPicker] = js.native
   @JSName("data")
   def data_kendoFloatingActionButton(key: kendoFloatingActionButton): js.UndefOr[FloatingActionButton] = js.native
+  @JSName("data")
+  def data_kendoFontIcon(key: kendoFontIcon): js.UndefOr[FontIcon] = js.native
   @JSName("data")
   def data_kendoForm(key: kendoForm): js.UndefOr[Form] = js.native
   @JSName("data")
@@ -627,6 +635,8 @@ trait JQuery extends StObject {
   def data_kendoStepper(key: kendoStepper): js.UndefOr[Stepper] = js.native
   @JSName("data")
   def data_kendoStockChart(key: kendoStockChart): js.UndefOr[StockChart] = js.native
+  @JSName("data")
+  def data_kendoSvgIcon(key: kendoSvgIcon): js.UndefOr[SvgIcon] = js.native
   @JSName("data")
   def data_kendoSwitch(key: kendoSwitch): js.UndefOr[typings.kendoUi.kendo.ui.Switch] = js.native
   @JSName("data")
@@ -803,6 +813,9 @@ trait JQuery extends StObject {
   
   def kendoFloatingActionButton(): JQuery = js.native
   def kendoFloatingActionButton(options: FloatingActionButtonOptions): JQuery = js.native
+  
+  def kendoFontIcon(): JQuery = js.native
+  def kendoFontIcon(options: FontIconOptions): JQuery = js.native
   
   def kendoForm(): JQuery = js.native
   def kendoForm(options: FormOptions): JQuery = js.native
@@ -1013,6 +1026,9 @@ trait JQuery extends StObject {
   
   def kendoStockChart(): JQuery = js.native
   def kendoStockChart(options: StockChartOptions): JQuery = js.native
+  
+  def kendoSvgIcon(): JQuery = js.native
+  def kendoSvgIcon(options: SvgIconOptions): JQuery = js.native
   
   def kendoSwitch(): JQuery = js.native
   def kendoSwitch(options: typings.kendoUi.kendo.ui.SwitchOptions): JQuery = js.native

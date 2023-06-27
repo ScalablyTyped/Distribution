@@ -23,7 +23,7 @@ object sapUiCoreUiareaMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Enabled or disables logging of certain event types.
       *
@@ -102,8 +102,23 @@ object sapUiCoreUiareaMod {
       * @returns Metadata object describing this class
       */
     inline def getMetadata(): typings.openui5.sapUiBaseManagedObjectMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseManagedObjectMetadataMod.default]
+    
+    /**
+      * @since 1.107
+      *
+      * Registry of all `sap.ui.core.Element`s that currently exist.
+      */
+    @JSImport("sap/ui/core/UIArea", "default.registry")
+    @js.native
+    def registry: typings.openui5.sapUiCoreUiareaMod.registry = js.native
+    inline def registry_=(x: typings.openui5.sapUiCoreUiareaMod.registry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registry")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * @since 1.107
+    *
+    * Registry of all `sap.ui.core.Element`s that currently exist.
+    */
   @js.native
   trait registry extends StObject {
     
@@ -303,7 +318,7 @@ object sapUiCoreUiareaMod {
     def getRootNode(): Element = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns this UI area. Needed to stop recursive calls from an element to its parent.
       *
@@ -374,7 +389,7 @@ object sapUiCoreUiareaMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks whether the control is still valid (is in the DOM)
       *

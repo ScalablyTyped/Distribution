@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@atlaskit/ds-lib" : "2.2.1"
+      "@atlaskit/ds-lib" : "2.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@atlaskit/ds-lib" : "2.2.1"
+      "@atlaskit/ds-lib" : "2.2.3"
     }
   ],
   "compile-devDependencies" : [

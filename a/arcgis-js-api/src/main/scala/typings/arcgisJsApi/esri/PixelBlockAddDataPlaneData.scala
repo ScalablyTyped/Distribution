@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PixelBlockAddDataPlaneData extends StObject {
   
   /**
-    * A two dimensional array representing the pixels to add.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
-    */
+  		 * A two dimensional array representing the pixels to add.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
+  		 */
   var pixels: js.Array[js.Array[Double]]
   
   /**
-    * An array of objects containing numeric statistical properties.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
-    */
+  		 * An array of objects containing numeric statistical properties.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#addData)
+  		 */
   var statistics: js.Array[Any]
 }
 object PixelBlockAddDataPlaneData {

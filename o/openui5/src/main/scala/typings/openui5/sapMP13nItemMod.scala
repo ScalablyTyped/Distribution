@@ -122,7 +122,7 @@ object sapMP13nItemMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAggregationRole aggregationRole}.
       *
@@ -142,7 +142,7 @@ object sapMP13nItemMod {
     def getColumnKey(): String = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Gets current value of property {@link #getDescription description}.
       *
@@ -153,7 +153,7 @@ object sapMP13nItemMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getFormatSettings formatSettings}.
       *
@@ -178,7 +178,7 @@ object sapMP13nItemMod {
     def getFormatSettings(): js.Object = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getHref href}.
       *
@@ -230,7 +230,7 @@ object sapMP13nItemMod {
     def getPrecision(): String = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Gets current value of property {@link #getPress press}.
       *
@@ -241,7 +241,7 @@ object sapMP13nItemMod {
     def getPress(): js.Object = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getRole role}.
       *
@@ -292,7 +292,7 @@ object sapMP13nItemMod {
     def getType(): String = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets current value of property {@link #getTypeInstance typeInstance}.
       *
@@ -304,7 +304,7 @@ object sapMP13nItemMod {
     def getTypeInstance(): js.Object = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getValues values}.
       *
@@ -334,7 +334,7 @@ object sapMP13nItemMod {
     def getWidth(): String = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAggregationRole aggregationRole}.
       *
@@ -366,7 +366,7 @@ object sapMP13nItemMod {
     sColumnKey: String): this.type = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Sets a new value for property {@link #getDescription description}.
       *
@@ -383,7 +383,7 @@ object sapMP13nItemMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getFormatSettings formatSettings}.
       *
@@ -414,7 +414,7 @@ object sapMP13nItemMod {
     oFormatSettings: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getHref href}.
       *
@@ -496,7 +496,7 @@ object sapMP13nItemMod {
     sPrecision: String): this.type = js.native
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Sets a new value for property {@link #getPress press}.
       *
@@ -513,7 +513,7 @@ object sapMP13nItemMod {
     oPress: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getRole role}.
       *
@@ -594,7 +594,7 @@ object sapMP13nItemMod {
     sType: String): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Sets a new value for property {@link #getTypeInstance typeInstance}.
       *
@@ -612,7 +612,7 @@ object sapMP13nItemMod {
     oTypeInstance: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getValues values}.
       *
@@ -665,7 +665,7 @@ object sapMP13nItemMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Defines aggregation role
       */
@@ -677,14 +677,14 @@ object sapMP13nItemMod {
     var columnKey: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Defines additional information of the link.
       */
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * A JSON object containing the formatSettings which will be used to pass additional type/format settings
       * for the entered value. if type==time or date or datetime the object will be used for the DateFormatter,
@@ -706,7 +706,7 @@ object sapMP13nItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Defines href of a link.
       */
@@ -738,7 +738,7 @@ object sapMP13nItemMod {
     var precision: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.46.0
+      * @since 1.46.0
       *
       * Defines press handler of a link.
       */
@@ -747,7 +747,7 @@ object sapMP13nItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Defines role. The role is reflected in the manner how the dimension will influence the chart layout.
       */
@@ -774,7 +774,7 @@ object sapMP13nItemMod {
     var `type`: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * data type instance of the column. Can be used instead of the type, precision, scale and formatSettings
       * properties
@@ -784,7 +784,7 @@ object sapMP13nItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * the array of values for type bool. e.g. ["", "Off", "On"]. The first entry can be empty (used to blank
       * the value field). Next value represent the false value, last entry the true value.

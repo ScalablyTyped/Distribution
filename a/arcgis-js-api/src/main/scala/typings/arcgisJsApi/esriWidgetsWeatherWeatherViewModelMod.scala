@@ -11,10 +11,10 @@ object esriWidgetsWeatherWeatherViewModelMod {
   @JSImport("esri/widgets/Weather/WeatherViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Weather](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather-WeatherViewModel.html)
-    */
+  		 * Provides the logic for the [Weather](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Weather-WeatherViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with WeatherViewModel {

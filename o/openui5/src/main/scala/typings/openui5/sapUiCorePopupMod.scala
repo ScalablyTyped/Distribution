@@ -6,6 +6,7 @@ import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.openui5.sapUiCoreLibraryMod.Collision
 import typings.openui5.sapUiCoreLibraryMod.OpenState
+import typings.std.DOMRect
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Record
@@ -461,6 +462,17 @@ object sapUiCorePopupMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /**
+      * Enumeration providing options for docking of some element to another.
+      *
+      * "Right" and "Left" will stay the same in RTL mode, but "Begin" and "End" will flip to the other side
+      * ("Begin" is "Right" in RTL).
+      */
+    @JSImport("sap/ui/core/Popup", "default.Dock")
+    @js.native
+    def Dock: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Dock */ Any = js.native
+    inline def Dock_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Dock */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dock")(x.asInstanceOf[js.Any])
+    
     inline def addExternalContent(/**
       * One query selector or an array of query selectors to be added
       */
@@ -478,7 +490,7 @@ object sapUiCorePopupMod {
     bMarkAsSelectable: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternalContent")(vSelectors.asInstanceOf[js.Any], bMarkAsSelectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * @SINCE 1.75
+      * @since 1.75
       *
       * Adds a DOM query selector for determining additional external popup content.
       *
@@ -509,7 +521,7 @@ object sapUiCorePopupMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExternalContent")(vSelectors.asInstanceOf[js.Any], bMarkAsSelectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Attaches event handler `fnFunction` to the static {@link #.blockLayerStateChange blockLayerStateChange}
+      * Attaches event handler `fnFunction` to the static {@link #.blockLayerStateChange blockLayerStateChange }
       * event.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -517,22 +529,24 @@ object sapUiCorePopupMod {
       *
       * The event gets triggered in case of modal popups when the first of multiple popups opens and closes.
       */
-    inline def attachBlockLayerStateChange(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachBlockLayerStateChange")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def attachBlockLayerStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit]
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachBlockLayerStateChange")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def attachBlockLayerStateChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to a dummy event provider object
       */
     oListener: js.Object
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachBlockLayerStateChange")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * Attaches event handler `fnFunction` to the static {@link #.blockLayerStateChange blockLayerStateChange}
+      * Attaches event handler `fnFunction` to the static {@link #.blockLayerStateChange blockLayerStateChange }
       * event.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -549,7 +563,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachBlockLayerStateChange")(oData.asInstanceOf[js.Any], fnFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def attachBlockLayerStateChange(
       /**
@@ -560,7 +574,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to a dummy event provider object
       */
@@ -568,20 +582,22 @@ object sapUiCorePopupMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachBlockLayerStateChange")(oData.asInstanceOf[js.Any], fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Removes a previously attached event handler `fnFunction` from the static {@link #.blockLayerStateChange
-      * blockLayerStateChange} event.
+      * Removes a previously attached event handler `fnFunction` from the static {@link #.blockLayerStateChange blockLayerStateChange }
+      * event.
       *
       * The event gets triggered in case of modal popups when the first of multiple popups opens and closes.
       */
-    inline def detachBlockLayerStateChange(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachBlockLayerStateChange")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def detachBlockLayerStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit]
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachBlockLayerStateChange")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def detachBlockLayerStateChange(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ PopupBlockLayerStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -664,7 +680,7 @@ object sapUiCorePopupMod {
     inline def getNextZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextZIndex")().asInstanceOf[Double]
     
     /**
-      * @SINCE 1.89.0
+      * @since 1.89.0
       *
       * Returns the value that has been set by {@link sap.ui.core.Popup.setWithinArea}. When a DOM element that
       * represents the within area is needed, use {@link sap.ui.core.Popup.getWithinAreaDomRef} instead.
@@ -676,7 +692,7 @@ object sapUiCorePopupMod {
     inline def getWithinArea(): String | Element | typings.openui5.sapUiCoreElementMod.default | Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getWithinArea")().asInstanceOf[String | Element | typings.openui5.sapUiCoreElementMod.default | Window]
     
     /**
-      * @SINCE 1.89.0
+      * @since 1.89.0
       *
       * Returns the actual DOM element of the value that has been set by {@link sap.ui.core.Popup.setWithinArea}.
       * It returns `window` by default when no within area has been set using {@link sap.ui.core.Popup.setWithinArea}.
@@ -689,14 +705,14 @@ object sapUiCorePopupMod {
     inline def getWithinAreaDomRef(): Element | Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getWithinAreaDomRef")().asInstanceOf[Element | Window]
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Marks the external content as not user selectable
       */
     inline def markExternalContentAsNotSelectable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markExternalContentAsNotSelectable")().asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Marks the external content as user selectable
       */
@@ -719,7 +735,7 @@ object sapUiCorePopupMod {
     bMarkAsNotSelectable: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExternalContent")(vSelectors.asInstanceOf[js.Any], bMarkAsNotSelectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * @SINCE 1.75
+      * @since 1.75
       *
       * Removes a DOM query selector which has been added by {@link sap.ui.core.Popup.addExternalContent}.
       *
@@ -745,7 +761,7 @@ object sapUiCorePopupMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExternalContent")(vSelectors.asInstanceOf[js.Any], bMarkAsNotSelectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Set an initial z-index that should be used by all Popup so all Popups start at least with the set z-index.
       * If the given z-index is lower than any current available z-index the highest z-index will be used.
@@ -756,7 +772,7 @@ object sapUiCorePopupMod {
     iInitialZIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInitialZIndex")(iInitialZIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * @SINCE 1.89.0
+      * @since 1.89.0
       *
       * Sets a within area that is used as the area available for positioning the popup. It mainly affects the
       * collision detection. The position of the popup can then be further adapted depending on the "collision"
@@ -788,102 +804,90 @@ object sapUiCorePopupMod {
   
   @js.native
   sealed trait Dock extends StObject
+  /**
+    * Enumeration providing options for docking of some element to another.
+    *
+    * "Right" and "Left" will stay the same in RTL mode, but "Begin" and "End" will flip to the other side
+    * ("Begin" is "Right" in RTL).
+    */
   @JSImport("sap/ui/core/Popup", "Dock")
   @js.native
   object Dock extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Dock & String] = js.native
     
     @js.native
     sealed trait BeginBottom
       extends StObject
          with Dock
-    /* "begin bottom" */ val BeginBottom: typings.openui5.sapUiCorePopupMod.Dock.BeginBottom & String = js.native
     
     @js.native
     sealed trait BeginCenter
       extends StObject
          with Dock
-    /* "begin center" */ val BeginCenter: typings.openui5.sapUiCorePopupMod.Dock.BeginCenter & String = js.native
     
     @js.native
     sealed trait BeginTop
       extends StObject
          with Dock
-    /* "begin top" */ val BeginTop: typings.openui5.sapUiCorePopupMod.Dock.BeginTop & String = js.native
     
     @js.native
     sealed trait CenterBottom
       extends StObject
          with Dock
-    /* "center bottom" */ val CenterBottom: typings.openui5.sapUiCorePopupMod.Dock.CenterBottom & String = js.native
     
     @js.native
     sealed trait CenterCenter
       extends StObject
          with Dock
-    /* "center center" */ val CenterCenter: typings.openui5.sapUiCorePopupMod.Dock.CenterCenter & String = js.native
     
     @js.native
     sealed trait CenterTop
       extends StObject
          with Dock
-    /* "center top" */ val CenterTop: typings.openui5.sapUiCorePopupMod.Dock.CenterTop & String = js.native
     
     @js.native
     sealed trait EndBottom
       extends StObject
          with Dock
-    /* "end bottom" */ val EndBottom: typings.openui5.sapUiCorePopupMod.Dock.EndBottom & String = js.native
     
     @js.native
     sealed trait EndCenter
       extends StObject
          with Dock
-    /* "end center" */ val EndCenter: typings.openui5.sapUiCorePopupMod.Dock.EndCenter & String = js.native
     
     @js.native
     sealed trait EndTop
       extends StObject
          with Dock
-    /* "end top" */ val EndTop: typings.openui5.sapUiCorePopupMod.Dock.EndTop & String = js.native
     
     @js.native
     sealed trait LeftBottom
       extends StObject
          with Dock
-    /* "left bottom" */ val LeftBottom: typings.openui5.sapUiCorePopupMod.Dock.LeftBottom & String = js.native
     
     @js.native
     sealed trait LeftCenter
       extends StObject
          with Dock
-    /* "left center" */ val LeftCenter: typings.openui5.sapUiCorePopupMod.Dock.LeftCenter & String = js.native
     
     @js.native
     sealed trait LeftTop
       extends StObject
          with Dock
-    /* "left top" */ val LeftTop: typings.openui5.sapUiCorePopupMod.Dock.LeftTop & String = js.native
     
     @js.native
     sealed trait RightBottom
       extends StObject
          with Dock
-    /* "right bottom" */ val RightBottom: typings.openui5.sapUiCorePopupMod.Dock.RightBottom & String = js.native
     
     @js.native
     sealed trait RightCenter
       extends StObject
          with Dock
-    /* "right center" */ val RightCenter: typings.openui5.sapUiCorePopupMod.Dock.RightCenter & String = js.native
     
     @js.native
     sealed trait RightTop
       extends StObject
          with Dock
-    /* "right top" */ val RightTop: typings.openui5.sapUiCorePopupMod.Dock.RightTop & String = js.native
   }
   
   @js.native
@@ -902,13 +906,13 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Popup` itself
       */
@@ -931,7 +935,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -942,7 +946,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Popup` itself
       */
@@ -961,13 +965,13 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Popup` itself
       */
@@ -990,7 +994,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOpened(
       /**
@@ -1001,7 +1005,7 @@ object sapUiCorePopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Popup` itself
       */
@@ -1036,13 +1040,13 @@ object sapUiCorePopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1060,13 +1064,13 @@ object sapUiCorePopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOpened(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1080,7 +1084,7 @@ object sapUiCorePopupMod {
     def exit(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -1093,7 +1097,7 @@ object sapUiCorePopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:opened opened} to attached listeners.
       *
@@ -1106,7 +1110,7 @@ object sapUiCorePopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Determines whether the Popup should auto closes or not.
       *
@@ -1122,14 +1126,14 @@ object sapUiCorePopupMod {
     def getContent(): typings.openui5.sapUiCoreControlMod.default | Element = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * This returns true/false if the default followOf method should be used. If a separate followOf-handler
       * was previously added the corresponding function is returned.
       *
       * @returns if a function was set it is returned otherwise a boolean value whether the follow of is activated
       */
-    def getFollowOf(): Boolean | js.Function = js.native
+    def getFollowOf(): Boolean | (js.Function1[/* p1 */ PositionInfo, Unit]) = js.native
     
     /**
       * Returns the last z-index that has been handed out. does not increase the internal z-index counter.
@@ -1213,7 +1217,7 @@ object sapUiCorePopupMod {
       /**
       * defines whether the popup should follow the dock reference when the reference changes its position.
       */
-    followOf: js.UndefOr[Boolean | js.Function | Null]
+    followOf: js.UndefOr[Boolean | (js.Function1[/* p1 */ PositionInfo, Unit]) | Null]
     ): Unit = js.native
     /**
       * Opens the popup's content at the position either specified here or beforehand via {@link #setPosition}.
@@ -1257,7 +1261,7 @@ object sapUiCorePopupMod {
       /**
       * defines whether the popup should follow the dock reference when the reference changes its position.
       */
-    followOf: js.UndefOr[Boolean | js.Function | Null]
+    followOf: js.UndefOr[Boolean | (js.Function1[/* p1 */ PositionInfo, Unit]) | Null]
     ): Unit = js.native
     
     /**
@@ -1272,11 +1276,11 @@ object sapUiCorePopupMod {
       /**
       * The function which executes the custom opening animation
       */
-    fnOpen: js.Function,
+    fnOpen: js.Function3[/* p1 */ jQuery[HTMLElement], /* p2 */ int, /* p3 */ js.Function, Unit],
       /**
       * The function which executes the custom closing animation
       */
-    fnClose: js.Function
+    fnClose: js.Function3[/* p1 */ jQuery[HTMLElement], /* p2 */ int, /* p3 */ js.Function, Unit]
     ): this.type = js.native
     
     /**
@@ -1338,7 +1342,7 @@ object sapUiCorePopupMod {
     iCloseDuration: int): this.type = js.native
     
     /**
-      * @SINCE 1.75
+      * @since 1.75
       *
       * Sets additional content that are considered part of the Popup.
       *
@@ -1359,7 +1363,7 @@ object sapUiCorePopupMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.13.0
+      * @since 1.13.0
       *
       * This enabled/disables the Popup to follow its opening reference. If the Popup is open and a followOf
       * should be set the corresponding listener will be attached.
@@ -1370,7 +1374,7 @@ object sapUiCorePopupMod {
       * a boolean value enabled/disables the default followOf-Handler. Or an individual handler can be given.
       * null deletes all followOf settings.
       */
-    followOf: js.Function
+    followOf: js.Function1[/* p1 */ PositionInfo, Unit]
     ): Unit = js.native
     def setFollowOf(
       /**
@@ -1465,13 +1469,67 @@ object sapUiCorePopupMod {
     bShowShadow: Boolean): this.type = js.native
   }
   
+  trait Popup$BlockLayerStateChangeEventParameters extends StObject {
+    
+    /**
+      * Indicates whether a blocking layer is currently visible `visible: true` or not `visible: false`
+      */
+    var visible: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * In case a blocking layer is visible, the `zIndex` property will represent the zIndex at which the blocking
+      * layer is displayed. In case of `visible: false`, `zIndex` represents the zIndex value of the last open
+      * popup.
+      */
+    var zIndex: js.UndefOr[Double] = js.undefined
+  }
+  object Popup$BlockLayerStateChangeEventParameters {
+    
+    inline def apply(): Popup$BlockLayerStateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popup$BlockLayerStateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popup$BlockLayerStateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    }
+  }
+  
+  trait Popup$ClosedEventParameters extends StObject
+  
+  trait Popup$OpenedEventParameters extends StObject
+  
+  type PopupBlockLayerStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[Popup$BlockLayerStateChangeEventParameters]
+  
+  type PopupBlockLayerStateChangeEventParameters = Popup$BlockLayerStateChangeEventParameters
+  
+  type PopupClosedEvent = typings.openui5.sapUiBaseEventMod.default[Popup$ClosedEventParameters]
+  
+  type PopupClosedEventParameters = Popup$ClosedEventParameters
+  
+  type PopupOpenedEvent = typings.openui5.sapUiBaseEventMod.default[Popup$OpenedEventParameters]
+  
+  type PopupOpenedEventParameters = Popup$OpenedEventParameters
+  
   trait PopupSettings
     extends StObject
        with ManagedObjectSettings {
     
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
-    var opened: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var opened: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object PopupSettings {
     
@@ -1483,13 +1541,48 @@ object sapUiCorePopupMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PopupSettings] (val x: Self) extends AnyVal {
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
+      inline def setOpened(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction1(value))
       
       inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    }
+  }
+  
+  trait PositionInfo extends StObject {
+    
+    /**
+      * The DOMRect of the current "of" element
+      */
+    var currentOfRect: DOMRect
+    
+    /**
+      * The DOMRect of the previous "of" element
+      */
+    var lastOfRect: DOMRect
+    
+    /**
+      * The last position value
+      */
+    var lastPosition: js.Object
+  }
+  object PositionInfo {
+    
+    inline def apply(currentOfRect: DOMRect, lastOfRect: DOMRect, lastPosition: js.Object): PositionInfo = {
+      val __obj = js.Dynamic.literal(currentOfRect = currentOfRect.asInstanceOf[js.Any], lastOfRect = lastOfRect.asInstanceOf[js.Any], lastPosition = lastPosition.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PositionInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionInfo] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentOfRect(value: DOMRect): Self = StObject.set(x, "currentOfRect", value.asInstanceOf[js.Any])
+      
+      inline def setLastOfRect(value: DOMRect): Self = StObject.set(x, "lastOfRect", value.asInstanceOf[js.Any])
+      
+      inline def setLastPosition(value: js.Object): Self = StObject.set(x, "lastPosition", value.asInstanceOf[js.Any])
     }
   }
 }

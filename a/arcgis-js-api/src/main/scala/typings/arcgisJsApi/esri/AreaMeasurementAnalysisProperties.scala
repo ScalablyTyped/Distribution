@@ -22,17 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurementAnalysisProperties extends StObject {
   
   /**
-    * Polygon whose area is to be computed and displayed in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#geometry)
-    */
+  		 * Polygon whose area is to be computed and displayed in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#geometry)
+  		 */
   var geometry: js.UndefOr[PolygonProperties] = js.undefined
   
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the computed area in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#unit)
-    */
+  		 * Unit system (imperial, metric) or specific unit used for displaying the computed area in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-AreaMeasurementAnalysis.html#unit)
+  		 */
   var unit: js.UndefOr[
     imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
   ] = js.undefined

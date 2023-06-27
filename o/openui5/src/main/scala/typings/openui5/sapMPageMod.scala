@@ -154,7 +154,7 @@ object sapMPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.Page`.
@@ -170,20 +170,20 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Page` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Attaches event handler `fnFunction` to the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.Page`.
@@ -204,7 +204,7 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
@@ -215,7 +215,7 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Page` itself
       */
@@ -238,13 +238,13 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Page` itself
       */
@@ -271,7 +271,7 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonTap(
       /**
@@ -282,7 +282,7 @@ object sapMPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Page` itself
       */
@@ -332,7 +332,7 @@ object sapMPageMod {
     def destroySubHeader(): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * Detaches event handler `fnFunction` from the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.Page`.
@@ -345,13 +345,13 @@ object sapMPageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNavButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -371,13 +371,13 @@ object sapMPageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNavButtonTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -385,8 +385,8 @@ object sapMPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.12.2
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.12.2
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navButtonPress navButtonPress} to attached listeners.
       *
@@ -400,7 +400,7 @@ object sapMPageMod {
     
     /**
       * @deprecated (since 1.12.2) - the navButtonPress event is replacing this event
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navButtonTap navButtonTap} to attached listeners.
       *
@@ -433,7 +433,7 @@ object sapMPageMod {
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Gets current value of property {@link #getContentOnlyBusy contentOnlyBusy}.
       *
@@ -550,7 +550,7 @@ object sapMPageMod {
     def getNavButtonTooltip(): String = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.20) - Deprecated since the MVI theme is removed now. This property is only usable
       * with a Button text in that theme.
       *
@@ -567,7 +567,7 @@ object sapMPageMod {
     def getNavButtonType(): ButtonType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ButtonType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Gets current value of property {@link #getShowFooter showFooter}.
       *
@@ -604,7 +604,7 @@ object sapMPageMod {
     def getShowNavButton(): Boolean = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getShowSubHeader showSubHeader}.
       *
@@ -633,7 +633,7 @@ object sapMPageMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getTitleAlignment titleAlignment}.
       *
@@ -852,7 +852,7 @@ object sapMPageMod {
     aOffset: js.Array[int]
     ): this.type = js.native
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Scrolls to an element (DOM or sap.ui.core.Element) within the page if the element is rendered.
       *
@@ -932,7 +932,7 @@ object sapMPageMod {
     sBackgroundDesign: PageBackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Sets a new value for property {@link #getContentOnlyBusy contentOnlyBusy}.
       *
@@ -1083,7 +1083,7 @@ object sapMPageMod {
     sNavButtonTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.20) - Deprecated since the MVI theme is removed now. This property is only usable
       * with a Button text in that theme.
       *
@@ -1112,7 +1112,7 @@ object sapMPageMod {
     sNavButtonType: ButtonType): this.type = js.native
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Sets a new value for property {@link #getShowFooter showFooter}.
       *
@@ -1167,7 +1167,7 @@ object sapMPageMod {
     bShowNavButton: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getShowSubHeader showSubHeader}.
       *
@@ -1211,7 +1211,7 @@ object sapMPageMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getTitleAlignment titleAlignment}.
       *
@@ -1262,6 +1262,18 @@ object sapMPageMod {
     sTitleLevel: TitleLevel): this.type = js.native
   }
   
+  trait Page$NavButtonPressEventParameters extends StObject
+  
+  trait Page$NavButtonTapEventParameters extends StObject
+  
+  type PageNavButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[Page$NavButtonPressEventParameters]
+  
+  type PageNavButtonPressEventParameters = Page$NavButtonPressEventParameters
+  
+  type PageNavButtonTapEvent = typings.openui5.sapUiBaseEventMod.default[Page$NavButtonTapEventParameters]
+  
+  type PageNavButtonTapEventParameters = Page$NavButtonTapEventParameters
+  
   trait PageSettings
     extends StObject
        with ControlSettings {
@@ -1283,7 +1295,7 @@ object sapMPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.29.0
+      * @since 1.29.0
       *
       * Decides which area is covered by the local BusyIndicator when `page.setBusy()` is called. By default
       * the entire page is covered, including headers and footer. When this property is set to "true", only the
@@ -1354,18 +1366,22 @@ object sapMPageMod {
     var landmarkInfo: js.UndefOr[typings.openui5.sapMPageAccessibleLandmarkInfoMod.default] = js.undefined
     
     /**
-      * @SINCE 1.12.2
+      * @since 1.12.2
       *
       * this event is fired when Nav Button is pressed
       */
-    var navButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.12.2) - the navButtonPress event is replacing this event
       *
       * this event is fired when Nav Button is tapped
       */
-    var navButtonTap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navButtonTap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.20) - Deprecated since the MVI theme is removed now. This property only affected
@@ -1384,7 +1400,7 @@ object sapMPageMod {
     var navButtonTooltip: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.12
+      * @since 1.12
       * @deprecated (since 1.20) - Deprecated since the MVI theme is removed now. This property is only usable
       * with a Button text in that theme.
       *
@@ -1397,7 +1413,7 @@ object sapMPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.13.1
+      * @since 1.13.1
       *
       * Whether this page shall have a footer
       */
@@ -1422,7 +1438,7 @@ object sapMPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Whether this page shall show the subheader.
       */
@@ -1441,7 +1457,7 @@ object sapMPageMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Specifies the Title alignment (theme specific). If set to `TitleAlignment.Auto`, the Title will be aligned
       * as it is set in the theme (if not set, the default value is `center`); Other possible values are `TitleAlignment.Start`
@@ -1519,11 +1535,11 @@ object sapMPageMod {
       
       inline def setLandmarkInfoUndefined: Self = StObject.set(x, "landmarkInfo", js.undefined)
       
-      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
+      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
       
       inline def setNavButtonPressUndefined: Self = StObject.set(x, "navButtonPress", js.undefined)
       
-      inline def setNavButtonTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navButtonTap", js.Any.fromFunction1(value))
+      inline def setNavButtonTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "navButtonTap", js.Any.fromFunction1(value))
       
       inline def setNavButtonTapUndefined: Self = StObject.set(x, "navButtonTap", js.undefined)
       

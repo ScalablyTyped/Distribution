@@ -1,7 +1,6 @@
 package typings.openui5
 
 import typings.openui5.anon.SnapValue
-import typings.openui5.anon.`2`
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IScale
@@ -142,7 +141,7 @@ object sapMSliderMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -154,7 +153,7 @@ object sapMSliderMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Adds some customTooltip to the aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -168,7 +167,7 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates default tooltips, if needed, and forwards properties to them
       */
@@ -179,7 +178,7 @@ object sapMSliderMod {
     aTooltipIds: js.Array[Any]): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates custom tooltips, if needed, and forwards properties to them
       */
@@ -203,13 +202,13 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Slider` itself
       */
@@ -234,7 +233,7 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -245,7 +244,7 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Slider` itself
       */
@@ -266,13 +265,13 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Slider` itself
       */
@@ -297,7 +296,7 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -308,7 +307,7 @@ object sapMSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Slider` itself
       */
@@ -316,7 +315,7 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Destroys all the customTooltips in the aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -325,7 +324,7 @@ object sapMSliderMod {
     def destroyCustomTooltips(): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Destroys the scale in the aggregation {@link #getScale scale}.
       *
@@ -344,13 +343,13 @@ object sapMSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -368,13 +367,13 @@ object sapMSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -382,7 +381,7 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -392,10 +391,10 @@ object sapMSliderMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: Slider$ChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -405,10 +404,10 @@ object sapMSliderMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: Slider$LiveChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Forwards properties to a given control
       */
@@ -439,7 +438,7 @@ object sapMSliderMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Forwards properties to default tooltips
       */
@@ -450,15 +449,14 @@ object sapMSliderMod {
     iTooltipCount: Double): Unit = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Gets content of aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -469,7 +467,7 @@ object sapMSliderMod {
     def getCustomTooltips(): js.Array[typings.openui5.sapMSliderTooltipBaseMod.default] = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getEnableTickmarks enableTickmarks}.
       *
@@ -493,7 +491,7 @@ object sapMSliderMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets current value of property {@link #getInputsAsTooltips inputsAsTooltips}.
       *
@@ -552,7 +550,7 @@ object sapMSliderMod {
     def getProgress(): Boolean = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Gets content of aggregation {@link #getScale scale}.
       *
@@ -561,7 +559,7 @@ object sapMSliderMod {
     def getScale(): IScale = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Gets current value of property {@link #getShowAdvancedTooltip showAdvancedTooltip}.
       *
@@ -575,7 +573,7 @@ object sapMSliderMod {
     def getShowAdvancedTooltip(): Boolean = js.native
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Gets current value of property {@link #getShowHandleTooltip showHandleTooltip}.
       *
@@ -606,7 +604,7 @@ object sapMSliderMod {
     def getStep(): float = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the tooltips that should be shown. Returns custom tooltips if provided. Otherwise - default tooltips
       *
@@ -640,14 +638,14 @@ object sapMSliderMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles change of Tooltip's inputs.
       */
     def handleTooltipChange(oEvent: Event): Unit = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Checks for the provided `sap.m.SliderTooltipBase` in the aggregation {@link #getCustomTooltips customTooltips}.
       * and returns its index if found or -1 otherwise.
@@ -662,7 +660,7 @@ object sapMSliderMod {
     ): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Assigns tooltips and forwards properties to them
       */
@@ -673,7 +671,7 @@ object sapMSliderMod {
     aTooltipIds: js.Array[Any]): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a default SliderTooltip instance and adds it as an aggregation
       */
@@ -684,14 +682,14 @@ object sapMSliderMod {
     sId: String): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a SliderTooltipContainer
       */
     def initTooltipContainer(): Unit = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Inserts a customTooltip into the aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -711,7 +709,7 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -720,7 +718,7 @@ object sapMSliderMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes all the controls from the aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -731,7 +729,7 @@ object sapMSliderMod {
     def removeAllCustomTooltips(): js.Array[typings.openui5.sapMSliderTooltipBaseMod.default] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -757,7 +755,7 @@ object sapMSliderMod {
       */
     vCustomTooltip: String): typings.openui5.sapMSliderTooltipBaseMod.default | Null = js.native
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Removes a customTooltip from the aggregation {@link #getCustomTooltips customTooltips}.
       *
@@ -775,7 +773,7 @@ object sapMSliderMod {
     ): typings.openui5.sapMSliderTooltipBaseMod.default | Null = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getEnableTickmarks enableTickmarks}.
       *
@@ -811,7 +809,7 @@ object sapMSliderMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets a new value for property {@link #getInputsAsTooltips inputsAsTooltips}.
       *
@@ -900,7 +898,7 @@ object sapMSliderMod {
     bProgress: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Sets the aggregated {@link #getScale scale}.
       *
@@ -912,7 +910,7 @@ object sapMSliderMod {
     oScale: IScale): this.type = js.native
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Sets a new value for property {@link #getShowAdvancedTooltip showAdvancedTooltip}.
       *
@@ -932,7 +930,7 @@ object sapMSliderMod {
     bShowAdvancedTooltip: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Sets a new value for property {@link #getShowHandleTooltip showHandleTooltip}.
       *
@@ -1042,7 +1040,7 @@ object sapMSliderMod {
     iStep: int): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Updates value of the advanced tooltip.
       */
@@ -1052,12 +1050,66 @@ object sapMSliderMod {
     sNewValue: String): Unit = js.native
   }
   
+  trait Slider$ChangeEventParameters extends StObject {
+    
+    /**
+      * The current value of the slider after a change.
+      */
+    var value: js.UndefOr[float] = js.undefined
+  }
+  object Slider$ChangeEventParameters {
+    
+    inline def apply(): Slider$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Slider$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Slider$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * The current value of the slider after a live change.
+      */
+    var value: js.UndefOr[float] = js.undefined
+  }
+  object Slider$LiveChangeEventParameters {
+    
+    inline def apply(): Slider$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Slider$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type SliderChangeEvent = typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters]
+  
+  type SliderChangeEventParameters = Slider$ChangeEventParameters
+  
+  type SliderLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters]
+  
+  type SliderLiveChangeEventParameters = Slider$LiveChangeEventParameters
+  
   trait SliderSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
@@ -1066,10 +1118,15 @@ object sapMSliderMod {
     /**
       * This event is triggered after the end user finishes interacting, if there is any change.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.56
+      * @since 1.56
       *
       * Aggregation for user-defined tooltips. **Note:** In case of Slider, only the first tooltip of the aggregation
       * is used. In the RangeSlider case - the first two. If no custom tooltips are provided, the default are
@@ -1080,7 +1137,7 @@ object sapMSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Enables tickmarks visualisation
       */
@@ -1096,7 +1153,7 @@ object sapMSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Indicates whether input fields should be used as tooltips for the handles. **Note:** Setting this option
       * to `true` will only work if `showAdvancedTooltip` is set to `true`.
@@ -1108,7 +1165,12 @@ object sapMSliderMod {
     /**
       * This event is triggered during the dragging period, each time the slider value changes.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The maximum value.
@@ -1138,14 +1200,14 @@ object sapMSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       *
       * Scale for visualisation of tickmarks and labels
       */
     var scale: js.UndefOr[IScale] = js.undefined
     
     /**
-      * @SINCE 1.42
+      * @since 1.42
       *
       * Indicate whether the handle's advanced tooltip is shown. **Note:** Setting this option to `true` will
       * ignore the value set in `showHandleTooltip`. This will cause only the advanced tooltip to be shown.
@@ -1155,7 +1217,7 @@ object sapMSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.31
+      * @since 1.31
       *
       * Indicate whether the handle tooltip is shown.
       */
@@ -1210,7 +1272,9 @@ object sapMSliderMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -1234,7 +1298,9 @@ object sapMSliderMod {
       
       inline def setInputsAsTooltipsUndefined: Self = StObject.set(x, "inputsAsTooltips", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

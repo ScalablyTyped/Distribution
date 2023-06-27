@@ -11,10 +11,10 @@ object esriRestSupportDensifyParametersMod {
   @JSImport("esri/rest/support/DensifyParameters", JSImport.Namespace)
   @js.native
   /**
-    * Input parameters for the densify() method on the GeometryService.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
-    */
+  		 * Input parameters for the densify() method on the GeometryService.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
+  		 */
   open class ^ ()
     extends StObject
        with DensifyParameters {

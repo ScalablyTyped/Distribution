@@ -10,7 +10,7 @@ trait RepositoryReview extends StObject {
   /** @enum {string} */
   var action: edited
   
-  var changes: `449`
+  var changes: `527`
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -31,7 +31,7 @@ trait RepositoryReview extends StObject {
 object RepositoryReview {
   
   inline def apply(
-    changes: `449`,
+    changes: `527`,
     pull_request: AutomergeBase,
     repository: Allowupdatebranch,
     review: IdLinks,
@@ -46,7 +46,7 @@ object RepositoryReview {
     
     inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `449`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `527`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

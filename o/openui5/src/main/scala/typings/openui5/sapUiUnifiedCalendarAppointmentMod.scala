@@ -124,8 +124,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     extends typings.openui5.sapUiUnifiedDateTypeRangeMod.default {
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Adds some customContent to the aggregation {@link #getCustomContent customContent}.
@@ -140,8 +140,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Destroys all the customContent in the aggregation {@link #getCustomContent customContent}.
@@ -151,8 +151,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     def destroyCustomContent(): this.type = js.native
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Gets content of aggregation {@link #getCustomContent customContent}.
@@ -164,14 +164,14 @@ object sapUiUnifiedCalendarAppointmentMod {
       *
       * 	 - The `title`, `text`, `description`, and `icon` properties are ignored.
       * 	 - The application developer has to ensure, that all the accessibility requirements are met, and that
-      * 			the height of the content conforms with the height provided by the appointment.
+      *     the height of the content conforms with the height provided by the appointment.
       * 	 - Do not use interactive controls as content, as they may trigger unwanted selection of the appointment
-      * 			and may lead to unpredictable results.
+      *     and may lead to unpredictable results.
       */
     def getCustomContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getDescription description}.
       *
@@ -242,8 +242,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getCustomContent customContent}.
@@ -259,8 +259,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Inserts a customContent into the aggregation {@link #getCustomContent customContent}.
@@ -281,8 +281,8 @@ object sapUiUnifiedCalendarAppointmentMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Removes all the controls from the aggregation {@link #getCustomContent customContent}.
@@ -298,8 +298,8 @@ object sapUiUnifiedCalendarAppointmentMod {
       */
     vCustomContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Removes a customContent from the aggregation {@link #getCustomContent customContent}.
@@ -318,7 +318,7 @@ object sapUiUnifiedCalendarAppointmentMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getDescription description}.
       *
@@ -433,8 +433,8 @@ object sapUiUnifiedCalendarAppointmentMod {
        with DateTypeRangeSettings {
     
     /**
-      * @SINCE 1.93.0
-      * @EXPERIMENTAL (since 1.93) - providing only limited functionality. Also, the API might be changed in
+      * @since 1.93.0
+      * @experimental (since 1.93) - providing only limited functionality. Also, the API might be changed in
       * the future.
       *
       * Holds the content of the appointment.
@@ -444,16 +444,16 @@ object sapUiUnifiedCalendarAppointmentMod {
       *
       * 	 - The `title`, `text`, `description`, and `icon` properties are ignored.
       * 	 - The application developer has to ensure, that all the accessibility requirements are met, and that
-      * 			the height of the content conforms with the height provided by the appointment.
+      *     the height of the content conforms with the height provided by the appointment.
       * 	 - Do not use interactive controls as content, as they may trigger unwanted selection of the appointment
-      * 			and may lead to unpredictable results.
+      *     and may lead to unpredictable results.
       */
     var customContent: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Description of the appointment.
       */

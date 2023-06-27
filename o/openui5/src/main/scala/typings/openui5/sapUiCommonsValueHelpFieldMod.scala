@@ -138,13 +138,13 @@ object sapUiCommonsValueHelpFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachValueHelpRequest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ValueHelpField` itself
       */
@@ -170,7 +170,7 @@ object sapUiCommonsValueHelpFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachValueHelpRequest(
       /**
@@ -181,7 +181,7 @@ object sapUiCommonsValueHelpFieldMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ValueHelpField` itself
       */
@@ -200,13 +200,13 @@ object sapUiCommonsValueHelpFieldMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachValueHelpRequest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -214,7 +214,7 @@ object sapUiCommonsValueHelpFieldMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:valueHelpRequest valueHelpRequest} to attached listeners.
       *
@@ -257,7 +257,7 @@ object sapUiCommonsValueHelpFieldMod {
     def getIconURL(): URI = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle F4 event
       */
@@ -315,6 +315,8 @@ object sapUiCommonsValueHelpFieldMod {
     sIconURL: URI): this.type = js.native
   }
   
+  trait ValueHelpField$ValueHelpRequestEventParameters extends StObject
+  
   trait ValueHelpFieldSettings
     extends StObject
        with TextFieldSettings {
@@ -340,7 +342,9 @@ object sapUiCommonsValueHelpFieldMod {
     /**
       * Event which is fired when the ValueHelp is requested.
       */
-    var valueHelpRequest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var valueHelpRequest: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object ValueHelpFieldSettings {
     
@@ -364,9 +368,13 @@ object sapUiCommonsValueHelpFieldMod {
       
       inline def setIconURLUndefined: Self = StObject.set(x, "iconURL", js.undefined)
       
-      inline def setValueHelpRequest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "valueHelpRequest", js.Any.fromFunction1(value))
+      inline def setValueHelpRequest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "valueHelpRequest", js.Any.fromFunction1(value))
       
       inline def setValueHelpRequestUndefined: Self = StObject.set(x, "valueHelpRequest", js.undefined)
     }
   }
+  
+  type ValueHelpFieldValueHelpRequestEvent = typings.openui5.sapUiBaseEventMod.default[ValueHelpField$ValueHelpRequestEventParameters]
+  
+  type ValueHelpFieldValueHelpRequestEventParameters = ValueHelpField$ValueHelpRequestEventParameters
 }

@@ -17,23 +17,23 @@ trait FunctionResult
      with JSONSupport {
   
   /**
-    * The aggregate function type used in the supplied trace configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#functionType)
-    */
+  		 * The aggregate function type used in the supplied trace configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#functionType)
+  		 */
   val functionType: add | subtract | average | count | min | max = js.native
   
   /**
-    * The name of the function result.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#networkAttributeName)
-    */
+  		 * The name of the function result.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#networkAttributeName)
+  		 */
   val networkAttributeName: String = js.native
   
   /**
-    * Actual result of the aggregate function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#result)
-    */
+  		 * Actual result of the aggregate function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-FunctionResult.html#result)
+  		 */
   val result: Double = js.native
 }

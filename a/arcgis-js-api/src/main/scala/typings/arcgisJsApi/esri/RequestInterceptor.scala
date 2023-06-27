@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestInterceptor extends StObject {
   
   /**
-    * Makes changes to the response after the request is sent, but before it's returned to the caller.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Makes changes to the response after the request is sent, but before it's returned to the caller.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var after: js.UndefOr[AfterInterceptorCallback] = js.undefined
   
   /**
-    * Make changes to the request URL or options before the request is sent.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Make changes to the request URL or options before the request is sent.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var before: js.UndefOr[BeforeInterceptorCallback] = js.undefined
   
   /**
-    * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var error: js.UndefOr[ErrorCallback] = js.undefined
   
   /**
-    * Sets or adds headers into `requestOptions.headers`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Sets or adds headers into `requestOptions.headers`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var headers: js.UndefOr[Any] = js.undefined
   
   /**
-    * Sets or adds query parameters into `requestOptions.query`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Sets or adds query parameters into `requestOptions.query`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var query: js.UndefOr[Any] = js.undefined
   
   /**
-    * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var responseData: js.UndefOr[Any] = js.undefined
   
   /**
-    * Specifies the URL(s) to apply to the interceptors.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    */
+  		 * Specifies the URL(s) to apply to the interceptors.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+  		 */
   var urls: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
 }
 object RequestInterceptor {

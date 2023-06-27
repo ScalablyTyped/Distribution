@@ -12,39 +12,39 @@ trait BingMapsLayerProperties
      with BaseTileLayerProperties {
   
   /**
-    * Provides culture specific map labels.
-    *
-    * @default "en-US"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#culture)
-    */
+  		 * Provides culture specific map labels.
+  		 *
+  		 * @default "en-US"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#culture)
+  		 */
   var culture: js.UndefOr[String] = js.undefined
   
   /**
-    * Bing Maps Key.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#key)
-    */
+  		 * Bing Maps Key.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#key)
+  		 */
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * This will alter Geopolitical disputed borders and labels to align with the specified user region.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#region)
-    */
+  		 * This will alter Geopolitical disputed borders and labels to align with the specified user region.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#region)
+  		 */
   var region: js.UndefOr[String] = js.undefined
   
   /**
-    * For more information on Bing map styles please visit: https://learn.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
-    *
-    * @default "road"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#style)
-    */
+  		 * For more information on Bing map styles please visit: https://learn.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata
+  		 *
+  		 * @default "road"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#style)
+  		 */
   var style: js.UndefOr[road | aerial | hybrid] = js.undefined
 }
 object BingMapsLayerProperties {

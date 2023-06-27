@@ -21,7 +21,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <feBlend> element. */
+/**
+  * Corresponds to the <feBlend> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEBlendElement)
+  */
 @js.native
 trait SVGFEBlendElement
   extends StObject

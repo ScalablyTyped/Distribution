@@ -10,6 +10,8 @@ trait FormatCodeSettings
   
   val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.undefined
   
+  val indentSwitchCase: js.UndefOr[Boolean] = js.undefined
+  
   val insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.undefined
   
   val insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.undefined
@@ -59,6 +61,10 @@ object FormatCodeSettings {
     inline def setIndentMultiLineObjectLiteralBeginningOnBlankLine(value: Boolean): Self = StObject.set(x, "indentMultiLineObjectLiteralBeginningOnBlankLine", value.asInstanceOf[js.Any])
     
     inline def setIndentMultiLineObjectLiteralBeginningOnBlankLineUndefined: Self = StObject.set(x, "indentMultiLineObjectLiteralBeginningOnBlankLine", js.undefined)
+    
+    inline def setIndentSwitchCase(value: Boolean): Self = StObject.set(x, "indentSwitchCase", value.asInstanceOf[js.Any])
+    
+    inline def setIndentSwitchCaseUndefined: Self = StObject.set(x, "indentSwitchCase", js.undefined)
     
     inline def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = StObject.set(x, "insertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
     

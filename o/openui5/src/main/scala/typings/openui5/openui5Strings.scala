@@ -11,6 +11,10 @@ object openui5Strings {
   inline def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
+  sealed trait `0DotDot1` extends StObject
+  inline def `0DotDot1`: `0DotDot1` = "0..1".asInstanceOf[`0DotDot1`]
+  
+  @js.native
   sealed trait `1` extends StObject
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
@@ -59,6 +63,10 @@ object openui5Strings {
   inline def Appearance: Appearance = "Appearance".asInstanceOf[Appearance]
   
   @js.native
+  sealed trait Asterisk extends StObject
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @js.native
   sealed trait B extends StObject
   inline def B: B = "B".asInstanceOf[B]
   
@@ -83,6 +91,74 @@ object openui5Strings {
   inline def Dimension: Dimension = "Dimension".asInstanceOf[Dimension]
   
   @js.native
+  sealed trait EdmDotBinary extends StObject
+  inline def EdmDotBinary: EdmDotBinary = "Edm.Binary".asInstanceOf[EdmDotBinary]
+  
+  @js.native
+  sealed trait EdmDotBoolean extends StObject
+  inline def EdmDotBoolean: EdmDotBoolean = "Edm.Boolean".asInstanceOf[EdmDotBoolean]
+  
+  @js.native
+  sealed trait EdmDotByte extends StObject
+  inline def EdmDotByte: EdmDotByte = "Edm.Byte".asInstanceOf[EdmDotByte]
+  
+  @js.native
+  sealed trait EdmDotDateTime extends StObject
+  inline def EdmDotDateTime: EdmDotDateTime = "Edm.DateTime".asInstanceOf[EdmDotDateTime]
+  
+  @js.native
+  sealed trait EdmDotDateTimeOffset extends StObject
+  inline def EdmDotDateTimeOffset: EdmDotDateTimeOffset = "Edm.DateTimeOffset".asInstanceOf[EdmDotDateTimeOffset]
+  
+  @js.native
+  sealed trait EdmDotDecimal extends StObject
+  inline def EdmDotDecimal: EdmDotDecimal = "Edm.Decimal".asInstanceOf[EdmDotDecimal]
+  
+  @js.native
+  sealed trait EdmDotDouble extends StObject
+  inline def EdmDotDouble: EdmDotDouble = "Edm.Double".asInstanceOf[EdmDotDouble]
+  
+  @js.native
+  sealed trait EdmDotGuid extends StObject
+  inline def EdmDotGuid: EdmDotGuid = "Edm.Guid".asInstanceOf[EdmDotGuid]
+  
+  @js.native
+  sealed trait EdmDotInt16 extends StObject
+  inline def EdmDotInt16: EdmDotInt16 = "Edm.Int16".asInstanceOf[EdmDotInt16]
+  
+  @js.native
+  sealed trait EdmDotInt32 extends StObject
+  inline def EdmDotInt32: EdmDotInt32 = "Edm.Int32".asInstanceOf[EdmDotInt32]
+  
+  @js.native
+  sealed trait EdmDotInt64 extends StObject
+  inline def EdmDotInt64: EdmDotInt64 = "Edm.Int64".asInstanceOf[EdmDotInt64]
+  
+  @js.native
+  sealed trait EdmDotSByte extends StObject
+  inline def EdmDotSByte: EdmDotSByte = "Edm.SByte".asInstanceOf[EdmDotSByte]
+  
+  @js.native
+  sealed trait EdmDotSingle extends StObject
+  inline def EdmDotSingle: EdmDotSingle = "Edm.Single".asInstanceOf[EdmDotSingle]
+  
+  @js.native
+  sealed trait EdmDotStream extends StObject
+  inline def EdmDotStream: EdmDotStream = "Edm.Stream".asInstanceOf[EdmDotStream]
+  
+  @js.native
+  sealed trait EdmDotString extends StObject
+  inline def EdmDotString: EdmDotString = "Edm.String".asInstanceOf[EdmDotString]
+  
+  @js.native
+  sealed trait EdmDotTime extends StObject
+  inline def EdmDotTime: EdmDotTime = "Edm.Time".asInstanceOf[EdmDotTime]
+  
+  @js.native
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
   sealed trait Horizontal extends StObject
   inline def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
   
@@ -91,8 +167,24 @@ object openui5Strings {
   inline def Identification: Identification = "Identification".asInstanceOf[Identification]
   
   @js.native
+  sealed trait In extends StObject
+  inline def In: In = "In".asInstanceOf[In]
+  
+  @js.native
+  sealed trait InOut extends StObject
+  inline def InOut: InOut = "InOut".asInstanceOf[InOut]
+  
+  @js.native
   sealed trait Misc extends StObject
   inline def Misc: Misc = "Misc".asInstanceOf[Misc]
+  
+  @js.native
+  sealed trait Out extends StObject
+  inline def Out: Out = "Out".asInstanceOf[Out]
+  
+  @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait Space extends StObject
@@ -119,12 +211,20 @@ object openui5Strings {
   inline def bindable: bindable = "bindable".asInstanceOf[bindable]
   
   @js.native
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
+  
+  @js.native
   sealed trait decimal extends StObject
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait group extends StObject
@@ -487,6 +587,10 @@ object openui5Strings {
   inline def sapSlashfSlashcardsSlashNumericSideIndicator: sapSlashfSlashcardsSlashNumericSideIndicator = "sap/f/cards/NumericSideIndicator".asInstanceOf[sapSlashfSlashcardsSlashNumericSideIndicator]
   
   @js.native
+  sealed trait sapSlashfSlashcardsSlashloadingSlashPlaceholderBaseRenderer extends StObject
+  inline def sapSlashfSlashcardsSlashloadingSlashPlaceholderBaseRenderer: sapSlashfSlashcardsSlashloadingSlashPlaceholderBaseRenderer = "sap/f/cards/loading/PlaceholderBaseRenderer".asInstanceOf[sapSlashfSlashcardsSlashloadingSlashPlaceholderBaseRenderer]
+  
+  @js.native
   sealed trait sapSlashfSlashdndSlashGridDropInfo extends StObject
   inline def sapSlashfSlashdndSlashGridDropInfo: sapSlashfSlashdndSlashGridDropInfo = "sap/f/dnd/GridDropInfo".asInstanceOf[sapSlashfSlashdndSlashGridDropInfo]
   
@@ -713,10 +817,6 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashmSlashComboBoxTextField extends StObject
   inline def sapSlashmSlashComboBoxTextField: sapSlashmSlashComboBoxTextField = "sap/m/ComboBoxTextField".asInstanceOf[sapSlashmSlashComboBoxTextField]
-  
-  @js.native
-  sealed trait sapSlashmSlashCustomDynamicDateOption extends StObject
-  inline def sapSlashmSlashCustomDynamicDateOption: sapSlashmSlashCustomDynamicDateOption = "sap/m/CustomDynamicDateOption".asInstanceOf[sapSlashmSlashCustomDynamicDateOption]
   
   @js.native
   sealed trait sapSlashmSlashCustomListItem extends StObject
@@ -1349,10 +1449,6 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashmSlashSplitContainer extends StObject
   inline def sapSlashmSlashSplitContainer: sapSlashmSlashSplitContainer = "sap/m/SplitContainer".asInstanceOf[sapSlashmSlashSplitContainer]
-  
-  @js.native
-  sealed trait sapSlashmSlashStandardDynamicDateOption extends StObject
-  inline def sapSlashmSlashStandardDynamicDateOption: sapSlashmSlashStandardDynamicDateOption = "sap/m/StandardDynamicDateOption".asInstanceOf[sapSlashmSlashStandardDynamicDateOption]
   
   @js.native
   sealed trait sapSlashmSlashStandardListItem extends StObject
@@ -3755,6 +3851,10 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashActionToolbar: sapSlashuiSlashmdcSlashActionToolbar = "sap/ui/mdc/ActionToolbar".asInstanceOf[sapSlashuiSlashmdcSlashActionToolbar]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashBaseDelegate extends StObject
+  inline def sapSlashuiSlashmdcSlashBaseDelegate: sapSlashuiSlashmdcSlashBaseDelegate = "sap/ui/mdc/BaseDelegate".asInstanceOf[sapSlashuiSlashmdcSlashBaseDelegate]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashChart extends StObject
   inline def sapSlashuiSlashmdcSlashChart: sapSlashuiSlashmdcSlashChart = "sap/ui/mdc/Chart".asInstanceOf[sapSlashuiSlashmdcSlashChart]
   
@@ -3765,6 +3865,10 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashuiSlashmdcSlashControl extends StObject
   inline def sapSlashuiSlashmdcSlashControl: sapSlashuiSlashmdcSlashControl = "sap/ui/mdc/Control".asInstanceOf[sapSlashuiSlashmdcSlashControl]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashDefaultTypeMap extends StObject
+  inline def sapSlashuiSlashmdcSlashDefaultTypeMap: sapSlashuiSlashmdcSlashDefaultTypeMap = "sap/ui/mdc/DefaultTypeMap".asInstanceOf[sapSlashuiSlashmdcSlashDefaultTypeMap]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashElement extends StObject
@@ -3903,6 +4007,18 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashenumSlashFilterBarValidationStatus: sapSlashuiSlashmdcSlashenumSlashFilterBarValidationStatus = "sap/ui/mdc/enum/FilterBarValidationStatus".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashFilterBarValidationStatus]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumSlashLinkType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumSlashLinkType: sapSlashuiSlashmdcSlashenumSlashLinkType = "sap/ui/mdc/enum/LinkType".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashLinkType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumSlashOperatorOverwrite extends StObject
+  inline def sapSlashuiSlashmdcSlashenumSlashOperatorOverwrite: sapSlashuiSlashmdcSlashenumSlashOperatorOverwrite = "sap/ui/mdc/enum/OperatorOverwrite".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashOperatorOverwrite]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumSlashOperatorValueType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumSlashOperatorValueType: sapSlashuiSlashmdcSlashenumSlashOperatorValueType = "sap/ui/mdc/enum/OperatorValueType".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashOperatorValueType]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashenumSlashPersistenceMode extends StObject
   inline def sapSlashuiSlashmdcSlashenumSlashPersistenceMode: sapSlashuiSlashmdcSlashenumSlashPersistenceMode = "sap/ui/mdc/enum/PersistenceMode".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashPersistenceMode]
   
@@ -3923,6 +4039,106 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashenumSlashSelectType: sapSlashuiSlashmdcSlashenumSlashSelectType = "sap/ui/mdc/enum/SelectType".asInstanceOf[sapSlashuiSlashmdcSlashenumSlashSelectType]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashActionToolbarActionAlignment extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashActionToolbarActionAlignment: sapSlashuiSlashmdcSlashenumsSlashActionToolbarActionAlignment = "sap/ui/mdc/enums/ActionToolbarActionAlignment".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashActionToolbarActionAlignment]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashBaseType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashBaseType: sapSlashuiSlashmdcSlashenumsSlashBaseType = "sap/ui/mdc/enums/BaseType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashBaseType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashChartP13nMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashChartP13nMode: sapSlashuiSlashmdcSlashenumsSlashChartP13nMode = "sap/ui/mdc/enums/ChartP13nMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashChartP13nMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashChartToolbarActionType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashChartToolbarActionType: sapSlashuiSlashmdcSlashenumsSlashChartToolbarActionType = "sap/ui/mdc/enums/ChartToolbarActionType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashChartToolbarActionType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashConditionValidated extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashConditionValidated: sapSlashuiSlashmdcSlashenumsSlashConditionValidated = "sap/ui/mdc/enums/ConditionValidated".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashConditionValidated]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashContentMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashContentMode: sapSlashuiSlashmdcSlashenumsSlashContentMode = "sap/ui/mdc/enums/ContentMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashContentMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashFieldDisplay extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashFieldDisplay: sapSlashuiSlashmdcSlashenumsSlashFieldDisplay = "sap/ui/mdc/enums/FieldDisplay".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashFieldDisplay]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashFieldEditMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashFieldEditMode: sapSlashuiSlashmdcSlashenumsSlashFieldEditMode = "sap/ui/mdc/enums/FieldEditMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashFieldEditMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashFilterBarP13nMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashFilterBarP13nMode: sapSlashuiSlashmdcSlashenumsSlashFilterBarP13nMode = "sap/ui/mdc/enums/FilterBarP13nMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashFilterBarP13nMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashFilterBarValidationStatus extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashFilterBarValidationStatus: sapSlashuiSlashmdcSlashenumsSlashFilterBarValidationStatus = "sap/ui/mdc/enums/FilterBarValidationStatus".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashFilterBarValidationStatus]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashLinkType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashLinkType: sapSlashuiSlashmdcSlashenumsSlashLinkType = "sap/ui/mdc/enums/LinkType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashLinkType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashOperatorOverwrite extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashOperatorOverwrite: sapSlashuiSlashmdcSlashenumsSlashOperatorOverwrite = "sap/ui/mdc/enums/OperatorOverwrite".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashOperatorOverwrite]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashOperatorValueType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashOperatorValueType: sapSlashuiSlashmdcSlashenumsSlashOperatorValueType = "sap/ui/mdc/enums/OperatorValueType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashOperatorValueType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashPersistenceMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashPersistenceMode: sapSlashuiSlashmdcSlashenumsSlashPersistenceMode = "sap/ui/mdc/enums/PersistenceMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashPersistenceMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashProcessingStrategy extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashProcessingStrategy: sapSlashuiSlashmdcSlashenumsSlashProcessingStrategy = "sap/ui/mdc/enums/ProcessingStrategy".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashProcessingStrategy]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashReasonMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashReasonMode: sapSlashuiSlashmdcSlashenumsSlashReasonMode = "sap/ui/mdc/enums/ReasonMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashReasonMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableGrowingMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableGrowingMode: sapSlashuiSlashmdcSlashenumsSlashTableGrowingMode = "sap/ui/mdc/enums/TableGrowingMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableGrowingMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableMultiSelectMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableMultiSelectMode: sapSlashuiSlashmdcSlashenumsSlashTableMultiSelectMode = "sap/ui/mdc/enums/TableMultiSelectMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableMultiSelectMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableP13nMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableP13nMode: sapSlashuiSlashmdcSlashenumsSlashTableP13nMode = "sap/ui/mdc/enums/TableP13nMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableP13nMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableRowAction extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableRowAction: sapSlashuiSlashmdcSlashenumsSlashTableRowAction = "sap/ui/mdc/enums/TableRowAction".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableRowAction]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableRowCountMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableRowCountMode: sapSlashuiSlashmdcSlashenumsSlashTableRowCountMode = "sap/ui/mdc/enums/TableRowCountMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableRowCountMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableSelectionMode extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableSelectionMode: sapSlashuiSlashmdcSlashenumsSlashTableSelectionMode = "sap/ui/mdc/enums/TableSelectionMode".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableSelectionMode]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashTableType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashTableType: sapSlashuiSlashmdcSlashenumsSlashTableType = "sap/ui/mdc/enums/TableType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashTableType]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashValueHelpPropagationReason extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashValueHelpPropagationReason: sapSlashuiSlashmdcSlashenumsSlashValueHelpPropagationReason = "sap/ui/mdc/enums/ValueHelpPropagationReason".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashValueHelpPropagationReason]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashenumsSlashValueHelpSelectionType extends StObject
+  inline def sapSlashuiSlashmdcSlashenumsSlashValueHelpSelectionType: sapSlashuiSlashmdcSlashenumsSlashValueHelpSelectionType = "sap/ui/mdc/enums/ValueHelpSelectionType".asInstanceOf[sapSlashuiSlashmdcSlashenumsSlashValueHelpSelectionType]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashfieldSlashConditionType extends StObject
   inline def sapSlashuiSlashmdcSlashfieldSlashConditionType: sapSlashuiSlashmdcSlashfieldSlashConditionType = "sap/ui/mdc/field/ConditionType".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashConditionType]
   
@@ -3933,10 +4149,6 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo extends StObject
   inline def sapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo: sapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo = "sap/ui/mdc/field/CustomFieldInfo".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashCustomFieldInfo]
-  
-  @js.native
-  sealed trait sapSlashuiSlashmdcSlashfieldSlashDefineConditionPanel extends StObject
-  inline def sapSlashuiSlashmdcSlashfieldSlashDefineConditionPanel: sapSlashuiSlashmdcSlashfieldSlashDefineConditionPanel = "sap/ui/mdc/field/DefineConditionPanel".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashDefineConditionPanel]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashfieldSlashDynamicDateRangeConditionsType extends StObject
@@ -3983,16 +4195,48 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashfieldSlashTokenizerDisplay: sapSlashuiSlashmdcSlashfieldSlashTokenizerDisplay = "sap/ui/mdc/field/TokenizerDisplay".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashTokenizerDisplay]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashBooleanContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashBooleanContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashBooleanContent = "sap/ui/mdc/field/content/BooleanContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashBooleanContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashContentFactory extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashContentFactory: sapSlashuiSlashmdcSlashfieldSlashcontentSlashContentFactory = "sap/ui/mdc/field/content/ContentFactory".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashContentFactory]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateContent = "sap/ui/mdc/field/content/DateContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateTimeContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateTimeContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateTimeContent = "sap/ui/mdc/field/content/DateTimeContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashDateTimeContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashDefaultContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashDefaultContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashDefaultContent = "sap/ui/mdc/field/content/DefaultContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashDefaultContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashLinkContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashLinkContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashLinkContent = "sap/ui/mdc/field/content/LinkContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashLinkContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashSearchContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashSearchContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashSearchContent = "sap/ui/mdc/field/content/SearchContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashSearchContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashTimeContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashTimeContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashTimeContent = "sap/ui/mdc/field/content/TimeContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashTimeContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashfieldSlashcontentSlashUnitContent extends StObject
+  inline def sapSlashuiSlashmdcSlashfieldSlashcontentSlashUnitContent: sapSlashuiSlashmdcSlashfieldSlashcontentSlashUnitContent = "sap/ui/mdc/field/content/UnitContent".asInstanceOf[sapSlashuiSlashmdcSlashfieldSlashcontentSlashUnitContent]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase extends StObject
   inline def sapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase: sapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase = "sap/ui/mdc/filterbar/FilterBarBase".asInstanceOf[sapSlashuiSlashmdcSlashfilterbarSlashFilterBarBase]
   
   @js.native
-  sealed trait sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterContainer extends StObject
-  inline def sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterContainer: sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterContainer = "sap/ui/mdc/filterbar/aligned/FilterContainer".asInstanceOf[sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterContainer]
-  
-  @js.native
-  sealed trait sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout extends StObject
-  inline def sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout: sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout = "sap/ui/mdc/filterbar/aligned/FilterItemLayout".asInstanceOf[sapSlashuiSlashmdcSlashfilterbarSlashalignedSlashFilterItemLayout]
+  sealed trait sapSlashuiSlashmdcSlashfilterbarSlashIFilterContainer extends StObject
+  inline def sapSlashuiSlashmdcSlashfilterbarSlashIFilterContainer: sapSlashuiSlashmdcSlashfilterbarSlashIFilterContainer = "sap/ui/mdc/filterbar/IFilterContainer".asInstanceOf[sapSlashuiSlashmdcSlashfilterbarSlashIFilterContainer]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashfilterbarSlashp13nSlashAdaptationFilterBar extends StObject
@@ -4039,8 +4283,16 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashmixinSlashPropertyHelperMixin: sapSlashuiSlashmdcSlashmixinSlashPropertyHelperMixin = "sap/ui/mdc/mixin/PropertyHelperMixin".asInstanceOf[sapSlashuiSlashmdcSlashmixinSlashPropertyHelperMixin]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashodataSlashTypeMap extends StObject
+  inline def sapSlashuiSlashmdcSlashodataSlashTypeMap: sapSlashuiSlashmdcSlashodataSlashTypeMap = "sap/ui/mdc/odata/TypeMap".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashTypeMap]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashodataSlashTypeUtil extends StObject
   inline def sapSlashuiSlashmdcSlashodataSlashTypeUtil: sapSlashuiSlashmdcSlashodataSlashTypeUtil = "sap/ui/mdc/odata/TypeUtil".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashTypeUtil]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashodataSlashv4SlashChartDelegate extends StObject
+  inline def sapSlashuiSlashmdcSlashodataSlashv4SlashChartDelegate: sapSlashuiSlashmdcSlashodataSlashv4SlashChartDelegate = "sap/ui/mdc/odata/v4/ChartDelegate".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashChartDelegate]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashodataSlashv4SlashFieldBaseDelegate extends StObject
@@ -4051,6 +4303,10 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashodataSlashv4SlashTableDelegate: sapSlashuiSlashmdcSlashodataSlashv4SlashTableDelegate = "sap/ui/mdc/odata/v4/TableDelegate".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashTableDelegate]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashodataSlashv4SlashTypeMap extends StObject
+  inline def sapSlashuiSlashmdcSlashodataSlashv4SlashTypeMap: sapSlashuiSlashmdcSlashodataSlashv4SlashTypeMap = "sap/ui/mdc/odata/v4/TypeMap".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashTypeMap]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil extends StObject
   inline def sapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil: sapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil = "sap/ui/mdc/odata/v4/TypeUtil".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashTypeUtil]
   
@@ -4059,16 +4315,16 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashodataSlashv4SlashValueHelpDelegate: sapSlashuiSlashmdcSlashodataSlashv4SlashValueHelpDelegate = "sap/ui/mdc/odata/v4/ValueHelpDelegate".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashValueHelpDelegate]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashodataSlashv4SlashvizChartSlashChartDelegate extends StObject
+  inline def sapSlashuiSlashmdcSlashodataSlashv4SlashvizChartSlashChartDelegate: sapSlashuiSlashmdcSlashodataSlashv4SlashvizChartSlashChartDelegate = "sap/ui/mdc/odata/v4/vizChart/ChartDelegate".asInstanceOf[sapSlashuiSlashmdcSlashodataSlashv4SlashvizChartSlashChartDelegate]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashp13nSlashStateUtil extends StObject
   inline def sapSlashuiSlashmdcSlashp13nSlashStateUtil: sapSlashuiSlashmdcSlashp13nSlashStateUtil = "sap/ui/mdc/p13n/StateUtil".asInstanceOf[sapSlashuiSlashmdcSlashp13nSlashStateUtil]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashp13nSlashUIManager extends StObject
   inline def sapSlashuiSlashmdcSlashp13nSlashUIManager: sapSlashuiSlashmdcSlashp13nSlashUIManager = "sap/ui/mdc/p13n/UIManager".asInstanceOf[sapSlashuiSlashmdcSlashp13nSlashUIManager]
-  
-  @js.native
-  sealed trait sapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel extends StObject
-  inline def sapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel: sapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel = "sap/ui/mdc/p13n/panels/FilterPanel".asInstanceOf[sapSlashuiSlashmdcSlashp13nSlashpanelsSlashFilterPanel]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashtableSlashColumn extends StObject
@@ -4139,6 +4395,10 @@ object openui5Strings {
   inline def sapSlashuiSlashmdcSlashutilSlashPropertyHelper: sapSlashuiSlashmdcSlashutilSlashPropertyHelper = "sap/ui/mdc/util/PropertyHelper".asInstanceOf[sapSlashuiSlashmdcSlashutilSlashPropertyHelper]
   
   @js.native
+  sealed trait sapSlashuiSlashmdcSlashutilSlashTypeMap extends StObject
+  inline def sapSlashuiSlashmdcSlashutilSlashTypeMap: sapSlashuiSlashmdcSlashutilSlashTypeMap = "sap/ui/mdc/util/TypeMap".asInstanceOf[sapSlashuiSlashmdcSlashutilSlashTypeMap]
+  
+  @js.native
   sealed trait sapSlashuiSlashmdcSlashutilSlashTypeUtil extends StObject
   inline def sapSlashuiSlashmdcSlashutilSlashTypeUtil: sapSlashuiSlashmdcSlashutilSlashTypeUtil = "sap/ui/mdc/util/TypeUtil".asInstanceOf[sapSlashuiSlashmdcSlashutilSlashTypeUtil]
   
@@ -4157,6 +4417,10 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashContent extends StObject
   inline def sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashContent: sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashContent = "sap/ui/mdc/valuehelp/base/Content".asInstanceOf[sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashContent]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashDefineConditionPanel extends StObject
+  inline def sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashDefineConditionPanel: sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashDefineConditionPanel = "sap/ui/mdc/valuehelp/base/DefineConditionPanel".asInstanceOf[sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashDefineConditionPanel]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashbaseSlashDialogTab extends StObject
@@ -4181,6 +4445,10 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedList extends StObject
   inline def sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedList: sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedList = "sap/ui/mdc/valuehelp/content/FixedList".asInstanceOf[sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedList]
+  
+  @js.native
+  sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedListItem extends StObject
+  inline def sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedListItem: sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedListItem = "sap/ui/mdc/valuehelp/content/FixedListItem".asInstanceOf[sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashFixedListItem]
   
   @js.native
   sealed trait sapSlashuiSlashmdcSlashvaluehelpSlashcontentSlashMDCTable extends StObject
@@ -5793,6 +6061,10 @@ object openui5Strings {
   @js.native
   sealed trait sapSlashuxapSlashlibrary extends StObject
   inline def sapSlashuxapSlashlibrary: sapSlashuxapSlashlibrary = "sap/uxap/library".asInstanceOf[sapSlashuxapSlashlibrary]
+  
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
   sealed trait warning extends StObject

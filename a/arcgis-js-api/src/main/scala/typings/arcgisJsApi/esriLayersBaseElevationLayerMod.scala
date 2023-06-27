@@ -11,10 +11,10 @@ object esriLayersBaseElevationLayerMod {
   @JSImport("esri/layers/BaseElevationLayer", JSImport.Namespace)
   @js.native
   /**
-    * BaseElevationLayer is intended to be extended for creating custom elevation layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
-    */
+  		 * BaseElevationLayer is intended to be extended for creating custom elevation layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with BaseElevationLayer {

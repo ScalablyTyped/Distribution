@@ -13,10 +13,10 @@ trait BasemapConstructor
      with Instantiable1[/* properties */ BasemapProperties, Basemap] {
   
   /**
-    * Creates a new basemap instance from a [well known basemap ID](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#fromId)
-    */
+  		 * Creates a new basemap instance from a [well known basemap ID](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#fromId)
+  		 */
   def fromId(id: String): Basemap = js.native
   
   def fromJSON(json: Any): Basemap = js.native

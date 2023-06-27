@@ -6,18 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `519` extends StObject {
   
-  var path: MigrationidOrg
+  var message: String | Null
 }
 object `519` {
   
-  inline def apply(path: MigrationidOrg): `519` = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  inline def apply(): `519` = {
+    val __obj = js.Dynamic.literal(message = null)
     __obj.asInstanceOf[`519`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `519`] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: MigrationidOrg): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
   }
 }

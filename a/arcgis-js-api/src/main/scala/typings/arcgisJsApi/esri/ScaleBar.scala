@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`non-metric`
 import typings.arcgisJsApi.arcgisJsApiStrings.dual
+import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.line
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ruler
@@ -15,32 +16,32 @@ trait ScaleBar
      with Widget_ {
   
   /**
-    * The style for the scale bar.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
-    */
+  		 * The style for the scale bar.
+  		 *
+  		 * @default "line"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
+  		 */
   var style: ruler | line = js.native
   
   /**
-    * Units to use for the scale bar.
-    *
-    * @default non-metric
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
-    */
-  var unit: `non-metric` | metric | dual = js.native
+  		 * Units to use for the scale bar.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
+  		 */
+  var unit: metric | imperial | dual | `non-metric` = js.native
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#view)
+  		 */
   var view: MapView = js.native
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#viewModel)
+  		 */
   var viewModel: ScaleBarViewModel = js.native
 }

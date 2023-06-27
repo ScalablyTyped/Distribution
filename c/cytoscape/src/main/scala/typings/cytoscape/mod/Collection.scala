@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
 - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
 - org.scalablytyped.runtime.NumberDictionary because Inheritance from two classes. Inlined 
-- typings.cytoscape.mod.CollectionIteration because Inheritance from two classes. Inlined size, length, empty, nonempty, each, each, forEach, forEach, eq, first, last, slice, slice, slice, slice, toArray */ @js.native
+- typings.cytoscape.mod.CollectionIteration because Inheritance from two classes. Inlined size, length, empty, nonempty, each, each, forEach, forEach, eq, first, last, slice, slice, slice, slice, toArray, iterator */ @js.native
 trait Collection[TOut, TIn]
   extends StObject
      with CollectionGraphManipulation
@@ -75,6 +75,9 @@ trait Collection[TOut, TIn]
   
   def forEach(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
   def forEach(each: js.Function3[TOut, /* i */ Double, /* eles */ this.type, Unit | Boolean], thisArg: Any): this.type = js.native
+  
+  @JSName(js.Symbol.iterator)
+  var iterator: js.Function0[js.Iterator[TIn]] = js.native
   
   /**
     * Get the last element in the collection.

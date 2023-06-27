@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CtrlKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -155,13 +154,13 @@ object sapUiWebcMainLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Link` itself
       */
@@ -186,7 +185,7 @@ object sapUiWebcMainLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -197,7 +196,7 @@ object sapUiWebcMainLinkMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Link` itself
       */
@@ -215,13 +214,13 @@ object sapUiWebcMainLinkMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ LinkClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -229,7 +228,7 @@ object sapUiWebcMainLinkMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -242,7 +241,7 @@ object sapUiWebcMainLinkMod {
     def fireClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: CtrlKey): Boolean = js.native
+    mParameters: Link$ClickEventParameters): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getAccessibilityAttributes accessibilityAttributes}.
@@ -254,11 +253,11 @@ object sapUiWebcMainLinkMod {
       *
       *
       * 	 - `expanded`: Indicates whether the anchor element, or another grouping element it controls, is currently
-      * 			expanded or collapsed. Accepts the following string values:
+      *     expanded or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the anchor element. Accepts the following string values:
+      *     that can be triggered by the anchor element. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
@@ -283,8 +282,7 @@ object sapUiWebcMainLinkMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -410,11 +408,11 @@ object sapUiWebcMainLinkMod {
       *
       *
       * 	 - `expanded`: Indicates whether the anchor element, or another grouping element it controls, is currently
-      * 			expanded or collapsed. Accepts the following string values:
+      *     expanded or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the anchor element. Accepts the following string values:
+      *     that can be triggered by the anchor element. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
@@ -584,6 +582,60 @@ object sapUiWebcMainLinkMod {
     sWrappingType: WrappingType): this.type = js.native
   }
   
+  trait Link$ClickEventParameters extends StObject {
+    
+    /**
+      * Returns whether the "ALT" key was pressed when the event was triggered.
+      */
+    var altKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns whether the "CTRL" key was pressed when the event was triggered.
+      */
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns whether the "META" key was pressed when the event was triggered.
+      */
+    var metaKey: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Returns whether the "SHIFT" key was pressed when the event was triggered.
+      */
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
+  }
+  object Link$ClickEventParameters {
+    
+    inline def apply(): Link$ClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Link$ClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link$ClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+    }
+  }
+  
+  type LinkClickEvent = typings.openui5.sapUiBaseEventMod.default[Link$ClickEventParameters]
+  
+  type LinkClickEventParameters = Link$ClickEventParameters
+  
   trait LinkSettings
     extends StObject
        with ControlSettings {
@@ -596,11 +648,11 @@ object sapUiWebcMainLinkMod {
       *
       *
       * 	 - `expanded`: Indicates whether the anchor element, or another grouping element it controls, is currently
-      * 			expanded or collapsed. Accepts the following string values:
+      *     expanded or collapsed. Accepts the following string values:
       * 	`true`
       * 	 - `false`
       * 	 - `hasPopup`: Indicates the availability and type of interactive popup element, such as menu or dialog,
-      * 			that can be triggered by the anchor element. Accepts the following string values:
+      *     that can be triggered by the anchor element. Accepts the following string values:
       * 	`Dialog`
       * 	 - `Grid`
       * 	 - `ListBox`
@@ -624,7 +676,12 @@ object sapUiWebcMainLinkMod {
     /**
       * Fired when the component is triggered either with a mouse/tap or by using the Enter key.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Link$ClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the component design.
@@ -705,7 +762,7 @@ object sapUiWebcMainLinkMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Link$ClickEventParameters] => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       

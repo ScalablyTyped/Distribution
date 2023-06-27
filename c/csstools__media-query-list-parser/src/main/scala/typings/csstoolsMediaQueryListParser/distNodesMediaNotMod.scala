@@ -12,6 +12,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod.MediaInPar
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod._MediaInParensWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +49,13 @@ object distNodesMediaNotMod {
     
     var `type`: NodeType = js.native
     
-    def walk(cb: js.Function2[/* entry */ NodeMediaNotWalkerEntry, /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[/* entry */ NodeMediaNotWalkerEntry[T], /* index */ Double | String, Boolean | Unit]
+    ): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[/* entry */ NodeMediaNotWalkerEntry[T], /* index */ Double | String, Boolean | Unit],
+      state: T
+    ): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object MediaNot {
@@ -64,7 +71,7 @@ object distNodesMediaNotMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod.MediaInParensWalkerEntry
     - typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod.MediaInParens
   */
-  type MediaNotWalkerEntry = _MediaNotWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaNotWalkerEntry = _MediaNotWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaInParensMod.MediaInParensWalkerParent

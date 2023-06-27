@@ -25,5 +25,7 @@ object devLibJsxTextMod {
   
   type Construct = typings.micromarkUtilTypes.mod.Construct
   
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
+  
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

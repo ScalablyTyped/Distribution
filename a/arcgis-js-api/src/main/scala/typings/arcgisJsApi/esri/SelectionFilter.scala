@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectionFilter extends StObject {
   
   /**
-    * An array of numbers indicating the row's ObjectId's.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#SelectionFilter)
-    */
+  		 * An array of numbers indicating the row's ObjectId's.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#SelectionFilter)
+  		 */
   var objectIds: js.Array[Double]
   
   /**
-    * The type of the filter used.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#SelectionFilter)
-    */
+  		 * The type of the filter used.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FeatureTableViewModel.html#SelectionFilter)
+  		 */
   var `type`: String
 }
 object SelectionFilter {

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.notConfigured_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.notEnabled
   - typings.microsoftGraph.microsoftGraphStrings.phoneNumberNotUnique
   - typings.microsoftGraph.microsoftGraphStrings.ready
-  - typings.microsoftGraph.microsoftGraphStrings.notConfigured
+  - typings.microsoftGraph.microsoftGraphStrings.notConfigured_
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait AuthenticationMethodSignInState extends StObject
@@ -19,7 +20,7 @@ object AuthenticationMethodSignInState {
   
   inline def notAllowedByPolicy: typings.microsoftGraph.microsoftGraphStrings.notAllowedByPolicy = "notAllowedByPolicy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllowedByPolicy]
   
-  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: notConfigured_ = "notConfigured".asInstanceOf[notConfigured_]
   
   inline def notEnabled: typings.microsoftGraph.microsoftGraphStrings.notEnabled = "notEnabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notEnabled]
   

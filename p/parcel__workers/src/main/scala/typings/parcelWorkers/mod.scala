@@ -41,6 +41,8 @@ object mod {
     
     var shouldPatchConsole: js.UndefOr[Boolean] = js.undefined
     
+    var shouldTrace: js.UndefOr[Boolean] = js.undefined
+    
     var useLocalWorker: Boolean
     
     var warmWorkers: Boolean
@@ -77,6 +79,10 @@ object mod {
       inline def setShouldPatchConsole(value: Boolean): Self = StObject.set(x, "shouldPatchConsole", value.asInstanceOf[js.Any])
       
       inline def setShouldPatchConsoleUndefined: Self = StObject.set(x, "shouldPatchConsole", js.undefined)
+      
+      inline def setShouldTrace(value: Boolean): Self = StObject.set(x, "shouldTrace", value.asInstanceOf[js.Any])
+      
+      inline def setShouldTraceUndefined: Self = StObject.set(x, "shouldTrace", js.undefined)
       
       inline def setUseLocalWorker(value: Boolean): Self = StObject.set(x, "useLocalWorker", value.asInstanceOf[js.Any])
       

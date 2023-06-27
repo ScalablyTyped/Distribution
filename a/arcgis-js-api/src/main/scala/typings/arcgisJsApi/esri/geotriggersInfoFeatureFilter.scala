@@ -11,20 +11,20 @@ trait geotriggersInfoFeatureFilter
      with JSONSupport {
   
   /**
-    * An optional geometry used to filter the features from a feature table.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#geometry)
-    */
+  		 * An optional geometry used to filter the features from a feature table.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#geometry)
+  		 */
   var geometry: Geometry_ = js.native
   
   /**
-    * An optional SQL-based definition expression string that narrows the data to be used.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#where)
-    */
+  		 * An optional SQL-based definition expression string that narrows the data to be used.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#where)
+  		 */
   var where: String = js.native
 }

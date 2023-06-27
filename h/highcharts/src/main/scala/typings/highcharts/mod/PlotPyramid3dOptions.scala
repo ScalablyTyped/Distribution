@@ -203,6 +203,9 @@ trait PlotPyramid3dOptions extends StObject {
     * value`. Works only for points in a visible range. Adds the
     * `cumulativeSum` field to each point object that can be accessed e.g. in
     * the tooltip.pointFormat.
+    *
+    * With `dataGrouping` enabled, default grouping approximation is set to
+    * `sum`.
     */
   var cumulative: js.UndefOr[Boolean] = js.undefined
   
@@ -412,7 +415,11 @@ trait PlotPyramid3dOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
-  var legendSymbol: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts) What type of legend symbol to render for this series. Can be
+    * one of `lineMarker` or `rectangle`.
+    */
+  var legendSymbol: js.UndefOr[OptionsLegendSymbolValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -481,6 +488,12 @@ trait PlotPyramid3dOptions extends StObject {
     * (Highcharts) Properties for each single point.
     */
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  
+  /**
+    * (Highcharts) Same as accessibility.point.descriptionFormat, but for an
+    * individual series. Overrides the chart wide configuration.
+    */
+  var pointDescriptionFormat: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
@@ -955,7 +968,7 @@ object PlotPyramid3dOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
-    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    inline def setLegendSymbol(value: OptionsLegendSymbolValue): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
     
     inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
@@ -996,6 +1009,10 @@ object PlotPyramid3dOptions {
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setPoint(value: PlotSeriesPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormat(value: js.Function): Self = StObject.set(x, "pointDescriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatUndefined: Self = StObject.set(x, "pointDescriptionFormat", js.undefined)
     
     inline def setPointDescriptionFormatter(value: js.Function): Self = StObject.set(x, "pointDescriptionFormatter", value.asInstanceOf[js.Any])
     

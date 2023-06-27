@@ -50,7 +50,7 @@ trait SecureScoreControlProfile
   // Service that owns the control (Exchange, Sharepoint, Azure AD).
   var service: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
+  // List of threats the control mitigates (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
   var threats: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   var tier: js.UndefOr[NullableOption[String]] = js.undefined

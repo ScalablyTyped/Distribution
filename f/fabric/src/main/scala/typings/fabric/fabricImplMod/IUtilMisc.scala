@@ -23,7 +23,6 @@ trait IUtilMisc extends StObject {
     * measurement and so wrong bounding boxes.
     * After the font cache is cleared, either change the textObject text content or call
     * initDimensions() to trigger a recalculation
-    * @memberOf fabric.util
     * @param {String} [fontFamily] font family to clear
     */
   def clearFabricFontCache(): Unit = js.native
@@ -40,7 +39,6 @@ trait IUtilMisc extends StObject {
     * the one returned from qrDecompose, useful also if you want to calculate some
     * transformations from an object that is not enlived yet
     * @static
-    * @memberOf fabric.util
     * @param  {Object} options
     * @param  {Number} [options.angle]
     * @param  {Number} [options.scaleX]
@@ -221,7 +219,6 @@ trait IUtilMisc extends StObject {
   /**
     * reset an object transform state to neutral. Top and left are not accounted for
     * @static
-    * @memberOf fabric.util
     * @param  {fabric.Object} target object to transform
     */
   def resetObjectTransform(target: Object): Unit = js.native

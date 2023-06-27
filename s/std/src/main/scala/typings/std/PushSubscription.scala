@@ -7,24 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This Push API interface provides a subcription's URL endpoint and allows unsubscription from a push service.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription)
   */
 trait PushSubscription extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/endpoint) */
   /* standard dom */
   val endpoint: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/expirationTime) */
   /* standard dom */
   val expirationTime: EpochTimeStamp | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/getKey) */
   /* standard dom */
   def getKey(name: PushEncryptionKeyName): js.typedarray.ArrayBuffer | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/options) */
   /* standard dom */
   val options: PushSubscriptionOptions
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/toJSON) */
   /* standard dom */
   def toJSON(): PushSubscriptionJSON
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscription/unsubscribe) */
   /* standard dom */
   def unsubscribe(): js.Promise[scala.Boolean]
 }

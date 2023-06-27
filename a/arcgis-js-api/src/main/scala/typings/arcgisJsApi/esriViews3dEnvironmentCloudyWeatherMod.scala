@@ -11,10 +11,10 @@ object esriViews3dEnvironmentCloudyWeatherMod {
   @JSImport("esri/views/3d/environment/CloudyWeather", JSImport.Namespace)
   @js.native
   /**
-    * The CloudyWeather class allows you to change the weather conditions in the scene to cloudy weather.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-CloudyWeather.html)
-    */
+  		 * The CloudyWeather class allows you to change the weather conditions in the scene to cloudy weather.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-CloudyWeather.html)
+  		 */
   open class ^ ()
     extends StObject
        with CloudyWeather {

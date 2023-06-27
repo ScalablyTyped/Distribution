@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-schema-basic" : "1.2.1"
+      "prosemirror-schema-basic" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-schema-basic" : "1.2.1"
+      "prosemirror-schema-basic" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

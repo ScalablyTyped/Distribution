@@ -11,10 +11,10 @@ object esriLayersUnknownLayerMod {
   @JSImport("esri/layers/UnknownLayer", JSImport.Namespace)
   @js.native
   /**
-    * Represents a layer whose type could not be determined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnknownLayer.html)
-    */
+  		 * Represents a layer whose type could not be determined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnknownLayer.html)
+  		 */
   open class ^ ()
     extends StObject
        with UnknownLayer {

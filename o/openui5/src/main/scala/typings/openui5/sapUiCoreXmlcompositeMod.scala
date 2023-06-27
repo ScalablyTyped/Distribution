@@ -123,9 +123,9 @@ object sapUiCoreXmlcompositeMod {
     * ```
     *
     *
-    * **Note:** {@link topic:b11d853a8e784db6b2d210ef57b0f7d7 Requiring modules in XML} will result in side
-    * effects that might cause the XMLComposite to not work properly. We suggest you require the needed modules
-    * inside the JavaScript coding of the class extending the XMLComposite.
+    * **Note:** {@link https://ui5.sap.com/#/topic/b11d853a8e784db6b2d210ef57b0f7d7 Requiring modules in XML }
+    * will result in side effects that might cause the XMLComposite to not work properly. We suggest you require
+    * the needed modules inside the JavaScript coding of the class extending the XMLComposite.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
@@ -133,7 +133,7 @@ object sapUiCoreXmlcompositeMod {
     * See:
     * 	sap.ui.core.Control
     * 	sap.ui.core.Fragment
-    * 	{@link topic:b83a4dcb7d0e46969027345b8d32fd44 XML Composite Controls}
+    * 	{@link https://ui5.sap.com/#/topic/b83a4dcb7d0e46969027345b8d32fd44 XML Composite Controls}
     */
   open class default () extends XMLComposite
   /* static members */
@@ -209,7 +209,7 @@ object sapUiCoreXmlcompositeMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns an element by its ID in the context of the XMLComposite.
       *
@@ -223,7 +223,7 @@ object sapUiCoreXmlcompositeMod {
     sId: String): js.UndefOr[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.

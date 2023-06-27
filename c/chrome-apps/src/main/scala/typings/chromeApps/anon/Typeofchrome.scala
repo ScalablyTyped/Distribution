@@ -137,7 +137,7 @@ trait Typeofchrome extends StObject {
   // Certificate Provider //
   //////////////////////////
   /**
-    * @requires(CrOS) Chrome OS only.
+    * @requires Chrome OS only.
     * @requires Permissions: 'certificateProvider'
     * @description
     * Use this API to expose certificates to the platform which
@@ -151,14 +151,14 @@ trait Typeofchrome extends StObject {
   // Clipboard //
   ///////////////
   /**
-    * @requires(dev) **Dev** channel only.
+    * @requires **Dev** channel only.
     * @requires Permissions: 'clipboard'
     * @description
     * *This API is* **experimental**. *It is* **only** *available to Chrome users on the* **dev** *channel.*
     * The chrome.clipboard API is provided to allow users to access data of the clipboard.
     * This is a temporary solution for chromeos platform apps until open-web alternative is available.
     * It will be deprecated once open-web solution is available.
-    * @see[Docs]{@link https://developer.chrome.com/apps/clipboard}
+    * @see https://developer.chrome.com/apps/clipboard
     */
   val clipboard: Typeofclipboard
   
@@ -175,7 +175,7 @@ trait Typeofchrome extends StObject {
     * trigger actions in your app, for example, an
     * action to open the browser action or send a command
     * to the app.
-    * @see[Usage]{@link https://developer.chrome.com/apps/commands}
+    * @see https://developer.chrome.com/apps/commands
     */
   val commands: Typeofcommands
   
@@ -231,7 +231,7 @@ trait Typeofchrome extends StObject {
   // Diagnostics //
   /////////////////
   /**
-    * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
+    * @requires Only Chrome OS. Crashes app on Windows.
     * @requires Permissions: 'diagnostics'
     */
   val diagnostics: Typeofdiagnostics
@@ -242,7 +242,7 @@ trait Typeofchrome extends StObject {
   // Display Source //
   ////////////////////
   /**
-    * @requires(dev) Development versions only
+    * @requires Development versions only
     * @requires Permissions: 'displaySource'
     * The *chrome.displaySource* API creates a Display session using WebMediaStreamTrack as sources.
     * @todo TODO Finish documentation and typings
@@ -255,7 +255,7 @@ trait Typeofchrome extends StObject {
   // DNS //
   /////////
   /**
-    * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
+    * @requires Only Chrome OS. Crashes app on Windows.
     * @requires Permissions: 'diagnostics'
     * @description
     * Use the *chrome.dns* API for dns resolution.
@@ -322,7 +322,7 @@ trait Typeofchrome extends StObject {
   /**
     * Chrome experimental apis may be using this namespace.
     * Please consult the official documentation.
-    * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
+    * @see https://developer.chrome.com/apps/experimental
     */
   val experimental: Any
   
@@ -344,13 +344,13 @@ trait Typeofchrome extends StObject {
   // File Browser Handle //
   /////////////////////////
   /**
-    * @requires(CrOS) Chrome OS Only
+    * @requires Chrome OS Only
     * @requires Permissions: 'fileBrowserHandler'
     * @requires Manifest: 'file_browser_handlers'
     * @description
     * Use the chrome.fileBrowserHandler API to extend the Chrome OS file browser.
     * For example, you can use this API to enable users to upload files to your website.
-    * @see[Documentation]{@link https://developer.chrome.com/extensions/fileBrowserHandler}
+    * @see https://developer.chrome.com/extensions/fileBrowserHandler
     */
   val fileBrowserHandler: TypeoffileBrowserHandler
   
@@ -382,7 +382,7 @@ trait Typeofchrome extends StObject {
     * that can be accessible from the file manager on Chrome OS.
     * @since Chrome 40.
     * @requires Permissions: 'fileSystemProvider'
-    * @requires(CrOS) This API works only on Chrome OS.
+    * @requires This API works only on Chrome OS.
     * @requires Manifest:
     * Requires an section in addition to the permission.
     * The file_system_provider section must be declared as follows:
@@ -401,7 +401,7 @@ trait Typeofchrome extends StObject {
     * allow to add more than one mount points from the UI. If watchable is false, then a
     * refresh button will be rendered. Note, that if possible you should add support for
     * watchers, so changes on the file system can be reflected immediately and automatically.
-    * @see[More information]{@link https://developer.chrome.com/apps/fileSystemProvider}
+    * @see https://developer.chrome.com/apps/fileSystemProvider
     */
   val fileSystemProvider: TypeoffileSystemProvider
   
@@ -419,8 +419,8 @@ trait Typeofchrome extends StObject {
     * Migrate GCM apps to Firebase Cloud Messaging (FCM),
     * which inherits the reliable and scalable GCM infrastructure,
     * plus many new features. See the migration guide to learn more.
-    * @see[Migration guide]{@link https://developers.google.com/cloud-messaging/android/android-migrate-fcm}
-    * @see[GCM Imlementation guide]{@link https://developers.google.com/cloud-messaging/chrome/client}
+    * @see https://developers.google.com/cloud-messaging/android/android-migrate-fcm
+    * @see https://developers.google.com/cloud-messaging/chrome/client
     * @since Chrome 35.
     * @requires Permissions: 'gcm'
     */
@@ -452,7 +452,7 @@ trait Typeofchrome extends StObject {
   /**
     * Use the chrome.i18n infrastructure to implement internationalization across your whole app.
     * Content scripts: Fully supported.
-    * @see[Docs]{@link https://developer.chrome.com/apps/i18n}
+    * @see https://developer.chrome.com/apps/i18n
     * @since Chrome 25.
     */
   val i18n: Typeofi18n
@@ -465,7 +465,7 @@ trait Typeofchrome extends StObject {
   /**
     * Use the chrome.identity API to get OAuth2 access tokens.
     * @requires Permissions: 'identity'
-    * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
+    * @see https://developer.chrome.com/apps/app_identity
     * @since Chrome 29.
     */
   val identity: Typeofidentity
@@ -499,8 +499,8 @@ trait Typeofchrome extends StObject {
     * chrome.loadTimes() is a non-standard API that exposes loading metrics
     * and network information to developers in order to help them better
     * understand their site's performance in the real world.
-    * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
-    * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
+    * @see https://www.w3.org/TR/navigation-timing-2/
+    * @see https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated
     */
   def loadTimes(): deprecatedButUsable
   
@@ -524,7 +524,7 @@ trait Typeofchrome extends StObject {
   /**
     * Use the chrome.mdns API to discover services over mDNS.
     * This comprises a subset of the features of the NSD spec:
-    * @see[NSD Spec]{@link http://www.w3.org/TR/discovery-api/}
+    * @see http://www.w3.org/TR/discovery-api
     * @requires Permissions: 'mdns'
     * @since Chrome 31
     */
@@ -541,7 +541,7 @@ trait Typeofchrome extends StObject {
     * @since Chrome 24.
     * @requires Permissions: {'mediaGalleries': ['accessType1' | 'accessType2', ...]}
     *                        {'mediaGalleries': ['accessType1' | 'accessType2', ..., 'allAutoDetected']}
-    * @see[More information]{@link https://developer.chrome.com/apps/mediaGalleries}
+    * @see https://developer.chrome.com/apps/mediaGalleries
     */
   val mediaGalleries: TypeofmediaGalleries
   
@@ -557,7 +557,7 @@ trait Typeofchrome extends StObject {
     * templates and show these notifications to users in the system tray.
     * @requires Permissions: 'notifications'
     * @since Chrome 28.
-    * @see[Docs]{@link https://developer.chrome.com/extensions/notifications}
+    * @see https://developer.chrome.com/extensions/notifications
     */
   val notifications: Typeofnotifications
   
@@ -579,7 +579,7 @@ trait Typeofchrome extends StObject {
   // Platform Keys //
   ///////////////////
   /**
-    * @requires(CrOS) Only for Chrome OS.
+    * @requires Only for Chrome OS.
     * @requires Permissions: 'platformKeys'
     * @description
     * Use the *chrome.platformKeys* API to access client certificates
@@ -648,7 +648,7 @@ trait Typeofchrome extends StObject {
   // SignedIn Devices //
   //////////////////////
   /**
-    * @requires(dev) Requires Chrome *dev*
+    * @requires Requires Chrome *dev*
     * Use the *chrome.signedInDevices* API to get a list of devices
     * signed into chrome with the same account as the current profile.
     */
@@ -702,8 +702,8 @@ trait Typeofchrome extends StObject {
     * the same data can be available across different clients. Read Manage Data for
     * more on using this API.
     *
-    * @requires[Permissions: 'syncFileSystem']
-    * @see[Learn more: Manage Data]{@link https://developer.chrome.com/apps/app_storage}
+    * @requires Permissions: 'syncFileSystem'
+    * @see https://developer.chrome.com/apps/app_storage
     * @since Chrome 27
     */
   val syncFileSystem: TypeofsyncFileSystem
@@ -746,7 +746,7 @@ trait Typeofchrome extends StObject {
     * Errors generated by this API are reported by setting runtime.lastError
     * and executing the function's regular callback. The callback's
     * regular parameters will be undefined in this case.
-    * @see[Accessing Hardware Devices]{@link https://developer.chrome.com/apps/app_usb}
+    * @see https://developer.chrome.com/apps/app_usb
     */
   val usb: Typeofusb
   
@@ -756,7 +756,7 @@ trait Typeofchrome extends StObject {
   // Virtual Keyboard //
   //////////////////////
   /**
-    * @requires(CrOS Kiosk) Important: This API works only in Chrome OS apps.
+    * @requires CrOS Kiosk -Important: This API works only in Chrome OS apps.
     * @requires Permissions: 'virtualKeyboard'
     * @since Chrome 58
     * @description
@@ -772,7 +772,7 @@ trait Typeofchrome extends StObject {
   //////////////////
   /**
     * Use the chrome.vpnProvider API to implement a VPN client.
-    * @requires(CrOS) Important: This API works only on Chrome OS.
+    * @requires Important: This API works only on Chrome OS.
     * @requires Permissions: 'vpnProvider'
     * @since Chrome 43.
     */

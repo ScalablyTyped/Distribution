@@ -123,7 +123,7 @@ object sapUiCoreUtilExportTypeMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles the generation process of the file.
       *
@@ -136,7 +136,7 @@ object sapUiCoreUtilExportTypeMod {
     oExport: typings.openui5.sapUiCoreUtilExportMod.default): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a cell "generator" (inspired by ES6 Generators)
       *
@@ -145,7 +145,7 @@ object sapUiCoreUtilExportTypeMod {
     def cellGenerator(): Generator[Any, Any, Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a column "generator" (inspired by ES6 Generators)
       *
@@ -154,7 +154,7 @@ object sapUiCoreUtilExportTypeMod {
     def columnGenerator(): Generator[Any, Any, Any] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Generates the file content.
       *  Should be implemented by the individual types!
@@ -184,7 +184,7 @@ object sapUiCoreUtilExportTypeMod {
     def getCharset(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the number of columns.
       *
@@ -211,7 +211,7 @@ object sapUiCoreUtilExportTypeMod {
     def getMimeType(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the number of rows.
       *
@@ -220,7 +220,7 @@ object sapUiCoreUtilExportTypeMod {
     def getRowCount(): int = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a row "generator" (inspired by ES6 Generators)
       *

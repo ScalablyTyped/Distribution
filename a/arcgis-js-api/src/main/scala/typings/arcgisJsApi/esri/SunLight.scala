@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SunLight extends StObject {
   
   /**
-    * The ambient light color and intensity.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
-    */
+  		 * The ambient light color and intensity.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
+  		 */
   var ambient: ColorAndIntensity
   
   /**
-    * The diffuse light color and intensity.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
-    */
+  		 * The diffuse light color and intensity.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
+  		 */
   var diffuse: ColorAndIntensity
   
   /**
-    * The incident light direction in render coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
-    */
+  		 * The incident light direction in render coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
+  		 */
   var direction: ArrayLike[Double]
 }
 object SunLight {

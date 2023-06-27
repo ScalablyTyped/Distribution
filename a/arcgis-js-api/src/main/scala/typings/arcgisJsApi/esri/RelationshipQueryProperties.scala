@@ -7,119 +7,119 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipQueryProperties extends StObject {
   
   /**
-    * Indicates if the service should cache the relationship query results.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#cacheHint)
-    */
+  		 * Indicates if the service should cache the relationship query results.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#cacheHint)
+  		 */
   var cacheHint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the geodatabase version to query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#gdbVersion)
-    */
+  		 * Specify the geodatabase version to query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Specify the number of decimal places for the geometries returned by the query operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#geometryPrecision)
-    */
+  		 * Specify the number of decimal places for the geometries returned by the query operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#geometryPrecision)
+  		 */
   var geometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
-    * The historic moment to query.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#historicMoment)
-    */
+  		 * The historic moment to query.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#historicMoment)
+  		 */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * The maximum allowable offset used for generalizing geometries returned by the query operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#maxAllowableOffset)
-    */
+  		 * The maximum allowable offset used for generalizing geometries returned by the query operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#maxAllowableOffset)
+  		 */
   var maxAllowableOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of features to retrieve.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#num)
-    */
+  		 * The number of features to retrieve.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#num)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * An array of objectIds for the features in the layer/table being queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#objectIds)
-    */
+  		 * An array of objectIds for the features in the layer/table being queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#objectIds)
+  		 */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * One or more field names used to order the query results.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#orderByFields)
-    */
+  		 * One or more field names used to order the query results.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#orderByFields)
+  		 */
   var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Attribute fields to include in the FeatureSet.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outFields)
-    */
+  		 * Attribute fields to include in the FeatureSet.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The spatial reference for the returned geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outSpatialReference)
-    */
+  		 * The spatial reference for the returned geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The ID of the relationship to be queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#relationshipId)
-    */
+  		 * The ID of the relationship to be queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#relationshipId)
+  		 */
   var relationshipId: js.UndefOr[Double] = js.undefined
   
   /**
-    * If `true`, each feature in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) includes the geometry.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry)
-    */
+  		 * If `true`, each feature in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) includes the geometry.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry)
+  		 */
   var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then m-values are included in the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnM)
-    */
+  		 * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then m-values are included in the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnM)
+  		 */
   var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then z-values are included in the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnZ)
-    */
+  		 * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then z-values are included in the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnZ)
+  		 */
   var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The zero-based index indicating where to begin retrieving features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#start)
-    */
+  		 * The zero-based index indicating where to begin retrieving features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#start)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
   
   /**
-    * The definition expression to be applied to the related table or layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#where)
-    */
+  		 * The definition expression to be applied to the related table or layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#where)
+  		 */
   var where: js.UndefOr[String] = js.undefined
 }
 object RelationshipQueryProperties {

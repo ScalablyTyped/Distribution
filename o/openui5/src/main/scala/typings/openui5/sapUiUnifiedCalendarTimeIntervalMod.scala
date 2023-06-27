@@ -178,13 +178,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -210,7 +210,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -221,7 +221,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -243,13 +243,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -275,7 +275,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -286,7 +286,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -295,7 +295,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:startDateChange startDateChange} event of this
       * `sap.ui.unified.CalendarTimeInterval`.
@@ -311,13 +311,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -325,7 +325,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:startDateChange startDateChange} event of this
       * `sap.ui.unified.CalendarTimeInterval`.
@@ -346,7 +346,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
@@ -357,7 +357,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarTimeInterval`
       * itself
@@ -390,13 +390,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -414,13 +414,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -428,7 +428,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:startDateChange startDateChange} event of
       * this `sap.ui.unified.CalendarTimeInterval`.
@@ -441,13 +441,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachStartDateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -460,12 +460,18 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript date object for displayed item.
+      * date instance for displayed item.
       */
     oDate: js.Date): this.type = js.native
+    def displayDate(
+      /**
+      * date instance for displayed item.
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -478,7 +484,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -491,8 +497,8 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.34.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -510,13 +516,16 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       * @returns Reference to `this` for method chaining
       */
     def focusDate(/**
-      * JavaScript date object for focused item
+      * date instance for focused item
       */
     oDate: js.Date): this.type = js.native
+    def focusDate(/**
+      * date instance for focused item
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -562,18 +571,19 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     def getItems(): int = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMaxDate maxDate}.
       *
-      * Maximum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
+      * Maximum date that can be shown and selected in the Calendar. This must be a UI5Date or JavaScript Date
+      * object.
       *
       * **Note:** If the `maxDate` is set to be before the `minDate`, the `minDate` is set to the begin of the
       * month of the `maxDate`.
@@ -583,11 +593,12 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     def getMaxDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getMinDate minDate}.
       *
-      * Minimum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
+      * Minimum date that can be shown and selected in the Calendar. This must be a UI5Date or JavaScript Date
+      * object.
       *
       * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` is set to the end of the month
       * of the `minDate`.
@@ -597,7 +608,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     def getMinDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getPickerPopup pickerPopup}.
       *
@@ -642,8 +653,8 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Start date of the Interval as JavaScript Date object. The time interval corresponding to this Date and
-      * `items` and `intervalMinutes` will be the first time in the displayed row.
+      * Start date of the Interval as UI5Date or JavaScript Date object. The time interval corresponding to this
+      * Date and `items` and `intervalMinutes` will be the first time in the displayed row.
       *
       * @returns Value of property `startDate`
       */
@@ -865,7 +876,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     iItems: int): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -909,7 +920,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     oDate: js.Date): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getPickerPopup pickerPopup}.
       *
@@ -952,9 +963,13 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * A JavaScript date
+      * A date instance
       */
     oStartDate: js.Date): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oStartDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getWidth width}.
@@ -972,6 +987,20 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait CalendarTimeInterval$CancelEventParameters extends StObject
+  
+  trait CalendarTimeInterval$SelectEventParameters extends StObject
+  
+  trait CalendarTimeInterval$StartDateChangeEventParameters extends StObject
+  
+  type CalendarTimeIntervalCancelEvent = typings.openui5.sapUiBaseEventMod.default[CalendarTimeInterval$CancelEventParameters]
+  
+  type CalendarTimeIntervalCancelEventParameters = CalendarTimeInterval$CancelEventParameters
+  
+  type CalendarTimeIntervalSelectEvent = typings.openui5.sapUiBaseEventMod.default[CalendarTimeInterval$SelectEventParameters]
+  
+  type CalendarTimeIntervalSelectEventParameters = CalendarTimeInterval$SelectEventParameters
+  
   trait CalendarTimeIntervalSettings
     extends StObject
        with ControlSettings {
@@ -984,7 +1013,9 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     /**
       * Time selection was cancelled
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Size of on time interval in minutes, default is 60 minutes.
@@ -1012,7 +1043,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     var items: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Association to the `CalendarLegend` explaining the colors of the `specialDates`.
       *
@@ -1021,9 +1052,10 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     var legend: js.UndefOr[typings.openui5.sapUiUnifiedCalendarLegendMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
-      * Maximum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
+      * Maximum date that can be shown and selected in the Calendar. This must be a UI5Date or JavaScript Date
+      * object.
       *
       * **Note:** If the `maxDate` is set to be before the `minDate`, the `minDate` is set to the begin of the
       * month of the `maxDate`.
@@ -1033,9 +1065,10 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
-      * Minimum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
+      * Minimum date that can be shown and selected in the Calendar. This must be a UI5Date or JavaScript Date
+      * object.
       *
       * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` is set to the end of the month
       * of the `minDate`.
@@ -1045,7 +1078,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the day-, month- and yearPicker opens on a popup
       */
@@ -1056,7 +1089,9 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     /**
       * Time selection changed
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Date ranges for selected items of the `CalendarTimeInterval`.
@@ -1085,19 +1120,21 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       ] = js.undefined
     
     /**
-      * Start date of the Interval as JavaScript Date object. The time interval corresponding to this Date and
-      * `items` and `intervalMinutes` will be the first time in the displayed row.
+      * Start date of the Interval as UI5Date or JavaScript Date object. The time interval corresponding to this
+      * Date and `items` and `intervalMinutes` will be the first time in the displayed row.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * `startDate` was changed while navigation in `CalendarTimeInterval`
       */
-    var startDateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var startDateChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Width of the `CalendarTimeInterval`. The width of the single months depends on this width.
@@ -1122,7 +1159,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
@@ -1154,7 +1191,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       
       inline def setPickerPopupUndefined: Self = StObject.set(x, "pickerPopup", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
@@ -1180,7 +1217,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       
       inline def setStartDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
+      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
       
       inline def setStartDateChangeUndefined: Self = StObject.set(x, "startDateChange", js.undefined)
       
@@ -1191,4 +1228,8 @@ object sapUiUnifiedCalendarTimeIntervalMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type CalendarTimeIntervalStartDateChangeEvent = typings.openui5.sapUiBaseEventMod.default[CalendarTimeInterval$StartDateChangeEventParameters]
+  
+  type CalendarTimeIntervalStartDateChangeEventParameters = CalendarTimeInterval$StartDateChangeEventParameters
 }

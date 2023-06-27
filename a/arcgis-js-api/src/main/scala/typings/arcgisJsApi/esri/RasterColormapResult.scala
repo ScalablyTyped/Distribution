@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterColormapResult extends StObject {
   
   /**
-    * The colormap renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-colormap.html#RasterColormapResult)
-    */
+  		 * The colormap renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-colormap.html#RasterColormapResult)
+  		 */
   var renderer: RasterColormapRenderer
 }
 object RasterColormapResult {

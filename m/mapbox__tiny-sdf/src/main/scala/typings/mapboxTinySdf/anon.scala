@@ -10,7 +10,7 @@ object anon {
     
     var data: js.typedarray.Uint8ClampedArray
     
-    var glyphAdvance: Any
+    var glyphAdvance: Double
     
     var glyphHeight: Double
     
@@ -28,7 +28,7 @@ object anon {
     
     inline def apply(
       data: js.typedarray.Uint8ClampedArray,
-      glyphAdvance: Any,
+      glyphAdvance: Double,
       glyphHeight: Double,
       glyphLeft: Double,
       glyphTop: Double,
@@ -45,7 +45,7 @@ object anon {
       
       inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setGlyphAdvance(value: Any): Self = StObject.set(x, "glyphAdvance", value.asInstanceOf[js.Any])
+      inline def setGlyphAdvance(value: Double): Self = StObject.set(x, "glyphAdvance", value.asInstanceOf[js.Any])
       
       inline def setGlyphHeight(value: Double): Self = StObject.set(x, "glyphHeight", value.asInstanceOf[js.Any])
       

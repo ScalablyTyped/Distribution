@@ -724,7 +724,7 @@ object EChartOption {
       * Axes will be linked when they are refered
       * in the same link group.
       *
-      * @example:
+      * @example
       * link: [
       *     {
       *         // All axes with xAxisIndex 0, 3, 4 and yAxisName 'sameName' will be linked.
@@ -4220,7 +4220,7 @@ object EChartOption {
       * Components with smaller z values may be overwritten by those with larger z values.
       * z has a lower priority to zlevel, and will not create new Canvas.
       *
-      * @deafult 2
+      * @default 2
       */
     var z: js.UndefOr[Double] = js.undefined
     

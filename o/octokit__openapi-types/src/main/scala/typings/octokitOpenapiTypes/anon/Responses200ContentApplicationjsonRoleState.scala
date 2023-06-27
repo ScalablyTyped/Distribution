@@ -8,7 +8,7 @@ trait Responses200ContentApplicationjsonRoleState extends StObject {
   
   var parameters: PathTeamslugUsername
   
-  var requestBody: js.UndefOr[ContentApplicationjson123] = js.undefined
+  var requestBody: js.UndefOr[ContentApplicationjson146] = js.undefined
   
   var responses: `200ContentApplicationjsonRoleState`
 }
@@ -24,7 +24,7 @@ object Responses200ContentApplicationjsonRoleState {
     
     inline def setParameters(value: PathTeamslugUsername): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson123): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson146): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

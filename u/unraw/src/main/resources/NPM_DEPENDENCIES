@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "unraw" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "unraw" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -9,17 +9,17 @@ trait OpacityVariableProperties
      with VisualVariableProperties {
   
   /**
-    * Name of the numeric attribute field by which to normalize the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#normalizationField)
-    */
+  		 * Name of the numeric attribute field by which to normalize the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#normalizationField)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of objects that defines the opacity to apply to features in a layer in a sequence of stops.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#stops)
-    */
+  		 * An array of objects that defines the opacity to apply to features in a layer in a sequence of stops.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
 }
 object OpacityVariableProperties {

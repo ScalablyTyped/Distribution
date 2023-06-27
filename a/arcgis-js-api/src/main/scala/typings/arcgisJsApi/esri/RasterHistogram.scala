@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterHistogram extends StObject {
   
   /**
-    * Count of pixels that fall into each bin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
-    */
+  		 * Count of pixels that fall into each bin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
+  		 */
   var counts: js.Array[Double] | js.typedarray.Uint32Array
   
   /**
-    * The maximum pixel value of the histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
-    */
+  		 * The maximum pixel value of the histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
+  		 */
   var max: Double
   
   /**
-    * The minimum pixel value of the histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
-    */
+  		 * The minimum pixel value of the histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
+  		 */
   var min: Double
   
   /**
-    * Number of bins.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
-    */
+  		 * Number of bins.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#RasterHistogram)
+  		 */
   var size: Double
 }
 object RasterHistogram {

@@ -11,10 +11,10 @@ object esriWidgetsSliceSliceViewModelMod {
   @JSImport("esri/widgets/Slice/SliceViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html)
-    */
+  		 * Provides the logic for the [Slice](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SliceViewModel {

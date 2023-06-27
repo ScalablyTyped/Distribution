@@ -21,15 +21,35 @@ object devLibSyntaxMod {
   
   trait Options extends StObject {
     
-    var acorn: js.UndefOr[typings.micromarkUtilEventsToAcorn.mod.Acorn] = js.undefined
+    /**
+      * Acorn parser to use (optional).
+      */
+    var acorn: js.UndefOr[Acorn | Null] = js.undefined
     
-    var acornOptions: js.UndefOr[typings.acorn.mod.Options] = js.undefined
+    /**
+      * Configuration for acorn (default: `{ecmaVersion: 2020, locations: true,
+      * sourceType: 'module'}`).
+      *
+      * All fields except `locations` can be set.
+      */
+    var acornOptions: js.UndefOr[AcornOptions | Null] = js.undefined
     
-    var addResult: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Whether to add `estree` fields to tokens with results from acorn.
+      */
+    var addResult: js.UndefOr[Boolean | Null] = js.undefined
     
-    var allowEmpty: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Undocumented option to disallow empty attributes (used by
+      * `micromark-extension-mdx-jsx` to prohobit empty attribute values).
+      */
+    var allowEmpty: js.UndefOr[Boolean | Null] = js.undefined
     
-    var spread: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Undocumented option to parse only a spread (used by
+      * `micromark-extension-mdx-jsx` to parse spread attributes).
+      */
+    var spread: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Options {
     
@@ -41,9 +61,13 @@ object devLibSyntaxMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setAcorn(value: typings.micromarkUtilEventsToAcorn.mod.Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
+      inline def setAcorn(value: Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
       
-      inline def setAcornOptions(value: typings.acorn.mod.Options): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      inline def setAcornNull: Self = StObject.set(x, "acorn", null)
+      
+      inline def setAcornOptions(value: AcornOptions): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAcornOptionsNull: Self = StObject.set(x, "acornOptions", null)
       
       inline def setAcornOptionsUndefined: Self = StObject.set(x, "acornOptions", js.undefined)
       
@@ -51,19 +75,27 @@ object devLibSyntaxMod {
       
       inline def setAddResult(value: Boolean): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
       
+      inline def setAddResultNull: Self = StObject.set(x, "addResult", null)
+      
       inline def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
+      inline def setAllowEmptyNull: Self = StObject.set(x, "allowEmpty", null)
+      
       inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
       inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+      
+      inline def setSpreadNull: Self = StObject.set(x, "spread", null)
       
       inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     }
   }
   
   type State = typings.micromarkUtilTypes.mod.State
+  
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
   
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

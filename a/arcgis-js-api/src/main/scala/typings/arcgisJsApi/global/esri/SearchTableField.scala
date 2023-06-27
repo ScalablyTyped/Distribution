@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SearchTableField")
 @js.native
 /**
-  * Represents the field of a table to use for search.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html)
-  */
+		 * Represents the field of a table to use for search.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchTableField.html)
+		 */
 open class SearchTableField ()
   extends StObject
      with typings.arcgisJsApi.esri.SearchTableField {

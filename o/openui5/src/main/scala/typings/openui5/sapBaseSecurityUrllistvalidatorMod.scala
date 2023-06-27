@@ -64,7 +64,7 @@ object sapBaseSecurityUrllistvalidatorMod extends Shortcut {
   }
   
   /**
-    * @SINCE 1.85
+    * @since 1.85
     *
     * Registry to manage allowed URLs and validate against them.
     */

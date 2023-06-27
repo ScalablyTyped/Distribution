@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchViewModelSearchResult extends StObject {
   
   /**
-    * The extent, or bounding box, of the returned feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
-    */
+  		 * The extent, or bounding box, of the returned feature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
+  		 */
   var extent: Extent
   
   /**
-    * The resulting feature or location obtained from the search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
-    */
+  		 * The resulting feature or location obtained from the search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
+  		 */
   var feature: Graphic
   
   /**
-    * The name of the result.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
-    */
+  		 * The name of the result.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SearchResult)
+  		 */
   var name: String
 }
 object SearchViewModelSearchResult {

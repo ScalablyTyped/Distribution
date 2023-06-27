@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISMapServiceCapabilitiesOperations extends StObject {
   
   /**
-    * Indicates if the service can generate images.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates if the service can generate images.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var supportsExportMap: Boolean
   
   /**
-    * Indicates if the tiles from the service can be exported.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates if the tiles from the service can be exported.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var supportsExportTiles: Boolean
   
   /**
-    * Indicates if the service supports the [identify operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-identify.html#identify).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates if the service supports the [identify operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-identify.html#identify).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var supportsIdentify: Boolean
   
   /**
-    * Indicates if features in the sublayers can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates if features in the sublayers can be [queried](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var supportsQuery: Boolean
   
   /**
-    * Indicates if the service exposes a tile map that describes the presence of tiles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
-    */
+  		 * Indicates if the service exposes a tile map that describes the presence of tiles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+  		 */
   var supportsTileMap: Boolean
 }
 object ArcGISMapServiceCapabilitiesOperations {

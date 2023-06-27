@@ -1,6 +1,6 @@
 package typings.floatingUiDom
 
-import typings.floatingUiDom.anon.Dimensionsfallbackboolean
+import typings.floatingUiDom.anon.Dimensionsboolean
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +12,5 @@ object srcUtilsGetCssDimensionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getCssDimensions(element: Element): Dimensionsfallbackboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCssDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensionsfallbackboolean]
+  inline def getCssDimensions(element: Element): Dimensionsboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getCssDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensionsboolean]
 }

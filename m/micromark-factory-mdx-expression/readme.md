@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-factory-mdx-expression
 
-Typings are for version 1.0.6
+Typings are for version 1.0.9
 
 ## Library description:
 micromark factory to parse MDX expressions (found in JSX attributes, flow, text)

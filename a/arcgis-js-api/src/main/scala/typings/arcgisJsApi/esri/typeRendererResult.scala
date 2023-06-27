@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait typeRendererResult extends StObject {
   
   /**
-    * The ID of the basemap used to determine the optimal color scheme to represent the categorical variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * The ID of the basemap used to determine the optimal color scheme to represent the categorical variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * An array of objects describing the values or categories excluded from consideration in visualizing data from the given field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * An array of objects describing the values or categories excluded from consideration in visualizing data from the given field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var excludedUniqueValueInfos: js.Array[Any]
   
   /**
-    * The renderer object configured to best match the background of the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * The renderer object configured to best match the background of the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var renderer: UniqueValueRenderer
   
   /**
-    * The scheme used to represent each category within the `uniqueValueInfos`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * The scheme used to represent each category within the `uniqueValueInfos`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var typeScheme: TypeScheme
   
   /**
-    * An array of objects describing the value, symbol, and count of each unique type or category represented in the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
-    */
+  		 * An array of objects describing the value, symbol, and count of each unique type or category represented in the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#RendererResult)
+  		 */
   var uniqueValueInfos: js.Array[typeUniqueValueInfo]
 }
 object typeRendererResult {

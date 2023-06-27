@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sapUiCoreConfigurationMod.Configuration
+import typings.openui5.sapUiCoreElementMetadataMod.ControlRenderer
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.std.Element
@@ -58,7 +59,7 @@ object sapUiCoreRenderManagerMod {
     val ^ : js.Any = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates the ID to be used for the invisible Placeholder DOM element. This method can be used to get direct
       * access to the placeholder DOM element. Also statically available as RenderManager.createInvisiblePlaceholderId()
@@ -171,11 +172,11 @@ object sapUiCoreRenderManagerMod {
       *
       * The values for the attributes are collected from the following sources (last one wins):
       * 	 - from the properties and associations of the given `oElement`, using a heuristic mapping (described
-      * 			below)
+      *     below)
       * 	 - from the `mProps` parameter, as provided by the caller
       * 	 - from the parent of the given `oElement`, if it has a parent and if the parent implements the method
-      * 			{@link sap.ui.core.Element#enhanceAccessibilityState enhanceAccessibilityState}  If no `oElement`
-      * 			is given, only `mProps` will be taken into account.
+      *     {@link sap.ui.core.Element#enhanceAccessibilityState enhanceAccessibilityState}  If no `oElement`
+      *     is given, only `mProps` will be taken into account.
       *
       * Heuristic Mapping: The following mapping from properties/values to ARIA attributes is used (if the element
       * does have such properties):
@@ -255,8 +256,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#class} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#class} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Adds a class to the class collection if the name is not empty or null. The class collection is flushed
       * if it is written to the buffer using {@link #writeClasses}
@@ -279,8 +279,7 @@ object sapUiCoreRenderManagerMod {
     vValue: float | int
     ): this.type = js.native
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#style} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#style} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Adds a style property to the style collection if the value is not empty or null The style collection
       * is flushed if it is written to the buffer using {@link #writeStyle}
@@ -299,7 +298,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Adds an attribute name-value pair to the last open HTML element.
       *
@@ -307,8 +306,8 @@ object sapUiCoreRenderManagerMod {
       * must not be equal to `style` or `class`. Styles and classes must be set via dedicated `class` or `style`
       * methods. To update the DOM correctly, all attribute names have to be used in their canonical form. For
       * HTML elements, {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes attribute names} must
-      * all be set in lowercase. For foreign elements, such as SVG, {@link https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
-      * attribute names} can be set in upper camel case (e.g. viewBox).
+      * all be set in lowercase. For foreign elements, such as SVG, {@link https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute attribute names }
+      * can be set in upper camel case (e.g. viewBox).
       *
       * HTML entities are not supported by this method, use unicode escaping or the unicode character to implement
       * HTML entities. For further information see {@link https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references}.
@@ -324,7 +323,7 @@ object sapUiCoreRenderManagerMod {
     vValue: Any): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Adds a class name to the class collection of the last open HTML element.
       *
@@ -339,7 +338,7 @@ object sapUiCoreRenderManagerMod {
     sClass: String): this.type = js.native
     
     /**
-      * @SINCE 1.22.9
+      * @since 1.22.9
       *
       * Cleans up the rendering state of the given control without rendering it.
       *
@@ -401,7 +400,7 @@ object sapUiCoreRenderManagerMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Closes an open tag started with `openStart` and ended with `openEnd`.
       *
@@ -513,7 +512,7 @@ object sapUiCoreRenderManagerMod {
       * the control that should be rendered
       */
     oControl: typings.openui5.sapUiCoreControlMod.default
-    ): js.Object = js.native
+    ): ControlRenderer = js.native
     
     /**
       * Writes either an <img> tag for normal URI or a <span> tag with needed properties for an icon
@@ -602,7 +601,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Ends an open tag started with `openStart`.
       *
@@ -613,14 +612,14 @@ object sapUiCoreRenderManagerMod {
     def openEnd(): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Opens the start tag of an HTML element.
       *
       * This must be followed by `openEnd` and concluded with `close`. To allow a more efficient DOM update,
-      * all tag names have to be used in their canonical form. For HTML elements, {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-      * tag names} must all be set in lowercase. For foreign elements, such as SVG, {@link https://developer.mozilla.org/en-US/docs/Web/SVG/Element
-      * tag names} can be set in upper camel case (e.g. linearGradient).
+      * all tag names have to be used in their canonical form. For HTML elements, {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element tag names }
+      * must all be set in lowercase. For foreign elements, such as SVG, {@link https://developer.mozilla.org/en-US/docs/Web/SVG/Element tag names }
+      * can be set in upper camel case (e.g. linearGradient).
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -694,7 +693,7 @@ object sapUiCoreRenderManagerMod {
     vValue: float | int
     ): this.type = js.native
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Adds a style name-value pair to the style collection of the last open HTML element.
       *
@@ -717,12 +716,12 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets the text content with the given text.
       *
-      * Line breaks are not supported by this method, use CSS {@link https://www.w3.org/TR/CSS2/text.html#white-space-prop
-      * white-space: pre-line} option to implement line breaks.
+      * Line breaks are not supported by this method, use CSS {@link https://www.w3.org/TR/CSS2/text.html#white-space-prop white-space: pre-line }
+      * option to implement line breaks.
       *
       * HTML entities are not supported by this method, use unicode escaping or the unicode character to implement
       * HTML entities. For further information see {@link https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references}.
@@ -743,7 +742,7 @@ object sapUiCoreRenderManagerMod {
     sKey: String): Unit = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets the given HTML markup without any encoding or sanitizing.
       *
@@ -757,7 +756,7 @@ object sapUiCoreRenderManagerMod {
     sHtml: String): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Ends an open self-closing tag started with `voidStart`.
       *
@@ -769,7 +768,7 @@ object sapUiCoreRenderManagerMod {
     def voidEnd(): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Starts a self-closing tag, such as `img` or `input`.
       *
@@ -846,8 +845,7 @@ object sapUiCoreRenderManagerMod {
     def writeAcceleratorKey(): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#accessibilityState} of the {@link
-      * sap.ui.core.RenderManager Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#accessibilityState} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Collects accessibility related attributes for an `Element` and renders them as part of the currently
       * rendered DOM element.
@@ -857,11 +855,11 @@ object sapUiCoreRenderManagerMod {
       *
       * The values for the attributes are collected from the following sources (last one wins):
       * 	 - from the properties and associations of the given `oElement`, using a heuristic mapping (described
-      * 			below)
+      *     below)
       * 	 - from the `mProps` parameter, as provided by the caller
       * 	 - from the parent of the given `oElement`, if it has a parent and if the parent implements the method
-      * 			{@link sap.ui.core.Element#enhanceAccessibilityState enhanceAccessibilityState}  If no `oElement`
-      * 			is given, only `mProps` will be taken into account.
+      *     {@link sap.ui.core.Element#enhanceAccessibilityState enhanceAccessibilityState}  If no `oElement`
+      *     is given, only `mProps` will be taken into account.
       *
       * Heuristic Mapping: The following mapping from properties/values to ARIA attributes is used (if the element
       * does have such properties):
@@ -937,8 +935,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#attr} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#attr} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Writes the attribute and its value into the HTML.
       *
@@ -978,8 +975,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#attr} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#attr} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Writes the attribute and a value into the HTML, the value will be encoded.
       *
@@ -996,9 +992,9 @@ object sapUiCoreRenderManagerMod {
     vValue: Any): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Not longer needed, when using the {@link sap.ui.core.RenderManager Semantic
-      * Rendering API} the actual writing of classes happens when {@link sap.ui.core.RenderManager#openEnd} or
-      * {@link sap.ui.core.RenderManager#voidEnd} are used.
+      * @deprecated (since 1.92) - Not longer needed, when using the {@link sap.ui.core.RenderManager Semantic Rendering API }
+      * the actual writing of classes happens when {@link sap.ui.core.RenderManager#openEnd} or {@link sap.ui.core.RenderManager#voidEnd }
+      * are used.
       *
       * Writes and flushes the class collection (all CSS classes added by "addClass()" since the last flush).
       * Also writes the custom style classes added by the application with "addStyleClass(...)". Custom classes
@@ -1022,7 +1018,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#openStart} or {@link sap.ui.core.RenderManager#voidStart}
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#openStart} or {@link sap.ui.core.RenderManager#voidStart }
       * of the {@link sap.ui.core.RenderManager Semantic Rendering API} and pass the desired control data as
       * the second parameter to the new API.
       *
@@ -1038,7 +1034,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#openStart} or {@link sap.ui.core.RenderManager#voidStart}
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#openStart} or {@link sap.ui.core.RenderManager#voidStart }
       * of the {@link sap.ui.core.RenderManager Semantic Rendering API} and pass the desired element data as
       * the second parameter to the new API.
       *
@@ -1054,8 +1050,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#text} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#text} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Escape text for HTML and write it to the buffer.
       *
@@ -1080,8 +1075,7 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#icon} of the {@link sap.ui.core.RenderManager
-      * Semantic Rendering API}.
+      * @deprecated (since 1.92) - Instead use {@link sap.ui.core.RenderManager#icon} of the {@link sap.ui.core.RenderManager Semantic Rendering API}.
       *
       * Writes either an <img> tag for normal URI or a <span> tag with needed properties for an icon
       * URI.
@@ -1163,9 +1157,9 @@ object sapUiCoreRenderManagerMod {
     ): this.type = js.native
     
     /**
-      * @deprecated (since 1.92) - Not longer needed, when using the {@link sap.ui.core.RenderManager Semantic
-      * Rendering API} the actual writing of styles happens when {@link sap.ui.core.RenderManager#openEnd} or
-      * {@link sap.ui.core.RenderManager#voidEnd} are used.
+      * @deprecated (since 1.92) - Not longer needed, when using the {@link sap.ui.core.RenderManager Semantic Rendering API }
+      * the actual writing of styles happens when {@link sap.ui.core.RenderManager#openEnd} or {@link sap.ui.core.RenderManager#voidEnd }
+      * are used.
       *
       * Writes and flushes the style collection
       *

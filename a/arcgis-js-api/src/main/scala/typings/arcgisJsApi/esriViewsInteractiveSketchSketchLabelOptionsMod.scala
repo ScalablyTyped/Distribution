@@ -11,10 +11,10 @@ object esriViewsInteractiveSketchSketchLabelOptionsMod {
   @JSImport("esri/views/interactive/sketch/SketchLabelOptions", JSImport.Namespace)
   @js.native
   /**
-    * The `SketchLabelOptions` allows users to configure the labels which are shown next to each segment of a graphic while sketching and editing.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchLabelOptions.html)
-    */
+  		 * The `SketchLabelOptions` allows users to configure the labels which are shown next to each segment of a graphic while sketching and editing.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-sketch-SketchLabelOptions.html)
+  		 */
   open class ^ ()
     extends StObject
        with SketchLabelOptions {

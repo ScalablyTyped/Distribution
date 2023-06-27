@@ -12,14 +12,14 @@ trait `201ContentApplicationjsonMentionscount` extends StObject {
   /** @description Not Found if the discussion category name is invalid */
   var `404`: ContentApplicationjsonDocumentationurlMessage
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `201ContentApplicationjsonMentionscount` {
   
   inline def apply(
     `201`: ContentApplicationjsonMentionscount,
     `404`: ContentApplicationjsonDocumentationurlMessage,
-    `422`: Content346
+    `422`: Content414
   ): `201ContentApplicationjsonMentionscount` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
@@ -35,6 +35,6 @@ object `201ContentApplicationjsonMentionscount` {
     
     inline def set404(value: ContentApplicationjsonDocumentationurlMessage): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

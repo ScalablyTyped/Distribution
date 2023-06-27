@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-ready" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-ready" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

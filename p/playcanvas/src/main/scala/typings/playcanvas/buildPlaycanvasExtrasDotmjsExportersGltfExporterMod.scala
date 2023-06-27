@@ -20,21 +20,21 @@ object buildPlaycanvasExtrasDotmjsExportersGltfExporterMod {
       * @param {Entity} entity - The root of the entity hierarchy to convert.
       * @param {object} options - Object for passing optional arguments.
       * @param {number} [options.maxTextureSize] - Maximum texture size. Texture is resized if over the size.
-      * @returns {ArrayBuffer} - The GLB file content.
+      * @returns {Promise<ArrayBuffer>} - The GLB file content.
       */
     def build(
       entity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ Any
-    ): js.typedarray.ArrayBuffer = js.native
+    ): js.Promise[js.typedarray.ArrayBuffer] = js.native
     def build(
       entity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ Any,
       options: `0`
-    ): js.typedarray.ArrayBuffer = js.native
+    ): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
-    def buildJson(resources: Any, options: Any): Images = js.native
+    def buildJson(resources: Any, options: Any): js.Promise[Images] = js.native
     
     def collectResources(root: Any): BufferViewMap = js.native
     
-    def convertTextures(textures: Any, json: Any, options: Any): Unit = js.native
+    def convertTextures(srcTextures: Any, options: Any): js.Array[Any] = js.native
     
     def writeBufferViews(resources: Any, json: Any): Unit = js.native
     
@@ -47,5 +47,7 @@ object buildPlaycanvasExtrasDotmjsExportersGltfExporterMod {
     def writeMeshes(resources: Any, json: Any): Unit = js.native
     
     def writeNodes(resources: Any, json: Any): Unit = js.native
+    
+    def writeTextures(textures: Any, textureCanvases: Any, json: Any, options: Any): Unit = js.native
   }
 }

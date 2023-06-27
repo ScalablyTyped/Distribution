@@ -12,10 +12,10 @@ object mod extends Shortcut {
   
   @JSImport("remark-stringify", JSImport.Default)
   @js.native
-  val default: Plugin[js.Array[js.UndefOr[Options | Unit]], Root, String] = js.native
+  val default: Plugin[js.Array[js.UndefOr[Options]], Root, String] = js.native
   
-  type _To = Plugin[js.Array[js.UndefOr[Options | Unit]], Root, String]
+  type _To = Plugin[js.Array[js.UndefOr[Options]], Root, String]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Plugin[js.Array[js.UndefOr[Options | Unit]], Root, String] = default
+  override def _to: Plugin[js.Array[js.UndefOr[Options]], Root, String] = default
 }

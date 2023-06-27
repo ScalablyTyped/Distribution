@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMPrimitiveOverride extends StObject {
   
   /**
-    * The expression.
-    */
+  			 * The expression.
+  			 */
   var expression: js.UndefOr[String] = js.undefined
   
   /**
-    * The primitive name this override applies to.
-    */
+  			 * The primitive name this override applies to.
+  			 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * The property name in the primitive this override applies to.
-    */
+  			 * The property name in the primitive this override applies to.
+  			 */
   var propertyName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPrimitiveOverride
   
   /**
-    * ExpressionInfo that contains the Arcade expression that returns value as a number or a string depending on the PropertyName.
-    */
+  			 * ExpressionInfo that contains the Arcade expression that returns value as a number or a string depending on the PropertyName.
+  			 */
   var valueExpressionInfo: js.UndefOr[CIMExpressionInfo] = js.undefined
 }
 object CIMPrimitiveOverride {

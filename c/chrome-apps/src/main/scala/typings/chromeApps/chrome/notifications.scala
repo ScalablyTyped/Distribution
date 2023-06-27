@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * templates and show these notifications to users in the system tray.
   * @requires Permissions: 'notifications'
   * @since Chrome 28.
-  * @see[Docs]{@link https://developer.chrome.com/extensions/notifications}
+  * @see https://developer.chrome.com/extensions/notifications
   */
 object notifications {
   

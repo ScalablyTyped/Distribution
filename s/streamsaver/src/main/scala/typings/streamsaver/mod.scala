@@ -26,10 +26,12 @@ object mod {
       readableStrategy: QueuingStrategy[O]
     ) = this()
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TransformStream/readable) */
     /* standard dom */
     /* CompleteClass */
     override val readable: ReadableStream[O] = js.native
     
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TransformStream/writable) */
     /* standard dom */
     /* CompleteClass */
     override val writable: typings.std.WritableStream[I] = js.native

@@ -5,31 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Various utils for tying Smart Mapping renderers to the Smart Mapping slider widgets.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html)
-  */
+	 * Various utils for tying Smart Mapping renderers to the Smart Mapping slider widgets.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html)
+	 */
 trait supportUtils extends StObject {
   
   /**
-    * Formats a UNIX timestamp to a basic date string.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatDateLabel)
-    */
+  		 * Formats a UNIX timestamp to a basic date string.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatDateLabel)
+  		 */
   def formatDateLabel(value: Double): String
   
   /**
-    * Formats a numeric value for display as a label based on the current locale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatNumberLabel)
-    */
+  		 * Formats a numeric value for display as a label based on the current locale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatNumberLabel)
+  		 */
   def formatNumberLabel(value: Double): String
   
   /**
-    * Computes and returns standard deviation values based on the given average and standard deviation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#getDeviationValues)
-    */
+  		 * Computes and returns standard deviation values based on the given average and standard deviation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#getDeviationValues)
+  		 */
   def getDeviationValues(standardDeviation: Double, average: Double, count: Double): js.Array[Double]
 }
 object supportUtils {

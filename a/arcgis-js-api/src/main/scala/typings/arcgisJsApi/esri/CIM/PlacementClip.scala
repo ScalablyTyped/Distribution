@@ -11,32 +11,32 @@ sealed trait PlacementClip extends StObject
 object PlacementClip extends StObject {
   
   /**
-    * Markers are clipped at the boundary of the polygon.
-    */
+  			 * Markers are clipped at the boundary of the polygon.
+  			 */
   @js.native
   sealed trait ClipAtBoundary
     extends StObject
        with PlacementClip
   
   /**
-    * Markers are not clipped and may extend past the boundary of the polygon.
-    */
+  			 * Markers are not clipped and may extend past the boundary of the polygon.
+  			 */
   @js.native
   sealed trait DoNotClip
     extends StObject
        with PlacementClip
   
   /**
-    * Markers are not drawn if they touch the boundary of the polygon.
-    */
+  			 * Markers are not drawn if they touch the boundary of the polygon.
+  			 */
   @js.native
   sealed trait DoNotTouchBoundary
     extends StObject
        with PlacementClip
   
   /**
-    * Markers are not drawn if their center falls outside of the polygon.
-    */
+  			 * Markers are not drawn if their center falls outside of the polygon.
+  			 */
   @js.native
   sealed trait RemoveIfCenterOutsideBoundary
     extends StObject

@@ -10,31 +10,31 @@ trait SceneViewMediaHit
      with SceneViewViewHit {
   
   /**
-    * The distance from the camera position to the point geometry hit on this graphic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
-    */
+  		 * The distance from the camera position to the point geometry hit on this graphic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
+  		 */
   var distance: Double
   
   /**
-    * An element representing a media element in [MediaLayer.source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) that intersects the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
-    */
+  		 * An element representing a media element in [MediaLayer.source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) that intersects the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
+  		 */
   var element: ImageElement | VideoElement
   
   /**
-    * The media layer that contains the element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
-    */
+  		 * The media layer that contains the element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
+  		 */
   var layer: MediaLayer
   
   /**
-    * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
-    */
+  		 * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#MediaHit)
+  		 */
   var mapPoint: Point
   
   var `type`: media

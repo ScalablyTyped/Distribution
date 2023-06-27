@@ -144,8 +144,9 @@ object mod {
     val a: Double
     
     /**
-      * If this import statement is a dynamic import, this is the start value.
-      * Otherwise this is `-1`.
+      * If this import keyword is a dynamic import, this is the start value.
+      * If this import keyword is a static import, this is -1.
+      * If this import keyword is an import.meta expresion, this is -2.
       */
     val d: Double
     

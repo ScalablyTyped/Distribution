@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mvc {
   
   /**
-    * @SINCE 1.56.0
+    * @since 1.56.0
     *
     * Marker interface for a ControllerExtension.
     */

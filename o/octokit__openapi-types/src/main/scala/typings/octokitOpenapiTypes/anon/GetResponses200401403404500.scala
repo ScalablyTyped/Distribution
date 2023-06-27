@@ -24,11 +24,11 @@ trait GetResponses200401403404500 extends StObject {
     *
     * GitHub Apps must have write access to the `codespaces_user_secrets` user permission and write access to the `codespaces_secrets` repository permission on all referenced repositories to use this endpoint.
     */
-  var put: Responses377
+  var put: Responses452
 }
 object GetResponses200401403404500 {
   
-  inline def apply(get: Responses200401403404500, put: Responses377): GetResponses200401403404500 = {
+  inline def apply(get: Responses200401403404500, put: Responses452): GetResponses200401403404500 = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200401403404500]
   }
@@ -38,6 +38,6 @@ object GetResponses200401403404500 {
     
     inline def setGet(value: Responses200401403404500): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses377): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses452): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

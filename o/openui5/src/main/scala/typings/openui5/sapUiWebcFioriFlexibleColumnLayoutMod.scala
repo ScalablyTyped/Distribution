@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ArrowsUsed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -139,13 +138,13 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.FlexibleColumnLayout`
       * itself
@@ -172,7 +171,7 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
@@ -183,7 +182,7 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.FlexibleColumnLayout`
       * itself
@@ -223,13 +222,13 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit]
     ): this.type = js.native
     def detachLayoutChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutLayoutChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -237,17 +236,19 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLayoutChange(): this.type = js.native
-    def fireLayoutChange(/**
+    def fireLayoutChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ArrowsUsed): this.type = js.native
+    mParameters: FlexibleColumnLayout$LayoutChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibilityRoles accessibilityRoles}.
@@ -561,6 +562,89 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait FlexibleColumnLayout$LayoutChangeEventParameters extends StObject {
+    
+    /**
+      * Indicates if the layout is changed via the arrows
+      */
+    var arrowsUsed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The effective column layout, f.e [67%, 33%, 0]
+      */
+    var columnLayout: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * Indicates if the end column is currently visible
+      */
+    var endColumnVisible: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The current layout
+      */
+    var layout: js.UndefOr[FCLLayout] = js.undefined
+    
+    /**
+      * Indicates if the middle column is currently visible
+      */
+    var midColumnVisible: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates if the layout is changed via resizing
+      */
+    var resize: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates if the start column is currently visible
+      */
+    var startColumnVisible: js.UndefOr[Boolean] = js.undefined
+  }
+  object FlexibleColumnLayout$LayoutChangeEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$LayoutChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$LayoutChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$LayoutChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setArrowsUsed(value: Boolean): Self = StObject.set(x, "arrowsUsed", value.asInstanceOf[js.Any])
+      
+      inline def setArrowsUsedUndefined: Self = StObject.set(x, "arrowsUsed", js.undefined)
+      
+      inline def setColumnLayout(value: js.Array[Any]): Self = StObject.set(x, "columnLayout", value.asInstanceOf[js.Any])
+      
+      inline def setColumnLayoutUndefined: Self = StObject.set(x, "columnLayout", js.undefined)
+      
+      inline def setColumnLayoutVarargs(value: Any*): Self = StObject.set(x, "columnLayout", js.Array(value*))
+      
+      inline def setEndColumnVisible(value: Boolean): Self = StObject.set(x, "endColumnVisible", value.asInstanceOf[js.Any])
+      
+      inline def setEndColumnVisibleUndefined: Self = StObject.set(x, "endColumnVisible", js.undefined)
+      
+      inline def setLayout(value: FCLLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      
+      inline def setMidColumnVisible(value: Boolean): Self = StObject.set(x, "midColumnVisible", value.asInstanceOf[js.Any])
+      
+      inline def setMidColumnVisibleUndefined: Self = StObject.set(x, "midColumnVisible", js.undefined)
+      
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      
+      inline def setStartColumnVisible(value: Boolean): Self = StObject.set(x, "startColumnVisible", value.asInstanceOf[js.Any])
+      
+      inline def setStartColumnVisibleUndefined: Self = StObject.set(x, "startColumnVisible", js.undefined)
+    }
+  }
+  
+  type FlexibleColumnLayoutLayoutChangeEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$LayoutChangeEventParameters]
+  
+  type FlexibleColumnLayoutLayoutChangeEventParameters = FlexibleColumnLayout$LayoutChangeEventParameters
+  
   trait FlexibleColumnLayoutSettings
     extends StObject
        with ControlSettings {
@@ -643,7 +727,12 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
       * Fired when the layout changes via user interaction by clicking the arrows or by changing the component
       * size due to resizing.
       */
-    var layoutChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var layoutChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$LayoutChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the content in the middle column.
@@ -696,7 +785,9 @@ object sapUiWebcFioriFlexibleColumnLayoutMod {
         value: FCLLayout | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FCLLayout * / any */ String) | PropertyBindingInfo
       ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
+      inline def setLayoutChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$LayoutChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       
       inline def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
       

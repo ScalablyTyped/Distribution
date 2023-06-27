@@ -10,65 +10,65 @@ trait ListItemPanel
      with Identifiable {
   
   /**
-    * Adds a CSS class used to style a node that represents the panel.
-    *
-    * @default esri-icon-layer-list
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
-    */
+  		 * Adds a CSS class used to style a node that represents the panel.
+  		 *
+  		 * @default esri-icon-layer-list
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
+  		 */
   var className: String
   
   /**
-    * The content displayed in the ListItem panel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
-    */
+  		 * The content displayed in the ListItem panel.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
+  		 */
   var content: Widget_ | HTMLElement | String | js.Array[Any]
   
   /**
-    * If `true`, disables the ListItem's panel so the user cannot open or interact with it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#disabled)
-    */
+  		 * If `true`, disables the ListItem's panel so the user cannot open or interact with it.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#disabled)
+  		 */
   var disabled: Boolean
   
   /**
-    * The URL or data URI of an image used to represent the panel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image)
-    */
+  		 * The URL or data URI of an image used to represent the panel.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image)
+  		 */
   var image: String
   
   /**
-    * The panel's parent ListItem that represents a layer in the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#listItem)
-    */
+  		 * The panel's parent ListItem that represents a layer in the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#listItem)
+  		 */
   var listItem: ListItem
   
   /**
-    * Indicates if the panel's content is open and visible to the user.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
-    */
+  		 * Indicates if the panel's content is open and visible to the user.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
+  		 */
   var open: Boolean
   
   /**
-    * The title of the panel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#title)
-    */
+  		 * The title of the panel.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#title)
+  		 */
   var title: String
   
   /**
-    * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
-    */
+  		 * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
+  		 */
   var visible: Boolean
 }
 object ListItemPanel {

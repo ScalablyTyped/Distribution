@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetworkQueryNamedTraceConfigurationsQuery extends StObject {
   
   /**
-    * An array of the named trace configuration creators to be queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
-    */
+  		 * An array of the named trace configuration creators to be queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
+  		 */
   var creators: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * An array of named trace configuration globalIds (UUID) to be queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
-    */
+  		 * An array of named trace configuration globalIds (UUID) to be queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
+  		 */
   var globalIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * An array of named trace configuration names to be queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
-    */
+  		 * An array of named trace configuration names to be queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
+  		 */
   var names: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * An array of named trace configuration user tags to be queried.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
-    */
+  		 * An array of named trace configuration user tags to be queried.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#queryNamedTraceConfigurations)
+  		 */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object NetworkQueryNamedTraceConfigurationsQuery {

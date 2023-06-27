@@ -35,93 +35,93 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldProperties extends StObject {
   
   /**
-    * The display name for the field.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
-    */
+  		 * The display name for the field.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
+  		 */
   var alias: js.UndefOr[String] = js.undefined
   
   /**
-    * The default value set for the field.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
-    */
+  		 * The default value set for the field.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
+  		 */
   var defaultValue: js.UndefOr[Double | String | Null] = js.undefined
   
   /**
-    * Contains information describing the purpose of each field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#description)
-    */
+  		 * Contains information describing the purpose of each field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#description)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The domain associated with the field.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
-    */
+  		 * The domain associated with the field.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
+  		 */
   var domain: js.UndefOr[
     CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
   ] = js.undefined
   
   /**
-    * Indicates whether the field is editable.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
-    */
+  		 * Indicates whether the field is editable.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
+  		 */
   var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The field length.
-    *
-    * @default -1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
-    */
+  		 * The field length.
+  		 *
+  		 * @default -1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
+  		 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of the field.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
-    */
+  		 * The name of the field.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if the field can accept `null` values.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
-    */
+  		 * Indicates if the field can accept `null` values.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
+  		 */
   var nullable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The data type of the field.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
-    */
+  		 * The data type of the field.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
+  		 */
   var `type`: js.UndefOr[
     `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
   ] = js.undefined
   
   /**
-    * The types of values that can be assigned to a field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#valueType)
-    */
+  		 * The types of values that can be assigned to a field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#valueType)
+  		 */
   var valueType: js.UndefOr[
     binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
   ] = js.undefined

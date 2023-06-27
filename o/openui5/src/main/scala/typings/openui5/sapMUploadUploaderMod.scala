@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Loaded
-import typings.openui5.anon.ResponseXHR
-import typings.openui5.anon.`31`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMUploadUploaderHttpRequestMethodMod.UploaderHttpRequestMethod
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -167,13 +164,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def attachUploadAborted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -198,7 +195,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def attachUploadAborted(
       /**
@@ -209,7 +206,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -231,13 +228,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit]
     ): this.type = js.native
     def attachUploadCompleted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -263,7 +260,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit]
     ): this.type = js.native
     def attachUploadCompleted(
       /**
@@ -274,7 +271,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -296,13 +293,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit]
     ): this.type = js.native
     def attachUploadProgressed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -328,7 +325,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit]
     ): this.type = js.native
     def attachUploadProgressed(
       /**
@@ -339,7 +336,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -360,13 +357,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit]
     ): this.type = js.native
     def attachUploadStarted(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -391,7 +388,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit]
     ): this.type = js.native
     def attachUploadStarted(
       /**
@@ -402,7 +399,7 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.upload.Uploader` itself
       */
@@ -421,13 +418,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit]
     ): this.type = js.native
     def detachUploadAborted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadAbortedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -446,13 +443,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit]
     ): this.type = js.native
     def detachUploadCompleted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadCompletedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -471,13 +468,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit]
     ): this.type = js.native
     def detachUploadProgressed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadProgressedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -496,13 +493,13 @@ object sapMUploadUploaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit]
     ): this.type = js.native
     def detachUploadStarted(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ UploaderUploadStartedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -530,56 +527,64 @@ object sapMUploadUploaderMod {
     ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadAborted uploadAborted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadAborted(): this.type = js.native
-    def fireUploadAborted(/**
+    def fireUploadAborted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `31`): this.type = js.native
+    mParameters: Uploader$UploadAbortedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadCompleted uploadCompleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadCompleted(): this.type = js.native
-    def fireUploadCompleted(/**
+    def fireUploadCompleted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ResponseXHR): this.type = js.native
+    mParameters: Uploader$UploadCompletedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadProgressed uploadProgressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadProgressed(): this.type = js.native
-    def fireUploadProgressed(/**
+    def fireUploadProgressed(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Loaded): this.type = js.native
+    mParameters: Uploader$UploadProgressedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:uploadStarted uploadStarted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireUploadStarted(): this.type = js.native
-    def fireUploadStarted(/**
+    def fireUploadStarted(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `31`): this.type = js.native
+    mParameters: Uploader$UploadStartedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDownloadUrl downloadUrl}.
@@ -591,7 +596,7 @@ object sapMUploadUploaderMod {
     def getDownloadUrl(): String = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Gets current value of property {@link #getHttpRequestMethod httpRequestMethod}.
       *
@@ -613,7 +618,7 @@ object sapMUploadUploaderMod {
     def getUploadUrl(): String = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets current value of property {@link #getUseMultipart useMultipart}.
       *
@@ -642,7 +647,7 @@ object sapMUploadUploaderMod {
     sDownloadUrl: String): this.type = js.native
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * Sets a new value for property {@link #getHttpRequestMethod httpRequestMethod}.
       *
@@ -678,7 +683,7 @@ object sapMUploadUploaderMod {
     sUploadUrl: String): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets a new value for property {@link #getUseMultipart useMultipart}.
       *
@@ -728,6 +733,138 @@ object sapMUploadUploaderMod {
     ): Unit = js.native
   }
   
+  trait Uploader$UploadAbortedEventParameters extends StObject {
+    
+    /**
+      * The item that is going to be deleted.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadUploadSetItemMod.default] = js.undefined
+  }
+  object Uploader$UploadAbortedEventParameters {
+    
+    inline def apply(): Uploader$UploadAbortedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Uploader$UploadAbortedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uploader$UploadAbortedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMUploadUploadSetItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Uploader$UploadCompletedEventParameters extends StObject {
+    
+    /**
+      * The item that was uploaded.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadUploadSetItemMod.default] = js.undefined
+    
+    /**
+      * A JSON object containing the additional response parameters like response, responseXML, readyState, status
+      * and headers. Sample response object:
+      * ```javascript
+      *
+      * {
+      *    response: "\n...\n",
+      *    responseXML: null,
+      *    readyState: 2,
+      *    status: 404,
+      *    headers: "allow: GET, HEAD"
+      * }
+      * ```
+      */
+    var responseXHR: js.UndefOr[js.Object] = js.undefined
+  }
+  object Uploader$UploadCompletedEventParameters {
+    
+    inline def apply(): Uploader$UploadCompletedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Uploader$UploadCompletedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uploader$UploadCompletedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMUploadUploadSetItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setResponseXHR(value: js.Object): Self = StObject.set(x, "responseXHR", value.asInstanceOf[js.Any])
+      
+      inline def setResponseXHRUndefined: Self = StObject.set(x, "responseXHR", js.undefined)
+    }
+  }
+  
+  trait Uploader$UploadProgressedEventParameters extends StObject {
+    
+    /**
+      * The item that is being uploaded.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadUploadSetItemMod.default] = js.undefined
+    
+    /**
+      * The number of bytes transferred since the beginning of the operation. This doesn't include headers and
+      * other overhead, but only the content itself
+      */
+    var loaded: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The total number of bytes of content that will be transferred during the operation. If the total size
+      * is unknown, this value is zero.
+      */
+    var total: js.UndefOr[int] = js.undefined
+  }
+  object Uploader$UploadProgressedEventParameters {
+    
+    inline def apply(): Uploader$UploadProgressedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Uploader$UploadProgressedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uploader$UploadProgressedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMUploadUploadSetItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      
+      inline def setLoaded(value: int): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      
+      inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    }
+  }
+  
+  trait Uploader$UploadStartedEventParameters extends StObject {
+    
+    /**
+      * The item that is going to be uploaded.
+      */
+    var item: js.UndefOr[typings.openui5.sapMUploadUploadSetItemMod.default] = js.undefined
+  }
+  object Uploader$UploadStartedEventParameters {
+    
+    inline def apply(): Uploader$UploadStartedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Uploader$UploadStartedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uploader$UploadStartedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: typings.openui5.sapMUploadUploadSetItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
   trait UploaderSettings
     extends StObject
        with ElementSettings {
@@ -738,7 +875,7 @@ object sapMUploadUploaderMod {
     var downloadUrl: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.90
+      * @since 1.90
       *
       * HTTP request method chosen for file upload.
       */
@@ -749,22 +886,42 @@ object sapMUploadUploaderMod {
     /**
       * The event is fired when an XHR request reports its abortion.
       */
-    var uploadAborted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadAborted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadAbortedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is fired when an XHR request reports successful completion of upload process.
       */
-    var uploadCompleted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadCompleted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadCompletedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is fired every time an XHR request reports progress in uploading.
       */
-    var uploadProgressed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadProgressed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadProgressedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The event is fired just after the POST request was sent.
       */
-    var uploadStarted: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var uploadStarted: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadStartedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * URL where the next file is going to be uploaded to.
@@ -772,7 +929,7 @@ object sapMUploadUploaderMod {
     var uploadUrl: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * This property decides the type of request. If set to "true", the request gets sent as a multipart/form-data
       * request instead of file only request.
@@ -801,19 +958,27 @@ object sapMUploadUploaderMod {
       
       inline def setHttpRequestMethodUndefined: Self = StObject.set(x, "httpRequestMethod", js.undefined)
       
-      inline def setUploadAborted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadAborted", js.Any.fromFunction1(value))
+      inline def setUploadAborted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadAbortedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadAborted", js.Any.fromFunction1(value))
       
       inline def setUploadAbortedUndefined: Self = StObject.set(x, "uploadAborted", js.undefined)
       
-      inline def setUploadCompleted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadCompleted", js.Any.fromFunction1(value))
+      inline def setUploadCompleted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadCompletedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadCompleted", js.Any.fromFunction1(value))
       
       inline def setUploadCompletedUndefined: Self = StObject.set(x, "uploadCompleted", js.undefined)
       
-      inline def setUploadProgressed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadProgressed", js.Any.fromFunction1(value))
+      inline def setUploadProgressed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadProgressedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadProgressed", js.Any.fromFunction1(value))
       
       inline def setUploadProgressedUndefined: Self = StObject.set(x, "uploadProgressed", js.undefined)
       
-      inline def setUploadStarted(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "uploadStarted", js.Any.fromFunction1(value))
+      inline def setUploadStarted(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Uploader$UploadStartedEventParameters] => Unit
+      ): Self = StObject.set(x, "uploadStarted", js.Any.fromFunction1(value))
       
       inline def setUploadStartedUndefined: Self = StObject.set(x, "uploadStarted", js.undefined)
       
@@ -826,4 +991,20 @@ object sapMUploadUploaderMod {
       inline def setUseMultipartUndefined: Self = StObject.set(x, "useMultipart", js.undefined)
     }
   }
+  
+  type UploaderUploadAbortedEvent = typings.openui5.sapUiBaseEventMod.default[Uploader$UploadAbortedEventParameters]
+  
+  type UploaderUploadAbortedEventParameters = Uploader$UploadAbortedEventParameters
+  
+  type UploaderUploadCompletedEvent = typings.openui5.sapUiBaseEventMod.default[Uploader$UploadCompletedEventParameters]
+  
+  type UploaderUploadCompletedEventParameters = Uploader$UploadCompletedEventParameters
+  
+  type UploaderUploadProgressedEvent = typings.openui5.sapUiBaseEventMod.default[Uploader$UploadProgressedEventParameters]
+  
+  type UploaderUploadProgressedEventParameters = Uploader$UploadProgressedEventParameters
+  
+  type UploaderUploadStartedEvent = typings.openui5.sapUiBaseEventMod.default[Uploader$UploadStartedEventParameters]
+  
+  type UploaderUploadStartedEventParameters = Uploader$UploadStartedEventParameters
 }

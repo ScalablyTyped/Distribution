@@ -22,9 +22,9 @@ trait AccountManager extends StObject {
     * @privilegeName http://tizen.org/privilege/account.write
     *
     * @param account Account object to be added.
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def add(account: Account_): Unit = js.native
   
@@ -37,9 +37,9 @@ trait AccountManager extends StObject {
     * @param callback Callback method that is invoked for the events about accounts such as adding or removing an account.
     * @returns Identifier to clear the watch subscription for account changes.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addAccountListener(callback: AccountChangeCallback): Double = js.native
   
@@ -52,8 +52,8 @@ trait AccountManager extends StObject {
     * @param accountId Account identifier.
     * @returns Object with the given identifier or null.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getAccount(accountId: AccountId): Account_ | Null = js.native
   
@@ -68,9 +68,9 @@ trait AccountManager extends StObject {
     * @param errorCallback Callback method that is invoked when an error occurs.
     * @param applicationId ApplicationId of the provider application.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getAccounts(successCallback: AccountArraySuccessCallback): Unit = js.native
   def getAccounts(successCallback: AccountArraySuccessCallback, errorCallback: Null, applicationId: String): Unit = js.native
@@ -91,8 +91,8 @@ trait AccountManager extends StObject {
     * @param applicationId Identifier of the account provider application.
     * @returns Object with the given applicationId or null.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getProvider(applicationId: ApplicationId): AccountProvider | Null = js.native
   
@@ -107,9 +107,9 @@ trait AccountManager extends StObject {
     * @param errorCallback Callback method that is invoked when an error occurs.
     * @param capability Predefined capability or the vendor-specific capability in IRI format.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def getProviders(successCallback: AccountProviderArraySuccessCallback): Unit = js.native
   def getProviders(successCallback: AccountProviderArraySuccessCallback, errorCallback: Null, capability: String): Unit = js.native
@@ -134,8 +134,8 @@ trait AccountManager extends StObject {
     *
     * @param accountId Identifier of the account to remove.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def remove(accountId: AccountId): Unit = js.native
   
@@ -149,8 +149,8 @@ trait AccountManager extends StObject {
     *
     * @param accountListenerId Identifier of the listener for the account changes.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def removeAccountListener(accountListenerId: Double): Unit = js.native
   
@@ -163,9 +163,9 @@ trait AccountManager extends StObject {
     * @privilegeName http://tizen.org/privilege/account.write
     *
     * @param account Account object to update.
-    * @throw WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any of the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def update(account: Account_): Unit = js.native
 }

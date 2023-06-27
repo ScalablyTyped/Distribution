@@ -49,7 +49,7 @@ trait JQueryStatic extends StObject {
   /**
     * Create a segmented control: {id: "mySegments", className: "seggie", labels: ["one", "two","three"], selected: 1}
     *
-    * @param: options UICreateSegmentedOptions
+    * @param options UICreateSegmentedOptions
     * @return JQuery
     */
   def UICreateSegmented(options: ClassName): JQuery = js.native

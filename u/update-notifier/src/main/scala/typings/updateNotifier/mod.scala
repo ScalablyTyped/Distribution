@@ -1,6 +1,7 @@
 package typings.updateNotifier
 
 import typings.updateNotifier.updateNotifierMod.Settings
+import typings.updateNotifier.updateNotifierMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,4 +14,10 @@ object mod {
   
   inline def default(): typings.updateNotifier.updateNotifierMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.updateNotifier.updateNotifierMod.default]
   inline def default(settings: Settings): typings.updateNotifier.updateNotifierMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(settings.asInstanceOf[js.Any]).asInstanceOf[typings.updateNotifier.updateNotifierMod.default]
+  
+  @JSImport("update-notifier", "UpdateNotifier")
+  @js.native
+  open class UpdateNotifier () extends default {
+    def this(settings: Settings) = this()
+  }
 }

@@ -9,17 +9,17 @@ trait ColorVariableProperties
      with VisualVariableProperties {
   
   /**
-    * Name of the numeric attribute field by which to normalize the data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#normalizationField)
-    */
+  		 * Name of the numeric attribute field by which to normalize the data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#normalizationField)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of sequential objects, or stops, that defines a continuous color ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#stops)
-    */
+  		 * An array of sequential objects, or stops, that defines a continuous color ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-ColorVariable.html#stops)
+  		 */
   var stops: js.UndefOr[js.Array[ColorStopProperties]] = js.undefined
 }
 object ColorVariableProperties {

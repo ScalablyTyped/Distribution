@@ -134,7 +134,7 @@ object sapUiLayoutFormSimpleFormMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -165,7 +165,7 @@ object sapUiLayoutFormSimpleFormMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Destroys the title in the aggregation {@link #getTitle title}.
       *
@@ -174,7 +174,7 @@ object sapUiLayoutFormSimpleFormMod {
     def destroyTitle(): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Destroys the toolbar in the aggregation {@link #getToolbar toolbar}.
       *
@@ -183,7 +183,7 @@ object sapUiLayoutFormSimpleFormMod {
     def destroyToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getAdjustLabelSpan adjustLabelSpan}.
       *
@@ -205,15 +205,14 @@ object sapUiLayoutFormSimpleFormMod {
     def getAdjustLabelSpan(): Boolean = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -228,7 +227,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getBreakpointL breakpointL}.
       *
@@ -243,7 +242,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getBreakpointL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getBreakpointM breakpointM}.
       *
@@ -258,7 +257,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getBreakpointM(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getBreakpointXL breakpointXL}.
       *
@@ -273,7 +272,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getBreakpointXL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getColumnsL columnsL}.
       *
@@ -289,7 +288,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getColumnsL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getColumnsM columnsM}.
       *
@@ -304,7 +303,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getColumnsM(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getColumnsXL columnsXL}.
       *
@@ -325,18 +324,18 @@ object sapUiLayoutFormSimpleFormMod {
       * Gets content of aggregation {@link #getContent content}.
       *
       * The content of the form is structured in the following way:
-      * 	 - Add a `sap.ui.core.Title` element or `Toolbar` control to start a new group (`{@link sap.ui.layout.form.FormContainer
-      * 			FormContainer}`).
+      * 	 - Add a `sap.ui.core.Title` element or `Toolbar` control to start a new group (`{@link sap.ui.layout.form.FormContainer FormContainer}`).
+      *
       * 	 - Add a `Label` control to start a new row (`{@link sap.ui.layout.form.FormElement FormElement}`).
       *
       * 	 - Add controls as input fields, text fields or other as needed.
       * 	 - Use `LayoutData` to influence the layout for special cases in the single controls. For example, if
-      * 			a `ColumnLayout` is used as a layout, the form content is weighted using 4 cells for the labels and 8
-      * 			cells for the field part, for large size. If there is only little space, the labels are above the fields
-      * 			and each field uses 12 cells. If your input controls should influence their width, you can add `sap.ui.layout.ColumnElementData`
-      * 			to them via `setLayoutData` method. Ensure that the sum of the weights in the `ColumnElementData` is
-      * 			not more than 12, as this is the total width of the input control part of each form row.  Example
-      * 			for a row where the `Input` uses 6 cells and the second `Input` uses 2 cells (using `ColumnElementData`):
+      *     a `ColumnLayout` is used as a layout, the form content is weighted using 4 cells for the labels and 8
+      *     cells for the field part, for large size. If there is only little space, the labels are above the fields
+      *     and each field uses 12 cells. If your input controls should influence their width, you can add `sap.ui.layout.ColumnElementData`
+      *     to them via `setLayoutData` method. Ensure that the sum of the weights in the `ColumnElementData` is
+      *     not more than 12, as this is the total width of the input control part of each form row.  Example
+      *     for a row where the `Input` uses 6 cells and the second `Input` uses 2 cells (using `ColumnElementData`):
       *
       * ```javascript
       *
@@ -392,7 +391,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getEditable(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanL emptySpanL}.
       *
@@ -408,7 +407,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getEmptySpanL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanM emptySpanM}.
       *
@@ -423,7 +422,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getEmptySpanM(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getEmptySpanS emptySpanS}.
       *
@@ -438,7 +437,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getEmptySpanS(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getEmptySpanXL emptySpanXL}.
       *
@@ -468,7 +467,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getLabelMinWidth(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanL labelSpanL}.
       *
@@ -487,7 +486,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getLabelSpanL(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanM labelSpanM}.
       *
@@ -505,7 +504,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getLabelSpanM(): int = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getLabelSpanS labelSpanS}.
       *
@@ -520,7 +519,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getLabelSpanS(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getLabelSpanXL labelSpanXL}.
       *
@@ -590,7 +589,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getMinWidth(): int = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getSingleContainerFullSize singleContainerFullSize}.
       *
@@ -609,7 +608,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getSingleContainerFullSize(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets content of aggregation {@link #getTitle title}.
       *
@@ -618,7 +617,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getTitle(): typings.openui5.sapUiCoreTitleMod.default | String = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets content of aggregation {@link #getToolbar toolbar}.
       *
@@ -630,7 +629,7 @@ object sapUiLayoutFormSimpleFormMod {
     def getToolbar(): Toolbar = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -672,7 +671,7 @@ object sapUiLayoutFormSimpleFormMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -690,7 +689,7 @@ object sapUiLayoutFormSimpleFormMod {
     def removeAllContent(): js.Array[typings.openui5.sapUiCoreElementMod.default] = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -732,7 +731,7 @@ object sapUiLayoutFormSimpleFormMod {
     ): typings.openui5.sapUiCoreElementMod.default | Null = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getAdjustLabelSpan adjustLabelSpan}.
       *
@@ -760,7 +759,7 @@ object sapUiLayoutFormSimpleFormMod {
     bAdjustLabelSpan: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -787,7 +786,7 @@ object sapUiLayoutFormSimpleFormMod {
     sBackgroundDesign: BackgroundDesign): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getBreakpointL breakpointL}.
       *
@@ -808,7 +807,7 @@ object sapUiLayoutFormSimpleFormMod {
     iBreakpointL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getBreakpointM breakpointM}.
       *
@@ -829,7 +828,7 @@ object sapUiLayoutFormSimpleFormMod {
     iBreakpointM: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getBreakpointXL breakpointXL}.
       *
@@ -850,7 +849,7 @@ object sapUiLayoutFormSimpleFormMod {
     iBreakpointXL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getColumnsL columnsL}.
       *
@@ -872,7 +871,7 @@ object sapUiLayoutFormSimpleFormMod {
     iColumnsL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getColumnsM columnsM}.
       *
@@ -893,7 +892,7 @@ object sapUiLayoutFormSimpleFormMod {
     iColumnsM: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getColumnsXL columnsXL}.
       *
@@ -943,7 +942,7 @@ object sapUiLayoutFormSimpleFormMod {
     bEditable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanL emptySpanL}.
       *
@@ -965,7 +964,7 @@ object sapUiLayoutFormSimpleFormMod {
     iEmptySpanL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanM emptySpanM}.
       *
@@ -986,7 +985,7 @@ object sapUiLayoutFormSimpleFormMod {
     iEmptySpanM: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getEmptySpanS emptySpanS}.
       *
@@ -1007,7 +1006,7 @@ object sapUiLayoutFormSimpleFormMod {
     iEmptySpanS: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getEmptySpanXL emptySpanXL}.
       *
@@ -1049,7 +1048,7 @@ object sapUiLayoutFormSimpleFormMod {
     iLabelMinWidth: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanL labelSpanL}.
       *
@@ -1074,7 +1073,7 @@ object sapUiLayoutFormSimpleFormMod {
     iLabelSpanL: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanM labelSpanM}.
       *
@@ -1098,7 +1097,7 @@ object sapUiLayoutFormSimpleFormMod {
     iLabelSpanM: int): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getLabelSpanS labelSpanS}.
       *
@@ -1119,7 +1118,7 @@ object sapUiLayoutFormSimpleFormMod {
     iLabelSpanS: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getLabelSpanXL labelSpanXL}.
       *
@@ -1219,7 +1218,7 @@ object sapUiLayoutFormSimpleFormMod {
     iMinWidth: int): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getSingleContainerFullSize singleContainerFullSize}.
       *
@@ -1248,7 +1247,7 @@ object sapUiLayoutFormSimpleFormMod {
       */
     vTitle: String): this.type = js.native
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets the aggregated {@link #getTitle title}.
       *
@@ -1260,7 +1259,7 @@ object sapUiLayoutFormSimpleFormMod {
     vTitle: typings.openui5.sapUiCoreTitleMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets the aggregated {@link #getToolbar toolbar}.
       *
@@ -1272,7 +1271,7 @@ object sapUiLayoutFormSimpleFormMod {
     oToolbar: Toolbar): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -1294,7 +1293,7 @@ object sapUiLayoutFormSimpleFormMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the usage of `labelSpanL` and `labelSpanM` are dependent on the number of `FormContainers` in
       * one row. If only one `FormContainer` is displayed in one row, `labelSpanM` is used to define the size
@@ -1312,14 +1311,14 @@ object sapUiLayoutFormSimpleFormMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Specifies the background color of the `SimpleForm` content.
       *
@@ -1330,7 +1329,7 @@ object sapUiLayoutFormSimpleFormMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Breakpoint between Medium size and Large size.
       *
@@ -1339,7 +1338,7 @@ object sapUiLayoutFormSimpleFormMod {
     var breakpointL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Breakpoint between Small size and Medium size.
       *
@@ -1348,7 +1347,7 @@ object sapUiLayoutFormSimpleFormMod {
     var breakpointM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Breakpoint between Medium size and Large size.
       *
@@ -1357,7 +1356,7 @@ object sapUiLayoutFormSimpleFormMod {
     var breakpointXL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Form columns for large size. The number of columns for large size must not be smaller than the number
       * of columns for medium size.
@@ -1367,7 +1366,7 @@ object sapUiLayoutFormSimpleFormMod {
     var columnsL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Form columns for medium size.
       *
@@ -1376,7 +1375,7 @@ object sapUiLayoutFormSimpleFormMod {
     var columnsM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Form columns for extra large size. The number of columns for extra large size must not be smaller than
       * the number of columns for large size.
@@ -1389,18 +1388,18 @@ object sapUiLayoutFormSimpleFormMod {
     
     /**
       * The content of the form is structured in the following way:
-      * 	 - Add a `sap.ui.core.Title` element or `Toolbar` control to start a new group (`{@link sap.ui.layout.form.FormContainer
-      * 			FormContainer}`).
+      * 	 - Add a `sap.ui.core.Title` element or `Toolbar` control to start a new group (`{@link sap.ui.layout.form.FormContainer FormContainer}`).
+      *
       * 	 - Add a `Label` control to start a new row (`{@link sap.ui.layout.form.FormElement FormElement}`).
       *
       * 	 - Add controls as input fields, text fields or other as needed.
       * 	 - Use `LayoutData` to influence the layout for special cases in the single controls. For example, if
-      * 			a `ColumnLayout` is used as a layout, the form content is weighted using 4 cells for the labels and 8
-      * 			cells for the field part, for large size. If there is only little space, the labels are above the fields
-      * 			and each field uses 12 cells. If your input controls should influence their width, you can add `sap.ui.layout.ColumnElementData`
-      * 			to them via `setLayoutData` method. Ensure that the sum of the weights in the `ColumnElementData` is
-      * 			not more than 12, as this is the total width of the input control part of each form row.  Example
-      * 			for a row where the `Input` uses 6 cells and the second `Input` uses 2 cells (using `ColumnElementData`):
+      *     a `ColumnLayout` is used as a layout, the form content is weighted using 4 cells for the labels and 8
+      *     cells for the field part, for large size. If there is only little space, the labels are above the fields
+      *     and each field uses 12 cells. If your input controls should influence their width, you can add `sap.ui.layout.ColumnElementData`
+      *     to them via `setLayoutData` method. Ensure that the sum of the weights in the `ColumnElementData` is
+      *     not more than 12, as this is the total width of the input control part of each form row.  Example
+      *     for a row where the `Input` uses 6 cells and the second `Input` uses 2 cells (using `ColumnElementData`):
       *
       * ```javascript
       *
@@ -1456,7 +1455,7 @@ object sapUiLayoutFormSimpleFormMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on large size.
       *
@@ -1466,7 +1465,7 @@ object sapUiLayoutFormSimpleFormMod {
     var emptySpanL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on medium size.
       *
@@ -1475,7 +1474,7 @@ object sapUiLayoutFormSimpleFormMod {
     var emptySpanM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Number of grid cells that are empty at the end of each line on small size.
       *
@@ -1484,7 +1483,7 @@ object sapUiLayoutFormSimpleFormMod {
     var emptySpanS: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Number of grid cells that are empty at the end of each line on extra large size.
       *
@@ -1502,7 +1501,7 @@ object sapUiLayoutFormSimpleFormMod {
     var labelMinWidth: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in large size.
       *
@@ -1515,7 +1514,7 @@ object sapUiLayoutFormSimpleFormMod {
     var labelSpanL: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in medium size.
       *
@@ -1527,7 +1526,7 @@ object sapUiLayoutFormSimpleFormMod {
     var labelSpanM: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Default span for labels in small size.
       *
@@ -1536,7 +1535,7 @@ object sapUiLayoutFormSimpleFormMod {
     var labelSpanS: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Default span for labels in extra large size.
       *
@@ -1584,7 +1583,7 @@ object sapUiLayoutFormSimpleFormMod {
     var minWidth: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If the `Form` contains only one single `FormContainer` and this property is set, the `FormContainer`
       * is displayed using the full size of the `Form`. In this case the properties `columnsL` and `columnsM`
@@ -1599,14 +1598,14 @@ object sapUiLayoutFormSimpleFormMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Title element of the `SimpleForm`. Can either be a `Title` element, or a string.
       */
     var title: js.UndefOr[String | typings.openui5.sapUiCoreTitleMod.default | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Toolbar of the `SimpleForm`.
       *
@@ -1616,7 +1615,7 @@ object sapUiLayoutFormSimpleFormMod {
     var toolbar: js.UndefOr[Toolbar] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Width of the form.
       */

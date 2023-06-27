@@ -89,7 +89,7 @@ object sapUiSupportLibraryMod {
     /* "DataModel" */ val DataModel: typings.openui5.sapUiSupportLibraryMod.Categories.DataModel & String = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Fiori Guidelines issue category.
       */
@@ -118,7 +118,7 @@ object sapUiSupportLibraryMod {
     /* "Memory" */ val Memory: typings.openui5.sapUiSupportLibraryMod.Categories.Memory & String = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Modularization issue category.
       */

@@ -4,27 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A screen, usually the one on which the current window is being rendered, and is obtained using window.screen. */
+/**
+  * A screen, usually the one on which the current window is being rendered, and is obtained using window.screen.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen)
+  */
 trait Screen extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/availHeight) */
   /* standard dom */
   val availHeight: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/availWidth) */
   /* standard dom */
   val availWidth: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/colorDepth) */
   /* standard dom */
   val colorDepth: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/height) */
   /* standard dom */
   val height: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/orientation) */
   /* standard dom */
   val orientation: ScreenOrientation
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/pixelDepth) */
   /* standard dom */
   val pixelDepth: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Screen/width) */
   /* standard dom */
   val width: Double
 }

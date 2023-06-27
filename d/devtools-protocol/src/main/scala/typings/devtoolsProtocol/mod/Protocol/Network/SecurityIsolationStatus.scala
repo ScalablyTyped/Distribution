@@ -9,6 +9,8 @@ trait SecurityIsolationStatus extends StObject {
   var coep: js.UndefOr[CrossOriginEmbedderPolicyStatus] = js.undefined
   
   var coop: js.UndefOr[CrossOriginOpenerPolicyStatus] = js.undefined
+  
+  var csp: js.UndefOr[js.Array[ContentSecurityPolicyStatus]] = js.undefined
 }
 object SecurityIsolationStatus {
   
@@ -27,5 +29,11 @@ object SecurityIsolationStatus {
     inline def setCoop(value: CrossOriginOpenerPolicyStatus): Self = StObject.set(x, "coop", value.asInstanceOf[js.Any])
     
     inline def setCoopUndefined: Self = StObject.set(x, "coop", js.undefined)
+    
+    inline def setCsp(value: js.Array[ContentSecurityPolicyStatus]): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
+    
+    inline def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
+    
+    inline def setCspVarargs(value: ContentSecurityPolicyStatus*): Self = StObject.set(x, "csp", js.Array(value*))
   }
 }

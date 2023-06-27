@@ -17,8 +17,8 @@ object sapUiCommonsFormFormElementMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.layout.form.FormElement#constructor
-    * sap.ui.layout.form.FormElement} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.layout.form.FormElement#constructor sap.ui.layout.form.FormElement }
+    * can be used.
     */
   open class default () extends FormElement {
     def this(/**

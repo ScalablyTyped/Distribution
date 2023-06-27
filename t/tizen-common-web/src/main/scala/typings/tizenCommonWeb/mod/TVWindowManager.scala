@@ -15,9 +15,9 @@ trait TVWindowManager extends StObject {
     *
     * @returns long The identifier of the resolution change listener.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if it fails to register a listener.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if it fails to register a listener.
     *
     * @since 2.4
     *
@@ -33,8 +33,8 @@ trait TVWindowManager extends StObject {
     * @param successCallback The method to invoke when a list of the available windows is retrieved successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window
@@ -57,9 +57,9 @@ trait TVWindowManager extends StObject {
     * @param unit The measurement unit for specifying the display area - by default, this attribute is set to _"px"_.
     * @param type The window type - by default, this attribute is set to MAIN.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window
@@ -135,9 +135,9 @@ trait TVWindowManager extends StObject {
     *
     * @returns The information about the current video source. Returned object will have the _signal_ property, stating whether there is signal provided or not on the source, this property value will be filled only when the window was shown using [show()](./tvwindow.html#TVWindowManager::show) function.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window
@@ -148,9 +148,9 @@ trait TVWindowManager extends StObject {
   /**
     * Gets video resolution information.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @param type The window type - by default, this attribute is set to MAIN.
     *
@@ -171,9 +171,9 @@ trait TVWindowManager extends StObject {
     * @param errorCallback The method to invoke when an error occurs.
     * @param type The window type - by default, this attribute is set to MAIN.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window
@@ -191,8 +191,8 @@ trait TVWindowManager extends StObject {
     *
     * @param listenerId The identifier of the listener for resolution changes.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError in any other error case.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError in any other error case.
     *
     * @since 2.4
     *
@@ -211,9 +211,9 @@ trait TVWindowManager extends StObject {
     * @param errorCallback The method to invoke when an error occurs.
     * @param type The window type - by default, this attribute is set to MAIN.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window
@@ -275,10 +275,10 @@ trait TVWindowManager extends StObject {
     * By default, this parameter is set to FRONT.
     * If this parameter is set to null or FRONT, this method behaves in the same way as it did before Tizen 2.4.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
-    * @throw WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input attribute is not compatible with the expected type for this attribute.
+    * @throws WebAPIException with error type InvalidValuesError, if any of the input parameters contain an invalid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError if any other error occurs.
     *
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/tv.window

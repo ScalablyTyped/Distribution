@@ -5,55 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A convenience module for providing input options for the geoprocessing service return values.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html)
-  */
+	 * A convenience module for providing input options for the geoprocessing service return values.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html)
+	 */
 trait GPOptions extends StObject {
   
   /**
-    * The spatial reference of the output geometries.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#outSpatialReference)
-    */
+  		 * The spatial reference of the output geometries.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#outSpatialReference)
+  		 */
   var outSpatialReference: SpatialReference
   
   /**
-    * ProcessExtent, if specified, will only process features that overlap this extent.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#processExtent)
-    */
+  		 * ProcessExtent, if specified, will only process features that overlap this extent.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#processExtent)
+  		 */
   var processExtent: Extent
   
   /**
-    * The spatial reference that the model will use to perform geometry operations.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#processSpatialReference)
-    */
+  		 * The spatial reference that the model will use to perform geometry operations.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#processSpatialReference)
+  		 */
   var processSpatialReference: SpatialReference
   
   /**
-    * If `true`, m-values will be included in the results if the features have m-values.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#returnM)
-    */
+  		 * If `true`, m-values will be included in the results if the features have m-values.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#returnM)
+  		 */
   var returnM: Boolean
   
   /**
-    * If `true`, z-values will be included in the results if the features have z-values.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#returnZ)
-    */
+  		 * If `true`, z-values will be included in the results if the features have z-values.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geoprocessor-GPOptions.html#returnZ)
+  		 */
   var returnZ: Boolean
 }
 object GPOptions {

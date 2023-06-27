@@ -123,7 +123,7 @@ object sapUiCommonsRichTooltipMod {
     extends typings.openui5.sapUiCoreTooltipBaseMod.default {
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Gets current value of property {@link #getImageAltText imageAltText}.
       *
@@ -161,7 +161,7 @@ object sapUiCommonsRichTooltipMod {
     def getValueStateText(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Calculates the height of the RichTooltip to set a proper min-height. Additionally the ARIA attributes
       * are set to the corresponding elements.
@@ -169,7 +169,7 @@ object sapUiCommonsRichTooltipMod {
     def onAfterRendering(): Unit = js.native
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * Sets a new value for property {@link #getImageAltText imageAltText}.
       *
@@ -231,7 +231,7 @@ object sapUiCommonsRichTooltipMod {
        with TooltipBaseSettings {
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * This is the alt text for the image
       */
@@ -248,7 +248,7 @@ object sapUiCommonsRichTooltipMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.11.1
+      * @since 1.11.1
       *
       * This property is an individual text that will be used instead of the default ValueState text
       */

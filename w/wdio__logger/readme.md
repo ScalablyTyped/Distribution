@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__logger
 
-Typings are for version 8.6.6
+Typings are for version 8.11.0
 
 ## Library description:
 A helper utility for logging of WebdriverIO packages

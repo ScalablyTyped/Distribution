@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RadioButtonsInputProperti extends StObject {
   
   /**
-    * The text used to represent a null value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html#noValueOptionLabel)
-    */
+  		 * The text used to represent a null value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html#noValueOptionLabel)
+  		 */
   var noValueOptionLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Determines whether a null value option is displayed.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html#showNoValueOption)
-    */
+  		 * Determines whether a null value option is displayed.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html#showNoValueOption)
+  		 */
   var showNoValueOption: js.UndefOr[Boolean] = js.undefined
   
   var `type`: `radio-buttons`

@@ -13,7 +13,7 @@ trait Error extends StObject {
   
   var duration: Double
   
-  var error: `441`
+  var error: `519`
   
   var pusher: Avatarurl | Null
   
@@ -31,7 +31,7 @@ object Error {
     commit: String,
     created_at: String,
     duration: Double,
-    error: `441`,
+    error: `519`,
     status: String,
     updated_at: String,
     url: String
@@ -49,7 +49,7 @@ object Error {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setError(value: `441`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `519`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPusher(value: Avatarurl): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     

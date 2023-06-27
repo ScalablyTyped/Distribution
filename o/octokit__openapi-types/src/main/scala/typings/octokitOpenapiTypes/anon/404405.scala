@@ -9,9 +9,9 @@ trait `404405` extends StObject {
   /** @description if merge was successful */
   var `200`: ContentApplicationjsonMerged
   
-  var `403`: Content36
+  var `403`: Content41
   
-  var `404`: Content36
+  var `404`: Content41
   
   /** @description Method Not Allowed if merge cannot be performed */
   var `405`: ContentApplicationjsonDocumentationurl
@@ -19,17 +19,17 @@ trait `404405` extends StObject {
   /** @description Conflict if sha was provided and pull request head did not match */
   var `409`: ContentApplicationjsonDocumentationurl
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `404405` {
   
   inline def apply(
     `200`: ContentApplicationjsonMerged,
-    `403`: Content36,
-    `404`: Content36,
+    `403`: Content41,
+    `404`: Content41,
     `405`: ContentApplicationjsonDocumentationurl,
     `409`: ContentApplicationjsonDocumentationurl,
-    `422`: Content346
+    `422`: Content414
   ): `404405` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -46,14 +46,14 @@ object `404405` {
     
     inline def set200(value: ContentApplicationjsonMerged): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content41): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
     inline def set405(value: ContentApplicationjsonDocumentationurl): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
     
     inline def set409(value: ContentApplicationjsonDocumentationurl): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

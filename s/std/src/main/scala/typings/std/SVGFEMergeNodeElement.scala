@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <feMergeNode> element. */
+/**
+  * Corresponds to the <feMergeNode> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEMergeNodeElement)
+  */
 @js.native
 trait SVGFEMergeNodeElement
   extends StObject

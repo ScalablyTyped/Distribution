@@ -359,12 +359,12 @@ object ColorPicker {
   trait Model extends StObject {
     
     /** Allows to change the mode of the button. Please refer below to know available button mode
-      * @Default {ej.ButtonMode.Split}
+      * @default {ej.ButtonMode.Split}
       */
     var buttonMode: js.UndefOr[ButtonMode | String] = js.undefined
     
     /** The ColorPicker control allows to define the customized text to displayed in button elements. Using the property to achieve the customized culture values.
-      * @Default {{ apply: Apply, cancel: Cancel, swatches: Swatches }}
+      * @default {{ apply: Apply, cancel: Cancel, swatches: Swatches }}
       */
     var buttonText: js.UndefOr[ButtonText] = js.undefined
     
@@ -377,7 +377,7 @@ object ColorPicker {
     var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the number of columns to be displayed color palette model.
-      * @Default {10}
+      * @default {10}
       */
     var columns: js.UndefOr[Double | String] = js.undefined
     
@@ -390,7 +390,7 @@ object ColorPicker {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** This property allows to define the custom colors in the palette model.Custom palettes are created by passing a comma delimited string of HEX values or an array of colors.
-      * @Default {empty}
+      * @default {empty}
       */
     var custom: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -399,37 +399,37 @@ object ColorPicker {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** This property allows to embed the popup in the order of DOM element flow . When we set the value as true, the color picker popup is always in visible state.
-      * @Default {false}
+      * @default {false}
       */
     var displayInline: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows to enable or disable the opacity slider in the color picker control
-      * @Default {true}
+      * @default {true}
       */
     var enableOpacity: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows to change the control in enabled or disabled state.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** It allows to define the characteristics of the ColorPicker control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the localized text values in button and tooltip.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the model type to be rendered initially in the color picker control. See below to get available ModelType
-      * @Default {ej.ColorPicker.ModelType.Default}
+      * @default {ej.ColorPicker.ModelType.Default}
       */
     var modelType: js.UndefOr[ModelType | String] = js.undefined
     
     /** This property allows to change the opacity value .The selected color opacity will be adjusted by using this opacity value.
-      * @Default {100}
+      * @default {100}
       */
     var opacityValue: js.UndefOr[Double | String] = js.undefined
     
@@ -438,13 +438,13 @@ object ColorPicker {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies the palette type to be displayed at initial time in palette model.There two types of palette model available in ColorPicker control. See below available Palette
-      * @Default {ej.ColorPicker.Palette.BasicPalette}
+      * @default {ej.ColorPicker.Palette.BasicPalette}
       */
     var palette: js.UndefOr[Palette | String] = js.undefined
     
     /** This property allows to define the preset model to be rendered initially in palette type.It consists of 12 different types of presets. Each presets have 50 colors. See below
       * available Presets
-      * @Default {ej.ColorPicker.Presets.Basic}
+      * @default {ej.ColorPicker.Presets.Basic}
       */
     var presetType: js.UndefOr[Presets | String] = js.undefined
     
@@ -453,50 +453,50 @@ object ColorPicker {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Allows to show/hides the apply and cancel buttons in ColorPicker control
-      * @Default {true}
+      * @default {true}
       */
     var showApplyCancel: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to show/hides the clear button in ColorPicker control
-      * @Default {true}
+      * @default {true}
       */
     var showClearButton: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows to provides live preview support for current cursor selection color and selected color.
-      * @Default {true}
+      * @default {true}
       */
     var showPreview: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows to store the color values in custom list.The ColorPicker will keep up to 11 colors in a custom list.By clicking the add button, the selected color from picker
       * or palette will get added in the recent color list.
-      * @Default {false}
+      * @default {false}
       */
     var showRecentColors: js.UndefOr[Boolean] = js.undefined
     
     /** Allows to show/hides the switcher button in ColorPicker control.It helps to switch palette or picker mode in colorpicker.
-      * @Default {true}
+      * @default {true}
       */
     var showSwitcher: js.UndefOr[Boolean] = js.undefined
     
     /** This property allows to shows tooltip to notify the slider value in color picker control.
-      * @Default {false}
+      * @default {false}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the toolIcon to be displayed in dropdown control color area.
-      * @Default {null}
+      * @default {null}
       */
     var toolIcon: js.UndefOr[String] = js.undefined
     
     /** This property allows to define the customized text or content to displayed when mouse over the following elements. This property also allows to use the culture values.
-      * @Default {{ switcher: Switcher, addButton: Add Color, basic: Basic, monoChrome: Mono Chrome, flatColors: Flat Color, seaWolf: Sea Wolf, webColors: Web Colors, sandy: Sandy,
+      * @default {{ switcher: Switcher, addButton: Add Color, basic: Basic, monoChrome: Mono Chrome, flatColors: Flat Color, seaWolf: Sea Wolf, webColors: Web Colors, sandy: Sandy,
       * pinkShades: Pink Shades, misty: Misty, citrus: Citrus, vintage: Vintage, moonLight: Moon Light, candyCrush: Candy Crush, currentColor: Current Color, selectedColor: Selected
       * Color }}
       */
     var tooltipText: js.UndefOr[TooltipText] = js.undefined
     
     /** Specifies the color value for color picker control, the value is in hexadecimal form with prefix of &quot;#&quot;.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
   }

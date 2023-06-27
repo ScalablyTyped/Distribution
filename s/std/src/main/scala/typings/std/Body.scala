@@ -6,24 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Body extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/arrayBuffer) */
   /* standard dom */
   def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/blob) */
   /* standard dom */
   def blob(): js.Promise[Blob]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/body) */
   /* standard dom */
   val body: ReadableStream[js.typedarray.Uint8Array] | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/bodyUsed) */
   /* standard dom */
   val bodyUsed: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/formData) */
   /* standard dom */
   def formData(): js.Promise[FormData]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/json) */
   /* standard dom */
   def json(): js.Promise[Any]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Request/text) */
   /* standard dom */
   def text(): js.Promise[java.lang.String]
 }

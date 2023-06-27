@@ -20,7 +20,7 @@ trait DocumentUpdateData extends StObject {
   var body: js.UndefOr[BodyUpdateData] = js.undefined
   
   /**
-    * Gets or sets the ChangeTracking mode.
+    * Specifies the ChangeTracking mode.
     *
     * @remarks
     * [Api set: WordApi 1.4]

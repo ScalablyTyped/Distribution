@@ -113,7 +113,7 @@ object sapUiModelOdataTypeDateTimeBaseMod {
     extends typings.openui5.sapUiModelOdataTypeOdatatypeMod.default {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Formats the given value to the given target type.
       *
@@ -126,14 +126,14 @@ object sapUiModelOdataTypeDateTimeBaseMod {
     oValue: js.Date,
       /**
       * The target type, may be "any", "object" (since 1.69.0), "string", or a type with one of these types as
-      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information.
       */
     sTargetType: String
     ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Parses the given value to a `Date` instance (OData V2).
       *
@@ -146,8 +146,8 @@ object sapUiModelOdataTypeDateTimeBaseMod {
     vValue: String,
       /**
       * The source type (the expected type of `vValue`), must be "object" (since 1.69.0), "string", or a type
-      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link
-      * sap.ui.model.odata.type} for more information.
+      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
       */
     sSourceType: String
     ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
@@ -158,14 +158,14 @@ object sapUiModelOdataTypeDateTimeBaseMod {
     vValue: js.Date,
       /**
       * The source type (the expected type of `vValue`), must be "object" (since 1.69.0), "string", or a type
-      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link
-      * sap.ui.model.odata.type} for more information.
+      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
       */
     sSourceType: String
     ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Validates whether the given value in model representation is valid and meets the defined constraints.
       */

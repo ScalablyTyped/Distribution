@@ -123,9 +123,9 @@ object sapMTimePickerInputsMod {
     /**
       * Gets the time values from the clocks, as a date object.
       *
-      * @returns A JavaScript date object
+      * @returns A date instance
       */
-    def getTimeValues(): js.Date = js.native
+    def getTimeValues(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
     
     /**
       * Sets the value of the `TimePickerInputs` container.

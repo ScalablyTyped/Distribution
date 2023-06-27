@@ -84,9 +84,15 @@ object distParseMod {
     
     /* private */ var advanceStack: Any = js.native
     
+    var bigReductionCount: Double = js.native
+    
     var fragments: FragmentCursor | Null = js.native
     
     val input: Input = js.native
+    
+    var lastBigReductionSize: Double = js.native
+    
+    var lastBigReductionStart: Double = js.native
     
     var minStackPos: Double = js.native
     

@@ -41,7 +41,7 @@ object IconColor extends StObject {
   /* "Default" */ val Default: typings.openui5.sapUiCoreLibraryMod.IconColor.Default & String = js.native
   
   /**
-    * @SINCE 1.76
+    * @since 1.76
     *
     * Color for icon used as a marker
     */
@@ -70,7 +70,7 @@ object IconColor extends StObject {
   /* "Neutral" */ val Neutral: typings.openui5.sapUiCoreLibraryMod.IconColor.Neutral & String = js.native
   
   /**
-    * @SINCE 1.76
+    * @since 1.76
     *
     * Color that indicates an icon which isn't interactive
     */
@@ -90,7 +90,7 @@ object IconColor extends StObject {
   /* "Positive" */ val Positive: typings.openui5.sapUiCoreLibraryMod.IconColor.Positive & String = js.native
   
   /**
-    * @SINCE 1.76
+    * @since 1.76
     *
     * Color for icon used in a Tile
     */

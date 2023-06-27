@@ -139,6 +139,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -475,6 +476,8 @@ object libComponentsLayoutMod {
   inline def LayoutDirection_samp(props: LayoutDirectionIntrinsicProps[samp]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def LayoutDirection_script(props: LayoutDirectionIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def LayoutDirection_search(props: LayoutDirectionIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def LayoutDirection_section(props: LayoutDirectionIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutDirection")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

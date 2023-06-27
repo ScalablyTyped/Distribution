@@ -65,7 +65,7 @@ object Droppable {
   trait Model extends StObject {
     
     /** Used to accept the specified draggable items.
-      * @Default {null}
+      * @default {null}
       */
     var accept: js.UndefOr[Any] = js.undefined
     
@@ -82,7 +82,7 @@ object Droppable {
     var over: js.UndefOr[js.Function1[/* e */ OverEventArgs, Unit]] = js.undefined
     
     /** Used to group sets of droppable items, in addition to droppable's accept option. A draggable with the same scope value as a droppable will be accepted by the droppable.
-      * @Default {'default'}
+      * @default {'default'}
       */
     var scope: js.UndefOr[String] = js.undefined
   }

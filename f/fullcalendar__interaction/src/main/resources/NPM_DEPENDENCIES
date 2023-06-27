@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fullcalendar/interaction" : "6.1.7"
+      "@fullcalendar/interaction" : "6.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@fullcalendar/interaction" : "6.1.7"
+      "@fullcalendar/interaction" : "6.1.8"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-ansi
 
-Typings are for version 7.0.1
+Typings are for version 7.1.0
 
 ## Library description:
 Strip ANSI escape codes from a string

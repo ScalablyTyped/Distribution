@@ -9,10 +9,10 @@ trait SlideEnvironment
      with AnonymousAccessor {
   
   /**
-    * Settings for defining the lighting of the scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
-    */
+  		 * Settings for defining the lighting of the scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
+  		 */
   var lighting: js.UndefOr[websceneSunLighting | websceneVirtualLighting] = js.undefined
 }
 object SlideEnvironment {

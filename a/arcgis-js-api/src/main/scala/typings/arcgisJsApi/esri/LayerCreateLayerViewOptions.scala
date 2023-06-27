@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerCreateLayerViewOptions extends StObject {
   
   /**
-    * A signal to abort the creation of the layerview.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
-    */
+  		 * A signal to abort the creation of the layerview.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object LayerCreateLayerViewOptions {

@@ -1893,8 +1893,8 @@ trait NodeFactory extends StObject {
   
   def createJSDocVariadicType(`type`: TypeNode): JSDocVariadicType = js.native
   
-  def createJsxAttribute(name: Identifier): JsxAttribute = js.native
-  def createJsxAttribute(name: Identifier, initializer: JsxAttributeValue): JsxAttribute = js.native
+  def createJsxAttribute(name: JsxAttributeName): JsxAttribute = js.native
+  def createJsxAttribute(name: JsxAttributeName, initializer: JsxAttributeValue): JsxAttribute = js.native
   
   def createJsxAttributes(properties: js.Array[JsxAttributeLike]): JsxAttributes = js.native
   
@@ -1914,6 +1914,8 @@ trait NodeFactory extends StObject {
   ): JsxFragment = js.native
   
   def createJsxJsxClosingFragment(): JsxClosingFragment = js.native
+  
+  def createJsxNamespacedName(namespace: Identifier, name: Identifier): JsxNamespacedName = js.native
   
   def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxOpeningElement = js.native
   def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: Unit, attributes: JsxAttributes): JsxOpeningElement = js.native
@@ -5060,8 +5062,8 @@ trait NodeFactory extends StObject {
   
   def updateJSDocVariadicType(node: JSDocVariadicType, `type`: TypeNode): JSDocVariadicType = js.native
   
-  def updateJsxAttribute(node: JsxAttribute, name: Identifier): JsxAttribute = js.native
-  def updateJsxAttribute(node: JsxAttribute, name: Identifier, initializer: JsxAttributeValue): JsxAttribute = js.native
+  def updateJsxAttribute(node: JsxAttribute, name: JsxAttributeName): JsxAttribute = js.native
+  def updateJsxAttribute(node: JsxAttribute, name: JsxAttributeName, initializer: JsxAttributeValue): JsxAttribute = js.native
   
   def updateJsxAttributes(node: JsxAttributes, properties: js.Array[JsxAttributeLike]): JsxAttributes = js.native
   
@@ -5083,6 +5085,8 @@ trait NodeFactory extends StObject {
     children: js.Array[JsxChild],
     closingFragment: JsxClosingFragment
   ): JsxFragment = js.native
+  
+  def updateJsxNamespacedName(node: JsxNamespacedName, namespace: Identifier, name: Identifier): JsxNamespacedName = js.native
   
   def updateJsxOpeningElement(
     node: JsxOpeningElement,

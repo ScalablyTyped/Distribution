@@ -4,25 +4,46 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange) */
 trait AbstractRange extends StObject {
   
-  /** Returns true if range is collapsed, and false otherwise. */
+  /**
+    * Returns true if range is collapsed, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange/collapsed)
+    */
   /* standard dom */
   val collapsed: scala.Boolean
   
-  /** Returns range's end node. */
+  /**
+    * Returns range's end node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange/endContainer)
+    */
   /* standard dom */
   val endContainer: Node
   
-  /** Returns range's end offset. */
+  /**
+    * Returns range's end offset.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange/endOffset)
+    */
   /* standard dom */
   val endOffset: Double
   
-  /** Returns range's start node. */
+  /**
+    * Returns range's start node.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange/startContainer)
+    */
   /* standard dom */
   val startContainer: Node
   
-  /** Returns range's start offset. */
+  /**
+    * Returns range's start offset.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AbstractRange/startOffset)
+    */
   /* standard dom */
   val startOffset: Double
 }

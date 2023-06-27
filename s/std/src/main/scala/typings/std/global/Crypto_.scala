@@ -13,16 +13,25 @@ open class Crypto_ ()
   extends StObject
      with Crypto {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/getRandomValues) */
   /* standard dom */
   /* CompleteClass */
   override def getRandomValues[T /* <: js.typedarray.ArrayBufferView | Null */](array: T): T = js.native
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/randomUUID)
+    */
   /* standard dom */
   /* CompleteClass */
   override def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String = js.native
   
-  /** Available only in secure contexts. */
+  /**
+    * Available only in secure contexts.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Crypto/subtle)
+    */
   /* standard dom */
   /* CompleteClass */
   override val subtle: typings.std.SubtleCrypto = js.native

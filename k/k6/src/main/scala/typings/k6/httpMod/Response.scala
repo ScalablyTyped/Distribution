@@ -2,7 +2,7 @@ package typings.k6.httpMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.k6.anon.Blocked
-import typings.k6.anon.Body
+import typings.k6.anon.Cookies
 import typings.k6.anon.Fields
 import typings.k6.anon.Nextupdate
 import typings.k6.htmlMod.Selection
@@ -76,7 +76,7 @@ trait Response extends StObject {
   var remote_port: Double = js.native
   
   /** Inciting request details. */
-  var request: Body = js.native
+  var request: Cookies = js.native
   
   /** HTTP status code. */
   var status: Double = js.native

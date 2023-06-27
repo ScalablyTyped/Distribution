@@ -12,20 +12,20 @@ object esriRestSupportAreasAndLengthsParametersMod {
   @JSImport("esri/rest/support/AreasAndLengthsParameters", JSImport.Namespace)
   @js.native
   /**
-    * Input parameters for the areasAndLengths() method on the GeometryService.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html)
-    */
+  		 * Input parameters for the areasAndLengths() method on the GeometryService.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AreasAndLengthsParameters.html)
+  		 */
   open class ^ ()
     extends StObject
        with AreasAndLengthsParameters {
     def this(properties: AreasAndLengthsParametersProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

@@ -80,7 +80,7 @@ object dcrMod {
     var iat: Double
     
     /**
-      * JWE `alg` algorithm with which an id_token is to be encrypted
+      * JWE `alg` algorithm with which an id_token is to be encrypted. Required if OIDC Hybrid Flow (response type `code id_token`) is registered.
       */
     var id_token_encrypted_response_alg: String
     
@@ -455,7 +455,7 @@ object dcrMod {
     var grant_types: js.Array[client_credentials | authorization_code | refresh_token]
     
     /**
-      * JWE `alg` algorithm with which an id_token is to be encrypted
+      * JWE `alg` algorithm with which an id_token is to be encrypted. Required if OIDC Hybrid Flow (response type `code id_token`) is registered.
       */
     var id_token_encrypted_response_alg: String
     

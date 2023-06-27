@@ -20,12 +20,17 @@ import typings.arcgisJsApi.esri.summaryStatisticsForAgeSummaryStatisticsForAgePa
 import typings.arcgisJsApi.esri.summaryStatisticsSummaryStatisticsParams
 import typings.arcgisJsApi.esri.uniqueValuesUniqueValuesParams
 import typings.arcgisJsApi.global.esri.^
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 inline def GPOptions: typings.arcgisJsApi.esri.GPOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("GPOptions").asInstanceOf[typings.arcgisJsApi.esri.GPOptions]
+
+inline def InputField: typings.arcgisJsApi.esri.InputField = ^.asInstanceOf[js.Dynamic].selectDynamic("InputField").asInstanceOf[typings.arcgisJsApi.esri.InputField]
+
+inline def InputFieldGroup: typings.arcgisJsApi.esri.InputFieldGroup = ^.asInstanceOf[js.Dynamic].selectDynamic("InputFieldGroup").asInstanceOf[typings.arcgisJsApi.esri.InputFieldGroup]
 
 inline def LayerPerformanceInfo: typings.arcgisJsApi.esri.LayerPerformanceInfo = ^.asInstanceOf[js.Dynamic].selectDynamic("LayerPerformanceInfo").asInstanceOf[typings.arcgisJsApi.esri.LayerPerformanceInfo]
 
@@ -35,7 +40,7 @@ inline def SceneViewPerformanceInfo: typings.arcgisJsApi.esri.SceneViewPerforman
 
 inline def SceneViewerColorUtils: typings.arcgisJsApi.esri.SceneViewerColorUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("SceneViewerColorUtils").asInstanceOf[typings.arcgisJsApi.esri.SceneViewerColorUtils]
 
-inline def ServiceDefinition: typings.arcgisJsApi.esri.ServiceDefinition = ^.asInstanceOf[js.Dynamic].selectDynamic("ServiceDefinition").asInstanceOf[typings.arcgisJsApi.esri.ServiceDefinition]
+inline def SceneViewerSymbolUtils: typings.arcgisJsApi.esri.SceneViewerSymbolUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("SceneViewerSymbolUtils").asInstanceOf[typings.arcgisJsApi.esri.SceneViewerSymbolUtils]
 
 inline def StreamConnection: typings.arcgisJsApi.esri.StreamConnection = ^.asInstanceOf[js.Dynamic].selectDynamic("StreamConnection").asInstanceOf[typings.arcgisJsApi.esri.StreamConnection]
 
@@ -54,6 +59,8 @@ inline def arcade: typings.arcgisJsApi.esri.arcade = ^.asInstanceOf[js.Dynamic].
 inline def arcadeUtils: typings.arcgisJsApi.esri.arcadeUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("arcadeUtils").asInstanceOf[typings.arcgisJsApi.esri.arcadeUtils]
 
 inline def binLevel: typings.arcgisJsApi.esri.binLevel = ^.asInstanceOf[js.Dynamic].selectDynamic("binLevel").asInstanceOf[typings.arcgisJsApi.esri.binLevel]
+
+inline def bins: typings.arcgisJsApi.esri.bins = ^.asInstanceOf[js.Dynamic].selectDynamic("bins").asInstanceOf[typings.arcgisJsApi.esri.bins]
 
 inline def cimSymbolUtils: typings.arcgisJsApi.esri.cimSymbolUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("cimSymbolUtils").asInstanceOf[typings.arcgisJsApi.esri.cimSymbolUtils]
 
@@ -145,6 +152,8 @@ inline def opacity: typings.arcgisJsApi.esri.opacity = ^.asInstanceOf[js.Dynamic
 
 inline def pieChart: typings.arcgisJsApi.esri.pieChart = ^.asInstanceOf[js.Dynamic].selectDynamic("pieChart").asInstanceOf[typings.arcgisJsApi.esri.pieChart]
 
+inline def places: typings.arcgisJsApi.esri.places = ^.asInstanceOf[js.Dynamic].selectDynamic("places").asInstanceOf[typings.arcgisJsApi.esri.places]
+
 inline def popupClusters: typings.arcgisJsApi.esri.popupClusters = ^.asInstanceOf[js.Dynamic].selectDynamic("popupClusters").asInstanceOf[typings.arcgisJsApi.esri.popupClusters]
 
 inline def popupUtils: typings.arcgisJsApi.esri.popupUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("popupUtils").asInstanceOf[typings.arcgisJsApi.esri.popupUtils]
@@ -180,10 +189,10 @@ inline def reactiveUtils: typings.arcgisJsApi.esri.reactiveUtils = ^.asInstanceO
 inline def relationship: typings.arcgisJsApi.esri.relationship = ^.asInstanceOf[js.Dynamic].selectDynamic("relationship").asInstanceOf[typings.arcgisJsApi.esri.relationship]
 
 inline def request: js.Function2[
-/* url */ String, 
+/* url */ String | URL, 
 /* options */ js.UndefOr[RequestOptions], 
 js.Promise[RequestResponse]] = ^.asInstanceOf[js.Dynamic].selectDynamic("request").asInstanceOf[js.Function2[
-/* url */ String, 
+/* url */ String | URL, 
 /* options */ js.UndefOr[RequestOptions], 
 js.Promise[RequestResponse]]]
 

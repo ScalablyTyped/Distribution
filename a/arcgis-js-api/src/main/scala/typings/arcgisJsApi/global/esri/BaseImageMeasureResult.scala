@@ -11,18 +11,18 @@ open class BaseImageMeasureResult ()
      with typings.arcgisJsApi.esri.BaseImageMeasureResult {
   
   /**
-    * Name of the raster dataset used in the area and height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#name)
-    */
+  		 * Name of the raster dataset used in the area and height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#name)
+  		 */
   /* CompleteClass */
   var name: String = js.native
   
   /**
-    * Sensor name of the raster dataset used in the area and height measurement.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#sensorName)
-    */
+  		 * Sensor name of the raster dataset used in the area and height measurement.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BaseImageMeasureResult.html#sensorName)
+  		 */
   /* CompleteClass */
   var sensorName: String = js.native
 }

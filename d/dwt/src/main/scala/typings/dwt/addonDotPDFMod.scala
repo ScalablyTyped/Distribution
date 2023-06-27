@@ -38,7 +38,7 @@ object addonDotPDFMod {
     
     /**
       * Detect whether a local PDF file is text based or not.
-      * @path Specify the path of the PDF file.
+      * @param path Specify the path of the PDF file.
       */
     def IsTextBasedPDF(path: String): Boolean = js.native
     

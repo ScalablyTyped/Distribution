@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.PortalFolder")
 @js.native
 /**
-  * Provides information about folders used to organize content in a portal.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
-  */
+		 * Provides information about folders used to organize content in a portal.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
+		 */
 open class PortalFolder ()
   extends StObject
      with typings.arcgisJsApi.esri.PortalFolder {

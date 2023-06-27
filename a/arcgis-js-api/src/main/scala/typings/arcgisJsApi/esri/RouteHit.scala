@@ -9,24 +9,24 @@ trait RouteHit
      with ViewHit {
   
   /**
-    * The route layer that contains the element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
-    */
+  		 * The route layer that contains the element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
+  		 */
   var layer: RouteLayer
   
   /**
-    * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
-    */
+  		 * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
+  		 */
   var mapPoint: Point
   
   /**
-    * The route hit test will contain all intersecting network elements, which includes one of the following: DirectionLine, DirectionPoint, PointBarrier, PolylineBarrier, PolygonBarrier, Stop, or RouteInfo.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
-    */
+  		 * The route hit test will contain all intersecting network elements, which includes one of the following: DirectionLine, DirectionPoint, PointBarrier, PolylineBarrier, PolygonBarrier, Stop, or RouteInfo.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#RouteHit)
+  		 */
   var networkFeature: DirectionLine | DirectionPoint | PointBarrier | PolygonBarrier | RouteInfo | Stop
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.route

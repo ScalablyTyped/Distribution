@@ -130,17 +130,17 @@ object Scroller {
   trait Model extends StObject {
     
     /** Specifies the swipe scrolling speed(in millisecond).
-      * @Default {600}
+      * @default {600}
       */
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Set true to hides the scrollbar, when mouseout the content area.
-      * @Default {false}
+      * @default {false}
       */
     var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height and width of button in the scrollbar.
-      * @Default {18}
+      * @default {18}
       */
     var buttonSize: js.UndefOr[Double] = js.undefined
     
@@ -153,52 +153,52 @@ object Scroller {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates the Right to Left direction to scroller
-      * @Default {undefined}
+      * @default {undefined}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disable the touch Scroll
-      * @Default {true}
+      * @default {true}
       */
     var enableTouchScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to enable or disable the scroller
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of Scroll panel and scrollbars.
-      * @Default {250}
+      * @default {250}
       */
     var height: js.UndefOr[Double | String] = js.undefined
     
     /** The Scroller content and scrollbars move left with given value.
-      * @Default {0}
+      * @default {0}
       */
     var scrollLeft: js.UndefOr[Double] = js.undefined
     
     /** While press on the arrow key the scrollbar position added to the given pixel value.
-      * @Default {57}
+      * @default {57}
       */
     var scrollOneStepBy: js.UndefOr[Double] = js.undefined
     
     /** The Scroller content and scrollbars move to top position with specified value.
-      * @Default {0}
+      * @default {0}
       */
     var scrollTop: js.UndefOr[Double] = js.undefined
     
     /** If the scrollbar has vertical it set as width, else it will set as height of the handler.
-      * @Default {18}
+      * @default {18}
       */
     var scrollerSize: js.UndefOr[Double] = js.undefined
     
     /** Indicates the target area to which scroller have to appear.
-      * @Default {null}
+      * @default {null}
       */
     var targetPane: js.UndefOr[String] = js.undefined
     
@@ -227,7 +227,7 @@ object Scroller {
     var wheelStop: js.UndefOr[js.Function1[/* e */ WheelStopEventArgs, Unit]] = js.undefined
     
     /** Specifies the width of Scroll panel and scrollbars.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double | String] = js.undefined
   }

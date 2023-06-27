@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapUiUnifiedColorPickerDisplayModeMod {
   
   /**
-    * @SINCE 1.58.0
+    * @since 1.58.0
     *
     * Types of a color picker display mode
     */
@@ -28,7 +28,7 @@ object sapUiUnifiedColorPickerDisplayModeMod {
   @js.native
   sealed trait ColorPickerDisplayMode extends StObject
   /**
-    * @SINCE 1.58.0
+    * @since 1.58.0
     *
     * Types of a color picker display mode
     */

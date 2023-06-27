@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebSceneSaveAsOptions extends StObject {
   
   /**
-    * the folder in which to save the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#saveAs)
-    */
+  		 * the folder in which to save the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#saveAs)
+  		 */
   var folder: js.UndefOr[PortalFolder] = js.undefined
   
   /**
-    * allow the scene to be saved even in the case it contains unsupported content (layers, renderers, symbols).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#saveAs)
-    */
+  		 * allow the scene to be saved even in the case it contains unsupported content (layers, renderers, symbols).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#saveAs)
+  		 */
   var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object WebSceneSaveAsOptions {

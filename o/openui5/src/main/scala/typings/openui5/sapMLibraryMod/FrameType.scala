@@ -14,7 +14,7 @@ object FrameType extends StObject {
   def apply(value: String): js.UndefOr[FrameType & String] = js.native
   
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The Auto frame type that adjusts the size of the control to the content. Support for this type in sap.m.GenericTile
     * is deprecated since 1.48.0.
@@ -26,7 +26,7 @@ object FrameType extends StObject {
   /* "Auto" */ val Auto: typings.openui5.sapMLibraryMod.FrameType.Auto & String = js.native
   
   /**
-    * @SINCE 1.83
+    * @since 1.83
     *
     * The 2x1 frame type. **Note:** The 2x1 frame type is currently only supported for Generic tile.
     */
@@ -46,7 +46,7 @@ object FrameType extends StObject {
   /* "OneByOne" */ val OneByOne: typings.openui5.sapMLibraryMod.FrameType.OneByOne & String = js.native
   
   /**
-    * @SINCE 1.83
+    * @since 1.83
     *
     * The 4x1 frame type. **Note:** The 4x1 frame type is currently only supported for Generic tile.
     */
@@ -67,7 +67,7 @@ object FrameType extends StObject {
   
   /**
     * @deprecated (since 1.48.0)
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The 2/3 frame type.
     */

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the options that define which content controls are returned.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 trait ContentControlOptions extends StObject {
   
@@ -17,8 +16,7 @@ trait ContentControlOptions extends StObject {
     * An array of content control types, item must be 'RichText' or 'PlainText'.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var types: js.Array[ContentControlType]
 }

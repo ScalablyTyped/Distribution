@@ -18,7 +18,7 @@ trait ClearTextFirst extends StObject {
   var enterText: String
   
   /**
-    * Interaction type; Currently supported interaction types are {@link sap.ui.test.RecordReplay.InteractionType}
+    * Interaction type; Currently supported interaction types are {@link sap.ui.test.RecordReplay.InteractionType }
     * To see the interaction details and options, see {@link sap.ui.test.actions}
     */
   var interactionType: InteractionType

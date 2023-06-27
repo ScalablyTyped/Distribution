@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vanilla-colorful" : "0.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vanilla-colorful" : "0.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

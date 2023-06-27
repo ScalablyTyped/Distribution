@@ -10,9 +10,9 @@ trait HandleOwner
      with Accessor {
   
   /**
-    * Handle registry to help manage `handles`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
-    */
+  		 * Handle registry to help manage `handles`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
+  		 */
   var handles: Handles = js.native
 }

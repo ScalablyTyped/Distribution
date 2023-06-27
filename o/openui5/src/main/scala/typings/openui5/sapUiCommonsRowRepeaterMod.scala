@@ -1,9 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.CurrentPage
-import typings.openui5.anon.FilterId
-import typings.openui5.anon.NumberOfRows
-import typings.openui5.anon.SorterId
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -186,13 +182,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit]
     ): this.type = js.native
     def attachFilter(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -217,7 +213,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit]
     ): this.type = js.native
     def attachFilter(
       /**
@@ -228,7 +224,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -249,13 +245,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit]
     ): this.type = js.native
     def attachPage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -280,7 +276,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit]
     ): this.type = js.native
     def attachPage(
       /**
@@ -291,7 +287,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -312,13 +308,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -343,7 +339,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit]
     ): this.type = js.native
     def attachResize(
       /**
@@ -354,7 +350,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -375,13 +371,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit]
     ): this.type = js.native
     def attachSort(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -406,7 +402,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit]
     ): this.type = js.native
     def attachSort(
       /**
@@ -417,7 +413,7 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.RowRepeater` itself
       */
@@ -483,13 +479,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit]
     ): this.type = js.native
     def detachFilter(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterFilterEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -507,13 +503,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit]
     ): this.type = js.native
     def detachPage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterPageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -531,13 +527,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit]
     ): this.type = js.native
     def detachResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -555,13 +551,13 @@ object sapUiCommonsRowRepeaterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit]
     ): this.type = js.native
     def detachSort(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ RowRepeaterSortEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -569,20 +565,22 @@ object sapUiCommonsRowRepeaterMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filter filter} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFilter(): this.type = js.native
-    def fireFilter(/**
+    def fireFilter(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: FilterId): this.type = js.native
+    mParameters: RowRepeater$FilterEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:page page} to attached listeners.
       *
@@ -592,23 +590,25 @@ object sapUiCommonsRowRepeaterMod {
     def firePage(/**
       * Parameters to pass along with the event
       */
-    mParameters: CurrentPage): this.type = js.native
+    mParameters: RowRepeater$PageEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireResize(): this.type = js.native
-    def fireResize(/**
+    def fireResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NumberOfRows): this.type = js.native
+    mParameters: RowRepeater$ResizeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sort sort} to attached listeners.
       *
@@ -618,7 +618,7 @@ object sapUiCommonsRowRepeaterMod {
     def fireSort(/**
       * Parameters to pass along with the event
       */
-    mParameters: SorterId): this.type = js.native
+    mParameters: RowRepeater$SortEventParameters): this.type = js.native
     
     /**
       * Switch to first page.
@@ -1070,6 +1070,128 @@ object sapUiCommonsRowRepeaterMod {
     def unbindRows(): this.type = js.native
   }
   
+  trait RowRepeater$FilterEventParameters extends StObject {
+    
+    /**
+      * The ID of the filter that has just been applied.
+      */
+    var filterId: js.UndefOr[String] = js.undefined
+  }
+  object RowRepeater$FilterEventParameters {
+    
+    inline def apply(): RowRepeater$FilterEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RowRepeater$FilterEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeater$FilterEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFilterId(value: String): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    }
+  }
+  
+  trait RowRepeater$PageEventParameters extends StObject {
+    
+    /**
+      * The value of the currentPage property after the change.
+      */
+    var currentPage: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The value of the currentPage property before the change.
+      */
+    var previousPage: js.UndefOr[int] = js.undefined
+  }
+  object RowRepeater$PageEventParameters {
+    
+    inline def apply(): RowRepeater$PageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RowRepeater$PageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeater$PageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentPage(value: int): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+      
+      inline def setPreviousPage(value: int): Self = StObject.set(x, "previousPage", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousPageUndefined: Self = StObject.set(x, "previousPage", js.undefined)
+    }
+  }
+  
+  trait RowRepeater$ResizeEventParameters extends StObject {
+    
+    /**
+      * The value of the numberOfRows property after the change.
+      */
+    var numberOfRows: js.UndefOr[int] = js.undefined
+    
+    /**
+      * The value of the numberOfRows property before the change.
+      */
+    var previousNumberOfRows: js.UndefOr[int] = js.undefined
+  }
+  object RowRepeater$ResizeEventParameters {
+    
+    inline def apply(): RowRepeater$ResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RowRepeater$ResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeater$ResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNumberOfRows(value: int): Self = StObject.set(x, "numberOfRows", value.asInstanceOf[js.Any])
+      
+      inline def setNumberOfRowsUndefined: Self = StObject.set(x, "numberOfRows", js.undefined)
+      
+      inline def setPreviousNumberOfRows(value: int): Self = StObject.set(x, "previousNumberOfRows", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousNumberOfRowsUndefined: Self = StObject.set(x, "previousNumberOfRows", js.undefined)
+    }
+  }
+  
+  trait RowRepeater$SortEventParameters extends StObject {
+    
+    /**
+      * The ID of the sorter that has just been applied.
+      */
+    var sorterId: js.UndefOr[String] = js.undefined
+  }
+  object RowRepeater$SortEventParameters {
+    
+    inline def apply(): RowRepeater$SortEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RowRepeater$SortEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRepeater$SortEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSorterId(value: String): Self = StObject.set(x, "sorterId", value.asInstanceOf[js.Any])
+      
+      inline def setSorterIdUndefined: Self = StObject.set(x, "sorterId", js.undefined)
+    }
+  }
+  
+  type RowRepeaterFilterEvent = typings.openui5.sapUiBaseEventMod.default[RowRepeater$FilterEventParameters]
+  
+  type RowRepeaterFilterEventParameters = RowRepeater$FilterEventParameters
+  
+  type RowRepeaterPageEvent = typings.openui5.sapUiBaseEventMod.default[RowRepeater$PageEventParameters]
+  
+  type RowRepeaterPageEventParameters = RowRepeater$PageEventParameters
+  
+  type RowRepeaterResizeEvent = typings.openui5.sapUiBaseEventMod.default[RowRepeater$ResizeEventParameters]
+  
+  type RowRepeaterResizeEventParameters = RowRepeater$ResizeEventParameters
+  
   trait RowRepeaterSettings
     extends StObject
        with ControlSettings {
@@ -1089,7 +1211,12 @@ object sapUiCommonsRowRepeaterMod {
     /**
       * This event is triggered when a filter is set.
       */
-    var filter: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filter: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$FilterEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Filters to be provided in toolbar.
@@ -1119,12 +1246,22 @@ object sapUiCommonsRowRepeaterMod {
     /**
       * This event is triggered when paging was executed.
       */
-    var page: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var page: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$PageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event is triggered when the number of rows was changed.
       */
-    var resize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var resize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$ResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Rows to be repeated.
@@ -1142,7 +1279,12 @@ object sapUiCommonsRowRepeaterMod {
     /**
       * This event is triggered when a sorting is applied.
       */
-    var sort: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sort: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$SortEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sorters to be provided in secondary toolbar.
@@ -1181,7 +1323,9 @@ object sapUiCommonsRowRepeaterMod {
       
       inline def setDesignUndefined: Self = StObject.set(x, "design", js.undefined)
       
-      inline def setFilter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$FilterEventParameters] => Unit
+      ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -1205,11 +1349,15 @@ object sapUiCommonsRowRepeaterMod {
       
       inline def setNumberOfRowsUndefined: Self = StObject.set(x, "numberOfRows", js.undefined)
       
-      inline def setPage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+      inline def setPage(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$PageEventParameters] => Unit
+      ): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
       
       inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      inline def setResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$ResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
@@ -1225,7 +1373,9 @@ object sapUiCommonsRowRepeaterMod {
       
       inline def setShowMoreStepsUndefined: Self = StObject.set(x, "showMoreSteps", js.undefined)
       
-      inline def setSort(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[RowRepeater$SortEventParameters] => Unit
+      ): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
@@ -1246,4 +1396,8 @@ object sapUiCommonsRowRepeaterMod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
+  
+  type RowRepeaterSortEvent = typings.openui5.sapUiBaseEventMod.default[RowRepeater$SortEventParameters]
+  
+  type RowRepeaterSortEventParameters = RowRepeater$SortEventParameters
 }

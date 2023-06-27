@@ -16,7 +16,7 @@ trait Container extends StObject {
   var container: js.UndefOr[Tags] = js.undefined
   
   /** Docker Metadata */
-  var docker: js.UndefOr[`421`] = js.undefined
+  var docker: js.UndefOr[`498`] = js.undefined
   
   /**
     * @example docker
@@ -38,7 +38,7 @@ object Container {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setDocker(value: `421`): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+    inline def setDocker(value: `498`): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
     
     inline def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
     

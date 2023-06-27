@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabbable
 
-Typings are for version 6.0.0
+Typings are for version 6.1.2
 
 ## Library description:
 Returns an array of all tabbable DOM nodes within a containing node.

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerSaveAsOptions extends StObject {
   
   /**
-    * The portal folder where the layer's portal item will be saved.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
-    */
+  		 * The portal folder where the layer's portal item will be saved.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
+  		 */
   var folder: js.UndefOr[PortalFolder] = js.undefined
   
   /**
-    * Options for validating the save operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
-    */
+  		 * Options for validating the save operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
+  		 */
   var validationOptions: js.UndefOr[FeatureLayerSaveAsOptionsValidationOptions] = js.undefined
 }
 object FeatureLayerSaveAsOptions {

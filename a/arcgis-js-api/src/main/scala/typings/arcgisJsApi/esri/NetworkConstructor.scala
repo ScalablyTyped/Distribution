@@ -15,9 +15,9 @@ trait NetworkConstructor
   def fromJSON(json: Any): Network = js.native
   
   /**
-    * Creates a new network instance from an ArcGIS Online or ArcGIS Enterprise [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#fromPortalItem)
-    */
+  		 * Creates a new network instance from an ArcGIS Online or ArcGIS Enterprise [portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#fromPortalItem)
+  		 */
   def fromPortalItem(params: NetworkFromPortalItemParams): js.Promise[UtilityNetwork] = js.native
 }

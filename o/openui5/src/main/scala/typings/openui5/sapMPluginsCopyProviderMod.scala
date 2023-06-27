@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`24`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -141,13 +140,13 @@ object sapMPluginsCopyProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit]
     ): this.type = js.native
     def attachCopy(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.CopyProvider` itself
       */
@@ -177,7 +176,7 @@ object sapMPluginsCopyProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit]
     ): this.type = js.native
     def attachCopy(
       /**
@@ -188,7 +187,7 @@ object sapMPluginsCopyProviderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.plugins.CopyProvider` itself
       */
@@ -220,13 +219,13 @@ object sapMPluginsCopyProviderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit]
     ): this.type = js.native
     def detachCopy(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CopyProviderCopyEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -234,7 +233,7 @@ object sapMPluginsCopyProviderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:copy copy} to attached listeners.
       *
@@ -247,7 +246,21 @@ object sapMPluginsCopyProviderMod {
     def fireCopy(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: CopyProvider$CopyEventParameters): Boolean = js.native
+    
+    /**
+      * @since 1.114
+      *
+      * Creates and returns a Copy button that can be used to trigger a copy action, for example, from the table
+      * toolbar.
+      *
+      * @returns The button instance
+      */
+    def getCopyButton(): typings.openui5.sapMOverflowToolbarButtonMod.default = js.native
+    def getCopyButton(/**
+      * The settings of the button control
+      */
+    mSettings: js.Object): typings.openui5.sapMOverflowToolbarButtonMod.default = js.native
     
     /**
       * Gets current value of property {@link #getCopySparse copySparse}.
@@ -310,6 +323,19 @@ object sapMPluginsCopyProviderMod {
       * @returns Two-dimensional extracted data from the selection.
       */
     def getSelectionData(): js.Array[js.Array[Any]] = js.native
+    
+    /**
+      * @since 1.114
+      *
+      * Gets current value of property {@link #getVisible visible}.
+      *
+      * Defines the visibility of the Copy button created with the {@link #getCopyButton} API.
+      *
+      * Default value is `true`.
+      *
+      * @returns Value of property `visible`
+      */
+    def getVisible(): Boolean = js.native
     
     /**
       * Sets a new value for property {@link #getCopySparse copySparse}.
@@ -379,7 +405,56 @@ object sapMPluginsCopyProviderMod {
       * New value for property `extractData`
       */
     fnExtractData: js.Function): this.type = js.native
+    
+    /**
+      * @since 1.114
+      *
+      * Sets a new value for property {@link #getVisible visible}.
+      *
+      * Defines the visibility of the Copy button created with the {@link #getCopyButton} API.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setVisible(): this.type = js.native
+    def setVisible(/**
+      * New value for property `visible`
+      */
+    bVisible: Boolean): this.type = js.native
   }
+  
+  trait CopyProvider$CopyEventParameters extends StObject {
+    
+    /**
+      * Two-dimensional mutable array of selection data to be copied to the clipboard. The first dimension represents
+      * the selected rows, and the second dimension represents the cells of the selected rows.
+      */
+    var data: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
+  }
+  object CopyProvider$CopyEventParameters {
+    
+    inline def apply(): CopyProvider$CopyEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CopyProvider$CopyEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyProvider$CopyEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
+    }
+  }
+  
+  type CopyProviderCopyEvent = typings.openui5.sapUiBaseEventMod.default[CopyProvider$CopyEventParameters]
+  
+  type CopyProviderCopyEventParameters = CopyProvider$CopyEventParameters
   
   trait CopyProviderSettings
     extends StObject
@@ -393,7 +468,12 @@ object sapMPluginsCopyProviderMod {
       * button in a table toolbar to start the copy action synthetically, which might cause this event to be
       * fired. To avoid writing the selection to the clipboard, call `preventDefault` on the event instance.
       */
-    var copy: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var copy: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CopyProvider$CopyEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines whether unselected rows that are located between the selected rows are copied to the clipboard
@@ -439,6 +519,15 @@ object sapMPluginsCopyProviderMod {
     var extractData: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
+    
+    /**
+      * @since 1.114
+      *
+      * Defines the visibility of the Copy button created with the {@link #getCopyButton} API.
+      */
+    var visible: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
   }
   object CopyProviderSettings {
     
@@ -450,7 +539,9 @@ object sapMPluginsCopyProviderMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CopyProviderSettings] (val x: Self) extends AnyVal {
       
-      inline def setCopy(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CopyProvider$CopyEventParameters] => Unit
+      ): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
       inline def setCopySparse(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "copySparse", value.asInstanceOf[js.Any])
       
@@ -465,6 +556,10 @@ object sapMPluginsCopyProviderMod {
       inline def setExtractData(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "extractData", value.asInstanceOf[js.Any])
       
       inline def setExtractDataUndefined: Self = StObject.set(x, "extractData", js.undefined)
+      
+      inline def setVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

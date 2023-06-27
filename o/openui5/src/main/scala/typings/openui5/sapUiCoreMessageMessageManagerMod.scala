@@ -12,6 +12,9 @@ object sapUiCoreMessageMessageManagerMod {
   @js.native
   /**
     * Constructor for a new MessageManager.
+    *
+    * Creating own instances of MessageManager is deprecated. Please require 'sap/ui/core/message/MessageManager'
+    * instead and use the module export directly without using 'new'.
     */
   open class default () extends MessageManager
   /* static members */
@@ -176,6 +179,24 @@ object sapUiCoreMessageMessageManagerMod {
       * The sap.ui.base.ManagedObject
       */
     oObject: typings.openui5.sapUiBaseManagedObjectMod.default
+    ): Unit = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Update Messages by providing two arrays of old and new messages.
+      *
+      * The old ones will be removed, the new ones will be added.
+      */
+    def updateMessages(
+      /**
+      * Array of old messages to be removed
+      */
+    aOldMessages: js.Array[Any],
+      /**
+      * Array of new messages to be added
+      */
+    aNewMessages: js.Array[Any]
     ): Unit = js.native
   }
 }

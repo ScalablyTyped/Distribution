@@ -121,10 +121,12 @@ object mod {
     def deactivate(deactivateOptions: DeactivateOptions): FocusTrap = js.native
     
     def pause(): FocusTrap = js.native
+    def pause(pauseOptions: PauseOptions): FocusTrap = js.native
     
     var paused: Boolean = js.native
     
     def unpause(): FocusTrap = js.native
+    def unpause(unpauseOptions: UnpauseOptions): FocusTrap = js.native
     
     def updateContainerElements(containerElements: String): FocusTrap = js.native
     def updateContainerElements(containerElements: js.Array[HTMLElement | SVGElement | String]): FocusTrap = js.native
@@ -242,6 +244,22 @@ object mod {
     var initialFocus: js.UndefOr[FocusTargetOrFalse] = js.undefined
     
     /**
+      * Determines if the given keyboard event is a "tab backward" event that will move
+      * the focus to the previous trapped element in tab order. Defaults to the `SHIFT+TAB` key.
+      * Use this to override the trap's behavior if you want to use arrow keys to control
+      * keyboard navigation within the trap, for example. Also see `isKeyForward()` option.
+      */
+    var isKeyBackward: js.UndefOr[KeyboardEventToBoolean] = js.undefined
+    
+    /**
+      * Determines if the given keyboard event is a "tab forward" event that will move
+      * the focus to the next trapped element in tab order. Defaults to the `TAB` key.
+      * Use this to override the trap's behavior if you want to use arrow keys to control
+      * keyboard navigation within the trap, for example. Also see `isKeyBackward()` option.
+      */
+    var isKeyForward: js.UndefOr[KeyboardEventToBoolean] = js.undefined
+    
+    /**
       * A function that will be called **before** sending focus to the
       * target element upon activation.
       */
@@ -252,6 +270,11 @@ object mod {
       * trigger element upon deactivation.
       */
     var onDeactivate: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * A function that will be called immediately after the trap's state is updated to be paused.
+      */
+    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function that will be called **after** focus has been sent to the
@@ -265,6 +288,25 @@ object mod {
       * element upon deactivation; otherwise, it will be called after deactivation completes.
       */
     var onPostDeactivate: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * A function that will be called after the trap has been completely paused and is no longer
+      *  managing/trapping focus.
+      */
+    var onPostPause: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * A function that will be called after the trap has been completely unpaused and is once
+      *  again managing/trapping focus.
+      */
+    var onPostUnpause: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /**
+      * A function that will be called immediately after the trap's state is updated to be active
+      *  again, but prior to updating its knowledge of what nodes are tabbable within its containers,
+      *  and prior to actively managing/trapping focus.
+      */
+    var onUnpause: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * By default, focus() will scroll to the element if not in viewport.
@@ -294,6 +336,16 @@ object mod {
       * Specific tabbable options configurable on focus-trap.
       */
     var tabbableOptions: js.UndefOr[FocusTrapTabbableOptions] = js.undefined
+    
+    /**
+      * Define the global trap stack. This makes it possible to share the same stack
+      * in multiple instances of `focus-trap` in the same page such that
+      * auto-activation/pausing of traps is properly coordinated among all instances
+      * as activating a trap when another is already active should result in the other
+      * being auto-paused. By default, each instance will have its own internal stack,
+      * leading to conflicts if they each try to trap the focus at the same time.
+      */
+    var trapStack: js.UndefOr[js.Array[FocusTrap]] = js.undefined
   }
   object Options {
     
@@ -351,6 +403,14 @@ object mod {
       
       inline def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
       
+      inline def setIsKeyBackward(value: /* event */ KeyboardEvent => Boolean): Self = StObject.set(x, "isKeyBackward", js.Any.fromFunction1(value))
+      
+      inline def setIsKeyBackwardUndefined: Self = StObject.set(x, "isKeyBackward", js.undefined)
+      
+      inline def setIsKeyForward(value: /* event */ KeyboardEvent => Boolean): Self = StObject.set(x, "isKeyForward", js.Any.fromFunction1(value))
+      
+      inline def setIsKeyForwardUndefined: Self = StObject.set(x, "isKeyForward", js.undefined)
+      
       inline def setOnActivate(value: () => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction0(value))
       
       inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
@@ -359,6 +419,10 @@ object mod {
       
       inline def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
       
+      inline def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+      
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      
       inline def setOnPostActivate(value: () => Unit): Self = StObject.set(x, "onPostActivate", js.Any.fromFunction0(value))
       
       inline def setOnPostActivateUndefined: Self = StObject.set(x, "onPostActivate", js.undefined)
@@ -366,6 +430,18 @@ object mod {
       inline def setOnPostDeactivate(value: () => Unit): Self = StObject.set(x, "onPostDeactivate", js.Any.fromFunction0(value))
       
       inline def setOnPostDeactivateUndefined: Self = StObject.set(x, "onPostDeactivate", js.undefined)
+      
+      inline def setOnPostPause(value: () => Unit): Self = StObject.set(x, "onPostPause", js.Any.fromFunction0(value))
+      
+      inline def setOnPostPauseUndefined: Self = StObject.set(x, "onPostPause", js.undefined)
+      
+      inline def setOnPostUnpause(value: () => Unit): Self = StObject.set(x, "onPostUnpause", js.Any.fromFunction0(value))
+      
+      inline def setOnPostUnpauseUndefined: Self = StObject.set(x, "onPostUnpause", js.undefined)
+      
+      inline def setOnUnpause(value: () => Unit): Self = StObject.set(x, "onUnpause", js.Any.fromFunction0(value))
+      
+      inline def setOnUnpauseUndefined: Self = StObject.set(x, "onUnpause", js.undefined)
       
       inline def setPreventScroll(value: Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
       
@@ -389,6 +465,66 @@ object mod {
       inline def setTabbableOptions(value: FocusTrapTabbableOptions): Self = StObject.set(x, "tabbableOptions", value.asInstanceOf[js.Any])
       
       inline def setTabbableOptionsUndefined: Self = StObject.set(x, "tabbableOptions", js.undefined)
+      
+      inline def setTrapStack(value: js.Array[FocusTrap]): Self = StObject.set(x, "trapStack", value.asInstanceOf[js.Any])
+      
+      inline def setTrapStackUndefined: Self = StObject.set(x, "trapStack", js.undefined)
+      
+      inline def setTrapStackVarargs(value: FocusTrap*): Self = StObject.set(x, "trapStack", js.Array(value*))
+    }
+  }
+  
+  /* Inlined std.Pick<focus-trap.focus-trap.Options, 'onPause' | 'onPostPause'> */
+  trait PauseOptions extends StObject {
+    
+    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onPostPause: js.UndefOr[js.Function0[Unit]] = js.undefined
+  }
+  object PauseOptions {
+    
+    inline def apply(): PauseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PauseOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseOptions] (val x: Self) extends AnyVal {
+      
+      inline def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+      
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      
+      inline def setOnPostPause(value: () => Unit): Self = StObject.set(x, "onPostPause", js.Any.fromFunction0(value))
+      
+      inline def setOnPostPauseUndefined: Self = StObject.set(x, "onPostPause", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<focus-trap.focus-trap.Options, 'onUnpause' | 'onPostUnpause'> */
+  trait UnpauseOptions extends StObject {
+    
+    var onPostUnpause: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onUnpause: js.UndefOr[js.Function0[Unit]] = js.undefined
+  }
+  object UnpauseOptions {
+    
+    inline def apply(): UnpauseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UnpauseOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnpauseOptions] (val x: Self) extends AnyVal {
+      
+      inline def setOnPostUnpause(value: () => Unit): Self = StObject.set(x, "onPostUnpause", js.Any.fromFunction0(value))
+      
+      inline def setOnPostUnpauseUndefined: Self = StObject.set(x, "onPostUnpause", js.undefined)
+      
+      inline def setOnUnpause(value: () => Unit): Self = StObject.set(x, "onUnpause", js.Any.fromFunction0(value))
+      
+      inline def setOnUnpauseUndefined: Self = StObject.set(x, "onUnpause", js.undefined)
     }
   }
 }

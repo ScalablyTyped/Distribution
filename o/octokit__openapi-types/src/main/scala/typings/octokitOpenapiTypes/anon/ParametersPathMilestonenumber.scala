@@ -8,11 +8,11 @@ trait ParametersPathMilestonenumber extends StObject {
   
   var parameters: PathMilestonenumber
   
-  var responses: `200298`
+  var responses: `200352`
 }
 object ParametersPathMilestonenumber {
   
-  inline def apply(parameters: PathMilestonenumber, responses: `200298`): ParametersPathMilestonenumber = {
+  inline def apply(parameters: PathMilestonenumber, responses: `200352`): ParametersPathMilestonenumber = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathMilestonenumber]
   }
@@ -22,6 +22,6 @@ object ParametersPathMilestonenumber {
     
     inline def setParameters(value: PathMilestonenumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200298`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200352`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

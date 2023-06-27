@@ -17,10 +17,10 @@ trait IntervalPeriodNode
      with SQLNode {
   
   /**
-    * Interval node periods.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalPeriodNode)
-    */
+  		 * Interval node periods.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalPeriodNode)
+  		 */
   var period: day | month | hour | second | year | minute
   
   var precision: Double

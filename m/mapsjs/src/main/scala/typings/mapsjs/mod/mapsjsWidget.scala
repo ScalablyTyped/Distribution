@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait mapsjsWidget extends StObject {
   
   /**
-    * Add a fixed element to the content area which resides at a z-level 
+    * Add a fixed element to the content area which resides at a z-level
     * above tiled map content. These elements do not scale with the map
     * scale. This is used to place markers or callouts on the map
     * @param {HTMLElement} element Any html that can be added to the DOM.
     * @param {number} mapUnitsX The x coordinate of the insertion point in map units.
     * @param {number} mapUnitsY The y coordinate of the insertion point in map units.
-    * @param {function} [addAction] Callback function called after the 
+    * @param {function} [addAction] Callback function called after the
     * DOM element has been placed with signature addAction(element).
     * @param {object} dragOptions JavaScript object of the form {dragEnabled,
-    * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction, 
+    * useElementInsteadOfNewGestureOverlay, downAction, moveAction, upAction,
     * wheelAction } where dragEnabled flags whether dragging should be
-    * enabled on the element, and downAction, moveAction, upAction, and 
+    * enabled on the element, and downAction, moveAction, upAction, and
     * wheelAction are callback functions invoked on mousedown, mousemove,
     * mouseup, and scroll events respectively.
     */
@@ -51,10 +51,10 @@ trait mapsjsWidget extends StObject {
   ): Unit = js.native
   
   /**
-    * Add a styled path geometry to the content area which resides at a z-level 
-    * above tiled map content. The geometry is converted to SVG and added to the 
-    * content area DOM. If an attempt to add a geometry is made with the same 
-    * key, the geometry is swapped out. You must remove using removePathGeometry 
+    * Add a styled path geometry to the content area which resides at a z-level
+    * above tiled map content. The geometry is converted to SVG and added to the
+    * content area DOM. If an attempt to add a geometry is made with the same
+    * key, the geometry is swapped out. You must remove using removePathGeometry
     * for resource cleanup.
     * @param {styleGeometry} styledGeom The styledGeometry to render.
     * @param {string} key String used to tie a geometry to its SVG
@@ -86,7 +86,7 @@ trait mapsjsWidget extends StObject {
     * shapeType, geometryStyle, styledGeometry, nodeTapAndHoldAction, nodeMoveAction,
     * shapeChangeAction, envelopeEndAction, circleEndAction, supressNodeAdd, leavePath }
     * where key is a a string associated with this geometry, shapeType
-    * is the type of shape this geometry is, one of 'polygon', 'polyline', 'multipoint', 'envelope' or 'circle', 
+    * is the type of shape this geometry is, one of 'polygon', 'polyline', 'multipoint', 'envelope' or 'circle',
     * geometryStyle is a geometryStyle which should be applied
     * to the digitized geometry, styledGeometry is an optional styledGeometry for existing paths to edit, set this to enter edit mode,
     * nodeTapAndHoldAction is a callback invoked
@@ -95,8 +95,8 @@ trait mapsjsWidget extends StObject {
     * callback invoked after any node is dragged to a new location and
     * has signature nodeMoveAction(x, y, actionType), shapeChangeAction
     * is a callback that is invoked after the geometry shape changes and,
-    * has signature shapeChangeAction(shape), envelopeEndAction is a callback 
-    * invoked after an envelope is created and has signature envelopeEndAction(envelope), 
+    * has signature shapeChangeAction(shape), envelopeEndAction is a callback
+    * invoked after an envelope is created and has signature envelopeEndAction(envelope),
     * circleEndAction is similar to envelopeEndAction but takes a geometry.polygon representing the circle,
     * and leavePath is a flag that indicates whether the digitized shape
     * should be left on the map after digitization is complete.
@@ -104,7 +104,7 @@ trait mapsjsWidget extends StObject {
   def beginDigitize(options: beginDigitizeOptions): Unit = js.native
   
   /**
-    * Gets a point in map units from supplied coordinates pixel units 
+    * Gets a point in map units from supplied coordinates pixel units
     * with respect to the currently displayed extents.
     * @param {number} x The x coordinate in pixels.
     * @param {number} y The y coordinate in pixels.
@@ -136,15 +136,15 @@ trait mapsjsWidget extends StObject {
   def flyTo(center: point, zl: Double, durationMs: Unit, completeAction: js.Function0[Unit]): Unit = js.native
   
   /**
-    * Gets the current actual map scale. This is the ratio of units on 
-    * the screen to actual units on the earth's surface at the latitude 
+    * Gets the current actual map scale. This is the ratio of units on
+    * the screen to actual units on the earth's surface at the latitude
     * of the current map center.
     * @returns {number} The ratio of screen units to actual meters.
     */
   def getActualMapScale(): Double = js.native
   
   /**
-    * Gets the best fit zoom level based on the supplied map extents for 
+    * Gets the best fit zoom level based on the supplied map extents for
     * the current display extents in pixels.
     * @param {envelope} extentsNew New map extents to fit.
     * @returns {number} The zoom level which best fits the extents.
@@ -158,7 +158,7 @@ trait mapsjsWidget extends StObject {
   def getDigitizeSnapshot(): geometry = js.native
   
   /**
-    * Gets the center of the map in spherical mercator. Use 
+    * Gets the center of the map in spherical mercator. Use
     * sphericalMercator.deprojectToLatLon static function to convert to a lat/lon.
     * @return {point} A point map center
     */
@@ -226,7 +226,7 @@ trait mapsjsWidget extends StObject {
   def moveFixedContentElement(element: HTMLElement, mapUnitsX: Double, mapUnitsY: Double): Unit = js.native
   
   /**
-    * Offsets the current map center by the specified deltas in pixels. 
+    * Offsets the current map center by the specified deltas in pixels.
     * @param {number} [dx] offset x in pixels.
     * @param {number} [dy] offset y in pixels.
     */
@@ -244,7 +244,7 @@ trait mapsjsWidget extends StObject {
   /**
     * Removes the last set from the currently digitizing path.
     * @return {number[]} The last set from the currently digitizing path
-    * in the form [xn,yn]. 
+    * in the form [xn,yn].
     */
   def popSetFromDigitizePath(): js.Array[Double] = js.native
   
@@ -254,7 +254,7 @@ trait mapsjsWidget extends StObject {
     */
   def popTileLayer(): layer = js.native
   
-  /** 
+  /**
     * Forces additional digitized points to be pushed to a new set of the
     * currently digitizing geometry.
     */
@@ -267,9 +267,9 @@ trait mapsjsWidget extends StObject {
   def pushTileLayer(tl: layer): Unit = js.native
   
   /**
-    * Forces the map to redraw the currently loaded tile and geometry 
+    * Forces the map to redraw the currently loaded tile and geometry
     * content. You should not have to call this as redraws are automatically
-    * handled during programatic state changes. This would be for edge cases 
+    * handled during programatic state changes. This would be for edge cases
     * where the developer is affecting internal state in an undocumented way.
     */
   def redraw(): Unit = js.native
@@ -301,11 +301,11 @@ trait mapsjsWidget extends StObject {
   def removeTileLayer(tl: layer): Unit = js.native
   
   /**
-    * Updates the map to the size of its container. This updates internal 
-    * parameters for computing map extents and handling the amount of tile 
-    * content to download. This is handled automatically if the browser 
-    * window is resized. But if you are sizing the map programatically 
-    * (e.g. resizable panel or slider) then call this after the parent 
+    * Updates the map to the size of its container. This updates internal
+    * parameters for computing map extents and handling the amount of tile
+    * content to download. This is handled automatically if the browser
+    * window is resized. But if you are sizing the map programatically
+    * (e.g. resizable panel or slider) then call this after the parent
     * container has resized.
     */
   def resize(): Unit = js.native
@@ -316,9 +316,9 @@ trait mapsjsWidget extends StObject {
     */
   def setBackground(b: String): Unit = js.native
   
-  /** 
-    * Sets the margin around the map in pixels for extra content fetched so that tile 
-    * rebuilding of the display is minimized. This is an advanced property and does not 
+  /**
+    * Sets the margin around the map in pixels for extra content fetched so that tile
+    * rebuilding of the display is minimized. This is an advanced property and does not
     * generally need to be adjusted. The default is 128 pixels, or half the width
     * of a tile. This should be increased for maps which are very large in pixels
     * or where panning is constant. This should be decreased for very small maps,
@@ -328,8 +328,8 @@ trait mapsjsWidget extends StObject {
   def setContentExtentsMarginInPixels(cem: Double): Unit = js.native
   
   /**
-    * Set the function called when map content (map tiles and fixed elements) are 
-    * re-positioned in the DOM. This is done automatically as the map is panned 
+    * Set the function called when map content (map tiles and fixed elements) are
+    * re-positioned in the DOM. This is done automatically as the map is panned
     * beyond existing content and zoomed to a new level requiring content.
     * @param {function} action The function to call when the map content
     * completes repositioning with signature action(object) where object
@@ -338,24 +338,24 @@ trait mapsjsWidget extends StObject {
   def setContentRepositionAction(action: js.Function1[/* vals */ repositionStatsObj, Unit]): Unit = js.native
   
   /**
-    * Sets the z-order of drawn content in relation to the gesture capture 
-    * panel. The default behavior (false) is to have fixed content and 
-    * geometry underneath the gesture panel in the DOM. If false, all 
+    * Sets the z-order of drawn content in relation to the gesture capture
+    * panel. The default behavior (false) is to have fixed content and
+    * geometry underneath the gesture panel in the DOM. If false, all
     * pointer events are handled by the gesture capture panel and
     * optionally parents of the map control. If true, drawn content will
-    * receive pointer events first and will block gestures to the map. If 
-    * true, digitizing will not function and polygons will block map 
+    * receive pointer events first and will block gestures to the map. If
+    * true, digitizing will not function and polygons will block map
     * navigation. In some scenarios you may want to set this to true if you
-    * are placing fixed content (such as point features) on the map and 
-    * need to handle gestures on the placed content. You can call this 
+    * are placing fixed content (such as point features) on the map and
+    * need to handle gestures on the placed content. You can call this
     * function at any time to change the order.
-    * @param {boolean} flag Whether or not the fixed content layer should 
+    * @param {boolean} flag Whether or not the fixed content layer should
     * reside above the gesture layer.
     */
   def setDrawnContentZorderToTop(flag: Boolean): Unit = js.native
   
-  /** 
-    * Set the function called when the map extents have stopped changing 
+  /**
+    * Set the function called when the map extents have stopped changing
     * (e.g. after an animated pan or zoom).
     * @param {function} action The function to call when the extents
     * finish changing with signature action(object) where object is of
@@ -372,7 +372,7 @@ trait mapsjsWidget extends StObject {
   def setMapCenter(center: point): Unit = js.native
   
   /**
-    * Same as setMapCenter except will animate from current map center to the 
+    * Same as setMapCenter except will animate from current map center to the
     * specified location
     * @param {point} center The map center as a point.
     * @param {number} [durationMs] Duration in miliseconds.
@@ -408,22 +408,22 @@ trait mapsjsWidget extends StObject {
   
   /**
     * Sets function called when map is clicked or tapped.
-    * @param {function} action The function to call on mouse click or tap 
+    * @param {function} action The function to call on mouse click or tap
     * with signature action(point).
     */
   def setPointerClickAction(action: js.Function1[/* pt */ point, Unit]): Unit = js.native
   
-  /** 
+  /**
     * Sets function called when the map pointer hovers over the map.
-    * @param {function} action The function to call on mouse hover with 
+    * @param {function} action The function to call on mouse hover with
     * signature action(point).
     */
   def setPointerHoverAction(action: js.Function1[/* pt */ point, Unit]): Unit = js.native
   
   /**
-    * Flags whether or not map extent changes can occur through gestures 
+    * Flags whether or not map extent changes can occur through gestures
     * like mouse or touch drag, mouse wheel, or pinch zoom.
-    * @param {boolean} flag Whether or not gestures should affect map 
+    * @param {boolean} flag Whether or not gestures should affect map
     * extent changes.
     */
   def setSuspendMapExtentChangesByGestures(flag: Boolean): Unit = js.native
@@ -459,7 +459,7 @@ trait mapsjsWidget extends StObject {
     */
   def zoomDelta(delta: Double): Unit = js.native
   
-  /** 
+  /**
     * Animates a change to the current zoom level.
     * @param {number} delta Change to be added to the current zoom level.
     * @param {number} [durationMs] Duration in miliseconds.

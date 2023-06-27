@@ -1059,7 +1059,7 @@ object Collision {
       * Query an AABB for overlapping proxies. The callback is called for each proxy that overlaps the supplied AABB. The callback should match function signature fuction callback(proxy:b2DynamicTreeNode):Boolean and should return false to trigger premature termination.
       * @param callback Called for each proxy that overlaps the supplied AABB.
       *    param proxy Proxy overlapping the supplied AABB.
-      * @aabb Proxies are query for overlap on this AABB.
+      * @param aabb Proxies are query for overlap on this AABB.
       **/
     /* CompleteClass */
     override def Query(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/endpoint" : "7.0.5"
+      "@octokit/endpoint" : "8.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/endpoint" : "7.0.5"
+      "@octokit/endpoint" : "8.0.1"
     }
   ],
   "compile-devDependencies" : [

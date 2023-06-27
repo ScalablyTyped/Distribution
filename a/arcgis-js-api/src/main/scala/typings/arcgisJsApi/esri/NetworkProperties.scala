@@ -9,47 +9,47 @@ trait NetworkProperties
      with LoadableProperties {
   
   /**
-    * The full network definition, accessible only when the network is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#dataElement)
-    */
+  		 * The full network definition, accessible only when the network is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#dataElement)
+  		 */
   var dataElement: js.UndefOr[Any] = js.undefined
   
   /**
-    * The full extent of the network, defined from the service territory used to create the network.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#fullExtent)
-    */
+  		 * The full extent of the network, defined from the service territory used to create the network.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#fullExtent)
+  		 */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * Random unique id (UUID) to identify a network as defined in the webmap spec.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#id)
-    */
+  		 * Random unique id (UUID) to identify a network as defined in the webmap spec.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#id)
+  		 */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The full url to the network layer id as defined in the webmap spec.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#layerUrl)
-    */
+  		 * The full url to the network layer id as defined in the webmap spec.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#layerUrl)
+  		 */
   var layerUrl: js.UndefOr[String] = js.undefined
   
   var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
-    * The spatial reference of the network, defined at the creation of the network, usually from the service territory class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#spatialReference)
-    */
+  		 * The spatial reference of the network, defined at the creation of the network, usually from the service territory class.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The name of the network as defined in the webmap spec.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#title)
-    */
+  		 * The name of the network as defined in the webmap spec.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object NetworkProperties {

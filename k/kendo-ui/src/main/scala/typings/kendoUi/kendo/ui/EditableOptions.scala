@@ -16,6 +16,8 @@ trait EditableOptions extends StObject {
   
   var name: String
   
+  var size: js.UndefOr[String] = js.undefined
+  
   var skipFocus: Boolean
   
   var validateOnBlur: Boolean
@@ -50,6 +52,10 @@ object EditableOptions {
     inline def setMobileEditors(value: MobileEditorDefinitions): Self = StObject.set(x, "mobileEditors", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSkipFocus(value: Boolean): Self = StObject.set(x, "skipFocus", value.asInstanceOf[js.Any])
     

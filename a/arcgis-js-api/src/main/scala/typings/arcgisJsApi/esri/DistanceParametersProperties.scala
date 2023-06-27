@@ -13,31 +13,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DistanceParametersProperties extends StObject {
   
   /**
-    * Specifies the units for measuring distance between [geometry1](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1) and [geometry2](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#distanceUnit)
-    */
+  		 * Specifies the units for measuring distance between [geometry1](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1) and [geometry2](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#distanceUnit)
+  		 */
   var distanceUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
-    * When `true`, the geodesic distance between [geometry1](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1) and [geometry2](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2) is measured.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geodesic)
-    */
+  		 * When `true`, the geodesic distance between [geometry1](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1) and [geometry2](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2) is measured.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geodesic)
+  		 */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The geometry from which the distance is to be measured.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1)
-    */
+  		 * The geometry from which the distance is to be measured.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry1)
+  		 */
   var geometry1: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
-    * The geometry to which the distance is to be measured.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2)
-    */
+  		 * The geometry to which the distance is to be measured.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html#geometry2)
+  		 */
   var geometry2: js.UndefOr[GeometryProperties] = js.undefined
 }
 object DistanceParametersProperties {

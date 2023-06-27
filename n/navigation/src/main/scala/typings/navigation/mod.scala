@@ -3,6 +3,7 @@ package typings.navigation
 import org.scalablytyped.runtime.StringDictionary
 import typings.navigation.anon.Crumbs
 import typings.navigation.anon.Data
+import typings.navigation.anon.Hash
 import typings.navigation.navigationStrings.add
 import typings.navigation.navigationStrings.none
 import typings.navigation.navigationStrings.replace
@@ -100,12 +101,6 @@ object mod {
       * browser history entry
       */
     def addHistory(url: String, replace: Boolean): Unit = js.native
-    
-    /**
-      * Registers a listener for the popstate event
-      * @param navigateHistory The history navigation event handler
-      */
-    def init(navigateHistory: js.Function0[Unit]): Unit = js.native
   }
   
   @JSImport("navigation", "HashHistoryManager")
@@ -115,24 +110,8 @@ object mod {
     * @param replaceQueryIdentifier a value indicating whether to use '#'
     * in place of '?'. Set to true for Internet explorer 6 and 7 support
     */
-  open class HashHistoryManager ()
-    extends StObject
-       with HistoryManager {
+  open class HashHistoryManager () extends HTML5HistoryManager {
     def this(replaceQueryIdentifier: Boolean) = this()
-    
-    /**
-      * Sets the browser Url's hash to the url
-      * @param url The current url
-      * @param replace A value indicating whether to replace the current
-      * browser history entry
-      */
-    def addHistory(url: String, replace: Boolean): Unit = js.native
-    
-    /**
-      * Registers a listener for the hashchange event
-      * @param navigateHistory The history navigation event handler
-      */
-    def init(navigateHistory: Any): Unit = js.native
   }
   
   @JSImport("navigation", "State")
@@ -193,6 +172,13 @@ object mod {
       navigate: js.Function1[/* asyncData */ js.UndefOr[Any], Unit],
       history: Boolean
     ): Unit = js.native
+    
+    /**
+      * Rewrites the navigation for history
+      * @param data The navigation data
+      * @returns The rewritten navigation
+      */
+    def rewriteNavigation(data: Any): js.UndefOr[Hash | Null] = js.native
     
     /**
       * Gets the route Url patterns
@@ -862,8 +848,12 @@ object mod {
     /**
       * Registers browser history event listeners
       * @param navigateHistory The history navigation event handler
+      * @param rewriteUrl The function that rewrites a url for history
       */
-    def init(navigateHistory: js.Function1[/* url */ js.UndefOr[String], Unit]): Unit = js.native
+    def init(
+      navigateHistory: js.Function1[/* url */ js.UndefOr[String], Unit],
+      rewriteUrl: js.Function1[/* url */ String, js.UndefOr[String]]
+    ): Unit = js.native
     
     /**
       * Removes browser history event listeners

@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathUsernameResponses extends StObject {
   
-  /** Remove public organization membership for the authenticated user */
+  /**
+    * Remove public organization membership for the authenticated user
+    * @description Removes the public membership for the authenticated user from the specified organization, unless public visibility is enforced by default.
+    */
   var delete: ParametersPathUsernameResponses
   
-  /** Check public organization membership for a user */
+  /**
+    * Check public organization membership for a user
+    * @description Check if the provided user is a public member of the organization.
+    */
   var get: ParametersPathUsernameResponses
   
   /**
@@ -18,11 +24,11 @@ trait GetParametersPathUsernameResponses extends StObject {
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: Responses88
+  var put: Responses102
 }
 object GetParametersPathUsernameResponses {
   
-  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsernameResponses, put: Responses88): GetParametersPathUsernameResponses = {
+  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsernameResponses, put: Responses102): GetParametersPathUsernameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathUsernameResponses]
   }
@@ -34,6 +40,6 @@ object GetParametersPathUsernameResponses {
     
     inline def setGet(value: ParametersPathUsernameResponses): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses88): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses102): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

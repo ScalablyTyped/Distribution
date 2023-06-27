@@ -1,7 +1,6 @@
 package typings.octokitPluginPaginateRest.anon
 
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ExtractOctokitResponse
-import typings.octokitTypes.distTypesGeneratedEndpointsMod.RequiredPreview
 import typings.octokitTypes.distTypesGeneratedEndpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,22 +8,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `22` extends StObject {
   
-  var parameters: (ToOctokitParameters[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
-  ]) & RequiredPreview[Any]
+  var parameters: ToOctokitParameters[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
+  ]
   
   var response: (ExtractOctokitResponse[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
   ]) & `21`
 }
 object `22` {
   
   inline def apply(
-    parameters: (ToOctokitParameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
-    ]) & RequiredPreview[Any],
+    parameters: ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
+    ],
     response: (ExtractOctokitResponse[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
     ]) & `21`
   ): `22` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -35,14 +34,14 @@ object `22` {
   implicit open class MutableBuilder[Self <: `22`] (val x: Self) extends AnyVal {
     
     inline def setParameters(
-      value: (ToOctokitParameters[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
-        ]) & RequiredPreview[Any]
+      value: ToOctokitParameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
+        ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponse(
       value: (ExtractOctokitResponse[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/cache/usage-by-repository']['get'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/orgs/{org}/actions/permissions/repositories']['get'] */ js.Any
         ]) & `21`
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

@@ -2,6 +2,7 @@ package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.failed_
 import typings.microsoftGraph.microsoftGraphStrings.running_
+import typings.microsoftGraph.microsoftGraphStrings.succeeded_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.draft
   - typings.microsoftGraph.microsoftGraphStrings.running_
   - typings.microsoftGraph.microsoftGraphStrings.scheduled
-  - typings.microsoftGraph.microsoftGraphStrings.succeeded
+  - typings.microsoftGraph.microsoftGraphStrings.succeeded_
   - typings.microsoftGraph.microsoftGraphStrings.failed_
   - typings.microsoftGraph.microsoftGraphStrings.cancelled
   - typings.microsoftGraph.microsoftGraphStrings.excluded
@@ -34,7 +35,7 @@ object SimulationStatus {
   
   inline def scheduled: typings.microsoftGraph.microsoftGraphStrings.scheduled = "scheduled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.scheduled]
   
-  inline def succeeded: typings.microsoftGraph.microsoftGraphStrings.succeeded = "succeeded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.succeeded]
+  inline def succeeded: succeeded_ = "succeeded".asInstanceOf[succeeded_]
   
   inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   

@@ -4,21 +4,34 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap) */
 trait ImageBitmap
   extends StObject
      with CanvasImageSource
      with TexImageSource
      with _Transferable {
   
-  /** Releases imageBitmap's underlying bitmap data. */
+  /**
+    * Releases imageBitmap's underlying bitmap data.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/close)
+    */
   /* standard dom */
   def close(): Unit
   
-  /** Returns the intrinsic height of the image, in CSS pixels. */
+  /**
+    * Returns the intrinsic height of the image, in CSS pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/height)
+    */
   /* standard dom */
   val height: Double
   
-  /** Returns the intrinsic width of the image, in CSS pixels. */
+  /**
+    * Returns the intrinsic width of the image, in CSS pixels.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ImageBitmap/width)
+    */
   /* standard dom */
   val width: Double
 }

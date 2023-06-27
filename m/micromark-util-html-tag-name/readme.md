@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-html-tag-name
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 micromark utility with list of html tag names

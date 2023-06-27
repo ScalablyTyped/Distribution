@@ -1,7 +1,7 @@
 
 # Scala.js typings for logrocket
 
-Typings are for version 4.0.1
+Typings are for version 4.0.3
 
 ## Library description:
 JavaScript SDK for [LogRocket](https://logrocket.com/)

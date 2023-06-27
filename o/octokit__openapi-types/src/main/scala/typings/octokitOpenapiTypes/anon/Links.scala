@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Links extends StObject {
   
-  var _links: js.UndefOr[Self] = js.undefined
+  var _links: js.UndefOr[Html] = js.undefined
   
   /** @description The actors that can bypass the rules in this ruleset */
   var bypass_actors: js.UndefOr[js.Array[Actorid]] = js.undefined
@@ -28,6 +28,9 @@ trait Links extends StObject {
   var conditions: js.UndefOr[
     Refname | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository-ruleset-conditions'] */ js.Any)
   ] = js.undefined
+  
+  /** Format: date-time */
+  var created_at: js.UndefOr[String] = js.undefined
   
   var enforcement: disabled | active | evaluate
   
@@ -61,6 +64,9 @@ trait Links extends StObject {
     * @enum {string}
     */
   var target: js.UndefOr[branch | tag] = js.undefined
+  
+  /** Format: date-time */
+  var updated_at: js.UndefOr[String] = js.undefined
 }
 object Links {
   
@@ -87,6 +93,10 @@ object Links {
     ): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
     inline def setEnforcement(value: disabled | active | evaluate): Self = StObject.set(x, "enforcement", value.asInstanceOf[js.Any])
     
@@ -122,7 +132,11 @@ object Links {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def set_links(value: typings.octokitOpenapiTypes.anon.Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
+    
+    inline def set_links(value: Html): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     
     inline def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
   }

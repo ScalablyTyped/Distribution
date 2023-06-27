@@ -356,11 +356,11 @@ object distTypesInstanceMod {
     ): Unit = js.native
     
     def _createElement[E /* <: HTMLElement */](
-      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
+      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
       className: String
     ): E = js.native
     def _createElement[E /* <: HTMLElement */](
-      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
+      tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.flatpickr.flatpickrStrings.a, typings.flatpickr.flatpickrStrings.abbr, typings.flatpickr.flatpickrStrings.address */ Any,
       className: String,
       content: String
     ): E = js.native

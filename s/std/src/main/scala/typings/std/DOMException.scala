@@ -29,7 +29,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API. */
+/**
+  * An abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException)
+  */
 trait DOMException
   extends StObject
      with Error {
@@ -109,7 +113,11 @@ trait DOMException
   /* standard dom */
   val WRONG_DOCUMENT_ERR: `4`
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException/code)
+    */
   /* standard dom */
   val code: Double
 }

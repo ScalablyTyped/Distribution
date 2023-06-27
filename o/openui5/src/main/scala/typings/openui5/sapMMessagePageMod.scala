@@ -161,7 +161,7 @@ object sapMMessagePageMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Adds some button to the aggregation {@link #getButtons buttons}.
       *
@@ -175,7 +175,7 @@ object sapMMessagePageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.1
+      * @since 1.28.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.MessagePage`.
@@ -191,20 +191,20 @@ object sapMMessagePageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessagePage` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.28.1
+      * @since 1.28.1
       *
       * Attaches event handler `fnFunction` to the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.MessagePage`.
@@ -225,7 +225,7 @@ object sapMMessagePageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
@@ -236,7 +236,7 @@ object sapMMessagePageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessagePage` itself
       */
@@ -244,7 +244,7 @@ object sapMMessagePageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Destroys all the buttons in the aggregation {@link #getButtons buttons}.
       *
@@ -267,7 +267,7 @@ object sapMMessagePageMod {
     def destroyCustomText(): this.type = js.native
     
     /**
-      * @SINCE 1.28.1
+      * @since 1.28.1
       *
       * Detaches event handler `fnFunction` from the {@link #event:navButtonPress navButtonPress} event of this
       * `sap.m.MessagePage`.
@@ -280,13 +280,13 @@ object sapMMessagePageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNavButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -294,8 +294,8 @@ object sapMMessagePageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.1
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.28.1
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navButtonPress navButtonPress} to attached listeners.
       *
@@ -308,19 +308,17 @@ object sapMMessagePageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets content of aggregation {@link #getButtons buttons}.
       *
@@ -361,7 +359,7 @@ object sapMMessagePageMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -387,7 +385,7 @@ object sapMMessagePageMod {
     def getIcon(): URI = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getIconAlt iconAlt}.
       *
@@ -453,7 +451,7 @@ object sapMMessagePageMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getTitleLevel titleLevel}.
       *
@@ -468,7 +466,7 @@ object sapMMessagePageMod {
     def getTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Checks for the provided `sap.m.Button` in the aggregation {@link #getButtons buttons}. and returns its
       * index if found or -1 otherwise.
@@ -481,7 +479,7 @@ object sapMMessagePageMod {
     oButton: typings.openui5.sapMButtonMod.default): int = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Inserts a button into the aggregation {@link #getButtons buttons}.
       *
@@ -515,7 +513,7 @@ object sapMMessagePageMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Removes all the controls from the aggregation {@link #getButtons buttons}.
       *
@@ -570,7 +568,7 @@ object sapMMessagePageMod {
       */
     vButton: String): typings.openui5.sapMButtonMod.default | Null = js.native
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Removes a button from the aggregation {@link #getButtons buttons}.
       *
@@ -625,7 +623,7 @@ object sapMMessagePageMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -663,7 +661,7 @@ object sapMMessagePageMod {
     sIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getIconAlt iconAlt}.
       *
@@ -771,7 +769,7 @@ object sapMMessagePageMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getTitleLevel titleLevel}.
       *
@@ -798,6 +796,12 @@ object sapMMessagePageMod {
     sTitleLevel: TitleLevel): this.type = js.native
   }
   
+  trait MessagePage$NavButtonPressEventParameters extends StObject
+  
+  type MessagePageNavButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[MessagePage$NavButtonPressEventParameters]
+  
+  type MessagePageNavButtonPressEventParameters = MessagePage$NavButtonPressEventParameters
+  
   trait MessagePageSettings
     extends StObject
        with ControlSettings {
@@ -813,7 +817,7 @@ object sapMMessagePageMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * The buttons displayed under the description text.
       *
@@ -844,7 +848,7 @@ object sapMMessagePageMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Defines whether the value set in the `description` property is displayed as formatted text in HTML format.
       *
@@ -860,18 +864,20 @@ object sapMMessagePageMod {
     var icon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Defines the alt attribute of the icon displayed on the `MessagePage`.
       */
     var iconAlt: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.1
+      * @since 1.28.1
       *
       * This event is fired when Nav Button is pressed.
       */
-    var navButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines the visibility of the MessagePage header. Can be used to hide the header of the MessagePage
@@ -907,7 +913,7 @@ object sapMMessagePageMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Defines the semantic level of the title. When using `Auto`, no explicit level information is written.
       *
@@ -971,7 +977,7 @@ object sapMMessagePageMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
+      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
       
       inline def setNavButtonPressUndefined: Self = StObject.set(x, "navButtonPress", js.undefined)
       

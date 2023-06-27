@@ -10,6 +10,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's fragment (includes leading "#" if non-empty).
     *
     * Can be set, to change the URL's fragment (ignores leading "#").
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/hash)
     */
   /* standard dom */
   var hash: java.lang.String
@@ -18,6 +20,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's host and port (if different from the default port for the scheme).
     *
     * Can be set, to change the URL's host and port.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/host)
     */
   /* standard dom */
   var host: java.lang.String
@@ -26,6 +30,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's host.
     *
     * Can be set, to change the URL's host.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/hostname)
     */
   /* standard dom */
   var hostname: java.lang.String
@@ -34,11 +40,17 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL.
     *
     * Can be set, to change the URL.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/href)
     */
   /* standard dom */
   var href: java.lang.String
   
-  /** Returns the hyperlink's URL's origin. */
+  /**
+    * Returns the hyperlink's URL's origin.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/origin)
+    */
   /* standard dom */
   val origin: java.lang.String
   
@@ -46,6 +58,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's password.
     *
     * Can be set, to change the URL's password.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/password)
     */
   /* standard dom */
   var password: java.lang.String
@@ -54,6 +68,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's path.
     *
     * Can be set, to change the URL's path.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/pathname)
     */
   /* standard dom */
   var pathname: java.lang.String
@@ -62,6 +78,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's port.
     *
     * Can be set, to change the URL's port.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/port)
     */
   /* standard dom */
   var port: java.lang.String
@@ -70,6 +88,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's scheme.
     *
     * Can be set, to change the URL's scheme.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/protocol)
     */
   /* standard dom */
   var protocol: java.lang.String
@@ -78,6 +98,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's query (includes leading "?" if non-empty).
     *
     * Can be set, to change the URL's query (ignores leading "?").
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/search)
     */
   /* standard dom */
   var search: java.lang.String
@@ -86,6 +108,8 @@ trait HTMLHyperlinkElementUtils extends StObject {
     * Returns the hyperlink's URL's username.
     *
     * Can be set, to change the URL's username.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLAnchorElement/username)
     */
   /* standard dom */
   var username: java.lang.String

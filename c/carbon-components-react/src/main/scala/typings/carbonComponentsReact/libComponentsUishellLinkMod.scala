@@ -6,7 +6,7 @@ import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.Overwrite
 import typings.carbonComponentsReact.typingsSharedMod.SideNavSharedProps
 import typings.react.mod.JSXElementConstructor
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +42,7 @@ object libComponentsUishellLinkMod {
       
       inline def setElement(value: String | JSXElementConstructor[InnerElementProps[P]]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setElementFunction1(value: InnerElementProps[P] => ReactElement | Null): Self = StObject.set(x, "element", js.Any.fromFunction1(value))
+      inline def setElementFunction2(value: (InnerElementProps[P], /* deprecatedLegacyContext */ js.UndefOr[Any]) => ReactNode): Self = StObject.set(x, "element", js.Any.fromFunction2(value))
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }

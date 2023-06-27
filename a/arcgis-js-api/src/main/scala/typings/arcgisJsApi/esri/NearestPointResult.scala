@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NearestPointResult extends StObject {
   
   /**
-    * A vertex within the specified distance of the search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
+  		 * A vertex within the specified distance of the search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
+  		 */
   var coordinate: Point
   
   /**
-    * The distance from the `inputPoint` in the units of the view's spatial reference.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
+  		 * The distance from the `inputPoint` in the units of the view's spatial reference.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
+  		 */
   var distance: Double
   
   /**
-    * Indicates if it is an empty geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
+  		 * Indicates if it is an empty geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
+  		 */
   var isEmpty: Boolean
   
   /**
-    * The index of the vertex within the geometry's rings or paths.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
-    */
+  		 * The index of the vertex within the geometry's rings or paths.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngine.html#NearestPointResult)
+  		 */
   var vertexIndex: Double
 }
 object NearestPointResult {

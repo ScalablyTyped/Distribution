@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.ascii
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.utf8
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.`utf-8`
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.utf16le
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.ucs2
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.`ucs-2`
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.base64
-  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.latin1
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.binary
   - typings.micromarkUtilTypes.micromarkUtilTypesStrings.hex
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.latin1
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.`ucs-2`
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.ucs2
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.`utf-8`
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.utf16le
+  - typings.micromarkUtilTypes.micromarkUtilTypesStrings.utf8
 */
 trait Encoding extends StObject
 object Encoding {

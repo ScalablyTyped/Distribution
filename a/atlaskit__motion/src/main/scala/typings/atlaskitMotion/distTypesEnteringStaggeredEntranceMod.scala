@@ -2,7 +2,6 @@ package typings.atlaskitMotion
 
 import typings.atlaskitMotion.anon.Delay
 import typings.atlaskitMotion.atlaskitMotionStrings.responsive
-import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,9 +21,7 @@ object distTypesEnteringStaggeredEntranceMod {
     * Will dynamically add delay to each child entering component.
     * Unfortunately all entering components _NEED_ to be a direct descendant.
     */
-  @JSImport("@atlaskit/motion/dist/types/entering/staggered-entrance", JSImport.Default)
-  @js.native
-  val default: FC[StaggeredEntranceProps] = js.native
+  inline def default(param0: StaggeredEntranceProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useStaggeredEntrance(): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("useStaggeredEntrance")().asInstanceOf[Delay]
   

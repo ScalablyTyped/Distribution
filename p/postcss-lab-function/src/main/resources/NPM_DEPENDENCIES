@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-lab-function" : "5.2.1"
+      "postcss-lab-function" : "5.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-lab-function" : "5.2.1"
+      "postcss-lab-function" : "5.2.3"
     }
   ],
   "compile-devDependencies" : [

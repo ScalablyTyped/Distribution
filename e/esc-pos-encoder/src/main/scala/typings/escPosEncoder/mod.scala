@@ -1,5 +1,8 @@
 package typings.escPosEncoder
 
+import typings.escPosEncoder.anon.Align
+import typings.escPosEncoder.anon.MarginLeft
+import typings.escPosEncoder.anon.Style
 import typings.escPosEncoder.escPosEncoderInts.`1`
 import typings.escPosEncoder.escPosEncoderInts.`2`
 import org.scalablytyped.runtime.StObject
@@ -24,12 +27,17 @@ object mod {
     def bold(): EscPosEncoder = js.native
     def bold(value: Boolean): EscPosEncoder = js.native
     
+    def box(options: MarginLeft, value: String): EscPosEncoder = js.native
+    def box(options: MarginLeft, value: js.Function1[/* encoder */ this.type, this.type]): EscPosEncoder = js.native
+    
     def codepage(value: codepageType): EscPosEncoder = js.native
     
     def cut(): EscPosEncoder = js.native
     def cut(value: cutType): EscPosEncoder = js.native
     
     def encode(): js.typedarray.Uint8Array = js.native
+    
+    def height(value: Double): EscPosEncoder = js.native
     
     def image(element: Any, width: Double, height: Double): EscPosEncoder = js.native
     def image(element: Any, width: Double, height: Double, algorithm: Unit, threshold: Double): EscPosEncoder = js.native
@@ -38,6 +46,9 @@ object mod {
     
     def initialize(): EscPosEncoder = js.native
     
+    def invert(): EscPosEncoder = js.native
+    def invert(value: Boolean): EscPosEncoder = js.native
+    
     def italic(): EscPosEncoder = js.native
     def italic(value: Boolean): EscPosEncoder = js.native
     
@@ -45,6 +56,8 @@ object mod {
     def line(value: String, wrap: Double): EscPosEncoder = js.native
     
     def newline(): EscPosEncoder = js.native
+    
+    def pulse(device: deviceType, on: Double, off: Double): EscPosEncoder = js.native
     
     def qrcode(value: String): EscPosEncoder = js.native
     def qrcode(value: String, model: `1` | `2`): EscPosEncoder = js.native
@@ -58,7 +71,14 @@ object mod {
     def raw(data: js.Array[Double]): EscPosEncoder = js.native
     def raw(data: js.typedarray.Uint8Array): EscPosEncoder = js.native
     
+    def rule(options: Style): EscPosEncoder = js.native
+    
     def size(value: sizeType): EscPosEncoder = js.native
+    
+    def table(
+      columns: js.Array[Align],
+      data: js.Array[js.Array[String | (js.Function1[/* encoder */ this.type, this.type])]]
+    ): EscPosEncoder = js.native
     
     def text(value: String): EscPosEncoder = js.native
     def text(value: String, wrap: Double): EscPosEncoder = js.native
@@ -67,6 +87,8 @@ object mod {
     def underline(value: Boolean): EscPosEncoder = js.native
     @JSName("underline")
     def underline_2(value: `2`): EscPosEncoder = js.native
+    
+    def width(value: Double): EscPosEncoder = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -196,6 +218,18 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.escPosEncoder.escPosEncoderInts.`0`
+    - typings.escPosEncoder.escPosEncoderInts.`1`
+  */
+  trait deviceType extends StObject
+  object deviceType {
+    
+    inline def `0`: typings.escPosEncoder.escPosEncoderInts.`0` = 0.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`0`]
+    
+    inline def `1`: typings.escPosEncoder.escPosEncoderInts.`1` = 1.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`1`]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.escPosEncoder.escPosEncoderStrings.threshold
     - typings.escPosEncoder.escPosEncoderStrings.bayer
     - typings.escPosEncoder.escPosEncoderStrings.floydsteinberg
@@ -274,6 +308,18 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.escPosEncoder.escPosEncoderStrings.single
+    - typings.escPosEncoder.escPosEncoderStrings.double
+  */
+  trait styleType extends StObject
+  object styleType {
+    
+    inline def double: typings.escPosEncoder.escPosEncoderStrings.double = "double".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.double]
+    
+    inline def single: typings.escPosEncoder.escPosEncoderStrings.single = "single".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.single]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.escPosEncoder.escPosEncoderStrings.upca
     - typings.escPosEncoder.escPosEncoderStrings.upce
     - typings.escPosEncoder.escPosEncoderStrings.ean13
@@ -298,5 +344,17 @@ object mod {
     inline def upca: typings.escPosEncoder.escPosEncoderStrings.upca = "upca".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.upca]
     
     inline def upce: typings.escPosEncoder.escPosEncoderStrings.upce = "upce".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.upce]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.escPosEncoder.escPosEncoderStrings.top
+    - typings.escPosEncoder.escPosEncoderStrings.bottom
+  */
+  trait verticalAlignType extends StObject
+  object verticalAlignType {
+    
+    inline def bottom: typings.escPosEncoder.escPosEncoderStrings.bottom = "bottom".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.bottom]
+    
+    inline def top: typings.escPosEncoder.escPosEncoderStrings.top = "top".asInstanceOf[typings.escPosEncoder.escPosEncoderStrings.top]
   }
 }

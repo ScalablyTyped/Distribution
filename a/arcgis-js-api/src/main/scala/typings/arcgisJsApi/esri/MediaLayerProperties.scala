@@ -13,26 +13,26 @@ trait MediaLayerProperties
      with BlendLayerProperties {
   
   /**
-    * Copyright information for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#copyright)
-    */
+  		 * Copyright information for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#copyright)
+  		 */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * The source for the MediaLayer that will be displayed on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
-    */
+  		 * The source for the MediaLayer that will be displayed on the map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
+  		 */
   var source: js.UndefOr[
     ImageElementPropertiestyp | VideoElementPropertiestyp | LocalMediaElementSourceProperties | (CollectionProperties[ImageElementPropertiestyp | VideoElementPropertiestyp]) | (js.Array[ImageElementPropertiestyp | VideoElementPropertiestyp])
   ] = js.undefined
   
   /**
-    * The spatial reference of the layer and defines the spatial reference of the layer's [fullExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#fullExtent).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#spatialReference)
-    */
+  		 * The spatial reference of the layer and defines the spatial reference of the layer's [fullExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#fullExtent).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object MediaLayerProperties {

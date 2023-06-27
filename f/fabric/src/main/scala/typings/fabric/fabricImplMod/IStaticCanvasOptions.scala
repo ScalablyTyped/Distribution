@@ -106,7 +106,6 @@ trait IStaticCanvasOptions extends StObject {
     * May greatly help in applications with crowded canvas and use of zoom/pan
     * If One of the corner of the bounding box of the object is on the canvas
     * the objects get rendered.
-    * @memberOf fabric.StaticCanvas.prototype
     */
   var skipOffscreen: js.UndefOr[Boolean] = js.undefined
   
@@ -133,7 +132,6 @@ trait IStaticCanvasOptions extends StObject {
     * if canvas is viewportTransformed you those points indicate the extension
     * of canvas element in plain untrasformed coordinates
     * The coordinates get updated with @method calcViewportBoundaries.
-    * @memberOf fabric.StaticCanvas.prototype
     */
   var vptCoords: js.UndefOr[Tl] = js.undefined
 }

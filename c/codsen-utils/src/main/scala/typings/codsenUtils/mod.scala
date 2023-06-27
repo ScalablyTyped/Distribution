@@ -69,6 +69,12 @@ object mod {
   @js.native
   val inlineTags: Set[String] = js.native
   
+  /** Alternative to lodash.intersection */
+  inline def intersection[T, U](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")().asInstanceOf[js.Array[T]]
+  inline def intersection[T, U](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def intersection[T, U](a: js.Array[T], b: js.Array[U]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def intersection[T, U](a: Unit, b: js.Array[U]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
   inline def isBool(something: Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBool")(something.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
   
   inline def isCurrencyChar(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrencyChar")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -118,6 +124,10 @@ object mod {
   @JSImport("codsen-utils", "multiplicationSign")
   @js.native
   val multiplicationSign: /* "\\u00D7" */ String = js.native
+  
+  /** Alternative to lodash.omit */
+  inline def omit(obj: JSONObject_): JSONObject_ = ^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any]).asInstanceOf[JSONObject_]
+  inline def omit(obj: JSONObject_, keysToRemove: js.Array[String]): JSONObject_ = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], keysToRemove.asInstanceOf[js.Any])).asInstanceOf[JSONObject_]
   
   /**
     * Unlike lodash equivalent, it does not mutate the input array

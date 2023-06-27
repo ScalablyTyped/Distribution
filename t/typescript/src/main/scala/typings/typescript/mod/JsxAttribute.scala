@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JsxAttribute
   extends StObject
-     with ObjectLiteralElement
+     with Declaration
      with HasInitializer
      with JsxAttributeLike
      with VariableLikeDeclaration {
@@ -17,8 +17,7 @@ trait JsxAttribute
   @JSName("kind")
   val kind_JsxAttribute: typings.typescript.mod.SyntaxKind.JsxAttribute = js.native
   
-  @JSName("name")
-  val name_JsxAttribute: Identifier = js.native
+  val name: JsxAttributeName = js.native
   
   @JSName("parent")
   val parent_JsxAttribute: JsxAttributes = js.native

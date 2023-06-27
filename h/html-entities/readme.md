@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-entities
 
-Typings are for version 2.3.3
+Typings are for version 2.4.0
 
 ## Library description:
 Fastest HTML entities encode/decode library.

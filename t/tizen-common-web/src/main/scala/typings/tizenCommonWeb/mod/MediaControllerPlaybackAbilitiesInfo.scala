@@ -9,56 +9,56 @@ trait MediaControllerPlaybackAbilitiesInfo extends StObject {
   /**
     * Represents server's ability to perform FORWARD action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val forward: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform NEXT action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val next: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform PAUSE action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val pause: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform PLAY action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val play: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform PREV action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val prev: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform REWIND action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val rewind: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform STOP action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val stop: MediaControllerAbilitySupport
   
   /**
     * Represents server's ability to perform TOGGLE\_PLAY\_PAUSE action.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val togglePlayPause: MediaControllerAbilitySupport
 }

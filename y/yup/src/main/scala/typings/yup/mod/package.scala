@@ -40,6 +40,9 @@ inline def isSchema(obj: Any): /* is yup.yup.ISchema<any, any, any, any> */ Bool
 
 inline def `lazy`[TSchema /* <: ISchema[Any, TContext, Any, Any] */, TContext /* <: Maybe[AnyObject] */](builder: js.Function2[/* value */ Any, /* options */ ResolveOptions[TContext], TSchema]): Lazy_[InferType[TSchema], TContext, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(builder.asInstanceOf[js.Any]).asInstanceOf[Lazy_[InferType[TSchema], TContext, Any]]
 
+inline def printValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("printValue")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def printValue(value: Any, quoteStrings: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("printValue")(value.asInstanceOf[js.Any], quoteStrings.asInstanceOf[js.Any])).asInstanceOf[Any]
+
 inline def reach[P /* <: String */, S /* <: ISchema[Any, Any, Any, Any] */](obj: S, path: P): (Reference[Get[InferType[S], P, js.Object]]) | (ISchema[
 Get[InferType[S], P, js.Object], 
 /* import warning: importer.ImportType#apply Failed type conversion: S['__context'] */ js.Any, 
@@ -108,6 +111,8 @@ type ConditionBuilder[T /* <: ISchema[Any, Any, Any, Any] */] = js.Function3[
 /* schema */ T, 
 /* options */ ResolveOptions[Any], 
 ISchema[Any, Any, Any, Any]]
+
+type DefaultThunk[T, C] = T | (js.Function1[/* options */ js.UndefOr[ResolveOptions[C]], T])
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -206,8 +211,6 @@ type TestFunction[T, TContext] = js.ThisFunction2[
 /* value */ T, 
 /* context */ TestContext[TContext], 
 Unit | Boolean | ValidationError | (js.Promise[Boolean | ValidationError])]
-
-type Thunk[T] = T | js.Function0[T]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

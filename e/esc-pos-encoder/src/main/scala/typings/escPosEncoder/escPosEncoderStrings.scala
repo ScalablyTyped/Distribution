@@ -6,7 +6,9 @@ import typings.escPosEncoder.mod.cutType
 import typings.escPosEncoder.mod.imgAlgType
 import typings.escPosEncoder.mod.qrErrorLevelType
 import typings.escPosEncoder.mod.sizeType
+import typings.escPosEncoder.mod.styleType
 import typings.escPosEncoder.mod.symbologyType
+import typings.escPosEncoder.mod.verticalAlignType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +26,12 @@ object escPosEncoderStrings {
     extends StObject
        with imgAlgType
   inline def bayer: bayer = "bayer".asInstanceOf[bayer]
+  
+  @js.native
+  sealed trait bottom
+    extends StObject
+       with verticalAlignType
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center
@@ -164,6 +172,12 @@ object escPosEncoderStrings {
   inline def cp950: cp950 = "cp950".asInstanceOf[cp950]
   
   @js.native
+  sealed trait double
+    extends StObject
+       with styleType
+  inline def double: double = "double".asInstanceOf[double]
+  
+  @js.native
   sealed trait ean13
     extends StObject
        with symbologyType
@@ -254,6 +268,12 @@ object escPosEncoderStrings {
   inline def shiftjis: shiftjis = "shiftjis".asInstanceOf[shiftjis]
   
   @js.native
+  sealed trait single
+    extends StObject
+       with styleType
+  inline def single: single = "single".asInstanceOf[single]
+  
+  @js.native
   sealed trait small
     extends StObject
        with sizeType
@@ -264,6 +284,12 @@ object escPosEncoderStrings {
     extends StObject
        with imgAlgType
   inline def threshold: threshold = "threshold".asInstanceOf[threshold]
+  
+  @js.native
+  sealed trait top
+    extends StObject
+       with verticalAlignType
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait upca

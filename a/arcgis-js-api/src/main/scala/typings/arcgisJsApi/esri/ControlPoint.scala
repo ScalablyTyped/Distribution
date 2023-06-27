@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ControlPoint extends StObject {
   
   /**
-    * The coordinate of the the control point in the map coordinate space.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#ControlPoint)
-    */
+  		 * The coordinate of the the control point in the map coordinate space.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#ControlPoint)
+  		 */
   var mapPoint: js.UndefOr[Point] = js.undefined
   
   /**
-    * The coordinate of the control point in the image coordinate space.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#ControlPoint)
-    */
+  		 * The coordinate of the control point in the image coordinate space.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ControlPointsGeoreference.html#ControlPoint)
+  		 */
   var sourcePoint: js.UndefOr[SourcePoint] = js.undefined
 }
 object ControlPoint {

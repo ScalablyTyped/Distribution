@@ -11,9 +11,6 @@ import typings.yaml.distNodesNodeMod.NodeType
 import typings.yaml.distNodesNodeMod.ParsedNode
 import typings.yaml.distNodesNodeMod.Range
 import typings.yaml.distNodesPairMod.Pair
-import typings.yaml.distNodesScalarMod.Scalar
-import typings.yaml.distNodesYamlmapMod.YAMLMap
-import typings.yaml.distNodesYamlseqMod.YAMLSeq
 import typings.yaml.distOptionsMod.CreateNodeOptions
 import typings.yaml.distOptionsMod.DocumentOptions
 import typings.yaml.distOptionsMod.ParseOptions
@@ -35,7 +32,7 @@ object distDocDocumentMod {
     * @param value - The initial value for the document, which will be wrapped
     *   in a Node container.
     */
-  open class Document[T /* <: Node[Any] */] () extends StObject {
+  open class Document[Contents /* <: Node[Any] */, Strict /* <: Boolean */] () extends StObject {
     def this(value: Any) = this()
     def this(value: Any, options: DocumentOptions & SchemaOptions & ParseOptions & CreateNodeOptions) = this()
     def this(value: Any, replacer: Replacer) = this()
@@ -64,7 +61,7 @@ object distDocDocumentMod {
     var commentBefore: String | Null = js.native
     
     /** The document contents. */
-    var contents: T | Null = js.native
+    var contents: /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? Contents | null : Contents */ js.Any = js.native
     
     /**
       * Create a new `Alias` node, ensuring that the target `node` has the required anchor.
@@ -75,12 +72,15 @@ object distDocDocumentMod {
       * `name` will be used as a prefix for a new unique anchor.
       * If `name` is undefined, the generated anchor will use 'a' as a prefix.
       */
-    def createAlias(node: Scalar[Any]): Alias = js.native
-    def createAlias(node: Scalar[Any], name: String): Alias = js.native
-    def createAlias(node: YAMLMap[Any, Any]): Alias = js.native
-    def createAlias(node: YAMLMap[Any, Any], name: String): Alias = js.native
-    def createAlias(node: YAMLSeq[Any]): Alias = js.native
-    def createAlias(node: YAMLSeq[Any], name: String): Alias = js.native
+    @JSName("createAlias")
+    def createAlias_true(
+      node: /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? yaml.yaml/dist/nodes/Scalar.Scalar<unknown> | yaml.yaml/dist/nodes/YAMLMap.YAMLMap<unknown, unknown> | yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<unknown> : yaml.yaml/dist/nodes/Node.Node<unknown> */ js.Any
+    ): Alias = js.native
+    @JSName("createAlias")
+    def createAlias_true(
+      node: /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? yaml.yaml/dist/nodes/Scalar.Scalar<unknown> | yaml.yaml/dist/nodes/YAMLMap.YAMLMap<unknown, unknown> | yaml.yaml/dist/nodes/YAMLSeq.YAMLSeq<unknown> : yaml.yaml/dist/nodes/Node.Node<unknown> */ js.Any,
+      name: String
+    ): Alias = js.native
     
     /**
       * Convert any value into a `Node` using the current schema, recursively
@@ -113,7 +113,7 @@ object distDocDocumentMod {
     def deleteIn(): Boolean = js.native
     def deleteIn(path: js.Iterable[Any]): Boolean = js.native
     
-    var directives: js.UndefOr[Directives] = js.native
+    var directives: /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? yaml.yaml/dist/doc/directives.Directives | undefined : yaml.yaml/dist/doc/directives.Directives */ js.Any = js.native
     
     /** Errors encountered during parsing. */
     var errors: js.Array[YAMLError] = js.native
@@ -123,18 +123,18 @@ object distDocDocumentMod {
       * scalar values from their surrounding node; to disable set `keepScalar` to
       * `true` (collections are always returned intact).
       */
-    def get(key: Any): Any = js.native
-    def get(key: Any, keepScalar: Boolean): Any = js.native
+    def get(key: Any): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
+    def get(key: Any, keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
     
     /**
       * Returns item at `path`, or `undefined` if not found. By default unwraps
       * scalar values from their surrounding node; to disable set `keepScalar` to
       * `true` (collections are always returned intact).
       */
-    def getIn(): Any = js.native
-    def getIn(path: js.Iterable[Any]): Any = js.native
-    def getIn(path: js.Iterable[Any], keepScalar: Boolean): Any = js.native
-    def getIn(path: Null, keepScalar: Boolean): Any = js.native
+    def getIn(): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
+    def getIn(path: js.Iterable[Any]): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
+    def getIn(path: js.Iterable[Any], keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
+    def getIn(path: Null, keepScalar: Boolean): /* import warning: importer.ImportType#apply Failed type conversion: Strict extends true ? unknown : any */ js.Any = js.native
     
     /**
       * Checks if the document includes a value with the key `key`.
@@ -208,8 +208,9 @@ object distDocDocumentMod {
   }
   object Document {
     
+    /** @ts-ignore The typing of directives fails in TS <= 4.2 */
     @js.native
-    trait Parsed[T /* <: ParsedNode */] extends Document[T] {
+    trait Parsed[Contents /* <: ParsedNode */, Strict /* <: Boolean */] extends Document[Contents, Strict] {
       
       @JSName("directives")
       var directives_Parsed: Directives = js.native

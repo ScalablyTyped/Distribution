@@ -41,7 +41,7 @@ trait ViewData extends StObject {
   
   /**
     * Holds application specific data. This data is available during the whole lifecycle of the view and the
-    * controller, for example in the constructor and in the {@link sap.ui.core.mvc.Controller.onInit onInit}
+    * controller, for example in the constructor and in the {@link sap.ui.core.mvc.Controller.onInit onInit }
     * hook.
     */
   var viewData: js.UndefOr[js.Object] = js.undefined

@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudRendererColorModulation extends StObject {
   
   /**
-    * Field to use for the color modulation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
-    */
+  		 * Field to use for the color modulation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
+  		 */
   var field: String
   
   /**
-    * Field value at which the point color will be left unchanged.
-    *
-    * @default 255
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
-    */
+  		 * Field value at which the point color will be left unchanged.
+  		 *
+  		 * @default 255
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * Field value at which the point color becomes darkest.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
-    */
+  		 * Field value at which the point color becomes darkest.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#colorModulation)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
 }
 object PointCloudRendererColorModulation {

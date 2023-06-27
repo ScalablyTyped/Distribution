@@ -357,7 +357,7 @@ object GroupButton {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** To set the local JSON data, define a JSON array and initialize the GroupButton with dataSource property. Specify the column names in the fields property.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
@@ -366,33 +366,33 @@ object GroupButton {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Displays the ejGroupButton in Right to Left direction.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Used to enable or disable the ejGroupButton control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to display the values of the data.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Any] = js.undefined
     
     /** Sets the GroupButton behavior to works as Checkbox mode/ radio button mode based on the specified option.
-      * @Default {ej.GroupButtonMode.RadioButton}
+      * @default {ej.GroupButtonMode.RadioButton}
       */
     var groupButtonMode: js.UndefOr[GroupButtonMode | String] = js.undefined
     
     /** Used to sets the height of the ejGroupButton control.
-      * @Default {28}
+      * @default {28}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the characteristics of the ejGroupButton control and extend the capability of an HTML element by adding specified attributes to element tag and by performing the related
       * actions
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
@@ -401,12 +401,12 @@ object GroupButton {
     var keyPress: js.UndefOr[js.Function1[/* e */ KeyPressEventArgs, Unit]] = js.undefined
     
     /** Specify the orientation of the GroupButton. See below to get available orientations
-      * @Default {ej.Orientation.Horizontal}
+      * @default {ej.Orientation.Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Query the dataSource from the table for Groupbutton
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -415,17 +415,17 @@ object GroupButton {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** Sets the list of button elements to be selected. To enable this option groupButtonMode should be in â€œcheckboxâ€ mode.
-      * @Default {[]}
+      * @default {[]}
       */
     var selectedItemIndex: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     /** Sets the rounder corner to the GroupButton, if sets as true.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the button. See available size
-      * @Default {ej.ButtonSize.Normal}
+      * @default {ej.ButtonSize.Normal}
       */
     var size: js.UndefOr[ButtonSize | String] = js.undefined
     

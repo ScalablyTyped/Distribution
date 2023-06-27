@@ -13,8 +13,7 @@ object sapMDynamicDateUtilMod extends Shortcut {
   val default: DynamicDateUtil = js.native
   
   /**
-    * @EXPERIMENTAL (since 1.92) - This class is experimental and provides only limited functionality. Also
-    * the API might be changed in future.
+    * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * The DynamicDateUtil is a utility class for working with the DynamicDateOption instances.
     */

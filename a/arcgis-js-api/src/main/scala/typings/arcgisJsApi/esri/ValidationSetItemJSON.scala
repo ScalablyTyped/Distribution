@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidationSetItemJSON extends StObject {
   
   /**
-    * An array of globalId strings to validate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#ValidationSetItemJSON)
-    */
+  		 * An array of globalId strings to validate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#ValidationSetItemJSON)
+  		 */
   var globalIds: js.Array[String]
   
   /**
-    * The network source id of the.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#ValidationSetItemJSON)
-    */
+  		 * The network source id of the.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-ValidateNetworkTopologyParameters.html#ValidationSetItemJSON)
+  		 */
   var sourceId: Double
 }
 object ValidationSetItemJSON {

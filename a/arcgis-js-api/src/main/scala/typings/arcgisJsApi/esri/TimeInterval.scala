@@ -21,20 +21,20 @@ trait TimeInterval
      with JSONSupport {
   
   /**
-    * Temporal units.
-    *
-    * @default milliseconds
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#unit)
-    */
+  		 * Temporal units.
+  		 *
+  		 * @default milliseconds
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#unit)
+  		 */
   var unit: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries = js.native
   
   /**
-    * The numerical value of the time extent.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
-    */
+  		 * The numerical value of the time extent.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html#value)
+  		 */
   var value: Double = js.native
 }

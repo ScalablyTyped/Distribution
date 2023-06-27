@@ -19,9 +19,9 @@ object sapUiTableAnalyticalTableMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    *   https://github.com/SAP/odata-vocabularies/blob/main/docs/v2-annotations.md
-    *   {@link topic:08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
-    *   {@link fiori:/analytical-table-alv/ Analytical Table}
+    * 	https://github.com/SAP/odata-vocabularies/blob/main/docs/v2-annotations.md
+    * 	{@link https://ui5.sap.com/#/topic/08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
+    * 	{@link fiori:/analytical-table-alv/ Analytical Table}
     */
   open class default () extends AnalyticalTable {
     def this(/**
@@ -165,7 +165,7 @@ object sapUiTableAnalyticalTableMod {
     vRowIndex: int): this.type = js.native
     
     /**
-      * @SINCE 1.70
+      * @since 1.70
       *
       * Expands all nodes. The current selection is removed, and the table scrolls back to the top. If this method
       * is called, not all groups might be loaded. If the user then scrolls to the bottom of the table, additional
@@ -332,7 +332,7 @@ object sapUiTableAnalyticalTableMod {
     iRowIndex: int): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This function is used by some composite controls to force updating the AnalyticalInfo
       */
@@ -523,7 +523,7 @@ object sapUiTableAnalyticalTableMod {
     bSumOnTop: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This function is used by some composite controls to avoid updating the AnalyticalInfo when several column
       * are added to the table. In order to finally update the AnalyticalInfo and request data, resumeUpdateAnalyticalInfo

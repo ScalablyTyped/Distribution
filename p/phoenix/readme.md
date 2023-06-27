@@ -1,7 +1,7 @@
 
 # Scala.js typings for phoenix
 
-Typings are for version 1.5
+Typings are for version 1.6
 
 ## Library description:
 The official JavaScript client for the Phoenix web framework.

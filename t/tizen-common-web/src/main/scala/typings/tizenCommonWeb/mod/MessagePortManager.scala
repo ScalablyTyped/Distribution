@@ -14,9 +14,9 @@ trait MessagePortManager extends StObject {
     *
     * @returns LocalMessagePort instance.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def requestLocalMessagePort(localMessagePortName: String): LocalMessagePort
   
@@ -30,8 +30,8 @@ trait MessagePortManager extends StObject {
     *
     * @returns RemoteMessagePort instance.
     *
-    * @throw WebAPIException with error type NotFoundError, if the port of the target application is not found.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type NotFoundError, if the port of the target application is not found.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def requestRemoteMessagePort(appId: ApplicationId, remoteMessagePortName: String): RemoteMessagePort
   
@@ -45,9 +45,9 @@ trait MessagePortManager extends StObject {
     *
     * @returns Trusted LocalMessagePort instance.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if the input parameter contains an invalid value.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def requestTrustedLocalMessagePort(localMessagePortName: String): LocalMessagePort
   
@@ -62,9 +62,9 @@ trait MessagePortManager extends StObject {
     *
     * @returns Trusted RemoteMessagePort instance.
     *
-    * @throw WebAPIException with error type NotFoundError, if the port of the target application is not found.
-    * @throw WebAPIException with error type InvalidAccessError, if the target application is not signed with the same certification.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs
+    * @throws WebAPIException with error type NotFoundError, if the port of the target application is not found.
+    * @throws WebAPIException with error type InvalidAccessError, if the target application is not signed with the same certification.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs
     */
   def requestTrustedRemoteMessagePort(appId: ApplicationId, remoteMessagePortName: String): RemoteMessagePort
 }

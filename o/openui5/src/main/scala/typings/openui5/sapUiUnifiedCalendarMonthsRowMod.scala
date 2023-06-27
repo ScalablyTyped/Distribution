@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.NotVisible
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -181,13 +180,13 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit]
     ): this.type = js.native
     def attachFocus(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthsRow` itself
       */
@@ -212,7 +211,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit]
     ): this.type = js.native
     def attachFocus(
       /**
@@ -223,7 +222,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthsRow` itself
       */
@@ -244,13 +243,13 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthsRow` itself
       */
@@ -275,7 +274,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -286,7 +285,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.MonthsRow` itself
       */
@@ -300,9 +299,15 @@ object sapUiUnifiedCalendarMonthsRowMod {
       * @returns flag if focusable
       */
     def checkDateFocusable(/**
-      * JavaScript Date object for focused date.
+      * date instance for focused date.
       */
     oDateTime: js.Date): Boolean = js.native
+    def checkDateFocusable(
+      /**
+      * date instance for focused date.
+      */
+    oDateTime: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): Boolean = js.native
     
     /**
       * Destroys all the selectedDates in the aggregation {@link #getSelectedDates selectedDates}.
@@ -329,13 +334,13 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit]
     ): this.type = js.native
     def detachFocus(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthsRowFocusEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -353,13 +358,13 @@ object sapUiUnifiedCalendarMonthsRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -372,12 +377,18 @@ object sapUiUnifiedCalendarMonthsRowMod {
       * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript Date object for focused date.
+      * date instance for focused date.
       */
     oDate: js.Date): this.type = js.native
+    def displayDate(
+      /**
+      * date instance for focused date.
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:focus focus} to attached listeners.
       *
@@ -387,10 +398,10 @@ object sapUiUnifiedCalendarMonthsRowMod {
     def fireFocus(/**
       * Parameters to pass along with the event
       */
-    mParameters: NotVisible): this.type = js.native
+    mParameters: MonthsRow$FocusEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -403,18 +414,17 @@ object sapUiUnifiedCalendarMonthsRowMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
       * Gets current value of property {@link #getDate date}.
       *
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set). If the date property is not in the range `startDate` + `months`
-      * in the rendering phase, it is set to the `startDate`. So after setting the `startDate` the date should
-      * be set to be in the visible range.
+      * A date as UI5Date or JavaScript Date object. The month including this date is rendered and this date
+      * is focused initially (if no other focus is set). If the date property is not in the range `startDate`
+      * + `months` in the rendering phase, it is set to the `startDate`. So after setting the `startDate` the
+      * date should be set to be in the visible range.
       *
       * @returns Value of property `date`
       */
@@ -432,7 +442,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     def getIntervalSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
@@ -450,7 +460,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     def getMonths(): int = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -462,7 +472,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -520,8 +530,8 @@ object sapUiUnifiedCalendarMonthsRowMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Start date, as JavaScript Date object, of the row. The month of this date is the first month of the displayed
-      * row.
+      * Start date, as UI5Date or JavaScript Date object, of the row. The month of this date is the first month
+      * of the displayed row.
       *
       * @returns Value of property `startDate`
       */
@@ -680,9 +690,13 @@ object sapUiUnifiedCalendarMonthsRowMod {
       * @returns Reference to `this` for method chaining
       */
     def setDate(/**
-      * a JavaScript date
+      * a date instance
       */
     oDate: js.Date): this.type = js.native
+    def setDate(/**
+      * a date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getIntervalSelection intervalSelection}.
@@ -702,7 +716,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     bIntervalSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -747,7 +761,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Sets a new value for property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -770,7 +784,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * Sets a new value for property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -828,10 +842,56 @@ object sapUiUnifiedCalendarMonthsRowMod {
       * @returns Reference to `this` in order to allow method chaining
       */
     def setStartDate(/**
-      * A JavaScript date
+      * A date instance
       */
     oStartDate: js.Date): this.type = js.native
+    def setStartDate(/**
+      * A date instance
+      */
+    oStartDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
   }
+  
+  trait MonthsRow$FocusEventParameters extends StObject {
+    
+    /**
+      * First date, as UI5Date or JavaScript Date object, of the month that is focused.
+      */
+    var date: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * If set, the focused date is not rendered yet. (This happens by navigating out of the visible area.)
+      */
+    var notVisible: js.UndefOr[Boolean] = js.undefined
+  }
+  object MonthsRow$FocusEventParameters {
+    
+    inline def apply(): MonthsRow$FocusEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MonthsRow$FocusEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthsRow$FocusEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      
+      inline def setNotVisible(value: Boolean): Self = StObject.set(x, "notVisible", value.asInstanceOf[js.Any])
+      
+      inline def setNotVisibleUndefined: Self = StObject.set(x, "notVisible", js.undefined)
+    }
+  }
+  
+  trait MonthsRow$SelectEventParameters extends StObject
+  
+  type MonthsRowFocusEvent = typings.openui5.sapUiBaseEventMod.default[MonthsRow$FocusEventParameters]
+  
+  type MonthsRowFocusEventParameters = MonthsRow$FocusEventParameters
+  
+  type MonthsRowSelectEvent = typings.openui5.sapUiBaseEventMod.default[MonthsRow$SelectEventParameters]
+  
+  type MonthsRowSelectEventParameters = MonthsRow$SelectEventParameters
   
   trait MonthsRowSettings
     extends StObject
@@ -843,10 +903,10 @@ object sapUiUnifiedCalendarMonthsRowMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set). If the date property is not in the range `startDate` + `months`
-      * in the rendering phase, it is set to the `startDate`. So after setting the `startDate` the date should
-      * be set to be in the visible range.
+      * A date as UI5Date or JavaScript Date object. The month including this date is rendered and this date
+      * is focused initially (if no other focus is set). If the date property is not in the range `startDate`
+      * + `months` in the rendering phase, it is set to the `startDate`. So after setting the `startDate` the
+      * date should be set to be in the visible range.
       */
     var date: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -855,7 +915,12 @@ object sapUiUnifiedCalendarMonthsRowMod {
     /**
       * Month focus changed
       */
-    var focus: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var focus: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MonthsRow$FocusEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set, interval selection is allowed
@@ -865,7 +930,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Association to the `CalendarLegend` explaining the colors of the `specialDates`.
       *
@@ -879,7 +944,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
     var months: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
       * is used.
@@ -889,7 +954,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109.0
+      * @since 1.109.0
       *
       * If set, the days are also displayed in this calendar type If not set, the dates are only displayed in
       * the primary calendar type
@@ -901,7 +966,9 @@ object sapUiUnifiedCalendarMonthsRowMod {
     /**
       * Month selection changed
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Date ranges for selected dates. If `singleSelection` is set, only the first entry is used.
@@ -940,8 +1007,8 @@ object sapUiUnifiedCalendarMonthsRowMod {
       ] = js.undefined
     
     /**
-      * Start date, as JavaScript Date object, of the row. The month of this date is the first month of the displayed
-      * row.
+      * Start date, as UI5Date or JavaScript Date object, of the row. The month of this date is the first month
+      * of the displayed row.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -967,7 +1034,9 @@ object sapUiUnifiedCalendarMonthsRowMod {
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setFocus(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+      inline def setFocus(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MonthsRow$FocusEventParameters] => Unit
+      ): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
@@ -995,7 +1064,7 @@ object sapUiUnifiedCalendarMonthsRowMod {
       
       inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

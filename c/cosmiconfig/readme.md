@@ -1,7 +1,7 @@
 
 # Scala.js typings for cosmiconfig
 
-Typings are for version 8.1.3
+Typings are for version 8.2.0
 
 ## Library description:
 Find and load configuration from a package.json property, rc file, or CommonJS module

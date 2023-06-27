@@ -136,7 +136,7 @@ object sapUxapObjectPageSectionMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.106
+      * @since 1.106
       *
       * Destroys the heading in the aggregation {@link #getHeading heading}.
       *
@@ -152,7 +152,7 @@ object sapUxapObjectPageSectionMod {
     def destroySubSections(): this.type = js.native
     
     /**
-      * @SINCE 1.106
+      * @since 1.106
       *
       * Gets content of aggregation {@link #getHeading heading}.
       *
@@ -269,7 +269,7 @@ object sapUxapObjectPageSectionMod {
     ): typings.openui5.sapUxapObjectPageSubSectionMod.default | Null = js.native
     
     /**
-      * @SINCE 1.106
+      * @since 1.106
       *
       * Sets the aggregated {@link #getHeading heading}.
       *
@@ -357,7 +357,7 @@ object sapUxapObjectPageSectionMod {
        with ObjectPageSectionBaseSettings {
     
     /**
-      * @SINCE 1.106
+      * @since 1.106
       *
       * Section heading content.
       *

@@ -139,7 +139,7 @@ object sapMProgressIndicatorMod {
     vAriaDescribedBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Adds some ariaDescribedBy into the association {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -157,7 +157,7 @@ object sapMProgressIndicatorMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -169,23 +169,21 @@ object sapMProgressIndicatorMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Gets current value of property {@link #getDisplayAnimation displayAnimation}.
       *
@@ -198,7 +196,7 @@ object sapMProgressIndicatorMod {
     def getDisplayAnimation(): Boolean = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets current value of property {@link #getDisplayOnly displayOnly}.
       *
@@ -232,7 +230,7 @@ object sapMProgressIndicatorMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Gets current value of property {@link #getHeight height}.
       *
@@ -281,7 +279,7 @@ object sapMProgressIndicatorMod {
     def getState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -306,7 +304,7 @@ object sapMProgressIndicatorMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Removes all the controls in the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -315,7 +313,7 @@ object sapMProgressIndicatorMod {
     def removeAllAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -324,7 +322,7 @@ object sapMProgressIndicatorMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Removes an ariaDescribedBy from the association named {@link #getAriaDescribedBy ariaDescribedBy}.
       *
@@ -346,7 +344,7 @@ object sapMProgressIndicatorMod {
     vAriaDescribedBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -368,7 +366,7 @@ object sapMProgressIndicatorMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Sets a new value for property {@link #getDisplayAnimation displayAnimation}.
       *
@@ -387,7 +385,7 @@ object sapMProgressIndicatorMod {
     bDisplayAnimation: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets a new value for property {@link #getDisplayOnly displayOnly}.
       *
@@ -439,7 +437,7 @@ object sapMProgressIndicatorMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Sets a new value for property {@link #getHeight height}.
       *
@@ -518,7 +516,7 @@ object sapMProgressIndicatorMod {
     sState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -566,21 +564,21 @@ object sapMProgressIndicatorMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Association to controls / IDs which describe this control (see WAI-ARIA attribute aria-describedby).
       */
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       *
       * Association to controls / IDs which label this control (see WAI-ARIA attribute aria-labelledBy).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Determines whether a percentage change is displayed with animation.
       */
@@ -589,7 +587,7 @@ object sapMProgressIndicatorMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Determines whether the control is in display-only state where the control has different visualization
       * and cannot be focused.
@@ -611,7 +609,7 @@ object sapMProgressIndicatorMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.15.0
+      * @since 1.15.0
       *
       * Specifies the height of the control. The default value depends on the theme. Suggested size for normal
       * use is 2.5rem (40px). Suggested size for small size (like for use in ObjectHeader) is 1.375rem (22px).
@@ -646,7 +644,7 @@ object sapMProgressIndicatorMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the element's text directionality with enumerated options (RTL or LTR). By default, the control
       * inherits text direction from the DOM.

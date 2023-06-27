@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionAnalysisViewProperties extends StObject {
   
   /**
-    * Set to `true` to enable interactivity for the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#analysis).
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#interactive)
-    */
+  		 * Set to `true` to enable interactivity for the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#analysis).
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#interactive)
+  		 */
   var interactive: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The selected dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#selectedDimension)
-    */
+  		 * The selected dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#selectedDimension)
+  		 */
   var selectedDimension: js.UndefOr[LengthDimensionProperties] = js.undefined
   
   /**
-    * When `true`, the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#analysis) is visualized in the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#visible)
-    */
+  		 * When `true`, the [analysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#analysis) is visualized in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-analysis-DimensionAnalysisView.html#visible)
+  		 */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object DimensionAnalysisViewProperties {

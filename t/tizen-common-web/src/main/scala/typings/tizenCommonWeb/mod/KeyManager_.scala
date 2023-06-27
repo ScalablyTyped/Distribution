@@ -21,10 +21,10 @@ trait KeyManager_ extends StObject {
     *
     * @returns Data.
     *
-    * @throw WebAPIException with error type NotFoundError, if the dataAlias cannot be found.
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type VerificationError, if the method cannot be completed because an incorrect password is used.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of a database access failure or any other unknown error.
+    * @throws WebAPIException with error type NotFoundError, if the dataAlias cannot be found.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type VerificationError, if the method cannot be completed because an incorrect password is used.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of a database access failure or any other unknown error.
     */
   def getData(dataAlias: KeyManagerAlias): RawData = js.native
   def getData(dataAlias: KeyManagerAlias, password: String): RawData = js.native
@@ -36,7 +36,7 @@ trait KeyManager_ extends StObject {
     *
     * @returns Array of aliases.
     *
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def getDataAliasList(): js.Array[KeyManagerAlias] = js.native
   
@@ -51,9 +51,9 @@ trait KeyManager_ extends StObject {
     *
     * @param dataAlias Alias of the data to remove.
     *
-    * @throw WebAPIException with error type NotFoundError, if the dataAlias cannot be found.
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error
+    * @throws WebAPIException with error type NotFoundError, if the dataAlias cannot be found.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error
     */
   def removeData(dataAlias: KeyManagerAlias): Unit = js.native
   
@@ -75,7 +75,7 @@ trait KeyManager_ extends StObject {
     * @param successCallback Callback function that is called when data is successfully saved.
     * @param errorCallback Callback function that is called when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def saveData(name: String, rawData: RawData): Unit = js.native
   def saveData(name: String, rawData: RawData, password: String): Unit = js.native
@@ -165,7 +165,7 @@ trait KeyManager_ extends StObject {
     * @param successCallback Callback function that is called when permission is successfully set.
     * @param errorCallback Callback function that is called when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
     */
   def setPermission(dataAlias: KeyManagerAlias, packageId: PackageId, permissionType: PermissionType): Unit = js.native
   def setPermission(

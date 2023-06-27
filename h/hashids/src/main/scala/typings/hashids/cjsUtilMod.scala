@@ -25,7 +25,7 @@ object cjsUtilMod {
   
   inline def onlyChars(chars: js.Array[String], keepChars: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("onlyChars")(chars.asInstanceOf[js.Any], keepChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def safeParseInt10(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParseInt10")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def safeParseInt10(str: String): Double | js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParseInt10")(str.asInstanceOf[js.Any]).asInstanceOf[Double | js.BigInt]
   
   inline def shuffle(alphabetChars: js.Array[String], saltChars: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(alphabetChars.asInstanceOf[js.Any], saltChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   

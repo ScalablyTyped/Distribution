@@ -11,10 +11,10 @@ object esriWidgetsEditorEditorViewModelMod {
   @JSImport("esri/widgets/Editor/EditorViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html)
-    */
+  		 * Provides the logic for the [Editor](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with EditorViewModel {

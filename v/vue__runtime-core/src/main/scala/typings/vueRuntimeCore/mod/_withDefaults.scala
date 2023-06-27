@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait _withDefaults extends StObject {
   
-  def apply[Props, Defaults /* <: InferDefaults[Props] */](props: Props, defaults: Defaults): PropsWithDefaults[Props, Defaults] = js.native
+  def apply[T, BKeys /* <: /* keyof T */ String */, Defaults /* <: InferDefaults[T] */](props: DefineProps_[T, BKeys], defaults: Defaults): PropsWithDefaults[T, Defaults, BKeys] = js.native
 }

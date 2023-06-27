@@ -22,6 +22,8 @@ open class DOMParser ()
     * Note that script elements are not evaluated during parsing, and the resulting document's encoding will always be UTF-8.
     *
     * Values other than the above for type will cause a TypeError exception to be thrown.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMParser/parseFromString)
     */
   /* standard dom */
   /* CompleteClass */

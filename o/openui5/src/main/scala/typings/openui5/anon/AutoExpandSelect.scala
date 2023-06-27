@@ -28,8 +28,8 @@ trait AutoExpandSelect extends StObject {
     * 	 root $metadata document and annotation files;  the security token.  Note: The root $metadata
     * document and annotation files are just requested but not yet converted from XML to JSON unless really
     * needed. Supported since 1.53.0. **BEWARE:** The default value may change to `true` in later releases.
-    * You may also set {@link topic:26ba6a5c1e5c417f8b21cce1411dba2c Manifest Model Preload} in order to further
-    * speed up the start of a UI5 component.
+    * You may also set {@link https://ui5.sap.com/#/topic/26ba6a5c1e5c417f8b21cce1411dba2c Manifest Model Preload }
+    * in order to further speed up the start of a UI5 component.
     */
   var earlyRequests: js.UndefOr[Boolean] = js.undefined
   
@@ -72,9 +72,9 @@ trait AutoExpandSelect extends StObject {
   var odataVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The operation mode for filtering and sorting. Since 1.39.0, the operation mode {@link sap.ui.model.odata.OperationMode.Server}
+    * The operation mode for filtering and sorting. Since 1.39.0, the operation mode {@link sap.ui.model.odata.OperationMode.Server }
     * is supported. All other operation modes including `undefined` lead to an error if 'vFilters' or 'vSorters'
-    * are given or if {@link sap.ui.model.odata.v4.ODataListBinding#filter} or {@link sap.ui.model.odata.v4.ODataListBinding#sort}
+    * are given or if {@link sap.ui.model.odata.v4.ODataListBinding#filter} or {@link sap.ui.model.odata.v4.ODataListBinding#sort }
     * is called.
     */
   var operationMode: js.UndefOr[
@@ -93,7 +93,7 @@ trait AutoExpandSelect extends StObject {
   /**
     * Whether all list bindings for the same resource path share their data, so that it is requested only once;
     * only the value `true` is allowed; see parameter "$$sharedRequest" of {@link #bindList}. Additionally,
-    * {@link sap.ui.model.BindingMode.OneWay} becomes the default binding mode and {@link sap.ui.model.BindingMode.TwoWay}
+    * {@link sap.ui.model.BindingMode.OneWay} becomes the default binding mode and {@link sap.ui.model.BindingMode.TwoWay }
     * is forbidden. Note: This makes all bindings read-only, so it may be especially useful for value list
     * models. Supported since 1.80.0
     */
@@ -109,7 +109,7 @@ trait AutoExpandSelect extends StObject {
     * (Controls synchronization between different bindings which refer to the same data for the case data changes
     * in one binding. Must be set to 'None' which means bindings are not synchronized at all; all other values
     * are not supported and lead to an error.) **deprecated:** As of version 1.110.0, this parameter is optional;
-    * see also {@link topic:648e360fa22d46248ca783dc6eb44531 Data Reuse}
+    * see also {@link https://ui5.sap.com/#/topic/648e360fa22d46248ca783dc6eb44531 Data Reuse}
     */
   var synchronizationMode: js.UndefOr[String] = js.undefined
   

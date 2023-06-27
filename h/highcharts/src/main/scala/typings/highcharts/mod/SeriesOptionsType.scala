@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.centerInCategory
   - typings.highcharts.highchartsStrings.grouping
   - typings.highcharts.highchartsStrings.yAxis
+  - typings.highcharts.highchartsStrings.colors
   - typings.highcharts.highchartsStrings.maxPointWidth
+  - typings.highcharts.highchartsStrings.nullInteraction
   - typings.highcharts.highchartsStrings.baseSeries
   - typings.highcharts.highchartsStrings.pointPadding
   - typings.highcharts.highchartsStrings.paths
@@ -35,6 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.edgeWidth
   - typings.highcharts.highchartsStrings.xAxis
   - typings.highcharts.highchartsStrings.dial
+  - typings.highcharts.highchartsStrings.nullColor
   - typings.highcharts.highchartsStrings.`type`
   - typings.highcharts.highchartsStrings.borderRadius
   - typings.highcharts.highchartsStrings.affectsMapView
@@ -62,6 +65,8 @@ object SeriesOptionsType {
   inline def centerInCategory: typings.highcharts.highchartsStrings.centerInCategory = "centerInCategory".asInstanceOf[typings.highcharts.highchartsStrings.centerInCategory]
   
   inline def colorByPoint: typings.highcharts.highchartsStrings.colorByPoint = "colorByPoint".asInstanceOf[typings.highcharts.highchartsStrings.colorByPoint]
+  
+  inline def colors: typings.highcharts.highchartsStrings.colors = "colors".asInstanceOf[typings.highcharts.highchartsStrings.colors]
   
   inline def curveFactor: typings.highcharts.highchartsStrings.curveFactor = "curveFactor".asInstanceOf[typings.highcharts.highchartsStrings.curveFactor]
   
@@ -100,6 +105,10 @@ object SeriesOptionsType {
   inline def nodePadding: typings.highcharts.highchartsStrings.nodePadding = "nodePadding".asInstanceOf[typings.highcharts.highchartsStrings.nodePadding]
   
   inline def nodes: typings.highcharts.highchartsStrings.nodes = "nodes".asInstanceOf[typings.highcharts.highchartsStrings.nodes]
+  
+  inline def nullColor: typings.highcharts.highchartsStrings.nullColor = "nullColor".asInstanceOf[typings.highcharts.highchartsStrings.nullColor]
+  
+  inline def nullInteraction: typings.highcharts.highchartsStrings.nullInteraction = "nullInteraction".asInstanceOf[typings.highcharts.highchartsStrings.nullInteraction]
   
   inline def offset: typings.highcharts.highchartsStrings.offset = "offset".asInstanceOf[typings.highcharts.highchartsStrings.offset]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nova-editor-node
 
-Typings are for version 4.1
+Typings are for version 5.1
 
 
 

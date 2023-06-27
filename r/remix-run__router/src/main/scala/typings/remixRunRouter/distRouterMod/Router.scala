@@ -128,8 +128,8 @@ trait Router extends StObject {
     */
   def fetch(key: String, routeId: String): Unit = js.native
   def fetch(key: String, routeId: String, href: String): Unit = js.native
-  def fetch(key: String, routeId: String, href: String, opts: RouterNavigateOptions): Unit = js.native
-  def fetch(key: String, routeId: String, href: Null, opts: RouterNavigateOptions): Unit = js.native
+  def fetch(key: String, routeId: String, href: String, opts: RouterFetchOptions): Unit = js.native
+  def fetch(key: String, routeId: String, href: Null, opts: RouterFetchOptions): Unit = js.native
   
   /**
     * @internal

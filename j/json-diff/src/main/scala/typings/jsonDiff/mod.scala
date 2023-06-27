@@ -18,6 +18,8 @@ object mod {
   
   trait DiffOptions extends StObject {
     
+    var excludeKeys: js.UndefOr[js.Array[String]] = js.undefined
+    
     var full: js.UndefOr[Boolean] = js.undefined
     
     var keepUnchangedValues: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +49,12 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
+      
+      inline def setExcludeKeys(value: js.Array[String]): Self = StObject.set(x, "excludeKeys", value.asInstanceOf[js.Any])
+      
+      inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
+      
+      inline def setExcludeKeysVarargs(value: String*): Self = StObject.set(x, "excludeKeys", js.Array(value*))
       
       inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       

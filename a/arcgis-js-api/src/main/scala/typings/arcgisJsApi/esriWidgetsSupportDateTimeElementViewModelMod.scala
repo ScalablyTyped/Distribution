@@ -15,20 +15,20 @@ object esriWidgetsSupportDateTimeElementViewModelMod {
        with DateTimeElementViewModel {
     
     /**
-      * The current state of the widget.
-      *
-      * @default ready
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
-      */
+    		 * The current state of the widget.
+    		 *
+    		 * @default ready
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
+    		 */
     /* CompleteClass */
     var state: ready = js.native
     
     /**
-      * The selected date.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
-      */
+    		 * The selected date.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
+    		 */
     /* CompleteClass */
     var value: js.Date = js.native
   }

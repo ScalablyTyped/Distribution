@@ -5,6 +5,7 @@ import typings.std.Record
 import typings.std.Set
 import typings.yaml.anon.Instantiable
 import typings.yaml.anon.Key
+import typings.yaml.distDocCreateNodeMod.CreateNodeContext
 import typings.yaml.distNodesCollectionMod.Collection
 import typings.yaml.distNodesNodeMod.ParsedNode
 import typings.yaml.distNodesNodeMod.Range
@@ -58,7 +59,18 @@ object distNodesYamlmapMod {
     def toJSON[T /* <: MapLike */](_underscore: Unit, ctx: ToJSContext): Any = js.native
     def toJSON[T /* <: MapLike */](_underscore: Unit, ctx: ToJSContext, Type: Instantiable[T]): Any = js.native
   }
+  /* static members */
   object YAMLMap {
+    
+    @JSImport("yaml/dist/nodes/YAMLMap", "YAMLMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A generic collection parsing method that can be extended
+      * to other node classes that inherit from YAMLMap
+      */
+    inline def from(schema: Schema, obj: Any, ctx: CreateNodeContext): YAMLMap[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(schema.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[YAMLMap[Any, Any]]
     
     @js.native
     trait Parsed[K /* <: ParsedNode */, V /* <: ParsedNode | Null */] extends YAMLMap[K, V] {

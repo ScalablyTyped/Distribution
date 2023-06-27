@@ -19,7 +19,7 @@ trait Requestedaction extends StObject {
   var repository: Allowupdatebranch
   
   /** @description The action requested by the user. */
-  var requested_action: js.UndefOr[`448`] = js.undefined
+  var requested_action: js.UndefOr[`526`] = js.undefined
   
   var sender: Avatarurl
 }
@@ -47,7 +47,7 @@ object Requestedaction {
     
     inline def setRepository(value: Allowupdatebranch): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    inline def setRequested_action(value: `448`): Self = StObject.set(x, "requested_action", value.asInstanceOf[js.Any])
+    inline def setRequested_action(value: `526`): Self = StObject.set(x, "requested_action", value.asInstanceOf[js.Any])
     
     inline def setRequested_actionUndefined: Self = StObject.set(x, "requested_action", js.undefined)
     

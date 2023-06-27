@@ -10,44 +10,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LengthDimensionProperties extends StObject {
   
   /**
-    * Ending point for the dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint)
-    */
+  		 * Ending point for the dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint)
+  		 */
   var endPoint: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The type of length that should be measured between the [startPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint) and [endPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint).
-    *
-    * @default "direct"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#measureType)
-    */
+  		 * The type of length that should be measured between the [startPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint) and [endPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint).
+  		 *
+  		 * @default "direct"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#measureType)
+  		 */
   var measureType: js.UndefOr[direct | horizontal | vertical] = js.undefined
   
   /**
-    * Styling option that controls the shortest distance from the [startPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint) or [endPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint) to the dimension line in meters.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#offset)
-    */
+  		 * Styling option that controls the shortest distance from the [startPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint) or [endPoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#endPoint) to the dimension line in meters.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#offset)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The orientation determines the relative direction the dimension line is extended to.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#orientation)
-    */
+  		 * The orientation determines the relative direction the dimension line is extended to.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#orientation)
+  		 */
   var orientation: js.UndefOr[Double] = js.undefined
   
   /**
-    * Starting point for the dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint)
-    */
+  		 * Starting point for the dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LengthDimension.html#startPoint)
+  		 */
   var startPoint: js.UndefOr[PointProperties] = js.undefined
 }
 object LengthDimensionProperties {

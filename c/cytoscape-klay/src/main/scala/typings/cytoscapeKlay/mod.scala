@@ -190,13 +190,13 @@ object mod extends Shortcut {
     
     /**
       * Seed used for pseudo-random number generators to control the layout algorithm; 0 means a new seed is generated
-      * @default: 1
+      * @default 1
       */
     var randomizationSeed: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether a self-loop is routed around or inside its node.
-      * @default: false
+      * @default false
       */
     var routeSelfLoopInside: js.UndefOr[Boolean] = js.undefined
     
@@ -333,7 +333,7 @@ object mod extends Shortcut {
     
     /**
       * Whether to transition the node positions
-      * @default: false
+      * @default false
       */
     var animate: js.UndefOr[Boolean] = js.undefined
     
@@ -373,7 +373,7 @@ object mod extends Shortcut {
     
     /**
       * Boolean which changes whether label dimensions are included when calculating node dimensions
-      * @default: false
+      * @default false
       */
     var nodeDimensionsIncludeLabels: js.UndefOr[Boolean] = js.undefined
     

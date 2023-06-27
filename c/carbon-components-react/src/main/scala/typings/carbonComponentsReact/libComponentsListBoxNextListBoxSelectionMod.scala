@@ -131,6 +131,10 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     
     var `aria-autocomplete`: js.UndefOr[none_ | `inline` | list | both] = js.native
     
+    var `aria-braillelabel`: js.UndefOr[String] = js.native
+    
+    var `aria-brailleroledescription`: js.UndefOr[String] = js.native
+    
     var `aria-busy`: js.UndefOr[Booleanish] = js.native
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
@@ -139,6 +143,8 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     
     var `aria-colindex`: js.UndefOr[Double] = js.native
     
+    var `aria-colindextext`: js.UndefOr[String] = js.native
+    
     var `aria-colspan`: js.UndefOr[Double] = js.native
     
     var `aria-controls`: js.UndefOr[String] = js.native
@@ -146,6 +152,8 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
     
     var `aria-describedby`: js.UndefOr[String] = js.native
+    
+    var `aria-description`: js.UndefOr[String] = js.native
     
     var `aria-details`: js.UndefOr[String] = js.native
     
@@ -204,6 +212,8 @@ object libComponentsListBoxNextListBoxSelectionMod extends Shortcut {
     var `aria-rowcount`: js.UndefOr[Double] = js.native
     
     var `aria-rowindex`: js.UndefOr[Double] = js.native
+    
+    var `aria-rowindextext`: js.UndefOr[String] = js.native
     
     var `aria-rowspan`: js.UndefOr[Double] = js.native
     

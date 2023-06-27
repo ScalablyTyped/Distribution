@@ -14,7 +14,7 @@ trait GPUColorTargetState extends StObject {
   
   /**
     * The {@link GPUTextureFormat} of this color target. The pipeline will only be compatible with
-    * {@link GPURenderPassEncoder}s which use a {@link GPUTextureView} of the same format in the
+    * {@link GPURenderPassEncoder}s which use a {@link GPUTextureView} of this format in the
     * corresponding color attachment.
     */
   var format: GPUTextureFormat

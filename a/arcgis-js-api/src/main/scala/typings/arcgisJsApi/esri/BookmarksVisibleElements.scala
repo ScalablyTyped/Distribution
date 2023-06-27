@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarksVisibleElements extends StObject {
   
   /**
-    * Indicates whether to button to add a new bookmark displays.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
-    */
+  		 * Indicates whether to button to add a new bookmark displays.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
+  		 */
   var addBookmark: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the thumbnail associated with the bookmark displays.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
-    */
+  		 * Indicates whether the thumbnail associated with the bookmark displays.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
+  		 */
   var thumbnail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * _Since 4.22_ Indicates whether the time (`h:m:s`) is displayed alongside the date if the bookmark has a [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent) defined.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
-    */
+  		 * _Since 4.22_ Indicates whether the time (`h:m:s`) is displayed alongside the date if the bookmark has a [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent) defined.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#VisibleElements)
+  		 */
   var time: js.UndefOr[Boolean] = js.undefined
 }
 object BookmarksVisibleElements {

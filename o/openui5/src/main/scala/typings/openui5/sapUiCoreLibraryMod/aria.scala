@@ -9,7 +9,7 @@ object aria {
   @js.native
   sealed trait HasPopup extends StObject
   /**
-    * @SINCE 1.84
+    * @since 1.84
     *
     * Types of popups to set as aria-haspopup attribute. Most of the values (except "None") of the enumeration
     * are taken from the ARIA specification: https://www.w3.org/TR/wai-aria/#aria-haspopup

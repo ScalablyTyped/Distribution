@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Use the chrome.identity API to get OAuth2 access tokens.
   * @requires Permissions: 'identity'
-  * @see[Identity User]{@link https://developer.chrome.com/apps/app_identity}
+  * @see https://developer.chrome.com/apps/app_identity
   * @since Chrome 29.
   */
 object identity {

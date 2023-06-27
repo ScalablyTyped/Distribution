@@ -494,13 +494,13 @@ object WorkflowServices {
     def publishSubscriptionForList(subscription: WorkflowSubscription, listId: String): GuidResult = js.native
     
     /** Ensures that an event receiver will monitor a list for the specified event.
-      @param listId Unique identifier (GUID) for the specified list.
-      @eventName eventName The name of the event to be monitored. */
+      * @param listId Unique identifier (GUID) for the specified list.
+      * @param eventName eventName The name of the event to be monitored. */
     def registerInterestInList(listId: String, eventName: String): Unit = js.native
     
     /** Removes monitoring for an event receiver on the specified list with the specified event.
-      @param listId GUID of the list containing the event receiver to be unregistered.
-      @eventName eventName The name of the event to be removed. */
+      * @param listId GUID of the list containing the event receiver to be unregistered.
+      * @param eventName eventName The name of the event to be removed. */
     def unregisterInterestInList(listId: String, eventName: String): Unit = js.native
   }
 }

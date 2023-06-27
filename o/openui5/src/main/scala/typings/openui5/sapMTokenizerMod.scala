@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AddedTokens
-import typings.openui5.anon.KeyCode
-import typings.openui5.anon.RemovedTokens
 import typings.openui5.anon.SuggestionObject
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
@@ -211,13 +208,13 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit]
     ): this.type = js.native
     def attachTokenChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
@@ -244,7 +241,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit]
     ): this.type = js.native
     def attachTokenChange(
       /**
@@ -255,7 +252,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
@@ -263,7 +260,7 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenDelete tokenDelete} event of this `sap.m.Tokenizer`.
       *
@@ -279,20 +276,20 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit]
     ): this.type = js.native
     def attachTokenDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenDelete tokenDelete} event of this `sap.m.Tokenizer`.
       *
@@ -313,7 +310,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit]
     ): this.type = js.native
     def attachTokenDelete(
       /**
@@ -324,7 +321,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
@@ -332,7 +329,7 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.Tokenizer`.
@@ -348,20 +345,20 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit]
     ): this.type = js.native
     def attachTokenUpdate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.46
+      * @since 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
       *
       * Attaches event handler `fnFunction` to the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.Tokenizer`.
@@ -382,7 +379,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit]
     ): this.type = js.native
     def attachTokenUpdate(
       /**
@@ -393,7 +390,7 @@ object sapMTokenizerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Tokenizer` itself
       */
@@ -420,13 +417,13 @@ object sapMTokenizerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit]
     ): this.type = js.native
     def detachTokenChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -434,7 +431,7 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Detaches event handler `fnFunction` from the {@link #event:tokenDelete tokenDelete} event of this `sap.m.Tokenizer`.
       *
@@ -446,13 +443,13 @@ object sapMTokenizerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit]
     ): this.type = js.native
     def detachTokenDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -460,7 +457,7 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
       *
       * Detaches event handler `fnFunction` from the {@link #event:tokenUpdate tokenUpdate} event of this `sap.m.Tokenizer`.
@@ -473,13 +470,13 @@ object sapMTokenizerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit]
     ): this.type = js.native
     def detachTokenUpdate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TokenizerTokenUpdateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -488,36 +485,40 @@ object sapMTokenizerMod {
     
     /**
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenChange tokenChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTokenChange(): this.type = js.native
-    def fireTokenChange(/**
+    def fireTokenChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AddedTokens): this.type = js.native
+    mParameters: Tokenizer$TokenChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.82
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.82
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenDelete tokenDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTokenDelete(): this.type = js.native
-    def fireTokenDelete(/**
+    def fireTokenDelete(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: KeyCode): this.type = js.native
+    mParameters: Tokenizer$TokenDeleteEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:tokenUpdate tokenUpdate} to attached listeners.
       *
@@ -527,20 +528,20 @@ object sapMTokenizerMod {
       * @returns Whether or not to prevent the default action
       */
     def fireTokenUpdate(): Boolean = js.native
-    def fireTokenUpdate(/**
+    def fireTokenUpdate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RemovedTokens): Boolean = js.native
+    mParameters: Tokenizer$TokenUpdateEventParameters
+    ): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -556,7 +557,7 @@ object sapMTokenizerMod {
     def getEditable(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Flag indicating if tabindex attribute should be rendered
       *
@@ -565,7 +566,7 @@ object sapMTokenizerMod {
     def getEffectiveTabIndex(): Boolean = js.native
     
     /**
-      * @SINCE 1.80
+      * @since 1.80
       *
       * Gets the count of hidden tokens that will be used for the n-More indicator. If the count is 0, there
       * is no n-More indicator shown.
@@ -591,7 +592,7 @@ object sapMTokenizerMod {
       * Defines the mode that the Tokenizer will use:
       * 	 - `sap.m.TokenizerRenderMode.Loose` mode shows all tokens, no matter the width of the Tokenizer
       * 	 - `sap.m.TokenizerRenderMode.Narrow` mode forces the Tokenizer to show only as much tokens as possible
-      * 			in its width and add an n-More indicator
+      *     in its width and add an n-More indicator
       *
       * Default value is `RenderMode.Loose`.
       *
@@ -628,7 +629,7 @@ object sapMTokenizerMod {
     def getTokens(): js.Array[typings.openui5.sapMTokenMod.default] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the accessibility text aggregation id.
       *
@@ -646,7 +647,7 @@ object sapMTokenizerMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if the token is one and truncated.
       */
@@ -682,7 +683,7 @@ object sapMTokenizerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handle the focus event on the control.
       */
@@ -827,7 +828,7 @@ object sapMTokenizerMod {
     bEditable: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the first token truncation.
       *
@@ -869,7 +870,7 @@ object sapMTokenizerMod {
       * Defines the mode that the Tokenizer will use:
       * 	 - `sap.m.TokenizerRenderMode.Loose` mode shows all tokens, no matter the width of the Tokenizer
       * 	 - `sap.m.TokenizerRenderMode.Narrow` mode forces the Tokenizer to show only as much tokens as possible
-      * 			in its width and add an n-More indicator
+      *     in its width and add an n-More indicator
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -884,7 +885,7 @@ object sapMTokenizerMod {
     sRenderMode: String): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Method for handling the state for tabindex rendering
       */
@@ -907,6 +908,154 @@ object sapMTokenizerMod {
       * New value for property `width`
       */
     sWidth: CSSSize): this.type = js.native
+  }
+  
+  trait Tokenizer$TokenChangeEventParameters extends StObject {
+    
+    /**
+      * the array of tokens that are added. This parameter is used when tokenChange type is "tokenChanged".
+      */
+    var addedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * the array of tokens that are removed. This parameter is used when tokenChange type is "tokenChanged".
+      */
+    var removedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * the added token or removed token. This parameter is used when tokenChange type is "added" or "removed".
+      */
+    var token: js.UndefOr[typings.openui5.sapMTokenMod.default] = js.undefined
+    
+    /**
+      * the array of removed tokens. This parameter is used when tokenChange type is "removedAll".
+      */
+    var tokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * type of tokenChange event. There are four TokenChange types: "added", "removed", "removedAll", "tokensChanged".
+      * Use sap.m.Tokenizer.TokenChangeType.Added for "added", sap.m.Tokenizer.TokenChangeType.Removed for "removed",
+      * sap.m.Tokenizer.TokenChangeType.RemovedAll for "removedAll" and sap.m.Tokenizer.TokenChangeType.TokensChanged
+      * for "tokensChanged".
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object Tokenizer$TokenChangeEventParameters {
+    
+    inline def apply(): Tokenizer$TokenChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tokenizer$TokenChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizer$TokenChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAddedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "addedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setAddedTokensUndefined: Self = StObject.set(x, "addedTokens", js.undefined)
+      
+      inline def setAddedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "addedTokens", js.Array(value*))
+      
+      inline def setRemovedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "removedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setRemovedTokensUndefined: Self = StObject.set(x, "removedTokens", js.undefined)
+      
+      inline def setRemovedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "removedTokens", js.Array(value*))
+      
+      inline def setToken(value: typings.openui5.sapMTokenMod.default): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      
+      inline def setTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      
+      inline def setTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "tokens", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait Tokenizer$TokenDeleteEventParameters extends StObject {
+    
+    /**
+      * Keycode of the key pressed for deletion (backspace or delete).
+      */
+    var keyCode: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The array of tokens that are removed.
+      */
+    var tokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+  }
+  object Tokenizer$TokenDeleteEventParameters {
+    
+    inline def apply(): Tokenizer$TokenDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tokenizer$TokenDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizer$TokenDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      
+      inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+      
+      inline def setTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      
+      inline def setTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "tokens", js.Array(value*))
+    }
+  }
+  
+  trait Tokenizer$TokenUpdateEventParameters extends StObject {
+    
+    /**
+      * The array of tokens that are added. This parameter is used when tokenUpdate type is "added".
+      */
+    var addedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * The array of tokens that are removed. This parameter is used when tokenUpdate type is "removed".
+      */
+    var removedTokens: js.UndefOr[js.Array[typings.openui5.sapMTokenMod.default]] = js.undefined
+    
+    /**
+      * Type of tokenChange event. There are two TokenUpdate types: "added", "removed" Use sap.m.Tokenizer.TokenUpdateType.Added
+      * for "added" and sap.m.Tokenizer.TokenUpdateType.Removed for "removed".
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object Tokenizer$TokenUpdateEventParameters {
+    
+    inline def apply(): Tokenizer$TokenUpdateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tokenizer$TokenUpdateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokenizer$TokenUpdateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAddedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "addedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setAddedTokensUndefined: Self = StObject.set(x, "addedTokens", js.undefined)
+      
+      inline def setAddedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "addedTokens", js.Array(value*))
+      
+      inline def setRemovedTokens(value: js.Array[typings.openui5.sapMTokenMod.default]): Self = StObject.set(x, "removedTokens", value.asInstanceOf[js.Any])
+      
+      inline def setRemovedTokensUndefined: Self = StObject.set(x, "removedTokens", js.undefined)
+      
+      inline def setRemovedTokensVarargs(value: typings.openui5.sapMTokenMod.default*): Self = StObject.set(x, "removedTokens", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
   }
   
   trait TokenizerSettings
@@ -941,7 +1090,7 @@ object sapMTokenizerMod {
       * Defines the mode that the Tokenizer will use:
       * 	 - `sap.m.TokenizerRenderMode.Loose` mode shows all tokens, no matter the width of the Tokenizer
       * 	 - `sap.m.TokenizerRenderMode.Narrow` mode forces the Tokenizer to show only as much tokens as possible
-      * 			in its width and add an n-More indicator
+      *     in its width and add an n-More indicator
       */
     var renderMode: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
@@ -950,23 +1099,38 @@ object sapMTokenizerMod {
       *
       * Fired when the tokens aggregation changed (add / remove token)
       */
-    var tokenChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.82
+      * @since 1.82
       *
       * Fired when a token is deleted by clicking icon, pressing backspace or delete button.  Once the
       * event is fired, application is responsible for removing / destroying the token from the aggregation.
       */
-    var tokenDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.46
+      * @since 1.46
       * @deprecated (since 1.82) - replaced by `tokenDelete` event.
       *
       * Fired when the tokens aggregation changed due to a user interaction (add / remove token)
       */
-    var tokenUpdate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var tokenUpdate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenUpdateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * the currently displayed tokens
@@ -1016,15 +1180,21 @@ object sapMTokenizerMod {
       
       inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
-      inline def setTokenChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenChange", js.Any.fromFunction1(value))
+      inline def setTokenChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenChange", js.Any.fromFunction1(value))
       
       inline def setTokenChangeUndefined: Self = StObject.set(x, "tokenChange", js.undefined)
       
-      inline def setTokenDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenDelete", js.Any.fromFunction1(value))
+      inline def setTokenDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenDelete", js.Any.fromFunction1(value))
       
       inline def setTokenDeleteUndefined: Self = StObject.set(x, "tokenDelete", js.undefined)
       
-      inline def setTokenUpdate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "tokenUpdate", js.Any.fromFunction1(value))
+      inline def setTokenUpdate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenUpdateEventParameters] => Unit
+      ): Self = StObject.set(x, "tokenUpdate", js.Any.fromFunction1(value))
       
       inline def setTokenUpdateUndefined: Self = StObject.set(x, "tokenUpdate", js.undefined)
       
@@ -1041,4 +1211,16 @@ object sapMTokenizerMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type TokenizerTokenChangeEvent = typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenChangeEventParameters]
+  
+  type TokenizerTokenChangeEventParameters = Tokenizer$TokenChangeEventParameters
+  
+  type TokenizerTokenDeleteEvent = typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenDeleteEventParameters]
+  
+  type TokenizerTokenDeleteEventParameters = Tokenizer$TokenDeleteEventParameters
+  
+  type TokenizerTokenUpdateEvent = typings.openui5.sapUiBaseEventMod.default[Tokenizer$TokenUpdateEventParameters]
+  
+  type TokenizerTokenUpdateEventParameters = Tokenizer$TokenUpdateEventParameters
 }

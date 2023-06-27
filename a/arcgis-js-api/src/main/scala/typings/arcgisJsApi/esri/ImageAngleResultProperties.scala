@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageAngleResultProperties extends StObject {
   
   /**
-    * The computed north angle after rotating the map so the top of the image is oriented toward north.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#north)
-    */
+  		 * The computed north angle after rotating the map so the top of the image is oriented toward north.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#north)
+  		 */
   var north: js.UndefOr[Double] = js.undefined
   
   /**
-    * The spatial reference used to compute the angles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#spatialReference)
-    */
+  		 * The spatial reference used to compute the angles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The computed up angle after rotating the map so the top of the image is always oriented to the direction of the sensor when it acquired the image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#up)
-    */
+  		 * The computed up angle after rotating the map so the top of the image is always oriented to the direction of the sensor when it acquired the image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageAngleResult.html#up)
+  		 */
   var up: js.UndefOr[Double] = js.undefined
 }
 object ImageAngleResultProperties {

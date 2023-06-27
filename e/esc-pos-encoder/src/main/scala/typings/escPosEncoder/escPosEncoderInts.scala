@@ -1,5 +1,6 @@
 package typings.escPosEncoder
 
+import typings.escPosEncoder.mod.deviceType
 import typings.escPosEncoder.mod.qrSizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object escPosEncoderInts {
   
   @js.native
+  sealed trait `0`
+    extends StObject
+       with deviceType
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
+  
+  @js.native
   sealed trait `1`
     extends StObject
+       with deviceType
        with qrSizeType
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   

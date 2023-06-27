@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionParameters extends StObject {
   
   /**
-    * A list of custom parameters appended to the URL of the stream service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * A list of custom parameters appended to the URL of the stream service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * The SQL where clause used to filter features based on their attributes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * The SQL where clause used to filter features based on their attributes.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * An [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object used to filter features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * An [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object used to filter features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var geometryDefinition: js.UndefOr[Extent] = js.undefined
   
   /**
-    * The maximum number of attempts to reconnect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * The maximum number of attempts to reconnect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var maxReconnectionAttempts: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum time to wait in seconds between attempts to reconnect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * The maximum time to wait in seconds between attempts to reconnect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var maxReconnectionInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The spatial reference of the geometries emitted by the connection.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
-    */
+  		 * The spatial reference of the geometries emitted by the connection.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#ConnectionParameters)
+  		 */
   var spatialReference: js.UndefOr[String] = js.undefined
 }
 object ConnectionParameters {

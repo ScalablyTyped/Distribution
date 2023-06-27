@@ -28,7 +28,7 @@ object sapUiCoreIntervalTriggerMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Adds a listener to the list that should be triggered.
       */
@@ -110,7 +110,7 @@ object sapUiCoreIntervalTriggerMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Removes corresponding listener from list.
       */

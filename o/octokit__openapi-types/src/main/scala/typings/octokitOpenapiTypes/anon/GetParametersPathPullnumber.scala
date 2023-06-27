@@ -32,11 +32,11 @@ trait GetParametersPathPullnumber extends StObject {
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
-  var patch: Responses200317
+  var patch: Responses200371
 }
 object GetParametersPathPullnumber {
   
-  inline def apply(get: ParametersPathPullnumber, patch: Responses200317): GetParametersPathPullnumber = {
+  inline def apply(get: ParametersPathPullnumber, patch: Responses200371): GetParametersPathPullnumber = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersPathPullnumber]
   }
@@ -46,6 +46,6 @@ object GetParametersPathPullnumber {
     
     inline def setGet(value: ParametersPathPullnumber): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200317): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200371): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

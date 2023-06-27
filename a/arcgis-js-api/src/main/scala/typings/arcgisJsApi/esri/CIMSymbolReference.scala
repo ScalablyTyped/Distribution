@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMSymbolReference extends StObject {
   
   /**
-    * _Since 4.20_ The maximum scale the symbol reference should be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
-    */
+  		 * _Since 4.20_ The maximum scale the symbol reference should be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
+  		 */
   var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * _Since 4.20_ The minimum scale the symbol reference should be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
-    */
+  		 * _Since 4.20_ The minimum scale the symbol reference should be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
+  		 */
   var minScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The primitive overrides.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
-    */
+  		 * The primitive overrides.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
+  		 */
   var primitiveOverrides: js.UndefOr[js.Array[PrimitiveOverride]] = js.undefined
   
   /**
-    * The symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
-    */
+  		 * The symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference)
+  		 */
   var symbol: CIMPointSymbol | CIMLineSymbol | CIMPolygonSymbol
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference

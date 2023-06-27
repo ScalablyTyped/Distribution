@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/BarProp) */
 trait BarProp extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/BarProp/visible) */
   /* standard dom */
   val visible: scala.Boolean
 }

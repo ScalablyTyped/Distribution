@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneModificationProperties extends StObject {
   
   /**
-    * The geometry representing the location of the modification.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#geometry)
-    */
+  		 * The geometry representing the location of the modification.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#geometry)
+  		 */
   var geometry: js.UndefOr[PolygonProperties] = js.undefined
   
   /**
-    * The type of modification to perform.
-    *
-    * @default clip
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#type)
-    */
+  		 * The type of modification to perform.
+  		 *
+  		 * @default clip
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html#type)
+  		 */
   var `type`: js.UndefOr[clip | mask | replace] = js.undefined
 }
 object SceneModificationProperties {

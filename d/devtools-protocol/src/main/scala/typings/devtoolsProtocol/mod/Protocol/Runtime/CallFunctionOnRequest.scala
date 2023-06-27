@@ -62,7 +62,7 @@ trait CallFunctionOnRequest extends StObject {
   
   /**
     * Specifies the result serialization. If provided, overrides
-    * `returnByValue` and `generateWebDriverValue`.
+    * `generatePreview`, `returnByValue` and `generateWebDriverValue`.
     */
   var serializationOptions: js.UndefOr[SerializationOptions] = js.undefined
   

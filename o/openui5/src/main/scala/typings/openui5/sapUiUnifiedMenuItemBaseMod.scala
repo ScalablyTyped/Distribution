@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`8`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -138,13 +137,13 @@ object sapUiUnifiedMenuItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.MenuItemBase` itself
       */
@@ -171,7 +170,7 @@ object sapUiUnifiedMenuItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -182,7 +181,7 @@ object sapUiUnifiedMenuItemBaseMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.MenuItemBase` itself
       */
@@ -207,13 +206,13 @@ object sapUiUnifiedMenuItemBaseMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MenuItemBaseSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -221,17 +220,19 @@ object sapUiUnifiedMenuItemBaseMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): this.type = js.native
+    mParameters: MenuItemBase$SelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnabled enabled}.
@@ -276,7 +277,7 @@ object sapUiUnifiedMenuItemBaseMod {
     def getVisible(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Changes the visual hover state of the menu item.
       *
@@ -294,7 +295,7 @@ object sapUiUnifiedMenuItemBaseMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Informs the item that the item HTML is now applied to the DOM.
       *
@@ -303,7 +304,7 @@ object sapUiUnifiedMenuItemBaseMod {
     def onAfterRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler which is called whenever the submenu of the item is opened or closed.
       *
@@ -315,7 +316,7 @@ object sapUiUnifiedMenuItemBaseMod {
     bOpened: Boolean): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Produces the HTML of an item and writes it to render-output-buffer during the rendering of the corresponding
       * menu.
@@ -401,6 +402,33 @@ object sapUiUnifiedMenuItemBaseMod {
     bVisible: Boolean): this.type = js.native
   }
   
+  trait MenuItemBase$SelectEventParameters extends StObject {
+    
+    /**
+      * The current item
+      */
+    var item: js.UndefOr[MenuItemBase] = js.undefined
+  }
+  object MenuItemBase$SelectEventParameters {
+    
+    inline def apply(): MenuItemBase$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MenuItemBase$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemBase$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: MenuItemBase): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type MenuItemBaseSelectEvent = typings.openui5.sapUiBaseEventMod.default[MenuItemBase$SelectEventParameters]
+  
+  type MenuItemBaseSelectEventParameters = MenuItemBase$SelectEventParameters
+  
   trait MenuItemBaseSettings
     extends StObject
        with ElementSettings {
@@ -418,7 +446,12 @@ object sapUiUnifiedMenuItemBaseMod {
       * a submenu. In general, applications must not handle event in this case because the user selection opens
       * the sub menu.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItemBase$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether a visual separator should be rendered before the item. **Note:** If an item is invisible
@@ -454,7 +487,9 @@ object sapUiUnifiedMenuItemBaseMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MenuItemBase$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

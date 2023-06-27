@@ -11,8 +11,6 @@ open class Body () extends StObject {
   /**
     * A `Number` specifying the angle of the body, in radians.
     *
-    * @property angle
-    * @type {number}
     * @default 0
     */
   var angle: Double = js.native
@@ -21,8 +19,6 @@ open class Body () extends StObject {
     * A `Number` that _measures_ the current angular speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.angularVelocity`).
     *
     * @readOnly
-    * @property angularSpeed
-    * @type {number}
     * @default 0
     */
   val angularSpeed: Double = js.native
@@ -32,8 +28,6 @@ open class Body () extends StObject {
     * If you need to modify a body's angular velocity directly, you should apply a torque or simply change the body's `angle` (as the engine uses position-Verlet integration).
     *
     * @readOnly
-    * @property angularVelocity
-    * @type {number}
     * @default 0
     */
   val angularVelocity: Double = js.native
@@ -41,8 +35,6 @@ open class Body () extends StObject {
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
     *
-    * @property area
-    * @type {number}
     * @default
     */
   var area: Double = js.native
@@ -52,8 +44,6 @@ open class Body () extends StObject {
     * These are automatically calculated from the given convex hull (`vertices` array) in `Body.create`.
     * They are constantly updated by `Body.update` during the simulation.
     *
-    * @property axes
-    * @type {Vector[]}
     */
   var axes: js.Array[Vector] = js.native
   
@@ -61,8 +51,6 @@ open class Body () extends StObject {
     * A `Bounds` object that defines the AABB region for the body.
     * It is automatically calculated from the given convex hull (`vertices` array) in `Body.create` and constantly updated by `Body.update` during simulation.
     *
-    * @property bounds
-    * @type {Bounds}
     */
   var bounds: Bounds = js.native
   
@@ -70,8 +58,6 @@ open class Body () extends StObject {
     * A `Number` that is set to the radius of the object if the body was constructed using `Bodies.circle`.
     * May have a value of `null` if the body is no longer a circle (i.e. was scaled with a scaleX != scaleY).
     *
-    * @property circleRadius
-    * @type {number  | undefined}
     * @default 0
     */
   var circleRadius: js.UndefOr[Double] = js.native
@@ -98,8 +84,6 @@ open class Body () extends StObject {
     * category in its mask, i.e. `(categoryA & maskB) !== 0` and `(categoryB & maskA) !== 0`
     * are both true.
     *
-    * @property collisionFilter
-    * @type {ICollisionFilter}
     */
   var collisionFilter: ICollisionFilter = js.native
   
@@ -108,8 +92,6 @@ open class Body () extends StObject {
     * If you pass the density via `Body.create` the `mass` property is automatically calculated for you based on the size (area) of the object.
     * This is generally preferable to simply setting mass and allows for more intuitive definition of materials (e.g. rock has a higher density than wood).
     *
-    * @property density
-    * @type {number}
     * @default 0.001
     */
   var density: Double = js.native
@@ -117,8 +99,6 @@ open class Body () extends StObject {
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
     *
-    * @property force
-    * @type {Vector}
     * @default { x: 0, y: 0 }
     */
   var force: Vector = js.native
@@ -135,8 +115,6 @@ open class Body () extends StObject {
     *
     *     Math.min(bodyA.friction, bodyB.friction)
     *
-    * @property friction
-    * @type {number}
     * @default 0.1
     */
   var friction: Double = js.native
@@ -147,8 +125,6 @@ open class Body () extends StObject {
     * The higher the value, the faster a body slows when moving through space.
     * The effects of the value are non-linear.
     *
-    * @property frictionAir
-    * @type {number}
     * @default 0.01
     */
   var frictionAir: Double = js.native
@@ -159,8 +135,6 @@ open class Body () extends StObject {
     * The higher the value (e.g. `10`), the more force it will take to initially get the body moving when nearly stationary.
     * This value is multiplied with the `friction` property to make it easier to change `friction` and maintain an appropriate amount of static friction.
     *
-    * @property frictionStatic
-    * @type {number}
     * @default 0.5
     */
   var frictionStatic: Double = js.native
@@ -168,8 +142,6 @@ open class Body () extends StObject {
   /**
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
     *
-    * @property id
-    * @type {number}
     */
   var id: Double = js.native
   
@@ -178,8 +150,6 @@ open class Body () extends StObject {
     * It is automatically calculated from the given convex hull (`vertices` array) and density in `Body.create`.
     * If you modify this value, you must also modify the `body.inverseInertia` property (`1 / inertia`).
     *
-    * @property inertia
-    * @type {number}
     */
   var inertia: Double = js.native
   
@@ -187,8 +157,6 @@ open class Body () extends StObject {
     * A `Number` that defines the inverse moment of inertia of the body (`1 / inertia`).
     * If you modify this value, you must also modify the `body.inertia` property.
     *
-    * @property inverseInertia
-    * @type {number}
     */
   var inverseInertia: Double = js.native
   
@@ -196,16 +164,12 @@ open class Body () extends StObject {
     * A `Number` that defines the inverse mass of the body (`1 / mass`).
     * If you modify this value, you must also modify the `body.mass` property.
     *
-    * @property inverseMass
-    * @type {number}
     */
   var inverseMass: Double = js.native
   
   /**
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
     *
-    * @property isSensor
-    * @type {boolean}
     * @default false
     */
   var isSensor: Boolean = js.native
@@ -214,8 +178,6 @@ open class Body () extends StObject {
     * A flag that indicates whether the body is considered sleeping. A sleeping body acts similar to a static body, except it is only temporary and can be awoken.
     * If you need to set a body as sleeping, you should use `Sleeping.set` as this requires more than just setting this flag.
     *
-    * @property isSleeping
-    * @type {boolean}
     * @default false
     */
   var isSleeping: Boolean = js.native
@@ -224,8 +186,6 @@ open class Body () extends StObject {
     * A flag that indicates whether a body is considered static. A static body can never change position or angle and is completely fixed.
     * If you need to set a body as static after its creation, you should use `Body.setStatic` as this requires more than just setting this flag.
     *
-    * @property isStatic
-    * @type {boolean}
     * @default false
     */
   var isStatic: Boolean = js.native
@@ -233,8 +193,6 @@ open class Body () extends StObject {
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
-    * @property label
-    * @type {string}
     * @default "Body"
     */
   var label: String = js.native
@@ -243,8 +201,6 @@ open class Body () extends StObject {
     * A `Number` that defines the mass of the body, although it may be more appropriate to specify the `density` property instead.
     * If you modify this value, you must also modify the `body.inverseMass` property (`1 / mass`).
     *
-    * @property mass
-    * @type {number}
     */
   var mass: Double = js.native
   
@@ -253,8 +209,6 @@ open class Body () extends StObject {
     * It is used and updated by the `Matter.Sleeping` module during simulation to decide if a body has come to rest.
     *
     * @readOnly
-    * @property motion
-    * @type {number}
     * @default 0
     */
   val motion: Double = js.native
@@ -264,8 +218,6 @@ open class Body () extends StObject {
     * Otherwise this is a reference to the body that this is a part of.
     * See `body.parts`.
     *
-    * @property parent
-    * @type {Body}
     */
   var parent: Body = js.native
   
@@ -277,23 +229,18 @@ open class Body () extends StObject {
     * Parts themselves should never be added to a `World`, only the parent body should be.
     * Use `Body.setParts` when setting parts to ensure correct updates of all properties.
     *
-    * @property parts
-    * @type {Body[]}
     */
   var parts: js.Array[Body] = js.native
   
   /**
     * An object reserved for storing plugin-specific properties.
     *
-    * @property plugin
     */
   var plugin: Any = js.native
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
     *
-    * @property position
-    * @type {Vector}
     * @default { x: 0, y: 0 }
     */
   var position: Vector = js.native
@@ -301,8 +248,6 @@ open class Body () extends StObject {
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
-    * @property render
-    * @type {any}
     */
   var render: IBodyRenderOptions = js.native
   
@@ -314,8 +259,6 @@ open class Body () extends StObject {
     *
     *     Math.max(bodyA.restitution, bodyB.restitution)
     *
-    * @property restitution
-    * @type {number}
     * @default 0
     */
   var restitution: Double = js.native
@@ -323,8 +266,6 @@ open class Body () extends StObject {
   /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     *
-    * @property sleepThreshold
-    * @type {number}
     * @default 60
     */
   var sleepThreshold: Double = js.native
@@ -334,8 +275,6 @@ open class Body () extends StObject {
     * Avoid changing this value unless you understand the purpose of `slop` in physics engines.
     * The default should generally suffice, although very large bodies may require larger values for stable stacking.
     *
-    * @property slop
-    * @type {number}
     * @default 0.05
     */
   var slop: Double = js.native
@@ -344,8 +283,6 @@ open class Body () extends StObject {
     * A `Number` that _measures_ the current speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.velocity`).
     *
     * @readOnly
-    * @property speed
-    * @type {number}
     * @default 0
     */
   val speed: Double = js.native
@@ -353,8 +290,6 @@ open class Body () extends StObject {
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
     *
-    * @property timeScale
-    * @type {number}
     * @default 1
     */
   var timeScale: Double = js.native
@@ -362,8 +297,6 @@ open class Body () extends StObject {
   /**
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
     *
-    * @property torque
-    * @type {number}
     * @default 0
     */
   var torque: Double = js.native
@@ -371,8 +304,6 @@ open class Body () extends StObject {
   /**
     * A `String` denoting the type of object.
     *
-    * @property type
-    * @type {string}
     * @default "body"
     */
   var `type`: String = js.native
@@ -382,8 +313,6 @@ open class Body () extends StObject {
     * If you need to modify a body's velocity directly, you should either apply a force or simply change the body's `position` (as the engine uses position-Verlet integration).
     *
     * @readOnly
-    * @property velocity
-    * @type {Vector}
     * @default { x: 0, y: 0 }
     */
   val velocity: Vector = js.native
@@ -400,8 +329,6 @@ open class Body () extends StObject {
     * Other properties such as `inertia` and `bounds` are automatically calculated from the passed vertices (unless provided via `options`).
     * Concave hulls are not currently supported. The module `Matter.Vertices` contains useful methods for working with vertices.
     *
-    * @property vertices
-    * @type {Vector[]}
     */
   var vertices: js.Array[Vector] = js.native
 }

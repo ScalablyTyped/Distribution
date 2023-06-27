@@ -11,40 +11,40 @@ sealed trait FontType extends StObject
 object FontType extends StObject {
   
   /**
-    * OpenType with CFF outlines.
-    */
+  			 * OpenType with CFF outlines.
+  			 */
   @js.native
   sealed trait PSOpenType
     extends StObject
        with FontType
   
   /**
-    * OpenType with TrueType outlines.
-    */
+  			 * OpenType with TrueType outlines.
+  			 */
   @js.native
   sealed trait TTOpenType
     extends StObject
        with FontType
   
   /**
-    * TrueType.
-    */
+  			 * TrueType.
+  			 */
   @js.native
   sealed trait TrueType
     extends StObject
        with FontType
   
   /**
-    * Adobe Type 1.
-    */
+  			 * Adobe Type 1.
+  			 */
   @js.native
   sealed trait Type1
     extends StObject
        with FontType
   
   /**
-    * Unspecified.
-    */
+  			 * Unspecified.
+  			 */
   @js.native
   sealed trait Unspecified
     extends StObject

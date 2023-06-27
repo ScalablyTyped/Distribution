@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioDataInit extends StObject {
   
-  var data: AllowSharedBufferSource
+  var data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
   
   var format: AudioSampleFormat
   
@@ -21,7 +21,7 @@ trait AudioDataInit extends StObject {
 object AudioDataInit {
   
   inline def apply(
-    data: AllowSharedBufferSource,
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any,
     format: AudioSampleFormat,
     numberOfChannels: Double,
     numberOfFrames: Double,
@@ -35,7 +35,9 @@ object AudioDataInit {
   @scala.inline
   implicit open class MutableBuilder[Self <: AudioDataInit] (val x: Self) extends AnyVal {
     
-    inline def setData(value: AllowSharedBufferSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowSharedBufferSource */ Any
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFormat(value: AudioSampleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

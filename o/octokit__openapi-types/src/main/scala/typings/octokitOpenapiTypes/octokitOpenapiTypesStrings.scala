@@ -111,6 +111,10 @@ object octokitOpenapiTypesStrings {
   inline def EastUs: EastUs = "EastUs".asInstanceOf[EastUs]
   
   @js.native
+  sealed trait EuropeWest extends StObject
+  inline def EuropeWest: EuropeWest = "EuropeWest".asInstanceOf[EuropeWest]
+  
+  @js.native
   sealed trait Exporting extends StObject
   inline def Exporting: Exporting = "Exporting".asInstanceOf[Exporting]
   
@@ -255,6 +259,10 @@ object octokitOpenapiTypesStrings {
   inline def SouthEastAsia: SouthEastAsia = "SouthEastAsia".asInstanceOf[SouthEastAsia]
   
   @js.native
+  sealed trait SoutheastAsia_ extends StObject
+  inline def SoutheastAsia_ : SoutheastAsia_ = "SoutheastAsia".asInstanceOf[SoutheastAsia_]
+  
+  @js.native
   sealed trait Starting extends StObject
   inline def Starting: Starting = "Starting".asInstanceOf[Starting]
   
@@ -273,6 +281,14 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait Updating extends StObject
   inline def Updating: Updating = "Updating".asInstanceOf[Updating]
+  
+  @js.native
+  sealed trait UsEast extends StObject
+  inline def UsEast: UsEast = "UsEast".asInstanceOf[UsEast]
+  
+  @js.native
+  sealed trait UsWest extends StObject
+  inline def UsWest: UsWest = "UsWest".asInstanceOf[UsWest]
   
   @js.native
   sealed trait User extends StObject
@@ -467,8 +483,8 @@ object octokitOpenapiTypesStrings {
   inline def built: built = "built".asInstanceOf[built]
   
   @js.native
-  sealed trait c extends StObject
-  inline def c: c = "c".asInstanceOf[c]
+  sealed trait `c-cpp` extends StObject
+  inline def `c-cpp`: `c-cpp` = "c-cpp".asInstanceOf[`c-cpp`]
   
   @js.native
   sealed trait cancelled extends StObject
@@ -611,10 +627,6 @@ object octokitOpenapiTypesStrings {
   inline def copied: copied = "copied".asInstanceOf[copied]
   
   @js.native
-  sealed trait cpp extends StObject
-  inline def cpp: cpp = "cpp".asInstanceOf[cpp]
-  
-  @js.native
   sealed trait create extends StObject
   inline def create: create = "create".asInstanceOf[create]
   
@@ -713,6 +725,10 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait destroy_pending extends StObject
   inline def destroy_pending: destroy_pending = "destroy_pending".asInstanceOf[destroy_pending]
+  
+  @js.native
+  sealed trait destroyed extends StObject
+  inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
   sealed trait detecting extends StObject
@@ -1015,6 +1031,10 @@ object octokitOpenapiTypesStrings {
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
+  sealed trait invalidated extends StObject
+  inline def invalidated: invalidated = "invalidated".asInstanceOf[invalidated]
+  
+  @js.native
   sealed trait issue_ extends StObject
   inline def issue_ : issue_ = "issue".asInstanceOf[issue_]
   
@@ -1039,12 +1059,16 @@ object octokitOpenapiTypesStrings {
   inline def issues: issues = "issues".asInstanceOf[issues]
   
   @js.native
-  sealed trait java_ extends StObject
-  inline def java_ : java_ = "java".asInstanceOf[java_]
+  sealed trait `java-kotlin` extends StObject
+  inline def `java-kotlin`: `java-kotlin` = "java-kotlin".asInstanceOf[`java-kotlin`]
   
   @js.native
   sealed trait javascript extends StObject
   inline def javascript: javascript = "javascript".asInstanceOf[javascript]
+  
+  @js.native
+  sealed trait `javascript-typescript` extends StObject
+  inline def `javascript-typescript`: `javascript-typescript` = "javascript-typescript".asInstanceOf[`javascript-typescript`]
   
   @js.native
   sealed trait joined extends StObject
@@ -1053,10 +1077,6 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
-  
-  @js.native
-  sealed trait kotlin extends StObject
-  inline def kotlin: kotlin = "kotlin".asInstanceOf[kotlin]
   
   @js.native
   sealed trait label extends StObject
@@ -1181,6 +1201,10 @@ object octokitOpenapiTypesStrings {
   @js.native
   sealed trait merge_queue_entry extends StObject
   inline def merge_queue_entry: merge_queue_entry = "merge_queue_entry".asInstanceOf[merge_queue_entry]
+  
+  @js.native
+  sealed trait merged extends StObject
+  inline def merged: merged = "merged".asInstanceOf[merged]
   
   @js.native
   sealed trait meta extends StObject

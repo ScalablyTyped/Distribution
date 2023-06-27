@@ -10,19 +10,19 @@ trait WhenNode
      with SQLNode {
   
   /**
-    * operand.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#WhenNode)
-    */
+  		 * operand.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#WhenNode)
+  		 */
   var operand: SQLNode
   
   var `type`: `when-clause`
   
   /**
-    * value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#WhenNode)
-    */
+  		 * value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#WhenNode)
+  		 */
   var value: SQLNode
 }
 object WhenNode {

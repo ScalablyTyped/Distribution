@@ -10,6 +10,10 @@ object typesConstantsMod {
   @js.native
   val DEFAULT_DOMAIN: /* "form.typeform.com" */ String = js.native
   
+  @JSImport("@typeform/embed/types/constants", "LIVE_EMBED_ATTRIBUTE")
+  @js.native
+  val LIVE_EMBED_ATTRIBUTE: /* "data-tf-live" */ String = js.native
+  
   @JSImport("@typeform/embed/types/constants", "POPOVER_ATTRIBUTE")
   @js.native
   val POPOVER_ATTRIBUTE: /* "data-tf-popover" */ String = js.native

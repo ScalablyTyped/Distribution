@@ -12,26 +12,26 @@ trait GroupElementProperties
      with ElementProperties {
   
   /**
-    * An array of [field elements](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) to display as grouped.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#elements)
-    */
+  		 * An array of [field elements](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) to display as grouped.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#elements)
+  		 */
   var elements: js.UndefOr[js.Array[FieldElementProperties]] = js.undefined
   
   /**
-    * Defines if the group should be expanded or collapsed when the form is initially displayed.
-    *
-    * @default expanded
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#initialState)
-    */
+  		 * Defines if the group should be expanded or collapsed when the form is initially displayed.
+  		 *
+  		 * @default expanded
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#initialState)
+  		 */
   var initialState: js.UndefOr[collapsed | expanded] = js.undefined
   
   /**
-    * The type of the [element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-Element.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#type)
-    */
+  		 * The type of the [element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-Element.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-GroupElement.html#type)
+  		 */
   var `type`: js.UndefOr[group] = js.undefined
 }
 object GroupElementProperties {

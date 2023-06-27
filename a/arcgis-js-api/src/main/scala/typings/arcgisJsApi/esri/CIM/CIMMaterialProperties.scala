@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMMaterialProperties extends StObject {
   
   /**
-    * How this material combines with externally defined colors.
-    */
+  			 * How this material combines with externally defined colors.
+  			 */
   var externalColorMixMode: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExternalColorMixMode * / any */ String
   ] = js.undefined
   
   /**
-    * The shininess.
-    */
+  			 * The shininess.
+  			 */
   var shininess: js.UndefOr[Double] = js.undefined
   
   /**
-    * The specular color.
-    */
+  			 * The specular color.
+  			 */
   var specularColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMaterialProperties

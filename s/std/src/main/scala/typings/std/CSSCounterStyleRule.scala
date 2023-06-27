@@ -4,40 +4,52 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule) */
 trait CSSCounterStyleRule
   extends StObject
      with CSSRule {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/additiveSymbols) */
   /* standard dom */
   var additiveSymbols: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/fallback) */
   /* standard dom */
   var fallback: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/name) */
   /* standard dom */
   var name: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/negative) */
   /* standard dom */
   var negative: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/pad) */
   /* standard dom */
   var pad: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/prefix) */
   /* standard dom */
   var prefix: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/range) */
   /* standard dom */
   var range: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/speakAs) */
   /* standard dom */
   var speakAs: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/suffix) */
   /* standard dom */
   var suffix: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/symbols) */
   /* standard dom */
   var symbols: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule/system) */
   /* standard dom */
   var system: java.lang.String
 }

@@ -4,11 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context) */
 trait WEBGLLoseContext extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/loseContext) */
   /* standard dom */
   def loseContext(): Unit
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_lose_context/restoreContext) */
   /* standard dom */
   def restoreContext(): Unit
 }

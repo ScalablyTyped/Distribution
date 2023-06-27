@@ -104,6 +104,8 @@ object libTypesMod {
     var invalidateOnFileCreate: js.Array[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileCreateInvalidation */ Any
       ]
+    
+    var invalidateOnStartup: Boolean
   }
   object Invalidations {
     
@@ -113,9 +115,10 @@ object libTypesMod {
         ],
       invalidateOnFileCreate: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileCreateInvalidation */ Any
-        ]
+        ],
+      invalidateOnStartup: Boolean
     ): Invalidations = {
-      val __obj = js.Dynamic.literal(invalidateOnFileChange = invalidateOnFileChange.asInstanceOf[js.Any], invalidateOnFileCreate = invalidateOnFileCreate.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(invalidateOnFileChange = invalidateOnFileChange.asInstanceOf[js.Any], invalidateOnFileCreate = invalidateOnFileCreate.asInstanceOf[js.Any], invalidateOnStartup = invalidateOnStartup.asInstanceOf[js.Any])
       __obj.asInstanceOf[Invalidations]
     }
     
@@ -137,6 +140,8 @@ object libTypesMod {
       inline def setInvalidateOnFileCreateVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileCreateInvalidation */ Any)*
       ): Self = StObject.set(x, "invalidateOnFileCreate", js.Array(value*))
+      
+      inline def setInvalidateOnStartup(value: Boolean): Self = StObject.set(x, "invalidateOnStartup", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,6 +242,8 @@ object libTypesMod {
       ] = js.undefined
     
     var resolved: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilePath */ Any
+    
+    var `type`: Double
   }
   object ResolveResult {
     
@@ -247,9 +254,11 @@ object libTypesMod {
       invalidateOnFileCreate: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileCreateInvalidation */ Any
         ],
-      resolved: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilePath */ Any
+      resolved: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilePath */ Any,
+      `type`: Double
     ): ResolveResult = {
       val __obj = js.Dynamic.literal(invalidateOnFileChange = invalidateOnFileChange.asInstanceOf[js.Any], invalidateOnFileCreate = invalidateOnFileCreate.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveResult]
     }
     
@@ -283,6 +292,8 @@ object libTypesMod {
       inline def setResolved(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilePath */ Any
       ): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

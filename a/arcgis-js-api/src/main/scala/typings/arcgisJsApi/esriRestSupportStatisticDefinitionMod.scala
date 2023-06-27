@@ -12,20 +12,20 @@ object esriRestSupportStatisticDefinitionMod {
   @JSImport("esri/rest/support/StatisticDefinition", JSImport.Namespace)
   @js.native
   /**
-    * This class defines the parameters for querying a layer or layer view for statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html)
-    */
+  		 * This class defines the parameters for querying a layer or layer view for statistics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html)
+  		 */
   open class ^ ()
     extends StObject
        with StatisticDefinition {
     def this(properties: StatisticDefinitionProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

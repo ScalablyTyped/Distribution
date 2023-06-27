@@ -7,402 +7,402 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsColorRampName extends StObject {
   
   /**
-    * Aspect.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Aspect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var aspect: String
   
   /**
-    * Black to White.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Black to White.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var blackToWhite: String
   
   /**
-    * Blue Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Blue Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var blueBright: String
   
   /**
-    * Blue-Green Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Blue-Green Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var blueGreenBright: String
   
   /**
-    * Blue-Green Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Blue-Green Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var blueGreenLightToDark: String
   
   /**
-    * Blue Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Blue Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var blueLightToDark: String
   
   /**
-    * Brown Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Brown Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var brownLightToDark: String
   
   /**
-    * Brown to Blue Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
-  var brownToBlueGreenDiverging: String
+  		 * Brown to Blue Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
+  var brownToBlueGreenDivergingBright: String
   
   /**
-    * Brown to Blue Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
-  var brownToBlueGreenDivergingRight: String
+  		 * Brown to Blue Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
+  var brownToBlueGreenDivergingDark: String
   
   /**
-    * Coefficient Bias.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Coefficient Bias.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var coefficientBias: String
   
   /**
-    * Cold to Hot Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Cold to Hot Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var coldToHotDiverging: String
   
   /**
-    * Condition Number.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Condition Number.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var conditionNumber: String
   
   /**
-    * Cyan-Light to Blue-Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Cyan-Light to Blue-Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var cyanLightToBlueDark: String
   
   /**
-    * Cyan to Purple.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Cyan to Purple.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var cyanToPurple: String
   
   /**
-    * Distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var distance: String
   
   /**
-    * Elevation #1.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Elevation #1.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var elevation1: String
   
   /**
-    * Elevation #2.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Elevation #2.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var elevation2: String
   
   /**
-    * Errors.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Errors.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var errors: String
   
   /**
-    * Gray Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Gray Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var grayLightToDark: String
   
   /**
-    * Green Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Green Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var greenBright: String
   
   /**
-    * Green Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Green Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var greenLightToDark: String
   
   /**
-    * Green to Blue.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Green to Blue.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var greenToBlue: String
   
   /**
-    * Orange Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Orange Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var orangeBright: String
   
   /**
-    * Orange Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Orange Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var orangeLightToDark: String
   
   /**
-    * Partial Spectrum.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Partial Spectrum.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var partialSpectrum: String
   
   /**
-    * Partial Spectrum 1 Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Partial Spectrum 1 Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var partialSpectrum1Diverging: String
   
   /**
-    * Partial Spectrum 2 Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Partial Spectrum 2 Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var partialSpectrum2Diverging: String
   
   /**
-    * Pink to YellowGreen Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Pink to YellowGreen Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var pinkToYellowGreenDivergingBright: String
   
   /**
-    * Pink to YellowGreen Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Pink to YellowGreen Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var pinkToYellowGreenDivergingDark: String
   
   /**
-    * Precipitation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Precipitation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var precipitation: String
   
   /**
-    * Prediction.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Prediction.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var prediction: String
   
   /**
-    * Purple-Blue Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple-Blue Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleBlueBright: String
   
   /**
-    * Purple-Blue Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple-Blue Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleBlueLightToDark: String
   
   /**
-    * Purple Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleBright: String
   
   /**
-    * Purple-Red Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple-Red Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleRedBright: String
   
   /**
-    * Purple-Red Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple-Red Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleRedLightToDark: String
   
   /**
-    * Purple to Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple to Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleToGreenDivergingBright: String
   
   /**
-    * Purple to Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Purple to Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var purpleToGreenDivergingDark: String
   
   /**
-    * Red Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redBright: String
   
   /**
-    * Red Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redLightToDark: String
   
   /**
-    * Red to Blue Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red to Blue Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redToBlueDivergingBright: String
   
   /**
-    * Red to Blue Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red to Blue Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redToBlueDivergingDark: String
   
   /**
-    * Red to Green.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red to Green.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redToGreen: String
   
   /**
-    * Red to Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red to Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redToGreenDivergingBright: String
   
   /**
-    * Red to Green Diverging.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Red to Green Diverging.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var redToGreenDivergingDark: String
   
   /**
-    * Slope.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Slope.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var slope: String
   
   /**
-    * Spectrum-Full Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Spectrum-Full Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var spectrumFullBright: String
   
   /**
-    * Spectrum-Full Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Spectrum-Full Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var spectrumFullDark: String
   
   /**
-    * Spectrum-Full Light.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Spectrum-Full Light.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var spectrumFullLight: String
   
   /**
-    * Surface.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Surface.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var surface: String
   
   /**
-    * Temperature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Temperature.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var temperature: String
   
   /**
-    * White to Black.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * White to Black.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var whiteToBlack: String
   
   /**
-    * Yellow-Green Bright.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Yellow-Green Bright.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var yellowGreenBright: String
   
   /**
-    * Yellow-Green Light to Dark.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Yellow-Green Light to Dark.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var yellowGreenLightToDark: String
   
   /**
-    * Yellow to Dark Red.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Yellow to Dark Red.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var yellowToDarkRed: String
   
   /**
-    * Yellow to Green to Dark Blue.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Yellow to Green to Dark Blue.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var yellowToGreenToDarkBlue: String
   
   /**
-    * Yellow to Red.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
-    */
+  		 * Yellow to Red.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#colorRampName)
+  		 */
   var yellowToRed: String
 }
 object rasterFunctionConstantsColorRampName {
@@ -415,8 +415,8 @@ object rasterFunctionConstantsColorRampName {
     blueGreenLightToDark: String,
     blueLightToDark: String,
     brownLightToDark: String,
-    brownToBlueGreenDiverging: String,
-    brownToBlueGreenDivergingRight: String,
+    brownToBlueGreenDivergingBright: String,
+    brownToBlueGreenDivergingDark: String,
     coefficientBias: String,
     coldToHotDiverging: String,
     conditionNumber: String,
@@ -466,7 +466,7 @@ object rasterFunctionConstantsColorRampName {
     yellowToGreenToDarkBlue: String,
     yellowToRed: String
   ): rasterFunctionConstantsColorRampName = {
-    val __obj = js.Dynamic.literal(aspect = aspect.asInstanceOf[js.Any], blackToWhite = blackToWhite.asInstanceOf[js.Any], blueBright = blueBright.asInstanceOf[js.Any], blueGreenBright = blueGreenBright.asInstanceOf[js.Any], blueGreenLightToDark = blueGreenLightToDark.asInstanceOf[js.Any], blueLightToDark = blueLightToDark.asInstanceOf[js.Any], brownLightToDark = brownLightToDark.asInstanceOf[js.Any], brownToBlueGreenDiverging = brownToBlueGreenDiverging.asInstanceOf[js.Any], brownToBlueGreenDivergingRight = brownToBlueGreenDivergingRight.asInstanceOf[js.Any], coefficientBias = coefficientBias.asInstanceOf[js.Any], coldToHotDiverging = coldToHotDiverging.asInstanceOf[js.Any], conditionNumber = conditionNumber.asInstanceOf[js.Any], cyanLightToBlueDark = cyanLightToBlueDark.asInstanceOf[js.Any], cyanToPurple = cyanToPurple.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], elevation1 = elevation1.asInstanceOf[js.Any], elevation2 = elevation2.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], grayLightToDark = grayLightToDark.asInstanceOf[js.Any], greenBright = greenBright.asInstanceOf[js.Any], greenLightToDark = greenLightToDark.asInstanceOf[js.Any], greenToBlue = greenToBlue.asInstanceOf[js.Any], orangeBright = orangeBright.asInstanceOf[js.Any], orangeLightToDark = orangeLightToDark.asInstanceOf[js.Any], partialSpectrum = partialSpectrum.asInstanceOf[js.Any], partialSpectrum1Diverging = partialSpectrum1Diverging.asInstanceOf[js.Any], partialSpectrum2Diverging = partialSpectrum2Diverging.asInstanceOf[js.Any], pinkToYellowGreenDivergingBright = pinkToYellowGreenDivergingBright.asInstanceOf[js.Any], pinkToYellowGreenDivergingDark = pinkToYellowGreenDivergingDark.asInstanceOf[js.Any], precipitation = precipitation.asInstanceOf[js.Any], prediction = prediction.asInstanceOf[js.Any], purpleBlueBright = purpleBlueBright.asInstanceOf[js.Any], purpleBlueLightToDark = purpleBlueLightToDark.asInstanceOf[js.Any], purpleBright = purpleBright.asInstanceOf[js.Any], purpleRedBright = purpleRedBright.asInstanceOf[js.Any], purpleRedLightToDark = purpleRedLightToDark.asInstanceOf[js.Any], purpleToGreenDivergingBright = purpleToGreenDivergingBright.asInstanceOf[js.Any], purpleToGreenDivergingDark = purpleToGreenDivergingDark.asInstanceOf[js.Any], redBright = redBright.asInstanceOf[js.Any], redLightToDark = redLightToDark.asInstanceOf[js.Any], redToBlueDivergingBright = redToBlueDivergingBright.asInstanceOf[js.Any], redToBlueDivergingDark = redToBlueDivergingDark.asInstanceOf[js.Any], redToGreen = redToGreen.asInstanceOf[js.Any], redToGreenDivergingBright = redToGreenDivergingBright.asInstanceOf[js.Any], redToGreenDivergingDark = redToGreenDivergingDark.asInstanceOf[js.Any], slope = slope.asInstanceOf[js.Any], spectrumFullBright = spectrumFullBright.asInstanceOf[js.Any], spectrumFullDark = spectrumFullDark.asInstanceOf[js.Any], spectrumFullLight = spectrumFullLight.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], temperature = temperature.asInstanceOf[js.Any], whiteToBlack = whiteToBlack.asInstanceOf[js.Any], yellowGreenBright = yellowGreenBright.asInstanceOf[js.Any], yellowGreenLightToDark = yellowGreenLightToDark.asInstanceOf[js.Any], yellowToDarkRed = yellowToDarkRed.asInstanceOf[js.Any], yellowToGreenToDarkBlue = yellowToGreenToDarkBlue.asInstanceOf[js.Any], yellowToRed = yellowToRed.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aspect = aspect.asInstanceOf[js.Any], blackToWhite = blackToWhite.asInstanceOf[js.Any], blueBright = blueBright.asInstanceOf[js.Any], blueGreenBright = blueGreenBright.asInstanceOf[js.Any], blueGreenLightToDark = blueGreenLightToDark.asInstanceOf[js.Any], blueLightToDark = blueLightToDark.asInstanceOf[js.Any], brownLightToDark = brownLightToDark.asInstanceOf[js.Any], brownToBlueGreenDivergingBright = brownToBlueGreenDivergingBright.asInstanceOf[js.Any], brownToBlueGreenDivergingDark = brownToBlueGreenDivergingDark.asInstanceOf[js.Any], coefficientBias = coefficientBias.asInstanceOf[js.Any], coldToHotDiverging = coldToHotDiverging.asInstanceOf[js.Any], conditionNumber = conditionNumber.asInstanceOf[js.Any], cyanLightToBlueDark = cyanLightToBlueDark.asInstanceOf[js.Any], cyanToPurple = cyanToPurple.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], elevation1 = elevation1.asInstanceOf[js.Any], elevation2 = elevation2.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], grayLightToDark = grayLightToDark.asInstanceOf[js.Any], greenBright = greenBright.asInstanceOf[js.Any], greenLightToDark = greenLightToDark.asInstanceOf[js.Any], greenToBlue = greenToBlue.asInstanceOf[js.Any], orangeBright = orangeBright.asInstanceOf[js.Any], orangeLightToDark = orangeLightToDark.asInstanceOf[js.Any], partialSpectrum = partialSpectrum.asInstanceOf[js.Any], partialSpectrum1Diverging = partialSpectrum1Diverging.asInstanceOf[js.Any], partialSpectrum2Diverging = partialSpectrum2Diverging.asInstanceOf[js.Any], pinkToYellowGreenDivergingBright = pinkToYellowGreenDivergingBright.asInstanceOf[js.Any], pinkToYellowGreenDivergingDark = pinkToYellowGreenDivergingDark.asInstanceOf[js.Any], precipitation = precipitation.asInstanceOf[js.Any], prediction = prediction.asInstanceOf[js.Any], purpleBlueBright = purpleBlueBright.asInstanceOf[js.Any], purpleBlueLightToDark = purpleBlueLightToDark.asInstanceOf[js.Any], purpleBright = purpleBright.asInstanceOf[js.Any], purpleRedBright = purpleRedBright.asInstanceOf[js.Any], purpleRedLightToDark = purpleRedLightToDark.asInstanceOf[js.Any], purpleToGreenDivergingBright = purpleToGreenDivergingBright.asInstanceOf[js.Any], purpleToGreenDivergingDark = purpleToGreenDivergingDark.asInstanceOf[js.Any], redBright = redBright.asInstanceOf[js.Any], redLightToDark = redLightToDark.asInstanceOf[js.Any], redToBlueDivergingBright = redToBlueDivergingBright.asInstanceOf[js.Any], redToBlueDivergingDark = redToBlueDivergingDark.asInstanceOf[js.Any], redToGreen = redToGreen.asInstanceOf[js.Any], redToGreenDivergingBright = redToGreenDivergingBright.asInstanceOf[js.Any], redToGreenDivergingDark = redToGreenDivergingDark.asInstanceOf[js.Any], slope = slope.asInstanceOf[js.Any], spectrumFullBright = spectrumFullBright.asInstanceOf[js.Any], spectrumFullDark = spectrumFullDark.asInstanceOf[js.Any], spectrumFullLight = spectrumFullLight.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], temperature = temperature.asInstanceOf[js.Any], whiteToBlack = whiteToBlack.asInstanceOf[js.Any], yellowGreenBright = yellowGreenBright.asInstanceOf[js.Any], yellowGreenLightToDark = yellowGreenLightToDark.asInstanceOf[js.Any], yellowToDarkRed = yellowToDarkRed.asInstanceOf[js.Any], yellowToGreenToDarkBlue = yellowToGreenToDarkBlue.asInstanceOf[js.Any], yellowToRed = yellowToRed.asInstanceOf[js.Any])
     __obj.asInstanceOf[rasterFunctionConstantsColorRampName]
   }
   
@@ -487,9 +487,9 @@ object rasterFunctionConstantsColorRampName {
     
     inline def setBrownLightToDark(value: String): Self = StObject.set(x, "brownLightToDark", value.asInstanceOf[js.Any])
     
-    inline def setBrownToBlueGreenDiverging(value: String): Self = StObject.set(x, "brownToBlueGreenDiverging", value.asInstanceOf[js.Any])
+    inline def setBrownToBlueGreenDivergingBright(value: String): Self = StObject.set(x, "brownToBlueGreenDivergingBright", value.asInstanceOf[js.Any])
     
-    inline def setBrownToBlueGreenDivergingRight(value: String): Self = StObject.set(x, "brownToBlueGreenDivergingRight", value.asInstanceOf[js.Any])
+    inline def setBrownToBlueGreenDivergingDark(value: String): Self = StObject.set(x, "brownToBlueGreenDivergingDark", value.asInstanceOf[js.Any])
     
     inline def setCoefficientBias(value: String): Self = StObject.set(x, "coefficientBias", value.asInstanceOf[js.Any])
     

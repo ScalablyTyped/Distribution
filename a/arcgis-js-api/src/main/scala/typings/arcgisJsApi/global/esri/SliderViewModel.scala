@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.SliderViewModel")
 @js.native
 /**
-  * Provides the logic for the [Slider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html)
-  */
+		 * Provides the logic for the [Slider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html) widget.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html)
+		 */
 open class SliderViewModel ()
   extends StObject
      with typings.arcgisJsApi.esri.SliderViewModel {

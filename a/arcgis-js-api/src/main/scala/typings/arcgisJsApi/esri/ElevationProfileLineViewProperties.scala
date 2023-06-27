@@ -9,10 +9,10 @@ trait ElevationProfileLineViewProperties
      with ElevationProfileLineProperties {
   
   /**
-    * Items which are to be excluded when querying elevation from view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html#exclude)
-    */
+  		 * Items which are to be excluded when querying elevation from view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html#exclude)
+  		 */
   var exclude: js.UndefOr[
     (js.Array[
       GraphicProperties | LayerProperties | BuildingSublayerProperties | (CollectionProperties[GraphicProperties | LayerProperties | BuildingSublayerProperties]) | (js.Array[GraphicProperties | LayerProperties | BuildingSublayerProperties]) | GroundProperties
@@ -20,10 +20,10 @@ trait ElevationProfileLineViewProperties
   ] = js.undefined
   
   /**
-    * Items which are to be hit when querying elevation from view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html#include)
-    */
+  		 * Items which are to be hit when querying elevation from view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLineView.html#include)
+  		 */
   var include: js.UndefOr[
     (js.Array[
       GraphicProperties | LayerProperties | BuildingSublayerProperties | (CollectionProperties[GraphicProperties | LayerProperties | BuildingSublayerProperties]) | (js.Array[GraphicProperties | LayerProperties | BuildingSublayerProperties]) | GroundProperties

@@ -1,7 +1,7 @@
 
 # Scala.js typings for acorn
 
-Typings are for version 8.8.2
+Typings are for version 8.9.0
 
 ## Library description:
 ECMAScript parser

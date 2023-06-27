@@ -10,8 +10,7 @@ sealed trait OutlineLevel extends StObject
   * Represents the outline levels.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.OutlineLevel")
 @js.native
@@ -20,8 +19,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 1.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel1
@@ -31,8 +29,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 2.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel2
@@ -42,8 +39,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 3.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel3
@@ -53,8 +49,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 4.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel4
@@ -64,8 +59,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 5.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel5
@@ -75,8 +69,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 6.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel6
@@ -86,8 +79,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 7.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel7
@@ -97,8 +89,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 8.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel8
@@ -108,8 +99,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level 9.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevel9
@@ -119,8 +109,7 @@ object OutlineLevel extends StObject {
   /**
     * Represents outline level body text, not an outline level.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait outlineLevelBodyText

@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the built-in style in a Word document.
+  *
+  * Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
+  *
   * @remarks
   * [Api set: WordApi 1.3]
   */

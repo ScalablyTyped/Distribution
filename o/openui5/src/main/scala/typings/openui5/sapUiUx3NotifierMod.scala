@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Message
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -151,13 +150,13 @@ object sapUiUx3NotifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit]
     ): this.type = js.native
     def attachMessageSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Notifier` itself
       */
@@ -183,7 +182,7 @@ object sapUiUx3NotifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit]
     ): this.type = js.native
     def attachMessageSelected(
       /**
@@ -194,7 +193,7 @@ object sapUiUx3NotifierMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Notifier` itself
       */
@@ -220,13 +219,13 @@ object sapUiUx3NotifierMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit]
     ): this.type = js.native
     def detachMessageSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ NotifierMessageSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -234,17 +233,19 @@ object sapUiUx3NotifierMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:messageSelected messageSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireMessageSelected(): this.type = js.native
-    def fireMessageSelected(/**
+    def fireMessageSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Message): this.type = js.native
+    mParameters: Notifier$MessageSelectedEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getIcon icon}.
@@ -367,6 +368,42 @@ object sapUiUx3NotifierMod {
     sTitle: String): this.type = js.native
   }
   
+  trait Notifier$MessageSelectedEventParameters extends StObject {
+    
+    /**
+      * The message that was selected
+      */
+    var message: js.UndefOr[typings.openui5.sapUiCoreMessageMod.default] = js.undefined
+    
+    /**
+      * The notifier that contains the selected message
+      */
+    var notifier: js.UndefOr[Notifier] = js.undefined
+  }
+  object Notifier$MessageSelectedEventParameters {
+    
+    inline def apply(): Notifier$MessageSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Notifier$MessageSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notifier$MessageSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setMessage(value: typings.openui5.sapUiCoreMessageMod.default): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setNotifier(value: Notifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
+      
+      inline def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
+    }
+  }
+  
+  type NotifierMessageSelectedEvent = typings.openui5.sapUiBaseEventMod.default[Notifier$MessageSelectedEventParameters]
+  
+  type NotifierMessageSelectedEventParameters = Notifier$MessageSelectedEventParameters
+  
   trait NotifierSettings
     extends StObject
        with ElementSettings {
@@ -379,7 +416,12 @@ object sapUiUx3NotifierMod {
     /**
       * Event is fired when a message of the notifiers was selected.
       */
-    var messageSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var messageSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Notifier$MessageSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Messages of this notifier.
@@ -407,7 +449,9 @@ object sapUiUx3NotifierMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setMessageSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "messageSelected", js.Any.fromFunction1(value))
+      inline def setMessageSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Notifier$MessageSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "messageSelected", js.Any.fromFunction1(value))
       
       inline def setMessageSelectedUndefined: Self = StObject.set(x, "messageSelected", js.undefined)
       

@@ -11,16 +11,12 @@ open class Grid () extends StObject {
   /**
     * The height of a single grid bucket.
     * @deprecated replaced by Matter.Detector
-    * @property type
-    * @type {number}
     */
   var bucketHeight: Double = js.native
   
   /**
     * The width of a single grid bucket.
     * @deprecated replaced by Matter.Detector
-    * @property type
-    * @type {number}
     */
   var bucketWidth: Double = js.native
 }

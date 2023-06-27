@@ -13,6 +13,7 @@ import typings.csstoolsCssParserAlgorithms.distInterfacesContextMod.Context
 import typings.csstoolsCssParserAlgorithms.distUtilComponentValueTypeMod.ComponentValueType
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.TokenFunction
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,7 +86,8 @@ object distConsumeConsumeComponentBlockFunctionMod {
     
     var value: js.Array[ComponentValue] = js.native
     
-    def walk(cb: js.Function2[/* entry */ Node, /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit], state: T): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object FunctionNode {
@@ -130,7 +132,8 @@ object distConsumeConsumeComponentBlockFunctionMod {
     
     var value: js.Array[ComponentValue] = js.native
     
-    def walk(cb: js.Function2[/* entry */ Node, /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ Node[T], /* index */ Double | String, Boolean | Unit], state: T): js.UndefOr[`false`] = js.native
   }
   /* static members */
   object SimpleBlockNode {

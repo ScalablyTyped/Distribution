@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Target
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PDFViewerDisplayType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -24,7 +23,7 @@ object sapMPdfviewerMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:cd80a8bca4ac450b86547d78f0653330 PDF Viewer}
+    * 	{@link https://ui5.sap.com/#/topic/cd80a8bca4ac450b86547d78f0653330 PDF Viewer}
     */
   open class default () extends PDFViewer {
     def this(/**
@@ -154,13 +153,13 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit]
     ): this.type = js.native
     def attachError(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
@@ -185,7 +184,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit]
     ): this.type = js.native
     def attachError(
       /**
@@ -196,7 +195,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
@@ -218,13 +217,13 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoaded(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
@@ -250,7 +249,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachLoaded(
       /**
@@ -261,7 +260,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
@@ -269,7 +268,7 @@ object sapMPdfviewerMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:sourceValidationFailed sourceValidationFailed}
+      * Attaches event handler `fnFunction` to the {@link #event:sourceValidationFailed sourceValidationFailed }
       * event of this `sap.m.PDFViewer`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -286,20 +285,20 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSourceValidationFailed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:sourceValidationFailed sourceValidationFailed}
+      * Attaches event handler `fnFunction` to the {@link #event:sourceValidationFailed sourceValidationFailed }
       * event of this `sap.m.PDFViewer`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -321,7 +320,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSourceValidationFailed(
       /**
@@ -332,7 +331,7 @@ object sapMPdfviewerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PDFViewer` itself
       */
@@ -364,13 +363,13 @@ object sapMPdfviewerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit]
     ): this.type = js.native
     def detachError(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PDFViewerErrorEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -388,13 +387,13 @@ object sapMPdfviewerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachLoaded(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -402,7 +401,7 @@ object sapMPdfviewerMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:sourceValidationFailed sourceValidationFailed}
+      * Detaches event handler `fnFunction` from the {@link #event:sourceValidationFailed sourceValidationFailed }
       * event of this `sap.m.PDFViewer`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -413,13 +412,13 @@ object sapMPdfviewerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSourceValidationFailed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -432,7 +431,7 @@ object sapMPdfviewerMod {
     def downloadPDF(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:error error} to attached listeners.
       *
@@ -442,10 +441,10 @@ object sapMPdfviewerMod {
     def fireError(/**
       * Parameters to pass along with the event
       */
-    mParameters: Target): this.type = js.native
+    mParameters: PDFViewer$ErrorEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loaded loaded} to attached listeners.
       *
@@ -458,7 +457,7 @@ object sapMPdfviewerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:sourceValidationFailed sourceValidationFailed} to attached listeners.
       *
@@ -475,11 +474,11 @@ object sapMPdfviewerMod {
       *
       * Defines how the PDF viewer should be displayed.
       * 	 - If set to `Link`, the PDF viewer appears as a toolbar with a download button that can be used to
-      * 			download the PDF file.
+      *     download the PDF file.
       *  When the {@link #open} method is called, the user can either open the PDF file in a new tab or download
       * it.
       * 	 - If set to `Embedded`, the PDF viewer appears embedded in the parent container and displays either
-      * 			the PDF document or the message defined by the `errorPlaceholderMessage` property.
+      *     the PDF document or the message defined by the `errorPlaceholderMessage` property.
       * 	 - If set to `Auto`, the appearance of the PDF viewer depends on the device being used:
       * 	On mobile devices (phones, tablets), the PDF viewer appears as a toolbar with a download button.
       * 	 - On desktop devices, the PDF viewer is embedded in its parent container.
@@ -567,8 +566,7 @@ object sapMPdfviewerMod {
       * Specifies the path to the PDF file to display. Can be set to a relative or an absolute path.
       *  Optionally, this property can also be set to a data URI path or a blob URL in all major web browsers
       * except Internet Explorer and Microsoft Edge, provided that this data URI or blob URL is allowed in advance.
-      * For more information about URL filtering, see {@link topic:91f3768f6f4d1014b6dd926db0e91070 URLList Validator
-      * Filtering}.
+      * For more information about URL filtering, see {@link https://ui5.sap.com/#/topic/91f3768f6f4d1014b6dd926db0e91070 URLList Validator Filtering}.
       *
       * @returns Value of property `source`
       */
@@ -665,11 +663,11 @@ object sapMPdfviewerMod {
       *
       * Defines how the PDF viewer should be displayed.
       * 	 - If set to `Link`, the PDF viewer appears as a toolbar with a download button that can be used to
-      * 			download the PDF file.
+      *     download the PDF file.
       *  When the {@link #open} method is called, the user can either open the PDF file in a new tab or download
       * it.
       * 	 - If set to `Embedded`, the PDF viewer appears embedded in the parent container and displays either
-      * 			the PDF document or the message defined by the `errorPlaceholderMessage` property.
+      *     the PDF document or the message defined by the `errorPlaceholderMessage` property.
       * 	 - If set to `Auto`, the appearance of the PDF viewer depends on the device being used:
       * 	On mobile devices (phones, tablets), the PDF viewer appears as a toolbar with a download button.
       * 	 - On desktop devices, the PDF viewer is embedded in its parent container.
@@ -795,8 +793,7 @@ object sapMPdfviewerMod {
       * Specifies the path to the PDF file to display. Can be set to a relative or an absolute path.
       *  Optionally, this property can also be set to a data URI path or a blob URL in all major web browsers
       * except Internet Explorer and Microsoft Edge, provided that this data URI or blob URL is allowed in advance.
-      * For more information about URL filtering, see {@link topic:91f3768f6f4d1014b6dd926db0e91070 URLList Validator
-      * Filtering}.
+      * For more information about URL filtering, see {@link https://ui5.sap.com/#/topic/91f3768f6f4d1014b6dd926db0e91070 URLList Validator Filtering}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -842,6 +839,41 @@ object sapMPdfviewerMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait PDFViewer$ErrorEventParameters extends StObject {
+    
+    /**
+      * The iframe element.
+      */
+    var target: js.UndefOr[Any] = js.undefined
+  }
+  object PDFViewer$ErrorEventParameters {
+    
+    inline def apply(): PDFViewer$ErrorEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PDFViewer$ErrorEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFViewer$ErrorEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    }
+  }
+  
+  trait PDFViewer$LoadedEventParameters extends StObject
+  
+  trait PDFViewer$SourceValidationFailedEventParameters extends StObject
+  
+  type PDFViewerErrorEvent = typings.openui5.sapUiBaseEventMod.default[PDFViewer$ErrorEventParameters]
+  
+  type PDFViewerErrorEventParameters = PDFViewer$ErrorEventParameters
+  
+  type PDFViewerLoadedEvent = typings.openui5.sapUiBaseEventMod.default[PDFViewer$LoadedEventParameters]
+  
+  type PDFViewerLoadedEventParameters = PDFViewer$LoadedEventParameters
+  
   trait PDFViewerSettings
     extends StObject
        with ControlSettings {
@@ -849,11 +881,11 @@ object sapMPdfviewerMod {
     /**
       * Defines how the PDF viewer should be displayed.
       * 	 - If set to `Link`, the PDF viewer appears as a toolbar with a download button that can be used to
-      * 			download the PDF file.
+      *     download the PDF file.
       *  When the {@link #open} method is called, the user can either open the PDF file in a new tab or download
       * it.
       * 	 - If set to `Embedded`, the PDF viewer appears embedded in the parent container and displays either
-      * 			the PDF document or the message defined by the `errorPlaceholderMessage` property.
+      *     the PDF document or the message defined by the `errorPlaceholderMessage` property.
       * 	 - If set to `Auto`, the appearance of the PDF viewer depends on the device being used:
       * 	On mobile devices (phones, tablets), the PDF viewer appears as a toolbar with a download button.
       * 	 - On desktop devices, the PDF viewer is embedded in its parent container.
@@ -865,7 +897,12 @@ object sapMPdfviewerMod {
     /**
       * This event is fired when there is an error loading the PDF file.
       */
-    var error: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var error: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PDFViewer$ErrorEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.50.0) - replaced by {@link sap.m.PDFViewer#getErrorPlaceholderMessage}.
@@ -897,7 +934,9 @@ object sapMPdfviewerMod {
       * This event is fired when a PDF file is loaded. If the PDF is loaded in smaller chunks, this event is
       * fired as often as defined by the browser's plugin. This may happen after a couple chunks are processed.
       */
-    var loaded: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var loaded: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * A multiple aggregation for buttons that can be added to the footer of the popup dialog. Works only if
@@ -926,8 +965,7 @@ object sapMPdfviewerMod {
       * Specifies the path to the PDF file to display. Can be set to a relative or an absolute path.
       *  Optionally, this property can also be set to a data URI path or a blob URL in all major web browsers
       * except Internet Explorer and Microsoft Edge, provided that this data URI or blob URL is allowed in advance.
-      * For more information about URL filtering, see {@link topic:91f3768f6f4d1014b6dd926db0e91070 URLList Validator
-      * Filtering}.
+      * For more information about URL filtering, see {@link https://ui5.sap.com/#/topic/91f3768f6f4d1014b6dd926db0e91070 URLList Validator Filtering}.
       */
     var source: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
@@ -937,7 +975,9 @@ object sapMPdfviewerMod {
       * happen when the source PDF file is stored in a different domain. If you want no error message to be displayed
       * when this event is fired, call the preventDefault() method inside the event handler.
       */
-    var sourceValidationFailed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var sourceValidationFailed: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * A custom title for the PDF viewer.
@@ -968,7 +1008,9 @@ object sapMPdfviewerMod {
       
       inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
       
-      inline def setError(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[PDFViewer$ErrorEventParameters] => Unit
+      ): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorMessage(value: String | PropertyBindingInfo): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
@@ -988,7 +1030,7 @@ object sapMPdfviewerMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setLoaded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+      inline def setLoaded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
       
       inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
@@ -1012,7 +1054,7 @@ object sapMPdfviewerMod {
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceValidationFailed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "sourceValidationFailed", js.Any.fromFunction1(value))
+      inline def setSourceValidationFailed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "sourceValidationFailed", js.Any.fromFunction1(value))
       
       inline def setSourceValidationFailedUndefined: Self = StObject.set(x, "sourceValidationFailed", js.undefined)
       
@@ -1025,4 +1067,8 @@ object sapMPdfviewerMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type PDFViewerSourceValidationFailedEvent = typings.openui5.sapUiBaseEventMod.default[PDFViewer$SourceValidationFailedEventParameters]
+  
+  type PDFViewerSourceValidationFailedEventParameters = PDFViewer$SourceValidationFailedEventParameters
 }

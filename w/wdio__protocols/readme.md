@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__protocols
 
-Typings are for version 8.10.2
+Typings are for version 8.11.0
 
 ## Library description:
 Utility package providing information about automation protocols

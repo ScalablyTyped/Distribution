@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectedOption
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -10,6 +9,7 @@ import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.ValueState
 import typings.openui5.sapUiWebcMainLibraryMod.ISelectOption
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -172,13 +172,13 @@ object sapUiWebcMainSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Select` itself
       */
@@ -203,7 +203,7 @@ object sapUiWebcMainSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -214,7 +214,7 @@ object sapUiWebcMainSelectMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Select` itself
       */
@@ -239,13 +239,13 @@ object sapUiWebcMainSelectMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SelectChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -253,7 +253,7 @@ object sapUiWebcMainSelectMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -263,7 +263,7 @@ object sapUiWebcMainSelectMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedOption): this.type = js.native
+    mParameters: Select$ChangeEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -275,8 +275,7 @@ object sapUiWebcMainSelectMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -606,6 +605,33 @@ object sapUiWebcMainSelectMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Select$ChangeEventParameters extends StObject {
+    
+    /**
+      * the selected option.
+      */
+    var selectedOption: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Select$ChangeEventParameters {
+    
+    inline def apply(): Select$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Select$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Select$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedOption(value: HTMLElement): Self = StObject.set(x, "selectedOption", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedOptionUndefined: Self = StObject.set(x, "selectedOption", js.undefined)
+    }
+  }
+  
+  type SelectChangeEvent = typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters]
+  
+  type SelectChangeEventParameters = Select$ChangeEventParameters
+  
   trait SelectSettings
     extends StObject
        with ControlSettings {
@@ -623,7 +649,12 @@ object sapUiWebcMainSelectMod {
     /**
       * Fired when the selected option changes.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether the control is enabled. A disabled control can't be interacted with, and it is not in
@@ -718,7 +749,9 @@ object sapUiWebcMainSelectMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Select$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

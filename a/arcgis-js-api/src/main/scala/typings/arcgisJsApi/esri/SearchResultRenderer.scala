@@ -10,18 +10,18 @@ trait SearchResultRenderer
      with Widget_ {
   
   /**
-    * Indicates whether to display the `Show more results` link within the search result's popup.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#showMoreResultsOpen)
-    */
+  		 * Indicates whether to display the `Show more results` link within the search result's popup.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#showMoreResultsOpen)
+  		 */
   var showMoreResultsOpen: Boolean = js.native
   
   /**
-    * The view model for this Search widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#viewModel)
-    */
+  		 * The view model for this Search widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#viewModel)
+  		 */
   var viewModel: SearchViewModel = js.native
 }

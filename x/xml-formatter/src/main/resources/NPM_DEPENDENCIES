@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xml-formatter" : "3.3.2"
+      "xml-formatter" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "xml-formatter" : "3.3.2"
+      "xml-formatter" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

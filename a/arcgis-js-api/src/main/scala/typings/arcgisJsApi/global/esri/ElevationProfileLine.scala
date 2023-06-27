@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ElevationProfileLine")
 @js.native
 /**
-  * Common interface for all the elevation profile lines.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html)
-  */
+		 * Common interface for all the elevation profile lines.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileLine.html)
+		 */
 open class ElevationProfileLine ()
   extends StObject
      with typings.arcgisJsApi.esri.ElevationProfileLine {

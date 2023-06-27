@@ -10,7 +10,7 @@ trait OrganizationProjectcardRepository extends StObject {
   /** @enum {string} */
   var action: edited
   
-  var changes: Note455
+  var changes: Note533
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -27,7 +27,7 @@ trait OrganizationProjectcardRepository extends StObject {
 }
 object OrganizationProjectcardRepository {
   
-  inline def apply(changes: Note455, project_card: Afterid, sender: Avatarurl): OrganizationProjectcardRepository = {
+  inline def apply(changes: Note533, project_card: Afterid, sender: Avatarurl): OrganizationProjectcardRepository = {
     val __obj = js.Dynamic.literal(action = "edited", changes = changes.asInstanceOf[js.Any], project_card = project_card.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationProjectcardRepository]
   }
@@ -37,7 +37,7 @@ object OrganizationProjectcardRepository {
     
     inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: Note455): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: Note533): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

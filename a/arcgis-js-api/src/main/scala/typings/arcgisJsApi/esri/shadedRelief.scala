@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This object contains helper methods for generating a [RasterShadedReliefRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html) to render elevation values in raster layers (i.e.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html)
-  */
+	 * This object contains helper methods for generating a [RasterShadedReliefRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html) to render elevation values in raster layers (i.e.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html)
+	 */
 trait shadedRelief extends StObject {
   
   /**
-    * Generates a [RasterShadedReliefRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html) to render elevation data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html#createRenderer)
-    */
+  		 * Generates a [RasterShadedReliefRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html) to render elevation data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-shadedRelief.html#createRenderer)
+  		 */
   def createRenderer(params: shadedReliefCreateRendererParams): js.Promise[RasterShadedReliefResult]
 }
 object shadedRelief {

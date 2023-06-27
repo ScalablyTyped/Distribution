@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GraphApplyEditsOptions extends StObject {
   
   /**
-    * If `true`, deleting an entity will automatically delete all relationships connected to that entity.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#options)
-    */
+  		 * If `true`, deleting an entity will automatically delete all relationships connected to that entity.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#options)
+  		 */
   var cascadeDelete: Boolean
   
   /**
-    * Custom [quantization parameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-InputQuantizationParameters.html) for input geometry that compresses geometry for transfer to the server.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#options)
-    */
+  		 * Custom [quantization parameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-InputQuantizationParameters.html) for input geometry that compresses geometry for transfer to the server.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphApplyEdits.html#options)
+  		 */
   var inputQuantizationParameters: InputQuantizationParameters
 }
 object GraphApplyEditsOptions {

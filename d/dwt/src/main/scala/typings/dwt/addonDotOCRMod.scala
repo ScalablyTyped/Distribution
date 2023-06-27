@@ -18,7 +18,7 @@ object addonDotOCRMod {
     
     /**
       * Return the content of the specified word.
-      * @index Specify the word.
+      * @param index Specify the word.
       */
     def GetWordContent(index: Double): Word
     
@@ -300,7 +300,7 @@ object addonDotOCRMod {
     
     /**
       * Return the content of the specified line.
-      * @index Specify the line.
+      * @param index Specify the line.
       */
     def GetLineContent(index: Double): Line
     
@@ -329,7 +329,7 @@ object addonDotOCRMod {
     
     /**
       * Return the content of the specified page.
-      * @index Specify the page.
+      * @param index Specify the page.
       */
     def GetPageContent(index: Double): Page
     
@@ -370,7 +370,7 @@ object addonDotOCRMod {
     
     /**
       * Return the coordinates for the rectangle that contains the specified word. The coordinates are in the sequence of "left,top,right,bottom" like "121,126,157,139".
-      * @index Specify the word.
+      * @param index Specify the word.
       */
     def GetWordRect(index: Double): String
   }

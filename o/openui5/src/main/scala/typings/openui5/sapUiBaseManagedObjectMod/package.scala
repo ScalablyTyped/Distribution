@@ -1,0 +1,26 @@
+package typings.openui5.sapUiBaseManagedObjectMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type ManagedObjectFormatErrorEvent = typings.openui5.sapUiBaseEventMod.default[ManagedObject$FormatErrorEventParameters]
+
+type ManagedObjectFormatErrorEventParameters = ManagedObject$FormatErrorEventParameters
+
+type ManagedObjectModelContextChangeEvent = typings.openui5.sapUiBaseEventMod.default[ManagedObject$ModelContextChangeEventParameters]
+
+type ManagedObjectModelContextChangeEventParameters = ManagedObject$ModelContextChangeEventParameters
+
+type ManagedObjectParseErrorEvent = typings.openui5.sapUiBaseEventMod.default[ManagedObject$ParseErrorEventParameters]
+
+type ManagedObjectParseErrorEventParameters = ManagedObject$ParseErrorEventParameters
+
+type ManagedObjectValidationErrorEvent = typings.openui5.sapUiBaseEventMod.default[ManagedObject$ValidationErrorEventParameters]
+
+type ManagedObjectValidationErrorEventParameters = ManagedObject$ValidationErrorEventParameters
+
+type ManagedObjectValidationSuccessEvent = typings.openui5.sapUiBaseEventMod.default[ManagedObject$ValidationSuccessEventParameters]
+
+type ManagedObjectValidationSuccessEventParameters = ManagedObject$ValidationSuccessEventParameters

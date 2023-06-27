@@ -10,7 +10,7 @@ trait EnterpriseInstallationMembership extends StObject {
   /** @enum {string} */
   var action: renamed
   
-  var changes: js.UndefOr[`452`] = js.undefined
+  var changes: js.UndefOr[`530`] = js.undefined
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -40,7 +40,7 @@ object EnterpriseInstallationMembership {
     
     inline def setAction(value: renamed): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `452`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `530`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     

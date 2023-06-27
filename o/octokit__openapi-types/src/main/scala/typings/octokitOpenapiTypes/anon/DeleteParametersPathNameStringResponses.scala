@@ -6,18 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathNameStringResponses extends StObject {
   
-  /** Delete a label */
+  /**
+    * Delete a label
+    * @description Deletes a label using the given label name.
+    */
   var delete: ParametersPathNameStringResponses
   
-  /** Get a label */
+  /**
+    * Get a label
+    * @description Gets a label using the given name.
+    */
   var get: ParametersPathNameString
   
-  /** Update a label */
-  var patch: Responses291
+  /**
+    * Update a label
+    * @description Updates a label using the given label name.
+    */
+  var patch: Responses344
 }
 object DeleteParametersPathNameStringResponses {
   
-  inline def apply(delete: ParametersPathNameStringResponses, get: ParametersPathNameString, patch: Responses291): DeleteParametersPathNameStringResponses = {
+  inline def apply(delete: ParametersPathNameStringResponses, get: ParametersPathNameString, patch: Responses344): DeleteParametersPathNameStringResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathNameStringResponses]
   }
@@ -29,6 +38,6 @@ object DeleteParametersPathNameStringResponses {
     
     inline def setGet(value: ParametersPathNameString): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses291): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses344): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

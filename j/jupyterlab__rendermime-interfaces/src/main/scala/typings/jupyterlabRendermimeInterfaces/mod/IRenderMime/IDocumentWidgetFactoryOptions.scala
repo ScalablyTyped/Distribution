@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +31,12 @@ trait IDocumentWidgetFactoryOptions extends StObject {
   val fileTypes: js.Array[String]
   
   /**
+    * The label of the widget to display in dialogs.
+    * If not given, name is used instead.
+    */
+  val label: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the document model type.
     */
   val modelName: js.UndefOr[String] = js.undefined
@@ -47,7 +54,12 @@ trait IDocumentWidgetFactoryOptions extends StObject {
   /**
     * A function returning a list of toolbar items to add to the toolbar.
     */
-  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ js.UndefOr[IRenderer], js.Array[IToolbarItem]]] = js.undefined
+  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ js.UndefOr[Widget], js.Array[IToolbarItem]]] = js.undefined
+  
+  /**
+    * The application language translator.
+    */
+  val translator: js.UndefOr[ITranslator] = js.undefined
 }
 object IDocumentWidgetFactoryOptions {
   
@@ -75,6 +87,10 @@ object IDocumentWidgetFactoryOptions {
     
     inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value*))
     
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
     inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
     inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
@@ -83,8 +99,12 @@ object IDocumentWidgetFactoryOptions {
     
     inline def setPrimaryFileType(value: String): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
     
-    inline def setToolbarFactory(value: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
+    inline def setToolbarFactory(value: /* widget */ js.UndefOr[Widget] => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
     
     inline def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
+    
+    inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+    
+    inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
   }
 }

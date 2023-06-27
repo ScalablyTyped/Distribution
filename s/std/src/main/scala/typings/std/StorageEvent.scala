@@ -4,13 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A StorageEvent is sent to a window when a storage area it has access to is changed within the context of another document. */
+/**
+  * A StorageEvent is sent to a window when a storage area it has access to is changed within the context of another document.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent)
+  */
 @js.native
 trait StorageEvent
   extends StObject
      with Event {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/initStorageEvent)
+    */
   /* standard dom */
   def initStorageEvent(
     `type`: java.lang.String,
@@ -23,23 +31,43 @@ trait StorageEvent
     storageArea: js.UndefOr[Storage | Null]
   ): Unit = js.native
   
-  /** Returns the key of the storage item being changed. */
+  /**
+    * Returns the key of the storage item being changed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/key)
+    */
   /* standard dom */
   val key: java.lang.String | Null = js.native
   
-  /** Returns the new value of the key of the storage item whose value is being changed. */
+  /**
+    * Returns the new value of the key of the storage item whose value is being changed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/newValue)
+    */
   /* standard dom */
   val newValue: java.lang.String | Null = js.native
   
-  /** Returns the old value of the key of the storage item whose value is being changed. */
+  /**
+    * Returns the old value of the key of the storage item whose value is being changed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/oldValue)
+    */
   /* standard dom */
   val oldValue: java.lang.String | Null = js.native
   
-  /** Returns the Storage object that was affected. */
+  /**
+    * Returns the Storage object that was affected.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/storageArea)
+    */
   /* standard dom */
   val storageArea: Storage | Null = js.native
   
-  /** Returns the URL of the document whose storage item changed. */
+  /**
+    * Returns the URL of the document whose storage item changed.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageEvent/url)
+    */
   /* standard dom */
   val url: java.lang.String = js.native
 }

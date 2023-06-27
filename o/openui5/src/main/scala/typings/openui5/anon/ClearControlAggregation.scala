@@ -24,7 +24,7 @@ trait ClearControlAggregation extends StObject {
   /**
     * The id of the control where you want to place the view created by this target. The view of the target
     * will be put into this container Control, using the controlAggregation property. You have to specify both
-    * properties or the target will not be able to place itself. An example for containers are {@link sap.ui.ux3.Shell}
+    * properties or the target will not be able to place itself. An example for containers are {@link sap.ui.ux3.Shell }
     * with the aggregation 'content' or a {@link sap.m.NavContainer} with the aggregation 'pages'.
     */
   var controlId: js.UndefOr[String] = js.undefined
@@ -73,11 +73,11 @@ trait ClearControlAggregation extends StObject {
     *
     * Currently the 'userData' target is displayed.
     * 	 -  If we navigate to 'startPage' the navContainer will show a backwards navigation, since the `level`
-    * 			is lower.
+    *     is lower.
     * 	 -  If we navigate to 'userData' the navContainer will show a forwards navigation, since the `level`
-    * 			is higher.
+    *     is higher.
     * 	 -  If we navigate to 'settings' the navContainer will show a forwards navigation, since the `level`
-    * 			is not defined and cannot be compared.
+    *     is not defined and cannot be compared.
     */
   var level: js.UndefOr[int] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-color-functional-notation
 
-Typings are for version 5.0.2
+Typings are for version 5.1.0
 
 ## Library description:
 Use space and slash separated color notation in CSS

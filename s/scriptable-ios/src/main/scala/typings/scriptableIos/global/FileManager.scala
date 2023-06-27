@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileManager")
 @js.native
+/**
+  * _Read and write files on disk._
+  * @see https://docs.scriptable.app/filemanager
+  */
 /* private */ open class FileManager ()
   extends StObject
      with typings.scriptableIos.FileManager

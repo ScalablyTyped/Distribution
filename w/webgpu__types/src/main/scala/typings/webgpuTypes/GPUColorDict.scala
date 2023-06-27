@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GPUColorDict extends StObject {
   
   /**
-    * The alpha channel value
+    * The alpha channel value.
     */
   var a: Double
   
   /**
-    * The blue channel value
+    * The blue channel value.
     */
   var b: Double
   
   /**
-    * The green channel value
+    * The green channel value.
     */
   var g: Double
   
   /**
-    * The red channel value
+    * The red channel value.
     */
   var r: Double
 }

@@ -8,36 +8,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.BarcodeScannerInput")
 @js.native
 /**
-  * The `BarcodeScannerInput` class defines the desired user interface for a barcode or QR code scanner.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-BarcodeScannerInput.html)
-  */
+		 * The `BarcodeScannerInput` class defines the desired user interface for a barcode or QR code scanner.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-BarcodeScannerInput.html)
+		 */
 open class BarcodeScannerInput ()
   extends StObject
      with typings.arcgisJsApi.esri.BarcodeScannerInput {
   def this(properties: BarcodeScannerInputProperties) = this()
   
   /**
-    * When set, defines the text input's maximum length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
-    */
+  		 * When set, defines the text input's maximum length.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#maxLength)
+  		 */
   /* CompleteClass */
   var maxLength: Double = js.native
   
   /**
-    * When set, defines the text input's minimum length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
-    */
+  		 * When set, defines the text input's minimum length.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-TextInput.html#minLength)
+  		 */
   /* CompleteClass */
   var minLength: Double = js.native
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

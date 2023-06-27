@@ -122,7 +122,7 @@ object sapMGrowingListMod {
     extends typings.openui5.sapMListMod.default {
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getScrollToLoad scrollToLoad}.
       *
@@ -138,7 +138,7 @@ object sapMGrowingListMod {
     def getScrollToLoad(): Boolean = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getThreshold threshold}.
       *
@@ -151,7 +151,7 @@ object sapMGrowingListMod {
     def getThreshold(): int = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Gets current value of property {@link #getTriggerText triggerText}.
       *
@@ -164,7 +164,7 @@ object sapMGrowingListMod {
     def getTriggerText(): String = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getScrollToLoad scrollToLoad}.
       *
@@ -186,7 +186,7 @@ object sapMGrowingListMod {
     bScrollToLoad: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getThreshold threshold}.
       *
@@ -205,7 +205,7 @@ object sapMGrowingListMod {
     iThreshold: int): this.type = js.native
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Sets a new value for property {@link #getTriggerText triggerText}.
       *
@@ -229,7 +229,7 @@ object sapMGrowingListMod {
        with ListSettings {
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * If you set this property to true then user needs to scroll end to trigger loading a new page. Default
       * value is false which means user needs to scroll end and then click button to load new page. NOTE: This
@@ -241,14 +241,14 @@ object sapMGrowingListMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Number of items requested from the server. To activate this you should set growing property to "true"
       */
     var threshold: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16
+      * @since 1.16
       *
       * Text which is displayed on the trigger at the end of the list. The default is a translated text ("Load
       * More Data") coming from the messagebundle properties. This property can be used only if growing property

@@ -16,6 +16,7 @@ open class PerformanceObserver protected ()
 }
 object PerformanceObserver {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceObserver/supportedEntryTypes) */
   /* standard dom */
   @JSGlobal("PerformanceObserver.supportedEntryTypes")
   @js.native

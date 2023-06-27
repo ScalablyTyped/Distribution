@@ -30,11 +30,11 @@ object sapBaseUtilPropertiesMod {
       * was set; in case of asynchronous loading, always a Promise is returned, which resolves with the property
       * collection or with `null` if the file could not be loaded and `returnNullIfMissing` was set to true
       */
-    inline def create(): Properties | Null | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Properties | Null | js.Promise[Any]]
+    inline def create(): Properties | Null | (js.Promise[Properties | Null]) = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Properties | Null | (js.Promise[Properties | Null])]
     inline def create(/**
       * Parameters used to initialize the property list
       */
-    mParams: ReturnNullIfMissing): Properties | Null | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mParams.asInstanceOf[js.Any]).asInstanceOf[Properties | Null | js.Promise[Any]]
+    mParams: ReturnNullIfMissing): Properties | Null | (js.Promise[Properties | Null]) = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mParams.asInstanceOf[js.Any]).asInstanceOf[Properties | Null | (js.Promise[Properties | Null])]
   }
   
   @js.native

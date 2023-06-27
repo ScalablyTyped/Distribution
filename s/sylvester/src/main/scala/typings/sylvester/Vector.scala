@@ -48,7 +48,7 @@ trait Vector extends StObject {
   /**
     * Returns the scalar product of the vector with the argument. Both vectors must have equal dimensionality.
     *
-    * @param: {Vector|Array<number>} vector The other vector.
+    * @param {Vector|Array<number>} vector The other vector.
     */
   def dot(vector: Vector): Double = js.native
   

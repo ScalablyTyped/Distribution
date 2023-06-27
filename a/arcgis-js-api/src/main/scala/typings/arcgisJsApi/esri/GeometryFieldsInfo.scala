@@ -11,23 +11,23 @@ trait GeometryFieldsInfo
      with JSONSupport {
   
   /**
-    * The name of the field that stores the feature's area, e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#shapeAreaField)
-    */
+  		 * The name of the field that stores the feature's area, e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#shapeAreaField)
+  		 */
   val shapeAreaField: String = js.native
   
   /**
-    * The name of the field that stores the feature's length, e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#shapeLengthField)
-    */
+  		 * The name of the field that stores the feature's length, e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#shapeLengthField)
+  		 */
   val shapeLengthField: String = js.native
   
   /**
-    * The units of measure for the area and length field values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#units)
-    */
+  		 * The units of measure for the area and length field values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-GeometryFieldsInfo.html#units)
+  		 */
   val units: String = js.native
 }

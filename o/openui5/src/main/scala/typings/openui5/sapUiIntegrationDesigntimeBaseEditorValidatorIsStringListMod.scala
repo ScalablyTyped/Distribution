@@ -12,8 +12,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsStringListMod extends Shor
   val default: IsStringList = js.native
   
   /**
-    * @SINCE 1.81
-    * @EXPERIMENTAL - 1.81
+    * @since 1.81
+    * @experimental - 1.81
     *
     * Validates if none of the provided values is an invalid binding.
     */

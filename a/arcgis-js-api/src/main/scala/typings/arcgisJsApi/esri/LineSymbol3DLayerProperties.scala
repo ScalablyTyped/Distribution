@@ -14,51 +14,51 @@ trait LineSymbol3DLayerProperties
      with Symbol3DLayerProperties {
   
   /**
-    * The style used to draw the endpoint of a line.
-    *
-    * @default butt
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#cap)
-    */
+  		 * The style used to draw the endpoint of a line.
+  		 *
+  		 * @default butt
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#cap)
+  		 */
   var cap: js.UndefOr[butt_ | round_ | square_] = js.undefined
   
   /**
-    * The style used to draw the intersection of two line segments within a line geometry.
-    *
-    * @default miter
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#join)
-    */
+  		 * The style used to draw the intersection of two line segments within a line geometry.
+  		 *
+  		 * @default miter
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#join)
+  		 */
   var join: js.UndefOr[miter_ | round_ | bevel_] = js.undefined
   
   /**
-    * Optional markers to be placed at the start and/or end of each line geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#marker)
-    */
+  		 * Optional markers to be placed at the start and/or end of each line geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#marker)
+  		 */
   var marker: js.UndefOr[LineStyleMarker3DProperties] = js.undefined
   
   /**
-    * The material used to shade the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
-    */
+  		 * The material used to shade the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#material)
+  		 */
   var material: js.UndefOr[LineSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
-    * The pattern used to render the line stroke.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#pattern)
-    */
+  		 * The pattern used to render the line stroke.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#pattern)
+  		 */
   var pattern: js.UndefOr[LineStylePattern3DProperties] = js.undefined
   
   /**
-    * The width of the line in points.
-    *
-    * @default "1px"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#size)
-    */
+  		 * The width of the line in points.
+  		 *
+  		 * @default "1px"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
 }
 object LineSymbol3DLayerProperties {

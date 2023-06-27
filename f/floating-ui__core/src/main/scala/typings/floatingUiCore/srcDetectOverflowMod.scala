@@ -1,7 +1,7 @@
 package typings.floatingUiCore
 
-import typings.floatingUiCore.anon.PartialOptions
 import typings.floatingUiCore.srcTypesMod.Boundary
+import typings.floatingUiCore.srcTypesMod.Derivable
 import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.MiddlewareState
 import typings.floatingUiCore.srcTypesMod.Padding
@@ -18,51 +18,26 @@ object srcDetectOverflowMod {
   val ^ : js.Any = js.native
   
   inline def detectOverflow(state: MiddlewareState): js.Promise[SideObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SideObject]]
-  inline def detectOverflow(state: MiddlewareState, options: PartialOptions): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState, options: Options): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState, options: Derivable[Options]): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
   
+  /* Inlined std.Partial<{  boundary :@floating-ui/core.@floating-ui/core/src/types.Boundary,   rootBoundary :@floating-ui/core.@floating-ui/core/src/types.RootBoundary,   elementContext :@floating-ui/core.@floating-ui/core/src/types.ElementContext,   altBoundary :boolean,   padding :@floating-ui/core.@floating-ui/core/src/types.Padding}> */
   trait Options extends StObject {
     
-    /**
-      * Whether to check for overflow using the alternate element's boundary
-      * (`clippingAncestors` boundary only).
-      * @default false
-      */
-    var altBoundary: Boolean
+    var altBoundary: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * The clipping element(s) or area in which overflow will be checked.
-      * @default 'clippingAncestors'
-      */
-    var boundary: Boundary
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
-    /**
-      * The element in which overflow is being checked relative to a boundary.
-      * @default 'floating'
-      */
-    var elementContext: ElementContext
+    var elementContext: js.UndefOr[ElementContext] = js.undefined
     
-    /**
-      * Virtual padding for the resolved overflow detection offsets.
-      * @default 0
-      */
-    var padding: Padding
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    /**
-      * The root clipping area in which overflow will be checked.
-      * @default 'viewport'
-      */
-    var rootBoundary: RootBoundary
+    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
   }
   object Options {
     
-    inline def apply(
-      altBoundary: Boolean,
-      boundary: Boundary,
-      elementContext: ElementContext,
-      padding: Padding,
-      rootBoundary: RootBoundary
-    ): Options = {
-      val __obj = js.Dynamic.literal(altBoundary = altBoundary.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], elementContext = elementContext.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], rootBoundary = rootBoundary.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -71,13 +46,23 @@ object srcDetectOverflowMod {
       
       inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
       
+      inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
+      
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      
+      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
       inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
       
+      inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
+      
       inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
       inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
     }
   }
 }

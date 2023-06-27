@@ -36,6 +36,8 @@ object mod {
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Log): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Env]
   inline def processEnv(loadedEnvFiles: LoadedEnvFiles, dir: Unit, log: Log, forceReload: Boolean): Env = (^.asInstanceOf[js.Dynamic].applyDynamic("processEnv")(loadedEnvFiles.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[Env]
   
+  inline def updateInitialEnv(newEnv: Env): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateInitialEnv")(newEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   type Env = StringDictionary[js.UndefOr[String]]
   
   type LoadedEnvFiles = js.Array[Contents]

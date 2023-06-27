@@ -11,24 +11,24 @@ trait SearchedCaseNode
      with SQLNode {
   
   /**
-    * When clauses.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
-    */
+  		 * When clauses.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
+  		 */
   var clauses: js.Array[WhenNode]
   
   /**
-    * Else SQL node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
-    */
+  		 * Else SQL node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
+  		 */
   var `else`: SQLNode
   
   /**
-    * Case expression format.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
-    */
+  		 * Case expression format.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#SearchedCaseNode)
+  		 */
   var format: searched
   
   var `type`: `case-expression`

@@ -10,17 +10,17 @@ trait CursorUpdateEventInfo
      with CreateToolEventInfo {
   
   /**
-    * An array of numbers representing the coordinates of the cursor location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#CursorUpdateEventInfo)
-    */
+  		 * An array of numbers representing the coordinates of the cursor location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#CursorUpdateEventInfo)
+  		 */
   var coordinates: js.Array[Double]
   
   /**
-    * Type is always `cursor-update`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#CursorUpdateEventInfo)
-    */
+  		 * Type is always `cursor-update`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#CursorUpdateEventInfo)
+  		 */
   var `type`: `cursor-update`
 }
 object CursorUpdateEventInfo {

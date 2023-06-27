@@ -8,6 +8,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
+import typings.openui5.sapUiCoreMvcViewMod.Preprocessor.ViewInfo
 import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -67,7 +68,7 @@ object sapUiCoreMvcViewMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Creates a view of the given type, name and with the given ID.
       *
@@ -148,8 +149,8 @@ object sapUiCoreMvcViewMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
-      * @SINCE 1.30
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.30
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Register a preprocessor for all views of a specific type.
       *
@@ -158,7 +159,7 @@ object sapUiCoreMvcViewMod {
       * to or activated at the view instance already, that one is used. When several preprocessors are registered
       * for one hook, it has to be made sure that they do not conflict when being processed serially.
       *
-      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor}
+      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor }
       * or a function with a signature according to {@link sap.ui.core.mvc.View.Preprocessor.process}.
       *
       * **Note**: Preprocessors only work in async views and will be ignored when the view is instantiated in
@@ -279,7 +280,7 @@ object sapUiCoreMvcViewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * type of the calling view, e.g. `XML`
       */
@@ -299,7 +300,7 @@ object sapUiCoreMvcViewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * type of the calling view, e.g. `XML`
       */
@@ -325,7 +326,7 @@ object sapUiCoreMvcViewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * type of the calling view, e.g. `XML`
       */
@@ -355,7 +356,7 @@ object sapUiCoreMvcViewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * type of the calling view, e.g. `XML`
       */
@@ -385,7 +386,7 @@ object sapUiCoreMvcViewMod {
     var __implements__sap_ui_core_mvc_View_Preprocessor: Boolean = js.native
     
     /**
-      * @SINCE 1.40
+      * @since 1.40
       *
       * Cache key provider method that can be implemented by a preprocessor.
       *
@@ -400,13 +401,12 @@ object sapUiCoreMvcViewMod {
     def getCacheKey(/**
       * identification information about the calling instance
       */
-    oViewInfo: ComponentId): String | js.Promise[Any] = js.native
+    oViewInfo: ComponentId): String | js.Promise[String] = js.native
     
     /**
       * Processing method that must be implemented by a Preprocessor.
       *
-      * @returns the processed resource or a promise which resolves with the processed resource or an error according
-      * to the declared preprocessor sync capability
+      * @returns the processed resource or a promise which resolves with the processed resource
       */
     def process(
       /**
@@ -416,8 +416,8 @@ object sapUiCoreMvcViewMod {
       /**
       * identification information about the calling instance
       */
-    oViewInfo: Caller
-    ): js.Object | js.Promise[Any] = js.native
+    oViewInfo: ViewInfo
+    ): js.Object | js.Promise[js.Object] = js.native
     def process(
       /**
       * the source to be processed
@@ -426,12 +426,59 @@ object sapUiCoreMvcViewMod {
       /**
       * identification information about the calling instance
       */
-    oViewInfo: Caller,
+    oViewInfo: ViewInfo,
       /**
       * settings object containing the settings provided with the preprocessor
       */
     mSettings: js.Object
-    ): js.Object | js.Promise[Any] = js.native
+    ): js.Object | js.Promise[js.Object] = js.native
+  }
+  object Preprocessor {
+    
+    /**
+      * Information about the view that is processed by the preprocessor
+      */
+    trait ViewInfo extends StObject {
+      
+      /**
+        * identifies the caller of this preprocessor; basis for log or exception messages
+        */
+      var caller: String
+      
+      /**
+        * the ID of the owning Component of the view
+        */
+      var componentId: String
+      
+      /**
+        * the ID of the view
+        */
+      var id: String
+      
+      /**
+        * the name of the view
+        */
+      var name: String
+    }
+    object ViewInfo {
+      
+      inline def apply(caller: String, componentId: String, id: String, name: String): ViewInfo = {
+        val __obj = js.Dynamic.literal(caller = caller.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ViewInfo]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewInfo] (val x: Self) extends AnyVal {
+        
+        inline def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+        
+        inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+        
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      }
+    }
   }
   
   @js.native
@@ -464,13 +511,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterInit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -495,7 +542,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterInit(
       /**
@@ -506,7 +553,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -528,13 +575,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -560,7 +607,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterRendering(
       /**
@@ -571,7 +618,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -592,13 +639,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeExit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -623,7 +670,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeExit(
       /**
@@ -634,7 +681,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -656,13 +703,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeRendering(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -688,7 +735,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeRendering(
       /**
@@ -699,7 +746,7 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.mvc.View` itself
       */
@@ -710,8 +757,7 @@ object sapUiCoreMvcViewMod {
       * Returns an element by its ID in the context of this view.
       *
       * This method expects a view-local ID of an element (the same as e.g. defined in the *.view.xml of an XMLView).
-      * For a search with a global ID (the value returned by `oElement.getId()`) you should rather use {@link
-      * sap.ui.core.Core#byId sap.ui.getCore().byId()}.
+      * For a search with a global ID (the value returned by `oElement.getId()`) you should rather use {@link sap.ui.core.Core#byId sap.ui.getCore().byId()}.
       *
       * @returns Element by its ID or `undefined`
       */
@@ -763,13 +809,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterInit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -788,13 +834,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterRendering(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -812,13 +858,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeExit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -837,13 +883,13 @@ object sapUiCoreMvcViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeRendering(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -851,7 +897,7 @@ object sapUiCoreMvcViewMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterInit afterInit} to attached listeners.
       *
@@ -864,7 +910,7 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterRendering afterRendering} to attached listeners.
       *
@@ -877,7 +923,7 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeExit beforeExit} to attached listeners.
       *
@@ -890,7 +936,7 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeRendering beforeRendering} to attached listeners.
       *
@@ -903,8 +949,8 @@ object sapUiCoreMvcViewMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.88
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.88
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * A method to be implemented by typed views, returning the flag whether to prefix the IDs of controls automatically
       * or not, if the controls are created inside the {@link sap.ui.core.mvc.View#createContent} function. By
@@ -966,7 +1012,7 @@ object sapUiCoreMvcViewMod {
     def getHeight(): CSSSize = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns the local ID of an element by removing the view ID prefix or `null` if the ID does not contain
       * a prefix.
@@ -979,7 +1025,7 @@ object sapUiCoreMvcViewMod {
     sId: String): String | Null = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the info object which is also passed to the preprocessors
       * See:
@@ -990,7 +1036,7 @@ object sapUiCoreMvcViewMod {
     def getPreprocessorInfo(/**
       * Describes the view execution, true if sync
       */
-    bSync: Boolean): js.Object = js.native
+    bSync: Boolean): Caller = js.native
     
     /**
       * Returns user specific data object.
@@ -1020,7 +1066,7 @@ object sapUiCoreMvcViewMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Checks if any preprocessors are active for the specified type
       *
@@ -1063,7 +1109,7 @@ object sapUiCoreMvcViewMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       * @deprecated (since 1.66) - Use {@link sap.ui.core.mvc.View.create View.create} instead
       *
       * Returns a Promise representing the state of the view initialization.
@@ -1073,7 +1119,7 @@ object sapUiCoreMvcViewMod {
       *
       * @returns resolves with the complete view instance, rejects with any thrown error
       */
-    def loaded(): js.Promise[Any] = js.native
+    def loaded(): js.Promise[View] = js.native
     
     /**
       * Removes all the controls from the aggregation {@link #getContent content}.
@@ -1129,7 +1175,7 @@ object sapUiCoreMvcViewMod {
     bSync: Boolean
     ): js.Promise[Any] | js.Object | String | Element = js.native
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Executes preprocessors for a type of source
       *
@@ -1252,6 +1298,30 @@ object sapUiCoreMvcViewMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait View$AfterInitEventParameters extends StObject
+  
+  trait View$AfterRenderingEventParameters extends StObject
+  
+  trait View$BeforeExitEventParameters extends StObject
+  
+  trait View$BeforeRenderingEventParameters extends StObject
+  
+  type ViewAfterInitEvent = typings.openui5.sapUiBaseEventMod.default[View$AfterInitEventParameters]
+  
+  type ViewAfterInitEventParameters = View$AfterInitEventParameters
+  
+  type ViewAfterRenderingEvent = typings.openui5.sapUiBaseEventMod.default[View$AfterRenderingEventParameters]
+  
+  type ViewAfterRenderingEventParameters = View$AfterRenderingEventParameters
+  
+  type ViewBeforeExitEvent = typings.openui5.sapUiBaseEventMod.default[View$BeforeExitEventParameters]
+  
+  type ViewBeforeExitEventParameters = View$BeforeExitEventParameters
+  
+  type ViewBeforeRenderingEvent = typings.openui5.sapUiBaseEventMod.default[View$BeforeRenderingEventParameters]
+  
+  type ViewBeforeRenderingEventParameters = View$BeforeRenderingEventParameters
+  
   trait ViewSettings
     extends StObject
        with ControlSettings {
@@ -1259,22 +1329,30 @@ object sapUiCoreMvcViewMod {
     /**
       * Fired when the View has parsed the UI description and instantiated the contained controls (/control tree).
       */
-    var afterInit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterInit: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when the View has been (re-)rendered and its HTML is present in the DOM.
       */
-    var afterRendering: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterRendering: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired when the view has received the request to destroy itself, but before it has destroyed anything.
       */
-    var beforeExit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeExit: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Fired before this View is re-rendered. Use to unbind event handlers from HTML elements etc.
       */
-    var beforeRendering: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeRendering: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Child Controls of the view
@@ -1322,19 +1400,19 @@ object sapUiCoreMvcViewMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterInit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
+      inline def setAfterInit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
       
       inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
       
-      inline def setAfterRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
+      inline def setAfterRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterRendering", js.Any.fromFunction1(value))
       
       inline def setAfterRenderingUndefined: Self = StObject.set(x, "afterRendering", js.undefined)
       
-      inline def setBeforeExit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeExit", js.Any.fromFunction1(value))
+      inline def setBeforeExit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeExit", js.Any.fromFunction1(value))
       
       inline def setBeforeExitUndefined: Self = StObject.set(x, "beforeExit", js.undefined)
       
-      inline def setBeforeRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeRendering", js.Any.fromFunction1(value))
+      inline def setBeforeRendering(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeRendering", js.Any.fromFunction1(value))
       
       inline def setBeforeRenderingUndefined: Self = StObject.set(x, "beforeRendering", js.undefined)
       

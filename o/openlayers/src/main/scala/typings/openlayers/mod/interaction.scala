@@ -235,13 +235,11 @@ object interaction {
       
       /**
         * The coordinate of the drag event.
-        * @const
         * @api stable
         */
       var coordinate: Coordinate_ = js.native
       
       /**
-        * @const
         * @api
         */
       var mapBrowserEvent: MapBrowserEvent = js.native
@@ -1163,7 +1161,6 @@ object interaction {
       
       /**
         * The coordinate of the drag event.
-        * @const
         * @api
         */
       var coordinate: Coordinate_ = js.native

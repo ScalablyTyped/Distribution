@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.any_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.lowSecurityBiometric
   - typings.microsoftGraph.microsoftGraphStrings.numeric
   - typings.microsoftGraph.microsoftGraphStrings.numericComplex
-  - typings.microsoftGraph.microsoftGraphStrings.any
+  - typings.microsoftGraph.microsoftGraphStrings.any_
 */
 trait AndroidRequiredPasswordType extends StObject
 object AndroidRequiredPasswordType {
@@ -23,7 +24,7 @@ object AndroidRequiredPasswordType {
   
   inline def alphanumericWithSymbols: typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericWithSymbols]
   
-  inline def any: typings.microsoftGraph.microsoftGraphStrings.any = "any".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.any]
+  inline def any: any_ = "any".asInstanceOf[any_]
   
   inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   

@@ -11,24 +11,24 @@ sealed trait MaterialMode extends StObject
 object MaterialMode extends StObject {
   
   /**
-    * Multiply materials and textures with color property.
-    */
+  			 * Multiply materials and textures with color property.
+  			 */
   @js.native
   sealed trait Multiply
     extends StObject
        with MaterialMode
   
   /**
-    * Replace materials and textures with color property.
-    */
+  			 * Replace materials and textures with color property.
+  			 */
   @js.native
   sealed trait Replace
     extends StObject
        with MaterialMode
   
   /**
-    * Tint materials and textures with color property.
-    */
+  			 * Tint materials and textures with color property.
+  			 */
   @js.native
   sealed trait Tint
     extends StObject

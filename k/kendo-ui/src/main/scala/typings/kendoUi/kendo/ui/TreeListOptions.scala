@@ -105,7 +105,7 @@ trait TreeListOptions extends StObject {
   
   var sortable: js.UndefOr[Boolean | TreeListSortable] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | Any] = js.undefined
+  var toolbar: js.UndefOr[(js.Array[ToolBarItem | TreeListToolbarItem]) | Any] = js.undefined
 }
 object TreeListOptions {
   
@@ -315,10 +315,10 @@ object TreeListOptions {
     
     inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    inline def setToolbar(value: js.Array[TreeListToolbarItem] | Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: (js.Array[ToolBarItem | TreeListToolbarItem]) | Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: TreeListToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
+    inline def setToolbarVarargs(value: (ToolBarItem | TreeListToolbarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
   }
 }

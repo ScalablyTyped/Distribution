@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HighlightOptions extends StObject {
   
   /**
-    * The color of the highlight fill.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The color of the highlight fill.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The opacity of the fill (area within the halo).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The opacity of the fill (area within the halo).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The color of the halo surrounding the highlight.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The color of the halo surrounding the highlight.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var haloColor: js.UndefOr[Color_] = js.undefined
   
   /**
-    * The opacity of the highlight halo.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The opacity of the highlight halo.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var haloOpacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The color of the highlighted feature's shadow in [3D SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The color of the highlighted feature's shadow in [3D SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var shadowColor: js.UndefOr[Color_] = js.undefined
   
   /**
-    * Defines the intensity of the shadow area obtained by overlapping the shadow of the highlighted feature and the shadow of other objects in [3D SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * Defines the intensity of the shadow area obtained by overlapping the shadow of the highlighted feature and the shadow of other objects in [3D SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var shadowDifference: js.UndefOr[Double] = js.undefined
   
   /**
-    * The opacity of the highlighted feature's shadow.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
-    */
+  		 * The opacity of the highlighted feature's shadow.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#HighlightOptions)
+  		 */
   var shadowOpacity: js.UndefOr[Double] = js.undefined
 }
 object HighlightOptions {

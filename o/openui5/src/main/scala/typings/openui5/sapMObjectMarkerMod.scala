@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`22`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.ObjectMarkerType
 import typings.openui5.sapMLibraryMod.ObjectMarkerVisibility
@@ -23,8 +22,7 @@ object sapMObjectMarkerMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object
-    * Marker}
+    * 	{@link fiori:https://experience.sap.com/fiori-design-web/object-display-elements/#-object-status Object Marker}
     */
   open class default () extends ObjectMarker {
     def this(/**
@@ -161,17 +159,19 @@ object sapMObjectMarkerMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def firePress(): this.type = js.native
-    def firePress(/**
+    def firePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `22`): this.type = js.native
+    mParameters: ObjectMarker$PressEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAdditionalInfo additionalInfo}.
@@ -187,14 +187,12 @@ object sapMObjectMarkerMod {
     def getAdditionalInfo(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -208,7 +206,7 @@ object sapMObjectMarkerMod {
       * 	 - For `Flagged` and `Favorite` the icon is visible and the text is not displayed
       * 	 - For `Draft` the text is visible and the icon is not displayed
       * 	 - For `Locked`, `LockedBy`, `Unsaved` and `UnsavedBy` - on screens larger than 600px both icon and
-      * 			text are visible, otherwise only the icon
+      *     text are visible, otherwise only the icon
       *
       *
       *
@@ -317,7 +315,7 @@ object sapMObjectMarkerMod {
       * 	 - For `Flagged` and `Favorite` the icon is visible and the text is not displayed
       * 	 - For `Draft` the text is visible and the icon is not displayed
       * 	 - For `Locked`, `LockedBy`, `Unsaved` and `UnsavedBy` - on screens larger than 600px both icon and
-      * 			text are visible, otherwise only the icon
+      *     text are visible, otherwise only the icon
       *
       *
       *
@@ -354,6 +352,37 @@ object sapMObjectMarkerMod {
     sVisibility: ObjectMarkerVisibility): this.type = js.native
   }
   
+  trait ObjectMarker$PressEventParameters extends StObject {
+    
+    /**
+      * Type of the `ObjectMarker`.
+      */
+    var `type`: js.UndefOr[
+        ObjectMarkerType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectMarkerType * / any */ String)
+      ] = js.undefined
+  }
+  object ObjectMarker$PressEventParameters {
+    
+    inline def apply(): ObjectMarker$PressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectMarker$PressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectMarker$PressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setType(
+        value: ObjectMarkerType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectMarkerType * / any */ String)
+      ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  type ObjectMarkerPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectMarker$PressEventParameters]
+  
+  type ObjectMarkerPressEventParameters = ObjectMarker$PressEventParameters
+  
   trait ObjectMarkerSettings
     extends StObject
        with ControlSettings {
@@ -378,7 +407,12 @@ object sapMObjectMarkerMod {
     /**
       * Event is fired when the `ObjectMarker` is interactive and the user taps/clicks on it.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectMarker$PressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Sets one of the predefined types.
@@ -388,7 +422,7 @@ object sapMObjectMarkerMod {
       * 	 - For `Flagged` and `Favorite` the icon is visible and the text is not displayed
       * 	 - For `Draft` the text is visible and the icon is not displayed
       * 	 - For `Locked`, `LockedBy`, `Unsaved` and `UnsavedBy` - on screens larger than 600px both icon and
-      * 			text are visible, otherwise only the icon
+      *     text are visible, otherwise only the icon
       */
     var `type`: js.UndefOr[
         ObjectMarkerType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectMarkerType * / any */ String) | PropertyBindingInfo
@@ -430,7 +464,9 @@ object sapMObjectMarkerMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectMarker$PressEventParameters] => Unit
+      ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

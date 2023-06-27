@@ -27,7 +27,6 @@ Instantiable0[nlobjButton] {
     * @return {nlobjButton}
     *
     * @method
-    * @memberOf nlobjButton
     *
     * @since 2008.2
     * @param disabled
@@ -41,7 +40,6 @@ Instantiable0[nlobjButton] {
     * @return {nlobjButton}
     *
     * @method
-    * @memberOf nlobjButton
     *
     * @since 2008.2
     * @param label

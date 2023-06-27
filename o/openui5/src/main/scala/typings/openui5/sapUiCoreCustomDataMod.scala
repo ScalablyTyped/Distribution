@@ -56,8 +56,7 @@ object sapUiCoreCustomDataMod {
       * Creates a new subclass of `CustomData` with name `sClassName` and enriches it with the information contained
       * in `oClassInfo`.
       *
-      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.core.Element.extend
-      * Element.extend}.
+      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.core.Element.extend Element.extend}.
       *
       * @returns Created class / constructor function
       */
@@ -141,7 +140,7 @@ object sapUiCoreCustomDataMod {
     def getValue(): Any = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Gets current value of property {@link #getWriteToDom writeToDom}.
       *
@@ -204,7 +203,7 @@ object sapUiCoreCustomDataMod {
     oValue: Any): this.type = js.native
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * Sets a new value for property {@link #getWriteToDom writeToDom}.
       *
@@ -258,7 +257,7 @@ object sapUiCoreCustomDataMod {
     var value: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.9.0
+      * @since 1.9.0
       *
       * If set to "true" and the value is of type "string" and the key conforms to the documented restrictions,
       * this custom data is written to the HTML root element of the control as a "data-*" attribute. If the key

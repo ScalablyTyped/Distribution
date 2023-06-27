@@ -8,6 +8,7 @@ import typings.geolib.esConstantsMod.unitObject
 import typings.geolib.esGetCompassDirectionMod.BearingFunction
 import typings.geolib.esGetPathLengthMod.DistanceFn
 import typings.geolib.esTypesMod.AltitudeKeys
+import typings.geolib.esTypesMod.GeolibBounds
 import typings.geolib.esTypesMod.GeolibDistanceFn
 import typings.geolib.esTypesMod.GeolibInputCoordinates
 import typings.geolib.esTypesMod.GeolibInputCoordinatesWithTime
@@ -90,7 +91,7 @@ object mod {
   
   inline def getAreaOfPolygon(points: js.Array[GeolibInputCoordinates]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getAreaOfPolygon")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getBounds(points: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(points.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getBounds(points: js.Array[GeolibInputCoordinates]): GeolibBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(points.asInstanceOf[js.Any]).asInstanceOf[GeolibBounds]
   
   inline def getBoundsOfDistance(point: GeolibInputCoordinates, distance: Double): js.Array[Latitude] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundsOfDistance")(point.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Latitude]]
   

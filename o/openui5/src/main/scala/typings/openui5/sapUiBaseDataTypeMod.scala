@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.DefaultValue
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ object sapUiBaseDataTypeMod {
       * @returns Object with enum keys and values or `undefined`
       */
     /* CompleteClass */
-    override def getEnumValues(): js.UndefOr[js.Object] = js.native
+    override def getEnumValues(): js.UndefOr[Record[String, String]] = js.native
     
     /**
       * The qualified name of the data type.
@@ -121,7 +122,7 @@ object sapUiBaseDataTypeMod {
     /**
       * Set or unset a normalizer function to be used for values of this data type.
       *
-      * When a normalizer function has been set, it will be applied to values of this type whenever {@link #normalize}
+      * When a normalizer function has been set, it will be applied to values of this type whenever {@link #normalize }
       * is called. `ManagedObject.prototype.setProperty` calls the `normalize` method before setting a new value
       * to a property (normalization is applied on-write, not on-read).
       *
@@ -142,7 +143,7 @@ object sapUiBaseDataTypeMod {
     override def setNormalizer(/**
       * Function to apply for normalizing
       */
-    fnNormalizer: js.Function): Unit = js.native
+    fnNormalizer: js.Function1[/* p1 */ Any, Any]): Unit = js.native
   }
   /* static members */
   object default {
@@ -175,8 +176,8 @@ object sapUiBaseDataTypeMod {
       * If `mSettings` contains an implementation for `isValid`, then the validity check of the newly created
       * type will first execute the check of the base type and then call the given `isValid` function.
       *
-      * Array types and enumeration types cannot be created with this method. They're created on-the-fly by {@link
-      * #.getType DataType.getType} when such a type is looked up.
+      * Array types and enumeration types cannot be created with this method. They're created on-the-fly by {@link #.getType DataType.getType }
+      * when such a type is looked up.
       *
       * **Note:** The creation of new primitive types is not supported. When a type is created without a base
       * type, it is automatically derived from the primitive type `any`.
@@ -262,23 +263,23 @@ object sapUiBaseDataTypeMod {
     /**
       * Looks up the type with the given name and returns it.
       *
-      * See {@link topic:ac56d92162ed47ff858fdf1ce26c18c4 Defining Control Properties} for a list of the built-in
-      * primitive types and their semantics.
+      * See {@link https://ui5.sap.com/#/topic/ac56d92162ed47ff858fdf1ce26c18c4 Defining Control Properties }
+      * for a list of the built-in primitive types and their semantics.
       *
       * The lookup consists of the following steps:
       * 	 - When a type with the given name is already known, it will be returned
       * 	 - When the name ends with a pair of brackets (`[]`), a type with the name in front of the brackets
-      * 			(`name.slice(0,-2)`) will be looked up and an array type will be created with the looked-up type as its
-      * 			component type. If the component type is `undefined`, `undefined` will be returned
+      *     (`name.slice(0,-2)`) will be looked up and an array type will be created with the looked-up type as its
+      *     component type. If the component type is `undefined`, `undefined` will be returned
       * 	 - When a global property exists with the same name as the type and when the value of that property
-      * 			is an instance of `DataType`, that instance will be returned
+      *     is an instance of `DataType`, that instance will be returned
       * 	 - When a global property exists with the same name as the type and when the value of that property
-      * 			is a plain object (its prototype is `Object`), then an enum type will be created, based on the keys and
-      * 			values in that object. The `parseValue` method of the type will accept any of the keys in the plain object
-      * 			and convert them to the corresponding value; `isValid` will accept any of the values from the plain object's
-      * 			keys. The `defaultValue` will be the value of the first key found in the plain object
+      *     is a plain object (its prototype is `Object`), then an enum type will be created, based on the keys and
+      *     values in that object. The `parseValue` method of the type will accept any of the keys in the plain object
+      *     and convert them to the corresponding value; `isValid` will accept any of the values from the plain object's
+      *     keys. The `defaultValue` will be the value of the first key found in the plain object
       * 	 - When a global property exist with any other, non-falsy value, a warning is logged and the primitive
-      * 			type 'any' is returned
+      *     type 'any' is returned
       * 	 - If no such global property exist, an error is logged and `undefined` is returned
       *
       *  UI Libraries and even components can introduce additional types. This method only checks
@@ -328,7 +329,7 @@ object sapUiBaseDataTypeMod {
       *
       * @returns Object with enum keys and values or `undefined`
       */
-    def getEnumValues(): js.UndefOr[js.Object]
+    def getEnumValues(): js.UndefOr[Record[String, String]]
     
     /**
       * The qualified name of the data type.
@@ -397,7 +398,7 @@ object sapUiBaseDataTypeMod {
     /**
       * Set or unset a normalizer function to be used for values of this data type.
       *
-      * When a normalizer function has been set, it will be applied to values of this type whenever {@link #normalize}
+      * When a normalizer function has been set, it will be applied to values of this type whenever {@link #normalize }
       * is called. `ManagedObject.prototype.setProperty` calls the `normalize` method before setting a new value
       * to a property (normalization is applied on-write, not on-read).
       *
@@ -417,7 +418,7 @@ object sapUiBaseDataTypeMod {
     def setNormalizer(/**
       * Function to apply for normalizing
       */
-    fnNormalizer: js.Function): Unit
+    fnNormalizer: js.Function1[/* p1 */ Any, Any]): Unit
   }
   object DataType {
     
@@ -425,7 +426,7 @@ object sapUiBaseDataTypeMod {
       getBaseType: () => js.UndefOr[DataType],
       getComponentType: () => js.UndefOr[DataType],
       getDefaultValue: () => Any,
-      getEnumValues: () => js.UndefOr[js.Object],
+      getEnumValues: () => js.UndefOr[Record[String, String]],
       getName: () => String,
       getPrimitiveType: () => DataType,
       isArrayType: () => Boolean,
@@ -433,7 +434,7 @@ object sapUiBaseDataTypeMod {
       isValid: Any => Boolean,
       normalize: Any => Any,
       parseValue: String => Any,
-      setNormalizer: js.Function => Unit
+      setNormalizer: js.Function1[/* p1 */ Any, Any] => Unit
     ): DataType = {
       val __obj = js.Dynamic.literal(getBaseType = js.Any.fromFunction0(getBaseType), getComponentType = js.Any.fromFunction0(getComponentType), getDefaultValue = js.Any.fromFunction0(getDefaultValue), getEnumValues = js.Any.fromFunction0(getEnumValues), getName = js.Any.fromFunction0(getName), getPrimitiveType = js.Any.fromFunction0(getPrimitiveType), isArrayType = js.Any.fromFunction0(isArrayType), isEnumType = js.Any.fromFunction0(isEnumType), isValid = js.Any.fromFunction1(isValid), normalize = js.Any.fromFunction1(normalize), parseValue = js.Any.fromFunction1(parseValue), setNormalizer = js.Any.fromFunction1(setNormalizer))
       __obj.asInstanceOf[DataType]
@@ -448,7 +449,7 @@ object sapUiBaseDataTypeMod {
       
       inline def setGetDefaultValue(value: () => Any): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
       
-      inline def setGetEnumValues(value: () => js.UndefOr[js.Object]): Self = StObject.set(x, "getEnumValues", js.Any.fromFunction0(value))
+      inline def setGetEnumValues(value: () => js.UndefOr[Record[String, String]]): Self = StObject.set(x, "getEnumValues", js.Any.fromFunction0(value))
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
@@ -464,7 +465,7 @@ object sapUiBaseDataTypeMod {
       
       inline def setParseValue(value: String => Any): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
       
-      inline def setSetNormalizer(value: js.Function => Unit): Self = StObject.set(x, "setNormalizer", js.Any.fromFunction1(value))
+      inline def setSetNormalizer(value: js.Function1[/* p1 */ Any, Any] => Unit): Self = StObject.set(x, "setNormalizer", js.Any.fromFunction1(value))
     }
   }
 }

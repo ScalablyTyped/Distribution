@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateContinuousRendererParamsColorOptions extends StObject {
   
   /**
-    * In authoring apps, the user may select a pre-defined color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * In authoring apps, the user may select a pre-defined color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
-    * Only applies to the `above-and-below` theme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * Only applies to the `above-and-below` theme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var isContinuous: js.UndefOr[Boolean] = js.undefined
 }
 object univariateColorSizeCreateContinuousRendererParamsColorOptions {

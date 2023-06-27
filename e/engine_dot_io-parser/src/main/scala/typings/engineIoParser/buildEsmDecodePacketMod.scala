@@ -13,6 +13,6 @@ object buildEsmDecodePacketMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(encodedPacket: RawData): Packet = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(encodedPacket.asInstanceOf[js.Any]).asInstanceOf[Packet]
-  inline def default(encodedPacket: RawData, binaryType: BinaryType): Packet = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(encodedPacket.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any])).asInstanceOf[Packet]
+  inline def decodePacket(encodedPacket: RawData): Packet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePacket")(encodedPacket.asInstanceOf[js.Any]).asInstanceOf[Packet]
+  inline def decodePacket(encodedPacket: RawData, binaryType: BinaryType): Packet = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePacket")(encodedPacket.asInstanceOf[js.Any], binaryType.asInstanceOf[js.Any])).asInstanceOf[Packet]
 }

@@ -115,7 +115,6 @@ object distSrcKeyMod {
       * Checks if this key has only one namespace.
       *
       * @returns {boolean}
-      *
       */
     def isTopLevel(): Boolean = js.native
     

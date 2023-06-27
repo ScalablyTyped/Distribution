@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.MainContentVisible
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -164,13 +163,13 @@ object sapUiWebcFioriDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.DynamicSideContent`
       * itself
@@ -196,7 +195,7 @@ object sapUiWebcFioriDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit]
     ): this.type = js.native
     def attachLayoutChange(
       /**
@@ -207,7 +206,7 @@ object sapUiWebcFioriDynamicSideContentMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.DynamicSideContent`
       * itself
@@ -240,13 +239,13 @@ object sapUiWebcFioriDynamicSideContentMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit]
     ): this.type = js.native
     def detachLayoutChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DynamicSideContentLayoutChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -254,17 +253,19 @@ object sapUiWebcFioriDynamicSideContentMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLayoutChange(): this.type = js.native
-    def fireLayoutChange(/**
+    def fireLayoutChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: MainContentVisible): this.type = js.native
+    mParameters: DynamicSideContent$LayoutChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getContent content}.
@@ -662,6 +663,60 @@ object sapUiWebcFioriDynamicSideContentMod {
     def toggleContents(): Unit = js.native
   }
   
+  trait DynamicSideContent$LayoutChangeEventParameters extends StObject {
+    
+    /**
+      * the current breakpoint.
+      */
+    var currentBreakpoint: js.UndefOr[String] = js.undefined
+    
+    /**
+      * visibility of the main content.
+      */
+    var mainContentVisible: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * the breakpoint that was active before change to current breakpoint.
+      */
+    var previousBreakpoint: js.UndefOr[String] = js.undefined
+    
+    /**
+      * visibility of the side content.
+      */
+    var sideContentVisible: js.UndefOr[Boolean] = js.undefined
+  }
+  object DynamicSideContent$LayoutChangeEventParameters {
+    
+    inline def apply(): DynamicSideContent$LayoutChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DynamicSideContent$LayoutChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicSideContent$LayoutChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCurrentBreakpoint(value: String): Self = StObject.set(x, "currentBreakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentBreakpointUndefined: Self = StObject.set(x, "currentBreakpoint", js.undefined)
+      
+      inline def setMainContentVisible(value: Boolean): Self = StObject.set(x, "mainContentVisible", value.asInstanceOf[js.Any])
+      
+      inline def setMainContentVisibleUndefined: Self = StObject.set(x, "mainContentVisible", js.undefined)
+      
+      inline def setPreviousBreakpoint(value: String): Self = StObject.set(x, "previousBreakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousBreakpointUndefined: Self = StObject.set(x, "previousBreakpoint", js.undefined)
+      
+      inline def setSideContentVisible(value: Boolean): Self = StObject.set(x, "sideContentVisible", value.asInstanceOf[js.Any])
+      
+      inline def setSideContentVisibleUndefined: Self = StObject.set(x, "sideContentVisible", js.undefined)
+    }
+  }
+  
+  type DynamicSideContentLayoutChangeEvent = typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$LayoutChangeEventParameters]
+  
+  type DynamicSideContentLayoutChangeEventParameters = DynamicSideContent$LayoutChangeEventParameters
+  
   trait DynamicSideContentSettings
     extends StObject
        with ControlSettings {
@@ -699,7 +754,12 @@ object sapUiWebcFioriDynamicSideContentMod {
     /**
       * Fires when the current breakpoint has been changed.
       */
-    var layoutChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var layoutChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$LayoutChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the side content.
@@ -789,7 +849,9 @@ object sapUiWebcFioriDynamicSideContentMod {
       
       inline def setHideSideContentUndefined: Self = StObject.set(x, "hideSideContent", js.undefined)
       
-      inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
+      inline def setLayoutChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DynamicSideContent$LayoutChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       
       inline def setLayoutChangeUndefined: Self = StObject.set(x, "layoutChange", js.undefined)
       

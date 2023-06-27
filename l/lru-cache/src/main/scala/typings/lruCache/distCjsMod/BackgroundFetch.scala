@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BackgroundFetch[V]
   extends StObject
-     with Promise[js.UndefOr[V | Unit]] {
+     with Promise[js.UndefOr[V]] {
   
   var __abortController: AbortController = js.native
   

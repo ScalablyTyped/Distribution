@@ -34,35 +34,35 @@ object sapUiCoreDndDragAndDropMod {
     sKey: String): String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the dragged control, if available within the same UI5 application frame.
       */
     def getDragControl(): default | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * The valid drop target underneath the dragged control.
       */
     def getDropControl(): default | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the drop configuration corresponding to the drop control.
       */
     def getDropInfo(): typings.openui5.sapUiCoreDndDropInfoMod.default | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the calculated position of the drop action relative to the valid dropped control.
       */
     def getDropPosition(): RelativeDropPosition | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dnd.RelativeDropPosition * / any */ String)
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the drop indicator.
       *
@@ -71,7 +71,7 @@ object sapUiCoreDndDragAndDropMod {
     def getIndicator(): HTMLElement | Null
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the visual configuration of the drop indicator.
       *
@@ -110,14 +110,14 @@ object sapUiCoreDndDragAndDropMod {
     sData: String): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Set the valid drop control.
       */
     def setDropControl(): Unit
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Defines the visual configuration of the drop indicator for the current `DropInfo`.
       */

@@ -9,31 +9,31 @@ trait WebStyleSymbolProperties
      with SymbolProperties {
   
   /**
-    * The name of the symbol within the web style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#name)
-    */
+  		 * The name of the symbol within the web style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The portal that contains the web style this symbol refers to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#portal)
-    */
+  		 * The portal that contains the web style this symbol refers to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#portal)
+  		 */
   var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
-    * A registered web style name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleName)
-    */
+  		 * A registered web style name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleName)
+  		 */
   var styleName: js.UndefOr[String] = js.undefined
   
   /**
-    * URL that points to the web style definition.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleUrl)
-    */
+  		 * URL that points to the web style definition.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html#styleUrl)
+  		 */
   var styleUrl: js.UndefOr[String] = js.undefined
 }
 object WebStyleSymbolProperties {

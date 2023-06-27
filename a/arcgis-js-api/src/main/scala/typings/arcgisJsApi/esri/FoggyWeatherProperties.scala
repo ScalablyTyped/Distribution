@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FoggyWeatherProperties extends StObject {
   
   /**
-    * Specifies the amount of fog used in the scene.
-    *
-    * @default 0.5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#fogStrength)
-    */
+  		 * Specifies the amount of fog used in the scene.
+  		 *
+  		 * @default 0.5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-FoggyWeather.html#fogStrength)
+  		 */
   var fogStrength: js.UndefOr[Double] = js.undefined
 }
 object FoggyWeatherProperties {

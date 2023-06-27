@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200401403404` extends StObject {
   
   /** @description Response */
-  var `200`: Content100
+  var `200`: Content117
   
   var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
   
@@ -18,7 +18,7 @@ trait `200401403404` extends StObject {
 object `200401403404` {
   
   inline def apply(
-    `200`: Content100,
+    `200`: Content117,
     `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
     `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
@@ -34,7 +34,7 @@ object `200401403404` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `200401403404`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content100): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content117): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set401(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any

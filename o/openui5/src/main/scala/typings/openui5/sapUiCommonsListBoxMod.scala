@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Id
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -207,13 +206,13 @@ object sapUiCommonsListBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ListBox` itself
       */
@@ -238,7 +237,7 @@ object sapUiCommonsListBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -249,7 +248,7 @@ object sapUiCommonsListBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.ListBox` itself
       */
@@ -281,13 +280,13 @@ object sapUiCommonsListBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ListBoxSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -295,7 +294,7 @@ object sapUiCommonsListBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -305,7 +304,7 @@ object sapUiCommonsListBoxMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: Id): this.type = js.native
+    mParameters: ListBox$SelectEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAllowMultiSelect allowMultiSelect}.
@@ -319,14 +318,12 @@ object sapUiCommonsListBoxMod {
     def getAllowMultiSelect(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -914,6 +911,65 @@ object sapUiCommonsListBoxMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait ListBox$SelectEventParameters extends StObject {
+    
+    /**
+      * ID of the ListBox which triggered the event.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The currently selected index of the ListBox. In the case of multiple selection, this is exactly one of
+      * the selected indices - the one whose selection has triggered the selection change. To get all currently
+      * selected indices, use selectedIndices.
+      */
+    var selectedIndex: js.UndefOr[int] = js.undefined
+    
+    /**
+      * Array containing the indices which are selected.
+      */
+    var selectedIndices: js.UndefOr[js.Array[int]] = js.undefined
+    
+    /**
+      * The currently selected item of the ListBox. In the case of multiple selection, this is exactly one of
+      * the selected items - the one whose selection has triggered the selection change.
+      */
+    var selectedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+  }
+  object ListBox$SelectEventParameters {
+    
+    inline def apply(): ListBox$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListBox$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBox$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setSelectedIndex(value: int): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+      
+      inline def setSelectedIndices(value: js.Array[int]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
+      
+      inline def setSelectedIndicesVarargs(value: int*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
+      
+      inline def setSelectedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type ListBoxSelectEvent = typings.openui5.sapUiBaseEventMod.default[ListBox$SelectEventParameters]
+  
+  type ListBoxSelectEventParameters = ListBox$SelectEventParameters
+  
   trait ListBoxSettings
     extends StObject
        with ControlSettings {
@@ -1015,7 +1071,12 @@ object sapUiCommonsListBoxMod {
     /**
       * Event is fired when selection is changed by user interaction.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBox$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the text alignment in the primary ListBox column.
@@ -1115,7 +1176,9 @@ object sapUiCommonsListBoxMod {
       
       inline def setSecondaryValueTextAlignUndefined: Self = StObject.set(x, "secondaryValueTextAlign", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ListBox$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

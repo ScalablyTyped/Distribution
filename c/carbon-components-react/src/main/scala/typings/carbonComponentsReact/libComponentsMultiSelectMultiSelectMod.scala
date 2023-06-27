@@ -18,7 +18,6 @@ import typings.carbonComponentsReact.typingsSharedMod.InternationalProps
 import typings.carbonComponentsReact.typingsSharedMod.ListBoxBaseItemType
 import typings.carbonComponentsReact.typingsSharedMod.VerticalDirection
 import typings.react.mod.JSXElementConstructor
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
 import typings.std.Record
@@ -181,7 +180,7 @@ object libComponentsMultiSelectMultiSelectMod {
       
       inline def setItemToElement(value: JSXElementConstructor[T]): Self = StObject.set(x, "itemToElement", value.asInstanceOf[js.Any])
       
-      inline def setItemToElementFunction1(value: T => ReactElement | Null): Self = StObject.set(x, "itemToElement", js.Any.fromFunction1(value))
+      inline def setItemToElementFunction2(value: (T, /* deprecatedLegacyContext */ js.UndefOr[Any]) => ReactNode): Self = StObject.set(x, "itemToElement", js.Any.fromFunction2(value))
       
       inline def setItemToElementUndefined: Self = StObject.set(x, "itemToElement", js.undefined)
       

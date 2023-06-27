@@ -10,7 +10,7 @@ trait MediaStream extends StObject {
   /**
     * Codec name used to encode audio for transmission on the network. Possible values are: unknown, invalid, cn, pcma, pcmu,
     * amrWide, g722, g7221, g7221c, g729, multiChannelAudio, muchv2, opus, satin, satinFullband, rtAudio8, rtAudio16, silk,
-    * silkNarrow, silkWide, siren, xmsRTA, unknownFutureValue.
+    * silkNarrow, silkWide, siren, xmsRta, unknownFutureValue.
     */
   var audioCodec: js.UndefOr[NullableOption[AudioCodec]] = js.undefined
   

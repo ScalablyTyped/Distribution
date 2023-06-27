@@ -10,59 +10,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SunLightingPropertiestype extends StObject {
   
   /**
-    * Indicates whether to show ambient occlusion shading.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#ambientOcclusionEnabled)
-    */
+  		 * Indicates whether to show ambient occlusion shading.
+  		 *
+  		 * @default false
+  		 * @deprecated since version 4.27. Ambient occlusion is automatically shown and this property has no effect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#ambientOcclusionEnabled)
+  		 */
   var ambientOcclusionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the date and time of the simulated sun is automatically updated to maintain the current time of day while the camera changes.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#cameraTrackingEnabled)
-    */
+  		 * Indicates whether the date and time of the simulated sun is automatically updated to maintain the current time of day while the camera changes.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#cameraTrackingEnabled)
+  		 */
   var cameraTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The current date and time of the simulated sun.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#date)
-    */
+  		 * The current date and time of the simulated sun.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#date)
+  		 */
   var date: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * Indicates whether to show shadows cast by the sun.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the sun.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The UTC time zone offset in hours that should be displayed in the UI to represent the date.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#displayUTCOffset)
-    */
+  		 * The UTC time zone offset in hours that should be displayed in the UI to represent the date.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#displayUTCOffset)
+  		 */
   var displayUTCOffset: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[sun] = js.undefined
   
   /**
-    * Indicates whether [WaterSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html) display reflections of surrounding terrain, buildings and other 3D objects.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#waterReflectionEnabled)
-    */
+  		 * Indicates whether [WaterSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WaterSymbol3DLayer.html) display reflections of surrounding terrain, buildings and other 3D objects.
+  		 *
+  		 * @default false
+  		 * @deprecated since version 4.27. Reflections are automatically shown and this property has no effect.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-SunLighting.html#waterReflectionEnabled)
+  		 */
   var waterReflectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SunLightingPropertiestype {

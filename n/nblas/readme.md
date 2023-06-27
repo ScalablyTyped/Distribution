@@ -1,7 +1,7 @@
 
 # Scala.js typings for nblas
 
-Typings are for version 2.1.12
+Typings are for version 2.1.13
 
 ## Library description:
 C++ bindings for all single- and double-precision CBLAS (Basic Linear Algebra Subprograms) routines.

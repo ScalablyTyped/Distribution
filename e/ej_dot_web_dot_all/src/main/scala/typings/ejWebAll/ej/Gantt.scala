@@ -866,7 +866,7 @@ object Gantt {
   trait AddDialogField extends StObject {
     
     /** Specifies the custom column field was displayed in General tab of add dialog or not.
-      * @Default {false}
+      * @default {false}
       */
     var displayInGeneralTab: js.UndefOr[Boolean] = js.undefined
     
@@ -1333,17 +1333,17 @@ object Gantt {
   trait DragTooltip extends StObject {
     
     /** Specifies option to enable/disable tooltip while drag and drop a row.
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the data source fields to be displayed in the drag tooltip.
-      * @Default {[]}
+      * @default {[]}
       */
     var tooltipItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the custom template for drag tooltip.
-      * @Default {null}
+      * @default {null}
       */
     var tooltipTemplate: js.UndefOr[String] = js.undefined
   }
@@ -1376,7 +1376,7 @@ object Gantt {
   trait EditDialogField extends StObject {
     
     /** Specifies the custom column field was displayed in General tab of edit dialog or not.
-      * @Default {false}
+      * @default {false}
       */
     var displayInGeneralTab: js.UndefOr[Boolean] = js.undefined
     
@@ -1415,42 +1415,42 @@ object Gantt {
   trait EditSettings extends StObject {
     
     /** Enables or disables add record icon in Gantt toolbar
-      * @Default {false}
+      * @default {false}
       */
     var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables delete icon in Gantt toolbar
-      * @Default {false}
+      * @default {false}
       */
     var allowDeleting: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the option for enabling or disabling editing in Gantt grid part
-      * @Default {false}
+      * @default {false}
       */
     var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the option for enabling or disabling indent action in Gantt.
-      * @Default {false}
+      * @default {false}
       */
     var allowIndent: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mouse action whether single click or double click to begin the editing
-      * @Default {ej.Gantt.BeginEditAction.DblClick}
+      * @default {ej.Gantt.BeginEditAction.DblClick}
       */
     var beginEditAction: js.UndefOr[BeginEditAction | String] = js.undefined
     
     /** Specifies the edit mode in Gantt, &quot;normal&quot; is for dialog editing ,&quot;cellEditing&quot; is for cell type editing
-      * @Default {normal}
+      * @default {normal}
       */
     var editMode: js.UndefOr[String] = js.undefined
     
     /** Specifies the position where the new row has to be added.
-      * @Default {ej.Gantt.RowPosition.BelowSelectedRow}
+      * @default {ej.Gantt.RowPosition.BelowSelectedRow}
       */
     var rowPosition: js.UndefOr[RowPosition | String] = js.undefined
     
     /** Enable or disable the confirmation dialog while deleting the record.
-      * @Default {false}
+      * @default {false}
       */
     var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
@@ -1709,7 +1709,7 @@ object Gantt {
   trait FilterSettings extends StObject {
     
     /** Specifies the column collection for filtering the Gantt content on initial load
-      * @Default {[]}
+      * @default {[]}
       */
     var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.undefined
   }
@@ -1864,57 +1864,57 @@ object Gantt {
     var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Specifies the fields to be included in the add dialog in Gantt
-      * @Default {[]}
+      * @default {[]}
       */
     var addDialogFields: js.UndefOr[js.Array[AddDialogField]] = js.undefined
     
     /** Enables or disables the ability to resize column.
-      * @Default {false}
+      * @default {false}
       */
     var allowColumnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to drag and drop the row interactively to reorder the rows
-      * @Default {false}
+      * @default {false}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables Gantt chart editing in Gantt
-      * @Default {true}
+      * @default {true}
       */
     var allowGanttChartEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables Keyboard navigation in Gantt
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies enabling or disabling multiple sorting for Gantt columns
-      * @Default {false}
+      * @default {false}
       */
     var allowMultiSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the option for multiple exporting
-      * @Default {false}
+      * @default {false}
       */
     var allowMultipleExporting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the interactive selection of a row.
-      * @Default {true}
+      * @default {true}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables sorting. When enabled, we can sort the column by clicking on the column.
-      * @Default {false}
+      * @default {false}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the rendering of unscheduled tasks.
-      * @Default {false}
+      * @default {false}
       */
     var allowUnscheduledTask: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the baseline background color in Gantt
-      * @Default {#fba41c}
+      * @default {#fba41c}
       */
     var baselineColor: js.UndefOr[String] = js.undefined
     
@@ -1939,7 +1939,7 @@ object Gantt {
     var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies the template for cell tooltip
-      * @Default {null}
+      * @default {null}
       */
     var cellTooltipTemplate: js.UndefOr[String] = js.undefined
     
@@ -1956,7 +1956,7 @@ object Gantt {
     var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.undefined
     
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
-      * @Default {[]}
+      * @default {[]}
       */
     var columnDialogFields: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1965,7 +1965,7 @@ object Gantt {
     var connectorLineBackground: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the connector lines in Gantt
-      * @Default {1}
+      * @default {1}
       */
     var connectorlineWidth: js.UndefOr[Double] = js.undefined
     
@@ -1982,17 +1982,17 @@ object Gantt {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Collection of data or hierarchical data to represent in Gantt
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
-      * @Default {MM/dd/yyyy}
+      * @default {MM/dd/yyyy}
       */
     var dateFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the customized working time for tasks in Gantt
-      * @Default {[{ from: 08:00 AM, to: 12:00 PM , background:   }, { from: 01:00 PM, to: 05:00 PM , background:  }]}
+      * @default {[{ from: 08:00 AM, to: 12:00 PM , background:   }, { from: 01:00 PM, to: 05:00 PM , background:  }]}
       */
     var dayWorkingTime: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -2005,7 +2005,7 @@ object Gantt {
     var durationMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the duration unit for each tasks whether days or hours or minutes
-      * @Default {ej.Gantt.DurationUnit.Day}
+      * @default {ej.Gantt.DurationUnit.Day}
       */
     var durationUnit: js.UndefOr[DurationUnit | String] = js.undefined
     
@@ -2014,7 +2014,7 @@ object Gantt {
     var durationUnitMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the fields to be included in the edit dialog in Gantt
-      * @Default {[]}
+      * @default {[]}
       */
     var editDialogFields: js.UndefOr[js.Array[EditDialogField]] = js.undefined
     
@@ -2023,62 +2023,62 @@ object Gantt {
     var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Enables or Disables enableAltRow row effect in Gantt
-      * @Default {true}
+      * @default {true}
       */
     var enableAltRow: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the collapse all records when loading the Gantt.
-      * @Default {false}
+      * @default {false}
       */
     var enableCollapseAll: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the contextmenu for Gantt , when enabled contextmenu appears on right clicking Gantt
-      * @Default {false}
+      * @default {false}
       */
     var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
-      * @Default {true}
+      * @default {true}
       */
     var enablePredecessorValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether we can edit the progress of a task interactively in Gantt.
-      * @Default {true}
+      * @default {true}
       */
     var enableProgressBarResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the option for dynamically updating the Gantt size on window resizing
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
-      * @Default {false}
+      * @default {false}
       */
     var enableSerialNumber: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables tooltip while editing (dragging/resizing) the taskbar.
-      * @Default {true}
+      * @default {true}
       */
     var enableTaskbarDragTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables tooltip for taskbar.
-      * @Default {true}
+      * @default {true}
       */
     var enableTaskbarTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/Disables virtualization for rendering Gantt items.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables work breakdown structure column.
-      * @Default {false}
+      * @default {false}
       */
     var enableWBS: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables WBS predecessor column.
-      * @Default {false}
+      * @default {false}
       */
     var enableWBSPredecessor: js.UndefOr[Boolean] = js.undefined
     
@@ -2107,7 +2107,7 @@ object Gantt {
     var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Specifies the data collection for grouping the resources in resource allocation view in Gantt.
-      * @Default {[]}
+      * @default {[]}
       */
     var groupCollection: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -2120,27 +2120,27 @@ object Gantt {
     var groupNameMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies whether to highlight the non working time in Gantt.
-      * @Default {false}
+      * @default {false}
       */
     var highlightNonWorkingTime: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to highlight the weekends in Gantt .
-      * @Default {true}
+      * @default {true}
       */
     var highlightWeekends: js.UndefOr[Boolean] = js.undefined
     
     /** Collection of holidays with date, background and label information to be displayed in Gantt.
-      * @Default {[]}
+      * @default {[]}
       */
     var holidays: js.UndefOr[js.Array[Holiday]] = js.undefined
     
     /** Specifies whether to include weekends while calculating the duration of a task.
-      * @Default {true}
+      * @default {true}
       */
     var includeWeekend: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the responsiveness of Gantt
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -2157,7 +2157,7 @@ object Gantt {
     var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specify the locale for Gantt
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -2210,22 +2210,22 @@ object Gantt {
     var progressbarBackground: js.UndefOr[String] = js.undefined
     
     /** Specified the height of the progressbar in taskbar
-      * @Default {100}
+      * @default {100}
       */
     var progressbarHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the template for tooltip on resizing progressbar
-      * @Default {null}
+      * @default {null}
       */
     var progressbarTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the template ID for customized tooltip for progressbar editing in Gantt
-      * @Default {null}
+      * @default {null}
       */
     var progressbarTooltipTemplateId: js.UndefOr[String] = js.undefined
     
     /** It receives query to retrieve data from the table (query is same as SQL).
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[Any] = js.undefined
     
@@ -2238,12 +2238,12 @@ object Gantt {
     var queryTaskbarInfo: js.UndefOr[js.Function1[/* e */ QueryTaskbarInfoEventArgs, Unit]] = js.undefined
     
     /** Enables or disables Gantt to read-only mode
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in Gantt
-      * @Default {false}
+      * @default {false}
       */
     var renderBaseline: js.UndefOr[Boolean] = js.undefined
     
@@ -2268,7 +2268,7 @@ object Gantt {
     var resourceUnitMapping: js.UndefOr[String] = js.undefined
     
     /** Collection of data regarding resources involved in entire project
-      * @Default {[]}
+      * @default {[]}
       */
     var resources: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -2281,7 +2281,7 @@ object Gantt {
     var rightTaskLabelTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies whether rounding off the day working time edits
-      * @Default {true}
+      * @default {true}
       */
     var roundOffDayworkingTime: js.UndefOr[Boolean] = js.undefined
     
@@ -2302,7 +2302,7 @@ object Gantt {
     var rowDragStop: js.UndefOr[js.Function1[/* e */ RowDragStopEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of a single row in Gantt. Also, we need to set same height in the CSS style with class name e-rowcell.
-      * @Default {30}
+      * @default {30}
       */
     var rowHeight: js.UndefOr[Double] = js.undefined
     
@@ -2315,7 +2315,7 @@ object Gantt {
     var rowSelecting: js.UndefOr[js.Function1[/* e */ RowSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies end date of the Gantt schedule. By default, end date will be rounded to its next Saturday.
-      * @Default {null}
+      * @default {null}
       */
     var scheduleEndDate: js.UndefOr[String] = js.undefined
     
@@ -2324,7 +2324,7 @@ object Gantt {
     var scheduleHeaderSettings: js.UndefOr[ScheduleHeaderSettings] = js.undefined
     
     /** Specifies start date of the Gantt schedule. By default, start date will be rounded to its previous Sunday.
-      * @Default {null}
+      * @default {null}
       */
     var scheduleStartDate: js.UndefOr[String] = js.undefined
     
@@ -2333,52 +2333,52 @@ object Gantt {
     var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.undefined
     
     /** Specifies the selected row Index in Gantt , the row with given index will highlighted
-      * @Default {-1}
+      * @default {-1}
       */
     var selectedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the type of selection whether to select row or cell.
-      * @Default {ej.Gantt.SelectionMode.Row}
+      * @default {ej.Gantt.SelectionMode.Row}
       */
     var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the row selection type.
-      * @Default {ej.Gantt.SelectionType.Single}
+      * @default {ej.Gantt.SelectionType.Single}
       */
     var selectionType: js.UndefOr[SelectionType | String] = js.undefined
     
     /** Enables or disables the column chooser.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the options for inserting , deleting and renaming  columns.
-      * @Default {false}
+      * @default {false}
       */
     var showColumnOptions: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the template for cell tooltip
-      * @Default {true}
+      * @default {true}
       */
     var showGridCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show grid cell tooltip over expander cell alone.
-      * @Default {true}
+      * @default {true}
       */
     var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether display task progress inside taskbar.
-      * @Default {true}
+      * @default {true}
       */
     var showProgressStatus: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to display resource names for a task beside taskbar.
-      * @Default {true}
+      * @default {true}
       */
     var showResourceNames: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to display task name beside task bar.
-      * @Default {true}
+      * @default {true}
       */
     var showTaskNames: js.UndefOr[Boolean] = js.undefined
     
@@ -2391,7 +2391,7 @@ object Gantt {
     var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Specifies splitter position in Gantt.
-      * @Default {null}
+      * @default {null}
       */
     var splitterPosition: js.UndefOr[String] = js.undefined
     
@@ -2408,7 +2408,7 @@ object Gantt {
     var startDateMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the options for striplines
-      * @Default {[]}
+      * @default {[]}
       */
     var stripLines: js.UndefOr[js.Array[StripLine]] = js.undefined
     
@@ -2425,17 +2425,17 @@ object Gantt {
     var taskNameMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
-      * @Default {ej.Gantt.TaskSchedulingMode.Auto}
+      * @default {ej.Gantt.TaskSchedulingMode.Auto}
       */
     var taskSchedulingMode: js.UndefOr[TaskSchedulingMode | String] = js.undefined
     
     /** Specifies the mapping property path for the task scheduling mode for a task in datasource
-      * @Default {auto}
+      * @default {auto}
       */
     var taskSchedulingModeMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
-      * @Default {ej.Gantt.TaskType.FixedUnit}
+      * @default {ej.Gantt.TaskType.FixedUnit}
       */
     var taskType: js.UndefOr[TaskType | String] = js.undefined
     
@@ -2464,7 +2464,7 @@ object Gantt {
     var taskbarEditingTooltipTemplateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the height of taskBar in Gantt.
-      * @Default {20}
+      * @default {20}
       */
     var taskbarHeight: js.UndefOr[Double] = js.undefined
     
@@ -2489,22 +2489,22 @@ object Gantt {
     var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Specifies the tree expander column in Gantt
-      * @Default {0}
+      * @default {0}
       */
     var treeColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
-      * @Default {false}
+      * @default {false}
       */
     var validateManualTasksOnLinking: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the view type for a project in the Gantt.
-      * @Default {ej.Gantt.ViewType.ProjectView}
+      * @default {ej.Gantt.ViewType.ProjectView}
       */
     var viewType: js.UndefOr[ViewType | String] = js.undefined
     
     /** Specifies the weekendBackground color in Gantt
-      * @Default {#F2F2F2}
+      * @default {#F2F2F2}
       */
     var weekendBackground: js.UndefOr[String] = js.undefined
     
@@ -2513,17 +2513,17 @@ object Gantt {
     var workMapping: js.UndefOr[String] = js.undefined
     
     /** Specifies the unit for the work involved in a task and it can be day, hour or minute
-      * @Default {ej.Gantt.WorkUnit.Hour}
+      * @default {ej.Gantt.WorkUnit.Hour}
       */
     var workUnit: js.UndefOr[WorkUnit | String] = js.undefined
     
     /** Gets or sets the working days of a week in a project.
-      * @Default {[Monday,Tuesday,Wednesday,Thursday,Friday]}
+      * @default {[Monday,Tuesday,Wednesday,Thursday,Friday]}
       */
     var workWeek: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the working time schedule of day
-      * @Default {ej.Gantt.workingTimeScale.TimeScale8Hours}
+      * @default {ej.Gantt.workingTimeScale.TimeScale8Hours}
       */
     var workingTimeScale: js.UndefOr[typings.ejWebAll.ej.Gantt.workingTimeScale | String] = js.undefined
   }
@@ -3752,58 +3752,58 @@ object Gantt {
     var dayHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specified the format for Hour view in schedule header
-      * @Default {HH}
+      * @default {HH}
       */
     var hourHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the number of minutes per interval
-      * @Default {ej.Gantt.minutesPerInterval.Auto}
+      * @default {ej.Gantt.minutesPerInterval.Auto}
       */
     var minutesPerInterval: js.UndefOr[typings.ejWebAll.ej.Gantt.minutesPerInterval | String] = js.undefined
     
     /** Specified the format for month view in schedule header
-      * @Default {MMM}
+      * @default {MMM}
       */
     var monthHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the schedule mode
-      * @Default {ej.Gantt.ScheduleHeaderType.Week}
+      * @default {ej.Gantt.ScheduleHeaderType.Week}
       */
     var scheduleHeaderType: js.UndefOr[ScheduleHeaderType | String] = js.undefined
     
     /** Specifies the round-off mode for the start date in schedule header.
-      * @Default {ej.Gantt.TimescaleRoundMode.Auto}
+      * @default {ej.Gantt.TimescaleRoundMode.Auto}
       */
     var timescaleStartDateMode: js.UndefOr[TimescaleRoundMode | String] = js.undefined
     
     /** Specifies the size of the lowest time unit along the timescale, with minimum value as &quot;50%&quot; and maximum value as &quot;500%&quot;. It is also possible to set the value
       * in pixels.
-      * @Default {100%}
+      * @default {100%}
       */
     var timescaleUnitSize: js.UndefOr[String] = js.undefined
     
     /** Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
-      * @Default {true}
+      * @default {true}
       */
     var updateTimescaleView: js.UndefOr[Boolean] = js.undefined
     
     /** Specified the format for week view in schedule header
-      * @Default {MMM dd , yyyy}
+      * @default {MMM dd , yyyy}
       */
     var weekHeaderFormat: js.UndefOr[String] = js.undefined
     
     /** Specifies the start day of the week in week timescale mode
-      * @Default {0}
+      * @default {0}
       */
     var weekStartDay: js.UndefOr[Double] = js.undefined
     
     /** Specified the background for weekends in Gantt
-      * @Default {#F2F2F2}
+      * @default {#F2F2F2}
       */
     var weekendBackground: js.UndefOr[String] = js.undefined
     
     /** Specified the format for year view in schedule header
-      * @Default {yyyy}
+      * @default {yyyy}
       */
     var yearHeaderFormat: js.UndefOr[String] = js.undefined
   }
@@ -3870,12 +3870,12 @@ object Gantt {
   trait SelectedCellIndex extends StObject {
     
     /** Specifies the cell index to be selected in the row.
-      * @Default {-1}
+      * @default {-1}
       */
     var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the row index of the cell to be selected Gantt control
-      * @Default {-1}
+      * @default {-1}
       */
     var rowIndex: js.UndefOr[Double] = js.undefined
   }
@@ -3932,7 +3932,7 @@ object Gantt {
   trait SortSettings extends StObject {
     
     /** Specifies the sorted columns for Gantt
-      * @Default {[]}
+      * @default {[]}
       */
     var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.undefined
   }
@@ -4401,12 +4401,12 @@ object Gantt {
     var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.undefined
     
     /** Specifies the state of enabling or disabling toolbar
-      * @Default {true}
+      * @default {true}
       */
     var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of toolbar items to be rendered in Gantt toolbar
-      * @Default {[]}
+      * @default {[]}
       */
     var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.undefined
   }

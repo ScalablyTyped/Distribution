@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.error_
 import typings.microsoftGraph.microsoftGraphStrings.noncompliant_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.compliant
   - typings.microsoftGraph.microsoftGraphStrings.noncompliant_
   - typings.microsoftGraph.microsoftGraphStrings.conflict
-  - typings.microsoftGraph.microsoftGraphStrings.error
+  - typings.microsoftGraph.microsoftGraphStrings.error_
   - typings.microsoftGraph.microsoftGraphStrings.inGracePeriod
   - typings.microsoftGraph.microsoftGraphStrings.configManager
 */
@@ -24,7 +25,7 @@ object ComplianceState {
   
   inline def conflict: typings.microsoftGraph.microsoftGraphStrings.conflict = "conflict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.conflict]
   
-  inline def error: typings.microsoftGraph.microsoftGraphStrings.error = "error".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.error]
+  inline def error: error_ = "error".asInstanceOf[error_]
   
   inline def inGracePeriod: typings.microsoftGraph.microsoftGraphStrings.inGracePeriod = "inGracePeriod".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inGracePeriod]
   

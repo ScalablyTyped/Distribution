@@ -139,13 +139,13 @@ object sapMMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageStrip` itself
       */
@@ -170,7 +170,7 @@ object sapMMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -181,7 +181,7 @@ object sapMMessageStripMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MessageStrip` itself
       */
@@ -212,13 +212,13 @@ object sapMMessageStripMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -226,7 +226,7 @@ object sapMMessageStripMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -251,7 +251,7 @@ object sapMMessageStripMod {
     def getCustomIcon(): URI = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets current value of property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -344,7 +344,7 @@ object sapMMessageStripMod {
     sCustomIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets a new value for property {@link #getEnableFormattedText enableFormattedText}.
       *
@@ -451,6 +451,12 @@ object sapMMessageStripMod {
     sType: MessageType): this.type = js.native
   }
   
+  trait MessageStrip$CloseEventParameters extends StObject
+  
+  type MessageStripCloseEvent = typings.openui5.sapUiBaseEventMod.default[MessageStrip$CloseEventParameters]
+  
+  type MessageStripCloseEventParameters = MessageStrip$CloseEventParameters
+  
   trait MessageStripSettings
     extends StObject
        with ControlSettings {
@@ -458,7 +464,9 @@ object sapMMessageStripMod {
     /**
       * This event will be fired after the container is closed.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines a custom icon which is displayed. If none is set, the default icon for this message type is
@@ -467,7 +475,7 @@ object sapMMessageStripMod {
     var customIcon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Determines the limited collection of HTML elements passed to the `text` property should be evaluated.
       *
@@ -527,7 +535,7 @@ object sapMMessageStripMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MessageStripSettings] (val x: Self) extends AnyVal {
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       

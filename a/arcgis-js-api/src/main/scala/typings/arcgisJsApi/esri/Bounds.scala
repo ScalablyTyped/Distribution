@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bounds extends StObject {
   
   /**
-    * The effective max value of the slider, or the maximum value a user can set a thumb on the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#Bounds)
-    */
+  		 * The effective max value of the slider, or the maximum value a user can set a thumb on the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#Bounds)
+  		 */
   var max: Double
   
   /**
-    * The effective min value of the slider, or the minimum value a user can set a thumb on the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#Bounds)
-    */
+  		 * The effective min value of the slider, or the minimum value a user can set a thumb on the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#Bounds)
+  		 */
   var min: Double
 }
 object Bounds {

@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   }}}
   */
 @js.native
-trait ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typings.react.mod.ForwardRefExoticComponent[scala.Any], typings.react.anon.Instantiable, js.Function2[
+trait ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180, starting with typings.react.mod.ForwardRefExoticComponent[scala.Any], typings.react.anon.Instantiable, js.Function2[
 / * props * / scala.Any, 
 / * context * / js.UndefOr[scala.Any], 
-typings.react.mod.ReactElement | scala.Null] */ Any */] extends StObject
+typings.react.mod.ReactNode] */ Any */] extends StObject

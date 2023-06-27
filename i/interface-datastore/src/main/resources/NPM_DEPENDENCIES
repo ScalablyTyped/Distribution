@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "interface-datastore" : "8.2.0"
+      "interface-datastore" : "8.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "interface-datastore" : "8.2.0"
+      "interface-datastore" : "8.2.3"
     }
   ],
   "compile-devDependencies" : [

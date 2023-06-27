@@ -28,7 +28,7 @@ object mod {
     
     def debug(bool: Boolean): Unit = js.native
     
-    def del(key: K): Unit = js.native
+    def del(key: K): Boolean = js.native
     
     /**
       * @returns A JSON string representing all the cache data
@@ -64,7 +64,7 @@ object mod {
   
   inline def debug(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def del(key: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def del(key: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def exportJson(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("exportJson")().asInstanceOf[String]
   

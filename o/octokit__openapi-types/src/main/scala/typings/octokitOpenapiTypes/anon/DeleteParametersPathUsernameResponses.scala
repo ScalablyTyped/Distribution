@@ -13,11 +13,11 @@ trait DeleteParametersPathUsernameResponses extends StObject {
   var get: ParametersPathUsername
   
   /** Block a user from an organization */
-  var put: Responses9
+  var put: Responses11
 }
 object DeleteParametersPathUsernameResponses {
   
-  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsername, put: Responses9): DeleteParametersPathUsernameResponses = {
+  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsername, put: Responses11): DeleteParametersPathUsernameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathUsernameResponses]
   }
@@ -29,6 +29,6 @@ object DeleteParametersPathUsernameResponses {
     
     inline def setGet(value: ParametersPathUsername): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses9): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses11): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

@@ -13,6 +13,8 @@ import typings.codemirrorLanguage.anon.To
 import typings.codemirrorLanguage.codemirrorLanguageInts.`-1`
 import typings.codemirrorLanguage.codemirrorLanguageInts.`0`
 import typings.codemirrorLanguage.codemirrorLanguageInts.`1`
+import typings.codemirrorLanguage.codemirrorLanguageStrings.extend
+import typings.codemirrorLanguage.codemirrorLanguageStrings.replace
 import typings.codemirrorState.mod.ChangeSet
 import typings.codemirrorState.mod.EditorState
 import typings.codemirrorState.mod.Extension
@@ -20,6 +22,7 @@ import typings.codemirrorState.mod.Facet
 import typings.codemirrorState.mod.Range
 import typings.codemirrorState.mod.StateEffectType
 import typings.codemirrorState.mod.StateField
+import typings.codemirrorState.mod.Text
 import typings.codemirrorView.mod.BlockInfo
 import typings.codemirrorView.mod.Command
 import typings.codemirrorView.mod.Decoration
@@ -27,6 +30,7 @@ import typings.codemirrorView.mod.DecorationSet
 import typings.codemirrorView.mod.EditorView
 import typings.codemirrorView.mod.KeyBinding
 import typings.codemirrorView.mod.ViewUpdate
+import typings.lezerCommon.distParseMod.Input
 import typings.lezerCommon.distTreeMod.SyntaxNode
 import typings.lezerCommon.mod.NodeProp
 import typings.lezerCommon.mod.NodeType
@@ -52,6 +56,48 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
+  Lezer-style
+  [`Input`](https://lezer.codemirror.net/docs/ref#common.Input)
+  object for a [`Text`](https://codemirror.net/6/docs/ref/#state.Text) object.
+  */
+  @JSImport("@codemirror/language", "DocInput")
+  @js.native
+  open class DocInput protected ()
+    extends StObject
+       with Input {
+    /**
+      Create an input object for the given document.
+      */
+    def this(doc: Text) = this()
+    
+    /* CompleteClass */
+    override def chunk(from: Double): String = js.native
+    
+    /* private */ var cursor: Any = js.native
+    
+    /* private */ var cursorPos: Any = js.native
+    
+    val doc: Text = js.native
+    
+    /* CompleteClass */
+    override val length: Double = js.native
+    @JSName("length")
+    def length_MDocInput: Double = js.native
+    
+    /* CompleteClass */
+    override val lineChunks: Boolean = js.native
+    @JSName("lineChunks")
+    def lineChunks_MDocInput: Boolean = js.native
+    
+    /* CompleteClass */
+    override def read(from: Double, to: Double): String = js.native
+    
+    /* private */ var string: Any = js.native
+    
+    /* private */ var syncTo: Any = js.native
+  }
+  
+  /**
   A highlight style associates CSS styles with higlighting
   [tags](https://lezer.codemirror.net/docs/ref#highlight.Tag).
   */
@@ -70,6 +116,16 @@ object mod {
       */
     val module: StyleModule | Null = js.native
     
+    /**
+      The tag styles used to create this highlight style.
+      */
+    val specs: js.Array[TagStyle] = js.native
+    
+    /**
+      Get the set of classes that should be applied to the given set
+      of highlighting tags, or null if this highlighter doesn't assign
+      a style to the tags.
+      */
     /* CompleteClass */
     override def style(tags: js.Array[Tag]): String | Null = js.native
   }
@@ -189,9 +245,10 @@ object mod {
     
     /**
       Create a new instance of this language with a reconfigured
-      version of its parser.
+      version of its parser and optionally a new name.
       */
     def configure(options: ParserConfig): LRLanguage = js.native
+    def configure(options: ParserConfig, name: String): LRLanguage = js.native
     
     @JSName("parser")
     val parser_LRLanguage: LRParser = js.native
@@ -378,6 +435,32 @@ object mod {
       parser: Parser,
       extraExtensions: js.Array[Extension]
     ) = this()
+    def this(
+      /**
+      The [language data](https://codemirror.net/6/docs/ref/#state.EditorState.languageDataAt) facet
+      used for this language.
+      */
+    data: Facet[StringDictionary[Any], js.Array[StringDictionary[Any]]],
+      parser: Parser,
+      extraExtensions: js.Array[Extension],
+      /**
+      A language name.
+      */
+    name: String
+    ) = this()
+    def this(
+      /**
+      The [language data](https://codemirror.net/6/docs/ref/#state.EditorState.languageDataAt) facet
+      used for this language.
+      */
+    data: Facet[StringDictionary[Any], js.Array[StringDictionary[Any]]],
+      parser: Parser,
+      extraExtensions: Unit,
+      /**
+      A language name.
+      */
+    name: String
+    ) = this()
     
     /**
       Indicates whether this language allows nested languages. The
@@ -408,6 +491,11 @@ object mod {
       */
     def isActiveAt(state: EditorState, pos: Double): Boolean = js.native
     def isActiveAt(state: EditorState, pos: Double, side: `-1` | `0` | `1`): Boolean = js.native
+    
+    /**
+      A language name.
+      */
+    val name: String = js.native
     
     /**
       The parser object. Can be useful when using this as a [nested
@@ -531,6 +619,18 @@ object mod {
       */
     indentUnit: Double
     ) = this()
+    def this(
+      /**
+      The line.
+      */
+    string: String,
+      tabSize: Double,
+      /**
+      The current indent unit size.
+      */
+    indentUnit: Double,
+      overrideIndent: Double
+    ) = this()
     
     /**
       Move back `n` characters.
@@ -613,6 +713,8 @@ object mod {
       Read the next code unit and advance `this.pos`.
       */
     def next(): String | Unit = js.native
+    
+    /* private */ var overrideIndent: Any = js.native
     
     /**
       Get the next code unit after the current position, or undefined
@@ -705,6 +807,18 @@ object mod {
   */
   inline def bracketMatching(): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("bracketMatching")().asInstanceOf[Extension]
   inline def bracketMatching(config: Config): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("bracketMatching")(config.asInstanceOf[js.Any]).asInstanceOf[Extension]
+  
+  /**
+  When larger syntax nodes, such as HTML tags, are marked as
+  opening/closing, it can be a bit messy to treat the whole node as
+  a matchable bracket. This node prop allows you to define, for such
+  a node, a ‘handle’—the part of the node that is highlighted, and
+  that the cursor must be on to activate highlighting in the first
+  place.
+  */
+  @JSImport("@codemirror/language", "bracketMatchingHandle")
+  @js.native
+  val bracketMatchingHandle: NodeProp[js.Function1[/* node */ SyntaxNode, SyntaxNode | Null]] = js.native
   
   /**
   Create an extension that configures code folding.
@@ -896,12 +1010,13 @@ object mod {
   inline def getIndentUnit(state: EditorState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndentUnit")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
-  Get the indentation at the given position. Will first consult any
-  [indent services](https://codemirror.net/6/docs/ref/#language.indentService) that are registered,
-  and if none of those return an indentation, this will check the
-  syntax tree for the [indent node prop](https://codemirror.net/6/docs/ref/#language.indentNodeProp)
-  and use that if found. Returns a number when an indentation could
-  be determined, and null otherwise.
+  Get the indentation, as a column number, at the given position.
+  Will first consult any [indent services](https://codemirror.net/6/docs/ref/#language.indentService)
+  that are registered, and if none of those return an indentation,
+  this will check the syntax tree for the [indent node
+  prop](https://codemirror.net/6/docs/ref/#language.indentNodeProp) and use that if found. Returns a
+  number when an indentation could be determined, and null
+  otherwise.
   */
   inline def getIndentation(context: IndentContext, pos: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndentation")(context.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   inline def getIndentation(context: EditorState, pos: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndentation")(context.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
@@ -919,8 +1034,9 @@ object mod {
   /**
   A syntax tree node prop used to associate indentation strategies
   with node types. Such a strategy is a function from an indentation
-  context to a column number or null, where null indicates that no
-  definitive indentation can be determined.
+  context to a column number (see also
+  [`indentString`](https://codemirror.net/6/docs/ref/#language.indentString)) or null, where null
+  indicates that no definitive indentation can be determined.
   */
   @JSImport("@codemirror/language", "indentNodeProp")
   @js.native
@@ -948,14 +1064,20 @@ object mod {
   
   /**
   Facet that defines a way to provide a function that computes the
-  appropriate indentation depth at the start of a given line, or
-  `null` to indicate no appropriate indentation could be determined.
+  appropriate indentation depth, as a column number (see
+  [`indentString`](https://codemirror.net/6/docs/ref/#language.indentString)), at the start of a given
+  line. A return value of `null` indicates no indentation can be
+  determined, and the line should inherit the indentation of the one
+  above it. A return value of `undefined` defers to the next indent
+  service.
   */
   @JSImport("@codemirror/language", "indentService")
   @js.native
   val indentService: Facet[
-    js.Function2[/* context */ IndentContext, /* pos */ Double, Double | Null], 
-    js.Array[js.Function2[/* context */ IndentContext, /* pos */ Double, Double | Null]]
+    js.Function2[/* context */ IndentContext, /* pos */ Double, js.UndefOr[Double | Null]], 
+    js.Array[
+      js.Function2[/* context */ IndentContext, /* pos */ Double, js.UndefOr[Double | Null]]
+    ]
   ] = js.native
   
   /**
@@ -967,9 +1089,9 @@ object mod {
   inline def indentString(state: EditorState, cols: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentString")(state.asInstanceOf[js.Any], cols.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
-  Facet for overriding the unit by which indentation happens.
-  Should be a string consisting either entirely of spaces or
-  entirely of tabs. When not set, this defaults to 2 spaces.
+  Facet for overriding the unit by which indentation happens. Should
+  be a string consisting either entirely of the same whitespace
+  character. When not set, this defaults to 2 spaces.
   */
   @JSImport("@codemirror/language", "indentUnit")
   @js.native
@@ -1001,6 +1123,14 @@ object mod {
   */
   inline def matchBrackets(state: EditorState, pos: Double, dir: `-1` | `1`): MatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchBrackets")(state.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[MatchResult | Null]
   inline def matchBrackets(state: EditorState, pos: Double, dir: `-1` | `1`, config: Config): MatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchBrackets")(state.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MatchResult | Null]
+  
+  /**
+  Syntax node prop used to register sublanguages. Should be added to
+  the top level node type for the language.
+  */
+  @JSImport("@codemirror/language", "sublanguageProp")
+  @js.native
+  val sublanguageProp: NodeProp[js.Array[Sublanguage]] = js.native
   
   /**
   Wrap a highlighter in an editor extension that uses it to apply
@@ -1039,6 +1169,15 @@ object mod {
   */
   inline def syntaxTreeAvailable(state: EditorState): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("syntaxTreeAvailable")(state.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def syntaxTreeAvailable(state: EditorState, upto: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("syntaxTreeAvailable")(state.asInstanceOf[js.Any], upto.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
+  Toggle folding at cursors. Unfolds if there is an existing fold
+  starting in that line, tries to find a foldable range around it
+  otherwise.
+  */
+  @JSImport("@codemirror/language", "toggleFold")
+  @js.native
+  val toggleFold: Command = js.native
   
   /**
   Unfold all folded code.
@@ -1340,6 +1479,11 @@ object mod {
     var languageData: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
+      A name for this language.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
       Produce a start state for the parser.
       */
     var startState: js.UndefOr[js.Function1[/* indentUnit */ Double, State]] = js.undefined
@@ -1393,6 +1537,10 @@ object mod {
       
       inline def setLanguageDataUndefined: Self = StObject.set(x, "languageData", js.undefined)
       
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setStartState(value: /* indentUnit */ Double => State): Self = StObject.set(x, "startState", js.Any.fromFunction1(value))
       
       inline def setStartStateUndefined: Self = StObject.set(x, "startState", js.undefined)
@@ -1402,6 +1550,62 @@ object mod {
       inline def setTokenTable(value: StringDictionary[Tag]): Self = StObject.set(x, "tokenTable", value.asInstanceOf[js.Any])
       
       inline def setTokenTableUndefined: Self = StObject.set(x, "tokenTable", js.undefined)
+    }
+  }
+  
+  /**
+  Some languages need to return different [language
+  data](https://codemirror.net/6/docs/ref/#state.EditorState.languageDataAt) for some parts of their
+  tree. Sublanguages, registered by adding a [node
+  prop](https://codemirror.net/6/docs/ref/#language.sublanguageProp) to the language's top syntax
+  node, provide a mechanism to do this.
+  (Note that when using nested parsing, where nested syntax is
+  parsed by a different parser and has its own top node type, you
+  don't need a sublanguage.)
+  */
+  trait Sublanguage extends StObject {
+    
+    /**
+      The language data facet that holds the sublanguage's data.
+      You'll want to use
+      [`defineLanguageFacet`](https://codemirror.net/6/docs/ref/#language.defineLanguageFacet) to create
+      this.
+      */
+    var facet: Facet[StringDictionary[Any], js.Array[StringDictionary[Any]]]
+    
+    /**
+      A predicate that returns whether the node at the queried
+      position is part of the sublanguage.
+      */
+    def test(node: SyntaxNode, state: EditorState): Boolean
+    
+    /**
+      Determines whether the data provided by this sublanguage should
+      completely replace the regular data or be added to it (with
+      higher-precedence). The default is `"extend"`.
+      */
+    var `type`: js.UndefOr[replace | extend] = js.undefined
+  }
+  object Sublanguage {
+    
+    inline def apply(
+      facet: Facet[StringDictionary[Any], js.Array[StringDictionary[Any]]],
+      test: (SyntaxNode, EditorState) => Boolean
+    ): Sublanguage = {
+      val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any], test = js.Any.fromFunction2(test))
+      __obj.asInstanceOf[Sublanguage]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sublanguage] (val x: Self) extends AnyVal {
+      
+      inline def setFacet(value: Facet[StringDictionary[Any], js.Array[StringDictionary[Any]]]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+      
+      inline def setTest(value: (SyntaxNode, EditorState) => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction2(value))
+      
+      inline def setType(value: replace | extend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

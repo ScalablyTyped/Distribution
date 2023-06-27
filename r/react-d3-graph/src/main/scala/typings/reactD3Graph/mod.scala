@@ -78,7 +78,7 @@ object mod {
     
     var highlightOpacity: Double
     
-    var initialZoom: Double
+    var initialZoom: Double | Null
     
     var link: Partial[GraphLevelLinkConfiguration[L]]
     
@@ -112,7 +112,6 @@ object mod {
       height: Double,
       highlightDegree: Double,
       highlightOpacity: Double,
-      initialZoom: Double,
       link: Partial[GraphLevelLinkConfiguration[L]],
       linkHighlightBehavior: Boolean,
       maxZoom: Double,
@@ -124,7 +123,7 @@ object mod {
       staticGraphWithDragAndDrop: Boolean,
       width: Double
     ): GraphConfiguration[N, L] = {
-      val __obj = js.Dynamic.literal(automaticRearrangeAfterDropNode = automaticRearrangeAfterDropNode.asInstanceOf[js.Any], collapsible = collapsible.asInstanceOf[js.Any], d3 = d3.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], focusAnimationDuration = focusAnimationDuration.asInstanceOf[js.Any], focusZoom = focusZoom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], highlightDegree = highlightDegree.asInstanceOf[js.Any], highlightOpacity = highlightOpacity.asInstanceOf[js.Any], initialZoom = initialZoom.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHighlightBehavior = linkHighlightBehavior.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeHighlightBehavior = nodeHighlightBehavior.asInstanceOf[js.Any], panAndZoom = panAndZoom.asInstanceOf[js.Any], staticGraph = staticGraph.asInstanceOf[js.Any], staticGraphWithDragAndDrop = staticGraphWithDragAndDrop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(automaticRearrangeAfterDropNode = automaticRearrangeAfterDropNode.asInstanceOf[js.Any], collapsible = collapsible.asInstanceOf[js.Any], d3 = d3.asInstanceOf[js.Any], directed = directed.asInstanceOf[js.Any], focusAnimationDuration = focusAnimationDuration.asInstanceOf[js.Any], focusZoom = focusZoom.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], highlightDegree = highlightDegree.asInstanceOf[js.Any], highlightOpacity = highlightOpacity.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkHighlightBehavior = linkHighlightBehavior.asInstanceOf[js.Any], maxZoom = maxZoom.asInstanceOf[js.Any], minZoom = minZoom.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeHighlightBehavior = nodeHighlightBehavior.asInstanceOf[js.Any], panAndZoom = panAndZoom.asInstanceOf[js.Any], staticGraph = staticGraph.asInstanceOf[js.Any], staticGraphWithDragAndDrop = staticGraphWithDragAndDrop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], initialZoom = null)
       __obj.asInstanceOf[GraphConfiguration[N, L]]
     }
     
@@ -150,6 +149,8 @@ object mod {
       inline def setHighlightOpacity(value: Double): Self = StObject.set(x, "highlightOpacity", value.asInstanceOf[js.Any])
       
       inline def setInitialZoom(value: Double): Self = StObject.set(x, "initialZoom", value.asInstanceOf[js.Any])
+      
+      inline def setInitialZoomNull: Self = StObject.set(x, "initialZoom", null)
       
       inline def setLink(value: Partial[GraphLevelLinkConfiguration[L]]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       

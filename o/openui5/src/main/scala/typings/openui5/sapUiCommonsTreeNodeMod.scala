@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Opened
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -181,13 +180,13 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TreeNode` itself
       */
@@ -212,7 +211,7 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelected(
       /**
@@ -223,7 +222,7 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TreeNode` itself
       */
@@ -245,13 +244,13 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TreeNode` itself
       */
@@ -277,7 +276,7 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
@@ -288,7 +287,7 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.TreeNode` itself
       */
@@ -327,13 +326,13 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -352,13 +351,13 @@ object sapUiCommonsTreeNodeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def detachToggleOpenState(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeNodeToggleOpenStateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -380,7 +379,7 @@ object sapUiCommonsTreeNodeMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selected selected} to attached listeners.
       *
@@ -393,27 +392,27 @@ object sapUiCommonsTreeNodeMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleOpenState(): this.type = js.native
-    def fireToggleOpenState(/**
+    def fireToggleOpenState(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Opened): this.type = js.native
+    mParameters: TreeNode$ToggleOpenStateEventParameters
+    ): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -690,6 +689,35 @@ object sapUiCommonsTreeNodeMod {
     sText: String): this.type = js.native
   }
   
+  trait TreeNode$SelectedEventParameters extends StObject
+  
+  trait TreeNode$ToggleOpenStateEventParameters extends StObject {
+    
+    /**
+      * Node has been opened if true
+      */
+    var opened: js.UndefOr[Boolean] = js.undefined
+  }
+  object TreeNode$ToggleOpenStateEventParameters {
+    
+    inline def apply(): TreeNode$ToggleOpenStateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TreeNode$ToggleOpenStateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNode$ToggleOpenStateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOpened(value: Boolean): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+      
+      inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    }
+  }
+  
+  type TreeNodeSelectedEvent = typings.openui5.sapUiBaseEventMod.default[TreeNode$SelectedEventParameters]
+  
+  type TreeNodeSelectedEventParameters = TreeNode$SelectedEventParameters
+  
   trait TreeNodeSettings
     extends StObject
        with ElementSettings {
@@ -747,7 +775,9 @@ object sapUiCommonsTreeNodeMod {
     /**
       * Node is selected
       */
-    var selected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selected: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Node text
@@ -757,7 +787,12 @@ object sapUiCommonsTreeNodeMod {
     /**
       * Node state has changed.
       */
-    var toggleOpenState: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleOpenState: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TreeNode$ToggleOpenStateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object TreeNodeSettings {
     
@@ -809,7 +844,7 @@ object sapUiCommonsTreeNodeMod {
       
       inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      inline def setSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction1(value))
+      inline def setSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction1(value))
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
@@ -817,9 +852,15 @@ object sapUiCommonsTreeNodeMod {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setToggleOpenState(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
+      inline def setToggleOpenState(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TreeNode$ToggleOpenStateEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
       
       inline def setToggleOpenStateUndefined: Self = StObject.set(x, "toggleOpenState", js.undefined)
     }
   }
+  
+  type TreeNodeToggleOpenStateEvent = typings.openui5.sapUiBaseEventMod.default[TreeNode$ToggleOpenStateEventParameters]
+  
+  type TreeNodeToggleOpenStateEventParameters = TreeNode$ToggleOpenStateEventParameters
 }

@@ -287,7 +287,7 @@ open class SpriteComponent protected () extends Component {
   /**
     * The current sprite.
     *
-    * @type {Sprite}
+    * @type {import('../../../scene/sprite.js').Sprite}
     */
   def sprite_=(arg: Any): Unit = js.native
   

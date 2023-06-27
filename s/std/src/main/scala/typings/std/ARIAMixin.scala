@@ -6,114 +6,150 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ARIAMixin extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAtomic) */
   /* standard dom */
   var ariaAtomic: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAutoComplete) */
   /* standard dom */
   var ariaAutoComplete: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaBusy) */
   /* standard dom */
   var ariaBusy: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaChecked) */
   /* standard dom */
   var ariaChecked: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColCount) */
   /* standard dom */
   var ariaColCount: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColIndex) */
   /* standard dom */
   var ariaColIndex: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColSpan) */
   /* standard dom */
   var ariaColSpan: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaCurrent) */
   /* standard dom */
   var ariaCurrent: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaDisabled) */
   /* standard dom */
   var ariaDisabled: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaExpanded) */
   /* standard dom */
   var ariaExpanded: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHasPopup) */
   /* standard dom */
   var ariaHasPopup: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHidden) */
   /* standard dom */
   var ariaHidden: java.lang.String | Null
   
   /* standard dom */
   var ariaInvalid: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaKeyShortcuts) */
   /* standard dom */
   var ariaKeyShortcuts: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLabel) */
   /* standard dom */
   var ariaLabel: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLevel) */
   /* standard dom */
   var ariaLevel: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLive) */
   /* standard dom */
   var ariaLive: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaModal) */
   /* standard dom */
   var ariaModal: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiLine) */
   /* standard dom */
   var ariaMultiLine: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiSelectable) */
   /* standard dom */
   var ariaMultiSelectable: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaOrientation) */
   /* standard dom */
   var ariaOrientation: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPlaceholder) */
   /* standard dom */
   var ariaPlaceholder: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPosInSet) */
   /* standard dom */
   var ariaPosInSet: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPressed) */
   /* standard dom */
   var ariaPressed: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaReadOnly) */
   /* standard dom */
   var ariaReadOnly: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRequired) */
   /* standard dom */
   var ariaRequired: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRoleDescription) */
   /* standard dom */
   var ariaRoleDescription: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowCount) */
   /* standard dom */
   var ariaRowCount: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowIndex) */
   /* standard dom */
   var ariaRowIndex: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowSpan) */
   /* standard dom */
   var ariaRowSpan: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSelected) */
   /* standard dom */
   var ariaSelected: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSetSize) */
   /* standard dom */
   var ariaSetSize: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSort) */
   /* standard dom */
   var ariaSort: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMax) */
   /* standard dom */
   var ariaValueMax: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMin) */
   /* standard dom */
   var ariaValueMin: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueNow) */
   /* standard dom */
   var ariaValueNow: java.lang.String | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueText) */
   /* standard dom */
   var ariaValueText: java.lang.String | Null
   

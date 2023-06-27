@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //////////////////
 /**
   * Use the chrome.vpnProvider API to implement a VPN client.
-  * @requires(CrOS) Important: This API works only on Chrome OS.
+  * @requires Important: This API works only on Chrome OS.
   * @requires Permissions: 'vpnProvider'
   * @since Chrome 43.
   */

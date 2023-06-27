@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UniqueValueGroupProperties extends StObject {
   
   /**
-    * Specifies the classes (or unique categories) to group under a [heading](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#heading).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#classes)
-    */
+  		 * Specifies the classes (or unique categories) to group under a [heading](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#heading).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#classes)
+  		 */
   var classes: js.UndefOr[js.Array[UniqueValueClassProperties]] = js.undefined
   
   /**
-    * The heading to be displayed for the group of unique classes in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#heading)
-    */
+  		 * The heading to be displayed for the group of unique classes in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-UniqueValueGroup.html#heading)
+  		 */
   var heading: js.UndefOr[String] = js.undefined
 }
 object UniqueValueGroupProperties {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-double-position-gradients
 
-Typings are for version 4.0.2
+Typings are for version 4.0.4
 
 ## Library description:
 Use double-position gradients in CSS

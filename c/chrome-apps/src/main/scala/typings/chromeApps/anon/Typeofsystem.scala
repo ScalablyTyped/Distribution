@@ -51,7 +51,7 @@ trait Typeofsystem extends StObject {
   // System Power Source //
   /////////////////////////
   /**
-    * @requires(CrOS Kiosk) Chrome OS kiosk app.
+    * @requires CrOS Kiosk -Chrome OS kiosk app.
     * @requires Permissions: 'system.powerSource'
     * @description The chrome.system.powerSource API allows Chrome Kiosk Apps to query the state of connected power sources.
     * @since Latest

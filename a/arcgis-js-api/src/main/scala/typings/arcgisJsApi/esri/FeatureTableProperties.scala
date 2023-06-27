@@ -17,153 +17,162 @@ trait FeatureTableProperties
      with WidgetProperties {
   
   /**
-    * Indicates whether to display the `Attachments` field in the table.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#attachmentsEnabled)
-    */
+  		 * Indicates whether to display the `Attachments` field in the table.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#attachmentsEnabled)
+  		 */
   var attachmentsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Automatically refreshes the table when its associated layer has been updated.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#autoRefreshEnabled)
-    */
+  		 * Automatically refreshes the table when its associated layer has been updated.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#autoRefreshEnabled)
+  		 */
   var autoRefreshEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `true`, columns can be reordered by dragging a column's header.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#columnReorderingEnabled)
-    */
+  		 * When `true`, columns can be reordered by dragging a column's header.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#columnReorderingEnabled)
+  		 */
   var columnReorderingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether editing is enabled on the data within the feature table.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#editingEnabled)
-    */
+  		 * Indicates whether editing is enabled on the data within the feature table.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#editingEnabled)
+  		 */
   var editingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of individual field configuration objects.
-    *
-    * @default All fields except for `CreationDate`, `Creator`, `EditDate`, `Editor`, and `GlobalID`
-    * @deprecated since version 4.24. Use {@link module:esri/widgets/FeatureTable/support/FieldColumnTemplate} via the FeatureTable's {@link module:esri/widgets/FeatureTable/support/TableTemplate tableTemplate}.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#fieldConfigs)
-    */
+  		 * An array of individual field configuration objects.
+  		 *
+  		 * @default All fields except for `CreationDate`, `Creator`, `EditDate`, `Editor`, and `GlobalID`
+  		 * @deprecated since version 4.24. Use {@link module:esri/widgets/FeatureTable/support/FieldColumnTemplate} via the FeatureTable's {@link module:esri/widgets/FeatureTable/support/TableTemplate tableTemplate}.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#fieldConfigs)
+  		 */
   var fieldConfigs: js.UndefOr[js.Array[FieldColumnConfigProperties]] = js.undefined
   
   /**
-    * Set this property to filter the features displayed in the table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#filterGeometry)
-    */
+  		 * Set this property to filter the features displayed in the table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#filterGeometry)
+  		 */
   var filterGeometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
-    * A collection of string [field.names](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) that are to remain hidden within the table.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#hiddenFields)
-    */
+  		 * A collection of string [field.names](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) that are to remain hidden within the table.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#hiddenFields)
+  		 */
   var hiddenFields: js.UndefOr[CollectionProperties[String]] = js.undefined
   
   /**
-    * Indicates whether to highlight the associated feature when a row is selected.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightEnabled)
-    */
+  		 * Indicates whether to highlight the associated feature when a row is selected.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightEnabled)
+  		 */
   var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This property accepts and returns a collection of feature ObjectId's.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightIds)
-    */
+  		 * This property accepts and returns a collection of feature ObjectId's.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightIds)
+  		 */
   var highlightIds: js.UndefOr[CollectionProperties[Double]] = js.undefined
   
   /**
-    * Indicates whether to highlight the associated feature when a row is selected.
-    *
-    * @default true
-    * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable#highlightEnabled highlightEnabled} instead.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightOnRowSelectEnabled)
-    */
+  		 * Indicates whether to highlight the associated feature when a row is selected.
+  		 *
+  		 * @default true
+  		 * @deprecated since version 4.25. Use {@link module:esri/widgets/FeatureTable#highlightEnabled highlightEnabled} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#highlightOnRowSelectEnabled)
+  		 */
   var highlightOnRowSelectEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), or [WFSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html) containing the fields and attributes to display within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#layer)
-    */
+  		 * The associated [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html), or [WFSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WFSLayer.html) containing the fields and attributes to display within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#layer)
+  		 */
   var layer: js.UndefOr[
     FeatureLayerPropertiestyp | SceneLayerPropertiestypes | GeoJSONLayerPropertiestyp | CSVLayerPropertiestypecsv | WFSLayerPropertiestypewfs | ImageryLayerPropertiestyp
   ] = js.undefined
   
   /**
-    * Set this object to customize the feature table's menu content.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#menuConfig)
-    */
+  		 * Set this object to customize the feature table's menu content.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#menuConfig)
+  		 */
   var menuConfig: js.UndefOr[ButtonMenuConfig] = js.undefined
   
   /**
-    * Indicates whether sorting multiple columns is supported within the table.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled)
-    */
+  		 * Indicates whether sorting multiple columns is supported within the table.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#multiSortEnabled)
+  		 */
   var multiSortEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The default page size used when displaying features within the table.
-    *
-    * @default 50
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#pageSize)
-    */
+  		 * The default page size used when displaying features within the table.
+  		 *
+  		 * @default 50
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#pageSize)
+  		 */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-TableTemplate.html) used for the feature table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#tableTemplate)
-    */
+  		 * Indicates whether to fetch geometries for the corresponding features displayed in the table.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#returnGeometryEnabled)
+  		 */
+  var returnGeometryEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-TableTemplate.html) used for the feature table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#tableTemplate)
+  		 */
   var tableTemplate: js.UndefOr[TableTemplateProperties] = js.undefined
   
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#view)
-    */
+  		 * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#view)
+  		 */
   var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[FeatureTableViewModelProperties] = js.undefined
   
   /**
-    * The visible elements that are displayed within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#visibleElements)
-    */
+  		 * The visible elements that are displayed within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#visibleElements)
+  		 */
   var visibleElements: js.UndefOr[FeatureTableVisibleElements] = js.undefined
 }
 object FeatureTableProperties {
@@ -239,6 +248,10 @@ object FeatureTableProperties {
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setReturnGeometryEnabled(value: Boolean): Self = StObject.set(x, "returnGeometryEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setReturnGeometryEnabledUndefined: Self = StObject.set(x, "returnGeometryEnabled", js.undefined)
     
     inline def setTableTemplate(value: TableTemplateProperties): Self = StObject.set(x, "tableTemplate", value.asInstanceOf[js.Any])
     

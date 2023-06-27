@@ -15,6 +15,22 @@ trait AtomDataLoader extends StObject {
   def load(url: String, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   def load(url: String, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixCallback, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: String, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: Unit, clear: Boolean): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: WebixProxy, `type`: Unit, callback: WebixCallback, clear: Boolean): js.Promise[Any] = js.native
   
   def parse(data: String): Unit = js.native
   def parse(data: String, `type`: String): Unit = js.native

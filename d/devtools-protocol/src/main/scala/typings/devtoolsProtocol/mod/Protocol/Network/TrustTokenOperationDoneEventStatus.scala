@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Ok
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidArgument
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.MissingIssuerKeys
   - typings.devtoolsProtocol.devtoolsProtocolStrings.FailedPrecondition
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ResourceExhausted
   - typings.devtoolsProtocol.devtoolsProtocolStrings.AlreadyExists
@@ -31,6 +32,8 @@ object TrustTokenOperationDoneEventStatus {
   inline def InternalError: typings.devtoolsProtocol.devtoolsProtocolStrings.InternalError = "InternalError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InternalError]
   
   inline def InvalidArgument: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidArgument = "InvalidArgument".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidArgument]
+  
+  inline def MissingIssuerKeys: typings.devtoolsProtocol.devtoolsProtocolStrings.MissingIssuerKeys = "MissingIssuerKeys".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MissingIssuerKeys]
   
   inline def Ok: typings.devtoolsProtocol.devtoolsProtocolStrings.Ok = "Ok".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Ok]
   

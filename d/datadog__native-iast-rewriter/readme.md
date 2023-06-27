@@ -1,7 +1,7 @@
 
 # Scala.js typings for datadog__native-iast-rewriter
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 
 

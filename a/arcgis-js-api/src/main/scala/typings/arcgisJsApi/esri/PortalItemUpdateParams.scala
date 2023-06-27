@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalItemUpdateParams extends StObject {
   
   /**
-    * **Optional**.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update)
-    */
+  		 * **Optional**.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#update)
+  		 */
   var data: js.UndefOr[String | Any] = js.undefined
 }
 object PortalItemUpdateParams {

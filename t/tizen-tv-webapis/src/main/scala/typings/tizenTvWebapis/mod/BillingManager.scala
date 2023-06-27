@@ -34,9 +34,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 4.0
     *
@@ -89,9 +89,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 2.4
     *
@@ -143,9 +143,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 4.0
     *
@@ -206,9 +206,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 4.0
     *
@@ -267,9 +267,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 5.5
     *
@@ -329,9 +329,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 4.0
     *
@@ -371,9 +371,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type UnknownError, for any other error.
+    * @throws WebAPIException with error type UnknownError, for any other error.
     *
     * @since 4.0
     *
@@ -401,9 +401,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter contains an invalid value.
     *
     * @since 4.0
     *
@@ -444,9 +444,9 @@ trait BillingManager extends StObject {
     *
     * @privilegeName http://developer.samsung.com/privilege/billing
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
+    * @throws WebAPIException with error type TypeMismatchError, if any of input parameter is not compatible with its expected type
     *
-    * @throw WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
+    * @throws WebAPIException with error type InvalidValuesError, if serverType contains an invalid value
     *
     * @since 4.0
     *

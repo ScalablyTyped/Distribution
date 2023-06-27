@@ -10,9 +10,9 @@ trait ApplicationProperties
      with Accessor {
   
   /**
-    * View-specific properties of application and UI elements for the web map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html#viewing)
-    */
+  		 * View-specific properties of application and UI elements for the web map.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html#viewing)
+  		 */
   var viewing: Viewing = js.native
 }

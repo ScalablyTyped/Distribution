@@ -12,5 +12,5 @@ object distLibTransformValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformValue(config: DirectionConfig): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformValue")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformValue(config: DirectionConfig): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformValue")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

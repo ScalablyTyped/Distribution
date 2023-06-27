@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnergyPlanContractFull
   extends StObject
-     with EnergyPlanContract {
+     with EnergyPlanContractV2 {
   
   /**
     * Description of the benefit period.  Should only be present if termType has the value ONGOING

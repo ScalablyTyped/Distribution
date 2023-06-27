@@ -8,5 +8,5 @@ object distTypesVersionMod {
   
   @JSImport("@octokit/graphql/dist-types/version", "VERSION")
   @js.native
-  val VERSION: /* "5.0.5" */ String = js.native
+  val VERSION: /* "5.0.6" */ String = js.native
 }

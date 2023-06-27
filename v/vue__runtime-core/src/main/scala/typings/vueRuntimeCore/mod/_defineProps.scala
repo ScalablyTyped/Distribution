@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait _defineProps extends StObject {
   
-  def apply[TypeProps](): DefineProps_[TypeProps] = js.native
+  def apply[TypeProps](): DefineProps_[TypeProps, BooleanKey[TypeProps, /* keyof TypeProps */ String]] = js.native
   def apply[PP /* <: ComponentObjectPropsOptions[Data] */](props: PP): Prettify[ExtractPropTypes[PP]] = js.native
   def apply[PropNames /* <: String */](props: js.Array[PropNames]): Prettify[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any

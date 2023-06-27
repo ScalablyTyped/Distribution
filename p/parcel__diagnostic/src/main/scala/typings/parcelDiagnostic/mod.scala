@@ -3,8 +3,10 @@ package typings.parcelDiagnostic
 import typings.parcelDiagnostic.anon.Column
 import typings.parcelDiagnostic.anon.Data
 import typings.parcelDiagnostic.anon.End
+import typings.parcelDiagnostic.anon.EndStart
 import typings.parcelDiagnostic.anon.FilePath
 import typings.parcelDiagnostic.anon.Key
+import typings.parcelDiagnostic.anon.Start
 import typings.parcelDiagnostic.parcelDiagnosticStrings.key
 import typings.parcelDiagnostic.parcelDiagnosticStrings.value
 import typings.std.Error
@@ -39,6 +41,9 @@ object mod {
   
   inline def anyToDiagnostic(input: Diagnostifiable): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("anyToDiagnostic")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
   
+  inline def convertSourceLocationToHighlight[Location /* <: EndStart */](param0: Location): DiagnosticCodeHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSourceLocationToHighlight")(param0.asInstanceOf[js.Any]).asInstanceOf[DiagnosticCodeHighlight]
+  inline def convertSourceLocationToHighlight[Location /* <: EndStart */](param0: Location, message: String): DiagnosticCodeHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("convertSourceLocationToHighlight")(param0.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[DiagnosticCodeHighlight]
+  
   inline def encodeJSONKeyComponent(component: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeJSONKeyComponent")(component.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def errorToDiagnostic(error: String): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorToDiagnostic")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
@@ -53,13 +58,21 @@ object mod {
   inline def generateJSONCodeHighlights(data: String, ids: js.Array[Key]): js.Array[DiagnosticCodeHighlight] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateJSONCodeHighlights")(data.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiagnosticCodeHighlight]]
   inline def generateJSONCodeHighlights(data: Data, ids: js.Array[Key]): js.Array[DiagnosticCodeHighlight] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateJSONCodeHighlights")(data.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiagnosticCodeHighlight]]
   
+  inline def getJSONHighlightLocation(
+    pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mapping */ Any
+  ): End = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSONHighlightLocation")(pos.asInstanceOf[js.Any]).asInstanceOf[End]
+  inline def getJSONHighlightLocation(
+    pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mapping */ Any,
+    `type`: key | value
+  ): End = (^.asInstanceOf[js.Dynamic].applyDynamic("getJSONHighlightLocation")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[End]
+  
   inline def getJSONSourceLocation(
     pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mapping */ Any
-  ): End = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSONSourceLocation")(pos.asInstanceOf[js.Any]).asInstanceOf[End]
+  ): Start = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSONSourceLocation")(pos.asInstanceOf[js.Any]).asInstanceOf[Start]
   inline def getJSONSourceLocation(
     pos: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mapping */ Any,
     `type`: key | value
-  ): End = (^.asInstanceOf[js.Dynamic].applyDynamic("getJSONSourceLocation")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[End]
+  ): Start = (^.asInstanceOf[js.Dynamic].applyDynamic("getJSONSourceLocation")(pos.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Start]
   
   object md {
     

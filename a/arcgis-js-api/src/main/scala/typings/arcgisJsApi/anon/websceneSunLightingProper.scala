@@ -10,30 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait websceneSunLightingProper extends StObject {
   
   /**
-    * The current date and time of the simulated sun.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#date)
-    */
+  		 * The current date and time of the simulated sun.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#date)
+  		 */
   var date: js.UndefOr[DateProperties] = js.undefined
   
   /**
-    * Indicates whether to show shadows cast by the sun.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#directShadowsEnabled)
-    */
+  		 * Indicates whether to show shadows cast by the sun.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#directShadowsEnabled)
+  		 */
   var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The UTC time zone offset in hours that should be displayed in the UI to represent the date.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#displayUTCOffset)
-    */
+  		 * The UTC time zone offset in hours that should be displayed in the UI to represent the date.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-SunLighting.html#displayUTCOffset)
+  		 */
   var displayUTCOffset: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[sun] = js.undefined

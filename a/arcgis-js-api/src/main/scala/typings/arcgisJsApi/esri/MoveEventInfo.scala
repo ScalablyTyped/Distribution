@@ -12,31 +12,31 @@ trait MoveEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * Number of pixels moved on the x-axis from the last known position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
-    */
+  		 * Number of pixels moved on the x-axis from the last known position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
+  		 */
   var dx: Double
   
   /**
-    * Number of pixels moved on the y-axis from the last known position.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
-    */
+  		 * Number of pixels moved on the y-axis from the last known position.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
+  		 */
   var dy: Double
   
   /**
-    * The instance of the graphic that is being moved.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
-    */
+  		 * The instance of the graphic that is being moved.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
+  		 */
   var mover: Graphic
   
   /**
-    * Returns information indicating the stage of the move operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
-    */
+  		 * Returns information indicating the stage of the move operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#MoveEventInfo)
+  		 */
   var `type`: `move-start` | move | `move-stop`
 }
 object MoveEventInfo {

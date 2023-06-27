@@ -36,6 +36,10 @@ object sortablejsStrings {
   inline def animation: animation = "animation".asInstanceOf[animation]
   
   @js.native
+  sealed trait animationComposition extends StObject
+  inline def animationComposition: animationComposition = "animationComposition".asInstanceOf[animationComposition]
+  
+  @js.native
   sealed trait animationDelay extends StObject
   inline def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
   
@@ -543,10 +547,6 @@ object sortablejsStrings {
   inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait contentVisibility extends StObject
-  inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
-  
-  @js.native
   sealed trait continue extends StObject
   inline def continue: continue = "continue".asInstanceOf[continue]
   
@@ -745,6 +745,18 @@ object sortablejsStrings {
   @js.native
   sealed trait fontSynthesis extends StObject
   inline def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
+  
+  @js.native
+  sealed trait fontSynthesisSmallCaps extends StObject
+  inline def fontSynthesisSmallCaps: fontSynthesisSmallCaps = "fontSynthesisSmallCaps".asInstanceOf[fontSynthesisSmallCaps]
+  
+  @js.native
+  sealed trait fontSynthesisStyle extends StObject
+  inline def fontSynthesisStyle: fontSynthesisStyle = "fontSynthesisStyle".asInstanceOf[fontSynthesisStyle]
+  
+  @js.native
+  sealed trait fontSynthesisWeight extends StObject
+  inline def fontSynthesisWeight: fontSynthesisWeight = "fontSynthesisWeight".asInstanceOf[fontSynthesisWeight]
   
   @js.native
   sealed trait fontVariant extends StObject
@@ -1351,6 +1363,10 @@ object sortablejsStrings {
   @js.native
   sealed trait paddingTop extends StObject
   inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait pageBreakAfter extends StObject

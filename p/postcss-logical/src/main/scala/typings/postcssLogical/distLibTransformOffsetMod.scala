@@ -11,7 +11,7 @@ object distLibTransformOffsetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def transformOffset(prop: String): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformOffset")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformOffset(prop: String): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformOffset")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
   
-  inline def transformOffsetShorthand(side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformOffsetShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, Boolean]]
+  inline def transformOffsetShorthand(side: js.Tuple2[String, String]): js.Function1[/* declaration */ Declaration, js.Array[Declaration]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformOffsetShorthand")(side.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* declaration */ Declaration, js.Array[Declaration]]]
 }

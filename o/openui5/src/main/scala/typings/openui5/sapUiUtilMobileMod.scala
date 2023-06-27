@@ -1,6 +1,7 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
+import typings.openui5.anon.Favicon
 import typings.openui5.anon.HideBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +14,7 @@ object sapUiUtilMobileMod extends Shortcut {
   val default: Mobile = js.native
   
   /**
-    * @SINCE 1.58
+    * @since 1.58
     */
   @js.native
   trait Mobile extends StObject {
@@ -31,18 +32,18 @@ object sapUiUtilMobileMod extends Shortcut {
       * 	 - statusBar: the iOS status bar color, "default", "black" or "black-translucent" (default: "default")
       *
       * 	 - hideBrowser: whether the browser UI should be hidden as far as possible to make the app feel more
-      * 			native (default: true)
+      *     native (default: true)
       * 	 - preventScroll: whether native scrolling should be disabled in order to prevent the "rubber-band"
-      * 			effect where the whole window is moved (default: true)
+      *     effect where the whole window is moved (default: true)
       * 	 - preventPhoneNumberDetection: whether Safari Mobile should be prevented from transforming any numbers
-      * 			that look like phone numbers into clickable links; this should be left as "true", otherwise it might
-      * 			break controls because Safari actually changes the DOM. This only affects all page content which is created
-      * 			after init() is called.
+      *     that look like phone numbers into clickable links; this should be left as "true", otherwise it might
+      *     break controls because Safari actually changes the DOM. This only affects all page content which is created
+      *     after init() is called.
       * 	 - rootId: the ID of the root element that should be made fullscreen; only used when hideBrowser is
-      * 			set (default: the document.body)
+      *     set (default: the document.body)
       * 	 - useFullScreenHeight: a boolean that defines whether the height of the html root element should be
-      * 			set to 100%, which is required for other elements to cover the full height (default: true) homeIcon:
-      * 			deprecated since 1.12, use sap/ui/util/Mobile.setIcons instead.
+      *     set to 100%, which is required for other elements to cover the full height (default: true) homeIcon:
+      *     deprecated since 1.12, use sap/ui/util/Mobile.setIcons instead.
       */
     def init(): Unit = js.native
     def init(/**
@@ -72,7 +73,7 @@ object sapUiUtilMobileMod extends Shortcut {
       * 	 - phone@2: a 180x180 pixel version for iPhones with high pixel density
       * 	 - tablet@2: a 167x167 pixel version for iPads with high pixel density
       * 	 - precomposed: whether the home icons already have some glare effect (otherwise iOS will add it) (default:
-      * 			false)
+      *     false)
       * 	 - favicon: the ICO file to be used inside the browser and for desktop shortcuts
       *
       * One example is:
@@ -92,7 +93,10 @@ object sapUiUtilMobileMod extends Shortcut {
       * by using icons with glare effect, so the "precomposed" property can be set to "true". Some Android devices
       * may also use the favicon for bookmarks instead of the home icons.
       */
-    def setIcons(oIcons: js.Object): Unit = js.native
+    def setIcons(/**
+      * Icon settings
+      */
+    oIcons: Favicon): Unit = js.native
     
     /**
       * Sets the "apple-mobile-web-app-capable" and "mobile-web-app-capable" meta information which defines whether

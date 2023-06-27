@@ -4,29 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Fetch API interface represents the response to a request. */
+/**
+  * This Fetch API interface represents the response to a request.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response)
+  */
 trait Response
   extends StObject
      with Body {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/headers) */
   /* standard dom */
   val headers: Headers
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/ok) */
   /* standard dom */
   val ok: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/redirected) */
   /* standard dom */
   val redirected: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/status) */
   /* standard dom */
   val status: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/statusText) */
   /* standard dom */
   val statusText: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/type) */
   /* standard dom */
   val `type`: ResponseType
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Response/url) */
   /* standard dom */
   val url: java.lang.String
 }

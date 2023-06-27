@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.reference_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.file
   - typings.microsoftGraph.microsoftGraphStrings.item
-  - typings.microsoftGraph.microsoftGraphStrings.reference
+  - typings.microsoftGraph.microsoftGraphStrings.reference_
 */
 trait AttachmentType extends StObject
 object AttachmentType {
@@ -16,5 +17,5 @@ object AttachmentType {
   
   inline def item: typings.microsoftGraph.microsoftGraphStrings.item = "item".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.item]
   
-  inline def reference: typings.microsoftGraph.microsoftGraphStrings.reference = "reference".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reference]
+  inline def reference: reference_ = "reference".asInstanceOf[reference_]
 }

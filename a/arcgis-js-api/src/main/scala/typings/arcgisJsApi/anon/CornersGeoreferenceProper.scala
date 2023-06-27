@@ -10,39 +10,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CornersGeoreferenceProper extends StObject {
   
   /**
-    * The bottom left [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#bottomLeft)
-    */
+  		 * The bottom left [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#bottomLeft)
+  		 */
   var bottomLeft: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The bottom right [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#bottomRight)
-    */
+  		 * The bottom right [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#bottomRight)
+  		 */
   var bottomRight: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The top left [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#topLeft)
-    */
+  		 * The top left [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#topLeft)
+  		 */
   var topLeft: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The top right [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#topRight)
-    */
+  		 * The top right [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) of the bounding box representing the geographic location of the image or video element being added to the [MediaLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html).
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CornersGeoreference.html#topRight)
+  		 */
   var topRight: js.UndefOr[PointProperties] = js.undefined
   
   var `type`: corners

@@ -192,6 +192,7 @@ import typings.std.stdStrings.ruby
 import typings.std.stdStrings.s
 import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
+import typings.std.stdStrings.search
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
 import typings.std.stdStrings.semantics
@@ -238,11 +239,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. */
+/**
+  * Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element)
+  */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.std.EventTarget because Already inherited
 - typings.std.Node because Already inherited
-- typings.std.ParentNode because var conflicts: nodeValue, textContent. Inlined childElementCount, children, firstElementChild, lastElementChild, append, prepend, querySelector_a, querySelector_abbr, querySelector_address, querySelector_area, querySelector_article, querySelector_aside, querySelector_audio, querySelector_b, querySelector_base, querySelector_bdi, querySelector_bdo, querySelector_blockquote, querySelector_body, querySelector_br, querySelector_button, querySelector_canvas, querySelector_caption, querySelector_cite, querySelector_code, querySelector_col, querySelector_colgroup, querySelector_data, querySelector_datalist, querySelector_dd, querySelector_del, querySelector_details, querySelector_dfn, querySelector_dialog, querySelector_div, querySelector_dl, querySelector_dt, querySelector_em, querySelector_embed, querySelector_fieldset, querySelector_figcaption, querySelector_figure, querySelector_footer, querySelector_form, querySelector_h1, querySelector_h2, querySelector_h3, querySelector_h4, querySelector_h5, querySelector_h6, querySelector_head, querySelector_header, querySelector_hgroup, querySelector_hr, querySelector_html, querySelector_i, querySelector_iframe, querySelector_img, querySelector_input, querySelector_ins, querySelector_kbd, querySelector_label, querySelector_legend, querySelector_li, querySelector_link, querySelector_main, querySelector_map, querySelector_mark, querySelector_menu, querySelector_meta, querySelector_meter, querySelector_nav, querySelector_noscript, querySelector_object, querySelector_ol, querySelector_optgroup, querySelector_option, querySelector_output, querySelector_p, querySelector_picture, querySelector_pre, querySelector_progress, querySelector_q, querySelector_rp, querySelector_rt, querySelector_ruby, querySelector_s, querySelector_samp, querySelector_script, querySelector_section, querySelector_select, querySelector_slot, querySelector_small, querySelector_source, querySelector_span, querySelector_strong, querySelector_style, querySelector_sub, querySelector_summary, querySelector_sup, querySelector_table, querySelector_tbody, querySelector_td, querySelector_template, querySelector_textarea, querySelector_tfoot, querySelector_th, querySelector_thead, querySelector_time, querySelector_title, querySelector_tr, querySelector_track, querySelector_u, querySelector_ul, querySelector_var, querySelector_video, querySelector_wbr, querySelector_a, querySelector_animate, querySelector_animateMotion, querySelector_animateTransform, querySelector_circle, querySelector_clipPath, querySelector_defs, querySelector_desc, querySelector_ellipse, querySelector_feBlend, querySelector_feColorMatrix, querySelector_feComponentTransfer, querySelector_feComposite, querySelector_feConvolveMatrix, querySelector_feDiffuseLighting, querySelector_feDisplacementMap, querySelector_feDistantLight, querySelector_feDropShadow, querySelector_feFlood, querySelector_feFuncA, querySelector_feFuncB, querySelector_feFuncG, querySelector_feFuncR, querySelector_feGaussianBlur, querySelector_feImage, querySelector_feMerge, querySelector_feMergeNode, querySelector_feMorphology, querySelector_feOffset, querySelector_fePointLight, querySelector_feSpecularLighting, querySelector_feSpotLight, querySelector_feTile, querySelector_feTurbulence, querySelector_filter, querySelector_foreignObject, querySelector_g, querySelector_image, querySelector_line, querySelector_linearGradient, querySelector_marker, querySelector_mask, querySelector_metadata, querySelector_mpath, querySelector_path, querySelector_pattern, querySelector_polygon, querySelector_polyline, querySelector_radialGradient, querySelector_rect, querySelector_script, querySelector_set, querySelector_stop, querySelector_style, querySelector_svg, querySelector_switch, querySelector_symbol, querySelector_text, querySelector_textPath, querySelector_title, querySelector_tspan, querySelector_use, querySelector_view, querySelector_annotation, querySelector_annotationxml, querySelector_maction, querySelector_math, querySelector_merror, querySelector_mfrac, querySelector_mi, querySelector_mmultiscripts, querySelector_mn, querySelector_mo, querySelector_mover, querySelector_mpadded, querySelector_mphantom, querySelector_mprescripts, querySelector_mroot, querySelector_mrow, querySelector_ms, querySelector_mspace, querySelector_msqrt, querySelector_mstyle, querySelector_msub, querySelector_msubsup, querySelector_msup, querySelector_mtable, querySelector_mtd, querySelector_mtext, querySelector_mtr, querySelector_munder, querySelector_munderover, querySelector_semantics, querySelector_acronym, querySelector_applet, querySelector_basefont, querySelector_bgsound, querySelector_big, querySelector_blink, querySelector_center, querySelector_dir, querySelector_font, querySelector_frame, querySelector_frameset, querySelector_isindex, querySelector_keygen, querySelector_listing, querySelector_marquee, querySelector_menuitem, querySelector_multicol, querySelector_nextid, querySelector_nobr, querySelector_noembed, querySelector_noframes, querySelector_param, querySelector_plaintext, querySelector_rb, querySelector_rtc, querySelector_spacer, querySelector_strike, querySelector_tt, querySelector_xmp, querySelector, querySelectorAll_a, querySelectorAll_abbr, querySelectorAll_address, querySelectorAll_area, querySelectorAll_article, querySelectorAll_aside, querySelectorAll_audio, querySelectorAll_b, querySelectorAll_base, querySelectorAll_bdi, querySelectorAll_bdo, querySelectorAll_blockquote, querySelectorAll_body, querySelectorAll_br, querySelectorAll_button, querySelectorAll_canvas, querySelectorAll_caption, querySelectorAll_cite, querySelectorAll_code, querySelectorAll_col, querySelectorAll_colgroup, querySelectorAll_data, querySelectorAll_datalist, querySelectorAll_dd, querySelectorAll_del, querySelectorAll_details, querySelectorAll_dfn, querySelectorAll_dialog, querySelectorAll_div, querySelectorAll_dl, querySelectorAll_dt, querySelectorAll_em, querySelectorAll_embed, querySelectorAll_fieldset, querySelectorAll_figcaption, querySelectorAll_figure, querySelectorAll_footer, querySelectorAll_form, querySelectorAll_h1, querySelectorAll_h2, querySelectorAll_h3, querySelectorAll_h4, querySelectorAll_h5, querySelectorAll_h6, querySelectorAll_head, querySelectorAll_header, querySelectorAll_hgroup, querySelectorAll_hr, querySelectorAll_html, querySelectorAll_i, querySelectorAll_iframe, querySelectorAll_img, querySelectorAll_input, querySelectorAll_ins, querySelectorAll_kbd, querySelectorAll_label, querySelectorAll_legend, querySelectorAll_li, querySelectorAll_link, querySelectorAll_main, querySelectorAll_map, querySelectorAll_mark, querySelectorAll_menu, querySelectorAll_meta, querySelectorAll_meter, querySelectorAll_nav, querySelectorAll_noscript, querySelectorAll_object, querySelectorAll_ol, querySelectorAll_optgroup, querySelectorAll_option, querySelectorAll_output, querySelectorAll_p, querySelectorAll_picture, querySelectorAll_pre, querySelectorAll_progress, querySelectorAll_q, querySelectorAll_rp, querySelectorAll_rt, querySelectorAll_ruby, querySelectorAll_s, querySelectorAll_samp, querySelectorAll_script, querySelectorAll_section, querySelectorAll_select, querySelectorAll_slot, querySelectorAll_small, querySelectorAll_source, querySelectorAll_span, querySelectorAll_strong, querySelectorAll_style, querySelectorAll_sub, querySelectorAll_summary, querySelectorAll_sup, querySelectorAll_table, querySelectorAll_tbody, querySelectorAll_td, querySelectorAll_template, querySelectorAll_textarea, querySelectorAll_tfoot, querySelectorAll_th, querySelectorAll_thead, querySelectorAll_time, querySelectorAll_title, querySelectorAll_tr, querySelectorAll_track, querySelectorAll_u, querySelectorAll_ul, querySelectorAll_var, querySelectorAll_video, querySelectorAll_wbr, querySelectorAll_a, querySelectorAll_animate, querySelectorAll_animateMotion, querySelectorAll_animateTransform, querySelectorAll_circle, querySelectorAll_clipPath, querySelectorAll_defs, querySelectorAll_desc, querySelectorAll_ellipse, querySelectorAll_feBlend, querySelectorAll_feColorMatrix, querySelectorAll_feComponentTransfer, querySelectorAll_feComposite, querySelectorAll_feConvolveMatrix, querySelectorAll_feDiffuseLighting, querySelectorAll_feDisplacementMap, querySelectorAll_feDistantLight, querySelectorAll_feDropShadow, querySelectorAll_feFlood, querySelectorAll_feFuncA, querySelectorAll_feFuncB, querySelectorAll_feFuncG, querySelectorAll_feFuncR, querySelectorAll_feGaussianBlur, querySelectorAll_feImage, querySelectorAll_feMerge, querySelectorAll_feMergeNode, querySelectorAll_feMorphology, querySelectorAll_feOffset, querySelectorAll_fePointLight, querySelectorAll_feSpecularLighting, querySelectorAll_feSpotLight, querySelectorAll_feTile, querySelectorAll_feTurbulence, querySelectorAll_filter, querySelectorAll_foreignObject, querySelectorAll_g, querySelectorAll_image, querySelectorAll_line, querySelectorAll_linearGradient, querySelectorAll_marker, querySelectorAll_mask, querySelectorAll_metadata, querySelectorAll_mpath, querySelectorAll_path, querySelectorAll_pattern, querySelectorAll_polygon, querySelectorAll_polyline, querySelectorAll_radialGradient, querySelectorAll_rect, querySelectorAll_script, querySelectorAll_set, querySelectorAll_stop, querySelectorAll_style, querySelectorAll_svg, querySelectorAll_switch, querySelectorAll_symbol, querySelectorAll_text, querySelectorAll_textPath, querySelectorAll_title, querySelectorAll_tspan, querySelectorAll_use, querySelectorAll_view, querySelectorAll_annotation, querySelectorAll_annotationxml, querySelectorAll_maction, querySelectorAll_math, querySelectorAll_merror, querySelectorAll_mfrac, querySelectorAll_mi, querySelectorAll_mmultiscripts, querySelectorAll_mn, querySelectorAll_mo, querySelectorAll_mover, querySelectorAll_mpadded, querySelectorAll_mphantom, querySelectorAll_mprescripts, querySelectorAll_mroot, querySelectorAll_mrow, querySelectorAll_ms, querySelectorAll_mspace, querySelectorAll_msqrt, querySelectorAll_mstyle, querySelectorAll_msub, querySelectorAll_msubsup, querySelectorAll_msup, querySelectorAll_mtable, querySelectorAll_mtd, querySelectorAll_mtext, querySelectorAll_mtr, querySelectorAll_munder, querySelectorAll_munderover, querySelectorAll_semantics, querySelectorAll_acronym, querySelectorAll_applet, querySelectorAll_basefont, querySelectorAll_bgsound, querySelectorAll_big, querySelectorAll_blink, querySelectorAll_center, querySelectorAll_dir, querySelectorAll_font, querySelectorAll_frame, querySelectorAll_frameset, querySelectorAll_isindex, querySelectorAll_keygen, querySelectorAll_listing, querySelectorAll_marquee, querySelectorAll_menuitem, querySelectorAll_multicol, querySelectorAll_nextid, querySelectorAll_nobr, querySelectorAll_noembed, querySelectorAll_noframes, querySelectorAll_param, querySelectorAll_plaintext, querySelectorAll_rb, querySelectorAll_rtc, querySelectorAll_spacer, querySelectorAll_strike, querySelectorAll_tt, querySelectorAll_xmp, querySelectorAll, replaceChildren */ @js.native
+- typings.std.ParentNode because var conflicts: nodeValue, textContent. Inlined childElementCount, children, firstElementChild, lastElementChild, append, prepend, querySelector_a, querySelector_abbr, querySelector_address, querySelector_area, querySelector_article, querySelector_aside, querySelector_audio, querySelector_b, querySelector_base, querySelector_bdi, querySelector_bdo, querySelector_blockquote, querySelector_body, querySelector_br, querySelector_button, querySelector_canvas, querySelector_caption, querySelector_cite, querySelector_code, querySelector_col, querySelector_colgroup, querySelector_data, querySelector_datalist, querySelector_dd, querySelector_del, querySelector_details, querySelector_dfn, querySelector_dialog, querySelector_div, querySelector_dl, querySelector_dt, querySelector_em, querySelector_embed, querySelector_fieldset, querySelector_figcaption, querySelector_figure, querySelector_footer, querySelector_form, querySelector_h1, querySelector_h2, querySelector_h3, querySelector_h4, querySelector_h5, querySelector_h6, querySelector_head, querySelector_header, querySelector_hgroup, querySelector_hr, querySelector_html, querySelector_i, querySelector_iframe, querySelector_img, querySelector_input, querySelector_ins, querySelector_kbd, querySelector_label, querySelector_legend, querySelector_li, querySelector_link, querySelector_main, querySelector_map, querySelector_mark, querySelector_menu, querySelector_meta, querySelector_meter, querySelector_nav, querySelector_noscript, querySelector_object, querySelector_ol, querySelector_optgroup, querySelector_option, querySelector_output, querySelector_p, querySelector_picture, querySelector_pre, querySelector_progress, querySelector_q, querySelector_rp, querySelector_rt, querySelector_ruby, querySelector_s, querySelector_samp, querySelector_script, querySelector_search, querySelector_section, querySelector_select, querySelector_slot, querySelector_small, querySelector_source, querySelector_span, querySelector_strong, querySelector_style, querySelector_sub, querySelector_summary, querySelector_sup, querySelector_table, querySelector_tbody, querySelector_td, querySelector_template, querySelector_textarea, querySelector_tfoot, querySelector_th, querySelector_thead, querySelector_time, querySelector_title, querySelector_tr, querySelector_track, querySelector_u, querySelector_ul, querySelector_var, querySelector_video, querySelector_wbr, querySelector_a, querySelector_animate, querySelector_animateMotion, querySelector_animateTransform, querySelector_circle, querySelector_clipPath, querySelector_defs, querySelector_desc, querySelector_ellipse, querySelector_feBlend, querySelector_feColorMatrix, querySelector_feComponentTransfer, querySelector_feComposite, querySelector_feConvolveMatrix, querySelector_feDiffuseLighting, querySelector_feDisplacementMap, querySelector_feDistantLight, querySelector_feDropShadow, querySelector_feFlood, querySelector_feFuncA, querySelector_feFuncB, querySelector_feFuncG, querySelector_feFuncR, querySelector_feGaussianBlur, querySelector_feImage, querySelector_feMerge, querySelector_feMergeNode, querySelector_feMorphology, querySelector_feOffset, querySelector_fePointLight, querySelector_feSpecularLighting, querySelector_feSpotLight, querySelector_feTile, querySelector_feTurbulence, querySelector_filter, querySelector_foreignObject, querySelector_g, querySelector_image, querySelector_line, querySelector_linearGradient, querySelector_marker, querySelector_mask, querySelector_metadata, querySelector_mpath, querySelector_path, querySelector_pattern, querySelector_polygon, querySelector_polyline, querySelector_radialGradient, querySelector_rect, querySelector_script, querySelector_set, querySelector_stop, querySelector_style, querySelector_svg, querySelector_switch, querySelector_symbol, querySelector_text, querySelector_textPath, querySelector_title, querySelector_tspan, querySelector_use, querySelector_view, querySelector_annotation, querySelector_annotationxml, querySelector_maction, querySelector_math, querySelector_merror, querySelector_mfrac, querySelector_mi, querySelector_mmultiscripts, querySelector_mn, querySelector_mo, querySelector_mover, querySelector_mpadded, querySelector_mphantom, querySelector_mprescripts, querySelector_mroot, querySelector_mrow, querySelector_ms, querySelector_mspace, querySelector_msqrt, querySelector_mstyle, querySelector_msub, querySelector_msubsup, querySelector_msup, querySelector_mtable, querySelector_mtd, querySelector_mtext, querySelector_mtr, querySelector_munder, querySelector_munderover, querySelector_semantics, querySelector_acronym, querySelector_applet, querySelector_basefont, querySelector_bgsound, querySelector_big, querySelector_blink, querySelector_center, querySelector_dir, querySelector_font, querySelector_frame, querySelector_frameset, querySelector_isindex, querySelector_keygen, querySelector_listing, querySelector_marquee, querySelector_menuitem, querySelector_multicol, querySelector_nextid, querySelector_nobr, querySelector_noembed, querySelector_noframes, querySelector_param, querySelector_plaintext, querySelector_rb, querySelector_rtc, querySelector_spacer, querySelector_strike, querySelector_tt, querySelector_xmp, querySelector, querySelectorAll_a, querySelectorAll_abbr, querySelectorAll_address, querySelectorAll_area, querySelectorAll_article, querySelectorAll_aside, querySelectorAll_audio, querySelectorAll_b, querySelectorAll_base, querySelectorAll_bdi, querySelectorAll_bdo, querySelectorAll_blockquote, querySelectorAll_body, querySelectorAll_br, querySelectorAll_button, querySelectorAll_canvas, querySelectorAll_caption, querySelectorAll_cite, querySelectorAll_code, querySelectorAll_col, querySelectorAll_colgroup, querySelectorAll_data, querySelectorAll_datalist, querySelectorAll_dd, querySelectorAll_del, querySelectorAll_details, querySelectorAll_dfn, querySelectorAll_dialog, querySelectorAll_div, querySelectorAll_dl, querySelectorAll_dt, querySelectorAll_em, querySelectorAll_embed, querySelectorAll_fieldset, querySelectorAll_figcaption, querySelectorAll_figure, querySelectorAll_footer, querySelectorAll_form, querySelectorAll_h1, querySelectorAll_h2, querySelectorAll_h3, querySelectorAll_h4, querySelectorAll_h5, querySelectorAll_h6, querySelectorAll_head, querySelectorAll_header, querySelectorAll_hgroup, querySelectorAll_hr, querySelectorAll_html, querySelectorAll_i, querySelectorAll_iframe, querySelectorAll_img, querySelectorAll_input, querySelectorAll_ins, querySelectorAll_kbd, querySelectorAll_label, querySelectorAll_legend, querySelectorAll_li, querySelectorAll_link, querySelectorAll_main, querySelectorAll_map, querySelectorAll_mark, querySelectorAll_menu, querySelectorAll_meta, querySelectorAll_meter, querySelectorAll_nav, querySelectorAll_noscript, querySelectorAll_object, querySelectorAll_ol, querySelectorAll_optgroup, querySelectorAll_option, querySelectorAll_output, querySelectorAll_p, querySelectorAll_picture, querySelectorAll_pre, querySelectorAll_progress, querySelectorAll_q, querySelectorAll_rp, querySelectorAll_rt, querySelectorAll_ruby, querySelectorAll_s, querySelectorAll_samp, querySelectorAll_script, querySelectorAll_search, querySelectorAll_section, querySelectorAll_select, querySelectorAll_slot, querySelectorAll_small, querySelectorAll_source, querySelectorAll_span, querySelectorAll_strong, querySelectorAll_style, querySelectorAll_sub, querySelectorAll_summary, querySelectorAll_sup, querySelectorAll_table, querySelectorAll_tbody, querySelectorAll_td, querySelectorAll_template, querySelectorAll_textarea, querySelectorAll_tfoot, querySelectorAll_th, querySelectorAll_thead, querySelectorAll_time, querySelectorAll_title, querySelectorAll_tr, querySelectorAll_track, querySelectorAll_u, querySelectorAll_ul, querySelectorAll_var, querySelectorAll_video, querySelectorAll_wbr, querySelectorAll_a, querySelectorAll_animate, querySelectorAll_animateMotion, querySelectorAll_animateTransform, querySelectorAll_circle, querySelectorAll_clipPath, querySelectorAll_defs, querySelectorAll_desc, querySelectorAll_ellipse, querySelectorAll_feBlend, querySelectorAll_feColorMatrix, querySelectorAll_feComponentTransfer, querySelectorAll_feComposite, querySelectorAll_feConvolveMatrix, querySelectorAll_feDiffuseLighting, querySelectorAll_feDisplacementMap, querySelectorAll_feDistantLight, querySelectorAll_feDropShadow, querySelectorAll_feFlood, querySelectorAll_feFuncA, querySelectorAll_feFuncB, querySelectorAll_feFuncG, querySelectorAll_feFuncR, querySelectorAll_feGaussianBlur, querySelectorAll_feImage, querySelectorAll_feMerge, querySelectorAll_feMergeNode, querySelectorAll_feMorphology, querySelectorAll_feOffset, querySelectorAll_fePointLight, querySelectorAll_feSpecularLighting, querySelectorAll_feSpotLight, querySelectorAll_feTile, querySelectorAll_feTurbulence, querySelectorAll_filter, querySelectorAll_foreignObject, querySelectorAll_g, querySelectorAll_image, querySelectorAll_line, querySelectorAll_linearGradient, querySelectorAll_marker, querySelectorAll_mask, querySelectorAll_metadata, querySelectorAll_mpath, querySelectorAll_path, querySelectorAll_pattern, querySelectorAll_polygon, querySelectorAll_polyline, querySelectorAll_radialGradient, querySelectorAll_rect, querySelectorAll_script, querySelectorAll_set, querySelectorAll_stop, querySelectorAll_style, querySelectorAll_svg, querySelectorAll_switch, querySelectorAll_symbol, querySelectorAll_text, querySelectorAll_textPath, querySelectorAll_title, querySelectorAll_tspan, querySelectorAll_use, querySelectorAll_view, querySelectorAll_annotation, querySelectorAll_annotationxml, querySelectorAll_maction, querySelectorAll_math, querySelectorAll_merror, querySelectorAll_mfrac, querySelectorAll_mi, querySelectorAll_mmultiscripts, querySelectorAll_mn, querySelectorAll_mo, querySelectorAll_mover, querySelectorAll_mpadded, querySelectorAll_mphantom, querySelectorAll_mprescripts, querySelectorAll_mroot, querySelectorAll_mrow, querySelectorAll_ms, querySelectorAll_mspace, querySelectorAll_msqrt, querySelectorAll_mstyle, querySelectorAll_msub, querySelectorAll_msubsup, querySelectorAll_msup, querySelectorAll_mtable, querySelectorAll_mtd, querySelectorAll_mtext, querySelectorAll_mtr, querySelectorAll_munder, querySelectorAll_munderover, querySelectorAll_semantics, querySelectorAll_acronym, querySelectorAll_applet, querySelectorAll_basefont, querySelectorAll_bgsound, querySelectorAll_big, querySelectorAll_blink, querySelectorAll_center, querySelectorAll_dir, querySelectorAll_font, querySelectorAll_frame, querySelectorAll_frameset, querySelectorAll_isindex, querySelectorAll_keygen, querySelectorAll_listing, querySelectorAll_marquee, querySelectorAll_menuitem, querySelectorAll_multicol, querySelectorAll_nextid, querySelectorAll_nobr, querySelectorAll_noembed, querySelectorAll_noframes, querySelectorAll_param, querySelectorAll_plaintext, querySelectorAll_rb, querySelectorAll_rtc, querySelectorAll_spacer, querySelectorAll_strike, querySelectorAll_tt, querySelectorAll_xmp, querySelectorAll, replaceChildren */ @js.native
 trait Element
   extends StObject
      with ARIAMixin
@@ -286,14 +291,21 @@ trait Element
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/append)
     */
   /* standard dom */
   def append(nodes: (Node | java.lang.String)*): Unit = js.native
   
-  /** Creates a shadow root for element and returns it. */
+  /**
+    * Creates a shadow root for element and returns it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/attachShadow)
+    */
   /* standard dom */
   def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/attributes) */
   /* standard dom */
   val attributes: NamedNodeMap = js.native
   
@@ -301,36 +313,57 @@ trait Element
   def checkVisibility(): scala.Boolean = js.native
   def checkVisibility(options: CheckVisibilityOptions): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/childElementCount) */
   /* standard dom */
   val childElementCount: Double = js.native
   
-  /** Returns the child elements. */
+  /**
+    * Returns the child elements.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/children)
+    */
   /* standard dom */
   val children: HTMLCollection = js.native
   
-  /** Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object. */
+  /**
+    * Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/classList)
+    */
   /* standard dom */
   val classList: DOMTokenList = js.native
   
-  /** Returns the value of element's class content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's class content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/className)
+    */
   /* standard dom */
   var className: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientHeight) */
   /* standard dom */
   val clientHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientLeft) */
   /* standard dom */
   val clientLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientTop) */
   /* standard dom */
   val clientTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientWidth) */
   /* standard dom */
   val clientWidth: Double = js.native
   
   /* standard dom */
   def closest[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
-  /** Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise. */
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/closest)
+    */
   /* standard dom */
   @JSName("closest")
   def closest_a(selector: a): HTMLAnchorElement | Null = js.native
@@ -656,6 +689,8 @@ trait Element
   @JSName("closest")
   def closest_script(selector: script): HTMLScriptElement | Null = js.native
   @JSName("closest")
+  def closest_search(selector: search): HTMLElement | Null = js.native
+  @JSName("closest")
   def closest_section(selector: section): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_select(selector: select): HTMLSelectElement | Null = js.native
@@ -734,37 +769,65 @@ trait Element
   @JSName("closest")
   def closest_wbr(selector: wbr): HTMLElement | Null = js.native
   
-  /** Returns the first child that is an element, and null otherwise. */
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/computedStyleMap) */
+  /* standard dom */
+  def computedStyleMap(): StylePropertyMapReadOnly = js.native
+  
+  /**
+    * Returns the first child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/firstElementChild)
+    */
   /* standard dom */
   val firstElementChild: Element | Null = js.native
   
-  /** Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise. */
+  /**
+    * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttribute)
+    */
   /* standard dom */
   def getAttribute(qualifiedName: java.lang.String): java.lang.String | Null = js.native
   
-  /** Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise. */
+  /**
+    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNS)
+    */
   /* standard dom */
   def getAttributeNS(namespace: java.lang.String, localName: java.lang.String): java.lang.String | Null = js.native
   def getAttributeNS(namespace: Null, localName: java.lang.String): java.lang.String | Null = js.native
   
-  /** Returns the qualified names of all element's attributes. Can contain duplicates. */
+  /**
+    * Returns the qualified names of all element's attributes. Can contain duplicates.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames)
+    */
   /* standard dom */
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNode) */
   /* standard dom */
   def getAttributeNode(qualifiedName: java.lang.String): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNodeNS) */
   /* standard dom */
   def getAttributeNodeNS(namespace: java.lang.String, localName: java.lang.String): Attr | Null = js.native
   def getAttributeNodeNS(namespace: Null, localName: java.lang.String): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect) */
   /* standard dom */
   def getBoundingClientRect(): DOMRect = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getClientRects) */
   /* standard dom */
   def getClientRects(): DOMRectList = js.native
   
-  /** Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes. */
+  /**
+    * Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByClassName)
+    */
   /* standard dom */
   def getElementsByClassName(classNames: java.lang.String): HTMLCollectionOf[Element] = js.native
   
@@ -780,6 +843,7 @@ trait Element
     namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML,
     localName: java.lang.String
   ): HTMLCollectionOf[MathMLElement] = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagNameNS) */
   /* standard dom */
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
@@ -787,6 +851,7 @@ trait Element
   @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName) */
   /* standard dom */
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
@@ -1164,6 +1229,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_script(qualifiedName: script): HTMLCollectionOf[HTMLScriptElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_search(qualifiedName: search): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_section(qualifiedName: section): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
@@ -1250,57 +1317,96 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_xmp(qualifiedName: xmp): HTMLCollectionOf[HTMLPreElement] = js.native
   
-  /** Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise. */
+  /**
+    * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttribute)
+    */
   /* standard dom */
   def hasAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
   
-  /** Returns true if element has an attribute whose namespace is namespace and local name is localName. */
+  /**
+    * Returns true if element has an attribute whose namespace is namespace and local name is localName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttributeNS)
+    */
   /* standard dom */
   def hasAttributeNS(namespace: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
   def hasAttributeNS(namespace: Null, localName: java.lang.String): scala.Boolean = js.native
   
-  /** Returns true if element has attributes, and false otherwise. */
+  /**
+    * Returns true if element has attributes, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasAttributes)
+    */
   /* standard dom */
   def hasAttributes(): scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasPointerCapture) */
   /* standard dom */
   def hasPointerCapture(pointerId: Double): scala.Boolean = js.native
   
-  /** Returns the value of element's id content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's id content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/id)
+    */
   /* standard dom */
   var id: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentElement) */
   /* standard dom */
   def insertAdjacentElement(where: InsertPosition, element: Element): Element | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentHTML) */
   /* standard dom */
   def insertAdjacentHTML(position: InsertPosition, text: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentText) */
   /* standard dom */
   def insertAdjacentText(where: InsertPosition, data: java.lang.String): Unit = js.native
   
-  /** Returns the last child that is an element, and null otherwise. */
+  /**
+    * Returns the last child that is an element, and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/lastElementChild)
+    */
   /* standard dom */
   val lastElementChild: Element | Null = js.native
   
-  /** Returns the local name. */
+  /**
+    * Returns the local name.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/localName)
+    */
   /* standard dom */
   val localName: java.lang.String = js.native
   
-  /** Returns true if matching selectors against element's root yields element, and false otherwise. */
+  /**
+    * Returns true if matching selectors against element's root yields element, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/matches)
+    */
   /* standard dom */
   def matches(selectors: java.lang.String): scala.Boolean = js.native
   
-  /** Returns the namespace. */
+  /**
+    * Returns the namespace.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/namespaceURI)
+    */
   /* standard dom */
   val namespaceURI: java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenchange_event) */
   /* standard dom */
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenerror_event) */
   /* standard dom */
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/outerHTML) */
   /* standard dom */
   var outerHTML: java.lang.String = js.native
   
@@ -1308,10 +1414,15 @@ trait Element
   @JSName("ownerDocument")
   val ownerDocument_Element: Document = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/part) */
   /* standard dom */
   val part: DOMTokenList = js.native
   
-  /** Returns the namespace prefix. */
+  /**
+    * Returns the namespace prefix.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/prefix)
+    */
   /* standard dom */
   val prefix: java.lang.String | Null = js.native
   
@@ -1319,6 +1430,8 @@ trait Element
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/prepend)
     */
   /* standard dom */
   def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
@@ -1328,7 +1441,11 @@ trait Element
   
   /* standard dom */
   def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
-  /** Returns all element descendants of node that match selectors. */
+  /**
+    * Returns all element descendants of node that match selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
+    */
   /* standard dom */
   @JSName("querySelectorAll")
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
@@ -1706,6 +1823,8 @@ trait Element
   @JSName("querySelectorAll")
   def querySelectorAll_script(selectors: script): NodeListOf[HTMLScriptElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_search(selectors: search): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_section(selectors: section): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
@@ -1792,7 +1911,11 @@ trait Element
   @JSName("querySelectorAll")
   def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
-  /** Returns the first element that is a descendant of node that matches selectors. */
+  /**
+    * Returns the first element that is a descendant of node that matches selectors.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/querySelector)
+    */
   /* standard dom */
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
@@ -2170,6 +2293,8 @@ trait Element
   @JSName("querySelector")
   def querySelector_script(selectors: script): HTMLScriptElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_search(selectors: search): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_section(selectors: section): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
@@ -2256,18 +2381,28 @@ trait Element
   @JSName("querySelector")
   def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/releasePointerCapture) */
   /* standard dom */
   def releasePointerCapture(pointerId: Double): Unit = js.native
   
-  /** Removes element's first attribute whose qualified name is qualifiedName. */
+  /**
+    * Removes element's first attribute whose qualified name is qualifiedName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttribute)
+    */
   /* standard dom */
   def removeAttribute(qualifiedName: java.lang.String): Unit = js.native
   
-  /** Removes element's attribute whose namespace is namespace and local name is localName. */
+  /**
+    * Removes element's attribute whose namespace is namespace and local name is localName.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttributeNS)
+    */
   /* standard dom */
   def removeAttributeNS(namespace: java.lang.String, localName: java.lang.String): Unit = js.native
   def removeAttributeNS(namespace: Null, localName: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttributeNode) */
   /* standard dom */
   def removeAttributeNode(attr: Attr): Attr = js.native
   
@@ -2305,6 +2440,8 @@ trait Element
     * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
     *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/replaceChildren)
     */
   /* standard dom */
   def replaceChildren(nodes: (Node | java.lang.String)*): Unit = js.native
@@ -2313,76 +2450,110 @@ trait Element
     * Displays element fullscreen and resolves promise when done.
     *
     * When supplied, options's navigationUI member indicates whether showing navigation UI while in fullscreen is preferred or not. If set to "show", navigation simplicity is preferred over screen space, and if set to "hide", more screen space is preferred. User agents are always free to honor user preference over the application's. The default value "auto" indicates no application preference.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/requestFullscreen)
     */
   /* standard dom */
   def requestFullscreen(): js.Promise[Unit] = js.native
   def requestFullscreen(options: FullscreenOptions): js.Promise[Unit] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/requestPointerLock) */
   /* standard dom */
   def requestPointerLock(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scroll) */
   /* standard dom */
   def scroll(): Unit = js.native
   def scroll(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scroll(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollBy) */
   /* standard dom */
   def scrollBy(): Unit = js.native
   def scrollBy(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollBy(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollHeight) */
   /* standard dom */
   val scrollHeight: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollIntoView) */
   /* standard dom */
   def scrollIntoView(): Unit = js.native
   def scrollIntoView(arg: scala.Boolean): Unit = js.native
   def scrollIntoView(arg: ScrollIntoViewOptions): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollLeft) */
   /* standard dom */
   var scrollLeft: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTo) */
   /* standard dom */
   def scrollTo(): Unit = js.native
   def scrollTo(options: ScrollToOptions): Unit = js.native
   /* standard dom */
   def scrollTo(x: Double, y: Double): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTop) */
   /* standard dom */
   var scrollTop: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollWidth) */
   /* standard dom */
   val scrollWidth: Double = js.native
   
-  /** Sets the value of element's first attribute whose qualified name is qualifiedName to value. */
+  /**
+    * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttribute)
+    */
   /* standard dom */
   def setAttribute(qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   
-  /** Sets the value of element's attribute whose namespace is namespace and local name is localName to value. */
+  /**
+    * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNS)
+    */
   /* standard dom */
   def setAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   def setAttributeNS(namespace: Null, qualifiedName: java.lang.String, value: java.lang.String): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNode) */
   /* standard dom */
   def setAttributeNode(attr: Attr): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNodeNS) */
   /* standard dom */
   def setAttributeNodeNS(attr: Attr): Attr | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setPointerCapture) */
   /* standard dom */
   def setPointerCapture(pointerId: Double): Unit = js.native
   
-  /** Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise. */
+  /**
+    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/shadowRoot)
+    */
   /* standard dom */
   val shadowRoot: ShadowRoot | Null = js.native
   
-  /** Returns the value of element's slot content attribute. Can be set to change it. */
+  /**
+    * Returns the value of element's slot content attribute. Can be set to change it.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/slot)
+    */
   /* standard dom */
   var slot: java.lang.String = js.native
   
-  /** Returns the HTML-uppercased qualified name. */
+  /**
+    * Returns the HTML-uppercased qualified name.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/tagName)
+    */
   /* standard dom */
   val tagName: java.lang.String = js.native
   
@@ -2390,12 +2561,18 @@ trait Element
     * If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
     *
     * Returns true if qualifiedName is now present, and false otherwise.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute)
     */
   /* standard dom */
   def toggleAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
   def toggleAttribute(qualifiedName: java.lang.String, force: scala.Boolean): scala.Boolean = js.native
   
-  /** @deprecated This is a legacy alias of `matches`. */
+  /**
+    * @deprecated This is a legacy alias of `matches`.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/matches)
+    */
   /* standard dom */
   def webkitMatchesSelector(selectors: java.lang.String): scala.Boolean = js.native
 }

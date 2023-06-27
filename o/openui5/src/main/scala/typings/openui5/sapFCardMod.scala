@@ -152,7 +152,7 @@ object sapFCardMod {
     def getHeader(): IHeader = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Gets current value of property {@link #getHeaderPosition headerPosition}.
       *
@@ -185,7 +185,7 @@ object sapFCardMod {
     oHeader: IHeader): this.type = js.native
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Sets a new value for property {@link #getHeaderPosition headerPosition}.
       *
@@ -225,7 +225,7 @@ object sapFCardMod {
     var header: js.UndefOr[IHeader] = js.undefined
     
     /**
-      * @SINCE 1.65
+      * @since 1.65
       *
       * Defines the position of the Card Header.
       */

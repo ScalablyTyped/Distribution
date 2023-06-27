@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FrameTaskHandle extends StObject {
   
   /**
-    * Pause the execution the frame task at every frame.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
-    */
+  		 * Pause the execution the frame task at every frame.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
+  		 */
   def pause(): scala.Unit
   
   /**
-    * Removes the frame task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
-    */
+  		 * Removes the frame task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
+  		 */
   def remove(): scala.Unit
   
   /**
-    * Resumes the execution the frame task.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
-    */
+  		 * Resumes the execution the frame task.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#FrameTaskHandle)
+  		 */
   def resume(): scala.Unit
 }
 object FrameTaskHandle {

@@ -1,9 +1,6 @@
 package typings.openui5
 
 import typings.openui5.anon.CanOverflow
-import typings.openui5.anon.Def
-import typings.openui5.anon.Execute
-import typings.openui5.anon.Key
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -30,7 +27,7 @@ object sapUiFlVariantsVariantManagementMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:f1430c0337534d469da3a56307ff76af Key User Adaptation: Enable Your App}
+    * 	{@link https://ui5.sap.com/#/topic/f1430c0337534d469da3a56307ff76af Key User Adaptation: Enable Your App}
     */
   open class default () extends VariantManagement {
     def this(/**
@@ -196,13 +193,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -228,7 +225,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancel(
       /**
@@ -239,7 +236,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -261,13 +258,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInitialized(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -293,7 +290,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachInitialized(
       /**
@@ -304,7 +301,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -326,13 +323,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit]
     ): this.type = js.native
     def attachManage(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -358,7 +355,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit]
     ): this.type = js.native
     def attachManage(
       /**
@@ -369,7 +366,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -392,13 +389,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit]
     ): this.type = js.native
     def attachSave(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -425,7 +422,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit]
     ): this.type = js.native
     def attachSave(
       /**
@@ -436,7 +433,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -458,13 +455,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -490,7 +487,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -501,7 +498,7 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.fl.variants.VariantManagement`
       * itself
@@ -520,13 +517,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancel(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -544,13 +541,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachInitialized(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -568,13 +565,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit]
     ): this.type = js.native
     def detachManage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementManageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -592,13 +589,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit]
     ): this.type = js.native
     def detachSave(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSaveEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -616,13 +613,13 @@ object sapUiFlVariantsVariantManagementMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ VariantManagementSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -630,7 +627,7 @@ object sapUiFlVariantsVariantManagementMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
@@ -643,7 +640,7 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:initialized initialized} to attached listeners.
       *
@@ -656,43 +653,49 @@ object sapUiFlVariantsVariantManagementMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:manage manage} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireManage(): this.type = js.native
-    def fireManage(/**
+    def fireManage(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Def): this.type = js.native
+    mParameters: VariantManagement$ManageEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:save save} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSave(): this.type = js.native
-    def fireSave(/**
+    def fireSave(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Execute): this.type = js.native
+    mParameters: VariantManagement$SaveEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Key): this.type = js.native
+    mParameters: VariantManagement$SelectEventParameters
+    ): this.type = js.native
     
     /**
       * Gets the currently selected variant key.
@@ -737,13 +740,12 @@ object sapUiFlVariantsVariantManagementMod {
     def getExecuteOnSelectionForStandardDefault(): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getFor
-      * for}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getFor for}.
       */
     def getFor(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Gets current value of property {@link #getHeaderLevel headerLevel}.
       *
@@ -780,7 +782,7 @@ object sapUiFlVariantsVariantManagementMod {
     def getManualVariantKey(): Boolean = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Gets current value of property {@link #getMaxWidth maxWidth}.
       *
@@ -811,7 +813,7 @@ object sapUiFlVariantsVariantManagementMod {
     def getModified(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Required by the {@link sap.m.IOverflowToolbarContent} interface. Registers invalidations event which
       * is fired when width of the control is changed.
@@ -845,7 +847,7 @@ object sapUiFlVariantsVariantManagementMod {
     def getShowSetAsDefault(): Boolean = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Gets current value of property {@link #getTitleStyle titleStyle}.
       *
@@ -970,7 +972,7 @@ object sapUiFlVariantsVariantManagementMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Sets a new value for property {@link #getHeaderLevel headerLevel}.
       *
@@ -1031,7 +1033,7 @@ object sapUiFlVariantsVariantManagementMod {
     bManualVariantKey: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Sets a new value for property {@link #getMaxWidth maxWidth}.
       *
@@ -1103,7 +1105,7 @@ object sapUiFlVariantsVariantManagementMod {
     bShowSetAsDefault: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Sets a new value for property {@link #getTitleStyle titleStyle}.
       *
@@ -1147,6 +1149,189 @@ object sapUiFlVariantsVariantManagementMod {
     bUpdateVariantInURL: Boolean): this.type = js.native
   }
   
+  trait VariantManagement$CancelEventParameters extends StObject
+  
+  trait VariantManagement$InitializedEventParameters extends StObject
+  
+  trait VariantManagement$ManageEventParameters extends StObject {
+    
+    /**
+      * The default variant key
+      */
+    var `def`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * List of deleted variant keys
+      */
+    var deleted: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * List of variant keys and the associated Execute on Selection indicator
+      */
+    var exe: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    /**
+      * List of changed variants. Each entry contains a 'key' - the variant key and a 'name' - the new title
+      * of the variant
+      */
+    var renamed: js.UndefOr[js.Array[js.Object]] = js.undefined
+  }
+  object VariantManagement$ManageEventParameters {
+    
+    inline def apply(): VariantManagement$ManageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VariantManagement$ManageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantManagement$ManageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+      
+      inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+      
+      inline def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      
+      inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+      
+      inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value*))
+      
+      inline def setExe(value: js.Array[js.Object]): Self = StObject.set(x, "exe", value.asInstanceOf[js.Any])
+      
+      inline def setExeUndefined: Self = StObject.set(x, "exe", js.undefined)
+      
+      inline def setExeVarargs(value: js.Object*): Self = StObject.set(x, "exe", js.Array(value*))
+      
+      inline def setRenamed(value: js.Array[js.Object]): Self = StObject.set(x, "renamed", value.asInstanceOf[js.Any])
+      
+      inline def setRenamedUndefined: Self = StObject.set(x, "renamed", js.undefined)
+      
+      inline def setRenamedVarargs(value: js.Object*): Self = StObject.set(x, "renamed", js.Array(value*))
+    }
+  }
+  
+  trait VariantManagement$SaveEventParameters extends StObject {
+    
+    /**
+      * The default variant indicator
+      */
+    var `def`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Apply Automatically indicator
+      */
+    var execute: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Variant key
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Variant title
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates if an existing variant is overwritten or if a new variant is created.
+      */
+    var overwrite: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates the check box state for 'Public'.
+      */
+    var public: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates the check box state for 'Create Tile'.
+      * Note:
+      * This event parameter is used only internally.
+      */
+    var tile: js.UndefOr[Boolean] = js.undefined
+  }
+  object VariantManagement$SaveEventParameters {
+    
+    inline def apply(): VariantManagement$SaveEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VariantManagement$SaveEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantManagement$SaveEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDef(value: Boolean): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+      
+      inline def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
+      
+      inline def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      
+      inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      
+      inline def setTile(value: Boolean): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+      
+      inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    }
+  }
+  
+  trait VariantManagement$SelectEventParameters extends StObject {
+    
+    /**
+      * Variant key
+      */
+    var key: js.UndefOr[String] = js.undefined
+  }
+  object VariantManagement$SelectEventParameters {
+    
+    inline def apply(): VariantManagement$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VariantManagement$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantManagement$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  type VariantManagementCancelEvent = typings.openui5.sapUiBaseEventMod.default[VariantManagement$CancelEventParameters]
+  
+  type VariantManagementCancelEventParameters = VariantManagement$CancelEventParameters
+  
+  type VariantManagementInitializedEvent = typings.openui5.sapUiBaseEventMod.default[VariantManagement$InitializedEventParameters]
+  
+  type VariantManagementInitializedEventParameters = VariantManagement$InitializedEventParameters
+  
+  type VariantManagementManageEvent = typings.openui5.sapUiBaseEventMod.default[VariantManagement$ManageEventParameters]
+  
+  type VariantManagementManageEventParameters = VariantManagement$ManageEventParameters
+  
+  type VariantManagementSaveEvent = typings.openui5.sapUiBaseEventMod.default[VariantManagement$SaveEventParameters]
+  
+  type VariantManagementSaveEventParameters = VariantManagement$SaveEventParameters
+  
+  type VariantManagementSelectEvent = typings.openui5.sapUiBaseEventMod.default[VariantManagement$SelectEventParameters]
+  
+  type VariantManagementSelectEventParameters = VariantManagement$SelectEventParameters
+  
   trait VariantManagementSettings
     extends StObject
        with ControlSettings {
@@ -1154,7 +1339,9 @@ object sapUiFlVariantsVariantManagementMod {
     /**
       * This event is fired when users presses the cancel button inside Save As dialog.
       */
-    var cancel: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancel: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the Apply Automatically text for the standard variant in the Manage Views dialog if the application
@@ -1183,7 +1370,7 @@ object sapUiFlVariantsVariantManagementMod {
     var `for`: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.104
+      * @since 1.104
       *
       * Semantic level of the header. For more information, see {@link sap.m.Title#setLevel}.
       */
@@ -1202,12 +1389,19 @@ object sapUiFlVariantsVariantManagementMod {
     /**
       * This event is fired when the model and context are set.
       */
-    var initialized: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var initialized: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This event is fired when users apply changes to variants in the Manage Views dialog.
       */
-    var manage: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var manage: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$ManageEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set to `true`, the key for a vendor variant will be added manually.
@@ -1218,7 +1412,7 @@ object sapUiFlVariantsVariantManagementMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Sets the maximum width of the control.
       */
@@ -1244,12 +1438,22 @@ object sapUiFlVariantsVariantManagementMod {
       * This event is fired when the Save View dialog or the Save As dialog is closed with the
       * save button.
       */
-    var save: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var save: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$SaveEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event is fired when a new variant is selected.
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Indicated if the defaulting functionality is enabled.
@@ -1259,7 +1463,7 @@ object sapUiFlVariantsVariantManagementMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Defines the style of the title. For more information, see {@link sap.m.Title#setTitleStyle}.
       */
@@ -1286,7 +1490,7 @@ object sapUiFlVariantsVariantManagementMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: VariantManagementSettings] (val x: Self) extends AnyVal {
       
-      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
@@ -1318,11 +1522,13 @@ object sapUiFlVariantsVariantManagementMod {
       
       inline def setInErrorStateUndefined: Self = StObject.set(x, "inErrorState", js.undefined)
       
-      inline def setInitialized(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+      inline def setInitialized(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
       
       inline def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
       
-      inline def setManage(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "manage", js.Any.fromFunction1(value))
+      inline def setManage(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$ManageEventParameters] => Unit
+      ): Self = StObject.set(x, "manage", js.Any.fromFunction1(value))
       
       inline def setManageUndefined: Self = StObject.set(x, "manage", js.undefined)
       
@@ -1342,11 +1548,15 @@ object sapUiFlVariantsVariantManagementMod {
       
       inline def setResetOnContextChangeUndefined: Self = StObject.set(x, "resetOnContextChange", js.undefined)
       
-      inline def setSave(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$SaveEventParameters] => Unit
+      ): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
       inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[VariantManagement$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

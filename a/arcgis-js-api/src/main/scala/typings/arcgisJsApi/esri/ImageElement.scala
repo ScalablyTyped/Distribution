@@ -16,23 +16,23 @@ trait ImageElement
      with MediaElement {
   
   /**
-    * The image content referenced in the image element instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#content)
-    */
+  		 * The image content referenced in the image element instance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#content)
+  		 */
   val content: HTMLImageElement | HTMLCanvasElement | ImageData = js.native
   
   /**
-    * The image element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#image)
-    */
+  		 * The image element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#image)
+  		 */
   var image: String | HTMLImageElement | HTMLCanvasElement | ImageData = js.native
   
   /**
-    * The element type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#type)
-    */
+  		 * The element type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ImageElement.html#type)
+  		 */
   val `type`: image = js.native
 }

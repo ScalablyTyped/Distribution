@@ -234,13 +234,13 @@ object CheckBox {
     var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the State of CheckBox.See below to get available CheckState
-      * @Default {null}
+      * @default {null}
       */
     var checkState: js.UndefOr[CheckState | String] = js.undefined
     
     /** Specifies whether CheckBox has to be in checked or not. We can also specify array of string as value for this property. If any of the value in the specified array matches the
       * value of the textbox, then it will be considered as checked. It will be useful in MVVM binding, specify array type to identify the values of the checked CheckBoxes.
-      * @Default {false}
+      * @default {false}
       */
     var checked: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
@@ -258,52 +258,52 @@ object CheckBox {
     
     /** Specifies the persist property for CheckBox while initialization. The persist API save current model value to browser cookies for state maintains. While refreshing the CheckBox
       * control page the model value apply from browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the Right to Left direction to Checkbox
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the enable or disable Tri-State for checkbox control.
-      * @Default {false}
+      * @default {false}
       */
     var enableTriState: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the checkbox control state.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** It allows to define the characteristics of the CheckBox control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specified value to be added an id attribute of the CheckBox.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Specify the prefix value of id to be added before the current id of the CheckBox.
-      * @Default {ej}
+      * @default {ej}
       */
     var idPrefix: js.UndefOr[String] = js.undefined
     
     /** Specifies the name attribute of the CheckBox.
-      * @Default {null}
+      * @default {null}
       */
     var name: js.UndefOr[String] = js.undefined
     
     /** Displays rounded corner borders to CheckBox
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the CheckBox.See below to know available CheckboxSize
-      * @Default {small}
+      * @default {small}
       */
     var size: js.UndefOr[CheckboxSize | String] = js.undefined
     
@@ -312,17 +312,17 @@ object CheckBox {
     var text: js.UndefOr[String] = js.undefined
     
     /** Set the jQuery validation error message in CheckBox.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in CheckBox.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value attribute of the CheckBox.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String] = js.undefined
   }

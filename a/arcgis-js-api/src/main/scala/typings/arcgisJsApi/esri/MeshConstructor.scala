@@ -13,50 +13,58 @@ trait MeshConstructor
      with Instantiable1[/* properties */ MeshProperties, Mesh] {
   
   /**
-    * Creates a mesh representing a box.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
-    */
+  		 * Creates a mesh representing a box.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+  		 */
   def createBox(location: Point): Mesh = js.native
   def createBox(location: Point, params: MeshCreateBoxParams): Mesh = js.native
   
   /**
-    * Creates a mesh representing a cylinder.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
-    */
+  		 * Creates a mesh representing a cylinder.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
+  		 */
   def createCylinder(location: Point): Mesh = js.native
   def createCylinder(location: Point, params: MeshCreateCylinderParams): Mesh = js.native
   
   /**
-    * Creates a new mesh geometry from a glTF model referenced by the `url` parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
-    */
+  		 * Creates a mesh geometry from a file or list of files and which is ready to be displayed in the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromFiles)
+  		 */
+  def createFromFiles(location: Point, files: js.Array[Any]): js.Promise[Mesh] = js.native
+  def createFromFiles(location: Point, files: js.Array[Any], params: MeshCreateFromFilesParams): js.Promise[Mesh] = js.native
+  
+  /**
+  		 * Creates a new mesh geometry from a glTF model referenced by the `url` parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
+  		 */
   def createFromGLTF(location: Point, url: String): js.Promise[Mesh] = js.native
   def createFromGLTF(location: Point, url: String, params: MeshCreateFromGLTFParams): js.Promise[Mesh] = js.native
   
   /**
-    * Creates a new mesh geometry from a polygon geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
-    */
+  		 * Creates a new mesh geometry from a polygon geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromPolygon)
+  		 */
   def createFromPolygon(polygon: Polygon): Mesh = js.native
   def createFromPolygon(polygon: Polygon, params: MeshCreateFromPolygonParams): Mesh = js.native
   
   /**
-    * Creates a mesh representing a plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
-    */
+  		 * Creates a mesh representing a plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+  		 */
   def createPlane(location: Point): Mesh = js.native
   def createPlane(location: Point, params: MeshCreatePlaneParams): Mesh = js.native
   
   /**
-    * Creates a mesh representing a sphere.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
-    */
+  		 * Creates a mesh representing a sphere.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+  		 */
   def createSphere(location: Point): Mesh = js.native
   def createSphere(location: Point, params: MeshCreateSphereParams): Mesh = js.native
   

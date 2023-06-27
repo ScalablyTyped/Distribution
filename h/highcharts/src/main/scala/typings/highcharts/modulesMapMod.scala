@@ -204,7 +204,7 @@ object modulesMapMod {
         *        The Chart instance to apply the axis on.
         *
         * @param userOptions
-        *        Axis options.
+        *        Axis options
         */
       def this(chart: Chart_, userOptions: AxisOptions) = this()
     }
@@ -1116,7 +1116,7 @@ object modulesMapMod {
         *
         * @param chartX
         *        Keep this chart position stationary if possible. This is used
-        *        for example in mousewheel events, where the area under the
+        *        for example in `mousewheel` events, where the area under the
         *        mouse should be fixed as we zoom in.
         *
         * @param chartY

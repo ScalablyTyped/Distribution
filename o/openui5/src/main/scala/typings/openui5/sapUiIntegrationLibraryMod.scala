@@ -46,7 +46,7 @@ object sapUiIntegrationLibraryMod {
     def apply(value: String): js.UndefOr[CardActionType & String] = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.76)
+      * @experimental (since 1.76)
       *
       * Used for custom actions.
       */
@@ -57,7 +57,7 @@ object sapUiIntegrationLibraryMod {
     /* "Custom" */ val Custom: typings.openui5.sapUiIntegrationLibraryMod.CardActionType.Custom & String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.87)
+      * @experimental (since 1.87)
       *
       * Date selection. Available only for Calendar cards.
       */
@@ -68,7 +68,7 @@ object sapUiIntegrationLibraryMod {
     /* "DateChange" */ val DateChange: typings.openui5.sapUiIntegrationLibraryMod.CardActionType.DateChange & String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.100)
+      * @experimental (since 1.100)
       *
       * Used for hiding the appeared details about the card.
       */
@@ -79,7 +79,7 @@ object sapUiIntegrationLibraryMod {
     /* "HideCard" */ val HideCard: typings.openui5.sapUiIntegrationLibraryMod.CardActionType.HideCard & String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.87)
+      * @experimental (since 1.87)
       *
       * Month selection. Available only for Calendar cards.
       */
@@ -99,7 +99,7 @@ object sapUiIntegrationLibraryMod {
     /* "Navigation" */ val Navigation: typings.openui5.sapUiIntegrationLibraryMod.CardActionType.Navigation & String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.100)
+      * @experimental (since 1.100)
       *
       * Used for showing more details about the card.
       */
@@ -154,6 +154,43 @@ object sapUiIntegrationLibraryMod {
       extends StObject
          with CardArea
     /* "Header" */ val Header: typings.openui5.sapUiIntegrationLibraryMod.CardArea.Header & String = js.native
+  }
+  
+  @js.native
+  sealed trait CardBlockingMessageType extends StObject
+  @JSImport("sap/ui/integration/library", "CardBlockingMessageType")
+  @js.native
+  object CardBlockingMessageType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[CardBlockingMessageType & String] = js.native
+    
+    /**
+      * An error ocurred in the card.
+      */
+    @js.native
+    sealed trait Error
+      extends StObject
+         with CardBlockingMessageType
+    /* "Error" */ val Error: typings.openui5.sapUiIntegrationLibraryMod.CardBlockingMessageType.Error & String = js.native
+    
+    /**
+      * Information message.
+      */
+    @js.native
+    sealed trait Information
+      extends StObject
+         with CardBlockingMessageType
+    /* "Information" */ val Information: typings.openui5.sapUiIntegrationLibraryMod.CardBlockingMessageType.Information & String = js.native
+    
+    /**
+      * There is no data to be displayed.
+      */
+    @js.native
+    sealed trait NoData
+      extends StObject
+         with CardBlockingMessageType
+    /* "NoData" */ val NoData: typings.openui5.sapUiIntegrationLibraryMod.CardBlockingMessageType.NoData & String = js.native
   }
   
   @js.native

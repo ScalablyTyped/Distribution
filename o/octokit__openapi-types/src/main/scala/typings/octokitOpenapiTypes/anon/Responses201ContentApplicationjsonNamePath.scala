@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses201ContentApplicationjsonNamePath extends StObject {
   
-  var parameters: `496`
+  var parameters: `582`
   
   var requestBody: ContentApplicationjsonScope
   
@@ -15,7 +15,7 @@ trait Responses201ContentApplicationjsonNamePath extends StObject {
 object Responses201ContentApplicationjsonNamePath {
   
   inline def apply(
-    parameters: `496`,
+    parameters: `582`,
     requestBody: ContentApplicationjsonScope,
     responses: `201ContentApplicationjsonNamePath`
   ): Responses201ContentApplicationjsonNamePath = {
@@ -26,7 +26,7 @@ object Responses201ContentApplicationjsonNamePath {
   @scala.inline
   implicit open class MutableBuilder[Self <: Responses201ContentApplicationjsonNamePath] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `496`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `582`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonScope): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

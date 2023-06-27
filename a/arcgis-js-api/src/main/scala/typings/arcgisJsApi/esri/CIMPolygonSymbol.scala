@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMPolygonSymbol extends StObject {
   
   /**
-    * The geometric effects applied to the symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
-    */
+  		 * The geometric effects applied to the symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
+  		 */
   var effects: js.UndefOr[js.Array[CIMGeometricEffect]] = js.undefined
   
   /**
-    * The symbol layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
-    */
+  		 * The symbol layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
+  		 */
   var symbolLayers: js.Array[CIMSymbolLayer]
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPolygonSymbol
   
   /**
-    * A value indicating whether the symbol size properties are rendered using real world units or page units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
-    */
+  		 * A value indicating whether the symbol size properties are rendered using real world units or page units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMPolygonSymbol)
+  		 */
   var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
 }
 object CIMPolygonSymbol {

@@ -46,7 +46,13 @@ trait EditorMessages extends StObject {
   
   var applyFormat: js.UndefOr[String] = js.undefined
   
+  var applyToColumn: js.UndefOr[String] = js.undefined
+  
+  var applyToRow: js.UndefOr[String] = js.undefined
+  
   var associateCellsWithHeaders: js.UndefOr[String] = js.undefined
+  
+  var auto: js.UndefOr[String] = js.undefined
   
   var backColor: js.UndefOr[String] = js.undefined
   
@@ -56,7 +62,13 @@ trait EditorMessages extends StObject {
   
   var border: js.UndefOr[String] = js.undefined
   
+  var borderColor: js.UndefOr[String] = js.undefined
+  
+  var borderWidth: js.UndefOr[String] = js.undefined
+  
   var caption: js.UndefOr[String] = js.undefined
+  
+  var captionAlignment: js.UndefOr[String] = js.undefined
   
   var cellMargin: js.UndefOr[String] = js.undefined
   
@@ -99,6 +111,8 @@ trait EditorMessages extends StObject {
   var fileTitle: js.UndefOr[String] = js.undefined
   
   var fileWebAddress: js.UndefOr[String] = js.undefined
+  
+  var fitToCell: js.UndefOr[String] = js.undefined
   
   var fontName: js.UndefOr[String] = js.undefined
   
@@ -187,6 +201,12 @@ trait EditorMessages extends StObject {
   var tableAlignLeft: js.UndefOr[String] = js.undefined
   
   var tableAlignRight: js.UndefOr[String] = js.undefined
+  
+  var tableBackground: js.UndefOr[String] = js.undefined
+  
+  var tableCellProperties: js.UndefOr[String] = js.undefined
+  
+  var tableProperties: js.UndefOr[String] = js.undefined
   
   var tableTab: js.UndefOr[String] = js.undefined
   
@@ -296,9 +316,21 @@ object EditorMessages {
     
     inline def setApplyFormatUndefined: Self = StObject.set(x, "applyFormat", js.undefined)
     
+    inline def setApplyToColumn(value: String): Self = StObject.set(x, "applyToColumn", value.asInstanceOf[js.Any])
+    
+    inline def setApplyToColumnUndefined: Self = StObject.set(x, "applyToColumn", js.undefined)
+    
+    inline def setApplyToRow(value: String): Self = StObject.set(x, "applyToRow", value.asInstanceOf[js.Any])
+    
+    inline def setApplyToRowUndefined: Self = StObject.set(x, "applyToRow", js.undefined)
+    
     inline def setAssociateCellsWithHeaders(value: String): Self = StObject.set(x, "associateCellsWithHeaders", value.asInstanceOf[js.Any])
     
     inline def setAssociateCellsWithHeadersUndefined: Self = StObject.set(x, "associateCellsWithHeaders", js.undefined)
+    
+    inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
     inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
@@ -314,9 +346,21 @@ object EditorMessages {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
+    inline def setBorderWidth(value: String): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionAlignment(value: String): Self = StObject.set(x, "captionAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionAlignmentUndefined: Self = StObject.set(x, "captionAlignment", js.undefined)
     
     inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
@@ -403,6 +447,10 @@ object EditorMessages {
     inline def setFileWebAddress(value: String): Self = StObject.set(x, "fileWebAddress", value.asInstanceOf[js.Any])
     
     inline def setFileWebAddressUndefined: Self = StObject.set(x, "fileWebAddress", js.undefined)
+    
+    inline def setFitToCell(value: String): Self = StObject.set(x, "fitToCell", value.asInstanceOf[js.Any])
+    
+    inline def setFitToCellUndefined: Self = StObject.set(x, "fitToCell", js.undefined)
     
     inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
@@ -579,6 +627,18 @@ object EditorMessages {
     inline def setTableAlignRight(value: String): Self = StObject.set(x, "tableAlignRight", value.asInstanceOf[js.Any])
     
     inline def setTableAlignRightUndefined: Self = StObject.set(x, "tableAlignRight", js.undefined)
+    
+    inline def setTableBackground(value: String): Self = StObject.set(x, "tableBackground", value.asInstanceOf[js.Any])
+    
+    inline def setTableBackgroundUndefined: Self = StObject.set(x, "tableBackground", js.undefined)
+    
+    inline def setTableCellProperties(value: String): Self = StObject.set(x, "tableCellProperties", value.asInstanceOf[js.Any])
+    
+    inline def setTableCellPropertiesUndefined: Self = StObject.set(x, "tableCellProperties", js.undefined)
+    
+    inline def setTableProperties(value: String): Self = StObject.set(x, "tableProperties", value.asInstanceOf[js.Any])
+    
+    inline def setTablePropertiesUndefined: Self = StObject.set(x, "tableProperties", js.undefined)
     
     inline def setTableTab(value: String): Self = StObject.set(x, "tableTab", value.asInstanceOf[js.Any])
     

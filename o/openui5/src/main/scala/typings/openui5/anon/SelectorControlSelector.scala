@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectorControlSelector extends StObject {
   
   /**
-    * Control selector for this control Could be the result of {@link sap.ui.test.RecordReplay.findControlSelectorByDOMElement}
+    * Control selector for this control Could be the result of {@link sap.ui.test.RecordReplay.findControlSelectorByDOMElement }
     * If the selector matches multiple controls, only the first one will be used If the selector contains ID
     * suffix for a DOM element, the 'first' relevant DOM element will be located Otherwise, the result will
     * be the 'first' DOM element with ID matching the control's or the one that usually receives focus events

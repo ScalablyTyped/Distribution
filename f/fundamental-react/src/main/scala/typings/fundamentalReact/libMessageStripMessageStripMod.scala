@@ -3,7 +3,6 @@ package typings.fundamentalReact
 import typings.fundamentalReact.anon.PartialMessageStripProps
 import typings.fundamentalReact.anon.WeakValidationMapMessageS
 import typings.fundamentalReact.fundamentalReactStrings.MessageStrip
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -15,8 +14,8 @@ object libMessageStripMessageStripMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/MessageStrip/MessageStrip.MessageStripProps> & {  displayName :'MessageStrip'} */
   object default {
     
-    inline def apply(props: MessageStripProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: MessageStripProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: MessageStripProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: MessageStripProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/MessageStrip/MessageStrip", JSImport.Default)
     @js.native

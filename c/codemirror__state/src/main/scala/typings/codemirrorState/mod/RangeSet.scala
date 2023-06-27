@@ -72,8 +72,7 @@ object RangeSet {
     newSets: js.Array[RangeSet[T]],
     /**
     This indicates how the underlying data changed between these
-    ranges, and is needed to synchronize the iteration. `from` and
-    `to` are coordinates in the _new_ space, after these changes.
+    ranges, and is needed to synchronize the iteration.
     */
   textDiff: ChangeDesc,
     comparator: RangeComparator[T]
@@ -83,8 +82,7 @@ object RangeSet {
     newSets: js.Array[RangeSet[T]],
     /**
     This indicates how the underlying data changed between these
-    ranges, and is needed to synchronize the iteration. `from` and
-    `to` are coordinates in the _new_ space, after these changes.
+    ranges, and is needed to synchronize the iteration.
     */
   textDiff: ChangeDesc,
     comparator: RangeComparator[T],

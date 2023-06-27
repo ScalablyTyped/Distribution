@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+  * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
   *
   * @remarks
   * [Api set: WordApi 1.1]
@@ -23,6 +23,16 @@ trait ContentControlCollection
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ContentControlCollection: RequestContext = js.native
+  
+  /**
+    * Gets the content controls that have the specified tracking state.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param changeTrackingStates Required. An array of content control change tracking states.
+    */
+  def getByChangeTrackingStates(changeTrackingStates: js.Array[ChangeTrackingState]): ContentControlCollection = js.native
   
   /**
     * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.

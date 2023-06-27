@@ -20,7 +20,7 @@ trait Installationcommand extends StObject {
   
   var description: String
   
-  var docker_metadata: js.UndefOr[js.Array[`454`]] = js.undefined
+  var docker_metadata: js.UndefOr[js.Array[`532`]] = js.undefined
   
   var draft: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +38,7 @@ trait Installationcommand extends StObject {
   
   var npm_metadata: js.UndefOr[Bugs | Null] = js.undefined
   
-  var nuget_metadata: js.UndefOr[js.Array[`463`] | Null] = js.undefined
+  var nuget_metadata: js.UndefOr[js.Array[`541`] | Null] = js.undefined
   
   var package_files: js.Array[Md5]
   
@@ -105,11 +105,11 @@ object Installationcommand {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDocker_metadata(value: js.Array[`454`]): Self = StObject.set(x, "docker_metadata", value.asInstanceOf[js.Any])
+    inline def setDocker_metadata(value: js.Array[`532`]): Self = StObject.set(x, "docker_metadata", value.asInstanceOf[js.Any])
     
     inline def setDocker_metadataUndefined: Self = StObject.set(x, "docker_metadata", js.undefined)
     
-    inline def setDocker_metadataVarargs(value: `454`*): Self = StObject.set(x, "docker_metadata", js.Array(value*))
+    inline def setDocker_metadataVarargs(value: `532`*): Self = StObject.set(x, "docker_metadata", js.Array(value*))
     
     inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
@@ -137,13 +137,13 @@ object Installationcommand {
     
     inline def setNpm_metadataUndefined: Self = StObject.set(x, "npm_metadata", js.undefined)
     
-    inline def setNuget_metadata(value: js.Array[`463`]): Self = StObject.set(x, "nuget_metadata", value.asInstanceOf[js.Any])
+    inline def setNuget_metadata(value: js.Array[`541`]): Self = StObject.set(x, "nuget_metadata", value.asInstanceOf[js.Any])
     
     inline def setNuget_metadataNull: Self = StObject.set(x, "nuget_metadata", null)
     
     inline def setNuget_metadataUndefined: Self = StObject.set(x, "nuget_metadata", js.undefined)
     
-    inline def setNuget_metadataVarargs(value: `463`*): Self = StObject.set(x, "nuget_metadata", js.Array(value*))
+    inline def setNuget_metadataVarargs(value: `541`*): Self = StObject.set(x, "nuget_metadata", js.Array(value*))
     
     inline def setPackage_files(value: js.Array[Md5]): Self = StObject.set(x, "package_files", value.asInstanceOf[js.Any])
     

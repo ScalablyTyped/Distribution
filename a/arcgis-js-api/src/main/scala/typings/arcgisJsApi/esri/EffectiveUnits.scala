@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EffectiveUnits extends StObject {
   
   /**
-    * Units used for displaying distance or length values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#EffectiveUnits)
-    */
+  		 * Units used for displaying distance or length values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#EffectiveUnits)
+  		 */
   var distance: LengthUnit
   
   /**
-    * Units used for displaying elevation values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#EffectiveUnits)
-    */
+  		 * Units used for displaying elevation values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ElevationProfile-ElevationProfileViewModel.html#EffectiveUnits)
+  		 */
   var elevation: LengthUnit
 }
 object EffectiveUnits {

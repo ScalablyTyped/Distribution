@@ -1,5 +1,6 @@
 package typings.heapJs
 
+import typings.heapJs.distTypesHeapAsyncMod.AsyncComparator
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -648,6 +649,183 @@ object mod {
       * @returns {String}
       */
     inline def print[N](heap: Heap[N]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(heap.asInstanceOf[js.Any]).asInstanceOf[String]
+  }
+  
+  @JSImport("heap-js", "HeapAsync")
+  @js.native
+  /**
+    * Heap instance constructor.
+    * @param  {Function} compare Optional comparison function, defaults to Heap.minComparator<number>
+    */
+  open class HeapAsync[T] ()
+    extends typings.heapJs.distTypesHeapAsyncMod.HeapAsync[T] {
+    def this(compare: AsyncComparator[T]) = this()
+  }
+  /* static members */
+  object HeapAsync {
+    
+    @JSImport("heap-js", "HeapAsync")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Default equality function.
+      * @param  {any} a    First element
+      * @param  {any} b    Second element
+      * @return {Boolean}  True if equal, false otherwise
+      */
+    inline def defaultIsEqual[N](a: N, b: N): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultIsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    /**
+      * Gets children indices for given index.
+      * @param  {Number} idx     Parent index
+      * @return {Array(Number)}  Array of children indices
+      */
+    inline def getChildrenIndexOf(idx: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildrenIndexOf")(idx.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    
+    /**
+      * Gets parent index for given index.
+      * @param  {Number} idx  Children index
+      * @return {Number | undefined}      Parent index, -1 if idx is 0
+      */
+    inline def getParentIndexOf(idx: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentIndexOf")(idx.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+      * Gets sibling index for given index.
+      * @param  {Number} idx  Children index
+      * @return {Number | undefined}      Sibling index, -1 if idx is 0
+      */
+    inline def getSiblingIndexOf(idx: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSiblingIndexOf")(idx.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+      * Return the `n` least valuable elements of a heap-like Array
+      * @param  {Array}    heapArr  Array, should be an array-heap
+      * @param  {number}   n        Max number of elements
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Elements
+      */
+    inline def heapbottom[N](heapArr: js.Array[N]): js.Promise[js.Array[N]] = ^.asInstanceOf[js.Dynamic].applyDynamic("heapbottom")(heapArr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heapbottom[N](heapArr: js.Array[N], n: Double): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapbottom")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heapbottom[N](heapArr: js.Array[N], n: Double, compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapbottom")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heapbottom[N](heapArr: js.Array[N], n: Unit, compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapbottom")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    
+    /**
+      * Converts an array into an array-heap, in place
+      * @param  {Array}    arr      Array to be modified
+      * @param  {Function} compare  Optional compare function
+      * @return {HeapAsync}              For convenience, it returns a Heap instance
+      */
+    inline def heapify[N](arr: js.Array[N]): js.Promise[typings.heapJs.distTypesHeapAsyncMod.HeapAsync[N]] = ^.asInstanceOf[js.Dynamic].applyDynamic("heapify")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.heapJs.distTypesHeapAsyncMod.HeapAsync[N]]]
+    inline def heapify[N](arr: js.Array[N], compare: AsyncComparator[N]): js.Promise[typings.heapJs.distTypesHeapAsyncMod.HeapAsync[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapify")(arr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.heapJs.distTypesHeapAsyncMod.HeapAsync[N]]]
+    
+    /**
+      * Extract the peek of an array-heap
+      * @param  {Array}    heapArr  Array to be modified, should be a heap
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Returns the extracted peek
+      */
+    inline def heappop[N](heapArr: js.Array[N]): js.Promise[js.UndefOr[N]] = ^.asInstanceOf[js.Dynamic].applyDynamic("heappop")(heapArr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[N]]]
+    inline def heappop[N](heapArr: js.Array[N], compare: AsyncComparator[N]): js.Promise[js.UndefOr[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heappop")(heapArr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[N]]]
+    
+    /**
+      * Pushes a item into an array-heap
+      * @param  {Array}    heapArr  Array to be modified, should be a heap
+      * @param  {any}      item     Item to push
+      * @param  {Function} compare  Optional compare function
+      */
+    inline def heappush[N](heapArr: js.Array[N], item: N): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("heappush")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def heappush[N](heapArr: js.Array[N], item: N, compare: AsyncComparator[N]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("heappush")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    /**
+      * Push followed by pop, faster
+      * @param  {Array}    heapArr  Array to be modified, should be a heap
+      * @param  {any}      item     Item to push
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Returns the extracted peek
+      */
+    inline def heappushpop[N](heapArr: js.Array[N], item: N): js.Promise[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("heappushpop")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Promise[N]]
+    inline def heappushpop[N](heapArr: js.Array[N], item: N, compare: AsyncComparator[N]): js.Promise[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("heappushpop")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[N]]
+    
+    /**
+      * Replace peek with item
+      * @param  {Array}    heapArr  Array to be modified, should be a heap
+      * @param  {any}      item     Item as replacement
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Returns the extracted peek
+      */
+    inline def heapreplace[N](heapArr: js.Array[N], item: N): js.Promise[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapreplace")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Promise[N]]
+    inline def heapreplace[N](heapArr: js.Array[N], item: N, compare: AsyncComparator[N]): js.Promise[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("heapreplace")(heapArr.asInstanceOf[js.Any], item.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[N]]
+    
+    /**
+      * Return the `n` most valuable elements of a heap-like Array
+      * @param  {Array}    heapArr  Array, should be an array-heap
+      * @param  {number}   n        Max number of elements
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Elements
+      */
+    inline def heaptop[N](heapArr: js.Array[N]): js.Promise[js.Array[N]] = ^.asInstanceOf[js.Dynamic].applyDynamic("heaptop")(heapArr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heaptop[N](heapArr: js.Array[N], n: Double): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heaptop")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heaptop[N](heapArr: js.Array[N], n: Double, compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heaptop")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def heaptop[N](heapArr: js.Array[N], n: Unit, compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("heaptop")(heapArr.asInstanceOf[js.Any], n.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    
+    /**
+      * Max heap comparison function.
+      * @param  {any} a     First element
+      * @param  {any} b     Second element
+      * @return {Number}    0 if they're equal, positive if `a` goes up, negative if `b` goes up
+      */
+    inline def maxComparator[N](a: N, b: N): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxComparator")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    /**
+      * Max number heap comparison function.
+      * @param  {Number} a     First element
+      * @param  {Number} b     Second element
+      * @return {Number}    0 if they're equal, positive if `a` goes up, negative if `b` goes up
+      */
+    inline def maxComparatorNumber(a: Double, b: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxComparatorNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    /**
+      * Min heap comparison function, default.
+      * @param  {any} a     First element
+      * @param  {any} b     Second element
+      * @return {Number}    0 if they're equal, positive if `a` goes up, negative if `b` goes up
+      */
+    inline def minComparator[N](a: N, b: N): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("minComparator")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    /**
+      * Min number heap comparison function, default.
+      * @param  {Number} a     First element
+      * @param  {Number} b     Second element
+      * @return {Number}    0 if they're equal, positive if `a` goes up, negative if `b` goes up
+      */
+    inline def minComparatorNumber(a: Double, b: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("minComparatorNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    /**
+      * Return the `n` most valuable elements of an iterable
+      * @param  {number}   n        Max number of elements
+      * @param  {Iterable} Iterable Iterable list of elements
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Elements
+      */
+    inline def nlargest[N](n: Double, iterable: js.Iterable[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nlargest")(n.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def nlargest[N](n: Double, iterable: js.Iterable[N], compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nlargest")(n.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    
+    /**
+      * Return the `n` least valuable elements of an iterable
+      * @param  {number}   n        Max number of elements
+      * @param  {Iterable} Iterable Iterable list of elements
+      * @param  {Function} compare  Optional compare function
+      * @return {any}               Elements
+      */
+    inline def nsmallest[N](n: Double, iterable: js.Iterable[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsmallest")(n.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    inline def nsmallest[N](n: Double, iterable: js.Iterable[N], compare: AsyncComparator[N]): js.Promise[js.Array[N]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsmallest")(n.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[N]]]
+    
+    /**
+      * Prints a heap.
+      * @param  {HeapAsync} heap Heap to be printed
+      * @returns {String}
+      */
+    inline def print[N](heap: typings.heapJs.distTypesHeapAsyncMod.HeapAsync[N]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(heap.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   inline def toInt(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toInt")(n.asInstanceOf[js.Any]).asInstanceOf[Double]

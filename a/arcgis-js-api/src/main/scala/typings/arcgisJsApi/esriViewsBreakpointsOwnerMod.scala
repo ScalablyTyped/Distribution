@@ -22,34 +22,34 @@ object esriViewsBreakpointsOwnerMod {
        with BreakpointsOwner {
     
     /**
-      * A convenience property used for defining the breakpoints on the [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#height) and [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#width) of the view.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints)
-      */
+    		 * A convenience property used for defining the breakpoints on the [height](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#height) and [width](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#width) of the view.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#breakpoints)
+    		 */
     /* CompleteClass */
     var breakpoints: BreakpointsOwnerBreakpoints = js.native
     
     /**
-      * A convenience property indicating the general size of the view's height.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
-      */
+    		 * A convenience property indicating the general size of the view's height.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#heightBreakpoint)
+    		 */
     /* CompleteClass */
     var heightBreakpoint: xsmall | small | medium | large | xlarge = js.native
     
     /**
-      * A convenience property indicating the view's orientation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#orientation)
-      */
+    		 * A convenience property indicating the view's orientation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#orientation)
+    		 */
     /* CompleteClass */
     override val orientation: landscape | portrait = js.native
     
     /**
-      * A convenience property indicating the general size of the view's width.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
-      */
+    		 * A convenience property indicating the general size of the view's width.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BreakpointsOwner.html#widthBreakpoint)
+    		 */
     /* CompleteClass */
     var widthBreakpoint: xsmall | small | medium | large | xlarge = js.native
   }

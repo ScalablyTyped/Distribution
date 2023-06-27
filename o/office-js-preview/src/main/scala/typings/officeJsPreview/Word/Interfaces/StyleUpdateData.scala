@@ -11,8 +11,7 @@ trait StyleUpdateData extends StObject {
     * Gets a font object that represents the character formatting of the specified style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var font: js.UndefOr[FontUpdateData] = js.undefined
   
@@ -29,44 +28,39 @@ trait StyleUpdateData extends StObject {
     * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var paragraphFormat: js.UndefOr[ParagraphFormatUpdateData] = js.undefined
   
   /**
-    * Gets or sets the priority.
+    * Specifies the priority.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var priority: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets whether the style corresponds to an available quick style.
+    * Specifies whether the style corresponds to an available quick style.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var quickStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+    * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var unhideWhenUsed: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+    * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   var visibility: js.UndefOr[Boolean] = js.undefined
 }

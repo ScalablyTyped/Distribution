@@ -5,7 +5,7 @@ import typings.atlaskitMotion.distTypesEnteringTypesMod.Direction
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Fade
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.emotionSerialize.mod.CSSObject
-import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +23,7 @@ object distTypesEntryPointsSlideInMod {
     *
     * - [Examples](https://atlaskit.atlassian.com/packages/design-system/motion/docs/entering-motions)
     */
-  @JSImport("@atlaskit/motion/dist/types/entry-points/slide-in", JSImport.Default)
-  @js.native
-  val default: FC[SlideInProps] = js.native
+  inline def default(param0: SlideInProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def slideInAnimation(from: Direction, state: Transition, fade: Fade): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("slideInAnimation")(from.asInstanceOf[js.Any], state.asInstanceOf[js.Any], fade.asInstanceOf[js.Any])).asInstanceOf[CSSObject]
 }

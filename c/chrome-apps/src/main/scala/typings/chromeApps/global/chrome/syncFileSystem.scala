@@ -50,8 +50,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the same data can be available across different clients. Read Manage Data for
   * more on using this API.
   *
-  * @requires[Permissions: 'syncFileSystem']
-  * @see[Learn more: Manage Data]{@link https://developer.chrome.com/apps/app_storage}
+  * @requires Permissions: 'syncFileSystem'
+  * @see https://developer.chrome.com/apps/app_storage
   * @since Chrome 27
   */
 object syncFileSystem {
@@ -271,7 +271,7 @@ object syncFileSystem {
     * Returns a syncable filesystem backed by Google Drive.
     * The returned DOMFileSystem instance can be operated on
     * in the same way as the Temporary and Persistant file systems
-    * @see[More information]{@link http://dev.w3.org/2009/dap/file-system/file-dir-sys.html}
+    * @see http://dev.w3.org/2009/dap/file-system/file-dir-sys.html
     * @description
     * Calling this multiple times from the same app will return the same handle to the same file system.
     * Note this call can fail.

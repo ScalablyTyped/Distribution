@@ -24,8 +24,8 @@ object sapMSemanticSemanticPageMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:4a97a07ec8f5441d901994d82eaab1f5 Semantic Page}
-    * 	{@link topic:84f3d52f492648d5b594e4f45dca7727 Semantic Pages}
+    * 	{@link https://ui5.sap.com/#/topic/4a97a07ec8f5441d901994d82eaab1f5 Semantic Page}
+    * 	{@link https://ui5.sap.com/#/topic/84f3d52f492648d5b594e4f45dca7727 Semantic Pages}
     */
   open class default () extends SemanticPage {
     def this(/**
@@ -180,13 +180,13 @@ object sapMSemanticSemanticPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticPage` itself
       */
@@ -212,7 +212,7 @@ object sapMSemanticSemanticPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNavButtonPress(
       /**
@@ -223,7 +223,7 @@ object sapMSemanticSemanticPageMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.semantic.SemanticPage` itself
       */
@@ -277,13 +277,13 @@ object sapMSemanticSemanticPageMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNavButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -291,7 +291,7 @@ object sapMSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navButtonPress navButtonPress} to attached listeners.
       *
@@ -304,7 +304,7 @@ object sapMSemanticSemanticPageMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -349,7 +349,7 @@ object sapMSemanticSemanticPageMod {
     def getEnableScrolling(): Boolean = js.native
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Gets current value of property {@link #getFloatingFooter floatingFooter}.
       *
@@ -372,7 +372,7 @@ object sapMSemanticSemanticPageMod {
     def getLandmarkInfo(): typings.openui5.sapMPageAccessibleLandmarkInfoMod.default = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Gets current value of property {@link #getSemanticRuleSet semanticRuleSet}.
       *
@@ -625,7 +625,7 @@ object sapMSemanticSemanticPageMod {
     ): typings.openui5.sapMButtonMod.default | Null = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -667,7 +667,7 @@ object sapMSemanticSemanticPageMod {
     bEnableScrolling: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Sets a new value for property {@link #getFloatingFooter floatingFooter}.
       *
@@ -699,7 +699,7 @@ object sapMSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Sets a new value for property {@link #getSemanticRuleSet semanticRuleSet}.
       *
@@ -823,12 +823,18 @@ object sapMSemanticSemanticPageMod {
     sTitleLevel: TitleLevel): this.type = js.native
   }
   
+  trait SemanticPage$NavButtonPressEventParameters extends StObject
+  
+  type SemanticPageNavButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[SemanticPage$NavButtonPressEventParameters]
+  
+  type SemanticPageNavButtonPressEventParameters = SemanticPage$NavButtonPressEventParameters
+  
   trait SemanticPageSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Determines the backgound color of the page. For more information, see {@link sap.m.Page#backgroundDesign}.
       */
@@ -865,7 +871,7 @@ object sapMSemanticSemanticPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Determines whether the floating footer behavior is enabled. If set to `true`, the content is visible
       * when it's underneath the footer.
@@ -884,10 +890,12 @@ object sapMSemanticSemanticPageMod {
     /**
       * See {@link sap.m.Page#navButtonPress}
       */
-    var navButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.44
+      * @since 1.44
       *
       * Declares the type of semantic ruleset that will govern the styling and positioning of semantic content.
       */
@@ -985,7 +993,7 @@ object sapMSemanticSemanticPageMod {
       
       inline def setLandmarkInfoUndefined: Self = StObject.set(x, "landmarkInfo", js.undefined)
       
-      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
+      inline def setNavButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "navButtonPress", js.Any.fromFunction1(value))
       
       inline def setNavButtonPressUndefined: Self = StObject.set(x, "navButtonPress", js.undefined)
       

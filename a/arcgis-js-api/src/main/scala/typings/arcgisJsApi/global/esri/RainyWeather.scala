@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.RainyWeather")
 @js.native
 /**
-  * The RainyWeather class allows you to change the weather conditions in the scene to rainy weather.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-RainyWeather.html)
-  */
+		 * The RainyWeather class allows you to change the weather conditions in the scene to rainy weather.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-environment-RainyWeather.html)
+		 */
 open class RainyWeather ()
   extends StObject
      with typings.arcgisJsApi.esri.RainyWeather {

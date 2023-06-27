@@ -13,52 +13,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BufferParametersProperties extends StObject {
   
   /**
-    * The spatial reference in which the geometries are buffered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#bufferSpatialReference)
-    */
+  		 * The spatial reference in which the geometries are buffered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#bufferSpatialReference)
+  		 */
   var bufferSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * The distances the input features are buffered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#distances)
-    */
+  		 * The distances the input features are buffered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#distances)
+  		 */
   var distances: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * If the input geometries are in a geographic coordinate system, set geodesic to `true` to generate a buffer polygon using a geodesic distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geodesic)
-    */
+  		 * If the input geometries are in a geographic coordinate system, set geodesic to `true` to generate a buffer polygon using a geodesic distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geodesic)
+  		 */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The input geometries to buffer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geometries)
-    */
+  		 * The input geometries to buffer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#geometries)
+  		 */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
-    * The spatial reference for the returned geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#outSpatialReference)
-    */
+  		 * The spatial reference for the returned geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#outSpatialReference)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
-    * If `true`, all geometries buffered at a given distance are unioned into a single (possibly multipart) polygon, and the unioned geometry is placed in the output array.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unionResults)
-    */
+  		 * If `true`, all geometries buffered at a given distance are unioned into a single (possibly multipart) polygon, and the unioned geometry is placed in the output array.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unionResults)
+  		 */
   var unionResults: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The units for calculating each buffer distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unit)
-    */
+  		 * The units for calculating each buffer distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-BufferParameters.html#unit)
+  		 */
   var unit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
 object BufferParametersProperties {

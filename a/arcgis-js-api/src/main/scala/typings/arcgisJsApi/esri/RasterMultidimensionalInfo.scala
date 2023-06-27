@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterMultidimensionalInfo extends StObject {
   
   /**
-    * The multi dimensional variables.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * The multi dimensional variables.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var variables: js.Array[RasterMultidimensionalInfoVariables]
 }
 object RasterMultidimensionalInfo {

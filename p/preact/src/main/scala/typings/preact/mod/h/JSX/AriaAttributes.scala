@@ -61,6 +61,18 @@ trait AriaAttributes extends StObject {
     typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[none | `inline` | list | both]]
   ] = js.undefined
   
+  /**
+  		 * Defines a string value that labels the current element, which is intended to be converted into Braille.
+  		 * @see aria-label.
+  		 */
+  var `aria-braillelabel`: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[String]]] = js.undefined
+  
+  /**
+  		 * Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.
+  		 * @see aria-roledescription.
+  		 */
+  var `aria-brailleroledescription`: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[String]]] = js.undefined
+  
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[Booleanish]]] = js.undefined
   
@@ -331,6 +343,14 @@ object AriaAttributes {
     inline def `setAria-autocomplete`(value: typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[none | `inline` | list | both]]): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+    
+    inline def `setAria-braillelabel`(value: typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[String]]): Self = StObject.set(x, "aria-braillelabel", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-braillelabelUndefined`: Self = StObject.set(x, "aria-braillelabel", js.undefined)
+    
+    inline def `setAria-brailleroledescription`(value: typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[String]]): Self = StObject.set(x, "aria-brailleroledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-brailleroledescriptionUndefined`: Self = StObject.set(x, "aria-brailleroledescription", js.undefined)
     
     inline def `setAria-busy`(value: typings.preact.srcJsxMod.JSXInternal.Signalish[js.UndefOr[Booleanish]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     

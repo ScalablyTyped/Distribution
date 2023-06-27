@@ -11,24 +11,24 @@ sealed trait GlyphHinting extends StObject
 object GlyphHinting extends StObject {
   
   /**
-    * Default glyph hinting according to the font's settings.
-    */
+  			 * Default glyph hinting according to the font's settings.
+  			 */
   @js.native
   sealed trait Default
     extends StObject
        with GlyphHinting
   
   /**
-    * Force glyph hinting.
-    */
+  			 * Force glyph hinting.
+  			 */
   @js.native
   sealed trait Force
     extends StObject
        with GlyphHinting
   
   /**
-    * No glyph hinting.
-    */
+  			 * No glyph hinting.
+  			 */
   @js.native
   sealed trait None
     extends StObject

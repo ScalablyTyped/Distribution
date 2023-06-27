@@ -30,7 +30,4 @@ object DOMMatrixReadOnly {
   /* standard dom */
   inline def fromMatrix(): typings.std.DOMMatrixReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")().asInstanceOf[typings.std.DOMMatrixReadOnly]
   inline def fromMatrix(other: DOMMatrixInit): typings.std.DOMMatrixReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrixReadOnly]
-  
-  /* standard dom */
-  inline def toString_(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[java.lang.String]
 }

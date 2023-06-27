@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-normalize-identifier
 
-Typings are for version 1.0.0
+Typings are for version 1.1.0
 
 ## Library description:
 micromark utility normalize identifiers (as found in references, definitions)

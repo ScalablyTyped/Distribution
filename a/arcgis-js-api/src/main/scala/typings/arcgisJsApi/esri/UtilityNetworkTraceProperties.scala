@@ -9,110 +9,149 @@ trait UtilityNetworkTraceProperties
      with WidgetProperties {
   
   /**
-    * The default color to assign the aggregated geometry of a trace result.
-    *
-    * @default {
-    * color: [255, 255, 0, 0.6],
-    * haloOpacity: 0.9,
-    * fillOpacity: 0.2,
-    * hex: "#FFFF00"
-    * }
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#defaultGraphicColor)
-    */
+  		 * The default color to assign the aggregated geometry of a trace result.
+  		 *
+  		 * @default {
+  		 * color: [255, 255, 0, 0.6],
+  		 * haloOpacity: 0.9,
+  		 * fillOpacity: 0.2,
+  		 * hex: "#FFFF00"
+  		 * }
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#defaultGraphicColor)
+  		 */
   var defaultGraphicColor: js.UndefOr[GraphicColor] = js.undefined
   
   /**
-    * When true, the widget is visually withdrawn and cannot be interacted with.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#disabled)
-    */
+  		 * When true, the widget is visually withdrawn and cannot be interacted with.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#disabled)
+  		 */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of map points to load into the widget to lookup flags.
-    *
-    * @default []
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#flags)
-    */
+  		 * When `true`, provides the ability to show the convex hull or buffer.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#enableResultArea)
+  		 */
+  var enableResultArea: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * An array of map points to load into the widget to lookup flags.
+  		 *
+  		 * @default []
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#flags)
+  		 */
   var flags: js.UndefOr[js.Array[FlagProperty]] = js.undefined
   
   /**
-    * The Geodatabase version to pass into the trace.
-    *
-    * @default "sde.DEFAULT"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#gdbVersion)
-    */
+  		 * The Geodatabase version to pass into the trace.
+  		 *
+  		 * @default "sde.DEFAULT"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#gdbVersion)
+  		 */
   var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The widget's default CSS icon class.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#iconClass)
-    */
+  		 * The widget's default CSS icon class.
+  		 *
+  		 * @deprecated since 4.27. Use {@link module:esri/widgets/UtilityNetworkTrace#icon icon} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#iconClass)
+  		 */
   var iconClass: js.UndefOr[String] = js.undefined
   
   /**
-    * Custom labels, descriptions, and symbol for the input [flags](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#flags).
-    *
-    * @default []
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#inputSettings)
-    */
+  		 * Custom labels, descriptions, and symbol for the input [flags](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#flags).
+  		 *
+  		 * @default []
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#inputSettings)
+  		 */
   var inputSettings: js.UndefOr[js.Array[InputSetting]] = js.undefined
   
   /**
-    * When true, the utility network elements are selected in the view when traces are completed.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#selectOnComplete)
-    */
+  		 * The properties to determine the size and color of the result area convex hull or buffer, and determines if it displays on the map when the trace completes.
+  		 *
+  		 * @default {
+  		 *  type: "convexhull",
+  		 *  distance: 10,
+  		 *  unit: "meters",
+  		 *  areaUnit: "square-meters",
+  		 *  color: {
+  		 *    color: [255, 165, 0, 0.5],
+  		 *    haloOpacity: 0.9,
+  		 *    fillOpacity: 0.2,
+  		 *    hex: "#ffa500"
+  		 *  },
+  		 *  show: false
+  		 * }
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#resultAreaProperties)
+  		 */
+  var resultAreaProperties: js.UndefOr[ResultAreaPropertiesExtend] = js.undefined
+  
+  /**
+  		 * When true, the utility network elements are selected in the view when traces are completed.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#selectOnComplete)
+  		 */
   var selectOnComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A list of global Ids of traces to select on load
-    *
-    * @default []
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#selectedTraces)
-    */
+  		 * A list of global Ids of traces to select on load
+  		 *
+  		 * @default []
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#selectedTraces)
+  		 */
   var selectedTraces: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * When true, a graphic layer is added to the view to highlight the utility network elements when traces are completed.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#showGraphicsOnComplete)
-    */
+  		 * When true, a graphic layer is added to the view to highlight the utility network elements when traces are completed.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#showGraphicsOnComplete)
+  		 */
   var showGraphicsOnComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines whether to show list of selection attributes
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#showSelectionAttributes)
-    */
+  		 * Determines whether to show list of selection attributes
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#showSelectionAttributes)
+  		 */
   var showSelectionAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The view from which the widget will operate.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#view)
-    */
+  		 * Determines the utility network to use.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#utilityNetwork)
+  		 */
+  var utilityNetwork: js.UndefOr[UtilityNetworkProperties] = js.undefined
+  
+  /**
+  		 * The view from which the widget will operate.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#view)
+  		 */
   var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
-    * The view model for this widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#viewModel)
-    */
+  		 * The view model for this widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#viewModel)
+  		 */
   var viewModel: js.UndefOr[UtilityNetworkTraceViewModelProperties] = js.undefined
 }
 object UtilityNetworkTraceProperties {
@@ -132,6 +171,10 @@ object UtilityNetworkTraceProperties {
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEnableResultArea(value: Boolean): Self = StObject.set(x, "enableResultArea", value.asInstanceOf[js.Any])
+    
+    inline def setEnableResultAreaUndefined: Self = StObject.set(x, "enableResultArea", js.undefined)
     
     inline def setFlags(value: js.Array[FlagProperty]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
@@ -153,6 +196,10 @@ object UtilityNetworkTraceProperties {
     
     inline def setInputSettingsVarargs(value: InputSetting*): Self = StObject.set(x, "inputSettings", js.Array(value*))
     
+    inline def setResultAreaProperties(value: ResultAreaPropertiesExtend): Self = StObject.set(x, "resultAreaProperties", value.asInstanceOf[js.Any])
+    
+    inline def setResultAreaPropertiesUndefined: Self = StObject.set(x, "resultAreaProperties", js.undefined)
+    
     inline def setSelectOnComplete(value: Boolean): Self = StObject.set(x, "selectOnComplete", value.asInstanceOf[js.Any])
     
     inline def setSelectOnCompleteUndefined: Self = StObject.set(x, "selectOnComplete", js.undefined)
@@ -170,6 +217,10 @@ object UtilityNetworkTraceProperties {
     inline def setShowSelectionAttributes(value: Boolean): Self = StObject.set(x, "showSelectionAttributes", value.asInstanceOf[js.Any])
     
     inline def setShowSelectionAttributesUndefined: Self = StObject.set(x, "showSelectionAttributes", js.undefined)
+    
+    inline def setUtilityNetwork(value: UtilityNetworkProperties): Self = StObject.set(x, "utilityNetwork", value.asInstanceOf[js.Any])
+    
+    inline def setUtilityNetworkUndefined: Self = StObject.set(x, "utilityNetwork", js.undefined)
     
     inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

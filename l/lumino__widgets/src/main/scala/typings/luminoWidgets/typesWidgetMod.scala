@@ -867,7 +867,7 @@ object typesWidgetMod {
         * value is ignored.
         */
       var tag: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.luminoWidgets.luminoWidgetsStrings.a, typings.luminoWidgets.luminoWidgetsStrings.abbr, typings.luminoWidgets.luminoWidgetsStrings.address */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.luminoWidgets.luminoWidgetsStrings.a, typings.luminoWidgets.luminoWidgetsStrings.abbr, typings.luminoWidgets.luminoWidgetsStrings.address */ Any
           ] = js.undefined
     }
     object IOptions {
@@ -885,7 +885,7 @@ object typesWidgetMod {
         inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
         
         inline def setTag(
-          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.luminoWidgets.luminoWidgetsStrings.a, typings.luminoWidgets.luminoWidgetsStrings.abbr, typings.luminoWidgets.luminoWidgetsStrings.address */ Any
+          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.luminoWidgets.luminoWidgetsStrings.a, typings.luminoWidgets.luminoWidgetsStrings.abbr, typings.luminoWidgets.luminoWidgetsStrings.address */ Any
         ): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
         inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

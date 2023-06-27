@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurementAnalysisResult extends StObject {
   
   /**
-    * Measured distance between start and endpoint.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
-    */
+  		 * Measured distance between start and endpoint.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
+  		 */
   var distance: Length
   
   /**
-    * Horizontal distance measured as the euclidean distance between the point with higher elevation and the other point with its elevation changed to match the first point's elevation (moved along surface normal).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
-    */
+  		 * Horizontal distance measured as the euclidean distance between the point with higher elevation and the other point with its elevation changed to match the first point's elevation (moved along surface normal).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
+  		 */
   var horizontalDistance: Length
   
   /**
-    * Specifies whether the `distance` measurement uses euclidean or geodesic units.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
-    */
+  		 * Specifies whether the `distance` measurement uses euclidean or geodesic units.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
+  		 */
   var mode: euclidean | geodesic
   
   /**
-    * Vertical distance measured as the absolute difference of the elevation of the two points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
-    */
+  		 * Vertical distance measured as the absolute difference of the elevation of the two points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-analysis-DirectLineMeasurementAnalysisView3D.html#DirectLineMeasurementAnalysisResult)
+  		 */
   var verticalDistance: Length
 }
 object DirectLineMeasurementAnalysisResult {

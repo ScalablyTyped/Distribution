@@ -13,7 +13,6 @@ trait IObservable[T] extends StObject {
   
   /**
     * Fires event with an optional options object
-    * @memberOf fabric.Observable
     * @param {String} eventName Event name to fire
     * @param {Object} [options] Options object
     * @return {Self} thisArg

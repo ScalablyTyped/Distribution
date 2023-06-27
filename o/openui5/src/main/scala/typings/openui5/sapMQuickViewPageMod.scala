@@ -137,7 +137,7 @@ object sapMQuickViewPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Binds aggregation {@link #getAvatar avatar} to model data.
       *
@@ -165,7 +165,7 @@ object sapMQuickViewPageMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Destroys the avatar in the aggregation {@link #getAvatar avatar}.
       *
@@ -181,7 +181,7 @@ object sapMQuickViewPageMod {
     def destroyGroups(): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Gets content of aggregation {@link #getAvatar avatar}.
       *
@@ -215,7 +215,7 @@ object sapMQuickViewPageMod {
     def getDescription(): String = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       * @deprecated (since 1.92) - Use the `avatar` aggregation and use its property `fallbackIcon` instead.
       *
       * Gets current value of property {@link #getFallbackIcon fallbackIcon}.
@@ -354,7 +354,7 @@ object sapMQuickViewPageMod {
     ): typings.openui5.sapMQuickViewGroupMod.default | Null = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Sets the aggregated {@link #getAvatar avatar}.
       *
@@ -403,7 +403,7 @@ object sapMQuickViewPageMod {
     sDescription: String): this.type = js.native
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       * @deprecated (since 1.92) - Use the `avatar` aggregation and use its property `fallbackIcon` instead.
       *
       * Sets a new value for property {@link #getFallbackIcon fallbackIcon}.
@@ -511,7 +511,7 @@ object sapMQuickViewPageMod {
     sTitleUrl: String): this.type = js.native
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Unbinds aggregation {@link #getAvatar avatar} from model data.
       *
@@ -532,7 +532,7 @@ object sapMQuickViewPageMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.92
+      * @since 1.92
       *
       * Specifies the avatar displayed under the header of the page. **Note:** To achieve the recommended design
       * and behavior don't use the `displaySize`, `customDisplaySize`, `customFontSize` properties and `detailBox`
@@ -556,7 +556,7 @@ object sapMQuickViewPageMod {
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.69
+      * @since 1.69
       * @deprecated (since 1.92) - Use the `avatar` aggregation and use its property `fallbackIcon` instead.
       *
       * Defines the fallback icon displayed in case of wrong image src or loading issues.

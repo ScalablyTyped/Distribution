@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-aria__interactions
 
-Typings are for version 3.15.0
+Typings are for version 3.15.1
 
 ## Library description:
 Spectrum UI components in React

@@ -12,24 +12,24 @@ trait ScaleEventInfo
      with UpdateToolEventInfo {
   
   /**
-    * Returns information indicating the stage of the scale operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
-    */
+  		 * Returns information indicating the stage of the scale operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
+  		 */
   var `type`: `scale-start` | scale | `scale-stop`
   
   /**
-    * The x scale factor used to enlarge or shrink the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
-    */
+  		 * The x scale factor used to enlarge or shrink the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
+  		 */
   var xScale: Double
   
   /**
-    * The y scale factor used to enlarge or shrink the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
-    */
+  		 * The y scale factor used to enlarge or shrink the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
+  		 */
   var yScale: Double
 }
 object ScaleEventInfo {

@@ -1,6 +1,7 @@
 package typings.playcanvas
 
 import typings.playcanvas.anon.MaxTextureSize
+import typings.playcanvas.anon.Width
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,8 @@ object buildPlaycanvasExtrasDotmjsExportersCoreExporterMod {
   @js.native
   open class CoreExporter () extends StObject {
     
+    def calcTextureSize(width: Any, height: Any, maxTextureSize: Any): Width = js.native
+    
     /**
       * Converts a texture to a canvas.
       *
@@ -19,14 +22,14 @@ object buildPlaycanvasExtrasDotmjsExportersCoreExporterMod {
       * @param {object} options - Object for passing optional arguments.
       * @param {Color} [options.color] - The tint color to modify the texture with.
       * @param {number} [options.maxTextureSize] - Maximum texture size. Texture is resized if over the size.
-      * @returns {HTMLCanvasElement|undefined} - The canvas element containing the image.
+      * @returns {Promise<HTMLCanvasElement>|Promise<undefined>} - The canvas element containing the image.
       */
     def textureToCanvas(
       texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Texture */ Any
-    ): js.UndefOr[HTMLCanvasElement] = js.native
+    ): js.Promise[HTMLCanvasElement | Unit] = js.native
     def textureToCanvas(
       texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Texture */ Any,
       options: MaxTextureSize
-    ): js.UndefOr[HTMLCanvasElement] = js.native
+    ): js.Promise[HTMLCanvasElement | Unit] = js.native
   }
 }

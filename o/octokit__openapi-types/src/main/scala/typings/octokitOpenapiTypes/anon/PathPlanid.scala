@@ -8,12 +8,12 @@ trait PathPlanid extends StObject {
   
   var path: Planid
   
-  var query: Direction
+  var query: js.UndefOr[Direction] = js.undefined
 }
 object PathPlanid {
   
-  inline def apply(path: Planid, query: Direction): PathPlanid = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Planid): PathPlanid = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathPlanid]
   }
   
@@ -23,5 +23,7 @@ object PathPlanid {
     inline def setPath(value: Planid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Direction): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

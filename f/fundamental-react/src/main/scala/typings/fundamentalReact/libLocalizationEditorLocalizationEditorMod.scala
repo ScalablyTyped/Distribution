@@ -6,7 +6,7 @@ import typings.fundamentalReact.anon.PartialLocalizationEditor
 import typings.fundamentalReact.anon.WeakValidationMapLocaliza
 import typings.fundamentalReact.fundamentalReactStrings.LocalizationEditor
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -18,8 +18,8 @@ object libLocalizationEditorLocalizationEditorMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LocalizationEditor/LocalizationEditor.LocalizationEditorProps> & {  displayName :'LocalizationEditor'} */
   object default {
     
-    inline def apply(props: LocalizationEditorProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: LocalizationEditorProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: LocalizationEditorProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: LocalizationEditorProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/LocalizationEditor/LocalizationEditor", JSImport.Default)
     @js.native

@@ -9,74 +9,74 @@ trait HeatmapRendererProperties
      with RendererProperties {
   
   /**
-    * An array of objects describing the renderer's color ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops)
-    */
+  		 * An array of objects describing the renderer's color ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#colorStops)
+  		 */
   var colorStops: js.UndefOr[js.Array[HeatmapColorStopProperties]] = js.undefined
   
   /**
-    * The name of the attribute field used to weight the density of each heatmap point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#field)
-    */
+  		 * The name of the attribute field used to weight the density of each heatmap point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * An object providing options for describing the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
-    */
+  		 * An object providing options for describing the renderer in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#legendOptions)
+  		 */
   var legendOptions: js.UndefOr[HeatmapRendererLegendOptions] = js.undefined
   
   /**
-    * The max density value to be assigned a color in the heatmap surface.
-    *
-    * @default 0.04
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#maxDensity)
-    */
+  		 * The max density value to be assigned a color in the heatmap surface.
+  		 *
+  		 * @default 0.04
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#maxDensity)
+  		 */
   var maxDensity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum density value to be assigned a color in the heatmap surface.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#minDensity)
-    */
+  		 * The minimum density value to be assigned a color in the heatmap surface.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#minDensity)
+  		 */
   var minDensity: js.UndefOr[Double] = js.undefined
   
   /**
-    * The search radius (in points) used to create a smooth kernel surface fitted around each point.
-    *
-    * @default 18
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#radius)
-    */
+  		 * The search radius (in points) used to create a smooth kernel surface fitted around each point.
+  		 *
+  		 * @default 18
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#radius)
+  		 */
   var radius: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * When set, the heatmap's visualization at the given scale will remain static and not change as the user zooms in and out of the view.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#referenceScale)
-    */
+  		 * When set, the heatmap's visualization at the given scale will remain static and not change as the user zooms in and out of the view.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#referenceScale)
+  		 */
   var referenceScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression)
-    */
+  		 * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression)
+  		 */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The title identifying and describing the [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpressionTitle)
-    */
+  		 * The title identifying and describing the [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpression) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#valueExpressionTitle)
+  		 */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
 }
 object HeatmapRendererProperties {

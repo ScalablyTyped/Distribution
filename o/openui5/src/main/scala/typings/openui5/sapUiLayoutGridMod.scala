@@ -26,8 +26,8 @@ object sapUiLayoutGridMod {
     * of the syntax of the settings object.
     * See:
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/grid-layout/#responsive-grid Grid}
-    * 	{@link topic:43ae317cf39640a88bc8be979d2671df Grid}
-    * 	{@link topic:32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
+    * 	{@link https://ui5.sap.com/#/topic/43ae317cf39640a88bc8be979d2671df Grid}
+    * 	{@link https://ui5.sap.com/#/topic/32d4b9c2b981425dbc374d3e9d5d0c2e Grid Controls}
     */
   open class default () extends Grid {
     def this(/**
@@ -138,7 +138,7 @@ object sapUiLayoutGridMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.48.7
+      * @since 1.48.7
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -169,10 +169,9 @@ object sapUiLayoutGridMod {
     def destroyContent(): this.type = js.native
     
     /**
-      * @SINCE 1.48.7
+      * @since 1.48.7
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -304,7 +303,7 @@ object sapUiLayoutGridMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.48.7
+      * @since 1.48.7
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -322,7 +321,7 @@ object sapUiLayoutGridMod {
     def removeAllContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.48.7
+      * @since 1.48.7
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -506,7 +505,7 @@ object sapUiLayoutGridMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.48.7
+      * @since 1.48.7
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute `aria-labelledby`).
       */

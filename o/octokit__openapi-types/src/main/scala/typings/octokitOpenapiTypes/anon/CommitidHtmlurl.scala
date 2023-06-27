@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommitidHtmlurl extends StObject {
   
-  var _links: HtmlPullrequest
+  var _links: Pullrequest
   
   /**
     * AuthorAssociation
@@ -55,7 +55,7 @@ trait CommitidHtmlurl extends StObject {
 object CommitidHtmlurl {
   
   inline def apply(
-    _links: HtmlPullrequest,
+    _links: Pullrequest,
     author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
     commit_id: String,
     html_url: String,
@@ -98,6 +98,6 @@ object CommitidHtmlurl {
     
     inline def setUserNull: Self = StObject.set(x, "user", null)
     
-    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Pullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

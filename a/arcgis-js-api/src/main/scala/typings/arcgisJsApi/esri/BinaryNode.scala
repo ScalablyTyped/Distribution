@@ -30,31 +30,31 @@ trait BinaryNode
      with SQLNode {
   
   /**
-    * Escape string.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
-    */
+  		 * Escape string.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
+  		 */
   var escape: js.UndefOr[String] = js.undefined
   
   /**
-    * SQL node to the left of the binary node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
-    */
+  		 * SQL node to the left of the binary node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
+  		 */
   var left: SQLNode
   
   /**
-    * Defines the way two expressions are combined to yield a single result.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
-    */
+  		 * Defines the way two expressions are combined to yield a single result.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
+  		 */
   var operator: AND | OR | IS | ISNOT | IN | (`NOT IN`) | BETWEEN | NOTBETWEEN | LIKE | (`NOT LIKE`) | LessthansignGreaterthansign | Lessthansign | Greaterthansign | GreaterthansignEqualssign | LessthansignEqualssign | Equalssign | Asterisk | `-_` | Plussign | Slash
   
   /**
-    * SQL node to the right of the binary node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
-    */
+  		 * SQL node to the right of the binary node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BinaryNode)
+  		 */
   var right: SQLNode
   
   var `type`: `binary-expression`

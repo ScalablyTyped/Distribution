@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait meshUtilsCreateElevationSamplerOptions extends StObject {
   
   /**
-    * The value to use when there is no data available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createElevationSampler)
-    */
+  		 * The value to use when there is no data available.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#createElevationSampler)
+  		 */
   var noDataValue: js.UndefOr[Double] = js.undefined
 }
 object meshUtilsCreateElevationSamplerOptions {

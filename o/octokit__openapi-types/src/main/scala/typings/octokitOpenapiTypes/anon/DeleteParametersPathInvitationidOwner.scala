@@ -10,11 +10,11 @@ trait DeleteParametersPathInvitationidOwner extends StObject {
   var delete: ParametersPathInvitationidOwner
   
   /** Update a repository invitation */
-  var patch: Responses200Content210
+  var patch: Responses200Content246
 }
 object DeleteParametersPathInvitationidOwner {
   
-  inline def apply(delete: ParametersPathInvitationidOwner, patch: Responses200Content210): DeleteParametersPathInvitationidOwner = {
+  inline def apply(delete: ParametersPathInvitationidOwner, patch: Responses200Content246): DeleteParametersPathInvitationidOwner = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathInvitationidOwner]
   }
@@ -24,6 +24,6 @@ object DeleteParametersPathInvitationidOwner {
     
     inline def setDelete(value: ParametersPathInvitationidOwner): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200Content210): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200Content246): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

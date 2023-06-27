@@ -26,67 +26,67 @@ trait TileInfo
      with JSONSupport {
   
   /**
-    * The dots per inch (DPI) of the tiling scheme.
-    *
-    * @default 96
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#dpi)
-    */
+  		 * The dots per inch (DPI) of the tiling scheme.
+  		 *
+  		 * @default 96
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#dpi)
+  		 */
   var dpi: Double = js.native
   
   /**
-    * Image format of the cached tiles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
-    */
+  		 * Image format of the cached tiles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
+  		 */
   var format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc | pbf = js.native
   
   /**
-    * Indicates if the tiling scheme supports wrap around.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#isWrappable)
-    */
+  		 * Indicates if the tiling scheme supports wrap around.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#isWrappable)
+  		 */
   var isWrappable: Boolean = js.native
   
   /**
-    * An array of levels of detail that define the tiling scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods)
-    */
+  		 * An array of levels of detail that define the tiling scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#lods)
+  		 */
   var lods: js.Array[LOD] = js.native
   
   /**
-    * The tiling scheme origin.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#origin)
-    */
+  		 * The tiling scheme origin.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#origin)
+  		 */
   var origin: Point = js.native
   
   /**
-    * Utility method used to convert a scale value to its corresponding zoom value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#scaleToZoom)
-    */
+  		 * Utility method used to convert a scale value to its corresponding zoom value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#scaleToZoom)
+  		 */
   def scaleToZoom(scale: Double): Double = js.native
   
   /**
-    * Size of tiles in pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#size)
-    */
+  		 * Size of tiles in pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#size)
+  		 */
   var size: js.Array[Double] = js.native
   
   /**
-    * The spatial reference of the tiling schema.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#spatialReference)
-    */
+  		 * The spatial reference of the tiling schema.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#spatialReference)
+  		 */
   var spatialReference: SpatialReference = js.native
   
   /**
-    * Utility method used to convert a zoom value to its corresponding scale value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#zoomToScale)
-    */
+  		 * Utility method used to convert a zoom value to its corresponding scale value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#zoomToScale)
+  		 */
   def zoomToScale(zoom: Double): Double = js.native
 }

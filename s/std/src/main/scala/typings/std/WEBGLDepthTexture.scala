@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The WEBGL_depth_texture extension is part of the WebGL API and defines 2D depth and depth-stencil textures. */
+/**
+  * The WEBGL_depth_texture extension is part of the WebGL API and defines 2D depth and depth-stencil textures.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/WEBGL_depth_texture)
+  */
 trait WEBGLDepthTexture extends StObject {
   
   /* standard dom */

@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterMultidimensionalInfoVariablesDimensions extends StObject {
   
   /**
-    * Dimension description.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Dimension description.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The extent of dimension values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * The extent of dimension values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var extent: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Indicates if the dimension is recorded at regular intervals.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Indicates if the dimension is recorded at regular intervals.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var hasRegularIntervals: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Dimension interval.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Dimension interval.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var interval: js.UndefOr[Double] = js.undefined
   
   /**
-    * Dimension interval unit.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Dimension interval unit.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var intervalUnit: js.UndefOr[String] = js.undefined
   
   /**
-    * Dimension name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * Dimension name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var name: String
   
   /**
-    * Dimension unit.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Dimension unit.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
-    */
+  		 * An array of single values or tuples [min, max] each defining a range of valid values along the specified dimension.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+  		 */
   var values: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
 }
 object RasterMultidimensionalInfoVariablesDimensions {

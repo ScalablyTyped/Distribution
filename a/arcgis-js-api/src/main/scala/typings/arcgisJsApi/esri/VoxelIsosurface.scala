@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelIsosurface extends StObject {
   
   /**
-    * The color to render this isosurface with.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
-    */
+  		 * The color to render this isosurface with.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
+  		 */
   var color: Color_
   
   /**
-    * Whether or not the isosurface color is automatically updated when the variable's transfer function's color stops change.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
-    */
+  		 * Whether or not the isosurface color is automatically updated when the variable's transfer function's color stops change.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
+  		 */
   var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether or not to render this isosurface.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
-    */
+  		 * Whether or not to render this isosurface.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
+  		 */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The label string for this isosurface.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label string for this isosurface.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The data value for this isosurface.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
-    */
+  		 * The data value for this isosurface.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#VoxelIsosurface)
+  		 */
   var value: Double
 }
 object VoxelIsosurface {

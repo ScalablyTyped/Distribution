@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The SVGNumberList defines a list of SVGNumber objects. */
+/**
+  * The SVGNumberList defines a list of SVGNumber objects.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGNumberList)
+  */
 @js.native
 trait SVGNumberList
   extends StObject

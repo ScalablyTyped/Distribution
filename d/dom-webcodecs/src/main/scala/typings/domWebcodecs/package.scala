@@ -15,8 +15,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AllowSharedBufferSource = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
-
 type AudioDataOutputCallback = js.Function1[/* output */ AudioData, Unit]
 
 /**
@@ -33,6 +31,7 @@ type EncodedVideoChunkOutputCallback = js.Function2[/* chunk */ EncodedVideoChun
   */
 type ImageBitmapSourceWebCodecs = CanvasImageSourceWebCodecs | Blob | ImageData
 
+// type AllowSharedBufferSource = ArrayBuffer | ArrayBufferView;
 // type BitrateMode = "constant" | "variable";
 type ImageBufferSource = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | ReadableStream[Any]
 

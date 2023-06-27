@@ -1,7 +1,7 @@
 
 # Scala.js typings for type-fest
 
-Typings are for version 3.10.0
+Typings are for version 3.12.0
 
 ## Library description:
 A collection of essential TypeScript types

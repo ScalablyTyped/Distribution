@@ -16,10 +16,12 @@ open class MediaCapabilities ()
   extends StObject
      with typings.std.MediaCapabilities {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaCapabilities/decodingInfo) */
   /* standard dom */
   /* CompleteClass */
   override def decodingInfo(configuration: MediaDecodingConfiguration): js.Promise[MediaCapabilitiesDecodingInfo] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaCapabilities/encodingInfo) */
   /* standard dom */
   /* CompleteClass */
   override def encodingInfo(configuration: MediaEncodingConfiguration): js.Promise[MediaCapabilitiesEncodingInfo] = js.native

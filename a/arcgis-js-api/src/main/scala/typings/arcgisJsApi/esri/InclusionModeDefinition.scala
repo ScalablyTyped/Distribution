@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InclusionModeDefinition extends StObject {
   
   /**
-    * Specifies whether to create sublayers for each [named type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphNamedObject.html) regardless of whether or not they are included in the `namedTypeDefinition`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#InclusionModeDefinition)
-    */
+  		 * Specifies whether to create sublayers for each [named type](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphNamedObject.html) regardless of whether or not they are included in the `namedTypeDefinition`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#InclusionModeDefinition)
+  		 */
   var generateAllSublayers: Boolean
   
   /**
-    * A map of named types and the specific instances of those types to include in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#InclusionModeDefinition)
-    */
+  		 * A map of named types and the specific instances of those types to include in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KnowledgeGraphLayer.html#InclusionModeDefinition)
+  		 */
   var namedTypeDefinitions: Any
 }
 object InclusionModeDefinition {

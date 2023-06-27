@@ -35,7 +35,7 @@ open class Renderer[T] () extends StObject {
   
   def hr(): String | T = js.native
   
-  def html(html: String): String | T = js.native
+  def html(html: String, block: Boolean): String | T = js.native
   
   def image(href: String, title: String, text: String): String | T = js.native
   def image(href: String, title: Null, text: String): String | T = js.native

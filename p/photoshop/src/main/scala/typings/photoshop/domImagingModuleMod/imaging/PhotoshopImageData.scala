@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Image data is represented by a PhotoshopImageData instance.
-  * @returnobject
   * @targetfolder objects/returnobjects
   */
 trait PhotoshopImageData extends StObject {

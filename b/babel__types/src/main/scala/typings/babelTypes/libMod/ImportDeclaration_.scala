@@ -20,6 +20,8 @@ trait ImportDeclaration_
   
   var assertions: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
   
+  var attributes: js.UndefOr[js.Array[ImportAttribute_] | Null] = js.undefined
+  
   var importKind: js.UndefOr[`type` | typeof | value | Null] = js.undefined
   
   var module: js.UndefOr[Boolean | Null] = js.undefined
@@ -52,6 +54,14 @@ object ImportDeclaration_ {
     inline def setAssertionsUndefined: Self = StObject.set(x, "assertions", js.undefined)
     
     inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
+    
+    inline def setAttributes(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setImportKind(value: `type` | typeof | value): Self = StObject.set(x, "importKind", value.asInstanceOf[js.Any])
     

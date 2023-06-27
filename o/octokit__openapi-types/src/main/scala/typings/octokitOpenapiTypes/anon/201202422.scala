@@ -12,11 +12,11 @@ trait `201202422` extends StObject {
   /** @description Merged branch response */
   var `202`: ContentApplicationjsonMessage
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `201202422` {
   
-  inline def apply(`201`: ContentApplicationjsonTask, `202`: ContentApplicationjsonMessage, `422`: Content346): `201202422` = {
+  inline def apply(`201`: ContentApplicationjsonTask, `202`: ContentApplicationjsonMessage, `422`: Content414): `201202422` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("201")(`201`.asInstanceOf[js.Any])
     __obj.updateDynamic("202")(`202`.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object `201202422` {
     
     inline def set202(value: ContentApplicationjsonMessage): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

@@ -9,52 +9,52 @@ trait CIMMarkerPlacementOnVertices
      with MarkerPlacement {
   
   /**
-    * A value indicating whether to angle the marker to the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * A value indicating whether to angle the marker to the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var angleToLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The offset.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * The offset.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether a marker will be placed on the control points of the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * A value indicating whether a marker will be placed on the control points of the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var placeOnControlPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether a marker will be placed on the endpoints of the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * A value indicating whether a marker will be placed on the endpoints of the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var placeOnEndPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether a marker will be placed on the vertices of the line.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * A value indicating whether a marker will be placed on the vertices of the line.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var placeOnRegularVertices: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementOnVertices)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementOnVertices

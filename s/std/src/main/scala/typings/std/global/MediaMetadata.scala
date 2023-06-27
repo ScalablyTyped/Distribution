@@ -15,18 +15,22 @@ open class MediaMetadata ()
      with typings.std.MediaMetadata {
   def this(init: MediaMetadataInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/album) */
   /* standard dom */
   /* CompleteClass */
   var album: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artist) */
   /* standard dom */
   /* CompleteClass */
   var artist: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artwork) */
   /* standard dom */
   /* CompleteClass */
   var artwork: js.Array[MediaImage] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/title) */
   /* standard dom */
   /* CompleteClass */
   var title: java.lang.String = js.native

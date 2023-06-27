@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.PreviouslySelectedItems
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -9,6 +7,7 @@ import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiWebcMainLibraryMod.ITreeItem
 import typings.openui5.sapUiWebcMainLibraryMod.ListMode
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -163,13 +162,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -194,7 +193,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit]
     ): this.type = js.native
     def attachItemClick(
       /**
@@ -205,7 +204,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -228,13 +227,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -261,7 +260,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit]
     ): this.type = js.native
     def attachItemDelete(
       /**
@@ -272,7 +271,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -293,13 +292,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit]
     ): this.type = js.native
     def attachItemMouseout(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -324,7 +323,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit]
     ): this.type = js.native
     def attachItemMouseout(
       /**
@@ -335,7 +334,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -356,13 +355,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit]
     ): this.type = js.native
     def attachItemMouseover(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -387,7 +386,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit]
     ): this.type = js.native
     def attachItemMouseover(
       /**
@@ -398,7 +397,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -422,13 +421,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit]
     ): this.type = js.native
     def attachItemToggle(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -456,7 +455,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit]
     ): this.type = js.native
     def attachItemToggle(
       /**
@@ -467,7 +466,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -490,13 +489,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -523,7 +522,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -534,7 +533,7 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.Tree` itself
       */
@@ -566,13 +565,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit]
     ): this.type = js.native
     def detachItemClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -590,13 +589,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit]
     ): this.type = js.native
     def detachItemDelete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemDeleteEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -614,13 +613,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit]
     ): this.type = js.native
     def detachItemMouseout(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoutEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -639,13 +638,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit]
     ): this.type = js.native
     def detachItemMouseover(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemMouseoverEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -663,13 +662,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit]
     ): this.type = js.native
     def detachItemToggle(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeItemToggleEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -688,13 +687,13 @@ object sapUiWebcMainTreeMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -702,7 +701,7 @@ object sapUiWebcMainTreeMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemClick itemClick} to attached listeners.
       *
@@ -715,10 +714,10 @@ object sapUiWebcMainTreeMod {
     def fireItemClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): Boolean = js.native
+    mParameters: Tree$ItemClickEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemDelete itemDelete} to attached listeners.
       *
@@ -728,10 +727,10 @@ object sapUiWebcMainTreeMod {
     def fireItemDelete(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: Tree$ItemDeleteEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemMouseout itemMouseout} to attached listeners.
       *
@@ -741,23 +740,25 @@ object sapUiWebcMainTreeMod {
     def fireItemMouseout(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: Tree$ItemMouseoutEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemMouseover itemMouseover} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireItemMouseover(): this.type = js.native
-    def fireItemMouseover(/**
+    def fireItemMouseover(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: Tree$ItemMouseoverEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemToggle itemToggle} to attached listeners.
       *
@@ -770,20 +771,22 @@ object sapUiWebcMainTreeMod {
     def fireItemToggle(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): Boolean = js.native
+    mParameters: Tree$ItemToggleEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: PreviouslySelectedItems): this.type = js.native
+    mParameters: Tree$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getFooterText footerText}.
@@ -1124,6 +1127,181 @@ object sapUiWebcMainTreeMod {
     ): Unit = js.native
   }
   
+  trait Tree$ItemClickEventParameters extends StObject {
+    
+    /**
+      * The clicked item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Tree$ItemClickEventParameters {
+    
+    inline def apply(): Tree$ItemClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ItemClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ItemClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Tree$ItemDeleteEventParameters extends StObject {
+    
+    /**
+      * the deleted item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Tree$ItemDeleteEventParameters {
+    
+    inline def apply(): Tree$ItemDeleteEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ItemDeleteEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ItemDeleteEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Tree$ItemMouseoutEventParameters extends StObject {
+    
+    /**
+      * the hovered item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Tree$ItemMouseoutEventParameters {
+    
+    inline def apply(): Tree$ItemMouseoutEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ItemMouseoutEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ItemMouseoutEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Tree$ItemMouseoverEventParameters extends StObject {
+    
+    /**
+      * the hovered item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Tree$ItemMouseoverEventParameters {
+    
+    inline def apply(): Tree$ItemMouseoverEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ItemMouseoverEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ItemMouseoverEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Tree$ItemToggleEventParameters extends StObject {
+    
+    /**
+      * the toggled item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Tree$ItemToggleEventParameters {
+    
+    inline def apply(): Tree$ItemToggleEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$ItemToggleEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$ItemToggleEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  trait Tree$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * An array of the previously selected items.
+      */
+    var previouslySelectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    /**
+      * An array of the selected items.
+      */
+    var selectedItems: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Tree$SelectionChangeEventParameters {
+    
+    inline def apply(): Tree$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tree$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPreviouslySelectedItems(value: js.Array[Any]): Self = StObject.set(x, "previouslySelectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setPreviouslySelectedItemsUndefined: Self = StObject.set(x, "previouslySelectedItems", js.undefined)
+      
+      inline def setPreviouslySelectedItemsVarargs(value: Any*): Self = StObject.set(x, "previouslySelectedItems", js.Array(value*))
+      
+      inline def setSelectedItems(value: js.Array[Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: Any*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  type TreeItemClickEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ItemClickEventParameters]
+  
+  type TreeItemClickEventParameters = Tree$ItemClickEventParameters
+  
+  type TreeItemDeleteEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ItemDeleteEventParameters]
+  
+  type TreeItemDeleteEventParameters = Tree$ItemDeleteEventParameters
+  
+  type TreeItemMouseoutEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoutEventParameters]
+  
+  type TreeItemMouseoutEventParameters = Tree$ItemMouseoutEventParameters
+  
+  type TreeItemMouseoverEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoverEventParameters]
+  
+  type TreeItemMouseoverEventParameters = Tree$ItemMouseoverEventParameters
+  
+  type TreeItemToggleEvent = typings.openui5.sapUiBaseEventMod.default[Tree$ItemToggleEventParameters]
+  
+  type TreeItemToggleEventParameters = Tree$ItemToggleEventParameters
+  
+  type TreeSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters]
+  
+  type TreeSelectionChangeEventParameters = Tree$SelectionChangeEventParameters
+  
   trait TreeSettings
     extends StObject
        with ControlSettings {
@@ -1159,24 +1337,44 @@ object sapUiWebcMainTreeMod {
     /**
       * Fired when a tree item is activated.
       */
-    var itemClick: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemClick: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the Delete button of any tree item is pressed.
       *
       *  **Note:** A Delete button is displayed on each item, when the component `mode` property is set to `Delete`.
       */
-    var itemDelete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemDelete: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemDeleteEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the mouse cursor leaves the tree item borders.
       */
-    var itemMouseout: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemMouseout: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoutEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the mouse cursor enters the tree item borders.
       */
-    var itemMouseover: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemMouseover: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoverEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when a tree item is expanded or collapsed. Note: You can call `preventDefault()` on the
@@ -1184,7 +1382,12 @@ object sapUiWebcMainTreeMod {
       * load tree items upon the user expanding a node. Even if you prevented the event's default behavior, you
       * can always manually call `toggle()` on a tree item.
       */
-    var itemToggle: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemToggle: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemToggleEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of the component. Tree items may have other tree items as children.
@@ -1224,7 +1427,12 @@ object sapUiWebcMainTreeMod {
       * Fired when selection is changed by user interaction in `SingleSelect`, `SingleSelectBegin`, `SingleSelectEnd`
       * and `MultiSelect` modes.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the width of the control
@@ -1263,23 +1471,33 @@ object sapUiWebcMainTreeMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setItemClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
+      inline def setItemClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemClickEventParameters] => Unit
+      ): Self = StObject.set(x, "itemClick", js.Any.fromFunction1(value))
       
       inline def setItemClickUndefined: Self = StObject.set(x, "itemClick", js.undefined)
       
-      inline def setItemDelete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
+      inline def setItemDelete(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemDeleteEventParameters] => Unit
+      ): Self = StObject.set(x, "itemDelete", js.Any.fromFunction1(value))
       
       inline def setItemDeleteUndefined: Self = StObject.set(x, "itemDelete", js.undefined)
       
-      inline def setItemMouseout(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemMouseout", js.Any.fromFunction1(value))
+      inline def setItemMouseout(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoutEventParameters] => Unit
+      ): Self = StObject.set(x, "itemMouseout", js.Any.fromFunction1(value))
       
       inline def setItemMouseoutUndefined: Self = StObject.set(x, "itemMouseout", js.undefined)
       
-      inline def setItemMouseover(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemMouseover", js.Any.fromFunction1(value))
+      inline def setItemMouseover(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemMouseoverEventParameters] => Unit
+      ): Self = StObject.set(x, "itemMouseover", js.Any.fromFunction1(value))
       
       inline def setItemMouseoverUndefined: Self = StObject.set(x, "itemMouseover", js.undefined)
       
-      inline def setItemToggle(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemToggle", js.Any.fromFunction1(value))
+      inline def setItemToggle(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$ItemToggleEventParameters] => Unit
+      ): Self = StObject.set(x, "itemToggle", js.Any.fromFunction1(value))
       
       inline def setItemToggleUndefined: Self = StObject.set(x, "itemToggle", js.undefined)
       
@@ -1301,7 +1519,9 @@ object sapUiWebcMainTreeMod {
       
       inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Tree$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

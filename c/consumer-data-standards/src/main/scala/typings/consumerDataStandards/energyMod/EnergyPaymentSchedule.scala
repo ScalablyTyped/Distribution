@@ -18,7 +18,7 @@ trait EnergyPaymentSchedule
      with /* k */ StringDictionary[Any] {
   
   /**
-    * Optional payment amount indicating that a constant payment amount is scheduled to be paid (used in bill smooting scenarios)
+    * Optional payment amount indicating that a constant payment amount is scheduled to be paid (used in bill smoothing scenarios)
     */
   var amount: js.UndefOr[String | Null] = js.undefined
   

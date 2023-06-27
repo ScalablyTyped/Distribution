@@ -33,10 +33,10 @@ trait RemoteMessagePort extends StObject {
     * The order of items in this array is not guaranteed to be preserved during data transfer, and values of _key_ within this
     * array must not be duplicated or empty.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
-    * @throw WebAPIException with error type InvalidValuesError, if an input parameter contains an invalid value.
-    * @throw WebAPIException with error type QuotaExceededError, if the size of message has exceeded the maximum limit.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type.
+    * @throws WebAPIException with error type InvalidValuesError, if an input parameter contains an invalid value.
+    * @throws WebAPIException with error type QuotaExceededError, if the size of message has exceeded the maximum limit.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def sendMessage(data: js.Array[MessagePortDataItem]): Unit = js.native
   def sendMessage(data: js.Array[MessagePortDataItem], localMessagePort: LocalMessagePort): Unit = js.native

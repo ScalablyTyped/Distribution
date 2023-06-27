@@ -13,10 +13,12 @@ open class IdleDeadline ()
   extends StObject
      with typings.std.IdleDeadline {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IdleDeadline/didTimeout) */
   /* standard dom */
   /* CompleteClass */
   override val didTimeout: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IdleDeadline/timeRemaining) */
   /* standard dom */
   /* CompleteClass */
   override def timeRemaining(): DOMHighResTimeStamp = js.native

@@ -11,7 +11,7 @@ trait InstallationOrganizationProject extends StObject {
   var action: edited
   
   /** @description The changes to the project if the action was `edited`. */
-  var changes: js.UndefOr[`457`] = js.undefined
+  var changes: js.UndefOr[`535`] = js.undefined
   
   var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
@@ -38,7 +38,7 @@ object InstallationOrganizationProject {
     
     inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setChanges(value: `457`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: `535`): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     

@@ -12,20 +12,20 @@ object esriRenderersSupportColormapInfoMod {
   @JSImport("esri/renderers/support/ColormapInfo", JSImport.Namespace)
   @js.native
   /**
-    * The ColormapInfo describes pixel value, RGB colors and labels to color the raster.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ColormapInfo.html)
-    */
+  		 * The ColormapInfo describes pixel value, RGB colors and labels to color the raster.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-ColormapInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with ColormapInfo {
     def this(properties: ColormapInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

@@ -25,7 +25,7 @@ trait Homepage extends StObject {
   
   var repo: js.UndefOr[String] = js.undefined
   
-  var version_info: js.UndefOr[`453`] = js.undefined
+  var version_info: js.UndefOr[`531`] = js.undefined
 }
 object Homepage {
   
@@ -75,7 +75,7 @@ object Homepage {
     
     inline def setRepoUndefined: Self = StObject.set(x, "repo", js.undefined)
     
-    inline def setVersion_info(value: `453`): Self = StObject.set(x, "version_info", value.asInstanceOf[js.Any])
+    inline def setVersion_info(value: `531`): Self = StObject.set(x, "version_info", value.asInstanceOf[js.Any])
     
     inline def setVersion_infoUndefined: Self = StObject.set(x, "version_info", js.undefined)
   }

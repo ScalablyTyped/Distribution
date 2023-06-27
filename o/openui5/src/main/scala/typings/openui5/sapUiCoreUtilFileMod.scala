@@ -12,7 +12,7 @@ object sapUiCoreUtilFileMod extends Shortcut {
   val default: File = js.native
   
   /**
-    * @SINCE 1.22.0
+    * @since 1.22.0
     *
     * Utility class to handle files.
     */

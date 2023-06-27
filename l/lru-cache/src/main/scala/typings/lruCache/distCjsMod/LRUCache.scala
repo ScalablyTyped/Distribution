@@ -106,15 +106,15 @@ open class LRUCache[K /* <: js.Object */, V /* <: js.Object */, FC] protected ()
     */
   def fetch(
     k: K,
-    fetchOptions: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptions<K, V, FC> : FC extends undefined | void ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsNoContext<K, V, FC> : lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsWithContext<K, V, FC> */ js.Any
-  ): js.Promise[Unit | V] = js.native
+    fetchOptions: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptions<K, V, FC> : FC extends undefined | void ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsNoContext<K, V> : lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsWithContext<K, V, FC> */ js.Any
+  ): js.Promise[js.UndefOr[V]] = js.native
   def fetch(
     k: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? K : FC extends undefined | void ? K : never */ js.Any
-  ): js.Promise[Unit | V] = js.native
+  ): js.Promise[js.UndefOr[V]] = js.native
   def fetch(
     k: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? K : FC extends undefined | void ? K : never */ js.Any,
-    fetchOptions: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptions<K, V, FC> : FC extends undefined | void ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsNoContext<K, V, FC> : never */ js.Any
-  ): js.Promise[Unit | V] = js.native
+    fetchOptions: /* import warning: importer.ImportType#apply Failed type conversion: unknown extends FC ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptions<K, V, FC> : FC extends undefined | void ? lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptionsNoContext<K, V> : never */ js.Any
+  ): js.Promise[js.UndefOr[V]] = js.native
   
   /**
     * {@link LRUCache.OptionsBase.fetchMethod} (read-only)
@@ -475,24 +475,116 @@ object LRUCache {
     * Options provided to {@link LRUCache#fetch} when the FC type is
     * `undefined` or `void`
     */
-  trait FetchOptionsNoContext[K, V, FC]
-    extends StObject
-       with FetchOptions[K, V, FC] {
+  /* Inlined parent lru-cache.lru-cache/dist/cjs.LRUCache.FetchOptions<K, V, undefined> */
+  trait FetchOptionsNoContext[K, V] extends StObject {
     
-    @JSName("context")
-    var context_FetchOptionsNoContext: Unit
+    var allowStale: js.UndefOr[Boolean] = js.undefined
+    
+    var allowStaleOnFetchAbort: js.UndefOr[Boolean] = js.undefined
+    
+    var allowStaleOnFetchRejection: js.UndefOr[Boolean] = js.undefined
+    
+    var context: Unit
+    
+    /**
+      * Set to true to force a re-load of the existing data, even if it
+      * is not yet stale.
+      */
+    var forceRefresh: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreFetchAbort: js.UndefOr[Boolean] = js.undefined
+    
+    var noDeleteOnFetchRejection: js.UndefOr[Boolean] = js.undefined
+    
+    var noDeleteOnStaleGet: js.UndefOr[Boolean] = js.undefined
+    
+    var noDisposeOnSet: js.UndefOr[Boolean] = js.undefined
+    
+    var noUpdateTTL: js.UndefOr[Boolean] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
+    var size: js.UndefOr[Size] = js.undefined
+    
+    var sizeCalculation: js.UndefOr[SizeCalculator[K, V]] = js.undefined
+    
+    var status: js.UndefOr[Status[V]] = js.undefined
+    
+    var ttl: js.UndefOr[Milliseconds] = js.undefined
+    
+    var updateAgeOnGet: js.UndefOr[Boolean] = js.undefined
   }
   object FetchOptionsNoContext {
     
-    inline def apply[K, V, FC](context: Unit): FetchOptionsNoContext[K, V, FC] = {
+    inline def apply[K, V](context: Unit): FetchOptionsNoContext[K, V] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FetchOptionsNoContext[K, V, FC]]
+      __obj.asInstanceOf[FetchOptionsNoContext[K, V]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: FetchOptionsNoContext[?, ?, ?], K, V, FC] (val x: Self & (FetchOptionsNoContext[K, V, FC])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: FetchOptionsNoContext[?, ?], K, V] (val x: Self & (FetchOptionsNoContext[K, V])) extends AnyVal {
+      
+      inline def setAllowStale(value: Boolean): Self = StObject.set(x, "allowStale", value.asInstanceOf[js.Any])
+      
+      inline def setAllowStaleOnFetchAbort(value: Boolean): Self = StObject.set(x, "allowStaleOnFetchAbort", value.asInstanceOf[js.Any])
+      
+      inline def setAllowStaleOnFetchAbortUndefined: Self = StObject.set(x, "allowStaleOnFetchAbort", js.undefined)
+      
+      inline def setAllowStaleOnFetchRejection(value: Boolean): Self = StObject.set(x, "allowStaleOnFetchRejection", value.asInstanceOf[js.Any])
+      
+      inline def setAllowStaleOnFetchRejectionUndefined: Self = StObject.set(x, "allowStaleOnFetchRejection", js.undefined)
+      
+      inline def setAllowStaleUndefined: Self = StObject.set(x, "allowStale", js.undefined)
       
       inline def setContext(value: Unit): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+      
+      inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      
+      inline def setIgnoreFetchAbort(value: Boolean): Self = StObject.set(x, "ignoreFetchAbort", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFetchAbortUndefined: Self = StObject.set(x, "ignoreFetchAbort", js.undefined)
+      
+      inline def setNoDeleteOnFetchRejection(value: Boolean): Self = StObject.set(x, "noDeleteOnFetchRejection", value.asInstanceOf[js.Any])
+      
+      inline def setNoDeleteOnFetchRejectionUndefined: Self = StObject.set(x, "noDeleteOnFetchRejection", js.undefined)
+      
+      inline def setNoDeleteOnStaleGet(value: Boolean): Self = StObject.set(x, "noDeleteOnStaleGet", value.asInstanceOf[js.Any])
+      
+      inline def setNoDeleteOnStaleGetUndefined: Self = StObject.set(x, "noDeleteOnStaleGet", js.undefined)
+      
+      inline def setNoDisposeOnSet(value: Boolean): Self = StObject.set(x, "noDisposeOnSet", value.asInstanceOf[js.Any])
+      
+      inline def setNoDisposeOnSetUndefined: Self = StObject.set(x, "noDisposeOnSet", js.undefined)
+      
+      inline def setNoUpdateTTL(value: Boolean): Self = StObject.set(x, "noUpdateTTL", value.asInstanceOf[js.Any])
+      
+      inline def setNoUpdateTTLUndefined: Self = StObject.set(x, "noUpdateTTL", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeCalculation(value: (V, K) => Size): Self = StObject.set(x, "sizeCalculation", js.Any.fromFunction2(value))
+      
+      inline def setSizeCalculationUndefined: Self = StObject.set(x, "sizeCalculation", js.undefined)
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setStatus(value: Status[V]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
+      inline def setTtl(value: Milliseconds): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      
+      inline def setUpdateAgeOnGet(value: Boolean): Self = StObject.set(x, "updateAgeOnGet", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateAgeOnGetUndefined: Self = StObject.set(x, "updateAgeOnGet", js.undefined)
     }
   }
   
@@ -807,8 +899,32 @@ object LRUCache {
       * event, whether user-triggered, or due to internal cache behavior.
       *
       * Unless {@link OptionsBase.ignoreFetchAbort} is also set, the underlying
-      * {@link OptionsBase.fetchMethod} will still be considered canceled, and its return
-      * value will be ignored and not cached.
+      * {@link OptionsBase.fetchMethod} will still be considered canceled, and
+      * any value it returns will be ignored and not cached.
+      *
+      * Caveat: since fetches are aborted when a new value is explicitly
+      * set in the cache, this can lead to fetch returning a stale value,
+      * since that was the fallback value _at the moment the `fetch()` was
+      * initiated_, even though the new updated value is now present in
+      * the cache.
+      *
+      * For example:
+      *
+      * ```ts
+      * const cache = new LRUCache<string, any>({
+      *   ttl: 100,
+      *   fetchMethod: async (url, oldValue, { signal }) =>  {
+      *     const res = await fetch(url, { signal })
+      *     return await res.json()
+      *   }
+      * })
+      * cache.set('https://example.com/', { some: 'data' })
+      * // 100ms go by...
+      * const result = cache.fetch('https://example.com/')
+      * cache.set('https://example.com/', { other: 'thing' })
+      * console.log(await result) // { some: 'data' }
+      * console.log(cache.get('https://example.com/')) // { other: 'thing' }
+      * ```
       */
     var allowStaleOnFetchAbort: js.UndefOr[Boolean] = js.undefined
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for geolib
 
-Typings are for version 3.3.3
+Typings are for version 3.3.4
 
 ## Library description:
 Library to provide basic geospatial operations like distance calculation, conversion of decimal coordinates to sexagesimal and vice versa, etc. This library is currently **2D**, meaning that altitude/elevation is not yet supported by any of its functions!

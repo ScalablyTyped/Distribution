@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Origin
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -153,13 +152,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -184,7 +183,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit]
     ): this.type = js.native
     def attachAfterClose(
       /**
@@ -195,7 +194,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -216,13 +215,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -247,7 +246,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAfterOpen(
       /**
@@ -258,7 +257,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -279,13 +278,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -310,7 +309,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit]
     ): this.type = js.native
     def attachBeforeClose(
       /**
@@ -321,7 +320,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -342,13 +341,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -373,7 +372,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachBeforeOpen(
       /**
@@ -384,7 +383,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -409,13 +408,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancelButtonPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -444,7 +443,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancelButtonPress(
       /**
@@ -455,7 +454,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -480,13 +479,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancelButtonTap(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -515,7 +514,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCancelButtonTap(
       /**
@@ -526,7 +525,7 @@ object sapMActionSheetMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ActionSheet` itself
       */
@@ -556,13 +555,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit]
     ): this.type = js.native
     def detachAfterClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetAfterCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -580,13 +579,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAfterOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -604,13 +603,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit]
     ): this.type = js.native
     def detachBeforeClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ActionSheetBeforeCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -628,13 +627,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachBeforeOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -653,13 +652,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancelButtonPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -680,13 +679,13 @@ object sapMActionSheetMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCancelButtonTap(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -694,20 +693,22 @@ object sapMActionSheetMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterClose(): this.type = js.native
-    def fireAfterClose(/**
+    def fireAfterClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Origin): this.type = js.native
+    mParameters: ActionSheet$AfterCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
@@ -720,20 +721,22 @@ object sapMActionSheetMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireBeforeClose(): this.type = js.native
-    def fireBeforeClose(/**
+    def fireBeforeClose(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Origin): this.type = js.native
+    mParameters: ActionSheet$BeforeCloseEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
@@ -746,7 +749,7 @@ object sapMActionSheetMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancelButtonPress cancelButtonPress} to attached listeners.
       *
@@ -760,7 +763,7 @@ object sapMActionSheetMod {
     
     /**
       * @deprecated (since 1.20.0) - This event is deprecated, use the cancelButtonPress event instead.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:cancelButtonTap cancelButtonTap} to attached listeners.
       *
@@ -807,7 +810,7 @@ object sapMActionSheetMod {
     def getPlacement(): PlacementType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementType * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the ID of the hidden label
       *
@@ -1000,6 +1003,88 @@ object sapMActionSheetMod {
     sTitle: String): this.type = js.native
   }
   
+  trait ActionSheet$AfterCloseEventParameters extends StObject {
+    
+    /**
+      * This indicates the trigger of closing the control. If dialog is closed by either selection or closeButton
+      * (on mobile device), the button that closes the dialog is set to this parameter. Otherwise this parameter
+      * is set to null.
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ActionSheet$AfterCloseEventParameters {
+    
+    inline def apply(): ActionSheet$AfterCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ActionSheet$AfterCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheet$AfterCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait ActionSheet$AfterOpenEventParameters extends StObject
+  
+  trait ActionSheet$BeforeCloseEventParameters extends StObject {
+    
+    /**
+      * This indicates the trigger of closing the dialog. If dialog is closed by either leftButton or rightButton,
+      * the button that closes the dialog is set to this parameter. Otherwise this parameter is set to null.
+      * This is valid only for Phone mode of the ActionSheet
+      */
+    var origin: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
+  }
+  object ActionSheet$BeforeCloseEventParameters {
+    
+    inline def apply(): ActionSheet$BeforeCloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ActionSheet$BeforeCloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheet$BeforeCloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOrigin(value: typings.openui5.sapMButtonMod.default): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    }
+  }
+  
+  trait ActionSheet$BeforeOpenEventParameters extends StObject
+  
+  trait ActionSheet$CancelButtonPressEventParameters extends StObject
+  
+  trait ActionSheet$CancelButtonTapEventParameters extends StObject
+  
+  type ActionSheetAfterCloseEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$AfterCloseEventParameters]
+  
+  type ActionSheetAfterCloseEventParameters = ActionSheet$AfterCloseEventParameters
+  
+  type ActionSheetAfterOpenEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$AfterOpenEventParameters]
+  
+  type ActionSheetAfterOpenEventParameters = ActionSheet$AfterOpenEventParameters
+  
+  type ActionSheetBeforeCloseEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$BeforeCloseEventParameters]
+  
+  type ActionSheetBeforeCloseEventParameters = ActionSheet$BeforeCloseEventParameters
+  
+  type ActionSheetBeforeOpenEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$BeforeOpenEventParameters]
+  
+  type ActionSheetBeforeOpenEventParameters = ActionSheet$BeforeOpenEventParameters
+  
+  type ActionSheetCancelButtonPressEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$CancelButtonPressEventParameters]
+  
+  type ActionSheetCancelButtonPressEventParameters = ActionSheet$CancelButtonPressEventParameters
+  
+  type ActionSheetCancelButtonTapEvent = typings.openui5.sapUiBaseEventMod.default[ActionSheet$CancelButtonTapEventParameters]
+  
+  type ActionSheetCancelButtonTapEventParameters = ActionSheet$CancelButtonTapEventParameters
+  
   trait ActionSheetSettings
     extends StObject
        with ControlSettings {
@@ -1007,22 +1092,36 @@ object sapMActionSheetMod {
     /**
       * This event will be fired after the ActionSheet is closed.
       */
-    var afterClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ActionSheet$AfterCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired after the ActionSheet is opened.
       */
-    var afterOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This event will be fired before the ActionSheet is closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeClose: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ActionSheet$BeforeCloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This event will be fired before the ActionSheet is opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beforeOpen: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * These buttons are added to the content area in ActionSheet control. When button is tapped, the ActionSheet
@@ -1038,7 +1137,9 @@ object sapMActionSheetMod {
       * **Note: ** For any device other than phones, this event would be fired always when the Popover closes.
       * To prevent this behavior, the `showCancelButton` property needs to be set to `false`.
       */
-    var cancelButtonPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancelButtonPress: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * @deprecated (since 1.20.0) - This event is deprecated, use the cancelButtonPress event instead.
@@ -1046,7 +1147,9 @@ object sapMActionSheetMod {
       * This event is fired when the cancelButton is tapped. For iPad, this event is also fired when showCancelButton
       * is set to true, and Popover is closed by tapping outside.
       */
-    var cancelButtonTap: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var cancelButtonTap: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * This is the text displayed in the cancelButton. Default value is "Cancel", and it's translated according
@@ -1090,19 +1193,23 @@ object sapMActionSheetMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ActionSheetSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ActionSheet$AfterCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
       inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
-      inline def setBeforeClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ActionSheet$BeforeCloseEventParameters] => Unit
+      ): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
       inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
       inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
@@ -1114,11 +1221,11 @@ object sapMActionSheetMod {
       
       inline def setButtonsVarargs(value: typings.openui5.sapMButtonMod.default*): Self = StObject.set(x, "buttons", js.Array(value*))
       
-      inline def setCancelButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancelButtonPress", js.Any.fromFunction1(value))
+      inline def setCancelButtonPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancelButtonPress", js.Any.fromFunction1(value))
       
       inline def setCancelButtonPressUndefined: Self = StObject.set(x, "cancelButtonPress", js.undefined)
       
-      inline def setCancelButtonTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "cancelButtonTap", js.Any.fromFunction1(value))
+      inline def setCancelButtonTap(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "cancelButtonTap", js.Any.fromFunction1(value))
       
       inline def setCancelButtonTapUndefined: Self = StObject.set(x, "cancelButtonTap", js.undefined)
       

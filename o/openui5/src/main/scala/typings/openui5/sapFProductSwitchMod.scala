@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemPressed
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -149,13 +148,13 @@ object sapFProductSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ProductSwitch` itself
       */
@@ -180,7 +179,7 @@ object sapFProductSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -191,7 +190,7 @@ object sapFProductSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.ProductSwitch` itself
       */
@@ -216,13 +215,13 @@ object sapFProductSwitchMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ProductSwitchChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -230,17 +229,19 @@ object sapFProductSwitchMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemPressed): this.type = js.native
+    mParameters: ProductSwitch$ChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getItems items}.
@@ -339,6 +340,33 @@ object sapFProductSwitchMod {
     ): this.type = js.native
   }
   
+  trait ProductSwitch$ChangeEventParameters extends StObject {
+    
+    /**
+      * Reference to the new item that has been selected.
+      */
+    var itemPressed: js.UndefOr[typings.openui5.sapFProductSwitchItemMod.default] = js.undefined
+  }
+  object ProductSwitch$ChangeEventParameters {
+    
+    inline def apply(): ProductSwitch$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProductSwitch$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitch$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItemPressed(value: typings.openui5.sapFProductSwitchItemMod.default): Self = StObject.set(x, "itemPressed", value.asInstanceOf[js.Any])
+      
+      inline def setItemPressedUndefined: Self = StObject.set(x, "itemPressed", js.undefined)
+    }
+  }
+  
+  type ProductSwitchChangeEvent = typings.openui5.sapUiBaseEventMod.default[ProductSwitch$ChangeEventParameters]
+  
+  type ProductSwitchChangeEventParameters = ProductSwitch$ChangeEventParameters
+  
   trait ProductSwitchSettings
     extends StObject
        with ControlSettings {
@@ -346,7 +374,12 @@ object sapFProductSwitchMod {
     /**
       * Fires when an unselected item is pressed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ProductSwitch$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * `ProductSwitch` content.
@@ -370,7 +403,9 @@ object sapFProductSwitchMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ProductSwitchSettings] (val x: Self) extends AnyVal {
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ProductSwitch$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

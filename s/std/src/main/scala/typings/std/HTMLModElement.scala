@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Provides special properties (beyond the regular methods and properties available through the HTMLElement interface they also have available to them by inheritance) for manipulating modification elements, that is <del> and <ins>. */
+/**
+  * Provides special properties (beyond the regular methods and properties available through the HTMLElement interface they also have available to them by inheritance) for manipulating modification elements, that is <del> and <ins>.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLModElement)
+  */
 @js.native
 trait HTMLModElement
   extends StObject
@@ -21,11 +25,19 @@ trait HTMLModElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  /** Sets or retrieves reference information about the object. */
+  /**
+    * Sets or retrieves reference information about the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLModElement/cite)
+    */
   /* standard dom */
   var cite: java.lang.String = js.native
   
-  /** Sets or retrieves the date and time of a modification to the object. */
+  /**
+    * Sets or retrieves the date and time of a modification to the object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLModElement/dateTime)
+    */
   /* standard dom */
   var dateTime: java.lang.String = js.native
   

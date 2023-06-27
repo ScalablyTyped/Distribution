@@ -8,11 +8,11 @@ trait Content26 extends StObject {
   
   var content: `26`
   
-  var headers: `25`
+  var headers: Location
 }
 object Content26 {
   
-  inline def apply(content: `26`, headers: `25`): Content26 = {
+  inline def apply(content: `26`, headers: Location): Content26 = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content26]
   }
@@ -22,6 +22,6 @@ object Content26 {
     
     inline def setContent(value: `26`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: `25`): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Location): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

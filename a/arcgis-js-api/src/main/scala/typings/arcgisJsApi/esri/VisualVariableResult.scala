@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisualVariableResult extends StObject {
   
   /**
-    * Authoring information related to the creation of the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * Authoring information related to the creation of the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var authoringInfo: AuthoringInfo
   
   /**
-    * The ID of the basemap used to determine the optimal fill color of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * The ID of the basemap used to determine the optimal fill color of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var basemapId: String
   
   /**
-    * Indicates whether the average color of the input view's basemap is `light` or `dark`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * Indicates whether the average color of the input view's basemap is `light` or `dark`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var basemapTheme: String
   
   /**
-    * The color scheme used by the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * The color scheme used by the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var colorScheme: ColorScheme
   
   /**
-    * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var defaultValuesUsed: Boolean
   
   /**
-    * Basic statistics returned from a query to the service for the given field or expression.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * Basic statistics returned from a query to the service for the given field or expression.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var statistics: SummaryStatisticsResult
   
   /**
-    * A color visual variable configured based on the statistics of the data and the view's background.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
-    */
+  		 * A color visual variable configured based on the statistics of the data and the view's background.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#VisualVariableResult)
+  		 */
   var visualVariable: ColorVariable
 }
 object VisualVariableResult {

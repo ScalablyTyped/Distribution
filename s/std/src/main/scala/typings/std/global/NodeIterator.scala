@@ -12,35 +12,46 @@ open class NodeIterator ()
   extends StObject
      with typings.std.NodeIterator {
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/detach)
+    */
   /* standard dom */
   /* CompleteClass */
   override def detach(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/filter) */
   /* standard dom */
   /* CompleteClass */
   override val filter: typings.std.NodeFilter | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/nextNode) */
   /* standard dom */
   /* CompleteClass */
   override def nextNode(): typings.std.Node | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/pointerBeforeReferenceNode) */
   /* standard dom */
   /* CompleteClass */
   override val pointerBeforeReferenceNode: scala.Boolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/previousNode) */
   /* standard dom */
   /* CompleteClass */
   override def previousNode(): typings.std.Node | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/referenceNode) */
   /* standard dom */
   /* CompleteClass */
   override val referenceNode: typings.std.Node = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/root) */
   /* standard dom */
   /* CompleteClass */
   override val root: typings.std.Node = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/NodeIterator/whatToShow) */
   /* standard dom */
   /* CompleteClass */
   override val whatToShow: Double = js.native

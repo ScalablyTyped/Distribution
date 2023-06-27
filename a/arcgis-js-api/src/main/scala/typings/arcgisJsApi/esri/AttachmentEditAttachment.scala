@@ -8,38 +8,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachmentEditAttachment extends StObject {
   
   /**
-    * The content type of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The content type of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var contentType: js.UndefOr[String] = js.undefined
   
   /**
-    * The attachment data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The attachment data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var data: js.UndefOr[Blob | Any | String] = js.undefined
   
   /**
-    * The globalId of the attachment to be added or updated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The globalId of the attachment to be added or updated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var globalId: String
   
   /**
-    * The name of the attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The name of the attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The id of pre-loaded attachment.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
-    */
+  		 * The id of pre-loaded attachment.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
+  		 */
   var uploadId: js.UndefOr[String] = js.undefined
 }
 object AttachmentEditAttachment {

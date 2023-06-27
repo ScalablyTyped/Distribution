@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides special properties (beyond those of the regular HTMLElement interface they also inherit) for manipulating <frameset> elements.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFrameSetElement)
   */
 @js.native
 trait HTMLFrameSetElement

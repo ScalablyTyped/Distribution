@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonCvssvectorstringCweids extends StObject {
   
-  var parameters: `540`
+  var parameters: `639`
   
   var requestBody: ContentApplicationjsonCvssvectorstringCweids
   
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonCvssvectorstringCweids extends StObject {
 object RequestBodyContentApplicationjsonCvssvectorstringCweids {
   
   inline def apply(
-    parameters: `540`,
+    parameters: `639`,
     requestBody: ContentApplicationjsonCvssvectorstringCweids,
     responses: `201ContentApplicationjsonCreditsdetailed`
   ): RequestBodyContentApplicationjsonCvssvectorstringCweids = {
@@ -26,7 +26,7 @@ object RequestBodyContentApplicationjsonCvssvectorstringCweids {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonCvssvectorstringCweids] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `540`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `639`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonCvssvectorstringCweids): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

@@ -14,33 +14,33 @@ trait FieldsContent
      with contentContent {
   
   /**
-    * Describes the field's content in detail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#description)
-    */
+  		 * Describes the field's content in detail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#description)
+  		 */
   var description: String = js.native
   
   /**
-    * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
-    */
+  		 * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
+  		 */
   var fieldInfos: js.Array[FieldInfo] = js.native
   
   /**
-    * Heading indicating what the field's content represents.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#title)
-    */
+  		 * Heading indicating what the field's content represents.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#title)
+  		 */
   var title: String = js.native
   
   /**
-    * The type of popup element displayed.
-    *
-    * @default fields
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#type)
-    */
+  		 * The type of popup element displayed.
+  		 *
+  		 * @default fields
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#type)
+  		 */
   @JSName("type")
   val type_FieldsContent: fields = js.native
 }

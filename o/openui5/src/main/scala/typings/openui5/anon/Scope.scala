@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMLibraryMod.GenericTileScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,22 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scope extends StObject {
   
   /**
-    * The action that was pressed on the tile. In the Actions scope, the available actions are Press and Remove.
+    * Whether {@link sap.ui.model.PropertyBinding#getValue} may return a `Promise` resolving with the value
+    * (since 1.57.0)
     */
-  var action: js.UndefOr[String] = js.undefined
+  @JSName("$$valueAsPromise")
+  var DollarDollarvalueAsPromise: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Element's DOM Element. In Actions scope the domRef points to the DOM Element of the remove button
-    * (if pressed) or the more icon.
+    * Optional scope for lookup of aliases for computed annotations (since 1.43.0)
     */
-  var domRef: js.UndefOr[Any] = js.undefined
-  
-  /**
-    * The current scope the SlideTile was in when the event occurred.
-    */
-  var scope: js.UndefOr[
-    GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
-  ] = js.undefined
+  var scope: js.UndefOr[js.Object] = js.undefined
 }
 object Scope {
   
@@ -35,17 +28,11 @@ object Scope {
   @scala.inline
   implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setDollarDollarvalueAsPromise(value: Boolean): Self = StObject.set(x, "$$valueAsPromise", value.asInstanceOf[js.Any])
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setDollarDollarvalueAsPromiseUndefined: Self = StObject.set(x, "$$valueAsPromise", js.undefined)
     
-    inline def setDomRef(value: Any): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
-    
-    inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
-    
-    inline def setScope(
-      value: GenericTileScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GenericTileScope * / any */ String)
-    ): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }

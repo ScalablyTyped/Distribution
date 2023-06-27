@@ -130,7 +130,7 @@ object sapUiModelJsonJsonmodelMod {
     extends typings.openui5.sapUiModelClientModelMod.default {
     
     /**
-      * Returns a Promise of the current data-loading state. Every currently running {@link sap.ui.model.json.JSONModel#loadData}
+      * Returns a Promise of the current data-loading state. Every currently running {@link sap.ui.model.json.JSONModel#loadData }
       * call is respected by the returned Promise. This also includes a potential loadData call from the JSONModel's
       * constructor in case a URL was given. The data-loaded Promise will resolve once all running requests have
       * finished. Only request, which have been queued up to the point of calling this function will be respected

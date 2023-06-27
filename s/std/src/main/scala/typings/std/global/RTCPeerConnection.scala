@@ -21,6 +21,7 @@ object RTCPeerConnection {
   @js.native
   val ^ : js.Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCPeerConnection/generateCertificate) */
   /* standard dom */
   inline def generateCertificate(keygenAlgorithm: AlgorithmIdentifier): js.Promise[typings.std.RTCCertificate] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCertificate")(keygenAlgorithm.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.RTCCertificate]]
 }

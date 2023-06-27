@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterStretchColorrampResult extends StObject {
   
   /**
-    * The zero-based index of the band represented by the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#RasterStretchColorrampResult)
-    */
+  		 * The zero-based index of the band represented by the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#RasterStretchColorrampResult)
+  		 */
   var bandId: Double
   
   /**
-    * The RasterStretchRenderer renderer to apply to the input layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#RasterStretchColorrampResult)
-    */
+  		 * The RasterStretchRenderer renderer to apply to the input layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html#RasterStretchColorrampResult)
+  		 */
   var renderer: RasterStretchRenderer
 }
 object RasterStretchColorrampResult {

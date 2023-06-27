@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.SecurityNamespace
 
+import typings.microsoftGraph.microsoftGraphStrings.active_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
-  - typings.microsoftGraph.microsoftGraphStrings.active
+  - typings.microsoftGraph.microsoftGraphStrings.active_
   - typings.microsoftGraph.microsoftGraphStrings.pendingDelete
   - typings.microsoftGraph.microsoftGraphStrings.closing
   - typings.microsoftGraph.microsoftGraphStrings.closed
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaseStatus extends StObject
 object CaseStatus {
   
-  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: active_ = "active".asInstanceOf[active_]
   
   inline def closed: typings.microsoftGraph.microsoftGraphStrings.closed = "closed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.closed]
   

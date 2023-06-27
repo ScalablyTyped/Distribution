@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-port" : "6.1.2"
+      "get-port" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "get-port" : "6.1.2"
+      "get-port" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

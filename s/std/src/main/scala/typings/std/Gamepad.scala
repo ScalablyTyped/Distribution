@@ -7,32 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This Gamepad API interface defines an individual gamepad or other controller, allowing access to information such as button presses, axis positions, and id.
   * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad)
   */
 trait Gamepad extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/axes) */
   /* standard dom */
   val axes: js.Array[Double]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/buttons) */
   /* standard dom */
   val buttons: js.Array[GamepadButton]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/connected) */
   /* standard dom */
   val connected: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/hapticActuators) */
   /* standard dom */
   val hapticActuators: js.Array[GamepadHapticActuator]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/id) */
   /* standard dom */
   val id: java.lang.String
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/index) */
   /* standard dom */
   val index: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/mapping) */
   /* standard dom */
   val mapping: GamepadMappingType
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Gamepad/timestamp) */
   /* standard dom */
   val timestamp: DOMHighResTimeStamp
+  
+  /* standard dom */
+  val vibrationActuator: GamepadHapticActuator | Null
 }
 object Gamepad {
   
@@ -46,7 +59,7 @@ object Gamepad {
     mapping: GamepadMappingType,
     timestamp: DOMHighResTimeStamp
   ): Gamepad = {
-    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], connected = connected.asInstanceOf[js.Any], hapticActuators = hapticActuators.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], vibrationActuator = null)
     __obj.asInstanceOf[Gamepad]
   }
   
@@ -74,5 +87,9 @@ object Gamepad {
     inline def setMapping(value: GamepadMappingType): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     inline def setTimestamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setVibrationActuator(value: GamepadHapticActuator): Self = StObject.set(x, "vibrationActuator", value.asInstanceOf[js.Any])
+    
+    inline def setVibrationActuatorNull: Self = StObject.set(x, "vibrationActuator", null)
   }
 }

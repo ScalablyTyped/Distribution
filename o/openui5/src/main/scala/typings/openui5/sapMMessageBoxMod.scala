@@ -15,12 +15,15 @@ object sapMMessageBoxMod extends Shortcut {
   
   @js.native
   sealed trait Action extends StObject
+  /**
+    * Enumeration of supported actions in a MessageBox.
+    *
+    * Each action is represented as a button in the message box. The values of this enumeration are used for
+    * both, specifying the set of allowed actions as well as reporting back the user choice.
+    */
   @JSImport("sap/m/MessageBox", "Action")
   @js.native
   object Action extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Action & String] = js.native
     
     /**
       * Adds an "Abort" button to the message box.
@@ -29,7 +32,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait ABORT
       extends StObject
          with Action
-    /* "ABORT" */ val ABORT: typings.openui5.sapMMessageBoxMod.Action.ABORT & String = js.native
     
     /**
       * Adds a "Cancel" button to the message box.
@@ -38,7 +40,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait CANCEL
       extends StObject
          with Action
-    /* "CANCEL" */ val CANCEL: typings.openui5.sapMMessageBoxMod.Action.CANCEL & String = js.native
     
     /**
       * Adds a "Close" button to the message box.
@@ -47,7 +48,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait CLOSE
       extends StObject
          with Action
-    /* "CLOSE" */ val CLOSE: typings.openui5.sapMMessageBoxMod.Action.CLOSE & String = js.native
     
     /**
       * Adds a "Delete" button to the message box.
@@ -56,7 +56,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait DELETE
       extends StObject
          with Action
-    /* "DELETE" */ val DELETE: typings.openui5.sapMMessageBoxMod.Action.DELETE & String = js.native
     
     /**
       * Adds an "Ignore" button to the message box.
@@ -65,7 +64,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait IGNORE
       extends StObject
          with Action
-    /* "IGNORE" */ val IGNORE: typings.openui5.sapMMessageBoxMod.Action.IGNORE & String = js.native
     
     /**
       * Adds a "No" button to the message box.
@@ -74,7 +72,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait NO
       extends StObject
          with Action
-    /* "NO" */ val NO: typings.openui5.sapMMessageBoxMod.Action.NO & String = js.native
     
     /**
       * Adds an "OK" button to the message box.
@@ -83,7 +80,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait OK
       extends StObject
          with Action
-    /* "OK" */ val OK: typings.openui5.sapMMessageBoxMod.Action.OK & String = js.native
     
     /**
       * Adds a "Retry" button to the message box.
@@ -92,7 +88,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait RETRY
       extends StObject
          with Action
-    /* "RETRY" */ val RETRY: typings.openui5.sapMMessageBoxMod.Action.RETRY & String = js.native
     
     /**
       * Adds a "Yes" button to the message box.
@@ -101,17 +96,16 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait YES
       extends StObject
          with Action
-    /* "YES" */ val YES: typings.openui5.sapMMessageBoxMod.Action.YES & String = js.native
   }
   
   @js.native
   sealed trait Icon extends StObject
+  /**
+    * Enumeration of the pre-defined icons that can be used in a MessageBox.
+    */
   @JSImport("sap/m/MessageBox", "Icon")
   @js.native
   object Icon extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Icon & String] = js.native
     
     /**
       * Shows the error icon in the message box.
@@ -120,7 +114,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait ERROR
       extends StObject
          with Icon
-    /* "undefined" */ val ERROR: typings.openui5.sapMMessageBoxMod.Icon.ERROR & String = js.native
     
     /**
       * Shows the information icon in the message box.
@@ -129,7 +122,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait INFORMATION
       extends StObject
          with Icon
-    /* "undefined" */ val INFORMATION: typings.openui5.sapMMessageBoxMod.Icon.INFORMATION & String = js.native
     
     /**
       * Shows no icon in the message box.
@@ -138,7 +130,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait NONE
       extends StObject
          with Icon
-    /* "undefined" */ val NONE: typings.openui5.sapMMessageBoxMod.Icon.NONE & String = js.native
     
     /**
       * Shows the question icon in the message box.
@@ -147,7 +138,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait QUESTION
       extends StObject
          with Icon
-    /* "undefined" */ val QUESTION: typings.openui5.sapMMessageBoxMod.Icon.QUESTION & String = js.native
     
     /**
       * Shows the success icon in the message box.
@@ -156,7 +146,6 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait SUCCESS
       extends StObject
          with Icon
-    /* "undefined" */ val SUCCESS: typings.openui5.sapMMessageBoxMod.Icon.SUCCESS & String = js.native
     
     /**
       * Shows the warning icon in the message box.
@@ -165,22 +154,21 @@ object sapMMessageBoxMod extends Shortcut {
     sealed trait WARNING
       extends StObject
          with Icon
-    /* "undefined" */ val WARNING: typings.openui5.sapMMessageBoxMod.Icon.WARNING & String = js.native
   }
   
   /**
-    * @SINCE 1.21.2
+    * @since 1.21.2
     *
     * Provides easier methods to create sap.m.Dialog with type sap.m.DialogType.Message, such as standard alerts,
     * confirmation dialogs, or arbitrary message dialogs.
     *
     * MessageBox provides several functions:
     * 	 - `show()` - This is the generic way to open a message dialog. You can customize its contents through
-    * 			the `mOptions` parameter described below.
+    *     the `mOptions` parameter described below.
     * 	 - `alert()`, `confirm()`, `error()`, `information()`, `success()` and `warning()` - predefined templates
-    * 			of message dialogs. Each value type is coming with action buttons and an icon that are corresponding
-    * 			to its semantic. Although the full set of `mOptions` (applicable to `show()`) are available to them,
-    * 			it is recommended to only use the documented options.
+    *     of message dialogs. Each value type is coming with action buttons and an icon that are corresponding
+    *     to its semantic. Although the full set of `mOptions` (applicable to `show()`) are available to them,
+    *     it is recommended to only use the documented options.
     *
     * **Note:** All options of show() are available for the other template functions as well, but it is recommended
     * to use show() only in more specific scenarios. **Note:** Due to the static nature of the `MessageBox`
@@ -214,6 +202,19 @@ object sapMMessageBoxMod extends Shortcut {
     */
   @js.native
   trait MessageBox extends StObject {
+    
+    /**
+      * Enumeration of supported actions in a MessageBox.
+      *
+      * Each action is represented as a button in the message box. The values of this enumeration are used for
+      * both, specifying the set of allowed actions as well as reporting back the user choice.
+      */
+    var Action: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action */ Any = js.native
+    
+    /**
+      * Enumeration of the pre-defined icons that can be used in a MessageBox.
+      */
+    var Icon: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ Any = js.native
     
     /**
       * Displays an alert dialog with the given message and an OK button (no icons).
@@ -325,7 +326,7 @@ object sapMMessageBoxMod extends Shortcut {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Displays an error dialog with the given message, an ERROR icon, a CLOSE button.. If a callback is given,
       * it is called after the error box has been closed by the user with one of the buttons.
@@ -377,7 +378,7 @@ object sapMMessageBoxMod extends Shortcut {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Displays an information dialog with the given message, an INFO icon, an OK button. If a callback is given,
       * it is called after the info box has been closed by the user with one of the buttons.
@@ -482,7 +483,7 @@ object sapMMessageBoxMod extends Shortcut {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Displays a success dialog with the given message, a SUCCESS icon, an OK button. If a callback is given,
       * it is called after the success box has been closed by the user with one of the buttons.
@@ -532,7 +533,7 @@ object sapMMessageBoxMod extends Shortcut {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Displays a warning dialog with the given message, a WARNING icon, an OK button. If a callback is given,
       * it is called after the warning box has been closed by the user with one of the buttons.

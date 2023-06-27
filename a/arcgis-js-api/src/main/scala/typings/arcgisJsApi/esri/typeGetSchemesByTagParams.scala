@@ -17,61 +17,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait typeGetSchemesByTagParams extends StObject {
   
   /**
-    * The basemap to pair with the visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * The basemap to pair with the visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
-    * If you have a non-Esri basemap (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * If you have a non-Esri basemap (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
-    * When provided, only schemes missing all the provided tags will be returned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * When provided, only schemes missing all the provided tags will be returned.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var excludedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * The geometry type of the features to visualize.
-    *
-    * [Read more...](global.html#geometryType)
-    */
+  		 * The geometry type of the features to visualize.
+  		 *
+  		 * [Read more...](global.html#geometryType)
+  		 */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
-    * When provided, only schemes containing all the matching tags will be returned.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * When provided, only schemes containing all the matching tags will be returned.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var includedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Determines whether to return a standardized  unique value scheme for point cloud class renderers (i.e.
-    *
-    * @default default
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * Determines whether to return a standardized	unique value scheme for point cloud class renderers (i.e.
+  		 *
+  		 * @default default
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var theme: js.UndefOr[`point-cloud-class` | default_] = js.undefined
   
   /**
-    * The SceneView instance in which the scheme will be used.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The SceneView instance in which the scheme will be used.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var view: js.UndefOr[SceneView] = js.undefined
   
   /**
-    * Indicates if the size units of the scheme will be in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
-    */
+  		 * Indicates if the size units of the scheme will be in meters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+  		 */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object typeGetSchemesByTagParams {

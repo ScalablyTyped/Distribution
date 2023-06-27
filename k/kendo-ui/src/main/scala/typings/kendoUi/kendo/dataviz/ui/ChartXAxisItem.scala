@@ -12,6 +12,8 @@ trait ChartXAxisItem extends StObject {
   
   var baseUnit: js.UndefOr[String] = js.undefined
   
+  var categories: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
   
   var crosshair: js.UndefOr[ChartXAxisItemCrosshair] = js.undefined
@@ -77,6 +79,12 @@ object ChartXAxisItem {
     inline def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     
     inline def setBaseUnitUndefined: Self = StObject.set(x, "baseUnit", js.undefined)
+    
+    inline def setCategories(value: js.Array[Any]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: Any*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

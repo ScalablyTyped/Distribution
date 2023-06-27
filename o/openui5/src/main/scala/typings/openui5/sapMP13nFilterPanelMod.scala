@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ItemData
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.P13nConditionOperation
 import typings.openui5.sapMP13nPanelMod.P13nPanelSettings
@@ -150,13 +149,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddFilterItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -181,7 +180,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachAddFilterItem(
       /**
@@ -192,7 +191,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -200,7 +199,7 @@ object sapMP13nFilterPanelMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.56)
+      * @experimental (since 1.56)
       *
       * Attaches event handler `fnFunction` to the {@link #event:filterItemChanged filterItemChanged} event of
       * this `sap.m.P13nFilterPanel`.
@@ -216,20 +215,20 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit]
     ): this.type = js.native
     def attachFilterItemChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @EXPERIMENTAL (since 1.56)
+      * @experimental (since 1.56)
       *
       * Attaches event handler `fnFunction` to the {@link #event:filterItemChanged filterItemChanged} event of
       * this `sap.m.P13nFilterPanel`.
@@ -250,7 +249,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit]
     ): this.type = js.native
     def attachFilterItemChanged(
       /**
@@ -261,7 +260,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -283,13 +282,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveFilterItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -315,7 +314,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRemoveFilterItem(
       /**
@@ -326,7 +325,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -348,13 +347,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateFilterItem(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -380,7 +379,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachUpdateFilterItem(
       /**
@@ -391,7 +390,7 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.P13nFilterPanel` itself
       */
@@ -437,13 +436,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachAddFilterItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -451,7 +450,7 @@ object sapMP13nFilterPanelMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.56)
+      * @experimental (since 1.56)
       *
       * Detaches event handler `fnFunction` from the {@link #event:filterItemChanged filterItemChanged} event
       * of this `sap.m.P13nFilterPanel`.
@@ -464,13 +463,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit]
     ): this.type = js.native
     def detachFilterItemChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ P13nFilterPanelFilterItemChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -489,13 +488,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRemoveFilterItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -514,13 +513,13 @@ object sapMP13nFilterPanelMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachUpdateFilterItem(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -528,7 +527,7 @@ object sapMP13nFilterPanelMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:addFilterItem addFilterItem} to attached listeners.
       *
@@ -541,21 +540,23 @@ object sapMP13nFilterPanelMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.56)
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @experimental (since 1.56)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:filterItemChanged filterItemChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFilterItemChanged(): this.type = js.native
-    def fireFilterItemChanged(/**
+    def fireFilterItemChanged(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ItemData): this.type = js.native
+    mParameters: P13nFilterPanel$FilterItemChangedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:removeFilterItem removeFilterItem} to attached listeners.
       *
@@ -568,7 +569,7 @@ object sapMP13nFilterPanelMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:updateFilterItem updateFilterItem} to attached listeners.
       *
@@ -737,14 +738,14 @@ object sapMP13nFilterPanelMod {
     ): typings.openui5.sapMP13nFilterItemMod.default | Null = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Removes all invalid conditions.
       */
     def removeInvalidConditions(): Unit = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Removes all errors and warnings states from of all filter conditions.
       */
@@ -902,6 +903,75 @@ object sapMP13nFilterPanelMod {
     def validateConditions(): Boolean = js.native
   }
   
+  trait P13nFilterPanel$AddFilterItemEventParameters extends StObject
+  
+  trait P13nFilterPanel$FilterItemChangedEventParameters extends StObject {
+    
+    /**
+      * index of the changed filterItem
+      */
+    var index: js.UndefOr[int] = js.undefined
+    
+    /**
+      * JSON object of the changed filterItem instance (in case of reason=="removed" the itemData parameter does
+      * not exist)
+      */
+    var itemData: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * key of the changed filterItem
+      */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /**
+      * reason for the changeFilterItem event. Value can be added, updated or removed.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+  }
+  object P13nFilterPanel$FilterItemChangedEventParameters {
+    
+    inline def apply(): P13nFilterPanel$FilterItemChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[P13nFilterPanel$FilterItemChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nFilterPanel$FilterItemChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: int): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    }
+  }
+  
+  trait P13nFilterPanel$RemoveFilterItemEventParameters extends StObject
+  
+  trait P13nFilterPanel$UpdateFilterItemEventParameters extends StObject
+  
+  type P13nFilterPanelAddFilterItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$AddFilterItemEventParameters]
+  
+  type P13nFilterPanelAddFilterItemEventParameters = P13nFilterPanel$AddFilterItemEventParameters
+  
+  type P13nFilterPanelFilterItemChangedEvent = typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$FilterItemChangedEventParameters]
+  
+  type P13nFilterPanelFilterItemChangedEventParameters = P13nFilterPanel$FilterItemChangedEventParameters
+  
+  type P13nFilterPanelRemoveFilterItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$RemoveFilterItemEventParameters]
+  
+  type P13nFilterPanelRemoveFilterItemEventParameters = P13nFilterPanel$RemoveFilterItemEventParameters
+  
   trait P13nFilterPanelSettings
     extends StObject
        with P13nPanelSettings {
@@ -909,7 +979,9 @@ object sapMP13nFilterPanelMod {
     /**
       * Event raised if a filter item has been added.
       */
-    var addFilterItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var addFilterItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines if the `mediaQuery` or a `ContainerResize` is used for layout update. If the `ConditionPanel`
@@ -927,11 +999,16 @@ object sapMP13nFilterPanelMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.56)
+      * @experimental (since 1.56)
       *
       * Event raised if a filter item has been changed. reason can be added, updated or removed.
       */
-    var filterItemChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var filterItemChanged: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$FilterItemChangedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines filter items.
@@ -964,12 +1041,16 @@ object sapMP13nFilterPanelMod {
     /**
       * Event raised if a filter item has been removed.
       */
-    var removeFilterItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var removeFilterItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Event raised if a filter item has been updated.
       */
-    var updateFilterItem: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var updateFilterItem: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object P13nFilterPanelSettings {
     
@@ -981,7 +1062,7 @@ object sapMP13nFilterPanelMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: P13nFilterPanelSettings] (val x: Self) extends AnyVal {
       
-      inline def setAddFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addFilterItem", js.Any.fromFunction1(value))
+      inline def setAddFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "addFilterItem", js.Any.fromFunction1(value))
       
       inline def setAddFilterItemUndefined: Self = StObject.set(x, "addFilterItem", js.undefined)
       
@@ -993,7 +1074,9 @@ object sapMP13nFilterPanelMod {
       
       inline def setEnableEmptyOperationsUndefined: Self = StObject.set(x, "enableEmptyOperations", js.undefined)
       
-      inline def setFilterItemChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "filterItemChanged", js.Any.fromFunction1(value))
+      inline def setFilterItemChanged(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$FilterItemChangedEventParameters] => Unit
+      ): Self = StObject.set(x, "filterItemChanged", js.Any.fromFunction1(value))
       
       inline def setFilterItemChangedUndefined: Self = StObject.set(x, "filterItemChanged", js.undefined)
       
@@ -1021,13 +1104,17 @@ object sapMP13nFilterPanelMod {
       
       inline def setMessageStripUndefined: Self = StObject.set(x, "messageStrip", js.undefined)
       
-      inline def setRemoveFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "removeFilterItem", js.Any.fromFunction1(value))
+      inline def setRemoveFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "removeFilterItem", js.Any.fromFunction1(value))
       
       inline def setRemoveFilterItemUndefined: Self = StObject.set(x, "removeFilterItem", js.undefined)
       
-      inline def setUpdateFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "updateFilterItem", js.Any.fromFunction1(value))
+      inline def setUpdateFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "updateFilterItem", js.Any.fromFunction1(value))
       
       inline def setUpdateFilterItemUndefined: Self = StObject.set(x, "updateFilterItem", js.undefined)
     }
   }
+  
+  type P13nFilterPanelUpdateFilterItemEvent = typings.openui5.sapUiBaseEventMod.default[P13nFilterPanel$UpdateFilterItemEventParameters]
+  
+  type P13nFilterPanelUpdateFilterItemEventParameters = P13nFilterPanel$UpdateFilterItemEventParameters
 }

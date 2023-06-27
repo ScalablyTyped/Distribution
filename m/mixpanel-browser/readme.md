@@ -1,7 +1,7 @@
 
 # Scala.js typings for mixpanel-browser
 
-Typings are for version 2.38
+Typings are for version 2.47
 
 ## Library description:
 The official Mixpanel JavaScript browser client library

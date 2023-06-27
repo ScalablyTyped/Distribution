@@ -28,18 +28,22 @@ open class DOMRect ()
   def this(x: Unit, y: Unit, width: Double, height: Double) = this()
   def this(x: Unit, y: Unit, width: Unit, height: Double) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/bottom) */
   /* standard dom */
   /* CompleteClass */
   override val bottom: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/height) */
   /* standard dom */
   /* CompleteClass */
   override val height: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/left) */
   /* standard dom */
   /* CompleteClass */
   override val left: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/right) */
   /* standard dom */
   /* CompleteClass */
   override val right: Double = js.native
@@ -48,18 +52,22 @@ open class DOMRect ()
   /* CompleteClass */
   override def toJSON(): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/top) */
   /* standard dom */
   /* CompleteClass */
   override val top: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/width) */
   /* standard dom */
   /* CompleteClass */
   override val width: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/x) */
   /* standard dom */
   /* CompleteClass */
   override val x: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMRectReadOnly/y) */
   /* standard dom */
   /* CompleteClass */
   override val y: Double = js.native

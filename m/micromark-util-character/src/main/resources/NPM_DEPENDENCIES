@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-util-character" : "1.1.0"
+      "micromark-util-character" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-util-character" : "1.1.0"
+      "micromark-util-character" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

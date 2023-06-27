@@ -86,6 +86,7 @@ import typings.amapJsApi.amapJsApiStrings.ruby
 import typings.amapJsApi.amapJsApiStrings.s
 import typings.amapJsApi.amapJsApiStrings.samp
 import typings.amapJsApi.amapJsApiStrings.script
+import typings.amapJsApi.amapJsApiStrings.search
 import typings.amapJsApi.amapJsApiStrings.section
 import typings.amapJsApi.amapJsApiStrings.select
 import typings.amapJsApi.amapJsApiStrings.slot
@@ -860,6 +861,14 @@ trait TypeofDomUtil extends StObject {
   def create_script(tagName: script, parent: HTMLElement): HTMLScriptElement = js.native
   @JSName("create")
   def create_script(tagName: script, parent: HTMLElement, className: String): HTMLScriptElement = js.native
+  @JSName("create")
+  def create_search(tagName: search): HTMLElement = js.native
+  @JSName("create")
+  def create_search(tagName: search, parent: Unit, className: String): HTMLElement = js.native
+  @JSName("create")
+  def create_search(tagName: search, parent: HTMLElement): HTMLElement = js.native
+  @JSName("create")
+  def create_search(tagName: search, parent: HTMLElement, className: String): HTMLElement = js.native
   @JSName("create")
   def create_section(tagName: section): HTMLElement = js.native
   @JSName("create")

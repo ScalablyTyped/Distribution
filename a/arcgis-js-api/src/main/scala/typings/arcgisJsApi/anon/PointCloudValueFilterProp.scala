@@ -11,28 +11,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudValueFilterProp extends StObject {
   
   /**
-    * The field used for applying the filter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#field)
-    */
+  		 * The field used for applying the filter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#field)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether points should be included or excluded from the filter.
-    *
-    * @default "exclude"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
-    */
+  		 * Whether points should be included or excluded from the filter.
+  		 *
+  		 * @default "exclude"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#mode)
+  		 */
   var mode: js.UndefOr[include | exclude] = js.undefined
   
   var `type`: value
   
   /**
-    * An array of numeric values representing the classification codes that the filter should apply.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#values)
-    */
+  		 * An array of numeric values representing the classification codes that the filter should apply.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#values)
+  		 */
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object PointCloudValueFilterProp {

@@ -31,19 +31,19 @@ trait Reminder extends StObject {
     * _Completion date of reminder._
     * @see https://docs.scriptable.app/reminder/#completiondate
     */
-  var completionDate: js.Date
+  var completionDate: js.Date | Null
   
   /**
     * _Creation date of reminder._
     * @see https://docs.scriptable.app/reminder/#creationdate
     */
-  var creationDate: js.Date
+  var creationDate: js.Date | Null
   
   /**
     * _Due date of reminder._
     * @see https://docs.scriptable.app/reminder/#duedate
     */
-  var dueDate: js.Date
+  var dueDate: js.Date | Null
   
   /**
     * _Whether the due date includes a time._
@@ -75,7 +75,7 @@ trait Reminder extends StObject {
     * _Notes associated with reminder._
     * @see https://docs.scriptable.app/reminder/#notes
     */
-  var notes: String
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * _Priority of reminder._
@@ -116,21 +116,17 @@ object Reminder {
   inline def apply(
     addRecurrenceRule: RecurrenceRule => Unit,
     calendar: Calendar,
-    completionDate: js.Date,
-    creationDate: js.Date,
-    dueDate: js.Date,
     dueDateIncludesTime: Boolean,
     identifier: String,
     isCompleted: Boolean,
     isOverdue: Boolean,
-    notes: String,
     priority: Double,
     remove: () => Unit,
     removeAllRecurrenceRules: () => Unit,
     save: () => Unit,
     title: String
   ): Reminder = {
-    val __obj = js.Dynamic.literal(addRecurrenceRule = js.Any.fromFunction1(addRecurrenceRule), calendar = calendar.asInstanceOf[js.Any], completionDate = completionDate.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], dueDate = dueDate.asInstanceOf[js.Any], dueDateIncludesTime = dueDateIncludesTime.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], isCompleted = isCompleted.asInstanceOf[js.Any], isOverdue = isOverdue.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removeAllRecurrenceRules = js.Any.fromFunction0(removeAllRecurrenceRules), save = js.Any.fromFunction0(save), title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addRecurrenceRule = js.Any.fromFunction1(addRecurrenceRule), calendar = calendar.asInstanceOf[js.Any], dueDateIncludesTime = dueDateIncludesTime.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], isCompleted = isCompleted.asInstanceOf[js.Any], isOverdue = isOverdue.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), removeAllRecurrenceRules = js.Any.fromFunction0(removeAllRecurrenceRules), save = js.Any.fromFunction0(save), title = title.asInstanceOf[js.Any], completionDate = null, creationDate = null, dueDate = null)
     __obj.asInstanceOf[Reminder]
   }
   
@@ -143,11 +139,17 @@ object Reminder {
     
     inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
+    inline def setCompletionDateNull: Self = StObject.set(x, "completionDate", null)
+    
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    
+    inline def setCreationDateNull: Self = StObject.set(x, "creationDate", null)
     
     inline def setDueDate(value: js.Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     inline def setDueDateIncludesTime(value: Boolean): Self = StObject.set(x, "dueDateIncludesTime", value.asInstanceOf[js.Any])
+    
+    inline def setDueDateNull: Self = StObject.set(x, "dueDate", null)
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -156,6 +158,8 @@ object Reminder {
     inline def setIsOverdue(value: Boolean): Self = StObject.set(x, "isOverdue", value.asInstanceOf[js.Any])
     
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

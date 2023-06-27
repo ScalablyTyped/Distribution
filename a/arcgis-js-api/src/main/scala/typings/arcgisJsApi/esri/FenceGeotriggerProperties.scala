@@ -12,71 +12,73 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FenceGeotriggerProperties extends StObject {
+trait FenceGeotriggerProperties
+  extends StObject
+     with GeotriggerProperties {
   
   /**
-    * The rule that determines whether a fence polygon has been entered or exited by the geometry from a feed.
-    *
-    * @default enter-contains-and-exit-does-not-intersect
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#enterExitRule)
-    */
+  		 * The rule that determines whether a fence polygon has been entered or exited by the geometry from a feed.
+  		 *
+  		 * @default enter-contains-and-exit-does-not-intersect
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#enterExitRule)
+  		 */
   var enterExitRule: js.UndefOr[
     `enter-contains-and-exit-does-not-contain` | `enter-contains-and-exit-does-not-intersect` | `enter-intersects-and-exit-does-not-intersect`
   ] = js.undefined
   
   /**
-    * The feed for this Geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#feed)
-    */
+  		 * The feed for this Geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#feed)
+  		 */
   var feed: js.UndefOr[DeviceLocationFeedProperties] = js.undefined
   
   /**
-    * Indicates how the geotrigger will use accuracy information from a feed.
-    *
-    * @default use-geometry
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#feedAccuracyMode)
-    */
+  		 * Indicates how the geotrigger will use accuracy information from a feed.
+  		 *
+  		 * @default use-geometry
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#feedAccuracyMode)
+  		 */
   var feedAccuracyMode: js.UndefOr[`use-geometry` | `use-geometry-with-accuracy`] = js.undefined
   
   /**
-    * Indicates the type of event that will trigger notifications for the Fence Geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#fenceNotificationRule)
-    */
+  		 * Indicates the type of event that will trigger notifications for the Fence Geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#fenceNotificationRule)
+  		 */
   var fenceNotificationRule: js.UndefOr[enter | `enter-or-exit` | exit] = js.undefined
   
   /**
-    * An object defining the fences to use for this Geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#fenceParameters)
-    */
+  		 * An object defining the fences to use for this Geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#fenceParameters)
+  		 */
   var fenceParameters: js.UndefOr[FeatureFenceParametersProperties] = js.undefined
   
   /**
-    * The name for this Geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#name)
-    */
+  		 * The name for this Geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Options that control the notification information sent to a client app when a Geotrigger condition is met.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#notificationOptions)
-    */
+  		 * Options that control the notification information sent to a client app when a Geotrigger condition is met.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FenceGeotrigger.html#notificationOptions)
+  		 */
   var notificationOptions: js.UndefOr[GeotriggerNotificationOptionsProperties] = js.undefined
 }
 object FenceGeotriggerProperties {

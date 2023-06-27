@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`21`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.ObjectHeaderContainer
@@ -132,7 +131,7 @@ object sapMObjectHeaderMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Adds some additionalNumber to the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -202,7 +201,7 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Adds some status to the aggregation {@link #getStatuses statuses}.
       *
@@ -229,13 +228,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit]
     ): this.type = js.native
     def attachIconPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -260,7 +259,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit]
     ): this.type = js.native
     def attachIconPress(
       /**
@@ -271,7 +270,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -292,13 +291,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit]
     ): this.type = js.native
     def attachIntroPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -323,7 +322,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit]
     ): this.type = js.native
     def attachIntroPress(
       /**
@@ -334,7 +333,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -355,13 +354,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit]
     ): this.type = js.native
     def attachTitlePress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -386,7 +385,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit]
     ): this.type = js.native
     def attachTitlePress(
       /**
@@ -397,7 +396,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -405,7 +404,7 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:titleSelectorPress titleSelectorPress} event
       * of this `sap.m.ObjectHeader`.
@@ -421,20 +420,20 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def attachTitleSelectorPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:titleSelectorPress titleSelectorPress} event
       * of this `sap.m.ObjectHeader`.
@@ -455,7 +454,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def attachTitleSelectorPress(
       /**
@@ -466,7 +465,7 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.ObjectHeader` itself
       */
@@ -474,7 +473,7 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Destroys all the additionalNumbers in the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -499,7 +498,7 @@ object sapMObjectHeaderMod {
     def destroyFirstStatus(): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Destroys the headerContainer in the aggregation {@link #getHeaderContainer headerContainer}.
       *
@@ -524,7 +523,7 @@ object sapMObjectHeaderMod {
     def destroySecondStatus(): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Destroys all the statuses in the aggregation {@link #getStatuses statuses}.
       *
@@ -543,13 +542,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit]
     ): this.type = js.native
     def detachIconPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIconPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -567,13 +566,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit]
     ): this.type = js.native
     def detachIntroPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderIntroPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -591,13 +590,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit]
     ): this.type = js.native
     def detachTitlePress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitlePressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -605,7 +604,7 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:titleSelectorPress titleSelectorPress} event
       * of this `sap.m.ObjectHeader`.
@@ -618,13 +617,13 @@ object sapMObjectHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit]
     ): this.type = js.native
     def detachTitleSelectorPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ObjectHeaderTitleSelectorPressEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -632,60 +631,68 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:iconPress iconPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireIconPress(): this.type = js.native
-    def fireIconPress(/**
+    def fireIconPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: ObjectHeader$IconPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:introPress introPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireIntroPress(): this.type = js.native
-    def fireIntroPress(/**
+    def fireIntroPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: ObjectHeader$IntroPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:titlePress titlePress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTitlePress(): this.type = js.native
-    def fireTitlePress(/**
+    def fireTitlePress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: ObjectHeader$TitlePressEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.16.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:titleSelectorPress titleSelectorPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireTitleSelectorPress(): this.type = js.native
-    def fireTitleSelectorPress(/**
+    def fireTitleSelectorPress(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `21`): this.type = js.native
+    mParameters: ObjectHeader$TitleSelectorPressEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets content of aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -696,14 +703,12 @@ object sapMObjectHeaderMod {
     def getAdditionalNumbers(): js.Array[typings.openui5.sapMObjectNumberMod.default] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -752,7 +757,7 @@ object sapMObjectHeaderMod {
     def getFirstStatus(): typings.openui5.sapMObjectStatusMod.default = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getFullScreenOptimized fullScreenOptimized}.
       *
@@ -765,12 +770,12 @@ object sapMObjectHeaderMod {
       *
       * If set to `true`, the following situations apply:
       * 	 - On desktop, 1-3 attributes/statuses - positioned as a third block on the right side of the Title/Number
-      * 			group
+      *     group
       * 	 - On desktop, 4+ attributes/statuses - 4 columns below the Title/Number
       * 	 - On tablet (portrait mode), always in 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 1-2 attributes/statuses - 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 3+ attributes/statuses - 3 columns below the Title/Number  On phone,
-      * 			the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
+      *     the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
       *
       * If set to `false`, the attributes and statuses are being positioned below the Title/Number of the `ObjectHeader`
       * in 2 or 3 columns depending on their number:
@@ -785,7 +790,7 @@ object sapMObjectHeaderMod {
     def getFullScreenOptimized(): Boolean = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets content of aggregation {@link #getHeaderContainer headerContainer}.
       *
@@ -854,7 +859,7 @@ object sapMObjectHeaderMod {
     def getIconTooltip(): String = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets current value of property {@link #getImageShape imageShape}.
       *
@@ -888,7 +893,7 @@ object sapMObjectHeaderMod {
     def getIntroActive(): Boolean = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getIntroHref introHref}.
       *
@@ -900,7 +905,7 @@ object sapMObjectHeaderMod {
     def getIntroHref(): URI = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getIntroTarget introTarget}.
       *
@@ -912,7 +917,7 @@ object sapMObjectHeaderMod {
     def getIntroTarget(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getIntroTextDirection introTextDirection}.
       *
@@ -926,7 +931,7 @@ object sapMObjectHeaderMod {
     def getIntroTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Favorite`. You should use either this property or the `markers` aggregation,
       * using both may lead to unpredicted behavior.
@@ -943,7 +948,7 @@ object sapMObjectHeaderMod {
     def getMarkFavorite(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Flagged`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -980,7 +985,7 @@ object sapMObjectHeaderMod {
     def getNumber(): String = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getNumberState numberState}.
       *
@@ -993,7 +998,7 @@ object sapMObjectHeaderMod {
     def getNumberState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getNumberTextDirection numberTextDirection}.
       *
@@ -1018,7 +1023,7 @@ object sapMObjectHeaderMod {
     def getNumberUnit(): String = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Gets current value of property {@link #getResponsive responsive}.
       *
@@ -1030,7 +1035,7 @@ object sapMObjectHeaderMod {
       * 	 - If an image (or an icon font) is set to the `icon` property, it is hidden in portrait mode on phone.
       *
       * 	 - The title is truncated to 80 characters if longer. For portrait mode on phone, the title is truncated
-      * 			to 50 characters.
+      *     to 50 characters.
       *
       * Default value is `false`.
       *
@@ -1049,7 +1054,7 @@ object sapMObjectHeaderMod {
     def getSecondStatus(): typings.openui5.sapMObjectStatusMod.default = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregationv. This property is valid only if you are
       * using the already deprecated properties - `markFlagged` and `markFavorite`. If you are using `markers`,
       * the visibility of the markers depends on what is set in the aggregation itself.
@@ -1065,7 +1070,7 @@ object sapMObjectHeaderMod {
     def getShowMarkers(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets current value of property {@link #getShowTitleSelector showTitleSelector}.
       *
@@ -1078,7 +1083,7 @@ object sapMObjectHeaderMod {
     def getShowTitleSelector(): Boolean = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Gets content of aggregation {@link #getStatuses statuses}.
       *
@@ -1106,7 +1111,7 @@ object sapMObjectHeaderMod {
     def getTitleActive(): Boolean = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getTitleHref titleHref}.
       *
@@ -1134,7 +1139,7 @@ object sapMObjectHeaderMod {
     def getTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getTitleSelectorTooltip titleSelectorTooltip}.
       *
@@ -1148,7 +1153,7 @@ object sapMObjectHeaderMod {
     def getTitleSelectorTooltip(): String = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Gets current value of property {@link #getTitleTarget titleTarget}.
       *
@@ -1160,7 +1165,7 @@ object sapMObjectHeaderMod {
     def getTitleTarget(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -1174,7 +1179,7 @@ object sapMObjectHeaderMod {
     def getTitleTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Checks for the provided `sap.m.ObjectNumber` in the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       * and returns its index if found or -1 otherwise.
@@ -1215,7 +1220,7 @@ object sapMObjectHeaderMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getStatuses statuses}. and returns
       * its index if found or -1 otherwise.
@@ -1230,7 +1235,7 @@ object sapMObjectHeaderMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Inserts a additionalNumber into the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -1286,7 +1291,7 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Inserts a status into the aggregation {@link #getStatuses statuses}.
       *
@@ -1310,7 +1315,7 @@ object sapMObjectHeaderMod {
       */
     vAdditionalNumber: String): typings.openui5.sapMObjectNumberMod.default | Null = js.native
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Removes a additionalNumber from the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -1328,7 +1333,7 @@ object sapMObjectHeaderMod {
     ): typings.openui5.sapMObjectNumberMod.default | Null = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Removes all the controls from the aggregation {@link #getAdditionalNumbers additionalNumbers}.
       *
@@ -1371,7 +1376,7 @@ object sapMObjectHeaderMod {
     def removeAllMarkers(): js.Array[typings.openui5.sapMObjectMarkerMod.default] = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Removes all the controls from the aggregation {@link #getStatuses statuses}.
       *
@@ -1466,7 +1471,7 @@ object sapMObjectHeaderMod {
       */
     vStatus: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Removes a status from the aggregation {@link #getStatuses statuses}.
       *
@@ -1531,7 +1536,7 @@ object sapMObjectHeaderMod {
     oFirstStatus: typings.openui5.sapMObjectStatusMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getFullScreenOptimized fullScreenOptimized}.
       *
@@ -1544,12 +1549,12 @@ object sapMObjectHeaderMod {
       *
       * If set to `true`, the following situations apply:
       * 	 - On desktop, 1-3 attributes/statuses - positioned as a third block on the right side of the Title/Number
-      * 			group
+      *     group
       * 	 - On desktop, 4+ attributes/statuses - 4 columns below the Title/Number
       * 	 - On tablet (portrait mode), always in 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 1-2 attributes/statuses - 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 3+ attributes/statuses - 3 columns below the Title/Number  On phone,
-      * 			the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
+      *     the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
       *
       * If set to `false`, the attributes and statuses are being positioned below the Title/Number of the `ObjectHeader`
       * in 2 or 3 columns depending on their number:
@@ -1570,7 +1575,7 @@ object sapMObjectHeaderMod {
     bFullScreenOptimized: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Sets the aggregated {@link #getHeaderContainer headerContainer}.
       *
@@ -1660,7 +1665,7 @@ object sapMObjectHeaderMod {
     sIconTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets a new value for property {@link #getImageShape imageShape}.
       *
@@ -1718,7 +1723,7 @@ object sapMObjectHeaderMod {
     bIntroActive: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getIntroHref introHref}.
       *
@@ -1736,7 +1741,7 @@ object sapMObjectHeaderMod {
     sIntroHref: URI): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getIntroTarget introTarget}.
       *
@@ -1754,7 +1759,7 @@ object sapMObjectHeaderMod {
     sIntroTarget: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getIntroTextDirection introTextDirection}.
       *
@@ -1826,7 +1831,7 @@ object sapMObjectHeaderMod {
     sState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getNumberTextDirection numberTextDirection}.
       *
@@ -1862,7 +1867,7 @@ object sapMObjectHeaderMod {
     sUnit: String): this.type = js.native
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Sets a new value for property {@link #getResponsive responsive}.
       *
@@ -1874,7 +1879,7 @@ object sapMObjectHeaderMod {
       * 	 - If an image (or an icon font) is set to the `icon` property, it is hidden in portrait mode on phone.
       *
       * 	 - The title is truncated to 80 characters if longer. For portrait mode on phone, the title is truncated
-      * 			to 50 characters.
+      *     to 50 characters.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1911,7 +1916,7 @@ object sapMObjectHeaderMod {
     bMarked: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Sets a new value for property {@link #getShowTitleSelector showTitleSelector}.
       *
@@ -1960,7 +1965,7 @@ object sapMObjectHeaderMod {
     bTitleActive: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getTitleHref titleHref}.
       *
@@ -2016,7 +2021,7 @@ object sapMObjectHeaderMod {
     sTooltip: String): this.type = js.native
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Sets a new value for property {@link #getTitleTarget titleTarget}.
       *
@@ -2034,7 +2039,7 @@ object sapMObjectHeaderMod {
     sTitleTarget: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -2060,12 +2065,112 @@ object sapMObjectHeaderMod {
     sTitleTextDirection: TextDirection): this.type = js.native
   }
   
+  trait ObjectHeader$IconPressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the object header' icon to be used for positioning.
+      */
+    var domRef: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectHeader$IconPressEventParameters {
+    
+    inline def apply(): ObjectHeader$IconPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectHeader$IconPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectHeader$IconPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  trait ObjectHeader$IntroPressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the object header' intro to be used for positioning.
+      */
+    var domRef: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectHeader$IntroPressEventParameters {
+    
+    inline def apply(): ObjectHeader$IntroPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectHeader$IntroPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectHeader$IntroPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  trait ObjectHeader$TitlePressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the object header' title to be used for positioning.
+      */
+    var domRef: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectHeader$TitlePressEventParameters {
+    
+    inline def apply(): ObjectHeader$TitlePressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectHeader$TitlePressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectHeader$TitlePressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  trait ObjectHeader$TitleSelectorPressEventParameters extends StObject {
+    
+    /**
+      * Dom reference of the object header' titleArrow to be used for positioning.
+      */
+    var domRef: js.UndefOr[js.Object] = js.undefined
+  }
+  object ObjectHeader$TitleSelectorPressEventParameters {
+    
+    inline def apply(): ObjectHeader$TitleSelectorPressEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObjectHeader$TitleSelectorPressEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectHeader$TitleSelectorPressEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDomRef(value: js.Object): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefUndefined: Self = StObject.set(x, "domRef", js.undefined)
+    }
+  }
+  
+  type ObjectHeaderIconPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IconPressEventParameters]
+  
+  type ObjectHeaderIconPressEventParameters = ObjectHeader$IconPressEventParameters
+  
+  type ObjectHeaderIntroPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IntroPressEventParameters]
+  
+  type ObjectHeaderIntroPressEventParameters = ObjectHeader$IntroPressEventParameters
+  
   trait ObjectHeaderSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * NOTE: Only applied if you set "responsive=false". Additional object numbers and units are managed in
       * this aggregation. The numbers are hidden on tablet and phone size screens. When only one number is provided,
@@ -2122,7 +2227,7 @@ object sapMObjectHeaderMod {
     var firstStatus: js.UndefOr[typings.openui5.sapMObjectStatusMod.default] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Optimizes the display of the elements of the `ObjectHeader`.
       *
@@ -2133,12 +2238,12 @@ object sapMObjectHeaderMod {
       *
       * If set to `true`, the following situations apply:
       * 	 - On desktop, 1-3 attributes/statuses - positioned as a third block on the right side of the Title/Number
-      * 			group
+      *     group
       * 	 - On desktop, 4+ attributes/statuses - 4 columns below the Title/Number
       * 	 - On tablet (portrait mode), always in 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 1-2 attributes/statuses - 2 columns below the Title/Number
       * 	 - On tablet (landscape mode), 3+ attributes/statuses - 3 columns below the Title/Number  On phone,
-      * 			the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
+      *     the attributes and statuses are always positioned in 1 column below the Title/Number of the `ObjectHeader`.
       *
       * If set to `false`, the attributes and statuses are being positioned below the Title/Number of the `ObjectHeader`
       * in 2 or 3 columns depending on their number:
@@ -2151,7 +2256,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * This aggregation takes only effect when you set "responsive" to true. It can either be filled with an
       * sap.m.IconTabBar or an sap.suite.ui.commons.HeaderContainer control. Overflow handling must be taken
@@ -2197,7 +2302,12 @@ object sapMObjectHeaderMod {
     /**
       * Event is fired when the title icon is active and the user taps/clicks on it
       */
-    var iconPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var iconPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IconPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the tooltip text of the `ObjectHeader` icon.
@@ -2205,7 +2315,7 @@ object sapMObjectHeaderMod {
     var iconTooltip: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Determines whether the picture should be displayed in a square or with a circle-shaped mask just like
       * in {@link sap.uxap.ObjectPageHeader}.
@@ -2229,7 +2339,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Determines the intro link target URI. Supports standard hyperlink behavior. If an action should be triggered,
       * this should not be set, but instead an event handler for the `introPress` event should be registered.
@@ -2239,10 +2349,15 @@ object sapMObjectHeaderMod {
     /**
       * Event is fired when the intro is active and the user taps/clicks on it
       */
-    var introPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var introPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IntroPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Determines the `target` attribute for the intro link. Options are `_self`, `_top`, `_blank`, `_parent`,
       * `_search`. Alternatively, a frame name can be entered.
@@ -2250,7 +2365,7 @@ object sapMObjectHeaderMod {
     var introTarget: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the intro text directionality with enumerated options. By default, the control inherits text
       * direction from the DOM.
@@ -2260,7 +2375,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Favorite`. You should use either this property or the `markers` aggregation,
       * using both may lead to unpredicted behavior.
@@ -2273,7 +2388,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregation. Add {@link sap.m.ObjectMarker} with type
       * `sap.m.ObjectMarkerType.Flagged`. You should use either this property or the `markers` aggregation, using
       * both may lead to unpredicted behavior.
@@ -2302,7 +2417,7 @@ object sapMObjectHeaderMod {
     var number: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Determines the value state of the `number` and `numberUnit` properties.
       */
@@ -2311,7 +2426,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the number and unit text directionality with enumerated options. By default, the control inherits
       * text direction from the DOM.
@@ -2328,7 +2443,7 @@ object sapMObjectHeaderMod {
     var numberUnit: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.21.1
+      * @since 1.21.1
       *
       * Determines whether the `ObjectHeader` is rendered with a different design that reacts responsively to
       * the screen sizes.
@@ -2338,7 +2453,7 @@ object sapMObjectHeaderMod {
       * 	 - If an image (or an icon font) is set to the `icon` property, it is hidden in portrait mode on phone.
       *
       * 	 - The title is truncated to 80 characters if longer. For portrait mode on phone, the title is truncated
-      * 			to 50 characters.
+      *     to 50 characters.
       */
     var responsive: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2353,7 +2468,7 @@ object sapMObjectHeaderMod {
     var secondStatus: js.UndefOr[typings.openui5.sapMObjectStatusMod.default] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       * @deprecated (since 1.42.0) - replaced by `markers` aggregationv. This property is valid only if you are
       * using the already deprecated properties - `markFlagged` and `markFavorite`. If you are using `markers`,
       * the visibility of the markers depends on what is set in the aggregation itself.
@@ -2365,7 +2480,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Determines whether the selector arrow icon/image is displayed and can be pressed.
       */
@@ -2374,7 +2489,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * The list of Object sap.ui.core.Control. It will only allow sap.m.ObjectStatus and sap.m.ProgressIndicator
       * controls.
@@ -2396,7 +2511,7 @@ object sapMObjectHeaderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Defines the title link target URI. Supports standard hyperlink behavior.
       *
@@ -2418,17 +2533,27 @@ object sapMObjectHeaderMod {
     /**
       * Event is fired when the title is active and the user taps/clicks on it
       */
-    var titlePress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var titlePress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitlePressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.16.0
+      * @since 1.16.0
       *
       * Event is fired when the object header title selector (down-arrow) is pressed
       */
-    var titleSelectorPress: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var titleSelectorPress: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitleSelectorPressEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Determines a custom text for the tooltip of the select title arrow. If not set, a default text of the
       * tooltip will be displayed.
@@ -2436,7 +2561,7 @@ object sapMObjectHeaderMod {
     var titleSelectorTooltip: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28
+      * @since 1.28
       *
       * Determines the `target` attribute for the title link. Options are `_self`, `_top`, `_blank`, `_parent`,
       * `_search`. Alternatively, a frame name can be entered.
@@ -2444,7 +2569,7 @@ object sapMObjectHeaderMod {
     var titleTarget: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Specifies the title text directionality with enumerated options. By default, the control inherits text
       * direction from the DOM.
@@ -2527,7 +2652,9 @@ object sapMObjectHeaderMod {
       
       inline def setIconDensityAwareUndefined: Self = StObject.set(x, "iconDensityAware", js.undefined)
       
-      inline def setIconPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "iconPress", js.Any.fromFunction1(value))
+      inline def setIconPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IconPressEventParameters] => Unit
+      ): Self = StObject.set(x, "iconPress", js.Any.fromFunction1(value))
       
       inline def setIconPressUndefined: Self = StObject.set(x, "iconPress", js.undefined)
       
@@ -2553,7 +2680,9 @@ object sapMObjectHeaderMod {
       
       inline def setIntroHrefUndefined: Self = StObject.set(x, "introHref", js.undefined)
       
-      inline def setIntroPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "introPress", js.Any.fromFunction1(value))
+      inline def setIntroPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$IntroPressEventParameters] => Unit
+      ): Self = StObject.set(x, "introPress", js.Any.fromFunction1(value))
       
       inline def setIntroPressUndefined: Self = StObject.set(x, "introPress", js.undefined)
       
@@ -2645,11 +2774,15 @@ object sapMObjectHeaderMod {
       
       inline def setTitleLevelUndefined: Self = StObject.set(x, "titleLevel", js.undefined)
       
-      inline def setTitlePress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "titlePress", js.Any.fromFunction1(value))
+      inline def setTitlePress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitlePressEventParameters] => Unit
+      ): Self = StObject.set(x, "titlePress", js.Any.fromFunction1(value))
       
       inline def setTitlePressUndefined: Self = StObject.set(x, "titlePress", js.undefined)
       
-      inline def setTitleSelectorPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "titleSelectorPress", js.Any.fromFunction1(value))
+      inline def setTitleSelectorPress(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitleSelectorPressEventParameters] => Unit
+      ): Self = StObject.set(x, "titleSelectorPress", js.Any.fromFunction1(value))
       
       inline def setTitleSelectorPressUndefined: Self = StObject.set(x, "titleSelectorPress", js.undefined)
       
@@ -2670,4 +2803,12 @@ object sapMObjectHeaderMod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
+  
+  type ObjectHeaderTitlePressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitlePressEventParameters]
+  
+  type ObjectHeaderTitlePressEventParameters = ObjectHeader$TitlePressEventParameters
+  
+  type ObjectHeaderTitleSelectorPressEvent = typings.openui5.sapUiBaseEventMod.default[ObjectHeader$TitleSelectorPressEventParameters]
+  
+  type ObjectHeaderTitleSelectorPressEventParameters = ObjectHeader$TitleSelectorPressEventParameters
 }

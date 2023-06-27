@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceDefinitionServiceCapabilitiesApplyEditsCapabilities extends StObject {
   
   /**
-    * If `true`, when an apply edits operation fails, the data will revert to it's state before the change.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
-    */
+  		 * If `true`, when an apply edits operation fails, the data will revert to it's state before the change.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-ServiceDefinition.html#serviceCapabilities)
+  		 */
   var graphDefaultRollbackOnFailure: Boolean
 }
 object ServiceDefinitionServiceCapabilitiesApplyEditsCapabilities {

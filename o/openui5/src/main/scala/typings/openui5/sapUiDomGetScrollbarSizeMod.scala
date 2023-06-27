@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.HeightWidth
+import typings.openui5.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +11,11 @@ object sapUiDomGetScrollbarSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): HeightWidth = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[HeightWidth]
+  inline def default(): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Height]
   inline def default(/**
     * The CSS class that should be added to the test element.
     */
-  sClasses: String): HeightWidth = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any]).asInstanceOf[HeightWidth]
+  sClasses: String): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any]).asInstanceOf[Height]
   inline def default(
     /**
     * The CSS class that should be added to the test element.
@@ -26,7 +26,7 @@ object sapUiDomGetScrollbarSizeMod {
     * are reset.
     */
   bForce: Boolean
-  ): HeightWidth = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any], bForce.asInstanceOf[js.Any])).asInstanceOf[HeightWidth]
+  ): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any], bForce.asInstanceOf[js.Any])).asInstanceOf[Height]
   inline def default(
     /**
     * The CSS class that should be added to the test element.
@@ -37,5 +37,5 @@ object sapUiDomGetScrollbarSizeMod {
     * are reset.
     */
   bForce: Boolean
-  ): HeightWidth = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any], bForce.asInstanceOf[js.Any])).asInstanceOf[HeightWidth]
+  ): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sClasses.asInstanceOf[js.Any], bForce.asInstanceOf[js.Any])).asInstanceOf[Height]
 }

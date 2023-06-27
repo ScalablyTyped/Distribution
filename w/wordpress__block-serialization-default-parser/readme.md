@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__block-serialization-default-parser
 
-Typings are for version 4.33.0
+Typings are for version 4.35.0
 
 ## Library description:
 Block serialization specification parser for WordPress posts.

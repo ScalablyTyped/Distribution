@@ -37,7 +37,7 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `repo` or `admin:org` scope.
     */
   @JSName("getGithubActionsBillingOrg")
-  var getGithubActionsBillingOrg_Original: `189`
+  var getGithubActionsBillingOrg_Original: `191`
   
   /**
     * Gets the summary of the free and paid GitHub Actions minutes used.
@@ -65,7 +65,7 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `user` scope.
     */
   @JSName("getGithubActionsBillingUser")
-  var getGithubActionsBillingUser_Original: `190`
+  var getGithubActionsBillingUser_Original: `192`
   
   /**
     * Gets the free and paid storage used for GitHub Packages in gigabytes.
@@ -93,7 +93,7 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `repo` or `admin:org` scope.
     */
   @JSName("getGithubPackagesBillingOrg")
-  var getGithubPackagesBillingOrg_Original: `191`
+  var getGithubPackagesBillingOrg_Original: `193`
   
   /**
     * Gets the free and paid storage used for GitHub Packages in gigabytes.
@@ -121,7 +121,7 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `user` scope.
     */
   @JSName("getGithubPackagesBillingUser")
-  var getGithubPackagesBillingUser_Original: `192`
+  var getGithubPackagesBillingUser_Original: `194`
   
   /**
     * Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.
@@ -149,7 +149,7 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `repo` or `admin:org` scope.
     */
   @JSName("getSharedStorageBillingOrg")
-  var getSharedStorageBillingOrg_Original: `193`
+  var getSharedStorageBillingOrg_Original: `195`
   
   /**
     * Gets the estimated paid and estimated total storage used for GitHub Actions and GitHub Packages.
@@ -177,17 +177,17 @@ trait GetGithubActionsBillingOrg extends StObject {
     * Access tokens must have the `user` scope.
     */
   @JSName("getSharedStorageBillingUser")
-  var getSharedStorageBillingUser_Original: `194`
+  var getSharedStorageBillingUser_Original: `196`
 }
 object GetGithubActionsBillingOrg {
   
   inline def apply(
-    getGithubActionsBillingOrg: `189`,
-    getGithubActionsBillingUser: `190`,
-    getGithubPackagesBillingOrg: `191`,
-    getGithubPackagesBillingUser: `192`,
-    getSharedStorageBillingOrg: `193`,
-    getSharedStorageBillingUser: `194`
+    getGithubActionsBillingOrg: `191`,
+    getGithubActionsBillingUser: `192`,
+    getGithubPackagesBillingOrg: `193`,
+    getGithubPackagesBillingUser: `194`,
+    getSharedStorageBillingOrg: `195`,
+    getSharedStorageBillingUser: `196`
   ): GetGithubActionsBillingOrg = {
     val __obj = js.Dynamic.literal(getGithubActionsBillingOrg = getGithubActionsBillingOrg.asInstanceOf[js.Any], getGithubActionsBillingUser = getGithubActionsBillingUser.asInstanceOf[js.Any], getGithubPackagesBillingOrg = getGithubPackagesBillingOrg.asInstanceOf[js.Any], getGithubPackagesBillingUser = getGithubPackagesBillingUser.asInstanceOf[js.Any], getSharedStorageBillingOrg = getSharedStorageBillingOrg.asInstanceOf[js.Any], getSharedStorageBillingUser = getSharedStorageBillingUser.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGithubActionsBillingOrg]
@@ -196,16 +196,16 @@ object GetGithubActionsBillingOrg {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetGithubActionsBillingOrg] (val x: Self) extends AnyVal {
     
-    inline def setGetGithubActionsBillingOrg(value: `189`): Self = StObject.set(x, "getGithubActionsBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsBillingOrg(value: `191`): Self = StObject.set(x, "getGithubActionsBillingOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubActionsBillingUser(value: `190`): Self = StObject.set(x, "getGithubActionsBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetGithubActionsBillingUser(value: `192`): Self = StObject.set(x, "getGithubActionsBillingUser", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubPackagesBillingOrg(value: `191`): Self = StObject.set(x, "getGithubPackagesBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetGithubPackagesBillingOrg(value: `193`): Self = StObject.set(x, "getGithubPackagesBillingOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetGithubPackagesBillingUser(value: `192`): Self = StObject.set(x, "getGithubPackagesBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetGithubPackagesBillingUser(value: `194`): Self = StObject.set(x, "getGithubPackagesBillingUser", value.asInstanceOf[js.Any])
     
-    inline def setGetSharedStorageBillingOrg(value: `193`): Self = StObject.set(x, "getSharedStorageBillingOrg", value.asInstanceOf[js.Any])
+    inline def setGetSharedStorageBillingOrg(value: `195`): Self = StObject.set(x, "getSharedStorageBillingOrg", value.asInstanceOf[js.Any])
     
-    inline def setGetSharedStorageBillingUser(value: `194`): Self = StObject.set(x, "getSharedStorageBillingUser", value.asInstanceOf[js.Any])
+    inline def setGetSharedStorageBillingUser(value: `196`): Self = StObject.set(x, "getSharedStorageBillingUser", value.asInstanceOf[js.Any])
   }
 }

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait _MathNumericType
   extends StObject
-     with _MathType
+     with _MathScalarType

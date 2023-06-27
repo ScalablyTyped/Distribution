@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolygonBarrierProperties extends StObject {
   
   /**
-    * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#barrierType)
-    */
+  		 * Specify if the point barrier restricts travel completely or adds time or distance when it is crossed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#barrierType)
+  		 */
   var barrierType: js.UndefOr[restriction | `added-cost`] = js.undefined
   
   /**
-    * The point location of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#geometry)
-    */
+  		 * The point location of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#geometry)
+  		 */
   var geometry: js.UndefOr[PolygonProperties] = js.undefined
   
   /**
-    * The name of the barrier.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#name)
-    */
+  		 * The name of the barrier.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PolygonBarrier.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
 }
 object PolygonBarrierProperties {

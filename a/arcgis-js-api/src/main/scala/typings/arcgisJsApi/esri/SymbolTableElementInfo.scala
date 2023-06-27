@@ -10,38 +10,38 @@ trait SymbolTableElementInfo
      with SymbolTableElementType {
   
   /**
-    * The title of the renderer as displayed in the Legend.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The title of the renderer as displayed in the Legend.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: String | RampTitle
   
   /**
-    * A preview of the symbol element as displayed in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
-    */
+  		 * A preview of the symbol element as displayed in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
+  		 */
   var preview: js.UndefOr[HTMLElement] = js.undefined
   
   /**
-    * The size of the symbol in points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
-    */
+  		 * The size of the symbol in points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
+  		 */
   var size: js.UndefOr[Double] = js.undefined
   
   /**
-    * The symbol for the corresponding `value` in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
-    */
+  		 * The symbol for the corresponding `value` in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
+  		 */
   var symbol: Symbol
   
   /**
-    * The value corresponding with the given `symbol` in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
-    */
+  		 * The value corresponding with the given `symbol` in the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
+  		 */
   var value: js.UndefOr[Any] = js.undefined
 }
 object SymbolTableElementInfo {

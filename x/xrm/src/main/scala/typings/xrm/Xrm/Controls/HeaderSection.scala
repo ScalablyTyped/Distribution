@@ -29,7 +29,7 @@ trait HeaderSection extends StObject {
   
   /**
     * Sets the header's body visibility.
-    * @arg bool Specify true to show the body; false to hide the body.
+    * @param bool Specify true to show the body; false to hide the body.
     * @remarks Available only for Unified Interface.
     * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/setbodyvisible External Link: setBodyVisible (Client API reference)}
     */
@@ -37,7 +37,7 @@ trait HeaderSection extends StObject {
   
   /**
     * Sets the command bar visibility.
-    * @arg bool Specify true to show the command bar; false to hide the command bar.
+    * @param bool Specify true to show the command bar; false to hide the command bar.
     * @remarks Available only for Unified Interface.
     * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/setcommandbarvisible External Link: setCommandBarVisible (Client API reference)}
     */
@@ -45,7 +45,7 @@ trait HeaderSection extends StObject {
   
   /**
     * Sets the tab navigator visibility.
-    * @arg bool Specify true to show the tab navigator; false to hide the tab navigator.
+    * @param bool Specify true to show the tab navigator; false to hide the tab navigator.
     * @remarks Available only for Unified Interface.
     * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui-headersection/settabnavigatorvisible External Link: setTabNavigatorVisible (Client API reference)}
     */

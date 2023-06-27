@@ -10,10 +10,10 @@ trait UnaryNode
      with SQLNode {
   
   /**
-    * The sql node.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#UnaryNode)
-    */
+  		 * The sql node.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#UnaryNode)
+  		 */
   var expr: SQLNode
   
   var `type`: `unary-expression`

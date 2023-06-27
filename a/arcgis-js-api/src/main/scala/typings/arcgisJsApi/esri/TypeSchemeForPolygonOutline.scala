@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeSchemeForPolygonOutline extends StObject {
   
   /**
-    * The outline color of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolygon)
-    */
+  		 * The outline color of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolygon)
+  		 */
   var color: Color_
   
   /**
-    * The width of the fill symbol's outline in pixels or points.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolygon)
-    */
+  		 * The width of the fill symbol's outline in pixels or points.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#TypeSchemeForPolygon)
+  		 */
   var width: Double
 }
 object TypeSchemeForPolygonOutline {

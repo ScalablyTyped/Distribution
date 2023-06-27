@@ -10,8 +10,8 @@ trait CIMGeometricEffectRotate
      with CIMGeometricEffectType {
   
   /**
-    * The amount of rotation for the symbol.
-    */
+  			 * The amount of rotation for the symbol.
+  			 */
   var angle: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebMapUpdateFromOptionsThumbnailSize extends StObject {
   
   /**
-    * The height of the thumbnail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * The height of the thumbnail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var height: Double
   
   /**
-    * The width of the thumbnail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
-    */
+  		 * The width of the thumbnail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+  		 */
   var width: Double
 }
 object WebMapUpdateFromOptionsThumbnailSize {

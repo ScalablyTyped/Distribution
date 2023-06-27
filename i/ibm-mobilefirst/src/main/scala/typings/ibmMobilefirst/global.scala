@@ -104,7 +104,7 @@ object global {
       inline def addActionReceiver(id: String, callback: ActionReceiverCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addActionReceiver")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
-        * @deprecate Deprecated.
+        * @deprecated Deprecated.
         */
       inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
       
@@ -773,7 +773,7 @@ object global {
       
       /**
         * Completely wipes data for all users, destroys the internal storage, and clears security artifacts.
-        * @parameters options is @deprecated
+        * @param options is @deprecated
         */
       inline def destroy(username: String): JQueryDeferred[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(username.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred[Double]]
       inline def destroy(username: String, options: Options): JQueryDeferred[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JQueryDeferred[Double]]

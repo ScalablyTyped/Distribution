@@ -62,27 +62,41 @@ open class CSSStyleRule ()
   /* CompleteClass */
   override val SUPPORTS_RULE: `12` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/cssText) */
   /* standard dom */
   /* CompleteClass */
   var cssText: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentRule) */
   /* standard dom */
   /* CompleteClass */
   override val parentRule: typings.std.CSSRule | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/parentStyleSheet) */
   /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSStyleRule/selectorText) */
   /* standard dom */
   /* CompleteClass */
   var selectorText: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSStyleRule/style) */
   /* standard dom */
   /* CompleteClass */
   override val style: typings.std.CSSStyleDeclaration = js.native
   
-  /** @deprecated */
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSStyleRule/styleMap) */
+  /* standard dom */
+  /* CompleteClass */
+  override val styleMap: typings.std.StylePropertyMap = js.native
+  
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSRule/type)
+    */
   /* standard dom */
   /* CompleteClass */
   override val `type`: Double = js.native

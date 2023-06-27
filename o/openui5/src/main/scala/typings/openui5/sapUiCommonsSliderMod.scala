@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`2`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -175,13 +174,13 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Slider` itself
       */
@@ -206,7 +205,7 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -217,7 +216,7 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Slider` itself
       */
@@ -239,13 +238,13 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Slider` itself
       */
@@ -271,7 +270,7 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -282,7 +281,7 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.Slider` itself
       */
@@ -300,13 +299,13 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -324,13 +323,13 @@ object sapUiCommonsSliderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SliderLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -338,7 +337,7 @@ object sapUiCommonsSliderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -348,10 +347,10 @@ object sapUiCommonsSliderMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: Slider$ChangeEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -361,17 +360,15 @@ object sapUiCommonsSliderMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `2`): this.type = js.native
+    mParameters: Slider$LiveChangeEventParameters): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -398,7 +395,7 @@ object sapUiCommonsSliderMod {
     def getEnabled(): Boolean = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Gets current value of property {@link #getHeight height}.
       *
@@ -492,7 +489,7 @@ object sapUiCommonsSliderMod {
     def getValue(): float = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Gets current value of property {@link #getVertical vertical}.
       *
@@ -604,7 +601,7 @@ object sapUiCommonsSliderMod {
     bEnabled: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Sets a new value for property {@link #getHeight height}.
       *
@@ -746,7 +743,7 @@ object sapUiCommonsSliderMod {
     fValue: float): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Sets a new value for property {@link #getVertical vertical}.
       *
@@ -782,6 +779,60 @@ object sapUiCommonsSliderMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Slider$ChangeEventParameters extends StObject {
+    
+    /**
+      * Current value of the slider after a change.
+      */
+    var value: js.UndefOr[float] = js.undefined
+  }
+  object Slider$ChangeEventParameters {
+    
+    inline def apply(): Slider$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Slider$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Slider$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Current value of the slider after a change.
+      */
+    var value: js.UndefOr[float] = js.undefined
+  }
+  object Slider$LiveChangeEventParameters {
+    
+    inline def apply(): Slider$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Slider$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type SliderChangeEvent = typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters]
+  
+  type SliderChangeEventParameters = Slider$ChangeEventParameters
+  
+  type SliderLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters]
+  
+  type SliderLiveChangeEventParameters = Slider$LiveChangeEventParameters
+  
   trait SliderSettings
     extends StObject
        with ControlSettings {
@@ -799,7 +850,12 @@ object sapUiCommonsSliderMod {
     /**
       * Value was changed. This event is fired if the value has changed by a user action.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Using the slider interactively requires value "true".
@@ -816,7 +872,7 @@ object sapUiCommonsSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Height of the vertical slider.
       */
@@ -837,7 +893,12 @@ object sapUiCommonsSliderMod {
       * Value was changed. This event is fired during the mouse move. The normal change event is only fired by
       * mouseup.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Maximal value of the slider
@@ -888,7 +949,7 @@ object sapUiCommonsSliderMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Orientation of slider
       */
@@ -925,7 +986,9 @@ object sapUiCommonsSliderMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
@@ -949,7 +1012,9 @@ object sapUiCommonsSliderMod {
       
       inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Slider$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       

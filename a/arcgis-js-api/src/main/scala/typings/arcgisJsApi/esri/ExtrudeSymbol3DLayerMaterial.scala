@@ -9,12 +9,12 @@ trait ExtrudeSymbol3DLayerMaterial
      with AnonymousAccessor {
   
   /**
-    * The fill color of the extrusion.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
-    */
+  		 * The fill color of the extrusion.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object ExtrudeSymbol3DLayerMaterial {

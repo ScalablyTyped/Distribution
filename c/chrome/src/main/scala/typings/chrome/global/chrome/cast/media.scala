@@ -65,7 +65,7 @@ object media {
     /* CompleteClass */
     var releaseDate: String = js.native
     
-    /** @deprecated. Use releaseDate instead. */
+    /** @deprecated Use releaseDate instead. */
     /* CompleteClass */
     var releaseYear: Double = js.native
     
@@ -75,7 +75,7 @@ object media {
     /* CompleteClass */
     var title: String = js.native
     
-    /** @deprecated. Use metadataType instead. */
+    /** @deprecated Use metadataType instead. */
     /* CompleteClass */
     var `type`: MetadataType = js.native
   }
@@ -189,7 +189,7 @@ object media {
     /* CompleteClass */
     var currentItemId: Double = js.native
     
-    /** @deprecated. Use getEstimatedTime instead */
+    /** @deprecated Use getEstimatedTime instead */
     /* CompleteClass */
     var currentTime: Double = js.native
     
@@ -544,7 +544,7 @@ object media {
     /* CompleteClass */
     var releaseDate: String = js.native
     
-    /** @deprecated. Use releaseDate instead. */
+    /** @deprecated Use releaseDate instead. */
     /* CompleteClass */
     var releaseYear: Double = js.native
     
@@ -557,7 +557,7 @@ object media {
     /* CompleteClass */
     var title: String = js.native
     
-    /** @deprecated. Use metadataType instead. */
+    /** @deprecated Use metadataType instead. */
     /* CompleteClass */
     var `type`: MetadataType = js.native
   }
@@ -580,7 +580,7 @@ object media {
     /* CompleteClass */
     var artist: String = js.native
     
-    /** @deprecated. Use artist instead. */
+    /** @deprecated Use artist instead. */
     /* CompleteClass */
     var artistName: String = js.native
     
@@ -599,7 +599,7 @@ object media {
     /* CompleteClass */
     var releaseDate: String = js.native
     
-    /** @deprecated. Use releaseDate instead. */
+    /** @deprecated Use releaseDate instead. */
     /* CompleteClass */
     var releaseYear: Double = js.native
     
@@ -612,7 +612,7 @@ object media {
     /* CompleteClass */
     var trackNumber: Double = js.native
     
-    /** @deprecated. Use metadataType instead. */
+    /** @deprecated Use metadataType instead. */
     /* CompleteClass */
     var `type`: MetadataType = js.native
   }
@@ -666,7 +666,7 @@ object media {
     /* CompleteClass */
     var title: String = js.native
     
-    /** @deprecated. Use metadataType instead. */
+    /** @deprecated Use metadataType instead. */
     /* CompleteClass */
     var `type`: MetadataType = js.native
     
@@ -1109,11 +1109,11 @@ object media {
     /* CompleteClass */
     var episode: Double = js.native
     
-    /** @deprecated. Use episode instead. */
+    /** @deprecated Use episode instead. */
     /* CompleteClass */
     var episodeNumber: Double = js.native
     
-    /** @deprecated. Use title instead. */
+    /** @deprecated Use title instead. */
     /* CompleteClass */
     var episodeTitle: String = js.native
     
@@ -1126,14 +1126,14 @@ object media {
     /* CompleteClass */
     var originalAirdate: String = js.native
     
-    /** @deprecated. Use originalAirdate instead. */
+    /** @deprecated Use originalAirdate instead. */
     /* CompleteClass */
     var releaseYear: Double = js.native
     
     /* CompleteClass */
     var season: Double = js.native
     
-    /** @deprecated. Use season instead. */
+    /** @deprecated Use season instead. */
     /* CompleteClass */
     var seasonNumber: Double = js.native
     
@@ -1143,7 +1143,7 @@ object media {
     /* CompleteClass */
     var title: String = js.native
     
-    /** @deprecated. Use metadataType instead. */
+    /** @deprecated Use metadataType instead. */
     /* CompleteClass */
     var `type`: MetadataType = js.native
   }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FeatureLayerSaveAsOptionsValidationOptions extends StObject {
   
   /**
-    * Indicates whether to ignore saving unsupported layers or layers with unsupported content, such as unsupported symbology.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
-    */
+  		 * Indicates whether to ignore saving unsupported layers or layers with unsupported content, such as unsupported symbology.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#saveAs)
+  		 */
   var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object FeatureLayerSaveAsOptionsValidationOptions {

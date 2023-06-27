@@ -14,7 +14,7 @@ trait PatchPut extends StObject {
     * on October 17, 2023. For more details, see [changelog](https://gh.io/github-importer-non-git-eol). In the coming weeks, we will update
     * these docs to reflect relevant changes to the API and will contact all integrators using the "Source imports" API.
     */
-  var delete: Responses260
+  var delete: Responses308
   
   /**
     * Get an import status
@@ -84,7 +84,7 @@ trait PatchPut extends StObject {
 object PatchPut {
   
   inline def apply(
-    delete: Responses260,
+    delete: Responses308,
     get: Responses200404503,
     patch: Responses200503,
     put: RequestBodyContentApplicationjsonTfvcproject
@@ -96,7 +96,7 @@ object PatchPut {
   @scala.inline
   implicit open class MutableBuilder[Self <: PatchPut] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses260): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses308): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     inline def setGet(value: Responses200404503): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

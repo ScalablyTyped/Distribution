@@ -78,8 +78,8 @@ trait GPURenderPassEncoder
   def setStencilReference(reference: GPUStencilValue): Unit = js.native
   
   /**
-    * Sets the viewport used during the rasterization stage to linearly map from normalized device
-    * coordinates to viewport coordinates.
+    * Sets the viewport used during the rasterization stage to linearly map from
+    * NDC|normalized device coordinates to viewport coordinates.
     * @param x - Minimum X value of the viewport in pixels.
     * @param y - Minimum Y value of the viewport in pixels.
     * @param width - Width of the viewport in pixels.

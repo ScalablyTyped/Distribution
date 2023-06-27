@@ -16,7 +16,7 @@ trait FileHandle extends StObject {
     * @remark This method is synchronous. If any asynchronous method was called before close, close will block further instructions until all background jobs finish execution.
     * Note, that if file handle functions are put into any callbacks and this callback was not yet called, synchronous close will wait only for already ordered background jobs to finish, preventing successful execution of any further operations on closed file handle.
     *
-    * @throw WebAPIException with error type IOError, if close fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type IOError, if close fails or any error related to file handle occurs.
     */
   def close(): Unit = js.native
   
@@ -37,7 +37,7 @@ trait FileHandle extends StObject {
     * @param onsuccess Callback function to be invoked on success.
     * @param onerror Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def closeNonBlocking(): Unit = js.native
   def closeNonBlocking(onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -53,7 +53,7 @@ trait FileHandle extends StObject {
     * Flush does not ensure that data is written on storage device, it only synchronizes RAM with file descriptor.
     * To ensure storage synchronization use _sync_, _close_ or their asynchronous equivalent methods, which guarantee such synchronization.
     *
-    * @throw WebAPIException with error type IOError, if flush fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type IOError, if flush fails or any error related to file handle occurs.
     */
   def flush(): Unit = js.native
   
@@ -77,7 +77,7 @@ trait FileHandle extends StObject {
     * @param onsuccess Callback function to be invoked on success.
     * @param onerror Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def flushNonBlocking(): Unit = js.native
   def flushNonBlocking(onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -99,8 +99,8 @@ trait FileHandle extends StObject {
     *
     * @returns Blob object with file content.
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
     */
   def readBlob(): Blob = js.native
   def readBlob(size: Double): Blob = js.native
@@ -122,8 +122,8 @@ trait FileHandle extends StObject {
     * @param onerror Callback function to be invoked when an error occurs.
     * @param size Size in bytes of data to read from file. If none is given, method attempts to read whole file.
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def readBlobNonBlocking(): Unit = js.native
   def readBlobNonBlocking(onsuccess: Null, onerror: Null, size: Double): Unit = js.native
@@ -150,8 +150,8 @@ trait FileHandle extends StObject {
     *
     * @returns Read data as Uint8Array.
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
     */
   def readData(): js.typedarray.Uint8Array = js.native
   def readData(size: Double): js.typedarray.Uint8Array = js.native
@@ -174,8 +174,8 @@ trait FileHandle extends StObject {
     * @param onerror Callback function to be invoked when an error occurs.
     * @param size Size in bytes of data to read from file. If none is given, method attempts to read whole file.
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError if given _size_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def readDataNonBlocking(): Unit = js.native
   def readDataNonBlocking(onsuccess: Null, onerror: Null, size: Double): Unit = js.native
@@ -207,10 +207,10 @@ trait FileHandle extends StObject {
     *
     * @returns String with data read from file.
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _count_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
-    * @throw WebAPIException with error type NotSupportedError, if the given encoding is not supported.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError if given _count_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type IOError, if read fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type NotSupportedError, if the given encoding is not supported.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def readString(): String = js.native
   def readString(count: Double): String = js.native
@@ -239,9 +239,9 @@ trait FileHandle extends StObject {
     * "[UTF-8](http://www.ietf.org/rfc/rfc2279.txt)" default encoding
     * "[ISO-8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1)" Latin-1 encoding
     *
-    * @throw WebAPIException with error type InvalidValuesError if given _count_ exceeds maximum value supported by the device.
-    * @throw WebAPIException with error type NotSupportedError, if the given encoding is not supported.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError if given _count_ exceeds maximum value supported by the device.
+    * @throws WebAPIException with error type NotSupportedError, if the given encoding is not supported.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def readStringNonBlocking(): Unit = js.native
   def readStringNonBlocking(onsuccess: Null, onerror: Null, count: Double): Unit = js.native
@@ -286,8 +286,8 @@ trait FileHandle extends StObject {
     *
     * @returns File position indicator.
     *
-    * @throw WebAPIException with error type IOError, if seek fails or any error related to file handle occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if seek fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def seek(offset: Double): Double = js.native
   def seek(offset: Double, whence: BaseSeekPosition): Double = js.native
@@ -310,7 +310,7 @@ trait FileHandle extends StObject {
     * @param onerror Callback function to be invoked when an error occurs.
     * @param whence Determines position in file stream to which offset is added. Default value: "BEGIN".
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def seekNonBlocking(offset: Double): Unit = js.native
   def seekNonBlocking(offset: Double, onsuccess: Null, onerror: Null, whence: BaseSeekPosition): Unit = js.native
@@ -332,7 +332,7 @@ trait FileHandle extends StObject {
     *
     * The sync function is intended to force a physical write of data from the buffer cache and to assure that after a system crash or other failure that all data up to the time of the sync() call is recorded on the disk.
     *
-    * @throw WebAPIException with error type IOError, if sync fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type IOError, if sync fails or any error related to file handle occurs.
     */
   def sync(): Unit = js.native
   
@@ -353,7 +353,7 @@ trait FileHandle extends StObject {
     * @param onsuccess Callback function to be invoked on success.
     * @param onerror Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def syncNonBlocking(): Unit = js.native
   def syncNonBlocking(onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -368,8 +368,8 @@ trait FileHandle extends StObject {
     *
     * @param blob Object of type Blob, which content will be written to a file.
     *
-    * @throw WebAPIException with error type IOError, if write fails or any error related to file handle occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if write fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def writeBlob(blob: Blob): Unit = js.native
   
@@ -390,7 +390,7 @@ trait FileHandle extends StObject {
     * @param onsuccess Callback function to be invoked on success.
     * @param onerror Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def writeBlobNonBlocking(blob: Blob): Unit = js.native
   def writeBlobNonBlocking(blob: Blob, onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -406,8 +406,8 @@ trait FileHandle extends StObject {
     *
     * @param data An array of type Uint8Array, which content will be written to file as binary data.
     *
-    * @throw WebAPIException with error type IOError, if write fails or any error related to file handle occurs.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if write fails or any error related to file handle occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def writeData(data: js.typedarray.Uint8Array): Unit = js.native
   
@@ -429,7 +429,7 @@ trait FileHandle extends StObject {
     * @param onsuccess Callback function to be invoked on success.
     * @param onerror Callback function to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def writeDataNonBlocking(data: js.typedarray.Uint8Array): Unit = js.native
   def writeDataNonBlocking(data: js.typedarray.Uint8Array, onsuccess: Null, onerror: ErrorCallback): Unit = js.native
@@ -449,8 +449,8 @@ trait FileHandle extends StObject {
     *
     * @returns Number of bytes written (can be more than _inputString_ length for multibyte encodings and will never be less)
     *
-    * @throw WebAPIException with error type IOError, if input/output error occurs.
-    * @throw WebAPIException with error type NotSupportedError, if the given encoding is not supported.
+    * @throws WebAPIException with error type IOError, if input/output error occurs.
+    * @throws WebAPIException with error type NotSupportedError, if the given encoding is not supported.
     */
   def writeString(inputString: String): Double = js.native
   def writeString(inputString: String, outputEncoding: String): Double = js.native
@@ -475,8 +475,8 @@ trait FileHandle extends StObject {
     * "[UTF-8](http://www.ietf.org/rfc/rfc2279.txt)" default encoding
     * "[ISO-8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1)" Latin-1 encoding
     *
-    * @throw WebAPIException with error type NotSupportedError, if the given encoding is not supported.
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotSupportedError, if the given encoding is not supported.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
     */
   def writeStringNonBlocking(inputString: String): Unit = js.native
   def writeStringNonBlocking(inputString: String, onsuccess: Null, onerror: Null, outputEncoding: String): Unit = js.native

@@ -9,12 +9,12 @@ trait LineCallout3DBorder
      with AnonymousAccessor {
   
   /**
-    * The color of the callout line border.
-    *
-    * @default white
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
-    */
+  		 * The color of the callout line border.
+  		 *
+  		 * @default white
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
+  		 */
   var color: js.UndefOr[Color_] = js.undefined
 }
 object LineCallout3DBorder {

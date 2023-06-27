@@ -17,24 +17,24 @@ trait IntervalQualifierNode
      with SQLNode {
   
   /**
-    * Interval node periods.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
-    */
+  		 * Interval node periods.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
+  		 */
   var period: day | month | hour | second | year | minute
   
   /**
-    * Precision for an interval data type includes interval leading precision, interval precision, and seconds precision.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
-    */
+  		 * Precision for an interval data type includes interval leading precision, interval precision, and seconds precision.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
+  		 */
   var precision: Double
   
   /**
-    * Seconds precision.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
-    */
+  		 * Seconds precision.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#IntervalQualifierNode)
+  		 */
   var secondary: number
   
   var `type`: `interval-qualifier`

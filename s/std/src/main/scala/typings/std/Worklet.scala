@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worklet)
+  */
 @js.native
 trait Worklet extends StObject {
   
@@ -14,6 +18,8 @@ trait Worklet extends StObject {
     * The credentials option can be set to a credentials mode to modify the script-fetching process. It defaults to "same-origin".
     *
     * Any failures in fetching the script or its dependencies will cause the returned promise to be rejected with an "AbortError" DOMException. Any errors in parsing the script or its dependencies will cause the returned promise to be rejected with the exception generated during parsing.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Worklet/addModule)
     */
   /* standard dom */
   def addModule(moduleURL: java.lang.String): js.Promise[Unit] = js.native

@@ -478,12 +478,12 @@ object FileExplorer {
   trait ContextMenuSettings extends StObject {
     
     /** The customMenuFields property is used to define custom functionality for custom ContextMenu item's which are defined in items property.
-      * @Default {[]}
+      * @default {[]}
       */
     var customMenuFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The items property is used to configure and group the required ContextMenu items in FileExplorer control.
-      * @Default {{% highlight javascript %}{navbar: [NewFolder, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, Getinfo],cwd: [Refresh, Paste,|, SortBy, |, NewFolder, Upload, |,
+      * @default {{% highlight javascript %}{navbar: [NewFolder, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, Getinfo],cwd: [Refresh, Paste,|, SortBy, |, NewFolder, Upload, |,
       * Getinfo],files: [Open, Download, |, Upload, |, Delete, Rename, |, Cut, Copy, Paste, |, OpenFolderLocation, Getinfo]}{% endhighlight %}}
       */
     var items: js.UndefOr[Any] = js.undefined
@@ -1051,17 +1051,17 @@ object FileExplorer {
   trait FilterSettings extends StObject {
     
     /** It allows to search the text given in search Textbox in every keyup event. When this property was set as false, searching will works only on Enter key and searchbar blur.
-      * @Default {true}
+      * @default {true}
       */
     var allowSearchOnTyping: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables to perform the filter operation with case sensitive.
-      * @Default {false}
+      * @default {false}
       */
     var caseSensitiveSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the search filter type. There are several filter types available such as &quot;startswith&quot;, &quot;contains&quot;, &quot;endswith&quot;. See filterType.
-      * @Default {ej.FileExplorer.filterType.Contains}
+      * @default {ej.FileExplorer.filterType.Contains}
       */
     var filterType: js.UndefOr[FilterType_ | String] = js.undefined
   }
@@ -1162,17 +1162,17 @@ object FileExplorer {
   trait GridSettings extends StObject {
     
     /** Allows to Resize the width of the columns by simply click and move the particular column header line.
-      * @Default {true}
+      * @default {true}
       */
     var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
-      * @Default {true}
+      * @default {true}
       */
     var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets an object that indicates to render the grid with specified columns. You can use this property same as the column property in Grid control.
-      * @Default {[{ field: name, headerText: Name, width: 30% }, { field: dateModified, headerText: Date Modified, width: 30% }, { field: type, headerText: Type, width: 15% }, { field:
+      * @default {[{ field: name, headerText: Name, width: 30% }, { field: dateModified, headerText: Date Modified, width: 30% }, { field: type, headerText: Type, width: 15% }, { field:
       * size, headerText: Size, width: 12%, textAlign: right, headerTextAlign: left }]}
       */
     var columns: js.UndefOr[js.Array[Any]] = js.undefined
@@ -1578,29 +1578,29 @@ object FileExplorer {
     var ajaxAction: js.UndefOr[String] = js.undefined
     
     /** Specifies the data type of server side AJAX handling method.
-      * @Default {json}
+      * @default {json}
       */
     var ajaxDataType: js.UndefOr[String] = js.undefined
     
     /** By using ajaxSettings property, you can customize the AJAX configurations. Normally you can customize the following option in AJAX handling data, URL, type, async, contentType,
       * dataType and success. For upload, download and getImage API, you can only customize URL.
-      * @Default {{ read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}, search: {}}}
+      * @default {{ read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}, search: {}}}
       */
     var ajaxSettings: js.UndefOr[Any] = js.undefined
     
     /** The FileExplorer allows to move the files from one folder to another folder of FileExplorer by using drag and drop option. Also it supports to upload a file by dragging it from
       * windows explorer to the necessary folder of ejFileExplorer.
-      * @Default {true}
+      * @default {true}
       */
     var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable keyboard support for FileExplorer actions.
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** The FileExplorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key.
-      * @Default {true}
+      * @default {true}
       */
     var allowMultiSelection: js.UndefOr[Boolean] = js.undefined
     
@@ -1679,27 +1679,27 @@ object FileExplorer {
     var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.undefined
     
     /** Specify the enablePersistence to FileExplorer to save the current model value in browser cookies for state maintains.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Right to Left alignment support in FileExplorer control.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the resize support in FileExplorer control.
-      * @Default {false}
+      * @default {false}
       */
     var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the thumbnail image compression option in FileExplorer control. By enabling this option, you can reduce the thumbnail image size while loading.
-      * @Default {false}
+      * @default {false}
       */
     var enableThumbnailCompress: js.UndefOr[Boolean] = js.undefined
     
     /** Allows specified type of files only to display in FileExplorer control.
-      * @Default {* . *}
+      * @default {* . *}
       */
     var fileTypes: js.UndefOr[String] = js.undefined
     
@@ -1716,12 +1716,12 @@ object FileExplorer {
     var gridSettings: js.UndefOr[GridSettings] = js.undefined
     
     /** Specifies the height of FileExplorer control.
-      * @Default {400}
+      * @default {400}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Enables or disables the responsive support for FileExplorer control during the window resizing time.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1730,7 +1730,7 @@ object FileExplorer {
     var keydown: js.UndefOr[js.Function1[/* e */ KeydownEventArgs, Unit]] = js.undefined
     
     /** Sets the file view type. There are three view types available such as Grid, Tile and Large icons. See layoutType.
-      * @Default {ej.FileExplorer.layoutType.Grid}
+      * @default {ej.FileExplorer.layoutType.Grid}
       */
     var layout: js.UndefOr[layoutType | String] = js.undefined
     
@@ -1739,17 +1739,17 @@ object FileExplorer {
     var layoutChange: js.UndefOr[js.Function1[/* e */ LayoutChangeEventArgs, Unit]] = js.undefined
     
     /** Sets the culture in FileExplorer.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum height of FileExplorer control.
-      * @Default {null}
+      * @default {null}
       */
     var maxHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the maximum width of FileExplorer control.
-      * @Default {null}
+      * @default {null}
       */
     var maxWidth: js.UndefOr[String | Double] = js.undefined
     
@@ -1766,12 +1766,12 @@ object FileExplorer {
     var menuOpen: js.UndefOr[js.Function1[/* e */ MenuOpenEventArgs, Unit]] = js.undefined
     
     /** Sets the minimum height of FileExplorer control.
-      * @Default {250px}
+      * @default {250px}
       */
     var minHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum width of FileExplorer control.
-      * @Default {400px}
+      * @default {400px}
       */
     var minWidth: js.UndefOr[String | Double] = js.undefined
     
@@ -1821,39 +1821,39 @@ object FileExplorer {
     var selectedItems: js.UndefOr[String | js.Array[Any]] = js.undefined
     
     /** Enables or disables the checkbox option in FileExplorer control.
-      * @Default {true}
+      * @default {true}
       */
     var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the context menu option in FileExplorer control.
-      * @Default {true}
+      * @default {true}
       */
     var showContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the footer in FileExplorer control. The footer element displays the details of the current selected files and folders. And also the footer having the switcher
       * to change the layout view.
-      * @Default {true}
+      * @default {true}
       */
     var showFooter: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the navigation pane in FileExplorer control. The navigation pane contains a tree view element that displays all the folders from the filesystem in a
       * hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
-      * @Default {true}
+      * @default {true}
       */
     var showNavigationPane: js.UndefOr[Boolean] = js.undefined
     
     /** FileExplorer control is displayed with rounded corner when this property is set to true.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** FileExplorer control is rendered with thumbnail preview of images in Tile and LargeIcons layout when this property set to true.
-      * @Default {true}
+      * @default {true}
       */
     var showThumbnail: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or disables the toolbar in FileExplorer control.
-      * @Default {true}
+      * @default {true}
       */
     var showToolbar: js.UndefOr[Boolean] = js.undefined
     
@@ -1862,13 +1862,13 @@ object FileExplorer {
     var templateRefresh: js.UndefOr[js.Function1[/* e */ TemplateRefreshEventArgs, Unit]] = js.undefined
     
     /** The tools property is used to configure and group required toolbar items in FileExplorer control.
-      * @Default {{ creation: [NewFolder], navigation: [Back, Forward, Upward], addressBar: [Addressbar], editing: [Refresh, Upload, Delete, Rename, Download], copyPaste: [Cut, Copy,
+      * @default {{ creation: [NewFolder], navigation: [Back, Forward, Upward], addressBar: [Addressbar], editing: [Refresh, Upload, Delete, Rename, Download], copyPaste: [Cut, Copy,
       * Paste], getProperties: [Details], searchBar: [Searchbar], layout: [Layout], sortBy: [SortBy]}}
       */
     var tools: js.UndefOr[Any] = js.undefined
     
     /** The toolsList property is used to arrange the toolbar items in the FileExplorer control.
-      * @Default {[layout, creation, navigation, addressBar, editing, copyPaste, sortBy, getProperties, searchBar]}
+      * @default {[layout, creation, navigation, addressBar, editing, copyPaste, sortBy, getProperties, searchBar]}
       */
     var toolsList: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1893,12 +1893,12 @@ object FileExplorer {
     var uploadSuccess: js.UndefOr[js.Function1[/* e */ UploadSuccessEventArgs, Unit]] = js.undefined
     
     /** Specifies the virtual item count for virtual support.
-      * @Default {0}
+      * @default {0}
       */
     var virtualItemCount: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of FileExplorer control.
-      * @Default {850}
+      * @default {850}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -2895,32 +2895,32 @@ object FileExplorer {
   trait UploadSettings extends StObject {
     
     /** Enables or disables the multiple files upload. When it is enabled, you can upload multiple files at a time and when disabled, you can upload only one file at a time.
-      * @Default {true}
+      * @default {true}
       */
     var allowMultipleFile: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the auto upload option while uploading files in FileExplorer control.
-      * @Default {false}
+      * @default {false}
       */
     var autoUpload: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the actions for upload dialog during initialization.
-      * @Default {{ modal:false, closeOnComplete:false, content:null, drag:true }}
+      * @default {{ modal:false, closeOnComplete:false, content:null, drag:true }}
       */
     var dialogAction: js.UndefOr[Any] = js.undefined
     
     /** Specifies the position at which the upload dialog is displayed using X and Y values. X: Sets the left position value for dialog. Y: Sets the top position value for dialog.
-      * @Default {null}
+      * @default {null}
       */
     var dialogPosition: js.UndefOr[Any] = js.undefined
     
     /** Specifies the maximum file size allowed to upload. It accepts the value in bytes.
-      * @Default {31457280}
+      * @default {31457280}
       */
     var maxFileSize: js.UndefOr[Double] = js.undefined
     
     /** Specifies the file details which are to be displayed when selected for upload by setting the showFileDetails to true.
-      * @Default {true}
+      * @default {true}
       */
     var showFileDetails: js.UndefOr[Boolean] = js.undefined
   }

@@ -1,6 +1,7 @@
 package typings.wicgFileSystemAccess.mod.global
 
 import typings.std.File
+import typings.std.FileSystemWritableFileStream
 import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`false`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`true`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file
@@ -19,12 +20,8 @@ trait FileSystemFileHandle
      with FileSystemHandle
      with FileSystemHandleUnion {
   
-  def createWritable(): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileSystemWritableFileStream */ Any
-  ] = js.native
-  def createWritable(options: FileSystemCreateWritableOptions): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileSystemWritableFileStream */ Any
-  ] = js.native
+  def createWritable(): js.Promise[FileSystemWritableFileStream] = js.native
+  def createWritable(options: FileSystemCreateWritableOptions): js.Promise[FileSystemWritableFileStream] = js.native
   
   def getFile(): js.Promise[File] = js.native
   

@@ -162,13 +162,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCollectionSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -194,7 +194,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachCollectionSelected(
       /**
@@ -205,7 +205,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -227,13 +227,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachEditCollection(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -259,7 +259,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachEditCollection(
       /**
@@ -270,7 +270,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -292,13 +292,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachItemSelectionChanged(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -324,7 +324,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachItemSelectionChanged(
       /**
@@ -335,7 +335,7 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.CollectionInspector` itself
       */
@@ -373,13 +373,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachCollectionSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -398,13 +398,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachEditCollection(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -412,7 +412,7 @@ object sapUiUx3CollectionInspectorMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:itemSelectionChanged itemSelectionChanged}
+      * Detaches event handler `fnFunction` from the {@link #event:itemSelectionChanged itemSelectionChanged }
       * event of this `sap.ui.ux3.CollectionInspector`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -423,13 +423,13 @@ object sapUiUx3CollectionInspectorMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachItemSelectionChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -437,7 +437,7 @@ object sapUiUx3CollectionInspectorMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:collectionSelected collectionSelected} to attached listeners.
       *
@@ -450,7 +450,7 @@ object sapUiUx3CollectionInspectorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:editCollection editCollection} to attached listeners.
       *
@@ -463,7 +463,7 @@ object sapUiUx3CollectionInspectorMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:itemSelectionChanged itemSelectionChanged} to attached listeners.
       *
@@ -700,6 +700,24 @@ object sapUiUx3CollectionInspectorMod {
     bSidebarVisible: Boolean): this.type = js.native
   }
   
+  trait CollectionInspector$CollectionSelectedEventParameters extends StObject
+  
+  trait CollectionInspector$EditCollectionEventParameters extends StObject
+  
+  trait CollectionInspector$ItemSelectionChangedEventParameters extends StObject
+  
+  type CollectionInspectorCollectionSelectedEvent = typings.openui5.sapUiBaseEventMod.default[CollectionInspector$CollectionSelectedEventParameters]
+  
+  type CollectionInspectorCollectionSelectedEventParameters = CollectionInspector$CollectionSelectedEventParameters
+  
+  type CollectionInspectorEditCollectionEvent = typings.openui5.sapUiBaseEventMod.default[CollectionInspector$EditCollectionEventParameters]
+  
+  type CollectionInspectorEditCollectionEventParameters = CollectionInspector$EditCollectionEventParameters
+  
+  type CollectionInspectorItemSelectionChangedEvent = typings.openui5.sapUiBaseEventMod.default[CollectionInspector$ItemSelectionChangedEventParameters]
+  
+  type CollectionInspectorItemSelectionChangedEventParameters = CollectionInspector$ItemSelectionChangedEventParameters
+  
   trait CollectionInspectorSettings
     extends StObject
        with ControlSettings {
@@ -707,7 +725,9 @@ object sapUiUx3CollectionInspectorMod {
     /**
       * Event is fired if user selects a collection
       */
-    var collectionSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var collectionSelected: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Collections which are displayed in the COllectionInspector
@@ -726,7 +746,9 @@ object sapUiUx3CollectionInspectorMod {
     /**
       * Fires when the edit button is clicked
       */
-    var editCollection: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var editCollection: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If set to true, control will fit parents content area
@@ -738,7 +760,9 @@ object sapUiUx3CollectionInspectorMod {
     /**
       * Fires when an item in a collection is selected
       */
-    var itemSelectionChanged: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var itemSelectionChanged: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Collection which is currently selected
@@ -762,7 +786,7 @@ object sapUiUx3CollectionInspectorMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CollectionInspectorSettings] (val x: Self) extends AnyVal {
       
-      inline def setCollectionSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "collectionSelected", js.Any.fromFunction1(value))
+      inline def setCollectionSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "collectionSelected", js.Any.fromFunction1(value))
       
       inline def setCollectionSelectedUndefined: Self = StObject.set(x, "collectionSelected", js.undefined)
       
@@ -782,7 +806,7 @@ object sapUiUx3CollectionInspectorMod {
       
       inline def setContentVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "content", js.Array(value*))
       
-      inline def setEditCollection(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "editCollection", js.Any.fromFunction1(value))
+      inline def setEditCollection(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "editCollection", js.Any.fromFunction1(value))
       
       inline def setEditCollectionUndefined: Self = StObject.set(x, "editCollection", js.undefined)
       
@@ -790,7 +814,7 @@ object sapUiUx3CollectionInspectorMod {
       
       inline def setFitParentUndefined: Self = StObject.set(x, "fitParent", js.undefined)
       
-      inline def setItemSelectionChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "itemSelectionChanged", js.Any.fromFunction1(value))
+      inline def setItemSelectionChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "itemSelectionChanged", js.Any.fromFunction1(value))
       
       inline def setItemSelectionChangedUndefined: Self = StObject.set(x, "itemSelectionChanged", js.undefined)
       

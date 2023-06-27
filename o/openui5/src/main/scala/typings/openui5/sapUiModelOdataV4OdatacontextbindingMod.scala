@@ -1,6 +1,9 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiModelBindingMod.Binding$ChangeEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataReceivedEventParameters
+import typings.openui5.sapUiModelBindingMod.Binding$DataRequestedEventParameters
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -84,7 +87,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     extends typings.openui5.sapUiModelContextBindingMod.default {
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * See {@link sap.ui.base.EventProvider#attachEvent}
       * See:
@@ -137,7 +140,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Attach event handler `fnFunction` to the 'patchCompleted' event of this binding.
       *
@@ -159,7 +162,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Attach event handler `fnFunction` to the 'patchSent' event of this binding.
       *
@@ -181,13 +184,13 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.45.0
+      * @since 1.45.0
       *
       * Changes this binding's parameters and refreshes the binding. Since 1.111.0, a list binding's header context
       * is deselected.
       *
-      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges}
-      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch}
+      * If there are pending changes that cannot be ignored, an error is thrown. Use {@link #hasPendingChanges }
+      * to check if there are such pending changes. If there are, call {@link sap.ui.model.odata.v4.ODataModel#submitBatch }
       * to submit the changes or {@link sap.ui.model.odata.v4.ODataModel#resetChanges} to reset the changes before
       * calling {@link #changeParameters}.
       *
@@ -202,7 +205,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Detach event handler `fnFunction` from the 'patchCompleted' event of this binding.
       *
@@ -224,7 +227,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.59.0
+      * @since 1.59.0
       *
       * Detach event handler `fnFunction` from the 'patchSent' event of this binding.
       *
@@ -246,7 +249,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Calls the OData operation that corresponds to this operation binding.
       *
@@ -274,7 +277,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * context as described above is currently part of the list's collection (that is, has an index).
       *  A return value context is an {@link sap.ui.model.odata.v4.Context} which represents a bound operation
       * response. It is created only if the operation is bound and has a single entity return value from the
-      * same entity set as the operation's binding parameter and has a parent context which is an {@link sap.ui.model.odata.v4.Context}
+      * same entity set as the operation's binding parameter and has a parent context which is an {@link sap.ui.model.odata.v4.Context }
       * and points to an entity from an entity set. It is destroyed the next time this operation binding is executed
       * again!
       *  If a return value context is created, it must be used instead of `this.getBoundContext()`. All bound
@@ -321,7 +324,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -344,7 +347,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -358,9 +361,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -380,7 +383,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -394,9 +397,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -416,7 +419,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -439,7 +442,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -453,9 +456,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -475,7 +478,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -489,9 +492,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -525,7 +528,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -548,7 +551,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -562,9 +565,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -584,7 +587,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -598,9 +601,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -620,7 +623,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -643,7 +646,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -657,9 +660,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
@@ -679,7 +682,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       /**
       * If this callback is given for an action, the preference "handling=strict" is applied. If the service
       * responds with the HTTP status code 412 and a "Preference-applied: handling=strict" header, the details
-      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message}
+      * from the OData error response are extracted and passed to the callback as an array of {@link sap.ui.core.message.Message }
       * items. The callback has to return a `Promise` resolving with a `boolean` value in order to indicate whether
       * the bound action should either be repeated **without** applying the preference or rejected with an `Error`
       * instance `oError` where `oError.canceled === true`. Since 1.92.0.
@@ -693,28 +696,28 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       * `fnOnBeforeDestroy` will be called with the new context instance as the only argument in this case. An
       * existing context does not change its `keepAlive` attribute. In any case, the resulting context takes
       * the place (index, position) of the parent context (see {@link sap.ui.model.odata.v4.Context#getIndex}),
-      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive
-      * kept alive}. If the parent context has requested messages when it was kept alive, they will be inherited
-      * if the $$inheritExpandSelect binding parameter is set to `true`. Since 1.97.0.
+      * which need not be in the collection currently if it is {@link sap.ui.model.odata.v4.Context#isKeepAlive kept alive}.
+      * If the parent context has requested messages when it was kept alive, they will be inherited if the $$inheritExpandSelect
+      * binding parameter is set to `true`. Since 1.97.0.
       */
     bReplaceWithRVC: Boolean
     ): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for read requests. The group ID of the binding is alternatively
       * defined by
       * 	 the `groupId` parameter of the OData model; see {@link sap.ui.model.odata.v4.ODataModel#constructor},
-      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link
-      * sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *  the `$$groupId` binding parameter; see {@link sap.ui.model.odata.v4.ODataModel#bindList} and {@link sap.ui.model.odata.v4.ODataModel#bindContext}.
+      *
       *
       * @returns The group ID
       */
     def getGroupId(): String = js.native
     
     /**
-      * @SINCE 1.73.0
+      * @since 1.73.0
       *
       * Returns the context pointing to the parameters of a deferred operation binding.
       *
@@ -723,10 +726,9 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     def getParameterContext(): typings.openui5.sapUiModelOdataV4ContextMod.default = js.native
     
     /**
-      * @SINCE 1.53.0
+      * @since 1.53.0
       *
-      * Returns the root binding of this binding's hierarchy, see {@link topic:fccfb2eb41414f0792c165e69a878717
-      * Initialization and Read Requests}.
+      * Returns the root binding of this binding's hierarchy, see {@link https://ui5.sap.com/#/topic/fccfb2eb41414f0792c165e69a878717 Initialization and Read Requests}.
       *
       * @returns The root binding or `undefined` if this binding is unresolved (see {@link sap.ui.model.Binding#isResolved}).
       */
@@ -735,7 +737,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
       ] = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Returns the group ID of the binding that is used for update requests. The update group ID of the binding
       * is alternatively defined by
@@ -748,13 +750,13 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     def getUpdateGroupId(): String = js.native
     
     /**
-      * @SINCE 1.39.0
+      * @since 1.39.0
       *
       * Returns `true` if this binding or its dependent bindings have property changes, created entities, or
       * entity deletions which have not been sent successfully to the server. This function does not take the
       * execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}) into account.
       * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, unless
-      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation}
+      * (since 1.100.0) their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation }
       * has been prevented and {@link sap.ui.model.odata.v4.Context#isInactive} therefore returns `1`.
       *
       * Note: If this binding is relative, its data is cached separately for each parent context path. This method
@@ -766,14 +768,14 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     def hasPendingChanges(): Boolean = js.native
     def hasPendingChanges(
       /**
-      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters
-      * changeParameters}, {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh
-      * refresh} (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend
-      * suspend} because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since
-      * 1.97.0) or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding.
-      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding
-      * root binding} are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using
-      * the `$$ownRequest` parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
+      * Whether to ignore changes which will not be lost by APIs like {@link sap.ui.model.odata.v4.ODataListBinding#changeParameters changeParameters},
+      * {@link sap.ui.model.odata.v4.ODataListBinding#filter filter}, {@link sap.ui.model.odata.v4.ODataListBinding#refresh refresh }
+      * (since 1.100.0), {@link sap.ui.model.odata.v4.ODataListBinding#sort sort}, or {@link sap.ui.model.odata.v4.ODataListBinding#suspend suspend }
+      * because they relate to a {@link sap.ui.model.odata.v4.Context#isKeepAlive kept-alive} (since 1.97.0)
+      * or {@link sap.ui.model.odata.v4.Context#delete deleted} (since 1.108.0) context of this binding. Since
+      * 1.98.0, {@link sap.ui.model.odata.v4.Context#isTransient transient} contexts of a {@link #getRootBinding root binding }
+      * are treated as kept-alive by this flag. Since 1.99.0, the same happens for bindings using the `$$ownRequest`
+      * parameter (see {@link sap.ui.model.odata.v4.ODataModel#bindList}).
       */
     bIgnoreKeptAlive: Boolean
     ): Boolean = js.native
@@ -792,12 +794,11 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.69.0
+      * @since 1.69.0
       *
       * Returns a promise on the value for the given path relative to this binding. The function allows access
       * to the complete data the binding points to (if `sPath` is "") or any part thereof. The data is a JSON
-      * structure as described in "OData JSON Format Version 4.0". Note that the function clones the result. Modify values via {@link
-      * sap.ui.model.odata.v4.Context#setProperty}.
+      * structure as described in "OData JSON Format Version 4.0". Note that the function clones the result. Modify values via {@link sap.ui.model.odata.v4.Context#setProperty}.
       *
       * If you want {@link #requestObject} to read fresh data, call `oBinding.refresh()` first.
       * See:
@@ -813,10 +814,10 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     sPath: String): js.Promise[js.UndefOr[Any]] = js.native
     
     /**
-      * @SINCE 1.87.0
+      * @since 1.87.0
       *
-      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link
-      * #refresh} if you do not need the promise.
+      * Refreshes the binding and returns a promise to wait for it. See {@link #refresh} for details. Use {@link #refresh }
+      * if you do not need the promise.
       *
       * @returns A promise which resolves without a defined result when the refresh is finished and rejects with
       * an instance of `Error` if the refresh failed
@@ -828,7 +829,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     sGroupId: String): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.40.1
+      * @since 1.40.1
       *
       * Resets all pending changes of this binding, see {@link #hasPendingChanges}. Resets also invalid user
       * input.
@@ -839,7 +840,7 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     def resetChanges(): js.Promise[Any] = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Sets a parameter for an operation call.
       *
@@ -856,4 +857,34 @@ object sapUiModelOdataV4OdatacontextbindingMod {
     vValue: Any
     ): this.type = js.native
   }
+  
+  type ODataContextBinding$ChangeEventParameters = Binding$ChangeEventParameters
+  
+  type ODataContextBinding$DataReceivedEventParameters = Binding$DataReceivedEventParameters
+  
+  type ODataContextBinding$DataRequestedEventParameters = Binding$DataRequestedEventParameters
+  
+  trait ODataContextBinding$PatchCompletedEventParameters extends StObject
+  
+  trait ODataContextBinding$PatchSentEventParameters extends StObject
+  
+  type ODataContextBindingChangeEvent = typings.openui5.sapUiBaseEventMod.default[ODataContextBinding$ChangeEventParameters]
+  
+  type ODataContextBindingChangeEventParameters = ODataContextBinding$ChangeEventParameters
+  
+  type ODataContextBindingDataReceivedEvent = typings.openui5.sapUiBaseEventMod.default[ODataContextBinding$DataReceivedEventParameters]
+  
+  type ODataContextBindingDataReceivedEventParameters = ODataContextBinding$DataReceivedEventParameters
+  
+  type ODataContextBindingDataRequestedEvent = typings.openui5.sapUiBaseEventMod.default[ODataContextBinding$DataRequestedEventParameters]
+  
+  type ODataContextBindingDataRequestedEventParameters = ODataContextBinding$DataRequestedEventParameters
+  
+  type ODataContextBindingPatchCompletedEvent = typings.openui5.sapUiBaseEventMod.default[ODataContextBinding$PatchCompletedEventParameters]
+  
+  type ODataContextBindingPatchCompletedEventParameters = ODataContextBinding$PatchCompletedEventParameters
+  
+  type ODataContextBindingPatchSentEvent = typings.openui5.sapUiBaseEventMod.default[ODataContextBinding$PatchSentEventParameters]
+  
+  type ODataContextBindingPatchSentEventParameters = ODataContextBinding$PatchSentEventParameters
 }

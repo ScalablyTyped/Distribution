@@ -10,8 +10,8 @@ trait CIMGeometricEffectEnclosingPolygon
      with CIMGeometricEffectType {
   
   /**
-    * The method which specifies the way in which the polygon geometry is generated around the feature geometry.
-    */
+  			 * The method which specifies the way in which the polygon geometry is generated around the feature geometry.
+  			 */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectEnclosingPolygonMethod * / any */ String
   ] = js.undefined

@@ -10,39 +10,39 @@ trait CIMGradientStroke
      with CIMSymbolLayerType {
   
   /**
-    * The color scheme that is applied to the stroke.
-    */
+  			 * The color scheme that is applied to the stroke.
+  			 */
   var colorRamp: js.UndefOr[Any] = js.undefined
   
   /**
-    * How the gradient is applied along the stroke.
-    */
+  			 * How the gradient is applied along the stroke.
+  			 */
   var gradientMethod: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeMethod * / any */ String
   ] = js.undefined
   
   /**
-    * How much of the feature is covered by the color scheme. This is either a percentage of the total area which the color scheme spans or the number of page units from the starting point at which the gradient displays.
-    */
+  			 * How much of the feature is covered by the color scheme. This is either a percentage of the total area which the color scheme spans or the number of page units from the starting point at which the gradient displays.
+  			 */
   var gradientSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether GradientSize is applied with an absolute distance or a relative percentage.
-    */
+  			 * Whether GradientSize is applied with an absolute distance or a relative percentage.
+  			 */
   var gradientSizeUnits: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
   ] = js.undefined
   
   /**
-    * Whether the gradient is applied with discrete or continuous intervals.
-    */
+  			 * Whether the gradient is applied with discrete or continuous intervals.
+  			 */
   var gradientType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GradientStrokeType * / any */ String
   ] = js.undefined
   
   /**
-    * How many bands draw when the GradientType is set to Discrete.
-    */
+  			 * How many bands draw when the GradientType is set to Discrete.
+  			 */
   var interval: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

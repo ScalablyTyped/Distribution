@@ -151,7 +151,7 @@ object sapUiCoreLocaleMod {
     def getRegion(): String = js.native
     
     /**
-      * @SINCE 1.17.0
+      * @since 1.17.0
       * @deprecated (since 1.44) - use {@link sap.ui.core.Configuration#getSAPLogonLanguage} instead as that
       * class allows to configure an SAP Logon language.
       *

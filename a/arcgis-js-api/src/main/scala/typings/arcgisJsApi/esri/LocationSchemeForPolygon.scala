@@ -9,24 +9,24 @@ trait LocationSchemeForPolygon
      with LocationScheme {
   
   /**
-    * The color of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
-    */
+  		 * The color of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
+  		 */
   var color: Color_
   
   /**
-    * The opacity of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
-    */
+  		 * The opacity of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
+  		 */
   var opacity: Double
   
   /**
-    * Properties for defining the outline of the fill symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
-    */
+  		 * Properties for defining the outline of the fill symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
+  		 */
   var outline: LocationSchemeForPolygonOutline
 }
 object LocationSchemeForPolygon {

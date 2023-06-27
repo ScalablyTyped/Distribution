@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.HTMLCanvasElement
   - typings.std.HTMLVideoElement
   - typings.std.OffscreenCanvas
+  - typings.std.VideoFrame
 */
 trait TexImageSource extends StObject

@@ -109,7 +109,22 @@ type FormMethod = LowerCaseFormMethod
 
 type HTMLFormMethod = LowerCaseFormMethod | UpperCaseFormMethod
 
+type JsonArray = js.Array[JsonValue]
+
 type JsonFunction = js.Function2[/* data */ Any, /* init */ js.UndefOr[Double | ResponseInit], Response]
+
+type JsonPrimitive = String | Double | Boolean | Null
+
+/** 
+NOTE: Rewritten from type alias:
+{{{
+type JsonValue = @remix-run/router.@remix-run/router/dist/utils.JsonPrimitive | @remix-run/router.@remix-run/router/dist/utils.JsonObject | @remix-run/router.@remix-run/router/dist/utils.JsonArray
+}}}
+to avoid circular code involving: 
+- @remix-run/router.@remix-run/router/dist/utils.JsonArray
+- @remix-run/router.@remix-run/router/dist/utils.JsonValue
+*/
+type JsonValue = JsonPrimitive | JsonObject | Any
 
 type LazyRouteFunction[R /* <: AgnosticRouteObject */] = js.Function0[js.Promise[Omit[R, ImmutableRouteKey]]]
 

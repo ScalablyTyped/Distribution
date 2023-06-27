@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Corresponds to the <feComponentTransfer> element. */
+/**
+  * Corresponds to the <feComponentTransfer> element.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGFEComponentTransferElement)
+  */
 @js.native
 trait SVGFEComponentTransferElement
   extends StObject

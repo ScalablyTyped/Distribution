@@ -1,11 +1,11 @@
 package typings.openui5
 
-import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcFioriLibraryMod.ISideNavigationItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -171,13 +171,13 @@ object sapUiWebcFioriSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.SideNavigation` itself
       */
@@ -203,7 +203,7 @@ object sapUiWebcFioriSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -214,7 +214,7 @@ object sapUiWebcFioriSideNavigationMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.fiori.SideNavigation` itself
       */
@@ -254,13 +254,13 @@ object sapUiWebcFioriSideNavigationMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SideNavigationSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -268,7 +268,7 @@ object sapUiWebcFioriSideNavigationMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
@@ -278,10 +278,12 @@ object sapUiWebcFioriSideNavigationMod {
       * @returns Whether or not to prevent the default action
       */
     def fireSelectionChange(): Boolean = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): Boolean = js.native
+    mParameters: SideNavigation$SelectionChangeEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getCollapsed collapsed}.
@@ -327,8 +329,8 @@ object sapUiWebcFioriSideNavigationMod {
     def getItems(): js.Array[ISideNavigationItem] = js.native
     
     /**
-      * Checks for the provided `sap.ui.webc.fiori.ISideNavigationItem` in the aggregation {@link #getFixedItems
-      * fixedItems}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.webc.fiori.ISideNavigationItem` in the aggregation {@link #getFixedItems fixedItems}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -516,6 +518,33 @@ object sapUiWebcFioriSideNavigationMod {
     bCollapsed: Boolean): this.type = js.native
   }
   
+  trait SideNavigation$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * the clicked item.
+      */
+    var item: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object SideNavigation$SelectionChangeEventParameters {
+    
+    inline def apply(): SideNavigation$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SideNavigation$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigation$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    }
+  }
+  
+  type SideNavigationSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[SideNavigation$SelectionChangeEventParameters]
+  
+  type SideNavigationSelectionChangeEventParameters = SideNavigation$SelectionChangeEventParameters
+  
   trait SideNavigationSettings
     extends StObject
        with ControlSettings {
@@ -562,7 +591,12 @@ object sapUiWebcFioriSideNavigationMod {
     /**
       * Fired when the selection has changed via user interaction
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SideNavigation$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object SideNavigationSettings {
     
@@ -602,7 +636,9 @@ object sapUiWebcFioriSideNavigationMod {
       
       inline def setItemsVarargs(value: ISideNavigationItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SideNavigation$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
     }

@@ -12,20 +12,20 @@ object esriFormElementsInputsRadioButtonsInputMod {
   @JSImport("esri/form/elements/inputs/RadioButtonsInput", JSImport.Namespace)
   @js.native
   /**
-    * The `RadioButtonsInput` class defines the desired user interface for a radio button group.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html)
-    */
+  		 * The `RadioButtonsInput` class defines the desired user interface for a radio button group.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-RadioButtonsInput.html)
+  		 */
   open class ^ ()
     extends StObject
        with RadioButtonsInput {
     def this(properties: RadioButtonsInputProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

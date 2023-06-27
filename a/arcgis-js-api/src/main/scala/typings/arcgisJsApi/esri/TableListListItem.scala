@@ -9,60 +9,60 @@ trait TableListListItem
      with Identifiable {
   
   /**
-    * Indicates whether the actions panel is open in the TableList.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsOpen)
-    */
+  		 * Indicates whether the actions panel is open in the TableList.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsOpen)
+  		 */
   var actionsOpen: Boolean
   
   /**
-    * A nested 2-dimensional collection of actions that could be triggered on the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsSections)
-    */
+  		 * A nested 2-dimensional collection of actions that could be triggered on the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsSections)
+  		 */
   var actionsSections: Collection[Collection[ActionButton | ActionToggle]]
   
   /**
-    * The Error object returned if an error occurred.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#error)
-    */
+  		 * The Error object returned if an error occurred.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#error)
+  		 */
   val error: Error
   
   /**
-    * When `true`, hides the layer from the TableList instance.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#hidden)
-    */
+  		 * When `true`, hides the layer from the TableList instance.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#hidden)
+  		 */
   var hidden: Boolean
   
   /**
-    * The layer associated with the triggered action.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer)
-    */
+  		 * The layer associated with the triggered action.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer)
+  		 */
   var layer: Layer
   
   /**
-    * Value is `true` when the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer) is being published.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#publishing)
-    */
+  		 * Value is `true` when the [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer) is being published.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#publishing)
+  		 */
   val publishing: Boolean
   
   /**
-    * The title of the table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#title)
-    */
+  		 * The title of the table.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#title)
+  		 */
   var title: String
 }
 object TableListListItem {

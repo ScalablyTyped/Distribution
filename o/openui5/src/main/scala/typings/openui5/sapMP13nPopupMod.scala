@@ -1,7 +1,6 @@
 package typings.openui5
 
 import typings.openui5.anon.ContentWidth
-import typings.openui5.anon.`23`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.P13nPopupMode
 import typings.openui5.sapMLibraryMod.p13n.IContent
@@ -172,13 +171,13 @@ object sapMP13nPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.p13n.Popup` itself
       */
@@ -203,7 +202,7 @@ object sapMP13nPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -214,7 +213,7 @@ object sapMP13nPopupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.p13n.Popup` itself
       */
@@ -246,13 +245,13 @@ object sapMP13nPopupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ PopupCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -260,7 +259,7 @@ object sapMP13nPopupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -270,7 +269,7 @@ object sapMP13nPopupMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: `23`): this.type = js.native
+    mParameters: Popup$CloseEventParameters): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getAdditionalButtons additionalButtons}.
@@ -498,6 +497,33 @@ object sapMP13nPopupMod {
     sWarningText: String): this.type = js.native
   }
   
+  trait Popup$CloseEventParameters extends StObject {
+    
+    /**
+      * The corresponding reason for closing the dialog (Ok & Cancel).
+      */
+    var reason: js.UndefOr[String] = js.undefined
+  }
+  object Popup$CloseEventParameters {
+    
+    inline def apply(): Popup$CloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popup$CloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popup$CloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    }
+  }
+  
+  type PopupCloseEvent = typings.openui5.sapUiBaseEventMod.default[Popup$CloseEventParameters]
+  
+  type PopupCloseEventParameters = Popup$CloseEventParameters
+  
   trait PopupSettings
     extends StObject
        with ControlSettings {
@@ -512,7 +538,12 @@ object sapMP13nPopupMod {
     /**
       * This event is fired after the dialog has been closed.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popup$CloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Describes the corresponding popup mode, see also {@link sap.m.P13nPopupMode}.
@@ -565,7 +596,7 @@ object sapMP13nPopupMod {
       
       inline def setAdditionalButtonsVarargs(value: typings.openui5.sapMButtonMod.default*): Self = StObject.set(x, "additionalButtons", js.Array(value*))
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Popup$CloseEventParameters] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       

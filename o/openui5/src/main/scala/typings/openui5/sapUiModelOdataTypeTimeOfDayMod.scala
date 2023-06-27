@@ -113,7 +113,7 @@ object sapUiModelOdataTypeTimeOfDayMod {
     extends typings.openui5.sapUiModelOdataTypeOdatatypeMod.default {
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Formats the given value to the given target type.
       *
@@ -126,14 +126,14 @@ object sapUiModelOdataTypeTimeOfDayMod {
     sValue: String,
       /**
       * The target type, may be "any", "object" (since 1.69.0), "string", or a type with one of these types as
-      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
       * for more information
       */
     sTargetType: String
     ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
-      * @SINCE 1.111.0
+      * @since 1.111.0
       *
       * Gets the model value according to this type's constraints and format options for the given date object
       * representing a time. Validates the resulting value against the constraints of this type instance.
@@ -162,13 +162,13 @@ object sapUiModelOdataTypeTimeOfDayMod {
     vValue: String,
       /**
       * The source type (the expected type of `sValue`), must be "string", "object" (since 1.69.0) or a type
-      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link
-      * sap.ui.model.odata.type} for more information.
+      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
       */
     sSourceType: String
     ): String = js.native
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Parses the given value, which is expected to be of the given type, to a string with an OData V4 Edm.TimeOfDay
       * value.
@@ -183,14 +183,14 @@ object sapUiModelOdataTypeTimeOfDayMod {
     vValue: js.Date,
       /**
       * The source type (the expected type of `sValue`), must be "string", "object" (since 1.69.0) or a type
-      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link
-      * sap.ui.model.odata.type} for more information.
+      * with one of these types as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type }
+      * for more information.
       */
     sSourceType: String
     ): String = js.native
     
     /**
-      * @SINCE 1.37.0
+      * @since 1.37.0
       *
       * Validates the given value in model representation and meets the type's constraints.
       */

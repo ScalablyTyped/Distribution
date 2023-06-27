@@ -302,17 +302,17 @@ object Rotator {
   trait Model extends StObject {
     
     /** Turns on keyboard interaction with the Rotator items. You must set this property to true to access the following keyboard shortcuts:
-      * @Default {true}
+      * @default {true}
       */
     var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the animationSpeed of slide transition.
-      * @Default {600}
+      * @default {600}
       */
     var animationSpeed: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the animationType type for the Rotator Item. animationType options include slide, fastSlide, slowSlide, and other custom easing animationTypes.
-      * @Default {slide}
+      * @default {slide}
       */
     var animationType: js.UndefOr[String] = js.undefined
     
@@ -321,7 +321,7 @@ object Rotator {
     var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Enables the circular mode item rotation.
-      * @Default {true}
+      * @default {true}
       */
     var circularMode: js.UndefOr[Boolean] = js.undefined
     
@@ -334,12 +334,12 @@ object Rotator {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specify the list of data which contains a set of data fields. Each data value is used to render an item for the Rotator.
-      * @Default {null}
+      * @default {null}
       */
     var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Sets the delay between the Rotator Items move after the slide transition.
-      * @Default {500}
+      * @default {500}
       */
     var delay: js.UndefOr[Double] = js.undefined
     
@@ -348,27 +348,27 @@ object Rotator {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the number of Rotator Items to be displayed.
-      * @Default {1}
+      * @default {1}
       */
     var displayItemsCount: js.UndefOr[String | Double] = js.undefined
     
     /** Rotates the Rotator Items continuously without user interference.
-      * @Default {false}
+      * @default {false}
       */
     var enableAutoPlay: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies right to left transition of slides.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Rotator control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Defines mapping fields for the data items of the Rotator.
-      * @Default {null}
+      * @default {null}
       */
     var fields: js.UndefOr[Fields] = js.undefined
     
@@ -377,18 +377,18 @@ object Rotator {
     var frameSpace: js.UndefOr[String | Double] = js.undefined
     
     /** Resizes the Rotator when the browser is resized.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the number of Rotator Items to navigate on a single click (next/previous/play buttons). The navigateSteps property value must be less than or equal to the
       * displayItemsCount property value.
-      * @Default {1}
+      * @default {1}
       */
     var navigateSteps: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the orientation for the Rotator control, that is, whether it must be rendered horizontally or vertically. See Orientation
-      * @Default {ej.Orientation.Horizontal}
+      * @default {ej.Orientation.Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
@@ -397,39 +397,39 @@ object Rotator {
     var pagerClick: js.UndefOr[js.Function1[/* e */ PagerClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the position of the showPager in the Rotator Item. See PagerPosition
-      * @Default {outside}
+      * @default {outside}
       */
     var pagerPosition: js.UndefOr[String | PagerPosition] = js.undefined
     
     /** Retrieves data from remote data. This property is applicable only when a remote data source is used.
-      * @Default {null}
+      * @default {null}
       */
     var query: js.UndefOr[String] = js.undefined
     
     /** If the Rotator Item is an image, you can specify a caption for the Rotator Item. The caption text for each Rotator Item must be set by using the title attribute of the respective
       * tag. The caption cannot be displayed if multiple Rotator Items are present.
-      * @Default {false}
+      * @default {false}
       */
     var showCaption: js.UndefOr[Boolean] = js.undefined
     
     /** Turns on or off the slide buttons (next and previous) in the Rotator Items. Slide buttons are used to navigate the Rotator Items.
-      * @Default {true}
+      * @default {true}
       */
     var showNavigateButton: js.UndefOr[Boolean] = js.undefined
     
     /** Turns on or off the pager support in the Rotator control. The Pager is used to navigate the Rotator Items.
-      * @Default {true}
+      * @default {true}
       */
     var showPager: js.UndefOr[Boolean] = js.undefined
     
     /** Enable play / pause button on rotator.
-      * @Default {false}
+      * @default {false}
       */
     var showPlayButton: js.UndefOr[Boolean] = js.undefined
     
     /** Turns on or off thumbnail support in the Rotator control. Thumbnail is used to navigate between slides. Thumbnail supports only single slide transition You must specify the source
       * for thumbnail elements through the thumbnailSourceID property.
-      * @Default {false}
+      * @default {false}
       */
     var showThumbnail: js.UndefOr[Boolean] = js.undefined
     
@@ -446,7 +446,7 @@ object Rotator {
     var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Sets the index of the slide that must be displayed first.
-      * @Default {0}
+      * @default {0}
       */
     var startIndex: js.UndefOr[String | Double] = js.undefined
     
@@ -455,17 +455,17 @@ object Rotator {
     var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.undefined
     
     /** Pause the auto play while hover on the rotator content.
-      * @Default {false}
+      * @default {false}
       */
     var stopOnHover: js.UndefOr[Boolean] = js.undefined
     
     /** The template to display the Rotator widget with customized appearance.
-      * @Default {null}
+      * @default {null}
       */
     var template: js.UndefOr[String] = js.undefined
     
     /** The templateId enables to bind multiple customized template items in Rotator.
-      * @Default {null}
+      * @default {null}
       */
     var templateId: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -474,7 +474,7 @@ object Rotator {
     var thumbItemClick: js.UndefOr[js.Function1[/* e */ ThumbItemClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the source for thumbnail elements.
-      * @Default {null}
+      * @default {null}
       */
     var thumbnailSourceID: js.UndefOr[Any] = js.undefined
   }

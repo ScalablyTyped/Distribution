@@ -1,5 +1,6 @@
 package typings.babelTypes.mod
 
+import typings.babelTypes.babelTypesStrings.`await using`
 import typings.babelTypes.babelTypesStrings.`using`
 import typings.babelTypes.babelTypesStrings.`var`
 import typings.babelTypes.babelTypesStrings.const
@@ -117,7 +118,7 @@ object Declaration {
   }
   
   inline def ExportAllDeclaration_(source: StringLiteral_): typings.babelTypes.mod.ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, attributes = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportAllDeclaration_]
   }
@@ -129,7 +130,7 @@ object Declaration {
   }
   
   inline def ExportNamedDeclaration_(specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]): typings.babelTypes.mod.ExportNamedDeclaration_ = {
-    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any], assertions = null, declaration = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, source = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any], assertions = null, attributes = null, declaration = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, source = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportNamedDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportNamedDeclaration_]
   }
@@ -149,7 +150,7 @@ object Declaration {
     source: StringLiteral_,
     specifiers: js.Array[ImportSpecifier_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_]
   ): typings.babelTypes.mod.ImportDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, module = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any], assertions = null, attributes = null, end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, module = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ImportDeclaration_]
   }
@@ -207,7 +208,7 @@ object Declaration {
     __obj.asInstanceOf[typings.babelTypes.mod.TypeAlias_]
   }
   
-  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using`): typings.babelTypes.mod.VariableDeclaration_ = {
+  inline def VariableDeclaration_(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const | `using` | (`await using`)): typings.babelTypes.mod.VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.VariableDeclaration_]

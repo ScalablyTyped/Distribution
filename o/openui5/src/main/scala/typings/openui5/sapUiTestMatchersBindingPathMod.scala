@@ -115,7 +115,7 @@ object sapUiTestMatchersBindingPathMod {
     def getPath(): Any = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Gets current value of property {@link #getPropertyPath propertyPath}.
       *
@@ -128,7 +128,7 @@ object sapUiTestMatchersBindingPathMod {
     def getPropertyPath(): Any = js.native
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * Gets current value of property {@link #getValue value}.
       *
@@ -168,7 +168,7 @@ object sapUiTestMatchersBindingPathMod {
     oPath: Any): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Sets a new value for property {@link #getPropertyPath propertyPath}.
       *
@@ -186,7 +186,7 @@ object sapUiTestMatchersBindingPathMod {
     oPropertyPath: Any): this.type = js.native
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * Sets a new value for property {@link #getValue value}.
       *
@@ -218,7 +218,7 @@ object sapUiTestMatchersBindingPathMod {
     var path: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * The value of the binding property path that is used for matching. If (context) path is also set, propertyPath
       * will be assumed to be relative to the binding context path As of version 1.81, it can also be a regular
@@ -227,7 +227,7 @@ object sapUiTestMatchersBindingPathMod {
     var propertyPath: js.UndefOr[Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.86
+      * @since 1.86
       *
       * value of a static binding property. Use this only for {@link sap.ui.model.StaticBinding}
       */

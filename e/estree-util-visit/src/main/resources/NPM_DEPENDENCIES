@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "estree-util-visit" : "1.2.0"
+      "estree-util-visit" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "estree-util-visit" : "1.2.0"
+      "estree-util-visit" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

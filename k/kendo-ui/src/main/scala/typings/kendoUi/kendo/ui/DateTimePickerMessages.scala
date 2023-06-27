@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateTimePickerMessages extends StObject {
   
+  var dateInput: js.UndefOr[DateInputMessages] = js.undefined
+  
   var weekColumnHeader: js.UndefOr[String] = js.undefined
 }
 object DateTimePickerMessages {
@@ -17,6 +19,10 @@ object DateTimePickerMessages {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DateTimePickerMessages] (val x: Self) extends AnyVal {
+    
+    inline def setDateInput(value: DateInputMessages): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
+    
+    inline def setDateInputUndefined: Self = StObject.set(x, "dateInput", js.undefined)
     
     inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     

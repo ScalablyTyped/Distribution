@@ -777,41 +777,41 @@ trait MessageRead
   /**
     * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
     *
-    * For more information around using this API, see the
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
-    *
-    * **Note**: This method is not supported in Outlook on iOS or Android.
+    * For more information around using this API, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
     *
     * @remarks
-    * [Api set: Mailbox 1.8]
+    * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
     *
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+    *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
     */
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
-    * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
+    * Gets the properties of an appointment or message in a shared folder or shared mailbox.
     *
-    * For more information around using this API, see the
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
-    *
-    * **Note**: This method is not supported in Outlook on iOS or Android.
+    * For more information around using this API, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
     *
     * @remarks
-    * [Api set: Mailbox 1.8]
+    * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
     *
+    * **Note**: This method is not supported in Outlook on iOS or Android.
+    *
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-    *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+    *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
     */
   def getSharedPropertiesAsync(
     options: AsyncContextOptions,

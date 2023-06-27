@@ -18,8 +18,8 @@ object sapMSliderTooltipBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Control#constructor
-    * sap.ui.core.Control} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.Control#constructor sap.ui.core.Control }
+    * can be used.
     */
   open class default () extends SliderTooltipBase {
     def this(/**
@@ -124,7 +124,7 @@ object sapMSliderTooltipBaseMod {
     extends typings.openui5.sapUiCoreControlMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets the value of the tooltip.
       *
@@ -133,7 +133,7 @@ object sapMSliderTooltipBaseMod {
     def getValue(): float = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Called once the value of the Slider is changed by interaction.
       */

@@ -12,8 +12,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsUniqueListMod extends Shor
   val default: IsUniqueList = js.native
   
   /**
-    * @SINCE 1.81
-    * @EXPERIMENTAL - 1.81
+    * @since 1.81
+    * @experimental - 1.81
     *
     * Validates if the provided list contains no duplicates.
     */

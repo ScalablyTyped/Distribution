@@ -25,7 +25,7 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
-    * #### Example encrypting a secret using Node.js
+    * **Example encrypting a secret using Node.js**
     *
     * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
@@ -50,7 +50,7 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     * });
     * ```
     *
-    * #### Example encrypting a secret using Python
+    * **Example encrypting a secret using Python**
     *
     * Encrypt your secret using [pynacl](https://pynacl.readthedocs.io/en/latest/public/#nacl-public-sealedbox) with Python 3.
     *
@@ -66,7 +66,7 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     *   return b64encode(encrypted).decode("utf-8")
     * ```
     *
-    * #### Example encrypting a secret using C#
+    * **Example encrypting a secret using C#**
     *
     * Encrypt your secret using the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core/) package.
     *
@@ -79,7 +79,7 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     * Console.WriteLine(Convert.ToBase64String(sealedPublicKeyBox));
     * ```
     *
-    * #### Example encrypting a secret using Ruby
+    * **Example encrypting a secret using Ruby**
     *
     * Encrypt your secret using the [rbnacl](https://github.com/RubyCrypto/rbnacl) gem.
     *
@@ -97,14 +97,14 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     * puts Base64.strict_encode64(encrypted_secret)
     * ```
     */
-  var put: RequestBodyContentApplicationjson163
+  var put: RequestBodyContentApplicationjson191
 }
 object DeleteParametersPathRepoSecretnameResponses {
   
   inline def apply(
     delete: ParametersPathRepoSecretnameResponses,
     get: ParametersPathRepoSecretname,
-    put: RequestBodyContentApplicationjson163
+    put: RequestBodyContentApplicationjson191
   ): DeleteParametersPathRepoSecretnameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathRepoSecretnameResponses]
@@ -117,6 +117,6 @@ object DeleteParametersPathRepoSecretnameResponses {
     
     inline def setGet(value: ParametersPathRepoSecretname): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjson163): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjson191): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

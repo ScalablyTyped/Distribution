@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ChangedItem
-import typings.openui5.anon.`20`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMComboBoxBaseMod.ComboBoxBaseSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -166,13 +164,13 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiComboBox` itself
       */
@@ -199,7 +197,7 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -210,7 +208,7 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiComboBox` itself
       */
@@ -232,13 +230,13 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit]
     ): this.type = js.native
     def attachSelectionFinish(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiComboBox` itself
       */
@@ -264,7 +262,7 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit]
     ): this.type = js.native
     def attachSelectionFinish(
       /**
@@ -275,7 +273,7 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.MultiComboBox` itself
       */
@@ -294,13 +292,13 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -319,13 +317,13 @@ object sapMMultiComboBoxMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit]
     ): this.type = js.native
     def detachSelectionFinish(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MultiComboBoxSelectionFinishEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -333,30 +331,34 @@ object sapMMultiComboBoxMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ChangedItem): this.type = js.native
+    mParameters: MultiComboBox$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionFinish selectionFinish} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionFinish(): this.type = js.native
-    def fireSelectionFinish(/**
+    def fireSelectionFinish(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: `20`): this.type = js.native
+    mParameters: MultiComboBox$SelectionFinishEventParameters
+    ): this.type = js.native
     
     /**
       * Retrieves the selected item objects from the association named `selectedItems`.
@@ -399,21 +401,21 @@ object sapMMultiComboBoxMod {
     oItem: typings.openui5.sapUiCoreItemMod.default): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This hook method is called after the MultiComboBox's Pop-up is rendered.
       */
     def onAfterRenderingPicker(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This hook method is called before the MultiComboBox is rendered.
       */
     def onBeforeRendering(): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Handles control click event.
       */
@@ -501,6 +503,91 @@ object sapMMultiComboBoxMod {
     bForceListSync: Boolean): typings.openui5.sapMDialogMod.default | typings.openui5.sapMPopoverMod.default = js.native
   }
   
+  trait MultiComboBox$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * Item which selection is changed
+      */
+    var changedItem: js.UndefOr[typings.openui5.sapUiCoreItemMod.default] = js.undefined
+    
+    /**
+      * Array of items whose selection has changed.
+      */
+    var changedItems: js.UndefOr[js.Array[typings.openui5.sapUiCoreItemMod.default]] = js.undefined
+    
+    /**
+      * Indicates whether the select all action is triggered or not.
+      */
+    var selectAll: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Selection state: true if item is selected, false if item is not selected
+      */
+    var selected: js.UndefOr[Boolean] = js.undefined
+  }
+  object MultiComboBox$SelectionChangeEventParameters {
+    
+    inline def apply(): MultiComboBox$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiComboBox$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiComboBox$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setChangedItem(value: typings.openui5.sapUiCoreItemMod.default): Self = StObject.set(x, "changedItem", value.asInstanceOf[js.Any])
+      
+      inline def setChangedItemUndefined: Self = StObject.set(x, "changedItem", js.undefined)
+      
+      inline def setChangedItems(value: js.Array[typings.openui5.sapUiCoreItemMod.default]): Self = StObject.set(x, "changedItems", value.asInstanceOf[js.Any])
+      
+      inline def setChangedItemsUndefined: Self = StObject.set(x, "changedItems", js.undefined)
+      
+      inline def setChangedItemsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "changedItems", js.Array(value*))
+      
+      inline def setSelectAll(value: Boolean): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+      
+      inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
+      
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    }
+  }
+  
+  trait MultiComboBox$SelectionFinishEventParameters extends StObject {
+    
+    /**
+      * The selected items which are selected after list box has been closed.
+      */
+    var selectedItems: js.UndefOr[js.Array[typings.openui5.sapUiCoreItemMod.default]] = js.undefined
+  }
+  object MultiComboBox$SelectionFinishEventParameters {
+    
+    inline def apply(): MultiComboBox$SelectionFinishEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MultiComboBox$SelectionFinishEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiComboBox$SelectionFinishEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItems(value: js.Array[typings.openui5.sapUiCoreItemMod.default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      
+      inline def setSelectedItemsVarargs(value: typings.openui5.sapUiCoreItemMod.default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    }
+  }
+  
+  type MultiComboBoxSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionChangeEventParameters]
+  
+  type MultiComboBoxSelectionChangeEventParameters = MultiComboBox$SelectionChangeEventParameters
+  
+  type MultiComboBoxSelectionFinishEvent = typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionFinishEventParameters]
+  
+  type MultiComboBoxSelectionFinishEventParameters = MultiComboBox$SelectionFinishEventParameters
+  
   trait MultiComboBoxSettings
     extends StObject
        with ComboBoxBaseSettings {
@@ -522,12 +609,22 @@ object sapMMultiComboBoxMod {
       * Event is fired when selection of an item is changed. Note: please do not use the "change" event inherited
       * from sap.m.InputBase
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when user has finished a selection of items in a list box and list box has been closed.
       */
-    var selectionFinish: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionFinish: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionFinishEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines if the select all checkbox is visible on top of suggestions.
@@ -560,11 +657,15 @@ object sapMMultiComboBoxMod {
       
       inline def setSelectedKeysVarargs(value: String*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
-      inline def setSelectionFinish(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionFinish", js.Any.fromFunction1(value))
+      inline def setSelectionFinish(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[MultiComboBox$SelectionFinishEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionFinish", js.Any.fromFunction1(value))
       
       inline def setSelectionFinishUndefined: Self = StObject.set(x, "selectionFinish", js.undefined)
       

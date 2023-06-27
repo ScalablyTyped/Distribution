@@ -9,10 +9,10 @@ trait ClassedColorSliderViewModelProperties
      with SmartMappingSliderViewModelProperties {
   
   /**
-    * An array of class breaks with associated colors.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
-    */
+  		 * An array of class breaks with associated colors.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html#breaks)
+  		 */
   var breaks: js.UndefOr[js.Array[ClassedColorSliderViewModelBreaks]] = js.undefined
 }
 object ClassedColorSliderViewModelProperties {

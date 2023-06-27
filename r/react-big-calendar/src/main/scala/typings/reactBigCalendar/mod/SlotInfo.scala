@@ -13,12 +13,15 @@ trait SlotInfo extends StObject {
   
   var action: select | click | doubleClick
   
+  /** For "select" action */
   var bounds: js.UndefOr[Bottom] = js.undefined
   
+  /** For "click" or "doubleClick" actions */
   var box: js.UndefOr[ClientX] = js.undefined
   
   var end: js.Date
   
+  /** For "TimeGrid" views */
   var resourceId: js.UndefOr[Double | String] = js.undefined
   
   var slots: js.Array[js.Date]

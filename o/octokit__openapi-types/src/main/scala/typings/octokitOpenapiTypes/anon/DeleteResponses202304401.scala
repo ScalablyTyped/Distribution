@@ -24,7 +24,7 @@ trait DeleteResponses202304401 extends StObject {
     *
     * GitHub Apps must have read access to the `codespaces` repository permission to use this endpoint.
     */
-  var get: ParametersPath378
+  var get: ParametersPath453
   
   /**
     * Update a codespace for the authenticated user
@@ -36,11 +36,11 @@ trait DeleteResponses202304401 extends StObject {
     *
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
-  var patch: Responses200Content89
+  var patch: Responses200Content103
 }
 object DeleteResponses202304401 {
   
-  inline def apply(delete: Responses202304401, get: ParametersPath378, patch: Responses200Content89): DeleteResponses202304401 = {
+  inline def apply(delete: Responses202304401, get: ParametersPath453, patch: Responses200Content103): DeleteResponses202304401 = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResponses202304401]
   }
@@ -50,8 +50,8 @@ object DeleteResponses202304401 {
     
     inline def setDelete(value: Responses202304401): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPath378): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPath453): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: Responses200Content89): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200Content103): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

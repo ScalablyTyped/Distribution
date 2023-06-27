@@ -321,6 +321,7 @@ object mod {
     - typings.turndown.turndownStrings.s
     - typings.turndown.turndownStrings.samp
     - typings.turndown.turndownStrings.script
+    - typings.turndown.turndownStrings.search
     - typings.turndown.turndownStrings.section
     - typings.turndown.turndownStrings.select
     - typings.turndown.turndownStrings.slot

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__dom-ready
 
-Typings are for version 3.33.0
+Typings are for version 3.36.0
 
 ## Library description:
 Execute callback after the DOM is loaded.

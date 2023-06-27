@@ -1,17 +1,17 @@
 package typings.sentryReplay.anon
 
-import typings.std.Node
+import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Target extends StObject {
   
-  var target: Node
+  var target: EventTarget
 }
 object Target {
   
-  inline def apply(target: Node): Target = {
+  inline def apply(target: EventTarget): Target = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
@@ -19,6 +19,6 @@ object Target {
   @scala.inline
   implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
-    inline def setTarget(value: Node): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

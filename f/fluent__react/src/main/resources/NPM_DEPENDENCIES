@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluent/react" : "0.15.0"
+      "@fluent/react" : "0.15.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluent/react" : "0.15.0"
+      "@fluent/react" : "0.15.1"
     }
   ],
   "compile-devDependencies" : [

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryParameterValues extends StObject {
   
   /**
-    * The parameter name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
-    */
+  		 * The parameter name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
+  		 */
   var name: String
   
   /**
-    * Single value or array of values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
-    */
+  		 * Single value or array of values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#parameterValues)
+  		 */
   var value: String | (js.Array[js.Date | Double | String]) | Double | js.Date
 }
 object QueryParameterValues {

@@ -182,6 +182,12 @@ object babelParserStrings {
   inline def importAssertions: importAssertions = "importAssertions".asInstanceOf[importAssertions]
   
   @js.native
+  sealed trait importAttributes
+    extends StObject
+       with _Plugin
+  inline def importAttributes: importAttributes = "importAttributes".asInstanceOf[importAttributes]
+  
+  @js.native
   sealed trait importMeta
     extends StObject
        with _Plugin

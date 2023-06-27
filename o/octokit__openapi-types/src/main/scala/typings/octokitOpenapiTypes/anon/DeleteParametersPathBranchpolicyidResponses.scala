@@ -28,14 +28,14 @@ trait DeleteParametersPathBranchpolicyidResponses extends StObject {
     *
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
-  var put: Responses200Content241
+  var put: Responses200Content284
 }
 object DeleteParametersPathBranchpolicyidResponses {
   
   inline def apply(
     delete: ParametersPathBranchpolicyidResponses,
     get: ParametersPathBranchpolicyid,
-    put: Responses200Content241
+    put: Responses200Content284
   ): DeleteParametersPathBranchpolicyidResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathBranchpolicyidResponses]
@@ -48,6 +48,6 @@ object DeleteParametersPathBranchpolicyidResponses {
     
     inline def setGet(value: ParametersPathBranchpolicyid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses200Content241): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses200Content284): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

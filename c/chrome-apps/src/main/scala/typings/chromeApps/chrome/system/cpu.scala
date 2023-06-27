@@ -47,7 +47,7 @@ object cpu {
     var processors: js.Array[ProcessorInfo]
     
     /**
-      * @requires(CrOS) Currently supported on Chrome OS only.
+      * @requires Currently supported on Chrome OS only.
       * @description
       * List of CPU temperature readings from each thermal zone of the CPU.
       * Temperatures are in degrees Celsius.

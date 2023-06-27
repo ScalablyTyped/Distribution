@@ -10,17 +10,17 @@ trait FunctionNode
      with SQLNode {
   
   /**
-    * Function arguments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#FunctionNode)
-    */
+  		 * Function arguments.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#FunctionNode)
+  		 */
   var args: ListNode
   
   /**
-    * Name of the SQL function.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#FunctionNode)
-    */
+  		 * Name of the SQL function.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#FunctionNode)
+  		 */
   var name: String
   
   var `type`: function

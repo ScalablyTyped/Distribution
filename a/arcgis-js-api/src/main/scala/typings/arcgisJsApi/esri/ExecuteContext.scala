@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteContext extends StObject {
   
   /**
-    * The expected spatial reference of input geometries in geometry functions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ExecuteContext)
-    */
+  		 * The expected spatial reference of input geometries in geometry functions.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-arcade.html#ExecuteContext)
+  		 */
   var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 object ExecuteContext {

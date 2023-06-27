@@ -25,7 +25,6 @@ Instantiable0[Any] {
     * @return {nlobjSearchColumn[]}
     *
     * @method
-    * @memberOf nlobjSearchResult
     *
     * @since 2009.2
     */
@@ -34,7 +33,6 @@ Instantiable0[Any] {
   /**
     * return the internalId for the record returned in this row.
     * @method
-    * @memberOf nlobjSearchResult
     * @return {int}
     * @return
     */
@@ -43,7 +41,6 @@ Instantiable0[Any] {
   /**
     * return the recordtype for the record returned in this row.
     * @method
-    * @memberOf nlobjSearchResult
     * @return {string}
     * @return
     */
@@ -57,7 +54,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchResult
     *
     * @since 2008.1
     * @param name
@@ -75,7 +71,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjSearchResult
     *
     * @since 2008.1
     * @param name

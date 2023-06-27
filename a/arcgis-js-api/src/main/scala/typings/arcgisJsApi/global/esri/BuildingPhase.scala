@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.BuildingPhase")
 @js.native
 /**
-  * BuildingPhase provides information for the construction phase filter, such as the value selected by the user or the minimum and maximum allowed values.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingPhase.html)
-  */
+		 * BuildingPhase provides information for the construction phase filter, such as the value selected by the user or the minimum and maximum allowed values.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer-BuildingPhase.html)
+		 */
 open class BuildingPhase ()
   extends StObject
      with typings.arcgisJsApi.esri.BuildingPhase {

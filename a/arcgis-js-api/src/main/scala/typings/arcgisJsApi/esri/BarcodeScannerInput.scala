@@ -14,9 +14,9 @@ trait BarcodeScannerInput
      with inputsInput {
   
   /**
-    * The type of form element input.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-BarcodeScannerInput.html#type)
-    */
+  		 * The type of form element input.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-BarcodeScannerInput.html#type)
+  		 */
   val `type`: `barcode-scanner` = js.native
 }

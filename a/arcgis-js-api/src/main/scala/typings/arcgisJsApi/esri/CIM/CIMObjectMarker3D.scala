@@ -10,46 +10,46 @@ trait CIMObjectMarker3D
      with CIMSymbolLayerType {
   
   /**
-    * The array of levels of detail.
-    */
+  			 * The array of levels of detail.
+  			 */
   var LODs: js.UndefOr[js.Array[CIMObjectMarker3DLOD]] = js.undefined
   
   /**
-    * The marker depth.
-    */
+  			 * The marker depth.
+  			 */
   var depth: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether the model can be exported.
-    */
+  			 * A value indicating whether the model can be exported.
+  			 */
   var isRestricted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The URI of the binary reference containing the "web resource".
-    */
+  			 * The URI of the binary reference containing the "web resource".
+  			 */
   var modelURI: js.UndefOr[String] = js.undefined
   
   /**
-    * The representative image of the marker.
-    */
+  			 * The representative image of the marker.
+  			 */
   var thumbnail: js.UndefOr[String] = js.undefined
   
   /**
-    * The color which defines the color that is applied to the marker.
-    */
+  			 * The color which defines the color that is applied to the marker.
+  			 */
   var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
   var type_CIMObjectMarker3D: typings.arcgisJsApi.arcgisJsApiStrings.CIMObjectMarker3D
   
   /**
-    * A value indicating whether or not to ignore the marker anchor point and insert the model directly at the data point.
-    */
+  			 * A value indicating whether or not to ignore the marker anchor point and insert the model directly at the data point.
+  			 */
   var useAnchorPoint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The marker width.
-    */
+  			 * The marker width.
+  			 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object CIMObjectMarker3D {

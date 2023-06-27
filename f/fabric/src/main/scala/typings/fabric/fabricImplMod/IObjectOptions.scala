@@ -20,7 +20,6 @@ trait IObjectOptions extends StObject {
     * with oCoords but they do not need to be updated when zoom or panning change.
     * The coordinates get updated with @method setCoords.
     * You can calculate them without updating with @method calcCoords(true);
-    * @memberOf fabric.Object.prototype
     */
   var aCoords: js.UndefOr[Tr] = js.undefined
   
@@ -306,7 +305,6 @@ trait IObjectOptions extends StObject {
     * skewX, skewY, angle, strokeWidth, viewportTransform, top, left, padding.
     * The coordinates get updated with @method setCoords.
     * You can calculate them without updating with @method calcCoords;
-    * @memberOf fabric.Object.prototype
     */
   var oCoords: js.UndefOr[Ml] = js.undefined
   

@@ -131,7 +131,7 @@ object sapMMessageItemMod {
     def destroyLink(): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getActiveTitle activeTitle}.
       *
@@ -234,7 +234,7 @@ object sapMMessageItemMod {
     def getType(): MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getActiveTitle activeTitle}.
       *
@@ -399,7 +399,7 @@ object sapMMessageItemMod {
        with ItemSettings {
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Defines whether the title of the item will be interactive.
       */

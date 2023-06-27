@@ -11,24 +11,24 @@ sealed trait DominantSizeAxis extends StObject
 object DominantSizeAxis extends StObject {
   
   /**
-    * Dominant on the X axis.
-    */
+  			 * Dominant on the X axis.
+  			 */
   @js.native
   sealed trait X
     extends StObject
        with DominantSizeAxis
   
   /**
-    * Dominant on the Y axis.
-    */
+  			 * Dominant on the Y axis.
+  			 */
   @js.native
   sealed trait Y
     extends StObject
        with DominantSizeAxis
   
   /**
-    * Dominant on the Z axis.
-    */
+  			 * Dominant on the Z axis.
+  			 */
   @js.native
   sealed trait Z
     extends StObject

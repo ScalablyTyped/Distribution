@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.in
   - typings.convertUnits.convertUnitsStrings.`ft-us`
   - typings.convertUnits.convertUnitsStrings.ft
+  - typings.convertUnits.convertUnitsStrings.yd
   - typings.convertUnits.convertUnitsStrings.mi
   - typings.convertUnits.convertUnitsStrings.mm2
   - typings.convertUnits.convertUnitsStrings.cm2
@@ -127,6 +128,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.sSlashm
   - typings.convertUnits.convertUnitsStrings.minSlashkm
   - typings.convertUnits.convertUnitsStrings.sSlashft
+  - typings.convertUnits.convertUnitsStrings.minSlashmi
   - typings.convertUnits.convertUnitsStrings.Pa
   - typings.convertUnits.convertUnitsStrings.hPa
   - typings.convertUnits.convertUnitsStrings.kPa
@@ -459,6 +461,8 @@ object Unit {
   
   inline def minSlashkm: typings.convertUnits.convertUnitsStrings.minSlashkm = "min/km".asInstanceOf[typings.convertUnits.convertUnitsStrings.minSlashkm]
   
+  inline def minSlashmi: typings.convertUnits.convertUnitsStrings.minSlashmi = "min/mi".asInstanceOf[typings.convertUnits.convertUnitsStrings.minSlashmi]
+  
   inline def ml: typings.convertUnits.convertUnitsStrings.ml = "ml".asInstanceOf[typings.convertUnits.convertUnitsStrings.ml]
   
   inline def mlSlashs: typings.convertUnits.convertUnitsStrings.mlSlashs = "ml/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.mlSlashs]
@@ -526,6 +530,8 @@ object Unit {
   inline def tspSlashs: typings.convertUnits.convertUnitsStrings.tspSlashs = "tsp/s".asInstanceOf[typings.convertUnits.convertUnitsStrings.tspSlashs]
   
   inline def week: typings.convertUnits.convertUnitsStrings.week = "week".asInstanceOf[typings.convertUnits.convertUnitsStrings.week]
+  
+  inline def yd: typings.convertUnits.convertUnitsStrings.yd = "yd".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd]
   
   inline def yd3: typings.convertUnits.convertUnitsStrings.yd3 = "yd3".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd3]
   

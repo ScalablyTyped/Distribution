@@ -11,35 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryQuantizationParameters extends StObject {
   
   /**
-    * An extent defining the quantization grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
-    */
+  		 * An extent defining the quantization grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
+  		 */
   var extent: js.UndefOr[Extent] = js.undefined
   
   /**
-    * Geometry coordinates are optimized for viewing and displaying of data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
-    */
+  		 * Geometry coordinates are optimized for viewing and displaying of data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
+  		 */
   var mode: js.UndefOr[view | edit] = js.undefined
   
   /**
-    * The integer's coordinates will be returned relative to the origin position defined by this property value.
-    *
-    * @default upper-left
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
-    */
+  		 * The integer's coordinates will be returned relative to the origin position defined by this property value.
+  		 *
+  		 * @default upper-left
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
+  		 */
   var originPosition: js.UndefOr[`upper-left` | `lower-left`] = js.undefined
   
   /**
-    * The size of one pixel in the units of the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference).
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
-    */
+  		 * The size of one pixel in the units of the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference).
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
+  		 */
   var tolerance: js.UndefOr[Double] = js.undefined
 }
 object QueryQuantizationParameters {

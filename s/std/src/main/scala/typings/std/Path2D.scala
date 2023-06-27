@@ -4,13 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Canvas 2D API interface is used to declare a path that can then be used on a CanvasRenderingContext2D object. The path methods of the CanvasRenderingContext2D interface are also present on this interface, which gives you the convenience of being able to retain and replay your path whenever desired. */
+/**
+  * This Canvas 2D API interface is used to declare a path that can then be used on a CanvasRenderingContext2D object. The path methods of the CanvasRenderingContext2D interface are also present on this interface, which gives you the convenience of being able to retain and replay your path whenever desired.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Path2D)
+  */
 @js.native
 trait Path2D
   extends StObject
      with CanvasPath {
   
-  /** Adds to the path the path given by the argument. */
+  /**
+    * Adds to the path the path given by the argument.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Path2D/addPath)
+    */
   /* standard dom */
   def addPath(path: Path2D): Unit = js.native
   def addPath(path: Path2D, transform: DOMMatrix2DInit): Unit = js.native

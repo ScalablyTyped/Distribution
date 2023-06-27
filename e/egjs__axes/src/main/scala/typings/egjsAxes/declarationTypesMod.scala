@@ -154,7 +154,25 @@ object declarationTypesMod {
     */
   type AxesMethods = default
   
-  type AxesReactiveState = StringDictionary[Any]
+  trait AxesReactiveState
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var holding: Boolean
+  }
+  object AxesReactiveState {
+    
+    inline def apply(holding: Boolean): AxesReactiveState = {
+      val __obj = js.Dynamic.literal(holding = holding.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AxesReactiveState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesReactiveState] (val x: Self) extends AnyVal {
+      
+      inline def setHolding(value: Boolean): Self = StObject.set(x, "holding", value.asInstanceOf[js.Any])
+    }
+  }
   
   type ElementType = String | HTMLElement | Ref[HTMLElement]
   

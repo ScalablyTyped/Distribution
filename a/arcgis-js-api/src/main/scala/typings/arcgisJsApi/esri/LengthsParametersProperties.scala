@@ -10,31 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LengthsParametersProperties extends StObject {
   
   /**
-    * Defines the type of calculation for the geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#calculationType)
-    */
+  		 * Defines the type of calculation for the geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#calculationType)
+  		 */
   var calculationType: js.UndefOr[planar | geodesic | `preserve-shape`] = js.undefined
   
   /**
-    * If polylines are in a geographic coordinate system, then geodesic needs to be set to `true` in order to calculate the ellipsoidal shortest path distance between each pair of the vertices in the polylines.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#geodesic)
-    */
+  		 * If polylines are in a geographic coordinate system, then geodesic needs to be set to `true` in order to calculate the ellipsoidal shortest path distance between each pair of the vertices in the polylines.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#geodesic)
+  		 */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The length unit in which perimeters of polygons will be calculated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#lengthUnit)
-    */
+  		 * The length unit in which perimeters of polygons will be calculated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#lengthUnit)
+  		 */
   var lengthUnit: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The array of polylines whose lengths are to be computed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#polylines)
-    */
+  		 * The array of polylines whose lengths are to be computed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LengthsParameters.html#polylines)
+  		 */
   var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
 }
 object LengthsParametersProperties {

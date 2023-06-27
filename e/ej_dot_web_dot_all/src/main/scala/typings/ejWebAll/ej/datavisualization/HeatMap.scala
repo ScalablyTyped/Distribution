@@ -380,17 +380,17 @@ object HeatMap {
   trait ColorMappingCollection extends StObject {
     
     /** Specifies the color of the heat map column data.
-      * @Default {white}
+      * @default {white}
       */
     var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the label properties of the heat map color.
-      * @Default {null}
+      * @default {null}
       */
     var label: js.UndefOr[ColorMappingCollectionLabel] = js.undefined
     
     /** Specifies the color values of the heat map column data.
-      * @Default {0}
+      * @default {0}
       */
     var value: js.UndefOr[Double] = js.undefined
   }
@@ -421,27 +421,27 @@ object HeatMap {
   trait ColorMappingCollectionLabel extends StObject {
     
     /** Enables/disables the bold style of the heat map label.
-      * @Default {false}
+      * @default {false}
       */
     var bold: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the font color of the heat map label.
-      * @Default {black}
+      * @default {black}
       */
     var fontColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the font family of the heat map label.
-      * @Default {Arial}
+      * @default {Arial}
       */
     var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font size of the heat map label.
-      * @Default {10}
+      * @default {10}
       */
     var fontSize: js.UndefOr[Double] = js.undefined
     
     /** Enables/disables the italic style of the heat map label.
-      * @Default {false}
+      * @default {false}
       */
     var italic: js.UndefOr[Boolean] = js.undefined
     
@@ -450,7 +450,7 @@ object HeatMap {
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the text style of the heat map label.
-      * @Default {ej.HeatMap.TextDecoration.None}
+      * @default {ej.HeatMap.TextDecoration.None}
       */
     var textDecoration: js.UndefOr[TextDecoration | String] = js.undefined
   }
@@ -505,7 +505,7 @@ object HeatMap {
     var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment mode of the heat map column.
-      * @Default {ej.HeatMap.TextAlign.Center}
+      * @default {ej.HeatMap.TextAlign.Center}
       */
     var textAlign: js.UndefOr[Any] = js.undefined
   }
@@ -536,12 +536,12 @@ object HeatMap {
   trait HeatMapCell extends StObject {
     
     /** Specifies whether the cell color can be visible or not.
-      * @Default {true}
+      * @default {true}
       */
     var showColor: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the cell content can be visible or not.
-      * @Default {ej.HeatMap.CellVisibility.Visible}
+      * @default {ej.HeatMap.CellVisibility.Visible}
       */
     var showContent: js.UndefOr[CellVisibility | String] = js.undefined
   }
@@ -568,32 +568,32 @@ object HeatMap {
   trait ItemsMapping extends StObject {
     
     /** Specifies the property and display value of the column.
-      * @Default {null}
+      * @default {null}
       */
     var column: js.UndefOr[ItemsMappingColumn] = js.undefined
     
     /** Specifies the property and display value of the collection of column.
-      * @Default {[]}
+      * @default {[]}
       */
     var columnMapping: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Column settings for the individual heat map column.
-      * @Default {null}
+      * @default {null}
       */
     var columnStyle: js.UndefOr[ItemsMappingColumnStyle] = js.undefined
     
     /** Specifies the property and display value of the header.
-      * @Default {null}
+      * @default {null}
       */
     var headerMapping: js.UndefOr[ItemsMappingHeaderMapping] = js.undefined
     
     /** Specifies the row property and display value of the heat map.
-      * @Default {null}
+      * @default {null}
       */
     var row: js.UndefOr[ItemsMappingRow] = js.undefined
     
     /** Specifies the property and display value of the column value.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[ItemsMappingValue] = js.undefined
   }
@@ -676,12 +676,12 @@ object HeatMap {
     var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the text align mode of the heat map column.
-      * @Default {ej.HeatMap.TextAlign.Center}
+      * @default {ej.HeatMap.TextAlign.Center}
       */
     var textAlign: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the heat map column.
-      * @Default {0}
+      * @default {0}
       */
     var width: js.UndefOr[Double] = js.undefined
   }
@@ -716,7 +716,7 @@ object HeatMap {
   trait ItemsMappingHeaderMapping extends StObject {
     
     /** Specifies the property and display value of the header.
-      * @Default {null}
+      * @default {null}
       */
     var columnStyle: js.UndefOr[Any] = js.undefined
     
@@ -831,57 +831,57 @@ object HeatMap {
     var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.undefined
     
     /** Specifies the color values of the heat map column data.
-      * @Default {[]}
+      * @default {[]}
       */
     var colorMappingCollection: js.UndefOr[js.Array[ColorMappingCollection]] = js.undefined
     
     /** Specifies the default column properties for all the column style not specified in column properties.
-      * @Default {[]}
+      * @default {[]}
       */
     var defaultColumnStyle: js.UndefOr[DefaultColumnStyle] = js.undefined
     
     /** Specifies whether the virtualization can be enable or not.
-      * @Default {false}
+      * @default {false}
       */
     var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the property of the heat map cell.
-      * @Default {Null}
+      * @default {Null}
       */
     var heatMapCell: js.UndefOr[HeatMapCell] = js.undefined
     
     /** Specifies the width of the heat map.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[Any] = js.undefined
     
     /** Specifies the name of the heat map.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[Double] = js.undefined
     
     /** Specifies can enable responsive mode or not for heat map.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the property and display value of the heat map column.
-      * @Default {[]}
+      * @default {[]}
       */
     var itemsMapping: js.UndefOr[ItemsMapping] = js.undefined
     
     /** Specifies the source data of the heat map.
-      * @Default {[]}
+      * @default {[]}
       */
     var itemsSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the no of legends can sync with heat map.
-      * @Default {[]}
+      * @default {[]}
       */
     var legendCollection: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Enables or disables tooltip of heatmap
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
@@ -890,7 +890,7 @@ object HeatMap {
     var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Specifies the width of the heat map.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[Any] = js.undefined
   }
@@ -985,12 +985,12 @@ object HeatMap {
     var animation: js.UndefOr[TooltipSettingsAnimation] = js.undefined
     
     /** Defines the tooltip of associate that should be shown when the mouse hovers over rows/columns.
-      * @Default {mouseFollow}
+      * @default {mouseFollow}
       */
     var associate: js.UndefOr[Associate | String] = js.undefined
     
     /** Enables/ disables the balloon for the tooltip to be shown
-      * @Default {true}
+      * @default {true}
       */
     var isBalloon: js.UndefOr[Boolean] = js.undefined
     
@@ -999,12 +999,12 @@ object HeatMap {
     var position: js.UndefOr[TooltipSettingsPosition] = js.undefined
     
     /** Defines the tooltip that should be shown when the mouse hovers over rows/columns.
-      * @Default {null}
+      * @default {null}
       */
     var templateId: js.UndefOr[String] = js.undefined
     
     /** Defines the tooltip to be triggered.
-      * @Default {hover}
+      * @default {hover}
       */
     var trigger: js.UndefOr[Trigger | String] = js.undefined
   }
@@ -1047,12 +1047,12 @@ object HeatMap {
   trait TooltipSettingsAnimation extends StObject {
     
     /** Defines the animation effect for the tooltip that should be shown when the mouse hovers over rows/columns.
-      * @Default {none}
+      * @default {none}
       */
     var effect: js.UndefOr[Effect | String] = js.undefined
     
     /** Defines the animation speed for the tooltip that should be shown when the mouse hovers over rows/columns.
-      * @Default {0}
+      * @default {0}
       */
     var speed: js.UndefOr[Double] = js.undefined
   }
@@ -1109,12 +1109,12 @@ object HeatMap {
   trait TooltipSettingsPositionStem extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
-      * @Default {center}
+      * @default {center}
       */
     var horizontal: js.UndefOr[Horizontal | String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
-      * @Default {bottom}
+      * @default {bottom}
       */
     var vertical: js.UndefOr[Vertical | String] = js.undefined
   }
@@ -1141,12 +1141,12 @@ object HeatMap {
   trait TooltipSettingsPositionTarget extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
-      * @Default {center}
+      * @default {center}
       */
     var horizontal: js.UndefOr[Horizontal | String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
-      * @Default {top}
+      * @default {top}
       */
     var vertical: js.UndefOr[Vertical | String] = js.undefined
   }

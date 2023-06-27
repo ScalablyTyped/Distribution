@@ -61,7 +61,7 @@ open class geometry () extends StObject {
   def findNearestVertex(pt: point): Distance = js.native
   
   /**
-    * Iterates every vertex in the geometry and passes to the supplied 
+    * Iterates every vertex in the geometry and passes to the supplied
     * callback. Return true from in the callback will break the iteration.
     * @param {function} action Callback with the signature action(setIdx, idx, x, y, set).
     */
@@ -94,7 +94,7 @@ open class geometry () extends StObject {
     */
   def getIsPath(): Boolean = js.native
   
-  /** 
+  /**
     * Finds coordinates in map units of the midpoint of this geometry. If
     * this geometry is an open path, the midpoint is the midpoint of the
     * path. If this geometry is a closed path, the midpoint is the centroid
@@ -107,7 +107,7 @@ open class geometry () extends StObject {
   def getLabelingPoint(idx: Double): point = js.native
   
   /**
-    * Gets a set from this geometry's set collection by index, or, if no 
+    * Gets a set from this geometry's set collection by index, or, if no
     * index is provided, gets the last set. Note: for polygons, first set
     * is primary ring and subsequent ones are holes.
     * @param {number} [idx] Index of the set to return.
@@ -123,7 +123,7 @@ open class geometry () extends StObject {
   
   /**
     * Tests the validity of this geometry. An open path geometry is valid
-    * if it has at least one set with at least two points. A closed 
+    * if it has at least one set with at least two points. A closed
     * geometry is valid if it has at least one set with at least three
     * points. A point (non-path) geometry is always valid.
     * @returns {geometry} valid geometry is true, otherwise false.
@@ -131,7 +131,7 @@ open class geometry () extends StObject {
   def isValid(): Boolean = js.native
   
   /**
-    * Gets the last set in the geometry's set collection and removes it 
+    * Gets the last set in the geometry's set collection and removes it
     * from the collection.
     * @returns {number} Set removed as an array of points in the form [xn,yn].
     */
@@ -162,7 +162,7 @@ object geometry {
     def this(geom: geometry) = this()
     
     /**
-      * Calculates area of a ring in a polygon by index according 
+      * Calculates area of a ring in a polygon by index according
       * to the actual area. If no index is provided, uses the last ring
       * in the polygon's ring collection.
       * @param {number} [idx] Index of the ring for which to compute the area.
@@ -172,7 +172,7 @@ object geometry {
     def getActualArea(idx: Double): Double = js.native
     
     /**
-      * Calculates perimeter of a ring in a polygon by index according 
+      * Calculates perimeter of a ring in a polygon by index according
       * to actual distance. If no index is provided, uses the last ring
       * in the polygon's ring collection.
       * @param {number} [idx] Index of the ring for which to compute the perimeter.
@@ -188,7 +188,7 @@ object geometry {
     def getGeometry(): geometry = js.native
     
     /**
-      * Calculates area of a ring in a polygon by index according 
+      * Calculates area of a ring in a polygon by index according
       * to projected map cooordinates. If no index is provided, uses
       * the last ring in the polygon's ring collection.
       * @param {number} [idx] Index of the ring for which to compute the area.
@@ -197,7 +197,7 @@ object geometry {
     def getProjectedArea(idx: Double): Double = js.native
     
     /**
-      * Calculates perimeter of a ring in a polygon by index according 
+      * Calculates perimeter of a ring in a polygon by index according
       * to projected map cooordinates. If no index is provided, uses
       * the last ring in the polygon's ring collection.
       * @param {number} [idx] Index of the ring for which to compute the perimeter.
@@ -206,7 +206,7 @@ object geometry {
     def getProjectedPerimeter(idx: Double): Double = js.native
     
     /**
-      * Gets a ring from this polygon's set collection by index, or, 
+      * Gets a ring from this polygon's set collection by index, or,
       * if no index is provided, gets the last ring.
       * @param {number} [idx] Index of the ring to return.
       * @returns {number[]} A ring as an array of points in the form [xn,yn].
@@ -234,7 +234,7 @@ object geometry {
     def overlaps(poly: polygon): Boolean = js.native
     
     /**
-      * Gets the last ring in the polygon's ring collection and removes it 
+      * Gets the last ring in the polygon's ring collection and removes it
       * from the collection.
       * @returns {number} Ring removed as an array of points in the form [xn,yn].
       */
@@ -263,8 +263,8 @@ object geometry {
     def this(geom: geometry) = this()
     
     /**
-      * Calculates distance of a line in a polyline by index according 
-      * to actual distance. If no index is provided, uses the last line 
+      * Calculates distance of a line in a polyline by index according
+      * to actual distance. If no index is provided, uses the last line
       * in the polyline's set collection.
       * @param {number} [idx] Index of the line for which to compute the distance.
       * @returns {number} Distance in meters of the line.
@@ -279,7 +279,7 @@ object geometry {
     def getGeometry(): geometry = js.native
     
     /**
-      * Gets a line from this polyline's liune collection by index, or, 
+      * Gets a line from this polyline's liune collection by index, or,
       * if no index is provided, gets the last line.
       * @param {number} [idx] Index of the line to return.
       * @returns {number[]} A line as an array of points in the form [xn,yn].
@@ -293,7 +293,7 @@ object geometry {
     def getLineCount(): Double = js.native
     
     /**
-      * Calculates distance of a line in a polyline by index according 
+      * Calculates distance of a line in a polyline by index according
       * to projected map cooordinates. If no index is provided, uses
       * the last line in the polyline's set collection.
       * @param {number} [idx] Index of the line for which to compute the distance.
@@ -309,7 +309,7 @@ object geometry {
     def intersects(geom: geometry): Boolean = js.native
     
     /**
-      * Gets the last line in the polyline's set collection and removes it 
+      * Gets the last line in the polyline's set collection and removes it
       * from the collection.
       * @returns {number} Line removed as an array of points in the form [xn,yn].
       */

@@ -14,6 +14,7 @@ open class OverconstrainedError protected ()
   def this(constraint: java.lang.String) = this()
   def this(constraint: java.lang.String, message: java.lang.String) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OverconstrainedError/constraint) */
   /* standard dom */
   /* CompleteClass */
   override val constraint: java.lang.String = js.native

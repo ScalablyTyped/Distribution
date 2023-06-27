@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__coreutils
 
-Typings are for version 5.6.3
+Typings are for version 6.0.2
 
 ## Library description:
 JupyterLab - Core Utilities

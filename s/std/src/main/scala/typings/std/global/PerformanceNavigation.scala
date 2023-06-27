@@ -32,17 +32,29 @@ open class PerformanceNavigation ()
   /* CompleteClass */
   override val TYPE_RESERVED: `255` = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/redirectCount)
+    */
   /* standard dom */
   /* CompleteClass */
   override val redirectCount: Double = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/toJSON)
+    */
   /* standard dom */
   /* CompleteClass */
   override def toJSON(): Any = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceNavigation/type)
+    */
   /* standard dom */
   /* CompleteClass */
   override val `type`: Double = js.native

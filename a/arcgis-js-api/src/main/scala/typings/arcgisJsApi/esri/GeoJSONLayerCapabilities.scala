@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeoJSONLayerCapabilities extends StObject {
   
   /**
-    * Describes characteristics of the data in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Describes characteristics of the data in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var data: GeoJSONLayerCapabilitiesData
   
   /**
-    * Describes editing capabilities that can be performed on the features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Describes editing capabilities that can be performed on the features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var editing: GeoJSONLayerCapabilitiesEditing
   
   /**
-    * Describes operations that can be performed on features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Describes operations that can be performed on features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var operations: GeoJSONLayerCapabilitiesOperations
   
   /**
-    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations that can be performed on features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations that can be performed on features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var query: GeoJSONLayerCapabilitiesQuery
   
   /**
-    * Indicates if the layer's query operation supports querying features or records related to features in the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
-    */
+  		 * Indicates if the layer's query operation supports querying features or records related to features in the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#capabilities)
+  		 */
   var queryRelated: GeoJSONLayerCapabilitiesQueryRelated
 }
 object GeoJSONLayerCapabilities {

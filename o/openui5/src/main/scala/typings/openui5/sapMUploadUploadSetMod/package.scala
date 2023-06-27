@@ -1,0 +1,78 @@
+package typings.openui5.sapMUploadUploadSetMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+type UploadSetAfterItemAddedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$AfterItemAddedEventParameters]
+
+type UploadSetAfterItemAddedEventParameters = UploadSet$AfterItemAddedEventParameters
+
+type UploadSetAfterItemEditedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$AfterItemEditedEventParameters]
+
+type UploadSetAfterItemEditedEventParameters = UploadSet$AfterItemEditedEventParameters
+
+type UploadSetAfterItemRemovedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$AfterItemRemovedEventParameters]
+
+type UploadSetAfterItemRemovedEventParameters = UploadSet$AfterItemRemovedEventParameters
+
+type UploadSetBeforeItemAddedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$BeforeItemAddedEventParameters]
+
+type UploadSetBeforeItemAddedEventParameters = UploadSet$BeforeItemAddedEventParameters
+
+type UploadSetBeforeItemEditedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$BeforeItemEditedEventParameters]
+
+type UploadSetBeforeItemEditedEventParameters = UploadSet$BeforeItemEditedEventParameters
+
+type UploadSetBeforeItemRemovedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$BeforeItemRemovedEventParameters]
+
+type UploadSetBeforeItemRemovedEventParameters = UploadSet$BeforeItemRemovedEventParameters
+
+type UploadSetBeforeUploadStartsEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$BeforeUploadStartsEventParameters]
+
+type UploadSetBeforeUploadStartsEventParameters = UploadSet$BeforeUploadStartsEventParameters
+
+type UploadSetBeforeUploadTerminationEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$BeforeUploadTerminationEventParameters]
+
+type UploadSetBeforeUploadTerminationEventParameters = UploadSet$BeforeUploadTerminationEventParameters
+
+type UploadSetFileNameLengthExceededEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$FileNameLengthExceededEventParameters]
+
+type UploadSetFileNameLengthExceededEventParameters = UploadSet$FileNameLengthExceededEventParameters
+
+type UploadSetFileRenamedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$FileRenamedEventParameters]
+
+type UploadSetFileRenamedEventParameters = UploadSet$FileRenamedEventParameters
+
+type UploadSetFileSizeExceededEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$FileSizeExceededEventParameters]
+
+type UploadSetFileSizeExceededEventParameters = UploadSet$FileSizeExceededEventParameters
+
+type UploadSetFileTypeMismatchEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$FileTypeMismatchEventParameters]
+
+type UploadSetFileTypeMismatchEventParameters = UploadSet$FileTypeMismatchEventParameters
+
+type UploadSetItemDragStartEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$ItemDragStartEventParameters]
+
+type UploadSetItemDragStartEventParameters = UploadSet$ItemDragStartEventParameters
+
+type UploadSetItemDropEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$ItemDropEventParameters]
+
+type UploadSetItemDropEventParameters = UploadSet$ItemDropEventParameters
+
+type UploadSetMediaTypeMismatchEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$MediaTypeMismatchEventParameters]
+
+type UploadSetMediaTypeMismatchEventParameters = UploadSet$MediaTypeMismatchEventParameters
+
+type UploadSetSelectionChangedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$SelectionChangedEventParameters]
+
+type UploadSetSelectionChangedEventParameters = UploadSet$SelectionChangedEventParameters
+
+type UploadSetUploadCompletedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$UploadCompletedEventParameters]
+
+type UploadSetUploadCompletedEventParameters = UploadSet$UploadCompletedEventParameters
+
+type UploadSetUploadTerminatedEvent = typings.openui5.sapUiBaseEventMod.default[UploadSet$UploadTerminatedEventParameters]
+
+type UploadSetUploadTerminatedEventParameters = UploadSet$UploadTerminatedEventParameters

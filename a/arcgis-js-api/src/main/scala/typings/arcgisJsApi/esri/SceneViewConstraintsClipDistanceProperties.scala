@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewConstraintsClipDistanceProperties extends StObject {
   
   /**
-    * The far clip distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * The far clip distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var far: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the mode of the constraint which is either `auto` or `manual`.
-    *
-    * @default auto
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * Specifies the mode of the constraint which is either `auto` or `manual`.
+  		 *
+  		 * @default auto
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var mode: js.UndefOr[auto | manual] = js.undefined
   
   /**
-    * The near clip distance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
+  		 * The near clip distance.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+  		 */
   var near: js.UndefOr[Double] = js.undefined
 }
 object SceneViewConstraintsClipDistanceProperties {

@@ -26,7 +26,7 @@ trait EditorViewConfig
     if provided, should probably call the view's [`update`
     method](https://codemirror.net/6/docs/ref/#view.EditorView.update).
     */
-  var dispatch: js.UndefOr[js.Function1[/* tr */ Transaction, Unit]] = js.undefined
+  var dispatch: js.UndefOr[js.Function2[/* tr */ Transaction, /* view */ EditorView, Unit]] = js.undefined
   
   /**
     When given, the editor is immediately appended to the given
@@ -62,7 +62,7 @@ object EditorViewConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: EditorViewConfig] (val x: Self) extends AnyVal {
     
-    inline def setDispatch(value: /* tr */ Transaction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    inline def setDispatch(value: (/* tr */ Transaction, /* view */ EditorView) => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction2(value))
     
     inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
     

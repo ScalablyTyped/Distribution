@@ -9,8 +9,6 @@ trait IMouseConstraintDefinition extends StObject {
   /**
     * The `Body` that is currently being moved by the user, or `null` if no body.
     *
-    * @property body
-    * @type body
     * @default null
     */
   var body: js.UndefOr[Body] = js.undefined
@@ -20,24 +18,18 @@ trait IMouseConstraintDefinition extends StObject {
     * The collision filter allows the user to define which types of body this mouse constraint can interact with.
     * See `body.collisionFilter` for more information.
     *
-    * @property collisionFilter
-    * @type {any}
     */
   var collisionFilter: js.UndefOr[ICollisionFilter] = js.undefined
   
   /**
     * The `Constraint` object that is used to move the body during interaction.
     *
-    * @property constraint
-    * @type {IConstraintDefinition}
     */
   var constraint: js.UndefOr[IConstraintDefinition] = js.undefined
   
   /**
     * The `Mouse` instance in use. If not supplied in `MouseConstraint.create`, one will be created.
     *
-    * @property mouse
-    * @type mouse
     * @default mouse
     */
   var mouse: js.UndefOr[Mouse] = js.undefined
@@ -45,8 +37,6 @@ trait IMouseConstraintDefinition extends StObject {
   /**
     * A `String` denoting the type of object.
     *
-    * @property type
-    * @type {string}
     * @default "constraint"
     */
   var `type`: js.UndefOr[String] = js.undefined

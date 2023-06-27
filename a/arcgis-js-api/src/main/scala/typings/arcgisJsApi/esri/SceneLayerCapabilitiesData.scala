@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneLayerCapabilitiesData extends StObject {
   
   /**
-    * Indicates if the features in the layer support z-values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
-    */
+  		 * Indicates if the features in the layer support z-values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#capabilities)
+  		 */
   var supportsZ: Boolean
 }
 object SceneLayerCapabilitiesData {

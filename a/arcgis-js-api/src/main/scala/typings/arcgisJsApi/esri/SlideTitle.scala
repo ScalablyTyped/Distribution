@@ -9,10 +9,10 @@ trait SlideTitle
      with AnonymousAccessor {
   
   /**
-    * The title.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#title)
-    */
+  		 * The title.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#title)
+  		 */
   var text: js.UndefOr[String] = js.undefined
 }
 object SlideTitle {

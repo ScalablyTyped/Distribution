@@ -4,27 +4,38 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Intersection Observer API interface describes the intersection between the target element and its root container at a specific moment of transition. */
+/**
+  * This Intersection Observer API interface describes the intersection between the target element and its root container at a specific moment of transition.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry)
+  */
 trait IntersectionObserverEntry extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/boundingClientRect) */
   /* standard dom */
   val boundingClientRect: DOMRectReadOnly
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/intersectionRatio) */
   /* standard dom */
   val intersectionRatio: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/intersectionRect) */
   /* standard dom */
   val intersectionRect: DOMRectReadOnly
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/isIntersecting) */
   /* standard dom */
   val isIntersecting: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/rootBounds) */
   /* standard dom */
   val rootBounds: DOMRectReadOnly | Null
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/target) */
   /* standard dom */
   val target: Element
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/IntersectionObserverEntry/time) */
   /* standard dom */
   val time: DOMHighResTimeStamp
 }

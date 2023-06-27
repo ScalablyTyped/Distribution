@@ -1,6 +1,7 @@
 package typings.sentryReplay
 
 import typings.sentryReplay.anon.BlockClass
+import typings.sentryReplay.typesTypesReplayMod.RecordingEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,7 +63,9 @@ object typesTypesRrwebMod {
   
   type blockClass = String | js.RegExp
   
-  trait eventWithTime extends StObject {
+  trait eventWithTime
+    extends StObject
+       with RecordingEvent {
     
     var data: Any
     

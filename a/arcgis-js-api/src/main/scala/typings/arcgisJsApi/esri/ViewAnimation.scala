@@ -15,32 +15,32 @@ trait ViewAnimation
      with corePromise {
   
   /**
-    * Finishes the view animation by immediately going to the target and sets the state of the animation to `finished`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#finish)
-    */
+  		 * Finishes the view animation by immediately going to the target and sets the state of the animation to `finished`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#finish)
+  		 */
   def finish(): scala.Unit = js.native
   
   /**
-    * The state of the animation.
-    *
-    * @default running
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
-    */
+  		 * The state of the animation.
+  		 *
+  		 * @default running
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
+  		 */
   val state: running | finished | stopped | `waiting-for-target` = js.native
   
   /**
-    * Stops the view animation at its current state and sets the state of the animation to `stopped`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#stop)
-    */
+  		 * Stops the view animation at its current state and sets the state of the animation to `stopped`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#stop)
+  		 */
   def stop(): scala.Unit = js.native
   
   /**
-    * The target of the animation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
-    */
+  		 * The target of the animation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#target)
+  		 */
   var target: Viewpoint = js.native
 }

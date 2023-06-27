@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "tree-changes-hook"
-version := "0.10.0-871c63"
+version := "0.10.0-42826d"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "5.0-e63739",
-  "org.scalablytyped" %%% "tree-changes" % "0.10.0-a8a466")
+  "org.scalablytyped" %%% "std" % "5.1-9d5ad2",
+  "org.scalablytyped" %%% "tree-changes" % "0.10.0-07ac6b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

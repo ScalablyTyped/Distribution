@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "formdata-node" : "5.0.0"
+      "formdata-node" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "formdata-node" : "5.0.0"
+      "formdata-node" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

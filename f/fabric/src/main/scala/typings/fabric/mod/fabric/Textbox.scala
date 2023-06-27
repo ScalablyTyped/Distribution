@@ -27,7 +27,6 @@ object Textbox {
   /**
     * Returns fabric.Textbox instance from an object representation
     * @static
-    * @memberOf fabric.Textbox
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Textbox instance is created
     */

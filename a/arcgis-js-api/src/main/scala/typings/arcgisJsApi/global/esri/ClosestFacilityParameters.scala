@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.ClosestFacilityParameters")
 @js.native
 /**
-  * ClosestFacilityParameters provides the input parameters for a [closestFacility](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-closestFacility.html) request.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html)
-  */
+		 * ClosestFacilityParameters provides the input parameters for a [closestFacility](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-closestFacility.html) request.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ClosestFacilityParameters.html)
+		 */
 open class ClosestFacilityParameters ()
   extends StObject
      with typings.arcgisJsApi.esri.ClosestFacilityParameters {
   def this(properties: ClosestFacilityParametersProperties) = this()
   
   /**
-    * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-    */
+  		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+  		 */
   /* CompleteClass */
   override def toJSON(): Any = js.native
 }

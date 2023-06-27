@@ -4,33 +4,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element's value fails to validate, if it's not valid. */
+/**
+  * The validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element's value fails to validate, if it's not valid.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState)
+  */
 trait ValidityState extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/badInput) */
   /* standard dom */
   val badInput: scala.Boolean
   
   /* standard dom */
   val customError: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/patternMismatch) */
   /* standard dom */
   val patternMismatch: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/rangeOverflow) */
   /* standard dom */
   val rangeOverflow: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/rangeUnderflow) */
   /* standard dom */
   val rangeUnderflow: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/stepMismatch) */
   /* standard dom */
   val stepMismatch: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/tooLong) */
   /* standard dom */
   val tooLong: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/tooShort) */
   /* standard dom */
   val tooShort: scala.Boolean
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ValidityState/typeMismatch) */
   /* standard dom */
   val typeMismatch: scala.Boolean
   

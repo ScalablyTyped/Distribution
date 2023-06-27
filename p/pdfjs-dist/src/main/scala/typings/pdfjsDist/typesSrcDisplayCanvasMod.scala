@@ -29,7 +29,7 @@ object typesSrcDisplayCanvasMod {
     
     var _cachedGetSinglePixelWidth: Double | Null = js.native
     
-    var _cachedScaleForStroking: js.Array[Double] | Null = js.native
+    var _cachedScaleForStroking: js.Array[Double] = js.native
     
     def _createMaskCanvas(img: Any): OffsetX = js.native
     
@@ -209,8 +209,6 @@ object typesSrcDisplayCanvasMod {
     var pendingClip: js.Object | Null = js.native
     
     var pendingEOFill: Boolean = js.native
-    
-    var pendingTextPaths: js.UndefOr[js.Array[Any]] = js.native
     
     /* private */ var `private`: Any = js.native
     

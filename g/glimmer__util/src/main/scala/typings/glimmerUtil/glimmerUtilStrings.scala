@@ -617,6 +617,13 @@ object glimmerUtilStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
+  sealed trait search
+    extends StObject
+       with BrowserElementTag
+       with BrowserTag
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section
     extends StObject
        with BrowserElementTag

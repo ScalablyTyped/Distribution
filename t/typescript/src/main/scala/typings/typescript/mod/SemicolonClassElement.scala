@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SemicolonClassElement
   extends StObject
-     with ClassElement {
+     with ClassElement
+     with JSDocContainer
+     with HasJSDoc {
   
   @JSName("kind")
   val kind_SemicolonClassElement: typings.typescript.mod.SyntaxKind.SemicolonClassElement = js.native

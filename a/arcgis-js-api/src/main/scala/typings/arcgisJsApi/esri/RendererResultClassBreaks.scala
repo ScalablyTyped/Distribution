@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RendererResultClassBreaks extends StObject {
   
   /**
-    * The class breaks generated for values in the `field1` parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * The class breaks generated for values in the `field1` parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var field1: ClassBreaksResult
   
   /**
-    * The class breaks generated for values in the `field2` parameter.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
-    */
+  		 * The class breaks generated for values in the `field2` parameter.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
+  		 */
   var field2: ClassBreaksResult
 }
 object RendererResultClassBreaks {

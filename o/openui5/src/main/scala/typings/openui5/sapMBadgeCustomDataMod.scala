@@ -119,7 +119,7 @@ object sapMBadgeCustomDataMod {
     extends typings.openui5.sapUiCoreCustomDataMod.default {
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Gets current value of property {@link #getAnimation animation}.
       *
@@ -141,7 +141,7 @@ object sapMBadgeCustomDataMod {
     def getVisible(): Boolean = js.native
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Sets a new value for property {@link #getAnimation animation}.
       *
@@ -186,7 +186,7 @@ object sapMBadgeCustomDataMod {
        with CustomDataSettings {
     
     /**
-      * @SINCE 1.87
+      * @since 1.87
       *
       * Determines the type of animation to be performed by the Badge DOM element.
       */

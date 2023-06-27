@@ -10,6 +10,7 @@ import typings.codemirrorState.mod.TransactionSpec
 import typings.codemirrorView.mod.Command
 import typings.codemirrorView.mod.EditorView
 import typings.codemirrorView.mod.KeyBinding
+import typings.codemirrorView.mod.ViewUpdate
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,6 +33,15 @@ object mod {
   Returns the number of active lint diagnostics in the given state.
   */
   inline def diagnosticCount(state: EditorState): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticCount")(state.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  /**
+  Iterate over the marked diagnostics for the given editor state,
+  calling `f` for each of them. Note that, if the document changed
+  since the diagnostics were created, the `Diagnostic` object will
+  hold the original outdated position, whereas the `to` and `from`
+  arguments hold the diagnostic's current position.
+  */
+  inline def forEachDiagnostic(state: EditorState, f: js.Function3[/* d */ Diagnostic, /* from */ Double, /* to */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachDiagnostic")(state.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
   Forces any linters [configured](https://codemirror.net/6/docs/ref/#lint.linter) to run when the
@@ -224,6 +234,13 @@ object mod {
     var markerFilter: js.UndefOr[Null | DiagnosticFilter] = js.undefined
     
     /**
+      Optional predicate that can be used to indicate when diagnostics
+      need to be recomputed. Linting is always re-done on document
+      changes.
+      */
+    var needsRefresh: js.UndefOr[Null | (js.Function1[/* update */ ViewUpdate, Boolean])] = js.undefined
+    
+    /**
       Filter applied to a set of diagnostics shown in a tooltip. No
       tooltip will appear if the empty set is returned.
       */
@@ -248,6 +265,12 @@ object mod {
       inline def setMarkerFilterNull: Self = StObject.set(x, "markerFilter", null)
       
       inline def setMarkerFilterUndefined: Self = StObject.set(x, "markerFilter", js.undefined)
+      
+      inline def setNeedsRefresh(value: /* update */ ViewUpdate => Boolean): Self = StObject.set(x, "needsRefresh", js.Any.fromFunction1(value))
+      
+      inline def setNeedsRefreshNull: Self = StObject.set(x, "needsRefresh", null)
+      
+      inline def setNeedsRefreshUndefined: Self = StObject.set(x, "needsRefresh", js.undefined)
       
       inline def setTooltipFilter(value: /* diagnostics */ js.Array[Diagnostic] => js.Array[Diagnostic]): Self = StObject.set(x, "tooltipFilter", js.Any.fromFunction1(value))
       

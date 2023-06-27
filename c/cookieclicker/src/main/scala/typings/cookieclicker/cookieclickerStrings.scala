@@ -3,6 +3,8 @@ package typings.cookieclicker
 import typings.cookieclicker.Game.AchievementPool
 import typings.cookieclicker.Game.GameHooks
 import typings.cookieclicker.Game.UpgradePool
+import typings.cookieclicker.Game.YouCustomizerAddonGeneId
+import typings.cookieclicker.Game.YouCustomizerColorGeneId
 import typings.cookieclicker.Game._TooltipOrigins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,6 +69,18 @@ object cookieclickerStrings {
   @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
+  
+  @js.native
+  sealed trait acc1
+    extends StObject
+       with YouCustomizerAddonGeneId
+  inline def acc1: acc1 = "acc1".asInstanceOf[acc1]
+  
+  @js.native
+  sealed trait acc2
+    extends StObject
+       with YouCustomizerAddonGeneId
+  inline def acc2: acc2 = "acc2".asInstanceOf[acc2]
   
   @js.native
   sealed trait achievement_ extends StObject
@@ -519,6 +533,12 @@ object cookieclickerStrings {
   inline def extraButtons: extraButtons = "extraButtons".asInstanceOf[extraButtons]
   
   @js.native
+  sealed trait face
+    extends StObject
+       with YouCustomizerAddonGeneId
+  inline def face: face = "face".asInstanceOf[face]
+  
+  @js.native
   sealed trait fancy extends StObject
   inline def fancy: fancy = "fancy".asInstanceOf[fancy]
   
@@ -743,7 +763,21 @@ object cookieclickerStrings {
   inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait head extends StObject
+  sealed trait hair
+    extends StObject
+       with YouCustomizerAddonGeneId
+  inline def hair: hair = "hair".asInstanceOf[hair]
+  
+  @js.native
+  sealed trait hairCol
+    extends StObject
+       with YouCustomizerColorGeneId
+  inline def hairCol: hairCol = "hairCol".asInstanceOf[hairCol]
+  
+  @js.native
+  sealed trait head
+    extends StObject
+       with YouCustomizerAddonGeneId
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
@@ -1325,6 +1359,10 @@ object cookieclickerStrings {
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section extends StObject
   inline def section: section = "section".asInstanceOf[section]
   
@@ -1369,6 +1407,12 @@ object cookieclickerStrings {
   @js.native
   sealed trait showBackupWarning extends StObject
   inline def showBackupWarning: showBackupWarning = "showBackupWarning".asInstanceOf[showBackupWarning]
+  
+  @js.native
+  sealed trait skinCol
+    extends StObject
+       with YouCustomizerColorGeneId
+  inline def skinCol: skinCol = "skinCol".asInstanceOf[skinCol]
   
   @js.native
   sealed trait slot extends StObject

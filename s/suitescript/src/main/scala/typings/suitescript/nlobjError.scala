@@ -17,7 +17,6 @@ trait nlobjError extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     * @return
@@ -29,7 +28,6 @@ trait nlobjError extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     * @return
@@ -41,7 +39,6 @@ trait nlobjError extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     * @return
@@ -53,7 +50,6 @@ trait nlobjError extends StObject {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     * @return
@@ -65,7 +61,6 @@ trait nlobjError extends StObject {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     */
@@ -76,7 +71,6 @@ trait nlobjError extends StObject {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjError
     *
     * @since 2008.2
     * @return

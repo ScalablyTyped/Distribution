@@ -15,14 +15,17 @@ open class RTCSessionDescription protected ()
   /* standard dom */
   def this(descriptionInitDict: RTCSessionDescriptionInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/sdp) */
   /* standard dom */
   /* CompleteClass */
   override val sdp: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/toJSON) */
   /* standard dom */
   /* CompleteClass */
   override def toJSON(): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCSessionDescription/type) */
   /* standard dom */
   /* CompleteClass */
   override val `type`: RTCSdpType = js.native

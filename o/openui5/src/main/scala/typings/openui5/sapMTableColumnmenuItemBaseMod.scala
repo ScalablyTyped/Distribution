@@ -20,8 +20,8 @@ object sapMTableColumnmenuItemBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.table.columnmenu.Entry#constructor
-    * sap.m.table.columnmenu.Entry} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.table.columnmenu.Entry#constructor sap.m.table.columnmenu.Entry }
+    * can be used.
     */
   open class default () extends ItemBase {
     def this(/**
@@ -126,7 +126,7 @@ object sapMTableColumnmenuItemBaseMod {
     extends typings.openui5.sapMTableColumnmenuEntryMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Changes the button settings of an item.
       */
@@ -136,7 +136,7 @@ object sapMTableColumnmenuItemBaseMod {
     oButtonSettings: js.Object): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Retrieves the button settings.
       *
@@ -145,7 +145,7 @@ object sapMTableColumnmenuItemBaseMod {
     def getButtonSettings(): js.Object = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Retrieves the effective items of the item.
       *
@@ -157,7 +157,7 @@ object sapMTableColumnmenuItemBaseMod {
     def getEffectiveItems(): js.Array[ItemBase] = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Retrieves the icon specified for an item.
       *
@@ -166,7 +166,7 @@ object sapMTableColumnmenuItemBaseMod {
     def getIcon(): URI = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for a back event.
       */
@@ -176,7 +176,7 @@ object sapMTableColumnmenuItemBaseMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for a cancel event.
       */
@@ -186,7 +186,7 @@ object sapMTableColumnmenuItemBaseMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for a confirm event.
       */
@@ -196,7 +196,7 @@ object sapMTableColumnmenuItemBaseMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for a press event.
       */
@@ -206,7 +206,7 @@ object sapMTableColumnmenuItemBaseMod {
     oEvent: Event): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Event handler for a reset event.
       */

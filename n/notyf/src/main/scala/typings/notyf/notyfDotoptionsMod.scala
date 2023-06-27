@@ -50,7 +50,7 @@ object notyfDotoptionsMod {
     
     var color: String
     
-    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any
+    var tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any
     
     var text: String
   }
@@ -59,7 +59,7 @@ object notyfDotoptionsMod {
     inline def apply(
       className: String,
       color: String,
-      tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any,
+      tagName: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any,
       text: String
     ): INotyfIcon = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object notyfDotoptionsMod {
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setTagName(
-        value: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any
+        value: /* keyof notyf.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.notyf.notyfStrings.a, typings.notyf.notyfStrings.abbr, typings.notyf.notyfStrings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])

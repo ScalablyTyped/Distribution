@@ -1,25 +1,12 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Plussign1
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`-1`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.confused
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.eyes
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.heart
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.hooray
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.laugh
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `532` extends StObject {
   
-  /** @description Returns a single [reaction type](https://docs.github.com/rest/reference/reactions#reaction-types). Omit this parameter to list all reactions to a team discussion. */
-  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
-  
-  var page: js.UndefOr[Double] = js.undefined
-  
-  var per_page: js.UndefOr[Double] = js.undefined
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object `532` {
   
@@ -31,16 +18,10 @@ object `532` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `532`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
-    
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

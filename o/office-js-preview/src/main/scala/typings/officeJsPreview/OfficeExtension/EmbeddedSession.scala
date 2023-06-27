@@ -4,8 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Represents a session of a Visio diagram embedded in a SharePoint page. 
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+  */
 trait EmbeddedSession extends StObject {
   
+  /**
+  		* Initializes the session.
+  		*/
   def init(): js.Promise[Any]
 }
 object EmbeddedSession {

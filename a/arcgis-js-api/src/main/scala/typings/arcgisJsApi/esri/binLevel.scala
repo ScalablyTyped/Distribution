@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Function that suggests a [fixedBinLevel](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fixedBinLevel) in a [FeatureReductionBinning](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html) visualization.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-binLevel.html)
-  */
+	 * Function that suggests a [fixedBinLevel](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fixedBinLevel) in a [FeatureReductionBinning](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html) visualization.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-binLevel.html)
+	 */
 trait binLevel extends StObject {
   
   /**
-    * Generates a suggested [fixedBinLevel](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fixedBinLevel) for a binning visualization based on the view scale at the time this method is called.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-binLevel.html#binLevel)
-    */
+  		 * Generates a suggested [fixedBinLevel](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#fixedBinLevel) for a binning visualization based on the view scale at the time this method is called.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-binLevel.html#binLevel)
+  		 */
   def binLevel(params: binLevelBinLevelParams): js.Promise[Double]
 }
 object binLevel {

@@ -14,50 +14,62 @@ open class Touch protected ()
   /* standard dom */
   def this(touchInitDict: TouchInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/clientX) */
   /* standard dom */
   /* CompleteClass */
   override val clientX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/clientY) */
   /* standard dom */
   /* CompleteClass */
   override val clientY: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/force) */
   /* standard dom */
   /* CompleteClass */
   override val force: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/identifier) */
   /* standard dom */
   /* CompleteClass */
   override val identifier: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/pageX) */
   /* standard dom */
   /* CompleteClass */
   override val pageX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/pageY) */
   /* standard dom */
   /* CompleteClass */
   override val pageY: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/radiusX) */
   /* standard dom */
   /* CompleteClass */
   override val radiusX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/radiusY) */
   /* standard dom */
   /* CompleteClass */
   override val radiusY: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/rotationAngle) */
   /* standard dom */
   /* CompleteClass */
   override val rotationAngle: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/screenX) */
   /* standard dom */
   /* CompleteClass */
   override val screenX: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/screenY) */
   /* standard dom */
   /* CompleteClass */
   override val screenY: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Touch/target) */
   /* standard dom */
   /* CompleteClass */
   override val target: typings.std.EventTarget = js.native

@@ -8,11 +8,11 @@ trait ParametersPathRepoTagprotectionid extends StObject {
   
   var parameters: PathRepoTagprotectionid
   
-  var responses: `403Content36404Content36`
+  var responses: `403Content41404Content41`
 }
 object ParametersPathRepoTagprotectionid {
   
-  inline def apply(parameters: PathRepoTagprotectionid, responses: `403Content36404Content36`): ParametersPathRepoTagprotectionid = {
+  inline def apply(parameters: PathRepoTagprotectionid, responses: `403Content41404Content41`): ParametersPathRepoTagprotectionid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRepoTagprotectionid]
   }
@@ -22,6 +22,6 @@ object ParametersPathRepoTagprotectionid {
     
     inline def setParameters(value: PathRepoTagprotectionid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `403Content36404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `403Content41404Content41`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

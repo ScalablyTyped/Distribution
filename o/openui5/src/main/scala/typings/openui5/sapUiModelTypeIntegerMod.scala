@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Maximum
-import typings.openui5.anon.`45`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object sapUiModelTypeIntegerMod {
     def this(/**
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
       */
-    oFormatOptions: `45`) = this()
+    oFormatOptions: `13`) = this()
     def this(
       /**
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
@@ -35,7 +35,7 @@ object sapUiModelTypeIntegerMod {
       /**
       * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}
       */
-    oFormatOptions: `45`,
+    oFormatOptions: `13`,
       /**
       * Value constraints
       */

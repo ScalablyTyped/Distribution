@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-custom-media
 
-Typings are for version 9.1.3
+Typings are for version 9.1.5
 
 ## Library description:
 Use Custom Media Queries in CSS

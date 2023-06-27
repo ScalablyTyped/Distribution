@@ -11,10 +11,10 @@ object esriNetworksSupportNetworkSystemLayersMod {
   @JSImport("esri/networks/support/NetworkSystemLayers", JSImport.Namespace)
   @js.native
   /**
-    * The NetworkSystemLayers contains the url and IDs of the utility network rules, subnetworks, and dirty areas tables or layers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NetworkSystemLayers.html)
-    */
+  		 * The NetworkSystemLayers contains the url and IDs of the utility network rules, subnetworks, and dirty areas tables or layers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-support-NetworkSystemLayers.html)
+  		 */
   open class ^ ()
     extends StObject
        with NetworkSystemLayers {

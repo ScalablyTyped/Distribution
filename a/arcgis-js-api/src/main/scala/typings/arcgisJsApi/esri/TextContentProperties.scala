@@ -9,10 +9,10 @@ trait TextContentProperties
      with ContentProperties {
   
   /**
-    * The formatted string content to display.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#text)
-    */
+  		 * The formatted string content to display.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#text)
+  		 */
   var text: js.UndefOr[String] = js.undefined
 }
 object TextContentProperties {

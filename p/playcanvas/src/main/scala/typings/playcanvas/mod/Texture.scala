@@ -30,7 +30,7 @@ open class Texture protected () extends StObject {
     * @param {string} [options.name] - The name of the texture. Defaults to null.
     * @param {number} [options.width] - The width of the texture in pixels. Defaults to 4.
     * @param {number} [options.height] - The height of the texture in pixels. Defaults to 4.
-    * @param {number} [options.depth] - The number of depth slices in a 3D texture (WebGL2 only).
+    * @param {number} [options.depth] - The number of depth slices in a 3D texture (not supported by WebGl1).
     * Defaults to 1 (single 2D image).
     * @param {number} [options.format] - The pixel format of the texture. Can be:
     *
@@ -87,7 +87,7 @@ open class Texture protected () extends StObject {
     * @param {boolean} [options.cubemap] - Specifies whether the texture is to be a cubemap.
     * Defaults to false.
     * @param {boolean} [options.volume] - Specifies whether the texture is to be a 3D volume
-    * (WebGL2 only). Defaults to false.
+    * (not supported by WebGL1). Defaults to false.
     * @param {string} [options.type] - Specifies the texture type.  Can be:
     *
     * - {@link TEXTURETYPE_DEFAULT}
@@ -108,9 +108,9 @@ open class Texture protected () extends StObject {
     * @param {boolean} [options.compareOnRead] - When enabled, and if texture format is
     * {@link PIXELFORMAT_DEPTH} or {@link PIXELFORMAT_DEPTHSTENCIL}, hardware PCF is enabled for
     * this texture, and you can get filtered results of comparison using texture() in your shader
-    * (WebGL2 only). Defaults to false.
+    * (not supported by WebGL1). Defaults to false.
     * @param {number} [options.compareFunc] - Comparison function when compareOnRead is enabled
-    * (WebGL2 only). Can be:
+    * (not supported by WebGL1). Can be:
     *
     * - {@link FUNC_LESS}
     * - {@link FUNC_LESSEQUAL}
@@ -196,8 +196,6 @@ open class Texture protected () extends StObject {
   
   var _needsUpload: Boolean = js.native
   
-  var _parameterFlags: Double = js.native
-  
   var _premultiplyAlpha: Boolean = js.native
   
   var _volume: Boolean = js.native
@@ -230,7 +228,7 @@ open class Texture protected () extends StObject {
   
   def addressW: Double = js.native
   /**
-    * The addressing mode to be applied to the 3D texture depth (WebGL2 only). Can be:
+    * The addressing mode to be applied to the 3D texture depth (not supported on WebGL1). Can be:
     *
     * - {@link ADDRESS_REPEAT}
     * - {@link ADDRESS_CLAMP_TO_EDGE}
@@ -258,7 +256,7 @@ open class Texture protected () extends StObject {
   
   def compareFunc: Double = js.native
   /**
-    * Comparison function when compareOnRead is enabled (WebGL2 only). Possible values:
+    * Comparison function when compareOnRead is enabled (not supported on WebGL1). Possible values:
     *
     * - {@link FUNC_LESS}
     * - {@link FUNC_LESSEQUAL}
@@ -275,7 +273,7 @@ open class Texture protected () extends StObject {
   /**
     * When enabled, and if texture format is {@link PIXELFORMAT_DEPTH} or
     * {@link PIXELFORMAT_DEPTHSTENCIL}, hardware PCF is enabled for this texture, and you can get
-    * filtered results of comparison using texture() in your shader (WebGL2 only).
+    * filtered results of comparison using texture() in your shader (not supported on WebGL1).
     *
     * @type {boolean}
     */
@@ -289,7 +287,7 @@ open class Texture protected () extends StObject {
   def cubemap: Boolean = js.native
   
   /**
-    * The number of depth slices in a 3D texture (WebGL2 only).
+    * The number of depth slices in a 3D texture.
     *
     * @type {number}
     */
@@ -303,6 +301,13 @@ open class Texture protected () extends StObject {
   var device: GraphicsDevice = js.native
   
   def dirtyAll(): Unit = js.native
+  
+  /**
+    * Download texture's top level data from graphics memory to local memory.
+    *
+    * @ignore
+    */
+  def downloadAsync(): js.Promise[Unit] = js.native
   
   def encoding: srgb | linear | rgbm | rgbe | rgbp = js.native
   
@@ -466,6 +471,10 @@ open class Texture protected () extends StObject {
   
   var projection: String = js.native
   
+  def propertyChanged(flag: Any): Unit = js.native
+  
+  var renderVersionDirty: Double = js.native
+  
   /**
     * Returns number of required mip levels for the texture based on its dimensions and parameters.
     *
@@ -522,25 +531,4 @@ open class Texture protected () extends StObject {
     * @type {number}
     */
   def width: Double = js.native
-}
-object Texture {
-  
-  @JSImport("playcanvas", "Texture")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Calculate the GPU memory required for a texture.
-    *
-    * @param {number} width - Texture's width.
-    * @param {number} height - Texture's height.
-    * @param {number} depth - Texture's depth.
-    * @param {number} format - Texture's pixel format PIXELFORMAT_***.
-    * @param {boolean} mipmaps - True if the texture includes mipmaps, false otherwise.
-    * @param {boolean} cubemap - True is the texture is a cubemap, false otherwise.
-    * @returns {number} The number of bytes of GPU memory required for the texture.
-    * @ignore
-    */
-  /* static member */
-  inline def calcGpuSize(width: Double, height: Double, depth: Double, format: Double, mipmaps: Boolean, cubemap: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcGpuSize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], format.asInstanceOf[js.Any], mipmaps.asInstanceOf[js.Any], cubemap.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

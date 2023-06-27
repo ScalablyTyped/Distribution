@@ -6,19 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `517` extends StObject {
   
-  var `403`: Content36
+  var sha: js.UndefOr[String] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object `517` {
   
-  inline def apply(`403`: Content36): `517` = {
+  inline def apply(): `517` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`517`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `517`] (val x: Self) extends AnyVal {
     
-    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -255,6 +255,7 @@ import typings.superfine.superfineStrings.ruby
 import typings.superfine.superfineStrings.s
 import typings.superfine.superfineStrings.samp
 import typings.superfine.superfineStrings.script
+import typings.superfine.superfineStrings.search
 import typings.superfine.superfineStrings.section
 import typings.superfine.superfineStrings.select
 import typings.superfine.superfineStrings.set
@@ -306,28 +307,28 @@ object mod {
     tagName: `object`,
     props: Props[`object`],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[`object`] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[`object`]]
   inline def h(
     tagName: `var`,
     props: Props[`var`],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[`var`] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[`var`]]
   inline def h(
     tagName: abbr,
     props: Props[abbr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[abbr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[abbr]]
   inline def h(
     tagName: address,
     props: Props[address],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[address] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[address]]
   inline def h(
@@ -355,105 +356,105 @@ object mod {
     tagName: a,
     props: Props[a],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
     ]
   ): VNode[a] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[a]]
   inline def h(
     tagName: area,
     props: Props[area],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[area] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[area]]
   inline def h(
     tagName: article,
     props: Props[article],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[article] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[article]]
   inline def h(
     tagName: aside,
     props: Props[aside],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[aside] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[aside]]
   inline def h(
     tagName: audio,
     props: Props[audio],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[audio] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[audio]]
   inline def h(
     tagName: base,
     props: Props[base],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[base] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[base]]
   inline def h(
     tagName: bdi,
     props: Props[bdi],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[bdi] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[bdi]]
   inline def h(
     tagName: bdo,
     props: Props[bdo],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[bdo] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[bdo]]
   inline def h(
     tagName: blockquote,
     props: Props[blockquote],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[blockquote] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[blockquote]]
   inline def h(
     tagName: body,
     props: Props[body],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[body] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[body]]
   inline def h(
     tagName: b,
     props: Props[b],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[b] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[b]]
   inline def h(
     tagName: br,
     props: Props[br],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[br] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[br]]
   inline def h(
     tagName: button,
     props: Props[button],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[button] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[button]]
   inline def h(
     tagName: canvas,
     props: Props[canvas],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[canvas] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[canvas]]
   inline def h(
     tagName: caption,
     props: Props[caption],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[caption] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[caption]]
   inline def h(
@@ -467,7 +468,7 @@ object mod {
     tagName: cite,
     props: Props[cite],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[cite] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[cite]]
   inline def h(
@@ -481,42 +482,42 @@ object mod {
     tagName: code,
     props: Props[code],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[code] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[code]]
   inline def h(
     tagName: colgroup,
     props: Props[colgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[colgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[colgroup]]
   inline def h(
     tagName: col,
     props: Props[col],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[col] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[col]]
   inline def h(
     tagName: datalist,
     props: Props[datalist],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[datalist] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[datalist]]
   inline def h(
     tagName: data,
     props: Props[data],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[data] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[data]]
   inline def h(
     tagName: dd,
     props: Props[dd],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[dd] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dd]]
   inline def h(
@@ -530,7 +531,7 @@ object mod {
     tagName: del,
     props: Props[del],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[del] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[del]]
   inline def h(
@@ -544,42 +545,42 @@ object mod {
     tagName: details,
     props: Props[details],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[details] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[details]]
   inline def h(
     tagName: dfn,
     props: Props[dfn],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[dfn] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dfn]]
   inline def h(
     tagName: dialog,
     props: Props[dialog],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dialog]]
   inline def h(
     tagName: div,
     props: Props[div],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[div] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[div]]
   inline def h(
     tagName: dl,
     props: Props[dl],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[dl] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dl]]
   inline def h(
     tagName: dt,
     props: Props[dt],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[dt] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dt]]
   inline def h(
@@ -593,14 +594,14 @@ object mod {
     tagName: embed,
     props: Props[embed],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[embed] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[embed]]
   inline def h(
     tagName: em,
     props: Props[em],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[em] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[em]]
   inline def h(
@@ -782,21 +783,21 @@ object mod {
     tagName: fieldset,
     props: Props[fieldset],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[fieldset] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[fieldset]]
   inline def h(
     tagName: figcaption,
     props: Props[figcaption],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[figcaption] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[figcaption]]
   inline def h(
     tagName: figure,
     props: Props[figure],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[figure] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[figure]]
   inline def h(
@@ -810,7 +811,7 @@ object mod {
     tagName: footer,
     props: Props[footer],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[footer] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[footer]]
   inline def h(
@@ -824,7 +825,7 @@ object mod {
     tagName: form,
     props: Props[form],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[form] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[form]]
   inline def h(
@@ -838,84 +839,84 @@ object mod {
     tagName: h1,
     props: Props[h1],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h1] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h1]]
   inline def h(
     tagName: h2,
     props: Props[h2],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h2] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h2]]
   inline def h(
     tagName: h3,
     props: Props[h3],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h3] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h3]]
   inline def h(
     tagName: h4,
     props: Props[h4],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h4] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h4]]
   inline def h(
     tagName: h5,
     props: Props[h5],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h5] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h5]]
   inline def h(
     tagName: h6,
     props: Props[h6],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[h6] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h6]]
   inline def h(
     tagName: header,
     props: Props[header],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[header] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[header]]
   inline def h(
     tagName: head,
     props: Props[head],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[head] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[head]]
   inline def h(
     tagName: hgroup,
     props: Props[hgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[hgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[hgroup]]
   inline def h(
     tagName: hr,
     props: Props[hr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[hr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[hr]]
   inline def h(
     tagName: html,
     props: Props[html],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[html] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[html]]
   inline def h(
     tagName: iframe,
     props: Props[iframe],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[iframe] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[iframe]]
   inline def h(
@@ -929,49 +930,49 @@ object mod {
     tagName: img,
     props: Props[img],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[img] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[img]]
   inline def h(
     tagName: input,
     props: Props[input],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[input] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[input]]
   inline def h(
     tagName: ins,
     props: Props[ins],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[ins] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ins]]
   inline def h(
     tagName: i,
     props: Props[i],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[i] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[i]]
   inline def h(
     tagName: kbd,
     props: Props[kbd],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[kbd] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[kbd]]
   inline def h(
     tagName: label,
     props: Props[label],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[label] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[label]]
   inline def h(
     tagName: legend,
     props: Props[legend],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[legend] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[legend]]
   inline def h(
@@ -992,28 +993,28 @@ object mod {
     tagName: link,
     props: Props[link],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[link] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[link]]
   inline def h(
     tagName: li,
     props: Props[li],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[li] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[li]]
   inline def h(
     tagName: main,
     props: Props[main],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[main] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[main]]
   inline def h(
     tagName: map,
     props: Props[map],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[map] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[map]]
   inline def h(
@@ -1027,7 +1028,7 @@ object mod {
     tagName: mark,
     props: Props[mark],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[mark] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[mark]]
   inline def h(
@@ -1041,7 +1042,7 @@ object mod {
     tagName: menu,
     props: Props[menu],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[menu] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[menu]]
   inline def h(
@@ -1055,14 +1056,14 @@ object mod {
     tagName: meta,
     props: Props[meta],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[meta] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[meta]]
   inline def h(
     tagName: meter,
     props: Props[meter],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[meter] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[meter]]
   inline def h(
@@ -1076,42 +1077,42 @@ object mod {
     tagName: nav,
     props: Props[nav],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[nav] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[nav]]
   inline def h(
     tagName: noscript,
     props: Props[noscript],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[noscript] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[noscript]]
   inline def h(
     tagName: ol,
     props: Props[ol],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[ol] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ol]]
   inline def h(
     tagName: optgroup,
     props: Props[optgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[optgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[optgroup]]
   inline def h(
     tagName: option,
     props: Props[option],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[option] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[option]]
   inline def h(
     tagName: output,
     props: Props[output],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[output] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[output]]
   inline def h(
@@ -1132,7 +1133,7 @@ object mod {
     tagName: picture,
     props: Props[picture],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[picture] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[picture]]
   inline def h(
@@ -1153,28 +1154,28 @@ object mod {
     tagName: p,
     props: Props[p],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[p] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[p]]
   inline def h(
     tagName: pre,
     props: Props[pre],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[pre] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[pre]]
   inline def h(
     tagName: progress,
     props: Props[progress],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[progress] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[progress]]
   inline def h(
     tagName: q,
     props: Props[q],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[q] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[q]]
   inline def h(
@@ -1195,49 +1196,56 @@ object mod {
     tagName: rp,
     props: Props[rp],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[rp] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[rp]]
   inline def h(
     tagName: rt,
     props: Props[rt],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[rt] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[rt]]
   inline def h(
     tagName: ruby,
     props: Props[ruby],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[ruby] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ruby]]
   inline def h(
     tagName: samp,
     props: Props[samp],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[samp] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[samp]]
   inline def h(
     tagName: script,
     props: Props[script],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
     ]
   ): VNode[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[script]]
+  inline def h(
+    tagName: search,
+    props: Props[search],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+    ]
+  ): VNode[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[search]]
   inline def h(
     tagName: section,
     props: Props[section],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[section]]
   inline def h(
     tagName: select,
     props: Props[select],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[select] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[select]]
   inline def h(
@@ -1251,35 +1259,35 @@ object mod {
     tagName: slot,
     props: Props[slot],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[slot]]
   inline def h(
     tagName: small,
     props: Props[small],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[small] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[small]]
   inline def h(
     tagName: source,
     props: Props[source],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[source] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[source]]
   inline def h(
     tagName: span,
     props: Props[span],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[span] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[span]]
   inline def h(
     tagName: s,
     props: Props[s],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[s] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[s]]
   inline def h(
@@ -1293,35 +1301,35 @@ object mod {
     tagName: strong,
     props: Props[strong],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[strong] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[strong]]
   inline def h(
     tagName: style,
     props: Props[style],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
     ]
   ): VNode[style] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[style]]
   inline def h(
     tagName: sub,
     props: Props[sub],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[sub] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[sub]]
   inline def h(
     tagName: summary,
     props: Props[summary],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[summary] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[summary]]
   inline def h(
     tagName: sup,
     props: Props[sup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[sup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[sup]]
   inline def h(
@@ -1349,28 +1357,28 @@ object mod {
     tagName: table,
     props: Props[table],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[table] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[table]]
   inline def h(
     tagName: tbody,
     props: Props[tbody],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[tbody] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tbody]]
   inline def h(
     tagName: td,
     props: Props[td],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[td] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[td]]
   inline def h(
     tagName: template,
     props: Props[template],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[template] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[template]]
   inline def h(
@@ -1384,7 +1392,7 @@ object mod {
     tagName: textarea,
     props: Props[textarea],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[textarea] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[textarea]]
   inline def h(
@@ -1398,49 +1406,49 @@ object mod {
     tagName: tfoot,
     props: Props[tfoot],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[tfoot] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tfoot]]
   inline def h(
     tagName: thead,
     props: Props[thead],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[thead] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[thead]]
   inline def h(
     tagName: th,
     props: Props[th],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[th] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[th]]
   inline def h(
     tagName: time,
     props: Props[time],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[time] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[time]]
   inline def h(
     tagName: title,
     props: Props[title],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.animate, typings.superfine.superfineStrings.animateMotion */ Any
     ]
   ): VNode[title] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[title]]
   inline def h(
     tagName: track,
     props: Props[track],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[track] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[track]]
   inline def h(
     tagName: tr,
     props: Props[tr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[tr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tr]]
   inline def h(
@@ -1454,14 +1462,14 @@ object mod {
     tagName: ul,
     props: Props[ul],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[ul] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ul]]
   inline def h(
     tagName: u,
     props: Props[u],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[u] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[u]]
   inline def h(
@@ -1475,7 +1483,7 @@ object mod {
     tagName: video,
     props: Props[video],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[video] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[video]]
   inline def h(
@@ -1489,7 +1497,7 @@ object mod {
     tagName: wbr,
     props: Props[wbr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
     ]
   ): VNode[wbr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[wbr]]
   
@@ -1756,6 +1764,8 @@ object mod {
   inline def h_samp(tagName: samp, props: Props[samp]): VNode[samp] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[samp]]
   
   inline def h_script(tagName: script, props: Props[script]): VNode[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[script]]
+  
+  inline def h_search(tagName: search, props: Props[search]): VNode[search] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[search]]
   
   inline def h_section(tagName: section, props: Props[section]): VNode[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[section]]
   
@@ -2097,6 +2107,8 @@ object mod {
   
   inline def patch_script(rootElement: HTMLScriptElement, vNode: VNode[script]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def patch_search(rootElement: HTMLElement, vNode: VNode[search]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def patch_section(rootElement: HTMLElement, vNode: VNode[section]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_select(rootElement: HTMLSelectElement, vNode: VNode[select]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2173,9 +2185,9 @@ object mod {
   
   inline def patch_wbr(rootElement: HTMLElement, vNode: VNode[wbr]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Child[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] = String | VNode[TTagName]
+  type Child[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] = String | VNode[TTagName]
   
-  type Children[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] = Child[TTagName] | js.Array[Child[TTagName]]
+  type Children[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] = Child[TTagName] | js.Array[Child[TTagName]]
   
   /* Inlined std.HTMLElementTagNameMap & std.Pick<std.SVGElementTagNameMap, std.Exclude<keyof std.SVGElementTagNameMap, keyof std.HTMLElementTagNameMap>> */
   trait HtmlOrSvgElementTagNameMap extends StObject {
@@ -2528,6 +2540,9 @@ object mod {
     var script: HTMLScriptElement
     
     /* standard dom */
+    var search: HTMLElement
+    
+    /* standard dom */
     var section: HTMLElement
     
     /* standard dom */
@@ -2766,6 +2781,7 @@ object mod {
       s: HTMLElement,
       samp: HTMLElement,
       script: HTMLScriptElement,
+      search: HTMLElement,
       section: HTMLElement,
       select: HTMLSelectElement,
       set: SVGSetElement,
@@ -2805,7 +2821,7 @@ object mod {
       view: SVGViewElement,
       wbr: HTMLElement
     ): HtmlOrSvgElementTagNameMap = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlOrSvgElementTagNameMap]
@@ -3078,6 +3094,8 @@ object mod {
       
       inline def setScript(value: HTMLScriptElement): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
+      inline def setSearch(value: HTMLElement): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
       inline def setSection(value: HTMLElement): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
       inline def setSelect(value: HTMLSelectElement): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
@@ -3157,24 +3175,24 @@ object mod {
   }
   
   @js.native
-  trait Props[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] extends StObject {
+  trait Props[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] extends StObject {
     
     val key: js.UndefOr[Double | String] = js.native
   }
   
-  trait VNode[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] extends StObject {
+  trait VNode[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] extends StObject {
     
     val name: TTagName
   }
   object VNode {
     
-    inline def apply[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */](name: TTagName): VNode[TTagName] = {
+    inline def apply[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */](name: TTagName): VNode[TTagName] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[VNode[TTagName]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] (val x: Self & VNode[TTagName]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] (val x: Self & VNode[TTagName]) extends AnyVal {
       
       inline def setName(value: TTagName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -3185,7 +3203,7 @@ object mod {
     object JSX {
       
       type Element = VNode[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any
           ]
       
       /* Inlined {readonly [ TTagName in keyof superfine.superfine.HtmlOrSvgElementTagNameMap ]: superfine.superfine.Props<TTagName>} */
@@ -3455,6 +3473,8 @@ object mod {
         
         val script: Props[typings.superfine.superfineStrings.script]
         
+        val search: Props[typings.superfine.superfineStrings.search]
+        
         val section: Props[typings.superfine.superfineStrings.section]
         
         val select: Props[typings.superfine.superfineStrings.select]
@@ -3666,6 +3686,7 @@ object mod {
           s: Props[s],
           samp: Props[samp],
           script: Props[script],
+          search: Props[search],
           section: Props[section],
           select: Props[select],
           set: Props[set],
@@ -3705,7 +3726,7 @@ object mod {
           view: Props[view],
           wbr: Props[wbr]
         ): IntrinsicElements = {
-          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
           __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
           __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
@@ -3977,6 +3998,8 @@ object mod {
           inline def setSamp(value: Props[samp]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
           
           inline def setScript(value: Props[script]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+          
+          inline def setSearch(value: Props[search]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
           
           inline def setSection(value: Props[section]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           

@@ -26,7 +26,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     */
@@ -38,7 +37,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param group
@@ -50,7 +48,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     */
@@ -62,7 +59,6 @@ Instantiable0[Any] {
     * @return {string}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param name
@@ -76,7 +72,6 @@ Instantiable0[Any] {
     * @return {string[]}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param name
@@ -89,7 +84,6 @@ Instantiable0[Any] {
     * @return {int}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param group
@@ -105,7 +99,6 @@ Instantiable0[Any] {
     * @return  {string}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param group
@@ -120,7 +113,6 @@ Instantiable0[Any] {
     * @return  {int} the index of this step in the assistant (1-based) based on the order in which the steps were added.
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @return
@@ -133,7 +125,6 @@ Instantiable0[Any] {
     * @return {nlobjAssistantStep}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param help
@@ -147,7 +138,6 @@ Instantiable0[Any] {
     * @return {void}
     *
     * @method
-    * @memberOf nlobjAssistantStep
     *
     * @since 2009.2
     * @param label

@@ -11,24 +11,24 @@ sealed trait LineJoinStyle extends StObject
 object LineJoinStyle extends StObject {
   
   /**
-    * The stroke join is beveled.
-    */
+  			 * The stroke join is beveled.
+  			 */
   @js.native
   sealed trait Bevel
     extends StObject
        with LineJoinStyle
   
   /**
-    * The line join is mitered.
-    */
+  			 * The line join is mitered.
+  			 */
   @js.native
   sealed trait Miter
     extends StObject
        with LineJoinStyle
   
   /**
-    * The line join is round.
-    */
+  			 * The line join is round.
+  			 */
   @js.native
   sealed trait Round
     extends StObject

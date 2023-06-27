@@ -8,12 +8,12 @@ trait PathRepoRulesetid extends StObject {
   
   var path: RepoRulesetid
   
-  var query: Includesparents
+  var query: js.UndefOr[`394`] = js.undefined
 }
 object PathRepoRulesetid {
   
-  inline def apply(path: RepoRulesetid, query: Includesparents): PathRepoRulesetid = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: RepoRulesetid): PathRepoRulesetid = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathRepoRulesetid]
   }
   
@@ -22,6 +22,8 @@ object PathRepoRulesetid {
     
     inline def setPath(value: RepoRulesetid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: Includesparents): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `394`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

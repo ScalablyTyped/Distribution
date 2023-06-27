@@ -27,8 +27,9 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(options: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def default(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param settings because its type Array<void> | [Options | undefined] is not an array type */ settings: js.Array[js.UndefOr[Options | Unit]]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Node = Root | Content
   

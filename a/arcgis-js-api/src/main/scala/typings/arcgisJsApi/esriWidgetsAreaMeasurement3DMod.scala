@@ -11,10 +11,10 @@ object esriWidgetsAreaMeasurement3DMod {
   @JSImport("esri/widgets/AreaMeasurement3D", JSImport.Namespace)
   @js.native
   /**
-    * The AreaMeasurement3D widget calculates and displays the area and perimeter of a polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html)
-    */
+  		 * The AreaMeasurement3D widget calculates and displays the area and perimeter of a polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html)
+  		 */
   open class ^ ()
     extends StObject
        with AreaMeasurement3D {

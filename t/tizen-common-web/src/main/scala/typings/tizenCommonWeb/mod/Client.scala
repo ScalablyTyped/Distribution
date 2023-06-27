@@ -26,9 +26,9 @@ trait Client extends StObject {
     * @param successCallback The method to invoked when a presence event is received.
     *
     * @returns The watchID which can be used to remove the listener.
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def addPresenceEventListener(
     hostAddress: String,
@@ -82,9 +82,9 @@ trait Client extends StObject {
     * @param successCallback The method to invoked when device information is found.
     * @param errorCallback The method to invoke on failure of getting device information.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def findDeviceInfo(
     hostAddress: String,
@@ -159,9 +159,9 @@ trait Client extends StObject {
     * @param successCallback The method to invoked when platform information is found.
     * @param errorCallback The method to invoke on failure of getting platform information.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def findPlatformInfo(
     hostAddress: String,
@@ -236,9 +236,9 @@ trait Client extends StObject {
     * @param successCallback The method to invoked when a resource is found.
     * @param errorCallback The method to invoke on failure of finding resource.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def findResource(
     hostAddress: String,
@@ -290,9 +290,9 @@ trait Client extends StObject {
     *
     * @param watchId The watchID identifier returned by the addPresenceEventListener() method.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     *
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped or listener for given watchId was not found.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped or listener for given watchId was not found.
     */
   def removePresenceEventListener(watchId: Double): Unit = js.native
 }

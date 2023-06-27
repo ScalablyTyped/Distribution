@@ -4,20 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry) */
 trait ResizeObserverEntry extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/borderBoxSize) */
   /* standard dom */
   val borderBoxSize: js.Array[ResizeObserverSize]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentBoxSize) */
   /* standard dom */
   val contentBoxSize: js.Array[ResizeObserverSize]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/contentRect) */
   /* standard dom */
   val contentRect: DOMRectReadOnly
   
   /* standard dom */
   val devicePixelContentBoxSize: js.Array[ResizeObserverSize]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ResizeObserverEntry/target) */
   /* standard dom */
   val target: Element
 }

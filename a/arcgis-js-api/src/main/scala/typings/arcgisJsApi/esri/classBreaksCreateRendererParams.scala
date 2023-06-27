@@ -13,81 +13,88 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait classBreaksCreateRendererParams extends StObject {
   
   /**
-    * The classification method used for generating breaks.
-    *
-    * @default natural-breaks
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The classification method used for generating breaks.
+  		 *
+  		 * @default natural-breaks
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var classificationMethod: js.UndefOr[
     `equal-interval` | `natural-breaks` | quantile | `standard-deviation` | `defined-interval`
   ] = js.undefined
   
   /**
-    * The color ramp to apply to the renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The color ramp to apply to the renderer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var colorRamp: js.UndefOr[AlgorithmicColorRamp | MultipartColorRamp] = js.undefined
   
   /**
-    * The colors to apply to each class break.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The colors to apply to each class break.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var colors: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
-    * Only applicable when `classificationMethod` is `defined-interval`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * Only applicable when `classificationMethod` is `defined-interval`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var definedInterval: js.UndefOr[Double] = js.undefined
   
   /**
-    * The field whose data will be used in the classification.
-    *
-    * @default value
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The field whose data will be used in the classification.
+  		 *
+  		 * @default value
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var field: js.UndefOr[String] = js.undefined
   
   /**
-    * The input layer for which the renderer is generated.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The input layer for which the renderer is generated.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var layer: ImageryLayer | ImageryTileLayer | WCSLayer
   
   /**
-    * The number of class breaks to generate for the classification.
-    *
-    * @default 5
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * The number of class breaks to generate for the classification.
+  		 *
+  		 * @default 5
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var numClasses: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the rule for how the requested image should be rendered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * Specifies the function for how the requested image should be processed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
+  var rasterFunction: js.UndefOr[RasterFunction] = js.undefined
+  
+  /**
+  		 * Deprecated since 4.27.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var renderingRule: js.UndefOr[RasterFunction] = js.undefined
   
   /**
-    * Allows for cancelable requests.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * Allows for cancelable requests.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Only applicable to multidimensional datasets where a raster layer can contain more than one variable (such as temperature, humidity, wind speed) with different statistics.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
-    */
+  		 * Only applicable to multidimensional datasets where a raster layer can contain more than one variable (such as temperature, humidity, wind speed) with different statistics.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-classBreaks.html#createRenderer)
+  		 */
   var variableName: js.UndefOr[String] = js.undefined
 }
 object classBreaksCreateRendererParams {
@@ -127,6 +134,10 @@ object classBreaksCreateRendererParams {
     inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
     inline def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
+    
+    inline def setRasterFunction(value: RasterFunction): Self = StObject.set(x, "rasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setRasterFunctionUndefined: Self = StObject.set(x, "rasterFunction", js.undefined)
     
     inline def setRenderingRule(value: RasterFunction): Self = StObject.set(x, "renderingRule", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__icu-messageformat-parser
 
-Typings are for version 2.4.0
+Typings are for version 2.6.0
 
 ## Library description:
 Hand-written ICU MessageFormat parser with compatible output as [`intl-messageformat-parser`](https://www.npmjs.com/package/intl-messageformat-parser) but 6 - 10 times as fast.

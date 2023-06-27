@@ -352,6 +352,14 @@ open class Chart_ protected () extends StObject {
   def getFilename(): String = js.native
   
   /**
+    * Return the current options of the chart, but only those that differ from
+    * default options. Items that can be either an object or an array of
+    * objects, like `series`, `xAxis` and `yAxis`, are always returned as
+    * array.
+    */
+  def getOptions(): Unit = js.native
+  
+  /**
     * Return an SVG representation of the chart.
     *
     * @param chartOptions
@@ -520,7 +528,7 @@ open class Chart_ protected () extends StObject {
     *
     * @param chartX
     *        Keep this chart position stationary if possible. This is used
-    *        for example in mousewheel events, where the area under the
+    *        for example in `mousewheel` events, where the area under the
     *        mouse should be fixed as we zoom in.
     *
     * @param chartY
@@ -955,7 +963,16 @@ open class Chart_ protected () extends StObject {
   
   /**
     * The original options given to the constructor or a chart factory like
-    * Highcharts.chart and Highcharts.stockChart.
+    * Highcharts.chart and Highcharts.stockChart. The original options are
+    * shallow copied to avoid mutation. The copy, `chart.userOptions`, may
+    * later be mutated to reflect updated options throughout the lifetime of
+    * the chart.
+    *
+    * For collections, like `series`, `xAxis` and `yAxis`, the chart user
+    * options should always be reflected by the item user option, so for
+    * example the following should always be true:
+    *
+    * `chart.xAxis[0].userOptions === chart.userOptions.xAxis[0]`
     */
   var userOptions: Options = js.native
   

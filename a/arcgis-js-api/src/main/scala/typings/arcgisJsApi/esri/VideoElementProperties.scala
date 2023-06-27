@@ -9,10 +9,10 @@ trait VideoElementProperties
      with MediaElementBaseProperties {
   
   /**
-    * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html#video)
-    */
+  		 * The video element to be added to the [media layer's source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-VideoElement.html#video)
+  		 */
   var video: js.UndefOr[String | Any] = js.undefined
 }
 object VideoElementProperties {

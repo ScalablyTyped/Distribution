@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrimitiveOverride extends StObject {
   
   /**
-    * The primitive name this override applies to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * The primitive name this override applies to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var primitiveName: String
   
   /**
-    * The name of the property in the primitive this override applies to (e.g.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * The name of the property in the primitive this override applies to (e.g.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var propertyName: String
   
   var `type`: CIMPrimitiveOverride
   
   /**
-    * Contains the Arcade expression that returns a value to be applied to the property on the primitive.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
-    */
+  		 * Contains the Arcade expression that returns a value to be applied to the property on the primitive.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#PrimitiveOverride)
+  		 */
   var valueExpressionInfo: PrimitiveOverrideValueExpressionInfo
 }
 object PrimitiveOverride {

@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiCoreRoutingTargetMod.TargetSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -87,7 +88,7 @@ object sapUiCoreRoutingTargetsMod {
   trait TargetInfo extends StObject {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Since 1.90. Whether the router of the "Component" target ignores the browser hash when it's re-initialized.
       * This parameter only has effect when the target is of type "Component" and its router is currently stopped.
@@ -97,14 +98,14 @@ object sapUiCoreRoutingTargetsMod {
     var ignoreInitialHash: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Defines the name of the target that is going to be displayed
       */
     var name: String
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * A prefix that is used for reserving a dedicated section in the browser hash for the router of this target.
       * This needs to be set only for target that has type "Component"
@@ -112,14 +113,14 @@ object sapUiCoreRoutingTargetsMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Whether the titleChanged event from this target should be propagated to the parent or not
       */
     var propagateTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Whether the target is relevant to the current matched route or not. If 'true', then the dynamic target
       * is linked to the route's life cycle. When switching to a different route, then the dynamic target will
@@ -175,10 +176,9 @@ object sapUiCoreRoutingTargetsMod {
       */
     sName: String,
       /**
-      * Options of a target. The option names are the same as the ones in "oOptions.targets.anyName" of {@link
-      * #constructor}.
+      * Options of a target. The option names are the same as the ones in "oOptions.targets.anyName" of {@link #constructor}.
       */
-    oTargetOptions: js.Object
+    oTargetOptions: TargetSettings
     ): this.type = js.native
     
     /**
@@ -189,15 +189,17 @@ object sapUiCoreRoutingTargetsMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachDisplay(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachDisplay(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit]
+    ): this.type = js.native
+    def attachDisplay(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.routing.Targets` itself
       */
@@ -220,7 +222,7 @@ object sapUiCoreRoutingTargetsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit]
     ): this.type = js.native
     def attachDisplay(
       /**
@@ -231,7 +233,7 @@ object sapUiCoreRoutingTargetsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.routing.Targets` itself
       */
@@ -246,15 +248,17 @@ object sapUiCoreRoutingTargetsMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachTitleChanged(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachTitleChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit]
+    ): this.type = js.native
+    def attachTitleChanged(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.routing.Targets` itself
       */
@@ -277,7 +281,7 @@ object sapUiCoreRoutingTargetsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit]
     ): this.type = js.native
     def attachTitleChanged(
       /**
@@ -288,7 +292,7 @@ object sapUiCoreRoutingTargetsMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.routing.Targets` itself
       */
@@ -302,15 +306,17 @@ object sapUiCoreRoutingTargetsMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachDisplay(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachDisplay(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit]
+    ): this.type = js.native
+    def detachDisplay(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ TargetsDisplayEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -324,15 +330,17 @@ object sapUiCoreRoutingTargetsMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachTitleChanged(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachTitleChanged(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit]
+    ): this.type = js.native
+    def detachTitleChanged(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ TargetsTitleChangedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -350,7 +358,7 @@ object sapUiCoreRoutingTargetsMod {
       * of target names or target info objects.
       */
     vTargets: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -362,7 +370,7 @@ object sapUiCoreRoutingTargetsMod {
       * data will also be passed to them.
       */
     oData: js.Object
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -375,11 +383,11 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: js.Object,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -392,18 +400,18 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: Unit,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
       * of target names or target info objects.
       */
     vTargets: js.Array[String | TargetInfo]
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -415,7 +423,7 @@ object sapUiCoreRoutingTargetsMod {
       * data will also be passed to them.
       */
     oData: js.Object
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -428,11 +436,11 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: js.Object,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -445,18 +453,18 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: Unit,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
       * of target names or target info objects.
       */
     vTargets: TargetInfo
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -468,7 +476,7 @@ object sapUiCoreRoutingTargetsMod {
       * data will also be passed to them.
       */
     oData: js.Object
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -481,11 +489,11 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: js.Object,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     def display(
       /**
       * Either the target name or a target info object. To display multiple targets you may also pass an array
@@ -498,11 +506,11 @@ object sapUiCoreRoutingTargetsMod {
       */
     oData: Unit,
       /**
-      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged
-      * titleChanged} event
+      * the name of the target from which the title option is taken for firing the {@link sap.ui.core.routing.Targets#event:titleChanged titleChanged }
+      * event
       */
     sTitleTarget: String
-    ): Targets | js.Promise[Any] = js.native
+    ): this.type | js.Promise[js.Array[typings.openui5.anon.TargetInfo]] = js.native
     
     /**
       * Fires event {@link #event:created created} to attached listeners.
@@ -513,7 +521,7 @@ object sapUiCoreRoutingTargetsMod {
     def fireDisplay(/**
       * Parameters to pass along with the event
       */
-    oParameters: js.Object): this.type = js.native
+    oParameters: Targets$DisplayEventParameters): this.type = js.native
     
     /**
       * Returns a target by its name (if you pass myTarget: { view: "myView" }) in the config myTarget is the
@@ -569,4 +577,112 @@ object sapUiCoreRoutingTargetsMod {
       */
     def getViews(): typings.openui5.sapUiCoreRoutingViewsMod.default = js.native
   }
+  
+  trait Targets$DisplayEventParameters extends StObject {
+    
+    /**
+      * The options object passed to the constructor {@link sap.ui.core.routing.Targets#constructor}
+      */
+    var config: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The control that now contains the view in the controlAggregation
+      */
+    var control: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The data passed into the {@link sap.ui.core.routing.Targets#display} function
+      */
+    var data: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The name of the target firing the event
+      */
+    var name: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Whether the target is relevant to the matched route or not
+      */
+    var routeRelevant: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The view that got displayed.
+      */
+    var view: js.UndefOr[js.Object] = js.undefined
+  }
+  object Targets$DisplayEventParameters {
+    
+    inline def apply(): Targets$DisplayEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Targets$DisplayEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Targets$DisplayEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
+      inline def setControl(value: js.Object): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+      
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setName(value: js.Object): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setRouteRelevant(value: js.Object): Self = StObject.set(x, "routeRelevant", value.asInstanceOf[js.Any])
+      
+      inline def setRouteRelevantUndefined: Self = StObject.set(x, "routeRelevant", js.undefined)
+      
+      inline def setView(value: js.Object): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    }
+  }
+  
+  trait Targets$TitleChangedEventParameters extends StObject {
+    
+    /**
+      * The name of the displayed target
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The current displayed title
+      */
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object Targets$TitleChangedEventParameters {
+    
+    inline def apply(): Targets$TitleChangedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Targets$TitleChangedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Targets$TitleChangedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  type TargetsDisplayEvent = typings.openui5.sapUiBaseEventMod.default[Targets$DisplayEventParameters]
+  
+  type TargetsDisplayEventParameters = Targets$DisplayEventParameters
+  
+  type TargetsTitleChangedEvent = typings.openui5.sapUiBaseEventMod.default[Targets$TitleChangedEventParameters]
+  
+  type TargetsTitleChangedEventParameters = Targets$TitleChangedEventParameters
 }

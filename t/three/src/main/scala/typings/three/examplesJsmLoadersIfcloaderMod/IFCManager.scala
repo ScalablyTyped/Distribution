@@ -21,8 +21,8 @@ open class IFCManager () extends StObject {
   
   /**
     * Adds the properties of a model as JSON data.
-    * @modelID ID of the IFC model.
-    * @data: data as an object where the keys are the expressIDs and the values the properties.
+    * @param modelID ID of the IFC model.
+    * @param data data as an object where the keys are the expressIDs and the values the properties.
     */
   def addModelJSONData(modelID: Double, data: NumberDictionary[JSONObject]): Unit = js.native
   
@@ -33,15 +33,15 @@ open class IFCManager () extends StObject {
   
   /**
     * Closes the specified model and deletes it from the [scene](https://threejs.org/docs/#api/en/scenes/Scene).
-    * @modelID ID of the IFC model.
-    * @scene Scene where the model is (if it's located in a scene).
+    * @param modelID ID of the IFC model.
+    * @param scene Scene where the model is (if it's located in a scene).
     */
   def close(modelID: Double): Unit = js.native
   def close(modelID: Double, scene: Scene): Unit = js.native
   
   /**
     * Creates a new geometric subset.
-    * @config A configuration object with the following options:
+    * @param config A configuration object with the following options:
     * - **scene**: `THREE.Object3D` where the model is located.
     * - **modelID**: ID of the model.
     * - **ids**: Express IDs of the items of the model that will conform the subset.
@@ -67,41 +67,41 @@ open class IFCManager () extends StObject {
     * import { IFCWALLSTANDARDCASE } from 'web-ifc';
     * const walls = ifcLoader.getAllItemsOfType(IFCWALLSTANDARDCASE);
     * ```
-    * @modelID ID of the IFC model.
-    * @ifcType type of IFC items to get.
-    * @verbose If false (default), this only gets IDs. If true, this also gets the native properties of all the fetched items.
+    * @param modelID ID of the IFC model.
+    * @param ifcType type of IFC items to get.
+    * @param verbose If false (default), this only gets IDs. If true, this also gets the native properties of all the fetched items.
     */
   def getAllItemsOfType(modelID: Double, `type`: Double, verbose: Boolean): js.Array[Any] = js.native
   
   /**
     * Gets the **Express ID** to which the given face belongs.
     * This ID uniquely identifies this entity within this IFC file.
-    * @geometry The geometry of the IFC model.
-    * @faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
+    * @param geometry The geometry of the IFC model.
+    * @param faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
     */
   def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], faceIndex: Double): js.UndefOr[Double] = js.native
   
   /**
     * Gets the ifc type of the specified item.
-    * @modelID ID of the IFC model.
-    * @id Express ID of the element.
+    * @param modelID ID of the IFC model.
+    * @param id Express ID of the element.
     */
   def getIfcType(modelID: Double, id: Double): String = js.native
   
   /**
     * Gets the native properties of the given element.
-    * @modelID ID of the IFC model.
-    * @id Express ID of the element.
-    * @recursive Wether you want to get the information of the referenced elements recursively.
+    * @param modelID ID of the IFC model.
+    * @param id Express ID of the element.
+    * @param recursive Wether you want to get the information of the referenced elements recursively.
     */
   def getItemProperties(modelID: Double, id: Double): Any = js.native
   def getItemProperties(modelID: Double, id: Double, recursive: Boolean): Any = js.native
   
   /**
     * Gets the materials assigned to the given element.
-    * @modelID ID of the IFC model.
-    * @id Express ID of the element.
-    * @recursive If true, this gets the native properties of the referenced elements recursively.
+    * @param modelID ID of the IFC model.
+    * @param id Express ID of the element.
+    * @param recursive If true, this gets the native properties of the referenced elements recursively.
     */
   def getMaterialsProperties(modelID: Double, id: Double): js.Array[Any] = js.native
   def getMaterialsProperties(modelID: Double, id: Double, recursive: Boolean): js.Array[Any] = js.native
@@ -109,9 +109,9 @@ open class IFCManager () extends StObject {
   /**
     * Gets the [property sets](https://standards.buildingsmart.org/IFC/DEV/IFC4_2/FINAL/HTML/schema/ifckernel/lexical/ifcpropertyset.htm)
     * assigned to the given element.
-    * @modelID ID of the IFC model.
-    * @id Express ID of the element.
-    * @recursive If true, this gets the native properties of the referenced elements recursively.
+    * @param modelID ID of the IFC model.
+    * @param id Express ID of the element.
+    * @param recursive If true, this gets the native properties of the referenced elements recursively.
     */
   def getPropertySets(modelID: Double, id: Double): js.Array[Any] = js.native
   def getPropertySets(modelID: Double, id: Double, recursive: Boolean): js.Array[Any] = js.native
@@ -124,15 +124,15 @@ open class IFCManager () extends StObject {
     * one IfcProject that contains one or more IfcSites, that contain one or more
     * IfcBuildings, that contain one or more IfcBuildingStoreys, that contain
     * one or more IfcSpaces.
-    * @modelID ID of the IFC model.
+    * @param modelID ID of the IFC model.
     */
   def getSpatialStructure(modelID: Double): Children = js.native
   
   /**
     * Gets the mesh of the subset with the specified [material](https://threejs.org/docs/#api/en/materials/Material).
     * If no material is given, this returns the subset with the original materials.
-    * @modelID ID of the IFC model.
-    * @material Material assigned to the subset (if any).
+    * @param modelID ID of the IFC model.
+    * @param material Material assigned to the subset (if any).
     */
   def getSubset(modelID: Double): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
   def getSubset(modelID: Double, material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
@@ -141,23 +141,23 @@ open class IFCManager () extends StObject {
     * Gets the properties of the type assigned to the element.
     * For example, if applied to a wall (IfcWall), this would get back the information
     * contained in the IfcWallType assigned to it, if any.
-    * @modelID ID of the IFC model.
-    * @id Express ID of the element.
-    * @recursive If true, this gets the native properties of the referenced elements recursively.
+    * @param modelID ID of the IFC model.
+    * @param id Express ID of the element.
+    * @param recursive If true, this gets the native properties of the referenced elements recursively.
     */
   def getTypeProperties(modelID: Double, id: Double): js.Array[Any] = js.native
   def getTypeProperties(modelID: Double, id: Double, recursive: Boolean): js.Array[Any] = js.native
   
   /**
     * Hides all the items of the specified model
-    * @modelID ID of the IFC model.
+    * @param modelID ID of the IFC model.
     */
   def hideAllItems(modelID: Double): Unit = js.native
   
   /**
     * Hides the selected items in the specified model
-    * @modelID ID of the IFC model.
-    * @ids Express ID of the elements.
+    * @param modelID ID of the IFC model.
+    * @param ids Express ID of the elements.
     */
   def hideItems(modelID: Double, ids: js.Array[Double]): Unit = js.native
   
@@ -171,9 +171,9 @@ open class IFCManager () extends StObject {
   
   /**
     * Removes the specified subset.
-    * @modelID ID of the IFC model.
+    * @param modelID ID of the IFC model.
     * @parent The parent where the subset is (can be any `THREE.Object3D`).
-    * @material Material assigned to the subset, if any.
+    * @param material Material assigned to the subset, if any.
     */
   def removeSubset(modelID: Double): Unit = js.native
   def removeSubset(modelID: Double, parent: Unit, material: typings.three.srcThreeMod.Material): Unit = js.native
@@ -192,7 +192,7 @@ open class IFCManager () extends StObject {
     * Example if web-ifc.wasm is in dist/wasmDir:
     * `ifcLoader.setWasmPath("dist/wasmDir/");`
     *
-    * @path Relative path to web-ifc.wasm.
+    * @param path Relative path to web-ifc.wasm.
     */
   def setWasmPath(path: String): Unit = js.native
   
@@ -205,14 +205,14 @@ open class IFCManager () extends StObject {
   
   /**
     * Shows all the items of the specified model
-    * @modelID ID of the IFC model.
+    * @param modelID ID of the IFC model.
     */
   def showAllItems(modelID: Double): Unit = js.native
   
   /**
     * Shows all the items of the specified model
-    * @modelID ID of the IFC model.
-    * @ids Express ID of the elements.
+    * @param modelID ID of the IFC model.
+    * @param ids Express ID of the elements.
     */
   def showItems(modelID: Double, ids: js.Array[Double]): Unit = js.native
   

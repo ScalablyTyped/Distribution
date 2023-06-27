@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LegendViewModelLayerInfos extends StObject {
   
   /**
-    * A layer to add to the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
-    */
+  		 * A layer to add to the legend.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
+  		 */
   var layer: js.UndefOr[Layer] = js.undefined
   
   /**
-    * Specify a title for the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
-    */
+  		 * Specify a title for the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html#layerInfos)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object LegendViewModelLayerInfos {

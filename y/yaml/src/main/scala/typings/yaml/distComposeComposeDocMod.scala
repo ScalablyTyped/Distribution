@@ -18,10 +18,10 @@ object distComposeComposeDocMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def composeDoc(
+  inline def composeDoc[Contents /* <: ParsedNode */, Strict /* <: Boolean */](
     options: ParseOptions & DocumentOptions & SchemaOptions,
     directives: Directives,
     param2: Document,
     onError: ComposeErrorHandler
-  ): Parsed[ParsedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDoc")(options.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[ParsedNode]]
+  ): Parsed[Contents, Strict] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeDoc")(options.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Parsed[Contents, Strict]]
 }

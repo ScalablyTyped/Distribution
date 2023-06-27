@@ -566,6 +566,12 @@ object turndownStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
+  sealed trait search
+    extends StObject
+       with TagName
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section
     extends StObject
        with TagName

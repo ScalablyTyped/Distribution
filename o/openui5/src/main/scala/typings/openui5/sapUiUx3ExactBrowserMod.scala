@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.AllAttributes
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -152,13 +151,13 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def attachAttributeSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactBrowser` itself
       */
@@ -184,7 +183,7 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def attachAttributeSelected(
       /**
@@ -195,7 +194,7 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactBrowser` itself
       */
@@ -216,13 +215,13 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSave(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactBrowser` itself
       */
@@ -247,7 +246,7 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSave(
       /**
@@ -258,7 +257,7 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.ExactBrowser` itself
       */
@@ -291,13 +290,13 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit]
     ): this.type = js.native
     def detachAttributeSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ ExactBrowserAttributeSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -315,13 +314,13 @@ object sapUiUx3ExactBrowserMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSave(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -329,20 +328,22 @@ object sapUiUx3ExactBrowserMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:attributeSelected attributeSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAttributeSelected(): this.type = js.native
-    def fireAttributeSelected(/**
+    def fireAttributeSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: AllAttributes): this.type = js.native
+    mParameters: ExactBrowser$AttributeSelectedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:save save} to attached listeners.
       *
@@ -384,7 +385,7 @@ object sapUiUx3ExactBrowserMod {
     def getEnableReset(): Boolean = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Gets current value of property {@link #getEnableSave enableSave}.
       *
@@ -441,7 +442,7 @@ object sapUiUx3ExactBrowserMod {
     def getShowHeader(): Boolean = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Gets current value of property {@link #getShowTopList showTopList}.
       *
@@ -465,7 +466,7 @@ object sapUiUx3ExactBrowserMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Gets current value of property {@link #getTopListOrder topListOrder}.
       *
@@ -478,7 +479,7 @@ object sapUiUx3ExactBrowserMod {
     def getTopListOrder(): ExactOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExactOrder * / any */ String) = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Gets current value of property {@link #getTopListWidth topListWidth}.
       *
@@ -590,7 +591,7 @@ object sapUiUx3ExactBrowserMod {
     bEnableReset: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Sets a new value for property {@link #getEnableSave enableSave}.
       *
@@ -688,7 +689,7 @@ object sapUiUx3ExactBrowserMod {
     bShowHeader: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Sets a new value for property {@link #getShowTopList showTopList}.
       *
@@ -724,7 +725,7 @@ object sapUiUx3ExactBrowserMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * Sets a new value for property {@link #getTopListOrder topListOrder}.
       *
@@ -749,7 +750,7 @@ object sapUiUx3ExactBrowserMod {
     sTopListOrder: ExactOrder): this.type = js.native
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Sets a new value for property {@link #getTopListWidth topListWidth}.
       *
@@ -768,6 +769,48 @@ object sapUiUx3ExactBrowserMod {
     iTopListWidth: int): this.type = js.native
   }
   
+  trait ExactBrowser$AttributeSelectedEventParameters extends StObject {
+    
+    /**
+      * Array of all selected ExactAttributes
+      */
+    var allAttributes: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * The attribute which was selected or unselected recently
+      */
+    var attribute: js.UndefOr[typings.openui5.sapUiUx3ExactAttributeMod.default] = js.undefined
+  }
+  object ExactBrowser$AttributeSelectedEventParameters {
+    
+    inline def apply(): ExactBrowser$AttributeSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExactBrowser$AttributeSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactBrowser$AttributeSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAllAttributes(value: js.Object): Self = StObject.set(x, "allAttributes", value.asInstanceOf[js.Any])
+      
+      inline def setAllAttributesUndefined: Self = StObject.set(x, "allAttributes", js.undefined)
+      
+      inline def setAttribute(value: typings.openui5.sapUiUx3ExactAttributeMod.default): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    }
+  }
+  
+  trait ExactBrowser$SaveEventParameters extends StObject
+  
+  type ExactBrowserAttributeSelectedEvent = typings.openui5.sapUiBaseEventMod.default[ExactBrowser$AttributeSelectedEventParameters]
+  
+  type ExactBrowserAttributeSelectedEventParameters = ExactBrowser$AttributeSelectedEventParameters
+  
+  type ExactBrowserSaveEvent = typings.openui5.sapUiBaseEventMod.default[ExactBrowser$SaveEventParameters]
+  
+  type ExactBrowserSaveEventParameters = ExactBrowser$SaveEventParameters
+  
   trait ExactBrowserSettings
     extends StObject
        with ControlSettings {
@@ -775,7 +818,12 @@ object sapUiUx3ExactBrowserMod {
     /**
       * Event is fired when an attribute is selected or unselected.
       */
-    var attributeSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var attributeSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactBrowser$AttributeSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The attributes which shall be available.
@@ -799,7 +847,7 @@ object sapUiUx3ExactBrowserMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.9.2
+      * @since 1.9.2
       *
       * Whether the save button should be available in the header area.
       */
@@ -831,7 +879,9 @@ object sapUiUx3ExactBrowserMod {
     /**
       * Event is fired when an attribute is selected or unselected.
       */
-    var save: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var save: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Whether the header area of the ExactBrowser should be shown.
@@ -841,7 +891,7 @@ object sapUiUx3ExactBrowserMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Whether the top list of the ExactBrowser should be shown. When the property is set to false the application
       * must ensure to select top level attributes appropriately.
@@ -857,7 +907,7 @@ object sapUiUx3ExactBrowserMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.7.1
+      * @since 1.7.1
       *
       * The order how the sublists of the top level list should be displayed.
       */
@@ -866,7 +916,7 @@ object sapUiUx3ExactBrowserMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.7.0
+      * @since 1.7.0
       *
       * Specifies the width of the top list in pixels. The value must be between 70 and 500.
       */
@@ -882,7 +932,9 @@ object sapUiUx3ExactBrowserMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ExactBrowserSettings] (val x: Self) extends AnyVal {
       
-      inline def setAttributeSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "attributeSelected", js.Any.fromFunction1(value))
+      inline def setAttributeSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[ExactBrowser$AttributeSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "attributeSelected", js.Any.fromFunction1(value))
       
       inline def setAttributeSelectedUndefined: Self = StObject.set(x, "attributeSelected", js.undefined)
       
@@ -922,7 +974,7 @@ object sapUiUx3ExactBrowserMod {
       
       inline def setOptionsMenuUndefined: Self = StObject.set(x, "optionsMenu", js.undefined)
       
-      inline def setSave(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
       inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       

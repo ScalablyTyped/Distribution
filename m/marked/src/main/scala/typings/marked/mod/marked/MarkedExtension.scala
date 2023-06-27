@@ -14,6 +14,8 @@ trait MarkedExtension extends StObject {
   
   /**
     * A prefix URL for any relative link.
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-base-url extension instead
     */
   var baseUrl: js.UndefOr[String] = js.undefined
   
@@ -34,11 +36,15 @@ trait MarkedExtension extends StObject {
   
   /**
     * Include an id attribute when emitting headings.
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-gfm-heading-id extension instead
     */
   var headerIds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the prefix for header tag ids.
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-gfm-heading-id extension instead
     */
   var headerPrefix: js.UndefOr[String] = js.undefined
   
@@ -47,6 +53,8 @@ trait MarkedExtension extends StObject {
     * synchronous (returning a string) or asynchronous (callback invoked
     * with an error if any occurred during highlighting and a string
     * if highlighting was successful)
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-highlight extension instead
     */
   var highlight: js.UndefOr[
     js.Function3[
@@ -66,11 +74,15 @@ trait MarkedExtension extends StObject {
   
   /**
     * Set the prefix for code block classes.
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-highlight extension instead
     */
   var langPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Mangle autolinks (<email@domain.com>).
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-mangle extension instead
     */
   var mangle: js.UndefOr[Boolean] = js.undefined
   
@@ -88,11 +100,15 @@ trait MarkedExtension extends StObject {
   
   /**
     * Sanitize the output. Ignore any HTML that has been input.
+    *
+    * @deprecated use an HTML sanitizer on the output instead
     */
   var sanitize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optionally sanitize found HTML with a sanitizer function.
+    *
+    * @deprecated use an HTML sanitizer on the output instead
     */
   var sanitizer: js.UndefOr[js.Function1[/* html */ String, String]] = js.undefined
   
@@ -102,12 +118,9 @@ trait MarkedExtension extends StObject {
   var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Use smarter list behavior than the original markdown. May eventually be default with the old behavior moved into pedantic.
-    */
-  var smartLists: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * Use "smart" typograhic punctuation for things like quotes and dashes.
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-smartypants extension instead
     */
   var smartypants: js.UndefOr[Boolean] = js.undefined
   
@@ -126,6 +139,8 @@ trait MarkedExtension extends StObject {
   
   /**
     * Generate closing slash for self-closing tags (<br/> instead of <br>)
+    *
+    * @deprecated use https://www.npmjs.com/package/marked-xhtml extension instead
     */
   var xhtml: js.UndefOr[Boolean] = js.undefined
 }
@@ -206,10 +221,6 @@ object MarkedExtension {
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
-    
-    inline def setSmartLists(value: Boolean): Self = StObject.set(x, "smartLists", value.asInstanceOf[js.Any])
-    
-    inline def setSmartListsUndefined: Self = StObject.set(x, "smartLists", js.undefined)
     
     inline def setSmartypants(value: Boolean): Self = StObject.set(x, "smartypants", value.asInstanceOf[js.Any])
     

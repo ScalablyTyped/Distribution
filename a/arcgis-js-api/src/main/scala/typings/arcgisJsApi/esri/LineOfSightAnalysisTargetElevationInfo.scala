@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineOfSightAnalysisTargetElevationInfo extends StObject {
   
   /**
-    * Defines how the target is placed with respect to the terrain surface or 3D objects in the scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
-    */
+  		 * Defines how the target is placed with respect to the terrain surface or 3D objects in the scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
+  		 */
   var mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`
   
   /**
-    * An elevation offset, which is added to the vertical position of the target.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
-    */
+  		 * An elevation offset, which is added to the vertical position of the target.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysisTarget.html#elevationInfo)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
 }
 object LineOfSightAnalysisTargetElevationInfo {

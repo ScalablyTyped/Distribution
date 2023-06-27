@@ -11,10 +11,10 @@ object esriGeometrySupportMeshComponentMod {
   @JSImport("esri/geometry/support/MeshComponent", JSImport.Namespace)
   @js.native
   /**
-    * The MeshComponent class is used to apply one or more materials to a single [Mesh](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html)
-    */
+  		 * The MeshComponent class is used to apply one or more materials to a single [Mesh](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html)
+  		 */
   open class ^ ()
     extends StObject
        with MeshComponent {

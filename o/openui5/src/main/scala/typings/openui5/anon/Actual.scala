@@ -7,20 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Actual extends StObject {
   
-  /**
-    * Actual number of items.
-    */
-  var actual: js.UndefOr[int] = js.undefined
+  var actual: int
   
-  /**
-    * Total number of items.
-    */
-  var total: js.UndefOr[int] = js.undefined
+  var total: int
 }
 object Actual {
   
-  inline def apply(): Actual = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(actual: int, total: int): Actual = {
+    val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Actual]
   }
   
@@ -29,10 +23,6 @@ object Actual {
     
     inline def setActual(value: int): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
-    
     inline def setTotal(value: int): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
-    
-    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -262,7 +262,7 @@ object sapUiModelOdataOdatametadataMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:failed failed} to attached listeners.
       *
@@ -275,7 +275,7 @@ object sapUiModelOdataOdatametadataMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:loaded loaded} to attached listeners.
       *
@@ -339,4 +339,16 @@ object sapUiModelOdataOdatametadataMod {
       */
     def refresh(): js.Promise[Any] = js.native
   }
+  
+  trait ODataMetadata$FailedEventParameters extends StObject
+  
+  trait ODataMetadata$LoadedEventParameters extends StObject
+  
+  type ODataMetadataFailedEvent = typings.openui5.sapUiBaseEventMod.default[ODataMetadata$FailedEventParameters]
+  
+  type ODataMetadataFailedEventParameters = ODataMetadata$FailedEventParameters
+  
+  type ODataMetadataLoadedEvent = typings.openui5.sapUiBaseEventMod.default[ODataMetadata$LoadedEventParameters]
+  
+  type ODataMetadataLoadedEventParameters = ODataMetadata$LoadedEventParameters
 }

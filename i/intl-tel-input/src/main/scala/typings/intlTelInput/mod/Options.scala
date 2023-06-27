@@ -19,12 +19,11 @@ trait Options extends StObject {
   var allowDropdown: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If there is just a dial code in the input: remove it on blur or submit,
-    * and re-add it on focus. This is to prevent just a dial code getting
-    * submitted with the form. Requires nationalMode to be set to false.
-    * Default = true
+    * auto insert dial code (A) on init, (B) on user selecting a country, (C) on calling setCountry
+    * also listen for blur/submit and auto remove dial code if that's all there is
+    * @default false
     */
-  var autoHideDialCode: js.UndefOr[Boolean] = js.undefined
+  var autoInsertDialCode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the input's placeholder to an example number for the selected country, and update it if the country changes.
@@ -178,9 +177,9 @@ object Options {
     
     inline def setAllowDropdownUndefined: Self = StObject.set(x, "allowDropdown", js.undefined)
     
-    inline def setAutoHideDialCode(value: Boolean): Self = StObject.set(x, "autoHideDialCode", value.asInstanceOf[js.Any])
+    inline def setAutoInsertDialCode(value: Boolean): Self = StObject.set(x, "autoInsertDialCode", value.asInstanceOf[js.Any])
     
-    inline def setAutoHideDialCodeUndefined: Self = StObject.set(x, "autoHideDialCode", js.undefined)
+    inline def setAutoInsertDialCodeUndefined: Self = StObject.set(x, "autoInsertDialCode", js.undefined)
     
     inline def setAutoPlaceholder(value: off | polite | aggressive): Self = StObject.set(x, "autoPlaceholder", value.asInstanceOf[js.Any])
     

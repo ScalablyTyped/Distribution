@@ -1,12 +1,12 @@
 package typings.openui5
 
-import typings.openui5.anon.OverflowButtonClicked
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiWebcMainLibraryMod.AvatarGroupType
 import typings.openui5.sapUiWebcMainLibraryMod.IAvatar
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -149,13 +149,13 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.AvatarGroup` itself
       */
@@ -180,7 +180,7 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit]
     ): this.type = js.native
     def attachClick(
       /**
@@ -191,7 +191,7 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.AvatarGroup` itself
       */
@@ -212,13 +212,13 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOverflow(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.AvatarGroup` itself
       */
@@ -243,7 +243,7 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachOverflow(
       /**
@@ -254,7 +254,7 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.AvatarGroup` itself
       */
@@ -286,13 +286,13 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit]
     ): this.type = js.native
     def detachClick(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ AvatarGroupClickEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -310,13 +310,13 @@ object sapUiWebcMainAvatarGroupMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachOverflow(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -324,7 +324,7 @@ object sapUiWebcMainAvatarGroupMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:click click} to attached listeners.
       *
@@ -334,10 +334,10 @@ object sapUiWebcMainAvatarGroupMod {
     def fireClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: OverflowButtonClicked): this.type = js.native
+    mParameters: AvatarGroup$ClickEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:overflow overflow} to attached listeners.
       *
@@ -492,6 +492,48 @@ object sapUiWebcMainAvatarGroupMod {
     sType: AvatarGroupType): this.type = js.native
   }
   
+  trait AvatarGroup$ClickEventParameters extends StObject {
+    
+    /**
+      * indicates if the overflow button is clicked
+      */
+    var overflowButtonClicked: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The DOM ref of the clicked item.
+      */
+    var targetRef: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object AvatarGroup$ClickEventParameters {
+    
+    inline def apply(): AvatarGroup$ClickEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AvatarGroup$ClickEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroup$ClickEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setOverflowButtonClicked(value: Boolean): Self = StObject.set(x, "overflowButtonClicked", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowButtonClickedUndefined: Self = StObject.set(x, "overflowButtonClicked", js.undefined)
+      
+      inline def setTargetRef(value: HTMLElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+    }
+  }
+  
+  trait AvatarGroup$OverflowEventParameters extends StObject
+  
+  type AvatarGroupClickEvent = typings.openui5.sapUiBaseEventMod.default[AvatarGroup$ClickEventParameters]
+  
+  type AvatarGroupClickEventParameters = AvatarGroup$ClickEventParameters
+  
+  type AvatarGroupOverflowEvent = typings.openui5.sapUiBaseEventMod.default[AvatarGroup$OverflowEventParameters]
+  
+  type AvatarGroupOverflowEventParameters = AvatarGroup$OverflowEventParameters
+  
   trait AvatarGroupSettings
     extends StObject
        with ControlSettings {
@@ -499,7 +541,12 @@ object sapUiWebcMainAvatarGroupMod {
     /**
       * Fired when the component is activated either with a click/tap or by using the Enter or Space key.
       */
-    var click: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var click: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AvatarGroup$ClickEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the items of the component. Use the `sap.ui.webc.main.Avatar` component as an item.
@@ -515,7 +562,9 @@ object sapUiWebcMainAvatarGroupMod {
     /**
       * Fired when the count of visible `sap.ui.webc.main.Avatar` elements in the component has changed
       */
-    var overflow: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var overflow: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the overflow button of the component. **Note:** We recommend using the `sap.ui.webc.main.Button`
@@ -546,7 +595,9 @@ object sapUiWebcMainAvatarGroupMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: AvatarGroupSettings] (val x: Self) extends AnyVal {
       
-      inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+      inline def setClick(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[AvatarGroup$ClickEventParameters] => Unit
+      ): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
       inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
@@ -558,7 +609,7 @@ object sapUiWebcMainAvatarGroupMod {
       
       inline def setItemsVarargs(value: IAvatar*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setOverflow(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
+      inline def setOverflow(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "overflow", js.Any.fromFunction1(value))
       
       inline def setOverflowButton(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
       

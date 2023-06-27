@@ -26,11 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-model`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-mobile`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version-list`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform-version`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-reduced`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-wow64`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-viewport-height`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-viewport-width`
@@ -124,8 +122,6 @@ object PermissionsPolicyFeature {
   
   inline def `ch-ua-bitness`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-bitness` = "ch-ua-bitness".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-bitness`]
   
-  inline def `ch-ua-full`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full` = "ch-ua-full".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full`]
-  
   inline def `ch-ua-full-version`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version` = "ch-ua-full-version".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version`]
   
   inline def `ch-ua-full-version-list`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version-list` = "ch-ua-full-version-list".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-full-version-list`]
@@ -137,8 +133,6 @@ object PermissionsPolicyFeature {
   inline def `ch-ua-platform`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform` = "ch-ua-platform".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform`]
   
   inline def `ch-ua-platform-version`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform-version` = "ch-ua-platform-version".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-platform-version`]
-  
-  inline def `ch-ua-reduced`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-reduced` = "ch-ua-reduced".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-reduced`]
   
   inline def `ch-ua-wow64`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-wow64` = "ch-ua-wow64".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua-wow64`]
   

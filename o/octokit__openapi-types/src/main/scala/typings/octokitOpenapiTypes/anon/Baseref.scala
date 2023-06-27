@@ -12,8 +12,7 @@ trait Baseref extends StObject {
   /** @description The SHA of the merge group's parent commit. */
   var base_sha: String
   
-  /** SimpleCommit */
-  var head_commit: Treeid
+  var head_commit: Timestamp
   
   /** @description The full ref of the merge group. */
   var head_ref: String
@@ -23,7 +22,7 @@ trait Baseref extends StObject {
 }
 object Baseref {
   
-  inline def apply(base_ref: String, base_sha: String, head_commit: Treeid, head_ref: String, head_sha: String): Baseref = {
+  inline def apply(base_ref: String, base_sha: String, head_commit: Timestamp, head_ref: String, head_sha: String): Baseref = {
     val __obj = js.Dynamic.literal(base_ref = base_ref.asInstanceOf[js.Any], base_sha = base_sha.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_ref = head_ref.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[Baseref]
   }
@@ -35,7 +34,7 @@ object Baseref {
     
     inline def setBase_sha(value: String): Self = StObject.set(x, "base_sha", value.asInstanceOf[js.Any])
     
-    inline def setHead_commit(value: Treeid): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
+    inline def setHead_commit(value: Timestamp): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
     
     inline def setHead_ref(value: String): Self = StObject.set(x, "head_ref", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,13 @@ import typings.officeJs.Word.Interfaces.FieldData
 import typings.officeJs.Word.Interfaces.FieldLoadOptions
 import typings.officeJs.Word.Interfaces.FieldUpdateData
 import typings.officeJs.anon.Expand
+import typings.officeJs.officeJsStrings.Cold
+import typings.officeJs.officeJsStrings.End
+import typings.officeJs.officeJsStrings.Hot
+import typings.officeJs.officeJsStrings.None
+import typings.officeJs.officeJsStrings.Select
+import typings.officeJs.officeJsStrings.Start
+import typings.officeJs.officeJsStrings.Warm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,16 +29,34 @@ trait Field
      with ClientObject {
   
   /**
-    * Gets the field's code instruction.
+    * Specifies the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
+    *
+    * Note: The ability to set the code was introduced in WordApi 1.5.
     */
-  val code: String = js.native
+  var code: String = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Field: RequestContext = js.native
+  
+  /**
+    * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  var data: String = js.native
+  
+  /**
+    * Deletes the field.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  def delete(): Unit = js.native
   
   /**
     * Gets the next field. Throws an `ItemNotFound` error if this field is the last one.
@@ -50,6 +75,14 @@ trait Field
   def getNextOrNullObject(): Field = js.native
   
   /**
+    * Gets the field's kind.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  val kind: FieldKind | None | Hot | Warm | Cold = js.native
+  
+  /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
@@ -59,6 +92,14 @@ trait Field
   def load(propertyNamesAndPaths: Expand): Field = js.native
   def load(propertyNames: String): Field = js.native
   def load(propertyNames: js.Array[String]): Field = js.native
+  
+  /**
+    * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  var locked: Boolean = js.native
   
   /**
     * Gets the parent body of the field.
@@ -124,6 +165,18 @@ trait Field
     */
   val result: Range = js.native
   
+  /**
+    * Selects the field.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param selectionMode Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+    */
+  def select(): Unit = js.native
+  def select(selectionMode: Select | Start | End): Unit = js.native
+  def select(selectionMode: SelectionMode): Unit = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Field): Unit = js.native
   /**
@@ -146,7 +199,23 @@ trait Field
   def track(): Field = js.native
   
   /**
+    * Gets the field's type.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  val `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJs.Word.FieldType, typings.officeJs.officeJsStrings.Addin, typings.officeJs.officeJsStrings.AddressBlock */ Any = js.native
+  
+  /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Field = js.native
+  
+  /**
+    * Updates the field.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    */
+  def updateResult(): Unit = js.native
 }

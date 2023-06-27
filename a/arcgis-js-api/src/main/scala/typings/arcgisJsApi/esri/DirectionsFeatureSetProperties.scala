@@ -10,67 +10,67 @@ trait DirectionsFeatureSetProperties
      with FeatureSetProperties {
   
   /**
-    * The extent of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#extent)
-    */
+  		 * The extent of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#extent)
+  		 */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * The geometry type of the Directions FeatureSet.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#geometryType)
-    */
+  		 * The geometry type of the Directions FeatureSet.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#geometryType)
+  		 */
   @JSName("geometryType")
   var geometryType_DirectionsFeatureSetProperties: js.UndefOr[polyline] = js.undefined
   
   /**
-    * A single polyline representing the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#mergedGeometry)
-    */
+  		 * A single polyline representing the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#mergedGeometry)
+  		 */
   var mergedGeometry: js.UndefOr[PolylineProperties] = js.undefined
   
   /**
-    * The ID of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeId)
-    */
+  		 * The ID of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeId)
+  		 */
   var routeId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeName)
-    */
+  		 * The name of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeName)
+  		 */
   var routeName: js.UndefOr[String] = js.undefined
   
   /**
-    * A flattened array of all [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#strings)
-    */
+  		 * A flattened array of all [direction strings](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#DirectionsString).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#strings)
+  		 */
   var strings: js.UndefOr[js.Array[DirectionsString]] = js.undefined
   
   /**
-    * The total drive time for the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalDriveTime)
-    */
+  		 * The total drive time for the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalDriveTime)
+  		 */
   var totalDriveTime: js.UndefOr[Double] = js.undefined
   
   /**
-    * The total length of the route.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalLength)
-    */
+  		 * The total length of the route.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalLength)
+  		 */
   var totalLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * The total time for the route including wait and service time.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalTime)
-    */
+  		 * The total time for the route including wait and service time.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalTime)
+  		 */
   var totalTime: js.UndefOr[Double] = js.undefined
 }
 object DirectionsFeatureSetProperties {

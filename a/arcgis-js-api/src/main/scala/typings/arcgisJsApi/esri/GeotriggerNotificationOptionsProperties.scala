@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeotriggerNotificationOptionsProperties extends StObject {
   
   /**
-    * An optional Arcade expression which can be used to configure notification information when the Geotrigger condition is met.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html#expressionInfo)
-    */
+  		 * An optional Arcade expression which can be used to configure notification information when the Geotrigger condition is met.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html#expressionInfo)
+  		 */
   var expressionInfo: js.UndefOr[geotriggersInfoExpressionInfoProperties] = js.undefined
   
   /**
-    * An optional list of strings indicating the set of possible actions resulting from this Geotrigger.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html#requestedActions)
-    */
+  		 * An optional list of strings indicating the set of possible actions resulting from this Geotrigger.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-GeotriggerNotificationOptions.html#requestedActions)
+  		 */
   var requestedActions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GeotriggerNotificationOptionsProperties {

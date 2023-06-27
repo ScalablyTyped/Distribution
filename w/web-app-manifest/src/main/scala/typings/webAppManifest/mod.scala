@@ -1,6 +1,13 @@
 package typings.webAppManifest
 
-import typings.std.OrientationLockType
+import typings.webAppManifest.webAppManifestStrings.`landscape-primary`
+import typings.webAppManifest.webAppManifestStrings.`landscape-secondary`
+import typings.webAppManifest.webAppManifestStrings.`portrait-primary`
+import typings.webAppManifest.webAppManifestStrings.`portrait-secondary`
+import typings.webAppManifest.webAppManifestStrings.any
+import typings.webAppManifest.webAppManifestStrings.landscape
+import typings.webAppManifest.webAppManifestStrings.natural
+import typings.webAppManifest.webAppManifestStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -363,7 +370,9 @@ object mod {
       *
       * @see https://w3c.github.io/manifest/#orientation-member
       */
-    var orientation: js.UndefOr[OrientationLockType] = js.undefined
+    var orientation: js.UndefOr[
+        any | landscape | `landscape-primary` | `landscape-secondary` | natural | portrait | `portrait-primary` | `portrait-secondary`
+      ] = js.undefined
     
     /**
       * The `prefer_related_applications` member is a boolean value that is used as a hint for the user agent
@@ -481,7 +490,9 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOrientation(value: OrientationLockType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(
+        value: any | landscape | `landscape-primary` | `landscape-secondary` | natural | portrait | `portrait-primary` | `portrait-secondary`
+      ): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       

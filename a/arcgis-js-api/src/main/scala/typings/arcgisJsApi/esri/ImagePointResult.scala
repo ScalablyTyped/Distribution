@@ -12,9 +12,9 @@ trait ImagePointResult
      with BaseImageMeasureResult {
   
   /**
-    * The measured point on an image service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePointResult.html#point)
-    */
+  		 * The measured point on an image service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImagePointResult.html#point)
+  		 */
   var point: Point = js.native
 }

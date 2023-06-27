@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait geotriggersInfoFeatureFilterProperties extends StObject {
   
   /**
-    * An optional geometry used to filter the features from a feature table.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#geometry)
-    */
+  		 * An optional geometry used to filter the features from a feature table.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#geometry)
+  		 */
   var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
-    * An optional SQL-based definition expression string that narrows the data to be used.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#where)
-    */
+  		 * An optional SQL-based definition expression string that narrows the data to be used.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-FeatureFilter.html#where)
+  		 */
   var where: js.UndefOr[String] = js.undefined
 }
 object geotriggersInfoFeatureFilterProperties {

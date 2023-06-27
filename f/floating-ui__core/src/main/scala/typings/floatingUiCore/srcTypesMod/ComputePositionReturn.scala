@@ -8,10 +8,19 @@ trait ComputePositionReturn
   extends StObject
      with Coords {
   
+  /**
+    * Object containing data returned from all middleware, keyed by their name.
+    */
   var middlewareData: MiddlewareData
   
+  /**
+    * The final chosen placement of the floating element.
+    */
   var placement: Placement
   
+  /**
+    * The strategy used to position the floating element.
+    */
   var strategy: Strategy
 }
 object ComputePositionReturn {

@@ -3,6 +3,9 @@ package typings.react.mod
 import typings.react.reactStrings._empty
 import typings.react.reactStrings.`use-credentials`
 import typings.react.reactStrings.anonymous
+import typings.react.reactStrings.auto
+import typings.react.reactStrings.high
+import typings.react.reactStrings.low
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +19,8 @@ trait LinkHTMLAttributes[T]
   var charSet: js.UndefOr[String] = js.undefined
   
   var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
+  
+  var fetchpriority: js.UndefOr[high | low | auto] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
   
@@ -56,6 +61,10 @@ object LinkHTMLAttributes {
     inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setFetchpriority(value: high | low | auto): Self = StObject.set(x, "fetchpriority", value.asInstanceOf[js.Any])
+    
+    inline def setFetchpriorityUndefined: Self = StObject.set(x, "fetchpriority", js.undefined)
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.TemplateItem")
 @js.native
 /**
-  * The item displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html)
-  */
+		 * The item displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html)
+		 */
 open class TemplateItem ()
   extends StObject
      with typings.arcgisJsApi.esri.TemplateItem {
@@ -25,9 +25,9 @@ object TemplateItem {
   val ^ : js.Any = js.native
   
   /**
-    * Fetches the thumbnail used to display the template item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
-    */
+  		 * Fetches the thumbnail used to display the template item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
+  		 */
   inline def fetchThumbnail(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchThumbnail")().asInstanceOf[js.Promise[Any]]
 }

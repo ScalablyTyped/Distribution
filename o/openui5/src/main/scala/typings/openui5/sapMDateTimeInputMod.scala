@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.DateValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.DateTimeInputType
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -161,7 +160,7 @@ object sapMDateTimeInputMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -186,13 +185,13 @@ object sapMDateTimeInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DateTimeInput` itself
       */
@@ -217,7 +216,7 @@ object sapMDateTimeInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -228,7 +227,7 @@ object sapMDateTimeInputMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.DateTimeInput` itself
       */
@@ -259,13 +258,13 @@ object sapMDateTimeInputMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ DateTimeInputChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -273,23 +272,24 @@ object sapMDateTimeInputMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireChange(): this.type = js.native
-    def fireChange(/**
+    def fireChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: DateValue): this.type = js.native
+    mParameters: DateTimeInput$ChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -315,7 +315,7 @@ object sapMDateTimeInputMod {
     def getDisplayFormat(): String = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -359,7 +359,7 @@ object sapMDateTimeInputMod {
     def getPlaceholder(): String = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getShowValueStateMessage showValueStateMessage}.
       *
@@ -372,7 +372,7 @@ object sapMDateTimeInputMod {
     def getShowValueStateMessage(): Boolean = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getTextAlign textAlign}.
       *
@@ -385,7 +385,7 @@ object sapMDateTimeInputMod {
     def getTextAlign(): TextAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextAlign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTextDirection textDirection}.
       *
@@ -444,7 +444,7 @@ object sapMDateTimeInputMod {
     def getValueState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Gets current value of property {@link #getValueStateText valueStateText}.
       *
@@ -467,7 +467,7 @@ object sapMDateTimeInputMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -476,7 +476,7 @@ object sapMDateTimeInputMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -526,7 +526,7 @@ object sapMDateTimeInputMod {
     sDisplayFormat: String): this.type = js.native
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -594,7 +594,7 @@ object sapMDateTimeInputMod {
     sPlaceholder: String): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getShowValueStateMessage showValueStateMessage}.
       *
@@ -613,7 +613,7 @@ object sapMDateTimeInputMod {
     bShowValueStateMessage: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getTextAlign textAlign}.
       *
@@ -638,7 +638,7 @@ object sapMDateTimeInputMod {
     sTextAlign: TextAlign): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTextDirection textDirection}.
       *
@@ -745,7 +745,7 @@ object sapMDateTimeInputMod {
     sValueState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Sets a new value for property {@link #getValueStateText valueStateText}.
       *
@@ -787,12 +787,57 @@ object sapMDateTimeInputMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait DateTimeInput$ChangeEventParameters extends StObject {
+    
+    /**
+      * The value of control as JavaScript Date Object or null if value is empty.
+      */
+    var dateValue: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * if set, the entered value is a valid date. If not set the entered value cannot be converted to a date.
+      */
+    var valid: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The string value of the control in given valueFormat (or locale format).
+      */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  object DateTimeInput$ChangeEventParameters {
+    
+    inline def apply(): DateTimeInput$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DateTimeInput$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeInput$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDateValue(value: js.Object): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
+      
+      inline def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
+      
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DateTimeInputChangeEvent = typings.openui5.sapUiBaseEventMod.default[DateTimeInput$ChangeEventParameters]
+  
+  type DateTimeInputChangeEventParameters = DateTimeInput$ChangeEventParameters
+  
   trait DateTimeInputSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).
       */
@@ -801,7 +846,12 @@ object sapMDateTimeInputMod {
     /**
       * This event gets fired when the selection has finished and the value has changed.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateTimeInput$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * This property as JavaScript Date Object can be used to assign a new value which is independent from valueFormat.
@@ -819,7 +869,7 @@ object sapMDateTimeInputMod {
     var displayFormat: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.12.0
+      * @since 1.12.0
       *
       * Defines whether the control can be modified by the user or not. **Note:** A user can tab to non-editable
       * control, highlight it, and copy the text from it.
@@ -847,7 +897,7 @@ object sapMDateTimeInputMod {
     var placeholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Indicates whether the value state message should be shown or not.
       */
@@ -856,7 +906,7 @@ object sapMDateTimeInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Defines the horizontal alignment of the text that is shown inside the input field.
       */
@@ -865,7 +915,7 @@ object sapMDateTimeInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the text directionality of the input field, e.g. `RTL`, `LTR`
       */
@@ -904,7 +954,7 @@ object sapMDateTimeInputMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.26.0
+      * @since 1.26.0
       *
       * Defines the text that appears in the value state message pop-up. If this is not specified, a default
       * text is shown from the resource bundle.
@@ -934,7 +984,9 @@ object sapMDateTimeInputMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[DateTimeInput$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

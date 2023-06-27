@@ -10,8 +10,6 @@ object devLibLabelEndMod {
   @js.native
   val labelEnd: Construct = js.native
   
-  type Code = typings.micromarkUtilTypes.mod.Code
-  
   type Construct = typings.micromarkUtilTypes.mod.Construct
   
   type Event = typings.micromarkUtilTypes.mod.Event
@@ -21,6 +19,8 @@ object devLibLabelEndMod {
   type State = typings.micromarkUtilTypes.mod.State
   
   type Token = typings.micromarkUtilTypes.mod.Token
+  
+  type TokenizeContext = typings.micromarkUtilTypes.mod.TokenizeContext
   
   type Tokenizer = typings.micromarkUtilTypes.mod.Tokenizer
 }

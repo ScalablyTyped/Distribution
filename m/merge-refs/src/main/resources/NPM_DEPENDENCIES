@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "merge-refs" : "1.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "merge-refs" : "1.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

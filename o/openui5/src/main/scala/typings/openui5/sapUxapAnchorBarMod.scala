@@ -21,7 +21,7 @@ object sapUxapAnchorBarMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:370b67986497463187336fa130aebbf1 Anchor Bar}
+    * 	{@link https://ui5.sap.com/#/topic/370b67986497463187336fa130aebbf1 Anchor Bar}
     */
   open class default () extends AnchorBar {
     def this(/**
@@ -126,7 +126,7 @@ object sapUxapAnchorBarMod {
     extends typings.openui5.sapMToolbarMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
@@ -143,7 +143,7 @@ object sapUxapAnchorBarMod {
     ): Unit = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -222,7 +222,7 @@ object sapUxapAnchorBarMod {
     sBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -301,7 +301,7 @@ object sapUxapAnchorBarMod {
        with ToolbarSettings {
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Determines the background color of the `AnchorBar`.
       *

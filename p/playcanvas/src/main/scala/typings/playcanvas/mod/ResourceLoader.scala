@@ -156,3 +156,12 @@ open class ResourceLoader protected () extends StObject {
     */
   def removeHandler(`type`: String): Unit = js.native
 }
+object ResourceLoader {
+  
+  @JSImport("playcanvas", "ResourceLoader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def makeKey(url: Any, `type`: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeKey")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+}

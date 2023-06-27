@@ -11,10 +11,10 @@ object esriWidgetsSliderSliderViewModelMod {
   @JSImport("esri/widgets/Slider/SliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Slider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html)
-    */
+  		 * Provides the logic for the [Slider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with SliderViewModel {

@@ -11,17 +11,17 @@ trait `400404422` extends StObject {
   
   var `400`: ContentApplicationjsonApplicationscimjson
   
-  var `404`: Content36
+  var `404`: Content41
   
-  var `422`: Content346
+  var `422`: Content414
 }
 object `400404422` {
   
   inline def apply(
     `200`: ContentApplicationjsonPageurl,
     `400`: ContentApplicationjsonApplicationscimjson,
-    `404`: Content36,
-    `422`: Content346
+    `404`: Content41,
+    `422`: Content414
   ): `400404422` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -38,8 +38,8 @@ object `400404422` {
     
     inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content41): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content414): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

@@ -12,23 +12,23 @@ trait OutputQuantizationParameters
      with Accessor {
   
   /**
-    * An extent defining the quantization grid bounds.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
-    */
+  		 * An extent defining the quantization grid bounds.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#extent)
+  		 */
   var extent: OutputQuantizationParametersExtent = js.native
   
   /**
-    * Geometry coordinates are optimized for viewing and displaying of data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#quantizeMode)
-    */
+  		 * Geometry coordinates are optimized for viewing and displaying of data.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#quantizeMode)
+  		 */
   var quantizeMode: view | edit = js.native
   
   /**
-    * The size of one pixel in the units of the [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#tolerance)
-    */
+  		 * The size of one pixel in the units of the [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-OutputQuantizationParameters.html#tolerance)
+  		 */
   var tolerance: Double = js.native
 }

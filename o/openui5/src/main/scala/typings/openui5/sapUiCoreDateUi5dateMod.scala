@@ -24,8 +24,11 @@ object sapUiCoreDateUi5dateMod {
       * Creates a date instance (either JavaScript Date or `UI5Date`) which considers the configured time zone
       * wherever JavaScript Date uses the local browser time zone, for example in `getDate`, `toString`, or `setHours`.
       * The supported parameters are the same as the ones supported by the JavaScript Date constructor.
+      *
+      * **Note:** Adjusting the time zone in a running application can lead to unexpected data inconsistencies.
+      * For more information, see {@link sap.ui.core.Configuration#setTimezone}.
       * See:
-      * 	sap.ui.core.Configuration.getTimezone
+      * 	sap.ui.core.Configuration#getTimezone
       *
       * @returns The date instance that considers the configured time zone in all local getters and setters.
       */
@@ -39,23 +42,23 @@ object sapUiCoreDateUi5dateMod {
       */
     vMonthIndex: js.UndefOr[int | String],
       /**
-      * Same meaning as in the Date constructor
+      * Same meaning as in the JavaScript Date constructor
       */
     vDay: js.UndefOr[int | String],
       /**
-      * Same meaning as in the Date constructor
+      * Same meaning as in the JavaScript Date constructor
       */
     vHours: js.UndefOr[int | String],
       /**
-      * Same meaning as in the Date constructor
+      * Same meaning as in the JavaScript Date constructor
       */
     vMinutes: js.UndefOr[int | String],
       /**
-      * Same meaning as in the Date constructor
+      * Same meaning as in the JavaScript Date constructor
       */
     vSeconds: js.UndefOr[int | String],
       /**
-      * Same meaning as in the Date constructor
+      * Same meaning as in the JavaScript Date constructor
       */
     vMilliseconds: js.UndefOr[int | String]
     ): js.Date | UI5Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(vYearOrValue.asInstanceOf[js.Any], vMonthIndex.asInstanceOf[js.Any], vDay.asInstanceOf[js.Any], vHours.asInstanceOf[js.Any], vMinutes.asInstanceOf[js.Any], vSeconds.asInstanceOf[js.Any], vMilliseconds.asInstanceOf[js.Any])).asInstanceOf[js.Date | UI5Date]
@@ -67,7 +70,7 @@ object sapUiCoreDateUi5dateMod {
        with Date {
     
     /**
-      * @deprecated (since 1.111) - as it is deprecated in the base class JavaScript Date; use {@link #getFullYear}
+      * @deprecated (since 1.111) - as it is deprecated in the base class JavaScript Date; use {@link #getFullYear }
       * instead
       *
       * Returns the year of this date instance minus 1900 according to the configured time zone, see `Date.prototype.getYear`.
@@ -77,7 +80,7 @@ object sapUiCoreDateUi5dateMod {
     def getYear(): int = js.native
     
     /**
-      * @deprecated (since 1.111) - as it is deprecated in the base class JavaScript Date; use {@link #setFullYear}
+      * @deprecated (since 1.111) - as it is deprecated in the base class JavaScript Date; use {@link #setFullYear }
       * instead
       *
       * Sets the year for this date instance plus 1900 considering the configured time zone, see `Date.prototype.setYear`.

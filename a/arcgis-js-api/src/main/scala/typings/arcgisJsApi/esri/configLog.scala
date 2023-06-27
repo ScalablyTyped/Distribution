@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait configLog extends StObject {
   
   /**
-    * An array of custom interceptor functions that can be used to intercept log messages.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
-    */
+  		 * An array of custom interceptor functions that can be used to intercept log messages.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
+  		 */
   var interceptors: js.Array[LogInterceptor]
   
   /**
-    * The level of messages to log.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
-    */
+  		 * The level of messages to log.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#log)
+  		 */
   var level: none_ | error | warn | info
 }
 object configLog {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMAvatarImageFitTypeMod {
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Types of image size and position that determine how an image fits in the {@link sap.m.Avatar} control
     * area.
@@ -27,7 +27,7 @@ object sapMAvatarImageFitTypeMod {
   @js.native
   sealed trait AvatarImageFitType extends StObject
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Types of image size and position that determine how an image fits in the {@link sap.m.Avatar} control
     * area.

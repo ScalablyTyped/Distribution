@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait relationshipCreateRendererParamsField1 extends StObject {
   
   /**
-    * The name of a numeric field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
+  		 * The name of a numeric field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+  		 */
   var field: String
   
   /**
-    * The label used to describe the field or variable in the legend.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label used to describe the field or variable in the legend.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum bound of values to visualize in the given field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
+  		 * The maximum bound of values to visualize in the given field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+  		 */
   var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum bound of values to visualize in the given field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
+  		 * The minimum bound of values to visualize in the given field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+  		 */
   var minValue: js.UndefOr[Double] = js.undefined
   
   /**
-    * The name of a numeric field used to normalize the given `field`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
-    */
+  		 * The name of a numeric field used to normalize the given `field`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
 }
 object relationshipCreateRendererParamsField1 {

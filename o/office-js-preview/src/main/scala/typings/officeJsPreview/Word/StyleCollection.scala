@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.Style} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @js.native
 trait StyleCollection
@@ -30,8 +29,7 @@ trait StyleCollection
     * Get the style object by its name.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param name Required. The style name.
     */
@@ -41,8 +39,7 @@ trait StyleCollection
     * If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param name Required. The style name.
     */
@@ -52,8 +49,7 @@ trait StyleCollection
     * Gets the number of the styles in the collection.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   def getCount(): ClientResult[Double] = js.native
   
@@ -61,8 +57,7 @@ trait StyleCollection
     * Gets a style object by its index in the collection.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param index A number that identifies the index location of a style object.
     */

@@ -11,10 +11,10 @@ object esriWidgetsFeatureMod {
   @JSImport("esri/widgets/Feature", JSImport.Namespace)
   @js.native
   /**
-    * The Feature widget displays a graphic according to its [PopupTemplate](esri-PopupTemplate.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html)
-    */
+  		 * The Feature widget displays a graphic according to its [PopupTemplate](esri-PopupTemplate.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html)
+  		 */
   open class ^ ()
     extends StObject
        with Feature {

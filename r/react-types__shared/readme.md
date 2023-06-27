@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-types__shared
 
-Typings are for version 3.18.0
+Typings are for version 3.18.1
 
 ## Library description:
 Spectrum UI components in React

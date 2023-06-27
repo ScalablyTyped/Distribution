@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark-util-classify-character" : "1.0.0"
+      "micromark-util-classify-character" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark-util-classify-character" : "1.0.0"
+      "micromark-util-classify-character" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

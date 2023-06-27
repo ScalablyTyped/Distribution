@@ -241,6 +241,11 @@ object anon {
     var languageData: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
+      The [name](https://codemirror.net/6/docs/ref/#Language.name) of the language.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
       The parser to use. Should already have added editor-relevant
       node props (and optionally things like dialect and top rule)
       configured.
@@ -260,6 +265,10 @@ object anon {
       inline def setLanguageData(value: StringDictionary[Any]): Self = StObject.set(x, "languageData", value.asInstanceOf[js.Any])
       
       inline def setLanguageDataUndefined: Self = StObject.set(x, "languageData", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setParser(value: LRParser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     }
@@ -288,7 +297,7 @@ object anon {
     
     /**
       When `simulateBreak` is given, this can be used to make the
-      simulate break behave like a double line break.
+      simulated break behave like a double line break.
       */
     var simulateDoubleBreak: js.UndefOr[Boolean] = js.undefined
   }

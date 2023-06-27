@@ -114,13 +114,26 @@ object Composite {
     */
   inline def rebase(composite: typings.matterJs.mod.Composite): typings.matterJs.mod.Composite = ^.asInstanceOf[js.Dynamic].applyDynamic("rebase")(composite.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Composite]
   
+  inline def remove(
+    composite: typings.matterJs.mod.Composite,
+    `object`: js.Array[
+      typings.matterJs.mod.Body | typings.matterJs.mod.Composite | typings.matterJs.mod.Constraint | typings.matterJs.mod.MouseConstraint
+    ]
+  ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
+  inline def remove(
+    composite: typings.matterJs.mod.Composite,
+    `object`: js.Array[
+      typings.matterJs.mod.Body | typings.matterJs.mod.Composite | typings.matterJs.mod.Constraint | typings.matterJs.mod.MouseConstraint
+    ],
+    deep: Boolean
+  ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
     * Optionally searching its children recursively.
     * Triggers `beforeRemove` and `afterRemove` events on the `composite`.
     * @method remove
     * @param {Composite} composite
-    * @param {any} object
+    * @param {Body | Composite | Constraint | MouseConstraint | Array<Body | Composite | Constraint | MouseConstraint>} object
     * @param {boolean} [deep=false]
     * @returns {Composite} The original composite with the objects removed
     */
@@ -132,6 +145,12 @@ object Composite {
   inline def remove(
     composite: typings.matterJs.mod.Composite,
     `object`: typings.matterJs.mod.Constraint,
+    deep: Boolean
+  ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
+  inline def remove(composite: typings.matterJs.mod.Composite, `object`: typings.matterJs.mod.MouseConstraint): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
+  inline def remove(
+    composite: typings.matterJs.mod.Composite,
+    `object`: typings.matterJs.mod.MouseConstraint,
     deep: Boolean
   ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   

@@ -10,24 +10,24 @@ trait MediaHit
      with ViewHit {
   
   /**
-    * An element representing a media element in [MediaLayer.source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) that intersects the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
-    */
+  		 * An element representing a media element in [MediaLayer.source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source) that intersects the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
+  		 */
   var element: ImageElement | VideoElement
   
   /**
-    * The media layer that contains the element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
-    */
+  		 * The media layer that contains the element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
+  		 */
   var layer: MediaLayer
   
   /**
-    * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
-    */
+  		 * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#MediaHit)
+  		 */
   var mapPoint: Point
   
   var `type`: media

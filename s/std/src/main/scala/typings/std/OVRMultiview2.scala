@@ -8,6 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OVR_multiview2) */
 @js.native
 trait OVRMultiview2 extends StObject {
   
@@ -31,6 +32,7 @@ trait OVRMultiview2 extends StObject {
     baseViewIndex: GLint,
     numViews: GLsizei
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OVR_multiview2/framebufferTextureMultiviewOVR) */
   /* standard dom */
   def framebufferTextureMultiviewOVR(
     target: GLenum,

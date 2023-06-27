@@ -4,15 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem)
+  */
 trait ClipboardItem extends StObject {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/getType) */
   /* standard dom */
   def getType(`type`: java.lang.String): js.Promise[Blob]
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/presentationStyle) */
   /* standard dom */
   val presentationStyle: PresentationStyle
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ClipboardItem/types) */
   /* standard dom */
   val types: js.Array[java.lang.String]
 }

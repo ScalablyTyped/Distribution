@@ -11,32 +11,32 @@ sealed trait WaveStrength extends StObject
 object WaveStrength extends StObject {
   
   /**
-    * Calm glassy water with no waves.
-    */
+  			 * Calm glassy water with no waves.
+  			 */
   @js.native
   sealed trait Calm
     extends StObject
        with WaveStrength
   
   /**
-    * Moderately wavy water.
-    */
+  			 * Moderately wavy water.
+  			 */
   @js.native
   sealed trait Moderate
     extends StObject
        with WaveStrength
   
   /**
-    * Rippled water.
-    */
+  			 * Rippled water.
+  			 */
   @js.native
   sealed trait Rippled
     extends StObject
        with WaveStrength
   
   /**
-    * Slightly wavy water.
-    */
+  			 * Slightly wavy water.
+  			 */
   @js.native
   sealed trait Slight
     extends StObject

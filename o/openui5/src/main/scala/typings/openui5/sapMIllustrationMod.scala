@@ -129,7 +129,7 @@ object sapMIllustrationMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -141,15 +141,14 @@ object sapMIllustrationMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getMedia media}.
       *
@@ -160,7 +159,7 @@ object sapMIllustrationMod {
     def getMedia(): String = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getSet set}.
       *
@@ -171,7 +170,7 @@ object sapMIllustrationMod {
     def getSet(): String = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets current value of property {@link #getType type}.
       *
@@ -182,7 +181,7 @@ object sapMIllustrationMod {
     def getType(): String = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -191,7 +190,7 @@ object sapMIllustrationMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -213,7 +212,7 @@ object sapMIllustrationMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getMedia media}.
       *
@@ -230,7 +229,7 @@ object sapMIllustrationMod {
     sMedia: String): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getSet set}.
       *
@@ -247,7 +246,7 @@ object sapMIllustrationMod {
     sSet: String): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets a new value for property {@link #getType type}.
       *
@@ -269,28 +268,28 @@ object sapMIllustrationMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.106.0
+      * @since 1.106.0
       *
       * Association to controls / IDs which label those controls (see WAI-ARIA attribute aria-labelledBy).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines which media/breakpoint should be used when building the Symbol ID.
       */
     var media: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines which illustration set should be used when building the Symbol ID.
       */
     var set: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Defines which illustration type should be used when building the Symbol ID.
       */

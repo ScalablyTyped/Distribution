@@ -7,52 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageIdentifyResultProperties extends StObject {
   
   /**
-    * The set of visible areas for the identified catalog items.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#catalogItemVisibilities)
-    */
+  		 * The set of visible areas for the identified catalog items.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#catalogItemVisibilities)
+  		 */
   var catalogItemVisibilities: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The set of catalog items that overlap the input geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#catalogItems)
-    */
+  		 * The set of catalog items that overlap the input geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#catalogItems)
+  		 */
   var catalogItems: js.UndefOr[FeatureSetProperties] = js.undefined
   
   /**
-    * The identified location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#location)
-    */
+  		 * The identified location.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#location)
+  		 */
   var location: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The identify property name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#name)
-    */
+  		 * The identify property name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The identify property id.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#objectId)
-    */
+  		 * The identify property id.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#objectId)
+  		 */
   var objectId: js.UndefOr[Double] = js.undefined
   
   /**
-    * The attributes of the identified object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#properties)
-    */
+  		 * The attributes of the identified object.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#properties)
+  		 */
   var properties: js.UndefOr[Any] = js.undefined
   
   /**
-    * The identify image service pixel value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#value)
-    */
+  		 * The identify image service pixel value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ImageIdentifyResult.html#value)
+  		 */
   var value: js.UndefOr[String] = js.undefined
 }
 object ImageIdentifyResultProperties {

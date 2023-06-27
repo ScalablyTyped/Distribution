@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileLink extends StObject {
   
   /**
-    * The location of the FileLink element in the array.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The location of the FileLink element in the array.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var count: Double
   
   /**
-    * The [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) from the Print widget, if any.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The [error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) from the Print widget, if any.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var error: String
   
   /**
-    * The [file](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format) type of the print-out.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The [file](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#format) type of the print-out.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var `extension`: String
   
   /**
-    * The [fileName](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName) or [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title) of the print-out.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The [fileName](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#fileName) or [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-TemplateOptions.html#title) of the print-out.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var name: String
   
   /**
-    * The state of the print-out.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The state of the print-out.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var state: String
   
   /**
-    * The [printServiceUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#printServiceUrl) of the print-out.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
-    */
+  		 * The [printServiceUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#printServiceUrl) of the print-out.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#FileLink)
+  		 */
   var url: String
 }
 object FileLink {

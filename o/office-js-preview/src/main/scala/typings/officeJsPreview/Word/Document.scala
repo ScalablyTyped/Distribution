@@ -40,8 +40,7 @@ trait Document
     * Adds a style into the document by name and type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param name Required. A string representing the style name.
     * @param type Required. The style type, including character, list, paragraph, or table.
@@ -54,8 +53,7 @@ trait Document
     * Adds a style into the document by name and type.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param name Required. A string representing the style name.
     * @param type Required. The style type, including character, list, paragraph, or table.
@@ -71,7 +69,7 @@ trait Document
   val body: Body = js.native
   
   /**
-    * Gets or sets the ChangeTracking mode.
+    * Specifies the ChangeTracking mode.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -82,8 +80,7 @@ trait Document
     * Close current document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param closeBehavior Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
     */
@@ -147,8 +144,7 @@ trait Document
     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param options Optional. Options that define which content controls are returned.
     */
@@ -160,7 +156,7 @@ trait Document
     Not implemented in Word on the web.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getEndnoteBody(): Body = js.native
   
@@ -169,7 +165,7 @@ trait Document
     Not implemented in Word on the web.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   def getFootnoteBody(): Body = js.native
   
@@ -185,8 +181,7 @@ trait Document
     * Gets a StyleCollection object that represents the whole style set of the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   def getStyles(): StyleCollection = js.native
   
@@ -199,8 +194,7 @@ trait Document
     Headers, footers, watermarks, and other section properties are copied by default.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
@@ -226,10 +220,9 @@ trait Document
     * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.5]
     *
     * @eventproperty
-    * @beta
     */
   val onContentControlAdded: EventHandlers[ContentControlAddedEventArgs] = js.native
   
@@ -246,6 +239,8 @@ trait Document
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
     *
     * @param saveBehavior Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
     * @param fileName Optional. The file name (exclude file extension). Only takes effect for a new document.

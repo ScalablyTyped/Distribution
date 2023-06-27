@@ -893,10 +893,12 @@ trait MathJsStatic
     * a 3D line, x0, y0, z0, a, b, c are from: (x−x0, y−y0, z−z0) = t(a, b,
     * c)
     * @param x Coordinates of the first point
-    * @param y Coordinates of the second point
+    * @param y Coordinates of the second point OR coefficients of a line in 3D OR first end-point of a line if the calculation is for distance between point and a line in 2D
+    * @param z Coordinates of second end-point of a line if the calculation is for distance between point and a line in 2D
     * @returns Returns the distance from two/three points
     */
   def distance(x: MathCollection | js.Object, y: MathCollection | js.Object): Double | BigNumber = js.native
+  def distance(x: MathCollection | js.Object, y: MathCollection | js.Object, z: MathCollection | js.Object): Double | BigNumber = js.native
   
   def divide(x: Double, y: Double): Double = js.native
   def divide(x: MathType, y: MathType): MathType = js.native
@@ -1911,42 +1913,83 @@ trait MathJsStatic
   
   /**
     * @param A A single matrix
-    * @param dim The maximum over the selected dimension
+    * @param dimension The maximum over the selected dimension
     * @returns The maximum value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def max(A: MathCollection): Any = js.native
-  def max(A: MathCollection, dim: Double): Any = js.native
+  def max(A: MathCollection): MathScalarType = js.native
+  def max(A: MathCollection, dimension: Double): MathScalarType = js.native
+  def max(A: MathCollection, dimension: BigNumber): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The maximum value
+    */
+  def max(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @param dimension The maximum over the selected dimension
+    * @returns The maximum value
+    */
+  def max[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  def max[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: Double): T = js.native
+  def max[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: BigNumber): T = js.native
   /**
     * Compute the maximum value of a matrix or a list with values. In case
     * of a multi dimensional array, the maximum of the flattened array will
     * be calculated. When dim is provided, the maximum over the selected
     * dimension will be calculated. Parameter dim is zero-based.
-    * @param args A single matrix or multiple scalar values
+    * @param args Multiple scalar values
     * @returns The maximum value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def max(args: MathType*): Any = js.native
+  @JSName("max")
+  def max_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * @param A A single matrix
-    * @param dim The mean over the selected dimension
-    * @returns The mean of all values
+    * @param dimension The mean over the selected dimension
+    * @returns The mean value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def mean(A: MathCollection): Any = js.native
-  def mean(A: MathCollection, dim: Double): Any = js.native
+  def mean(A: MathCollection): MathScalarType = js.native
+  def mean(A: MathCollection, dimension: Double): MathScalarType = js.native
+  def mean(A: MathCollection, dimension: BigNumber): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The mean value
+    */
+  def mean(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @param dimension The mean over the selected dimension
+    * @returns The mean value
+    */
+  def mean[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  def mean[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: Double): T = js.native
+  def mean[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: BigNumber): T = js.native
   /**
     * Compute the mean value of matrix or a list with values. In case of a
     * multi dimensional array, the mean of the flattened array will be
     * calculated. When dim is provided, the maximum over the selected
     * dimension will be calculated. Parameter dim is zero-based.
-    * @param args A single matrix or multiple scalar values
+    * @param args Multiple scalar values
     * @returns The mean of all values
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def mean(args: MathType*): Any = js.native
+  @JSName("mean")
+  def mean_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
+  /**
+    * @param A A single matrix
+    * @returns The median value
+    */
+  def median(A: MathCollection): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The median value
+    */
+  def median(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @returns The median value
+    */
+  def median[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
   /**
     * Compute the median of a matrix or a list with values. The values are
     * sorted and the middle value is returned. In case of an even number of
@@ -1954,30 +1997,43 @@ trait MathJsStatic
     * types of values are: Number, BigNumber, Unit In case of a (multi
     * dimensional) array or matrix, the median of all elements will be
     * calculated.
-    * @param args A single matrix or or multiple scalar values
-    * @returns The median
+    * @param args Multiple scalar values
+    * @returns The median value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def median(args: MathType*): Any = js.native
+  @JSName("median")
+  def median_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * @param A A single matrix
-    * @param dim The minimum over the selected dimension
+    * @param dimension The minimum over the selected dimension
     * @returns The minimum value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def min(A: MathCollection): Any = js.native
-  def min(A: MathCollection, dim: Double): Any = js.native
+  def min(A: MathCollection): MathScalarType = js.native
+  def min(A: MathCollection, dimension: Double): MathScalarType = js.native
+  def min(A: MathCollection, dimension: BigNumber): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The minimum value
+    */
+  def min(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @param dimension The minimum over the selected dimension
+    * @returns The minimum value
+    */
+  def min[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  def min[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: Double): T = js.native
+  def min[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: BigNumber): T = js.native
   /**
     * Compute the minimum value of a matrix or a list of values. In case of
-    * a multi dimensional array, the minimun of the flattened array will be
-    * calculated. When dim is provided, the minimun over the selected
+    * a multi dimensional array, the minimum of the flattened array will be
+    * calculated. When dim is provided, the minimum over the selected
     * dimension will be calculated. Parameter dim is zero-based.
-    * @param args A single matrix or or multiple scalar values
+    * @param args multiple scalar values
     * @returns The minimum value
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def min(args: MathType*): Any = js.native
+  @JSName("min")
+  def min_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   def mod(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
   def mod(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: BigNumber): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -2010,14 +2066,29 @@ trait MathJsStatic
   def mod(x: Matrix, y: MathCollection): NoLiteralType[Matrix] = js.native
   
   /**
+    * @param A A single matrix
+    * @returns The mode of all values
+    */
+  def mode(A: MathCollection): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The mode of all values
+    */
+  def mode(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @returns The median value
+    */
+  def mode[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  /**
     * Computes the mode of a set of numbers or a list with values(numbers
     * or characters). If there are more than one modes, it returns a list
     * of those values.
-    * @param args A single matrix
+    * @param args Multiple scalar values
     * @returns The mode of all values
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def mode(args: MathType*): Any = js.native
+  @JSName("mode")
+  def mode_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * Multinomial Coefficients compute the number of ways of picking a1,
@@ -2441,14 +2512,29 @@ trait MathJsStatic
   ): scala.Unit = js.native
   
   /**
+    * @param A A single matrix
+    * @returns The product of all values
+    */
+  def prod(A: MathCollection): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The product of all values
+    */
+  def prod(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @returns The product of all values
+    */
+  def prod[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  /**
     * Compute the product of a matrix or a list with values. In case of a
     * (multi dimensional) array or matrix, the sum of all elements will be
     * calculated.
-    * @param args A single matrix or multiple scalar values
+    * @param args Multiple scalar values
     * @returns The product of all values
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def prod(args: MathType*): Any = js.native
+  @JSName("prod")
+  def prod_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * Calculate the Matrix QR decomposition. Matrix A is decomposed in two
@@ -3229,6 +3315,11 @@ trait MathJsStatic
   def squeeze(x: Matrix): Matrix = js.native
   
   /**
+    * @param args Multiple scalar values
+    * @returns The standard deviation
+    */
+  def std(args: MathScalarType*): MathScalarType = js.native
+  /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
     * std(A) = sqrt(variance(A)). In case of a (multi dimensional) array or
@@ -3245,10 +3336,10 @@ trait MathJsStatic
     * ‘unbiased’.
     * @returns The standard deviation array
     */
-  def std(array: MathCollection): js.Array[Double] = js.native
-  def std(array: MathCollection, dimension: Double): js.Array[Double] = js.native
-  def std(array: MathCollection, dimension: Double, normalization: unbiased | uncorrected | biased): js.Array[Double] = js.native
-  def std(array: MathCollection, dimension: scala.Unit, normalization: unbiased | uncorrected | biased): js.Array[Double] = js.native
+  def std(array: MathCollection): js.Array[MathNumericType] = js.native
+  def std(array: MathCollection, dimension: Double): js.Array[MathNumericType] = js.native
+  def std(array: MathCollection, dimension: Double, normalization: unbiased | uncorrected | biased): js.Array[MathNumericType] = js.native
+  def std(array: MathCollection, dimension: scala.Unit, normalization: unbiased | uncorrected | biased): js.Array[MathNumericType] = js.native
   /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
@@ -3265,7 +3356,7 @@ trait MathJsStatic
     * ‘unbiased’.
     * @returns The standard deviation
     */
-  def std(array: MathCollection, normalization: unbiased | uncorrected | biased): Double = js.native
+  def std(array: MathCollection, normalization: unbiased | uncorrected | biased): MathNumericType = js.native
   /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
@@ -3276,10 +3367,11 @@ trait MathJsStatic
     * values: 'unbiased' (default) The sum of squared errors is divided by
     * (n - 1) 'uncorrected' The sum of squared errors is divided by n
     * 'biased' The sum of squared errors is divided by (n + 1)
-    * @param a variadic argument of number to calculate standard deviation
-    * @returns The standard deviation array
+    * @param args variadic argument of number to calculate standard deviation
+    * @returns The standard deviation
     */
-  def std(values: Double*): Double = js.native
+  @JSName("std")
+  def std_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * The Stirling numbers of the second kind, counts the number of ways to
@@ -3410,20 +3502,35 @@ trait MathJsStatic
   def subtract(x: Unit, y: Unit): Unit = js.native
   
   /**
+    * @param A A single matrix
+    * @param dimension The sum over the selected dimension
+    * @returns The sum of all values
+    */
+  def sum(A: MathCollection): MathScalarType = js.native
+  def sum(A: MathCollection, dimension: Double): MathScalarType = js.native
+  def sum(A: MathCollection, dimension: BigNumber): MathScalarType = js.native
+  /**
+    * @param args Multiple scalar values
+    * @returns The sum of all values
+    */
+  def sum(args: MathScalarType*): MathScalarType = js.native
+  /**
+    * @param A A single matrix
+    * @param dimension The sum over the selected dimension
+    * @returns The sum of all values
+    */
+  def sum[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T]): T = js.native
+  def sum[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: Double): T = js.native
+  def sum[T /* <: MathScalarType */](A: js.Array[js.Array[T] | T], dimension: BigNumber): T = js.native
+  /**
     * Compute the sum of a matrix or a list with values. In case of a
     * (multi dimensional) array or matrix, the sum of all elements will be
     * calculated.
     * @param args A single matrix or multiple scalar values
     * @returns The sum of all values
     */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def sum(args: (Double | BigNumber | Fraction)*): Any = js.native
-  /**
-    * @param array A single matrix
-    * @returns The sum of all values
-    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  def sum(array: MathCollection): Any = js.native
+  @JSName("sum")
+  def sum_T_T[T /* <: MathScalarType */](args: T*): T = js.native
   
   /**
     * Solves the real-valued Sylvester equation AX-XB=C for X, where A, B and C are
@@ -3627,7 +3734,7 @@ trait MathJsStatic
     * @param args A single matrix or multiple scalar values
     * @returns The variance
     */
-  def variance(args: (Double | BigNumber | Fraction)*): Double = js.native
+  def variance(args: MathNumericType*): MathNumericType = js.native
   /**
     * Compute the variance of a matrix or a list with values. In case of a
     * (multi dimensional) array or matrix, the variance over all elements
@@ -3646,10 +3753,10 @@ trait MathJsStatic
     * Default value: ‘unbiased’.
     * @returns variance matrix.
     */
-  def variance(array: MathCollection): js.Array[Double] = js.native
-  def variance(array: MathCollection, dimension: Double): js.Array[Double] = js.native
-  def variance(array: MathCollection, dimension: Double, normalization: unbiased | uncorrected | biased): js.Array[Double] = js.native
-  def variance(array: MathCollection, dimension: scala.Unit, normalization: unbiased | uncorrected | biased): js.Array[Double] = js.native
+  def variance(array: MathCollection): js.Array[MathNumericType] = js.native
+  def variance(array: MathCollection, dimension: Double): js.Array[MathNumericType] = js.native
+  def variance(array: MathCollection, dimension: Double, normalization: unbiased | uncorrected | biased): js.Array[MathNumericType] = js.native
+  def variance(array: MathCollection, dimension: scala.Unit, normalization: unbiased | uncorrected | biased): js.Array[MathNumericType] = js.native
   /**
     * @param array A single matrix
     * @param normalization normalization Determines how to normalize the
@@ -3657,7 +3764,7 @@ trait MathJsStatic
     * Default value: ‘unbiased’.
     * @returns The variance
     */
-  def variance(array: MathCollection, normalization: unbiased | uncorrected | biased): Double = js.native
+  def variance(array: MathCollection, normalization: unbiased | uncorrected | biased): MathNumericType = js.native
   
   var version: String = js.native
   

@@ -32,14 +32,14 @@ trait DeleteParametersPathEnvironmentnameResponses extends StObject {
     *
     * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
-  var put: Responses422Content36
+  var put: Responses422Content41
 }
 object DeleteParametersPathEnvironmentnameResponses {
   
   inline def apply(
     delete: ParametersPathEnvironmentnameResponses,
     get: ParametersPathEnvironmentname,
-    put: Responses422Content36
+    put: Responses422Content41
   ): DeleteParametersPathEnvironmentnameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathEnvironmentnameResponses]
@@ -52,6 +52,6 @@ object DeleteParametersPathEnvironmentnameResponses {
     
     inline def setGet(value: ParametersPathEnvironmentname): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses422Content36): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses422Content41): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

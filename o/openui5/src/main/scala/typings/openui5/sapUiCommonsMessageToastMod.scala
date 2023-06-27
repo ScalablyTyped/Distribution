@@ -135,13 +135,13 @@ object sapUiCommonsMessageToastMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNext(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.MessageToast` itself
       */
@@ -166,7 +166,7 @@ object sapUiCommonsMessageToastMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachNext(
       /**
@@ -177,7 +177,7 @@ object sapUiCommonsMessageToastMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.commons.MessageToast` itself
       */
@@ -195,13 +195,13 @@ object sapUiCommonsMessageToastMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachNext(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -209,7 +209,7 @@ object sapUiCommonsMessageToastMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:next next} to attached listeners.
       *
@@ -268,6 +268,12 @@ object sapUiCommonsMessageToastMod {
     ): Unit = js.native
   }
   
+  trait MessageToast$NextEventParameters extends StObject
+  
+  type MessageToastNextEvent = typings.openui5.sapUiBaseEventMod.default[MessageToast$NextEventParameters]
+  
+  type MessageToastNextEventParameters = MessageToast$NextEventParameters
+  
   trait MessageToastSettings
     extends StObject
        with ControlSettings {
@@ -280,7 +286,9 @@ object sapUiCommonsMessageToastMod {
     /**
       * Fired once the `toast()` method is over, so that the MessageBar can "toast" another message if needed.
       */
-    var next: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var next: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
   }
   object MessageToastSettings {
     
@@ -296,7 +304,7 @@ object sapUiCommonsMessageToastMod {
       
       inline def setAnchorIdUndefined: Self = StObject.set(x, "anchorId", js.undefined)
       
-      inline def setNext(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }

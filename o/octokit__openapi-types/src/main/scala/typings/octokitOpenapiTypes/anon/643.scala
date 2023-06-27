@@ -6,28 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `643` extends StObject {
   
-  var incomplete_results: Boolean
+  var path: OwnerString
   
-  var items: js.Array[ScoreTextmatches]
-  
-  var total_count: Double
+  var query: js.UndefOr[ActorBranch] = js.undefined
 }
 object `643` {
   
-  inline def apply(incomplete_results: Boolean, items: js.Array[ScoreTextmatches], total_count: Double): `643` = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(path: OwnerString): `643` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`643`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `643`] (val x: Self) extends AnyVal {
     
-    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
+    inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[ScoreTextmatches]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setQuery(value: ActorBranch): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ScoreTextmatches*): Self = StObject.set(x, "items", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

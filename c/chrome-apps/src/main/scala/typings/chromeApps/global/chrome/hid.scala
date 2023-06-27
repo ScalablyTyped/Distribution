@@ -56,8 +56,8 @@ object hid {
   inline def getDevices(options: DeviceOptions, callback: js.Function1[/* devices */ js.Array[HidDeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * @requires(dev) **Dev channel only!**
-    * @see[Learn more]{@link https://developer.chrome.com/apps/api_index#dev_apis}
+    * @requires **Dev channel only!**
+    * @see https://developer.chrome.com/apps/api_index#dev_apis
     * @description
     * Presents a device picker to the user and returns
     * HidDeviceInfo objects for the devices selected. If the user
@@ -70,8 +70,8 @@ object hid {
   inline def getUserSelectedDevices(callback: js.Function1[/* devices */ HidDeviceInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * @since Chrome 45.
-    * @requires(dev) **Dev channel only!**
-    * @see[Learn more]{@link https://developer.chrome.com/apps/api_index#dev_apis}
+    * @requires **Dev channel only!**
+    * @see https://developer.chrome.com/apps/api_index#dev_apis
     * Presents a device picker to the user and returns
     * HidDeviceInfo objects for the devices selected. If the user
     * cancels the picker devices will be empty. A user gesture is
@@ -93,7 +93,7 @@ object hid {
     * have been granted at install time or when the user
     * accepted an optional permission.
     * @since Chrome 41.
-    * @see[permissions.request]{@link https://developer.chrome.com/apps/permissions#method-request}
+    * @see https://developer.chrome.com/apps/permissions#method-request
     */
   @JSGlobal("chrome.hid.onDeviceAdded")
   @js.native
@@ -103,7 +103,7 @@ object hid {
     * Event generated when a device is removed from the system.
     * The callback will contain the deviceId property of the device passed to onDeviceAdded.
     * @since Chrome 41.
-    * @see[See onDeviceAdded for which events are delivered]{@link https://developer.chrome.com/apps/hid#event-onDeviceAdded}.
+    * @see https://developer.chrome.com/apps/hid#event-onDeviceAdded
     */
   @JSGlobal("chrome.hid.onDeviceRemoved")
   @js.native

@@ -19,7 +19,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
+    * For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -27,7 +27,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var altTextDescription: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+    * For EACH ITEM in the collection: Specifies a string that contains the title for the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -35,7 +35,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var altTextTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+    * For EACH ITEM in the collection: Specifies a number that describes the height of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -43,7 +43,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+    * For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -60,7 +60,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var imageFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -124,7 +124,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+    * For EACH ITEM in the collection: Specifies a number that describes the width of the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.1]

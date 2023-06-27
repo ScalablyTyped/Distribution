@@ -31,6 +31,8 @@ trait pivotConfig extends StObject {
   
   var fields: js.UndefOr[js.Array[Any]] = js.undefined
   
+  var freezeColumns: js.UndefOr[Boolean] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
@@ -126,6 +128,10 @@ object pivotConfig {
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setFreezeColumns(value: Boolean): Self = StObject.set(x, "freezeColumns", value.asInstanceOf[js.Any])
+    
+    inline def setFreezeColumnsUndefined: Self = StObject.set(x, "freezeColumns", js.undefined)
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     

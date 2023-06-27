@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parse-entities" : "4.0.0"
+      "parse-entities" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "parse-entities" : "4.0.0"
+      "parse-entities" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

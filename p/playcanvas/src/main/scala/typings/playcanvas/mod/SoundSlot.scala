@@ -254,7 +254,8 @@ open class SoundSlot protected () extends EventHandler {
     * Fired when the asset assigned to the slot is loaded.
     *
     * @event SoundSlot#load
-    * @param {Sound} sound - The sound resource that was loaded.
+    * @param {import('../../../platform/sound/sound.js').Sound} sound - The sound resource that
+    * was loaded.
     */
   /**
     * Plays a sound. If {@link SoundSlot#overlap} is true the new sound instance will be played

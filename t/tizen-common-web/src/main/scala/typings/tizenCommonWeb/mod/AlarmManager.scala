@@ -49,10 +49,10 @@ trait AlarmManager extends StObject {
     * @param applicationId The application ID to run when the alarm is triggered.
     * @param appControl The data structure describing application control details.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def add(alarm: Alarm_, applicationId: ApplicationId): Unit = js.native
   def add(alarm: Alarm_, applicationId: ApplicationId, appControl: ApplicationControl): Unit = js.native
@@ -64,9 +64,9 @@ trait AlarmManager extends StObject {
     *
     * @returns An alarm object with the specified ID.
     *
-    * @throw WebAPIException with error type NotFoundError, if this alarm identifier cannot be found in the storage.
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if this alarm identifier cannot be found in the storage.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def get(id: AlarmId): Alarm_ = js.native
   
@@ -77,7 +77,7 @@ trait AlarmManager extends StObject {
     *
     * @returns All Alarm objects.
     *
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def getAll(): js.Array[Alarm_] = js.native
   
@@ -91,10 +91,10 @@ trait AlarmManager extends StObject {
     *
     * @param id The ID of the alarm to remove.
     *
-    * @throw WebAPIException with error type NotFoundError, if this alarm identifier cannot be found in the storage.
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type NotFoundError, if this alarm identifier cannot be found in the storage.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def remove(id: AlarmId): Unit = js.native
   
@@ -106,8 +106,8 @@ trait AlarmManager extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/alarm
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def removeAll(): Unit = js.native
 }

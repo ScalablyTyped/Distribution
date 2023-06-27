@@ -8,12 +8,12 @@ trait PathMigrationid extends StObject {
   
   var path: Migrationid
   
-  var query: `95`
+  var query: js.UndefOr[`110`] = js.undefined
 }
 object PathMigrationid {
   
-  inline def apply(path: Migrationid, query: `95`): PathMigrationid = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(path: Migrationid): PathMigrationid = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathMigrationid]
   }
   
@@ -22,6 +22,8 @@ object PathMigrationid {
     
     inline def setPath(value: Migrationid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `95`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `110`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

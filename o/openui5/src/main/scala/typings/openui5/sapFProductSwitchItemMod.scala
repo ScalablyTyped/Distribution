@@ -158,8 +158,8 @@ object sapFProductSwitchItemMod {
       *
       * Defines the `ProductSwitchItem` target URI. Supports standard hyperlink behavior.
       *
-      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change
-      * change} event of `sap.f.ProductSwitch`.
+      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change change }
+      * event of `sap.f.ProductSwitch`.
       *
       * @returns Value of property `targetSrc`
       */
@@ -228,8 +228,8 @@ object sapFProductSwitchItemMod {
       *
       * Defines the `ProductSwitchItem` target URI. Supports standard hyperlink behavior.
       *
-      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change
-      * change} event of `sap.f.ProductSwitch`.
+      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change change }
+      * event of `sap.f.ProductSwitch`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -283,8 +283,8 @@ object sapFProductSwitchItemMod {
     /**
       * Defines the `ProductSwitchItem` target URI. Supports standard hyperlink behavior.
       *
-      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change
-      * change} event of `sap.f.ProductSwitch`.
+      * **Note:** Redirection is handled via application logic, by subscribing to the {@link sap.f.ProductSwitch#event:change change }
+      * event of `sap.f.ProductSwitch`.
       */
     var targetSrc: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     

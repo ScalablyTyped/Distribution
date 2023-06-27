@@ -130,8 +130,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridColumn gridColumn}.
       *
-      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column
-      * MDN web docs: grid-column}
+      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column MDN web docs: grid-column}
       *
       * Default value is `empty string`.
       *
@@ -142,8 +141,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridColumnEnd gridColumnEnd}.
       *
-      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end
-      * MDN web docs: grid-column-end}
+      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end MDN web docs: grid-column-end}
       *
       * Default value is `empty string`.
       *
@@ -154,8 +152,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridColumnStart gridColumnStart}.
       *
-      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start
-      * MDN web docs: grid-column-start}
+      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start MDN web docs: grid-column-start}
       *
       * Default value is `empty string`.
       *
@@ -166,8 +163,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridRow gridRow}.
       *
-      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row
-      * MDN web docs: grid-row}
+      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row MDN web docs: grid-row}
       *
       * Default value is `empty string`.
       *
@@ -178,8 +174,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridRowEnd gridRowEnd}.
       *
-      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end
-      * MDN web docs: grid-row-end}
+      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end MDN web docs: grid-row-end}
       *
       * Default value is `empty string`.
       *
@@ -190,8 +185,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Gets current value of property {@link #getGridRowStart gridRowStart}.
       *
-      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start
-      * MDN web docs: grid-row-start}
+      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start MDN web docs: grid-row-start}
       *
       * Default value is `empty string`.
       *
@@ -202,8 +196,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridColumn gridColumn}.
       *
-      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column
-      * MDN web docs: grid-column}
+      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column MDN web docs: grid-column}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -220,8 +213,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridColumnEnd gridColumnEnd}.
       *
-      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end
-      * MDN web docs: grid-column-end}
+      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end MDN web docs: grid-column-end}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -238,8 +230,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridColumnStart gridColumnStart}.
       *
-      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start
-      * MDN web docs: grid-column-start}
+      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start MDN web docs: grid-column-start}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -256,8 +247,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridRow gridRow}.
       *
-      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row
-      * MDN web docs: grid-row}
+      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row MDN web docs: grid-row}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -274,8 +264,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridRowEnd gridRowEnd}.
       *
-      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end
-      * MDN web docs: grid-row-end}
+      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end MDN web docs: grid-row-end}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -292,8 +281,7 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
     /**
       * Sets a new value for property {@link #getGridRowStart gridRowStart}.
       *
-      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start
-      * MDN web docs: grid-row-start}
+      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start MDN web docs: grid-row-start}
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -313,48 +301,42 @@ object sapUiLayoutCssgridGridItemLayoutDataMod {
        with ElementSettings {
     
     /**
-      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column
-      * MDN web docs: grid-column}
+      * Sets the value for the CSS display:grid item property grid-column {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column MDN web docs: grid-column}
       */
     var gridColumn: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end
-      * MDN web docs: grid-column-end}
+      * Sets the value for the CSS display:grid item property grid-column-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end MDN web docs: grid-column-end}
       */
     var gridColumnEnd: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start
-      * MDN web docs: grid-column-start}
+      * Sets the value for the CSS display:grid item property grid-column-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start MDN web docs: grid-column-start}
       */
     var gridColumnStart: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row
-      * MDN web docs: grid-row}
+      * Sets the value for the CSS display:grid item property grid-row {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row MDN web docs: grid-row}
       */
     var gridRow: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end
-      * MDN web docs: grid-row-end}
+      * Sets the value for the CSS display:grid item property grid-row-end {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end MDN web docs: grid-row-end}
       */
     var gridRowEnd: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start
-      * MDN web docs: grid-row-start}
+      * Sets the value for the CSS display:grid item property grid-row-start {@link https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start MDN web docs: grid-row-start}
       */
     var gridRowStart: js.UndefOr[
         CSSGridLine | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

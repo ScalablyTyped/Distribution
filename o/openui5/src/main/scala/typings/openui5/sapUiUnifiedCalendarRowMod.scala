@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Appointment
-import typings.openui5.anon.EndDate
-import typings.openui5.anon.Type
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -174,7 +171,7 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:intervalSelect intervalSelect} event of this
       * `sap.ui.unified.CalendarRow`.
@@ -190,20 +187,20 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit]
     ): this.type = js.native
     def attachIntervalSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Attaches event handler `fnFunction` to the {@link #event:intervalSelect intervalSelect} event of this
       * `sap.ui.unified.CalendarRow`.
@@ -224,7 +221,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit]
     ): this.type = js.native
     def attachIntervalSelect(
       /**
@@ -235,7 +232,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -257,13 +254,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit]
     ): this.type = js.native
     def attachLeaveRow(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -289,7 +286,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit]
     ): this.type = js.native
     def attachLeaveRow(
       /**
@@ -300,7 +297,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -321,13 +318,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -352,7 +349,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -363,7 +360,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -385,13 +382,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -417,7 +414,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachStartDateChange(
       /**
@@ -428,7 +425,7 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.CalendarRow` itself
       */
@@ -450,7 +447,7 @@ object sapUiUnifiedCalendarRowMod {
     def destroyIntervalHeaders(): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Detaches event handler `fnFunction` from the {@link #event:intervalSelect intervalSelect} event of this
       * `sap.ui.unified.CalendarRow`.
@@ -463,13 +460,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit]
     ): this.type = js.native
     def detachIntervalSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowIntervalSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -487,13 +484,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit]
     ): this.type = js.native
     def detachLeaveRow(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowLeaveRowEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -511,13 +508,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ CalendarRowSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -536,13 +533,13 @@ object sapUiUnifiedCalendarRowMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachStartDateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -550,47 +547,53 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.38.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:intervalSelect intervalSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireIntervalSelect(): this.type = js.native
-    def fireIntervalSelect(/**
+    def fireIntervalSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: EndDate): this.type = js.native
+    mParameters: CalendarRow$IntervalSelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:leaveRow leaveRow} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLeaveRow(): this.type = js.native
-    def fireLeaveRow(/**
+    def fireLeaveRow(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Type): this.type = js.native
+    mParameters: CalendarRow$LeaveRowEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelect(): this.type = js.native
-    def fireSelect(/**
+    def fireSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Appointment): this.type = js.native
+    mParameters: CalendarRow$SelectEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -620,12 +623,16 @@ object sapUiUnifiedCalendarRowMod {
       * @returns Reference to `this` for method chaining
       */
     def focusNearestAppointment(/**
-      * Javascript Date object.
+      * date instance.
       */
     oDate: js.Date): this.type = js.native
+    def focusNearestAppointment(/**
+      * date instance.
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Gets current value of property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -638,8 +645,8 @@ object sapUiUnifiedCalendarRowMod {
     def getAppointmentHeight(): CalendarAppointmentHeight | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentHeight * / any */ String) = js.native
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Gets current value of property {@link #getAppointmentRoundWidth appointmentRoundWidth}.
       *
@@ -662,7 +669,7 @@ object sapUiUnifiedCalendarRowMod {
     def getAppointments(): js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       * @deprecated (since 1.81) - Please use the `appointmentHeight` with value "Automatic" property instead.
       *
       * Gets current value of property {@link #getAppointmentsReducedHeight appointmentsReducedHeight}.
@@ -679,7 +686,7 @@ object sapUiUnifiedCalendarRowMod {
     def getAppointmentsReducedHeight(): Boolean = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Gets current value of property {@link #getAppointmentsVisualization appointmentsVisualization}.
       *
@@ -694,8 +701,7 @@ object sapUiUnifiedCalendarRowMod {
     def getAppointmentsVisualization(): CalendarAppointmentVisualization | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentVisualization * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -798,14 +804,14 @@ object sapUiUnifiedCalendarRowMod {
     def getIntervals(): int = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getMultipleAppointmentsSelection multipleAppointmentsSelection}.
       *
@@ -846,7 +852,7 @@ object sapUiUnifiedCalendarRowMod {
     def getNonWorkingHours(): js.Array[int] = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getShowEmptyIntervalHeaders showEmptyIntervalHeaders}.
       *
@@ -895,7 +901,7 @@ object sapUiUnifiedCalendarRowMod {
     /**
       * Gets current value of property {@link #getStartDate startDate}.
       *
-      * Start date, as JavaScript Date object, of the row. As default, the current date is used.
+      * Start date, as UI5Date or JavaScript Date object, of the row. As default, the current date is used.
       *
       * @returns Value of property `startDate`
       */
@@ -940,8 +946,8 @@ object sapUiUnifiedCalendarRowMod {
     oEvent: Event): this.type = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments
-      * appointments}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getAppointments appointments}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -953,8 +959,8 @@ object sapUiUnifiedCalendarRowMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getIntervalHeaders
-      * intervalHeaders}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.unified.CalendarAppointment` in the aggregation {@link #getIntervalHeaders intervalHeaders}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1087,7 +1093,7 @@ object sapUiUnifiedCalendarRowMod {
     ): typings.openui5.sapUiUnifiedCalendarAppointmentMod.default | Null = js.native
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Sets a new value for property {@link #getAppointmentHeight appointmentHeight}.
       *
@@ -1114,8 +1120,8 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Sets a new value for property {@link #getAppointmentRoundWidth appointmentRoundWidth}.
       *
@@ -1143,7 +1149,7 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       * @deprecated (since 1.81) - Please use the `appointmentHeight` with value "Automatic" property instead.
       *
       * Sets a new value for property {@link #getAppointmentsReducedHeight appointmentsReducedHeight}.
@@ -1168,7 +1174,7 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Sets a new value for property {@link #getAppointmentsVisualization appointmentsVisualization}.
       *
@@ -1314,7 +1320,7 @@ object sapUiUnifiedCalendarRowMod {
     iIntervals: int): this.type = js.native
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -1336,7 +1342,7 @@ object sapUiUnifiedCalendarRowMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getMultipleAppointmentsSelection multipleAppointmentsSelection}.
       *
@@ -1397,7 +1403,7 @@ object sapUiUnifiedCalendarRowMod {
     sNonWorkingHours: js.Array[int]): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getShowEmptyIntervalHeaders showEmptyIntervalHeaders}.
       *
@@ -1468,9 +1474,15 @@ object sapUiUnifiedCalendarRowMod {
       */
     def setStartDate(): this.type = js.native
     def setStartDate(/**
-      * Start date, as JavaScript Date object, of the row
+      * Start date, as date instance, of the row
       */
     oStartDate: js.Date): this.type = js.native
+    def setStartDate(
+      /**
+      * Start date, as date instance, of the row
+      */
+    oStartDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getUpdateCurrentTime updateCurrentTime}.
@@ -1521,12 +1533,143 @@ object sapUiUnifiedCalendarRowMod {
     def updateCurrentTimeVisualization(): this.type = js.native
   }
   
+  trait CalendarRow$IntervalSelectEventParameters extends StObject {
+    
+    /**
+      * Interval end date as UI5Date or JavaScript Date object
+      */
+    var endDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Interval start date as UI5Date or JavaScript Date object
+      */
+    var startDate: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * If set, the selected interval is a subinterval
+      */
+    var subInterval: js.UndefOr[Boolean] = js.undefined
+  }
+  object CalendarRow$IntervalSelectEventParameters {
+    
+    inline def apply(): CalendarRow$IntervalSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalendarRow$IntervalSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarRow$IntervalSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setEndDate(value: js.Object): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      
+      inline def setStartDate(value: js.Object): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      
+      inline def setSubInterval(value: Boolean): Self = StObject.set(x, "subInterval", value.asInstanceOf[js.Any])
+      
+      inline def setSubIntervalUndefined: Self = StObject.set(x, "subInterval", js.undefined)
+    }
+  }
+  
+  trait CalendarRow$LeaveRowEventParameters extends StObject {
+    
+    /**
+      * The type of the event that triggers this `leaveRow`
+      */
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object CalendarRow$LeaveRowEventParameters {
+    
+    inline def apply(): CalendarRow$LeaveRowEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalendarRow$LeaveRowEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarRow$LeaveRowEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  trait CalendarRow$SelectEventParameters extends StObject {
+    
+    /**
+      * selected appointment
+      */
+    var appointment: js.UndefOr[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default] = js.undefined
+    
+    /**
+      * selected appointments in case a group appointment is selected
+      */
+    var appointments: js.UndefOr[js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]] = js.undefined
+    
+    /**
+      * Gives the ID of the DOM element of the clicked appointment
+      */
+    var domRefId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If set, the appointment was selected by multiple selection (e.g. shift + mouse click). So more than the
+      * current appointment could be selected.
+      */
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
+  }
+  object CalendarRow$SelectEventParameters {
+    
+    inline def apply(): CalendarRow$SelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CalendarRow$SelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarRow$SelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAppointment(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
+      
+      inline def setAppointments(value: js.Array[typings.openui5.sapUiUnifiedCalendarAppointmentMod.default]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
+      
+      inline def setAppointmentsUndefined: Self = StObject.set(x, "appointments", js.undefined)
+      
+      inline def setAppointmentsVarargs(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default*): Self = StObject.set(x, "appointments", js.Array(value*))
+      
+      inline def setDomRefId(value: String): Self = StObject.set(x, "domRefId", value.asInstanceOf[js.Any])
+      
+      inline def setDomRefIdUndefined: Self = StObject.set(x, "domRefId", js.undefined)
+      
+      inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+      
+      inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    }
+  }
+  
+  trait CalendarRow$StartDateChangeEventParameters extends StObject
+  
+  type CalendarRowIntervalSelectEvent = typings.openui5.sapUiBaseEventMod.default[CalendarRow$IntervalSelectEventParameters]
+  
+  type CalendarRowIntervalSelectEventParameters = CalendarRow$IntervalSelectEventParameters
+  
+  type CalendarRowLeaveRowEvent = typings.openui5.sapUiBaseEventMod.default[CalendarRow$LeaveRowEventParameters]
+  
+  type CalendarRowLeaveRowEventParameters = CalendarRow$LeaveRowEventParameters
+  
+  type CalendarRowSelectEvent = typings.openui5.sapUiBaseEventMod.default[CalendarRow$SelectEventParameters]
+  
+  type CalendarRowSelectEventParameters = CalendarRow$SelectEventParameters
+  
   trait CalendarRowSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.81.0
+      * @since 1.81.0
       *
       * Defines the height of the CalendarAppoinment
       */
@@ -1535,8 +1678,8 @@ object sapUiUnifiedCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.81.0
-      * @EXPERIMENTAL (since 1.81.0)
+      * @since 1.81.0
+      * @experimental (since 1.81.0)
       *
       * Defines rounding of the width of CalendarAppoinment **Note:** This property is applied, when
       * the calendar interval type is day and the view shows more than 20 days
@@ -1555,7 +1698,7 @@ object sapUiUnifiedCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       * @deprecated (since 1.81) - Please use the `appointmentHeight` with value "Automatic" property instead.
       *
       * If set the appointments without text (only title) are rendered with a smaller height.
@@ -1568,7 +1711,7 @@ object sapUiUnifiedCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Defines the visualization of the `CalendarAppoinment`
       *
@@ -1630,11 +1773,16 @@ object sapUiUnifiedCalendarRowMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Fired if an interval was selected
       */
-    var intervalSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var intervalSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$IntervalSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Number of interval type units merged. It's used when presenting Relative View in sap.m.PlanningCalendar.
@@ -1658,10 +1806,15 @@ object sapUiUnifiedCalendarRowMod {
       * The `CalendarRow` should be left while navigating. (Arrow up or arrow down.) The caller should determine
       * the next control to be focused
       */
-    var leaveRow: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var leaveRow: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$LeaveRowEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.40.0
+      * @since 1.40.0
       *
       * Association to the `CalendarLegend` explaining the colors of the `Appointments`.
       *
@@ -1670,7 +1823,7 @@ object sapUiUnifiedCalendarRowMod {
     var legend: js.UndefOr[typings.openui5.sapUiUnifiedCalendarLegendMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Determines whether the selection of multiple appointments is enabled.
       *
@@ -1705,10 +1858,15 @@ object sapUiUnifiedCalendarRowMod {
     /**
       * Fired if an appointment was selected
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$SelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * If set, interval headers are shown even if no `intervalHeaders` are assigned to the visible time frame.
       *
@@ -1743,7 +1901,7 @@ object sapUiUnifiedCalendarRowMod {
       ] = js.undefined
     
     /**
-      * Start date, as JavaScript Date object, of the row. As default, the current date is used.
+      * Start date, as UI5Date or JavaScript Date object, of the row. As default, the current date is used.
       */
     var startDate: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1752,7 +1910,9 @@ object sapUiUnifiedCalendarRowMod {
     /**
       * `startDate` was changed while navigating in `CalendarRow`
       */
-    var startDateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var startDateChange: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If set the `CalendarRow` triggers a periodic update to visualize the current time.
@@ -1840,7 +2000,9 @@ object sapUiUnifiedCalendarRowMod {
       
       inline def setIntervalHeadersVarargs(value: typings.openui5.sapUiUnifiedCalendarAppointmentMod.default*): Self = StObject.set(x, "intervalHeaders", js.Array(value*))
       
-      inline def setIntervalSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "intervalSelect", js.Any.fromFunction1(value))
+      inline def setIntervalSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$IntervalSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "intervalSelect", js.Any.fromFunction1(value))
       
       inline def setIntervalSelectUndefined: Self = StObject.set(x, "intervalSelect", js.undefined)
       
@@ -1858,7 +2020,9 @@ object sapUiUnifiedCalendarRowMod {
       
       inline def setIntervalsUndefined: Self = StObject.set(x, "intervals", js.undefined)
       
-      inline def setLeaveRow(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "leaveRow", js.Any.fromFunction1(value))
+      inline def setLeaveRow(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$LeaveRowEventParameters] => Unit
+      ): Self = StObject.set(x, "leaveRow", js.Any.fromFunction1(value))
       
       inline def setLeaveRowUndefined: Self = StObject.set(x, "leaveRow", js.undefined)
       
@@ -1882,7 +2046,9 @@ object sapUiUnifiedCalendarRowMod {
       
       inline def setNonWorkingHoursVarargs(value: int*): Self = StObject.set(x, "nonWorkingHours", js.Array(value*))
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[CalendarRow$SelectEventParameters] => Unit
+      ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
@@ -1900,7 +2066,7 @@ object sapUiUnifiedCalendarRowMod {
       
       inline def setStartDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
+      inline def setStartDateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "startDateChange", js.Any.fromFunction1(value))
       
       inline def setStartDateChangeUndefined: Self = StObject.set(x, "startDateChange", js.undefined)
       
@@ -1915,4 +2081,8 @@ object sapUiUnifiedCalendarRowMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type CalendarRowStartDateChangeEvent = typings.openui5.sapUiBaseEventMod.default[CalendarRow$StartDateChangeEventParameters]
+  
+  type CalendarRowStartDateChangeEventParameters = CalendarRow$StartDateChangeEventParameters
 }

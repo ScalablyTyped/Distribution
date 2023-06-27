@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.`45`
-import typings.openui5.anon.`47`
+import typings.openui5.anon.`13`
+import typings.openui5.anon.`15`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object sapUiModelTypeFileSizeMod {
     def this(/**
       * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
       */
-    oFormatOptions: `45`) = this()
+    oFormatOptions: `13`) = this()
     def this(
       /**
       * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
@@ -29,17 +29,17 @@ object sapUiModelTypeFileSizeMod {
       /**
       * value constraints.
       */
-    oConstraints: `47`
+    oConstraints: `15`
     ) = this()
     def this(
       /**
       * Format options as defined in {@link sap.ui.core.format.FileSizeFormat.getInstance}
       */
-    oFormatOptions: `45`,
+    oFormatOptions: `13`,
       /**
       * value constraints.
       */
-    oConstraints: `47`
+    oConstraints: `15`
     ) = this()
   }
   /* static members */

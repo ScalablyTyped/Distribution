@@ -164,7 +164,7 @@ object Button {
     var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentType of the Button. See below to know available ContentType
-      * @Default {ej.ContentType.TextOnly}
+      * @default {ej.ContentType.TextOnly}
       */
     var contentType: js.UndefOr[ContentType | String] = js.undefined
     
@@ -181,73 +181,73 @@ object Button {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specify the Right to Left direction to button
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the button control state.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Button.
-      * @Default {28}
+      * @default {28}
       */
     var height: js.UndefOr[Double] = js.undefined
     
     /** It allows to define the characteristics of the Button control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and
       * imageRight options. See below to know about available ImagePosition
-      * @Default {ej.ImagePosition.ImageLeft}
+      * @default {ej.ImagePosition.ImageLeft}
       */
     var imagePosition: js.UndefOr[ImagePosition | String] = js.undefined
     
     /** Specifies the primary icon for Button. This icon will be displayed from the left margin of the button.
-      * @Default {null}
+      * @default {null}
       */
     var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Convert the button as repeat button. It raises the 'Click' event repeatedly from the it is pressed until it is released.
-      * @Default {false}
+      * @default {false}
       */
     var repeatButton: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the Button with rounded corners.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the Button. See below to know available ButtonSize
-      * @Default {ej.ButtonSize.Normal}
+      * @default {ej.ButtonSize.Normal}
       */
     var size: js.UndefOr[ButtonSize | String] = js.undefined
     
     /** Specifies the secondary icon for Button. This icon will be displayed from the right margin of the button.
-      * @Default {null}
+      * @default {null}
       */
     var suffixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the text content for Button.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specified the time interval between two consecutive 'click' event on the button.
-      * @Default {150}
+      * @default {150}
       */
     var timeInterval: js.UndefOr[String] = js.undefined
     
     /** Specifies the Type of the Button. See below to know available ButtonType
-      * @Default {ej.ButtonType.Submit}
+      * @default {ej.ButtonType.Submit}
       */
     var `type`: js.UndefOr[ButtonType | String] = js.undefined
     
     /** Specifies the width of the Button.
-      * @Default {100px}
+      * @default {100px}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

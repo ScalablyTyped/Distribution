@@ -2,6 +2,7 @@ package typings.officeJs.Word
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeJs.OfficeExtension.ClientObject
+import typings.officeJs.OfficeExtension.ClientResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +32,16 @@ trait Application
     */
   def createDocument(): DocumentCreated = js.native
   def createDocument(base64File: String): DocumentCreated = js.native
+  
+  /**
+    * Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
+    *
+    * @remarks
+    * [Api set: WordApi 1.5]
+    *
+    * @param base64File Required. The template file.
+    */
+  def retrieveStylesFromBase64(base64File: String): ClientResult[String] = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

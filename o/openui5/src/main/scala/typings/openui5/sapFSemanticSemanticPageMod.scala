@@ -23,9 +23,9 @@ object sapFSemanticSemanticPageMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:47dc86847f7a426a8e557167cf523bda Semantic Page}
-    * 	{@link topic:84f3d52f492648d5b594e4f45dca7727 Semantic Pages}
-    * 	{@link topic:4a97a07ec8f5441d901994d82eaab1f5 Semantic Page (sap.m)}
+    * 	{@link https://ui5.sap.com/#/topic/47dc86847f7a426a8e557167cf523bda Semantic Page}
+    * 	{@link https://ui5.sap.com/#/topic/84f3d52f492648d5b594e4f45dca7727 Semantic Pages}
+    * 	{@link https://ui5.sap.com/#/topic/4a97a07ec8f5441d901994d82eaab1f5 Semantic Page (sap.m)}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/semantic-page/ Semantic Page}
     */
   open class default () extends SemanticPage {
@@ -167,7 +167,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Adds some titleContent to the aggregation {@link #getTitleContent titleContent}.
       *
@@ -285,7 +285,7 @@ object sapFSemanticSemanticPageMod {
     def destroyDraftIndicator(): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Destroys the editAction in the aggregation {@link #getEditAction editAction}.
       *
@@ -343,7 +343,7 @@ object sapFSemanticSemanticPageMod {
     def destroyHeaderContent(): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Destroys the landmarkInfo in the aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -408,7 +408,7 @@ object sapFSemanticSemanticPageMod {
     def destroyShareInJamAction(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys the titleBreadcrumbs in the aggregation {@link #getTitleBreadcrumbs titleBreadcrumbs}.
       *
@@ -417,7 +417,7 @@ object sapFSemanticSemanticPageMod {
     def destroyTitleBreadcrumbs(): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Destroys all the titleContent in the aggregation {@link #getTitleContent titleContent}.
       *
@@ -447,7 +447,7 @@ object sapFSemanticSemanticPageMod {
     def destroyTitleExpandedContent(): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Destroys the titleExpandedHeading in the aggregation {@link #getTitleExpandedHeading titleExpandedHeading}.
       *
@@ -477,7 +477,7 @@ object sapFSemanticSemanticPageMod {
     def destroyTitleSnappedContent(): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Destroys the titleSnappedHeading in the aggregation {@link #getTitleSnappedHeading titleSnappedHeading}.
       *
@@ -486,7 +486,7 @@ object sapFSemanticSemanticPageMod {
     def destroyTitleSnappedHeading(): this.type = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Destroys the titleSnappedOnMobile in the aggregation {@link #getTitleSnappedOnMobile titleSnappedOnMobile}.
       *
@@ -522,11 +522,10 @@ object sapFSemanticSemanticPageMod {
       * The `SemanticPage` content.
       *
       * **Note:** The SAP Fiori Design guidelines require that the `SemanticPage`'s header content and the `SemanticPage`'s
-      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link
-      * sap.m.Table} and {@link sap.m.List} in the content area of `SemanticPage`, if the content is not already
-      * aligned, you need to adjust their left text offset to achieve the vertical alignment. To do this, apply
-      * the `sapFSemanticPageAlignContent` CSS class to them and set their `width` property to `auto` (if not
-      * set by default).
+      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link sap.m.Table }
+      * and {@link sap.m.List} in the content area of `SemanticPage`, if the content is not already aligned,
+      * you need to adjust their left text offset to achieve the vertical alignment. To do this, apply the `sapFSemanticPageAlignContent`
+      * CSS class to them and set their `width` property to `auto` (if not set by default).
       *
       * Example:
       *
@@ -537,7 +536,7 @@ object sapFSemanticSemanticPageMod {
       * ```
       *
       *
-      * Please keep in mind that the alignment is not possible when the controls are placed in a {@link sap.ui.layout.Grid}
+      * Please keep in mind that the alignment is not possible when the controls are placed in a {@link sap.ui.layout.Grid }
       * or in other layout controls that use `overflow:hidden` CSS property.
       */
     def getContent(): typings.openui5.sapUiCoreControlMod.default = js.native
@@ -598,7 +597,7 @@ object sapFSemanticSemanticPageMod {
     def getDraftIndicator(): typings.openui5.sapMDraftIndicatorMod.default = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Gets content of aggregation {@link #getEditAction editAction}.
       *
@@ -633,14 +632,14 @@ object sapFSemanticSemanticPageMod {
     def getFavoriteAction(): typings.openui5.sapFSemanticFavoriteActionMod.default = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Gets current value of property {@link #getFitContent fitContent}.
       *
       * Optimizes `SemanticPage` responsiveness on small screens and behavior when expanding/collapsing the `SemanticPageHeader`.
       *
       * **Note:** It is recommended to use this property when displaying content of adaptive controls that stretch
-      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
+      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
       * depending on their settings.
       *
       * Default value is `false`.
@@ -726,7 +725,7 @@ object sapFSemanticSemanticPageMod {
     def getHeaderPinnable(): Boolean = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Gets content of aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -845,7 +844,7 @@ object sapFSemanticSemanticPageMod {
     def getShowFooter(): Boolean = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets current value of property {@link #getTitleAreaShrinkRatio titleAreaShrinkRatio}.
       *
@@ -869,7 +868,7 @@ object sapFSemanticSemanticPageMod {
     def getTitleAreaShrinkRatio(): DynamicPageTitleShrinkRatio = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getTitleBreadcrumbs titleBreadcrumbs}.
       *
@@ -881,13 +880,13 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The control will be placed in the title`s top-left area.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     def getTitleBreadcrumbs(): IBreadcrumbs = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Gets content of aggregation {@link #getTitleContent titleContent}.
       *
@@ -896,8 +895,8 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The controls will be placed in the middle area.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     def getTitleContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
@@ -921,10 +920,10 @@ object sapFSemanticSemanticPageMod {
       *
       * **Notes:**
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       * 	 - Buttons that are part of this aggregation will always have their `type` property set to `Transparent`
-      * 			by design.
+      *     by design.
       */
     def getTitleCustomTextActions(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
@@ -938,7 +937,7 @@ object sapFSemanticSemanticPageMod {
     def getTitleExpandedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets content of aggregation {@link #getTitleExpandedHeading titleExpandedHeading}.
       *
@@ -962,12 +961,12 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The control will be placed in the title`s leftmost area.
       * 	 - `titleHeading` is mutually exclusive with `titleSnappedHeading` and `titleExpandedHeading`. If `titleHeading`
-      * 			is provided, both `titleSnappedHeading` and `titleExpandedHeading` are ignored. `titleHeading` is useful
-      * 			when the content of `titleSnappedHeading` and `titleExpandedHeading` needs to be the same as it replaces
-      * 			them both.
+      *     is provided, both `titleSnappedHeading` and `titleExpandedHeading` are ignored. `titleHeading` is useful
+      *     when the content of `titleSnappedHeading` and `titleExpandedHeading` needs to be the same as it replaces
+      *     them both.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     def getTitleHeading(): typings.openui5.sapUiCoreControlMod.default = js.native
     
@@ -983,7 +982,7 @@ object sapFSemanticSemanticPageMod {
     def getTitleMainAction(): typings.openui5.sapFSemanticTitleMainActionMod.default = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       * @deprecated (since 1.58) - Please use the `titleAreaShrinkRatio` property instead. The value of `titleAreaShrinkRatio`
       * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
       * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
@@ -1015,13 +1014,13 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The controls will be placed in the title`s left area, under the `titleHeading` aggregation.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     def getTitleSnappedContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Gets content of aggregation {@link #getTitleSnappedHeading titleSnappedHeading}.
       *
@@ -1031,15 +1030,15 @@ object sapFSemanticSemanticPageMod {
       *
       * **Notes:**
       * 	 - In order for `titleSnappedHeading` to be taken into account, `titleHeading` has to be empty. Combine
-      * 			`titleSnappedHeading` with `titleExpandedHeading` to switch content when the header switches state.
+      *     `titleSnappedHeading` with `titleExpandedHeading` to switch content when the header switches state.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     def getTitleSnappedHeading(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Gets content of aggregation {@link #getTitleSnappedOnMobile titleSnappedOnMobile}.
       *
@@ -1110,7 +1109,7 @@ object sapFSemanticSemanticPageMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Checks for the provided `sap.ui.core.Control` in the aggregation {@link #getTitleContent titleContent}.
       * and returns its index if found or -1 otherwise.
@@ -1125,8 +1124,8 @@ object sapFSemanticSemanticPageMod {
     ): int = js.native
     
     /**
-      * Checks for the provided `sap.m.OverflowToolbarButton` in the aggregation {@link #getTitleCustomIconActions
-      * titleCustomIconActions}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.m.OverflowToolbarButton` in the aggregation {@link #getTitleCustomIconActions titleCustomIconActions}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -1231,7 +1230,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Inserts a titleContent into the aggregation {@link #getTitleContent titleContent}.
       *
@@ -1350,7 +1349,7 @@ object sapFSemanticSemanticPageMod {
     def removeAllHeaderContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Removes all the controls from the aggregation {@link #getTitleContent titleContent}.
       *
@@ -1461,7 +1460,7 @@ object sapFSemanticSemanticPageMod {
       */
     vTitleContent: String): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Removes a titleContent from the aggregation {@link #getTitleContent titleContent}.
       *
@@ -1637,7 +1636,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * Sets the aggregated {@link #getEditAction editAction}.
       *
@@ -1673,14 +1672,14 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Sets a new value for property {@link #getFitContent fitContent}.
       *
       * Optimizes `SemanticPage` responsiveness on small screens and behavior when expanding/collapsing the `SemanticPageHeader`.
       *
       * **Note:** It is recommended to use this property when displaying content of adaptive controls that stretch
-      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
+      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
       * depending on their settings.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1770,7 +1769,7 @@ object sapFSemanticSemanticPageMod {
     bHeaderPinnable: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Sets the aggregated {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -1921,7 +1920,7 @@ object sapFSemanticSemanticPageMod {
     bShowFooter: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets a new value for property {@link #getTitleAreaShrinkRatio titleAreaShrinkRatio}.
       *
@@ -1953,7 +1952,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * Sets the aggregated {@link #getTitleBreadcrumbs titleBreadcrumbs}.
       *
@@ -1965,7 +1964,7 @@ object sapFSemanticSemanticPageMod {
     oTitleBreadcrumbs: IBreadcrumbs): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets the aggregated {@link #getTitleExpandedHeading titleExpandedHeading}.
       *
@@ -2001,7 +2000,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Sets the aggregated {@link #getTitleSnappedHeading titleSnappedHeading}.
       *
@@ -2015,7 +2014,7 @@ object sapFSemanticSemanticPageMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * Sets the aggregated {@link #getTitleSnappedOnMobile titleSnappedOnMobile}.
       *
@@ -2076,11 +2075,10 @@ object sapFSemanticSemanticPageMod {
       * The `SemanticPage` content.
       *
       * **Note:** The SAP Fiori Design guidelines require that the `SemanticPage`'s header content and the `SemanticPage`'s
-      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link
-      * sap.m.Table} and {@link sap.m.List} in the content area of `SemanticPage`, if the content is not already
-      * aligned, you need to adjust their left text offset to achieve the vertical alignment. To do this, apply
-      * the `sapFSemanticPageAlignContent` CSS class to them and set their `width` property to `auto` (if not
-      * set by default).
+      * content are aligned vertically. When using {@link sap.ui.layout.form.Form}, {@link sap.m.Panel}, {@link sap.m.Table }
+      * and {@link sap.m.List} in the content area of `SemanticPage`, if the content is not already aligned,
+      * you need to adjust their left text offset to achieve the vertical alignment. To do this, apply the `sapFSemanticPageAlignContent`
+      * CSS class to them and set their `width` property to `auto` (if not set by default).
       *
       * Example:
       *
@@ -2091,7 +2089,7 @@ object sapFSemanticSemanticPageMod {
       * ```
       *
       *
-      * Please keep in mind that the alignment is not possible when the controls are placed in a {@link sap.ui.layout.Grid}
+      * Please keep in mind that the alignment is not possible when the controls are placed in a {@link sap.ui.layout.Grid }
       * or in other layout controls that use `overflow:hidden` CSS property.
       */
     var content: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
@@ -2144,7 +2142,7 @@ object sapFSemanticSemanticPageMod {
     var draftIndicator: js.UndefOr[typings.openui5.sapMDraftIndicatorMod.default] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * A semantic-specific button which is placed in the `TextActions` area of the `SemanticPage` title.
       *
@@ -2173,12 +2171,12 @@ object sapFSemanticSemanticPageMod {
     var favoriteAction: js.UndefOr[typings.openui5.sapFSemanticFavoriteActionMod.default] = js.undefined
     
     /**
-      * @SINCE 1.73
+      * @since 1.73
       *
       * Optimizes `SemanticPage` responsiveness on small screens and behavior when expanding/collapsing the `SemanticPageHeader`.
       *
       * **Note:** It is recommended to use this property when displaying content of adaptive controls that stretch
-      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable}
+      * to fill the available space. Such controls may be {@link sap.ui.table.Table} and {@link sap.ui.table.AnalyticalTable }
       * depending on their settings.
       */
     var fitContent: js.UndefOr[
@@ -2248,7 +2246,7 @@ object sapFSemanticSemanticPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.61
+      * @since 1.61
       *
       * Accessible landmark settings to be applied to the containers of the `sap.f.SemanticPage` control.
       *
@@ -2341,7 +2339,7 @@ object sapFSemanticSemanticPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * Assigns shrinking ratio to the `SemanticPage` title areas (Heading, Content, Actions). The greater value
       * a section has the faster it shrinks when the screen size is being reduced.
@@ -2361,7 +2359,7 @@ object sapFSemanticSemanticPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The `SemanticPage` breadcrumbs.
       *
@@ -2371,21 +2369,21 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The control will be placed in the title`s top-left area.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     var titleBreadcrumbs: js.UndefOr[IBreadcrumbs] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       *
       * The content, displayed in the title.
       *
       * **Notes:**
       * 	 - The controls will be placed in the middle area.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     var titleContent: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2409,10 +2407,10 @@ object sapFSemanticSemanticPageMod {
       *
       * **Notes:**
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       * 	 - Buttons that are part of this aggregation will always have their `type` property set to `Transparent`
-      * 			by design.
+      *     by design.
       */
     var titleCustomTextActions: js.UndefOr[
         js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -2428,7 +2426,7 @@ object sapFSemanticSemanticPageMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * The `titleExpandedHeading` is positioned in the `SemanticPage` title left area and is displayed when
       * the header is in expanded state only. Use this aggregation to display a title (or any other UI5 control
@@ -2448,12 +2446,12 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The control will be placed in the title`s leftmost area.
       * 	 - `titleHeading` is mutually exclusive with `titleSnappedHeading` and `titleExpandedHeading`. If `titleHeading`
-      * 			is provided, both `titleSnappedHeading` and `titleExpandedHeading` are ignored. `titleHeading` is useful
-      * 			when the content of `titleSnappedHeading` and `titleExpandedHeading` needs to be the same as it replaces
-      * 			them both.
+      *     is provided, both `titleSnappedHeading` and `titleExpandedHeading` are ignored. `titleHeading` is useful
+      *     when the content of `titleSnappedHeading` and `titleExpandedHeading` needs to be the same as it replaces
+      *     them both.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     var titleHeading: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
@@ -2467,7 +2465,7 @@ object sapFSemanticSemanticPageMod {
     var titleMainAction: js.UndefOr[typings.openui5.sapFSemanticTitleMainActionMod.default] = js.undefined
     
     /**
-      * @SINCE 1.52
+      * @since 1.52
       * @deprecated (since 1.58) - Please use the `titleAreaShrinkRatio` property instead. The value of `titleAreaShrinkRatio`
       * must be set in `Heading:Content:Actions` format where Heading, Content and Actions are numbers greater
       * than or equal to 0. The greater value a section has the faster it shrinks when the screen size is being
@@ -2493,15 +2491,15 @@ object sapFSemanticSemanticPageMod {
       * **Notes:**
       * 	 - The controls will be placed in the title`s left area, under the `titleHeading` aggregation.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     var titleSnappedContent: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.58
+      * @since 1.58
       *
       * The `titleSnappedHeading` is positioned in the `SemanticPage` title left area and is displayed when the
       * header is in collapsed (snapped) state only. Use this aggregation to display a title (or any other UI5
@@ -2509,15 +2507,15 @@ object sapFSemanticSemanticPageMod {
       *
       * **Notes:**
       * 	 - In order for `titleSnappedHeading` to be taken into account, `titleHeading` has to be empty. Combine
-      * 			`titleSnappedHeading` with `titleExpandedHeading` to switch content when the header switches state.
+      *     `titleSnappedHeading` with `titleExpandedHeading` to switch content when the header switches state.
       * 	 - If the `titleSnappedOnMobile` aggregation is set, its content overrides this aggregation when the
-      * 			control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
-      * 			state.
+      *     control is viewed on a phone mobile device and the `SemanticPage` header is in its collapsed (snapped)
+      *     state.
       */
     var titleSnappedHeading: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @SINCE 1.63
+      * @since 1.63
       *
       * The only content that is displayed in the `SemanticPage` title when it is viewed on a phone mobile device
       * and the `SemanticPage` header is in collapsed (snapped) state.

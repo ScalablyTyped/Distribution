@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Serves as the root node for a given HTML document. This object inherits the properties and methods described in the HTMLElement interface. */
+/**
+  * Serves as the root node for a given HTML document. This object inherits the properties and methods described in the HTMLElement interface.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement)
+  */
 @js.native
 trait HTMLHtmlElement
   extends StObject
@@ -35,6 +39,8 @@ trait HTMLHtmlElement
   /**
     * Sets or retrieves the DTD version that governs the current document.
     * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLHtmlElement/version)
     */
   /* standard dom */
   var version: java.lang.String = js.native

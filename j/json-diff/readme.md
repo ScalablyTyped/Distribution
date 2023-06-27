@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-diff
 
-Typings are for version 0.9
+Typings are for version 1.0
 
 ## Library description:
 JSON diff

@@ -4,15 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams. */
+/**
+  * This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy)
+  */
 trait CountQueuingStrategy
   extends StObject
      with QueuingStrategy[Any] {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark) */
   /* standard dom */
   @JSName("highWaterMark")
   val highWaterMark_CountQueuingStrategy: Double
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size) */
   /* standard dom */
   @JSName("size")
   def size_MCountQueuingStrategy(chunk: Any): Double

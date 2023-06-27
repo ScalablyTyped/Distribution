@@ -8,6 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList) */
 @js.native
 trait TextTrackList
   extends StObject
@@ -59,6 +60,7 @@ trait TextTrackList
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList/getTrackById) */
   /* standard dom */
   def getTrackById(id: java.lang.String): TextTrack | Null = js.native
   
@@ -66,15 +68,19 @@ trait TextTrackList
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[TextTrack]] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList/length) */
   /* standard dom */
   val length: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList/addtrack_event) */
   /* standard dom */
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList/change_event) */
   /* standard dom */
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextTrackList/removetrack_event) */
   /* standard dom */
   var onremovetrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, Any]) | Null = js.native
   

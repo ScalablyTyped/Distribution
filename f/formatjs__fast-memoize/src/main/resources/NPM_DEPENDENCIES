@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/fast-memoize" : "2.0.1"
+      "@formatjs/fast-memoize" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/fast-memoize" : "2.0.1"
+      "@formatjs/fast-memoize" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

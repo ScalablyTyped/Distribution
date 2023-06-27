@@ -70,7 +70,5 @@ object mod {
   
   inline def isFile(value: Any): /* is form-data-encoder.form-data-encoder/@type/FileLike.FileLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is form-data-encoder.form-data-encoder/@type/FileLike.FileLike */ Boolean]
   
-  inline def isFileLike(value: Any): /* is form-data-encoder.form-data-encoder/@type/FileLike.FileLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFileLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is form-data-encoder.form-data-encoder/@type/FileLike.FileLike */ Boolean]
-  
   inline def isFormData(value: Any): /* is form-data-encoder.form-data-encoder/@type/FormDataLike.FormDataLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormData")(value.asInstanceOf[js.Any]).asInstanceOf[/* is form-data-encoder.form-data-encoder/@type/FormDataLike.FormDataLike */ Boolean]
 }

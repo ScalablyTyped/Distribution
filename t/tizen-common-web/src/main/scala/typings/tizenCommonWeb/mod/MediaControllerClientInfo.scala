@@ -20,8 +20,8 @@ trait MediaControllerClientInfo extends StObject {
     * @param data Additional event data.
     * @param successCallback Reply handling function.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any argument has invalid type.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any argument has invalid type.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def sendEvent(eventName: String, data: Bundle, successCallback: MediaControllerSendCommandSuccessCallback): Unit = js.native
 }

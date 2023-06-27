@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait locatorAddressesToLocationsParams extends StObject {
   
   /**
-    * The input addresses in the format supported by the geocode service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
-    */
+  		 * The input addresses in the format supported by the geocode service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+  		 */
   var addresses: js.Array[Any]
   
   /**
-    * Limit result to one or more categories.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
-    */
+  		 * Limit result to one or more categories.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+  		 */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Limits the results to only search in the country provided.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
-    */
+  		 * Limits the results to only search in the country provided.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+  		 */
   var countryCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
-    */
+  		 * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+  		 */
   var locationType: js.UndefOr[String] = js.undefined
   
   /**
-    * The spatial reference of the output geometries.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
-    */
+  		 * The spatial reference of the output geometries.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+  		 */
   var outSpatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 object locatorAddressesToLocationsParams {

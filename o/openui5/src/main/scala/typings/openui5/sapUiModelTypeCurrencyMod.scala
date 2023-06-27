@@ -132,8 +132,7 @@ object sapUiModelTypeCurrencyMod {
       */
     vValue: String,
       /**
-      * The target type; must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType
-      * primitive type}
+      * The target type; must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}
       */
     sTargetType: String
     ): String | Null = js.native
@@ -152,8 +151,7 @@ object sapUiModelTypeCurrencyMod {
       */
     sValue: String,
       /**
-      * The source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * The source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
       */
     sSourceType: String
     ): js.Array[Any] | String = js.native
@@ -163,8 +161,7 @@ object sapUiModelTypeCurrencyMod {
       */
     sValue: String,
       /**
-      * The source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link
-      * sap.ui.base.DataType#getPrimitiveType primitive type}.
+      * The source type (the expected type of `sValue`); must be "string", or a type with "string" as its {@link sap.ui.base.DataType#getPrimitiveType primitive type}.
       */
     sSourceType: String,
       /**

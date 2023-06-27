@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.PcpFields
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiCoreWsWebSocketMod.WebSocket$MessageEventParameters
 import typings.std.Blob
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -26,8 +26,7 @@ object sapUiCoreWsSapPcpWebSocketMod {
       */
     sUrl: String,
       /**
-      * array of protocols as strings, a single protocol as a string. Protocol(s) should be selected from {@link
-      * sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
+      * array of protocols as strings, a single protocol as a string. Protocol(s) should be selected from {@link sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS}.
       */
     aProtocols: js.Array[Any]
     ) = this()
@@ -38,6 +37,19 @@ object sapUiCoreWsSapPcpWebSocketMod {
     @JSImport("sap/ui/core/ws/SapPcpWebSocket", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Protocol versions.
+      *
+      * One (or more) of these have to be selected to create an SapPcpWebSocket connection (or no protocol at
+      * all).
+      */
+    @JSImport("sap/ui/core/ws/SapPcpWebSocket", "default.SUPPORTED_PROTOCOLS")
+    @js.native
+    def SUPPORTED_PROTOCOLS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SUPPORTED_PROTOCOLS */ Any = js.native
+    inline def SUPPORTED_PROTOCOLS_=(
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SUPPORTED_PROTOCOLS */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTED_PROTOCOLS")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a new subclass of class sap.ui.core.ws.SapPcpWebSocket with name `sClassName` and enriches it
@@ -102,28 +114,32 @@ object sapUiCoreWsSapPcpWebSocketMod {
   
   @js.native
   sealed trait SUPPORTED_PROTOCOLS extends StObject
+  /**
+    * Protocol versions.
+    *
+    * One (or more) of these have to be selected to create an SapPcpWebSocket connection (or no protocol at
+    * all).
+    */
   @JSImport("sap/ui/core/ws/SapPcpWebSocket", "SUPPORTED_PROTOCOLS")
   @js.native
   object SUPPORTED_PROTOCOLS extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[SUPPORTED_PROTOCOLS & String] = js.native
     
     @js.native
     sealed trait v10
       extends StObject
          with SUPPORTED_PROTOCOLS
-    /* "v10.pcp.sap.com" */ val v10: typings.openui5.sapUiCoreWsSapPcpWebSocketMod.SUPPORTED_PROTOCOLS.v10 & String = js.native
   }
   
   @js.native
   trait SapPcpWebSocket
     extends typings.openui5.sapUiCoreWsWebSocketMod.default {
     
-    def fireMessage(/**
+    def fireMessage(
+      /**
       * Parameters to pass along with the event
       */
-    oParameters: PcpFields): this.type = js.native
+    oParameters: SapPcpWebSocket$MessageEventParameters
+    ): this.type = js.native
     
     def send(
       /**
@@ -164,4 +180,33 @@ object sapUiCoreWsSapPcpWebSocketMod {
     oPcpFields: js.Object
     ): this.type = js.native
   }
+  
+  trait SapPcpWebSocket$MessageEventParameters
+    extends StObject
+       with WebSocket$MessageEventParameters {
+    
+    /**
+      * Received pcpFields as a key-value map.
+      */
+    var pcpFields: js.UndefOr[String] = js.undefined
+  }
+  object SapPcpWebSocket$MessageEventParameters {
+    
+    inline def apply(): SapPcpWebSocket$MessageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SapPcpWebSocket$MessageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SapPcpWebSocket$MessageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setPcpFields(value: String): Self = StObject.set(x, "pcpFields", value.asInstanceOf[js.Any])
+      
+      inline def setPcpFieldsUndefined: Self = StObject.set(x, "pcpFields", js.undefined)
+    }
+  }
+  
+  type SapPcpWebSocketMessageEvent = typings.openui5.sapUiBaseEventMod.default[SapPcpWebSocket$MessageEventParameters]
+  
+  type SapPcpWebSocketMessageEventParameters = SapPcpWebSocket$MessageEventParameters
 }

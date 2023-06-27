@@ -15,6 +15,9 @@ trait JsxSpreadAttribute
   @JSName("kind")
   val kind_JsxSpreadAttribute: typings.typescript.mod.SyntaxKind.JsxSpreadAttribute = js.native
   
+  @JSName("name")
+  val name_JsxSpreadAttribute: PropertyName = js.native
+  
   @JSName("parent")
   val parent_JsxSpreadAttribute: JsxAttributes = js.native
 }

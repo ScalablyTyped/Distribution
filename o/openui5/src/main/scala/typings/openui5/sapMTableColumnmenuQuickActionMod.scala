@@ -160,14 +160,14 @@ object sapMTableColumnmenuQuickActionMod {
       *
       * **Notes:**
       * 	 - Adding additional content to the quick action or altering its layout will only take effect once the
-      * 			popover has been closed and reopened again.
-      * 	 - The layout of the content of `QuickAction` can be altered by providing {@link sap.ui.layout.GridData}
-      * 			for each `layoutData` aggregation of each content control. In size S, content controls can take up to
-      * 			12 columns, while in sizes M and bigger, content controls can take up to 8 columns of space.
+      *     popover has been closed and reopened again.
+      * 	 - The layout of the content of `QuickAction` can be altered by providing {@link sap.ui.layout.GridData }
+      *     for each `layoutData` aggregation of each content control. In size S, content controls can take up to
+      *     12 columns, while in sizes M and bigger, content controls can take up to 8 columns of space.
       * 	 - If there are more than 2 controls inside a quick action, they will be shown underneath each other
-      * 			if the `ColumnMenu` is in size S.
+      *     if the `ColumnMenu` is in size S.
       * 	 - By default, the content controls of `QuickAction` will take up the same amount of space and will
-      * 			have the same size.
+      *     have the same size.
       */
     def getContent(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
@@ -299,14 +299,14 @@ object sapMTableColumnmenuQuickActionMod {
       *
       * **Notes:**
       * 	 - Adding additional content to the quick action or altering its layout will only take effect once the
-      * 			popover has been closed and reopened again.
-      * 	 - The layout of the content of `QuickAction` can be altered by providing {@link sap.ui.layout.GridData}
-      * 			for each `layoutData` aggregation of each content control. In size S, content controls can take up to
-      * 			12 columns, while in sizes M and bigger, content controls can take up to 8 columns of space.
+      *     popover has been closed and reopened again.
+      * 	 - The layout of the content of `QuickAction` can be altered by providing {@link sap.ui.layout.GridData }
+      *     for each `layoutData` aggregation of each content control. In size S, content controls can take up to
+      *     12 columns, while in sizes M and bigger, content controls can take up to 8 columns of space.
       * 	 - If there are more than 2 controls inside a quick action, they will be shown underneath each other
-      * 			if the `ColumnMenu` is in size S.
+      *     if the `ColumnMenu` is in size S.
       * 	 - By default, the content controls of `QuickAction` will take up the same amount of space and will
-      * 			have the same size.
+      *     have the same size.
       */
     var content: js.UndefOr[
         js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

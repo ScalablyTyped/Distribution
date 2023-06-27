@@ -14,10 +14,12 @@ open class RTCCertificate ()
   extends StObject
      with typings.std.RTCCertificate {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCCertificate/expires) */
   /* standard dom */
   /* CompleteClass */
   override val expires: EpochTimeStamp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCCertificate/getFingerprints) */
   /* standard dom */
   /* CompleteClass */
   override def getFingerprints(): js.Array[RTCDtlsFingerprint] = js.native

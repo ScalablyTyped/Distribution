@@ -3,7 +3,6 @@ package typings.fundamentalReact
 import typings.fundamentalReact.anon.PartialRowProps
 import typings.fundamentalReact.anon.WeakValidationMapRowProps
 import typings.fundamentalReact.fundamentalReactStrings.Row
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -15,8 +14,8 @@ object libRowRowMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Row/Row.RowProps> & {  displayName :'Row'} */
   object default {
     
-    inline def apply(props: RowProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: RowProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: RowProps): ReactNode = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+    inline def apply(props: RowProps, context: Any): ReactNode = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
     
     @JSImport("fundamental-react/lib/Row/Row", JSImport.Default)
     @js.native

@@ -10,18 +10,18 @@ trait CIMGeometricEffectExtension
      with CIMGeometricEffectType {
   
   /**
-    * The deflection angle used for the extension. A value of 0 indicates no deflection.
-    */
+  			 * The deflection angle used for the extension. A value of 0 indicates no deflection.
+  			 */
   var deflection: js.UndefOr[Double] = js.undefined
   
   /**
-    * The length of the extension that is dynamically created.
-    */
+  			 * The length of the extension that is dynamically created.
+  			 */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
-    * The origin of the extension to add to the line. The beginning and end of the line is defined by the direction the line was digitized.
-    */
+  			 * The origin of the extension to add to the line. The beginning and end of the line is defined by the direction the line was digitized.
+  			 */
   var origin: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectExtensionOrigin * / any */ String
   ] = js.undefined

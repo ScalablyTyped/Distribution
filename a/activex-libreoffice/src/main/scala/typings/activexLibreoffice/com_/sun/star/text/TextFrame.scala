@@ -74,7 +74,7 @@ trait TextFrame
   
   /**
     * determines the interpretation of the height and relative height properties.
-    * @@see SizeType
+    * @see SizeType
     */
   var SizeType: Double
   

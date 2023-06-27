@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WFSFeatureType extends StObject {
   
   /**
-    * The description of the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The description of the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var description: String
   
   /**
-    * The extent of the features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The extent of the features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var extent: Extent
   
   /**
-    * The name of the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The name of the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var name: String
   
   /**
-    * The prefix of the namespace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The prefix of the namespace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var namespacePrefix: String
   
   /**
-    * The namespaceUri of the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The namespaceUri of the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var namespaceUri: String
   
   /**
-    * An array of spatialReference wkids that are supported on the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * An array of spatialReference wkids that are supported on the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var supportedSpatialReferences: js.Array[Double]
   
   /**
-    * The title of the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The title of the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var title: String
   
   /**
-    * The type name of the featureType.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
-    */
+  		 * The type name of the featureType.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#WFSFeatureType)
+  		 */
   var typeName: String
 }
 object WFSFeatureType {

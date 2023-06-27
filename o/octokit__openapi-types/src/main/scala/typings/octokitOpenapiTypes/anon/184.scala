@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `184` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: (DictkeyStringUnknownStatus & Actions) | (DictkeyStringUnknown & Actions)
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['review-custom-gates-comment-required'] */ js.Any
 }
 object `184` {
   
-  inline def apply(applicationSlashjson: (DictkeyStringUnknownStatus & Actions) | (DictkeyStringUnknown & Actions)): `184` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['review-custom-gates-comment-required'] */ js.Any
+  ): `184` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`184`]
@@ -20,6 +22,8 @@ object `184` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `184`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: (DictkeyStringUnknownStatus & Actions) | (DictkeyStringUnknown & Actions)): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['review-custom-gates-comment-required'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

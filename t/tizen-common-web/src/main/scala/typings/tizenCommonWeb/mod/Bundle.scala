@@ -27,7 +27,7 @@ open class Bundle () extends StObject {
     *
     * @returns Bundle entry value for a given key.
     *
-    * @throw WebAPIException with error type NotFoundError, if the key could not be found.
+    * @throws WebAPIException with error type NotFoundError, if the key could not be found.
     */
   def get(key: String): Any = js.native
   
@@ -56,7 +56,7 @@ open class Bundle () extends StObject {
     *
     * @returns Entry value type.
     *
-    * @throw WebAPIException with error type NotFoundError, if the key could not be found.
+    * @throws WebAPIException with error type NotFoundError, if the key could not be found.
     *
     * @remark If the value for the given key is an empty array this function returns STRING\_ARRAY.
     */

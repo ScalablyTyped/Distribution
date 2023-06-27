@@ -60,9 +60,13 @@ object EventType extends StObject {
   
   /* 17 */ val ResourceSelectionChanged: typings.officeJs.Office.EventType.ResourceSelectionChanged & Double = js.native
   
-  /* 18 */ val SettingsChanged: typings.officeJs.Office.EventType.SettingsChanged & Double = js.native
+  /* 18 */ val SelectedItemsChanged: typings.officeJs.Office.EventType.SelectedItemsChanged & Double = js.native
   
-  /* 19 */ val TaskSelectionChanged: typings.officeJs.Office.EventType.TaskSelectionChanged & Double = js.native
+  /* 19 */ val SensitivityLabelChanged: typings.officeJs.Office.EventType.SensitivityLabelChanged & Double = js.native
   
-  /* 20 */ val ViewSelectionChanged: typings.officeJs.Office.EventType.ViewSelectionChanged & Double = js.native
+  /* 20 */ val SettingsChanged: typings.officeJs.Office.EventType.SettingsChanged & Double = js.native
+  
+  /* 21 */ val TaskSelectionChanged: typings.officeJs.Office.EventType.TaskSelectionChanged & Double = js.native
+  
+  /* 22 */ val ViewSelectionChanged: typings.officeJs.Office.EventType.ViewSelectionChanged & Double = js.native
 }

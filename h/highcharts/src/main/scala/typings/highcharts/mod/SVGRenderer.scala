@@ -410,7 +410,7 @@ open class SVGRenderer protected () extends StObject {
   /**
     * Display an image.
     *
-    * @param src
+    * @param href
     *        The image source.
     *
     * @param x
@@ -430,38 +430,38 @@ open class SVGRenderer protected () extends StObject {
     *
     * @return The generated wrapper element.
     */
-  def image(src: String): SVGElement = js.native
-  def image(src: String, x: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Double, height: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Double, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Unit, height: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Double, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Double, height: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Double, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Unit, height: Double): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Double, y: Unit, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Double, height: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Double, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Unit, height: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Double, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Double, height: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Double, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Unit, height: Double): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
-  def image(src: String, x: Unit, y: Unit, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String): SVGElement = js.native
+  def image(href: String, x: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Double, height: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Double, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Unit, height: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Double, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Double, height: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Double, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Unit, height: Double): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Double, y: Unit, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Double, height: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Double, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Unit, height: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Double, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Double, height: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Double, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Double, height: Unit, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Unit, height: Double): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Unit, height: Double, onload: js.Function): SVGElement = js.native
+  def image(href: String, x: Unit, y: Unit, width: Unit, height: Unit, onload: js.Function): SVGElement = js.native
   
   /**
     * Initialize the SVGRenderer. Overridable initializer function that takes

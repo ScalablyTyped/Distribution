@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetTypeJSON extends StObject {
   
   /**
-    * The asset type code.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
-    */
+  		 * The asset type code.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
+  		 */
   var assetTypeCode: Double
   
   /**
-    * The asset type name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
-    */
+  		 * The asset type name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
+  		 */
   var assetTypeName: String
   
   /**
-    * The id of the terminal configuration.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
-    */
+  		 * The id of the terminal configuration.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#AssetTypeJSON)
+  		 */
   var terminalConfigurationId: Double
 }
 object AssetTypeJSON {

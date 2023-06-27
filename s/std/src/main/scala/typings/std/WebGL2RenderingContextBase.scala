@@ -1056,32 +1056,40 @@ trait WebGL2RenderingContextBase extends StObject {
   /* standard dom */
   val WAIT_FAILED: `0x911D` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/beginQuery) */
   /* standard dom */
   def beginQuery(target: GLenum, query: WebGLQuery): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/beginTransformFeedback) */
   /* standard dom */
   def beginTransformFeedback(primitiveMode: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindBufferBase) */
   /* standard dom */
   def bindBufferBase(target: GLenum, index: GLuint): Unit = js.native
   def bindBufferBase(target: GLenum, index: GLuint, buffer: WebGLBuffer): Unit = js.native
   
   def bindBufferRange(target: GLenum, index: GLuint, buffer: Null, offset: GLintptr, size: GLsizeiptr): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindBufferRange) */
   /* standard dom */
   def bindBufferRange(target: GLenum, index: GLuint, buffer: WebGLBuffer, offset: GLintptr, size: GLsizeiptr): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindSampler) */
   /* standard dom */
   def bindSampler(unit: GLuint): Unit = js.native
   def bindSampler(unit: GLuint, sampler: WebGLSampler): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindTransformFeedback) */
   /* standard dom */
   def bindTransformFeedback(target: GLenum): Unit = js.native
   def bindTransformFeedback(target: GLenum, tf: WebGLTransformFeedback): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/bindVertexArray) */
   /* standard dom */
   def bindVertexArray(): Unit = js.native
   def bindVertexArray(array: WebGLVertexArrayObject): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/blitFramebuffer) */
   /* standard dom */
   def blitFramebuffer(
     srcX0: GLint,
@@ -1096,27 +1104,33 @@ trait WebGL2RenderingContextBase extends StObject {
     filter: GLenum
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer) */
   /* standard dom */
   def clearBufferfi(buffer: GLenum, drawbuffer: GLint, depth: GLfloat, stencil: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer) */
   /* standard dom */
   /* standard dom.iterable */
   def clearBufferfv(buffer: GLenum, drawbuffer: GLint, values: Float32List | js.Iterable[GLfloat]): Unit = js.native
   def clearBufferfv(buffer: GLenum, drawbuffer: GLint, values: Float32List | js.Iterable[GLfloat], srcOffset: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer) */
   /* standard dom */
   /* standard dom.iterable */
   def clearBufferiv(buffer: GLenum, drawbuffer: GLint, values: Int32List | js.Iterable[GLint]): Unit = js.native
   def clearBufferiv(buffer: GLenum, drawbuffer: GLint, values: Int32List | js.Iterable[GLint], srcOffset: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clearBuffer) */
   /* standard dom */
   /* standard dom.iterable */
   def clearBufferuiv(buffer: GLenum, drawbuffer: GLint, values: js.Iterable[GLuint] | Uint32List): Unit = js.native
   def clearBufferuiv(buffer: GLenum, drawbuffer: GLint, values: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/clientWaitSync) */
   /* standard dom */
   def clientWaitSync(sync: WebGLSync, flags: GLbitfield, timeout: GLuint64): GLenum = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexImage3D) */
   /* standard dom */
   def compressedTexImage3D(
     target: GLenum,
@@ -1176,6 +1190,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcLengthOverride: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/compressedTexSubImage3D) */
   /* standard dom */
   def compressedTexSubImage3D(
     target: GLenum,
@@ -1245,6 +1260,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcLengthOverride: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/copyBufferSubData) */
   /* standard dom */
   def copyBufferSubData(
     readTarget: GLenum,
@@ -1254,6 +1270,7 @@ trait WebGL2RenderingContextBase extends StObject {
     size: GLsizeiptr
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/copyTexSubImage3D) */
   /* standard dom */
   def copyTexSubImage3D(
     target: GLenum,
@@ -1267,76 +1284,99 @@ trait WebGL2RenderingContextBase extends StObject {
     height: GLsizei
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createQuery) */
   /* standard dom */
   def createQuery(): WebGLQuery | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createSampler) */
   /* standard dom */
   def createSampler(): WebGLSampler | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createTransformFeedback) */
   /* standard dom */
   def createTransformFeedback(): WebGLTransformFeedback | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/createVertexArray) */
   /* standard dom */
   def createVertexArray(): WebGLVertexArrayObject | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteQuery) */
   /* standard dom */
   def deleteQuery(): Unit = js.native
   def deleteQuery(query: WebGLQuery): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteSampler) */
   /* standard dom */
   def deleteSampler(): Unit = js.native
   def deleteSampler(sampler: WebGLSampler): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteSync) */
   /* standard dom */
   def deleteSync(): Unit = js.native
   def deleteSync(sync: WebGLSync): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteTransformFeedback) */
   /* standard dom */
   def deleteTransformFeedback(): Unit = js.native
   def deleteTransformFeedback(tf: WebGLTransformFeedback): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/deleteVertexArray) */
   /* standard dom */
   def deleteVertexArray(): Unit = js.native
   def deleteVertexArray(vertexArray: WebGLVertexArrayObject): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawArraysInstanced) */
   /* standard dom */
   def drawArraysInstanced(mode: GLenum, first: GLint, count: GLsizei, instanceCount: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawBuffers) */
   /* standard dom */
   def drawBuffers(buffers: js.Array[GLenum]): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawBuffers) */
   /* standard dom.iterable */
   def drawBuffers(buffers: js.Iterable[GLenum]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawElementsInstanced) */
   /* standard dom */
   def drawElementsInstanced(mode: GLenum, count: GLsizei, `type`: GLenum, offset: GLintptr, instanceCount: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/drawRangeElements) */
   /* standard dom */
   def drawRangeElements(mode: GLenum, start: GLuint, end: GLuint, count: GLsizei, `type`: GLenum, offset: GLintptr): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/endQuery) */
   /* standard dom */
   def endQuery(target: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/endTransformFeedback) */
   /* standard dom */
   def endTransformFeedback(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/fenceSync) */
   /* standard dom */
   def fenceSync(condition: GLenum, flags: GLbitfield): WebGLSync | Null = js.native
   
   def framebufferTextureLayer(target: GLenum, attachment: GLenum, texture: Null, level: GLint, layer: GLint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/framebufferTextureLayer) */
   /* standard dom */
   def framebufferTextureLayer(target: GLenum, attachment: GLenum, texture: WebGLTexture, level: GLint, layer: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockName) */
   /* standard dom */
   def getActiveUniformBlockName(program: WebGLProgram, uniformBlockIndex: GLuint): java.lang.String | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockParameter) */
   /* standard dom */
   def getActiveUniformBlockParameter(program: WebGLProgram, uniformBlockIndex: GLuint, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniforms) */
   /* standard dom */
   def getActiveUniforms(program: WebGLProgram, uniformIndices: js.Array[GLuint], pname: GLenum): Any = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getActiveUniforms) */
   /* standard dom.iterable */
   def getActiveUniforms(program: WebGLProgram, uniformIndices: js.Iterable[GLuint], pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getBufferSubData) */
   /* standard dom */
   def getBufferSubData(target: GLenum, srcByteOffset: GLintptr, dstBuffer: js.typedarray.ArrayBufferView): Unit = js.native
   def getBufferSubData(
@@ -1360,45 +1400,60 @@ trait WebGL2RenderingContextBase extends StObject {
     length: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getFragDataLocation) */
   /* standard dom */
   def getFragDataLocation(program: WebGLProgram, name: java.lang.String): GLint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getIndexedParameter) */
   /* standard dom */
   def getIndexedParameter(target: GLenum, index: GLuint): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getInternalformatParameter) */
   /* standard dom */
   def getInternalformatParameter(target: GLenum, internalformat: GLenum, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getQuery) */
   /* standard dom */
   def getQuery(target: GLenum, pname: GLenum): WebGLQuery | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getQueryParameter) */
   /* standard dom */
   def getQueryParameter(query: WebGLQuery, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSamplerParameter) */
   /* standard dom */
   def getSamplerParameter(sampler: WebGLSampler, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getSyncParameter) */
   /* standard dom */
   def getSyncParameter(sync: WebGLSync, pname: GLenum): Any = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getTransformFeedbackVarying) */
   /* standard dom */
   def getTransformFeedbackVarying(program: WebGLProgram, index: GLuint): WebGLActiveInfo | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getUniformBlockIndex) */
   /* standard dom */
   def getUniformBlockIndex(program: WebGLProgram, uniformBlockName: java.lang.String): GLuint = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getUniformIndices) */
   /* standard dom */
   def getUniformIndices(program: WebGLProgram, uniformNames: js.Array[java.lang.String]): js.Array[GLuint] | Null = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/getUniformIndices) */
   /* standard dom.iterable */
   def getUniformIndices(program: WebGLProgram, uniformNames: js.Iterable[java.lang.String]): js.Iterable[GLuint] | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateFramebuffer) */
   /* standard dom */
   def invalidateFramebuffer(target: GLenum, attachments: js.Array[GLenum]): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateFramebuffer) */
   /* standard dom.iterable */
   def invalidateFramebuffer(target: GLenum, attachments: js.Iterable[GLenum]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateSubFramebuffer) */
   /* standard dom */
   def invalidateSubFramebuffer(target: GLenum, attachments: js.Array[GLenum], x: GLint, y: GLint, width: GLsizei, height: GLsizei): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/invalidateSubFramebuffer) */
   /* standard dom.iterable */
   def invalidateSubFramebuffer(
     target: GLenum,
@@ -1409,41 +1464,52 @@ trait WebGL2RenderingContextBase extends StObject {
     height: GLsizei
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isQuery) */
   /* standard dom */
   def isQuery(): GLboolean = js.native
   def isQuery(query: WebGLQuery): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isSampler) */
   /* standard dom */
   def isSampler(): GLboolean = js.native
   def isSampler(sampler: WebGLSampler): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isSync) */
   /* standard dom */
   def isSync(): GLboolean = js.native
   def isSync(sync: WebGLSync): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isTransformFeedback) */
   /* standard dom */
   def isTransformFeedback(): GLboolean = js.native
   def isTransformFeedback(tf: WebGLTransformFeedback): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/isVertexArray) */
   /* standard dom */
   def isVertexArray(): GLboolean = js.native
   def isVertexArray(vertexArray: WebGLVertexArrayObject): GLboolean = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/pauseTransformFeedback) */
   /* standard dom */
   def pauseTransformFeedback(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/readBuffer) */
   /* standard dom */
   def readBuffer(src: GLenum): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/renderbufferStorageMultisample) */
   /* standard dom */
   def renderbufferStorageMultisample(target: GLenum, samples: GLsizei, internalformat: GLenum, width: GLsizei, height: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/resumeTransformFeedback) */
   /* standard dom */
   def resumeTransformFeedback(): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/samplerParameter) */
   /* standard dom */
   def samplerParameterf(sampler: WebGLSampler, pname: GLenum, param: GLfloat): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/samplerParameter) */
   /* standard dom */
   def samplerParameteri(sampler: WebGLSampler, pname: GLenum, param: GLint): Unit = js.native
   
@@ -1459,6 +1525,7 @@ trait WebGL2RenderingContextBase extends StObject {
     format: GLenum,
     `type`: GLenum
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texImage3D) */
   /* standard dom */
   def texImage3D(
     target: GLenum,
@@ -1512,9 +1579,11 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texStorage2D) */
   /* standard dom */
   def texStorage2D(target: GLenum, levels: GLsizei, internalformat: GLenum, width: GLsizei, height: GLsizei): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texStorage3D) */
   /* standard dom */
   def texStorage3D(
     target: GLenum,
@@ -1538,6 +1607,7 @@ trait WebGL2RenderingContextBase extends StObject {
     format: GLenum,
     `type`: GLenum
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/texSubImage3D) */
   /* standard dom */
   def texSubImage3D(
     target: GLenum,
@@ -1608,12 +1678,15 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings) */
   /* standard dom */
   def transformFeedbackVaryings(program: WebGLProgram, varyings: js.Array[java.lang.String], bufferMode: GLenum): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings) */
   /* standard dom.iterable */
   def transformFeedbackVaryings(program: WebGLProgram, varyings: js.Iterable[java.lang.String], bufferMode: GLenum): Unit = js.native
   
   def uniform1ui(location: Null, v0: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   def uniform1ui(location: WebGLUniformLocation, v0: GLuint): Unit = js.native
   
@@ -1621,6 +1694,7 @@ trait WebGL2RenderingContextBase extends StObject {
   def uniform1uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform1uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint): Unit = js.native
   def uniform1uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform1uiv(location: WebGLUniformLocation, data: js.Iterable[GLuint] | Uint32List): Unit = js.native
@@ -1639,6 +1713,7 @@ trait WebGL2RenderingContextBase extends StObject {
   ): Unit = js.native
   
   def uniform2ui(location: Null, v0: GLuint, v1: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   def uniform2ui(location: WebGLUniformLocation, v0: GLuint, v1: GLuint): Unit = js.native
   
@@ -1646,6 +1721,7 @@ trait WebGL2RenderingContextBase extends StObject {
   def uniform2uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform2uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint): Unit = js.native
   def uniform2uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform2uiv(location: WebGLUniformLocation, data: js.Iterable[GLuint] | Uint32List): Unit = js.native
@@ -1664,6 +1740,7 @@ trait WebGL2RenderingContextBase extends StObject {
   ): Unit = js.native
   
   def uniform3ui(location: Null, v0: GLuint, v1: GLuint, v2: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   def uniform3ui(location: WebGLUniformLocation, v0: GLuint, v1: GLuint, v2: GLuint): Unit = js.native
   
@@ -1671,6 +1748,7 @@ trait WebGL2RenderingContextBase extends StObject {
   def uniform3uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform3uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint): Unit = js.native
   def uniform3uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform3uiv(location: WebGLUniformLocation, data: js.Iterable[GLuint] | Uint32List): Unit = js.native
@@ -1689,6 +1767,7 @@ trait WebGL2RenderingContextBase extends StObject {
   ): Unit = js.native
   
   def uniform4ui(location: Null, v0: GLuint, v1: GLuint, v2: GLuint, v3: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   def uniform4ui(location: WebGLUniformLocation, v0: GLuint, v1: GLuint, v2: GLuint, v3: GLuint): Unit = js.native
   
@@ -1696,6 +1775,7 @@ trait WebGL2RenderingContextBase extends StObject {
   def uniform4uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: Unit, srcLength: GLuint): Unit = js.native
   def uniform4uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint): Unit = js.native
   def uniform4uiv(location: Null, data: js.Iterable[GLuint] | Uint32List, srcOffset: GLuint, srcLength: GLuint): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniform) */
   /* standard dom */
   /* standard dom.iterable */
   def uniform4uiv(location: WebGLUniformLocation, data: js.Iterable[GLuint] | Uint32List): Unit = js.native
@@ -1713,6 +1793,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcLength: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformBlockBinding) */
   /* standard dom */
   def uniformBlockBinding(program: WebGLProgram, uniformBlockIndex: GLuint, uniformBlockBinding: GLuint): Unit = js.native
   
@@ -1732,6 +1813,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix2x3fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1772,6 +1854,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix2x4fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1812,6 +1895,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix3x2fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1852,6 +1936,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix3x4fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1892,6 +1977,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix4x2fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1932,6 +2018,7 @@ trait WebGL2RenderingContextBase extends StObject {
     srcOffset: GLuint,
     srcLength: GLuint
   ): Unit = js.native
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/uniformMatrix) */
   /* standard dom */
   /* standard dom.iterable */
   def uniformMatrix4x3fv(location: WebGLUniformLocation, transpose: GLboolean, data: Float32List | js.Iterable[GLfloat]): Unit = js.native
@@ -1956,26 +2043,33 @@ trait WebGL2RenderingContextBase extends StObject {
     srcLength: GLuint
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribDivisor) */
   /* standard dom */
   def vertexAttribDivisor(index: GLuint, divisor: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI) */
   /* standard dom */
   def vertexAttribI4i(index: GLuint, x: GLint, y: GLint, z: GLint, w: GLint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttribI4iv(index: GLuint, values: Int32List | js.Iterable[GLint]): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI) */
   /* standard dom */
   def vertexAttribI4ui(index: GLuint, x: GLuint, y: GLuint, z: GLuint, w: GLuint): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribI) */
   /* standard dom */
   /* standard dom.iterable */
   def vertexAttribI4uiv(index: GLuint, values: js.Iterable[GLuint] | Uint32List): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer) */
   /* standard dom */
   def vertexAttribIPointer(index: GLuint, size: GLint, `type`: GLenum, stride: GLsizei, offset: GLintptr): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/WebGL2RenderingContext/waitSync) */
   /* standard dom */
   def waitSync(sync: WebGLSync, flags: GLbitfield, timeout: GLint64): Unit = js.native
 }

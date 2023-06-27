@@ -16,35 +16,35 @@ trait SimpleMarkerSymbolProperties
      with MarkerSymbolProperties {
   
   /**
-    * The outline of the marker symbol.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
-    */
+  		 * The outline of the marker symbol.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
+  		 */
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
-    * The SVG path of the icon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
-    */
+  		 * The SVG path of the icon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
+  		 */
   var path: js.UndefOr[String] = js.undefined
   
   /**
-    * The size of the marker in points.
-    *
-    * @default 12
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
-    */
+  		 * The size of the marker in points.
+  		 *
+  		 * @default 12
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
+  		 */
   var size: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * The marker style.
-    *
-    * @default circle
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
-    */
+  		 * The marker style.
+  		 *
+  		 * @default circle
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
+  		 */
   var style: js.UndefOr[circle | square_ | cross | x | diamond | triangle_ | path] = js.undefined
 }
 object SimpleMarkerSymbolProperties {

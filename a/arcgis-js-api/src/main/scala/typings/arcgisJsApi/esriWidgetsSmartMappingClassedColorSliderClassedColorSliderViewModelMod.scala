@@ -11,10 +11,10 @@ object esriWidgetsSmartMappingClassedColorSliderClassedColorSliderViewModelMod {
   @JSImport("esri/widgets/smartMapping/ClassedColorSlider/ClassedColorSliderViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [ClassedColorSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html)
-    */
+  		 * Provides the logic for the [ClassedColorSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ClassedColorSliderViewModel {

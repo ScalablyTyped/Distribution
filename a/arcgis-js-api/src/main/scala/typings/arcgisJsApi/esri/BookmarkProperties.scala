@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarkProperties extends StObject {
   
   /**
-    * The name of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
-    */
+  		 * The name of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#name)
+  		 */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL for a thumbnail image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
-    */
+  		 * The URL for a thumbnail image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
+  		 */
   var thumbnail: js.UndefOr[BookmarkThumbnail] = js.undefined
   
   /**
-    * The time extent of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
-    */
+  		 * The time extent of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#timeExtent)
+  		 */
   var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
-    * The viewpoint of the bookmark item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint)
-    */
+  		 * The viewpoint of the bookmark item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#viewpoint)
+  		 */
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object BookmarkProperties {

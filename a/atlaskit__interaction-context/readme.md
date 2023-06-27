@@ -1,7 +1,7 @@
 
 # Scala.js typings for atlaskit__interaction-context
 
-Typings are for version 2.1.1
+Typings are for version 2.1.2
 
 
 

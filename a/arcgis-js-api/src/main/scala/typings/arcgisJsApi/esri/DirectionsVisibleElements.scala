@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsVisibleElements extends StObject {
   
   /**
-    * Indicates whether to a link to the route layer portal-item (if any) will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
-    */
+  		 * Indicates whether to a link to the route layer portal-item (if any) will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
+  		 */
   var layerDetails: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to the Save As button will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
-    */
+  		 * Indicates whether to the Save As button will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
+  		 */
   var saveAsButton: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to the Save button will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
-    */
+  		 * Indicates whether to the Save button will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#VisibleElements)
+  		 */
   var saveButton: js.UndefOr[Boolean] = js.undefined
 }
 object DirectionsVisibleElements {

@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.BeginColumn
-import typings.openui5.anon.Direction
-import typings.openui5.anon.IsNavigationArrow
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.LayoutType
 import typings.openui5.sapMLibraryMod.BackgroundDesign
@@ -27,7 +24,7 @@ object sapFFlexibleColumnLayoutMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:59a0e11712e84a648bb990a1dba76bc7 Flexible Column Layout}
+    * 	{@link https://ui5.sap.com/#/topic/59a0e11712e84a648bb990a1dba76bc7 Flexible Column Layout}
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/flexible-column-layout/ Flexible Column Layout}
     */
   open class default () extends FlexibleColumnLayout {
@@ -173,7 +170,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -189,20 +186,20 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterBeginColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -223,7 +220,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterBeginColumnNavigate(
       /**
@@ -234,7 +231,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -242,7 +239,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterEndColumnNavigate afterEndColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterEndColumnNavigate afterEndColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -258,20 +255,20 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterEndColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterEndColumnNavigate afterEndColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterEndColumnNavigate afterEndColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -292,7 +289,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterEndColumnNavigate(
       /**
@@ -303,7 +300,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -311,7 +308,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterMidColumnNavigate afterMidColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterMidColumnNavigate afterMidColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -327,20 +324,20 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterMidColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * Attaches event handler `fnFunction` to the {@link #event:afterMidColumnNavigate afterMidColumnNavigate}
+      * Attaches event handler `fnFunction` to the {@link #event:afterMidColumnNavigate afterMidColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -361,7 +358,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachAfterMidColumnNavigate(
       /**
@@ -372,7 +369,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -396,13 +393,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachBeginColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -430,7 +427,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachBeginColumnNavigate(
       /**
@@ -441,7 +438,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -449,7 +446,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Attaches event handler `fnFunction` to the {@link #event:columnResize columnResize} event of this `sap.f.FlexibleColumnLayout`.
       *
@@ -464,20 +461,20 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit]
     ): this.type = js.native
     def attachColumnResize(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Attaches event handler `fnFunction` to the {@link #event:columnResize columnResize} event of this `sap.f.FlexibleColumnLayout`.
       *
@@ -497,7 +494,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit]
     ): this.type = js.native
     def attachColumnResize(
       /**
@@ -508,7 +505,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -532,13 +529,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachEndColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -566,7 +563,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachEndColumnNavigate(
       /**
@@ -577,7 +574,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -601,13 +598,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachMidColumnNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -635,7 +632,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def attachMidColumnNavigate(
       /**
@@ -646,7 +643,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -665,7 +662,7 @@ object sapFFlexibleColumnLayoutMod {
       *  The interactions that may lead to a state change are:
       * 	 - the property `layout` was changed indirectly by the user clicking a layout arrow
       * 	 - the user resized the browser beyond a breakpoint, thus changing the maximum number of columns that
-      * 			can be displayed at once.
+      *     can be displayed at once.
       *
       *  **Note: **The event is suppressed while the control has zero width and will be fired the first time
       * it gets a non-zero width
@@ -676,13 +673,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit]
     ): this.type = js.native
     def attachStateChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -700,7 +697,7 @@ object sapFFlexibleColumnLayoutMod {
       *  The interactions that may lead to a state change are:
       * 	 - the property `layout` was changed indirectly by the user clicking a layout arrow
       * 	 - the user resized the browser beyond a breakpoint, thus changing the maximum number of columns that
-      * 			can be displayed at once.
+      *     can be displayed at once.
       *
       *  **Note: **The event is suppressed while the control has zero width and will be fired the first time
       * it gets a non-zero width
@@ -716,7 +713,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit]
     ): this.type = js.native
     def attachStateChange(
       /**
@@ -727,7 +724,7 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.FlexibleColumnLayout` itself
       */
@@ -903,7 +900,7 @@ object sapFFlexibleColumnLayoutMod {
     def destroyEndColumnPages(): this.type = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Destroys the landmarkInfo in the aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -919,7 +916,7 @@ object sapFFlexibleColumnLayoutMod {
     def destroyMidColumnPages(): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate}
+      * Detaches event handler `fnFunction` from the {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -930,13 +927,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterBeginColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterBeginColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -944,7 +941,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:afterEndColumnNavigate afterEndColumnNavigate}
+      * Detaches event handler `fnFunction` from the {@link #event:afterEndColumnNavigate afterEndColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -955,13 +952,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterEndColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterEndColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -969,7 +966,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * Detaches event handler `fnFunction` from the {@link #event:afterMidColumnNavigate afterMidColumnNavigate}
+      * Detaches event handler `fnFunction` from the {@link #event:afterMidColumnNavigate afterMidColumnNavigate }
       * event of this `sap.f.FlexibleColumnLayout`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -980,13 +977,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachAfterMidColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutAfterMidColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1005,13 +1002,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachBeginColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutBeginColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1019,7 +1016,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Detaches event handler `fnFunction` from the {@link #event:columnResize columnResize} event of this `sap.f.FlexibleColumnLayout`.
       *
@@ -1031,13 +1028,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit]
     ): this.type = js.native
     def detachColumnResize(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutColumnResizeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1056,13 +1053,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachEndColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutEndColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1081,13 +1078,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit]
     ): this.type = js.native
     def detachMidColumnNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutMidColumnNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1105,13 +1102,13 @@ object sapFFlexibleColumnLayoutMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit]
     ): this.type = js.native
     def detachStateChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ FlexibleColumnLayoutStateChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -1119,46 +1116,52 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterBeginColumnNavigate afterBeginColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterBeginColumnNavigate(): this.type = js.native
-    def fireAfterBeginColumnNavigate(/**
+    def fireAfterBeginColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterEndColumnNavigate afterEndColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterEndColumnNavigate(): this.type = js.native
-    def fireAfterEndColumnNavigate(/**
+    def fireAfterEndColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: FlexibleColumnLayout$AfterEndColumnNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:afterMidColumnNavigate afterMidColumnNavigate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireAfterMidColumnNavigate(): this.type = js.native
-    def fireAfterMidColumnNavigate(/**
+    def fireAfterMidColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): this.type = js.native
+    mParameters: FlexibleColumnLayout$AfterMidColumnNavigateEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:beginColumnNavigate beginColumnNavigate} to attached listeners.
       *
@@ -1168,27 +1171,31 @@ object sapFFlexibleColumnLayoutMod {
       * @returns Whether or not to prevent the default action
       */
     def fireBeginColumnNavigate(): Boolean = js.native
-    def fireBeginColumnNavigate(/**
+    def fireBeginColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: FlexibleColumnLayout$BeginColumnNavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @SINCE 1.76
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.76
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:columnResize columnResize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireColumnResize(): this.type = js.native
-    def fireColumnResize(/**
+    def fireColumnResize(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: BeginColumn): this.type = js.native
+    mParameters: FlexibleColumnLayout$ColumnResizeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:endColumnNavigate endColumnNavigate} to attached listeners.
       *
@@ -1198,13 +1205,15 @@ object sapFFlexibleColumnLayoutMod {
       * @returns Whether or not to prevent the default action
       */
     def fireEndColumnNavigate(): Boolean = js.native
-    def fireEndColumnNavigate(/**
+    def fireEndColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: FlexibleColumnLayout$EndColumnNavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:midColumnNavigate midColumnNavigate} to attached listeners.
       *
@@ -1214,26 +1223,30 @@ object sapFFlexibleColumnLayoutMod {
       * @returns Whether or not to prevent the default action
       */
     def fireMidColumnNavigate(): Boolean = js.native
-    def fireMidColumnNavigate(/**
+    def fireMidColumnNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Direction): Boolean = js.native
+    mParameters: FlexibleColumnLayout$MidColumnNavigateEventParameters
+    ): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stateChange stateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStateChange(): this.type = js.native
-    def fireStateChange(/**
+    def fireStateChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: IsNavigationArrow): this.type = js.native
+    mParameters: FlexibleColumnLayout$StateChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Gets current value of property {@link #getAutoFocus autoFocus}.
       *
@@ -1249,7 +1262,7 @@ object sapFFlexibleColumnLayoutMod {
     def getAutoFocus(): Boolean = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -1363,7 +1376,7 @@ object sapFFlexibleColumnLayoutMod {
     def getInitialMidColumnPage(): ID = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Gets content of aggregation {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -1378,7 +1391,8 @@ object sapFFlexibleColumnLayoutMod {
       *
       * Determines the layout of the control - number of visible columns and their relative sizes.
       *
-      * For more details, see {@link topic:3b9f760da5b64adf8db7f95247879086 Types of Layout} in the documentation.
+      * For more details, see {@link https://ui5.sap.com/#/topic/3b9f760da5b64adf8db7f95247879086 Types of Layout }
+      * in the documentation.
       *
       * Default value is `OneColumn`.
       *
@@ -1405,7 +1419,7 @@ object sapFFlexibleColumnLayoutMod {
     def getMidColumnPages(): js.Array[typings.openui5.sapUiCoreControlMod.default] = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getRestoreFocusOnBackNavigation restoreFocusOnBackNavigation}.
       *
@@ -1599,7 +1613,7 @@ object sapFFlexibleColumnLayoutMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Sets a new value for property {@link #getAutoFocus autoFocus}.
       *
@@ -1621,7 +1635,7 @@ object sapFFlexibleColumnLayoutMod {
     bAutoFocus: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
       *
@@ -1770,7 +1784,7 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Sets the aggregated {@link #getLandmarkInfo landmarkInfo}.
       *
@@ -1788,7 +1802,8 @@ object sapFFlexibleColumnLayoutMod {
       *
       * Determines the layout of the control - number of visible columns and their relative sizes.
       *
-      * For more details, see {@link topic:3b9f760da5b64adf8db7f95247879086 Types of Layout} in the documentation.
+      * For more details, see {@link https://ui5.sap.com/#/topic/3b9f760da5b64adf8db7f95247879086 Types of Layout }
+      * in the documentation.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1809,7 +1824,7 @@ object sapFFlexibleColumnLayoutMod {
     sLayout: LayoutType): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getRestoreFocusOnBackNavigation restoreFocusOnBackNavigation}.
       *
@@ -2145,6 +2160,765 @@ object sapFFlexibleColumnLayoutMod {
     ): this.type = js.native
   }
   
+  trait FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page, which has been navigated to)
+      * has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which had been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which had been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether was a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$AfterEndColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page, which has been navigated to)
+      * has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which had been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which had been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether was a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$AfterEndColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$AfterEndColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$AfterEndColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$AfterEndColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$AfterMidColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the "to" page (more precisely: a control with the ID of the page, which has been navigated to)
+      * has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which had been displayed before navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which had been displayed before navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this was a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether was a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which is now displayed after navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which is now displayed after navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$AfterMidColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$AfterMidColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$AfterMidColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$AfterMidColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$BeginColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which is currently
+      * being navigated to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$BeginColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$BeginColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$BeginColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$BeginColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$ColumnResizeEventParameters extends StObject {
+    
+    /**
+      * Determines whether `beginColumn` resize has completed.
+      */
+    var beginColumn: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether `endColumn` resize has completed.
+      */
+    var endColumn: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether `midColumn` resize has completed.
+      */
+    var midColumn: js.UndefOr[Boolean] = js.undefined
+  }
+  object FlexibleColumnLayout$ColumnResizeEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$ColumnResizeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$ColumnResizeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$ColumnResizeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setBeginColumn(value: Boolean): Self = StObject.set(x, "beginColumn", value.asInstanceOf[js.Any])
+      
+      inline def setBeginColumnUndefined: Self = StObject.set(x, "beginColumn", js.undefined)
+      
+      inline def setEndColumn(value: Boolean): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+      
+      inline def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
+      
+      inline def setMidColumn(value: Boolean): Self = StObject.set(x, "midColumn", value.asInstanceOf[js.Any])
+      
+      inline def setMidColumnUndefined: Self = StObject.set(x, "midColumn", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$EndColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which is currently
+      * being navigated to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$EndColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$EndColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$EndColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$EndColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$MidColumnNavigateEventParameters extends StObject {
+    
+    /**
+      * Determines how the navigation was triggered, possible values are "to", "back", "backToPage", and "backToTop".
+      */
+    var direction: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether the "to" page (more precisely: a control with the ID of the page, which is currently
+      * being navigated to) has not been displayed/navigated to before.
+      */
+    var firstTime: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which was displayed before the current navigation.
+      */
+    var from: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which was displayed before the current navigation.
+      */
+    var fromId: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Determines whether this is a back navigation, triggered by back().
+      */
+    var isBack: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this was a navigation to a specific page, triggered by backToPage().
+      */
+    var isBackToPage: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a navigation to the root page, triggered by backToTop().
+      */
+    var isBackToTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Determines whether this is a forward navigation, triggered by to().
+      */
+    var isTo: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The page, which will be displayed after the current navigation.
+      */
+    var to: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
+    
+    /**
+      * The ID of the page, which will be displayed after the current navigation.
+      */
+    var toId: js.UndefOr[String] = js.undefined
+  }
+  object FlexibleColumnLayout$MidColumnNavigateEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$MidColumnNavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$MidColumnNavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$MidColumnNavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      
+      inline def setFirstTime(value: Boolean): Self = StObject.set(x, "firstTime", value.asInstanceOf[js.Any])
+      
+      inline def setFirstTimeUndefined: Self = StObject.set(x, "firstTime", js.undefined)
+      
+      inline def setFrom(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromId(value: String): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+      
+      inline def setFromIdUndefined: Self = StObject.set(x, "fromId", js.undefined)
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setIsBack(value: Boolean): Self = StObject.set(x, "isBack", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPage(value: Boolean): Self = StObject.set(x, "isBackToPage", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToPageUndefined: Self = StObject.set(x, "isBackToPage", js.undefined)
+      
+      inline def setIsBackToTop(value: Boolean): Self = StObject.set(x, "isBackToTop", value.asInstanceOf[js.Any])
+      
+      inline def setIsBackToTopUndefined: Self = StObject.set(x, "isBackToTop", js.undefined)
+      
+      inline def setIsBackUndefined: Self = StObject.set(x, "isBack", js.undefined)
+      
+      inline def setIsTo(value: Boolean): Self = StObject.set(x, "isTo", value.asInstanceOf[js.Any])
+      
+      inline def setIsToUndefined: Self = StObject.set(x, "isTo", js.undefined)
+      
+      inline def setTo(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToId(value: String): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+      
+      inline def setToIdUndefined: Self = StObject.set(x, "toId", js.undefined)
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  trait FlexibleColumnLayout$StateChangeEventParameters extends StObject {
+    
+    /**
+      * Indicates whether the layout changed as a result of the user clicking a layout arrow
+      */
+    var isNavigationArrow: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates whether the maximum number of columns that can be displayed at once changed
+      */
+    var isResize: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The value of the `layout` property
+      */
+    var layout: js.UndefOr[
+        LayoutType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutType * / any */ String)
+      ] = js.undefined
+    
+    /**
+      * The maximum number of columns that can be displayed at once based on the available screen size and control
+      * settings.
+      *
+      * Possible values are:
+      * 	 - 3 for browser size of 1280px or more
+      * 	 - 2 for browser size between 960px and 1280px
+      * 	 - 1 for browser size less than 960px
+      */
+    var maxColumnsCount: js.UndefOr[int] = js.undefined
+  }
+  object FlexibleColumnLayout$StateChangeEventParameters {
+    
+    inline def apply(): FlexibleColumnLayout$StateChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FlexibleColumnLayout$StateChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexibleColumnLayout$StateChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIsNavigationArrow(value: Boolean): Self = StObject.set(x, "isNavigationArrow", value.asInstanceOf[js.Any])
+      
+      inline def setIsNavigationArrowUndefined: Self = StObject.set(x, "isNavigationArrow", js.undefined)
+      
+      inline def setIsResize(value: Boolean): Self = StObject.set(x, "isResize", value.asInstanceOf[js.Any])
+      
+      inline def setIsResizeUndefined: Self = StObject.set(x, "isResize", js.undefined)
+      
+      inline def setLayout(
+        value: LayoutType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutType * / any */ String)
+      ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      
+      inline def setMaxColumnsCount(value: int): Self = StObject.set(x, "maxColumnsCount", value.asInstanceOf[js.Any])
+      
+      inline def setMaxColumnsCountUndefined: Self = StObject.set(x, "maxColumnsCount", js.undefined)
+    }
+  }
+  
+  type FlexibleColumnLayoutAfterBeginColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutAfterBeginColumnNavigateEventParameters = FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters
+  
+  type FlexibleColumnLayoutAfterEndColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterEndColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutAfterEndColumnNavigateEventParameters = FlexibleColumnLayout$AfterEndColumnNavigateEventParameters
+  
+  type FlexibleColumnLayoutAfterMidColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterMidColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutAfterMidColumnNavigateEventParameters = FlexibleColumnLayout$AfterMidColumnNavigateEventParameters
+  
+  type FlexibleColumnLayoutBeginColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$BeginColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutBeginColumnNavigateEventParameters = FlexibleColumnLayout$BeginColumnNavigateEventParameters
+  
+  type FlexibleColumnLayoutColumnResizeEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$ColumnResizeEventParameters]
+  
+  type FlexibleColumnLayoutColumnResizeEventParameters = FlexibleColumnLayout$ColumnResizeEventParameters
+  
+  type FlexibleColumnLayoutEndColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$EndColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutEndColumnNavigateEventParameters = FlexibleColumnLayout$EndColumnNavigateEventParameters
+  
+  type FlexibleColumnLayoutMidColumnNavigateEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$MidColumnNavigateEventParameters]
+  
+  type FlexibleColumnLayoutMidColumnNavigateEventParameters = FlexibleColumnLayout$MidColumnNavigateEventParameters
+  
   trait FlexibleColumnLayoutSettings
     extends StObject
        with ControlSettings {
@@ -2154,24 +2928,39 @@ object sapFFlexibleColumnLayoutMod {
       *
       * NOTE: In case of animated transitions this event is fired with some delay after the navigate event.
       */
-    var afterBeginColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterBeginColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when navigation between two pages in the `End` column has completed.
       *
       * NOTE: In case of animated transitions this event is fired with some delay after the navigate event.
       */
-    var afterEndColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterEndColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterEndColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fires when navigation between two pages in the `Mid` column has completed.
       *
       * NOTE: In case of animated transitions this event is fired with some delay after the navigate event.
       */
-    var afterMidColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var afterMidColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterMidColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Determines whether the initial focus is set automatically on first rendering and after navigating to
       * a new page.
@@ -2183,7 +2972,7 @@ object sapFFlexibleColumnLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.54
+      * @since 1.54
       *
       * Specifies the background color of the content. The visualization of the different options depends on
       * the used theme.
@@ -2197,7 +2986,12 @@ object sapFFlexibleColumnLayoutMod {
       * any) to the new page has not started yet. This event can be aborted by the application with preventDefault(),
       * which means that there will be no navigation.
       */
-    var beginColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var beginColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$BeginColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The content entities between which the `FlexibleColumnLayout` navigates in the `Begin` column.
@@ -2211,11 +3005,16 @@ object sapFFlexibleColumnLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.76
+      * @since 1.76
       *
       * Fired when resize of each column has completed.
       */
-    var columnResize: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var columnResize: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$ColumnResizeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the type of the transition/animation to apply for the `Begin` column when `to()` is called
@@ -2243,7 +3042,12 @@ object sapFFlexibleColumnLayoutMod {
       * to the new page has not started yet. This event can be aborted by the application with preventDefault(),
       * which means that there will be no navigation.
       */
-    var endColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var endColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$EndColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The content entities between which the `FlexibleColumnLayout` navigates in the `End` column.
@@ -2272,7 +3076,7 @@ object sapFFlexibleColumnLayoutMod {
     var initialMidColumnPage: js.UndefOr[typings.openui5.sapUiCoreControlMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.95
+      * @since 1.95
       *
       * Accessible landmark settings to be applied on the containers of the `sap.f.FlexibleColumnLayout` control.
       *
@@ -2283,7 +3087,8 @@ object sapFFlexibleColumnLayoutMod {
     /**
       * Determines the layout of the control - number of visible columns and their relative sizes.
       *
-      * For more details, see {@link topic:3b9f760da5b64adf8db7f95247879086 Types of Layout} in the documentation.
+      * For more details, see {@link https://ui5.sap.com/#/topic/3b9f760da5b64adf8db7f95247879086 Types of Layout }
+      * in the documentation.
       */
     var layout: js.UndefOr[
         LayoutType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutType * / any */ String) | PropertyBindingInfo
@@ -2294,7 +3099,12 @@ object sapFFlexibleColumnLayoutMod {
       * to the new page has not started yet. This event can be aborted by the application with preventDefault(),
       * which means that there will be no navigation.
       */
-    var midColumnNavigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var midColumnNavigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$MidColumnNavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * The content entities between which the `FlexibleColumnLayout` navigates in the `Mid` column.
@@ -2308,7 +3118,7 @@ object sapFFlexibleColumnLayoutMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Determines whether the focus is restored to the last known when navigating back to a prevously opened
       * column, for example, upon closing of the end column and being transfered back to the mid column.
@@ -2324,12 +3134,17 @@ object sapFFlexibleColumnLayoutMod {
       *  The interactions that may lead to a state change are:
       * 	 - the property `layout` was changed indirectly by the user clicking a layout arrow
       * 	 - the user resized the browser beyond a breakpoint, thus changing the maximum number of columns that
-      * 			can be displayed at once.
+      *     can be displayed at once.
       *
       *  **Note: **The event is suppressed while the control has zero width and will be fired the first time
       * it gets a non-zero width
       */
-    var stateChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stateChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$StateChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object FlexibleColumnLayoutSettings {
     
@@ -2341,15 +3156,21 @@ object sapFFlexibleColumnLayoutMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FlexibleColumnLayoutSettings] (val x: Self) extends AnyVal {
       
-      inline def setAfterBeginColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterBeginColumnNavigate", js.Any.fromFunction1(value))
+      inline def setAfterBeginColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterBeginColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterBeginColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterBeginColumnNavigateUndefined: Self = StObject.set(x, "afterBeginColumnNavigate", js.undefined)
       
-      inline def setAfterEndColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterEndColumnNavigate", js.Any.fromFunction1(value))
+      inline def setAfterEndColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterEndColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterEndColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterEndColumnNavigateUndefined: Self = StObject.set(x, "afterEndColumnNavigate", js.undefined)
       
-      inline def setAfterMidColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterMidColumnNavigate", js.Any.fromFunction1(value))
+      inline def setAfterMidColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$AfterMidColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "afterMidColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setAfterMidColumnNavigateUndefined: Self = StObject.set(x, "afterMidColumnNavigate", js.undefined)
       
@@ -2363,7 +3184,9 @@ object sapFFlexibleColumnLayoutMod {
       
       inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
-      inline def setBeginColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beginColumnNavigate", js.Any.fromFunction1(value))
+      inline def setBeginColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$BeginColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "beginColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setBeginColumnNavigateUndefined: Self = StObject.set(x, "beginColumnNavigate", js.undefined)
       
@@ -2375,7 +3198,9 @@ object sapFFlexibleColumnLayoutMod {
       
       inline def setBeginColumnPagesVarargs(value: typings.openui5.sapUiCoreControlMod.default*): Self = StObject.set(x, "beginColumnPages", js.Array(value*))
       
-      inline def setColumnResize(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "columnResize", js.Any.fromFunction1(value))
+      inline def setColumnResize(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$ColumnResizeEventParameters] => Unit
+      ): Self = StObject.set(x, "columnResize", js.Any.fromFunction1(value))
       
       inline def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
       
@@ -2391,7 +3216,9 @@ object sapFFlexibleColumnLayoutMod {
       
       inline def setDefaultTransitionNameMidColumnUndefined: Self = StObject.set(x, "defaultTransitionNameMidColumn", js.undefined)
       
-      inline def setEndColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "endColumnNavigate", js.Any.fromFunction1(value))
+      inline def setEndColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$EndColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "endColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setEndColumnNavigateUndefined: Self = StObject.set(x, "endColumnNavigate", js.undefined)
       
@@ -2425,7 +3252,9 @@ object sapFFlexibleColumnLayoutMod {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setMidColumnNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "midColumnNavigate", js.Any.fromFunction1(value))
+      inline def setMidColumnNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$MidColumnNavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "midColumnNavigate", js.Any.fromFunction1(value))
       
       inline def setMidColumnNavigateUndefined: Self = StObject.set(x, "midColumnNavigate", js.undefined)
       
@@ -2441,9 +3270,15 @@ object sapFFlexibleColumnLayoutMod {
       
       inline def setRestoreFocusOnBackNavigationUndefined: Self = StObject.set(x, "restoreFocusOnBackNavigation", js.undefined)
       
-      inline def setStateChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
+      inline def setStateChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$StateChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
       
       inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
     }
   }
+  
+  type FlexibleColumnLayoutStateChangeEvent = typings.openui5.sapUiBaseEventMod.default[FlexibleColumnLayout$StateChangeEventParameters]
+  
+  type FlexibleColumnLayoutStateChangeEventParameters = FlexibleColumnLayout$StateChangeEventParameters
 }

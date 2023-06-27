@@ -1,7 +1,7 @@
 
 # Scala.js typings for typed-query-selector
 
-Typings are for version 2.7.0
+Typings are for version 2.11.0
 
 ## Library description:
 Better typed `querySelector` and `querySelectorAll`.

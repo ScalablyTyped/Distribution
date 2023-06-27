@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import typings.monacoEditor.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +33,8 @@ open class LineRange protected () extends StObject {
     */
   def intersect(other: LineRange): js.UndefOr[LineRange] = js.native
   
+  def intersectsStrict(other: LineRange): Boolean = js.native
+  
   /**
     * Indicates if this line range is empty.
     */
@@ -53,6 +56,10 @@ open class LineRange protected () extends StObject {
     * The start line number.
     */
   val startLineNumber: Double = js.native
+  
+  def toExclusiveRange(): Range = js.native
+  
+  def toInclusiveRange(): Range | Null = js.native
 }
 /* static members */
 object LineRange {
@@ -60,6 +67,8 @@ object LineRange {
   @JSImport("monaco-editor", "editor.LineRange")
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fromRange(range: Range): LineRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(range.asInstanceOf[js.Any]).asInstanceOf[LineRange]
   
   /**
     * @param lineRanges1 Must be sorted.
@@ -71,4 +80,6 @@ object LineRange {
     * @param lineRanges An array of sorted line ranges.
     */
   inline def joinMany(lineRanges: js.Array[js.Array[LineRange]]): js.Array[LineRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinMany")(lineRanges.asInstanceOf[js.Any]).asInstanceOf[js.Array[LineRange]]
+  
+  inline def ofLength(startLineNumber: Double, length: Double): LineRange = (^.asInstanceOf[js.Dynamic].applyDynamic("ofLength")(startLineNumber.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LineRange]
 }

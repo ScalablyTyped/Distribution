@@ -12,12 +12,20 @@ open class MessageChannel ()
   extends StObject
      with typings.std.MessageChannel {
   
-  /** Returns the first MessagePort object. */
+  /**
+    * Returns the first MessagePort object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MessageChannel/port1)
+    */
   /* standard dom */
   /* CompleteClass */
   override val port1: typings.std.MessagePort = js.native
   
-  /** Returns the second MessagePort object. */
+  /**
+    * Returns the second MessagePort object.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MessageChannel/port2)
+    */
   /* standard dom */
   /* CompleteClass */
   override val port2: typings.std.MessagePort = js.native

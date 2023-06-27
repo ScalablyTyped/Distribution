@@ -437,34 +437,34 @@ object TimePicker {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the list of time range to be disabled.
-      * @Default {{}}
+      * @default {{}}
       */
     var disableTimeRanges: js.UndefOr[Any] = js.undefined
     
     /** Specifies the animation behavior in TimePicker.
-      * @Default {true}
+      * @default {true}
       */
     var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Save current model value to browser cookies for maintaining states. When refreshing the TimePicker control page, the model value is applied from browser cookies or HTML 5local
       * storage.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the TimePicker as right to left alignment.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When the enableStrictMode is set as true it allows the value outside of the range and also indicate with red color border, otherwise it internally changed to the min or max range
       * value based an input value.
-      * @Default {false}
+      * @default {false}
       */
     var enableStrictMode: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the TimePicker control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
@@ -481,37 +481,37 @@ object TimePicker {
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the step value for increment an hour value through arrow keys or mouse scroll.
-      * @Default {1}
+      * @default {1}
       */
     var hourInterval: js.UndefOr[Double] = js.undefined
     
     /** It allows to define the characteristics of the TimePicker control. It will helps to extend the capability of an HTML element.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the popup.
-      * @Default {30}
+      * @default {30}
       */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the localization info used by the TimePicker.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum time value to the TimePicker.
-      * @Default {11:59:59 PM}
+      * @default {11:59:59 PM}
       */
     var maxTime: js.UndefOr[String] = js.undefined
     
     /** Sets the minimum time value to the TimePicker.
-      * @Default {12:00:00 AM}
+      * @default {12:00:00 AM}
       */
     var minTime: js.UndefOr[String] = js.undefined
     
     /** Sets the step value for increment the minute value through arrow keys or mouse scroll.
-      * @Default {1}
+      * @default {1}
       */
     var minutesInterval: js.UndefOr[Double] = js.undefined
     
@@ -520,22 +520,22 @@ object TimePicker {
     var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Defines the height of the TimePicker popup.
-      * @Default {191px}
+      * @default {191px}
       */
     var popupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the width of the TimePicker popup.
-      * @Default {auto}
+      * @default {auto}
       */
     var popupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Toggles the readonly state of the TimePicker. When the widget is readOnly, it doesnâ€™t allow your input.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the step value for increment the seconds value through arrow keys or mouse scroll.
-      * @Default {1}
+      * @default {1}
       */
     var secondsInterval: js.UndefOr[Double] = js.undefined
     
@@ -544,37 +544,37 @@ object TimePicker {
     var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** shows or hides the drop down button in TimePicker.
-      * @Default {true}
+      * @default {true}
       */
     var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** TimePicker is displayed with rounded corner when this property is set to true.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the time format displayed in the TimePicker.
-      * @Default {h:mm tt}
+      * @default {h:mm tt}
       */
     var timeFormat: js.UndefOr[String] = js.undefined
     
     /** Set the jQuery validation error message in TimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var validationMessages: js.UndefOr[Any] = js.undefined
     
     /** Set the jQuery validation rules in TimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Sets a specified time value on the TimePicker.
-      * @Default {null}
+      * @default {null}
       */
     var value: js.UndefOr[String | js.Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
-      * @Default {select a time}
+      * @default {select a time}
       */
     var watermarkText: js.UndefOr[String] = js.undefined
     

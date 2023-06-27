@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Length extends StObject {
   
   /**
-    * Unit type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Length)
-    */
+  		 * Unit type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Length)
+  		 */
   var `type`: length
   
   /**
-    * Any unit which represents length.
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * Any unit which represents length.
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: LengthUnit
   
   /**
-    * Scalar value representing a length.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Length)
-    */
+  		 * Scalar value representing a length.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Length)
+  		 */
   var value: Double
 }
 object Length {

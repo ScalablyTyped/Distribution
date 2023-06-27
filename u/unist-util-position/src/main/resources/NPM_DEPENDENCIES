@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unist-util-position" : "4.0.3"
+      "unist-util-position" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "unist-util-position" : "4.0.3"
+      "unist-util-position" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

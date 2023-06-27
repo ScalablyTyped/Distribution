@@ -1,5 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSMathOperator
 import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +26,7 @@ object CSSMathClamp {
     max: /* repeated */ CSSNumberish => CSSNumericValue,
     min: /* repeated */ CSSNumberish => CSSNumericValue,
     mul: /* repeated */ CSSNumberish => CSSNumericValue,
-    operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any,
+    operator: CSSMathOperator,
     sub: /* repeated */ CSSNumberish => CSSNumericValue,
     to: String => CSSUnitValue,
     toSum: /* repeated */ String => CSSMathSum,

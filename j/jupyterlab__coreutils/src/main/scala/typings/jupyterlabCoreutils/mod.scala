@@ -6,11 +6,16 @@ import typings.jupyterlabCoreutils.libActivitymonitorMod.ActivityMonitor.IOption
 import typings.jupyterlabCoreutils.libPageconfigMod.PageConfig.IGetUrlOptions
 import typings.jupyterlabCoreutils.libUrlMod.URLExt.IUrl
 import typings.luminoCoreutils.typesJsonMod.PartialJSONObject
+import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jupyterlab/coreutils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jupyterlab/coreutils", "ActivityMonitor")
   @js.native
@@ -264,7 +269,7 @@ object mod {
     inline def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
-      * Solve the relative path from {from} to {to}.
+      * Solve the relative path from \{from\} to \{to\}.
       *
       * @param from - The source path.
       *
@@ -292,11 +297,11 @@ object mod {
       * @param parts - The paths to join.
       *
       * #### Notes
-      * The right-most parameter is considered {to}.  Other parameters are considered an array of {from}.
+      * The right-most parameter is considered \{to\}.  Other parameters are considered an array of \{from\}.
       *
-      * Starting from leftmost {from} parameter, resolves {to} to an absolute path.
+      * Starting from leftmost \{from\} parameter, resolves \{to\} to an absolute path.
       *
-      * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
+      * If \{to\} isn't already absolute, \{from\} arguments are prepended in right to left order, until an absolute path is found. If after using all \{from\} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
     inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   }
@@ -360,18 +365,14 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Convert a timestring to a date format.
+      * Convenient helper to convert a timestring to a date format.
       *
       * @param value - The date timestring or date object.
-      *
-      * @param format - The format string.
       *
       * @returns A formatted date.
       */
     inline def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def format(value: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def format(value: js.Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
@@ -408,7 +409,7 @@ object mod {
       *
       * @param url - The URL string to parse
       *
-      * @return a hostname string value
+      * @returns a hostname string value
       */
     inline def getHostName(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -465,4 +466,7 @@ object mod {
       */
     inline def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
   }
+  
+  inline def signalToPromise[T, U](signal: ISignal[T, U]): js.Promise[js.Tuple2[T, U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("signalToPromise")(signal.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[T, U]]]
+  inline def signalToPromise[T, U](signal: ISignal[T, U], timeout: Double): js.Promise[js.Tuple2[T, U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("signalToPromise")(signal.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[T, U]]]
 }

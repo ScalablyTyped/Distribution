@@ -8,7 +8,7 @@ trait Responses200ContentApplicationjsonOutput extends StObject {
   
   var parameters: PathCheckrunidOwner
   
-  var requestBody: Content184
+  var requestBody: Content218
   
   var responses: `200ContentApplicationjsonOutput`
 }
@@ -16,7 +16,7 @@ object Responses200ContentApplicationjsonOutput {
   
   inline def apply(
     parameters: PathCheckrunidOwner,
-    requestBody: Content184,
+    requestBody: Content218,
     responses: `200ContentApplicationjsonOutput`
   ): Responses200ContentApplicationjsonOutput = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
@@ -28,7 +28,7 @@ object Responses200ContentApplicationjsonOutput {
     
     inline def setParameters(value: PathCheckrunidOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: Content184): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Content218): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200ContentApplicationjsonOutput`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

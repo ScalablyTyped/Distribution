@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object kendoUiStrings {
   
   @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait both extends StObject
+  inline def both: both = "both".asInstanceOf[both]
+  
+  @js.native
   sealed trait continuous extends StObject
   inline def continuous: continuous = "continuous".asInstanceOf[continuous]
   
@@ -225,6 +237,10 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoFloatingActionButton extends StObject
   inline def kendoFloatingActionButton: kendoFloatingActionButton = "kendoFloatingActionButton".asInstanceOf[kendoFloatingActionButton]
+  
+  @js.native
+  sealed trait kendoFontIcon extends StObject
+  inline def kendoFontIcon: kendoFontIcon = "kendoFontIcon".asInstanceOf[kendoFontIcon]
   
   @js.native
   sealed trait kendoForm extends StObject
@@ -507,6 +523,10 @@ object kendoUiStrings {
   inline def kendoStockChart: kendoStockChart = "kendoStockChart".asInstanceOf[kendoStockChart]
   
   @js.native
+  sealed trait kendoSvgIcon extends StObject
+  inline def kendoSvgIcon: kendoSvgIcon = "kendoSvgIcon".asInstanceOf[kendoSvgIcon]
+  
+  @js.native
   sealed trait kendoSwitch extends StObject
   inline def kendoSwitch: kendoSwitch = "kendoSwitch".asInstanceOf[kendoSwitch]
   
@@ -581,6 +601,10 @@ object kendoUiStrings {
   @js.native
   sealed trait kendoWizard extends StObject
   inline def kendoWizard: kendoWizard = "kendoWizard".asInstanceOf[kendoWizard]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait popup extends StObject

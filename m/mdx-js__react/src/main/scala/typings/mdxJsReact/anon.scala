@@ -8,7 +8,7 @@ object anon {
   
   trait Components extends StObject {
     
-    var components: js.UndefOr[typings.mdxJsReact.libMod.Components] = js.undefined
+    var components: js.UndefOr[typings.mdxJsReact.libMod.Components | Null] = js.undefined
   }
   object Components {
     
@@ -21,6 +21,8 @@ object anon {
     implicit open class MutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: typings.mdxJsReact.libMod.Components): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      
+      inline def setComponentsNull: Self = StObject.set(x, "components", null)
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     }

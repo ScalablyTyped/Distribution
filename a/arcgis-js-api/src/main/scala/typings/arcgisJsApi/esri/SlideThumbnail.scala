@@ -9,10 +9,10 @@ trait SlideThumbnail
      with AnonymousAccessor {
   
   /**
-    * The URI pointing to the thumbnail image representing the slide.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#thumbnail)
-    */
+  		 * The URI pointing to the thumbnail image representing the slide.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#thumbnail)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object SlideThumbnail {

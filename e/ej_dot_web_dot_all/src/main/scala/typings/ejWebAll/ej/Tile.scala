@@ -224,32 +224,32 @@ object Tile {
   trait Badge extends StObject {
     
     /** Specifies whether to enable badge or not.
-      * @Default {false}
+      * @default {false}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies maximum value for tile badge.
-      * @Default {100}
+      * @default {100}
       */
     var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies minimum value for tile badge.
-      * @Default {1}
+      * @default {1}
       */
     var minValue: js.UndefOr[Double] = js.undefined
     
     /** Sets position for tile badge.
-      * @Default {â€œbottomrightâ€}
+      * @default {â€œbottomrightâ€}
       */
     var position: js.UndefOr[BadgePosition | String] = js.undefined
     
     /** Specifies text instead of number for tile badge.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Sets value for tile badge.
-      * @Default {1}
+      * @default {1}
       */
     var value: js.UndefOr[Double] = js.undefined
   }
@@ -292,27 +292,27 @@ object Tile {
   trait Caption extends StObject {
     
     /** It is used to align the text of a tile.
-      * @Default {normal}
+      * @default {normal}
       */
     var alignment: js.UndefOr[CaptionAlignment | String] = js.undefined
     
     /** Specifies whether the tile text to be shown or hidden.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** sets the icon instead of text.
-      * @Default {null}
+      * @default {null}
       */
     var icon: js.UndefOr[String] = js.undefined
     
     /** It is used to specify the caption position like Inner top,  inner bottom and outer.
-      * @Default {Innerbottom}
+      * @default {Innerbottom}
       */
     var position: js.UndefOr[CaptionPosition | String] = js.undefined
     
     /** Changes the text of a tile.
-      * @Default {Text}
+      * @default {Text}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -351,37 +351,37 @@ object Tile {
   trait LiveTile extends StObject {
     
     /** Specifies whether to enable liveTile or not.
-      * @Default {false}
+      * @default {false}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies liveTile images in CSS classes.
-      * @Default {null}
+      * @default {null}
       */
     var imageClass: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile images in templates.
-      * @Default {null}
+      * @default {null}
       */
     var imageTemplateId: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile images in CSS classes.
-      * @Default {null}
+      * @default {null}
       */
     var imageUrl: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the text to each living tile
-      * @Default {Null}
+      * @default {Null}
       */
     var text: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies liveTile type for Tile. See orientation
-      * @Default {flip}
+      * @default {flip}
       */
     var `type`: js.UndefOr[liveTileType | String] = js.undefined
     
     /** Specifies time interval between two successive liveTile animation
-      * @Default {2000}
+      * @default {2000}
       */
     var updateInterval: js.UndefOr[Double] = js.undefined
   }
@@ -436,12 +436,12 @@ object Tile {
   trait Model extends StObject {
     
     /** Sets allowSelection to  tile.
-      * @Default {false}
+      * @default {false}
       */
     var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the background color to  tile.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
@@ -459,32 +459,32 @@ object Tile {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Saves current model value to browser cookies for state maintains. While refreshing the page retains the model value applies from browser cookies.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Customize the tile size height.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies Tile imageClass, using this property we can give images for each tile through CSS classes.
-      * @Default {null}
+      * @default {null}
       */
     var imageClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the position of tile image.
-      * @Default {center}
+      * @default {center}
       */
     var imagePosition: js.UndefOr[typings.ejWebAll.ej.ImagePosition | String] = js.undefined
     
     /** Specifies the tile image in outside of template content.
-      * @Default {null}
+      * @default {null}
       */
     var imageTemplateId: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL of tile image.
-      * @Default {null}
+      * @default {null}
       */
     var imageUrl: js.UndefOr[String] = js.undefined
     
@@ -505,17 +505,17 @@ object Tile {
     var mouseUp: js.UndefOr[js.Function1[/* e */ MouseUpEventArgs, Unit]] = js.undefined
     
     /** Sets the rounded corner to  tile.
-      * @Default {false}
+      * @default {false}
       */
     var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of a tile.  See tileSize
-      * @Default {small}
+      * @default {small}
       */
     var tileSize: js.UndefOr[TileSize | String] = js.undefined
     
     /** Customize the tile size width.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }

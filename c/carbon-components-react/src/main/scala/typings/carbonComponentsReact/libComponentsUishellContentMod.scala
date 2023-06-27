@@ -141,6 +141,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.ruby
 import typings.carbonComponentsReact.carbonComponentsReactStrings.s
 import typings.carbonComponentsReact.carbonComponentsReactStrings.samp
 import typings.carbonComponentsReact.carbonComponentsReactStrings.script
+import typings.carbonComponentsReact.carbonComponentsReactStrings.search
 import typings.carbonComponentsReact.carbonComponentsReactStrings.section
 import typings.carbonComponentsReact.carbonComponentsReactStrings.select
 import typings.carbonComponentsReact.carbonComponentsReactStrings.slot
@@ -224,7 +225,6 @@ import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
-import typings.react.reactStrings.search
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.url
 import typings.react.reactStrings.yes
@@ -519,6 +519,8 @@ object libComponentsUishellContentMod {
   
   inline def default_script(props: ContentIntrinsicProps[script]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
+  inline def default_search(props: ContentIntrinsicProps[search]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
   inline def default_section(props: ContentIntrinsicProps[section]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_select(props: ContentIntrinsicProps[select]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
@@ -676,7 +678,7 @@ object libComponentsUishellContentMod {
       * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
       */
     var inputMode: js.UndefOr[
-        none | typings.react.reactStrings.text | tel | url | email | numeric | decimal | search
+        none | typings.react.reactStrings.text | tel | url | email | numeric | decimal | typings.react.reactStrings.search
       ] = js.undefined
     
     /**
@@ -1011,7 +1013,9 @@ object libComponentsUishellContentMod {
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInputMode(value: none | typings.react.reactStrings.text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(
+        value: none | typings.react.reactStrings.text | tel | url | email | numeric | decimal | typings.react.reactStrings.search
+      ): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
@@ -1455,5 +1459,5 @@ object libComponentsUishellContentMod {
     }
   }
   
-  type ContentIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = ContentBaseProps & (JSXIntrinsicElementProps[K, `false`]) & TagName[K]
+  type ContentIntrinsicProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.carbonComponentsReact.carbonComponentsReactStrings.a, typings.carbonComponentsReact.carbonComponentsReactStrings.abbr, typings.carbonComponentsReact.carbonComponentsReactStrings.address */ Any */] = ContentBaseProps & (JSXIntrinsicElementProps[K, `false`]) & TagName[K]
 }

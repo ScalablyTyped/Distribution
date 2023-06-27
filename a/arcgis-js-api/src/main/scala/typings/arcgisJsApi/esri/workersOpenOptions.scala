@@ -11,26 +11,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait workersOpenOptions extends StObject {
   
   /**
-    * The objects defining the API accessible from the module.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
-    */
+  		 * The objects defining the API accessible from the module.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
+  		 */
   var client: js.UndefOr[Any] = js.undefined
   
   /**
-    * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
-    */
+  		 * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable asynchronous job.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
-    * Indicates how to load the module.
-    *
-    * @default distributed
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
-    */
+  		 * Indicates how to load the module.
+  		 *
+  		 * @default distributed
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html#open)
+  		 */
   var strategy: js.UndefOr[distributed | dedicated | local] = js.undefined
 }
 object workersOpenOptions {

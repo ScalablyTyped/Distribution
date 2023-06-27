@@ -7,45 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchVisibleElements extends StObject {
   
   /**
-    * The available sketch tools within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * The available sketch tools within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var createTools: js.UndefOr[VisibleElementsCreateTools] = js.undefined
   
   /**
-    * The available selection tools within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the 'duplicate' button while a graphic is selected.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
+  var duplicateButton: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  		 * The available selection tools within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var selectionTools: js.UndefOr[VisibleElementsSelectionTools] = js.undefined
   
   /**
-    * Indicates whether to display the settings menu.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the settings menu.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var settingsMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether to display the `SnappingControls` widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the `SnappingControls` widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var snappingControls: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The available [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) elements within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * The available [SnappingControls](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html) elements within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var snappingControlsElements: js.UndefOr[SketchVisibleElementsSnappingControlsElements] = js.undefined
   
   /**
-    * Indicates whether to display the undo/redo menu within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
-    */
+  		 * Indicates whether to display the undo/redo menu within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VisibleElements)
+  		 */
   var undoRedoMenu: js.UndefOr[Boolean] = js.undefined
 }
 object SketchVisibleElements {
@@ -61,6 +68,10 @@ object SketchVisibleElements {
     inline def setCreateTools(value: VisibleElementsCreateTools): Self = StObject.set(x, "createTools", value.asInstanceOf[js.Any])
     
     inline def setCreateToolsUndefined: Self = StObject.set(x, "createTools", js.undefined)
+    
+    inline def setDuplicateButton(value: Boolean): Self = StObject.set(x, "duplicateButton", value.asInstanceOf[js.Any])
+    
+    inline def setDuplicateButtonUndefined: Self = StObject.set(x, "duplicateButton", js.undefined)
     
     inline def setSelectionTools(value: VisibleElementsSelectionTools): Self = StObject.set(x, "selectionTools", value.asInstanceOf[js.Any])
     

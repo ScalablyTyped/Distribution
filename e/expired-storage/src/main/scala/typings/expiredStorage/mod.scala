@@ -33,7 +33,7 @@ object mod {
     /**
       * Get item.
       * @param key: Item key to get (string).
-      * @return: Stored value, or undefined if not set / expired.
+      * @return Stored value, or undefined if not set / expired.
       */
     def getItem(key: String): String | Null = js.native
     
@@ -60,8 +60,8 @@ object mod {
     
     /**
       * Get all keys in storage, not including internal keys used to store expiration.
-      * @param: includeExpired: if true, will also include expired keys.
-      * @return: Array with keys.
+      * @param includeExpired: if true, will also include expired keys.
+      * @return Array with keys.
       */
     def keys(includeExpired: Boolean): js.Array[String] | Null = js.native
     
@@ -104,7 +104,7 @@ object mod {
       * Update expiration time for an item (note: doesn't validate that the item is set).
       * @param key: Item key to update expiration for (string).
       * @param expiration: New expiration time in seconds to set.
-      * @return: Storage.setItem() return code for setting new expiration.
+      * @return Storage.setItem() return code for setting new expiration.
       */
     def updateExpiration(key: String, expiration: Double): Any = js.native
   }

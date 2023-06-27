@@ -14,7 +14,7 @@ object FlexRendertype extends StObject {
   def apply(value: String): js.UndefOr[FlexRendertype & String] = js.native
   
   /**
-    * @SINCE 1.42.1
+    * @since 1.42.1
     *
     * The UI5 controls are not wrapped in an additional HTML element, the surrounding Flex Box is a DIV element.
     */

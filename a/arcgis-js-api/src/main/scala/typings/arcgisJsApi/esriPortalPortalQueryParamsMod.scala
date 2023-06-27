@@ -11,10 +11,10 @@ object esriPortalPortalQueryParamsMod {
   @JSImport("esri/portal/PortalQueryParams", JSImport.Namespace)
   @js.native
   /**
-    * The parameters used to perform a query for Items, Groups, and Users within a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html)
-    */
+  		 * The parameters used to perform a query for Items, Groups, and Users within a [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html)
+  		 */
   open class ^ ()
     extends StObject
        with PortalQueryParams {

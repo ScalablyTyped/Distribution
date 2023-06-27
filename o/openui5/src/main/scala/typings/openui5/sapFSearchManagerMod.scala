@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.ClearButtonPressed
-import typings.openui5.anon.NewValue
-import typings.openui5.anon.SuggestValue
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -153,13 +150,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -186,7 +183,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit]
     ): this.type = js.native
     def attachLiveChange(
       /**
@@ -197,7 +194,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -218,13 +215,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -249,7 +246,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit]
     ): this.type = js.native
     def attachSearch(
       /**
@@ -260,7 +257,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -283,13 +280,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -316,7 +313,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit]
     ): this.type = js.native
     def attachSuggest(
       /**
@@ -327,7 +324,7 @@ object sapFSearchManagerMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.SearchManager` itself
       */
@@ -365,13 +362,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit]
     ): this.type = js.native
     def detachLiveChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerLiveChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -389,13 +386,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit]
     ): this.type = js.native
     def detachSearch(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSearchEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -413,13 +410,13 @@ object sapFSearchManagerMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit]
     ): this.type = js.native
     def detachSuggest(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SearchManagerSuggestEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -427,43 +424,49 @@ object sapFSearchManagerMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireLiveChange(): this.type = js.native
-    def fireLiveChange(/**
+    def fireLiveChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: NewValue): this.type = js.native
+    mParameters: SearchManager$LiveChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSearch(): this.type = js.native
-    def fireSearch(/**
+    def fireSearch(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: ClearButtonPressed): this.type = js.native
+    mParameters: SearchManager$SearchEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSuggest(): this.type = js.native
-    def fireSuggest(/**
+    def fireSuggest(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SuggestValue): this.type = js.native
+    mParameters: SearchManager$SuggestEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnableSuggestions enableSuggestions}.
@@ -681,6 +684,92 @@ object sapFSearchManagerMod {
     def unbindValue(): this.type = js.native
   }
   
+  trait SearchManager$LiveChangeEventParameters extends StObject {
+    
+    /**
+      * Current search string.
+      */
+    var newValue: js.UndefOr[String] = js.undefined
+  }
+  object SearchManager$LiveChangeEventParameters {
+    
+    inline def apply(): SearchManager$LiveChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchManager$LiveChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchManager$LiveChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    }
+  }
+  
+  trait SearchManager$SearchEventParameters extends StObject {
+    
+    /**
+      * Indicates if the user pressed the clear icon.
+      */
+    var clearButtonPressed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The search query string.
+      */
+    var query: js.UndefOr[String] = js.undefined
+  }
+  object SearchManager$SearchEventParameters {
+    
+    inline def apply(): SearchManager$SearchEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchManager$SearchEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchManager$SearchEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setClearButtonPressed(value: Boolean): Self = StObject.set(x, "clearButtonPressed", value.asInstanceOf[js.Any])
+      
+      inline def setClearButtonPressedUndefined: Self = StObject.set(x, "clearButtonPressed", js.undefined)
+      
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    }
+  }
+  
+  trait SearchManager$SuggestEventParameters extends StObject {
+    
+    /**
+      * Current search string of the search field.
+      */
+    var suggestValue: js.UndefOr[String] = js.undefined
+  }
+  object SearchManager$SuggestEventParameters {
+    
+    inline def apply(): SearchManager$SuggestEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SearchManager$SuggestEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchManager$SuggestEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSuggestValue(value: String): Self = StObject.set(x, "suggestValue", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestValueUndefined: Self = StObject.set(x, "suggestValue", js.undefined)
+    }
+  }
+  
+  type SearchManagerLiveChangeEvent = typings.openui5.sapUiBaseEventMod.default[SearchManager$LiveChangeEventParameters]
+  
+  type SearchManagerLiveChangeEventParameters = SearchManager$LiveChangeEventParameters
+  
+  type SearchManagerSearchEvent = typings.openui5.sapUiBaseEventMod.default[SearchManager$SearchEventParameters]
+  
+  type SearchManagerSearchEventParameters = SearchManager$SearchEventParameters
+  
   trait SearchManagerSettings
     extends StObject
        with ElementSettings {
@@ -705,7 +794,12 @@ object sapFSearchManagerMod {
       *
       * **Note:** Do not invalidate or re-render a focused search field, especially during the `liveChange` event.
       */
-    var liveChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var liveChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$LiveChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Determines the maximum number of characters. Value '0' means the feature is switched off.
@@ -721,14 +815,24 @@ object sapFSearchManagerMod {
     /**
       * Fired when the user triggers a search.
       */
-    var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var search: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$SearchEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Fired when the search field is initially focused or its value is changed by the user. This event means
       * that suggestion data should be updated, in case if suggestions are used. Use the value parameter to create
       * new suggestions for it.
       */
-    var suggest: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var suggest: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$SuggestEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * `SuggestionItems` are the items which are displayed in the suggestions list. The following properties
@@ -765,7 +869,9 @@ object sapFSearchManagerMod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setLiveChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
+      inline def setLiveChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$LiveChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "liveChange", js.Any.fromFunction1(value))
       
       inline def setLiveChangeUndefined: Self = StObject.set(x, "liveChange", js.undefined)
       
@@ -777,11 +883,15 @@ object sapFSearchManagerMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$SearchEventParameters] => Unit
+      ): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      inline def setSuggest(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
+      inline def setSuggest(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SearchManager$SuggestEventParameters] => Unit
+      ): Self = StObject.set(x, "suggest", js.Any.fromFunction1(value))
       
       inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
@@ -798,4 +908,8 @@ object sapFSearchManagerMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type SearchManagerSuggestEvent = typings.openui5.sapUiBaseEventMod.default[SearchManager$SuggestEventParameters]
+  
+  type SearchManagerSuggestEventParameters = SearchManager$SuggestEventParameters
 }

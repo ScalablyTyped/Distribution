@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.in
   - typings.convertUnits.convertUnitsStrings.`ft-us`
   - typings.convertUnits.convertUnitsStrings.ft
+  - typings.convertUnits.convertUnitsStrings.yd
   - typings.convertUnits.convertUnitsStrings.mi
 */
 trait Distance extends StObject
@@ -32,4 +33,6 @@ object Distance {
   inline def mi: typings.convertUnits.convertUnitsStrings.mi = "mi".asInstanceOf[typings.convertUnits.convertUnitsStrings.mi]
   
   inline def mm: typings.convertUnits.convertUnitsStrings.mm = "mm".asInstanceOf[typings.convertUnits.convertUnitsStrings.mm]
+  
+  inline def yd: typings.convertUnits.convertUnitsStrings.yd = "yd".asInstanceOf[typings.convertUnits.convertUnitsStrings.yd]
 }

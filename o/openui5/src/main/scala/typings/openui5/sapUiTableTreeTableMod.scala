@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.RowIndex
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiTableTableMod.TableSettings
@@ -20,8 +19,8 @@ object sapUiTableTreeTableMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
-    * 	{@link topic:148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}
+    * 	{@link https://ui5.sap.com/#/topic/08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
+    * 	{@link https://ui5.sap.com/#/topic/148892ff9aea4a18b912829791e38f3e Tables: Which One Should I Choose?}
     * 	{@link fiori:/tree-table/ Tree Table}
     */
   open class default () extends TreeTable {
@@ -141,13 +140,13 @@ object sapUiTableTreeTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.TreeTable` itself
       */
@@ -173,7 +172,7 @@ object sapUiTableTreeTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def attachToggleOpenState(
       /**
@@ -184,7 +183,7 @@ object sapUiTableTreeTableMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.table.TreeTable` itself
       */
@@ -226,13 +225,13 @@ object sapUiTableTreeTableMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit]
     ): this.type = js.native
     def detachToggleOpenState(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ TreeTableToggleOpenStateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -271,17 +270,19 @@ object sapUiTableTreeTableMod {
     iLevel: int): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireToggleOpenState(): this.type = js.native
-    def fireToggleOpenState(/**
+    def fireToggleOpenState(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: RowIndex): this.type = js.native
+    mParameters: TreeTable$ToggleOpenStateEventParameters
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.76) - replaced by the `collapseRecursive` binding parameter. May not work with all
@@ -524,7 +525,7 @@ object sapUiTableTreeTableMod {
     iRootLevel: int): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Allows to hide the tree structure (tree icons, indentation) in tree mode (property `useGroupMode` is
       * set to `false`).
@@ -560,6 +561,47 @@ object sapUiTableTreeTableMod {
       * New value for property `useGroupMode`
       */
     bUseGroupMode: Boolean): this.type = js.native
+  }
+  
+  trait TreeTable$ToggleOpenStateEventParameters extends StObject {
+    
+    /**
+      * Flag that indicates whether the row has been expanded or collapsed
+      */
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Binding context of the expanded/collapsed row
+      */
+    var rowContext: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Index of the expanded/collapsed row
+      */
+    var rowIndex: js.UndefOr[int] = js.undefined
+  }
+  object TreeTable$ToggleOpenStateEventParameters {
+    
+    inline def apply(): TreeTable$ToggleOpenStateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TreeTable$ToggleOpenStateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeTable$ToggleOpenStateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setRowContext(value: js.Object): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
+      
+      inline def setRowContextUndefined: Self = StObject.set(x, "rowContext", js.undefined)
+      
+      inline def setRowIndex(value: int): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      
+      inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    }
   }
   
   trait TreeTableSettings
@@ -645,7 +687,12 @@ object sapUiTableTreeTableMod {
     /**
       * Fired when a row has been expanded or collapsed by user interaction. Only available in hierarchical mode.
       */
-    var toggleOpenState: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var toggleOpenState: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TreeTable$ToggleOpenStateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If group mode is enabled nodes with subitems are rendered as if they were group headers. This can be
@@ -681,7 +728,9 @@ object sapUiTableTreeTableMod {
       
       inline def setRootLevelUndefined: Self = StObject.set(x, "rootLevel", js.undefined)
       
-      inline def setToggleOpenState(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
+      inline def setToggleOpenState(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[TreeTable$ToggleOpenStateEventParameters] => Unit
+      ): Self = StObject.set(x, "toggleOpenState", js.Any.fromFunction1(value))
       
       inline def setToggleOpenStateUndefined: Self = StObject.set(x, "toggleOpenState", js.undefined)
       
@@ -690,4 +739,8 @@ object sapUiTableTreeTableMod {
       inline def setUseGroupModeUndefined: Self = StObject.set(x, "useGroupMode", js.undefined)
     }
   }
+  
+  type TreeTableToggleOpenStateEvent = typings.openui5.sapUiBaseEventMod.default[TreeTable$ToggleOpenStateEventParameters]
+  
+  type TreeTableToggleOpenStateEventParameters = TreeTable$ToggleOpenStateEventParameters
 }

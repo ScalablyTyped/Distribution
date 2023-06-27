@@ -277,7 +277,7 @@ object legacyMod {
   
   type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[/* keyof Props */ String, relay]]]
   
-  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactRelay.reactRelayStrings.a, typings.reactRelay.reactRelayStrings.abbr, typings.reactRelay.reactRelayStrings.address */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
+  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactRelay.reactRelayStrings.a, typings.reactRelay.reactRelayStrings.abbr, typings.reactRelay.reactRelayStrings.address */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
   
   trait QueryRendererProps[TOperation /* <: OperationType */] extends StObject {
     

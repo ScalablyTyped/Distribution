@@ -20,6 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var assertions: js.Array[ImportAttribute_] | Null
   
+  var attributes: js.Array[ImportAttribute_] | Null
+  
   var exportKind: `type` | value | Null
   
   var source: StringLiteral_
@@ -30,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ExportAllDeclaration_ {
   
   inline def apply(source: StringLiteral_): ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, attributes = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration_]
   }
@@ -43,6 +45,12 @@ object ExportAllDeclaration_ {
     inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
     
     inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
+    
+    inline def setAttributes(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    
+    inline def setAttributesVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setExportKind(value: `type` | value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     

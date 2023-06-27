@@ -93,7 +93,7 @@ trait Range
     * Gets the collection of endnotes in the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val endnotes: NoteItemCollection = js.native
   
@@ -137,7 +137,7 @@ trait Range
     * Gets the collection of footnotes in the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     */
   val footnotes: NoteItemCollection = js.native
   
@@ -170,8 +170,7 @@ trait Range
     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param options Optional. Options that define which content controls are returned.
     */
@@ -334,6 +333,8 @@ trait Range
     * @remarks
     * [Api set: WordApi 1.1]
     *
+    * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+    *
     * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
   def insertContentControl(): ContentControl = js.native
@@ -345,7 +346,7 @@ trait Range
     * Inserts an endnote. The endnote reference is placed after the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     *
     * @param insertText Optional. Text to be inserted into the endnote body. The default is "".
     */
@@ -413,8 +414,7 @@ trait Range
     * Inserts a field at the specified location.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param insertLocation Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
     * @param fieldType Optional. Can be any FieldType constant. The default value is Empty.
@@ -426,8 +426,7 @@ trait Range
     * Inserts a field at the specified location.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param insertLocation Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
     * @param fieldType Optional. Can be any FieldType constant. The default value is Empty.
@@ -487,7 +486,7 @@ trait Range
     * Inserts a footnote. The footnote reference is placed after the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.5]
     *
     * @param insertText Optional. Text to be inserted into the footnote body. The default is "".
     */
@@ -803,7 +802,7 @@ trait Range
   def split(delimiters: js.Array[String], multiParagraphs: Unit, trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
   
   /**
-    * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -811,7 +810,7 @@ trait Range
   var style: String = js.native
   
   /**
-    * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    * Specifies the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
     * @remarks
     * [Api set: WordApi 1.3]

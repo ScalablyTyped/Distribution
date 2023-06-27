@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "parse-duration" : "1.0.3"
+      "parse-duration" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "parse-duration" : "1.0.3"
+      "parse-duration" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

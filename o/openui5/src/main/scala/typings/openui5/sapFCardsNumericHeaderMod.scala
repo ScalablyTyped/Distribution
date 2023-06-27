@@ -157,13 +157,13 @@ object sapFCardsNumericHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.cards.NumericHeader` itself
       */
@@ -188,7 +188,7 @@ object sapFCardsNumericHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -199,7 +199,7 @@ object sapFCardsNumericHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.cards.NumericHeader` itself
       */
@@ -224,13 +224,13 @@ object sapFCardsNumericHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -238,7 +238,7 @@ object sapFCardsNumericHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
@@ -255,7 +255,7 @@ object sapFCardsNumericHeaderMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -277,7 +277,7 @@ object sapFCardsNumericHeaderMod {
     def getDetails(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Gets current value of property {@link #getDetailsMaxLines detailsMaxLines}.
       *
@@ -300,7 +300,7 @@ object sapFCardsNumericHeaderMod {
     def getNumber(): String = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Gets current value of property {@link #getNumberVisible numberVisible}.
       *
@@ -343,7 +343,7 @@ object sapFCardsNumericHeaderMod {
     def getSideIndicatorsAlignment(): NumericHeaderSideIndicatorsAlignment | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cards.NumericHeaderSideIndicatorsAlignment * / any */ String) = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Gets current value of property {@link #getState state}.
@@ -377,7 +377,7 @@ object sapFCardsNumericHeaderMod {
     def getSubtitle(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Gets current value of property {@link #getSubtitleMaxLines subtitleMaxLines}.
       *
@@ -399,7 +399,7 @@ object sapFCardsNumericHeaderMod {
     def getTitle(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Gets current value of property {@link #getTitleMaxLines titleMaxLines}.
       *
@@ -432,8 +432,8 @@ object sapFCardsNumericHeaderMod {
     def getUnitOfMeasurement(): String = js.native
     
     /**
-      * Checks for the provided `sap.f.cards.NumericSideIndicator` in the aggregation {@link #getSideIndicators
-      * sideIndicators}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.f.cards.NumericSideIndicator` in the aggregation {@link #getSideIndicators sideIndicators}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -506,7 +506,7 @@ object sapFCardsNumericHeaderMod {
     sDetails: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Sets a new value for property {@link #getDetailsMaxLines detailsMaxLines}.
       *
@@ -540,7 +540,7 @@ object sapFCardsNumericHeaderMod {
     sNumber: String): this.type = js.native
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Sets a new value for property {@link #getNumberVisible numberVisible}.
       *
@@ -600,7 +600,7 @@ object sapFCardsNumericHeaderMod {
     ): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * Sets a new value for property {@link #getState state}.
@@ -657,7 +657,7 @@ object sapFCardsNumericHeaderMod {
     sSubtitle: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Sets a new value for property {@link #getSubtitleMaxLines subtitleMaxLines}.
       *
@@ -690,7 +690,7 @@ object sapFCardsNumericHeaderMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Sets a new value for property {@link #getTitleMaxLines titleMaxLines}.
       *
@@ -746,6 +746,12 @@ object sapFCardsNumericHeaderMod {
     sUnitOfMeasurement: String): this.type = js.native
   }
   
+  trait NumericHeader$PressEventParameters extends StObject
+  
+  type NumericHeaderPressEvent = typings.openui5.sapUiBaseEventMod.default[NumericHeader$PressEventParameters]
+  
+  type NumericHeaderPressEventParameters = NumericHeader$PressEventParameters
+  
   trait NumericHeaderSettings
     extends StObject
        with BaseHeaderSettings {
@@ -756,7 +762,7 @@ object sapFCardsNumericHeaderMod {
     var details: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Limits the number of lines for the details.
       */
@@ -769,7 +775,7 @@ object sapFCardsNumericHeaderMod {
     var number: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.109
+      * @since 1.109
       *
       * Whether the main numeric indicator is visible or not
       */
@@ -780,7 +786,9 @@ object sapFCardsNumericHeaderMod {
     /**
       * Fires when the user presses the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the unit of measurement (scaling prefix) for the main indicator. Financial characters can be
@@ -805,7 +813,7 @@ object sapFCardsNumericHeaderMod {
       ] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
+      * @experimental (since 1.64) - Disclaimer: this property is in a beta state - incompatible API changes
       * may be done before its official public release. Use at your own discretion.
       *
       * The semantic color which represents the state of the main number indicator.
@@ -825,7 +833,7 @@ object sapFCardsNumericHeaderMod {
     var subtitle: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Limits the number of lines for the subtitle.
       */
@@ -837,7 +845,7 @@ object sapFCardsNumericHeaderMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Limits the number of lines for the title.
       */
@@ -881,7 +889,7 @@ object sapFCardsNumericHeaderMod {
       
       inline def setNumberVisibleUndefined: Self = StObject.set(x, "numberVisible", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

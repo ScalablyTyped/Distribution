@@ -132,7 +132,7 @@ object sapUiLayoutFormFormMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -177,7 +177,7 @@ object sapUiLayoutFormFormMod {
     def destroyTitle(): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Destroys the toolbar in the aggregation {@link #getToolbar toolbar}.
       *
@@ -186,15 +186,14 @@ object sapUiLayoutFormFormMod {
     def destroyToolbar(): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.20.0
+      * @since 1.20.0
       *
       * Gets current value of property {@link #getEditable editable}.
       *
@@ -227,9 +226,8 @@ object sapUiLayoutFormFormMod {
     /**
       * Gets content of aggregation {@link #getLayout layout}.
       *
-      * Layout of the `Form`. The assigned `Layout` renders the `Form`. We recommend using the {@link sap.ui.layout.form.ColumnLayout
-      * ColumnLayout} for rendering a `Form`, as its responsiveness allows the available space to be used in
-      * the best way possible.
+      * Layout of the `Form`. The assigned `Layout` renders the `Form`. We recommend using the {@link sap.ui.layout.form.ColumnLayout ColumnLayout }
+      * for rendering a `Form`, as its responsiveness allows the available space to be used in the best way possible.
       */
     def getLayout(): typings.openui5.sapUiLayoutFormFormLayoutMod.default = js.native
     
@@ -243,13 +241,13 @@ object sapUiLayoutFormFormMod {
       *
       * **Note:** If the title is provided as a string, the title is rendered with a theme-dependent default
       * level. As the `Form` control cannot know the structure of the page, this might not fit the page structure.
-      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel
-      * level} to the needed value.
+      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel level }
+      * to the needed value.
       */
     def getTitle(): typings.openui5.sapUiCoreTitleMod.default | String = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Gets content of aggregation {@link #getToolbar toolbar}.
       *
@@ -271,8 +269,8 @@ object sapUiLayoutFormFormMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * Checks for the provided `sap.ui.layout.form.FormContainer` in the aggregation {@link #getFormContainers
-      * formContainers}. and returns its index if found or -1 otherwise.
+      * Checks for the provided `sap.ui.layout.form.FormContainer` in the aggregation {@link #getFormContainers formContainers}.
+      * and returns its index if found or -1 otherwise.
       *
       * @returns The index of the provided control in the aggregation if found, or -1 otherwise
       */
@@ -302,7 +300,7 @@ object sapUiLayoutFormFormMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -320,7 +318,7 @@ object sapUiLayoutFormFormMod {
     def removeAllFormContainers(): js.Array[typings.openui5.sapUiLayoutFormFormContainerMod.default] = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -362,7 +360,7 @@ object sapUiLayoutFormFormMod {
     ): typings.openui5.sapUiLayoutFormFormContainerMod.default | Null = js.native
     
     /**
-      * @SINCE 1.20.0
+      * @since 1.20.0
       *
       * Sets a new value for property {@link #getEditable editable}.
       *
@@ -416,7 +414,7 @@ object sapUiLayoutFormFormMod {
     vTitle: typings.openui5.sapUiCoreTitleMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Sets the aggregated {@link #getToolbar toolbar}.
       *
@@ -448,14 +446,14 @@ object sapUiLayoutFormFormMod {
        with ControlSettings {
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Association to controls / IDs that label this control (see WAI-ARIA attribute `aria-labelledby`).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.20.0
+      * @since 1.20.0
       *
       * Applies a device-specific and theme-specific line height and label alignment to the form rows if the
       * form has editable content. If set, all (not only the editable) rows of the form will get the line height
@@ -482,9 +480,8 @@ object sapUiLayoutFormFormMod {
       ] = js.undefined
     
     /**
-      * Layout of the `Form`. The assigned `Layout` renders the `Form`. We recommend using the {@link sap.ui.layout.form.ColumnLayout
-      * ColumnLayout} for rendering a `Form`, as its responsiveness allows the available space to be used in
-      * the best way possible.
+      * Layout of the `Form`. The assigned `Layout` renders the `Form`. We recommend using the {@link sap.ui.layout.form.ColumnLayout ColumnLayout }
+      * for rendering a `Form`, as its responsiveness allows the available space to be used in the best way possible.
       */
     var layout: js.UndefOr[typings.openui5.sapUiLayoutFormFormLayoutMod.default] = js.undefined
     
@@ -496,13 +493,13 @@ object sapUiLayoutFormFormMod {
       *
       * **Note:** If the title is provided as a string, the title is rendered with a theme-dependent default
       * level. As the `Form` control cannot know the structure of the page, this might not fit the page structure.
-      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel
-      * level} to the needed value.
+      * In this case provide the title using a `Title` element and set its {@link sap.ui.core.Title#setLevel level }
+      * to the needed value.
       */
     var title: js.UndefOr[String | typings.openui5.sapUiCoreTitleMod.default | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.36.0
+      * @since 1.36.0
       *
       * Toolbar of the `Form`.
       *

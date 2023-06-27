@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Index
-import typings.openui5.anon.Step
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IDynamicPageStickyContent
 import typings.openui5.sapMLibraryMod.PageBackgroundDesign
@@ -11,6 +9,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
+import typings.openui5.sapUiCoreLibraryMod.TitleLevel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -162,13 +161,13 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachComplete(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
@@ -194,7 +193,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachComplete(
       /**
@@ -205,7 +204,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
@@ -213,7 +212,7 @@ object sapMWizardMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigationChange navigationChange} event of
       * this `sap.m.Wizard`.
@@ -230,20 +229,20 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit]
     ): this.type = js.native
     def attachNavigationChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Attaches event handler `fnFunction` to the {@link #event:navigationChange navigationChange} event of
       * this `sap.m.Wizard`.
@@ -265,7 +264,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit]
     ): this.type = js.native
     def attachNavigationChange(
       /**
@@ -276,7 +275,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
@@ -297,13 +296,13 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit]
     ): this.type = js.native
     def attachStepActivate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
@@ -328,7 +327,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit]
     ): this.type = js.native
     def attachStepActivate(
       /**
@@ -339,7 +338,7 @@ object sapMWizardMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Wizard` itself
       */
@@ -364,13 +363,13 @@ object sapMWizardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachComplete(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -378,7 +377,7 @@ object sapMWizardMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * Detaches event handler `fnFunction` from the {@link #event:navigationChange navigationChange} event of
       * this `sap.m.Wizard`.
@@ -391,13 +390,13 @@ object sapMWizardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit]
     ): this.type = js.native
     def detachNavigationChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardNavigationChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -415,13 +414,13 @@ object sapMWizardMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit]
     ): this.type = js.native
     def detachStepActivate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ WizardStepActivateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -446,7 +445,7 @@ object sapMWizardMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:complete complete} to attached listeners.
       *
@@ -459,31 +458,35 @@ object sapMWizardMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.101
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.101
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigationChange navigationChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireNavigationChange(): this.type = js.native
-    def fireNavigationChange(/**
+    def fireNavigationChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Step): this.type = js.native
+    mParameters: Wizard$NavigationChangeEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:stepActivate stepActivate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireStepActivate(): this.type = js.native
-    def fireStepActivate(/**
+    def fireStepActivate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Index): this.type = js.native
+    mParameters: WizardStepActivateEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
@@ -498,7 +501,7 @@ object sapMWizardMod {
     def getBackgroundDesign(): PageBackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageBackgroundDesign * / any */ String) = js.native
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * ID of the element which is the current target of the association {@link #getCurrentStep currentStep},
       * or `null`.
@@ -506,7 +509,7 @@ object sapMWizardMod {
     def getCurrentStep(): ID = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Gets current value of property {@link #getEnableBranching enableBranching}.
       *
@@ -555,7 +558,7 @@ object sapMWizardMod {
     def getProgressStep(): typings.openui5.sapMWizardStepMod.default = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Gets current value of property {@link #getRenderMode renderMode}.
       *
@@ -579,6 +582,19 @@ object sapMWizardMod {
       * @returns Value of property `showNextButton`
       */
     def getShowNextButton(): Boolean = js.native
+    
+    /**
+      * @since 1.115
+      *
+      * Gets current value of property {@link #getStepTitleLevel stepTitleLevel}.
+      *
+      * Defines the semantic level of the step title. When using "Auto" the default value is taken into account.
+      *
+      * Default value is `H3`.
+      *
+      * @returns Value of property `stepTitleLevel`
+      */
+    def getStepTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
     
     /**
       * Gets content of aggregation {@link #getSteps steps}.
@@ -676,7 +692,7 @@ object sapMWizardMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Sets a new value for property {@link #getEnableBranching enableBranching}.
       *
@@ -734,7 +750,7 @@ object sapMWizardMod {
     sHeight: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Sets a new value for property {@link #getRenderMode renderMode}.
       *
@@ -769,6 +785,31 @@ object sapMWizardMod {
     bValue: Boolean): this.type = js.native
     
     /**
+      * @since 1.115
+      *
+      * Sets a new value for property {@link #getStepTitleLevel stepTitleLevel}.
+      *
+      * Defines the semantic level of the step title. When using "Auto" the default value is taken into account.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `H3`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setStepTitleLevel(): this.type = js.native
+    def setStepTitleLevel(
+      /**
+      * New value for property `stepTitleLevel`
+      */
+    sStepTitleLevel: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String
+    ): this.type = js.native
+    def setStepTitleLevel(/**
+      * New value for property `stepTitleLevel`
+      */
+    sStepTitleLevel: TitleLevel): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getWidth width}.
       *
       * Determines the width of the Wizard.
@@ -796,6 +837,39 @@ object sapMWizardMod {
     oStep: typings.openui5.sapMWizardStepMod.default): this.type = js.native
   }
   
+  trait Wizard$CompleteEventParameters extends StObject
+  
+  trait Wizard$NavigationChangeEventParameters extends StObject {
+    
+    /**
+      * The newly selected step.
+      */
+    var step: js.UndefOr[typings.openui5.sapMWizardStepMod.default] = js.undefined
+  }
+  object Wizard$NavigationChangeEventParameters {
+    
+    inline def apply(): Wizard$NavigationChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Wizard$NavigationChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wizard$NavigationChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setStep(value: typings.openui5.sapMWizardStepMod.default): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    }
+  }
+  
+  type WizardCompleteEvent = typings.openui5.sapUiBaseEventMod.default[Wizard$CompleteEventParameters]
+  
+  type WizardCompleteEventParameters = Wizard$CompleteEventParameters
+  
+  type WizardNavigationChangeEvent = typings.openui5.sapUiBaseEventMod.default[Wizard$NavigationChangeEventParameters]
+  
+  type WizardNavigationChangeEventParameters = Wizard$NavigationChangeEventParameters
+  
   trait WizardSettings
     extends StObject
        with ControlSettings {
@@ -812,10 +886,12 @@ object sapMWizardMod {
       * The complete event is fired when the user clicks the finish button of the Wizard. The finish button is
       * only available on the last step of the Wizard.
       */
-    var complete: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var complete: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.50
+      * @since 1.50
       *
       * This association controls the current activated step of the wizard (meaning the last step) For example
       * if we have A->B->C->D steps, we are on step A and we setCurrentStep(C) A,B and C are going to be activated.
@@ -824,7 +900,7 @@ object sapMWizardMod {
     var currentStep: js.UndefOr[typings.openui5.sapMWizardStepMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.32
+      * @since 1.32
       *
       * Enables the branching functionality of the Wizard. Branching gives the developer the ability to define
       * multiple routes a user is able to take based on the input in the current step. It is up to the developer
@@ -850,15 +926,20 @@ object sapMWizardMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.101
+      * @since 1.101
       *
       * This event is fired when the the current visible step is changed by either taping on the `WizardProgressNavigator`
       * or scrolling through the steps.
       */
-    var navigationChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigationChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Wizard$NavigationChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.84
+      * @since 1.84
       *
       * Defines how the steps of the Wizard would be visualized.
       */
@@ -878,7 +959,21 @@ object sapMWizardMod {
     /**
       * The StepActivated event is fired every time a new step is activated.
       */
-    var stepActivate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var stepActivate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[WizardStepActivateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * @since 1.115
+      *
+      * Defines the semantic level of the step title. When using "Auto" the default value is taken into account.
+      */
+    var stepTitleLevel: js.UndefOr[
+        TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * The wizard steps to be included in the content of the control.
@@ -910,7 +1005,7 @@ object sapMWizardMod {
       
       inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
-      inline def setComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
@@ -930,7 +1025,9 @@ object sapMWizardMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setNavigationChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigationChange", js.Any.fromFunction1(value))
+      inline def setNavigationChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Wizard$NavigationChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "navigationChange", js.Any.fromFunction1(value))
       
       inline def setNavigationChangeUndefined: Self = StObject.set(x, "navigationChange", js.undefined)
       
@@ -944,9 +1041,17 @@ object sapMWizardMod {
       
       inline def setShowNextButtonUndefined: Self = StObject.set(x, "showNextButton", js.undefined)
       
-      inline def setStepActivate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "stepActivate", js.Any.fromFunction1(value))
+      inline def setStepActivate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[WizardStepActivateEventParameters] => Unit
+      ): Self = StObject.set(x, "stepActivate", js.Any.fromFunction1(value))
       
       inline def setStepActivateUndefined: Self = StObject.set(x, "stepActivate", js.undefined)
+      
+      inline def setStepTitleLevel(
+        value: TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "stepTitleLevel", value.asInstanceOf[js.Any])
+      
+      inline def setStepTitleLevelUndefined: Self = StObject.set(x, "stepTitleLevel", js.undefined)
       
       inline def setSteps(
         value: js.Array[typings.openui5.sapMWizardStepMod.default] | typings.openui5.sapMWizardStepMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -959,6 +1064,31 @@ object sapMWizardMod {
       inline def setWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    }
+  }
+  
+  type WizardStepActivateEvent = typings.openui5.sapUiBaseEventMod.default[WizardStepActivateEventParameters]
+  
+  trait WizardStepActivateEventParameters extends StObject {
+    
+    /**
+      * The index of the activated step as a parameter. One-based.
+      */
+    var index: js.UndefOr[int] = js.undefined
+  }
+  object WizardStepActivateEventParameters {
+    
+    inline def apply(): WizardStepActivateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WizardStepActivateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizardStepActivateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setIndex(value: int): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
 }

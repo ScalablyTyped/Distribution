@@ -211,7 +211,7 @@ object sockets {
     
     /**
       * The size of the buffer used to receive data.
-      * @default: 4096
+      * @default 4096
       */
     var bufferSize: js.UndefOr[integer] = js.undefined
     
@@ -265,7 +265,7 @@ object sockets {
         * These will be tls1, tls1.1, or tls1.2.
         * *Note*
         * tls1.3 should be supported from Chrome 67.
-        * @see[TLS Info and support table]{@link https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3}
+        * @see https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3
         */
       var tlsVersion: js.UndefOr[Max] = js.undefined
     }

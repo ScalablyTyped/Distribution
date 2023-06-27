@@ -50,8 +50,8 @@ object distSchemaTagsMod {
     inline def tagYamlOrg2002Timestamp_=(x: ScalarTagtestRegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag:yaml.org,2002:timestamp")(x.asInstanceOf[js.Any])
   }
   
-  inline def getTags(customTags: js.UndefOr[Tags | (js.Function1[/* tags */ Tags, Tags]) | Null], schemaName: String): js.Array[ScalarTag | CollectionTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTags")(customTags.asInstanceOf[js.Any], schemaName.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScalarTag | CollectionTag]]
-  inline def getTags(customTags: Unit, schemaName: String): js.Array[ScalarTag | CollectionTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTags")(customTags.asInstanceOf[js.Any], schemaName.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScalarTag | CollectionTag]]
+  inline def getTags(customTags: js.UndefOr[Tags | (js.Function1[/* tags */ Tags, Tags]) | Null], schemaName: String): js.Array[CollectionTag | ScalarTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTags")(customTags.asInstanceOf[js.Any], schemaName.asInstanceOf[js.Any])).asInstanceOf[js.Array[CollectionTag | ScalarTag]]
+  inline def getTags(customTags: Unit, schemaName: String): js.Array[CollectionTag | ScalarTag] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTags")(customTags.asInstanceOf[js.Any], schemaName.asInstanceOf[js.Any])).asInstanceOf[js.Array[CollectionTag | ScalarTag]]
   
   /* keyof yaml.anon.Binary */ /* Rewritten from type alias, can be one of: 
     - typings.yaml.yamlStrings.binary

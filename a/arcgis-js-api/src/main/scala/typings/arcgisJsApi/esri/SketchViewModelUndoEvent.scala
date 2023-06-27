@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
+import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.move
 import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
@@ -18,7 +19,7 @@ trait SketchViewModelUndoEvent extends StObject {
   
   var graphics: js.Array[Graphic]
   
-  var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
+  var tool: point | multipoint | polyline | polygon | rectangle | circle | mesh | move | transform | reshape
   
   var `type`: undo
 }
@@ -26,7 +27,7 @@ object SketchViewModelUndoEvent {
   
   inline def apply(
     graphics: js.Array[Graphic],
-    tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
+    tool: point | multipoint | polyline | polygon | rectangle | circle | mesh | move | transform | reshape
   ): SketchViewModelUndoEvent = {
     val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("undo")
@@ -40,7 +41,9 @@ object SketchViewModelUndoEvent {
     
     inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value*))
     
-    inline def setTool(value: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(
+      value: point | multipoint | polyline | polygon | rectangle | circle | mesh | move | transform | reshape
+    ): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     inline def setType(value: undo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

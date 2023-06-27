@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "style-mod" : "4.0.0"
+      "style-mod" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "style-mod" : "4.0.0"
+      "style-mod" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMDatePickerMod.DatePicker$ChangeEventParameters
 import typings.openui5.sapMDatePickerMod.DatePickerSettings
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.std.Record
@@ -145,13 +146,13 @@ object sapMDateRangeSelectionMod {
     /**
       * Getter for property `secondDateValue`.
       *
-      * The end date of the range as JavaScript Date object. This is independent from any formatter.
+      * The end date of the range as UI5Date or JavaScript Date object. This is independent from any formatter.
       *
       * **Note:** If this property is used, the `value` property should not be changed from the caller.
       *
       * @returns the value of property `secondDateValue`
       */
-    def getSecondDateValue(): js.Date = js.native
+    def getSecondDateValue(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
     
     /**
       * @deprecated (since 1.22.0) - replaced by `secondDateValue` property
@@ -160,7 +161,7 @@ object sapMDateRangeSelectionMod {
       *
       * @returns the end date of the date range
       */
-    def getTo(): js.Date = js.native
+    def getTo(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
     
     /**
       * Sets a new value for property {@link #getDelimiter delimiter}.
@@ -188,14 +189,18 @@ object sapMDateRangeSelectionMod {
       * @returns Reference to `this` for method chaining
       */
     def setFrom(/**
-      * A JavaScript Date
+      * A date instance
       */
     oFrom: js.Date): this.type = js.native
+    def setFrom(/**
+      * A date instance
+      */
+    oFrom: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
       * Setter for property `secondDateValue`.
       *
-      * The start date of the range as JavaScript Date object. This is independent from any formatter.
+      * The start date of the range as UI5Date or JavaScript Date object. This is independent from any formatter.
       *
       * **Note:** If this property is used, the `value` property should not be changed from the caller.
       *
@@ -205,6 +210,12 @@ object sapMDateRangeSelectionMod {
       * New value for property `dateValue`
       */
     oSecondDateValue: js.Date): this.type = js.native
+    def setSecondDateValue(
+      /**
+      * New value for property `dateValue`
+      */
+    oSecondDateValue: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): this.type = js.native
     
     /**
       * @deprecated (since 1.22.0) - replaced by `secondDateValue` property
@@ -214,10 +225,52 @@ object sapMDateRangeSelectionMod {
       * @returns Reference to `this` for method chaining
       */
     def setTo(/**
-      * A JavaScript Date
+      * A date instance
       */
     oTo: js.Date): this.type = js.native
+    def setTo(/**
+      * A date instance
+      */
+    oTo: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
   }
+  
+  trait DateRangeSelection$ChangeEventParameters
+    extends StObject
+       with DatePicker$ChangeEventParameters {
+    
+    /**
+      * Current start date after change.
+      */
+    var from: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Current end date after change.
+      */
+    var to: js.UndefOr[js.Object] = js.undefined
+  }
+  object DateRangeSelection$ChangeEventParameters {
+    
+    inline def apply(): DateRangeSelection$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DateRangeSelection$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangeSelection$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setFrom(value: js.Object): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      
+      inline def setTo(value: js.Object): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    }
+  }
+  
+  type DateRangeSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[DateRangeSelection$ChangeEventParameters]
+  
+  type DateRangeSelectionChangeEventParameters = DateRangeSelection$ChangeEventParameters
   
   trait DateRangeSelectionSettings
     extends StObject
@@ -239,7 +292,7 @@ object sapMDateRangeSelectionMod {
       ] = js.undefined
     
     /**
-      * The end date of the range as JavaScript Date object. This is independent from any formatter.
+      * The end date of the range as UI5Date or JavaScript Date object. This is independent from any formatter.
       *
       * **Note:** If this property is used, the `value` property should not be changed from the caller.
       */

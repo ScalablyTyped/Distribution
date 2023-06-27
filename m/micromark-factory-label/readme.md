@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-factory-label
 
-Typings are for version 1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 micromark factory to parse labels (found in media, definitions)

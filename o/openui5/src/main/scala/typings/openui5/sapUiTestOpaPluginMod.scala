@@ -134,7 +134,7 @@ object sapUiTestOpaPluginMod {
     /**
       * Gets the constructor function of a certain controlType
       *
-      * @returns When the type is loaded, the contstructor is returned, if it is a lazy stub or not yet loaded,
+      * @returns When the type is loaded, the constructor is returned, if it is a lazy stub or not yet loaded,
       * null will be returned and there will be a log entry.
       */
     def getControlConstructor(/**

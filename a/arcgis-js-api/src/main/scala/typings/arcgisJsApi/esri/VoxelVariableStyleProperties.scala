@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VoxelVariableStyleProperties extends StObject {
   
   /**
-    * The collection of continuous variable isosurfaces.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#isosurfaces)
-    */
+  		 * The collection of continuous variable isosurfaces.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#isosurfaces)
+  		 */
   var isosurfaces: js.UndefOr[CollectionProperties[VoxelIsosurface]] = js.undefined
   
   /**
-    * The variable label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#label)
-    */
+  		 * The variable label.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#label)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The transferFunction describes how to render continuous variable volumes and sections.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#transferFunction)
-    */
+  		 * The transferFunction describes how to render continuous variable volumes and sections.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#transferFunction)
+  		 */
   var transferFunction: js.UndefOr[VoxelTransferFunctionStyleProperties] = js.undefined
   
   /**
-    * The collection of unique values describes how to render discrete variable volumes and sections.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#uniqueValues)
-    */
+  		 * The collection of unique values describes how to render discrete variable volumes and sections.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#uniqueValues)
+  		 */
   var uniqueValues: js.UndefOr[CollectionProperties[VoxelUniqueValue]] = js.undefined
   
   /**
-    * Id of the [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html) that the style applies to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#variableId)
-    */
+  		 * Id of the [VoxelVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariable.html) that the style applies to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-voxel-VoxelVariableStyle.html#variableId)
+  		 */
   var variableId: js.UndefOr[Double] = js.undefined
 }
 object VoxelVariableStyleProperties {

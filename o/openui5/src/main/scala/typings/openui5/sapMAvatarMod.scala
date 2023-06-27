@@ -178,13 +178,13 @@ object sapMAvatarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Avatar` itself
       */
@@ -209,7 +209,7 @@ object sapMAvatarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -220,7 +220,7 @@ object sapMAvatarMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Avatar` itself
       */
@@ -258,13 +258,13 @@ object sapMAvatarMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -272,7 +272,7 @@ object sapMAvatarMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -285,13 +285,12 @@ object sapMAvatarMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
-      * ariaDescribedBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy ariaDescribedBy}.
       */
     def getAriaDescribedBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Gets current value of property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -313,8 +312,7 @@ object sapMAvatarMod {
     def getAriaHasPopup(): HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String) = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -330,7 +328,7 @@ object sapMAvatarMod {
     def getBackgroundColor(): AvatarColor | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AvatarColor * / any */ String) = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getBadgeIcon badgeIcon}.
       *
@@ -348,7 +346,7 @@ object sapMAvatarMod {
     def getBadgeIcon(): URI = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Gets current value of property {@link #getBadgeTooltip badgeTooltip}.
       *
@@ -389,7 +387,7 @@ object sapMAvatarMod {
     def getCustomFontSize(): CSSSize = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Gets current value of property {@link #getDecorative decorative}.
       *
@@ -543,7 +541,7 @@ object sapMAvatarMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Sets a new value for property {@link #getAriaHasPopup ariaHasPopup}.
       *
@@ -600,7 +598,7 @@ object sapMAvatarMod {
     sBackgroundColor: AvatarColor): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getBadgeIcon badgeIcon}.
       *
@@ -624,7 +622,7 @@ object sapMAvatarMod {
     sBadgeIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Sets a new value for property {@link #getBadgeTooltip badgeTooltip}.
       *
@@ -683,7 +681,7 @@ object sapMAvatarMod {
     sCustomFontSize: CSSSize): this.type = js.native
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Sets a new value for property {@link #getDecorative decorative}.
       *
@@ -859,6 +857,12 @@ object sapMAvatarMod {
     def unbindDetailBox(): this.type = js.native
   }
   
+  trait Avatar$PressEventParameters extends StObject
+  
+  type AvatarPressEvent = typings.openui5.sapUiBaseEventMod.default[Avatar$PressEventParameters]
+  
+  type AvatarPressEventParameters = Avatar$PressEventParameters
+  
   trait AvatarSettings
     extends StObject
        with ControlSettings {
@@ -869,7 +873,7 @@ object sapMAvatarMod {
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.99.0
+      * @since 1.99.0
       *
       * Specifies the value of the `aria-haspopup` attribute
       *
@@ -899,7 +903,7 @@ object sapMAvatarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Defines what type of icon is displayed as visual affordance. It can be predefined or custom.
       *
@@ -911,7 +915,7 @@ object sapMAvatarMod {
     var badgeIcon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.77
+      * @since 1.77
       *
       * Defines a custom tooltip for the `badgeIcon`. If set, it overrides the available default values.
       *
@@ -940,7 +944,7 @@ object sapMAvatarMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.97
+      * @since 1.97
       *
       * Defines whether the `sap.m.Avatar` is used for decorative purposes and is ignored by accessibility tools.
       *
@@ -996,7 +1000,9 @@ object sapMAvatarMod {
     /**
       * Fired when the user selects the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Determines whether the control is displayed with border.
@@ -1094,7 +1100,7 @@ object sapMAvatarMod {
       
       inline def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

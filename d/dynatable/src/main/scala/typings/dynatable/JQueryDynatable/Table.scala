@@ -19,7 +19,7 @@ trait Table extends StObject {
   /**
     * By default, dynatable converts headings to JSON attribute names using:
     *
-    * @enum('camelCase', 'trimDash', 'dashed', 'underscore', 'lowercase')
+    * ('camelCase', 'trimDash', 'dashed', 'underscore', 'lowercase')
     * @default 'camelCase'
     * @see http://www.dynatable.com/#converting-attribute-names
     *

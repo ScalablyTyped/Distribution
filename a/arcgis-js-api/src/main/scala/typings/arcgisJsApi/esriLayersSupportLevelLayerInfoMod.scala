@@ -12,20 +12,20 @@ object esriLayersSupportLevelLayerInfoMod {
   @JSImport("esri/layers/support/LevelLayerInfo", JSImport.Namespace)
   @js.native
   /**
-    * The LevelLayerInfo class describes the footprint of each occupiable floor contained in a managed facility.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LevelLayerInfo.html)
-    */
+  		 * The LevelLayerInfo class describes the footprint of each occupiable floor contained in a managed facility.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LevelLayerInfo.html)
+  		 */
   open class ^ ()
     extends StObject
        with LevelLayerInfo {
     def this(properties: LevelLayerInfoProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

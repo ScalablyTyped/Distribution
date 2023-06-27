@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Code
-import typings.openui5.anon.`39`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreWsReadyStateMod.ReadyState
 import typings.std.Record
@@ -112,15 +110,17 @@ object sapUiCoreWsWebSocketMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachClose(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit]
+    ): this.type = js.native
+    def attachClose(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `WebSocket` itself
       */
@@ -143,7 +143,7 @@ object sapUiCoreWsWebSocketMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -154,7 +154,7 @@ object sapUiCoreWsWebSocketMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `WebSocket` itself
       */
@@ -226,15 +226,17 @@ object sapUiCoreWsWebSocketMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def attachMessage(/**
-      * The function to be called, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def attachMessage(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit]
+    ): this.type = js.native
+    def attachMessage(
+      /**
+      * The function to be called, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `WebSocket` itself
       */
@@ -257,7 +259,7 @@ object sapUiCoreWsWebSocketMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit]
     ): this.type = js.native
     def attachMessage(
       /**
@@ -268,7 +270,7 @@ object sapUiCoreWsWebSocketMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `WebSocket` itself
       */
@@ -376,15 +378,17 @@ object sapUiCoreWsWebSocketMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachClose(/**
-      * The function to call, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachClose(
       /**
       * The function to call, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit]
+    ): this.type = js.native
+    def detachClose(
+      /**
+      * The function to call, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ WebSocketCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -420,15 +424,17 @@ object sapUiCoreWsWebSocketMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def detachMessage(/**
-      * The function to call, when the event occurs
-      */
-    fnFunction: js.Function): this.type = js.native
     def detachMessage(
       /**
       * The function to call, when the event occurs
       */
-    fnFunction: js.Function,
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit]
+    ): this.type = js.native
+    def detachMessage(
+      /**
+      * The function to call, when the event occurs
+      */
+    fnFunction: js.Function1[/* evt */ WebSocketMessageEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -458,7 +464,7 @@ object sapUiCoreWsWebSocketMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -468,10 +474,10 @@ object sapUiCoreWsWebSocketMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    oParameters: Code): this.type = js.native
+    oParameters: WebSocket$CloseEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:error error} to attached listeners.
       *
@@ -484,7 +490,7 @@ object sapUiCoreWsWebSocketMod {
     oParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:message message} to attached listeners.
       *
@@ -494,10 +500,10 @@ object sapUiCoreWsWebSocketMod {
     def fireMessage(/**
       * Parameters to pass along with the event
       */
-    oParameters: `39`): this.type = js.native
+    oParameters: WebSocket$MessageEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:open open} to attached listeners.
       *
@@ -535,4 +541,88 @@ object sapUiCoreWsWebSocketMod {
       */
     sMessage: String): this.type = js.native
   }
+  
+  trait WebSocket$CloseEventParameters extends StObject {
+    
+    /**
+      * Close code provided by the server.
+      */
+    var code: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Reason from server for closing the connection.
+      */
+    var reason: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates whether the connection was cleanly closed or not.
+      */
+    var wasClean: js.UndefOr[String] = js.undefined
+  }
+  object WebSocket$CloseEventParameters {
+    
+    inline def apply(): WebSocket$CloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WebSocket$CloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocket$CloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      
+      inline def setWasClean(value: String): Self = StObject.set(x, "wasClean", value.asInstanceOf[js.Any])
+      
+      inline def setWasCleanUndefined: Self = StObject.set(x, "wasClean", js.undefined)
+    }
+  }
+  
+  trait WebSocket$ErrorEventParameters extends StObject
+  
+  trait WebSocket$MessageEventParameters extends StObject {
+    
+    /**
+      * Received data from the server.
+      */
+    var data: js.UndefOr[String] = js.undefined
+  }
+  object WebSocket$MessageEventParameters {
+    
+    inline def apply(): WebSocket$MessageEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WebSocket$MessageEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocket$MessageEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    }
+  }
+  
+  trait WebSocket$OpenEventParameters extends StObject
+  
+  type WebSocketCloseEvent = typings.openui5.sapUiBaseEventMod.default[WebSocket$CloseEventParameters]
+  
+  type WebSocketCloseEventParameters = WebSocket$CloseEventParameters
+  
+  type WebSocketErrorEvent = typings.openui5.sapUiBaseEventMod.default[WebSocket$ErrorEventParameters]
+  
+  type WebSocketErrorEventParameters = WebSocket$ErrorEventParameters
+  
+  type WebSocketMessageEvent = typings.openui5.sapUiBaseEventMod.default[WebSocket$MessageEventParameters]
+  
+  type WebSocketMessageEventParameters = WebSocket$MessageEventParameters
+  
+  type WebSocketOpenEvent = typings.openui5.sapUiBaseEventMod.default[WebSocket$OpenEventParameters]
+  
+  type WebSocketOpenEventParameters = WebSocket$OpenEventParameters
 }

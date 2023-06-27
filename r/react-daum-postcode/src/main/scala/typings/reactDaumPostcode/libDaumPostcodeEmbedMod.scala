@@ -55,6 +55,11 @@ object libDaumPostcodeEmbedMod {
     
     def initiate(Postcode: PostcodeConstructor): Unit = js.native
     
+    /**
+      * See #61
+      */
+    /* private */ var mounted: Any = js.native
+    
     def onError(e: Any): Unit = js.native
     
     @JSName("state")

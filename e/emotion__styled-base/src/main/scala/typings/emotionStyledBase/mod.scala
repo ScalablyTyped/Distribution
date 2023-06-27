@@ -143,6 +143,7 @@ import typings.emotionStyledBase.emotionStyledBaseStrings.ruby
 import typings.emotionStyledBase.emotionStyledBaseStrings.s
 import typings.emotionStyledBase.emotionStyledBaseStrings.samp
 import typings.emotionStyledBase.emotionStyledBaseStrings.script
+import typings.emotionStyledBase.emotionStyledBaseStrings.search
 import typings.emotionStyledBase.emotionStyledBaseStrings.section
 import typings.emotionStyledBase.emotionStyledBaseStrings.select
 import typings.emotionStyledBase.emotionStyledBaseStrings.slot
@@ -651,6 +652,8 @@ object mod extends Shortcut {
     def apply[ExtraProps](tag: samp, options: StyledOptions): CreateStyledComponentIntrinsic[samp, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: script): CreateStyledComponentIntrinsic[script, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: script, options: StyledOptions): CreateStyledComponentIntrinsic[script, ExtraProps, Theme] = js.native
+    def apply[ExtraProps](tag: search): CreateStyledComponentIntrinsic[search, ExtraProps, Theme] = js.native
+    def apply[ExtraProps](tag: search, options: StyledOptions): CreateStyledComponentIntrinsic[search, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: section): CreateStyledComponentIntrinsic[section, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: section, options: StyledOptions): CreateStyledComponentIntrinsic[section, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: select): CreateStyledComponentIntrinsic[select, ExtraProps, Theme] = js.native
@@ -759,7 +762,7 @@ object mod extends Shortcut {
   
   type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   
-  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
+  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: importer.ImportType#apply Failed type conversion: @emotion/styled-base.@emotion/styled-base.JSXInEl[Tag] */ js.Any, 
     ExtraProps, 
     Theme
@@ -1247,6 +1250,8 @@ object mod extends Shortcut {
         StyleProps, 
         Theme
       ] = js.native
+    @JSName("withComponent")
+    def withComponent_search(tag: search): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
     @JSName("withComponent")

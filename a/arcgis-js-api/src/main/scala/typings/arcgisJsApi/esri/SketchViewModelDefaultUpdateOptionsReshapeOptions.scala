@@ -12,30 +12,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchViewModelDefaultUpdateOptionsReshapeOptions extends StObject {
   
   /**
-    * Sets the reshape operation on the edge.
-    *
-    * @default "split"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
-    */
+  		 * Sets the reshape operation on the edge.
+  		 *
+  		 * @default "split"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
+  		 */
   var edgeOperation: js.UndefOr[none_ | split | offset] = js.undefined
   
   /**
-    * Sets the move constraints for the whole shape.
-    *
-    * @default "move"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
-    */
+  		 * Sets the move constraints for the whole shape.
+  		 *
+  		 * @default "move"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
+  		 */
   var shapeOperation: js.UndefOr[none_ | move | `move-xy`] = js.undefined
   
   /**
-    * Sets the move constraints for the vertex.
-    *
-    * @default "move"
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
-    */
+  		 * Sets the move constraints for the vertex.
+  		 *
+  		 * @default "move"
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
+  		 */
   var vertexOperation: js.UndefOr[move | `move-xy`] = js.undefined
 }
 object SketchViewModelDefaultUpdateOptionsReshapeOptions {

@@ -7,143 +7,143 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsCellStatisticalOperation extends StObject {
   
   /**
-    * Determines the majority (value that occurs most often) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the majority (value that occurs most often) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var majority: Double
   
   /**
-    * Determines the majority (value that occurs most often) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the majority (value that occurs most often) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var majorityIgnoreNoData: Double
   
   /**
-    * Determines the maximum (largest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the maximum (largest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var max: Double
   
   /**
-    * Determines the maximum (largest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the maximum (largest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var maxIgnoreNoData: Double
   
   /**
-    * Determines the mean (average value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the mean (average value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var mean: Double
   
   /**
-    * Determines the mean (average value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the mean (average value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var meanIgnoreNoData: Double
   
   /**
-    * Calculates the median of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the median of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var med: Double
   
   /**
-    * Determines the median of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the median of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var medIgnoreNoData: Double
   
   /**
-    * Determines the minimum (smallest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the minimum (smallest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var min: Double
   
   /**
-    * Determines the minimum (smallest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the minimum (smallest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var minIgnoreNoData: Double
   
   /**
-    * Determines the minority (value that occurs least often) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the minority (value that occurs least often) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var minority: Double
   
   /**
-    * Determines the minority (value that occurs least often) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Determines the minority (value that occurs least often) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var minorityIgnoreNoData: Double
   
   /**
-    * Calculates the range (difference between largest and smallest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the range (difference between largest and smallest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var range: Double
   
   /**
-    * Calculates the range (difference between largest and smallest value) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the range (difference between largest and smallest value) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var rangeIgnoreNoData: Double
   
   /**
-    * Calculates the standard deviation of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the standard deviation of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var stddev: Double
   
   /**
-    * Calculates the standard deviation of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the standard deviation of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var stddevIgnoreNoData: Double
   
   /**
-    * Calculates the sum (total of all values) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the sum (total of all values) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var sum: Double
   
   /**
-    * Calculates the sum (total of all values) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the sum (total of all values) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var sumIgnoreNoData: Double
   
   /**
-    * Calculates the variety (number of unique values) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the variety (number of unique values) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var variety: Double
   
   /**
-    * Calculates the variety (number of unique values) of the inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
-    */
+  		 * Calculates the variety (number of unique values) of the inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#cellStatisticalOperation)
+  		 */
   var varietyIgnoreNoData: Double
 }
 object rasterFunctionConstantsCellStatisticalOperation {

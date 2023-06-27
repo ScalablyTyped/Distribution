@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayerFromPortalItemParams extends StObject {
   
   /**
-    * The object representing an ArcGIS Online or ArcGIS Enterprise portal item from which to load the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromPortalItem)
-    */
+  		 * The object representing an ArcGIS Online or ArcGIS Enterprise portal item from which to load the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromPortalItem)
+  		 */
   var portalItem: PortalItem
 }
 object LayerFromPortalItemParams {

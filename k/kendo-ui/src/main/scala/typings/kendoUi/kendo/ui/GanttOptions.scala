@@ -100,7 +100,7 @@ trait GanttOptions extends StObject {
   
   var togglePlannedTasks: js.UndefOr[js.Function1[/* e */ GanttTogglePlannedTasks, Unit]] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.undefined
+  var toolbar: js.UndefOr[js.Array[GanttToolbarItem | ToolBarItem]] = js.undefined
   
   var tooltip: js.UndefOr[GanttTooltip] = js.undefined
   
@@ -310,11 +310,11 @@ object GanttOptions {
     
     inline def setTogglePlannedTasksUndefined: Self = StObject.set(x, "togglePlannedTasks", js.undefined)
     
-    inline def setToolbar(value: js.Array[GanttToolbarItem]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: js.Array[GanttToolbarItem | ToolBarItem]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: GanttToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
+    inline def setToolbarVarargs(value: (GanttToolbarItem | ToolBarItem)*): Self = StObject.set(x, "toolbar", js.Array(value*))
     
     inline def setTooltip(value: GanttTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

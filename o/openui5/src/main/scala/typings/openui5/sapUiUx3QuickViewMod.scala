@@ -1,8 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Action
-import typings.openui5.anon.Href
-import typings.openui5.anon.Text
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -167,13 +164,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit]
     ): this.type = js.native
     def attachActionSelected(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -199,7 +196,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit]
     ): this.type = js.native
     def attachActionSelected(
       /**
@@ -210,7 +207,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -231,13 +228,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit]
     ): this.type = js.native
     def attachFeedSubmit(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -262,7 +259,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit]
     ): this.type = js.native
     def attachFeedSubmit(
       /**
@@ -273,7 +270,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -295,13 +292,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -327,7 +324,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit]
     ): this.type = js.native
     def attachNavigate(
       /**
@@ -338,7 +335,7 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.QuickView` itself
       */
@@ -378,13 +375,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit]
     ): this.type = js.native
     def detachActionSelected(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewActionSelectedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -402,13 +399,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit]
     ): this.type = js.native
     def detachFeedSubmit(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewFeedSubmitEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -426,13 +423,13 @@ object sapUiUx3QuickViewMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit]
     ): this.type = js.native
     def detachNavigate(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ QuickViewNavigateEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -440,33 +437,37 @@ object sapUiUx3QuickViewMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:actionSelected actionSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireActionSelected(): this.type = js.native
-    def fireActionSelected(/**
+    def fireActionSelected(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Action): this.type = js.native
+    mParameters: QuickView$ActionSelectedEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireFeedSubmit(): this.type = js.native
-    def fireFeedSubmit(/**
+    def fireFeedSubmit(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Text): this.type = js.native
+    mParameters: QuickView$FeedSubmitEventParameters
+    ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
@@ -476,10 +477,12 @@ object sapUiUx3QuickViewMod {
       * @returns Whether or not to prevent the default action
       */
     def fireNavigate(): Boolean = js.native
-    def fireNavigate(/**
+    def fireNavigate(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: Href): Boolean = js.native
+    mParameters: QuickView$NavigateEventParameters
+    ): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getActionBar actionBar}.
@@ -1040,6 +1043,106 @@ object sapUiUx3QuickViewMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait QuickView$ActionSelectedEventParameters extends StObject {
+    
+    /**
+      * Selected ThingAction
+      */
+    var action: js.UndefOr[typings.openui5.sapUiUx3ThingActionMod.default] = js.undefined
+    
+    /**
+      * Id of selected ThingAction
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * New State of the selected action. Only filled if the respective action maintains a state property, for
+      * example 'FollowUp' or 'Favorite'
+      */
+    var newState: js.UndefOr[String] = js.undefined
+  }
+  object QuickView$ActionSelectedEventParameters {
+    
+    inline def apply(): QuickView$ActionSelectedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$ActionSelectedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$ActionSelectedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: typings.openui5.sapUiUx3ThingActionMod.default): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+      
+      inline def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
+    }
+  }
+  
+  trait QuickView$FeedSubmitEventParameters extends StObject {
+    
+    /**
+      * Feed text
+      */
+    var text: js.UndefOr[String] = js.undefined
+  }
+  object QuickView$FeedSubmitEventParameters {
+    
+    inline def apply(): QuickView$FeedSubmitEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$FeedSubmitEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$FeedSubmitEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  trait QuickView$NavigateEventParameters extends StObject {
+    
+    /**
+      * URI of the Thing Inspector application.
+      */
+    var href: js.UndefOr[String] = js.undefined
+  }
+  object QuickView$NavigateEventParameters {
+    
+    inline def apply(): QuickView$NavigateEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QuickView$NavigateEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickView$NavigateEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    }
+  }
+  
+  type QuickViewActionSelectedEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$ActionSelectedEventParameters]
+  
+  type QuickViewActionSelectedEventParameters = QuickView$ActionSelectedEventParameters
+  
+  type QuickViewFeedSubmitEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$FeedSubmitEventParameters]
+  
+  type QuickViewFeedSubmitEventParameters = QuickView$FeedSubmitEventParameters
+  
+  type QuickViewNavigateEvent = typings.openui5.sapUiBaseEventMod.default[QuickView$NavigateEventParameters]
+  
+  type QuickViewNavigateEventParameters = QuickView$NavigateEventParameters
+  
   trait QuickViewSettings
     extends StObject
        with CalloutBaseSettings {
@@ -1053,7 +1156,12 @@ object sapUiUx3QuickViewMod {
     /**
       * Action is selected in Action Bar
       */
-    var actionSelected: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var actionSelected: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$ActionSelectedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Actions of a Thing
@@ -1086,7 +1194,12 @@ object sapUiUx3QuickViewMod {
     /**
       * Fired when a new feed entry is submitted.
       */
-    var feedSubmit: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var feedSubmit: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$FeedSubmitEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Thing name shown in the header of the QuickView
@@ -1136,7 +1249,12 @@ object sapUiUx3QuickViewMod {
       * Event is fired when a user clicks on the firstTitle link. Call the preventDefault method of the event
       * object to cancel browser navigation.
       */
-    var navigate: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var navigate: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$NavigateEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Open Thing action enabled/disabled. If disabled the action will be invisible.
@@ -1191,7 +1309,9 @@ object sapUiUx3QuickViewMod {
       
       inline def setActionBarUndefined: Self = StObject.set(x, "actionBar", js.undefined)
       
-      inline def setActionSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "actionSelected", js.Any.fromFunction1(value))
+      inline def setActionSelected(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$ActionSelectedEventParameters] => Unit
+      ): Self = StObject.set(x, "actionSelected", js.Any.fromFunction1(value))
       
       inline def setActionSelectedUndefined: Self = StObject.set(x, "actionSelected", js.undefined)
       
@@ -1219,7 +1339,9 @@ object sapUiUx3QuickViewMod {
       
       inline def setFavoriteStateUndefined: Self = StObject.set(x, "favoriteState", js.undefined)
       
-      inline def setFeedSubmit(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "feedSubmit", js.Any.fromFunction1(value))
+      inline def setFeedSubmit(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$FeedSubmitEventParameters] => Unit
+      ): Self = StObject.set(x, "feedSubmit", js.Any.fromFunction1(value))
       
       inline def setFeedSubmitUndefined: Self = StObject.set(x, "feedSubmit", js.undefined)
       
@@ -1253,7 +1375,9 @@ object sapUiUx3QuickViewMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[QuickView$NavigateEventParameters] => Unit
+      ): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       

@@ -9,10 +9,10 @@ trait MultipartColorRampProperties
      with ColorRampProperties {
   
   /**
-    * Define an array of algorithmic color ramps used to generate the multi part ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html#colorRamps)
-    */
+  		 * Define an array of algorithmic color ramps used to generate the multi part ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-MultipartColorRamp.html#colorRamps)
+  		 */
   var colorRamps: js.UndefOr[js.Array[AlgorithmicColorRampProperties]] = js.undefined
 }
 object MultipartColorRampProperties {

@@ -11,10 +11,10 @@ object esriWidgetsExpandExpandViewModelMod {
   @JSImport("esri/widgets/Expand/ExpandViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html)
-    */
+  		 * Provides the logic for the [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with ExpandViewModel {

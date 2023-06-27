@@ -14,8 +14,10 @@ object mod extends Shortcut {
   @js.native
   trait DetectPort extends StObject {
     
+    def apply(): js.Promise[Double] = js.native
     def apply(port: Double): js.Promise[Double] = js.native
     def apply(port: Double, callback: DetectPortCallback): Unit = js.native
+    def apply(port: Unit, callback: DetectPortCallback): Unit = js.native
     def apply(port: PortConfig): js.Promise[Double] = js.native
     def apply(port: PortConfig, callback: DetectPortCallback): Unit = js.native
   }
@@ -28,12 +30,12 @@ object mod extends Shortcut {
     
     var hostname: js.UndefOr[String] = js.undefined
     
-    var port: Double
+    var port: js.UndefOr[Double] = js.undefined
   }
   object PortConfig {
     
-    inline def apply(port: Double): PortConfig = {
-      val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
+    inline def apply(): PortConfig = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortConfig]
     }
     
@@ -49,6 +51,8 @@ object mod extends Shortcut {
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   

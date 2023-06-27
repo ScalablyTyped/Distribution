@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.State
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
 import typings.openui5.sapMLibraryMod.SwitchType
@@ -169,7 +168,7 @@ object sapMSwitchMod {
     vAriaLabelledBy: typings.openui5.sapUiCoreControlMod.default
     ): this.type = js.native
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Adds some ariaLabelledBy into the association {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -194,13 +193,13 @@ object sapMSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Switch` itself
       */
@@ -225,7 +224,7 @@ object sapMSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit]
     ): this.type = js.native
     def attachChange(
       /**
@@ -236,7 +235,7 @@ object sapMSwitchMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.Switch` itself
       */
@@ -254,13 +253,13 @@ object sapMSwitchMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit]
     ): this.type = js.native
     def detachChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SwitchChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -268,7 +267,7 @@ object sapMSwitchMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:change change} to attached listeners.
       *
@@ -278,13 +277,12 @@ object sapMSwitchMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: State): this.type = js.native
+    mParameters: Switch$ChangeEventParameters): this.type = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -362,7 +360,7 @@ object sapMSwitchMod {
     def getType(): SwitchType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SwitchType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes all the controls in the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -371,7 +369,7 @@ object sapMSwitchMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Removes an ariaLabelledBy from the association named {@link #getAriaLabelledBy ariaLabelledBy}.
       *
@@ -508,12 +506,39 @@ object sapMSwitchMod {
     sType: SwitchType): this.type = js.native
   }
   
+  trait Switch$ChangeEventParameters extends StObject {
+    
+    /**
+      * The new state of the switch.
+      */
+    var state: js.UndefOr[Boolean] = js.undefined
+  }
+  object Switch$ChangeEventParameters {
+    
+    inline def apply(): Switch$ChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Switch$ChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Switch$ChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
+  
+  type SwitchChangeEvent = typings.openui5.sapUiBaseEventMod.default[Switch$ChangeEventParameters]
+  
+  type SwitchChangeEventParameters = Switch$ChangeEventParameters
+  
   trait SwitchSettings
     extends StObject
        with ControlSettings {
     
     /**
-      * @SINCE 1.27.0
+      * @since 1.27.0
       *
       * Association to controls / ids which label this control (see WAI-ARIA attribute aria-labelledby).
       */
@@ -522,7 +547,12 @@ object sapMSwitchMod {
     /**
       * Triggered when a switch changes the state.
       */
-    var change: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var change: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Switch$ChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Custom text for the "OFF" state.
@@ -583,7 +613,9 @@ object sapMSwitchMod {
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
       
-      inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Switch$ChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       

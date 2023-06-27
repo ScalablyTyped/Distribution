@@ -1,6 +1,5 @@
 package typings.esbuildWasm.libBrowserMod
 
-import typings.esbuildWasm.anon.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +8,17 @@ trait TransformOptions
   extends StObject
      with CommonOptions {
   
+  /** Documentation: https://esbuild.github.io/api/#banner */
   var banner: js.UndefOr[String] = js.undefined
   
+  /** Documentation: https://esbuild.github.io/api/#footer */
   var footer: js.UndefOr[String] = js.undefined
   
+  /** Documentation: https://esbuild.github.io/api/#loader */
   var loader: js.UndefOr[Loader] = js.undefined
   
+  /** Documentation: https://esbuild.github.io/api/#sourcefile */
   var sourcefile: js.UndefOr[String] = js.undefined
-  
-  var tsconfigRaw: js.UndefOr[String | CompilerOptions] = js.undefined
 }
 object TransformOptions {
   
@@ -44,9 +45,5 @@ object TransformOptions {
     inline def setSourcefile(value: String): Self = StObject.set(x, "sourcefile", value.asInstanceOf[js.Any])
     
     inline def setSourcefileUndefined: Self = StObject.set(x, "sourcefile", js.undefined)
-    
-    inline def setTsconfigRaw(value: String | CompilerOptions): Self = StObject.set(x, "tsconfigRaw", value.asInstanceOf[js.Any])
-    
-    inline def setTsconfigRawUndefined: Self = StObject.set(x, "tsconfigRaw", js.undefined)
   }
 }

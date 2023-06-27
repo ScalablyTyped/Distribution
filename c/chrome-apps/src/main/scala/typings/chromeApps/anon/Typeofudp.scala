@@ -182,7 +182,7 @@ trait Typeofudp extends StObject {
     * receive the loopback packets; while on Unix-like systems, the
     * applications with loopback off will not SEND the loopback packets to
     * other applications on the same host.
-    * @see[MSDN]{@link http://goo.gl/6vqbj}
+    * @see http://goo.gl/6vqbj
     *
     * Calling this method does not require multicast permissions.
     *

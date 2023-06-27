@@ -20,7 +20,7 @@ object event {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
+  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
     // eslint-disable-next-line no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -30,7 +30,7 @@ object event {
       Unit
     ]
   ): EventListener[`0`] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener[`0`]]
-  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
+  inline def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
     // eslint-disable-next-line no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,

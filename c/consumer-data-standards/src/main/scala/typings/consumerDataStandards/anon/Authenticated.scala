@@ -15,7 +15,7 @@ trait Authenticated
   var authenticated: Dictk
   
   /**
-    * Rejection counts for all uauthenticated end points
+    * Rejection counts for all unauthenticated end points
     */
   var unauthenticated: Dictk
 }

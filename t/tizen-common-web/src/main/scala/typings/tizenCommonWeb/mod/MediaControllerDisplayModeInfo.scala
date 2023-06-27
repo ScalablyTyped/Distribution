@@ -13,8 +13,8 @@ trait MediaControllerDisplayModeInfo extends StObject {
     *
     * @returns The identifier used to clear the watch subscription.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def addModeChangeListener(listener: MediaControllerDisplayModeChangeCallback): Double
   
@@ -25,7 +25,7 @@ trait MediaControllerDisplayModeInfo extends StObject {
     *
     * @param watchId Watcher identifier.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   def removeModeChangeListener(watchId: Double): Unit
   
@@ -38,16 +38,16 @@ trait MediaControllerDisplayModeInfo extends StObject {
     * @param type Type of display mode, which is requested by a media controller client.
     * @param replyCallback The method to invoke when server responded to change request.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type NotSupportedError, if related ability is not supported by the media controller server.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type NotSupportedError, if related ability is not supported by the media controller server.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def sendRequest(`type`: MediaControllerDisplayModeType, replyCallback: MediaControllerSendCommandSuccessCallback): Unit
   
   /**
     * Type of display mode on the server represented by this object.
     *
-    * @throw WebAPIException with error type UnknownError, if any error occurs.
+    * @throws WebAPIException with error type UnknownError, if any error occurs.
     */
   val `type`: MediaControllerDisplayModeType
 }

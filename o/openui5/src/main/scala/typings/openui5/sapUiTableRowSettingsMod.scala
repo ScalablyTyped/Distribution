@@ -122,21 +122,20 @@ object sapUiTableRowSettingsMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Gets current value of property {@link #getHighlight highlight}.
       *
       * The highlight state of the rows.
       *
       * If the highlight is set to {@link sap.ui.core.MessageType sap.ui.core.MessageType.None} (default), no
-      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link
-      * sap.ui.core.MessageType} or {@link sap.ui.core.IndicationColor}.
+      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
+      * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText
-      * highlightText} property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType},
-      * the `highlightText` property does not need to be set because a default text is used. However, the default
-      * text can be overridden by setting the `highlightText` property. In all other cases the `highlightText`
-      * property must be set.
+      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText highlightText }
+      * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
+      * property does not need to be set because a default text is used. However, the default text can be overridden
+      * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
       *
       * Default value is `"None"`.
       *
@@ -145,7 +144,7 @@ object sapUiTableRowSettingsMod {
     def getHighlight(): String = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Gets current value of property {@link #getHighlightText highlightText}.
       *
@@ -160,7 +159,7 @@ object sapUiTableRowSettingsMod {
     def getHighlightText(): String = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Gets current value of property {@link #getNavigated navigated}.
       *
@@ -176,21 +175,20 @@ object sapUiTableRowSettingsMod {
     def getNavigated(): Boolean = js.native
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * Sets a new value for property {@link #getHighlight highlight}.
       *
       * The highlight state of the rows.
       *
       * If the highlight is set to {@link sap.ui.core.MessageType sap.ui.core.MessageType.None} (default), no
-      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link
-      * sap.ui.core.MessageType} or {@link sap.ui.core.IndicationColor}.
+      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
+      * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText
-      * highlightText} property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType},
-      * the `highlightText` property does not need to be set because a default text is used. However, the default
-      * text can be overridden by setting the `highlightText` property. In all other cases the `highlightText`
-      * property must be set.
+      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText highlightText }
+      * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
+      * property does not need to be set because a default text is used. However, the default text can be overridden
+      * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -205,7 +203,7 @@ object sapUiTableRowSettingsMod {
     sHighlight: String): this.type = js.native
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Sets a new value for property {@link #getHighlightText highlightText}.
       *
@@ -226,7 +224,7 @@ object sapUiTableRowSettingsMod {
     sHighlightText: String): this.type = js.native
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * Sets a new value for property {@link #getNavigated navigated}.
       *
@@ -253,24 +251,23 @@ object sapUiTableRowSettingsMod {
        with ElementSettings {
     
     /**
-      * @SINCE 1.48.0
+      * @since 1.48.0
       *
       * The highlight state of the rows.
       *
       * If the highlight is set to {@link sap.ui.core.MessageType sap.ui.core.MessageType.None} (default), no
-      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link
-      * sap.ui.core.MessageType} or {@link sap.ui.core.IndicationColor}.
+      * highlights are visible. Valid values for the `highlight` property are values of the enumerations {@link sap.ui.core.MessageType }
+      * or {@link sap.ui.core.IndicationColor}.
       *
-      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText
-      * highlightText} property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType},
-      * the `highlightText` property does not need to be set because a default text is used. However, the default
-      * text can be overridden by setting the `highlightText` property. In all other cases the `highlightText`
-      * property must be set.
+      * Accessibility support is provided through the associated {@link sap.ui.table.RowSettings#setHighlightText highlightText }
+      * property. If the `highlight` property is set to a value of {@link sap.ui.core.MessageType}, the `highlightText`
+      * property does not need to be set because a default text is used. However, the default text can be overridden
+      * by setting the `highlightText` property. In all other cases the `highlightText` property must be set.
       */
     var highlight: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.62
+      * @since 1.62
       *
       * Defines the semantics of the {@link sap.ui.table.RowSettings#setHighlight highlight} property for accessibility
       * purposes. It is only used as an invisible text for screen reader support and does not add a tooltip to
@@ -279,7 +276,7 @@ object sapUiTableRowSettingsMod {
     var highlightText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.72
+      * @since 1.72
       *
       * The navigated state of a row.
       *

@@ -67,7 +67,7 @@ object mod {
     
     /**
       * remove empty lines that follow removed full-line comments
-      * @defualt false - do not trim comments
+      * @default false - do not trim comments
       */
     var trim: js.UndefOr[Boolean] = js.undefined
   }

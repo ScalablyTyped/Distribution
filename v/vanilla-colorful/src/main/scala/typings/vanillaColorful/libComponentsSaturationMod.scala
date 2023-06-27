@@ -1,0 +1,19 @@
+package typings.vanillaColorful
+
+import typings.std.ShadowRoot
+import typings.vanillaColorful.libComponentsSliderMod.Slider
+import typings.vanillaColorful.libTypesMod.HsvaColor
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libComponentsSaturationMod {
+  
+  @JSImport("vanilla-colorful/lib/components/saturation", "Saturation")
+  @js.native
+  open class Saturation protected () extends Slider {
+    def this(root: ShadowRoot) = this()
+    
+    var hsva: HsvaColor = js.native
+  }
+}

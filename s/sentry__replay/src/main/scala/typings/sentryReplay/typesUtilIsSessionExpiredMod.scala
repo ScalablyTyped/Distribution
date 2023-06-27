@@ -1,7 +1,7 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.Session
-import typings.sentryReplay.typesTypesMod.Timeouts
+import typings.sentryReplay.typesTypesReplayMod.Session
+import typings.sentryReplay.typesTypesReplayMod.Timeouts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

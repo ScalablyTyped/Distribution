@@ -9,53 +9,53 @@ trait PointProperties
      with GeometryProperties {
   
   /**
-    * The latitude of the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#latitude)
-    */
+  		 * The latitude of the point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#latitude)
+  		 */
   var latitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * The longitude of the point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#longitude)
-    */
+  		 * The longitude of the point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#longitude)
+  		 */
   var longitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * The m-coordinate of the point in map units.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
-    */
+  		 * The m-coordinate of the point in map units.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#m)
+  		 */
   var m: js.UndefOr[Double] = js.undefined
   
   /**
-    * The x-coordinate (easting) of the point in map units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
-    */
+  		 * The x-coordinate (easting) of the point in map units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#x)
+  		 */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * The y-coordinate (northing) of the point in map units.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
-    */
+  		 * The y-coordinate (northing) of the point in map units.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#y)
+  		 */
   var y: js.UndefOr[Double] = js.undefined
   
   /**
-    * The z-coordinate (or elevation) of the point in map units.
-    *
-    * @default undefined
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
-    */
+  		 * The z-coordinate (or elevation) of the point in map units.
+  		 *
+  		 * @default undefined
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#z)
+  		 */
   var z: js.UndefOr[Double] = js.undefined
 }
 object PointProperties {

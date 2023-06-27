@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Many capabilities, such as cross-origin XMLHttpRequests,
   * programmatically injected content scripts require host permissions.
   * For details on the syntax:
-  * @see[Match Patterns]{@link https://developer.chrome.com/apps/match_patterns}
+  * @see https://developer.chrome.com/apps/match_patterns
   * A path is allowed but treated as / *
   * /
 typings.chromeApps.chrome.runtime.UrlMatches

@@ -40,6 +40,8 @@ trait PagerOptions extends StObject {
   var responsive: js.UndefOr[Boolean] = js.undefined
   
   var selectTemplate: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
 }
 object PagerOptions {
   
@@ -118,5 +120,9 @@ object PagerOptions {
     inline def setSelectTemplate(value: String): Self = StObject.set(x, "selectTemplate", value.asInstanceOf[js.Any])
     
     inline def setSelectTemplateUndefined: Self = StObject.set(x, "selectTemplate", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

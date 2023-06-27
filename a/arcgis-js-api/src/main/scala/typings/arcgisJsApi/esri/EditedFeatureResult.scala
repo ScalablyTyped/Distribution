@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditedFeatureResult extends StObject {
   
   /**
-    * Object containing all edited features belonging to the specified layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Object containing all edited features belonging to the specified layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var editedFeatures: EditedFeatureResultEditedFeatures
   
   /**
-    * The layerId of the feature layer where features were edited.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * The layerId of the feature layer where features were edited.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var layerId: Double
 }
 object EditedFeatureResult {

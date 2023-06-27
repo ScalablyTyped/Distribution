@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsLocalConditionalOperation extends StObject {
   
   /**
-    * Performs a conditional If, Then, Else operation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
-    */
+  		 * Performs a conditional If, Then, Else operation.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
+  		 */
   var conditional: Double
   
   /**
-    * Set Null sets identified cell locations to NoData based on a specified criteria.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
-    */
+  		 * Set Null sets identified cell locations to NoData based on a specified criteria.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#localConditionalOperation)
+  		 */
   var setNull: Double
 }
 object rasterFunctionConstantsLocalConditionalOperation {

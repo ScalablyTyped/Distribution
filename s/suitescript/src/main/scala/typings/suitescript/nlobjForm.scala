@@ -248,7 +248,6 @@ Instantiable0[nlobjForm] {
     * @return {nlobjFieldGroup}
     *
     * @method
-    * @memberOf nlobjForm
     *
     * @since 2011.1
     * @param name
@@ -362,7 +361,6 @@ Instantiable0[nlobjForm] {
     * @return {nlobjButton}
     *
     * @method
-    * @memberOf nlobjForm
     *
     * @since 2009.2                                                                           add
     * @param name
@@ -426,7 +424,6 @@ Instantiable0[nlobjForm] {
     * @return an array with names of all tabs
     *
     * @method
-    * @memberOf nlobjForm
     *
     * @since 2012.2
     */

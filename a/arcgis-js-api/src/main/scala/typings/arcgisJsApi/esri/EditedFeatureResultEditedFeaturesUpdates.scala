@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditedFeatureResultEditedFeaturesUpdates extends StObject {
   
   /**
-    * Updated feature as a result of editing a feature that participates in a composite relationship.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Updated feature as a result of editing a feature that participates in a composite relationship.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var current: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
-    * Original feature before the update took place.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
-    */
+  		 * Original feature before the update took place.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#EditedFeatureResult)
+  		 */
   var original: js.UndefOr[js.Array[Graphic]] = js.undefined
 }
 object EditedFeatureResultEditedFeaturesUpdates {

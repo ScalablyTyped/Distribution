@@ -11,10 +11,10 @@ object esriSupportActionsActionToggleMod {
   @JSImport("esri/support/actions/ActionToggle", JSImport.Namespace)
   @js.native
   /**
-    * A customizable toggle used in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget that performs a specific action(s) which can be toggled on/off.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html)
-    */
+  		 * A customizable toggle used in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget that performs a specific action(s) which can be toggled on/off.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html)
+  		 */
   open class ^ ()
     extends StObject
        with ActionToggle {

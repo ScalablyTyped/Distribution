@@ -13,9 +13,9 @@ trait ColorRamp
      with JSONSupport {
   
   /**
-    * A string value representing the color ramp type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ColorRamp.html#type)
-    */
+  		 * A string value representing the color ramp type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ColorRamp.html#type)
+  		 */
   val `type`: algorithmic | multipart = js.native
 }

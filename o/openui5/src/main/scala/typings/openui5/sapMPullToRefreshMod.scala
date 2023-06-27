@@ -20,7 +20,7 @@ object sapMPullToRefreshMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:fde40159afce478eb488ee4d0f9ebb99 Pull to Refresh}
+    * 	{@link https://ui5.sap.com/#/topic/fde40159afce478eb488ee4d0f9ebb99 Pull to Refresh}
     */
   open class default () extends PullToRefresh {
     def this(/**
@@ -138,13 +138,13 @@ object sapMPullToRefreshMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRefresh(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PullToRefresh` itself
       */
@@ -169,7 +169,7 @@ object sapMPullToRefreshMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachRefresh(
       /**
@@ -180,7 +180,7 @@ object sapMPullToRefreshMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.PullToRefresh` itself
       */
@@ -198,13 +198,13 @@ object sapMPullToRefreshMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachRefresh(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -212,7 +212,7 @@ object sapMPullToRefreshMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:refresh refresh} to attached listeners.
       *
@@ -346,6 +346,12 @@ object sapMPullToRefreshMod {
     bShowIcon: Boolean): this.type = js.native
   }
   
+  trait PullToRefresh$RefreshEventParameters extends StObject
+  
+  type PullToRefreshRefreshEvent = typings.openui5.sapUiBaseEventMod.default[PullToRefresh$RefreshEventParameters]
+  
+  type PullToRefreshRefreshEventParameters = PullToRefresh$RefreshEventParameters
+  
   trait PullToRefreshSettings
     extends StObject
        with ControlSettings {
@@ -375,7 +381,9 @@ object sapMPullToRefreshMod {
     /**
       * Event indicates that the user has requested new data
       */
-    var refresh: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var refresh: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Set to true to display an icon/logo. Icon must be set either in the customIcon property or in the CSS
@@ -407,7 +415,7 @@ object sapMPullToRefreshMod {
       
       inline def setIconDensityAwareUndefined: Self = StObject.set(x, "iconDensityAware", js.undefined)
       
-      inline def setRefresh(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+      inline def setRefresh(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
       
       inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
       

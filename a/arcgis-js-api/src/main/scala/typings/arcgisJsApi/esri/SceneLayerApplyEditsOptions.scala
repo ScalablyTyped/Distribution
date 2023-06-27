@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneLayerApplyEditsOptions extends StObject {
   
   /**
-    * Indicates whether the edits can be applied using globalIds of features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits)
-    */
+  		 * Indicates whether the edits can be applied using globalIds of features.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits)
+  		 */
   var globalIdUsed: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the edits should be applied only if all submitted edits succeed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits)
-    */
+  		 * Indicates whether the edits should be applied only if all submitted edits succeed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#applyEdits)
+  		 */
   var rollbackOnFailureEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SceneLayerApplyEditsOptions {

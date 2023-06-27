@@ -11,10 +11,10 @@ object esriViewsMagnifierMod {
   @JSImport("esri/views/Magnifier", JSImport.Namespace)
   @js.native
   /**
-    * The Magnifier allows end users to show a portion of the view as a magnified image.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html)
-    */
+  		 * The Magnifier allows end users to show a portion of the view as a magnified image.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-Magnifier.html)
+  		 */
   open class ^ ()
     extends StObject
        with Magnifier {

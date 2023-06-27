@@ -30,10 +30,27 @@ type GetScrollPositionFunction = js.Function0[Double]
 type GetScrollRestorationKeyFunction = js.Function2[/* location */ Location, /* matches */ js.Array[UseMatchesMatch], String | Null]
 
 /**
-  * Options for a navigate() call for a Link navigation
+  * Options for a navigate() call for a normal (non-submission) navigation
   */
 type LinkNavigateOptions = BaseNavigateOptions
+
+/**
+  * Options for a fetch() load
+  */
+type LoadFetchOptions = BaseNavigateOrFetchOptions
+
+type RouterFetchOptions = LoadFetchOptions | SubmitFetchOptions
 
 type RouterNavigateOptions = LinkNavigateOptions | SubmissionNavigateOptions
 
 type RouterSubscriber = js.Function1[/* state */ RouterState, Unit]
+
+/**
+  * Options for a navigate() call for a submission navigation
+  */
+type SubmissionNavigateOptions = BaseNavigateOptions & BaseSubmissionOptions
+
+/**
+  * Options for a fetch() submission
+  */
+type SubmitFetchOptions = BaseNavigateOrFetchOptions & BaseSubmissionOptions

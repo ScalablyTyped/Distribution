@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface. */
+/**
+  * Contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTitleElement)
+  */
 @js.native
 trait HTMLTitleElement
   extends StObject
@@ -32,7 +36,11 @@ trait HTMLTitleElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /** Retrieves or sets the text of the object as a string. */
+  /**
+    * Retrieves or sets the text of the object as a string.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTitleElement/text)
+    */
   /* standard dom */
   var text: java.lang.String = js.native
 }

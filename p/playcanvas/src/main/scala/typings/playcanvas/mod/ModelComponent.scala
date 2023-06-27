@@ -407,13 +407,13 @@ open class ModelComponent protected () extends Component {
   def onInsertChild(): Unit = js.native
   
   /**
-    * @param {Layer} layer - The layer that was added.
+    * @param {import('../../../scene/layer.js').Layer} layer - The layer that was added.
     * @private
     */
   /* private */ var onLayerAdded: Any = js.native
   
   /**
-    * @param {Layer} layer - The layer that was removed.
+    * @param {import('../../../scene/layer.js').Layer} layer - The layer that was removed.
     * @private
     */
   /* private */ var onLayerRemoved: Any = js.native

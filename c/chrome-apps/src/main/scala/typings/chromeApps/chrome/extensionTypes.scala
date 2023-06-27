@@ -130,7 +130,7 @@ object extensionTypes {
       * Be careful using the code parameter.
       * Incorrect use of it may open your app
       * to cross site scripting attacks.
-      * @see[More information]{@link https://en.wikipedia.org/wiki/Cross-site_scripting}
+      * @see https://en.wikipedia.org/wiki/Cross-site_scripting
       */
     var code: String
   }
@@ -218,7 +218,7 @@ object extensionTypes {
       
       /**
         * The frame where the script or CSS should be injected. Defaults to 0 (the top-level frame).
-        * @see[frame ref]{@link https://developer.chrome.com/apps/webNavigation#frame_ids}
+        * @see https://developer.chrome.com/apps/webNavigation#frame_ids
         * @since Chrome 50.
         */
       var frameId: js.UndefOr[integer] = js.undefined

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup__plugin-node-resolve
 
-Typings are for version 15.0.2
+Typings are for version 15.1.0
 
 ## Library description:
 Locate and bundle third-party dependencies in node_modules

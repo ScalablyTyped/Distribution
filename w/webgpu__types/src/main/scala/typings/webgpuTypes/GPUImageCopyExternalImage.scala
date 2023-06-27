@@ -1,7 +1,5 @@
 package typings.webgpuTypes
 
-import typings.std.HTMLVideoElement
-import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,13 +23,45 @@ trait GPUImageCopyExternalImage extends StObject {
   
   /**
     * The source of the image copy. The copy source data is captured at the moment that
-    * {@link GPUQueue#copyExternalImageToTexture} is issued.
+    * {@link GPUQueue#copyExternalImageToTexture} is issued. Source size is defined by source
+    * type, given by this table:
+    *
+    * <table class=data>
+    * <thead>
+    * <tr>
+    * <th>Source type
+    * <th>Width
+    * <th>Height
+    * </thead>
+    * <tbody>
+    * <tr>
+    * <td>{@link ImageBitmap}
+    * <td>{@link ImageBitmap#width|ImageBitmap.width}
+    * <td>{@link ImageBitmap#height|ImageBitmap.height}
+    * <tr>
+    * <td>{@link HTMLVideoElement}
+    * <td>video/intrinsic width|intrinsic width of the frame
+    * <td>video/intrinsic height|intrinsic height of the frame
+    * <tr>
+    * <td>{@link VideoFrame}
+    * <td>{@link VideoFrame#codedWidth|VideoFrame.codedWidth}
+    * <td>{@link VideoFrame#codedHeight|VideoFrame.codedHeight}
+    * <tr>
+    * <td>{@link HTMLCanvasElement}
+    * <td>{@link HTMLCanvasElement#width|HTMLCanvasElement.width}
+    * <td>{@link HTMLCanvasElement#height|HTMLCanvasElement.height}
+    * <tr>
+    * <td>{@link OffscreenCanvas}
+    * <td>{@link OffscreenCanvas#width|OffscreenCanvas.width}
+    * <td>{@link OffscreenCanvas#height|OffscreenCanvas.height}
+    * </tbody>
+    * </table>
     */
-  var source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas
+  var source: GPUImageCopyExternalImageSource
 }
 object GPUImageCopyExternalImage {
   
-  inline def apply(source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): GPUImageCopyExternalImage = {
+  inline def apply(source: GPUImageCopyExternalImageSource): GPUImageCopyExternalImage = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUImageCopyExternalImage]
   }
@@ -47,6 +77,6 @@ object GPUImageCopyExternalImage {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setSource(value: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GPUImageCopyExternalImageSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

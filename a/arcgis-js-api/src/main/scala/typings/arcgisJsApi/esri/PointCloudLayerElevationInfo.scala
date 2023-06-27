@@ -13,26 +13,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointCloudLayerElevationInfo extends StObject {
   
   /**
-    * Defines how the points are placed on the vertical axis (z).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#elevationInfo)
-    */
+  		 * Defines how the points are placed on the vertical axis (z).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#elevationInfo)
+  		 */
   var mode: String
   
   /**
-    * An elevation offset, which is added to the vertical position of each point.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#elevationInfo)
-    */
+  		 * An elevation offset, which is added to the vertical position of each point.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#elevationInfo)
+  		 */
   var offset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The unit for `offset` values.
-    *
-    * @default meters
-    *
-    * [Read more...](global.html#unit)
-    */
+  		 * The unit for `offset` values.
+  		 *
+  		 * @default meters
+  		 *
+  		 * [Read more...](global.html#unit)
+  		 */
   var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }
 object PointCloudLayerElevationInfo {

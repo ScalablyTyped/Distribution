@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Provides methods to manipulate <marquee> elements.
   * @deprecated
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMarqueeElement)
   */
 @js.native
 trait HTMLMarqueeElement

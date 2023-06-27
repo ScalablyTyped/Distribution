@@ -38,6 +38,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ErrorIdToken
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Canceled
   - typings.devtoolsProtocol.devtoolsProtocolStrings.RpPageNotVisible
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SilentMediationFailure
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyCookiesBlocked
 */
 trait FederatedAuthRequestIssueReason extends StObject
 object FederatedAuthRequestIssueReason {
@@ -93,6 +95,10 @@ object FederatedAuthRequestIssueReason {
   inline def RpPageNotVisible: typings.devtoolsProtocol.devtoolsProtocolStrings.RpPageNotVisible = "RpPageNotVisible".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RpPageNotVisible]
   
   inline def ShouldEmbargo: typings.devtoolsProtocol.devtoolsProtocolStrings.ShouldEmbargo = "ShouldEmbargo".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ShouldEmbargo]
+  
+  inline def SilentMediationFailure: typings.devtoolsProtocol.devtoolsProtocolStrings.SilentMediationFailure = "SilentMediationFailure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SilentMediationFailure]
+  
+  inline def ThirdPartyCookiesBlocked: typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyCookiesBlocked = "ThirdPartyCookiesBlocked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ThirdPartyCookiesBlocked]
   
   inline def TooManyRequests: typings.devtoolsProtocol.devtoolsProtocolStrings.TooManyRequests = "TooManyRequests".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.TooManyRequests]
   

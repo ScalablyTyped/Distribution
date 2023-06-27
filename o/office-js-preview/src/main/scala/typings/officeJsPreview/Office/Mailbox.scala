@@ -795,10 +795,10 @@ trait Mailbox extends StObject {
   /**
     * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
     * To learn more about item multi-select, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
     *
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
@@ -809,20 +809,18 @@ trait Mailbox extends StObject {
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
-    *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-    *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
-    * 
-    * @beta
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+    *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+    *        messages were selected.
     */
-  def getSelectedItemsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[js.Object]], Unit]): Unit = js.native
+  def getSelectedItemsAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[SelectedItemDetails]], Unit]): Unit = js.native
   /**
     * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
     * To learn more about item multi-select, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
     *
     * @remarks
-    * [Api set: Mailbox preview]
+    * [Api set: Mailbox 1.13]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
@@ -833,15 +831,13 @@ trait Mailbox extends StObject {
     * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
-    *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-    *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
-    * 
-    * @beta
+    *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+    *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+    *        messages were selected.
     */
   def getSelectedItemsAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[js.Object]], Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[SelectedItemDetails]], Unit]
   ): Unit = js.native
   
   /**

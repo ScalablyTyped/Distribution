@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__app-check-compat
 
-Typings are for version 0.3.6
+Typings are for version 0.3.7
 
 ## Library description:
 A compat App Check package for new firebase packages

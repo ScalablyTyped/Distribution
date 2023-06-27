@@ -164,7 +164,7 @@ object sapMIconTabSeparatorMod {
     def getVisible(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders the item in the IconTabHeader.
       */
@@ -176,7 +176,7 @@ object sapMIconTabSeparatorMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Renders this item in the IconTabSelectList.
       */

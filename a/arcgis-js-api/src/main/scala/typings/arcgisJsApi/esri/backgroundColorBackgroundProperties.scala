@@ -9,12 +9,12 @@ trait backgroundColorBackgroundProperties
      with BackgroundProperties {
   
   /**
-    * The color of the background.
-    *
-    * @default black
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
-    */
+  		 * The color of the background.
+  		 *
+  		 * @default black
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html#color)
+  		 */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object backgroundColorBackgroundProperties {

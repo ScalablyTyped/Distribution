@@ -21,11 +21,23 @@ object devLibSyntaxMod {
   
   trait Options extends StObject {
     
-    var acorn: js.UndefOr[typings.micromarkUtilEventsToAcorn.mod.Acorn] = js.undefined
+    /**
+      * Acorn parser to use (optional).
+      */
+    var acorn: js.UndefOr[Acorn | Null] = js.undefined
     
-    var acornOptions: js.UndefOr[typings.acorn.mod.Options] = js.undefined
+    /**
+      * Configuration for acorn (default: `{ecmaVersion: 2020, locations: true,
+      * sourceType: 'module'}`).
+      *
+      * All fields except `locations` can be set.
+      */
+    var acornOptions: js.UndefOr[AcornOptions | Null] = js.undefined
     
-    var addResult: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Whether to add `estree` fields to tokens with results from acorn.
+      */
+    var addResult: js.UndefOr[Boolean | Null] = js.undefined
   }
   object Options {
     
@@ -37,15 +49,21 @@ object devLibSyntaxMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setAcorn(value: typings.micromarkUtilEventsToAcorn.mod.Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
+      inline def setAcorn(value: Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
       
-      inline def setAcornOptions(value: typings.acorn.mod.Options): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      inline def setAcornNull: Self = StObject.set(x, "acorn", null)
+      
+      inline def setAcornOptions(value: AcornOptions): Self = StObject.set(x, "acornOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAcornOptionsNull: Self = StObject.set(x, "acornOptions", null)
       
       inline def setAcornOptionsUndefined: Self = StObject.set(x, "acornOptions", js.undefined)
       
       inline def setAcornUndefined: Self = StObject.set(x, "acorn", js.undefined)
       
       inline def setAddResult(value: Boolean): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
+      
+      inline def setAddResultNull: Self = StObject.set(x, "addResult", null)
       
       inline def setAddResultUndefined: Self = StObject.set(x, "addResult", js.undefined)
     }

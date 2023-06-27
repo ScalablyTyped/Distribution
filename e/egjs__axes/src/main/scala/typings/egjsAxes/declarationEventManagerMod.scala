@@ -30,6 +30,8 @@ object declarationEventManagerMod {
     
     def hold(pos: Axis, option: ChangeEventOption): Unit = js.native
     
+    var holdingCount: Double = js.native
+    
     def setAnimationManager(animationManager: AnimationManager): Unit = js.native
     
     def triggerAnimationEnd(): Unit = js.native

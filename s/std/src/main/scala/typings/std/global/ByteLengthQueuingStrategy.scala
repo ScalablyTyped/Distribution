@@ -14,11 +14,13 @@ open class ByteLengthQueuingStrategy protected ()
   /* standard dom */
   def this(init: QueuingStrategyInit) = this()
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/highWaterMark) */
   /* standard dom */
   /* CompleteClass */
   @JSName("highWaterMark")
   override val highWaterMark_ByteLengthQueuingStrategy: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/size) */
   /* standard dom */
   /* CompleteClass */
   @JSName("size")

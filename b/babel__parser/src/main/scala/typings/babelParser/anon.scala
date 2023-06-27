@@ -35,6 +35,24 @@ object anon {
     }
   }
   
+  trait DeprecatedAssertSyntax extends StObject {
+    
+    var deprecatedAssertSyntax: Boolean
+  }
+  object DeprecatedAssertSyntax {
+    
+    inline def apply(deprecatedAssertSyntax: Boolean): DeprecatedAssertSyntax = {
+      val __obj = js.Dynamic.literal(deprecatedAssertSyntax = deprecatedAssertSyntax.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DeprecatedAssertSyntax]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedAssertSyntax] (val x: Self) extends AnyVal {
+      
+      inline def setDeprecatedAssertSyntax(value: Boolean): Self = StObject.set(x, "deprecatedAssertSyntax", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Errors extends StObject {
     
     var errors: js.Array[ParseError]

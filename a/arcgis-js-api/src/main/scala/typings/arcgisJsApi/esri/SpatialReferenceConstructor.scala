@@ -13,17 +13,17 @@ trait SpatialReferenceConstructor
      with Instantiable1[/* properties */ SpatialReferenceProperties, SpatialReference] {
   
   /**
-    * A convenience spatial reference instance for WGS84.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WGS84)
-    */
+  		 * A convenience spatial reference instance for WGS84.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WGS84)
+  		 */
   var WGS84: SpatialReference = js.native
   
   /**
-    * A convenience spatial reference instance for Web Mercator.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WebMercator)
-    */
+  		 * A convenience spatial reference instance for Web Mercator.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#WebMercator)
+  		 */
   var WebMercator: SpatialReference = js.native
   
   def fromJSON(json: Any): SpatialReference = js.native

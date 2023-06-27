@@ -131,7 +131,9 @@ inline def fsOpenFiles(): js.Promise[js.Array[FsOpenFilesData]] = ^.asInstanceOf
 inline def fsOpenFiles(cb: js.Function1[/* data */ js.Array[FsOpenFilesData], Any]): js.Promise[js.Array[FsOpenFilesData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsOpenFiles")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FsOpenFilesData]]]
 
 inline def fsSize(): js.Promise[js.Array[FsSizeData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsSize")().asInstanceOf[js.Promise[js.Array[FsSizeData]]]
-inline def fsSize(cb: js.Function1[/* data */ js.Array[FsSizeData], Any]): js.Promise[js.Array[FsSizeData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsSize")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FsSizeData]]]
+inline def fsSize(drive: String): js.Promise[js.Array[FsSizeData]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsSize")(drive.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FsSizeData]]]
+inline def fsSize(drive: String, cb: js.Function1[/* data */ js.Array[FsSizeData], Any]): js.Promise[js.Array[FsSizeData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fsSize")(drive.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[FsSizeData]]]
+inline def fsSize(drive: Unit, cb: js.Function1[/* data */ js.Array[FsSizeData], Any]): js.Promise[js.Array[FsSizeData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fsSize")(drive.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[FsSizeData]]]
 
 inline def fsStats(): js.Promise[FsStatsData] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsStats")().asInstanceOf[js.Promise[FsStatsData]]
 inline def fsStats(cb: js.Function1[/* data */ FsStatsData, Any]): js.Promise[FsStatsData] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsStats")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FsStatsData]]

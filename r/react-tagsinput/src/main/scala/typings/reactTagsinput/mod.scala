@@ -70,6 +70,8 @@ object mod {
     
     var tagProps: js.UndefOr[TagProps] = js.undefined
     
+    var validate: js.UndefOr[js.Function1[/* tag */ Tag, Boolean]] = js.undefined
+    
     var validationRegex: js.UndefOr[js.RegExp] = js.undefined
     
     var value: js.Array[Tag]
@@ -187,6 +189,10 @@ object mod {
       inline def setTagProps(value: TagProps): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
       
       inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
+      
+      inline def setValidate(value: /* tag */ Tag => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
       inline def setValidationRegex(value: js.RegExp): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
       

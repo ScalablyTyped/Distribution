@@ -154,7 +154,7 @@ object sapUxapObjectPageHeaderActionButtonMod {
     def getHideText(): Boolean = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getImportance importance}.
       *
@@ -205,7 +205,7 @@ object sapUxapObjectPageHeaderActionButtonMod {
     bHideText: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getImportance importance}.
       *
@@ -253,7 +253,7 @@ object sapUxapObjectPageHeaderActionButtonMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Determines the order in which the button overflows.
       */

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMCalloutBase extends StObject {
   
   /**
-    * The leader offset which is an offset value defining the distance (in points) between the anchor point and the beginning of the drawn leader.
-    */
+  			 * The leader offset which is an offset value defining the distance (in points) between the anchor point and the beginning of the drawn leader.
+  			 */
   var leaderOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The leader tolerance which is the closest distance (in points) to the text the anchor point can be for the callout to draw.
-    */
+  			 * The leader tolerance which is the closest distance (in points) to the text the anchor point can be for the callout to draw.
+  			 */
   var leaderTolerance: js.UndefOr[Double] = js.undefined
   
   var `type`: String

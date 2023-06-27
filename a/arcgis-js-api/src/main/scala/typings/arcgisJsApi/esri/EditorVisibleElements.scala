@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorVisibleElements extends StObject {
   
   /**
-    * (Since 4.26) Indicates whether to display tooltips while sketching.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * (Since 4.26) Indicates whether to display tooltips while sketching.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var sketchTooltipControls: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether snapping controls will be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * Indicates whether snapping controls will be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var snappingControls: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The elements contained within the snapping controls.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
-    */
+  		 * The elements contained within the snapping controls.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#VisibleElements)
+  		 */
   var snappingControlsElements: js.UndefOr[VisibleElementsSnappingControlsElements] = js.undefined
 }
 object EditorVisibleElements {

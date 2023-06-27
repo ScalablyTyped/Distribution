@@ -310,23 +310,23 @@ object Ribbon {
   trait ApplicationTab extends StObject {
     
     /** Specifies the ribbon backstage page items.
-      * @Default {Object}
+      * @default {Object}
       */
     var backstageSettings: js.UndefOr[ApplicationTabBackstageSettings] = js.undefined
     
     /** Specifies the ID of ul list to create application menu in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var menuItemID: js.UndefOr[String] = js.undefined
     
     /** Specifies the menu members, events by using the menu settings for the menu in the application tab.
-      * @Default {Object}
+      * @default {Object}
       */
     var menuSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the application menu or backstage page. Specify the type of application tab as &quot;ej.Ribbon.ApplicationTabType.Menu&quot; to render the application menu or
       * &quot;ej.Ribbon.ApplicationTabType.Backstage&quot; to render backstage page in the ribbon control.
-      * @Default {ej.Ribbon.ApplicationTabType.Menu}
+      * @default {ej.Ribbon.ApplicationTabType.Menu}
       */
     var `type`: js.UndefOr[ApplicationTabType | String] = js.undefined
   }
@@ -361,27 +361,27 @@ object Ribbon {
   trait ApplicationTabBackstageSettings extends StObject {
     
     /** Specifies the width of backstage page header that contains tabs and buttons.
-      * @Default {null}
+      * @default {null}
       */
     var headerWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the height of ribbon backstage page.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the ribbon backstage page with its tab and button elements.
-      * @Default {Array}
+      * @default {Array}
       */
     var pages: js.UndefOr[js.Array[ApplicationTabBackstageSettingsPage]] = js.undefined
     
     /** Specifies the display text of application tab.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of ribbon backstage page.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -422,28 +422,28 @@ object Ribbon {
   trait ApplicationTabBackstageSettingsPage extends StObject {
     
     /** Specifies the id of HTML elements like div,ul, etc., as ribbon backstage page's tab content.
-      * @Default {null}
+      * @default {null}
       */
     var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the separator between backstage page's tab and button elements.
-      * @Default {false}
+      * @default {false}
       */
     var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the id for ribbon backstage page's tab and button elements.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the type for ribbon backstage page's contents. Set &quot;ej.Ribbon.BackStageItemType.Tab&quot; to render the tab or &quot;ej.Ribbon.BackStageItemType.Button&quot; to
       * render the button.
-      * @Default {ej.Ribbon.ItemType.Tab}
+      * @default {ej.Ribbon.ItemType.Tab}
       */
     var itemType: js.UndefOr[ItemType | String] = js.undefined
     
     /** Specifies the text for ribbon backstage page's tab header and button elements.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -628,12 +628,12 @@ object Ribbon {
   trait CollapsePinSettings extends StObject {
     
     /** Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the collapse pin .
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
   }
@@ -660,17 +660,17 @@ object Ribbon {
   trait ContextualTab extends StObject {
     
     /** Specifies the backgroundColor of the contextual tabs and tab set in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor of the contextual tabs and tab set in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the tabs to present in the contextual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
-      * @Default {Array}
+      * @default {Array}
       */
     var tabs: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -825,12 +825,12 @@ object Ribbon {
   trait ExpandPinSettings extends StObject {
     
     /** Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the expand pin.
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
   }
@@ -1041,12 +1041,12 @@ object Ribbon {
   trait Model extends StObject {
     
     /** Enables the ribbon resize feature.allowResizing is a deprecated property of isResponsive.
-      * @Default {false}
+      * @default {false}
       */
     var allowResizing: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the application tab to contain application menu or backstage page in the ribbon control.
-      * @Default {Object}
+      * @default {Object}
       */
     var applicationTab: js.UndefOr[ApplicationTab] = js.undefined
     
@@ -1060,7 +1060,7 @@ object Ribbon {
     
     /** Specifies the height, width, enableRTL, showRoundedCorner,enabled,cssClass property to the controls in the ribbon commonly andit will work only when those properties are not
       * defined in buttonSettings and content defaults.
-      * @Default {Object}
+      * @default {Object}
       */
     var buttonDefaults: js.UndefOr[Any] = js.undefined
     
@@ -1069,18 +1069,18 @@ object Ribbon {
     var collapse: js.UndefOr[js.Function1[/* e */ CollapseEventArgs, Unit]] = js.undefined
     
     /** Sets custom setting to the collapsible pin in the ribbon.
-      * @Default {Object}
+      * @default {Object}
       */
     var collapsePinSettings: js.UndefOr[CollapsePinSettings] = js.undefined
     
     /** Set collapsible property as true to render ribbon in initially collapsed state.
-      * @Default {false}
+      * @default {false}
       */
     var collapsible: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the contextual tabs and tab set to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and
       * contextual tab set.
-      * @Default {Array}
+      * @default {Array}
       */
     var contextualTabs: js.UndefOr[js.Array[ContextualTab]] = js.undefined
     
@@ -1097,22 +1097,22 @@ object Ribbon {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
-      * @Default {0}
+      * @default {0}
       */
     var disabledItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Set enableOnDemand as true to load ribbon tab and backstage contents while corresponding item clicked.
-      * @Default {false}
+      * @default {false}
       */
     var enableOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Align content in the ribbon control from right to left by setting the property as true.
-      * @Default {false}
+      * @default {false}
       */
     var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var enabledItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
@@ -1121,7 +1121,7 @@ object Ribbon {
     var expand: js.UndefOr[js.Function1[/* e */ ExpandEventArgs, Unit]] = js.undefined
     
     /** Sets custom setting to the expandable pin in the ribbon.
-      * @Default {Object}
+      * @default {Object}
       */
     var expandPinSettings: js.UndefOr[ExpandPinSettings] = js.undefined
     
@@ -1138,7 +1138,7 @@ object Ribbon {
     var groupExpand: js.UndefOr[js.Function1[/* e */ GroupExpandEventArgs, Unit]] = js.undefined
     
     /** When set to true, adapts the Ribbon layout to fit the screen size of devices on which it renders.
-      * @Default {false}
+      * @default {false}
       */
     var isResponsive: js.UndefOr[Boolean] = js.undefined
     
@@ -1148,7 +1148,7 @@ object Ribbon {
     
     /** Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to
       * a particular country or region and  it will need to use the user's preference.
-      * @Default {en-US}
+      * @default {en-US}
       */
     var locale: js.UndefOr[String] = js.undefined
     
@@ -1157,12 +1157,12 @@ object Ribbon {
     var qatMenuItemClick: js.UndefOr[js.Function1[/* e */ QatMenuItemClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the index of the ribbon tab to select the given index tab item in the ribbon control.
-      * @Default {1}
+      * @default {1}
       */
     var selectedItemIndex: js.UndefOr[Double] = js.undefined
     
     /** Property to enable the ribbon quick access toolbar.
-      * @Default {false}
+      * @default {false}
       */
     var showQAT: js.UndefOr[Boolean] = js.undefined
     
@@ -1187,7 +1187,7 @@ object Ribbon {
     var tabSelect: js.UndefOr[js.Function1[/* e */ TabSelectEventArgs, Unit]] = js.undefined
     
     /** Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
-      * @Default {Array}
+      * @default {Array}
       */
     var tabs: js.UndefOr[js.Array[typings.ejWebAll.ej.Ribbon.Tab]] = js.undefined
     
@@ -1196,7 +1196,7 @@ object Ribbon {
     var toggleButtonClick: js.UndefOr[js.Function1[/* e */ ToggleButtonClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the width to the ribbon control. You can set width in string or number format.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -1409,17 +1409,17 @@ object Ribbon {
   trait Tab extends StObject {
     
     /** Specifies single group or multiple groups and its contents to each tab in the ribbon control.
-      * @Default {Array}
+      * @default {Array}
       */
     var groups: js.UndefOr[js.Array[TabsGroup]] = js.undefined
     
     /** Specifies the ID for each tab's content panel.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the text of the tab in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
   }
@@ -1739,42 +1739,42 @@ object Ribbon {
     
     /** Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is &quot;ej.Ribbon.AlignType.Rows&quot; and for column type is
       * &quot;ej.Ribbon.alignType.columns&quot;.
-      * @Default {ej.Ribbon.AlignType.Rows}
+      * @default {ej.Ribbon.AlignType.Rows}
       */
     var alignType: js.UndefOr[AlignType | String] = js.undefined
     
     /** Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
-      * @Default {Array}
+      * @default {Array}
       */
     var content: js.UndefOr[js.Array[TabsGroupsContent]] = js.undefined
     
     /** Specifies the ID of custom items to be placed in the groups.
-      * @Default {null}
+      * @default {null}
       */
     var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML contents to place into the groups.
-      * @Default {null}
+      * @default {null}
       */
     var customContent: js.UndefOr[String] = js.undefined
     
     /** Specifies the group expander for groups in the ribbon control. Set &quot;true&quot; to enable the group expander.
-      * @Default {false}
+      * @default {false}
       */
     var enableGroupExpander: js.UndefOr[Boolean] = js.undefined
     
     /** Sets custom setting to the groups in the ribbon control.
-      * @Default {Object}
+      * @default {Object}
       */
     var groupExpanderSettings: js.UndefOr[TabsGroupsGroupExpanderSettings] = js.undefined
     
     /** Specifies the text to the groups in the ribbon control.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the custom items such as div, table, controls by using the &quot;custom&quot; type.
-      * @Default {null}
+      * @default {null}
       */
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -1827,12 +1827,12 @@ object Ribbon {
   trait TabsGroupsContent extends StObject {
     
     /** Specifies the height, width, type, isBig property to the controls in the group commonly.
-      * @Default {Object}
+      * @default {Object}
       */
     var defaults: js.UndefOr[TabsGroupsContentDefaults] = js.undefined
     
     /** Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
-      * @Default {Array}
+      * @default {Array}
       */
     var groups: js.UndefOr[js.Array[TabsGroupsContentGroup]] = js.undefined
   }
@@ -1861,22 +1861,22 @@ object Ribbon {
   trait TabsGroupsContentDefaults extends StObject {
     
     /** Specifies the controls height such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the controls size such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
-      * @Default {false}
+      * @default {false}
       */
     var isBig: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the controls type such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
-      * @Default {ej.Ribbon.Type.Button}
+      * @default {ej.Ribbon.Type.Button}
       */
     var `type`: js.UndefOr[String] = js.undefined
     
     /** Specifies the controls width such as Syncfusion button,split button,dropdown list,toggle button in the subgroup of  the ribbon tab.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -1911,110 +1911,110 @@ object Ribbon {
   trait TabsGroupsContentGroup extends StObject {
     
     /** Specifies the Syncfusion button members, events by using this buttonSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** It is used to set the count of gallery contents in a row.
-      * @Default {null}
+      * @default {null}
       */
     var columns: js.UndefOr[Double] = js.undefined
     
     /** Specifies the custom items such as div, table, controls as custom controls with the type &quot;ej.Ribbon.Type.Custom&quot; in the groups.
-      * @Default {null}
+      * @default {null}
       */
     var contentID: js.UndefOr[String] = js.undefined
     
     /** Specifies the CSS class property to apply styles to the button, split, dropdown controls in the groups.
-      * @Default {null}
+      * @default {null}
       */
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion button and menu as gallery extra items.
-      * @Default {Array}
+      * @default {Array}
       */
     var customGalleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsCustomGalleryItem]] = js.undefined
     
     /** Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and HTML support are also provided for title and content.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[TabsGroupsContentGroupsCustomToolTip] = js.undefined
     
     /** Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var dropdownSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set &quot;true&quot; to enable the
       * separator.
-      * @Default {false}
+      * @default {false}
       */
     var enableSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the count of gallery contents in a row, when the gallery is in expanded state.
-      * @Default {null}
+      * @default {null}
       */
     var expandedColumns: js.UndefOr[Double] = js.undefined
     
     /** Defines each gallery content.
-      * @Default {Array}
+      * @default {Array}
       */
     var galleryItems: js.UndefOr[js.Array[TabsGroupsContentGroupsGalleryItem]] = js.undefined
     
     /** Specifies the Id for button, split button, dropdown list, toggle button, gallery, custom controls in the sub groups.
-      * @Default {null}
+      * @default {null}
       */
     var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the size for button, split button controls. Set &quot;true&quot; for big size and &quot;false&quot; for small size.
-      * @Default {null}
+      * @default {null}
       */
     var isBig: js.UndefOr[Boolean] = js.undefined
     
     /** When isMobileOnly is true,its shows in mobile toolbar.isResponsive should be true for using this property.
-      * @Default {false}
+      * @default {false}
       */
     var isMobileOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of each gallery content.
-      * @Default {null}
+      * @default {null}
       */
     var itemHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the width of each gallery content.
-      * @Default {null}
+      * @default {null}
       */
     var itemWidth: js.UndefOr[String | Double] = js.undefined
     
     /** To add,show and hide controls in Quick Access toolbar.
-      * @Default {ej.Ribbon.QuickAccessMode.None}
+      * @default {ej.Ribbon.QuickAccessMode.None}
       */
     var quickAccessMode: js.UndefOr[QuickAccessMode | String] = js.undefined
     
     /** Specifies the Syncfusion split button members, events by using this splitButtonSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var splitButtonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the text for button, split button, toggle button controls in the sub groups.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var toggleButtonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
     
     /** Specifies the type as &quot;ej.Ribbon.Type.Button&quot; or &quot;ej.Ribbon.Type.SplitButton&quot; or &quot;ej.Ribbon.Type.DropDownList&quot; or
       * &quot;ej.Ribbon.Type.ToggleButton&quot; or &quot;ej.Ribbon.Type.Custom&quot; or &quot;ej.Ribbon.Type.Gallery&quot; to render button, split, dropdown, toggle button, gallery,
       * custom controls.
-      * @Default {ej.Ribbon.Type.Button}
+      * @default {ej.Ribbon.Type.Button}
       */
     var `type`: js.UndefOr[typings.ejWebAll.ej.Type | String] = js.undefined
   }
@@ -2121,37 +2121,37 @@ object Ribbon {
   trait TabsGroupsContentGroupsCustomGalleryItem extends StObject {
     
     /** Specifies the Syncfusion button members, events by using buttonSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.Button to render Syncfusion button and menu.
-      * @Default {ej.Ribbon.CustomItemType.Button}
+      * @default {ej.Ribbon.CustomItemType.Button}
       */
     var customItemType: js.UndefOr[CustomItemType | String] = js.undefined
     
     /** Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Specifies the UL list id to render menu as gallery extra item.
-      * @Default {null}
+      * @default {null}
       */
     var menuId: js.UndefOr[String] = js.undefined
     
     /** Specifies the Syncfusion menu members, events by using menuSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var menuSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the text for gallery extra item's button.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the tooltip for gallery extra item's button.
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
   }
@@ -2198,17 +2198,17 @@ object Ribbon {
   trait TabsGroupsContentGroupsCustomToolTip extends StObject {
     
     /** Sets content to the custom tooltip. Text and HTML support are provided for content.
-      * @Default {null}
+      * @default {null}
       */
     var content: js.UndefOr[String] = js.undefined
     
     /** Sets icon to the custom tooltip content.
-      * @Default {null}
+      * @default {null}
       */
     var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Sets title to the custom tooltip. Text and HTML support are provided for title and the title is in bold for text format.
-      * @Default {null}
+      * @default {null}
       */
     var title: js.UndefOr[String] = js.undefined
   }
@@ -2239,22 +2239,22 @@ object Ribbon {
   trait TabsGroupsContentGroupsGalleryItem extends StObject {
     
     /** Specifies the Syncfusion button members, events by using buttonSettings.
-      * @Default {Object}
+      * @default {Object}
       */
     var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets text for the gallery content.
-      * @Default {null}
+      * @default {null}
       */
     var text: js.UndefOr[String] = js.undefined
     
     /** Sets tooltip for the gallery content.
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
   }
@@ -2289,12 +2289,12 @@ object Ribbon {
   trait TabsGroupsGroupExpanderSettings extends StObject {
     
     /** Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
-      * @Default {Object}
+      * @default {Object}
       */
     var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the group expander of the group.
-      * @Default {null}
+      * @default {null}
       */
     var toolTip: js.UndefOr[String] = js.undefined
   }

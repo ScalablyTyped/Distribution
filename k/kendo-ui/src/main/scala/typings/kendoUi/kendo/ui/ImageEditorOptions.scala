@@ -12,6 +12,8 @@ trait ImageEditorOptions extends StObject {
   
   var height: js.UndefOr[Double | String] = js.undefined
   
+  var imageLabel: js.UndefOr[String] = js.undefined
+  
   var imageLoaded: js.UndefOr[js.Function1[/* e */ ImageEditorImageLoadedEvent, Unit]] = js.undefined
   
   var imageRendered: js.UndefOr[js.Function1[/* e */ ImageEditorImageRenderedEvent, Unit]] = js.undefined
@@ -49,6 +51,10 @@ object ImageEditorOptions {
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setImageLabel(value: String): Self = StObject.set(x, "imageLabel", value.asInstanceOf[js.Any])
+    
+    inline def setImageLabelUndefined: Self = StObject.set(x, "imageLabel", js.undefined)
     
     inline def setImageLoaded(value: /* e */ ImageEditorImageLoadedEvent => Unit): Self = StObject.set(x, "imageLoaded", js.Any.fromFunction1(value))
     

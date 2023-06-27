@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D) */
 @js.native
 trait OffscreenCanvasRenderingContext2D
   extends StObject
@@ -27,6 +28,7 @@ trait OffscreenCanvasRenderingContext2D
   /* standard dom */
   val canvas: OffscreenCanvas = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D/commit) */
   /* standard dom */
   def commit(): Unit = js.native
 }

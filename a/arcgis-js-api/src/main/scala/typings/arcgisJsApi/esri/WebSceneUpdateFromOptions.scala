@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebSceneUpdateFromOptions extends StObject {
   
   /**
-    * Do not update the initial environment from the view, defaults to false.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
-    */
+  		 * Do not update the initial environment from the view, defaults to false.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
+  		 */
   var environmentExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Do not update the thumbnail from the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
-    */
+  		 * Do not update the thumbnail from the view.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
+  		 */
   var thumbnailExcluded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The size of the thumbnail.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
-    */
+  		 * The size of the thumbnail.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
+  		 */
   var thumbnailSize: js.UndefOr[WebSceneUpdateFromOptionsThumbnailSize] = js.undefined
   
   /**
-    * Do not update the initial viewpoint from the view, defaults to false.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
-    */
+  		 * Do not update the initial viewpoint from the view, defaults to false.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
+  		 */
   var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
 }
 object WebSceneUpdateFromOptions {

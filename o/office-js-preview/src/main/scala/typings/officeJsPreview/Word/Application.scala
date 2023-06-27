@@ -37,8 +37,7 @@ trait Application
     * Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     *
     * @param base64File Required. The template file.
     */

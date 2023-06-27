@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-decode-string
 
-Typings are for version 1.0.2
+Typings are for version 1.1.0
 
 ## Library description:
 micromark utility to decode markdown strings

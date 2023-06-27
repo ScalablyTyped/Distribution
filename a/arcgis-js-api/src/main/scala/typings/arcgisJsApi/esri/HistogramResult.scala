@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HistogramResult extends StObject {
   
   /**
-    * An array of objects representing each bin in the histogram.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
-    */
+  		 * An array of objects representing each bin in the histogram.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
+  		 */
   var bins: js.Array[Bin]
   
   /**
-    * The maximum value returned by the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
-    */
+  		 * The maximum value returned by the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
+  		 */
   var maxValue: Double
   
   /**
-    * The minimum value returned by the field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
-    */
+  		 * The minimum value returned by the field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
+  		 */
   var minValue: Double
   
   /**
-    * The number used to normalize all values when `percent-of-total` is specified as the `normalizationType`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
-    */
+  		 * The number used to normalize all values when `percent-of-total` is specified as the `normalizationType`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html#HistogramResult)
+  		 */
   var normalizationTotal: js.UndefOr[Double] = js.undefined
 }
 object HistogramResult {

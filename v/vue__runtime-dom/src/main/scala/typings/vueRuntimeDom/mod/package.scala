@@ -47,6 +47,7 @@ import typings.vueRuntimeCore.anon.Required
 import typings.vueRuntimeCore.mod.AsyncComponentLoader
 import typings.vueRuntimeCore.mod.AsyncComponentOptions
 import typings.vueRuntimeCore.mod.BaseTransitionProps
+import typings.vueRuntimeCore.mod.BooleanKey
 import typings.vueRuntimeCore.mod.ClassComponent
 import typings.vueRuntimeCore.mod.CompiledSlotDescriptor
 import typings.vueRuntimeCore.mod.Component
@@ -663,7 +664,7 @@ inline def defineOptions[RawBindings, D, C /* <: ComputedOptions */, M /* <: Met
 ]) & Emits
 ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def defineProps[TypeProps](): DefineProps_[TypeProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")().asInstanceOf[DefineProps_[TypeProps]]
+inline def defineProps[TypeProps](): DefineProps_[TypeProps, BooleanKey[TypeProps, /* keyof TypeProps */ String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")().asInstanceOf[DefineProps_[TypeProps, BooleanKey[TypeProps, /* keyof TypeProps */ String]]]
 inline def defineProps[PP /* <: ComponentObjectPropsOptions[Data] */](props: PP): Prettify[ExtractPropTypes[PP]] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")(props.asInstanceOf[js.Any]).asInstanceOf[Prettify[ExtractPropTypes[PP]]]
 inline def defineProps[PropNames /* <: String */](props: js.Array[PropNames]): Prettify[
 /* import warning: importer.ImportType#apply Failed type conversion: {[ key in PropNames ]:? any} */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineProps")(props.asInstanceOf[js.Any]).asInstanceOf[Prettify[
@@ -1495,7 +1496,7 @@ inline def withCtx(fn: js.Function, ctx: Unit, isNonScopedSlot: Boolean): js.Fun
 inline def withCtx(fn: js.Function, ctx: ComponentInternalInstance): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 inline def withCtx(fn: js.Function, ctx: ComponentInternalInstance, isNonScopedSlot: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("withCtx")(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], isNonScopedSlot.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 
-inline def withDefaults[Props, Defaults /* <: InferDefaults[Props] */](props: Props, defaults: Defaults): PropsWithDefaults[Props, Defaults] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(props.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[PropsWithDefaults[Props, Defaults]]
+inline def withDefaults[T, BKeys /* <: /* keyof T */ String */, Defaults /* <: InferDefaults[T] */](props: DefineProps_[T, BKeys], defaults: Defaults): PropsWithDefaults[T, Defaults, BKeys] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(props.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[PropsWithDefaults[T, Defaults, BKeys]]
 
 inline def withDirectives[T /* <: VNode[RendererNode, RendererElement, StringDictionary[Any]] */](vnode: T, directives: DirectiveArguments): T = (^.asInstanceOf[js.Dynamic].applyDynamic("withDirectives")(vnode.asInstanceOf[js.Any], directives.asInstanceOf[js.Any])).asInstanceOf[T]
 

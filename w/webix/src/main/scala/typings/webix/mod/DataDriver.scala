@@ -8,7 +8,7 @@ trait DataDriver extends StObject {
   
   var csv: obj
   
-  var excel: String
+  var excel: obj
   
   var html: obj
   
@@ -31,7 +31,7 @@ object DataDriver {
     
     inline def setCsv(value: obj): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    inline def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: obj): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
     inline def setHtml(value: obj): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

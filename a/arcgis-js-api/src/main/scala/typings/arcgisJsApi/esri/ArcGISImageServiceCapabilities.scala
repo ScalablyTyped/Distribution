@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISImageServiceCapabilities extends StObject {
   
   /**
-    * Describes [mensuration operations](https://developers.arcgis.com/rest/services-reference/enterprise/measure.htm) supported by the ImageryLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Describes [mensuration operations](https://developers.arcgis.com/rest/services-reference/enterprise/measure.htm) supported by the ImageryLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var mensuration: ArcGISImageServiceCapabilitiesMensuration
   
   /**
-    * Describes operations supported by the ImageryLayer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Describes operations supported by the ImageryLayer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var operations: ArcGISImageServiceCapabilitiesOperations
   
   /**
-    * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations supported by the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
-    */
+  		 * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html) operations supported by the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
+  		 */
   var query: ArcGISImageServiceCapabilitiesQuery
 }
 object ArcGISImageServiceCapabilities {

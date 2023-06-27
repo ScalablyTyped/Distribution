@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoreStyle extends StObject {
   
   /**
-    * Get the current style object.
+    * Assign a new stylesheet to replace the existing one (if provided)
+    * and return the style.
     */
-  def style(): ElementStylesheetStyle | ElementStylesheetCSS = js.native
-  def style(sheet: String): Stylesheet = js.native
-  def style(sheet: js.Array[Stylesheet]): Stylesheet = js.native
-  /**
-    * Assign a new stylesheet to replace the existing one.
-    */
-  def style(sheet: Stylesheet): Stylesheet = js.native
+  def style(): Style = js.native
+  def style(sheet: String): Style = js.native
+  def style(sheet: js.Array[Stylesheet]): Style = js.native
+  def style(sheet: Stylesheet): Style = js.native
 }

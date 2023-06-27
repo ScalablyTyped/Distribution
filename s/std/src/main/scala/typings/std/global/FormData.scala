@@ -12,4 +12,6 @@ open class FormData ()
   extends StObject
      with typings.std.FormData {
   def this(form: typings.std.HTMLFormElement) = this()
+  def this(form: Unit, submitter: typings.std.HTMLElement) = this()
+  def this(form: typings.std.HTMLFormElement, submitter: typings.std.HTMLElement) = this()
 }

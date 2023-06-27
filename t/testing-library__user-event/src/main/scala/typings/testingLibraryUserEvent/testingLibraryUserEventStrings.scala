@@ -1529,6 +1529,12 @@ object testingLibraryUserEventStrings {
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
+  sealed trait search
+    extends StObject
+       with tag
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait secondary
     extends StObject
        with _MouseButton

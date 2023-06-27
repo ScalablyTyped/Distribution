@@ -48,7 +48,7 @@ trait Sorters extends StObject {
   
   /**
     * Whether messages for child entities belonging to the same business object as the requested or changed
-    * resources are updated. It is considered only if {@link sap.ui.model.odata.MessageScope.BusinessObject}
+    * resources are updated. It is considered only if {@link sap.ui.model.odata.MessageScope.BusinessObject }
     * is set using {@link #setMessageScope} and if the OData service supports message scope.
     */
   var updateAggregatedMessages: js.UndefOr[Boolean] = js.undefined

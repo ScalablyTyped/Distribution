@@ -41,7 +41,7 @@ trait Typeofdisplay extends StObject {
   def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = js.native
   
   /**
-    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+    * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
     * Enables/disables the unified desktop feature.
     * Note that this simply enables the feature, but will not change the actual desktop mode.
@@ -52,7 +52,7 @@ trait Typeofdisplay extends StObject {
   def enableUnifiedDesktop(enabled: Boolean): Unit = js.native
   
   /**
-    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+    * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
     * @description Requests the layout info for all displays.
     * @since Chrome 53
     * @export
@@ -113,7 +113,7 @@ trait Typeofdisplay extends StObject {
   def overscanCalibrationStart(id: String): Unit = js.native
   
   /**
-    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+    * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
     * Set the layout for all displays.
     * Any display not included will use the default layout.
@@ -127,7 +127,7 @@ trait Typeofdisplay extends StObject {
   def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = js.native
   
   /**
-    * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
+    * @requires CrOS Kiosk apps | WebUI -This is only available to Chrome OS Kiosk apps and Web UI.
     * @description
     * Updates the properties for the display specified by **id**,
     * according to the information provided in **info**.
@@ -141,7 +141,7 @@ trait Typeofdisplay extends StObject {
   
   def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = js.native
   /**
-    * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
+    * @requires CrOS Kiosk app -Chrome OS Kiosk apps only
     * @since Chrome 65.
     * @description
     * Sets the display mode to the specified mirror mode.

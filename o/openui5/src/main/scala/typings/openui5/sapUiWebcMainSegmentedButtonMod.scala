@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.SelectedItem
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -8,6 +7,7 @@ import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiWebcMainLibraryMod.ISegmentedButtonItem
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -155,13 +155,13 @@ object sapUiWebcMainSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.SegmentedButton` itself
       */
@@ -187,7 +187,7 @@ object sapUiWebcMainSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit]
     ): this.type = js.native
     def attachSelectionChange(
       /**
@@ -198,7 +198,7 @@ object sapUiWebcMainSegmentedButtonMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.webc.main.SegmentedButton` itself
       */
@@ -224,13 +224,13 @@ object sapUiWebcMainSegmentedButtonMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit]
     ): this.type = js.native
     def detachSelectionChange(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ SegmentedButtonSelectionChangeEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -238,17 +238,19 @@ object sapUiWebcMainSegmentedButtonMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def fireSelectionChange(): this.type = js.native
-    def fireSelectionChange(/**
+    def fireSelectionChange(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: SelectedItem): this.type = js.native
+    mParameters: SegmentedButton$SelectionChangeEventParameters
+    ): this.type = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.
@@ -260,7 +262,7 @@ object sapUiWebcMainSegmentedButtonMod {
     def getAccessibleName(): String = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * `SegmentedButton` must not be stretched in Form because ResizeHandler is used internally in order to
       * manage the width of the SegmentedButton depending on the container size
@@ -380,6 +382,33 @@ object sapUiWebcMainSegmentedButtonMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait SegmentedButton$SelectionChangeEventParameters extends StObject {
+    
+    /**
+      * the pressed item.
+      */
+    var selectedItem: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object SegmentedButton$SelectionChangeEventParameters {
+    
+    inline def apply(): SegmentedButton$SelectionChangeEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SegmentedButton$SelectionChangeEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedButton$SelectionChangeEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setSelectedItem(value: HTMLElement): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    }
+  }
+  
+  type SegmentedButtonSelectionChangeEvent = typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectionChangeEventParameters]
+  
+  type SegmentedButtonSelectionChangeEventParameters = SegmentedButton$SelectionChangeEventParameters
+  
   trait SegmentedButtonSettings
     extends StObject
        with ControlSettings {
@@ -403,7 +432,12 @@ object sapUiWebcMainSegmentedButtonMod {
     /**
       * Fired when the selected item changes.
       */
-    var selectionChange: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var selectionChange: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectionChangeEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines the width of the control
@@ -434,7 +468,9 @@ object sapUiWebcMainSegmentedButtonMod {
       
       inline def setItemsVarargs(value: ISegmentedButtonItem*): Self = StObject.set(x, "items", js.Array(value*))
       
-      inline def setSelectionChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[SegmentedButton$SelectionChangeEventParameters] => Unit
+      ): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
       inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       

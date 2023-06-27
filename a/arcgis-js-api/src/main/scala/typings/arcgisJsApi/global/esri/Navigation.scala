@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("__esri.Navigation")
 @js.native
 /**
-  * Navigation related configuration settings on the View.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html)
-  */
+		 * Navigation related configuration settings on the View.
+		 *
+		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html)
+		 */
 open class Navigation ()
   extends StObject
      with typings.arcgisJsApi.esri.Navigation {

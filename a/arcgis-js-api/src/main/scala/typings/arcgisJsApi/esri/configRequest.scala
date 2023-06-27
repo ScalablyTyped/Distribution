@@ -10,74 +10,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait configRequest extends StObject {
   
   /**
-    * List of domain suffixes known to support https.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * List of domain suffixes known to support https.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var httpsDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * **Since:** 4.8  Allows developers to modify requests before or after they are sent.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * **Since:** 4.8	 Allows developers to modify requests before or after they are sent.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var interceptors: js.UndefOr[js.Array[RequestInterceptor]] = js.undefined
   
   /**
-    * Maximum number of characters allowed in the URL for HTTP GET requests made by [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html).
-    *
-    * @default 2000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * Maximum number of characters allowed in the URL for HTTP GET requests made by [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html).
+  		 *
+  		 * @default 2000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var maxUrlLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * **Since:** 4.24  The fetch and image network request priority.
-    *
-    * @default high
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * **Since:** 4.24	The fetch and image network request priority.
+  		 *
+  		 * @default high
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var priority: js.UndefOr[auto | high | low] = js.undefined
   
   /**
-    * A proxy rule defines a proxy for a set of resources with an identical URL prefix.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * A proxy rule defines a proxy for a set of resources with an identical URL prefix.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var proxyRules: js.UndefOr[js.Array[configRequestProxyRules]] = js.undefined
   
   /**
-    * Resource proxy for your application.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * Resource proxy for your application.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var proxyUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Number of milliseconds [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html) will wait for response from a server.
-    *
-    * @default 60000
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * Number of milliseconds [request](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html) will wait for response from a server.
+  		 *
+  		 * @default 60000
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var timeout: js.UndefOr[Double] = js.undefined
   
   /**
-    * **Since:** 4.9  Indicates whether cross origin requests made to the associated server should include credentials such as cookies and authorization headers.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * **Since:** 4.9	 Indicates whether cross-origin requests made to the associated server should include credentials such as cookies and authorization headers.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var trustedServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * **Since:** 4.5  Indicates whether `esri/request` will request a credential from `IdentityManager`.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
-    */
+  		 * **Since:** 4.5	 Indicates whether `esri/request` will request a credential from `IdentityManager`.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
+  		 */
   var useIdentity: js.UndefOr[Boolean] = js.undefined
 }
 object configRequest {

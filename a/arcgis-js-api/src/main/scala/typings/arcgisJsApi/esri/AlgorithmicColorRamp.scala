@@ -14,33 +14,33 @@ trait AlgorithmicColorRamp
      with ColorRamp {
   
   /**
-    * The algorithm used to generate the colors between the `fromColor` and `toColor`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#algorithm)
-    */
+  		 * The algorithm used to generate the colors between the `fromColor` and `toColor`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#algorithm)
+  		 */
   var algorithm: `cie-lab` | `lab-lch` | hsv = js.native
   
   /**
-    * The first color in the color ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#fromColor)
-    */
+  		 * The first color in the color ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#fromColor)
+  		 */
   var fromColor: Color_ = js.native
   
   /**
-    * The last color in the color ramp.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#toColor)
-    */
+  		 * The last color in the color ramp.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#toColor)
+  		 */
   var toColor: Color_ = js.native
   
   /**
-    * A string value representing the color ramp type.
-    *
-    * @default algorithmic
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#type)
-    */
+  		 * A string value representing the color ramp type.
+  		 *
+  		 * @default algorithmic
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AlgorithmicColorRamp.html#type)
+  		 */
   @JSName("type")
   val type_AlgorithmicColorRamp: algorithmic = js.native
 }

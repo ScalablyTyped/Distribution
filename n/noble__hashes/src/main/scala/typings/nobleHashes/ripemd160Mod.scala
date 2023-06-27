@@ -28,7 +28,7 @@ object ripemd160Mod {
   
   object ripemd160 {
     
-    inline def apply(message: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def apply(msg: Input): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @JSImport("@noble/hashes/ripemd160", "ripemd160")
     @js.native

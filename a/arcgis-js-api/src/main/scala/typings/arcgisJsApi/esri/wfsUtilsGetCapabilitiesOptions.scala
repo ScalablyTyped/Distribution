@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait wfsUtilsGetCapabilitiesOptions extends StObject {
   
   /**
-    * A list of key-value pairs of parameters to append to the url.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getCapabilities)
-    */
+  		 * A list of key-value pairs of parameters to append to the url.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getCapabilities)
+  		 */
   var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
-    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the executions of the remote method.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getCapabilities)
-    */
+  		 * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the executions of the remote method.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ogc-wfsUtils.html#getCapabilities)
+  		 */
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object wfsUtilsGetCapabilitiesOptions {

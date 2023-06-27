@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "yup" : "1.1.1"
+      "yup" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "yup" : "1.1.1"
+      "yup" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

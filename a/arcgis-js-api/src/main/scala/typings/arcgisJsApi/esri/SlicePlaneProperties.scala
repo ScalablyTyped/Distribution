@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlicePlaneProperties extends StObject {
   
   /**
-    * The heading angle (in degrees) of the slice plane.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#heading)
-    */
+  		 * The heading angle (in degrees) of the slice plane.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#heading)
+  		 */
   var heading: js.UndefOr[Double] = js.undefined
   
   /**
-    * The height of the slice plane.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#height)
-    */
+  		 * The height of the slice plane.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#height)
+  		 */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * A point specifying the position of the center of the plane.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#position)
-    */
+  		 * A point specifying the position of the center of the plane.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#position)
+  		 */
   var position: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The tilt angle (in degrees) of the slice plane.
-    *
-    * @default 0
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#tilt)
-    */
+  		 * The tilt angle (in degrees) of the slice plane.
+  		 *
+  		 * @default 0
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#tilt)
+  		 */
   var tilt: js.UndefOr[Double] = js.undefined
   
   /**
-    * The width of the slice plane.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#width)
-    */
+  		 * The width of the slice plane.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-SlicePlane.html#width)
+  		 */
   var width: js.UndefOr[Double] = js.undefined
 }
 object SlicePlaneProperties {

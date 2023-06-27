@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthoringInfoField1 extends StObject {
   
   /**
-    * Describes the class breaks generated for this field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
-    */
+  		 * Describes the class breaks generated for this field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
+  		 */
   var classBreakInfos: js.UndefOr[js.Array[AuthoringInfoField1ClassBreakInfos]] = js.undefined
   
   /**
-    * The name of a numeric field.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
-    */
+  		 * The name of a numeric field.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
+  		 */
   var field: String
   
   /**
-    * The label used to describe the field or variable in the legend.
-    *
-    * [Read more...](global.html)
-    */
+  		 * The label used to describe the field or variable in the legend.
+  		 *
+  		 * [Read more...](global.html)
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of a numeric field used to normalize the given `field`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
-    */
+  		 * The name of a numeric field used to normalize the given `field`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
+  		 */
   var normalizationField: js.UndefOr[String] = js.undefined
 }
 object AuthoringInfoField1 {

@@ -24,8 +24,14 @@ object anon {
     def next(value: NextValueType): js.Promise[Unit] = js.native
     
     /**
-    	Provide a `callback` that will be called when `.complete()` or `.return()` is called, or when `break` is called within a [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loop.
+    	Provide an error to the iterator. Returns a promise that resolves when the error is consumed.
     	*/
-    def onCleanup(callback: js.Function0[Any]): Unit = js.native
+    def nextError(): js.Promise[Unit] = js.native
+    def nextError(error: Any): js.Promise[Unit] = js.native
+    
+    /**
+    	A promise that resolves when `.complete()` or `.return()` is called, or when `break` is called within a [`for await...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of) loop.
+    	*/
+    var onCleanup: js.Promise[Unit] = js.native
   }
 }

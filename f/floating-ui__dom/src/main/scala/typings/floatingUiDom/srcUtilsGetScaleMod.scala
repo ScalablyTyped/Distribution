@@ -13,23 +13,6 @@ object srcUtilsGetScaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  object FALLBACK_SCALE {
-    
-    @JSImport("@floating-ui/dom/src/utils/getScale", "FALLBACK_SCALE")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@floating-ui/dom/src/utils/getScale", "FALLBACK_SCALE.x")
-    @js.native
-    def x: Double = js.native
-    inline def x_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@floating-ui/dom/src/utils/getScale", "FALLBACK_SCALE.y")
-    @js.native
-    def y: Double = js.native
-    inline def y_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("y")(x.asInstanceOf[js.Any])
-  }
-  
   inline def getScale(element: VirtualElement): Coords = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(element.asInstanceOf[js.Any]).asInstanceOf[Coords]
   inline def getScale(element: Element): Coords = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(element.asInstanceOf[js.Any]).asInstanceOf[Coords]
 }

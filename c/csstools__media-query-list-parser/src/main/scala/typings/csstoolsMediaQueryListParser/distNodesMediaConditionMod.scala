@@ -3,7 +3,7 @@ package typings.csstoolsMediaQueryListParser
 import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ComponentValue
 import typings.csstoolsCssParserAlgorithms.distConsumeConsumeComponentBlockFunctionMod.ContainerNode
 import typings.csstoolsCssTokenizer.distInterfacesTokenMod.CSSToken
-import typings.csstoolsMediaQueryListParser.anon.NodeMediaConditionWalkerEntry
+import typings.csstoolsMediaQueryListParser.anon.ParentState
 import typings.csstoolsMediaQueryListParser.csstoolsMediaQueryListParserBooleans.`false`
 import typings.csstoolsMediaQueryListParser.distNodesMediaConditionListMod.MediaConditionListWithAnd
 import typings.csstoolsMediaQueryListParser.distNodesMediaConditionListMod.MediaConditionListWithOr
@@ -16,6 +16,7 @@ import typings.csstoolsMediaQueryListParser.distNodesMediaQueryMod._MediaQueryWi
 import typings.csstoolsMediaQueryListParser.distNodesMediaQueryMod._MediaQueryWithoutTypeWalkerEntry
 import typings.csstoolsMediaQueryListParser.distNodesMediaQueryMod._MediaQueryWithoutTypeWalkerParent
 import typings.csstoolsMediaQueryListParser.distUtilNodeTypeMod.NodeType
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,12 +55,10 @@ object distNodesMediaConditionMod {
     
     var `type`: NodeType = js.native
     
-    def walk(
-      cb: js.Function2[
-          /* entry */ NodeMediaConditionWalkerEntry, 
-          /* index */ Double | String, 
-          Boolean | Unit
-        ]
+    def walk[T /* <: Record[String, Any] */](cb: js.Function2[/* entry */ ParentState[T], /* index */ Double | String, Boolean | Unit]): js.UndefOr[`false`] = js.native
+    def walk[T /* <: Record[String, Any] */](
+      cb: js.Function2[/* entry */ ParentState[T], /* index */ Double | String, Boolean | Unit],
+      state: T
     ): js.UndefOr[`false`] = js.native
   }
   /* static members */
@@ -80,7 +79,7 @@ object distNodesMediaConditionMod {
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionListMod.MediaConditionListWithAnd
     - typings.csstoolsMediaQueryListParser.distNodesMediaConditionListMod.MediaConditionListWithOr
   */
-  type MediaConditionWalkerEntry = _MediaConditionWalkerEntry | js.Array[ComponentValue] | ComponentValue
+  type MediaConditionWalkerEntry = _MediaConditionWalkerEntry | ComponentValue
   
   /* Rewritten from type alias, can be one of: 
     - typings.csstoolsMediaQueryListParser.distNodesMediaNotMod.MediaNotWalkerParent

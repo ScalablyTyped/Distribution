@@ -161,8 +161,7 @@ object window {
     var customButtons: js.Array[Button] = js.native
     
     /**
-      * Set the dialog name when opening
-      * the dialog for telemetry
+      * Non-localized name of the dialog for identifying in telemetry events.
       */
     var dialogName: js.UndefOr[String] = js.native
     

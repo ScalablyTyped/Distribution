@@ -81,7 +81,7 @@ trait MouseEvent1 extends StObject {
   
   /**
     * A value representing the amount the mouse wheel has moved, only valid for
-    * {@link mousewheel} events.
+    * {@link EVENT_MOUSEWHEEL} events.
     *
     * @type {number}
     */

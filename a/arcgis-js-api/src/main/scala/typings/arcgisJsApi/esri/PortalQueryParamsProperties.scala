@@ -19,67 +19,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PortalQueryParamsProperties extends StObject {
   
   /**
-    * An array of categories stored within the item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#categories)
-    */
+  		 * An array of categories stored within the item.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#categories)
+  		 */
   var categories: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   
   /**
-    * Only relevant when querying for [PortalItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#extent)
-    */
+  		 * Only relevant when querying for [PortalItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#extent)
+  		 */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
-    * Structured filter to use instead of the [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query) property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#filter)
-    */
+  		 * Structured filter to use instead of the [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query) property.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#filter)
+  		 */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results to be included in the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results) set response.
-    *
-    * @default 10
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num)
-    */
+  		 * The maximum number of results to be included in the [result](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results) set response.
+  		 *
+  		 * @default 10
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#num)
+  		 */
   var num: js.UndefOr[Double] = js.undefined
   
   /**
-    * The query string used for the search.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query)
-    */
+  		 * The query string used for the search.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#query)
+  		 */
   var query: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-delimited list of fields to sort.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortField)
-    */
+  		 * A comma-delimited list of fields to sort.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortField)
+  		 */
   var sortField: js.UndefOr[
     title | uploaded | modified | username | created | typings.arcgisJsApi.arcgisJsApiStrings.`type` | owner | `avg-rating` | `num-ratings` | `num-comments` | `num-views`
   ] = js.undefined
   
   /**
-    * The order in which to sort the results.
-    *
-    * @default asc
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortOrder)
-    */
+  		 * The order in which to sort the results.
+  		 *
+  		 * @default asc
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#sortOrder)
+  		 */
   var sortOrder: js.UndefOr[asc_ | desc_] = js.undefined
   
   /**
-    * The index of the first entry in the result set response.
-    *
-    * @default 1
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start)
-    */
+  		 * The index of the first entry in the result set response.
+  		 *
+  		 * @default 1
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryParams.html#start)
+  		 */
   var start: js.UndefOr[Double] = js.undefined
 }
 object PortalQueryParamsProperties {

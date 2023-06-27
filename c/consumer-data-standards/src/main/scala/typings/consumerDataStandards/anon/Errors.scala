@@ -15,7 +15,7 @@ trait Errors
   var errors: Dictk
   
   /**
-    * Number of calls resulting in a rejection due to server execution over time
+    * Number of calls rejected due to traffic thresholds over time
     */
   var rejections: Dictk
 }

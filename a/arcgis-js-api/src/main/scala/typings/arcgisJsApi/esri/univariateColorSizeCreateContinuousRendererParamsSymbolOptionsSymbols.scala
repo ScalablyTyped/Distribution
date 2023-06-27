@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols extends StObject {
   
   /**
-    * The symbol to use for the above portion of the `above-and-below` visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * The symbol to use for the above portion of the `above-and-below` visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var above: Symbol
   
   /**
-    * The symbol to use for the below portion of the `above-and-below` visualization.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
-    */
+  		 * The symbol to use for the below portion of the `above-and-below` visualization.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+  		 */
   var below: Symbol
 }
 object univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols {

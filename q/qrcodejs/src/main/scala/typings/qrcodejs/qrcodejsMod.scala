@@ -102,7 +102,7 @@ object qrcodejsMod {
     
     var useSVG: js.UndefOr[Boolean] = js.undefined
     
-    /** @efault 256 */
+    /** @default 256 */
     var width: js.UndefOr[Double] = js.undefined
   }
   object Options {

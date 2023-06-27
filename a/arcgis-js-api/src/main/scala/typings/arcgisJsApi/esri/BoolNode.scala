@@ -12,10 +12,10 @@ trait BoolNode
   var `type`: boolean
   
   /**
-    * Values are `true` or `false`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BoolNode)
-    */
+  		 * Values are `true` or `false`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#BoolNode)
+  		 */
   var value: Boolean
 }
 object BoolNode {

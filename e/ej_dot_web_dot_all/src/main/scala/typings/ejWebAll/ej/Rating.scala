@@ -260,7 +260,7 @@ object Rating {
   trait Model extends StObject {
     
     /** Enables the rating control with reset button.It can be used to reset the rating control value.
-      * @Default {true}
+      * @default {true}
       */
     var allowReset: js.UndefOr[Boolean] = js.undefined
     
@@ -285,37 +285,37 @@ object Rating {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
-      * @Default {false}
+      * @default {false}
       */
     var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the rating control.
-      * @Default {true}
+      * @default {true}
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Rating control wrapper.
-      * @Default {null}
+      * @default {null}
       */
     var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to rating control.
-      * @Default {{}}
+      * @default {{}}
       */
     var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Specifies the value to be increased while navigating between shapes(stars) in Rating control.
-      * @Default {1}
+      * @default {1}
       */
     var incrementStep: js.UndefOr[Double] = js.undefined
     
     /** Allow to render the maximum number of Rating shape(star).
-      * @Default {5}
+      * @default {5}
       */
     var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Allow to render the minimum number of Rating shape(star).
-      * @Default {0}
+      * @default {0}
       */
     var minValue: js.UndefOr[Double] = js.undefined
     
@@ -332,42 +332,42 @@ object Rating {
     var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Specifies the orientation of Rating control. See Orientation
-      * @Default {ej.Rating.Orientation.Horizontal}
+      * @default {ej.Rating.Orientation.Horizontal}
       */
     var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See Precision
-      * @Default {full}
+      * @default {full}
       */
     var precision: js.UndefOr[Precision | String] = js.undefined
     
     /** Interaction with Rating control can be prevented by enabling this API.
-      * @Default {false}
+      * @default {false}
       */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** To specify the height of each shape in Rating control.
-      * @Default {23}
+      * @default {23}
       */
     var shapeHeight: js.UndefOr[Double] = js.undefined
     
     /** To specify the width of each shape in Rating control.
-      * @Default {23}
+      * @default {23}
       */
     var shapeWidth: js.UndefOr[Double] = js.undefined
     
     /** Enables the tooltip option.Currently selected value will be displayed in tooltip.
-      * @Default {true}
+      * @default {true}
       */
     var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** To specify the number of stars to be selected while rendering.
-      * @Default {1}
+      * @default {1}
       */
     var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the Rating control wrapper.
-      * @Default {null}
+      * @default {null}
       */
     var width: js.UndefOr[String] = js.undefined
   }

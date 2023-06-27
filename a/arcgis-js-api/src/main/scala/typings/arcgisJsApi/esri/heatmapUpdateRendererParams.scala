@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait heatmapUpdateRendererParams extends StObject {
   
   /**
-    * Indicates how much to fade the lower color stops with transparency to create a fuzzy boundary on the edge of the heatmap.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#updateRenderer)
-    */
+  		 * Indicates how much to fade the lower color stops with transparency to create a fuzzy boundary on the edge of the heatmap.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#updateRenderer)
+  		 */
   var fadeRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The heatmap renderer for which to add or remove opacity.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#updateRenderer)
-    */
+  		 * The heatmap renderer for which to add or remove opacity.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#updateRenderer)
+  		 */
   var renderer: HeatmapRenderer
 }
 object heatmapUpdateRendererParams {

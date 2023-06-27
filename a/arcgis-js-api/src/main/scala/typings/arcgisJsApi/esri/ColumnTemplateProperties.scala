@@ -9,19 +9,19 @@ trait ColumnTemplateProperties
      with ColumnTemplateBaseProperties {
   
   /**
-    * Indicates whether the field is editable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html#editable)
-    */
+  		 * Indicates whether the field is editable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html#editable)
+  		 */
   var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether a field requires a value.
-    *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html#required)
-    */
+  		 * Indicates whether a field requires a value.
+  		 *
+  		 * @default false
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-support-ColumnTemplate.html#required)
+  		 */
   var required: js.UndefOr[Boolean] = js.undefined
 }
 object ColumnTemplateProperties {

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait rasterFunctionConstantsNoDataInterpretation extends StObject {
   
   /**
-    * The NoData values you specify for each band must occur in the same pixel for the output image to contain the NoData pixel.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
-    */
+  		 * The NoData values you specify for each band must occur in the same pixel for the output image to contain the NoData pixel.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
+  		 */
   var matchAll: Double
   
   /**
-    * If the NoData value you specify occurs for a cell in a specified band.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
-    */
+  		 * If the NoData value you specify occurs for a cell in a specified band.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-rasterFunctionConstants.html#noDataInterpretation)
+  		 */
   var matchAny: Double
 }
 object rasterFunctionConstantsNoDataInterpretation {

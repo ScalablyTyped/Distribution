@@ -10,33 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolylinePropertiestypepol extends StObject {
   
   /**
-    * Indicates if the geometry has M values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
-    */
+  		 * Indicates if the geometry has M values.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasM)
+  		 */
   var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates if the geometry has z-values (elevation).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
-    */
+  		 * Indicates if the geometry has z-values (elevation).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#hasZ)
+  		 */
   var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of paths, or line segments, that make up the polyline.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#paths)
-    */
+  		 * An array of paths, or line segments, that make up the polyline.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#paths)
+  		 */
   var paths: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.undefined
   
   /**
-    * The spatial reference of the geometry.
-    *
-    * @default WGS84 (wkid: 4326)
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
-    */
+  		 * The spatial reference of the geometry.
+  		 *
+  		 * @default WGS84 (wkid: 4326)
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
+  		 */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   var `type`: polyline

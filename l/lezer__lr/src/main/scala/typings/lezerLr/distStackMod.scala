@@ -5,6 +5,7 @@ import typings.lezerLr.distParseMod.LRParser
 import typings.lezerLr.lezerLrInts.`100`
 import typings.lezerLr.lezerLrInts.`120`
 import typings.lezerLr.lezerLrInts.`190`
+import typings.lezerLr.lezerLrInts.`2000`
 import typings.lezerLr.lezerLrInts.`200`
 import typings.lezerLr.lezerLrInts.`300`
 import typings.lezerLr.lezerLrInts.`4`
@@ -97,6 +98,7 @@ object distStackMod {
     - typings.lezerLr.lezerLrInts.`4`
     - typings.lezerLr.lezerLrInts.`300`
     - typings.lezerLr.lezerLrInts.`120`
+    - typings.lezerLr.lezerLrInts.`2000`
   */
   trait Recover extends StObject
   object Recover {
@@ -110,6 +112,8 @@ object distStackMod {
     inline def MaxInsertStackDepth: `300` = 300.asInstanceOf[`300`]
     
     inline def MaxNext: `4` = 4.asInstanceOf[`4`]
+    
+    inline def MinBigReduction: `2000` = 2000.asInstanceOf[`2000`]
     
     inline def Reduce: `100` = 100.asInstanceOf[`100`]
   }

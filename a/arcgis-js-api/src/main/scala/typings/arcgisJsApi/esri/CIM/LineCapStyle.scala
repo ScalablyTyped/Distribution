@@ -11,24 +11,24 @@ sealed trait LineCapStyle extends StObject
 object LineCapStyle extends StObject {
   
   /**
-    * Stroke ends in butt caps.
-    */
+  			 * Stroke ends in butt caps.
+  			 */
   @js.native
   sealed trait Butt
     extends StObject
        with LineCapStyle
   
   /**
-    * Stroke ends in round caps.
-    */
+  			 * Stroke ends in round caps.
+  			 */
   @js.native
   sealed trait Round
     extends StObject
        with LineCapStyle
   
   /**
-    * Stroke ends in square caps.
-    */
+  			 * Stroke ends in square caps.
+  			 */
   @js.native
   sealed trait Square
     extends StObject

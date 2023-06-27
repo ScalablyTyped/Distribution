@@ -11,8 +11,7 @@ trait CanonicalPath extends StObject {
     * is a map from expand path to expand options, where the options are again maps of system query options,
     * typically with string values. $count can also be given as a `boolean` value, $expand can recursively
     * be given as a map, $levels can also be given as a `number` value, and $select can also be given as an
-    * array (but without navigation paths). An empty map can also be given as `null` or `true`. See also {@link
-    * topic:1ab4f62de6ab467096a2a98b363a1373 Parameters}.
+    * array (but without navigation paths). An empty map can also be given as `null` or `true`. See also {@link https://ui5.sap.com/#/topic/1ab4f62de6ab467096a2a98b363a1373 Parameters}.
     */
   @JSName("$expand")
   var $expand: js.UndefOr[String | js.Object] = js.undefined

@@ -119,6 +119,18 @@ trait DetailedHTMLPropsAnchorHT extends StObject {
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
+  /**
+    * Defines a string value that labels the current element, which is intended to be converted into Braille.
+    * @see aria-label.
+    */
+  var `aria-braillelabel`: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.
+    * @see aria-roledescription.
+    */
+  var `aria-brailleroledescription`: js.UndefOr[String] = js.undefined
+  
   var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   /**
@@ -140,6 +152,12 @@ trait DetailedHTMLPropsAnchorHT extends StObject {
   var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
   /**
+    * Defines a human readable text alternative of aria-colindex.
+    * @see aria-rowindextext.
+    */
+  var `aria-colindextext`: js.UndefOr[String] = js.undefined
+  
+  /**
     * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-colindex @see aria-rowspan.
     */
@@ -159,6 +177,12 @@ trait DetailedHTMLPropsAnchorHT extends StObject {
     * @see aria-labelledby
     */
   var `aria-describedby`: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines a string value that describes or annotates the current element.
+    * @see related aria-describedby.
+    */
+  var `aria-description`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element that provides a detailed, extended description for the object.
@@ -303,6 +327,12 @@ trait DetailedHTMLPropsAnchorHT extends StObject {
     * @see aria-rowcount @see aria-rowspan.
     */
   var `aria-rowindex`: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Defines a human readable text alternative of aria-rowindex.
+    * @see aria-colindextext.
+    */
+  var `aria-rowindextext`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
@@ -686,6 +716,14 @@ object DetailedHTMLPropsAnchorHT {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
+    inline def `setAria-braillelabel`(value: String): Self = StObject.set(x, "aria-braillelabel", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-braillelabelUndefined`: Self = StObject.set(x, "aria-braillelabel", js.undefined)
+    
+    inline def `setAria-brailleroledescription`(value: String): Self = StObject.set(x, "aria-brailleroledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-brailleroledescriptionUndefined`: Self = StObject.set(x, "aria-brailleroledescription", js.undefined)
+    
     inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
@@ -702,6 +740,10 @@ object DetailedHTMLPropsAnchorHT {
     
     inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
     
+    inline def `setAria-colindextext`(value: String): Self = StObject.set(x, "aria-colindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colindextextUndefined`: Self = StObject.set(x, "aria-colindextext", js.undefined)
+    
     inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
     
     inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
@@ -717,6 +759,10 @@ object DetailedHTMLPropsAnchorHT {
     inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-description`(value: String): Self = StObject.set(x, "aria-description", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-descriptionUndefined`: Self = StObject.set(x, "aria-description", js.undefined)
     
     inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
     
@@ -835,6 +881,10 @@ object DetailedHTMLPropsAnchorHT {
     inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
     
     inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+    
+    inline def `setAria-rowindextext`(value: String): Self = StObject.set(x, "aria-rowindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowindextextUndefined`: Self = StObject.set(x, "aria-rowindextext", js.undefined)
     
     inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
     

@@ -12,77 +12,77 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderViewModelProperties extends StObject {
   
   /**
-    * When set, the user is restricted from moving slider thumbs to positions higher than this value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMax)
-    */
+  		 * When set, the user is restricted from moving slider thumbs to positions higher than this value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMax)
+  		 */
   var effectiveMax: js.UndefOr[Double] = js.undefined
   
   /**
-    * When set, the user is restricted from moving slider thumbs to positions less than this value.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMin)
-    */
+  		 * When set, the user is restricted from moving slider thumbs to positions less than this value.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#effectiveMin)
+  		 */
   var effectiveMin: js.UndefOr[Double] = js.undefined
   
   /**
-    * A function used to format user inputs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
-    */
+  		 * A function used to format user inputs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction)
+  		 */
   var inputFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
   
   /**
-    * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
-    */
+  		 * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputFormatFunction).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#inputParseFunction)
+  		 */
   var inputParseFunction: js.UndefOr[InputParser] = js.undefined
   
   /**
-    * A function used to format labels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction)
-    */
+  		 * A function used to format labels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#labelFormatFunction)
+  		 */
   var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
   
   /**
-    * The maximum possible data/thumb value of the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#max)
-    */
+  		 * The maximum possible data/thumb value of the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#max)
+  		 */
   var max: js.UndefOr[Double] = js.undefined
   
   /**
-    * The minimum possible data/thumb value of the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#min)
-    */
+  		 * The minimum possible data/thumb value of the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#min)
+  		 */
   var min: js.UndefOr[Double] = js.undefined
   
   /**
-    * Defines how slider values should be rounded.
-    *
-    * @default 4
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision)
-    */
+  		 * Defines how slider values should be rounded.
+  		 *
+  		 * @default 4
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#precision)
+  		 */
   var precision: js.UndefOr[Double] = js.undefined
   
   /**
-    * When `false`, the user can freely move any slider thumb to any position along the track.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#thumbsConstrained)
-    */
+  		 * When `false`, the user can freely move any slider thumb to any position along the track.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#thumbsConstrained)
+  		 */
   var thumbsConstrained: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An array of numbers representing absolute thumb positions on the slider.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#values)
-    */
+  		 * An array of numbers representing absolute thumb positions on the slider.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html#values)
+  		 */
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SliderViewModelProperties {

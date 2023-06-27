@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Display Source //
 ////////////////////
 /**
-  * @requires(dev) Development versions only
+  * @requires Development versions only
   * @requires Permissions: 'displaySource'
   * The *chrome.displaySource* API creates a Display session using WebMediaStreamTrack as sources.
   * @todo TODO Finish documentation and typings

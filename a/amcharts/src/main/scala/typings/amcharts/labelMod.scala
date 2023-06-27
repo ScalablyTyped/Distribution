@@ -13,13 +13,13 @@ object labelMod {
        with Label {
     
     /**
-      * @Default 'left'
+      * @default 'left'
       */
     /* CompleteClass */
     var align: String = js.native
     
     /**
-      * @Default 1
+      * @default 1
       */
     /* CompleteClass */
     var alpha: Double = js.native
@@ -82,12 +82,12 @@ object labelMod {
   trait Label extends StObject {
     
     /**
-      * @Default 'left'
+      * @default 'left'
       */
     var align: String
     
     /**
-      * @Default 1
+      * @default 1
       */
     var alpha: Double
     

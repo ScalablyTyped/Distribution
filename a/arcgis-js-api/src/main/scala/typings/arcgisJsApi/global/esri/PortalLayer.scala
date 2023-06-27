@@ -13,10 +13,10 @@ open class PortalLayer ()
   def this(properties: PortalLayerProperties) = this()
   
   /**
-    * The portal item from which the layer is loaded.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
-    */
+  		 * The portal item from which the layer is loaded.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-PortalLayer.html#portalItem)
+  		 */
   /* CompleteClass */
   var portalItem: typings.arcgisJsApi.esri.PortalItem = js.native
 }

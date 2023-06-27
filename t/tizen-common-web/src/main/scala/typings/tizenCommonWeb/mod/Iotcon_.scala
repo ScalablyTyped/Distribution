@@ -16,8 +16,8 @@ trait Iotcon_ extends StObject {
     * @param successCallback The method to be invoked when random pin is generated.
     *
     * @returns The watchID which can be used to remove the listener.
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type AbortError, If the operation has been stopped.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type AbortError, If the operation has been stopped.
     */
   def addGeneratedPinListener(successCallback: GeneratedPinCallback): Double
   
@@ -78,8 +78,8 @@ trait Iotcon_ extends StObject {
     *
     * @param filePath The CBOR(Concise Binary Object Representation) file path for handling secure virtual resources.
     *
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped.
     */
   def initialize(filePath: String): Unit
   
@@ -90,7 +90,7 @@ trait Iotcon_ extends StObject {
     *
     * @param watchId The watchId identifier returned by the addGeneratedPinListener() method.
     *
-    * @throw WebAPIException with error type AbortError, if the operation has been stopped or there is no listener with given watchId.
+    * @throws WebAPIException with error type AbortError, if the operation has been stopped or there is no listener with given watchId.
     */
   def removeGeneratedPinListener(watchId: Double): Unit
   
@@ -118,7 +118,7 @@ trait Iotcon_ extends StObject {
     *
     * @param timeout Timeout value in seconds (value must range between 1 and 3600 inclusive). The default value is 30.
     *
-    * @throw WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
+    * @throws WebAPIException with error type InvalidValuesError, if any input parameter does not contain a valid value.
     */
   def setTimeout(timeout: Double): Unit
 }

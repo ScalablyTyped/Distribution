@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sapMAvatarSizeMod {
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Predefined sizes for the {@link sap.m.Avatar} control.
     */
@@ -34,7 +34,7 @@ object sapMAvatarSizeMod {
   @js.native
   sealed trait AvatarSize extends StObject
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Predefined sizes for the {@link sap.m.Avatar} control.
     */

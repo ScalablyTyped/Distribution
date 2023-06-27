@@ -27,6 +27,14 @@ trait WeakValidationMapBreadcru extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends 'none' | 'inline' | 'list' | 'both' | undefined | undefined ? react.react.Validator<'none' | 'inline' | 'list' | 'both' | undefined | undefined | null | undefined> : undefined extends 'none' | 'inline' | 'list' | 'both' | undefined | undefined ? react.react.Validator<'none' | 'inline' | 'list' | 'both' | undefined | undefined | null | undefined> : react.react.Validator<'none' | 'inline' | 'list' | 'both' | undefined | undefined> */ js.Any
   ] = js.undefined
   
+  var `aria-braillelabel`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
+  var `aria-brailleroledescription`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var `aria-busy`: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | undefined | undefined ? react.react.Validator<react.react.Booleanish | undefined | undefined | null | undefined> : undefined extends react.react.Booleanish | undefined | undefined ? react.react.Validator<react.react.Booleanish | undefined | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | undefined | undefined> */ js.Any
   ] = js.undefined
@@ -43,6 +51,10 @@ trait WeakValidationMapBreadcru extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
   ] = js.undefined
   
+  var `aria-colindextext`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
   var `aria-colspan`: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
   ] = js.undefined
@@ -56,6 +68,10 @@ trait WeakValidationMapBreadcru extends StObject {
   ] = js.undefined
   
   var `aria-describedby`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
+  var `aria-description`: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
@@ -173,6 +189,10 @@ trait WeakValidationMapBreadcru extends StObject {
   
   var `aria-rowindex`: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
+  ] = js.undefined
+  
+  var `aria-rowindextext`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
   ] = js.undefined
   
   var `aria-rowspan`: js.UndefOr[
@@ -767,6 +787,18 @@ object WeakValidationMapBreadcru {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
+    inline def `setAria-braillelabel`(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "aria-braillelabel", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-braillelabelUndefined`: Self = StObject.set(x, "aria-braillelabel", js.undefined)
+    
+    inline def `setAria-brailleroledescription`(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "aria-brailleroledescription", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-brailleroledescriptionUndefined`: Self = StObject.set(x, "aria-brailleroledescription", js.undefined)
+    
     inline def `setAria-busy`(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | undefined | undefined ? react.react.Validator<react.react.Booleanish | undefined | undefined | null | undefined> : undefined extends react.react.Booleanish | undefined | undefined ? react.react.Validator<react.react.Booleanish | undefined | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
@@ -791,6 +823,12 @@ object WeakValidationMapBreadcru {
     
     inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
     
+    inline def `setAria-colindextext`(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "aria-colindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-colindextextUndefined`: Self = StObject.set(x, "aria-colindextext", js.undefined)
+    
     inline def `setAria-colspan`(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any
     ): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
@@ -814,6 +852,12 @@ object WeakValidationMapBreadcru {
     ): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+    
+    inline def `setAria-description`(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "aria-description", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-descriptionUndefined`: Self = StObject.set(x, "aria-description", js.undefined)
     
     inline def `setAria-details`(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
@@ -988,6 +1032,12 @@ object WeakValidationMapBreadcru {
     ): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
     
     inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+    
+    inline def `setAria-rowindextext`(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : undefined extends string | undefined | undefined ? react.react.Validator<string | undefined | undefined | null | undefined> : react.react.Validator<string | undefined | undefined> */ js.Any
+    ): Self = StObject.set(x, "aria-rowindextext", value.asInstanceOf[js.Any])
+    
+    inline def `setAria-rowindextextUndefined`: Self = StObject.set(x, "aria-rowindextext", js.undefined)
     
     inline def `setAria-rowspan`(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : undefined extends number | undefined | undefined ? react.react.Validator<number | undefined | undefined | null | undefined> : react.react.Validator<number | undefined | undefined> */ js.Any

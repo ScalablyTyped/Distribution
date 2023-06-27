@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentContentRangeUpdateData extends StObject {
   
   /**
-    * Gets or sets a value that indicates whether the comment text is bold.
+    * Specifies a value that indicates whether the comment text is bold.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -46,7 +46,7 @@ trait CommentContentRangeUpdateData extends StObject {
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets or sets a value that indicates whether the comment text is italicized.
+    * Specifies a value that indicates whether the comment text is italicized.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -54,7 +54,7 @@ trait CommentContentRangeUpdateData extends StObject {
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets a value that indicates whether the comment text has a strikethrough.
+    * Specifies a value that indicates whether the comment text has a strikethrough.
     *
     * @remarks
     * [Api set: WordApi 1.4]
@@ -62,7 +62,7 @@ trait CommentContentRangeUpdateData extends StObject {
   var strikeThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
+    * Specifies a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
     *
     * @remarks
     * [Api set: WordApi 1.4]

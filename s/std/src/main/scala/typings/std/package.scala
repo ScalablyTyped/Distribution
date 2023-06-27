@@ -4,11 +4,13 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.anon.AcceptNode
 import typings.std.anon.LookupNamespaceURI
+import typings.std.stdStrings.`dual-rumble`
 import typings.std.stdStrings.`public-key`
 import typings.std.stdStrings.auto
 import typings.std.stdStrings.byob
 import typings.std.stdStrings.bytes
 import typings.std.stdStrings.require
+import typings.std.stdStrings.screen
 import typings.std.stdStrings.vibration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +21,11 @@ type AlgorithmIdentifier = Algorithm | java.lang.String
 
 type ArrayBufferLike = js.typedarray.ArrayBuffer | SharedArrayBuffer
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/AudioWorklet)
+  */
 type AudioWorklet = Worklet
 
 type AutoKeyword = auto
@@ -53,27 +59,50 @@ type BodyInit = ReadableStream[Any] | XMLHttpRequestBodyInit
 
 type BufferSource = js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer
 
-/** A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
+/**
+  * A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CDATASection)
+  */
 type CDATASection = Text
 
 type COSEAlgorithmIdentifier = Double
 
-type CSSContainerRule = CSSConditionRule
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSImageValue) */
+type CSSImageValue = CSSStyleValue
 
-type CSSNumberish = Double
+type CSSKeywordish = java.lang.String | CSSKeywordValue
 
-/** An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
+type CSSNumberish = Double | CSSNumericValue
+
+type CSSPerspectiveValue = CSSNumericValue | CSSKeywordish
+
+/**
+  * An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE).
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSSupportsRule)
+  */
 type CSSSupportsRule = CSSConditionRule
+
+type CSSUnparsedSegment = java.lang.String | CSSVariableReferenceValue
 
 /**
   * Convert first character of string literal type to uppercase
   */
 type Capitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
-/** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
+/**
+  * The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ChannelMergerNode)
+  */
 type ChannelMergerNode = AudioNode
 
-/** The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
+/**
+  * The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode)
+  */
 type ChannelSplitterNode = AudioNode
 
 type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | Unit]
@@ -90,8 +119,15 @@ type ClipboardItemData = js.Promise[java.lang.String | Blob]
 
 type ClipboardItems = js.Array[ClipboardItem]
 
-/** Textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. */
+/**
+  * Textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Comment)
+  */
 type Comment = CharacterData
+
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CompressionStream) */
+type CompressionStream = GenericTransformStream
 
 type ConstrainBoolean = scala.Boolean | ConstrainBooleanParameters
 
@@ -103,7 +139,11 @@ type ConstrainULong = Double | ConstrainULongRange
 
 type DOMHighResTimeStamp = Double
 
-/** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
+/**
+  * Used by the dataset HTML attribute to represent data for custom attributes added to elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMStringMap)
+  */
 type DOMStringMap = /* standard dom */
 StringDictionary[js.UndefOr[java.lang.String]]
 
@@ -111,11 +151,15 @@ type DecodeErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
 type DecodeSuccessCallback = js.Function1[/* decodedData */ AudioBuffer, Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DecompressionStream) */
+type DecompressionStream = GenericTransformStream
+
 /**
   * The decorator context types provided to any decorator.
   */
 type DecoratorContext = (ClassDecoratorContext[Instantiable1[/* args */ Any, Any]]) | ClassMemberDecoratorContext
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/DocumentTimeline) */
 type DocumentTimeline = AnimationTimeline
 
 /** @deprecated Directly use HTMLElementTagNameMap or SVGElementTagNameMap as appropriate, instead. */
@@ -123,8 +167,13 @@ type ElementTagNameMap = HTMLElementTagNameMap & (Pick[
 SVGElementTagNameMap, 
 Exclude[
   /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.std.stdStrings.a, typings.std.stdStrings.animate, typings.std.stdStrings.animateMotion */ Any, 
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.std.stdStrings.a, typings.std.stdStrings.abbr, typings.std.stdStrings.address */ Any
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.std.stdStrings.a, typings.std.stdStrings.abbr, typings.std.stdStrings.address */ Any
 ]])
+
+type EncodedVideoChunkOutputCallback = js.Function2[
+/* chunk */ EncodedVideoChunk, 
+/* metadata */ js.UndefOr[EncodedVideoChunkMetadata], 
+Unit]
 
 type EpochTimeStamp = Double
 
@@ -166,6 +215,14 @@ type FileSystemEntriesCallback = js.Function1[/* entries */ js.Array[FileSystemE
 
 type FileSystemEntryCallback = js.Function1[/* entry */ FileSystemEntry, Unit]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.std.BufferSource
+  - typings.std.Blob
+  - java.lang.String
+  - typings.std.WriteParams
+*/
+type FileSystemWriteChunkType = _FileSystemWriteChunkType | BufferSource | java.lang.String
+
 type FlatArray[Arr, Depth /* <: Double */] = /* import warning: importer.ImportType#apply Failed type conversion: std.anon.Done<Arr, Depth>[Depth extends -1 ? 'done' : 'recur'] */ js.Any
 
 type Float32List = js.typedarray.Float32Array | js.Array[GLfloat]
@@ -202,6 +259,8 @@ type GLuint64 = Double
 
 type GamepadHapticActuatorType = vibration
 
+type GamepadHapticEffectType = `dual-rumble`
+
 type HashAlgorithmIdentifier = AlgorithmIdentifier
 
 type HeadersInit = (js.Array[js.Tuple2[java.lang.String, java.lang.String]]) | (Record[java.lang.String, java.lang.String]) | Headers
@@ -224,7 +283,11 @@ type IdleRequestCallback = js.Function1[/* deadline */ IdleDeadline, Unit]
 type ImportAssertions = /* standard es5 */
 StringDictionary[java.lang.String]
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/InputDeviceInfo)
+  */
 type InputDeviceInfo = MediaDeviceInfo
 
 type Int32List = js.typedarray.Int32Array | js.Array[GLint]
@@ -326,6 +389,7 @@ type PerformanceEntryList = js.Array[PerformanceEntry]
 
 type PerformanceObserverCallback = js.Function2[/* entries */ PerformanceObserverEntryList, /* observer */ PerformanceObserver, Unit]
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming) */
 type PerformancePaintTiming = PerformanceEntry
 
 /**
@@ -369,6 +433,8 @@ type RTCPeerConnectionErrorCallback = js.Function1[/* error */ DOMException, Uni
 
 type RTCRtcpMuxPolicy = require
 
+type RTCRtpCodecCapability = RTCRtpCodec
+
 type RTCRtpReceiveParameters = RTCRtpParameters
 
 type RTCRtpSynchronizationSource = RTCRtpContributingSource
@@ -409,6 +475,10 @@ type ReferenceError = js.Error
 
 type RemotePlaybackAvailabilityCallback = js.Function1[/* available */ scala.Boolean, Unit]
 
+type ReportList = js.Array[Report]
+
+type ReportingObserverCallback = js.Function2[/* reports */ js.Array[Report], /* observer */ ReportingObserver, Unit]
+
 type RequestInfo = Request | java.lang.String
 
 /**
@@ -431,6 +501,7 @@ type SVGPoint = DOMPoint
 
 type SVGRect = DOMRect
 
+/** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StaticRange) */
 type StaticRange = AbstractRange
 
 type SyntaxError = js.Error
@@ -444,6 +515,7 @@ type TimerHandler = java.lang.String | js.Function
   - typings.std.ReadableStream[scala.Any]
   - typings.std.WritableStream[scala.Any]
   - typings.std.TransformStream[scala.Any, scala.Any]
+  - typings.std.VideoFrame
   - js.typedarray.ArrayBuffer
 */
 type Transferable = _Transferable | ReadableStream[Any] | WritableStream[Any] | (TransformStream[Any, Any]) | js.typedarray.ArrayBuffer
@@ -492,9 +564,15 @@ type Uppercase[S /* <: java.lang.String */] = /* import warning: transforms.Qual
 
 type VibratePattern = Double | js.Array[Double]
 
+type VideoFrameOutputCallback = js.Function1[/* output */ VideoFrame, Unit]
+
 type VideoFrameRequestCallback = js.Function2[/* now */ DOMHighResTimeStamp, /* metadata */ VideoFrameCallbackMetadata, Unit]
 
 type VoidFunction = js.Function0[Unit]
+
+type WakeLockType = screen
+
+type WebCodecsErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
 type WebKitCSSMatrix = DOMMatrix
 
@@ -509,7 +587,11 @@ type WindowProxy = Window
 */
 type XMLHttpRequestBodyInit = _XMLHttpRequestBodyInit | BufferSource | java.lang.String
 
-/** The XPathEvaluator interface allows to compile and evaluate XPath expressions. */
+/**
+  * The XPathEvaluator interface allows to compile and evaluate XPath expressions.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/XPathEvaluator)
+  */
 type XPathEvaluator = XPathEvaluatorBase
 
 type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | Null, java.lang.String | Null]) | LookupNamespaceURI

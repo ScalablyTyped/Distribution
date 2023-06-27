@@ -11,10 +11,10 @@ object esriWidgetsLayerListLayerListViewModelMod {
   @JSImport("esri/widgets/LayerList/LayerListViewModel", JSImport.Namespace)
   @js.native
   /**
-    * Provides the logic for the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html)
-    */
+  		 * Provides the logic for the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html)
+  		 */
   open class ^ ()
     extends StObject
        with LayerListViewModel {

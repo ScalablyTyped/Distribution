@@ -144,13 +144,13 @@ object sapFCardsHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.cards.Header` itself
       */
@@ -175,7 +175,7 @@ object sapFCardsHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -186,7 +186,7 @@ object sapFCardsHeaderMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.f.cards.Header` itself
       */
@@ -204,13 +204,13 @@ object sapFCardsHeaderMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -218,7 +218,7 @@ object sapFCardsHeaderMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
@@ -235,7 +235,7 @@ object sapFCardsHeaderMod {
     ): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -248,7 +248,7 @@ object sapFCardsHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
+      * @experimental (since 1.81) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getIconAlt iconAlt}.
       *
@@ -261,7 +261,7 @@ object sapFCardsHeaderMod {
     def getIconAlt(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getIconBackgroundColor iconBackgroundColor}.
       *
@@ -307,7 +307,7 @@ object sapFCardsHeaderMod {
     def getIconSrc(): URI = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Gets current value of property {@link #getIconVisible iconVisible}.
       *
@@ -342,7 +342,7 @@ object sapFCardsHeaderMod {
     def getSubtitle(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Gets current value of property {@link #getSubtitleMaxLines subtitleMaxLines}.
       *
@@ -366,7 +366,7 @@ object sapFCardsHeaderMod {
     def getTitle(): String = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Gets current value of property {@link #getTitleMaxLines titleMaxLines}.
       *
@@ -379,7 +379,7 @@ object sapFCardsHeaderMod {
     def getTitleMaxLines(): int = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
+      * @experimental (since 1.81) - this feature is experimental and the API may change.
       *
       * Sets a new value for property {@link #getIconAlt iconAlt}.
       *
@@ -398,7 +398,7 @@ object sapFCardsHeaderMod {
     sIconAlt: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Sets a new value for property {@link #getIconBackgroundColor iconBackgroundColor}.
       *
@@ -480,7 +480,7 @@ object sapFCardsHeaderMod {
     sIconSrc: URI): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Sets a new value for property {@link #getIconVisible iconVisible}.
       *
@@ -533,7 +533,7 @@ object sapFCardsHeaderMod {
     sSubtitle: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Sets a new value for property {@link #getSubtitleMaxLines subtitleMaxLines}.
       *
@@ -569,7 +569,7 @@ object sapFCardsHeaderMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Sets a new value for property {@link #getTitleMaxLines titleMaxLines}.
       *
@@ -588,19 +588,25 @@ object sapFCardsHeaderMod {
     iTitleMaxLines: int): this.type = js.native
   }
   
+  trait Header$PressEventParameters extends StObject
+  
+  type HeaderPressEvent = typings.openui5.sapUiBaseEventMod.default[Header$PressEventParameters]
+  
+  type HeaderPressEventParameters = Header$PressEventParameters
+  
   trait HeaderSettings
     extends StObject
        with BaseHeaderSettings {
     
     /**
-      * @EXPERIMENTAL (since 1.81) - this feature is experimental and the API may change.
+      * @experimental (since 1.81) - this feature is experimental and the API may change.
       *
       * Defines an alt text for the avatar or icon.
       */
     var iconAlt: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Defines a background color for the avatar or icon.
       */
@@ -626,7 +632,7 @@ object sapFCardsHeaderMod {
     var iconSrc: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.83) - this feature is experimental and the API may change.
+      * @experimental (since 1.83) - this feature is experimental and the API may change.
       *
       * Defines whether the card icon is visible.
       */
@@ -637,7 +643,9 @@ object sapFCardsHeaderMod {
     /**
       * Fires when the user presses the control.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Defines the status text.
@@ -650,7 +658,7 @@ object sapFCardsHeaderMod {
     var subtitle: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Limits the number of lines for the subtitle.
       */
@@ -662,7 +670,7 @@ object sapFCardsHeaderMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @EXPERIMENTAL (since 1.101)
+      * @experimental (since 1.101)
       *
       * Limits the number of lines for the title.
       */
@@ -706,7 +714,7 @@ object sapFCardsHeaderMod {
       
       inline def setIconVisibleUndefined: Self = StObject.set(x, "iconVisible", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

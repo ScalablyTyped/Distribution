@@ -1,5 +1,6 @@
 package typings.debug
 
+import typings.debug.anon.Colors
 import typings.debug.anon.FnCall
 import typings.debug.mod.Debug
 import typings.debug.mod.Debugger
@@ -55,6 +56,11 @@ object global {
     inline def humanize(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("humanize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def humanize(value: Double, options: Long): String = (^.asInstanceOf[js.Dynamic].applyDynamic("humanize")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def humanize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("humanize")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("debug.inspectOpts")
+    @js.native
+    def inspectOpts: js.UndefOr[Colors] = js.native
+    inline def inspectOpts_=(x: js.UndefOr[Colors]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inspectOpts")(x.asInstanceOf[js.Any])
     
     inline def log(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
     

@@ -12,10 +12,12 @@ open class PushSubscriptionOptions ()
   extends StObject
      with typings.std.PushSubscriptionOptions {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/applicationServerKey) */
   /* standard dom */
   /* CompleteClass */
   override val applicationServerKey: js.typedarray.ArrayBuffer | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions/userVisibleOnly) */
   /* standard dom */
   /* CompleteClass */
   override val userVisibleOnly: scala.Boolean = js.native

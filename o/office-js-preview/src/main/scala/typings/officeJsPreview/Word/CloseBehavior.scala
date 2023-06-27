@@ -10,8 +10,7 @@ sealed trait CloseBehavior extends StObject
   * Specifies the close behavior for `Document.close`.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.CloseBehavior")
 @js.native
@@ -20,8 +19,7 @@ object CloseBehavior extends StObject {
   /**
     * Save the changes before closing the document.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait save
@@ -31,8 +29,7 @@ object CloseBehavior extends StObject {
   /**
     * Discard the possible changes when closing the document.
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait skipSave

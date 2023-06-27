@@ -11,40 +11,40 @@ sealed trait GeometricEffectDonutMethod extends StObject
 object GeometricEffectDonutMethod extends StObject {
   
   /**
-    * Bevelled - follows the shortest straight path across a convex corner of the polygon.
-    */
+  			 * Bevelled - follows the shortest straight path across a convex corner of the polygon.
+  			 */
   @js.native
   sealed trait Bevelled
     extends StObject
        with GeometricEffectDonutMethod
   
   /**
-    * Mitered - matches the exact shape around a convex corner of the polygon.
-    */
+  			 * Mitered - matches the exact shape around a convex corner of the polygon.
+  			 */
   @js.native
   sealed trait Mitered
     extends StObject
        with GeometricEffectDonutMethod
   
   /**
-    * Rounded - follows a path of equal distance around a convex corner of the polygon.
-    */
+  			 * Rounded - follows a path of equal distance around a convex corner of the polygon.
+  			 */
   @js.native
   sealed trait Rounded
     extends StObject
        with GeometricEffectDonutMethod
   
   /**
-    * Square - follows a straight path across the corner of a line or polygon.
-    */
+  			 * Square - follows a straight path across the corner of a line or polygon.
+  			 */
   @js.native
   sealed trait Square
     extends StObject
        with GeometricEffectDonutMethod
   
   /**
-    * TrueBuffer - uses the buffer algorithm to follow a path around convex corners.
-    */
+  			 * TrueBuffer - uses the buffer algorithm to follow a path around convex corners.
+  			 */
   @js.native
   sealed trait TrueBuffer
     extends StObject

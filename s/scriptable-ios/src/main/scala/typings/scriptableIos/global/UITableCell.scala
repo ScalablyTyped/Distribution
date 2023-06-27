@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("UITableCell")
 @js.native
-open class UITableCell ()
+/**
+  * _Cell in a UITableRow._
+  * @see https://docs.scriptable.app/uitablecell
+  */
+/* private */ open class UITableCell ()
   extends StObject
      with typings.scriptableIos.UITableCell {
   

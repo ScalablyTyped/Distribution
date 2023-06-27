@@ -1,7 +1,7 @@
 
 # Scala.js typings for arcgis-js-api
 
-Typings are for version 4.26
+Typings are for version 4.27
 
 ## Library description:
 ArcGIS API for JavaScript: A complete 2D and 3D mapping and data visualization API

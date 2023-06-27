@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromark-util-events-to-acorn
 
-Typings are for version 1.2.0
+Typings are for version 1.2.3
 
 ## Library description:
 micromark utility to try and parse events w/ acorn

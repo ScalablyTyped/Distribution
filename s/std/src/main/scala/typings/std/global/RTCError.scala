@@ -141,11 +141,16 @@ open class RTCError protected ()
   /* CompleteClass */
   override val WRONG_DOCUMENT_ERR: `4` = js.native
   
-  /** @deprecated */
+  /**
+    * @deprecated
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException/code)
+    */
   /* standard dom */
   /* CompleteClass */
   override val code: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/errorDetail) */
   /* standard dom */
   /* CompleteClass */
   override val errorDetail: RTCErrorDetailType = js.native
@@ -158,18 +163,22 @@ open class RTCError protected ()
   /* CompleteClass */
   var name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/receivedAlert) */
   /* standard dom */
   /* CompleteClass */
   override val receivedAlert: Double | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sctpCauseCode) */
   /* standard dom */
   /* CompleteClass */
   override val sctpCauseCode: Double | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sdpLineNumber) */
   /* standard dom */
   /* CompleteClass */
   override val sdpLineNumber: Double | Null = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/RTCError/sentAlert) */
   /* standard dom */
   /* CompleteClass */
   override val sentAlert: Double | Null = js.native

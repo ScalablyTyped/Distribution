@@ -10,7 +10,7 @@ trait PostRequestBodyContentApplicationjsonNameValue extends StObject {
     * List repository variables
     * @description Lists all repository variables. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `actions_variables:read` repository permission to use this endpoint.
     */
-  var get: ParametersPathOwnerQuery68
+  var get: Parameters176
   
   /**
     * Create a repository variable
@@ -22,7 +22,7 @@ trait PostRequestBodyContentApplicationjsonNameValue extends StObject {
 }
 object PostRequestBodyContentApplicationjsonNameValue {
   
-  inline def apply(get: ParametersPathOwnerQuery68, post: RequestBodyContentApplicationjsonNameValue): PostRequestBodyContentApplicationjsonNameValue = {
+  inline def apply(get: Parameters176, post: RequestBodyContentApplicationjsonNameValue): PostRequestBodyContentApplicationjsonNameValue = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostRequestBodyContentApplicationjsonNameValue]
   }
@@ -30,7 +30,7 @@ object PostRequestBodyContentApplicationjsonNameValue {
   @scala.inline
   implicit open class MutableBuilder[Self <: PostRequestBodyContentApplicationjsonNameValue] (val x: Self) extends AnyVal {
     
-    inline def setGet(value: ParametersPathOwnerQuery68): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Parameters176): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     inline def setPost(value: RequestBodyContentApplicationjsonNameValue): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

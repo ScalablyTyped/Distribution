@@ -8,7 +8,7 @@ trait ParametersPathOrgProjectidRequestBody extends StObject {
   
   var parameters: PathOrgProjectid
   
-  var requestBody: js.UndefOr[Content126] = js.undefined
+  var requestBody: js.UndefOr[Content149] = js.undefined
   
   var responses: `403ContentApplicationjsonDocumentationurl`
 }
@@ -24,7 +24,7 @@ object ParametersPathOrgProjectidRequestBody {
     
     inline def setParameters(value: PathOrgProjectid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: Content126): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Content149): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

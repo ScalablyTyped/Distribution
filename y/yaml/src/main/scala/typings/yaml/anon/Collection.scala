@@ -6,6 +6,7 @@ import typings.yaml.distNodesScalarMod.Scalar
 import typings.yaml.distNodesYamlmapMod.YAMLMap
 import typings.yaml.distNodesYamlseqMod.YAMLSeq
 import typings.yaml.distVisitMod.asyncVisitorFn
+import typings.yaml.yamlBooleans.`true`
 import typings.yaml.yamlStrings.key
 import typings.yaml.yamlStrings.value
 import org.scalablytyped.runtime.StObject
@@ -46,7 +47,7 @@ object Collection {
     
     inline def setAlias(
       value: (/* key */ Double | key | value | Null, typings.yaml.distNodesAliasMod.Alias, /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -56,7 +57,7 @@ object Collection {
     
     inline def setCollection(
       value: (/* key */ Double | key | value | Null, (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -66,7 +67,7 @@ object Collection {
     
     inline def setMap(
       value: (/* key */ Double | key | value | Null, YAMLMap[Any, Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -76,7 +77,7 @@ object Collection {
     
     inline def setNode(
       value: (/* key */ Double | key | value | Null, typings.yaml.distNodesAliasMod.Alias | Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -86,7 +87,7 @@ object Collection {
     
     inline def setPair(
       value: (/* key */ Double | key | value | Null, Pair[Any, Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -96,7 +97,7 @@ object Collection {
     
     inline def setScalar(
       value: (/* key */ Double | key | value | Null, Scalar[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -106,7 +107,7 @@ object Collection {
     
     inline def setSeq(
       value: (/* key */ Double | key | value | Null, YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])
@@ -116,7 +117,7 @@ object Collection {
     
     inline def setValue(
       value: (/* key */ Double | key | value | Null, Scalar[Any] | (YAMLMap[Any, Any]) | YAMLSeq[Any], /* path */ js.Array[
-          Document[typings.yaml.distNodesNodeMod.Node[Any]] | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
+          (Document[typings.yaml.distNodesNodeMod.Node[Any], `true`]) | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ]) => Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any]) | (js.Promise[
           Unit | js.Symbol | Double | typings.yaml.distNodesNodeMod.Node[Any] | (Pair[Any, Any])
         ])

@@ -95,7 +95,7 @@ object Resizable {
   trait Model extends StObject {
     
     /** Sets the offset of the resizing helper relative to the mouse cursor.
-      * @Default {{ top: -1, left: -2 }}
+      * @default {{ top: -1, left: -2 }}
       */
     var cursorAt: js.UndefOr[Any] = js.undefined
     
@@ -104,12 +104,12 @@ object Resizable {
     var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Distance in pixels after mousedown the mouse must move before resizing should start. This option can be used to prevent unwanted drags when clicking on an element.
-      * @Default {1}
+      * @default {1}
       */
     var distance: js.UndefOr[Double] = js.undefined
     
     /** If specified, restricts resize start click to the specified element(s).
-      * @Default {null}
+      * @default {null}
       */
     var handle: js.UndefOr[String] = js.undefined
     
@@ -118,27 +118,27 @@ object Resizable {
     var helper: js.UndefOr[js.Function1[/* e */ HelperEventArgs, Unit]] = js.undefined
     
     /** Sets the max height till which an element has to be resized.
-      * @Default {null}
+      * @default {null}
       */
     var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** Sets the max width till which an element has to be resized.
-      * @Default {null}
+      * @default {null}
       */
     var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** Sets the min Height below which an element cannot be resized.
-      * @Default {10}
+      * @default {10}
       */
     var minHeight: js.UndefOr[Double] = js.undefined
     
     /** Sets the min Width below which an element cannot be resized.
-      * @Default {10}
+      * @default {10}
       */
     var minWidth: js.UndefOr[Double] = js.undefined
     
     /** Used to group sets of resizable items.
-      * @Default {'default'}
+      * @default {'default'}
       */
     var scope: js.UndefOr[String] = js.undefined
   }

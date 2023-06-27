@@ -8,17 +8,17 @@ object sapBaseUtilDeferredMod {
   
   @JSImport("sap/base/util/Deferred", JSImport.Default)
   @js.native
-  open class default ()
+  open class default[T /* <: Any */] ()
     extends StObject
-       with Deferred
+       with Deferred[T]
   
   @js.native
-  trait Deferred extends StObject {
+  trait Deferred[T /* <: Any */] extends StObject {
     
     /**
       * Promise instance of the Deferred
       */
-    var promise: js.Promise[Any] = js.native
+    var promise: js.Promise[T] = js.native
     
     /**
       * Proxy call to the `reject` method of the wrapped Promise
@@ -36,6 +36,6 @@ object sapBaseUtilDeferredMod {
     def resolve(/**
       * Fulfillment value
       */
-    value: Any): Unit = js.native
+    value: T): Unit = js.native
   }
 }

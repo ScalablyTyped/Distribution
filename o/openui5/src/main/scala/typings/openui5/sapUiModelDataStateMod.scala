@@ -84,7 +84,7 @@ object sapUiModelDataStateMod {
     extends typings.openui5.sapUiBaseObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns whether the data state is changed, or resets the data state in case the parameter `bNewState`
       * is false; reset data state means that the data state properties are replaced with the changed properties.
@@ -100,7 +100,7 @@ object sapUiModelDataStateMod {
     bNewState: Boolean): Boolean = js.native
     
     /**
-      * @SINCE 1.98.0
+      * @since 1.98.0
       *
       * Returns an array of all model and control messages, regardless of whether they are old or new.
       *
@@ -188,7 +188,7 @@ object sapUiModelDataStateMod {
     def isLaundering(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets an array of control state messages.
       *
@@ -200,7 +200,7 @@ object sapUiModelDataStateMod {
     aMessages: js.Array[typings.openui5.sapUiCoreMessageMod.default]): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the dirty value that was rejected by the type validation.
       *
@@ -214,7 +214,7 @@ object sapUiModelDataStateMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the laundering state of the data state.
       *
@@ -239,7 +239,7 @@ object sapUiModelDataStateMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the formatted original value of the data.
       *
@@ -251,7 +251,7 @@ object sapUiModelDataStateMod {
     vOriginalValue: Boolean): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the formatted value of the data state,
       *

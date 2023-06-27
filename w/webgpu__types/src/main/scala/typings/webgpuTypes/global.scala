@@ -295,7 +295,11 @@ object global {
     /* CompleteClass */
     override val __brand: typings.webgpuTypes.webgpuTypesStrings.GPUPipelineError = js.native
     
-    /** @deprecated */
+    /**
+      * @deprecated
+      *
+      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/DOMException/code)
+      */
     /* standard dom */
     /* CompleteClass */
     override val code: Double = js.native
@@ -310,7 +314,7 @@ object global {
     
     /**
       * A read-only slot-backed attribute exposing the type of error encountered in pipeline creation
-      * as a <dfn enum for=>GPUPipelineErrorReason</dfn>:
+      * as a <dfn enum for="">GPUPipelineErrorReason</dfn>:
       * <ul dfn-type=enum-value dfn-for=GPUPipelineErrorReason>
       * - <dfn>"validation"</dfn>: A [$validation error$].
       * - <dfn>"internal"</dfn>: An [$internal error$].

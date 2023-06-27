@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Schemes extends StObject {
   
   /**
-    * Includes the primary labeling scheme suggested for the input layer's clusters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#Schemes)
-    */
+  		 * Includes the primary labeling scheme suggested for the input layer's bins.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-bins.html#Schemes)
+  		 */
   var primaryScheme: Scheme
   
   /**
-    * Includes secondary labeling schemes suggested for the input layer's clusters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#Schemes)
-    */
+  		 * Includes secondary labeling schemes suggested for the input layer's bins.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-bins.html#Schemes)
+  		 */
   var secondarySchemes: js.Array[Scheme]
 }
 object Schemes {

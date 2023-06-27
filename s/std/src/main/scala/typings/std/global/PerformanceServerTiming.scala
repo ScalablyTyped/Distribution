@@ -13,18 +13,22 @@ open class PerformanceServerTiming ()
   extends StObject
      with typings.std.PerformanceServerTiming {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/description) */
   /* standard dom */
   /* CompleteClass */
   override val description: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/duration) */
   /* standard dom */
   /* CompleteClass */
   override val duration: DOMHighResTimeStamp = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/name) */
   /* standard dom */
   /* CompleteClass */
   override val name: java.lang.String = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/PerformanceServerTiming/toJSON) */
   /* standard dom */
   /* CompleteClass */
   override def toJSON(): Any = js.native

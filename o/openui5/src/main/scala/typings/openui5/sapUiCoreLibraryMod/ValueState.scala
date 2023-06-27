@@ -23,7 +23,7 @@ object ValueState extends StObject {
   /* "Error" */ val Error: typings.openui5.sapUiCoreLibraryMod.ValueState.Error & String = js.native
   
   /**
-    * @SINCE 1.61
+    * @since 1.61
     *
     * State is informative.
     */

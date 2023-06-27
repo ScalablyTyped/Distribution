@@ -8,7 +8,7 @@ trait FormGridOptions extends StObject {
   
   var cols: js.UndefOr[String | Double] = js.undefined
   
-  var gutter: js.UndefOr[String | Double] = js.undefined
+  var gutter: js.UndefOr[String | Double | FormGridGutterOptions] = js.undefined
 }
 object FormGridOptions {
   
@@ -24,7 +24,7 @@ object FormGridOptions {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setGutter(value: String | Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+    inline def setGutter(value: String | Double | FormGridGutterOptions): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
   }

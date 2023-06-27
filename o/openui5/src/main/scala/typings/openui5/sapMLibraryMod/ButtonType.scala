@@ -23,7 +23,7 @@ object ButtonType extends StObject {
   /* "Accept" */ val Accept: typings.openui5.sapMLibraryMod.ButtonType.Accept & String = js.native
   
   /**
-    * @SINCE 1.77
+    * @since 1.77
     *
     * Attention type
     */
@@ -43,7 +43,7 @@ object ButtonType extends StObject {
   /* "Back" */ val Back: typings.openui5.sapMLibraryMod.ButtonType.Back & String = js.native
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Critical type
     *
@@ -84,7 +84,7 @@ object ButtonType extends StObject {
   /* "Ghost" */ val Ghost: typings.openui5.sapMLibraryMod.ButtonType.Ghost & String = js.native
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Negative type
     *
@@ -98,7 +98,7 @@ object ButtonType extends StObject {
   /* "Negative" */ val Negative: typings.openui5.sapMLibraryMod.ButtonType.Negative & String = js.native
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Neutral type
     *
@@ -121,7 +121,7 @@ object ButtonType extends StObject {
   /* "Reject" */ val Reject: typings.openui5.sapMLibraryMod.ButtonType.Reject & String = js.native
   
   /**
-    * @SINCE 1.73
+    * @since 1.73
     *
     * Success type
     *

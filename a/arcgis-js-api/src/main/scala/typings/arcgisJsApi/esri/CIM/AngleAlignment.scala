@@ -11,16 +11,16 @@ sealed trait AngleAlignment extends StObject
 object AngleAlignment extends StObject {
   
   /**
-    * Points remain aligned to the display when the map is rotated.
-    */
+  			 * Points remain aligned to the display when the map is rotated.
+  			 */
   @js.native
   sealed trait Display
     extends StObject
        with AngleAlignment
   
   /**
-    * Points are rotated with the map.
-    */
+  			 * Points are rotated with the map.
+  			 */
   @js.native
   sealed trait Map
     extends StObject

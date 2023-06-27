@@ -16,15 +16,15 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
   val default: AnnotationHelper = js.native
   
   /**
-    * @SINCE 1.43.0
+    * @since 1.43.0
     *
-    * A collection of methods which help to consume OData V4 annotations in XML template views. Every context argument must belong to an {@link sap.ui.model.odata.v4.ODataMetaModel}
+    * A collection of methods which help to consume OData V4 annotations in XML template views. Every context argument must belong to an {@link sap.ui.model.odata.v4.ODataMetaModel }
     * instance.
     */
   trait AnnotationHelper extends StObject {
     
     /**
-      * @SINCE 1.63.0
+      * @since 1.63.0
       *
       * A function that helps to interpret OData V4 annotations.
       *
@@ -231,7 +231,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): String | js.Promise[Any]
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * Returns a data binding according to the result of {@link sap.ui.model.odata.v4.AnnotationHelper.getNavigationPath}.
       *
@@ -247,7 +247,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): String
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * A function that helps to interpret OData V4 annotations. It knows about the syntax of the path value
       * used by the following dynamic expressions:
@@ -267,7 +267,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): String
     
     /**
-      * @SINCE 1.47.0
+      * @since 1.47.0
       *
       * Determines which type of value list exists for the given property.
       *
@@ -287,7 +287,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): ValueListType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueListType * / any */ String) | js.Promise[Any]
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * A function that helps to interpret OData V4 annotations. It knows about the syntax of the path value
       * used by the following dynamic expressions:
@@ -320,7 +320,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): Boolean | js.Promise[Any]
     
     /**
-      * @SINCE 1.49.0
+      * @since 1.49.0
       *
       * Returns the value for the label of a `com.sap.vocabularies.UI.v1.DataFieldAbstract` from the meta model.
       * If no `Label` property is available, but the data field has a `Value` property with an `edm:Path` expression
@@ -349,7 +349,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): js.UndefOr[String | js.Promise[Any]]
     
     /**
-      * @SINCE 1.63.0
+      * @since 1.63.0
       *
       * Helper function for a `template:with` instruction that returns an equivalent to the given context's path,
       * without "$AnnotationPath", "$NavigationPropertyPath", "$Path", and "$PropertyPath" segments.
@@ -367,7 +367,7 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
     ): String
     
     /**
-      * @SINCE 1.43.0
+      * @since 1.43.0
       *
       * A function that helps to interpret OData V4 annotations.
       *

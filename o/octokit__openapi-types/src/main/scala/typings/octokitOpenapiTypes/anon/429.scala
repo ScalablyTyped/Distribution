@@ -1,32 +1,29 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.required_status_checks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `429` extends StObject {
   
-  var parameters: js.UndefOr[Requiredstatuschecks] = js.undefined
+  var path: Owner
   
-  /** @enum {string} */
-  var `type`: required_status_checks
+  var query: js.UndefOr[Per] = js.undefined
 }
 object `429` {
   
-  inline def apply(): `429` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("required_status_checks")
+  inline def apply(path: Owner): `429` = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[`429`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `429`] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: Requiredstatuschecks): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setQuery(value: Per): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setType(value: required_status_checks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

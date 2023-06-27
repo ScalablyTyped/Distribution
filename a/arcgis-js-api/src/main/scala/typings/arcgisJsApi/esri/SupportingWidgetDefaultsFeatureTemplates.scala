@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SupportingWidgetDefaultsFeatureTemplates extends StObject {
   
   /**
-    * Aids in managing various template items and how they display within the widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
-    */
+  		 * Aids in managing various template items and how they display within the widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
+  		 */
   var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
   
   var visibleElements: SupportingWidgetDefaultsFeatureTemplatesVisibleElements

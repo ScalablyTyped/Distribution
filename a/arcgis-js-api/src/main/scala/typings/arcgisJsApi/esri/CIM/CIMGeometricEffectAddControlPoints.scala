@@ -10,8 +10,8 @@ trait CIMGeometricEffectAddControlPoints
      with CIMGeometricEffectType {
   
   /**
-    * The value below which a control point will be placed. The maximum amount of deflection from one segment to another at a vertex. Angle values between 180 and 360 are interpreted the same as values between 0 and 180. Angle values of 180 and 360 are the same as 0.
-    */
+  			 * The value below which a control point will be placed. The maximum amount of deflection from one segment to another at a vertex. Angle values between 180 and 360 are interpreted the same as values between 0 and 180. Angle values of 180 and 360 are the same as 0.
+  			 */
   var angleTolerance: js.UndefOr[Double] = js.undefined
   
   @JSName("type")

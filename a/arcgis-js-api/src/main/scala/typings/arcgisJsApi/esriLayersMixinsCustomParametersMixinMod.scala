@@ -14,10 +14,10 @@ object esriLayersMixinsCustomParametersMixinMod {
        with CustomParametersMixin {
     
     /**
-      * A list of custom parameters appended to the URL of all resources fetched by the layer.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
-      */
+    		 * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-CustomParametersMixin.html#customParameters)
+    		 */
     /* CompleteClass */
     var customParameters: Any = js.native
   }

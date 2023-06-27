@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Available only in secure contexts. */
+/**
+  * Available only in secure contexts.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIInput)
+  */
 @js.native
 trait MIDIInput
   extends StObject
@@ -27,6 +31,7 @@ trait MIDIInput
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/MIDIInput/midimessage_event) */
   /* standard dom */
   var onmidimessage: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   

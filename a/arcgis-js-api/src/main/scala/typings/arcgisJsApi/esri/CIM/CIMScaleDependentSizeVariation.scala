@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMScaleDependentSizeVariation extends StObject {
   
   /**
-    * The scale the size is associated with.
-    */
+  			 * The scale the size is associated with.
+  			 */
   var scale: js.UndefOr[Double] = js.undefined
   
   /**
-    * The size for the associated scale.
-    */
+  			 * The size for the associated scale.
+  			 */
   var size: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMScaleDependentSizeVariation

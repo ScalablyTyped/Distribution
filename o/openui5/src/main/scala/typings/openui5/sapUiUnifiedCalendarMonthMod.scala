@@ -1,7 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.Date
-import typings.openui5.anon.WeekDays
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -145,7 +143,7 @@ object sapUiUnifiedCalendarMonthMod {
     vAriaLabelledBy: ID): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Adds some disabledDate to the aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -196,13 +194,13 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit]
     ): this.type = js.native
     def attachFocus(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
@@ -227,7 +225,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit]
     ): this.type = js.native
     def attachFocus(
       /**
@@ -238,7 +236,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
@@ -259,13 +257,13 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
@@ -290,7 +288,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachSelect(
       /**
@@ -301,7 +299,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
@@ -309,7 +307,7 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:weekNumberSelect weekNumberSelect} event of
       * this `sap.ui.unified.calendar.Month`.
@@ -330,20 +328,20 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit]
     ): this.type = js.native
     def attachWeekNumberSelect(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
     oListener: js.Object
     ): this.type = js.native
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Attaches event handler `fnFunction` to the {@link #event:weekNumberSelect weekNumberSelect} event of
       * this `sap.ui.unified.calendar.Month`.
@@ -369,7 +367,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit]
     ): this.type = js.native
     def attachWeekNumberSelect(
       /**
@@ -380,7 +378,7 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.unified.calendar.Month` itself
       */
@@ -394,12 +392,16 @@ object sapUiUnifiedCalendarMonthMod {
       * @returns flag if focusable
       */
     def checkDateFocusable(/**
-      * JavaScript date object for focused date
+      * date instance for focused date
       */
     oDate: js.Date): Boolean = js.native
+    def checkDateFocusable(/**
+      * date instance for focused date
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): Boolean = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Destroys all the disabledDates in the aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -432,13 +434,13 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit]
     ): this.type = js.native
     def detachFocus(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthFocusEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -456,13 +458,13 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -470,7 +472,7 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Detaches event handler `fnFunction` from the {@link #event:weekNumberSelect weekNumberSelect} event of
       * this `sap.ui.unified.calendar.Month`.
@@ -483,13 +485,13 @@ object sapUiUnifiedCalendarMonthMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit]
     ): this.type = js.native
     def detachWeekNumberSelect(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ MonthWeekNumberSelectEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -502,12 +504,16 @@ object sapUiUnifiedCalendarMonthMod {
       * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript date object for focused date
+      * date instance for focused date
       */
     oDate: js.Date): this.type = js.native
+    def displayDate(/**
+      * date instance for focused date
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:focus focus} to attached listeners.
       *
@@ -517,10 +523,10 @@ object sapUiUnifiedCalendarMonthMod {
     def fireFocus(/**
       * Parameters to pass along with the event
       */
-    mParameters: Date): this.type = js.native
+    mParameters: Month$FocusEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -533,8 +539,8 @@ object sapUiUnifiedCalendarMonthMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @SINCE 1.60
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.60
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:weekNumberSelect weekNumberSelect} to attached listeners.
       *
@@ -544,19 +550,20 @@ object sapUiUnifiedCalendarMonthMod {
       * @returns Whether or not to prevent the default action
       */
     def fireWeekNumberSelect(): Boolean = js.native
-    def fireWeekNumberSelect(/**
+    def fireWeekNumberSelect(
+      /**
       * Parameters to pass along with the event
       */
-    mParameters: WeekDays): Boolean = js.native
+    mParameters: Month$WeekNumberSelectEventParameters
+    ): Boolean = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -570,15 +577,15 @@ object sapUiUnifiedCalendarMonthMod {
     /**
       * Gets current value of property {@link #getDate date}.
       *
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set).
+      * A date as UI5Date or JavaScript Date object. The month including this date is rendered and this date
+      * is focused initially (if no other focus is set).
       *
       * @returns Value of property `date`
       */
     def getDate(): js.Object = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets content of aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -587,7 +594,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getDisabledDates(): js.Array[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Gets current value of property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -613,14 +620,14 @@ object sapUiUnifiedCalendarMonthMod {
     def getIntervalSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * ID of the element which is the current target of the association {@link #getLegend legend}, or `null`.
       */
     def getLegend(): ID = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Gets current value of property {@link #getNonWorkingDays nonWorkingDays}.
       *
@@ -632,7 +639,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getNonWorkingDays(): js.Array[int] = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -644,7 +651,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -674,7 +681,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getShowHeader(): Boolean = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Gets current value of property {@link #getShowWeekNumbers showWeekNumbers}.
       *
@@ -712,7 +719,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getSpecialDates(): js.Array[typings.openui5.sapUiUnifiedDateTypeRangeMod.default] = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Gets current value of property {@link #getWidth width}.
       *
@@ -723,7 +730,7 @@ object sapUiUnifiedCalendarMonthMod {
     def getWidth(): CSSSize = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Checks for the provided `sap.ui.unified.DateRange` in the aggregation {@link #getDisabledDates disabledDates}.
       * and returns its index if found or -1 otherwise.
@@ -764,7 +771,7 @@ object sapUiUnifiedCalendarMonthMod {
     ): int = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Inserts a disabledDate into the aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -827,7 +834,7 @@ object sapUiUnifiedCalendarMonthMod {
     def removeAllAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Removes all the controls from the aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -880,7 +887,7 @@ object sapUiUnifiedCalendarMonthMod {
       */
     vDisabledDate: String): typings.openui5.sapUiUnifiedDateRangeMod.default | Null = js.native
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Removes a disabledDate from the aggregation {@link #getDisabledDates disabledDates}.
       *
@@ -938,7 +945,7 @@ object sapUiUnifiedCalendarMonthMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
       *
@@ -969,12 +976,16 @@ object sapUiUnifiedCalendarMonthMod {
       * @returns Reference to `this` for method chaining
       */
     def setDate(/**
-      * a JavaScript date
+      * a date instance
       */
     oDate: js.Date): this.type = js.native
+    def setDate(/**
+      * a date instance
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Sets a new value for property {@link #getFirstDayOfWeek firstDayOfWeek}.
       *
@@ -1012,7 +1023,7 @@ object sapUiUnifiedCalendarMonthMod {
     bIntervalSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Sets the associated {@link #getLegend legend}.
       *
@@ -1034,7 +1045,7 @@ object sapUiUnifiedCalendarMonthMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * Sets a new value for property {@link #getNonWorkingDays nonWorkingDays}.
       *
@@ -1058,7 +1069,7 @@ object sapUiUnifiedCalendarMonthMod {
     sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getPrimaryCalendarType primaryCalendarType}.
       *
@@ -1081,7 +1092,7 @@ object sapUiUnifiedCalendarMonthMod {
     sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
     ): this.type = js.native
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * Sets a new value for property {@link #getSecondaryCalendarType secondaryCalendarType}.
       *
@@ -1115,7 +1126,7 @@ object sapUiUnifiedCalendarMonthMod {
     bShowHeader: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Sets a new value for property {@link #getShowWeekNumbers showWeekNumbers}.
       *
@@ -1154,7 +1165,7 @@ object sapUiUnifiedCalendarMonthMod {
     bSingleSelection: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Sets a new value for property {@link #getWidth width}.
       *
@@ -1171,6 +1182,91 @@ object sapUiUnifiedCalendarMonthMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Month$FocusEventParameters extends StObject {
+    
+    /**
+      * focused date
+      */
+    var date: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * focused date is in an other month than the displayed one
+      */
+    var otherMonth: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * focused date is set to the same as before (date in other month clicked)
+      */
+    var restoreOldDate: js.UndefOr[Boolean] = js.undefined
+  }
+  object Month$FocusEventParameters {
+    
+    inline def apply(): Month$FocusEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Month$FocusEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Month$FocusEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setDate(value: js.Object): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      
+      inline def setOtherMonth(value: Boolean): Self = StObject.set(x, "otherMonth", value.asInstanceOf[js.Any])
+      
+      inline def setOtherMonthUndefined: Self = StObject.set(x, "otherMonth", js.undefined)
+      
+      inline def setRestoreOldDate(value: Boolean): Self = StObject.set(x, "restoreOldDate", value.asInstanceOf[js.Any])
+      
+      inline def setRestoreOldDateUndefined: Self = StObject.set(x, "restoreOldDate", js.undefined)
+    }
+  }
+  
+  trait Month$SelectEventParameters extends StObject
+  
+  trait Month$WeekNumberSelectEventParameters extends StObject {
+    
+    /**
+      * The days of the corresponding week that are selected or deselected.
+      *
+      * **Note:** Will be set to `null` if that week is being deselected.
+      */
+    var weekDays: js.UndefOr[typings.openui5.sapUiUnifiedDateRangeMod.default] = js.undefined
+    
+    /**
+      * The selected week number.
+      */
+    var weekNumber: js.UndefOr[int] = js.undefined
+  }
+  object Month$WeekNumberSelectEventParameters {
+    
+    inline def apply(): Month$WeekNumberSelectEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Month$WeekNumberSelectEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Month$WeekNumberSelectEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setWeekDays(value: typings.openui5.sapUiUnifiedDateRangeMod.default): Self = StObject.set(x, "weekDays", value.asInstanceOf[js.Any])
+      
+      inline def setWeekDaysUndefined: Self = StObject.set(x, "weekDays", js.undefined)
+      
+      inline def setWeekNumber(value: int): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
+      
+      inline def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
+    }
+  }
+  
+  type MonthFocusEvent = typings.openui5.sapUiBaseEventMod.default[Month$FocusEventParameters]
+  
+  type MonthFocusEventParameters = Month$FocusEventParameters
+  
+  type MonthSelectEvent = typings.openui5.sapUiBaseEventMod.default[Month$SelectEventParameters]
+  
+  type MonthSelectEventParameters = Month$SelectEventParameters
+  
   trait MonthSettings
     extends StObject
        with ControlSettings {
@@ -1181,7 +1277,7 @@ object sapUiUnifiedCalendarMonthMod {
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
     /**
-      * @SINCE 1.108.0
+      * @since 1.108.0
       *
       * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
       * global configuration is used. Note: This property should not be used with firstDayOfWeek property.
@@ -1191,15 +1287,15 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set).
+      * A date as UI5Date or JavaScript Date object. The month including this date is rendered and this date
+      * is focused initially (if no other focus is set).
       */
     var date: js.UndefOr[
         js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Date Ranges for disabled dates
       */
@@ -1208,7 +1304,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * If the property is set, this day marks the start of the displayed week. Valid values are 0 to 6. If no
       * valid property is set, the current locale's default is applied. Note: This property should not be used
@@ -1219,7 +1315,12 @@ object sapUiUnifiedCalendarMonthMod {
     /**
       * Date focus changed
       */
-    var focus: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var focus: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Month$FocusEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If set, interval selection is allowed
@@ -1229,7 +1330,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.38.5
+      * @since 1.38.5
       *
       * Association to the `CalendarLegend` explaining the colors of the `specialDates`.
       *
@@ -1238,7 +1339,7 @@ object sapUiUnifiedCalendarMonthMod {
     var legend: js.UndefOr[typings.openui5.sapUiUnifiedCalendarLegendMod.default | String] = js.undefined
     
     /**
-      * @SINCE 1.28.9
+      * @since 1.28.9
       *
       * If set, the provided weekdays are displayed as non-working days. Valid values inside the array are 0
       * to 6. If not set, the weekend defined in the locale settings is displayed as non-working days.
@@ -1248,7 +1349,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the calendar type is used for display. If not set, the calendar type of the global configuration
       * is used.
@@ -1258,7 +1359,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.34.0
+      * @since 1.34.0
       *
       * If set, the days are also displayed in this calendar type If not set, the dates are only displayed in
       * the primary calendar type
@@ -1270,7 +1371,9 @@ object sapUiUnifiedCalendarMonthMod {
     /**
       * Date selection changed
       */
-    var select: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var select: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Date Ranges for selected dates of the DatePicker
@@ -1287,7 +1390,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.48
+      * @since 1.48
       *
       * Determines whether the week numbers in the months are displayed.
       *
@@ -1317,7 +1420,7 @@ object sapUiUnifiedCalendarMonthMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.60
+      * @since 1.60
       *
       * Fired when a week number selection is changed. By default, choosing the week number will select the corresponding
       * week. If the week has already been selected, choosing the week number will deselect it.
@@ -1326,10 +1429,15 @@ object sapUiUnifiedCalendarMonthMod {
       *
       * **Note:** Works for Gregorian calendars only and when `intervalSelection` is set to `true`.
       */
-    var weekNumberSelect: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var weekNumberSelect: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Month$WeekNumberSelectEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
-      * @SINCE 1.38.0
+      * @since 1.38.0
       *
       * Width of Month
       */
@@ -1375,7 +1483,7 @@ object sapUiUnifiedCalendarMonthMod {
       
       inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      inline def setFocus(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+      inline def setFocus(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Month$FocusEventParameters] => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
@@ -1405,7 +1513,7 @@ object sapUiUnifiedCalendarMonthMod {
       
       inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
-      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
@@ -1437,7 +1545,9 @@ object sapUiUnifiedCalendarMonthMod {
       
       inline def setSpecialDatesVarargs(value: typings.openui5.sapUiUnifiedDateTypeRangeMod.default*): Self = StObject.set(x, "specialDates", js.Array(value*))
       
-      inline def setWeekNumberSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "weekNumberSelect", js.Any.fromFunction1(value))
+      inline def setWeekNumberSelect(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Month$WeekNumberSelectEventParameters] => Unit
+      ): Self = StObject.set(x, "weekNumberSelect", js.Any.fromFunction1(value))
       
       inline def setWeekNumberSelectUndefined: Self = StObject.set(x, "weekNumberSelect", js.undefined)
       
@@ -1446,4 +1556,8 @@ object sapUiUnifiedCalendarMonthMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type MonthWeekNumberSelectEvent = typings.openui5.sapUiBaseEventMod.default[Month$WeekNumberSelectEventParameters]
+  
+  type MonthWeekNumberSelectEventParameters = Month$WeekNumberSelectEventParameters
 }

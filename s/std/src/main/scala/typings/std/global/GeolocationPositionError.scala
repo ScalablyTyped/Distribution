@@ -27,10 +27,12 @@ open class GeolocationPositionError ()
   /* CompleteClass */
   override val TIMEOUT: `3` = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/code) */
   /* standard dom */
   /* CompleteClass */
   override val code: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/GeolocationPositionError/message) */
   /* standard dom */
   /* CompleteClass */
   override val message: java.lang.String = js.native

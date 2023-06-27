@@ -31,6 +31,8 @@ trait InputOptions extends StObject {
   
   var input: js.UndefOr[InputOption] = js.undefined
   
+  var logLevel: js.UndefOr[LogLevelOption] = js.undefined
+  
   var makeAbsoluteExternalsRelative: js.UndefOr[Boolean | ifRelativeSource] = js.undefined
   
   /** @deprecated Use the "manualChunks" output option instead. */
@@ -42,6 +44,8 @@ trait InputOptions extends StObject {
   var maxParallelFileReads: js.UndefOr[Double] = js.undefined
   
   var moduleContext: js.UndefOr[(js.Function1[/* id */ String, String | NullValue]) | StringDictionary[String]] = js.undefined
+  
+  var onLog: js.UndefOr[LogHandlerWithDefault] = js.undefined
   
   var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.undefined
   
@@ -122,6 +126,10 @@ object InputOptions {
     
     inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
     
+    inline def setLogLevel(value: LogLevelOption): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    
     inline def setMakeAbsoluteExternalsRelative(value: Boolean | ifRelativeSource): Self = StObject.set(x, "makeAbsoluteExternalsRelative", value.asInstanceOf[js.Any])
     
     inline def setMakeAbsoluteExternalsRelativeUndefined: Self = StObject.set(x, "makeAbsoluteExternalsRelative", js.undefined)
@@ -146,7 +154,13 @@ object InputOptions {
     
     inline def setModuleContextUndefined: Self = StObject.set(x, "moduleContext", js.undefined)
     
-    inline def setOnwarn(value: (/* warning */ RollupWarning, /* defaultHandler */ WarningHandler) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction2(value))
+    inline def setOnLog(
+      value: (/* level */ LogLevel, /* log */ RollupLog, /* defaultHandler */ LogOrStringHandler) => Unit
+    ): Self = StObject.set(x, "onLog", js.Any.fromFunction3(value))
+    
+    inline def setOnLogUndefined: Self = StObject.set(x, "onLog", js.undefined)
+    
+    inline def setOnwarn(value: (/* warning */ RollupLog, /* defaultHandler */ LoggingFunction) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction2(value))
     
     inline def setOnwarnUndefined: Self = StObject.set(x, "onwarn", js.undefined)
     

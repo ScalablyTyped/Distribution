@@ -13,18 +13,22 @@ open class StorageManager ()
   extends StObject
      with typings.std.StorageManager {
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/estimate) */
   /* standard dom */
   /* CompleteClass */
   override def estimate(): js.Promise[StorageEstimate] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/getDirectory) */
   /* standard dom */
   /* CompleteClass */
   override def getDirectory(): js.Promise[typings.std.FileSystemDirectoryHandle] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/persist) */
   /* standard dom */
   /* CompleteClass */
   override def persist(): js.Promise[scala.Boolean] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/StorageManager/persisted) */
   /* standard dom */
   /* CompleteClass */
   override def persisted(): js.Promise[scala.Boolean] = js.native

@@ -15,7 +15,7 @@ object global {
       extends typings.zumly.mod.^ {
       /**
         * Creates a Zumly instance
-        * @params options
+        * @param options
         * @example
         *  new Zumly({
         *  mount: '.mount',

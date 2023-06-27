@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JunctionSourceJSON extends StObject {
   
   /**
-    * The asset group attribute values for the point layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
-    */
+  		 * The asset group attribute values for the point layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
+  		 */
   var assetGroups: js.Array[AssetGroupJSON]
   
   /**
-    * The layer id of the point layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
-    */
+  		 * The layer id of the point layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
+  		 */
   var layerId: Double
   
   /**
-    * The network source id of the point layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
-    */
+  		 * The network source id of the point layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace-UtilityNetworkTraceViewModel.html#JunctionSourceJSON)
+  		 */
   var sourceId: Double
 }
 object JunctionSourceJSON {

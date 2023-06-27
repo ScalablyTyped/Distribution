@@ -148,7 +148,7 @@ object sapUxapObjectPageSectionBaseMod {
     def getCustomAnchorBarButton(): typings.openui5.sapMButtonMod.default = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Gets current value of property {@link #getImportance importance}.
       *
@@ -161,7 +161,7 @@ object sapUxapObjectPageSectionBaseMod {
     def getImportance(): Importance | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Importance * / any */ String) = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Returns the control name text.
       *
@@ -177,7 +177,7 @@ object sapUxapObjectPageSectionBaseMod {
       * Defines the title of the respective section/subsection.
       *
       * **Note:** If a subsection is the only one (or the only one visible) within a section, its title is displayed
-      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection}
+      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection }
       * is set to `false`.
       *
       * @returns Value of property `title`
@@ -185,7 +185,7 @@ object sapUxapObjectPageSectionBaseMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Gets current value of property {@link #getTitleLevel titleLevel}.
       *
@@ -216,7 +216,7 @@ object sapUxapObjectPageSectionBaseMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Sets a new value for property {@link #getImportance importance}.
       *
@@ -246,7 +246,7 @@ object sapUxapObjectPageSectionBaseMod {
       * Defines the title of the respective section/subsection.
       *
       * **Note:** If a subsection is the only one (or the only one visible) within a section, its title is displayed
-      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection}
+      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection }
       * is set to `false`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -260,7 +260,7 @@ object sapUxapObjectPageSectionBaseMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Sets a new value for property {@link #getTitleLevel titleLevel}.
       *
@@ -291,7 +291,7 @@ object sapUxapObjectPageSectionBaseMod {
     sTitleLevel: TitleLevel): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Performs the update of the invisible text label. This method is called for example when the section title
       * is changed.
@@ -316,7 +316,7 @@ object sapUxapObjectPageSectionBaseMod {
     var customAnchorBarButton: js.UndefOr[typings.openui5.sapMButtonMod.default] = js.undefined
     
     /**
-      * @SINCE 1.32.0
+      * @since 1.32.0
       *
       * Determines whether the section will be hidden on low resolutions.
       */
@@ -328,13 +328,13 @@ object sapUxapObjectPageSectionBaseMod {
       * Defines the title of the respective section/subsection.
       *
       * **Note:** If a subsection is the only one (or the only one visible) within a section, its title is displayed
-      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection}
+      * instead of the section title. This behavior is true even if the `showTitle` propeprty of {@link sap.uxap.ObjectPageSubSection }
       * is set to `false`.
       */
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.44.0
+      * @since 1.44.0
       *
       * Determines the ARIA level of the `ObjectPageSectionBase` title. The ARIA level is used by assisting technologies,
       * such as screen readers, to create a hierarchical site map for faster navigation.

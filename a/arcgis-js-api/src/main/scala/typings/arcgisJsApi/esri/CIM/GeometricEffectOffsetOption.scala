@@ -11,16 +11,16 @@ sealed trait GeometricEffectOffsetOption extends StObject
 object GeometricEffectOffsetOption extends StObject {
   
   /**
-    * Accurate - accommodates complex geometries and applied a true fit to the symbol.
-    */
+  			 * Accurate - accommodates complex geometries and applied a true fit to the symbol.
+  			 */
   @js.native
   sealed trait Accurate
     extends StObject
        with GeometricEffectOffsetOption
   
   /**
-    * Fast - ignores complex geometries and applies a best fit to the symbol.
-    */
+  			 * Fast - ignores complex geometries and applies a best fit to the symbol.
+  			 */
   @js.native
   sealed trait Fast
     extends StObject

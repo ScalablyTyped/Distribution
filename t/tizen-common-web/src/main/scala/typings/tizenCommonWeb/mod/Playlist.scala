@@ -17,9 +17,9 @@ trait Playlist extends StObject {
     *
     * @param item Content to add.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def add(item: Content_): Unit = js.native
   
@@ -38,8 +38,8 @@ trait Playlist extends StObject {
     * @param successCallback Callback method to be invoked when adding a list of content items to a playlist completes successfully.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def addBatch(items: js.Array[Content_]): Unit = js.native
   def addBatch(items: js.Array[Content_], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -67,8 +67,8 @@ trait Playlist extends StObject {
     * The default value is 0
     * It means no offset.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def get(successCallback: PlaylistItemArraySuccessCallback): Unit = js.native
   def get(successCallback: PlaylistItemArraySuccessCallback, errorCallback: Null, count: Double): Unit = js.native
@@ -158,8 +158,8 @@ trait Playlist extends StObject {
     * @param successCallback Callback method to be invoked when the playlist item has successfully been moved.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def move(item: PlaylistItem, delta: Double): Unit = js.native
   def move(item: PlaylistItem, delta: Double, successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -175,8 +175,8 @@ trait Playlist extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/content.write
     *
-    * @throw WebAPIException with error type InvalidValuesError, when assigning an invalid value (e.g. playlist of the same name already exists).
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to change this attribute.
+    * @throws WebAPIException with error type InvalidValuesError, when assigning an invalid value (e.g. playlist of the same name already exists).
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to change this attribute.
     */
   var name: String = js.native
   
@@ -193,9 +193,9 @@ trait Playlist extends StObject {
     *
     * @param item Playlist item to remove.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def remove(item: PlaylistItem): Unit = js.native
   
@@ -215,8 +215,8 @@ trait Playlist extends StObject {
     * @param successCallback Callback method to be invoked when removing a list of content items from a playlist completes successfully.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if any input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def removeBatch(items: js.Array[PlaylistItem]): Unit = js.native
   def removeBatch(items: js.Array[PlaylistItem], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -242,8 +242,8 @@ trait Playlist extends StObject {
     * @param successCallback Callback method to be invoked when changing the positions of items in the playlist is successfully completed.
     * @param errorCallback Callback method to be invoked when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type TypeMismatchError, if the input parameter is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
     */
   def setOrder(items: js.Array[PlaylistItem]): Unit = js.native
   def setOrder(items: js.Array[PlaylistItem], successCallback: Null, errorCallback: ErrorCallback): Unit = js.native
@@ -260,8 +260,8 @@ trait Playlist extends StObject {
     * @privilegeLevel public
     * @privilegeName http://tizen.org/privilege/content.write
     *
-    * @throw WebAPIException with error type InvalidValuesError, when assigning an invalid value (e.g. if the URI does not start with "file:///").
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to change this attribute or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
+    * @throws WebAPIException with error type InvalidValuesError, when assigning an invalid value (e.g. if the URI does not start with "file:///").
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to change this attribute or the application does not have privilege to access the storage. For more information, see [Storage privileges](#StorageRemark).
     */
   var thumbnailURI: String | Null = js.native
 }

@@ -58,7 +58,7 @@ trait IPaginationConfig extends StObject {
   /**
     * Limit number for pagination size.
     *
-    * @default: null
+    * @default null
     */
   var maxSize: js.UndefOr[Double] = js.undefined
   

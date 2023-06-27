@@ -13,53 +13,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneViewEnvironmentProperties extends StObject {
   
   /**
-    * Atmosphere conditions of the scene.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Atmosphere conditions of the scene.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphereProperties] = js.undefined
   
   /**
-    * Indicates whether atmosphere visualization is enabled.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Indicates whether atmosphere visualization is enabled.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var background: js.UndefOr[BackgroundProperties] = js.undefined
   
   /**
-    * Indicates the type of lighting in the scene.
-    *
-    * @default SunLighting
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Indicates the type of lighting in the scene.
+  		 *
+  		 * @default SunLighting
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var lighting: js.UndefOr[SunLightingPropertiestype | typings.arcgisJsApi.anon.VirtualLightingProperties] = js.undefined
   
   /**
-    * Indicates whether stars visualization is enabled.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Indicates whether stars visualization is enabled.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var starsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates the type of weather visualization in the scene.
-    *
-    * @default SunnyWeather
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    */
+  		 * Indicates the type of weather visualization in the scene.
+  		 *
+  		 * @default SunnyWeather
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+  		 */
   var weather: js.UndefOr[
     SunnyWeatherPropertiestyp | CloudyWeatherPropertiesty | RainyWeatherPropertiestyp | SnowyWeatherPropertiestyp | FoggyWeatherPropertiestyp
   ] = js.undefined

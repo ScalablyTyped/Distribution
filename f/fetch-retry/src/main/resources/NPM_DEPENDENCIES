@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fetch-retry" : "5.0.5"
+      "fetch-retry" : "5.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "fetch-retry" : "5.0.5"
+      "fetch-retry" : "5.0.6"
     }
   ],
   "compile-devDependencies" : [

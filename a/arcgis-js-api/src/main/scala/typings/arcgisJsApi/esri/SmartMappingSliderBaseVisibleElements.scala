@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SmartMappingSliderBaseVisibleElements extends StObject {
   
   /**
-    * When `true`, displays interactive segments on the track that maintain the interval between two slider thumbs/handles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#visibleElements)
-    */
+  		 * When `true`, displays interactive segments on the track that maintain the interval between two slider thumbs/handles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#visibleElements)
+  		 */
   var interactiveTrack: js.UndefOr[Boolean] = js.undefined
 }
 object SmartMappingSliderBaseVisibleElements {

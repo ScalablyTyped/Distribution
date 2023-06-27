@@ -1,6 +1,5 @@
 package typings.openui5
 
-import typings.openui5.anon.`10`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -141,13 +140,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -172,7 +171,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit]
     ): this.type = js.native
     def attachClose(
       /**
@@ -183,7 +182,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -204,13 +203,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit]
     ): this.type = js.native
     def attachClosed(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -235,7 +234,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit]
     ): this.type = js.native
     def attachClosed(
       /**
@@ -246,7 +245,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -267,13 +266,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit]
     ): this.type = js.native
     def attachOpen(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -298,7 +297,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit]
     ): this.type = js.native
     def attachOpen(
       /**
@@ -309,7 +308,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -330,13 +329,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit]
     ): this.type = js.native
     def attachOpenNew(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -361,7 +360,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit]
     ): this.type = js.native
     def attachOpenNew(
       /**
@@ -372,7 +371,7 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.ux3.Overlay` itself
       */
@@ -395,13 +394,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit]
     ): this.type = js.native
     def detachClose(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayCloseEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -419,13 +418,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit]
     ): this.type = js.native
     def detachClosed(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayClosedEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -443,13 +442,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit]
     ): this.type = js.native
     def detachOpen(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -467,13 +466,13 @@ object sapUiUx3OverlayMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit]
     ): this.type = js.native
     def detachOpenNew(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ OverlayOpenNewEvent, Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -481,7 +480,7 @@ object sapUiUx3OverlayMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:close close} to attached listeners.
       *
@@ -494,10 +493,10 @@ object sapUiUx3OverlayMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): Boolean = js.native
+    mParameters: Overlay$CloseEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
@@ -510,10 +509,10 @@ object sapUiUx3OverlayMod {
     def fireClosed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): Boolean = js.native
+    mParameters: Overlay$ClosedEventParameters): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:open open} to attached listeners.
       *
@@ -523,10 +522,10 @@ object sapUiUx3OverlayMod {
     def fireOpen(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): this.type = js.native
+    mParameters: Overlay$OpenEventParameters): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:openNew openNew} to attached listeners.
       *
@@ -536,7 +535,7 @@ object sapUiUx3OverlayMod {
     def fireOpenNew(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): this.type = js.native
+    mParameters: Overlay$OpenNewEventParameters): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCloseButtonVisible closeButtonVisible}.
@@ -610,6 +609,114 @@ object sapUiUx3OverlayMod {
     bOpenButtonVisible: Boolean): this.type = js.native
   }
   
+  trait Overlay$CloseEventParameters extends StObject {
+    
+    /**
+      * The ID of the Overlay instance.
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object Overlay$CloseEventParameters {
+    
+    inline def apply(): Overlay$CloseEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Overlay$CloseEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay$CloseEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  trait Overlay$ClosedEventParameters extends StObject {
+    
+    /**
+      * The ID of the Overlay instance.
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object Overlay$ClosedEventParameters {
+    
+    inline def apply(): Overlay$ClosedEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Overlay$ClosedEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay$ClosedEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  trait Overlay$OpenEventParameters extends StObject {
+    
+    /**
+      * The ID of the Overlay instance
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object Overlay$OpenEventParameters {
+    
+    inline def apply(): Overlay$OpenEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Overlay$OpenEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay$OpenEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  trait Overlay$OpenNewEventParameters extends StObject {
+    
+    /**
+      * The ID of the Overlay instance.
+      */
+    var id: js.UndefOr[String] = js.undefined
+  }
+  object Overlay$OpenNewEventParameters {
+    
+    inline def apply(): Overlay$OpenNewEventParameters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Overlay$OpenNewEventParameters]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay$OpenNewEventParameters] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    }
+  }
+  
+  type OverlayCloseEvent = typings.openui5.sapUiBaseEventMod.default[Overlay$CloseEventParameters]
+  
+  type OverlayCloseEventParameters = Overlay$CloseEventParameters
+  
+  type OverlayClosedEvent = typings.openui5.sapUiBaseEventMod.default[Overlay$ClosedEventParameters]
+  
+  type OverlayClosedEventParameters = Overlay$ClosedEventParameters
+  
+  type OverlayOpenEvent = typings.openui5.sapUiBaseEventMod.default[Overlay$OpenEventParameters]
+  
+  type OverlayOpenEventParameters = Overlay$OpenEventParameters
+  
+  type OverlayOpenNewEvent = typings.openui5.sapUiBaseEventMod.default[Overlay$OpenNewEventParameters]
+  
+  type OverlayOpenNewEventParameters = Overlay$OpenNewEventParameters
+  
   trait OverlaySettings
     extends StObject
        with ControlSettings {
@@ -617,7 +724,12 @@ object sapUiUx3OverlayMod {
     /**
       * Event is fired when the Overlay starts closing.
       */
-    var close: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var close: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$CloseEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether the 'Close' button shall be visible.
@@ -629,12 +741,22 @@ object sapUiUx3OverlayMod {
     /**
       * Event is fired when the Overlay is closed.
       */
-    var closed: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var closed: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$ClosedEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Event is fired when the Overlay is opened.
       */
-    var open: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var open: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$OpenEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * Defines whether the 'Open' button shall be visible.
@@ -646,7 +768,12 @@ object sapUiUx3OverlayMod {
     /**
       * Event is fired when the 'Open' button of the Overlay is clicked.
       */
-    var openNew: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var openNew: js.UndefOr[
+        js.Function1[
+          /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$OpenNewEventParameters], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object OverlaySettings {
     
@@ -658,7 +785,9 @@ object sapUiUx3OverlayMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: OverlaySettings] (val x: Self) extends AnyVal {
       
-      inline def setClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$CloseEventParameters] => Unit
+      ): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
       inline def setCloseButtonVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "closeButtonVisible", value.asInstanceOf[js.Any])
       
@@ -666,17 +795,21 @@ object sapUiUx3OverlayMod {
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
+      inline def setClosed(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$ClosedEventParameters] => Unit
+      ): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       
       inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      inline def setOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$OpenEventParameters] => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
       inline def setOpenButtonVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "openButtonVisible", value.asInstanceOf[js.Any])
       
       inline def setOpenButtonVisibleUndefined: Self = StObject.set(x, "openButtonVisible", js.undefined)
       
-      inline def setOpenNew(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "openNew", js.Any.fromFunction1(value))
+      inline def setOpenNew(
+        value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[Overlay$OpenNewEventParameters] => Unit
+      ): Self = StObject.set(x, "openNew", js.Any.fromFunction1(value))
       
       inline def setOpenNewUndefined: Self = StObject.set(x, "openNew", js.undefined)
       

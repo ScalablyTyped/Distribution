@@ -203,7 +203,7 @@ object sapUiCommonsCarouselMod {
     def getDefaultItemWidth(): int = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Gets current value of property {@link #getFirstVisibleIndex firstVisibleIndex}.
       *
@@ -386,7 +386,7 @@ object sapUiCommonsCarouselMod {
     iDefaultItemWidth: int): this.type = js.native
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * Setter for property `firstVisibleIndex`.
       *
@@ -537,7 +537,7 @@ object sapUiCommonsCarouselMod {
     var defaultItemWidth: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.11.0
+      * @since 1.11.0
       *
       * The index of the element in the content aggreation which is displayed first on rendering
       */

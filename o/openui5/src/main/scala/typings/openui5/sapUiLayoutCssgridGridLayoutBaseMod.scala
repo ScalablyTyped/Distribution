@@ -19,8 +19,8 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor
-    * sap.ui.base.ManagedObject} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.base.ManagedObject#constructor sap.ui.base.ManagedObject }
+    * can be used.
     */
   open class default () extends GridLayoutBase {
     def this(/**
@@ -125,7 +125,7 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Removes all display:grid styles from the provided HTML element
       */
@@ -135,7 +135,7 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     oElement: HTMLElement): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets all display:grid styles to the provided HTML element
       */
@@ -172,7 +172,7 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     def isResponsive(): Boolean = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook function for the Grid's onAfterRendering
       */
@@ -182,7 +182,7 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     oGrid: IGridConfigurable): Unit = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Hook function for the Grid's resize. Will be called if the grid layout is responsive.
       */

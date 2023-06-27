@@ -12,87 +12,87 @@ trait CIMMarkerPlacementInsidePolygon
      with MarkerPlacement {
   
   /**
-    * The clipping option which specifies how markers should be clipped at the polygon boundary.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The clipping option which specifies how markers should be clipped at the polygon boundary.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var clipping: js.UndefOr[ClipAtBoundary] = js.undefined
   
   /**
-    * The orientation angle that the markers are placed on within the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The orientation angle that the markers are placed on within the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var gridAngle: js.UndefOr[Double] = js.undefined
   
   /**
-    * The grid type which defines how markers are placed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The grid type which defines how markers are placed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var gridType: js.UndefOr[Fixed | Random] = js.undefined
   
   /**
-    * The marker row offset horizontally.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The marker row offset horizontally.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The marker row offset vertically.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The marker row offset vertically.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether to consider individual geometry parts or the whole geometry.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * A value indicating whether to consider individual geometry parts or the whole geometry.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var placePerPart: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The primitive name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The primitive name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
-    * _Since 4.24_ A percentage that determines the randomness of markers within the polygon.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * _Since 4.24_ A percentage that determines the randomness of markers within the polygon.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var randomness: js.UndefOr[Double] = js.undefined
   
   /**
-    * _Since 4.24_ The starting value for generating a random pattern.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * _Since 4.24_ The starting value for generating a random pattern.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var seed: js.UndefOr[Double] = js.undefined
   
   /**
-    * A value indicating whether every other row of markers should be shifted to create an offset grid.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * A value indicating whether every other row of markers should be shifted to create an offset grid.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var shiftOddRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The distance between each marker on the X-axis of the grid.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The distance between each marker on the X-axis of the grid.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var stepX: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance between each marker on the Y-axis of the grid.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
-    */
+  		 * The distance between each marker on the Y-axis of the grid.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMMarkerPlacementInsidePolygon)
+  		 */
   var stepY: js.UndefOr[Double] = js.undefined
   
   var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon

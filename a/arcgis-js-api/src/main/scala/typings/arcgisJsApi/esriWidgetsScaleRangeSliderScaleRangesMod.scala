@@ -11,10 +11,10 @@ object esriWidgetsScaleRangeSliderScaleRangesMod {
   @JSImport("esri/widgets/ScaleRangeSlider/ScaleRanges", JSImport.Namespace)
   @js.native
   /**
-    * The ScaleRanges class represents the ranges of scales for the [ScaleRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html) widget.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html)
-    */
+  		 * The ScaleRanges class represents the ranges of scales for the [ScaleRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html) widget.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRanges.html)
+  		 */
   open class ^ ()
     extends StObject
        with ScaleRanges {

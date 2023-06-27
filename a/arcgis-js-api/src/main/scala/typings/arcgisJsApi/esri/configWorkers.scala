@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait configWorkers extends StObject {
   
   /**
-    * The AMD configuration object that is set in each worker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
-    */
+  		 * The AMD configuration object that is set in each worker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
+  		 */
   var loaderConfig: js.UndefOr[configWorkersLoaderConfig] = js.undefined
   
   /**
-    * The absolute url to the AMD or SystemJS loader used in the worker.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
-    */
+  		 * The absolute url to the AMD or SystemJS loader used in the worker.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
+  		 */
   var loaderUrl: js.UndefOr[Any] = js.undefined
   
   /**
-    * This is used by the `@arcgis/core` and `arcgis-js-api` NPM packages to control where to load a custom build of the `RemoteClient` from.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
-    */
+  		 * This is used by the `@arcgis/core` and `arcgis-js-api` NPM packages to control where to load a custom build of the `RemoteClient` from.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#workers)
+  		 */
   var workerPath: js.UndefOr[String] = js.undefined
 }
 object configWorkers {

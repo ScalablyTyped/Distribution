@@ -14,7 +14,7 @@ object GenericTileScope extends StObject {
   def apply(value: String): js.UndefOr[GenericTileScope & String] = js.native
   
   /**
-    * @SINCE 1.76
+    * @since 1.76
     *
     * More action scope (Only the More icon is added to the tile)
     */
@@ -25,7 +25,7 @@ object GenericTileScope extends StObject {
   /* "ActionMore" */ val ActionMore: typings.openui5.sapMLibraryMod.GenericTileScope.ActionMore & String = js.native
   
   /**
-    * @SINCE 1.76
+    * @since 1.76
     *
     * Remove action scope (Only the Remove icon is added to the tile)
     */

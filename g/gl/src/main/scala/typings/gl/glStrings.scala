@@ -115,6 +115,10 @@ object glStrings {
   inline def WEBGL_compressed_texture_etc1: WEBGL_compressed_texture_etc1 = "WEBGL_compressed_texture_etc1".asInstanceOf[WEBGL_compressed_texture_etc1]
   
   @js.native
+  sealed trait WEBGL_compressed_texture_pvrtc extends StObject
+  inline def WEBGL_compressed_texture_pvrtc: WEBGL_compressed_texture_pvrtc = "WEBGL_compressed_texture_pvrtc".asInstanceOf[WEBGL_compressed_texture_pvrtc]
+  
+  @js.native
   sealed trait WEBGL_compressed_texture_s3tc extends StObject
   inline def WEBGL_compressed_texture_s3tc: WEBGL_compressed_texture_s3tc = "WEBGL_compressed_texture_s3tc".asInstanceOf[WEBGL_compressed_texture_s3tc]
   

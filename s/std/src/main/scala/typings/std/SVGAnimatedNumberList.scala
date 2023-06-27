@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The SVGAnimatedNumber interface is used for attributes which take a list of numbers and which can be animated. */
+/**
+  * The SVGAnimatedNumber interface is used for attributes which take a list of numbers and which can be animated.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/SVGAnimatedNumberList)
+  */
 trait SVGAnimatedNumberList extends StObject {
   
   /* standard dom */

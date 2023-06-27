@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(pathWithTilde: String): String = ^.asInstanceOf[js.Dynamic].apply(pathWithTilde.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("untildify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(pathWithTilde: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathWithTilde.asInstanceOf[js.Any]).asInstanceOf[String]
 }

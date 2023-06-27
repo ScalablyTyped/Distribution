@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonQuerysuite extends StObject {
   
-  var parameters: `540`
+  var parameters: `639`
   
   var requestBody: ContentApplicationjsonQuerysuite
   
@@ -14,7 +14,7 @@ trait RequestBodyContentApplicationjsonQuerysuite extends StObject {
 }
 object RequestBodyContentApplicationjsonQuerysuite {
   
-  inline def apply(parameters: `540`, requestBody: ContentApplicationjsonQuerysuite, responses: `409503`): RequestBodyContentApplicationjsonQuerysuite = {
+  inline def apply(parameters: `639`, requestBody: ContentApplicationjsonQuerysuite, responses: `409503`): RequestBodyContentApplicationjsonQuerysuite = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonQuerysuite]
   }
@@ -22,7 +22,7 @@ object RequestBodyContentApplicationjsonQuerysuite {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonQuerysuite] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `540`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `639`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonQuerysuite): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

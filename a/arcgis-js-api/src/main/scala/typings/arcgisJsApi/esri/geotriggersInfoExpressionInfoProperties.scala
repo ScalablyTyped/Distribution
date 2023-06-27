@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait geotriggersInfoExpressionInfoProperties extends StObject {
   
   /**
-    * Optional expression in the [Arcade expression](https://developers.arcgis.com/arcade/) language.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#expression)
-    */
+  		 * Optional expression in the [Arcade expression](https://developers.arcgis.com/arcade/) language.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#expression)
+  		 */
   var expression: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional return type of the Arcade expression.
-    *
-    * @default string
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#returnType)
-    */
+  		 * Optional return type of the Arcade expression.
+  		 *
+  		 * @default string
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#returnType)
+  		 */
   var returnType: js.UndefOr[number | string_] = js.undefined
   
   /**
-    * Optional title of the expression.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#title)
-    */
+  		 * Optional title of the expression.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-geotriggersInfo-ExpressionInfo.html#title)
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object geotriggersInfoExpressionInfoProperties {

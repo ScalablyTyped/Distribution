@@ -165,7 +165,7 @@ object fileSystem {
   inline def getDisplayPath(entry: FileEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayPath")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * @requires(Kiosk) Chrome OS Kiosk mode only
+    * @requires Kiosk -Chrome OS Kiosk mode only
     * @requires Permissions: The 'fileSystem': {'requestFileSystem'} manifest permission is required.
     * Returns a list of volumes available for requestFileSystem().
     * Available to kiosk apps running in the kiosk session only.
@@ -203,7 +203,7 @@ object fileSystem {
   val onVolumeListChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* object */ js.Array[Volume], Unit]] = js.native
   
   /**
-    * @requires(Kiosk) Kiosk mode only
+    * @requires Kiosk -Kiosk mode only
     * @requires Permissions: The writable option requires the 'fileSystem': {'write'} permission in the manifest.
     * Requests access to a file system for a volume represented by options.volumeId.
     * If options.writable is set to true, then the file system will be writable.

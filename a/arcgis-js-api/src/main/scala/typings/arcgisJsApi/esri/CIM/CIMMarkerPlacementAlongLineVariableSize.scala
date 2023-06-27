@@ -10,36 +10,36 @@ trait CIMMarkerPlacementAlongLineVariableSize
      with CIMMarkerPlacementType {
   
   /**
-    * The maximum random offset.
-    */
+  			 * The maximum random offset.
+  			 */
   var maxRandomOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * The largest size of the marker to be placed on the line. The value is expressed as a ratio.
-    */
+  			 * The largest size of the marker to be placed on the line. The value is expressed as a ratio.
+  			 */
   var maxZoom: js.UndefOr[Double] = js.undefined
   
   /**
-    * The smallest size of the marker to be placed on the line. The value is expressed as a ratio.
-    */
+  			 * The smallest size of the marker to be placed on the line. The value is expressed as a ratio.
+  			 */
   var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
-    * The number of different sizes of markers to be placed on the line.
-    */
+  			 * The number of different sizes of markers to be placed on the line.
+  			 */
   var numberOfSizes: js.UndefOr[Double] = js.undefined
   
   /**
-    * The starting value for generating a random number. This random number is used by the Randomization property to determine which size a marker will receive. This is only used if the VariationMethod is set to Random.
-    */
+  			 * The starting value for generating a random number. This random number is used by the Randomization property to determine which size a marker will receive. This is only used if the VariationMethod is set to Random.
+  			 */
   var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
   var type_CIMMarkerPlacementAlongLineVariableSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize
   
   /**
-    * The order in which the change of size in the markers should occur.
-    */
+  			 * The order in which the change of size in the markers should occur.
+  			 */
   var variationMethod: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SizeVariationMethod * / any */ String
   ] = js.undefined

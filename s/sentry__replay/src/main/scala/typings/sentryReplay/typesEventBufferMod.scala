@@ -1,6 +1,7 @@
 package typings.sentryReplay
 
-import typings.sentryReplay.typesTypesMod.EventBuffer
+import typings.sentryReplay.typesTypesReplayMod.EventBuffer
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,21 @@ object typesEventBufferMod {
   @JSImport("@sentry/replay/types/eventBuffer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@sentry/replay/types/eventBuffer", "EventBufferSizeExceededError")
+  @js.native
+  open class EventBufferSizeExceededError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   inline def createEventBuffer(param0: CreateEventBufferParams): EventBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBuffer")(param0.asInstanceOf[js.Any]).asInstanceOf[EventBuffer]
   

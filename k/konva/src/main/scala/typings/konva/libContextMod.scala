@@ -82,6 +82,9 @@ object libContextMod {
     def clearTrace(): Unit = js.native
     
     def clip(): Unit = js.native
+    def clip(fillRule: CanvasFillRule): Unit = js.native
+    def clip(path: Path2D): Unit = js.native
+    def clip(path: Path2D, fillRule: CanvasFillRule): Unit = js.native
     
     def closePath(): Unit = js.native
     
@@ -110,7 +113,9 @@ object libContextMod {
     def ellipse(a0: Double, a1: Double, a2: Double, a3: Double, a4: Double, a5: Double, a6: Double, a7: Boolean): Unit = js.native
     
     def fill(): Unit = js.native
-    def fill(path2d: Path2D): Unit = js.native
+    def fill(fillRule: CanvasFillRule): Unit = js.native
+    def fill(path: Path2D): Unit = js.native
+    def fill(path: Path2D, fillRule: CanvasFillRule): Unit = js.native
     
     def fillRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
     

@@ -10,8 +10,7 @@ sealed trait ChangeTrackingState extends StObject
   * Specify the track state when ChangeTracking is on.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.5]
   */
 @JSGlobal("Word.ChangeTrackingState")
 @js.native
@@ -19,7 +18,7 @@ object ChangeTrackingState extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait added
@@ -28,7 +27,7 @@ object ChangeTrackingState extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait deleted
@@ -37,7 +36,7 @@ object ChangeTrackingState extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait normal
@@ -46,7 +45,7 @@ object ChangeTrackingState extends StObject {
   
   /**
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.5]
     */
   @js.native
   sealed trait unknown

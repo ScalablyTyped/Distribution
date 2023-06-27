@@ -10,24 +10,24 @@ trait CustomContentProperties
      with ContentProperties {
   
   /**
-    * The function that is called to create the custom content element.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
-    */
+  		 * The function that is called to create the custom content element.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
+  		 */
   var creator: js.UndefOr[PopupTemplateContentCreator] = js.undefined
   
   /**
-    * The called function to cleanup custom content when it is no longer necessary.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#destroyer)
-    */
+  		 * The called function to cleanup custom content when it is no longer necessary.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#destroyer)
+  		 */
   var destroyer: js.UndefOr[PopupTemplateContentDestroyer] = js.undefined
   
   /**
-    * An array of field names used in the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#outFields)
-    */
+  		 * An array of field names used in the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#outFields)
+  		 */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CustomContentProperties {

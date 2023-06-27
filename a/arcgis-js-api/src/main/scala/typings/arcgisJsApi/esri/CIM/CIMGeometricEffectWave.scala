@@ -10,26 +10,26 @@ trait CIMGeometricEffectWave
      with CIMGeometricEffectType {
   
   /**
-    * The distance perpendicular to a feature to display the curves for the symbol.
-    */
+  			 * The distance perpendicular to a feature to display the curves for the symbol.
+  			 */
   var amplitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * The distance along the line or polygon to display the curves for the symbol.
-    */
+  			 * The distance along the line or polygon to display the curves for the symbol.
+  			 */
   var period: js.UndefOr[Double] = js.undefined
   
   /**
-    * The staring value for generating a random number. This is only used when the Waveform is set to Random.
-    */
+  			 * The staring value for generating a random number. This is only used when the Waveform is set to Random.
+  			 */
   var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
   var type_CIMGeometricEffectWave: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectWave
   
   /**
-    * The shape of the curves to be displayed along the symbol.
-    */
+  			 * The shape of the curves to be displayed along the symbol.
+  			 */
   var waveform: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectWaveform * / any */ String
   ] = js.undefined

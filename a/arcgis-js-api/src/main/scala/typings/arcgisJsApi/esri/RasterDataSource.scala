@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterDataSource extends StObject {
   
   /**
-    * The name of the raster in the registered workspace.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
-    */
+  		 * The name of the raster in the registered workspace.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
+  		 */
   var dataSourceName: String
   
   /**
-    * This value is always `raster`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
-    */
+  		 * This value is always `raster`.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
+  		 */
   var `type`: raster
   
   /**
-    * The workspace where the raster resides as defined in the ArcGIS Server Manager.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
-    */
+  		 * The workspace where the raster resides as defined in the ArcGIS Server Manager.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#RasterDataSource)
+  		 */
   var workspaceId: String
 }
 object RasterDataSource {

@@ -4,34 +4,66 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The dimensions of a piece of text in the canvas, as created by the CanvasRenderingContext2D.measureText() method. */
+/**
+  * The dimensions of a piece of text in the canvas, as created by the CanvasRenderingContext2D.measureText() method.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics)
+  */
 trait TextMetrics extends StObject {
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxAscent)
+    */
   /* standard dom */
   val actualBoundingBoxAscent: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxDescent)
+    */
   /* standard dom */
   val actualBoundingBoxDescent: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxLeft)
+    */
   /* standard dom */
   val actualBoundingBoxLeft: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/actualBoundingBoxRight)
+    */
   /* standard dom */
   val actualBoundingBoxRight: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxAscent)
+    */
   /* standard dom */
   val fontBoundingBoxAscent: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/fontBoundingBoxDescent)
+    */
   /* standard dom */
   val fontBoundingBoxDescent: Double
   
-  /** Returns the measurement described below. */
+  /**
+    * Returns the measurement described below.
+    *
+    * [MDN Reference](https://developer.mozilla.org/docs/Web/API/TextMetrics/width)
+    */
   /* standard dom */
   val width: Double
 }

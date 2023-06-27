@@ -124,8 +124,8 @@ object sapUiLayoutFormFormElementMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
-      * @SINCE 1.74.0
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * @since 1.74.0
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Sets the editable state of the `FormElement`.
       *
@@ -236,7 +236,7 @@ object sapUiLayoutFormFormElementMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Labels inside of a Form must be invalidated if "editable" changed on Form
       */

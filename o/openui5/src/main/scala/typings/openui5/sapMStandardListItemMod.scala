@@ -127,7 +127,7 @@ object sapMStandardListItemMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Destroys the avatar in the aggregation {@link #getAvatar avatar}.
       *
@@ -145,7 +145,7 @@ object sapMStandardListItemMod {
     def getActiveIcon(): URI = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Gets current value of property {@link #getAdaptTitleSize adaptTitleSize}.
       *
@@ -160,7 +160,7 @@ object sapMStandardListItemMod {
     def getAdaptTitleSize(): Boolean = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Gets content of aggregation {@link #getAvatar avatar}.
       *
@@ -240,7 +240,7 @@ object sapMStandardListItemMod {
     def getInfoState(): ValueState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ValueState * / any */ String) = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Gets current value of property {@link #getInfoStateInverted infoStateInverted}.
       *
@@ -255,7 +255,7 @@ object sapMStandardListItemMod {
     def getInfoStateInverted(): Boolean = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getInfoTextDirection infoTextDirection}.
       *
@@ -278,7 +278,7 @@ object sapMStandardListItemMod {
     def getTitle(): String = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Gets current value of property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -292,7 +292,7 @@ object sapMStandardListItemMod {
     def getTitleTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Gets current value of property {@link #getWrapCharLimit wrapCharLimit}.
       *
@@ -312,7 +312,7 @@ object sapMStandardListItemMod {
     def getWrapCharLimit(): int = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Gets current value of property {@link #getWrapping wrapping}.
       *
@@ -348,7 +348,7 @@ object sapMStandardListItemMod {
     sActiveIcon: URI): this.type = js.native
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * Sets a new value for property {@link #getAdaptTitleSize adaptTitleSize}.
       *
@@ -369,7 +369,7 @@ object sapMStandardListItemMod {
     bAdaptTitleSize: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * Sets the aggregated {@link #getAvatar avatar}.
       *
@@ -489,7 +489,7 @@ object sapMStandardListItemMod {
     sInfoState: ValueState): this.type = js.native
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Sets a new value for property {@link #getInfoStateInverted infoStateInverted}.
       *
@@ -510,7 +510,7 @@ object sapMStandardListItemMod {
     bInfoStateInverted: Boolean): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getInfoTextDirection infoTextDirection}.
       *
@@ -551,7 +551,7 @@ object sapMStandardListItemMod {
     sTitle: String): this.type = js.native
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Sets a new value for property {@link #getTitleTextDirection titleTextDirection}.
       *
@@ -577,7 +577,7 @@ object sapMStandardListItemMod {
     sTitleTextDirection: TextDirection): this.type = js.native
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * Sets a new value for property {@link #getWrapCharLimit wrapCharLimit}.
       *
@@ -603,7 +603,7 @@ object sapMStandardListItemMod {
     iWrapCharLimit: int): this.type = js.native
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Sets a new value for property {@link #getWrapping wrapping}.
       *
@@ -640,7 +640,7 @@ object sapMStandardListItemMod {
     var activeIcon: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.16.3
+      * @since 1.16.3
       *
       * By default, the title size adapts to the available space and gets bigger if the description is empty.
       * If you have list items with and without descriptions, this results in titles with different sizes. In
@@ -651,7 +651,7 @@ object sapMStandardListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.98
+      * @since 1.98
       *
       * A `sap.m.Avatar` control instance that, if set, is used instead of an icon or image.
       *
@@ -705,7 +705,7 @@ object sapMStandardListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.74
+      * @since 1.74
       *
       * Determines the inverted rendering behavior of the info text and the info state. The color defined by
       * the `infoState` property is rendered as the background color for the info text, if this property is set
@@ -716,7 +716,7 @@ object sapMStandardListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the `info` directionality with enumerated options. By default, the control inherits text direction
       * from the DOM.
@@ -731,7 +731,7 @@ object sapMStandardListItemMod {
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.28.0
+      * @since 1.28.0
       *
       * Defines the `title` text directionality with enumerated options. By default, the control inherits text
       * direction from the DOM.
@@ -741,7 +741,7 @@ object sapMStandardListItemMod {
       ] = js.undefined
     
     /**
-      * @SINCE 1.94
+      * @since 1.94
       *
       * This property can be used to change the default character limits for the wrapping behavior.
       *
@@ -755,7 +755,7 @@ object sapMStandardListItemMod {
     var wrapCharLimit: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.67
+      * @since 1.67
       *
       * Defines the wrapping behavior of title and description texts.
       *

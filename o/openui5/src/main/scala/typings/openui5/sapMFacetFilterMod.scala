@@ -22,7 +22,7 @@ object sapMFacetFilterMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	{@link topic:c6c38217a4a64001a22ad76cdfa97fae Facet Filter}
+    * 	{@link https://ui5.sap.com/#/topic/c6c38217a4a64001a22ad76cdfa97fae Facet Filter}
     */
   open class default () extends FacetFilter {
     def this(/**
@@ -156,13 +156,13 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilter` itself
       */
@@ -187,7 +187,7 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachConfirm(
       /**
@@ -198,7 +198,7 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilter` itself
       */
@@ -224,13 +224,13 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilter` itself
       */
@@ -260,7 +260,7 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachReset(
       /**
@@ -271,7 +271,7 @@ object sapMFacetFilterMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.m.FacetFilter` itself
       */
@@ -296,13 +296,13 @@ object sapMFacetFilterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachConfirm(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -320,13 +320,13 @@ object sapMFacetFilterMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachReset(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -334,7 +334,7 @@ object sapMFacetFilterMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
@@ -347,7 +347,7 @@ object sapMFacetFilterMod {
     mParameters: js.Object): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:reset reset} to attached listeners.
       *
@@ -622,6 +622,18 @@ object sapMFacetFilterMod {
     sType: FacetFilterType): this.type = js.native
   }
   
+  trait FacetFilter$ConfirmEventParameters extends StObject
+  
+  trait FacetFilter$ResetEventParameters extends StObject
+  
+  type FacetFilterConfirmEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilter$ConfirmEventParameters]
+  
+  type FacetFilterConfirmEventParameters = FacetFilter$ConfirmEventParameters
+  
+  type FacetFilterResetEvent = typings.openui5.sapUiBaseEventMod.default[FacetFilter$ResetEventParameters]
+  
+  type FacetFilterResetEventParameters = FacetFilter$ResetEventParameters
+  
   trait FacetFilterSettings
     extends StObject
        with ControlSettings {
@@ -629,7 +641,9 @@ object sapMFacetFilterMod {
     /**
       * Fired when the user confirms filter selection.
       */
-    var confirm: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var confirm: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Collection of FacetFilterList controls.
@@ -653,7 +667,9 @@ object sapMFacetFilterMod {
       * filtering behavior has to be defined at application level inside the `search` and `reset` event handler
       * functions.
       */
-    var reset: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var reset: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * If set to `true` and the FacetFilter type is `Simple`, then the Add Facet icon will be displayed and
@@ -707,7 +723,7 @@ object sapMFacetFilterMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FacetFilterSettings] (val x: Self) extends AnyVal {
       
-      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+      inline def setConfirm(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
       
       inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
       
@@ -723,7 +739,7 @@ object sapMFacetFilterMod {
       
       inline def setLiveSearchUndefined: Self = StObject.set(x, "liveSearch", js.undefined)
       
-      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       

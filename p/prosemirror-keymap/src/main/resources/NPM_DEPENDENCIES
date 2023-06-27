@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prosemirror-keymap" : "1.2.1"
+      "prosemirror-keymap" : "1.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prosemirror-keymap" : "1.2.1"
+      "prosemirror-keymap" : "1.2.2"
     }
   ],
   "compile-devDependencies" : [

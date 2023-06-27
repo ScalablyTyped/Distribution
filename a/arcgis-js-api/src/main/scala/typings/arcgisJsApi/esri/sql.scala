@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Creates a [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) expression that adheres to standardized SQL expressions.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html)
-  */
+	 * Creates a [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) expression that adheres to standardized SQL expressions.
+	 *
+	 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html)
+	 */
 trait sql extends StObject {
   
   /**
-    * Parses the given where clause string and returns an instance of [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) when resolved.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html#parseWhereClause)
-    */
+  		 * Parses the given where clause string and returns an instance of [WhereClause](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html) when resolved.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql.html#parseWhereClause)
+  		 */
   def parseWhereClause(clause: String, fieldsIndex: FieldsIndex): js.Promise[WhereClause]
 }
 object sql {

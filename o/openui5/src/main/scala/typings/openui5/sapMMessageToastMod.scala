@@ -13,7 +13,7 @@ object sapMMessageToastMod extends Shortcut {
   val default: MessageToast = js.native
   
   /**
-    * @SINCE 1.9.2
+    * @since 1.9.2
     *
     * A small, non-disruptive popup for messages. Overview: A message toast is a small, non-disruptive popup
     * for success or information messages that disappears automatically after a few seconds. Toasts automatically
@@ -22,7 +22,7 @@ object sapMMessageToastMod extends Shortcut {
     * 	 - If the configured message contains HTML code or script tags, those will be escaped.
     * 	 - Line breaks (\r\n, \n\r, \r, \n) will be visualized.
     * 	 - Only one message toast can be shown at a time in the same place.  Example:: Here is an example
-    * 			of a MessageToast with all default options:
+    *     of a MessageToast with all default options:
     * ```javascript
     *
     * sap.m.MessageToast.show("This message should appear in the message toast", {
@@ -47,9 +47,9 @@ object sapMMessageToastMod extends Shortcut {
     * 	 - You want to display an error or warning message.
     * 	 - You want to interrupt users while they are performing an action.
     * 	 - You want to make sure that users read the message before they leave the page.
-    * 	 - You want users to be able to copy some part of the message text. (In this case, show a success {@link
-    * 			sap.m.Dialog Message Dialog}.)  Responsive Behavior: The message toast has the same behavior on
-    * 			all devices. However, you can adjust the width of the control, for example, for use on a desktop device.
+    * 	 - You want users to be able to copy some part of the message text. (In this case, show a success {@link sap.m.Dialog Message Dialog}.)
+    *      Responsive Behavior: The message toast has the same behavior on all devices. However, you can adjust
+    *     the width of the control, for example, for use on a desktop device.
     * See:
     * 	{@link fiori:https://experience.sap.com/fiori-design-web/message-toast/ Message Toast}
     */

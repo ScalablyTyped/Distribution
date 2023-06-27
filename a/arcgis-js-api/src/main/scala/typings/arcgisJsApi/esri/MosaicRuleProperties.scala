@@ -22,90 +22,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MosaicRuleProperties extends StObject {
   
   /**
-    * Indicates whether the sort should be ascending.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#ascending)
-    */
+  		 * Indicates whether the sort should be ascending.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#ascending)
+  		 */
   var ascending: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The rendering rule applied on items before mosaicking.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRenderingRule)
-    */
-  var itemRenderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
+  		 * The raster function applied on items before mosaicking.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRasterFunction)
+  		 */
+  var itemRasterFunction: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
-    * An array of raster Ids.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
-    */
+  		 * The raster function applied on items before mosaicking.
+  		 *
+  		 * @deprecated since version 4.27. Use {@link module:esri/layers/support/MosaicRule#itemRasterFunction itemRasterFunction} instead.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRenderingRule)
+  		 */
+  var itemRenderingRule: js.UndefOr[scala.Unit] = js.undefined
+  
+  /**
+  		 * An array of raster Ids.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
+  		 */
   var lockRasterIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * The mosaic method determines how the selected rasters are ordered.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method)
-    */
+  		 * The mosaic method determines how the selected rasters are ordered.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method)
+  		 */
   var method: js.UndefOr[
     none_ | center_ | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline
   ] = js.undefined
   
   /**
-    * The multidimensional definitions associated with the [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#mosaicRule).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition)
-    */
+  		 * The multidimensional definitions associated with the [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#mosaicRule).
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#multidimensionalDefinition)
+  		 */
   var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinitionProperties]] = js.undefined
   
   /**
-    * Defines a selection using a set of ObjectIDs.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#objectIds)
-    */
+  		 * Defines a selection using a set of ObjectIDs.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#objectIds)
+  		 */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * Defines the mosaic operation used to resolve overlapping pixels.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#operation)
-    */
+  		 * Defines the mosaic operation used to resolve overlapping pixels.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#operation)
+  		 */
   var operation: js.UndefOr[first | last | min | max | mean | blend | sum] = js.undefined
   
   /**
-    * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortField)
-    */
+  		 * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortField)
+  		 */
   var sortField: js.UndefOr[String] = js.undefined
   
   /**
-    * A constant value defining a reference or base value for the sort field when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortValue)
-    */
+  		 * A constant value defining a reference or base value for the sort field when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
+  		 *
+  		 * @default null
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortValue)
+  		 */
   var sortValue: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * Defines the viewpoint location on which the ordering is defined based on the distance from the viewpoint and the nadir of rasters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#viewpoint)
-    */
+  		 * Defines the viewpoint location on which the ordering is defined based on the distance from the viewpoint and the nadir of rasters.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#viewpoint)
+  		 */
   var viewpoint: js.UndefOr[PointProperties] = js.undefined
   
   /**
-    * The where clause determines which rasters will participate in the mosaic.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#where)
-    */
+  		 * The where clause determines which rasters will participate in the mosaic.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#where)
+  		 */
   var where: js.UndefOr[String] = js.undefined
 }
 object MosaicRuleProperties {
@@ -122,7 +131,11 @@ object MosaicRuleProperties {
     
     inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    inline def setItemRenderingRule(value: RasterFunctionProperties): Self = StObject.set(x, "itemRenderingRule", value.asInstanceOf[js.Any])
+    inline def setItemRasterFunction(value: RasterFunctionProperties): Self = StObject.set(x, "itemRasterFunction", value.asInstanceOf[js.Any])
+    
+    inline def setItemRasterFunctionUndefined: Self = StObject.set(x, "itemRasterFunction", js.undefined)
+    
+    inline def setItemRenderingRule(value: scala.Unit): Self = StObject.set(x, "itemRenderingRule", value.asInstanceOf[js.Any])
     
     inline def setItemRenderingRuleUndefined: Self = StObject.set(x, "itemRenderingRule", js.undefined)
     

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BookmarkThumbnail extends StObject {
   
   /**
-    * URL to a thumbnail to display.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
-    */
+  		 * URL to a thumbnail to display.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html#thumbnail)
+  		 */
   var url: js.UndefOr[String] = js.undefined
 }
 object BookmarkThumbnail {

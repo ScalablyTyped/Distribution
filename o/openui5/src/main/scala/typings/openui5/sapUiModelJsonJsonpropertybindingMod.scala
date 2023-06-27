@@ -11,12 +11,12 @@ object sapUiModelJsonJsonpropertybindingMod {
   open class default protected ()
     extends typings.openui5.sapUiModelClientPropertyBindingMod.default {
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Creates a new JSONListBinding.
       *
       * This constructor should only be called by subclasses or model implementations, not by application or
-      * control code. Such code should use {@link sap.ui.model.json.JSONModel#bindProperty JSONModel#bindProperty}
+      * control code. Such code should use {@link sap.ui.model.json.JSONModel#bindProperty JSONModel#bindProperty }
       * on the corresponding model instance instead.
       */
     def this(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-port
 
-Typings are for version 6.1.2
+Typings are for version 7.0.0
 
 ## Library description:
 Get an available port

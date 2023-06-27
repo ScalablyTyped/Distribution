@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Platform Keys //
 ///////////////////
 /**
-  * @requires(CrOS) Only for Chrome OS.
+  * @requires Only for Chrome OS.
   * @requires Permissions: 'platformKeys'
   * @description
   * Use the *chrome.platformKeys* API to access client certificates
@@ -27,7 +27,7 @@ object platformKeys {
   
   /**
     * Analogous to TLS1.1's CertificateRequest.
-    * @see{@link http://tools.ietf.org/html/rfc4346#section-7.4.4}
+    * @see http://tools.ietf.org/html/rfc4346#section-7.4.4
     */
   trait ClientCertificateRequest extends StObject {
     
@@ -101,7 +101,7 @@ object platformKeys {
     var certificate: js.typedarray.ArrayBuffer
     
     /**
-      * @see[KeyAlgorithm]{@link http://www.w3.org/TR/WebCryptoAPI/#key-algorithm-interface}
+      * @see http://www.w3.org/TR/WebCryptoAPI/#key-algorithm-interface
       * @description
       * The KeyAlgorithm of the certified key. This contains algorithm
       * parameters that are inherent to the key of the certificate (e.g. the key

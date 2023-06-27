@@ -160,13 +160,13 @@ object sapUiCoreIconMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Icon` itself
       */
@@ -192,7 +192,7 @@ object sapUiCoreIconMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def attachPress(
       /**
@@ -203,7 +203,7 @@ object sapUiCoreIconMod {
       /**
       * The function to be called when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object to call the event handler with. Defaults to this `sap.ui.core.Icon` itself
       */
@@ -221,13 +221,13 @@ object sapUiCoreIconMod {
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit]
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
     ): this.type = js.native
     def detachPress(
       /**
       * The function to be called, when the event occurs
       */
-    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default, Unit],
+    fnFunction: js.Function1[/* p1 */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit],
       /**
       * Context object on which the given function had to be called
       */
@@ -235,7 +235,7 @@ object sapUiCoreIconMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -252,8 +252,7 @@ object sapUiCoreIconMod {
       *
       * Background color for Icon in active state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `activeBackgroundColor`
       */
@@ -264,15 +263,14 @@ object sapUiCoreIconMod {
       *
       * This color is shown when icon is pressed/activated by the user.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `activeColor`
       */
     def getActiveColor(): String = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getAlt alt}.
       *
@@ -283,8 +281,7 @@ object sapUiCoreIconMod {
     def getAlt(): String = js.native
     
     /**
-      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
-      * ariaLabelledBy}.
+      * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
@@ -293,8 +290,7 @@ object sapUiCoreIconMod {
       *
       * Background color of the Icon in normal state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `backgroundColor`
       */
@@ -305,15 +301,14 @@ object sapUiCoreIconMod {
       *
       * The color of the Icon. If color is not defined here, the Icon inherits the color from its DOM parent.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `color`
       */
     def getColor(): String = js.native
     
     /**
-      * @SINCE 1.16.4
+      * @since 1.16.4
       *
       * Gets current value of property {@link #getDecorative decorative}.
       *
@@ -342,8 +337,7 @@ object sapUiCoreIconMod {
       *
       * Background color for Icon in hover state. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `hoverBackgroundColor`
       */
@@ -354,15 +348,14 @@ object sapUiCoreIconMod {
       *
       * This color is shown when icon is hovered. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * @returns Value of property `hoverColor`
       */
     def getHoverColor(): String = js.native
     
     /**
-      * @SINCE 1.30.1
+      * @since 1.30.1
       *
       * Gets current value of property {@link #getNoTabStop noTabStop}.
       *
@@ -406,7 +399,7 @@ object sapUiCoreIconMod {
     def getSrc(): URI = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Gets current value of property {@link #getUseIconTooltip useIconTooltip}.
       *
@@ -460,8 +453,7 @@ object sapUiCoreIconMod {
       *
       * Background color for Icon in active state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -478,8 +470,7 @@ object sapUiCoreIconMod {
       *
       * This color is shown when icon is pressed/activated by the user.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -492,7 +483,7 @@ object sapUiCoreIconMod {
     sActiveColor: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getAlt alt}.
       *
@@ -513,8 +504,7 @@ object sapUiCoreIconMod {
       *
       * Background color of the Icon in normal state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -531,8 +521,7 @@ object sapUiCoreIconMod {
       *
       * The color of the Icon. If color is not defined here, the Icon inherits the color from its DOM parent.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -545,7 +534,7 @@ object sapUiCoreIconMod {
     sColor: String): this.type = js.native
     
     /**
-      * @SINCE 1.16.4
+      * @since 1.16.4
       *
       * Sets a new value for property {@link #getDecorative decorative}.
       *
@@ -586,8 +575,7 @@ object sapUiCoreIconMod {
       *
       * Background color for Icon in hover state. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -604,8 +592,7 @@ object sapUiCoreIconMod {
       *
       * This color is shown when icon is hovered. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -618,7 +605,7 @@ object sapUiCoreIconMod {
     sHoverColor: String): this.type = js.native
     
     /**
-      * @SINCE 1.30.1
+      * @since 1.30.1
       *
       * Sets a new value for property {@link #getNoTabStop noTabStop}.
       *
@@ -680,7 +667,7 @@ object sapUiCoreIconMod {
     sSrc: URI): this.type = js.native
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Sets a new value for property {@link #getUseIconTooltip useIconTooltip}.
       *
@@ -715,6 +702,12 @@ object sapUiCoreIconMod {
     sWidth: CSSSize): this.type = js.native
   }
   
+  trait Icon$PressEventParameters extends StObject
+  
+  type IconPressEvent = typings.openui5.sapUiBaseEventMod.default[Icon$PressEventParameters]
+  
+  type IconPressEventParameters = Icon$PressEventParameters
+  
   trait IconSettings
     extends StObject
        with ControlSettings {
@@ -722,21 +715,19 @@ object sapUiCoreIconMod {
     /**
       * Background color for Icon in active state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var activeBackgroundColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
       * This color is shown when icon is pressed/activated by the user.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var activeColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * This defines the alternative text which is used for outputting the aria-label attribute on the DOM.
       */
@@ -750,21 +741,19 @@ object sapUiCoreIconMod {
     /**
       * Background color of the Icon in normal state.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var backgroundColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
       * The color of the Icon. If color is not defined here, the Icon inherits the color from its DOM parent.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var color: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.16.4
+      * @since 1.16.4
       *
       * A decorative icon is included for design reasons. Accessibility tools will ignore decorative icons. Tab
       * stop isn't affected by this property anymore and it's now controlled by the existence of press event
@@ -785,21 +774,19 @@ object sapUiCoreIconMod {
     /**
       * Background color for Icon in hover state. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var hoverBackgroundColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
       * This color is shown when icon is hovered. This property has no visual effect when run on mobile device.
       *
-      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic
-      * Icon Color}.
+      * The property can be set with {@link sap.ui.core.CSSColor CSS Color} or {@link sap.ui.core.IconColor Semantic Icon Color}.
       */
     var hoverColor: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * @SINCE 1.30.1
+      * @since 1.30.1
       *
       * Defines whether the tab stop of icon is controlled by the existence of press event handler. When it's
       * set to false, Icon control has tab stop when press event handler is attached. If it's set to true, Icon
@@ -813,7 +800,9 @@ object sapUiCoreIconMod {
       * This event is fired when icon is pressed/activated by the user. When a handler is attached to this event,
       * the Icon gets tab stop. If you want to disable this behavior, set the noTabStop property to true.
       */
-    var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
+    var press: js.UndefOr[
+        js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object], Unit]
+      ] = js.undefined
     
     /**
       * Since Icon uses font, this property will be applied to the css font-size property on the rendered DOM
@@ -839,7 +828,7 @@ object sapUiCoreIconMod {
     var src: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
-      * @SINCE 1.30.0
+      * @since 1.30.0
       *
       * Decides whether a default Icon tooltip should be used if no tooltip is set.
       */
@@ -911,7 +900,7 @@ object sapUiCoreIconMod {
       
       inline def setNoTabStopUndefined: Self = StObject.set(x, "noTabStop", js.undefined)
       
-      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+      inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default[js.Object] => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       

@@ -11,16 +11,16 @@ sealed trait PlacementStepPosition extends StObject
 object PlacementStepPosition extends StObject {
   
   /**
-    * The marker bounds.
-    */
+  			 * The marker bounds.
+  			 */
   @js.native
   sealed trait MarkerBounds
     extends StObject
        with PlacementStepPosition
   
   /**
-    * The marker center.
-    */
+  			 * The marker center.
+  			 */
   @js.native
   sealed trait MarkerCenter
     extends StObject

@@ -13,7 +13,7 @@ trait FileSystemPermission
      with ChromeOSOnlyPermissions {
   
   /**
-    * @requires(CrOS) 'requestFileSystem' is only for ChromeOS
+    * @requires 'requestFileSystem' is only for ChromeOS
     */
   var fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem]
 }

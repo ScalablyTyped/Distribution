@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "remark-stringify" : "10.0.2"
+      "remark-stringify" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "remark-stringify" : "10.0.2"
+      "remark-stringify" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

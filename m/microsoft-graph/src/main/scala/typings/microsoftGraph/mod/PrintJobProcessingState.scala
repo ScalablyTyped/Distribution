@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.completed_
+import typings.microsoftGraph.microsoftGraphStrings.paused_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
   - typings.microsoftGraph.microsoftGraphStrings.pending
   - typings.microsoftGraph.microsoftGraphStrings.processing
-  - typings.microsoftGraph.microsoftGraphStrings.paused
+  - typings.microsoftGraph.microsoftGraphStrings.paused_
   - typings.microsoftGraph.microsoftGraphStrings.stopped
   - typings.microsoftGraph.microsoftGraphStrings.completed_
   - typings.microsoftGraph.microsoftGraphStrings.canceled
@@ -27,7 +28,7 @@ object PrintJobProcessingState {
   
   inline def completed: completed_ = "completed".asInstanceOf[completed_]
   
-  inline def paused: typings.microsoftGraph.microsoftGraphStrings.paused = "paused".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.paused]
+  inline def paused: paused_ = "paused".asInstanceOf[paused_]
   
   inline def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
   

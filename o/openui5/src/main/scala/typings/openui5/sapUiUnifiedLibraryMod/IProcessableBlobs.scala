@@ -10,7 +10,7 @@ trait IProcessableBlobs extends StObject {
   var __implements__sap_ui_unified_IProcessableBlobs: Boolean
   
   /**
-    * @SINCE 1.52
+    * @since 1.52
     *
     * Allows to process Blobs before they get uploaded. This API can be used to create custom Blobs and upload
     * these custom Blobs instead of the received/initials Blobs in the parameter `aBlobs`. One use case could

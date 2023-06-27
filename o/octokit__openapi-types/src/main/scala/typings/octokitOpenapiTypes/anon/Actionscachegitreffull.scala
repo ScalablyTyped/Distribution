@@ -359,7 +359,7 @@ trait Actionscachegitreffull extends StObject {
   /** @description The unique identifier of the release. */
   var `release-id`: Double
   
-  /** @description The name of the repository. The name is not case sensitive. */
+  /** @description The name of the repository without the `.git` extension. The name is not case sensitive. */
   var repo: String
   
   /** @description repo_name parameter */

@@ -27,7 +27,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param name
@@ -41,7 +40,6 @@ Instantiable0[Any] {
     * @return  {Object}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @return
@@ -58,7 +56,6 @@ Instantiable0[Any] {
     * @return  {string}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @return
@@ -71,7 +68,6 @@ Instantiable0[Any] {
     * @return  {string[]}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param name
@@ -83,7 +79,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2009.1
     * @return
@@ -101,7 +96,6 @@ Instantiable0[Any] {
     * @param {Object} [parameters] Object used to specify additional URL parameters as name/value pairs
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param type
@@ -132,7 +126,6 @@ Instantiable0[Any] {
     * @param {string} disposition Content Disposition used for streaming attachments: inline|attachment
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param type
@@ -150,7 +143,6 @@ Instantiable0[Any] {
     * @param {String} encoding
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2012.2
     * @param encoding
@@ -165,7 +157,6 @@ Instantiable0[Any] {
     * @return  {void}
     *
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param name
@@ -180,7 +171,6 @@ Instantiable0[Any] {
     * @param {string} output
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param output
@@ -194,7 +184,6 @@ Instantiable0[Any] {
     * @param {string} output
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param output
@@ -208,7 +197,6 @@ Instantiable0[Any] {
     * @param {Object} pageobject page UI object: nlobjList|nlobjAssistant|nlobjForm|nlobjDashboard
     * @return {void}
     * @method
-    * @memberOf nlobjResponse
     *
     * @since 2008.2
     * @param pageobject

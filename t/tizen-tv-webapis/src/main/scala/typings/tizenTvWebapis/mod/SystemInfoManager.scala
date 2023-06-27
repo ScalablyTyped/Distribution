@@ -11,7 +11,7 @@ trait SystemInfoManager extends StObject {
     *
     * @returns value of plugin's version
     *
-    * @throw None N/A
+    * @throws None N/A
     *
     * @since 6.0
     *
@@ -43,7 +43,7 @@ trait SystemInfoManager extends StObject {
     * - true: supported
     * - false: unsupported
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 6.0
     *
@@ -84,7 +84,7 @@ trait SystemInfoManager extends StObject {
     * true: supported
     * false: unsupported
     *
-    * @throw WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
+    * @throws WebAPIException with error type TypeMismatchError, if an input parameter is not compatible with its expected type.
     *
     * @since 6.0
     *

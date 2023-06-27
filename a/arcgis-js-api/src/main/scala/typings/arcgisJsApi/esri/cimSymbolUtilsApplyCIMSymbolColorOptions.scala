@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait cimSymbolUtilsApplyCIMSymbolColorOptions extends StObject {
   
   /**
-    * The symbol layers to apply the color to.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#applyCIMSymbolColor)
-    */
+  		 * The symbol layers to apply the color to.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-cimSymbolUtils.html#applyCIMSymbolColor)
+  		 */
   var layersToColor: js.UndefOr[fill | outline | `fill-and-outline`] = js.undefined
 }
 object cimSymbolUtilsApplyCIMSymbolColorOptions {

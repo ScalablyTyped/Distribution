@@ -13,12 +13,17 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
   
   @js.native
   sealed trait Action extends StObject
+  /**
+    * @deprecated (since 1.38)
+    *
+    * Enumeration of supported actions in a MessageBox.
+    *
+    * Each action is represented as a button in the message box. The values of this enumeration are used for
+    * both, specifying the set of allowed actions as well as reporting back the user choice.
+    */
   @JSImport("sap/ui/commons/MessageBox", "Action")
   @js.native
   object Action extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Action & String] = js.native
     
     /**
       * Adds an "Abort" button to the message box.
@@ -27,7 +32,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait ABORT
       extends StObject
          with Action
-    /* "ABORT" */ val ABORT: typings.openui5.sapUiCommonsMessageBoxMod.Action.ABORT & String = js.native
     
     /**
       * Adds a "Cancel" button to the message box.
@@ -36,7 +40,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait CANCEL
       extends StObject
          with Action
-    /* "CANCEL" */ val CANCEL: typings.openui5.sapUiCommonsMessageBoxMod.Action.CANCEL & String = js.native
     
     /**
       * Adds a "Close" button to the message box.
@@ -45,7 +48,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait CLOSE
       extends StObject
          with Action
-    /* "CLOSE" */ val CLOSE: typings.openui5.sapUiCommonsMessageBoxMod.Action.CLOSE & String = js.native
     
     /**
       * Adds an "Ignore" button to the message box.
@@ -54,7 +56,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait IGNORE
       extends StObject
          with Action
-    /* "IGNORE" */ val IGNORE: typings.openui5.sapUiCommonsMessageBoxMod.Action.IGNORE & String = js.native
     
     /**
       * Adds a "No" button to the message box.
@@ -63,7 +64,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait NO
       extends StObject
          with Action
-    /* "NO" */ val NO: typings.openui5.sapUiCommonsMessageBoxMod.Action.NO & String = js.native
     
     /**
       * Adds an "Ok" button to the message box.
@@ -72,7 +72,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait OK
       extends StObject
          with Action
-    /* "OK" */ val OK: typings.openui5.sapUiCommonsMessageBoxMod.Action.OK & String = js.native
     
     /**
       * Adds a "Retry" button to the message box.
@@ -81,7 +80,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait RETRY
       extends StObject
          with Action
-    /* "RETRY" */ val RETRY: typings.openui5.sapUiCommonsMessageBoxMod.Action.RETRY & String = js.native
     
     /**
       * Adds a "Yes" button to the message box.
@@ -90,17 +88,18 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait YES
       extends StObject
          with Action
-    /* "YES" */ val YES: typings.openui5.sapUiCommonsMessageBoxMod.Action.YES & String = js.native
   }
   
   @js.native
   sealed trait Icon extends StObject
+  /**
+    * @deprecated (since 1.38)
+    *
+    * Enumeration of the pre-defined icons that can be used in a MessageBox.
+    */
   @JSImport("sap/ui/commons/MessageBox", "Icon")
   @js.native
   object Icon extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Icon & String] = js.native
     
     /**
       * @deprecated (since 1.9.1) - The error icon is used instead
@@ -111,7 +110,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait CRITICAL
       extends StObject
          with Icon
-    /* "CRITICAL" */ val CRITICAL: typings.openui5.sapUiCommonsMessageBoxMod.Icon.CRITICAL & String = js.native
     
     /**
       * Shows the error icon in the message box.
@@ -120,7 +118,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait ERROR
       extends StObject
          with Icon
-    /* "ERROR" */ val ERROR: typings.openui5.sapUiCommonsMessageBoxMod.Icon.ERROR & String = js.native
     
     /**
       * Shows the information icon in the message box.
@@ -129,7 +126,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait INFORMATION
       extends StObject
          with Icon
-    /* "INFORMATION" */ val INFORMATION: typings.openui5.sapUiCommonsMessageBoxMod.Icon.INFORMATION & String = js.native
     
     /**
       * Shows no icon in the message box.
@@ -138,7 +134,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait NONE
       extends StObject
          with Icon
-    /* "NONE" */ val NONE: typings.openui5.sapUiCommonsMessageBoxMod.Icon.NONE & String = js.native
     
     /**
       * Shows the question icon in the message box.
@@ -147,7 +142,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait QUESTION
       extends StObject
          with Icon
-    /* "QUESTION" */ val QUESTION: typings.openui5.sapUiCommonsMessageBoxMod.Icon.QUESTION & String = js.native
     
     /**
       * Shows the success icon in the message box.
@@ -156,7 +150,6 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait SUCCESS
       extends StObject
          with Icon
-    /* "SUCCESS" */ val SUCCESS: typings.openui5.sapUiCommonsMessageBoxMod.Icon.SUCCESS & String = js.native
     
     /**
       * Shows the warning icon in the message box.
@@ -165,11 +158,10 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     sealed trait WARNING
       extends StObject
          with Icon
-    /* "WARNING" */ val WARNING: typings.openui5.sapUiCommonsMessageBoxMod.Icon.WARNING & String = js.native
   }
   
   /**
-    * @SINCE 0.8.8
+    * @since 0.8.8
     * @deprecated (since 1.38) - Instead, use the `sap.m.MessageBox` control.
     *
     * Provides methods to create standard alerts, confirmation dialogs, or arbitrary message boxes.
@@ -190,6 +182,23 @@ object sapUiCommonsMessageBoxMod extends Shortcut {
     */
   @js.native
   trait MessageBox extends StObject {
+    
+    /**
+      * @deprecated (since 1.38)
+      *
+      * Enumeration of supported actions in a MessageBox.
+      *
+      * Each action is represented as a button in the message box. The values of this enumeration are used for
+      * both, specifying the set of allowed actions as well as reporting back the user choice.
+      */
+    var Action: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Action */ Any = js.native
+    
+    /**
+      * @deprecated (since 1.38)
+      *
+      * Enumeration of the pre-defined icons that can be used in a MessageBox.
+      */
+    var Icon: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Icon */ Any = js.native
     
     /**
       * Displays an alert box with the given message and an OK button (no icons). If a callback is given, it

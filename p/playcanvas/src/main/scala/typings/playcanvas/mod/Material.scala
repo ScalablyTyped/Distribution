@@ -82,7 +82,7 @@ open class Material () extends StObject {
   def blendState: BlendState = js.native
   /**
     * Controls how fragment shader outputs are blended when being written to the currently active
-    * render target. This overwrites blending type set using {@link pc.Material#blendType}, and
+    * render target. This overwrites blending type set using {@link Material#blendType}, and
     * offers more control over blending.
     *
     * @type { BlendState }

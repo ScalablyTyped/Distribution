@@ -4,7 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The HTML <meter> elements expose the HTMLMeterElement interface, which provides special properties and methods (beyond the HTMLElement object interface they also have available to them by inheritance) for manipulating the layout and presentation of <meter> elements. */
+/**
+  * The HTML <meter> elements expose the HTMLMeterElement interface, which provides special properties and methods (beyond the HTMLElement object interface they also have available to them by inheritance) for manipulating the layout and presentation of <meter> elements.
+  *
+  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement)
+  */
 @js.native
 trait HTMLMeterElement
   extends StObject
@@ -21,21 +25,27 @@ trait HTMLMeterElement
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/high) */
   /* standard dom */
   var high: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/labels) */
   /* standard dom */
   val labels: NodeListOf[HTMLLabelElement] = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/low) */
   /* standard dom */
   var low: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/max) */
   /* standard dom */
   var max: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/min) */
   /* standard dom */
   var min: Double = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/optimum) */
   /* standard dom */
   var optimum: Double = js.native
   
@@ -50,6 +60,7 @@ trait HTMLMeterElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMeterElement/value) */
   /* standard dom */
   var value: Double = js.native
 }

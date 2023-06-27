@@ -12,20 +12,20 @@ object esriRestSupportServiceAreaParametersMod {
   @JSImport("esri/rest/support/ServiceAreaParameters", JSImport.Namespace)
   @js.native
   /**
-    * ServiceAreaParameters provides the input parameters for a [serviceArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-serviceArea.html) request.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html)
-    */
+  		 * ServiceAreaParameters provides the input parameters for a [serviceArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-serviceArea.html) request.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaParameters.html)
+  		 */
   open class ^ ()
     extends StObject
        with ServiceAreaParameters {
     def this(properties: ServiceAreaParametersProperties) = this()
     
     /**
-      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
-      *
-      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
-      */
+    		 * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+    		 *
+    		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    		 */
     /* CompleteClass */
     override def toJSON(): Any = js.native
   }

@@ -32,7 +32,7 @@ object MultiSelectMode extends StObject {
   /* "Default" */ val Default: typings.openui5.sapMLibraryMod.MultiSelectMode.Default & String = js.native
   
   /**
-    * @SINCE 1.109
+    * @since 1.109
     *
     * Renders the `selectAll` checkbox with warning popover. Available only for sap.m.Table control
     */

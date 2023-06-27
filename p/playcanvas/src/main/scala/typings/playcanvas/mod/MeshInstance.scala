@@ -148,7 +148,7 @@ open class MeshInstance protected () extends StObject {
   /**
     * Enable shadow casting for this mesh instance. Use this property to enable/disable
     * shadow casting without overhead of removing from scene. Note that this property does not
-    * add the mesh instance to appropriate list of shadow casters on a {@link pc.Layer}, but
+    * add the mesh instance to appropriate list of shadow casters on a {@link Layer}, but
     * allows mesh to be skipped from shadow casting while it is in the list already. Defaults to
     * false.
     *

@@ -10,9 +10,9 @@ trait GraphQuery
      with Accessor {
   
   /**
-    * The Esri implementation of [openCypher](https://opencypher.org/) query to be executed against the knowledge graph.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQuery.html#openCypherQuery)
-    */
+  		 * The Esri implementation of [openCypher](https://opencypher.org/) query to be executed against the knowledge graph.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphQuery.html#openCypherQuery)
+  		 */
   var openCypherQuery: String = js.native
 }

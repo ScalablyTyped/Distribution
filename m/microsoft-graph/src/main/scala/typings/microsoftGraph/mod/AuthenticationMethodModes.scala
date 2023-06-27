@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.password_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.password
+  - typings.microsoftGraph.microsoftGraphStrings.password_
   - typings.microsoftGraph.microsoftGraphStrings.voice
   - typings.microsoftGraph.microsoftGraphStrings.hardwareOath
   - typings.microsoftGraph.microsoftGraphStrings.softwareOath
@@ -41,7 +42,7 @@ object AuthenticationMethodModes {
   
   inline def microsoftAuthenticatorPush: typings.microsoftGraph.microsoftGraphStrings.microsoftAuthenticatorPush = "microsoftAuthenticatorPush".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftAuthenticatorPush]
   
-  inline def password: typings.microsoftGraph.microsoftGraphStrings.password = "password".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.password]
+  inline def password: password_ = "password".asInstanceOf[password_]
   
   inline def sms: typings.microsoftGraph.microsoftGraphStrings.sms = "sms".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sms]
   

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `10` extends StObject {
   
   /**
-    * The id of the PaneBarItem to which the closed pane belonged.
+    * if `true`, the server accepts the value `null`
     */
-  var id: js.UndefOr[String] = js.undefined
+  var nullable: js.UndefOr[Boolean] = js.undefined
 }
 object `10` {
   
@@ -21,8 +21,8 @@ object `10` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `10`] (val x: Self) extends AnyVal {
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
   }
 }

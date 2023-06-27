@@ -21,10 +21,10 @@ trait SQLDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def insert(reqId: Double, insertionData: RowData): Unit = js.native
   def insert(
@@ -60,10 +60,10 @@ trait SQLDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def remove(reqId: Double, where: String): Unit = js.native
   def remove(reqId: Double, where: String, successCallback: Null, errorCallback: DataControlErrorCallback): Unit = js.native
@@ -98,10 +98,10 @@ trait SQLDataControlConsumer
     * @param order The sorting order of the selected rows.
     * It is an SQL ORDER BY clause excluding the ORDER BY itself such as column1, column2 ASC. If it is set to null, the order in which the rows are returned is undefined.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def select(
     reqId: Double,
@@ -128,10 +128,10 @@ trait SQLDataControlConsumer
     * @param successCallback The method to invoke when the asynchronous call completes successfully.
     * @param errorCallback The method to invoke when an error occurs.
     *
-    * @throw WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
-    * @throw WebAPIException with error type IOError, if a DB operation has failed.
-    * @throw WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
-    * @throw WebAPIException with error type UnknownError, if any other error occurs.
+    * @throws WebAPIException with error type TypeMismatchError, if the parameter type is not compatible with the expected type for that parameter.
+    * @throws WebAPIException with error type IOError, if a DB operation has failed.
+    * @throws WebAPIException with error type SecurityError, if the application does not have the privilege to call this method.
+    * @throws WebAPIException with error type UnknownError, if any other error occurs.
     */
   def update(reqId: Double, updateData: RowData, where: String): Unit = js.native
   def update(

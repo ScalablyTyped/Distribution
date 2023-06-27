@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/app" : "0.9.10"
+      "@firebase/app" : "0.9.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/app" : "0.9.10"
+      "@firebase/app" : "0.9.13"
     }
   ],
   "compile-devDependencies" : [

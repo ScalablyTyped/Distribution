@@ -10,10 +10,10 @@ trait SolidEdges3DProperties
      with Edges3DProperties {
   
   /**
-    * The symbol type.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SolidEdges3D.html#type)
-    */
+  		 * The symbol type.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-edges-SolidEdges3D.html#type)
+  		 */
   var `type`: js.UndefOr[solid] = js.undefined
 }
 object SolidEdges3DProperties {

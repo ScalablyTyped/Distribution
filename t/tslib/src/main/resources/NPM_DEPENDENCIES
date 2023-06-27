@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tslib" : "2.5.0"
+      "tslib" : "2.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tslib" : "2.5.0"
+      "tslib" : "2.6.0"
     }
   ],
   "compile-devDependencies" : [

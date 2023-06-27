@@ -24,7 +24,7 @@ open class AlarmRelative protected () extends Alarm_ {
     *
     * @returns The duration before the next alarm is triggered.
     *
-    * @throw WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
+    * @throws WebAPIException with error type UnknownError, if the method cannot be completed because of an unknown error.
     */
   def getRemainingSeconds(): Double | Null = js.native
   

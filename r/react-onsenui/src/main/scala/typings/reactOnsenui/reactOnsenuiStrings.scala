@@ -46,6 +46,14 @@ object reactOnsenuiStrings {
   inline def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
   
   @js.native
+  sealed trait `aria-braillelabel` extends StObject
+  inline def `aria-braillelabel`: `aria-braillelabel` = "aria-braillelabel".asInstanceOf[`aria-braillelabel`]
+  
+  @js.native
+  sealed trait `aria-brailleroledescription` extends StObject
+  inline def `aria-brailleroledescription`: `aria-brailleroledescription` = "aria-brailleroledescription".asInstanceOf[`aria-brailleroledescription`]
+  
+  @js.native
   sealed trait `aria-busy` extends StObject
   inline def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
   
@@ -62,6 +70,10 @@ object reactOnsenuiStrings {
   inline def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
   
   @js.native
+  sealed trait `aria-colindextext` extends StObject
+  inline def `aria-colindextext`: `aria-colindextext` = "aria-colindextext".asInstanceOf[`aria-colindextext`]
+  
+  @js.native
   sealed trait `aria-colspan` extends StObject
   inline def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
   
@@ -76,6 +88,10 @@ object reactOnsenuiStrings {
   @js.native
   sealed trait `aria-describedby` extends StObject
   inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
+  
+  @js.native
+  sealed trait `aria-description` extends StObject
+  inline def `aria-description`: `aria-description` = "aria-description".asInstanceOf[`aria-description`]
   
   @js.native
   sealed trait `aria-details` extends StObject
@@ -192,6 +208,10 @@ object reactOnsenuiStrings {
   @js.native
   sealed trait `aria-rowindex` extends StObject
   inline def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
+  
+  @js.native
+  sealed trait `aria-rowindextext` extends StObject
+  inline def `aria-rowindextext`: `aria-rowindextext` = "aria-rowindextext".asInstanceOf[`aria-rowindextext`]
   
   @js.native
   sealed trait `aria-rowspan` extends StObject

@@ -2,6 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.Cache
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapUiCoreMvcViewMod.Preprocessor.ViewInfo
 import typings.openui5.sapUiCoreMvcViewMod.ViewSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,18 +16,17 @@ object sapUiCoreMvcXmlviewMod {
   /**
     * Constructor for a new `XMLView`.
     *
-    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link
-    * sap.ui.core.mvc.XMLView.create XMLView.create} or {@link sap.ui.core.mvc.View.create View.create} with
-    * type {@link sap.ui.core.mvc.ViewType.XML XML}. The factory provides more features than the constructor
-    * (e.g. caching and preprocessing) and simplifies asynchronous loading of a view. Future features might
-    * only be available when using the factory.
+    * **Note:** Application code shouldn't call the constructor directly, but rather use the factory {@link sap.ui.core.mvc.XMLView.create XMLView.create }
+    * or {@link sap.ui.core.mvc.View.create View.create} with type {@link sap.ui.core.mvc.ViewType.XML XML}.
+    * The factory provides more features than the constructor (e.g. caching and preprocessing) and simplifies
+    * asynchronous loading of a view. Future features might only be available when using the factory.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor
-    * sap.ui.core.mvc.View} can be used.
+    * This class does not have its own settings, but all settings applicable to the base type {@link sap.ui.core.mvc.View#constructor sap.ui.core.mvc.View }
+    * can be used.
     */
   open class default ()
     extends typings.openui5.sapUiCoreMvcViewMod.default {
@@ -67,7 +67,20 @@ object sapUiCoreMvcXmlviewMod {
     val ^ : js.Any = js.native
     
     /**
-      * @SINCE 1.30
+      * @since 1.34
+      *
+      * Specifies the available preprocessor types for XMLViews
+      * See:
+      * 	sap.ui.core.mvc.XMLView
+      * 	sap.ui.core.mvc.View.Preprocessor
+      */
+    @JSImport("sap/ui/core/mvc/XMLView", "default.PreprocessorType")
+    @js.native
+    def PreprocessorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PreprocessorType */ Any = js.native
+    inline def PreprocessorType_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PreprocessorType */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PreprocessorType")(x.asInstanceOf[js.Any])
+    
+    /**
+      * @since 1.30
       *
       * Flag for feature detection of asynchronous loading/rendering
       */
@@ -77,7 +90,7 @@ object sapUiCoreMvcXmlviewMod {
     inline def asyncSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asyncSupport")(x.asInstanceOf[js.Any])
     
     /**
-      * @SINCE 1.56.0
+      * @since 1.56.0
       *
       * Instantiates an XMLView from the given configuration options.
       *
@@ -167,7 +180,7 @@ object sapUiCoreMvcXmlviewMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Register a preprocessor for all views of a specific type.
       *
@@ -177,7 +190,7 @@ object sapUiCoreMvcXmlviewMod {
       * view instance already, that one is used. When several preprocessors are registered for one hook, it has
       * to be made sure, that they do not conflict when being processed serially.
       *
-      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor}
+      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor }
       * or a function with a signature according to {@link sap.ui.core.mvc.View.Preprocessor.process}.
       *
       * **Note**: Preprocessors work only in async views and will be ignored when the view is instantiated in
@@ -272,7 +285,7 @@ object sapUiCoreMvcXmlviewMod {
     mSettings: js.Object
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPreprocessor")(sType.asInstanceOf[js.Any], vPreprocessor.asInstanceOf[js.Any], bSyncSupport.asInstanceOf[js.Any], bOnDemand.asInstanceOf[js.Any], mSettings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
-      * @SINCE 1.30
+      * @since 1.30
       *
       * Register a preprocessor for all views of a specific type.
       *
@@ -282,7 +295,7 @@ object sapUiCoreMvcXmlviewMod {
       * view instance already, that one is used. When several preprocessors are registered for one hook, it has
       * to be made sure, that they do not conflict when being processed serially.
       *
-      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor}
+      * It can be either a module name as string of an implementation of {@link sap.ui.core.mvc.View.Preprocessor }
       * or a function with a signature according to {@link sap.ui.core.mvc.View.Preprocessor.process}.
       *
       * **Note**: Preprocessors work only in async views and will be ignored when the view is instantiated in
@@ -404,7 +417,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -420,7 +433,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -441,7 +454,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -466,7 +479,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -491,7 +504,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -512,7 +525,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -538,7 +551,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -568,7 +581,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -792,7 +805,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -808,7 +821,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -829,7 +842,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -854,7 +867,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * declares if the vPreprocessor ensures safe sync processing. This means the preprocessor will be executed
       * also for sync views. Please be aware that any kind of async processing (like Promises, XHR, etc) may
@@ -879,7 +892,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -900,7 +913,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -926,7 +939,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -956,7 +969,7 @@ object sapUiCoreMvcXmlviewMod {
       /**
       * module path of the preprocessor implementation or a preprocessor function
       */
-    vPreprocessor: js.Function,
+    vPreprocessor: js.Function3[/* p1 */ js.Object, /* p2 */ ViewInfo, /* p3 */ js.Object, Unit],
       /**
       * Since 1.89, added for signature compatibility with {@link sap.ui.core.mvc.View#registerPreprocessor View#registerPreprocessor}.
       * Only supported value is "XML".
@@ -982,12 +995,17 @@ object sapUiCoreMvcXmlviewMod {
   
   @js.native
   sealed trait PreprocessorType extends StObject
+  /**
+    * @since 1.34
+    *
+    * Specifies the available preprocessor types for XMLViews
+    * See:
+    * 	sap.ui.core.mvc.XMLView
+    * 	sap.ui.core.mvc.View.Preprocessor
+    */
   @JSImport("sap/ui/core/mvc/XMLView", "PreprocessorType")
   @js.native
   object PreprocessorType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[PreprocessorType & String] = js.native
     
     /**
       * This preprocessor receives the control tree produced through the view source
@@ -996,7 +1014,6 @@ object sapUiCoreMvcXmlviewMod {
     sealed trait CONTROLS
       extends StObject
          with PreprocessorType
-    /* "controls" */ val CONTROLS: typings.openui5.sapUiCoreMvcXmlviewMod.PreprocessorType.CONTROLS & String = js.native
     
     /**
       * This preprocessor receives a valid xml source for View creation without any template tags but with control
@@ -1006,7 +1023,6 @@ object sapUiCoreMvcXmlviewMod {
     sealed trait VIEWXML
       extends StObject
          with PreprocessorType
-    /* "viewxml" */ val VIEWXML: typings.openui5.sapUiCoreMvcXmlviewMod.PreprocessorType.VIEWXML & String = js.native
     
     /**
       * This preprocessor receives the plain xml source of the view and should also return a valid xml ready
@@ -1016,7 +1032,6 @@ object sapUiCoreMvcXmlviewMod {
     sealed trait XML
       extends StObject
          with PreprocessorType
-    /* "xml" */ val XML: typings.openui5.sapUiCoreMvcXmlviewMod.PreprocessorType.XML & String = js.native
   }
   
   type XMLView = typings.openui5.sapUiCoreMvcViewMod.default

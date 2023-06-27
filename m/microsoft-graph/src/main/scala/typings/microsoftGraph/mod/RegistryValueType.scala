@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.binary_
 import typings.microsoftGraph.microsoftGraphStrings.none_
 import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.unknown_
-  - typings.microsoftGraph.microsoftGraphStrings.binary
+  - typings.microsoftGraph.microsoftGraphStrings.binary_
   - typings.microsoftGraph.microsoftGraphStrings.dword
   - typings.microsoftGraph.microsoftGraphStrings.dwordLittleEndian
   - typings.microsoftGraph.microsoftGraphStrings.dwordBigEndian
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegistryValueType extends StObject
 object RegistryValueType {
   
-  inline def binary: typings.microsoftGraph.microsoftGraphStrings.binary = "binary".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.binary]
+  inline def binary: binary_ = "binary".asInstanceOf[binary_]
   
   inline def dword: typings.microsoftGraph.microsoftGraphStrings.dword = "dword".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dword]
   

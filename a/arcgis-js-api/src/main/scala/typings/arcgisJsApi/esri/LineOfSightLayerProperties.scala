@@ -9,24 +9,24 @@ trait LineOfSightLayerProperties
      with LayerProperties {
   
   /**
-    * The [LineOfSightAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html) associated with the layer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#analysis)
-    */
+  		 * The [LineOfSightAnalysis](https://developers.arcgis.com/javascript/latest/api-reference/esri-analysis-LineOfSightAnalysis.html) associated with the layer.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#analysis)
+  		 */
   var analysis: js.UndefOr[LineOfSightAnalysisProperties] = js.undefined
   
   /**
-    * Observer location.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#observer)
-    */
+  		 * The observer defines the point from which the line of sight analysis is performed.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#observer)
+  		 */
   var observer: js.UndefOr[LineOfSightAnalysisObserverProperties] = js.undefined
   
   /**
-    * Target locations.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#targets)
-    */
+  		 * Target locations.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-LineOfSightLayer.html#targets)
+  		 */
   var targets: js.UndefOr[CollectionProperties[LineOfSightAnalysisTargetProperties]] = js.undefined
 }
 object LineOfSightLayerProperties {

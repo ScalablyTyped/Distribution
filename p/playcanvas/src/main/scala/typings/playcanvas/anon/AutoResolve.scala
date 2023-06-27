@@ -10,6 +10,8 @@ trait AutoResolve extends StObject {
   
   var colorBuffer: js.UndefOr[typings.playcanvas.mod.Texture] = js.undefined
   
+  var colorBuffers: js.UndefOr[js.Array[typings.playcanvas.mod.Texture]] = js.undefined
+  
   var depth: js.UndefOr[Boolean] = js.undefined
   
   var depthBuffer: js.UndefOr[typings.playcanvas.mod.Texture] = js.undefined
@@ -41,6 +43,12 @@ object AutoResolve {
     inline def setColorBuffer(value: typings.playcanvas.mod.Texture): Self = StObject.set(x, "colorBuffer", value.asInstanceOf[js.Any])
     
     inline def setColorBufferUndefined: Self = StObject.set(x, "colorBuffer", js.undefined)
+    
+    inline def setColorBuffers(value: js.Array[typings.playcanvas.mod.Texture]): Self = StObject.set(x, "colorBuffers", value.asInstanceOf[js.Any])
+    
+    inline def setColorBuffersUndefined: Self = StObject.set(x, "colorBuffers", js.undefined)
+    
+    inline def setColorBuffersVarargs(value: typings.playcanvas.mod.Texture*): Self = StObject.set(x, "colorBuffers", js.Array(value*))
     
     inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

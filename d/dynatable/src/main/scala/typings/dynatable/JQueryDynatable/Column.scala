@@ -56,7 +56,7 @@ trait Column extends StObject {
     * Detected internally by dynatable.
     * Possible values are:
     *
-    * @enum('left', 'right', 'center', 'justify', 'initial', 'inherit')
+    * ('left', 'right', 'center', 'justify', 'initial', 'inherit')
     */
   var textAlign: String
 }

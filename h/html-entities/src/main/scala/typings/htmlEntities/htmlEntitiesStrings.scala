@@ -66,6 +66,12 @@ object htmlEntitiesStrings {
   inline def nonAsciiPrintable: nonAsciiPrintable = "nonAsciiPrintable".asInstanceOf[nonAsciiPrintable]
   
   @js.native
+  sealed trait nonAsciiPrintableOnly
+    extends StObject
+       with EncodeMode
+  inline def nonAsciiPrintableOnly: nonAsciiPrintableOnly = "nonAsciiPrintableOnly".asInstanceOf[nonAsciiPrintableOnly]
+  
+  @js.native
   sealed trait specialChars
     extends StObject
        with EncodeMode

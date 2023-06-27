@@ -1,7 +1,6 @@
 package typings.snakecaseKeys
 
 import typings.snakecaseKeys.snakecaseKeysBooleans.`false`
-import typings.snakecaseKeys.snakecaseKeysBooleans.`true`
 import typings.snakecaseKeys.snakecaseKeysStrings._empty
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,10 +16,7 @@ object mod {
   */
   inline def apply[T /* <: (Record[String, Any]) | js.Array[Any] */, Options /* <: Options */](input: T): SnakeCaseKeys[
     T, 
-    WithDefault[
-      /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] */ js.Any, 
-      `true`
-    ], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] extends boolean ? Options['deep'] : true */ js.Any, 
     WithDefault[
       /* import warning: importer.ImportType#apply Failed type conversion: Options['exclude'] */ js.Any, 
       EmptyTuple
@@ -28,10 +24,7 @@ object mod {
     _empty
   ] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[SnakeCaseKeys[
     T, 
-    WithDefault[
-      /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] */ js.Any, 
-      `true`
-    ], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] extends boolean ? Options['deep'] : true */ js.Any, 
     WithDefault[
       /* import warning: importer.ImportType#apply Failed type conversion: Options['exclude'] */ js.Any, 
       EmptyTuple
@@ -40,10 +33,7 @@ object mod {
   ]]
   inline def apply[T /* <: (Record[String, Any]) | js.Array[Any] */, Options /* <: Options */](input: T, options: Options): SnakeCaseKeys[
     T, 
-    WithDefault[
-      /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] */ js.Any, 
-      `true`
-    ], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] extends boolean ? Options['deep'] : true */ js.Any, 
     WithDefault[
       /* import warning: importer.ImportType#apply Failed type conversion: Options['exclude'] */ js.Any, 
       EmptyTuple
@@ -51,10 +41,7 @@ object mod {
     _empty
   ] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SnakeCaseKeys[
     T, 
-    WithDefault[
-      /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] */ js.Any, 
-      `true`
-    ], 
+    /* import warning: importer.ImportType#apply Failed type conversion: Options['deep'] extends boolean ? Options['deep'] : true */ js.Any, 
     WithDefault[
       /* import warning: importer.ImportType#apply Failed type conversion: Options['exclude'] */ js.Any, 
       EmptyTuple

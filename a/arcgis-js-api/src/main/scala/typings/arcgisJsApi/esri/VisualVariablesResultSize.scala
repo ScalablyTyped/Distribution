@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VisualVariablesResultSize extends StObject {
   
   /**
-    * The size scheme used by the visual variable.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * The size scheme used by the visual variable.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var sizeScheme: SizeScheme
   
   /**
-    * The size visual variable(s) configured based on the statistics of the data and the view scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
-    */
+  		 * The size visual variable(s) configured based on the statistics of the data and the view scale.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#VisualVariablesResult)
+  		 */
   var visualVariables: js.Array[SizeVariable]
 }
 object VisualVariablesResultSize {

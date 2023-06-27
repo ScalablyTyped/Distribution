@@ -11,35 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait univariateColorSizeCreateVisualVariablesParamsColorOptions extends StObject {
   
   /**
-    * In authoring apps, the user may select a pre-defined color scheme.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * In authoring apps, the user may select a pre-defined color scheme.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
-    * Only applies to the `above-and-below` theme.
-    *
-    * @default true
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Only applies to the `above-and-below` theme.
+  		 *
+  		 * @default true
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var isContinuous: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Provides options for setting a title to a field when an expression is provided instead of a field name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Provides options for setting a title to a field when an expression is provided instead of a field name.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var legendOptions: js.UndefOr[univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions] = js.undefined
   
   /**
-    * Determines which values will be emphasized in the continuous ramp and the map.
-    *
-    * @default high-to-low
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
-    */
+  		 * Determines which values will be emphasized in the continuous ramp and the map.
+  		 *
+  		 * @default high-to-low
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+  		 */
   var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.undefined
 }
 object univariateColorSizeCreateVisualVariablesParamsColorOptions {

@@ -10,7 +10,7 @@ object sapUiModelTreeBindingAdapterMod {
   @JSImport("sap/ui/model/TreeBindingAdapter", JSImport.Default)
   @js.native
   /**
-    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    * Protected:  Do not call from applications (only from related classes in the framework)
     *
     * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
     * controls.
@@ -21,26 +21,6 @@ object sapUiModelTreeBindingAdapterMod {
   
   @js.native
   trait TreeBindingAdapter extends StObject {
-    
-    /**
-      * @deprecated (since 1.52) - This method is marked as 'protected' which was meant to be overwritten by
-      * its subclasses. It may be renamed or deleted and should only be called from this class or its subclasses.
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
-      *
-      * Calculate the request length based on the given information.
-      *
-      * @returns The calculated request length
-      */
-    def _calculateRequestLength(
-      /**
-      * The maximum group size
-      */
-    iMaxGroupSize: Double,
-      /**
-      * The information of the current section
-      */
-    oSection: js.Object
-    ): Double = js.native
     
     /**
       * Attaches event handler `fnFunction` to the {@link #event:selectionChanged selectionChanged} event of
@@ -129,7 +109,7 @@ object sapUiModelTreeBindingAdapterMod {
     ): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
@@ -145,7 +125,7 @@ object sapUiModelTreeBindingAdapterMod {
     oParameters: LeadIndex): this.type = js.native
     
     /**
-      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      * Protected:  Do not call from applications (only from related classes in the framework)
       *
       * Gets an array of contexts for the requested part of the tree.
       *

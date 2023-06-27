@@ -7,45 +7,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VectorTileLayerCurrentStyleInfo extends StObject {
   
   /**
-    * Absolute template URL for font sets included in a style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Absolute template URL for font sets included in a style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var glyphsUrl: String
   
   /**
-    * Vector tile service information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Vector tile service information.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var layerDefinition: Any
   
   /**
-    * Absolute URL for a vector tile service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Absolute URL for a vector tile service.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var serviceUrl: String
   
   /**
-    * Absolute URL for sprites included in a style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Absolute URL for sprites included in a style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var spriteUrl: String
   
   /**
-    * Style JSON object for vector tiles.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Style JSON object for vector tiles.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var style: Any
   
   /**
-    * Absolute URL for vector tile service style.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
-    */
+  		 * Absolute URL for vector tile service style.
+  		 *
+  		 * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+  		 */
   var styleUrl: String
 }
 object VectorTileLayerCurrentStyleInfo {
